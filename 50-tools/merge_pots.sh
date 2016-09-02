@@ -31,7 +31,7 @@ msgcat  --use-first --force-po -o $lang/$lang.po $lang/po/*.$lang.po
    fi
  done
  echo -n "$lang " && msgfmt -o /dev/null --statistics $lang/$lang.po
- git commit -m "$lang merged"
+ git commit -a -m "$lang merged"
 
 echo Done!
 exit 0
