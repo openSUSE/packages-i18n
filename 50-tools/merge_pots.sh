@@ -30,7 +30,7 @@ msgcat  --use-first --force-po -o $lang/$lang.po $lang/po/*.$lang.po
     echo -n "$pot.$lang.po " && msgmerge --force-po -C $lang/$lang.po -U $lang/po/$pot.$lang.po 50-pot/$pot.pot
    fi
  done
- echo -n "$lang " && msgfmt -o /dev/null --statistics $lang/$lang.po
+ echo -n "$lang " && msgfmt -o /dev/null --statistics $lang/$lang.po && rm -f $lang/$lang.po
  git commit -a -m "$lang merged"
 
 echo Done!
