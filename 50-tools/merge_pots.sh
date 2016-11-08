@@ -23,15 +23,15 @@ msgcat  --use-first --force-po -o $lang/$lang.po $lang/po/*.$lang.po
 #  echo ""
  for pot in $pots; do
 # Merge all available languages
-   if test -f $lang/po/$pot.$lang.po; then
-    echo -n "$pot.$lang.po " && msgmerge -C $lang/$lang.po -U --previous $lang/po/$pot.$lang.po 50-pot/$pot.pot
-   else
-    msginit --no-translator -i 50-pot/$pot.pot -o $lang/po/$pot.$lang.po --locale=$lang && git add $lang/po/$pot.$lang.po
-    echo -n "$pot.$lang.po " && msgmerge --force-po -C $lang/$lang.po -U $lang/po/$pot.$lang.po 50-pot/$pot.pot
-   fi
+  echo -n "$pot.$lang.po "
+  [ -f $lang/po/$pot.$lang.po ] || { 
+  msginit --no-translator -i 50-pot/$pot.pot -o $lang/po/$pot.$lang.po --locale=$lang && git add $lang/po/$pot.$lang.po
+  }
+  msgmerge -C $lang/$lang.po -U --previous $lang/po/$pot.$lang.po 50-pot/$pot.pot
  done
  echo -n "$lang " && msgfmt -o /dev/null --statistics $lang/$lang.po && rm -f $lang/$lang.po
- git commit -a -m "$lang merged"
+ git add $lang/po/*.po
+ git commit -m "$lang merged"
 
 echo Done!
 exit 0
