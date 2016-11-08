@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2016-08-30 15:43:29\n"
+"POT-Creation-Date: 2016-11-08 18:34:07\n"
 "PO-Revision-Date: 2016-02-02 01:17:11\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -13,11 +13,13 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. tumbleweed/BNFC/summary
+#. leap/BNFC/summary
 #, fuzzy
 msgid "A compiler front-end generator"
 msgstr "C コンパイラランタイムライブラリ"
 
 #. tumbleweed/BNFC/description
+#. leap/BNFC/description
 msgid ""
 "The BNF Converter is a compiler construction tool generating a compiler "
 "front-end from a Labelled BNF grammar. It was originally written to generate "
@@ -226,6 +228,20 @@ msgstr "メールプログラム"
 msgid "Nice GUI program to manage e-mail."
 msgstr ""
 
+#. tumbleweed/bam/summary
+#. leap/bam/summary
+#, fuzzy
+#| msgid "Java-based build tool"
+msgid "Lua-based build system"
+msgstr "Java ベースのビルドツール"
+
+#. tumbleweed/bam/description
+#. leap/bam/description
+msgid ""
+"Bam is a build system focusing on arbitrary build scripts. Instead of having "
+"a custom language, it uses Lua to describe the build steps."
+msgstr ""
+
 #. tumbleweed/bamf/bamf-daemon/summary
 #. leap/bamf/bamf-daemon/summary
 msgid "Window matching daemon"
@@ -253,192 +269,6 @@ msgid ""
 "\n"
 "This package contains files that are needed to build applications."
 msgstr ""
-
-#. tumbleweed/banshee/summary
-#, fuzzy
-msgid "A media playback and management application"
-msgstr "GNOME 向けのミュージックプレーヤ兼管理アプリケーションです。"
-
-#. tumbleweed/banshee/description
-msgid ""
-"Import, organize, and discover new music with Banshee through its simple and "
-"powerful interface and wide array of innovative features. Create your own "
-"radio stations or listen to a friends' through Last.fm integration; "
-"experience automatic cover art fetching as you listen; and easily browse, "
-"search, and control your media collection.\n"
-"\n"
-"This package provides the Classic Banshee client, a familiar user interface "
-"with a source list and three-pane layout for browsing and exploring media. "
-"This client is the most feature rich, but does not sacrifice usability."
-msgstr ""
-"Banshee のシンプルかつパワフルなインターフェイスや幅広い斬新な機能を利用する"
-"ことで、新しい楽曲をインポートしたりまとめたりすることができます。また、 "
-"Last.fm との統合機能を利用することで、独自のラジオステーションを作成したり友"
-"人のラジオを聞いたりすることもできます: それ以外にも聴いている曲のカバーイ"
-"メージを自動的に検索したり、楽曲集を簡単に閲覧／検索／制御することもできま"
-"す。\n"
-"\n"
-"このパッケージには従来の Banshee クライアントが含まれています。ソースリスト付"
-"きのユーザインターフェイスと、 3 ペイン式のメディア参照／探索レイアウトが用意"
-"されています。このクライアントはもっとも機能が豊富なものですが、使い勝手も犠"
-"牲にはしていません。"
-
-#. tumbleweed/banshee/banshee-backend-engine-gstreamer/summary
-msgid "GStreamer engine support for Banshee"
-msgstr "Banshee 向け GStreamer エンジンサポート"
-
-#. tumbleweed/banshee/banshee-backend-engine-gstreamer/description
-msgid ""
-"This package provides the playback engine used by Banshee, built on the "
-"GStreamer multimedia framework."
-msgstr ""
-"このパッケージには、 GStreamer マルチメディアフレームワーク上に構築された、"
-"Banshee 向けプレイバックエンジンが含まれています。"
-
-#. tumbleweed/banshee/banshee-backend-io-gio/summary
-msgid "GIO backend for non-local files for Banshee"
-msgstr "Banshee 向け非ローカルファイル用 GIO バックエンド"
-
-#. tumbleweed/banshee/banshee-backend-io-gio/description
-msgid ""
-"This package provides support for importing non-local files into Banshee, eg "
-"over a ssh mount or similar."
-msgstr ""
-"このパッケージには、 Banshee 内に非ローカル (たとえば ssh マウントなど) の"
-"ファイルをインポートするためのサポートが含まれています。"
-
-#. tumbleweed/banshee/banshee-backend-platform-gnome/summary
-msgid "GNOME platform support for Banshee"
-msgstr "Banshee 向け GNOME プラットフォームサポート"
-
-#. tumbleweed/banshee/banshee-backend-platform-gnome/description
-msgid ""
-"This package provides platform integration with the GNOME Desktop for "
-"Banshee. Most notably it provides a configuration backend to GConf, so all "
-"user settings can be stored there. Other GNOME specific integration hooks "
-"are provided as well.\n"
-"\n"
-"Users running Banshee on GNOME are recommended to install this package."
-msgstr ""
-"このパッケージには、 Banshee 向けの GNOME デスクトッププラットフォーム統合が"
-"含まれています。主に GConf と呼ばれる設定バックエンドの機能を提供し、全ての"
-"ユーザ設定をそこに保管できるようにします。その他の GNOME 固有の統合フックも用"
-"意されています。"
-
-#. tumbleweed/banshee/banshee-backend-platform-unix/summary
-msgid "UNIX platform support for Banshee"
-msgstr "Banshee 向け UNIX プラットフォームサポート"
-
-#. tumbleweed/banshee/banshee-backend-platform-unix/description
-msgid ""
-"This package provides many optimizations for UNIX based platforms. In "
-"particular, it provides a POSIX IO layer that performs better than the "
-"default System.IO/.NET IO layer provided in the base banshee-1 package."
-msgstr ""
-"このパッケージには、 UNIX ベースのプラットフォームに対する多数の最適化が含ま"
-"れています。特に POSIX IO レイヤにより、 banshee-1 基本パッケージ内に用意され"
-"ている通常の System.IU/.NET レイヤに比べ、性能を向上させることができます。"
-
-#. tumbleweed/banshee/banshee-core/summary
-msgid "Core Banshee platform libraries, services, and resources"
-msgstr "コア Banshee プラットフォームライブラリ／サービス／リソース"
-
-#. tumbleweed/banshee/banshee-core/description
-#, fuzzy
-msgid ""
-"This package provides core libraries, services, and resources for building "
-"Banshee clients and user experiences."
-msgstr ""
-"このパッケージには、鍵ユーティリティ向けのヘッダとライブラリが含まれていま"
-"す。"
-
-#. tumbleweed/banshee/banshee-devel/summary
-msgid "Development package for Banshee"
-msgstr "KDE開発パッケージ"
-
-#. tumbleweed/banshee/banshee-devel/description
-msgid ""
-"Users who wish to extend Banshee should install this package. It includes "
-"standard Linux development files and other tools for building extensions and "
-"applications on top of the Banshee  application framework."
-msgstr ""
-
-#. tumbleweed/banshee/banshee-dmp/summary
-msgid "Digital Media Player support for Banshee"
-msgstr "Banshee 向けデジタルメディアプレーヤサポート"
-
-#. tumbleweed/banshee/banshee-dmp/description
-msgid ""
-"Core support for Digital Media Player support. Includes generic USB mass "
-"storage device support."
-msgstr ""
-"デジタルメディアプレーヤに対応するためのコアサポートです。汎用 USB マススト"
-"レージデバイスへの対応も含まれています。"
-
-#. tumbleweed/banshee/banshee-dmp-apple-devices/summary
-msgid "Apple(R) iPod(R) Digital Media Player support for Banshee"
-msgstr "Banshee 向け Apple(R) iPod(R) デジタルメディアプレーヤサポート"
-
-#. tumbleweed/banshee/banshee-dmp-apple-devices/description
-msgid ""
-"Support for iPod(R) devices including the iPod Classic(R) and iPod Nano(R). "
-"Does not support iPod Touch(R) or iPhone(R)."
-msgstr ""
-"iPod Classic(R), iPod Nano(R) を含む、 iPod(R) デバイスへのサポートです。"
-"iPod Touch(R) や iPhone(R) には対応していません。"
-
-#. tumbleweed/banshee/banshee-dmp-mtp/summary
-msgid "MTP/PlaysForSure Digital Media Player support for Banshee"
-msgstr "Banshee 向け MTP/PlaysforSure デジタルメディアプレーヤサポート"
-
-#. tumbleweed/banshee/banshee-dmp-mtp/description
-msgid ""
-"Support for various MTP/PlaysForSure/Certified For Windows Vista(R) devices "
-"as provided by libmtp."
-msgstr ""
-"libmtp で提供される、さまざまな MTP/PlaysForSure/Certified Windows Vista(R) "
-"デバイスへのサポートです。"
-
-#. tumbleweed/banshee/banshee-extensions-boo/summary
-#, fuzzy
-msgid "Boo scripting support for Banshee"
-msgstr "SWP 向け OpenSSL サポート"
-
-#. tumbleweed/banshee/banshee-extensions-boo/description
-msgid ""
-"This package provides the Boo scripting extension, useful for power users "
-"and developers looking to customize and extend the functionality of Banshee "
-"using Boo, the Python-like language for .NET."
-msgstr ""
-
-#. tumbleweed/banshee/banshee-extensions-default/summary
-msgid "Extra features extending the Banshee Media Player"
-msgstr "Banshee メディアプレーヤを拡張する追加機能"
-
-#. tumbleweed/banshee/banshee-extensions-default/description
-msgid ""
-"This package provides a number of useful features for Banshee, including a "
-"Play Queue, Last.fm streaming, Last.fm Audioscrobbling, and Multimedia Key "
-"support. This package is highly recommended as it greatly enhances the end "
-"user experience of Banshee.\n"
-"\n"
-"Import, organize, and discover new music with Banshee through its simple and "
-"powerful interface and wide array of innovative features. Create your own "
-"radio stations or listen to a friends' through Last.fm integration; "
-"experience automatic cover art fetching as you listen; and easily browse, "
-"search, and control your media collection."
-msgstr ""
-"このパッケージには、 Banshee 向けの便利機能が数多く含まれています。たとえば再"
-"生キューや Last.fm のストリーミング、 Last.fm の Audioscrobble やマルチメディ"
-"アキーへの対応が含まれています。このパッケージは、 Banshee の体験をより高める"
-"という意味で、インストールしておくことを強くお勧めします。\n"
-"\n"
-"Banshee のシンプルかつパワフルなインターフェイスや幅広い斬新な機能を利用する"
-"ことで、新しい楽曲をインポートしたりまとめたりすることができます。また、 "
-"Last.fm との統合機能を利用することで、独自のラジオステーションを作成したり友"
-"人のラジオを聞いたりすることもできます: それ以外にも聴いている曲のカバーイ"
-"メージを自動的に検索したり、楽曲集を簡単に閲覧／検索／制御することもできま"
-"す。"
 
 #. tumbleweed/baobab/summary
 #. leap/baobab/summary
@@ -522,20 +352,6 @@ msgstr ""
 "機能が取り込まれています。また、 Bash は IEEE Posix Shell and Tools "
 "specification (IEEE Working Group 1003.2) 仕様に準拠するよう実装されていま"
 "す。"
-
-#. tumbleweed/bash-completion-doc/summary
-#, fuzzy
-msgid "The Documentation of Programmable Completion for Bash"
-msgstr "bash 向け自動補完プログラム制御"
-
-#. tumbleweed/bash-completion-doc/description
-#, fuzzy
-msgid ""
-"This package contains the package documentation file of the package bash-"
-"completion."
-msgstr ""
-"パッケージには apache-commons-io 向けの API ドキュメンテーションが含まれてい"
-"ます。"
 
 #. tumbleweed/bash/bash-devel/summary
 #. leap/bash/bash-devel/summary
@@ -641,11 +457,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/bbe/summary
+#. leap/bbe/summary
 #, fuzzy
 msgid "Binary Block Editor"
 msgstr "GNOME バイナリエディタ"
 
 #. tumbleweed/bbe/description
+#. leap/bbe/description
 msgid ""
 "bbe is a sed-like editor for binary files. Instead of reading input in lines "
 "as sed, bbe reads arbitrary blocks from an input stream and performs byte-"
@@ -657,8 +475,6 @@ msgstr ""
 #. tumbleweed/bbswitch/bbswitch-kmp-pae/summary
 #. leap/bbswitch/summary
 #. leap/bbswitch/bbswitch-kmp-default/summary
-#. leap/bbswitch/bbswitch-kmp-pv/summary
-#. leap/bbswitch/bbswitch-kmp-xen/summary
 msgid "Bumblebee ACPI kernel module"
 msgstr "Bumblebee ACPI カーネルモジュール"
 
@@ -667,8 +483,6 @@ msgstr "Bumblebee ACPI カーネルモジュール"
 #. tumbleweed/bbswitch/bbswitch-kmp-pae/description
 #. leap/bbswitch/description
 #. leap/bbswitch/bbswitch-kmp-default/description
-#. leap/bbswitch/bbswitch-kmp-pv/description
-#. leap/bbswitch/bbswitch-kmp-xen/description
 msgid ""
 "bbswitch is a kernel module which automatically detects the required ACPI "
 "calls for two kinds of Optimus laptops."
@@ -729,12 +543,14 @@ msgstr ""
 "このパッケージには、 SBC コーデックを使用するユーティリティが含まれています。"
 
 #. tumbleweed/bctoolbox/bctoolbox-devel/summary
+#. leap/bctoolbox/bctoolbox-devel/summary
 #, fuzzy
 msgid ""
 "Development files for bctoolbox, a utility library for linphone/belle-sip/etc"
 msgstr "WebP 形式向けライブラリ libwebp 向け開発用ファイル"
 
 #. tumbleweed/bctoolbox/bctoolbox-devel/description
+#. leap/bctoolbox/bctoolbox-devel/description
 msgid ""
 "Utilities library used by Belledonne Communications softwares like belle-"
 "sip, mediastreamer2 and linphone.\n"
@@ -813,11 +629,13 @@ msgstr ""
 "ら、コードサンプルとして使用することをお勧めします。"
 
 #. tumbleweed/beignet/summary
+#. leap/beignet/summary
 #, fuzzy
 msgid "Open source implementation of the OpenCL for Intel GPUs"
 msgstr "GDI+ API のオープンソース実装"
 
 #. tumbleweed/beignet/description
+#. leap/beignet/description
 msgid ""
 "Beignet is an open source implementation of the OpenCL specification - a "
 "generic compute oriented API. This code base contains the code to run OpenCL "
@@ -827,11 +645,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/beignet/beignet-devel/summary
+#. leap/beignet/beignet-devel/summary
 #, fuzzy
 msgid "Open source implementation of the OpenCL for Intel GPUs devel package"
 msgstr "GDI+ API のオープンソース実装"
 
 #. tumbleweed/beignet/beignet-devel/description
+#. leap/beignet/beignet-devel/description
 msgid ""
 "Devel package for Beignet is an open source implementation of the OpenCL "
 "specification - a generic compute oriented API."
@@ -854,11 +674,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/benchmark/benchmark-devel/summary
+#. leap/benchmark/benchmark-devel/summary
 #, fuzzy
 msgid "Development files for google benchmark"
 msgstr "googletest 向け開発用ファイル"
 
 #. tumbleweed/benchmark/benchmark-devel/description
+#. leap/benchmark/benchmark-devel/description
 #, fuzzy
 msgid "Development files for google benchmark library"
 msgstr "clucene ライブラリ向け開発用ファイル"
@@ -1272,11 +1094,13 @@ msgstr ""
 "有効／無効にすることができます。"
 
 #. tumbleweed/birdie/summary
+#. leap/birdie/summary
 #, fuzzy
 msgid "A native Twitter client"
 msgstr "軽量 LXDE 端末"
 
 #. tumbleweed/birdie/description
+#. leap/birdie/description
 msgid ""
 "Birdie is a beautiful and fast Twitter client designed for Elementary OS."
 msgstr ""
@@ -1403,10 +1227,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/bitlbee/bitlbee-devel/summary
+#. leap/bitlbee/bitlbee-devel/summary
 msgid "IRC to other Chat Networks Gateway (Devel files)"
 msgstr ""
 
 #. tumbleweed/bitlbee/bitlbee-devel/description
+#. leap/bitlbee/bitlbee-devel/description
 msgid ""
 "We are both console lovers. But it is annoying to have a few tty's open with "
 "chat things in them. IRC, ICQ, MSN, Jabber... For X there is Gaim, which "
@@ -1449,6 +1275,21 @@ msgid ""
 "\n"
 "This package contains the user guide:   /usr/share/doc/packages/bitlbee/user-"
 "guide"
+msgstr ""
+
+#. tumbleweed/bitlbee-facebook/summary
+#. leap/bitlbee-facebook/summary
+#, fuzzy
+msgid "The Facebook protocol plugin for bitlbee."
+msgstr ""
+"このパッケージには、 Remmina 向けの RDP プロトコルプラグインが含まれていま"
+"す。"
+
+#. tumbleweed/bitlbee-facebook/description
+#. leap/bitlbee-facebook/description
+msgid ""
+"The Facebook protocol plugin for bitlbee. This plugin uses the Facebook "
+"Mobile API."
 msgstr ""
 
 #. tumbleweed/bitmap/summary
@@ -1579,10 +1420,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/blobwars/summary
+#. leap/blobwars/summary
 msgid "Mission and Objective based 2D Platform Game"
 msgstr ""
 
 #. tumbleweed/blobwars/description
+#. leap/blobwars/description
 msgid ""
 "Blob Wars : Metal Blob Solid. This is Episode I of the Blob Wars Saga. This "
 "is a platform game, not unlike those found on the Amiga and SNES. The object "
@@ -1679,13 +1522,11 @@ msgid "This package provides development libraries and headers for libblosc1"
 msgstr "このパッケージには、 libkcddb4 向けの開発ヘッダが含まれています。"
 
 #. tumbleweed/bluedevil5/summary
-#. leap/bluedevil/summary
 #. leap/bluedevil5/summary
 msgid "Bluetooth Manager for KDE"
 msgstr "KDE 向け Bluetooth マネージャ"
 
 #. tumbleweed/bluedevil5/description
-#. leap/bluedevil/description
 #. leap/bluedevil5/description
 msgid "Bluetooth daemon for KDE, handling connections."
 msgstr "接続を管理することのできる、 KDE 向け Bluetooth デーモンです。"
@@ -1734,6 +1575,7 @@ msgid "Bluetooth Stack for Linux"
 msgstr "Linux 向け Bluetooth スタック"
 
 #. tumbleweed/bluez/description
+#. leap/bluez/description
 #, fuzzy
 msgid "BlueZ provides support for the core Bluetooth layers and protocols."
 msgstr "SyncML プロトコルへの対応を提供するライブラリ"
@@ -1965,10 +1807,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/bomberclone/summary
+#. leap/bomberclone/summary
 msgid "Clone of the game AtomicBomberMan"
 msgstr ""
 
 #. tumbleweed/bomberclone/description
+#. leap/bomberclone/description
 msgid "Clone of the game AtomicBomberMan."
 msgstr ""
 
@@ -2034,19 +1878,23 @@ msgstr ""
 "スとしたツールです。このツールには Boostビルドシステムの使用を促すための各種"
 "の改善点が含まれていますが、 Perforce Jam との後方互換性も確保されています。"
 
-#. tumbleweed/boost/boost_1_61-devel/summary
-#. tumbleweed/boost/boost_1_61-devel-32bit/summary
+#. tumbleweed/boost/boost_1_62-devel/summary
+#. tumbleweed/boost/boost_1_62-devel-32bit/summary
 #. leap/boost/boost-devel/summary
 #. leap/boost/boost-devel-32bit/summary
 #. leap/boost_1_58_0/boost_1_58_0-devel/summary
+#. leap/boost/boost_1_61-devel/summary
+#. leap/boost/boost_1_61-devel-32bit/summary
 msgid "Development package for Boost C++"
 msgstr "Boost C++ 向け開発パッケージ"
 
-#. tumbleweed/boost/boost_1_61-devel/description
-#. tumbleweed/boost/boost_1_61-devel-32bit/description
+#. tumbleweed/boost/boost_1_62-devel/description
+#. tumbleweed/boost/boost_1_62-devel-32bit/description
 #. leap/boost/boost-devel/description
 #. leap/boost/boost-devel-32bit/description
 #. leap/boost_1_58_0/boost_1_58_0-devel/description
+#. leap/boost/boost_1_61-devel/description
+#. leap/boost/boost_1_61-devel-32bit/description
 msgid ""
 "This package contains all that is needed to develop/compile applications "
 "that use the Boost C++ libraries. For documentation see the documentation "
@@ -2057,13 +1905,37 @@ msgstr ""
 "ンについては、ドキュメンテーションパッケージをご覧ください (html, man, pdf な"
 "ど) 。"
 
-#. tumbleweed/boost/boost_1_61-quickbook/summary
+#. tumbleweed/boost/boost_1_62-jam/summary
+#, fuzzy
+#| msgid "An Enhanced Make Replacement"
+msgid "A Boost Make Replacement"
+msgstr "拡張版 Make"
+
+#. tumbleweed/boost/boost_1_62-jam/description
+#, fuzzy
+#| msgid ""
+#| "Boost Jam is a build tool based on FTJam, which in turn is based on "
+#| "Perforce Jam. It contains significant improvements made to facilitate its "
+#| "use in the Boost Build System, but should be backward compatible with "
+#| "Perforce Jam."
+msgid ""
+"Boost Jam is a build tool based on FTJam, which in turn is based on Perforce "
+"Jam. It contains significant improvements made to facilitate its use in the "
+"Boost Build System."
+msgstr ""
+"Boost Jam は FTJam をベースとした構築ツールで、 FTJam は Perforce Jam をベー"
+"スとしたツールです。このツールには Boostビルドシステムの使用を促すための各種"
+"の改善点が含まれていますが、 Perforce Jam との後方互換性も確保されています。"
+
+#. tumbleweed/boost/boost_1_62-quickbook/summary
+#. leap/boost/boost_1_61-quickbook/summary
 #. leap/boost_1_58_0/quickbook_1_58_0/summary
 #, fuzzy
 msgid "Documentation tool geared towards C++"
 msgstr "7.0 文書"
 
-#. tumbleweed/boost/boost_1_61-quickbook/description
+#. tumbleweed/boost/boost_1_62-quickbook/description
+#. leap/boost/boost_1_61-quickbook/description
 #. leap/boost_1_58_0/quickbook_1_58_0/description
 msgid ""
 "QuickBook is a WikiWiki style documentation tool geared towards C++ "
@@ -2140,10 +2012,12 @@ msgstr ""
 "す。"
 
 #. tumbleweed/bpm-tools/summary
+#. leap/bpm-tools/summary
 msgid "Automatic calculating and tagging the tempo of music files"
 msgstr ""
 
 #. tumbleweed/bpm-tools/description
+#. leap/bpm-tools/description
 msgid ""
 "Automatic calculating and tagging the tempo (in beats-per-minute) of music "
 "files."
@@ -2204,7 +2078,6 @@ msgstr "このパッケージには、 Nautilus 向けの Brasero 拡張が含�
 #. tumbleweed/breeze/breeze5-cursors/summary
 #. tumbleweed/breeze/breeze5-wallpapers/summary
 #. leap/breeze/breeze5-cursors/summary
-#. leap/breeze/breeze5-icons/summary
 #. leap/breeze/breeze5-wallpapers/summary
 #. leap/breeze/summary
 #. leap/breeze4-style/summary
@@ -2584,6 +2457,7 @@ msgstr ""
 "worms, wump"
 
 #. tumbleweed/bsdiff/summary
+#. leap/bsdiff/summary
 #, fuzzy
 msgid "Tools for binary file patches"
 msgstr "バイナリファイルに対して署名をスキャンするツール"
@@ -2596,6 +2470,29 @@ msgid ""
 "qsufsort) and taking advantage of how executable files change, bsdiff "
 "routinely produces binary patches 50-80% smaller than those produced by "
 "Xdelta, and 15% smaller than those produced by .RTPatch."
+msgstr ""
+
+#. tumbleweed/bspwm/summary
+#. leap/bspwm/summary
+msgid "A tiling window manager based on binary space partitioning"
+msgstr ""
+
+#. tumbleweed/bspwm/description
+#. leap/bspwm/description
+msgid ""
+"A tiling window manager based on binary space partitioning.\n"
+"* It only responds to X events, and the messages it receives on a dedicated "
+"socket.\n"
+"* bspc is a program that writes messages on bspwm's socket.\n"
+"* bspwm doesn't handle any keyboard or pointer inputs: a third party program "
+"(e.g. sxhkd) is needed in order to translate keyboard and pointer events to "
+"bspc invocations."
+msgstr ""
+
+#. tumbleweed/btrfs-subpage-blocksize/summary
+#. tumbleweed/btrfs-subpage-blocksize/btrfs-subpage-blocksize-kmp-default/summary
+#. tumbleweed/btrfs-subpage-blocksize/btrfs-subpage-blocksize-kmp-pae/summary
+msgid "Btrfs implementation with subpage blocksize patchset"
 msgstr ""
 
 #. tumbleweed/btrfsprogs/summary
@@ -2670,10 +2567,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/bustle/summary
+#. leap/bustle/summary
 msgid "Draw sequence diagrams of D-Bus traffic"
 msgstr ""
 
 #. tumbleweed/bustle/description
+#. leap/bustle/description
 msgid "Draw sequence diagrams of D-Bus traffic."
 msgstr ""
 
@@ -2707,10 +2606,12 @@ msgstr ""
 "ますし、 GNU 版に似た動作をするようにもなっています。"
 
 #. tumbleweed/buzztrax/summary
+#. leap/buzztrax/summary
 msgid "A music studio inspired by Buzz"
 msgstr ""
 
 #. tumbleweed/buzztrax/description
+#. leap/buzztrax/description
 msgid ""
 "buzztrax aims to be a music studio that allows one to compose songs using "
 "only a computer with a soundcard. If you've used tracker programs like "
@@ -2725,10 +2626,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/buzztrax/buzztrax-plugins/summary
+#. leap/buzztrax/buzztrax-plugins/summary
 msgid "Buzztrax plugins"
 msgstr ""
 
 #. tumbleweed/buzztrax/buzztrax-plugins/description
+#. leap/buzztrax/buzztrax-plugins/description
 msgid "This package contains buzztrax plugins"
 msgstr ""
 
@@ -2898,21 +2801,25 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/BNFC/ghc-BNFC/summary
+#. leap/BNFC/ghc-BNFC/summary
 #, fuzzy
 msgid "Haskell BNFC library"
 msgstr "KDE スペルチェックライブラリ"
 
 #. tumbleweed/BNFC/ghc-BNFC/description
+#. leap/BNFC/ghc-BNFC/description
 #, fuzzy
 msgid "This package provides the Haskell BNFC shared library."
 msgstr "このパッケージには、メインの Motif 共有ライブラリが含まれています。"
 
 #. tumbleweed/BNFC/ghc-BNFC-devel/summary
+#. leap/BNFC/ghc-BNFC-devel/summary
 #, fuzzy
 msgid "Haskell BNFC library development files"
 msgstr "ピクセル操作ライブラリ - 開発用ファイル"
 
 #. tumbleweed/BNFC/ghc-BNFC-devel/description
+#. leap/BNFC/ghc-BNFC-devel/description
 #, fuzzy
 msgid "This package provides the Haskell BNFC library development files."
 msgstr ""
@@ -2939,10 +2846,12 @@ msgstr ""
 "れにより、文書からの検索結果を得ることができます。"
 
 #. tumbleweed/buzztrax/gstreamer-1_0-plugins-buzztrax/summary
+#. leap/buzztrax/gstreamer-1_0-plugins-buzztrax/summary
 msgid "Buzztrax GStreamer plugin"
 msgstr ""
 
 #. tumbleweed/buzztrax/gstreamer-1_0-plugins-buzztrax/description
+#. leap/buzztrax/gstreamer-1_0-plugins-buzztrax/description
 msgid "Plugin to play Buzztrax songs from any GStreamer compatible app."
 msgstr ""
 
@@ -2979,6 +2888,11 @@ msgstr ""
 #. tumbleweed/Box2D/Box2D-doc/summary
 #. tumbleweed/Box2D/libBox2D-devel-32bit/summary
 #. tumbleweed/Box2D/libBox2D2_3_1-32bit/summary
+#. leap/Box2D/Box2D-doc/summary
+#. leap/Box2D/libBox2D-devel/summary
+#. leap/Box2D/libBox2D-devel-32bit/summary
+#. leap/Box2D/libBox2D2_3_1/summary
+#. leap/Box2D/libBox2D2_3_1-32bit/summary
 msgid "A 2D Physics Engine for Games"
 msgstr ""
 
@@ -2987,6 +2901,11 @@ msgstr ""
 #. tumbleweed/Box2D/Box2D-doc/description
 #. tumbleweed/Box2D/libBox2D-devel-32bit/description
 #. tumbleweed/Box2D/libBox2D2_3_1-32bit/description
+#. leap/Box2D/Box2D-doc/description
+#. leap/Box2D/libBox2D-devel/description
+#. leap/Box2D/libBox2D-devel-32bit/description
+#. leap/Box2D/libBox2D2_3_1/description
+#. leap/Box2D/libBox2D2_3_1-32bit/description
 msgid "Box2D is an open source C++ engine for simulating rigid bodies in 2D."
 msgstr ""
 
@@ -3094,12 +3013,18 @@ msgstr ""
 #. tumbleweed/bctoolbox/libbctoolbox0/summary
 #. tumbleweed/bctoolbox/libbctoolbox-tester0-32bit/summary
 #. tumbleweed/bctoolbox/libbctoolbox0-32bit/summary
+#. leap/bctoolbox/libbctoolbox-tester0/summary
+#. leap/bctoolbox/libbctoolbox-tester0-32bit/summary
+#. leap/bctoolbox/libbctoolbox0/summary
+#. leap/bctoolbox/libbctoolbox0-32bit/summary
 #, fuzzy
 msgid "Utility library for software from Belledonne Communications"
 msgstr "Near Field Communication (NFC) 向けライブラリ"
 
 #. tumbleweed/bctoolbox/libbctoolbox-tester0/description
 #. tumbleweed/bctoolbox/libbctoolbox-tester0-32bit/description
+#. leap/bctoolbox/libbctoolbox-tester0/description
+#. leap/bctoolbox/libbctoolbox-tester0-32bit/description
 msgid ""
 "Utilities library used by Belledonne Communications softwares like belle-"
 "sip, mediastreamer2 and linphone.\n"
@@ -3109,6 +3034,8 @@ msgstr ""
 
 #. tumbleweed/bctoolbox/libbctoolbox0/description
 #. tumbleweed/bctoolbox/libbctoolbox0-32bit/description
+#. leap/bctoolbox/libbctoolbox0/description
+#. leap/bctoolbox/libbctoolbox0-32bit/description
 msgid ""
 "Utilities library used by Belledonne Communications softwares like belle-"
 "sip, mediastreamer2 and linphone.\n"
@@ -3132,11 +3059,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/benchmark/libbenchmark0/summary
+#. leap/benchmark/libbenchmark0/summary
 #, fuzzy
 msgid "Shared library for google benchmark"
 msgstr "gsound 向け共有ライブラリ"
 
 #. tumbleweed/benchmark/libbenchmark0/description
+#. leap/benchmark/libbenchmark0/description
 msgid ""
 "A library to support the benchmarking of functions, similar to unit-tests."
 msgstr ""
@@ -3265,6 +3194,8 @@ msgstr "Bluetooth ライブラリ"
 
 #. tumbleweed/bluez/libbluetooth3/description
 #. tumbleweed/bluez/libbluetooth3-32bit/description
+#. leap/bluez/libbluetooth3-32bit/description
+#. leap/bluez/libbluetooth3/description
 msgid ""
 "BlueZ provides support for the core Bluetooth layers and protocols. It is "
 "uses a modular implementation. It has many interesting features:\n"
@@ -3277,18 +3208,22 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/buzztrax/libbml-devel/summary
+#. leap/buzztrax/libbml-devel/summary
 msgid "Development files for libbml"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbml-devel/description
+#. leap/buzztrax/libbml-devel/description
 msgid "This package provides the development files for libbml."
 msgstr ""
 
 #. tumbleweed/buzztrax/libbml1/summary
+#. leap/buzztrax/libbml1/summary
 msgid "Buzztrax Machine Loader"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbml1/description
+#. leap/buzztrax/libbml1/description
 msgid ""
 "This package provides bml support classes for buzztrax based applications."
 msgstr ""
@@ -3299,21 +3234,25 @@ msgstr ""
 msgid "Shared Libs for boinc-client"
 msgstr "Fcitx 向け共有ライブラリ"
 
-#. tumbleweed/boost/libboost_atomic1_61_0/summary
-#. tumbleweed/boost/libboost_atomic1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_atomic1_62_0/summary
+#. tumbleweed/boost/libboost_atomic1_62_0-32bit/summary
 #. leap/boost/libboost_atomic1_54_0/summary
 #. leap/boost/libboost_atomic1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_atomic1_58_0/summary
 #. leap/boost_1_58_0/libboost_atomic1_58_0-32bit/summary
+#. leap/boost/libboost_atomic1_61_0/summary
+#. leap/boost/libboost_atomic1_61_0-32bit/summary
 msgid "Run-Time component of boost atomic library"
 msgstr "Boost Atomic ライブラリのランタイムコンポーネント"
 
-#. tumbleweed/boost/libboost_atomic1_61_0/description
-#. tumbleweed/boost/libboost_atomic1_61_0-32bit/description
+#. tumbleweed/boost/libboost_atomic1_62_0/description
+#. tumbleweed/boost/libboost_atomic1_62_0-32bit/description
 #. leap/boost/libboost_atomic1_54_0/description
 #. leap/boost/libboost_atomic1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_atomic1_58_0/description
 #. leap/boost_1_58_0/libboost_atomic1_58_0-32bit/description
+#. leap/boost/libboost_atomic1_61_0/description
+#. leap/boost/libboost_atomic1_61_0-32bit/description
 msgid ""
 "Run-Time support for Boost.Atomic, a library that provides atomic data types "
 "and operations on these data types, as well as memory ordering constraints "
@@ -3324,49 +3263,59 @@ msgstr ""
 "序に対する制約を設定して、アトミック変数のマルチスレッド処理を整理することも"
 "できます。"
 
-#. tumbleweed/boost/libboost_chrono1_61_0/summary
+#. tumbleweed/boost/libboost_chrono1_62_0/summary
 #. leap/boost/libboost_chrono1_54_0/summary
 #. leap/boost_1_58_0/libboost_chrono1_58_0/summary
+#. leap/boost/libboost_chrono1_61_0/summary
 msgid "The Boost::Chrono runtime library"
 msgstr "Boost::Chrono ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_chrono1_61_0/description
+#. tumbleweed/boost/libboost_chrono1_62_0/description
 #. leap/boost/libboost_chrono1_54_0/description
 #. leap/boost_1_58_0/libboost_chrono1_58_0/description
+#. leap/boost/libboost_chrono1_61_0/description
 msgid "This package contains the Boost::Chrono runtime library."
 msgstr ""
 "このパッケージには、 Boost::Chrono ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_container1_61_0/summary
-#. tumbleweed/boost/libboost_container1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_container1_62_0/summary
+#. tumbleweed/boost/libboost_container1_62_0-32bit/summary
 #. leap/boost_1_58_0/libboost_container1_58_0/summary
 #. leap/boost_1_58_0/libboost_container1_58_0-32bit/summary
+#. leap/boost/libboost_container1_61_0/summary
+#. leap/boost/libboost_container1_61_0-32bit/summary
 msgid "Boost::Container Runtime libraries"
 msgstr "Boost::Container ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_container1_61_0/description
-#. tumbleweed/boost/libboost_container1_61_0-32bit/description
+#. tumbleweed/boost/libboost_container1_62_0/description
+#. tumbleweed/boost/libboost_container1_62_0-32bit/description
 #. leap/boost_1_58_0/libboost_container1_58_0/description
 #. leap/boost_1_58_0/libboost_container1_58_0-32bit/description
+#. leap/boost/libboost_container1_61_0/description
+#. leap/boost/libboost_container1_61_0-32bit/description
 msgid "This package contains the Boost Container runtime libraries."
 msgstr ""
 "このパッケージには、 Boost Container ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_context1_61_0/summary
-#. tumbleweed/boost/libboost_context1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_context1_62_0/summary
+#. tumbleweed/boost/libboost_context1_62_0-32bit/summary
 #. leap/boost/libboost_context1_54_0/summary
 #. leap/boost/libboost_context1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_context1_58_0/summary
 #. leap/boost_1_58_0/libboost_context1_58_0-32bit/summary
+#. leap/boost/libboost_context1_61_0/summary
+#. leap/boost/libboost_context1_61_0-32bit/summary
 msgid "Run-Time component of boost context switching library"
 msgstr "Boost コンテキスト切り替えライブラリのランタイムコンポーネント"
 
-#. tumbleweed/boost/libboost_context1_61_0/description
-#. tumbleweed/boost/libboost_context1_61_0-32bit/description
+#. tumbleweed/boost/libboost_context1_62_0/description
+#. tumbleweed/boost/libboost_context1_62_0-32bit/description
 #. leap/boost/libboost_context1_54_0/description
 #. leap/boost/libboost_context1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_context1_58_0/description
 #. leap/boost_1_58_0/libboost_context1_58_0-32bit/description
+#. leap/boost/libboost_context1_61_0/description
+#. leap/boost/libboost_context1_61_0-32bit/description
 msgid ""
 "Run-Time support for Boost.Context, a foundational library that provides a "
 "sort of cooperative multitasking on a single thread."
@@ -3374,138 +3323,176 @@ msgstr ""
 "Boost.Context 向けのランタイムサポートです。単一のスレッドである種のマルチテ"
 "スク処理を実現することができる基礎ライブラリです。"
 
-#. tumbleweed/boost/libboost_coroutine1_61_0/summary
-#. tumbleweed/boost/libboost_coroutine1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_coroutine1_62_0/summary
+#. tumbleweed/boost/libboost_coroutine1_62_0-32bit/summary
 #. leap/boost_1_58_0/libboost_coroutine1_58_0/summary
 #. leap/boost_1_58_0/libboost_coroutine1_58_0-32bit/summary
+#. leap/boost/libboost_coroutine1_61_0/summary
+#. leap/boost/libboost_coroutine1_61_0-32bit/summary
 msgid "Boost::Coroutine Runtime libraries"
 msgstr "Boost::Coroutine ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_coroutine1_61_0/description
-#. tumbleweed/boost/libboost_coroutine1_61_0-32bit/description
+#. tumbleweed/boost/libboost_coroutine1_62_0/description
+#. tumbleweed/boost/libboost_coroutine1_62_0-32bit/description
 #. leap/boost_1_58_0/libboost_coroutine1_58_0/description
 #. leap/boost_1_58_0/libboost_coroutine1_58_0-32bit/description
+#. leap/boost/libboost_coroutine1_61_0/description
+#. leap/boost/libboost_coroutine1_61_0-32bit/description
 msgid "This package contains the Boost Coroutine runtime libraries."
 msgstr ""
 "このパッケージには、 Boost Coroutine ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_date_time1_61_0/summary
-#. tumbleweed/boost/libboost_date_time1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_date_time1_62_0/summary
+#. tumbleweed/boost/libboost_date_time1_62_0-32bit/summary
 #. leap/boost/libboost_date_time1_54_0/summary
 #. leap/boost/libboost_date_time1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_date_time1_58_0/summary
 #. leap/boost_1_58_0/libboost_date_time1_58_0-32bit/summary
+#. leap/boost/libboost_date_time1_61_0/summary
+#. leap/boost/libboost_date_time1_61_0-32bit/summary
 msgid "Boost::Date.Time Runtime libraries"
 msgstr "Boost::Date.Time ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_date_time1_61_0/description
-#. tumbleweed/boost/libboost_date_time1_61_0-32bit/description
+#. tumbleweed/boost/libboost_date_time1_62_0/description
+#. tumbleweed/boost/libboost_date_time1_62_0-32bit/description
 #. leap/boost/libboost_date_time1_54_0/description
 #. leap/boost/libboost_date_time1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_date_time1_58_0/description
 #. leap/boost_1_58_0/libboost_date_time1_58_0-32bit/description
+#. leap/boost/libboost_date_time1_61_0/description
+#. leap/boost/libboost_date_time1_61_0-32bit/description
 msgid "This package contains the Boost Date.Time runtime libraries."
 msgstr ""
 "このパッケージには、 Boost Date.Time ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_filesystem1_61_0/summary
-#. tumbleweed/boost/libboost_filesystem1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_fiber1_62_0/summary
+#. tumbleweed/boost/libboost_filesystem1_62_0/summary
+#. tumbleweed/boost/libboost_fiber1_62_0-32bit/summary
+#. tumbleweed/boost/libboost_filesystem1_62_0-32bit/summary
 #. leap/boost/libboost_filesystem1_54_0/summary
 #. leap/boost/libboost_filesystem1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_filesystem1_58_0/summary
 #. leap/boost_1_58_0/libboost_filesystem1_58_0-32bit/summary
+#. leap/boost/libboost_filesystem1_61_0/summary
+#. leap/boost/libboost_filesystem1_61_0-32bit/summary
 msgid "Boost::Filesystem Runtime Libraries"
 msgstr "Boost::Filesystem ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_filesystem1_61_0/description
-#. tumbleweed/boost/libboost_filesystem1_61_0-32bit/description
+#. tumbleweed/boost/libboost_fiber1_62_0/description
+#. tumbleweed/boost/libboost_fiber1_62_0-32bit/description
+#, fuzzy
+#| msgid "This package contains the Boost::Timer runtime library."
+msgid "This package contains Boost::Fiber runtime library."
+msgstr ""
+"このパッケージには、 Boost::Timer ランタイムライブラリが含まれています。"
+
+#. tumbleweed/boost/libboost_filesystem1_62_0/description
+#. tumbleweed/boost/libboost_filesystem1_62_0-32bit/description
 #. leap/boost/libboost_filesystem1_54_0/description
 #. leap/boost/libboost_filesystem1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_filesystem1_58_0/description
 #. leap/boost_1_58_0/libboost_filesystem1_58_0-32bit/description
+#. leap/boost/libboost_filesystem1_61_0/description
+#. leap/boost/libboost_filesystem1_61_0-32bit/description
 msgid "This package contains the Boost::Filesystem libraries."
 msgstr "このパッケージには、 Boost::Filesystem ライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_graph1_61_0/summary
-#. tumbleweed/boost/libboost_graph1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_graph1_62_0/summary
+#. tumbleweed/boost/libboost_graph1_62_0-32bit/summary
 #. leap/boost/libboost_graph1_54_0/summary
 #. leap/boost/libboost_graph1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_graph1_58_0/summary
 #. leap/boost_1_58_0/libboost_graph1_58_0-32bit/summary
+#. leap/boost/libboost_graph1_61_0/summary
+#. leap/boost/libboost_graph1_61_0-32bit/summary
 msgid "Boost::Graph Runtime Libraries"
 msgstr "Boost::Graph ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_graph1_61_0/description
-#. tumbleweed/boost/libboost_graph1_61_0-32bit/description
+#. tumbleweed/boost/libboost_graph1_62_0/description
+#. tumbleweed/boost/libboost_graph1_62_0-32bit/description
 #. leap/boost/libboost_graph1_54_0/description
 #. leap/boost/libboost_graph1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_graph1_58_0/description
 #. leap/boost_1_58_0/libboost_graph1_58_0-32bit/description
+#. leap/boost/libboost_graph1_61_0/description
+#. leap/boost/libboost_graph1_61_0-32bit/description
 msgid "This package contains the Boost::Graph Runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Graph ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_graph_parallel1_61_0/summary
-#. tumbleweed/boost/libboost_graph_parallel1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_graph_parallel1_62_0/summary
+#. tumbleweed/boost/libboost_graph_parallel1_62_0-32bit/summary
 #. leap/boost/libboost_graph_parallel1_54_0/summary
 #. leap/boost/libboost_graph_parallel1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_graph_parallel1_58_0/summary
 #. leap/boost_1_58_0/libboost_graph_parallel1_58_0-32bit/summary
+#. leap/boost/libboost_graph_parallel1_61_0/summary
+#. leap/boost/libboost_graph_parallel1_61_0-32bit/summary
 msgid "Boost graph::distributed runtime libraries"
 msgstr "Boost graph::distributed ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_graph_parallel1_61_0/description
-#. tumbleweed/boost/libboost_graph_parallel1_61_0-32bit/description
+#. tumbleweed/boost/libboost_graph_parallel1_62_0/description
+#. tumbleweed/boost/libboost_graph_parallel1_62_0-32bit/description
 #. leap/boost/libboost_graph_parallel1_54_0/description
 #. leap/boost/libboost_graph_parallel1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_graph_parallel1_58_0/description
 #. leap/boost_1_58_0/libboost_graph_parallel1_58_0-32bit/description
+#. leap/boost/libboost_graph_parallel1_61_0/description
+#. leap/boost/libboost_graph_parallel1_61_0-32bit/description
 msgid "This package contains the boost::graph::distributed runtime libraries."
 msgstr ""
 "このパッケージには、 boost::graph::distributed ランタイムライブラリが含まれて"
 "います。"
 
-#. tumbleweed/boost/libboost_iostreams1_61_0/summary
-#. tumbleweed/boost/libboost_iostreams1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_iostreams1_62_0/summary
+#. tumbleweed/boost/libboost_iostreams1_62_0-32bit/summary
 #. leap/boost/libboost_iostreams1_54_0/summary
 #. leap/boost/libboost_iostreams1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_iostreams1_58_0/summary
 #. leap/boost_1_58_0/libboost_iostreams1_58_0-32bit/summary
+#. leap/boost/libboost_iostreams1_61_0/summary
+#. leap/boost/libboost_iostreams1_61_0-32bit/summary
 msgid "Boost::IOStreams Runtime Libraries"
 msgstr "Boost::IOStreams ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_iostreams1_61_0/description
-#. tumbleweed/boost/libboost_iostreams1_61_0-32bit/description
+#. tumbleweed/boost/libboost_iostreams1_62_0/description
+#. tumbleweed/boost/libboost_iostreams1_62_0-32bit/description
 #. leap/boost/libboost_iostreams1_54_0/description
 #. leap/boost/libboost_iostreams1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_iostreams1_58_0/description
 #. leap/boost_1_58_0/libboost_iostreams1_58_0-32bit/description
+#. leap/boost/libboost_iostreams1_61_0/description
+#. leap/boost/libboost_iostreams1_61_0-32bit/description
 msgid "This package contains the Boost::IOStreams Runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::IOStreams ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_locale1_61_0/summary
+#. tumbleweed/boost/libboost_locale1_62_0/summary
 #. leap/boost/libboost_locale1_54_0/summary
 #. leap/boost_1_58_0/libboost_locale1_58_0/summary
+#. leap/boost/libboost_locale1_61_0/summary
 msgid "The Boost::Locale runtime library"
 msgstr "Boost::Locale ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_locale1_61_0/description
+#. tumbleweed/boost/libboost_locale1_62_0/description
 #. leap/boost/libboost_locale1_54_0/description
 #. leap/boost_1_58_0/libboost_locale1_58_0/description
+#. leap/boost/libboost_locale1_61_0/description
 msgid "This package contains the Boost::Locale runtime library."
 msgstr ""
 "このパッケージには、 Boost::Locale ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_log1_61_0/summary
+#. tumbleweed/boost/libboost_log1_62_0/summary
 #. leap/boost/libboost_log1_54_0/summary
 #. leap/boost_1_58_0/libboost_log1_58_0/summary
+#. leap/boost/libboost_log1_61_0/summary
 msgid "Run-Time component of boost logging library"
 msgstr "Boost Logging ライブラリのランタイムコンポーネント"
 
-#. tumbleweed/boost/libboost_log1_61_0/description
+#. tumbleweed/boost/libboost_log1_62_0/description
 #. leap/boost/libboost_log1_54_0/description
 #. leap/boost_1_58_0/libboost_log1_58_0/description
+#. leap/boost/libboost_log1_61_0/description
 msgid ""
 "Boost.Log library aims to make logging significantly easier for the "
 "application developer. It provides a wide range of out-of-the-box tools "
@@ -3515,258 +3502,314 @@ msgstr ""
 "することができるライブラリです。すぐに使えるツールが幅広く用意されているほ"
 "か、ライブラリを拡張するための公開インターフェイスなども用意されています。"
 
-#. tumbleweed/boost/libboost_math1_61_0/summary
-#. tumbleweed/boost/libboost_math1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_math1_62_0/summary
+#. tumbleweed/boost/libboost_math1_62_0-32bit/summary
 #. leap/boost/libboost_math1_54_0/summary
 #. leap/boost/libboost_math1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_math1_58_0/summary
 #. leap/boost_1_58_0/libboost_math1_58_0-32bit/summary
+#. leap/boost/libboost_math1_61_0/summary
+#. leap/boost/libboost_math1_61_0-32bit/summary
 msgid "Boost::Math Runtime Libraries"
 msgstr "Boost::Math ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_math1_61_0/description
-#. tumbleweed/boost/libboost_math1_61_0-32bit/description
+#. tumbleweed/boost/libboost_math1_62_0/description
+#. tumbleweed/boost/libboost_math1_62_0-32bit/description
 #. leap/boost/libboost_math1_54_0/description
 #. leap/boost/libboost_math1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_math1_58_0/description
 #. leap/boost_1_58_0/libboost_math1_58_0-32bit/description
+#. leap/boost/libboost_math1_61_0/description
+#. leap/boost/libboost_math1_61_0-32bit/description
 msgid "This package contains the Boost::Math Runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Math ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_mpi1_61_0/summary
-#. tumbleweed/boost/libboost_mpi1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_mpi1_62_0/summary
+#. tumbleweed/boost/libboost_mpi1_62_0-32bit/summary
 #. leap/boost/libboost_mpi1_54_0/summary
 #. leap/boost/libboost_mpi1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_mpi1_58_0/summary
 #. leap/boost_1_58_0/libboost_mpi1_58_0-32bit/summary
+#. leap/boost/libboost_mpi1_61_0/summary
+#. leap/boost/libboost_mpi1_61_0-32bit/summary
 msgid "Boost::MPI Runtime libraries"
 msgstr "Boost::MPI ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_mpi1_61_0/description
-#. tumbleweed/boost/libboost_mpi1_61_0-32bit/description
+#. tumbleweed/boost/libboost_mpi1_62_0/description
+#. tumbleweed/boost/libboost_mpi1_62_0-32bit/description
 #. leap/boost/libboost_mpi1_54_0/description
 #. leap/boost/libboost_mpi1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_mpi1_58_0/description
 #. leap/boost_1_58_0/libboost_mpi1_58_0-32bit/description
+#. leap/boost/libboost_mpi1_61_0/description
+#. leap/boost/libboost_mpi1_61_0-32bit/description
 msgid "This package contains the Boost::MPI Runtime libraries."
 msgstr "このパッケージには、 Boost::MPI ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_program_options1_61_0/summary
-#. tumbleweed/boost/libboost_program_options1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_program_options1_62_0/summary
+#. tumbleweed/boost/libboost_program_options1_62_0-32bit/summary
 #. leap/boost/libboost_program_options1_54_0/summary
 #. leap/boost/libboost_program_options1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_program_options1_58_0/summary
 #. leap/boost_1_58_0/libboost_program_options1_58_0-32bit/summary
+#. leap/boost/libboost_program_options1_61_0/summary
+#. leap/boost/libboost_program_options1_61_0-32bit/summary
 msgid "Boost::ProgramOptions Runtime libraries"
 msgstr "Boost::ProgramOptions ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_program_options1_61_0/description
-#. tumbleweed/boost/libboost_program_options1_61_0-32bit/description
+#. tumbleweed/boost/libboost_program_options1_62_0/description
+#. tumbleweed/boost/libboost_program_options1_62_0-32bit/description
 #. leap/boost/libboost_program_options1_54_0/description
 #. leap/boost/libboost_program_options1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_program_options1_58_0/description
 #. leap/boost_1_58_0/libboost_program_options1_58_0-32bit/description
+#. leap/boost/libboost_program_options1_61_0/description
+#. leap/boost/libboost_program_options1_61_0-32bit/description
 msgid "This package contains the Boost::ProgramOptions Runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::ProgramOptions ライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_python1_61_0/summary
-#. tumbleweed/boost/libboost_python3-1_61_0/summary
-#. tumbleweed/boost/libboost_python1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_python1_62_0/summary
+#. tumbleweed/boost/libboost_python3-1_62_0/summary
+#. tumbleweed/boost/libboost_python1_62_0-32bit/summary
 #. leap/boost/libboost_python1_54_0/summary
 #. leap/boost/libboost_python1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_python1_58_0/summary
 #. leap/boost_1_58_0/libboost_python1_58_0-32bit/summary
+#. leap/boost/libboost_python1_61_0/summary
+#. leap/boost/libboost_python1_61_0-32bit/summary
+#. leap/boost/libboost_python3-1_61_0/summary
 msgid "Boost::Python Runtime Libraries"
 msgstr "Boost::Python ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_python1_61_0/description
-#. tumbleweed/boost/libboost_python1_61_0-32bit/description
+#. tumbleweed/boost/libboost_python1_62_0/description
+#. tumbleweed/boost/libboost_python1_62_0-32bit/description
 #. leap/boost/libboost_python1_54_0/description
 #. leap/boost/libboost_python1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_python1_58_0/description
 #. leap/boost_1_58_0/libboost_python1_58_0-32bit/description
+#. leap/boost/libboost_python1_61_0/description
+#. leap/boost/libboost_python1_61_0-32bit/description
 msgid "This package contains the Boost::Python Runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Python ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_python3-1_61_0/description
+#. tumbleweed/boost/libboost_python3-1_62_0/description
+#. leap/boost/libboost_python3-1_61_0/description
 msgid "This package contains the Boost::Python3 Runtime libraries."
 msgstr ""
 
-#. tumbleweed/boost/libboost_random1_61_0/summary
-#. tumbleweed/boost/libboost_random1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_random1_62_0/summary
+#. tumbleweed/boost/libboost_random1_62_0-32bit/summary
 #. leap/boost/libboost_random1_54_0/summary
 #. leap/boost/libboost_random1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_random1_58_0/summary
 #. leap/boost_1_58_0/libboost_random1_58_0-32bit/summary
+#. leap/boost/libboost_random1_61_0/summary
+#. leap/boost/libboost_random1_61_0-32bit/summary
 msgid "The Boost::Random runtime library"
 msgstr "Boost::Random ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_random1_61_0/description
-#. tumbleweed/boost/libboost_random1_61_0-32bit/description
+#. tumbleweed/boost/libboost_random1_62_0/description
+#. tumbleweed/boost/libboost_random1_62_0-32bit/description
 #. leap/boost/libboost_random1_54_0/description
 #. leap/boost/libboost_random1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_random1_58_0/description
 #. leap/boost_1_58_0/libboost_random1_58_0-32bit/description
+#. leap/boost/libboost_random1_61_0/description
+#. leap/boost/libboost_random1_61_0-32bit/description
 msgid "This package contains the Boost::Random runtime library."
 msgstr ""
 "このパッケージには、 Boost::Random ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_regex1_61_0/summary
-#. tumbleweed/boost/libboost_regex1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_regex1_62_0/summary
+#. tumbleweed/boost/libboost_regex1_62_0-32bit/summary
 #. leap/boost/libboost_regex1_54_0/summary
 #. leap/boost/libboost_regex1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_regex1_58_0/summary
 #. leap/boost_1_58_0/libboost_regex1_58_0-32bit/summary
+#. leap/boost/libboost_regex1_61_0/summary
+#. leap/boost/libboost_regex1_61_0-32bit/summary
 msgid "The Boost::Regex runtime library"
 msgstr "Boost::Regex ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_regex1_61_0/description
-#. tumbleweed/boost/libboost_regex1_61_0-32bit/description
+#. tumbleweed/boost/libboost_regex1_62_0/description
+#. tumbleweed/boost/libboost_regex1_62_0-32bit/description
 #. leap/boost/libboost_regex1_54_0/description
 #. leap/boost/libboost_regex1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_regex1_58_0/description
 #. leap/boost_1_58_0/libboost_regex1_58_0-32bit/description
+#. leap/boost/libboost_regex1_61_0/description
+#. leap/boost/libboost_regex1_61_0-32bit/description
 msgid "This package contains the Boost::Regex runtime library."
 msgstr ""
 "このパッケージには、 Boost::Regex ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_serialization1_61_0/summary
-#. tumbleweed/boost/libboost_serialization1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_serialization1_62_0/summary
+#. tumbleweed/boost/libboost_serialization1_62_0-32bit/summary
 #. leap/boost/libboost_serialization1_54_0/summary
 #. leap/boost/libboost_serialization1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_serialization1_58_0/summary
 #. leap/boost_1_58_0/libboost_serialization1_58_0-32bit/summary
+#. leap/boost/libboost_serialization1_61_0/summary
+#. leap/boost/libboost_serialization1_61_0-32bit/summary
 msgid "Boost::Serialization Runtime Libraries"
 msgstr "Boost::Serialization ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_serialization1_61_0/description
-#. tumbleweed/boost/libboost_serialization1_61_0-32bit/description
+#. tumbleweed/boost/libboost_serialization1_62_0/description
+#. tumbleweed/boost/libboost_serialization1_62_0-32bit/description
 #. leap/boost/libboost_serialization1_54_0/description
 #. leap/boost/libboost_serialization1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_serialization1_58_0/description
 #. leap/boost_1_58_0/libboost_serialization1_58_0-32bit/description
+#. leap/boost/libboost_serialization1_61_0/description
+#. leap/boost/libboost_serialization1_61_0-32bit/description
 msgid "This package contains the Boost::Serialization Runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Serialization ランタイムライブラリが含まれていま"
 "す。"
 
-#. tumbleweed/boost/libboost_signals1_61_0/summary
-#. tumbleweed/boost/libboost_signals1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_signals1_62_0/summary
+#. tumbleweed/boost/libboost_signals1_62_0-32bit/summary
 #. leap/boost/libboost_signals1_54_0/summary
 #. leap/boost/libboost_signals1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_signals1_58_0/summary
 #. leap/boost_1_58_0/libboost_signals1_58_0-32bit/summary
+#. leap/boost/libboost_signals1_61_0/summary
+#. leap/boost/libboost_signals1_61_0-32bit/summary
 msgid "Boost::Signals Runtime Libraries"
 msgstr "Boost::Signals ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_signals1_61_0/description
-#. tumbleweed/boost/libboost_signals1_61_0-32bit/description
+#. tumbleweed/boost/libboost_signals1_62_0/description
+#. tumbleweed/boost/libboost_signals1_62_0-32bit/description
 #. leap/boost/libboost_signals1_54_0/description
 #. leap/boost/libboost_signals1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_signals1_58_0/description
 #. leap/boost_1_58_0/libboost_signals1_58_0-32bit/description
+#. leap/boost/libboost_signals1_61_0/description
+#. leap/boost/libboost_signals1_61_0-32bit/description
 msgid "This package contains the Boost::Signals Runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Signals ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_system1_61_0/summary
-#. tumbleweed/boost/libboost_system1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_system1_62_0/summary
+#. tumbleweed/boost/libboost_system1_62_0-32bit/summary
 #. leap/boost/libboost_system1_54_0/summary
 #. leap/boost/libboost_system1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_system1_58_0/summary
 #. leap/boost_1_58_0/libboost_system1_58_0-32bit/summary
+#. leap/boost/libboost_system1_61_0/summary
+#. leap/boost/libboost_system1_61_0-32bit/summary
 msgid "Boost::System Runtime Libraries"
 msgstr "Boost::System ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_system1_61_0/description
-#. tumbleweed/boost/libboost_system1_61_0-32bit/description
+#. tumbleweed/boost/libboost_system1_62_0/description
+#. tumbleweed/boost/libboost_system1_62_0-32bit/description
 #. leap/boost/libboost_system1_54_0/description
 #. leap/boost/libboost_system1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_system1_58_0/description
 #. leap/boost_1_58_0/libboost_system1_58_0-32bit/description
+#. leap/boost/libboost_system1_61_0/description
+#. leap/boost/libboost_system1_61_0-32bit/description
 msgid "This package contains the Boost::System runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::System ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_test1_61_0/summary
-#. tumbleweed/boost/libboost_test1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_test1_62_0/summary
+#. tumbleweed/boost/libboost_test1_62_0-32bit/summary
 #. leap/boost/libboost_test1_54_0/summary
 #. leap/boost/libboost_test1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_test1_58_0/summary
 #. leap/boost_1_58_0/libboost_test1_58_0-32bit/summary
+#. leap/boost/libboost_test1_61_0/summary
+#. leap/boost/libboost_test1_61_0-32bit/summary
 msgid "Boost::Test Runtime Libraries"
 msgstr "Boost::Test ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_test1_61_0/description
-#. tumbleweed/boost/libboost_test1_61_0-32bit/description
+#. tumbleweed/boost/libboost_test1_62_0/description
+#. tumbleweed/boost/libboost_test1_62_0-32bit/description
 #. leap/boost/libboost_test1_54_0/description
 #. leap/boost/libboost_test1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_test1_58_0/description
 #. leap/boost_1_58_0/libboost_test1_58_0-32bit/description
+#. leap/boost/libboost_test1_61_0/description
+#. leap/boost/libboost_test1_61_0-32bit/description
 msgid "This package contains the Boost::Test runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Test ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_thread1_61_0/summary
-#. tumbleweed/boost/libboost_thread1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_thread1_62_0/summary
+#. tumbleweed/boost/libboost_thread1_62_0-32bit/summary
 #. leap/boost/libboost_thread1_54_0/summary
 #. leap/boost/libboost_thread1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_thread1_58_0/summary
 #. leap/boost_1_58_0/libboost_thread1_58_0-32bit/summary
+#. leap/boost/libboost_thread1_61_0/summary
+#. leap/boost/libboost_thread1_61_0-32bit/summary
 msgid "Boost::Thread Runtime Libraries"
 msgstr "Boost::Thread ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_thread1_61_0/description
-#. tumbleweed/boost/libboost_thread1_61_0-32bit/description
+#. tumbleweed/boost/libboost_thread1_62_0/description
+#. tumbleweed/boost/libboost_thread1_62_0-32bit/description
 #. leap/boost/libboost_thread1_54_0/description
 #. leap/boost/libboost_thread1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_thread1_58_0/description
 #. leap/boost_1_58_0/libboost_thread1_58_0-32bit/description
+#. leap/boost/libboost_thread1_61_0/description
+#. leap/boost/libboost_thread1_61_0-32bit/description
 msgid "This package contains the Boost::Thread runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Thread ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_timer1_61_0/summary
+#. tumbleweed/boost/libboost_timer1_62_0/summary
 #. leap/boost/libboost_timer1_54_0/summary
 #. leap/boost_1_58_0/libboost_timer1_58_0/summary
+#. leap/boost/libboost_timer1_61_0/summary
 msgid "The Boost::Timer runtime library"
 msgstr "Boost::Timer ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_timer1_61_0/description
+#. tumbleweed/boost/libboost_timer1_62_0/description
 #. leap/boost/libboost_timer1_54_0/description
 #. leap/boost_1_58_0/libboost_timer1_58_0/description
+#. leap/boost/libboost_timer1_61_0/description
 msgid "This package contains the Boost::Timer runtime library."
 msgstr ""
 "このパッケージには、 Boost::Timer ランタイムライブラリが含まれています。"
 
-#. tumbleweed/boost/libboost_type_erasure1_61_0/summary
-#. tumbleweed/boost/libboost_type_erasure1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_type_erasure1_62_0/summary
+#. tumbleweed/boost/libboost_type_erasure1_62_0-32bit/summary
+#. leap/boost/libboost_type_erasure1_61_0/summary
+#. leap/boost/libboost_type_erasure1_61_0-32bit/summary
 msgid "The Boost::TypeErasure runtime library"
 msgstr ""
 
-#. tumbleweed/boost/libboost_type_erasure1_61_0/description
-#. tumbleweed/boost/libboost_type_erasure1_61_0-32bit/description
+#. tumbleweed/boost/libboost_type_erasure1_62_0/description
+#. tumbleweed/boost/libboost_type_erasure1_62_0-32bit/description
+#. leap/boost/libboost_type_erasure1_61_0/description
+#. leap/boost/libboost_type_erasure1_61_0-32bit/description
 msgid "This package contains the Boost::TypeErasure runtime library."
 msgstr ""
 
-#. tumbleweed/boost/libboost_wave1_61_0/summary
-#. tumbleweed/boost/libboost_wave1_61_0-32bit/summary
+#. tumbleweed/boost/libboost_wave1_62_0/summary
+#. tumbleweed/boost/libboost_wave1_62_0-32bit/summary
 #. leap/boost/libboost_wave1_54_0/summary
 #. leap/boost/libboost_wave1_54_0-32bit/summary
 #. leap/boost_1_58_0/libboost_wave1_58_0/summary
 #. leap/boost_1_58_0/libboost_wave1_58_0-32bit/summary
+#. leap/boost/libboost_wave1_61_0/summary
+#. leap/boost/libboost_wave1_61_0-32bit/summary
 msgid "Boost::Wave Runtime Libraries"
 msgstr "Boost::Wave ランタイムライブラリ"
 
-#. tumbleweed/boost/libboost_wave1_61_0/description
-#. tumbleweed/boost/libboost_wave1_61_0-32bit/description
+#. tumbleweed/boost/libboost_wave1_62_0/description
+#. tumbleweed/boost/libboost_wave1_62_0-32bit/description
 #. leap/boost/libboost_wave1_54_0/description
 #. leap/boost/libboost_wave1_54_0-32bit/description
 #. leap/boost_1_58_0/libboost_wave1_58_0/description
 #. leap/boost_1_58_0/libboost_wave1_58_0-32bit/description
+#. leap/boost/libboost_wave1_61_0/description
+#. leap/boost/libboost_wave1_61_0-32bit/description
 msgid "This package contains the Boost::Wave runtime libraries."
 msgstr ""
 "このパッケージには、 Boost::Wave ランタイムライブラリが含まれています。"
@@ -3846,54 +3889,66 @@ msgstr ""
 "利用する libbtrfs.so 共有ライブラリが含まれています。"
 
 #. tumbleweed/buzztrax/libbuzztrax-core-devel/summary
+#. leap/buzztrax/libbuzztrax-core-devel/summary
 msgid "Development files for libbuzztrax-core"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-core-devel/description
+#. leap/buzztrax/libbuzztrax-core-devel/description
 msgid "This package provides the development files for libbuzztrax-core."
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-core1/summary
 #. tumbleweed/buzztrax/libbuzztrax-gst1/summary
 #. tumbleweed/buzztrax/libbuzztrax-core1-32bit/summary
+#. leap/buzztrax/libbuzztrax-core1/summary
+#. leap/buzztrax/libbuzztrax-gst1/summary
 msgid "Core support classes for buzztrax based applications"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-core1/description
 #. tumbleweed/buzztrax/libbuzztrax-core1-32bit/description
+#. leap/buzztrax/libbuzztrax-core1/description
 msgid ""
 "This package provides core support classes for buzztrax based applications. "
 "Hotel Seminar Kraftquelle Schlossblick, Embach 1 - A 6320 Angerberg"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-gst-devel/summary
+#. leap/buzztrax/libbuzztrax-gst-devel/summary
 msgid "Development files for libbuzztrax-gst"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-gst-devel/description
+#. leap/buzztrax/libbuzztrax-gst-devel/description
 msgid "This package provides the development files for libbuzztrax-gst."
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-gst1/description
+#. leap/buzztrax/libbuzztrax-gst1/description
 msgid ""
 "This package provides gst support classes for buzztrax based applications."
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-ic-devel/summary
+#. leap/buzztrax/libbuzztrax-ic-devel/summary
 msgid "Development files for libbuzztrax-ic"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-ic-devel/description
+#. leap/buzztrax/libbuzztrax-ic-devel/description
 msgid "This package provides the development files for libbuzztrax-ic."
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-ic1/summary
 #. tumbleweed/buzztrax/libbuzztrax-ic1-32bit/summary
+#. leap/buzztrax/libbuzztrax-ic1/summary
 msgid "Interaction controller support classes for buzztrax based applications"
 msgstr ""
 
 #. tumbleweed/buzztrax/libbuzztrax-ic1/description
 #. tumbleweed/buzztrax/libbuzztrax-ic1-32bit/description
+#. leap/buzztrax/libbuzztrax-ic1/description
 msgid ""
 "This package provides interaction controller support classes for buzztrax "
 "based applications."
@@ -4148,9 +4203,9 @@ msgstr ""
 "するようになっています。"
 
 #. tumbleweed/libreadline5/summary
-#. tumbleweed/bash/libreadline6/summary
+#. tumbleweed/bash/libreadline7/summary
 #. tumbleweed/libreadline5/libreadline5-32bit/summary
-#. tumbleweed/bash/libreadline6-32bit/summary
+#. tumbleweed/bash/libreadline7-32bit/summary
 #. leap/libreadline5/libreadline5-32bit/summary
 #. leap/libreadline5/summary
 #. leap/bash/libreadline6-32bit/summary
@@ -4159,9 +4214,9 @@ msgid "The Readline Library"
 msgstr "readline ライブラリ"
 
 #. tumbleweed/libreadline5/description
-#. tumbleweed/bash/libreadline6/description
+#. tumbleweed/bash/libreadline7/description
 #. tumbleweed/libreadline5/libreadline5-32bit/description
-#. tumbleweed/bash/libreadline6-32bit/description
+#. tumbleweed/bash/libreadline7-32bit/description
 #. leap/libreadline5/libreadline5-32bit/description
 #. leap/libreadline5/description
 #. leap/bash/libreadline6-32bit/description
@@ -4176,31 +4231,19 @@ msgstr ""
 "このパッケージには、履歴機能と検索機能が含まれています。"
 
 #. tumbleweed/breeze-gtk/metatheme-breeze-common/summary
+#. leap/breeze-gtk/metatheme-breeze-common/summary
 msgid "GTK+ theme matching KDE's Breeze -- Common Files"
 msgstr "KDE の Breeze にマッチする GTK+ テーマ -- 汎用ファイル"
 
 #. tumbleweed/breeze-gtk/metatheme-breeze-common/description
 #. tumbleweed/breeze-gtk/gtk2-metatheme-breeze/description
 #. tumbleweed/breeze-gtk/gtk3-metatheme-breeze/description
+#. leap/breeze-gtk/gtk2-metatheme-breeze/description
+#. leap/breeze-gtk/gtk3-metatheme-breeze/description
+#. leap/breeze-gtk/metatheme-breeze-common/description
 msgid "A GTK+ theme created to match with the new Plasma 5 Breeze theme."
 msgstr ""
 "新しい Plasma 5 Breeze テーマにマッチするように作られた GTK+ テーマです。"
-
-#. tumbleweed/banshee/muinshee/summary
-msgid "Banshee client modeled after the Muine music player interface"
-msgstr ""
-
-#. tumbleweed/banshee/muinshee/description
-msgid ""
-"Import, organize, and discover new music with Banshee through its simple and "
-"powerful interface and wide array of innovative features. Create your own "
-"radio stations or listen to a friends' through Last.fm integration; "
-"experience automatic cover art fetching as you listen; and easily browse, "
-"search, and control your media collection.\n"
-"\n"
-"The Muinshee Banshee client provides a user interface modeled directly after "
-"the old GNOME Muine media player."
-msgstr ""
 
 #. tumbleweed/brltty/ocaml-brlapi/summary
 #. leap/brltty/ocaml-brlapi/summary
@@ -4296,22 +4339,26 @@ msgstr ""
 
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxCore-1_1/summary
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxCore-1_1-32bit/summary
+#. leap/buzztrax/typelib-1_0-BuzztraxCore-1_1/summary
 msgid "BuzztraxCore Introspection bindings"
 msgstr ""
 
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxCore-1_1/description
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxCore-1_1-32bit/description
+#. leap/buzztrax/typelib-1_0-BuzztraxCore-1_1/description
 msgid ""
 "This package provides the GObject Introspection bindings for BuzztraxCore."
 msgstr ""
 
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxIc-1_1/summary
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxIc-1_1-32bit/summary
+#. leap/buzztrax/typelib-1_0-BuzztraxIc-1_1/summary
 msgid "BuzztraxIc introspection bindings"
 msgstr ""
 
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxIc-1_1/description
 #. tumbleweed/buzztrax/typelib-1_0-BuzztraxIc-1_1-32bit/description
+#. leap/buzztrax/typelib-1_0-BuzztraxIc-1_1/description
 msgid ""
 "This package provides the GObject Introspection bindings for BuzztraxIc."
 msgstr ""
@@ -4517,14 +4564,6 @@ msgstr "libdwarf のドキュメンテーション"
 msgid "This package contains the documentation for the bamf library."
 msgstr "パッケージには予期されたものと異なるバージョンが含まれています"
 
-#. tumbleweed/banshee/banshee-core-lang/summary
-msgid "Languages for package banshee"
-msgstr "banshee 向け言語パッケージ"
-
-#. tumbleweed/banshee/banshee-core-lang/description
-msgid "Provides translations to the package banshee"
-msgstr "banshee パッケージ向けの翻訳データです。"
-
 #. tumbleweed/baobab/baobab-lang/summary
 #. leap/baobab/baobab-lang/summary
 msgid "Languages for package baobab"
@@ -4575,6 +4614,20 @@ msgid ""
 "completion."
 msgstr ""
 "このパッケージには、 kdepim モジュールの Akonadi ファイルが含まれています。"
+
+#. tumbleweed/bash-completion-doc/summary
+#, fuzzy
+msgid "The Documentation of Programmable Completion for Bash"
+msgstr "bash 向け自動補完プログラム制御"
+
+#. tumbleweed/bash-completion-doc/description
+#, fuzzy
+msgid ""
+"This package contains the package documentation file of the package bash-"
+"completion."
+msgstr ""
+"パッケージには apache-commons-io 向けの API ドキュメンテーションが含まれてい"
+"ます。"
 
 #. tumbleweed/bash/bash-doc/summary
 #. leap/bash/bash-doc/summary
@@ -4714,14 +4767,29 @@ msgid "Javadoc for bcel5_3"
 msgstr "jlex の javadoc"
 
 #. tumbleweed/bcm20702a1-firmware/summary
+#. leap/bcm20702a1-firmware/summary
 #, fuzzy
 msgid "Firmware for BCM20702A1 based devices"
 msgstr "ZyDAS ZD1201 ベースのデバイス向けのファームウエア"
 
 #. tumbleweed/bcm20702a1-firmware/description
+#. leap/bcm20702a1-firmware/description
 msgid ""
 "Firmware for broadcom BCM20702A1 based devices present in various sticks and "
 "laptops always over usb bridge."
+msgstr ""
+
+#. tumbleweed/bcm43xx-firmware/summary
+#. leap/bcm43xx-firmware/summary
+msgid "Firmware for the Broadcom/Cypress BCM43xx chipset family"
+msgstr ""
+
+#. tumbleweed/bcm43xx-firmware/description
+#. leap/bcm43xx-firmware/description
+msgid ""
+"This package provides the firmware files needed for the Broadcom (now "
+"Cypress) BCM43430 Wifi+Bluetooth chipset as well as NVRAM config files for "
+"BCM43362 and BCM43430."
 msgstr ""
 
 #. tumbleweed/bea-stax/summary
@@ -4849,10 +4917,12 @@ msgstr ""
 "の管理者向けリファレンスマニュアルも含まれています。"
 
 #. tumbleweed/binwalk/summary
+#. leap/binwalk/summary
 msgid "Firmware Analysis Tool"
 msgstr ""
 
 #. tumbleweed/binwalk/description
+#. leap/binwalk/description
 msgid ""
 "Binwalk is a tool for searching a given binary image for embedded files and "
 "executable code. Specifically, it is designed for identifying files and code "
@@ -4865,11 +4935,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/birdie/birdie-lang/summary
+#. leap/birdie/birdie-lang/summary
 #, fuzzy
 msgid "Languages for package birdie"
 msgstr "evince 向け言語パッケージ"
 
 #. tumbleweed/birdie/birdie-lang/description
+#. leap/birdie/birdie-lang/description
 #, fuzzy
 msgid "Provides translations to the package birdie"
 msgstr "evince パッケージに対する翻訳データです。"
@@ -4895,11 +4967,13 @@ msgstr ""
 "ています。"
 
 #. tumbleweed/blasphemer/summary
+#. leap/blasphemer/summary
 #, fuzzy
 msgid "Replacement game files for Heretic game engines"
 msgstr "gtk2-engines 向け開発用ファイル"
 
 #. tumbleweed/blasphemer/description
+#. leap/blasphemer/description
 msgid ""
 "Blasphemer aims to create a free content package for the Heretic engine, "
 "with a theme of metal-inspired dark fantasy."
@@ -4959,11 +5033,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/blobwars/blobwars-lang/summary
+#. leap/blobwars/blobwars-lang/summary
 #, fuzzy
 msgid "Languages for package blobwars"
 msgstr "baobab 向け言語パッケージ"
 
 #. tumbleweed/blobwars/blobwars-lang/description
+#. leap/blobwars/blobwars-lang/description
 #, fuzzy
 msgid "Provides translations to the package blobwars"
 msgstr "baobab パッケージ向けの翻訳データです。"
@@ -4980,26 +5056,25 @@ msgid "Utility for Bluetooth devices graphical configuration."
 msgstr ""
 
 #. tumbleweed/blueberry/blueberry-lang/summary
-#. leap/blueberry/blueberry-lang/summary
 #, fuzzy
-msgid "Languages for package blueberry"
+msgid "Translations for package blueberry"
 msgstr "blender 向け言語パッケージ"
 
 #. tumbleweed/blueberry/blueberry-lang/description
-#. leap/blueberry/blueberry-lang/description
 #, fuzzy
-msgid "Provides translations to the package blueberry"
-msgstr "blender パッケージ向けの翻訳データです。"
+msgid "Provides translations for the \"blueberry\" package."
+msgstr "eog パッケージに対する翻訳データです。"
 
 #. tumbleweed/bluedevil5/bluedevil5-lang/summary
-#. leap/bluedevil5/bluedevil5-lang/summary
-msgid "Languages for package bluedevil5"
+#, fuzzy
+#| msgid "Languages for package bluedevil5"
+msgid "Translations for package bluedevil5"
 msgstr "bluedevil5 向け言語パッケージ"
 
 #. tumbleweed/bluedevil5/bluedevil5-lang/description
-#. leap/bluedevil5/bluedevil5-lang/description
-msgid "Provides translations to the package bluedevil5"
-msgstr "bluedevil5 パッケージ向けの翻訳データです。"
+#, fuzzy
+msgid "Provides translations for the \"bluedevil5\" package."
+msgstr "eog パッケージに対する翻訳データです。"
 
 #. tumbleweed/blueprint-cursor-theme/summary
 #. leap/blueprint-cursor-theme/summary
@@ -5171,44 +5246,50 @@ msgid ""
 "\"The Linux Kernel Module Programming Guide\" by Ori Pomerantz"
 msgstr ""
 
-#. tumbleweed/boost/boost-license1_61_0/summary
+#. tumbleweed/boost/boost-license1_62_0/summary
 #. leap/boost/boost-license1_54_0/summary
 #. leap/boost_1_58_0/boost-license1_58_0/summary
+#. leap/boost/boost-license1_61_0/summary
 msgid "Boost License"
 msgstr "Boost ライセンス"
 
-#. tumbleweed/boost/boost-license1_61_0/description
+#. tumbleweed/boost/boost-license1_62_0/description
 #. leap/boost/boost-license1_54_0/description
 #. leap/boost_1_58_0/boost-license1_58_0/description
+#. leap/boost/boost-license1_61_0/description
 msgid "This package contains the license boost is provided under."
 msgstr "このパッケージには、 Boost のライセンスが含まれています。"
 
-#. tumbleweed/boost/boost_1_61-doc-html/summary
+#. tumbleweed/boost/boost_1_62-doc-html/summary
 #. leap/boost/boost-doc-html/summary
 #. leap/boost_1_58_0/boost_1_58_0-doc-html/summary
+#. leap/boost/boost_1_61-doc-html/summary
 #, fuzzy
 msgid "HTML documentation for the Boost C++ Libraries"
 msgstr "GNU C ライブラリの HTML ドキュメンテーション"
 
-#. tumbleweed/boost/boost_1_61-doc-html/description
+#. tumbleweed/boost/boost_1_62-doc-html/description
 #. leap/boost/boost-doc-html/description
 #. leap/boost_1_58_0/boost_1_58_0-doc-html/description
+#. leap/boost/boost_1_61-doc-html/description
 #, fuzzy
 msgid ""
 "This package contains the documentation of the boost dynamic libraries in "
 "HTML format."
 msgstr "このパッケージには gnet ライブラリの追加文書が含まれています。"
 
-#. tumbleweed/boost/boost_1_61-doc-pdf/summary
+#. tumbleweed/boost/boost_1_62-doc-pdf/summary
 #. leap/boost/boost-doc-pdf/summary
 #. leap/boost_1_58_0/boost_1_58_0-doc-pdf/summary
+#. leap/boost/boost_1_61-doc-pdf/summary
 #, fuzzy
 msgid "PDF documentation for the Boost C++ Libraries"
 msgstr "KDE 基本ライブラリ向けのドキュメンテーション"
 
-#. tumbleweed/boost/boost_1_61-doc-pdf/description
+#. tumbleweed/boost/boost_1_62-doc-pdf/description
 #. leap/boost/boost-doc-pdf/description
 #. leap/boost_1_58_0/boost_1_58_0-doc-pdf/description
+#. leap/boost/boost_1_61-doc-pdf/description
 #, fuzzy
 msgid ""
 "This package contains the documentation of the boost dynamic libraries in "
@@ -5268,12 +5349,14 @@ msgstr ""
 #. tumbleweed/bpython/summary
 #. tumbleweed/python3-bpython/summary
 #. leap/bpython/summary
+#. leap/python3-bpython/summary
 msgid "Fancy Curses Interface to the Python Interactive Interpreter"
 msgstr ""
 
 #. tumbleweed/bpython/description
 #. tumbleweed/python3-bpython/description
 #. leap/bpython/description
+#. leap/python3-bpython/description
 msgid ""
 "Bpython is an enhanced Python interactive interpreter that uses curses and "
 "provides the following main features: in-line syntax highlighting; readline-"
@@ -5282,6 +5365,16 @@ msgid ""
 "submit your code and return a URL. Its goal is to bring together a few handy "
 "ideas to enhance the standard interpreter without getting carried away."
 msgstr ""
+
+#. tumbleweed/bpython/bpython-doc/summary
+#, fuzzy
+msgid "Documentation for bpython"
+msgstr "python-twised 向けドキュメンテーション"
+
+#. tumbleweed/bpython/bpython-doc/description
+#, fuzzy
+msgid "Documentation and help files for bpython."
+msgstr "cssutils 向けドキュメンテーションとサンプル"
 
 #. tumbleweed/branding-openSUSE/summary
 #. leap/branding-openSUSE/summary
@@ -5334,24 +5427,24 @@ msgstr ""
 "／アセット集です。このパッケージには Breeze カーソルテーマが含まれています。"
 
 #. tumbleweed/breeze5-icons/summary
+#. leap/breeze5-icons/summary
 msgid "Breeze icon theme"
 msgstr ""
 
 #. tumbleweed/breeze5-icons/description
+#. leap/breeze5-icons/description
 msgid "Breeze-icons is a freedesktop.org compatible icon theme."
 msgstr ""
 
 #. tumbleweed/breeze/breeze5-style-lang/summary
-#. leap/breeze/breeze5-style-lang/summary
 #, fuzzy
-msgid "Languages for package breeze"
+msgid "Translations for package breeze"
 msgstr "bzr 向け言語パッケージ"
 
 #. tumbleweed/breeze/breeze5-style-lang/description
-#. leap/breeze/breeze5-style-lang/description
 #, fuzzy
-msgid "Provides translations to the package breeze"
-msgstr "bzr パッケージ向けの翻訳データです。"
+msgid "Provides translations for the \"breeze\" package."
+msgstr "eog パッケージに対する翻訳データです。"
 
 #. tumbleweed/breeze/breeze5-wallpapers/description
 #. leap/breeze/breeze5-wallpapers/description
@@ -5385,10 +5478,12 @@ msgid "Extract appdata.xml from all .deskop files found in build root"
 msgstr ""
 
 #. tumbleweed/bs-update/summary
+#. leap/bs-update/summary
 msgid "Automate maintenance of packages in a Build Service"
 msgstr ""
 
 #. tumbleweed/bs-update/description
+#. leap/bs-update/description
 msgid ""
 "bs-update makes it easier to keep packages in a Build Service up-to-date "
 "with respect to their upstream sources."
@@ -5655,6 +5750,21 @@ msgid ""
 msgstr ""
 "選択したマウントポイントやディレクトリに対して、 scrub, balance, trim, "
 "defrag などを定期的に行なうための brtfs メンテナンスタスクスクリプトです。"
+
+#. tumbleweed/btrfsprogs/btrfsprogs-udev-rules/summary
+#, fuzzy
+#| msgid "Utilities for the Btrfs filesystem"
+msgid "Udev rules for configuring btrfs file systems"
+msgstr "Btrfs ファイルシステム用ユーティリティ"
+
+#. tumbleweed/btrfsprogs/btrfsprogs-udev-rules/description
+msgid ""
+"This package contains the udev rule file for configuring device mapper "
+"devices that are components of btrfs file systems.  It is meant to be used "
+"with versions of udev that contain the \"built-in\" btrfs command (v190 and "
+"newer).  Older versions of udev will call the version of \"btrfs ready\" "
+"contained in the btrfsprogs package, which does the right thing."
+msgstr ""
 
 #. tumbleweed/bugreporter/summary
 #. leap/bugreporter/summary
@@ -6014,10 +6124,12 @@ msgstr ""
 "の翻訳が含まれています。"
 
 #. tumbleweed/buzztrax/buzztrax-lang/summary
+#. leap/buzztrax/buzztrax-lang/summary
 msgid "Languages for package buzztrax"
 msgstr ""
 
 #. tumbleweed/buzztrax/buzztrax-lang/description
+#. leap/buzztrax/buzztrax-lang/description
 msgid "Provides translations to the package buzztrax"
 msgstr ""
 
@@ -6139,6 +6251,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/breeze-gtk/gtk2-metatheme-breeze/summary
+#. leap/breeze-gtk/gtk2-metatheme-breeze/summary
 msgid "GTK+ theme matching KDE's Breeze -- GTK+ 2 Support"
 msgstr "KDE の Breeze にマッチする GTK+ テーマ -- GTK+ 2 サポート"
 
@@ -6162,6 +6275,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/breeze-gtk/gtk3-metatheme-breeze/summary
+#. leap/breeze-gtk/gtk3-metatheme-breeze/summary
 msgid "GTK+ theme matching KDE's Breeze -- GTK+ 3 Support"
 msgstr "KDE の Breeze にマッチする GTK+ テーマ -- GTK+ 3 サポート"
 
@@ -6247,60 +6361,93 @@ msgid "openSUSE 13.3 branding and themes for yast2-qt"
 msgstr ""
 
 #. tumbleweed/bcc/bcc-devel/summary
+#. leap/bcc/bcc-devel/summary
 msgid "BPF Compiler Collection (BCC) (devel package)"
 msgstr ""
 
 #. tumbleweed/bcc/bcc-devel/description
+#. leap/bcc/bcc-devel/description
 msgid "Shared library and pkg-config for developing BCC programs"
 msgstr ""
 
+#. tumbleweed/bcc/bcc-docs/summary
+#, fuzzy
+msgid "BPF Compiler Collection (BCC) documentation"
+msgstr "GNU コンパイラコレクション (GCC) の言語データ"
+
+#. tumbleweed/bcc/bcc-docs/description
+#, fuzzy
+msgid ""
+"The documentation of how to write programs with BPF Compiler Collection (BCC)"
+msgstr "これは GNU コンパイラコレクション (GCC) の Fortran コンパイラです。"
+
 #. tumbleweed/bcc/bcc-examples/summary
+#. leap/bcc/bcc-examples/summary
 #, fuzzy
 msgid "Examples for BPF Compiler Collection (BCC)"
 msgstr "GNU コンパイラコレクション (GCC) の言語データ"
 
 #. tumbleweed/bcc/bcc-examples/description
+#. leap/bcc/bcc-examples/description
 #, fuzzy
 msgid "Python and C examples for BPF Compiler Collection (BCC)"
 msgstr ""
 "これは GNU コンパイラコレクション (GCC) 内の Fortran 77 コンパイラです。"
 
+#. tumbleweed/bcc/bcc-lua/summary
+#, fuzzy
+msgid "Lua interpreter for BPF Compiler Collection"
+msgstr "GPS アプリケーション向け共有ライブラリ"
+
+#. tumbleweed/bcc/bcc-lua/description
+#, fuzzy
+msgid "Lua interpreter for BPF Compiler Collection (BCC)"
+msgstr "GNU コンパイラコレクション (GCC) の言語データ"
+
 #. tumbleweed/bcc/bcc-tools/summary
+#. leap/bcc/bcc-tools/summary
 #, fuzzy
 msgid "Tracing tools of BPF Compiler Collection (BCC)"
 msgstr "これは GNU コンパイラコレクション (GCC) の Fortran コンパイラです。"
 
 #. tumbleweed/bcc/bcc-tools/description
+#. leap/bcc/bcc-tools/description
 #, fuzzy
 msgid "Python tracing scripts of BPF Compiler Collection (BCC)"
 msgstr "これは GNU コンパイラコレクション (GCC) の Fortran コンパイラです。"
 
 #. tumbleweed/bcc/libbcc0/summary
+#. leap/bcc/libbcc0/summary
 #, fuzzy
 msgid "Shared Library for BPF Compiler Collection"
 msgstr "GPS アプリケーション向け共有ライブラリ"
 
 #. tumbleweed/bcc/libbcc0/description
+#. leap/bcc/libbcc0/description
 #, fuzzy
 msgid "Shared Library for BPF Compiler Collection (BCC)"
 msgstr "GPS アプリケーション向け共有ライブラリ"
 
 #. tumbleweed/bcc/python-bcc/summary
+#. leap/bcc/python-bcc/summary
 #, fuzzy
 msgid "Python bindings for BPF Compiler Collection"
 msgstr "libolecf 向け Python バインディング"
 
 #. tumbleweed/bcc/python-bcc/description
+#. leap/bcc/python-bcc/description
 #, fuzzy
 msgid "Python bindings for BPF Compiler Collection (BCC)"
 msgstr "libolecf 向け Python バインディング"
 
 #. tumbleweed/bcc/python3-bcc/summary
+#. leap/bcc/python3-bcc/summary
 #, fuzzy
 msgid "Python3 bindings for BPF Compiler Collection"
 msgstr "libolecf 向け Python バインディング"
 
 #. tumbleweed/bcc/python3-bcc/description
+#. leap/bcc/python3-bcc/description
 #, fuzzy
 msgid "Python3 bindings for BPF Compiler Collection (BCC)"
 msgstr "libolecf 向け Python バインディング"
@@ -6316,13 +6463,23 @@ msgid "This package contains the documentation for bibtool."
 msgstr ""
 "このパッケージには、 orage に対するドキュメンテーションが含まれています。"
 
-#. leap/bluedevil/bluedevil-lang/summary
-msgid "Languages for package bluedevil"
-msgstr "bluedevil 向け言語パッケージ"
+#. leap/blueberry/blueberry-lang/summary
+#, fuzzy
+msgid "Languages for package blueberry"
+msgstr "blender 向け言語パッケージ"
 
-#. leap/bluedevil/bluedevil-lang/description
-msgid "Provides translations to the package bluedevil"
-msgstr "bluedevil パッケージ向けの翻訳データです。"
+#. leap/blueberry/blueberry-lang/description
+#, fuzzy
+msgid "Provides translations to the package blueberry"
+msgstr "blender パッケージ向けの翻訳データです。"
+
+#. leap/bluedevil5/bluedevil5-lang/summary
+msgid "Languages for package bluedevil5"
+msgstr "bluedevil5 向け言語パッケージ"
+
+#. leap/bluedevil5/bluedevil5-lang/description
+msgid "Provides translations to the package bluedevil5"
+msgstr "bluedevil5 パッケージ向けの翻訳データです。"
 
 #. leap/boost/boost-doc-man/summary
 #, fuzzy
@@ -6350,13 +6507,15 @@ msgstr ""
 "の、起動サイクル検出用の起動スクリプトが含まれています。たとえば INTEL IA32 "
 "環境では GNU GRUB マルチブートローダを使用します。"
 
-#. leap/breeze/breeze5-icons/description
-msgid ""
-"Artwork, styles and assets for the Breeze visual style for the Plasma "
-"Desktop. This package provides Breeze icon theme."
-msgstr ""
-"Plasma デスクトップ向けに Breeze 視覚スタイルを提供するアートワーク／スタイル"
-"／アセット集です。このパッケージには Breeze アイコンテーマが含まれています。"
+#. leap/breeze/breeze5-style-lang/summary
+#, fuzzy
+msgid "Languages for package breeze"
+msgstr "bzr 向け言語パッケージ"
+
+#. leap/breeze/breeze5-style-lang/description
+#, fuzzy
+msgid "Provides translations to the package breeze"
+msgstr "bzr パッケージ向けの翻訳データです。"
 
 #. leap/bsf/description
 msgid ""
@@ -6501,11 +6660,6 @@ msgid ""
 "Mathieu Desnoyers, EfficiOS Inc. September 2010"
 msgstr ""
 
-#. leap/bakefile/summary
-#. leap/bakefile/description
-msgid "Tool required to build WebKit"
-msgstr ""
-
 #. leap/bareftp/description
 msgid ""
 "bareFTP is a file transfer client supporting the FTP, FTP over SSL/TLS "
@@ -6543,23 +6697,180 @@ msgstr ""
 "す。 Berkeley Internet Name Domain (BIND) DNS サーバについては、 bind という"
 "名前のパッケージをご覧ください。"
 
-#. leap/bluez/description
-msgid "The Bluetooth stack for Linux."
-msgstr "Linux 向けの Bluetooth スタックです。"
+#, fuzzy
+#~ msgid "A media playback and management application"
+#~ msgstr "GNOME 向けのミュージックプレーヤ兼管理アプリケーションです。"
 
-#. leap/breeze-gtk/summary
-msgid "A GTK Theme Built to Match KDE's Breeze"
-msgstr ""
+#~ msgid ""
+#~ "Import, organize, and discover new music with Banshee through its simple "
+#~ "and powerful interface and wide array of innovative features. Create your "
+#~ "own radio stations or listen to a friends' through Last.fm integration; "
+#~ "experience automatic cover art fetching as you listen; and easily browse, "
+#~ "search, and control your media collection.\n"
+#~ "\n"
+#~ "This package provides the Classic Banshee client, a familiar user "
+#~ "interface with a source list and three-pane layout for browsing and "
+#~ "exploring media. This client is the most feature rich, but does not "
+#~ "sacrifice usability."
+#~ msgstr ""
+#~ "Banshee のシンプルかつパワフルなインターフェイスや幅広い斬新な機能を利用す"
+#~ "ることで、新しい楽曲をインポートしたりまとめたりすることができます。ま"
+#~ "た、 Last.fm との統合機能を利用することで、独自のラジオステーションを作成"
+#~ "したり友人のラジオを聞いたりすることもできます: それ以外にも聴いている曲の"
+#~ "カバーイメージを自動的に検索したり、楽曲集を簡単に閲覧／検索／制御すること"
+#~ "もできます。\n"
+#~ "\n"
+#~ "このパッケージには従来の Banshee クライアントが含まれています。ソースリス"
+#~ "ト付きのユーザインターフェイスと、 3 ペイン式のメディア参照／探索レイアウ"
+#~ "トが用意されています。このクライアントはもっとも機能が豊富なものですが、使"
+#~ "い勝手も犠牲にはしていません。"
 
-#. leap/breeze-gtk/description
-msgid "A GTK theme created to match with the new Plasma 5 Breeze theme"
-msgstr ""
+#~ msgid "GStreamer engine support for Banshee"
+#~ msgstr "Banshee 向け GStreamer エンジンサポート"
 
-#. leap/bsdiff/summary
-msgid "Tools for patches to binary files"
-msgstr ""
+#~ msgid ""
+#~ "This package provides the playback engine used by Banshee, built on the "
+#~ "GStreamer multimedia framework."
+#~ msgstr ""
+#~ "このパッケージには、 GStreamer マルチメディアフレームワーク上に構築され"
+#~ "た、Banshee 向けプレイバックエンジンが含まれています。"
 
-#. leap/bluez/libbluetooth3-32bit/description
-#. leap/bluez/libbluetooth3/description
-msgid "Bluetooth protocol stack libraries."
-msgstr "Bluetooth プロトコルスタックのライブラリです"
+#~ msgid "GIO backend for non-local files for Banshee"
+#~ msgstr "Banshee 向け非ローカルファイル用 GIO バックエンド"
+
+#~ msgid ""
+#~ "This package provides support for importing non-local files into Banshee, "
+#~ "eg over a ssh mount or similar."
+#~ msgstr ""
+#~ "このパッケージには、 Banshee 内に非ローカル (たとえば ssh マウントなど) の"
+#~ "ファイルをインポートするためのサポートが含まれています。"
+
+#~ msgid "GNOME platform support for Banshee"
+#~ msgstr "Banshee 向け GNOME プラットフォームサポート"
+
+#~ msgid ""
+#~ "This package provides platform integration with the GNOME Desktop for "
+#~ "Banshee. Most notably it provides a configuration backend to GConf, so "
+#~ "all user settings can be stored there. Other GNOME specific integration "
+#~ "hooks are provided as well.\n"
+#~ "\n"
+#~ "Users running Banshee on GNOME are recommended to install this package."
+#~ msgstr ""
+#~ "このパッケージには、 Banshee 向けの GNOME デスクトッププラットフォーム統合"
+#~ "が含まれています。主に GConf と呼ばれる設定バックエンドの機能を提供し、全"
+#~ "てのユーザ設定をそこに保管できるようにします。その他の GNOME 固有の統合"
+#~ "フックも用意されています。"
+
+#~ msgid "UNIX platform support for Banshee"
+#~ msgstr "Banshee 向け UNIX プラットフォームサポート"
+
+#~ msgid ""
+#~ "This package provides many optimizations for UNIX based platforms. In "
+#~ "particular, it provides a POSIX IO layer that performs better than the "
+#~ "default System.IO/.NET IO layer provided in the base banshee-1 package."
+#~ msgstr ""
+#~ "このパッケージには、 UNIX ベースのプラットフォームに対する多数の最適化が含"
+#~ "まれています。特に POSIX IO レイヤにより、 banshee-1 基本パッケージ内に用"
+#~ "意されている通常の System.IU/.NET レイヤに比べ、性能を向上させることができ"
+#~ "ます。"
+
+#~ msgid "Core Banshee platform libraries, services, and resources"
+#~ msgstr "コア Banshee プラットフォームライブラリ／サービス／リソース"
+
+#, fuzzy
+#~ msgid ""
+#~ "This package provides core libraries, services, and resources for "
+#~ "building Banshee clients and user experiences."
+#~ msgstr ""
+#~ "このパッケージには、鍵ユーティリティ向けのヘッダとライブラリが含まれていま"
+#~ "す。"
+
+#~ msgid "Development package for Banshee"
+#~ msgstr "KDE開発パッケージ"
+
+#~ msgid "Digital Media Player support for Banshee"
+#~ msgstr "Banshee 向けデジタルメディアプレーヤサポート"
+
+#~ msgid ""
+#~ "Core support for Digital Media Player support. Includes generic USB mass "
+#~ "storage device support."
+#~ msgstr ""
+#~ "デジタルメディアプレーヤに対応するためのコアサポートです。汎用 USB マスス"
+#~ "トレージデバイスへの対応も含まれています。"
+
+#~ msgid "Apple(R) iPod(R) Digital Media Player support for Banshee"
+#~ msgstr "Banshee 向け Apple(R) iPod(R) デジタルメディアプレーヤサポート"
+
+#~ msgid ""
+#~ "Support for iPod(R) devices including the iPod Classic(R) and iPod "
+#~ "Nano(R). Does not support iPod Touch(R) or iPhone(R)."
+#~ msgstr ""
+#~ "iPod Classic(R), iPod Nano(R) を含む、 iPod(R) デバイスへのサポートです。"
+#~ "iPod Touch(R) や iPhone(R) には対応していません。"
+
+#~ msgid "MTP/PlaysForSure Digital Media Player support for Banshee"
+#~ msgstr "Banshee 向け MTP/PlaysforSure デジタルメディアプレーヤサポート"
+
+#~ msgid ""
+#~ "Support for various MTP/PlaysForSure/Certified For Windows Vista(R) "
+#~ "devices as provided by libmtp."
+#~ msgstr ""
+#~ "libmtp で提供される、さまざまな MTP/PlaysForSure/Certified Windows "
+#~ "Vista(R) デバイスへのサポートです。"
+
+#, fuzzy
+#~ msgid "Boo scripting support for Banshee"
+#~ msgstr "SWP 向け OpenSSL サポート"
+
+#~ msgid "Extra features extending the Banshee Media Player"
+#~ msgstr "Banshee メディアプレーヤを拡張する追加機能"
+
+#~ msgid ""
+#~ "This package provides a number of useful features for Banshee, including "
+#~ "a Play Queue, Last.fm streaming, Last.fm Audioscrobbling, and Multimedia "
+#~ "Key support. This package is highly recommended as it greatly enhances "
+#~ "the end user experience of Banshee.\n"
+#~ "\n"
+#~ "Import, organize, and discover new music with Banshee through its simple "
+#~ "and powerful interface and wide array of innovative features. Create your "
+#~ "own radio stations or listen to a friends' through Last.fm integration; "
+#~ "experience automatic cover art fetching as you listen; and easily browse, "
+#~ "search, and control your media collection."
+#~ msgstr ""
+#~ "このパッケージには、 Banshee 向けの便利機能が数多く含まれています。たとえ"
+#~ "ば再生キューや Last.fm のストリーミング、 Last.fm の Audioscrobble やマル"
+#~ "チメディアキーへの対応が含まれています。このパッケージは、 Banshee の体験"
+#~ "をより高めるという意味で、インストールしておくことを強くお勧めします。\n"
+#~ "\n"
+#~ "Banshee のシンプルかつパワフルなインターフェイスや幅広い斬新な機能を利用す"
+#~ "ることで、新しい楽曲をインポートしたりまとめたりすることができます。ま"
+#~ "た、 Last.fm との統合機能を利用することで、独自のラジオステーションを作成"
+#~ "したり友人のラジオを聞いたりすることもできます: それ以外にも聴いている曲の"
+#~ "カバーイメージを自動的に検索したり、楽曲集を簡単に閲覧／検索／制御すること"
+#~ "もできます。"
+
+#~ msgid "Languages for package banshee"
+#~ msgstr "banshee 向け言語パッケージ"
+
+#~ msgid "Provides translations to the package banshee"
+#~ msgstr "banshee パッケージ向けの翻訳データです。"
+
+#~ msgid "Languages for package bluedevil"
+#~ msgstr "bluedevil 向け言語パッケージ"
+
+#~ msgid "Provides translations to the package bluedevil"
+#~ msgstr "bluedevil パッケージ向けの翻訳データです。"
+
+#~ msgid ""
+#~ "Artwork, styles and assets for the Breeze visual style for the Plasma "
+#~ "Desktop. This package provides Breeze icon theme."
+#~ msgstr ""
+#~ "Plasma デスクトップ向けに Breeze 視覚スタイルを提供するアートワーク／スタ"
+#~ "イル／アセット集です。このパッケージには Breeze アイコンテーマが含まれてい"
+#~ "ます。"
+
+#~ msgid "The Bluetooth stack for Linux."
+#~ msgstr "Linux 向けの Bluetooth スタックです。"
+
+#~ msgid "Bluetooth protocol stack libraries."
+#~ msgstr "Bluetooth プロトコルスタックのライブラリです"
