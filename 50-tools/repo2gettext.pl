@@ -26,6 +26,7 @@ use utf8;
 use open qw(:std :utf8); # treat files and STD input as UTF-8*
 
 my $indesc = 0;
+my $ineula = 0;
 my $descr = '';
 
 my @date = localtime;
@@ -162,6 +163,26 @@ while ( <DESCR> ) {
     }
 
     if ($indesc == 1) {
+	my $line = $_;
+	chomp $line;
+	if ($descr) {
+	    $descr = $descr . "\n" . $line;
+	} else {
+	    $descr = $line;
+	}
+	next;
+    }
+    if ($_ =~ m/^\+Eul:/) {
+	$ineula = 1;
+	next;
+    }
+    if ($_ =~ m/^-Eul:/) {
+	$ineula = 0;
+	$descr = '';
+	next;
+    }
+
+    if ($ineula == 1) {
 	my $line = $_;
 	chomp $line;
 	if ($descr) {
