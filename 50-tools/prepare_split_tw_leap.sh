@@ -8,7 +8,7 @@ cd 50-lists
 for distro in tumbleweed leap; do
 ## set URLs
   case $distro in
-    "leap") URL="distribution/leap/42.1";;
+    "leap") URL="distribution/leap/42.2";;
     "tumbleweed") URL="tumbleweed";;
     *) continue;;
   esac
