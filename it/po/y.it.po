@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-08-30 15:43:29\n"
-"PO-Revision-Date: 2016-12-27 21:47+0000\n"
+"PO-Revision-Date: 2016-12-28 16:55+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-"
 "i18n/y-master/it/>\n"
@@ -903,8 +903,8 @@ msgid ""
 "This plugin adds a --allow-downgrade flag to yum to make it possible to "
 "manually downgrade packages to specific versions."
 msgstr ""
-"Questo plugin aggiunge il parametro --allow-downgrade a Yum per fare sì che "
-"sia possibile retrocedere manualmente i pacchetti a versioni specifiche."
+"Questo plugin aggiunge a Yum l'opzione --allow-downgrade in modo che sia "
+"possibile retrocedere manualmente i pacchetti a versioni specifiche."
 
 #. tumbleweed/yum-utils/yum-basearchonly/summary
 #. leap/yum-utils/yum-basearchonly/summary
@@ -921,6 +921,11 @@ msgid ""
 "is If you want to install the foo-x.y.i386.rpm, you have to type 'yum "
 "install foo. The plugin only works with 'yum install'."
 msgstr ""
+"Questo plugin fa sì che Yum installi solo pacchetti dell'architettura base "
+"su sistemi multi-architettura. Se si digita 'yum install foo' su un sistema "
+"x68_64, verrà installato solo 'foo-x.y.x86_46.rpm'. Se si vuole installare "
+"'foo-x.y.i386.rpm', va digitato 'yum install foo'. Il plugin funziona solo "
+"con 'yum install'."
 
 #. tumbleweed/yum-utils/yum-changelog/summary
 #. leap/yum-utils/yum-changelog/summary
@@ -935,11 +940,14 @@ msgid ""
 "This plugin adds a command line option to allow viewing package changelog "
 "deltas before or after updating packages."
 msgstr ""
+"Questo plugin aggiunge un'opzione da riga di comando per permettere di "
+"visionare le differenze nel registro delle modifiche prima o dopo "
+"l'aggiornamento dei pacchetti."
 
 #. tumbleweed/yum-utils/yum-downloadonly/summary
 #. leap/yum-utils/yum-downloadonly/summary
 msgid "Yum plugin to add downloadonly command option"
-msgstr ""
+msgstr "Plugin di Yum per aggiugere al comando l'opzione downloadonly"
 
 #. tumbleweed/yum-utils/yum-downloadonly/description
 #. leap/yum-utils/yum-downloadonly/description
@@ -947,11 +955,16 @@ msgid ""
 "This plugin adds a --downloadonly flag to yum so that yum will only download "
 "the packages and not install/update them."
 msgstr ""
+"Questo plugin aggiunge a Yum l'opzione --downloadonly in modo che sia "
+"possibile semplicemente scaricare i pacchetti senza installarli/aggiornarli."
 
 #. tumbleweed/yum-utils/yum-fastestmirror/summary
 #. leap/yum-utils/yum-fastestmirror/summary
+#, fuzzy
 msgid "Yum plugin which chooses fastest repository from a mirrorlist"
 msgstr ""
+"Plugin di Yum che seleziona il repository più veloce all'interno di un "
+"elenco di mirror"
 
 #. tumbleweed/yum-utils/yum-fastestmirror/description
 #. leap/yum-utils/yum-fastestmirror/description
