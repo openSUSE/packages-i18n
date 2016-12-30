@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-08-30 15:43:29\n"
-"PO-Revision-Date: 2016-12-06 16:14+0000\n"
+"PO-Revision-Date: 2016-12-20 16:49+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-"
 "i18n/z-master/it/>\n"
@@ -270,6 +270,22 @@ msgid ""
 "\n"
 "This package contains shared library"
 msgstr ""
+"zpaq è un archiviatore per Windows e Linux incrementale, deduplicante e con "
+"journaling. \"Con journaling\" significa che quando viene aggiornato un file "
+"o una directory, sono salvate sia la nuova che la vecchia versione. Quindi "
+"gli elementi possono essere estratti dall'archivio nello stato in cui erano "
+"in qualsiasi istante del passato. \"Incrementale\" significa che quando "
+"viene eseguito il backup dell'intero disco rigido, per esempio:\n"
+"\n"
+"  zpaq -add e:backup.zpaq c:\\*\n"
+"\n"
+"vengono aggiunti solo quei file la cui ultima data di modifica è cambiata "
+"rispetto al precedente backup. Per 100 GB di file, ciò tipicamente impiega 1-"
+"2 minuti rispetto alle manciata di ore necessarie per creare la prima "
+"versione. \"Deduplicante\" significa che file o frammenti identici sono "
+"memorizzati una sola volta per risparmiare tempo e spazio.\n"
+"\n"
+"Questo pacchetto contiene la libreria condivisa"
 
 #. tumbleweed/zvbi/libzvbi0/summary
 #. tumbleweed/zvbi/libzvbi0-32bit/summary
@@ -440,39 +456,43 @@ msgstr "Il plugin zathura-cb integra il supporto ai fumetti in zathura."
 
 #. tumbleweed/zathura-plugin-djvu/summary
 msgid "Adds DjVu support to zathura by using the djvulibre library"
-msgstr ""
+msgstr "Integra il supporto a DjVu in zathura usando la libreria djvulibre"
 
 #. tumbleweed/zathura-plugin-djvu/description
 msgid ""
 "The zathura-djvu plugin adds DjVu support to zathura by using the djvulibre "
 "library."
 msgstr ""
+"Il plugin zathura-djvu integra il supporto a DjVu in zathura usando la "
+"libreria djvulibre."
 
 #. tumbleweed/zathura-plugin-pdf-poppler/summary
-#, fuzzy
 msgid "PDF support for zathura via poppler"
-msgstr "Tipi di carattere per la lingua khmer della Cambogia."
+msgstr "Supporto ai PDF attraverso poppler per zathura"
 
 #. tumbleweed/zathura-plugin-pdf-poppler/description
 msgid ""
 "The zathura-pdf-poppler plugin adds PDF support to zathura by using the "
 "poppler rendering engine."
 msgstr ""
+"Il plugin zathura-pdf-poppler integra il supporto a PDF in zathura usando il "
+"motore di resa grafica di poppler."
 
 #. tumbleweed/zathura-plugin-ps/summary
-#, fuzzy
 msgid "PS support for zathura via libspectre"
-msgstr "Supporto OpenSSL per LWP"
+msgstr "Supporto a PS attraverso libspectre per zathura"
 
 #. tumbleweed/zathura-plugin-ps/description
 msgid ""
 "The zathura-ps plugin adds PostScript support to zathura by using the "
 "libspectre library."
 msgstr ""
+"Il plugin zathura-ps integra il supporto a PostScript in zathura usando la "
+"libreria libspectre."
 
 #. tumbleweed/zaz/summary
 msgid "Puzzle game about arranging balls in triplets"
-msgstr ""
+msgstr "Gioco rompicapo col fine di disporre palle in triplette"
 
 #. tumbleweed/zaz/description
 msgid ""
@@ -484,11 +504,19 @@ msgid ""
 "player's \"vehicle\" is also attached to a path which is different from "
 "level to level. A 3D accelerator is needed for decent gameplay."
 msgstr ""
+"Zaz (Zaz ain't Z***) è un gioco dove il giocatore deve sbarazzarsi delle "
+"palle che sopraggiungono disponendole in triplette. L'idea del gioco è "
+"vagamente basata su giochi come Luxor, Zuma e Puzzle Bobble. Ciò che rende "
+"Zaz originale rispetto a giochi dello stesso genere è che le palle devono "
+"essere selezionate dal tracciato (invece che essere assegnate casualmente al "
+"giocatore) e che anche il \"veicolo\" del giocatore è fissato a un tracciato "
+"diverso da livello a livello. È necessario un acceleratore 3D per avere "
+"un'esperienza di gioco decente."
 
 #. tumbleweed/zbar/summary
 #. leap/zbar/summary
 msgid "Bar code reader"
-msgstr ""
+msgstr "Lettore di codici a barre"
 
 #. tumbleweed/zbar/description
 #. leap/zbar/description
@@ -505,11 +533,24 @@ msgid ""
 "interfaces (Python, Perl, C++) ...all the way down to a streamlined C "
 "library suitable for embedded use."
 msgstr ""
+"ZBar è un pacchetto di programmi open source per leggere codici a barre da "
+"varie sorgenti, come flussi video, file di immagine e sensori di intensità "
+"grezzi. Supporta molte diffuse simbologie (tipi di codice a barre), inclusi "
+"EAN-13/UPC-A, UPC-E, EAN-8, codice 128, codice 39, interlacciato 2 di 5 e QR "
+"Code.\n"
+"\n"
+"L'implementazione flessibile e stratificata facilita la scansione e la "
+"decodifica dei codici a barre per qualsiasi applicazione: si può usare in "
+"maniera autonoma con l'interfaccia grafica e i programmi a riga di comando "
+"inclusi, per integrare un widget per scansione dei codici a barre in "
+"un'applicazione ad interfaccia grafica Qt, GTK+ o PyGTK, per sfruttare una "
+"delle interfacce di scripting o di programmazione (Python, Perl, C++), fino "
+"ad arrivare alla snella libreria per C adatta all'uso in sistemi integrati."
 
 #. tumbleweed/zdbsp/summary
 #. leap/zdbsp/summary
 msgid "Nodebuilder for ZDoom"
-msgstr ""
+msgstr "Costruttore di nodi per ZDoom"
 
 #. tumbleweed/zdbsp/description
 #. leap/zdbsp/description
@@ -518,11 +559,14 @@ msgid ""
 "written with two design goals in mind: speed and minimization of polyobject "
 "bleeding."
 msgstr ""
+"ZDBSP è un costruttore di nodi (interni ed esterni) di ZDoom. Questo "
+"costruttore di nodi è stato scritto con due obiettivi progettuali in mente: "
+"velocità e minimizzazione del \"bleeding\" dei polioggetti."
 
 #. tumbleweed/zeal/summary
 #. leap/zeal/summary
 msgid "Offline API documentation browser"
-msgstr ""
+msgstr "Navigatore offline della documentazione relativa alle API"
 
 #. tumbleweed/zeal/description
 #. leap/zeal/description
@@ -534,6 +578,14 @@ msgid ""
 "dependent on your internet connection.  * Integrate Zeal with Emacs, Sublime "
 "Text, or Vim. See Usage »    Editor plugins for details."
 msgstr ""
+"Zeal è un semplice navigatore offline della documentazione relativa alle API "
+"che prende ispirazione da Dash (app per OS X), disponibile per Linux e "
+"Windows.  * Ricerca velocemente la documentazione utilizzando la scorciatoia "
+"da tastiera Alt+Spazio (o quanto personalizzato)    per far emergere Zeal da "
+"ovunque si trovi sullo spazio di lavoro.  * Ricerca in serie multiple di "
+"documentazione contemporaneamente.  * Indipendenza dalla propria connessione "
+"internet.  * Integrazione di Zeal con Emacs, Sublime Text, o Vim. Si veda "
+"Usage »    Editor plugins per i dettagli."
 
 #. tumbleweed/zeitgeist/summary
 #. leap/zeitgeist/summary
@@ -584,6 +636,7 @@ msgstr ""
 #. leap/zerofree/summary
 msgid "Utility for ext2 filesystems that zeroes out unallocated blocks"
 msgstr ""
+"Programma d'utilità per i filesystem ext2 che azzera i blocchi non allocati"
 
 #. tumbleweed/zerofree/description
 #. leap/zerofree/description
@@ -597,12 +650,20 @@ msgid ""
 "\n"
 "See http://intgat.tigress.co.uk/rmy/uml/index.html for more info."
 msgstr ""
+"zerofree è un programma d'utilità per i filesystem ext2 che fa la scansione "
+"dell'elenco dei blocchi liberi del filesystem e riempie con uno zero tutti i "
+"blocchi che non lo contengano di già.\n"
+"\n"
+"Questo RPM include anche il programma d'utilità sparsify, che fa la "
+"scansione di tutti i file in un filesystem ext2 e fa in modo che siano "
+"sparpagliati al massimo.\n"
+"\n"
+"Si veda https://frippery.org/uml/index.html per maggiori informazioni."
 
 #. tumbleweed/zeromq/zeromq-devel/summary
 #. leap/zeromq/zeromq-devel/summary
-#, fuzzy
 msgid "Development files for ZeroMQ"
-msgstr "File di sviluppo per glew"
+msgstr "File di sviluppo per ZeroMQ"
 
 #. tumbleweed/zeromq/zeromq-devel/description
 #. leap/zeromq/zeromq-devel/description
@@ -615,11 +676,19 @@ msgid ""
 "\n"
 "This package holds the development files for ZeroMQ."
 msgstr ""
+"Il kernel di messaggistica leggera 0MQ è una libreria che estende le "
+"interfacce socket standard con funzionalità fornite da prodotti middleware "
+"di messaggistica specializzati. I socket 0MQ forniscono un'astrazione di "
+"code di messaggi asincroni, schemi multipli di messaggistica, filtro dei "
+"messaggi (sottoscrizioni), accesso omogeneo a molteplici protocolli di "
+"trasporto e altro ancora.\n"
+"\n"
+"Questo pacchetto contiene i file di sviluppo per ZeroMQ."
 
 #. tumbleweed/zeromq/zeromq-tools/summary
 #. leap/zeromq/zeromq-tools/summary
 msgid "Tools to work with ZeroMQ"
-msgstr ""
+msgstr "Strumenti per operare con ZeroMQ"
 
 #. tumbleweed/zeromq/zeromq-tools/description
 #. leap/zeromq/zeromq-tools/description
@@ -632,11 +701,20 @@ msgid ""
 "\n"
 "This package contains the utilities to work with ZeroMQ library"
 msgstr ""
+"Il kernel di messaggistica leggera 0MQ è una libreria che estende le "
+"interfacce socket standard con funzionalità fornite da prodotti middleware "
+"di messaggistica specializzati. I socket 0MQ forniscono un'astrazione di "
+"code di messaggi asincroni, schemi multipli di messaggistica, filtro dei "
+"messaggi (sottoscrizioni), accesso omogeneo a molteplici protocolli di "
+"trasporto e altro ancora.\n"
+"\n"
+"Questo pacchetto contiene i programmi d'utilità per lavorare con la libreria "
+"ZeroMQ"
 
 #. tumbleweed/zhu3d/summary
 #. leap/zhu3d/summary
 msgid "OpenGL-based equation viewer and solver"
-msgstr ""
+msgstr "Visualizzatore e risolutore di equazioni basato su OpenGL"
 
 #. tumbleweed/zhu3d/description
 #. leap/zhu3d/description
@@ -652,12 +730,22 @@ msgid ""
 "of an equation-system are found with a quite fast and reliable adaptive "
 "random search."
 msgstr ""
+"Con Zhu3D è possibile visualizzare, animare e risolvere fino a tre funzioni "
+"in uno spazio 3D in maniera interattiva. In aggiunta, è possibile osservare "
+"un sistema parametrico indipendente. Il visualizzatore openGL supporta "
+"l'ingrandimento, il ridimensionamento, la traslazione così come le proprietà "
+"di illuminazione, trasparenza o superficie.\n"
+"\n"
+"Si hanno a disposizione fino ad otto luci o riflettori, impostazioni dello "
+"sfondo, vari modelli di illuminazione globale. Le immagini sono rese come "
+"png o jpg e possono avere una dimensione arbitraria. Le soluzioni numeriche "
+"di un sistema di equazioni sono trovate tramite una ricerca casuale "
+"adattativa abbastanza veloce ed affidabile."
 
 #. tumbleweed/zile/summary
 #. leap/zile/summary
-#, fuzzy
 msgid "Lightweight Emacs Clone"
-msgstr "Gestore dei processi leggero"
+msgstr "Clone leggero di Emacs"
 
 #. tumbleweed/zile/description
 #. leap/zile/description
@@ -666,11 +754,15 @@ msgid ""
 "time, open-source display editor.  Zile was written to be as similar as "
 "possible to Emacs; every Emacs user should feel at home with Zile."
 msgstr ""
+"Zile è un altro clone di Emacs.  Zile è un editor visuale open source, auto-"
+"documentante in tempo reale e personalizzabile.  Zile è stato scritto per "
+"essere il più possibile simile ad Emacs; ciascun utilizzatore di Emacs "
+"dovrebbe sentirsi come a casa propria con Zile."
 
 #. tumbleweed/zimg/summary
 #. leap/zimg/summary
 msgid "Display 2-D data of arbitrary format"
-msgstr ""
+msgstr "Visualizza dati 2-D di formato arbitrario"
 
 #. tumbleweed/zimg/description
 #. leap/zimg/description
@@ -680,6 +772,12 @@ msgid ""
 "Output options include variable logarithmic color mapping VLCM and contour "
 "graphics and lots of color maps. zimg is a fast converter."
 msgstr ""
+"zimg genera immagini png a partire da dati arbitrari in formato f(x,y). Sono "
+"supportati sia l'ascii puro non formattato che una serie di formati "
+"d'ingresso binari. Le opzioni relative al risultato dell'elaborazione "
+"comprendono la mappatura dei colori logaritmica variabile (VLCM, variable "
+"logarithmic color mapping), la grafica dei contorni e parecchie mappe "
+"colore. zimg è un convertitore rapido."
 
 #. tumbleweed/zinnia/summary
 #. leap/zinnia/summary
@@ -709,19 +807,17 @@ msgstr ""
 
 #. tumbleweed/zinnia/zinnia-devel/summary
 #. leap/zinnia/zinnia-devel/summary
-#, fuzzy
 msgid "Development files for zinnia"
-msgstr "File di sviluppo per libindi"
+msgstr "File di sviluppo per zinnia"
 
 #. tumbleweed/zinnia/zinnia-devel/description
 #. leap/zinnia/zinnia-devel/description
-#, fuzzy
 msgid ""
 "The zinnia-devel package contains libraries and header files for developing "
 "applications that use zinnia."
 msgstr ""
-"Il pacchetto libv4l-devel contiene le librerie e i file di intestazione per "
-"sviluppare applicazioni che usano libv4l."
+"Il pacchetto zinnia-devel contiene le librerie e i file di intestazione per "
+"sviluppare applicazioni che usano zinnia."
 
 #. tumbleweed/zip/summary
 #. leap/zip/summary
@@ -750,20 +846,24 @@ msgid ""
 "support. This package contains the tools necessary to create such a "
 "filesystem and read compressed files on a system without zisofs support."
 msgstr ""
+"Zisofs-tools, insieme con un sistema con zisofs abilitato, permette la "
+"creazione di un file system ISO-9660 che può essere decompresso \"live\" su "
+"una base file-a-file rimanendo comunque leggibile dai sistemi senza supporto "
+"a zisofs. Questo pacchetto contiene gli strumenti necessari per create tale "
+"file system e leggere i file compressi su un sistema senza il supporto a "
+"zisofs."
 
 #. tumbleweed/zlib/zlib-devel/summary
 #. tumbleweed/zlib/zlib-devel-32bit/summary
 #. leap/zlib/zlib-devel/summary
 #. leap/zlib/zlib-devel-32bit/summary
-#, fuzzy
 msgid "Development files for zlib, a data compression library"
-msgstr "File di sviluppo per la libreria unicap"
+msgstr "File di sviluppo per zlib, una libreria di compressione dati"
 
 #. tumbleweed/zlib/zlib-devel/description
 #. tumbleweed/zlib/zlib-devel-32bit/description
 #. leap/zlib/zlib-devel/description
 #. leap/zlib/zlib-devel-32bit/description
-#, fuzzy
 msgid ""
 "zlib is a general-purpose lossless data-compression library, implementing an "
 "API for the DEFLATE algorithm, the latter of which is being used by, for "
@@ -778,13 +878,16 @@ msgid ""
 "memory footprint is also independent of the input data and can be reduced, "
 "if necessary, at some cost in compression."
 msgstr ""
-"zlib è progettata per essere una libreria di compressione dati senza perdita "
-"libera, generica, legalmente disponibile (ossia non coperta da brevetti) per "
-"essere usata virtualmente su ogni hardware e sistema operativo. Il formato "
-"di dati di zlib è esso stesso portabile tra piattaforme. A differenza del "
-"metodo di compressione lzw usato in compress(1) di unix e nel formato di "
-"immagini gif, il metodo di compressione attualmente usato in zlib "
-"essenzialmente non espande mai i dati (nei casi estremi lzw raddoppia o "
+"zlib è una libreria di impiego generale per la compressione dati senza "
+"perdita che implementa una API per l'algoritmo DEFLATE, usato ad esempio dai "
+"formati di archiviazione gzip e ZIP.\n"
+"\n"
+"Questo sottopacchetto contiene le intestazioni di sviluppo per la libreria.\n"
+"\n"
+"Il formato dati di zlib è esso stesso portabile tra piattaforme. A "
+"differenza del metodo di compressione LZW usato in compress(1) di unix e nel "
+"formato di immagini gif, il metodo di compressione attualmente usato in zlib "
+"essenzialmente non espande mai i dati (nei casi estremi LZW raddoppia o "
 "triplica la dimensione del file). L'impronta di memoria di zlib è altresì "
 "indipendente dai dati di input e può essere ridotta, se necessario, a danno "
 "della compressione."
@@ -793,9 +896,8 @@ msgstr ""
 #. tumbleweed/zlib/zlib-devel-static-32bit/summary
 #. leap/zlib/zlib-devel-static/summary
 #. leap/zlib/zlib-devel-static-32bit/summary
-#, fuzzy
 msgid "Static library for zlib"
-msgstr "Libreria dinamica per libaudit"
+msgstr "Libreria statica per zlib"
 
 #. tumbleweed/zlib/zlib-devel-static/description
 #. tumbleweed/zlib/zlib-devel-static-32bit/description
@@ -809,18 +911,22 @@ msgid ""
 "This subpackage contains the static version of the library used for "
 "development."
 msgstr ""
+"zlib è una libreria di impiego generale per la compressione dati senza "
+"perdita che implementa una API per l'algoritmo DEFLATE, usato ad esempio dai "
+"formati di archiviazione gzip e ZIP.\n"
+"\n"
+"Questo sottopacchetto contiene la versione statica della libreria usata per "
+"lo sviluppo."
 
 #. tumbleweed/zn_poly/zn_poly-devel/summary
 #. leap/zn_poly/zn_poly-devel/summary
-#, fuzzy
 msgid "Development files for the zn_poly library"
-msgstr "File di sviluppo per la libreria popt"
+msgstr "File di sviluppo per la libreria zn_poly"
 
 #. tumbleweed/znc/summary
 #. leap/znc/summary
-#, fuzzy
 msgid "Advanced IRC Bouncer"
-msgstr "Architettura audio avanzata di Linux"
+msgstr "Bouncer avanzato per IRC"
 
 #. tumbleweed/znc/description
 #. leap/znc/description
@@ -829,12 +935,15 @@ msgid ""
 "users, per channel playback buffer, SSL, IPv6, transparent DCC bouncing, and "
 "c++ module support to name a few."
 msgstr ""
+"ZNC è un bouncer IRC con molte funzionalità avanzate come lo sganciamento "
+"(detaching), gli utenti multipli, i buffer di riproduzione per canale, SSL, "
+"IPv6, il bouncing DCC trasparente, e il supporto a moduli c++, per nominarne "
+"alcune."
 
 #. tumbleweed/znc/znc-devel/summary
 #. leap/znc/znc-devel/summary
-#, fuzzy
 msgid "Development files to build modules for ZNC"
-msgstr "File di sviluppo per i moduli dell'utilità XCB"
+msgstr "File di sviluppo per compilare moduli per ZNC"
 
 #. tumbleweed/znc/znc-devel/description
 #. leap/znc/znc-devel/description
@@ -845,12 +954,18 @@ msgid ""
 "\n"
 "This package contains the znc development headers for developing modules."
 msgstr ""
+"ZNC è un bouncer IRC con molte funzionalità avanzate come lo sganciamento "
+"(detaching), gli utenti multipli, i buffer di riproduzione per canale, SSL, "
+"IPv6, il bouncing DCC trasparente, e il supporto a moduli c++, per nominarne "
+"alcune.\n"
+"\n"
+"Questo pacchetto contiene le intestazioni di sviluppo di znc per sviluppare "
+"moduli."
 
 #. tumbleweed/znc/znc-perl/summary
 #. leap/znc/znc-perl/summary
-#, fuzzy
 msgid "Perl support for ZNC"
-msgstr "Supporto IRC per Telepathy"
+msgstr "Supporto Perl per ZNC"
 
 #. tumbleweed/znc/znc-perl/description
 #. leap/znc/znc-perl/description
@@ -861,12 +976,17 @@ msgid ""
 "\n"
 "This package contains the znc Perl extension."
 msgstr ""
+"ZNC è un bouncer IRC con molte funzionalità avanzate come lo sganciamento "
+"(detaching), gli utenti multipli, i buffer di riproduzione per canale, SSL, "
+"IPv6, il bouncing DCC trasparente, e il supporto a moduli c++, per nominarne "
+"alcune.\n"
+"\n"
+"Questo pacchetto contiene l'estensione Perl per znc."
 
 #. tumbleweed/znc/znc-python3/summary
 #. leap/znc/znc-python3/summary
-#, fuzzy
 msgid "Python support for ZNC"
-msgstr "Supporto OpenSSL per LWP"
+msgstr "Supporto Python per ZNC"
 
 #. tumbleweed/znc/znc-python3/description
 #. leap/znc/znc-python3/description
@@ -877,12 +997,17 @@ msgid ""
 "\n"
 "This package contains the znc Python extension."
 msgstr ""
+"ZNC è un bouncer IRC con molte funzionalità avanzate come lo sganciamento "
+"(detaching), gli utenti multipli, i buffer di riproduzione per canale, SSL, "
+"IPv6, il bouncing DCC trasparente, e il supporto a moduli c++, per nominarne "
+"alcune.\n"
+"\n"
+"Questo pacchetto contiene l'estensione Python per znc."
 
 #. tumbleweed/znc/znc-tcl/summary
 #. leap/znc/znc-tcl/summary
-#, fuzzy
 msgid "TCL support for ZNC"
-msgstr "Supporto SSL per Net::SMTP"
+msgstr "Supporto TLC per ZNC"
 
 #. tumbleweed/znc/znc-tcl/description
 #. leap/znc/znc-tcl/description
@@ -893,6 +1018,12 @@ msgid ""
 "\n"
 "This package contains the znc Tcl extension."
 msgstr ""
+"ZNC è un bouncer IRC con molte funzionalità avanzate come lo sganciamento "
+"(detaching), gli utenti multipli, i buffer di riproduzione per canale, SSL, "
+"IPv6, il bouncing DCC trasparente, e il supporto a moduli c++, per nominarne "
+"alcune.\n"
+"\n"
+"Questo pacchetto contiene l'estensione Tlc per znc."
 
 #. tumbleweed/zoo/summary
 #. leap/zoo/summary
@@ -914,9 +1045,8 @@ msgstr ""
 
 #. tumbleweed/zopfli/summary
 #. leap/zopfli/summary
-#, fuzzy
 msgid "GZip compatible compression utlity"
-msgstr "Libreria di compressione immagini senza perdita JBIG1"
+msgstr "Utilità di compressione compatibile con GZip"
 
 #. tumbleweed/zopfli/description
 #. leap/zopfli/description
@@ -924,11 +1054,14 @@ msgid ""
 "Example program for libzopfli to create gzip compatible files. Files can be "
 "decompressed with e.g. gzip."
 msgstr ""
+"Programma d'esempio per libzopfli per creare file compatibili con gzip. I "
+"file possono essere decompressi con, ad esempio, gzip."
 
 #. tumbleweed/zpaq/summary
 #. leap/zpaq/summary
 msgid "A journaling, incremental, deduplicating archiver for Windows and Linux"
 msgstr ""
+"Archiviatore per Windows e Linux incrementale, deduplicante e con journaling"
 
 #. tumbleweed/zpaq/description
 #. leap/zpaq/description
@@ -947,11 +1080,24 @@ msgid ""
 "means that identical files or fragments are stored only once to save time "
 "and space."
 msgstr ""
+"zpaq è un archiviatore per Windows e Linux incrementale, deduplicante e con "
+"journaling. \"Con journaling\" significa che quando viene aggiornato un file "
+"o una directory, sono salvate sia la nuova che la vecchia versione. Quindi "
+"gli elementi possono essere estratti dall'archivio nello stato in cui erano "
+"in qualsiasi istante del passato. \"Incrementale\" significa che quando "
+"viene eseguito il backup dell'intero disco rigido, per esempio:\n"
+"\n"
+"  zpaq -add e:backup.zpaq c:\\*\n"
+"\n"
+"vengono aggiunti solo quei file la cui ultima data di modifica è cambiata "
+"rispetto al precedente backup. Per 100 GB di file, ciò tipicamente impiega 1-"
+"2 minuti rispetto alle manciata di ore necessarie per creare la prima "
+"versione. \"Deduplicante\" significa che file o frammenti identici sono "
+"memorizzati una sola volta per risparmiare tempo e spazio."
 
 #. tumbleweed/zpaq/zpaq-devel/summary
-#, fuzzy
 msgid "Development files for zpaq"
-msgstr "File di sviluppo per lua"
+msgstr "File di sviluppo per zpaq"
 
 #. tumbleweed/zpaq/zpaq-devel/description
 msgid ""
@@ -971,6 +1117,22 @@ msgid ""
 "\n"
 "This package contains development files"
 msgstr ""
+"zpaq è un archiviatore per Windows e Linux incrementale, deduplicante e con "
+"journaling. \"Con journaling\" significa che quando viene aggiornato un file "
+"o una directory, sono salvate sia la nuova che la vecchia versione. Quindi "
+"gli elementi possono essere estratti dall'archivio nello stato in cui erano "
+"in qualsiasi istante del passato. \"Incrementale\" significa che quando "
+"viene eseguito il backup dell'intero disco rigido, per esempio:\n"
+"\n"
+"  zpaq -add e:backup.zpaq c:\\*\n"
+"\n"
+"vengono aggiunti solo quei file la cui ultima data di modifica è cambiata "
+"rispetto al precedente backup. Per 100 GB di file, ciò tipicamente impiega 1-"
+"2 minuti rispetto alle manciata di ore necessarie per creare la prima "
+"versione. \"Deduplicante\" significa che file o frammenti identici sono "
+"memorizzati una sola volta per risparmiare tempo e spazio.\n"
+"\n"
+"Questo pacchetto contiene i file di sviluppo"
 
 #. tumbleweed/zsh/summary
 #. leap/zsh/summary
@@ -998,7 +1160,7 @@ msgstr ""
 #. tumbleweed/zsh/zsh-htmldoc/summary
 #. leap/zsh/zsh-htmldoc/summary
 msgid "Zsh shell manual in html format"
-msgstr ""
+msgstr "Manuale della shell zsh in formato html"
 
 #. tumbleweed/zsh/zsh-htmldoc/description
 #. leap/zsh/zsh-htmldoc/description
@@ -1011,14 +1173,21 @@ msgid ""
 "\n"
 "This package contains the Zsh manual in html format."
 msgstr ""
+"La shell zsh è un interprete dei comandi sia in modalità shell di login "
+"interattiva sia come elaboratore dei comandi di script shell.  Zsh è simile "
+"alla shell ksh (la Korn shell), ma include molte migliorie.  Zsh supports la "
+"modifica della riga di comando, la correzione ortografica integrata, il "
+"completamento programmabile dei comandi, funzioni di shell (con "
+"autocaricamento), uno storico e altro ancora.\n"
+"\n"
+"Questo pacchetto contiene il manuale della shell zsh in formato html."
 
 #. tumbleweed/zsync/summary
 #. tumbleweed/zsync/zsync-devel/summary
 #. leap/zsync/summary
 #. leap/zsync/zsync-devel/summary
-#, fuzzy
 msgid "Client-side Implementation of the Rsync Algorithm over HTTP"
-msgstr "Libera implementazione dell'algoritmo BiDi"
+msgstr "Implementazione lato client dell'algoritmo rsync su HTTP"
 
 #. tumbleweed/zsync/description
 #. tumbleweed/zsync/zsync-devel/description
@@ -1033,14 +1202,19 @@ msgid ""
 "module is needed. It also works with gzip files, and content on the server "
 "can be compressed to further reduce download times."
 msgstr ""
+"zsync è un'implementazione di rsync su HTTP. Consente l'aggiornamento di "
+"file da un server Web remoto senza necessità di uno scaricamento completo o "
+"di un'applicazione speciale sul server remoto. Per determinare quali parti "
+"di un file l'utente già possiede, fa uso di un metafile che viene creato sul "
+"server; quindi scarica le parti rimanenti via HTTP. Non è richiesto alcun "
+"modulo server o server Web speciale. Opera anche con i file gzip e il "
+"contenuto sul server può essere compresso per ridurre ulteriormente i tempi "
+"di scaricamento."
 
 #. tumbleweed/zutils/summary
 #. leap/zutils/summary
-#, fuzzy
 msgid "Collection of utilities for dealing with compressed files"
-msgstr ""
-"Una collezione di programmi di utilità e oggetti condivisi dinamicamente per "
-"gestire oggetti compilati"
+msgstr "Collezione di programmi di utilità per gestire file compressi"
 
 #. tumbleweed/zutils/description
 #. leap/zutils/description
@@ -1053,11 +1227,19 @@ msgid ""
 "efficient C++ programs. In particular the \"--recursive\" option is very "
 "efficient in those utilities supporting it."
 msgstr ""
+"Zutils è una collezione di programmi d'utilità per gestire in maniera "
+"trasparente una qualsiasi combinazione di file compressi e non. Se un "
+"qualsiasi file è compresso, compreso lo standard input, viene utilizzato il "
+"suo contenuto decompresso. I file compressi sono decompressi al volo; non "
+"viene creato nessun file temporaneo. Questi programmi non sono script di "
+"tipo wrapper, ma più sicuri ed efficienti programmi scritti in C++. In "
+"particolare l'opzione \"--recursive\" è molto efficiente in quei programmi "
+"che la supportano."
 
 #. tumbleweed/zvbi/summary
 #. leap/zvbi/summary
 msgid "Linux \"VBI proxy\""
-msgstr ""
+msgstr "\"Proxy VBI\" Linux"
 
 #. tumbleweed/zvbi/description
 #. leap/zvbi/description
@@ -1069,37 +1251,38 @@ msgid ""
 "Teletext application.  The VBI proxy was developed as a solution to this "
 "problem."
 msgstr ""
+"Con i driver \"video4linux\" una sola applicazione alla volta può catturare "
+"i dati VB. La API di seconda generazione \"v4l2\" consente a più client di "
+"aprire un dispositivo, ma comunque sempre un solo client può leggere il "
+"dispositivo. Se ad esempio il demone Nxtvepg è eseguito in background, gli "
+"utenti non saranno in grado di avviare un'applicazione Teletext. Il proxy "
+"VBI è stato sviluppato come soluzione a questo problema."
 
 #. tumbleweed/zvbi/zvbi-devel/summary
 #. tumbleweed/zvbi/zvbi-devel-32bit/summary
 #. leap/zvbi/zvbi-devel/summary
 #. leap/zvbi/zvbi-devel-32bit/summary
 msgid "VBI decoding library - devel package"
-msgstr ""
+msgstr "Libreria di decodifica VBI - pacchetto di sviluppo"
 
 #. tumbleweed/zvbi/zvbi-devel/description
 #. tumbleweed/zvbi/zvbi-devel-32bit/description
 #. leap/zvbi/zvbi-devel/description
 #. leap/zvbi/zvbi-devel-32bit/description
-#, fuzzy
 msgid ""
 "This package includes the development files for the zvbi library which "
 "provides routines to read from raw VBI sampling devices, to demodulate raw "
 "to sliced VBI data, and to interpret the data of several popular services."
 msgstr ""
-"VBI è un acronimo per Vertical Blanking Interval, un intervallo tra i dati "
-"di immagine trasmessi in un segnale video analogico. Questo intervallo viene "
-"usato per trasmettere dati modulati AM per vari servizi dati come Teletext e "
-"sottotitoli.\n"
-"\n"
-"La libreria zvbi fornisce le routine per leggere dai dispositivi di "
-"campionamento raw VBI, per demodulare i dati raw in dati VBI suddivisi e per "
-"interpretare i dati di molti servizi popolari."
+"Questo pacchetto include i file di sviluppo per la libreria zvbi che "
+"fornisce le routine per leggere dai dispositivi di campionamento raw VBI, "
+"per demodulare i dati raw in dati VBI suddivisi e per interpretare i dati di "
+"molti servizi popolari."
 
 #. tumbleweed/zynaddsubfx/summary
 #. leap/zynaddsubfx/summary
 msgid "A Real-Time Software Synthesizer for Linux"
-msgstr ""
+msgstr "Un programma per sintetizzatore in tempo reale per Linux"
 
 #. tumbleweed/zynaddsubfx/description
 #. leap/zynaddsubfx/description
@@ -1109,6 +1292,11 @@ msgid ""
 "It includes randomness of some parameters, which can make warm sounds, like "
 "analog synthesizers.\tThis program has system and insertion effects, too."
 msgstr ""
+"zynaddsubfx è un programma per sintetizzatore multifunzionale in tempo reale "
+"per Linux.\tLe funzionalità comprendono la polifonia e capacità "
+"multitimbriche e microtonali. Comprende la gestione casuale di alcuni "
+"parametri, che possono rendere il suono caldo, come i sintetizzatori "
+"analogici.\tQuesto programma ha anche effetti sistemici e di inserzione."
 
 #. tumbleweed/zynaddsubfx/zynaddsubfx-dssi/summary
 #. tumbleweed/zynaddsubfx/zynaddsubfx-lv2/summary
@@ -1117,7 +1305,7 @@ msgstr ""
 #. leap/zynaddsubfx/zynaddsubfx-lv2/summary
 #. leap/zynaddsubfx/zynaddsubfx-vst/summary
 msgid "Real-time software synthesizer for DSSI"
-msgstr ""
+msgstr "Un programma per sintetizzatore in tempo reale per DSSI"
 
 #. tumbleweed/zynaddsubfx/zynaddsubfx-dssi/description
 #. leap/zynaddsubfx/zynaddsubfx-dssi/description
@@ -1129,6 +1317,13 @@ msgid ""
 "\n"
 "This package includes the DSSI implementation of the synthesizer."
 msgstr ""
+"zynaddsubfx è un programma per sintetizzatore multifunzionale in tempo reale "
+"per Linux.\tLe funzionalità comprendono la polifonia e capacità "
+"multitimbriche e microtonali. Comprende la gestione casuale di alcuni "
+"parametri, che possono rendere il suono caldo, come i sintetizzatori "
+"analogici.\tQuesto programma ha anche effetti sistemici e di inserzione.\n"
+"\n"
+"Questo pacchetto include l'implementazione DSSI del sintetizzatore."
 
 #. tumbleweed/zynaddsubfx/zynaddsubfx-lv2/description
 #. leap/zynaddsubfx/zynaddsubfx-lv2/description
@@ -1140,6 +1335,13 @@ msgid ""
 "\n"
 "This package includes the LV2 implementation of the synthesizer."
 msgstr ""
+"zynaddsubfx è un programma per sintetizzatore multifunzionale in tempo reale "
+"per Linux.Le funzionalità comprendono la polifonia e capacità multitimbriche "
+"e microtonali. Comprende la gestione casuale di alcuni parametri, che "
+"possono rendere il suono caldo, come i sintetizzatori analogici.Questo "
+"programma ha anche effetti sistemici e di inserzione.\n"
+"\n"
+"Questo pacchetto include l'implementazione LV2 del sintetizzatore."
 
 #. tumbleweed/zynaddsubfx/zynaddsubfx-vst/description
 #. leap/zynaddsubfx/zynaddsubfx-vst/description
@@ -1151,6 +1353,13 @@ msgid ""
 "\n"
 "This package includes the VST implementation of the synthesizer."
 msgstr ""
+"zynaddsubfx è un programma per sintetizzatore multifunzionale in tempo reale "
+"per Linux.Le funzionalità comprendono la polifonia e capacità multitimbriche "
+"e microtonali. Comprende la gestione casuale di alcuni parametri, che "
+"possono rendere il suono caldo, come i sintetizzatori analogici.Questo "
+"programma ha anche effetti sistemici e di inserzione.\n"
+"\n"
+"Questo pacchetto include l'implementazione VST del sintetizzatore."
 
 #. tumbleweed/zypp-plugin/zypp-plugin-python/summary
 #. leap/zypp-plugin/zypp-plugin-python/summary
@@ -1199,16 +1408,15 @@ msgstr ""
 msgid ""
 "That are the header files needed for developing applications using ZZipLib."
 msgstr ""
+"File di intestazione necessari per sviluppare applicazioni che usano ZZipLib."
 
 #. tumbleweed/zathura/zathura-lang/summary
-#, fuzzy
 msgid "Languages for package zathura"
-msgstr "Lingue per il pacchetto thunar"
+msgstr "Lingue per il pacchetto zathura"
 
 #. tumbleweed/zathura/zathura-lang/description
-#, fuzzy
 msgid "Provides translations to the package zathura"
-msgstr "Fornisce le traduzioni per il pacchetto thunar"
+msgstr "Fornisce le traduzioni per il pacchetto zathura"
 
 #. tumbleweed/zd1211-firmware/summary
 #. leap/zd1211-firmware/summary
@@ -1233,7 +1441,7 @@ msgstr "Fornisce le traduzioni per il pacchetto zenity"
 #. tumbleweed/zeroinstall-injector/summary
 #. leap/zeroinstall-injector/summary
 msgid "Decentralised cross-distribution software installation"
-msgstr ""
+msgstr "Installazione di programmi decentrata e multi-distribuzione"
 
 #. tumbleweed/zeroinstall-injector/description
 #. leap/zeroinstall-injector/description
@@ -1255,12 +1463,29 @@ msgid ""
 "and no code from the package is run during install or uninstall. The system "
 "can automatically check for updates when software is run."
 msgstr ""
+"Zero Install rende semplice per l'utente installare programmi senza la "
+"necessità di acquisire i privilegi di root. Prende l'URL di un programma e "
+"lo esegue (scaricandolo prima, se necessario). Tutte le dipendenze del "
+"programma sono recuperate allo stesso modo. L'utente ha il controllo su "
+"quale versione del programma e delle dipendenze usare.\n"
+"\n"
+"Zero Install è un sistema di installazione decentrato (non esiste un "
+"repository centrale; tutti i pacchetti sono identificati tramite URL), "
+"debolmente accoppiato (se programmi diversi richiedono versioni differenti "
+"di una libreria, vengono installate entrambe le versioni in parallelo, senza "
+"conflitti) e che pone enfasi sulla sicurezza (tutte le descrizioni dei "
+"pacchetti sono firmate tramite GPG e contengono gli hash crittografici del "
+"contenuto di ciascuna versione). Ciascuna versione di ciascun programma è "
+"memorizzata in una sotto-directory dedicata della cache di Zero Install (non "
+"viene installato nulla in directory al di fuori della cache, come /usr/bin) "
+"e non viene eseguito codice presente nel pacchetto durante l'installazione e "
+"la disinstallazione. Il sistema può controllare automaticamente la presenza "
+"di aggiornamenti all'esecuzione dei programmi."
 
 #. tumbleweed/zile/zile-doc/summary
 #. leap/zile/zile-doc/summary
-#, fuzzy
 msgid "Lightweight Emacs Clone (Documentation)"
-msgstr "Terminale leggero LXDE"
+msgstr "Clone leggero di Emacs (documentazione)"
 
 #. tumbleweed/zile/zile-doc/description
 #. leap/zile/zile-doc/description
@@ -1271,6 +1496,11 @@ msgid ""
 "\n"
 "This package contains the documentation and the man page for zile."
 msgstr ""
+"Zile is another Emacs-clone.  Zile is a customizable, self-documenting real-"
+"time, open-source display editor.  Zile was written to be as similar as "
+"possible to Emacs; every Emacs user should feel at home with Zile.\n"
+"\n"
+"Questo pacchetto contiene la documentazione e la pagina di man per zile."
 
 #. tumbleweed/zinnia-tomoe/summary
 #. leap/zinnia-tomoe/summary
@@ -1288,9 +1518,8 @@ msgstr ""
 
 #. tumbleweed/zramcfg/summary
 #. leap/zramcfg/summary
-#, fuzzy
 msgid "ZRAM configuration"
-msgstr "Infrastruttura di configurazione FVWM"
+msgstr "Configurazione di ZRAM"
 
 #. tumbleweed/zramcfg/description
 #. leap/zramcfg/description
@@ -1299,11 +1528,15 @@ msgid ""
 "systemd service for enabling saving and loading the ZRAM configuration "
 "during bootup and shutdown."
 msgstr ""
+"zramcfg è uno script per configurare i dispositivi ZRAM presenti nel "
+"sistema. Fornisce un servizio systemd per abilitare il salvataggio e il "
+"caricamento della configurazione ZRAM durante l'avvio e l'arresto del "
+"sistema."
 
 #. tumbleweed/zynaddsubfx/zynaddsubfx-common/summary
 #. leap/zynaddsubfx/zynaddsubfx-common/summary
 msgid "Common files for ZynAddSubFX synthesizers"
-msgstr ""
+msgstr "File comuni per i sintetizzatori ZynAddSubFX"
 
 #. tumbleweed/zynaddsubfx/zynaddsubfx-common/description
 #. leap/zynaddsubfx/zynaddsubfx-common/description
@@ -1316,6 +1549,13 @@ msgid ""
 "This package includes the common files needed by the implementations of the "
 "synthesizer."
 msgstr ""
+"Zypper è uno strumento a riga di comando per la gestione dei programmi. Può "
+"essere usato per aggiungere repository dei pacchetti, cercare pacchetti, "
+"installare, rimuovere o aggiornare pacchetti, installare patch, driver "
+"hardware, verificare le dipendenze e altro ancora.\n"
+"\n"
+"Questo pacchetto include i file comuni necessari per le varie "
+"implementazioni del sintetizzatore."
 
 #. tumbleweed/zypper/zypper-aptitude/summary
 #. leap/zypper/zypper-aptitude/summary
@@ -1325,7 +1565,7 @@ msgstr "Compatibilità aptitude con zypper"
 #. tumbleweed/zypper/zypper-aptitude/description
 #. leap/zypper/zypper-aptitude/description
 msgid "provides compatibility to Debian's aptitude command using zypper"
-msgstr ""
+msgstr "Garantisce la compatibilità al comando aptitude di Debian usando zypper"
 
 #. tumbleweed/zypper/zypper-log/summary
 #. tumbleweed/zypper/zypper-log/description
@@ -1337,7 +1577,7 @@ msgstr "CLI per accedere ai file di log di zypper"
 #. tumbleweed/zypper-docker/summary
 #. leap/zypper-docker/summary
 msgid "Easy patch and update solution for Docker images"
-msgstr ""
+msgstr "Semplice soluzione di aggiornamento e correzione per le immagini Docker"
 
 #. tumbleweed/zypper-docker/description
 #. leap/zypper-docker/description
@@ -1350,16 +1590,28 @@ msgid ""
 "zypper-docker relies on zypper to perform the actual operations against "
 "Docker images."
 msgstr ""
+"Lo strumento da riga di comando zypper-docker fornisce una soluzione veloce "
+"per correggere e aggiornare le immagini Docker basate su SUSE Linux "
+"Enterprise o openSUSE.\n"
+"\n"
+"zypper-docker richiama la sintassi della riga di comando di zypper per "
+"facilitarne l'utilizzo.\n"
+"\n"
+"zypper-docker dipende da zypper per effettuare le operazioni vere e proprie "
+"sulle immagini Docker."
 
 #. leap/ziptool/summary
 msgid "Tool for the Iomega ZIP and JAZ drives"
-msgstr ""
+msgstr "Strumento per i dispositivi Iomega ZIP e JAZ"
 
 #. leap/ziptool/description
 msgid ""
 "A tool for configuration of the Iomega ZIP and JAZ drives. Automatic eject "
 "and write protection (password too) can be configured."
 msgstr ""
+"Strumento per la configurazione dei dispositivi Iomega ZIP e JAZ. Possono "
+"essere configurate l'espulsione automatica e la protezione dalla scrittura ("
+"anche con password)."
 
 #. leap/zisofs-tools/description
 msgid ""
