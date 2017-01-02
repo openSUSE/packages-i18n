@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-08-30 15:43:29\n"
-"PO-Revision-Date: 2017-01-01 22:29+0000\n"
+"PO-Revision-Date: 2017-01-02 13:53+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-"
 "i18n/w-master/it/>\n"
@@ -531,7 +531,6 @@ msgstr "Libreria C di WebSocket - libreria C condivisa"
 
 #. tumbleweed/wslay/libwslay0/description
 #. leap/wslay/libwslay0/description
-#, fuzzy
 msgid ""
 "Wslay is a WebSocket library written in C. It implements the protocol "
 "version 13 described in RFC 6455. This library offers 2 levels of API: event-"
@@ -545,7 +544,15 @@ msgid ""
 msgstr ""
 "Wslay è una libreria WebSocket scritta in C. Implementa la versione 13 del "
 "protocollo descritto nella RFC 6455. Questa libreria offre 2 livelli di API: "
-"API basata sugli eventi e API di basso livello basata sui frame."
+"API basata sugli eventi e API di basso livello basata sui frame. Per quanto "
+"concerne l'API basata sugli eventi, è adatta per uno stile di schema di "
+"reattore di tipo non bloccante. È possibile impostare chiamate di ritorno "
+"(callback) in vari eventi. Per quanto concerne l'API basata sui frame, "
+"invece, è possibile inviare frame WebSocket direttamente. Wslay, del "
+"protocollo WebSocket, supporta soltanto la parte del trasferimento dati e "
+"non esegue l'handshake di apertura dell'HTTP.\n"
+"\n"
+"Questo pacchetto contiene la libreria C condivisa."
 
 #. tumbleweed/wt/libwtdbomysql39/summary
 #. leap/wt/libwtdbomysql38/summary
@@ -1661,9 +1668,8 @@ msgstr ""
 
 #. tumbleweed/wslay/summary
 #. leap/wslay/summary
-#, fuzzy
 msgid "WebSocket library in C"
-msgstr "Libreria C del protocollo principale di X11"
+msgstr "Libreria di WebSocket in C"
 
 #. tumbleweed/wslay/description
 #. leap/wslay/description
@@ -1686,6 +1692,26 @@ msgid ""
 "sockets, etc. This makes Wslay portable across various platforms and the "
 "application authors can choose freely I/O frameworks."
 msgstr ""
+"Wslay è una libreria WebSocket scritta in C. Implementa la versione 13 del "
+"protocollo descritto nella RFC 6455. Questa libreria offre 2 livelli di API: "
+"API basata sugli eventi e API di basso livello basata sui frame. Per quanto "
+"concerne l'API basata sugli eventi, è adatta per uno stile di schema di "
+"reattore di tipo non bloccante. È possibile impostare chiamate di ritorno "
+"(callback) in vari eventi. Per quanto concerne l'API basata sui frame, "
+"invece, è possibile inviare frame WebSocket direttamente. Wslay, del "
+"protocollo WebSocket, supporta soltanto la parte del trasferimento dati e "
+"non esegue l'handshake di apertura dell'HTTP.\n"
+"\n"
+"Wslay supporta:\n"
+"\n"
+"Messaggi di testo/binari. Risposta automatica al ping. Interfaccia per le "
+"chiamate di ritorno (callback). Ciclo degli eventi esterni.\n"
+"\n"
+"Wslay non effettua nessuna operazione I/O di per sé. Al contrario, offre per "
+"esse delle chiamate di ritorno. Ciò rende Wslay indipendente da qualsiasi "
+"infrastruttura di I/O, SSL, socket, ecc. E ciò rende Wslay trasponibile su "
+"varie piattaforme, per cui gli autori di applicazioni possono scegliere "
+"liberamente le infrastrutture I/O."
 
 #. tumbleweed/wslay/wslay-devel/summary
 #. leap/wslay/wslay-devel/summary
@@ -1706,6 +1732,17 @@ msgid ""
 "\n"
 "This package holds the development files."
 msgstr ""
+"Wslay è una libreria WebSocket scritta in C. Implementa la versione 13 del "
+"protocollo descritto nella RFC 6455. Questa libreria offre 2 livelli di API: "
+"API basata sugli eventi e API di basso livello basata sui frame. Per quanto "
+"concerne l'API basata sugli eventi, è adatta per uno stile di schema di "
+"reattore di tipo non bloccante. È possibile impostare chiamate di ritorno "
+"(callback) in vari eventi. Per quanto concerne l'API basata sui frame, "
+"invece, è possibile inviare frame WebSocket direttamente. Wslay, del "
+"protocollo WebSocket, supporta soltanto la parte del trasferimento dati e "
+"non esegue l'handshake di apertura dell'HTTP.\n"
+"\n"
+"Questo pacchetto contiene i file di sviluppo."
 
 #. tumbleweed/wsmancli/summary
 #. leap/wsmancli/summary
@@ -2204,9 +2241,8 @@ msgstr ""
 
 #. tumbleweed/websocketpp/websocketpp-devel/summary
 #. leap/websocketpp/websocketpp-devel/summary
-#, fuzzy
 msgid "C++ WebSocket Protocol Library"
-msgstr "Libreria C del protocollo principale di X11"
+msgstr "Libreria C++ del protocollo WebSocket"
 
 #. tumbleweed/websocketpp/websocketpp-devel/description
 #. leap/websocketpp/websocketpp-devel/description
