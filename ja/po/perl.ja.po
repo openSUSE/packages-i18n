@@ -3,19 +3,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2016-02-02 01:17:11\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-01-27 08:40+0000\n"
+"Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
+"/perl-master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.6\n"
 
 #. tumbleweed/perl-Net-Pcap/pcapdump/summary
 #. leap/perl-Net-Pcap/pcapdump/summary
 msgid "Dump packets from the network"
-msgstr ""
+msgstr "ネットワークからのパケットのダンプ"
 
 #. tumbleweed/perl-Net-Pcap/pcapdump/description
 #. leap/perl-Net-Pcap/pcapdump/description
@@ -25,18 +27,21 @@ msgid ""
 "pcapdump mimics the very basic features of tcpdump(1) and provides a good "
 "example of how to use Net::Pcap."
 msgstr ""
+"ネットワークからパケットのダンプを行なうことができるコマンドラインツールです。\n"
+"\n"
+"pcapdump は tcpdump(1) のごく基本的な機能をまねているほか、 Net::Pcap の使い方についてわかりやすい例を示しています。"
 
 #. tumbleweed/perl-Net-Pcap/pcapinfo/summary
 #. leap/perl-Net-Pcap/pcapinfo/summary
 msgid "Prints detailed information about the network devices"
-msgstr ""
+msgstr "ネットワークデバイスに対する詳細情報の表示"
 
 #. tumbleweed/perl-Net-Pcap/pcapinfo/description
 #. leap/perl-Net-Pcap/pcapinfo/description
 msgid ""
 "pcapinfo prints detailed information about the network devices and Pcap "
 "library available on the current host."
-msgstr ""
+msgstr "pcapinfo は、現在のホスト上にあるネットワークデバイスや、 Pcap ライブラリに対する詳細な情報を出力します。"
 
 #. tumbleweed/perl/summary
 #. tumbleweed/perl/perl-base/summary
@@ -79,7 +84,7 @@ msgstr ""
 #. tumbleweed/perl-Algorithm-Combinatorics/summary
 #. leap/perl-Algorithm-Combinatorics/summary
 msgid "Efficient generation of combinatorial sequences"
-msgstr ""
+msgstr "組み合わせ数学の順列の効果的な生成"
 
 #. tumbleweed/perl-Algorithm-Combinatorics/description
 #. leap/perl-Algorithm-Combinatorics/description
@@ -91,6 +96,11 @@ msgid ""
 "\n"
 "Tuples are generated in lexicographic order, except in 'subsets()'."
 msgstr ""
+"Algorithm::Combinatorics は組み合わせ数学における順列を効果的に生成するための仕組みです。アルゴリズムは選択することができます "
+"(現在作業中です。詳しくは /REFERENCES マニュアルページをお読みください) 。列挙子では再帰化やスタックを使用しておらず、 C "
+"言語で記述されています。\n"
+"\n"
+"組は 'subsets()' を除いて、辞書順に生成されます。"
 
 #. tumbleweed/perl-Alien-SDL/summary
 #. leap/perl-Alien-SDL/summary
@@ -153,9 +163,8 @@ msgstr ""
 
 #. tumbleweed/perl-Alien-wxWidgets/summary
 #. leap/perl-Alien-wxWidgets/summary
-#, fuzzy
 msgid "Building, Finding and Using Wxwidgets Binaries"
-msgstr "SDL バイナリの構築と検出、および使用"
+msgstr "Wxwidgets バイナリの構築／検出／使用"
 
 #. tumbleweed/perl-Alien-wxWidgets/description
 #. leap/perl-Alien-wxWidgets/description
@@ -165,11 +174,14 @@ msgid ""
 "In short 'Alien::wxWidgets' can be used to detect and get configuration "
 "settings from an installed wxWidgets."
 msgstr ""
+"Alien ネームスペースのマニフェストについて、詳しくは Alien マニュアルページをお読みください。\n"
+"\n"
+"'Alian::wxWidgets' を端的に言うと、インストールされている wxWidgets を検出して設定情報を取得する機能を提供します。"
 
 #. tumbleweed/perl-AnyEvent/summary
 #. leap/perl-AnyEvent/summary
 msgid "The Dbi of Event Loop Programming"
-msgstr ""
+msgstr "イベントループプログラミングの Dbi"
 
 #. tumbleweed/perl-AnyEvent/description
 msgid ""
@@ -205,6 +217,29 @@ msgid ""
 "other event modules you can load it explicitly and enjoy the high "
 "availability of that event loop :)"
 msgstr ""
+"AnyEvent は様々なイベントループに対する統一的なインターフェイスを提供する仕組みです。これにより、モジュールを作成する際に、特定のイベントループの"
+"実装を強制することなく、その機能を利用できるようになります (もちろん複数のイベントループが共存してしまうようなこともありません) 。\n"
+"\n"
+"インターフェイスそれ自身はイベントモジュールと非常に似通った仕組みになっていますが、全く同一というわけではありません。\n"
+"\n"
+"任意の watcher-creation "
+"メソッドが最初に呼び出されると、モジュールは下記のモジュールの読み込み状況を確認して、現在読み込まれているイベントループを検出しようとします: EV, "
+"AnyEvent::Loop, Event, Glib, Tk, Event::Lib, Qt, POE "
+"。このうち、最初に見つかったものを使用しようとします。いずれも検出されない場合、モジュールは上記の順序で最初の 4 つのモジュールを読み込みます。なお、 "
+"EV が利用できない場合は、純粋な Perl モジュールとして作成された AnyEvent::Loop が使用されることになり、その他の 2 "
+"つは通常使われません。\n"
+"\n"
+"AnyEvent は最初に読み込まれているモジュールを確認するため、 AnyEvent "
+"を利用するよりも前にイベントモデルが明示的に読み込まれると、それが既定値として使用されるようになります。たとえば下記のようになります:\n"
+"\n"
+"   use Tk;     use AnyEvent;\n"
+"\n"
+"このような仕組みから、いずれかのモジュールで他のイベントモデルを読み込んでいて、それを使用し始めている場合、 AnyEvent の仕組みは意味がなくなって"
+"しまいます。このような事態は非常に稀なものではありますが、モジュールによっては特にアナウンスされることなく、イベントループが使用されている場合もあります。"
+"\n"
+"\n"
+"AnyEvent の純粋 Perl 実装は 'AnyEvent::Loop' と呼ばれています。その他のイベントモジュールと同様に、"
+"明示的に読み込んでイベントループの高可用性を用いることもできます :)"
 
 #. tumbleweed/perl-Apache-Filter/summary
 #. leap/perl-Apache-Filter/summary
@@ -231,6 +266,18 @@ msgid ""
 "printing to STDOUT. There should be almost no overhead for doing this when "
 "there's only one element in the chain."
 msgstr ""
+"基本操作では、 Filter1, Filter2, Filter3 の各ハンドラは $r->filter_input() "
+"を呼び出し、ファイルハンドルを返します。 Filter1 の場合、ファイルハンドルは要求されたファイルを示します。 Filter2 の場合、 "
+"Filter1 が標準出力に書き込んだ内容を含むファイルハンドルを返します。また、 Filter3 の場合、 Filter3 "
+"が標準出力に書き込んだ内容を含むファイルハンドルを返します。 Filter3 の出力はブラウザに直接届きます。\n"
+"\n"
+"なお、 Filter1, Filter2, Filter3 の各モジュールは、 Apache::OutputChain "
+"のような逆順ではなく、正順に並べられます。\n"
+"\n"
+"また、このモジュールを使用する際には、単独のハンドラとして使用するだけでなく、チェイン内の要素として同じハンドラを使用することができます。また、チェイン処"
+"理であることを明らかにするため、チェイン内のすべてのハンドラを \"フィルタ対応\" にします。つまり、それぞれのハンドラでは、 STDOUT "
+"に出力する前に $r->filter_register() を確実に一度だけ呼び出してください。チェイン内に 1 "
+"つの要素しか存在しない場合は、ほとんどオーバーヘッドになりません。"
 
 #. tumbleweed/perl-Apache-SessionX/summary
 #. leap/perl-Apache-SessionX/summary
@@ -250,9 +297,8 @@ msgstr ""
 
 #. tumbleweed/perl-Authen-DecHpwd/summary
 #. leap/perl-Authen-DecHpwd/summary
-#, fuzzy
 msgid "DEC VMS password hashing"
-msgstr "KDE パスワード変更"
+msgstr "DEC VMS パスワードハッシュ"
 
 #. tumbleweed/perl-Authen-DecHpwd/description
 #. leap/perl-Authen-DecHpwd/description
@@ -264,6 +310,11 @@ msgid ""
 "The password hashing function is implemented in XS, with a hideously slow "
 "pure Perl backup version for systems that can't handle XS."
 msgstr ""
+"このモジュールは、 VMS のバスワードハッシュ機能である 'SYSHASH_PASSWORD' パスワードハッシュ機能 ('LGI$HPWD' "
+"としても知られています) を実装しているほか、関連する VMS のユーザ名およびパスワードの処理関数も含まれています。\n"
+"\n"
+"パスワードハッシュ機能は XS 内で実装されているほか、 XS を処理できないシステム向けに、非常に遅いながらも純粋な Perl "
+"で実装されたバックアップバージョンも用意されています。"
 
 #. tumbleweed/perl-Authen-SASL-Cyrus/summary
 #. leap/perl-Authen-SASL-Cyrus/summary
@@ -295,7 +346,7 @@ msgstr ""
 #. tumbleweed/perl-B-Hooks-OP-Annotation/summary
 #. leap/perl-B-Hooks-OP-Annotation/summary
 msgid "annotate and delegate hooked OPs"
-msgstr ""
+msgstr "フックされた OP の注釈と代理処理"
 
 #. tumbleweed/perl-B-Hooks-OP-Annotation/description
 #. leap/perl-B-Hooks-OP-Annotation/description
@@ -328,11 +379,34 @@ msgid ""
 "%XS_PREREQUISITES                 }})             : ()         ),         "
 "%XS_DEPENDENCIES,              );"
 msgstr ""
+"このモジュールは XS コード向けに作られたもので、 OP 'op_ppaddr' 関数を乗っ取っることで、 Perl "
+"やその他のモジュールが割り当てた以前の関数の代理機能を提供したり、それを復元したりする機能を提供します。一般的に、このモジュールは "
+"B::Hooks::OP::Check と共に使用されます。\n"
+"\n"
+"'B::Hooks::OP::Annotation' は ExtUtils::Depends を利用して XS コードに型と関数を提供します。 XS "
+"コードに対してこれらを提供したい Perl モジュールは、 'use B::OP::Hooks::Annotation' を追加して、 "
+"Makefile.PL 内に下記のような記述を追加します:\n"
+"\n"
+"    use ExtUtils::MakeMaker;     use ExtUtils::Depends;\n"
+"\n"
+"    our %XS_PREREQUISITES = (         'B::Hooks::OP::Annotation' => "
+"'0.44',         'B::Hooks::OP::Check'      => '0.15',     );\n"
+"\n"
+"    our %XS_DEPENDENCIES = ExtUtils::Depends->new(         'Your::XS::"
+"Module',          keys(%XS_PREREQUISITES)     )->get_makefile_vars();\n"
+"\n"
+"    WriteMakefile(         NAME          => 'Your::XS::Module',         "
+"VERSION_FROM  => 'lib/Your/XS/Module.pm',         PREREQ_PM => {             "
+"'B::Hooks::EndOfScope' => '0.07',             %XS_PREREQUISITES         }"
+",         ($ExtUtils::MakeMaker::VERSION >= 6.46 ?             (META_MERGE =>"
+" {                 configure_requires => {                     'ExtUtils::"
+"Depends' => '0.301',                     %XS_PREREQUISITES                 "
+"}})             : ()         ),         %XS_DEPENDENCIES,              );"
 
 #. tumbleweed/perl-B-Hooks-OP-Check/summary
 #. leap/perl-B-Hooks-OP-Check/summary
 msgid "Wrap OP check callbacks"
-msgstr ""
+msgstr "OP チェックコールバックのラッピング"
 
 #. tumbleweed/perl-B-Hooks-OP-Check/description
 #. leap/perl-B-Hooks-OP-Check/description
@@ -349,11 +423,21 @@ msgid ""
 "\n"
 "Your XS module can now include 'hook_op_check.h'."
 msgstr ""
+"このモジュールは、 'PL_check' のコールバック内にフックを設置するため、 XS モジュール向けに C API を提供する仕組みです。\n"
+"\n"
+"ExtUtils::Depends では、他の XS モジュールに対して使用するすべての関数を公開する際に使用しています。下記のような記述を "
+"Makefile.PL に追加してください:\n"
+"\n"
+"    my $pkg = ExtUtils::Depends->new('Your::XSModule', "
+"'B::Hooks::OP::Check');     WriteMakefile(         ... # your normal "
+"makefile flags         $pkg->get_makefile_vars,     );\n"
+"\n"
+"これにより、 XS モジュールから 'hook_op_check.h' を含めることができるようになります。"
 
 #. tumbleweed/perl-B-Hooks-OP-PPAddr/summary
 #. leap/perl-B-Hooks-OP-PPAddr/summary
 msgid "Hook into opcode execution"
-msgstr ""
+msgstr "opcode 実行内に対するフック"
 
 #. tumbleweed/perl-B-Hooks-OP-PPAddr/description
 msgid ""
@@ -369,6 +453,16 @@ msgid ""
 "\n"
 "Your XS module can now include 'hook_op_ppaddr.h'."
 msgstr ""
+"このモジュールは、 Perl の opcode 内にフックを設置するため、 XS モジュール向けに C API を提供する仕組みです。\n"
+"\n"
+"ExtUtils::Depends では、他の XS モジュールに対して使用するすべての関数を公開する際に使用しています。下記のような記述を "
+"Makefile.PL に追加してください:\n"
+"\n"
+"    my $pkg = ExtUtils::Depends->new('Your::XSModule', "
+"'B::Hooks::OP::PPAddr');     WriteMakefile(         ... # your normal "
+"makefile flags         $pkg->get_makefile_vars,     );\n"
+"\n"
+"これにより、 XS モジュールから 'hook_op_ppaddr.h' を含めることができるようになります。"
 
 #. tumbleweed/perl-B-Utils/summary
 #. tumbleweed/perl-B-Utils/description
@@ -455,9 +549,8 @@ msgstr "Bit::Vector Perl モジュール"
 #. tumbleweed/perl-Boost-Geometry-Utils/description
 #. leap/perl-Boost-Geometry-Utils/summary
 #. leap/perl-Boost-Geometry-Utils/description
-#, fuzzy
 msgid "Bindings for the Boost Geometry library"
-msgstr "libproxy 向け Python バインディング"
+msgstr "Boost ジオメトリライブラリ向けバインディング"
 
 #. tumbleweed/perl-Bootloader/summary
 #. leap/perl-Bootloader/summary
@@ -486,7 +579,7 @@ msgstr ""
 #. tumbleweed/perl-CSS-Minifier-XS/summary
 #. leap/perl-CSS-Minifier-XS/summary
 msgid "XS based CSS minifier"
-msgstr ""
+msgstr "XS ベースの CSS 小型化モジュール"
 
 #. tumbleweed/perl-CSS-Minifier-XS/description
 #. leap/perl-CSS-Minifier-XS/description
@@ -498,6 +591,11 @@ msgid ""
 "'CSS::Minifier::XS' is similar in function to 'CSS::Minifier', but is "
 "substantially faster as its written in XS and not just pure Perl."
 msgstr ""
+"'CSS::Minifier::XS' は CSS の小型化モジュールです。不要なホワイトスペースや CSS "
+"ファイル内のコメントを削除するように作られていますが、 CSS 自身を壊してしまったりすることはありません。\n"
+"\n"
+"'CSS::Minifier::XS' は 'CSS::Minifier' に似た機能を提供しますが、純粋な Perl ではなく XS "
+"で作られた仕組みであるため、比較的高速に動作します。"
 
 #. tumbleweed/perl-Cairo/summary
 #. tumbleweed/perl-Cairo/description
@@ -532,7 +630,7 @@ msgstr ""
 #. tumbleweed/perl-Class-Accessor-Chained/summary
 #. leap/perl-Class-Accessor-Chained/summary
 msgid "Make chained accessors"
-msgstr ""
+msgstr "チェイン化されたアクセサの作成"
 
 #. tumbleweed/perl-Class-Autouse/summary
 #. leap/perl-Class-Autouse/summary
@@ -556,7 +654,7 @@ msgstr ""
 #. tumbleweed/perl-Class-C3-XS/summary
 #. leap/perl-Class-C3-XS/summary
 msgid "XS speedups for Class::C3"
-msgstr ""
+msgstr "Class::C3 向け XS 高速化"
 
 #. tumbleweed/perl-Class-C3-XS/description
 msgid ""
@@ -572,6 +670,15 @@ msgid ""
 "C3 older than 0.16. (It's not a dependency because it would be circular with "
 "the optional dependency from that package to this one)."
 msgstr ""
+"このモジュールは Class::C3 バージョン 0.16 およびそれ以降に対して、 XS の性能を上げるための仕組みを提供するものです。メインの "
+"Class::C3 パッケージは、このパッケージが見つかればそれを自動的に使用します。ただし、このパッケージは直接使用せず、 Class::C3 "
+"をお使いください。\n"
+"\n"
+"なお、ここで提供されているテストスイートは不完全なものですが、非常に基本的な機能をチェックすることができます。 Class::C3 "
+"テストスイートを実行する場合は、このモジュールをインストールした *後に* 実施してください。\n"
+"\n"
+"このモジュールは Class::C3 のバージョン 0.16 以前をお使いの場合は、何も動作しません "
+"(そのようなパッケージから任意の依存関係が指定されている場合、それが循環してしまうことがありうるためです) 。"
 
 #. tumbleweed/perl-Class-Date/summary
 #. leap/perl-Class-Date/summary
@@ -684,7 +791,7 @@ msgstr ""
 #. tumbleweed/perl-Class-XSAccessor/summary
 #. leap/perl-Class-XSAccessor/summary
 msgid "Generate fast XS accessors without runtime compilation"
-msgstr ""
+msgstr "実行時にコンパイルすることなく XS のアクセサを生成するモジュール"
 
 #. tumbleweed/perl-Class-XSAccessor/description
 #. leap/perl-Class-XSAccessor/description
@@ -734,11 +841,45 @@ msgid ""
 "older versions of 'Class::XSAccessor'. 'exists_predicates' checks whether "
 "the given attribute exists in the object using 'exists'."
 msgstr ""
+"Class::XSAccessor は XS の読み書きに対するアクセサを高速に生成する機能を提供します。これに加えて、オブジェクト内に 'foo' "
+"属性が存在するかどうか ('オブジェクト内で定義されているかどうか' とは異なります) をテストするための 'has_foo()' のような "
+"predicate も提供します。なお、通常のハッシュとして実装されているオブジェクトに対してのみ動作します。また、 "
+"Class::XSAccessor::Array では、内部表現向けに配列を利用するオブジェクトに対する同インターフェイスを提供します。\n"
+"\n"
+"バージョン 0.10 より、このモジュールはシンプルなコンストラクタ (XS 内で実装されているもの) を生成することもできるようになっています。単純に "
+"'constructor => 'コンストラクタ名'' オプション、もしくは 'constructors => ['new', 'create', "
+"'spawn']' オプションを指定してください。これらのコンストラクタは下記の Perl コードと同じ動作をします:\n"
+"\n"
+"  sub new {     my $class = shift;     return bless { @_ }, "
+"ref($class)||$class;   }\n"
+"\n"
+"つまり、オブジェクトやクラスに対してこれらを呼び出しても、オブジェクト全体をコピーしたりはしません。 'new()' "
+"に対するパラメータはオブジェクトに追加されます。\n"
+"\n"
+"また、 XS アクセサメソッドは、シンプルなベンチマークテストで一般的な純粋 Perl 実装より 3 倍から 4 倍程度高速に動作します。"
+"比較的わかりにくい 'sub set_foo_pp {$_[0]->{foo} = $_{1}}' "
+"と比較する限りではそれほど高速ではありませんが、わかりやすいコードを記述している場合は、おおよそ 3.5 "
+"倍程度の高速化をはかることができます。どれだけ高速に動作するのかを確かめるには、ご自身のモジュールでテストすることをお勧めします。\n"
+"\n"
+"メソッド名は完全修飾型で提供されます。概要に示されている例では、 'get_foo' ではなく 'MyClass::get_foo' "
+"として記述されています。このような仕組みにより、現在のクラス以外のクラス内にメソッドをインストールすることができるようになっています。\n"
+"\n"
+"既定では setter は設定された新しい値を返すほか、アクセサ (ミューテータ) も同様の動作をします。この動作は 'chained' "
+"オプションで変更することができます (詳しくは下記をお読みください) 。また、断定メソッドでは boolean を返します。\n"
+"\n"
+"バージョン 1.01 より、 'Class::XSAccessor' は true や false "
+"を返すだけの非常にシンプルなメソッドを生成することもできます。無駄な機能のようにも思えてしまいますが、 PPI "
+"のような巨大なクラス構造の場合に便利な仕組みです。これらのメソッドは 'true' または 'false' のオプションを設定することができます。\n"
+"\n"
+"'defined_predicates' チェックは、指定したオブジェクトの属性が定義済みであるかどうかをチェックします。 'predicates' は "
+"'defined_predicates' の別名で、古いバージョンの 'Class::XSAccessor' "
+"との互換性確保のために用意されています。また、 'exists_predicates' は、 'exists' "
+"を利用するオブジェクト内に指定した属性が存在するかどうかをチェックします。"
 
 #. tumbleweed/perl-Clipboard/summary
 #. leap/perl-Clipboard/summary
 msgid "Copy and Paste with any OS"
-msgstr ""
+msgstr "任意の OS で動作するコピー＆ペースト"
 
 #. tumbleweed/perl-Clipboard/description
 #. leap/perl-Clipboard/description
@@ -750,6 +891,10 @@ msgid ""
 "With Clipboard.pm, this magic is now trivial to access, in a cross-platform-"
 "consistent API, from your Perl code."
 msgstr ""
+"初めてコピー＆ペーストを学んだ時の記憶がありますか？コピー＆ペーストによって、テキストは指数関数的に増えていきます。そう、クリップボードは魔法のような仕組"
+"みです。\n"
+"\n"
+"Clipboard.pm を利用することで、お使いの Perl コードからプラットフォームに依存することなく、この魔法にアクセスする機能が提供されます。"
 
 #. tumbleweed/perl-Clone/summary
 #. leap/perl-Clone/summary
@@ -811,6 +956,20 @@ msgid ""
 "Compress::Zlib library. It is not well integrated into PerlIO, use the "
 "preferred IO::Compress::Bzip2 instead."
 msgstr ""
+"_Compress::Bzip2_ モジュールは、 *bzip2* 圧縮ライブラリに対する Perl のインターフェイスを提供します (_Bzip2_ "
+"の取得方法について、詳しくは AUTHOR をご覧ください) 。 _bzip2_ で提供されている機能の一部を _Compress::Bzip2_ "
+"で利用することができます。\n"
+"\n"
+"すべての文字列パラメータは、スカラー値またはスカラー値の参照として指定することができます。\n"
+"\n"
+"このモジュールは、大きく分けると 2 種類の機能に分類することができます。 1 つはメモリ内の圧縮と展開の機能、もう 1 つは _bzip2_ "
+"ファイルに対する読み書きの機能です。それぞれの領域に対する詳細は、対応する文書をお読みください。\n"
+"\n"
+"*注意*\n"
+"\n"
+"_Compress::Bzip2_ は _bzip2_ に対するシンプルなバインディングであり、 Compress:Zlib "
+"ライブラリと同程度の機能を提供するものです。 PerlIO との統合はまだ不十分な状態であるため、 PerlIO をお使いの場合は "
+"IO::Compress:Bzip2 をお使いください。"
 
 #. tumbleweed/perl-Config-General/summary
 #. leap/perl-Config-General/summary
@@ -848,9 +1007,8 @@ msgstr ""
 
 #. tumbleweed/perl-Config-Simple/summary
 #. leap/perl-Config-Simple/summary
-#, fuzzy
 msgid "Simple configuration file class"
-msgstr "シンプルな設定ファイルの処理"
+msgstr "シンプルな設定ファイルクラス"
 
 #. tumbleweed/perl-Config-Simple/description
 #. leap/perl-Config-Simple/description
@@ -863,11 +1021,16 @@ msgid ""
 "syntax automatically. Library supports parsing, updating and creating "
 "configuration files."
 msgstr ""
+"ソフトウエアの設計作業では、設定ファイルの読み書きが重要な要素を占めます。 Config::Simple はこのような機能を支援するためのライブラリです。"
+"\n"
+"\n"
+"Config::Simple は、設定ファイルをオブジェクトとして表わすクラスです。いくつかの設定ファイルの書式に対応しているほか、ファイルの文法を自動的"
+"に判別する機能も用意されています。ライブラリでは設定ファイルの処理のほか、更新や作成にも対応しています。"
 
 #. tumbleweed/perl-Convert-BER/summary
 #. leap/perl-Convert-BER/summary
 msgid "ASN.1 Basic Encoding Rules"
-msgstr ""
+msgstr "ASN.1 基本エンコーディングルール"
 
 #. tumbleweed/perl-Convert-BER/description
 #. leap/perl-Convert-BER/description
@@ -878,6 +1041,10 @@ msgid ""
 "\n"
 "WARNING this module is no longer supported, See Convert::ASN1"
 msgstr ""
+"Convert::BER は Basic Encoding Rules (BER) を用いた ITU-T 標準 X.209 (ASN.1) "
+"をオブジェクトとしてエンコードおよびデコードすることのできる、 Perl オブジェクトのクラス実装です。\n"
+"\n"
+"警告: このモジュールに対するサポートは終了しています。 Convert::ASN1 をご覧ください。"
 
 #. tumbleweed/perl-Convert-UUlib/summary
 #. leap/perl-Convert-UUlib/summary
@@ -926,19 +1093,19 @@ msgstr ""
 #. tumbleweed/perl-Crypt-DH-GMP/summary
 #. leap/perl-Crypt-DH-GMP/summary
 msgid "Crypt::DH Using GMP Directly"
-msgstr ""
+msgstr "GMP を直接利用した Crypt::DH"
 
 #. tumbleweed/perl-Crypt-DH-GMP/description
 #. leap/perl-Crypt-DH-GMP/description
 msgid ""
 "Crypt::DH::GMP is a (somewhat) portable replacement to Crypt::DH, "
 "implemented mostly in C."
-msgstr ""
+msgstr "Crypt::DH::GMP は Crypt::DH に対する代替モジュールで、幾分か可搬性に優れ、主に C 言語で実装されています。"
 
 #. tumbleweed/perl-Crypt-Eksblowfish/summary
 #. leap/perl-Crypt-Eksblowfish/summary
 msgid "The Eksblowfish Block Cipher"
-msgstr ""
+msgstr "Eksblowfish ブロック暗号"
 
 #. tumbleweed/perl-Crypt-Eksblowfish/description
 #. leap/perl-Crypt-Eksblowfish/description
@@ -962,11 +1129,24 @@ msgid ""
 "in the usual way. See the Crypt::Eksblowfish::Family manpage for a way to "
 "encapsulate an Eksblowfish cipher family."
 msgstr ""
+"この型のオブジェクトは、 Eksblowfish ブロック暗号に対してキーを指定したインスタンスを提供します。暗号化や復号化を行なうことができます。\n"
+"\n"
+"Eksblowfish は Blowfish 暗号の派生型で、キーの設定を非常に高度化した仕組みです (\"Eks\" は \"expensive "
+"key schedule\" の略です) 。これは暗号の強度を有意に高めるような仕組みではありませんが、よりブルートフォース攻撃に強くなるような仕組みです"
+"。また、暗号化の可搬性を高める必要のあるアプリケーションには不適切です。 なお、 Niels Provos 氏および David Mazieres 氏が "
+"OpenBSD におけるパスワードハッシュを生成するために作られた仕組みです。ハッシュアルゴリズムについて、詳しくは "
+"Crypt::Eksblowfish::Bcrypt のマニュアルページをお読みください。また、未修正の Blowfish について、詳しくは "
+"Crypt::Eksblowfish::Blowfish のマニュアルページをお読みください。\n"
+"\n"
+"Eksblowfish はパラメータ化された (ファミリキー型の) 暗号です。キーのスケジューリングのコストを制御するパラメータを指定するほか、"
+"ファミリキー (\"salt\" としても知られています) も指定します。コストと salt "
+"パラメータは両方で暗号ファミリを規定します。それぞれのファミリ内では、キーは通常の方法で暗号関数を定義することになります。 Eksblowfish "
+"暗号ファミリのカプセル化について、詳しくは Crypt::Eksblowfish::Family をお読みください。"
 
 #. tumbleweed/perl-Crypt-MySQL/summary
 #. leap/perl-Crypt-MySQL/summary
 msgid "Emulate the MySQL PASSWORD() function"
-msgstr ""
+msgstr "MySQL PASSWORD() 関数の疑似"
 
 #. tumbleweed/perl-Crypt-MySQL/description
 #. leap/perl-Crypt-MySQL/description
@@ -974,11 +1154,13 @@ msgid ""
 "Crypt::MySQL emulates MySQL PASSWORD() SQL function, without libmysqlclient. "
 "You can compare encrypted passwords, without real MySQL environment."
 msgstr ""
+"Crypt::MySQL は libmysqlclient 無しで MySQL の PASSWORD() SQL "
+"関数を疑似する仕組みです。暗号化されたパスワードを、実際の MySQL 環境を用意することなく比較することができます。"
 
 #. tumbleweed/perl-Crypt-OpenSSL-Bignum/summary
 #. leap/perl-Crypt-OpenSSL-Bignum/summary
 msgid "OpenSSL's multiprecision integer arithmetic"
-msgstr ""
+msgstr "OpenSSL の多精度整数演算"
 
 #. tumbleweed/perl-Crypt-OpenSSL-Bignum/description
 #. leap/perl-Crypt-OpenSSL-Bignum/description
@@ -992,6 +1174,12 @@ msgid ""
 "_NOTE_: Many of the methods in this package can croak, so use eval, or Error."
 "pm's try/catch mechanism to capture errors."
 msgstr ""
+"Crypt::OpenSSL::Bignum は、 OpenSSL の多精度整数演算ライブラリにアクセスする機能を提供します。現時点では OpenSSL "
+"が提供する多数の算術演算機能を Perl に提供していますが、すべての機能までは提供できていません。また、このモジュールでは "
+"Crypt::OpenSSL:RSA のキーパラメータなど、他の OpenSSL モジュールが生成した巨大整数にもアクセスすることができます。\n"
+"\n"
+"_注意_: このパッケージ内の多くのメソッドは croak することができます。そのため、 eval または Error.pm の try/catch "
+"機構を利用してエラーを捕捉してください。"
 
 #. tumbleweed/perl-Crypt-OpenSSL-RSA/summary
 #. leap/perl-Crypt-OpenSSL-RSA/summary
@@ -1025,9 +1213,8 @@ msgstr ""
 
 #. tumbleweed/perl-Crypt-RC4/summary
 #. leap/perl-Crypt-RC4/summary
-#, fuzzy
 msgid "Perl implementation of the RC4 encryption algorithm"
-msgstr "UPnP 仕様の Python 実装"
+msgstr "RC4 暗号化アルゴリズムの Perl 実装"
 
 #. tumbleweed/perl-Crypt-RC4/description
 #. leap/perl-Crypt-RC4/description
@@ -1044,6 +1231,13 @@ msgid ""
 "Independent analysts have scrutinized the algorithm and it is considered "
 "secure."
 msgstr ""
+"RSA Security, Inc. が開発した RC4 アルゴリズムのシンプルな実装です。 RSA の Web サイトに書かれている内容を転載します:"
+"\n"
+"\n"
+"RC4 は RSA Data Security (現 RSA Security) 向けに Rivest 氏が設計したストリーム暗号です。これはバイト志向の"
+"操作で可変のキーサイズを扱うことができるストリーム暗号で、アルゴリズムはランダム置換をベースにしています。分析によると、暗号の周期は 10100 "
+"よりもずっと大きく、出力 1 バイトに対して 8 から 16 種類のマシン操作が必要で、ソフトウエア内で暗号化は非常に高速に動作するものとされています。独"
+"立した分析でアルゴリズムは精査され、安全であるものと判断されています。"
 
 #. tumbleweed/perl-Crypt-Rijndael/summary
 #. leap/perl-Crypt-Rijndael/summary
@@ -1179,7 +1373,7 @@ msgstr ""
 #. tumbleweed/perl-Crypt-UnixCrypt_XS/summary
 #. leap/perl-Crypt-UnixCrypt_XS/summary
 msgid "Perl XS interface for a portable traditional crypt function"
-msgstr ""
+msgstr "可搬性のある従来型 crypt 関数に対する Perl XS インターフェイス"
 
 #. tumbleweed/perl-Crypt-UnixCrypt_XS/description
 #. leap/perl-Crypt-UnixCrypt_XS/description
@@ -1188,11 +1382,13 @@ msgid ""
 "need to construct non-standard variants of _crypt_, the various building "
 "blocks used in _crypt_ are also supplied separately."
 msgstr ""
+"このモジュールは、 DES ベースの Unix _crypt_ 関数を実装しています。非標準となっている _crypt_ の異形や、 _crypt_ "
+"内で使用されている様々な構築ブロックについては、それぞれ別々に提供されています。"
 
 #. tumbleweed/perl-Curses/summary
 #. leap/perl-Curses/summary
 msgid "Terminal screen handling and optimization"
-msgstr ""
+msgstr "端末画面の処理と最適化"
 
 #. tumbleweed/perl-Curses/description
 #. leap/perl-Curses/description
@@ -1204,6 +1400,11 @@ msgid ""
 "document describes the interface itself, and assumes that you already know "
 "how your system's curses(3) library works."
 msgstr ""
+"Curses は Perl とシステム向けに提供されている curses(3) "
+"ライブラリとの間のインターフェイスです。それぞれ関数や変数、定数などの使い方について、詳しくはシステムのドキュメンテーションをお読みください。これは、"
+"それぞれの curses(3) "
+"ライブラリやオペレーティングシステムで仕様が異なることによるものです。なお、本文書ではインターフェイスそれ自身に関する説明のみで、すでに "
+"curses(3) ライブラリの動作については知っていることを前提にして作られています。"
 
 #. tumbleweed/perl-DBD-ODBC/summary
 #. tumbleweed/perl-DBD-ODBC/description
@@ -1232,7 +1433,6 @@ msgstr "DBI ドライバ内蔵型 RDBMS"
 
 #. tumbleweed/perl-DBD-SQLite/description
 #. leap/perl-DBD-SQLite/description
-#, fuzzy
 msgid ""
 "SQLite is a public domain file-based relational database engine that you can "
 "find at http://www.sqlite.org/.\n"
@@ -1268,12 +1468,12 @@ msgid ""
 "many statement attributes are not implemented or are limited by the typeless "
 "nature of the SQLite database."
 msgstr ""
-"SQLite (http://www.sqlite.org/) はパブリックドメインで公開されているファイル"
-"ベースのリレーショナルデータベースエンジンです。\n"
+"SQLite (http://www.sqlite.org/) "
+"はパブリックドメインで公開されているファイルベースのリレーショナルデータベースエンジンです。\n"
 "\n"
-"*DBD::SQLite* は SQLite 向けの Perl DBI ドライバで、配布物のすべてが含まれて"
-"いますので、このモジュールをインストールするだけで、お使いの Perl プロジェク"
-"トを高速でトランザクションにも対応する RDBMS を利用できるようになります。\n"
+"*DBD::SQLite* は SQLite 向けの Perl DBI "
+"ドライバで、配布物のすべてが含まれていますので、このモジュールをインストールするだけで、お使いの Perl "
+"プロジェクトを高速でトランザクションにも対応する RDBMS を利用できるようになります。\n"
 "\n"
 "SQLIte には下記のような機能があります:\n"
 "\n"
@@ -1283,23 +1483,21 @@ msgstr ""
 "\n"
 "* 単一のディスクファイルによる完全な DB\n"
 "\n"
-"  データベースに必要な情報すべてが単一のディスクファイルに記録されます。これ"
-"により、 DBD::CSV などよりも簡単に扱うことができるようになります。\n"
+"  データベースに必要な情報すべてが単一のディスクファイルに記録されます。これにより、 DBD::CSV などよりも簡単に扱うことができるようになります。"
+"\n"
 "\n"
 "* アトミックなコミットとロールバック\n"
 "\n"
-"  *DBD::SQLite* は小さくて軽量ですが、トランザクションに完全対応していま"
-"す！\n"
+"  *DBD::SQLite* は小さくて軽量ですが、トランザクションに完全対応しています！\n"
 "\n"
 "* 拡張可能性\n"
 "\n"
 "  ユーザ定義の集計関数または通常関数を SQL パーサに登録することができます。\n"
 "\n"
-"上記以外にも SQLite には様々な機能が用意されています。 SQL の詳細について、詳"
-"しくは上述の SQLite の Web ページをご覧ください。また、 DBI の使用方法につい"
-"ては、 DBI のマニュアルページをお読みください。 API は DBI が提供する機能それ"
-"ぞれに対応していますが、多くのステートメント属性は未実装のままであるほか、 "
-"SQLite が型を持たない仕組みであることによる制限もあることにご注意ください。"
+"上記以外にも SQLite には様々な機能が用意されています。 SQL の詳細について、詳しくは上述の SQLite の Web "
+"ページをご覧ください。また、 DBI の使用方法については、 DBI のマニュアルページをお読みください。 API は DBI "
+"が提供する機能それぞれに対応していますが、多くのステートメント属性は未実装のままであるほか、 SQLite "
+"が型を持たない仕組みであることによる制限もあることにご注意ください。"
 
 #. tumbleweed/perl-DBD-mysql/summary
 #. leap/perl-DBD-mysql/summary
@@ -1328,7 +1526,6 @@ msgid "Database independent interface for Perl"
 msgstr "Perl 向けデータベース独立インターフェイス"
 
 #. tumbleweed/perl-DBI/description
-#, fuzzy
 msgid ""
 "The DBI is a database access module for the Perl programming language. It "
 "defines a set of methods, variables, and conventions that provide a "
@@ -1346,19 +1543,16 @@ msgid ""
 "least the following perl manuals first: perlreftut, perldsc, perllol, and "
 "perlboot."
 msgstr ""
-"DBI は Perl プログラミング言語向けのデータベースアクセスモジュールです。複数"
-"のメソッドや変数、決まり事などを定義して、実際に使用するデータベースシステム"
-"とは別に一貫したインターフェイスを提供します。\n"
+"DBI は Perl プログラミング言語向けのデータベースアクセスモジュールです。複数のメソッドや変数、決まり事などを定義して、実際に使用するデータベース"
+"システムとは別に一貫したインターフェイスを提供します。\n"
 "\n"
-"DBI は単なるインターフェイスであることにご注意ください。 DBI はアプリケーショ"
-"ンと複数のデータベース _ドライバ_ モジュールとの間を仲介するものであり、実際"
-"の処理のほとんどはドライバモジュール側で行ないます。 DBI は、ドライバに対して"
-"標準インターフェイスとフレームワークを提供し、内部処理を規定しています。\n"
+"DBI は単なるインターフェイスであることにご注意ください。 DBI はアプリケーションと複数のデータベース _ドライバ_ "
+"モジュールとの間を仲介するものであり、実際の処理のほとんどはドライバモジュール側で行ないます。 DBI "
+"は、ドライバに対して標準インターフェイスとフレームワークを提供し、内部処理を規定しています。\n"
 "\n"
-"本文書では、 _参照_, _オブジェクト_, _メソッド_ などの用語をしばしば使用して"
-"います。これらの用語に詳しくない場合は、まず下記に示す Perl マニュアルをお読"
-"みになることをお勧めします: perlreftut マニュアルページ, perldsc マニュアル"
-"ページ, perllol マニュアルページ, perlboot マニュアルページ"
+"本文書では、 _参照_, _オブジェクト_, _メソッド_ などの用語をしばしば使用しています。これらの用語に詳しくない場合は、まず下記に示す Perl "
+"マニュアルをお読みになることをお勧めします: perlreftut マニュアルページ, perldsc マニュアルページ, perllol "
+"マニュアルページ, perlboot マニュアルページ"
 
 #. tumbleweed/perl-DBIx-Transaction/summary
 #. leap/perl-DBIx-Transaction/summary
@@ -1377,7 +1571,7 @@ msgstr ""
 #. tumbleweed/perl-Data-Clone/summary
 #. leap/perl-Data-Clone/summary
 msgid "Polymorphic data cloning"
-msgstr ""
+msgstr "多型データ複製"
 
 #. tumbleweed/perl-Data-Clone/description
 #. leap/perl-Data-Clone/description
@@ -1394,10 +1588,17 @@ msgid ""
 "policy manpage and the /Comparison to other cloning modules manpage for "
 "details."
 msgstr ""
+"'Data::Clone' はデータを再帰的に複製するためのモジュールです。非 bless 型の参照で動作するだけでなく、 bless 型の参照 "
+"(つまりオブジェクト) でも賢く動作します。 'clone()' がオブジェクトを検出すると、オブジェクトに 'clone' メソッドが存在する場合はその"
+"メソッドを呼び出し、存在しない場合はオブジェクトの面コピーを作成します。このような仕組みにより、多型データ複製を実現しています。\n"
+"\n"
+"CPAN "
+"にはデータを複製するためのいくつかのモジュールが提供されていますが、このモジュールはそれらのほぼすべてとは異なるポリシーでデータを複製しています。"
+"詳しくは /Cloning policy のマニュアルページ、もしくは /Comparison のマニュアルページをお読みください。"
 
 #. tumbleweed/perl-Data-Dump-Streamer/summary
 msgid "Accurately serialize a data structure as Perl code"
-msgstr ""
+msgstr "Perl コードとしてのデータ構造の正確なシリアライズ"
 
 #. tumbleweed/perl-Data-Dump-Streamer/description
 #. leap/perl-Data-Dump-Streamer/description
@@ -1422,12 +1623,23 @@ msgid ""
 "perform structural analysis, and then in depth first mode to actually "
 "produce the output, but obeying the depth relationships of the first pass."
 msgstr ""
+"スカラー値のリストや参照変数に対して、 Perl の文法を利用しその内容を出力します。参照はオブジェクトでもかまいません。各変数の内容は Perl "
+"のステートメントを最小限に利用して (通常は 1 つだけを利用して) "
+"出力します。自己参照型の構造体やクロージャ、オブジェクトに対しても、正しく出力することができます。\n"
+"\n"
+"返される値は eval を利用することで、元の参照構造に対する同一なコピーに戻すことができるようになっています。なお、場合によっては "
+"Data::Dump::Streamer がオプションで公開しているユーティリティサブルーチンを利用する必要があるかもしれません。\n"
+"\n"
+"このモジュールは、コアモジュールである Data::Dumper と考え方が非常に似ていますが、 Data::Dumper のようにメモリ内に構造を出力す"
+"るのではなく、ストリームに出力する点が大きく異なります。また、データ構造の展開も深さの展開を優先するのではなく、配列の展開を優先する点が異なります。\n"
+"\n"
+"実際に、データ構造は 2 回スキャンされますが、最初に構造体の分析を行なうために配列を優先して展開し、その後実際の出力を行なうために深さを優先して展開しま"
+"す。ただし、最初のパスで深さの関連性があった場合は、それに従います。"
 
 #. tumbleweed/perl-Data-Peek/summary
 #. leap/perl-Data-Peek/summary
-#, fuzzy
 msgid "A collection of low-level debug facilities"
-msgstr "基本的なシステムユーティリティ集"
+msgstr "低レベルなデバッグ機能集"
 
 #. tumbleweed/perl-Data-Peek/description
 #. leap/perl-Data-Peek/description
@@ -1437,12 +1649,14 @@ msgid ""
 "utilities that no other module provided yet, using the lowest level of the "
 "perl internals API as possible."
 msgstr ""
+"Data::Peek は当初 'Data::Dumper' のラッパーモジュール 'DDumper' "
+"として開発が始まりましたが、低レベルのデータに対するイントロスペクションユーティリティとして成長し、現在は他のモジュールが提供していない独自の機能を、 "
+"Perl の内部 API のできる限り低レベルな部分を利用して提供しています。"
 
 #. tumbleweed/perl-Data-Util/summary
 #. leap/perl-Data-Util/summary
-#, fuzzy
 msgid "A selection of utilities for data and data types"
-msgstr "XML 処理を行なう Perl モジュール集"
+msgstr "データやデータ型に対する様々なユーティリティ集"
 
 #. tumbleweed/perl-Data-Util/description
 #. leap/perl-Data-Util/description
@@ -1455,11 +1669,18 @@ msgid ""
 "\n"
 "There are many benchmarks in the _DIST-DIR/benchmark/_ directory."
 msgstr ""
+"このモジュールはデータやデータ型に対するユーティリティ関数を提供するモジュールで、サブルーチンやシンボルテーブルハッシュ (stash) "
+"向けの関数を提供しています。\n"
+"\n"
+"このモジュールの実装には純粋 Perl と XS の両方が用意されていて、 C "
+"コンパイラが存在していれば、このモジュールのすべての機能が高速に動作するようになっています。\n"
+"\n"
+"_DIST-DIR/benchmark/_ ディレクトリには、多数のベンチマーク結果が記録されています。"
 
 #. tumbleweed/perl-Date-Simple/summary
 #. leap/perl-Date-Simple/summary
 msgid "a simple date object"
-msgstr ""
+msgstr "シンプルな日付オブジェクト"
 
 #. tumbleweed/perl-Date-Simple/description
 #. leap/perl-Date-Simple/description
@@ -1510,13 +1731,49 @@ msgid ""
 "releases. Please let the author know if you think any of them should be "
 "public."
 msgstr ""
+"日付は時刻やタイムゾーン情報が無い場合、複雑な存在です。このモジュールは、シンプルな日付オブジェクトを作成する際に使用します。たとえば下記のような機能があ"
+"ります:\n"
+"\n"
+"* 検証機能\n"
+"\n"
+"  1999-02-29 は拒否しますが、 2000-02-29 は受け入れます。\n"
+"\n"
+"* 加減算機能\n"
+"\n"
+"  2 つの日付間の日数や N 日後の日付などを計算することができます。\n"
+"\n"
+"* 曜日計算機能\n"
+"\n"
+"  指定した日付の曜日を算出することができます。\n"
+"\n"
+"* 透過的な日付の書式化\n"
+"\n"
+"  日付をどのように表現するかを指定することができます。\n"
+"\n"
+"なお、時・分・秒の処理や、タイムゾーンの処理は用意されて *いません* 。\n"
+"\n"
+"日付は年月日を正しく設定することで入力することができます。正しくない日付を指定した場合、このモジュールは受け入れを拒否し、 undef を返します。また、"
+"月は C や Java とは異なり、 1 (1 月) から始まります。年は 4 桁を使用します。\n"
+"\n"
+"グレゴリオ暦は 9999 年までを正常に処理することができますが、現在の日時を取得する際には Perl の 'localtime' "
+"関数を使用しています。そのため、プラットフォームによっては 2038 年 1 月 18 日以降 (つまり Unix 時間である 'time_t' "
+"の桁あふれ) の日付を処理できないことがあります。\n"
+"\n"
+"また、 2 つの日付の比較や減算には標準の演算子 ('==' など) "
+"を使用することができるほか、日付オブジェクトに加算演算した場合も、日付オブジェクトを返すことができます。\n"
+"\n"
+"なお、 Date::Simple オブジェクトは値が不変であり、 '$date1' を '$date2' に代入したあと '$date1' を変更しても、"
+" '$date2' には影響を与えません。また、たとえば 'set_year' のような操作が存在しませんし、 '$date++' "
+"のような処理を行なった場合は、 '$date' に新しいオブジェクトが割り当てられます。\n"
+"\n"
+"このモジュールには様々な文書化されていない関数が含まれていますが、これらはすべてのプラットフォームで利用可能なものであるとは限りませんし、また将来的に変更"
+"されたり廃止されたりする可能性もあります。文書化されていない関数のうち、公開すべきであるとお考えのものがあれば、著者までご連絡ください。"
 
 #. tumbleweed/perl-DateTime/summary
 msgid "Date and Time Object for Perl"
 msgstr "Perl 向け日時オブジェクト"
 
 #. tumbleweed/perl-DateTime/description
-#, fuzzy
 msgid ""
 "DateTime is a class for the representation of date/time combinations, and is "
 "part of the Perl DateTime project. For details on this project please see "
@@ -1536,25 +1793,22 @@ msgid ""
 "For infinite datetimes, please see the DateTime::Infinite module."
 msgstr ""
 "DateTime は日付と時刻の組み合わせを表現するためのクラスで、 Perl の DateTime "
-"プロジェクトの一部です。このプロジェクトの詳細については、 http://datetime."
-"perl.org/ をご覧ください。 DateTime のサイトには、 \"これをやるにはどうすれ"
-"ば？\" のような質問を含む FAQ が公開されています。 FAQ は http://datetime."
-"perl.org/wiki/datetime/page/FAQ にあります。\n"
+"プロジェクトの一部です。このプロジェクトの詳細については、 http://datetime.perl.org/ をご覧ください。 DateTime "
+"のサイトには、 \"これをやるにはどうすれば？\" のような質問を含む FAQ が公開されています。 FAQ は "
+"http://datetime.perl.org/wiki/datetime/page/FAQ にあります。\n"
 "\n"
-"このクラスはグレゴリオ暦を表しているものですが、その暦が作られる (1582 年) よ"
-"りも前の日時も表現することができます。これは \"先発グレゴリオ暦\" としても知"
-"られています。この暦では、カレンダーの最初の日は西暦 1 年の最初の日となり、こ"
-"れはイエスキリストの誕生日として (間違って) 信じられてきた日にあたります。\n"
+"このクラスはグレゴリオ暦を表しているものですが、その暦が作られる (1582 年) よりも前の日時も表現することができます。これは \""
+"先発グレゴリオ暦\" としても知られています。この暦では、カレンダーの最初の日は西暦 1 年の最初の日となり、これはイエスキリストの誕生日として "
+"(間違って) 信じられてきた日にあたります。\n"
 "\n"
-"なお、この暦には西暦 0 年も規定されていますが、 \"BCE/CE\" や \"BC/AD\" を利"
-"用した日付形式とは異なるものになります。\n"
+"なお、この暦には西暦 0 年も規定されていますが、 \"BCE/CE\" や \"BC/AD\" を利用した日付形式とは異なるものになります。\n"
 "\n"
 "無制限の日付表現については DateTime::Infinite モジュールをご覧ください。"
 
 #. tumbleweed/perl-DateTime-Calendar-Mayan/summary
 #. leap/perl-DateTime-Calendar-Mayan/summary
 msgid "The Mayan Long Count, Haab, and Tzolkin calendars"
-msgstr ""
+msgstr "マヤ長期暦／ハアブ暦／ツォルキンカレンダー"
 
 #. tumbleweed/perl-DateTime-Calendar-Mayan/description
 #. leap/perl-DateTime-Calendar-Mayan/description
@@ -1566,6 +1820,12 @@ msgid ""
 "Author:\n"
 "-------     Joshua Hoblitt <jhoblitt@cpan.org>"
 msgstr ""
+"\"Calendrical Calculations The Millennium Edition\" "
+"で定義されているマヤ長期暦／ハアブ暦／ツォルキンカレンダーの実装です。詳しくは \"Frequently Asked Questions about "
+"Calendars\" をお読みください。\n"
+"\n"
+"作者:\n"
+"-------     Joshua Hoblitt <jhoblitt@cpan.org>"
 
 #. tumbleweed/perl-Devel-Caller/summary
 #. leap/perl-Devel-Caller/summary
@@ -1622,14 +1882,14 @@ msgstr ""
 #. tumbleweed/perl-Devel-CheckLib/summary
 #. leap/perl-Devel-CheckLib/summary
 msgid "Check That a Library Is Available"
-msgstr ""
+msgstr "ライブラリが利用可能かどうかのチェック"
 
 #. tumbleweed/perl-Devel-CheckLib/description
 #. leap/perl-Devel-CheckLib/description
 msgid ""
 "Devel::CheckLib is a perl module that checks whether a particular C library "
 "and its headers are available."
-msgstr ""
+msgstr "Devel::CheckLib は、特定の C ライブラリとそのヘッダが存在するかどうかをチェックするための Perl モジュールです。"
 
 #. tumbleweed/perl-Devel-CoreStack/summary
 #. leap/perl-Devel-CoreStack/summary
@@ -1649,9 +1909,8 @@ msgstr ""
 
 #. tumbleweed/perl-Devel-Cover/summary
 #. leap/perl-Devel-Cover/summary
-#, fuzzy
 msgid "Code coverage metrics for Perl"
-msgstr "Python 向けコードカバレッジ計測"
+msgstr "Perl 向けコードカバレッジ計測"
 
 #. tumbleweed/perl-Devel-Cover/description
 #. leap/perl-Devel-Cover/description
@@ -1703,11 +1962,44 @@ msgid ""
 "The Devel::Cover repository can be found at http://github.com/pjcj/Devel--"
 "Cover. This is also where problems should be reported."
 msgstr ""
+"このモジュールは、 Perl に対するコードカバレッジ測定の機能を提供します。コードカバレッジとはテストがどれだけコードをカバーしているのかを示すもので、"
+" Devel::Cover を利用すると、テストで実行されていないコード領域を検出して、どのようなテストが不足しているのかを確認することができます。コード"
+"カバレッジは、間接的ながら品質としても利用することができます。\n"
+"\n"
+"なお、本モジュールは現在も開発中ですが、安定していて、便利なカバレッジツールで必要な多数の機能を提供しています。\n"
+"\n"
+"ステートメントや分岐、条件、サブルーチン、 Pod の各カバレッジ情報が報告されます。ステートメントとサブルーチンのカバレッジは正確に表示されますが、分岐"
+"や条件のカバレッジについては正確には測定できない箇所があり、場合によっては不完全になる場合もあります。また、 Pod のカバレッジは Pod::"
+"Coverage を利用して測定されます。また、 Pod::Coverage::CountParents "
+"が利用できる場合は、そちらを利用します。その他のカバレッジについては、原人では収集することができません。\n"
+"\n"
+"_cover_ プログラムはカバレッジレポートを作成する際に使用するプログラムで、 Devel::Cover では HTML "
+"やテキストなどの様々な形式に対応し、コンパイルエラーと同じ書式でカバレッジの指摘を表示したり、 Vim "
+"エディタ内にカバレッジ情報を表示したりすることもできます。\n"
+"\n"
+"このほか、 HTML のレポート内に列を追加して、 git blame で設定された行の最終変更者を表示したりするなどの注釈機能も用意されています。 "
+"Devel::Cover にはいくつかの注釈モジュールが含まれていて、ここから独自に作成することもできます。\n"
+"\n"
+"_gcov2perl_ プログラムは gcov ファイルを 'Devel::Cover' データベースに変換する際に使用するプログラムで、これにより C "
+"言語や XS のコードカバレッジを Perl のカバレッジと共に表示することができるほか、 Devel::Cover のレポートをお使いの C "
+"言語のカバレッジデータに表示することもできます。\n"
+"\n"
+"コードカバレッジのデータは Perl op を実行回数を数える関数で置き換えることで収集しています。これらのデータは B コンパイラモジュールを利用して元"
+"のコードにマッピングされます。また、ステートメントのプロファイル収集機能も用意されていますが、これらに依存すべきではありません。正しいプロファイル機能を利"
+"用したい場合は、 Devel::NYTProf をお使いください。以前のバージョンの Devel::Cover では Perl の runops 関数を置"
+"き換えることで収集を行なっていましたが、本バージョンでもこのように置き換えて収集することもできます。ただし、ほとんどテストが行なわれておらず、近いうちに削"
+"除される予定です。こちらはおそらく使用する必要がないでしょう。\n"
+"\n"
+"本モジュールに関して議論を行ないたい場合に、もっとも適切なメーリングリストは perl-qa です。詳しくは "
+"http://lists.perl.org/list/perl-qa.html をご覧ください。\n"
+"\n"
+"Devel::Cover のリポジトリは http://github.com/pjcj/Devel--Cover "
+"にあります。問題の報告もこちらから行なってください。"
 
 #. tumbleweed/perl-Devel-Declare/summary
 #. leap/perl-Devel-Declare/summary
 msgid "Adding keywords to perl, in perl"
-msgstr ""
+msgstr "Perl に対して、および Perl 内でのキーワードの追加"
 
 #. tumbleweed/perl-Devel-Declare/description
 #. leap/perl-Devel-Declare/description
@@ -1717,11 +2009,15 @@ msgid ""
 "\n"
 "This document describes how to create a simple declarator."
 msgstr ""
+"Devel::Declare はローカルで Perl "
+"のパーサを乗っ取ることのできるデコレータと呼ばれるサブルーチンをインストールすることで、新しい文法の作成を行なうことができるものです。\n"
+"\n"
+"この文書では、シンプルなデコレータについて作成方法を説明しています。"
 
 #. tumbleweed/perl-Devel-Leak/summary
 #. leap/perl-Devel-Leak/summary
 msgid "Utility for looking for perl objects that are not reclaimed"
-msgstr ""
+msgstr "reclaim されていない Perl オブジェクトを探すためのユーティリティ"
 
 #. tumbleweed/perl-Devel-LexAlias/summary
 #. leap/perl-Devel-LexAlias/summary
@@ -1767,7 +2063,7 @@ msgstr ""
 #. tumbleweed/perl-Devel-NYTProf/summary
 #. leap/perl-Devel-NYTProf/summary
 msgid "Powerful fast feature-rich Perl source code profiler"
-msgstr ""
+msgstr "パワフルで高速、かつ機能の豊富な Perl ソースコードプロファイラ"
 
 #. tumbleweed/perl-Devel-NYTProf/description
 #. leap/perl-Devel-NYTProf/description
@@ -1815,11 +2111,52 @@ msgid ""
 "NYTProf is effectively two profilers in one: a statement profiler, and a "
 "subroutine profiler."
 msgstr ""
+"Devel::NYTProf はパワフルで機能の豊富な Perl ソースコードプロファイラです。\n"
+"\n"
+"  * より詳しい情報をつかむための行ごとのステートメントプロファイル機能\n"
+"\n"
+"  * 概要をつかむためのサブルーチンごとのステートメントプロファイル機能\n"
+"\n"
+"  * Perl 内部が遅いかどうかを確認するための opcode ごとのプロファイル機能\n"
+"\n"
+"  * ブロックごとのステートメントプロファイル機能 (一般にプロファイラが実施するものです)\n"
+"\n"
+"  * 呼び出しからの復帰時に消費された時間の正確な積算\n"
+"\n"
+"  * サブルーチンの包括的／排他的タイミング計算\n"
+"\n"
+"  * 呼び出し位置ごとのサブルーチン時間計算 (パワフルとされる機能)\n"
+"\n"
+"  * コンパイル時、実行時、終了時における各プロファイルが可能\n"
+"\n"
+"  * 効果的なプロファイリングのための独創的な技法\n"
+"\n"
+"  * 対応するシステムではマイクロ秒未満 (100 ナノ秒単位) の精度による測定に対応\n"
+"\n"
+"  * 非常に高速 - Perl ではステートメントやサブルーチンのプロファイルがもっとも高速に動作します\n"
+"\n"
+"  * fork を実施するアプリケーションでも問題なく動作します - 性能面のコストもありません\n"
+"\n"
+"  * プロファイル処理そのものや I/O によるノイズの除去に対応\n"
+"\n"
+"  * プロファイル先のプログラムでもプロファイルの開始や停止に対応\n"
+"\n"
+"  * 豊かな注釈機能とクロスリンクされた HTML レポートを生成\n"
+"\n"
+"  * 安定した結果をもたらすための文字列の eval など、ソースコードを正確に捉える機能\n"
+"\n"
+"  * mod_perl でも利用可能 - httpd.conf に設定を追加します\n"
+"\n"
+"  * 広範囲に対応するテストスイートを同梱\n"
+"\n"
+"  * 非常に広範囲のコードベースでテスト済み\n"
+"\n"
+"NYTProf は 2 種類のプロファイラ (ステートメントプロファイラおよびサブルーチンプロファイラ) を 1 つにまとめたものです。"
 
 #. tumbleweed/perl-Devel-PPPort/summary
 #. leap/perl-Devel-PPPort/summary
 msgid "Perl/Pollution/Portability"
-msgstr ""
+msgstr "Perl/Pollution/Portability"
 
 #. tumbleweed/perl-Devel-PPPort/description
 #. leap/perl-Devel-PPPort/description
@@ -1842,11 +2179,23 @@ msgid ""
 "\n"
 "This module is used by 'h2xs' to write the file _ppport.h_."
 msgstr ""
+"Perl の API は時代を追うごとに変化していき、新しい機能や関数が追加され、柔軟性が高まって C ネームスペース環境によるインパクト (悪影響) "
+"も減ってきています。このモジュールによって書かれたヘッダファイル (一般に _ppport.h_) は、新しい Perl API 機能を古いバージョンの "
+"Perl にもたらそうという試みで、古いリリースで動作するかどうかを心配することなく、ユーザに利便性を提供しようとする試みです。\n"
+"\n"
+"'Devel::PPPort' には 2 つの関数 ('WriteFile', 'GetFileContents') が含まれています。  "
+"'WriteFile' は _ppport.h_ C "
+"ヘッダファイルに書き込むだけのために用意されたものです。このファイルにはマクロ集のほか、明示的に指定していれば、古いバージョンの Perl を利用して "
+"XS モジュールを構築できる機能が含まれています。現時点では Perl のバージョン 5.003 から 5.20 までに対応しています。\n"
+"\n"
+"'GetFileContents' では、ファイルに出力せず、その内容を取得する際に使用します。\n"
+"\n"
+"このモジュールは、 _ppport.h_ に書き込むにあたって 'h2xs' が使用しています。"
 
 #. tumbleweed/perl-Devel-PatchPerl/summary
 #. leap/perl-Devel-PatchPerl/summary
 msgid "Patch perl source a la Devel::PPPort's buildperl.pl"
-msgstr ""
+msgstr "Perl のソースコードに対するパッチ: Devel::PPorts の buildperl.pl"
 
 #. tumbleweed/perl-Devel-PatchPerl/description
 #. leap/perl-Devel-PatchPerl/description
@@ -1857,11 +2206,15 @@ msgid ""
 "It does not build perls, it merely provides an interface to the source "
 "patching functionality."
 msgstr ""
+"Devel::PatchPerl は Devel::PPPorts の 'buildperl.pl' "
+"内に含まれているコードパッチをモジュール化したものです。\n"
+"\n"
+"Perl をコンパイルするわけではなく、ソースコードのパッチ機能に対してインターフェイスを提供します。"
 
 #. tumbleweed/perl-Device-SerialPort/summary
 #. leap/perl-Device-SerialPort/summary
 msgid "Linux/POSIX emulation of Win32::SerialPort functions"
-msgstr ""
+msgstr "Win32::SerialPort の機能の Linux/POSIX エミュレーション"
 
 #. tumbleweed/perl-Device-SerialPort/description
 #. leap/perl-Device-SerialPort/description
@@ -1869,11 +2222,12 @@ msgid ""
 "This module provides an object-based user interface essentially identical to "
 "the one provided by the Win32::SerialPort module."
 msgstr ""
+"このモジュールは、 Win32::SerialPort モジュールが提供するものと本質的に同一のオブジェクトベースのユーザインターフェイスを提供します。"
 
 #. tumbleweed/perl-Digest-CRC/summary
 #. leap/perl-Digest-CRC/summary
 msgid "Generic CRC functions"
-msgstr ""
+msgstr "汎用 CRC 関数"
 
 #. tumbleweed/perl-Digest-CRC/description
 #. leap/perl-Digest-CRC/description
@@ -1882,16 +2236,16 @@ msgid ""
 "wrapper functions with the correct parameters for CRC-CCITT, CRC-16, CRC-32 "
 "and CRC-64, as well as the CRC used in OpenPGP's ASCII-armored checksum."
 msgstr ""
+"*Digest::CRC* モジュールは全ての種類に対応した CRC 計算モジュールです。 CRC-CCITT, CRC-16, CRC-32, CRC-"
+"64 に対して、適切なパラメータを提供するラッパー関数のほか、 OpenPGP の ASCII アーマーチェックサムにも対応しています。"
 
 #. tumbleweed/perl-Digest-JHash/summary
 #. leap/perl-Digest-JHash/summary
-#, fuzzy
 msgid "Perl extension for 32 bit Jenkins Hashing Algorithm"
-msgstr "LALR パーサを生成して使用するための Perl 拡張"
+msgstr "32 ビット Jenkins ハッシュアルゴリズムに対する Perl の拡張"
 
 #. tumbleweed/perl-Digest-JHash/description
 #. leap/perl-Digest-JHash/description
-#, fuzzy
 msgid ""
 "The 'Digest::JHash' module allows you to use the fast JHash hashing "
 "algorithm developed by Bob Jenkins from within Perl programs. The algorithm "
@@ -1902,15 +2256,13 @@ msgid ""
 "\n"
 "See http://burtleburtle.net/bob/hash/doobs.html for more information."
 msgstr ""
-"'Digest::MD4' モジュールは、 RSA Data Security Inc. が提供する MD4 メッセージ"
-"ダイジェストアルゴリズムに対して、 Perl プログラムからアクセスする手段を提供"
-"します。このアルゴリズムは任意の長さの入力メッセージを受け付け、その結果を"
-"128 ビットの \"指紋\" または \"メッセージダイジェスト\" として出力します。\n"
+"'Digest::JHash' モジュールは、 Bob Jenkins 氏が開発したモジュールで、 Perl プログラム内で高速な JHash "
+"ハッシュアルゴリズムを利用することのできる仕組みです。任意の長さのメッセージを入力として受け付け、入力された値に対して 32 ビットの \""
+"メッセージダイジェスト\" を計算し、それを unsigned long integer で出力します。\n"
 "\n"
-"'Digest::MD4' モジュールは使いやすい手続き型のインターフェイスを提供している"
-"ほか、オブジェクト指向のインターフェイスを利用して、任意の長さのメッセージを"
-"直接読み込んだり、ファイルを直接読み込んだりすることができる仕組みも用意され"
-"ています。"
+"言い換えれば、 MD5 の低カロリー版ともいえます。\n"
+"\n"
+"詳しくは http://burtleburtle.net/bob/hash/doobs.html をお読みください。"
 
 #. tumbleweed/perl-Digest-MD4/summary
 #. leap/perl-Digest-MD4/summary
@@ -1942,7 +2294,7 @@ msgstr ""
 #. tumbleweed/perl-Digest-MD5/summary
 #. leap/perl-Digest-MD5/summary
 msgid "Perl interface to the MD5 Algorithm"
-msgstr ""
+msgstr "MD5 アルゴリズムに対する Perl インターフェイス"
 
 #. tumbleweed/perl-Digest-MD5/description
 #. leap/perl-Digest-MD5/description
@@ -1962,6 +2314,16 @@ msgid ""
 "well as an object oriented interface that can handle messages of arbitrary "
 "length and which can read files directly."
 msgstr ""
+"'Digest::MD5' モジュールは、 Perl のプログラム内から RSA Data Security Inc. の MD5 "
+"メッセージダイジェストアルゴリズムを利用するための仕組みです。任意の長さのメッセージを入力として受け付け、入力された値に対して 128 ビットの \""
+"フィンガープリント\" (指紋) もしくは \"メッセージダイジェスト\" を計算して出力します。\n"
+"\n"
+"なお、 MD5 アルゴリズムは以前に考えられていたよりも強固な仕組みではなくなったことに注意してください。 2005 年の時点で、"
+"異なるメッセージから同じ MD5 ダイジェストを生成できることが判明しています。もちろん現時点でも容易に生成できてしまうようなものではありませんが、メッセ"
+"ージが唯一のものであると識別する必要があるアプリケーションは、より強固なアルゴリズムに移行したほうが賢明です。\n"
+"\n"
+"'Digest::MD5' モジュールは、使いやすいプロシージャ型のインターフェイスのほか、任意の長さのメッセージを処理したり、ファイルから直接読み込んだ"
+"りするためのオブジェクト志向のインターフェイスも提供しています。"
 
 #. tumbleweed/perl-Digest-SHA1/summary
 #. leap/perl-Digest-SHA1/summary
@@ -1995,7 +2357,7 @@ msgstr ""
 #. tumbleweed/perl-Encode-EUCJPASCII/summary
 #. leap/perl-Encode-EUCJPASCII/summary
 msgid "An eucJP-open mapping"
-msgstr ""
+msgstr "eucJP-open マッピング"
 
 #. tumbleweed/perl-Encode-EUCJPASCII/description
 #. leap/perl-Encode-EUCJPASCII/description
@@ -2014,6 +2376,18 @@ msgid ""
 "*Note*: 'x-iso2022jp-ascii' is unofficial encoding name: It had never been "
 "registered by any standards bodies."
 msgstr ""
+"このモジュールは eucJP-ascii と呼ばれる eucJP-open マッピングのうちの 1 "
+"つと、その派生系を提供します。下記のエンコーディングに対応しています。\n"
+"\n"
+"  Canonical    Alias                           Description   "
+"--------------------------------------------------------------   eucJP-"
+"ascii                                  eucJP-ascii                qr/\\"
+"beuc-?jp(-?open)?(-?19970715)?-?ascii$/i   x-iso2022jp-"
+"ascii                            7-bit counterpart                qr/\\"
+"b(x-)?iso-?2022-?jp-?ascii$/i   "
+"--------------------------------------------------------------\n"
+"\n"
+"*注意*: 'x-iso2022jp-ascii' は非公式のエンコーディング名です。標準化機関に登録されているものではありません。"
 
 #. tumbleweed/perl-Encode-HanExtra/summary
 #. leap/perl-Encode-HanExtra/summary
@@ -2057,7 +2431,7 @@ msgstr ""
 #. tumbleweed/perl-Event/summary
 #. leap/perl-Event/summary
 msgid "Event loop processing"
-msgstr ""
+msgstr "イベントループ処理"
 
 #. tumbleweed/perl-Event/description
 #. leap/perl-Event/description
@@ -2109,12 +2483,39 @@ msgid ""
 "events are generated on a schedule that depends on the operation of the "
 "event loop."
 msgstr ""
+"警告: Marc Lehmann 氏が Perl におけるイベントループ機能を引き継いで開発する可能性があります。詳しくは libev ライブラリと "
+"EV Perl モジュールをご覧ください (2009年8月25日)\n"
+"\n"
+"Event モジュールは様々なタイプのイベントを監視し、イベント発生時には必要なコールバックを呼び出す仕組みを提供します。イベントの処理を遅らせることで、"
+"優先順位を元に実行したり、実行時に安全にコールバックを呼び出したりする機能を提供します。\n"
+"\n"
+"一般に、イベントは *watcher* (監視するもの) が検出し、それを (Event モジュールで言うところの) *イベント* "
+"に組み替えます。以降の説明では、前者のイベントを \"ソースイベント\" 、後者のイベントを \"ターゲットイベント\" "
+"と称します。プロセスに対するシグナルなど、ソースイベントが発生した場合は、まずそれが監視対象であるかどうかを判断します。 watcher "
+"が監視している対象のものであれば、 watcher は関連するターゲットイベントを生成します。ターゲットイベントは watcher だけが生成します。"
+"複数の watcher が同じソースイベントを監視していた場合は、それぞれでターゲットイベントを生成します。そのため、ソースイベントは watcher "
+"が監視対象にしているかどうかに従って、 0 個以上のターゲットイベントに変換されることになります。\n"
+"\n"
+"ターゲットイベントは watcher の判断によって優先順位順に並べ替えられます。優先順位が同じであれば、それは FIFO (早いもの順) "
+"に並べられます。このように並べられた (\"ペンディング状態の\") イベントは、場合によっては処理前にキャンセルされる場合もあります。並べられた後は "
+"watcher 側で指定したとおり、それぞれのコールバック関数 (または特定のオブジェクトやクラスに結びつけられたメソッド) を呼び出します。\n"
+"\n"
+"watcher は作成されると自律的に動作します。イベントのユーザ側が参照を保持する必要もありません。しかしながら、参照を保持しておくことで、 "
+"watcher の振る舞いの多くを修正することができるようになります。また、 watcher "
+"は有効／無効の状態を切り替えることができます。無効化された場合は、ターゲットイベントは生成されません。\n"
+"\n"
+"ソースイベントの種類によっては、即時にターゲットイベントが作成されないものもあります。たとえばシグナルなどの場合、最初はそれを数えるだけの処理が行なわれ、"
+"その後対応する処理が実行されます。そのため、シグナルのイベントは順序通りには処理されない場合があるほか、不用意に処理してしまうと、正しい状態を認識できない"
+"場合もあります。これを正しく認識するには、ソースイベントの発生は実際のシグナルを示すものではなく、シグナルを数えて処理していることに留意する必要があります"
+"。\n"
+"\n"
+"また、必要であれば組み替えを強制的に実施することもできます。その他のイベントのスケジュールの作成については自明ではありません。これは特に watcher "
+"がイベントではなく条件を監視しているような場合に当てはまります。また場合によってはターゲットイベントの生成はイベントループ内の操作に従って生成されます。"
 
 #. tumbleweed/perl-ExtUtils-CppGuess/summary
 #. leap/perl-ExtUtils-CppGuess/summary
-#, fuzzy
 msgid "Guess C++ Compiler and Flags"
-msgstr "GNU C コンパイラおよびサポートファイル"
+msgstr "C++ コンパイラとフラグの推測"
 
 #. tumbleweed/perl-ExtUtils-CppGuess/description
 #. leap/perl-ExtUtils-CppGuess/description
@@ -2125,6 +2526,11 @@ msgid ""
 "It can generate the necessary options to the the Module::Build manpage "
 "constructor or to the ExtUtils::MakeMaker manpage's 'WriteMakefile' function."
 msgstr ""
+"'ExtUtils::CppGuess' はシステムの C++ コンパイラを推測し、 Perl をコンパイルしたときの C "
+"コンパイラと互換性があるかどうかを確認します。\n"
+"\n"
+"Module::Build コンストラクタや ExtUtils::MakeMaker の 'WriteMakefile' "
+"関数で、必要なオプションを生成するのに必要となります。"
 
 #. tumbleweed/perl-ExtUtils-F77/summary
 #. leap/perl-ExtUtils-F77/summary
@@ -2147,7 +2553,7 @@ msgstr ""
 #. tumbleweed/perl-ExtUtils-XSpp/summary
 #. leap/perl-ExtUtils-XSpp/summary
 msgid "XS for C++"
-msgstr ""
+msgstr "C++ 向け XS"
 
 #. tumbleweed/perl-ExtUtils-XSpp/description
 #. leap/perl-ExtUtils-XSpp/description
@@ -2159,6 +2565,10 @@ msgid ""
 "\n"
 "  %{   XS++ won't interpret this   %}"
 msgstr ""
+"XS++ のディレクティブやクラスの定義には見えないようなものを XS に渡すことができます。 XS++ に対して、 XS++ "
+"のディレクティブやクラス定義に見えないものを無視させたい場合は、下記のようにしてブロックを括ってください:\n"
+"\n"
+"  %{   XS++ won't interpret this   %}"
 
 #. tumbleweed/perl-File-Basename-Object/summary
 #. leap/perl-File-Basename-Object/summary
@@ -2177,7 +2587,7 @@ msgstr ""
 #. tumbleweed/perl-File-Comments/summary
 #. leap/perl-File-Comments/summary
 msgid "Recognizes file formats and extracts format-specific comments"
-msgstr ""
+msgstr "ファイル形式の認識と形式固有のコメントの抽出"
 
 #. tumbleweed/perl-File-Comments/description
 #. leap/perl-File-Comments/description
@@ -2204,11 +2614,27 @@ msgid ""
 "WARNING: THIS MODULE IS UNDER DEVELOPMENT, QUALITY IS ALPHA. IF YOU FIND "
 "BUGS, OR WANT TO CONTRIBUTE PLUGINS, PLEASE SEND THEM MY WAY."
 msgstr ""
+"File::Comments は指定したファイルの種類を推測し、その種類で用いられるコメント箇所を判断して抽出し、それらをチャンクの配列への参照として返し"
+"ます。このほか、ファイルからすべてのコメントを抽出することもできます。\n"
+"\n"
+"現時点では Perl スクリプトのほか、 C/C++ 言語のプログラムや Java, Makefile, JavaScript, Pytho, PHP "
+"にそれぞれ対応しています。\n"
+"\n"
+"File::Comments はプラグイン形式の仕組みを採用しているため、新しいコメント書式を追加するのも用意です。新しい形式に対応させたい場合は、新しい"
+"プラグインモジュールをインストールする必要があります。なお、 File::Comments "
+"のコードベース自身を変更する必要はありません。新しいプラグインは自動的に検出され、使用されるためです。\n"
+"\n"
+"File::Comments ではファイルの種類のみを判断することもできます。 File::MMagic や File::Type "
+"よりもさらに柔軟な仕組みです。 File::Comments 内でのファイルタイプは、一般にファイル名の接尾辞 (*.c, *.pl など) "
+"をベースにして行なわれます。接尾辞がない場合や、接尾辞だけでは不十分な場合 (同じ接尾辞で複数のプラグインが登録されているような場合) "
+"は、ファイルの中身を読み込んで候補を絞り込み、最終的に判断に至ります。\n"
+"\n"
+"警告: このモジュールは現在開発中のもので、アルファ版の状態です。バグを発見した場合や、プラグインを貢献したい場合は、指定の方法でお送りください。"
 
 #. tumbleweed/perl-File-FcntlLock/summary
 #. leap/perl-File-FcntlLock/summary
 msgid "File locking with L<fcntl(2)>"
-msgstr ""
+msgstr "L<fcntl(2)> を利用したファイルロック (施錠)"
 
 #. tumbleweed/perl-File-FcntlLock/description
 #. leap/perl-File-FcntlLock/description
@@ -2242,18 +2668,38 @@ msgid ""
 "are some minor differences in the functionality and the behaviour on passing "
 "the method for locking invalid arguments to be described below."
 msgstr ""
+"Perl におけるファイルロック (施錠) は、 'flock' "
+"関数を利用して行ないますが、不幸にもこの関数はファイル全体をロックするだけの機能しか持ち合わせていないばかりか、しばしば flock(2) "
+"システム関数を利用して実装されている仕組みであることから、それに伴う欠点も存在します (特にリモートのファイルシステムをマウントしているような場合など) "
+"。また、少しだけではありますが fcntl(2) と動作も異なります。\n"
+"\n"
+"このモジュールを利用することで、 fcntl(2) を利用してファイルロックを行なうことができるようになります (そのため、 fcntl(2) "
+"システムコールが存在するシステムのみで動作します) 。なお、ファイル (またはファイルの一部) をロックする前に、 fcntl(2) "
+"に渡されるバイナリ形式の情報を含む flock "
+"の構造体を疑似するオブジェクトを作成し、関連するプロパティを設定しなければなりません。作成および設定した後は、 lock() "
+"メソッドでロックを設定または解除することができるほか、ロックされているかどうかやロックしているプロセスなども判断することができます。\n"
+"\n"
+"File::FcntlLock (もしくはその別名 File::FcntlLock::XS) では共有ライブラリを使用しているため、"
+"インストール時のビルド処理や実際の呼び出しでは fcntl(2) "
+"システム関数を直接呼び出すことができます。このような仕組みでは不便になってしまうような環境であれば、 File::FcntlLock::Pure や "
+"File::FcntlLock::Inline などの代替品を使用することもできます。いずれのオブジェクトとも、代わりに Perl の 'fcntl' "
+"関数を呼び出して、 Perl コード内で構造を組み立てたりそれを読み込んだりしています。このような仕組みにより、場合によってはシステムに依存する "
+"flock バイナリ構造体を、 C 言語で記述したプログラム経由で判断しなければならない場合があります。 FIle::FcntlLock::Pure "
+"では、その処理はパッケージのインストール時に行ない、 File::FcntlLock::Inline はパッケージを読み込んだ ('use') "
+"際に行ないます。そのため、 File::FcntlLock::Inline を利用するには、動作する C コンパイラが存在していなければなりません。それ以"
+"外にも機能面で少し異なる面があるほか、不正なパラメータを指定してメソッドを実行した際の動作についても、違いが存在します。"
 
 #. tumbleweed/perl-File-Next/summary
 #. tumbleweed/perl-File-Next/description
 #. leap/perl-File-Next/summary
 #. leap/perl-File-Next/description
 msgid "File-finding iterator"
-msgstr ""
+msgstr "ファイル検出列挙器"
 
 #. tumbleweed/perl-File-ReadBackwards/summary
 #. leap/perl-File-ReadBackwards/summary
 msgid "Read a file backwards by lines"
-msgstr ""
+msgstr "逆方向にファイルを 1 行ずつ読み込むモジュール"
 
 #. tumbleweed/perl-File-ReadBackwards/description
 #. leap/perl-File-ReadBackwards/description
@@ -2266,11 +2712,17 @@ msgid ""
 "assumed to be plain text and have a line ending appropriate to the OS. But "
 "you can set the input record separator string on a per file basis."
 msgstr ""
+"このモジュールは、ファイルを逆順に 1 行ずつ読み込む処理を行ないます。使いやすく、メモリ面での効率化が図られ、高速に動作します。また、オブジェクト形式の"
+"利用のほか、タイハンドルを利用したインターフェイスにも対応しています。\n"
+"\n"
+"このモジュールはログファイルやその他のテキストを処理する用途で作られたもので、もっとも新しい行から順に出力したいような場合に便利な仕組みです。既定ではファ"
+"イルが純粋なテキストファイルであり、 OS "
+"ごとの既定の改行コードで区切られているものとして扱われます。なお、必要であればファイルごとに区切り文字を指定して読み込むこともできます。"
 
 #. tumbleweed/perl-File-Sync/summary
 #. leap/perl-File-Sync/summary
 msgid "Perl access to fsync() and sync() function calls"
-msgstr ""
+msgstr "Perl からの fsync(), sync() 関数呼び出し"
 
 #. tumbleweed/perl-File-Sync/description
 #. leap/perl-File-Sync/description
@@ -2287,6 +2739,15 @@ msgid ""
 "This module does *not* export any methods by default, but fsync() is made "
 "available as a method of the _FileHandle_ and _IO::Handle_ classes."
 msgstr ""
+"fsync() 関数は唯一のパラメータとして Perl のファイルハンドルを取り、 fileno() を介して C 関数 fsync() を呼び出します。"
+"失敗した場合は _undef_ が返り、成功した場合は _true_ が帰ります。\n"
+"\n"
+"fsync_fd() 関数は fsync() の内部で使用されている関数で、ファイルディスクリプタを唯一のパラメータとして設定します。\n"
+"\n"
+"sync() 関数は C 関数 sync() と同一です。\n"
+"\n"
+"このモジュールは、既定ではどのメソッドも公開して *いません* が、 _FileHandle_ や _IO::Handle_ クラスのメソッドとして "
+"fsync() を利用することは可能です。"
 
 #. tumbleweed/perl-File-Type/summary
 #. leap/perl-File-Type/summary
@@ -2304,9 +2765,8 @@ msgstr ""
 
 #. tumbleweed/perl-Filesys-Df/summary
 #. leap/perl-Filesys-Df/summary
-#, fuzzy
 msgid "Perl extension for filesystem disk space information"
-msgstr "可搬性のあるデーモンを作成するための Perl 拡張"
+msgstr "ファイルシステムのディスク領域情報を利用するための Perl 拡張"
 
 #. tumbleweed/perl-Filesys-Df/description
 #. leap/perl-Filesys-Df/description
@@ -2319,6 +2779,11 @@ msgid ""
 "\n"
 "Authors:     Ian Guthrie <IGuthrie@aol.com>"
 msgstr ""
+"このモジュールは、ファイルシステム上でのディスク領域情報を取得することができます。 Unix のみに対応しています。 Unix と Windows "
+"の両方で動作するモジュールをご希望の場合は、 Filesys::DfPortable をお使いください。 FileSys::Df "
+"では、ファイルハンドルをパラメータとして使用することができる点が異なります。\n"
+"\n"
+"Authors:     Ian Guthrie <IGuthrie@aol.com>"
 
 #. tumbleweed/perl-Font-AFM/summary
 #. leap/perl-Font-AFM/summary
@@ -2339,7 +2804,7 @@ msgstr ""
 #. tumbleweed/perl-Font-FreeType/summary
 #. leap/perl-Font-FreeType/summary
 msgid "Read Font Files and Render Glyphs From Perl Using Freetype2"
-msgstr ""
+msgstr "Freetype2 を利用して Perl からフォントファイルを読み込んだり、グリフを描画したりするモジュール"
 
 #. tumbleweed/perl-Font-FreeType/description
 #. leap/perl-Font-FreeType/description
@@ -2358,11 +2823,20 @@ msgid ""
 "you know more than I do (which isn't much) about fonts and the FreeType2 "
 "library."
 msgstr ""
+"このモジュールは、 Perl のプログラムからフォントファイルの情報を便利に読み込む機能を提供します。すべてのフォントへのアクセスは、"
+"多数の形式に対応している FreeType2 "
+"ライブラリを介して行ないます。このほか、高品質なヒンティングやアンチエイリアス処理を利用して、文字を画像として描画することもできるほか、"
+"メトリック情報の取得や TrueType のようなスケーラブル形式で輪郭を抽出することもできます。\n"
+"\n"
+"警告: このモジュールは現時点では 'ベータ' 版です。安定版がリリースされるまでに 1 回もしくは複数回のリリースが行なわれる予定です。また、 API "
+"の仕様も変更されて互換性が失われることもありますが、大幅には変更されない予定です。また、返される値が間違っていたり、正しくスケールされていない場合もありま"
+"す。現在作業中の項目について、詳しくは _TODO_ ファイルをお読みください。フォントや FreeType2 "
+"ライブラリに詳しい方で、手伝っていだたける方の貢献をお待ちしております。"
 
 #. tumbleweed/perl-FreezeThaw/summary
 #. leap/perl-FreezeThaw/summary
 msgid "Converting Perl structures to strings and back"
-msgstr ""
+msgstr "Perl の構造体と文字列との間を相互変換するモジュール"
 
 #. tumbleweed/perl-FreezeThaw/description
 #. leap/perl-FreezeThaw/description
@@ -2375,6 +2849,11 @@ msgid ""
 "\n"
 "  Author:\tIlya Zakharevich"
 msgstr ""
+"データと文字列形式との間を相互に変換するためのモジュールです。ストレージへの保存やストレージからの読み出しに便利な仕組みです。\n"
+"\n"
+"オブジェクトや循環リスト、同一参照の繰り返し出現にも対応しています。なお、 stringify オペレータのオーバーロードには対応していません。\n"
+"\n"
+"  Author:\tIlya Zakharevich"
 
 #. tumbleweed/perl-GD/summary
 #. leap/perl-GD/summary
@@ -2411,9 +2890,8 @@ msgstr ""
 
 #. tumbleweed/perl-GStreamer1/summary
 #. leap/perl-GStreamer1/summary
-#, fuzzy
 msgid "Perl interface to the GStreamer library"
-msgstr "uulib ライブラリへの Perl インターフェイス"
+msgstr "GStreamer ライブラリへの Perl インターフェイス"
 
 #. tumbleweed/perl-GStreamer1/description
 #. leap/perl-GStreamer1/description
@@ -2424,11 +2902,14 @@ msgid ""
 "streaming to complex audio (mixing) and video (non-linear editing) "
 "processing."
 msgstr ""
+"このパッケージは、 GStreamer 1.x に対する Perl のバインディングを作成します。 GStreamer "
+"はメディア処理コンポーネントのフレームワークで、シンプルな OGG Vorbis オーディオ／ビデオストリーミングから、複雑なオーディオ (ミキシング) "
+"処理およびビデオ (ノンリニア編集) 処理に対応したライブラリです。"
 
 #. tumbleweed/perl-Getopt-ArgvFile/summary
 #. leap/perl-Getopt-ArgvFile/summary
 msgid "Perl Module to interpolate Script Options from Files into @ARGV"
-msgstr ""
+msgstr "ファイルから @ARGV に対してスクリプトのオプションを補完する Perl モジュール"
 
 #. tumbleweed/perl-Getopt-ArgvFile/description
 #. leap/perl-Getopt-ArgvFile/description
@@ -2444,6 +2925,13 @@ msgid ""
 "handling, e.g. by a Getopt::xxx module. Getopt::ArgvFile does not perform "
 "any option handling itself, it only prepares the array @ARGV."
 msgstr ""
+"このモジュールは、指定されたファイルの内容を元にして @ARGV 内のオプションを補完する仕組みです。これにより、通常のコマンドラインからの読み込みの代わ"
+"りに、もしくはコマンドラインからの読み込みに加えて、ファイルの内容をオプションとして取り込むことができるようになります。\n"
+"\n"
+"それ以外にも、このマニュアルに記述されている機能のほとんどに対して、 @ARGV を処理する代わりに配列を利用することもできます。\n"
+"\n"
+"@ARGV を補完したあとは、 Getopt::xxx モジュールなどで通常通りオプションの処理を行なうことができます。なお、 Getopt::"
+"ArgvFile 自身はオプションを処理せず、 @ARGV 配列の準備のみを行ないます。"
 
 #. tumbleweed/perl-Glib/summary
 #. leap/perl-Glib/summary
@@ -2468,9 +2956,8 @@ msgstr ""
 
 #. tumbleweed/perl-Glib-Object-Introspection/summary
 #. leap/perl-Glib-Object-Introspection/summary
-#, fuzzy
 msgid "GObject Introspection bindings for Perl"
-msgstr "GObject 内部調査基本ライブラリ"
+msgstr "Perl 向け GObject イントロスペクションバインディング"
 
 #. tumbleweed/perl-Glib-Object-Introspection/description
 #. leap/perl-Glib-Object-Introspection/description
@@ -2480,12 +2967,14 @@ msgid ""
 "dynamically create Perl bindings for a wide variety of libraries. Examples "
 "include GTK+, WebKit, libsoup and many more."
 msgstr ""
+"このパッケージは GObject イントロスペクション向けの Perl バインディングです。 Glib::Object::Introspection は "
+"gobject-introspection と libffi プロジェクトを利用して、様々なライブラリに対する Perl "
+"のバインディングを動的に作成します。たとえば GTK+, WebKit, libsoup などがあります。"
 
 #. tumbleweed/perl-Gnome2/summary
 #. leap/perl-Gnome2/summary
-#, fuzzy
 msgid "Perl interface to the 2.x series of the GNOME libraries"
-msgstr "GTK+ ライブラリ 2.x シリーズ向け Perl インターフェイス"
+msgstr "GNOME ライブラリのバージョン 2.x シリーズに対する Perl インターフェイス"
 
 #. tumbleweed/perl-Gnome2/description
 #. leap/perl-Gnome2/description
@@ -2510,16 +2999,26 @@ msgid ""
 "To discuss this module, ask questions and flame/praise the authors, join gtk-"
 "perl-list@gnome.org at lists.gnome.org."
 msgstr ""
+"このモジュールは C 言語の API に非常に似通った構造になるように作られています。そのため、一般的なリファレンスをお求めの場合は、下記をご覧ください:"
+"\n"
+"\n"
+"  http://developer.gnome.org/libgnome\n"
+"  http://developer.gnome.org/libgnomeui\n"
+"\n"
+"これに加えて、自動で生成された API ドキュメンテーションも用意されています: Gnome2::index マニュアルページ (3pm).\n"
+"\n"
+"このモジュールでは、 Gtk2::api マニュアルページ(3pm) で説明されているマッピングにも対応しています。\n"
+"\n"
+"このモジュールに関する議論や質問、著者に対するクレームや賞賛は gtk-perl-list@gnome.org (lists.gnome.org) "
+"にお送りください。"
 
 #. tumbleweed/perl-Gnome2-Canvas/summary
 #. leap/perl-Gnome2-Canvas/summary
-#, fuzzy
 msgid "Gnome2-Canvas Perl module"
-msgstr "gtk2 Perl モジュール"
+msgstr "Gnome2-Canvas Perl モジュール"
 
 #. tumbleweed/perl-Gnome2-Canvas/description
 #. leap/perl-Gnome2-Canvas/description
-#, fuzzy
 msgid ""
 "The Gnome2::Canvas module allows a perl developer to use the GnomeCanvas "
 "widget with Gtk2-Perl.  Find out more about Gnome+ at http://www.gnome.org.\n"
@@ -2534,14 +3033,23 @@ msgid ""
 "Also have a look at the gtk2-perl website and sourceforge project page, "
 "http://gtk2-perl.sourceforge.net"
 msgstr ""
-"gtk2-perl の Web サイトと sourceforce プロジェクト http://gtk2-perl."
-"sourceforge.net もご覧ください"
+"Gnome2::Canvas モジュールは、 Perl の開発者に対して、 Gtk2-Perl 経由での GnomeCanvas "
+"ウイジェットの機能を提供するためのものです。 Gnome+ について、詳しくは http://www.gnome.org をお読みください。\n"
+"\n"
+"本モジュールの依存先である Gtk2 モジュールと同様に、 Gnome2::Canvas でも、 Perl の体裁を守りながら "
+"libgnomecanvas-2.0 の C 言語 API にできる限り近くなるように作られています。そのため、正式なドキュメンテーションとして C "
+"言語の API リファレンスをお使いいただくことができます。\n"
+"\n"
+"gtk2-perl について議論したい場合、および質問やクレーム、賞賛を送りたい場合は、 gtk-perl-list@gnome.org "
+"(lists.gnome.org) のメーリングリストにご参加ください。\n"
+"\n"
+"なお、 gtk2-perl について、詳しくは gtk2-perl の Web サイト、もしくは sourceforge のプロジェクトページ "
+"(http://gtk2-perl.sourceforge.net) をお読みください。"
 
 #. tumbleweed/perl-Gnome2-GConf/summary
 #. leap/perl-Gnome2-GConf/summary
-#, fuzzy
 msgid "Perl wrappers for the GConf configuration engine"
-msgstr "設定ファイルを変更するためのライブラリ"
+msgstr "GConf 設定エンジンに対する Perl ラッパー"
 
 #. tumbleweed/perl-Gnome2-GConf/description
 #. leap/perl-Gnome2-GConf/description
@@ -2551,12 +3059,14 @@ msgid ""
 "freeing you from the casting and memory management in C, yet remaining very "
 "close in spirit to original API."
 msgstr ""
+"Gnome ウイジェットセットのバージョン 2.x 系に対する Perl バインディングです。このモジュールを利用することで、 Perl "
+"からオブジェクト指向の方法でグラフィカルなユーザインターフェイスを作成できるようになるほか、 C "
+"言語のキャスト処理やメモリの管理などの手間を省くことができます。また、オリジナルの API の考え方を非常に強く継承しています。"
 
 #. tumbleweed/perl-Gnome2-VFS/summary
 #. leap/perl-Gnome2-VFS/summary
-#, fuzzy
 msgid "Perl interface to the 2.x series of the GNOME VFS library"
-msgstr "GTK+ ライブラリ 2.x シリーズ向け Perl インターフェイス"
+msgstr "GNOME VFS ライブラリのバージョン 2.x に対する Perl インターフェイス"
 
 #. tumbleweed/perl-Gnome2-VFS/description
 #. leap/perl-Gnome2-VFS/description
@@ -2576,12 +3086,22 @@ msgid ""
 "To discuss this module, ask questions and flame/praise the authors, join gtk-"
 "perl-list@gnome.org at lists.gnome.org."
 msgstr ""
+"このモジュールは C 言語の API に非常に似通った構造になっていますので、下記のドキュメンテーションを正式のものとしてお使いいただくことができます:"
+"\n"
+"\n"
+" L<http://developer.gnome.org/doc/API/2.0/gnome-vfs-2.0/>\n"
+"\n"
+"これに加えて、自動で生成された API ドキュメンテーションもご利用いただくことができます: Gnome2::VFS::index\n"
+"\n"
+"Gtk2::api マニュアルページで説明されているマッピングについても、本モジュールでお使いいただくことができます。\n"
+"\n"
+"このモジュールに関する議論や質問、著者へのクレームや賞賛については、  gtk-perl-list@gnome.org (lists.gnome.org)"
+" のメーリングリストにお送りください。"
 
 #. tumbleweed/perl-Gnome2-Wnck/summary
 #. leap/perl-Gnome2-Wnck/summary
-#, fuzzy
 msgid "Perl interface to the Window Navigator Construction Kit"
-msgstr "ウインドウナビゲータ構築キット -- ツール"
+msgstr "Window Navigator Construction Kit に対する Perl インターフェイス"
 
 #. tumbleweed/perl-Gnome2-Wnck/description
 #. leap/perl-Gnome2-Wnck/description
@@ -2594,17 +3114,22 @@ msgid ""
 "\n"
 "  perldoc Gnome2::Wnck::index"
 msgstr ""
+"このモジュールは、 Perl から Window Navigator Construction Kit ライブラリ (略して libwnck) "
+"を利用できるようにするための仕組みです。\n"
+"\n"
+"自動生成された API ドキュメンテーションについては、下記をお読みください:\n"
+"\n"
+" perldoc Gnome2::Wnck::index"
 
 #. tumbleweed/perl-Goo-Canvas/summary
 #. tumbleweed/perl-Goo-Canvas/description
-#, fuzzy
 msgid "Goo::Canvas Perl module"
-msgstr "gtk2 Perl モジュール"
+msgstr "Goo::Canvas Perl モジュール"
 
 #. tumbleweed/perl-Gtk2/summary
 #. leap/perl-Gtk2/summary
 msgid "Perl interface to the 2.x series of the GTK+ library"
-msgstr "GTK+ ライブラリ 2.x シリーズ向け Perl インターフェイス"
+msgstr "GTK+ ライブラリのバージョン 2.x に対する Perl インターフェイス"
 
 #. tumbleweed/perl-Gtk2/description
 #. leap/perl-Gtk2/description
@@ -2623,14 +3148,23 @@ msgid ""
 "Also have a look at the gtk2-perl website and sourceforge project page, "
 "http://gtk2-perl.sourceforge.net"
 msgstr ""
-"gtk2-perl の Web サイトと sourceforce プロジェクト http://gtk2-perl."
-"sourceforge.net もご覧ください"
+"Gtk2 モジュールは、 Perl の開発者に対して GTK+ グラフィカルユーザインターフェイスライブラリを提供する仕組みです。 Gtk+ について、"
+"詳しくは http://gtk.org/ をお読みください。\n"
+"\n"
+"Gtk アプリケーションを開発したい場合は、言語にかかわらず GTK+ リファレンスマニュアルをお読みになるのが適切でしょう。 Perl "
+"のバインディングは C 言語の API に非常に似通った構造になるように作られていて、 C "
+"言語のリファレンス文書を正式なものとしてお使いいただくことができます。\n"
+"\n"
+"このモジュールに関する議論や質問、著者へのクレームや賞賛については、  gtk-perl-list@gnome.org (lists.gnome.org)"
+" のメーリングリストにお送りください。\n"
+"\n"
+"また、 gtk2-perl の Web サイトや sourceforge のプロジェクトページ "
+"(http://gtk2-perl.sourceforge.net) もご覧ください。"
 
 #. tumbleweed/perl-Gtk2-AppIndicator/summary
 #. leap/perl-Gtk2-AppIndicator/summary
-#, fuzzy
 msgid "Perl interface to the libappindicator"
-msgstr "uulib ライブラリへの Perl インターフェイス"
+msgstr "libappindicator に対する Perl インターフェイス"
 
 #. tumbleweed/perl-Gtk2-AppIndicator/description
 #. leap/perl-Gtk2-AppIndicator/description
@@ -2639,11 +3173,13 @@ msgid ""
 "a library which provides a tray icon in desktop environments via "
 "StatusNotifierItem implementation."
 msgstr ""
+"このパッケージは、 libappindicator に対する Perl バインディングを提供します。 libappindicator は、 "
+"StatusNotifierItem の実装を通してデスクトップ環境内にトレイアイコンを設置する機能を提供します。"
 
 #. tumbleweed/perl-Gtk2-ImageView/summary
 #. leap/perl-Gtk2-ImageView/summary
 msgid "Perl bindings to the GtkImageView image viewer widget"
-msgstr ""
+msgstr "GtkImageView イメージビューアウイジェットに対する Perl バインディング"
 
 #. tumbleweed/perl-Gtk2-ImageView/description
 #. leap/perl-Gtk2-ImageView/description
@@ -2655,30 +3191,33 @@ msgid ""
 "To discuss Gtk2::ImageView or gtk2-perl, ask questions and flame/praise the "
 "authors, join gtk-perl-list@gnome.org at lists.gnome.org."
 msgstr ""
+"Gtk2::ImageView は Perl の開発者に対して、 GtkImageView イメージビューアウイジェットの機能を提供します。 "
+"GtkImageView について、詳しくは http://trac.bjourne.webfactional.com/ をお読みください。\n"
+"\n"
+"Gtk2::ImageView や gtk2-perl に関する議論、著者への質問やクレーム、賞賛については、 gtk-perl-list@"
+"gnome.org (lists.gnome.org) のメーリングリストにお送りください。"
 
 #. tumbleweed/perl-Gtk2-Unique/summary
 #. leap/perl-Gtk2-Unique/summary
-#, fuzzy
 msgid "Perl bindings for the C library \"libunique\""
-msgstr "libsolv ライブラリ向け Perl バインディング"
+msgstr "\"libunique\" C ライブラリ向け Perl バインディング"
 
 #. tumbleweed/perl-Gtk2-Unique/description
 #. leap/perl-Gtk2-Unique/description
-#, fuzzy
 msgid ""
 "Perl bindings for the C library \"libunique\" that provides a mechanism for "
 "writing single instance applications. If you launch a single instance "
 "application twice, the second instance will either just quit or will send a "
 "message to the running instance."
 msgstr ""
-"unique は単一インスタンスのアプリケーションを記述するためのライブラリです。単"
-"一インスタンスのアプリケーションを二重に起動すると、 2 つめのインスタンスは単"
-"に終了するか、起動済みのインスタンスにメッセージを送信します。"
+"\"libunique\" は単一インスタンスのアプリケーションを記述するためのライブラリで、このバインディングはそのライブラリに対する Perl "
+"のバインディングです。単一インスタンスのアプリケーションを二重に起動すると、 2 "
+"つめのインスタンスは単に終了するか、起動済みのインスタンスにメッセージを送信します。"
 
 #. tumbleweed/perl-Guard/summary
 #. leap/perl-Guard/summary
 msgid "Safe Cleanup Blocks"
-msgstr ""
+msgstr "安全なクリーンアップブロック"
 
 #. tumbleweed/perl-Guard/description
 #. leap/perl-Guard/description
@@ -2691,6 +3230,12 @@ msgid ""
 "objects, which execute a given code block when destroyed, and scoped guards, "
 "which are tied to the scope exit."
 msgstr ""
+"このモジュールは \"guard\" (ガード) と呼ばれる仕組みを実装するものです。 \"guard\" "
+"とは、必要になったときにクリーンアップされるよう、何らかのもの (一般的にはオブジェクト) がリソースを \"保護\" するものです。\n"
+"\n"
+"具体的に言うと、このモジュールには 2 種類のガードが用意されています: 1 "
+"つはガードオブジェクトと呼ばれ、オブジェクトの破壊時に指定したブロックを実行する機能で、もう 1 "
+"つはスコープガードと呼ばれ、スコープの終了時に結びつけられる仕組みです。"
 
 #. tumbleweed/perl-HTML-Clean/summary
 #. leap/perl-HTML-Clean/summary
@@ -2728,14 +3273,14 @@ msgstr ""
 #. tumbleweed/perl-HTML-Encoding/summary
 #. leap/perl-HTML-Encoding/summary
 msgid "Determine the encoding of HTML/XML/XHTML documents"
-msgstr ""
+msgstr "HTML/XML/XHTML ドキュメントのエンコーディングの判別"
 
 #. tumbleweed/perl-HTML-Encoding/description
 #. leap/perl-HTML-Encoding/description
 msgid ""
 "HTML::Encoding helps to determine the encoding of HTML and XML/XHTML "
 "documents."
-msgstr ""
+msgstr "HTML::Encoding は、 HTML, XML, XHTML の各文書に対して、そのエンコーディングを判別を支援する機能を提供します。"
 
 #. tumbleweed/perl-HTML-Parser/summary
 #. leap/perl-HTML-Parser/summary
@@ -2848,7 +3393,7 @@ msgstr ""
 #. tumbleweed/perl-HTTP-Parser-XS/summary
 #. leap/perl-HTTP-Parser-XS/summary
 msgid "a fast, primitive HTTP request parser"
-msgstr ""
+msgstr "高速で原始的な HTTP リクエストパーサー"
 
 #. tumbleweed/perl-HTTP-Parser-XS/description
 #. leap/perl-HTTP-Parser-XS/description
@@ -2864,6 +3409,14 @@ msgid ""
 "implementation is supported, so you can use this module on compiler-less "
 "environments."
 msgstr ""
+"HTTP::Parser::XS は高速で原始的な HTTP リクエスト／レスポンスパーサーです。\n"
+"\n"
+"リクエストパーサーは、同期型もしくはイベント駆動型の HTTP サーバを作成する際に利用することができます。\n"
+"\n"
+"レスポンスパーサーは HTTP クライアントを作成する際に利用することができます。\n"
+"\n"
+"なお、ディストリビューション名が '::XS' で終わっていますが、　*Perl のみでの* "
+"実装にも対応しています。そのため、このモジュールをコンパイラ無しの環境で利用することも可能です。"
 
 #. tumbleweed/perl-HTTPS-Daemon/summary
 #. leap/perl-HTTPS-Daemon/summary
@@ -2886,7 +3439,7 @@ msgstr ""
 #. tumbleweed/perl-IO-Interface/summary
 #. leap/perl-IO-Interface/summary
 msgid "Perl extension for access to network card configuration information"
-msgstr ""
+msgstr "ネットワークカードの設定情報にアクセスするための Perl 拡張"
 
 #. tumbleweed/perl-IO-Interface/description
 #. leap/perl-IO-Interface/description
@@ -2899,11 +3452,16 @@ msgid ""
 "THIS API IS DEPRECATED. Please see IO::Interface::Simple for the preferred "
 "way to get and set interface configuration information."
 msgstr ""
+"IO::Interface は IO::Socket "
+"オブジェクトにメソッドを追加するもので、お使いのシステムにあるネットワークインターフェイスに対して、情報を取得したり変更したりする機能を提供します。\n"
+"\n"
+"この API は廃止される予定です。インターフェイスの設定情報の取得と設定について、好ましい方法は IO::Interface::Simple "
+"をご覧ください。"
 
 #. tumbleweed/perl-IO-Socket-Multicast/summary
 #. leap/perl-IO-Socket-Multicast/summary
 msgid "Send and receive multicast messages"
-msgstr ""
+msgstr "マルチキャストメッセージの送信と受信"
 
 #. tumbleweed/perl-IO-Socket-Multicast/description
 #. leap/perl-IO-Socket-Multicast/description
@@ -3002,9 +3560,8 @@ msgstr ""
 
 #. tumbleweed/perl-IPC-ShareLite/summary
 #. leap/perl-IPC-ShareLite/summary
-#, fuzzy
 msgid "Lightweight interface to shared memory"
-msgstr "System V 共有メモリに対する PHP 関数です。"
+msgstr "共有メモリに対する軽量なインターフェイス"
 
 #. tumbleweed/perl-IPC-ShareLite/description
 #. leap/perl-IPC-ShareLite/description
@@ -3061,11 +3618,54 @@ msgid ""
 "\n"
 "\t$share->unlock;"
 msgstr ""
+"IPC::ShareLite "
+"は、プロセス間で効率的なデータ通信を行なうのに必要な、共有メモリに対するシンプルなインターフェイスを提供します。このモジュールを利用するには、"
+"お使いのオペレーティングシステムが SysV IPC (共有メモリとセマフォ) に対応しなければなりません。\n"
+"\n"
+"IPC::ShareLite は、 SysV IPC の共有メモリおよびセマフォの機能に対して抽象的な手段を提供します。これにより、任意のデータに対するス"
+"トレージとして利用し、必要に応じて共有メモリのセグメントを取得または開放します。データの取得と保存はアトミックに行なわれるほか、"
+"高レベルな同期のためにロック (施錠) 機能も利用することができます。\n"
+"\n"
+"このモジュールは、様々な点で IPC::Shareable に似ています。しかしながら、 IPC::ShareLite "
+"はタイインターフェイスを提供しないほか、変数の (自動的な) 保存にも対応せず、速度の追求のために C 言語で書かれています。\n"
+"\n"
+"IPC::ShareLite オブジェクトを作成するには、下記のようにして実行します:\n"
+"\n"
+"    my $share = IPC::ShareLite->new(         -key     => 1971,         -"
+"create  => 'yes',         -destroy => 'no'     ) or die $!;\n"
+"\n"
+"インスタンスを作成したあとは、 store() メソッドで共有メモリにデータを書き込むことができます:\n"
+"\n"
+"\t$share->store(\"This is going in shared memory\");\n"
+"\n"
+"データを取得したい場合は、 fetch() メソッドを呼び出します:\n"
+"\n"
+"\tmy $str = $share->fetch();\n"
+"\n"
+"store(), fetch() の各メソッドはアトミックに動作します; メモリに対して読み書きの処理を行なうにあたっては、以前の処理が終わるまで待たされ"
+"ます。ただし、場合によっては複数の処理を同時並行に処理させたいような場合もありますので、この場合はアドバイザリロックのメソッドをご利用いただけます。\n"
+"\n"
+"また、排他ロックを取得したい場合は、 lock() メソッドを呼び出します:\n"
+"\n"
+"\t$share->lock();\n"
+"\n"
+"なお、 lock() メソッドは flock() "
+"システムコールで利用することのできるフラグを指定することもできます。たとえば共有ロックを設定したい場合は、下記のようにして実行します:\n"
+"\n"
+"\t$share->lock( LOCK_SH );\n"
+"\n"
+"非ブロック型のロックを設定したい場合は、下記のようにします:\n"
+"\n"
+"\t$share->lock( LOCK_EX|LOCK_NB );\n"
+"\n"
+"ロックを解除するには、 unlock() メソッドを利用します:\n"
+"\n"
+"\t$share->unlock;"
 
 #. tumbleweed/perl-JSON-DWIW/summary
 #. leap/perl-JSON-DWIW/summary
 msgid "JSON converter that Does What I Want"
-msgstr ""
+msgstr "期待通りのことを実行する JSON コンバータ"
 
 #. tumbleweed/perl-JSON-DWIW/description
 #. leap/perl-JSON-DWIW/description
@@ -3087,6 +3687,16 @@ msgid ""
 "This module can be downloaded from the http://www.cpan.org/authors/id/D/DO/"
 "DOWENS/ manpage."
 msgstr ""
+"他の JSON モジュールをお使いの場合、必要な処理を実施するのに、あらかじめいくつかのパラメータを設定する必要があります。このモジュールは、 Perl "
+"内で JSON を利用する際、既定で必要な処理を行なうのに必要なことを実施します。このモジュールは、ベンチマークによると JSON.pm や JSON::"
+"Syck よりも高速にエンコード／デコードすることができることが示されています。\n"
+"\n"
+"このモジュールは、 Perl 内の任意のデータ (正しく Unicode でエンコードされていることが前提です) を、例外を投げることなく JSON "
+"形式に変換する機能を提供します。出力は厳密な JSON の形式で出力されますが、入力はオプションを設定する必要もなく、柔軟に処理されます。\n"
+"\n"
+"直近のバージョンにおける変更点の一覧は、 JSON::DWIW::Changes のマニュアルページをご覧ください。\n"
+"\n"
+"また、モジュールのダウンロードは http://www.cpan.org/authors/id/D/DO/DOWENS/ から行なってください。"
 
 #. tumbleweed/perl-JSON-XS/summary
 #. leap/perl-JSON-XS/summary
@@ -3142,7 +3752,7 @@ msgstr ""
 #. tumbleweed/perl-JavaScript-Minifier-XS/summary
 #. leap/perl-JavaScript-Minifier-XS/summary
 msgid "XS based JavaScript minifier"
-msgstr ""
+msgstr "XS ベースの JavaScript 最小化機構"
 
 #. tumbleweed/perl-JavaScript-Minifier-XS/description
 #. leap/perl-JavaScript-Minifier-XS/description
@@ -3154,11 +3764,16 @@ msgid ""
 "'JavaScript::Minifier::XS' is similar in function to 'JavaScript::Minifier', "
 "but is substantially faster as its written in XS and not just pure Perl."
 msgstr ""
+"'JavaScript::Minifier::XS' は JavaScript をできる限り小さくまとめるための仕組みです。 JavaScript "
+"ファイルから、その動作に影響を与えることなく、不要なホワイトスペースを削除したり、コメント部分を削除したりすることができます。\n"
+"\n"
+"'JavaScript::Minifier::XS' は 'JavaScript::Minifier' に似た機能を提供する仕組みですが、純粋な "
+"Perl コードだけでなく XS で記述されているために高速に動作します。"
 
 #. tumbleweed/perl-Lexical-SealRequireHints/summary
 #. leap/perl-Lexical-SealRequireHints/summary
 msgid "Prevent Leakage of Lexical Hints"
-msgstr ""
+msgstr "レキシカルヒントによる漏洩の保護"
 
 #. tumbleweed/perl-Lexical-SealRequireHints/description
 #. leap/perl-Lexical-SealRequireHints/description
@@ -3203,11 +3818,38 @@ msgid ""
 "leakage bug, pure Perl hooking of 'require' breaks the use of 'require' "
 "without an explicit parameter (implicitly using '$_')."
 msgstr ""
+"このモジュールは、 Perl に古くから存在するバグである '%^H' (レキシカルヒント) 変数の処理に対して、回避策を提供するものです。 "
+"あるバグを利用することで、一方のファイル内にある語彙状態を、 'require' または 'use' "
+"を利用することで、他方のファイルに漏洩してしまいます。\n"
+"\n"
+"もう 1 つのバグは、語彙状態 (上述のバグを修正すれば、通常 '%^H' は空白になります) を 'utf8.pm' "
+"から外に漏らしてしまうというもので、 Unicode の正規表現マッチングで自動的にこのモジュールを読み込んでしまうと、正規表現のマッチング処理時を行なっ"
+"ただけで、どのソースであっても情報漏洩が発生してしまいます。これは [perl #73174] としてバグ報告されているもので、 Perl 5.8.7 "
+"から 5.11.5 までのバージョンで発生し、 5.12.0 で解決したものです。\n"
+"\n"
+"いずれのバグとも、影響のある Perl バージョンを使用している環境では、 '%^H' をレキシカルスコープ用に使用しているモジュールの危険性を高めてしま"
+"います。それらのモジュールをどうしても使用する必要がある場合は、回避策を実施する必要がありますが、このモジュールは 'require' のほか、 "
+"'use' や Unicode 正規表現を利用する際の暗黙の 'require' の動作をグローバルに変更することで、 "
+"バグを発生させないようにしています。\n"
+"\n"
+"このモジュールが提供する回避策は、'import' メソッドを呼び出した際に最初に効果を発揮します。一般に、この処理は 'use' "
+"ステートメント経由で実行されます。この処理は、 'require' や 'use' "
+"のステートメントが実行されてからでないと有効にならないため、できる限り早いうちに実行すべきものです。 'use' ステートメントや 'require' "
+"ステートメントの場合、それは即時に 1 "
+"度だけ実行されるため、早いうちに実行しておけば、脆弱なレキシカル変数による影響を小さくすることができるためです。なお、遅延アクションである "
+"'require' ステートメントを利用すると、より問題を引き起こす可能性が高くなるため、回避策はできる限り早く読み込まれるべきです。極論を言うと、 "
+"Perl のプログラム内で最初の処理として実行されるべきです。このモジュールを複数回起動しても問題はありません。回避策は一度だけ実行され、適用されます。"
+"\n"
+"\n"
+"このモジュールは XS で実装されていますが、 XS モジュールを処理できない環境に合わせて、純粋な Perl 版も用意されています。 XS 版のほうが "
+"'require' 処理を書き換えるのに都合よく動作します。なお、純粋 Perl 版は Perl のバージョンによっては全く動作しない場合もあります。"
+"この場合は XS 版をお使いください。ヒント漏洩バグが発生するすべてのバージョンでは、純粋 Perl 版を利用して 'require' をフックすると、"
+"明示的なパラメータ無しで 'require' を実行しても、正しく動作しません (暗黙で '$_' を使用します) 。"
 
 #. tumbleweed/perl-Lingua-EN-Tagger/summary
 #. leap/perl-Lingua-EN-Tagger/summary
 msgid "Part-of-speech tagger for English natural language processing"
-msgstr ""
+msgstr "英語の自然言語処理向けパートスピーチタグ作成"
 
 #. tumbleweed/perl-Lingua-EN-Tagger/description
 #. leap/perl-Lingua-EN-Tagger/description
@@ -3222,12 +3864,16 @@ msgid ""
 "The tagger also extracts as many nouns and noun phrases as it can, using a "
 "set of regular expressions."
 msgstr ""
+"このモジュールは、言語資料を学習して利用する確率ベースのタグ生成器です。辞書を参照して、確率値をもとにして POS タグを英語テキストに割り当てます。タグ"
+"は分岐の確率をベースにして設定されるもので、前のタグが次のタグに対して影響を及ぼす仕組みです。未知の単語は単語の形態素をもとに分類したりすることができるほ"
+"か、名詞やスピーチの他の場所との関連づけによって分類することができます。\n"
+"\n"
+"このタグ生成器は多数の名詞や名詞句を、正規表現のセットを利用してできるだけ多く抽出することもできます。"
 
 #. tumbleweed/perl-Lingua-Stem-Snowball/summary
 #. leap/perl-Lingua-Stem-Snowball/summary
-#, fuzzy
 msgid "Perl interface to Snowball stemmers"
-msgstr "ドメインネームシステムに対する Perl インターフェイス"
+msgstr "Snowball stemmers に対する Perl インターフェイス"
 
 #. tumbleweed/perl-Lingua-Stem-Snowball/description
 #. leap/perl-Lingua-Stem-Snowball/description
@@ -3237,6 +3883,9 @@ msgid ""
 "is deployed as part of a search application, allowing searches for a given "
 "term to match documents which contain other forms of that term."
 msgstr ""
+"ステミングとはそれぞれの単語を 1 つの根幹となる形式に変換する処理のことを言います。たとえば \"horse\", \"horses\", \""
+"horsing\" は、いずれも \"hors\" という根幹に変換することができます。より一般的に言うと、ステミングは検索アプリケーションの一部として利"
+"用されているもので、指定した単語とその変化形を一括で検索できるようにする仕組みです。"
 
 #. tumbleweed/perl-Linux-Inotify2/summary
 #. leap/perl-Linux-Inotify2/summary
@@ -3255,7 +3904,7 @@ msgstr ""
 #. tumbleweed/perl-Linux-Pid/summary
 #. leap/perl-Linux-Pid/summary
 msgid "Get the native PID and the PPID on Linux"
-msgstr ""
+msgstr "Linux でのネイティブ PID および PPID の取得"
 
 #. tumbleweed/perl-Linux-Pid/description
 #. leap/perl-Linux-Pid/description
@@ -3270,6 +3919,14 @@ msgid ""
 "have the same behaviour). This module forces perl to call the underlying C "
 "functions 'getpid()' and 'getppid()'."
 msgstr ""
+"一般に、内蔵変数である '$$' や内蔵関数 'getppid()' を利用すれば、 PID や PPID を取得できてしまいます ("
+"同等の機能を提供する 'POSIX::getpid()' や 'POSIX::getppid()' 関数については例外とします) "
+"が、なぜこのようなモジュールが必要なのでしょうか？\n"
+"\n"
+"事実、 Linux でマルチスレッド型のプログラムを作成する場合には、このモジュールが便利です。 Linux スレッドモデルを採用する Linux C "
+"ライブラリでは、各スレッドで PID と PPID が異なる値に設定されます (一方、 NPTL のスレッドでは動作が異なります) "
+"。このモジュールを利用することで、 Perl に対して C 関数である 'getpid()' および 'getppid()' "
+"の使用を強制することができます。"
 
 #. tumbleweed/perl-List-MoreUtils/summary
 #. tumbleweed/perl-List-SomeUtils/summary
@@ -3280,7 +3937,6 @@ msgstr "List::Util では提供されていない機能の提供"
 
 #. tumbleweed/perl-List-MoreUtils/description
 #. leap/perl-List-MoreUtils/description
-#, fuzzy
 msgid ""
 "*List::MoreUtils* provides some trivial but commonly needed functionality on "
 "lists which is not going to go into List::Util.\n"
@@ -3291,19 +3947,17 @@ msgid ""
 "implementation of these functions only serves as a fallback in case the C "
 "portions of this module couldn't be compiled on this machine."
 msgstr ""
-"*List::MoreUtils* は、リストに対する機能のうち List::Util には取り入れられな"
-"かった、細かくも一般的に必要となるだろう機能が含まれています。\n"
+"*List::MoreUtils* は、リストに対する機能のうち List::Util "
+"には取り入れられなかった、細かくも一般的に必要となるだろう機能が含まれています。\n"
 "\n"
-"下記に示す全ての機能は、複数行の Perl コードだけで実装可能なものですが、これ"
-"らのモジュールが提供する機能は、全てを C 言語で実装した場合と同じくらい比較的"
-"高速に動作します。これらの機能の純粋な Perl 版は、このモジュールが対象のマシ"
-"ンでコンパイルできなかった場合のフォールバックとしてのみ動作します。"
+"下記に示す全ての機能は、複数行の Perl コードだけで実装可能なものですが、これらのモジュールが提供する機能は、全てを C "
+"言語で実装した場合と同じくらい比較的高速に動作します。これらの機能の純粋な Perl "
+"版は、このモジュールが対象のマシンでコンパイルできなかった場合のフォールバックとしてのみ動作します。"
 
 #. tumbleweed/perl-List-SomeUtils-XS/summary
 #. leap/perl-List-SomeUtils-XS/summary
-#, fuzzy
 msgid "XS implementation for List::SomeUtils"
-msgstr "Perl 向け log4j 実装"
+msgstr "List::SomeUtils 向け XS 実装"
 
 #. tumbleweed/perl-List-SomeUtils-XS/description
 #. leap/perl-List-SomeUtils-XS/description
@@ -3320,11 +3974,20 @@ msgid ""
 "distribution's metadata. However, without LSU already installed this module "
 "cannot function."
 msgstr ""
+"ここにはユーザに対する説明は書かれていません。 API についての詳細は List::SomeUtils をお読みください。\n"
+"\n"
+"このモジュールは直接インストールすべきものではありません。 List::SomeUtils "
+"をインストールすると、お使いのシステムにコンパイラが存在するかどうかを確認します。コンパイラが存在すると、このモジュールに対して依存関係が設定され、"
+"インストールしてより高速な XS 実装を利用するようになります。\n"
+"\n"
+"この配布物は List::SomeUtils "
+"を必要としていますが、これは依存関係の循環を避けるための措置であり、この配布物のメタデータから明示的に除外されるものです。しかしながら、 LSU "
+"無しにはこのモジュールは動作しません。"
 
 #. tumbleweed/perl-Locale-Msgfmt/summary
 #. leap/perl-Locale-Msgfmt/summary
 msgid "Compile .po files to .mo files"
-msgstr ""
+msgstr ".po ファイルから .mo ファイルへのコンパイル"
 
 #. tumbleweed/perl-Locale-Msgfmt/description
 #. leap/perl-Locale-Msgfmt/description
@@ -3332,11 +3995,13 @@ msgid ""
 "This module does the same thing as msgfmt from GNU gettext-tools, except "
 "this is pure Perl."
 msgstr ""
+"このモジュールは、 GNU gettext-tools の msgfmt と同じ処理を行ないます。ただし、このモジュールは純粋に Perl "
+"だけで作られています。"
 
 #. tumbleweed/perl-LockFile-Simple/summary
 #. leap/perl-LockFile-Simple/summary
 msgid "Simple file locking scheme"
-msgstr ""
+msgstr "シンプルなファイルロック (施錠) スキーム"
 
 #. tumbleweed/perl-LockFile-Simple/description
 #. leap/perl-LockFile-Simple/description
@@ -3351,11 +4016,19 @@ msgid ""
 "every 5 seconds for 30 times, or delete stale locks (files that are deemed "
 "too ancient) before attempting the locking."
 msgstr ""
+"このシンプルなロック (施錠) スキームは、 'flock()' や 'lockf()' "
+"のようなファイルロックのためのシステムコールをベースにしたものではなく、 'write()' "
+"システムコールのアトミック性など、基本的なファイルプリミティブやプロパティに依存して作られています。ただし、 NFS "
+"経由のファイルシステムなど、競合状態によって発生する問題を回避する仕組みではありません。使用されているアルゴリズムについて、詳しくは "
+"*ALGORITHM* セクションをお読みください。\n"
+"\n"
+"なお、ロック操作を 5 秒間隔で 30 回試行するようにカスタマイズすることもできるほか、失効したロック (すでに使われていないものと判断できるロック) "
+"を解除してから、ロックし直すこともできます。"
 
 #. tumbleweed/perl-Log-Dispatch-FileRotate/summary
 #. leap/perl-Log-Dispatch-FileRotate/summary
 msgid "Log to files that archive/rotate themselves"
-msgstr ""
+msgstr "アーカイブ処理やローテート処理を行なうログ機能"
 
 #. tumbleweed/perl-Log-Dispatch-FileRotate/description
 #. leap/perl-Log-Dispatch-FileRotate/description
@@ -3370,6 +4043,14 @@ msgid ""
 "behave the same as Log::Dispatch::File. So see its man page (perldoc Log::"
 "Dispatch::File)"
 msgstr ""
+"このモジュールは Log::Dispatch:* "
+"システム内のファイルに対して動作するシンプルなオブジェクトで、様々な条件で自動的にローテート処理を行なわせることができます。基本的には "
+"Log::Dispatch::File のラッパーに機能を追加したものです。このような目的のため、下記のようなパラメータは Log::Dispatch::"
+"File のものと同じように動作します:\n"
+"\n"
+"         名前, 最小レベル, ファイル名など\n"
+"\n"
+"詳しくはマニュアルページ (perldoc Log::Dispatch::File) をお読みください。"
 
 #. tumbleweed/perl-MLDBM-Sync/summary
 #. leap/perl-MLDBM-Sync/summary
@@ -3405,7 +4086,7 @@ msgstr ""
 #. tumbleweed/perl-Math-BigInt-GMP/summary
 #. leap/perl-Math-BigInt-GMP/summary
 msgid "Use the GMP library for Math::BigInt routines"
-msgstr ""
+msgstr "Math::BigInt ルーチンでの GMP ライブラリの使用"
 
 #. tumbleweed/perl-Math-BigInt-GMP/description
 #. leap/perl-Math-BigInt-GMP/description
@@ -3419,11 +4100,18 @@ msgid ""
 "This package contains a replacement (drop-in) module for Math::BigInt's "
 "core, Math::BigInt::Calc.pm."
 msgstr ""
+"Math::BigInt::GMP は Math::BigInt::Calc に対する代替ライブラリで、 XS を利用して Math::BigInt::"
+"Calc の機能を再実装したものです。下記のように実行することで、本モジュールを利用することができます:\n"
+"\n"
+"    use Math::BigInt lib => 'GMP';\n"
+"\n"
+"このパッケージには、 Math::BigInt の中枢部分に対する (完全互換の) 代替モジュール Math::BigInt::Calc.pm "
+"が含まれています。"
 
 #. tumbleweed/perl-Math-Calc-Units/summary
 #. leap/perl-Math-Calc-Units/summary
 msgid "Human-readable unit-aware calculator"
-msgstr ""
+msgstr "人間にとってわかりやすい形式の単位に対応した計算機"
 
 #. tumbleweed/perl-Math-Calc-Units/description
 #. leap/perl-Math-Calc-Units/description
@@ -4425,9 +5113,8 @@ msgstr "警告のためのメソッドを確認するための Perl 拡張"
 
 #. tumbleweed/perl-Proc-ProcessTable/description
 #. leap/perl-Proc-ProcessTable/description
-#, fuzzy
 msgid "Perl interface to the unix process table."
-msgstr "uulib ライブラリへの Perl インターフェイス"
+msgstr "Unix プロセステーブルに対する Perl インターフェイスです。"
 
 #. tumbleweed/perl-Quantum-Superpositions/summary
 #. leap/perl-Quantum-Superpositions/summary
@@ -4514,9 +5201,8 @@ msgstr ""
 
 #. tumbleweed/perl-SGML-Parser-OpenSP/summary
 #. leap/perl-SGML-Parser-OpenSP/summary
-#, fuzzy
 msgid "Perl interface to the OpenSP SGML and XML parser"
-msgstr "ドメインネームシステムに対する Perl インターフェイス"
+msgstr "OpenSP SGML および XML パーサーに対する Perl インターフェイス"
 
 #. tumbleweed/perl-SGML-Parser-OpenSP/description
 #. leap/perl-SGML-Parser-OpenSP/description
@@ -5014,9 +5700,8 @@ msgstr ""
 
 #. tumbleweed/perl-Text-Aspell/summary
 #. leap/perl-Text-Aspell/summary
-#, fuzzy
 msgid "Perl interface to the GNU Aspell library"
-msgstr "uulib ライブラリへの Perl インターフェイス"
+msgstr "GNU Aspell ライブラリに対する Perl インターフェイス"
 
 #. tumbleweed/perl-Text-Aspell/description
 #. leap/perl-Text-Aspell/description
@@ -5120,9 +5805,8 @@ msgstr ""
 
 #. tumbleweed/perl-Text-Hunspell/summary
 #. leap/perl-Text-Hunspell/summary
-#, fuzzy
 msgid "Perl interface to the Hunspell library"
-msgstr "uulib ライブラリへの Perl インターフェイス"
+msgstr "Hunspell ライブラリに対する Perl インターフェイス"
 
 #. tumbleweed/perl-Text-Hunspell/description
 #. leap/perl-Text-Hunspell/description
@@ -5390,7 +6074,7 @@ msgstr ""
 #. tumbleweed/perl-Unix-Syslog/summary
 #. leap/perl-Unix-Syslog/summary
 msgid "Perl interface to the UNIX syslog(3) calls"
-msgstr "UNIX syslog(3) 呼び出しの Perl インターフェイス"
+msgstr "UNIX syslog(3) コールに対する Perl インターフェイス"
 
 #. tumbleweed/perl-Unix-Syslog/description
 #. leap/perl-Unix-Syslog/description
@@ -6259,9 +6943,8 @@ msgstr ""
 
 #. tumbleweed/perl-pcsc/summary
 #. leap/perl-pcsc/summary
-#, fuzzy
 msgid "Perl interface to Smart Card Reader"
-msgstr "uulib ライブラリへの Perl インターフェイス"
+msgstr "スマートカードリーダーに対する Perl インターフェイス"
 
 #. tumbleweed/perl-pcsc/description
 #. leap/perl-pcsc/description
@@ -9692,7 +10375,7 @@ msgstr "このパッケージは、 Samba Python モジュールを提供して�
 #. tumbleweed/perl-Crypt-SaltedHash/summary
 #. leap/perl-Crypt-SaltedHash/summary
 msgid "Perl interface to functions that assist in working"
-msgstr ""
+msgstr "作業支援関数に対する Perl インターフェイス"
 
 #. tumbleweed/perl-Crypt-SaltedHash/description
 #. leap/perl-Crypt-SaltedHash/description
@@ -14063,26 +14746,23 @@ msgid ""
 "structures should read just the last article. Readers without that "
 "background should read the first, then the second, and then the third."
 msgstr ""
-"HTML-Tree は、 HTML ソースを解釈し、その解釈結果をツリー構造に仕立てることの"
-"できる Perl モジュール集です。このモジュール集は主に 2 つのモジュールから構成"
-"され、それぞれ HTML::TreeBuilder と HTML::Element という名称です。\n"
+"HTML-Tree は、 HTML ソースを解釈し、その解釈結果をツリー構造に仕立てることのできる Perl モジュール集です。このモジュール集は主に "
+"2 つのモジュールから構成され、それぞれ HTML::TreeBuilder と HTML::Element という名称です。\n"
 "\n"
-"HTML::TreeBuilder は処理ツリーを構成するモジュールです (このモジュールは "
-"HTML::Parser を利用して、 HTML を部品ごとに分解しています) 。\n"
+"HTML::TreeBuilder は処理ツリーを構成するモジュールです (このモジュールは HTML::Parser を利用して、 HTML "
+"を部品ごとに分解しています) 。\n"
 "\n"
-"TreeBuilder におけるツリーは、複数の HTML::Element クラスのオブジェクトから構"
-"成されています。\n"
-"\"\\n\"\n"
-"HTML::TreeBuilder や HTML::Element のドキュメンテーションを読んでもうまく理解"
-"できない場合、それはツリー型のデータ構造やオブジェクト指向の構造に慣れていな"
-"いためであると思われます。 Sean Burke 氏は _The Perl Journal_ ('www.tpj."
-"com') 向けにいくつかの記事を作成していて、そこで詳しい解説を行なっています。"
-"この記事の全文は下記の配布物に含まれています:\n"
+"TreeBuilder におけるツリーは、複数の HTML::Element クラスのオブジェクトから構成されています。\n"
+"\n"
+"HTML::TreeBuilder や HTML::Element "
+"のドキュメンテーションを読んでもうまく理解できない場合、それはツリー型のデータ構造やオブジェクト指向の構造に慣れていないためであると思われます。 "
+"Sean Burke 氏は _The Perl Journal_ ('www.tpj.com') "
+"向けにいくつかの記事を作成していて、そこで詳しい解説を行なっています。この記事の全文は下記の配布物に含まれています:\n"
 "\n"
 "* HTML::Tree::AboutObjects\n"
 "\n"
-"  TPJ17: \"User's View of Object-Oriented Modules\" (オブジェクト指向のモ"
-"ジュールに関するユーザからの見た目)\n"
+"  TPJ17: \"User's View of Object-Oriented Modules\" "
+"(オブジェクト指向のモジュールに関するユーザからの見た目)\n"
 "\n"
 "* HTML::Tree::AboutTrees\n"
 "\n"
@@ -14092,9 +14772,8 @@ msgstr ""
 "\n"
 "  TPJ19: \"Scanning HTML\" (HTML のスキャン)\n"
 "\n"
-"オブジェクト指向のモジュールやツリー構造のデータに慣れている場合は、最後の記"
-"事のみをお読みになるのがよいでしょう。慣れていない場合は最初の記事から順に読"
-"んでいくと良いでしょう。"
+"オブジェクト指向のモジュールやツリー構造のデータに慣れている場合は、最後の記事のみをお読みになるのがよいでしょう。慣れていない場合は最初の記事から順に読ん"
+"でいくと良いでしょう。"
 
 #. tumbleweed/perl-HTTP-Body/summary
 #. leap/perl-HTTP-Body/summary
@@ -20458,9 +21137,8 @@ msgstr ""
 "た、バグは cpan.org の Net::Telnet ページで閲覧および報告することができます。"
 
 #. tumbleweed/perl-Net-Twitter/summary
-#, fuzzy
 msgid "Perl Interface to the Twitter Api"
-msgstr "SHA-1 アルゴリズムに対する Perl インターフェイス"
+msgstr "Twitter API に対する Perl インターフェイス"
 
 #. tumbleweed/perl-Net-Twitter/description
 msgid ""
@@ -22271,7 +22949,7 @@ msgstr ""
 #. tumbleweed/perl-SQL-Statement/summary
 #. leap/perl-SQL-Statement/summary
 msgid "SQL parsing and processing engine"
-msgstr "SQL の解釈と処理のエンジンです。"
+msgstr "SQL の解釈と処理のエンジン"
 
 #. tumbleweed/perl-SQL-Statement/description
 #. leap/perl-SQL-Statement/description
@@ -28895,9 +29573,8 @@ msgid ""
 msgstr ""
 
 #. leap/perl-GnuPG-Interface/summary
-#, fuzzy
 msgid "Perl interface to GnuPG"
-msgstr "Gtk 2 に対する Perl インターフェイス"
+msgstr "GnuPG に対する Perl インターフェイス"
 
 #. leap/perl-GnuPG-Interface/description
 msgid ""
@@ -29059,26 +29736,23 @@ msgid ""
 "\n"
 "new_from_content     Redirects to HTML::TreeBuilder::new_from_content"
 msgstr ""
-"HTML-Tree は、 HTML ソースを解釈し、その解釈結果をツリー構造に仕立てることの"
-"できる Perl モジュール集です。このモジュール集は主に 2 つのモジュールから構成"
-"され、それぞれ HTML::TreeBuilder と HTML::Element という名称です。\n"
+"HTML-Tree は、 HTML ソースを解釈し、その解釈結果をツリー構造に仕立てることのできる Perl モジュール集です。このモジュール集は主に "
+"2 つのモジュールから構成され、それぞれ HTML::TreeBuilder と HTML::Element という名称です。\n"
 "\n"
-"HTML::TreeBuilder は処理ツリーを構成するモジュールです (このモジュールは "
-"HTML::Parser を利用して、 HTML を部品ごとに分解しています) 。\n"
+"HTML::TreeBuilder は処理ツリーを構成するモジュールです (このモジュールは HTML::Parser を利用して、 HTML "
+"を部品ごとに分解しています) 。\n"
 "\n"
-"TreeBuilder におけるツリーは、複数の HTML::Element クラスのオブジェクトから構"
-"成されています。\n"
-"\"\\n\"\n"
-"HTML::TreeBuilder や HTML::Element のドキュメンテーションを読んでもうまく理解"
-"できない場合、それはツリー型のデータ構造やオブジェクト指向の構造に慣れていな"
-"いためであると思われます。 Sean Burke 氏は _The Perl Journal_ ('www.tpj."
-"com') 向けにいくつかの記事を作成していて、そこで詳しい解説を行なっています。"
-"この記事の全文は下記の配布物に含まれています:\n"
+"TreeBuilder におけるツリーは、複数の HTML::Element クラスのオブジェクトから構成されています。\n"
+"\n"
+"HTML::TreeBuilder や HTML::Element "
+"のドキュメンテーションを読んでもうまく理解できない場合、それはツリー型のデータ構造やオブジェクト指向の構造に慣れていないためであると思われます。 "
+"Sean Burke 氏は _The Perl Journal_ ('www.tpj.com') "
+"向けにいくつかの記事を作成していて、そこで詳しい解説を行なっています。この記事の全文は下記の配布物に含まれています:\n"
 "\n"
 "* HTML::Tree::AboutObjects\n"
 "\n"
-"  TPJ17: \"User's View of Object-Oriented Modules\" (オブジェクト指向のモ"
-"ジュールに関するユーザからの見た目)\n"
+"  TPJ17: \"User's View of Object-Oriented Modules\" "
+"(オブジェクト指向のモジュールに関するユーザからの見た目)\n"
 "\n"
 "* HTML::Tree::AboutTrees\n"
 "\n"
@@ -29088,9 +29762,8 @@ msgstr ""
 "\n"
 "  TPJ19: \"Scanning HTML\" (HTML のスキャン)\n"
 "\n"
-"オブジェクト指向のモジュールやツリー構造のデータに慣れている場合は、最後の記"
-"事のみをお読みになるのがよいでしょう。慣れていない場合は最初の記事から順に読"
-"んでいくと良いでしょう。\n"
+"オブジェクト指向のモジュールやツリー構造のデータに慣れている場合は、最後の記事のみをお読みになるのがよいでしょう。慣れていない場合は最初の記事から順に読ん"
+"でいくと良いでしょう。\n"
 "\n"
 "new     HTML::TreeBuilder::new へのリダイレクト\n"
 "\n"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-08-30 15:43:29\n"
-"PO-Revision-Date: 2016-12-30 09:00+0000\n"
+"PO-Revision-Date: 2017-01-03 08:54+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-"
 "i18n/y-master/it/>\n"
@@ -42,14 +42,15 @@ msgstr ""
 
 #. tumbleweed/yaml-cpp/libyaml-cpp0_5/summary
 #. leap/yaml-cpp/libyaml-cpp0_5/summary
-#, fuzzy
 msgid "YAML parser and emitter in C++"
-msgstr "Libreria dell'analizzatore e compilatore WBXML"
+msgstr "Analizzatore ed emettitore YAML in C++"
 
 #. tumbleweed/yaml-cpp/libyaml-cpp0_5/description
 #. leap/yaml-cpp/libyaml-cpp0_5/description
 msgid "A YAML parser and emitter in C++ matching the YAML 1.2 spec."
 msgstr ""
+"Un analizzatore ed emettitore YAML in C++ compatibile con le specifiche 1.2 "
+"di YAML."
 
 #. tumbleweed/yara/libyara-devel/summary
 #. leap/yara/libyara-devel/summary
@@ -693,6 +694,25 @@ msgid ""
 "challenge-response functionality of a YubiKey \t* Deleting the configuration "
 "of a YubiKey \t* Checking type and firmware version of the YubiKey"
 msgstr ""
+"Lo strumento di personalizzazione di Yubikey è un programma d'utilità basato "
+"su Qt progettato per facilitare la riconfigurazione delle YubiKey su "
+"piattaforma Windows, Linux e MAC. Lo strumento fornisce un semplice "
+"approccio per passi successivi per rendere la configurazione delle YubiKey "
+"facile da seguire e da comprendere, pur essendo potente abbastanza da "
+"sfruttare tutte le funzionalità delle due generazioni di chiavette YubiKey 1 "
+"e YubiKey 2. Le funzionalità e l'interfaccia utente sono le stesse su "
+"piattaforma Windows, Linux e MAC.\n"
+"\n"
+"Lo strumento multi-piattaforma di personalizzazione di YubiKey fornisce le "
+"seguenti funzioni principali:\n"
+"\n"
+"\t* Programmazione di YubiKey in modalità \"Yubico OTP\"\t* Programmazione "
+"di YubiKey in modalità \"OATH-HOTP\"\t\t* Programmazione di YubiKey in "
+"modalità \"Static Password\"\t* Programmazione di YubiKey in modalità \""
+"Challenge-Response\"\t* Programmazione della funzionalità NDEF della YubiKey "
+"NEO\t* Test della funzionalità challenge-response di una YubiKey\t* "
+"Eliminazione della configurazione di una YubiKey\t* Verifica del tipo di "
+"YubiKey e della sua versione di firmware"
 
 #. tumbleweed/yudit/summary
 #. leap/yudit/summary
@@ -960,7 +980,6 @@ msgstr ""
 
 #. tumbleweed/yum-utils/yum-fastestmirror/summary
 #. leap/yum-utils/yum-fastestmirror/summary
-#, fuzzy
 msgid "Yum plugin which chooses fastest repository from a mirrorlist"
 msgstr ""
 "Plugin di Yum che seleziona il repository più veloce all'interno di un "
@@ -968,7 +987,6 @@ msgstr ""
 
 #. tumbleweed/yum-utils/yum-fastestmirror/description
 #. leap/yum-utils/yum-fastestmirror/description
-#, fuzzy
 msgid ""
 "This plugin sorts each repository's mirrorlist by connection speed prior to "
 "downloading packages."
@@ -978,7 +996,6 @@ msgstr ""
 
 #. tumbleweed/yum-utils/yum-filter-data/summary
 #. leap/yum-utils/yum-filter-data/summary
-#, fuzzy
 msgid "Yum plugin to list filter based on package data"
 msgstr ""
 "Plugin di Yum per filtrare gli elenchi sulla base dei dati dei pacchetti"
@@ -1036,11 +1053,15 @@ msgid ""
 "option, Yum will ask you what to do with config files which have changed on "
 "updating a package."
 msgstr ""
+"Questo plugin di Yum aggiunge l'opzione della riga di comando \"--merge-"
+"conf\". Con questa opzione, Yum chiede cosa deve fare con i file di "
+"configurazione che sono stati modificati all'aggiornamento di un pacchetto."
 
 #. tumbleweed/yum-utils/yum-priorities/summary
 #. leap/yum-utils/yum-priorities/summary
 msgid "Plugin to give priorities to packages from different repos"
 msgstr ""
+"Plugin per dare le priorità a pacchetti provenienti da repository differenti"
 
 #. tumbleweed/yum-utils/yum-priorities/description
 #. leap/yum-utils/yum-priorities/description
@@ -1049,12 +1070,18 @@ msgid ""
 "repository with a lower priority can't be overridden by packages from a "
 "repository with a higher priority even if repo has a later version."
 msgstr ""
+"Questo plugin consente ai repository di avere diverse priorità. I pacchetti "
+"in un repository con priorità più bassa non possono essere sostituiti da "
+"pacchetti provenienti da un repository con priorità più alta, anche se "
+"quest'ultimo dovesse contenere una versione più recente."
 
 #. tumbleweed/yum-utils/yum-protect-packages/summary
 #. leap/yum-utils/yum-protect-packages/summary
 msgid ""
 "Yum plugin to prevents Yum from removing itself and other protected packages"
 msgstr ""
+"Plugin di Yum per impedire a Yum di rimuovere se stesso o altri pacchetti "
+"protetti"
 
 #. tumbleweed/yum-utils/yum-protect-packages/description
 #. leap/yum-utils/yum-protect-packages/description
@@ -1065,11 +1092,18 @@ msgid ""
 "and so on).Therefore, the plugin functions well even without compiling "
 "careful lists of all important packages."
 msgstr ""
+"Questo plugin impedisce a Yum di rimuovere se stesso e altri pacchetti "
+"protetti. Come impostazione predefinita, yum è il solo pacchetto protetto, "
+"ma per estensione sono protetti anche tutti quei pacchetti da cui yum "
+"dipende (rpm, python, glibc, e così via). Pertanto, il plugin funziona bene "
+"anche senza compilare una lista di tutti i pacchetti importanti."
 
 #. tumbleweed/yum-utils/yum-protectbase/summary
 #. leap/yum-utils/yum-protectbase/summary
 msgid "Yum plugin to protect packages from certain repositories"
 msgstr ""
+"Plugin di Yum per proteggere i pacchetti provenienti da determinati "
+"repository"
 
 #. tumbleweed/yum-utils/yum-protectbase/description
 #. leap/yum-utils/yum-protectbase/description
@@ -1078,11 +1112,17 @@ msgid ""
 "protected repositories can't be overridden by packages in non-protected "
 "repositories even if the non-protected repo has a later version."
 msgstr ""
+"Questo plugin consente la protezione dei repository. I pacchetti nei "
+"repository protetti non possono essere sostituiti da pacchetti provenienti "
+"da repository non protetti, anche se questi ultimi dovessero avere versioni "
+"più recenti."
 
 #. tumbleweed/yum-utils/yum-refresh-updatesd/summary
 #. leap/yum-utils/yum-refresh-updatesd/summary
 msgid "Tell yum-updatesd to check for updates when yum exits"
 msgstr ""
+"Indica a yum-updatesd di controllare la presenza di aggiornamenti all'uscita "
+"di yum"
 
 #. tumbleweed/yum-utils/yum-refresh-updatesd/description
 #. leap/yum-utils/yum-refresh-updatesd/description
@@ -1091,11 +1131,15 @@ msgid ""
 "This way, if you run 'yum update' and install all available updates, puplet "
 "will almost instantly update itself to reflect this."
 msgstr ""
+"yum-refresh-updatesd fa sì che yum-updatesd controlli la presenza di "
+"aggiornamenti all'uscita di yum. In tal modo, se si lancia 'yum update' e si "
+"installano tutti gli aggiornamenti disponibili, puplet si aggiornerà quasi "
+"istantaneamente per riflettere la nuova situazione."
 
 #. tumbleweed/yum-utils/yum-tmprepo/summary
 #. leap/yum-utils/yum-tmprepo/summary
 msgid "Yum plugin to add temporary repositories"
-msgstr ""
+msgstr "Plugin di Yum per aggiungere repository temporanei"
 
 #. tumbleweed/yum-utils/yum-tmprepo/description
 #. leap/yum-utils/yum-tmprepo/description
@@ -1105,11 +1149,16 @@ msgid ""
 "that temporary repositories are safe to use, by default, by not allowing gpg "
 "checking to be disabled."
 msgstr ""
+"Questo plugin aggiunge l'opzione --tmprepo che prende l'URL di un file "
+".repo, lo scarica e lo abilita per un'unica esecuzione. Questo plugin cerca "
+"di fare in modo che i repository temporanei siano sicuri da usare, non "
+"consentendo di disabilitare il controllo gpg."
 
 #. tumbleweed/yum-utils/yum-tsflags/summary
 #. leap/yum-utils/yum-tsflags/summary
 msgid "Yum plugin to add tsflags by a commandline option"
 msgstr ""
+"Plugin di Yum per aggiungere parametri di transazione alla riga di comando"
 
 #. tumbleweed/yum-utils/yum-tsflags/description
 #. leap/yum-utils/yum-tsflags/description
@@ -1117,11 +1166,15 @@ msgid ""
 "This plugin allows you to specify optional transaction flags on the yum "
 "command line"
 msgstr ""
+"Questo plugin consente di specificare parametri di transazione sulla riga di "
+"comando di yum"
 
 #. tumbleweed/yum-utils/yum-upgrade-helper/summary
 #. leap/yum-utils/yum-upgrade-helper/summary
 msgid "Yum plugin to help upgrades to the next distribution version"
 msgstr ""
+"Plugin di Yum per agevolare l'aggiornamento alla versione successiva di una "
+"distribuzione"
 
 #. tumbleweed/yum-utils/yum-upgrade-helper/description
 #. leap/yum-utils/yum-upgrade-helper/description
@@ -1130,11 +1183,15 @@ msgid ""
 "an additional metadata file in repositories. It is used to simplify "
 "distribution upgrade hangups."
 msgstr ""
+"Questo plugin permette a Yum di eliminare pacchetti specifici in fase di "
+"installazione/aggiornamento sulla base di file di metadati aggiuntivi "
+"presenti nei repository. È usato per semplificare l'aggiornamento delle "
+"distribuzioni."
 
 #. tumbleweed/yum-utils/summary
 #. leap/yum-utils/summary
 msgid "Utilities based around the yum package manager"
-msgstr ""
+msgstr "Programmi d'utilità attinenti al gestore dei pacchetti Yum"
 
 #. tumbleweed/yum-utils/description
 #. leap/yum-utils/description
@@ -1143,11 +1200,14 @@ msgid ""
 "manager. It includes utilities by different authors that make yum easier and "
 "more powerful to use."
 msgstr ""
+"yum-utils è una collezione di programmi d'utilità ed esempi per il gestore "
+"dei pacchetti Yum. Comprende programmi di autori differenti che rendono Yum "
+"più facile e più potente da usare."
 
 #. tumbleweed/yum-utils/yum-verify/summary
 #. leap/yum-utils/yum-verify/summary
 msgid "Yum plugin to add verify command, and options"
-msgstr ""
+msgstr "Plugin di Yum per aggiungere il comando verify e relative opzioni"
 
 #. tumbleweed/yum-utils/yum-verify/description
 #. leap/yum-utils/yum-verify/description
@@ -1156,11 +1216,14 @@ msgid ""
 "also a couple of options. This command works like rpm -V, to verify your "
 "installation."
 msgstr ""
+"Questo plugin aggiunge i comandi verify, verify-all e verify-rpm. Sono "
+"disponibili anche un paio di opzioni. Il comando funziona come rpm -V per "
+"fare una verifica sulla propria installazione."
 
 #. tumbleweed/yum-utils/yum-versionlock/summary
 #. leap/yum-utils/yum-versionlock/summary
 msgid "Yum plugin to lock specified packages from being updated"
-msgstr ""
+msgstr "Plugin per impedire a pacchetti specifici di essere aggiornati"
 
 #. tumbleweed/yum-utils/yum-versionlock/description
 #. leap/yum-utils/yum-versionlock/description
@@ -1168,6 +1231,8 @@ msgid ""
 "This plugin allows certain packages specified in a file to be protected from "
 "being updated by newer versions."
 msgstr ""
+"Questo plugin protegge dall'aggiornamento a versioni più recenti determinati "
+"pacchetti specificati in un file."
 
 #. leap/yakuake/yakuake-lang/summary
 msgid "Languages for package yakuake"
