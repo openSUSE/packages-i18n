@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-01-27 08:40+0000\n"
+"PO-Revision-Date: 2017-01-30 07:23+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -2323,7 +2323,7 @@ msgstr ""
 "ージが唯一のものであると識別する必要があるアプリケーションは、より強固なアルゴリズムに移行したほうが賢明です。\n"
 "\n"
 "'Digest::MD5' モジュールは、使いやすいプロシージャ型のインターフェイスのほか、任意の長さのメッセージを処理したり、ファイルから直接読み込んだ"
-"りするためのオブジェクト志向のインターフェイスも提供しています。"
+"りするためのオブジェクト指向のインターフェイスも提供しています。"
 
 #. tumbleweed/perl-Digest-SHA1/summary
 #. leap/perl-Digest-SHA1/summary
@@ -4127,22 +4127,28 @@ msgid ""
 "\"3 byte\", but \"3 byte / sec\" produces the original along with \"180 "
 "byte / minute\", \"10.55 kilobyte / hour\", etc."
 msgstr ""
+"Math::Calc::Units は単位を扱うことのできるシンプルな計算機です。現時点ではバイトサイズと時間単位のみを扱うことができますが、他の乗法単位"
+"への変換は簡単に行なうことができます。未知のタイプはユーザ定義の独自型として扱われます (ただし、英語の複数形を単数形に変換することはできます) 。\n"
+"\n"
+"主な使い方としては、 ucalc スクリプト経由で値を \"わかりやすくする\" 方法があります。たとえば \"3 bytes (バイト)\" は単に "
+"\"3 byte\" としか表現できませんが、 \"3 byte / sec (バイト毎秒)\" は \"180 byte / minute "
+"(バイト毎分)\" や \"10.55 kilobyte / hour (キロバイト毎秒)\" に変換することができます。"
 
 #. tumbleweed/perl-Math-Clipper/summary
 #. leap/perl-Math-Clipper/summary
 msgid "Polygon clipping in 2D"
-msgstr ""
+msgstr "2D 内でのポリゴンクリッピング"
 
 #. tumbleweed/perl-Math-Clipper/description
 #. leap/perl-Math-Clipper/description
 msgid ""
 "'Clipper' is a C++ (and Delphi) library that implements polygon clipping."
-msgstr ""
+msgstr "'Clipper' は C++ (および Delphi) 言語向けのポリゴンクリッピングを実装するライブラリです。"
 
 #. tumbleweed/perl-Math-ConvexHull-MonotoneChain/summary
 #. leap/perl-Math-ConvexHull-MonotoneChain/summary
 msgid "Andrew's monotone chain algorithm for finding a convex hull in 2D"
-msgstr ""
+msgstr "2D 内で凸包を検出するための Andrew's モノトーンチェインアルゴリズム"
 
 #. tumbleweed/perl-Math-ConvexHull-MonotoneChain/description
 #. leap/perl-Math-ConvexHull-MonotoneChain/description
@@ -4155,11 +4161,17 @@ msgid ""
 "faster than a plain Graham's scan (also 'O(n log n)') in practice since it "
 "avoids polar coordinates."
 msgstr ""
+"これは幾分か実験的なものです。\n"
+"\n"
+"この (XS) モジュールは、入力した点の凸包を計算し、その結果を返す 'convex_hull' "
+"関数のみをオプションで公開しています。アルゴリズムは入力リストを並び替える必要があることから、 'O(n log n)' "
+"になりますが、極座標を避ける仕組みが備わっていることから、純粋なグラハムスキャン (こちらも 'O(n log n)' です) "
+"よりは幾分高速になるべき仕組みです。"
 
 #. tumbleweed/perl-Math-Geometry-Voronoi/summary
 #. leap/perl-Math-Geometry-Voronoi/summary
 msgid "compute Voronoi diagrams from sets of points"
-msgstr ""
+msgstr "点の集合からボロノイ図を計算するモジュール"
 
 #. tumbleweed/perl-Math-Geometry-Voronoi/description
 #. leap/perl-Math-Geometry-Voronoi/description
@@ -4183,24 +4195,38 @@ msgid ""
 "Perl's memory allocator. Finally, I changed all floats to doubles to provide "
 "better precision and to match Perl's NVs."
 msgstr ""
+"このモジュールは入力点の集合からボロノイ図を算出します。ボロノイ図に関する情報は、下記をお読みください:\n"
+"\n"
+"  https://ja.wikipedia.org/wiki/ボロノイ図\n"
+"\n"
+"このモジュールは C 言語実装におけるラッパーです。詳しくは下記をお読みください:\n"
+"\n"
+"  http://www.derekbradley.ca/voronoi.html\n"
+"\n"
+"これは、使用しているアルゴリズム (Fortune's algorithm) の発見者である Steve Fortune 氏によるコードの修正版です:\n"
+"\n"
+"  http://cm.bell-labs.com/who/sjf/\n"
+"\n"
+"なお、本モジュールでは Perl のデータ構造を入出力するのに必要となるため、データの読み書き機能を追加するよう C "
+"言語のソースコードを修正しています。また、 Perl のメモリアロケータを使用するのに必要な修正も実施しているほか、精度の改善や Perl の NV "
+"にうまく当てはまるよう、単精度の小数点を倍精度に変更しています。"
 
 #. tumbleweed/perl-Math-Libm/summary
 #. leap/perl-Math-Libm/summary
-#, fuzzy
 msgid "Perl extension for the C math library, libm"
-msgstr "GNU Readline/History ライブラリ向け Perl 拡張"
+msgstr "C 数学ライブラリ libm 向け Perl 拡張"
 
 #. tumbleweed/perl-Math-Libm/description
 #. leap/perl-Math-Libm/description
 msgid ""
 "This module is a translation of the C _math.h_ file. It exports the "
 "following selected constants and functions."
-msgstr ""
+msgstr "このモジュールは C 言語版の _math_h_ ファイルの翻訳版で、様々な定数や関数などを公開しています。"
 
 #. tumbleweed/perl-Math-PlanePath/summary
 #. leap/perl-Math-PlanePath/summary
 msgid "Points On a Path Through the 2-D Plane"
-msgstr ""
+msgstr "2D 平面を介したパス上のポイント"
 
 #. tumbleweed/perl-Math-PlanePath/description
 #. leap/perl-Math-PlanePath/description
@@ -4337,6 +4363,136 @@ msgid ""
 "See 'examples/numbers.pl' in the Math-PlanePath sources for a sample "
 "printout of numbers from selected paths or all paths."
 msgstr ""
+"このモジュールは、整数表記の '$n' と二次元座標 '$x,$y' "
+"との間を相互に変換することのできる、数学におけるパスを利用するためのベースクラスです。 \n"
+"\n"
+"現時点では下記のようなクラスが用意されています。それぞれ 'Math::PlanePath::Something' は PlanePath "
+"を意図していて、サポートするベースクラスや関連するクラスは 'Math::PlanePath::Base::Xyzzy' のようなクラスになっています。"
+"\n"
+"\n"
+"    SquareSpiral           four-sided spiral     PyramidSpiral          "
+"square base pyramid     TriangleSpiral         equilateral triangle "
+"spiral     TriangleSpiralSkewed   equilateral skewed for compactness     "
+"DiamondSpiral          four-sided spiral, looping faster     "
+"PentSpiral             five-sided spiral     PentSpiralSkewed       five-"
+"sided spiral, compact     HexSpiral              six-sided spiral     "
+"HexSpiralSkewed        six-sided spiral skewed for compactness     "
+"HeptSpiralSkewed       seven-sided spiral, compact     "
+"AnvilSpiral            anvil shape     OctagramSpiral         eight pointed "
+"star     KnightSpiral           an infinite knight's tour     "
+"CretanLabyrinth        7-circuit extended infinitely\n"
+"\n"
+"    SquareArms             four-arm square spiral     DiamondArms            "
+"four-arm diamond spiral     AztecDiamondRings      four-sided rings     "
+"HexArms                six-arm hexagonal spiral     GreekKeySpiral         "
+"square spiral with Greek key motif     MPeaks                 \"M\" shape "
+"layers\n"
+"\n"
+"    SacksSpiral            quadratic on an Archimedean spiral     "
+"VogelFloret            seeds in a sunflower     TheodorusSpiral        unit "
+"steps at right angles     ArchimedeanChords      unit chords on an "
+"Archimedean spiral     MultipleRings          concentric circles     "
+"PixelRings             concentric rings of midpoint pixels     "
+"FilledRings            concentric rings of pixels     Hypot                  "
+"points by distance     HypotOctant            first octant points by "
+"distance     TriangularHypot        points by triangular distance     "
+"PythagoreanTree        X^2+Y^2=Z^2 by trees\n"
+"\n"
+"    PeanoCurve             3x3 self-similar quadrant     "
+"WunderlichSerpentine   transpose parts of PeanoCurve     "
+"HilbertCurve           2x2 self-similar quadrant     HilbertSides           "
+"2x2 self-similar quadrant segments     HilbertSpiral          2x2 self-"
+"similar whole-plane     ZOrderCurve            replicating Z shapes     "
+"GrayCode               Gray code splits     WunderlichMeander      3x3 \"R\" "
+"pattern quadrant     BetaOmega              2x2 self-similar half-plane     "
+"AR2W2Curve             2x2 self-similar of four parts     "
+"KochelCurve            3x3 self-similar of two parts     "
+"DekkingCurve           5x5 self-similar, edges     DekkingCentres         "
+"5x5 self-similar, centres     CincoCurve             5x5 self-similar\n"
+"\n"
+"    ImaginaryBase          replicate in four directions     "
+"ImaginaryHalf          half-plane replicate three directions     "
+"CubicBase              replicate in three directions     "
+"SquareReplicate        3x3 replicating squares     CornerReplicate        "
+"2x2 replicating \"U\"     LTiling                self-simlar L shapes     "
+"DigitGroups            digits grouped by zeros     FibonacciWordFractal   "
+"turns by Fibonacci word bits\n"
+"\n"
+"    Flowsnake              self-similar hexagonal tile traversal     "
+"FlowsnakeCentres         likewise but centres of hexagons     "
+"GosperReplicate        self-similar hexagonal tiling     "
+"GosperIslands          concentric island rings     GosperSide             "
+"single side or radial\n"
+"\n"
+"    QuintetCurve           self-similar \"+\" traversal     "
+"QuintetCentres           likewise but centres of squares     "
+"QuintetReplicate       self-similar \"+\" tiling\n"
+"\n"
+"    DragonCurve            paper folding     DragonRounded          paper "
+"folding rounded corners     DragonMidpoint         paper folding segment "
+"midpoints     AlternatePaper         alternating direction folding     "
+"AlternatePaperMidpoint alternating direction folding, midpoints     "
+"TerdragonCurve         ternary dragon     TerdragonRounded       ternary "
+"dragon rounded corners     TerdragonMidpoint      ternary dragon segment "
+"midpoints     R5DragonCurve          radix-5 dragon curve     "
+"R5DragonMidpoint       radix-5 dragon curve midpoints     "
+"CCurve                 \"C\" curve     ComplexPlus            base i+"
+"realpart     ComplexMinus           base i-realpart, including "
+"twindragon     ComplexRevolving       revolving base i+1\n"
+"\n"
+"    SierpinskiCurve        self-similar right-triangles     "
+"SierpinskiCurveStair   self-similar right-triangles, stair-step     "
+"HIndexing              self-similar right-triangles, squared up\n"
+"\n"
+"    KochCurve              replicating triangular notches     "
+"KochPeaks              two replicating notches     KochSnowflakes         "
+"concentric notched 3-sided rings     KochSquareflakes       concentric "
+"notched 4-sided rings     QuadricCurve           eight segment zig-zag     "
+"QuadricIslands           rings of those zig-zags     SierpinskiTriangle     "
+"self-similar triangle by rows     SierpinskiArrowhead    self-similar "
+"triangle connectedly     SierpinskiArrowheadCentres  likewise but centres of "
+"triangles\n"
+"\n"
+"    Rows                   fixed-width rows     Columns                fixed-"
+"height columns     Diagonals              diagonals between X and Y axes     "
+"DiagonalsAlternating   diagonals Y to X and back again     "
+"DiagonalsOctant        diagonals between Y axis and X=Y centre     "
+"Staircase              stairs down from the Y to X axes     "
+"StaircaseAlternating   stairs Y to X and back again     "
+"Corner                 expanding stripes around a corner     "
+"PyramidRows            expanding stacked rows pyramid     "
+"PyramidSides           along the sides of a 45-degree pyramid     "
+"CellularRule           cellular automaton by rule number     "
+"CellularRule54         cellular automaton rows pattern     "
+"CellularRule57         cellular automaton (rule 99 mirror too)     "
+"CellularRule190        cellular automaton (rule 246 mirror too)     "
+"UlamWarburton          cellular automaton diamonds     "
+"UlamWarburtonQuarter   cellular automaton quarter-plane\n"
+"\n"
+"    DiagonalRationals      rationals X/Y by diagonals     "
+"FactorRationals        rationals X/Y by prime factorization     "
+"GcdRationals           rationals X/Y by rows with GCD integer     "
+"RationalsTree          rationals X/Y by tree     FractionsTree          "
+"fractions 0<X/Y<1 by tree     ChanTree               rationals X/Y multi-"
+"child tree     CfracDigits            continued fraction 0<X/Y<1 by "
+"digits     CoprimeColumns         coprime X,Y     DivisibleColumns       X "
+"divisible by Y     WythoffArray           Fibonacci recurrences     "
+"WythoffPreliminaryTriangle     PowerArray             powers in rows     "
+"File                   points from a disk file\n"
+"\n"
+"And in the separate Math-PlanePath-Toothpick distribution\n"
+"\n"
+"    ToothpickTree          pattern of toothpicks     ToothpickReplicate     "
+"same by replication rather than tree     ToothpickUpist         toothpicks "
+"only growing upwards     ToothpickSpiral        toothpicks around the "
+"origin\n"
+"\n"
+"    LCornerTree            L-shape corner growth     LCornerReplicate       "
+"same by replication rather than tree     OneOfEight     "
+"HTree                  H shapes replicated\n"
+"\n"
+"パスはパラメータを許容できるようにするためオブジェクト指向になっていますが、そうでないものも多数あります。選択したパスやすべてのパスからの数値出力について"
+"、詳しくは Math-PlanePath ソース内の 'examples/numbers.pl' をお読みください。"
 
 #. tumbleweed/perl-Mcrypt/summary
 #. leap/perl-Mcrypt/summary
@@ -4356,9 +4512,8 @@ msgstr ""
 
 #. tumbleweed/perl-Module-Build-XSUtil/summary
 #. leap/perl-Module-Build-XSUtil/summary
-#, fuzzy
 msgid "Module::Build class for building XS modules"
-msgstr "カーネルモジュールを構築するために必要な開発用ファイル"
+msgstr "XS モジュールを構築するために必要な Module::Build クラス"
 
 #. tumbleweed/perl-Module-Build-XSUtil/description
 #. leap/perl-Module-Build-XSUtil/description
@@ -4401,12 +4556,44 @@ msgid ""
 "\n"
 "  If invoke Build.PL with '-g' option, It will build with debug options."
 msgstr ""
+"Module::Build::XSUtil は Module::Build に対するサブクラスで、 XS モジュールを構築するのに必要なモジュールです。"
+"\n"
+"\n"
+"Module::Build::new メソッドで利用できる新しいパラメータは下記のとおりです:\n"
+"\n"
+"* needs_compiler_c99\n"
+"\n"
+"  このオプションを設定すると、 C99 コンパイラが存在するかどうかを確認します。存在していれば Build.PL は 0 で終了します。\n"
+"\n"
+"* needs_compiler_cpp\n"
+"\n"
+"  このオプションは C++ コンパイラが存在するかどうかを確認します。存在していれば Build.PL は 0 で終了します。\n"
+"\n"
+"  これに加えて、 C++ には 'extra_compiler_flags' や 'extra_linker_flags' があります。\n"
+"\n"
+"* generate_ppport_h\n"
+"\n"
+"  Devel::PPPort で ppport.h を生成します。\n"
+"\n"
+"* generate_xshelper_h\n"
+"\n"
+"  EXTERN.h, perl.h, XSUB.h, ppport.h へのヘルパーヘッダファイルである xshelper.h を生成するほか、 "
+"ppport.h では対応していない可搬性のオプションなどを設定します。\n"
+"\n"
+"  こちらは Module::Install::XSUtil から移植したものです。\n"
+"\n"
+"* cc_warnings\n"
+"\n"
+"  コンパイラの警告フラグを有効にします。既定で有効化されます。\n"
+"\n"
+"* -g options\n"
+"\n"
+"  '-g' オプション付きで Build.PL を実行した場合、デバッグオプション付きで構築することができます。"
 
 #. tumbleweed/perl-Module-ScanDeps/summary
 #. leap/perl-Module-ScanDeps/summary
-#, fuzzy
 msgid "Recursively scan Perl code for dependencies"
-msgstr "Perl データタイプを再帰的に複製するツール"
+msgstr "Perl コードを再帰的に読み込んで依存関係を生成するモジュール"
 
 #. tumbleweed/perl-Module-ScanDeps/description
 #. leap/perl-Module-ScanDeps/description
@@ -4433,6 +4620,24 @@ msgid ""
 "Please see App::Packer::Frontend for detailed explanation on the structure "
 "returned by 'get_files'."
 msgstr ""
+"このモジュールは Perl プログラムが潜在的に使用するモジュールを一覧にし、それをハッシュ参照として返します。参照のキーは '%INC' "
+"内で現われるようなモジュール名 (例: 'Test/More.pm') で、値はこの構造体へのハッシュ参照になります:\n"
+"\n"
+"    {         file    => '/usr/local/lib/perl5/5.8.0/Test/More.pm',         "
+"key     => 'Test/More.pm',         type    => 'module',    # or 'autoload', "
+"'data', 'shared'         used_by => [ 'Test/Simple.pm', ... ],         "
+"uses    => [ 'Test/Other.pm', ... ],     }\n"
+"\n"
+"1 つめの関数 'scan_deps' は既定で公開されている関数ですが、それ以外の関数 (たとえば 'scan_line', "
+"'scan_chunk', 'add_deps', 'path_to_inc_name' など) は必要に応じて公開される関数です。\n"
+"\n"
+"*App::Packer* を利用しているユーザであれば、  _p2e.pl_ "
+"を下記のように修正することで、このモジュールを依存関係のチェック用に使用することができます:\n"
+"\n"
+"    use Module::ScanDeps;     ...     my $packer = App::Packer->new( "
+"frontend => 'Module::ScanDeps' );     ...\n"
+"\n"
+"'get_files' で返される構造について、詳しくは App::Packer::Frontend をご覧ください。"
 
 #. tumbleweed/perl-Moose/summary
 #. leap/perl-Moose/summary
@@ -4441,7 +4646,6 @@ msgstr "Perl 5 向けポストモダンオブジェクトシステム"
 
 #. tumbleweed/perl-Moose/description
 #. leap/perl-Moose/description
-#, fuzzy
 msgid ""
 "Moose is an extension of the Perl 5 object system.\n"
 "\n"
@@ -4455,19 +4659,16 @@ msgid ""
 msgstr ""
 "Moose は Perl 5 のオブジェクトシステムに対する拡張です。\n"
 "\n"
-"Moose の主な目的は、 Perl 5 のオブジェクト志向プログラミングを、よりわかりや"
-"すくより一貫した仕組みにし、つまらなさを排除することにあります。 Moose を利用"
-"することで、やりたいことを明確にし、 OOP の仕組みそのものに対して心配する必要"
-"がなくなります。\n"
+"Moose の主な目的は、 Perl 5 のオブジェクト指向プログラミングを、よりわかりやすくより一貫した仕組みにし、つまらなさを排除することにあります。"
+" Moose を利用することで、やりたいことを明確にし、 OOP の仕組みそのものに対して心配する必要がなくなります。\n"
 "\n"
-"これに加えて、 Moose は Class::MOP 上で構築されています。これは Perl 5 向けの"
-"メタクラスシステムで、 Moose は通常のオブジェクトを簡単に構築できるだけでな"
-"く、メタクラスプログラミングの利点をも享受できることになります。"
+"これに加えて、 Moose は Class::MOP 上で構築されています。これは Perl 5 向けのメタクラスシステムで、 Moose "
+"は通常のオブジェクトを簡単に構築できるだけでなく、メタクラスプログラミングの利点をも享受できることになります。"
 
 #. tumbleweed/perl-MooseX-Role-WithOverloading/summary
 #. leap/perl-MooseX-Role-WithOverloading/summary
 msgid "(DEPRECATED) Roles which support overloading"
-msgstr ""
+msgstr "(廃止予定) オーバーロードに対応するためのロール"
 
 #. tumbleweed/perl-MooseX-Role-WithOverloading/description
 #. leap/perl-MooseX-Role-WithOverloading/description
@@ -4481,10 +4682,16 @@ msgid ""
 "necessary, as the functionality is available already. In that case, 'use "
 "MooseX::Role::WithOverloading' behaves identically to 'use Moose::Role'."
 msgstr ""
+"MooseX::Role::WithOverloading は Moose::Role を作成するためのモジュールで、演算子のオーバーロードを定義すること"
+"ができるほか、オーバーロードしたメソッドをコンパイル先のクラスやロール、インスタンスに組み込み、純粋な Moose::ROle "
+"がオーバーロードを失うことができるものです。\n"
+"\n"
+"Mosse バージョン 2.1300 以降でこのモジュールは必須ではなくなりましたが、機能の提供は引き続き行なわれています。この場合、  'use "
+"MooseX::Role::WithOverloading' は 'use Moose::Role' と同等の動作になります。"
 
 #. tumbleweed/perl-Mouse/summary
 msgid "Moose minus the antlers"
-msgstr ""
+msgstr "Moose minus the antlers"
 
 #. tumbleweed/perl-Mouse/description
 msgid ""
@@ -4504,21 +4711,33 @@ msgid ""
 "*no dependencies* except for building/testing modules. Mouse also works "
 "without XS, although it has an XS backend to make it much faster."
 msgstr ""
+"Moose は Perl5 に対するポストモダン型のオブジェクトシステムです。 Moose は素晴らしいものです。\n"
+"\n"
+"残念ながら、 Moose にはコンパイル時のペナルティが存在しています。何年にもわたって大幅に進歩しているものの、コンパイル時のペナルティは特定のアプリケ"
+"ーションでは起動時以外にも影響を及ぼしてしまいます。起動時間を気にする必要があるコマンドラインアプリケーションや CGI スクリプトを作成している場合は、"
+" Moose を不便に感じる場合があるかもしれません (この場合は、可能であれば永続的な Perl 実行環境を提供する 'FastCGI' "
+"のような仕組みをお使いください) 。\n"
+"\n"
+"Mouse は Moose 互換のオブジェクトシステムで、 Moose の機能のサブセットを提供しながらペナルティを軽減することを目指しているものです。"
+"\n"
+"\n"
+"なお、できる限り依存関係が軽くなるように作っております。 Mouse では構築やテスト用のモジュールを除き、依存関係はありません。また、 Mouse は "
+"XS 無しでも動作しますが、 XS を利用したほうが非常に高速に動作します。"
 
 #. tumbleweed/perl-Mozilla-LDAP/summary
 #. leap/perl-Mozilla-LDAP/summary
 msgid "LDAP module that wraps the OpenLDAP C SDK"
-msgstr ""
+msgstr "OpenLDAP C SDK をラッピングする LDAP モジュール"
 
 #. tumbleweed/perl-Mozilla-LDAP/description
 #. leap/perl-Mozilla-LDAP/description
 msgid "A perl LDAP module that wraps the OpenLDAP C SDK."
-msgstr ""
+msgstr "OpenLDAP C SDK をラッピングする Perl LDAP モジュールです。"
 
 #. tumbleweed/perl-Nagios-Plugin/summary
 #. leap/perl-Nagios-Plugin/summary
 msgid "A family of perl modules to streamline writing Nagios plugins"
-msgstr ""
+msgstr "Nagios プラグインを直感的に作成するための Perl モジュールファミリ"
 
 #. tumbleweed/perl-Nagios-Plugin/description
 #. leap/perl-Nagios-Plugin/description
@@ -4534,6 +4753,13 @@ msgid ""
 "developers to create plugins that conform the Nagios Plugin guidelines "
 "(http://nagiosplug.sourceforge.net/developer-guidelines.html)."
 msgstr ""
+"Nagiois::Plugin と関連する Nagios::Plugin::* モジュールは、 Nagios "
+"のプラグインを素早く作成するために提供されている Perl モジュール集です。メインのエンドユーザ向けモジュールは Nagios::Plugin で、"
+"このモジュールは Nagios::Plugin::* コレクション全体に対するオブジェクト志向のインターフェイスを提供するものです。また、 "
+"Nagios::Plugin::Functions は、左記のモジュールの機能に対するサブセットを提供する、よりシンプルなインターフェイスです。\n"
+"\n"
+"このコレクションは、開発者に対して Nagios Plugin "
+"ガイドラインを遵守しながら、できる限りシンプルにモジュールを作成できる仕組みを提供することを目指しています。"
 
 #. tumbleweed/perl-Net-DBus/summary
 #. leap/perl-Net-DBus/summary
@@ -4565,11 +4791,9 @@ msgstr ""
 
 #. tumbleweed/perl-Net-IDN-Encode/summary
 #. leap/perl-Net-IDN-Encode/summary
-#, fuzzy
 msgid "Internationalizing Domain Names in Applications (IDNA)"
 msgstr ""
-"Internationalized Domain Names in Applications (IDNA; アプリケーション内国際"
-"ドメイン名) サポート"
+"Internationalized Domain Names in Applications (IDNA; アプリケーション内国際ドメイン名) サポート"
 
 #. tumbleweed/perl-Net-IDN-Encode/description
 #. leap/perl-Net-IDN-Encode/description
@@ -4589,6 +4813,16 @@ msgid ""
 "correctly encoded input. See the perlunitut manpage, the perluniintro "
 "manpage and the perlunicode manpage for details."
 msgstr ""
+"このモジュールは、国際ドメイン名 (IDN) をエンコードしたりデコードしたりするための使いやすいインターフェイスです。\n"
+"\n"
+"IDN は様々なレパートリーから構成される文字 (Unicode) を使用していますが、 IDNA は現代のホスト名に対してすでに許可されている文字 "
+"(英字／数字／ハイフン: '/[A-Z0-9-]/i') のみを利用して、非 ASCII 文字を表現するように規定しています。\n"
+"\n"
+"ドメイン名 (またはメールアドレス) を変換したい場合は、このモジュールをお使いください。それは、 IDNA 標準が現時点では最適の選択肢であるためです。"
+"\n"
+"\n"
+"このモジュールは正しくエンコードされた文字を期待する構造から、 Perl の Unicode について詳しく知っていることが前提とになります。詳しくは "
+"perlunitut, perluniintro, perlunicode の各マニュアルページをお読みください。"
 
 #. tumbleweed/perl-Net-IP/summary
 #. leap/perl-Net-IP/summary
@@ -4698,9 +4932,8 @@ msgstr ""
 
 #. tumbleweed/perl-Net-Pcap/summary
 #. leap/perl-Net-Pcap/summary
-#, fuzzy
 msgid "Interface to pcap LBL packet capture library"
-msgstr "Bzip2 圧縮ライブラリに対するインターフェイス"
+msgstr "pcap LBL パケットキャプチャライブラリに対するインターフェイス"
 
 #. tumbleweed/perl-Net-Pcap/description
 #. leap/perl-Net-Pcap/description
@@ -20840,16 +21073,13 @@ msgid ""
 "\n"
 "There is a function for sorting by text IP address."
 msgstr ""
-"Net::Netmask は IPv4 CIDR ブロックを処理して認識します。このモジュールはオブ"
-"ジェクト志向のいんーたフェイスを持っていて、ほぼすべての関数を Net::Netmask "
-"オブジェクトのメソッドとして呼び出すことができます。\n"
+"Net::Netmask は IPv4 CIDR ブロックを処理して認識します。このモジュールはオブジェクト指向のインターフェイスを持っていて、"
+"ほぼすべての関数を Net::Netmask オブジェクトのメソッドとして呼び出すことができます。\n"
 "\n"
-"本モジュールは、ネットワークブロックに関する情報処理について、必要なものほぼ"
-"すべてがそろっています。\n"
+"本モジュールは、ネットワークブロックに関する情報処理について、必要なものほぼすべてがそろっています。\n"
 "\n"
-"本モジュールでは上記以外にも、ネットワークブロックを表形式にして、後から IP "
-"アドレスと突き合わせるようなこともできます。また、アドレスの範囲を CIDR ブ"
-"ロックのリストに変換したり、その逆を行なったりすることもできます。"
+"本モジュールでは上記以外にも、ネットワークブロックを表形式にして、後から IP アドレスと突き合わせるようなこともできます。また、アドレスの範囲を "
+"CIDR ブロックのリストに変換したり、その逆を行なったりすることもできます。"
 
 #. tumbleweed/perl-Net-OAuth/summary
 #. tumbleweed/perl-Net-OAuth/description
@@ -30956,16 +31186,13 @@ msgid ""
 "object. The object interface can also be used at either end of a SAX "
 "pipeline."
 msgstr ""
-"XML::Simple モジュールは、 XML 処理モジュール (XML::Partse もしくは SAX2 パー"
-"サモジュールのうちのいずれか) 上で動作する、シンプルな API レイヤです。2 つの"
-"関数が公開されています: 'XMLin()' と 'XMLout()' 。注意: 小文字版の関数名を利"
-"用することもできます: 'xml_in()', 'xml_out()'\n"
+"XML::Simple モジュールは、 XML 処理モジュール (XML::Partse もしくは SAX2 パーサモジュールのうちのいずれか) "
+"上で動作する、シンプルな API レイヤです。2 つの関数が公開されています: 'XMLin()' と 'XMLout()' 。注意: "
+"小文字版の関数名を利用することもできます: 'xml_in()', 'xml_out()'\n"
 "\n"
-"これら 2 つの関数を直接呼び出すのが最もシンプルなアプローチですが、必要であれ"
-"ばオブジェクト志向のインターフェイス (マニュアルページ内の \"OPTIONAL OO "
-"INTERFACE\" をお読みください) を利用することで、 *XML::Simple* オブジェクトの"
-"メソッドを呼び出すこともできます。オブジェクト志向のインターフェイスは、 SAX "
-"パイプラインの末尾でも利用することができます。"
+"これら 2 つの関数を直接呼び出すのが最もシンプルなアプローチですが、必要であればオブジェクト指向のインターフェイス (マニュアルページ内の \""
+"OPTIONAL OO INTERFACE\" をお読みください) を利用することで、 *XML::Simple* "
+"オブジェクトのメソッドを呼び出すこともできます。オブジェクト指向のインターフェイスは、 SAX パイプラインの末尾でも利用することができます。"
 
 #. leap/perl-XML-Twig/summary
 msgid "A perl module for processing huge XML documents in tree mode."
