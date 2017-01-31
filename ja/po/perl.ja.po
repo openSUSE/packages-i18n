@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-01-30 07:23+0000\n"
+"PO-Revision-Date: 2017-01-31 08:04+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -4944,11 +4944,15 @@ msgid ""
 "monitoring.  Applications include network statistics collection, security "
 "monitoring, network debugging, etc.\""
 msgstr ""
+"Net::Pcap は LBL pcap(3) ライブラリに対する Perl バインディングです。 libpcap 内の README では、 "
+"libpcap 自身を下記のように説明しています: \"ユーザレベルのパケットキャプチャを実施する、システムに依存しないライブラリです。 libpcap "
+"では低レベルなネットワーク監視に対して、可搬性のあるフレームワークを提供しています。ネットワークの統計情報やセキュリティの監視、ネットワークの不具合調査な"
+"どを実施するアプリケーション向けの仕組みです。\""
 
 #. tumbleweed/perl-Net-SSH2/summary
 #. leap/perl-Net-SSH2/summary
 msgid "Support for the SSH 2 protocol via libssh2"
-msgstr ""
+msgstr "libssh 経由で SSH 2 プロトコルに対応するモジュール"
 
 #. tumbleweed/perl-Net-SSH2/description
 #. leap/perl-Net-SSH2/description
@@ -4961,6 +4965,11 @@ msgid ""
 "the library, nothing below 1.5.0 should really be used (older versions were "
 "quite buggy and unreliable) and version 1.7.0 or later is recommended."
 msgstr ""
+"Net::SSH2 は libssh2 (http://www.libssh2.org) ライブラリに対する Perl のインターフェイスです。 "
+"SSH2 プロトコルに対応 (SSH1 には対応していません) し、 libssh2 が提供する鍵の交換や暗号化、圧縮などに対応しています。\n"
+"\n"
+"このモジュールは、非常に古いバージョンのライブラリを利用することでもコンパイルおよびリンクすることができますが、バージョン 1.5.0 "
+"以下のものは使用すべきではなく (古いバージョンにはバグが多く信頼性に欠けるため) 、 1.7.0 およびそれ以降のバージョンをお勧めしています。"
 
 #. tumbleweed/perl-Net-SSLeay/summary
 #. leap/perl-Net-SSLeay/summary
@@ -5023,9 +5032,8 @@ msgstr ""
 
 #. tumbleweed/perl-PAR-Packer/summary
 #. leap/perl-PAR-Packer/summary
-#, fuzzy
 msgid "PAR Packager"
-msgstr "texconfig パッケージ"
+msgstr "PAR パッケージャ"
 
 #. tumbleweed/perl-PAR-Packer/description
 #. leap/perl-PAR-Packer/description
@@ -5041,6 +5049,13 @@ msgid ""
 "'PAR-Packer' distribution so that PAR users need not necessarily have a C "
 "compiler."
 msgstr ""
+"このモジュールは *App::Packer::Backend* インターフェイスを実装するもので、単独で動作する実行ファイルや Perl スクリプト、 "
+"PAR ファイルなどを生成するための仕組みです。\n"
+"\n"
+"現時点では、このモジュールは内部的に *pp* が使用しているほか、 _contrib/gui_pp\\gpp_program も使用しています。\n"
+"\n"
+"PAR バージョン 0.97 の時点で、このモジュールと 'pp' などの関連ツールは PAR 配布物からは取り除かれ、 'PAR-Packer' "
+"の配布物として配布されるようになりました。これは、 PAR だけを使用したいユーザに対して、 C コンパイラが無くても使用できるようにするための措置です。"
 
 #. tumbleweed/perl-Package-Stash-XS/summary
 #. leap/perl-Package-Stash-XS/summary
@@ -5128,7 +5143,7 @@ msgstr ""
 #. tumbleweed/perl-Params-Classify/summary
 #. leap/perl-Params-Classify/summary
 msgid "Argument type classification"
-msgstr ""
+msgstr "パラメータタイプの分類"
 
 #. tumbleweed/perl-Params-Classify/description
 #. leap/perl-Params-Classify/description
@@ -5153,6 +5168,17 @@ msgid ""
 "This module is implemented in XS, with a pure Perl backup version for "
 "systems that can't handle XS."
 msgstr ""
+"このモジュールは様々なタイプテスト機能を提供します。これらはほとんどの Perl "
+"コードのやり方とは異なり、データの種類が何であるのかを判別するために用意されているものです。たとえば、パラメータとして与えられたデータの種類によって、"
+"その動作を変えるような (例えれば C++ 言語におけるオーバーロード関数など) 用途が考えられます。\n"
+"\n"
+"このモジュールで提供される関数には、 2 種類のものがあります。 1 "
+"つはデータタイプの分類のみを行なう機能で、パラメータのタイプを区別するための仕組みです。もう 1 "
+"つは、よくあるタイプの区別をパッケージ化しているもので、指定したパラメータが期待通りであるかどうかを識別するものです。関数は 2 "
+"つの種類を組にして提供されるため、複雑なタイプを強制するような仕組みも分類機能を利用すれば構築できるほか、 Params::Validate "
+"のような複雑な処理を行なうモジュールを作成するのも簡単に行なうことができます。\n"
+"\n"
+"このモジュールは XS で実装されていますが、 XS を処理できないシステム向けに Perl のみで実装されている版もあります。"
 
 #. tumbleweed/perl-Params-Util/summary
 #. leap/perl-Params-Util/summary
@@ -5283,7 +5309,7 @@ msgstr ""
 #. tumbleweed/perl-PerlIO-locale/summary
 #. leap/perl-PerlIO-locale/summary
 msgid "PerlIO layer to use the encoding of the current locale"
-msgstr ""
+msgstr "現在のロケールのエンコード方法を使用するための PerlIO レイヤ"
 
 #. tumbleweed/perl-PerlIO-locale/description
 #. leap/perl-PerlIO-locale/description
@@ -5296,11 +5322,16 @@ msgid ""
 "The encoding for the opened file will be set to the encoding corresponding "
 "to the locale currently in effect, if perl can guess it."
 msgstr ""
+"これは 'open' プラグマのファイルハンドル別のバージョンで、下記のような形式で利用することができます:\n"
+"\n"
+"    use open ':locale';\n"
+"\n"
+"開いたファイルのエンコーディングは、 Perl 側で推測可能な場合、現在のロケールに合わせて設定されます。"
 
 #. tumbleweed/perl-PerlIO-utf8_strict/summary
 #. leap/perl-PerlIO-utf8_strict/summary
 msgid "Fast and correct UTF-8 IO"
-msgstr ""
+msgstr "高速で正しい UTF-8 IO"
 
 #. tumbleweed/perl-PerlIO-utf8_strict/description
 #. leap/perl-PerlIO-utf8_strict/description
@@ -5308,6 +5339,8 @@ msgid ""
 "This module provides a fast and correct UTF-8 PerlIO layer. Unlike perl's "
 "default ':utf8' layer it checks the input for correctness."
 msgstr ""
+"このモジュールは、高速で正しい UTF-8 の PerlIO レイヤを提供します。 Perl の既定値である ':uf8' "
+"レイヤとは異なり、入力に対するチェックを実施します。"
 
 #. tumbleweed/perl-Pod-HtmlPsPdf/summary
 #. leap/perl-Pod-HtmlPsPdf/summary
@@ -5323,9 +5356,8 @@ msgstr ""
 
 #. tumbleweed/perl-Prima/summary
 #. leap/perl-Prima/summary
-#, fuzzy
 msgid "Perl Graphic Toolkit"
-msgstr "Perl の Web サービスツールキット"
+msgstr "Perl グラフィックツールキット"
 
 #. tumbleweed/perl-Prima/description
 #. leap/perl-Prima/description
@@ -5337,12 +5369,15 @@ msgid ""
 "present easily expandable set of widgets, written completely in perl and "
 "communicating with the system using Prima library calls."
 msgstr ""
+"このツールキットは、 core と external と呼ばれる 2 種類のクラスを組み合わせたものです。 core クラスは C "
+"言語でコーディングされ、 Perl 内で記述される各 Prima オブジェクトに対して、ベースラインを提供します。 C "
+"言語の使用範囲はツールキットに合わせられていますが、 Perl 領域からでもすべての力を生かすことができるようになっています。 external "
+"クラスはウイジェットに対する拡張の容易さを示すもので、 Perl のみで作られていて Prima ライブラリコールを経由して通信を行ないます。"
 
 #. tumbleweed/perl-Proc-ProcessTable/summary
 #. leap/perl-Proc-ProcessTable/summary
-#, fuzzy
 msgid "Perl extension to access the unix process table"
-msgstr "警告のためのメソッドを確認するための Perl 拡張"
+msgstr "Unix プロセステーブルにアクセスするための Perl 拡張"
 
 #. tumbleweed/perl-Proc-ProcessTable/description
 #. leap/perl-Proc-ProcessTable/description
@@ -5368,10 +5403,9 @@ msgstr ""
 
 #. tumbleweed/perl-RPM2/summary
 #. leap/perl-RPM2/summary
-#, fuzzy
 #| msgid "The RPM Package Manager"
 msgid "Perl bindings for the RPM Package Manager API"
-msgstr "RPM パッケージマネージャ"
+msgstr "RPM パッケージマネージャ API 向け Perl バインディング"
 
 #. tumbleweed/perl-RPM2/description
 #. leap/perl-RPM2/description
@@ -5379,12 +5413,14 @@ msgid ""
 "The RPM2 module provides an object-oriented interface to querying both the "
 "installed RPM database as well as files on the filesystem."
 msgstr ""
+"RPM2 モジュールは、インストールされている RPM "
+"データベースや、ファイルシステム内のファイルを問い合わせることができる、オブジェクト志向のインターフェイスを提供します。"
 
 #. tumbleweed/perl-Readonly-XS/summary
 #. leap/perl-Readonly-XS/summary
 msgid ""
 "Companion module for Readonly.pm, to speed up read-only scalar variables"
-msgstr ""
+msgstr "読み込み専用のスカラー値を高速化するための、 Readonly.pm に対するコンパニオンモジュール"
 
 #. tumbleweed/perl-Readonly-XS/description
 #. leap/perl-Readonly-XS/description
@@ -5394,6 +5430,9 @@ msgid ""
 "will use it for creating read-only scalars.  This results in a significant "
 "speed improvement.  This does not speed up read-only arrays or hashes."
 msgstr ""
+"これは Readonly.pm に対するコンパニオンモジュールです。なお、 Readonly::XS は直接使用しないでください。その代わり、"
+"このモジュールをインストールすると Readonly.pm 側でそれを自動的に検出し、読み込み専用のスカラー値を作成する際に、このモジュールを使用するよう"
+"になります。これにより、大きく性能を改善することができます。なお、読み込み専用の配列やハッシュに対しては動作しません。"
 
 #. tumbleweed/perl-Regexp-Shellish/summary
 #. leap/perl-Regexp-Shellish/summary
@@ -5407,6 +5446,8 @@ msgid ""
 "* and **, where ** is like * but matches /.  See compile_shellish for "
 "details."
 msgstr ""
+"シェルで使用されるような正規表現の機能を提供します。ワイルドカードとして使用できる文字としては、 ?, *, ** があります。なお、 ** は * "
+"と同じような動作をしますが、 / に対してもマッチします。詳しくは compile_shellish をお読みください。"
 
 #. tumbleweed/perl-SDL/summary
 #. leap/perl-SDL/summary
@@ -5445,6 +5486,10 @@ msgid ""
 "\n"
 " Authors:\tBjoern Hoehrmann, <bjoern@hoehrmann.de>"
 msgstr ""
+"SGML::Parser::OpenSP は OpenSP SGML および XML パーサに対するネイティブ Perl インターフェイスで、 C++ "
+"言語と XS で作られています。\n"
+"\n"
+" 作者:\tBjoern Hoehrmann, <bjoern@hoehrmann.de>"
 
 #. tumbleweed/perl-SGMLS/summary
 #. leap/perl-SGMLS/summary
@@ -5486,14 +5531,13 @@ msgstr ""
 #. tumbleweed/perl-Scalar-List-Utils/description
 #. leap/perl-Scalar-List-Utils/summary
 #. leap/perl-Scalar-List-Utils/description
-#, fuzzy
 msgid "Common Scalar and List utility subroutines"
-msgstr "GGZ を使用するのに必要な汎用ファイル"
+msgstr "汎用スカラー／リストユーティリティサブルーチン集"
 
 #. tumbleweed/perl-Scalar-String/summary
 #. leap/perl-Scalar-String/summary
 msgid "String aspects of scalars"
-msgstr ""
+msgstr "スカラー値の文字列化"
 
 #. tumbleweed/perl-Scalar-String/description
 #. leap/perl-Scalar-String/description
@@ -5511,11 +5555,19 @@ msgid ""
 "This module is implemented in XS, with a pure Perl backup version for "
 "systems that can't handle XS."
 msgstr ""
+"このモジュールは Perl のスカラー値の文字列部分を扱うためのものです。スカラー値には文字列値が設定されていますが、これは概念上、 ISO-8859-"
+"1 もしくは UTF-8 で内部的にエンコードされた Unicode コードポイントの並びとして解釈することができます。実際のところ、古いバージョンの "
+"Perl では、内部エンコーディングがそのようになっています。 Perl の文字列について詳しく知るには、これらの実装に関する詳細を知る必要があります。"
+"\n"
+"\n"
+"このモジュールは、エンコーディングで文字列を分類したり、必要な方法で文字列をエンコードするための関数を提供しています。\n"
+"\n"
+"なお、このモジュールは XS で実装されていますが、 XS を処理できないシステム向けに純粋 Perl 版も用意されています。"
 
 #. tumbleweed/perl-Scope-Upper/summary
 #. leap/perl-Scope-Upper/summary
 msgid "Act on upper scopes"
-msgstr ""
+msgstr "上位スコープでの処理"
 
 #. tumbleweed/perl-Scope-Upper/description
 #. leap/perl-Scope-Upper/description
@@ -5539,6 +5591,21 @@ msgid ""
 "\n"
 "  * uniquely identify contexts with uid and validate_uid."
 msgstr ""
+"このモジュールは、上位のスコープに制御が返る際に実行すべきコードを、実行時に定義することのできるモジュールです。現時点では、下記のような機能が用意されてい"
+"ます:\n"
+"\n"
+"  * reap による上位スコープに対するフック;\n"
+"\n"
+"  * localize_elem, localize_delete "
+"による変数、配列、ハッシュ値のローカル化、より高いコンテキスト内で関連するローカル化による要素の削除;\n"
+"\n"
+"  * unwind, yield, leave による上位レベルへの即時返却;\n"
+"\n"
+"  * want_at and context_info による上位コンテキストに関する情報の収集;\n"
+"\n"
+"  * uplevel による上位サブルーチンのスタックフレームに設定するサブルーチンの実行;\n"
+"\n"
+"  * uid, validate_uid による識別子の設定"
 
 #. tumbleweed/perl-Set-Crontab/summary
 #. leap/perl-Set-Crontab/summary
@@ -5620,9 +5687,8 @@ msgstr ""
 
 #. tumbleweed/perl-String-Approx/summary
 #. leap/perl-String-Approx/summary
-#, fuzzy
 msgid "Perl extension for approximate matching (fuzzy matching)"
-msgstr "警告のためのメソッドを確認するための Perl 拡張"
+msgstr "近似 (曖昧) マッチング向け Perl 拡張"
 
 #. tumbleweed/perl-String-Approx/description
 #. leap/perl-String-Approx/description
@@ -5637,6 +5703,14 @@ msgid ""
 "\n"
 " Authors:\tJarkko Hietaniemi <jhi@iki.fi>"
 msgstr ""
+"String::Approx は文字列のマッチングと置換処理を曖昧に行ないます。これにより、下記のようなエラーを疑似することができます: "
+"入力ミス、スペルミス、近い表現 (colour と color など), 汎用ミューテーション (GAG と ACT など), 略称 (McScot と "
+"MacScot など) 。\n"
+"\n"
+"注意: String::Approx "
+"は文字列のマッチング処理にのみ適切な仕組みであり、比較には適しません。また、テキストではなく文字列に対してのみ動作します。\n"
+"\n"
+" Authors:Jarkko Hietaniemi <jhi@iki.fi>"
 
 #. tumbleweed/perl-Sub-Identify/summary
 #. leap/perl-Sub-Identify/summary
@@ -5686,7 +5760,6 @@ msgstr ""
 "'is_sub_constant' はサブルーチンが定数であるかどうかを真偽値で返します。"
 
 #. tumbleweed/perl-Sub-Name/summary
-#, fuzzy
 msgid "(Re)name a sub"
 msgstr "サブルーチンの名前 (変更)"
 
@@ -5711,7 +5784,7 @@ msgstr "Symbol::Table は、 Perl のシンボルテーブルを簡単に扱う�
 #. leap/perl-Sys-CPU/summary
 msgid ""
 "Perl extension for getting CPU information. Currently only number of CPU[cut]"
-msgstr ""
+msgstr "CPU 情報 (現時点では CPU 数) を取得する Perl 拡張"
 
 #. tumbleweed/perl-Sys-CPU/description
 #. leap/perl-Sys-CPU/description
@@ -5721,23 +5794,26 @@ msgid ""
 "speed. While much of the code is from UNIX::Processors, win32 support has "
 "been added (but not tested)."
 msgstr ""
+"perlmonks.org への回答として作成された、システムの CPU 数を数えるモジュールです。現在は CPU "
+"の種類とクロックスピードも取得することができます。コードのうちの多くは UNIX::Processors からのものですが、 win32 "
+"サポートも追加されています (ただしテストは行なわれていません) 。"
 
 #. tumbleweed/perl-Sys-LoadAvg/summary
 #. leap/perl-Sys-LoadAvg/summary
 msgid "Perl extension for accessing system CPU load averages"
-msgstr ""
+msgstr "CPU のロードアベレージにアクセスするための Perl 拡張"
 
 #. tumbleweed/perl-Sys-LoadAvg/description
 #. leap/perl-Sys-LoadAvg/description
 msgid ""
 "Algorithm::Annotate generates a list that is useful for generating output "
 "similar to 'cvs annotate'."
-msgstr ""
+msgstr "Algorithm::Annotate は、 'cvs annotate' に似た出力を生成する際に便利なリスト生成モジュールです。"
 
 #. tumbleweed/perl-Sys-Virt/summary
 #. leap/perl-Sys-Virt/summary
 msgid "Represent and manage a libvirt hypervisor connection"
-msgstr ""
+msgstr "libvirt ハイパーバイザ接続を管理するモジュール"
 
 #. tumbleweed/perl-Sys-Virt/description
 #. leap/perl-Sys-Virt/description
@@ -5746,11 +5822,13 @@ msgid ""
 "machine management APIs. This allows machines running within arbitrary "
 "virtualization containers to be managed with a consistent API."
 msgstr ""
+"Sys::Virt モジュールは libvirt 仮想マシン管理 API にバインディングするための Perl XS モジュールです。安定した API "
+"を通して、任意の仮想コンテナ内で動作するマシンにアクセスすることができます。"
 
 #. tumbleweed/perl-SystemPerl/summary
 #. leap/perl-SystemPerl/summary
 msgid "SystemPerl Language Extension to SystemC"
-msgstr ""
+msgstr "SystemC に対する SystemPerl 言語拡張"
 
 #. tumbleweed/perl-SystemPerl/description
 #. leap/perl-SystemPerl/description
@@ -5764,22 +5842,25 @@ msgid ""
 "The concept of SystemPerl is based upon the AUTOS in the the verilog-mode "
 "manpage package for Emacs, by the same author."
 msgstr ""
+"SystemPerl は SystemC 言語の特定バージョンです。テキストを拡張するように設計されていて、言語ごとに作成するような手間を省いています。 "
+"sp_preproc を使用することで、 SystemPerl はコンパイル時に C++ 言語を利用して拡張することができるほか、単独の SystemC "
+"ファイルとして展開することもできます。\n"
+"\n"
+"SystemPerl の考え方は、 Emacs 向けの verilog モードパッケージにおける AUTOS (同一の作者) をベースにしています。"
 
 #. tumbleweed/perl-SystemPerl/perl-SystemPerl-devel/summary
 #. leap/perl-SystemPerl/perl-SystemPerl-devel/summary
-#, fuzzy
 msgid "Development files for perl-SystemPerl"
-msgstr "utempter 向け開発用ファイル"
+msgstr "perl-SystemPerl 向け開発用ファイル"
 
 #. tumbleweed/perl-SystemPerl/perl-SystemPerl-devel/description
 #. leap/perl-SystemPerl/perl-SystemPerl-devel/description
-#, fuzzy
 msgid ""
 "The perl-SystemPerl-devel package contains libraries and header files for "
 "developing applications that use perl-SystemPerl."
 msgstr ""
-"libverto-devel パッケージには、 libverto を使用するアプリケーションをコンパイ"
-"ルおよび開発するのに必要な、ヘッダファイルとライブラリが含まれています。"
+"perl-SystemPerl-devel パッケージには、 perl-SystemPerl "
+"を使用するアプリケーションをコンパイルおよび開発するのに必要な、ヘッダファイルとライブラリが含まれています。"
 
 #. tumbleweed/perl-Task-Weaken/summary
 #. leap/perl-Task-Weaken/summary
@@ -5903,9 +5984,8 @@ msgstr ""
 
 #. tumbleweed/perl-Test-Taint/summary
 #. leap/perl-Test-Taint/summary
-#, fuzzy
 msgid "Tools to test taintedness"
-msgstr "リモートデスクトップにアクセスするためのツール集です。"
+msgstr "汚染 (tainted) 状況をテストするツール"
 
 #. tumbleweed/perl-Test-Taint/description
 #. leap/perl-Test-Taint/description
@@ -5920,16 +6000,22 @@ msgid ""
 "easy ways to check and report on the taintedness of your data, in standard "
 "the Test::More manpage style."
 msgstr ""
+"汚染された (tainted) データとは信頼のできない発信源からのデータを意味する用語で、たとえばコマンドラインや Web アプリにおける GET "
+"または POST のデータを指します。なぜ汚染されたデータが問題になるのか、およびデータの汚染除去方法について、詳しくは perlsec "
+"マニュアルページをお読みください。\n"
+"\n"
+"このような汚染されたデータを扱うコードを作成している場合、単体テストではその動作を確認するため、汚染されたデータを用意する必要がありますが、"
+"このモジュールではそのような汚染データを Test::More のような標準の形式で提供してチェックし、レポートを生成する機能を提供しています。"
 
 #. tumbleweed/perl-Test-YAML-Valid/summary
 #. leap/perl-Test-YAML-Valid/summary
 msgid "Test for valid YAML"
-msgstr ""
+msgstr "YAML の正当性のテスト"
 
 #. tumbleweed/perl-Test-YAML-Valid/description
 #. leap/perl-Test-YAML-Valid/description
 msgid "This module lets you easily test the validity of YAML."
-msgstr ""
+msgstr "このモジュールを利用することで、 YAML の正当性を簡単にテストすることができるようになります。"
 
 #. tumbleweed/perl-Text-Aspell/summary
 #. leap/perl-Text-Aspell/summary
@@ -5961,12 +6047,27 @@ msgid ""
 "object is created that dictionary will be used. I.e. setting \"lang\" after "
 "the speller object is created will have no effect."
 msgstr ""
+"このモジュールは GNU Aspell ライブラリに対する Perl のインターフェイスです。このモジュールは、単一のセッション内で多数の単語を 1 "
+"つずつ検索したい用途に適合するように作られていて、たとえばメモり内にある文書のスペルチェックなどに使用することができます。\n"
+"\n"
+"GNU C インターフェイスについて、詳しくは下記をお読みください:\n"
+"\n"
+"    http://aspell.net/man-html/Through-the-C-API.html#Through-the-C-API\n"
+"\n"
+"設定方法や speller (管理) オブジェクトの作成について、詳しくは上記をお読みください。また、 Aspell C API を使用する際の作業は、 "
+"Text::Aspell モジュール内に隠蔽される仕組みになっています。\n"
+"\n"
+"たとえば Text::Aspell では、 speller オブジェクトを明示的に作成する必要はありません。 speller (管理) オブジェクトは、 "
+"suggest() や check() を初めて実行した際に自動的に作成されます。\n"
+"\n"
+"なお、いったん speller オブジェクトが作成されてしまうと、設定項目によっては変更できないものがあることにご注意ください。たとえば、 \""
+"lang\" (Aspell が使用する辞書の設定) などのオプションなどがそれにあたります。 speller オブジェクトがいったん作成されてしまうと、"
+" \"lang\" オプションの設定を変更しても、効果がありません。"
 
 #. tumbleweed/perl-Text-BibTeX/summary
 #. leap/perl-Text-BibTeX/summary
-#, fuzzy
 msgid "Interface to read and parse BibTeX files"
-msgstr "ELF ファイルの読み書きを行なうライブラリ"
+msgstr "BibTeX ファイルの読み込みと処理のインターフェイス"
 
 #. tumbleweed/perl-Text-BibTeX/description
 #. leap/perl-Text-BibTeX/description
@@ -5992,6 +6093,20 @@ msgid ""
 "the rest of this manual page (and in most of the other manual pages in the "
 "library)."
 msgstr ""
+"'Text::BibTeX' モジュールは主に、コード向けおよびドキュメンテーション向けのライブラリである 'Text::BigTeX' "
+"ライブラリに対して、高レベルな導入部として動作するものです。コードは BibTeX ファイルを処理するために 2 種類の基本モジュール "
+"('Text::BibTeX::File' および 'Text::BibTeX::Entry') を読み込む仕組みで、このドキュメンテーションでは、含まれ"
+"る個別のモジュールに対するドキュメンテーションには掲載されていないような、広範囲の概要を説明しています。\n"
+"\n"
+"これに加えて、 'Text::BibTeX' モジュールは、 BibTeX データを処理する際に便利な多数の様々な関数 "
+"(汎用データベースファイルではなく、特に BibTeX 0.99 で定義されている文献情報からのもの)  "
+"も提供しています。これらの関数は、主に文献データ固有のものであったり、 (特定の BibTeX 項目に結びつくものではなく) "
+"汎用の文字列に対して動作するものであることから、  'Text::BigTeX::Entry' "
+"クラスに代表されるようなオブジェクト志向のクラス構造にはうまく当てはまりません。これらも本ドキュメンテーションで記述しています。詳しくは \""
+"MISCELLANEOUS FUNCTIONS\" をお読みください。\n"
+"\n"
+"なお、ここで説明している各モジュールは 'Text::BibTeX' の接頭辞で始まります。モジュール名を簡潔にする理由から、"
+"多くのクラスやモジュール名の説明 (およびライブラリ内のマニュアルページ) ではこの接頭辞は省略してありますので、ご注意ください。"
 
 #. tumbleweed/perl-Text-CSV_XS/summary
 #. leap/perl-Text-CSV_XS/summary
@@ -6050,6 +6165,11 @@ msgid ""
 "\n"
 "The example code describes the interface on http://hunspell.sf.net"
 msgstr ""
+"このモジュールは *Hunspell* ライブラリに対する Perl "
+"のインターフェイスを提供します。このモジュールは、メモリ内での文書のスペルチェックなど、単一のセッション内で多数の単語を 1 "
+"つずつ検索するような要件に適合しています。\n"
+"\n"
+"インターフェイスに関するサンプルコードは、 http://hunspell.sf.net をご覧ください。"
 
 #. tumbleweed/perl-Text-Iconv/summary
 #. leap/perl-Text-Iconv/summary
@@ -6102,9 +6222,8 @@ msgstr ""
 
 #. tumbleweed/perl-Text-Soundex/summary
 #. leap/perl-Text-Soundex/summary
-#, fuzzy
 msgid "Implementation of the soundex algorithm"
-msgstr "UPnP 仕様の Python 実装"
+msgstr "soundex アルゴリズムの実装"
 
 #. tumbleweed/perl-Text-Soundex/description
 #. leap/perl-Text-Soundex/description
