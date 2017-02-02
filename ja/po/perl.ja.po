@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-01-31 08:04+0000\n"
+"PO-Revision-Date: 2017-02-02 09:02+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -6271,6 +6271,40 @@ msgid ""
 "    use Text::Soundex;     print soundex(\"Ashcraft\"), \"\\n\";       # "
 "prints: A226     print soundex_nara(\"Ashcraft\"), \"\\n\";  # prints: A261"
 msgstr ""
+"Soundex は英語での発音順に名前を並べ替えるアルゴリズムです。このプロジェクトは、同じ発音の単語を同じ表現にエンコードすることで、細かいスペルミスに"
+"関わらず検索できるようにすることを目的としています。 Soundex は既知のすべてのアルゴリズムの中でもっともよく知られていて、かつしばしば (誤って)"
+" 用いられるアルゴリズム \"phonetic algorithm\" を使用しています。 Soundex に対する改善は、"
+"多数のモダンなアルゴリズムに対するベースともなっています (Wikipedia, 2007) 。\n"
+"\n"
+"このモジュールは、 1918 年および 1922 年に特許となり、 Robert Russell 氏と Margaret Odell "
+"氏が開発したオリジナルの soundex アルゴリズムのほか、 US census data で使用され、現在し National Archives "
+"and Records Administration (NARA) がメンテナンスしている \"American Soundex\" "
+"と呼ばれる派生物を実装しています。\n"
+"\n"
+"soundex アルゴリズムは Donald Knuth 氏の *The Art of Computer Programming* でも言及されていて、 "
+"Knuth 氏は NARA アルゴリズムと表現しています。\n"
+"\n"
+"soundex エンコーディングを使用していない文字列を指定した場合、それに対する返り値は '$Text::Soundex::nocode' "
+"を利用して設定されます。既定値は 'undef' ですが、 ''Z000'' のような値を代替的に用いる場合もあります。\n"
+"\n"
+"また、このモジュールの旧バージョンと互換性を維持するため、 '$Text::Soundex::nocode' は呼び出し元のネームスペース内に '$"
+"soundex_nocode' として公開されます。\n"
+"\n"
+"スカラーコンテキストでは、 'soundex()' は最初のパラメータの soundex コードを返します。リストコンテキストでは、各要素の "
+"soundex コードを 'soundex()' に渡した場合と同様に、リストを返します。たとえば、下記のコードは @codes に '('M200', "
+"'S320')' が設定されます:\n"
+"\n"
+"   @codes = soundex qw(Mike Stok);\n"
+"\n"
+"'Text::Soundex' を利用して US Censuses が使用する派生アルゴリズムのコードを生成したい場合は、下記のようにします:\n"
+"\n"
+"    use Text::Soundex;     $code = soundex_nara($name);\n"
+"\n"
+"アルゴリズムの違いにより、それぞれ下記のように表示されます:\n"
+"\n"
+"    use Text::Soundex;     print soundex(\"Ashcraft\"), \"\\n"
+"\";       # prints: A226     print soundex_nara(\"Ashcraft\"), \"\\n"
+"\";  # prints: A261"
 
 #. tumbleweed/perl-Time-modules/summary
 #. leap/perl-Time-modules/summary
@@ -6302,7 +6336,7 @@ msgstr ""
 
 #. tumbleweed/perl-TryCatch/summary
 msgid "first class try catch semantics for Perl, without source filters."
-msgstr ""
+msgstr "ソースフィルタを使用しない Perl 向け try-catch 機構"
 
 #. tumbleweed/perl-TryCatch/description
 msgid ""
@@ -6312,11 +6346,14 @@ msgid ""
 "subtle bugs, primarily that its far too easy to stomp on the error in error "
 "handlers. And also eval/if isn't the nicest idiom."
 msgstr ""
+"このモジュールは、他の言語 (Java, Python, C++) にも存在するような、 Perl "
+"内でエラーキャッチのためのよりわかりやすい文法を提供するものです。標準で提供される方式は 'eval {}; if ($@) {}' "
+"を使用するものでバグを引き起こしやすいものであるため、このモジュールはそのようなエラー処理をわかりやすくするものです。"
 
 #. tumbleweed/perl-Unicode-LineBreak/summary
 #. leap/perl-Unicode-LineBreak/summary
 msgid "UAX #14 Unicode Line Breaking Algorithm"
-msgstr ""
+msgstr "UAX #14 Unicode 改行アルゴリズム"
 
 #. tumbleweed/perl-Unicode-LineBreak/description
 #. leap/perl-Unicode-LineBreak/description
@@ -6325,11 +6362,14 @@ msgid ""
 "Standard Annex #14 [UAX #14]. East_Asian_Width informative property defined "
 "by Annex #11 [UAX #11] will be concerned to determine breaking positions."
 msgstr ""
+"Unicode::LineBreak は Unicode Standard Annex #14 [UAX #14] "
+"で規定されている改行アルゴリズムを実施します。改行を実施する際、 Annex #11 [UAX #11] で定義されている "
+"East_Asian_Width 情報プロパティも考慮されます。"
 
 #. tumbleweed/perl-Unicode-Map/summary
 #. leap/perl-Unicode-Map/summary
 msgid "maps charsets from and to utf16 unicode"
-msgstr ""
+msgstr "utf16 (Unicode) 文字コードセットマッピング処理"
 
 #. tumbleweed/perl-Unicode-Map/description
 #. leap/perl-Unicode-Map/description
@@ -6355,6 +6395,23 @@ msgid ""
 "enabling you to install own specific character sets. Refer to mkmapfile or "
 "file REGISTRY in the Unicode::Map hierarchy."
 msgstr ""
+"このモジュールは Unicode UCS2 形式の文字列変換を扱うモジュールです。マッピングにあたっては、 UTF8 の 1 バイトエンコードではなく、 "
+"UTF16 エンコードを利用した 2 バイトのエンコードを行ないます。\n"
+"\n"
+"歴史上の経緯から、このモジュールは Unicode::Map8 と共存しています。中国語の GB2312 など、 2 "
+"バイトの文字セットを扱う必要がある場合を除いて、 Unicode::Map8 をお使いください。もちろん基本的な機能 "
+"(詳しくはドキュメンテーションをお読みください) は、いずれのモジュールでも同じように動作します。\n"
+"\n"
+"実際のところ、このモジュールは Perl の中枢機能に Unicode "
+"マッピングのサポートが加えられることから、早かれ遅かれ消える運命にあります。この領域で何らかの作業を行ないたい場合は、臆することなく Gisle Aas "
+"氏にご連絡ください。\n"
+"\n"
+"また、このモジュールは utf8 を直接扱うことができません。 utf8 から utf16 に変換を行ないたい場合は、 Unicode::String "
+"をお使いください。\n"
+"\n"
+"文字コードのマッピングは Unicode::Map の階層構造内にあるバイナリマップファイルを基礎にしています。バイナリのマップファイルもこのモジュールで"
+"作成することができますが、これによって独自の文字コードセットを作成することができます。 Unicode::Map の階層構造について、詳しくは "
+"mkmapfile もしくは REGISTRY ファイルをお読みください。"
 
 #. tumbleweed/perl-Unicode-Map8/summary
 #. leap/perl-Unicode-Map8/summary
@@ -6377,7 +6434,7 @@ msgstr ""
 #. tumbleweed/perl-Unicode-Normalize/summary
 #. leap/perl-Unicode-Normalize/summary
 msgid "Unicode Normalization Forms"
-msgstr ""
+msgstr "Unicode 正規化フォーム"
 
 #. tumbleweed/perl-Unicode-Normalize/description
 #. leap/perl-Unicode-Normalize/description
@@ -6395,12 +6452,20 @@ msgid ""
 "'$code_point' to an unsigned integer, but pure Perl does not. Do not use a "
 "floating point nor a negative sign in '$code_point'."
 msgstr ""
+"バラメータ:\n"
+"\n"
+"'$string' は文字セマンティクスで扱われる文字列です (詳しくは _perlunicode_ をお読みください) 。\n"
+"\n"
+"'$code_point' は Unicode コードポイントを表わす符号無し整数です。\n"
+"\n"
+"注意: XSUB と純粋 Perl の間では、 '$code_point' を 10 進数の数値として解釈する際の非互換性が存在しています。 XSUB "
+"では '$code_point' を符号無し整数に変換しますが、純粋 Perl ではそれを行ないません。 '$code_point' "
+"には小数点、もしくは負の数値を入れてはなりません。"
 
 #. tumbleweed/perl-Unicode-String/summary
-#, fuzzy
 #| msgid "String of Unicode characters (UCS2/UTF16)"
 msgid "String of Unicode characters (UTF-16BE)"
-msgstr "Unicode 文字列 (UCS2/UTF16)"
+msgstr "Unicode 文字による文字列 (UTF-16BE)"
 
 #. tumbleweed/perl-Unicode-String/description
 msgid ""
@@ -6422,6 +6487,18 @@ msgid ""
 "visible by the API provided, but it might be useful to know in order to "
 "predict the efficiency of the provided methods."
 msgstr ""
+"'Unicode::String' オブジェクトは Unicode による文字の並びを保持するための仕組みです。メソッドとして、様々な外部形式 "
+"(エンコーディング) と 'Unicode::String' との相互変換機能が用意されているほか、一般的な文字列操作機能も提供されています。\n"
+"\n"
+"'Unicode::String' では utf32be(), utf32le(), utf16be(), utf16le(), utf8(), "
+"utf7(), latin1(), uhex(), uchr() "
+"の各関数をインポートしているほか、これらは対応するエンコーディングで文字列を初期化するコンストラクタとしても動作します。\n"
+"\n"
+"'Unicode::String' "
+"オブジェクトでは様々な演算子もオーバーロードしていて、これにより多くの場合、純粋な文字列操作のように扱うこともできます。\n"
+"\n"
+"なお、内部的には 'Unicode::String' はネットワークバイトオーダー (big endian) で 2 バイトの数値を表現しています。 "
+"API からはこのような表記を確認することはできませんが、メソッドの利用効率を考慮する際には便利な情報となるでしょう。"
 
 #. tumbleweed/perl-Unix-Syslog/summary
 #. leap/perl-Unix-Syslog/summary
@@ -6447,7 +6524,6 @@ msgid "Associate user-defined magic to variables from Perl"
 msgstr "ユーザ定義のマジックを Perl の変数に割り当てる機能"
 
 #. tumbleweed/perl-Variable-Magic/description
-#, fuzzy
 #| msgid ""
 #| "Magic is Perl's way of enhancing variables. This mechanism lets the user "
 #| "add extra data to any variable and hook syntactical operations (such as "
@@ -6476,47 +6552,42 @@ msgid ""
 "'substr()' lvalues, threads::shared variables... They all share the same "
 "underlying C API, and this module gives you direct access to it."
 msgstr ""
-"Magic とは変数を拡張するための Perl の仕組みです。これはユーザに対して、任意"
-"の変数内に追加データを設定し、スクリプト内での操作 (たとえばアクセスや代入、"
-"破壊など) をフックできるようになります。このモジュールを利用することで、XS の"
-"単一行を記述したりすることなく、独自の Magic を任意の変数に設定することができ"
-"ます。\n"
+"Magic とは変数を拡張するための Perl の仕組みです。これはユーザに対して、任意の変数内に追加データを設定し、スクリプト内での操作 "
+"(たとえばアクセスや代入、破壊など) をフックできるようになります。このモジュールを利用することで、XS の単一行を記述したりすることなく、独自の "
+"Magic を任意の変数に設定することができます。\n"
 "\n"
-"これらの Magic 変数はタイ変数によく似た仕組みであることがわかるはずです。これ"
-"は驚くようなことではありません。タイ変数も Magic の特殊系として実装されている"
-"からです。たとえば下記のような 'イレギュラー' な Perl 変数があります: '$!', "
-"'$(', '$^W' のようなスカラー変数や '%ENV' と '%SIG' のようなハッシュ、 "
-"'@ISA' のような配列や 'vec()' と 'substr()' のような lvalue 、 threads::"
-"shared の変数など。これらはすべて同じ C 言語 API をベースにしていて、このモ"
-"ジュールからそれらに直接アクセスできるようになります。"
+"これらの Magic 変数はタイ変数によく似た仕組みであることがわかるはずです。これは驚くようなことではありません。タイ変数も Magic "
+"の特殊系として実装されているからです。たとえば下記のような 'イレギュラー' な Perl 変数があります: '$!', '$(', '$^W' "
+"のようなスカラー変数や '%ENV' と '%SIG' のようなハッシュ、 '@ISA' のような配列や 'vec()' と 'substr()' "
+"のような lvalue 、 threads::shared の変数など。これらはすべて同じ C 言語 API "
+"をベースにしていて、このモジュールからそれらに直接アクセスできるようになります。"
 
 #. tumbleweed/perl-Verilog-Perl/summary
 #. leap/perl-Verilog-Perl/summary
 msgid "Verilog language utilities and parsing"
-msgstr ""
+msgstr "Verilog 言語ユーティリティと処理"
 
 #. tumbleweed/perl-Verilog-Perl/description
 #. leap/perl-Verilog-Perl/description
 msgid ""
 "The Verilog-Perl library is a building point for Verilog support in the Perl "
 "language."
-msgstr ""
+msgstr "Verilog-Perl ライブラリは、 Perl 言語内で Verilog サポートを行なうためのモジュールです。"
 
 #. tumbleweed/perl-WWW-Curl/summary
 #. leap/perl-WWW-Curl/summary
-#, fuzzy
 msgid "Perl extension interface for libcurl"
-msgstr "iptables 拡張インターフェイス"
+msgstr "libcurl 向け Perl 拡張インターフェイス"
 
 #. tumbleweed/perl-WWW-Curl/description
 #. leap/perl-WWW-Curl/description
 msgid "WWW::Curl is a Perl extension interface for libcurl."
-msgstr ""
+msgstr "WWW::Curl は libcurl に対する Perl の拡張インターフェイスです。"
 
 #. tumbleweed/perl-Want/summary
 #. leap/perl-Want/summary
 msgid "Generalisation of C<Wantarray>"
-msgstr ""
+msgstr "C<Wantarray> の生成"
 
 #. tumbleweed/perl-Want/description
 #. leap/perl-Want/description
@@ -6524,7 +6595,7 @@ msgid ""
 "This module generalises the mechanism of the *wantarray* function, allowing "
 "a function to determine in some detail how its return value is going to be "
 "immediately used."
-msgstr ""
+msgstr "このモジュールは *wantarray* 関数の仕組みを一般化するもので、関数に対して返す値の詳細を判断させるための仕組みです。"
 
 #. tumbleweed/perl-WeakRef/summary
 #. leap/perl-WeakRef/summary
@@ -6559,7 +6630,7 @@ msgstr ""
 #. tumbleweed/perl-Wx/summary
 #. leap/perl-Wx/summary
 msgid "Interface to the Wxwidgets Cross-Platform Gui Toolkit"
-msgstr ""
+msgstr "Wxwidgets クロスプラットフォーム GUI ツールキットに対するインターフェイス"
 
 #. tumbleweed/perl-Wx/description
 #. leap/perl-Wx/description
@@ -6570,6 +6641,10 @@ msgid ""
 "This module comes with extensive documentation in HTML format; you can "
 "download it from http://wxperl.sourceforge.net/"
 msgstr ""
+"Wx モジュールは wxWidgets (以前は wxWindows という名称でした) GUI ツールキットのラッパーです。\n"
+"\n"
+"このモジュールでは、 HTML 形式で広範囲のドキュメンテーションが提供されています。ダウンロードは "
+"http://wxperl.sourceforge.net/ から行なってください。"
 
 #. tumbleweed/perl-X11-Protocol/summary
 #. leap/perl-X11-Protocol/summary
@@ -6619,7 +6694,7 @@ msgstr ""
 #. tumbleweed/perl-XML-Bare/summary
 #. leap/perl-XML-Bare/summary
 msgid "Minimal XML parser implemented via a C state engine"
-msgstr ""
+msgstr "C ステートエンジンで実装されている最小 XML パーサー"
 
 #. tumbleweed/perl-XML-Bare/description
 #. leap/perl-XML-Bare/description
@@ -6639,11 +6714,19 @@ msgid ""
 "based loosely around the way multiplicity is handled in Perl regular "
 "expressions."
 msgstr ""
+"このモジュールは、 C 言語で実装された '複雑な機能のない' XML パーサーです。パーサー自身はシンプルなステートエンジンで動作し、 500 "
+"行未満の C コードでできています。このパーサーは入力テキストから C 言語の構造体ツリーを構築し、  C "
+"言語に対する基本的なコールバック関数を順次呼び出す Perl の関数を利用して Perl のハッシュに変換されます。\n"
+"\n"
+"パーサー自身は正しく閉じられていないタグを検出すると、解釈を中止します。その他の入力については検証されず、そのまま解釈されます。正当性をチェックしたい場合"
+"は、本モジュール内のテキーマチェッカーをお使いください。\n"
+"\n"
+"スキーマの形式は独自のもので、できるかぎりシンプルになるように作られています。多重度は Per の正規表現を利用して緩くチェックされます。"
 
 #. tumbleweed/perl-XML-Dumper/summary
 #. leap/perl-XML-Dumper/summary
 msgid "Perl module for dumping Perl objects from/to XML"
-msgstr ""
+msgstr "Perl のオブジェクトと XML との間を相互に変換するための Perl モジュール"
 
 #. tumbleweed/perl-XML-Dumper/description
 #. leap/perl-XML-Dumper/description
@@ -6660,16 +6743,24 @@ msgid ""
 "  Authors: \t\tMike Wong <mike_w3@pacbell.net> \t\tJonathan Eisenzopf "
 "<eisen@pobox.com>"
 msgstr ""
+"XML::Dumper は Perl のデータを XML 形式に出力することができます。また、以前にこのモジュールで作成した出力データの XML "
+"を読み込むこともできます。このほか、 XML をファイルに書き出したり、ファイルから読み込んだりすることもできます。 Perl "
+"のオブジェクトは元々のパッケージ方法に従って構築されるため、 XML から Perl "
+"のオブジェクトに再構築したシステムと同じシステムにモジュールをインストールすれば、動作は同じになります。同様に Perl "
+"オブジェクトを同じシステムで扱えば、動作も同じになります。\n"
+"\n"
+"  著者: \t\tMike Wong <mike_w3@pacbell.net> \t\tJonathan Eisenzopf "
+"<eisen@pobox.com>"
 
 #. tumbleweed/perl-XML-Entities/summary
 #. leap/perl-XML-Entities/summary
 msgid "Perl Module to decode Strings with XML Entities"
-msgstr ""
+msgstr "XML エンティティの文字列をデコードするための Perl モジュール"
 
 #. tumbleweed/perl-XML-Entities/description
 #. leap/perl-XML-Entities/description
 msgid "This module deals with decoding of strings with XML character entities."
-msgstr ""
+msgstr "このモジュールは、 XML の文字エンティティの文字列をデコードする処理を行ないます。"
 
 #. tumbleweed/perl-XML-LibXML/summary
 #. leap/perl-XML-LibXML/summary
@@ -6810,7 +6901,7 @@ msgstr ""
 #. tumbleweed/perl-XML-SAX-ExpatXS/summary
 #. leap/perl-XML-SAX-ExpatXS/summary
 msgid "Perl SAX 2 XS extension to Expat parser"
-msgstr ""
+msgstr "Expat パーサに対する Perl SAX2 XS 拡張"
 
 #. tumbleweed/perl-XML-SAX-ExpatXS/description
 #. leap/perl-XML-SAX-ExpatXS/description
@@ -6820,11 +6911,14 @@ msgid ""
 "sax/ for  Perl SAX API description. Any deviations from the Perl SAX 2.1 "
 "specification  are considered as bugs."
 msgstr ""
+"XML::SAX::ExpatXS は Expat XML パーサに対する直接的な XS 拡張です。 Perl SAX 2.1 "
+"インターフェイスを実装するものです。 Perl SAX API の説明について、詳しくは http://perl-xml.sourceforge.net"
+"/perl-sax/ をお読みください。 Perl SAX 2.1 仕様と異なる点があれば、それらはバグとして扱います。"
 
 #. tumbleweed/perl-XML-Writer-String/summary
 #. leap/perl-XML-Writer-String/summary
 msgid "Capture output from XML::Writer"
-msgstr ""
+msgstr "XML::Writer の出力に対するキャプチャ"
 
 #. tumbleweed/perl-XML-Writer-String/description
 #. leap/perl-XML-Writer-String/description
@@ -6841,6 +6935,14 @@ msgid ""
 "Author:\n"
 "-------     Simon Oliver <simon.oliver@umist.ac.uk>"
 msgstr ""
+"このモジュールは、 XML::Writer モジュールからのデータを捕捉する目的に特化したベアボーンクラスです。 XML::Writer は IO::"
+"Handle オブジェクトを入力として受け付け、 print() メソッドで指定したオブジェクト (または標準出力) に XML "
+"データを書き込みます。このモジュールは、必要な print() メソッドを提供する特定用途向けに、オブジェクトを疑似することも行ないます。\n"
+"\n"
+"なお、 $s->value() を整形のチェックに用いる場合、事前に $writer->end() を呼び出しておくことをお勧めします。\n"
+"\n"
+"著者:\n"
+"-------     Simon Oliver <simon.oliver@umist.ac.uk>"
 
 #. tumbleweed/perl-XML-XSLT/summary
 #. leap/perl-XML-XSLT/summary
@@ -6882,10 +6984,9 @@ msgstr ""
 #. tumbleweed/perl-autobox/summary
 #. leap/perl-autobox/summary
 msgid "Call Methods On Native Types"
-msgstr ""
+msgstr "ネイティブタイプでのメソッド呼び出し"
 
 #. tumbleweed/perl-autobox/description
-#, fuzzy
 #| msgid ""
 #| "The autobox pragma allows methods to be called on integers, floats, "
 #| "strings, arrays, hashes, and code references in exactly the same manner "
@@ -6913,21 +7014,17 @@ msgid ""
 "to be defined in a class whose name corresponds to the 'ref()' type of that "
 "value - or SCALAR if the value is a non-reference."
 msgstr ""
-"autobox pragma は整数や浮動小数、文字列や配列、ハッシュやコード参照などをブレ"
-"スと全く同じやり方で呼び出すことができます。\n"
+"autobox pragma は整数や浮動小数、文字列や配列、ハッシュやコード参照などをブレスと全く同じやり方で呼び出すことができます。\n"
 "\n"
-"autobox は透過的に動作します: ボックス内の値はそれらの (ユーザ定義の) 実装ク"
-"ラス内にブレスされることはなく (メソッドがそのようなブレス処理を意図的に選択"
-"しない限り) 、単にメソッドを呼び出すだけの処理にすることができます。\n"
+"autobox は透過的に動作します: 値はそれらの (ユーザ定義の) 実装クラス内にブレスされることはなく "
+"(メソッドがそのようなブレス処理を意図的に選択しない限り) 、単にメソッドを呼び出すだけの処理にすることができます。\n"
 "\n"
-"ネイティブな型がボックス化されているクラス (パッケージ) は、全てを設定するこ"
-"とができます。既定では非オブジェクト値で実行されたメソッドは、その値の "
-"'ref()' 型の関係づけられた名前のクラスで定義されているものと判断します。それ"
-"以外の場合は、値は非参照のスカラとして呼び出されます。"
+"ネイティブな型がボックス化されているクラス (パッケージ) は、全てを設定することができます。既定では非オブジェクト値で実行されたメソッドは、その値の "
+"'ref()' 型の関係づけられた名前のクラスで定義されているものと判断します。それ以外の場合は、値は非参照のスカラとして呼び出されます。"
 
 #. tumbleweed/perl-autovivification/summary
 msgid "Lexically disable autovivification"
-msgstr ""
+msgstr "autovivification の文法的な無効化"
 
 #. tumbleweed/perl-autovivification/description
 #. leap/perl-autovivification/description
@@ -6944,11 +7041,19 @@ msgid ""
 "This pragma lets you disable autovivification for some constructs and "
 "optionally throws a warning or an error when it would have happened."
 msgstr ""
+"未定義の変数に対して参照外しを行なうと、それらは暗黙のうちに (参照する側が期待するタイプに従って) "
+"配列もしくはハッシュ参照として扱われるようになります。このような動作を _autovivification_ と呼び、通常は期待通りの動作となります "
+"(たとえば値を代入する場合) が、自動的に変数の構造が変わってしまうことから、場合によっては不自然に感じてしまったりして、期待通りの結果にならない場合があ"
+"ります。特に複数段階の参照を扱っているような場合は、最後の要素レベルまで autovivification されてしまいますし、 'exists' "
+"のような読み込み専用の関数などでは予期しない結果になってしまいます。\n"
+"\n"
+"このプラグマを使用すると、 autovivification "
+"の仕組みをいくつかの構造に対して無効化し、必要であれば発生時に警告やエラーをスローすることができるようになります。"
 
 #. tumbleweed/perl-bareword-filehandles/summary
 #. leap/perl-bareword-filehandles/summary
 msgid "Disables Bareword Filehandles"
-msgstr ""
+msgstr "単純なファイルハンドルの無効化"
 
 #. tumbleweed/perl-bareword-filehandles/description
 #. leap/perl-bareword-filehandles/description
@@ -6957,6 +7062,8 @@ msgid ""
 "functions, except for the special builtin filehandles 'STDIN', 'STDOUT', "
 "'STDERR', 'ARGV', 'ARGVOUT' and 'DATA'."
 msgstr ""
+"このモジュールは、特別な内蔵ファイルハンドル ('STDIN', 'STDOUT', 'STDERR', 'ARGV', 'ARGVOUT', "
+"'DATA') を除き、内蔵関数を利用した単純なファイルハンドルを文法的に無効化します。"
 
 #. tumbleweed/perl/perl-base/description
 #. tumbleweed/perl/perl-base-32bit/description
@@ -7080,7 +7187,6 @@ msgstr ""
 "方法がどのような利点をもたらすのかについて、詳しく述べたものです。"
 
 #. tumbleweed/perl-gettext/summary
-#, fuzzy
 msgid "Message Handling Functions"
 msgstr "メッセージ処理関数"
 
@@ -7153,11 +7259,69 @@ msgid ""
 "to translate the returned messages to the character encoding given by "
 "*codeset* if the encoding of the message catalog is known."
 msgstr ""
+"gettext モジュールは Perl に対して gettext() "
+"ファミリへのアクセス機能を提供するモジュールで、国際化ソフトウエアで構築されたデータベースから、文字列を取得する機能を提供します。\n"
+"\n"
+"* $d = Locale::gettext->domain(DOMAIN)\n"
+"\n"
+"* $d = Locale::gettext->domain_raw(DOMAIN)\n"
+"\n"
+"  上記のメソッドは *DOMAIN* で指定された領域 (ドメイン) "
+"に対して、文字列を取得するための新しいオブジェクトを作成し、作成したオブジェクトを返します。 'domain' メソッドは Perl の文字列 "
+"(おそらくはワイドキャラクタを含む文字列) として文字列を返すようにしますが、 'domain_raw' メソッドでは 'dgettext()' "
+"のようにオクテット文字列を直接返すようにします。\n"
+"\n"
+"* $d->get(MSGID)\n"
+"\n"
+"  'dgettext()' を呼び出して、指定した *MSGID* メッセージの翻訳済み文字列を返します。\n"
+"\n"
+"* $d->cget(MSGID, CATEGORY)\n"
+"\n"
+"  'dcgettext()' を呼び出して、指定した *CATEGORY* (分類) 内の *MSGID* メッセージの翻訳済み文字列を返します。\n"
+"\n"
+"* $d->nget(MSGID, MSGID_PLURAL, N)\n"
+"\n"
+"  'dngettext()' を呼び出して、指定した *N* の値に従って *MSGID* (単数の場合) または *MSGID_PLURAL* "
+"メッセージの翻訳済み文字列を返します。\n"
+"\n"
+"* $d->ncget(MSGID, MSGID_PLURAL, N, CATEGORY)\n"
+"\n"
+"  'dngettext()' を呼び出して、 *CATEGORY* (分類) 内であり、かつ 指定した *N* の値に従って *MSGID* "
+"(単数の場合) または *MSGID_PLURAL* メッセージの翻訳済み文字列を返します。\n"
+"\n"
+"* $d->dir([NEWDIR])\n"
+"\n"
+"  *NEWDIR* を指定すると、 'bindtextdomain' を呼び出して、 '$d' "
+"で表わされる領域向けのメッセージがあるディレクトリの名前を設定します。返される値は、 (おそらく変更済みの) 現在のディレクトリになります。\n"
+"\n"
+"* $d->codeset([NEWCODE])\n"
+"\n"
+"  たとえば 'Locale::gettext->domain_raw' で作成した場合、返される文字列の文字セットを変更します。 *NEWCODE* "
+"が指定された場合は、 'bind_textdomain_codeset' を呼び出して、 '$d' "
+"で表わされるドメインに対ししてメッセージの文字エンコーディングを設定します。返される値は、 (おそらく変更済みの) 現在のエンコーディング名になります。"
+"\n"
+"\n"
+"gettext(), dgettext(), dcgettext() は、現在のロケールのコンテキスト内で、 'msgid' "
+"パラメータに該当する文字列を取得します。 dcgettext() はメッセージの分類とドメインの両方をパラメータとして取りますが、 dgettext() "
+"は分類が LC_MESSAGES であるものとして取得し、 gettext() は現在の分類が LC_MESSAGES "
+"で、かつ現在のテキストドメインであるものとして取得します。文字列が見つからない場合は、 'msgid' を返します。\n"
+"\n"
+"ngettext(), dngettext(), dcngettext() "
+"関数はそれぞれ似たような実装になっていますが、単一形と複数形で異なるメッセージを設定することができます。詳しくは C "
+"言語の関数に関するドキュメンテーションをお読みください。\n"
+"\n"
+"textdomain() は現在のテキストドメインを設定し、以前のテキストドメインを返します。\n"
+"\n"
+"_bindtextdomain(domain, dirname)_ は、ディレクトリ 'dirname' 内のドメイン 'domain' "
+"に属するデータベースを検索するための取得関数です。\n"
+"\n"
+"_bind_textdomain_codeset(domain, codeset)_ は、メッセージカタログのエンコーディングが既知のものであった場合、 "
+"*codeset* で返却されたメッセージを変換する関数です。"
 
 #. tumbleweed/perl-local-lib/perl-homedir/summary
 #. leap/perl-local-lib/perl-homedir/summary
 msgid "Per-user Perl local::lib setup"
-msgstr ""
+msgstr "ユーザごとの Perl local::lib 設定"
 
 #. tumbleweed/perl-local-lib/perl-homedir/description
 #. leap/perl-local-lib/perl-homedir/description
@@ -7170,11 +7334,16 @@ msgid ""
 "If you want your users to be able to install and use their own Perl modules, "
 "install this package."
 msgstr ""
+"perl-homedir は、ユーザのログイン時、自動的にユーザの $HOME (ホームディレクトリ) 内に ~/perl5 "
+"ディレクトリを作成してシステムを設定する機能を提供します。これにより、各ユーザが独自の CPAN パッケージを構築して、 $HOME "
+"ディレクトリ内に保存できるようになります。追加の設定や特権などは不要ですし、システム全体にパッケージをインストールする必要もありません。\n"
+"\n"
+"ユーザに対して独自の Perl モジュールのインストールを許可したい場合は、このパッケージをインストールしてください。"
 
 #. tumbleweed/perl-indirect/summary
 #. leap/perl-indirect/summary
 msgid "Lexically warn about using the indirect method call syntax"
-msgstr ""
+msgstr "間接的なメソッド呼び出し文法を使用した際に文法上の警告を生成するモジュール"
 
 #. tumbleweed/perl-indirect/description
 msgid ""
@@ -7193,6 +7362,18 @@ msgid ""
 "\n"
 "This module is *not* a source filter."
 msgstr ""
+"有効化すると、お使いのコード内に間接的なメソッド呼び出しが存在すると、このプラグマが警告を発するようになります。\n"
+"\n"
+"間接文法は現在、解釈が曖昧であったり、エラーを引き起こす元凶となってしまっていることから、有害なものとして扱われています: たとえばサブルーチン "
+"'foo' が現在のパッケージ内で定義されていない場合、 'foo $x' は '$x->foo' にコンパイルされますし、 'foo { key => "
+"1}' は ''key'->foo(1)' にコンパイルされてしまいます。このような構造を避けるべき理由について、詳しくは REFERENCES "
+"をご覧ください。\n"
+"\n"
+"このプラグマでは、現在中枢関数 ('print', 'say', 'exec', 'system') "
+"に対しては警告を発さないように作られていますが、将来のバージョンで変更される可能性があるほか、 'unimport' "
+"にオプションを渡すことで有効化できるような、オプションの機能が追加される可能性があります。\n"
+"\n"
+"このモジュールはソースフィルタ *ではありません* 。"
 
 #. tumbleweed/perl-ldap/summary
 #. leap/perl-ldap/summary
@@ -7257,7 +7438,7 @@ msgstr "perl-libxml-perl は、 XML 処理を行なうための Perl モジュ�
 #. tumbleweed/perl-local-lib/summary
 #. leap/perl-local-lib/summary
 msgid "Create and Use a Local Lib/ for Perl Modules with Perl5lib"
-msgstr ""
+msgstr "Perl5lib で Perl モジュール向けのローカルライブラリを作成して使用するモジュール"
 
 #. tumbleweed/perl-local-lib/description
 #. leap/perl-local-lib/description
@@ -7276,11 +7457,21 @@ msgid ""
 "hasn't applied a patch to a module of theirs that you need for your "
 "application."
 msgstr ""
+"このモジュールは、ユーザのホームディレクトリ内に配置されているローカルの Perl "
+"モジュールに対して、そのブートストラップを素早く簡単に行なうための仕組みです。そのほか、ユーザのカレントシェル ('SHELL' "
+"環境変数で指定されているシェル) "
+"に対して適切な文法を利用して、環境変数の一覧を構築して出力する機能も用意されています。これはシェルの設定ファイルに直接追加できるようにするための措置です。"
+"\n"
+"\n"
+"もっと一般的には、 local::lib は Perl の '@INC' 外にある Perl "
+"のモジュール用ディレクトリについて、そのブートストラップと使用を行なうための仕組みでもあります。これにより、アプリケーションが独自のバージョンの "
+"Perl モジュールのコピーを利用できるようになります。たとえばアップストリームのメンテナが、特定のモジュールに対するパッチを当てていないものの、そのパッ"
+"チを当てないとアプリケーションがうまく動作しないような場合などに有用です。"
 
 #. tumbleweed/perl-multidimensional/summary
 #. leap/perl-multidimensional/summary
 msgid "Disables Multidimensional Array Emulation"
-msgstr ""
+msgstr "多次元配列のエミュレーションの無効化"
 
 #. tumbleweed/perl-multidimensional/description
 #. leap/perl-multidimensional/description
@@ -7292,6 +7483,10 @@ msgid ""
 "This module lexically makes using multidimensional array emulation a fatal "
 "error at compile time."
 msgstr ""
+"Perl の多次元配列のエミュレーションは、言語が参照を保持していた時代に由来するものですが、現在はハッシュのスライスを '@' ではなく '$' "
+"で使用するようなタイプミスでのみ発生します。\n"
+"\n"
+"このモジュールは、多次元の配列エミュレーションを、コンパイル時の致命的な文法エラーとして報告する機能を提供します。"
 
 #. tumbleweed/perl-pcsc/summary
 #. leap/perl-pcsc/summary
@@ -7305,18 +7500,18 @@ msgid ""
 "communication layer with a wide variety of smart card readers through a "
 "standardized API."
 msgstr ""
+"PC/SC はスマートカードリーダに対する抽象レイヤを提供する仕組みです。様々なカードリーダーの通信レイヤを、標準化された API "
+"の元でアクセスできるようにします。"
 
 #. tumbleweed/perl-qpid/summary
 #. leap/perl-qpid/summary
-#, fuzzy
 msgid "Perl bindings for the Qpid messaging framework"
-msgstr "libsolv ライブラリ向け Perl バインディング"
+msgstr "Qpid メッセージングフレームワーク向け Perl バインディング"
 
 #. tumbleweed/perl-qpid/description
 #. leap/perl-qpid/description
-#, fuzzy
 msgid "Perl bindings for the Qpid messaging framework."
-msgstr "libsolv ライブラリ向け Perl バインディング"
+msgstr "Qpid メッセージングフレームワーク向け Perl バインディングです。"
 
 #. tumbleweed/perl-qt4/summary
 #. leap/perl-qt4/summary
@@ -7345,9 +7540,8 @@ msgstr ""
 
 #. tumbleweed/perl-version/summary
 #. leap/perl-version/summary
-#, fuzzy
 msgid "Perl extension for Version Objects"
-msgstr "OpenSSL を使用する Perl 拡張"
+msgstr "バージョンオブジェクト向け Perl 拡張"
 
 #. tumbleweed/perl-version/description
 #. leap/perl-version/description
@@ -7361,11 +7555,18 @@ msgid ""
 "\n"
 "  use version 0.77; # even for Perl v.5.10.0"
 msgstr ""
+"version オブジェクトは Perl 5.10 で追加された仕組みです。このモジュールは古いバージョンの Perl "
+"に対してバージョンオブジェクトを実装し、すべてのバージョンの Perl で version オブジェクトの API を利用できるようにします。 0.74 "
+"以前のリリースは廃止予定のもので、互換性を損なう形で変更が加えられているため、使用すべきではありません。バージョン 0.77 "
+"では標準の使い方として新しく 'parse', 'declare' の各メソッドが追加されています。そのため、お使いのコードでは最小のバージョンを "
+"0.77 として規定することを強くお勧めします:\n"
+"\n"
+"  use version 0.77; # Perl v.5.10.0 向け"
 
 #. tumbleweed/perl-Clipboard/clipboard/summary
 #. leap/perl-Clipboard/clipboard/summary
 msgid "Command-Line Utilities to Copy and Paste with any OS"
-msgstr ""
+msgstr "任意の OS でコピー＆ペーストを行なうためのコマンドラインユーティリティ"
 
 #. tumbleweed/perl-Clipboard/clipboard/description
 #. leap/perl-Clipboard/clipboard/description
@@ -7376,14 +7577,15 @@ msgid ""
 "\n"
 "This package contains several command-line utilities to manpulate clipboards."
 msgstr ""
+"初めてコピー＆ペーストを学んだ時の記憶がありますか？コピー＆ペーストによって、テキストは指数関数的に増えていきます。そう、クリップボードは魔法のような仕組"
+"みです。\n"
+"\n"
+"このパッケージには、クリップボードを操作するためのいくつかのコマンドラインユーティリティが含まれています。"
 
 #. tumbleweed/perl-Image-ExifTool/exiftool/summary
 #. leap/perl-Image-ExifTool/exiftool/summary
-#, fuzzy
 msgid "Customisable application to read and write meta information in files"
-msgstr ""
-"ファイル内のメタデータを読み書きするための、高度にカスタマイズ可能な Perl ス"
-"クリプト"
+msgstr "ファイル内のメタデータを読み書きするためのカスタマイズ可能なアプリケーション"
 
 #. tumbleweed/perl-Image-ExifTool/exiftool/description
 #. leap/perl-Image-ExifTool/exiftool/description
@@ -7409,16 +7611,15 @@ msgstr "注釈形式で変更点を表示"
 
 #. tumbleweed/perl-Algorithm-Annotate/description
 #. leap/perl-Algorithm-Annotate/description
-#, fuzzy
 msgid ""
 "Algorithm::Annotate generates a list that is useful for generating output "
 "simliar to 'cvs annotate'."
-msgstr "Algorithm::Annotate は、 CVS の注釈に似た形式の一覧を出力します。"
+msgstr "Algorithm::Annotate は、 'cvs annotate' に似た出力を生成する際に便利なリストを生成します。"
 
 #. tumbleweed/perl-Algorithm-C3/summary
 #. leap/perl-Algorithm-C3/summary
 msgid "A module for merging hierarchies using the C3 algorithm"
-msgstr ""
+msgstr "C3 アルゴリズムを利用して階層構造を合成するためのモジュール"
 
 #. tumbleweed/perl-Algorithm-C3/description
 #. leap/perl-Algorithm-C3/description
@@ -7434,14 +7635,18 @@ msgid ""
 "module. For more detailed information, see the the SEE ALSO manpage section "
 "and the links there."
 msgstr ""
+"このモジュールは C3 アルゴリズムを実装しています。なお、このモジュールは様々な要件に合わせるためにコピーを切り返している箇所があるため、モジュールを分"
+"解して対応しています。多くの用途では、クラスの構築やメタモデルに対して C3 "
+"を利用しますが、ローカルでの優先順位を維持するのに便利な仕組みを作る目的があることから、依存関係の解決などにも利用することができます。\n"
+"\n"
+"下記は Class::C3 モジュール内に書かれている C3 の概要例です。詳しくは SEE ALSO セクションとそのリンク先をお読みください。"
 
 #. tumbleweed/perl-Algorithm-CheckDigits/summary
 #. tumbleweed/perl-Algorithm-CheckDigits/description
 #. leap/perl-Algorithm-CheckDigits/summary
 #. leap/perl-Algorithm-CheckDigits/description
-#, fuzzy
 msgid "Perl extension to generate and test check digits"
-msgstr "LALR パーサを生成して使用するための Perl 拡張"
+msgstr "チェックディジットの生成とテストのための Perl 拡張"
 
 #. tumbleweed/perl-Algorithm-Diff/summary
 #. tumbleweed/perl-Algorithm-Diff/description
@@ -7456,19 +7661,19 @@ msgstr ""
 #. leap/perl-Alien-Tidyp/summary
 #. leap/perl-Alien-Tidyp/description
 msgid "Building, finding and using tidyp library - L<http://www.tidyp.com>"
-msgstr ""
+msgstr "tidyp ライブラリ (<http://www.tidyp.com>) の構築／検出／使用"
 
 #. tumbleweed/perl-Any-Moose/summary
 #. tumbleweed/perl-Any-Moose/description
 #. leap/perl-Any-Moose/summary
 #. leap/perl-Any-Moose/description
 msgid "(DEPRECATED) use Moo instead!"
-msgstr ""
+msgstr "(廃止予定) 代わりに Moo をお使いください！"
 
 #. tumbleweed/perl-AnyEvent-HTTP/summary
 #. leap/perl-AnyEvent-HTTP/summary
 msgid "Simple but Non-Blocking Http/Https Client"
-msgstr ""
+msgstr "シンプルながらも非ブロック型の http/https クライアント"
 
 #. tumbleweed/perl-AnyEvent-HTTP/description
 msgid ""
