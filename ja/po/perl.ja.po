@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-03 06:14+0000\n"
+"PO-Revision-Date: 2017-02-07 09:12+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -8363,10 +8363,13 @@ msgid ""
 "one module, App::MFILE::HTTP, which is used by App::MFILE::WWW, App::"
 "Dochazka::WWW, and App::Dochazka::CLI."
 msgstr ""
+"この配布物には、汎用的で再利用性のあるモジュールが含まれています。現時点では、 App::MFILE::HTTP "
+"と呼ばれるモジュールだけが含まれています。これはそれぞれ App::MFILE::WWW, App::Dochazka::WWW, "
+"App::Dochazka::CLI で使用されています。"
 
 #. tumbleweed/perl-App-MFILE-WWW/summary
 msgid "Web UI development toolkit with prototype demo app"
-msgstr ""
+msgstr "プロトタイプデモアプリが付属する Web UI 開発ツールキット"
 
 #. tumbleweed/perl-App-MFILE-WWW/description
 msgid ""
@@ -8391,11 +8394,24 @@ msgid ""
 "The distro comes with a prototype (demo) application to illustrate how the "
 "various widgets are used."
 msgstr ""
+"この配布物には、 Web アプリケーションの \"フロントエンド\" を開発するための基礎／フレームワーク／ツールキットが含まれています。\n"
+"\n"
+"App::MFILE::WWW は (Web::Machine をベースにして) HTTP のリクエスト／レスポンスヘッダや CSS, HTML "
+"ソースコードをブラウザ内の \"画面\" として提供する Plack アプリケーションです。このほか、様々な \"ウイジェット\" を画面内に表示し、"
+"それらに対してユーザからの入力を受け付けるための JavaScript コードも含まれています。\n"
+"\n"
+"これに加えて、ユーザ認証やセッション管理、 AJAX コールを介したバックエンドサーバとの通信などを行なうための、インフラストラクチャも含まれています。"
+"\n"
+"\n"
+"App::MFILE::WWW で構築されたフロントエンドは一般に、等幅の Unicode テキストを利用して、マウス無しでもキーボードだけで操作すること"
+"のできるメニューを中心に、動作する仕組みとなります。外観はテキストターミナルを使っていた時代のものを提供しています。\n"
+"\n"
+"この配布物には、様々なウイジェットに対する使用方法を説明するためのプロトタイプ (デモ) アプリケーションも含まれています。"
 
 #. tumbleweed/perl-App-Nopaste/summary
 #. leap/perl-App-Nopaste/summary
 msgid "Easy access to any pastebin"
-msgstr ""
+msgstr "任意の pastebin に対する簡易アクセス"
 
 #. tumbleweed/perl-App-Nopaste/description
 #. leap/perl-App-Nopaste/description
@@ -8416,12 +8432,24 @@ msgid ""
 "It's also modular: you only need to put on CPAN a App::Nopaste::Service::Foo "
 "module and anyone can begin using it."
 msgstr ""
+"pastebin (nopaste サイトとしても知られています) では、テキスト (主にソースコード) を投稿してそれを公開する機能を提供しています。"
+"様々な IRC チャンネルでは、このサイトを利用することで、冗長なテキストをそのまま貼り付けてしまわないようにしています (そのような理由から、 \""
+"nopaste\" (貼らないで) という名前がつけられています) 。\n"
+"\n"
+"各 pastebin のサイトは少しずつ異なります。いずれかの pastebin のサイトがダウンした場合 (たとえば http://"
+"paste.husk.org など) "
+"でも、別のサイトを利用することができますが、テキストを公開する際にスクリプトを利用しているような場合は、少し面倒です。\n"
+"\n"
+"このモジュールは、様々な pastebin サイトにおける差異を吸収し、冗長性を提供することを目的にしています: "
+"いずれかのサイトがダウンしても、そのまま別のサイトを利用できるようにします。\n"
+"\n"
+"また、このモジュールはサブモジュールを作成することもできます。 CPAN に対して App::Nopaste::Service::Foo "
+"のようなモジュールを投稿すれば、他の利用者から使うことができるようになります。"
 
 #. tumbleweed/perl-App-cpanminus/summary
 #. leap/perl-App-cpanminus/summary
-#, fuzzy
 msgid "Get, Unpack, Build and Install Modules From Cpan"
-msgstr "glib Perl モジュール"
+msgstr "CPAN 提供のモジュールの取得／展開／構築／インストール"
 
 #. tumbleweed/perl-App-cpanminus/description
 #. leap/perl-App-cpanminus/description
@@ -8432,11 +8460,14 @@ msgid ""
 "It's dependency free (can bootstrap itself), requires zero configuration, "
 "and stands alone. When running, it requires only 10MB of RAM."
 msgstr ""
+"cpanminus は CPAN が提供するモジュールを取得し、展開し、構築し、インストールするためだけのモジュールです。\n"
+"\n"
+"依存関係が無く (ブートストラップとして利用できます) 、設定不要で単独動作します。また、実行中は 10MB 程度の RAM で動作します。"
 
 #. tumbleweed/perl-App-perlbrew/summary
 #. tumbleweed/perl-App-perlbrew/description
 msgid "Manage perl installations in your C<$HOME>"
-msgstr ""
+msgstr "C<$HOME> 内での Perl インストールの管理"
 
 #. tumbleweed/perl-AppConfig/summary
 #. leap/perl-AppConfig/summary
@@ -8455,7 +8486,7 @@ msgstr ""
 #. tumbleweed/perl-Archive-Extract/summary
 #. leap/perl-Archive-Extract/summary
 msgid "Generic Archive Extracting Mechanism"
-msgstr ""
+msgstr "汎用書庫抽出メカニズム"
 
 #. tumbleweed/perl-Archive-Extract/description
 #. leap/perl-Archive-Extract/description
@@ -8469,11 +8500,18 @@ msgid ""
 "\n"
 "See the 'HOW IT WORKS' section further down for details."
 msgstr ""
+"Archive::Extract は汎用の書庫抽出メカニズムです。\n"
+"\n"
+"他の Perl モジュールのようにそれぞれ別々のインターフェイスやコマンドラインツールを利用したりすることなく、  .tar, .tar.gz, "
+".gz, .Z, tar.bz2, .tbz, .bz2, .zip, .xz,, .txz, .tar.xz, .lzma "
+"などの書庫を展開することができます。\n"
+"\n"
+"詳しくは 'HOW IT WORKS' セクションをお読みください。"
 
 #. tumbleweed/perl-Archive-Peek/summary
 #. leap/perl-Archive-Peek/summary
 msgid "Peek into archives without extracting them"
-msgstr ""
+msgstr "書庫を抽出せずにアクセスするモジュール"
 
 #. tumbleweed/perl-Archive-Peek/description
 #. leap/perl-Archive-Peek/description
@@ -8482,6 +8520,8 @@ msgid ""
 "currently supports tar files and zip files. To support Bzip2- compressed "
 "files, you should install IO::Uncompress::Bunzip2."
 msgstr ""
+"このモジュールは、書庫の内容に対して、それを抽出することなくアクセスする機能を提供します。現時点では tar, zip の各ファイルに対応しています。 "
+"bzip2 圧縮ファイルに対応するには、 IO::Uncompresss::Bunzip2 をインストールする必要があります。"
 
 #. tumbleweed/perl-Archive-Zip/summary
 #. leap/perl-Archive-Zip/summary
@@ -8510,11 +8550,24 @@ msgid ""
 "One can use Archive::Zip::MemberRead to read the zip file archive members as "
 "if they were files."
 msgstr ""
+"Archive::Zip モジュールは、 Perl プログラムから zip の書庫形式を作成／操作／読み込み／書き込みするためのモジュールです。\n"
+"\n"
+"新しい zip ファイルを作成したり、既存の zip ファイルを読み込んだりすることもできます。\n"
+"\n"
+"zip 形式の書庫を作成するにあたっては、ファイルやストリーム、文字列をそれぞれ書き込み先として指定することができます。書庫内のファイルに対しては、追加や"
+"削除、抽出や再配置、列挙などを行なうことができます。ファイル名の変更や日付の変更、コメントやその他の属性を問い合わせたり、修正したりすることもできます。こ"
+"れらの付属データは、圧縮することができるほか、非圧縮でも保存することができます。\n"
+"\n"
+"このほか、書庫内のファイルを既存の zip ファイルから作成することができるほか、既存のディレクトリやファイル、文字列から作成することもできます。\n"
+"\n"
+"このモジュールは、ファイル内の圧縮済みストリームを読み書きするにあたって、 Compress::Raw::Zlib を使用しています。\n"
+"\n"
+"なお、書庫内のファイルについては、 Archive::Zip::MemberRead を利用することで読み込むこともできます。"
 
 #. tumbleweed/perl-Array-Unique/summary
 #. leap/perl-Array-Unique/summary
 msgid "Tie-able array that allows only unique values"
-msgstr ""
+msgstr "ユニーク値のみを許可する tie 可能な配列"
 
 #. tumbleweed/perl-Array-Unique/description
 #. leap/perl-Array-Unique/description
@@ -8533,11 +8586,20 @@ msgid ""
 "\n"
 "As a side effect the module does not allow undef as a value in the array."
 msgstr ""
+"このパッケージには、それぞれの値が一度だけ現われることを許可する配列の機能を提供します。\n"
+"\n"
+"たとえば 42 という値を何度も投入しても、最初の 1 つだけが保持され、残りは廃棄されます。\n"
+"\n"
+"このモジュールは tie を介しても使用することができますし、 tie を利用すれば適切に動作します。\n"
+"\n"
+"値の唯一性は 'eq' 演算子を利用してチェックされるため、大文字と小文字を区別して保存します。\n"
+"\n"
+"また、このモジュールは undef の値は許可していません。"
 
 #. tumbleweed/perl-Authen-Passphrase/summary
 #. leap/perl-Authen-Passphrase/summary
 msgid "Hashed Passwords/Passphrases As Objects"
-msgstr ""
+msgstr "オブジェクト形式でのハッシュ済みパスワード／パスフレーズ"
 
 #. tumbleweed/perl-Authen-Passphrase/description
 #. leap/perl-Authen-Passphrase/description
@@ -8558,6 +8620,15 @@ msgid ""
 "Passphrase::BlowfishCrypt manpage. Most other schemes are too weak for new "
 "applications, and should be used only for backward compatibility."
 msgstr ""
+"このモジュールは、パスフレーズをカプセル化するためのオブジェクトのベースクラスです。このタイプのオブジェクトはパスフレーズを認識するものとして動作し、保持"
+"しているパスフレーズと入力されたパスフレーズが正しいかどうかを判断します。セキュリティ上の理由から、パスフレーズ認識用のオブジェクトは、自身のパスフレーズ"
+"そのものは保持おらず、それが正しいかどうかのみを判断することができます。このような動作を実現するための方法は様々ありますが、このクラスはその方法の詳細に関"
+"係なく、画一的なインターフェイスを提供することを目指しています。\n"
+"\n"
+"CPAN パッケージ Authen-Passphrase には、ベースクラスに加えていくつかの固有のパスフレーズ方式を実装しています。各方式におけるセキュ"
+"リティ情報について、詳しくは各クラスのメモをお読みください。新しいシステムでは使用するパスフレーズ方式を選択することもできます。お勧めは "
+"Authen::Passphrase::SaltedDigest もしくは Authen::Passphrase::BlowfishCrypt "
+"です。それ以外の方式は新しいアプリケーション向けには脆弱なものであり、後方互換性のためだけに使用すべきものです。"
 
 #. tumbleweed/perl-Authen-SASL/summary
 #. leap/perl-Authen-SASL/summary
@@ -8653,7 +8724,7 @@ msgstr ""
 #. tumbleweed/perl-B-Keywords/summary
 #. leap/perl-B-Keywords/summary
 msgid "Lists of reserved barewords and symbol names"
-msgstr ""
+msgstr "予約済みキーワードとシンボル名の一覧"
 
 #. tumbleweed/perl-B-Keywords/description
 #. leap/perl-B-Keywords/description
@@ -8675,11 +8746,25 @@ msgid ""
 "though some @Functions are not functions in the strict sense. Several "
 "library functions use more special symbols, handles and methods."
 msgstr ""
+"'B::Keywords' はいくつかの公開可能なキーワード配列を提供しています: '@Scalars', '@Arrays', '@Hashes', "
+"'@Filehandles', '@Symbols', '@Functions', '@Barewords', '@TieIOMethods', '@"
+"UNIVERSALMethods', '@ExporterSymbols'.\n"
+"\n"
+"'@Symbols' 配列には、 '@Scalars', '@Arrays', '@Hashes', '@Functions', '@"
+"Filehandles' のそれぞれの内容が含まれています。\n"
+"\n"
+"このほか、 '@Barewords' には '@Functions' 配列に加えて非関数型のキーワードや演算子が追加されています。\n"
+"\n"
+"追加や修正があれば、その旨お知らせいただけると幸いです。\n"
+"\n"
+"Perl のパーサは _regen/keywords.pl_ が提供する固定のキーワードリストを使用していますが、これはそれぞれ @Functions "
+"と @Barewords 内のキーワードのリストから構成されていますが、 @Functions "
+"には厳密には関数ではないものも含まれています。また、ライブラリによっては追加で特別なシンボルやハンドル、メソッドなどを使用することもあります。"
 
 #. tumbleweed/perl-Benchmark-Timer/summary
 #. leap/perl-Benchmark-Timer/summary
 msgid "Benchmarking with statistical confidence"
-msgstr ""
+msgstr "統計的な信頼性のあるベンチマーク"
 
 #. tumbleweed/perl-Benchmark-Timer/description
 #. leap/perl-Benchmark-Timer/description
@@ -8704,11 +8789,22 @@ msgid ""
 "portions of code in a rigorous way. You can also optionally choose to skip "
 "any number of initial trials to cut down on initial case irregularities."
 msgstr ""
+"Benchmark::Timer クラスはコードの処理時間を計測することのできるモジュールで、繰り返して処理することによりベンチマークとしても使用すること"
+"ができる仕組みです。ベンチマークというよりは処理時間を計測する目的で実行する場合は、より正確な時間を算出することができますが、プロファイリングとしてはあま"
+"り有用ではありません。\n"
+"\n"
+"使い方はシンプルで、 Benchmark::Timer オブジェクトを作成したあとは、 'start()' と 'stop()' の間に計測対象のコードを"
+"挟み込むだけです。このほか、コード内の複数の箇所で時間を測定したい場合は、それらのメソッドにタグを設定することもできます。また、エラーや信頼値を設定するこ"
+"とで、さらなるデータ収集のために 'need_more_samples()' を使用することもできます。\n"
+"\n"
+"コードを実行した後は、 'results()' メソッドを利用することで、実行にかかった時間に関する情報を取得することができるほか、 'report()"
+"' を実行することでベンチマーク結果を出力することもできます。何回もコードをテストすれば、平均時間も取得することができます。これは厳格な方法で時間に厳しい"
+"箇所のテストを実施するには、最適な仕組みです。必要であれば、不規則になりやすい初めのうちのデータを飛ばすこともできます。"
 
 #. tumbleweed/perl-Browser-Open/summary
 #. leap/perl-Browser-Open/summary
 msgid "Open a browser in a given URL"
-msgstr ""
+msgstr "指定した URL をブラウザで開くモジュール"
 
 #. tumbleweed/perl-Browser-Open/description
 #. leap/perl-Browser-Open/description
@@ -8725,22 +8821,29 @@ msgid ""
 "\"open_browser_cmd\" manpage or the \"open_browser_cmd_all\" manpage "
 "functions and then use whatever method you want to execute it."
 msgstr ""
+"ユーザのブラウザ内で指定した URL を開くことのできる関数を、任意で公開しています。\n"
+"\n"
+"OS 名ごとの既知のコマンド複数個設定されていて、それらのうちで最初に見つかったものが実行されます。オプションのバラメータを指定することで、すべての既知の"
+"コマンドをチェックすることもできます。\n"
+"\n"
+"\"open_browser\" では 'system()' 関数を利用してコマンドを実行しています。さらに細かい制御を行ないたい場合は、 \""
+"open_browser_cmd\" や \"open_browser_cmd_all\" 関数をそれぞれお使いになることもできます。"
 
 #. tumbleweed/perl-Business-ISBN/summary
 #. leap/perl-Business-ISBN/summary
 msgid "Work with International Standard Book Numbers"
-msgstr ""
+msgstr "国際標準図書番号 (ISBN) の処理のためのモジュール"
 
 #. tumbleweed/perl-Business-ISBN/description
 #. leap/perl-Business-ISBN/description
 msgid ""
 "This modules handles International Standard Book Numbers, including ISBN-10 "
 "and ISBN-13."
-msgstr ""
+msgstr "このモジュールは、国際標準図書番号 (ISBN-10, ISBN-13) を処理することができます。"
 
 #. tumbleweed/perl-Business-ISBN-Data/summary
 msgid "Data Pack for Business::Isbn"
-msgstr ""
+msgstr "Business::Isbn 向けデータパック"
 
 #. tumbleweed/perl-Business-ISBN-Data/description
 msgid ""
@@ -8768,19 +8871,37 @@ msgid ""
 "part is historical). If you want to see where the data are from, check "
 "'$Business::ISBN::country_data{_source}'."
 msgstr ""
+"ほとんどの場合、このモジュールを直接読み込む必要はありません。また、このモジュールを読み込むと、 'Business::ISBN' も読み込みます。\n"
+"\n"
+"これらのデータは ISBN エージェンシーが提供する _RangeMessage.xml_ から生成されたもので、一般的には https://www"
+".isbn-international.org/range_file_generation "
+"で提供されています。このファイルは配布物の一部として同梱されており、 _~lib/Business/ISBN/Data/"
+"RangeMessage.xml_ にインストールされます。\n"
+"\n"
+"これとは異なる _RangeMessage.xml_ ファイルを利用したい場合は、  'Business::ISBN' を読み込む前に "
+"'ISBN_RANGE_MESSAGE' "
+"環境変数に場所を指定してください。この方法が用意されていることにより、このモジュール自身の更新を待ったり、インストールしたりすることなく、最新の "
+"(もしくは古い) データを利用することができます。\n"
+"\n"
+"既定の _RangeMessage.xml_ が存在せず、代替の場所にも見つからなかった場合は、 _Data.pm_ "
+"内にあるデータを使用します。しかしながら、このデータはより古いデータになってしまっています。また、カレントディレクトリ内の "
+"_RangeMessage.xml_ も検索対象になっています。\n"
+"\n"
+"また、データは '%Business::ISBN::country_data' (\"country\" は歴史上の経緯で設定されているものです) "
+"にあります。どこからのデータであるのかを知りたい場合は、  '$Business::ISBN::country_data{_source}' "
+"をご確認ください。"
 
 #. tumbleweed/perl-Business-ISMN/summary
 #. tumbleweed/perl-Business-ISMN/description
 #. leap/perl-Business-ISMN/summary
 #. leap/perl-Business-ISMN/description
 msgid "work with International Standard Music Numbers"
-msgstr ""
+msgstr "国際標準楽曲番号 (ISMN) の処理のためのモジュール"
 
 #. tumbleweed/perl-Business-ISSN/summary
 #. leap/perl-Business-ISSN/summary
-#, fuzzy
 msgid "Perl extension for International Standard Serial Numbers"
-msgstr "XML ドキュメントを書き込むための Perl 拡張"
+msgstr "国際標準逐次刊行物番号 (ISSN) の処理のためのモジュール"
 
 #. tumbleweed/perl-Business-ISSN/description
 #. leap/perl-Business-ISSN/description
@@ -8805,6 +8926,20 @@ msgid ""
 "the   object-oriented interface and use the c<is_valid_checksum()> "
 "function   which is exportable on demand."
 msgstr ""
+"* new($issn)\n"
+"\n"
+"  コンストラクタでは、 ISSN を表わすスカラ値を受け付けます。\n"
+"\n"
+"  ISSN を表わす文字列には [0-9xX] 以外の文字が含まれることがありますが、それらは国際表記では削除されます。また、 ISSN "
+"はそれとわかるように文字列を生成します。最初の 7 桁はそれぞれ数字で、 8 桁目は数字もしくは 'x', 'X' のいずれかでなければなりません。\n"
+"\n"
+"  ISSN に渡される文字列は、 ISSN であると判断できれば必ずしも正しい形式でなくてもかまいません。この仕組みにより、 "
+"'fix_checksum' メソッドを利用することができます。\n"
+"\n"
+"  なお、 ISSN の値が正しいかどうかを判断したい場合は、コンストラクタに値を渡すのではなく、 'is_valid()' で検証してください。\n"
+"\n"
+"  ISSN のチェックだけを行なう目的であれば、オブジェクト志向のインターフェイスではなく、 C<is_valid_checksum()> "
+"関数を利用することもできます。こちらは必要に応じて公開される関数です。"
 
 #. tumbleweed/perl-CDDB_get/summary
 #. leap/perl-CDDB_get/summary
@@ -8858,7 +8993,7 @@ msgstr ""
 #. tumbleweed/perl-CGI-Ajax/summary
 #. leap/perl-CGI-Ajax/summary
 msgid "A perl-specific System for writing Asynchronous web Apps"
-msgstr ""
+msgstr "非同期 Web アプリを作成するための Perl 固有システム"
 
 #. tumbleweed/perl-CGI-Ajax/description
 #. leap/perl-CGI-Ajax/description
@@ -8895,6 +9030,29 @@ msgid ""
 "but still provide users with a variety of methods for deploying CGI::Ajax. "
 "And VERY little user javascript."
 msgstr ""
+"CGI::Ajax は単一の Perl コードを利用して、 JavaScript の有効化された HTML "
+"ページの提供のようなユニークな仕組みをもたらす、オブジェクト志向のモジュールです。 CGI::Ajax は、ドキュメントで定義されるイベント ("
+"onClick, onKeyUp など) を表わす公開メソッドへの関連づけを除き、面倒な JavaScript コードの作成の手間を省くことができます。 "
+"CGI::Ajax は、 HTML 内によく複雑な JavaScript を組み込むこともできます。\n"
+"\n"
+"CGI::Ajax は Web ページに対して、 1 つまたは複数の結果を返すメソッドに対応しています。また、 HTMLページ内の複数の DIV "
+"要素に対して、値を返すこともできます。\n"
+"\n"
+"CGI::Ajax を利用することで、 HTML のレイアウトやイベントに従って自動的に HTTP の GET/POST "
+"リクエストを作成することができるほか、 Perl 関数の出力に従ってページを動的に更新することもできます。これに加えて、 CGI::Ajax では "
+"URL と CGI::Ajax "
+"の関数名との間でマッピング機能も提供されています。これにより、コード処理とスクリプトを分けて記述することができるようになります。\n"
+"\n"
+"CGI::Ajax のアクセサメソッドを生成するための Class::Accessor モジュールを利用する以外に、 CGI::Ajax "
+"には自己完結型の仕組みも用意されています。巨大なパッケージや完全なコンテンツ管理システムなどを導入する必要もありません。\n"
+"\n"
+"他の CGI ハンドラ／デコーダモジュール、たとえば CGI::Simple や CGI::Minimal などのサポートも追加されていますが、我々は "
+"mod_perl2 を利用しているため、これらはテストされていません。 CGI::Ajax では CGI オブジェクト内で header() "
+"メソッドが利用可能かどうかを確認し、可能であればそれを使用します。利用できない場合は、独自に最小限のヘッダを生成します。 \n"
+"\n"
+"CGI::Ajax の主なゴールは、合理的で最大限に柔軟性のあるモジュールを維持し続けることにあります。生成された JavaScript "
+"はできる限り小さくなるように作られていますが、 CGI::Ajax では様々なメソッドを提供しています。もちろんユーザ側で作成すべき "
+"JavaScript もとても小さくなるようになっています。"
 
 #. tumbleweed/perl-CGI-Application/summary
 #. leap/perl-CGI-Application/summary
@@ -8943,7 +9101,7 @@ msgstr ""
 #. leap/perl-CGI-FastTemplate/summary
 msgid ""
 "Perl extension for managing templates, and performing variable interpolation"
-msgstr ""
+msgstr "テンプレートの管理と変数補完を実施するための Perl 拡張"
 
 #. tumbleweed/perl-CGI-FastTemplate/description
 #. leap/perl-CGI-FastTemplate/description
@@ -8955,11 +9113,16 @@ msgid ""
 "\n"
 "Author:\tJason Moore <jmoore@sober.com>"
 msgstr ""
+"CGI::FastTemplate では変数を実際の値に置き換える処理を行なう、テンプレートモジュールです。中規模もしくは大規模の Web "
+"アプリケーション (CGI, mod_perl) "
+"に向けて設計されており、アプリケーションのロジックと特定の実装仕様とを分離するための素晴らしい仕組みを提供しています。\n"
+"\n"
+"Author:\tJason Moore <jmoore@sober.com>"
 
 #. tumbleweed/perl-CGI-FormBuilder/summary
 #. leap/perl-CGI-FormBuilder/summary
 msgid "Easily generate and process stateful forms"
-msgstr ""
+msgstr "状態遷移機能のあるフォームの簡単生成"
 
 #. tumbleweed/perl-CGI-FormBuilder/description
 #. leap/perl-CGI-FormBuilder/description
@@ -8984,10 +9147,23 @@ msgid ""
 "\n"
 "Plus, the native HTML generated is valid XHTML 1.0 Transitional."
 msgstr ""
+"CGI::FormBuilder (FormBuilder) のゴールは、 CGI "
+"フォームをベースにしたアプリケーションに対して、その作成と処理を簡単にする方法を提供することになります。主な機能は下記の通りです:\n"
+"\n"
+"フィールドの抽象化: フィールドを (単なるパラメータではなく) エンティティとして参照することができます。 HTML の表現や CGI "
+"の値、検証などはそれぞれ各フィールドに対するプロパティとして設定します。\n"
+"\n"
+"直感性: 多数の \"便利機能\" (自動フィールド入力など) を内蔵しています。これにより、記述すべきコードが 1/5 になります。\n"
+"\n"
+"検証機能の内蔵化: 本格的な正規表現によるフィールド検証のほか、 JavaScript のコード生成機能なども用意されています。\n"
+"\n"
+"テンプレート対応: HTML::Template, Text::Template, Template ツールキット, CGI::FastTemplate "
+"など、外部のテンプレートエンジンへのプラグインで対応しています。\n"
+"\n"
+"これに加えて、生成された HTML は正しい XHTML 1.0 Transitional 形式になっています。"
 
 #. tumbleweed/perl-CGI-Session/summary
 #. leap/perl-CGI-Session/summary
-#, fuzzy
 msgid "Persistent Session Data in Cgi Applications"
 msgstr "CGI アプリケーション内での永続セッションデータ"
 
@@ -8997,11 +9173,12 @@ msgid ""
 "CGI::Session provides an easy, reliable and modular session management "
 "system across HTTP requests."
 msgstr ""
+"CGI:Session は、 HTTP リクエストをまたがって利用することのできる、簡単で信頼性のある、モジュール型のセッション管理機構を提供します。"
 
 #. tumbleweed/perl-CGI-Simple/summary
 #. leap/perl-CGI-Simple/summary
 msgid "A Simple totally OO CGI interface that is CGI.pm compliant"
-msgstr ""
+msgstr "CGI.pm に準拠するシンプルな完全 OO CGI インターフェイス"
 
 #. tumbleweed/perl-CGI-Simple/description
 #. leap/perl-CGI-Simple/description
@@ -9020,11 +9197,21 @@ msgid ""
 "In practical testing this module loads and runs about twice as fast as CGI."
 "pm depending on the precise task."
 msgstr ""
+"CGI::Simple は CGI.pm に対する比較的軽量な代替機能を提供します。パラメータの処理やファイルのアップロード、 Cookie "
+"の処理やヘッダの生成など、 CGI.pm と等価な OO "
+"インターフェイスを共有しています。このモジュールは全体的にオブジェクト志向の仕組みになっていますが、 CGI::Simple::Standard "
+"モジュールを利用すれば、完全に関数型のインターフェイスを利用することもできます。\n"
+"\n"
+"本質的に CGI.pm に内蔵されているすべての CGI (HTML を除く) "
+"関連機能が利用できます。このほか、新しいメソッドがいくつか追加されているほか、既存のメソッドにも追加の機能が用意されています。 CGI.pm "
+"と比べて廃止された機能について詳しく知りたい方は、末尾のセクションをお読みください。\n"
+"\n"
+"このモジュールに対する実際のテストでは、正確な処理で CGI.pm の 2 倍速く読み込まれ、動作しています。"
 
 #. tumbleweed/perl-CHI/summary
 #. leap/perl-CHI/summary
 msgid "Unified cache handling interface"
-msgstr ""
+msgstr "統一キャッシュ処理インターフェイス"
 
 #. tumbleweed/perl-CHI/description
 #. leap/perl-CHI/description
@@ -9041,11 +9228,19 @@ msgid ""
 "adhering to the basic Cache API but adding new features and addressing "
 "limitations in the Cache::Cache implementation."
 msgstr ""
+"CHI は統一的なキャッシュ API を提供するモジュールで、開発者に対して指定した期間だけデータを保持する仕組みを支援するためのものです。\n"
+"\n"
+"CHI のインターフェイスは、実際のデータの読み込みと保存、そして消去を行なうドライバクラスで実装されます。ドライバクラスはメモリや純粋なファイル、"
+"もしくはメモリマップ型のファイルや memcached, DBI など、様々なストレージバックエンド向けに用意されているほか、用意される予定があります。"
+"\n"
+"\n"
+"CHI は Dewitt Clinton 氏の Cache::Cache パッケージの進化版となるべく作られたモジュールで、基本的なキャッシュ API "
+"を維持しながら、新しい機能を追加したり、 Cache::Cache の実装内の制限に対応すべく作られています。"
 
 #. tumbleweed/perl-CLASS/summary
 #. leap/perl-CLASS/summary
 msgid "Alias for __PACKAGE__"
-msgstr ""
+msgstr "__PACKAGE__ に対する別名"
 
 #. tumbleweed/perl-CLASS/description
 #. leap/perl-CLASS/description
@@ -9054,6 +9249,9 @@ msgid ""
 "\n"
 "$CLASS has the additional benefit of working in strings."
 msgstr ""
+"CLASS および $CLASS はいずれも __PACKAGE__ に対する別名です。より入力しやすくなっています。\n"
+"\n"
+"$CLASS は、文字列内での処理にも利便性を提供します。"
 
 #. tumbleweed/perl-CPAN-Changes/summary
 msgid "Read and write Changes files"
@@ -9087,7 +9285,7 @@ msgstr ""
 #. tumbleweed/perl-CPAN-DistnameInfo/summary
 #. leap/perl-CPAN-DistnameInfo/summary
 msgid "Extract distribution name and version from a distribution filename"
-msgstr ""
+msgstr "配布物のファイル名からの名前とバージョンの抽出"
 
 #. tumbleweed/perl-CPAN-DistnameInfo/description
 #. leap/perl-CPAN-DistnameInfo/description
@@ -9148,11 +9346,56 @@ msgid ""
 "\n"
 "  The extracted version"
 msgstr ""
+"CPAN を中心とした多数のオンラインサービスでは、アップロード時のファイル名から配布物の名前を抽出して、アップロードを関連づける処理を行なっています。多"
+"くの配布物では、 その作成にあたって ExtUtils::MakeMaker や Module::Build を使用していますが、もしそうであれば簡単に唯"
+"一の名前を抽出することができます。しかしながら、すべてのアップロードがこの方法で作成されているわけではありません。\n"
+"\n"
+"'CPAN::DistnameInfo' は http://search.cpan.org/ で提供されている情報を学ぶことによる経験を利用して、ファイル"
+"名から配布物の名前とバージョンを抽出します。また、バージョンが開発者リリースであれば、その旨もレポートします。\n"
+"\n"
+"コンストラクタには 1 つのパス名を指定します。返されるオブジェクトには下記のメソッドを適用することができます:\n"
+"\n"
+"* cpanid\n"
+"\n"
+"  指定されたパスが CPAN のディレクトリパスであると考えられる場合は、 CPAN の作者名が設定されます。\n"
+"\n"
+"* dist\n"
+"\n"
+"  配布物の名前が設定されます。\n"
+"\n"
+"* distvname\n"
+"\n"
+"  任意の接頭辞と続くディレクトリ名が削除されたファイル名が設定されます。\n"
+"\n"
+"* filename\n"
+"\n"
+"  指定されたパスが CPAN のディレクトリパスであると考えられる場合は、検出された CPAN "
+"ディレクトリからの相対ファイル名になります。それ以外の場合は、入力されたパスがそのまま設定されます。\n"
+"\n"
+"* maturity\n"
+"\n"
+"  配布物の成熟度が設定されます。 'released' (リリース版) または 'developer' (開発者版) のいずれかになります。\n"
+"\n"
+"* extension\n"
+"\n"
+"  配布物の拡張子が設定されます。通常は書庫のタイプ (例: 'tar.gz') になります。\n"
+"\n"
+"* pathname\n"
+"\n"
+"  オブジェクトを作成した際に渡されたパス名が設定されます。\n"
+"\n"
+"* properties\n"
+"\n"
+"  キー／値のペアのリストが設定されます。ハッシュなどの既知のプロパティが設定されます。\n"
+"\n"
+"* version\n"
+"\n"
+"  抽出されたバージョンが設定されます。"
 
 #. tumbleweed/perl-CPAN-Meta/summary
 #. leap/perl-CPAN-Meta/summary
 msgid "The Distribution Metadata for a Cpan Dist"
-msgstr ""
+msgstr "CPAN 配布物に対する配布メタデータ"
 
 #. tumbleweed/perl-CPAN-Meta/description
 msgid ""
@@ -9169,23 +9412,32 @@ msgid ""
 "The documentation below is only for the methods of the CPAN::Meta object. "
 "For information on the meaning of individual fields, consult the spec."
 msgstr ""
+"CPAN に公開されたソフトウエア配布物には、 _META.json_ または _META.yml_ (古い配布物の場合) "
+"が存在していますが、これらは配布物の説明や内容物、そして構築やインストールを行なう際の依存関係が記されています。このデータ構造は CPAN::Meta::"
+"Spec 内の _META.json_ ファイル内に保存されています。\n"
+"\n"
+"CPAN::Meta は配布物のメタデータ (もしくは _distmeta_) "
+"を表わすシンプルなクラスを提供しているほか、それらのデータに問い合わせを行なうための便利なメソッドも用意されています。\n"
+"\n"
+"下記のドキュメンテーションは CPAN::Meta オブジェクトのメソッドのみが示されています。それぞれのフィールドに対する意味については、 spec "
+"ファイルをお読みください。"
 
 #. tumbleweed/perl-CPAN-Meta-Check/summary
 #. leap/perl-CPAN-Meta-Check/summary
 msgid "Verify requirements in a CPAN::Meta object"
-msgstr ""
+msgstr "CPAN::Meta オブジェクト内での要件検証"
 
 #. tumbleweed/perl-CPAN-Meta-Check/description
 #. leap/perl-CPAN-Meta-Check/description
 msgid ""
 "This module verifies if requirements described in a CPAN::Meta object are "
 "present."
-msgstr ""
+msgstr "このモジュールは、 CPAN::Meta オブジェクト内に示されている要件が満たされているかどうかを検証します。"
 
 #. tumbleweed/perl-CPAN-Meta-Requirements/summary
 #. leap/perl-CPAN-Meta-Requirements/summary
 msgid "Set of Version Requirements for a Cpan Dist"
-msgstr ""
+msgstr "CPAN 配布物に対するバージョン要件の設定"
 
 #. tumbleweed/perl-CPAN-Meta-Requirements/description
 #. leap/perl-CPAN-Meta-Requirements/description
@@ -9199,11 +9451,16 @@ msgid ""
 "Logically impossible constraints will be identified immediately by thrown "
 "exceptions."
 msgstr ""
+"CPAN::Meta::Requirements オブジェクトは、 CPAN の配布物内に存在し CPAN::Meta::Spec で定義されているほか、"
+" _META.yml_ もしくは _META.json_ ファイルで指定されているような、バージョン制約のセットをモデル化するものです。追加の制約を追加し"
+"ていくこともできるほか、シンプルにするためにそれらを縮小するようなこともできます。\n"
+"\n"
+"このほか、論理的に実現不可能な制約が現われた場合は、例外をスローする機能も用意されています。"
 
 #. tumbleweed/perl-CPAN-Meta-YAML/summary
 #. leap/perl-CPAN-Meta-YAML/summary
 msgid "Read and write a subset of YAML for CPAN Meta files"
-msgstr ""
+msgstr "CPAN メタファイル向けの YAML サブセットの読み書き"
 
 #. tumbleweed/perl-CPAN-Meta-YAML/description
 #. leap/perl-CPAN-Meta-YAML/description
@@ -9216,11 +9473,17 @@ msgid ""
 "responsible for proper encoding and decoding. In particular, the 'read' and "
 "'write' methods do *not* support UTF-8 and should not be used."
 msgstr ""
+"このモジュールは、 _META.yml_ や _MYMETA.yml_ のような CPAN メタデータファイルに対して、これを読み書きする際に使用する "
+"YAML 仕様のサブセットを実装するものです。汎用的な YAML の処理や生成の処理に使用すべきではありません。\n"
+"\n"
+"注意: _META.yml_ (および _MYMETA.yml_) ファイルは UTF-8 "
+"のエンコーディングであるべきものです。エンコーディングやデコーディングはユーザ側の責任で実施してください。特に UTF-8 に対応していない "
+"'read', 'write' のメソッドは使用すべきではありません。"
 
 #. tumbleweed/perl-CPAN-Mini/summary
 #. leap/perl-CPAN-Mini/summary
 msgid "Create a Minimal Mirror of Cpan"
-msgstr ""
+msgstr "CPAN に対する最小ミラーの作成"
 
 #. tumbleweed/perl-CPAN-Mini/description
 #. leap/perl-CPAN-Mini/description
@@ -9245,11 +9508,29 @@ msgid ""
 "\n"
 "  the last non-developer release of every dist for every author"
 msgstr ""
+"CPAN::Mini は、お使いのディスク内に CPAN "
+"の最小ミラーを構築し、それを更新するための機構を提供します。各配布物の最新バージョンをインストールするには、下記のファイルのみが必要です:\n"
+"\n"
+"* *\n"
+"\n"
+"  01mailrc.txt.gz\n"
+"\n"
+"* *\n"
+"\n"
+"  02packages.details.txt.gz\n"
+"\n"
+"* *\n"
+"\n"
+"  03modlist.data.gz\n"
+"\n"
+"* *\n"
+"\n"
+"  各作者の各配布物に対して、最新の非開発者向けリリースをダウンロードします。"
 
 #. tumbleweed/perl-CPAN-Perl-Releases/summary
 #. leap/perl-CPAN-Perl-Releases/summary
 msgid "Mapping Perl releases on CPAN to the location of the tarballs"
-msgstr ""
+msgstr "CPAN 内での Perl リリースからローカルの tar ボールへのマッピング"
 
 #. tumbleweed/perl-CPAN-Perl-Releases/description
 #. leap/perl-CPAN-Perl-Releases/description
@@ -9261,21 +9542,26 @@ msgid ""
 "This is static data, but newer versions of this module will be made "
 "available as new releases of 'perl' are uploaded to CPAN."
 msgstr ""
+"CPAN::Perl::Releases は、 tar ボールが存在する 'authors/id/' パスにアップロードしたすべての 'perl' "
+"リリースのマッピングを含むものです。\n"
+"\n"
+"これは固定のデータではありますが、 'perl' の新しいリリースが CPAN "
+"にアップロードされることで、このモジュールも新しいバージョンに更新されます。"
 
 #. tumbleweed/perl-CPAN-Uploader/summary
 #. leap/perl-CPAN-Uploader/summary
 msgid "Upload Things to the Cpan"
-msgstr ""
+msgstr "CPAN へのアップロード"
 
 #. tumbleweed/perl-CPAN-Uploader/description
 #. leap/perl-CPAN-Uploader/description
 msgid "upload things to the CPAN"
-msgstr ""
+msgstr "CPAN へのアップロード"
 
 #. tumbleweed/perl-CSS-Tiny/summary
 #. leap/perl-CSS-Tiny/summary
 msgid "Read/Write .css files with as little code as possible"
-msgstr ""
+msgstr "できる限り少ないコードでの .css ファイルの読み書き"
 
 #. tumbleweed/perl-CSS-Tiny/description
 #. leap/perl-CSS-Tiny/description
@@ -9292,12 +9578,19 @@ msgid ""
 "of CSS, this is becoming more common, but many situations can still live "
 "with simple CSS files."
 msgstr ""
+"'CSS::Tiny' はできる限り少ないコードで作成された .css "
+"スタイルシートの読み書きクラスで、読み込み時間とメモリのオーバーヘッドが少なくなるように設計されています。 CSS.pm では読み込みの際に 2.6 "
+"MB 程度のメモリ容量を必要としますが、これは複雑な処理を実施する際には馬鹿にできないサイズです。 Perl "
+"を使用する場合、メモリの使用量を気にすることはあまりありませんが、念のため注意しておくべきだと考えております。\n"
+"\n"
+"このモジュールは、主にシンプルなファイルの読み書きを目指しているほか、ドキュメンテーションやコメントを読まなくても簡単に扱えることを目指しています。より高"
+"性能なものをお求めの場合は、 CSS.pm をお使いください。 CSS が複雑化していくにあたって、左記のようなモジュールの必要性も高まっていますが、"
+"まだ多くの場合においてシンプルな CSS ファイルも必要とされているはずです。"
 
 #. tumbleweed/perl-Cache-Cache/summary
 #. leap/perl-Cache-Cache/summary
-#, fuzzy
 msgid "The Cache Interface"
-msgstr "Beagle C インターフェイス"
+msgstr "キャッシュインターフェイス"
 
 #. tumbleweed/perl-Cache-Cache/description
 #. leap/perl-Cache-Cache/description
@@ -9314,24 +9607,30 @@ msgid ""
 "set, remove, size, purge, and clear instance methods and their corresponding "
 "static methods for persisting data across method calls."
 msgstr ""
+"Cache モジュールは開発者に対して、指定した期間だけデータの保持を行なう機能を提供します。これらのモジュールは、 Web "
+"アプリケーション内でリモートのマシンやデータベースに繰り返し同じ問い合わせを実施しないようにするため、しばしば用いられます。 Cache::Cache "
+"はアプリケーションや CGI スタイルのスクリプトなどから、直感的なインターフェイスを提供するものとしてすでに知られていますが、場合によってはファイルシス"
+"テムや共有メモリを使用するだけの簡易な実装が用いられることもあります。\n"
+"\n"
+"Cache::Cache のインターフェイスは get, set, remove, size, purge, clear "
+"の各インスタンスメソッドを提供するクラスで実装されているほか、メソッド呼び出しをまたがってデータを保持するため、関連する静的なメソッドも用意されています。"
 
 #. tumbleweed/perl-Cache-LRU/summary
 #. leap/perl-Cache-LRU/summary
 msgid "Simple, Fast Implementation of Lru Cache in Pure Perl"
-msgstr ""
+msgstr "純粋な Perl 内でのシンプルかつ高速な LRU キャッシュの実装"
 
 #. tumbleweed/perl-Cache-LRU/description
 #. leap/perl-Cache-LRU/description
 msgid ""
 "Cache::LRU is a simple, fast implementation of an in-memory LRU cache in "
 "pure perl."
-msgstr ""
+msgstr "Cache::LRU は Perl コードだけで作成された、シンプルで高速なメモリ内 LRU キャッシュの実装です。"
 
 #. tumbleweed/perl-Calendar-Simple/summary
 #. leap/perl-Calendar-Simple/summary
-#, fuzzy
 msgid "Perl extension to create simple calendars"
-msgstr "可搬性のあるデーモンを作成するための Perl 拡張"
+msgstr "シンプルなカレンダーを作成するための Perl 拡張"
 
 #. tumbleweed/perl-Calendar-Simple/description
 #. leap/perl-Calendar-Simple/description
@@ -9346,11 +9645,16 @@ msgid ""
 "or the end of the last week that are from the previous or next month have "
 "the value undef."
 msgstr ""
+"月次カレンダーをモデルとした非常にシンプルな Perl モジュールです。\n"
+"\n"
+"この関数は月内での日付を表わすデータ構造を返します。返されるデータ構造は配列参照の配列になっていて、最初のレベルでは月内の週を表わし、 2 つめのレベルで"
+"は実際の日を表わします。既定では各週は日曜日に始まるものとされていて、そのように配列内に格納されていますが、月内の最初の週や最終の週の場合、対応する曜日の"
+"日が存在しない場合は、 undef が設定されます。"
 
 #. tumbleweed/perl-Canary-Stability/summary
 #. leap/perl-Canary-Stability/summary
 msgid "Canary to Check Perl Compatibility for Schmorp's Modules"
-msgstr ""
+msgstr "Schmorp 氏のモジュール向け Perl 互換性チェックモジュール"
 
 #. tumbleweed/perl-Canary-Stability/description
 #. leap/perl-Canary-Stability/description
@@ -9363,6 +9667,12 @@ msgid ""
 "\n"
 "See the _Makefile.PL_ in Coro or AnyEvent for usage examples."
 msgstr ""
+"このモジュールは Schmorp 氏のモジュールで使用されているもので、設定ステージの間にインストールされている Perl "
+"と対象モジュールとの互換性をテストするための仕組みです。\n"
+"\n"
+"現時点では他のモジュール作者に対して提供されているものではありませんが、実際のところどのモジュールでも利用は可能です。\n"
+"\n"
+"使用例について、詳しくは Coro 内の _Makefile.PL_ もしくは AnyEvent をお読みください。"
 
 #. tumbleweed/perl-Capture-Tiny/summary
 #. leap/perl-Capture-Tiny/summary
@@ -9391,7 +9701,7 @@ msgstr ""
 #. tumbleweed/perl-Carp-Always/summary
 #. leap/perl-Carp-Always/summary
 msgid "Warns and dies noisily with stack backtraces"
-msgstr ""
+msgstr "スタックのバックトレースと共にうるさく警告およびエラー終了するモジュール"
 
 #. tumbleweed/perl-Carp-Always/description
 #. leap/perl-Carp-Always/description
@@ -9417,6 +9727,26 @@ msgid ""
 "Oh, by the way, 'carp' and 'croak' when requiring/using the 'Carp' module "
 "are also made verbose, behaving like 'cluck' and 'confess', respectively."
 msgstr ""
+"このモジュールはデバッグ目的で提供されているものです。 warn() や die() "
+"の際に、スタックバックトレースを表示して詳細情報を出力できるようにします。\n"
+"\n"
+"このモジュールで生成されるバックトレースは下記のようになっています:\n"
+"\n"
+"     $ perl -MCarp::Always -e 'sub f { die \"arghh\" }; sub g { f }; g'   "
+"arghh at -e line 1           main::f() called at -e line 1           "
+"main::g() called at -e line 1\n"
+"\n"
+"     $ perl -MCarp::Always -w -e 'sub f { $a = shift; @a = @$a };' \\"
+"                            -e 'sub g { f(undef) }; g'   Use of "
+"uninitialized value in array dereference at -e line 1           "
+"main::f('undef') called at -e line 2           main::g() called at -e line "
+"2\n"
+"\n"
+"この実装では、 'Carp' モジュールの 'longmess()' を主に利用しています。また、スタックバックトレースを出力するにあたっては、 "
+"'$SIG{__WARN__}' と '$SIG{__DIE__}' のフックを利用しています。\n"
+"\n"
+"ところで、 'Carp' モジュールを必要 (もしくは使用) する際、 'carp' と 'croak' を 'cluck' や 'confess' "
+"のように冗長出力することもできます。"
 
 #. tumbleweed/perl-Carp-Assert/summary
 #. leap/perl-Carp-Assert/summary
