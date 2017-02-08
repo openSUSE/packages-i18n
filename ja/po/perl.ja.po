@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-07 09:12+0000\n"
+"PO-Revision-Date: 2017-02-08 08:54+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -9895,7 +9895,7 @@ msgstr ""
 #. tumbleweed/perl-Carp-Assert-More/summary
 #. leap/perl-Carp-Assert-More/summary
 msgid "Convenience wrappers around Carp::Assert"
-msgstr ""
+msgstr "Carp::Assert に対する便利なラッパー"
 
 #. tumbleweed/perl-Carp-Assert-More/description
 #. leap/perl-Carp-Assert-More/description
@@ -9917,14 +9917,26 @@ msgid ""
 "My intent here is to make common assertions easy so that we as programmers "
 "have no excuse to not use them."
 msgstr ""
+"Carp::Assert::More は Carp::Assert 機能に対するラッパー集で、日々 assert "
+"を作成する際の手間を省くことができるものです。\n"
+"\n"
+"ここに記されているのはわかりやすい文法例です。たとえば\n"
+"\n"
+"    assert( defined $foo );     assert( ref($foo) eq 'HTML::Lint' );\n"
+"\n"
+"のようなコードを\n"
+"\n"
+"    assert_isa( $foo, 'HTML::Lint' );\n"
+"\n"
+"に書き換えれば、可読性が高まり、シンプルにもなります。\n"
+"\n"
+"私がこのモジュールを作成したのは、一般的な assert を簡単に作れるようにして、プログラマ側に余計な手間をかけさせない目的があります。"
 
 #. tumbleweed/perl-Carp-Clan/summary
-#, fuzzy
 msgid "Report errors from perspective of caller of a \"clan\" of modules"
-msgstr "モジュールの呼び出し構造を外観してエラーを報告するライブラリ"
+msgstr "モジュールの \"クラン\" (呼び出し構造) を見通してエラーをわかりやすくするモジュール"
 
 #. tumbleweed/perl-Carp-Clan/description
-#, fuzzy
 msgid ""
 "This module is based on \"'Carp.pm'\" from Perl 5.005_03. It has been "
 "modified to skip all package names matching the pattern given in the \"use\" "
@@ -9972,75 +9984,44 @@ msgid ""
 "modules (more than one) work together and appear as though they were only "
 "one."
 msgstr ""
-"このモジュールは Perl 5.005_03 における \"'Carp.pm'\" をベースにしたモジュー"
-"ルです。 \"use\" ステートメント内の \"'qw()'\" 句 (またはパラメータリスト) "
-"で、パターンに該当するすべてのパッケージを飛ばす (スキップする) ように修正さ"
-"れています。\n"
+"このモジュールは Perl 5.005_03 における \"'Carp.pm'\" をベースにしたモジュールです。 \"use\" ステートメント内の "
+"\"'qw()'\" 句 (またはパラメータリスト) で、パターンに該当するすべてのパッケージを飛ばす (スキップする) ように修正されています。\n"
 "\n"
-"たとえば \"Pack::A\", \"Pack::B\" 等のモジュールやクラスがあるものと仮定する"
-"と、それらのそれぞれで \"'Carp::Clan qw(^Pack::);'\" を使用している場合があり"
-"ます (もしくは、それらのうちのいずれかでエラーや例外が発生した場合を想定しま"
-"す) 。\n"
+"たとえば \"Pack::A\", \"Pack::B\" 等のモジュールやクラスがあるものと仮定すると、それらのそれぞれで \"'Carp::Clan "
+"qw(^Pack::);'\" を使用している場合があります (もしくは、それらのうちのいずれかでエラーや例外が発生した場合を想定します) 。\n"
 "\n"
-"このとき、たとえば \"tool.pl\" というスクリプトが \"Pack::A\" モジュールを呼"
-"び出し、 \"Pack::A\" が \"Pack::B\" を呼び出しているとすると、未修正の "
-"\"'Carp.pm'\" では、 \"Pack::B\" 内で発生した例外は、 \"tool.pl\" 内の "
-"\"Pack::A\" が呼び出された箇所を示す形になり、 \"Pack::B\" を呼び出していた "
-"\"Pack::A\" を示すことはありません。\n"
+"このとき、たとえば \"tool.pl\" というスクリプトが \"Pack::A\" モジュールを呼び出し、 \"Pack::A\" が \""
+"Pack::B\" を呼び出しているとすると、未修正の \"'Carp.pm'\" では、 \"Pack::B\" 内で発生した例外は、 \"tool."
+"pl\" 内の \"Pack::A\" が呼び出された箇所を示す形になり、 \"Pack::B\" を呼び出していた \"Pack::A\" "
+"を示すことはありません。\n"
 "\n"
-"これはたとえば、 \"Pack::B\" が \"Pack::C\" を呼び出していて、その中で例外が"
-"発生した場合も同様になります。\n"
+"これはたとえば、 \"Pack::B\" が \"Pack::C\" を呼び出していて、その中で例外が発生した場合も同様になります。\n"
 "\n"
-"これは、言い換えれば \"'Pack::*'\" モジュール内で発生したすべてのエラーが "
-"\"tool.pl\" のエラー (つまりあなたの間違い) として報告されることになりま"
-"す。\n"
+"これは、言い換えれば \"'Pack::*'\" モジュール内で発生したすべてのエラーが \"tool.pl\" のエラー (つまりあなたの間違い) "
+"として報告されることになります。\n"
 "\n"
-"パターンを指定して、パッケージ内の該当する箇所 (またはファミリ) を飛ばすこと"
-"は、これらのモジュールが互いに派生関係にない場合に必要となります (そしてこの"
-"理由から、(元々の \"'Carp.pm'\" にあるような) '@ISA' を解釈してしまっては解決"
-"しません) 。\n"
+"パターンを指定して、パッケージ内の該当する箇所 (またはファミリ) を飛ばすことは、これらのモジュールが互いに派生関係にない場合に必要となります "
+"(そしてこの理由から、(元々の \"'Carp.pm'\" にあるような) '@ISA' を解釈してしまっては解決しません) 。\n"
 "\n"
-"このモジュールの目的とメリットは、互いにうまく動作するような \"集合\" である"
-"ことにあり、様々な場所で例外が発生した場合でも呼び出しの階層構造を表示し、一"
-"枚岩のブロックとして見える (それらが単一のモジュールであるかのように) ことを"
-"目指しています。\n"
+"このモジュールの目的とメリットは、互いにうまく動作するような \"集合\" "
+"であることにあり、様々な場所で例外が発生した場合でも呼び出しの階層構造を表示し、一枚岩のブロックとして見える (それらが単一のモジュールであるかのように)"
+" ことを目指しています。\n"
 "\n"
-"\"'use Carp::Clan'\" を設定していて、単純に特定のモジュール内で発生したすべて"
-"のエラーメッセージについて、これらをすべて受け流すようにしたい場合、つまりエ"
-"ラーメッセージや警告メッセージ (\"die\" または \"warn\") で表示される場所が、"
-"モジュールを呼び出した場所ではなく実際に発生した場所であって欲しい場合 (通常"
-"は \"'use Carp;'\" を使用しますが) は、パターンを設定する必要はなく、モジュー"
-"ルは自動的に正しい情報を提供します。\n"
+"\"'use Carp::Clan'\" "
+"を設定していて、単純に特定のモジュール内で発生したすべてのエラーメッセージについて、これらをすべて受け流すようにしたい場合、"
+"つまりエラーメッセージや警告メッセージ (\"die\" または \"warn\") で表示される場所が、"
+"モジュールを呼び出した場所ではなく実際に発生した場所であって欲しい場合 (通常は \"'use Carp;'\" を使用しますが) "
+"は、パターンを設定する必要はなく、モジュールは自動的に正しい情報を提供します。\n"
 "\n"
-"これは何もパラメータを指定せずに \"'use Carp::Clan;'\" だけを使用し、 \"carp"
-"\" や\"croak\" を適切に使用していれば、警告やエラーのメッセージは自動的に元の"
-"場所を示すようになるということです。\n"
+"これは何もパラメータを指定せずに \"'use Carp::Clan;'\" だけを使用し、 \"carp\" や\"croak\" "
+"を適切に使用していれば、警告やエラーのメッセージは自動的に元の場所を示すようになるということです。\n"
 "\n"
-"これをさらに言い換えれば、パターンは特定のモジュールだけに対して動作させたい"
-"場合にのみ指定するものであると言えます。\n"
-"\n"
-"デバッグ目的でスタックトレースを強制する場合、 \"'Carp::Clan'\" で強制的に"
-"\"croak\" を \"confess\" として扱い、 \"carp\" を \"cluck\" として扱うように"
-"設定することもできます。これは詳細なスタックトレースを強制する意味になりま"
-"す。これは警告やエラーの発生元を特定するのに便利です。\n"
-"\n"
-"この機能は存在していないシンボル 'verbose' を \"インポート\" することによって"
-"有効化できるほか、 \"'$Carp::Clan::Verbose'\" を true に設定しても実現できま"
-"す。\n"
-"\n"
-"一般的には下記のように指定して有効化します:\n"
-"\n"
-"        use Carp::Clan qw(verbose);\n"
-"\n"
-"ただし、 \"use\" ステートメント内の \"'qw()'\" の表現には、 \"ファミリパター"
-"ン\" と \"verbose\" の両方を (パラメータリストとして) 指定できますが、スキッ"
-"プすべきパターンは \"verbose\" を指定してしまうと無視されることに注意してくだ"
-"さい。"
+"これをさらに言い換えれば、パターンは特定のモジュールだけに対して動作させたい場合にのみ指定するものであると言えます。"
 
 #. tumbleweed/perl-Carton/summary
 #. leap/perl-Carton/summary
 msgid "Perl module dependency manager (aka Bundler for Perl)"
-msgstr ""
+msgstr "Perl モジュールの依存関係管理 (Bundler for Perl)"
 
 #. tumbleweed/perl-Carton/description
 #. leap/perl-Carton/description
@@ -10054,13 +10035,18 @@ msgid ""
 "\n"
 "For 'cpanfile' syntax, see cpanfile documentation."
 msgstr ""
+"carton はお使いの Perl アプリケーションで利用することのできる、 Perl モジュールの依存関係を追跡するためのコマンドラインツールです。"
+"依存関係は cpanfile 形式で定義し、現在の依存関係の情報は _cpanfile.snapshot_ ファイルに保存されます。また、このモジュールは"
+"バージョンの管理のほか、お使いのアプリケーションを開発する他の方から、厳密に同じバージョンのモジュールを指定できるようにもしています。\n"
+"\n"
+"'cpanfile' の文法について、詳しくは cpanfile のドキュメンテーションをご覧ください。"
 
 #. tumbleweed/perl-Catalyst-Manual/summary
 #. tumbleweed/perl-Catalyst-Manual/description
 #. leap/perl-Catalyst-Manual/summary
 #. leap/perl-Catalyst-Manual/description
 msgid "The Catalyst developer's manual"
-msgstr ""
+msgstr "Catalyst 開発者マニュアル"
 
 #. tumbleweed/perl-Chart/summary
 #. leap/perl-Chart/summary
@@ -10094,7 +10080,7 @@ msgstr ""
 #. tumbleweed/perl-Class-Accessor-Grouped/summary
 #. leap/perl-Class-Accessor-Grouped/summary
 msgid "Lets you build groups of accessors"
-msgstr ""
+msgstr "アクセサのグループの構築"
 
 #. tumbleweed/perl-Class-Accessor-Grouped/description
 #. leap/perl-Class-Accessor-Grouped/description
@@ -10105,11 +10091,14 @@ msgid ""
 "http://lo-f.at/glahn/2009/08/WritingPowerfulAccessorsForPerlClasses.html for "
 "more information."
 msgstr ""
+"このクラスは、様々な getter や setter を呼び出すアクセサのグループを構築します。このモジュールのドキュメンテーションはまだ作成途中で、"
+"多くの作業が必要となっています (*ボランティア募集中*) が、詳しい情報については http://lo-f.at/glahn/2009/08/"
+"WritingPowerfulAccessorsForPerlClasses.html をお読みください。"
 
 #. tumbleweed/perl-Class-Accessor-Lite/summary
 #. leap/perl-Class-Accessor-Lite/summary
 msgid "Minimalistic Variant of Class::Accessor"
-msgstr ""
+msgstr "Class::Accessor の最小形"
 
 #. tumbleweed/perl-Class-Accessor-Lite/description
 #. leap/perl-Class-Accessor-Lite/description
@@ -10117,12 +10106,13 @@ msgid ""
 "The module is a variant of 'Class::Accessor'. It is fast and requires less "
 "typing, has no dependencies to other modules, and does not mess up the @ISA."
 msgstr ""
+"このモジュールは 'Class::Accessor' から派生したクラスで、入力の手間を省きながらも他のモジュールへの依存関係が無く、かつ @ISA "
+"の仕組みを壊さないモジュールになっています。"
 
 #. tumbleweed/perl-Class-Adapter/summary
 #. leap/perl-Class-Adapter/summary
-#, fuzzy
 msgid "Perl implementation of the \"Adapter\" Design Pattern"
-msgstr "SOAP の Apache による実装"
+msgstr "\"Adapter\" デザインパターンの Perl 実装"
 
 #. tumbleweed/perl-Class-Adapter/description
 #. leap/perl-Class-Adapter/description
@@ -10130,11 +10120,13 @@ msgid ""
 "The 'Class::Adapter' class is intended as an abstract base class for "
 "creating any sort of class or object that follows the _Adapter_ pattern."
 msgstr ""
+"'Class::Adapter' は、 _Adapter_ "
+"パターンに従って様々な種類のクラスやオブジェクトを作成することができる、抽象化ベースクラスとなるべきものです。"
 
 #. tumbleweed/perl-Class-Base/summary
 #. leap/perl-Class-Base/summary
 msgid "useful base class for deriving other modules"
-msgstr ""
+msgstr "他のモジュールの派生モジュールを作るための便利なベースクラス"
 
 #. tumbleweed/perl-Class-Base/description
 #. leap/perl-Class-Base/description
@@ -10201,11 +10193,57 @@ msgid ""
 "And don't forget, you can always redefine your own 'new()', 'error()', or "
 "other method, if you don't like the way the Class::Base version works."
 msgstr ""
+"このモジュールは使用せず、後継モジュールである Badger::Base をお使いください。\n"
+"\n"
+"このモジュールは、他のモジュールが提供するクラスを派生させ、 'new()', 'init()', 'params()', 'clone()', "
+"'error()', 'debug()' などの多くの便利なメソッドを継承することのできる、シンプルなベースクラスを実装しています。\n"
+"\n"
+"何年にもわたり、様々な規模の Perl プロジェクトに対して、このモジュールは書き直されてきました。というよりも、直近のプロジェクトからモジュールをコピー"
+"して、名前を変更するためにグローバルに検索および置換が行なわれてきました。作業を行なうごとにそれは磨き上げられてきたことから、ここでようやくこれをモジュー"
+"ルとして公開するに至りました。\n"
+"\n"
+"なお、このモジュールは、オブジェクトを作成するにあたって発生する様々な問題に対して、すべてを網羅するようには考えられていません。実際には、 'new()"
+"' に対してリストや名前付きのパラメータが含まれるハッシュ参照を与えるような、よくあるブレス型のハッシュ参照のみをサポートしています。"
+"コンストラクタにおけるエラーは undef を返すことによって表わされ、モジュール内にある '$ERROR' "
+"というパッケージ変数に関連するメッセージが設定されます (クラスメソッドの 'error()' を呼び出しても同じ結果を得られます) 。\n"
+"\n"
+"具体的には、下記のいずれかのようになります:\n"
+"\n"
+"    my $object = My::Module->new( \tfile => 'myfile.html', \tmsg  => 'Hello "
+"World'     ) || die $My::Module::ERROR;\n"
+"\n"
+"    my $object = My::Module->new({ \tfile => 'myfile.html', \tmsg  => 'Hello "
+"World',     }) || die My::Module->error();\n"
+"\n"
+"'new()' メソッドはパラメータの一覧をハッシュ参照に変換して 'init()' "
+"メソッドを呼び出し、実際の初期化を行ないます。多くのクラスでは、下記のようにモジュールを定義するのがよいでしょう:\n"
+"\n"
+"    package My::Module;     use Class::Base;     use base qw( Class::Base );"
+"\n"
+"\n"
+"    sub init { \tmy ($self, $config) = @_; \t \t$self->params($config, qw( "
+"FOO BAR )) || return undef; \treturn $self;     }\n"
+"\n"
+"    \n"
+"\n"
+"    1;\n"
+"\n"
+"モジュールを使用する場合は、下記のようにするだけです:\n"
+"\n"
+"    use My::Module;\n"
+"\n"
+"    my $object = My::Module->new( FOO => 'the foo value', \t\t\t\t  BAR => "
+"'the bar value' )         || die $My::Module::ERROR;\n"
+"\n"
+"制限事項もありますが、 Class::Base は驚くほど便利なモジュールで、通常のオブジェクトベースのブレス型参照を利用するような場合や、ハッシュをブレ"
+"スするための同じような古いコードを繰り返してしまうような手間をかけたくない場合、もしくは設定値の定義やエラー報告の仕組みなど、様々な手間を省くことができま"
+"す。単純に 'Class::Base' からお使いのモジュールに派生させれば、それだけで済みます。なお、 Class::Base "
+"のバージョンの動作で支障がある場合は、忘れずに 'new()', 'error()' などのメソッドを定義してください。"
 
 #. tumbleweed/perl-Class-C3/summary
 #. leap/perl-Class-C3/summary
 msgid "Pragma to Use the C3 Method Resolution Order Algorithm"
-msgstr ""
+msgstr "C3 メソッド解決順序アルゴリズムを使用するプラグマ"
 
 #. tumbleweed/perl-Class-C3/description
 #. leap/perl-Class-C3/description
@@ -10219,11 +10257,17 @@ msgid ""
 "instead, which will use the core implementation in newer perls, but fallback "
 "to using this implementation on older perls."
 msgstr ""
+"これは Perl 5 の標準のメソッド解決順序である、 depth-first left-to-right (別名: pre-order) "
+"を変更するためのプラグマで、より洗練された C3 メソッド解決順序を使用するようにします。\n"
+"\n"
+"*注意*: このモジュールは直接使用すべきではありません - 提供される機能は Perl バージョン 5.9.5 以降で統合されているほか、 "
+"使用する場合であっても MRO::Compat を使うべきです。こちらは新しい Perl 内にある中枢の実装を使用しますが、このモジュールでは古い "
+"Perl でこの実装を使用することができるようになります。"
 
 #. tumbleweed/perl-Class-C3-Adopt-NEXT/summary
 #. leap/perl-Class-C3-Adopt-NEXT/summary
 msgid "Make Next Suck Less"
-msgstr ""
+msgstr "NEXT の騒ぎを収めるもの"
 
 #. tumbleweed/perl-Class-C3-Adopt-NEXT/description
 #. leap/perl-Class-C3-Adopt-NEXT/description
@@ -10243,22 +10287,30 @@ msgid ""
 "use 'Class::C3' or method modifiers as appropriate, at whatever pace you're "
 "comfortable with."
 msgstr ""
+"NEXT は何年にもわたって良いソリューションではありましたが、現在はもうそうではありません。動作が遅く、メソッドの再発信は時によってランダムな順序で動作"
+"してしまいます。これでは悪いプログラミングを推奨することになってしまい、結局は実際にやりたかったメソッドの再発信は、メソッドの実行前後で実行されてしまいま"
+"す。\n"
+"\n"
+"しかしながら、巨大なアプリケーションを作成しているような場合、 'NEXT' から離れるのは簡単ではありません。\n"
+"\n"
+"このモジュールは NEXT を直接的に置き換える目的で開発されたモジュールで、同じインターフェイスに対応しながら、 Class::C3 "
+"を利用して複雑な処理を実現しています。新しく作成するコードから 'NEXT' を使用しないようにし、既存の各ソースファイルは順次 'Class::C3' "
+"を使用するように移行するか、適切であればメソッドの修飾子を設定することで、適切なペースで移行することができるようになります。"
 
 #. tumbleweed/perl-Class-C3-Componentised/summary
 #. leap/perl-Class-C3-Componentised/summary
-#, fuzzy
 msgid "Class::C3::Componentised Perl module"
-msgstr "Carp::Clan Perl モジュール"
+msgstr "Class::C3::Componentised Perl モジュール"
 
 #. tumbleweed/perl-Class-C3-Componentised/description
 #. leap/perl-Class-C3-Componentised/description
 msgid "Load mix-ins or components to your C3-based class."
-msgstr ""
+msgstr "mix-in またはコンポーネントの C3 ベースのクラスへの読み込みを行ないます。"
 
 #. tumbleweed/perl-Class-Container/summary
 #. leap/perl-Class-Container/summary
 msgid "Glues object frameworks together transparently"
-msgstr ""
+msgstr "オブジェクト同士をフレームワークとして透過的に接続するモジュール"
 
 #. tumbleweed/perl-Class-Container/description
 #. leap/perl-Class-Container/description
@@ -10270,14 +10322,17 @@ msgid ""
 "parameters to the right class, possibly substituting other subclasses for "
 "any of these objects."
 msgstr ""
+"このクラスは、相互に運用のできる複数のクラスに対して、そのフレームワークの構築を支援します。最初のうちは HTML::Mason 向けに設計および構築され"
+"てきましたが、コンパイラやレキサ、インタプリタや解決器、コンポーネントやバッファなど、様々なオブジェクトを相互に、かつ透過的に作成しなければならなくなった"
+"ほか、正しいクラスに正しいパラメータが渡るようにしたり、これらのオブジェクト間で他のサブクラスを置き換えたりする必要が生じたことにより、作成されたものです"
+"。"
 
 #. tumbleweed/perl-Class-DBI/summary
 #. tumbleweed/perl-Class-DBI/description
 #. leap/perl-Class-DBI/summary
 #. leap/perl-Class-DBI/description
-#, fuzzy
 msgid "Simple Database Abstraction"
-msgstr "C 言語向けデータベース独立抽象インターフェイス"
+msgstr "シンプルなデータベース抽象化機構"
 
 #. tumbleweed/perl-Class-Data-Inheritable/summary
 #. leap/perl-Class-Data-Inheritable/summary
@@ -10371,12 +10426,12 @@ msgstr ""
 #. tumbleweed/perl-Class-Factory-Util/summary
 #. leap/perl-Class-Factory-Util/summary
 msgid "Provide utility methods for factory classes"
-msgstr ""
+msgstr "factory クラス向けのユーティリティメソッド"
 
 #. tumbleweed/perl-Class-Factory-Util/description
 #. leap/perl-Class-Factory-Util/description
 msgid "This module exports a method that is useful for factory classes."
-msgstr ""
+msgstr "このモジュールは、 factory クラスに対して便利なメソッドを公開します。"
 
 #. tumbleweed/perl-Class-ISA/summary
 #. leap/perl-Class-ISA/summary
@@ -10420,9 +10475,8 @@ msgstr ""
 
 #. tumbleweed/perl-Class-Inner/summary
 #. leap/perl-Class-Inner/summary
-#, fuzzy
 msgid "A perlish implementation of Java like inner classes"
-msgstr "Java 機密ソケット拡張のクリーンルーム実装"
+msgstr "Java のインナークラスの Perl 版実装"
 
 #. tumbleweed/perl-Class-Inner/description
 #. leap/perl-Class-Inner/description
@@ -10431,6 +10485,8 @@ msgid ""
 "overrideable methods, but with the added attraction of sort of working "
 "dispatch to the parent class's method."
 msgstr ""
+"匿名クラスに対するもう 1 つの実装で、 Perl "
+"のオブジェクトに対するオーバーライドも提供します。ただし、親クラスのメソッドの実行を促す仕組みはそのまま提供されます。"
 
 #. tumbleweed/perl-Class-Inspector/summary
 #. leap/perl-Class-Inspector/summary
@@ -10487,7 +10543,7 @@ msgstr ""
 #. tumbleweed/perl-Class-MakeMethods/summary
 #. leap/perl-Class-MakeMethods/summary
 msgid "Generate common types of methods"
-msgstr ""
+msgstr "メソッドの汎用型の生成"
 
 #. tumbleweed/perl-Class-MakeMethods/description
 #. leap/perl-Class-MakeMethods/description
@@ -10498,11 +10554,14 @@ msgid ""
 "and specify a name for each method desired. The methods are dynamically "
 "generated and installed in the calling package."
 msgstr ""
+"Class::MakeMethods フレームワークは、 Perl クラスの開発者に対して、汎用型のメソッドを素早く作成できるようにします。"
+"モジュール側で Class::MakeMethods やそのサブクラスを使用すると、対応する様々なメソッドタイプの中から必要なメソッドを選択できるようにな"
+"ります。メソッドは動的に生成され、呼び出し元のパッケージにインストールされます。"
 
 #. tumbleweed/perl-Class-Method-Modifiers/summary
 #. leap/perl-Class-Method-Modifiers/summary
 msgid "Provides Moose-like method modifiers"
-msgstr ""
+msgstr "Moose のようなメソッド修飾子"
 
 #. tumbleweed/perl-Class-Method-Modifiers/description
 #. leap/perl-Class-Method-Modifiers/description
@@ -10540,11 +10599,38 @@ msgid ""
 "'Class::Method::Modifiers' also provides an additional \"modifier\" type, "
 "'fresh'; see below."
 msgstr ""
+"メソッドの修飾子は CLOS (Common Lisp Object System) の世界では便利な機能です。\n"
+"\n"
+"もっとも基本的な形式では、メソッドの修飾子は '$self->SUPER::foo(@_)' を呼び出すだけのメソッドです。私は以前、そのような呼び出しの"
+"問題に頭を抱えていましたが、これはクラス側でベースクラスに対して再発信を行なっていたためです。非常によろしくありません。\n"
+"\n"
+"'Class::Method::Modifiers' は 'before', 'around', 'after' の 3 種類の修飾子を提供します。 "
+"'before' と 'after' は単純に対象のメソッドの呼び出し前後に実行される仕組みで、実際のメソッドの実行には影響がありません。 "
+"'around' "
+"は元のメソッドに立ち替わって実行されるもので、フックのようにして元のメソッドから呼び出されます。それぞれの修飾子がどのように動作するのかについて、"
+"詳しくは 'MODIFIERS' セクションをお読みください。\n"
+"\n"
+"'Class::Method::Modifiers' を使用するにあたって、明らかな利点としてあげられるのは、単一のネームスペース内で複数の修飾子を設定で"
+"きることです。それぞれの修飾はお互いを知っておく必要がありません。このような仕組みにより、トップダウン型の設計を簡単に作成することができます。各動作のメソ"
+"ッドに対してスケルトンクラスを提供するベースクラスがあれば、プラグイン側で各メソッドの実際の動作を記述することができます。\n"
+"\n"
+"また、親クラス側でも 'Class::Method::Modifiers' "
+"を知る必要はありません。これにより、どのようなサブクラス内のメソッドをも修正することができることになります。 'Class::Method::"
+"Modifiers' を利用したサブクラスの使用例について、詳しくは Term::VT102::ZeroBased をお読みください。\n"
+"\n"
+"簡単に言うと、 'Class::Method::Modifiers' は '$self->SUPER::foo(@_)' "
+"を確実に呼び出さなければならない問題を解決するもので、よりクリーンなインターフェイスを提供します。\n"
+"\n"
+"バージョン 1.00 では、場合によっては Moose に比べて 'Class::Method::Modifiers' "
+"がより高速に動作するようになりました。 Moose 配布物内の 'benchmark/method_modifiers.pl' をご覧ください。\n"
+"\n"
+"また、 'Class::Method::Modifiers' では追加の \"修飾子\" タイプである 'fresh' "
+"にも対応しています。詳しくは下記をお読みください。"
 
 #. tumbleweed/perl-Class-Method-Modifiers-Fast/summary
 #. leap/perl-Class-Method-Modifiers-Fast/summary
 msgid "provides Moose-like method modifiers"
-msgstr ""
+msgstr "Moose のようなメソッド修飾子"
 
 #. tumbleweed/perl-Class-Method-Modifiers-Fast/description
 #. leap/perl-Class-Method-Modifiers-Fast/description
@@ -10559,24 +10645,34 @@ msgid ""
 "that original method. See the 'MODIFIERS' section for more details on how "
 "the particular modifiers work."
 msgstr ""
+"メソッドの修飾子は CLOS (Common Lisp Object System) の世界では便利な機能です。\n"
+"\n"
+"もっとも基本的な形式では、メソッドの修飾子は '$self->SUPER::foo(@_)' を呼び出すだけのメソッドです。私は以前、そのような呼び出しの"
+"問題に頭を抱えていましたが、これはクラス側でベースクラスに対して再発信を行なっていたためです。非常によろしくありません。\n"
+"\n"
+"'Class::Method::Modifiers' は 'before', 'around', 'after' の 3 種類の修飾子を提供します。 "
+"'before' と 'after' は単純に対象のメソッドの呼び出し前後に実行される仕組みで、実際のメソッドの実行には影響がありません。 "
+"'around' "
+"は元のメソッドに立ち替わって実行されるもので、フックのようにして元のメソッドから呼び出されます。それぞれの修飾子がどのように動作するのかについて、"
+"詳しくは 'MODIFIERS' セクションをお読みください。"
 
 #. tumbleweed/perl-Class-Mix/summary
 #. leap/perl-Class-Mix/summary
 msgid "Dynamic Class Mixing"
-msgstr ""
+msgstr "動的なクラス混合"
 
 #. tumbleweed/perl-Class-Mix/description
 #. leap/perl-Class-Mix/description
 msgid ""
 "The 'mix_class' function provided by this module dynamically generates "
 "`anonymous' classes with specified inheritance."
-msgstr ""
+msgstr "このモジュールで提供されている 'mix_class' 関数は、指定した継承関係を持つ '匿名' クラスを動的に生成します。"
 
 #. tumbleweed/perl-Class-ReturnValue/summary
 #. leap/perl-Class-ReturnValue/summary
 msgid ""
 "Return-value object that lets you treat it as as a boolean, array or object"
-msgstr ""
+msgstr "boolean, 配列, オブジェクトとして扱うことのできる返り値オブジェクト"
 
 #. tumbleweed/perl-Class-ReturnValue/description
 #. leap/perl-Class-ReturnValue/description
@@ -10585,6 +10681,8 @@ msgid ""
 "calling your routine to expect: a boolean value (did it fail) or a list "
 "(what are the return values)"
 msgstr ""
+"Class::ReturnValue は、お使いのルーチンからの呼び出しで、返り値のオブジェクトを設定するための \"賢い\" 方法を提供します: "
+"boolean 値 (失敗したかどうか) やリスト (返り値) を設定することができます。"
 
 #. tumbleweed/perl-Class-Singleton/summary
 #. leap/perl-Class-Singleton/summary
@@ -10622,11 +10720,10 @@ msgstr ""
 #. tumbleweed/perl-Class-Spiffy/summary
 #. leap/perl-Class-Spiffy/summary
 msgid "Spiffy Framework with No Source Filtering"
-msgstr ""
+msgstr "ソースフィルタリング無しの Spiffy フレームワーク"
 
 #. tumbleweed/perl-Class-Spiffy/description
 #. leap/perl-Class-Spiffy/description
-#, fuzzy
 msgid ""
 "\"Class::Spiffy\" is a framework and methodology for doing object oriented "
 "(OO) programming in Perl. Class::Spiffy combines the best parts of Exporter."
@@ -10634,18 +10731,15 @@ msgid ""
 "attempts to fix all the nits and warts of traditional Perl OO, in a clean, "
 "straightforward and (perhaps someday) standard way."
 msgstr ""
-"\"Spiffy\" は、 Perl でオブジェクト指向 (OO) のプログラミングを行なうためのフ"
-"レームワークと方法です。 Spiffy は Exporter.pm, base.pm, mixin.pm , SUPER.pm "
-"の各部品を組み合わせて、 1 つの魔法のような基礎クラスとして組み立てています。"
-"既存の Perl オブジェクト指向に存在するバグの卵や不便なところをきれいに直し、"
-"素直で (いつかは) 標準的な方法になるよう目指しています。 Spiffy は Python, "
-"Ruby, Java, Perl 6 などのような他のオブジェクト指向からのアイディアを借り、少"
-"しの改善を加えています。"
+"\"Class::Spiffy\" は、 Perl でオブジェクト指向 (OO) のプログラミングを行なうためのフレームワークと方法です。 Class::"
+"Spiffy は Exporter.pm, base.pm, mixin.pm, SUPER.pm の各部品を組み合わせて、 1 "
+"つの魔法のような基礎クラスとして組み立てています。既存の Perl オブジェクト指向に存在するバグの卵や不便なところをきれいに直し、素直で (いつかは) "
+"標準的な方法になるよう目指しています。"
 
 #. tumbleweed/perl-Class-Std/summary
 #. leap/perl-Class-Std/summary
 msgid "Support for creating standard \"inside-out\" classes"
-msgstr ""
+msgstr "標準的な \"裏返し\" クラスのサポート"
 
 #. tumbleweed/perl-Class-Std/description
 #. leap/perl-Class-Std/description
@@ -10656,6 +10750,10 @@ msgid ""
 "_Portions of the following code and documentation from \"Perl Best Practices"
 "\" copyright (c) 2005 by O'Reilly Media, Inc. and reprinted with permission._"
 msgstr ""
+"このモジュールは \"裏返しオブジェクト\" のクラス構造の実装を、便利かつ標準的な方法で支援するツールを提供します。\n"
+"\n"
+"_下記のコード部分と \"Perl Best Practices\" からのドキュメンテーションは、 O'Reilly Media, Inc. "
+"に著作権があり、許可を得て転載しています。_"
 
 #. tumbleweed/perl-Class-Tiny/summary
 #. leap/perl-Class-Tiny/summary
@@ -10694,11 +10792,37 @@ msgid ""
 "it requires MRO::Compat. On Perls older than v5.14, it requires Devel::"
 "GlobalDestruction."
 msgstr ""
+"このモジュールは 120 行程度のコードで作られた、最小限のクラス構造を提供します。下記のような機能が用意されています:\n"
+"\n"
+"  * パラメータのインポートを経由した属性の定義\n"
+"\n"
+"  * 読み書きに対応するアクセサの生成\n"
+"\n"
+"  * 遅延属性の既定値への対応\n"
+"\n"
+"  * 独自のアクセサへの対応\n"
+"\n"
+"  * 標準的な 'new' コンストラクタを提供するスーパークラス\n"
+"\n"
+"  * 'new' におけるハッシュ参照やキー／値のペアに対するリストの受け付け\n"
+"\n"
+"  * 'new' における独自のコンストラクタオプションに対応するための 'BUILDARGS' に対応\n"
+"\n"
+"  * 'new' での親クラスからそれぞれの子クラスに対する 'BUILD' の呼び出し\n"
+"\n"
+"  * スーパークラスでの 'DESTROY' メソッドへの対応\n"
+"\n"
+"  * 'DESTROY' での親クラスからそれぞれの子クラスに対する 'DEMOLISH' の呼び出し\n"
+"\n"
+"多階層の継承にも対応しています。スーパークラスの判断は mro::get_linear_isa を使用します。\n"
+"\n"
+"最近の Perl では非中枢のモジュールを使用しています。 Perl のバージョンが 5.10 より前の場合は、 MRO::Compat "
+"が必要となります。また、 5.14 より前の場合は、 Devel::GlobalDestruction が必要です。"
 
 #. tumbleweed/perl-Class-Trigger/summary
 #. leap/perl-Class-Trigger/summary
 msgid "Mixin to add / call inheritable triggers"
-msgstr ""
+msgstr "継承可能なトリガの追加または呼び出しの混在"
 
 #. tumbleweed/perl-Class-Trigger/description
 #. leap/perl-Class-Trigger/description
@@ -10706,23 +10830,23 @@ msgid ""
 "Class::Trigger is a mixin class to add / call triggers (or hooks) that get "
 "called at some points you specify."
 msgstr ""
+"Class::Trigger は指定した任意の箇所で呼び出しを実施することができる、トリガ (フックとも呼びます) "
+"の追加や呼び出しを行なう混在クラスです。"
 
 #. tumbleweed/perl-Class-Unload/summary
 #. tumbleweed/perl-Class-Unload/description
 #. leap/perl-Class-Unload/summary
 #. leap/perl-Class-Unload/description
 msgid "Unload a class"
-msgstr ""
+msgstr "クラスのアップロード"
 
 #. tumbleweed/perl-Class-XPath/summary
 #. leap/perl-Class-XPath/summary
-#, fuzzy
 msgid "Adds xpath matching to object trees"
-msgstr "オブジェクトツリーに XPath マッチングを追加"
+msgstr "オブジェクトツリーに対する XPath マッチングの追加"
 
 #. tumbleweed/perl-Class-XPath/description
 #. leap/perl-Class-XPath/description
-#, fuzzy
 msgid ""
 "This module adds XPath-style matching to your object trees. This means that "
 "you can find nodes using an XPath-esque query with 'match()' from anywhere "
@@ -10738,20 +10862,15 @@ msgid ""
 "expect the subset of XPath supported to grow. See the SYNTAX documentation "
 "for details on the current level of support."
 msgstr ""
-"このモジュールは、お使いのオブジェクトツリーに XPath 形式のマッチング機能を提"
-"供します。これは、ツリー内のどこからでも match() を使用することで XPath 風の"
-"問い合わせを行なって、ノードを発見できるようにするためのものです。もちろん "
-"xpath() メソッドは、識別子として利用できるノードに対してユニークなパスを返却"
-"します。\n"
+"このモジュールは、お使いのオブジェクトツリーに XPath 形式のマッチング機能を提供します。これは、ツリー内のどこからでも match() "
+"を使用することで XPath 風の問い合わせを行なって、ノードを発見できるようにするためのものです。もちろん xpath() "
+"メソッドは、識別子として利用できるノードに対してユニークなパスを返却します。\n"
 "\n"
-"このモジュールを使用するには、ツリー内にオブジェクト指向の実装を導入していな"
-"ければなりません。また、ツリー構造は真のツリー、つまり全てのノードが単一の親"
-"を持ち、ツリーは単一のルートノードを持たなければなりません。さらに、ノード内"
-"の子は全て安定しなければなりません。\n"
+"このモジュールを使用するには、ツリー内にオブジェクト指向の実装を導入していなければなりません。また、ツリー構造は真のツリー、つまり全てのノードが単一の親を"
+"持ち、ツリーは単一のルートノードを持たなければなりません。さらに、ノード内の子は全て安定しなければなりません。\n"
 "\n"
-"注意: このモジュールは、現時点では完全な XPath 実装をしていません。今後対応済"
-"みの XPath サブセットが追加されていく予定です。現時点での対応レベルについて"
-"は、 SYNTAX (文法) ドキュメンテーションをお読みください。"
+"*注意:* このモジュールは、現時点では完全な XPath 実装をしていません。今後対応済みの XPath "
+"サブセットが追加されていく予定です。現時点での対応レベルについては、 SYNTAX (文法) ドキュメンテーションをお読みください。"
 
 #. tumbleweed/perl-Clone-PP/summary
 #. leap/perl-Clone-PP/summary
