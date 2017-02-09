@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-09 03:16+0000\n"
+"PO-Revision-Date: 2017-02-09 08:17+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -11311,12 +11311,25 @@ msgid ""
 "See the Config::Tiny::Ordered manpage (and possibly others) for the "
 "preservation of the order of the entries in the file."
 msgstr ""
+"'Config::Tiny' は .ini 形式の設定ファイルを、できる限り少ないコードで、"
+"読み込み時間と目盛りのオーバーヘッドを少なくして読み書きするための Perl クラスです。\n"
+"\n"
+"Perl のアプリケーションは一般に、多くのメモリとモジュールを使用しがちです。\n"
+"\n"
+"'*::Tiny' モジュールファミリは、標準的なモジュールに対して超軽量な代替モジュールを提供することを目指しています。\n"
+"\n"
+"このモジュールは主に手作業で作成したファイルを読み込み、ドキュメンテーションやコメントを用いずに書き込むことができる仕組みを目指しています。より強力な機能"
+"をお求めの場合は、 Config::Simple や Config::General をはじめ、多数のものがある 'Config::*' "
+"モジュールをご利用ください。\n"
+"\n"
+"なお、 Config::Tiny ではコメントやホワイトスペースのほか、設定ファイル内の順序は保持 *しません* 。\n"
+"\n"
+"ファイル内での項目の順序の維持について、詳しくは Config::Tiny::Ordered をお読みください。"
 
 #. tumbleweed/perl-Const-Fast/summary
 #. tumbleweed/perl-Const-Fast/description
 #. leap/perl-Const-Fast/summary
 #. leap/perl-Const-Fast/description
-#, fuzzy
 msgid "Facility for creating read-only scalars, arrays, and hashes"
 msgstr "読み込みのみのスカラ値や配列、ハッシュなどを作成できる仕組み"
 
@@ -11325,7 +11338,7 @@ msgstr "読み込みのみのスカラ値や配列、ハッシュなどを作成
 msgid ""
 "run code after a subroutine call, preserving the context the subroutine "
 "would have seen if it were the last statement in the caller"
-msgstr ""
+msgstr "サブルーチンの呼び出し後にコードを実行し、呼び出し後にサブルーチンを呼び出す前の状況に復元するためのモジュール"
 
 #. tumbleweed/perl-Context-Preserve/description
 #. leap/perl-Context-Preserve/description
@@ -11345,11 +11358,20 @@ msgid ""
 "though, the return value is ignored and the value 'wantarray' returns is "
 "related to the context that the original function was called in."
 msgstr ""
+"お使いのスクリプトから関数を呼び出すにあたっては、その結果を横取りして結果に基づいた処理を実施し、元の関数に戻るような処理を行ないたい場合があります。この"
+"ような処理は状況に依存することから、非常に手間のかかる作業となります。関数は void やスカラー値、リストコンテキストによってそれぞれ異なる動作をするこ"
+"とがありますし、すべての場合に対応しなければ意味がありません。これを正しく行なうには、スクリプトが今どのような状況下にあるのかを判断し、その状況下で呼び出"
+"しを実施する必要があります。この例では、少なくとも 3 種類のコードパスが必要となり、入力もメンテナンスも面倒になってしまいます。\n"
+"\n"
+"このモジュールはそのような処理を自動化します。元の関数を表わすコード参照 (coderef) "
+"と、元の関数が実行された後に実行するコード参照を提示するだけです。返り値 (@_) "
+"を修正することができるだけでなく、必要な処理すべてを行なうことができます。いずれのコード参照内でも、 'wantarray' は正しく動作しますが、 \""
+"after\" 内では返り値は無視され、 'wantarray' は元の関数の呼び出し時点の状況に従って設定されます。"
 
 #. tumbleweed/perl-Contextual-Return/summary
 #. leap/perl-Contextual-Return/summary
 msgid "Create context-sensitive return values"
-msgstr ""
+msgstr "状況依存の返り値の作成"
 
 #. tumbleweed/perl-Contextual-Return/description
 #. leap/perl-Contextual-Return/description
@@ -11385,6 +11407,35 @@ msgid ""
 "\"$server_data{load}\\n\"                      }         else        { croak "
 "q{Bad context! No biscuit!}                 }     }"
 msgstr ""
+"通常は、様々な状況 (リスト、スカラー、 void) で異なる値を返すサブルーチンを作成する必要がある場合は、下記のようにします:\n"
+"\n"
+"    sub get_server_status {         my ($server_ID) = @_;\n"
+"\n"
+"                 my %server_data = _ascertain_server_status($server_ID);\n"
+"\n"
+"                          if (wantarray()) {             return @server_data{"
+" qw(name uptime load users) };         }         if (defined wantarray()) {"
+"             return $server_data{load};         }         if (!defined "
+"wantarray()) {             carp 'Useless use of get_server_status() in void "
+"context';             return;         }         else {             croak q{"
+"Bad context! No biscuit!};         }     }\n"
+"\n"
+"もちろんこれでも動作はするのですが、よりコードを読みやすくすることができます。もっともシンプルな使い方としては、このモジュールを 3 種類のサブルーチン "
+"('LIST()', 'SCALAR()', 'VOID()') "
+"を利用する方法があります。もちろんこれは、現在のサブルーチンが関連する状況下になければなりません:\n"
+"\n"
+"    use Contextual::Return;\n"
+"\n"
+"    sub get_server_status {         my ($server_ID) = @_;\n"
+"\n"
+"                 my %server_data = _ascertain_server_status($server_ID);\n"
+"\n"
+"                          if (LIST)   { return @server_data{ qw(name uptime "
+"load users) } }         if (SCALAR) { return $server_data{load}"
+"                         }         if (VOID)   { print \"$server_data{load}\\"
+"n"
+"\"                      }         else        { croak q{Bad context! No "
+"biscuit!}                 }     }"
 
 #. tumbleweed/perl-Convert-ASN1/summary
 #. leap/perl-Convert-ASN1/summary
@@ -11402,7 +11453,7 @@ msgstr ""
 #. tumbleweed/perl-Convert-BinHex/summary
 #. leap/perl-Convert-BinHex/summary
 msgid "Extract Data From Macintosh Binhex Files"
-msgstr ""
+msgstr "Macintosh Binhex ファイルからのデータ抽出"
 
 #. tumbleweed/perl-Convert-BinHex/description
 #. leap/perl-Convert-BinHex/description
@@ -11599,12 +11650,12 @@ msgstr ""
 #. tumbleweed/perl-Cookie-Baker/summary
 #. leap/perl-Cookie-Baker/summary
 msgid "Cookie string generator / parser"
-msgstr ""
+msgstr "Cookie 文字列の生成および処理"
 
 #. tumbleweed/perl-Cookie-Baker/description
 #. leap/perl-Cookie-Baker/description
 msgid "Cookie::Baker provides simple cookie string generator and parser."
-msgstr ""
+msgstr "Cookie::Baker はシンプルな Cookie 文字列の生成および処理を行ないます。"
 
 #. tumbleweed/perl-Crypt-CBC/summary
 #. leap/perl-Crypt-CBC/summary
@@ -11644,7 +11695,7 @@ msgstr ""
 #. tumbleweed/perl-Crypt-PasswdMD5/summary
 #. leap/perl-Crypt-PasswdMD5/summary
 msgid "Provide interoperable MD5-based crypt() functions"
-msgstr ""
+msgstr "相互運用性のある MD5 ベースの crypt() 関数"
 
 #. tumbleweed/perl-Crypt-PasswdMD5/description
 #. leap/perl-Crypt-PasswdMD5/description
@@ -11662,18 +11713,25 @@ msgid ""
 "generated, using the function random_md5_salt(). This function is not "
 "exported by default."
 msgstr ""
+"'apache_md5_crypt()' は、 Apache の '.htpasswd' ファイルと互換性のある出力をする関数です。このモジュールは "
+"Bryan Hart 氏 <bryan@eai.com> によりご提供いただいております。この関数は既定で公開されます。\n"
+"\n"
+"このほか、 'unix_md5_crypt()' は新しいオペレーティングシステムで提供されるような、 MD5 ベースの crypt() "
+"互換のインターフェイスを提供します。これは FreeBSD 2.2.[56]-RELEASE 内の実装をベースにしています。この関数も既定で公開されます。"
+"\n"
+"\n"
+"いずれの関数も、 salt 値を指定しない場合は、 random_md5_salt() 関数の乱数を用いて salt "
+"値が設定されます。この関数のみ、既定では公開されません。"
 
 #. tumbleweed/perl-Crypt-Rot13/summary
 #. leap/perl-Crypt-Rot13/summary
-#, fuzzy
 msgid "Rot13 (Caesar) encryption for perl"
-msgstr "Perl 向け Blowfish 暗号化ツール"
+msgstr "Perl 向け Rot13 (シーザー) 暗号"
 
 #. tumbleweed/perl-Crypt-Rot13/description
 #. leap/perl-Crypt-Rot13/description
-#, fuzzy
 msgid "This package provides ROT13 Algorithm (Caesar) as a Perl module."
-msgstr "このパッケージは、 Samba Python モジュールを提供しています。"
+msgstr "このパッケージは、 ROT13 アルゴリズム (シーザー暗号) の Perl モジュールを提供します。"
 
 #. tumbleweed/perl-Crypt-SaltedHash/summary
 #. leap/perl-Crypt-SaltedHash/summary
