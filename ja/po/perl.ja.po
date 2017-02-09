@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-08 08:54+0000\n"
+"PO-Revision-Date: 2017-02-09 03:16+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -10903,11 +10903,27 @@ msgid ""
 "further processing. Alternately, if an object provides a method named "
 "'clone_init', it is called on the copied object before it is returned."
 msgstr ""
+"このモジュールは、 Perl のデータ構造の深いコピーを作成するための汎用クローン関数を提供します。入れ子になったハッシュや配列、スカラー値や参照型のほか"
+"、タイ変数やオブジェクトにタイしても、再帰的に関数を呼び出してコピーすることができます。\n"
+"\n"
+"clone() 関数ではコピーするスカラー値を指定します。配列やハッシュをコピーしたい場合は、それを参照として指定します:\n"
+"\n"
+"  my $copy = clone(\\@array);    my @copy = @{ clone(\\@array) };   my $copy "
+"= clone(\\%hash);     my %copy = %;\n"
+"\n"
+"clone() 関数は 2 つめのパラメータとして、コピーの深さレベルを指定することができます。 0 を指定した場合は指定した値と同じ値が返されます。 "
+"1 を指定した場合は浅いコピーが、 2 を指定した場合は 2 階層までのコピーが行なわれます。\n"
+"\n"
+"  my $shallow_copy = clone( $item, 1 );\n"
+"\n"
+"オブジェクトにタイしてコピーの方法への介入を許可する目的で、 clone() 関数では複数のオプションメソッドをチェックします。オブジェクト内に "
+"'clone_self' という名前のメソッドが存在した場合は、特に処理が行なわれることなく結果が返されます。また、 'clone_init' "
+"という名前のメソッドが存在した場合は、コピーを返す前にその関数が呼び出されます。"
 
 #. tumbleweed/perl-Config-Any/summary
 #. leap/perl-Config-Any/summary
 msgid "Load configuration from different file formats, transparently"
-msgstr ""
+msgstr "様々な形式の設定ファイルを透過的に読み込むモジュール"
 
 #. tumbleweed/perl-Config-Any/description
 #. leap/perl-Config-Any/description
@@ -10926,12 +10942,19 @@ msgid ""
 "single interface to be able to use the power of different configuration "
 "formats."
 msgstr ""
+"Config::Any は、 Perl のアプリケーションやライブラリに対して、様々なファイル形式の設定データを読み込むことができるようにする仕組みです。"
+" XML や YAML のほか、 JSON や Apache 形式の設定、 Windows の INI ファイルや Perl "
+"コードでさえも、設定ファイルとして読み込むことができます。\n"
+"\n"
+"このモジュールは下記のような理由によって作成されました: Perl のプログラムは様々なプラットフォーム上で動作し、様々なシステムに統合されます。システム"
+"管理者やユーザは、開発者とは異なる設定スタイルを好む傾向にありますが、複数の形式に対応した設定モジュールが存在することで、開発者に追加の負担を強いることな"
+"く、利用者の好きな方式を利用することができるようになります。開発者側の観点では、単一のインターフェイスが様々な設定ファイルの形式に対応するため、学習の負担"
+"を減らすことができます。"
 
 #. tumbleweed/perl-Config-Auto/summary
 #. leap/perl-Config-Auto/summary
-#, fuzzy
 msgid "Magical config file parser"
-msgstr "設定ファイル処理ライブラリ"
+msgstr "設定ファイル処理モジュール"
 
 #. tumbleweed/perl-Config-Auto/description
 #. leap/perl-Config-Auto/description
@@ -10945,10 +10968,17 @@ msgid ""
 "\n"
 "See the the HOW IT WORKS manpage section below on implementation details."
 msgstr ""
+"このモジュールは、コロンで区切られた設定形式である Yet Another Config File Parser の作成後に作られたもので、 \""
+"もう二度と同じようなモジュールは作らない\" ことを決めたことによるものです。\n"
+"\n"
+"Config::Auto はもっとも 'DWIM' (開発者の意図したとおりに使う) "
+"の発想に近いものを目指して作られています。設定方式の検出やパス、設定のファイル名などを、自動でかつ魔法のように検出します。\n"
+"\n"
+"実装の詳細について、詳しくは 'HOW IT WORKS' のマニュアルページ内のセクションをお読みください。"
 
 #. tumbleweed/perl-Config-AutoConf/summary
 msgid "Module to Implement Some of Autoconf Macros in Pure Perl"
-msgstr ""
+msgstr "純粋な Perl 内でいくつかの Autoconf マクロを実装するモジュール"
 
 #. tumbleweed/perl-Config-AutoConf/description
 msgid ""
@@ -10965,6 +10995,15 @@ msgid ""
 "(especially optional arguments) more Perl'ish than m4 abilities allow to the "
 "original."
 msgstr ""
+"Config::AutoConf は、シェルの開発者に対して作られた http://www.gnu.org/software/autoconf/ "
+"(autoconf) と同じ仕組みを、 Perl の開発者に対して提供することを目指しているものです。\n"
+"\n"
+"Perl はコンピュータにインストールされる言語としては第二位の存在になっていて (注: Unix オペレーティングシステムでは標準的に Perl "
+"がインストールされているほか、ミニコンピュータでは環境によって Perl がインストールされている場合もあり、 Windows "
+"マシンでは必要な場合にのみインストールされています) 、シェルベースの検出よりはより広いサポートを提供することができます。\n"
+"\n"
+"API は GNU Autoconf を学んで作られたものですが、オリジナルの m4 版よりはより Perl の方針に近い (特にオプションのパラメータ)"
+" 仕組みになるようにしています。"
 
 #. tumbleweed/perl-Config-Crontab/summary
 #. leap/perl-Config-Crontab/summary
@@ -11011,9 +11050,8 @@ msgstr ""
 
 #. tumbleweed/perl-Config-GitLike/summary
 #. leap/perl-Config-GitLike/summary
-#, fuzzy
 msgid "Git-Compatible Config File Parsing"
-msgstr "設定ファイル処理ライブラリ"
+msgstr "Git 互換の設定ファイル処理"
 
 #. tumbleweed/perl-Config-GitLike/description
 #. leap/perl-Config-GitLike/description
@@ -11052,11 +11090,34 @@ msgid ""
 "\n"
 "A few methods have parameters that are always used for the same purpose:"
 msgstr ""
+"このモジュールは、バージョン制御システムである Git "
+"の設定ファイルの書式を扱うためのモジュールです。読み込みと修正の両方に対応しているほか、新しい設定を作成することもできます。\n"
+"\n"
+"このモジュールを使用するには、まず設定ファイルの書式についていくつか知っておく必要があります。最初に、設定ファイルはキーと値のペアから構成されています。各"
+"キーはそれぞれセクションに所属しなければなりません。セクションにはサブセクションが存在する場合もありますが、必ずしもサブセクションが存在していなくてもかま"
+"いません。設定値を設定したり取得したりするためには、セクション名とサブセクション名、変数名をそれぞれドットで繋げて \""
+"(セクション名).(サブセクション名).(変数名)\" のようにします。これを 'key' パラメータに設定します。\n"
+"\n"
+"設定ファイルはお互いに継承関係にあります。既定では、 'Config::GitLike' はシステム全体の設定ファイルからデータを読み込み、その後ユーザご"
+"との設定ファイルやディレクトリごとの設定ファイルを読み込みます。ただし、サブクラス化やメソッドのオーバーライドなどの方法で、設定ファイルの組み合わせを取得"
+"することもできます。既定では存在しない設定ファイルは飛ばして作業します。\n"
+"\n"
+"git の設定ファイルの文法について、詳しくは http://www.kernel.org/pub/software/scm/git/docs/git-"
+"config.html#_configuration_file をお読みください。ここでは詳しく説明しません。\n"
+"\n"
+"このモジュールは 'git config' とは異なる動作をしますが、このモジュールは git が書き込んだ任意の設定ファイルを読み込むことができます。"
+"逆にこのモジュールが書き込んだ設定ファイルを git 側に読み込ませることもできますが、"
+"このモジュールが追加した独自の拡張機能のメリットが受けられなくなってしまいます (詳しくは DIFFERENCES FROM GIT-CONFIG "
+"をお読みください) 。\n"
+"\n"
+"このモジュールは Moo を利用したオブジェクト指向のモジュールです。すべてのサブルーチンはオブジェクトのメソッドを呼び出します。\n"
+"\n"
+"また、いくつかのメソッドには常に同じ目的で使用されるパラメータもあります:"
 
 #. tumbleweed/perl-Config-Grammar/summary
 #. leap/perl-Config-Grammar/summary
 msgid "Grammar-Based, User-Friendly Config Parser"
-msgstr ""
+msgstr "文法ベースでユーザにわかりやすい設定パーサ"
 
 #. tumbleweed/perl-Config-Grammar/description
 #. leap/perl-Config-Grammar/description
@@ -11081,16 +11142,28 @@ msgid ""
 "thus allows an experienced user to fill in the configuration data more "
 "efficiently."
 msgstr ""
+"Config::Grammar は設定ファイルを処理するためのモジュールです。 2 つめのパラメータはオプションで、"
+"使用すべきファイルのエンコーディングを指定します (Perl が使用する open プラグマのドキュメンテーションをお読みください) 。\n"
+"\n"
+"設定ファイルには複数レベルのセクションを存在させることができるほか、単純な代入や表形式の値をとることもできます。処理されたデータは設定ファイル全体を含むハ"
+"ッシュとして返されます。 Config::Grammer "
+"はそのオブジェクトの作成時に、設定ファイルを処理するための文法を指定するほか、文法エラーが発生した際にはわかりやすいエラーメッセージを返します。 "
+"*makepod* メソッドを利用することで、設定ファイルの書式に対してドキュメンテーションを生成することもできます。\n"
+"\n"
+"*maketmpl* メソッドでは、ひな形 (テンプレート) "
+"となる設定ファイルを生成することができます。なお、文法内に正規表現マッチが含まれていた場合は、その仕組み上あまり役には立ちません。関連する関数である "
+"*maketmplmin* "
+"では、例や正規表現、コメントなどを提示することなく最小限の設定テンプレートを作成します。これにより、設定データをより効率的に入力できるようになります。"
 
 #. tumbleweed/perl-Config-INI/summary
 #. leap/perl-Config-INI/summary
 msgid "Simple .Ini-File Format"
-msgstr ""
+msgstr "シンプルな .ini ファイル形式"
 
 #. tumbleweed/perl-Config-INI/description
 #. leap/perl-Config-INI/description
 msgid "simple .ini-file format"
-msgstr ""
+msgstr "シンプルな .ini ファイル形式"
 
 #. tumbleweed/perl-Config-IniFiles/summary
 msgid "Module for Reading .Ini-Style Configuration Files"
@@ -11111,7 +11184,7 @@ msgstr ""
 #. tumbleweed/perl-Config-MVP/summary
 #. leap/perl-Config-MVP/summary
 msgid "Multivalue-Property Package-Oriented Configuration"
-msgstr ""
+msgstr "プロパティに複数の値を設定することができるパッケージ指向の設定"
 
 #. tumbleweed/perl-Config-MVP/description
 #. leap/perl-Config-MVP/description
@@ -11131,24 +11204,33 @@ msgid ""
 "This is a pretty abstract set of behaviors, so we'll provide some more "
 "concrete examples that should help explain how things work."
 msgstr ""
+"MVP はライブラリ向けのモジュールで、設定 (またはその他の情報) "
+"を読み込むための仕組みです。ファイルやデータベースから読み込むような機能はなく、単純にヘルパーとして動作します。\n"
+"\n"
+"考え方は Config::MVP::Sequence "
+"オブジェクトをご覧になればわかるでしょう。このオブジェクトを利用して、ライブラリやアプリケーションの設定を扱うことができるようになります。 "
+"sequence にはたくさんの Config::MVP::Section "
+"オブジェクトが含まれていますが、それぞれはお使いのプログラムの設定箇所を表わしています。これらのセクションの多くは、プラグインやヘルパーとして使用する "
+"Perl ライブラリに直接関係するはずのものです。各セクションには名前が設定され、 sequence 内の名前は唯一のものであるべきものです。\n"
+"\n"
+"個のモジュールは動作に対する抽象セットで、このモジュールの動作についての詳しい説明をお読みになれば、意図がわかるでしょう。"
 
 #. tumbleweed/perl-Config-MVP-Reader-INI/summary
 #. leap/perl-Config-MVP-Reader-INI/summary
 msgid "an MVP config reader for .ini files"
-msgstr ""
+msgstr ".ini ファイル向け MVP 設定読み込みモジュール"
 
 #. tumbleweed/perl-Config-MVP-Reader-INI/description
 #. leap/perl-Config-MVP-Reader-INI/description
 msgid ""
 "Config::MVP::Reader::INI reads _.ini_ files containing MVP-style "
 "configuration."
-msgstr ""
+msgstr "Config::MVP::Reader::INI は MVP 形式の設定を含む _.ini_ ファイルを読み込みます。"
 
 #. tumbleweed/perl-Config-MySQL/summary
 #. leap/perl-Config-MySQL/summary
-#, fuzzy
 msgid "Read and write MySQL-style configuration files"
-msgstr "シンプルな設定ファイルの処理"
+msgstr "MySQL 形式の設定ファイルの読み書き"
 
 #. tumbleweed/perl-Config-MySQL/description
 #. leap/perl-Config-MySQL/description
@@ -11158,13 +11240,14 @@ msgid ""
 "INI' files, they can include bare boolean options with no value assignment "
 "and additional features like '!include' and '!includedir'."
 msgstr ""
+"このモジュールは Config::INI を拡張するモジュールで、 MySQL 形式の設定ファイルを読みこんだり、書き込んだりすることができます。標準の "
+"\".INI' ファイルと非常に似通っていますが、 MySQL では値を代入せずにブール値を設定できたり、 '!include' や "
+"'!includedir' のような追加の機能が用意されています。"
 
 #. tumbleweed/perl-Config-Std/summary
 #. leap/perl-Config-Std/summary
-#, fuzzy
 msgid "Load and save configuration files in a standard format"
-msgstr ""
-"設定ファイルを読み込んだり、コマンドラインパラメータを処理するモジュール"
+msgstr "標準の形式で設定ファイルを読み書きするモジュール"
 
 #. tumbleweed/perl-Config-Std/description
 #. leap/perl-Config-Std/description
@@ -11186,11 +11269,23 @@ msgid ""
 "See Chapter 19 of \"Perl Best Practices\" (O'Reilly, 2005) for more detail "
 "on the rationale for this approach."
 msgstr ""
+"このモジュールは、もう 1 つの忌々しい設定ファイルシステムを実装するものです。\n"
+"\n"
+"設定の言語はわざとシンプルかつ制限のあるものに仕立て上げられていて、設定ファイルをアップロードした時点の情報 (セクションの順序、コメントなど) を、"
+"できる限り多く 保持できるように様々な処理を行なっています。\n"
+"\n"
+"Config::Std は設定ファイルに対して唯一の標準レイアウトおよび文法を使用するように奨励するためのもので、 Damian 氏によると \""
+"このモジュールからしばらく離れていたが、区切り文字は 1 種類のみにしたほうが良かった。しかし ':' と '=' "
+"のどちらを選択するのかを決めるのは不可能 (おおよそユーザは半々に別れる) だ\" "
+"と評しています。設定ファイルをいったん読み込んで書き出すことでも、これは解決できるためです。対応する文法は一般に、 INI "
+"ファイルに類するものとされます。\n"
+"\n"
+"このアプローチの根拠について、詳しくは \"Perl Best Practices\" (O'Reilly, 2005) の第 19 章をお読みください。"
 
 #. tumbleweed/perl-Config-Tiny/summary
 #. leap/perl-Config-Tiny/summary
 msgid "Read/Write .ini style files with as little code as possible"
-msgstr ""
+msgstr "できる限り少ないコードでの .ini 形式のファイルの読み書き"
 
 #. tumbleweed/perl-Config-Tiny/description
 #. leap/perl-Config-Tiny/description
