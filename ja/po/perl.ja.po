@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-09 08:17+0000\n"
+"PO-Revision-Date: 2017-02-13 07:33+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -11746,12 +11746,14 @@ msgid ""
 "formalization of this concept comes from RFC-3112 and is extended by the use "
 "of different digital agorithms."
 msgstr ""
+"'Crypt::SaltedHash' モジュールは、暗号化などの施されていないテキストに対して、 salt ('シード' とも呼びます) "
+"付きのハッシュを作成する機能を提供する、オブジェクト志向のインターフェイスを提供します。このモジュールの構造は、 RFC-3112 "
+"のものを参考にして作られており、異なるデジタルアルゴリズムに対応するために拡張されています。"
 
 #. tumbleweed/perl-CursesWidgets/summary
 #. leap/perl-CursesWidgets/summary
-#, fuzzy
 msgid "CursesWidgets Perl module"
-msgstr "Perl 向け Curses::Widgets モジュール"
+msgstr "CursesWidgets Perl モジュール"
 
 #. tumbleweed/perl-CursesWidgets/description
 #. leap/perl-CursesWidgets/description
@@ -11760,18 +11762,20 @@ msgid ""
 "versions.        This is entirely OO-based, hence any older scripts relying "
 "on the        old versions will need to be rewritten."
 msgstr ""
+"注意: このモジュールは、バージョン 1.99 以前との互換性が *ありません* "
+"。このモジュールはオブジェクト志向をベースにしているため、古いバージョンに依存して作られたスクリプトについては、作り直す必要があります。"
 
 #. tumbleweed/perl-Cwd-Guard/summary
 #. leap/perl-Cwd-Guard/summary
 msgid "Temporary changing working directory (chdir)"
-msgstr ""
+msgstr "一時的な作業ディレクトリの変更 (chdir)"
 
 #. tumbleweed/perl-Cwd-Guard/description
 #. leap/perl-Cwd-Guard/description
 msgid ""
 "CORE::chdir Cwd:: Guard can change the current directory (chdir) using a "
 "limited scope."
-msgstr ""
+msgstr "Core::chdir Cwd::Guard は、制限されたスコープ範囲内で、現在のディレクトリを変更する (chdir) ことができます。"
 
 #. tumbleweed/perl-DBD-CSV/summary
 #. leap/perl-DBD-CSV/summary
@@ -11804,7 +11808,7 @@ msgstr ""
 #. tumbleweed/perl-DBD-XBase/summary
 #. leap/perl-DBD-XBase/summary
 msgid "Reads and writes XBase (dbf) files, includes DBI support"
-msgstr ""
+msgstr "XBase (dbf) ファイルの読み書き (DBI サポート付き)"
 
 #. tumbleweed/perl-DBD-XBase/description
 #. leap/perl-DBD-XBase/description
@@ -11824,11 +11828,22 @@ msgid ""
 "need indexed access, check XBase(3) for notes about support for variour "
 "index types."
 msgstr ""
+"モジュール XBase に対する DBI 準拠のドライバです。このモジュールの使い方について、詳しくは DBI(3) "
+"のドキュメンテーションをお読みください。 *connect* コールでは、 dbf ファイル (およびその他のメモなど) "
+"を含むディレクトリを接続文字列の一部として指定します。既定値ではカレントディレクトリを対象とします。\n"
+"\n"
+"なお、 dbf ファイルを使用するにあたってはデータベースサーバを必要としません。 DBD::XBase は XBase.pm "
+"モジュール内のメソッドを呼び出し、ディスク内にあるファイルを直接読み書きします。そのため、 XBase.pm 側の制限と機能がそのまま DBD::"
+"XBase にも当てはまることになります。また DBD::XBase では、基本的に XBase.rpm に対する DBI 準拠の SQL "
+"インターフェイスを追加しています。\n"
+"\n"
+"現時点では、 DBD::XBase はインデックスファイルを使用しません。インデックス付きのファイルにアクセスする必要がある場合は、"
+"様々なインデックスタイプ向けの XBase(3) 内のドキュメンテーションをお読みください。"
 
 #. tumbleweed/perl-DBICx-TestDatabase/summary
 #. leap/perl-DBICx-TestDatabase/summary
 msgid "create a temporary database from a DBIx::Class::Schema"
-msgstr ""
+msgstr "DBIx::Class:Schema からの一時データベースの作成"
 
 #. tumbleweed/perl-DBICx-TestDatabase/description
 #. leap/perl-DBICx-TestDatabase/description
@@ -11838,11 +11853,14 @@ msgid ""
 "you have a fresh database for every test, you don't have to worry about "
 "cleaning up after your tests, ordering of tests affecting failure, etc."
 msgstr ""
+"このモジュールは一時的な SQLite データベースを作成し、 DBIC のスキーマを作成して接続することのできるモジュールです。この仕組みにより、 "
+"DBIC のスキーマを簡単にテストすることができます。各テストでからのデータベースを用意する必要がないため、各テスト後のクリーンアップやテストの順序につい"
+"て心配をする必要もありません。"
 
 #. tumbleweed/perl-DBIx-Class/summary
 #. leap/perl-DBIx-Class/summary
 msgid "Extensible and flexible object <-> relational mapper"
-msgstr ""
+msgstr "拡張可能で柔軟性のあるオブジェクト <-> リレーショナルマッパー"
 
 #. tumbleweed/perl-DBIx-Class/description
 #. leap/perl-DBIx-Class/description
@@ -11879,11 +11897,32 @@ msgid ""
 "generally made to CPAN before the branch for the next release is merged back "
 "to trunk for a major release."
 msgstr ""
+"このモジュールは、 Class::DBI (移植向けのきっかけとしての互換レイヤ)  に触発されて作られた、オブジェクト API 型の SQL to "
+"OO マッパーです。このほか、データベースの操作をカプセル化し、抽象化する resultset API も提供されています。お使いのコード内で、"
+"できる限り Perl のやり方を維持したまま、かつできる限り多くのデータベースの機能にアクセスできるよう問い合わせを行なう仕組みを提供します。なお、単一の"
+"問い合わせないで複数のテーブルからのレコードを返すような複雑な問い合わせ、たとえば  'JOIN', 'LEFT JOIN', 'COUNT', "
+"'DISTINCT', 'GROUP BY', 'ORDER BY','HAVING' などにも対応しています。\n"
+"\n"
+"DBIx::Class は複数列のプライマリキーや外部キーに対応しているほか、複雑な問い合わせやデータベースレベルのページングに対応し、問い合わせに対して"
+"必要な処理だけをデータベースに実施するようベストを尽くします。 resultset "
+"はメモリの使用量を最小化する目的から、必要な行のみをフェッチするようになっています。また、 SQLite, MySQL, PostgreSQL, "
+"Oracle, SQL Server, DB2 に対しては、自動インクリメントにも対応しているほか、少なくとも SQLite, MySQL, "
+"PostgreSQL, Oracle に対しては本番環境での利用にも耐え、 DBD としては対応していないものもありますが、既定の状態で fork "
+"やスレッドにも対応しています。\n"
+"\n"
+"このプロジェクトは現在も頻繁に開発が行なわれているものであるため、ほとんどの新機能は *実験的* なものであると位置づけられます。これらの API "
+"はおそらく使うことができますが、極端なバグがあるかもしれません。テストケースでの失敗と対象リリースの報告は _常に_ "
+"歓迎しており、これによって素早い開発と修正を実現しています。\n"
+"\n"
+"また、公開済みの API に対しては、 DBIx::Class が本番環境内でも多数使用されていることから、後方互換性の確保を努力しておりますし、何か後方"
+"互換性に問題のある変更があれば、その旨報告していただくことで、お使いのコードに影響の無いよう修正を行なっております。\n"
+"\n"
+"このテストスイートは非常に充実した仕組みで、次期リリースのブランチが作成されるよりも前に開発者リリースが公開されることもあります。"
 
 #. tumbleweed/perl-DBIx-Class-DeploymentHandler/summary
 #. leap/perl-DBIx-Class-DeploymentHandler/summary
 msgid "Extensible DBIx::Class deployment"
-msgstr ""
+msgstr "拡張性のある DBIx::Class 配置"
 
 #. tumbleweed/perl-DBIx-Class-DeploymentHandler/description
 #. leap/perl-DBIx-Class-DeploymentHandler/description
@@ -11925,21 +11964,52 @@ msgid ""
 "That's really just a taste of some of the differences. Check out each role "
 "for all the details."
 msgstr ""
+"'DBIx::Class::DeploymentHandler' はその名前が示しているとおり、 DBIx::Class "
+"でデータベースの配置とアップグレードの処理を行なうためのツールです。 DBIx::Class::Schema::Versioned "
+"よりもずっと柔軟な仕組みになるよう設計されていて、 Moose の用途や役割を担うことができるようにもなっています。\n"
+"\n"
+"'DBIx::Class::DeploymentHandler' それ自身はお勧めの役割セットともいえるもので、多くの人々にとってはうまく使いこなせないも"
+"のでもありますが、それでも十分にお役に立てるものと思っております。各役割に対して独自のニュアンスやドキュメンテーションが設定されているため、ここでは詳しく"
+"説明しませんが、 DBIx::Class::Schema::Versioned の動作 (および互換性を確保しようとしている "
+"DBIx::Class::DeploymentHandler::Deprecated) と比較した主な利点があります:\n"
+"\n"
+"* *\n"
+"\n"
+"  アップグレードに加えてダウングレードにも対応。\n"
+"\n"
+"* *\n"
+"\n"
+"  アップグレードやダウングレード、インストール時に追加の複数の SQL ファイルを設定可能。\n"
+"\n"
+"* *\n"
+"\n"
+"  アップグレードやダウングレード、インストール時に Perl スクリプトを設定可能。\n"
+"\n"
+"* *\n"
+"\n"
+"  'factorial(scalar @versions)' を生成するのに必要となっていた不便な場合とは異なり、アップグレードに対しては 1 "
+"セットのファイルがあれば実施可能。\n"
+"\n"
+"* *\n"
+"\n"
+"  それ以外にも多数の機能があります！\n"
+"\n"
+"ここで示されているのはごく一部でしかありません。詳しくは各役割をお読みください。"
 
 #. tumbleweed/perl-DBIx-Class-DynamicDefault/summary
 #. leap/perl-DBIx-Class-DynamicDefault/summary
 msgid "Automatically set and update fields"
-msgstr ""
+msgstr "項目に対する自動設定や自動更新"
 
 #. tumbleweed/perl-DBIx-Class-DynamicDefault/description
 #. leap/perl-DBIx-Class-DynamicDefault/description
 msgid "Automatically set and update fields with values calculated at runtime."
-msgstr ""
+msgstr "実行時に値を計算して、項目を自動的に設定したり更新したりすることができます。"
 
 #. tumbleweed/perl-DBIx-Class-Fixtures/summary
 #. leap/perl-DBIx-Class-Fixtures/summary
 msgid "Dump data and repopulate a database using rules"
-msgstr ""
+msgstr "ルールを利用したデータベースのデータダンプと再投入"
 
 #. tumbleweed/perl-DBIx-Class-Fixtures/description
 #. leap/perl-DBIx-Class-Fixtures/description
@@ -11950,11 +12020,14 @@ msgid ""
 "impractical to use production clones. Describe fixture set using relations "
 "and conditions based on your DBIx::Class schema."
 msgstr ""
+"元となるデータベースからデータをダンプしてファイルシステムに書き込み、他のデータベース (同じスキーマ) に任意のタイミングでインポートする機能を提供しま"
+"す。テスト実施時のデータセットの投入として使用することができるほか、本番のクローンを作成するのでは現実的ではないようなテストを実施する際に便利です。 "
+"DBIx::Class スキーマをベースにして、関連性や条件などを設定することもできます。"
 
 #. tumbleweed/perl-DBIx-Class-InflateColumn-FS/summary
 #. leap/perl-DBIx-Class-InflateColumn-FS/summary
 msgid "Inflate/deflate columns to Path::Class::File objects"
-msgstr ""
+msgstr "列を拡張または縮小して Path::Class:File オブジェクトへの変換"
 
 #. tumbleweed/perl-DBIx-Class-InflateColumn-FS/description
 #. leap/perl-DBIx-Class-InflateColumn-FS/description
@@ -11972,11 +12045,21 @@ msgid ""
 "\n"
 "'fs_new_on_update' will create a new file name if the file has been updated."
 msgstr ""
+"BLOB と呼ばれるファイルシステムストレージを Path::Class::FIle オブジェクトに拡張します。\n"
+"\n"
+"ストレージのパスは 'fs_column_path' で指定することができます。各ファイルにはユニークな名前が付与されるため、すべての FS "
+"に対するストレージを同じパスに設定することができます。\n"
+"\n"
+"'fs_column_path' で指定したパス内では、ファイルはユニークなファイル名の最初の 2 "
+"文字を利用して、サブディレクトリが作成され保存されます。必要であれば、最大 256 個のサブディレクトリまで作成することができます。また、派生クラス内で "
+"'_fs_column_dirs' をオーバーライドすることで、動作を変更することもできます。\n"
+"\n"
+"'fs_new_on_update' は、ファイルが更新された場合に新しいファイル名を作成します。"
 
 #. tumbleweed/perl-DBIx-Class-IntrospectableM2M/summary
 #. leap/perl-DBIx-Class-IntrospectableM2M/summary
 msgid "Introspect many-to-many shortcuts"
-msgstr ""
+msgstr "多対多ショートカットの調査"
 
 #. tumbleweed/perl-DBIx-Class-IntrospectableM2M/description
 #. leap/perl-DBIx-Class-IntrospectableM2M/description
@@ -11988,19 +12071,21 @@ msgid ""
 "all relevant information about these non-relationships so they can later be "
 "introspected and examined."
 msgstr ""
+"多対多の関係性は実際には関係性と呼ばれないため、 DBIx::Class では内部調査を行なうことができません。多対多の関係性は、実際には 2 "
+"つの関係性の橋渡しとしてインストールされる便利なメソッド集です。 DBIx::Class のコンポーネントとしては、これはこれらの非関係性に関するすべての"
+"情報を保持する際に利用することができます。これにより、後から内部調査を行なったりすることができるようになります。"
 
 #. tumbleweed/perl-DBIx-Class-OptimisticLocking/summary
 #. tumbleweed/perl-DBIx-Class-OptimisticLocking/description
 #. leap/perl-DBIx-Class-OptimisticLocking/summary
 #. leap/perl-DBIx-Class-OptimisticLocking/description
 msgid "Optimistic locking support for DBIx::Class"
-msgstr ""
+msgstr "DBIx::Class 向け楽観的ロックサポート"
 
 #. tumbleweed/perl-DBIx-Class-Schema-Config/summary
 #. leap/perl-DBIx-Class-Schema-Config/summary
-#, fuzzy
 msgid "Credential Management for DBIx::Class"
-msgstr "Samba 資格情報管理ライブラリ"
+msgstr "DBIx::Class 向け認証管理"
 
 #. tumbleweed/perl-DBIx-Class-Schema-Config/description
 #. leap/perl-DBIx-Class-Schema-Config/description
@@ -12016,11 +12101,18 @@ msgid ""
 "credentials can be found at the http://www.symkat.com/credential-management-"
 "in-dbix-class manpage"
 msgstr ""
+"DBIx::Class::Schema::Config は DBI::Class::Schema のサブクラスで、ファイルから認証情報や設定などを読み込む"
+"ことができるモジュールです。実際のコード自身では、設定ファイル内で使用される名前のみを知る必要があります。これにより、データベースの認証情報を管理するにあ"
+"たってシンプルな運用を実現することができます。\n"
+"\n"
+"このソフトウエアを利用して認証情報を管理するシンプルなチュートリアルについて、このドキュメンテーションより詳しい情報や、既存の DBIx::Class "
+"スキーマの変換方法の説明について、詳しくは http://www.symkat.com/credential-management-in-dbix-"
+"class をお読みください。"
 
 #. tumbleweed/perl-DBIx-Class-Schema-Loader/summary
 #. leap/perl-DBIx-Class-Schema-Loader/summary
 msgid "Create a DBIx::Class::Schema based on a database"
-msgstr ""
+msgstr "データベースを基礎にした DBIx::Class::Schema の作成"
 
 #. tumbleweed/perl-DBIx-Class-Schema-Loader/description
 #. leap/perl-DBIx-Class-Schema-Loader/description
@@ -12050,11 +12142,33 @@ msgid ""
 "\n"
 "See DBIx::Class::Schema::Loader::Base for available options."
 msgstr ""
+"DBIx::Class::Schema::Loader は DBIx::Class:Schema "
+"の定義を自動化するもので、データベース側のテーブル定義のほか、列やプライマリキー、ユニーク制約や関係性をスキャンして構築するものです。\n"
+"\n"
+"dbicdump について、詳しくは 'dbucdump' ユーティリティをご覧ください。\n"
+"\n"
+"DBIx::Class::Schema::Loader は、現時点では DBI のストレージタイプのみに対応しています。 DBD::Pg, DBD::"
+"mysql, DBD::DB2, DBD::Firebird, DBD::InterBase, DBD::Informix, DBD::"
+"SQLAnywhere, DBD::SQLite, DBD::Sybase (Sybase ASE, MSSQL 向け), DBD::ODBC ("
+"MSSQL, MSAccess, Firebird, SQL Anywhere), DBD::ADO (MSSQL, MSAccess 向け), "
+"DBD::Oracle に対しては明示的なサポートが提供されています。その他の DBI "
+"ドライバでも、このローダを利用することでいくらかの機能を利用することができますが、どの機能を利用できるのかについては、 DBI "
+"仕様の実装範囲や実装されている標準の範囲に依存します。\n"
+"\n"
+"その他の DBD に対して修正がある場合は、是非お送りください。\n"
+"\n"
+"未対応の DBD ドライバ向けに固有のサブクラスを作成したい場合は、 DBIx::Class:Schema::Loader::DBI::Writing "
+"内のメモをお読みください。\n"
+"\n"
+"このモジュールは DBIx::Class 0.08127 およびそれ以降のバージョンが必要です。古い DBIx::Class::Loader "
+"は廃止されます。\n"
+"\n"
+"利用可能なオプションについて、詳しくは DBIx::Class:Schema::Loader::Base をお読みください。"
 
 #. tumbleweed/perl-DBIx-Class-UUIDColumns/summary
 #. leap/perl-DBIx-Class-UUIDColumns/summary
 msgid "Implicit uuid columns"
-msgstr ""
+msgstr "暗黙の uuid 列"
 
 #. tumbleweed/perl-DBIx-Class-UUIDColumns/description
 #. leap/perl-DBIx-Class-UUIDColumns/description
