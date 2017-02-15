@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-14 07:48+0000\n"
+"PO-Revision-Date: 2017-02-15 08:24+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -5555,8 +5555,8 @@ msgid ""
 "This module is implemented in XS, with a pure Perl backup version for "
 "systems that can't handle XS."
 msgstr ""
-"このモジュールは Perl のスカラー値の文字列部分を扱うためのものです。スカラー値には文字列値が設定されていますが、これは概念上、 ISO-8859-"
-"1 もしくは UTF-8 で内部的にエンコードされた Unicode コードポイントの並びとして解釈することができます。実際のところ、古いバージョンの "
+"このモジュールは Perl のスカラー値の文字列部分に関するものです。スカラー値には文字列値が設定されていますが、これは概念上、 ISO-8859-1 "
+"もしくは UTF-8 で内部的にエンコードされた Unicode コードポイントの並びとして解釈することができます。実際のところ、古いバージョンの "
 "Perl では、内部エンコーディングがそのようになっています。 Perl の文字列について詳しく知るには、これらの実装に関する詳細を知る必要があります。"
 "\n"
 "\n"
@@ -12554,12 +12554,26 @@ msgid ""
 "the pure perl Dumper rather than the XS one, but I've never in my life seen "
 "Data::Dumper show up in a profile so \"who cares?\"."
 msgstr ""
+"このモジュールは Dumper と呼ばれる関数 1 "
+"つだけを公開しています。この関数は、与えられた値の配列を指定することで、その値を表示することができるものです。\n"
+"\n"
+"Dumper は基本的に Dumper "
+"オプションの集合体で、多数のアプリケーションで使用されるような、主にデバッグ出力を目的とした便利な方法を提供するものです。\n"
+"\n"
+"動作原理を言葉で表わすとすれば、 \"使い物になるもっとも簡潔なダンプ出力を、もっとも賢く処理するモジュール\" であるといえます。たとえば "
+"Data::Dumper::Streamer では、ご存じのとおり少ない行数でより短い出力を行ないます。これはよりシンプルな仕組みで、今まで "
+"segfault が発生する様子を見たこともありません。ただし複雑で奇妙な構造体では期待通りには動作しません。ですから、簡潔さが求められるような用途にお使"
+"いいただくのがよいでしょう。\n"
+"\n"
+"目標が簡潔なものであるとするならば、なぜ中身を処理するのでしょうか？これはデバッグの際、どのサブルーチン参照なのかを知りたい場合や、 eval "
+"で元の値に戻したいような場合に、サブ参照をまず削除したいような場合や、独自の方法で元に戻したいような場合に都合の良い仕組みになります。なお、 XS "
+"ではなく純粋な Perl で Dumper を動作させるよう -強制- するのですが、 Dumper "
+"自身に対してプロファイラを実行するようなことは無いものと思っていますが、そうでしょうか？"
 
 #. tumbleweed/perl-Data-Entropy/summary
 #. leap/perl-Data-Entropy/summary
-#, fuzzy
 msgid "Entropy (randomness) management"
-msgstr "コントロールグループ管理ツール"
+msgstr "エントロピー (乱数性) 管理"
 
 #. tumbleweed/perl-Data-Entropy/description
 #. leap/perl-Data-Entropy/description
@@ -12582,11 +12596,21 @@ msgid ""
 "the pseudo-entropy stream. If more true entropy is required then it is "
 "necessary to configure a different entropy source."
 msgstr ""
+"このモジュールは、現在のエントロピーの情報源を管理する考え方をしています。エントロピーを必要とするアルゴリズム、たとえばData::Entropy::"
+"Algorithms などで、このモジュールが指定した情報源を利用することができますが、情報源側のオブジェクトを明示的に渡す必要がありません。これは通常、"
+"プログラム全体でエントロピー源は 1 つ存在すれば十分で、わざわざ明示的にパラメータを指定するようなことはほとんど無いためです。また、既定のエントロピー源"
+"も用意されていますが、これによって明示的な設定を全く行なわなくても動作するようになっています。\n"
+"\n"
+"情報源を設定する処理を行なわない場合、既定ではカウンターモードで、 Perl の内蔵 'rand' 関数をキーとしてとる Rijindael (AES) "
+"を利用します (詳しくは Data::Entropy::RawSource::CryptCounter manpage および Crypt::"
+"Rijndael をお読みください) 。これにより濃縮されたエントロピーのように見えるデータソースとなりますが、多くても 'rand' "
+"のシードのエントロピー程度になります。 1 回だけの実行では、暗号処理として疑似エントロピーストリームとの相関性を検出するのは難しくなります。なお、複数の"
+"エントロピーが必要な場合は、異なるエントロピー源を設定する必要があります。"
 
 #. tumbleweed/perl-Data-Float/summary
 #. leap/perl-Data-Float/summary
 msgid "Details of the floating point data type"
-msgstr ""
+msgstr "浮動小数点のデータタイプの詳細"
 
 #. tumbleweed/perl-Data-Float/description
 #. leap/perl-Data-Float/description
@@ -12597,12 +12621,13 @@ msgid ""
 "native floating point type, classification functions, and functions to "
 "manipulate floating point values at a low level."
 msgstr ""
+"このモジュールは、ネイティブな浮動小数点データタイプに関するものです。 Perl の数値表現では浮動小数点はデータタイプのうちの 1 "
+"つですが、このモジュールはネイティブな浮動小数点タイプに関する定数を提供するほか、分類関数や低レベルの浮動小数点値の操作関数などが含まれています。"
 
 #. tumbleweed/perl-Data-Hexify/summary
 #. leap/perl-Data-Hexify/summary
-#, fuzzy
 msgid "Perl extension for hexdumping arbitrary data"
-msgstr "配列比較用の Perl 拡張"
+msgstr "任意のデータを 16 進数ダンプするための Perl 拡張"
 
 #. tumbleweed/perl-Data-Hexify/description
 #. leap/perl-Data-Hexify/description
@@ -12685,6 +12710,73 @@ msgid ""
 "0010: 20 35 2e 30 30 ... 73 65 20 73 74 72 69   5.006;.use stri     ... and "
 "so on ..."
 msgstr ""
+"このモジュールは 1 つのサブルーチン 'Hexify' だけを公開します。\n"
+"\n"
+"'Hexify' は任意 (主にバイナリ) のデータを 'xd' や 'hexl' の形式で 16 進数ダンプします。\n"
+"\n"
+"'Hexify' に指定する最初の (場合によっては唯一の) パラメータは、 16 進数ダンプするデータ、もしくはデータの参照です。 Hexify "
+"は下記のような文字列を返します:\n"
+"\n"
+"  0000: 70 61 63 6b 61 67 65 20 44 61 74 61 3a 3a 48 65  package Data::He   "
+"0010: 78 69 66 79 3b 0a 0a 75 73 65 20 35 2e 30 30 36  xify;..use 5.006\n"
+"\n"
+"左側には (16 進数で) データの位置が表示され、その後ろにバイト列が続きます。残りはデータそのものの値で、表示不可能な文字は \".\" "
+"に置き換えられています。\n"
+"\n"
+"'Hexify' には 2 "
+"つめのパラメータを指定することができますが、こちらはハッシュまたはハッシュ参照でなければなりません。それぞれ下記のパラメータを設定することができます:\n"
+"\n"
+"* first\n"
+"\n"
+"  処理対象とするデータの開始位置。何も指定しない場合はデータの先頭から処理されます。\n"
+"\n"
+"* length\n"
+"\n"
+"  処理対象とするデータの長さ。何も指定しない場合はすべてのデータを処理します。\n"
+"\n"
+"* chunk\n"
+"\n"
+"  出力時の 1 行あたりのデータの長さ。既定は 16 です。\n"
+"\n"
+"* group\n"
+"\n"
+"  グループ化するサイズ。既定では 1 (グループ化しない) ですが、指定する場合は chunk サイズの約数でなければなりません。\n"
+"\n"
+"* duplicates\n"
+"\n"
+"  指定した場合、出力行が前のものと同じであればその出力が省略され、 '**SAME**' と表示されるようになります。\n"
+"\n"
+"  既定で有効になっています。\n"
+"\n"
+"* showdata\n"
+"\n"
+"  データチャンクを表示可能な文字列に変換する際の、サブルーチンを指定します。既定では表示できない文字を \".\" (ピリオド) "
+"に置き換えるサブルーチンを使用します。\n"
+"\n"
+"  サブルーチンのパラメータには処理対象のデータチャンクが設定され、 'chunksize' 文字までの文字列を返すべきものです。\n"
+"\n"
+"* align\n"
+"\n"
+"  出力される結果を 'chunksize' バイトで合わせます。これはデータを先頭から処理しない場合にのみ意味のあるもので、たとえば 'first' "
+"が 10 出会った場合、下記のようになります:\n"
+"\n"
+"    0000:                ...    74 61 3a 3a 48 65            ta::He     0010:"
+" 78 69 66 79 3b ... 65 20 35 2e 30 30 36  xify;..use 5.006     ... and so on "
+"...\n"
+"\n"
+"  既定では align は有効になっています。 align を無効化すると、下記のようになります:\n"
+"\n"
+"    000a: 74 61 3a 3a 48 ... 79 3b 0a 0a 75 73 65  ta::Hexify;..use     001a:"
+" 20 35 2e 30 30 ... 73 65 20 73 74 72 69   5.006;.use stri     ... and so on "
+"...\n"
+"\n"
+"* start\n"
+"\n"
+"  ここで指定したバイトからデータが始まるものと仮定します。上記の例で 'start => 0' を指定すると、下記のようになります:\n"
+"\n"
+"    0000: 74 61 3a 3a 48 ... 79 3b 0a 0a 75 73 65  ta::Hexify;..use     0010:"
+" 20 35 2e 30 30 ... 73 65 20 73 74 72 69   5.006;.use stri     ... and so on "
+"..."
 
 #. tumbleweed/perl-Data-Hierarchy/summary
 #. leap/perl-Data-Hierarchy/summary
@@ -12728,11 +12820,35 @@ msgid ""
 "or \"directories\" to the hierarchy; you simply add and delete properties to "
 "paths."
 msgstr ""
+"Data::Hierarchy は、ファイルシステムなどの継承可能な環境に割り当てられたデータを操作するための、シンプルなインターフェイスを提供します。"
+"\n"
+"(\n"
+"Data::Hierarchy は、アプリケーションで実際のファイルシステムのパスを単一かつコンパクトなデータとして保持する、などの使い方が考えられます。"
+"しかしながら、階層構造は必ずしも実際のファイルシステムに関連したものでなければならない、というものではありません。\n"
+"\n"
+"階層構造内のパスは Unix に似た文法で作られていて、 \"/\" をルートディレクトリとした構造です (スラッシュ以外を区切り文字としたい場合は、 "
+"Data::Hierarchy オブジェクトの構築時に指定してください) 。なお、ディレクトリパスの終わりにはスラッシュはつけません。このほか、"
+"任意の名前と値の対から構成されるプロパティも設定することができます (未定義の値を含むことはできません) "
+"。既定ではプロパティはパスからのものを継承します。たとえば下記のようにして '/some/path' にデータを保存した場合:\n"
+"\n"
+"    $tree->store('/some/path', {color => 'red'});\n"
+"\n"
+"'/some/path/below/that' からも上記を取得することができます:\n"
+"\n"
+"    print $tree->get('/some/path/below/that')->{'color'};     \n"
+"\n"
+"なお、 \".\" で始まる名前のプロパティは継承されず、 \"sticky\" と表現します:\n"
+"\n"
+"    $tree->store('/some/path', {'.color' => 'blue'});     print "
+"$tree->get('/some/path')->{'.color'};            # prints blue     print "
+"$tree->get('/some/path/below/that')->{'.color'}; # undefined\n"
+"\n"
+"なお、階層構造は実際の \"ファイル\" や \"ディレクトリ\" とは関係がありません。また、プロパティはパスにのみ追加することができます。"
 
 #. tumbleweed/perl-Data-Integer/summary
 #. leap/perl-Data-Integer/summary
 msgid "Details of the Native Integer Data Type"
-msgstr ""
+msgstr "ネイティブ整数データタイプの詳細"
 
 #. tumbleweed/perl-Data-Integer/description
 #. leap/perl-Data-Integer/description
@@ -12745,11 +12861,15 @@ msgid ""
 "There are actually two native integer representations: signed and unsigned. "
 "Both are handled by this module."
 msgstr ""
+"このモジュールはネイティブな整数型数値データタイプに関するものです。ネイティブな整数型とは、 Perl "
+"のスカラー値の数値表現で現われるデータタイプのうちの 1 つです。このモジュールは、そのようなネイティブな整数型に対して、定数を提供します。\n"
+"\n"
+"ネイティブ整数表現には 2 種類のものがあります: 1 つは符号付き (signed) で、もう 1 つは符号無し (unsigned) "
+"です。いずれもこのモジュールで扱うことができます。"
 
 #. tumbleweed/perl-Data-OptList/summary
-#, fuzzy
 msgid "Parse and Validate Simple Name/Value Option Pairs"
-msgstr "シンプルな名前／値の対を処理／検証するモジュール"
+msgstr "シンプルな名前／値の対を処理および検証するモジュール"
 
 #. tumbleweed/perl-Data-OptList/description
 #. leap/perl-Data-OptList/description
@@ -12808,7 +12928,7 @@ msgstr ""
 #. tumbleweed/perl-Data-Page/summary
 #. leap/perl-Data-Page/summary
 msgid "Help when paging through sets of results"
-msgstr ""
+msgstr "結果セットをページング処理するための支援"
 
 #. tumbleweed/perl-Data-Page/description
 #. leap/perl-Data-Page/description
@@ -12823,11 +12943,16 @@ msgid ""
 "to find out how many pages of information there are, and what number the "
 "first and last entries on the current page really are."
 msgstr ""
+"大量のデータを検索する場合、検索結果が 1 ページ内に収まらないことがあります。このような場合は、データをページ制御する必要がありますが、このような処理は"
+"面倒なものです。このモジュールは、そのような問題を解決します。\n"
+"\n"
+"このモジュールは、データの項目数と 1 "
+"ページあたりの項目数、そして現在のページ番号を渡すことで、全体のページ数や現在のページの最初および最後に表示される項目の番号がそれぞれ返されます。"
 
 #. tumbleweed/perl-Data-Perl/summary
 #. leap/perl-Data-Perl/summary
 msgid "Base classes wrapping fundamental Perl data types."
-msgstr ""
+msgstr "基礎的な Perl データタイプをラッピングするベースクラス"
 
 #. tumbleweed/perl-Data-Perl/description
 #. leap/perl-Data-Perl/description
@@ -12854,23 +12979,40 @@ msgid ""
 "\n"
 "* * the Data::Perl::Code manpage"
 msgstr ""
+"Data::Perl は Perl 内に存在する基礎的なデータタイプをラッピングするクラス集です。これらのクラスやメソッドは、現在は Mosse's "
+"Native Traits "
+"でも提供される機能を反映しようとしています。なお、現時点ではすべてのクラスのコンストラクタの入力に対して、検証は行なわれないことに注意してください。\n"
+"\n"
+"Data::Perl は下記のクラスに対するコンテナクラスです:\n"
+"\n"
+"* * the Data::Perl::Collection::Hash\n"
+"\n"
+"* * the Data::Perl::Collection::Array\n"
+"\n"
+"* * the Data::Perl::String\n"
+"\n"
+"* * the Data::Perl::Number\n"
+"\n"
+"* * the Data::Perl::Counter\n"
+"\n"
+"* * the Data::Perl::Bool\n"
+"\n"
+"* * the Data::Perl::Code"
 
 #. tumbleweed/perl-Data-Printer/summary
 #. leap/perl-Data-Printer/summary
-#, fuzzy
 msgid "Colored Pretty-Print of Perl Data Structures and Objects"
-msgstr "データ構造の見やすい表示"
+msgstr "Perl のデータ構造やオブジェクトに対する色つきの見やすい表示"
 
 #. tumbleweed/perl-Data-Printer/description
 #. leap/perl-Data-Printer/description
-#, fuzzy
 msgid "colored pretty-print of Perl data structures and objects"
-msgstr "データ構造の見やすい表示"
+msgstr "Perl のデータ構造やオブジェクトに対する色つきの見やすい表示"
 
 #. tumbleweed/perl-Data-Section/summary
 #. leap/perl-Data-Section/summary
 msgid "read multiple hunks of data out of your DATA section"
-msgstr ""
+msgstr "お使いの DATA セクションからの複数のデータセクションの読み取り"
 
 #. tumbleweed/perl-Data-Section/description
 #. leap/perl-Data-Section/description
@@ -12879,11 +13021,13 @@ msgid ""
 "oriented data in your module's DATA section. It was written to allow modules "
 "to store their own templates, but probably has other uses."
 msgstr ""
+"Data::Section はお使いのモジュール内にある DATA セクションから、行指向の名前付きデータチャンクにアクセスすることのできる便利な方法を提"
+"供します。元々はモジュールに対して、独自のテンプレートを記述できるように作られたものですが、それ以外の用途にも利用することができるはずです。"
 
 #. tumbleweed/perl-Data-Section-Simple/summary
 #. leap/perl-Data-Section-Simple/summary
 msgid "Read data from __DATA__"
-msgstr ""
+msgstr "__DATA__ からのデータ読み込み"
 
 #. tumbleweed/perl-Data-Section-Simple/description
 #. leap/perl-Data-Section-Simple/description
@@ -12891,11 +13035,12 @@ msgid ""
 "Data::Section::Simple is a simple module to extract data from '__DATA__' "
 "section of the file."
 msgstr ""
+"Data::Section::Simple は、ファイルの '__DATA__' セクションからデータを抽出するためのシンプルなモジュールです。"
 
 #. tumbleweed/perl-Data-ShowTable/summary
 #. leap/perl-Data-ShowTable/summary
 msgid "routines to display tabular data in several formats."
-msgstr ""
+msgstr "いくつかの形式で表形式のデータを表示するルーチン"
 
 #. tumbleweed/perl-Data-ShowTable/description
 #. leap/perl-Data-ShowTable/description
@@ -12934,12 +13079,36 @@ msgid ""
 "\n"
 "The subroutines which perform these displays are listed below."
 msgstr ""
+"*ShowTable* モジュールは、データベースからのデータなど、表形式のデータをいくつかの形式で、見やすく表示するためのサブルーチンを提供します。パラ"
+"メータは固定の順序で与えてもかまいませんし、単一の無名ハッシュ配列でもかまいません。\n"
+"\n"
+"それぞれのメソッドにおいて、出力形式は下記の 4 種類が用意されています:\n"
+"\n"
+"* Box\n"
+"\n"
+"  \"'+'\", \"'-'\", \"'|'\" などを用いて作成される、列タイトル付きの表形式です。詳しくは \"ShowBoxTable\" "
+"をお読みください。\n"
+"\n"
+"* Table\n"
+"\n"
+"  列を自動的に調整する、列タイトル付きのシンプルな表形式です。詳しくは \"ShowSimpleTable\" をお読みください。\n"
+"\n"
+"* List\n"
+"\n"
+"  各列に _name_:_value_ の形式で 1 行ごとに名前と値が表示される _リスト_ 形式です。 1 "
+"つのデータ行が終わると、次のデータまでの間に空行が出力されます。 詳しくは \"ShowListTable\" をお読みください。\n"
+"\n"
+"* HTML\n"
+"\n"
+"  Web クライアントに表示するのに便利な、 HTML _TABLE_  形式の出力です。詳しくは \"ShowHTMLTable\" "
+"をお読みください。\n"
+"\n"
+"入力には純粋な ASCII テキストのほか、 HTML 要素が内蔵されているテキストでもかまいません。グローバルパラメータ側で設定することができます。"
 
 #. tumbleweed/perl-Data-Uniqid/summary
 #. leap/perl-Data-Uniqid/summary
-#, fuzzy
 msgid "Perl extension for simple genrating of unique id's"
-msgstr "サブルーチンを簡単にオーバーライドできる Perl 拡張"
+msgstr "ユニークな ID をシンプルに生成するための Perl 拡張"
 
 #. tumbleweed/perl-Data-Uniqid/description
 #. leap/perl-Data-Uniqid/description
@@ -12955,11 +13124,19 @@ msgid ""
 "\n"
 "  luniqid     generates a long id valid everywhere and ever"
 msgstr ""
+"Data::Uniqid は 3 種類のシンプルなユニーク ID 生成ルーチンを提供します。これらの ID は Base62 "
+"システムを利用してエンコードされ、 (たとえば URL の一部として使用する用途など) 短く扱いやすい形式になっています。\n"
+"\n"
+"  suinqid     ローカルホスト内でのみ有効で、 1 日間限定の非常に短い ID を生成します。\n"
+"\n"
+"  uniqid     ローカルホスト内でのみ有効な短い ID を生成します。\n"
+"\n"
+"  luniqid     どこででも有効な長い ID を生成します。"
 
 #. tumbleweed/perl-Data-Visitor/summary
 #. leap/perl-Data-Visitor/summary
 msgid "Visitor style traversal of Perl data structures"
-msgstr ""
+msgstr "Perl のデータ構造に対する見やすい出力"
 
 #. tumbleweed/perl-Data-Visitor/description
 #. leap/perl-Data-Visitor/description
@@ -12977,6 +13154,16 @@ msgid ""
 "the Data::Visitor manpage is meant to be subclassed, but also ships with a "
 "callback driven subclass, the Data::Visitor::Callback manpage."
 msgstr ""
+"このモジュールは、 Perl の値を見やすく表示するための実装です。\n"
+"\n"
+"メインのメソッドとして 'visit' が用意されていますが、このメソッドは単一の Perl "
+"値をパラメータとして受け付け、その値に対して適切なメソッドを呼び出します。\n"
+"\n"
+"多くの構造体に対して、再帰的にマップ (必要に応じて複製を作成) するか、純粋に中身を表示します。 Perl のオブジェクトや循環構造、"
+"タイ構造やすべての参照タイプ (ハッシュ、配列、スカラー、コード、グロブ) にも対応しています。\n"
+"\n"
+"Data::Visitor はサブクラス化する目的で作られていますが、コールバック関数をベースにしたサブクラス Data::Visitor::"
+"Callback も用意されています。"
 
 #. tumbleweed/perl-Date-Calc/summary
 msgid "Gregorian calendar date calculations"
@@ -12999,14 +13186,14 @@ msgstr ""
 #. tumbleweed/perl-Date-Holidays-CZ/summary
 #. leap/perl-Date-Holidays-CZ/summary
 msgid "Determine Czech holidays"
-msgstr ""
+msgstr "チェコにおける祝日の判断"
 
 #. tumbleweed/perl-Date-Holidays-CZ/description
 #. leap/perl-Date-Holidays-CZ/description
 msgid ""
 "This module exports a single function named *holidays()* which returns a "
 "list of Czech holidays in a given year."
-msgstr ""
+msgstr "このモジュールは、指定した年に対するチェコの祝日を返す *holydays()* 関数を公開しています。"
 
 #. tumbleweed/perl-Date-Manip/summary
 #. leap/perl-Date-Manip/summary
@@ -13092,11 +13279,72 @@ msgid ""
 "\n"
 "Each of these tasks is trivial (one or two lines at most) with this package."
 msgstr ""
+"Date::Manip は、一般的な日付／時刻操作を簡単に行なうために設計されたモジュール集です。操作としては 2 "
+"つの時刻に対する比較のほか、一方と他方の時刻の差を計算や協定世界時の処理などを、簡単に行なうことができます。時刻はグレゴリオ暦("
+"現在使用されている暦のうちの 1 つ) として扱う仕組みで、サマータイムなどの調整にも完全対応しています。\n"
+"\n"
+"開発当初の段階から、  Date::Manip は必要な日付／時刻処理を簡単に行なうことができるようになっています。既にある他の多くのモジュールは、これら"
+"の処理をより素早く、効率的に処理できる仕組みを備えていますが、これらは Date::Manip にあるような処理の全てを実行できわけではありません。\n"
+"\n"
+"既に他の多くの日付／時刻モジュールが存在していて、それらは場合によっては高速に処理できる仕組みを備えていることから、事前に Date::Manip::"
+"Misc ドキュメントをお読みになり、 CPAN から提供されるモジュールのうちのどのモジュールが適切なのかを判断してからお使いください。全ての作業を単一"
+"のモジュールで扱いたい場合には、本モジュールがお勧めです。\n"
+"\n"
+"Date::Manip には様々な種類のデータを処理するための機能が備わっています。\n"
+"\n"
+"* *日付*\n"
+"\n"
+"  日付という言葉は幅広い意味で使用されているもので、よく間違えられる用語でもあります。 Date::Manip では、日付には 3 "
+"種類の情報が含まれています: "
+"カレンダーの日付、時刻、タイムゾーン情報です。カレンダーの日付と時刻は完全に処理することができます。タイムゾーンについても同様ですが、Date::"
+"Manip の使い方によっては、下記に示すとおりいくつかの制限があります。\n"
+"\n"
+"* *差分*\n"
+"\n"
+"  差分とは時刻の量を表わした数値 (2 つの異なる日付の差) "
+"を意味します。差分は時刻の量のみを意味する言葉で、開始や終了の日時を持たない値になっています。多くの人々にとって、差分とは時刻の量を意味するものですが、 "
+"'時刻' という用語は既にそのモジュール内で多数使用されているため、混乱を防ぐために別の言葉を用意して説明しています。\n"
+"\n"
+"* *繰り返し*\n"
+"\n"
+"  一定の周期で発生するイベントを意味します。\n"
+"\n"
+"* *祝日* と *イベント*\n"
+"\n"
+"  祝日とイベントは、日付と周期に名前が付けられたものを意味します。\n"
+"\n"
+"それ以外にも、 Date::Manip では下記のようなことを実施することができます:\n"
+"\n"
+"* ***\n"
+"\n"
+"  事実上、ほぼ全ての書式で自由に日付入力を行なうことができます。\n"
+"\n"
+"* ***\n"
+"\n"
+"  それぞれ大きく異なる書式の 2 つの日付を比較し、どちらが先の日付なのかを判断することができます。\n"
+"\n"
+"* ***\n"
+"\n"
+"  Unix の date コマンドのように、書式文字列を利用して、日付から必要な情報を抽出することができます。\n"
+"\n"
+"* ***\n"
+"\n"
+"  2 つの日付の差を計算することができるほか、時刻に値を足してもう 1 つの日付を作成することができます。\n"
+"\n"
+"* ***\n"
+"\n"
+"  国際化された書式による日付処理 (月名称を含む。 12/10/95 は 12 月ではなく 10 月を意味するものとして扱います) 。\n"
+"\n"
+"* ***\n"
+"\n"
+"  繰り返しイベントが発生する日付の一覧表示\n"
+"\n"
+"パッケージ内では、それぞれの処理は平凡な (多くても数行程度) 記述で作成されています。"
 
 #. tumbleweed/perl-Date-Tiny/summary
 #. tumbleweed/perl-DateTime-Tiny/summary
 msgid "Date Object, with As Little Code As Possible"
-msgstr ""
+msgstr "できる限り少ない行数で作成された日付オブジェクト"
 
 #. tumbleweed/perl-Date-Tiny/description
 msgid ""
@@ -13105,11 +13353,14 @@ msgid ""
 "It implements an extremely lightweight object that represents a date, "
 "without any time data."
 msgstr ""
+"*Date::Tiny* は時刻モジュールの DateTime::Tiny スイートのメンバーです。\n"
+"\n"
+"時刻無しで日付だけを表わす、非常に軽量なオブジェクトを実装しています。"
 
 #. tumbleweed/perl-DateTime-Format-Builder/summary
 #. leap/perl-DateTime-Format-Builder/summary
 msgid "Create DateTime parser classes and objects."
-msgstr ""
+msgstr "DateTime パーサクラスとオブジェクトの作成"
 
 #. tumbleweed/perl-DateTime-Format-Builder/description
 #. leap/perl-DateTime-Format-Builder/description
@@ -13127,11 +13378,19 @@ msgid ""
 "This creates the end methods. Coderefs die on bad parses, return 'DateTime' "
 "objects on good parse."
 msgstr ""
+"DateTime::Format::Builder は DateTime "
+"のパーサを作成します。日付や時刻の文字列書式はほとんどのものがシンプルで、基本的な正規表現を利用すれば関連する情報が得られるためです。 Builder "
+"では、実際の構造体のコードを記述することなく、このようなクラスを作成するためのシンプルな方法を提供します。\n"
+"\n"
+"Builder には多数のメソッドが用意されていますが、多くのものは全く必要としませんし、あったとしても稀な場合だけです。これらはモジュールの内部状況を任"
+"意のサブクラスに開示するためのものであるほか、我々の考えている範囲を超えたモジュールを作成したいような場合に必要となるものです。\n"
+"\n"
+"このクラスはエンドメソッドを作成します。処理が失敗するとコード参照が失敗し、成功すると 'DateTime' オブジェクトが返ります。"
 
 #. tumbleweed/perl-DateTime-Format-DateParse/summary
 #. leap/perl-DateTime-Format-DateParse/summary
 msgid "Parses Date::Parse compatible formats"
-msgstr ""
+msgstr "Date::Parse 互換形式の処理"
 
 #. tumbleweed/perl-DateTime-Format-DateParse/description
 #. leap/perl-DateTime-Format-DateParse/description
@@ -13140,11 +13399,14 @@ msgid ""
 "\n"
 "  Author:\tJoshua Hoblitt (JHOBLITT) <jhoblitt@cpan.org>"
 msgstr ""
+"このモジュールは、 Date::Parse に対する互換ラッパーです。\n"
+"\n"
+"  Author:\tJoshua Hoblitt (JHOBLITT) <jhoblitt@cpan.org>"
 
 #. tumbleweed/perl-DateTime-Format-MySQL/summary
 #. leap/perl-DateTime-Format-MySQL/summary
 msgid "Parse and format MySQL dates and times"
-msgstr ""
+msgstr "MySQL の日付と時刻の処理および書式化"
 
 #. tumbleweed/perl-DateTime-Format-MySQL/description
 #. leap/perl-DateTime-Format-MySQL/description
@@ -13154,12 +13416,14 @@ msgid ""
 "order to create DateTime objects, and it can take a DateTime object and "
 "produce a string representing it in the MySQL format."
 msgstr ""
+"このモジュールは、 MySQL の DATE, DATETIME, TIME, TIMESTAMP "
+"の各データタイプで使用される形式を解釈することができます。 DateTime オブジェクトを作成する際にこれらの形式を利用することができるほか、 "
+"MySQL 形式の文字列で DateTime オブジェクトを出力することもできます。"
 
 #. tumbleweed/perl-DateTime-Format-Pg/summary
 #. leap/perl-DateTime-Format-Pg/summary
-#, fuzzy
 msgid "Parse and format PostgreSQL dates and times"
-msgstr "日付の文字列を値に変換するモジュール"
+msgstr "PostgreSQL の日付と時刻の処理および書式化"
 
 #. tumbleweed/perl-DateTime-Format-Pg/description
 #. leap/perl-DateTime-Format-Pg/description
@@ -13170,12 +13434,15 @@ msgid ""
 "a 'DateTime' or 'DateTime::Duration' object and produce a string "
 "representing it in a format accepted by PostgreSQL."
 msgstr ""
+"このモジュールは、 PostgreSQL の DATE, TIME, TIMESTAMP, INTERVAL "
+"の各データタイプで使用される形式を解釈することができます。 'DateTime' や 'DateTime::Duration' "
+"オブジェクトを作成する際にこれらの形式を利用することができるほか、 PostgreSQL 形式の文字列で 'DateTime'  や "
+"'DateTime::Duration' オブジェクトを出力することもできます。"
 
 #. tumbleweed/perl-DateTime-Format-SQLite/summary
 #. leap/perl-DateTime-Format-SQLite/summary
-#, fuzzy
 msgid "Parse and format SQLite dates and times"
-msgstr "日付の文字列を値に変換するモジュール"
+msgstr "SQLite の日付と時刻の処理および書式化"
 
 #. tumbleweed/perl-DateTime-Format-SQLite/description
 #. leap/perl-DateTime-Format-SQLite/description
@@ -13190,12 +13457,18 @@ msgid ""
 "by SQLite's 'date', 'time', 'datetime', 'julianday' and 'strftime' SQL "
 "functions. You will usually want to store your dates in one of these formats."
 msgstr ""
+"このモジュールは、 SQLite の 'date', 'datetime', 'time' の各関数で使用される形式を解釈することができます。 "
+"DateTime オブジェクトを作成する際にこれらの形式を利用することができるほか、 SQLite 形式の文字列で DateTime "
+"オブジェクトを出力することもできます。\n"
+"\n"
+"*注意:* SQLite は実際には日付や時刻をその型として扱うことはなく、単純に文字列として扱います。このモジュールは、 SQLite の "
+"'date', 'time', 'datetime', 'julianday', 'strftime' の各 SQL "
+"関数で指定または返され、保存することのできる文字列を扱うことができます。"
 
 #. tumbleweed/perl-DateTime-Format-Strptime/summary
 #. leap/perl-DateTime-Format-Strptime/summary
-#, fuzzy
 msgid "Parse and format strp and strf time patterns"
-msgstr "日付の文字列を値に変換するモジュール"
+msgstr "strp, strf タイムパターンの処理および書式化"
 
 #. tumbleweed/perl-DateTime-Format-Strptime/description
 #. leap/perl-DateTime-Format-Strptime/description
@@ -13205,6 +13478,9 @@ msgid ""
 "'DateTime' and a pattern and returns a string, 'strptime' takes a string and "
 "a pattern and returns the 'DateTime' object associated."
 msgstr ""
+"このモジュールは、 'strftime(3)' の逆の処理を行なう POSIX 関数 'strptime(3)' の機能のほとんどを実装しています。 "
+"'strftime' では 'DateTime' 型のパラメータを受け付けて文字列を返しますが、 'strptime' "
+"では文字列とパターンをパラメータとして受け付けて 'DateTime' オブジェクトを返します。"
 
 #. tumbleweed/perl-DateTime-Locale/summary
 #. leap/perl-DateTime-Locale/summary
@@ -13234,7 +13510,6 @@ msgstr "タイムゾーンオブジェクトのベースクラスとファクト
 
 #. tumbleweed/perl-DateTime-TimeZone/description
 #. leap/perl-DateTime-TimeZone/description
-#, fuzzy
 msgid ""
 "This class is the base class for all time zone objects. A time zone is "
 "represented internally as a set of observances, each of which describes the "
@@ -13244,14 +13519,11 @@ msgid ""
 "primary interface is through a DateTime object, and most users will not need "
 "to directly use 'DateTime::TimeZone' methods."
 msgstr ""
-"このクラスはすべてのタイムゾーンオブジェクトに対するベースクラスです。タイム"
-"ゾーンは内部的には慣例集として表されるもので、各時刻を GMT からのオフセットと"
-"して表記しています。\n"
+"このクラスはすべてのタイムゾーンオブジェクトに対するベースクラスです。タイムゾーンは内部的には慣例集として表されるもので、各時刻を GMT "
+"からのオフセットとして表記しています。\n"
 "\n"
-"なお、 DateTime モジュールがない場合、本モジュールは多くのことを実現できませ"
-"ん。主なインターフェイスは DateTime オブジェクトを通して利用する仕組みである"
-"ため、多くのユーザは 'DateTime::TimeZone' のメソッドを直接使用する必要はない"
-"はずです。"
+"なお、 DateTime モジュールがない場合、本モジュールは多くのことを実現できません。主なインターフェイスは DateTime "
+"オブジェクトを通して利用する仕組みであるため、多くのユーザは 'DateTime::TimeZone' のメソッドを直接使用する必要はないはずです。"
 
 #. tumbleweed/perl-DateTime-Tiny/description
 msgid ""
@@ -13260,12 +13532,14 @@ msgid ""
 "\n"
 "It implements an extremely lightweight object that represents a datetime."
 msgstr ""
+"*DateTime::Tiny* は時刻モジュールである DateTime::Tiny スイートの中でもっともよく知られたメンバーです。\n"
+"\n"
+"日付と時刻を表わす非常に軽量なオブジェクトを実装しています。"
 
 #. tumbleweed/perl-Debug-Trace/summary
 #. leap/perl-Debug-Trace/summary
-#, fuzzy
 msgid "Perl extension to trace subroutine calls"
-msgstr "サブルーチンを簡単にオーバーライドできる Perl 拡張"
+msgstr "サブルーチンの呼び出しを追跡するための Perl 拡張"
 
 #. tumbleweed/perl-Debug-Trace/description
 #. leap/perl-Debug-Trace/description
@@ -13287,12 +13561,21 @@ msgid ""
 "By default, the trace information is output using the standard warn() "
 "function."
 msgstr ""
+"Debug::Trace はサブルーチンの呼び出しとその戻りについて、追跡情報を作成するサブルーチンを提供します。\n"
+"\n"
+"Debug::Trace を使用する場合であっても、ソースコードを変更する必要はありません。ほとんどの場合、コマンドラインから使用することができます:\n"
+"  perl -MDebug::Trace=foo,bar yourprogram.pl\n"
+"\n"
+"上記のように実行することにより、サブルーチン foo(), bar() に対して呼び出しと戻りが表示されるようになります。\n"
+"\n"
+"サブルーチン名は、既定の main:: 以外のパッケージ内のものを表わす場合は、完全修飾形で表示されます。\n"
+"\n"
+"また、既定ではトレース情報を標準の warn() 関数を利用して表示します。"
 
 #. tumbleweed/perl-Declare-Constraints-Simple/summary
 #. leap/perl-Declare-Constraints-Simple/summary
-#, fuzzy
 msgid "Declarative Validation of Data Structures"
-msgstr "データ構造のみやすい表示"
+msgstr "データ構造の宣言的な検証"
 
 #. tumbleweed/perl-Declare-Constraints-Simple/description
 #. leap/perl-Declare-Constraints-Simple/description
@@ -13301,33 +13584,35 @@ msgid ""
 "to validate a data structure. It does this by giving you a set of "
 "declarative keywords in the importing namespace."
 msgstr ""
+"このモジュールの主な目的は、データ構造を検証するためのプロファイルの構築について、簡易な方法を提供することです。ネームスペースをインポートするのに、宣言的"
+"なキーワードセットを提供して実現しています。"
 
 #. tumbleweed/perl-Devel-CheckBin/summary
 #. leap/perl-Devel-CheckBin/summary
 msgid "Check That a Command Is Available"
-msgstr ""
+msgstr "コマンドが利用可能かどうかのチェック"
 
 #. tumbleweed/perl-Devel-CheckBin/description
 #. leap/perl-Devel-CheckBin/description
 msgid ""
 "Devel::CheckBin is a perl module that checks whether a particular command is "
 "available."
-msgstr ""
+msgstr "Devel::CheckBin は、特定のコマンドが利用できるかどうかをチェックする Perl モジュールです。"
 
 #. tumbleweed/perl-Devel-CheckCompiler/summary
 #. leap/perl-Devel-CheckCompiler/summary
 msgid "Check the compiler's availability"
-msgstr ""
+msgstr "コンパイラが利用できるかどうかのチェック"
 
 #. tumbleweed/perl-Devel-CheckCompiler/description
 #. leap/perl-Devel-CheckCompiler/description
 msgid "Devel::CheckCompiler is checker for compiler's availability."
-msgstr ""
+msgstr "Devel::CheckCompiler は、コンパイラが利用できるかどうかをチェックします。"
 
 #. tumbleweed/perl-Devel-CheckOS/summary
 #. leap/perl-Devel-CheckOS/summary
 msgid "Check What Os We're Running On"
-msgstr ""
+msgstr "実行中の OS の判断"
 
 #. tumbleweed/perl-Devel-CheckOS/description
 #. leap/perl-Devel-CheckOS/description
@@ -13343,11 +13628,19 @@ msgid ""
 "It spares perl the embarrassment of wearing its pants on its head by "
 "covering them with a splendid Fedora."
 msgstr ""
+"かつて知識のある聖人は IRC で下記のように評したことがありました:\n"
+"\n"
+"   $^O は愚かで見にくい。まるで頭にパンツを被っているかのようだ。\n"
+"\n"
+"Devel::CheckOS は $^O に対するよりわかりやすいインターフェイスを提供し、 \"Unix\" (Linux, Solaris, AIX "
+"など) のように OS の \"ファミリ\" をチェックすることができます。\n"
+"\n"
+"この仕組みにより、 Perl の恥ずかしい部分をパンツで覆い隠し、頭に立派な帽子をかぶせることができます。"
 
 #. tumbleweed/perl-Devel-Confess/summary
 #. leap/perl-Devel-Confess/summary
 msgid "Include stack traces on all warnings and errors"
-msgstr ""
+msgstr "すべての警告とエラーに対するスタックトレースの表示"
 
 #. tumbleweed/perl-Devel-Confess/description
 msgid ""
@@ -13379,11 +13672,33 @@ msgid ""
 "the perl interpreter, some of which effect comparatively simpler modules, "
 "like Carp::Always."
 msgstr ""
+"このモジュールはデバッグ目的で作られたものです。 'warn()' や 'die()' "
+"の際に、スタックのバックトレースを表示してスクリプトの位置を明示します。他の類似モジュール (例: Carp::Always) "
+"とは異なり、スタックトレースは例外オブジェクトが投げられた際にも表示されます。\n"
+"\n"
+"スタックトレースは Carp を利用して生成され、すべてのタイプのエラーで動作します。 Carp の 'carp' と 'croak' "
+"関数にも、スタックトレースが含まれるようになります。\n"
+"\n"
+"     $ perl -d:Confess -e 'sub f { die \"arghh\" }; sub g { f }; g'   arghh "
+"at -e line 1.           main::f() called at -e line 1           main::g() "
+"called at -e line 1\n"
+"\n"
+"     $ perl -d:Confess -w -e 'sub f { $a = shift; @a = @$a };' \\"
+"                                         -e 'sub g { f(undef) }; g'   Use of "
+"uninitialized value $a in array dereference at -e line 1.           "
+"main::f(undef) called at -e line 2           main::g() called at -e line 2\n"
+"\n"
+"内部的には、このモジュールは $SIG{__WARN__} と $SIG{__DIE__} のフックを利用しています。\n"
+"\n"
+"スタックトレースは、オブジェクト参照ではないものが投げられた場合にも表示されます。\n"
+"\n"
+"このモジュールは、追加の要件無しで Perl バージョン 5.6.2 以降のバージョンと互換性があります。 Perl "
+"のインタプリタ内のバグに対する回避策も用意されていて、 Carp::Always などよりは幾分複雑になっています。"
 
 #. tumbleweed/perl-Devel-Cycle/summary
 #. leap/perl-Devel-Cycle/summary
 msgid "Find memory cycles in objects"
-msgstr ""
+msgstr "オブジェクト内のメモリサイクルの検出"
 
 #. tumbleweed/perl-Devel-Cycle/description
 #. leap/perl-Devel-Cycle/description
@@ -13392,19 +13707,20 @@ msgid ""
 "and other types of references. Because of Perl's reference-count based "
 "memory management, circular references will cause memory leaks."
 msgstr ""
+"これはオブジェクトやその他の参照タイプの中にある循環参照を検出するための開発者向けツールです。 Perl "
+"の参照カウントをベースにしたメモリ管理の仕組みにより、循環参照はメモリリークを引き起こしてしまうためです。"
 
 #. tumbleweed/perl-Devel-FindPerl/summary
 #. leap/perl-Devel-FindPerl/summary
 msgid "Find the path to your perl"
-msgstr ""
+msgstr "Perl 内でのパス検出"
 
 #. tumbleweed/perl-Devel-FindPerl/description
 #. leap/perl-Devel-FindPerl/description
-#, fuzzy
 msgid ""
 "This module tries to find the path to the currently running perl. It "
 "(optionally) exports the following functions:"
-msgstr "現在実行中の Perl に関する情報"
+msgstr "このモジュールは、現在実行中の Perl に対するパス情報を取得しようとします。 (必要であれば) 下記のような関数も公開されます:"
 
 #. tumbleweed/perl-Devel-GlobalDestruction/summary
 #. leap/perl-Devel-GlobalDestruction/summary
@@ -13438,7 +13754,7 @@ msgstr ""
 #. tumbleweed/perl-Devel-Hide/summary
 #. leap/perl-Devel-Hide/summary
 msgid "Forces the unavailability of specified Perl modules (for testing)"
-msgstr ""
+msgstr "指定した Perl モジュールを利用できないように強制するモジュール (テスト用)"
 
 #. tumbleweed/perl-Devel-Hide/description
 #. leap/perl-Devel-Hide/description
