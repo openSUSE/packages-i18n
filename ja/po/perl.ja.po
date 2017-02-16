@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-15 08:24+0000\n"
+"PO-Revision-Date: 2017-02-16 09:08+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -13814,6 +13814,52 @@ msgid ""
 "use() this module. This works by populating 'PERL5OPT', and is incompatible "
 "with Taint mode, as explained in the perlrun manpage."
 msgstr ""
+"Perl のモジュール名やファイル名を指定することで、このモジュールは 'require', 'use' の使用時に失敗させることができます "
+"(指定したファイル名やモジュール名が存在するかどうかには関係なく失敗します) 。\n"
+"\n"
+"失敗時には、下記のようにして _die_ されます:\n"
+"\n"
+"    Can't locate Module/ToHide.pm (hidden)\n"
+"\n"
+"このモジュールのもう 1 つの意図として、 Perl の開発者に対してモジュールが利用できない場合の動作をテストさせる、という意図があります。 Perl "
+"のインストール時には多数のモジュールが併せてインストールされますが、他のマシンでもそれらのモジュールが利用できるかどうかはわかりませんので、その際のテスト"
+"を実施することができます。\n"
+"\n"
+"たとえば、お使いの配布物で特定のモジュールが存在しない場合をテストしたい場合は、下記のように実行します:\n"
+"\n"
+"    perl -MDevel::Hide=Test::Pod Makefile.PL\n"
+"\n"
+"上記のように実行することで、 (インストールされているかどうかにかかわらず) 'Test::Pod' が見つからない状況を作り出すことができます。\n"
+"\n"
+"もう 1 つの使い方としては、 2 つのモジュールのうちのいずれかを利用するモジュールで、一方が既定ではインストールされないものの場合が考えられます。"
+"たとえば 'XML::Simple' ではパーサモジュールを必要としますが、パーサモジュールは 'XML::Parser' と 'XML::SAX' "
+"のいずれかを利用することができます (後者が優先されます) 。両方をインストールしている環境では 'XML::SAX' "
+"が優先されてしまいますが、下記のように実行することで、 'XML::SAX' を無効化することができます:\n"
+"\n"
+"    perl -MDevel::Hide=XML::SAX script_which_uses_xml_simple.pl\n"
+"\n"
+"ただし、このモジュールは Carp を利用していないことに注意してください。上述のとおり _die_ で終了します。\n"
+"\n"
+"このモジュールはよくある仕組みでもあります。 @INC 内のコード参照を利用して、特定のモジュールが require "
+"される際に拒否を行ない、読み込みが正常終了するのを妨げ、検出される前に検索を停止します。\n"
+"\n"
+"隠蔽リストにモジュールを追加する方法としては、下記の 3 種類があります:\n"
+"\n"
+"* *\n"
+"\n"
+"  setting @Devel::Hide::HIDDEN\n"
+"\n"
+"* *\n"
+"\n"
+"  environment variable DEVEL_HIDE_PM\n"
+"\n"
+"* *\n"
+"\n"
+"  import()\n"
+"\n"
+"このほか、隠蔽モジュールのリストを子プロセスにも反映させたい場合は、  use() モジュールを利用する際の最初のオプションに '-from:"
+"children' を指定してください。これは 'PERL5OPT' を利用して反映させる仕組みで、 Taint モジュールとの互換性はありません。"
+"詳しくは perlrun をお読みください。"
 
 #. tumbleweed/perl-Devel-OverloadInfo/summary
 #. leap/perl-Devel-OverloadInfo/summary
@@ -13833,9 +13879,8 @@ msgstr ""
 
 #. tumbleweed/perl-Devel-PartialDump/summary
 #. leap/perl-Devel-PartialDump/summary
-#, fuzzy
 msgid "Partial dumping of data structures, optimized for argument printing"
-msgstr "パラメータの表示に最適化されたデータ構造の部分ダンプ"
+msgstr "パラメータの表示用に最適化された、データ構造の一部のダンプ"
 
 #. tumbleweed/perl-Devel-PartialDump/description
 #. leap/perl-Devel-PartialDump/description
@@ -13888,7 +13933,7 @@ msgstr ""
 
 #. tumbleweed/perl-Devel-REPL/summary
 msgid "Modern Perl Interactive Shell"
-msgstr ""
+msgstr "モダンな Perl 対話シェル"
 
 #. tumbleweed/perl-Devel-REPL/description
 msgid ""
@@ -13901,6 +13946,11 @@ msgid ""
 "for example to pre-load certain Perl modules when working on a particular "
 "project."
 msgstr ""
+"これは REPL (Read, Evaluate, Print, Loop) としても知られる、 Perl "
+"向けの対話シェルです。シェルは一時的にソースコードファイルを作成したりすることなく、コードの開発を素早く行なう目的で作られています。\n"
+"\n"
+"プラグインのシステム構成になっていますので、多数の機能を必要に応じて追加することができます。プロファイルや実行制御ファイルでお好みの環境を仕立て上げること"
+"ができますので、特定のプロジェクトでの作業で特定の Perl モジュールを読み込ませるようなこともできます。"
 
 #. tumbleweed/perl-Devel-StackTrace/summary
 #. leap/perl-Devel-StackTrace/summary
@@ -13909,7 +13959,6 @@ msgstr "スタックトレースを表現するオブジェクト"
 
 #. tumbleweed/perl-Devel-StackTrace/description
 #. leap/perl-Devel-StackTrace/description
-#, fuzzy
 msgid ""
 "The 'Devel::StackTrace' module contains two classes, C,Devel::StackTrace> "
 "and Devel::StackTrace::Frame. These objects encapsulate the information that "
@@ -13923,23 +13972,20 @@ msgid ""
 "This code was created to support my Exception::Class::Base class (part of "
 "Exception::Class) but may be useful in other contexts."
 msgstr ""
-"'Devel::StackTrace' モジュールには 2 つのクラスが含まれています。それぞれ "
-"Devel::StackTrace, Devel::StackTrace::Frame というクラスで、これらのオブジェ"
-"クトは Perl の'caller()' 関数を介して取得することができる情報をカプセル化し、"
-"このデータに対するシンプルなインターフェイスを提供します。\n"
+"'Devel::StackTrace' モジュールには 2 つのクラスが含まれています。それぞれ Devel::StackTrace, "
+"Devel::StackTrace::Frame というクラスで、これらのオブジェクトは Perl の'caller()' "
+"関数を介して取得することができる情報をカプセル化し、このデータに対するシンプルなインターフェイスを提供します。\n"
 "\n"
-"'Devel::StackTrace' オブジェクトには、各スタックのレベルに対応した 'Devel::"
-"StackTrace::Frame' オブジェクトが複数個含まれています。フレーム内には、 "
-"'caller()' で提供されるすべてのデータが含まれています。\n"
+"'Devel::StackTrace' オブジェクトには、各スタックのレベルに対応した 'Devel::StackTrace::Frame' "
+"オブジェクトが複数個含まれています。フレーム内には、 'caller()' で提供されるすべてのデータが含まれています。\n"
 "\n"
-"このコードは、私が作成している Exception::Class::Base クラス (Exception::"
-"Class の一部) に対応するために作ったものですが、他の箇所でも便利に使用するこ"
-"とができます。"
+"このコードは、私が作成している Exception::Class::Base クラス (Exception::Class の一部) "
+"に対応するために作ったものですが、他の箇所でも便利に使用することができます。"
 
 #. tumbleweed/perl-Devel-StackTrace-AsHTML/summary
 #. leap/perl-Devel-StackTrace-AsHTML/summary
 msgid "Displays stack trace in HTML"
-msgstr ""
+msgstr "HTML でのスタックトレース表示"
 
 #. tumbleweed/perl-Devel-StackTrace-AsHTML/description
 #. leap/perl-Devel-StackTrace-AsHTML/description
@@ -13949,6 +13995,9 @@ msgid ""
 "function parameters. If you call it on an instance of Devel::StackTrace::"
 "WithLexicals, you even get to see the lexical variables of each stack frame."
 msgstr ""
+"Devel::StackTrace::AsHTML は Devel::StackTrace に 'as_html' メソッドを追加します。"
+"このメソッドはスタックトレースを美しい HTML で出力するもので、コードの断片と関数のパラメータが表示されます。 Devel::StackTrace::"
+"WithLexicals のインスタンス上でこのメソッドを呼び出すと、各スタックフレームの変数値も表示することができるようになります。"
 
 #. tumbleweed/perl-Devel-Symdump/summary
 msgid "Dump Symbol Names or the Symbol Table"
@@ -13965,7 +14014,7 @@ msgstr ""
 #. leap/perl-Devel-TakeHashArgs/summary
 msgid ""
 "Make a Hash From @_ and Set Defaults in Subs While Checking That All Man[cut]"
-msgstr ""
+msgstr "@_ からハッシュを作成し、それらすべてをチェックしながらサブルーチン内での既定値とするモジュール"
 
 #. tumbleweed/perl-Devel-TakeHashArgs/description
 #. leap/perl-Devel-TakeHashArgs/description
@@ -13974,6 +14023,8 @@ msgid ""
 "redundant code to make a hash out of args when they are passed as key/value "
 "pairs including setting their defaults and checking for mandatory arguments."
 msgstr ""
+"このモジュールは私が病気になった後に作成した短いユーティリティで、パラメータからキーと値のペアのハッシュを作成し、併せてそれらの既定値を設定したり必須のパ"
+"ラメータをチェックしたりするための冗長なコードを書くのに疲れたため、作成したものです。"
 
 #. tumbleweed/perl-Digest-HMAC/summary
 #. leap/perl-Digest-HMAC/summary
@@ -13999,9 +14050,8 @@ msgstr ""
 
 #. tumbleweed/perl-Digest-Perl-MD5/summary
 #. leap/perl-Digest-Perl-MD5/summary
-#, fuzzy
 msgid "Perl implementation of Ron Rivests MD5 Algorithm"
-msgstr "BiDi アルゴリズムのフリー実装"
+msgstr "Ron Rivests MD5 アルゴリズムの Perl 実装"
 
 #. tumbleweed/perl-Digest-Perl-MD5/description
 #. leap/perl-Digest-Perl-MD5/description
@@ -14022,6 +14072,21 @@ msgid ""
 "\n"
 "For a detailed Documentation see the 'Digest::MD5' module."
 msgstr ""
+"このモジュールは、より高速な 'Digest::MD5' "
+"と同じインターフェイスになっています。そのため、下記のようにこれらを相互に交換することができます:\n"
+"\n"
+"\tBEGIN { \t  eval { \t    require Digest::MD5; \t    import Digest::MD5 "
+"'md5_hex' \t  }; \t  if ($@) { # ups, no Digest::MD5 \t    require "
+"Digest::Perl::MD5; \t    import Digest::Perl::MD5 'md5_hex' \t  } \t}\n"
+"\n"
+"上記の例は、 'Digest::MD5' モジュールが利用できる場合はそれを利用し、そうでない場合は 'Digest::Perl::MD5' "
+"を利用します。\n"
+"\n"
+"もちろん Digest::MD5 と Digest::Perl::MD5 の両方をインストールすることもできますし、通常時には Digest::MD5 "
+"を利用するようにしておいて、オブジェクトファイルを読み込むことができない場合にのみ Digest::Perl::MD5 "
+"を利用するようにすることができます。\n"
+"\n"
+"詳しいドキュメンテーションについては、 'Digest::MD5' モジュールをお読みください。"
 
 #. tumbleweed/perl-Dist-CheckConflicts/summary
 #. leap/perl-Dist-CheckConflicts/summary
@@ -14142,7 +14207,7 @@ msgstr ""
 #. tumbleweed/perl-Dist-Zilla/summary
 #. leap/perl-Dist-Zilla/summary
 msgid "Distribution Builder; Installer Not Included!"
-msgstr ""
+msgstr "配布物構築モジュール (インストーラは含まれていません)"
 
 #. tumbleweed/perl-Dist-Zilla/description
 #. leap/perl-Dist-Zilla/description
@@ -14158,11 +14223,19 @@ msgid ""
 "If you have access to the web, you can learn more and find an interactive "
 "tutorial at *at http://dzil.org/*. If not, try Dist::Zilla::Tutorial."
 msgstr ""
+"Dist::Zilla は、 CPAN にアップロードするためのコード配布物を構築することができるモジュールです。構築という観点では ExtUtils::"
+"MakeMaker や Module::Build, Module::Install に似た動作をしますが、このモジュールは CPAN "
+"からダウンロードしたコードをインストールするためのシステムではない、という点が上げられます。 このモジュールはその著者が実行するものであって、コードを公開"
+"するというよりも、リポジトリのチェックアウトとして実行するための仕組みです。この点では類似のモジュールよりずっと多くのことを実施でき、前提条件の処理の面倒"
+"を省くことができるようになります。\n"
+"\n"
+"Web にアクセスできる場合は、 http://dzil.org/ "
+"から詳細や対話的なチュートリアルをお読みいただくことができます。アクセスできない場合は、 Dist::Zilla::Tutorial をお読みください。"
 
 #. tumbleweed/perl-Email-Address/summary
 #. leap/perl-Email-Address/summary
 msgid "RFC 2822 Address Parsing and Creation"
-msgstr ""
+msgstr "RFC 2822 のアドレス処理と作成"
 
 #. tumbleweed/perl-Email-Address/description
 #. leap/perl-Email-Address/description
@@ -14172,6 +14245,9 @@ msgid ""
 "Alternatively you may construct objects manually. The goal of this software "
 "is to be correct, and very very fast."
 msgstr ""
+"このクラスは、正規表現をベースとした RFC 2822 のパーサを実装しています。パーサでは文字列の中から電子メールアドレスの存在を検出できるほか、"
+"検出した電子メールアドレスを 'Email::Address' オブジェクトのリストとして返すことができます。もちろんオブジェクトを手作業で作成することも"
+"できます。このソフトウエアは、正しくかつ非常に素早く動作することを目指しています。"
 
 #. tumbleweed/perl-Email-Date-Format/summary
 #. leap/perl-Email-Date-Format/summary
@@ -14194,13 +14270,12 @@ msgstr ""
 #. leap/perl-Email-MIME-ContentType/summary
 #. leap/perl-Email-MIME-ContentType/description
 msgid "Parse a MIME Content-Type Header"
-msgstr ""
+msgstr "MIME の Content-Type ヘッダの処理"
 
 #. tumbleweed/perl-Email-MIME-Encodings/summary
 #. leap/perl-Email-MIME-Encodings/summary
-#, fuzzy
 msgid "A unified interface to MIME encoding and decoding"
-msgstr "MIME メッセージのエンコードとデコードを行ないます。"
+msgstr "MIME メッセージのエンコードとデコードを行なう統合インターフェイス"
 
 #. tumbleweed/perl-Email-MIME-Encodings/description
 #. leap/perl-Email-MIME-Encodings/description
@@ -14211,11 +14286,16 @@ msgid ""
 "\n"
 "'MIME::Base64', 'MIME::QuotedPrint', 'Email::MIME'."
 msgstr ""
+"このモジュールは、シンプルに 'MIME::Base64' と 'MIME::QuotedPrint' をラッピングするもので、"
+"これによりいくつかのテキストに対して 'Content-Transfer-Encoding' "
+"ヘッダの内容を設定することができるほか、このヘッダによる影響をうまく処理することができます。\n"
+"\n"
+"'MIME::Base64', 'MIME::QuotedPrint', 'Email::MIME'."
 
 #. tumbleweed/perl-Email-MessageID/summary
 #. leap/perl-Email-MessageID/summary
 msgid "Generate world unique message-ids"
-msgstr ""
+msgstr "世界中でユニークなメッセージ ID の生成"
 
 #. tumbleweed/perl-Email-MessageID/description
 #. leap/perl-Email-MessageID/description
@@ -14223,11 +14303,13 @@ msgid ""
 "Message-ids are optional, but highly recommended, headers that identify a "
 "message uniquely. This software generates a unique message-id."
 msgstr ""
+"メッセージ ID は任意で指定するものですが、強く推奨されるヘッダです。このヘッダはメッセージの唯一性を識別するためのもので、"
+"このソフトウエアではそのようなメッセージ ID を生成することができます。"
 
 #. tumbleweed/perl-Email-Simple/summary
 #. leap/perl-Email-Simple/summary
 msgid "Simple Parsing of Rfc2822 Message Format and Headers"
-msgstr ""
+msgstr "RFC2822 メッセージおよびヘッダ形式のシンプルな処理"
 
 #. tumbleweed/perl-Email-Simple/description
 #. leap/perl-Email-Simple/description
@@ -14237,11 +14319,13 @@ msgid ""
 "modules are meant to be simple to use and to maintain, pared to the bone, "
 "fast, minimal in their external dependencies, and correct."
 msgstr ""
+"Email:: のネームスペースは、 Perl における電子メールモジュールの複雑さとバグの多さを反省するための活動として始まったものです。 "
+"'Email::*' モジュールは、シンプルに使ったりメンテナンスしたりすることができて、しっかりした骨格と高速性、外部依存性の少なさを目的としています。"
 
 #. tumbleweed/perl-Email-Valid/summary
 #. leap/perl-Email-Valid/summary
 msgid "Check validity of Internet email addresses"
-msgstr ""
+msgstr "インターネットの電子メールアドレスに対する正当性の検証"
 
 #. tumbleweed/perl-Email-Valid/description
 #. leap/perl-Email-Valid/description
@@ -14253,6 +14337,12 @@ msgid ""
 "deliverable without attempting delivery (for details, see at http://perldoc."
 "perl.org/perlfaq9.html#How-do-I-check-a-valid-mail-address)."
 msgstr ""
+"このモジュールは、電子メールアドレスが正しい形式であるかどうかを確認し、必要であればそのドメインに対するメールホストが存在しているかどうかを確認します。"
+"\n"
+"\n"
+"ただし、指定したメールアドレスに対して配送が可能かどうかは、実際に配送してみなければわからないことに注意してください (詳しくは "
+"http://perldoc.perl.org/perlfaq9.html#How-do-I-check-a-valid-mail-address "
+"をお読みください) 。"
 
 #. tumbleweed/perl-Encode-Locale/summary
 #. leap/perl-Encode-Locale/summary
@@ -14518,9 +14608,8 @@ msgstr ""
 
 #. tumbleweed/perl-Exception-Base/summary
 #. leap/perl-Exception-Base/summary
-#, fuzzy
 msgid "Lightweight exceptions"
-msgstr "軽量 OSC 実装"
+msgstr "軽量な例外実装"
 
 #. tumbleweed/perl-Exception-Base/description
 #. leap/perl-Exception-Base/description
@@ -14562,11 +14651,43 @@ msgid ""
 "\n"
 "  * some defaults (i.e. verbosity) can be different for different exceptions"
 msgstr ""
+"このクラスは完全なオブジェクト指向の例外機構を自走するもので、 Exception::Class や Class::Throwable "
+"に似た仕組みです。シンプルなインターフェイスにより、プログラマに対して例外クラスの作成を容易にしています。これらのクラスは throw "
+"することができるほか、 catch で捕らえることもできます。デバッグ用に既定の冗長出力を増やしている環境では、 catch "
+"で捕らえられていない例外が発生すると、完全なスタックトレースを表示します。\n"
+"\n"
+"'Exception::Base' の機能:\n"
+"\n"
+"  * 高速な例外クラスの実装\n"
+"\n"
+"  * クロージャやソースコードのフィルタ無しでの完全オブジェクト指向\n"
+"\n"
+"  * '$SIG{__DIE__}' や '$SIG{__WARN__}' を利用していないため、混乱を来たしません\n"
+"\n"
+"  * 実行時にモジュールの外部依存関係がありません。純粋な Perl モジュールのみで作られています\n"
+"\n"
+"  * 例外クラスの既定の動作をグローバルに変更できるほか、特定の例外のみに設定することも可能\n"
+"\n"
+"  * クラスやメッセージ、その他の属性による例外マッチング処理\n"
+"\n"
+"  * 文字列や正規表現、クロージャ関数によマッチング\n"
+"\n"
+"  * 派生例外クラスの自動作成 (perlfunc/use インターフェイス)\n"
+"\n"
+"  * 容易に拡張可能 (例は Exception::System をお読みください)\n"
+"\n"
+"  * エラーメッセージを単純に出力するか、完全なスタックトレースを出力するのかを選択可能\n"
+"\n"
+"  * 例外の伝播 (再スロー) にも対応\n"
+"\n"
+"  * スタックトレースの出力でいくつかのパッケージを無視可能\n"
+"\n"
+"  * 様々な例外ごとに異なる既定値 (冗長性) を設定可能"
 
 #. tumbleweed/perl-Exception-Class/summary
 #. leap/perl-Exception-Class/summary
 msgid "Module That Allows You to Declare Real Exception Classes in Perl"
-msgstr ""
+msgstr "Perl における本格的な例外クラスの定義のためのモジュール"
 
 #. tumbleweed/perl-Exception-Class/description
 #. leap/perl-Exception-Class/description
@@ -14596,12 +14717,30 @@ msgid ""
 "which is the default base class for all exception objects created by this "
 "module."
 msgstr ""
+"*注意 1*: Moose や Moo でモダンな Perl コードを作成している場合は、このモジュールではなく Throwable をお使いください。"
+"\n"
+"\n"
+"*注意 2*: Throwable を使うかどうかはともかく、まずは Try::Tiny を使ってみてください。\n"
+"\n"
+"Exception::Class は、お使いのモジュール内で \"Java のような\" やり方で例外の階層構造を作成することができます。\n"
+"\n"
+"プログラマに対しては、コンパイル時にシンプルな 'declare' 例外クラスのシンプルなインターフェイスを提供します。ベースとなる例外クラス "
+"Exception::Class::Base についても、容易に拡張が可能です。\n"
+"\n"
+"このモジュールは構造化された例外をシンプルにかつよりよく扱うことができるように設計されていて、人々に対してアプリケーション側から単一の全キャッチ型例外クラ"
+"スではなく、階層的な例外を使用するよう支援しています。\n"
+"\n"
+"このモジュールは try/catch 文法については実装していません。この文法を使用する場合について、詳しくは \"OTHER EXCEPTION "
+"MODULES (try/catch syntax)\" をお読みください。\n"
+"\n"
+"また、 Exception::Class::Base "
+"向けのドキュメンテーションについても、お読みいただくことをお勧めします。こちらはこのモジュールで作成される全例外クラスの既定のベースクラスです。"
 
 #. tumbleweed/perl-Expect/summary
 #. leap/perl-Expect/summary
 msgid ""
 "Automate Interactions with Command Line Programs That Expose a Text Term[cut]"
-msgstr ""
+msgstr "テキストベースのコマンドラインプログラムと自動的に対話するモジュール"
 
 #. tumbleweed/perl-Expect/description
 #. leap/perl-Expect/description
@@ -14624,11 +14763,25 @@ msgid ""
 "to automate password entry for su/ssh/scp/rsh/...\" manpage and the /\"I "
 "want to use Expect to automate [anything with a buzzword]...\" manpage"
 msgstr ""
+"Expect モジュールは Comm.pl の後継、かつ Chat.pl の子孫となるモジュールで、従来のモジュールよりも Tcl の Excpect "
+"言語により近い形式を提供しています。 Comm.pl には通信用のコードが含まれていませんが、 IO::Socket を利用したり netcat "
+"のような外部ツールを利用したりするのは、時代遅れだと間が家庭ます。\n"
+"\n"
+"Expect.pm は switch() と case "
+"を多用して、処理の判断をより流動的に行なうようになっています。また、コードの作成をより容易にするため、 3 種類のデバッグタイプが用意されています。\n"
+"\n"
+"また、 Tcl の Expect のように、複数のファイルハンドル (およびプロセス) を相互に接続することもできます。このモジュールは、 Tcl "
+"を強要することでプログラマに犠牲を強いるようなことが無いようにする目的もあります。\n"
+"\n"
+"なお、 Expect を利用する際には、 事前に /\"I want to automate password entry for "
+"su/ssh/scp/rsh/...\" (su/ssh/scp/rsh などでパスワードの入力を自動化したい) や /\"I want to use "
+"Expect to automate [anything with a buzzword]...\" (何らかのモジュールを Expect "
+"で自動化したい) に書かれた FAQ をお読みください。"
 
 #. tumbleweed/perl-Exporter-Declare/summary
 #. leap/perl-Exporter-Declare/summary
 msgid "Exporting done right"
-msgstr ""
+msgstr "より正しいエクスポート"
 
 #. tumbleweed/perl-Exporter-Declare/description
 #. leap/perl-Exporter-Declare/description
@@ -14639,11 +14792,15 @@ msgid ""
 "add options and arguments for import. Finally, Exporter::Declare's meta-"
 "driven system allows for top-notch introspection."
 msgstr ""
+"Exporter::Declare はメタ駆動型エクスポートツールです。 Exporter::Declare "
+"は他のエクスポートツールの良い機能を、恐ろしいインターフェイスを修正してすべて取り込もうとしています。また、 Exporter::Declare "
+"はオプションを追加するためのフック機能や、インポート時のパラメータなども設定することができます。最後に、 Exporter::Declare "
+"は一流のイントロスペクション向けのメタ駆動型システムです。"
 
 #. tumbleweed/perl-Exporter-Lite/summary
 #. leap/perl-Exporter-Lite/summary
 msgid "Lightweight Exporting of Functions and Variables"
-msgstr ""
+msgstr "関数と変数の軽量なエクスポート"
 
 #. tumbleweed/perl-Exporter-Lite/description
 #. leap/perl-Exporter-Lite/description
@@ -14692,11 +14849,51 @@ msgid ""
 "\n"
 "    use Games qw/ pacman galaga /;"
 msgstr ""
+"Exporter::Lite は Exporter に対する代替モジュールで、もっともよく使用される機能のみを提供する軽量なサブセットとなるものです。 "
+"'import()', '@EXPORT', '@EXPORT_OK' に対応していますが、それ以外のほとんどに対応していません。\n"
+"\n"
+"Exporter とは異なり、 Exporter::Lite から派生させる必要はありません。言い換えると、下記のようなコードは不要となります:\n"
+"\n"
+" @ISA = qw(Exporter::Lite);\n"
+"\n"
+"Exporter::Lite は単純に import() 関数をお使いのネームスペースに公開するだけで、言わば \"混用\" や \"役割\" "
+"とも呼ぶことができます。\n"
+"\n"
+"モジュール内の変数や関数を公開する手順は至ってシンプルです:\n"
+"\n"
+"    package My::Module;     use Exporter::Lite;\n"
+"\n"
+"    our @EXPORT = qw($Foo bar);\n"
+"\n"
+"このモジュールを使用すると、インポートを明示的に指定することなく、 '@EXPORT' "
+"パッケージ変数内に書かれている関数と変数は自動的に公開されるようになります。上記の例では、 'use My::Module' のように指定するだけで、 "
+"'$Foo' と 'bar()' を利用できるようになります。\n"
+"\n"
+"任意の公開は '@EXPORT_OK' 変数を利用して行ないます:\n"
+"\n"
+"    package My::Module;     use Exporter::Lite;\n"
+"\n"
+"    our @EXPORT_OK = qw($Foo bar);\n"
+"\n"
+"上記のように指定すると、下記のように明記しない限り、 My::Module を使用しても '$Foo' および 'bar()' は表示されなくなります:"
+"\n"
+"\n"
+"    use My::Module qw($Foo bar);\n"
+"\n"
+"なお、 1 つまたは複数の関数や変数を取り込むものとして指定する場合は、既定で公開されるシンボルも含めなければなりません。そのため、下記のようなモジュール"
+"が存在した場合:\n"
+"\n"
+"    package Games;     our @EXPORT    = qw/ pacman defender  /;     our @"
+"EXPORT_OK = qw/ galaga centipede /;\n"
+"\n"
+"上記のモジュール内にある 'pacman' と 'galaga' の両方を利用したい場合は、下記のように記述する必要があります:\n"
+"\n"
+"    use Games qw/ pacman galaga /;"
 
 #. tumbleweed/perl-Exporter-Tidy/summary
 #. leap/perl-Exporter-Tidy/summary
 msgid "Another way of exporting symbols"
-msgstr ""
+msgstr "シンボルを公開するためのもう 1 つの方法"
 
 #. tumbleweed/perl-Exporter-Tidy/description
 #. leap/perl-Exporter-Tidy/description
@@ -14708,6 +14905,11 @@ msgid ""
 "With Exporter::Tidy, you don't need to use any package global in your "
 "module. Even the subs you export can be lexically scoped."
 msgstr ""
+"このモジュールは、簡易でクリーンな Exporter 代替モジュールです。 Exporter とは異なり、サブクラス化されていませんが、シンプルに独自の "
+"import() を行なうことができます。\n"
+"\n"
+"Exporter::Tidy "
+"と共に利用した場合は、このモジュール内でパッケージグローバルを利用する必要が無くなります。公開するサブルーチンでさえも字句スコープ下にあるものとされます。"
 
 #. tumbleweed/perl-Exporter-Tiny/summary
 #. leap/perl-Exporter-Tiny/summary
@@ -14751,9 +14953,8 @@ msgstr ""
 
 #. tumbleweed/perl-ExtUtils-CChecker/summary
 #. leap/perl-ExtUtils-CChecker/summary
-#, fuzzy
 msgid "Configure-Time Utilities for Using C Headers,"
-msgstr "nl80211 ベースの無線 LAN ドライバ向け設定ユーティリティ"
+msgstr "C 言語ヘッダを利用するための設定時ユーティリティ"
 
 #. tumbleweed/perl-ExtUtils-CChecker/description
 #. leap/perl-ExtUtils-CChecker/description
@@ -14771,12 +14972,20 @@ msgid ""
 "or for the right include directories to find header files in. This class "
 "also provides assistance here."
 msgstr ""
+"Perl のモジュールには、 C 言語のヘッダやライブラリ内にある機能をラップする目的や、 OS "
+"固有の機能を利用する目的で作られたモジュールが多くあります。この場合、実際に構築を行なうよりも前に、 _Build.PL_ や "
+"_Makefile.PL_ ファイル内でこれらの要件の存在を確認しておくと便利です。\n"
+"\n"
+"このクラス内のオブジェクトは、 ExtUtils::CBuilder に対する拡張を提供し、 _.c_ "
+"ファイルの作成をシンプルにするほか、コンパイルやリンク、実行を容易にしたり、特定の機能が存在する場合のテストを促進したりする機能が用意されています。\n"
+"\n"
+"また、このモジュールはリンク先の正しいライブラリや正しいヘッダファイルを検索するのに必要となります。このクラスでは、このような用途に対する支援も実施します"
+"。"
 
 #. tumbleweed/perl-ExtUtils-Config/summary
 #. leap/perl-ExtUtils-Config/summary
-#, fuzzy
 msgid "A wrapper for perl's configuration"
-msgstr "設定ファイルを変更するためのライブラリ"
+msgstr "Perl の設定向けラッパー"
 
 #. tumbleweed/perl-ExtUtils-Config/description
 msgid ""
@@ -14784,6 +14993,8 @@ msgid ""
 "not a particularly interesting module by any measure, however it ties "
 "together a family of modern toolchain modules."
 msgstr ""
+"ExtUtils::Config は %Config ハッシュに対する抽象化モジュールです。このモジュール自身は特に興味深いモジュールではありませんが、モ"
+"ダンなツールチェインモジュールと共に使用すると良いでしょう。"
 
 #. tumbleweed/perl-ExtUtils-Depends/summary
 #. leap/perl-ExtUtils-Depends/summary
@@ -14852,23 +15063,69 @@ msgid ""
 "\n"
 "  require Mymod::Install::Files;   @deps = Mymod::Install::Files->deps;"
 msgstr ""
+"このモジュールは、関数やその他の Perl 拡張が提供するタイプマップを使用する Perl の拡張について、これらの構築をしやすくしようとする試みです。 "
+"Perl の拡張を共有ライブラリのように扱い、 Perl そのものに対する拡張だけでなく、 C や XS "
+"のインターフェイスも提供することを目指しています。\n"
+"\n"
+"このモジュール内の関数を利用したい場合、基本拡張として動作する際には RTLD_GLOBAL フラグが設定されて読み込みます (通常は\n"
+"\n"
+"\tsub dl_load_flags {0x01}\n"
+"\n"
+"をメインの .pm ファイルに設定する必要があります) 。\n"
+"\n"
+"基本的な処理としては、インスタンス内のモジュールに関する情報の収集と、後から設定される Perl "
+"のライブラリ内にそのデータを保存することにあります。オブジェクトはこの情報を利用して、 ExtUtils::MakeMaker の "
+"WriteMakefile で利用可能なデータ構造に変換することもできます。\n"
+"\n"
+"お使いのモジュールをこのスキームに組み込むための情報は、 \"hashref = ExtUtils::Depends::load (name)\" "
+"をご利用ください。\n"
+"\n"
+"新しい Depends オブジェクトを作成する際には、構築対象のモジュールの名前を設定します。依存関係にあるモジュールの名前も指定することができます。これ"
+"らの依存関係やタイプマップ、ヘッダファイルなどは自動的に読み込まれ、新しいオブジェクト内の要素として組み込まれます。オブジェクト向けにデータを保存する際に"
+"は、依存関係のリストが保存されるため、他のモジュールから必要とされた場合も、特に気にすることなく処理することができるようになります。\n"
+"\n"
+"たとえば下記のようになります:\n"
+"\n"
+"  Gtk2 は Glib に依存しています\n"
+"\n"
+"  Gnome2::Canvas は Gtk2 に依存しています\n"
+"\n"
+"  ExtUtils::Depends->new ('Gnome2::Canvas', 'Gtk2');      Gtk2 は Glib "
+"に依存しているため、このコマンドは Glib に必要なものを自動的に読み込みます。\n"
+"\n"
+"設定情報を保存すると、 'Inline' という名前のクラスメソッドも含まれるようになります。このメソッドはお使いのモジュール側で継承可能です。これにより"
+"、お使いのモジュールの冒頭で下記のように記述することができるようになります:\n"
+"\n"
+"  package Mymod;   use parent 'Mymod::Install::Files'; # to inherit 'Inline' "
+"method\n"
+"\n"
+"Inline を利用してインラインのコードを作成したい 'Mymod' のユーザは、下記のように記述するだけで済むようになります:\n"
+"\n"
+"  use Inline with => 'Mymod';\n"
+"\n"
+"これにより、必要なヘッダファイルや定義、ライブラリなどが追加されるようになります。\n"
+"\n"
+"また、 'Mymod::Install::Files' では 'deps' と呼ばれるメソッドも実装するようになりますが、こちらは 'Mymod' "
+"が依存するモジュールの一覧を返します。たとえば下記のようになります:\n"
+"\n"
+"  require Mymod::Install::Files;   @deps = Mymod::Install::Files->deps;"
 
 #. tumbleweed/perl-ExtUtils-Helpers/summary
 #. leap/perl-ExtUtils-Helpers/summary
 msgid "Various portability utilities for module builders"
-msgstr ""
+msgstr "モジュール構築者向けの各種移植ユーティリティ"
 
 #. tumbleweed/perl-ExtUtils-Helpers/description
 #. leap/perl-ExtUtils-Helpers/description
 msgid ""
 "This module provides various portable helper functions for module building "
 "modules."
-msgstr ""
+msgstr "このモジュールは、モジュールを構築する際に必要な様々な移植性のある支援関数を提供します。"
 
 #. tumbleweed/perl-ExtUtils-InstallPaths/summary
 #. leap/perl-ExtUtils-InstallPaths/summary
 msgid "Build.PL install path logic made easy"
-msgstr ""
+msgstr "Build.PL のインストールパスロジックを簡単にするモジュール"
 
 #. tumbleweed/perl-ExtUtils-InstallPaths/description
 #. leap/perl-ExtUtils-InstallPaths/description
@@ -14934,23 +15191,73 @@ msgid ""
 "Unless   explicitly set, this is only available when perl was configured to "
 "do so."
 msgstr ""
+"このモジュールは、インストールパスの解決をできる限り簡単にするモジュールです。\n"
+"\n"
+"モジュールをインストールするにあたっては、インストール先を識別する必要があります。このモジュールは、簡単に言うと既定のインストール先を "
+"ExtUtils::Config を利用して判断しますが、 'install_path' "
+"属性が指定されていれば、その値で上書きすることもできる仕組みです。また、 'install_base' 属性が指定されている場合は、 _/home/"
+"foo_ のように代替のインストール先を指定することができるほか、  'prefix' でも似たようなこと (ただしより複雑です) "
+"を行なうことができます。このほか、 'destdir' では _/tmp/install_ "
+"のような一時的なインストール先を指定することもできます。こちらは直接インストール可能なパッケージを作成する際に利用します。\n"
+"\n"
+"既定では下記のタイプに対応しています。\n"
+"\n"
+"* * lib\n"
+"\n"
+"  通常は _.pm_ や _.pod_ で終わる Perl のみで作られたモジュールのインストール先です。\n"
+"\n"
+"* * arch\n"
+"\n"
+"  \"アーキテクチャ依存の\" モジュールファイルで、通常は XS "
+"が生成したモジュールやインラインのマニュアルページなどのコードがインストールされます。\n"
+"\n"
+"* * script\n"
+"\n"
+"  Perl "
+"のみで作成されたプログラムのインストール先です。再利用性を高めるため、これらはできるだけ小さくしておき、モジュール内にコードを配置するようにしてください。"
+"\n"
+"\n"
+"* * bin\n"
+"\n"
+"  \"アーキテクチャ依存の\" 実行プログラム (例: コンパイルされた C 言語のコードなど) のインストール先です。 Perl "
+"の配布物としてはほとんど使われることがありません。\n"
+"\n"
+"* * bindoc\n"
+"\n"
+"  'script' や 'bin' にインストールしたファイル向けのドキュメンテーションのインストール先です。通常は POD から生成します。 "
+"Unix 環境では 'man1' "
+"の分類に属するマニュアルページです。明示的に指定しない限り、マニュアルページに対応したプラットフォームでのみ利用することができます。\n"
+"\n"
+"* * libdoc\n"
+"\n"
+"  'lib' や 'arch' にインストールしたファイル向けのドキュメンテーションのインストール先です。通常は _.pm_ や _.pod_ "
+"ファイル内の POD から生成します。 Unix 環境では 'man3\" "
+"の分類に属するマニュアルページです。明示的に指定しない限り、マニュアルページに対応したプラットフォームでのみ利用することができます。\n"
+"\n"
+"* * binhtml\n"
+"\n"
+"  上述の 'bindoc' と同じですが、 HTML 文書のみのインストール先です。明示的に指定しない限り、 Perl "
+"側で設定されていないと利用することができません。\n"
+"\n"
+"* * libhtml\n"
+"\n"
+"  上述の 'libdoc' と同じですが、 HTML 文書のみのインストール先です。明示的に指定しない限り、 Perl "
+"側で設定されていないと利用することができません。"
 
 #. tumbleweed/perl-ExtUtils-LibBuilder/summary
-#, fuzzy
 msgid "Tool to Build C Libraries"
-msgstr "共有ライブラリの構築ツール"
+msgstr "C ライブラリの構築ツール"
 
 #. tumbleweed/perl-ExtUtils-LibBuilder/description
 #. leap/perl-ExtUtils-LibBuilder/summary
 #. leap/perl-ExtUtils-LibBuilder/description
-#, fuzzy
 msgid "A tool to build C libraries."
-msgstr "共有ライブラリを構築するためのツール"
+msgstr "C ライブラリを構築するためのツールです。"
 
 #. tumbleweed/perl-ExtUtils-MakeMaker/summary
 #. leap/perl-ExtUtils-MakeMaker/summary
 msgid "Create a module Makefile"
-msgstr ""
+msgstr "モジュールに対する Makefile の作成"
 
 #. tumbleweed/perl-ExtUtils-MakeMaker/description
 #. leap/perl-ExtUtils-MakeMaker/description
@@ -14983,11 +15290,31 @@ msgid ""
 "to portably use Unicode characters in module names, because this requires "
 "Perl to handle Unicode filenames, which is not yet the case on Windows."
 msgstr ""
+"このユーティリティは、 Makefile.PL から拡張モジュール向けの Makefile を作成するために設計されたモジュールです。 Andy "
+"Dougherty 氏と Perl5 移植作業者の皆様が提供する Makefile.SH のモデルをベースにしています。\n"
+"\n"
+"Makefile の生成に際しては、それを複数のサブルーチンに分割して、個別にオーバーライドできるようにしてあります。各サブルーチンでは、 "
+"Makefile に書き込みたい内容を返します。\n"
+"\n"
+"Make プログラムには様々なものがあり、それらは互換性のない仕組みであるほか、オペレーティングシステムのシェルについても相互に互換性が確保できていないた"
+"め、このモジュールを利用するにあたっては、どの Make を利用する Makefile を作成しているのかを事前に知っておいて、異なる環境の Make "
+"向けの出力に悩まされないようにする必要があります。\n"
+"\n"
+"POSIX システムでは通常、 GNU Make を利用します。 Microsoft Windows では Microsoft NMake, "
+"DMake, GNU Make のいずれかを利用します。詳しくは L</\"MAKE\"> パラメータをお読みください。\n"
+"\n"
+"ExtUtils::MakeMaker (EUMM) はオブジェクト指向です。カレントディレクトリ以下の各ディレクトリに Makefile.PL "
+"が含まれていると、それらは個別のオブジェクトとして扱われます。これにより、 WriteMakefile() を一度だけ呼び出すだけで、制限無く "
+"Makefile を作成することができるようになっています。\n"
+"\n"
+"WriteMakefile への入力は Unicode 文字であり、単なるオクテットではないことに注意してください。 EUMM "
+"ではこれらを正しく処理します。また、現時点ではモジュール名に Unicode 文字を利用することはできません。これは Perl 側で Unicode "
+"のファイル名を扱う必要があるためですが、 Windows ではまだ実装されていません。"
 
 #. tumbleweed/perl-ExtUtils-MakeMaker-CPANfile/summary
 #. leap/perl-ExtUtils-MakeMaker-CPANfile/summary
 msgid "Cpanfile Support for Eumm"
-msgstr ""
+msgstr "Eumm 向け Cpanfile サポート"
 
 #. tumbleweed/perl-ExtUtils-MakeMaker-CPANfile/description
 #. leap/perl-ExtUtils-MakeMaker-CPANfile/description
@@ -15001,11 +15328,17 @@ msgid ""
 "parameters that the installed version of ExtUtils::MakeMaker doesn't know, "
 "to avoid warnings."
 msgstr ""
+"ExtUtils::MakeMaker::CPANfile はお使いの配布物内にある 'cpanfile' を読み込み、お使いの Makefile.PL "
+"内の 'WriteMakefile' 向けのパラメータを修正します。 ExtUtils::MakeMaker を直接利用せず "
+"(このモジュールの内部で読み込みます) 、本モジュールをお使いのうえ、 'cpanfile' をご用意ください。\n"
+"\n"
+"バージョン 0.03 の ExtUtils::MakeMaker::CPANfile では、警告を避けるため、インストール済みの ExtUtils::"
+"MakeMaker のバージョンで理解できない WriteMakefile のパラメータは削除されるようになっています。"
 
 #. tumbleweed/perl-ExtUtils-MakeMaker-mini/summary
 #. leap/perl-ExtUtils-MakeMaker-mini/summary
 msgid "Dependency pkg for perl-ExtUtils-MakeMaker"
-msgstr ""
+msgstr "perl-ExtUtils-MakeMaker 向け依存パッケージ"
 
 #. tumbleweed/perl-ExtUtils-MakeMaker-mini/description
 #. leap/perl-ExtUtils-MakeMaker-mini/description
@@ -15014,13 +15347,15 @@ msgid ""
 "build perl-ExtUtils-MakeMaker. It is only used for build to avoid build "
 "loops of perl-ExtUtils-MakeMaker and its dependent packages."
 msgstr ""
+"このパッケージは、 perl-ExtUtils-MakeMaker を構築するのに必要な Perl のモジュールを追跡するための、依存パッケージです。 "
+"perl-ExtUtils-MakeMaker やその依存パッケージの構築を繰り返したりしないようにするためだけの仕組みです。"
 
 #. tumbleweed/perl-ExtUtils-Manifest/summary
 #. tumbleweed/perl-ExtUtils-Manifest/description
 #. leap/perl-ExtUtils-Manifest/summary
 #. leap/perl-ExtUtils-Manifest/description
 msgid "utilities to write and check a MANIFEST file"
-msgstr ""
+msgstr "MANIFEST ファイルの作成とチェックのためのユーティリティ"
 
 #. tumbleweed/perl-ExtUtils-PkgConfig/summary
 #. leap/perl-ExtUtils-PkgConfig/summary
@@ -15050,7 +15385,7 @@ msgstr ""
 #. tumbleweed/perl-ExtUtils-Typemaps-Default/summary
 #. leap/perl-ExtUtils-Typemaps-Default/summary
 msgid "A set of useful typemaps"
-msgstr ""
+msgstr "便利なタイプマップ集"
 
 #. tumbleweed/perl-ExtUtils-Typemaps-Default/description
 #. leap/perl-ExtUtils-Typemaps-Default/description
