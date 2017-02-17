@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-16 09:08+0000\n"
+"PO-Revision-Date: 2017-02-17 08:55+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -15399,11 +15399,17 @@ msgid ""
 "the ExtUtils::Typemaps::ObjectMap manpage, the ExtUtils::Typemaps::STL "
 "manpage, the ExtUtils::Typemaps::Basic manpage"
 msgstr ""
+"'ExtUtils::Typemaps::Default' は 'ExtUtils::Typemaps' のサブクラスで、既定のマッピング集 (および "
+"Perl 自身が提供するもの) "
+"を提供するものです。これらの既定のマッピングは現在、この配布物で提供されている下記のタイプマップクラスの組み合わせとして定義されています:\n"
+"\n"
+"ExtUtils::Typemaps::ObjectMap, ExtUtils::Typemaps::STL, "
+"ExtUtils::Typemaps::Basic"
 
 #. tumbleweed/perl-Fennec-Lite/summary
 #. leap/perl-Fennec-Lite/summary
 msgid "Minimalist Fennec, the commonly used bits."
-msgstr ""
+msgstr "よく使用される部分だけを含む最小 Fennec"
 
 #. tumbleweed/perl-Fennec-Lite/description
 #. leap/perl-Fennec-Lite/description
@@ -15424,12 +15430,21 @@ msgid ""
 "or line number to run a specific test group only. Test::Builder is used "
 "under the hood for TAP output."
 msgstr ""
+"Fennec は多数の処理を実施しますが、それらすべてを一度に行なうのは困難です。 Fennec "
+"は巨大なプロジェクトであり、まだコンポーネントオブジェクトのレベルまで完全に分割できていないためです。 Fennec::Lite は、 Mouse や "
+"Moose が行なうようなことを、最小限のアプローチで実現しています。\n"
+"\n"
+"Fennec::Lite は Perl の中枢モジュール以外には依存関係のない、単一のモジュールです。どのプロジェクトでも、直接またはコピー経由で簡単に利"
+"用することができます。ファイルそれ自身は、これを記述している時点で空白行を含め 300 行未満のコードでできています。\n"
+"\n"
+"このモジュールは結果のキャプチャや SPEC のワークフローなど、より高度な機能には対応していません。このモジュールはテストのグループ化とグループの順序の"
+"ランダム化のみを実施します。また、特定のテストグループのみを実行するために、グループ名や行番号を指定する FENNEC_ITEM "
+"変数を利用することもできます。 Test::Builder は TAP の出力をベースに使用します。"
 
 #. tumbleweed/perl-File-BaseDir/summary
 #. leap/perl-File-BaseDir/summary
-#, fuzzy
 msgid "Use the Freedesktop.org base directory specification"
-msgstr "freedesktop.org デスクトップメニュー仕様を実装するライブラリ"
+msgstr "Freedesktop.org のベースディレクトリ仕様の実装"
 
 #. tumbleweed/perl-File-BaseDir/description
 #. leap/perl-File-BaseDir/description
@@ -15445,12 +15460,19 @@ msgid ""
 "\n"
 "This module follows version 0.6 of BaseDir specification."
 msgstr ""
+"このモジュールは、 Freedesktop.org が規定するベースディレクトリ仕様のディレクトリやファイルを使用するためのモジュールです。この仕様は設定"
+"やアプリケーションデータ、キャッシュデータなどのディレクトリ配置を決めるための仕組みで、 GNOME や KDE, Xfce "
+"プラットフォームなどのデスクトップアプリケーションは、このレイアウトに従うことが提案されています。それ以外にも、非 GUI "
+"アプリケーションでも同じレイアウトが使用されています。\n"
+"\n"
+"このモジュールは File::MimeInfo から分かれてできたものです。\n"
+"\n"
+"このモジュールは、 BaseDir 仕様のバージョン 0.6 に従っています。"
 
 #. tumbleweed/perl-File-Copy-Recursive/summary
 #. leap/perl-File-Copy-Recursive/summary
-#, fuzzy
 msgid "Perl extension for recursively copying files and directories"
-msgstr "サブルーチンを簡単にオーバーライドできる Perl 拡張"
+msgstr "再帰的にファイルやディレクトリをコピーするための Perl 拡張"
 
 #. tumbleweed/perl-File-Copy-Recursive/description
 #. leap/perl-File-Copy-Recursive/description
@@ -15459,11 +15481,12 @@ msgid ""
 "well... singley) to an optional depth and attempts to preserve each file or "
 "directory's mode."
 msgstr ""
+"このモジュールは、各ファイルやディレクトリのモードを維持したまま、必要であれば指定した深さまでのディレクトリやファイルを再帰的にコピーまたは移動します。"
 
 #. tumbleweed/perl-File-DesktopEntry/summary
 #. leap/perl-File-DesktopEntry/summary
 msgid "Object to handle .desktop files"
-msgstr ""
+msgstr ".desktop ファイルを処理するためのオブジェクト"
 
 #. tumbleweed/perl-File-DesktopEntry/description
 #. leap/perl-File-DesktopEntry/description
@@ -15479,12 +15502,20 @@ msgid ""
 "\n"
 "Please remember: case is significant for the names of Desktop Entry keys."
 msgstr ""
+"このモジュールは、 _.desktop_ ファイルの処理を行なうためのモジュールです。これらのファイルの書式は、 freedesktop の \""
+"Desktop Entry\" 仕様で規定されています。このモジュールはこれらのファイルを処理することができるほか、これらのファイルで指定されたアプリケー"
+"ションについて、その起動方法を知ることもできます。\n"
+"\n"
+"このモジュールでは、仕様バージョン 1.0 が使用されています。\n"
+"\n"
+"このモジュールは、 File::MimeInfo::Applications に対応するために作成されています。\n"
+"\n"
+"なお、 Desktop Entry のキー名は、大文字と小文字を区別することに注意してください。"
 
 #. tumbleweed/perl-File-Find-Rule/summary
 #. leap/perl-File-Find-Rule/summary
-#, fuzzy
 msgid "Alternative interface to File::Find"
-msgstr "PulseAudio 向けクライアントインターフェイス"
+msgstr "File::Find に対する代替インターフェイス"
 
 #. tumbleweed/perl-File-Find-Rule/description
 #. leap/perl-File-Find-Rule/description
@@ -15492,11 +15523,13 @@ msgid ""
 "File::Find::Rule is a friendlier interface to File::Find. It allows you to "
 "build rules which specify the desired files and directories."
 msgstr ""
+"File::Find::Rule は File::Find "
+"に対するよりフレンドリーなインターフェイスです。必要なファイルやディレクトリを指定するためのルールを構築することができます。"
 
 #. tumbleweed/perl-File-Find-Rule-Perl/summary
 #. leap/perl-File-Find-Rule-Perl/summary
 msgid "Common rules for searching for Perl things"
-msgstr ""
+msgstr "Perl で何かを検索する際の汎用ルール"
 
 #. tumbleweed/perl-File-Find-Rule-Perl/description
 #. leap/perl-File-Find-Rule-Perl/description
@@ -15509,12 +15542,16 @@ msgid ""
 "related files, or replicating search queries run on a distribution in "
 "various parts of the CPAN ecosystem."
 msgstr ""
+"今まで多数の Perl ファイルの断片を作成してきましたが、 \"Perl のファイル\" を検索するにあたっては、複雑な File::Find::"
+"Rule のパターンを作成する必要があることから、やっかいな存在でした。\n"
+"\n"
+"*File::Find::Rule::Perl* は Perl 関連のファイルを検索する際のメソッドを提供するほか、 CPAN "
+"のエコシステムの様々なパーツに合わせて、配布物内の問い合わせを置き換えたりすることができます。"
 
 #. tumbleweed/perl-File-HomeDir/summary
 #. leap/perl-File-HomeDir/summary
-#, fuzzy
 msgid "Find your home and other directories on any platform"
-msgstr "プラットフォームに依存せずお使いのホームディレクトリなどを取得"
+msgstr "任意のプラットフォームでホームディレクトリなどを取得するモジュール"
 
 #. tumbleweed/perl-File-HomeDir/description
 #. leap/perl-File-HomeDir/description
@@ -15545,6 +15582,26 @@ msgid ""
 "toolchain convention of a 10 year support period for legacy APIs that are "
 "potentially or actually in common use)."
 msgstr ""
+"*File::HomeDir* は、特定のユーザ (一般的にはあなた自身) が \"所有する\" "
+"ディレクトリを検索するためのモジュールで、様々なプラットフォームで発生しうる問題を解決し、一貫したインターフェイスを提供する仕組みです。\n"
+"\n"
+"このモジュールは任意のプラットフォーム内にあるリソースを検出するため、単一の API "
+"を提供しています。これにより、比較的ありふれた方法で、動作しているプラットフォームにかかわらず、 Perl のソフトウエアを作成できるようになっています。"
+"\n"
+"\n"
+"このモジュールは 2 つの主なインターフェイスを提供しています。\n"
+"\n"
+"1 つめはモダンな File::Spec スタイルのインターフェイスで、オブジェクト指向の API "
+"を提供し、様々なプラットフォームに対応するために様々な実装モジュールが存在するものです。こちらのインターフェイスの利用を *強く* お勧めします。\n"
+"\n"
+"2 つめにはバージョン 0.07 までに存在していた古いバージョン向けのインターフェイスで、既定では 'home()' 関数と '%~' "
+"変数が公開されているものです。\n"
+"\n"
+"こちらのインターフェイスは一般に非推奨ですが、後方互換性を確保する理由から、 2010 年まではサポートが継続されています。\n"
+"\n"
+"'%~' のインターフェイスは廃止予定のもので、 2009 年にはドキュメンテーションからも削除されました。単体テストは 2011 年まで続けられていて、"
+"　2012 年以降は警告を発するようになっています。なお、 2015 年にはインターフェイスが完全に削除される予定 (一般に、汎用の Perl "
+"ツールチェインは 10 年間のサポート期限で、潜在的にも実際にもその期間だけ利用するのが一般的であるためです) 。"
 
 #. tumbleweed/perl-File-Listing/summary
 #. leap/perl-File-Listing/summary
@@ -15631,7 +15688,7 @@ msgstr ""
 #. tumbleweed/perl-File-Mork/summary
 #. leap/perl-File-Mork/summary
 msgid "Module to Read Mozilla Url History Files"
-msgstr ""
+msgstr "Mozilla URL 履歴ファイルを読み込むためのモジュール"
 
 #. tumbleweed/perl-File-Mork/description
 #. leap/perl-File-Mork/description
@@ -15644,24 +15701,30 @@ msgid ""
 "has some platform-independent code for finding the profiles of various "
 "Mozilla-isms (including Firefox, Camino, K-Meleon, etc.)."
 msgstr ""
+"これは Mozilla の URL 履歴ファイル (通常は $HOME/.mozilla/default/*.slt/history.dat "
+"にあるファイル) を読み込むことのできるモジュールです。 ID, 名前, ホスト名, 初回の訪問日時, 最終の訪問日時, "
+"訪問回数をそれぞれ抽出することができます。\n"
+"\n"
+"履歴ファイル内を検索したい場合は、 *Mozilla::Backup* をお使いいただくこともできます。こちらは様々な Mozilla アプリケーション "
+"(Firefox, Camino, K-Meleon など) でプロファイルを検出するためのプラットフォーム依存のコードが少し含まれています。"
 
 #. tumbleweed/perl-File-Path/summary
 #. leap/perl-File-Path/summary
 msgid "Create or remove directory trees"
-msgstr ""
+msgstr "ディレクトリツリーの作成および削除"
 
 #. tumbleweed/perl-File-Path/description
 #. leap/perl-File-Path/description
 msgid ""
 "This module provide a convenient way to create directories of arbitrary "
 "depth and to delete an entire directory subtree from the filesystem."
-msgstr ""
+msgstr "このモジュールは、任意の深さのディレクトリを作成したり、サブツリー全体を削除したりすることのできる便利な方法を提供します。"
 
 #. tumbleweed/perl-File-Path-Tiny/summary
 #. leap/perl-File-Path-Tiny/summary
 msgid ""
 "Recursive Versions of Mkdir() and Rmdir() Without As Much Overhead As Fi[cut]"
-msgstr ""
+msgstr "File::Path のオーバーヘッドを軽減した mkdir() と rmdir() の再帰版"
 
 #. tumbleweed/perl-File-Path-Tiny/description
 #. leap/perl-File-Path-Tiny/description
@@ -15711,12 +15774,45 @@ msgid ""
 "Seems like that should just happen, I don't want to worry about accidentally "
 "removing / when I pass it /tmp"
 msgstr ""
+"このモジュールは、できる限り小さなコードとオーバーヘッドで、 mkdir() と rmdir() の再帰版を提供することを目的としています。\n"
+"\n"
+"このモジュールは File::Path の機能縮小版ではありませんし、 File::Path の機能のすべてを File::Path::Tiny "
+"で置き換えるような意図もありません。\n"
+"\n"
+"File::Path "
+"は機能の割には非常に良質なモジュールですが、このモジュールを使うことによる負荷は大きく、このモジュール無しでできることも数多くあります。\n"
+"\n"
+"下記に File::Path には存在するものの、本モジュールには存在していない機能を示します:\n"
+"\n"
+"* * 複数のインターフェイス\n"
+"\n"
+"後方互換性の確保には大量のコードが必要となりますが、本モジュールでは不要であるため、削除されています。\n"
+"\n"
+"* * chdir()\n"
+"\n"
+"File::Path には予期せぬ場所に多数の chdir() が存在し、これによって大きなオーバーヘッドになっています。\n"
+"\n"
+"* * croak による失敗の検出とその処理\n"
+"\n"
+"必要に応じてエラーを処理したいものです。アプリケーション全体を終了させたり、わざわざ eval() でラッピングしたりしたくはありません。\n"
+"\n"
+"* * よりわかりやすい出力システム\n"
+"\n"
+"出力形式も必要に応じて処理したいものです (HTML 出力やファイルハンドルへの出力など) 。\n"
+"\n"
+"* * よりわかりやすく、実験的 (つまり、仕様を変えやすい) エラー処理システム\n"
+"\n"
+"シンプルであり、かつ boolean チェックで容易に検出できるエラー処理システムであるべきです。詳しくは \"How can I make/"
+"remove multiple paths?\" (複数のパスをつく性または削除するには？) をお読みください。\n"
+"\n"
+"* * POD によると、 ‘safe’ もしくは 'keep_root' の属性を付与しない限り、ツリーの削除は安全ではないものと思われる\n"
+"\n"
+"誤って / を削除してしまったりなどの心配をする必要はありません。"
 
 #. tumbleweed/perl-Image-ExifTool/perl-File-RandomAccess/summary
 #. leap/perl-Image-ExifTool/perl-File-RandomAccess/summary
-#, fuzzy
 msgid "Random access reads of sequential file or scalar"
-msgstr "シーケンシャル形式のファイルやスカラ値をランダムアクセスするモジュール"
+msgstr "シーケンシャル形式のファイルやスカラ値をランダムアクセスで読み込むモジュール"
 
 #. tumbleweed/perl-Image-ExifTool/perl-File-RandomAccess/description
 #. leap/perl-Image-ExifTool/perl-File-RandomAccess/description
@@ -15730,9 +15826,8 @@ msgstr ""
 
 #. tumbleweed/perl-File-Remove/summary
 #. leap/perl-File-Remove/summary
-#, fuzzy
 msgid "Remove files and directories"
-msgstr "ファイルやレコードセットに対する差分検出"
+msgstr "ファイルやディレクトリの削除"
 
 #. tumbleweed/perl-File-Remove/description
 #. leap/perl-File-Remove/description
@@ -15745,11 +15840,18 @@ msgid ""
 "*File::Remove::trash* accepts the same arguments as *remove*, with the "
 "addition of an optional, infrequently used \"other platforms\" hashref."
 msgstr ""
+"*File::Remove::remove* はファイルやディレクトリを削除します。ほとんどの場合において、 */bin/rm* "
+"のような動作をする仕組みです。 'unlink' "
+"ではファイルのリストを渡すことができますが、ディレクトリを削除することができません。このモジュールではディレクトリも削除することができます。このほか、"
+"ワイルドカード (*, ?) をファイル名のパラメータとして渡すこともできます。\n"
+"\n"
+"*File::Remove::trash* は *remove* と同じパラメータをとりますが、オプションで (あまり使用されない) \""
+"他のプラットフォームにおける\" ハッシュ参照もとることができます。"
 
 #. tumbleweed/perl-File-Rsync/summary
 #. leap/perl-File-Rsync/summary
 msgid "Perl Module Interface to Rsync(1) F<Http://Rsync.Samba.Org/Rsync/>"
-msgstr ""
+msgstr "Rsync(1) F<Http://Rsync.Samba.Org/Rsync/> に対する Perl モジュールインターフェイス"
 
 #. tumbleweed/perl-File-Rsync/description
 #. leap/perl-File-Rsync/description
@@ -15758,6 +15860,8 @@ msgid ""
 "and updated for _rsync-3.1.1_ but should perform properly with most recent "
 "versions."
 msgstr ""
+"rsync(1) プログラムに対する Perl の便利なラッパーです。 _rsync-2.3.2_ 向けに作成され、 _rsync-3.1.1_ "
+"向けに更新されたものですが、最近のバージョンであればほとんどのもので動作します。"
 
 #. tumbleweed/perl-File-ShareDir/summary
 #. leap/perl-File-ShareDir/summary
@@ -15851,7 +15955,7 @@ msgstr ""
 #. tumbleweed/perl-File-ShareDir-Install/summary
 #. leap/perl-File-ShareDir-Install/summary
 msgid "Install shared files"
-msgstr ""
+msgstr "共有ファイルのインストール"
 
 #. tumbleweed/perl-File-ShareDir-Install/description
 msgid ""
@@ -15866,6 +15970,13 @@ msgid ""
 "Please note that this module installs read-only data files; empty "
 "directories will be ignored."
 msgstr ""
+"File::ShareDir::Install は、配布物から読み込み専用のデータファイルをインストールすることができます。 File::"
+"ShareDir に対するコンパニオンモジュールで、インストール後にこれらのファイルを配置することができます。\n"
+"\n"
+"このモジュールは Module::Install:Share を ExtUtils::MakeMaker に移植したもので、必要なファイルのみ ("
+"'.svn', '.git' などのソース制御システム用のファイルを除外して) をインストールするように改善されています。\n"
+"\n"
+"ただし、このモジュールでインストールすることができるのは、読み込み専用ファイルだけであることに注意してください。また、空のディレクトリは無視されます。"
 
 #. tumbleweed/perl-File-ShareDir-ProjectDistDir/summary
 #. tumbleweed/perl-File-ShareDir-ProjectDistDir/description
@@ -15873,7 +15984,7 @@ msgstr ""
 #. leap/perl-File-ShareDir-ProjectDistDir/description
 msgid ""
 "Simple set-and-forget using of a '/share' directory in your projects root"
-msgstr ""
+msgstr "お使いのプロジェクトルート内に '/share' ディレクトリを設定するシンプルな仕組み"
 
 #. tumbleweed/perl-File-Slurp/summary
 #. leap/perl-File-Slurp/summary
@@ -15917,7 +16028,7 @@ msgstr ""
 #. tumbleweed/perl-File-Slurp-Tiny/summary
 #. leap/perl-File-Slurp-Tiny/summary
 msgid "Simple, Sane and Efficient File Slurper [Discouraged]"
-msgstr ""
+msgstr "シンプルでありふれた効果的なファイル読み書き [非推奨]"
 
 #. tumbleweed/perl-File-Slurp-Tiny/description
 #. tumbleweed/perl-File-Slurper/description
@@ -15926,12 +16037,12 @@ msgstr ""
 msgid ""
 "This module provides functions for fast and correct slurping and spewing. "
 "All functions are optionally exported."
-msgstr ""
+msgstr "このモジュールは、高速で正確なファイル読み書き機能を提供します。すべての関数は必要に応じて公開されます。"
 
 #. tumbleweed/perl-File-Slurp-Unicode/summary
 #. leap/perl-File-Slurp-Unicode/summary
 msgid "Reading/Writing of Complete Files with Character Encoding Support"
-msgstr ""
+msgstr "文字エンコーディングに対応したファイル全体の読み書き"
 
 #. tumbleweed/perl-File-Slurp-Unicode/description
 #. leap/perl-File-Slurp-Unicode/description
@@ -15942,11 +16053,15 @@ msgid ""
 "Slurp manpage documentation for basic usage; only the differences are "
 "described from here on out."
 msgstr ""
+"このモジュールは File::Slurp をラッピングするもので、 *'encoding'* "
+"パラメータを通じて文字エンコーディングの設定に対応するものです。 File::Slurp "
+"と全く同じパラメータをとる同名関数を公開します。基本的な使いかいたについて、詳しくは File::Slurp のドキュメンテーションをお読みください。"
+"ここでは File::Slurp との違いのみを説明しています。"
 
 #. tumbleweed/perl-File-Slurper/summary
 #. leap/perl-File-Slurper/summary
 msgid "Simple, Sane and Efficient Module to Slurp a File"
-msgstr ""
+msgstr "シンプルでありふれた効果的なファイル読み書きモジュール"
 
 #. tumbleweed/perl-File-Tail/summary
 #. leap/perl-File-Tail/summary
@@ -16012,7 +16127,7 @@ msgstr ""
 #. tumbleweed/perl-File-Temp/summary
 #. leap/perl-File-Temp/summary
 msgid "Return name and handle of a temporary file safely"
-msgstr ""
+msgstr "一時ファイルの名前とハンドルを安全に返すモジュール"
 
 #. tumbleweed/perl-File-Temp/description
 #. leap/perl-File-Temp/description
@@ -16045,13 +16160,32 @@ msgid ""
 "\n"
 "Filehandles returned by these functions support the seekable methods."
 msgstr ""
+"'File::Temp' は、一時ファイルの作成とオープンを安全に行なう際に使用するモジュールです。関数型のインターフェイスとオブジェクト指向のインターフ"
+"ェイスの両方に対応しています。 File::Temp のコンストラクタや tempfile() "
+"関数は、一時ファイルの名前とファイルハンドルを返すことができます。このほか、 tempdir() "
+"関数は一時ディレクトリを作成する際に使用することができます。\n"
+"\n"
+"一時ファイルを作成する際にセキュリティを確保するため、ファイルハンドルとファイル名の両方を返すようになっています。このような仕組みにより、万が一他のプロセ"
+"スが同じ一時ファイル名を生成してしまったような場合であっても、いずれか片方のプロセスでファイルを開く際に失敗するため、競合してしまうようなことがなくなりま"
+"す。もう 1 つのセキュリティレベルとしては、たとえば全ユーザに対して書き込み可能なディレクトリで、 sticky "
+"ビットが設定されているかどうかをチェックしたりすることもできます。\n"
+"\n"
+"有名な C ライブラリ関数との互換関数という意味では、 Perl で実装された mkstemp() ファミリがあります。これらには、 mkstemp()"
+", mkstemps(), mkdtemp(), mktemp() が用意されています。\n"
+"\n"
+"これに加えて、必要であれば標準的な POSIX の tmpnam() と tmpfile() 関数の実装も提供されています。\n"
+"\n"
+"mktemp(), tmpnam(), tempnam() の各実装も提供されていますが、これらはファイル名のみが返される仕組みであるため、関数が呼び出さ"
+"れた時点でのみ有効であり、その名前でファイルを作成する際、ファイルが存在しないことを保証することはできません。\n"
+"\n"
+"これらの関数で返されるファイルハンドルは、いずれも seek に対応しています。"
 
 #. tumbleweed/perl-File-Touch/summary
 #. leap/perl-File-Touch/summary
 msgid ""
 "Update File Access and Modification Times, Optionally Creating Files If "
 "Needed"
-msgstr ""
+msgstr "ファイルのアクセス日時と変更日時の更新 (必要であればファイルの作成) モジュール"
 
 #. tumbleweed/perl-File-Touch/description
 #. leap/perl-File-Touch/description
@@ -16093,6 +16227,36 @@ msgid ""
 "If defined, use this time (in epoch seconds) instead of current time for "
 "modification time."
 msgstr ""
+"下記にオブジェクト指向のコンストラクタを利用する際に指定することができる、パラメータの一覧を示します:\n"
+"\n"
+"* atime_only => [0|1]\n"
+"\n"
+"0 以外の値を指定すると、ファイルのアクセス日時のみを変更します。既定は 0 です。\n"
+"\n"
+"* mtime_only => [0|1]\n"
+"\n"
+"0 以外の値を指定すると、ファイルの更新日時のみを変更します。既定は 0 です。\n"
+"\n"
+"* no_create => [0|1]\n"
+"\n"
+"0 以外の値を指定すると、新しいファイルを作成しなくなります。既定は 0 です。\n"
+"\n"
+"* reference => $reference_file\n"
+"\n"
+"値を指定すると、現在の時刻ではなく指定したファイルのタイムスタンプを利用するようになります。オブジェクトを作成する際、参照先のファイルからタイムスタンプを"
+"読み込みます。既定では値が指定されていません。\n"
+"\n"
+"* time => $time\n"
+"\n"
+"値を指定すると、アクセス日時と更新日時を指定した値に設定します。 'atime', 'mtime' の指定よりも優先して働きます。\n"
+"\n"
+"* atime => $time\n"
+"\n"
+"値を指定すると、アクセス日時として指定した日時 (エポックからの秒数) を使用するようになります。\n"
+"\n"
+"* mtime => $time\n"
+"\n"
+"値を指定すると、更新日時として指定した日時 (エポックからの秒数) を使用するようになります。"
 
 #. tumbleweed/perl-File-Which/summary
 #. leap/perl-File-Which/summary
@@ -16101,7 +16265,6 @@ msgstr "which ユーティリティを Perl API として実装したもの"
 
 #. tumbleweed/perl-File-Which/description
 #. leap/perl-File-Which/description
-#, fuzzy
 msgid ""
 "File::Which finds the full or relative paths to executable programs on the "
 "system. This is normally the function of 'which' utility. 'which' is "
@@ -16121,27 +16284,22 @@ msgid ""
 "does not provide it, install App::pwhich which provides a command line "
 "interface to this API."
 msgstr ""
-"File::Which はシステム上に存在する実行可能なプログラムを、絶対パスまたは相対"
-"パスで返すモジュールです。通常は 'which' ユーティリティが実施する機能で、一般"
-"的に単体のプログラムか、シェル内蔵コマンドとして提供されているものです。 "
-"Microsoft Windows などのプラットフォームでは、オペレーティングシステムの中枢"
-"としては提供されていないものです。このモジュールは、動作するプラットフォーム"
-"とは無関係に、この機能を安定した API として提供します。\n"
+"File::Which はシステム上に存在する実行可能なプログラムを、絶対パスまたは相対パスで返すモジュールです。通常は 'which' "
+"ユーティリティが実施する機能で、一般的に単体のプログラムか、シェル内蔵コマンドとして提供されているものです。 Microsoft Windows "
+"などのプラットフォームでは、オペレーティングシステムの中枢としては提供されていないものです。このモジュールは、動作するプラットフォームとは無関係に、"
+"この機能を安定した API として提供します。\n"
 "\n"
-"このモジュールは、主に正しさと移植性を重視して作られています。そのため、 "
-"Microsoft Windows などのようにカレントディレクトリを暗黙のうちに検索パスに入"
-"れてしまうプラットフォームの場合は、カレントディレクトリも検索対象になりま"
-"す。 UNIX のようなプラットフォームでは、明示的に指定しない限り、カレントディ"
-"レクトリは検索対象とはなりません。\n"
+"このモジュールは、主に正しさと移植性を重視して作られています。そのため、 Microsoft Windows "
+"などのようにカレントディレクトリを暗黙のうちに検索パスに入れてしまうプラットフォームの場合は、カレントディレクトリも検索対象になります。 UNIX "
+"のようなプラットフォームでは、明示的に指定しない限り、カレントディレクトリは検索対象とはなりません。\n"
 "\n"
-"コマンドライン環境で 'which' コマンドが提供されていないシステムで、そのコマン"
-"ドを利用したい場合は、 App::pwhich モジュールをインストールしてお使いくださ"
-"い。こちらは、この API のコマンドラインインターフェイスを提供します。"
+"コマンドライン環境で 'which' コマンドが提供されていないシステムで、そのコマンドを利用したい場合は、 App::pwhich "
+"モジュールをインストールしてお使いください。こちらは、この API のコマンドラインインターフェイスを提供します。"
 
 #. tumbleweed/perl-File-chdir/summary
 #. leap/perl-File-chdir/summary
 msgid "More Sensible Way to Change Directories"
-msgstr ""
+msgstr "ディレクトリを変更する際の気の利いた方法"
 
 #. tumbleweed/perl-File-chdir/description
 #. leap/perl-File-chdir/description
@@ -16157,10 +16315,17 @@ msgid ""
 "combine all the power of 'chdir()', the File::Spec manpage and the Cwd "
 "manpage."
 msgstr ""
+"Perl の 'chdir()' はとてもとてもグローバルな問題を抱えた不幸なシステムです。お使いのプログラムのどこかで 'chdir()' "
+"を呼び出したり、どこかのライブラリで 'chdir()' が呼び出されたりすると、プログラム全体に対して作業ディレクトリが変更されてしまいます。\n"
+"\n"
+"これはあまりにも問題です。\n"
+"\n"
+"File::chdir では、代替となる '$CWD' と '@CWD' を提供しています。この 2 つの変数は 'chdir()' "
+"の威力のすべてを結集した仕組みです。詳しくは File::Spec および Cwd をお読みください。"
 
 #. tumbleweed/perl-File-pushd/summary
 msgid "Change Directory Temporarily for a Limited Scope"
-msgstr ""
+msgstr "限られた範囲内での一時的なディレクトリ変更"
 
 #. tumbleweed/perl-File-pushd/description
 msgid ""
@@ -16182,6 +16347,18 @@ msgid ""
 "their destruction order is not guaranteed and you might not wind up in the "
 "directory you expect."
 msgstr ""
+"File::pushd は一時的な 'chdir' を実施するもので、簡単でかつ自動的に元のディレクトリに戻ることができる仕組みです。 Unix "
+"のコマンドシェルの一部で提供されている 'pushd' に似た動作になります。元のディレクトリに戻る機能は、オブジェクトの作成時点でのディレクトリを覚えて"
+"おくことによって実現しています。オブジェクトが破壊された際には、デストラクタが 'chdir' を呼び出して元の作業ディレクトリに戻します。オブジェクトを"
+"特定のスコープ内に入れておくことによって、スコープの終了時に自動的にディレクトリを戻すことができます。\n"
+"\n"
+"このモジュールは、たとえばテストのタスクのような一時的なディレクトリ変更には非常に有用です。関数は File::Temp "
+"経由で生成した一時ディレクトリを直接指定することもできます。\n"
+"\n"
+"また、利便性のため、オブジェクトでは入力したディレクトリの絶対パスを正規化して保持しています。\n"
+"\n"
+"*警告*: 同じ文法スコープ内で複数の 'pushd' "
+"オブジェクトを作成した場合は、オブジェクトの破壊順序が保証されないため、期待通りにディレクトリが戻らない可能性があることに注意してください。"
 
 #. tumbleweed/perl-FileHandle-Unget/summary
 #. leap/perl-FileHandle-Unget/summary
@@ -16216,9 +16393,8 @@ msgstr ""
 
 #. tumbleweed/perl-Filesys-Notify-Simple/summary
 #. leap/perl-Filesys-Notify-Simple/summary
-#, fuzzy
 msgid "Simple and dumb file system watcher"
-msgstr "シンプルなファイルシステムブラウザ"
+msgstr "シンプルで単純なファイルシステム監視"
 
 #. tumbleweed/perl-Filesys-Notify-Simple/description
 #. leap/perl-Filesys-Notify-Simple/description
@@ -16263,11 +16439,46 @@ msgid ""
 "  If more than 64 directories are included under the specified paths, an   "
 "error occurrs."
 msgstr ""
+"Filesys::Notify::Simple "
+"はシンプルながらも統一的なインターフェイスで、指定したファイルシステムパスの変更通知を受け取ることができる仕組みです。 Linux では "
+"inotify2 を、 OSX では fsevents を、 FreeBSD では kqueue を、 Windows では "
+"FindFirstChangeNotification "
+"をそれぞれインストールされていれば利用するほか、インストールされていない場合は完全なディレクトリスキャンを実施して実現します。\n"
+"\n"
+"なお、このモジュールにはいくつかの制限事項があります。制限事項がお気に召さない場合は File::ChangeNotify をお使いください。\n"
+"\n"
+"* *\n"
+"\n"
+"  ファイル名ベースのフィルタはありません。ファイル名の判断はお使いのコード内で実施してください。\n"
+"\n"
+"* *\n"
+"\n"
+"  イベントの種類 (作成／更新／削除など) を取得することはできません。\n"
+"\n"
+"* *\n"
+"\n"
+"  現時点では 'wait' メソッドはブロックしてしまいます。\n"
+"\n"
+"その代わり、このモジュールは中枢モジュールを除いて、どのモジュールにも依存していません。 プラットフォームごとの最適化については、それぞれ Linux::"
+"Inotify2, Mac::FSEvents, Filesys::Notify::KQueue, Win32::ChangeNotify "
+"をお読みください。いずれも必須ではありません。\n"
+"\n"
+"注意: Win32::ChangeNotify を利用する場合は、さらなる制限事項があります。\n"
+"\n"
+"* *\n"
+"\n"
+"  Win32::ChangeNotify では FindFirstChangeNotificationA を利用しているため、 Unicode "
+"文字は処理することができません。 cygwin (バージョン 1.7 もしくはそれ以降) で Win32::ChangeNotify を利用しない場合は、"
+" Unicode 文字を扱うことができます。\n"
+"\n"
+"* *\n"
+"\n"
+"  指定したパス内に 64 個以上のディレクトリが存在すると、エラーになってしまいます。"
 
 #. tumbleweed/perl-Finance-Quote/summary
 #. leap/perl-Finance-Quote/summary
 msgid "Get stock and mutual fund quotes from various exchanges"
-msgstr ""
+msgstr "様々な取引所から株式情報やファンド情報を取得するモジュール"
 
 #. tumbleweed/perl-Finance-Quote/description
 #. leap/perl-Finance-Quote/description
@@ -16288,11 +16499,22 @@ msgid ""
 "The first part of the hash (eg, \"CML\") is referred to as the stock. The "
 "second part (in this case, \"price\") is referred to as the label."
 msgstr ""
+"このモジュールは、様々なインターネット情報の情報源、たとえば Yahoo! Finance, Fidelity Investments, "
+"Australian Stock Exchange などから、金融情報を取得するためのモジュールです。このモジュールには 2 種類の方式が用意されていて、"
+" 1 つは廃止予定の関数型のインターフェイス、もう 1 つは非常に柔軟で安定性のあるオブジェクト指向のメソッドです。\n"
+"\n"
+"直接的な通貨交換レートを除いて、すべての情報は 2 次元のハッシュ (スカラーコンテキスト内で呼び出した場合は 2 次元のハッシュ参照) "
+"で返されます。たとえば下記のようになります:\n"
+"\n"
+"    %info = $q->fetch(\"australia\",\"CML\");     print \"The price of CML "
+"is \".$info{\"CML\",\"price\"};\n"
+"\n"
+"ハッシュの最初のキー (例: \"CML\") はストック情報を、 2 つめのキー (例: \"price\") はラベルを意味しています。"
 
 #. tumbleweed/perl-FindBin-Real/summary
 #. leap/perl-FindBin-Real/summary
 msgid "Locate directory of original perl script"
-msgstr ""
+msgstr "元の Perl スクリプトのディレクトリ判断"
 
 #. tumbleweed/perl-FindBin-Real/description
 #. leap/perl-FindBin-Real/description
@@ -16309,19 +16531,26 @@ msgid ""
 "'STDIN' then FindBin sets both 'Bin()' and 'RealBin()' return values to the "
 "current directory."
 msgstr ""
+"bin ディレクトリからの相対パスを利用できるようにするため、スクリプトの bin ディレクトリのフルパスを取得することができます。\n"
+"\n"
+"これにより、いくつかのソフトウエアに対して <root>/bin や <root>/lib "
+"のようなディレクトリツリーを設定し、そのソフトウエア自身のインストール先を判断することなく、もジョールの bin/lib "
+"ディレクトリを取得できるようになります。\n"
+"\n"
+"なお、 Perl を *-e* オプション付きで実行した場合や、 Perl のスクリプトを 'STDIN' から読み込んだ場合は、 FindBin "
+"における 'Bin()' や 'RealBin()' の呼び出しは、カレントディレクトリを指す値を返します。"
 
 #. tumbleweed/perl-Font-TTF/summary
 #. leap/perl-Font-TTF/summary
-#, fuzzy
 msgid "Perl module for TrueType Font hacking"
-msgstr "MS True Type フォントのプレースホルダ"
+msgstr "TrueType フォントをハッキングするための Perl モジュール"
 
 #. tumbleweed/perl-Font-TTF/description
 #. leap/perl-Font-TTF/description
 msgid ""
 "This module allows you to do almost anything to a TrueType/OpenType Font "
 "including modify and inspect nearly all tables."
-msgstr ""
+msgstr "このモジュールは、 TrueType/OpenType のフォントを変更したり、ほぼすべての内容を調査したりすることのできる機能を提供します。"
 
 #. tumbleweed/perl-Future/summary
 #. leap/perl-Future/summary
