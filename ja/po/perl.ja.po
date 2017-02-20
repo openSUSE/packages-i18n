@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-17 08:55+0000\n"
+"PO-Revision-Date: 2017-02-20 08:42+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -16555,7 +16555,7 @@ msgstr "このモジュールは、 TrueType/OpenType のフォントを変更�
 #. tumbleweed/perl-Future/summary
 #. leap/perl-Future/summary
 msgid "Represent an Operation Awaiting Completion"
-msgstr ""
+msgstr "処理中を表示するためのモジュール"
 
 #. tumbleweed/perl-Future/description
 msgid ""
@@ -16593,11 +16593,34 @@ msgid ""
 "Unless otherwise noted, the following methods require at least version "
 "_0.08_."
 msgstr ""
+"'Future' オブジェクトは現在処理の操作や、すぐに終わるような操作を表わすものです。非同期に動作するプログラムに対して、制御やデータの流れを管理する"
+"ための様々な方法が用意されています。\n"
+"\n"
+"'Future' では単一の操作を表わすことができるほか、 'done' や 'fail' "
+"などのメソッドを呼び出すことで、明示的に終了を表わすこともできます。これらは \"Leaf Future' と呼ばれ、 'new' "
+"コンストラクタで返される値になります。\n"
+"\n"
+"そのほかにも、サブタスクの集合を表わす 'Future' "
+"のほか、必要なコンポーネントとして依存先の処理状況に応じたマーキングを暗黙のうちに行なうこともできます。これらは \"Convergent "
+"Future\" (収束型 Future) と呼ばれ、制御やデータの流れを一カ所で行なうことになります。これらは様々な 'wait_*' または "
+"'need_*' コンストラクタで返される値になります。\n"
+"\n"
+"このモジュールは、ライブラリの関数に対して非同期の処理を実施させ、 Future オブジェクトを利用して進行状況を表示させ、呼び出し元のプログラム側で何ら"
+"かの制御を行なうか、もしくは待機するかを指定することができる仕組みです。実装とその実装を使用するユーザは、クラス内の様々なメソッドを使用して必要な処理を行"
+"ないます。下記のメソッドは 2 つのセクションに分かれていますが、これらはインターフェイスの各面を表わしています。\n"
+"\n"
+"ただし、このモジュールは実際の仕組みや非同期の処理そのものを提供するものではありません。単純に制御や制御内のデータで使用するオブジェクトを作成するだけです"
+"。このモジュールを利用することで、より洗練されわかりやすく、かつシンプルな汎用パターンを利用して、非同期の処理を実現することができるようになります。\n"
+"\n"
+"なお、便利なループを構築するための機能については、 Future::Utils "
+"をお読みください。こちらには、ループ内で繰り返し呼び出す場合の関数が提供されています。\n"
+"\n"
+"なお、下記のメソッドは明示されているものを除き、バージョン _0.08_ 以降が必要です。"
 
 #. tumbleweed/perl-GD-Barcode/summary
 #. leap/perl-GD-Barcode/summary
 msgid "Create barcode image with GD"
-msgstr ""
+msgstr "GD を利用したバーコード画像の作成"
 
 #. tumbleweed/perl-GD-Barcode/description
 #. leap/perl-GD-Barcode/description
@@ -16608,6 +16631,10 @@ msgid ""
 "\n"
 "From 1.14, you can use this module even if no GD (except plot method)."
 msgstr ""
+"GD::Barcode は GD のサブクラスで、 GD を利用してバーコード画像を作成することのできるものです。このモジュールは、 \""
+"Generate Barcode Ver 1.02 By Shisei Hanai 97/08/22\" をベースにしています。\n"
+"\n"
+"バージョン 1.14 では、このモジュールを GD 無しで利用できるようになっています (ただし plot メソッドを除きます) 。"
 
 #. tumbleweed/perl-GDGraph/summary
 #. leap/perl-GDGraph/summary
@@ -16633,9 +16660,8 @@ msgstr "GDTextUtil Perl モジュール"
 
 #. tumbleweed/perl-Geo-Coordinates-UTM/summary
 #. leap/perl-Geo-Coordinates-UTM/summary
-#, fuzzy
 msgid "Perl extension for Latitude Longitude conversions"
-msgstr "XML ドキュメントを書き込むための Perl 拡張"
+msgstr "緯度／経度を変換するための Perl 拡張"
 
 #. tumbleweed/perl-Geo-Coordinates-UTM/description
 #. leap/perl-Geo-Coordinates-UTM/description
@@ -16643,11 +16669,12 @@ msgid ""
 "This module will translate latitude longitude coordinates to Universal "
 "Transverse Mercator(UTM) coordinates and vice versa."
 msgstr ""
+"このモジュールは、緯度／経度のデータと Universal Transverse Mercator(UTM) 値との間を、相互に変換するモジュールです。"
 
 #. tumbleweed/perl-Geography-Countries/summary
 #. leap/perl-Geography-Countries/summary
 msgid "2-letter, 3-letter, and numerical codes for countries"
-msgstr ""
+msgstr "2 桁 または 3 桁、および数字による国コード"
 
 #. tumbleweed/perl-Geography-Countries/description
 #. leap/perl-Geography-Countries/description
@@ -16656,11 +16683,13 @@ msgid ""
 "codes, as defined by the ISO-3166 maintenance agency [1], and defined by the "
 "UNSD."
 msgstr ""
+"このモジュールは、 ISO-3166 メンテナンスエージェンシーおよび UNSD が定義する、 2 文字もしくは 3 "
+"文字の国コード、および数値による国コードのマッピングを提供しています。"
 
 #. tumbleweed/perl-Getopt-Long-Descriptive/summary
 #. leap/perl-Getopt-Long-Descriptive/summary
 msgid "Getopt::Long, but simpler and more powerful"
-msgstr ""
+msgstr "シンプルでよりパワフルな Getopt::Long"
 
 #. tumbleweed/perl-Getopt-Long-Descriptive/description
 #. leap/perl-Getopt-Long-Descriptive/description
@@ -16672,11 +16701,15 @@ msgid ""
 "It also provides usage (help) messages, data validation, and a few other "
 "useful features."
 msgstr ""
+"Getopt::Long::Descriptive はもう 1 つの Getopt ライブラリです。 Getopt::Long "
+"上に構築されているモジュールですが、多数の機能が追加されていますが、非常に大きなオプション類を気にしなくても動作できるようにしてあります。\n"
+"\n"
+"また、このモジュールは利用方法に関するメッセージ (ヘルプ) やデータの検証、およびいくつかの便利な追加機能も提供されています。"
 
 #. tumbleweed/perl-Getopt-Tabular/summary
 #. leap/perl-Getopt-Tabular/summary
 msgid "table-driven argument parsing for Perl 5"
-msgstr ""
+msgstr "Perl 5 向けのテーブル駆動型パラメータ処理"
 
 #. tumbleweed/perl-Getopt-Tabular/description
 #. leap/perl-Getopt-Tabular/description
@@ -16724,21 +16757,53 @@ msgid ""
 "'num_values' field, which determines whether the option is scalar- or   "
 "vector-valued. This will be fully explained in due course.)"
 msgstr ""
+"*Getopt::Tabular* はテーブル駆動型のパラメータ処理を実現する Perl 5 モジュールで、 John Ousterhout 氏の "
+"Tk_ParseArgv "
+"をヒントにして作られたものです。このパッケージを利用するにあたって必要な作業は、処理すべきコマンドラインオプションを指定するテーブルを構築し、これを元に "
+"&GetOptions を呼び出すだけです。 &GetOptions には、構築したテーブルと '@ARGV' の参照 (もしくはそれに類するもの) 、"
+"そして任意指定の配列参照 ('@newARGV' のようなもの) です。 &GetOptions は '@ARGV' にあるすべてのパラメータを処理し、"
+"残りのパラメータ (コマンドラインオプション以外のパラメータや、コマンドラインオプションの値など) を '@newARGV' 配列にコピーします ('@"
+"newARGV' パラメータを指定しなかった場合は、 '&GetOptions' は '@ARGV' "
+"で指定した配列を、抽出したパラメータリストに置き換えます) 。正しくないオプションが指定された場合は、 'GetOptions' "
+"はエラーメッセージを出力し、 0 を返します。\n"
+"Getopt::Tabular が素晴らしいものであることを示す前に、まずは本モジュールで使用する用語について説明します:\n"
+"\n"
+"* パラメータ\n"
+"\n"
+"  コマンドライン内に現われる単語。 '@ARGV' 配列のうちの 1 要素。\n"
+"\n"
+"* オプション\n"
+"\n"
+"  特定の文字順序で表現されるパラメータ。既定では \"-\" (GNU 形式のオプションを設定したい場合は、 \"--\" に変更することもできます) "
+"。ほとんどの Getopt::Tabular ベースのアプリケーションでは、オプションはコマンドライン内のどこに現われてもかまわないものとし、"
+"順序についても特に気にしないものとされます (ただし、一方のオプションが他方のオプションを上書きするような場合は除きます) 。また、 Getopt::"
+"Tabular ではオプションの省略形 (明らかである場合のみ) を利用することもできます。\n"
+"\n"
+"* オプション値\n"
+"\n"
+"  (もしくは単に _値_) 。特定のタイプのオプションの後ろに現われる、パラメータの値。たとえば '-foo' "
+"がスカラー値の整数を受け取るオプションであったとすると、コマンドライン内で '-foo 3' というパラメータが現われると、オプション '-foo' "
+"に対して '3' が設定されたものと見なされます。\n"
+"\n"
+"* オプションタイプ\n"
+"\n"
+"  'GetOptions' からのオプションの処理方法と、それに続くオプション値の種類 (実際には、多くのオプションタイプではオプション値の型のほか、ス"
+"カラー値なのかベクトル値なのかを指定することもできます。これに関しては後ほど詳しく説明します) 。"
 
 #. tumbleweed/perl-Graph/summary
 #. leap/perl-Graph/summary
 msgid "Graph Data Structures and Algorithms"
-msgstr ""
+msgstr "データ構造やアルゴリズムのグラフ化"
 
 #. tumbleweed/perl-Graph/description
 #. leap/perl-Graph/description
 msgid "graph data structures and algorithms"
-msgstr ""
+msgstr "データ構造やアルゴリズムのグラフ化"
 
 #. tumbleweed/perl-GraphViz/summary
 #. leap/perl-GraphViz/summary
 msgid "Interface to AT&T's GraphViz. Deprecated. See GraphViz2"
-msgstr ""
+msgstr "AT&T の GraphViz へのインターフェイスです。廃止予定です。 GraphViz2 をご覧ください。"
 
 #. tumbleweed/perl-GraphViz/description
 #. leap/perl-GraphViz/description
@@ -16751,11 +16816,17 @@ msgid ""
 "\n"
 "GraphViz is deprecated in favour of the GraphViz2 manpage."
 msgstr ""
+"このモジュールはレイアウトに対するインターフェイスを提供するもので、様々な形式 (PostScript, PNG など) "
+"の画像でグラフを生成することができるものです。グラフの生成にあたっては、 GraphViz プロジェクトが提供する \"dot\", \"neato\""
+", \"twopi\", \"circo\", \"fdp\" の各プログラムを利用することができます (http://www.graphviz.org/"
+" もしくは http://www.research.att.com/sw/tools/graphviz/) 。\n"
+"\n"
+"GraphViz は、 GraphViz2 の登場によって廃止される予定です。"
 
 #. tumbleweed/perl-Gravatar-URL/summary
 #. leap/perl-Gravatar-URL/summary
 msgid "Make URLs for Gravatars from an email address"
-msgstr ""
+msgstr "電子メールアドレスからの Gravatars の URL の生成"
 
 #. tumbleweed/perl-Gravatar-URL/description
 #. leap/perl-Gravatar-URL/description
@@ -16770,17 +16841,23 @@ msgid ""
 "\n"
 "See the http://gravatar.com manpage for more info."
 msgstr ""
+"Gravatar は Globally Recognized Avatar "
+"の略で、電子メールアドレスから生成するアバターです。このモジュールを利用することで、電子メールアドレスからグローバルな画像を生成することができます。 "
+"URL を構築して gravatar.com にアクセスすることで、電子メールアドレスから Gravatar を参照することができます。\n"
+"\n"
+"使い方の例として、 http://search.cpan.org をご覧いただくと、著者の Gravatar を参照することができます。\n"
+"\n"
+"詳しくは http://gravatar.com をお読みください。"
 
 #. tumbleweed/perl-Growl-GNTP/summary
 #. leap/perl-Growl-GNTP/summary
-#, fuzzy
 msgid "Perl implementation of GNTP Protocol (Client Part)"
-msgstr "SCGI プロトコルの Python 実装"
+msgstr "GNTP プロトコルの Perl 実装 (クライアント側)"
 
 #. tumbleweed/perl-Growl-GNTP/description
 #. leap/perl-Growl-GNTP/description
 msgid "Growl::GNTP is Perl implementation of GNTP Protocol (Client Part)"
-msgstr ""
+msgstr "Growl::GNTP は GNTP プロトコルの Perl 実装 (クライアント側) です。"
 
 #. tumbleweed/perl-HTML-Element-Extended/summary
 #. leap/perl-HTML-Element-Extended/summary
@@ -16848,7 +16925,7 @@ msgstr ""
 #. tumbleweed/perl-HTML-Form/summary
 #. leap/perl-HTML-Form/summary
 msgid "Class that represents an HTML form element"
-msgstr ""
+msgstr "HTML フォーム要素を表わすクラス"
 
 #. tumbleweed/perl-HTML-Form/description
 #. leap/perl-HTML-Form/description
@@ -16859,11 +16936,15 @@ msgid ""
 "tweaked and it can then be asked to provide 'HTTP::Request' objects that can "
 "be passed to the request() method of 'LWP::UserAgent'."
 msgstr ""
+"'HTML::Form' クラスのオブジェクトは、 1 つの '<form>...</form>' (フォーム) "
+"インスタンスを表わします。フォームには名前など、様々な値のタイプを取り得る入力項目が用意されます。フォームの状態を調整できる仕組みがあることから、 "
+"'LWP::UserAgent' のメソッド request() に渡すことのできる 'HTTP::Request' "
+"オブジェクトを提供するようにすることもできます。"
 
 #. tumbleweed/perl-HTML-FormHandler/summary
 #. leap/perl-HTML-FormHandler/summary
 msgid "HTML forms using Moose"
-msgstr ""
+msgstr "Moose を利用した HTML フォーム"
 
 #. tumbleweed/perl-HTML-FormHandler/description
 #. leap/perl-HTML-FormHandler/description
@@ -16918,6 +16999,42 @@ msgid ""
 "More Formhandler documentation and a tutorial can be found in the manual at "
 "HTML::FormHandler::Manual."
 msgstr ""
+"*** このファイル内のドキュメンテーションには、いくつかの概要も含まれていますが、主に API "
+"のドキュメンテーションを目的として作成されています。導入部をお読みになりたい場合は、 HTML::FormHandler::Manual::Intro "
+"および他のドキュメンテーションへのリンクを参照してください。\n"
+"\n"
+"HTML::FormHandler は構築と描画を分離するための仕組みを提供します。フォームやフィールドを各種の柔軟な方法で設定することができます。 "
+"HTML 用のレンダラも用意されていますが、様々な出力をするための独自のレンダラを設定することもできます。\n"
+"\n"
+"HTML::FormHandler はフォームのフィールドとバリデータを設定することができます。データベース向けのフォームも、データベース向けではないフォ"
+"ームも作成することができるほか、データベース内の行を自動的に更新したり、追加したりすることもできます。このほか、 HTML "
+"フォームから作られるものではない構造化されたデータを処理することもできます。\n"
+"\n"
+"このモジュールの目的のうちの 1 つには、できる限りシンプルなコントローラ／アプリケーションプログラミングインターフェイスを維持し続け、コードの重複を最小"
+"化することにあります。多くの場合、フォームに対するコントローラのインターフェイスは、コード数行程度で済みます。\n"
+"\n"
+"FormHandler については、手作業では数分程度でできてしまうようなシンプルな HTML "
+"の変更に対して、時間を要するようなことはありません。なぜなら手作業でも記述できるためです。そうでない場合も、 HTML "
+"生成機能が必要なだけ自動化してくれますし、テンプレートウイジェットや Perl のレンダリングクラスなどを利用することもできます。このほか、何をどこでどれ"
+"だけ変更すべきなのかを自動制御させることもできます。また、必要であれば独自のレンダラを定義して、必要なフォーム生成を行なうこともできます。\n"
+"\n"
+"フォームは複数の論理パーツに分解することができ、 FormHandler クラスやロール、フィールドやバリデーションのコレクション、変換や Moose "
+"タイプ制約などを利用して、完全なフォームを組み合わせることができます。 FormHandler フォームは Perl "
+"のクラスであるため、たいへんに柔軟な仕組みになっています。\n"
+"\n"
+"HTML::FormHandler は、フォームやフィールドのクラスに適用されるロールを介して描画されます "
+"(ただし、外部オブジェクトとしてレンダラを作成し、利用することもできます) 。現時点では 2 種類のフレーバーが用意され、一方は "
+"HTML::FormHandler::Render::Simple や HTML::FormHandler::Render::Table "
+"のようなオールインワンソリューションで、メソッドやレンダリングフィールドウイジェットなどが提供されている仕組みで、他方は  "
+"HTML::FormHandler::Widget のようなロールで、フィールドやフォームに自動的に適用されるような、より細かいロールを提供するものです。"
+"詳しくは HTML::FormHandler::Manual::Rendering をお読みください "
+"(もちろん独自のフォームハンドラを利用することもできます) 。\n"
+"\n"
+"FormHandler の主な用途は、 Catalyst, DBIx::Class のほか、テンプレートツールキットの Web "
+"アプリケーションなどがあります。もちろんそれ以外の用途もありますので、 FormHandler は任意の Perl "
+"アプリケーションで利用できる仕組みといえます。\n"
+"\n"
+"FormHandler のドキュメンテーションやチュートリアルについては、 HTML::FormHandler::Manual をお読みください。"
 
 #. tumbleweed/perl-HTML-Format/summary
 #. tumbleweed/perl-HTML-Format/description
@@ -16929,7 +17046,7 @@ msgstr "HTML フォーマッタ向け基本クラス"
 #. tumbleweed/perl-HTML-RewriteAttributes/summary
 #. leap/perl-HTML-RewriteAttributes/summary
 msgid "Concise attribute rewriting"
-msgstr ""
+msgstr "簡潔な属性変更"
 
 #. tumbleweed/perl-HTML-RewriteAttributes/description
 #. leap/perl-HTML-RewriteAttributes/description
@@ -16946,12 +17063,20 @@ msgid ""
 "Author:\n"
 "-------     Shawn M Moore, <sartak@bestpractical.com>"
 msgstr ""
+"HTML::RewriteAttributes はシンプルながらもパワフルな HTML 属性の変更機能を提供します。\n"
+"\n"
+"各属性に対してコールバック関数を指定するだけで、残りの作業はこのモジュールがすべて行ないます。\n"
+"\n"
+"このモジュールは、特殊なケースをより簡単に扱うことができるよう、サブクラス化される前提で作られています。オーバーライド可能なメソッドについて、詳しくはソー"
+"スコードをお読みください。\n"
+"\n"
+"著者:\n"
+"-------     Shawn M Moore, <sartak@bestpractical.com>"
 
 #. tumbleweed/perl-HTML-Scrubber/summary
 #. leap/perl-HTML-Scrubber/summary
-#, fuzzy
 msgid "Perl extension for scrubbing/sanitizing html"
-msgstr "OpenSSL を使用する Perl 拡張"
+msgstr "HTML の洗浄と消毒化のための Perl 拡張"
 
 #. tumbleweed/perl-HTML-Scrubber/description
 #. leap/perl-HTML-Scrubber/description
@@ -16963,6 +17088,10 @@ msgid ""
 "TreeBuilder, so I thought I'd write something similar that works directly "
 "with HTML::Parser."
 msgstr ""
+"HTML での入力を、信頼性が高く柔軟な方法で \"洗浄\" し、 \"消毒\" したい場合は、このモジュールが便利です。\n"
+"\n"
+"HTML::Sanitizer は HTML::TreeBuilder をベースにしているため、不十分であると考えています。そのため、 HTML::"
+"Parser で直接処理することのできる、本モジュールを作成したものです。"
 
 #. tumbleweed/perl-HTML-TableExtract/summary
 #. leap/perl-HTML-TableExtract/summary
@@ -16971,7 +17100,6 @@ msgid ""
 msgstr "HTML 文書の表に含まれる内容を抽出する Perl モジュール"
 
 #. tumbleweed/perl-HTML-TableExtract/description
-#, fuzzy
 msgid ""
 "HTML::TableExtract is a subclass of HTML::Parser that serves to extract the "
 "information from tables of interest contained within an HTML document. The "
@@ -17029,54 +17157,42 @@ msgid ""
 "Entities by default; this can be disabled by setting the _decode_ parameter "
 "to 0."
 msgstr ""
-"HTML::TableExtract は HTML::Parser のサブクラスで、 HTML 文書内にある表 (テー"
-"ブル)について、その中に含まれる情報を取り出すために使用します。それぞれ取り出"
-"した情報は表オブジェクト内に保存されます。表はテキストとして取り出すことがで"
-"きるほか、HTML や HTML::ElementTable の構造 (その場での操作や編集のため) とし"
-"て取り出すことができます。\n"
+"HTML::TableExtract は HTML::Parser のサブクラスで、 HTML 文書内にある表 (テーブル)について、その中に含まれる情報"
+"を取り出すために使用します。それぞれ取り出した情報は表オブジェクト内に保存されます。表はテキストとして取り出すことができるほか、HTML や HTML::"
+"ElementTable の構造 (その場での操作や編集のため) として取り出すことができます。\n"
 "\n"
-"文書から情報を取り出す表を指定するにあたっては、下記の 4 つの制約条件を指定す"
-"ることができます: _Headers_, _Depth_, _Count_, _Attributes_.\n"
+"文書から情報を取り出す表を指定するにあたっては、下記の 4 つの制約条件を指定することができます: _Headers_, _Depth_, "
+"_Count_, _Attributes_.\n"
 "\n"
-"_Headers_ (ヘッダ) は、最も柔軟で他の技術との親和性が高い方法で、配列内にテキ"
-"ストを指定することで、データを取り出す対象を指定します。該当の表に対する全て"
-"のヘッダ行にアクセスすると、該当列の残りのセルを取り出すことができる仕組みで"
-"す。つまり、表を縦に分断して取り出す方式です。それに加えて、 TableExtract は"
-"指定した順序に並ぶように列を入れ替えます。この入れ替え処理を無効化したい場合"
-"は、オブジェクト生成時 _automap_ に 0 を指定してください。この場合は "
-"column_map() メソッドに依存して、ヘッダの順序が決められます。それに加えて、 "
-"TableExtract ではセルの長さに関する問題を解決することができます。これにより、"
-"ブラウザ内で見えているとおりにデータを取り出すことができます。この動作は "
-"_gridmap_ パラメータを 0 にすることで無効化できます。なお、ヘッダの適合処理が"
-"行なわれる前に HTML が解釈されることに注意してください。これは _keep_html_ パ"
-"ラメータを有効にすることで回避できます。\n"
+"_Headers_ (ヘッダ) は、最も柔軟で他の技術との親和性が高い方法で、配列内にテキストを指定することで、データを取り出す対象を指定します。該当の表"
+"に対する全てのヘッダ行にアクセスすると、該当列の残りのセルを取り出すことができる仕組みです。つまり、表を縦に分断して取り出す方式です。それに加えて、 "
+"TableExtract は指定した順序に並ぶように列を入れ替えます。この入れ替え処理を無効化したい場合は、オブジェクト生成時 _automap_ に "
+"0 を指定してください。この場合は column_map() メソッドに依存して、ヘッダの順序が決められます。それに加えて、 TableExtract "
+"ではセルの長さに関する問題を解決することができます。これにより、ブラウザ内で見えているとおりにデータを取り出すことができます。この動作は "
+"_gridmap_ パラメータを 0 にすることで無効化できます。なお、ヘッダの適合処理が行なわれる前に HTML が解釈されることに注意してください。"
+"これは _keep_html_ パラメータを有効にすることで回避できます。\n"
 "\n"
-"_Depth_ と _Count_ は 2 つの表の関連性をより厳密に指定できる方法です。 "
-"_Depth_ は他の表内で対象の表がどれだけ深いものであるのかを指定します。文書内"
-"でのトップレベルの (一番外側の) 表は 0 になります。トップレベル内にある表は "
-"1 、その中にある表は 2 のようになります。それぞれの深さはレイヤ (層) としても"
-"考えられるもので、同じ深さの表は同じレイヤにある表と言えます。このようなレイ"
-"ヤの仕組みの中で、_Count_ は同じ深さの中での順序を指定します。これは 0 から始"
-"まる値で、 _Depth_ と _Count_ を指定することで、文書内の表を厳密に指定するこ"
-"とができます。\n"
+"_Depth_ と _Count_ は 2 つの表の関連性をより厳密に指定できる方法です。 _Depth_ "
+"は他の表内で対象の表がどれだけ深いものであるのかを指定します。文書内でのトップレベルの (一番外側の) 表は 0 になります。トップレベル内にある表は "
+"1 、その中にある表は 2 のようになります。それぞれの深さはレイヤ (層) "
+"としても考えられるもので、同じ深さの表は同じレイヤにある表と言えます。このようなレイヤの仕組みの中で、_Count_ は同じ深さの中での順序を指定します。"
+"これは 0 から始まる値で、 _Depth_ と _Count_ を指定することで、文書内の表を厳密に指定することができます。\n"
 "\n"
-"_Attributes_ でのマッチングは、 html の <table> タグにおける属性 (アトリ"
-"ビュート)を基準にして行なうものです。たとえば枠線の幅や背景色などです。\n"
+"_Attributes_ でのマッチングは、 html の <table> タグにおける属性 "
+"(アトリビュート)を基準にして行なうものです。たとえば枠線の幅や背景色などです。\n"
 "\n"
-"_Headers_, _Depth_, _Count_, _Attributes_ の各指定は、組み合わせて指定するこ"
-"ともできます。たとえば _Depth_ だけを指定した場合は、その深さの表全てを対象と"
-"することになります (ただしそれぞれの親となる表が文書内でどこにあるのかをきち"
-"んと把握しておく必要があります) 。また _Count_ だけを指定した場合、全ての深さ"
-"にある表のうち、その位置 (順番) のものだけが返されます。 _Headers_ だけを指定"
-"した場合も同様で、指定した列ヘッダのものだけを取り出します。 _Headers_, "
-"_Depth_, _Count_, _Attributes_ を組み合わせて指定すると複数の組み合わせ条件と"
-"なり、指定した条件全てに該当するものだけが返されます。\n"
+"_Headers_, _Depth_, _Count_, _Attributes_ の各指定は、組み合わせて指定することもできます。たとえば "
+"_Depth_ だけを指定した場合は、その深さの表全てを対象とすることになります "
+"(ただしそれぞれの親となる表が文書内でどこにあるのかをきちんと把握しておく必要があります) 。また _Count_ "
+"だけを指定した場合、全ての深さにある表のうち、その位置 (順番) のものだけが返されます。 _Headers_ "
+"だけを指定した場合も同様で、指定した列ヘッダのものだけを取り出します。 _Headers_, _Depth_, _Count_, "
+"_Attributes_ を組み合わせて指定すると複数の組み合わせ条件となり、指定した条件全てに該当するものだけが返されます。\n"
 "\n"
-"逆に _Headers_, _Depth_, _Count_, _Attributes_ のいずれも指定しない場合は、全"
-"ての表が該当することになります。\n"
+"逆に _Headers_, _Depth_, _Count_, _Attributes_ のいずれも指定しない場合は、全ての表が該当することになります。"
 "\n"
-"表からテキストだけを取り出す場合、既定ではテキストは HTML::Entities でデコー"
-"ドされます。これは _decode_ パラメータを 0 にすることで無効化できます。"
+"\n"
+"表からテキストだけを取り出す場合、既定ではテキストは HTML::Entities でデコードされます。これは _decode_ パラメータを 0 "
+"にすることで無効化できます。"
 
 #. tumbleweed/perl-HTML-Tagset/summary
 #. leap/perl-HTML-Tagset/summary
@@ -17256,9 +17372,8 @@ msgstr ""
 
 #. tumbleweed/perl-HTTP-Body/summary
 #. leap/perl-HTTP-Body/summary
-#, fuzzy
 msgid "HTTP Body Parser"
-msgstr "HTTP cookie jar"
+msgstr "HTTP ボディパーサ"
 
 #. tumbleweed/perl-HTTP-Body/description
 #. leap/perl-HTTP-Body/description
@@ -17271,6 +17386,13 @@ msgid ""
 "\n"
 "It is currently used by the Catalyst manpage to parse POST bodies."
 msgstr ""
+"HTTP::Body は HTTP POST データのチャンクを処理するモジュールです。 application/octet-stream, "
+"application/json, application/x-www-form-urlencoded, multipart/form-data "
+"の各形式に対応しています。\n"
+"\n"
+"チャンク化されたボディにも対応していますが、この場合は new() に対して長さの値を指定しないでください。\n"
+"\n"
+"現時点では、 Catalyst が POST ボディを処理する際に使用しています。"
 
 #. tumbleweed/perl-HTTP-Cookies/summary
 #. leap/perl-HTTP-Cookies/summary
@@ -17378,7 +17500,7 @@ msgstr ""
 #. tumbleweed/perl-HTTP-Headers-ActionPack/summary
 #. leap/perl-HTTP-Headers-ActionPack/summary
 msgid "HTTP Action, Adventure and Excitement"
-msgstr ""
+msgstr "HTTP アクションパック"
 
 #. tumbleweed/perl-HTTP-Headers-ActionPack/description
 #. leap/perl-HTTP-Headers-ActionPack/description
@@ -17393,12 +17515,17 @@ msgid ""
 "other classes in this module. It contains a number of convenience methods to "
 "help make common cases easy to write."
 msgstr ""
+"このモジュールは、複雑な HTTP ヘッダタイプの相互変換のためのモジュールです。多くの場合、値は単純な文字列ですが、場合によっては多数の情報がエンコード"
+"された複雑な値である場合もあります。このモジュールは、互換性のあるオブジェクト (下記に一覧を示します) で 'inflate' "
+"を呼び出すだけで、簡単にヘッダを処理し、分析できる機能を提供します。\n"
+"\n"
+"このトップレベルのクラスは基本的に Factory で、このモジュールの他クラスのインスタンスを作成する際に利用します。このほか、多くの用途で書きやすくな"
+"るようにするための便利メソッドも多数用意されています。"
 
 #. tumbleweed/perl-HTTP-Headers-Fast/summary
 #. leap/perl-HTTP-Headers-Fast/summary
-#, fuzzy
 msgid "Faster Implementation of Http::Headers"
-msgstr "SOAP の Apache 実装"
+msgstr "Http::Headers のより高速な実装"
 
 #. tumbleweed/perl-HTTP-Headers-Fast/description
 #. leap/perl-HTTP-Headers-Fast/description
@@ -17407,12 +17534,14 @@ msgid ""
 "\n"
 "The interface is same as HTTP::Headers."
 msgstr ""
+"HTTP::Headers::Fast は HTTP ヘッダの処理や書き出しに対応した Perl クラスです。\n"
+"\n"
+"インターフェイスは HTTP::Headers と同じです。"
 
 #. tumbleweed/perl-HTTP-Lite/summary
 #. leap/perl-HTTP-Lite/summary
-#, fuzzy
 msgid "Lightweight HTTP implementation"
-msgstr "軽量 OSC 実装"
+msgstr "軽量 HTTP 実装"
 
 #. tumbleweed/perl-HTTP-Lite/description
 #. leap/perl-HTTP-Lite/description
@@ -17444,6 +17573,27 @@ msgid ""
 "package than HTTP::Lite, and should be used instead of HTTP::Lite whenever "
 "possible."
 msgstr ""
+"*注意:* このモジュールを使用する前に、まずは HTTP::Tiny や LWP をご検討ください。\n"
+"\n"
+"HTTP::Lite は Perl 向けの単独型かつ軽量の HTTP/1.1 実装です。すべての機能がそろった LWP "
+"モジュールの代替となることは目指しておらず、 HTTP "
+"に対応するにあたって最小限のモジュールをインストールするだけで済ませたいような状況で使用するみことを目指しているものです。このほか、 LWP "
+"ではプロセッサの速度が遅くて CPU のオーパヘッドが大きく、実用に耐えないような場合などにも適切です。 HTTP::Lite は LWP "
+"よりも比較的高速に動作します。\n"
+"\n"
+"HTTP::Lite は CGI (もしくは mod_perl) プログラムで便利な仕組みであるほか、 HTTP の GET や POST "
+"の機能のみが必要な巨大ぱっヶー時で、配布物に同梱したい用途などにも適切です。\n"
+"\n"
+"HTTP::Lite は基本手無き POST/GET 操作のみに対応しています。バージョン 0.2.1 では HTTP::Lite は HTTP/1.1 "
+"と Host ヘッダに対応し、名前ベースの仮想ホストとの間で通信を行なう際の要件に対応しています。また、 HTTP::Lite "
+"はプロキシにも対応しています。\n"
+"\n"
+"HTTP::LIte 2.0.0 "
+"では、データが届いた際に処理を行なうためのコールバックにも対応しています。これはメモリを消費することなく、巨大なデータを処理する必要がある環境に便利です。"
+"\n"
+"\n"
+"FTP や HTTPS など、より高度な機能を必要とする場合は、 libwwwperl (LWP) をご覧ください。 LWP　は HTTP::Lite "
+"と比べると比較的良好かつ広範囲に対応するモジュールで、可能であれば HTTP::Lite ではなく、 LWP のほうがお勧めです。"
 
 #. tumbleweed/perl-HTTP-Message/summary
 #. leap/perl-HTTP-Message/summary
@@ -18129,19 +18279,19 @@ msgstr ""
 #. tumbleweed/perl-HTTP-Request-AsCGI/summary
 #. leap/perl-HTTP-Request-AsCGI/summary
 msgid "Set up a CGI environment from an HTTP::Request"
-msgstr ""
+msgstr "HTTP::Request からの CGI 環境のセットアップ"
 
 #. tumbleweed/perl-HTTP-Request-AsCGI/description
 #. leap/perl-HTTP-Request-AsCGI/description
 msgid ""
 "Provides a convenient way of setting up an CGI environment from an HTTP::"
 "Request."
-msgstr ""
+msgstr "HTTP::Request から CGI 環境をセットするのに必要な、便利な機能を提供します。"
 
 #. tumbleweed/perl-HTTP-Server-Simple/summary
 #. leap/perl-HTTP-Server-Simple/summary
 msgid "Lightweight HTTP server"
-msgstr ""
+msgstr "軽量 HTTP サーバ"
 
 #. tumbleweed/perl-HTTP-Server-Simple/description
 #. leap/perl-HTTP-Server-Simple/description
@@ -18172,11 +18322,30 @@ msgid ""
 "it ignores the signal. Otherwise, a client closing the connection early   "
 "could kill the server."
 msgstr ""
+"これは単独で動作するシンプルな HTTP サーバです。既定ではスレッドを使用せず、かつ fork も行ないません。しかしながら、単独の Web "
+"ベースのアプリケーションを構築したり、 CGI を利用したりするのに便利なフロントエンドです。\n"
+"\n"
+"fork や pre-fork のほか、よく複雑なサーバタイプを構築したい場合は、 Net::Server クラスを利用することもできます。詳しくは /"
+"net_server をお読みください。\n"
+"\n"
+"既定では、サーバは下記のシグナルをトラップします:\n"
+"\n"
+"* HUP\n"
+"\n"
+"  サーバを 'kill -HUP' すると、現在処理中のリクエストを処理してから、再起動のために 'restart' メソッドが呼び出されます。ただし、"
+" SIGHUP 時に再起動するために、 HTTP::Server::Simple では起動時にのみ SIGHUP ハンドラを設定しています。"
+"お使いのリクエスト処理コードが fork を利用している場合は、これをリセットする必要があることに注意してください。リセットを行なわないと、"
+"誰かがスクリプトに対して SIGHUP を送った場合 (例: \"kill -HUP <script>\") に、予期しない結果が発生します。\n"
+"\n"
+"* PIPE\n"
+"\n"
+"  サーバからクライアントに対する出力で broken pipe "
+"を検出しても、シグナルは無視されます。無視しておかないと、接続を閉じるだけでサーバが終了してしまいます。"
 
 #. tumbleweed/perl-HTTP-Thin/summary
 #. leap/perl-HTTP-Thin/summary
 msgid "A Thin Wrapper around HTTP::Tiny to play nice with HTTP::Message"
-msgstr ""
+msgstr "HTTP::Message をよりよく処理するための HTTP::Tiny に対する薄いラッパー"
 
 #. tumbleweed/perl-HTTP-Thin/description
 #. leap/perl-HTTP-Thin/description
@@ -18192,11 +18361,18 @@ msgid ""
 "projects already consume the the HTTP::Message manpage objects. This is just "
 "glue code doing what it does best."
 msgstr ""
+"警告: このモジュールは、ごく基本的なテストを除いて検証が行なわれていません。実装は十分にシンプルですが、うまく動作するかどうかは不透明で、特にお子様のご"
+"利用はおやめください。\n"
+"\n"
+"'HTTP::Thin' は HTTP::Tiny に対する薄いラッパーで、 HTTP::Request "
+"オブジェクト内で渡すことができる機能を追加しているほか、 HTTP::Response オブジェクトを取り出す機能も追加されています。 HTTP::"
+"Tiny のメンテナによると、互換性を維持するためのメンテナンスは予定されていないが、他の多数のオブジェクト側で HTTP::Message "
+"オブジェクトを利用できるので、そちらを参照してほしいとのことです。これは、単純なグルーコードです。"
 
 #. tumbleweed/perl-HTTP-Tiny/summary
 #. leap/perl-HTTP-Tiny/summary
 msgid "Small, Simple, Correct Http/1.1 Client"
-msgstr ""
+msgstr "小さくてシンプル、かつ正しい HTTP/1.1 クライアント"
 
 #. tumbleweed/perl-HTTP-Tiny/description
 #. leap/perl-HTTP-Tiny/description
@@ -18212,11 +18388,21 @@ msgid ""
 "\n"
 "Cookie support requires HTTP::CookieJar or an equivalent class."
 msgstr ""
+"このモジュールは非常にシンプルな HTTP/1.1 クライアントです。 LWP::UserAgent "
+"のような巨大なフレームワークのオーパヘッドを避け、シンプルなリクエストを実現できるようになっています。\n"
+"\n"
+"HTTP::Lite よりはより正しく、かつ完全な機能を実現しています。プロキシや転送にも対応しているほか、 EINTR "
+"後の再開も正しく処理することができます。\n"
+"\n"
+"IO::Socket::IP バージョン 0.25 もしくはそれ以降のバージョンがインストールされている場合、 HTTP::Tiny は IPv4 と "
+"IPv6 の両方を透過的にサポートするため、IO::Socket::INET ではなく IO::Socket::IP を使用します。\n"
+"\n"
+"Cookie への対応は、 HTTP::CookieJar もしくはそれに等価なクラスが必要です。"
 
 #. tumbleweed/perl-Hash-Merge/summary
 #. leap/perl-Hash-Merge/summary
 msgid "Merges arbitrarily deep hashes into a single hash"
-msgstr ""
+msgstr "任意の複数のハッシュを単一のハッシュに置き換えるモジュール"
 
 #. tumbleweed/perl-Hash-Merge/description
 #. leap/perl-Hash-Merge/description
@@ -18239,11 +18425,22 @@ msgid ""
 "values when keys are conflicting, Hash::Merge provides several preset "
 "methods for your convenience, as well as a way to define you own."
 msgstr ""
+"Hash::Merge は 2 つの深いハッシュを 1 つに合成します。これは、どのレベルでも、一方のハッシュから他方のハッシュに対して、矛盾のないキー／"
+"値のペアを追加し、何らかのキー／値の矛盾が発生した場合に、特定のルールセットに従うというモジュールです。ハッシュは再帰的に追跡することができるため、同じレ"
+"ベルで入れ子になった深いハッシュ同士を、親のハッシュを合成して実現することができます。 "
+"*ただし、自己参照型のハッシュや、再帰的な参照については、このメソッドで正しく処理することができません。 *\n"
+"\n"
+"ハッシュ内の値は配列への参照かハッシュの参照、もしくは単にスカラー値として考えることができます。既定では、合成関数に渡されたデータは Clone "
+"モジュールで複製されます; しかしながら、必要であればこの動作を変更して、できる限り元の値と同じだけ多く変更することもできます ("
+"'set_clone_behavior' をご覧ください) 。\n"
+"\n"
+"キーが矛盾した場合の値の合成を行なうにあたって、この方法には様々なやり方があることから、 Hash::Merge "
+"では利便性のためいくつかの方法を提供しています。もちろん独自の方法を指定することもできます。"
 
 #. tumbleweed/perl-Hash-Merge-Simple/summary
 #. leap/perl-Hash-Merge-Simple/summary
 msgid "Recursively merge two or more hashes, simply"
-msgstr ""
+msgstr "2 つもしくはそれ以上のハッシュのシンプルな再帰的合成"
 
 #. tumbleweed/perl-Hash-Merge-Simple/description
 #. leap/perl-Hash-Merge-Simple/description
@@ -18258,12 +18455,16 @@ msgid ""
 "This code was pretty much taken straight from the Catalyst::Utils manpage, "
 "and modified to handle more than 2 hashes at the same time."
 msgstr ""
+"Hash::Merge::Simple は 2 つまたはそれ以上のハッシュを再帰的に合成し、新しいハッシュ参照として返します。合成関数は、一方と他方のハッ"
+"シュ内の同じノードに属するハッシュを展開して合成しますが、配列やオブジェクトなどは組み合わせたりはしないようになっています。衝突が発生した場合は一番右側の"
+"ハッシュがもっとも優先され、左側のハッシュを置き換えます。\n"
+"\n"
+"このコードは Catalyst:Utils の考え方を直接取り入れていて、同時に 2 つ以上のハッシュを処理できるように修正されています。"
 
 #. tumbleweed/perl-Hash-MoreUtils/summary
 #. leap/perl-Hash-MoreUtils/summary
-#, fuzzy
 msgid "Provide the stuff missing in Hash::Util"
-msgstr "List::Util では提供されていない機能の提供"
+msgstr "Hash::Util で提供されていない機能の提供"
 
 #. tumbleweed/perl-Hash-MoreUtils/description
 #. leap/perl-Hash-MoreUtils/description
@@ -18271,11 +18472,12 @@ msgid ""
 "Similar to 'List::MoreUtils', 'Hash::MoreUtils' contains trivial but "
 "commonly-used functionality for hashes."
 msgstr ""
+"'List::MoreUtils' と同様に、 'Hash::MoreUtils' では些細なものながらよく使用されるハッシュ向け機能が含まれています。"
 
 #. tumbleweed/perl-Hash-MultiValue/summary
 #. leap/perl-Hash-MultiValue/summary
 msgid "Store multiple values per key"
-msgstr ""
+msgstr "キーごとの多値の格納"
 
 #. tumbleweed/perl-Hash-MultiValue/description
 #. leap/perl-Hash-MultiValue/description
@@ -18283,11 +18485,13 @@ msgid ""
 "Hash::MultiValue is an object (and a plain hash reference) that may contain "
 "multiple values per key, inspired by MultiDict of WebOb."
 msgstr ""
+"Hash::MultiValue はキーごとに複数の値を含めることのできるオブジェクト (および単純なハッシュ参照) です。 WebOb の "
+"MultiDict にヒントを得て作られています。"
 
 #. tumbleweed/perl-Hash-Util-FieldHash-Compat/summary
 #. leap/perl-Hash-Util-FieldHash-Compat/summary
 msgid "Use Hash::Util::FieldHash or ties, depending on availability"
-msgstr ""
+msgstr "状況に応じて Hash::Util::FieldHash またはタイを使用するモジュール"
 
 #. tumbleweed/perl-Hash-Util-FieldHash-Compat/description
 #. leap/perl-Hash-Util-FieldHash-Compat/description
@@ -18302,11 +18506,19 @@ msgid ""
 "\n"
 "See Hash::Util::FieldHash for all the details of the API."
 msgstr ""
+"古いバージョンの Perl に対しては、このモジュールは perltie を利用して Hash::Util::FieldHash 互換の API "
+"を提供する仕組みです。 Hash::Util::FieldHash が利用できる場合は、そちらを利用します。\n"
+"\n"
+"この方法により、フィールドハッシュが必要なコードは、 Perl 5.10 "
+"もしくはそれ以降のバージョンでこのモジュールを利用することで、高速かつ屈強なフィールドハッシュを利用できるようになりますが、古いバージョンの Perl "
+"でも動作するようにすることができます。\n"
+"\n"
+"API の詳細について、詳しくは Hash::Util::FieldHash をお読みください。"
 
 #. tumbleweed/perl-Hook-LexWrap/summary
 #. leap/perl-Hook-LexWrap/summary
 msgid "Lexically scoped subroutine wrappers"
-msgstr ""
+msgstr "文法スコープ付きのサブルーチンラッパー"
 
 #. tumbleweed/perl-Hook-LexWrap/description
 #. leap/perl-Hook-LexWrap/description
@@ -18355,11 +18567,50 @@ msgid ""
 "The pre- and post-wrappers and the original subroutine also all see the same "
 "(correct!) values from 'caller' and 'wantarray'."
 msgstr ""
+"Hook::LexWrap は既存のサブルーチンに対して、事前もしくは事後 (もしくはその両方) "
+"に対して適用されるラッパーをインストールすることができる仕組みです。同様の機能を提供する他のモジュール (Hook::PreAndPost や "
+"Hook::WrapSub) とは異なり、 Hook:LexWrap はラッパーを実装しているため、ラップされたサブルーチン内で標準の 'caller' "
+"関数が正しく動作します。\n"
+"\n"
+"事前ラッパーをインストールするには、下記のように記述します:\n"
+"\n"
+"        use Hook::LexWrap;\n"
+"\n"
+"        wrap 'subroutine_name', pre => \\&some_other_sub;\n"
+"\n"
+"   \n"
+"\n"
+"'wrap' に対する最初のパラメータには、ラッピングを実施したいサブルーチンの名前を文字列で指定します (タイプグロブもしくは参照でもかまいません) "
+"。サブルーチンは修飾済みであってもかまいませんが、サブルーチン自体がすでに存在していなければなりません。 2 "
+"番目のパラメータは適用するラッパーの種類を指定します。具体的には \"pre\" (事前) または \"post\" (事後) を指定します。 3 "
+"番目のパラメータは、ラッパーを実装するサブルーチンへの参照を指定します。\n"
+"\n"
+"事後ラッパーをインストールするには、下記のように記述します:\n"
+"\n"
+"        wrap 'subroutine_name', post => \\&yet_another_sub;\n"
+"\n"
+"   \n"
+"\n"
+"両方を一括でインストールするには、下記のように記述します:\n"
+"\n"
+"        wrap 'subroutine_name',              pre  => \\"
+"&some_other_sub,              post => \\&yet_another_sub;\n"
+"\n"
+"もしくは下記のように記述します:\n"
+"\n"
+"        wrap *subroutine_name,              post => \\&yet_another_sub,  # "
+"order in which wrappers are              pre  => \\&some_other_sub;   # "
+"specified doesn't matter\n"
+"\n"
+"ラッパーをインストールすると、事前および事後のラッパーが、それぞれサブルーチンの呼び出し前後に呼び出されるようになります。また、パラメータリストは同じもの"
+"が渡されます。\n"
+"\n"
+"事前および事後のラッパー、および元のサブルーチンでは、 'caller', 'wantarray' からの値が同じに (かつ正しく！) なります。"
 
 #. tumbleweed/perl-IO-All/summary
 #. leap/perl-IO-All/summary
 msgid "IO::All to Larry Wall!"
-msgstr ""
+msgstr "IO::All to Larry Wall!"
 
 #. tumbleweed/perl-IO-All/description
 #. leap/perl-IO-All/description
@@ -18396,11 +18647,36 @@ msgid ""
 "\n"
 "And that is a *good thing*!"
 msgstr ""
+"IO::All は最良の Perl IO モジュール群を 1 つの気の利いたオブジェクト指向のインターフェイスにまとめたもので、日々の Perl IO "
+"処理を非常に簡単に行なうことができるようにするものです。このモジュールは、 IO::All オブジェクトを返す 'io' "
+"と呼ばれる単一の関数を公開し、このオブジェクトからすべてのことを実施することができます！\n"
+"\n"
+"IO::All オブジェクトはそれぞれ IO::File, IO::Dir, IO::Socket, Tie::File, File::Spec, "
+"File::Path, File::MimeInfo, File::ReadBackwards のほか、 DBM と MLDBM "
+"に対する代理モジュールとしても動作します。これらのクラス内や IO::Handle (派生元) "
+"にあるほとんどのメソッドを利用することができます。このほか、 IO::All にはファイルの stat "
+"や操作を行なうための慣用的なメソッドも多数用意されています。\n"
+"\n"
+"IO:ALl はプラグイン型のモジュールで、 IO::All::LWP や IO::All::Mailto "
+"のような追加機能を含むモジュールも用意されています。また、オプションでそれぞれの IO:All "
+"オブジェクトは自分自身に結びつけることもできます。これにより、ほとんどの IO 内蔵関数を利用することができるようになります: readline, '<>"
+"', getc, print, printf, syswrite, sysread, close\n"
+"\n"
+"IO:All の魔法のような使い心地としてあげられるのは、自動的にファイルやディレクトリ、ソケットなどの IO を、自動的に開く (および閉じる) "
+"ことができる点です。利用情報から自動的に判断する仕組みであるため、モードを指定する必要もありません。たとば下記のようなスクリプトがあったとします:\n"
+"\n"
+"    open STUFF, '<', './mystuff'       or die \"Can't open './mystuff' for "
+"input:\\n"
+"$!\";     local $/;     my $stuff = <STUFF>;     close STUFF;\n"
+"\n"
+"これを、単に下記のように記述することができます:\n"
+"\n"
+"    my $stuff < io './mystuff';"
 
 #. tumbleweed/perl-IO-Async/summary
 #. leap/perl-IO-Async/summary
 msgid "Asynchronous event-driven programming"
-msgstr ""
+msgstr "非同期のイベント駆動型プログラミング"
 
 #. tumbleweed/perl-IO-Async/description
 #. leap/perl-IO-Async/description
@@ -18416,11 +18692,17 @@ msgid ""
 "Because there are a lot of classes in this collection, the following "
 "overview gives a brief description of each."
 msgstr ""
+"このモジュールのコレクションは、プログラムにタイしてファイルハンドルの非同期処理を記述できるようにするためのものです。これを利用する典型的なプログラムでは"
+"、 IO::Async::Loop にタイする単一のサブクラスを用意して、プログラム側で必要となる実際の I/O "
+"処理を実施する他のオブジェクトのコンテナとして、動作させる方法があります。 IO "
+"ハンドルと同様に、ループではタイマーやシグナルに対応しているほか、これらの基本パーツ上に高レベルな機能も追加されています。\n"
+"\n"
+"このコレクションには多数のクラスが存在するしますので、詳しくは下記の概要をお読みください。"
 
 #. tumbleweed/perl-IO-CaptureOutput/summary
 #. leap/perl-IO-CaptureOutput/summary
 msgid "Capture STDOUT and STDERR from Perl code, subprocesses or XS"
-msgstr ""
+msgstr "Perl コードやサブプロセス、もしくは XS からの標準出力 (STDOUT) や標準エラー出力 (STDERR) のキャプチャ"
 
 #. tumbleweed/perl-IO-CaptureOutput/description
 msgid ""
@@ -18431,6 +18713,10 @@ msgid ""
 "subroutines, forked system calls (e.g. 'system()', 'fork()') and from XS or "
 "C modules."
 msgstr ""
+"*このモジュールは、もはやメンテナが推奨していません* - 代わりに Capture::Tiny をご覧ください。\n"
+"\n"
+"このモジュールは、 Perl のサブルーチンや fork されたシステムコール (例: 'system()', 'fork()') のほか、 XS や "
+"C モジュールからの標準出力 (STDOUT) および標準エラー出力 (STDERR) をキャプチャするためのルーチンを提供します。"
 
 #. tumbleweed/perl-IO-Digest/summary
 #. leap/perl-IO-Digest/summary
@@ -18438,16 +18724,13 @@ msgid "Calculate digests while reading or writing"
 msgstr "読み込み時や書き込み時にダイジェスト値を計算するモジュール"
 
 #. tumbleweed/perl-IO-Digest/description
-#, fuzzy
 msgid ""
 "This module allows you to calculate digests while reading or writing from/to "
 "file handles. This avoids having to reread the same content to compute the "
 "digests after having written a file."
 msgstr ""
-"このモジュールは、ファイルハンドルに対する読み込みや書き込みの際にダイジェス"
-"ト値を計算することができるものです。このモジュールを利用することで、ファイル"
-"への書き込み後に再度読み出しを行なってダイジェスト値を計算したりする手間を省"
-"くことができます。"
+"このモジュールは、ファイルハンドルに対する読み込みや書き込みの際にダイジェスト値を計算することができるものです。このモジュールを利用することで、ファイルへ"
+"の書き込み後に再度読み出しを行なってダイジェスト値を計算したりする手間を省くことができます。"
 
 #. tumbleweed/perl-IO-HTML/summary
 #. leap/perl-IO-HTML/summary
@@ -18538,7 +18821,7 @@ msgstr ""
 #. tumbleweed/perl-IO-Handle-Util/summary
 #. leap/perl-IO-Handle-Util/summary
 msgid "Functions for working with L<IO::Handle> like objects"
-msgstr ""
+msgstr "L<IO::Handle> のようなオブジェクトを処理する関数"
 
 #. tumbleweed/perl-IO-Handle-Util/description
 #. leap/perl-IO-Handle-Util/description
