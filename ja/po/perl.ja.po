@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-20 08:42+0000\n"
+"PO-Revision-Date: 2017-02-21 08:35+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -18828,13 +18828,12 @@ msgstr "L<IO::Handle> のようなオブジェクトを処理する関数"
 msgid ""
 "This module provides a number of helpful routines to manipulate or create "
 "the IO::Handle manpage like objects."
-msgstr ""
+msgstr "このモジュールは、 IO::Handle をオブジェクトのように操作したり、作成したりするための様々な便利ルーチンを提供しています。"
 
 #. tumbleweed/perl-IO-Interactive/summary
 #. leap/perl-IO-Interactive/summary
-#, fuzzy
 msgid "Utilities for interactive I/O"
-msgstr "GNU shar ユーティリティのユーザインターフェイステキスト"
+msgstr "対話型 I/O 向けユーティリティ"
 
 #. tumbleweed/perl-IO-Interactive/description
 #. leap/perl-IO-Interactive/description
@@ -18887,6 +18886,44 @@ msgid ""
 "A 'busy' block is therefore useful to prevent attempts at input when the "
 "program is busy at some non-interactive task."
 msgstr ""
+"このモジュールは、対話的なアプリケーションを開発しやすくするための 3 種類のユーティリティサブルーチンを提供しています。\n"
+"\n"
+"* 'is_interactive()'\n"
+"\n"
+"このサブルーチンは、 '*ARGV' と現在選択されているファイルハンドル (通常は '*STDOUT') が端末に接続されているかどうかを確認し、"
+"そうであれば true を返します。このテストは下記の方法よりも洗練された仕組みと考えることができます:\n"
+"\n"
+"    -t *ARGV && -t *STDOUT\n"
+"\n"
+"また、 '*ARGV' に対する魔法のような処理も含まれています。\n"
+"\n"
+"このほか、端末に (現在選択されているファイルハンドルではなく) ファイルハンドルを接続する必要がある場合は、 'is_interactive' "
+"に書き込み可能なファイルハンドルを指定することもできます。たとえば '*STDERR' などを接続することができます:\n"
+"\n"
+"    if ( is_interactive(*STDERR) ) {         carp $warning;     }\n"
+"\n"
+"* 'interactive()'\n"
+"\n"
+"このサブルーチンは、 'is_interactive' が true であった場合に、 '*STDOUT' を返します。 "
+"'is_interactive' が false であった場合は、何も表示しないファイルハンドルを返します。\n"
+"\n"
+"このサブルーチンは、アプリケーション側で対話処理が必要な場合にのみ出力するような仕組みを作るためのものです:\n"
+"\n"
+"    print {interactive} \"Please enter a value: \";     my $value = <>;\n"
+"\n"
+"このほか、端末に ('*STDOUT' ではなく) ファイルハンドルを接続する必要がある場合は、 'interactive' "
+"に書き込み可能なファイルハンドルを指定することもできます。たとえば、ここでも '*STDERR' などを接続することができます:\n"
+"\n"
+"    print {interactive(*STDERR)} $warning;\n"
+"\n"
+"* 'busy {...}'\n"
+"\n"
+"このサブルーチンはブロックを受け付ける仕組みで、 1 つのパラメータをとってブロックを実行します。ブロックが実行されている間、 '*ARGV' "
+"は一時的に、閉じられたファイルハンドルに置き換えられます。言い換えると、 'busy' 内のブロックでは、 '*ARGV' "
+"からの入力ができなくなります。これに加えて、 '*ARGV' を介して 'busy' ブロック内に入力を送信するような仕組みも遮られ、 '*"
+"STDERR' に警告メッセージが表示されるようになります。 'busy' が終了すると、遮られた入力を含むファイルハンドルを返します。\n"
+"\n"
+"'busy' ブロックは、何らかの非対話処理を実施する際、プログラム側にデータが入力できないようにするための仕組みです。"
 
 #. tumbleweed/perl-IO-Multiplex/summary
 #. leap/perl-IO-Multiplex/summary
@@ -18908,14 +18945,19 @@ msgid ""
 "Each file handle may also have a timer associated with it. A callback "
 "function is called when the timer expires."
 msgstr ""
+"このモジュールはオブジェクト指向の設計になっていて、指定したオブジェクトに対してメソッドを呼び出すことで、必要なイベントの通知を受け取ることができるように"
+"なります。オブジェクトを使用していない場合は、オブジェクトの参照ではなく '__PACKAGE__' を指定することもできます。\n"
+"\n"
+"各ファイルハンドルに対して 1 つのコールバックオブジェクトを設定できるほか、グローバルなコールバックオブジェクトも 1 "
+"つだけ設定することができます。おそらくはグローバルなコールバックオブジェクトではなく、ファイルハンドルごとのコールバックオブジェクトのほうが必要でしょう。"
+"\n"
+"\n"
+"各ファイルハンドルにはタイマーを関連づけることもできます。この場合、タイマーの期限が切れるとコールバック関数が呼び出されます。"
 
 #. tumbleweed/perl-IO-Pager/summary
 #. leap/perl-IO-Pager/summary
-#, fuzzy
 msgid "Select a pager and pipe text to it if destination is a TTY"
-msgstr ""
-"出力先が TTY であった場合にページャを選択し、オプションでパイプ出力するモ"
-"ジュール"
+msgstr "出力先が TTY であった場合にページャまたはパイプ出力を選択するモジュール"
 
 #. tumbleweed/perl-IO-Pager/description
 #. leap/perl-IO-Pager/description
@@ -18931,11 +18973,18 @@ msgid ""
 "of those outlined below from IO::Pager. For anything else, YMMV. See the "
 "appropriate subclass for implementation specific details."
 msgstr ""
+"IO::Pager は利用可能なページャを検出して、それを _PAGER_ 環境に設定します (詳しくは /NOTES をお読みください) 。また、 "
+"IO::Pager は IO::Pager::Buffered や IO::Pager::Unbuffered のような I/O "
+"オブジェクトを作成する際のファクトリとしても機能します。\n"
+"\n"
+"IO::Pager のサブクラスは、 _PAGER_ に指定したプログラムがファイルハンドルに出力するかどうかを、機械的に判断するよう設計されています。"
+"サブクラス側では必要な IO 処理メソッドを実装し、残りは IO::Pager "
+"からの継承で賄うこともできます。もちろんそれ以外の方法でもかまいません。実装に関する個別の詳細については、それぞれのサブクラスをご覧ください。"
 
 #. tumbleweed/perl-IO-Pipely/summary
 #. leap/perl-IO-Pipely/summary
 msgid "Portably create pipe() or pipe-like handles, one way or another."
-msgstr ""
+msgstr "一方向または双方向の pipe() またはパイプに似たハンドルを可搬性のある方法で作成するモジュール"
 
 #. tumbleweed/perl-IO-Pipely/description
 #. leap/perl-IO-Pipely/description
@@ -18960,6 +19009,21 @@ msgid ""
 "operating system's capabilities and the number of directions requested. The "
 "autodetection may be overridden by specifying a particular pipe type."
 msgstr ""
+"パイプはそれを作成する際に様々な方法があり、それらは互換性の無い仕組みであることから、トラブルの多い代物です。すべてのプラットフォームですべての方法に対応"
+"しているというわけでもありませんし。プラットフォームによっては互換性やバグなどの問題を抱えているものもあります。\n"
+"\n"
+"IO::Pipely は一方向または双方向のパイプ、もしくはパイプに似たソケットペアを、可搬性のある方法で作成する機能群を提供します。また、既知のプラット"
+"フォーム上の問題についても回避策が用意されているため、心配する必要もありません。\n"
+"\n"
+"もしも何らかの未知の問題に直面し、回避策が見つからない場合は、できる限り早急に問題を報告してください。\n"
+"\n"
+"IO::Pipely は現時点では pipe(), UNIX ドメインの socketpair(), 通常の IPv4 "
+"ローカルホストソケットにそれぞれ対応しています。それぞれのプラットフォームでも動作テストが行なわれていますが、すべてのテストを完了するには至っていません。"
+" INET ドメインの socketpair() や IPv6 ローカルホストソケットなど、その他の仕組みへの対応をご支援いただければと考えております。"
+"\n"
+"\n"
+"IO::Pipely は異なる種類のパイプやソケットを利用することができますが、これはオペレーティングシステムの機能と、リクエストの多さに依存して作られて"
+"います。自動検出を行なうこともできますが、特定のパイプタイプを指定することで、検出を上書きすることもできます。"
 
 #. tumbleweed/perl-IO-SessionData/summary
 #. leap/perl-IO-SessionData/summary
@@ -18991,21 +19055,20 @@ msgstr ""
 #. tumbleweed/perl-IO-Socket-PortState/summary
 #. leap/perl-IO-Socket-PortState/summary
 msgid "Perl extension for checking the open or closed status of a port."
-msgstr ""
+msgstr "ポートが開いているかどうかをチェックするための Perl 拡張"
 
 #. tumbleweed/perl-IO-Socket-PortState/description
 #. leap/perl-IO-Socket-PortState/description
 msgid ""
 "You can use it to check if a port is open or closed for a given host and "
 "protocol."
-msgstr ""
+msgstr "指定したホストとプロトコルで、ポートが開いているかどうかをチェックすることができます。"
 
 #. tumbleweed/perl-IO-Socket-SSL/summary
 msgid "Nearly transparent SSL encapsulation for IO::Socket::INET"
 msgstr "IO::Socket::INET に対するほぼ透過的な SSL カプセル化"
 
 #. tumbleweed/perl-IO-Socket-SSL/description
-#, fuzzy
 msgid ""
 "IO::Socket::SSL makes using SSL/TLS much easier by wrapping the necessary "
 "functionality into the familiar IO::Socket interface and providing secure "
@@ -19045,16 +19108,14 @@ msgid ""
 "\n"
 "* * IO::Socket::SSL::Utils - Useful functions for certificates etc"
 msgstr ""
-"IO::Socket::SSL はわかりやすい IO::Socket のインターフェイス内に SSL/TLS で必"
-"要な機能をラッピングして、可能な限り既定のままで機密な接続となるように作られ"
-"ている仕組みです。このモジュールを利用することで、既存のアプリケーションがブ"
-"ロッキング I/O を利用していて select や poll を利用していないような場合でも、"
-"手間をかけることなく SSL 機能を追加できるようになります。\n"
+"IO::Socket::SSL はわかりやすい IO::Socket のインターフェイス内に SSL/TLS "
+"で必要な機能をラッピングして、可能な限り既定のままで機密な接続となるように作られている仕組みです。このモジュールを利用することで、"
+"既存のアプリケーションがブロッキング I/O を利用していて select や poll を利用していないような場合でも、手間をかけることなく SSL "
+"機能を追加できるようになります。\n"
 "\n"
-"しかしながら、 SSL は複雑な仕組みです。既定の動作では不十分な場合は、多数のメ"
-"ソッドを呼び出して対応する必要があります。不注意によってセキュリティ上のバグ"
-"を作り出してしまったり、単にデバッグが難しかったりすることがありますので、下"
-"記のドキュメンテーションをよくお読みになり、学習することをお勧めします。\n"
+"しかしながら、 SSL は複雑な仕組みです。既定の動作では不十分な場合は、多数のメソッドを呼び出して対応する必要があります。不注意によってセキュリティ上の"
+"バグを作り出してしまったり、単にデバッグが難しかったりすることがありますので、下記のドキュメンテーションをよくお読みになり、学習することをお勧めします。"
+"\n"
 "\n"
 "ドキュメンテーションには下記の章があります:\n"
 "\n"
@@ -19085,7 +19146,7 @@ msgstr ""
 #. tumbleweed/perl-IO-Socket-Timeout/summary
 #. leap/perl-IO-Socket-Timeout/summary
 msgid "IO::Socket with read/write timeout"
-msgstr ""
+msgstr "読み書きのタイムアウト設定を行なうことのできる IO::Socket"
 
 #. tumbleweed/perl-IO-Socket-Timeout/description
 #. leap/perl-IO-Socket-Timeout/description
@@ -19097,6 +19158,11 @@ msgid ""
 "'IO::Socket' instance, or any 'IO::Socket::*' modules, like 'IO::Socket::"
 "INET'."
 msgstr ""
+"'IO::Socket' "
+"はソケットに対してタイムアウトを設定することのできる機能を提供しますが、これは接続時のタイムアウトだけで、読み書きのタイムアウトが含まれていません。\n"
+"\n"
+"このモジュールは、 'IO::Socket' のインスタンスや任意の 'IO::Socket::*' "
+"モジュールの読み書きの操作に対して、タイムアウトを設定することができるモジュールです。"
 
 #. tumbleweed/perl-IO-Stty/summary
 #. leap/perl-IO-Stty/summary
@@ -19111,12 +19177,12 @@ msgstr "これは PERL POSIX 準拠ライブラリです。"
 #. tumbleweed/perl-IO-TieCombine/summary
 #. leap/perl-IO-TieCombine/summary
 msgid "Produce Tied (and Other) Separate but Combined Variables"
-msgstr ""
+msgstr "分離されていながら結合もされているタイ (もしくは他の) 変数の生成"
 
 #. tumbleweed/perl-IO-TieCombine/description
 #. leap/perl-IO-TieCombine/description
 msgid "produce tied (and other) separate but combined variables"
-msgstr ""
+msgstr "分離されていながら結合もされているタイ (もしくは他の) 変数の生成"
 
 #. tumbleweed/perl-IO-stringy/summary
 #. tumbleweed/perl-IO-stringy/description
@@ -19128,7 +19194,7 @@ msgstr "IO::stringy Perl モジュール"
 #. tumbleweed/perl-IP-Country/summary
 #. leap/perl-IP-Country/summary
 msgid "Fast Lookup of Country Codes From Ip Addresses"
-msgstr ""
+msgstr "IP アドレスから国コードへの高速な検索"
 
 #. tumbleweed/perl-IP-Country/description
 #. leap/perl-IP-Country/description
@@ -19145,6 +19211,13 @@ msgid ""
 "herself, this is probably good enough for most log analysis applications, "
 "and under test has proved to be as accurate as reverse-DNS and WHOIS lookup."
 msgstr ""
+"IP アドレスだけを利用して国を判別するのは難しい作業です。 IP "
+"アドレスからドメイン名を参照することができる仕組みを利用することで、ある程度の判断はできますが、多くの IP アドレスからの参照は国に結びつかず、"
+"もっともよくある汎用ドメイン名 (.com) になってしまい、国を判別することができません。\n"
+"\n"
+"このモジュールにはデータベースが同梱されていて、様々な IP アドレスがどの国のものであるのかを示しています。国からの割り当ては巨大なプロバイダに対しての"
+"み行なわれ、個人まではわかりません。ですが、ログ分析アプリケーションに対しては十分な情報源となります。また、テストの結果によると、 DNS の逆参照や "
+"WHOIS の参照と同等に正確であることが示されています。"
 
 #. tumbleweed/perl-IPC-Run/summary
 #. leap/perl-IPC-Run/summary
@@ -19174,9 +19247,8 @@ msgstr ""
 
 #. tumbleweed/perl-IPC-Run3/summary
 #. leap/perl-IPC-Run3/summary
-#, fuzzy
 msgid "Run a Subprocess with Input/Ouput Redirection"
-msgstr "入出力の転送機能付きサブプロセス実行"
+msgstr "入出力の転送機能付きのサブプロセス実行モジュール"
 
 #. tumbleweed/perl-IPC-Run3/description
 #. leap/perl-IPC-Run3/description
@@ -19202,7 +19274,7 @@ msgstr ""
 #. tumbleweed/perl-IPC-System-Simple/summary
 #. leap/perl-IPC-System-Simple/summary
 msgid "Run commands simply, with detailed diagnostics"
-msgstr ""
+msgstr "詳細な解析機能のあるシンプルなコマンド実行"
 
 #. tumbleweed/perl-IPC-System-Simple/description
 #. leap/perl-IPC-System-Simple/description
@@ -19238,12 +19310,36 @@ msgid ""
 "specify which exit values are acceptable, trap errors, or process "
 "diagnostics, then read on!"
 msgstr ""
+"Perl の内蔵関数 'system()' は簡単に使うことのできるものですが、その成功を判断するのは _難しい_ ものです。コマンドによっては '$"
+"?' を正しく設定しないものもありますし、たとえ正しく設定するプログラムであったとしても、エラー時にエラーの文字列を処理するのは面倒です。\n"
+"\n"
+"'IPC::System::Simple' "
+"は、外部のプログラムを呼び出す際の面倒な手間を省きます。面倒なことをしたくないのであれば、たとえば下記のように記述することができます:\n"
+"\n"
+"    use IPC::System::Simple qw(system);\n"
+"\n"
+"上記を記述することにより、 'system' コマンドが成功したかどうか (コマンドが終了し、かつ返り値が 0 であったかどうか) "
+"や、饒舌なエラーメッセージが出力されて終了したかどうかを調べることができます。\n"
+"\n"
+"'IPC::System::Simple' モジュールでは、 Perl "
+"のバッククオート演算子の代替となる機能も用意されています。単純に下記のように記述するだけで利用することができます:\n"
+"\n"
+"    use IPC::System::Simple qw(capture);\n"
+"\n"
+"あとはバッククオートを利用していた箇所で、 /capture() コマンドを利用するだけです。エラーが発生した場合は、何が悪かったのかを示す詳細な説明が表"
+"示されて終了します。このほかにも、シェル無しでバッククオートを実行する場合は、 'capturex()' を利用することができます:\n"
+"\n"
+"    use IPC::System::Simple qw(capturex);\n"
+"\n"
+"    my $result = capturex($command, @args);\n"
+"\n"
+"終了コードが正常な値かどうかや、エラーの捕捉、およびプロセスの分析機能など、基本的なインターフェイス以上の機能も用意されています。詳しくは同梱のマニュアル"
+"をお読みください！"
 
 #. tumbleweed/perl-IRI/summary
 #. leap/perl-IRI/summary
-#, fuzzy
 msgid "Internationalized Resource Identifiers"
-msgstr "国際化ユーティリティ"
+msgstr "国際化資源識別子 (IRI)"
 
 #. tumbleweed/perl-IRI/description
 #. leap/perl-IRI/description
@@ -19252,12 +19348,13 @@ msgid ""
 "Resource Identifiers (IRIs) as defined by http://www.ietf.org/rfc/rfc3987."
 "txt and supports their parsing, serializing, and base resolution."
 msgstr ""
+"IRI モジュールは、 http://www.ietf.org/rfc/rfc3987.txt で規定されている国際化資源識別子 (IRI) "
+"向けのオブジェクト表記で、  IRI の処理やシリアライズ、および基本的な解決機能などを提供しています。"
 
 #. tumbleweed/perl-Ima-DBI/summary
 #. leap/perl-Ima-DBI/summary
-#, fuzzy
 msgid "Database connection caching and organization"
-msgstr "Mono 向けデータベース接続"
+msgstr "データベース接続のキャッシュおよび整理"
 
 #. tumbleweed/perl-Ima-DBI/description
 #. leap/perl-Ima-DBI/description
@@ -19279,6 +19376,19 @@ msgid ""
 "techniques. Ima::DBI is the culmination of all this, put into a nice(?), "
 "clean(?) class to be inherited from."
 msgstr ""
+"Ima::DBI は、 (個別のオブジェクトではなく) お使いのクラス内で DBI と SQL "
+"情報を利用し、データベースへの接続やステートメントハンドルを整理し、キャッシュの利用を促進することで、より効率的な利用を目指すものです。この仕組みにより、"
+"たった 1 つのオブジェクトでも DBI ハンドルへの影響を心配することなく、データベースへの問い合わせを行なうことができます。\n"
+"\n"
+"たとえば私の経験してきた限りでは、 DBI "
+"を利用する巨大なプログラムで、重複してデータベースハンドルを開いていないかどうかを確認する処理を書くのは面倒だったりしますし、サブルーチンを通して "
+"prepare/execute/finish のルートが正しいかどうかを確認するのも面倒でした。新しい DBI->connect_cached と "
+"DBI->prepare_cached "
+"を利用することで、これらの面倒事のほとんどに対応することができます。もちろんデータソースやユーザ名、パスワードなどの情報は従来通り設定することができます。"
+"\n"
+"\n"
+"元々は DBI のヘルパールーチンとして小さなライブラリでしたが、 Ima::DBI はこれらのサブルーチンの筆頭となるもので、派生可能なわかりやすく "
+"(?) クリーンな (?) クラスになっています。"
 
 #. tumbleweed/perl-Image-ExifTool/summary
 #. leap/perl-Image-ExifTool/summary
@@ -19287,7 +19397,6 @@ msgstr "メタデータを読み書きする Perl モジュール"
 
 #. tumbleweed/perl-Image-ExifTool/description
 #. leap/perl-Image-ExifTool/description
-#, fuzzy
 msgid ""
 "ExifTool is a customisable set of Perl modules plus a full-featured "
 "application for reading and writing meta information in a wide variety of "
@@ -19296,27 +19405,23 @@ msgid ""
 "Kodak, Leaf, Minolta/Konica-Minolta, Nikon, Olympus/Epson, Panasonic/Leica, "
 "Pentax/Asahi, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony."
 msgstr ""
-"ExifTool はすべての機能が装備された、各種ファイル対応のメタデータを読み書きす"
-"るアプリケーションです。デジタルカメラにおける製造元固有の情報にも対応してい"
-"て、たとえばキヤノン, カシオ, 富士フイルム, GE, HP, JVC／ビクター, コダック, "
-"Leaf, ミノルタ／コニカミノルタ, ニコン, オリンパス／エプソン, パナソニック／"
-"ライカ, ペンタックス／旭光学, Reconyx, リコー, サムスン, サンヨー, Sigma/"
-"Foveon, SONY などに対応しています。"
+"ExifTool "
+"はすべての機能が装備された、各種ファイル対応のメタデータを読み書きするアプリケーションです。デジタルカメラにおける製造元固有の情報にも対応していて、"
+"たとえばキヤノン, カシオ, 富士フイルム, GE, HP, JVC／ビクター, コダック, Leaf, ミノルタ／コニカミノルタ, ニコン, "
+"オリンパス／エプソン, パナソニック／ライカ, ペンタックス／旭光学, Reconyx, リコー, サムスン, サンヨー, Sigma/Foveon, "
+"SONY などに対応しています。"
 
 #. tumbleweed/perl-Image-Info/summary
 #. leap/perl-Image-Info/summary
-#, fuzzy
 msgid "Extract meta information from image files"
-msgstr "Macintosh BinHex ファイルからのデータ抽出"
+msgstr "画像ファイルからのメタ情報抽出"
 
 #. tumbleweed/perl-Image-Info/description
 #. leap/perl-Image-Info/description
-#, fuzzy
 msgid ""
 "This module provide functions to extract various kinds of meta information "
 "from image files."
-msgstr ""
-"このモジュールは、時間範囲を曖昧な形で／正確な形で表現する機能を提供します。"
+msgstr "このモジュールは、画像ファイルから様々な種類のメタ情報を抽出する関数を提供します。"
 
 #. tumbleweed/perl-Image-Size/summary
 #. leap/perl-Image-Size/summary
@@ -19341,7 +19446,7 @@ msgstr ""
 #. tumbleweed/perl-Import-Into/summary
 #. leap/perl-Import-Into/summary
 msgid "Import packages into other packages"
-msgstr ""
+msgstr "他のパッケージへのパッケージの取り込み"
 
 #. tumbleweed/perl-Import-Into/description
 #. leap/perl-Import-Into/description
@@ -19356,6 +19461,13 @@ msgid ""
 "\n"
 "'Import::Into' provides global methods to make this painless."
 msgstr ""
+"exporter を作成するのは苦痛を伴います。人によって Exporter, Sub::Exporter, Moose::Exporter, "
+"Exporter::Declare など、様々なモジュールを使っていて、場合によってはプラグマを利用したりもしています。\n"
+"\n"
+"どこかの誰かのコードをエクスポートするのは難しいものです。現在のコンパイル単位に影響があることから、 exporter は一貫した API "
+"を提供するものではありませんし、それらが提供するインポートメソッドを直接呼び出すプラグマなども提供されていません。\n"
+"\n"
+"'Import::Info' では、このような苦痛を回避するためのグローバルメソッドを提供しています。"
 
 #. tumbleweed/perl-Inline/summary
 #. leap/perl-Inline/summary
@@ -19406,9 +19518,8 @@ msgstr ""
 
 #. tumbleweed/perl-Iterator/summary
 #. leap/perl-Iterator/summary
-#, fuzzy
 msgid "A general-purpose iterator class"
-msgstr "汎用ライブラリ"
+msgstr "汎用目的の列挙クラス"
 
 #. tumbleweed/perl-Iterator/description
 #. leap/perl-Iterator/description
@@ -19450,11 +19561,32 @@ msgid ""
 "in the other associated modules. You can just plug them together like "
 "building blocks."
 msgstr ""
+"このモジュールは列挙子に対する良質な実装となるべく作られたもので、 Mark Jason Dominus 氏のレクチャーや直近の書籍 (_Higher "
+"Order Perl_, Morgan Kauffman, 2005) で広められたモジュールです。\n"
+"\n"
+"\"列挙子\" はオブジェクトであり、順序内の \"次の値\" を生成するコードブロックとして表わされ、一般的にはクロージャとして実装される仕組みです。操"
+"作対象の値が必要になるたびに、列挙子から値を引き出します。他の列挙子に依存していた場合は、依存先の列挙子から値を取得します。"
+"列挙子は連鎖構造をとることもでき (詳しくは Iterator::Util をお読みください) 、実施すべき作業を並べることもできます。ただし、チェインの"
+"フロントエンド側で値が必要になるまでは、実際の処理は行なわれません。また、一方のデータ値はチェインを介して取得されます。\n"
+"\n"
+"通常の配列処理とは対照的に、入力値を一括で読み込みまたは計算し、その後にメモリ内でループすることになりますが、これはファイルを 1 "
+"行ずつ読み込んで繰り返す処理に似ていて、一括でファイルを読み込んでから処理する形態です。\n"
+"\n"
+"Iterator.pm は、このような列挙子クラスを作成したり使用したりする作業を単純化するためのクラスを提供しています。その他の 'Iterator::"
+"' モジュール (詳しくは /\"SEE ALSO\" をお読みください) では、多くの汎用目的および特殊目的の列挙関数が提供されています。\n"
+"\n"
+"列挙子は永遠に繰り返すことのできる (無限に順序を生成する) ものもあります。有限の列挙子では、その終了に到達すると、列挙子のコードブロックは "
+"'Iterator::X::Am_Now_Exhausted' のタイプの例外をスローします。これは通常、 /is_done "
+"関数経由で実施されます。これは列挙子クラスに対して終了を表わすもので、それ以降のすべての /value メソッドの呼び出しは 'Iterator::X::"
+"Exhausted' のタイプの例外をスローします。詳しくは /DIAGNOSTICS をお読みください。\n"
+"\n"
+"なお、多くの場合において、列挙子を明示的に作成する必要はありません。列挙子を生成するには多数の方法や他の関連モジュールの操作関数があるためです。構築ブロッ"
+"クのようにそれをつなぎ合わせるだけです。"
 
 #. tumbleweed/perl-Iterator-Util/summary
 #. leap/perl-Iterator-Util/summary
 msgid "Essential utilities for the Iterator class"
-msgstr ""
+msgstr "列挙子クラスの基本ユーティリティ"
 
 #. tumbleweed/perl-Iterator-Util/description
 #. leap/perl-Iterator-Util/description
@@ -19467,6 +19599,10 @@ msgid ""
 "further information, including a tutorial on using iterator objects, see the "
 "the Iterator manpage documentation."
 msgstr ""
+"このモジュールは、列挙子クラスを作成したり操作したりするための、多数の便利関数を実装しています。\n"
+"\n"
+"\"列挙子\" はオブジェクトであり、順序内の \"次の値\" を生成するコードブロックとして表わされ、一般的にはクロージャとして実装される仕組みです。列"
+"挙子オブジェクトの使用に際するチュートリアルなど、詳しくは列挙子クラスのドキュメンテーションをお読みください。"
 
 #. tumbleweed/perl-JSON/summary
 #. leap/perl-JSON/summary
@@ -19598,7 +19734,7 @@ msgstr ""
 #. tumbleweed/perl-JSON-Any/summary
 #. leap/perl-JSON-Any/summary
 msgid "(DEPRECATED) Wrapper Class for the various JSON classes"
-msgstr ""
+msgstr "(廃止予定) 様々な JSON クラス向けラッパークラス"
 
 #. tumbleweed/perl-JSON-Any/description
 #. leap/perl-JSON-Any/description
@@ -19679,11 +19815,77 @@ msgid ""
 "It will skip the JSON package detection routines and will die loudly that it "
 "couldn't find a package."
 msgstr ""
+"このモジュールは、 CPAN 内に存在する様々な JSON モジュールをまとめて、矛盾のない API を提供しようとする試みです。このモジュールは任意の "
+"JSON API を利用して、どの JSON モジュールがインストールされているのかに関係なく作業ができるようにするものです。\n"
+"\n"
+"    use JSON::Any;\n"
+"\n"
+"    my $j = JSON::Any->new;\n"
+"\n"
+"    $json = $j->objToJson({foo=>'bar', baz=>'quux'});     $obj = "
+"$j->jsonToObj($json);\n"
+"\n"
+"もしくは、下記のように記述することもできます:\n"
+"\n"
+"    $json = $j->encode({foo=>'bar', baz=>'quux'});     $obj = "
+"$j->decode($json);\n"
+"\n"
+"もしくは、下記のように記述することもできます:\n"
+"\n"
+"    $json = $j->Dump({foo=>'bar', baz=>'quux'});     $obj = $j->Load($json);"
+"\n"
+"\n"
+"もしくは、下記のように記述することもできます:\n"
+"\n"
+"    $json = $j->to_json({foo=>'bar', baz=>'quux'});     $obj = "
+"$j->from_json($json);\n"
+"\n"
+"オブジェクトを作成せずに実行することもできます:\n"
+"\n"
+"    $json = JSON::Any->objToJson({foo=>'bar', baz=>'quux'});     $obj = "
+"JSON::Any->jsonToObj($json);\n"
+"\n"
+"読み込みの際、 JSON::Any は @INC 内を調べて、利用可能な JSON "
+"モジュールを検出しようとします。このとき、下記の優先順序で検索を行ないます:\n"
+"\n"
+"    Cpanel::JSON::XS     JSON::XS     JSON::PP     JSON     JSON::DWIW\n"
+"\n"
+"この中から最初に見つかったものを読み込みます。\n"
+"\n"
+"'use JSON::Any' の行で指定することで、優先順序を変更することもできます:\n"
+"\n"
+"    use JSON::Any qw(DWIW XS CPANEL JSON PP);\n"
+"\n"
+"モジュールを指定しなければ、そのモジュールを使用しないようにすることができます:\n"
+"\n"
+"    use JSON::Any qw(CPANEL PP); # JSON::MaybeXS と同じ\n"
+"\n"
+"これにより、指定した順序でチェックを行ないますが、 JSON::XS, JSON.pm/JSON, JSON::DWIW "
+"については読み込みを行なわないようになります。この指定は '$ENV{JSON_ANY_ORDER}' 環境変数からも行なうことができます。\n"
+"\n"
+"JSON::Syck はその著者によって廃止されることが表明されていますが、 \"互換レイヤ\" として使用する可能性があることから、  JSON::"
+"Any でもサポートが続けられています。このサポートは JSON::Any 1.19 以降で任意となりましたが、 JSON 1.20 "
+"以降のバグリクエストで、 JSON::Syck "
+"とその他の廃止予定モジュールがインストールできるようになっています。ただし、優先順位は最も低く、かつ警告を表示するようになっています:\n"
+"\n"
+"    use JSON::Any qw(Syck XS JSON);\n"
+"\n"
+"もしくは、下記のように記述することもできます:\n"
+"\n"
+"    $ENV{JSON_ANY_ORDER} = 'Syck XS JSON';\n"
+"\n"
+"インストールの時点では、お使いのシステム内に *その他の* バックエンドが存在しなかった場合、 JSON::Any は JSON::PP "
+"を合理的なフォールバックとしてインストールしようとします。\n"
+"\n"
+"警告: JSON::Any を空のリストで呼び出した場合、 JSON パッケージの検出ルーチンが飛ばされ、パッケージが見つからないとして die "
+"してしまいます:\n"
+"\n"
+"    use JSON::Any ();"
 
 #. tumbleweed/perl-JSON-MaybeXS/summary
 #. leap/perl-JSON-MaybeXS/summary
 msgid "Use L<Cpanel::JSON::XS> with a fallback to L<JSON::XS> and L<JSON::PP>"
-msgstr ""
+msgstr "L<JSON::XS> と L<JSON::PP> にフォールバックすることのできる L<Cpanel::JSON::XS>"
 
 #. tumbleweed/perl-JSON-MaybeXS/description
 #. leap/perl-JSON-MaybeXS/description
@@ -19702,12 +19904,21 @@ msgid ""
 "want to pass options as constructor args rather than calling mutators, so we "
 "provide our own 'new' method that supports that."
 msgstr ""
+"このモジュールは、まず Cpanel::JSON::XS または JSON::XS "
+"がすでに読み込まれているかどうかをチェックし、いずれかのモジュールが読み込まれていればそれを使用します。どのモジュールも読み込まれていない場合は、 "
+"Cpanel::JSON::XS を読み込もうとしたあと、 JSON::XS および JSON::PP "
+"を読み込もうとし、見つかった最初のモジュールを使用するか、エラーを返します。\n"
+"\n"
+"モジュールが読み込まれると、そのモジュールから 'encode_json' と 'decode_json' の関数、および 'JSON' "
+"定数がそれぞれ公開されるようになります。定数は 'new' を呼び出す際のクラス名を含んでいます。\n"
+"\n"
+"既存の JSON コードではなく新規に作成しようとしている場合は、ミューテータではなくコンストラクタのパラメータとしてパラメータを指定してください。"
+"これに対応するための独自の 'new' メソッドが提供されています。"
 
 #. tumbleweed/perl-JSON-RPC/summary
 #. leap/perl-JSON-RPC/summary
-#, fuzzy
 msgid "JSON RPC 2.0 Server Implementation"
-msgstr "初期設定管理"
+msgstr "JSON RPC 2.0 サーバ実装"
 
 #. tumbleweed/perl-JSON-RPC/description
 #. leap/perl-JSON-RPC/description
@@ -19718,6 +19929,10 @@ msgid ""
 "CODE TO WORK WITH THIS VERSION. THIS VERSION IS     ****BACKWARDS "
 "INCOMPATIBLE****"
 msgstr ""
+"JSON::RPC は JSON RPC 2.0 プロトコルを実装するモジュールセットです。\n"
+"\n"
+"    古い JSON::RPC コード (0.96 またはそれ以前) "
+"を利用している場合、このバージョンでお使いのコードが動作することは期待してはなりません。このバージョンには ****後方互換性がありません**** 。"
 
 #. tumbleweed/perl-LWP-MediaTypes/summary
 #. leap/perl-LWP-MediaTypes/summary
@@ -19851,7 +20066,7 @@ msgstr ""
 #. tumbleweed/perl-LWP-Online/summary
 #. leap/perl-LWP-Online/summary
 msgid "Does your process have access to the web"
-msgstr ""
+msgstr "プロセスからの Web アクセス"
 
 #. tumbleweed/perl-LWP-Online/description
 #. leap/perl-LWP-Online/description
@@ -19888,6 +20103,32 @@ msgid ""
 "all) it's my gut feeling that it is worthwhile at least making an attempt to "
 "solve the problem, if only in a limited way."
 msgstr ""
+"このモジュールは、下記のような素朴な質問への回答を提供しようとするものです:\n"
+"\n"
+"* インターネットに繋がっているかどうか？\n"
+"\n"
+"上記の質問に対する回答は、様々な用途で利用することができます。たとえば:\n"
+"\n"
+"_テストスクリプトを実行するにあたって、オンライン接続が必要なものを実行すべきかどうか？_\n"
+"\n"
+"_サーバから新しいデータを取り込んでみるべきか？_\n"
+"\n"
+"_サーバへの要求が失敗した場合、それはこちら側の接続の問題なのか、それともサーバ側の問題なのか？_\n"
+"\n"
+"等々・・・\n"
+"\n"
+"ネットワークの構成やセキュリティの問題があることから、これを判断するのは非常に難しいものです。たとえばファイアウオールやプロキシ "
+"(正しく動作するものもあれば、正しく動作しないものもあります) 経由でアクセスしなければならないかもしれませんし、 DNS "
+"サーバが存在しないかもしれません。ネットワークカードさえも接続していない環境がありえます。\n"
+"\n"
+"インターネットに接続可能な環境でも、有料の無線ネットワークを経由しなければならない場合もあります。この場合は、料金を請求するため、どの HTTP "
+"リクエストに対してもクレジットカードの情報を入力するように求めたりすることがあります。このような場合は、 \"本当に\" "
+"インターネット接続ができると判断すべきではありません。\n"
+"\n"
+"このようなことから、上記の質問に対して正確に答えるとすれば、それは回答不可能であることになります。\n"
+"\n"
+"とはいえ、それ以外の方法としてはユーザに \"オンラインですか？\" と尋ねるくらいしか方法がありません "
+"(場合によっては目の前にユーザが居ない場合もあります) 。このようなことから、このようなチェックは不確実ではあるものの、それなりに有用なものとなります。"
 
 #. tumbleweed/perl-LWP-Protocol-https/summary
 #. leap/perl-LWP-Protocol-https/summary
