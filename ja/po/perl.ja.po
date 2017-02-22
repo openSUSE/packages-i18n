@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-21 08:35+0000\n"
+"PO-Revision-Date: 2017-02-22 08:49+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -20177,7 +20177,7 @@ msgstr ""
 #. tumbleweed/perl-Lexical-Persistence/summary
 #. leap/perl-Lexical-Persistence/summary
 msgid "Persistent lexical variable values for arbitrary calls."
-msgstr ""
+msgstr "任意の呼び出しに対するレキシカル変数の永続化"
 
 #. tumbleweed/perl-Lexical-Persistence/description
 #. leap/perl-Lexical-Persistence/description
@@ -20326,11 +20326,154 @@ msgid ""
 "\n"
 "If you come up with other fun uses, let us know."
 msgstr ""
+"Lexical::Persistence は小さいながらも関連性のある仕組みです。なお、ここに示されている動作はすべて既定値のものであり、"
+"サブクラス側では Lexical::Persistence の動作のほぼすべてをオーバーライドすることができます。\n"
+"\n"
+"Lexical::Persistence はお使いのコード内で、レキシカル変数を介した永続性のあるデータ保持機能を提供します。下記の例は \"some "
+"value\" という値を出力しますが、これは $lp 内で $x の値が永続化されていて、 setter() を呼び出した後も保持され、 "
+"getter() で取得できるためです:\n"
+"\n"
+"\tuse Lexical::Persistence;\n"
+"\n"
+"\tmy $lp = Lexical::Persistence->new(); \t$lp->call(\\&setter); \t$lp->call("
+"\\&getter);\n"
+"\n"
+"\tsub setter { my $x = \"some value\" } \tsub getter { print my $x, \"\\n"
+"\" }\n"
+"\n"
+"なお、アンダースコア(_)で始まるレキシカル変数は、永続化されません。\n"
+"\n"
+"また、既定では Lexical::Persistence "
+"は変数プレフィクスを利用することで、複数のソースからのデータにアクセスすることができます。この場合、 set_context() "
+"メソッドでそれぞれのデータソースを設定します。このメソッドはプレフィクス名とキー／値の対を持つハッシュをパラメータとして指定するもので、"
+"既定ではキーに変数のタイプを表わす sigil を設定しなければなりません:\n"
+"\n"
+"\tuse Lexical::Persistence;\n"
+"\n"
+"\tmy $lp = Lexical::Persistence->new(); \t$lp->set_context( pi => { '$"
+"member' => 3.141 } ); \t$lp->set_context( e => { '@member' => [ 2, '.', 7, "
+"1, 8 ] } ); \t$lp->set_context( \t\tanimal => { \t\t\t'%member' => { cat => "
+"\"meow\", dog => \"woof\" } \t\t} \t);\n"
+"\n"
+"\t$lp->call(\\&display);\n"
+"\n"
+"\tsub display { \t\tmy ($pi_member, @e_member, %animal_member);\n"
+"\n"
+"\t\tprint \"pi = $pi_member\\n"
+"\"; \t\tprint \"e = @e_member\\n"
+"\"; \t\twhile (my ($animal, $sound) = each %animal_member) { \t\t\tprint \""
+"The $animal goes... $sound!\\n"
+"\"; \t\t} \t}\n"
+"\n"
+"上記を実行すると、下記のように出力されます:\n"
+"\n"
+"\tpi = 3.141 \te = 2 . 7 1 8 \tThe cat goes... meow! \tThe dog goes... woof!"
+"\n"
+"\n"
+"また、既定では call() は 1 "
+"つのサブルーチン参照と、任意で名前付きのパラメータを指定します。パラメータは呼び出されたサブルーチンに直接渡されますが、 Lexical::"
+"Persistence では \"arg\" のプレフィクスを付けてアクセスすることもできます:\n"
+"\n"
+"\tuse Lexical::Persistence;\n"
+"\n"
+"\tmy %animals = ( \t\tsnake => \"hiss\", \t\tplane => \"I'm Cartesian\", \t);"
+"\n"
+"\n"
+"\tmy $lp = Lexical::Persistence->new(); \twhile (my ($animal, $sound) = each "
+"%animals) { \t\t$lp->call(\\&display, animal => $animal, sound => $sound); \t"
+"}\n"
+"\n"
+"\tsub display { \t\tmy ($arg_animal, $arg_sound); \t\tprint \"The $"
+"arg_animal goes... $arg_sound!\\n"
+"\"; \t}\n"
+"\n"
+"上記を実行すると、下記のように出力されます:\n"
+"\n"
+"\tThe plane goes... I'm Cartesian! \tThe snake goes... hiss!\n"
+"\n"
+"場合によっては関数を通常通り呼び出したい場合もあるでしょう。 wrap() メソッドはお使いの関数を小さなトランクにラッピングして、 call() "
+"できるようにします。返される値はコード参照です:\n"
+"\n"
+"\tuse Lexical::Persistence;\n"
+"\n"
+"\tmy $lp = Lexical::Persistence->new(); \tmy $thunk = $lp->wrap(\\&display);"
+"\n"
+"\n"
+"\t$thunk->(animal => \"squirrel\", sound => \"nuts\");\n"
+"\n"
+"\tsub display { \t\tmy ($arg_animal, $arg_sound); \t\tprint \"The $"
+"arg_animal goes... $arg_sound!\\n"
+"\"; \t}\n"
+"\n"
+"上記を実行すると、下記のように出力されます:\n"
+"\n"
+"\tThe squirrel goes... nuts!\n"
+"\n"
+"プレフィクスは、レキシカル変数の名前の中でアンダースコアから始まる文字です。ただし、既定のコンテキストとしてアンダースコア(_)というものもあります。"
+"既定ではコンテキスト名に \"_\" を設定することはできませんので、他のコンテキストと衝突することはありません。また、プレフィクス無しの変数や "
+"set_context() で設定されていないプレフィクスが設定された場合は、既定のコンテキスト内に保存されます。\n"
+"\n"
+"get_context() "
+"メソッドは名前付きのコンテキストに対するハッシュを返すもので、これによって永続的なコンテキスト内で変数を操作できるようになります:\n"
+"\n"
+"\tuse Lexical::Persistence;\n"
+"\n"
+"\tmy $lp = Lexical::Persistence->new(); \t$lp->set_context( \t\t_ => { \t\t\t"
+"'@mind' => [qw(My mind is going. I can feel it.)] \t\t} \t);\n"
+"\n"
+"\twhile (1) { \t\t$lp->call(\\&display); \t\tmy $mind = $lp->get_context(\""
+"_\")->{'@mind'}; \t\tsplice @$mind, rand(@$mind), 1; \t\tlast unless @$mind; "
+"\t}\n"
+"\n"
+"\tsub display { \t\tmy @mind; \t\tprint \"@mind\\n"
+"\"; \t}\n"
+"\n"
+"下記のように表示されます:\n"
+"\n"
+"\tMy mind is going. I can feel it. \tMy is going. I can feel it. \tMy is "
+"going. I feel it. \tMy going. I feel it. \tMy going. I feel \tMy I feel \tMy "
+"I \tMy\n"
+"\n"
+"複数の Lexical::Persistence オブジェクトを作成することもできます。これらはそれぞれ独自の状態を持つことができます。\n"
+"\n"
+"\tuse Lexical::Persistence;\n"
+"\n"
+"\tmy $lp_1 = Lexical::Persistence->new(); \t$lp_1->set_context( _ => { '$"
+"foo' => \"context 1's foo\" } );\n"
+"\n"
+"\tmy $lp_2 = Lexical::Persistence->new(); \t$lp_2->set_context( _ => { '$"
+"foo' => \"the foo in context 2\" } );\n"
+"\n"
+"\t$lp_1->call(\\&display); \t$lp_2->call(\\&display);\n"
+"\n"
+"\tsub display { \t\tprint my $foo, \"\\n"
+"\"; \t}\n"
+"\n"
+"下記のように表示されます:\n"
+"\n"
+"\tcontext 1's foo \tthe foo in context 2\n"
+"\n"
+"すでに永続化されているレキシカル変数が存在した場合、文字列に含まれている Perl のコードをコンパイルして実行することもできます:\n"
+"\n"
+"\tuse Lexical::Persistence;\n"
+"\n"
+"\tmy $lp = Lexical::Persistence->new();\n"
+"\n"
+"\t$lp->do( 'my $message = \"Hello, world\" );\n"
+"\n"
+"\t$lp->do( 'print \"$message\\n"
+"\"' );\n"
+"\n"
+"下記のように表示されます:\n"
+"\n"
+"\tHello, world\n"
+"\n"
+"上記以外にも何か面白い使い方をご存じの場合は、是非お知らせください。"
 
 #. tumbleweed/perl-Lingua-EN-FindNumber/summary
 #. leap/perl-Lingua-EN-FindNumber/summary
 msgid "Locate (written) numbers in English text"
-msgstr ""
+msgstr "英語の文章内での数値の検出"
 
 #. tumbleweed/perl-Lingua-EN-FindNumber/description
 #. leap/perl-Lingua-EN-FindNumber/description
@@ -20339,11 +20482,12 @@ msgid ""
 "text. It also provides functions for extracting and manipulating such "
 "numbers."
 msgstr ""
+"このモジュールは、英語の文章内で数字を検出するための正規表現を提供します。検出した数字に対して、抽出や操作を行なうための機能も用意されています。"
 
 #. tumbleweed/perl-Lingua-EN-Inflect/summary
 #. leap/perl-Lingua-EN-Inflect/summary
 msgid "Convert singular to plural. Select \"a\" or \"an\""
-msgstr ""
+msgstr "単数形から複数形への変換、および \"a\", \"an\" の選択"
 
 #. tumbleweed/perl-Lingua-EN-Inflect/description
 #. leap/perl-Lingua-EN-Inflect/description
@@ -20382,23 +20526,47 @@ msgid ""
 "processing has been specified (see the \"MODERN VS CLASSICAL INFLECTIONS\" "
 "manpage)."
 msgstr ""
+"*[_注意:_ このモジュールは厳密にはメンテナンスモード下にあります。単数形と複数形の変換や a/an の反映について興味をお持ちの場合は、より新しい "
+"Lingua::EN::Inflexion モジュールをご覧ください。こちらのほうがよりクリーンで、かつ便利なインターフェイスを提供しているほか、"
+"多数の追加機能も用意されています (単数形から複数形への変態など) し、テストもよりよく行なわれています。]*\n"
+"\n"
+"Lingua::EN::Inflect で公開されているサブルーチンでは、英語における複数形の変換や \"a\"/\"an\" "
+"の選択、および数値を言葉に変換する機能などが用意されています。\n"
+"\n"
+"すべての名詞やほとんどの動詞、そしていくつかの形容詞に対する複数形が提供されています。また、存在すれば \"古い\" 形式にも対応しています (例: \""
+"brother\" -> \"brethren\", \"dogma\" -> \"dogmata\" など) 。\n"
+"\n"
+"このほか、英単語に対する発音ベースの \"a\"/\"an\" の選択機能も当初から用意されています。\n"
+"\n"
+"また、数値 (1,2,3) を順序表記 (1st, 2nd, 3rd) や英単語 (\"one\", \"two\", \"three\") "
+"に変換する機能もあります。\n"
+"\n"
+"これらの変換機能の作成にあたっては、 Lingua::EN::Inflect は Oxford 社の英語辞書と Fowler's Modern "
+"English Usage 内のガイドラインに従っています。双方で異なる見解になってるものについては、前者のものを採用しています。\n"
+"\n"
+"このモジュールは標準的なイギリス英語のスペルを利用していますが、アメリカ英語への対応も行なわれています。ただし、スラングやジャーゴンなど、その他の方言につ"
+"いては基本的に対応していません。\n"
+"\n"
+"なお、 1 つの単語に対して 2 つもしくはそれ以上の変化形が存在するような場合 (一般的には \"古い形式\" と \"新しい形式\" など) は、 "
+"\"classical\" (古い形式) を明示的に指定した場合を除いて、 Lingua::EN::Inflect はより一般的な形態 (通常は \""
+"新しい形式\") を採用しています (詳しくは \"MODERN VS CLASSICAL INFLECTIONS\" をお読みください)。"
 
 #. tumbleweed/perl-Lingua-EN-Inflect-Number/summary
 #. leap/perl-Lingua-EN-Inflect-Number/summary
 msgid "Force number of words to singular or plural"
-msgstr ""
+msgstr "単語の数値を単数形または複数形に強制するモジュール"
 
 #. tumbleweed/perl-Lingua-EN-Inflect-Number/description
 #. leap/perl-Lingua-EN-Inflect-Number/description
 msgid ""
 "This module extends the functionality of Lingua::EN::Inflect with three new "
 "functions available for export:"
-msgstr ""
+msgstr "このモジュールは Lingua::EN::Inflect の機能を拡張するもので、公開される 3 種類の新しい関数が用意されています:"
 
 #. tumbleweed/perl-Lingua-EN-Inflect-Phrase/summary
 #. leap/perl-Lingua-EN-Inflect-Phrase/summary
 msgid "Inflect short English Phrases"
-msgstr ""
+msgstr "短い英語の語句に対する変形"
 
 #. tumbleweed/perl-Lingua-EN-Inflect-Phrase/description
 #. leap/perl-Lingua-EN-Inflect-Phrase/description
@@ -20415,11 +20583,20 @@ msgid ""
 "If it doesn't work, please email or submit to RT the example you tried, and "
 "I'll try to fix it."
 msgstr ""
+"短い英語の語句を、複数形または単数形に変換します。\n"
+"\n"
+"すでに複数形になっている語句を再度複数形に変換しようとしても、現時点では例外をスローすることはなく、単にそのままの文字列が返されます "
+"(単数形を単数形に変換した場合も同様です) 。\n"
+"\n"
+"今後、何らかの変更を行なうことで他の箇所に影響が及ぶこともありうるため、このモジュールの動作は将来変更されるかもしれません。それだけ自然言語を処理するのは"
+"やっかいだと言うことでもあります。\n"
+"\n"
+"もしもうまく動作しない場合は、うまくいかなかった語句を電子メールまたは RT で報告してください。修正させていただきます。"
 
 #. tumbleweed/perl-Lingua-EN-Number-IsOrdinal/summary
 #. leap/perl-Lingua-EN-Number-IsOrdinal/summary
 msgid "detect if English number is ordinal or cardinal"
-msgstr ""
+msgstr "英語で序数があるかどうかを検出するモジュール"
 
 #. tumbleweed/perl-Lingua-EN-Number-IsOrdinal/description
 #. leap/perl-Lingua-EN-Number-IsOrdinal/description
@@ -20431,14 +20608,16 @@ msgid ""
 "This is useful if you e.g. want to distinguish these types of numbers found "
 "with the Lingua::EN::FindNumber manpage and take different actions."
 msgstr ""
+"このモジュールは数字を検出するモジュールで、英単語のほか、アラビア数字や序数にも対応しています (http://www.ego4u.com/en"
+"/cram-up/vocabulary/numbers/ordinal) 。\n"
+"\n"
+"このモジュールは、 Lingua::EN::FindNumber で見つかった数字に対して、それぞれ異なる処理を行ないたい場合に便利な仕組みです。"
 
 #. tumbleweed/perl-Lingua-EN-Sentence/summary
-#, fuzzy
 msgid "Split Text Into Sentences"
-msgstr "テキストを文賞に分解するためのモジュール"
+msgstr "テキストを文章に分解するためのモジュール"
 
 #. tumbleweed/perl-Lingua-EN-Sentence/description
-#, fuzzy
 msgid ""
 "The 'Lingua::EN::Sentence' module contains the function get_sentences, which "
 "splits text into its constituent sentences, based on a regular expression "
@@ -20449,22 +20628,17 @@ msgid ""
 "are being taken care of. Still, if you see that there are words causing the "
 "get_sentences() to fail, you can add those to the module, so it notices them."
 msgstr ""
-"'Lingua::EN::Sentence' モジュールでは、 get_sentences と呼ばれる関数が提供さ"
-"れています。この関数は、正規表現と略称一覧 (内蔵のものを使用することができる"
-"ほか、指定することもできます) を利用して、テキストを文章ごとに分割することが"
-"できます。\n"
+"'Lingua::EN::Sentence' モジュールでは、 get_sentences と呼ばれる関数が提供されています。この関数は、"
+"正規表現と略称一覧 (内蔵のものを使用することができるほか、指定することもできます) を利用して、テキストを文章ごとに分割することができます。\n"
 "\n"
-"このようなモジュールは、略称などがあるとうまく動作せず、正しくない分割などが"
-"行なわれてしまうことが知られていますが、これらのうちのいくつかは既にコード内"
-"で対応済みで、配慮されるようになっています。ただし、場合によっては "
-"get_sentences()で失敗することがありますので、モジュールに対して追加することで"
-"対応できるようになっています。"
+"このようなモジュールは、略称などがあるとうまく動作せず、正しくない分割などが行なわれてしまうことが知られていますが、これらのうちのいくつかは既にコード内で"
+"対応済みで、配慮されるようになっています。ただし、場合によっては "
+"get_sentences()で失敗することがありますので、モジュールに対して追加することで対応できるようになっています。"
 
 #. tumbleweed/perl-Lingua-EN-Words2Nums/summary
 #. leap/perl-Lingua-EN-Words2Nums/summary
-#, fuzzy
 msgid "convert English text to numbers"
-msgstr "フィンランド語 ispell 辞書"
+msgstr "英語のテキストを数字に変換するモジュール"
 
 #. tumbleweed/perl-Lingua-EN-Words2Nums/description
 #. leap/perl-Lingua-EN-Words2Nums/description
@@ -20476,11 +20650,16 @@ msgid ""
 "subroutine, when fed a string, will attempt to convert it into a number. If "
 "it succeeds, the number will be returned. If it fails, it returns undef."
 msgstr ""
+"このモジュールは、英語のテキストを数字に変換するモジュールです。序数などのほか、負の数や巨大な数値などにも対応しています。\n"
+"\n"
+"既定で公開されているメインのサブルーチンは words2nums() "
+"です。このサブルーチンに対して文字列を与えると、それを数字に変換しようとします。問題なく変換できれば、変換結果の数字が返ります。失敗した場合は "
+"undef が返ります。"
 
 #. tumbleweed/perl-Lingua-PT-Stemmer/summary
 #. leap/perl-Lingua-PT-Stemmer/summary
 msgid "Portuguese language stemming"
-msgstr ""
+msgstr "ポルトガル語の語幹抽出"
 
 #. tumbleweed/perl-Lingua-PT-Stemmer/description
 #. leap/perl-Lingua-PT-Stemmer/description
@@ -20507,11 +20686,31 @@ msgid ""
 "\n"
 "* * Accents Removal"
 msgstr ""
+"このモジュールは、 *Moreira, V.* 氏と *Huyck, C.* 氏による記事 *A Stemming Algorithm for the "
+"Portuguese Language* で提案されている、ポルトガル語の語幹抽出機能を提供します。\n"
+"\n"
+"変換アルゴリズムは下記の 8 段階に分かれています:\n"
+"\n"
+"* * 複数形の変換\n"
+"\n"
+"* * 女性名詞の変換\n"
+"\n"
+"* * 副詞の変換\n"
+"\n"
+"* * 接頭辞／接尾辞の変換\n"
+"\n"
+"* * 名詞に対する接尾語の変換\n"
+"\n"
+"* * 動詞に対する接尾語の変換\n"
+"\n"
+"* * 母音の変換\n"
+"\n"
+"* * アクセントの削除"
 
 #. tumbleweed/perl-Lingua-Stem/summary
 #. leap/perl-Lingua-Stem/summary
 msgid "Stemming of words in various languages"
-msgstr ""
+msgstr "様々な言語における単語の語幹抽出"
 
 #. tumbleweed/perl-Lingua-Stem/description
 #. leap/perl-Lingua-Stem/description
@@ -20543,23 +20742,53 @@ msgid ""
 "using cache level 2 and processing lists in 'big chunks' (long lists) for "
 "best performance."
 msgstr ""
+"このルーチンは語幹抽出アルゴリズムに対してバラメータを適用するもので、選択したロケールに対して適切な抽出済み単語を返します。\n"
+"\n"
+"クラスメソッドは指定したもののみを取り込むことができるほか、すべてを取り込むこともできます。\n"
+"\n"
+"use Lingua::Stem qw (stem clear_stem_cache stem_caching add_exceptions "
+"delete_exceptions get_exceptions set_locale get_locale :all :locale :"
+"exceptions :stem :caching);\n"
+"\n"
+" :all        - stem add_exceptions delete_exceptions "
+"get_exceptions                set_locale get_locale をそれぞれ取り込みます。\n"
+" :stem    - stem のみを取り込みます。\n"
+" :caching    - stem_caching clear_stem_cache をそれぞれ取り込みます。\n"
+" :locale     - set_locale get_locale をそれぞれ取り込みます。\n"
+" :exceptions - add_exceptions delete_exceptions get_exceptions をそれぞれ取り込みます。\n"
+"\n"
+"現時点で対応しているロケールは下記の通りです:\n"
+"\n"
+"      DA          - デンマーク語\n"
+"      DE          - ドイツ語\n"
+"      EN          - 英語 (EN-US および EN-UK)\n"
+"      FR          - フランス語\n"
+"      GL          - ガリシア語\n"
+"      IT           - イタリア語\n"
+"      NO          - ノルウェー語\n"
+"      PT          - ポルトガル語\n"
+"      RU          - ロシア語 (RU-RU および RU-RU.KOI8-R)\n"
+"      SV          - スウェーデン語\n"
+"\n"
+"メモリを大量にお持ちで多数の語幹抽出を行なう場合は、性能を最大限に引き出すため、キャッシュレベル 2 の使用と '巨大チャンク' (巨大リスト) "
+"内での処理をお勧めします。"
 
 #. tumbleweed/perl-Lingua-Stem-Fr/summary
 #. leap/perl-Lingua-Stem-Fr/summary
 msgid "Perl French Stemming"
-msgstr ""
+msgstr "Perl フランス語語幹抽出"
 
 #. tumbleweed/perl-Lingua-Stem-Fr/description
 #. leap/perl-Lingua-Stem-Fr/description
 msgid ""
 "This module use the a modified version of the Porter Stemming Algorithm to "
 "return a stemmed words."
-msgstr ""
+msgstr "このモジュールは、 Porter Stemming Algorithm の修正版で、語幹抽出の結果を返す仕組みです。"
 
 #. tumbleweed/perl-Lingua-Stem-It/summary
 #. leap/perl-Lingua-Stem-It/summary
 msgid "Porter's stemming algorithm for Italian"
-msgstr ""
+msgstr "イタリア語向け Porter's stemming algorithm"
 
 #. tumbleweed/perl-Lingua-Stem-It/description
 #. leap/perl-Lingua-Stem-It/description
@@ -20575,11 +20804,19 @@ msgid ""
 "Stem manpage module by Benjamin Franz, from which I've also borrowed some "
 "functionalities (caching and exception list)."
 msgstr ""
+"このモジュールは Porter Stemming Algorithm に対してパラメータを適用するもので、語幹抽出した結果を返します。\n"
+"\n"
+"アルゴリズムは下記に示されているものを (願わくは) 正確に実装しています:\n"
+"\n"
+"    http://snowball.tartarus.org/algorithms/italian/stemmer.html\n"
+"\n"
+"コードは Benjamin Franz 氏のモジュール Lingua::Stem と共に動作するよう注意深く作られており、"
+"ここからいくつかの機能を借りています (キャッシュや例外リストなど) 。"
 
 #. tumbleweed/perl-Lingua-Stem-Ru/summary
 #. leap/perl-Lingua-Stem-Ru/summary
 msgid "Porter's stemming algorithm for Russian (KOI8-R only)"
-msgstr ""
+msgstr "ロシア語向け Porter's stemming algorithm (KOI-8 のみ)"
 
 #. tumbleweed/perl-Lingua-Stem-Ru/description
 #. leap/perl-Lingua-Stem-Ru/description
@@ -20595,11 +20832,19 @@ msgid ""
 "module by Benjamin Franz. This stemmer is also based on the work of Aldo "
 "Capini, see Lingua::Stem::It."
 msgstr ""
+"このモジュールは Porter Stemming Algorithm に対してパラメータを適用するもので、語幹抽出した結果を返します。\n"
+"\n"
+"アルゴリズムは下記に示されているものを正確に実装しています:\n"
+"\n"
+"    http://snowball.tartarus.org/algorithms/italian/stemmer.html\n"
+"\n"
+"コードは Benjamin Franz 氏のモジュール Lingua::Stem と共に動作するよう注意深く作られています。この語幹抽出は Aldo "
+"Capini 氏の成果をベースにしています (詳しくは Lingua::Stem::It をご覧ください) 。"
 
 #. tumbleweed/perl-Lingua-Stem-Snowball-Da/summary
 #. leap/perl-Lingua-Stem-Snowball-Da/summary
 msgid "Porters stemming algorithm for Denmark"
-msgstr ""
+msgstr "デンマーク語向け Porters stemming algorithm"
 
 #. tumbleweed/perl-Lingua-Stem-Snowball-Da/description
 #. leap/perl-Lingua-Stem-Snowball-Da/description
@@ -20608,11 +20853,13 @@ msgid ""
 "to Martin Porters Danish stemming algorithm, which can be found at the "
 "Snowball website: http://snowball.tartarus.org/."
 msgstr ""
+"この語幹抽出関数は、パラメータとしてスカラー値を取り、 Martin Porters 氏によるデンマーク語の語幹抽出アルゴリズムに従って処理を行ないます。"
+"詳しくは Snowball の Web サイトをお読みください: http://snowball.tartarus.org/ 。"
 
 #. tumbleweed/perl-Lingua-Translit/summary
 #. leap/perl-Lingua-Translit/summary
 msgid "Transliterates Text Between Writing Systems"
-msgstr ""
+msgstr "筆記システム間のテキスト音訳"
 
 #. tumbleweed/perl-Lingua-Translit/description
 #. leap/perl-Lingua-Translit/description
@@ -20646,11 +20893,29 @@ msgid ""
 "alphabet, the reverse transliteration will transform Latin letters to "
 "Cyrillic."
 msgstr ""
+"Lingua::Translit は一方の筆記システムから他方の著作システムにテキストを変換するシステムで、同言語または異言語の音訳にも対応しています。ま"
+"た、逆方向の音訳ができる場合もあります。\n"
+"\n"
+"'音訳' (transliteration) "
+"とは、一方の筆記システムのテキストまたはアルファベットを、他方のものに変換する作業のことを言います。理想的には、変換はユニークな仕組みで、一方の 1 "
+"文字を他方の 1 文字に正確にマッピングするもので、元のスペルを正確に再現できるものを言います。ただし、場合によっては 1 文字が 2 "
+"文字もしくはそれ以上の文字に変換される場合もあります。\n"
+"\n"
+"これに加えて、 1 つの筆記システムに対して複数の方式の音訳が提供されます。元のテキストと併せて作業を行なう場合や、元のテキストを再構築することができるよ"
+"うにするため、音訳時にどの方式を利用してテキストを変換するのかは重要かつ必要な情報となります。\n"
+"\n"
+"再構築は非ユニークな音訳の際には問題となりうるもので、たとえば変換結果を生成するシステムに言語固有の知識が無い場合、変換結果は曖昧なものになってしまいます"
+"。たとえばギリシャ語の文字 \"PSI\" は \"ps\" にマッピングされますが、 \"ps\" は \"PI\", \"SIGMA\" "
+"からの変換結果 (\"PI\" は \"p\" に、 \"SIGMA\" は \"s\" に変換されるため) "
+"にもなりうるものです。もしも音訳結果が曖昧なものである場合は、このテーブルを逆方向への変換に利用することができなくなってしまいます。\n"
+"\n"
+"上記以外の場合は、テーブルを両方向の変換に利用することができます。そのため、 ISO 9 "
+"は元々キリル文字をラテンのアルファベットに変換するために作られましたが、逆方向の音訳 (ラテン文字からキリル文字へ) にも対応しています。"
 
 #. tumbleweed/perl-List-AllUtils/summary
 msgid ""
 "Combines List::Util, List::SomeUtils and List::UtilsBy in one bite-sized[cut]"
-msgstr ""
+msgstr "List::Util, List::SomeUtils and List::UtilsBy を一囓りのサイズにまとめたモジュール"
 
 #. tumbleweed/perl-List-AllUtils/description
 msgid ""
@@ -20662,10 +20927,15 @@ msgid ""
 "Note that all function documentation has been shamelessly copied from List::"
 "Util, List::SomeUtils and List::UtilsBy."
 msgstr ""
+"List::Util, List::SomeUtils, List::UtilsBy "
+"でそれぞれ定義されている各ヘルパーを覚えるのが面倒ではありませんか？私は面倒に感じています。このモジュールを利用すれば、これら 3 "
+"種類のモジュールが定義するすべての関数を、一括で公開することができます。\n"
+"\n"
+"なお、関数のドキュメンテーションは、恥ずかしながら List::Util, List::SomeUtils, List::UtilsBy "
+"からコピーしてあります。"
 
 #. tumbleweed/perl-List-SomeUtils/description
 #. leap/perl-List-SomeUtils/description
-#, fuzzy
 msgid ""
 "*List::SomeUtils* provides some trivial but commonly needed functionality on "
 "lists which is not going to go into List::Util.\n"
@@ -20676,19 +20946,17 @@ msgid ""
 "implementation of these functions only serves as a fallback in case the C "
 "portions of this module couldn't be compiled on this machine."
 msgstr ""
-"*List::MoreUtils* は、リストに対する機能のうち List::Util には取り入れられな"
-"かった、細かくも一般的に必要となるだろう機能が含まれています。\n"
+"*List::SomeUtils* は、リストに対する機能のうち List::Util "
+"には取り入れられなかった、細かくも一般的に必要となるだろう機能が含まれています。\n"
 "\n"
-"下記に示す全ての機能は、複数行の Perl コードだけで実装可能なものですが、これ"
-"らのモジュールが提供する機能は、全てを C 言語で実装した場合と同じくらい比較的"
-"高速に動作します。これらの機能の純粋な Perl 版は、このモジュールが対象のマシ"
-"ンでコンパイルできなかった場合のフォールバックとしてのみ動作します。"
+"下記に示す全ての機能は、複数行の Perl コードだけで実装可能なものですが、これらのモジュールが提供する機能は、全てを C "
+"言語で実装した場合と同じくらい比較的高速に動作します。これらの機能の純粋な Perl "
+"版は、このモジュールが対象のマシンでコンパイルできなかった場合のフォールバックとしてのみ動作します。"
 
 #. tumbleweed/perl-List-UtilsBy/summary
 #. leap/perl-List-UtilsBy/summary
-#, fuzzy
 msgid "Higher-Order List Utility Functions"
-msgstr "Gtk 向けユーティリティ機能"
+msgstr "高レベルのリストユーティリティ関数"
 
 #. tumbleweed/perl-List-UtilsBy/description
 #. leap/perl-List-UtilsBy/description
@@ -20705,11 +20973,20 @@ msgid ""
 "\n"
 " my @people_sorted = sort_by { $_->name } @people;"
 msgstr ""
+"このモジュールは複数のリストユーティリティ関数を提供するもので、いずれもその動作を制御するのに初期コードブロックを利用します。これらは Perl "
+"の中枢内、もしくは 'List::Util' "
+"関数などで提供されている機能の派生版ですが、こちらはその動作を制御するのに初期コードブロックを利用することができる仕組みです。たとえば Perl 関数の "
+"'sort' は値のリストをパラメータとして受け取って同じ型を返しますが、並べ替えにあたってはその文字列値をキーにします。 'sort_by' "
+"関数では、コードブロック内で返された文字列を元にして、並べ替えを行ないます。\n"
+"\n"
+" my @names_sorted = sort @names;\n"
+"\n"
+" my @people_sorted = sort_by { $_->name } @people;"
 
 #. tumbleweed/perl-Locale-Maketext-Gettext/summary
 #. leap/perl-Locale-Maketext-Gettext/summary
 msgid "Joins the gettext and Maketext frameworks"
-msgstr ""
+msgstr "gettext と Maketext のフレームワークの合体"
 
 #. tumbleweed/perl-Locale-Maketext-Gettext/description
 #. leap/perl-Locale-Maketext-Gettext/description
@@ -20720,6 +20997,9 @@ msgid ""
 "result, you enjoy both their advantages, and get rid of both their problems, "
 "too."
 msgstr ""
+"Locale::Maketext::Gettext は GNU gettext と Maketext のフレームワークを合体させたもので、 GNU "
+"gettext の動作方式に合わせた Locale::Maketext(3) のサブクラスです。 GNU gettext と Maketext の両方の考"
+"え方を取り入れ、シームレスに動作する仕組みです。その結果、両方にそれぞれ存在する問題を回避しながら、両方の利点を享受できるような作りになっています。"
 
 #. tumbleweed/perl-Locale-Maketext-Lexicon/summary
 #. leap/perl-Locale-Maketext-Lexicon/summary
@@ -20754,19 +21034,19 @@ msgstr ""
 #. leap/perl-Locale-US/summary
 msgid ""
 "Two letter codes for state identification in the United States and vice versa"
-msgstr ""
+msgstr "アメリカ合衆国内での 2 文字の州コードと、その州名を相互に変換するモジュール"
 
 #. tumbleweed/perl-Locale-US/description
 #. leap/perl-Locale-US/description
 msgid ""
 "Two letter codes for state identification in the United States and vice "
 "versa."
-msgstr ""
+msgstr "アメリカ合衆国内での 2 文字の州コードと、その州名を相互に変換するモジュールです。"
 
 #. tumbleweed/perl-Log-Any/summary
 #. leap/perl-Log-Any/summary
 msgid "Bringing loggers and listeners together"
-msgstr ""
+msgstr "ロガーとリスナの合体"
 
 #. tumbleweed/perl-Log-Any/description
 #. leap/perl-Log-Any/description
@@ -32931,7 +33211,7 @@ msgstr ""
 
 #. leap/perl-Lingua-EN-Sentence/summary
 msgid "Module for splitting text into sentences"
-msgstr "テキストを文賞に分解するためのモジュール"
+msgstr "テキストを文章に分解するためのモジュール"
 
 #. leap/perl-Lingua-EN-Sentence/description
 msgid ""
