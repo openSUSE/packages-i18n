@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-22 08:49+0000\n"
+"PO-Revision-Date: 2017-02-23 07:37+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -21089,11 +21089,39 @@ msgid ""
 "See http://www.openswartz.com/2007/09/06/standard-logging-api/ for the "
 "original post proposing this module."
 msgstr ""
+"'Log::Any' はモジュールに対して標準的なログ出力 API を提供するものです。また、 Log::Any::Adapter "
+"はアプリケーションに対して、ログの出力先 (画面、ファイル、もしくは Log::Dispatch や Log::Log4perl などの他のログ機構など)"
+" を選択する仕組みを提供します。\n"
+"\n"
+"様々なモジュールでログの出力機能は用意されているのですが、不幸なことにそれらは標準化されていません。モジュールによっては STDERR に出力するほか、 "
+"'warn' で出力したり、独自のファイルログに出力したりしています。また、ログ出力モジュールの取得方法も標準化されていません。独自の名前のメソッドを呼び"
+"出す必要があるもののほか、パッケージ変数で取得できるものもあります。\n"
+"\n"
+"Perl の世界では、 CPAN "
+"内に多数のログ機構が用意されています。それらには良い点も悪い点もあるのですが、こちらも不幸なことに、既存の多数のログ出力機構では、ユーザから CPAN "
+"作者へのコミットが難しい仕組みになっています。このような理由から、 CPAN "
+"モジュールの作者は独自のログ出力機構を別々に用意する結果になってしまっています。\n"
+"\n"
+"このような問題を解決するため、我々はまずログ API を 2 つのパーツに分解しました。一方は _ログ出力_ 機能と呼べる仕組みで、 '$log->"
+"debug' のようなログの出力メソッドのほか、 '$log->is_debug' "
+"のように特定のログベルが有効化されているかどうかを調べるメソッドが含まれます。これは様々な CPAN モジュールでも提供されているものです。もう一方は "
+"_ログ消費_ 機能と呼べる仕組みで、ログの行き先 (ファイル／画面など) "
+"を設定する方法を提供するものです。こちらは一般にアプリケーション側に属するものです。\n"
+"\n"
+"CPAN モジュール側では 'Log::Any' を利用することで、ログ出力オブジェクトを取得することができます。アプリケーション側では、 "
+"Log::Any::Adapter を介してログの出力先を規定することができますし、どこにも出力しないようにすることもできます。\n"
+"\n"
+"'Log::Any' は非常に小さいモジュールであり、 Perl 5.8.1 以降では一切の依存関係がありません。このような構造により、小さな CPAN "
+"モジュールでよりよく動作するようになっています。また、既定では 'null' "
+"ログ出力になっているため、予期しない場所に出力されてしまうようなこともありません。\n"
+"\n"
+"このモジュールを提案していた元々の投稿については、 http://www.openswartz.com/2007/09/06/standard-"
+"logging-api/ をご覧ください。"
 
 #. tumbleweed/perl-Log-Contextual/summary
 #. leap/perl-Log-Contextual/summary
 msgid "Simple logging interface with a contextual log"
-msgstr ""
+msgstr "状況依存のシンプルなログインターフェイス"
 
 #. tumbleweed/perl-Log-Contextual/description
 #. leap/perl-Log-Contextual/description
@@ -21142,6 +21170,46 @@ msgid ""
 "in general you should use a real logger instead. For something more serious "
 "but not overly complicated, try Log::Dispatchouli (see SYNOPSIS for example.)"
 msgstr ""
+"主な利点:\n"
+"\n"
+"* * 効率的であること\n"
+"\n"
+"ログ関数にはコードブロックを指定しますが、指定したログレベルが無効化されている場合、ブロックは実行されなくなります:\n"
+"\n"
+"   log_debug { \"the new count in the database is \" . $rs->count };\n"
+"\n"
+"同様に 'D' で始まるメソッドは、指定したログレベルが有効化されている場合にのみ、 'Dumper' されます。\n"
+"\n"
+"* * 扱いやすい仕組みであること\n"
+"\n"
+"ログ関数はパラメータをそのまま返す仕組みであるため、下記のようにして表現の中に組み込むことができます:\n"
+"\n"
+" for (log_debug { \"downloading:\\n"
+"\" . join qq(\\n"
+"), @_ } @urls) { ... }\n"
+"\n"
+"* * 汎用的であること\n"
+"\n"
+"'Log::Contextual' はメジャーなログ出力すべてに対するインターフェイスです。 'Log::Contextual' "
+"を介してログ出力するだけで、出力先を後から切り替えることができます。\n"
+"\n"
+"* * パワフルであること\n"
+"\n"
+"'Log::Contextual' はユーザが定義した 'コード参照' "
+"をベースにしてログの出力を選択します。普通は知っておく必要がないものですが、必要になった時にその利点がわかるようになるものと思います。\n"
+"\n"
+"* * スケーラブルであること\n"
+"\n"
+"開発中のアプリケーションでログの出力機能を追加したいだけであれば、まず Log::Contextual::SimpleLogger をお使いになり、"
+"必要に応じて後から Log::Dispatchouli, Log::Dispatch, Log::Log4perl などに切り替えていくことができます。"
+"\n"
+"\n"
+"このモジュールは広範囲のログ機能に対応するため、シンプルなインターフェイスになっています。これにより、お使いのログインターフェイスを抽象化できることから、"
+"一方の出力先から他方に切り替える際も、できる限り負担無くログ出力ができるようになっています。\n"
+"\n"
+"また、このモジュールには、基本的なログ出力機能を有する Log::Contextual::SimpleLogger "
+"が付属していますが、一般的には実際のログ出力機能を利用した方がよいでしょう。また、本格的にログ出力機能を実装したい場合は、 Log::"
+"Dispatchouli をお試しください (SYNOPSIS に例が載っています) 。"
 
 #. tumbleweed/perl-Log-Dispatch/summary
 #. leap/perl-Log-Dispatch/summary
@@ -21180,7 +21248,7 @@ msgstr ""
 #. tumbleweed/perl-Log-Dispatch-Array/summary
 #. leap/perl-Log-Dispatch-Array/summary
 msgid "log events to an array (reference)"
-msgstr ""
+msgstr "ログイベントを配列 (参照) に出力するモジュール"
 
 #. tumbleweed/perl-Log-Dispatch-Array/description
 #. leap/perl-Log-Dispatch-Array/description
@@ -21189,12 +21257,13 @@ msgid ""
 "to an array reference. This is probably only useful for testing the logging "
 "of your code."
 msgstr ""
+"このモジュールは、 Log::Dispatch "
+"のログ出力システムを提供するもので、イベントを配列の参照に記録するものです。お使いのコードのテスト用に便利な仕組みです。"
 
 #. tumbleweed/perl-Log-Dispatch-Config/summary
 #. leap/perl-Log-Dispatch-Config/summary
-#, fuzzy
 msgid "Log4j for Perl"
-msgstr "Perl 向け log4j 実装"
+msgstr "Perl 向け log4j"
 
 #. tumbleweed/perl-Log-Dispatch-Config/description
 #. leap/perl-Log-Dispatch-Config/description
@@ -21204,10 +21273,13 @@ msgid ""
 "AppConfig format). I mean, this is log4j for Perl, not with all API "
 "compatibility though."
 msgstr ""
+"Log::Dispatch::Config は Log::Dispatch のサブクラスで、設定ファイル (既定では AppConfig 形式) "
+"を利用して Log::Dispatch オブジェクトを設定する機能を提供します。言わば Perl 向けの log4j とも呼べる仕組みですが、 API "
+"の互換性はありません。"
 
 #. tumbleweed/perl-Log-Dispatchouli/summary
 msgid "Simple Wrapper Around Log::Dispatch"
-msgstr ""
+msgstr "Log::Dispatch に対するシンプルなラッパー"
 
 #. tumbleweed/perl-Log-Dispatchouli/description
 msgid ""
@@ -21228,6 +21300,16 @@ msgid ""
 "subroutines are called only if needed. For more information read the String::"
 "Flogger docs."
 msgstr ""
+"Log::Dispatchouli は Log::Dispatch に対する薄いレイヤで、様々なカテゴリやファシリティ、レベル等々を考慮することなく、プロ"
+"グラム側にログ出力機能を提供するシンプルな仕組みです。これは、ログを設定するだけで作業が完了し、すぐにログ出力を行なうことができるようにするためのものです"
+"。\n"
+"\n"
+"Log::Dispatchouli は syslog (ファシリティを指定した場合) "
+"のほか、標準エラー出力や標準出力、ファイルやメモリ内の配列にそれぞれ出力することができます。メモリ内の配列は主にテスト用のものです。\n"
+"\n"
+"ログ操作に対してハンドルを得るためのシンプルな方法に加えて、 Log::Dispatchouli では String::Flogger "
+"を利用して対象となるログの処理を行ない、ログのデータ構造を簡単に作ることができます。基本的には、文字列はそのまま、配列の参照はその内容を ("
+"sprintf format, args) 、サブルーチンは必要なときにのみ呼び出されます。詳しくは String::Flogger をお読みください。"
 
 #. tumbleweed/perl-Log-Log4perl/summary
 #. leap/perl-Log-Log4perl/summary
@@ -21235,7 +21317,6 @@ msgid "Log4j implementation for Perl"
 msgstr "Perl 向け log4j 実装"
 
 #. tumbleweed/perl-Log-Log4perl/description
-#, fuzzy
 msgid ""
 "Log::Log4perl lets you remote-control and fine-tune the logging behaviour of "
 "your system from the outside. It implements the widely popular (Java-based) "
@@ -21279,59 +21360,47 @@ msgid ""
 "changing the parameters in a configuration file, which your system can re-"
 "read even while it's running!"
 msgstr ""
-"Log::Log4perl は、お使いのシステムにおけるログ動作を、ソースコードの外側から"
-"リモート制御／調整することのできるモジュールです。よく知られた (Java ベース"
-"の)log4j ログパッケージを、純粋な Perl のみで作成したものといえます。\n"
+"Log::Log4perl は、お使いのシステムにおけるログ動作を、ソースコードの外側からリモート制御／調整することのできるモジュールです。よく知られた "
+"(Java ベースの)log4j ログパッケージを、純粋な Perl のみで作成したものといえます。\n"
 "\n"
 "*Log::Log4perl の使用方法について、詳しくは下記をお読みください*\n"
 "\n"
 "    http://www.perl.com/pub/a/2002/09/11/log4perl.html\n"
 "\n"
-"ログ機能はデバッガにも匹敵する機能で、お使いのコードを実行する際、何が起こっ"
-"ているのかを知ることができる機能です。従来のログパッケージは、あまりにも柔軟"
-"性がなく、ログファイル内に大量のメッセージを出力してしまい、あまり助けにはな"
-"りませんでした。\n"
+"ログ機能はデバッガにも匹敵する機能で、お使いのコードを実行する際、何が起こっているのかを知ることができる機能です。従来のログパッケージは、あまりにも柔軟性"
+"がなく、ログファイル内に大量のメッセージを出力してしまい、あまり助けにはなりませんでした。\n"
 "\n"
-"'Log::Log4perl' はこのようなものではありません。 3 種類のレベルを用意し、生成"
-"されるログメッセージの量を制御することができます。\n"
+"'Log::Log4perl' はこのようなものではありません。 3 種類のレベルを用意し、生成されるログメッセージの量を制御することができます。\n"
 "\n"
 "* *\n"
 "\n"
-"お使いのシステムにおける中枢となる場所 (設定ファイルまたは起動時のコード) "
-"で、どのコンポーネント (クラス、関数) からのログを記録するのかを設定すること"
-"ができます。\n"
+"お使いのシステムにおける中枢となる場所 (設定ファイルまたは起動時のコード) で、どのコンポーネント (クラス、関数) "
+"からのログを記録するのかを設定することができます。\n"
 "\n"
 "* *\n"
 "\n"
-"また、ログレベルを設定することで、これらのコンポーネントから、どれだけ詳細な"
-"ログを出力するのかを指定することもできます。\n"
+"また、ログレベルを設定することで、これらのコンポーネントから、どれだけ詳細なログを出力するのかを指定することもできます。\n"
 "\n"
 "* *\n"
 "\n"
-"これ以外にも、アペンダと呼ばれる仕組みを指定することもできます。これはログ"
-"メッセージの出力先を指定する (\"画面に表示するのか、もしくは /tmp/my.log のよ"
-"うなファイルに追記するのかなど\") ほか、書式 (\"日付を先に書いて、ファイル名"
-"と行番号、メッセージなどが続く\") を指定することもできます。\n"
+"これ以外にも、アペンダと呼ばれる仕組みを指定することもできます。これはログメッセージの出力先を指定する (\"画面に表示するのか、もしくは /tmp/"
+"my.log のようなファイルに追記するのかなど\") ほか、書式 (\"日付を先に書いて、ファイル名と行番号、メッセージなどが続く\") "
+"を指定することもできます。\n"
 "\n"
-"これはとてもパワフルで柔軟な仕組みです。任意の時点でログ機能を有効／無効に切"
-"り替えることができるほか、ログの詳細さを指定したり、現在実行中のサブサブシス"
-"テムを設定することもできます。\n"
+"これはとてもパワフルで柔軟な仕組みです。任意の時点でログ機能を有効／無効に切り替えることができるほか、ログの詳細さを指定したり、現在実行中のサブサブシステ"
+"ムを設定することもできます。\n"
 "\n"
-"たとえば下記のような例を考えてみます: お使いのシステムで、 'MySystem::"
-"Helpers::ScanDir' というコンポーネントに問題があるものの、詳細なログ機能を有"
-"効にしてしまうと、不要なログが大量に生成されてしまい、その問題について調べる"
-"前にシステムをダウンさせてしまうような状況です。 'Log::Log4perl' を使用すれ"
-"ば、システムに対して \"通常のログファイルには重大なエラーのみを記録するものと"
-"する。 2 つめのログファイルには、 'MySystem::Helpers::ScanDir'コンポーネント"
-"に関する完全なデバッグログを出力し、これを発生元とするメッセージはすべて新し"
-"いログファイルに書き込む\" のような指定を行なうことができます。これらの設定は"
-"すべて設定ファイルから行なうことができるほか、設定ファイルは実行中でも読み込"
-"み直すように指示することができます。"
+"たとえば下記のような例を考えてみます: お使いのシステムで、 'MySystem::Helpers::ScanDir' というコンポーネントに問題があるも"
+"のの、詳細なログ機能を有効にしてしまうと、不要なログが大量に生成されてしまい、その問題について調べる前にシステムをダウンさせてしまうような状況です。 "
+"'Log::Log4perl' を使用すれば、システムに対して \"通常のログファイルには重大なエラーのみを記録するものとする。 2 "
+"つめのログファイルには、 'MySystem::Helpers::ScanDir'コンポーネントに関する完全なデバッグログを出力し、"
+"これを発生元とするメッセージはすべて新しいログファイルに書き込む\" のような指定を行なうことができます。これらの設定はすべて設定ファイルから行なうことが"
+"できるほか、設定ファイルは実行中でも読み込み直すように指示することができます。"
 
 #. tumbleweed/perl-Log-Message/summary
 #. leap/perl-Log-Message/summary
 msgid "A generic message storing mechanism"
-msgstr ""
+msgstr "汎用メッセージ保管機構"
 
 #. tumbleweed/perl-Log-Message/description
 #. leap/perl-Log-Message/description
@@ -21346,37 +21415,40 @@ msgid ""
 "Log::Message also provides a powerful way of searching through items by "
 "regexes on messages, tags and level."
 msgstr ""
+"Log::Message は汎用的なメッセージ保管の仕組みです。メッセージを共有または独自のスタック内に保存し、それに対してメタデータを割り当てます。タイ"
+"ムスタンプやスタックトレースなど、いくつかのメタデータは自動的に追加されますが、ユーザ側でメタデータを設定することもできます。これにはたとえば、識別やグル"
+"ープ化のためのタグや、メッセージを処理する際のレベル (ログを記録するだけなのか、それとも die で終了するのか) などがあります。\n"
+"\n"
+"Log::Message では、メッセージやタグ、レベルに対して、正規表現を利用したパワフルな検索機能も用意されています。"
 
 #. tumbleweed/perl-Log-Message-Simple/summary
 #. leap/perl-Log-Message-Simple/summary
-#, fuzzy
 msgid "Simplified interface to Log::Message"
-msgstr "PostgreSQL 向けシンプル C クライアントインターフェイス"
+msgstr "Log::Message に対するシンプルなインターフェイス"
 
 #. tumbleweed/perl-Log-Message-Simple/description
 #. leap/perl-Log-Message-Simple/description
 msgid ""
 "This module provides standardized logging facilities using the 'Log::"
 "Message' module."
-msgstr ""
+msgstr "このモジュールは、 'Log::Message' モジュールを利用して、標準化されたログ出力機構を提供します。"
 
 #. tumbleweed/perl-MIME-Charset/summary
 #. leap/perl-MIME-Charset/summary
-#, fuzzy
 msgid "Charset Information for MIME"
-msgstr "GNOME 向けネットワーク情報アプレット"
+msgstr "MIME 向けキャラクタセット情報"
 
 #. tumbleweed/perl-MIME-Charset/description
 #. leap/perl-MIME-Charset/description
 msgid ""
 "MIME::Charset provides information about character sets used for MIME "
 "messages on Internet."
-msgstr ""
+msgstr "MIME::Charset は、インターネット上の MIME メッセージで使用される、キャラクタセットに関する情報を提供します。"
 
 #. tumbleweed/perl-MIME-EncWords/summary
 #. leap/perl-MIME-EncWords/summary
 msgid "deal with RFC 2047 encoded words (improved)"
-msgstr ""
+msgstr "RFC 2047 でエンコードされた単語を扱うモジュール (改善版)"
 
 #. tumbleweed/perl-MIME-EncWords/description
 #. leap/perl-MIME-EncWords/description
@@ -21412,6 +21484,34 @@ msgid ""
 "\n"
 "      Subject: ???(laziness), ????(impatience), ??(hubris)"
 msgstr ""
+"アメリカの人々にとっては、このモジュールがいったい何物なのかがわからないでしょう。ヨーロッパやロシアなどの人々であればわかるものでしょう ':-)'\n"
+"\n"
+"たとえば、下記のような正しい MIME ヘッダが届いたとします:\n"
+"\n"
+"      From: =?US-ASCII?Q?Keith_Moore?= <moore@cs.utk.edu>       To: "
+"=?ISO-8859-1?Q?Keld_J=F8rn_Simonsen?= <keld@dkuug.dk>       CC: "
+"=?ISO-8859-1?Q?Andr=E9_?= Pirard <PIRARD@vm1.ulg.ac.be>       Subject: "
+"=?ISO-8859-1?B?SWYgeW91IGNhbiByZWFkIHRoaXMgeW8=?=        "
+"=?ISO-8859-2?B?dSB1bmRlcnN0YW5kIHRoZSBleGFtcGxlLg==?=        =?US-"
+"ASCII?Q?.._cool!?=\n"
+"\n"
+"これらのフィールドは下記のようにデコードされることになります (実際には /o や 'e (アクセント付き文字) などの特殊なアルファベットが入ります):"
+"\n"
+"\n"
+"      From: Keith Moore <moore@cs.utk.edu>       To: Keld J/orn Simonsen "
+"<keld@dkuug.dk>       CC: Andr'e  Pirard <PIRARD@vm1.ulg.ac.be>       "
+"Subject: If you can read this you understand the example... cool!\n"
+"\n"
+"*補足*: 下記はアメリカやヨーロッパの人々によっては分からないものですが、東アジア系の人々であればわかるものでしょう '(^_^)'\n"
+"\n"
+"たとえば、下記のような正しい MIME ヘッダが届いたとします:\n"
+"\n"
+"      Subject: =?EUC-KR?B?sNTAuLinKGxhemluZXNzKSwgwvzB9ri7seIoaW1w?=        "
+"=?EUC-KR?B?YXRpZW5jZSksILGzuLgoaHVicmlzKQ==?=\n"
+"\n"
+"これらのフィールドは下記のようにデコードされることになります:\n"
+"\n"
+"      Subject: ???(laziness), ????(impatience), ??(hubris)"
 
 #. tumbleweed/perl-MIME-Lite/summary
 #. leap/perl-MIME-Lite/summary
@@ -21616,7 +21716,7 @@ msgstr ""
 #. tumbleweed/perl-Mac-PropertyList/summary
 #. leap/perl-Mac-PropertyList/summary
 msgid "work with Mac plists at a low level"
-msgstr ""
+msgstr "Mac のプロパティリストを低レベルで操作するモジュール"
 
 #. tumbleweed/perl-Mac-PropertyList/description
 #. leap/perl-Mac-PropertyList/description
@@ -21633,6 +21733,14 @@ msgid ""
 "You don't need to be on Mac OS X to use this. It simply parses and "
 "manipulates a text format that Mac OS X uses."
 msgstr ""
+"このモジュールは Mac OS X のプロパティリスト (plist) 形式に対する低レベルなインターフェイスです。これを利用してアプリケーションを構築す"
+"るためのインターフェイスとするものではないため、ユーザが参照するようなものをここにおくべきではありません。\n"
+"\n"
+"このモジュールは plist ファイルを処理することができるほか、それをデータ構造に戻すこともできます。データ構造はそのまま取得することができるほか、 "
+"XML 形式で plist に戻すこともできます。データ構造を変更したい場合は、それぞれ必要に応じて独自に実施してください。\n"
+"\n"
+"このモジュールを利用するにあたっては、 Mac OS X である必要はありません。このモジュールは、 Mac OS X "
+"が使用するテキスト形式を、単純に処理して操作するだけです。"
 
 #. tumbleweed/perl-Mail-DKIM/summary
 #. leap/perl-Mail-DKIM/summary
@@ -21742,19 +21850,19 @@ msgstr ""
 #. tumbleweed/perl-Mail-SPF-Test/summary
 #. leap/perl-Mail-SPF-Test/summary
 msgid "SPF test-suite class"
-msgstr ""
+msgstr "SPF テストスイートクラス"
 
 #. tumbleweed/perl-Mail-SPF-Test/description
 #. leap/perl-Mail-SPF-Test/description
 msgid ""
 "  *Mail::SPF::Test* is a class for reading and manipulating SPF test-suite   "
 "data."
-msgstr ""
+msgstr "  *Mail::SPF::Test* は SPF のデータを読み込んで操作することができるテストスイートです。"
 
 #. tumbleweed/perl-Mail-Sender/summary
 #. leap/perl-Mail-Sender/summary
 msgid "Module for Sending Mails with Attachments Through an Smtp Server"
-msgstr ""
+msgstr "SMTP サーバを介して添付ファイル付きのメールを送信するためのモジュール"
 
 #. tumbleweed/perl-Mail-Sender/description
 #. leap/perl-Mail-Sender/description
@@ -21766,6 +21874,11 @@ msgid ""
 "marked as \"out of favor\". Email::Sender is the go-to choice when you need "
 "to send Email from Perl. Go there, be happy!"
 msgstr ""
+"Mail::Sender はメールを送信するためのオブジェクト指向のインターフェイスを提供します。 IO::Socket "
+"を利用して、メールサーバに直接接続します。\n"
+"\n"
+"Mail::Sender は廃止予定のモジュールで、公式にも \"人気を失いつつある\" モジュールになっています。メールの送信機能を利用したい場合は、 "
+"Email::Sender モジュールをお使いください。"
 
 #. tumbleweed/perl-MailTools/summary
 #. tumbleweed/perl-MailTools/description
@@ -21777,7 +21890,7 @@ msgstr "様々な電子メール関連モジュール"
 #. tumbleweed/perl-Makefile-DOM/summary
 #. leap/perl-Makefile-DOM/summary
 msgid "Simple DOM parser for Makefiles"
-msgstr ""
+msgstr "Makefile 向けのシンプルな DOM パーサ"
 
 #. tumbleweed/perl-Makefile-DOM/description
 #. leap/perl-Makefile-DOM/description
@@ -21808,10 +21921,27 @@ msgid ""
 "Document::Nmake', also returns instances of the the MDOM::Document manpage "
 "class. Later, I'll also consider adding support for dmake and bsdmake."
 msgstr ""
+"このライブラリは (GNU) Makefile に対する高度な文法処理モジュールです。 Makefile をすべての要素を失わずに \"文書\" "
+"として処理します。処理結果は DOM ツリーのようなデータ構造になります。 DOM "
+"ツリーには入力ファイル内の情報を断片として保持しており、ホワイトスペースや空行、 Makefile のコメントなども保持しています。これにより、 DOM "
+"ツリーから元々の Makefile を正確に再現することができるようになっています。これに加えて、 Perl ソースを処理する際の PPI モジュールや、"
+" HTML ソースを処理する際に利用する HTML::TreeBuilder のように、 DOM ツリーの各ノードはすべて変更可能です。\n"
+"\n"
+"AST を生成する本格的な GNU make パーサをお求めの場合は、 Makefile::Parser::GmakeDB をお使いください。\n"
+"\n"
+"'Makefile::DOM' のインターフェイス設計は PPI のものをまねて作られています。事実、ソースコードと POD のドキュメンテーションは "
+"PPI::Node, PPI::Element manpage, PPI::Dumper から直接借りて作られています。もちろんこの借用に際しては、 "
+"PPI の作者である Adam Kennedy 氏からの全面的な許可を得てあります。\n"
+"\n"
+"'Makefile::DOM' は特定の Makefile の文法に依存した作りにはならないようにしています。 DOM ノードタイプが同じものであれば、"
+"異なる Makefile DOM 生成モジュールで共有することができます。たとえば MDOM::Document::Gmake は GNU "
+"Makefile を処理して MDOM::Document のインスタンスを返しますが、 NMAKE Makefile を処理する "
+"'MDOM::Document::Nmake' の結果でも、 MDOM::Document を返します。なお、 dmake と bsdmake "
+"に対するサポートも追加される予定です。"
 
 #. tumbleweed/perl-Mason/summary
 msgid "Powerful, high-performance templating for the web and beyond"
-msgstr ""
+msgstr "Web 向けのパワフルで高性能なテンプレートシステム"
 
 #. tumbleweed/perl-Mason/description
 msgid ""
@@ -21833,11 +21963,23 @@ msgid ""
 "The previous major version of Mason (1.x) is available under the name the "
 "HTML::Mason manpage."
 msgstr ""
+"Mason はパワフルな Perl ベースのテンプレートシステムです。様々な種類の動的コンテンツを生成するよう設計されています。\n"
+"\n"
+"多数あるテンプレートシステムとは異なり、 Mason はテンプレートに対して新しく \"わかりやすい\" "
+"文法を発明しようとしたりはしていません。テンプレートを作成する際に固有の文法と機能を提供しますが、 Perl として明快に認識できるものです。\n"
+"\n"
+"Mason は Web ページを生成する際にもっともよく使われるもので、コンパニオン Web フレームワーク Poet "
+"には、ルーティングやコンテンツの生成機能を最大限に生かすように設計されています。このほか、 Catalyst::View::Mason2 や "
+"Dancer::Template::Mason2 のような Web フレームワーク向けのテンプレートレイヤとしても使用することができます。\n"
+"\n"
+"すべてのドキュメンテーションは Mason::Manual 内にあります。\n"
+"\n"
+"以前のメジャーバージョン (1.x) は、 HTML::Mason の名称で公開されています。"
 
 #. tumbleweed/perl-Math-Base-Convert/summary
 #. leap/perl-Math-Base-Convert/summary
 msgid "Very Fast Base to Base Conversion"
-msgstr ""
+msgstr "非常に高速な基数間変換"
 
 #. tumbleweed/perl-Math-Base-Convert/description
 #. leap/perl-Math-Base-Convert/description
@@ -21848,23 +21990,26 @@ msgid ""
 "This module is pure Perl, has no external dependencies, and is backward "
 "compatible with old versions of Perl 5."
 msgstr ""
+"このモジュールは、 2 (バイナリ) から 65535 までの間の任意の基数の数値を高速に変換する機能を提供します。\n"
+"\n"
+"このモジュールは純粋な Perl として作られていて、外部の依存関係はありません。また、 Perl 5 の古いバージョンへの後方互換性もあります。"
 
 #. tumbleweed/perl-Math-BigInt/summary
 #. leap/perl-Math-BigInt/summary
 msgid "Arbitrary size integer/float math package"
-msgstr ""
+msgstr "任意のサイズの整数／小数点計算パッケージ"
 
 #. tumbleweed/perl-Math-BigInt/description
 #. leap/perl-Math-BigInt/description
 msgid ""
 "Math::BigInt provides support for arbitrary precision integers. Overloading "
 "is also provided for Perl operators."
-msgstr ""
+msgstr "Math::BigInt は任意の精度の整数に対応しています。 Perl の演算子に対するオーバーロードも提供されています。"
 
 #. tumbleweed/perl-Math-ConvexHull/summary
 #. leap/perl-Math-ConvexHull/summary
 msgid "Calculate convex hulls using Graham's scan (n*log(n))"
-msgstr ""
+msgstr "グラハムスキャン (n*log(n)) を利用した凸包の計算"
 
 #. tumbleweed/perl-Math-ConvexHull/description
 #. leap/perl-Math-ConvexHull/description
@@ -21883,12 +22028,19 @@ msgid ""
 "might not help you. In that case, you will have to remove duplicates "
 "yourself."
 msgstr ""
+"'Math::ConvexHull' は 2D "
+"領域内の点の集合から、凸包を計算するためのシンプルなモジュールです。任意の点の集合から凸包を計算するにあたって、"
+"既知のもの中でもっとも高速なアルゴリズムであるグラハムスキャン (計算量 O(n*log(n))) をそのまま実装しています。また、凸包の中に含まれない除"
+"去点向けのメソッドもいくつか用意されています。ただし、将来のバージョンでは実装が変わる可能性もあります。\n"
+"\n"
+"なお、この実装では重複する点を扱うことができません。そのため、直前の点と現在の点が (小数点の単位で) 非常に近い場合、本モジュールのバージョン "
+"1.02 以降では無視されるようになっています。しかしながら、重複する点をランダムな順序で与えた場合は、この安全機能はうまく動作しませんので、ご自身で取り"
+"除く必要があります。"
 
 #. tumbleweed/perl-Math-Round/summary
 #. leap/perl-Math-Round/summary
-#, fuzzy
 msgid "Perl extension for rounding numbers"
-msgstr "XML ドキュメントを書き込むための Perl 拡張"
+msgstr "数値を丸めるための Perl 拡張"
 
 #. tumbleweed/perl-Math-Round/description
 #. leap/perl-Math-Round/description
@@ -21897,11 +22049,13 @@ msgid ""
 "The functions *round* and *nearest* are exported by default; others are "
 "available as described below. \"use ... qw(:all)\" exports all functions."
 msgstr ""
+"*Math::Round* は様々な方法で数値を丸める機能を提供します。既定では *round* と *nearest* "
+"の各館数が公開されますが、その他の関数は指定に応じて公開されます。 \"use ... qw(:all)\" を指定すると、すべての関数を公開します。"
 
 #. tumbleweed/perl-Memoize-ExpireLRU/summary
 #. leap/perl-Memoize-ExpireLRU/summary
 msgid "Expiry plug-in for Memoize that adds LRU cache expiration"
-msgstr ""
+msgstr "LRU キャッシュの期限切れを記憶するプラグイン"
 
 #. tumbleweed/perl-Memoize-ExpireLRU/description
 #. leap/perl-Memoize-ExpireLRU/description
@@ -21911,11 +22065,14 @@ msgid ""
 "semantics, that is, the last n results, where n is specified as the argument "
 "to the 'CACHESIZE' parameter, will be cached."
 msgstr ""
+"記憶の理論的な仕組みについては、 Memorize モジュールのドキュメンテーションをお読みください。このモジュールは、 LRU の方式で "
+"Memorize 向けの期限切れポリシーを実装しています。 LRU では最新の n 個の項目のみを記憶する仕組みで、 n は 'CACHESIZE' "
+"パラメータで指定することができます。"
 
 #. tumbleweed/perl-Meta-Builder/summary
 #. leap/perl-Meta-Builder/summary
 msgid "Tools for creating Meta objects to track custom metrics."
-msgstr ""
+msgstr "Meta オブジェクトに対して独自のメトリックを追跡するためのツール"
 
 #. tumbleweed/perl-Meta-Builder/description
 #. leap/perl-Meta-Builder/description
