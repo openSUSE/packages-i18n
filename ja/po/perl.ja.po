@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2016-11-08 18:34:07\n"
-"PO-Revision-Date: 2017-02-23 07:37+0000\n"
+"PO-Revision-Date: 2017-02-25 01:40+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/perl-master/ja/>\n"
@@ -23198,7 +23198,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-Aliases/summary
 #. leap/perl-MooseX-Aliases/summary
 msgid "easy aliasing of methods and attributes in Moose"
-msgstr ""
+msgstr "Moose 内でメソッドと属性の別名を簡単に設定するためのモジュール"
 
 #. tumbleweed/perl-MooseX-Aliases/description
 #. leap/perl-MooseX-Aliases/description
@@ -23212,11 +23212,17 @@ msgid ""
 "\n"
 "    has ip_addr => (         alias => [ qw(ipAddr ip) ],     );"
 msgstr ""
+"MooseX::Aliases モジュールは、 Moose 内で簡単に別名を定義することができるモジュールです。 'has()' に対して別名のパラメータ"
+"を指定することで、標準のアクセサに加えて別名のアクセサが生成されます。属性はコンストラクタ内で別名を利用して初期化することもできます。\n"
+"\n"
+"また、配列の参照を利用することで、複数の別名を一括で作成することもできます:\n"
+"\n"
+"    has ip_addr => (         alias => [ qw(ipAddr ip) ],     );"
 
 #. tumbleweed/perl-MooseX-App-Cmd/summary
 #. leap/perl-MooseX-App-Cmd/summary
 msgid "Mashes up MooseX::Getopt and App::Cmd"
-msgstr ""
+msgstr "MooseX::Getopt と App::Cmd のマッシュアップ"
 
 #. tumbleweed/perl-MooseX-App-Cmd/description
 #. leap/perl-MooseX-App-Cmd/description
@@ -23230,11 +23236,18 @@ msgid ""
 "defining the options for you instead of 'opt_spec' returning a Getopt::Long::"
 "Descriptive spec."
 msgstr ""
+"このモジュールは、 App:Cmd と MooseX::Getopt を合体させたものです。\n"
+"\n"
+"App::Cmd が提案しているように (特に App::Cmd::Tutorial をお読みください) 、 MooseX::App::Cmd::"
+"Command を App::Cmd::Command に置き換えてお使いください。\n"
+"\n"
+"あとは Moose のクラスとして moose コマンドを記述するだけです。 MooseX::Getopt では Getopt::Long::"
+"Descriptive スペックを返す 'opt_spec' の代用として、オプションを定義することができます。"
 
 #. tumbleweed/perl-MooseX-ArrayRef/summary
 #. leap/perl-MooseX-ArrayRef/summary
 msgid "blessed arrayrefs with Moose"
-msgstr ""
+msgstr "Moose によるブレスされた配列参照"
 
 #. tumbleweed/perl-MooseX-ArrayRef/description
 #. leap/perl-MooseX-ArrayRef/description
