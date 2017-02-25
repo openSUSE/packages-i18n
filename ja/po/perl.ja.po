@@ -22098,10 +22098,24 @@ msgid ""
 "Rather you will usually want to create a sugar class that exports enhanced "
 "API functions that manipulate the meta object."
 msgstr ""
+"メタプログラミングは日に日に知られるようになってきています。メタプログラミングの知名度は、多くの問題が比較的簡単であるという事実から来ています。いくつかの"
+"特化したメタツールが公開されていて、たとえば Mosse で使用されている Class:MOP などは、クラスのメタデータを追跡する際に使用するものです。"
+"\n"
+"\n"
+"Meta::Builder はメタオブジェクトを記述するための汎用的なツールです。特化したツールとは異なり、 Meta::Builder "
+"は特定のメトリックを使用していることを想定していません。このほかにも、 Meta::Builder では、お使いのメタオブジェクト内にメトリックを追加する"
+"にあたって、他のパッケージ向けのフックを提供することで、メタオブジェクトベースのツールを拡張しやすくする仕組みも用意されています。\n"
+"\n"
+"特定の用途に特化したメタオブジェクトツールをご希望の場合は、そちらをお使い管井。しかしながら、メトリックの対を追跡するためのシンプルなメタオブジェクトを必"
+"要とする場合は、 Meta::Builder をお使いください。\n"
+"\n"
+"Meta::Builder は省エネルギーな仕組みです。多くの場合、お使いのメタオブジェクトのクラスで使用する際、メタオブジェクトを直接必要とするクラスは"
+"作成する必要はありません。その代わり、メタオブジェクトを操作するための拡張 API 関数を公開する、 \"シュガークラス\" "
+"を作成する必要があるはずです。"
 
 #. tumbleweed/perl-Method-Signatures/summary
 msgid "Method and Function Declarations with Signatures and No Source Filter"
-msgstr ""
+msgstr "シグネーチャ付きでソースフィルタのないメソッドと関数の宣言"
 
 #. tumbleweed/perl-Method-Signatures/description
 msgid ""
@@ -22117,18 +22131,26 @@ msgid ""
 "automatically provide the invocant as '$self' (by default). No more 'my "
 "$self = shift'."
 msgstr ""
+"'func' と 'method' という 2 つのキーワードを提供します。これらを利用することで、 'my $self = shift; "
+"my($thing) = @_' のような記述を行なうことなくシグネーチャ付きのサブルーチンを作成することができます。\n"
+"\n"
+"'func' は 'sub' に似た仕組みですが、通常はどのようなパラメータを指定すべきかを示すシグネーチャを設定します。これは  'my($foo, "
+"$bar) = @_' にとって代わる仕組みで、それ以上のことを行なう仕組みです。\n"
+"\n"
+"'method' は 'func' に似た仕組みですが、こちらはメソッドを作成する際に使用するものです。これにより、自動的に '$self' "
+"を指定して実行する仕組みを提供します。言い換えると、 'my $self = shift' はもはや不要になるということです。"
 
 #. tumbleweed/perl-Method-Signatures-Simple/summary
 #. tumbleweed/perl-Method-Signatures-Simple/description
 #. leap/perl-Method-Signatures-Simple/summary
 #. leap/perl-Method-Signatures-Simple/description
 msgid "Basic method declarations with signatures, without source filters"
-msgstr ""
+msgstr "シグネーチャ付きの基本的なメソッド宣言 (ソースフィルタなし)"
 
 #. tumbleweed/perl-Minion/summary
 #. leap/perl-Minion/summary
 msgid "Job queue"
-msgstr ""
+msgstr "ジョブキュー"
 
 #. tumbleweed/perl-Minion/description
 msgid ""
@@ -22186,11 +22208,57 @@ msgid ""
 "processing a job, the system will detect this and ensure that no job is left "
 "in an uncertain state, depending on \"missing_after\"."
 msgstr ""
+"Minion は http://mojolicious.org で公開されているリアルタイム Web フレームワーク向けのジョブキューです。複数の名前付き"
+"キューに対応しているほか、優先順位や遅延ジョブ、ジョブの依存関係や実行結果、バックオフ無しでの再試行や統計情報、分散型ワーカーや並列処理、自動スケーリング"
+"や遠隔制御、リソースリークの保護と複数バックエンド (例: http://www.postgresql.org) への対応などが行われています。\n"
+"\n"
+"ジョブキューの仕組みにより、計算量の多い処理を、リクエスト／レスポンスのライフサイクルからは切り離して、バックグラウンドプロセスとして実行することができる"
+"ようになります。このような処理にはたとえば、画像のサイズ変更や迷惑メールのフィルタリング、 HTTP のダウンロードや tar "
+"ボールの作成、キャッシュの準備のほか、すぐに処理することのできない処理であればどのようなものにも適用することができます。\n"
+"\n"
+"  use Mojolicious::Lite;\n"
+"\n"
+"  plugin Minion => {Pg => 'postgresql://sri:s3cret@localhost/test'};\n"
+"\n"
+"     app->minion->add_task(poke_mojo => sub {     my $job = shift;     "
+"$job->app->ua->get('mojolicious.org');     $job->app->log->debug('We have "
+"poked mojolicious.org for a visitor');   });\n"
+"\n"
+"     get '/' => sub {     my $c = shift;     "
+"$c->minion->enqueue('poke_mojo');     $c->render(text => 'We will poke "
+"mojolicious.org for you soon.');   };\n"
+"\n"
+"  app->start;\n"
+"\n"
+"バックグラウンドのワーカープロセスは、通常 Minion::Command::minion::worker のコマンドで開始されますが、"
+"こちらはアプリケーションが Mojolicious::Plugin::Minion プラグインを読み込んだ段階で、自動的に利用できるようになるものです。"
+"\n"
+"\n"
+"  $ ./myapp.pl minion worker\n"
+"\n"
+"ジョブは Minion::Command::minion::job をコマンドラインから利用して管理することができます。\n"
+"\n"
+"  $ ./myapp.pl minion job\n"
+"\n"
+"systemd でバッググラウンドのワーカープロセスを管理したい場合は、下記のようなユニット設定ファイルをお使いください。\n"
+"\n"
+"  [Unit]   Description=My Mojolicious application workers   After=postgresql."
+"service\n"
+"\n"
+"  [Service]   Type=simple   ExecStart=/home/sri/myapp/myapp.pl minion worker "
+"-m production   KillMode=process\n"
+"\n"
+"  [Install]   WantedBy=multi-user.target\n"
+"\n"
+"それぞれのジョブは成功する場合も失敗する場合もありますが、いずれにしても失われてしまうことはありません。システムは最終的に一貫性の保たれた状態になりますし"
+"、ジョブの結果は必要なだけ保持します (\"remove_after\") "
+"。個別のワーカーではジョブの処理途中で失敗する場合もありますが、システム側ではそれを検出して、不確定なジョブが残らないように動作します (\""
+"missing_after\")。"
 
 #. tumbleweed/perl-Mixin-Linewise/summary
 #. leap/perl-Mixin-Linewise/summary
 msgid "write your linewise code for handles; this does the rest"
-msgstr ""
+msgstr "ハンドルに対する行処理コードの記述"
 
 #. tumbleweed/perl-Mixin-Linewise/description
 #. leap/perl-Mixin-Linewise/description
@@ -22200,21 +22268,24 @@ msgid ""
 "the Mixin::Linewise::Writers manpage, you can just write a method to handle "
 "handles, and methods for handling strings and filenames are added for you."
 msgstr ""
+"文字列をハンドルのようなオブジェクトに変換するなど、入出力用に開いているファイルを扱うのは面倒です。 Mixin::Linewise::Readers "
+"manpage と Mixin::Linewise::Writers "
+"を利用することで、ハンドルを処理するためのメソッドを記述するだけで、文字列やファイル名を処理するためのメソッドが追加されるようになります。"
 
 #. tumbleweed/perl-Mo/summary
 #. leap/perl-Mo/summary
 msgid "Micro Objects. Mo is less"
-msgstr ""
+msgstr "マイクロオブジェクト (Mo is less)"
 
 #. tumbleweed/perl-Mo/description
 #. leap/perl-Mo/description
 msgid "Micro Objects. Mo is less."
-msgstr ""
+msgstr "マイクロオブジェクト (Mo is less) です。"
 
 #. tumbleweed/perl-Mock-Quick/summary
 #. leap/perl-Mock-Quick/summary
 msgid "Quickly mock objects and classes, even temporarily replace them,"
-msgstr ""
+msgstr "すばやくオブジェクトやクラスを真似るツール (一時的な置き換えにも対応)"
 
 #. tumbleweed/perl-Mock-Quick/description
 #. leap/perl-Mock-Quick/description
@@ -22239,11 +22310,25 @@ msgid ""
 "the original class methods. Best of all this is a localized tool, when your "
 "control object falls out of scope the original class is restored."
 msgstr ""
+"Mock-Quick は Mocking ライブラリを使用する際に発生する問題に対応するための仕組みです。\n"
+"\n"
+"CPAN には様々な Mocking "
+"ライブラリが公開されています。これらのライブラリで主に発生する問題としては、冗長な文法であったり、重要な副作用があったりなどがあります。 Mocking "
+"ライブラリによっては、特定のクラスを真似るように求めるものがあり、いったんアンロードして再定義するようなものもあります。これは特に、文法レベルでクラスをオ"
+"ーバーライドしたいだけの場合には問題となります。\n"
+"\n"
+"Mock-Quick は定義型のモックインターフェイスを提供します。これにより、簡潔でありながらも明確な文法になります。オブジェクトのインスタンスやクラス"
+"を真似るための個別の仕組みも用意されています。独自の属性やメソッドを持つオブジェクトのインスタンスを、すばやく作成することができます。匿名クラスの作成にも"
+"対応しているほか、匿名クラスを一方のクラスから継承させたり、必要なメソッドを取り込んだりすることもできます。\n"
+"\n"
+"Mock-Quick では、既存のクラス内でメソッドをオーバーライドするための、オブジェクト指向インターフェイスを提供するツールも用意されています。このツ"
+"ールにより、もともとのクラスメソッドを復元することもできるようになります。これらすべてはローカライズされたツールで、お使いのコントロールオブジェクトがスコ"
+"ープから外れた際、元のクラスが復元される仕組みです。"
 
 #. tumbleweed/perl-Modern-Perl/summary
 #. tumbleweed/perl-Modern-Perl/description
 msgid "enable all of the features of Modern Perl with one import"
-msgstr ""
+msgstr "Perl の新しい機能を一括でインポートするモジュール"
 
 #. tumbleweed/perl-Module-Build/summary
 #. leap/perl-Module-Build/summary
@@ -22252,7 +22337,6 @@ msgstr "Perl モジュールの構築とインストール"
 
 #. tumbleweed/perl-Module-Build/description
 #. leap/perl-Module-Build/description
-#, fuzzy
 msgid ""
 "'Module::Build' is a system for building, testing, and installing Perl "
 "modules. It is meant to be an alternative to 'ExtUtils::MakeMaker'. "
@@ -22292,26 +22376,22 @@ msgid ""
 "\n"
 "You can run the 'help' action for a complete list of actions."
 msgstr ""
-"'Module::Build' は Perl モジュールを構築し、テストし、インストールするための"
-"システムです。 'ExtUtils::MakeMaker' の代替となるべく開発されています。開発者"
-"は 'MakeMaker' よりもずっと直観的な方法で、モジュールの動作を変更することもで"
-"きます。また、お使いのシステムには 'make' を必要としなくなります。それは、 "
-"'Module::Build' のほとんどのコードは純粋な Perl で作成されていて、クロスプ"
-"ラットフォームな方法で書かれているためです。\n"
+"'Module::Build' は Perl モジュールを構築し、テストし、インストールするためのシステムです。 'ExtUtils::"
+"MakeMaker' の代替となるべく開発されています。開発者は 'MakeMaker' "
+"よりもずっと直観的な方法で、モジュールの動作を変更することもできます。また、お使いのシステムには 'make' を必要としなくなります。それは、 "
+"'Module::Build' のほとんどのコードは純粋な Perl で作成されていて、クロスプラットフォームな方法で書かれているためです。\n"
 "\n"
-"'ExtUtils::MakeMaker' と 'Module::Build' の比較について、詳しくは "
-"\"MOTIVATIONS\" のマニュアルページをお読みください。\n"
+"'ExtUtils::MakeMaker' と 'Module::Build' の比較について、詳しくは \"MOTIVATIONS\" "
+"のマニュアルページをお読みください。\n"
 "\n"
-"'Module::Build' やこれをインストール時に使用するモジュールをインストールする"
-"には、下記のようにして行ないます:\n"
+"'Module::Build' やこれをインストール時に使用するモジュールをインストールするには、下記のようにして行ないます:\n"
 "\n"
-"  perl Build.PL       # 'Build.PL' スクリプトが 'Build' スクリプトを作成しま"
-"す   ./Build             # カレントディレクトリにある \"Build\" スクリプトを"
-"指定して実行します   ./Build test           ./Build install\n"
+"  perl Build.PL       # 'Build.PL' スクリプトが 'Build' スクリプトを作成します   ./"
+"Build             # カレントディレクトリにある \"Build\" スクリプトを指定して実行します   ./Build "
+"test           ./Build install\n"
 "\n"
-"これは初期設定と 3 種類の 'アクション' を説明しているものです。この場合、 "
-"'build' (既定のアクション), 'test', 'install' の各処理を実行しています。その"
-"他のアクションには、下記のようなものがあります:\n"
+"これは初期設定と 3 種類の 'アクション' を説明しているものです。この場合、 'build' (既定のアクション), 'test', "
+"'install' の各処理を実行しています。その他のアクションには、下記のようなものがあります:\n"
 "\n"
 "  build                          manifest   clean                          "
 "manifest_skip   code                           manpages   "
@@ -22332,7 +22412,7 @@ msgstr ""
 #. tumbleweed/perl-Module-Build-Deprecated/summary
 #. leap/perl-Module-Build-Deprecated/summary
 msgid "Collection of Modules Removed From Module-Build"
-msgstr ""
+msgstr "Module-Build から削除されたモジュール集"
 
 #. tumbleweed/perl-Module-Build-Deprecated/description
 #. leap/perl-Module-Build-Deprecated/description
@@ -22352,12 +22432,24 @@ msgid ""
 "\n"
 "This has been replaced by CPAN::Meta::YAML"
 msgstr ""
+"このモジュールには、 Module-Build から削除された多数のモジュールが含まれています:\n"
+"\n"
+"* * Module::Build::ModuleInfo\n"
+"\n"
+"こちらは Module::Metadata に置き換えられたものです。\n"
+"\n"
+"* * Module::Build::Version\n"
+"\n"
+"こちらは version に置き換えられたものです。\n"
+"\n"
+"* * Module::Build::YAML\n"
+"\n"
+"こちらは CPAN::Meta::YAML に置き換えられたものです。"
 
 #. tumbleweed/perl-Module-Build-Tiny/summary
 #. leap/perl-Module-Build-Tiny/summary
-#, fuzzy
 msgid "A tiny replacement for Module::Build"
-msgstr "Make の置き換え"
+msgstr "Module::Build の簡易的な置き換え"
 
 #. tumbleweed/perl-Module-Build-Tiny/description
 #. leap/perl-Module-Build-Tiny/description
@@ -22370,12 +22462,17 @@ msgid ""
 "Whereas Module::Build has over 6,700 lines of code; this module has less "
 "than 120, yet supports the features needed by most distributions."
 msgstr ""
+"多くの Perl の配布物では Makefile.PL ファイルではなく Build.PL "
+"を利用して、配布物の設定や構築、テストやインストールなどを行なっています。伝統的には Build.PL は Module::Build "
+"を裏の構築システムとして使用しています。このモジュールは、シンプルで軽量な、その場で置き換えられる仕組みを提供します。\n"
+"\n"
+"Module::Build は 6,700 行ものコードがありますが、このモジュールは多くの配布物で必要な機能に対応しながら、 120 "
+"行未満でできています。"
 
 #. tumbleweed/perl-Module-Build-WithXSpp/summary
 #. leap/perl-Module-Build-WithXSpp/summary
-#, fuzzy
 msgid "XS++ enhanced flavour of Module::Build"
-msgstr "Make の置き換え"
+msgstr "Module::Build の XS++ 拡張フレーバー"
 
 #. tumbleweed/perl-Module-Build-WithXSpp/description
 #. leap/perl-Module-Build-WithXSpp/description
@@ -22396,23 +22493,34 @@ msgid ""
 "Using that example as the basis for your 'Module::Build::WithXSpp'-based "
 "distribution is probably a good idea."
 msgstr ""
+"この Module::Build のサブクラスは、いくつかのツールやプロセスを追加することで、 XS++ (ExtUtils::XSpp) を利用した "
+"C++ のラッピングを使いやすくします。\n"
+"\n"
+"'Module::Build' を利用する通常の XS モジュールとは少し異なる点があるほか、 XS++ "
+"モジュールの作者が注意すべきいくつかの慣例があります。これらは /\"FEATURES AND CONVENTIONS\" "
+"セクションで説明しています。ただし、すべてを読むのが面倒だとお感じの場合は、左記の章を読み飛ばして、 /\"JUMP START FOR THE "
+"IMPATIENT\" 内にあるアドバイスに従ってください。\n"
+"\n"
+"この構築ツールをベースにした完全な配布物の例は、 _examples/XSpp-Example_ 内にある ExtUtils::XSpp をご覧ください。"
+" 'Module::Build::WithXSpp' ベースの配布物を作成する際は、この例を利用するとよいでしょう。"
 
 #. tumbleweed/perl-Module-CPANfile/summary
 #. leap/perl-Module-CPANfile/summary
 msgid "Parse cpanfile"
-msgstr ""
+msgstr "cpanfile の処理"
 
 #. tumbleweed/perl-Module-CPANfile/description
 msgid ""
 "Module::CPANfile is a tool to handle cpanfile format to load application "
 "specific dependencies, not just for CPAN distributions."
 msgstr ""
+"Module::CPANfile は cpanfile 形式を処理するためのツールで、アプリケーション固有の依存関係を読み込む際に利用します。 CPAN "
+"配布物以外でも利用することができます。"
 
 #. tumbleweed/perl-Module-Depends/summary
 #. leap/perl-Module-Depends/summary
-#, fuzzy
 msgid "identify the dependencies of a distribution"
-msgstr "KDE3 アプリケーションの実行環境"
+msgstr "配布物の依存関係の識別"
 
 #. tumbleweed/perl-Module-Depends/description
 #. leap/perl-Module-Depends/description
@@ -22425,11 +22533,16 @@ msgid ""
 "suggest you take your life in your hands and look at Module::Depends::"
 "Intrusive."
 msgstr ""
+"Module::Depends は圧縮されていない配布物のツリーから、モジュールの依存関係を抽出することができます。\n"
+"\n"
+"Module::Depends は配布物に含まれている META.yml のみを読み込みます。すべての配布物に META.yml "
+"が含まれていないと意味のない仕組みですが、このモジュールのために作成しておくことをお勧めします。また、 Module::Depends::"
+"Intrusive についてもお読みください。"
 
 #. tumbleweed/perl-Module-Find/summary
 #. leap/perl-Module-Find/summary
 msgid "Find and use installed modules in a (sub)category"
-msgstr ""
+msgstr "(サブ) カテゴリ内でのインストール済みモジュールの検出と利用"
 
 #. tumbleweed/perl-Module-Find/description
 #. leap/perl-Module-Find/description
@@ -22442,6 +22555,11 @@ msgid ""
 "(such as the plugins directory of your software installation), make sure you "
 "modify '@INC' before you call the Module::Find functions."
 msgstr ""
+"Module::Find はカテゴリごとにモジュールを検索し、それを使用することができる仕組みです。ドライバやプラグインを自動検出させたいような用途には、"
+"非常に便利な仕組みです。なお、カテゴリそれ自身の中を検索する場合と、すべてのカテゴリで検索する場合を分けることもできます。\n"
+"\n"
+"Module::Find でお使いのハードディスク内の特定のディレクトリを検索したい場合 (たとえばソフトウエアのディレクトリ内のプラグインディレクトリ)"
+" は、 Module::Find 関数を呼び出す前に '@INC' を変更してください。"
 
 #. tumbleweed/perl-Module-Implementation/summary
 #. leap/perl-Module-Implementation/summary
@@ -22487,7 +22605,7 @@ msgstr ""
 #. tumbleweed/perl-Module-Install/summary
 #. leap/perl-Module-Install/summary
 msgid "Standalone, extensible Perl module installer"
-msgstr ""
+msgstr "単独で動作する拡張可能な Perl モジュールインストーラ"
 
 #. tumbleweed/perl-Module-Install/description
 #. leap/perl-Module-Install/description
@@ -22502,30 +22620,36 @@ msgid ""
 "the best practices for distribution installation, but involve as much DWIM "
 "(Do What I Mean) as possible when writing them."
 msgstr ""
+"*Module::Install* は CPAN (または CPAN に似た) "
+"配布物のインストーラを作成するためのモジュールです。クリーンでシンプルな仕組みで、余計なコードもなく、 ExtUtils::MakeMaker "
+"を利用して厳密に正しい動作をするようになっています。また、 Perl のバージョン 5.005 もしくはそれ以降のバージョンで動作します。\n"
+"\n"
+"このモジュールは、 CPAN の作者に対してできる限り簡単にインストーラを作成できるようにするためのもので、各配布物に対して最適な方法に従いながら、"
+"できる限り DWIM (Do What I Mean; 意図したとおりにやる) の原則に従ってインストーラが完成するように作られています。"
 
 #. tumbleweed/perl-Module-Install-AuthorTests/summary
 #. leap/perl-Module-Install-AuthorTests/summary
 msgid "Designate Tests Only Run by Module Authors"
-msgstr ""
+msgstr "モジュールの作者のみが実行するテストの指定"
 
 #. tumbleweed/perl-Module-Install-AuthorTests/description
 #. leap/perl-Module-Install-AuthorTests/description
 msgid "designate tests only run by module authors"
-msgstr ""
+msgstr "モジュールの作者のみが実行するテストの指定"
 
 #. tumbleweed/perl-Module-Install-ExtraTests/summary
 #. leap/perl-Module-Install-ExtraTests/summary
 msgid "Contextual tests that the harness can ignore"
-msgstr ""
+msgstr "無視することもできる状況依存のテスト"
 
 #. tumbleweed/perl-Module-Install-ExtraTests/description
 #. leap/perl-Module-Install-ExtraTests/description
 msgid "contextual tests that the harness can ignore"
-msgstr ""
+msgstr "無視することもできる状況依存のテスト"
 
 #. tumbleweed/perl-Module-Load-Conditional/summary
 msgid "Looking up module information / loading at runtime"
-msgstr ""
+msgstr "実行時にモジュールの情報を参照して読み込むモジュール"
 
 #. tumbleweed/perl-Module-Load-Conditional/description
 msgid ""
@@ -22535,12 +22659,16 @@ msgid ""
 "It is able to load multiple modules at once or none at all if one of them "
 "was not able to load. It also takes care of any error checking and so forth."
 msgstr ""
+"Module::Load::Conditional "
+"は、お使いのシステムにインストールされている任意のモジュールを、実行時に問い合わせたり読み込んだりすることができるシンプルな仕組みを提供します。\n"
+"\n"
+"いずれかのモジュールが読み込めない場合、複数のモジュールを一括で読み込むことができるほか、まったく読み込まないかを選択することもできます。エラーチェックな"
+"どの機能も用意されています。"
 
 #. tumbleweed/perl-Module-Metadata/summary
 #. leap/perl-Module-Metadata/summary
-#, fuzzy
 msgid "Gather package and POD information from perl module files"
-msgstr "Macintosh BinHex ファイルからのデータ抽出"
+msgstr "Perl のモジュールファイルからパッケージと POD の情報を収集するモジュール"
 
 #. tumbleweed/perl-Module-Metadata/description
 #. leap/perl-Module-Metadata/description
@@ -22550,11 +22678,13 @@ msgid ""
 "the version of a module, the '$VERSION' assignment is 'eval'ed, as is "
 "traditional in the CPAN toolchain."
 msgstr ""
+"このモジュールは、大半は静的な分析で、残りの少しはコードを実行することで、 .pm ファイルに関するメタデータを収集するための標準的な方法を提供します。 "
+"CPAN ツールチェインがかつて実施していたように、モジュールのバージョンを判断する際には、 '$VERSION' に代入した値を 'eval' します。"
 
 #. tumbleweed/perl-Module-Path/summary
 #. leap/perl-Module-Path/summary
 msgid "get the full path to a locally installed module"
-msgstr ""
+msgstr "ローカルにインストールされたモジュールの古パスを取得するモジュール"
 
 #. tumbleweed/perl-Module-Path/description
 #. leap/perl-Module-Path/description
@@ -22584,11 +22714,30 @@ msgid ""
 "\n"
 "The above is the basis for one of the tests."
 msgstr ""
+"このモジュールは 'module_path()' と呼ばれる関数を 1 つだけ公開しています。この関数はモジュール名をパラメータとしてとり、"
+"まずはローカルにインストールされている場合のパスである '@INC' を検索します。関数の返り値はファイルへのフルパスで、シンボリックリンクの場合はそれを"
+"解決してから返します。可搬性があり、中枢モジュールのみに依存しています。\n"
+"\n"
+"なお、 '@INC' に設定されているすべてのディレクトリを参照して、該当する名前が存在していないかどうかを調べます。\n"
+"\n"
+"上記のような機能を実現し、かつ多くの依存関係を持たないような代替モジュールが見つからなかったことから、本モジュールを作成しました。\n"
+"\n"
+"配布物である 'Module::Path' には 'mpath' "
+"スクリプトが含まれていますが、こちらはコマンドラインからモジュールのパスを取得することができるものです:\n"
+"\n"
+" % mpath Module::Path\n"
+"\n"
+"'module_path()' 関数は、モジュール名に '.pm' が含まれている場合にも対応しています。これにより、 '%INC' "
+"内のキーとして使われているような、部分パスを指定することもできます。\n"
+"\n"
+"  module_path('Test/More.pm') eq $INC{'Test/More.pm'}\n"
+"\n"
+"上記はテスト内にあるものをベースにしています。"
 
 #. tumbleweed/perl-Module-Pluggable/summary
 #. leap/perl-Module-Pluggable/summary
 msgid "Automatically Give Your Module the Ability to Have Plugins"
-msgstr ""
+msgstr "お使いのモジュールに自動的にプラグイン機能を追加するモジュール"
 
 #. tumbleweed/perl-Module-Pluggable/description
 #. leap/perl-Module-Pluggable/description
@@ -22602,11 +22751,17 @@ msgid ""
 "\n"
 "Optionally it instantiates those classes for you."
 msgstr ""
+"お使いのモジュールに対して、シンプルながらも拡張性の高い 'プラグイン' "
+"機能を提供します。必要なすべての機能を網羅しているわけではありませんが、私が使用するには十分な機能が提供されています。\n"
+"\n"
+"内部的には、 .pm ファイルの検索パスを参照して、これらをクラス名に変換し、ネームスペース内にメソッドを公開する仕組みです。\n"
+"\n"
+"オプションでこれらのクラスのインスタンスを作成することもできます。"
 
 #. tumbleweed/perl-Module-Reader/summary
 #. leap/perl-Module-Reader/summary
 msgid "Read the source of a module like perl does"
-msgstr ""
+msgstr "Perl のコードのようにモジュールのソースを読み込むモジュール"
 
 #. tumbleweed/perl-Module-Reader/description
 #. leap/perl-Module-Reader/description
@@ -22614,11 +22769,13 @@ msgid ""
 "Reads the content of perl modules the same way perl does. This includes "
 "reading modules available only by perlfunc/require, or filtered through them."
 msgstr ""
+"Perl が実施するのと同じ方法で Perl のモジュールの内容を読み込みます。 perlfunc/require "
+"もしくはそれらのフィルタを介してのみ提供されているモジュールも読み込むことができます。"
 
 #. tumbleweed/perl-Module-Refresh/summary
 #. leap/perl-Module-Refresh/summary
 msgid "Refresh INC files when updated on disk"
-msgstr ""
+msgstr "ディスクが更新された際に INC ファイルを更新するモジュール"
 
 #. tumbleweed/perl-Module-Refresh/description
 #. leap/perl-Module-Refresh/description
@@ -22630,6 +22787,10 @@ msgid ""
 "\n"
 "It does not require mod_perl."
 msgstr ""
+"このモジュールは Apache::StatINC と Apache::Reload "
+"が提供する機能を汎用化したものです。永続的な環境で作業をする際、シンプルな反復型開発を実施することができます。\n"
+"\n"
+"なお、このモジュールでは mod_perl は不要です。"
 
 #. tumbleweed/perl-Module-Runtime/summary
 #. leap/perl-Module-Runtime/summary
@@ -22679,21 +22840,19 @@ msgstr "Module::Runtime に対する矛盾情報の提供"
 
 #. tumbleweed/perl-Module-Runtime-Conflicts/description
 #. leap/perl-Module-Runtime-Conflicts/description
-#, fuzzy
 msgid ""
 "This module provides conflicts checking for Module::Runtime, which had a "
 "recent release that broke some versions of Moose. It is called from Moose::"
 "Conflicts and 'moose-outdated'."
 msgstr ""
-"このモジュールは、 Module::Runtime モジュールに対して矛盾チェックの機能を提供"
-"します。これは、 Moose のバージョンによっては依存関係を壊してしまうリリースが"
-"存在していたことによるものです。 Moose::Conflicts および 'moose-outdated' か"
-"ら呼び出されます。"
+"このモジュールは、 Module::Runtime モジュールに対して矛盾チェックの機能を提供します。これは、 Moose "
+"のバージョンによっては依存関係を壊してしまうリリースが存在していたことによるものです。 Moose::Conflicts および 'moose-"
+"outdated' から呼び出されます。"
 
 #. tumbleweed/perl-Module-Signature/summary
 #. leap/perl-Module-Signature/summary
 msgid "Module signature file manipulation"
-msgstr ""
+msgstr "モジュールの署名ファイルの操作"
 
 #. tumbleweed/perl-Module-Signature/description
 #. leap/perl-Module-Signature/description
@@ -22715,11 +22874,25 @@ msgid ""
 "Please also see NOTES about _MANIFEST.SKIP_ issues, especially if you are "
 "using *Module::Build* or writing your own _MANIFEST.SKIP_."
 msgstr ""
+"*Module::Signatur* は CPAN の配布物に対して、特別な _SIGNATURE_ ファイルを介して暗号化された認証機能を提供します。"
+"\n"
+"\n"
+"モジュールのユーザ側の立場では、忘れずに 'perl Makefile.PL' や 'perl Build.PL' を実行する前に 'cpansign -"
+"v' (もしくは単に 'cpansign') を実行するようにします。これにより、配布物が不用意に改変されていないことを確認することができます。\n"
+"\n"
+"モジュールの作者の立場では、配布物の tar ボール内に _SIGNATURE_ ファイルを追加するだけの簡単な作業です。 'make dist' "
+"の一部として実行する場合については、 NOTES をお読みください。\n"
+"\n"
+"配布物に対して手作業で署名を行ないたい場合は、 _MANIFEST_ ファイル内に 'SIGNATURE' を追加して、 'make dist' "
+"の直後に 'cpansign -s' を実行してください。なお、作業完了後には忘れずに _SIGNATURE_ ファイルを削除してください。\n"
+"\n"
+"特に *Module::Build' を利用している場合や、独自の _MANIFEST.SKIP_ を作成しているような場合など、 "
+"_MANIFEST.SKIP_ の問題については NOTES をお読みください。"
 
 #. tumbleweed/perl-Module-Starter/summary
 #. leap/perl-Module-Starter/summary
 msgid "a simple starter kit for any module"
-msgstr ""
+msgstr "任意のモジュールに対するシンプルなスターターキット"
 
 #. tumbleweed/perl-Module-Starter/description
 #. leap/perl-Module-Starter/description
@@ -22732,12 +22905,16 @@ msgid ""
 "basic builder scripts, tests, documentation, and module code. This is done "
 "through just one method, 'create_distro'."
 msgstr ""
+"これは Module::Starter の中枢モジュールです。このモジュールの機能を追加したり変更したりしたい場合でなければ、まず module-"
+"starter をお読みください。\n"
+"\n"
+"Module::Starter は、基本的な構築スクリプトやテスト、ドキュメンテーションやモジュールのコードなど、 CPAN "
+"配布物の骨格を作成するために使用するモジュールです。作業は 'create_distro' メソッドを呼び出すだけです。"
 
 #. tumbleweed/perl-Mojolicious/summary
 #. leap/perl-Mojolicious/summary
-#, fuzzy
 msgid "Real-time web framework"
-msgstr "Java 回帰テストパッケージ"
+msgstr "リアルタイム Web フレームワーク"
 
 #. tumbleweed/perl-Mojolicious/description
 msgid ""
@@ -22749,11 +22926,16 @@ msgid ""
 "\n"
 "Take a look at our excellent documentation in Mojolicious::Guides!"
 msgstr ""
+"Mojo Web 開発ツールキット上に構築された、素晴らしいリアルタイム Web フレームワークです。 RESTful なルート、プラグイン、コマンド、 "
+"Perl のようなテンプレート、コンテンツのネゴシエーション、セッション管理、フォームのバリデーション、テストフレームワーク、固定ファイルのサーバ、 "
+"'CGI'/'PSGI' の検出、ファーストクラス Unicode サポートなど、様々な機能が用意されています。\n"
+"\n"
+"まずは Mojolicious::Guides 内にある素晴らしいドキュメンテーションをお読みください。"
 
 #. tumbleweed/perl-Mojolicious-Plugin-AssetPack/summary
 #. leap/perl-Mojolicious-Plugin-AssetPack/summary
 msgid "Compress and convert css, less, sass, javascript and coffeescript files"
-msgstr ""
+msgstr "css/less/sass/javascript/coffeescript ファイルの圧縮と変換"
 
 #. tumbleweed/perl-Mojolicious-Plugin-AssetPack/description
 #. leap/perl-Mojolicious-Plugin-AssetPack/description
@@ -22770,23 +22952,32 @@ msgid ""
 "The actual processing is delegated to \"pipe objects\". Please see "
 "Mojolicious::Plugin::AssetPack::Guides::Tutorial/Pipes for a complete list."
 msgstr ""
+"Mojolicious::Plugin::AssetPack は固定のアセットを処理するための Mojolicious "
+"のプラグインです。サーバとの帯域やラウンドトリップタイムの問題を最小化するため、 JavaScript や CSS "
+"ファイルは最小限のサイズにすべきである、という考え方から来ているものです。\n"
+"\n"
+"ここにはこれを実現するための多数の外部ツールが存在していますが、 Mojolicious 本体への統合は戦いでもあります: 開発中はソースファイルを直接提"
+"供したくても、本番環境ではそれを小さくまとめて送りたいものです。このアセットパックプラグインは、これらの処理をすべてを自動的に行ないます。\n"
+"\n"
+"実際の処理は \"パイプオブジェクト\" に移譲されています。完全なリストについて、詳しくは "
+"Mojolicious::Plugin::AssetPack::Guides::Tutorial/Pipes をお読みください。"
 
 #. tumbleweed/perl-Mojolicious-Plugin-CHI/summary
 #. leap/perl-Mojolicious-Plugin-CHI/summary
 msgid "Use CHI Caches in Mojolicious"
-msgstr ""
+msgstr "Mojolicious 内の CHI キャッシュ"
 
 #. tumbleweed/perl-Mojolicious-Plugin-CHI/description
 #. leap/perl-Mojolicious-Plugin-CHI/description
 msgid ""
 "Mojolicious::Plugin::CHI is a simple plugin to work with CHI caches within "
 "Mojolicious."
-msgstr ""
+msgstr "Mojolicious::Plugin::CHI は Mojolicious 内で CGI キャッシュを処理するためのサンプルプラグインです。"
 
 #. tumbleweed/perl-Mojolicious-Plugin-RenderFile/summary
 #. leap/perl-Mojolicious-Plugin-RenderFile/summary
 msgid "\"render_file\" helper for Mojolicious"
-msgstr ""
+msgstr "Mojolicious 向け \"render_file\" ヘルパー"
 
 #. tumbleweed/perl-Mojolicious-Plugin-RenderFile/description
 #. leap/perl-Mojolicious-Plugin-RenderFile/description
@@ -22795,11 +22986,13 @@ msgid ""
 "\"render_file\" helper. It does not read file in memory and just streaming "
 "it to a client."
 msgstr ""
+"Mojolicious::Plugin::RenderFile は \"render_file\" ヘルパーを追加する Mojolicious "
+"のプラグインです。メモリ内にはファイルを読み込まず、そのままクライアントに対して転送します。"
 
 #. tumbleweed/perl-Moo/summary
 #. leap/perl-Moo/summary
 msgid "Minimalist Object Orientation (with Moose compatibility)"
-msgstr ""
+msgstr "最小限のオブジェクト指向実装 (Moose 互換)"
 
 #. tumbleweed/perl-Moo/description
 #. leap/perl-Moo/description
@@ -22820,11 +23013,22 @@ msgid ""
 "For a full list of the minor differences between Moose and Moo's surface "
 "syntax, see INCOMPATIBILITIES WITH MOOSE."
 msgstr ""
+"'Moo' は非常に軽量なオブジェクト指向システムです。 Perl "
+"のオブジェクトシステムの詳細を気にすることなく、簡潔にオブジェクトと役割を定義することができます。 'Moo' には Moose "
+"のサブセットが含まれ、高速に起動できるように最適化がなされています。\n"
+"\n"
+"'Moo' はシンプルなデプロイのため、どの XS モジュールとも依存関係を持ちません。 'Moo' という名前は、 Moose の 2/3 程度 "
+"(かなりの量とは言えませんが・・) を提供する、という考え方をベースにしています。\n"
+"\n"
+"Mouse とは異なり、このモジュールは Moose のサーフェイス文法との完全な互換性は目指していません。その代わりに、 MOO AND MOOSE "
+"で記述されているメタクラスの膨張機能を介して、すべての相互運用性を提供することを目指しています。\n"
+"\n"
+"Moose と Moo のサーフェイス文法についての細かい差異については、 INCOMPATIBILITIES WITH MOOSE をお読みください。"
 
 #. tumbleweed/perl-MooX-HandlesVia/summary
 #. leap/perl-MooX-HandlesVia/summary
 msgid "NativeTrait-like behavior for Moo"
-msgstr ""
+msgstr "Moo 向けの NativeTrait に似た動作をするモジュール"
 
 #. tumbleweed/perl-MooX-HandlesVia/description
 #. leap/perl-MooX-HandlesVia/description
@@ -22835,11 +23039,15 @@ msgid ""
 "Trait' behavior that has become commonplace in Moose code, for which there "
 "was no Moo alternative."
 msgstr ""
+"MooX::HandlesVia は Moo の 'handles' "
+"属性の機能を拡張するものです。外部クラスから指定した属性に対して機能を代行する機能を提供しています。これは 'Native Trait' "
+"動作を疑似するための方法として使われているもので、 Moose のコード内でも一般的になっているものですが、 Moo "
+"にはその代替となるものが存在していなかったために作られました。"
 
 #. tumbleweed/perl-MooX-Types-MooseLike/summary
 #. leap/perl-MooX-Types-MooseLike/summary
 msgid "Some Moosish Types and a Type Builder"
-msgstr ""
+msgstr "Moose に似たタイプのタイプビルダ"
 
 #. tumbleweed/perl-MooX-Types-MooseLike/description
 #. leap/perl-MooX-Types-MooseLike/description
@@ -22852,21 +23060,26 @@ msgid ""
 "types. Its source also provides an example of how to build base types, along "
 "with both parameterizable and non-parameterizable."
 msgstr ""
+"このモジュールは、 Moose のようなタイプ集を独自に構築する機能を提供します。独自のタイプは Moo "
+"ベースのクラス内で、フィールドを定義する際に利用することができます。\n"
+"\n"
+"利用可能なベースタイプについて、詳しくは MooX::Types::MooseLike::Base "
+"をお読みください。このソースでは、基本タイプの構築方法例のほか、パラメータ化可能／不可能設定についても説明があります。"
 
 #. tumbleweed/perl-MooX-Types-MooseLike-Numeric/summary
 #. leap/perl-MooX-Types-MooseLike-Numeric/summary
 msgid "Moo types for numbers"
-msgstr ""
+msgstr "数値向け Moo タイプ"
 
 #. tumbleweed/perl-MooX-Types-MooseLike-Numeric/description
 #. leap/perl-MooX-Types-MooseLike-Numeric/description
 msgid "adapted from MooseX::Types::Common::Numeric"
-msgstr ""
+msgstr "MooseX::Types::Common::Numeric から作られているものです。"
 
 #. tumbleweed/perl-MooX-late/summary
 #. leap/perl-MooX-late/summary
 msgid "easily translate Moose code to Moo"
-msgstr ""
+msgstr "Moose コードを Moo に簡単に編訳できるモジュール"
 
 #. tumbleweed/perl-MooX-late/description
 #. leap/perl-MooX-late/description
@@ -22921,11 +23134,53 @@ msgid ""
 "=> $nonref'. These features have now been added to Moo itself, so MooX::late "
 "no longer has to deal with them."
 msgstr ""
+"Moo はオブジェクト指向のプログラミングフレームワークで、 Moose との互換性を目指しているものです。 Moose "
+"が読み込まれたタイミングを検出することで、自動的に自己のクラスや役割を自動的に \"膨張\" させ、完全な Moose "
+"クラスや役割となるように作られています。この方法により、 Moo のクラスは Moose の役割を消費することができますし、逆に Moose のクラスは "
+"Moo のクラス拡張することができます。\n"
+"\n"
+"しかしながら、 Moo のサーフェイス文法は Moose のものとは少し異なります。たとえば Moose 内で属性を定義する際の 'isa' "
+"オプションは、文字列または Moose::Meta::TypeConstraint オブジェクトのブレスを指定しますが、 Moo "
+"ではコード参照でなければなりません。このようなサーフェイス文法の差異は、 Moose から Moo へのコードの移植を潜在的にやりにくくしています。 "
+"MooX::late では、 Moosey サーフェイス文法を有効化するためのいくつかの支援機能が提供されています。\n"
+"\n"
+"MooX::late では下記のようなことを行ないます:\n"
+"\n"
+"* 1.\n"
+"\n"
+"  'isa => $stringytype' のサポート\n"
+"\n"
+"* 2.\n"
+"\n"
+"  'does => $rolename'  のサポート\n"
+"\n"
+"* 3.\n"
+"\n"
+"  'lazy_build => 1' のサポート\n"
+"\n"
+"* 4.\n"
+"\n"
+"  お使いのネームスペースに対する 'blessed' と 'confess' の関数\n"
+"\n"
+"* 5.\n"
+"\n"
+"  特定の属性形質の処理。現時点では 'ハッシュ', '配列', 'コード' にそれぞれ対応しています。この機能を利用するには、 MooX::"
+"HandlesVia が必要です。\n"
+"\n"
+"  'String', 'Number', 'Counter','Bool' は、 Moo の内部実装詳細により、サポートされることはまずありません。サポ"
+"ートすべき他の属性がある場合は、まず私たちあてに連絡を取ってください。こちらで判断させていただきます。\n"
+"\n"
+"5 つの機能。 Moo の様々な局面で、 'MooX::late' が Moose "
+"と正確に同じ動作をすることは目指していません。このモジュールは、取りやすいフルーツのようなものであるべきであると考えています。そのため、現時点では 5 "
+"つの要素がありますが、将来的に 7 つ以上になることは決してありません。\n"
+"\n"
+"MooX::late の以前のリリースでは、 'coerce => 1' と 'default => $nonref' に対するサポートが追加されました。"
+"これらの機能は Moo 自身にも追加されているため、 MooX::late ではもはやそれを扱わなくなっています。"
 
 #. tumbleweed/perl-Moose-Autobox/summary
 #. leap/perl-Moose-Autobox/summary
 msgid "Autoboxed wrappers for Native Perl datatypes"
-msgstr ""
+msgstr "ネイティブ Perl データタイプ向けオートボクシングラッパー"
 
 #. tumbleweed/perl-Moose-Autobox/description
 #. leap/perl-Moose-Autobox/description
@@ -22936,6 +23191,9 @@ msgid ""
 "was inspired by my work on the Perl 6 Object Space, and the 'core types' "
 "implemented there."
 msgstr ""
+"Moose::Autobox は、オートボクシングで使用するためのスカラー／配列／ハッシュ／コード実装です。 Perl 6 "
+"がやるはずの役割の階層を利用して実現している仕組みです。このモジュールは、 Class::MOP や Moose のように、 Perl 6 "
+"のオブジェクトスペースと、そこで実装されている 'コアタイプ' 上での私の作業からヒントを得て作られているものです。"
 
 #. tumbleweed/perl-MooseX-Aliases/summary
 #. leap/perl-MooseX-Aliases/summary
@@ -24045,7 +24303,7 @@ msgstr ""
 
 #. tumbleweed/perl-Net-CIDR-Set/summary
 msgid "Manipulate sets of IP addresses"
-msgstr ""
+msgstr "IP アドレスの集合の操作"
 
 #. tumbleweed/perl-Net-CIDR-Set/description
 msgid ""
@@ -24133,7 +24391,7 @@ msgstr ""
 #. tumbleweed/perl-Net-Domain-TLD/summary
 #. leap/perl-Net-Domain-TLD/summary
 msgid "Work with TLD names"
-msgstr ""
+msgstr "TLD 名の処理"
 
 #. tumbleweed/perl-Net-Domain-TLD/description
 #. leap/perl-Net-Domain-TLD/description
@@ -24193,9 +24451,8 @@ msgstr ""
 "HTTP サーバとして便利です。"
 
 #. tumbleweed/perl-Net-IDN-Nameprep/summary
-#, fuzzy
 msgid "Stringprep Profile for Internationalized Domain Names (S<RFC 3491>)"
-msgstr "国際ドメイン名 (IDN) サポート"
+msgstr "国際ドメイン名 (S<RFC 3491>) 向け Stringprep プロファイル"
 
 #. tumbleweed/perl-Net-IDN-Nameprep/description
 msgid ""
@@ -24292,9 +24549,8 @@ msgstr ""
 #. tumbleweed/perl-Net-OAuth/description
 #. leap/perl-Net-OAuth/summary
 #. leap/perl-Net-OAuth/description
-#, fuzzy
 msgid "OAuth 1.0 for Perl"
-msgstr "Perl 向け SOAP::Lite"
+msgstr "Perl 向け OAuth 1.0"
 
 #. tumbleweed/perl-Net-OpenID-Common/summary
 #. leap/perl-Net-OpenID-Common/summary
@@ -24370,7 +24626,6 @@ msgstr ""
 
 #. tumbleweed/perl-Net-SSLGlue/summary
 #. leap/perl-Net-SSLGlue/summary
-#, fuzzy
 msgid "Add/Extend Ssl Support for Common Perl Modules"
 msgstr "汎用の Perl モジュール向けに SSL 対応を追加／拡張するモジュール"
 
@@ -24472,7 +24727,7 @@ msgstr ""
 #. tumbleweed/perl-Net-TFTP/summary
 #. leap/perl-Net-TFTP/summary
 msgid "TFTP Client class"
-msgstr ""
+msgstr "TFTP クライアントクラス"
 
 #. tumbleweed/perl-Net-TFTP/description
 #. leap/perl-Net-TFTP/description
@@ -24484,6 +24739,11 @@ msgid ""
 "\n"
 " RFC2348 Blocksize Option"
 msgstr ""
+"'Net::TFTP' は RFC1350 で規定されているシンプルな _Trivial File Transfer Protocol_ "
+"クライアントを実装するクラスです。 'Net::TFTP' では、 TFTP オプション拡張 (RFC2347) "
+"にも対応していて、下記のオプションを利用することができます:\n"
+"\n"
+" RFC2348 ブロックサイズオプション"
 
 #. tumbleweed/perl-Net-Telnet/summary
 #. leap/perl-Net-Telnet/summary
@@ -24684,7 +24944,7 @@ msgstr ""
 #. tumbleweed/perl-Number-Format/summary
 #. leap/perl-Number-Format/summary
 msgid "Perl extension for formatting numbers"
-msgstr ""
+msgstr "数値の書式化を行なうための Perl 拡張"
 
 #. tumbleweed/perl-Number-Format/description
 #. leap/perl-Number-Format/description
@@ -24721,7 +24981,7 @@ msgstr ""
 #. tumbleweed/perl-OLE-Storage_Lite/summary
 #. leap/perl-OLE-Storage_Lite/summary
 msgid "Simple Class for OLE document interface."
-msgstr ""
+msgstr "OLE ドキュメントインターフェイス向けシンプルクラス"
 
 #. tumbleweed/perl-OLE-Storage_Lite/description
 #. leap/perl-OLE-Storage_Lite/description
@@ -24753,9 +25013,8 @@ msgstr ""
 
 #. tumbleweed/perl-PAR/summary
 #. leap/perl-PAR/summary
-#, fuzzy
 msgid "Perl Archive Toolkit"
-msgstr "Perl の Web サービスツールキット"
+msgstr "Perl アーカイブツールキット"
 
 #. tumbleweed/perl-PAR/description
 msgid ""
@@ -24796,9 +25055,8 @@ msgstr ""
 
 #. tumbleweed/perl-PAR-Dist/summary
 #. leap/perl-PAR-Dist/summary
-#, fuzzy
 msgid "Create and manipulate PAR distributions"
-msgstr "日付操作ルーチン"
+msgstr "PAR 配布物の作成と操作"
 
 #. tumbleweed/perl-PAR-Dist/description
 #. leap/perl-PAR-Dist/description
@@ -24829,7 +25087,7 @@ msgstr ""
 #. tumbleweed/perl-PHP-Serialization/summary
 #. leap/perl-PHP-Serialization/summary
 msgid "De-/serialize() PHP output into Perl"
-msgstr ""
+msgstr "Perl での PHP 出力のシリアライズとデシリアライズ"
 
 #. tumbleweed/perl-PHP-Serialization/description
 #. leap/perl-PHP-Serialization/description
@@ -24883,7 +25141,7 @@ msgstr ""
 #. tumbleweed/perl-POE-Test-Loops/summary
 #. leap/perl-POE-Test-Loops/summary
 msgid "Reusable tests for POE::Loop authors"
-msgstr ""
+msgstr "POE::Loop 作者向けの再利用可能なテスト"
 
 #. tumbleweed/perl-POE-Test-Loops/description
 #. leap/perl-POE-Test-Loops/description
@@ -24963,7 +25221,7 @@ msgstr ""
 #. tumbleweed/perl-PPIx-Utilities/summary
 #. leap/perl-PPIx-Utilities/summary
 msgid "Extensions to L<PPI|PPI>."
-msgstr ""
+msgstr "L<PPI|PPI> 向け拡張"
 
 #. tumbleweed/perl-PPIx-Utilities/description
 #. leap/perl-PPIx-Utilities/description
@@ -25080,7 +25338,7 @@ msgstr ""
 #. tumbleweed/perl-Package-Generator/summary
 #. leap/perl-Package-Generator/summary
 msgid "generate new packages quickly and easily"
-msgstr ""
+msgstr "新しいパッケージを素早く簡単に作成するモジュール"
 
 #. tumbleweed/perl-Package-Generator/description
 #. leap/perl-Package-Generator/description
@@ -25088,6 +25346,7 @@ msgid ""
 "This module lets you quickly and easily construct new packages. It gives "
 "them unused names and sets up their package data, if provided."
 msgstr ""
+"このモジュールは、新しいパッケージを素早く簡単に構築するための仕組みです。未使用の名前が指定され、パッケージのデータのセットアップまでが行なわれます。"
 
 #. tumbleweed/perl-Package-Stash/summary
 #. leap/perl-Package-Stash/summary
@@ -25464,7 +25723,6 @@ msgstr "Perl のソースコードを処理して美しくするモジュール"
 
 #. tumbleweed/perl-Perl-Tidy/description
 #. leap/perl-Perl-Tidy/description
-#, fuzzy
 msgid ""
 "This module makes the functionality of the perltidy utility available to "
 "perl scripts. Any or all of the input parameters may be omitted, in which "
@@ -25480,19 +25738,17 @@ msgid ""
 "completion. Additional discuss of errors is contained below in the ERROR "
 "HANDLING section."
 msgstr ""
-"このモジュールは、 Perl スクリプトに対して提供されている perltidy ユーティリ"
-"ティの機能を実装したものです。入力パラメータは自由に省略することができます"
-"が、この場合は @ARGV 配列が入力パラメータを指すものとみなされます (詳しくは "
-"perltidy(1) のマニュアルページをお読みください。\n"
+"このモジュールは、 Perl スクリプトに対して提供されている perltidy "
+"ユーティリティの機能を実装したものです。入力パラメータは自由に省略することができますが、この場合は @ARGV "
+"配列が入力パラメータを指すものとみなされます (詳しくは perltidy(1) のマニュアルページをお読みください。\n"
 "\n"
 "たとえば、 perltidy スクリプトは下記のようにして使用します:\n"
 "\n"
 "    use Perl::Tidy;     Perl::Tidy::perltidy();\n"
 "\n"
-"*perltidy* はスカラー値の *$error_flag* を返します。この値が TRUE の場合、何"
-"らかの問題が発生してエラーになったことを表し、 FALSE の場合は問題がなかったこ"
-"とを表します。エラーに対する処理について、詳しくはマニュアルページの ERROR "
-"HANDLING セクションをお読みください。"
+"*perltidy* はスカラー値の *$error_flag* を返します。この値が TRUE の場合、何らかの問題が発生してエラーになったことを表し、"
+" FALSE の場合は問題がなかったことを表します。エラーに対する処理について、詳しくはマニュアルページの ERROR HANDLING "
+"セクションをお読みください。"
 
 #. tumbleweed/perl-Perl-Version/summary
 #. leap/perl-Perl-Version/summary
@@ -25983,11 +26239,8 @@ msgstr ""
 
 #. tumbleweed/perl-Proc-Fork/summary
 #. leap/perl-Proc-Fork/summary
-#, fuzzy
 msgid "simple, intuitive interface to the fork() system call"
-msgstr ""
-"Perl モジュール Proc::Fork - fork() システムコールに対するシンプルで直感的な"
-"インターフェイス"
+msgstr "fork() システムコールに対するシンプルで直感的なインターフェイス"
 
 #. tumbleweed/perl-Proc-Fork/description
 #. leap/perl-Proc-Fork/description
@@ -26569,13 +26822,11 @@ msgstr ""
 
 #. tumbleweed/perl-Scope-Guard/summary
 #. leap/perl-Scope-Guard/summary
-#, fuzzy
 msgid "Lexically-Scoped Resource Management"
 msgstr "レキシカルスコープにおけるリソース管理"
 
 #. tumbleweed/perl-Scope-Guard/description
 #. leap/perl-Scope-Guard/description
-#, fuzzy
 msgid ""
 "This module provides a convenient way to perform cleanup or other forms of "
 "resource management at the end of a scope. It is particularly useful when "
@@ -26586,11 +26837,11 @@ msgid ""
 "\n"
 "For more information, see: the http://www.drdobbs.com/cpp/184403758 manpage"
 msgstr ""
-"このモジュールは、スコープの終了時にクリーンアップやその他のリソース管理を実"
-"施するための便利な方法です。特に例外を取り扱う際に便利な仕組みで、 Scope::"
-"Guard のコンストラクタはサブルーチンの参照を受け取り、スレッドが異常終了した"
-"場合にも必ず呼び出される仕組みを提供します。これにより、文法上の規約で正しい"
-"表現のまま、 Perl のガーベージコレクタを自動的に呼び出す仕組みを提供します。"
+"このモジュールは、スコープの終了時にクリーンアップやその他のリソース管理を実施するための便利な方法です。特に例外を取り扱う際に便利な仕組みで、 "
+"Scope::Guard のコンストラクタはサブルーチンの参照を受け取り、スレッドが異常終了した場合にも必ず呼び出される仕組みを提供します。これにより、文"
+"法上の規約で正しい表現のまま、 Perl のガーベージコレクタを自動的に呼び出す仕組みを提供します。\n"
+"\n"
+"詳しくは http://www.drdobbs.com/cpp/184403758 をお読みください。"
 
 #. tumbleweed/perl-Selenium-Remote-Driver/summary
 #. leap/perl-Selenium-Remote-Driver/summary
@@ -27346,7 +27597,6 @@ msgid "Only use Sub::Exporter if you need it"
 msgstr "必要な時にだけ Sub::Exporter を使用する方法"
 
 #. tumbleweed/perl-Sub-Exporter-Progressive/description
-#, fuzzy
 #| msgid ""
 #| "the Sub::Exporter manpage is an incredibly powerful module, but with that "
 #| "power comes great responsibility, er- as well as some runtime penalties. "
@@ -27373,16 +27623,13 @@ msgid ""
 "advanced 'Sub::Exporter' features like currying, this module will only ever "
 "use 'Sub::Exporter', so you might as well use it directly."
 msgstr ""
-"Sub::Exporter は非常にパワフルなモジュールですが、このパワーには実行時の不利"
-"など、大きな代償が伴います。このモジュールはたとえば、単に関数の公開のみを行"
-"ないたいような場合で、 'Sub::Exporter' に用意された高度な機能 (たとえば公開関"
-"数の名前変更など) を行ないたいような場合に役立つ、 'Sub::Exporter' に対する"
-"ラッパーです。\n"
+"Sub::Exporter は非常にパワフルなモジュールですが、このパワーには実行時の不利など、大きな代償が伴います。このモジュールはたとえば、単に関数の"
+"公開のみを行ないたいような場合で、 'Sub::Exporter' に用意された高度な機能 (たとえば公開関数の名前変更など) "
+"を行ないたいような場合に役立つ、 'Sub::Exporter' に対するラッパーです。\n"
 "\n"
-"なお、このモジュールは '@EXPORT', '@EXPORT_OK', '%EXPORT_TAGS' の各パッケージ"
-"を、 'Exporter' に対して公開して動作することに注意してください。また、お使い"
-"のパッケージで 'Sub::Exporter' でカリーイングなど高度な機能を利用している場合"
-"は、'Sub::Exporter' を直接利用したほうが適切です。"
+"なお、このモジュールは '@EXPORT', '@EXPORT_OK', '%EXPORT_TAGS' の各パッケージを、 'Exporter' "
+"に対して公開して動作することに注意してください。また、お使いのパッケージで 'Sub::Exporter' "
+"でカリーイングなど高度な機能を利用している場合は、'Sub::Exporter' を直接利用したほうが適切です。"
 
 #. tumbleweed/perl-Sub-Install/summary
 #. leap/perl-Sub-Install/summary
@@ -28578,7 +28825,6 @@ msgstr ""
 
 #. tumbleweed/perl-Test-Manifest/summary
 #. leap/perl-Test-Manifest/summary
-#, fuzzy
 msgid "interact with a t/test_manifest file"
 msgstr "t/test_manifest ファイルの処理"
 
@@ -29134,9 +29380,8 @@ msgstr ""
 
 #. tumbleweed/perl-Test-Spelling/summary
 #. leap/perl-Test-Spelling/summary
-#, fuzzy
 msgid "check for spelling errors in POD files"
-msgstr "ファイル内の POD エラーの確認"
+msgstr "POD ファイル内のスペルミスのチェック"
 
 #. tumbleweed/perl-Test-Spelling/description
 #. leap/perl-Test-Spelling/description
@@ -29593,9 +29838,8 @@ msgstr ""
 
 #. tumbleweed/perl-Text-CSV/summary
 #. leap/perl-Text-CSV/summary
-#, fuzzy
 msgid "comma-separated values manipulator (using XS or PurePerl)"
-msgstr "カンマ区切りの値を操作するルーチン"
+msgstr "カンマ区切りの値を操作するルーチン (XS および PurePerl)"
 
 #. tumbleweed/perl-Text-CSV/description
 #. leap/perl-Text-CSV/description
@@ -29938,7 +30182,6 @@ msgstr "Unicode テキストの純粋 ASCII 変換"
 
 #. tumbleweed/perl-Text-Unidecode/description
 #. leap/perl-Text-Unidecode/description
-#, fuzzy
 msgid ""
 "It often happens that you have non-Roman text data in Unicode, but you can't "
 "display it-- usually because you're trying to show it to a user via an "
@@ -29963,25 +30206,21 @@ msgid ""
 "For further tests, and help if that doesn't work, see below, A POD ENCODING "
 "TEST."
 msgstr ""
-"非ローマ文字のテキストデータが Unicode で記述されている場合、 Unicode に対応"
-"していないアプリケーションを利用していたり、対応するフォントをインストールし"
-"ていないような場合には、それらを表示することができません。表示できない "
-"Unicode 文字は \"???????\" や \"\\15BA\\15A0\\1610...\" のように表示されます"
-"が、テキストを読みたいユーザにとって、そのような表示は意味がありません。\n"
+"非ローマ文字のテキストデータが Unicode で記述されている場合、 Unicode "
+"に対応していないアプリケーションを利用していたり、対応するフォントをインストールしていないような場合には、それらを表示することができません。表示できない "
+"Unicode 文字は \"???????\" や \"\\15BA\\15A0\\1610...\" "
+"のように表示されますが、テキストを読みたいユーザにとって、そのような表示は意味がありません。\n"
 "\n"
-"Text::Unidecode は関数 'unidecode(...)' を提供しています。これは Unicode の"
-"データを受け取って US-ASCII 文字 (0x00 から 0x7F までの一般的に表示可能な文"
-"字) で表そうとしてくれる関数です。表記は常にほとんど音訳の形で表され、そのテ"
-"キストの発音に最も近いローマ文字になります (添付の例をお読みください) 。\n"
+"Text::Unidecode は関数 'unidecode(...)' を提供しています。これは Unicode のデータを受け取って US-"
+"ASCII 文字 (0x00 から 0x7F までの一般的に表示可能な文字) で表そうとしてくれる関数です。表記は常にほとんど音訳の形で表され、"
+"そのテキストの発音に最も近いローマ文字になります (添付の例をお読みください) 。\n"
 "\n"
 "注意:\n"
 "\n"
-"このページが正しく動作するかどうかお使いの perldoc/Pod の表示設定を確認したい"
-"場合、 6 文字の単語 \"résumé\" が \"resume\" に似た表示になっているかどうかを"
-"ご確認ください。 2, 6 文字目は \"e\" のアクセント表記です。\n"
+"このページが正しく動作するかどうかお使いの perldoc/Pod の表示設定を確認したい場合、 6 文字の単語 \"résumé\" が \""
+"resume\" に似た表示になっているかどうかをご確認ください。 2, 6 文字目は \"e\" のアクセント表記です。\n"
 "\n"
-"さらに詳しいテストをしたい場合は、ヘルプではなく /A POD ENCODING TEST のマ"
-"ニュアルページをお読みください。"
+"さらに詳しいテストをしたい場合は、ヘルプではなく /A POD ENCODING TEST のマニュアルページをお読みください。"
 
 #. tumbleweed/perl-Text-WrapI18N/summary
 #. leap/perl-Text-WrapI18N/summary
@@ -30680,9 +30919,8 @@ msgstr ""
 
 #. tumbleweed/perl-UNIVERSAL-require/summary
 #. leap/perl-UNIVERSAL-require/summary
-#, fuzzy
 msgid "require() modules from a variable"
-msgstr "UNIVERSAL::require - 変数からの require() モジュール"
+msgstr "変数からの require() モジュール"
 
 #. tumbleweed/perl-UNIVERSAL-require/description
 #. leap/perl-UNIVERSAL-require/description
@@ -31016,9 +31254,8 @@ msgstr ""
 #. tumbleweed/perl-XML-CommonNS/description
 #. leap/perl-XML-CommonNS/summary
 #. leap/perl-XML-CommonNS/description
-#, fuzzy
 msgid "A list of commonly used namespaces"
-msgstr "一般的に使用されるデータ構造を提供する GObject ベースのライブラリ"
+msgstr "一般的に使用されるネームスペースのリスト"
 
 #. tumbleweed/perl-XML-DOM/summary
 msgid "Perl Module for Building Dom Level 1 Compliant Document Structures"
@@ -31359,9 +31596,8 @@ msgstr ""
 
 #. tumbleweed/perl-XML-SemanticDiff/summary
 #. leap/perl-XML-SemanticDiff/summary
-#, fuzzy
 msgid "Perl extension for comparing XML documents."
-msgstr "XML ドキュメントを書き込むための Perl 拡張"
+msgstr "XML ドキュメントを比較するための Perl 拡張です。"
 
 #. tumbleweed/perl-XML-SemanticDiff/description
 #. leap/perl-XML-SemanticDiff/description
@@ -31391,11 +31627,9 @@ msgstr ""
 
 #. tumbleweed/perl-XML-SimpleObject-LibXML/summary
 #. leap/perl-XML-SimpleObject-LibXML/summary
-#, fuzzy
 msgid ""
 "Perl extension allowing a simple(r) object representation of an XML::Lib[cut]"
-msgstr ""
-"XML::LibXML DOM オブジェクトをシンプルなオブジェクト表現で表わす Perl 拡張"
+msgstr "XML::LibXML DOM オブジェクトをシンプルなオブジェクト表現で表わす Perl 拡張"
 
 #. tumbleweed/perl-XML-SimpleObject-LibXML/description
 #. leap/perl-XML-SimpleObject-LibXML/description
@@ -31625,7 +31859,6 @@ msgid "YAML Ain't Markup Language™"
 msgstr "YAML - マークアップ言語以外のもの (tm)"
 
 #. tumbleweed/perl-YAML/description
-#, fuzzy
 msgid ""
 "The YAML.pm module implements a YAML Loader and Dumper based on the YAML 1.0 "
 "specification. http://www.yaml.org/spec/\n"
@@ -31636,11 +31869,11 @@ msgid ""
 "\n"
 "For information on the YAML syntax, please refer to the YAML specification."
 msgstr ""
-"YAML.pm は YAML 1.0 仕様をベースにした YML ローダ／ダンパーです。詳しくは"
-"http://www.yaml.org/spec/ をお読みください。\n"
+"YAML.pm は YAML 1.0 仕様をベースにした YML ローダ／ダンパーです。詳しくはhttp://www.yaml.org/spec/ "
+"をお読みください。\n"
 "\n"
-"YAML は人間の可読性に最適化されているデータ直列化言語です。 Perl を含む多くの"
-"近代的プログラミング言語のデータ構造を表現するのに使用することができます。\n"
+"YAML は人間の可読性に最適化されているデータ直列化言語です。 Perl "
+"を含む多くの近代的プログラミング言語のデータ構造を表現するのに使用することができます。\n"
 "\n"
 "YAML の文法について、詳しくは YAML 仕様をお読みください。"
 
@@ -33215,16 +33448,13 @@ msgstr ""
 "す。"
 
 #. leap/perl-IO-Digest/description
-#, fuzzy
 msgid ""
 "This module allows you to calculate digests while reading or writing file "
 "handles. This avoids the case you need to reread the same content to compute "
 "the digests after written a file."
 msgstr ""
-"このモジュールは、ファイルハンドルに対する読み込みや書き込みの際にダイジェス"
-"ト値を計算することができるものです。このモジュールを利用することで、ファイル"
-"への書き込み後に再度読み出しを行なってダイジェスト値を計算したりする手間を省"
-"くことができます。"
+"このモジュールは、ファイルハンドルに対する読み込みや書き込みの際にダイジェスト値を計算することができるものです。このモジュールを利用することで、ファイルへ"
+"の書き込み後に再度読み出しを行なってダイジェスト値を計算したりする手間を省くことができます。"
 
 #. leap/perl-IO-HTML/description
 msgid ""
