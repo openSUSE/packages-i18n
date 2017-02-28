@@ -23262,11 +23262,17 @@ msgid ""
 "The current implementation is mostly a proof of concept, but it does mostly "
 "seem to work."
 msgstr ""
+"配列参照で実装されているオブジェクトは、ハッシュ参照で実装されているものよりしばしば高速に動作します。 Moose "
+"の既定のオブジェクト実装はハッシュ参照をベースにしていますが、配列参照に直すことでより高速化できるかもしれません。\n"
+"\n"
+"'use Moose' の代わりに 'use MooseX::ArrayRef' を使用するだけですが、下記のような制限事項もあります。\n"
+"\n"
+"現在の実装はほとんどコンセプト実証目的ではありますが、多くは問題なく動作するはずです。"
 
 #. tumbleweed/perl-MooseX-Attribute-ENV/summary
 #. leap/perl-MooseX-Attribute-ENV/summary
 msgid "Set default of an attribute to a value from %ENV"
-msgstr ""
+msgstr "属性の既定値を %ENV からの値に設定するモジュール"
 
 #. tumbleweed/perl-MooseX-Attribute-ENV/description
 #. leap/perl-MooseX-Attribute-ENV/description
@@ -23299,10 +23305,34 @@ msgid ""
 "\n"
 "If the named key isn't found in %ENV, then defaults will execute as normal."
 msgstr ""
+"これは Moose の属性形質と呼ばれるもので、属性に対する既定値を %ENV ハッシュから採用する際に使用するものです。そのため、たとえば環境変数 "
+"USERNAME に 'John' という値が入っている場合、下記のようなコードを作成することができます:\n"
+"\n"
+"\tpackage MyApp::MyClass;\n"
+"\n"
+"\tuse Moose; \tuse MooseX::Attribute::ENV;\n"
+"\n"
+"\thas 'username' => (is=>'ro', traits=>['ENV']);\n"
+"\n"
+"\tpackage main;\n"
+"\n"
+"\tmy $myclass = MyApp::MyClass->new();\n"
+"\n"
+"\tprint $myclass->username; # STDOUT => 'John';\n"
+"\n"
+"これは下記と同じような仕組みです:\n"
+"\n"
+"\thas 'attr' => ( \t\tis=>'ro', \t\tdefault=> sub { \t\t\t$ENV{uc 'attr'}; \t"
+"\t}, \t);\n"
+"\n"
+"このモジュールにはメリットを提供するいくつかの機能が用意されていますが、学習ツールとして利用できるような十分にシンプルな属性形質になるようになっています。"
+"\n"
+"\n"
+"なお、 %ENV 内に名前付きのキーが見つからない場合は、既定値は通常通りに処理されます。"
 
 #. tumbleweed/perl-MooseX-AttributeHelpers/summary
 msgid "(DEPRECATED) Extend your attribute interfaces"
-msgstr ""
+msgstr "(廃止予定) 属性インターフェイスの拡張"
 
 #. tumbleweed/perl-MooseX-AttributeHelpers/description
 msgid ""
@@ -23317,11 +23347,18 @@ msgid ""
 "As seen in the SYNOPSIS, you specify the extension via the 'metaclass' "
 "parameter. Available meta classes are:"
 msgstr ""
+"*この配布物は廃止予定です。このモジュールで提供されている機能は、 Moose の中枢コード内に取り込まれ、 "
+"Moose::Meta::Attribute::Native になっています。この配布物は新しいコードで使用すべきではありません。*\n"
+"\n"
+"Moose の属性はアクセサやリーダ、クリアラや述語などを提供するための仕組みですが、このライブラリは特定のデータタイプに対して、属性支援メソッドとして使"
+"用できる機能を提供します。\n"
+"\n"
+"SYNOPSIS にも書いてあるとおり、 'metaclass' パラメータを介して拡張を指定します。利用可能なメタクラスは下記のとおりです:"
 
 #. tumbleweed/perl-MooseX-AuthorizedMethods/summary
 #. leap/perl-MooseX-AuthorizedMethods/summary
 msgid "Syntax sugar for authorized methods"
-msgstr ""
+msgstr "認可されたメソッドに対する構文追加機能"
 
 #. tumbleweed/perl-MooseX-AuthorizedMethods/description
 #. leap/perl-MooseX-AuthorizedMethods/description
@@ -23331,11 +23368,14 @@ msgid ""
 "default verification method will take the \"user\" method result and call "
 "\"roles\" to list the roles given to that user."
 msgstr ""
+"このメソッドは \"authorized\" (認可済み) "
+"のデコレータを公開するもので、実際の実行の前にユーザが必要なアクセス許可を持っているかどうかを検証するための仕組みです。既定の検証メソッドは \""
+"user\" メソッドの結果を取り、そのユーザに対する役割を \"roles\" を実行して判断します。"
 
 #. tumbleweed/perl-MooseX-ClassAttribute/summary
 #. leap/perl-MooseX-ClassAttribute/summary
 msgid "Declare class attributes Moose-style"
-msgstr ""
+msgstr "Moose スタイルのクラス属性の定義"
 
 #. tumbleweed/perl-MooseX-ClassAttribute/description
 #. leap/perl-MooseX-ClassAttribute/description
@@ -23352,11 +23392,20 @@ msgid ""
 "directly, or on objects of that class. Passing a class attribute to the "
 "constructor will not set that attribute."
 msgstr ""
+"このモジュールは、オブジェクトの属性と同じ方法でクラスの属性を定義することができるモジュールです。メソッドは、 'has()' ではなく "
+"'class_has()' を使用します。\n"
+"\n"
+"親の属性のオーバーライドやデリゲーション ('handles') 、属性の形質など、任意の Moose "
+"の属性修飾を利用することもできます。すべての機能が問題なく動作するはずですが、例外として \"required\" "
+"フラグだけは、クラスの属性として使用することができません。\n"
+"\n"
+"くらいの属性に対するアクセサメソッドは、クラス上から直接呼び出すことができるほか、クラスのオブジェクトからも呼び出すことができます。クラスの属性をコンスト"
+"ラクタに渡す際には、これらの属性は設定されません。"
 
 #. tumbleweed/perl-MooseX-Clone/summary
 #. leap/perl-MooseX-Clone/summary
 msgid "Fine-grained cloning support for Moose objects"
-msgstr ""
+msgstr "Moose オブジェクトに対するきめ細かいクローンのサポート"
 
 #. tumbleweed/perl-MooseX-Clone/description
 #. leap/perl-MooseX-Clone/description
@@ -23370,11 +23419,16 @@ msgid ""
 "handle cloning of data within the object, typically delegating to the "
 "attribute value's own 'clone' method."
 msgstr ""
+"Moose 標準では、最大限に柔軟性を生かす目的から、非常に基本的なクローン機能しか提供されていません。\n"
+"\n"
+"この役割は 'clone' メソッドを提供するもので、すでに Moose "
+"内に存在する低レベルのクローンを利用して、それらのイントロスペクションをベースにして選択的な深いクローン処理を実施します。 'Clone' "
+"を持つ属性は、オブジェクト内でクローン処理を行ないますが、一般的には属性値が独自で持つ 'clone' メソッドを代理するものです。"
 
 #. tumbleweed/perl-MooseX-ConfigFromFile/summary
 #. leap/perl-MooseX-ConfigFromFile/summary
 msgid "An abstract Moose role for setting attributes from a configfile"
-msgstr ""
+msgstr "設定ファイルから属性を設定するための抽象型の Moose の役割"
 
 #. tumbleweed/perl-MooseX-ConfigFromFile/description
 #. leap/perl-MooseX-ConfigFromFile/description
@@ -23395,12 +23449,21 @@ msgid ""
 "if available to load attributes from the file specified by the command line "
 "flag '--configfile' during its normal 'new_with_options'."
 msgstr ""
+"このモジュールは、設定ファイルを入力としたパラメータを利用し、オブジェクトを作成するための代替コンストラクタを提供します。設定ファイルに対する実際の読み込"
+"み処理は、具体的な副役割が実施します。\n"
+"\n"
+"このモジュールは 'configfile' 属性と、 'new_with_config' クラスメソッドを定義するほか、クラスメソッド "
+"'get_config_from_file' を実装する具体的な役割を必要とします。\n"
+"\n"
+"'new_with_config' への引数として直接指定された属性は、設定ファイルの内容を上書きします。\n"
+"\n"
+"MooseX::Getopt ではこの抽象的な役割を利用して、通常の 'new_with_options' の処理内でコマンドラインフラグ '--"
+"configfile' を処理して、そのファイルで指定された内容の属性を読み込んでいます。"
 
 #. tumbleweed/perl-MooseX-Daemonize/summary
 #. leap/perl-MooseX-Daemonize/summary
-#, fuzzy
 msgid "Role for daemonizing your Moose based application"
-msgstr "CommonC++ アプリケーションを開発するためのファイル"
+msgstr "Moose ベースのアプリケーションをデーモン化する役割"
 
 #. tumbleweed/perl-MooseX-Daemonize/description
 #. leap/perl-MooseX-Daemonize/description
@@ -23409,10 +23472,12 @@ msgid ""
 "responds appropriately to Signals. This module provides a set of basic roles "
 "as an infrastructure to do that."
 msgstr ""
+"pid ファイルを持つ永続的なデーモンを作成し、シグナルに対して適切な反応を行ないたい場合は、このモジュールをお使いください。デーモンとして動作するための"
+"基本的なインフラストラクチャのセットを提供します。"
 
 #. tumbleweed/perl-MooseX-Declare/summary
 msgid "(DEPRECATED) Declarative syntax for Moose"
-msgstr ""
+msgstr "(廃止予定) Moose 向け宣言的文法"
 
 #. tumbleweed/perl-MooseX-Declare/description
 msgid ""
@@ -23421,24 +23486,27 @@ msgid ""
 "\n"
 "*Note:* Please see the the /WARNING manpage section below!"
 msgstr ""
+"このモジュールは、 Perl 5 向けのポストモダン型オブジェクトシステムである Moose に対して、文法機能の追加を行なうものです。このモジュールは、"
+" 'class' と 'role' のキーワードを追加します。\n"
+"\n"
+"*注意:* 下記の /WARNING セクションをお読みください！"
 
 #. tumbleweed/perl-MooseX-Getopt/summary
 #. leap/perl-MooseX-Getopt/summary
-#, fuzzy
 msgid "Moose role for processing command line options"
-msgstr "コマンドラインパラメータを処理するための C 言語ライブラリ"
+msgstr "コマンドラインオプションを処理するための Moose の役割"
 
 #. tumbleweed/perl-MooseX-Getopt/description
 #. leap/perl-MooseX-Getopt/description
 msgid ""
 "This is a role which provides an alternate constructor for creating objects "
 "using parameters passed in from the command line."
-msgstr ""
+msgstr "これはコマンドラインで渡されたパラメータを利用して、オブジェクトを作成するための代替コンストラクタを提供する役割です。"
 
 #. tumbleweed/perl-MooseX-GlobRef/summary
 #. leap/perl-MooseX-GlobRef/summary
 msgid "Store a Moose object in glob reference"
-msgstr ""
+msgstr "Moose オブジェクトの glob 参照への保管"
 
 #. tumbleweed/perl-MooseX-GlobRef/description
 #. leap/perl-MooseX-GlobRef/description
@@ -23459,25 +23527,37 @@ msgid ""
 "\n"
 "  print $self->key;"
 msgstr ""
+"このモジュールは、ファイルハンドルの glob 参照内に Moose のオブジェクトを保存するための仕組みです。クラスの属性は、 glob "
+"参照に結び付けられているハッシュスロット内に保存されます。これにより、 IO::Handle の Moose 版を作成することができます。\n"
+"\n"
+"属性は下記のような表現で直接アクセスすることができます:\n"
+"\n"
+"  my $hashref = \\%{*$self};   print $hashref->{key};\n"
+"\n"
+"上記を短縮すると、下記のようになります:\n"
+"\n"
+"  print *$self->{key};\n"
+"\n"
+"ただし、標準のアクセサを利用すべきです:\n"
+"\n"
+"  print $self->key;"
 
 #. tumbleweed/perl-MooseX-Has-Options/summary
 #. leap/perl-MooseX-Has-Options/summary
 msgid "Succinct options for Moose"
-msgstr ""
+msgstr "Moose 向けの簡潔なオプション機能"
 
 #. tumbleweed/perl-MooseX-Has-Options/description
 #. leap/perl-MooseX-Has-Options/description
-#, fuzzy
 msgid ""
 "This module provides a succinct syntax for declaring options for the Moose "
 "manpage attributes."
-msgstr ""
-"このモジュールは、時間範囲を曖昧な形で／正確な形で表現する機能を提供します。"
+msgstr "このモジュールは、 Moose の属性内でオプションを設定するための簡潔な文法を提供します。"
 
 #. tumbleweed/perl-MooseX-HasDefaults/summary
 #. leap/perl-MooseX-HasDefaults/summary
 msgid "Default \"is\" to \"ro\" or \"rw\" for all attributes"
-msgstr ""
+msgstr "すべての属性に対して \"ro\" (読み込み専用) または \"rw\" (読み書き両対応) の既定値を付与するモジュール"
 
 #. tumbleweed/perl-MooseX-HasDefaults/description
 #. leap/perl-MooseX-HasDefaults/description
@@ -23489,11 +23569,17 @@ msgid ""
 "If you pass a specific value to any 'has''s 'is', that overrides the "
 "default. If you do not want an accessor, pass 'is => undef'."
 msgstr ""
+"MooseX::HasDefaults::RO は既定値が 'ro' のものを表します。\n"
+"\n"
+"MooseX::HasDefaults::RW は既定値が 'rw' のものを表します。\n"
+"\n"
+"なお、 'has' の 'is' に対して特定の値を渡すと、既定値は上書きされます。アクセサが不要な場合は、 'is => undef' "
+"を渡してください。"
 
 #. tumbleweed/perl-MooseX-InsideOut/summary
 #. leap/perl-MooseX-InsideOut/summary
 msgid "inside-out objects with Moose"
-msgstr ""
+msgstr "Moose による裏返しオブジェクト"
 
 #. tumbleweed/perl-MooseX-InsideOut/description
 #. leap/perl-MooseX-InsideOut/description
@@ -23503,12 +23589,14 @@ msgid ""
 "means that you can extend non-Moose classes, whose internals you either "
 "don't want to care about or aren't hash-based."
 msgstr ""
+"MooseX::InsideOut は裏返しのオブジェクト向けの役割を提供します。言い換えると、 '$self' "
+"以外のどこかに、属性スロットのストレージを設定する仕組みです。これにより、内部仕様のわからない非 Moose クラスや、ハッシュベースではない非 "
+"Moose クラスを拡張することができるようになります。"
 
 #. tumbleweed/perl-MooseX-Iterator/summary
 #. leap/perl-MooseX-Iterator/summary
-#, fuzzy
 msgid "Iterate over collections"
-msgstr "プロセスツール集"
+msgstr "コレクションをまたいだ列挙"
 
 #. tumbleweed/perl-MooseX-Iterator/description
 #. leap/perl-MooseX-Iterator/description
@@ -23538,13 +23626,35 @@ msgid ""
 "\n"
 "  Resets the cursor, so you can iterate through the elements again."
 msgstr ""
+"これは smalltalk のようなストリームを Moose に追加しようとする試みです。現時点では、配列参照とハッシュ参照で動作します。\n"
+"\n"
+"* next\n"
+"\n"
+"  next メソッドは、コレクション内の次の要素を提供します。\n"
+"\n"
+"    配列の場合は配列の要素を返します。\n"
+"\n"
+"    ハッシュの場合はキーと値を含むハッシュ参照のペアを返します。\n"
+"\n"
+"* has_next\n"
+"\n"
+"  has_next メソッドは、コレクション内の現在の要素の次に別の要素が存在した場合に true を返し、そうでなかった場合は false を返す、 "
+"boolean 型のメソッドです。\n"
+"\n"
+"* peek\n"
+"\n"
+"  peek メソッドは現在の状態を変えることなく、次の要素を返すメソッドです。コレクションの終わりに到達している場合は、 undef を返します。\n"
+"\n"
+"* reset\n"
+"\n"
+"  カーソルをリセットします。これにより、要素を最初から列挙しなおすことができます。"
 
 #. tumbleweed/perl-MooseX-LazyLogDispatch/summary
 #. tumbleweed/perl-MooseX-LogDispatch/summary
 #. leap/perl-MooseX-LazyLogDispatch/summary
 #. leap/perl-MooseX-LogDispatch/summary
 msgid "A Logging Role for Moose"
-msgstr ""
+msgstr "Moose 向けログ役割"
 
 #. tumbleweed/perl-MooseX-LazyLogDispatch/description
 #. tumbleweed/perl-MooseX-LogDispatch/description
@@ -23552,12 +23662,12 @@ msgstr ""
 #. leap/perl-MooseX-LogDispatch/description
 msgid ""
 "the Log::Dispatch manpage role for use with your the Moose manpage classes."
-msgstr ""
+msgstr "Log::Dispatch は、 Moose のクラスを利用するログの役割です。"
 
 #. tumbleweed/perl-MooseX-LazyRequire/summary
 #. leap/perl-MooseX-LazyRequire/summary
 msgid "Required attributes which fail only when trying to use them"
-msgstr ""
+msgstr "利用しようとした場合にのみ失敗させる必須属性"
 
 #. tumbleweed/perl-MooseX-LazyRequire/description
 #. leap/perl-MooseX-LazyRequire/description
@@ -23568,11 +23678,15 @@ msgid ""
 "exception unless a value for the attributes was provided earlier by a "
 "constructor parameter or through a writer method."
 msgstr ""
+"このモジュールは、 Moose の属性定義に \"lazy_required\" オプションを追加します。\n"
+"\n"
+"このオプションが設定されたすべての属性のリーダメソッドは、あらかじめコンストラクタのパラメータで設定されるか、もしくはライターメソッドで設定されない限り、"
+"例外をスローします。"
 
 #. tumbleweed/perl-MooseX-Log-Log4perl/summary
 #. leap/perl-MooseX-Log-Log4perl/summary
 msgid "Logging Role for Moose based on Log::Log4perl"
-msgstr ""
+msgstr "Log::Log4perl をベースにした Moose ベースのログ役割"
 
 #. tumbleweed/perl-MooseX-Log-Log4perl/description
 #. leap/perl-MooseX-Log-Log4perl/description
@@ -23604,11 +23718,34 @@ msgid ""
 "# Access the log of the object     $myclass->dummy;                    # "
 "Will log \"Dummy log entry\""
 msgstr ""
+"Moose や Moo のクラス内で使用することを前提として、 Log::Log4perl "
+"向けの非常に軽量なログ役割ラッパーです。最初のメッセージ記録を行なうよりも前に、 Log4perl のインスタンスの初期化処理を実施しなければなりません。"
+"初期化処理を実施しない場合は、既定の初期化処理が動作しますが、おそらくそれは期待通りの動作ではないでしょう。\n"
+"\n"
+"なお、互換性確保の理由から、アプリケーションのログ記録のための汎用インターフェイスを使用するため、 'logger' "
+"属性にもアクセスできるようになっています。\n"
+"\n"
+"クラス内でのロガーの使用は、役割を消費するだけの簡単な仕組みです:\n"
+"\n"
+"    package MyClass;     use Moose;     with 'MooseX::Log::Log4perl';\n"
+"\n"
+"    sub dummy {         my $self = shift;         $self->log->info(\"Dummy "
+"log entry\");     }\n"
+"\n"
+"ロガーを使用する前にロガーの初期化を行なう必要があります。これはメインのアプリケーション内で下記のようにして実施します:\n"
+"\n"
+"    package main;     use Log::Log4perl qw(:easy);     use MyClass;\n"
+"\n"
+"    BEGIN { Log::Log4perl->easy_init() };\n"
+"\n"
+"    my $myclass = MyClass->new();     $myclass->log->info(\"In my class\"); #"
+" Access the log of the object     $myclass->dummy;                    # Will "
+"log \"Dummy log entry\""
 
 #. tumbleweed/perl-MooseX-MarkAsMethods/summary
 #. leap/perl-MooseX-MarkAsMethods/summary
 msgid "Mark overload code symbols as methods"
-msgstr ""
+msgstr "オーバーロードコードシンボルをメソッドとしてマークするモジュール"
 
 #. tumbleweed/perl-MooseX-MarkAsMethods/description
 #. leap/perl-MooseX-MarkAsMethods/description
@@ -23625,11 +23762,20 @@ msgid ""
 "If 'autoclean =&gt; 1' is passed to import on using this module, we will "
 "invoke namespace::autoclean to clear out non-methods."
 msgstr ""
+"MooseX::MarkAsMethods は Moose のメソッドとして特定の関数を簡単にマークすることができる仕組みです。これにより、 "
+"namespace::autoclean などの他のパッケージが、オーバーロードを無視することなく動作するようにすることができます。 MooseX::"
+"MarkAsMethods を利用すると、オーバーロードは Class::MOP ではメソッドとして認識されるようになり、"
+"クラスの拡張やオーバーロードされた役割から生成されたものも \"単純に動作\" するようになります。\n"
+"\n"
+"既定ではオーバーロードをチェックし、これらの関数をメソッドとしてマークします。\n"
+"\n"
+"このモジュールを使用する際、インポート時に 'autoclean =&gt; 1' が設定されている場合、非メソッドを消去するため、 "
+"namespace::autoclean を実行します。"
 
 #. tumbleweed/perl-MooseX-Meta-TypeConstraint-ForceCoercion/summary
 #. leap/perl-MooseX-Meta-TypeConstraint-ForceCoercion/summary
 msgid "Force coercion when validating type constraints"
-msgstr ""
+msgstr "型の制約を検証する際の強制"
 
 #. tumbleweed/perl-MooseX-Meta-TypeConstraint-ForceCoercion/description
 #. leap/perl-MooseX-Meta-TypeConstraint-ForceCoercion/description
@@ -23638,22 +23784,26 @@ msgid ""
 "will force coercion of the value when checking or validating a value against "
 "it."
 msgstr ""
+"このクラスは、値の確認や検証を行なう際、その値の強制を行なうための方法を提供する \"Moose::Meta::TypeConstraint\" "
+"向けのラッパーです。"
 
 #. tumbleweed/perl-MooseX-Method-Signatures/summary
 msgid ""
 "(DEPRECATED) Method declarations with type constraints and no source filter"
-msgstr ""
+msgstr "(廃止予定) シグネーチャ付きのメソッド宣言 (ソースフィルタなし)"
 
 #. tumbleweed/perl-MooseX-Method-Signatures/description
 msgid ""
 "Provides a proper method keyword, like \"sub\" but specifically for making "
 "methods and validating their arguments against Moose type constraints."
 msgstr ""
+"\"sub\" のような適切なメソッドキーワードを提供しますが、特にメソッドの作成と Moose "
+"タイプ制約に従ったパラメータの検証を行なうための仕組みを提供します。"
 
 #. tumbleweed/perl-MooseX-MultiInitArg/summary
 #. leap/perl-MooseX-MultiInitArg/summary
 msgid "Attributes with aliases for constructor arguments"
-msgstr ""
+msgstr "コンストラクタのパラメータ向けの別名付き属性"
 
 #. tumbleweed/perl-MooseX-MultiInitArg/description
 #. leap/perl-MooseX-MultiInitArg/description
@@ -23665,11 +23815,15 @@ msgid ""
 "inconsistently, and I wanted to rename them without breaking backwards "
 "compatibility with my existing API."
 msgstr ""
+"オブジェクトのコンストラクタにパラメータを渡す際、任意の数の属性を呼び出したい場合があります。このモジュールは、このような機能を提供するためのものです。"
+"\n"
+"\n"
+"名前が一定しないいくつかの属性を設定したいが、既存の API との後方互換性を壊さずに名前を変更したいことがあったため、開発を行なったものです。"
 
 #. tumbleweed/perl-MooseX-NonMoose/summary
 #. leap/perl-MooseX-NonMoose/summary
 msgid "easy subclassing of non-Moose classes"
-msgstr ""
+msgstr "非 Moose クラスの簡単なサブクラス化"
 
 #. tumbleweed/perl-MooseX-NonMoose/description
 #. leap/perl-MooseX-NonMoose/description
@@ -23718,11 +23872,41 @@ msgid ""
 "similar to how you can already pass '-version' in the 'extends' call in a "
 "similar way."
 msgstr ""
+"'MooseX::NonMoose' は Moose を利用して非 Moose クラスを簡単にサブクラス化するためのモジュールです。これを利用すれば、"
+"例えば Moose:Object からの適切な継承を設定したり、 'BUILD' メソッドのような仕組みを呼び出すコンストラクタをインストール (および "
+"'make_immutable' の時点でのインライン化) "
+"したりなど、細部に注意を払う必要をなくすことができます。なお、このモジュールはできる限り直感的では無いように作られています。このモジュールを利用した場合、"
+"非 Moose クラスから継承するのと Moose クラスから継承するのは同じ処理となり、上記のようないくつかの注意も払う必要がなくなります。"
+"このモジュールのゴールのうちの 1 つとしては、アプリケーション全体をまたいで使用される Moose::Exporter ベースのパッケージ内に同梱され、"
+" Moose モジュールからの継承だけを行なっているクラスや、どのクラスからも継承していないクラスを妨害することが無いようにすることを目指しています。\n"
+"\n"
+"このモジュールを使用する方法にはいくつかあります。最も簡単な方法は、お使いのクラス内で 'use MooseX::NonMoose;' "
+"を追加することです。これにより、非 Moose モジュールを拡張するのに必要なすべてのことを実施します。 "
+"MooseX::NonMoose::Meta::Role::Class と MooseX::NonMoose::Meta::Role::"
+"Constructor をお使いのメタクラスに手動で適用することもできますし、 'use Moose;' の行内に '-traits' "
+"オプションを追加してもかまいません。また、 Moose::Exporter ベースのパッケージ内で Moose::Util::MetaRole "
+"を利用して適用してもかまいません。 MooseX::NonMoose::Meta::Role::Class "
+"はこのモジュールのメインの機能を提供するもので、インライン化について気にしないのであれば、これですべてです。お使いのクラスに不変性を付与したい場合は、 "
+"MooseX::NonMoose::Meta::Role::Constructor "
+"をも適用することで、インライン化されたコンストラクタを提供することができます。\n"
+"\n"
+"'MooseX::NonMoose' を利用することで、 'FOREIGNBUILDARGS' "
+"メソッドを定義するスーパークラスのコンストラクタに対して、渡されるパラメータリストを処理することができます。これは同じパラメータリストで "
+"'BUILDARGS' メソッドを呼び出した場合と同じですが、スーパークラスのコンストラクタに渡すべきパラメータリストを返すところが異なります。"
+"これにより 'MooseX::NonMoose' は、 Moose が必要とする追加パラメータ (属性など) "
+"でコンストラクタが混乱するようなスーパークラスにも対応できるようになります。\n"
+"\n"
+"すべての非 Moose クラスがコンストラクタに 'new' を使用しているわけではありません。このモジュールは、このようなクラスを拡張する際、"
+"どのメソッドがコンストラクタなのかを 'extends' で指定することができます。具体的には、下記のようになります:\n"
+"\n"
+"  extends 'Foo' => { -constructor_name => 'create' };\n"
+"\n"
+"'extends' 内では、ほかにも '-version' などを同じ方法で渡すこともできます。"
 
 #. tumbleweed/perl-MooseX-Object-Pluggable/summary
 #. leap/perl-MooseX-Object-Pluggable/summary
 msgid "Make your classes pluggable"
-msgstr ""
+msgstr "お使いのクラスをプラグイン可能にするモジュール"
 
 #. tumbleweed/perl-MooseX-Object-Pluggable/description
 #. leap/perl-MooseX-Object-Pluggable/description
@@ -23733,11 +23917,14 @@ msgid ""
 "pollute your namespace, however I took great care in using the least "
 "ambiguous names possible."
 msgstr ""
+"このモジュールは、 Moose ベースのクラスから役割として読み込まれるモジュールです。 5 種類のメソッドと 4 種類の属性が追加され、プラグインとプラ"
+"グインに対する拡張を読み込み、処理するための支援機能を提供します。これによってネームスペースを汚染する可能性も理解しておりますが、少なくとも不明確な名前に"
+"関してはできる限り注意しております。"
 
 #. tumbleweed/perl-MooseX-OneArgNew/summary
 #. leap/perl-MooseX-OneArgNew/summary
 msgid "Teach ->New to Accept Single, Non-Hashref Arguments"
-msgstr ""
+msgstr "->New における単一の非ハッシュ参照の属性の受け入れ"
 
 #. tumbleweed/perl-MooseX-OneArgNew/description
 #. leap/perl-MooseX-OneArgNew/description
@@ -23765,22 +23952,38 @@ msgid ""
 "this will be an error, and that if a coercion from HashRef exists, you   "
 "might be getting yourself into a weird situation."
 msgstr ""
+"MooseX::OneArgNew はお使いのコンストラクタを単一のパラメータとし、 1 "
+"項目のハッシュ参照に対する値として解釈するモジュールです。これはパラメータ化された役割で、下記の 3 種類のパラメータを設定することができます:\n"
+"\n"
+"* type\n"
+"\n"
+"  単一のパラメータに対して設定する Moose の型を指定します。これは既存の型であるべきで、文字列タイプまたは MooseX::Type "
+"のいずれかでもかまいません。\n"
+"\n"
+"* init_arg\n"
+"\n"
+"  単一のパラメータでハッシュ参照を使用する際、そのキーとして使用する文字列を指定します。\n"
+"\n"
+"* coerce\n"
+"\n"
+"  true を指定すると、可能であれば new に対する単一のパラメータを既存の型に強制します。ただし、型に対する強制はエラーとなりうるもので、ハッシュ"
+"参照に対して強制を行なうと、予期しない結果になるかもしれません。"
 
 #. tumbleweed/perl-MooseX-POE/summary
 #. leap/perl-MooseX-POE/summary
 msgid "The Illicit Love Child of Moose and POE"
-msgstr ""
+msgstr "Moose と POE による不法な愛の子供"
 
 #. tumbleweed/perl-MooseX-POE/description
 #. leap/perl-MooseX-POE/description
 msgid ""
 "MooseX::POE is a the Moose manpage wrapper around a the POE::Session manpage."
-msgstr ""
+msgstr "MooseX::POE は POE::Session に対する Moose ラッパーです。"
 
 #. tumbleweed/perl-MooseX-Param/summary
 #. leap/perl-MooseX-Param/summary
 msgid "Simple role to provide a standard param method"
-msgstr ""
+msgstr "標準のパラメータ方式を提供するシンプルな役割"
 
 #. tumbleweed/perl-MooseX-Param/description
 #. leap/perl-MooseX-Param/description
@@ -23791,10 +23994,13 @@ msgid ""
 "I found that I had written this code over and over and over and over again, "
 "and each time it was the same. So I thought, why not put it in a role?"
 msgstr ""
+"これは CGI でいうところの 'param' メソッドのような、非常にシンプルな Moose の役割です。\n"
+"\n"
+"このコードは様々なプロジェクトで何度も作られているものであり、なぜ役割にまとめられていないのか不審に思っていたくらいのものです。"
 
 #. tumbleweed/perl-MooseX-Params-Validate/summary
 msgid "an extension of Params::Validate using Moose's types"
-msgstr ""
+msgstr "Moose の型を利用した Params::Validate の拡張"
 
 #. tumbleweed/perl-MooseX-Params-Validate/description
 msgid ""
@@ -23805,11 +24011,15 @@ msgid ""
 "You might also want to explore 'MooseX::Method::Signatures' and 'MooseX::"
 "Declare'."
 msgstr ""
+"このモジュールは Moose 内のギャップを埋めるもので、 Moose のメソッドパラメータの検証機能を追加するための仕組みです。"
+"これは多数ある開発オプションの中の 1 つでしかなく、どのような目的であっても \"公式\" のものであるとは考えるべきではないものです。\n"
+"\n"
+"'MooseX::Method::Signatures' や 'MooseX::Declare' についてもお読みください。"
 
 #. tumbleweed/perl-MooseX-Role-Cmd/summary
 #. leap/perl-MooseX-Role-Cmd/summary
 msgid "Wrap system command binaries the Moose way"
-msgstr ""
+msgstr "Moose の方式でシステムコマンドのバイナリをラッピングするモジュール"
 
 #. tumbleweed/perl-MooseX-Role-Cmd/description
 #. leap/perl-MooseX-Role-Cmd/description
@@ -23819,11 +24029,12 @@ msgid ""
 "manpage objects into command strings which are passed to the IPC::Cmd "
 "manpage."
 msgstr ""
+"MooseX::Role::Cmd は Moose の役割であり、コマンドラインのラッパーモジュールの構築処理を簡単にするための仕組みです。"
+"自動的にMoose のオブジェクトをコマンド文字列にマッピングし、 IPC::Cmd に渡せる文字列にします。"
 
 #. tumbleweed/perl-MooseX-Role-Parameterized/summary
-#, fuzzy
 msgid "Moose roles with composition parameters"
-msgstr "メソッド／関数のパラメータを確認する仕組み"
+msgstr "組成パラメータを持つ Moose の役割"
 
 #. tumbleweed/perl-MooseX-Role-Parameterized/description
 msgid ""
@@ -23851,11 +24062,25 @@ msgid ""
 "See MooseX::Role::Parameterized::Extending for some tips on how to extend "
 "this module."
 msgstr ""
+"パラメータ化した役割には、 2 つのものが含まれています。 1 つはパラメータの修飾子、もう 1 つは 'role' のブロックです。\n"
+"\n"
+"パラメータは parameter キーワードを利用して定義するもので、 Moose ととても似た仕組みです。ここでは Moose "
+"で利用可能な任意のオプションを使用することができます。 'is' に対する既定値は 'ro' "
+"であり、これは非常に一般的な場合を表しています。アクセサが無い場合は、 'is => 'bare'' を指定してください。これらのパラメータは、"
+"消費クラスが Moose を使用する際に値を取得します。パラメータオブジェクトは、これらの値で構築され、 'role' ブロックに渡されます。\n"
+"\n"
+"'role' ブロックでは、役割を構築するのに Moose::Role のキーワードを使用します。パラメータオブジェクトは、消費クラスがパラメータとして提"
+"供したものを検査します。役割をカスタマイズしたい場合は、パラメータを利用して実施してください。\n"
+"\n"
+"パラメータ化された役割の実装には多数の方法がありますが (十分に一貫性のある API であるものとして) "
+"、この方法が最も簡単で柔軟な設計であるものと考えております。偶然にも、 Pugs ではこれと似た設計になっています。\n"
+"\n"
+"このモジュールの拡張方法についてのヒントは、 MooseX::Role::Parameterized::Extending をお読みください。"
 
 #. tumbleweed/perl-MooseX-Role-TraitConstructor/summary
 #. leap/perl-MooseX-Role-TraitConstructor/summary
 msgid "A wrapper for C<new> that can accept a"
-msgstr ""
+msgstr "C<new> に対するラッパー"
 
 #. tumbleweed/perl-MooseX-Role-TraitConstructor/description
 #. leap/perl-MooseX-Role-TraitConstructor/description
@@ -23864,11 +24089,13 @@ msgid ""
 "into your constructor, which will easily mix roles into an anonymous class "
 "before construction, much like the Moose::Meta::Attribute manpage does."
 msgstr ""
+"この役割は、 'traits' パラメータ (もしくは別の名前) コンストラクタ内に受け付けるためのモジュールで、 Moose::Meta::"
+"Attribute が実施するような構築前の匿名クラス内での役割の混在処理を、簡単に行なうことができます。"
 
 #. tumbleweed/perl-MooseX-SemiAffordanceAccessor/summary
 #. leap/perl-MooseX-SemiAffordanceAccessor/summary
 msgid "Name your accessors foo() and set_foo()"
-msgstr ""
+msgstr "アクセサの命名 (foo(), set_foo())"
 
 #. tumbleweed/perl-MooseX-SemiAffordanceAccessor/description
 #. leap/perl-MooseX-SemiAffordanceAccessor/description
@@ -23886,11 +24113,20 @@ msgid ""
 "\n"
 "The name \"semi-affordance\" comes from David Wheeler's Class::Meta module."
 msgstr ""
+"このモジュールはメソッドを提供するものではありません。単純に、これを読み込むことによって、読み込み中のクラスに対する既定の名前付けポリシーが変更され、"
+"アクセサが get と set のメソッドに分割されるようになります。 get メソッドはアクセサと同じ名前になりますが、 set メソッドには \""
+"set_\" というプレフィクスが付けられるようになります。\n"
+"\n"
+"冒頭にアンダースコア (_) を持つ属性を定義した場合、 set メソッドは \"_set_\" で始まるものになります。\n"
+"\n"
+"また、属性を作成する際に \"リーダ\" または \"ライター\" の名前を明示的に設定した場合は、属性の名前付け方式は変更されません。\n"
+"\n"
+"\"semi-affordance\" の名前は、 David Wheeler 氏の Class::Meta モジュールから来ています。"
 
 #. tumbleweed/perl-MooseX-SetOnce/summary
 #. leap/perl-MooseX-SetOnce/summary
 msgid "write-once, read-many attributes for Moose"
-msgstr ""
+msgstr "Moose 向けライトワンス・リードメニー (1 回書き込んだら後は読み込むだけの) 属性"
 
 #. tumbleweed/perl-MooseX-SetOnce/description
 #. leap/perl-MooseX-SetOnce/description
@@ -23904,12 +24140,18 @@ msgid ""
 "\n"
 "If the attribute has a clearer, you may clear the attribute and set it again."
 msgstr ""
+"'SetOnce' 属性は、遅延型ではなくセットでもない属性をクラス内に定義できるようにする仕組みで、一回設定したら変更できない属性を作ることができます。"
+"\n"
+"\n"
+"ロジックは非常にシンプルなもので、 SetOnce "
+"が設定された属性に対して、アクセサまたはライター経由で値を変更しようとした場合、すでに値が設定されていれば例外をスローするだけです。\n"
+"\n"
+"属性にクリアラが存在する場合は、属性を消去して設定しなおすこともできます。"
 
 #. tumbleweed/perl-MooseX-SimpleConfig/summary
 #. leap/perl-MooseX-SimpleConfig/summary
-#, fuzzy
 msgid "A Moose role for setting attributes from a simple configuration file"
-msgstr ".ini 形式の設定ファイルを読み込むモジュール"
+msgstr "シンプルな設定ファイルから属性を設定するための Moose の役割"
 
 #. tumbleweed/perl-MooseX-SimpleConfig/description
 #. leap/perl-MooseX-SimpleConfig/description
@@ -23931,11 +24173,24 @@ msgid ""
 "module is automatically supported by the the MooseX::Getopt manpage role as "
 "well, which allows specifying '-configfile' on the command line."
 msgstr ""
+"この役割は、シンプルなファイルをオブジェクトの属性に設定するためのものです。 MooseX::ConfigFromFile "
+"の抽象的な役割をベースにしているほか、 Config::Any を利用して設定ファイルを読み込んでいます。対応する様々なファイル形式 "
+"(ファイルの拡張子で判別します) について、詳しくは Config::Any をお読みください。また、対応する形式についても Config::Any "
+"をお読みください。\n"
+"\n"
+"Config::Any に対して追加のパラメータを渡したい場合は、 'config_any_args()' "
+"メソッドを提供しなければなりません。例えば下記のようになります:\n"
+"\n"
+"  sub config_any_args {     return {       driver_args => { General => { '-"
+"InterPolateVars' => 1 } }     };   }\n"
+"\n"
+"すべての MooseX::ConfigFromFile からの派生ファイルローダと同様に、このモジュールも MooseX::Getopt "
+"で自動的にサポートされます。コマンドラインからは '-configfile' を指定してください。"
 
 #. tumbleweed/perl-MooseX-Singleton/summary
 #. leap/perl-MooseX-Singleton/summary
 msgid "turn your Moose class into a singleton"
-msgstr ""
+msgstr "Moose クラスをシングルトンにするモジュール"
 
 #. tumbleweed/perl-MooseX-Singleton/description
 #. leap/perl-MooseX-Singleton/description
@@ -23948,12 +24203,17 @@ msgid ""
 "to 'use MooseX::Singleton'. This module uses metaclass roles to do its "
 "magic, so it should cooperate with most other 'MooseX' modules."
 msgstr ""
+"シングルトンとは、アプリケーション内で 1 つだけインスタンスを持つクラスのことです。 'MooseX::Singleton' は、お使いの Moose "
+"クラスをシングルトンにアップグレード (もしくはダウングレード) することができます。\n"
+"\n"
+"お使いのクラスを修正するのは簡単で、 'use Moose' を 'use MooseX::Singleton' "
+"に変更するだけです。このモジュールはメタクラスの役割を利用することで、このような魔法を提供していますので、ほとんどの他の 'MooseX' "
+"モジュールとともに動作することができます。"
 
 #. tumbleweed/perl-MooseX-Storage/summary
 #. leap/perl-MooseX-Storage/summary
-#, fuzzy
 msgid "Serialization Framework for Moose Classes"
-msgstr "Web アプリケーションフレームワーク"
+msgstr "Moose クラス向けシリアライズフレームワーク"
 
 #. tumbleweed/perl-MooseX-Storage/description
 #. leap/perl-MooseX-Storage/description
@@ -23962,11 +24222,13 @@ msgid ""
 "flexible and highly pluggable way to serialize Moose classes to a number of "
 "different formats and styles."
 msgstr ""
+"MooseX:Storage は Moose 向けのシリアライズフレームワークです。非常に柔軟で、高度にプラグイン化可能な仕組みを提供し、 Moose "
+"クラスを様々な形式やスタイルに変換することができます。"
 
 #. tumbleweed/perl-MooseX-StrictConstructor/summary
 #. leap/perl-MooseX-StrictConstructor/summary
 msgid "Make your object constructors blow up on unknown attributes"
-msgstr ""
+msgstr "オブジェクトのコンストラクタで未知の属性を排除するモジュール"
 
 #. tumbleweed/perl-MooseX-StrictConstructor/description
 #. leap/perl-MooseX-StrictConstructor/description
@@ -23976,11 +24238,14 @@ msgid ""
 "not declare, then it calls 'Moose->throw_error()'. This is a great way to "
 "catch small typos."
 msgstr ""
+"このモジュールを読み込むだけで、お使いのコンストラクタを \"strict\" "
+"にすることができます。お使いのクラス内で定義されていない属性初期化パラメータを利用してコンストラクタが呼び出されると、  "
+"'Moose->throw_error()' を呼び出します。これは小さな記述ミスを捉えることのできる素晴らしい方法です。"
 
 #. tumbleweed/perl-MooseX-Traits/summary
 #. leap/perl-MooseX-Traits/summary
 msgid "Automatically apply roles at object creation time"
-msgstr ""
+msgstr "オブジェクトの作成時に自動的に役割を割り当てるモジュール"
 
 #. tumbleweed/perl-MooseX-Traits/description
 #. leap/perl-MooseX-Traits/description
@@ -24014,7 +24279,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-TransactionalMethods/summary
 #. leap/perl-MooseX-TransactionalMethods/summary
 msgid "Syntax sugar for transactional methods"
-msgstr ""
+msgstr "トランザクション型のメソッド向け文法追加機能"
 
 #. tumbleweed/perl-MooseX-TransactionalMethods/description
 #. leap/perl-MooseX-TransactionalMethods/description
@@ -24026,7 +24291,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-Types/summary
 #. leap/perl-MooseX-Types/summary
 msgid "Organise your Moose types in libraries"
-msgstr ""
+msgstr "ライブラリ内での Moose 型の統合"
 
 #. tumbleweed/perl-MooseX-Types/description
 #. leap/perl-MooseX-Types/description
@@ -24059,9 +24324,8 @@ msgstr ""
 
 #. tumbleweed/perl-MooseX-Types-Common/summary
 #. leap/perl-MooseX-Types-Common/summary
-#, fuzzy
 msgid "Library of Commonly Used Type Constraints"
-msgstr "一般的に使用されるデータ構造を提供する GObject ベースのライブラリ"
+msgstr "型制約で一般的に使用されるライブラリ"
 
 #. tumbleweed/perl-MooseX-Types-Common/description
 #. leap/perl-MooseX-Types-Common/description
@@ -24072,7 +24336,7 @@ msgstr ""
 
 #. tumbleweed/perl-MooseX-Types-DateTime/summary
 msgid "L<DateTime> related constraints and coercions for Moose"
-msgstr ""
+msgstr "Moose 向けの L<DateTime> 関連の制約と強制のためのモジュール"
 
 #. tumbleweed/perl-MooseX-Types-DateTime/description
 msgid ""
@@ -24092,7 +24356,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-Types-LoadableClass/summary
 #. leap/perl-MooseX-Types-LoadableClass/summary
 msgid "ClassName type constraint with coercion to load the class"
-msgstr ""
+msgstr "クラスの読み込みを強制する ClassName 型制約"
 
 #. tumbleweed/perl-MooseX-Types-LoadableClass/description
 #. leap/perl-MooseX-Types-LoadableClass/description
@@ -24111,7 +24375,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-Types-Parameterizable/summary
 #. leap/perl-MooseX-Types-Parameterizable/summary
 msgid "Create your own Parameterizable Types"
-msgstr ""
+msgstr "独自のパラメータ化可能型の作成"
 
 #. tumbleweed/perl-MooseX-Types-Parameterizable/description
 #. leap/perl-MooseX-Types-Parameterizable/description
@@ -24131,7 +24395,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-Types-Path-Class/summary
 #. leap/perl-MooseX-Types-Path-Class/summary
 msgid "Path::Class type library for Moose"
-msgstr ""
+msgstr "Moose 向け Path::Class タイプライブラリ"
 
 #. tumbleweed/perl-MooseX-Types-Path-Class/description
 #. leap/perl-MooseX-Types-Path-Class/description
@@ -24149,7 +24413,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-Types-Path-Tiny/summary
 #. leap/perl-MooseX-Types-Path-Tiny/summary
 msgid "Path::Tiny types and coercions for Moose"
-msgstr ""
+msgstr "Moose 向け Path::Tiny 型および強制"
 
 #. tumbleweed/perl-MooseX-Types-Path-Tiny/description
 #. leap/perl-MooseX-Types-Path-Tiny/description
@@ -24171,7 +24435,7 @@ msgstr ""
 #. tumbleweed/perl-MooseX-Types-Perl/summary
 #. leap/perl-MooseX-Types-Perl/summary
 msgid "Moose types that check against Perl syntax"
-msgstr ""
+msgstr "Perl の文法をチェックする Moose 型"
 
 #. tumbleweed/perl-MooseX-Types-Perl/description
 #. leap/perl-MooseX-Types-Perl/description
@@ -26781,9 +27045,8 @@ msgstr ""
 
 #. tumbleweed/perl-SVG/summary
 #. leap/perl-SVG/summary
-#, fuzzy
 msgid "Perl extension for generating Scalable Vector Graphics (SVG) documents"
-msgstr "XML ドキュメントを書き込むための Perl 拡張"
+msgstr "Scalable Vector Graphics (SVG) 文書を生成するための Perl 拡張"
 
 #. tumbleweed/perl-SVG/description
 #. leap/perl-SVG/description
@@ -26993,9 +27256,8 @@ msgstr ""
 
 #. tumbleweed/perl-Sort-Versions/summary
 #. leap/perl-Sort-Versions/summary
-#, fuzzy
 msgid "Perl 5 Module for Sorting of Revision-Like Numbers"
-msgstr "端末パラメータを設定するための Perl モジュール"
+msgstr "リビジョンなどの番号を並べ替えるための Perl 5 モジュール"
 
 #. tumbleweed/perl-Sort-Versions/description
 #. leap/perl-Sort-Versions/description
