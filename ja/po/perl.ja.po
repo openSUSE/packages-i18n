@@ -24275,6 +24275,23 @@ msgid ""
 "\n"
 "And so on."
 msgstr ""
+"任意のクラスに対して追加することのできるコンポーネントを作成したりしたい場合があります。このモジュールはエンドユーザに対して、これらのコンポーネントを使用"
+"できるようにします。ユーザに対しては必要な役割が割り当てられた名前付きのクラスを作成したり、インスタンスに対して一つずつ役割を割り当てたりせずに、 "
+"'with_traits' を利用して新しいクラスを作成するだけで、あとはそれをインスタンス化するだけで済むようになっています。\n"
+"\n"
+"このモジュールには 'new_with_traits' も含まれていますが、こちらは互換性を維持する理由で残っているものです。これは 'traits' "
+"パラメータを受け入れる仕組みで、新しいクラスをそのような trait (形質) 付きで作成し、インスタンス化するためのものです。\n"
+"\n"
+"   Class->new_with_traits( traits => [qw/Foo Bar/], foo => 42, bar => 1 )\n"
+"\n"
+"上記は下記とまったく同じオブジェクトを返すはずです:\n"
+"\n"
+"   Class->with_traits(qw/Foo Bar/)->new( foo => 42, bar => 1 )\n"
+"\n"
+"ただし、 'with_traits' の結果を保存して、他のメソッドを呼び出すこともできます:\n"
+"\n"
+"   my $c = Class->with_traits(qw/Foo Bar/);    $c->new( foo => 42 );    "
+"$c->whatever( foo => 1234 );"
 
 #. tumbleweed/perl-MooseX-TransactionalMethods/summary
 #. leap/perl-MooseX-TransactionalMethods/summary
@@ -24286,7 +24303,7 @@ msgstr "トランザクション型のメソッド向け文法追加機能"
 msgid ""
 "This method exports the \"transactional\" declarator that will enclose the "
 "method in a txn_do call."
-msgstr ""
+msgstr "このメソッドは、メソッドを txn_do の呼び出し内に封じる \"transactional\" と呼ばれるデコレータを公開します。"
 
 #. tumbleweed/perl-MooseX-Types/summary
 #. leap/perl-MooseX-Types/summary
@@ -24321,6 +24338,23 @@ msgid ""
 "'role_type()' within your type library, or if you use a fully qualified name "
 "like '\"MyApp::Foo\"'."
 msgstr ""
+"Moose で提供されるこのタイプシステムは、すべての内蔵されている型をグローバルにするもので、 Moose "
+"で定義した任意の型として利用することができます。これにより、 'PositiveInt' という名前の型を定義するモジュールは、同じ型オブジェクトを共有す"
+"ることになります。これは異なるコードベースのパーツが異なることに対して同じ名前を使用したりしたいような場合に問題となる場合があります。\n"
+"\n"
+"このパッケージは、短い名前を利用して型を定義しますが、舞台裏ではお使いのすべての型定義が効果的にパッケージ間の名前衝突を防ぐ仕組みが用意されています。\n"
+"\n"
+"これは 'MyApp::Types' "
+"のようなタイプライブラリを作成し、そのモジュールから他のモジュール内に肩をインポートすることによって行なわれているものです。\n"
+"\n"
+"副次的な効果としては、定義の仕組みは型の名前をそのまま (通常は関数の呼び出し) "
+"として記述することができるようになります。これにより、実行時ではなくコンパイル時に記述ミスを捕らえられるようになります。\n"
+"\n"
+"このモジュールでは、属性定義を別にすれば、 Moose の型を利用するためのいくつかの支援関数も提供されています。\n"
+"\n"
+"文字列ベースの名前とこのモジュールで作成した型を混在させた場合は、警告メッセージが表示され、場合によっては例外もスローされます。また、"
+"タイプライブラリ内で 'class_type()' や 'role_type()' を定義している場合や、 '\"MyApp::Foo\"' "
+"のように完全修飾名を利用している場合にも発生します。"
 
 #. tumbleweed/perl-MooseX-Types-Common/summary
 #. leap/perl-MooseX-Types-Common/summary
@@ -24332,7 +24366,7 @@ msgstr "型制約で一般的に使用されるライブラリ"
 msgid ""
 "A set of commonly-used type constraints that do not ship with Moose by "
 "default."
-msgstr ""
+msgstr "Moose の既定では配布されていない、一般的に使用される型制約のセットです。"
 
 #. tumbleweed/perl-MooseX-Types-DateTime/summary
 msgid "L<DateTime> related constraints and coercions for Moose"
@@ -24352,6 +24386,17 @@ msgid ""
 "\n"
 "    Class->new( time_zone => \"Africa/Timbuktu\" );"
 msgstr ""
+"このモジュールは、 DateTime オブジェクトスイートとともに利用する前提で設計された、 Moose::Util::TypeConstraints "
+"とその強制機能を提供します。\n"
+"\n"
+"ネームスペース化した場合の例:\n"
+"\n"
+"    use MooseX::Types::DateTime;\n"
+"\n"
+"    has time_zone => (         isa => 'DateTime::TimeZone',         is => \""
+"rw\",         coerce => 1,     );\n"
+"\n"
+"    Class->new( time_zone => \"Africa/Timbuktu\" );"
 
 #. tumbleweed/perl-MooseX-Types-LoadableClass/summary
 #. leap/perl-MooseX-Types-LoadableClass/summary
@@ -24371,6 +24416,14 @@ msgid ""
 "\n"
 "Now I don't have to."
 msgstr ""
+"    use Moose::Util::TypeConstraints;\n"
+"\n"
+"    my $tc = subtype as ClassName;     coerce $tc, from Str, via { "
+"Class::Load::load_class($_); $_ };\n"
+"\n"
+"今まで上記3行のようなコードを様々な場所で何度も書いてきました。\n"
+"\n"
+"このモジュールにより、このようなコードが不要になります。"
 
 #. tumbleweed/perl-MooseX-Types-Parameterizable/summary
 #. leap/perl-MooseX-Types-Parameterizable/summary
@@ -24391,6 +24444,13 @@ msgid ""
 "constraint lets you generate your own versions of parameterized constraints "
 "that work similarly. See the Moose::Util::TypeConstraints manpage for more."
 msgstr ""
+"パラメータ化可能な型を作成するための MooseX::Types "
+"ライブラリです。すべての目的と用途に対してパラメータ化可能な型の制約は、親となる型のサブクラスですが、 (型制約の定義の 'where' 句内など) "
+"制約のコールバックや指定した型制約向けに定義した強制などに対して、利用可能な追加の型パラメータも追加されています。\n"
+"\n"
+"Moose の知識がある方であれば、おそらく内蔵のパラメータ化可能制約である 'ArrayRef' や 'HashRef' "
+"などをご存じと思います。この型制約は、これらと同じように動作するパラメータ化された制約のオリジナル版を作成する機能を提供します。詳しくは "
+"Moose::Util::TypeConstraints をお読みください。"
 
 #. tumbleweed/perl-MooseX-Types-Path-Class/summary
 #. leap/perl-MooseX-Types-Path-Class/summary
@@ -24409,6 +24469,13 @@ msgid ""
 "have MooseX::Getopt installed, the 'Getopt' option type (\"=s\") will be "
 "added for both Path::Class::Dir and Path::Class::File."
 msgstr ""
+"MooseX::Types::Path::Class は汎用的な Moose の型や強制、オプション仕様などを作成するもので、 Moose の属性として "
+"Path:Class を扱う際に便利な仕組みです。\n"
+"\n"
+"強制 (Moose::Util::TypeConstraints をお読みください) は、 'Str' および 'ArrayRef' の両方から "
+"Path::Class:Dir および Path::Class::File オブジェクトの両方を作成することができます。 MooseX::Getopt "
+"がインストールされている場合は、 'Getopt' オプションタイプ (\"=s\") が Path::Class::Dir と "
+"Path::Class::File の両方に追加されます。"
 
 #. tumbleweed/perl-MooseX-Types-Path-Tiny/summary
 #. leap/perl-MooseX-Types-Path-Tiny/summary
@@ -24431,6 +24498,17 @@ msgid ""
 "\n"
 "It also can check to ensure that files or directories exist."
 msgstr ""
+"このモジュールは、 Moose に対して Path::Tiny の型を提供するものです。このモジュールは、下記 2 つの重要な強制型を処理します:\n"
+"\n"
+"* *\n"
+"\n"
+"  オブジェクトに対するオーバーロードされた署名の強制\n"
+"\n"
+"* *\n"
+"\n"
+"  絶対パスに対する強制\n"
+"\n"
+"また、ファイルやディレクトリが存在しているかどうかをチェックすることもできます。"
 
 #. tumbleweed/perl-MooseX-Types-Perl/summary
 #. leap/perl-MooseX-Types-Perl/summary
@@ -24443,11 +24521,13 @@ msgid ""
 "This library provides MooseX::Types for checking things (mostly strings) "
 "against syntax that is, or is a reasonable subset of, Perl syntax."
 msgstr ""
+"このライブラリは、 Perl (または Perl のサブセット) の文法に照らして、何らかのもの (主に文字列) をチェックするための MooseX::"
+"Types を提供します。"
 
 #. tumbleweed/perl-MooseX-Types-Set-Object/summary
 #. leap/perl-MooseX-Types-Set-Object/summary
 msgid "Set::Object type with coercions and stuff"
-msgstr ""
+msgstr "強制などの機能が付いた Set::Object 型"
 
 #. tumbleweed/perl-MooseX-Types-Set-Object/description
 #. leap/perl-MooseX-Types-Set-Object/description
@@ -24458,11 +24538,15 @@ msgid ""
 "that imported it -- in this way it acts like a regular the Moose manpage "
 "type constraint, rather than one from the MooseX::Types manpage."
 msgstr ""
+"このモジュールは Moose の型制約 (詳しくは Moose::Util::TypeConstraints と MooseX::Types "
+"をお読みください) を提供するものです。ただし、このモジュールの制約と強制は *グローバル* であり、"
+"取り込んだスコープだけにとどまらないことに注意してください -- このような方法で、 MooseX::Types が提供するものではなく、 Moose "
+"の型制約として通常通り動作することになります。"
 
 #. tumbleweed/perl-MooseX-Types-Stringlike/summary
 #. leap/perl-MooseX-Types-Stringlike/summary
 msgid "Moose type constraints for strings or string-like objects"
-msgstr ""
+msgstr "文字列や文字列のようなオブジェクトに対する Moose の型制約"
 
 #. tumbleweed/perl-MooseX-Types-Stringlike/description
 #. leap/perl-MooseX-Types-Stringlike/description
@@ -24471,10 +24555,12 @@ msgid ""
 "are enabled, it will accepts objects that overload stringification and "
 "coerces them into strings."
 msgstr ""
+"このモジュールは、より一般的な 'Str' "
+"型を提供します。強制機能を有効化すると、文字列化をオーバーロードしたオブジェクトを受け入れるほか、文字列への強制も実施します。"
 
 #. tumbleweed/perl-MooseX-Types-Structured/summary
 msgid "Structured Type Constraints for Moose"
-msgstr ""
+msgstr "Moose 向け構造型制約"
 
 #. tumbleweed/perl-MooseX-Types-Structured/description
 msgid ""
@@ -24492,11 +24578,21 @@ msgid ""
 "the MooseX::Types library system, so you should review the documentation for "
 "that if you are not familiar with it."
 msgstr ""
+"構造型制約とは 'ArrayRef' や 'HadhRef' のような Moose "
+"の標準コンテナで、構造体の内部に許可された型すべての名前を明示的に付与できるよう拡張された仕組みです。一般化された形式は下記のようになります:\n"
+"\n"
+"    TypeConstraint[@TypeParameters or %TypeParameters]\n"
+"\n"
+"ここで、 'TypeParameters' は Moose::Meta::TypeConstraint オブジェクトの配列参照もしくはハッシュ参照です。"
+"\n"
+"\n"
+"このタイプライブラリは構造型制約を有効にします。また、 MooseX::Types "
+"ライブラリシステム上に構築された仕組みです。よくわからない場合はドキュメンテーションをお読みください。"
 
 #. tumbleweed/perl-MooseX-Workers/summary
 #. leap/perl-MooseX-Workers/summary
 msgid "Simple sub-process management for asynchronous tasks"
-msgstr ""
+msgstr "非同期処理におけるサブプロセスのシンプルな管理モジュール"
 
 #. tumbleweed/perl-MooseX-Workers/description
 #. leap/perl-MooseX-Workers/description
@@ -24505,10 +24601,12 @@ msgid ""
 "tasks into a managed child process. Process management is taken care of via "
 "POE and its POE::Wheel::Run module."
 msgstr ""
+"MooseX::Workers は長い時間がかかる処理を管理下にある子プロセスに代理させる役割です。プロセスの管理は POE と POE::Wheel::"
+"Run モジュールを介して行なわれます。"
 
 #. tumbleweed/perl-MouseX-ConfigFromFile/summary
 msgid "An abstract Mouse role for setting attributes from a configfile"
-msgstr ""
+msgstr "設定ファイルから属性を設定するための抽象化された Mouse の役割"
 
 #. tumbleweed/perl-MouseX-ConfigFromFile/description
 msgid ""
@@ -24524,10 +24622,17 @@ msgid ""
 "Attributes specified directly as arguments to 'new_with_config' supercede "
 "those in the configfile."
 msgstr ""
+"このモジュールは、設定ファイルを入力としたパラメータを利用し、オブジェクトを作成するための代替コンストラクタを提供します。設定ファイルに対する実際の読み込"
+"み処理は、具体的な副役割が実施します。\n"
+"\n"
+"このモジュールは 'configfile' 属性と、 'new_with_config' クラスメソッドを定義するほか、クラスメソッド "
+"'get_config_from_file' を実装する具体的な役割を必要とします。\n"
+"\n"
+"'new_with_config' への引数として直接指定された属性は、設定ファイルの内容を上書きします。"
 
 #. tumbleweed/perl-MouseX-SimpleConfig/summary
 msgid "A Mouse role for setting attributes from a simple configfile"
-msgstr ""
+msgstr "シンプルな設定ファイルから属性を設定するための Mouse の役割"
 
 #. tumbleweed/perl-MouseX-SimpleConfig/description
 msgid ""
@@ -24541,15 +24646,21 @@ msgid ""
 "automatically supported by the MouseX::Getopt role as well, which allows "
 "specifying '-configfile' on the commandline."
 msgstr ""
+"この役割はシンプルな設定ファイルを読み込んで、オブジェクトの属性を設定します。これは役割 MouseX::ConfigFromFile "
+"をベースにしていて、設定ファイルの読み込みにあたっては Config::Any を利用します。 Config::Any "
+"はファイルの拡張子を利用して、様々な設定形式に対応しています。対応する形式について、詳しくは Config::Any をお読みください。\n"
+"\n"
+"MouseX::ConfigFromFile から派生したすべての設定ファイルローダと同様に、このモジュールは MouseX::Getopt "
+"の役割によって自動的にサポートされ、コマンドラインで '-configfile' を指定できるようになっています。"
 
 #. tumbleweed/perl-MouseX-Types/summary
 #. tumbleweed/perl-MouseX-Types/description
 msgid "Organize your Mouse types in libraries"
-msgstr ""
+msgstr "ライブラリ内への Mouse 型の統合"
 
 #. tumbleweed/perl-MouseX-Types-Path-Class/summary
 msgid "A Path::Class type library for Mouse"
-msgstr ""
+msgstr "Mouse 向け Path::Class タイプライブラリ"
 
 #. tumbleweed/perl-MouseX-Types-Path-Class/description
 msgid ""
@@ -24563,6 +24674,13 @@ msgid ""
 "installed, the Getopt option type (\"=s\") will be added for both the Path::"
 "Class::Dir manpage and the Path::Class::File manpage."
 msgstr ""
+"MouseX::Types::Path::Class は汎用的な Mouse の型や強制、オプション仕様などを作成するもので、 Mouse の属性として "
+"Path:Class を扱う際に便利な仕組みです。\n"
+"\n"
+"強制 (Mouse::Util::TypeConstraints をお読みください) は、 'Str' および 'ArrayRef' の両方から "
+"Path::Class:Dir および Path::Class::File オブジェクトの両方を作成することができます。 MouseX::Getopt "
+"がインストールされている場合は、 'Getopt' オプションタイプ (\"=s\") が Path::Class::Dir と "
+"Path::Class::File の両方に追加されます。"
 
 #. tumbleweed/perl-Net-CIDR-Lite/summary
 #. leap/perl-Net-CIDR-Lite/summary
@@ -24599,6 +24717,17 @@ msgid ""
 "Normally this isn't necessary - the set will guess its personality from the "
 "first data that is added to it."
 msgstr ""
+"'Net::CIDR::Set' は IP アドレスのセットを表すクラスで、セットに対する標準的な操作 (統合, 分解, "
+"範囲内にあるかどうかのテストなど) を行なうことができます。\n"
+"\n"
+"名前には \"CIDR\" が含まれていますが、 CIDR ブロックではなく IP アドレスに対する範囲を設定することもできます。\n"
+"\n"
+"IPv4 および IPv6 の両方のアドレス体系を処理することができますが、同じセット内に両方を混在させることはできません。アドレスタイプを明示的に指定し"
+"たい場合は、下記のようにします:\n"
+"\n"
+"  my $ip4set = Net::CIDR::Set->new({ type => 'ipv4 }, '10.0.0.0/8');\n"
+"\n"
+"通常は上記のように設定する必要はありません。最初にデータを追加した際に、どちらであるかを自動的に判断します。"
 
 #. tumbleweed/perl-Net-DNS/summary
 msgid "Perl Interface to the Domain Name System"
@@ -24625,7 +24754,7 @@ msgstr ""
 #. tumbleweed/perl-Net-DNS-Resolver-Programmable/summary
 #. leap/perl-Net-DNS-Resolver-Programmable/summary
 msgid "Programmable DNS resolver class for offline emulation of DNS"
-msgstr ""
+msgstr "DNS のオフラインエミュレーションのための DNS リゾルバクラス"
 
 #. tumbleweed/perl-Net-DNS-Resolver-Programmable/description
 #. leap/perl-Net-DNS-Resolver-Programmable/description
@@ -24636,6 +24765,9 @@ msgid ""
 "specified as a means for retrieving DNS records, or even generating them on "
 "the fly."
 msgstr ""
+"Net::DNS::Resolver::Programmable は Net::DNS::Resolver の子クラスで、実際の DNS "
+"への問い合わせではなく、仮想的な DNS サーバに問い合わせを行うことができる仕組みです。静的な DNS レコードのセットを設定することができ、 DNS "
+"レコードを取得するための任意のコードを設定できますし、それらをその場で変更することもできます。"
 
 #. tumbleweed/perl-Net-Daemon/summary
 #. leap/perl-Net-Daemon/summary
@@ -24681,6 +24813,12 @@ msgid ""
 "html   http://www.iana.org/cctld/cctld-whois.htm   https://www.iana.org/"
 "domains/root/db"
 msgstr ""
+" このモジュールの目的は、トップレベルドメインの最新の一覧を提供することにあります。新たに ICANN に追加されたトップレベルドメインや、 ccTLD "
+"も含まれています。現時点では、 TLD を下記の情報源から取得しています:\n"
+"\n"
+"  http://www.icann.org/tlds/   http://www.dnso.org/constituency/gtld/"
+"gtld.html   http://www.iana.org/cctld/cctld-whois.htm   "
+"https://www.iana.org/domains/root/db"
 
 #. tumbleweed/perl-Net-HTTP/summary
 #. leap/perl-Net-HTTP/summary
@@ -24740,11 +24878,14 @@ msgid ""
 "stringprep protocol and is used as part of a suite of on-the-wire protocols "
 "for internationalizing the Domain Name System (DNS)."
 msgstr ""
+"このモジュールは _nameprep_ 仕様を実装するもので、世界中の一般ユーザに対して、ドメイン名の入力や比較などの機能を追加する、国際化ドメイン名 "
+"(IDN) の機能を提供するものです。 nameprep は stringprep プロトコルのプロファイルであり、ドメイン名システム (DNS) "
+"の国際化のためのワイヤレベルのプロトコルのスイートとして使用します。"
 
 #. tumbleweed/perl-Net-INET6Glue/summary
 #. leap/perl-Net-INET6Glue/summary
 msgid "Make common modules IPv6 ready by hotpatching"
-msgstr ""
+msgstr "ホットパッチによって一般的なモジュールを IPv6 対応にするモジュール"
 
 #. tumbleweed/perl-Net-INET6Glue/description
 #. leap/perl-Net-INET6Glue/description
@@ -24774,11 +24915,29 @@ msgid ""
 "are needed to deal with FTP over IPv6. Also loads the   Net::INET6Glue::"
 "INET_is_INET6 manpage."
 msgstr ""
+"Net::INET6Glue はホットパッチを利用することによって、一般的なモジュールを IPv6 対応にするためのモジュール集です。\n"
+"\n"
+"不幸にも、現状 Perl における IPv6 のサポートは中枢には取り入れられておらず、 Socket6, IO::Socket::IP, "
+"IO::Socket::INET6 など、 IPv6 対応のモジュールが存在しているにも関わらず、主要なモジュールの多く (Net::FTP や "
+"Net::SMTP, LWP など) は対応していません。\n"
+"\n"
+"このモジュールは、ホットパッチの仕組みによってこれを緩和しようとする試みです。現時点では下記のサブモジュールを利用することができます:\n"
+"\n"
+"* Net::INET6Glue::INET_is_INET6 \n"
+"\n"
+"  IO::Socket::INET を IO::Socket::IP のように動作させ (IO::Socket::INET6 "
+"等へのフォールバック機能もあります) 、特に IPv6 ソケットへの対応を行なうことができる仕組みです。これにより、 LWP, Net::SMTP "
+"などを IPv6 対応にすることができます。\n"
+"\n"
+"* Net::INET6Glue::FTP\n"
+"\n"
+"  Net::FTP を、 IPv6 に対応するのに必要な EPRT, EPSV コマンドに対応させます。 Net::INET6Glue::"
+"INET_is_INET6 モジュールも読みこまれます。"
 
 #. tumbleweed/perl-Net-Ident/summary
 #. leap/perl-Net-Ident/summary
 msgid "lookup the username on the remote end of a TCP/IP connection"
-msgstr ""
+msgstr "TCP/IP 接続の相手に対してユーザ名を検索するモジュール"
 
 #. tumbleweed/perl-Net-Ident/description
 #. leap/perl-Net-Ident/description
@@ -24832,7 +24991,7 @@ msgstr "Perl 向け OAuth 1.0"
 #. tumbleweed/perl-Net-OpenID-Common/summary
 #. leap/perl-Net-OpenID-Common/summary
 msgid "Libraries shared between Net::OpenID::Consumer and Net::OpenID::Server"
-msgstr ""
+msgstr "Net::OpenID::Consumer と Net::OpenID::Server の間で共有されるライブラリ"
 
 #. tumbleweed/perl-Net-OpenID-Common/description
 #. leap/perl-Net-OpenID-Common/description
@@ -24842,11 +25001,13 @@ msgid ""
 "this documentation, though it also incorporates some utility functions "
 "inherited from previous versions of Net::OpenID::Consumer."
 msgstr ""
+"コンシューマ／サーバの実装ではいくつかのライブラリを共有しますが、このモジュールでそれを行なうことができます。このモジュールは主にバージョン番号とドキュメ"
+"ンテーションを保持しますが、 Net::OpenID::Consumer の以前のバージョンから派生されるいくつかのユーティリティ関数も統合されています。"
 
 #. tumbleweed/perl-Net-OpenID-Consumer/summary
 #. leap/perl-Net-OpenID-Consumer/summary
 msgid "Library for consumers of OpenID identities"
-msgstr ""
+msgstr "OpenID 認証のコンシューマライブラリ"
 
 #. tumbleweed/perl-Net-OpenID-Consumer/description
 #. leap/perl-Net-OpenID-Consumer/description
@@ -24857,6 +25018,10 @@ msgid ""
 "\n"
 "  http://openid.net/"
 msgstr ""
+"これは OpenID の (コンシューマ側の) Perl API です。 URL の所有者を識別することをベースにした分散型認証システムで、その URL "
+"がそのまま識別子になります。詳しい情報は下記をお読みください:\n"
+"\n"
+"  http://openid.net/"
 
 #. tumbleweed/perl-Net-SMTP-SSL/summary
 #. leap/perl-Net-SMTP-SSL/summary
@@ -24931,6 +25096,24 @@ msgid ""
 "and ipv6 capabilities to make it easier to enhance modules based on IO::"
 "Socket::INET."
 msgstr ""
+"プロトコル側では対応しているにもかかわらず、一般的に使用される Perl モジュールには SSL のサポートが全く無いものがあります。"
+"モジュールによっては SSL に対応しているものもありますが、それらのうちの多くはサーバの証明書を正しくチェックしていません。\n"
+"\n"
+"'Net::SSLGlue::*' モジュールは、これらのモジュールに対して SSL "
+"のサポートと、適切な証明書チェックの機能を追加します。現時点で対応するモジュールは下記のとおりです:\n"
+"\n"
+"* Net::SMTP - 接続当初からの SSL の有効化、もしくは STARTTLS を利用した暗号化接続に対応\n"
+"\n"
+"* Net::POP3 - 接続当初からの SSL の有効化、もしくは STLS を利用した暗号化接続に対応\n"
+"\n"
+"* Net::FTP  - Net::FTP に対する SSL と IPv6 サポートの追加に対応\n"
+"\n"
+"* Net::LDAP - 正しい証明書かどうかのチェック機能の追加に対応\n"
+"\n"
+"* LWP - 古いバージョンの LWP に対して正しい証明書かどうかのチェック機能の追加に対応\n"
+"\n"
+"SSL 有りと無し、そして IPv6 機能を組み合わせた、 IO::Socket::INET をベースにモジュールを拡張した Net::SSLGlue::"
+"Socket パッケージも用意されています。"
 
 #. tumbleweed/perl-Net-Server/summary
 #. leap/perl-Net-Server/summary
@@ -25119,23 +25302,23 @@ msgid ""
 "This module provides a perl interface to the Twitter APIs. See http://dev."
 "twitter.com/doc for a full description of the Twitter APIs."
 msgstr ""
+"このモジュールは、 Twitter API に対する Perl のインターフェイスを提供します。 Twitter API に関する完全な説明は、 "
+"http://dev.twitter.com/doc をお読みください。"
 
 #. tumbleweed/perl-Net-Whois-RIPE/summary
 #. leap/perl-Net-Whois-RIPE/summary
-#, fuzzy
 msgid "Pure-Perl Implementation of the Ripe Database Client"
-msgstr "SOAP の Apache による実装"
+msgstr "Ripe データベースクライアントの純粋 Perl 実装"
 
 #. tumbleweed/perl-Net-Whois-RIPE/description
 #. leap/perl-Net-Whois-RIPE/description
 msgid "a pure-Perl implementation of the RIPE Database client."
-msgstr ""
+msgstr "RIPE データベースクライアントの純粋 Perl 実装です。"
 
 #. tumbleweed/perl-Net-Whois-Raw/summary
 #. leap/perl-Net-Whois-Raw/summary
-#, fuzzy
 msgid "Get Whois information of domains and IP addresses"
-msgstr "IPv4 および IPv6 アドレスの処理"
+msgstr "ドメインや IP アドレスの whois 情報の取得"
 
 #. tumbleweed/perl-Net-Whois-Raw/description
 #. leap/perl-Net-Whois-Raw/description
@@ -25151,6 +25334,15 @@ msgid ""
 "*IMPORTANT*: these checks merely use pattern matching; they will work on "
 "several servers but certainly not on all of them."
 msgstr ""
+"Net::Whois::Raw はドメインに関する情報を WHOIS サーバに問い合わせます。このモジュールは再帰的な WHOIS "
+"の問い合わせにも対応しています。このほか、 TLD によっては HTTP 経由の問い合わせにも対応します。\n"
+"\n"
+"$OMIT_MSG や $CHECK_FAIL の変数を設定することで、既知のパターンセットに対して適合させる処理も行なうことができます。 $"
+"OMIT_MSG は著作権表示や免責事項などの出力を省略させるために、 $CHECK_FAIL は検索が失敗したことを検出し、該当した場合は undef "
+"を返すための仕組みとして利用することができるものです。\n"
+"\n"
+"*重要*: これらのチェックは単純にパターンマッチングを使用しています。サーバによっては動作するものもありますが、すべてのサーバに対して動作するものではな"
+"いことに注意してください。"
 
 #. tumbleweed/perl-Net-XMPP/summary
 #. leap/perl-Net-XMPP/summary
@@ -25176,11 +25368,22 @@ msgid ""
 "Threading might solve this, but as of this writing threading in Perl is not "
 "quite up to par yet. This issue will be revisted in the future."
 msgstr ""
+"Net::XMPP は、 XMPP インスタントメッセージングプロトコルを利用したい Perl "
+"スクリプトのための、便利なツール集です。それ自身はクライアント自身になることはありませんが、 CGI のクライアントやコマンドラインの Perl "
+"クライアントから、実現可能で使いやすい必須バックエンド機能のすべてを提供します。 Net::XMPP は公式の Net::SMPP::xxxxx "
+"パッケージの残りの部分のラッパーです。\n"
+"\n"
+"example ディレクトリ内には、非常にシンプルな XMPP プログラムの例として、いくつかのスクリプトが用意されています。\n"
+"\n"
+"注意: 最も著名な Perl パーサである XML::Stream::Parser が提供する仕組みは同期処理です。パケットの処理中にユーザ定義のコールバ"
+"ックを呼び出した場合、パーサはコールバックが終了するまで処理が止まります。つまり、他のパケットを送信していたり、そのパケットに対して応答を待っていたりした"
+"場合、パケットを処理することができないことを意味します。スレッド処理によってこれを解決することもできますが、 Perl "
+"でスレッド処理を作成するのは面倒です。この問題は将来のバージョンで解消される予定です。"
 
 #. tumbleweed/perl-NetPacket/summary
 #. leap/perl-NetPacket/summary
 msgid "Assemble/Disassemble Network Packets at the Protocol Level"
-msgstr ""
+msgstr "ネットワークパケットをプロトコルレベルで組み立てまたは分解するモジュール"
 
 #. tumbleweed/perl-NetPacket/description
 #. leap/perl-NetPacket/description
@@ -25197,11 +25400,18 @@ msgid ""
 "IP, UDP and TCP protocols) would make things like tunneling or other unusual "
 "situations difficult."
 msgstr ""
+"'NetPacket' はネットワークプロトコルのデコードやエンコードに関連するモジュール向けの基本クラスです。それぞれの 'NetPacket' の子孫"
+"モジュールは、ネットワークプロトコルのエンコードとデコードに関する情報を保持します。プロトコル固有の実装方法について、詳しくはドキュメンテーションをご覧く"
+"ださい。\n"
+"\n"
+"なお、'NetPacket' に属する各プロトコルモジュールを除き、 'NetPacket::' "
+"で始まるクラスには相互の継承関係がないことに注意してください。これは継承の関係性 (例えば IP, UDP, TCP など) "
+"を課すほど制限が厳しくなり、たとえばトンネリングやその他の状況への対応が難しくなるためです。"
 
 #. tumbleweed/perl-Number-Compare/summary
 #. leap/perl-Number-Compare/summary
 msgid "Numeric comparisons"
-msgstr ""
+msgstr "数値の比較"
 
 #. tumbleweed/perl-Number-Compare/description
 #. leap/perl-Number-Compare/description
@@ -25217,6 +25427,13 @@ msgid ""
 "appropriate 2**n version in accordance with the IEC standard: http://physics."
 "nist.gov/cuu/Units/binary.html"
 msgstr ""
+"Number::Compare は匿名サブルーチンに対するシンプルな比較機能を提供するもので、繰り返しテスト用に呼び出すことができる仕組みです。\n"
+"\n"
+"Number::Compare が指数を解釈できない場合は、ほとんど意味のないものになります。\n"
+"\n"
+"ターゲットとなる値にはキロバイト ('k', 'ki') 、メガバイト ('m', 'mi') 、ギガバイト ('g', 'gi') "
+"などの指数表記を利用することもできます。また、 'i' で終わる指数表記は、 IEC 標準 "
+"(http://physics.nist.gov/cuu/Units/binary.html) に従って 2**n の値を意味するものとして解釈します。"
 
 #. tumbleweed/perl-Number-Format/summary
 #. leap/perl-Number-Format/summary
@@ -25254,6 +25471,26 @@ msgid ""
 "They may be specified in upper or lower case, with or without a leading "
 "hyphen ( - )."
 msgstr ""
+"これらの関数は、ユーザにとってわかりやすい形式で数値を書式化するための簡単な方法を提供するものです。\n"
+"\n"
+"このパッケージを使用する方法には 2 種類のものがあります。 1 つは Number::Format の型のオブジェクトを定義して、それをフォーマットエン"
+"ジンとして使用する方法があります。ここで示されている様々な関数は、オブジェクトメソッドとして提供されます。コンストラクタ 'new()' "
+"は、フォーマットエンジンのパラメータを設定するために使用することができます。指定可能な値は下記のとおりです:\n"
+"\n"
+"  THOUSANDS_SEP     - 3 桁ごとの区切り文字   DECIMAL_POINT     - 整数部と小数部を分ける文字   "
+"MON_THOUSANDS_SEP - THOUSANDS_SEP と同じような仕組みですが、こちらは format_price "
+"で使用されるものです   MON_DECIMAL_POINT - DECIMAL_POINT と同じような仕組みですが、こちらは "
+"format_price で使用されるものです   INT_CURR_SYMBOL   - 価格を示す文字 (format_price() を参照)   "
+"DECIMAL_DIGITS    - 数値の桁数を指定します (既定値は 2)   DECIMAL_FILL      - ブール値で、"
+"数値のゼロ埋めするかどうかを指定します   NEG_FORMAT        - 負の数を書式化する際の形式を指定します (既定値は ``-x'')"
+"   KILO_SUFFIX       - キロバイトを表示するための接尾辞を指定します   MEGA_SUFFIX       -    \"    "
+"\"  \"    \"        \"         \"    megabytes (trad)   GIGA_SUFFIX       -"
+"    \"    \"  \"    \"        \"         \"    gigabytes (trad)   "
+"KIBI_SUFFIX       - キロバイト (iec) を表示するための接尾辞を指定します   MEBI_SUFFIX       -    \""
+"    \"  \"    \"        \"         \"    mebibytes (iec)   GIBI_SUFFIX       "
+"-    \"    \"  \"    \"        \"         \"    gibibytes (iec)\n"
+"\n"
+"これらは大文字でも小文字でもかまいませんし、ハイフン (-) があってもなくてもかまいません。"
 
 #. tumbleweed/perl-OLE-Storage_Lite/summary
 #. leap/perl-OLE-Storage_Lite/summary
@@ -25269,11 +25506,16 @@ msgid ""
 "Root, OLE::Storage_Lite::PPS::File and OLE::Storage_Lite::PPS::Dir are "
 "subclasses of OLE::Storage_Lite::PPS."
 msgstr ""
+"OLE::Storage_Lite は OLE 構造化ファイルを読み書きするためのモジュールです。\n"
+"\n"
+"OLE::Storage_Lite::PPS は PPS を表すクラスです。 OLE::Storage_Lite::PPS::Root, "
+"OLE::Storage_Lite::PPS::File, OLE::Storage_Lite::PPS::Dir はいずれも "
+"OLE::Storage_Lite::PPS のサブクラスです。"
 
 #. tumbleweed/perl-Object-Signature/summary
 #. leap/perl-Object-Signature/summary
 msgid "Generate cryptographic signatures for objects"
-msgstr ""
+msgstr "オブジェクトに対する電子署名の生成"
 
 #. tumbleweed/perl-Object-Signature/description
 #. leap/perl-Object-Signature/description
@@ -25287,6 +25529,12 @@ msgid ""
 "a string, which is then passed to the Digest::MD5::md5_hex manpage to get a "
 "unique 32 character hexidecimal signature."
 msgstr ""
+"Object::Signature "
+"は抽象化されたオブジェクトクラスで、独自の電子署名を生成するオブジェクトを作成できるようにするために、このクラスを派生させることができるものです。\n"
+"\n"
+"署名を生成するために使用されるメソッドは Storable と Digest::MD5 をベースにしています。オブジェクトから文字列を得るために "
+"'Storable::nfreeze' が使用され、ユニークな 16 進数 32 文字を得るために、 Digest::MD5::md5_hex "
+"が呼び出されます。"
 
 #. tumbleweed/perl-PAR/summary
 #. leap/perl-PAR/summary
@@ -25329,6 +25577,35 @@ msgid ""
 "\n"
 "Please see SYNOPSIS for most typical use cases."
 msgstr ""
+"このモジュールは、 Perl のアーカイブ形式である *par* という特殊な形式の zip ファイルを扱うためのモジュールです。このアーカイブには、 "
+"Perl モジュールを読み込むことのできるライブラリが含まれています。\n"
+"\n"
+"このモジュールは、 *Dynaloader* と呼ばれるブートストラップメソッドをオーバーライドすることによって、 XS "
+"モジュールの読み込みにも対応しています。共有オブジェクトファイルは必要になった際、一時ファイルに書き込んで使用します。\n"
+"\n"
+"_.par_ ファイルは CPAN 配布物から構築された後、 _blib/ ディレクトリ内を zip ファイルにまとめたものです。 _.par_ "
+"ファイルを独自に作成したい場合は、 _arch/_ と _lib/_ を下記のようにして圧縮するだけです:\n"
+"\n"
+"    % perl Makefile.PL     % make     % cd blib     % zip -r mymodule.par "
+"arch/ lib/\n"
+"\n"
+"上記を実施後、 '@INC' 内のどこかに _mymodule.par_ を配置して *PAR* "
+"モジュールを利用することで、必要なモジュールを読み込むことができるようになります。 _.par_ ファイルの生成機能への対応は、 Module::"
+"Build の次期リリース (0.2805 以降) で提供される予定です。\n"
+"\n"
+"また、利便性を確保する目的で、 'PERL5OPT' 環境変数内に '-MPAR' を指定すると、 'PAR' の処理をグローバルに行なうことができます "
+"(使用しなければオーバーヘッドは小さくなります) 。また、 '-MPAR=/path/to/mylib.par' のように指定すると、特定の PAR "
+"ファイルを読み込むようにすることもできます。このほか、 PAR::Packer 配布物に同梱されている _par.pl_ "
+"ユーティリティや必要なものがすべて含まれている _parl_ ユーティリティを使用することもできます。これらは PAR.pm "
+"がインストールされていなくても動作します。\n"
+"\n"
+"なお、 _par.pl_ や _pp_ で作成されたスクリプトや実行ファイルは、 _.par_ アーカイブとしても使用することができます:\n"
+"\n"
+"    % pp -o packed.exe source.pl        # generate packed.exe (see "
+"PAR::Packer)     % perl -MPAR=packed.exe other.pl    # this also works     % "
+"perl -MPAR -Ipacked.exe other.pl  # ditto\n"
+"\n"
+"よくある使用例について、詳しくは SYNOPSIS をお読みください。"
 
 #. tumbleweed/perl-PAR-Dist/summary
 #. leap/perl-PAR-Dist/summary
@@ -25353,13 +25630,24 @@ msgid ""
 "release of 'PAR-Dist' on CPAN, built for perl 5.8.0 running on 'i386-"
 "freebsd'."
 msgstr ""
+"このモジュールは _PAR 配布物_ を作成したり操作したりするための仕組みです。これらはアーキテクチャ固有の *PAR* ファイルであり、 CPAN "
+"配布物内で 'make' や 'Build' ステージを実行した後に現れる _blib/_ 内や、元の CPAN 配布物に関するメタデータを含む "
+"_META.yml_ や、すべてのファイルに対する詳細情報を示す _MANIFEST_ などが含まれます。このほか、 PAR 配布物に対する電子署名は、 "
+"_SIGNATURE_ ファイル内に含まれます。\n"
+"\n"
+"このような配布物は、下記のような名前付け規約に従います:\n"
+"\n"
+"    $NAME-$VERSION-$ARCH-$PERL_VERSION.par\n"
+"\n"
+"たとえば 'PAR-Dist-0.01-i386-freebsd-5.8.0.par' は CPAN 内の配布物で 'PAR-Dist' という名前の "
+"0.01 リリースで、 'i386-freebsd' 上で動作する Perl 5.8.0 用のものであることを表します。"
 
 #. tumbleweed/perl-PDF-API2/summary
 #. tumbleweed/perl-PDF-API2/description
 #. leap/perl-PDF-API2/summary
 #. leap/perl-PDF-API2/description
 msgid "Facilitates the creation and modification of PDF files"
-msgstr ""
+msgstr "PDF ファイルの作成と修正を扱うモジュール"
 
 #. tumbleweed/perl-PHP-Serialization/summary
 #. leap/perl-PHP-Serialization/summary
@@ -25376,11 +25664,16 @@ msgid ""
 "NOTE: Converts PHP arrays into Perl Arrays when the PHP array used "
 "exclusively numeric indexes, and into Perl Hashes then the PHP array did not."
 msgstr ""
+"シンプルで Perl のメモリ構造 (オブジェクトデータを含む) を素早くシリアライズして、 PHP が deserialize() "
+"してアクセスできるようにするための仕組みです。\n"
+"\n"
+"注意: PHP の配列は、その配列のインデックスに数値のみが含まれている場合にのみ Perl の配列に変換されますが、それ以外の場合は Perl "
+"側ではハッシュに変換されます。"
 
 #. tumbleweed/perl-POE/summary
 #. leap/perl-POE/summary
 msgid "Portable Multitasking and Networking Framework for Any Event Loop"
-msgstr ""
+msgstr "任意のイベントループ向けに可搬性のあるマルチタスク処理およびネットワーク処理フレームワーク"
 
 #. tumbleweed/perl-POE/description
 #. leap/perl-POE/description
@@ -25414,6 +25707,25 @@ msgid ""
 "Kernel. So your down-to-earth code can easily cooperate with stratospheric "
 "systems."
 msgstr ""
+"POE は Perl 内でのイベント駆動型マルチタスク／ネットワーク処理フレームワークです。他の言語にも類似のフレームワークが存在しています。 "
+"Python では Twisted 、 TCL では \"the event loop\" です。\n"
+"\n"
+"POE は select(), IO::Poll, Glib, Gtk, Tk, Wx, Gtk2 "
+"などのいくつかのイベントループ向けの統合インターフェイスです。これらのイベントループインターフェイスの多くは、 POE::Test::Loops "
+"の支援のもと他のユーザが作成しています。これらは CPAN 内で公開されています。\n"
+"\n"
+"POE は異なるオペレーティングシステムや Perl のバージョンに対して、 Perl 単体で記述することによって高度な可搬性を提供します。 CPAN "
+"ではオプションの POE 向け XS モジュールも公開されていますが、こちらは可搬性よりも速度を重視したつくりになっています。\n"
+"\n"
+"POE は階層構造になっています。各階層はそれより低い階層のものをベースにして作られています。プログラム側ではどの階層の抽象化を使用しても構いませんし、単"
+"一のプログラム内で異なるレベルを混在させたり、それらをシームレスに適合させてもかまいません。ただし、高レベルの抽象化は、低レベルの抽象化より多くのリソース"
+"を必要とします。つまり、利便性はタダでは手に入らない、ということです。\n"
+"\n"
+"POE に内蔵されている抽象化レイヤは成長する氷山の先端ともいえます。 Sprocket, POE::Stage, その他の CPAN "
+"配布物では、これらの成果を利用して構築されています。まずは周囲をご覧になるとよいでしょう。\n"
+"\n"
+"どれだけ高い階層であっても、 煮詰めれば POE::Kernel "
+"への呼び出しになります。そのため、地球上の表面にあるコードも、容易に成層圏のシステムと協調処理することができます。"
 
 #. tumbleweed/perl-POE-Test-Loops/summary
 #. leap/perl-POE-Test-Loops/summary
@@ -25430,11 +25742,16 @@ msgid ""
 "which is a stand-alone utility to generate the actual tests. the poe-gen-"
 "tests manpage also documents the POE::Test::Loops system in more detail."
 msgstr ""
+"POE::Test::Loops には 1 つの関数 generate() が含まれています。この関数は、 1 つまたはそれ以上の POE::Loop "
+"に対するループテストを生成します。\n"
+"\n"
+"/SYNOPSIS にある例には poe-gen-tests 版が用意されていますが、こちらは実際のテストを生成するための単独ユーティリティです。 "
+"poe-gen-tests には、 POE::Test::Loops システムをより詳しく説明するドキュメンテーションも含まれています。"
 
 #. tumbleweed/perl-POSIX-strftime-Compiler/summary
 #. leap/perl-POSIX-strftime-Compiler/summary
 msgid "GNU C library compatible strftime for loggers and servers"
-msgstr ""
+msgstr "ログ記録およびサーバ向けの GNU C ライブラリ互換の strftime"
 
 #. tumbleweed/perl-POSIX-strftime-Compiler/description
 #. leap/perl-POSIX-strftime-Compiler/description
@@ -25446,6 +25763,11 @@ msgid ""
 "For generate same result strings on any locale, POSIX::strftime::Compiler "
 "wraps POSIX::strftime and converts some format characters to perl code"
 msgstr ""
+"POSIX::strftime::Compiler は GNU C ライブラリ互換の strftime(3) を提供します。ただし、このモジュールはシステ"
+"ムのロケールからの影響を受けません。また、この機能はログを記録したり、サーバや可搬性のあるアプリケーションを作成する際に便利な仕組みです。\n"
+"\n"
+"度のロケールでも同じ結果文字列を出力するため、 POSIX::strftime::Compiler は POSIX::strftime をラッピングして、"
+" Perl コードに対して書式文字列を変換させています。"
 
 #. tumbleweed/perl-PPI/summary
 #. tumbleweed/perl-PPI/description
@@ -25456,9 +25778,8 @@ msgstr "Perl の解釈と分析、および操作を Perl なしで行なうラ�
 
 #. tumbleweed/perl-PPIx-Regexp/summary
 #. leap/perl-PPIx-Regexp/summary
-#, fuzzy
 msgid "Represent a regular expression of some sort"
-msgstr "シンプルな正規表現 API"
+msgstr "正規表現モジュール"
 
 #. tumbleweed/perl-PPIx-Regexp/description
 #. leap/perl-PPIx-Regexp/description
@@ -25494,6 +25815,31 @@ msgid ""
 "appears to the author to represent a performance hit for little tangible "
 "gain."
 msgstr ""
+"_PPIx-Regexp_ パッケージの目的は、 PPI パッケージが Perl "
+"を処理するのと似た方法で、正規表現を処理する仕組みを提供することです。このクラスは処理ツリーのルートを構成し、 PPI::Document "
+"に似た役割を演じます。\n"
+"\n"
+"このパッケージは PPI と往復させても安全であるという特性を持っています。具体的には、下記のようになります:\n"
+"\n"
+" my $expr = 's/ ( \\d+ ) ( \\D+ ) /$2$1/smxg';  my $re = PPIx::Regexp->new( $"
+"expr );  print $re->content() eq $expr ? \"yes\\n"
+"\" : \"no\\n"
+"\"\n"
+"\n"
+"正しい正規表現に対しては常に 'yes' を返すはずです。\n"
+"\n"
+"ナビゲーションも PPI で提供されている仕組みに似ています。たとえば 'children', 'find_first', "
+"'snext_sibling' なども、 PPI とほぼ同じように動作します。\n"
+"\n"
+"クラスの階層構造も PPI に似た仕組みです。ただし、いくつかのユーティリティクラス (dumper, lexer, tokenizer) を除いて、"
+"すべてのクラスは PPIx::Regexp::Element の子孫で、これによって基本的なナビゲーション機能を提供しています。トークンは "
+"PPIx::Regexp::Token の子孫で、内容を提供します。また、すべてのコンテナは PPIx::Regexp::Node "
+"の子孫で子を提供するほか、すべての構造体要素は PPIx::Regexp::Structure "
+"の子孫で、こちらは開始と終了の区切り文字、そして型を提供します。\n"
+"\n"
+"このパッケージが提供していない PPI の機能は 2 つあります。 1 つは変更可能性、もう 1 "
+"つは演算子のオーバーロードです。変更可能性の機能を提供する予定はありませんが、 PPI の 'prune' "
+"のような機能を提供するかもしれません。同様に、演算子のオーバーロードについても提供の予定はありません。"
 
 #. tumbleweed/perl-PPIx-Utilities/summary
 #. leap/perl-PPIx-Utilities/summary
@@ -25509,6 +25855,9 @@ msgid ""
 "the module name with \"PPIx::Utilities\", e.g. functionality related to PPI::"
 "Nodes is in PPIx::Utilities::Node."
 msgstr ""
+"これは PPI オブジェクトを扱うための関数集で、これらの多くは Perl::Critic を発祥とするものです。これらは PPI "
+"クラスの一種として組み込まれ、 \"PPI\" の名前を \"PPIx::Utilities\" という名前で置き換えて提供されています。なお、 "
+"PPI::Nodes に関連する機能は PPIx::Utilities::Node にあります。"
 
 #. tumbleweed/perl-Package-DeprecationManager/summary
 #. leap/perl-Package-DeprecationManager/summary
@@ -25671,7 +26020,7 @@ msgstr ""
 #. tumbleweed/perl-Package-Variant/summary
 #. leap/perl-Package-Variant/summary
 msgid "Parameterizable packages"
-msgstr ""
+msgstr "パラメータ化可能なパッケージ"
 
 #. tumbleweed/perl-Package-Variant/description
 #. leap/perl-Package-Variant/description
@@ -25687,11 +26036,17 @@ msgid ""
 "they simple function exporters, classes, singletons or something entirely "
 "different."
 msgstr ""
+"このモジュールは、パッケージのひな型を含む可変性のあるパッケージを構築し、出来上がったパッケージを実行時に構築する仕組みです。\n"
+"\n"
+"可変性のあるパッケージは自身を構築するサブルーチンを公開し、パラメータとしてひな型を指定することで、新しく作成されたパッケージを返します。\n"
+"\n"
+"実装側ではどのような種類のパッケージを構築するのかについて注意を行なっていませんが、非常にシンプルなエクスポータやクラス、シングルトンなど、様々なものを構"
+"築することができます。"
 
 #. tumbleweed/perl-Params-Coerce/summary
 #. leap/perl-Params-Coerce/summary
 msgid "Allows your classes to do coercion of parameters"
-msgstr ""
+msgstr "お使いのクラスでパラメータの強制を行なうモジュール"
 
 #. tumbleweed/perl-Params-Coerce/description
 #. leap/perl-Params-Coerce/description
@@ -25706,11 +26061,18 @@ msgid ""
 "Author:\n"
 "-------     Adam Kennedy <adamk@cpan.org>"
 msgstr ""
+"良い API 設計で重要な点は、パラメータを取る方法によって柔軟な仕組みになりうるものであることだ。\n"
+"\n"
+"Params::Coerce "
+"はこのような仕組みを支援するためのもので、様々な種類のパラメータを取ることで、コード内の複雑性をあまり増やさない仕組みを提供します。\n"
+"\n"
+"作者:\n"
+"-------     Adam Kennedy <adamk@cpan.org>"
 
 #. tumbleweed/perl-Parse-CPAN-Packages/summary
 #. leap/perl-Parse-CPAN-Packages/summary
 msgid "Parse 02packages.details.txt.gz"
-msgstr ""
+msgstr "02packages.details.txt.gz の処理"
 
 #. tumbleweed/perl-Parse-CPAN-Packages/description
 #. leap/perl-Parse-CPAN-Packages/description
@@ -25727,7 +26089,7 @@ msgstr ""
 
 #. tumbleweed/perl-Parse-Method-Signatures/summary
 msgid "Perl6 like method signature parser"
-msgstr ""
+msgstr "Perl6 のようなメソッド署名パーサ"
 
 #. tumbleweed/perl-Parse-Method-Signatures/description
 msgid ""
@@ -25738,7 +26100,7 @@ msgstr ""
 #. tumbleweed/perl-Parse-Win32Registry/summary
 #. leap/perl-Parse-Win32Registry/summary
 msgid "Parse Windows Registry Files"
-msgstr ""
+msgstr "Windows レジストリファイルの処理"
 
 #. tumbleweed/perl-Parse-Win32Registry/description
 #. leap/perl-Parse-Win32Registry/description
@@ -25771,7 +26133,6 @@ msgstr "パス仕様を処理するためのクロスプロットフォームモ
 
 #. tumbleweed/perl-Path-Class/description
 #. leap/perl-Path-Class/description
-#, fuzzy
 msgid ""
 "'Path::Class' is a module for manipulation of file and directory "
 "specifications (strings describing their locations, like ''/home/ken/foo."
@@ -25818,25 +26179,42 @@ msgid ""
 "Class::Dir modules, so please see those modules' documentation for more "
 "details about how to use them."
 msgstr ""
-"`Path::Class' は、ファイルやディレクトリの指定 (たとえば `'/home/ken/foo."
-"txt''  や `'C:\\Windows\\Foo.txt'' のようなそれらを指し示す文字列) について、"
-"プラットフォームに 依存しない仕様を提供するモジュールです。 Unix, Windows, "
-"Mac, VMS, Epoc, Cygwin, OS/2, NetWare など、 Perl の動作する環境であればどこ"
-"でも動作します。\n"
+"`Path::Class' は、ファイルやディレクトリの指定 (たとえば `'/home/ken/foo.txt''  や `'C:\\Windows\\"
+"Foo.txt'' のようなそれらを指し示す文字列) について、プラットフォームに 依存しない仕様を提供するモジュールです。 Unix, "
+"Windows, Mac, VMS, Epoc, Cygwin, OS/2, NetWare など、 Perl の動作する環境であればどこでも動作します。"
 "\n"
-"よく知られた `File::Spec' モジュールでもこのサービスを提供していますが、 使用"
-"するには不便であるため、ユーザはこれらの使用を避けるか、もしくは作成した 環境"
-"とは異なるプラットフォームでは動作しない方法を使ってしまいがちです。\n"
 "\n"
-" 事実、 `Path::Class' は `File::Spec' を内部的に使用していますが、全ての見苦"
-"しい詳細は 隠蔽されるようになっていますので、アプリケーションコードの作成に集"
-"中することができます。 また、 `File::Spec' はいくつかのパス操作のための関数を"
-"提供していますが、 `Path::Class' は パス仕様とそれに伴う作業の分野についてオ"
-"ブジェクト指向のモデルを提供しています。 `File::Spec' はいかなるオブジェクト"
-"も作成しませんし、それらのクラスは 様々なプラットフォームで操作するにあたって"
-"別々の方法をとらなければなりません (あまり直感的とは言えません) 。`Path::"
-"Class' はファイルやディレクトリを示す オブジェクトを作成し、それらから相対的"
-"に探るためのメソッドを提供しています。"
+"よく知られた `File::Spec' モジュールでもこのサービスを提供していますが、 使用するには不便であるため、ユーザはこれらの使用を避けるか、"
+"もしくは作成した 環境とは異なるプラットフォームでは動作しない方法を使ってしまいがちです。\n"
+"\n"
+" 事実、 `Path::Class' は `File::Spec' を内部的に使用していますが、全ての見苦しい詳細は "
+"隠蔽されるようになっていますので、アプリケーションコードの作成に集中することができます。 また、 `File::Spec' "
+"はいくつかのパス操作のための関数を提供していますが、 `Path::Class' は "
+"パス仕様とそれに伴う作業の分野についてオブジェクト指向のモデルを提供しています。 `File::Spec' はいかなるオブジェクトも作成しませんし、"
+"それらのクラスは 様々なプラットフォームで操作するにあたって別々の方法をとらなければなりません (あまり直感的とは言えません) 。`Path::"
+"Class' はファイルやディレクトリを示す オブジェクトを作成し、それらから相対的に探るためのメソッドを提供しています。例えば下記の 'File::"
+"Spec' コードは:\n"
+"\n"
+" my $absolute = File::Spec->file_name_is_absolute(                   "
+"File::Spec->catfile( @dirs, $file )                 );\n"
+"\n"
+"'Path::Class' を利用すると下記のようになります:\n"
+"\n"
+" my $absolute = Path::Class::File->new( @dirs, $file )->is_absolute;\n"
+"\n"
+"もしくは、下記のようになります:\n"
+"\n"
+" my $absolute = file( @dirs, $file )->is_absolute;\n"
+"\n"
+"'Path::Class' を利用すれば、どの場所からでも読みやすいコードを作成することができます。\n"
+"\n"
+"'Path::Class' を使用することにょって、コード内の問題を解決することにもつながります。たとえば、どれだけ多くの人々が、 'File::"
+"Spec' を使用するにあたって \"ボリューム\" (Windows でいうところの 'C:' など) "
+"を注意してきたことでしょう？おそらくは誰も気にしていないでしょう。しかし 'Path::Class' を使用すれば、お使いのファイルやディレクトリのオブジ"
+"ェクトがどのボリュームに属しているのかを知ることになりますので、このような環境での動作にも支障をきたすことがなくなります。\n"
+"\n"
+"'Path::Class' コードの考え方は、 Path::Class::File や Path::Class::Dir "
+"内にも生きています。これらの使用方法について、詳しくは各モジュールのドキュメンテーションをお読みください。"
 
 #. tumbleweed/perl-Path-FindDev/summary
 #. leap/perl-Path-FindDev/summary
@@ -25873,9 +26251,8 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/perl-Path-Router/summary
-#, fuzzy
 msgid "Tool for Routing Paths"
-msgstr "CD/DVD 書き込みツール"
+msgstr "ルーティングパス向けツール"
 
 #. tumbleweed/perl-Path-Router/description
 msgid ""
@@ -25886,9 +26263,8 @@ msgstr ""
 
 #. tumbleweed/perl-Path-Tiny/summary
 #. leap/perl-Path-Tiny/summary
-#, fuzzy
 msgid "File path utility"
-msgstr "携帯電話管理ユーティリティ"
+msgstr "ファイルパスユーティリティ"
 
 #. tumbleweed/perl-Path-Tiny/description
 msgid ""
@@ -25960,7 +26336,7 @@ msgstr ""
 #. tumbleweed/perl-Perl-PrereqScanner/summary
 #. leap/perl-Perl-PrereqScanner/summary
 msgid "a tool to scan your Perl code for its prerequisites"
-msgstr ""
+msgstr "お使いの Perl コード内の事前要件をスキャンするツール"
 
 #. tumbleweed/perl-Perl-PrereqScanner/description
 #. leap/perl-Perl-PrereqScanner/description
@@ -26030,7 +26406,7 @@ msgstr ""
 #. tumbleweed/perl-Perl-Version/summary
 #. leap/perl-Perl-Version/summary
 msgid "Parse and manipulate Perl version strings"
-msgstr ""
+msgstr "Perl のバージョン文字列の処理と操作"
 
 #. tumbleweed/perl-Perl-Version/description
 #. leap/perl-Perl-Version/description
@@ -26092,7 +26468,7 @@ msgstr ""
 #. tumbleweed/perl-Perl6-Junction/summary
 #. leap/perl-Perl6-Junction/summary
 msgid "Perl6 style Junction operators in Perl5."
-msgstr ""
+msgstr "Perl6 形式のジャンクション演算子の Perl5 向け実装"
 
 #. tumbleweed/perl-Perl6-Junction/description
 #. tumbleweed/perl-Syntax-Keyword-Junction/description
@@ -26117,7 +26493,7 @@ msgstr ""
 #. tumbleweed/perl-PerlIO-via-Timeout/summary
 #. leap/perl-PerlIO-via-Timeout/summary
 msgid "PerlIO layer that adds read & write timeout to a handle"
-msgstr ""
+msgstr "ハンドルに対して読み書きのタイムアウト機能を追加する PerlIO レイヤ"
 
 #. tumbleweed/perl-PerlIO-via-Timeout/description
 #. leap/perl-PerlIO-via-Timeout/description
@@ -26196,9 +26572,8 @@ msgstr ""
 
 #. tumbleweed/perl-Plack-Middleware-Session/summary
 #. leap/perl-Plack-Middleware-Session/summary
-#, fuzzy
 msgid "Middleware for session management"
-msgstr "ストレージ管理用ライブラリ"
+msgstr "セッション管理用ミドルウエア"
 
 #. tumbleweed/perl-Plack-Middleware-Session/description
 #. leap/perl-Plack-Middleware-Session/description
@@ -26412,7 +26787,7 @@ msgstr ""
 
 #. tumbleweed/perl-Pod-Readme/summary
 msgid "Intelligently generate a README file from POD"
-msgstr ""
+msgstr "POD から賢く README ファイルを生成するモジュール"
 
 #. tumbleweed/perl-Pod-Readme/description
 msgid ""
@@ -26422,9 +26797,8 @@ msgstr ""
 
 #. tumbleweed/perl-Pod-Spell/summary
 #. leap/perl-Pod-Spell/summary
-#, fuzzy
 msgid "Formatter for Spellchecking Pod"
-msgstr "スペルチェッカー"
+msgstr "スペルチェック Pod 向けフォーマッタ"
 
 #. tumbleweed/perl-Pod-Spell/description
 #. leap/perl-Pod-Spell/description
@@ -26453,7 +26827,7 @@ msgstr ""
 #. tumbleweed/perl-Pod-Usage/summary
 #. leap/perl-Pod-Usage/summary
 msgid "Print a Usage Message From Embedded Pod Documentation"
-msgstr ""
+msgstr "内蔵された Pod 文書から使用方法のメッセージを表示するモジュール"
 
 #. tumbleweed/perl-Pod-Usage/description
 #. leap/perl-Pod-Usage/description
@@ -26545,7 +26919,7 @@ msgstr ""
 #. tumbleweed/perl-Proc-Simple/summary
 #. leap/perl-Proc-Simple/summary
 msgid "Launch and Control Background Processes"
-msgstr ""
+msgstr "バックグラウンドプロセスの起動と制御"
 
 #. tumbleweed/perl-Proc-Simple/description
 #. leap/perl-Proc-Simple/description
@@ -26602,9 +26976,8 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/perl-RDF-Trine/summary
-#, fuzzy
 msgid "An RDF Framework for Perl"
-msgstr "NUnit テストフレームワーク"
+msgstr "Perl 向け RDF フレームワーク"
 
 #. tumbleweed/perl-RDF-Trine/description
 msgid ""
@@ -26657,7 +27030,7 @@ msgstr "読み込みのみのスカラ値や配列、ハッシュなどを作成
 #. tumbleweed/perl-Redis/summary
 #. leap/perl-Redis/summary
 msgid "Perl binding for Redis database"
-msgstr ""
+msgstr "Redis データベース向け Perl バインディング"
 
 #. tumbleweed/perl-Redis/description
 #. leap/perl-Redis/description
@@ -26725,9 +27098,8 @@ msgstr ""
 
 #. tumbleweed/perl-Regexp-IPv6/summary
 #. leap/perl-Regexp-IPv6/summary
-#, fuzzy
 msgid "Regular expression for IPv6 addresses"
-msgstr "XML トークン向けの正規表現"
+msgstr "IPv6 アドレス向け正規表現"
 
 #. tumbleweed/perl-Regexp-IPv6/description
 #. leap/perl-Regexp-IPv6/description
@@ -26776,9 +27148,8 @@ msgstr ""
 
 #. tumbleweed/perl-Rose-Object/summary
 #. leap/perl-Rose-Object/summary
-#, fuzzy
 msgid "A simple object base class."
-msgstr "シンプルな http サーバクラス"
+msgstr "シンプルなオブジェクトベースクラス"
 
 #. tumbleweed/perl-Rose-Object/description
 #. leap/perl-Rose-Object/description
@@ -26790,7 +27161,7 @@ msgstr ""
 #. tumbleweed/perl-Router-Simple/summary
 #. leap/perl-Router-Simple/summary
 msgid "simple HTTP router"
-msgstr ""
+msgstr "シンプルな HTTP ルータ"
 
 #. tumbleweed/perl-Router-Simple/description
 #. leap/perl-Router-Simple/description
