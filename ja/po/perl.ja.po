@@ -26086,6 +26086,13 @@ msgid ""
 "In a future release the Parse::CPAN::Packages::Package manpage and the "
 "Parse::CPAN::Packages::Distribution manpage might have more information."
 msgstr ""
+"Comprehensive Perl Archive Network (CPAN) は非常に便利な Perl コード集です。 \"modules\" "
+"ディレクトリ内の \"02packages.details.txt.gz\" ファイルを含む、提供するファイルに対する索引がいくつか提供されています。 "
+"\"02packages.details.txt.gz\" "
+"ファイルには便利な情報が数多く含まれており、このモジュールでは、このファイルに対するシンプルなインターフェイスを提供しています。\n"
+"\n"
+"Parse::CPAN::Packages::Package, Parse::CPAN::Packages::Distribution "
+"の将来のバージョンでは、さらなる情報が提供されるようになる予定です。"
 
 #. tumbleweed/perl-Parse-Method-Signatures/summary
 msgid "Perl6 like method signature parser"
@@ -26096,6 +26103,8 @@ msgid ""
 "Inspired by Perl6::Signature but streamlined to just support the subset "
 "deemed useful for TryCatch and MooseX::Method::Signatures."
 msgstr ""
+"Perl6::Signature にヒントを得て作られたものですが、 TryCatch や MooseX::Method::Signatures "
+"で有用であると考えられる部分のみに対応した直感的なつくりになっています。"
 
 #. tumbleweed/perl-Parse-Win32Registry/summary
 #. leap/perl-Parse-Win32Registry/summary
@@ -26125,6 +26134,19 @@ msgid ""
 "save part or all of a currently loaded registry file using the Windows reg "
 "command if you have the appropriate administrative access."
 msgstr ""
+"Parse::Win32Registry は Windows のレジストリファイルを処理するためのモジュールです。このモジュールは、 Windows "
+"API を介することなく、レジストリファイル内のキーと値を読み込むことができます。\n"
+"\n"
+"レジストリファイル内のキーと値に対しては、オブジェクト指向のインターフェイスが提供されます。レジストリファイルはツリー構造のキーで構成され、各キーにはさら"
+"なるサブキーまたは値が設定されます。\n"
+"\n"
+"このモジュールはプラットフォームに依存しないつくりになっていて、 Perl が動作するプラットフォームで動作します。\n"
+"\n"
+"また、 Windows NT のレジストリファイル (Windows NT, 2000, XP, 2003, Vista, 7) のほか、 "
+"Windows 95 のレジストリファイル (Windows 95, 98, Millennium Edition) にも対応しています。\n"
+"\n"
+"レジストリファイルはオフライン状態で使用することを前提にしています。レジストリファイルが使用中の場合は、レジストリを開くことができません。しかしながら、管"
+"理者の権限があれば、 Windows 側で reg コマンドを使用することで、現在読み込まれているレジストリファイルを保存して読み込むことができます。"
 
 #. tumbleweed/perl-Path-Class/summary
 #. leap/perl-Path-Class/summary
@@ -26219,7 +26241,7 @@ msgstr ""
 #. tumbleweed/perl-Path-FindDev/summary
 #. leap/perl-Path-FindDev/summary
 msgid "Find a development path somewhere in an upper hierarchy"
-msgstr ""
+msgstr "上位の階層構造内のどこかにある開発用パスの検出"
 
 #. tumbleweed/perl-Path-FindDev/description
 #. leap/perl-Path-FindDev/description
@@ -26233,11 +26255,18 @@ msgid ""
 "{         print \"development root = $root\";     } else {         print "
 "\"No development root :(\";     }"
 msgstr ""
+"このパッケージは Path::IsDev に対するグルーレイヤと呼ばれる仕組みで、いくつかのディレクトリに対するトリックを使用しています。\n"
+"\n"
+"    use Path::FindDev qw( find_dev );\n"
+"\n"
+"    if ( my $root = find_dev('/some/path/to/something/somewhere')) {         "
+"print \"development root = $root\";     } else {         print \"No "
+"development root :(\";     }"
 
 #. tumbleweed/perl-Path-IsDev/summary
 #. leap/perl-Path-IsDev/summary
 msgid "Determine if a given Path resembles a development source tree"
-msgstr ""
+msgstr "指定したパスが開発用のソースツリーであるかどうかを判断するモジュール"
 
 #. tumbleweed/perl-Path-IsDev/description
 #. leap/perl-Path-IsDev/description
@@ -26249,6 +26278,9 @@ msgid ""
 "\"installed\" modules to be different to those that are still \"in "
 "development\""
 msgstr ""
+"このモジュールは、指定されたパスが何らかの手段による開発用のツリーかどうかを、経験則を通じて判断するモジュールです。\n"
+"\n"
+"ここには多数の便利なアプリケーションがあります。特に、インストールされたモジュールが開発中のものとは異なる動作を必要とするような仕組みに有用です。"
 
 #. tumbleweed/perl-Path-Router/summary
 msgid "Tool for Routing Paths"
@@ -26260,6 +26292,8 @@ msgid ""
 "for dispatching on. It also provides the inverse in that it will take a list "
 "of parameters, and construct an appropriate uri for it."
 msgstr ""
+"このモジュールはパスを分解して、それを発信するのに適したパラメータに分解します。逆方向の処理、つまりパラメータのリストから適切な URI "
+"を構成する仕組みも用意されています。"
 
 #. tumbleweed/perl-Path-Tiny/summary
 #. leap/perl-Path-Tiny/summary
@@ -26295,11 +26329,32 @@ msgid ""
 "This module depends heavily on PerlIO layers for correct operation and thus "
 "requires Perl 5.008001 or later."
 msgstr ""
+"このモジュールは、ファイルパスを扱うための小さくて高速なユーティリティを提供します。 File::Spec "
+"を利用するよりはフレンドリーな仕組みであり、他の中枢ファイルハンドルモジュールから簡単にアクセスするための関数も用意されています。また、 CPAN 内で公"
+"開されている多数の同系モジュールよりも小さくて高速に動作するように作られているため、よくある様々な作業を一貫性のある、エラーを避けやすい方法で行なうことが"
+"できます。\n"
+"\n"
+"Path::Tiny は Unix と Win32 "
+"のプラットフォーム以外で動作するようには設計されていません。また、非常に分かりにくい表記や複雑な表記などは、うまく動作しない場合もあります (例: "
+"'///../../..//./././a//b/.././c/././') 。\n"
+"\n"
+"すべてのパスは Unix スタイルで記述する必要があり、パスの区切りはスラッシュ (/) で指定します。また、オブジェクトを文字列化すると、"
+"元のパスが返されます (ただしいくつかのクリーンアップ処理が施されます) 。\n"
+"\n"
+"ファイルの入出力のメソッドを実行する際には、読み書きの処理の前に (プラットフォーム側で対応していれば) 'flock' の処理が行なわれます。\n"
+"\n"
+"'*_utf8' メソッド ('slurp_utf8', 'lines_utf8' など) は RAW モードで動作するメソッドです。 Windows "
+"の場合、 ':crlf' IO レイヤによる CRLF の処理が行なわれなくなります。 Unicode::UTF8 0.58 "
+"もしくはそれ以降のバージョンをインストールしている場合、これらのメソッドの処理は多くの場合において高速化されます (そのため、インストールが推奨されます)"
+" 。このほか、 PerlIO::utf8_strict 0.003 もしくはそれ以降のバージョンをインストールしている場合、デフォルトの "
+"':encoding(UTF-8)' の代わりに使用されるようにもなっています。\n"
+"\n"
+"このモジュールは正しい操作を PerlIO レイヤに多く依存しているため、 Perl 5.008001 もしくはそれ以降のバージョンが必要となります。"
 
 #. tumbleweed/perl-Perl-Critic/summary
 #. leap/perl-Perl-Critic/summary
 msgid "Critique Perl source code for best-practices"
-msgstr ""
+msgstr "ベストプラクティスを達成するための Perl ソースコードチェック"
 
 #. tumbleweed/perl-Perl-Critic/description
 #. leap/perl-Perl-Critic/description
@@ -26332,6 +26387,26 @@ msgid ""
 "called 'perlcritic-gui'. You can get a free community edition of ActivePerl "
 "from the http://www.activestate.com manpage."
 msgstr ""
+"Perl::Critic は拡張性のあるフレームワークで、 Perl "
+"のソースコードに対してコード標準を作成し、それを適用することができるモジュールです。本質的には、ソースコードの静的な分析エンジンです。 Perl::"
+"Critic には多数の Perl::Critic::Policy "
+"モジュールが用意されていて、様々なコーディングガイドラインを強制できるようになっています。多くのポリシーモジュールは Damian Conway "
+"氏の書籍 *Perl Best Practices* をベースにしています。しかしながら、 Perl::Critic "
+"は左記の書籍だけに限らず、この書籍に矛盾するポリシーにも対応しています。また、 Perl::Critic インターフェイスを介することで、これらのポリシー"
+"の有効／無効を切り替えたり、カスタマイズしたりすることもできます。このほか、必要に応じて独自のポリシーモジュールを作成することもできます。\n"
+"\n"
+"Perl::Critic のコマンドラインインターフェイスについては、 perlcritic のドキュメンテーションをお読みください。また、"
+"構築プロセス内に Perl::Critic を組み込みたい場合は、 Test::Perl::Critic "
+"がプログラムをテストするためのインターフェイス機能を提供しています。このほか、 Test::Perl::Critic::Progressive "
+"では、古いコードに対して少しずつコード標準を適用していくための仕組みもあります。最大限の利便性をもたらしたい場合 (ただし柔軟性による負荷もあります) "
+"は、 criticism プラグマをご覧ください。\n"
+"\n"
+"どのモジュールもインストールせずに Perl::Critic を試したい場合は、 http://perlcritic.com にある Web "
+"サービスをご利用いただくこともできます。この Web サービスは、 Perl::Critic の API "
+"に用意されている設定機能には対応していませんが、このモジュールがどのような動作をするのかを確かめるためのヒントにはなります。\n"
+"\n"
+"このほか、 ActivePerl には 'perlcritic-gui' と呼ばれる非常にわかりやすいグラフィカルインターフェイスも用意されています。 "
+"ActivePerl のコミュニティ版をダウンロードしたい場合は、 http://www.activestate.com をご覧ください。"
 
 #. tumbleweed/perl-Perl-PrereqScanner/summary
 #. leap/perl-Perl-PrereqScanner/summary
@@ -26368,6 +26443,29 @@ msgid ""
 "\n"
 "  OO namespace aliasing using the 'aliased' module"
 msgstr ""
+"このスキャナは、お使いのファイルから、配布物内の事前要件 (prerequisites) をゆるく抽出します。\n"
+"\n"
+"抽出機能は完全なものではありませんが、できる限りのことを行ないます。現時点では下記のような機能があります:\n"
+"\n"
+"**\n"
+"\n"
+"  Perl バージョンの最低要件を含む、 Perl モジュールやスクリプト内の 'use' や 'require' で始まる行を抽出します。\n"
+"\n"
+"**\n"
+"\n"
+"  'base' や 'parent' のプラグマタで定義されている一般的な継承関係を抽出します。\n"
+"\n"
+"**\n"
+"\n"
+"  'extends' キーワードで定義された Moose の継承関係を抽出します。\n"
+"\n"
+"**\n"
+"\n"
+"  'with' キーワードで定義された Moose の役割を抽出します。\n"
+"\n"
+"**\n"
+"\n"
+"  'aliased' モジュールを利用した OO ネームスペースの別名にも対応しています。"
 
 #. tumbleweed/perl-Perl-Tidy/summary
 #. leap/perl-Perl-Tidy/summary
@@ -26464,6 +26562,54 @@ msgid ""
 "case if either of them starts with a zero they will be zero padded to the "
 "same length when stringifying the version."
 msgstr ""
+"Perl::Version は、 Perl におけるバージョン文字列を処理したり、操作したり整形したりすることのできるインターフェイスを提供します。\n"
+"\n"
+"version.pm (バージョン文字列の処理と比較に特化したモジュール) とは異なり、 Perl::Version "
+"はバージョン文字列を読み込んで変更し、変更結果を再度元の形式に整形しなおすような用途に向けて設計されています。\n"
+"\n"
+"たとえば下記のようなコードがあったとします:\n"
+"\n"
+"    my $version = Perl::Version->new( '1.2.3' );     $version->inc_version;"
+"     print \"$version\\n"
+"\";\n"
+"\n"
+"上記のコードは、下記のように出力されます:\n"
+"\n"
+"    1.3.0\n"
+"\n"
+"また、下記のようなコードがあったとします:\n"
+"\n"
+"    my $version = Perl::Version->new( 'v1.02.03' );     "
+"$version->inc_version;     print \"$version\\n"
+"\";\n"
+"\n"
+"上記は、下記のように出力されます:\n"
+"\n"
+"    v1.03.00\n"
+"\n"
+"いずれも同じバージョンを表すものですが、書式が異なっています。\n"
+"\n"
+"Perl::Version では、バージョン文字列の推測と再作成に労力を注いでいます。そのため、多くの場合において読み込みは成功するようになっています。た"
+"だし、場合によっては書式を判断できない場合もあります、例えば下記のような例があります:\n"
+"\n"
+"    1.10.03\n"
+"\n"
+"上記の例において、 2 つめのパート '10' は 3 つめのパートのようにゼロ埋めするかどうかを判断できません。 Perl::Version "
+"では下記のように動作します:\n"
+"\n"
+"    my $version = Perl::Version->new( '1.10.03' );     "
+"$version->inc_revision;     print \"$version\\n"
+"\";\n"
+"\n"
+"上記は、下記のように出力されます:\n"
+"\n"
+"    2.00.00\n"
+"\n"
+"2 つめのパート以降のすべてのパートが同じ長さ (上記の例では 2 桁) であり、いずれかのパートが '0' で始まる場合、 Perl::Version "
+"はすべてのパートが同じ長さになるようゼロ埋めを行ないます。\n"
+"\n"
+"最初のパートや英字の接頭辞に対する処理は別途行なわれます。いずれかのパートが '0' "
+"で始まる場合、文字列化すると同じ長さになるようゼロ埋めが行なわれます。"
 
 #. tumbleweed/perl-Perl6-Junction/summary
 #. leap/perl-Perl6-Junction/summary
@@ -26489,6 +26635,16 @@ msgid ""
 "must also use a regex object, such as 'qr/\\d/', not a plain regex such as '/"
 "\\d/'."
 msgstr ""
+"このモジュールは 'Junction' 演算子 (よくあるものとしては 'any' や 'all' など) を提供する軽量なモジュールです。\n"
+"\n"
+"Perl6 の設計ドキュメント (http://dev.perl.org/perl6/doc/design/exe/E06.html) "
+"からヒントを得て作られたものです。 \n"
+"\n"
+"Quantum::Superpositions の機能のうちの一部分を提供しています。詳しくは /\"SEE ALSO\" をお読みください。\n"
+"\n"
+"/SYNOPSIS にも書いてありますが、正規表現を利用してマッチング処理をさせたい場合は、 '==' または '!=' を使用してください。 '=~' "
+"や '!~' ではありません。また、正規表現は 'qr/\\d/' のように正規表現オブジェクトを使用しなければなりません。 '/\\d/' "
+"のような純粋な正規表現は利用できません。"
 
 #. tumbleweed/perl-PerlIO-via-Timeout/summary
 #. leap/perl-PerlIO-via-Timeout/summary
@@ -26510,6 +26666,14 @@ msgid ""
 "implement a timeout for a socket, see the IO::Socket::Timeout manpage that "
 "implements exactly that."
 msgstr ""
+"このパッケージは PerlIO レイヤを実装するもので、読み書きのタイムアウト時間の機能を追加します。これはハンドル (ファイル、ソケットなど) "
+"へのアクセスに対して、一定時間が経過したのちに失敗として処理を中止する機能を提供します。\n"
+"\n"
+"タイムアウト機能は、読み書きの前にハンドルに対して '<select>' を実行することによって実装されています。\n"
+"\n"
+"*警告* 'sysread' や 'syswrite' "
+"を使用している場合、これらは低レベルな範囲で動作しているため、タイムアウトにはなりません。これらの処理に対してタイムアウトを実装したい場合は、"
+"正確に実装している IO::Socket::Timeout をお使いください。"
 
 #. tumbleweed/perl-PerlIO-via-dynamic/summary
 #. leap/perl-PerlIO-via-dynamic/summary
@@ -26530,11 +26694,21 @@ msgid ""
 "Note that PerlIO::via::dynamic uses the scalar fields to reference to the "
 "object representing the dynamic namespace."
 msgstr ""
+"'PerlIO::via::dynamic' は PerlIO "
+"の動的なレイヤを作成するための仕組みです。動作やレイヤが変数によって変化するような場合に有用な仕組みです。なお、"
+"このモジュールをレイヤとして直接使用すべきではありません (:via(dynamic)) 。\n"
+"\n"
+"新しいレイヤを作成するにはコンストラクタを利用し、 translate と untranslate の 2 つのパラメータを指定してください。"
+"作成したあとは '$p-'via ($fh)> でハンドルをラッピングすることができます。 <$fh> を閉じた後は、 IO "
+"レイヤ用の一時的なネームスペースが削除されます。\n"
+"\n"
+"ただし、 PerlIO::via::dynamic "
+"はスカラーフィールドを利用して動的なネームスペースを表すオブジェクトを参照していることに注意してください。"
 
 #. tumbleweed/perl-Plack/summary
 #. leap/perl-Plack/summary
 msgid "Perl Superglue for Web frameworks and Web Servers (PSGI toolkit)"
-msgstr ""
+msgstr "Web フレームワークおよび Web サーバ向け Perl スーパーグルー (PSGI ツールキット)"
 
 #. tumbleweed/perl-Plack/description
 msgid ""
@@ -26545,11 +26719,17 @@ msgid ""
 "See PSGI for the PSGI specification and PSGI::FAQ to know what PSGI and "
 "Plack are and why we need them."
 msgstr ""
+"Plack は PSGI スタックを使用するためのツール集です。ミドルウエアコンポーネントのほか、参照サーバや Web "
+"アプリケーションフレームワーク向けのユーティリティが含まれています。 Plack は Ruby における Rack や、 Python における "
+"WSGI 用の Paste などのようなものです。\n"
+"\n"
+"PSGI の仕様については PSGI を、 PSGI と Plack が何物であるのかや、なぜ必要となるのかについては、 PSGI::FAQ "
+"をお読みください。"
 
 #. tumbleweed/perl-Plack-Middleware-LogErrors/summary
 #. leap/perl-Plack-Middleware-LogErrors/summary
 msgid "Map psgi.errors to psgix.logger or other logger"
-msgstr ""
+msgstr "psgi.errors を psgix.logger または他の logger にマッピングするモジュール"
 
 #. tumbleweed/perl-Plack-Middleware-LogErrors/description
 #. leap/perl-Plack-Middleware-LogErrors/description
@@ -26569,6 +26749,17 @@ msgid ""
 "provided no '--access-log' option indicating a filename, 'psgi.errors' is "
 "used)."
 msgstr ""
+"'psgi.errors' は多くのバックエンドでは既定で 'stderr' "
+"が指定されているため、サーバのコンソールなどのあまり役に立たない場所にエラーが表示されてしまいます。\n"
+"\n"
+"このミドルウエアは 'psgi.errors' ストリームを 'psgix.logger' "
+"ストリームに再マップするか、もしくは指定したロガーに明示的に転送します。\n"
+"\n"
+"これは特に、いずれもロガーが指定されない場合は 'psgi.errors' に出力される、 Plack::Middleware::LogWarn  ("
+"Perl の警告を 'psgi.errors' に転送するモジュール) や Plack::Middleware::HTTPExceptions ("
+"捕らえられていない例外を 'psgi.errors' に転送するモジュール) 、もしくは Plack::Middleware::AccessLog "
+"のような他のミドルウエアと組み合わせて使用すると、特に便利な仕組みになります。また、 plackup を介して自動的にも適用されます (そのため、 "
+"'--access-log' オプションでファイル名を指定しない場合は、 'psgi.errors' が使用されます) 。"
 
 #. tumbleweed/perl-Plack-Middleware-Session/summary
 #. leap/perl-Plack-Middleware-Session/summary
@@ -26590,6 +26781,15 @@ msgid ""
 "*NOTE:* As of version 0.04 the session is stored in 'psgix.session' instead "
 "of 'plack.session'."
 msgstr ""
+"このモジュールはセッション管理用の Plack ミドルウエアコンポーネントです。既定では Cookie を利用してセッションの状態を維持し、メモリ内にデー"
+"タを保存します。この配布物にはその他の状態および保存ソリューションも用意されています。これらのバックエンドの使用方法について、詳しくは perldoc "
+"をお読みください。\n"
+"\n"
+"なお、現在のセッションは '$env' 内の 'psgix.session' "
+"キー内にハッシュ参照として保存される仕組みであるため、必要に応じてアクセスすることができるようになっています。\n"
+"\n"
+"*注意:* バージョン 0.04 以降では、 'plack.session' ではなく 'psgix.session' "
+"にセッションが保存されるようになりました。"
 
 #. tumbleweed/perl-Pod-Coverage/summary
 #. leap/perl-Pod-Coverage/summary
@@ -26653,7 +26853,7 @@ msgstr ""
 #. tumbleweed/perl-Pod-Coverage-Moose/summary
 #. leap/perl-Pod-Coverage-Moose/summary
 msgid "Pod::Coverage extension for Moose"
-msgstr ""
+msgstr "Moose 向け Pod::Coverage 拡張"
 
 #. tumbleweed/perl-Pod-Coverage-Moose/description
 #. leap/perl-Pod-Coverage-Moose/description
@@ -26669,11 +26869,18 @@ msgid ""
 "  use Test::Pod::Coverage;   all_pod_coverage_ok({ coverage_class => 'Pod::"
 "Coverage::Moose'});"
 msgstr ""
+"Moose と Pod::Coverage を組み合わせて使用する場合と、役割からインポートされる任意のメソッドがレポートされます。これは特に、 "
+"Test::Pod::Coverage と組み合わせて使用する場合には、使いにくいために悪い組み合わせとなってしまいます。\n"
+"\n"
+"このモジュールを Test::Pod::Coverage と組み合わせて使用するには、下記のようにします:\n"
+"\n"
+"  use Test::Pod::Coverage;   all_pod_coverage_ok({ coverage_class => "
+"'Pod::Coverage::Moose'});"
 
 #. tumbleweed/perl-Pod-Coverage-TrustPod/summary
 #. leap/perl-Pod-Coverage-TrustPod/summary
 msgid "allow a module's pod to contain Pod::Coverage hints"
-msgstr ""
+msgstr "モジュールの Pod に対して Pod::Coverage のヒントを含めるようにするモジュール"
 
 #. tumbleweed/perl-Pod-Coverage-TrustPod/description
 #. leap/perl-Pod-Coverage-TrustPod/description
@@ -26735,11 +26942,61 @@ msgid ""
 "\"trust\" mechanism rather than the \"privacy\" mechanism in Pod::Coverage. "
 "This is unlikely ever to matter to you, but it's true."
 msgstr ""
+"これは Pod::Coverage のサブクラス (実際には Pod::Coverage::CountParents のサブクラス) で、POD "
+"自身に対して特定の信頼済みシンボル名を定義できるようにするためのものです。\n"
+"\n"
+"下記にシンプルな Perl モジュールの例を示します:\n"
+"\n"
+"  package Foo::Bar;\n"
+"\n"
+"  =head1 NAME\n"
+"\n"
+"  Foo::Bar - a bar at which fooes like to drink\n"
+"\n"
+"  =head1 METHODS\n"
+"\n"
+"  =head2 fee\n"
+"\n"
+"  returns the bar tab\n"
+"\n"
+"  =cut\n"
+"\n"
+"  sub fee { ... }\n"
+"\n"
+"  =head2 fie\n"
+"\n"
+"  scoffs at bar tab\n"
+"\n"
+"  =cut\n"
+"\n"
+"  sub fie { ... }\n"
+"\n"
+"  sub foo { ... }\n"
+"\n"
+"  =begin Pod::Coverage\n"
+"\n"
+"    foo\n"
+"\n"
+"  =end Pod::Coverage\n"
+"\n"
+"  =cut\n"
+"\n"
+"このファイルでは、 Pod::Coverage への対象となる POD ブロック内の空行は、すべて 'trustme' "
+"パターンとして扱われるため、カバレッジが完全に達成されているものとして報告されます。また、行の前後の空白は削除され、残りは正規表現で処理されます。\n"
+"\n"
+"なお、上記のように '=begin' と '=end' を利用して書くのではなく、下記のように記述することもできます:\n"
+"\n"
+"  =for Pod::Coverage foo\n"
+"\n"
+"場合によってはファイル全体を信頼済みとして設定したいこともあります。この場合は、特殊なパターン '*EVERYTHING*' を指定してください。\n"
+"\n"
+"なお、 Pod::Coverage::TrustPod は Pod::Coverage 内のように \"privacy\" 機構ではなく、 \""
+"trust\" 機構を利用して例外を構築します。これは重要なことではないかもしれませんが、それは本当です。"
 
 #. tumbleweed/perl-Pod-Eventual/summary
 #. leap/perl-Pod-Eventual/summary
 msgid "read a POD document as a series of trivial events"
-msgstr ""
+msgstr "一連の通常イベントとして読むことのできる POD 文書"
 
 #. tumbleweed/perl-Pod-Eventual/description
 #. leap/perl-Pod-Eventual/description
@@ -26759,6 +27016,16 @@ msgid ""
 "Eventual subclasses. If it isn't, Pod::Eventual's own 'handle_event' will be "
 "called, and will raise an exception."
 msgstr ""
+"POD は比較的シンプルな書式で作成することができますが、読んだりそこから何か役に立つものを得るにあたっては面倒な仕組みです。多くの既存の POD "
+"パーサは、たとえば '=item' が 'back' の前、および '=over' の後に書かれているかどうかや、  'L<>' "
+"によるリンクの生成方法など、セマンティックを理解しています。\n"
+"\n"
+"Pod::Eventual は大掛かりな仕組みではありませんし、非常に単純な仕組みです。単純な仕組みこそが良いのです "
+"(自分自身にもそう言い聞かせています) 。\n"
+"\n"
+"Pod::Eventual は行ベースの入力を読み込んで、検出したそれぞれの POD の段落やディレクティブを表すイベントを生成します。終了すると、"
+"即時に 'handle_event' メソッドに渡されます。このメソッドは Pod::Eventual のサブクラスで実装されるべきもので、"
+"実装されていない場合は自身の 'hanle_event' を呼び出し、例外をスローします。"
 
 #. tumbleweed/perl-Pod-POM/summary
 #. leap/perl-Pod-POM/summary
@@ -26794,6 +27061,8 @@ msgid ""
 "This module filters POD to generate a _README_ file, by using POD commands "
 "to specify which parts are included or excluded from the _README_ file."
 msgstr ""
+"このモジュールは、 _README_ ファイルを生成するために POD をフィルタする処理を行ないます。このフィルタ処理は POD "
+"のコマンドを利用するもので、 _README_ ファイルに含めたり、除外したりするパートを指定します。"
 
 #. tumbleweed/perl-Pod-Spell/summary
 #. leap/perl-Pod-Spell/summary
@@ -26823,6 +27092,20 @@ msgid ""
 "be supplemented (on a per-document basis) by having '\"=for stopwords\"' / "
 "'\"=for :stopwords\"' region(s) in a document."
 msgstr ""
+"Pod::Spell は Pod の整形ソフトウエアで、出力をスペルチェック用に使用することができる仕組みです。 Pod::Spell は Pod::"
+"Text のように動作しますが、実際の整形にはあまり注力せず、 Perl のシンボルやジャーゴンを省略して出力する仕組みです (そのため、\"'$"
+"thing', \"'Foo::Bar'\", \"hashref\" (ハッシュ参照の意味) など、 Perl "
+"で使用される奇妙な個所をスペルチェックに渡さなくて済みます) 。\n"
+"\n"
+"このクラスは新しい公開メソッドを提供していません。すべての公開メソッドは Pod::Parser から継承されているものです。特に注目すべきメソッドは "
+"'parse_from_filehandle' (パラメータを指定しない場合は STDIN から入力し、 STDOUT に送信するメソッド) と "
+"'parse_from_file' です。ただし、概要の例に示されている内容をそのまま使用してもかまいません。\n"
+"\n"
+"このクラスは Perl でのみ使用される単語や Perl のコードそのものを除外して動作します。たとえば \"'$thing'\", \"'N>7'\""
+", \"'@{$foo}{'bar','baz'}'\" のようなコードや、 C<...> や F<...> "
+"でくくられたコード、そしてコードブロックやストップワードリストに該当するものなどがそれぞれ排除されます。文書に対する既定のストップワードリストは、 "
+"Pod::Wordlist で定義されているものと、補足 (ドキュメントごとの指定) で '\"=for stopwords\"' / '\"=for :"
+"stopwords\"' の範囲内にあるものすべてが当てはまります。"
 
 #. tumbleweed/perl-Pod-Usage/summary
 #. leap/perl-Pod-Usage/summary
@@ -26840,6 +27123,10 @@ msgid ""
 "description (if present) of the command line options and arguments. If the "
 "verbose level is 2, then the entire manual page is printed."
 msgstr ""
+"*pod2usage* はスクリプトを実行した際に使用方法に関するメッセージ (POD ドキュメンテーションに内蔵されているもの) "
+"を表示して、必要な終了ステータスで終了するスクリプトです。使用方法のメッセージは \"verboseness\" の 3 レベルのうち 1 "
+"つを選択します。 \"verboseness\" レベルが 0 の場合、 synopsis のみを出力します。 1 の場合は synopsis と "
+"description (もしあれば) を出力します。 2 を指定すると、マニュアルページ全体を出力します。"
 
 #. tumbleweed/perl-PostScript-Simple/summary
 #. leap/perl-PostScript-Simple/summary
@@ -26915,6 +27202,21 @@ msgid ""
 "If the code in any of the clauses does not die or exit, it will continue "
 "execution after the fork block."
 msgstr ""
+"このモジュールは、直感的で Perl のやり方に沿った fork プログラムを作成するための仕組みで、 fork "
+"されたプロセス内でどのような処理をするのかをブロックで指定することができる仕組みです。親プロセスと子プロセスに対してそれぞれコードを記述できるほか、"
+"再試行のハンドラやエラーハンドラなどを組み合わせて \"fork ブロック\" を構成します。ブロック内のそれぞれのコードは任意の順序で表記できますが、"
+"連続して記述しなければなりません (間に fork とは関係のないステートメントを挟むことはできません) 。\n"
+"\n"
+"4 種類のコードをすべて指定する必要はありません。再試行のコードを省略した場合は、 1 回だけ fork "
+"を試す動作になります。エラーのコードを省略した場合で、再試行ができない場合は、シンプルなメッセージが die "
+"で出力されてプログラムは終了します。また、親または子のコードを省略した場合は、それぞれのプロセスは final 句以降の処理から始めるようになります。この"
+"ほか、いずれか片方がシンプルな処理のみを行なう場合は、いずれか片方だけを指定するだけでかまいません。例えば下記のようになります:\n"
+"\n"
+"   run_fork { child {      exec '/bin/ls', '-l';      die \"Couldn't exec ls:"
+" $!\\n"
+"\";  } };    \n"
+"\n"
+"いずれかの句のコードが die で終了したり exit で終了したりしない場合は、 fork ブロック以降の処理が続けて動作します。"
 
 #. tumbleweed/perl-Proc-Simple/summary
 #. leap/perl-Proc-Simple/summary
@@ -26974,6 +27276,50 @@ msgid ""
 "process exits. By default this behaviour is turned off (see the "
 "kill_on_destroy and signal_on_destroy methods)."
 msgstr ""
+"Proc::Simple "
+"パッケージは、ユーザの観点から実際のプロセスを擬似するオブジェクトを提供します。新しいプロセスオブジェクトは下記のようにして作成することができます:\n"
+"\n"
+"   $myproc = Proc::Simple->new();\n"
+"\n"
+"ここから外部のプログラムや Perl のサブルーチンを起動し、裏で動作する処理をプロセスとして制御することができます。\n"
+"\n"
+"たとえば 10 秒の待機処理を実行したい場合は、下記のようにします:\n"
+"\n"
+"   $myproc->start(\"/bin/sleep 10\");    # or    $myproc->start(\"/bin/"
+"sleep\", \"10\");\n"
+"\n"
+"上記以外にも、下記のようにしてサブルーチンを実行することもできます:\n"
+"\n"
+"   sub mysleep { sleep(shift); }    # Define mysleep()    $myproc->start(\\"
+"&mysleep, 10);   # Launch it.\n"
+"\n"
+"単純に下記のように記述することもできます:\n"
+"\n"
+"   $myproc->start(sub { sleep(10); });\n"
+"\n"
+"_start_ メソッドは、指定したプロセスを裏で起動するとすぐに返る (つまり、ブロックされることはない) メソッドです。"
+"プロセスが正常に起動できた場合は _1_ を、そうでない場合は _0_ を返します。\n"
+"\n"
+"_poll_ メソッドは該当するプロセスが実行中かどうかを調べて返します:\n"
+"\n"
+"   $running = $myproc->poll();\n"
+"\n"
+"実行中である場合は _1_ を、実行中でない場合は _0_ を返します。\n"
+"\n"
+"   $myproc->kill();\n"
+"\n"
+"上記を実行すると、 SIGTERM シグナルで該当するプロセスを終了します。オプションでそれ以外のシグナルを送信することもできます:\n"
+"\n"
+"   $myproc->kill(\"SIGUSR1\");\n"
+"\n"
+"上記を実行すると、実行中のプロセスに対して SIGUSR1 を送信します。シグナルの送信が正常に終了した場合は _1_ を、正常終了しなかった場合は "
+"_0_ をそれぞれ返します。\n"
+"\n"
+"より詳しいメソッドの説明については、次のセクションをお読みください。\n"
+"\n"
+"オブジェクトに対するデストラクタも提供されています。そのため、 fork "
+"したプロセスに対して自動的にシグナルを送信して終了させることができるようになっています。既定ではこの機能は無効化されています ("
+"kill_on_destroy, signal_on_destroy の各メソッドをお読みください) 。"
 
 #. tumbleweed/perl-RDF-Trine/summary
 msgid "An RDF Framework for Perl"
@@ -26985,6 +27331,8 @@ msgid ""
 "on extensibility, API stability, and the presence of a test suite. The "
 "package consists of several components:"
 msgstr ""
+"RDF::Trine は Resource Descriptive Framework (RDF) のうち、特に拡張性と API "
+"の安定性、そしてテストスイートの存在に特に注意を払って作られた仕組みです。このパッケージには複数のコンポーネントが含まれています。"
 
 #. tumbleweed/perl-RPC-XML/summary
 msgid "Set of Classes for Core Data, Message and Xml Handling"
@@ -27045,11 +27393,18 @@ msgid ""
 "information to support almost all commands with same piece of code with a "
 "little help of 'AUTOLOAD'."
 msgstr ""
+"http://redis.io/ に対する純粋 Perl バインディングです。\n"
+"\n"
+"このバージョンは、プロトコル 2.x (multi-bulk) もしくはそれ以降に対応しています "
+"(https://github.com/antirez/redis/) 。\n"
+"\n"
+"子のドキュメンテーションにはテストスイートで使用されているコマンドの一覧が書かれていますが、プロトコル側では 'AUTOLOAD' の仕組みによる支援で、"
+"ほぼすべてのコマンドに対応するための十分な情報が提示されていることから、追加のコマンドについても問題なく動作するものと見込まれています。"
 
 #. tumbleweed/perl-Regexp-Assemble/summary
 #. leap/perl-Regexp-Assemble/summary
 msgid "Assemble multiple Regular Expressions into a single RE"
-msgstr ""
+msgstr "複数の正規表現を 1 つにまとめるモジュール"
 
 #. tumbleweed/perl-Regexp-Assemble/description
 #. leap/perl-Regexp-Assemble/description
@@ -27080,6 +27435,23 @@ msgid ""
 "the http://search.cpan.org/dist/Regexp-Assemble/README manpage or the http://"
 "cpan.uwinnipeg.ca/htdocs/Regexp-Assemble/README.html manpage."
 msgstr ""
+"Regexp::Assemble は任意の数の正規表現を受け入れ、各正規表現のすべてに該当するような 1 つの正規表現を生成します。\n"
+"\n"
+"結果として、ターゲットの文字列に対してそれぞれの正規表現を繰り返しテストするかわりに、 1 つの正規表現だけをテストすればいいことになります。これは特に、"
+"数千個の単位でパターンマッチングを行なうような用途で有用です。このモジュールでは、最も小さなパターンを生成するため、様々な処理を行ないます。\n"
+"\n"
+"このモジュールではオリジナルのパターンに戻す処理も行なうことができます。これにより、組み合わせたパターンを構成する元のパターンを決定して、該当の原因となっ"
+"たものを判断することができます。\n"
+"\n"
+"なお、 Perl の正規表現エンジンは、 O(1) ではなく O(n) "
+"の時間で巨大な置き換え処理を行なっていることに注意してください。性能面で問題が発生した場合は、まずトライ (trie) "
+"を使用することをお考え下さい。また、 Perl 自身の正規表現エンジンでは Perl 5.10 以降でトライによる最適化を実装しています (Perl "
+"5.9.3 でもすでに利用可能な状態ではあります) 。 'Regexp::Assemble' ではトライ対応の Perl "
+"かどうかを判断して正しい処理を行ないます。\n"
+"\n"
+"README 内には追加の使用例が示されています。ローカルからのアクセスが簡単でない環境の場合は、 Web リポジトリをご覧いただいてもかまいません。 "
+"Web リポジトリは http://search.cpan.org/dist/Regexp-Assemble/README または "
+"http://cpan.uwinnipeg.ca/htdocs/Regexp-Assemble/README.html にあります。"
 
 #. tumbleweed/perl-Regexp-Common/summary
 #. leap/perl-Regexp-Common/summary
@@ -27095,6 +27467,11 @@ msgid ""
 "There is an alternative, subroutine-based syntax described in \"Subroutine-"
 "based interface\"."
 msgstr ""
+"既定では、このモジュールは 1 つのハッシュ ('%RE') を公開しています。"
+"このハッシュは一般的に必要とされる正規表現を保存したり生成したりするための仕組みです (詳しくは \"List of available "
+"patterns\" をご覧ください) 。\n"
+"\n"
+"このほか、サブルーチンベースの文法もご利用いただけます。詳しくは \"Subroutine-based interface\" をお読みください。"
 
 #. tumbleweed/perl-Regexp-IPv6/summary
 #. leap/perl-Regexp-IPv6/summary
@@ -27111,11 +27488,16 @@ msgid ""
 "\n"
 "To match full strings use '/^$IPv6_re$/'."
 msgstr ""
+"このモジュールは $IPv6_re という正規表現を公開しています。この正規表現は \"RFC 2373 - 2.2 Text "
+"Representation of Addresses\" で説明されている IPv6 アドレスにマッチするパターンで、この RFC "
+"に準拠していない文字列は拒否されるようになっています。\n"
+"\n"
+"文字列全体に対して判断させたい場合は、  '/^$IPv6_re$/' のように指定してください。"
 
 #. tumbleweed/perl-Role-HasMessage/summary
 #. leap/perl-Role-HasMessage/summary
 msgid "a thing with a message method"
-msgstr ""
+msgstr "message メソッドを持たせる役割"
 
 #. tumbleweed/perl-Role-HasMessage/description
 #. leap/perl-Role-HasMessage/description
@@ -27125,26 +27507,28 @@ msgid ""
 "summarizing the message or event represented by the object. It does _not_ "
 "provide any actual behavior."
 msgstr ""
+"これはもう 1 つの非常にシンプルな役割です。Role::HasMessage を含むクラスは、オブジェクトが表すメッセージやイベントに対して、"
+"その概要を表す文字列を返す 'message' メソッドを提供するようになります。実際の動作については、この役割はなにも提供していません。"
 
 #. tumbleweed/perl-Role-Identifiable/summary
 #. leap/perl-Role-Identifiable/summary
 msgid "Thing with a List of Tags"
-msgstr ""
+msgstr "タグの一覧を持たせる役割"
 
 #. tumbleweed/perl-Role-Identifiable/description
 #. leap/perl-Role-Identifiable/description
 msgid "a thing with a list of tags"
-msgstr ""
+msgstr "タグの一覧を持たせる役割です。"
 
 #. tumbleweed/perl-Role-Tiny/summary
 #. leap/perl-Role-Tiny/summary
 msgid "Roles. Like a nouvelle cuisine portion size slice of Moose"
-msgstr ""
+msgstr "Moose におけるヌーベルキュイジーヌのポーションサイズスライスのような役割"
 
 #. tumbleweed/perl-Role-Tiny/description
 #. leap/perl-Role-Tiny/description
 msgid "'Role::Tiny' is a minimalist role composition tool."
-msgstr ""
+msgstr "'Role::Tiny' は最小限の機能だけを持つ役割の組み合わせツールです。"
 
 #. tumbleweed/perl-Rose-Object/summary
 #. leap/perl-Rose-Object/summary
@@ -27156,7 +27540,7 @@ msgstr "シンプルなオブジェクトベースクラス"
 msgid ""
 "the Rose::Object manpage is a generic object base class. It provides very "
 "little functionality, but a healthy dose of convention."
-msgstr ""
+msgstr "Rose::Object は汎用的なオブジェクトのベースクラスです。非常に少ない機能だけが提供されたスリムな仕組みです。"
 
 #. tumbleweed/perl-Router-Simple/summary
 #. leap/perl-Router-Simple/summary
@@ -27173,6 +27557,12 @@ msgid ""
 "Router::Simple can match against PSGI '$env' directly, which means it's easy "
 "to use with PSGI supporting web frameworks."
 msgstr ""
+"Router::Simple はシンプルなルータクラスです。\n"
+"\n"
+"主な目的は、 Web アプリケーションに対するディスパッチャとして動作することです。\n"
+"\n"
+"Router::Simple は PSGI の '$env' に直接マッチし、 PSGI に対応する Web "
+"フレームワークで簡単に使用することができます。"
 
 #. tumbleweed/perl-SOAP-Lite/summary
 #. leap/perl-SOAP-Lite/summary
@@ -27194,7 +27584,7 @@ msgstr ""
 #. tumbleweed/perl-SQL-Abstract/summary
 #. leap/perl-SQL-Abstract/summary
 msgid "Generate SQL from Perl data structures"
-msgstr ""
+msgstr "Perl データ構造からの SQL の生成"
 
 #. tumbleweed/perl-SQL-Abstract/description
 #. leap/perl-SQL-Abstract/description
@@ -27235,21 +27625,52 @@ msgid ""
 "\n"
 "    my $sth = $dbh->prepare($stmt);     $sth->execute(@bind);"
 msgstr ""
+"このモジュールは DBIx::Abstract という素晴らしいモジュールにヒントを得ています。しかしながら、本当にやるべきことは SQL "
+"を生成することでありながら、ステートメントハンドルの完璧な制御や DBI "
+"インターフェイスの使用なども行なわなければならない、ということに気が付いてしまいました。そのため、抽象的な SQL "
+"生成モジュールが必要であると考え、これを作成したものです。\n"
+"\n"
+"DBIx::Abstract で使用されている考え方をベースにしながら、特に WHERE 句を使用する場合の重要な変更が加えられています。 Perl "
+"のデータ構造から SQL を簡単に (かつ直感的に) 生成しやすくするため、考え方を変えて対応しています。このモジュールにおけるベースとなる考え方は、提供"
+"したデータ構造をベースにして、意図したとおりの動作を行なわせる、ということです。これの大きな利点としては、データを変更してもコードを変更する必要がなく、こ"
+"のモジュールが検出したとおりに動作させることができるという点にあります。\n"
+"\n"
+"このモジュールを始めるにあたっては、まず SQL INSERT がわかりやすいでしょう。 'キー = 値' "
+"の対をハッシュにして指定するだけで実現できます:\n"
+"\n"
+"    my %data = (         name => 'Jimbo Bobson',         phone => '123-456-"
+"7890',         address => '42 Sister Lane',         city => 'St. "
+"Louis',         state => 'Louisiana',     );\n"
+"\n"
+"上記で作成したハッシュから、 SQL は下記のようにして生成することができます:\n"
+"\n"
+"    my($stmt, @bind) = $sql->insert('people', \\%data);\n"
+"\n"
+"生成される SQL は下記のようになります:\n"
+"\n"
+"    $stmt = \"INSERT INTO people                     (address, city, name, "
+"phone, state)                     VALUES (?, ?, ?, ?, ?)\";     @bind = ('42 "
+"Sister Lane', 'St. Louis', 'Jimbo Bobson',              '123-456-7890', "
+"'Louisiana');\n"
+"\n"
+"生成された SQL は DBI コードに直接渡すことができます:\n"
+"\n"
+"    my $sth = $dbh->prepare($stmt);     $sth->execute(@bind);"
 
 #. tumbleweed/perl-SQL-ReservedWords/summary
 #. leap/perl-SQL-ReservedWords/summary
 msgid "Reserved SQL words by ANSI/ISO"
-msgstr ""
+msgstr "ANSI/ISO における SQL の予約語"
 
 #. tumbleweed/perl-SQL-ReservedWords/description
 #. leap/perl-SQL-ReservedWords/description
 msgid "Determine if words are reserved by ANSI/ISO SQL standard."
-msgstr ""
+msgstr "ANSI/ISO SQL 標準で予約されている単語かどうかを判別します。"
 
 #. tumbleweed/perl-SQL-SplitStatement/summary
 #. leap/perl-SQL-SplitStatement/summary
 msgid "Split any SQL code into atomic statements"
-msgstr ""
+msgstr "SQL コードを複数のアトミック操作に分解するモジュール"
 
 #. tumbleweed/perl-SQL-SplitStatement/description
 #. leap/perl-SQL-SplitStatement/description
@@ -27283,6 +27704,26 @@ msgid ""
 "(optionally) offers automatic transactions support, so that you'll have the "
 "_all-or-nothing_ behavior you would probably want."
 msgstr ""
+"このモジュールは、非標準の拡張 (詳しくは /SUPPORTED DBMS をお読みください) を含む任意の SQL "
+"コードを、複数のアトミック操作に分解することもできるモジュールです。\n"
+"\n"
+"SQL コードを分解するロジックは、 'split' や ';' (セミコロン) 文字よりはより洗練された仕組みです。まず、"
+"様々な異なるステートメント区切り文字を認識します (一覧については下記をお読みください) "
+"。このほか、識別子や値、コメントなどの中にある前記トークンの存在を処理することもできますし、 'BEGIN ... END' ブロック "
+"(入れ子になったものを含む) や _ドルで括られた_ 文字列や MySQL の独自の 'DELIMITER' "
+"、そしてプロシージャ系のコードなども処理することができます。詳しい例は /SYNOPSIS をお読みください。\n"
+"\n"
+"ただし、このモジュールは検証型のパーサではないことに注意してください (技術的に言うと、状況依存のトークナイザです) 。現在進行中の _経験則_ "
+"アプローチとして作成されている仕組みで、テストケースによって徐々に様々な仕組みを対応しています。言い換えると、 /LIMITATIONS "
+"に示されているものを除いて、 (作者にとって) このモジュールの現在のリリースでは、正しく分解できない既知の SQL "
+"コードは存在していないことになります。\n"
+"\n"
+"配布物に同梱されているテストスイート (有名な _Sakila_ や _Pagila_ のようなサンプル DB スキーマタを含みます。詳しくは /"
+"SHOWCASE をご覧ください) では、このモジュールの機能に対する考え方が示されています。\n"
+"\n"
+"お使いのアトミックなステートメントを DBMS に与える場合は、 DBIx::MultiStatementDo "
+"を代わりにお使いいただくことをお勧めします。こちらはこのモジュールを利用して (必要であれば) 自動的にトランザクションにも対応し、 _all-or-"
+"nothing_ (すべてが成功するか、もしくはすべてが失敗するか) の動作を行なうことができます。"
 
 #. tumbleweed/perl-SQL-Statement/summary
 #. leap/perl-SQL-Statement/summary
@@ -27331,7 +27772,7 @@ msgstr ""
 #. tumbleweed/perl-SQL-Tokenizer/summary
 #. leap/perl-SQL-Tokenizer/summary
 msgid "A simple SQL tokenizer"
-msgstr ""
+msgstr "シンプルな SQL トークン化"
 
 #. tumbleweed/perl-SQL-Tokenizer/description
 #. leap/perl-SQL-Tokenizer/description
@@ -27351,11 +27792,24 @@ msgid ""
 " INSERT INTO log (application, message)  VALUES ('myapp', 'Hey, this is a "
 "''single quoted string''!')"
 msgstr ""
+"SQL::Tokenizer は SQL のクエリに対するシンプルなトークナイザです。パーサでもクエリの検証器でもないことに注意してください。正しい "
+"SQL のクエリから、正しいトークンを作成するだけです。\n"
+"\n"
+"このモジュールは、下記のようなコメント付きの SQL にも対応しています:\n"
+"\n"
+" -- This query is used to insert a message into  -- logs table  INSERT INTO "
+"log (application, message) VALUES (?, ?)\n"
+"\n"
+"このほか '''', '\"\"', '\\'' などのエスケープ処理にも対応していますので、下記のようなクエリを処理しようとすると、問題が発生します:"
+"\n"
+"\n"
+" INSERT INTO log (application, message)  VALUES ('myapp', 'Hey, this is a "
+"''single quoted string''!')"
 
 #. tumbleweed/perl-SQL-Translator/summary
 #. leap/perl-SQL-Translator/summary
 msgid "Manipulate structured data definitions (SQL and more)"
-msgstr ""
+msgstr "構造化されたデータ定義の操作 (SQL 等)"
 
 #. tumbleweed/perl-SQL-Translator/description
 #. leap/perl-SQL-Translator/description
@@ -27380,7 +27834,7 @@ msgstr ""
 #. tumbleweed/perl-SUPER/summary
 #. leap/perl-SUPER/summary
 msgid "Control Superclass Method Dispatch"
-msgstr ""
+msgstr "スーパークラスのメソッド実行の制御"
 
 #. tumbleweed/perl-SUPER/description
 #. leap/perl-SUPER/description
@@ -27493,7 +27947,7 @@ msgstr ""
 #. tumbleweed/perl-Selenium-Remote-Driver/summary
 #. leap/perl-Selenium-Remote-Driver/summary
 msgid "Perl Client for Selenium Remote Driver"
-msgstr ""
+msgstr "Selenium Remote Driver 向け Perl クライアント"
 
 #. tumbleweed/perl-Selenium-Remote-Driver/description
 #. leap/perl-Selenium-Remote-Driver/description
@@ -27545,24 +27999,24 @@ msgstr ""
 #. leap/perl-Snowball-Norwegian/summary
 #. leap/perl-Snowball-Norwegian/description
 msgid "Porters stemming algorithm for norwegian."
-msgstr ""
+msgstr "ノルウェー語向け Porters stemming algorithm"
 
 #. tumbleweed/perl-Snowball-Swedish/summary
 #. tumbleweed/perl-Snowball-Swedish/description
 #. leap/perl-Snowball-Swedish/summary
 #. leap/perl-Snowball-Swedish/description
 msgid "Porters stemming algorithm for swedish."
-msgstr ""
+msgstr "スウェーデン語向け Porters stemming algorithm"
 
 #. tumbleweed/perl-Software-License/summary
 #. leap/perl-Software-License/summary
 msgid "Packages That Provide Templated Software Licenses"
-msgstr ""
+msgstr "ソフトウエアライセンスのひな型を提供するパッケージ"
 
 #. tumbleweed/perl-Software-License/description
 #. leap/perl-Software-License/description
 msgid "packages that provide templated software licenses"
-msgstr ""
+msgstr "ソフトウエアライセンスのひな型を提供するパッケージ"
 
 #. tumbleweed/perl-Sort-Naturally/summary
 #. leap/perl-Sort-Naturally/summary
@@ -27672,7 +28126,7 @@ msgstr ""
 #. tumbleweed/perl-Spiffy/summary
 #. leap/perl-Spiffy/summary
 msgid "Spiffy Perl Interface Framework For You"
-msgstr ""
+msgstr "Spiffy Perl インターフェイスフレームワーク"
 
 #. tumbleweed/perl-Spiffy/description
 #. leap/perl-Spiffy/description
@@ -30245,9 +30699,8 @@ msgstr ""
 
 #. tumbleweed/perl-Test-Unit/summary
 #. leap/perl-Test-Unit/summary
-#, fuzzy
 msgid "The PerlUnit testing framework"
-msgstr "NUnit テストフレームワーク"
+msgstr "PerlUnit テストフレームワーク"
 
 #. tumbleweed/perl-Test-Unit/description
 #. leap/perl-Test-Unit/description
@@ -30396,9 +30849,8 @@ msgstr ""
 
 #. tumbleweed/perl-Test-YAML/summary
 #. leap/perl-Test-YAML/summary
-#, fuzzy
 msgid "Testing Module for YAML Implementations"
-msgstr "初期設定管理"
+msgstr "YAML 実装のテストモジュール"
 
 #. tumbleweed/perl-Test-YAML/description
 #. leap/perl-Test-YAML/description
@@ -30444,9 +30896,8 @@ msgstr ""
 
 #. tumbleweed/perl-Text-Brew/summary
 #. leap/perl-Text-Brew/summary
-#, fuzzy
 msgid "An implementation of the Brew edit distance"
-msgstr "SCGI プロトコルの Python 実装"
+msgstr "Brew edit distane の実装"
 
 #. tumbleweed/perl-Text-Brew/description
 #. leap/perl-Text-Brew/description
@@ -30603,9 +31054,8 @@ msgstr ""
 #. tumbleweed/perl-Text-German/description
 #. leap/perl-Text-German/summary
 #. leap/perl-Text-German/description
-#, fuzzy
 msgid "Text::German Perl module"
-msgstr "Bit::Vector Perl モジュール"
+msgstr "Text::German Perl モジュール"
 
 #. tumbleweed/perl-Text-Glob/summary
 msgid "Match Globbing Patterns Against Text"
@@ -30870,9 +31320,8 @@ msgstr ""
 
 #. tumbleweed/perl-Text-WrapI18N/summary
 #. leap/perl-Text-WrapI18N/summary
-#, fuzzy
 msgid "Line Wrapping Module"
-msgstr "汎用設定モジュール"
+msgstr "行折り返しモジュール"
 
 #. tumbleweed/perl-Text-WrapI18N/description
 #. leap/perl-Text-WrapI18N/description
@@ -34515,7 +34964,7 @@ msgstr ""
 
 #. leap/perl-Mojolicious-Plugin-Bootstrap3/summary
 msgid "Mojolicious + http://getbootstrap.com/"
-msgstr ""
+msgstr "Mojolicious + http://getbootstrap.com/"
 
 #. leap/perl-Mojolicious-Plugin-Bootstrap3/description
 msgid ""
@@ -34548,9 +34997,8 @@ msgid ""
 msgstr ""
 
 #. leap/perl-MooseX-Role-Parameterized/summary
-#, fuzzy
 msgid "Roles with Composition Parameters"
-msgstr "メソッド／関数のパラメータを確認する仕組み"
+msgstr "組成パラメータのある役割"
 
 #. leap/perl-MooseX-Role-Parameterized/description
 msgid ""
@@ -34934,9 +35382,8 @@ msgstr ""
 "-----      Adam Kennedy <adamk@cpan.org>"
 
 #. leap/perl-Test-Simple/summary
-#, fuzzy
 msgid "Basic utilities for writing tests."
-msgstr "デスクトップファイルの操作ユーティリティ"
+msgstr "テストを作成するための基本ユーティリティ"
 
 #. leap/perl-Test-Simple/description
 msgid ""
@@ -35706,9 +36153,8 @@ msgid "Tools for working with paths and file specs across platforms"
 msgstr ""
 
 #. leap/perl-Unicode-Collate/summary
-#, fuzzy
 msgid "Unicode Collation Algorithm"
-msgstr "UPnP 仕様の Python 実装"
+msgstr "Unicode 照合アルゴリズム"
 
 #. leap/perl-Unicode-Collate/description
 msgid ""
@@ -35908,7 +36354,7 @@ msgstr ""
 
 #. leap/perl-autovivification/summary
 msgid "Lexically disable autovivification."
-msgstr ""
+msgstr "autovivification を文法から無効化するモジュール"
 
 #. leap/perl-gettext/summary
 msgid "Message handling functions"
