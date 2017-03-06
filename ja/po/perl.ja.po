@@ -27830,6 +27830,17 @@ msgid ""
 "parts of SQL are handled (CREATE, ALTER), not the manipulation of data "
 "(INSERT, UPDATE, DELETE)."
 msgstr ""
+"このドキュメンテーションは SQL::Translator 向けの API "
+"を説明しているものです。このモジュールやスクリプトの使用方法に関する一般的な説明は、 SQL::Translator::Manual をお読みください。"
+"\n"
+"\n"
+"SQL::Translator は Perl のモジュール集で、メーカー固有の SQL テーブルの定義を他のメーカーのものや ER 図、"
+"ドキュメンテーション (POD および HTML) 、 XML や Class::DBI クラスなどに変換することのできるモジュール集です。 SQL::"
+"Translator の主なターゲットは SQL ですが、他の構造型データ形式、たとえば Excel "
+"の表計算や任意の区切り文字で書かれたテキストなどに対応したパーサも存在しています。コードからパーサ (処理器) とプロデューサ (生成器) をそれぞれオブ"
+"ジェクトモデルに分解していることで、任意のパーサとプロデューサを組み合わせることができるほか、独自のパーサやプロデューサを作成したり、処理されたデータを内"
+"蔵のオブジェクトモデル経由で操作したりすることもできます。現時点では SQL の定義部分 (CREATE, ALTER) のみを処理することができ、"
+"データの操作 (INSERT, UPDATE, DELETE) には対応していません。"
 
 #. tumbleweed/perl-SUPER/summary
 #. leap/perl-SUPER/summary
@@ -27867,6 +27878,28 @@ msgid ""
 "\n"
 "    $self->SUPER( qw( other arguments here ) );"
 msgstr ""
+"クラスをサブクラス化した場合、時としてスーパークラスに対して制御を発信したいと思うことがあります。もちろんこれは条件にもよりますし、一時的なものでもありま"
+"す。 Perl におけるスーパークラスの呼び出しは非常に醜く扱いにくいものです:\n"
+"\n"
+"    $self->SUPER::method(@_);\n"
+"\n"
+"Ruby では下記のように非常に分かりやすく記述します:\n"
+"\n"
+"    super;\n"
+"\n"
+"また、通常の Perl の再発信機構を利用すると、コンパイルした時点でのメソッドを含むクラスの親にのみ発信されます。このような仕様では、 mixin "
+"や役割を使用する環境ではうまく動作しません。\n"
+"\n"
+"このモジュールは、このような動作に対して非常に分かりやすい記述を提供します。このモジュールは汎用メソッド 'super' "
+"を提供するもので、これによって自分自身の親を呼び出します。これにより、スタックフレームを無駄使いしたくない場合は、下記のように記述できるようになります:"
+"\n"
+"\n"
+"    goto &{$_[0]->super('my_method')};\n"
+"\n"
+"役割や mixin を利用している場合、もしくは他のパッケージからのメソッドの引き込みを行ない、スーパークラスのメソッドを発信する必要がある場合、もしくは"
+"スーパーメソッドで異なるパラメータを指定したい場合は、 'SUPER()' メソッドを使用します:\n"
+"\n"
+"    $self->SUPER( qw( other arguments here ) );"
 
 #. tumbleweed/perl-SVG/summary
 #. leap/perl-SVG/summary
@@ -27882,11 +27915,15 @@ msgid ""
 "the DOM object, create and access javascript, and generate SMIL animation "
 "content."
 msgstr ""
+"SVG モジュールは純粋に Perl だけで作られたモジュールで、 SVG (Scalable Vector Graphics) 画像の DOM "
+"表記を含む、入れ子になったデータ構造を作成することができます。 SVG を利用すると SVG のオブジェクトを生成できるほか、他の SVG "
+"インスタンスを組み込んだり、 DOM のオブジェクトにアクセスしたり、 JavaScript を作成またはアクセスしたり、 SMIL "
+"アニメーションコンテンツを生成したりすることもできます。"
 
 #. tumbleweed/perl-Safe-Isa/summary
 #. leap/perl-Safe-Isa/summary
 msgid "Call isa, can, does and DOES safely on things that may not be objects"
-msgstr ""
+msgstr "オブジェクトではないかもしれないものに対して、 isa, can, does を安全に呼び出すモジュール"
 
 #. tumbleweed/perl-Safe-Isa/description
 #. leap/perl-Safe-Isa/description
@@ -27920,6 +27957,29 @@ msgid ""
 "to check for something you might be able to call methods on if you want to "
 "do that."
 msgstr ""
+"今まで下記のような記述をどれだけ書いてきたでしょうか？:\n"
+"\n"
+"  if ($obj->isa('Something')) {\n"
+"\n"
+"上記のように記述しても、すぐに下記のようなわかりにくいコードに変える必要に迫られることもあります:\n"
+"\n"
+"  if (Scalar::Util::blessed($obj) and $obj->isa('Something')) {\n"
+"\n"
+"上記のようなコードを改善するために、このモジュールが存在します。\n"
+"\n"
+"Perl ではメソッドの呼び出しとして利用する際、 -> の演算子でサブルーチンの参照やメソッド名を指定することができます。また、さぶるーちんは実際にはオ"
+"ブジェクトでなくても構わない仕組みになっています。そのため、 isa "
+"の安全な版を作成して、オブジェクトとして使用された場合にのみメソッドを呼び出そうとするようなサブルーチン参照を使用することができるようになります:\n"
+"\n"
+"  my $isa_Foo = $maybe_an_object->$_call_if_object(isa => 'Foo');\n"
+"\n"
+"上記は下記と同じ意味になります:\n"
+"\n"
+"  my $isa_Foo = do {     if (Scalar::Util::blessed($maybe_an_object)) {"
+"       $maybe_an_object->isa('Foo');     } else {       undef;     }   };\n"
+"\n"
+"ただし、クラス名に対しては様々なものが利用できてしまうことから、クラス名に関しては処理しようとしないことに注意してください。 Module::"
+"Runtime には 'is_module_name' という関数がありますので、こちらを利用してクラスかどうかを判断してください。"
 
 #. tumbleweed/perl-Scope-Guard/summary
 #. leap/perl-Scope-Guard/summary
@@ -27965,6 +28025,15 @@ msgid ""
 "supported browser. To use this module, you need to have already downloaded "
 "and started the Selenium Server (Selenium Server is a Java application)."
 msgstr ""
+"Selenium は自動化された Web アプリケーションの UI テストを、任意のプログラミング言語で作成し、任意の HTTP Web "
+"サイトに対して任意の主な JavaScript 対応のブラウザで実施することのできる、テストツールです。このモジュールは Selenium が提供する "
+"Remote ドライバ向けのクライアント実装です。他の言語に対するバインディングは、下記をご覧ください:\n"
+"\n"
+"http://code.google.com/p/selenium/\n"
+"\n"
+"このモジュールは HTTP を利用してサーバにコマンドを送信します。このモジュールを Selenium "
+"サーバとともに使用すると、任意の対応ブラウザを自動的に制御することができます。このモジュールを使用するには、 Selenium "
+"サーバをダウンロードおよび開始しておく必要があります (Selenium サーバは Java アプリケーションです) 。"
 
 #. tumbleweed/perl-Set-Scalar/summary
 #. leap/perl-Set-Scalar/summary
@@ -27979,7 +28048,7 @@ msgstr "基本的なセット操作"
 #. tumbleweed/perl-Smart-Comments/summary
 #. leap/perl-Smart-Comments/summary
 msgid "Comments that do more than just sit there"
-msgstr ""
+msgstr "単なるコメント以上の機能を提供するモジュール"
 
 #. tumbleweed/perl-Smart-Comments/description
 #. leap/perl-Smart-Comments/description
@@ -27993,6 +28062,12 @@ msgid ""
 "regular comments. Leaving smart comments in your code is smart because if "
 "you needed them once, you'll almost certainly need them again later."
 msgstr ""
+"Smart::Comment は、デバッグを容易にして、プログラム内のコードを追いかけるための適切な情報を提供するものです。変数の値や、ループの状況、"
+"特定のアサーションが true であるかどうかなどを報告することができます。\n"
+"\n"
+"このモジュールの最大の利点は、デバッグが終わってもデバッグ用のコードを削除する必要が無いということです。単に 'use Smart::Comments' "
+"行をコメントアウトするだけで、通常のコメントと同様に扱われるようになります。 Smart::Comment "
+"対応のコードを残しておくことで、後からデバッグをやり直す必要が生じた場合でも、コードを書き直す必要がなくなります。"
 
 #. tumbleweed/perl-Snowball-Norwegian/summary
 #. tumbleweed/perl-Snowball-Norwegian/description
@@ -28021,7 +28096,7 @@ msgstr "ソフトウエアライセンスのひな型を提供するパッケー
 #. tumbleweed/perl-Sort-Naturally/summary
 #. leap/perl-Sort-Naturally/summary
 msgid "sort lexically, but sort numeral parts numerically"
-msgstr ""
+msgstr "字句順に並べ替えるが、数値部分は数値順に並べ替えるモジュール"
 
 #. tumbleweed/perl-Sort-Naturally/description
 #. leap/perl-Sort-Naturally/description
@@ -28078,6 +28153,49 @@ msgid ""
 "\"20.000 lieues sous les mers\"), consider stripping them before feeding   "
 "them to 'nsort' or 'ncmp'."
 msgstr ""
+"このモジュールは 'nsort', 'ncmp' という 2 つの関数を公開します。これらは \"自然順ソート\" "
+"アルゴリズムの考え方を実装する際に使用されているものです。自然順ソートでは、数値は数値順に比較されますが、他の文字は字句順で比較されます。\n"
+"\n"
+"このモジュールでは、自然順を下記の方式で並べるものであると定義しています:\n"
+"\n"
+"* *\n"
+"\n"
+"  非数値の文字は大文字と小文字を区別せずに字句順に並べます: たとえば \"Foo\" は \"fish\" と \"fowl\" "
+"の間に来るものとします。\n"
+"\n"
+"* *\n"
+"\n"
+"  数値は数値順に並べます: たとえば \"100\" は \"20\" の後に来るものとします。\n"
+"\n"
+"* *\n"
+"\n"
+"  \\W の副文字列 (文字でも数字でもないもの) は無視されます。\n"
+"\n"
+"* *\n"
+"\n"
+"  \\w, \\d, \\D, \\W はいずれもロケールに依存するものとします: Sort::Naturally では 'use locale' "
+"ステートメントを使用しています。\n"
+"\n"
+"* *\n"
+"\n"
+"  2 つの文字列を比較する際、一方の場所内にある数値が他方の場所にある数値よりも小さい場合、非数値のものが常に先に来るようになります。これは数値があるべ"
+"きはずの場所に、 -1 の数値があるものとしてみなすことで処理しています。例えば下記のようになります:\n"
+"\n"
+"    foo       =>  \"foo\",  -1     foobar    =>  \"foo\",  -1,  \"bar\"     "
+"foo13     =>  \"foo\",  13,     foo13xyz  =>  \"foo\",  13,  \"xyz\"\n"
+"\n"
+"  このようなルールから、 \"foo\" は \"foo13\" よりも前に来ますし、 \"foobar\" よりも前に来ることになります。\n"
+"\n"
+"* *\n"
+"\n"
+"  文字列の開始位置は例外的に扱います: \\W (文字、数字) 以外の文字が最初に来ても、それらは無視されます。\n"
+"\n"
+"* *\n"
+"\n"
+"  また、 \"数値\" は m/\\d+/ "
+"の正規表現に該当するものをターゲットにします。そのため、各種の科学記法やカンマ、少数などは無視されます。ただし、 1000 単位の区切り (例: \""
+"20,000 Leagues Under The Sea\" や \"20.000 lieues sous les mers\") については、 "
+"'nsort' や 'nmap' に渡される前に削除が行なわれます。"
 
 #. tumbleweed/perl-Sort-Versions/summary
 #. leap/perl-Sort-Versions/summary
@@ -28122,6 +28240,30 @@ msgid ""
 "thing. If you are making up version numbers, the style with (possibly) more "
 "than one dot is the style to use."
 msgstr ""
+"Sort::Versions は数値と文字が混在する 'バージョン番号' のような文字列を簡単に並べ替えることのできるモジュールです。バージョン番号は数多"
+"くの共有ライブラリやリビジョンコントロールシステムで使われているもので、特に共有ライブラリを扱う際には便利なモジュールになっています。このほか、様々な幅の"
+"数値フィールドが散在するテキストなどに対しても、利用することができます。このような仕組みを備えたアプリケーションはほかにはありません。\n"
+"\n"
+"まずは下記の例をご覧ください。アルゴリズムの動作が簡単にわかるようになっています:\n"
+"\n"
+"  1.1   <  1.2   1.1a  <  1.2   1.1   <  1.1.1   1.1   <  1.1a   1.1.a <  "
+"1.1a   1     <  a   a     <  b   1     <  2   1.1-3 <  1.1-4   1.1-5 <  1.1."
+"6\n"
+"\n"
+"より正確に (包括的ではありませんが) 言うと、文字列はまずピリオドやハイフンで区切られた、複数のサブユニットから構成されているものとして扱います。各サブ"
+"ユニットには任意の桁数の数値や文字が含まれます。比較に際して、双方が数値であれば数値としての比較が行なわれ、それ以外の場合は ASCII 順序で比較します"
+"。すべての比較が等しい結果だった場合は、サブユニット数が多いほうが大きいものとみなされます。また、ハイフンよりもピリオドのほうが、より緊密に数値を区切って"
+"いるものとして扱います。\n"
+"\n"
+"パッケージによっては異なるスタイルのバージョン番号体系、具体的には単なる小数点でバージョンを表すものがあります。 Sort::Versions "
+"ではこの方式には限定的な対応しかしていません: 両方のサブユニットを数値として比較する際、いずれか片方のサブユニットが 0 "
+"で始まる場合、比較は小数点の後の数値として扱います。たとえば下記のようになります:\n"
+"\n"
+"  0002  <  1   1.06  <  1.5\n"
+"\n"
+"これは常に動作するものではありません。なぜなら、実数スタイルのバージョン番号は、常に 0 で始まるとは限らないためです。 Sort::Versions "
+"では、どちらのスタイルを使用しているのかを指定する方法はありません。ただし、多くの場合において正しく動作します。なお、バージョン番号を作成する際には、 "
+"1 つ以上のドットが含まれるスタイルを使用します。"
 
 #. tumbleweed/perl-Spiffy/summary
 #. leap/perl-Spiffy/summary
@@ -28229,11 +28371,88 @@ msgid ""
 "\n"
 "That's Spiffy!"
 msgstr ""
+"\"Class::Spiffy\" は、 Perl でオブジェクト指向 (OO) のプログラミングを行なうためのフレームワークと方法です。 Class::"
+"Spiffy は Exporter.pm, base.pm, mixin.pm, SUPER.pm の各部品を組み合わせて、 1 "
+"つの魔法のような基礎クラスとして組み立てています。既存の Perl オブジェクト指向に存在するバグの卵や不便なところをきれいに直し、素直で (いつかは) "
+"標準的な方法になるよう目指しています。\n"
+"\n"
+"Spiffy では Python や Ruby, Java, Perl 6 "
+"などのオブジェクト指向言語からのアイディアを借りているほか、いくつかのトリックも追加しています。\n"
+"\n"
+"CPAN をご覧いただくと、多数の OO 関連のモジュールが存在しています。新しいプロジェクトを始めるにあたっては、最も適切だと思われるモジュールを集め、"
+"それらのモジュールを利用して独自のクラスを作成します。 Spiffy はこれらとは異なり、 1 "
+"つのモジュールで必要なモジュールのほぼすべてをまかなう仕組みで、作成するクラスでもこれらのモジュールを利用すれば必要な作業ができるようになっています。"
+"プロジェクト内のベースクラスで Spiffy.pm を基本クラスに設定すると、 Spiffy "
+"はサブクラスに対しても必要な処理すべてを行なうようになっています。それはまるで、 Spiffy を使っているのを忘れてしまうほどです。\n"
+"\n"
+"Spiffy と他の Perl オブジェクト指向のベースクラスとの違いで顕著なものとしては、拡張性があげられます。 Spiffy "
+"のサブクラスを作成すると、ご自身で公開するように指定したものに加えて、 Spiffy "
+"が公開するすべてのものがサブクラスに対しても公開されるようになります。このサブクラスからさらなるサブクラスを作成した場合にもこれは動作します。"
+"この考え方は \"エクスポートの継承\" と称しています。また、このモジュールでは Exporter.pm の仕様文法を使用しています。\n"
+"\n"
+"Spiffy や Spiffy のサブクラスをお使いのクラスのベースとしたい場合は、 'use' コマンドで '-base' パラメータを指定します:\n"
+"\n"
+"    use MySpiffyBaseModule -base;\n"
+"\n"
+"なお、従来のバージョンにおける使用方法 'use base 'MySpiffyBaseModule';' "
+"にも対応しています。これは上記とまったく同じ動作になりますが、唯一違いがあるとすれば Spiffy.pm "
+"をあらかじめ読み込んでおかなければならない、という点です。これが Spiffy が base.pm をその場で再結線する魔法のような仕組みです。\n"
+"\n"
+"Spiffy には Perl6 のような役割機能のほか、 Ruby のような mixin 機能もあります。これは 'base' のように使用するものです:"
+"\n"
+"\n"
+"    use mixin 'MySpiffyBaseModule';     use MySpiffyBaseModule -mixin;\n"
+"\n"
+"後者の指定は Spiffy のサブクラス内でのみ利用できる仕組みです。前者の指定は、 Spiffy "
+"が読み込まれている限り、すべての場合において動作します。\n"
+"\n"
+"mixin させるメソッドを限定したい場合は、役割を使用します (ヒント: Explorer リストのように動作する仕組みです):\n"
+"\n"
+"    use MySpiffyBaseModule -mixin => qw(:basics x y !foo);\n"
+"\n"
+"オブジェクト指向の Perl では、ほぼすべてのサブルーチンはメソッドとなります。各メソッドでは、最初のパラメータとしてオブジェクトを指定します。具体的に"
+"は、各サブルーチンが下記のような行で始まることと同じ意味になります:\n"
+"\n"
+"    my $self = shift;\n"
+"\n"
+"Spiffy ではシンプルな任意指定のフィルタ機構が用意され、必要に応じて行を挿入することができるようになっています。これによってよりクリーンなコードを作"
+"成することができます。たとえば 1 メソッド当たり平均で 10 行のコードがあるとすると、おおよそ 10% "
+"程度にもあります。このオプションを有効にするには、 '-base' オプションの代わりに '- Base' オプションを指定するか、もしくは '-"
+"selfless' オプションを追加します。ソースフィルタリングによって手間がかかってしまうような場合は、この機能は使わないことをお勧めします。個人的には"
+"非常にクリーンでメンテナンス性の高いコードを作成できるものと考えております。\n"
+"\n"
+"Spiffy の便利な機能には、ほかにも 'field' や 'const' "
+"の関数があります。これらはクラスの属性を定義するための仕組みで、これらから自動的にアクセサを作成することができます。 2 つの関数の違いはシンプルで、 "
+"'const' のほうが属性を変更できないものに対して使用するものです。\n"
+"\n"
+"OO プログラミングにおいて興味深い点の 1 つに、親クラスの同メソッドを呼び出すことのできる機能があります。これはスーパーメソッドとも呼ばれる仕組みで、"
+" Perl では下記のような非常に醜いコードになってしまいます:\n"
+"\n"
+"    sub cleanup {         my $self = shift;         $self->scrub;         "
+"$self->SUPER::cleanup(@_);     }\n"
+"\n"
+"Spiffy では非常に簡単にスーパーメソッドを呼び出すことができるようになっています。これは 'super' "
+"関数と呼ばれるもので、パラメータは自動的に処理されるため、パラメータを指定する必要もありません。下記は上記を Spiffy で書き換えた場合の例です:\n"
+"\n"
+"    sub cleanup {         $self->scrub;         super;     }\n"
+"\n"
+"Spiffy には 'parse_arguments' "
+"と呼ばれるパラメータ処理用の特殊メソッドも用意されています。これは自分自身のパラメータ処理にも使用されているもので、どのパラメータが boolean "
+"(シングルトン) で、どれが対になっているものなのかを 'boolean_arguments', 'paired_arguments' という 2 "
+"つの特殊なメソッドで指定できるものです。パラメータを処理すると、匿名ハッシュとして boolean "
+"と対が返され、そのあとにマッチしなかったパラメータのリストが続きます。\n"
+"\n"
+"最後に、 Spiffy では 'WWW', 'XXX', 'YYY', 'ZZZ' というデバッグ用の関数も用意されています。それぞれはパラメータの "
+"YAML ダンプを生成するもので、 WWW では警告、 XXX では die で終了、 'YYY' はメッセージだけを出力、 ZZZ は confess "
+"で出力するようになっています。 YAML がお使いの環境に適合しない場合は、 '-dumper' オプションを指定することで、すべてのダンプを "
+"Data::Dumper 形式にすることもできます。\n"
+"\n"
+"これが Spiffy です。"
 
 #. tumbleweed/perl-Spreadsheet-ParseExcel/summary
 #. leap/perl-Spreadsheet-ParseExcel/summary
 msgid "Read information from an Excel file."
-msgstr ""
+msgstr "Excel ファイルからの情報の読み込み"
 
 #. tumbleweed/perl-Spreadsheet-ParseExcel/description
 #. leap/perl-Spreadsheet-ParseExcel/description
@@ -28244,11 +28463,16 @@ msgid ""
 "The module cannot read files in the Excel 2007 Open XML XLSX format. See the "
 "the Spreadsheet::XLSX manpage module instead."
 msgstr ""
+"Spreadsheet::ParseExcel モジュールは、 Excel 95-2003 "
+"のバイナリファイルから情報を取得するために使用するモジュールです。\n"
+"\n"
+"このモジュールは Excel 2007 の Open XML XLSX 形式のファイルを読み込むことはできません。このようなファイルについては、 "
+"Spreadsheet::XLSX モジュールをお使いください。"
 
 #. tumbleweed/perl-Spreadsheet-Read/summary
 #. leap/perl-Spreadsheet-Read/summary
 msgid "Read the data from a spreadsheet"
-msgstr ""
+msgstr "表計算からのデータの読み込み"
 
 #. tumbleweed/perl-Spreadsheet-Read/description
 #. leap/perl-Spreadsheet-Read/description
@@ -28267,11 +28491,23 @@ msgid ""
 "\n"
 "For SquirrelCalc there is a very simplistic built-in parser"
 msgstr ""
+"Spreadsheet::Read は *任意の* 表計算データを透過的に読み込み、実際に処理した表計算モジュールに関わらず普遍的な書式で値を返します。"
+"\n"
+"\n"
+"OpenOffice ファイルの場合、このモジュールは Spreadsheet::ReadSXC を使用します。\n"
+"\n"
+"Microsoft Excel ファイルの場合、このモジュールは Spreadsheet::ParseExcel または Spreadsheet::"
+"XLSX を使用します。\n"
+"\n"
+"CSV ファイルの場合、このモジュールは Text::CSV_XS (0.29 もしくはそれ以降が必要、 0.73 もしくはそれ以降を推奨) または "
+"Text::CSV_PP (1.05 もしくはそれ以降が必要) を使用します。\n"
+"\n"
+"SquirrelCalc ファイルの場合、非常にシンプルな内蔵パーサを使用します。"
 
 #. tumbleweed/perl-Spreadsheet-ReadSXC/summary
 #. leap/perl-Spreadsheet-ReadSXC/summary
 msgid "Extract OpenOffice 1.x spreadsheet data"
-msgstr ""
+msgstr "OpenOffice 1.x の表計算データからの抽出"
 
 #. tumbleweed/perl-Spreadsheet-ReadSXC/description
 #. leap/perl-Spreadsheet-ReadSXC/description
@@ -28291,6 +28527,15 @@ msgid ""
 "function read_xml_string(). Both functions also take a reference to a hash "
 "of options as an optional second argument."
 msgstr ""
+"Spreadsheet::ReadSXC は OpenOffice 1.x の表計算ファイル (.sxc) "
+"からデータを取り出すことができるモジュールです。 read_sxc() という公開関数では、ファイル名とオプションの指定をパラメータとして取り、 2 "
+"次元の配列に対する参照のハッシュ参照を返します。ハッシュのキーは OpenOffice ワークブックにおけるワークシートの名前になります。 2 "
+"次元の配列は各ワークシート内の行と列を表します。ワークシートの順序についてはハッシュ内で保持されません。この場合は 'OrderBySheet' "
+"オプションを指定してください。\n"
+"\n"
+".sxc ファイルをご自身で展開したい場合は、 read_xml_file() 関数をお使いください。パラメータには content.xml "
+"のパスを指定します。 content.xml から XML の文字列を抽出している場合は、 read_xml_string() "
+"に対して渡すことで処理することもできます。いずれの関数も、 2 つめにはオプションを指定するためのハッシュ参照を指定することができます。"
 
 #. tumbleweed/perl-Spreadsheet-XLSX/summary
 #. leap/perl-Spreadsheet-XLSX/summary
@@ -28305,11 +28550,15 @@ msgid ""
 "quirks, but not all. It populates the classes from Spreadsheet::ParseExcel "
 "for interoperability; including Workbook, Worksheet, and Cell."
 msgstr ""
+"このモジュールは Excel 2007 (.xlsx) ファイル形式に対応した (素早くて汚い) Spreadsheet::ParseExcel "
+"の擬似版です。 Excel が持つ様々なスタイルなどの機能に対応していますが、すべての機能に対応しているというわけではありません。また、 "
+"Spreadsheet::ParseExcel からクラスを生成しているため、ワークブックやワークシート、セルなどの構造は Spreadsheet::"
+"ParseExcel と同じです。"
 
 #. tumbleweed/perl-Starman/summary
 #. leap/perl-Starman/summary
 msgid "High-performance preforking PSGI/Plack web server"
-msgstr ""
+msgstr "高性能な prefork 型 PSGI/Plack Web サーバ"
 
 #. tumbleweed/perl-Starman/description
 #. leap/perl-Starman/description
@@ -28361,11 +28610,52 @@ msgid ""
 "\n"
 "  This server does not support Win32."
 msgstr ""
+"Starman は PSGI perl web サーバで、下記のようなユニークな機能が提供されています:\n"
+"\n"
+"* 高性能\n"
+"\n"
+"  高速な XS/C HTTP ヘッダパーサを使用しています\n"
+"\n"
+"* prefork 型\n"
+"\n"
+"  高性能な UNIX サーバが行なっているのと同じ、ワーカスレッドを事前に fork する仕組みを備えています。 Starman "
+"では子プロセスが死んでしまった場合、それらのプロセスを自動的に終了させて再起動し、自動的にワーカプールに再投入する機能も備えています。\n"
+"\n"
+"* シグナル対応\n"
+"\n"
+"  'HUP' ではワーカに影響を与えずに再起動することができるほか、 'TTIN'/'TTOU' ではワーカプロセスの拡大と縮小、 'QUIT' "
+"ではワーカプロセスの処理終了を待って終了することができます。\n"
+"\n"
+"* スーパーデーモン対応\n"
+"\n"
+"  Server::Starter に対応し、ホットデプロイや再起動などを行なうことができます。\n"
+"\n"
+"* 複数インスタンスおよび UNIX ドメインソケット対応\n"
+"\n"
+"  UNIX ソケットを含む複数のインターフェイスに対してサービスを提供することができます。\n"
+"\n"
+"* 小さなメモリフットプリント\n"
+"\n"
+"  '--preload-app' "
+"コマンドラインオプションを指定してアプリケーションを事前読み込みさせると、コピーオンライト型に適したメモリ管理を行なうようになります。また、 "
+"Starman が必要とする最小メモリは 7MB で、子プロセス (ワーカ) は 3.0MB 未満で動作します。\n"
+"\n"
+"* PSGI 互換\n"
+"\n"
+"  任意の PSGI アプリケーションおよびフレームワークを動作させることができます。\n"
+"\n"
+"* HTTP/1.1 対応\n"
+"\n"
+"  チャンクリクエストおよびチャンクレスポンスに対応しているほか、キープアライブやパイプライン要求にも対応しています。\n"
+"\n"
+"* UNIX のみ対応\n"
+"\n"
+"  Win32 には対応していません。"
 
 #. tumbleweed/perl-Statistics-Descriptive/summary
 #. leap/perl-Statistics-Descriptive/summary
 msgid "Module of basic descriptive statistical functions"
-msgstr ""
+msgstr "基本的な記述統計関数のモジュール"
 
 #. tumbleweed/perl-Statistics-Descriptive/description
 #. leap/perl-Statistics-Descriptive/description
@@ -28386,11 +28676,22 @@ msgid ""
 "Many of the methods (both Sparse and Full) cache values so that subsequent "
 "calls with the same arguments are faster."
 msgstr ""
+"このモジュールは記述統計で使用される基本的な関数を提供するものです。このモジュールはオブジェクト指向の設計になっていて、 2 "
+"種類のデータストレージと計算オブジェクト (sparse, full) に対応しています。 sparse "
+"のメソッドでは、データは全く保存されず、いくつかの統計値のみが利用できます。 full "
+"のメソッドでは、データセット全体を保持することができるほか、追加の関数も提供されます。\n"
+"\n"
+"ゼロ除算エラーが発生するたびに、分母が '$Statistics::Descriptive::Tolerance' の値 (デフォルト: 0.0) "
+"より大きいかどうかをチェックします。この値を 1e-24 "
+"のように小さな正の値にすることで、非常に小さな分母の場合にエラーメッセージを表示させることもできます。\n"
+"\n"
+"多くのメソッド (sparse, full の両方) "
+"において、値はキャッシュされる仕組みになっています。そのため、同じパラメータを利用して呼び出しても、高速に動作します。"
 
 #. tumbleweed/perl-Stream-Buffered/summary
 #. leap/perl-Stream-Buffered/summary
 msgid "temporary buffer to save bytes"
-msgstr ""
+msgstr "バイト列を保存するための一時バッファ"
 
 #. tumbleweed/perl-Stream-Buffered/description
 #. leap/perl-Stream-Buffered/description
@@ -28400,17 +28701,20 @@ msgid ""
 "PerlIO and/or temporary file to save the buffer depending on the length of "
 "the size."
 msgstr ""
+"Stream::Buffered "
+"は任意の長さのバイト列を保存するためのバッファクラスで、その後シーク可能なファイルハンドルとしてバッファされた内容を読み込むことができます。 "
+"PerlIO と一時ファイルの一方または両方を利用してバッファを保存しています。どちらを利用するのかについては、バッファのサイズに依存して決まります。"
 
 #. tumbleweed/perl-String-CamelCase/summary
 #. tumbleweed/perl-String-CamelCase/description
 #. leap/perl-String-CamelCase/summary
 #. leap/perl-String-CamelCase/description
 msgid "camelcase, de-camelcase"
-msgstr ""
+msgstr "キャメルケース化とその解除"
 
 #. tumbleweed/perl-String-Errf/summary
 msgid "Simple Sprintf-Like Dialect"
-msgstr ""
+msgstr "sprintf のような書式整形"
 
 #. tumbleweed/perl-String-Errf/description
 msgid ""
@@ -28420,29 +28724,32 @@ msgid ""
 "Errf. The 'errf' subroutine is only available when imported. Calling String::"
 "Errf::errf will not do what you want."
 msgstr ""
+"String::Errf は 'errf' と呼ばれるシンプルな文字列整形関数を提供します。これは 'sprintf' に似た仕組みで、 String::"
+"Formatter および Sub::Exporter を利用して実装されています。これらのドキュメンテーションを利用することで、 String::"
+"Errf を理解したり拡張したりすることができるようになります。 'errf' サブルーチンはインポートしたときにのみ利用できます。 "
+"String::Errf::errf を呼び出しても期待通りの動作にはなりません。"
 
 #. tumbleweed/perl-String-Escape/summary
 #. leap/perl-String-Escape/summary
 msgid "Backslash escapes, quoted phrase, word elision, etc."
-msgstr ""
+msgstr "バックスラッシュのエスケープ／節のクォート／単語の削除など"
 
 #. tumbleweed/perl-String-Escape/description
 #. leap/perl-String-Escape/description
 msgid "sorry, no description found"
-msgstr ""
+msgstr "(説明なし)"
 
 #. tumbleweed/perl-String-Flogger/summary
 #. tumbleweed/perl-String-Flogger/description
 #. leap/perl-String-Flogger/summary
 #. leap/perl-String-Flogger/description
-#, fuzzy
 msgid "string munging for loggers"
-msgstr "mlterm 向け uim プラグイン"
+msgstr "ロガー向け文字列整形"
 
 #. tumbleweed/perl-String-Format/summary
 #. leap/perl-String-Format/summary
 msgid "Sprintf-like string formatting capabilities"
-msgstr ""
+msgstr "sprintf のような文字列整形機能"
 
 #. tumbleweed/perl-String-Format/description
 #. leap/perl-String-Format/description
@@ -28454,11 +28761,15 @@ msgid ""
 "directives (see <URL:http://www.mutt.org/doc/manual/manual-6."
 "html#index_format>)."
 msgstr ""
+"String::Format は printf のような任意のフォーマットシーケンスを作成することができる仕組みです。このモジュールは、問い合わせの結果な"
+"どを特定の方式で書式化する必要があるもの、例えば設定ファイルやレポートツールなどで最も便利な仕組みです。 mutt の index_format "
+"と関連するディレクティブにヒントを得て作られたものです (詳しくは "
+"<URL:http://www.mutt.org/doc/manual/manual-6.html#index_format> をお読みください) 。"
 
 #. tumbleweed/perl-String-Formatter/summary
 #. leap/perl-String-Formatter/summary
 msgid "build sprintf-like functions of your own"
-msgstr ""
+msgstr "sprintf のような独自関数の作成"
 
 #. tumbleweed/perl-String-Formatter/description
 #. leap/perl-String-Formatter/description
@@ -28504,30 +28815,62 @@ msgid ""
 "the String::Formatter::Cookbook manpage provides a number of recipes for "
 "ways to put String::Formatter to use."
 msgstr ""
+"String::Formatter は sprintf のような整形ルーチンを構築するためのツールです。名前付きの書式指定や位置依存の書式指定のほか、独自"
+"の変換や固定文字列の補間、シンプルな幅マッチング機能などが標準で用意されています。また、新しい種類の書式指定文字を作成するのも簡単に行なうことができます。"
+"多くの場合、 String::Formatter に内蔵されているオプションですべての要件に適合できるようになっています。\n"
+"\n"
+"通常は String::Formatter は sprintf のようなルーチン \"'stringf'\" "
+"をインポートする際に使用しますが、任意の名前を使用することができます。このルーチンは、文字列とそれに付随する入力を受け取って新しい文字列を返すことから、 "
+"sprintf のように動作します。\n"
+"\n"
+"  my $output = stringf \"Some %a format %s for you to %u.\\n"
+"\", { ... };\n"
+"\n"
+"このルーチンは stringf をインポートすることによって作成される String::Formatter オブジェクトのラッパーです。下記のコードでは、"
+" \"stringf\" の後のハッシュ参照の全体が String::Formatter のコンストラクタ ('new' メソッド) に渡されます。なお、"
+" '-as' キーとダッシュで始まる任意のキーが保存されます:\n"
+"\n"
+"  use String::Formatter     stringf => {       -as => 'fmt_time',       "
+"codes           => { ... },       format_hunker   => ...,       "
+"input_processor => ...,     },     stringf => {       -as => "
+"'fmt_date',       codes           => { ... },       string_replacer => "
+"...,       hunk_formatter  => ...,     },   ;\n"
+"\n"
+"お分かりのとおり、上記のように記述することで 2 つの stringf ルーチンが異なる動作かつ異なる名前で生成されるようになります。これらのルーチンは "
+"String::Formatter オブジェクトの 'format' "
+"メソッドをベースにした動作になりますので、ドキュメンテーションの残りの部分ではオブジェクトの動作について説明します。\n"
+"\n"
+"このモジュールにはこのほか、 'named_stringf' という関数も公開されています。これは 'stringf' と同じような動作をしますが、 "
+"'named_replace' と 'require_named_input\" パラメータが設定されます。また、 'method_stringf' "
+"という関数では、 'method_replace' と 'require_single_input' パラメータが設定されます。最後に "
+"'indexed_stringf' という関数では、 'indexed_replaced' と 'require_arrayref_input' "
+"パラメータが設定されます。詳しくはクックブックをお読みください。\n"
+"\n"
+"String::Formatter::Cookbook では、 String::Formatter を使用するための様々な方法を説明しています。"
 
 #. tumbleweed/perl-String-RewritePrefix/summary
 #. tumbleweed/perl-String-RewritePrefix/description
 #. leap/perl-String-RewritePrefix/summary
 #. leap/perl-String-RewritePrefix/description
 msgid "rewrite strings based on a set of known prefixes"
-msgstr ""
+msgstr "既知の接頭辞群をベースにした文字列の書き換え"
 
 #. tumbleweed/perl-String-ShellQuote/summary
 #. leap/perl-String-ShellQuote/summary
 msgid "Quote strings for passing through the shell"
-msgstr ""
+msgstr "シェルを通して渡すための文字列変換"
 
 #. tumbleweed/perl-String-ShellQuote/description
 #. leap/perl-String-ShellQuote/description
 msgid ""
 "This module contains some functions which are useful for quoting strings "
 "which are going to pass through the shell or a shell-like object."
-msgstr ""
+msgstr "このモジュールには、シェルやシェル系のオブジェクトを通して文字列を渡すにあたり、文字列をクォートするのに便利な関数を提供しています。"
 
 #. tumbleweed/perl-String-ToIdentifier-EN/summary
 #. leap/perl-String-ToIdentifier-EN/summary
 msgid "Convert Strings to English Program Identifiers"
-msgstr ""
+msgstr "文字列を英語のプログラム識別子に変換するモジュール"
 
 #. tumbleweed/perl-String-ToIdentifier-EN/description
 #. leap/perl-String-ToIdentifier-EN/description
@@ -28550,18 +28893,30 @@ msgid ""
 "Binary char groups will be separated by '_' even in camelCase identifiers to "
 "make them easier to read, e.g.: 'foo_2_0xFF_Bar'."
 msgstr ""
+"このモジュールは、任意の文字列を '\\w' の ASCII サブセットを利用して読み取り可能な表記に変換し、"
+"コンピュータプログラム内で識別子として利用できるようにするためのユーティリティメソッド /to_identifier を提供しています。このモジュールは、"
+"元の文字列の内容からユニークな識別子を作成し、名前を読むだけで内容がすぐに分かるような仕組みを作成しようとしたものです。\n"
+"\n"
+"Unicode を含む '\\w' のフルセットをお使いになりたい場合は、 String::ToIdentifier::EN::Unicode "
+"のサブクラスをご覧ください。\n"
+"\n"
+"現時点では処理は一方向のみに実施可能で、今後も逆方向の機能の提供は予定されていません。\n"
+"\n"
+"また、既定ではキャメルケースで識別子を作成しますが、 '_' のような区切り文字を指定することもできます。\n"
+"\n"
+"なお、キャメルケースを利用していても、バイナリ文字グループは '_' で区切られ、読みやすくなるようになっています。例: 'foo_2_0xFF_Bar'"
 
 #. tumbleweed/perl-String-Truncate/summary
 #. tumbleweed/perl-String-Truncate/description
 #. leap/perl-String-Truncate/summary
 #. leap/perl-String-Truncate/description
 msgid "a module for when strings are too long to be displayed in..."
-msgstr ""
+msgstr "文字列が長すぎた場合に短く切って表示するモジュール"
 
 #. tumbleweed/perl-Struct-Dumb/summary
 #. leap/perl-Struct-Dumb/summary
 msgid "Make Simple Lightweight Record-Like Structures"
-msgstr ""
+msgstr "シンプルな軽量型レコード構造を作成するモジュール"
 
 #. tumbleweed/perl-Struct-Dumb/description
 #. leap/perl-Struct-Dumb/description
@@ -28602,6 +28957,33 @@ msgid ""
 "by using code. Attempting to dereference the object as an ARRAY will throw "
 "an exception."
 msgstr ""
+"'Struct::Dumb' はレコードのような構造体を作成するモジュールで、 C/C++/C# 言語における 'struct' キーワードや、 "
+"Pascal 言語における 'Record' "
+"に似た仕組みです。このモジュールを実行すると、指定したフィールド値で新しいオブジェクトの参照を返す構築関数を作成します。これらの参照は lvalue "
+"メソッドに応答する仕組みで、保存された値にアクセスしたり、修正したりすることができます。\n"
+"\n"
+"このモジュールは特にオブジェクトクラスとして使用されることを目指しているものではありません。ここからサブクラスを作成することはできませんし、追加のメソッド"
+"も提供できません。役割や mixin 、メタクラスや trait 、アントラなど、今日よく使われる仕組みにも対応していません。\n"
+"\n"
+"一方でこのモジュールは非常に簡易なつくりです。簡易で軽量な配列ベースの構造を持ち、 Perl の中枢以外には依存関係を持ちません。また、データ構造を保存す"
+"るのに比較的わかりやすいシンプルな方法を利用しているため、ハッシュを乱用するように惑わされることもありませんし、キーの名前を間違えるようなリスクも負うこと"
+"がありません。また。コンストラクタは誤った数のパラメータを指定すると 'croak' "
+"するほか、存在しないフィールドを参照した場合も同様です。また、アクセサ-ミューテータにパラメータを指定しても 'croak' します "
+"(これにより、新しい値をパラメータとして指定してしまったような場合や、アクセサに直接パラメータを渡して保存された 'CODE' "
+"参照を実行しようとしたときなどのバグを検出することができます) 。\n"
+"\n"
+" $ perl -E 'use Struct::Dumb; struct Point => [qw( x y )]; Point(30)'  usage:"
+" main::Point($x, $y) at -e line 1\n"
+"\n"
+" $ perl -E 'use Struct::Dumb; struct Point => [qw( x y )]; Point(10,20)->z'  "
+"main::Point does not have a 'z' field at -e line 1\n"
+"\n"
+" $ perl -E 'use Struct::Dumb; struct Point => [qw( x y )]; Point(1,2)->x(3)"
+"'  main::Point->x invoked with arguments at -e line 1.\n"
+"\n"
+"クラス内のオブジェクトは (現時点では) ARRAY "
+"参照で保存されていますが、これは内部仕様であって、コードを使用するにあたってこれに依存したつくりであるべきではありません。また、オブジェクトを "
+"ARRAY として参照を外そうとすると、例外をスローします。"
 
 #. tumbleweed/perl-Sub-Exporter/summary
 #. leap/perl-Sub-Exporter/summary
@@ -28620,7 +29002,7 @@ msgstr ""
 #. tumbleweed/perl-Sub-Exporter-ForMethods/summary
 #. leap/perl-Sub-Exporter-ForMethods/summary
 msgid "Helper Routines for Using Sub::Exporter to Build Methods"
-msgstr ""
+msgstr "メソッドを構築するために Sub::Exporter を利用するためのヘルパールーチン"
 
 #. tumbleweed/perl-Sub-Exporter-ForMethods/description
 #. leap/perl-Sub-Exporter-ForMethods/description
@@ -28653,11 +29035,35 @@ msgid ""
 "'trunc' as foreign contaminants, but will leave 'read_file' in place. It "
 "will also remove 'method_installer', an added win."
 msgstr ""
+"'method_installer' を使用することを別にすると、上記の synopsis セクションでは Sub::Exporter "
+"を使用する場合との違いを実感できません。動作に対しても違いは実感できません。唯一の違いは、サブルーチンが Method::Builder から "
+"Vehicle::Autobot 内の名前付きのスロットに 公開され、 'Vehicle::Autobot::transform' という名前のサブルーチ"
+"ンにラッピングされるという点です。これによりスタックトレース内に名前付きのフレームを挿入することになり、デバッグがよりやりやすくなります。\n"
+"\n"
+"また、より重要な点 (作者によって、ですが) としては、これらは namespace::autoclean "
+"で削除されないという点があります。これにより、下記のようなコードが動作することになります:\n"
+"\n"
+" package MyLibrary;\n"
+"\n"
+"  use Math::Trig qw(tan);         # uses Exporter.pm   use String::Truncate "
+"qw(trunc); # uses Sub::Exporter's defaults\n"
+"\n"
+"  use Sub::Exporter::ForMethods qw(method_installer);   use Mixin::Linewise {"
+" installer => method_installer }, qw(read_file);\n"
+"\n"
+"  use namespace::autoclean;\n"
+"\n"
+"  ...\n"
+"\n"
+"  1;\n"
+"\n"
+"MyLibrary がコンパイルされると、 'namespace::autoclean' は汚染された関数として 'tan' と 'trunc' "
+"を削除しますが、 'read_file' は削除されません。なお、 'method_installer' については削除されます。"
 
 #. tumbleweed/perl-Sub-Exporter-GlobExporter/summary
 #. leap/perl-Sub-Exporter-GlobExporter/summary
 msgid "Export Shared Globs with Sub::Exporter Collectors"
-msgstr ""
+msgstr "Sub::Exporter コレクタ付きで共有グロブを公開するモジュール"
 
 #. tumbleweed/perl-Sub-Exporter-GlobExporter/description
 #. leap/perl-Sub-Exporter-GlobExporter/description
@@ -28757,7 +29163,7 @@ msgstr "サブルーチンを簡単にオーバーライドできる Perl 拡張
 #. leap/perl-Sub-Spec/summary
 #. leap/perl-Sub-Spec/description
 msgid "Subroutine metadata specification"
-msgstr ""
+msgstr "サブルーチンのメタデータ仕様"
 
 #. tumbleweed/perl-Sub-Uplevel/summary
 #. leap/perl-Sub-Uplevel/summary
@@ -28880,7 +29286,7 @@ msgstr ""
 #. tumbleweed/perl-Syntax-Keyword-Junction/summary
 #. leap/perl-Syntax-Keyword-Junction/summary
 msgid "Perl6 style Junction operators in Perl5"
-msgstr ""
+msgstr "Perl5 で Perl6 のようなジャンクション演算子を使用するモジュール"
 
 #. tumbleweed/perl-Sys-Hostname-Long/summary
 #. leap/perl-Sys-Hostname-Long/summary
@@ -35880,7 +36286,7 @@ msgstr ""
 
 #. leap/perl-Data-Dump-Streamer/summary
 msgid "Accurately serialize a data structure as Perl code."
-msgstr ""
+msgstr "Perl コードで正確にデータ構造をシリアライズするモジュール"
 
 #. leap/perl-Date-Calc/summary
 msgid "Perl Date-Calc Module"
@@ -35945,7 +36351,7 @@ msgstr ""
 
 #. leap/perl-Date-Tiny/summary
 msgid "A date object with as little code as possible"
-msgstr ""
+msgstr "できる限り少ないコード量での date オブジェクト"
 
 #. leap/perl-Date-Tiny/description
 msgid ""
@@ -36145,7 +36551,7 @@ msgstr "サブルーチンの名前 (変更)"
 
 #. leap/perl-Test-Differences/description
 msgid "Test strings and data structures and show differences if not ok."
-msgstr ""
+msgstr "文字列やデータ構造をテストして問題があれば差異を表示するモジュール"
 
 #. leap/perl-Text-Glob/summary
 msgid "Tools for working with paths and file specs across platforms"
@@ -36271,7 +36677,7 @@ msgstr ""
 
 #. leap/perl-XML-Structured/summary
 msgid "Simple conversion API from XML to perl structures and back"
-msgstr ""
+msgstr "XML から Perl の構造体に変換するシンプルな変換 API"
 
 #. leap/perl-XML-Structured/description
 msgid ""
