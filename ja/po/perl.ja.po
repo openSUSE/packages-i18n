@@ -29096,6 +29096,26 @@ msgid ""
 "\n"
 "  my $globref = Shared::Symbol->_shared_globref({ arg => 1 });"
 msgstr ""
+"Sub::Exporter::GlobExporter はたった 1 つのルーチン 'glob_exporter' "
+"を提供します。これはフルネームで呼び出すことができるほか、要求に応じてインポートすることもできます。\n"
+"\n"
+"  my $exporter = glob_exporter( $default_name, $globref_locator );\n"
+"\n"
+"このルーチンはコレクションバリデータを返すもので、インポートしているパッケージに対してグロブを公開します。公開は、 (上記のように) "
+"異なる名前を指定しない限り、 '$default_name' の名前の配下になります。インストールするグロブは '$fglobref_locator' "
+"で指定します。これはグロブ参照それ自身でもかまいませんし、エクスポータ上で呼び出させる文字列の参照でもかまいません。\n"
+"\n"
+"使用例については /SYNOPSIS をお読みください。こちらではグロブ参照を生成して共有するために定義されたメソッドがあります。これにより、グロブでエク"
+"スポートしているパッケージをサブクラス化できるため、サブクラス側では公開時に同じグロブを使用するか、もしくは新しく公開するかを選択することができます。\n"
+"\n"
+"パラメータ内にダッシュ以外の文字で始まるグロブ参照の公開コレクタが存在すると、これらのハッシュ参照がグロブ参照のロケータに渡されます。言い換えると、下記の"
+"ように書いていたものがあるとすると:\n"
+"\n"
+"  use Shared::Symbol '$Symbol' => { arg => 1, -as => 2 };\n"
+"\n"
+"下記のようになることになります:\n"
+"\n"
+"  my $globref = Shared::Symbol->_shared_globref({ arg => 1 });"
 
 #. tumbleweed/perl-Sub-Exporter-Progressive/summary
 #. leap/perl-Sub-Exporter-Progressive/summary
@@ -29181,7 +29201,7 @@ msgstr ""
 
 #. tumbleweed/perl-Switch/summary
 msgid "A switch statement for Perl, do not use if you can use given/when"
-msgstr ""
+msgstr "Perl 向け switch ステートメント (given/when が利用できる場合は使用してはなりません)"
 
 #. tumbleweed/perl-Switch/description
 msgid ""
@@ -29246,11 +29266,60 @@ msgid ""
 "[1,3,5,7,9]  { return 'odd' }                                  case /[A-F]/"
 "i     { return 'hex' }                                }         }"
 msgstr ""
+"Switch.pm モジュールは一般化された case 機構を実装するもので、上述のとおり switch と case の考えうる組み合わせのほとんど "
+"(ただしすべてではない) に対応しています。\n"
+"\n"
+"このモジュールは標準の Perl の文法に対して、 2 種類の制御ステートメント ('switch', 'case') を追加します。 'switch' "
+"ステートメントは 1 つのカッコで括ったスカラー値を受け入れます。 'switch' は (ローカライズされた) 制御変数内に現在の switch "
+"の値を保存します。また、値の後には 1 つまたは複数の Perl ステートメント (下記の 'case' ステートメントを含みます) "
+"を含むブロックを指定します。ブロック内では switch の値がキャッシュされるため、無条件にいずれか 1 つが実行されることになります。\n"
+"\n"
+"'case' ステートメントでは 1 つのスカラー値を受け入れ (変数を指定する場合はカッコが必須ですが、それ以外は任意です) 、パラメータと現在の "
+"switch の値との間で適切な型を選択します。使用する型は switch の値の型と 'case' のパラメータとの間で判断されます (表 1) 。"
+"比較が成功 (一致) すると、 'case' ステートメントに結び付けられたコードブロックが実行されます。\n"
+"\n"
+"他のほとんどの点において、 'case' ステートメントは 'if' ステートメントと意味論上は同じ動作になります。たとえば 'else' "
+"句を利用できたり、後置ステートメント修飾子などを使用することができます。\n"
+"\n"
+"ただし、 'case' ブロックが実行された後は、制御はブロック内の次のステートメントではなく、 'switch' "
+"ブロックの直後に自動的に移動します。言い換えると、いずれかの 'case' ステートメントが成功すると、同じスコープ内の他の 'case' "
+"は実行されなくなります。詳しくは下記の \"Allowing fall-through\" をお読みください。\n"
+"\n"
+"これら 2 つの新しいステートメントは、完全に一般化された case の仕組みを提供します:\n"
+"\n"
+"        use Switch;\n"
+"\n"
+"        \n"
+"\n"
+"        %special = ( woohoo => 1,  d'oh => 1 );\n"
+"\n"
+"        while (<>) { \t    chomp;             switch ($_) {                 "
+"case (%special) { print \"homer\\n"
+"\"; }      # if $special{$_}                 case /[a-z]/i   { print \""
+"alpha\\n"
+"\"; }      # if $_ =~ /a-z/i                 case [1..9]     { print \"small "
+"num\\n"
+"\"; }  # if $_ in [1..9]                 case { $_[0] >= 10 } { print \"big "
+"num\\n"
+"\"; } # if $_ >= 10                 print \"must be punctuation\\n"
+"\" case /\\W/;  # if $_ ~= /\\W/ \t    }         }\n"
+"\n"
+"ただし、 'switch' は 'case' のコードブロック内に入れ子になることもできるほか、 'case' ステートメント間で異なる方の比較処理を実施"
+"することもできます。具体的にはハッシュのメンバーシップ確認、パターンマッチ、配列の交差、シンプルな値の比較などを、同じ switch "
+"の値に対して適用することができます。\n"
+"\n"
+"配列の参照に対する交差テストの使用は、特に集合積分の case で特に有用です:\n"
+"\n"
+"        sub classify_digit         {                 switch ($_[0]) { case "
+"0            { return 'zero' }                                  case "
+"[2,4,6,8]    { return 'even' }                                  case "
+"[1,3,5,7,9]  { return 'odd' }                                  case /[A-F]/"
+"i     { return 'hex' }                                }         }"
 
 #. tumbleweed/perl-Symbol-Util/summary
 #. leap/perl-Symbol-Util/summary
 msgid "Additional utils for Perl symbols manipulation"
-msgstr ""
+msgstr "Perl シンボル操作のための追加ユーティリティ"
 
 #. tumbleweed/perl-Symbol-Util/description
 #. leap/perl-Symbol-Util/description
@@ -29282,7 +29351,7 @@ msgid ""
 "symbols from one package to other.\n"
 "\n"
 "'unexport_package' allows to delete previously exported symbols."
-msgstr ""
+msgstr "'unexport_package' は以前に公開を受けたシンボルを削除することができます。"
 
 #. tumbleweed/perl-Syntax-Keyword-Junction/summary
 #. leap/perl-Syntax-Keyword-Junction/summary
@@ -29349,11 +29418,37 @@ msgid ""
 "interrupted with control-C, even when the intended timeout is only seconds). "
 "This is because SIGINT appears to be deferred as well."
 msgstr ""
+"バージョン 5.8.0 以前の Perl では、 '安全ではない' シグナル処理を実装していました。安全ではないと判断される理由は、シグナルが届いたとき、"
+" Perl がその内部データ構造を変更しようとしているときに処理が行なわれるため、それによってリスクがありうることによるものです。これによって些細な問題が"
+"発生しうる可能性があります。このような理由により、シグナルハンドラ内はできる限り少ないコードで実装しておき、かつ既に存在する変数のみを操作することが推奨さ"
+"れています。\n"
+"\n"
+"Perl 5.8.0 およびそれ以降のバージョンでは、 POSIX の sigaction() 関数に対応するプラットフォームにおいて、 '安全な' "
+"シグナル実装が実装されるようになりました。これは Perl 側でシグナルが届いたときに、安全な状態になるまでシグナルハンドラの実行を遅らせることによって成"
+"り立っています。残念ながらこの変更は、シグナルの到着によって割り込まれるシステムルーチンに依存している場合、既存のスクリプトに影響があるものです。 "
+"Perl 5.8.0 の実装は、再度 5.8.2 でも変更されています。\n"
+"\n"
+"Perl 5.8.2 の *perlvar* マニュアルページでは、下記のように説明されています:\n"
+"\n"
+"Perl 5.8.0 では既定のシグナル配送ポリシーが変更され、即時 (\"安全ではない\" とされてきたもの) から遅延型に変更され、 \""
+"安全なシグナル配送\" となるようになりました。\n"
+"\n"
+"この実装は、 Perl によってどのシグナルハンドラがインストールされたのかを示す 'sa_flags' も変更され、これによってシグナルが到着した際、"
+"いくつかのシステムルーチン (connect() など) がエラーではなく EINTR を返すようになっています。この問題は、"
+"システムコールを行なったコードが EINTR コードを見て、それが返される前に再び呼び出されると判断した際に発生します。 Perl "
+"側ではこのようなことは行なっていませんが、たとえば Oracle OCI ライブラリなど、いくつかのライブラリでは実施しています。\n"
+"\n"
+"このような仕組みから、 '遅延型シグナル' のアプローチ (Perl 5.8 もしくはそれ以降で既定で実装されているもの) によって、 Perl "
+"側でシグナルハンドラが呼び出されるよりも前に、システムコールが再試行されることになります。これは古いバージョンの Perl で DBD-Oracle を利"
+"用する際、タイムアウトの仕組みの動作がうまくいかなくなってしまいます。これは、例えばデータベースが存在するホストが利用不可能な状況になった場合、特に厄介な"
+"ことになりえます: 'DBI->connect()' はエラーを返す前にしばらくハングアップするようになります "
+"(希望するタイムアウトが数秒の指定であったとしても、 CTRL-C で中断させることができません) 。これは SIGINT "
+"も同様に遅延処理されることによります。"
 
 #. tumbleweed/perl-Sysadm-Install/summary
 #. leap/perl-Sysadm-Install/summary
 msgid "Typical installation tasks for system administrators"
-msgstr ""
+msgstr "システム管理者向けの典型的なインストールタスク"
 
 #. tumbleweed/perl-Sysadm-Install/description
 #. leap/perl-Sysadm-Install/description
@@ -29382,10 +29477,31 @@ msgid ""
 "meaning that file names and line numbers are reported from the calling "
 "program's point of view."
 msgstr ""
+"インストール用のシェルスクリプトに対して、プログラミングの手間をかけることなく、かつ必要であればログを有効化させて、再現性を期待したことがありますか？この"
+"ような場合は、シェルプログラミングではなく Perl をお使いください。\n"
+"\n"
+"'Sysadm::Install' はシェルのようなコマンドを実行して、典型的なインストール作業を実施します: ファイルのコピーや tar ボールの抽出、"
+" 'make' の呼び出しなど。 'fail once and die' (一回でも失敗したら die する) "
+"ポリシーで構築されていますので、各操作の結果は細心の注意を払ってチェックされていて、何らかの失敗があると即時に 'die()' するようになっています。"
+"\n"
+"\n"
+"'Sysadm::Install' では _ドライ_ 実行 (dry run) "
+"モードにも対応しています。このモードは、すべてのログを記録する一方で、書き込み処理は何も実施しないモードです。ドライ実行モードは、 "
+"'Sysadm::Install::dry_run(1)' を実行することで有効にすることができます。通常のモードに戻すには、 "
+"'Sysadm::Install::dry_run(0)' を実行します。\n"
+"\n"
+"バージョン 0.17 では、 'Sysadm::Install' は _確認 (confirm)_ モードにも対応しています。"
+"こちらは各処理の実行前に対話的な確認メッセージを表示する ('rm -i' のような) 仕組みです。確認モードは "
+"'Sysadm::Install::confirm(1)' を実行することで有効にすることができます。通常のモードに戻すには、 "
+"'Sysadm::Install::confirm(0)' を実行します。\n"
+"\n"
+"'Sysadm::Install' は Log4perl を完全に対応しています。ログを開始するには 'Log::Log4perl' "
+"を実行して初期化するだけです。 'Sysadm::Install' "
+"はラッパークラスとして動作しますが、これはファイル名と行番号が呼び出したプログラム側の観点でレポートされる、ということです。"
 
 #. tumbleweed/perl-Task-Kensho-Async/summary
 msgid "Glimpse at an Enlightened Perl: Async Programming"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: 非同期プログラミング"
 
 #. tumbleweed/perl-Task-Kensho-Async/description
 #. tumbleweed/perl-Task-Kensho-CLI/description
@@ -29431,48 +29547,70 @@ msgid ""
 "individual tasks will always install all their modules by default. This "
 "facilitates the ease and simplicity the distribution aims to achieve."
 msgstr ""
+"https://ja.wikipedia.org/wiki/見性より:\n"
+"\n"
+"    見性（けんしょう）とは、仏教の禅において用いられる仏教用語。人間に本来そなわる、本性を徹見すること。禅の悟りの１つとされる。次の修行過程は修道。仏"
+"典には見性の語は多く現れるが、見（dṛṣti）と性（svabhāva）という字義通りの熟語（複合語）で、禅宗の用法と関係した記述はほとんど見られず（#見性"
+"成仏を参照）、これが禅の用語とされる理由となっている。\n"
+"\n"
+"Task::Kensho は Enlightened Perl の開発で使用する推奨モジュール集です。CPAN "
+"は素晴らしい仕組みですが、多数のモジュールが存在することから、様々な競合技術の間でどれを選択すべきかがわかりにくくなっています。\n"
+"\n"
+"Task::Kensho は、アイディアに対して大まかなテストグラウンドとなることを目指し、これによって Enlightened Perl "
+"Organisation Extended Core (EPO-EC) を構成しています。\n"
+"\n"
+"Task::Kensho に同梱されているモジュールは複数のカテゴリに分類されます。これらは 100 種類のもっともよく使用される Perl "
+"モジュールの一覧から取られたものであるほか、 Perl "
+"のコミュニティ内で熟練者同士が議論を行なって決めたものでもあります。つまり、この同梱物は技術的なアドバイザを介してピアレビューを行ない、 EPO-EC "
+"用に建てられたガイドラインには従って _いない_ ということになります。\n"
+"\n"
+"2011 年以降、 Task::Kensho はモジュールのサブグループを個別に分割し、それぞれインストール可能なタスクとしました。各 Task::"
+"Kensho のサブタスクは、このドキュメンテーション内のセクションの冒頭に一覧で示されています。\n"
+"\n"
+"Task::Kensho 自身をインストールする場合、インストールするサブタスクを選択するように求められるほか、個別にタスクをインストールすることもできま"
+"す。これらの個別のタスクは、既定では常にすべてのモジュールをインストールします。これにより、配布物を実現するのに簡単でシンプルな方法となっています。"
 
 #. tumbleweed/perl-Task-Kensho-CLI/summary
 msgid "Glimpse at an Enlightened Perl: Useful Command-line Tools"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: 便利なコマンドラインツール"
 
 #. tumbleweed/perl-Task-Kensho-Config/summary
 msgid "Glimpse at an Enlightened Perl: Config Modules"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: 設定モジュール"
 
 #. tumbleweed/perl-Task-Kensho-Dates/summary
 msgid "Glimpse at an Enlightened Perl: Date Modules"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: 日付モジュール"
 
 #. tumbleweed/perl-Task-Kensho-Exceptions/summary
 #. leap/perl-Task-Kensho-Exceptions/summary
 msgid "Glimpse at an Enlightened Perl: Exception Handling"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: 例外処理"
 
 #. tumbleweed/perl-Task-Kensho-ModuleDev/summary
 msgid "Glimpse at an Enlightened Perl: Module Development"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: モジュール開発"
 
 #. tumbleweed/perl-Task-Kensho-OOP/summary
 msgid "Glimpse at an Enlightened Perl: Object Oriented Programming"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: オブジェクト指向プログラミング"
 
 #. tumbleweed/perl-Task-Kensho-Scalability/summary
 #. leap/perl-Task-Kensho-Scalability/summary
 msgid "Glimpse at an Enlightened Perl: Scalability"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: スケーラビリティ"
 
 #. tumbleweed/perl-Task-Kensho-Testing/summary
 msgid "Glimpse at an Enlightened Perl: Testing"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: テスト"
 
 #. tumbleweed/perl-Task-Kensho-XML/summary
 msgid "Glimpse at an Enlightened Perl: XML Development"
-msgstr ""
+msgstr "Glimpse at an Enlightened Perl: XML 開発"
 
 #. tumbleweed/perl-Task-Moose/summary
 msgid "Moose in a box"
-msgstr ""
+msgstr "Moose in a box"
 
 #. tumbleweed/perl-Task-Moose/description
 msgid ""
@@ -29480,23 +29618,25 @@ msgid ""
 "extensions listed below. This list is meant to be comprehensive, so if I "
 "missed something please let me know."
 msgstr ""
+"このタスクは Moose をインストールし、オプションで以下の複数の Moose "
+"拡張もインストールします。この一覧は包括的なものであり、何か書き漏れているものがあればお知らせください。"
 
 #. tumbleweed/perl-Term-Encoding/summary
 #. leap/perl-Term-Encoding/summary
 msgid "Detect encoding of the current terminal"
-msgstr ""
+msgstr "現在の端末におけるエンコーディングの検出"
 
 #. tumbleweed/perl-Term-Encoding/description
 #. leap/perl-Term-Encoding/description
 msgid ""
 "Term::Encoding is a simple module to detect an encoding the current terminal "
 "expects, in various ways."
-msgstr ""
+msgstr "Term::Encoding は、様々な方法で現在の端末が期待するエンコーディングを検出することのできるシンプルなモジュールです。"
 
 #. tumbleweed/perl-Term-ProgressBar/summary
 #. leap/perl-Term-ProgressBar/summary
 msgid "provide a progress meter on a standard terminal"
-msgstr ""
+msgstr "標準の端末に対する進捗表示メーター"
 
 #. tumbleweed/perl-Term-ProgressBar/description
 #. leap/perl-Term-ProgressBar/description
@@ -29526,11 +29666,27 @@ msgid ""
 "major-character added. This exponentially increases the granularity of the "
 "bar for the same width."
 msgstr ""
+"Term::ProgressBar は端末に対してシンプルなプログレスバー (進捗表示バー) を提供するもので、ユーザに対してどのような処理を行なっている"
+"のかや、おおよそどれだけの処理が完了していて、どれだけの時間で完了するのかの見積もりを知らせることができます。\n"
+"\n"
+"一般的にはまずプログレスバーは作業項目数を指定してセットアップし、その後 \"update\" を実行してどれだけの項目が完了したのかを更新します。\n"
+"\n"
+"ただし、場合によってはユーザに対して目に見える変化がないまま、何度も更新されてしまうような動きになることもあります。このような不要な描画を避けるため、 "
+"\"update\" メソッドは値を返す仕組みになっています。返される値は、ユーザ側に目に見える変化を与えるための次の値で、この値を超えない限り \""
+"update\" メソッドを呼び出さなければ、オーバーヘッドを軽減できるようになっています。\n"
+"\n"
+"なお、 100% の完了を示すため、すべての処理が完了した際には '$progress->update($max_value)' "
+"を呼び出しておくことを忘れないでください。\n"
+"\n"
+"既定のプログレスバーはシンプルなもので、左から右に '=' の文字で示されるバーが進んでいく仕組みです。これらは *メジャー* "
+"文字と呼ばれるものです。長時間かかるような処理の場合は、進捗が進まずわかりにくいので、下記の 2 つの追加機能も提供されています: "
+"線形で完了時間を予測する機能や、 *マイナー* 文字への対応です。マイナー文字とはメジャー文字と同様に左から右に移動していく文字ですが、各メジャー文字の進"
+"捗のたびにリセットされる仕組みです。これはバーの粒度を指数関数的に増加させる効果があります。"
 
 #. tumbleweed/perl-Term-UI/summary
 #. leap/perl-Term-UI/summary
 msgid "Term::ReadLine UI made easy"
-msgstr ""
+msgstr "Term::ReadLine 作りやすい UI"
 
 #. tumbleweed/perl-Term-UI/description
 #. leap/perl-Term-UI/description
@@ -29544,11 +29700,18 @@ msgid ""
 "\n"
 "For asking a yes or no question, there's even a shortcut."
 msgstr ""
+"'Term::UI' "
+"は、質問を提示して回答を検証する際のオーバーロードを削減するためのモジュールで、回答が適切でなかった場合には質問を再提示する機能も備わっています。\n"
+"\n"
+"質問したい内容を単純に指定するほか、必要であれば選択肢の中から選択させたり、既定値を指定したりなど、 'Term::UI' "
+"は様々なことを行なうことができます。\n"
+"\n"
+"yes (はい)/no (いいえ) のような質問に対しては、ショートカットも用意されています。"
 
 #. tumbleweed/perl-Test-Assert/summary
 #. leap/perl-Test-Assert/summary
 msgid "Assertion methods for those who like JUnit."
-msgstr ""
+msgstr "JUnit を好きな方のためのアサーションメソッド"
 
 #. tumbleweed/perl-Test-Assert/description
 #. leap/perl-Test-Assert/description
@@ -29570,6 +29733,19 @@ msgid ""
 "\n"
 "The assertions can be also used for run-time checking."
 msgstr ""
+"このクラスはテストを作成するために便利なメソッド集を提供します。 API は JUnit4 と Test::Unit::Lite をベースにしていて、"
+"テスト失敗時には die で終了します。\n"
+"\n"
+"これらのアサーションメソッドは、 Test::Simple や Test::More など、 Test::Builder "
+"ベースのテストユニットを使用している場合には、あまり便利なものではないかもしれません。\n"
+"\n"
+"アサーションメソッドは 'Test::Assert' から派生しているクラス内で使用することができるほか、ユーザのネームスペース内に取り込んだ後の標準 "
+"Perl 関数としても使用することもできます。\n"
+"\n"
+"'Test::Assert' は標準の Test::Simple, Test::More, Test::Builder "
+"をベースにしたテストに対するラップも行なっています。\n"
+"\n"
+"アサーションは実行時のチェックにも利用することができます。"
 
 #. tumbleweed/perl-Test-Base/summary
 #. leap/perl-Test-Base/summary
@@ -29609,12 +29785,33 @@ msgid ""
 "\n"
 "      time focusing on that rather than your code scaffolding."
 msgstr ""
+"通常、テストは Perl のモジュールを著作するにあたっては醜い部分でもあります。 Perl では Test::Harness "
+"でテストを実行するための標準的な方法のほか、 Test::More "
+"で基本的なテスト機構も用意されています。その後テスト用のフレームワークや哲学を作成しようとしたこともあったものと思います。 Test::More では、 "
+"Test::Builder をサブクラス化することで、独自のフレームワークを作成することも支援されていますが、一般的な仕組みではありません。\n"
+"\n"
+"Test::Base は、ありふれた方法で独自のテストフレームワークを作成する方法を提供します。事実、下記の 2 行を書くだけです:\n"
+"\n"
+"    package MyTestFramework;     use Test::Base -Base;\n"
+"\n"
+"'MyTestFramework.pm' と呼ばれるモジュールには上記の 2 行が含まれますが、これによって Test::More "
+"が提供するすべての力を提供し、 Test::Base のすべての力がこれを使用する各テストファイルにもたらされます。 'MyTestFramework' "
+"を利用してテストを構築することで、実際のテストにもこれらすべての力をもたらすことになります。\n"
+"\n"
+"'MyTestFramework' はお使いの環境でのテストに対して、再利用できる仕組みを提供します。いったんテストを作成すると、その中にはパターンや重複"
+"などが見えてきますので、これらをアップストリーム、つまり 'MyTestFramework' にまとめることができます。もちろん Test::Base "
+"からサブクラス化する必要もありません。多くのアプリケーション内から直接利用できるほか、 Test::More "
+"を使用する任意の場所から利用することができます。\n"
+"\n"
+"Test::Base には再利用可能なデータ駆動型パターンがまとめられているため、テスト側で記述すべきコードは最小限で済みます。すべてのテストの中心には入"
+"力やプロセス、期待する出力が含まれています。 Test::Base "
+"には入力や期待する出力データを記述するためのクリーンな方法が用意されていますので、あとはそれらに注力するだけでテストが完成します。"
 
 #. tumbleweed/perl-Test-CChecker/summary
 #. leap/perl-Test-CChecker/summary
 msgid ""
 "Test-time utilities for checking C headers, libraries, or OS features (D[cut]"
-msgstr ""
+msgstr "C 言語のヘッダやライブラリ、 OS の機能などをチェックするためのテスト時ユーティリティ"
 
 #. tumbleweed/perl-Test-CChecker/description
 #. leap/perl-Test-CChecker/description
@@ -29634,11 +29831,22 @@ msgid ""
 "unless there is a failure, in which case you will see the commands, flags "
 "and output used."
 msgstr ""
+"*廃止予定*: このモジュールは Alien モジュール (Alien::Base をベースにしたものと、 Alien::Base "
+"をベースにしていないものの両方) をテストする目的で常に作られてきたものです。 Test::Alien "
+"でよりよく解決可能な欠点も多数ありますので、新しいプロジェクトに対してはこのモジュールをお使いください。既存のプロジェクトに対しても移行をお勧めします。"
+"\n"
+"\n"
+"このモジュールは ExtUtils::CChecker に対する非常に薄い便利なラッパーで、テスト用に使用する際に便利な仕組みを提供しています。ライブラリ"
+"がコンパイラとともに使用された場合に正しく動作するかどうかや、 XS モジュールを構築する際の Perl 側のフラグの設定など、 Alien "
+"モジュールで使用する前提で作られているものです。\n"
+"\n"
+"既定ではこのモジュールは非常に物静かで、テストが失敗しない限り Capture::Tiny "
+"を利用してすべての出力を隠蔽します。テストが失敗した場合は、コマンドやフラグ、出力などがそれぞれ表示されます。"
 
 #. tumbleweed/perl-Test-CPAN-Meta/summary
 #. leap/perl-Test-CPAN-Meta/summary
 msgid "Validate your CPAN META.yml files"
-msgstr ""
+msgstr "CPAN META.yml ファイルの検証"
 
 #. tumbleweed/perl-Test-CPAN-Meta/description
 #. leap/perl-Test-CPAN-Meta/description
@@ -29652,11 +29860,16 @@ msgid ""
 "See the CPAN::Meta manpage for further details of the CPAN Meta "
 "Specification."
 msgstr ""
+"この配布物は、 CPAN にアップロードする際の標準的な配布物で提供され、モジュールのアップロードに対してゆっくりと導入されている仕様に適合した、 "
+"ExtUtils::MakeMaker, Module::Build, Module::Install "
+"のようなメーカーやインストーラのパッケージを介して META.yml ファイルを支援するために作られたものです。\n"
+"\n"
+"CPAN メタ仕様について、詳しくは CPAN::Meta をご覧ください。"
 
 #. tumbleweed/perl-Test-CheckChanges/summary
 #. leap/perl-Test-CheckChanges/summary
 msgid "Check that the Changes file matches the distribution."
-msgstr ""
+msgstr "Chahnges ファイルが配布物とマッチしているかの確認"
 
 #. tumbleweed/perl-Test-CheckChanges/description
 #. leap/perl-Test-CheckChanges/description
@@ -29679,11 +29892,23 @@ msgid ""
 "The _examples_ directory contains examples of the different formats of "
 "_Changes_ files that are recognized."
 msgstr ""
+"このモジュールは、テスト中の *モジュール* に対して、現在のバージョンの項目が _Changes_ ファイル内に存在するかどうかをチェックします。\n"
+"\n"
+"テストの際、配布物に対するバージョンの情報はビルドデータから取得するか、ビルドデータ内に見つからない場合は Makefile の情報を参照します。\n"
+"\n"
+"バージョン情報が判断できたら、次に _Changes_ または _CHANGES_ の名前のファイルを開きます。\n"
+"\n"
+"ファイルを開いたら内容を読み取って、バージョン番号を判断します。バージョン番号の表記の中に現在のバージョンが存在すれば、テストはパスします。存在していなか"
+"った場合は、テストが失敗します。\n"
+"\n"
+"テストがパスした際には現在のバージョンが表示され、失敗時にはダイアログメッセージが表示されます。\n"
+"\n"
+"_examples_ ディレクトリ内には、  _Changes_ ファイル内で認識可能なバージョン書式に関する例が示されています。"
 
 #. tumbleweed/perl-Test-CheckDeps/summary
 #. leap/perl-Test-CheckDeps/summary
 msgid "Check for presence of dependencies"
-msgstr ""
+msgstr "依存関係の存在の確認"
 
 #. tumbleweed/perl-Test-CheckDeps/description
 #. leap/perl-Test-CheckDeps/description
@@ -29691,11 +29916,13 @@ msgid ""
 "This module adds a test that assures all dependencies have been installed "
 "properly. If requested, it can bail out all testing on error."
 msgstr ""
+"このモジュールには、すべての依存関係が正しくインストールされているかどうかをチェックするテストが含まれています。必要であれば、エラーを無視することもできま"
+"す。"
 
 #. tumbleweed/perl-Test-Class/summary
 #. leap/perl-Test-Class/summary
 msgid "Easily create test classes in an xUnit/JUnit style"
-msgstr ""
+msgstr "xUnit/JUnit スタイルのテストクラスを簡単に作成するモジュール"
 
 #. tumbleweed/perl-Test-Class/description
 #. leap/perl-Test-Class/description
@@ -29713,11 +29940,18 @@ msgid ""
 "friends should go take a look at them now. the Test::Tutorial manpage is a "
 "good starting point."
 msgstr ""
+"Test::Class は、 xUnit スタイルでのコードテスト用にクラスやオブジェクトを作成するシンプルな方法を提供します。\n"
+"\n"
+"Test::Builder を利用して構築したことで、 Test::Builder ベースのモジュール (Test::More, Test::"
+"Differences, Test::Exception など) とともに動作するように設計されています。\n"
+"\n"
+"_注意:_ このモジュールは、すでに Perl のコードをテストする \"標準的な\" 仕組みを知っている方に向けて作られています。 Test::"
+"Harness や Test::Simple, Test::More などに詳しくない方は、まず Test::Tutorial をお読みください。"
 
 #. tumbleweed/perl-Test-Class-Most/summary
 #. leap/perl-Test-Class-Most/summary
 msgid "Test Classes the easy way"
-msgstr ""
+msgstr "簡単テストクラス"
 
 #. tumbleweed/perl-Test-Class-Most/description
 #. leap/perl-Test-Class-Most/description
@@ -29741,11 +29975,26 @@ msgid ""
 "you. It also gives you all of the testing goodness from the Test::Most "
 "manpage."
 msgstr ""
+"優れた 'Test::Class' を利用してテストクラスを作成する際、コードの冒頭には下記のような記述があります:\n"
+"\n"
+"  package Some::Test::Class;\n"
+"\n"
+"  use strict;   use warnings;   use base 'My::Test::Class';   use Test::More;"
+"   use Test::Exception;\n"
+"\n"
+"  \n"
+"\n"
+"このような面倒な記述は避けたいものです。このモジュールを利用すると、下記のように略すことができます:\n"
+"\n"
+"  use Test::Class::Most parent => 'My::Test::Class';\n"
+"\n"
+"これにより strict と warnings がそれぞれインポートされるようになるほか、 Test::Most "
+"が提供するテスト用の機能もインポートされます。"
 
 #. tumbleweed/perl-Test-ClassAPI/summary
 #. leap/perl-Test-ClassAPI/summary
 msgid "Provides basic first-pass API testing for large class trees"
-msgstr ""
+msgstr "巨大なクラスツリー向けの基本的なファーストパス API テスト"
 
 #. tumbleweed/perl-Test-ClassAPI/description
 #. leap/perl-Test-ClassAPI/description
@@ -29755,11 +30004,13 @@ msgid ""
 "inheritance is correct, before doing more comprehensive testing. This module "
 "aims to provide such a capability."
 msgstr ""
+"多数のクラスがある多数の API では、クラスやメソッド、継承関係が正しいかどうかを、広範囲のテストを実施する前に一度に確認できたら便利でしょう。このモジ"
+"ュールは、そのような機能を提供するものです。"
 
 #. tumbleweed/perl-Test-CleanNamespaces/summary
 #. leap/perl-Test-CleanNamespaces/summary
 msgid "Check for uncleaned imports"
-msgstr ""
+msgstr "クリーンでないインポートに対するチェック"
 
 #. tumbleweed/perl-Test-CleanNamespaces/description
 #. leap/perl-Test-CleanNamespaces/description
@@ -29769,11 +30020,13 @@ msgid ""
 "clean and are therefore available to be called as methods, which usually "
 "isn't want you want."
 msgstr ""
+"このモジュールは、インポートした関数に対してモジュールのネームスペースを確認し、 namespace::autoclean や namespace::"
+"clean で削除し忘れたと思われるものをチェックするほか、メソッドとして呼び出せるようにします (こちらは通常不要でしょう) 。"
 
 #. tumbleweed/perl-Test-Command/summary
 #. leap/perl-Test-Command/summary
 msgid "Test routines for external commands"
-msgstr ""
+msgstr "外部コマンド向けテストルーチン"
 
 #. tumbleweed/perl-Test-Command/description
 #. leap/perl-Test-Command/description
@@ -29819,11 +30072,43 @@ msgid ""
 "   exit_is_num($cmd, 0);    exit_is_num($cmd, 0, 'exit_is_num: true, 0');    "
 "$cmd->exit_is_num(0);    $cmd->exit_is_num(0, 'exit_is_num: true, 0');"
 msgstr ""
+"'Test::Command' はよくテストされた関数と選択したオブジェクト、そしてその使用方法とのギャップを橋渡しすべく作られたモジュールです。終了ステ"
+"ータスを確認したり、シグナルで終了させたり、お使いのプログラムの STDOUT/STDERR "
+"を確認したりすることで、動作が期待通りかどうかを判断することができます。\n"
+"\n"
+"このモジュールには様々な組み合わせのテストやオプション／パラメータ順序などがあるほか、お使いのプログラムを構成する様々な関数やオブジェクトの間での相互作用"
+"もテストすることができます。\n"
+"\n"
+"下記の様々なテスト関数では、最初のパラメータとしてコマンド文字列か配列の参照を受けつけることができます。コマンドが文字列で表されている場合は、"
+"文字列がそのまま 'system' に渡されます。配列の参照としてあらわされている場合は、参照外しを行なった 'system' "
+"にリストを渡します。これらの違いについて、詳しくは ''perldoc -f system'' をご覧ください。\n"
+"\n"
+"テスト関数の最後のパラメータ '$name' はオプションで、既定ではテスト関数名とコマンド文字列、そして期待される値をつなげたものになります。このような"
+"仕組みはテストの失敗を識別するのに十分ではありますが、必要であれば '$name' で独自の名前を付与することもできます。\n"
+"\n"
+"いずれのテスト関数とも、 'Test::Command' オブジェクトのインスタンスメソッドとして利用することができます。これは最初のパラメータ '$"
+"cmd' を削除して矢印 (->) 表記を利用しているのと同じです。\n"
+"\n"
+"また、下記の 'exit_is_num' のすべての呼び出しは同じ意味です:\n"
+"\n"
+"   exit_is_num('true', 0);    exit_is_num('true', 0, 'exit_is_num: true, 0');"
+"    exit_is_num(['true'], 0);    exit_is_num(['true'], 0, 'exit_is_num: "
+"true, 0');\n"
+"\n"
+"   my $cmd = Test::Command->new( cmd => 'true' );\n"
+"\n"
+"   exit_is_num($cmd, 0);    exit_is_num($cmd, 0, 'exit_is_num: true, 0');    "
+"$cmd->exit_is_num(0);    $cmd->exit_is_num(0, 'exit_is_num: true, 0');\n"
+"\n"
+"   $cmd = Test::Command->new( cmd => ['true'] );\n"
+"\n"
+"   exit_is_num($cmd, 0);    exit_is_num($cmd, 0, 'exit_is_num: true, 0');    "
+"$cmd->exit_is_num(0);    $cmd->exit_is_num(0, 'exit_is_num: true, 0');"
 
 #. tumbleweed/perl-Test-Compile/summary
 #. leap/perl-Test-Compile/summary
 msgid "Check whether Perl files compile correctly"
-msgstr ""
+msgstr "Perl のコンパイルが正しく行なわれたかどうかのチェック"
 
 #. tumbleweed/perl-Test-Compile/description
 #. leap/perl-Test-Compile/description
@@ -29842,11 +30127,21 @@ msgid ""
 "         use strict;     use warnings;     use Test::Compile;     my $test = "
 "Test::Compile->new();     $test->all_files_ok();     $test->done_testing();"
 msgstr ""
+"'Test::Compile' はお使いの Perl モジュールやスクリプトが正しくコンパイルできるかどうかをチェックし、結果を標準の 'Test::"
+"Simple' の方式で報告します。\n"
+"\n"
+"基本的な使い方は上述のとおりで、お使いの Perl ファイルを検索してすべてのコンパイルをテストします。\n"
+"\n"
+"モジュールの作者は下記のような _t/00-comple.t_ ファイルを含めることができます (含めておくべきです) 。これにより、 'Test::"
+"Compile' が自動的に検出され、モジュールの配布物の中ですべての Perl ファイルをチェックします:\n"
+"\n"
+"         use strict;     use warnings;     use Test::Compile;     my $test = "
+"Test::Compile->new();     $test->all_files_ok();     $test->done_testing();"
 
 #. tumbleweed/perl-Test-Deep/summary
 #. leap/perl-Test-Deep/summary
 msgid "Extremely flexible deep comparison"
-msgstr ""
+msgstr "非常に柔軟で深い比較"
 
 #. tumbleweed/perl-Test-Deep/description
 msgid ""
@@ -29870,11 +30165,23 @@ msgid ""
 "\n"
 "Test::Deep has *_a lot_* of exports. See the /EXPORTS manpage below."
 msgstr ""
+"Perl で自動化されたテストについてご存じない場合は、まず Test::Simple と Test::More をお読みになることをお勧めします。 "
+"Test::Deep は Test::Builder フレームワークを使用しています。\n"
+"\n"
+"Test::Deep は、取得した結果が期待通りのものであるかどうかをチェックするための、非常に柔軟な方法を提供しています。 2 つの構造体はそれぞれのレ"
+"ベルに対して行なわれるシンプルな仕組みであることから、値が等しいことや配列やハッシュが同じ要素を持っているか、およびその参照が正しいクラスにブレスしている"
+"かどうかを調べることができます。また、無限ループを回避する仕組みを備えているため、循環構造でも問題なく動作します。\n"
+"\n"
+"より興味深い点としては、シンプルで正確な比較を行なうことができるという点があります。文字列の場合、 'eq' 演算子を利用して 2 つの文字列が等しいこと"
+"を確認しますが、場合によってはこれが期待するものではないことがあります。文字列が正確にどのような値であるべきかがわからない場合は、パターンマッチングを代わ"
+"りに使用することができます。 Test::Deep では、複雑なデータ構造を比較する際にパターンマッチングを使用することができます。\n"
+"\n"
+"Test::Deep には *_多数の_* 公開関数があります。詳しくは /EXPORTS をお読みください。"
 
 #. tumbleweed/perl-Test-Differences/summary
 #. leap/perl-Test-Differences/summary
 msgid "Test strings and data structures and show differences if not ok"
-msgstr ""
+msgstr "文字列やデータ構造をテストし、期待通りでなければ差分を表示するモジュール"
 
 #. tumbleweed/perl-Test-Differences/description
 msgid ""
@@ -29896,7 +30203,7 @@ msgstr ""
 #. tumbleweed/perl-Test-EOL/summary
 #. leap/perl-Test-EOL/summary
 msgid "Check the correct line endings in your project"
-msgstr ""
+msgstr "プロジェクト内の行末の確認"
 
 #. tumbleweed/perl-Test-EOL/description
 #. leap/perl-Test-EOL/description
@@ -30077,7 +30384,7 @@ msgstr ""
 #. tumbleweed/perl-Test-FailWarnings/summary
 #. leap/perl-Test-FailWarnings/summary
 msgid "Add test failures if warnings are caught"
-msgstr ""
+msgstr "警告がキャッチされている場合にテストを失敗にするモジュール"
 
 #. tumbleweed/perl-Test-FailWarnings/description
 #. leap/perl-Test-FailWarnings/description
