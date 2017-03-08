@@ -30199,6 +30199,17 @@ msgid ""
 "other Test::Builder based testing modules. As the SYNOPSIS shows, another "
 "testing module must be used as the basis for your test suite."
 msgstr ""
+"テスト対象のコードが複数行の出力やレコード、データ構造などを返すような場合、その出力があやっていた場合は、 Unix の 'diff' ユーティリティを利"
+"用して違いを確認したいと思うことがあると思います。このモジュールはそのような目的で作られたものです。下記はサンプルのテストスクリプトの出力結果で、 2 "
+"つのテキスト文書と 2 つの (ごくありふれた) データ構造をチェックしています:\n"
+"\n"
+" t/99example....1..3  not ok 1 - differences in text                  not ok "
+"2 - differences in whitespace                  not ok 3                  \n"
+"\n"
+"eq_or_diff_...() は 2 つの文字列または (限定された範囲の) データ構造を比較し、両方が一致した場合は ok "
+"を、そうでない場合は差分を並べて表示します。 Test::Differences は、 Test.pm, Test::Simple, Test::"
+"More など、 Test::Builder ベースのテストモジュールとともに使用するよう設計されています。 SYNOPSIS "
+"にも書いてある通り、お使いのテストスイートの基礎として他のテストモジュールを利用しなければなりません。"
 
 #. tumbleweed/perl-Test-EOL/summary
 #. leap/perl-Test-EOL/summary
@@ -30211,6 +30222,8 @@ msgid ""
 "This module scans your project/distribution for any perl files (scripts, "
 "modules, etc) for the presence of windows line endings."
 msgstr ""
+"このモジュールはプロジェクトや配布物内の Perl ファイル (スクリプト、モジュールなど) を検索し、 Windows "
+"での正しい行末が設定されているかどうかを確認します。"
 
 #. tumbleweed/perl-Test-Exception/summary
 #. leap/perl-Test-Exception/summary
@@ -30363,6 +30376,17 @@ msgid ""
 "\n"
 "The test description is optional, but recommended."
 msgstr ""
+"このモジュールは例外ベースのコードをテストするための、いくつか便利なメソッドを提供しています。 Test::Builder を利用して構築されていて、 "
+"Test::More などのモジュールを併用することで、便利な使い方ができるようになっています。\n"
+"\n"
+"Test::More を詳しく知らない方は、まずそちらをご覧いただくことをお勧めします。\n"
+"\n"
+"'use Test::Exception' を 'use Test::More' と同じような方法で使用する場合は、テストプランを指定することもできます。"
+"詳しくは Test::More をご覧ください。\n"
+"\n"
+"注意: Test::Exception は例外のみをチェックし、他の方法のプログラム実行の停止手順 (たとえば exit()) "
+"については、無視されることに注意してください。もしもテスト対象のコード内に exit() が存在する場合、 Test::Exception "
+"ではどの関数でもこれをキャッチできません。"
 
 #. tumbleweed/perl-Test-Exception-LessClever/summary
 #. leap/perl-Test-Exception-LessClever/summary
@@ -30380,6 +30404,12 @@ msgid ""
 "hidden when a DESTROY method calls eval. If a DESTROY method masks $@ a "
 "warning will be generated as well."
 msgstr ""
+"*** これは廃止予定のものです。使用しないでください ***\n"
+"\n"
+"非常に単純化した Test::Exception に対する代替モジュールです。この代替モジュールは、自身のモジュールを隠蔽するための奇妙な方法を使用してお"
+"らず、シンプルであり続けるようになっています。また、このモジュールは DESTROY メソッドが eval を呼び出す際、いくつかの die "
+"が隠蔽されてしまう、という Test::Exception のバグも解決しています。また、 DESTROY メソッドが $@ "
+"をマスクする場合、警告メッセージも出力されます。"
 
 #. tumbleweed/perl-Test-FailWarnings/summary
 #. leap/perl-Test-FailWarnings/summary
@@ -30397,6 +30427,11 @@ msgid ""
 "other things localize '$SIG{__WARN__}', as this is designed to catch "
 "_unhandled_ warnings."
 msgstr ""
+"このモジュールは '$SIG{__WARN__}' をフックして、警告を Test::More の 'fail()' コールに変換します。これは "
+"'done_testing' とともに使用されることを前提にした設計になっているため、あらかじめテストカウントを知っておく必要もありません。\n"
+"\n"
+"Test::NoWarnings と同じように、 '$SIG{__WARN__}' をローカライズしている場合は警告をキャッチしません。これは "
+"_未対応の_ 警告をキャッチしない設計によるものです。"
 
 #. tumbleweed/perl-Test-Fatal/summary
 #. leap/perl-Test-Fatal/summary
@@ -30422,7 +30457,7 @@ msgstr ""
 #. tumbleweed/perl-Test-File-ShareDir/summary
 #. leap/perl-Test-File-ShareDir/summary
 msgid "Create a Fake ShareDir for your modules for testing"
-msgstr ""
+msgstr "モジュールをテストするための偽装 ShareDir  の作成"
 
 #. tumbleweed/perl-Test-File-ShareDir/description
 #. leap/perl-Test-File-ShareDir/description
@@ -30441,11 +30476,22 @@ msgid ""
 "For this reason, unless you have File::ShareDir 1.00 or later installed, "
 "this module will not be usable by you."
 msgstr ""
+"'Test::File::ShareDir' はいくつかの低レベルな配線変更を行なうことで、配布物をいったんインストールするのと同じやり方で、独自の "
+"'share' ディレクトリを消費するテストを実施することができます。\n"
+"\n"
+"このモジュールは 'File::ShareDir' "
+"に対して、テスト対象のインストール先やターゲットシステムに関わらず、最新バージョンのコンテンツを参照できるようにします。\n"
+"\n"
+"*注意:* このモジュールは 'new' スタイルの共有ディレクトリを作成する機能のみが用意されているほか、古い File::ShareDirs "
+"との互換性はありません。\n"
+"\n"
+"このような理由から、 File::ShareDir 1.00 "
+"もしくはそれ以降のバージョンがインストールされていない限り、このモジュールを利用することはできません。"
 
 #. tumbleweed/perl-Test-HasVersion/summary
 #. leap/perl-Test-HasVersion/summary
 msgid "Check Perl modules have version numbers"
-msgstr ""
+msgstr "Perl モジュールにバージョン番号があるかどうかのチェック"
 
 #. tumbleweed/perl-Test-HasVersion/description
 #. leap/perl-Test-HasVersion/description
@@ -30476,11 +30522,32 @@ msgid ""
 "Ok. That's not a very useful module by now. But it will be. Wait for the "
 "upcoming releases."
 msgstr ""
+"開発中の Perl モジュールにバージョン番号が付いているかどうかを確認したい、と思ったことはありませんか？まったく新しく作成したばかりのモジュールでも、"
+"これを忘れずに実施したいと思いませんか？もしもそうであれば、このモジュールこそがお求めのモジュールです。ぜひお使いください！\n"
+"\n"
+"また、誰かの配布物のモジュールや機能を使用する際、バージョン番号のない Perl "
+"モジュールを残したままのものがあるかどうかを確認したい、と思ったことはありませんか？ 'Test::HasVersion' "
+"ではこのような厄介な仕組みにも対応することができます。\n"
+"\n"
+"このモジュールの配布物の中には、 _test_version_ "
+"というスクリプトがあります。これは配布物を展開したディレクトリのルート内から実行することができ、各 _.pm_ ファイルと _lib/_ ディレクトリ内 "
+"(もしあれば) をチェックします。\n"
+"\n"
+"  $ test_version\n"
+"\n"
+"パラメータとしてディレクトリやファイルを指定することもできます。\n"
+"\n"
+"  $ test_version *.pm lib/ inc/   $ test_version .\n"
+"\n"
+"(_t/_ ディレクトリ内には多数の Perl モジュールがありますが、これらは配布物外では使用されないものであるため、バージョンが設定されていません)"
+"\n"
+"\n"
+"ご存じのとおり、現時点ではあまり便利なモジュールではありません。将来のリリースにご期待ください。"
 
 #. tumbleweed/perl-Test-Identity/summary
 #. leap/perl-Test-Identity/summary
 msgid "Assert the Referential Identity of a Reference"
-msgstr ""
+msgstr "参照の参照識別子のアサーション"
 
 #. tumbleweed/perl-Test-Identity/description
 #. leap/perl-Test-Identity/description
@@ -30499,6 +30566,18 @@ msgid ""
 " $ perl -MTest::More=tests,1 -MTest::Identity -e'identical [], []'  1..1  "
 "not ok 1"
 msgstr ""
+"このモジュールは単一のテスト関数 'identical' "
+"を提供します。これは、指定した参照が期待通りのものであることを確認するもので、同じオブジェクトへの参照か、 'undef' であるかを確認します。 "
+"'test::More::is' に似た仕組みですが、このモジュールは 'refaddr' "
+"を使用する点が異なります。また、テスト対象の参照が文字列化や数値化をオーバーロードするようなオブジェクトであっても動作します。\n"
+"\n"
+"また、テストが失敗した際にはよりよい分析メッセージを表示します:\n"
+"\n"
+" $ perl -MTest::More=tests,1 -MTest::Identity -e'identical [], {}'  1..1  "
+"not ok 1      \n"
+"\n"
+" $ perl -MTest::More=tests,1 -MTest::Identity -e'identical [], []'  1..1  "
+"not ok 1"
 
 #. tumbleweed/perl-Test-InDistDir/summary
 #. leap/perl-Test-InDistDir/summary
@@ -30525,11 +30604,22 @@ msgid ""
 "At the same time it will still function correctly when called by EUMM/prove/"
 "etc., since it does not change the environment in those cases."
 msgstr ""
+"このモジュールは Komodo のような IDE 内でテストスクリプトを動作させるためのモジュールです。\n"
+"\n"
+"IDE 内でテストスクリプトを実行する際、テストを実行する際の dist ディレクトリや追加のモジュールを読み込む lib ディレクトリなどを定義するプロ"
+"ジェクトファイルを設定しなければなりません。このような作業は、配布物にちょっとしたパッチを適用したいだけのような場合、面倒なものです。この場合、私は "
+"BEGIN ブロックを追加して私専用の環境を作っています。\n"
+"\n"
+"このモジュールは基本的には BEGIN ブロックそのものです。 \"t/$scriptname\" 内にテストスクリプトが見つからない場合、自動的に 1 "
+"階層だけ上位のディレクトリに移動するほか、 blib が存在しない場合は @INC 内に 'lib' を含めるようになります。このような方法で、実際には "
+"t/ ディレクトリ内で実行しているにも関わらず、 EUMM/prove などから取得するのとほぼ同じ環境を構築することができます。\n"
+"\n"
+"もちろん EUMM/prove などから呼び出した場合も、環境はなにも変更されていないため、問題なく動作します。"
 
 #. tumbleweed/perl-Test-Inter/summary
 #. leap/perl-Test-Inter/summary
 msgid "Framework for More Readable Interactive Test Scripts"
-msgstr ""
+msgstr "よりわかりやすい対話テストスクリプトのためのフレームワーク"
 
 #. tumbleweed/perl-Test-Inter/description
 #. leap/perl-Test-Inter/description
@@ -30553,11 +30643,23 @@ msgid ""
 "individual test requires extra steps, and the tests themselves are not as "
 "readable as they should be."
 msgstr ""
+"これはテストスクリプトを記述するためのもう 1 つのフレームワークです。文法は Test::More "
+"を参考にしていて、機能面のほとんどを実装していますが、そのまま置き換えで使用できるほどではありません。\n"
+"\n"
+"Test::More (およびその他の既存のテストフレームワーク) には下記の 2 つの弱点があり、私自身が今まで使ってこなかった理由でもあります:\n"
+"\n"
+"    合理的な対話処理で特定のテストにアクセスする機能が提供されていない\n"
+"\n"
+"    テストを最も読みやすくなるような形式で作成する機能が提供されていない\n"
+"\n"
+"このような理由から、私がテストを作成して利用する際、既存の Test::* モジュールが使い物にならないと判断しています。 Test::More を利用し"
+"て作成されたテストスクリプトは、このテストスイートの一部として実行する際には問題なく動作しますが、個別のテストをデバッグするには追加の手順が必要で、テスト"
+"自身はわかりやすい出力になっていません。"
 
 #. tumbleweed/perl-Test-JSON/summary
 #. leap/perl-Test-JSON/summary
 msgid "Test JSON data"
-msgstr ""
+msgstr "JSON データのテスト"
 
 #. tumbleweed/perl-Test-JSON/description
 #. leap/perl-Test-JSON/description
@@ -30568,11 +30670,15 @@ msgid ""
 "\n"
 "See the http://www.json.org/ manpage for more information."
 msgstr ""
+"JavaScript Object Notation (JSON) は軽量なデータ交換形式です。 Test::JSON は、お使いのスクリプトが正しい "
+"JSON 形式を出力しているかや、その JSON が期待通りの出力になっているのかを検証することができるモジュールです。\n"
+"\n"
+"詳しくは http://www.json.org/ をお読みください。"
 
 #. tumbleweed/perl-Test-LWP-UserAgent/summary
 #. leap/perl-Test-LWP-UserAgent/summary
 msgid "LWP::UserAgent suitable for simulating and testing network calls"
-msgstr ""
+msgstr "ネットワークコールを擬似してテストするための LWP::UserAgent"
 
 #. tumbleweed/perl-Test-LWP-UserAgent/description
 #. leap/perl-Test-LWP-UserAgent/description
@@ -30616,11 +30722,42 @@ msgid ""
 ">last_http_response_received->code,         '200',         'I should have "
 "gotten an OK response',     );"
 msgstr ""
+"このモジュールは LWP::UserAgent のサブクラスで、実際にネットワークを介してリクエストを送信するような主要な低レベルのメソッドに対してオーバ"
+"ーライドを行なうことで、リクエストの送信を傍受し、特定の応答を擬似します。これにより、サーバ側が既知のプロトコルを使用している場合、クライアント側のネット"
+"ワークコードのテストを非常にやりやすくすることができます。\n"
+"\n"
+"synopsis には、アプリケーションがサーバからの様々な応答に反応する際の典型的なテストケースが示されています。このモジュールは、テスト先となる実際の"
+"サーバを用意することなく、要求に応じて様々な応答を返すことができます。このモジュールは、非常にまれなケースをテストしたり、通常はサーバから返されないような"
+"エラーをテストしたりしたい場合には、非常に価値のあるものになります。\n"
+"\n"
+"応答は様々な方法で設定することができますし、モジュール内のフックを設定することもできます。個別のインターフェイスメソッドについて、詳しくはドキュメンテーシ"
+"ョンをお読みください。\n"
+"\n"
+"要求を処理する際、 PSGI アプリケーションを使用することもできます。詳しくは配布物内の _examples/call_psgi.t_ および /"
+"register_psgi をご覧ください。\n"
+"\n"
+"また、要求のうちのいくつか、もしくはそのすべてを通常通りネットワーク経由で送信することもできます。この場合、このクラスが提供するフックを利用して、送受信さ"
+"れるデータをテストすることもできます:\n"
+"\n"
+"    my $useragent = Test::LWP::UserAgent->new(network_fallback => 1);\n"
+"\n"
+"もしくは、下記のようにすることもできます:\n"
+"\n"
+"    $useragent->map_network_response(qr/real.network.host/);\n"
+"\n"
+"    \n"
+"\n"
+"         is(         $useragent->last_useragent->timeout,         "
+"180,         'timeout was overridden properly',     );     is(         "
+"$useragent->last_http_request_sent->uri,         'uri my code should have "
+"constructed',     );     is(         "
+"$useragent->last_http_response_received->code,         '200',         'I "
+"should have gotten an OK response',     );"
 
 #. tumbleweed/perl-Test-LongString/summary
 #. leap/perl-Test-LongString/summary
 msgid "tests strings for equality, with more helpful failures"
-msgstr ""
+msgstr "文字列の一致のテストおよび追加の支援機能"
 
 #. tumbleweed/perl-Test-LongString/description
 #. leap/perl-Test-LongString/description
@@ -30631,6 +30768,9 @@ msgid ""
 "line string like an HTML document, or find specific items in binary data, "
 "this is the module for you."
 msgstr ""
+"このモジュールは Test::More "
+"の文字列比較関数に対する直接的な置き換えをいくつか提供するものですが、特に長い文字列を比較するのに適した仕組みです。 HTML "
+"の文書やバイナリデータ内の特定データなど、複数行にわたるテキスト内で検索を行なわなければならなかった場合には、このモジュールが便利でしょう。"
 
 #. tumbleweed/perl-Test-Manifest/summary
 #. leap/perl-Test-Manifest/summary
@@ -30639,7 +30779,6 @@ msgstr "t/test_manifest ファイルの処理"
 
 #. tumbleweed/perl-Test-Manifest/description
 #. leap/perl-Test-Manifest/description
-#, fuzzy
 msgid ""
 "'Test::Harness' assumes that you want to run all of the _.t_ files in the _t/"
 "_ directory in ASCII-betical order during 'make test' or './Build test' "
@@ -30664,29 +30803,33 @@ msgid ""
 "Optionally, you can add a number after the test name in test_manifest to "
 "define sets of tests. See 'get_t_files' for more information."
 msgstr ""
-"Test::Harness は、特に指定しなければ、 make test 時に t/ ディレクトリ内にある"
-"すべての .t ファイルをアルファベット順に実行することを前提にしています。これ"
-"により、テストファイルに対する名前付け方法を調整することで、テスト順序を制御"
-"できることになります。このような方式により、ソースコードが制御下にあっても名"
-"前を固定することができ、テスト順序も固定できることになります。\n"
+"Test::Harness は、特に指定しなければ、 make test 時に t/ ディレクトリ内にあるすべての .t ファイルをアルファベット順に実行"
+"することを前提にしています。これにより、テストファイルに対する名前付け方法を調整することで、テスト順序を制御できることになります。このような方式により、ソ"
+"ースコードが制御下にあっても名前を固定することができ、テスト順序も固定できることになります。\n"
 "\n"
-"Test::Manifest は Makefile 内の test_via_harness を置き換えることで、既定の順"
-"序を上書きすることができます。 t/*.t ファイルをアルファベット順に実行する代わ"
-"りに t/test_manifest ファイルを参照し、テストの実行可否と順序を指定することが"
-"できるようになります。 MakeMaker に対しては正しい値を指定することになり、すべ"
-"てがうまく動作するようになります。"
+"Test::Manifest は Makefile 内の test_via_harness を置き換えることで、既定の順序を上書きすることができます。 "
+"t/*.t ファイルをアルファベット順に実行する代わりに t/test_manifest "
+"ファイルを参照し、テストの実行可否と順序を指定することができるようになります。 MakeMaker "
+"に対しては正しい値を指定することになり、すべてがうまく動作するようになります。\n"
+"\n"
+"_t/test_manifest_ には、実行したいテストの一覧を記述します。ファイル内の順序は実行の順序そのものです。 Perl と同様に、行頭を '#"
+"' で始めればコメントを記述することができるほか、 'Test::Manifest' では各行の行頭および行末の空白を削除します。このほか、"
+"指定したファイルが実際に _t/_ "
+"ディレクトリ内に存在するかどうかもチェックします。ファイルが存在しない場合、テストファイル内の名前としては出力されず、警告メッセージが表示されます。\n"
+"\n"
+"このほか、 test_manifest 内でテスト名の後に番号を追加することもできます。詳しくは 'get_t_files' をお読みください。"
 
 #. tumbleweed/perl-Test-Memory-Cycle/summary
 #. tumbleweed/perl-Test-Memory-Cycle/description
 #. leap/perl-Test-Memory-Cycle/summary
 #. leap/perl-Test-Memory-Cycle/description
 msgid "Check for memory leaks and circular memory references"
-msgstr ""
+msgstr "メモリリークと循環参照のチェック"
 
 #. tumbleweed/perl-Test-Mock-LWP/summary
 #. leap/perl-Test-Mock-LWP/summary
 msgid "Easy mocking of LWP packages"
-msgstr ""
+msgstr "LWP パッケージの簡易モッキング"
 
 #. tumbleweed/perl-Test-Mock-LWP/description
 #. leap/perl-Test-Mock-LWP/description
@@ -30695,11 +30838,13 @@ msgid ""
 "several different modules I've written. This version is very minimalist, but "
 "works for my needs so far. I'm very open to new suggestions and improvements."
 msgstr ""
+"このパッケージは、今まで私が作成してきた LWP 等を擬似するための様々なコードから作られたパッケージです。このバージョンは非常に限られたものですが、私自"
+"身の要件には十分なものです。提案や改善要求などがあれば歓迎します。"
 
 #. tumbleweed/perl-Test-MockModule/summary
 #. leap/perl-Test-MockModule/summary
 msgid "Override subroutines in a module for unit testing"
-msgstr ""
+msgstr "単体テスト向けにモジュール内でサブルーチンをオーバーライドするモジュール"
 
 #. tumbleweed/perl-Test-MockModule/description
 #. leap/perl-Test-MockModule/description
@@ -30712,11 +30857,17 @@ msgid ""
 "restored. This happens automatically when all MockModule objects for the "
 "given module go out of scope, or when you 'unmock()' the subroutine."
 msgstr ""
+"'Test::MockModule' は単体テストを実施する目的で、他のパッケージ内のサブルーチンを一時的に再定義する機能を提供します。\n"
+"\n"
+"'Test::MockModule' "
+"のオブジェクトは、指定したモジュールに対して擬似サブルーチンを設定します。オブジェクト側では元のサブルーチンを記憶しているため、元に戻すのも簡単です。"
+"これは指定したモジュールに対するすべての MockModule オブジェクトがスコープ外に外れた時や、サブルーチンを 'unmock()' "
+"したりした場合に自動的に行なわれます。"
 
 #. tumbleweed/perl-Test-MockObject/summary
 #. leap/perl-Test-MockObject/summary
 msgid "Perl extension for emulating troublesome interfaces"
-msgstr ""
+msgstr "問題のあるインターフェイスを擬似するための Perl 拡張"
 
 #. tumbleweed/perl-Test-MockObject/description
 #. leap/perl-Test-MockObject/description
@@ -30733,11 +30884,18 @@ msgid ""
 "interfaces with very little code. You don't have to reimplement the "
 "behavior, just the input and the output."
 msgstr ""
+"これは全く他のモジュールを利用しないサンプルプログラムで、テストを行ないやすい仕組みです。また、プログラムのテストは入力を他のモジュールに対して完全に偽造"
+"することを意味するため、とにかくテストされていないと思われるものから、正しい出力を丸め込もうとすることでもあります。\n"
+"\n"
+"テストは環境全体を制御したい場合には非常に簡単です。 Test::MockObject を利用すると、より簡単になります。\n"
+"\n"
+"Test::MockObject を利用することで、非常に少ないコードで特定のインターフェイスに準拠するオブジェクトを作成することができるようになります。"
+"動作を再実装する必要はなく、入力と出力だけを設定するだけです。"
 
 #. tumbleweed/perl-Test-MockTime/summary
 #. leap/perl-Test-MockTime/summary
 msgid "Replaces actual time with simulated time"
-msgstr ""
+msgstr "実際の時間を擬似的な時間に置き換えるモジュール"
 
 #. tumbleweed/perl-Test-MockTime/description
 #. leap/perl-Test-MockTime/description
@@ -30748,11 +30906,14 @@ msgid ""
 "set_relative_time, set_absolute_time or set_fixed_time to alter future calls "
 "to gmtime,time or localtime."
 msgstr ""
+"このモジュールはテストスイートに対して、特定の時間を指定できるようにするものです。特に localtime, gmtime, time "
+"をコンパイル時にオーバーライドし、ユーザが指定した擬似時間を set_relative_time, set_absolute_time, "
+"set_fixed_time を介して設定し、それ以降の localtime, gmtime, time での返り値とします。"
 
 #. tumbleweed/perl-Test-Most/summary
 #. leap/perl-Test-Most/summary
 msgid "Most commonly needed test functions and features."
-msgstr ""
+msgstr "最も必要とされるテスト関数と機能"
 
 #. tumbleweed/perl-Test-Most/description
 #. leap/perl-Test-Most/description
