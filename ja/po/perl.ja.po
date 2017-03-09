@@ -30943,6 +30943,26 @@ msgid ""
 "\n"
 "    use Test::Most tests => 4;     no strict;     no warnings;"
 msgstr ""
+"Test::Most は、よくあるお決まりのスクリプトの作成を避け、テストをよりやりやすくするための仕組みです。このモジュールは、"
+"最もよく使われるテストモジュールに対して \"ワンストップショッピング\" の仕組みを提供しています。事実、このモジュール自身もしばしば Test::"
+"Most の最新のバージョンを利用してバグ修正を行なっているため、これらのモジュールを個別にアップグレードし続ける必要もなくなっています。\n"
+"\n"
+"このモジュールは最もよく使われるテスト関数を提供するほか、 strict や warning "
+"を自動的に有効化して、テストスイートに対する制御をよりうまく調整できるようになっています。\n"
+"\n"
+"    use Test::Most tests => 4, 'die';\n"
+"\n"
+"    ok 1, 'Normal calls to ok() should succeed';     is 2, 2, '... as should "
+"all passing tests';     eq_or_diff [3], [4], '... but failing tests should "
+"die';     ok 4, '... will never get to here';\n"
+"\n"
+"ご覧のとおり、 'eq_or_diff' テストが失敗しています。それはインポートリスト内で 'die' "
+"しているためで、テストプログラムはその時点で停止しています。\n"
+"\n"
+"strict や warnings "
+"を有効化したくない場合は、それらは明示的に無効化することができます。そのため、有効化することを忘れてしまうようなこともありません。\n"
+"\n"
+"    use Test::Most tests => 4;     no strict;     no warnings;"
 
 #. tumbleweed/perl-Test-Needs/summary
 #. leap/perl-Test-Needs/summary
@@ -30974,11 +30994,28 @@ msgid ""
 "rather than skip. Subtests will be aborted, but the test script will "
 "continue running after that point."
 msgstr ""
+"モジュールが利用できない場合はテストスクリプトを飛ばす機能を提供します。要求されたモジュールは読み込もうとしますし、必要であればバージョンのチェックも行な"
+"います。モジュールが見つからない場合、テストスクリプトは実行されず飛ばされます。モジュールは見つかるものの、コンパイルに失敗した場合は、飛ばされずエラーと"
+"して終了します。\n"
+"\n"
+"サブテスト内でこれを使用した場合、残りのサブテストは実行されず飛ばされます。\n"
+"\n"
+"テストを飛ばす処理は、すでにいくつかのテストが実行されている場合にも動作しますし、プランが設定されていても動作します。\n"
+"\n"
+"バージョンは '$module->VERSION($wanted_version)' "
+"の呼び出しでチェックします。バージョンは受け入れ可能な形式で提示されなければなりません。それ以外の処理は行ないません。\n"
+"\n"
+"'perl' をモジュールとして使用した場合、バージョンチェックは実行されている Perl "
+"のバージョンに対して行なわれます。バージョンは番号で指定できるほか、ドットで区切った文字列や v-string, "
+"バージョンオブジェクトを利用することができます。\n"
+"\n"
+"また、 'RELEASE_TESTING' "
+"環境変数が設定されている場合、テストは飛ばされず失敗します。サブテストも中断されますが、テストスクリプトが実行中であった場合はそのままテストが続きます。"
 
 #. tumbleweed/perl-Test-NoTabs/summary
 #. leap/perl-Test-NoTabs/summary
 msgid "Check the presence of tabs in your project"
-msgstr ""
+msgstr "プロジェクト内にタブが存在しているかどうかのテスト"
 
 #. tumbleweed/perl-Test-NoTabs/description
 #. leap/perl-Test-NoTabs/description
@@ -30986,11 +31023,12 @@ msgid ""
 "This module scans your project/distribution for any perl files (scripts, "
 "modules, etc) for the presence of tabs."
 msgstr ""
+"このモジュールは、タブの存在を確認するために、プロジェクトや配布物内の任意の Perl ファイル (スクリプト、モジュールなど) を調査します。"
 
 #. tumbleweed/perl-Test-NoWarnings/summary
 #. leap/perl-Test-NoWarnings/summary
 msgid "Make sure you didn't emit any warnings while testing"
-msgstr ""
+msgstr "テスト中にいかなる警告も表示していないことを確認するモジュール"
 
 #. tumbleweed/perl-Test-NoWarnings/description
 #. leap/perl-Test-NoWarnings/description
@@ -31009,11 +31047,20 @@ msgid ""
 "The test is run by an 'END' block in Test::NoWarnings. It will not be run "
 "when any forked children exit."
 msgstr ""
+"一般的に、テスト内では警告を表示すべきではありません。このモジュールはすべての警告を取り込んで保存します。また、お使いのスクリプトが警告なしで終了したこと"
+"が確認されると、追加のテストを自動的に実行します。何らかの警告が表示された場合、このテストは \"not ok\" "
+"を出力して警告の場所と時刻、および発生時のスタックトレースをそれぞれ出力します。\n"
+"\n"
+"お使いのテストが警告を発する *可能性がある* 場合、 Test::Warn を利用してそれらを取り込んで保存しておくべきです。 Test::"
+"NoWarnings では、それらは表示されず、文句を言われることもありません。\n"
+"\n"
+"テストは Test::NoWarnings 内の 'END' ブロックで実行されます。何らかの fork "
+"された子プロセスが終了してしまった場合、これは実行されません。"
 
 #. tumbleweed/perl-Test-Number-Delta/summary
 #. leap/perl-Test-Number-Delta/summary
 msgid "Compare the difference between numbers against a given tolerance"
-msgstr ""
+msgstr "指定した公差で数値の違いを比較するモジュール"
 
 #. tumbleweed/perl-Test-Number-Delta/description
 #. leap/perl-Test-Number-Delta/description
@@ -31042,11 +31089,25 @@ msgid ""
 "of the difference is *less than* epsilon (for equality tests) or\n"
 "*greater than* epsilon (for inequality tests)."
 msgstr ""
+"何らかの時点で、多くのプログラマは小数点の数値を比較する必要にかられることがあります。よくあるテストでは、差の絶対値が特定の範囲内にあるかどうか (ε) "
+"をチェックしたりします。このモジュールはそのような機能を Test::More で利用することができるようになるモジュールです。使用方法は Test::"
+"More にある他のテスト機能と同様です。意味論的には、 \"delta_within' 関数は下記のような機能を提供します:\n"
+"\n"
+" ok ( abs($p - $q) < $epsilon, '$p is equal to $q' ) or      diag \"$p is "
+"not equal to $q to within $epsilon\";\n"
+"\n"
+"上記の例では、構造は何も悪くないものの、テストスクリプト内で繰り返し入力するのは苦痛です。このモジュールは、上記のような仕組みを 1 "
+"つの関数呼び出しで実現します。 'delta_ok' 関数も同様ですが、公差に対するグローバルな既定値を設定して使用するか、もしくはその場で '相対' "
+"誤差を計算し、 'delta_ok' のパラメータサイズに自動的にスケールします。いずれの関数とも自動的に公開されます。\n"
+"\n"
+"浮動小数点のチェックは常に信頼できるものとは呼べないことから、 '公差が指定の範囲内' ではなく '等しい' チェックは行なうことができません。そのため、"
+" Test::Number::Delta は、値の差が *指定よりも小さいかどうか* か、もしくは *指定よりも大きいかどうか* "
+"のみをテストすることができます。"
 
 #. tumbleweed/perl-Test-Object/summary
 #. leap/perl-Test-Object/summary
 msgid "Thoroughly testing objects via registered handlers"
-msgstr ""
+msgstr "登録済みハンドラを介した大まかなテスト"
 
 #. tumbleweed/perl-Test-Object/description
 #. leap/perl-Test-Object/description
@@ -31080,11 +31141,30 @@ msgid ""
 "to 'object_ok'. You should account for this correctly in your expected test "
 "count."
 msgstr ""
+"クラスが深いツリー構造になっている場合、 4 段階や 5 "
+"段階程度のサブクラスをテストする場合、サブクラスだけではなくすべての親クラスに対する正しい動作に従う必要があります。\n"
+"\n"
+"これはサブクラスの実装が、オブジェクトの動作という点で \"壊れて\" いないことを確認すべき個所です。\n"
+"\n"
+"'Test::Object' "
+"は単一の呼び出しで、継承ツリー内のすべてのクラスに対して、その動作が期待通りのものであることを簡単にテストできるように設計されています。\n"
+"\n"
+"これを実行するには、 'Test::Object' でテスト (CODE 形式または関数の参照) を \"登録\" "
+"する必要があります。このテストでは、特定のクラスに関連付ける必要があります。\n"
+"\n"
+"テストスクリプト内で 'object_ok' を呼び出すと、 'Test::Object' はすべての登録済みテストに対してオブジェクトをテストします。"
+"各クラスに対してオブジェクトは '$object->isa($class)' に応答し、適切なテスト関数を呼び出します。\n"
+"\n"
+"このようにすることで、 'sa' "
+"に対して異なる応答をするアダプタオブジェクトなどに対して、それ自体が正しく宣言されているクラスに対して、既定値をテストするようになります。\n"
+"\n"
+"これにより、各コールに対して 1 つ以上のテストが \"カウント\" "
+"されることがあります。テスト回数を確認しているような場合は、これを正しく扱う必要があります。"
 
 #. tumbleweed/perl-Test-Output/summary
 #. leap/perl-Test-Output/summary
 msgid "Utilities to test STDOUT and STDERR messages."
-msgstr ""
+msgstr "STDOUT, STDERR のメッセージをテストするユーティリティ"
 
 #. tumbleweed/perl-Test-Output/description
 #. leap/perl-Test-Output/description
@@ -31100,6 +31180,13 @@ msgid ""
 "Likewise, Capture::Tiny provides a much more robust capture mechanism "
 "without than the original Test::Output::Tie."
 msgstr ""
+"Test::Output は STDOUT や STDERR "
+"に対するテスト出力のためのシンプルなインターフェイスを提供します。様々なユーティリティがテスターにとって、できる限り柔軟になるよう努力してきました。\n"
+"\n"
+"もともとこのモジュールは、外部の依存関係を不要にしていましたが、 Sub :: "
+"Exporterが提供する機能は、Exporterが提供する機能を超えて機能します。\n"
+"\n"
+"同様に、 Capture::Tiny はもともとの Test::Output::TIe 以上の高性能なキャプチャ機構を提供します。"
 
 #. tumbleweed/perl-Test-Pod/summary
 msgid "Check for Pod Errors in Files"
@@ -31220,7 +31307,7 @@ msgstr ""
 #. tumbleweed/perl-Test-Refcount/summary
 #. leap/perl-Test-Refcount/summary
 msgid "Assert Reference Counts On Objects"
-msgstr ""
+msgstr "オブジェクトに対するアサート参照カウント"
 
 #. tumbleweed/perl-Test-Refcount/description
 #. leap/perl-Test-Refcount/description
@@ -31239,11 +31326,20 @@ msgid ""
 "to what was expected, either of the following two modules may be used to "
 "assist the developer in finding where the references are."
 msgstr ""
+"Perl のガーベージコレクタは、プログラムを通常に実行している間はシンプルな参照カウントを利用しています。これにより、他のパーツ内に循環参照や弱い参照が"
+"あると、オブジェクトが期待よりも長く保持されることになります。この問題を回避するには、クラスコンストラクタで新しいオブジェクトを作成した際には、"
+"参照カウントが 1 であるべきです。この方法により、呼び出し元はすべての参照から外れた際、適切な DESTROY を実行することができるようになります。"
+"\n"
+"\n"
+"このモジュールは、呼び出し元に対して適切な動作をするよう、オブジェクトクラスに対する属性保持を支援する 2 種類の関数を用意しています。\n"
+"\n"
+"アサーションが失敗した場合、それは実際の参照カウントが期待したものとは異なることを意味します。下記の 2 "
+"種類のモジュールを利用して、どこに参照があるのかを調べることもできます。"
 
 #. tumbleweed/perl-Test-Requires/summary
 #. leap/perl-Test-Requires/summary
 msgid "Checks to see if the module can be loaded"
-msgstr ""
+msgstr "モジュールを読み込むことができるかどうかをテストするモジュール"
 
 #. tumbleweed/perl-Test-Requires/description
 #. leap/perl-Test-Requires/description
@@ -31258,11 +31354,20 @@ msgid ""
 "\n"
 "         use Test::Requires \"v5.10\";"
 msgstr ""
+"Test::Requires はモジュールを読み込むことができるかどうかをチェックします。\n"
+"\n"
+"このチェックが失敗した場合は、テスト自体を失敗とはせず、 *すべてのテストを飛ばします* 。\n"
+"\n"
+"Test::Requires は Perl の最小バージョンのテストにも利用することができます:\n"
+"\n"
+"    use Test::Requires \"5.010\";  # 引用符が必要です!!\n"
+"\n"
+"         use Test::Requires \"v5.10\";"
 
 #. tumbleweed/perl-Test-RequiresInternet/summary
 #. leap/perl-Test-RequiresInternet/summary
 msgid "Easily test network connectivity"
-msgstr ""
+msgstr "簡易ネットワーク接続テスト"
 
 #. tumbleweed/perl-Test-RequiresInternet/description
 #. leap/perl-Test-RequiresInternet/description
@@ -31287,6 +31392,19 @@ msgid ""
 "If the sockets cannot connect to the specified hosts and ports, the "
 "exception is caught, reported and the tests skipped."
 msgstr ""
+"このモジュールは、ローカル環境では動作しないインターネットリソースのテストを行なうよりも前に、ネットワークの接続を簡単にテストするために作られたものです。"
+" Perl の中枢部を除いて、他のモジュールは一切必要としません。\n"
+"\n"
+"ホスト／ポートの対を指定しない場合、このモジュールはホストを 'www.google.com' ポートを '80' に設定します。\n"
+"\n"
+"必要であればポートを名前で (例: 'http', 'ftp') 指定することもできます。名前で指定した場合、このモジュールは "
+"'getservbyname' を利用してポート番号を参照します。\n"
+"\n"
+"ホストとポートを指定する場合は、それらは *ペア* で指定しなければなりません。いずれか片方だけを省略した場合は、致命的なエラーとなります。\n"
+"\n"
+"また、環境変数 'NO_NETWORK_TESTING' が設定されていた場合、テストではソケット接続をまったく行なわず、テスト自体を飛ばします。\n"
+"\n"
+"ソケットが指定したホスト及びポートに接続できない場合、例外をキャッチして報告したあと、テスト自体を飛ばします。"
 
 #. tumbleweed/perl-Test-Script/summary
 #. leap/perl-Test-Script/summary
@@ -31313,11 +31431,23 @@ msgid ""
 "Where a clash exists between wanting more functionality and maintaining "
 "platform safety, this module will err on the side of platform safety."
 msgstr ""
+"このモジュールは、お使いの Perl 配布物内の _script_ パス (もしくは一般に使用される _bin_ パス) にあるスクリプトに対して、"
+"必要なテスト量の 80% を占める基本テストを提供することを目的にしています。\n"
+"\n"
+"これに加えて、完全なプラットフォーム互換性を持つ機能の提供と、できる限り控えめな機能の提供を目的としています。\n"
+"\n"
+"言い換えれば、そのプログラムを特定のプラットフォーム上で動作させる場合、 *Test::Scriot* もまた同じプラットフォームで動作すべきです。 "
+"100% を下回る状況は受け入れられるものではありません。\n"
+"\n"
+"これを実現する際、 *Test::Script* がお使いのすべてのモジュールに対して安全に依存関係を作成できるモジュールであることが望ましく、依存関係の"
+"理由で特定のプラットフォームで問題を発生させるようなリスクもないことが望まれます。\n"
+"\n"
+"さらなる機能への欲求とプラットフォームの安全性維持との間で衝突が発生した場合、このモジュールはプラットフォームの安全性を優先してエラーを発生させます。"
 
 #. tumbleweed/perl-Test-SharedFork/summary
 #. leap/perl-Test-SharedFork/summary
 msgid "Fork Test"
-msgstr ""
+msgstr "fork テスト"
 
 #. tumbleweed/perl-Test-SharedFork/description
 #. leap/perl-Test-SharedFork/description
@@ -31328,11 +31458,16 @@ msgid ""
 "\n"
 "This module merges test count with parent process & child process."
 msgstr ""
+"Test::SharedFork は Test::Builder に対するユーティリティモジュールです。\n"
+"\n"
+"このモジュールは、お使いのテストケース内で fork(2) に対する安全性を提供します。\n"
+"\n"
+"このモジュールは、親プロセスと子プロセスとの間でテストカウントをマージします。"
 
 #. tumbleweed/perl-Test-Spec/summary
 #. leap/perl-Test-Spec/summary
 msgid "Write tests in a declarative specification style"
-msgstr ""
+msgstr "宣言的な仕様スタイルでテストを作成するモジュール"
 
 #. tumbleweed/perl-Test-Spec/description
 #. leap/perl-Test-Spec/description
@@ -31346,6 +31481,11 @@ msgid ""
 "This module is inspired by and borrows heavily from RSpec (http://rspec.info/"
 "documentation/), a BDD tool for the Ruby programming language."
 msgstr ""
+"これは振る舞い駆動型の開発 (BDD) を Perl で行なうための宣言的な仕様スタイルです。テスト (もしくは例) はサブルーチン名ではなく文字列で命名"
+"されるため、繰り返しアンダースコアを入力するような疲れを軽減することができるばかりか、テストレポートからより読みやすくなるという利点もあります。\n"
+"\n"
+"このモジュールは RSpec (http://rspec.info/documentation/) と呼ばれる Ruby プログラミング言語向け BDD "
+"ツールをヒントにし、大幅に考え方を拝借しています。"
 
 #. tumbleweed/perl-Test-Spelling/summary
 #. leap/perl-Test-Spelling/summary
@@ -31394,10 +31534,40 @@ msgid ""
 "ignored. In the near future, the preprocessing we do on the arguments to the "
 "add_stopwords manpage will be changed and documented properly."
 msgstr ""
+"'Test::Spelling' は POD ファイルのスペルチェックを行ない、その結果を 'Test::More' "
+"のやり方で報告します。このモジュールを利用するには、 _spell_, _aspell_, _ispell_, _hunspell_ "
+"のようなスペルチェックプログラムが必要です。\n"
+"\n"
+"    use Test::Spelling;     pod_file_spelling_ok('lib/Foo/Bar.pm', 'POD file "
+"spelling OK');\n"
+"\n"
+"ただし、 CPAN 配布物をインストールする際にスペルチェックを実施するのはよくありませんし、制御下にない環境のパッケージに対して実施するのもよくありませ"
+"ん。どの単語リストやスペルチェックプログラムを利用しているのかによって、同じ結果を予測することはできないためです。また、"
+"配布物内にテストとして含めることも *できます* が、モジュールの作者が実行した場合にのみテストが行なわれるよう、 'skip_all unless -"
+"d 'inc/.author'' で保護することを忘れずに実施するか、もしくはそれらを配布物内の _xt/_ ディレクトリ内に配置してください。ともかく、"
+"このモジュールをインストールしようとしている人々にとっては、配布物を転送している際に記述ミスが発生したりすることはありませんから、"
+"このようなテストは実際には不要でしょう :-)\n"
+"\n"
+"また、独自のストップワードを追加することもできます。ストップワードとはスペルチェックで無視すべき単語のことで、下記のようにして使用します:\n"
+"\n"
+"    add_stopwords(qw(asdf thiswordiscorrect));\n"
+"\n"
+"この方法でストップワードを追加すると、テストスクリプト内の残りの個所に対するすべてのファイルに影響します。ファイルごとにストップワードを各 .pm "
+"ファイルに追加するための様々な方法について、詳しくは Pod::Spell (このモジュールのベース) をご覧ください。\n"
+"\n"
+"多数のストップワードを設定している場合は、それらをファイル内の 'DATA' セクションに配置するとよいでしょう:\n"
+"\n"
+"    use Test::Spelling;     add_stopwords(<DATA>);     "
+"all_pod_files_spelling_ok();\n"
+"\n"
+"    __END__     folksonomy     Jifty     Zakirov\n"
+"\n"
+"広報互換性を維持するため、コメントマーカーといくつかのホワイトスペースは無視されます。近い将来には add_stopwords "
+"に対するパラメータの事前処理方法が変更され、適切に文書化される予定です。"
 
 #. tumbleweed/perl-Test-Strict/summary
 msgid "Check syntax, presence of use strict; and test coverage"
-msgstr ""
+msgstr "文法のチェック／use strict の存在チェック／テストカバレッジ"
 
 #. tumbleweed/perl-Test-Strict/description
 msgid ""
@@ -31417,12 +31587,12 @@ msgid ""
 "This module should be able to run under the -T flag for perl >= 5.6. All "
 "paths are untainted with the following pattern: 'qr|^([-+@\\w./:\\\\]+)$|' "
 "controlled by '$Test::Strict::UNTAINT_PATTERN'."
-msgstr ""
+msgstr "'$Test::Strict::UNTAINT_PATTERN' で制御される 'qr|^([-+@\\w./:\\\\]+)$|'"
 
 #. tumbleweed/perl-Test-SubCalls/summary
 #. leap/perl-Test-SubCalls/summary
 msgid "Track the number of times subs are called"
-msgstr ""
+msgstr "サブルーチンを呼び出した回数を数えるモジュール"
 
 #. tumbleweed/perl-Test-SubCalls/description
 #. leap/perl-Test-SubCalls/description
@@ -31436,11 +31606,15 @@ msgid ""
 "association with your normal the Test::More manpage (or similar) test "
 "scripts."
 msgstr ""
+"様々な状況 (キャッシュ機能のコードのテストなど) "
+"で繰り返しのテストを実行し、指定した回数だけサブルーチン内の特定の個所を実行したりしたいことがあります。\n"
+"\n"
+"このモジュールは、通常の Test::More テストスクリプトを利用して、特定の回数だけ関数を実行する機能を提供します。"
 
 #. tumbleweed/perl-Test-Synopsis/summary
 #. leap/perl-Test-Synopsis/summary
 msgid "Test your SYNOPSIS code"
-msgstr ""
+msgstr "SYNOPSIS コードのテスト"
 
 #. tumbleweed/perl-Test-Synopsis/description
 #. leap/perl-Test-Synopsis/description
@@ -31472,6 +31646,29 @@ msgid ""
 "this code doesn't compile because there's a typo in your variable name _"
 "$tempalte_. Test::Synopsis will catch that error before you ship it."
 msgstr ""
+"Test::Synopsis は、お使いの _lib_ ディレクトリ内にある .pm および .pod ファイルを検索し、それらのファイル内の "
+"_SYNOPSIS_ セクション内のコードが Perl のコンパイルチェックに合格するかどうかをテストします。\n"
+"\n"
+"なお、このモジュールは、 * コード内に 'BEGIN {}' ブロックや 'use' ステートメントが存在しない限り * 、 Perl の文法のみを ("
+"'sub' でコードをくくることで) チェックするだけで、実際にコードを実行することはありません。\n"
+"\n"
+"例えばお使いのモジュール内に、下記の POD があるとします:\n"
+"\n"
+"  =head1 NAME\n"
+"\n"
+"  Awesome::Template - My awesome template\n"
+"\n"
+"  =head1 SYNOPSIS\n"
+"\n"
+"    use Awesome::Template;\n"
+"\n"
+"    my $template = Awesome::Template->new;     $tempalte->render(\"template."
+"at\");\n"
+"\n"
+"  =head1 DESCRIPTION\n"
+"\n"
+"このモジュールの利用者は、 synopsos 内にあるコードをコピー＆ペーストして実行しようとしますが、上記の例では変数名が _$tempalte_ "
+"のように間違っているため、コンパイルできないことがわかります。 Test::Synopsis では、このようなエラーを出荷前にチェックすることができます。"
 
 #. tumbleweed/perl-Test-TCP/summary
 #. leap/perl-Test-TCP/summary
@@ -31486,7 +31683,7 @@ msgstr "Test::TCP は TCP/IP ベースのサーバプログラムをテストす
 #. tumbleweed/perl-Test-TempDir-Tiny/summary
 #. leap/perl-Test-TempDir-Tiny/summary
 msgid "Temporary directories that stick around when tests fail"
-msgstr ""
+msgstr "失敗時に維持される一時ディレクトリの機能"
 
 #. tumbleweed/perl-Test-TempDir-Tiny/description
 #. leap/perl-Test-TempDir-Tiny/description
@@ -31528,11 +31725,37 @@ msgid ""
 "regular File::Temp directory rather than in _./tmp_. In such a case, a "
 "warning will be issued."
 msgstr ""
+"このモジュールは Test::More とともに動作させるもので、テストが失敗した際に保持されるような一時 (テンポラリ) "
+"ディレクトリを作成する機能を提供します。\n"
+"\n"
+"これは Test::TempDir をゆるくベースにしたものですが、複雑性がなく可搬性に優れ、かつ中枢以外の依存関係がありません\n"
+"(テストを実施する際には Capture::Tiny をインストールしておくことをお勧めします) 。\n"
+"\n"
+"現在のディレクトリが書き込み可能である場合、ディレクトリのルートは _./tmp_ "
+"になります。それ以外の場合、お使いのシステムで一時ディレクトリが設定されていると、 File::Temp でディレクトリが作成されます。\n"
+"\n"
+"それぞれの _*.t_ ファイルには、テストのファイル名をベースにした (スラッシュとピリオドをそれぞれアンダースコアに変換して) "
+"ルート以下の独自サブディレクトリが設定されます。例えば _t/foot.t_ の場合、テストファイル固有のサブディレクトリは "
+"_./tmp/t_foo_t/_ のようになります。 temidir "
+"で作成されたディレクトリはそのディレクトリ内に配置されます。これにより、テストが失敗してもファイルを簡単に見つけられるようになっています。\n"
+"\n"
+"テストファイル固有の名前は実行している間だけ維持されます。古いディレクトリが存在していた場合は削除されます。\n"
+"\n"
+"テストファイルが終了すると、テストが合格していれば、テストファイル固有のディレクトリは再帰的に削除されます。\n"
+"\n"
+"テストが失敗していて、かつルートディレクトリが _./tmp_ であった場合、テストファイル固有のディレクトリは、"
+"今後の調査のために削除されず維持されます (ルートが File::Temp のディレクトリであった場合は常に削除されてしまいます) 。\n"
+"\n"
+"最後に、何も _./tmp_ 内に残されていない (つまり他のテストが全く失敗していない) 場合、 _./tmp_ も削除されます "
+"(シンボリックリンクでない場合のみ) 。\n"
+"\n"
+"このモジュールは、同時並行でテストをするような競合条件を回避しようと試みます。極端な場合、テストファイル固有のサブディレクトリは _./tmp_ "
+"ではなく、通常の File::Temp ディレクトリとして作為させれる場合もあります。この場合は警告メッセージが表示されます。"
 
 #. tumbleweed/perl-Test-Time/summary
 #. leap/perl-Test-Time/summary
 msgid "Overrides the time() and sleep() core functions for testing"
-msgstr ""
+msgstr "テスト用に time() と sleep() の中枢関数をオーバーライドするモジュール"
 
 #. tumbleweed/perl-Test-Time/description
 #. leap/perl-Test-Time/description
@@ -31546,11 +31769,20 @@ msgid ""
 "    my $now = time;    # $now is equal to 1     sleep 300;         # returns "
 "immediately, displaying a note     my $then = time;   # $then equals to 301"
 msgstr ""
+"Test::Time は時刻を扱うモジュールをテストする際に使用します。 'use' でこのモジュールを指定すると、 'time' および "
+"'sleep' に対する参照が内部化されます。なお、 'use' ステートメントに続いて time => (数値) "
+"のように指定することで、独自の時刻を設定することもできます:\n"
+"\n"
+"    use Test::Time time => 1;\n"
+"\n"
+"    my $now = time;    # $now は 1 になる\n"
+"    sleep 300;         # 即時に処理が返る (ただし注記が表示される)\n"
+"    my $then = time;   # $then は 301 になる"
 
 #. tumbleweed/perl-Test-Trap/summary
 #. leap/perl-Test-Trap/summary
 msgid "Trap exit codes, exceptions, output, etc"
-msgstr ""
+msgstr "終了コード、例外、出力などのトラップ"
 
 #. tumbleweed/perl-Test-Trap/description
 #. leap/perl-Test-Trap/description
@@ -31563,6 +31795,10 @@ msgid ""
 "The values collected by the latest trap can then be queried or tested "
 "through a special trap object."
 msgstr ""
+"主に (とは言っても限定されているわけではありませんが) テストスクリプト内で使用するものです: 設定可能で拡張性の高いブロック型 eval ですが、"
+"既定では (Perl の) STDOUT, STDERR, 警告, 例外, 終了するはずのコード、そのブロックコード内の返り値などを捕捉します。\n"
+"\n"
+"最新のトラップで収集された値は、特殊な trap オブジェクトを介して問い合わせまたはテストすることができます。"
 
 #. tumbleweed/perl-Test-Unit/summary
 #. leap/perl-Test-Unit/summary
@@ -31585,11 +31821,21 @@ msgid ""
 "use in a scripting style environment. Therefore, Test::Unit does not provide "
 "much support for an object-oriented approach to unit testing."
 msgstr ""
+"このフレームワークは、オブジェクト指向の開発パラダイム内で単体テストに使用される (例えばテストの継承など) ことを目的としていて、 Kent Beck "
+"氏と Erich Gamma 氏が開発した Java 向け JUnit "
+"テストフレームワークから派生して作られているものです。このフレームワークの使用方法について学び始めるには、まず Test::Unit::TestCase "
+"と Test::Unit::TestSuite をご覧ください (Test::Unit::Tutorial としてチュートリアルも用意されています) 。"
+"\n"
+"\n"
+"'Test::Unit::Procedural' は手続き型のインターフェイスで Perl 向けの単体テストフレームワークを利用する仕組みです。 "
+"Test::JUnit "
+"はよりシンプルなインターフェイスでフレームワークを提供していて、よりスクリプトスタイルの環境にあった仕組みになっています。そのため、 Test::"
+"Unit は単体テストにあたって、オブジェクト指向のアプローチをあまり多くサポートしていません。"
 
 #. tumbleweed/perl-Test-Unit-Lite/summary
 #. leap/perl-Test-Unit-Lite/summary
 msgid "Unit testing without external dependencies"
-msgstr ""
+msgstr "外部依存関係のない単体テスト"
 
 #. tumbleweed/perl-Test-Unit-Lite/description
 #. leap/perl-Test-Unit-Lite/description
@@ -31605,11 +31851,18 @@ msgid ""
 "modules outside standard Perl distribution. The the Test::Unit::Lite manpage "
 "is provided as a single file."
 msgstr ""
+"このフレームワークは Test::Unit フレームワークの軽量版です。 Test::Unit "
+"クラスやそのメソッドのうち、単体テストを実施するのに必要なもののうちのいくつかを実装しています。 Test::Unit::Lite は Test::"
+"Unit の公開 API と互換性があるように作られていますが、すべてのクラスやメソッドを 100% "
+"実装しているわけではなく、テストを実行するのに必要なもののみを提供しています。\n"
+"\n"
+"Test::Unit::Lite をパッケージの配布物の一部として配布することもできますので、標準の Perl "
+"モジュール以外には依存関係を持たずにパッケージを配布することもできます。また、 Test::Unit::Lite は単一のファイルから構成されています。"
 
 #. tumbleweed/perl-Test-UseAllModules/summary
 #. leap/perl-Test-UseAllModules/summary
 msgid "do use_ok() for all the MANIFESTed modules"
-msgstr ""
+msgstr "MANIFEST に記載されたすべてのモジュールに対する use_ok() の実行"
 
 #. tumbleweed/perl-Test-UseAllModules/description
 #. leap/perl-Test-UseAllModules/description
@@ -31620,18 +31873,22 @@ msgid ""
 "tested and does use_ok() for each of them. Now all you have to do is update "
 "MANIFEST. You don't have to modify the test any more (hopefully)."
 msgstr ""
+"作成するモジュールそれぞれに対して use_ok() を使用するような 00_load.t (もしくはそれに類するもの) を書くのに疲れました。また、"
+"配布物に追加するたびに 00_load_t を追加するのも面倒です。このモジュールは MANIFEST を読み込んでテスト対象のモジュールを検索し、"
+"それぞれに対して use_ok() を実行します。つまり、あなたが更新すべきものは MANIFEST だけということになります。これによって (できれば)"
+" テストコードを修正する必要もなくなります。"
 
 #. tumbleweed/perl-Test-WWW-Mechanize/summary
 #. tumbleweed/perl-Test-WWW-Mechanize/description
 #. leap/perl-Test-WWW-Mechanize/summary
 #. leap/perl-Test-WWW-Mechanize/description
 msgid "Testing-specific WWW::Mechanize subclass"
-msgstr ""
+msgstr "テスト固有の WWW::Mechanize のサブクラス"
 
 #. tumbleweed/perl-Test-WWW-Selenium/summary
 #. leap/perl-Test-WWW-Selenium/summary
 msgid "Test applications using Selenium Remote Control"
-msgstr ""
+msgstr "Selenium Remote Control を使用するテストアプリケーション"
 
 #. tumbleweed/perl-Test-WWW-Selenium/description
 #. leap/perl-Test-WWW-Selenium/description
@@ -31671,7 +31928,7 @@ msgstr ""
 #. tumbleweed/perl-Test-Warnings/summary
 #. leap/perl-Test-Warnings/summary
 msgid "Test for warnings and the lack of them"
-msgstr ""
+msgstr "警告の有無に関するテスト"
 
 #. tumbleweed/perl-Test-Warnings/description
 #. leap/perl-Test-Warnings/description
@@ -31704,7 +31961,7 @@ msgstr ""
 #. tumbleweed/perl-Test-Without-Module/summary
 #. leap/perl-Test-Without-Module/summary
 msgid "Test fallback behaviour in absence of modules"
-msgstr ""
+msgstr "モジュールが存在しない場合のフォールバック動作のテスト"
 
 #. tumbleweed/perl-Test-Without-Module/description
 #. leap/perl-Test-Without-Module/description
@@ -31729,7 +31986,7 @@ msgstr ""
 #. tumbleweed/perl-Text-Aligner/summary
 #. leap/perl-Text-Aligner/summary
 msgid "Module to Align Text"
-msgstr ""
+msgstr "テキストを調整するモジュール"
 
 #. tumbleweed/perl-Text-Aligner/description
 #. leap/perl-Text-Aligner/description
@@ -31759,7 +32016,7 @@ msgstr ""
 #. leap/perl-Text-Autoformat/summary
 #. leap/perl-Text-Autoformat/description
 msgid "Automatic text wrapping and reformatting"
-msgstr ""
+msgstr "自動的なテキスト折り返しと整形"
 
 #. tumbleweed/perl-Text-Brew/summary
 #. leap/perl-Text-Brew/summary
@@ -31807,7 +32064,6 @@ msgstr "カンマ区切りの値を操作するルーチン (XS および PurePe
 
 #. tumbleweed/perl-Text-CSV/description
 #. leap/perl-Text-CSV/description
-#, fuzzy
 msgid ""
 "Text::CSV provides facilities for the composition and decomposition of comma-"
 "separated values using the Text::CSV_XS manpage or its pure Perl version.\n"
@@ -31819,20 +32075,20 @@ msgid ""
 "specified characters as delimiters, separators, and escapes so it is perhaps "
 "better called ASV (anything separated values) rather than just CSV."
 msgstr ""
-"Text::CSV_XS は、カンマ区切りの値を組み立てたり分解したりすることができま"
-"す。 Text:CSV_XS のインスタンスは、値を組み合わせて CSV 文字列を作成したり、 "
-"CSV 文字列を値に変換したりすることができます。\n"
+"Text::CSV は、カンマ区切りの値を組み立てたり分解したりすることができます。 Text:CSV のインスタンスは、値を組み合わせて CSV "
+"文字列を作成したり、 CSV 文字列を値に変換したりすることができます。\n"
 "\n"
-"このモジュールは文字列やファイルを入力として受け取り、任意のユーザ指定の文字"
-"を区切り文字やエスケープ文字として設定できるため、 CSV というよりは ASV "
-"(anything separated values; 任意の文字で区切られた値) と表現したほうが正しい"
-"ものになっています。"
+"Text::CSV クラスのインスタンスは、フィールドを組み合わせて CSV 文字列を作成したり、 CSV "
+"文字列を解釈してフィールドに変換したりすることができます。\n"
+"\n"
+"このモジュールは文字列やファイルを入力として受け取り、任意のユーザ指定の文字を区切り文字やエスケープ文字として設定できるため、 CSV というよりは "
+"ASV (anything separated values; 任意の文字で区切られた値) と表現したほうが正しいものになっています。"
 
 #. tumbleweed/perl-Text-Capitalize/summary
 #. leap/perl-Text-Capitalize/summary
 msgid ""
 "capitalize strings (\"to WORK AS titles\" becomes \"To Work as Titles\")"
-msgstr ""
+msgstr "大文字と小文字の調整 (\"to WORK AS titles\" を \"To Work as Titles\" に)"
 
 #. tumbleweed/perl-Text-Capitalize/description
 #. leap/perl-Text-Capitalize/description
@@ -31878,7 +32134,6 @@ msgid "Perform diffs on files and record sets"
 msgstr "ファイルやレコードセットに対する差分検出"
 
 #. tumbleweed/perl-Text-Diff/description
-#, fuzzy
 msgid ""
 "'diff()' provides a basic set of services akin to the GNU 'diff' utility. It "
 "is not anywhere near as feature complete as GNU 'diff', but it is better "
@@ -31904,18 +32159,24 @@ msgid ""
 "If you pass a filename, but the file can't be read, then 'diff()' will "
 "'croak'."
 msgstr ""
-"\"diff()\" は GNU \"diff\" ユーティリティに似た仕組みを提供する基本サービス集"
-"です。 GNU \"diff\" との完全な機能互換はありませんが、 Perl との統合をより便"
-"利な仕組みで提供していて、全てのプラットフォームで動作します。また、システム"
-"の \"diff\" プログラムを実行する場合に比べて、小さなファイルの場合はより高速"
-"に、大きなファイルの場合は一般に遅く動作します。\n"
+"\"diff()\" は GNU \"diff\" ユーティリティに似た仕組みを提供する基本サービス集です。 GNU \"diff\" "
+"との完全な機能互換はありませんが、 Perl との統合をより便利な仕組みで提供していて、全てのプラットフォームで動作します。また、システムの \""
+"diff\" プログラムを実行する場合に比べて、小さなファイルの場合はより高速に、大きなファイルの場合は一般に遅く動作します。\n"
 "\n"
-"差分抽出の仕組みは Algorithm::Diff のものに依存しています。そのため、システム"
-"内に存在するローカルの \"diff\" プログラムとは、出力が完全に一致するとは限り"
-"ませんが、 diff の形式としては正しく、 \"patch\" プログラムからも利用できる形"
-"式が出力できます。 Algorithm::Diff と GNU diff との違いを確認しているわけでは"
-"ありませんが、確実に等価なものであるかどうかは確認されていないことに注意して"
-"ください。"
+"差分抽出の仕組みは Algorithm::Diff のものに依存しています。そのため、システム内に存在するローカルの \"diff\" "
+"プログラムとは、出力が完全に一致するとは限りませんが、 diff の形式としては正しく、 \"patch\" "
+"プログラムからも利用できる形式が出力できます。 Algorithm::Diff と GNU diff "
+"との違いを確認しているわけではありませんが、確実に等価なものであるかどうかは確認されていないことに注意してください。\n"
+"\n"
+"*注意*: 'diff' 関数をインポートしたくない場合は、下記のいずれかを実施してください:\n"
+"\n"
+"   use Text::Diff ();\n"
+"\n"
+"   require Text::Diff;\n"
+"\n"
+"これはあまり使われることはありません。 'diff()' は既定で公開されるためです。\n"
+"\n"
+"ファイル名を指定した場合で、そのファイルを読み込むことができない場合、 'diff()' は 'croak' します。"
 
 #. tumbleweed/perl-Text-German/summary
 #. tumbleweed/perl-Text-German/description
@@ -31999,7 +32260,7 @@ msgstr ""
 #. tumbleweed/perl-Text-RecordParser/summary
 #. leap/perl-Text-RecordParser/summary
 msgid "Read Record-Oriented Files"
-msgstr ""
+msgstr "読み込み志向ファイルの読み込み"
 
 #. tumbleweed/perl-Text-RecordParser/description
 #. leap/perl-Text-RecordParser/description
@@ -32864,7 +33125,7 @@ msgstr ""
 #. tumbleweed/perl-UNIVERSAL-moniker/summary
 #. leap/perl-UNIVERSAL-moniker/summary
 msgid "UNIVERAL::moniker"
-msgstr ""
+msgstr "UNIVERAL::moniker"
 
 #. tumbleweed/perl-UNIVERSAL-moniker/description
 #. leap/perl-UNIVERSAL-moniker/description
@@ -32966,7 +33227,7 @@ msgstr ""
 #. tumbleweed/perl-URI-Find/summary
 #. leap/perl-URI-Find/summary
 msgid "Find URIs in arbitrary text"
-msgstr ""
+msgstr "任意のテキスト内における URI の検出"
 
 #. tumbleweed/perl-URI-Find/description
 msgid ""
@@ -33550,7 +33811,7 @@ msgstr ""
 #. tumbleweed/perl-XML-SAX-Writer/summary
 #. tumbleweed/perl-XML-SAX-Writer/description
 msgid "SAX2 XML Writer"
-msgstr ""
+msgstr "SAX2 XML ライター"
 
 #. tumbleweed/perl-XML-SemanticDiff/summary
 #. leap/perl-XML-SemanticDiff/summary
@@ -33567,7 +33828,7 @@ msgstr ""
 
 #. tumbleweed/perl-XML-Simple/summary
 msgid "An API for simple XML files"
-msgstr ""
+msgstr "シンプルな XML ファイル向けの API"
 
 #. tumbleweed/perl-XML-Simple/description
 msgid ""
