@@ -31702,6 +31702,20 @@ msgid ""
 "paths are untainted with the following pattern: 'qr|^([-+@\\w./:\\\\]+)$|' "
 "controlled by '$Test::Strict::UNTAINT_PATTERN'."
 msgstr ""
+"テストを作成するにあたって、最も基本的なテストは \"コンパイルできるかどうか？\" です。このモジュールは、コードがコンパイルできて Test::"
+"Simple モジュールを実行できるかどうかをテストします。\n"
+"\n"
+"このモジュールがテストできるもう 1 つの要素としては、すべての Perl ファイルに対して \"use strict;\" を使用するテストがあります。"
+"\n"
+"\n"
+"'all_cover_ok()' で最小限のテストカバレッジを設定することで、コードの作者は開発サイクルを通してそのコードの _品質_ "
+"レベルを維持することができるようになります。\n"
+"\n"
+"また、 Test::Pod と併用することで、このモジュールはモジュールの作者向けに初めてのテストを提供することもできます。\n"
+"\n"
+"このモジュールは Perl >= 5.6 では -T フラグのもとで実行できるはずです。また、すべてのパスは下記のパターンで汚染を回避します: "
+"'qr|^([-+@\\w./:\\\\]+)$|' (こちらは '$Test::Strict::UNTAINT_PATTERN' で制御されています) "
+"。"
 
 #. tumbleweed/perl-Test-SubCalls/summary
 #. leap/perl-Test-SubCalls/summary
@@ -32020,6 +32034,16 @@ msgid ""
 "tests will be given a reasonable name should you choose not to provide one "
 "of your own. The test name should always be the third argument."
 msgstr ""
+"このモジュールは WWW::Selenium のサブクラスで、テストを記述するためのいくつかのメソッドを提供するものです。各 Selenium "
+"のコマンド (開く、クリック、入力など) に対して、対応する '<コマンド>_ok' メソッドが存在し、こちらで返り値を確認 (open_ok, "
+"click_ok, type_ok) します。\n"
+"\n"
+"それぞれの Selenium の getter (get_title, ...) に対しては、 4 種類の自動生成されたメソッド ('<getter>"
+"_is', '<getter>_isnt', '<getter>_like', '<getter>_unlike') "
+"が存在していて、こちらで属性の値をチェックします。\n"
+"\n"
+"コンストラクタを呼び出す際、 'default_names' に true "
+"の値を設定すると、テストに対して適切な名前が設定され、独自に名前を付ける必要がなくなります。なお、テストの名前は常に 3 つめのパラメータであるべきです。"
 
 #. tumbleweed/perl-Test-Warn/summary
 #. leap/perl-Test-Warn/summary
@@ -32038,6 +32062,11 @@ msgid ""
 "If you are not already familiar with the Test::More manpage now would be the "
 "time to go take a look."
 msgstr ""
+"Perl のプログラミングにおいて、良いスタイルとは多様な回帰 (リグレッション) テストを実施することです。\n"
+"\n"
+"このモジュールは、警告ベースのコードに対していくつかの便利なメソッドを提供します。\n"
+"\n"
+"Test::More について詳しく知らない場合は、まずそちらをお読みください。"
 
 #. tumbleweed/perl-Test-Warnings/summary
 #. leap/perl-Test-Warnings/summary
@@ -32071,6 +32100,25 @@ msgid ""
 "It can also be used as a replacement for Test::Warn, if you wish to test the "
 "content of expected warnings; read on to find out how."
 msgstr ""
+"Test::NoWarnings を利用して、テスト内で警告が発生していないことを確認し、 'done_testing' "
+"の利便性を生かしてテストカウントの宣言を不要にしていた際、これら 2 "
+"つの機能を共存させると、うまく動作しないことに気が付いたことはありませんか？この場合、テストカウントは警告を発するテストが実行される _前_ "
+"に数えられてしまうため、 TAP エラーになってしまいます (配布物の内の 'examples/test_nowarnings.pl' をご覧ください) "
+"。\n"
+"\n"
+"このモジュールは、 Test::NoWarnings に対してその場での入れ替えを想定したモジュールです。追加のテストも提供されますが、このテストは "
+"'done_testing' でテストカウントを数える _前_ に動作します。これは 'done_testing' と 'END' "
+"ブロックに対するフックとして実行されているもので、これによってプランを定義してもしなくても、うまく動作するようになります。\n"
+"\n"
+"これは実際には下記と同じ意味になります:\n"
+"\n"
+"    use Test::NoWarnings 1.04 ':early';\n"
+"\n"
+"この場合、警告メッセージは通常通り表示されます。そのため、開発中のコードにそのようなプランがあるかどうかにもよりますが、上記を 'use "
+"Test::Warnings;' で置き換えても問題はありませんし、可能な限りお勧めします。\n"
+"\n"
+"また、このモジュールは、期待する通りの警告が発生しているかどうかを確認したい場合、 Test::Warn "
+"に対する置き換えにもなっています。詳しくは添付の文書をお読みください。"
 
 #. tumbleweed/perl-Test-Without-Module/summary
 #. leap/perl-Test-Without-Module/summary
@@ -32084,6 +32132,8 @@ msgid ""
 "though they are installed. This is mostly useful for testing modules that "
 "have a fallback when a certain dependency module is not installed."
 msgstr ""
+"このモジュールは、実際にはインストールされているモジュールを、プログラムに対して隠ぺいする機能を提供します。これは特に、依存している特定のモジュールがイン"
+"ストールされていない場合、フォールバック機能が働くかどうかをテストする際に役立ちます。"
 
 #. tumbleweed/perl-Test-YAML/summary
 #. leap/perl-Test-YAML/summary
@@ -32095,7 +32145,7 @@ msgstr "YAML 実装のテストモジュール"
 msgid ""
 "the Test::YAML manpage is a subclass of the Test::Base manpage with YAML "
 "specific support."
-msgstr ""
+msgstr "Test::YAML は Test::Base のサブクラスで、 YAML 固有のサポートが追加されています。"
 
 #. tumbleweed/perl-Text-Aligner/summary
 #. leap/perl-Text-Aligner/summary
@@ -32124,6 +32174,18 @@ msgid ""
 "Alignment respects colorizing escape sequences a la Term::ANSIColor which "
 "means it knows that these sequences don't take up space on the screen."
 msgstr ""
+"Text::Aligner は align() と呼ばれる 1 つの関数を公開するモジュールで、様々な配置スタイルで文字列を調整 "
+"(左右寄せ、中央寄せなど) する機能を提供します。最初のパラメータとして配置の仕様を指定し、続いて配置する内容を任意の数のスカラー値で指定します。\n"
+"\n"
+"処理はコンテキストに依存して決まります。リストコンテキストでは、調整済みのスカラー値が返されます。スカラーコンテキストでは、調整済みの文字列を 1 "
+"つの文字列として結合し、行末に改行を追加して返します。元のパラメータは変更されません。 void "
+"コンテキストでは、その場での調整が行なわれます。この場合、すべてのパラメータは lvalue でなければなりません。\n"
+"\n"
+"align() では 1 段階のスカラー逆参照も行ないます。これは、いずれかのパラメータがスカラー参照であった場合、参照先のスカラー値を代わりに調整します"
+"。その他の参照は単純に文字列化して対応します。未定義のパラメータの場合は、特に何もメッセージを表示せず空文字列として扱われます。\n"
+"\n"
+"調整処理は Term::ANSIColor "
+"のエスケープシーケンスによる色付けにも対応しています。そのため、文字列内にエスケープシーケンスが存在していても、調整には影響を与えません。"
 
 #. tumbleweed/perl-Text-Autoformat/summary
 #. tumbleweed/perl-Text-Autoformat/description
@@ -32170,6 +32232,27 @@ msgid ""
 " 1) give both the same cost  2) change the output string DEL to INS/DEL (o "
 "whatever)  3) change the output string INS to INS/DEL (o whatever)"
 msgstr ""
+"このモジュールは Brew edit distance と呼ばれる、 Wagner-Fischer (および Levenshtein) "
+"編集距離で使用される動的なプログラミングテクニックに非常に似た仕組みを実装するものです。まずはモジュールのリファレンスをご覧ください。また、 Brew "
+"edit distance に関する詳細は、 <http://ling.ohio-state.edu/~cbrew/795M/string-"
+"distance.html> (英語) をお読みください。\n"
+"\n"
+"このモジュールでの違いは、削除または挿入の動作に対して別々のコストがあるという点です (ただし既定値はいずれも 1 であり、この場合は "
+"Levenshtein 編集距離になります) 。ですが、最も興味深い機能は、最初の文字列を 2 つめの文字列に変形するのに必要な、"
+"編集に関する詳細を得られるという機能です (削除と挿入は別々に扱われるため、逆の情報はまた異なることになります) 。 Chris Brew "
+"氏によるオリジナルの改変版アルゴリズムでは、 MATCH 操作とは異なる SUBST 操作が加えられています。\n"
+"\n"
+"ここで使用されるシンボルは下記のとおりです:\n"
+"\n"
+" INITIAL 初期操作 (なにも捜査していない状態)  MATCH\t MATCH 操作 (既定ではコスト 0)  SUBST\t 置き換え "
+"(SUBSTitution) 操作 (既定ではコスト 1)  DEL\t 削除 (DELetion) 操作 (既定ではコスト 1)  INS\t 挿入 "
+"(INSertion) 操作 (既定ではコスト 1)\n"
+"\n"
+"なお、コスト値を変更することもできます (下記参照) 。\n"
+"\n"
+"また、 INS と DEL を同じ操作にするには、下記のようにします:\n"
+"\n"
+" 1) 同じコスト値を設定する  2) 出力文字列の DEL を INS/DEL にする  3) 出力文字列の INS を INS/DEL にする"
 
 #. tumbleweed/perl-Text-CSV/summary
 #. leap/perl-Text-CSV/summary
@@ -32241,6 +32324,34 @@ msgid ""
 "  Input:            \"get whacky\"   scramble_case:    \"gET wHaCkY\"  (or "
 "something similar)"
 msgstr ""
+"Text::Capitalize は文字列を *タイトルのように* 整形するためのいくつかのルーチンを提供します。\n"
+"\n"
+"シンプルな *capitalize* 関数では、各単語の最初の文字を大文字に、それ以外を小文字に強制します。\n"
+"\n"
+"*capitalize_title* 関数では、 *重要な* 単語の最初の文字のみを大文字にする、英語のタイトルルール (下記参照) "
+"を適用します。様々なルールを選択できるよう、カスタマイズ機能も用意されています。\n"
+"\n"
+"*capitalize* と *captialize_title* の違いは下記のとおりです:\n"
+"\n"
+"  入力値:             \"lost watches of splitsville\"   capitalize:        \""
+"Lost Watches Of Splitsville\"   capitalize_title:  \"Lost Watches of "
+"Splitsville\"\n"
+"\n"
+"*capitalize_title* での整形例は下記のとおりです:\n"
+"\n"
+"  入力:             \"KiLLiNG TiMe\"   capitalize_title:  \"Killing Time\"\n"
+"\n"
+"  入力:             \"we have come to wound the autumnal city\"   "
+"capitalize_title:  \"We Have Come to Wound the Autumnal City\"\n"
+"\n"
+"  入力:             \"ask for whom they ask for\"   captialize_title:  \"Ask "
+"for Whom They Ask For\"\n"
+"\n"
+"Text::Capitalize では *scramble_case* のような特殊効果用の関数もいくつか用意されています。 "
+"*scramble_case* は、大文字と小文字をランダムに入れ替えるための関数です:\n"
+"\n"
+"  入力:            \"get whacky\"   scramble_case:    \"gET wHaCkY\"  "
+"(実行のたびに変化します)"
 
 #. tumbleweed/perl-Text-Diff/summary
 #. leap/perl-Text-Diff/summary
@@ -32301,7 +32412,7 @@ msgstr "Text::German Perl モジュール"
 
 #. tumbleweed/perl-Text-Glob/summary
 msgid "Match Globbing Patterns Against Text"
-msgstr ""
+msgstr "テキストに対するグロブパータンマッチ"
 
 #. tumbleweed/perl-Text-Glob/description
 #. leap/perl-Text-Glob/description
@@ -32310,11 +32421,13 @@ msgid ""
 "against text, rather than fetching names from a filesystem. If you want to "
 "do full file globbing use the File::Glob module instead."
 msgstr ""
+"Text::Glob は、 glob(3) スタイルのマッチング処理を、ファイルシステム内のファイル名に対してではなく、テキストに対して実装するモジュール"
+"です。ファイルに対する完全なグロブ機能を必要とする場合は、 File::Glob モジュールをお使いください。"
 
 #. tumbleweed/perl-Text-Markdown/summary
 #. leap/perl-Text-Markdown/summary
 msgid "Convert Markdown syntax to (X)HTML"
-msgstr ""
+msgstr "Markdown 文法を (X)HTML に変換するモジュール"
 
 #. tumbleweed/perl-Text-Markdown/description
 #. leap/perl-Text-Markdown/description
@@ -32329,11 +32442,18 @@ msgid ""
 "tags anywhere in a Markdown document, and you can use block level HTML tags "
 "(like <div> and <table> as well)."
 msgstr ""
+"Markdown はテキストから HTML へのフィルタです。このモジュールは、読みやすく書きやすい構造化テキスト形式を、 HTML に変換します。 "
+"Markdown のテキスト形式は純粋テキストで書かれた電子メールに似た構造で、ヘッダや *強調表示* "
+"のほか、コードブロックやブロック引用、リンクなどにも対応しています。\n"
+"\n"
+"Markdown の文法は一般的なマークアップ言語として設計されているものではなく、特に (X)HTML "
+"に対するフロントエンドとして動作するよう設計されています。 Markdown 文書内の任意の場所で、 span レベルの HTML "
+"タグを利用することもできるほか、 (<div> や <table> などのように) ブロックレベルの HTML タグも利用することができます。"
 
 #. tumbleweed/perl-Text-Patch/summary
 #. leap/perl-Text-Patch/summary
 msgid "Patches text with given patch"
-msgstr ""
+msgstr "指定した修正 (パッチ) をテキストに適用するモジュール"
 
 #. tumbleweed/perl-Text-Patch/description
 #. leap/perl-Text-Patch/description
@@ -32370,6 +32490,43 @@ msgid ""
 "names.     +They both may be called deep and profound.     +Deeper and more "
 "profound,     +The door of all subtleties!"
 msgstr ""
+"Text::Patch は指定した diff (差分) データをテキストに適用するモジュールです。 diff データは Text::Diff "
+"で作成したものか、もしくは標準の diff ユーティリティ (詳しくは man diff で -u オプションをご覧ください) "
+"で作成したものを利用することができます。\n"
+"\n"
+"* patch( $source, $diff, options... )\n"
+"\n"
+"  最初のパラメータでは元の (オリジナル) テキストを指定します。 2 つめには diff のデータを指定します。 3 "
+"つめのパラメータはオプションを含むハッシュ参照か、もしくはオプションをそのまま指定します:\n"
+"\n"
+"      $output = patch( $source, $diff, STYLE => \"Unified\", ... );\n"
+"\n"
+"      $output = patch( $source, $diff, { STYLE => \"Unified\", ... } );\n"
+"\n"
+"  オプションは下記のとおりです:\n"
+"\n"
+"    STYLE => 'Unified'\n"
+"\n"
+"  STYLE には \"Unified\", \"Context\", \"OldStyle\" のいずれかを停止します。\n"
+"\n"
+"  'Unified' 形式の diff は下記のような形式です:\n"
+"\n"
+"    @@ -1,7 +1,6 @@\n"
+"-The Way that can be told of is not the eternal Way;\n"
+"-The name that can be named is not the eternal name.\n"
+" The Nameless is the origin of Heaven and Earth;\n"
+"-The Named is the mother of all things.\n"
+"+The named is the mother of all things.\n"
+"+      Therefore let there always be non-being,\n"
+"        so we may see their subtlety,\n"
+"      And let there always be being,\n"
+"@@ -9,3 +8,6 @@\n"
+" The two are the same,\n"
+" But after they are produced,\n"
+" they have different names.\n"
+"+They both may be called deep and profound.\n"
+"+Deeper and more profound,\n"
+"+The door of all subtleties!"
 
 #. tumbleweed/perl-Text-RecordParser/summary
 #. leap/perl-Text-RecordParser/summary
@@ -32389,11 +32546,17 @@ msgid ""
 "can still bind your own field names via 'bind_fields'. Either way, you can "
 "then use many methods to get at the data as arrays or hashes."
 msgstr ""
+"このモジュールは、項目ごとに区切られたテキストファイルから、レコード志向のデータを読み込むことができるモジュールです。よくある例としては、カンマやタブでフ"
+"ィールドを区切り、改行でレコードを区切るタイプのファイルがありますが、このモジュールは、どのような形式で区切られていたとしても、ファイル内の個別のレコード"
+"を処理することができる一貫したインターフェイスを提供します。ファイルの冒頭の行に各フィールドの名前が含まれていることもありますが、この場合は "
+"'bind_header' を利用してフィールド名に結び付けることができます (暗黙のうちに呼び出されることもあります) "
+"。最初の行にデータが含まれている場合も、 'bind_fields' "
+"で独自の名前を付与することができます。いずれにしても、データを配列やハッシュで取得するための多数の方法が用意されています。"
 
 #. tumbleweed/perl-Text-Reform/summary
 #. leap/perl-Text-Reform/summary
 msgid "Manual text wrapping and reformatting"
-msgstr ""
+msgstr "手動テキスト折り返し／再書式化"
 
 #. tumbleweed/perl-Text-Reform/description
 #. leap/perl-Text-Reform/description
@@ -32404,11 +32567,15 @@ msgid ""
 "Author:\n"
 "-------         Damian Conway <damian@conway.org>"
 msgstr ""
+"このモジュールは、リエントラントで高度に設定可能な、 Perl 内蔵の format() 関数に対する置き換え関数を提供します。\n"
+"\n"
+"作者:\n"
+"-------         Damian Conway <damian@conway.org>"
 
 #. tumbleweed/perl-Text-Roman/summary
 #. leap/perl-Text-Roman/summary
 msgid "Allows conversion between Roman and Arabic algarisms."
-msgstr ""
+msgstr "ローマ数字とアラビア数字の変換を行なうモジュール"
 
 #. tumbleweed/perl-Text-Roman/description
 #. leap/perl-Text-Roman/description
@@ -32426,11 +32593,20 @@ msgid ""
 "\n"
 "The following functions may be imported into the caller package by name:"
 msgstr ""
+"このパッケージは、一般的なローマ数字 (_1_ から _3999_ まで) と Milhar ローマ数字に対応するほか、 _1_000_ "
+"で乗算されていることを示す棒を使用するタイプのものにも対応しています。このモジュールの目的のため、受け入れ可能な文法は、"
+"アラビア数字の記法の後にアンダースコアを含めています (例: IV_V = 4_005_) 。 Milhar はポルトガル語の \"千\" "
+"を意味する用語で、この表記法によってローマ数字の範囲が _3999 * 1000 + 3999 = 4_002_999_ まで拡張されています。\n"
+"\n"
+"注意: このパッケージ内の関数では、ローマ数字の大文字と小文字は区別しません。たとえば \"VI\" == \"vI\" == \"Vi\" == \""
+"vi\" になります。\n"
+"\n"
+"呼び出し側のパッケージで名前を指定することで、関数をインポートすることができます。"
 
 #. tumbleweed/perl-Text-SpellChecker/summary
 #. leap/perl-Text-SpellChecker/summary
 msgid "OO interface for spell-checking a block of text"
-msgstr ""
+msgstr "テキストのブロックをスペルチェックするための OO インターフェイス"
 
 #. tumbleweed/perl-Text-SpellChecker/description
 #. leap/perl-Text-SpellChecker/description
@@ -32444,11 +32620,17 @@ msgid ""
 "text, serializing the object (thus remembering where we left off), and "
 "highlighting the current misspelled word within the text."
 msgstr ""
+"このモジュールは Text::Aspell または Text::Hunspell (後者のほうが望ましいです) "
+"に対する薄いレイヤで、テキストの本文に対してスペルチェックを行なうことができるモジュールです。\n"
+"\n"
+"Text::(Hu|A)spell が単語を扱うのに対して、 Text::Spellchecker "
+"はテキストのブロックを扱います。たとえばテキスト内の単語の列挙を行なうメソッドや、オブジェクトのシリアライズ (どこで中断したのかを覚えておくため) "
+"を行なうメソッド、テキスト内で現在スペルの誤っている個所のハイライト表示などの機能を提供しています。"
 
 #. tumbleweed/perl-Text-Table/summary
 #. leap/perl-Text-Table/summary
 msgid "Organize Data in Tables"
-msgstr ""
+msgstr "表形式でのデータの表示"
 
 #. tumbleweed/perl-Text-Table/description
 #. leap/perl-Text-Table/description
@@ -32461,11 +32643,14 @@ msgid ""
 "allows you to create and maintain tables that adapt to alignment "
 "requirements as you use them."
 msgstr ""
+"データを表形式で表示するのは由緒正しいやり方であり、データを見やすく表示するには適切な方法です。データ列は一般に、コンピュータが整形して出力したものを利用"
+"しますが、データに対してタイトルを合わせるのは少し面倒であるうえ、一時的にそれを回避したとしても、その後の維持が面倒です。 Text::Table "
+"では、要件に合わせて割り当てを調整することのできる表を、作成および維持することができます。"
 
 #. tumbleweed/perl-Text-TabularDisplay/summary
 #. leap/perl-Text-TabularDisplay/summary
 msgid "Display text in formatted table output"
-msgstr ""
+msgstr "整形された表形式でのテキスト表示"
 
 #. tumbleweed/perl-Text-TabularDisplay/description
 #. leap/perl-Text-TabularDisplay/description
@@ -32492,11 +32677,33 @@ msgid ""
 "| 3  | Bridget Jones | (666) 555-1214 |     +----+---------------"
 "+----------------+"
 msgstr ""
+"Text::TabularDisplay は表形式でテキストデータを表示する作業をシンプルにします。出力は mysql "
+"のテキストモニタで、問い合わせの結果を表示する際の表形式と同じです。例えば下記のようなデータがあったとします:\n"
+"\n"
+"    1, \"Tom Jones\", \"(666) 555-1212\"     2, \"Barnaby Jones\", \"(666) "
+"555-1213\"     3, \"Bridget Jones\", \"(666) 555-1214\"\n"
+"\n"
+"このようなデータを下記のように実行したとします:\n"
+"\n"
+"    my $t = Text::TabularDisplay->new(qw(id name phone));     $t->add(1, \""
+"Tom Jones\", \"(666) 555-1212\");     $t->add(2, \"Barnaby Jones\", \"(666) "
+"555-1213\");     $t->add(3, \"Bridget Jones\", \"(666) 555-1214\");     "
+"print $t->render;\n"
+"\n"
+"すると、下記のような出力になります:\n"
+"\n"
+"    +----+---------------+----------------+\n"
+"     | id | name          | phone          |\n"
+"     +----+---------------+----------------+\n"
+"     | 1  | Tom Jones     | (666) 555-1212 |\n"
+"     | 2  | Barnaby Jones | (666) 555-1213 |\n"
+"     | 3  | Bridget Jones | (666) 555-1214 |\n"
+"     +----+---------------+----------------+"
 
 #. tumbleweed/perl-Text-Template/summary
 #. leap/perl-Text-Template/summary
 msgid "Expand template text with embedded Perl"
-msgstr ""
+msgstr "Perl コードの埋め込まれたテンプレートテキストへの記入"
 
 #. tumbleweed/perl-Text-Template/description
 #. leap/perl-Text-Template/description
@@ -32512,6 +32719,13 @@ msgid ""
 "details from the main code, and put the formatting parts of the program into "
 "the template. That prevents code bloat and encourages functional separation."
 msgstr ""
+"これは定型文書の生成や HTML ページの構築、もしくはテンプレートへの一般的な記入処理を行なうためのライブラリです。このライブラリにおける `"
+"テンプレート' とは、小さな Perl プログラムが埋め込まれているテキストを意味します。テンプレートに対して `記入' "
+"すると、それらのプログラムを実際に実行して、その結果をその場所に埋め込みます。\n"
+"\n"
+"テンプレートはプログラム外のファイルに保存することもできます。そのため、プログラムを修正せずにテンプレートを修正することができます。また、メインのコードと"
+"は別に整形の詳細設定を行なうこともできるほか、プログラム側のフォーマットの部分をテンプレートに埋め込むこともできます。このような仕組みにより、コードの肥大"
+"化を防ぎ、意味のある分割ができるようになっています。"
 
 #. tumbleweed/perl-Text-Unidecode/summary
 #. leap/perl-Text-Unidecode/summary
@@ -32570,7 +32784,7 @@ msgstr "行折り返しモジュール"
 msgid ""
 "Line wrapping module with support for multibyte, fullwidth, and combining "
 "characters and languages without whitespaces between words."
-msgstr ""
+msgstr "マルチバイト文字列や全角文字、結合文字のほか、単語間に空白を挟まない言語にも対応した、行折り返しモジュールです。"
 
 #. tumbleweed/perl-Text-Wrapper/summary
 #. leap/perl-Text-Wrapper/summary
@@ -32619,7 +32833,7 @@ msgstr ""
 #. tumbleweed/perl-Throwable/summary
 #. leap/perl-Throwable/summary
 msgid "Role for Classes That Can Be Thrown"
-msgstr ""
+msgstr "スローすることのできるクラス向けの役割"
 
 #. tumbleweed/perl-Throwable/description
 #. leap/perl-Throwable/description
@@ -32631,6 +32845,10 @@ msgid ""
 "Throwable is implemented with the Moo manpage, so you can stick to Moo or "
 "use the Moose manpage, as you prefer."
 msgstr ""
+"Throwable とは標準的なプログラムの流れの中で、例外として投げられることを目的にしたクラス向けの役割です。非常にシンプルで下記の 2 "
+"つのことだけを行ないます: '$@' に対する以前の値の保存と、 'die $self' の実行\n"
+"\n"
+"Throwable は Moo で実装されているものであるため、 Moo または Moose のいずれかで利用することができます。"
 
 #. tumbleweed/perl-Tie-Cache/summary
 #. leap/perl-Tie-Cache/summary
@@ -32674,7 +32892,7 @@ msgstr ""
 
 #. tumbleweed/perl-Tie-Cycle/summary
 msgid "Cycle through a list of values via a scalar"
-msgstr ""
+msgstr "スカラー値で値の一覧を繰り返し参照するモジュール"
 
 #. tumbleweed/perl-Tie-Cycle/description
 #. leap/perl-Tie-Cycle/description
@@ -32694,11 +32912,20 @@ msgid ""
 "after the tie, the elements of the cycle will change as well. See the "
 "included _test.pl_ script for an example of this effect."
 msgstr ""
+"一覧を何度も読み出したい場合は、 'Tie::Cycle'  をお使いください。一覧の最後まで読み出しが終わると、一覧の最初に戻ります。この tie "
+"の仕組みがすべてを行ないますので、何も心配する必要はありません。\n"
+"\n"
+"tie は 3 つめのパラメータとして配列の参照を受けつけます。 tie "
+"はパラメータが配列の参照でない場合を除いて、必ず成功します。以前のバージョンでは、 2 つ以上の要素を含む配列を指定する必要がありました "
+"(そうでないとループしてしまうから？) が、状況に応じて要素の数が変わることがあるため、この制限は削除されています。\n"
+"\n"
+"tie については、このモジュールは配列の参照に対する浅いコピーを作成します。配列の参照に参照が含まれていて、それらの参照が tie "
+"を実行した後に変更されると、要素の順序もまた変更されます。この効果の詳細について、詳しくは _test.pl_ スクリプトをお読みください。"
 
 #. tumbleweed/perl-Tie-Hash-DBD/summary
 #. leap/perl-Tie-Hash-DBD/summary
 msgid "Tie plain hashes to DBI interface"
-msgstr ""
+msgstr "DBI インターフェイスに対するプレーンハッシュの tie"
 
 #. tumbleweed/perl-Tie-Hash-DBD/description
 #. leap/perl-Tie-Hash-DBD/description
@@ -32717,6 +32944,15 @@ msgid ""
 "I think it would make sense to merge the functionality that this module "
 "provides into 'Tie::DBI'."
 msgstr ""
+"このモジュールは 'DB_File' のように、ディスクへの直接的な Perl ハッシュを提供するモジュールに対して、すぐに置き換えられるモジュールとして"
+"作成されています。システム内に巨大なハッシュを保持できるほど十分なメモリが存在しない場合で、ディスクの容量も少なくてディスクへの結び付けもできないような場"
+"合、別のサーバで動作しているようなデータベースに対してハッシュを結び付ける解決方法があります。\n"
+"\n"
+"このモジュールはデータベースに対するハッシュを 'キー' と '値' のフィールド *のみ* "
+"を利用して構成しています。テーブルの仕様が渡されない場合は、一時的なテーブルを作成して処理します。この場合、 'h_key' をキーフィールドの保存先に、"
+" 'h_value' を値のフィールドの保存先にそれぞれ指定します。\n"
+"\n"
+"このモジュールは、将来的に 'Tie::DBI' と機能を合併したいと考えております。"
 
 #. tumbleweed/perl-Tie-IxHash/summary
 #. leap/perl-Tie-IxHash/summary
@@ -32740,7 +32976,7 @@ msgstr ""
 #. tumbleweed/perl-Tie-RefHash-Weak/summary
 #. leap/perl-Tie-RefHash-Weak/summary
 msgid "A Tie::RefHash subclass with weakened references in the keys."
-msgstr ""
+msgstr "キーに対する弱い参照を実装する Tie::RefHash のサブクラス"
 
 #. tumbleweed/perl-Tie-RefHash-Weak/description
 #. leap/perl-Tie-RefHash-Weak/description
@@ -32757,11 +32993,19 @@ msgid ""
 "ones. The values are left unaltered, and you'll have to make sure there are "
 "no strong references there yourself."
 msgstr ""
+"Tie::RefHash モジュールは、参照によるハッシュにアクセスするために使用することができるモジュールです。これは例えば、オブジェクトで索引を作成す"
+"るような場合に便利な仕組みです。\n"
+"\n"
+"Tie::RefHash を利用してクロスインデックスを作成する際の問題は、オブジェクトに対して強い参照を含むべきではない場合がある、ということです。 "
+"Tie::RefHash の内部構造には、キーに対する強い参照が含まれていて、これらの参照を弱くするための便利な方法が提供されていません。\n"
+"\n"
+"この Tie::RefHash "
+"のサブクラスは、強い参照ではなく弱い参照が含まれています。値は変更されませんし、ご自身で強い参照が存在しないことを確認することもできます。"
 
 #. tumbleweed/perl-Tie-Simple/summary
 #. leap/perl-Tie-Simple/summary
 msgid "Variable ties made easier: much, much, much easier.."
-msgstr ""
+msgstr "変数の tie をずっとずっと簡単にするモジュール"
 
 #. tumbleweed/perl-Tie-Simple/description
 #. leap/perl-Tie-Simple/description
@@ -32779,11 +33023,18 @@ msgid ""
 "of Perl where I can to minimize the need for documentation and to make this "
 "extra, extra spiffy."
 msgstr ""
+"このモジュールは、まったく新しくクラスを作成することなく、 tie オブジェクトの新しい型を素早く作成することができるモジュールです。"
+"日々の作業で一回限りの tie を利用したいと思ったとき、このような方法が提供されていることでプログラマへの負担を減らすことができます。\n"
+"\n"
+"'Tie::Simple' "
+"パッケージは実際の処理を行なう他のクラスに対するフロントエンドですが、このパッケージはやろうとしていることを自動的に把握して実行します。\n"
+"\n"
+"また、このモジュールはできる限り直感的になるように作られているほか、 Perl の他のモジュールへの依存性をできる限り少なくなるように作られています。"
 
 #. tumbleweed/perl-Tie-ToObject/summary
 #. leap/perl-Tie-ToObject/summary
 msgid "Tie to an existing object."
-msgstr ""
+msgstr "既存のオブジェクトに対する tie"
 
 #. tumbleweed/perl-Tie-ToObject/description
 #. leap/perl-Tie-ToObject/description
@@ -32802,11 +33053,20 @@ msgid ""
 "clone the internal state object instead of going through the tie interface "
 "for that variable."
 msgstr ""
+"perldoc/tie では任意のオブジェクトに対して tie を許可していますが、対象となるクラスは実装で 'TIEHASH' と "
+"'TIEARRAY' 等を実装しなければなりません。\n"
+"\n"
+"このクラスは、最初のパラメータとして与えられたオブジェクトをシンプルに返すだけの、単純な tie コンストラクタを提供します。\n"
+"\n"
+"この方法により、 '$object->TIEHASH' の呼び出しもまた避けることができます。\n"
+"\n"
+"これは Data::Visitor 内で、既に存在するオブジェクトへの変数に tie "
+"する際に利用されています。内部状態のオブジェクトを複製するような、クローン作成時にも便利な仕組みです。"
 
 #. tumbleweed/perl-Time-Clock/summary
 #. leap/perl-Time-Clock/summary
 msgid "Twenty-four hour clock object with nanosecond precision."
-msgstr ""
+msgstr "ナノ秒単位の精度のある 24 時間時計オブジェクト"
 
 #. tumbleweed/perl-Time-Clock/description
 #. leap/perl-Time-Clock/description
@@ -32823,6 +33083,13 @@ msgid ""
 "the Time::Clock manpage objects automatically stringify to a user-definable "
 "format."
 msgstr ""
+"Time::Clock オブジェクトは 24 時制の時計を表すもので、ナノ秒までの精度と回り込みの機能に対応しています。なお、このオブジェクトは時刻のみを"
+"扱うものであり、日付に関しては一切考慮していません。また、うるう秒や夏時間 (サマータイム) に関しても、日付を持たないことからサポートの対象外です。\n"
+"\n"
+"Time::Clock オブジェクトが現在 23:59:59.999999999 であるとすると、このオブジェクトに 1 ナノ秒を足すと、 00:00:"
+"00.000000000 に戻り (回り込み) ます。逆も同様で、減算時に逆方向の回り込みが起こります。\n"
+"\n"
+"Time::Clock オブジェクトでは、ユーザ定義の形式で文字列化することもできます。"
 
 #. tumbleweed/perl-Time-Duration/summary
 #. leap/perl-Time-Duration/summary
@@ -32890,7 +33157,7 @@ msgstr ""
 #. tumbleweed/perl-Time-Duration-Parse/summary
 #. leap/perl-Time-Duration-Parse/summary
 msgid "Parse string that represents time duration"
-msgstr ""
+msgstr "時間の期間を表す文字列の処理"
 
 #. tumbleweed/perl-Time-Duration-Parse/description
 #. leap/perl-Time-Duration-Parse/description
@@ -32906,18 +33173,28 @@ msgid ""
 "  my $seconds = int rand 100000;   "
 "is( parse_duration(duration_exact($seconds)), $seconds );"
 msgstr ""
+"Time::Duration::Parse は、 _2 minutes_ (2 分) や _3 seconds_ (3 秒) "
+"のように、人間にとってわかりやすい期間表記を秒単位の値に変換するモジュールです。\n"
+"\n"
+"Time::Duration 内の _duration_exact_ "
+"関数の反対を実施することもできますし、それらとの間で値をやり取りすることもできます。そのため、下記は常に true となります:\n"
+"\n"
+"  use Time::Duration::Parse;   use Time::Duration;\n"
+"\n"
+"  my $seconds = int rand 100000;   is( "
+"parse_duration(duration_exact($seconds)), $seconds );"
 
 #. tumbleweed/perl-Time-Mock/summary
 #. tumbleweed/perl-Time-Mock/description
 #. leap/perl-Time-Mock/summary
 #. leap/perl-Time-Mock/description
 msgid "shift and scale time"
-msgstr ""
+msgstr "時刻の偽装"
 
 #. tumbleweed/perl-Time-Out/summary
 #. leap/perl-Time-Out/summary
 msgid "Easily timeout long running operations"
-msgstr ""
+msgstr "長時間かかる処理に対する簡単なタイムアウト機構"
 
 #. tumbleweed/perl-Time-Out/description
 #. leap/perl-Time-Out/description
@@ -32925,6 +33202,8 @@ msgid ""
 "'Time::Out' provides an easy interface to _alarm(2)_ based timeouts. Nested "
 "timeouts are supported."
 msgstr ""
+"'Time::Out' は _alarm(2)_ "
+"ベースのタイムアウトに対して簡易なインターフェイスを提供します。入れ子型のタイムアウトにも対応しています。"
 
 #. tumbleweed/perl-Time-Period/summary
 #. leap/perl-Time-Period/summary
@@ -32946,7 +33225,7 @@ msgstr ""
 
 #. tumbleweed/perl-Time-Tiny/summary
 msgid "Time Object, with As Little Code As Possible"
-msgstr ""
+msgstr "できる限り少ないコードでの Time オブジェクト"
 
 #. tumbleweed/perl-Time-Tiny/description
 msgid ""
@@ -32955,6 +33234,9 @@ msgid ""
 "It implements an extremely lightweight object that represents a time, "
 "without any time data."
 msgstr ""
+"*Time::Tiny* は時刻モジュールのスイートである DateTime::Tiny のメンバーです。\n"
+"\n"
+"タイムゾーン無しの時刻を表す非常に軽量なオブジェクトを実装します。"
 
 #. tumbleweed/perl-TimeDate/summary
 #. leap/perl-TimeDate/summary
@@ -33001,7 +33283,7 @@ msgstr ""
 #. tumbleweed/perl-Tk-Clock/summary
 #. leap/perl-Tk-Clock/summary
 msgid "Clock widget with analog and digital display"
-msgstr ""
+msgstr "アナログ／デジタル表示に対応したクロックウイジェット"
 
 #. tumbleweed/perl-Tk-Clock/description
 #. leap/perl-Tk-Clock/description
@@ -33011,11 +33293,15 @@ msgid ""
 "\n"
 "Both analog and digital clocks are implemented."
 msgstr ""
+"このモジュールは Perl-Tk 向けに Canvas "
+"ベースのクロックウイジェットを提供するもので、外観を変更するための多数のオプションが用意されています。\n"
+"\n"
+"また、アナログ時計とデジタル時計の両方を実装しています。"
 
 #. tumbleweed/perl-Tree-DAG_Node/summary
 #. leap/perl-Tree-DAG_Node/summary
 msgid "An N-ary tree"
-msgstr ""
+msgstr "多進木"
 
 #. tumbleweed/perl-Tree-DAG_Node/description
 #. leap/perl-Tree-DAG_Node/description
@@ -33088,11 +33374,57 @@ msgid ""
 "and so on, constructing and linking objects from 'Tree::DAG_Node' and making "
 "useful tree structures out of them."
 msgstr ""
+"このクラスはツリー構造内でのノードを表すオブジェクトをカプセル化／作成／操作します。ツリー構造はオブジェクト自身ではありませんが、ノード間で作成するリンク"
+"構造から生成されます。このクラスには、ツリー構造の構築のためのリンクを作成するメソッドが用意されていますが、"
+"ツリー内で許可されていない種類のリンクを作成しようとする (たとえば親や祖先のノードを子ノードにしようとした場合や、 2 "
+"つの親を持つようにノードを構成した場合) 際にはエラーになるようになっています。\n"
+"\n"
+"少し冗長に記述すると、 \"ツリー構造\" とは下記のような構造のことを指します:\n"
+"\n"
+"* ツリーとは循環構造を持たない有向グラフである。\n"
+"\n"
+"* ツリーはそれぞれのノードに対して厳密に 1 つの親ノードを設定するノードのネットワークである。\n"
+"\n"
+" また、ツリーはノード間で唯一の、かつ主要な関係性として親子関係を持つ。\n"
+"\n"
+"* どのノードも親や祖先を子として持つことはない。\n"
+"\n"
+"* ツリー内の各ノードには、厳密に 1 つの親ノードが存在する。\n"
+"\n"
+" ツリーの最上位の親だけは例外で、親ノードを持たない。\n"
+"\n"
+"* 各ノードには任意の数の (0 .. N 個の) 子ノードを持つ。\n"
+"\n"
+" 特定のノードにおける子ノードは、 _順序付き_ リストを構成する。\n"
+"\n"
+" しかしながら、順序関係を無視することもできるものとする。アプリケーションによっては順序通りに子ノードを列挙しなければならないものがあるが、こちらを一般的"
+"なケースとみなしている。\n"
+"\n"
+"* ノードは、 1 つのツリー内に 1 度だけ現れる。\n"
+"\n"
+" 特に (例外事項であるため) 、特定のノードは親が持つ子リストの中で二度現れることはできない。\n"
+"\n"
+"* 上向きと下向きの考え方がある。\n"
+"\n"
+"  上向きとは最上位の親に至るまでの関係を、下向きとは最上位の親から離れていく関係を意味する。\n"
+"\n"
+"* 左向きと右向きの考え方もある。\n"
+"\n"
+"  左とは特定のノードにおいて、子ノード一覧の順序番号の古い (0 に近づく) もの、右向きとは子ノード一覧の順序番号の新しい (0 から離れる) "
+"ものを意味する。\n"
+"\n"
+"上記のようなツリー構造には様々な適用先があります: 正式な言語学における構文的な構成要素であったり、ゲームツリーにおける状況表現であったり、コンピュータ言"
+"語における処理を表す抽象表現であったりします。プログラミング言語向けの表現ツリーであるかどうかや、マークアップ言語の文書を処理する際の構成要素などを表すこ"
+"ともできます。\n"
+"\n"
+"(注意: 二分木 (バイナリツリー) は上記ツリーの非常に特殊な形態であるため、専用のクラスを利用して扱うほうが適切です。"
+"二分木をカプセル化するモジュールについては CPAN を、何らかのデータベースを必要としていてここに到達した場合は、 AnyDBM_File "
+"などをご覧ください) 。"
 
 #. tumbleweed/perl-Try-Tiny/summary
 #. leap/perl-Try-Tiny/summary
 msgid "Minimal Try/Catch with Proper Preservation of $@"
-msgstr ""
+msgstr "$@ を適切に保持する最小限の Try/Catch"
 
 #. tumbleweed/perl-Try-Tiny/description
 #. leap/perl-Try-Tiny/description
@@ -33143,11 +33475,46 @@ msgid ""
 "learnt the 'try'/'finally' pattern from one of these languages, watch out "
 "for this."
 msgstr ""
+"このモジュールは 'try'/'catch'/'finally' のステートメントのベアボーン版を提供するもので、 eval "
+"ブロックによるよくある間違いだけを最小化するように設計されています。\n"
+"\n"
+"このモジュールは、わかりやすい文法で異なるコールスタックレイヤの追加を避け、 'try' ブロックから 'return' "
+"を呼ぶことで親サブルーチンからの復帰を行なうことができる TryCatch とは異なります。これらの追加機能は、 Devel::Declare と "
+"Scope::Upper という依存関係の追加というコストによって成し遂げられたもので、これらは時として問題を発生させ、"
+"追加のキャッチフィルタリングによって望ましくない Moose 型制約を使用します。\n"
+"\n"
+"このモジュールの主な目的は、本来は TryCatch のように重い処理のはずのシンプルで信頼性のあるエラー処理を提供しながら、毎回 5 "
+"行に及ぶ定型コードを使用せずに、正しい 'eval' ブロックを作成することにあります。\n"
+"\n"
+"様々な病理学的な症例をできる限り正しく処理するよう設計されている (BACKGROUND をお読みください) ほか、任意の形式のエラー値 "
+"(シンプルな文字列、参照、オブジェクト、オーバーロードされたオブジェクトなど) と互換性を維持するように作られています。\n"
+"\n"
+"'try' ブロック内で die した場合、 'catch' ブロック内で最後に実行された値が返ります (ただし 'catch' ブロックが 1 "
+"つであった場合) 。それ以外の場合は、スカラーコンテキストに対しては 'undef' が、リストコンテキストに対しては空のリストが返ります。下記の例は、"
+"いずれも '$x' 内に '\"bar\"' を代入します:\n"
+"\n"
+"  my $x = try { die \"foo\" } catch { \"bar\" };   my $x = try { die \"foo\" "
+"} || \"bar\";   my $x = (try { die \"foo\" }) // \"bar\";\n"
+"\n"
+"  my $x = eval { die \"foo\" } || \"bar\";\n"
+"\n"
+"'finally' ブロックを追加した場合は、下記のようになります:\n"
+"\n"
+"  my $x;   try { die 'foo' } finally { $x = 'bar' };   try { die 'foo' } "
+"catch { warn \"Got a die: $_\" } finally { $x = 'bar' };\n"
+"\n"
+"'finally' ブロックは常に実行されるため、 local を利用して処理できないような、コードのクリーンアップ処理などには適切な場所です。なお、 "
+"'try' ブロック 1 つに対して、任意の個数の 'finally' ブロックを記述することができます。\n"
+"\n"
+"なお、 'catch' ブロックなしで 'finally' ブロックを追加してしまうと、どのエラーも省略されるようになってしまいます。この動作は単独の "
+"'eval' を利用している場合は問題ありませんが、他のプログラミング言語 (Java, Python, JavaScript, C# など) "
+"内にあるような 'try'/'finally' とは異なる動作であることに注意してください。これらの言語で 'try'/'finally' "
+"を学んでいた方は、この個所に注意してください。"
 
 #. tumbleweed/perl-Type-Tiny/summary
 #. leap/perl-Type-Tiny/summary
 msgid "tiny, yet Moo(se)-compatible type constraint"
-msgstr ""
+msgstr "簡易だが Moo(se) との互換性のある型制約"
 
 #. tumbleweed/perl-Type-Tiny/description
 #. leap/perl-Type-Tiny/description
@@ -34121,7 +34488,7 @@ msgstr ""
 
 #. tumbleweed/perl-XML-XPath/summary
 msgid "Parse and evaluate XPath statements"
-msgstr ""
+msgstr "XPath ステートメントの解釈と実行"
 
 #. tumbleweed/perl-XML-XPath/description
 msgid ""
@@ -34270,7 +34637,7 @@ msgstr ""
 #. tumbleweed/perl-aliased/summary
 #. leap/perl-aliased/summary
 msgid "Use shorter versions of class names"
-msgstr ""
+msgstr "クラス名の短いバージョンを使用するモジュール"
 
 #. tumbleweed/perl-aliased/description
 #. leap/perl-aliased/description
