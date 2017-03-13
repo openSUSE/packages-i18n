@@ -33528,6 +33528,12 @@ msgid ""
 "This documents the internals of the Type::Tiny manpage. the Type::Tiny::"
 "Manual manpage is a better starting place if you're new."
 msgstr ""
+"Type::Tiny は Moo, Moose, Mouse と互換性のある Moose "
+"のような型制約オブジェクトを作成することのできる、簡易クラスです。\n"
+"\n"
+"これにより、 MooseX, MouseX, MooX 版の様々なものが不要になるはずです。たぶん・・\n"
+"\n"
+"この文書には Type::Tiny の内部説明が書かれています。はじめてお使いになる方の場合は、 Type::Tiny::Manual をお読みください。"
 
 #. tumbleweed/perl-Types-Serialiser/summary
 #. leap/perl-Types-Serialiser/summary
@@ -33550,7 +33556,7 @@ msgstr ""
 #. tumbleweed/perl-UNIVERSAL-can/summary
 #. leap/perl-UNIVERSAL-can/summary
 msgid "work around buggy code calling UNIVERSAL::can() as a function"
-msgstr ""
+msgstr "UNIVERSAL::can() を関数として呼び出す際のバグコードの回避"
 
 #. tumbleweed/perl-UNIVERSAL-can/description
 #. leap/perl-UNIVERSAL-can/description
@@ -33579,11 +33585,29 @@ msgid ""
 "\n"
 "Just don't break working code."
 msgstr ""
+"UNIVERSAL クラスにはいくつかの既定のメソッドが用意されているため、すべてのオブジェクトからそれらを利用することができます。オブジェクト指向の仕組"
+"みにより、プログラマはサブクラス内でそれらをオーバーライドして、より固有の、より適切な動作を提供することができます。\n"
+"\n"
+"作者によっては、 UNIVERSAL クラス内のメソッドを呼び出すことで、発生しうるオーバーライドを回避しながら、裏側に隠れた関数の実行を行なうものもあり"
+"ます。これは誤った使い方であり、使用すべきではないものです。ただ、残念ながらそのような警告に耳を傾けない方々がいらっしゃるのも事実で、それによって悪いコー"
+"ドが良いコードを壊す結果になってしまいます。\n"
+"\n"
+"このモジュールは 'UNIVERSAL::can()' メソッドを入れ替えることで、最初に指定されたパラメータが独自の 'can()' メソッドのある呼び"
+"出しであるかどうかを確認します。もしもそうである場合、警告を表示してオーバーライドされているメソッドを呼び出します。これによりバグのような挙動を回避するこ"
+"とができます。それ以外の場合は、通常通りに動作します。\n"
+"\n"
+"ただし、呼び出しが妥当なものであるかどうかがわからないことから、 'UNIVERSAL::can()' "
+"を関数として呼び出さなければならない場合があることを主張する人もいます。これは愚かな発想です。裏に隠れた呼び出しがオブジェクトであるかどうかや "
+"'eval' ブロック内でのメソッド呼び出しなのかを判断したい場合は、 Scalar::Util が提供する 'blessed()' を利用すべきです ("
+"誤った実装である 'can()' メソッドが Liskov に違反しているため、 \"You can't call a method on this "
+"type of invocant\" 以外の例外をスローすることから、 _返された_ 例外をチェックする必要はあります) 。\n"
+"\n"
+"うまく動作するコードをわざわざ壊す必要はありません。"
 
 #. tumbleweed/perl-UNIVERSAL-isa/summary
 #. leap/perl-UNIVERSAL-isa/summary
 msgid "Attempt to recover from people calling UNIVERSAL::isa as a function"
-msgstr ""
+msgstr "UNIVERSAL::isa を関数として呼び出す人々からの回復"
 
 #. tumbleweed/perl-UNIVERSAL-isa/description
 #. leap/perl-UNIVERSAL-isa/description
@@ -33602,6 +33626,16 @@ msgid ""
 "*NOTE:* You should use this module only for debugging purposes. It does not "
 "belong as a dependency in running code."
 msgstr ""
+"UNIVERSAL/isa を関数として使用してしまうと、 Test::MockObject が die "
+"してしまいます。通常はこのようなやり方を救うことはできないのですが、 UNIVERSAL::isa (本モジュール) "
+"を使用していれば、長生きで繁栄する仕組みを作ることができます。\n"
+"\n"
+"このモジュールは 'UNIVERSAL::isa' を入れ替え、 'isa' をオーバーライドしたオブジェクトで関数を呼び出すようにします。これにより、 "
+"'isa' はオブジェクト内の適切なメソッドを呼び出すようになります。\n"
+"\n"
+"それ以外の場合は、実際の 'UNIVERSAL::isa' が直接呼び出されます。\n"
+"\n"
+"*注意:* このモジュールはデバッグ用にのみ使用すべきです。本番環境のコード内に依存関係として存在すべきではありません。"
 
 #. tumbleweed/perl-UNIVERSAL-moniker/summary
 #. leap/perl-UNIVERSAL-moniker/summary
@@ -33620,6 +33654,12 @@ msgid ""
 "This module will add a 'moniker' (and 'plural_moniker') method to "
 "'UNIVERSAL', and so to every class or module."
 msgstr ""
+"Perl 内でのクラス名は、しばしばしゃべりにくいものであったり書きにくいものであったりします。このような理由から、たとえば "
+"'My::Site::User::Customer' や 'My::Site::Shop::Basket' を \"customer\", \""
+"basket\" のように呼んでしまったりします。我々は、このようなクラスの作り方を変える方法はないものかと考えてきました。\n"
+"\n"
+"このモジュールは、 'moniker' (および 'plural_moniker') メソッドを 'UNIVERSAL' "
+"内に作成しました。これにより、すべてのクラスやモジュールにも提供されることになります。"
 
 #. tumbleweed/perl-UNIVERSAL-require/summary
 #. leap/perl-UNIVERSAL-require/summary
@@ -33643,6 +33683,17 @@ msgid ""
 "It doesn't save you much typing, but it'll make a lot more sense to someone "
 "who's not a ninth level Perl acolyte."
 msgstr ""
+"下記のようなコードを見たことがありませんか？\n"
+"\n"
+"    eval \"require $module\";\n"
+"\n"
+"これは require() における裸文字の警告に対する回避策ですが、このような問題を解決することができるのがこのモジュールです。"
+"このモジュールは汎用的な require() クラスメソッドを作成し、すべての Perl モジュールで利用できる安全な仕組みを提供します。そのため、 "
+"eval() のような裏技を使用しなくても、下記のように記述することができるようになります:\n"
+"\n"
+"    $module->require;\n"
+"\n"
+"これにより入力量を大きく減らすことができるようになります。"
 
 #. tumbleweed/perl-URI/summary
 #. leap/perl-URI/summary
@@ -33719,10 +33770,15 @@ msgid ""
 "\n"
 "For a command-line interface, urifind is provided."
 msgstr ""
+"このモジュールは、テキスト内で URI や URL を検出するだけの機能を提供します。検索は素早く、かつ *すべて* のもの (URI.pm が URI "
+"であると認識できるもの) を取り出すことができます。ただし、本モジュールではスキーム (例: http://) を含む URI "
+"のみを検出します。スキームを含まないものなど、より緩い検索を行ないたい場合は、 URI::Find::Schemeless をご覧ください。\n"
+"\n"
+"コマンドラインインターフェイスとしては、 urifind が提供されています。"
 
 #. tumbleweed/perl-Unicode-Stringprep/summary
 msgid "Preparation of Internationalized Strings (S<RFC 3454>)"
-msgstr ""
+msgstr "国際化文字列 (S<RFC 3454>) の準備"
 
 #. tumbleweed/perl-Unicode-Stringprep/description
 msgid ""
@@ -33737,35 +33793,41 @@ msgid ""
 "text strings. Protocols must create profiles of stringprep in order to fully "
 "specify the processing options."
 msgstr ""
+"このモジュールは、世界中の一般的なユーザにとって意義のある、文字列入力や文字列比較などの機能を Unicode "
+"テキスト文字列に対して実施する機能を準備するための、 _stringprep_ フレームワークを提供します。 _stringprep_ "
+"プロトコルはプロトコルの識別子や企業名、個人名、国際化ドメイン名などのテキスト文字列に対して、便利な仕組みを提供します。\n"
+"\n"
+"_stringprep_ フレームワークでは、具体的にテキスト文字列を処理する方法については規定していません。処理オプションを完全に指定するには、 "
+"stringprep のプロファイルを作成しなければなりません。"
 
 #. tumbleweed/perl-WWW-Mechanize/summary
 #. leap/perl-WWW-Mechanize/summary
 msgid "Handy web browsing in a Perl object"
-msgstr ""
+msgstr "Perl オブジェクトから扱いやすい Web ブラウジング機能"
 
 #. tumbleweed/perl-WWW-Mechanize/description
 #. leap/perl-WWW-Mechanize/description
 msgid ""
 "Perl module for stateful programmatic web browsing, used for automating "
 "interaction with websites."
-msgstr ""
+msgstr "機械的な Web ブラウジング向けの状態管理型の Perl モジュールです。 Web サイトでのやり取りを自動化するために使用します。"
 
 #. tumbleweed/perl-WWW-PAUSE-CleanUpHomeDir/summary
 #. leap/perl-WWW-PAUSE-CleanUpHomeDir/summary
 msgid "the module to clean up old dists from your PAUSE home directory"
-msgstr ""
+msgstr "お使いの PAUSE ホームディレクトリから配布物をクリーンアップするためのモジュール"
 
 #. tumbleweed/perl-WWW-PAUSE-CleanUpHomeDir/description
 #. leap/perl-WWW-PAUSE-CleanUpHomeDir/description
 msgid ""
 "The module provides means to clean up your PAUSE home directory from old "
 "distributions with ability to undelete files if you so prefer."
-msgstr ""
+msgstr "このモジュールは、お使いの PAUSE ホームディレクトリから古い配布物を清掃し、必要であれば清掃したものを復元する機能を提供します。"
 
 #. tumbleweed/perl-WWW-Pastebin-PastebinCom-Create/summary
 #. leap/perl-WWW-Pastebin-PastebinCom-Create/summary
 msgid "Paste On Www.Pastebin.Com Without Api Keys"
-msgstr ""
+msgstr "API キー無しの Www.Pastebin.Com へのペースト"
 
 #. tumbleweed/perl-WWW-Pastebin-PastebinCom-Create/description
 #. leap/perl-WWW-Pastebin-PastebinCom-Create/description
@@ -33774,6 +33836,8 @@ msgid ""
 "pastebin, without the need for http://pastebin.com/api. See the WARNING!!! "
 "section above."
 msgstr ""
+"このモジュールは www.pastebin.com に対して、 http://pastebin.com/api (API) "
+"を利用せずに貼り付ける機能を提供します。詳しくは WARNING!!! セクションをお読みください。"
 
 #. tumbleweed/perl-WWW-RobotRules/summary
 #. leap/perl-WWW-RobotRules/summary
@@ -33849,7 +33913,7 @@ msgstr ""
 #. tumbleweed/perl-WWW-Shorten/summary
 #. leap/perl-WWW-Shorten/summary
 msgid "Interface to URL shortening sites"
-msgstr ""
+msgstr "URL 短縮サイトに対するインターフェイス"
 
 #. tumbleweed/perl-WWW-Shorten/description
 #. leap/perl-WWW-Shorten/description
@@ -33881,6 +33945,30 @@ msgid ""
 "When version '3.100' is released, these deprecated services will not be part "
 "of the distribution."
 msgstr ""
+"URL を短縮する様々なサービスに対する Perl のインターフェイスです。これらのサイトでは長い URL "
+"のデータベースを管理していて、それぞれに対してユニークな識別子を保持しています。\n"
+"\n"
+"\n"
+"\n"
+"下記の短縮サービスは、すでに存在していないか機能していないため、廃止対象として設定されています:\n"
+"\n"
+"  * WWW::Shorten::LinkToolbot\n"
+"\n"
+"  * WWW::Shorten::Linkz\n"
+"\n"
+"  * WWW::Shorten::MakeAShorterLink\n"
+"\n"
+"  * WWW::Shorten::Metamark\n"
+"\n"
+"  * WWW::Shorten::TinyClick\n"
+"\n"
+"  * WWW::Shorten::Tinylink\n"
+"\n"
+"  * WWW::Shorten::Qurl\n"
+"\n"
+"  * WWW::Shorten::Qwer\n"
+"\n"
+"'3.100' のリリースをもって、これらの廃止予定のサービスは配布物に含まれなくなります。"
 
 #. tumbleweed/perl-Web-MREST/summary
 msgid "Minimalistic REST server"
@@ -33903,11 +33991,22 @@ msgid ""
 "For an introduction to REST and Web Services, see Web::MREST::"
 "WebServicesIntro."
 msgstr ""
+"MREST とは \"minimalistic\" (最小構成の) または \"mechanical\" (機械的な) REST サーバを意味します ("
+"\"mechanical\" とは Web::Machine に依存していることによるものです) 。\n"
+"\n"
+"Web::MREST はシンプルなコマンドから始めることのできる、完全機能の REST "
+"サーバを提供します。モジュールを修正することなく、サーバ側で一般的に使用されるリソースを提供することができます。これは REST "
+"サーバのデモンストレーションのほか、テスト用にも使用することができます。\n"
+"\n"
+"下記に示しているとおり、開発者は、 Web::MREST を独自の REST サーバを実装する際のプラットフォームとして使用することができます。\n"
+"App::Dochazka::REST は、そのようなサーバの \"実際の\" 例です。\n"
+"\n"
+"REST および Web サービスに関する導入説明については、 Web::MREST::WebServicesIntro をお読みください。"
 
 #. tumbleweed/perl-Web-MREST-CLI/summary
 #. leap/perl-Web-MREST-CLI/summary
 msgid "CLI components for Web::MEST-based applications"
-msgstr ""
+msgstr "Web::MEST ベースのアプリケーションに対する CLI コンポーネント"
 
 #. tumbleweed/perl-Web-MREST-CLI/description
 #. leap/perl-Web-MREST-CLI/description
@@ -33916,6 +34015,8 @@ msgid ""
 "some \"generalized\" functions that are used internally and might also be "
 "useful for writing CLI clients in general."
 msgstr ""
+"Web::MREST::CLI 配布物のトップレベルモジュールです。内部的に使用されているいくつかの \"一般化\" された関数を公開し、一般的な "
+"CLI クライアントを作成する際の利便性を提供しています。"
 
 #. tumbleweed/perl-Web-Machine/summary
 #. leap/perl-Web-Machine/summary
@@ -33951,6 +34052,26 @@ msgid ""
 "To learn more about Webmachine, take a look at the links in the SEE ALSO "
 "section."
 msgstr ""
+"'Web::Machine' はステートマシンをモデルとした RESTful Web フレームワークを提供します。 1 "
+"つまたは複数のリソースクラスを定義することができ、各リソースは単一の RESTful URI エンドポイント (ユーザ、電子メールなど) "
+"を表します。また、リソースクラスは新しいユーザや電子メールを作成するための 'POST' リクエストのターゲットとなります。\n"
+"\n"
+"各リソースはステートマシンであり、リソースに対する各リクエストは、ステートマシンを介してリクエストを実行することによって処理します。\n"
+"\n"
+"'Web::Machine' は Plack 上に構築されたものですが、完全なリクエストとレスポンスのサイクルを処理することができます。\n"
+"\n"
+"'Web::Machine' の一般的な使い方、および 'Web::Machine' の仕組みや Plack の動作について、詳しくは "
+"Web::Machine::Manual をご覧ください。\n"
+"\n"
+"これは https://github.com/basho/webmachine の移植版であり、実際には Ruby 版の仕組み "
+"(https://github.com/seancribbs/webmachine-ruby) に非常に似ています。また、 "
+"https://github.com/tautologistics/nodemachine や https://github.com/benoitc/"
+"pywebmachine の仕組みからも一部ヒントを得ています。\n"
+"\n"
+"Web::Machine の歴史については、 2012 年の YAPC::NA のトーク "
+"(https://speakerdeck.com/stevan_little/rest-from-the-trenches) をご覧ください。\n"
+"\n"
+"Webmachine について詳しく学ぶには、 SEE ALSO セクション内のリンクをご覧ください。"
 
 #. tumbleweed/perl-XML-CommonNS/summary
 #. tumbleweed/perl-XML-CommonNS/description
@@ -34054,7 +34175,7 @@ msgstr ""
 #. leap/perl-XML-DOM-XPath/summary
 msgid ""
 "Perl extension to add XPath support to XML::DOM, using XML::XPath engine"
-msgstr ""
+msgstr "XML::XPath エンジンを利用して XPath サポートを XML::DOM に追加するための Perl 拡張"
 
 #. tumbleweed/perl-XML-DOM-XPath/description
 #. leap/perl-XML-DOM-XPath/description
@@ -34062,11 +34183,13 @@ msgid ""
 "XML::DOM::XPath allows you to use XML::XPath methods to query a DOM. This is "
 "often much easier than relying only on getElementsByTagName."
 msgstr ""
+"XML::DOM::XPath は XML::XPath メソッドを利用して、 DOM の問い合わせを実行します。 "
+"getElementsByTagName だけに依存したつくりよりも、しばしばずっと簡単に利用することができます。"
 
 #. tumbleweed/perl-XML-Filter-BufferText/summary
 #. leap/perl-XML-Filter-BufferText/summary
 msgid "Filter to put all characters() in one event"
-msgstr ""
+msgstr "すべての character() を 1 つのイベントにまとめるフィルタ"
 
 #. tumbleweed/perl-XML-Filter-BufferText/description
 #. leap/perl-XML-Filter-BufferText/description
@@ -34090,6 +34213,19 @@ msgid ""
 "That'll make the buffering totally transparent to them ('XML::SAX::Writer' "
 "does that)."
 msgstr ""
+"これは非常にシンプルなフィルタです。よくある悲しみ (もしくはプログラマのエラー) の原因としては、 XML パーサが文字イベントを 1 つのチャンク "
+"(塊) として提供する必要がない、ということです。パーサ側では実行できても強制はされていないためです。このフィルタは、すべての文字を 1 "
+"つのイベントにまとめるような、頻繁に繰り返される処理を提供しています。\n"
+"\n"
+"ただし、下記のような場合には対応できません:\n"
+"\n"
+"  <foo> blah <!-- comment --> phubar </foo>\n"
+"\n"
+"上記の例ではコメントが間に挟まっているため、 2 つの 'character()' "
+"イベントが生成されます。こちらについては、将来的に必要とされれば対応する予定です。\n"
+"\n"
+"また、このフィルタの興味深い使い方としては、ユーザに対して使用を伝えるのではなく、お使いのハンドラのコンストラクタですべてを設定して、それを返すことです。"
+"これにより、バッファリング処理が完全に透過的になります ('XML::SAX::Writer' がそうしています) 。"
 
 #. tumbleweed/perl-XML-Generator-PerlData/summary
 #. leap/perl-XML-Generator-PerlData/summary
@@ -34113,11 +34249,20 @@ msgid ""
 "process those chunks as they appear. See *PROCESSING METHODS* for more info "
 "about how each style works."
 msgstr ""
+"XML::Generator::PerlData は入れ子になった Perl のデータ構造から、 SAX2 "
+"イベントを生成することのできるシンプルな方法を提供します。出力されるドキュメントストリームに対して、細かい調整を加える機能も用意されています。\n"
+"\n"
+"処理は 2 つの方法で行なうことができます: *シンプルスタイル* と *ストリームスタイル* です:\n"
+"\n"
+"わかりやすく言うと、 'シンプルスタイル' とは単一の Perl データ構造を利用して、 XML "
+"にできる限り素早くかつ手間なくイベントを生成したい場合にベストな方法です。もう一方の 'ストリームスタイル' は、 (DBI ハンドルなどを経由して) "
+"データのチャンクを受け取っている場合で、チャンクが現れるごとに処理を行ないたいような場合に便利な仕組みです。各スタイルの動作について、詳しくは *"
+"PROCESSING METHODS* をお読みください。"
 
 #. tumbleweed/perl-XML-Handler-YAWriter/summary
 #. leap/perl-XML-Handler-YAWriter/summary
 msgid "Yet another Perl SAX XML Writer"
-msgstr ""
+msgstr "もう 1 つの Perl SAX XML ライター"
 
 #. tumbleweed/perl-XML-Handler-YAWriter/description
 #. leap/perl-XML-Handler-YAWriter/description
@@ -34130,11 +34275,16 @@ msgid ""
 "\n"
 "  @{$ya->{Strings}}"
 msgstr ""
+"YAWriter は Yet Another XML::Handler::Writer の略で、もう 1 "
+"つのライター機能を提供します。このモジュールは、柔軟なエスケープ処理テクニックを実装し、見やすい出力を行なうことができるものです。 YAWriter "
+"のインスタンスをオプション無しで作成した場合、既定の動作は XML を含む文字列の配列を生成します:\n"
+"\n"
+"  @{$ya->{Strings}}"
 
 #. tumbleweed/perl-XML-LibXML-Simple/summary
 #. leap/perl-XML-LibXML-Simple/summary
 msgid "XML::LibXML clone of XML::Simple::XMLin()"
-msgstr ""
+msgstr "XML::Simple::XMLin() の XML::LibXML クローン"
 
 #. tumbleweed/perl-XML-LibXML-Simple/description
 #. leap/perl-XML-LibXML-Simple/description
@@ -34143,6 +34293,8 @@ msgid ""
 "XML::LibXML parser for XML structures, where the original uses plain Perl or "
 "SAX parsers."
 msgstr ""
+"このモジュールは XML::Simple (Grant McLean 氏) の素っ気ない書き換えモジュールで、 XML 構造の処理に際して XML::"
+"LibXML を利用 するものです。 XML::Simple では Perl や SAX のパーサを利用しています。"
 
 #. tumbleweed/perl-XML-Namespace/summary
 #. leap/perl-XML-Namespace/summary
@@ -34157,11 +34309,14 @@ msgid ""
 "programs, saving you the bother of typing lots of long-winded URIs. It was "
 "inspired by the Class::RDF::NS module distributed as part of Class::RDF."
 msgstr ""
+"このモジュールは、 Perl 内で XML ネームスペースを表すためのシンプルなオブジェクトを実装しています。 Perl "
+"に対するいくつかの文法拡張だけでなく、長い URI を入力する手間なども削減しています。このモジュールは、 Class::RDF "
+"の一部として配布されている Class::RDF::NS モジュールをヒントにして作られています。"
 
 #. tumbleweed/perl-XML-NamespaceFactory/summary
 #. leap/perl-XML-NamespaceFactory/summary
 msgid "Simple factory objects for SAX namespaced names."
-msgstr ""
+msgstr "SAX でのネームスペース付きの名前に対するシンプルな factory オブジェクト"
 
 #. tumbleweed/perl-XML-NamespaceFactory/description
 #. leap/perl-XML-NamespaceFactory/description
@@ -34183,11 +34338,23 @@ msgid ""
 "\n"
 "If this is not clear, hopefully the SYNOPSIS should help :)"
 msgstr ""
+"使用したいネームスペースを 1 つのパラメータとして設定して、単純に XML::NamespaceFactory "
+"を作成するだけです。空のネームスペースを使用したい場合は、単に空文字列を指定してください (ただし undef であってはなりません) 。\n"
+"\n"
+"その後、 JClark の名前を取得したい場合は、オブジェクトに対してメソッドをローカル名で呼び出すだけです。これにより、"
+"お使いのネームスペース内でのローカル名の JClark 表記が返されます。\n"
+"\n"
+"残念ながら、 XML 内での名前によっては Perl 側で正当なものではない場合があります。この問題を回避するには、ハッシュ表記を利用し、ローカル名として"
+"のオブジェクト名をキーとして指定してください。これはメソッドの呼び出し名として動作しますが、 Perl "
+"で利用できない文字も利用できるようになります。また、 XML "
+"名に対する正当性はチェックしていませんので、ご注意ください。この形式はより一般的なものですが、動作が遅くなることに注意してください。\n"
+"\n"
+"よくわからない場合は、 SYNOPSIS をお読みください :)"
 
 #. tumbleweed/perl-XML-Parser-Lite/summary
 #. leap/perl-XML-Parser-Lite/summary
 msgid "Lightweight pure-perl XML Parser (based on regexps)"
-msgstr ""
+msgstr "軽量な純粋 Perl 製の XML パーサ (正規表現ベース)"
 
 #. tumbleweed/perl-XML-Parser-Lite/description
 #. leap/perl-XML-Parser-Lite/description
@@ -34202,6 +34369,12 @@ msgid ""
 "due to a limitation of perl's regular expression implementation (which is "
 "not re-entrant)."
 msgstr ""
+"このモジュールは XML::Parser に似たインターフェイスを持つ XML パーサを実装しています。すべてのコールバックには対応していませんが、 "
+"XML::Parser と同じように利用できるようになっています。実験的な正規表現機能を利用しているため、 Perl 5.6 "
+"もしくはそれ以降のバージョンでのみ動作するほか、プラットフォームによっては異なる動作をする場合があります。\n"
+"\n"
+"なお、こーめバック内では正規表現やスプリットを利用することができません。これは Perl の正規表現の実装による制限 (リエントラントではないため) "
+"です。"
 
 #. tumbleweed/perl-XML-RegExp/summary
 #. leap/perl-XML-RegExp/summary
@@ -34306,6 +34479,8 @@ msgid ""
 "XML documents. By default, it returns a list of hashrefs where each hashref "
 "describes a single difference between the two docs."
 msgstr ""
+"XML::SematicDiff は 2 つの XML 文書の内容と構造を比較する方法を提供します。既定では、 1 つのハッシュ参照ごとに 2 "
+"つの文書の差異が書かれた、ハッシュ参照のリストを返します。"
 
 #. tumbleweed/perl-XML-Simple/summary
 msgid "An API for simple XML files"
@@ -34324,6 +34499,13 @@ msgid ""
 "allows them to be called as methods of an *XML::Simple* object. The object "
 "interface can also be used at either end of a SAX pipeline."
 msgstr ""
+"XML::Simple モジュールは XML 処理モジュール (XML::Parse または SAX2 パーサモジュールのいずれか) 上に構築された、"
+"シンプルな API レイヤを提供します。 2 つの関数 'XMLin()' および 'XMLout()' が公開されます。注意: "
+"明示的に指定することで、小文字版の関数を公開させることもできます: 'xml_in()' および 'xml_out()'\n"
+"\n"
+"もっともシンプルな使い方としては、 2 つの関数を直接呼び出す方法がありますが、必要であれば *XML::Simple* "
+"オブジェクトのメソッドを呼び出す、オブジェクト指向のインターフェイスを利用することもできます (下記 \"OPTIONAL OO INTERFACE\" "
+"をお読みください) 。オブジェクト指向のインターフェイスは SAX パイプラインのいずれの側でも利用することができます。"
 
 #. tumbleweed/perl-XML-SimpleObject-LibXML/summary
 #. leap/perl-XML-SimpleObject-LibXML/summary
@@ -34346,6 +34528,13 @@ msgid ""
 "DOM. I encourage those who want more control and understanding over the DOM "
 "to study XML::LibXML; this module's source can be instructive, too."
 msgstr ""
+"これは処理済みの XML::LibXML ツリーに対して、シンプルなオブジェクトアクセスの機能を提供する短いクラスです。子の要素や属性にアクセスするための"
+"メソッドを、できる限りクリーンな方法で実装しています。 XML:: "
+"ネームスペースを汚してしまう結果になっていますが、これは小さくて素早いモジュールであり、かつ簡易でコンパクトなモジュールであるためです。 XML::"
+"LibXML で提供される DOM メソッドを介して他のインターフェイスを提供する方法も考えられていましたが、私の経験では制限を回避するよりも全体的にシン"
+"プルな仕組みのほうが好まれると判断できるためです。これらの制限には、 DOM との比較でわずかに速度が遅くなっていたりすることもあるほか、 DOM "
+"に関するノードタイプやプロテクション (知識不足による) の制御を喪失している点もあります。より細かい制御や DOM を介して XML::LibXML "
+"を学習したいとお考えの方は、このモジュールのソースをお読みいただくことをお勧めします。"
 
 #. tumbleweed/perl-XML-Stream/summary
 #. leap/perl-XML-Stream/summary
@@ -34497,6 +34686,9 @@ msgid ""
 "functions.Modules such as XSLT and XPointer may need to do this as they "
 "support functionality beyond XPath."
 msgstr ""
+"このモジュールは、 http://www.w3.org/TR/xpath で規定されている XPath "
+"仕様に性格に準拠していながら、関数としてこの鵜を拡張することのできるモジュールを目指しています。これを行なうには、 XSLT や XPointer など、"
+" XPath 以上の機能を持つものが必要です。"
 
 #. tumbleweed/perl-XML-XPathEngine/summary
 #. leap/perl-XML-XPathEngine/summary
@@ -34589,11 +34781,13 @@ msgid ""
 "is (obviously) written in/for Python. This module is a complete port of "
 "PyYAML to Perl."
 msgstr ""
+"PyYAML は動的な言語向けの強健で正しい YAML モジュールです。 Python 言語で書かれ、 Python "
+"言語向けにできています。このモジュールは、 PyYAML を Perl に完全移植したものです。"
 
 #. tumbleweed/perl-YAML-Tiny/summary
 #. leap/perl-YAML-Tiny/summary
 msgid "Read/Write YAML files with as little code as possible"
-msgstr ""
+msgstr "YAML ファイルをできる限り少ないコード量で読み書きするモジュール"
 
 #. tumbleweed/perl-YAML-Tiny/description
 #. leap/perl-YAML-Tiny/description
@@ -34633,6 +34827,33 @@ msgid ""
 "whitespace, or the order of your YAML data. But it should round-trip from "
 "Perl structure to file and back again just fine."
 msgstr ""
+"*YAML::Tiny* は、できる限り少ないコード量で、負荷とメモリのオーバヘッドが少なくなるように開発された、 YAML "
+"ファイルを読み書きするための Perl のクラスです。\n"
+"\n"
+"以前は Perl のアプリケーションは多くのメモリとモジュールを使用するのが当たり前でした。 *::Tiny* "
+"ファミリのモジュールは、特に軽量性と依存関係の少なさを追求し、多数の標準的なモジュールの対抗となるように作られています。\n"
+"\n"
+"\n"
+"このモジュールは、主に人間が作成したファイル (シンプルな設定ファイル) "
+"を読み込み、非常にシンプルな人間にとって読みやすいファイルを生成する際に使用することを目的としています。ただし *人間にとって読みやすい* は、 "
+"*マニアにとって読みやすい* ではないことに注意してください。一般的には、管理職や事務官のような人々にとって、読みやすいものを目指しています。\n"
+"\n"
+"YAML::Tiny ではコメントを生成しませんし、ハッシュの順序についても維持する必要はないものと考えております。そのため、読み込んで書き込む際には、正"
+"規化が行なわれることになります。\n"
+"\n"
+"また、 YAML の完全仕様のうち、非常に基本的なサブセットのみに対応しています。\n"
+"\n"
+"Perl の META.yml "
+"のようなファイルを扱うことを想定したつくりになっていて、小ささと使いやすさを持ちながら、非常に直感的に使えるようになっています。\n"
+"\n"
+"機能は人間にとって読みやすいものである場合にのみ追加され、数行程度のコードで記述できるものが必要です。リクエストが拒否されたからと言って怒らないでください"
+"。度のモジュールであっても誰かが線引きをする必要があるのですが、 YAML::Tiny についてはそれが私であっただけの話です。\n"
+"\n"
+"より強力な機能をご希望の場合は、 YAML モジュール (7 MB ほどのメモリのオーバーヘッドがあります) または YAML::XS (6 MB "
+"ほどのメモリのオーバーヘッドがあり、 C コンパイラが必要です) をお使いください。\n"
+"\n"
+"再作成という意味では、 YAML::Tiny はコメントやホワイトスペース、データの順序などを保持しません。ただし Perl "
+"の構造体にいったん変換して、それを書き戻しても、問題なく動作します。"
 
 #. tumbleweed/perl-aliased/summary
 #. leap/perl-aliased/summary
@@ -34667,11 +34888,30 @@ msgid ""
 "don't let the version number fool you. This code is ridiculously simple and "
 "is just fine for most use."
 msgstr ""
+"'aliased' は考え方がシンプルでありながら扱いやすいモジュールです。指定したクラスを読み込んでから、お使いのネームスペースにクラス名を返すサブルー"
+"チンを公開します。特定のクラスに対する別名は明示的に指定することができるほか、必要であれば暗黙のうちに実施することもできます。暗黙のうちに実施した場合は、"
+"サブルーチンの名前はクラス名の最後のパートになります。そのため、下記のような仕組みに似ています:\n"
+"\n"
+"  \n"
+"\n"
+"  use Some::Annoyingly::Long::Module::Name::Customer;   sub Customer {     "
+"return 'Some::Annoyingly::Long::Module::Name::Customer';   }   my $cust = "
+"Customer->new;\n"
+"\n"
+"このモジュールは、クラスに対してより短い名前を使用したい場合に便利です。クラスの名前を変更しても扱いやすいことは変わりません。\n"
+"\n"
+"(なお、一方のネームスペースからもう一方のネームスペースに別名を作成しているわけではありませんので、 \"別名\" "
+"では誤解を生みやすくなってしまっているかもしれませんが、簡潔で分かりやすいことから今も \"別名\" "
+"と称しています。なお、この仕組みはサブルーチンで実行されているもので、タイプグロブやおかしなネームスペースの操作などはしていません) 。\n"
+"\n"
+"なお、これはオブジェクト指向のモジュールを使用する用途 *だけ* で作られています。手続き型のモジュールを読み込む際には使用できません。なぜ OO "
+"インターフェイスのみなのでしょうか？ 詳しくはマニュアルページをお読みください。また、バージョン番号を偽装してはなりません。このコードは非常にシンプルな仕"
+"組みで、多くの用途には十分であるからです。"
 
 #. tumbleweed/perl-asa/summary
 #. leap/perl-asa/summary
 msgid "Lets your class/object say it works like something else"
-msgstr ""
+msgstr "クラスやオブジェクトをありのまま動作させるモジュール"
 
 #. tumbleweed/perl-asa/description
 #. leap/perl-asa/description
@@ -34722,6 +34962,41 @@ msgid ""
 "And although '@ISA' is about implementation *and* API, overloading 'isa' to "
 "let you change your API is not at all bad when seen in this light."
 msgstr ""
+"Perl 5 では Java 形式のインターフェイスにはネイティブ対応していませんし、 Perl 6 形式の役割にも対応していません。\n"
+"\n"
+"Perl 5 でそのような機能を利用するには、様々な CPAN モジュールを介する多数の方法がありますが、これらはいずれもコードの実装に際して \""
+"モジュール固有の方法\" を必要としてしまいます。\n"
+"\n"
+"それ以外のモジュールでは \"ダック・タイピング\" になってしまいます。\n"
+"\n"
+"これは多くの個所に対して、 \"それがアヒルのように歩き、アヒルのように鳴くのなら、それはアヒルである\" というルールに従って、 \""
+"このメソッドを実行できるか\" というかなりナイーブなチェックを行なうことにもなります。\n"
+"\n"
+"たとえば '->quack' (=アヒルの鳴き声) というメソッドがあったとすると、それはアヒルとして扱われることになります。それはなぜなら、 '@"
+"ISA' 配列に対して 'Duck' を追加するようなことは、その実装を強制されたことを意味するからです。\n"
+"\n"
+"もちろん、よりよい方法があります。\n"
+"\n"
+"良くも悪くも、 Perl の '->isa' 機能を利用することで、クラスやオブジェクトの *メソッド* (関数ではなく) "
+"として定義されているかどうかを判断することができます。これは、 '@IA' 配列に何らかのものを追加するだけではない意味になります。そのため、 "
+"'UNIVERSAL::isa' メソッドはこれに対しても動作することになりますので、独自の 'isa' "
+"メソッドでオーバーロードして直接応答することができます。\n"
+"\n"
+"一般的には下記のようにして利用します:\n"
+"\n"
+"  sub isa {       return 1 if $_[1] eq 'Duck';       shift->SUPER::isa(@_);"
+"   }\n"
+"\n"
+"これは \"自分の型を通常通りチェックしますが、誰かが私のことをアヒルかどうか知りたい場合は、彼らに yes と回答します\" という意味になります。\n"
+"\n"
+"ここだけを見ると、人によってはクラスが \"嘘をついている\" ように見えるかもしれませんが、この議論は、メソッドを直接実行するよりも、 '@ISA' "
+"のほうがより \"現実\" を表している、という考えに基づいています。\n"
+"\n"
+"また、広告している内容と実装している内容は、メソッドの解決に際して同期をとる必要がある、という家庭にも基づいています。ただし、コードを最適にかつ最もクリー"
+"ンに実装すると、 API は実装と直交 (最も頻繁に関連しているにも関わらず) してしまいます。\n"
+"\n"
+"また、 '@ISA' は実装 *と* API の両方に関するもので、 'isa' をオーバーライドすることで、この点から見てもお使いの API "
+"がすべて悪いというわけはないものになります。"
 
 #. tumbleweed/perl-boolean/summary
 #. leap/perl-boolean/summary
@@ -34745,6 +35020,14 @@ msgid ""
 "This module provides basic Boolean support, by defining two special objects: "
 "'true' and 'false'."
 msgstr ""
+"多くのプログラミング言語にはネイティブの 'Boolean' 型が存在していますが、 Perl にはありません。\n"
+"\n"
+"Perl ではシンプルでよく知られた Truth システムがあります。下記のスカラー値はいずれも false を意味します:\n"
+"\n"
+"    $false1 = undef;     $false2 = 0;     $false3 = 0.0;     $false4 = '';"
+"     $false5 = '0';\n"
+"\n"
+"このモジュールは、 'true', 'false' という 2 種類の特殊なオブジェクトを定義することで、 Boolean 機能に対応しています。"
 
 #. tumbleweed/perl-checkbot/summary
 #. leap/perl-checkbot/summary
@@ -34784,7 +35067,7 @@ msgstr ""
 #. tumbleweed/perl-constant-boolean/summary
 #. leap/perl-constant-boolean/summary
 msgid "Define TRUE and FALSE constants."
-msgstr ""
+msgstr "TRUE/FALSE の定数の定義"
 
 #. tumbleweed/perl-constant-boolean/description
 #. leap/perl-constant-boolean/description
@@ -34805,11 +35088,24 @@ msgid ""
 "The constants can be removed from class API with 'no constant::boolean' "
 "pragma or some universal tool like the namespace::clean manpage."
 msgstr ""
+"呼び出し元のネームスペース内に 'TRUE', 'FALSE' の定数を定義します。空文字列やゼロなどを false として扱うことができますし、"
+"空でない文字列や非ゼロの文字列を true として扱うこともできますが、'TRUE' や 'FALSE' "
+"のていすうを利用したほうが、よりわかりやすいコードになります。\n"
+"\n"
+"このモジュールは、仮想的に下記と同じです:\n"
+"\n"
+"     use constant TRUE => !! 1;   use constant FALSE => !! '';\n"
+"\n"
+"'constant::boolean' で公開される定数は、 Test::Pod::Coverage で報告されませんので、ご自身で 'TRUE' や "
+"'FALSE' を定義するよりは便利に使用することができます。\n"
+"\n"
+"また、定数は 'no constant::boolean' プラグマを利用することでクラス API から削除することができるほか、 namespace::"
+"clean などの汎用的なツールで削除することもできます。"
 
 #. tumbleweed/perl-constant-defer/summary
 #. leap/perl-constant-defer/summary
 msgid "Constant Subs with Deferred Value Calculation"
-msgstr ""
+msgstr "遅延型定数を計算するためのモジュール"
 
 #. tumbleweed/perl-constant-defer/description
 #. leap/perl-constant-defer/description
@@ -34832,6 +35128,17 @@ msgid ""
 "See _examples/simple.pl_ in the constant-defer source code for a complete "
 "sample program."
 msgstr ""
+"'constant::defer' は、最初の呼び出しではその値を計算するためにコードを実行し、それ以降の呼び出しでは単純にその値を定数のように返すだけの"
+"サブルーチンを作成します。値のコードは実行されると廃棄されるため、ガーベージコレクタでメモリを回収することができます。\n"
+"\n"
+"計算結果の記憶は、その値を算出するのに多数の手間がかかるものでありながら、いったん計算できてしまえば値が変わらないものに対して有用です。なお、値が不要にな"
+"れば値を算出する際のコードも実行されません。\n"
+"\n"
+"このモジュールは \"遅延型定数\" と呼ばれますが、これは単一のスカラー値であることから、一般にインライン化や折り畳みは実施しません (perlop/"
+"Constant Folding をお読みください) 。現在の実装では、遅延型定数は初回の利用で純粋な定数となり、"
+"インライン化などのコードコンパイルはその後に行ないます (詳しくは /IMPLEMENTATION をお読みください) 。\n"
+"\n"
+"完全なサンプルプログラムをご希望の場合は、 constant-defer ソースコード内の _examples/simple.pl_ をお読みください。"
 
 #. tumbleweed/perl/perl-doc/summary
 #. leap/perl/perl-doc/summary
@@ -34846,7 +35153,7 @@ msgstr "Perl のマニュアルページと pod ファイルです。"
 #. tumbleweed/perl-experimental/summary
 #. leap/perl-experimental/summary
 msgid "Experimental features made easy"
-msgstr ""
+msgstr "実験的な機能を使いやすくするモジュール"
 
 #. tumbleweed/perl-experimental/description
 #. leap/perl-experimental/description
@@ -34883,6 +35190,32 @@ msgid ""
 "arguments) \tsmartmatch    - allow the use of ~~ \tswitch        - allow the "
 "use of ~~, given, and when"
 msgstr ""
+"このプラグマは、実験的な機能を有効にしたり無効にしたりするための簡単かつ便利な方法を提供します。\n"
+"\n"
+"各バージョンの Perl では \"実験的\" として扱われる様々な機能が用意されています。 Perl 5 "
+"ではドキュメンテーション内で指定されていただけでしたが、 Perl v5.10.0 以降、特に v5.18.0 "
+"以降では積極的な仕組みになり、実験的な機能はプラグマタの背後に置かれ、機能を有効化したり警告を無効化したりすることができるようになりました。\n"
+"\n"
+"'eexperimental' プラグマは必要な呪文を組み合わせて単一のインターフェイスにしたもので、 Perl のリリースをまたいでも安定して動作するよ"
+"うになっています。それぞれの実験的な機能に対して、文法スコープ内での機能の有効化と警告の無効化を実施する必要があります:\n"
+"\n"
+"  use experimental '機能名';\n"
+"\n"
+"機能を無効化して警告を再度有効化するには、下記のようにします:\n"
+"\n"
+"  no experimental '機能名';\n"
+"\n"
+"対応する機能名については、下記およびドキュメンテーションをお読みください:\n"
+"\n"
+"\tarray_base    - allow the use of $[ to change the starting index of @array "
+"\tautoderef     - allow push, each, keys, and other built-ins on references "
+"\tlexical_topic - allow the use of lexical $_ via \"my $_\" \tpostderef     -"
+" allow the use of postfix dereferencing expressions, including \t"
+"                in interpolating strings \trefaliasing   - allow aliasing "
+"via \\$x = \\$y \tregex_sets    - allow extended bracketed character classes "
+"in regexps \tsignatures    - allow subroutine signatures (for named "
+"arguments) \tsmartmatch    - allow the use of ~~ \tswitch        - allow the "
+"use of ~~, given, and when"
 
 #. tumbleweed/perl-libwww-perl/summary
 #. tumbleweed/perl-libwww-perl/description
@@ -34891,18 +35224,18 @@ msgstr "Perl 向け World-Wide Web (www) ライブラリ"
 
 #. tumbleweed/perl-mousex-getopt/summary
 msgid "A Mouse role for processing command line options"
-msgstr ""
+msgstr "コマンドラインオプションを処理するための Mouse の役割"
 
 #. tumbleweed/perl-mousex-getopt/description
 msgid ""
 "A Mouse role which provides an alternate constructor for creating objects "
 "using parameters passed in from the command line."
-msgstr ""
+msgstr "コマンドラインで渡されたパラメータを利用して、オブジェクトを作成するための代替コンストラクタを提供する Mouse の役割です。"
 
 #. tumbleweed/perl-namespace-autoclean/summary
 #. leap/perl-namespace-autoclean/summary
 msgid "Keep imports out of your namespace"
-msgstr ""
+msgstr "お使いのネームスペース内でのインポートの維持"
 
 #. tumbleweed/perl-namespace-autoclean/description
 #. leap/perl-namespace-autoclean/description
@@ -34931,6 +35264,23 @@ msgid ""
 "  sub import {       namespace::autoclean->import(         -cleanee => "
 "scalar(caller),       );   }"
 msgstr ""
+"Perl パッケージ内に関数をインポートする場合、通常はメソッドとして利用できるのが自然です。\n"
+"\n"
+"'namespace::autoclean' プラグマは、現在のパッケージに対するコンパイルサイクルの最後で、すべてのインポート済みシンボルを削除します。"
+"パッケージ内で呼び出した関数はそのままその名前に関連付けられますが、クラスやインスタンスのメソッドとしては表示されなくなります。\n"
+"\n"
+"このモジュールは namespace::clean に非常に似ていますが、 'use' "
+"でインポートしたものを含めてすべてのインポートされた関数をクリーンアップする点が異なります。また、メソッドのように見えるものに関してはタッチしません。\n"
+"\n"
+"エクスポータを作成していて、自分自身 (およびその相手) の後にクリーンアップを指定したい場合は、 '-cleanee' "
+"スイッチを利用して、どのパッケージをクリーンアップするのかを指定してください:\n"
+"\n"
+"  package My::MooseX::namespace::autoclean;   use strict;\n"
+"\n"
+"  use namespace::autoclean (); # no cleanup, just load\n"
+"\n"
+"  sub import {       namespace::autoclean->import(         -cleanee => "
+"scalar(caller),       );   }"
 
 #. tumbleweed/perl-namespace-clean/summary
 #. tumbleweed/perl-namespace-clean/description
@@ -34942,7 +35292,7 @@ msgstr "ネームスペース外のインポートと関数の維持"
 #. tumbleweed/perl-strictures/summary
 #. leap/perl-strictures/summary
 msgid "Turn On Strict and Make Most Warnings Fatal"
-msgstr ""
+msgstr "strict を有効化し、多くの警告を致命的なものとして扱わせるモジュール"
 
 #. tumbleweed/perl-strictures/description
 #. leap/perl-strictures/description
@@ -34976,11 +35326,32 @@ msgid ""
 "only to the mechanism of this code will result in a sub-version increase (e."
 "g. 1.000000 to 1.000001 (1.0.1))."
 msgstr ""
+"1 年ほど前に、私が作成していたコードの中でこのモジュールと同じようなものを作っていました。これをより短く作り直したのがこのモジュールです。\n"
+"\n"
+"'use Moose' 内でのインポートのような仕組みは、警告を有効にはするものの、それらを致命的なエラーとして扱うことができないことから、あまり役に立た"
+"ないものになってしまっています。私としては、警告が発生するような場合は例外として扱ってほしかったからです。\n"
+"\n"
+"私が開発しているコードから警告が発生した場合は、それは誤りを意味しています。\n"
+"\n"
+"コードが誤りに気付いた時点ではクラッシュして欲しいと考えています -- STDERR にメッセージを出力して未知の (おそらく望まない) "
+"動作をしてほしいわけではないからです。\n"
+"\n"
+"また、明らかなコードの誤り、たとえば間接的なオブジェクトの文法ミス (誤った形でコンパイルしてしまったりするようなものではない間違い) があった場合でも、"
+" XS の依存性というコストや、他のマシンで何かを設定するような面倒はやりたくありません。\n"
+"\n"
+"そのため、 strict を設定して追加のチェックを行なうのがより良いと考えました。ただ、これは VCS "
+"のチェックアウトのテストファイル内でのみ実行するもので、 'PERL_STRICTURES_EXTRA' "
+"の環境変数を設定することで、このような望まない動作を上書きできるようにしておくべきと考えました。\n"
+"\n"
+"追加の作者側のチェック機能が思い浮かんだ場合は、コードパスにのみ 'PERL_STRICTURES_EXTRA' を追加します -- "
+"これはマイナーバージョンの増加 (例: 1.000000 から 1.001000 (1.1.0) など) "
+"が発生します。また、このコードの仕組みのみに対する修正の場合、サブバージョンの追加 (例: 1.000000 から 1.000001 (1.0.1) "
+"など) のみが発生します。"
 
 #. tumbleweed/perl-syntax/summary
 #. leap/perl-syntax/summary
 msgid "Activate syntax extensions"
-msgstr ""
+msgstr "文法拡張の有効化"
 
 #. tumbleweed/perl-syntax/description
 #. leap/perl-syntax/description
@@ -34997,6 +35368,14 @@ msgid ""
 "Syntax::Feature::Function manpage and 'foo_bar' would become 'Syntax::"
 "Feature::FooBar'."
 msgstr ""
+"このモジュールは、 Perl に対してコミュニティが提供する文法拡張を有効化するモジュールです。機能名を指定し、オプションでパラメータ付きのスカラー値を渡"
+"すことで、発信システムがお使いのパッケージ内に拡張を読み込み、インストールします。\n"
+"\n"
+"インポートのパラメータは Data::OptList で処理されます。標準化されたオプションはありません。設定可能な設定オプションを見つけるための特定の文"
+"法機能について、詳しくはドキュメンテーションをお読みください。\n"
+"\n"
+"機能名内に渡されたものは単純に変換されます: 'function' は Syntax::Feature::Function に、 'foo_bar' は "
+"'Syntax::Feature::FooBar' になります。"
 
 #. leap/perl-AnyEvent-HTTP/description
 msgid ""
@@ -35064,7 +35443,7 @@ msgstr ""
 
 #. leap/perl-Business-ISBN-Data/summary
 msgid "data pack for Business::ISBN"
-msgstr ""
+msgstr "Business::ISBN 向けデータパック"
 
 #. leap/perl-Business-ISBN-Data/description
 msgid ""
@@ -35315,11 +35694,11 @@ msgstr ""
 
 #. leap/perl-Config-AutoConf/summary
 msgid "A module to implement some of AutoConf macros in pure perl"
-msgstr ""
+msgstr "純粋な Perl 内で AutoConf のマクロのうちのいくつかを実装するモジュール"
 
 #. leap/perl-Config-AutoConf/description
 msgid "A module to implement some of AutoConf macros in pure perl."
-msgstr ""
+msgstr "純粋な Perl 内で AutoConf のマクロのうちのいくつかを実装するモジュールです。"
 
 #. leap/perl-Config-IniFiles/summary
 msgid "A module for reading .ini-style configuration files."
