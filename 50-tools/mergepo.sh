@@ -27,7 +27,7 @@ for domain in "${domains[@]}"; do
     for lang in "${languages[@]}"; do
 	o="$lang/po/$domain.$lang.po"
 	[ -e "$o" ] || continue
-	if msgmerge -q --previous -s --lang="$lang" -o "$o".new "$o" "$pot"; then
+	if msgmerge -q --previous --lang="$lang" -o "$o".new "$o" "$pot"; then
 	    mv "$o".new "$o"
 	fi
     done
