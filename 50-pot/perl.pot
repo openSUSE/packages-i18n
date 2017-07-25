@@ -1,7 +1,7 @@
 # This file was automatically generated
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2017-07-10 17:01:05\n"
+"POT-Creation-Date: 2017-07-26 00:23:10\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
@@ -356,6 +356,7 @@ msgid "Class::Autouse allows you to specify a class the will only load when a me
 msgstr ""
 
 #. tumbleweed/perl-Class-C3-XS/summary
+#. tumbleweed/perl-Class-C3-XS/summary
 #. leap/perl-Class-C3-XS/summary
 msgid "XS speedups for Class::C3"
 msgstr ""
@@ -506,6 +507,19 @@ msgid ""
 "*NOTE*\n"
 "\n"
 "_Compress::Bzip2_ is just a simple _bzip2_ binding, comparable to the old Compress::Zlib library. It is not well integrated into PerlIO, use the preferred IO::Compress::Bzip2 instead."
+msgstr ""
+
+#. tumbleweed/perl-Compress-Raw-Lzma/summary
+msgid "Low-Level Interface to lzma compression library"
+msgstr ""
+
+#. tumbleweed/perl-Compress-Raw-Lzma/description
+msgid ""
+"'Compress::Raw::Lzma' provides an interface to the in-memory compression/uncompression functions from the lzma compression library.\n"
+"\n"
+"Although the primary purpose for the existence of 'Compress::Raw::Lzma' is for use by the 'IO::Compress::Lzma', 'IO::Uncompress::UnLzma', 'IO::Compress::Xz' and 'IO::Uncompress::UnXz' modules, it can be used on its own for simple compression/uncompression tasks.\n"
+"\n"
+"There are two functions, called 'code' and 'flush', used in all the compression and uncompression interfaces defined in this module. By default both of these functions overwrites any data stored in its output buffer parameter. If you want to compress/uncompress to a single buffer, and have 'code' and 'flush' append to that buffer, enable the 'AppendOutput' option when you create the compression/decompression object."
 msgstr ""
 
 #. tumbleweed/perl-Config-General/summary
@@ -818,6 +832,7 @@ msgstr ""
 msgid "*DBD::mysql* is the Perl5 Database Interface driver for the MySQL database. In other words: DBD::mysql is an interface between the Perl programming language and the MySQL programming API that comes with the MySQL relational database management system. Most functions provided by this programming API are supported. Some rarely used functions are missing, mainly because no-one ever requested them. :-)"
 msgstr ""
 
+#. tumbleweed/perl-DBI/summary
 #. tumbleweed/perl-DBI/summary
 #. leap/perl-DBI/summary
 msgid "Database independent interface for Perl"
@@ -2037,14 +2052,18 @@ msgstr ""
 
 #. tumbleweed/perl-List-MoreUtils-XS/summary
 #. tumbleweed/perl-List-MoreUtils-XS/description
+#. tumbleweed/perl-List-MoreUtils-XS/summary
+#. tumbleweed/perl-List-MoreUtils-XS/description
 msgid "Provide compiled List::MoreUtils functions"
 msgstr ""
 
+#. tumbleweed/perl-List-SomeUtils-XS/summary
 #. tumbleweed/perl-List-SomeUtils-XS/summary
 #. leap/perl-List-SomeUtils-XS/summary
 msgid "XS implementation for List::SomeUtils"
 msgstr ""
 
+#. tumbleweed/perl-List-SomeUtils-XS/description
 #. tumbleweed/perl-List-SomeUtils-XS/description
 #. leap/perl-List-SomeUtils-XS/description
 msgid ""
@@ -2136,10 +2155,12 @@ msgid "'Clipper' is a C++ (and Delphi) library that implements polygon clipping.
 msgstr ""
 
 #. tumbleweed/perl-Math-ConvexHull-MonotoneChain/summary
+#. tumbleweed/perl-Math-ConvexHull-MonotoneChain/summary
 #. leap/perl-Math-ConvexHull-MonotoneChain/summary
 msgid "Andrew's monotone chain algorithm for finding a convex hull in 2D"
 msgstr ""
 
+#. tumbleweed/perl-Math-ConvexHull-MonotoneChain/description
 #. tumbleweed/perl-Math-ConvexHull-MonotoneChain/description
 #. leap/perl-Math-ConvexHull-MonotoneChain/description
 msgid ""
@@ -2597,6 +2618,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/perl-Params-Validate/summary
+#. tumbleweed/perl-Params-Validate/summary
 #. leap/perl-Params-Validate/summary
 msgid "Validate method/function parameters"
 msgstr ""
@@ -2615,16 +2637,6 @@ msgstr ""
 #. leap/perl-Parse-RecDescent/summary
 #. leap/perl-Parse-RecDescent/description
 msgid "Generate Recursive-Descent Parsers"
-msgstr ""
-
-#. tumbleweed/perl-Parse-Yapp/summary
-#. leap/perl-Parse-Yapp/summary
-msgid "Perl extension for generating and using LALR parsers"
-msgstr ""
-
-#. tumbleweed/perl-Parse-Yapp/description
-#. leap/perl-Parse-Yapp/description
-msgid "Parse::Yapp (Yet Another Perl Parser compiler) is a collection of modules that let you generate and use yacc like thread safe (reentrant) parsers with perl object oriented interface."
 msgstr ""
 
 #. tumbleweed/perl-Perl-Critic-Pulp/summary
@@ -2790,6 +2802,8 @@ msgstr ""
 
 #. tumbleweed/perl-Scalar-List-Utils/summary
 #. tumbleweed/perl-Scalar-List-Utils/description
+#. tumbleweed/perl-Scalar-List-Utils/summary
+#. tumbleweed/perl-Scalar-List-Utils/description
 #. leap/perl-Scalar-List-Utils/summary
 #. leap/perl-Scalar-List-Utils/description
 msgid "Common Scalar and List utility subroutines"
@@ -2811,10 +2825,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/perl-Scope-Upper/summary
+#. tumbleweed/perl-Scope-Upper/summary
 #. leap/perl-Scope-Upper/summary
 msgid "Act on upper scopes"
 msgstr ""
 
+#. tumbleweed/perl-Scope-Upper/description
 #. tumbleweed/perl-Scope-Upper/description
 #. leap/perl-Scope-Upper/description
 msgid ""
@@ -3770,19 +3786,6 @@ msgid ""
 "_bind_textdomain_codeset(domain, codeset)_ instructs the retrieval functions to translate the returned messages to the character encoding given by *codeset* if the encoding of the message catalog is known."
 msgstr ""
 
-#. tumbleweed/perl-local-lib/perl-homedir/summary
-#. leap/perl-local-lib/perl-homedir/summary
-msgid "Per-user Perl local::lib setup"
-msgstr ""
-
-#. tumbleweed/perl-local-lib/perl-homedir/description
-#. leap/perl-local-lib/perl-homedir/description
-msgid ""
-"perl-homedir configures the system to automatically create a ~/perl5 directory in each user's $HOME on user login.  This allows each user to install and CPAN packages via the CPAN to their $HOME, with no additional configuration or privliges, and without installing them system-wide.\n"
-"\n"
-"If you want your users to be able to install and use their own Perl modules, install this package."
-msgstr ""
-
 #. tumbleweed/perl-indirect/summary
 #. leap/perl-indirect/summary
 msgid "Lexically warn about using the indirect method call syntax"
@@ -3839,19 +3842,6 @@ msgstr ""
 #. tumbleweed/perl-libxml-perl/description
 #. leap/perl-libxml-perl/description
 msgid "perl-libxml-perl is a collection of Perl modules for working with XML."
-msgstr ""
-
-#. tumbleweed/perl-local-lib/summary
-#. leap/perl-local-lib/summary
-msgid "Create and Use a Local Lib/ for Perl Modules with Perl5lib"
-msgstr ""
-
-#. tumbleweed/perl-local-lib/description
-#. leap/perl-local-lib/description
-msgid ""
-"This module provides a quick, convenient way of bootstrapping a user-local Perl module library located within the user's home directory. It also constructs and prints out for the user the list of environment variables using the syntax appropriate for the user's current shell (as specified by the 'SHELL' environment variable), suitable for directly adding to one's shell configuration file.\n"
-"\n"
-"More generally, local::lib allows for the bootstrapping and usage of a directory containing Perl modules outside of Perl's '@INC'. This makes it easier to ship an application with an app-specific copy of a Perl module, or collection of modules. Useful in cases like when an upstream maintainer hasn't applied a patch to a module of theirs that you need for your application."
 msgstr ""
 
 #. tumbleweed/perl-multidimensional/summary
@@ -4168,21 +4158,18 @@ msgid "Dispatcher module for command line interface programs"
 msgstr ""
 
 #. tumbleweed/perl-App-CLI/description
-#. leap/perl-App-CLI/description
 msgid ""
 "'App::CLI' dispatches CLI (command line interface) based commands into command classes. It also supports subcommand and per-command options.\n"
 "\n"
-"get_opt([@config], %opt_map)         give options map, process by Getopt::Long::Parser\n"
+"get_opt([@config], %opt_map)     Give options map, processed by Getopt::Long::Parser.\n"
 "\n"
-"interface of dispatcher\n"
+"Interface of dispatcher\n"
 "\n"
-"cmd_map($cmd)     find package name of subcommand in constant %alias\n"
+"cmd_map($cmd)     Find package name of subcommand in constant '%alias'.\n"
 "\n"
-"    if it's finded, return ucfirst of the package name,\n"
+"    If it's found, return 'ucfirst' of the package name, otherwise, return     'ucfirst' of '$cmd' itself.\n"
 "\n"
-"    otherwise, return ucfirst of $cmd itself.\n"
-"\n"
-"get_cmd($cmd, @arg)     return subcommand of first level via $ARGV[0]"
+"get_cmd($cmd, @arg)     Return subcommand of first level via '$ARGV[0]'."
 msgstr ""
 
 #. tumbleweed/perl-App-Cmd/summary
@@ -6513,8 +6500,7 @@ msgid "A module used to generate random data. Useful mostly for test programs."
 msgstr ""
 
 #. tumbleweed/perl-Data-Section/summary
-#. leap/perl-Data-Section/summary
-msgid "read multiple hunks of data out of your DATA section"
+msgid "Read Multiple Hunks of Data Out of Your Data Section"
 msgstr ""
 
 #. tumbleweed/perl-Data-Section/description
@@ -10437,7 +10423,7 @@ msgid ""
 "\n"
 "The arguments size and max specify the maximum size and maximum number of log files created. The size defaults to 10M and the max number of files defaults to 1. If DatePattern is not defined then we default to working in size mode. That is, use size values for deciding when to rotate.\n"
 "\n"
-"Once DatePattern is defined FileRotate will move into time mode. Once this happens file rotation ignores size constraints and uses the defined date pattern constraints.\n"
+"Once DatePattern is defined FileRotate will move into time mode. Once this happens file rotation ignores size constraints, unless check_both, and uses the defined date pattern constraints.\n"
 "\n"
 "If you setup a config file using Log::Log4perl::init_and_watch() or the like, you can switch between modes just by commenting out the DatePattern line.\n"
 "\n"
@@ -11262,7 +11248,7 @@ msgstr ""
 
 #. tumbleweed/perl-Mojo-SQLite/description
 msgid ""
-"Mojo::SQLite is a tiny wrapper around DBD::SQLite that makes at https://www.sqlite.org/ a lot of fun to use with the at https://mojolico.us real-time web framework.\n"
+"Mojo::SQLite is a tiny wrapper around DBD::SQLite that makes at https://www.sqlite.org/ a lot of fun to use with the at https://mojolico.us real-time web framework. Use all at http://sqlite.org/lang.html SQLite has to offer, generate CRUD queries from data structures, and manage your database schema with migrations.\n"
 "\n"
 "Database and statement handles are cached automatically, so they can be reused transparently to increase performance. And you can handle connection timeouts gracefully by holding on to them only for short amounts of time.\n"
 "\n"
@@ -11276,7 +11262,7 @@ msgid ""
 "\n"
 "In this example application, we create a 'sqlite' helper to store a Mojo::SQLite object. Our action calls that helper and uses the method Mojo::SQLite/\"db\" to dequeue a Mojo::SQLite::Database object from the connection pool. Then we use the method Mojo::SQLite::Database/\"query\" to execute an at http://www.postgresql.org/docs/current/static/sql.html statement, which returns a Mojo::SQLite::Results object. And finally we call the method Mojo::SQLite::Results/\"hash\" to retrieve the first row as a hash reference.\n"
 "\n"
-"All I/O and queries are performed synchronously. However, the \"Write-Ahead Log\" journal is enabled for all connections, allowing multiple processes to read and write concurrently to the same database file (but only one can write at a time). You can prevent this mode from being enabled by passing the option 'no_wal'. See http://sqlite.org/wal.html for more information.\n"
+"All I/O and queries are performed synchronously. However, the \"Write-Ahead Log\" journal is enabled for all connections, allowing multiple processes to read and write concurrently to the same database file (but only one can write at a time). You can prevent this mode from being enabled by passing the option 'no_wal', but note that this is incompatible with SQLite databases that have already had WAL mode enabled. See http://sqlite.org/wal.html and DBD::SQLite/\"journal_mode\" for more information.\n"
 "\n"
 "     my $pid = fork || die $!;   say $sql->db->query('select datetime(\"now\",\"localtime\") as time')->hash->{time};   exit unless $pid;\n"
 "\n"
@@ -12979,6 +12965,18 @@ msgid ""
 "It supports both Windows NT registry files (Windows NT, 2000, XP, 2003, Vista, 7) and Windows 95 registry files (Windows 95, 98, Millennium Edition).\n"
 "\n"
 "It is intended to be used to parse offline registry files. If a registry file is currently in use, you will not be able to open it. However, you can save part or all of a currently loaded registry file using the Windows reg command if you have the appropriate administrative access."
+msgstr ""
+
+#. tumbleweed/perl-Parse-Yapp/summary
+#. leap/perl-Parse-Yapp/summary
+msgid "Perl extension for generating and using LALR parsers"
+msgstr ""
+
+#. tumbleweed/perl-Parse-Yapp/description
+msgid ""
+"Parse::Yapp (Yet Another Perl Parser compiler) is a collection of modules that let you generate and use yacc like thread safe (reentrant) parsers with perl object oriented interface.\n"
+"\n"
+"The script yapp is a front-end to the Parse::Yapp module and let you easily create a Perl OO parser from an input grammar file."
 msgstr ""
 
 #. tumbleweed/perl-Path-Class/summary
@@ -17374,9 +17372,50 @@ msgid ""
 "\tarray_base    - allow the use of $[ to change the starting index of @array \tautoderef     - allow push, each, keys, and other built-ins on references \tlexical_topic - allow the use of lexical $_ via \"my $_\" \tpostderef     - allow the use of postfix dereferencing expressions, including \t                in interpolating strings \trefaliasing   - allow aliasing via \\$x = \\$y \tregex_sets    - allow extended bracketed character classes in regexps \tsignatures    - allow subroutine signatures (for named arguments) \tsmartmatch    - allow the use of ~~ \tswitch        - allow the use of ~~, given, and when"
 msgstr ""
 
+#. tumbleweed/perl-local-lib/perl-homedir/summary
+#. leap/perl-local-lib/perl-homedir/summary
+msgid "Per-user Perl local::lib setup"
+msgstr ""
+
+#. tumbleweed/perl-local-lib/perl-homedir/description
+#. leap/perl-local-lib/perl-homedir/description
+msgid ""
+"perl-homedir configures the system to automatically create a ~/perl5 directory in each user's $HOME on user login.  This allows each user to install and CPAN packages via the CPAN to their $HOME, with no additional configuration or privliges, and without installing them system-wide.\n"
+"\n"
+"If you want your users to be able to install and use their own Perl modules, install this package."
+msgstr ""
+
 #. tumbleweed/perl-libwww-perl/summary
 #. tumbleweed/perl-libwww-perl/description
 msgid "The World-Wide Web library for Perl"
+msgstr ""
+
+#. tumbleweed/perl-local-lib/summary
+#. leap/perl-local-lib/summary
+msgid "Create and Use a Local Lib/ for Perl Modules with Perl5lib"
+msgstr ""
+
+#. tumbleweed/perl-local-lib/description
+msgid ""
+"This module provides a quick, convenient way of bootstrapping a user-local Perl module library located within the user's home directory. It also constructs and prints out for the user the list of environment variables using the syntax appropriate for the user's current shell (as specified by the 'SHELL' environment variable), suitable for directly adding to one's shell configuration file.\n"
+"\n"
+"More generally, local::lib allows for the bootstrapping and usage of a directory containing Perl modules outside of Perl's '@INC'. This makes it easier to ship an application with an app-specific copy of a Perl module, or collection of modules. Useful in cases like when an upstream maintainer hasn't applied a patch to a module of theirs that you need for your application.\n"
+"\n"
+"On import, local::lib sets the following environment variables to appropriate values:\n"
+"\n"
+"* PERL_MB_OPT\n"
+"\n"
+"* PERL_MM_OPT\n"
+"\n"
+"* PERL5LIB\n"
+"\n"
+"* PATH\n"
+"\n"
+"* PERL_LOCAL_LIB_ROOT\n"
+"\n"
+"When possible, these will be appended to instead of overwritten entirely.\n"
+"\n"
+"These values are then available for reference by any code after import."
 msgstr ""
 
 #. tumbleweed/perl-mousex-getopt/summary
@@ -17455,6 +17494,11 @@ msgid ""
 "The passed in feature names are simply transformed: 'function' becomes the Syntax::Feature::Function manpage and 'foo_bar' would become 'Syntax::Feature::FooBar'."
 msgstr ""
 
+#. tumbleweed/perl-Spooky-Patterns-XS/summary
+#. tumbleweed/perl-Spooky-Patterns-XS/description
+msgid "Spooky::Patterns::XS Perl module"
+msgstr ""
+
 #. leap/perl-AnyEvent-HTTP/description
 msgid ""
 "This module is an the AnyEvent manpage user, you need to make sure that you use and run a supported event loop.\n"
@@ -17471,6 +17515,23 @@ msgid ""
 "This is the top-level module of App::CELL, the Configuration, Error-handling, Localization, and Logging framework for applications (or scripts) written in Perl.\n"
 "\n"
 "For details, read the POD in the the App::CELL manpage distro. For an introduction, read the App::CELL::Guide manpage."
+msgstr ""
+
+#. leap/perl-App-CLI/description
+msgid ""
+"'App::CLI' dispatches CLI (command line interface) based commands into command classes. It also supports subcommand and per-command options.\n"
+"\n"
+"get_opt([@config], %opt_map)         give options map, process by Getopt::Long::Parser\n"
+"\n"
+"interface of dispatcher\n"
+"\n"
+"cmd_map($cmd)     find package name of subcommand in constant %alias\n"
+"\n"
+"    if it's finded, return ucfirst of the package name,\n"
+"\n"
+"    otherwise, return ucfirst of $cmd itself.\n"
+"\n"
+"get_cmd($cmd, @arg)     return subcommand of first level via $ARGV[0]"
 msgstr ""
 
 #. leap/perl-App-Cmd/description
@@ -17711,6 +17772,10 @@ msgstr ""
 
 #. leap/perl-Data-OptList/summary
 msgid "parse and validate simple name/value option pairs"
+msgstr ""
+
+#. leap/perl-Data-Section/summary
+msgid "read multiple hunks of data out of your DATA section"
 msgstr ""
 
 #. leap/perl-Date-Manip/description
@@ -19323,6 +19388,10 @@ msgid ""
 "It is also capable of determining that a parameter is of a specific type, that it is an object of a certain class hierarchy, that it possesses certain methods, or applying validation callbacks to arguments."
 msgstr ""
 
+#. leap/perl-Parse-Yapp/description
+msgid "Parse::Yapp (Yet Another Perl Parser compiler) is a collection of modules that let you generate and use yacc like thread safe (reentrant) parsers with perl object oriented interface."
+msgstr ""
+
 #. leap/perl-PlRPC/summary
 msgid "Perl Extension for Writing PlRPC Servers"
 msgstr ""
@@ -19477,4 +19546,11 @@ msgstr ""
 
 #. leap/perl-libintl-perl/summary
 msgid "Internationalization Library for Perl"
+msgstr ""
+
+#. leap/perl-local-lib/description
+msgid ""
+"This module provides a quick, convenient way of bootstrapping a user-local Perl module library located within the user's home directory. It also constructs and prints out for the user the list of environment variables using the syntax appropriate for the user's current shell (as specified by the 'SHELL' environment variable), suitable for directly adding to one's shell configuration file.\n"
+"\n"
+"More generally, local::lib allows for the bootstrapping and usage of a directory containing Perl modules outside of Perl's '@INC'. This makes it easier to ship an application with an app-specific copy of a Perl module, or collection of modules. Useful in cases like when an upstream maintainer hasn't applied a patch to a module of theirs that you need for your application."
 msgstr ""
