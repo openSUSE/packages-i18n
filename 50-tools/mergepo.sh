@@ -15,12 +15,12 @@ for i in "$@"; do
 done
 if [ -z "$domains" ]; then
     domains=(50-pot/*.pot)
-    domains="${domains[@]##*/}"
-    domains="${domains[@]%.pot}"
+    domains=("${domains[@]##*/}")
+    domains=("${domains[@]%.pot}")
 fi
 if [ -z "$languages" ]; then
     languages=(*/po)
-    languages="${languages[@]%/po}"
+    languages=("${languages[@]%/po}")
 fi
 for domain in "${domains[@]}"; do
     pot="50-pot/$domain.pot"
