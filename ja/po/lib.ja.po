@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2017-07-26 00:23:10\n"
-"PO-Revision-Date: 2017-07-28 03:43+0000\n"
+"PO-Revision-Date: 2017-08-04 03:41+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/lib-master/ja/>\n"
@@ -13678,6 +13678,11 @@ msgid ""
 "file   wrjpgcom - insert text comments into a JPEG file   tjbench - a JPEG "
 "decompression/compression benchmark"
 msgstr ""
+"libjpeg-turbo パッケージには、 JPEG "
+"画像を操作するための関数集のライブラリが含まれています。このほか、下記のようなコマンドラインユーティリティも含まれています:   djpeg - "
+"JPEG ファイルを展開して画像ファイルに変換   jpegtran - 無損失型の JPEG ファイル変換   rdjpgcom - JPEG "
+"ファイル内のテキストコメントの表示   wrjpgcom - JPEG ファイル内へのテキストコメントの挿入   tjbench - JPEG "
+"圧縮／展開ベンチマーク"
 
 #. tumbleweed/libjpeg62-turbo/libjpeg62/summary
 #. tumbleweed/libjpeg-turbo/libjpeg8/summary
@@ -13752,29 +13757,19 @@ msgstr ""
 "います。"
 
 #. tumbleweed/libjreen/libjreen-devel/summary
-#, fuzzy
-#| msgid "Development files for librcc, a charset conversion library"
 msgid "Development files for libjreen, a Qt-based Jabber/XMPP library"
-msgstr "文字セット変換ライブラリ librcc 向け開発用ファイル"
+msgstr "Qt ベースの Jabber/XMPP ライブラリ libjreen 向け開発用ファイル"
 
 #. tumbleweed/libjreen/libjreen-devel/description
-#, fuzzy
-#| msgid ""
-#| "libevtx is a library to access the Windows XML Event log format.\n"
-#| "\n"
-#| "This subpackage contains libraries and header files for developing "
-#| "applications that want to make use of libevtx."
 msgid ""
 "Jreen is an extensible Qt-based asynchronious Jabber library.\n"
 "\n"
 "This subpackage contains libraries and header files for developing "
 "applications that want to make use of libjreen."
 msgstr ""
-"libevt は Windows の XML イベントログ形式にアクセスするためのライブラリで"
-"す。\n"
+"Jreen は拡張性のある Qt ベースの非同期 Jabber ライブラリです。\n"
 "\n"
-"このサブパッケージには、 libevtx を利用してアプリケーションを開発するのに必要"
-"な、ライブラリとヘッダファイルが含まれています。"
+"このサブパッケージには、 libjreen を利用してアプリケーションを開発するのに必要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/libjreen-qt5/libjreen-qt5-1/summary
 #. tumbleweed/libjreen-qt5/libjreen-qt5-devel/summary
@@ -13795,14 +13790,12 @@ msgid "Qt Jabber/XMPP extensible library."
 msgstr "Qt Jabber/XMPP 拡張ライブラリです。"
 
 #. tumbleweed/libjreen/libjreen1/summary
-#, fuzzy
-#| msgid "Qt Jabber/XMPP library"
 msgid "Qt-based Jabber/XMPP library"
-msgstr "Qt Jabber/XMPP ライブラリ"
+msgstr "Qt ベースの Jabber/XMPP ライブラリ"
 
 #. tumbleweed/libjreen/libjreen1/description
 msgid "Jreen is an extensible Qt-based asynchronious Jabber library."
-msgstr ""
+msgstr "Jreen は拡張性のある Qt ベースの非同期 Jabber ライブラリです。"
 
 #. tumbleweed/libkate/libkate-devel/summary
 #. leap/libkate/libkate-devel/summary
@@ -13885,7 +13878,7 @@ msgstr ""
 #. tumbleweed/libkcapi/libkcapi-devel/summary
 #. tumbleweed/libkcapi/libkcapi0/summary
 msgid "Linux Kernel Crypto API User Space Interface Library"
-msgstr ""
+msgstr "Linux カーネル暗号化 API ユーザスペースインターフェイスライブラリ"
 
 #. tumbleweed/libkcapi/libkcapi-devel/description
 msgid ""
@@ -13904,32 +13897,38 @@ msgid ""
 "data! The library uses scatter / gather lists to eliminate the need for "
 "moving data around in memory."
 msgstr ""
+"libkapi は API を公開することで、 Linux カーネル内に用意されている暗号化 API にアクセスする際に必要な、低レベルの "
+"netlink インターフェイスへの考慮を不要にします。\n"
+"\n"
+"このライブラリは、暗号化関連のアルゴリズムを実装していません。全てのリクエストはカーネル側に渡されて処理されます。カーネルの暗号化 API "
+"から返された結果は、ライブラリ API を通して要求元に返されます。\n"
+"\n"
+"カーネルのインターフェイス、およびこのライブラリのいずれも、非特権プロセスから利用することができます。\n"
+"\n"
+"このライブラリでは、暗号化に関わるデータを処理するにあたって、一切 memcpy を実施していません！ "
+"このライブラリでは、不連続なデータを続けて送信することで、メモリ内のデータ移動を無くしています。"
 
 #. tumbleweed/libkcapi/libkcapi-tools/summary
 msgid "Linux Kernel Crypto API User Space Tools"
-msgstr ""
+msgstr "Linux カーネル暗号化 API ユーザスペースツール"
 
 #. tumbleweed/libkcapi/libkcapi-tools/description
 msgid "libkcapi user space tools to access certain hash algorithms."
-msgstr ""
+msgstr "ハッシュアルゴリズムにアクセスするための libkcapi ユーザスペースツールです。"
 
 #. tumbleweed/libkcapi/libkcapi0/description
 msgid "libkcapi allows user-space to access the Linux kernel crypto API."
-msgstr ""
+msgstr "libkcapi は、 Linux カーネルの暗号化 API にアクセスするためのユーザスペースライブラリです。"
 
 #. tumbleweed/libkcddb/libkcddb-devel/summary
 #. leap/libkcddb/libkcddb-devel/summary
-#, fuzzy
-#| msgid "Development files for the XBGI library"
 msgid "Development files for KDE CDDB library"
-msgstr "XBGI ライブラリ向け開発用ファイル"
+msgstr "KDE CDDB ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libkcddb/libkcddb-devel/description
 #. leap/libkcddb/libkcddb-devel/description
-#, fuzzy
-#| msgid "This package includes the development headers for libkcddb4"
 msgid "This package includes the development headers for libkcddb."
-msgstr "このパッケージには、 libkcddb4 向けの開発ヘッダが含まれています。"
+msgstr "このパッケージには、 libkcddb 向けの開発ヘッダが含まれています。"
 
 #. tumbleweed/libkcddb4/summary
 #. leap/libkcddb4/summary
@@ -13952,19 +13951,13 @@ msgid "This package includes the development headers for libkcddb4"
 msgstr "このパッケージには、 libkcddb4 向けの開発ヘッダが含まれています。"
 
 #. tumbleweed/libkcompactdisc/libkcompactdisc-devel/summary
-#, fuzzy
-#| msgid "Development files for the X FreeType library"
 msgid "Development files for the KDE CD drive library"
-msgstr "X FreeType ライブラリ向け開発用ファイル"
+msgstr "KDE CD ドライブライブラリ向け開発用ファイル"
 
 #. tumbleweed/libkcompactdisc/libkcompactdisc-devel/description
 #. leap/libkcompactdisc/libkcompactdisc-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package contains the development headers for the libkcompactdisc."
 msgid "This package contains the development headers for libkcompactdisc."
-msgstr ""
-"このパッケージには、 libkcompactdisc 向けの開発ヘッダが含まれています。"
+msgstr "このパッケージには、 libkcompactdisc 向けの開発ヘッダが含まれています。"
 
 #. tumbleweed/libkcompactdisc4/summary
 #. leap/libkcompactdisc/libKF5CompactDisc5/summary
@@ -14216,14 +14209,14 @@ msgstr ""
 #. tumbleweed/libkleo/summary
 #. leap/libkleo/summary
 msgid "Base package of Kleopatra, a KDE key manager"
-msgstr ""
+msgstr "KDE キーマネージャ Kleopatra のベースパッケージ"
 
 #. tumbleweed/libkleo/description
 #. leap/libkleo/description
 msgid ""
 "libkleo is a library used by KDE PIM applications to handle cryptographic "
 "key and certificate management."
-msgstr ""
+msgstr "libkleo は KDE PIM アプリケーションで使用されるライブラリで、暗号鍵や証明書の管理を処理するための仕組みです。"
 
 #. tumbleweed/libkleo/libkleo-devel/summary
 #. leap/libkleo/libkleo-devel/summary
@@ -14305,20 +14298,14 @@ msgstr "KDE コンテナとの相互変換"
 #. tumbleweed/libkolab-qt5/libkolab1/description
 #. leap/libkolab-qt5/libkolab-qt5-devel/description
 #. leap/libkolab-qt5/libkolab1/description
-#, fuzzy
-#| msgid ""
-#| "libkolab provides conversions from/to KDE containers, mime message "
-#| "handling and facilities to read and write kolabv2 and kolabv3. The "
-#| "Akonadi-Kolab-Resource as well as the upgradetool are based on this code."
 msgid ""
 "libkolab provides conversions from/to KDE containers, MIME message handling "
 "and facilities to read and write kolabv2 and kolabv3. The Akonadi-Kolab-"
 "Resource as well as the upgradetool are based on this code."
 msgstr ""
-"libkolab は KDE コンテナとの相互変換を行なうライブラリです。 MIME メッセージ"
-"の処理や kolabv2 および kolabv2 を読み書きするための機能を提供しています。"
-"Akonadi-Kolab-Resources のほか、 upgradetool がこのコードをベースにしていま"
-"す。"
+"libkolab は KDE コンテナとの相互変換を行なうライブラリです。 MIME メッセージの処理や kolabv2 および kolabv2 "
+"を読み書きするための機能を提供しています。Akonadi-Kolab-Resources のほか、 upgradetool "
+"がこのコードをベースにしています。"
 
 #. tumbleweed/libkolabxml/libkolabxml-devel/summary
 #. tumbleweed/libkolabxml/libkolabxml1/summary
@@ -14366,12 +14353,8 @@ msgstr "ファイルや文字列を比較するためのライブラリ"
 
 #. tumbleweed/libkomparediff2/libkomparediff2-5/description
 #. leap/libkomparediff2/libkomparediff2-5/description
-#, fuzzy
-#| msgid ""
-#| "A new library to compare files and strings, used in Kompare and KDevelop"
 msgid "A library to compare files and strings, used in Kompare and KDevelop."
-msgstr ""
-"Kompare や KDevelop で使用されるファイルや文字列を比較する新しいライブラリ"
+msgstr "Kompare や KDevelop で使用される、ファイルや文字列を比較するライブラリです。"
 
 #. tumbleweed/libkomparediff2/libkomparediff2-devel/summary
 #. leap/libkomparediff2/libkomparediff2-devel/summary
@@ -14380,10 +14363,8 @@ msgstr "libkomparediff2 向け開発用パッケージ"
 
 #. tumbleweed/libkomparediff2/libkomparediff2-devel/description
 #. leap/libkomparediff2/libkomparediff2-devel/description
-#, fuzzy
-#| msgid "Development package for libkomparediff2"
 msgid "Development package for libkomparediff2."
-msgstr "libkomparediff2 向け開発用パッケージ"
+msgstr "libkomparediff2 向け開発用パッケージです。"
 
 #. tumbleweed/libkqoauth/libkqoauth-devel/summary
 #. leap/libkqoauth/libkqoauth-devel/summary
@@ -14434,10 +14415,8 @@ msgstr ""
 
 #. tumbleweed/libksane/libksane-devel/summary
 #. leap/libksane/libksane-devel/summary
-#, fuzzy
-#| msgid "Development files for the X font handling library"
 msgid "Development files for the KDE scanning library"
-msgstr "X フォント処理ライブラリ向け開発用ファイル"
+msgstr "KDE スキャンライブラリ向け開発用ファイル"
 
 #. tumbleweed/libksane/libksane-devel/description
 #. leap/libksane/libksane-devel/description
@@ -14538,19 +14517,16 @@ msgstr ""
 #. tumbleweed/libksieve/summary
 #. leap/libksieve/summary
 msgid "Sieve and Managesieve support library for KDE PIM"
-msgstr ""
+msgstr "KDE PIM 向け Sieve / Managesieve サポートライブラリ"
 
 #. tumbleweed/libksieve/description
 #. leap/libksieve/description
-#, fuzzy
-#| msgid ""
-#| "This package contains the library which is required by the KDE education "
-#| "applications."
 msgid ""
 "This package contains the libksieve library, which is used to support the "
 "Sieve server-side mail filtering protocol in KDE PIM applications."
 msgstr ""
-"このパッケージには、 KDE 教育アプリケーションに必要なデータが含まれています。"
+"このパッケージには、 KDE PIM アプリケーション内で Sieve のメールフィルタリング機能を利用する際に使用する、 libksieve "
+"ライブラリが含まれています。"
 
 #. tumbleweed/libksieve/libksieve-devel/summary
 #. leap/libksieve/libksieve-devel/summary
@@ -14559,10 +14535,8 @@ msgstr "libksieve 向け開発用パッケージ"
 
 #. tumbleweed/libksieve/libksieve-devel/description
 #. leap/libksieve/libksieve-devel/description
-#, fuzzy
-#| msgid "This package contains the development files of libvterm."
 msgid "This package contains development headers of libksieve."
-msgstr "このパッケージには、 libvterm 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージには、 libksieve 向けの開発用ファイルが含まれています。"
 
 #. tumbleweed/libksysguard5/summary
 #. tumbleweed/libksysguard5/libksysguard5-32bit/summary
@@ -15443,34 +15417,23 @@ msgstr ""
 "要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/libmaia/libmaia-devel/summary
-#, fuzzy
-#| msgid "Development files for libhmac"
 msgid "Development files for libmaia"
-msgstr "libhmac 向け開発用ファイル"
+msgstr "libmaia 向け開発用ファイル"
 
 #. tumbleweed/libmaia/libmaia-devel/description
-#, fuzzy
-#| msgid ""
-#| "The libisds-devel package contains libraries and header files for "
-#| "developing applications that use libisds."
 msgid ""
 "The libmaia-devel package contains libraries and header files for developing "
 "applications that use libmaia."
 msgstr ""
-"libisds-devel パッケージには、 libisds を使用するアプリケーションを開発するの"
-"に必要な、ライブラリとヘッダファイルが含まれています。"
+"libmaia-devel パッケージには、 libmaia を使用するアプリケーションを開発するのに必要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/libmaia/libmaia1/summary
-#, fuzzy
-#| msgid "A XMPP library for C"
 msgid "XML-RPC library for Qt"
-msgstr "C 言語向け XMPP ライブラリ"
+msgstr "Qt 向け XML-RPC ライブラリ"
 
 #. tumbleweed/libmaia/libmaia1/description
-#, fuzzy
-#| msgid "LibKleo library for kdepim"
 msgid "libmaia is a XML-RPC library for Qt."
-msgstr "kdepim 向け libkleo ライブラリ"
+msgstr "libmaia は Qt 向けの XML-RPC ライブラリです。"
 
 #. tumbleweed/libmal/libmal-devel/summary
 #. tumbleweed/libmal/libmal1/summary
@@ -15813,17 +15776,13 @@ msgstr ""
 
 #. tumbleweed/libmediainfo/libmediainfo-devel/summary
 #. leap/libmediainfo/libmediainfo-devel/summary
-#, fuzzy
-#| msgid "Include Files and Libraries for Development"
 msgid "Include files and libraries for development"
 msgstr "開発用ヘッダファイルとライブラリ"
 
 #. tumbleweed/libmediainfo/libmediainfo-devel/description
 #. leap/libmediainfo/libmediainfo-devel/description
-#, fuzzy
-#| msgid "Include Files and Libraries for Development"
 msgid "Include files and mandatory libraries for development."
-msgstr "開発用ヘッダファイルとライブラリ"
+msgstr "開発用ヘッダファイルと必須ライブラリです。"
 
 #. tumbleweed/libmediainfo/libmediainfo0/summary
 #. tumbleweed/mediainfo/summary
@@ -15832,7 +15791,7 @@ msgstr "開発用ヘッダファイルとライブラリ"
 #. leap/libmediainfo/libmediainfo0-32bit/summary
 #. leap/mediainfo/summary
 msgid "Supplies technical and tag information about a video or audio file"
-msgstr ""
+msgstr "ビデオまたはオーディオファイルの技術情報やタグ情報を提供する仕組み"
 
 #. tumbleweed/libmediainfo/libmediainfo0/description
 #. tumbleweed/libmediainfo/libmediainfo0-32bit/description
@@ -15862,6 +15821,27 @@ msgid ""
 "\n"
 "This package contains the shared library for MediaInfo(-gui)."
 msgstr ""
+"MediaInfo はビデオやオーディオファイルの技術情報やタグ情報を提供します。\n"
+"\n"
+"MediaInfo で取得できる情報:\n"
+"* 一般: タイトル, 作者, ディレクター, アルバム, トラック番号, 日付, 長さ...\n"
+"* ビデオ: コーデック, アスペクト, フレームレート, ビットレート...\n"
+"* オーディオ: コーデック, サンプリングレート, チャンネル, 言語, ビットレート...\n"
+"* テキスト: サブタイトルの言語\n"
+"* チャプター: チャプター数, チャプターの一覧\n"
+"\n"
+"DivX, XviD, H263, H.263, H264, x264, ASP, AVC, iTunes, MPEG-1, MPEG1, MPEG-"
+"2, MPEG2, MPEG-4, MPEG4, MP4, M4A, M4V, QuickTime, RealVideo, RealAudio, RA, "
+"RM, MSMPEG4v1, MSMPEG4v2, MSMPEG4v3, VOB, DVD, WMA, VMW, ASF, 3GP, 3GPP, "
+"3GP2\n"
+"\n"
+"MediaInfo が対応する形式 (コンテナ):\n"
+"* Video: MKV, OGM, AVI, DivX, WMV, QuickTime, Real, MPEG-1,   MPEG-2, MPEG-"
+"4, DVD (VOB) (Codecs: DivX, XviD, MSMPEG4, ASP,   H.264, AVC...)\n"
+"* Audio: OGG, MP3, WAV, RA, AC3, DTS, AAC, M4A, AU, AIFF\n"
+"* Subtitles: SRT, SSA, ASS, SAMI\n"
+"\n"
+"このパッケージには、 MediaInfo(-gui) 向けの共有ライブラリが含まれています。"
 
 #. tumbleweed/libmemcache/libmemcache-devel/summary
 #. leap/libmemcache/libmemcache-devel/summary
@@ -15938,32 +15918,22 @@ msgstr ""
 
 #. tumbleweed/libmesode/libmesode-devel/summary
 #. leap/libmesode/libmesode-devel/summary
-#, fuzzy
-#| msgid "Development files for libevdev library"
 msgid "Development files for libmesode, an XMPP library"
-msgstr "libevdev ライブラリ向け開発用ファイル"
+msgstr "XMPP ライブラリ libmesode 向け開発用ファイル"
 
 #. tumbleweed/libmesode/libmesode-devel/description
 #. leap/libmesode/libmesode-devel/description
-#, fuzzy
-#| msgid ""
-#| "This is an implementation of double-array structure for representing "
-#| "trie, as proposed by Junichi Aoe.\n"
-#| "\n"
-#| "This package contains the development files for libdatrie."
 msgid ""
 "Mesode is a collection of libraries for speaking the XMPP protocol.\n"
 "\n"
 "This package contains the development files and headers for libmesode."
 msgstr ""
-"青江潤一氏が提案した、トライ木を表現するためのダブル配列構造の実装です。\n"
+"Mesode は XMPP プロトコルを喋るためのライブラリ集です。\n"
 "\n"
-"このパッケージには、 libdatrie に対する開発用ファイルが含まれています。"
+"このパッケージには、 libmesode に対する開発用ファイルが含まれています。"
 
 #. tumbleweed/libmesode/libmesode0/summary
 #. leap/libmesode/libmesode0/summary
-#, fuzzy
-#| msgid "A XMPP library for C"
 msgid "An XMPP library for C"
 msgstr "C 言語向け XMPP ライブラリ"
 
@@ -15974,6 +15944,8 @@ msgid ""
 "extends chat-based applications; it has has been used to implement real-time "
 "games, notification systems, and search engines."
 msgstr ""
+"Mesode は XMPP プロトコルを喋るためのライブラリ集です。チャットベースのアプリケーションをさらに拡張させるために作られた仕組みで、リアルタイム"
+"なゲームや通知システム、サーチエンジンなどを実装する際に使用されています。"
 
 #. tumbleweed/libmetalink/libmetalink-devel/summary
 #. tumbleweed/libmetalink/libmetalink3/summary
@@ -16343,30 +16315,18 @@ msgid "Development files for libmodplug"
 msgstr "libmodplug 向け開発用ファイル"
 
 #. tumbleweed/libopenmpt/libmodplug-devel/description
-#, fuzzy
-#| msgid "Files needed to program against libmodplug."
 msgid ""
 "Files needed to program against libmodplug interface. This version comes "
 "from libopenmpt."
-msgstr "libmodplugを利用するプログラム向けのファイルです。"
+msgstr "libmodplug インターフェイスを利用するプログラム向けのファイルです。このバージョンは libopenmpt からのものです。"
 
 #. tumbleweed/libopenmpt/libmodplug1/summary
 #. tumbleweed/libopenmpt/libmodplug1-32bit/summary
-#, fuzzy
-#| msgid "Library to access the EDB format"
 msgid "Library to operate with module formats"
-msgstr "EDB 形式にアクセスするためのライブラリ"
+msgstr "モジュール形式を操作するためのライブラリ"
 
 #. tumbleweed/libopenmpt/libmodplug1/description
 #. tumbleweed/libopenmpt/libmodplug1-32bit/description
-#, fuzzy
-#| msgid ""
-#| "Modplug library based on the ModPlug sound engine.\n"
-#| "- plays 22 different mod formats.\n"
-#| "- plays zip, rar, gzip, and bzip2 compressed mods.\n"
-#| "- plays timidity's GUS patch files (*.pat).\n"
-#| "- plays all types of MIDI files (*.mid).\n"
-#| "- plays textfiles written in the ABC music notation (*.abc)."
 msgid ""
 "This is the Modplug library, based on the ModPlug sound engine coming from "
 "libopenmpt.\n"
@@ -16376,12 +16336,12 @@ msgid ""
 "- plays all types of MIDI files (*.mid)\n"
 "- plays textfiles written in the ABC music notation (*.abc)"
 msgstr ""
-"modplug ライブラリは modplus サウンドエンジンをベースにしています。\n"
-"- 22 種類もの異なる mod 形式を再生します。\n"
-"- zip, rar, gzip, bzip2 で圧縮された mod を再生します。\n"
+"これは Modplug ライブラリと呼ばれるライブラリで、 libopenmpt が提供する Modplug サウンドエンジンをベースにしています。\n"
+"- 22 種類もの異なるモジュール形式を再生します。\n"
+"- zip, rar, gzip, bzip2 で圧縮されたモジュールを再生します。\n"
 "- timidity の GUS パッチファイル (*.pat) を再生します。\n"
 "- すべての種類の MIDI ファイル (*.mid) を再生します。\n"
-"- ABC 楽曲表記 (*.abc) によるテキストファイルで書かれた楽譜を再生します。"
+"- ABC 楽曲表記 (*.abc) によるテキストファイルで書かれた楽譜を再生します"
 
 #. tumbleweed/libmowgli2/libmowgli-2-0/summary
 #. leap/libmowgli2/libmowgli-2-0/summary
@@ -16541,10 +16501,8 @@ msgstr ""
 
 #. tumbleweed/libmrss/libmrss-devel/summary
 #. leap/libmrss/libmrss-devel/summary
-#, fuzzy
-#| msgid "Headers and development libraries for libotr"
 msgid "Headers and development package for libmrss"
-msgstr "libotr 向けのヘッダと開発ライブラリです。"
+msgstr "libmrss 向けのヘッダと開発パッケージ"
 
 #. tumbleweed/libmrss/libmrss-devel/description
 #. tumbleweed/libmrss/libmrss0/description
@@ -16558,15 +16516,17 @@ msgid ""
 "streams. The formats supported are: RSS 0.91, RSS 0.92, RSS 1.0, RSS 2.0, "
 "ATOM 0.3, and ATOM 1.0."
 msgstr ""
+"libmRSS は RSS (Rich Site Summary, Really Simple Syndication, RDF Site "
+"Summary) や ATOM ファイル、もしくはストリームを処理したり、作成したりするための C "
+"言語ライブラリです。それぞれ下記の形式に対応しています: RSS 0.91, RSS 0.92, RSS 1.0, RSS 2.0, ATOM 0.3, "
+"ATOM 1.0."
 
 #. tumbleweed/libmrss/libmrss0/summary
 #. tumbleweed/libmrss/libmrss0-32bit/summary
 #. leap/libmrss/libmrss0/summary
 #. leap/libmrss/libmrss0-32bit/summary
-#, fuzzy
-#| msgid "IDL Parsing Library"
 msgid "RSS Parsing Library"
-msgstr "IDL 処理ライブラリ"
+msgstr "RSS 処理ライブラリ"
 
 #. tumbleweed/libmsiecf/libmsiecf-devel/summary
 #. leap/libmsiecf/libmsiecf-devel/summary
@@ -17608,17 +17568,15 @@ msgstr ""
 
 #. tumbleweed/libnss_usrfiles/libnss_usrfiles2/summary
 #. tumbleweed/libnss_usrfiles/libnss_usrfiles2-32bit/summary
-#, fuzzy
-#| msgid "ESD plugin for libpt2"
 msgid "NSS usrfiles plugin for glibc"
-msgstr "libpt2 向け ESD プラグイン"
+msgstr "glibc 向け NSS usrfiles プラグイン"
 
 #. tumbleweed/libnss_usrfiles/libnss_usrfiles2/description
 #. tumbleweed/libnss_usrfiles/libnss_usrfiles2-32bit/description
 msgid ""
 "The NSS usrfiles plugin looks additional in /usr/etc for passwd and group "
 "data."
-msgstr ""
+msgstr "NSS usrfiles プラグインは、パスワードとグループのデータを参照する際に /usr/etc 内の追加データを参照します。"
 
 #. tumbleweed/libntlm/libntlm-devel/summary
 #. leap/libntlm/libntlm-devel/summary
@@ -17660,10 +17618,8 @@ msgstr ""
 #. leap/libnxml/libnxml-devel/summary
 #. leap/libnxml/libnxml0/summary
 #. leap/libnxml/libnxml0-32bit/summary
-#, fuzzy
-#| msgid "IDL Parsing Library"
 msgid "XML Parsing Library"
-msgstr "IDL 処理ライブラリ"
+msgstr "XML 処理ライブラリ"
 
 #. tumbleweed/libnxml/libnxml-devel/description
 #. tumbleweed/libnxml/libnxml0/description
@@ -17676,6 +17632,8 @@ msgid ""
 "or streams. It supports UTF-8, UTF-16be and UTF-16le, UCS-4 (1234, 4321, "
 "2143, 2312)."
 msgstr ""
+"nXML は XML 1.0/1.1 のファイルやストリームを処理／書き込み／作成することのできる C ライブラリです。 UTF-8, UTF-"
+"16be, UTF-16le, UCS-4 (1234, 4321, 2143, 2312) のそれぞれに対応しています。"
 
 #. tumbleweed/liboauth/liboauth-devel/summary
 #. leap/liboauth/liboauth-devel/summary
@@ -17896,10 +17854,8 @@ msgstr ""
 "オープンソース金融ソフトウエアで利用することができる。\" と表明しています。"
 
 #. tumbleweed/libogg/libogg-devel/summary
-#, fuzzy
-#| msgid "Include Files and Libraries for Development"
 msgid "Include Files and Libraries for Ogg Development"
-msgstr "開発用ヘッダファイルとライブラリ"
+msgstr "Ogg 開発用ヘッダファイルとライブラリ"
 
 #. tumbleweed/libogg/libogg-devel/description
 #. tumbleweed/libogg/libogg-devel/description
@@ -17922,13 +17878,6 @@ msgstr "Ogg ビットストリームライブラリ"
 #. tumbleweed/libogg/libogg0/description
 #. tumbleweed/libogg/libogg0/description
 #. tumbleweed/libogg/libogg0-32bit/description
-#, fuzzy
-#| msgid ""
-#| "Libogg is a library for manipulating ogg bitstreams.  It handles both "
-#| "making ogg bitstreams and getting packets from ogg bitstreams.\n"
-#| "\n"
-#| "Ogg is the native bitstream format of the libvorbis (Ogg Vorbis audio "
-#| "codec ) and the libtheora (Theora video codec)"
 msgid ""
 "Libogg is a library for manipulating Ogg bitstreams.  It handles both making "
 "Ogg bitstreams and getting packets from Ogg bitstreams.\n"
@@ -17936,12 +17885,11 @@ msgid ""
 "Ogg is the native bitstream format of libvorbis (Ogg Vorbis audio codec) and "
 "libtheora (Theora video codec)."
 msgstr ""
-"Libogg は ogg ビットストリームを操作するためのライブラリです。 ogg ビットスト"
-"リームの生成のほか、 ogg ビットストリームからのパケット収集も行なうことができ"
-"ます。\n"
+"Libogg は Ogg ビットストリームを操作するためのライブラリです。 Ogg ビットストリームの生成のほか、 Ogg "
+"ビットストリームからのパケット収集も行なうことができます。\n"
 "\n"
-"Ogg は libvirbis (Ogg Vorbis オーディオコーデック) や libtheora (Theora ビデ"
-"オコーデック) で使用される、ネイティブなビットストリーム形式です。"
+"Ogg は libvirbis (Ogg Vorbis オーディオコーデック) や libtheora (Theora ビデオコーデック) "
+"で使用される、ネイティブなビットストリーム形式です。"
 
 #. tumbleweed/liboggz/liboggz2/summary
 #. tumbleweed/liboggz/liboggz2-32bit/summary
@@ -18181,27 +18129,19 @@ msgstr ""
 "プリケーションでのベースとなりうるものになります。"
 
 #. tumbleweed/libopenmpt/libopenmpt-devel/summary
-#, fuzzy
-#| msgid "Development files for libopenvas"
 msgid "Development files for libopenmpt"
-msgstr "libopenvas 向け開発用ファイル"
+msgstr "libopenmpt 向け開発用ファイル"
 
 #. tumbleweed/libopenmpt/libopenmpt-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package contains the development files (mainly C header files) for "
-#| "libopenvas."
 msgid ""
 "This package contains the development files required to compile programs "
 "using libopenmpt."
-msgstr ""
-"このパッケージには、 libopenvas 向けの開発用ファイル (主に C 言語ヘッダファイ"
-"ル) が含まれています。"
+msgstr "このパッケージには、 libopenmpt を利用したプログラムをコンパイルするのに必要な、開発用ファイルが含まれています。"
 
 #. tumbleweed/libopenmpt/libopenmpt0/summary
 #. tumbleweed/libopenmpt/libopenmpt0-32bit/summary
 msgid "Library to operate with module formats using the openmpt API"
-msgstr ""
+msgstr "openmpt API を使用するモジュール形式を操作するためのライブラリ"
 
 #. tumbleweed/libopenmpt/libopenmpt0/description
 #. tumbleweed/libopenmpt/libopenmpt0-32bit/description
@@ -18210,13 +18150,14 @@ msgid ""
 "into a PCM audio stream. It is based on the player code of the OpenMPT "
 "project, a descendant of the original ModPlug Tracker."
 msgstr ""
+"libopenmpt は C++/C 言語ライブラリで、 tracker の楽曲ファイル (モジュール) を PCM "
+"オーディオストリームにデコードすることができる仕組みです。 OpenMPT プロジェクトと呼ばれる、 ModPlug Tracker "
+"の後継プロジェクトの再生コードをベースにしています。"
 
 #. tumbleweed/libopenmpt/libopenmpt_modplug1/summary
 #. tumbleweed/libopenmpt/libopenmpt_modplug1-32bit/summary
-#, fuzzy
-#| msgid "Plugin based library to create window decorations."
 msgid "Modplug wrapper for a library to operate with module formats"
-msgstr "ウインドウの装飾を作成するためのプラグインベースのライブラリです。"
+msgstr "モジュール形式を扱うためのライブラリ向け Modplug ラッパー"
 
 #. tumbleweed/libopenmpt/libopenmpt_modplug1/description
 #. tumbleweed/libopenmpt/libopenmpt_modplug1-32bit/description
@@ -18225,6 +18166,8 @@ msgid ""
 "by programs that want to use libopenmpt's decoder, but are written using "
 "libmodplug's API."
 msgstr ""
+"このパッケージには、 modplug 互換性共有ライブラリが含まれています。 libopenmpt "
+"のデコーダを必要とするプログラムで使用されるものですが、 libmodplug の API を利用して作成されています。"
 
 #. tumbleweed/libopenraw/libopenraw-devel/summary
 #. tumbleweed/libopenraw/libopenraw1/summary
@@ -18248,30 +18191,25 @@ msgstr ""
 
 #. tumbleweed/libopenshot-audio/libopenshot-audio-devel/summary
 #. leap/libopenshot-audio/libopenshot-audio-devel/summary
-#, fuzzy
-#| msgid "Development files for libopenvas"
 msgid "Development files for libopenshot-audio"
-msgstr "libopenvas 向け開発用ファイル"
+msgstr "libopenshot-audio 向け開発用ファイル"
 
 #. tumbleweed/libopenshot-audio/libopenshot-audio-devel/description
 #. leap/libopenshot-audio/libopenshot-audio-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package contains the header files and static libraries needed to "
-#| "develop applications with libid3tag."
 msgid ""
 "The OpenShot Audio Library.\n"
 "\n"
 "This package contains header files and libraries needed to develop "
 "application that use libopenshot-audio."
 msgstr ""
-"このパッケージには、 libid3tag で開発を行なう際に必要なヘッダファイルと静的ラ"
-"イブラリが含まれています。"
+"OpenShot オーディオライブラリです。\n"
+"\n"
+"このパッケージには、 libopenshot-audio でアプリケーションの開発を行なう際に必要なヘッダファイルと静的ライブラリが含まれています。"
 
 #. tumbleweed/libopenshot-audio/libopenshot-audio3/summary
 #. leap/libopenshot-audio/libopenshot-audio3/summary
 msgid "Audio library for the OpenShot video editor"
-msgstr ""
+msgstr "OpenShot ビデオエディタ向けオーディオライブラリ"
 
 #. tumbleweed/libopenshot-audio/libopenshot-audio3/description
 #. leap/libopenshot-audio/libopenshot-audio3/description
@@ -18281,6 +18219,9 @@ msgid ""
 "\n"
 "This package contains the shared library."
 msgstr ""
+"OpenShot オーディオライブラリは、オーディオの編集と再生を行なうことができます。 JUCE ライブラリから派生してできたものです。\n"
+"\n"
+"このパッケージには共有ライブラリが含まれています。"
 
 #. tumbleweed/libopensync/summary
 msgid "A Platform and Distribution Independent Synchronization Framework"
@@ -18490,6 +18431,8 @@ msgid ""
 "determine the optimal device settings for a hypervisor/operating system "
 "combination."
 msgstr ""
+"libosinfo は仮想化プロビジョニングツールで、使用されているハイパーバイザやオペレーティングシステムの組み合わせに対して、最適なデバイス設定を判断"
+"させるためのライブラリです。"
 
 #. tumbleweed/libosinfo/libosinfo-devel/summary
 #. leap/libosinfo/libosinfo-devel/summary
@@ -18507,6 +18450,11 @@ msgid ""
 "Libraries, includes, etc. to compile with the libosinfo library This package "
 "also provides the Vala bindings for libosinfo library."
 msgstr ""
+"libosinfo は仮想化プロビジョニングツールで、使用されているハイパーバイザやオペレーティングシステムの組み合わせに対して、最適なデバイス設定を判断"
+"させるためのライブラリです。\n"
+"\n"
+"libosinfo ライブラリを利用してコンパイルするには、ライブラリとヘッダファイルが必要です。このパッケージでは、このほか libosinfo "
+"ライブラリの Vala バインディングも提供されています。"
 
 #. tumbleweed/libosip2/summary
 #. tumbleweed/libosip2/libosip2-devel/summary
@@ -18535,12 +18483,12 @@ msgstr ""
 #. leap/libosmo-dsp/libosmo-dsp-devel/summary
 #. leap/libosmo-dsp/libosmodsp0/summary
 msgid "SDR DSP primitives"
-msgstr ""
+msgstr "SDR DSP プリミティブ"
 
 #. tumbleweed/libosmo-dsp/libosmo-dsp-devel/description
 #. leap/libosmo-dsp/libosmo-dsp-devel/description
 msgid "A library with SDR DSP primitives headers"
-msgstr ""
+msgstr "SDR DSP プリミティブライブラリのヘッダ"
 
 #. tumbleweed/libosmo-sccp/libosmo-mtp-0_7_0/summary
 #. leap/libosmo-sccp/libosmo-mtp-0_7_0/summary
@@ -18855,7 +18803,7 @@ msgstr ""
 #. tumbleweed/libosmo-dsp/libosmodsp0/description
 #. leap/libosmo-dsp/libosmodsp0/description
 msgid "A library with SDR DSP primitives"
-msgstr ""
+msgstr "SDR DSP プリミティブライブラリ"
 
 #. tumbleweed/libosmocore/libosmogb-devel/summary
 #. leap/libosmocore/libosmogb-devel/summary
@@ -19046,7 +18994,7 @@ msgstr "Osmocom VTY インターフェイスライブラリ"
 #. leap/libostree/libostree-1-1/summary
 #. leap/libostree/summary
 msgid "Git for operating system binaries"
-msgstr ""
+msgstr "オペレーティングシステムバイナリ向け git"
 
 #. tumbleweed/libostree/libostree-1-1/description
 #. tumbleweed/libostree/description
@@ -19067,16 +19015,16 @@ msgid ""
 "managing full disk images. Instead, it sits between those levels, offering a "
 "blend of the advantages (and disadvantages) of both."
 msgstr ""
+"OSTree は起動可能なファイルシステムや変更不可能なファイルシステム、そしてバージョン管理を行なうファイルシステムに対応した管理ツールです。 "
+"dpkg や rpm など、従来の \"パッケージマネージャ\" の機能の一部を代行できる仕組みですが、 OSTree "
+"はパッケージマネージャではありませんし、完全なディスクイメージを管理するツールでもありません。その代わり、これらのレベルの中間に位置して、両方の利点 "
+"(および欠点) を提供できる仕組みです。"
 
 #. tumbleweed/libostree/libostree-devel/summary
 #. tumbleweed/libostree/libostree-devel/summary
 #. leap/libostree/libostree-devel/summary
-#, fuzzy
-#| msgid ""
-#| "Manage information about operating systems and hypervisors - Development "
-#| "Files"
 msgid "Git for operating system binaries -- Development files"
-msgstr "オペレーティングシステムとハイパーバイザの情報管理 - 開発用ファイル"
+msgstr "オペレーティングシステムバイナリ向け git -- 開発用ファイル"
 
 #. tumbleweed/libostree/libostree-grub2/summary
 #. tumbleweed/libostree/libostree-grub2/description
@@ -19084,10 +19032,8 @@ msgstr "オペレーティングシステムとハイパーバイザの情報管
 #. tumbleweed/libostree/libostree-grub2/description
 #. leap/libostree/libostree-grub2/summary
 #. leap/libostree/libostree-grub2/description
-#, fuzzy
-#| msgid "Glib integration for libdbus-c++"
 msgid "GRUB2 integration for OSTree"
-msgstr "libdbus-c++ 向け glib 統合"
+msgstr "OSTree 向け GRUB2 統合"
 
 #. tumbleweed/libotf/summary
 #. leap/libotf/summary
@@ -19733,61 +19679,39 @@ msgstr "libpgf は PGF (Progresive Graphics File) 画像を扱うライブラリ
 
 #. tumbleweed/libpinyin/libpinyin-data/summary
 #. leap/libpinyin/libpinyin-data/summary
-#, fuzzy
-#| msgid "Data files for libpinyin"
 msgid "Data files for the libpinyin IME"
-msgstr "libpinyin 向けデータファイル"
+msgstr "libpinyin IME 向けデータファイル"
 
 #. tumbleweed/libpinyin/libpinyin-data/description
 #. leap/libpinyin/libpinyin-data/description
-#, fuzzy
-#| msgid ""
-#| "Libpinyin is a staging joint effort of many Chinese Pinyin IME "
-#| "development teams. It aims to be an Intelligent (and Universal) Sentence-"
-#| "based Pinyin IME Backend supports many Language Models and Frontends.\n"
-#| "\n"
-#| "This package provides language model table data for libpinyin."
 msgid ""
 "libpinyin is an intelligent (and universal) sentence-based Pinyin IME "
 "backend supporting many language models and frontends.\n"
 "\n"
 "This package provides language model table data for libpinyin."
 msgstr ""
-"libpinyin は、数多くの中国語 IME 開発チームにおける共同作業の成果です。インテ"
-"リジェントかつ多用途な、文章ベースのピンイン IME バックエンドとなり、多数の言"
-"語モデルやフロントエンドに対応できるように目指しています。\n"
+"libpinyin は、インテリジェントかつ多用途な、文章ベースのピンイン IME "
+"バックエンドとなり、多数の言語モデルやフロントエンドに対応できるライブラリです。\n"
 "\n"
-"このパッケージには、 libpinyin 向けの言語モデルテーブルデータが含まれていま"
-"す。"
+"このパッケージには、 libpinyin 向けの言語モデルテーブルデータが含まれています。"
 
 #. tumbleweed/libpinyin/libpinyin-devel/summary
 #. leap/libpinyin/libpinyin-devel/summary
-#, fuzzy
-#| msgid "Development files for libindi"
 msgid "Development files for the libpinyin IME"
-msgstr "libindi 向け開発用ファイル"
+msgstr "libpinyin IME 向け開発用ファイル"
 
 #. tumbleweed/libpinyin/libpinyin-devel/description
 #. leap/libpinyin/libpinyin-devel/description
-#, fuzzy
-#| msgid ""
-#| "Libpinyin is a staging joint effort of many Chinese Pinyin IME "
-#| "development teams. It aims to be an Intelligent (and Universal) Sentence-"
-#| "based Pinyin IME Backend supports many Language Models and Frontends.\n"
-#| "\n"
-#| "This package provides the tools used to make data files."
 msgid ""
 "libpinyin is an intelligent (and universal) sentence-based Pinyin IME "
 "backend supporting many language models and frontends.\n"
 "\n"
 "This subpackage contains the development files."
 msgstr ""
-"libpinyin は、数多くの中国語 IME 開発チームにおける共同作業の成果です。インテ"
-"リジェントかつ多用途な、文章ベースのピンイン IME バックエンドとなり、多数の言"
-"語モデルやフロントエンドに対応できるように目指しています。\n"
+"libpinyin は、インテリジェントかつ多用途な、文章ベースのピンイン IME "
+"バックエンドとなり、多数の言語モデルやフロントエンドに対応できるライブラリです。\n"
 "\n"
-"このパッケージには、データファイルを作成する際に使用するツールが含まれていま"
-"す。"
+"このサブパッケージには、開発用のファイルが含まれています。"
 
 #. tumbleweed/libpinyin/libpinyin-tools/summary
 #. leap/libpinyin/libpinyin-tools/summary
@@ -19796,25 +19720,16 @@ msgstr "libpinyin 向けツール"
 
 #. tumbleweed/libpinyin/libpinyin-tools/description
 #. leap/libpinyin/libpinyin-tools/description
-#, fuzzy
-#| msgid ""
-#| "Libpinyin is a staging joint effort of many Chinese Pinyin IME "
-#| "development teams. It aims to be an Intelligent (and Universal) Sentence-"
-#| "based Pinyin IME Backend supports many Language Models and Frontends.\n"
-#| "\n"
-#| "This package provides the tools used to make data files."
 msgid ""
 "libpinyin is an intelligent (and universal) sentence-based Pinyin IME "
 "backend supporting many language models and frontends.\n"
 "\n"
 "This package provides the tools used to make data files."
 msgstr ""
-"libpinyin は、数多くの中国語 IME 開発チームにおける共同作業の成果です。インテ"
-"リジェントかつ多用途な、文章ベースのピンイン IME バックエンドとなり、多数の言"
-"語モデルやフロントエンドに対応できるように目指しています。\n"
+"libpinyin は、インテリジェントかつ多用途な、文章ベースのピンイン IME "
+"バックエンドとなり、多数の言語モデルやフロントエンドに対応できるライブラリです。\n"
 "\n"
-"このパッケージには、データファイルを作成する際に使用するツールが含まれていま"
-"す。"
+"このパッケージには、データファイルを作成する際に使用するツールが含まれています。"
 
 #. tumbleweed/libpinyin/libpinyin10/summary
 #. tumbleweed/libpinyin/libpinyin10-32bit/summary
@@ -19827,13 +19742,6 @@ msgstr "インテリジェント型ピンイン IME"
 #. tumbleweed/libpinyin/libpinyin10-32bit/description
 #. leap/libpinyin/libpinyin10/description
 #. leap/libpinyin/libpinyin10-32bit/description
-#, fuzzy
-#| msgid ""
-#| "Libpinyin is a staging joint effort of many Chinese Pinyin IME "
-#| "development teams. It aims to be an Intelligent (and Universal) Sentence-"
-#| "based Pinyin IME Backend supports many Language Models and Frontends.\n"
-#| "\n"
-#| "This package provides runtime library for libpinyin."
 msgid ""
 "libpinyin is a staging joint effort of many Chinese Pinyin IME development "
 "teams. It is an intelligent (and universal) sentence-based Pinyin IME "
@@ -19841,9 +19749,8 @@ msgid ""
 "\n"
 "This package provides runtime library for libpinyin."
 msgstr ""
-"libpinyin は、数多くの中国語 IME 開発チームにおける共同作業の成果です。インテ"
-"リジェントかつ多用途な、文章ベースのピンイン IME バックエンドとなり、多数の言"
-"語モデルやフロントエンドに対応できるように目指しています。\n"
+"libpinyin は、数多くの中国語 IME 開発チームにおける共同作業の成果です。インテリジェントかつ多用途な、文章ベースのピンイン IME "
+"バックエンドとなり、多数の言語モデルやフロントエンドに対応しています。\n"
 "\n"
 "このパッケージには、 libpinyin 向けのランタイムライブラリが含まれています。"
 
@@ -20082,17 +19989,12 @@ msgstr ""
 "す。"
 
 #. tumbleweed/libpqxx/libpqxx-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package contains header files and documentation needed for writing C+"
-#| "+ programs that connect to a PostgreSQL database."
 msgid ""
 "This package contains header files needed for writing C++ programs that "
 "connect to a PostgreSQL database."
 msgstr ""
-"このパッケージには、 PostgreSQL データベースに接続するプログラムについて、こ"
-"れを C++ 言語で記述する際に必要な、ヘッダファイルとドキュメンテーションが含ま"
-"れています。"
+"このパッケージには、 PostgreSQL データベースに接続するプログラムについて、これを C++ "
+"言語で記述する際に必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/libprelude/libprelude-devel/summary
 #. tumbleweed/libprelude/libprelude-devel-bindings/summary
@@ -20399,17 +20301,6 @@ msgstr "libpsl 向け開発用ファイル"
 
 #. tumbleweed/libpsl/libpsl-devel/description
 #. leap/libpsl/libpsl-devel/description
-#, fuzzy
-#| msgid ""
-#| "libpsl is a C library to handle the Public Suffix List. A \"public suffix"
-#| "\" is a domain name under which Internet users can directly register own "
-#| "names.\n"
-#| "\n"
-#| "HTTP user agents can use it to avoid privacy-leaking \"supercookies\" and "
-#| "\"super domain\" certificates. It is also use do highlight domain parts "
-#| "in a user interface and sorting domain lists by site.\n"
-#| "\n"
-#| "This package contains libraries and header files."
 msgid ""
 "libpsl is a C library to handle the Public Suffix List. A \"public suffix\" "
 "is a domain name under which Internet users can directly register own "
@@ -20422,17 +20313,15 @@ msgid ""
 "This package contains libraries and header files. Developer documentation is "
 "in /usr/share/doc/packages/libpsl-devel/html ."
 msgstr ""
-"libpsl は Public Suffix リストを処理するための C 言語ライブラリです。 "
-"\"Public Suffix\" とは、インターネット上のユーザが直接自分の名前を登録するこ"
-"とのできる、ドメイン名を意味します。\n"
+"libpsl は Public Suffix リストを処理するための C 言語ライブラリです。 \"Public Suffix\" "
+"とは、インターネット上のユーザが直接自分の名前を登録することのできる、ドメイン名を意味します。\n"
 "\n"
-"HTTP ユーザエージェントはこれを利用することで、プライバシーを漏えいさせるよう"
-"な \"スーパークッキー\" や \"スーパードメイン\" の証明書を避けることができる"
-"ようになります。また、ユーザインターフェイス内でドメイン部分だけをハイライト"
-"表示したり、サイトごとにドメイン名を並べ替えたりすることもできるようになりま"
-"す。\n"
+"HTTP ユーザエージェントはこれを利用することで、プライバシーを漏えいさせるような \"スーパークッキー\" や \"スーパードメイン\" の証明書を避"
+"けることができるようになります。また、ユーザインターフェイス内でドメイン部分だけをハイライト表示したり、サイトごとにドメイン名を並べ替えたりすることもでき"
+"るようになります。\n"
 "\n"
-"このパッケージには、ライブラリとヘッダファイルが含まれています。"
+"このパッケージには、ライブラリとヘッダファイルが含まれています。開発用のドキュメンテーションは、 /usr/share/doc/packages"
+"/libpsl-devel/html 内にあります。"
 
 #. tumbleweed/libpsl/libpsl5/summary
 #. tumbleweed/libpsl/libpsl5-32bit/summary
@@ -20741,35 +20630,23 @@ msgid "Qt Cryptographic Architecture 2 - pkcs11 support"
 msgstr "Qt 暗号アーキテクチャ 2 - pckcs11 サポート"
 
 #. tumbleweed/libqcow/libqcow-devel/summary
-#, fuzzy
-#| msgid "Development files for libqb"
 msgid "Development files for libqcow"
-msgstr "libqb 向け開発用ファイル"
+msgstr "libqcow 向け開発用ファイル"
 
 #. tumbleweed/libqcow/libqcow-devel/description
-#, fuzzy
-#| msgid ""
-#| "libolecf is a library to access the OLE 2 Compound File (OLECF) format.\n"
-#| "\n"
-#| "This subpackage contains libraries and header files for developing "
-#| "applications that want to make use of libolecf."
 msgid ""
 "libqcow is a library to access the QEMU Copy-On-Write (QCOW) image format.\n"
 "\n"
 "This subpackage contains libraries and header files for developing "
 "applications that want to make use of libqcow."
 msgstr ""
-"libolecf は OLE 2 コンパウンドファイル (OLECF) 形式にアクセスするためのライブ"
-"ラリです。\n"
+"libqcow は、 QEMU Copy-On-Write (QCOW) イメージ形式にアクセスするためのライブラリです。\n"
 "\n"
-"このサブパッケージには、 libolecf を利用してアプリケーションを開発するのに必"
-"要な、ライブラリとヘッダファイルが含まれています。"
+"このサブパッケージには、 libqcow を利用してアプリケーションを開発するのに必要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/libqcow/libqcow-tools/summary
-#, fuzzy
-#| msgid "Tools to access the VMDK image format"
 msgid "Tools to access the QEMU Copy-On-Write (QCOW) image format"
-msgstr "VMDK イメージ形式にアクセスするためのライブラリ"
+msgstr "QEMU Copy-On-Write (QCOW) イメージ形式にアクセスするためのツール"
 
 #. tumbleweed/libqcow/libqcow-tools/description
 msgid ""
@@ -20783,12 +20660,17 @@ msgid ""
 "\n"
 "backing file-based snapshots in-image snapshots"
 msgstr ""
+"QEMU Copy-On-Write (QCOW) イメージ形式にアクセスするためのツールです。\n"
+"\n"
+"読み込みに対応した QCOW 形式: バージョン 1 または 2\n"
+"\n"
+"対応する QCOW 形式の機能: 圧縮, 暗号化\n"
+"\n"
+"現時点で対応していない QCOW 形式の機能: ファイルベースのスナップショット, イメージ内スナップショット"
 
 #. tumbleweed/libqcow/libqcow1/summary
-#, fuzzy
-#| msgid "Library to access the VMDK image format"
 msgid "Library to access the QEMU Copy-On-Write (QCOW) image format"
-msgstr "VMDK イメージ形式にアクセスするためのライブラリ"
+msgstr "QEMU Copy-On-Write (QCOW)  イメージ形式にアクセスするためのライブラリ"
 
 #. tumbleweed/libqcow/libqcow1/description
 msgid ""
@@ -20802,6 +20684,13 @@ msgid ""
 "\n"
 "backing file-based snapshots in-image snapshots"
 msgstr ""
+"QEMU Copy-On-Write (QCOW) イメージ形式にアクセスするためのライブラリです。\n"
+"\n"
+"読み込みに対応した QCOW 形式: バージョン 1 または 2\n"
+"\n"
+"対応する QCOW 形式の機能: 圧縮, 暗号化\n"
+"\n"
+"現時点で対応していない QCOW 形式の機能: ファイルベースのスナップショット, イメージ内スナップショット"
 
 #. tumbleweed/libqimageblitz4/libqimageblitz-devel/summary
 #. leap/libqimageblitz4/libqimageblitz-devel/summary
@@ -20835,14 +20724,14 @@ msgstr ""
 #. leap/libqjack/libqjack-devel/summary
 #. leap/libqjack/libqjack0/summary
 msgid "Connect to the Jack Sound Server with Qt"
-msgstr ""
+msgstr "Qt で Jack Sound Server に接続するライブラリ"
 
 #. tumbleweed/libqjack/libqjack-devel/description
 #. tumbleweed/libqjack/libqjack0/description
 #. leap/libqjack/libqjack-devel/description
 #. leap/libqjack/libqjack0/description
 msgid "QJack makes you connect with the Jack soundserver system with Qt4."
-msgstr ""
+msgstr "QJack は Qt4 で Jack サウンドサーバシステムに接続する機能を提供します。"
 
 #. tumbleweed/libqjson/libqjson-devel/summary
 #. leap/libqjson/libqjson-devel/summary
@@ -21018,16 +20907,6 @@ msgid "Development headers and libraries for libquo"
 msgstr "libquo 向け開発用ヘッダとライブラリ"
 
 #. tumbleweed/libquo/libquo-devel/description
-#, fuzzy
-#| msgid ""
-#| "QUO, a high-level, easy to use programming interface tailored "
-#| "specifically for MPI/MPI+X codes that may benefit from evolving process "
-#| "binding policies during their execution. QUO allows for arbitrary process "
-#| "binding policies to be enacted and reverted during the execution of an "
-#| "MPI/MPI+X application as different computational phases are entered and "
-#| "exited, respectively.\n"
-#| "\n"
-#| "This package contains development headers and libraries for libquo"
 msgid ""
 "QUO is an API tailored for MPI/MPI+X codes that may benefit from evolving "
 "process binding policies during their execution. QUO allows for arbitrary "
@@ -21036,43 +20915,26 @@ msgid ""
 "\n"
 "This package contains development headers and libraries for libquo."
 msgstr ""
-"QUO は、特に MPI/MPI+X コード向けに仕立てられた、高レベルで使いやすいプログラ"
-"ミングインターフェイスです。プロセスのバインディングポリシーに対して、その実"
-"行時に影響を与えることができます。 QUO は、 MPI/MPI+X アプリケーションの実行"
-"時、それぞれ異なる計算フェーズの開始時と終了時に、任意のプロセスバインディン"
-"グポリシーを制定したり、それを元に戻したりすることができます。\n"
+"QUO は、特に MPI/MPI+X コード向けに仕立てられた API "
+"です。プロセスのバインディングポリシーに対して、その実行時に影響を与えることができます。 QUO "
+"は実行時、それぞれ異なる計算フェーズの開始時と終了時に、任意のプロセスバインディングポリシーを制定したり、それを元に戻したりすることができます。\n"
 "\n"
-"このパッケージには、 libquo 向けの開発用ヘッダファイルとライブラリが含まれて"
-"います。"
+"このパッケージには、 libquo 向けの開発用ヘッダファイルとライブラリが含まれています。"
 
 #. tumbleweed/libquo/libquo4/summary
-#, fuzzy
-#| msgid "A library that make run-time tuning of process binding policies easy"
 msgid "A library for run-time tuning of process binding policies"
-msgstr ""
-"ポリシーを組み合わせて簡単に実行中のプロセスのチューニングを行なうことができ"
-"るライブラリ"
+msgstr "ポリシーを組み合わせて簡単に実行中のプロセスのチューニングを行なうことができるライブラリ"
 
 #. tumbleweed/libquo/libquo4/description
-#, fuzzy
-#| msgid ""
-#| "QUO, a high-level, easy to use programming interface tailored "
-#| "specifically for MPI/MPI+X codes that may benefit from evolving process "
-#| "binding policies during their execution. QUO allows for arbitrary process "
-#| "binding policies to be enacted and reverted during the execution of an "
-#| "MPI/MPI+X application as different computational phases are entered and "
-#| "exited, respectively."
 msgid ""
 "QUO is an API tailored for MPI/MPI+X codes that may benefit from evolving "
 "process binding policies during their execution. QUO allows for arbitrary "
 "process binding policies to be enacted and reverted during the execution as "
 "different computational phases are entered and exited, respectively."
 msgstr ""
-"QUO は、特に MPI/MPI+X コード向けに仕立てられた、高レベルで使いやすいプログラ"
-"ミングインターフェイスです。プロセスのバインディングポリシーに対して、その実"
-"行時に影響を与えることができます。 QUO は、 MPI/MPI+X アプリケーションの実行"
-"時、それぞれ異なる計算フェーズの開始時と終了時に、任意のプロセスバインディン"
-"グポリシーを制定したり、それを元に戻したりすることができます。"
+"QUO は、特に MPI/MPI+X コード向けに仕立てられた API "
+"です。プロセスのバインディングポリシーに対して、その実行時に影響を与えることができます。 QUO "
+"は実行時、それぞれ異なる計算フェーズの開始時と終了時に、任意のプロセスバインディングポリシーを制定したり、それを元に戻したりすることができます。"
 
 #. tumbleweed/libquvi/libquvi-0_9-0_9_4/summary
 #. leap/libquvi/libquvi-0_9-0_9_4/summary
@@ -21334,10 +21196,8 @@ msgstr ""
 "的ライブラリが含まれています。 LibRaw では動的ライブラリは提供していません。"
 
 #. tumbleweed/libraw/libraw-tools/summary
-#, fuzzy
-#| msgid "Library for reading RAW files obtained from digital photo cameras"
 msgid "Tools for reading RAW files obtained from digital photo cameras"
-msgstr "デジタルカメラから取得した RAW ファイルを読み込むためのライブラリ"
+msgstr "デジタルカメラから取得した RAW ファイルを読み込むためのツール"
 
 #. tumbleweed/libraw1394/libraw1394-11/summary
 #. tumbleweed/libraw1394/libraw1394-11-32bit/summary
@@ -21852,16 +21712,12 @@ msgstr "Retro ベースのフロントエンド向け SNES エミュレータ"
 
 #. tumbleweed/libretro-bsnes/description
 #. leap/libretro-bsnes/description
-#, fuzzy
-#| msgid ""
-#| "BSNES Emulator ported to the libretro API Can be used by various "
-#| "frontends to load SNES ROMs"
 msgid ""
 "This package contains a libretro port of the BSNES emulator. It can be used "
 "by various frontends to load SNES ROMs."
 msgstr ""
-"libretro API に移植された BSNES エミュレータは、 SNES の ROM を読み込む様々な"
-"フロントエンドで利用することができます。"
+"このパッケージには、 BSNES エミュレータの libretro 移植版が含まれています。 SNES ROM "
+"を読み込むためのフロントエンドとして使用することができます。"
 
 #. tumbleweed/libretro-gambatte/summary
 #. leap/libretro-gambatte/summary
@@ -21870,17 +21726,12 @@ msgstr "Retro ベースのフロントエンド向け Game Boy エミュレー�
 
 #. tumbleweed/libretro-gambatte/description
 #. leap/libretro-gambatte/description
-#, fuzzy
-#| msgid ""
-#| "Game Boy / Game Boy Color Emulator ported to the libretro API Can be used "
-#| "by various frontends to load Game Boy / Game Boy Color"
 msgid ""
 "This package contains a libretro port of the Gambatte emulator. It can be "
 "used by various frontends to load Game Boy / Game Boy Color games."
 msgstr ""
-"libretro API に移植された Game Boy / Game Boy Color エミュレータは、 Game "
-"Boy / Game Boy Color の ROM を読み込む様々なフロントエンドで利用することがで"
-"きます。"
+"このパッケージには、 Gambatte エミュレータの libretro 移植版が含まれています。 Game Boy / Game Boy Color "
+"ゲームを読み込むためのフロンエンドとして使用することができます。"
 
 #. tumbleweed/libretro-pcsx_rearmed/summary
 #. leap/libretro-pcsx_rearmed/summary
@@ -21889,16 +21740,12 @@ msgstr "Retro ベースのフロントエンド向け Playstation エミュレ�
 
 #. tumbleweed/libretro-pcsx_rearmed/description
 #. leap/libretro-pcsx_rearmed/description
-#, fuzzy
-#| msgid ""
-#| "Playstation Emulator ported to the libretro API Can be used by various "
-#| "frontends to load Playstation games"
 msgid ""
 "This package contains a libretro port of the PCSX-ReARMed emulator. It can "
 "be used by various frontends to load Playstation games."
 msgstr ""
-"libretro API に移植された Playstation エミュレータは、 Playstation の ROM を"
-"読み込む様々なフロントエンドで利用することができます。"
+"このパッケージには、 PCSX-ReARMed エミュレータの libretro 移植版が含まれています。 Playstation "
+"のゲームを読み込むためのフロンエンドとして使用することができます。"
 
 #. tumbleweed/librevenge/librevenge-0_0-0/summary
 #. tumbleweed/librevenge/librevenge-generators-0_0-0/summary
@@ -22015,21 +21862,11 @@ msgstr ""
 "このパッケージには、 Rime のランタイムライブラリが含まれています。"
 
 #. tumbleweed/librsb/librsb-devel/summary
-#, fuzzy
-#| msgid "Development files for libesedb, a EDB file format library"
 msgid ""
 "Development files for librsb, a Recursive Sparse Blocks matrix format lirary"
-msgstr "EDB ファイル形式ライブラリ libesedb 向け開発用ファイル"
+msgstr "再帰疎ブロック配列形式ライブラリ librsb 向け開発用ファイル"
 
 #. tumbleweed/librsb/librsb-devel/description
-#, fuzzy
-#| msgid ""
-#| "libbde is a library to access the BitLocker Drive Encryption (BDE) "
-#| "format. The BDE format is used by Windows, as of Vista, to encrypt data "
-#| "on a storage media volume.\n"
-#| "\n"
-#| "This subpackage contains libraries and header files for developing "
-#| "applications that want to make use of libbde."
 msgid ""
 "librsb is a library for sparse matrix computations featuring the Recursive "
 "Sparse Blocks (RSB) matrix format. This format allows cache efficient and "
@@ -22039,16 +21876,15 @@ msgid ""
 "This subpackage contains libraries and header files for developing "
 "applications that want to make use of librsb."
 msgstr ""
-"libbde は BitLocker ドライブ暗号化 (BDE) 形式にアクセスするためのライブラリで"
-"す。 BDE 形式は Windows Vista またはそれ以降のバージョンで、ストレージメディ"
-"ア内のデータを暗号化するために使用されています。\n"
+"librsb は疎行列の計算に対するライブラリで、 Recursive Sparse Blocks (RSB; 再帰疎ブロック) "
+"行列形式に対応した仕組みです。この形式により、巨大な疎行列に対するキャッシュの効率を上げ、マルチスレッド (つまり共有メモリによる並行化) "
+"操作の効率を上げることができます。\n"
 "\n"
-"このサブパッケージには、 libbde を利用してアプリケーションを開発するのに必要"
-"な、ライブラリとヘッダファイルが含まれています。"
+"このサブパッケージには、 librsb を利用するアプリケーションを開発するのに必要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/librsb/librsb0/summary
 msgid "Shared memory parallel sparse matrix and sparse BLAS library"
-msgstr ""
+msgstr "疎行列並行／共有メモリ化および疎 BLAS ライブラリ"
 
 #. tumbleweed/librsb/librsb0/description
 msgid ""
@@ -22060,6 +21896,11 @@ msgid ""
 "librsb implements the Sparse BLAS standard, as specified in the BLAS Forum "
 "documents."
 msgstr ""
+"librsb は疎行列の計算に対するライブラリで、 Recursive Sparse Blocks (RSB; 再帰疎ブロック) "
+"行列形式に対応した仕組みです。この形式により、巨大な疎行列に対するキャッシュの効率を上げ、マルチスレッド (つまり共有メモリによる並行化) "
+"操作の効率を上げることができます。\n"
+"\n"
+"librsb は、 BLAS フォーラムの文書内に規定されている疎 BLAS 標準を実装しています。"
 
 #. tumbleweed/librsvg/librsvg-2-2/summary
 #. tumbleweed/librsvg/librsvg-2-2-32bit/summary
@@ -22251,29 +22092,20 @@ msgstr ""
 
 #. tumbleweed/libsass/libsass-3_4_3-0/summary
 msgid "Compiler library for A CSS preprocessor language"
-msgstr ""
+msgstr "CSS プリプロセッサ言語向けコンパイラライブラリ"
 
 #. tumbleweed/libsass/libsass-3_4_3-0/description
-#, fuzzy
-#| msgid "This package provides the shared library object for libsass"
 msgid "This package provides the shared library object for libsass."
-msgstr ""
-"このパッケージには、 libsass に対する共有ライブラリオブジェクトが含まれていま"
-"す。"
+msgstr "このパッケージには、 libsass に対する共有ライブラリオブジェクトが含まれています。"
 
 #. tumbleweed/libsass/libsass-devel/summary
-#, fuzzy
-#| msgid "Development files for libfmapi, a library for MAPI data types"
 msgid ""
 "Development files for libsass, a library for a CSS preprocessor language"
-msgstr "MAPI データタイプ向けライブラリ libfmapi 向け開発用ファイル"
+msgstr "CSS プリプロセッサ言語向けライブラリ libsass の開発用ファイル"
 
 #. tumbleweed/libsass/libsass-devel/description
-#, fuzzy
-#| msgid "This package provides development header files for libsass"
 msgid "This package provides development header files for libsass."
-msgstr ""
-"このパッケージには、 libsass 向けの開発用ヘッダファイルが含まれています。"
+msgstr "このパッケージには、 libsass 向けの開発用ヘッダファイルが含まれています。"
 
 #. tumbleweed/libscca/libscca-devel/summary
 #. tumbleweed/libscca/libscca-devel/summary
@@ -22570,10 +22402,8 @@ msgstr ""
 "ションを開発するのに必要な、静的ライブラリが含まれています。"
 
 #. tumbleweed/libsemanage/libsemanage-migrate-store/summary
-#, fuzzy
-#| msgid "SELinux policy management library"
 msgid "SELinux Policy Store Migration"
-msgstr "SELinux ポリシー管理ライブラリ"
+msgstr "SELinux ポリシーストア移行"
 
 #. tumbleweed/libsemanage/libsemanage-migrate-store/description
 msgid ""
@@ -22583,6 +22413,9 @@ msgid ""
 "migrated before any commands that modify or use the store (e.g. semodule, "
 "semanage) can be executed."
 msgstr ""
+"バージョン 2.4 の libsemanage, libsepol, policycoreutils では、ポリシーモジュールが "
+"/etc/selinux/<ストア>/modules から /var/lib/selinux/<ストア>/ に移動されています。ライブラリをアップグレード"
+"したあとは、ストアを修正したり使用したりするコマンドを実行する前に、全てのポリシーストアを移行しなければなりません。"
 
 #. tumbleweed/libsemanage/libsemanage1/summary
 #. tumbleweed/libsemanage/libsemanage1-32bit/summary
@@ -22760,30 +22593,22 @@ msgstr "GTK+ ウイジェットに拡張機能を提供する機能セットで�
 
 #. tumbleweed/libshine/libshine-devel/summary
 #. leap/libshine/libshine-devel/summary
-#, fuzzy
-#| msgid "Development files for the X11 font encoding library"
 msgid "Development files for libshine, an MP3 encoding library"
-msgstr "X11 フォントエンコーディングライブラリ向け開発用ファイル"
+msgstr "MP3 エンコーディングライブラリ libshine 向け開発用ファイル"
 
 #. tumbleweed/libshine/libshine-devel/description
 #. leap/libshine/libshine-devel/description
-#, fuzzy
-#| msgid ""
-#| "The libcss-devel package contains libraries and header files for "
-#| "developing applications that use libcss."
 msgid ""
 "The libshine-devel package contains libraries and header files for "
 "developing applications that use libshine."
 msgstr ""
-"libcss-devel パッケージには、 libcss を利用してアプリケーションを開発するのに"
-"必要な、ライブラリとヘッダファイルが含まれています。"
+"libshine-devel パッケージには、 libshine "
+"を利用してアプリケーションを開発するのに必要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/libshine/libshine3/summary
 #. leap/libshine/libshine3/summary
-#, fuzzy
-#| msgid "X11 font encoding library"
 msgid "MP3 encoding library"
-msgstr "X11 フォントエンコーディングライブラリ"
+msgstr "MP3 エンコーディングライブラリ"
 
 #. tumbleweed/libshine/libshine3/description
 #. leap/libshine/libshine3/description
@@ -22792,6 +22617,8 @@ msgid ""
 "library can be used to perform MP3 encoding on architectures without a FPU, "
 "such as armel, etc., but likewise works on systems with an FPU."
 msgstr ""
+"Shine は固定小数点演算で実装した MP3 エンコーディングライブラリです。 armel など、 FPU のないアーキテクチャで MP3 "
+"エンコーディングを行なうために使用しますが、 FPU のある環境でも同様に動作します。"
 
 #. tumbleweed/libshout/libshout3/summary
 #. tumbleweed/libshout/libshout3-32bit/summary
@@ -22915,30 +22742,22 @@ msgstr ""
 "整合性の無いものに接続するためのアダプタクラスも用意されています。"
 
 #. tumbleweed/libsignal-protocol-c/libsignal-protocol-c-devel/summary
-#, fuzzy
-#| msgid "Development files for libscca"
 msgid "Development files for libsignal-protocol-c"
-msgstr "libscca 向け開発用ファイル"
+msgstr "libsignal-protocol-c 向け開発用ファイル"
 
 #. tumbleweed/libsignal-protocol-c/libsignal-protocol-c-devel/description
-#, fuzzy
-#| msgid "Development files and headers for libstrophe"
 msgid "Development files and headers for libsignal-protocol-c"
-msgstr "libstrophe 向け開発用ファイルとヘッダ"
+msgstr "libsignal-protocol-c 向け開発用ファイルとヘッダ"
 
 #. tumbleweed/libsignal-protocol-c/libsignal-protocol-c2/summary
-#, fuzzy
-#| msgid "X11 core protocol C library"
 msgid "Signal Protocol C Library"
-msgstr "X11 コアプロトコル C ライブラリ"
+msgstr "シグナルプロトコル C ライブラリ"
 
 #. tumbleweed/libsignal-protocol-c/libsignal-protocol-c2/description
-#, fuzzy
-#| msgid "The libstrophe library is a XMPP library written in C."
 msgid ""
 "The libsignal-protocol-c library is a forward secrecy protocol library "
 "written in C."
-msgstr "libstrophe ライブラリは、 C 言語で書かれた XMPP のライブラリです。"
+msgstr "libsignal-protocol-c ライブラリは、 C 言語で書かれた前方秘匿性プロトコルのライブラリです。"
 
 #. tumbleweed/libsignon-glib/libsignon-glib-devel/summary
 #. leap/libsignon-glib/libsignon-glib-devel/summary
@@ -23291,10 +23110,8 @@ msgstr "libsmi 共有ライブラリ"
 
 #. tumbleweed/libsmpp34/libsmpp34-0/summary
 #. leap/libsmpp34/libsmpp34-0/summary
-#, fuzzy
-#| msgid "MMS stream protocol library"
 msgid "SMPP-3.4 protocol library"
-msgstr "MMS ストリームプロトコルライブラリ"
+msgstr "SMPP-3.4 プロトコルライブラリ"
 
 #. tumbleweed/libsmpp34/libsmpp34-0/description
 #. leap/libsmpp34/libsmpp34-0/description
@@ -23304,32 +23121,26 @@ msgid ""
 "communication interface for the transfer of short message data between "
 "External Short Messaging Entities, Routing Entitites and Message Centres."
 msgstr ""
+"このライブラリは、 SMPP-3.4 プロトコルの Protocol Data Unit (PDU) 処理を行ないます。 SMPP (Short "
+"Message Peer-to-Peer) は、 External Short Messaging Entities, Routing "
+"Entities, Message Centres との間で短いメッセージを転送するためのデータ通信インターフェイスを提供します。"
 
 #. tumbleweed/libsmpp34/libsmpp34-0-devel/summary
 #. leap/libsmpp34/libsmpp34-0-devel/summary
-#, fuzzy
-#| msgid "Development files for the X11 protocol C library"
 msgid "Development files for the SMPP-3.4 protocol library"
-msgstr "X11 プロトコル C ライブラリ向け開発用ファイル"
+msgstr "SMPP-3.4 プロトコルライブラリ向け開発用ファイル"
 
 #. tumbleweed/libsmpp34/libsmpp34-0-devel/description
 #. leap/libsmpp34/libsmpp34-0-devel/description
-#, fuzzy
-#| msgid ""
-#| "A library for MAPI data types.\n"
-#| "\n"
-#| "This subpackage contains libraries and header files for developing "
-#| "applications that want to make use of libfmapi."
 msgid ""
 "The library provides the PDU handling of the SMPP-3.4 protocol.\n"
 "\n"
 "This subpackage contains libraries and header files for developing "
 "applications that want to make use of libsmpp34."
 msgstr ""
-"MAPI データタイプ向けライブラリです。\n"
+"このライブラリは、 SMPP-3.4 プロトコルの PDU 処理機能を提供します。\n"
 "\n"
-"このサブパッケージには、 libfmapi を利用したアプリケーションを開発するのに必"
-"要な、ライブラリとヘッダファイルが含まれています。"
+"このサブパッケージには、 libsmpp34 を利用したアプリケーションを開発するのに必要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/libsmraw/libsmraw-devel/summary
 #. leap/libsmraw/libsmraw-devel/summary
@@ -23431,10 +23242,8 @@ msgstr ""
 
 #. tumbleweed/libsoc/libsoc-common/summary
 #. leap/libsoc/libsoc-common/summary
-#, fuzzy
-#| msgid "Development files for libscca"
 msgid "Common files for libsoc"
-msgstr "libscca 向け開発用ファイル"
+msgstr "libsoc 向け汎用ファイル"
 
 #. tumbleweed/libsoc/libsoc-common/description
 #. leap/libsoc/libsoc-common/description
@@ -23447,37 +23256,35 @@ msgid ""
 "\n"
 "This package contains common config files for libsoc."
 msgstr ""
+"libsoc は System on Chips (SoC) 内に一般的に存在する各種の周辺機器を、一般的な Linux "
+"カーネルインターフェイス経由でアクセスするための C ライブラリです。\n"
+"\n"
+"このライブラリは、速度よりも信頼性を重視していますが、保証があるわけではありませんので、重要なルーチン内では使用すべきではありません。\n"
+"\n"
+"このパッケージには、 libsoc 向けの一般的な設定ファイルが含まれています。"
 
 #. tumbleweed/libsoc/libsoc-devel/summary
 #. leap/libsoc/libsoc-devel/summary
-#, fuzzy
-#| msgid "Development files for libscca"
 msgid "Development files for libsoc"
-msgstr "libscca 向け開発用ファイル"
+msgstr "libsoc 向け開発用ファイル"
 
 #. tumbleweed/libsoc/libsoc-devel/description
 #. leap/libsoc/libsoc-devel/description
-#, fuzzy
-#| msgid ""
-#| "libplist is a library for handling Apple Binary and XML Property Lists.\n"
-#| "\n"
-#| "This package contains the development files for C."
 msgid ""
 "libsoc is a C library to interface with common peripherals found in System "
 "on Chips (SoC) through generic Linux Kernel interfaces.\n"
 "\n"
 "This package contains development files for libsoc."
 msgstr ""
-"libplist は Apple バイナリと XML プロパティリストを処理するライブラリです。\n"
+"libsoc は System on Chips (SoC) 内に一般的に存在する各種の周辺機器を、一般的な Linux "
+"カーネルインターフェイス経由でアクセスするための C ライブラリです。\n"
 "\n"
-"このパッケージには、 C 言語向けの開発用ファイルが含まれています。"
+"このパッケージには、 libsoc 向けの開発用ファイルが含まれています。"
 
 #. tumbleweed/libsoc/libsoc2/summary
 #. leap/libsoc/libsoc2/summary
-#, fuzzy
-#| msgid "Client library for interacting with the Zeitgeist daemon"
 msgid "C library for interfacing with common SoC peripherals"
-msgstr "Zeitgeist デーモンと対話するためのクライアントライブラリ"
+msgstr "一般的な SoC 周辺機器を扱うための C ライブラリ"
 
 #. tumbleweed/libsoc/libsoc2/description
 #. leap/libsoc/libsoc2/description
@@ -23488,6 +23295,10 @@ msgid ""
 "It targets reliability rather than speed. No guarantees are made on its "
 "determinism and it should not be used in time critical routines."
 msgstr ""
+"libsoc は System on Chips (SoC) 内に一般的に存在する各種の周辺機器を、一般的な Linux "
+"カーネルインターフェイス経由でアクセスするための C ライブラリです。\n"
+"\n"
+"このライブラリは、速度よりも信頼性を重視していますが、保証があるわけではありませんので、重要なルーチン内では使用すべきではありません。"
 
 #. tumbleweed/libsocialweb/summary
 #. leap/libsocialweb/summary
@@ -23882,30 +23693,23 @@ msgid "Library for accessing 3D connexion devices"
 msgstr "3D connexion デバイスにアクセスするためのライブラリ"
 
 #. tumbleweed/libsrtp/libsrtp-devel/summary
-#, fuzzy
-#| msgid "Secure Real-Time Transport Protocol (SRTP) library"
 msgid ""
 "Development files for the Secure Real-Time Transport Protocol (SRTP) library"
-msgstr "Secure Real-Time Transport Protocol (SRTP) ライブラリ"
+msgstr "Secure Real-Time Transport Protocol (SRTP) ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libsrtp/libsrtp-devel/description
 #. tumbleweed/libsrtp2/libsrtp2-devel/description
 #. leap/libsrtp2/libsrtp2-devel/description
-#, fuzzy
-#| msgid ""
-#| "This is an implementation of double-array structure for representing "
-#| "trie, as proposed by Junichi Aoe.\n"
-#| "\n"
-#| "This package contains the development files for libdatrie."
 msgid ""
 "libsrtp is an implementation of the Secure Real-time Transport Protocol "
 "(SRTP) originally authored by Cisco Systems, Inc.\n"
 "\n"
 "This subpackage contains the development headers."
 msgstr ""
-"青江潤一氏が提案した、トライ木を表現するためのダブル配列構造の実装です。\n"
+"libsrtp は元々 Cisco Systems, Inc. が開発していた、 Secure Real-time Transport Protocol "
+"(SRTP) の実装です。\n"
 "\n"
-"このパッケージには、 libdatrie に対する開発用ファイルが含まれています。"
+"このサブパッケージには、開発用のヘッダファイルが含まれています。"
 
 #. tumbleweed/libsrtp/libsrtp1/summary
 #. tumbleweed/libsrtp/libsrtp1-32bit/summary
@@ -23921,16 +23725,6 @@ msgstr "Secure Real-Time Transport Protocol (SRTP) ライブラリ"
 #. tumbleweed/libsrtp2/libsrtp2-1-32bit/description
 #. leap/libsrtp2/libsrtp2-1/description
 #. leap/libsrtp2/libsrtp2-1-32bit/description
-#, fuzzy
-#| msgid ""
-#| "The libSRTP library is an open source implementation of the Secure Real-"
-#| "time Transport Protocol (SRTP) originally authored by Cisco Systems, "
-#| "Inc.\n"
-#| "\n"
-#| "SRTP is a security profile for RTP that adds confidentiality, message "
-#| "authentication, and replay protection to that protocol. It is specified "
-#| "in RFC 3711. More information about the SRTP protocol itself can be found "
-#| "on the Secure RTP page."
 msgid ""
 "libsrtp is an implementation of the Secure Real-time Transport Protocol "
 "(SRTP) originally authored by Cisco Systems, Inc.\n"
@@ -23940,31 +23734,25 @@ msgid ""
 "RFC 3711. More information about the SRTP protocol itself can be found on "
 "the Secure RTP page."
 msgstr ""
-"libSRTP ライブラリは、もともと Cisco Systems, Inc. で作成されていた Secure "
-"Real-time Transport Protocol (SRTP) のオープンソース版実装です。\n"
+"libsrtp は元々 Cisco Systems, Inc. が開発していた、 Secure Real-time Transport Protocol "
+"(SRTP) の実装です。\n"
 "\n"
-"SRTP は RTP に対するセキュリティプロファイルで、機密保持やメッセージの認証、"
-"第三者による解読からの保護といった機能が提供されています。仕様は RFC 3711 で"
-"規定されています。 SRTP プロトコル自身に関する詳しい情報は、 Secure RTP の"
-"ページ内をお読みください。"
+"SRTP は RTP に対するセキュリティプロファイルで、機密保持やメッセージの認証、第三者による解読からの保護といった機能が提供されています。仕様は "
+"RFC 3711 で規定されています。 SRTP プロトコル自身に関する詳しい情報は、 Secure RTP のページ内をお読みください。"
 
 #. tumbleweed/libsrtp2/libsrtp2-1/summary
 #. tumbleweed/libsrtp2/libsrtp2-1-32bit/summary
 #. leap/libsrtp2/libsrtp2-1/summary
 #. leap/libsrtp2/libsrtp2-1-32bit/summary
-#, fuzzy
-#| msgid "Secure Real-Time Transport Protocol (SRTP) library"
 msgid "Secure Real-Time Transport Protocol (SRTP) library v2"
-msgstr "Secure Real-Time Transport Protocol (SRTP) ライブラリ"
+msgstr "Secure Real-Time Transport Protocol (SRTP) ライブラリ v2"
 
 #. tumbleweed/libsrtp2/libsrtp2-devel/summary
 #. leap/libsrtp2/libsrtp2-devel/summary
-#, fuzzy
-#| msgid "Secure Real-Time Transport Protocol (SRTP) library"
 msgid ""
 "Development files for the Secure Real-Time Transport Protocol (SRTP) library "
 "v2"
-msgstr "Secure Real-Time Transport Protocol (SRTP) ライブラリ"
+msgstr "Secure Real-Time Transport Protocol (SRTP) ライブラリ v2 向け開発用ファイル"
 
 #. tumbleweed/libssh/libssh-devel/summary
 #. leap/libssh/libssh-devel/summary
@@ -23977,8 +23765,6 @@ msgid "Development headers for the SSH library."
 msgstr "SSH ライブラリ向け開発用ファイルです。"
 
 #. tumbleweed/libssh/libssh-devel-doc/summary
-#, fuzzy
-#| msgid "SSH library api documentation"
 msgid "SSH library API documentation"
 msgstr "SSH ライブラリ API ドキュメンテーション"
 
@@ -24020,19 +23806,6 @@ msgstr "SSH ライブラリ"
 
 #. tumbleweed/libssh/libssh4/description
 #. tumbleweed/libssh/libssh4-32bit/description
-#, fuzzy
-#| msgid ""
-#| "The ssh library was designed to be used by programmers needing a working "
-#| "SSH implementation by the mean of a library. The complete control of the "
-#| "client is made by the programmer. With libssh, you can remotely execute "
-#| "programs, transfer files, use a secure and transparent tunnel for your "
-#| "remote programs. With its Secure FTP implementation, you can play with "
-#| "remote files easily, without third-party programs others than libcrypto "
-#| "(from openssl).\n"
-#| "\n"
-#| "This package provides libssh from http://www.libssh.org that should not "
-#| "be confused with libssh2 available from http://www.libssh2.org (libssh2 "
-#| "package)"
 msgid ""
 "An SSH implementation in the form of a library. With libssh, you can "
 "remotely execute programs, transfer files, use a secure and transparent "
@@ -24041,17 +23814,11 @@ msgid ""
 "This package provides libssh from http://www.libssh.org that should not be "
 "confused with libssh2 available from http://www.libssh2.org (libssh2 package)"
 msgstr ""
-"ssh ライブラリは、ライブラリの形で動作する SSH 実装を必要としているプログラマ"
-"に向けて設計されています。プログラマに対してクライアントの完全な制御機能を提"
-"供しているため、 libssh を使用することでリモートのプログラムを実行したり、"
-"ファイルを転送したり、リモートのプログラムに対して機密を保護しながら透過的に"
-"使用できるトンネルを用意したりすることができます。また、 Secure FTP の実装で"
-"は、 libcrypto (openssl) を除く第三者のプログラムを利用することなく、リモート"
-"のファイルを簡単に再生できる機能も備わっています。\n"
+"ライブラリの形態で提供されている SSH の実装です。  libssh を使用することで、リモートのプログラムを実行したり、ファイルを転送したり、リモート"
+"のプログラムに対して機密を保護しながら透過的に使用できるトンネルを用意したりすることができます。 SFTP にも対応しています。\n"
 "\n"
-"このパッケージには、 http://www.libssh.org が提供する libssh が含まれていま"
-"す。 http://www.libssh2.org が提供する libssh2 (libssh2 パッケージ) とは異な"
-"るものであることに注意してください。"
+"このパッケージには、 http://www.libssh.org が提供する libssh が含まれています。 http://"
+"www.libssh2.org が提供する libssh2 (libssh2 パッケージ) とは異なるものであることに注意してください。"
 
 #. tumbleweed/libressl/libssl43/description
 #. tumbleweed/libressl/libssl43-32bit/description
@@ -24676,10 +24443,8 @@ msgstr ""
 
 #. tumbleweed/libtar/summary
 #. leap/libtar/summary
-#, fuzzy
-#| msgid "X11 keyboard file manipulation library"
 msgid "Tar file manipulation API"
-msgstr "X11 キーボードファイル操作ライブラリ"
+msgstr "tar ファイル操作 API"
 
 #. tumbleweed/libtar/description
 #. leap/libtar/description
@@ -24687,35 +24452,31 @@ msgid ""
 "libtar is a C library for manipulating POSIX tar files. It handles adding "
 "and extracting files to/from a tar archive."
 msgstr ""
+"libtar は POSIX tar ファイルを操作するための C 言語ライブラリです。 tar "
+"アーカイブへの追加のほか、抽出などを処理することができます。"
 
 #. tumbleweed/libtar/libtar-devel/summary
 #. leap/libtar/libtar-devel/summary
-#, fuzzy
-#| msgid "Development files for libteam"
 msgid "Development files for libtar"
-msgstr "libteam 向け開発用ファイル"
+msgstr "libtar 向け開発用ファイル"
 
 #. tumbleweed/libtar/libtar-devel/description
 #. leap/libtar/libtar-devel/description
-#, fuzzy
-#| msgid ""
-#| "libzip is a C library for reading, creating, and modifying zip archives. "
-#| "This package contains devel files."
 msgid ""
 "libtar is a C library for manipulating POSIX tar files. It handles adding "
 "and extracting files to/from a tar archive.\n"
 "\n"
 "This package contains devel files for libtar."
 msgstr ""
-"libzip は zip アーカイブの読み込みや作成、編集を行なうことができるライブラリ"
-"です。このパッケージには開発に必要なファイルが含まれています。"
+"libtar は POSIX tar ファイルの操作するための C 言語ライブラリです。 tar "
+"アーカイブへの追加のほか、ファイルの抽出を行なうこともできます。\n"
+"\n"
+"このパッケージには、 libtar 向けの開発用ファイルが含まれています。"
 
 #. tumbleweed/libtar/libtar1/summary
 #. leap/libtar/libtar1/summary
-#, fuzzy
-#| msgid "Shared library for libotf"
 msgid "Shared library for libtar"
-msgstr "libotf 向け共有ライブラリ"
+msgstr "libtar 向け共有ライブラリ"
 
 #. tumbleweed/libtar/libtar1/description
 #. leap/libtar/libtar1/description
@@ -24725,6 +24486,10 @@ msgid ""
 "\n"
 "This package contains the shared library needed for libtar."
 msgstr ""
+"libtar は POSIX tar ファイルを操作するための C 言語ライブラリです。 tar "
+"アーカイブへの追加のほか、抽出などを処理することができます。\n"
+"\n"
+"このパッケージには、 libtar 向けに必要な共有ライブラリが含まれています。"
 
 #. tumbleweed/libtasn1/summary
 #. tumbleweed/libtasn1/libtasn1-6/summary
@@ -25134,34 +24899,24 @@ msgid "MIDI to WAVE converter library"
 msgstr "MIDI から WAVE 形式への変換ライブラリ"
 
 #. tumbleweed/libtins/libtins-devel/summary
-#, fuzzy
-#| msgid "Development files for libnfs"
 msgid "Development files for tins"
-msgstr "libnfs 向け開発用ファイル"
+msgstr "tins 向け開発用ファイル"
 
 #. tumbleweed/libtins/libtins-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package contains the header files and static libraries needed to "
-#| "develop applications with libid3tag."
 msgid ""
 "This package contains header files, and libraries needed to develop "
 "application that use libtins."
-msgstr ""
-"このパッケージには、 libid3tag で開発を行なう際に必要なヘッダファイルと静的ラ"
-"イブラリが含まれています。"
+msgstr "このパッケージには、 libtins で開発を行なう際に必要なヘッダファイルとライブラリが含まれています。"
 
 #. tumbleweed/libtins/libtins3/summary
-#, fuzzy
-#| msgid "A Library for Generating Network Deltas"
 msgid "C++ library for manipulating raw network packets"
-msgstr "ネットワーク差分生成ライブラリ"
+msgstr "raw ネットワークパケットの操作を行なうための C++ 言語ライブラリ"
 
 #. tumbleweed/libtins/libtins3/description
 msgid ""
 "The library provides a C++ interface for creating tools which need to send, "
 "receive and manipulate specially crafted packets."
-msgstr ""
+msgstr "このライブラリは、特殊な加工を施したパケットを送受信したり、操作したりするツールを作成するための C++ インターフェイスを提供します。"
 
 #. tumbleweed/libtirpc/libtirpc-devel/summary
 #. tumbleweed/libtirpc/libtirpc3/summary
@@ -26057,17 +25812,6 @@ msgstr "USB ガジェット設定ライブラリ向け開発用ファイル"
 #. tumbleweed/libusbgx/libusbgx-devel/description
 #. tumbleweed/libusbgx/libusbgx-devel/description
 #. leap/libusbgx/libusbgx-devel/description
-#, fuzzy
-#| msgid ""
-#| "libusbg is a C library encapsulating the kernel USB gadget-configfs "
-#| "userspace API functionality.\n"
-#| "\n"
-#| "It provides routines for creating and parsing USB gadget devices using "
-#| "the configfs API. Currently, all USB gadget configfs functions that can "
-#| "be enabled in kernel release 3.11 are supported.\n"
-#| "\n"
-#| "This subpackage contains the development headers for the libusbg headers "
-#| "and libraries."
 msgid ""
 "libusbgx is a C library encapsulating the kernel USB gadget-configfs "
 "userspace API functionality.\n"
@@ -26079,15 +25823,13 @@ msgid ""
 "This subpackage contains the development headers for the libusbgx headers "
 "and libraries."
 msgstr ""
-"libusbg はカーネルの USB ガジェットの configfs をカプセル化する、ユーザスペー"
-"ス側 API 機能を提供する C ライブラリです。\n"
+"libusbgx はカーネルの USB ガジェットの configfs をカプセル化する、ユーザスペース側 API 機能を提供する C ライブラリです。"
 "\n"
-"configfs API を利用して、 USB ガジェットデバイスの作成と処理を行なうルーチン"
-"を提供します。現時点では、カーネル 3.11 内で有効化されているすべての USB ガ"
-"ジェットの configfs 機能に対応しています。\n"
 "\n"
-"このサブパッケージには、 libusbg に対する開発用のヘッダとライブラリが含まれて"
-"います。"
+"configfs API を利用して、 USB ガジェットデバイスの作成と処理を行なうルーチンを提供します。現時点では、カーネル 3.11 "
+"内で有効化されているすべての USB ガジェットの configfs 機能に対応しています。\n"
+"\n"
+"このサブパッケージには、 libusbgx に対する開発用のヘッダとライブラリが含まれています。"
 
 #. tumbleweed/libusbgx/libusbgx-tools/summary
 #. tumbleweed/libusbgx/libusbgx-tools/summary
@@ -26099,13 +25841,6 @@ msgstr "USB ガジェットデバイスを表示したり設定したりする�
 #. tumbleweed/libusbgx/libusbgx-tools/description
 #. tumbleweed/libusbgx/libusbgx-tools/description
 #. leap/libusbgx/libusbgx-tools/description
-#, fuzzy
-#| msgid ""
-#| "libusbg is a C library encapsulating the kernel USB gadget-configfs "
-#| "userspace API functionality.\n"
-#| "\n"
-#| "This subpackage contains utilities to display and configure USB gadget "
-#| "devices."
 msgid ""
 "libusbgx is a C library encapsulating the kernel USB gadget-configfs "
 "userspace API functionality.\n"
@@ -26113,11 +25848,10 @@ msgid ""
 "This subpackage contains utilities to display and configure USB gadget "
 "devices."
 msgstr ""
-"libusbg はカーネルの USB ガジェットの configfs をカプセル化する、ユーザスペー"
-"ス側 API 機能を提供する C ライブラリです。\n"
+"libusbgx はカーネルの USB ガジェットの configfs をカプセル化する、ユーザスペース側 API 機能を提供する C ライブラリです。"
 "\n"
-"このサブパッケージには、 USB ガジェットデバイスを表示したり設定したりするため"
-"のユーティリティが含まれています。"
+"\n"
+"このサブパッケージには、 USB ガジェットデバイスを表示したり設定したりするためのユーティリティが含まれています。"
 
 #. tumbleweed/libusbgx/libusbgx1/summary
 #. tumbleweed/libusbgx/libusbgx1/summary
@@ -26129,16 +25863,11 @@ msgstr "USB ガジェットデバイス設定ライブラリ"
 #. tumbleweed/libusbgx/libusbgx1/description
 #. tumbleweed/libusbgx/libusbgx1/description
 #. leap/libusbgx/libusbgx1/description
-#, fuzzy
-#| msgid ""
-#| "libusbg is a C library encapsulating the kernel USB gadget-configfs "
-#| "userspace API functionality."
 msgid ""
 "libusbgx is a C library encapsulating the kernel USB gadget-configfs "
 "userspace API functionality."
 msgstr ""
-"libusbg はカーネルの USB ガジェットの configfs をカプセル化する、ユーザスペー"
-"ス側 API 機能を提供する C ライブラリです。"
+"libusbgx はカーネルの USB ガジェットの configfs をカプセル化する、ユーザスペース側 API 機能を提供する C ライブラリです。"
 
 #. tumbleweed/libusbmuxd/libusbmuxd-devel/summary
 #. tumbleweed/libusbmuxd/libusbmuxd-devel/summary
@@ -26932,10 +26661,8 @@ msgstr ""
 
 #. tumbleweed/libvirt/libvirt-daemon/summary
 #. leap/libvirt/libvirt-daemon/summary
-#, fuzzy
-#| msgid "Server side daemon and supporting files for libvirt library"
 msgid "Server side daemon and supporting files for libvirt"
-msgstr "libvirt ライブラリに対するサーバ側のデーモンとサポートファイル"
+msgstr "libvirt に対するサーバ側のデーモンとサポートファイル"
 
 #. tumbleweed/libvirt/libvirt-daemon/description
 #. leap/libvirt/libvirt-daemon/description
@@ -27074,10 +26801,8 @@ msgstr ""
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage/summary
 #. leap/libvirt/libvirt-daemon-driver-storage/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin including all backends for the libvirtd daemon"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "全バックエンドを含む libvirtd デーモン向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage/description
 #. leap/libvirt/libvirt-daemon-driver-storage/description
@@ -27090,124 +26815,80 @@ msgstr ""
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-core/summary
 #. leap/libvirt/libvirt-daemon-driver-storage-core/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin including base backends for the libvirtd daemon"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "ベースとなるバックエンドを含む libvirtd デーモン向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-core/description
 #. leap/libvirt/libvirt-daemon-driver-storage-core/description
-#, fuzzy
-#| msgid ""
-#| "The storage driver plugin for the libvirtd daemon, providing an "
-#| "implementation of the storage APIs using LVM, iSCSI, parted and more."
 msgid ""
 "The storage driver plugin for the libvirtd daemon, providing an "
 "implementation of the storage APIs using files, local disks, LVM, SCSI, "
 "iSCSI, and multipath storage."
 msgstr ""
-"libvirtd デーモン向けのストレージドライバプラグインです。LVM や iSCSI, "
-"parted などのストレージ API の実装を提供しています。"
+"libvirtd デーモン向けのストレージドライバプラグインです。ファイルやローカルディスク、 LVM や SCSI/iSCSI, "
+"マルチパスストレージなどのストレージ API の実装を提供しています。"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-disk/summary
 #. leap/libvirt/libvirt-daemon-driver-storage-disk/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin for disk"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "ディスク向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-disk/description
 #. leap/libvirt/libvirt-daemon-driver-storage-disk/description
-#, fuzzy
-#| msgid ""
-#| "The storage driver plugin for the libvirtd daemon, providing an "
-#| "implementation of the storage APIs using LVM, iSCSI, parted and more."
 msgid ""
 "The storage driver backend adding implementation of the storage APIs for "
 "block volumes using the host disks."
-msgstr ""
-"libvirtd デーモン向けのストレージドライバプラグインです。LVM や iSCSI, "
-"parted などのストレージ API の実装を提供しています。"
+msgstr "このストレージドライババックエンドは、ホストのディスクを使用するブロックボリューム向けのストレージ API の実装を提供します。"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-iscsi/summary
 #. leap/libvirt/libvirt-daemon-driver-storage-iscsi/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin for iscsi"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "iscsi 向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-iscsi/description
 #. leap/libvirt/libvirt-daemon-driver-storage-iscsi/description
-#, fuzzy
-#| msgid ""
-#| "The storage driver plugin for the libvirtd daemon, providing an "
-#| "implementation of the storage APIs using LVM, iSCSI, parted and more."
 msgid ""
 "The storage driver backend adding implementation of the storage APIs for "
 "iscsi volumes using the host iscsi stack."
 msgstr ""
-"libvirtd デーモン向けのストレージドライバプラグインです。LVM や iSCSI, "
-"parted などのストレージ API の実装を提供しています。"
+"このストレージドライババックエンドは、ホストの iscsi ディスクを使用する iscsi ボリューム向けのストレージ API の実装を提供します。"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-logical/summary
 #. leap/libvirt/libvirt-daemon-driver-storage-logical/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin for lvm volumes"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "lvm ボリューム向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-logical/description
 #. leap/libvirt/libvirt-daemon-driver-storage-logical/description
-#, fuzzy
-#| msgid ""
-#| "The storage driver plugin for the libvirtd daemon, providing an "
-#| "implementation of the storage APIs using LVM, iSCSI, parted and more."
 msgid ""
 "The storage driver backend adding implementation of the storage APIs for "
 "block volumes using lvm."
-msgstr ""
-"libvirtd デーモン向けのストレージドライバプラグインです。LVM や iSCSI, "
-"parted などのストレージ API の実装を提供しています。"
+msgstr "このストレージドライババックエンドは、 lvm ディスクを使用するブロックボリューム向けのストレージ API の実装を提供します。"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-mpath/summary
 #. leap/libvirt/libvirt-daemon-driver-storage-mpath/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin for multipath volumes"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "マルチパスボリューム向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-mpath/description
 #. leap/libvirt/libvirt-daemon-driver-storage-mpath/description
-#, fuzzy
-#| msgid ""
-#| "The storage driver plugin for the libvirtd daemon, providing an "
-#| "implementation of the storage APIs using LVM, iSCSI, parted and more."
 msgid ""
 "The storage driver backend adding implementation of the storage APIs for "
 "multipath storage using device mapper."
 msgstr ""
-"libvirtd デーモン向けのストレージドライバプラグインです。LVM や iSCSI, "
-"parted などのストレージ API の実装を提供しています。"
+"このストレージドライババックエンドは、 device mapper を使用するマルチパスストレージ向けのストレージ API の実装を提供します。"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-scsi/summary
 #. leap/libvirt/libvirt-daemon-driver-storage-scsi/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin for local scsi devices"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "ローカル scsi デバイス向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-scsi/description
 #. leap/libvirt/libvirt-daemon-driver-storage-scsi/description
-#, fuzzy
-#| msgid ""
-#| "The storage driver plugin for the libvirtd daemon, providing an "
-#| "implementation of the storage APIs using LVM, iSCSI, parted and more."
 msgid ""
 "The storage driver backend adding implementation of the storage APIs for "
 "scsi host devices."
-msgstr ""
-"libvirtd デーモン向けのストレージドライバプラグインです。LVM や iSCSI, "
-"parted などのストレージ API の実装を提供しています。"
+msgstr "このストレージドライババックエンドは、 scsi ホストデバイス向けのストレージ API の実装を提供します。"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-uml/summary
 #. leap/libvirt/libvirt-daemon-driver-uml/summary
@@ -27306,10 +26987,8 @@ msgstr "libvirt C ライブラリ向けヘッダファイルと開発用ライ�
 
 #. tumbleweed/libvirt/libvirt-doc/summary
 #. leap/libvirt/libvirt-doc/summary
-#, fuzzy
-#| msgid "API reference and website documentation"
 msgid "API reference and website documentation for libvirt"
-msgstr "API リファレンスと Web サイトのドキュメンテーション"
+msgstr "libvirt 向け API リファレンスと Web サイトのドキュメンテーション"
 
 #. tumbleweed/libvirt/libvirt-doc/description
 #. leap/libvirt/libvirt-doc/description
@@ -27361,10 +27040,8 @@ msgstr "libvirt の GLib および GObject のマッピング - 開発用ファ�
 
 #. tumbleweed/libvirt/libvirt-libs/summary
 #. leap/libvirt/libvirt-libs/summary
-#, fuzzy
-#| msgid "Runtime libraries for libverto"
 msgid "Client side libraries for libvirt"
-msgstr "libverto 向けのランタイムライブラリ"
+msgstr "libvirt 向けのクライアント側ライブラリ"
 
 #. tumbleweed/libvirt/libvirt-libs/description
 #. leap/libvirt/libvirt-libs/description
@@ -27575,10 +27252,8 @@ msgstr ""
 "の) / 変更追跡 filek"
 
 #. tumbleweed/libvmime/libvmime-devel/summary
-#, fuzzy
-#| msgid "Development files for libmirage, a CD-ROM image access library"
 msgid "Development files for vmime, an e-mail message library"
-msgstr "CD-ROM イメージアクセスライブラリ libmirage 向け開発用ファイル"
+msgstr "電子メールメッセージライブラリ vmime 向け開発用ファイル"
 
 #. tumbleweed/libvmime/libvmime-devel/description
 msgid ""
@@ -27588,6 +27263,10 @@ msgid ""
 "\n"
 "This subpackage contains the headers for the library's API."
 msgstr ""
+"VMime は RFC2822 と MIME 準拠のメッセージ (RFC2045-2049) を処理するための C++ クラスライブラリです。このほか、 "
+"IMAP, POP, SMTP などのインターネットメッセージングサービスにも対応しています。\n"
+"\n"
+"個のサブパッケージには、ライブラリの API に対するヘッダが含まれています。"
 
 #. tumbleweed/libvmime/libvmime1/summary
 #. leap/libvmime/libvmime-devel/summary
@@ -27598,15 +27277,6 @@ msgid "Library for working with MIME messages and IMAP/POP/SMTP"
 msgstr "MIME メッセージや IMAP/POP/SMTP を処理するためのライブラリ"
 
 #. tumbleweed/libvmime/libvmime1/description
-#, fuzzy
-#| msgid ""
-#| "VMime is a powerful C++ class library for working with MIME messages and "
-#| "Internet messaging services like IMAP, POP or SMTP.\n"
-#| "\n"
-#| "With VMime you can parse, generate and modify messages, and also connect "
-#| "to store and transport services to receive or send messages over the "
-#| "Internet. The library offers all the features to build a complete mail "
-#| "client."
 msgid ""
 "VMime is a C++ class library for working with RFC2822 and MIME-conforming "
 "messages (RFC2045–2049), as well as Internet messaging services like IMAP, "
@@ -27616,14 +27286,11 @@ msgid ""
 "transport services to receive or send messages over the Internet. The "
 "library offers features to build a mail client."
 msgstr ""
-"VMime はパワフルな C++ クラスライブラリで、 MIME メッセージのほか、 IMAP, "
-"POP, SMTP などのインターネットメッセージングサービスを処理するためのライブラ"
-"リです。\n"
+"VMime は C++ クラスライブラリで、 RFC2822 と MIME 準拠のメッセージ (RFC2045-2049) のほか、 IMAP, "
+"POP, SMTP などのインターネットメッセージングサービスを処理するためのイブラリです。\n"
 "\n"
-"VMime を利用することで、メッセージの処理や生成／修正のほか、インターネットを"
-"介して転送サービスに接続して、メッセージを送受信したり保存したりすることがで"
-"きるようになります。このライブラリはには、完全なメールクライアントを構築する"
-"ための全機能が用意されています。"
+"VMime を利用することで、メッセージの処理や生成／修正のほか、インターネットを介して転送サービスに接続して、メッセージを送受信したり保存したりすること"
+"ができるようになります。このライブラリはには、メールクライアントを構築するための全機能が用意されています。"
 
 #. tumbleweed/libvoikko/libvoikko-devel/summary
 #. tumbleweed/libvoikko/libvoikko1/summary
@@ -27749,10 +27416,8 @@ msgstr ""
 "ています。"
 
 #. tumbleweed/libvpx/libvpx-devel/summary
-#, fuzzy
-#| msgid "Development files for libevdev library"
 msgid "Development files for libvpx, a VP8/VP9 codec library"
-msgstr "libevdev ライブラリ向け開発用ファイル"
+msgstr "VP8/VP9 コーデックライブラリ libvpx 向け開発用ファイル"
 
 #. tumbleweed/libvpx/libvpx-devel/description
 #. leap/libvpx/libvpx-devel/description
@@ -27778,10 +27443,8 @@ msgstr ""
 
 #. tumbleweed/libvpx/libvpx4/summary
 #. tumbleweed/libvpx/libvpx4-32bit/summary
-#, fuzzy
-#| msgid "VP8 codec library"
 msgid "VP8/VP9 codec library"
-msgstr "VP8 コーデックライブラリ"
+msgstr "VP8/VP9 コーデックライブラリ"
 
 #. tumbleweed/libvpx/libvpx4/description
 #. tumbleweed/libvpx/libvpx4-32bit/description
@@ -29741,28 +29404,21 @@ msgstr ""
 
 #. tumbleweed/libyami/libyami-devel/summary
 #. leap/libyami/libyami-devel/summary
-#, fuzzy
-#| msgid "Development files for libyaml"
 msgid "Development files for libyami"
-msgstr "libyaml 向け開発用ファイル"
+msgstr "libyami 向け開発用ファイル"
 
 #. tumbleweed/libyami/libyami-devel/description
 #. leap/libyami/libyami-devel/description
-#, fuzzy
-#| msgid ""
-#| "The libisds-devel package contains libraries and header files for "
-#| "developing applications that use libisds."
 msgid ""
 "The libyami-devel package contains libraries and header files for developing "
 "applications that use libyami."
 msgstr ""
-"libisds-devel パッケージには、 libisds を使用するアプリケーションを開発するの"
-"に必要な、ライブラリとヘッダファイルが含まれています。"
+"libyami-devel パッケージには、 libyami を使用するアプリケーションを開発するのに必要な、ライブラリとヘッダファイルが含まれています。"
 
 #. tumbleweed/libyami-utils/summary
 #. leap/libyami-utils/summary
 msgid "Collection of tools for development and testing of Libyami"
-msgstr ""
+msgstr "libyami で開発やテストを行なうためのツール集"
 
 #. tumbleweed/libyami-utils/description
 #. leap/libyami-utils/description
@@ -29782,31 +29438,31 @@ msgid ""
 "Hardware requirements: Intel Sandybridge, Ivybridge, Haswell, Broadwell, "
 "Skylake, Kaby Lake Intel Baytrail, Braswell, Apollo Lake"
 msgstr ""
+"このパッケージは、 libyami を利用したデコーダ／エンコーダ／vpp プログラムを提供しています。関連するプログラムでは、対応する Intel "
+"ハードウエア上で libva と intel-vaapi-driver を併用した場合に、下記のハードウエア機能にアクセスする機能を提供します:\n"
+"\n"
+"デコーダ: MPEG-2, VC-1, WMV 9 (WMV3), H.264, HEVC (H.265), VP8, VP9, JPEG\n"
+"\n"
+"エンコーダ: H.264, HEVC (H.265), VP8, VP9, JPEG\n"
+"\n"
+"ビデオ処理: シャープ化, ノイズ除去, デインターレース, 色相, 彩度, 明るさ, 濃淡, CSC, スケーリング\n"
+"\n"
+"ハードウエア要件: Intel Sandybridge, Ivybridge, Haswell, Broadwell, Skylake, Kaby "
+"Lake Intel Baytrail, Braswell, Apollo Lake"
 
 #. tumbleweed/libyami/libyami1/summary
 #. leap/libyami/libyami1/summary
-#, fuzzy
-#| msgid "Libraries for libtomcrypt"
 msgid "Library components for libyami"
-msgstr "libtomcrypt 向けライブラリ"
+msgstr "libyami 向けライブラリコンポーネント"
 
 #. tumbleweed/libyami/libyami1/description
 #. leap/libyami/libyami1/description
-#, fuzzy
-#| msgid ""
-#| "The libva library implements the Video Acceleration (VA) API for Linux. "
-#| "The library loads a hardware dependendent driver.\n"
-#| "\n"
-#| "This package provides the development environment for libva."
 msgid ""
 "The libyami library implements an interface to libva for Linux. This package "
 "provides the runtime environment for libyami."
 msgstr ""
-"libva ライブラリは、 Linux 向けのビデオアクセラレーション (VA) API を実装する"
-"ライブラリです。このライブラリは、ハードウエア依存のドライバを読み込みま"
-"す。\n"
-"\n"
-"このパッケージには、 libva に対する開発環境が含まれています。"
+"libyami ライブラリは、 Linux 向けの libva のインターフェイスを実装しています。このパッケージには、 libyami "
+"のランタイム環境が含まれています。"
 
 #. tumbleweed/libyaml/libyaml-0-2/summary
 #. leap/libyaml/libyaml-0-2/summary
@@ -30265,26 +29921,20 @@ msgstr ""
 
 #. tumbleweed/libzen/libzen-devel/summary
 #. leap/libzen/libzen-devel/summary
-#, fuzzy
-#| msgid "Include files and development libraries"
 msgid "Include files to develop for libzen"
-msgstr "ヘッダファイルと開発用ライブラリ"
+msgstr "libzen 開発用ヘッダファイル"
 
 #. tumbleweed/libzen/libzen-devel/description
 #. leap/libzen/libzen-devel/description
-#, fuzzy
-#| msgid "Include Files and Libraries for Development"
 msgid "Include files and mandatory libraries to develop for libzen."
-msgstr "開発用ヘッダファイルとライブラリ"
+msgstr "libzen で開発を行なうのに必要な、ヘッダファイルと必須ライブラリです。"
 
 #. tumbleweed/libzen/libzen0/summary
 #. tumbleweed/libzen/libzen0-32bit/summary
 #. leap/libzen/libzen0/summary
 #. leap/libzen/libzen0-32bit/summary
-#, fuzzy
-#| msgid "The Hangul input library"
 msgid "The ZenLib C++ utility library"
-msgstr "ハングル入力ライブラリ"
+msgstr "ZenLib C++ ユーティリティライブラリ"
 
 #. tumbleweed/libzen/libzen0/description
 #. tumbleweed/libzen/libzen0-32bit/description
@@ -30295,6 +29945,8 @@ msgid ""
 "configuration, bit streams, threading, translation and cross-platform "
 "operating system functions."
 msgstr ""
+"ZenLib は C++ のユーティリティライブラリです。文字列や設定の処理、ビットストリームやスレッド、変換やクロスプラットフォーム対応のオペレーティン"
+"グシステム関数に対するクラスが用意されています。"
 
 #. tumbleweed/libzhuyin/libzhuyin-data/summary
 #. leap/libzhuyin/libzhuyin-data/summary
@@ -30432,66 +30084,49 @@ msgstr ""
 #. tumbleweed/libzmf/libzmf-0_0-0/summary
 #. tumbleweed/libzmf/libzmf-0_0-0/summary
 #. leap/libzmf/libzmf-0_0-0/summary
-#, fuzzy
-#| msgid "An EPUB generator library"
 msgid "An ZMF generator library"
-msgstr "EPUB 生成ライブラリ"
+msgstr "ZMF 生成ライブラリ"
 
 #. tumbleweed/libzmf/libzmf-0_0-0/description
 #. tumbleweed/libzmf/libzmf-0_0-0/description
 #. leap/libzmf/libzmf-0_0-0/description
-#, fuzzy
-#| msgid ""
-#| "librvngabw is a library for generating AbiWord documents. It is directly "
-#| "pluggable into import filters based on librevenge."
 msgid ""
 "libzmf is a library for generating Zoner documents. It is directly pluggable "
 "into import filters based on librevenge."
 msgstr ""
-"librvngabw は AbiWord の文書を生成するためのライブラリです。 librevenge を"
-"ベースにしたインポートフィルタに直接接続することができます。"
+"libzmf は Zoner の文書を生成するためのライブラリです。 librevenge をベースにしたインポートフィルタに直接接続することができます。"
 
 #. tumbleweed/libzmf/libzmf-devel/summary
 #. tumbleweed/libzmf/libzmf-devel/summary
 #. leap/libzmf/libzmf-devel/summary
-#, fuzzy
-#| msgid "Development files for libmnl"
 msgid "Development files for libzmf"
-msgstr "libmnl 向け開発用ファイル"
+msgstr "libzmf 向け開発用ファイル"
 
 #. tumbleweed/libzmf/libzmf-devel/description
 #. tumbleweed/libzmf/libzmf-devel/description
 #. leap/libzmf/libzmf-devel/description
-#, fuzzy
-#| msgid ""
-#| "libepubgen is a library for generating EPUB documents. It is directly "
-#| "pluggable into import filters based on librevenge.\n"
-#| "\n"
-#| "This package contains the libepubgen development files."
 msgid ""
 "libzmf is a library for generating Zoner documents. It is directly pluggable "
 "into import filters based on librevenge.\n"
 "\n"
 "This package contains the libzmf development files."
 msgstr ""
-"libepubgen は EPUB ドキュメントを作成するためのライブラリです。 librevenge を"
-"ベースにすることで、インポートフィルタ内に直接組み込むことができます。\n"
+"libzmf は Zoner ドキュメントを作成するためのライブラリです。 librevenge "
+"をベースにすることで、インポートフィルタ内に直接組み込むことができます。\n"
 "\n"
-"このパッケージには、 libepubgen の開発用ファイルが含まれています。"
+"このパッケージには、 libzmf の開発用ファイルが含まれています。"
 
 #. tumbleweed/libzmf/libzmf-tools/summary
 #. tumbleweed/libzmf/libzmf-tools/summary
 #. leap/libzmf/libzmf-tools/summary
-#, fuzzy
-#| msgid "Tools for converting WordPerfect Graphics files"
 msgid "Tools for converting the Zoner ZMF files"
-msgstr "WordPerfect グラフィックファイルを変換するためのツール"
+msgstr "Zoner ZMF ファイルを変換するためのツール"
 
 #. tumbleweed/libzmf/libzmf-tools/description
 #. tumbleweed/libzmf/libzmf-tools/description
 #. leap/libzmf/libzmf-tools/description
 msgid "Tools to work with the Zoner ZMF files, based on librevenge."
-msgstr ""
+msgstr "librevenge をベースにした Zoner ZMF ファイルを扱うツールです。"
 
 #. tumbleweed/libzrtpcpp/libzrtpcpp-devel/summary
 #. leap/libzrtpcpp/libzrtpcpp-devel/summary
@@ -30731,17 +30366,12 @@ msgstr ""
 "libtheora, libannodex などの追加ライブラリが必要です。"
 
 #. tumbleweed/libopenmpt/openmpt123/summary
-#, fuzzy
-#| msgid "Command line parsing library"
 msgid "Command line module player"
-msgstr "コマンドライン処理ライブラリ"
+msgstr "コマンドラインモジュールプレーヤ"
 
 #. tumbleweed/libopenmpt/openmpt123/description
-#, fuzzy
-#| msgid "This package contains the bsdtar cmdline utility."
 msgid "This package contains the openmpt123 command-line module player."
-msgstr ""
-"このパッケージには、 bsdtar のコマンドラインユーティリティが含まれています。"
+msgstr "このパッケージには、 openmpt123 のコマンドラインモジュールプレーヤが含まれています。"
 
 #. tumbleweed/liboping/oping/description
 #. leap/liboping/oping/description
@@ -30763,15 +30393,13 @@ msgstr "libCEC で使用されるプラットフォームライブラリの開�
 
 #. tumbleweed/libcap/pam_cap/summary
 #. tumbleweed/libcap/pam_cap-32bit/summary
-#, fuzzy
-#| msgid "Library for Capabilities (linux-privs) Support"
 msgid "PAM Module for Capabilities Support"
-msgstr "権限 (linux-privs) サポートライブラリ"
+msgstr "機能 (Capabilities) 向け PAM モジュール"
 
 #. tumbleweed/libcap/pam_cap/description
 #. tumbleweed/libcap/pam_cap-32bit/description
 msgid "A PAM module for per-session capabilities manipulation."
-msgstr ""
+msgstr "セッション機能の操作を行なうための PAM モジュールです。"
 
 #. tumbleweed/libpwquality/pam_pwquality/summary
 #. leap/libpwquality/pam_pwquality/summary
@@ -30868,19 +30496,13 @@ msgstr "libkolab 向け PHP バインディング"
 
 #. tumbleweed/libkolab-qt5/php-libkolab1/description
 #. leap/libkolab-qt5/php-libkolab1/description
-#, fuzzy
-#| msgid ""
-#| "libkolab provides conversions from/to KDE containers, mime message "
-#| "handling and facilities to read and write kolabv2 and kolabv3. This "
-#| "package provides PHP Bindings for libkolab."
 msgid ""
 "libkolab provides conversions from/to KDE containers, MIME message handling "
 "and facilities to read and write kolabv2 and kolabv3. This package provides "
 "PHP Bindings for libkolab."
 msgstr ""
-"libkolab は KDE コンテナとの相互変換を行なうライブラリです。 MIME メッセージ"
-"の処理や kolabv2 および kolabv2 を読み書きするための機能を提供しています。こ"
-"のパッケージには、 libkolab 向けの PHP バインディングが含まれています。"
+"libkolab は KDE コンテナとの相互変換を行なうライブラリです。 MIME メッセージの処理や kolabv2 および kolabv2 "
+"を読み書きするための機能を提供しています。このパッケージには、 libkolab 向けの PHP バインディングが含まれています。"
 
 #. tumbleweed/libkolabxml/php-libkolabxml1/summary
 #. leap/libkolabxml/php-libkolabxml1/summary
@@ -31102,20 +30724,15 @@ msgstr ""
 "まれています。"
 
 #. tumbleweed/libkdumpfile/python-libaddrxlat/summary
-#, fuzzy
-#| msgid "Python Bindings for libxslt"
 msgid "Python interface for libaddrxlat"
-msgstr "libxslt 向け Python バインディング"
+msgstr "libaddrxlat 向け Python インターフェイス"
 
 #. tumbleweed/libkdumpfile/python-libaddrxlat/description
-#, fuzzy
-#| msgid "This package contains all that is needed to use libcaca from python."
 msgid ""
 "This package contains all necessary python modules to use libaddrxlat via "
 "the Python interpreter."
 msgstr ""
-"このパッケージには、 Python から libcaca を使用するのに必要な全てのファイルが"
-"含まれています。"
+"このパッケージには、 Python インタプリタを介して libaddrxlat を使用するのに必要な全て Python モジュールが含まれています。"
 
 #. tumbleweed/libbde/python-libbde/summary
 #. leap/libbde/python-libbde/summary
@@ -31239,18 +30856,12 @@ msgstr ""
 "の一部です。"
 
 #. tumbleweed/libfsntfs/python-libfsntfs/summary
-#, fuzzy
-#| msgid "Python bindings for libfsntfs"
 msgid "Python 2 bindings for libfsntfs"
-msgstr "libfsntfs 向け Python バインディング"
+msgstr "libfsntfs 向け Python 2 バインディング"
 
 #. tumbleweed/libfsntfs/python-libfsntfs/description
-#, fuzzy
-#| msgid "Python binding for libfsntfs, which can access the NTFS filesystem."
 msgid "Python 2 binding for libfsntfs, which can access the NTFS filesystem."
-msgstr ""
-"NTFS ファイルシステムにアクセスすることのできる、 libfsntfs 向け Python バイ"
-"ンディングです。"
+msgstr "NTFS ファイルシステムにアクセスすることのできる、 libfsntfs 向け Python 2 バインディングです。"
 
 #. tumbleweed/libfvde/python-libfvde/summary
 #. leap/libfvde/python-libfvde/summary
@@ -31307,22 +30918,16 @@ msgstr ""
 "ディングが含まれています。"
 
 #. tumbleweed/libkdumpfile/python-libkdumpfile/summary
-#, fuzzy
-#| msgid "Python interface to Libsmbios C library"
 msgid "Python interface for libkdumpfile"
-msgstr "libsmbios C ライブラリに対する Python インターフェイス"
+msgstr "libkdumpfile 向け Python インターフェイス"
 
 #. tumbleweed/libkdumpfile/python-libkdumpfile/description
-#, fuzzy
-#| msgid ""
-#| "This package contains all necessary files and libraries needed to develop "
-#| "KDE games."
 msgid ""
 "This package contains all necessary python modules to use libkdumpfile via "
 "the Python interpreter."
 msgstr ""
-"このパッケージには、 KDE ゲームを開発するのに必要な全てのヘッダファイルとライ"
-"ブラリが含まれています。"
+"このパッケージには、 Python インタプリタを介して libkdumpfile を使用するのに必要な、全ての Python "
+"モジュールが含まれています。"
 
 #. tumbleweed/libkolab-qt5/python-libkolab1/summary
 #. leap/libkolab/python-libkolab0/summary
@@ -31332,19 +30937,13 @@ msgstr "libkolab 向け Python バインディング"
 
 #. tumbleweed/libkolab-qt5/python-libkolab1/description
 #. leap/libkolab-qt5/python-libkolab1/description
-#, fuzzy
-#| msgid ""
-#| "libkolab provides conversions from/to KDE containers, mime message "
-#| "handling and facilities to read and write kolabv2 and kolabv3. This "
-#| "package provides Python bindings for libkolab."
 msgid ""
 "libkolab provides conversions from/to KDE containers, MIME message handling "
 "and facilities to read and write kolabv2 and kolabv3. This package provides "
 "Python bindings for libkolab."
 msgstr ""
-"libkolab は KDE コンテナとの相互変換を行なうライブラリです。 MIME メッセージ"
-"の処理や kolabv2 および kolabv2 を読み書きするための機能を提供しています。こ"
-"のパッケージには、 libkolab 向けの Python バインディングが含まれています。"
+"libkolab は KDE コンテナとの相互変換を行なうライブラリです。 MIME メッセージの処理や kolabv2 および kolabv2 "
+"を読み書きするための機能を提供しています。このパッケージには、 libkolab 向けの Python バインディングが含まれています。"
 
 #. tumbleweed/libkolabxml/python-libkolabxml1/summary
 #. leap/libkolabxml/python-libkolabxml1/summary
@@ -31747,22 +31346,16 @@ msgstr ""
 "が含まれています。"
 
 #. tumbleweed/libqcow/python2-libqcow/summary
-#, fuzzy
-#| msgid "Python 2 bindings for libfwnt"
 msgid "Python 2 bindings for libqcow"
-msgstr "libfwnt 向け Python 2 バインディング"
+msgstr "libqcow 向け Python 2 バインディング"
 
 #. tumbleweed/libqcow/python2-libqcow/description
-#, fuzzy
-#| msgid ""
-#| "Python 2 binding for libscca, which can access the Windows Prefetch File "
-#| "(PF) format."
 msgid ""
 "Python 2 bindings for libqcow, which can access the QEMU Copy-On-Write "
 "(QCOW) image format"
 msgstr ""
-"Windows Prefetch File (PF) 形式にアクセスするためのライブラリ、 libscca に対"
-"する Python バインディングです。"
+"QEMU Copy-On-Write (QCOW) イメージ形式にアクセスするためのライブラリ、 libqcow に対する Python 2 "
+"バインディングです"
 
 #. tumbleweed/libsmdev/python2-libsmdev/summary
 #. tumbleweed/libsmdev/python3-libsmdev/summary
@@ -31771,16 +31364,11 @@ msgid "Python bindings for libsmdev"
 msgstr "libsmdev 向け Python バインディング"
 
 #. tumbleweed/libsmdev/python2-libsmdev/description
-#, fuzzy
-#| msgid ""
-#| "Python bindings for libsmdev, which is a library to access and read "
-#| "storage media devices."
 msgid ""
 "Python 2 bindings for libsmdev, which is a library to access and read "
 "storage media devices."
 msgstr ""
-"ストレージメディアデバイスにアクセスしたり、読み込んだりするためのライブラリ"
-"である libsmdev 向け Python バインディングです。"
+"ストレージメディアデバイスにアクセスしたり、読み込んだりするためのライブラリである libsmdev 向け Python 2 バインディングです。"
 
 #. tumbleweed/libtorrent-rasterbar/python2-libtorrent-rasterbar/summary
 #. tumbleweed/libtorrent-rasterbar/python3-libtorrent-rasterbar/summary
@@ -31813,18 +31401,12 @@ msgstr ""
 "れています。"
 
 #. tumbleweed/libfsntfs/python3-libfsntfs/summary
-#, fuzzy
-#| msgid "Python bindings for libfsntfs"
 msgid "Python 3 bindings for libfsntfs"
-msgstr "libfsntfs 向け Python バインディング"
+msgstr "libfsntfs 向け Python 3 バインディング"
 
 #. tumbleweed/libfsntfs/python3-libfsntfs/description
-#, fuzzy
-#| msgid "Python binding for libfsntfs, which can access the NTFS filesystem."
 msgid "Python 3 binding for libfsntfs, which can access the NTFS filesystem."
-msgstr ""
-"NTFS ファイルシステムにアクセスすることのできる、 libfsntfs 向け Python バイ"
-"ンディングです。"
+msgstr "NTFS ファイルシステムにアクセスすることのできる、 libfsntfs 向け Python 3 バインディングです。"
 
 #. tumbleweed/libfvde/python3-libfvde/summary
 #. leap/libfvde/python3-libfvde/summary
@@ -31878,22 +31460,16 @@ msgid "Python 3 bindings for libpreludedb generated by SWIG."
 msgstr "SWIG で生成された libpreludedb 向け Python 3 バインディングです。"
 
 #. tumbleweed/libqcow/python3-libqcow/summary
-#, fuzzy
-#| msgid "Python 3 bindings for libscca"
 msgid "Python 3 bindings for libqcow"
-msgstr "libscca 向け Python 3 バインディング"
+msgstr "libqcow 向け Python 3 バインディング"
 
 #. tumbleweed/libqcow/python3-libqcow/description
-#, fuzzy
-#| msgid ""
-#| "Python 3 binding for libscca, which can access the Windows Prefetch File "
-#| "(PF) format."
 msgid ""
 "Python 3 bindings for libqcow, which can access the QEMU Copy-On-Write "
 "(QCOW) image format"
 msgstr ""
-"Windows Prefetch File (PF) 形式にアクセスするためのライブラリ、 libscca に対"
-"する Python 3 バインディングです。"
+"QEMU Copy-On-Write (QCOW) イメージ形式にアクセスするためのライブラリ、 libqcow に対する Python 3 "
+"バインディングです"
 
 #. tumbleweed/libscca/python3-libscca/summary
 #. tumbleweed/libscca/python3-libscca/summary
@@ -31912,42 +31488,29 @@ msgstr ""
 "する Python 3 バインディングです。"
 
 #. tumbleweed/libsmdev/python3-libsmdev/description
-#, fuzzy
-#| msgid ""
-#| "Python bindings for libsmdev, which is a library to access and read "
-#| "storage media devices."
 msgid ""
 "Python 3 bindings for libsmdev, which is a library to access and read "
 "storage media devices."
 msgstr ""
-"ストレージメディアデバイスにアクセスしたり、読み込んだりするためのライブラリ"
-"である libsmdev 向け Python バインディングです。"
+"ストレージメディアデバイスにアクセスしたり、読み込んだりするためのライブラリである libsmdev 向け Python 3 バインディングです。"
 
 #. tumbleweed/libsoc/python3-libsoc/summary
 #. leap/libsoc/python3-libsoc/summary
-#, fuzzy
-#| msgid "Python 3 bindings for libscca"
 msgid "Python3 bindings for libsoc"
-msgstr "libscca 向け Python 3 バインディング"
+msgstr "libsoc 向け Python 3 バインディング"
 
 #. tumbleweed/libsoc/python3-libsoc/description
 #. leap/libsoc/python3-libsoc/description
-#, fuzzy
-#| msgid ""
-#| "libvhdi is a library to access Virtual Hard Disk (VHD) image format. See "
-#| "libvhdi for details.\n"
-#| "\n"
-#| "This package contains Python 3 bindings for libvhdi."
 msgid ""
 "libsoc is a C library to interface with common peripherals found in System "
 "on Chips (SoC) through generic Linux Kernel interfaces.\n"
 "\n"
 "This package contains python3 bindings for libsoc."
 msgstr ""
-"libvhdi は Virtual Hard Disk (VHD) イメージ形式にアクセスするためのライブラリ"
-"です。詳しくは libvhdi をご覧ください。\n"
+"libsoc は System on Chips (SoC) 内に一般的に存在する各種の周辺機器を、一般的な Linux "
+"カーネルインターフェイス経由でアクセスするための C ライブラリです。\n"
 "\n"
-"このパッケージには、 libvhdi 向けの Python 3 バインディングが含まれています。"
+"このパッケージには、 libsoc 向けの Python 3 バインディングが含まれています。"
 
 #. tumbleweed/libvhdi/python3-libvhdi/summary
 msgid "Python 3 bindings for libvhdi, a VHD image format parser"
@@ -31995,17 +31558,13 @@ msgstr ""
 
 #. tumbleweed/libsolv/python3-solv/summary
 #. leap/libsolv/python3-solv/summary
-#, fuzzy
-#| msgid "Python bindings for the libsolv library"
 msgid "Python3 bindings for the libsolv library"
-msgstr "libsolv ライブラリ向け Python バインディング"
+msgstr "libsolv ライブラリ向け Python 3 バインディング"
 
 #. tumbleweed/libsolv/python3-solv/description
 #. leap/libsolv/python3-solv/description
-#, fuzzy
-#| msgid "Python bindings for sat solver."
 msgid "Python3 bindings for sat solver."
-msgstr "sat ソルバーに対する Python バインディングです。"
+msgstr "sat ソルバーに対する Python 3 バインディングです。"
 
 #. tumbleweed/librcc/rcc-runtime/summary
 #. leap/librcc/rcc-runtime/summary
@@ -32028,10 +31587,8 @@ msgstr "rdiff は署名ベースのファイル差分を生成し、適用する
 
 #. tumbleweed/libreadline5/readline5-devel/summary
 #. tumbleweed/libreadline5/readline5-devel-32bit/summary
-#, fuzzy
-#| msgid "Development files for the libexplain library."
 msgid "Development files for the readline library version 5"
-msgstr "libexplain ライブラリ向け開発用ファイルです。"
+msgstr "readline ライブラリバージョン 5 向け開発用ファイル"
 
 #. tumbleweed/librime/rime/description
 #. leap/librime/rime/description
@@ -32445,21 +32002,13 @@ msgstr ""
 "バインディングが含まれています。"
 
 #. tumbleweed/libgsystem/typelib-1_0-GSystem-1_0/summary
-#, fuzzy
-#| msgid ""
-#| "GIO-based library targeted for use by OS component -- Introspection "
-#| "bindings"
 msgid ""
 "GIO-based library targeted for use by OS components -- Introspection bindings"
-msgstr ""
-"OS コンポーネントで使用することを目的とした GIO ベースのライブラリ -- イント"
-"ロスペクションバインディング"
+msgstr "OS コンポーネントで使用することを目的とした GIO ベースのライブラリ -- イントロスペクションバインディング"
 
 #. tumbleweed/libgtop/typelib-1_0-GTop-2_0/summary
-#, fuzzy
-#| msgid "Python bindings for libevtx"
 msgid "Introspection bindings for libgtop"
-msgstr "libevtx 向け Python バインディング"
+msgstr "libgtop 向けイントロスペクションバインディング"
 
 #. tumbleweed/libgtop/typelib-1_0-GTop-2_0/description
 #. leap/libgtop/typelib-1_0-GTop-2_0/description
@@ -32701,6 +32250,15 @@ msgid ""
 "This package provides the gobject-introspection bindings for "
 "libhttpseverywhere."
 msgstr ""
+"HTTPSEverywhere は、どうしても回避不可能な場合にのみ HTTPS の代替として HTTP "
+"を使用するような、ルール集を提供するブラウザプラグインです。 libhttpseverywhere は、 C 言語でバインドすることができるほか、 "
+"glib ベースのライブラリはほぼ全ての言語でリンクまたはバインドすることができるようになっています。\n"
+"\n"
+"Vala で記述されたライブラリであることから、 libhttpseverywhere は GObject "
+"のイントロスペクションにも対応するものと考えられています。これにより、 Ruby, Python, JavaScript "
+"などの多くの著名言語でライブラリを利用できることになります。\n"
+"\n"
+"このパッケージには、 libhttpseverywhere 向けの gobject イントロスペクションバインディングが含まれています。"
 
 #. tumbleweed/libvirt-glib/typelib-1_0-LibvirtGConfig-1_0/summary
 #. tumbleweed/libvirt-glib/typelib-1_0-LibvirtGLib-1_0/summary
@@ -32743,7 +32301,7 @@ msgstr ""
 #. tumbleweed/libostree/typelib-1_0-OSTree-1_0/summary
 #. leap/libostree/typelib-1_0-OSTree-1_0/summary
 msgid "Git for operating system binaries  -- GObject bindings"
-msgstr ""
+msgstr "オペレーティングシステムバイナリ向け git - GObject バインディング"
 
 #. tumbleweed/libpeas/typelib-1_0-Peas-1_0/summary
 #. tumbleweed/libpeas/typelib-1_0-PeasGtk-1_0/summary
@@ -33058,12 +32616,8 @@ msgstr ""
 "含まれています。"
 
 #. tumbleweed/libmirage/typelib-1_0-libmirage-3_0/summary
-#, fuzzy
-#| msgid "The libmirage CD-ROM image access library – introspection bindings"
 msgid "The libmirage CD-ROM image access library – introspection bindings"
-msgstr ""
-"libmirage CD-ROM イメージアクセスライブラリ - イントロスペクションバインディ"
-"ング"
+msgstr "libmirage CD-ROM イメージアクセスライブラリ - イントロスペクションバインディング"
 
 #. tumbleweed/libmirage/typelib-1_0-libmirage-3_0/description
 #. leap/libmirage/typelib-1_0-libmirage-3_0/description
@@ -33171,10 +32725,8 @@ msgid "Video Acceleration (VA) API for Linux - Wayland support"
 msgstr "Linux 向けビデオアクセラレーション (VA) API - Wayland サポート"
 
 #. tumbleweed/libvpx/vpx-tools/summary
-#, fuzzy
-#| msgid "Development files for the Osmocom codec library"
 msgid "Utilies from the VP8/VP9 codec library"
-msgstr "Osmocom コーデックライブラリ向け開発用ファイル"
+msgstr "VP8/VP9 コーデックライブラリ提供ユーティリティ"
 
 #. tumbleweed/libvpx/vpx-tools/description
 #. leap/libvpx/vpx-tools/description
@@ -33466,10 +33018,8 @@ msgstr ""
 "キュメンテーションが含まれています。"
 
 #. tumbleweed/libax25/libax25-common/summary
-#, fuzzy
-#| msgid "Development files for libcap"
 msgid "Common files for libax25"
-msgstr "libcap 向け開発用ファイル"
+msgstr "libax25 向け汎用ファイル"
 
 #. tumbleweed/libax25/libax25-common/description
 msgid ""
@@ -33479,6 +33029,10 @@ msgid ""
 "\n"
 "This package contains common config files for libax25."
 msgstr ""
+"AX.25 向けライブラリです。 AX.25 (Amateur X.25) は、 X.25 "
+"プロトコルスイートから派生してできたデータリンクレイヤプロトコルであり、アマチュア無線のオペレータ向けに設計されています。\n"
+"\n"
+"このパッケージには、 libax25 向けの一般設定ファイルが含まれています。"
 
 #. tumbleweed/libbase/summary
 #. leap/libbase/summary
@@ -33512,28 +33066,20 @@ msgid "Library to access Blu-Ray disk - BD-J support"
 msgstr "Blu-Ray ディスクにアクセスするライブラリ - BD-J サポート"
 
 #. tumbleweed/libbonobo/libbonobo-lang/summary
-#, fuzzy
-#| msgid "Languages for package libbonobo"
 msgid "Translations for package libbonobo"
-msgstr "libbonobo 向け言語パッケージ"
+msgstr "libbonobo 向け翻訳パッケージ"
 
 #. tumbleweed/libbonobo/libbonobo-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libbonobo\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libbonobo\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libbonoboui/libbonoboui-lang/summary
-#, fuzzy
-#| msgid "Languages for package libbonoboui"
 msgid "Translations for package libbonoboui"
-msgstr "libbonoboui 向け言語パッケージ"
+msgstr "libbonoboui 向け翻訳パッケージ"
 
 #. tumbleweed/libbonoboui/libbonoboui-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libbonoboui\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libbonoboui\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libcaca/libcaca-python/summary
 #. leap/libcaca/libcaca-python/summary
@@ -33561,45 +33107,30 @@ msgstr ""
 
 #. tumbleweed/libclaw/libclaw-doc/summary
 #. leap/libclaw/libclaw-doc/summary
-#, fuzzy
-#| msgid "Documentation for libctl library"
 msgid "Documentation for Claw library"
-msgstr "libctl ライブラリ向けドキュメンテーション"
+msgstr "Claw ライブラリ向けドキュメンテーション"
 
 #. tumbleweed/libclaw/libclaw-doc/description
 #. leap/libclaw/libclaw-doc/description
-#, fuzzy
-#| msgid ""
-#| "This package contains documentation and examples for the Glade library."
 msgid ""
 "This subpackage contains the documentation and examples for using libclaw."
-msgstr ""
-"このパッケージには、 Glade ライブラリのドキュメンテーションとサンプルが含まれ"
-"ています。"
+msgstr "このサブパッケージには、 libclaw ライブラリのドキュメンテーションとサンプルが含まれています。"
 
 #. tumbleweed/libconfuse0/libconfuse0-lang/summary
-#, fuzzy
-#| msgid "Languages for package libconfuse0"
 msgid "Translations for package libconfuse0"
-msgstr "libconfuse0 向け言語パッケージ"
+msgstr "libconfuse0 向け翻訳パッケージ"
 
 #. tumbleweed/libconfuse0/libconfuse0-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libconfuse0\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libconfuse0\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libcryptui/libcryptui-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libcryptui"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libcryptui 向け翻訳パッケージ"
 
 #. tumbleweed/libcryptui/libcryptui-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libcryptui\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libcryptui\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libdbusmenu/libdbusmenu-glib-doc/summary
 #. leap/libdbusmenu/libdbusmenu-glib-doc/summary
@@ -33654,16 +33185,12 @@ msgstr ""
 "算とも呼ばれます) に使用するものです。"
 
 #. tumbleweed/libepc/libepc-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libepc"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libepc 向け翻訳パッケージ"
 
 #. tumbleweed/libepc/libepc-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libepc\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libepc\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libepubgen/libepubgen-devel-doc/summary
 #. leap/libepubgen/libepubgen-devel-doc/summary
@@ -33708,16 +33235,12 @@ msgstr ""
 "ます。"
 
 #. tumbleweed/libfm/libfm-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libfm"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libfm 向け翻訳パッケージ"
 
 #. tumbleweed/libfm/libfm-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libfm\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libfm\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libfonts/summary
 #. leap/libfonts/summary
@@ -33784,28 +33307,20 @@ msgstr ""
 "す。"
 
 #. tumbleweed/libgames-support/libgames-support-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgames-support"
 msgid "Translations for package libgames-support"
-msgstr "libgames-support 向け言語パッケージ"
+msgstr "libgames-support 向け翻訳パッケージ"
 
 #. tumbleweed/libgames-support/libgames-support-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgames-support\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgames-support\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgaminggear/libgaminggear-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgaminggear"
 msgid "Translations for package libgaminggear"
-msgstr "libgaminggear 向け言語パッケージ"
+msgstr "libgaminggear 向け翻訳パッケージ"
 
 #. tumbleweed/libgaminggear/libgaminggear-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgaminggear\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgaminggear\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgarcon/libgarcon-branding-upstream/summary
 #. leap/libgarcon/libgarcon-branding-upstream/summary
@@ -33850,28 +33365,20 @@ msgid "Provides translations to the package libgarcon"
 msgstr "libgarcon パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgda/libgda-5_0-4-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgda"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgda 向け翻訳パッケージ"
 
 #. tumbleweed/libgda/libgda-5_0-4-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgda\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgda\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgdata/libgdata-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgdata"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgdata 向け翻訳パッケージ"
 
 #. tumbleweed/libgdata/libgdata-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgdata\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgdata\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libglade2/libglade2-doc/summary
 #. leap/libglade2/libglade2-doc/summary
@@ -33910,76 +33417,52 @@ msgstr ""
 "うことができます。"
 
 #. tumbleweed/libgnome-games-support/libgnome-games-support-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnome-games-support"
 msgid "Translations for package libgnome-games-support"
-msgstr "libgnome-games-support 向け言語パッケージ"
+msgstr "libgnome-games-support 向け翻訳パッケージ"
 
 #. tumbleweed/libgnome-games-support/libgnome-games-support-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnome-games-support\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnome-games-support\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnome-keyring/libgnome-keyring-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnome-keyring"
 msgid "Translations for package libgnome-keyring"
-msgstr "libgnome-keyring 向け言語パッケージ"
+msgstr "libgnome-keyring 向け翻訳パッケージ"
 
 #. tumbleweed/libgnome-keyring/libgnome-keyring-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnome-keyring\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnome-keyring\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnome/libgnome-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgnome"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgnome 向け翻訳パッケージ"
 
 #. tumbleweed/libgnome/libgnome-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnome\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnome\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnomecanvas/libgnomecanvas-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnomecanvas"
 msgid "Translations for package libgnomecanvas"
-msgstr "libgnomecanvas 向け言語パッケージ"
+msgstr "libgnomecanvas 向け翻訳パッケージ"
 
 #. tumbleweed/libgnomecanvas/libgnomecanvas-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnomecanvas\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnomecanvas\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnomecups/libgnomecups-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnomecups"
 msgid "Translations for package libgnomecups"
-msgstr "libgnomecups 向け言語パッケージ"
+msgstr "libgnomecups 向け翻訳パッケージ"
 
 #. tumbleweed/libgnomecups/libgnomecups-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnomecups\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnomecups\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnomekbd/libgnomekbd-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnomekbd"
 msgid "Translations for package libgnomekbd"
-msgstr "libgnomekbd 向け言語パッケージ"
+msgstr "libgnomekbd 向け翻訳パッケージ"
 
 #. tumbleweed/libgnomekbd/libgnomekbd-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnomekbd\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnomekbd\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnomeprint/libgnomeprint-doc/summary
 #. leap/libgnomeprint/libgnomeprint-doc/summary
@@ -33998,16 +33481,12 @@ msgstr ""
 "な API を提供します。"
 
 #. tumbleweed/libgnomeprint/libgnomeprint-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnomeprint"
 msgid "Translations for package libgnomeprint"
-msgstr "libgnomeprint 向け言語パッケージ"
+msgstr "libgnomeprint 向け翻訳パッケージ"
 
 #. tumbleweed/libgnomeprint/libgnomeprint-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnomeprint\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnomeprint\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnomeprintui/libgnomeprintui-doc/summary
 #. leap/libgnomeprintui/libgnomeprintui-doc/summary
@@ -34026,28 +33505,20 @@ msgstr ""
 "印刷するためのシンプルできれいな API を提供します。"
 
 #. tumbleweed/libgnomeprintui/libgnomeprintui-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnomeprintui"
 msgid "Translations for package libgnomeprintui"
-msgstr "libgnomeprintui 向け言語パッケージ"
+msgstr "libgnomeprintui 向け翻訳パッケージ"
 
 #. tumbleweed/libgnomeprintui/libgnomeprintui-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnomeprintui\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnomeprintui\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnomesu/libgnomesu-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgnomesu"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgnomesu 向け翻訳パッケージ"
 
 #. tumbleweed/libgnomesu/libgnomesu-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnomesu\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnomesu\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgnomeui/libgnomeui-doc/summary
 #. leap/libgnomeui/libgnomeui-doc/summary
@@ -34066,88 +33537,60 @@ msgstr ""
 "は、 libgnomeui-devel パッケージが必要です。"
 
 #. tumbleweed/libgnomeui/libgnomeui-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgnomeui"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgnomeui 向け翻訳パッケージ"
 
 #. tumbleweed/libgnomeui/libgnomeui-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgnomeui\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgnomeui\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgovirt/libgovirt-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgovirt"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgovirt 向け翻訳パッケージ"
 
 #. tumbleweed/libgovirt/libgovirt-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgovirt\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgovirt\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgphoto2/libgphoto2-6-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgphoto2"
 msgid "Translations for package libgphoto2"
-msgstr "libgphoto2 向け言語パッケージ"
+msgstr "libgphoto2 向け翻訳パッケージ"
 
 #. tumbleweed/libgphoto2/libgphoto2-6-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgphoto2\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgphoto2\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgpod/libgpod-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgpod"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgpod 向け翻訳パッケージ"
 
 #. tumbleweed/libgpod/libgpod-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgpod\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgpod\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgravatar/libgravatar-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgravatar"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgravatar 向け翻訳パッケージ"
 
 #. tumbleweed/libgravatar/libgravatar-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgravatar\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgravatar\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgsasl/libgsasl-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgsasl"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgsasl 向け翻訳パッケージ"
 
 #. tumbleweed/libgsasl/libgsasl-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgsasl\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgsasl\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgsf/libgsf-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgsf"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgsf 向け翻訳パッケージ"
 
 #. tumbleweed/libgsf/libgsf-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgsf\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgsf\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgsignon-glib/libgsignon-glib-doc/summary
 #. leap/libgsignon-glib/libgsignon-glib-doc/summary
@@ -34162,16 +33605,12 @@ msgstr ""
 "れています。"
 
 #. tumbleweed/libgtop/libgtop-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgtop"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgtop 向け翻訳パッケージ"
 
 #. tumbleweed/libgtop/libgtop-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgtop\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgtop\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libgweather/libgweather-data/description
 #. leap/libgweather/libgweather-data/description
@@ -34183,16 +33622,12 @@ msgstr ""
 "ジには、アーキテクチャに依存しないファイルが含まれています。"
 
 #. tumbleweed/libgweather/libgweather-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libgweather"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libgweather 向け翻訳パッケージ"
 
 #. tumbleweed/libgweather/libgweather-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libgweather\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libgweather\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libhubbub/libhubbub-doc/summary
 #. leap/libhubbub/libhubbub-doc/summary
@@ -34212,172 +33647,116 @@ msgid "Example source code for libical-using programs"
 msgstr "libical を使用するプログラム向けのサンプルソースコード"
 
 #. tumbleweed/libinfinity/libinfinity-lang/summary
-#, fuzzy
-#| msgid "Languages for package libinfinity"
 msgid "Translations for package libinfinity"
-msgstr "libinfinity 向け言語パッケージ"
+msgstr "libinfinity 向け翻訳パッケージ"
 
 #. tumbleweed/libinfinity/libinfinity-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libinfinity\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libinfinity\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libiptcdata/libiptcdata-lang/summary
-#, fuzzy
-#| msgid "Languages for package libiptcdata"
 msgid "Translations for package libiptcdata"
-msgstr "libiptcdata 向け言語パッケージ"
+msgstr "libiptcdata 向け翻訳パッケージ"
 
 #. tumbleweed/libiptcdata/libiptcdata-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libiptcdata\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libiptcdata\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkcddb/libkcddb-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkcddb"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkcddb 向け翻訳パッケージ"
 
 #. tumbleweed/libkcddb/libkcddb-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkcddb\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkcddb\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkcompactdisc/libkcompactdisc-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkcompactdisc"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkcompactdisc 向け翻訳パッケージ"
 
 #. tumbleweed/libkcompactdisc/libkcompactdisc-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkcompactdisc\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkcompactdisc\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkdegames/libkdegames-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkdegames"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkdegames 向け翻訳パッケージ"
 
 #. tumbleweed/libkdegames/libkdegames-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkdegames\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkdegames\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkdepim/libkdepim-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkdepim"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkdepim 向け翻訳パッケージ"
 
 #. tumbleweed/libkdepim/libkdepim-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkdepim\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkdepim\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkeduvocdocument/libkeduvocdocument-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkeduvocdocument"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkeduvocdocument 向け翻訳パッケージ"
 
 #. tumbleweed/libkeduvocdocument/libkeduvocdocument-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkeduvocdocument\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkeduvocdocument\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkgapi/libkgapi-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkgapi"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkgapi 向け翻訳パッケージ"
 
 #. tumbleweed/libkgapi/libkgapi-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkgapi\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkgapi\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkgeomap/libkgeomap-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkgeomap"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkgeomap 向け翻訳パッケージ"
 
 #. tumbleweed/libkgeomap/libkgeomap-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkgeomap\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkgeomap\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkleo/libkleo-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkleo"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkleo 向け翻訳パッケージ"
 
 #. tumbleweed/libkleo/libkleo-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkleo\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkleo\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkmahjongg/libkmahjongg-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkmahjongg"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkmahjongg 向け翻訳パッケージ"
 
 #. tumbleweed/libkmahjongg/libkmahjongg-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkmahjongg\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkmahjongg\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkomparediff2/libkomparediff2-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libkomparediff2"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libkomparediff2 向け翻訳パッケージ"
 
 #. tumbleweed/libkomparediff2/libkomparediff2-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libkomparediff2\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libkomparediff2\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libksane/libksane-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libksane"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libksane 向け翻訳パッケージ"
 
 #. tumbleweed/libksane/libksane-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libksane\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libksane\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libksieve/libksieve-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libksieve"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libksieve 向け翻訳パッケージ"
 
 #. tumbleweed/libksieve/libksieve-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libksieve\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libksieve\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libksysguard5/libksysguard5-lang/summary
 msgid "Translations for package libksysguard5"
@@ -34388,16 +33767,12 @@ msgid "Provides translations for the \"libksysguard5\" package."
 msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libktorrent/libktorrent6-lang/summary
-#, fuzzy
-#| msgid "Languages for package libktorrent"
 msgid "Translations for package libktorrent"
 msgstr "libktorrent 向け言語パッケージ"
 
 #. tumbleweed/libktorrent/libktorrent6-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libktorrent\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libktorrent\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libkvkontakte/libkvkontakte-lang/summary
 #. leap/libkvkontakte/libkvkontakte-lang/summary
@@ -34476,40 +33851,28 @@ msgid "Javadoc for libloader."
 msgstr "libloader 向け Javadoc です。"
 
 #. tumbleweed/libmatekbd/libmatekbd-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libmatekbd"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libmatekbd 向け翻訳パッケージ"
 
 #. tumbleweed/libmatekbd/libmatekbd-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libmatekbd\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libmatekbd\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libmatemixer/libmatemixer-lang/summary
-#, fuzzy
-#| msgid "Languages for package libmatemixer"
 msgid "Translations for package libmatemixer"
-msgstr "libmatemixer 向け言語パッケージ"
+msgstr "libmatemixer 向け翻訳パッケージ"
 
 #. tumbleweed/libmatemixer/libmatemixer-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libmatemixer\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libmatemixer\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libmateweather/libmateweather-lang/summary
-#, fuzzy
-#| msgid "Languages for package libmateweather"
 msgid "Translations for package libmateweather"
-msgstr "libmateweather 向け言語パッケージ"
+msgstr "libmateweather 向け翻訳パッケージ"
 
 #. tumbleweed/libmateweather/libmateweather-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libmateweather\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libmateweather\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libmirage/libmirage-data/summary
 #. leap/libmirage/libmirage-data/summary
@@ -34613,26 +33976,22 @@ msgstr ""
 "このパッケージには、 liborigin 向けのドキュメンテーションが含まれています。"
 
 #. tumbleweed/libosinfo/libosinfo-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libosinfo"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libosinfo 向け翻訳パッケージ"
 
 #. tumbleweed/libosinfo/libosinfo-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libosinfo\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libosinfo\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libosmo-dsp/libosmo-dsp-doc/summary
 #. leap/libosmo-dsp/libosmo-dsp-doc/summary
 msgid "SDR DSP primitives - Documentation"
-msgstr ""
+msgstr "SDR DSP プリミティブ - ドキュメンテーション"
 
 #. tumbleweed/libosmo-dsp/libosmo-dsp-doc/description
 #. leap/libosmo-dsp/libosmo-dsp-doc/description
 msgid "A library with SDR DSP primitives headers - Documentation"
-msgstr ""
+msgstr "SDR DSP プリミティブヘッダのライブラリ - ドキュメンテーション"
 
 #. tumbleweed/libpagemaker/libpagemaker-devel-doc/summary
 #. leap/libpagemaker/libpagemaker-devel-doc/summary
@@ -34661,59 +34020,40 @@ msgstr ""
 "ンファイルが含まれています。"
 
 #. tumbleweed/libpeas/libpeas-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libpeas"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libpeas 向け翻訳パッケージ"
 
 #. tumbleweed/libpeas/libpeas-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libpeas\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libpeas\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libpqxx/libpqxx-doc/summary
-#, fuzzy
-#| msgid "Documentation for libxcb"
 msgid "Documentation for libpqxx"
-msgstr "libxcb 向けドキュメンテーション"
+msgstr "libpqxx 向けドキュメンテーション"
 
 #. tumbleweed/libpqxx/libpqxx-doc/description
-#, fuzzy
-#| msgid ""
-#| "This package contains header files and documentation needed for writing C+"
-#| "+ programs that connect to a PostgreSQL database."
 msgid ""
 "This package contains documentation needed for writing C++ programs that "
 "connect to a PostgreSQL database."
 msgstr ""
-"このパッケージには、 PostgreSQL データベースに接続するプログラムについて、こ"
-"れを C++ 言語で記述する際に必要な、ヘッダファイルとドキュメンテーションが含ま"
-"れています。"
+"このパッケージには、 PostgreSQL データベースに接続するプログラムについて、これを C++ "
+"言語で記述する際に必要なドキュメンテーションが含まれています。"
 
 #. tumbleweed/libpwquality/libpwquality-lang/summary
-#, fuzzy
-#| msgid "Languages for package libpwquality"
 msgid "Translations for package libpwquality"
-msgstr "libpwquality 向け言語パッケージ"
+msgstr "libpwquality 向け翻訳パッケージ"
 
 #. tumbleweed/libpwquality/libpwquality-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libpwquality\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libpwquality\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libquicktime/libquicktime-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libquicktime"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libquicktime 向け翻訳パッケージ"
 
 #. tumbleweed/libquicktime/libquicktime-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libquicktime\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libquicktime\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libqxmpp/libqxmpp-doc/summary
 #. tumbleweed/libqxmpp-qt5/libqxmpp-qt5-doc/summary
@@ -34812,16 +34152,12 @@ msgstr ""
 "す。"
 
 #. tumbleweed/libsecret/libsecret-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libsecret"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libsecret 向け翻訳パッケージ"
 
 #. tumbleweed/libsecret/libsecret-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libsecret\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libsecret\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libserializer/summary
 #. leap/libserializer/summary
@@ -34894,28 +34230,20 @@ msgstr ""
 "libsocialweb で Web サービスにアクセスするのに必要なものです。"
 
 #. tumbleweed/libsocialweb/libsocialweb-lang/summary
-#, fuzzy
-#| msgid "Languages for package libsocialweb"
 msgid "Translations for package libsocialweb"
-msgstr "libsocialweb 向け言語パッケージ"
+msgstr "libsocialweb 向け翻訳パッケージ"
 
 #. tumbleweed/libsocialweb/libsocialweb-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libsocialweb\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libsocialweb\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libsoup/libsoup-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libsoup"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libsoup 向け翻訳パッケージ"
 
 #. tumbleweed/libsoup/libsoup-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libsoup\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libsoup\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libstaroffice/libstaroffice-devel-doc/summary
 #. leap/libstaroffice/libstaroffice-devel-doc/summary
@@ -35044,16 +34372,12 @@ msgstr ""
 "ないながらも、機能性を損なわないものになることを目指して作られています。"
 
 #. tumbleweed/libuser/libuser-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libuser"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libuser 向け翻訳パッケージ"
 
 #. tumbleweed/libuser/libuser-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libuser\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libuser\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libvisio/libvisio-devel-doc/summary
 #. leap/libvisio/libvisio-devel-doc/summary
@@ -35082,28 +34406,20 @@ msgstr ""
 "メントが含まれています。"
 
 #. tumbleweed/libwnck/libwnck-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libwnck"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libwnck 向け翻訳パッケージ"
 
 #. tumbleweed/libwnck/libwnck-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libwnck\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libwnck\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libwnck2/libwnck2-lang/summary
-#, fuzzy
-#| msgid "Translations for package libksysguard5"
 msgid "Translations for package libwnck2"
-msgstr "libksysguard5 向け翻訳パッケージ"
+msgstr "libwnck2 向け翻訳パッケージ"
 
 #. tumbleweed/libwnck2/libwnck2-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"libksysguard5\" package."
 msgid "Provides translations for the \"libwnck2\" package."
-msgstr "\"libksysguard5\" パッケージ向けの翻訳データです。"
+msgstr "\"libwnck2\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/libwpd/libwpd-devel-doc/summary
 #. leap/libwpd/libwpd-devel-doc/summary
@@ -35308,20 +34624,13 @@ msgstr ""
 
 #. tumbleweed/libzmf/libzmf-devel-doc/summary
 #. leap/libzmf/libzmf-devel-doc/summary
-#, fuzzy
-#| msgid "Documentation of libhubbub API"
 msgid "Documentation of libzmf API"
-msgstr "libhubbub API 向けドキュメンテーション"
+msgstr "libzmf API 向けドキュメンテーション"
 
 #. tumbleweed/libzmf/libzmf-devel-doc/description
 #. leap/libzmf/libzmf-devel-doc/description
-#, fuzzy
-#| msgid ""
-#| "The libhubbub-doc package contains documentation files for libhubbub."
 msgid "The libzmf-doc package contains documentation files for libzmf."
-msgstr ""
-"libhubbub-doc パッケージには、 libhubbub に対するドキュメンテーションファイル"
-"が含まれています。"
+msgstr "libzmf-doc パッケージには、 libzmf に対するドキュメンテーションファイルが含まれています。"
 
 #. tumbleweed/libzypp-plugin-appdata/summary
 #. leap/libzypp-plugin-appdata/summary
@@ -35330,25 +34639,13 @@ msgstr "libzypp を拡張して AppStream メタデータを扱う仕組み"
 
 #. tumbleweed/libzypp-plugin-appdata/description
 #. leap/libzypp-plugin-appdata/description
-#, fuzzy
-#| msgid ""
-#| "This plugin extends libzypp to install AppStream metadata, as extracted "
-#| "from the repository metadata, onto the file system in order to be picked "
-#| "up by software centers.\n"
-#| "\n"
-#| "At this moment, gnome-software is the only known implementation making "
-#| "use of it."
 msgid ""
 "This plugin extends libzypp to install AppStream metadata, as extracted from "
 "the repository metadata, onto the file system in order to be picked up by "
 "software centers."
 msgstr ""
-"個のプラグインは libzypp を拡張して AppStream のメタデータをインストールする"
-"ことができます。このメタデータは、リポジトリのメタデータから取り出したものと"
-"同じ形態で解釈され、ソフトウエアセンターからファイルシステム内にピックアップ"
-"できるようになっています。\n"
-"\n"
-"現時点での既知の実装は、 gnome-software のみです。"
+"個のプラグインは libzypp を拡張して AppStream のメタデータをインストールすることができます。このメタデータは、リポジトリのメタデータか"
+"ら取り出したものと同じ形態で解釈され、ソフトウエアセンターからファイルシステム内にピックアップできるようになっています。"
 
 #. tumbleweed/libmateweather/mateweather-common/summary
 #. leap/libmateweather/mateweather-common/summary
@@ -35420,23 +34717,14 @@ msgid "Python3 bindings for libproxy"
 msgstr "libproxy 向け Python3 バインディング"
 
 #. tumbleweed/librsvg/rsvg-thumbnailer/summary
-#, fuzzy
-#| msgid "SVG View using the GNOME Render SVG library"
 msgid "SVG thumbnailer using the GNOME Render SVG library"
-msgstr "GNOME 描画 SVG ライブラリを使用する SVG ビュー"
+msgstr "GNOME 描画 SVG ライブラリを使用する SVG サムネイル作成"
 
 #. tumbleweed/librsvg/rsvg-thumbnailer/description
-#, fuzzy
-#| msgid ""
-#| "This package contains a library to render SVG (scalable vector graphics) "
-#| "data. This format has been specified by the W3C (see http://www.w3c.org)."
 msgid ""
 "This package contains a thumbnailer to render SVG (scalable vector graphics) "
 "data."
-msgstr ""
-"このパッケージには、 SVG (Scalable Vector Graphics) データを描画するための ラ"
-"イブラリが含まれています。このフォーマットは W3C で規定されたものです (詳しく"
-"は http://www.w3c.org をご覧ください) 。"
+msgstr "このパッケージには、 SVG (Scalable Vector Graphics) データを描画するためのサムネイル生成が含まれています。"
 
 #. tumbleweed/libguestfs/guestfs-data/summary
 #. leap/libguestfs/guestfs-data/summary
@@ -35620,10 +34908,8 @@ msgstr ""
 
 #. tumbleweed/libpsm2/libpsm2-2/summary
 #. leap/libpsm2/libpsm2-2/summary
-#, fuzzy
-#| msgid "Runtime PSM library"
 msgid "Intel PSM Messaging API library"
-msgstr "ランタイム PSM ライブラリ"
+msgstr "Intel PSM メッセージング API ライブラリ"
 
 #. tumbleweed/libpsm2/libpsm2-2/description
 #. leap/libpsm2/libpsm2-2/description
@@ -35639,28 +34925,22 @@ msgstr ""
 #. tumbleweed/libpsm2/libpsm2-compat/summary
 #. leap/libpsm2/libpsm2-compat/summary
 msgid "Compatibility library providing the old PSM API/ABI"
-msgstr ""
+msgstr "古い PSM API/ABI を提供する互換性ライブラリ"
 
 #. tumbleweed/libpsm2/libpsm2-compat/description
 #. leap/libpsm2/libpsm2-compat/description
-#, fuzzy
-#| msgid "Support for MPIs linked with PSM versions < 2"
 msgid "Support for MPIs linked with PSM versions < 2."
-msgstr "PSM バージョン < 2 でコンパイルされた MPI 向けサポート"
+msgstr "PSM バージョン < 2 でコンパイルされた MPI 向けサポートです。"
 
 #. tumbleweed/libpsm2/libpsm2-devel/summary
 #. leap/libpsm2/libpsm2-devel/summary
-#, fuzzy
-#| msgid "Development files for Intel PSM"
 msgid "Development files for the Intel PSM Messaging API"
-msgstr "Intel PSM 向け開発用ファイル"
+msgstr "Intel PSM メッセージング API 向け開発用ファイル"
 
 #. tumbleweed/libpsm2/libpsm2-devel/description
 #. leap/libpsm2/libpsm2-devel/description
-#, fuzzy
-#| msgid "Development files for the libpsm2 library"
 msgid "Development files for the libpsm2 library."
-msgstr "libpsm2 ライブラリ向け開発用ファイル"
+msgstr "libpsm2 ライブラリ向け開発用ファイルです。"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-libxl/summary
 #. leap/libvirt/libvirt-daemon-driver-libxl/summary
@@ -35678,23 +34958,15 @@ msgstr ""
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-rbd/summary
 #. leap/libvirt/libvirt-daemon-driver-storage-rbd/summary
-#, fuzzy
-#| msgid "Storage driver plugin for the libvirtd daemon"
 msgid "Storage driver plugin for rbd"
-msgstr "libvirtd デーモン向けストレージドライバプラグイン"
+msgstr "rbd 向けストレージドライバプラグイン"
 
 #. tumbleweed/libvirt/libvirt-daemon-driver-storage-rbd/description
 #. leap/libvirt/libvirt-daemon-driver-storage-rbd/description
-#, fuzzy
-#| msgid ""
-#| "The storage driver plugin for the libvirtd daemon, providing an "
-#| "implementation of the storage APIs using LVM, iSCSI, parted and more."
 msgid ""
 "The storage driver backend adding implementation of the storage APIs for rbd "
 "volumes using the ceph protocol."
-msgstr ""
-"libvirtd デーモン向けのストレージドライバプラグインです。LVM や iSCSI, "
-"parted などのストレージ API の実装を提供しています。"
+msgstr "このストレージドライババックエンドは、 ceph プロトコルを利用する rbd ボリュームに対して、ストレージ API の実装を提供します。"
 
 #. tumbleweed/libvirt/libvirt-daemon-xen/summary
 #. leap/libvirt/libvirt-daemon-xen/summary
@@ -35781,10 +35053,8 @@ msgstr ""
 
 #. tumbleweed/virt-v2v/summary
 #. leap/libguestfs/virt-v2v/summary
-#, fuzzy
-#| msgid "Convert a physical machine to run on KVM"
 msgid "Convert a virtual machine to run on KVM"
-msgstr "物理マシンを KVM 上のマシンに変換するライブラリ"
+msgstr "仮装マシンを KVM 上のマシンに変換するライブラリ"
 
 #. leap/libbonobo/libbonobo-lang/summary
 msgid "Languages for package libbonobo"
@@ -35963,16 +35233,12 @@ msgid "Provides translations to the package libgpod"
 msgstr "libgpod パッケージ向けの翻訳データです。"
 
 #. leap/libgravatar/libgravatar-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgdata"
 msgid "Languages for package libgravatar"
-msgstr "libgdata 向け言語パッケージ"
+msgstr "libgravatar 向け言語パッケージ"
 
 #. leap/libgravatar/libgravatar-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libgdata"
 msgid "Provides translations to the package libgravatar"
-msgstr "libgdata パッケージ向けの翻訳データです。"
+msgstr "libgravatar パッケージ向けの翻訳データです"
 
 #. leap/libgsasl/libgsasl-lang/summary
 msgid "Languages for package libgsasl"
@@ -36023,64 +35289,44 @@ msgid "Provides translations to the package libiptcdata"
 msgstr "libiptcdata パッケージ向けの翻訳データです。"
 
 #. leap/libkcddb/libkcddb-lang/summary
-#, fuzzy
-#| msgid "Languages for package libepc"
 msgid "Languages for package libkcddb"
-msgstr "libepc 向け言語パッケージ"
+msgstr "libkcddb 向け言語パッケージ"
 
 #. leap/libkcddb/libkcddb-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libepc"
 msgid "Provides translations to the package libkcddb"
-msgstr "libepc パッケージ向けの翻訳データです。"
+msgstr "libkcddb パッケージ向けの翻訳データです"
 
 #. leap/libkcompactdisc/libkcompactdisc-lang/summary
-#, fuzzy
-#| msgid "Languages for package libpeas"
 msgid "Languages for package libkcompactdisc"
-msgstr "libpeas 向け言語パッケージ"
+msgstr "libkcompactdisc 向け言語パッケージ"
 
 #. leap/libkcompactdisc/libkcompactdisc-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libpeas"
 msgid "Provides translations to the package libkcompactdisc"
-msgstr "upower パッケージ向けの翻訳データです。"
+msgstr "libkcompactdisc パッケージ向けの翻訳データです"
 
 #. leap/libkdegames/libkdegames-lang/summary
-#, fuzzy
-#| msgid "Languages for package libpeas"
 msgid "Languages for package libkdegames"
-msgstr "libpeas 向け言語パッケージ"
+msgstr "libkdegames 向け言語パッケージ"
 
 #. leap/libkdegames/libkdegames-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libpeas"
 msgid "Provides translations to the package libkdegames"
-msgstr "upower パッケージ向けの翻訳データです。"
+msgstr "libkdegames パッケージ向けの翻訳データです"
 
 #. leap/libkdepim/libkdepim-lang/summary
-#, fuzzy
-#| msgid "Languages for package libkgapi"
 msgid "Languages for package libkdepim"
-msgstr "libkgapi 向け言語パッケージ"
+msgstr "libkdepim 向け言語パッケージ"
 
 #. leap/libkdepim/libkdepim-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libkgapi"
 msgid "Provides translations to the package libkdepim"
-msgstr "libkgapi 向けの翻訳データです。"
+msgstr "libkdepim 向けの翻訳データです"
 
 #. leap/libkeduvocdocument/libkeduvocdocument-lang/summary
-#, fuzzy
-#| msgid "Languages for package libktorrent"
 msgid "Languages for package libkeduvocdocument"
-msgstr "libktorrent 向け言語パッケージ"
+msgstr "libkeduvocdocument 向け言語パッケージ"
 
 #. leap/libkeduvocdocument/libkeduvocdocument-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libktorrent"
 msgid "Provides translations to the package libkeduvocdocument"
-msgstr "libktorrent パッケージ向けの翻訳データです。"
+msgstr "libkeduvocdocument パッケージ向けの翻訳データです"
 
 #. leap/libkgapi/libkgapi-lang/summary
 msgid "Languages for package libkgapi"
@@ -36091,76 +35337,52 @@ msgid "Provides translations to the package libkgapi"
 msgstr "libkgapi 向けの翻訳データです。"
 
 #. leap/libkgeomap/libkgeomap-lang/summary
-#, fuzzy
-#| msgid "Languages for package libkgapi"
 msgid "Languages for package libkgeomap"
-msgstr "libkgapi 向け言語パッケージ"
+msgstr "libkgeomap 向け言語パッケージ"
 
 #. leap/libkgeomap/libkgeomap-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libkgapi"
 msgid "Provides translations to the package libkgeomap"
-msgstr "libkgapi 向けの翻訳データです。"
+msgstr "libkgeomap 向けの翻訳データです"
 
 #. leap/libkleo/libkleo-lang/summary
-#, fuzzy
-#| msgid "Languages for package libepc"
 msgid "Languages for package libkleo"
-msgstr "libepc 向け言語パッケージ"
+msgstr "libkleo 向け言語パッケージ"
 
 #. leap/libkleo/libkleo-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libepc"
 msgid "Provides translations to the package libkleo"
-msgstr "libepc パッケージ向けの翻訳データです。"
+msgstr "libkleo パッケージ向けの翻訳データです"
 
 #. leap/libkmahjongg/libkmahjongg-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgarcon"
 msgid "Languages for package libkmahjongg"
-msgstr "libgarcon 向け言語パッケージ"
+msgstr "libkmahjongg 向け言語パッケージ"
 
 #. leap/libkmahjongg/libkmahjongg-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libgarcon"
 msgid "Provides translations to the package libkmahjongg"
-msgstr "libgarcon パッケージ向けの翻訳データです。"
+msgstr "libkmahjongg パッケージ向けの翻訳データです"
 
 #. leap/libkomparediff2/libkomparediff2-lang/summary
-#, fuzzy
-#| msgid "Languages for package libgnomeui"
 msgid "Languages for package libkomparediff2"
-msgstr "libgnomeui 向け言語パッケージ"
+msgstr "libkomparediff2 向け言語パッケージ"
 
 #. leap/libkomparediff2/libkomparediff2-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libgnomeui"
 msgid "Provides translations to the package libkomparediff2"
-msgstr "libgnomeui パッケージ向けの翻訳データです。"
+msgstr "libkomparediff2 パッケージ向けの翻訳データです"
 
 #. leap/libksane/libksane-lang/summary
-#, fuzzy
-#| msgid "Languages for package libuser"
 msgid "Languages for package libksane"
-msgstr "libuser 向け言語パッケージ"
+msgstr "libksane 向け言語パッケージ"
 
 #. leap/libksane/libksane-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libuser"
 msgid "Provides translations to the package libksane"
-msgstr "libuser パッケージ向けの翻訳データです。"
+msgstr "libksane パッケージ向けの翻訳データです"
 
 #. leap/libksieve/libksieve-lang/summary
-#, fuzzy
-#| msgid "Languages for package libsecret"
 msgid "Languages for package libksieve"
-msgstr "libsecret 向け言語パッケージ"
+msgstr "libksieve 向け言語パッケージ"
 
 #. leap/libksieve/libksieve-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package libsecret"
 msgid "Provides translations to the package libksieve"
-msgstr "libsecret パッケージ向けの翻訳データです。"
+msgstr "libksieve パッケージ向けの翻訳データです"
 
 #. leap/libksysguard5/libksysguard5-lang/summary
 msgid "Languages for package libksysguard5"
@@ -36331,16 +35553,10 @@ msgid "The SNIA HBA API library"
 msgstr "SNIA HBA API ライブラリ"
 
 #. leap/libkcompactdisc/libKF5CompactDisc5/description
-#, fuzzy
-#| msgid ""
-#| "libworkman is a multi-plaform CD-Player library for creating various CD-"
-#| "Player-UIs."
 msgid ""
 "This is the multi-platform CD-Player library for creating various CD-Player-"
 "UIs."
-msgstr ""
-"libworkman は、様々な CD プレーヤユーザインターフェイスを作成するための、複数"
-"プラットフォーム対応の CD プレーヤライブラリです。"
+msgstr "このパッケージは、様々な CD プレーヤのユーザインターフェイスを作成するための、複数プラットフォーム対応 CD プレーヤライブラリです。"
 
 #. leap/libSOIL/libSOIL-devel/summary
 msgid "Libsoil development files"
@@ -37189,10 +36405,14 @@ msgid ""
 "\n"
 "Libraries, includes, etc. to compile with the libosinfo library"
 msgstr ""
+"libosinfo は仮想化プロビジョニングツールで、使用されているハイパーバイザやオペレーティングシステムの組み合わせに対して、最適なデバイス設定を判断"
+"させるためのライブラリです。\n"
+"\n"
+"libosinfo ライブラリを利用してコンパイルするためのライブラリとヘッダファイル等です"
 
 #. leap/libosinfo/libosinfo-vala/summary
 msgid "Vala bindings"
-msgstr ""
+msgstr "Vala バインディング"
 
 #. leap/libosinfo/libosinfo-vala/description
 msgid ""
@@ -37202,6 +36422,10 @@ msgid ""
 "\n"
 "This package provides the Vala bindings for libosinfo library."
 msgstr ""
+"libosinfo は仮想化プロビジョニングツールで、使用されているハイパーバイザやオペレーティングシステムの組み合わせに対して、最適なデバイス設定を判断"
+"させるためのライブラリです。\n"
+"\n"
+"このパッケージには、 libosinfo ライブラリ向けの Vala バインディングが含まれています。"
 
 #. leap/libplatform/libplatform-devel/description
 msgid "Development files for platform support library used by libCEC."
@@ -38289,19 +37513,13 @@ msgstr ""
 "このパッケージには、 vaapi ライブラリまわりのツール集が含まれています。"
 
 #. leap/libguestfs/virt-v2v/description
-#, fuzzy
-#| msgid ""
-#| "virt-p2v is a tool for converting physical machines into libvirt-managed "
-#| "KVM machines. It can import a variety of guest operating systems from "
-#| "libvirt-managed hosts."
 msgid ""
 "virt-v2v is a tool for converting and importing virtual machines to libvirt-"
 "managed KVM. It can import a variety of guest operating systems from libvirt-"
 "managed hosts."
 msgstr ""
-"virt-p2v は物理マシンを libvirt が管理する KVM マシンに変換するためのツールで"
-"す。 libvirt が管理するホストから、様々なゲストオペレーティングシステムを取り"
-"込むことができます。"
+"virt-v2v は仮想マシンを libvirt が管理する KVM マシンに変換したり、取り込んだりするためのツールです。 libvirt "
+"が管理するホストから、様々なゲストオペレーティングシステムを取り込むことができます。"
 
 #. leap/libvpx/vpx-tools/summary
 msgid "VP8 codec library - Utilities"
