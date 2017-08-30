@@ -14,31 +14,9 @@ for distro in tumbleweed leap; do
   esac
 
 ## get package descriptions
-  curl -s http://downloadcontent.opensuse.org/$URL/repo/oss/suse/setup/descr/packages.en.gz | gzip -c -d > $distro-packages.en
-  curl -s http://downloadcontent.opensuse.org/$URL/repo/oss/suse/setup/descr/packages.gz | gzip -c -d > $distro-packages
-  echo "Generating $distro lists..."
-  list=$distro;
-  {
-  IFS=$'\n'
-  pkgnames=($(grep '=Pkg:' $list-packages|cut '-d ' -f2))
-  srcpkgnames=($(grep '=Src:' $list-packages|cut '-d ' -f2))
-  }
-  pkg_num=${#pkgnames[*]}
+  echo "Generating POT file for ${distro}..."
+  python3 ../50-tools/repomd2gettext.py http://download.opensuse.org/${URL}/repo/oss/suse "${distro}" | msguniq > "${distro}-packages._pot"
 
-  rm -f $list-*.list
-  echo -n "" > pkg_$list.list
-  echo -n "" > src_$list.list
-  for ((i=0;i<$pkg_num;i++)); do
-    echo "${srcpkgnames[$i]}" >> src_$list.list;
-    echo "${pkgnames[$i]}" >> pkg_$list.list;
-  done
-  sort -fu src_$list.list > $list.new && mv $list.new src_$list.list
-  sort -fu pkg_$list.list > $list.new && mv $list.new pkg_$list.list
-  echo "$list has $(cat src_$list.list|wc -l) source packages with $(cat pkg_$list.list|wc -l) packages"
-
-  echo -n "Converting $distro: "
-  perl ../50-tools/repo2gettext.pl pkg_$list.list $distro-packages $distro-packages.en $distro > $distro-packages._pot
-  #msguniq -o $distro-packages._pot $distro-packages._pot
   echo "OK"
 done
 
