@@ -16,11 +16,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2017-07-26 00:23:10\n"
+"POT-Creation-Date: 2018-03-21 10:09+0000\n"
 "PO-Revision-Date: 2017-08-18 15:11+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
-"Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n"
-"/patterns-master/cs/>\n"
+"Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
+"patterns-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,49 +31,22 @@ msgstr ""
 #. tumbleweed/dhcp/dhcp-doc/summary
 #. tumbleweed/patterns-desktop/patterns-desktop-books/summary
 #. leap/dhcp/dhcp-doc/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-books/summary
+#. leap/patterns-desktop/patterns-desktop-books/summary
 msgid "Documentation"
 msgstr "Dokumentace"
 
-#. tumbleweed/patterns-base/patterns-base-32bit/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-32bit/summary
-msgid "32-Bit Runtime Environment"
-msgstr "32bitový běhový systém"
-
-#. tumbleweed/patterns-base/patterns-base-32bit/description
-#. leap/patterns-openSUSE/patterns-openSUSE-32bit/description
-msgid ""
-"This pattern installs the 32-bit variant of all selected patterns, allowing "
-"you to execute 32-bit software."
-msgstr ""
-"Tímto profilem se nainstalují 32bitové verze všech zvolených profilů. Lze "
-"tak spouštět 32bitový software."
-
-#. tumbleweed/patterns-base/patterns-base-64bit/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-64bit/summary
-msgid "64-Bit Runtime Environment"
-msgstr "64 bitový běhový systém"
-
-#. tumbleweed/patterns-base/patterns-base-64bit/description
-#. leap/patterns-openSUSE/patterns-openSUSE-64bit/description
-msgid ""
-"This pattern installs the 64-bit variant of all selected patterns, allowing "
-"you to execute 64-bit software."
-msgstr ""
-"Tímto profilem se nainstalují 64bitové verze všech zvolených profilů. Lze "
-"tak spouštět 64bitový software."
-
 #. tumbleweed/patterns-base/patterns-base-apparmor/summary
 #. tumbleweed/patterns-base/patterns-base-apparmor_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-apparmor/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-apparmor_opt/summary
+#. leap/patterns-base/patterns-base-apparmor/summary
+#. leap/patterns-base/patterns-base-apparmor-32bit/summary
+#. leap/patterns-base/patterns-base-apparmor_opt/summary
 msgid "AppArmor"
 msgstr "AppArmor"
 
 #. tumbleweed/patterns-base/patterns-base-apparmor/description
 #. tumbleweed/patterns-base/patterns-base-apparmor_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-apparmor/description
-#. leap/patterns-openSUSE/patterns-openSUSE-apparmor_opt/description
+#. leap/patterns-base/patterns-base-apparmor/description
+#. leap/patterns-base/patterns-base-apparmor_opt/description
 msgid ""
 "AppArmor is an application security framework that provides mandatory access "
 "control for programs. It protects from exploitation of software flaws and "
@@ -89,17 +62,18 @@ msgstr ""
 #. tumbleweed/patterns-base/patterns-base-base/summary
 #. tumbleweed/patterns-base/patterns-base-minimal_base/summary
 #. tumbleweed/patterns-base/patterns-base-minimal_base_conflicts/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-base/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-minimal_base/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-minimal_base-conflicts/summary
+#. leap/patterns-base/patterns-base-base/summary
+#. leap/patterns-base/patterns-base-base-32bit/summary
+#. leap/patterns-base/patterns-base-minimal_base/summary
+#. leap/patterns-base/patterns-base-minimal_base-32bit/summary
 msgid "Base System"
 msgstr "Základní systém"
 
 #. tumbleweed/patterns-base/patterns-base-base/description
+#. tumbleweed/patterns-base/patterns-base-basesystem/description
 #. tumbleweed/patterns-base/patterns-base-minimal_base_conflicts/description
-#. leap/patterns-openSUSE/patterns-openSUSE-base/description
-#. leap/patterns-openSUSE/patterns-openSUSE-minimal_base/description
-#. leap/patterns-openSUSE/patterns-openSUSE-minimal_base-conflicts/description
+#. leap/patterns-base/patterns-base-base/description
+#. leap/patterns-base/patterns-base-basesystem/description
 msgid ""
 "This is the base runtime system.  It contains only a minimal multiuser "
 "booting system. For running on real hardware, you need to add additional "
@@ -109,15 +83,20 @@ msgstr ""
 "spustitelný systém. Pro běh skutečného hardwaru musíte doinstalovat další "
 "balíčky a profily."
 
+#. tumbleweed/patterns-base/patterns-base-basesystem/summary
+#. leap/patterns-base/patterns-base-basesystem/summary
+msgid "Base System (alias pattern for base)"
+msgstr ""
+
 # 22756 AttribValues/label
 #. tumbleweed/patterns-base/patterns-base-console/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-console/summary
+#. leap/patterns-base/patterns-base-console/summary
 msgid "Console Tools"
 msgstr "Textové nástroje"
 
 # 53834 AttribValues/description
 #. tumbleweed/patterns-base/patterns-base-console/description
-#. leap/patterns-openSUSE/patterns-openSUSE-console/description
+#. leap/patterns-base/patterns-base-console/description
 msgid ""
 "Applications useful for those using the console and no graphical desktop "
 "environment."
@@ -125,21 +104,23 @@ msgstr "Aplikace užitečné pro uživatele nepoužívající grafické prostře
 
 #. tumbleweed/patterns-base/patterns-base-enhanced_base/summary
 #. tumbleweed/patterns-base/patterns-base-enhanced_base_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-enhanced_base/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-enhanced_base_opt/summary
+#. leap/patterns-base/patterns-base-enhanced_base/summary
+#. leap/patterns-base/patterns-base-enhanced_base-32bit/summary
+#. leap/patterns-base/patterns-base-enhanced_base_opt/summary
 msgid "Enhanced Base System"
 msgstr "Rozšířený základní systém"
 
 #. tumbleweed/patterns-base/patterns-base-enhanced_base/description
 #. tumbleweed/patterns-base/patterns-base-enhanced_base_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-enhanced_base/description
-#. leap/patterns-openSUSE/patterns-openSUSE-enhanced_base_opt/description
+#. leap/patterns-base/patterns-base-enhanced_base/description
+#. leap/patterns-base/patterns-base-enhanced_base_opt/description
 msgid ""
 "This is the enhanced base runtime system with lots of convenience packages."
 msgstr ""
 "Toto je rozšíření základního běhového systému s řadou obvyklých balíčků."
 
 #. tumbleweed/patterns-base/patterns-base-minimal_base/description
+#. leap/patterns-base/patterns-base-minimal_base/description
 msgid ""
 "This is the minimal openSUSE runtime system. It is really a minimal system, "
 "you can login and a shell will be started, that's all. It is intended as "
@@ -149,14 +130,25 @@ msgstr ""
 "můžete se přihlásit a bude spuštěna příkazová řádka, toť vše. Je zamýšlen "
 "jako základ pro aplikace."
 
+#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/summary
+#. leap/patterns-base/patterns-base-readonly_root_tools/summary
+msgid "Read-Only Root Filesystem Tools"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/description
+#. leap/patterns-base/patterns-base-readonly_root_tools/description
+msgid "Tools & Update Stack for systems with a read-only root filesystem."
+msgstr ""
+
 # 55598 AttribValues/label
 #. tumbleweed/patterns-base/patterns-base-sw_management/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-sw_management/summary
+#. leap/patterns-base/patterns-base-sw_management/summary
+#. leap/patterns-base/patterns-base-sw_management-32bit/summary
 msgid "Software Management"
 msgstr "Správa softwaru"
 
 #. tumbleweed/patterns-base/patterns-base-sw_management/description
-#. leap/patterns-openSUSE/patterns-openSUSE-sw_management/description
+#. leap/patterns-base/patterns-base-sw_management/description
 msgid ""
 "This pattern provides a graphical application and a command line tool for "
 "keeping your system up to date."
@@ -165,12 +157,12 @@ msgstr ""
 "pro správu softwaru."
 
 #. tumbleweed/patterns-base/patterns-base-update_test/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-update_test/summary
+#. leap/patterns-base/patterns-base-update_test/summary
 msgid "Tests for the Update Stack"
 msgstr "Testování aktualizace"
 
 #. tumbleweed/patterns-base/patterns-base-update_test/description
-#. leap/patterns-openSUSE/patterns-openSUSE-update_test/description
+#. leap/patterns-base/patterns-base-update_test/description
 msgid ""
 "Packages used for testing that the update stack works.  These tiny packages "
 "do not have any functionality themselves."
@@ -178,15 +170,19 @@ msgstr "Balíčky pro testování aktualizace. Tyto balíčky nemají žádnou f
 
 #. tumbleweed/patterns-base/patterns-base-x11/summary
 #. tumbleweed/patterns-base/patterns-base-x11_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-x11/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-x11_opt/summary
+#. leap/patterns-base/patterns-base-x11/summary
+#. leap/patterns-base/patterns-base-x11-32bit/summary
+#. leap/patterns-base/patterns-base-x11_enhanced/summary
+#. leap/patterns-base/patterns-base-x11_enhanced-32bit/summary
+#. leap/patterns-base/patterns-base-x11_opt/summary
 msgid "X Window System"
 msgstr "Systém X Window"
 
 #. tumbleweed/patterns-base/patterns-base-x11/description
 #. tumbleweed/patterns-base/patterns-base-x11_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-x11/description
-#. leap/patterns-openSUSE/patterns-openSUSE-x11_opt/description
+#. leap/patterns-base/patterns-base-x11/description
+#. leap/patterns-base/patterns-base-x11_enhanced/description
+#. leap/patterns-base/patterns-base-x11_opt/description
 msgid ""
 "The X Window System provides the only standard platform-independent "
 "networked graphical window system bridging the heterogeneous platforms in "
@@ -199,18 +195,999 @@ msgstr ""
 "noteboocích a PDA."
 
 #. tumbleweed/patterns-base/patterns-base-x86/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-x86/summary
 msgid "x86 Runtime Environment"
 msgstr "x86 běhové prostředí"
 
 #. tumbleweed/patterns-base/patterns-base-x86/description
-#. leap/patterns-openSUSE/patterns-openSUSE-x86/description
+#. leap/patterns-base/patterns-base-32bit/description
 msgid ""
 "This will install the 32-bit variant of all selected patterns. This allows "
 "to execute 32-bit software."
 msgstr ""
 "Tímto se nainstalují 32bitové verze všech zvolených profilů. Lze tak "
 "spouštět 32bitový software."
+
+#. tumbleweed/patterns-desktop/patterns-desktop-books/description
+#. leap/patterns-desktop/patterns-desktop-books/description
+msgid "Help and Documentation, various books."
+msgstr "Nápověda a dokumentace, různé knihy."
+
+#. tumbleweed/patterns-desktop/patterns-desktop-imaging/summary
+#. tumbleweed/patterns-desktop/patterns-desktop-imaging_opt/summary
+#. leap/patterns-desktop/patterns-desktop-imaging/summary
+#. leap/patterns-desktop/patterns-desktop-imaging_opt/summary
+msgid "Graphics"
+msgstr "Grafika"
+
+#. tumbleweed/patterns-desktop/patterns-desktop-imaging/description
+#. tumbleweed/patterns-desktop/patterns-desktop-imaging_opt/description
+#. leap/patterns-desktop/patterns-desktop-imaging/description
+#. leap/patterns-desktop/patterns-desktop-imaging_opt/description
+msgid "Handling of digital photos and graphics."
+msgstr "Práce s fotografiemi a grafikou."
+
+#. tumbleweed/patterns-desktop/patterns-desktop-laptop/summary
+#. leap/patterns-desktop/patterns-desktop-laptop/summary
+msgid "Laptop"
+msgstr "Notebook"
+
+#. tumbleweed/patterns-desktop/patterns-desktop-laptop/description
+#. leap/patterns-desktop/patterns-desktop-laptop/description
+msgid "Tools designed specifically for laptop computers."
+msgstr "Nástroje navržené pro práci s notebooky."
+
+#. tumbleweed/patterns-desktop/patterns-desktop-multimedia/summary
+#. tumbleweed/patterns-desktop/patterns-desktop-multimedia_opt/summary
+#. leap/patterns-desktop/patterns-desktop-multimedia/summary
+#. leap/patterns-desktop/patterns-desktop-multimedia_opt/summary
+msgid "Multimedia"
+msgstr "Multimédia"
+
+#. tumbleweed/patterns-desktop/patterns-desktop-multimedia/description
+#. tumbleweed/patterns-desktop/patterns-desktop-multimedia_opt/description
+#. leap/patterns-desktop/patterns-desktop-multimedia/description
+#. leap/patterns-desktop/patterns-desktop-multimedia_opt/description
+msgid ""
+"Multimedia players, sound editing tools, video and image manipulation "
+"applications."
+msgstr ""
+"Multimediální přehrávače, nástroje pro editaci zvuku, programy pro práci s "
+"obrázky a videem."
+
+#. tumbleweed/patterns-desktop/patterns-desktop-technical_writing/summary
+#. leap/patterns-desktop/patterns-desktop-technical_writing/summary
+msgid "Technical Writing"
+msgstr "Technické psaní"
+
+#. tumbleweed/patterns-desktop/patterns-desktop-technical_writing/description
+#. leap/patterns-desktop/patterns-desktop-technical_writing/description
+msgid "Authoring tools and editors for creating technical documentation."
+msgstr "Vývojové nástroje a editory pro tvorbu technické dokumentace."
+
+#. tumbleweed/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/summary
+#. leap/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/summary
+msgid "C/C++ Development"
+msgstr "Vývoj C/C++"
+
+#. tumbleweed/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/description
+#. leap/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/description
+msgid ""
+"Tools and libraries for software development using C/C++ and other "
+"derivative of the C programming language."
+msgstr ""
+"Nástroje a knihovny pro vývoj v C/C++ a jazycích odvozených od jazyka C."
+
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis/summary
+#. leap/patterns-devel-base/patterns-devel-base-devel_basis/summary
+msgid "Base Development"
+msgstr "Základní vývoj"
+
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis/description
+#. leap/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr "Minimální sada nástrojů potřebná pro kompilováni a linkování aplikací."
+
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+#. leap/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+msgid "Linux Kernel Development"
+msgstr "Vývoj linuxového jádra"
+
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/description
+#. leap/patterns-devel-base/patterns-devel-base-devel_kernel/description
+msgid "Tools for Linux kernel development."
+msgstr "Nástroje pro vývoj jádra."
+
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_rpm_build/summary
+#. leap/patterns-devel-base/patterns-devel-base-devel_rpm_build/summary
+msgid "RPM Build Environment"
+msgstr "Prostředí pro vytváření RPM"
+
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_rpm_build/description
+#. leap/patterns-devel-base/patterns-devel-base-devel_rpm_build/description
+msgid ""
+"Minimal set of tools and libraries for building packages using the RPM "
+"package manager."
+msgstr "Základní skupina nástrojů a knihoven pro vytváření RPM balíčků."
+
+# 54068 AttribValues/label
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_web/summary
+#. leap/patterns-devel-base/patterns-devel-base-devel_web/summary
+msgid "Web Development"
+msgstr "Webový vývoj"
+
+# 55869 AttribValues/description
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_web/description
+#. leap/patterns-devel-base/patterns-devel-base-devel_web/description
+msgid "Tools and libraries for Web application development."
+msgstr "Nástroje a knihovny pro vývoj webových aplikací."
+
+#. tumbleweed/patterns-devel-java/patterns-devel-java-devel_java/summary
+#. leap/patterns-devel-java/patterns-devel-java-devel_java/summary
+msgid "Java Development"
+msgstr "Vývoj v jazyku Java"
+
+# 53574 AttribValues/description
+#. tumbleweed/patterns-devel-java/patterns-devel-java-devel_java/description
+#. leap/patterns-devel-java/patterns-devel-java-devel_java/description
+msgid ""
+"Tools and libraries for software development using the Java programming "
+"language."
+msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Java."
+
+#. tumbleweed/patterns-devel-mono/patterns-devel-mono-devel_mono/summary
+#. leap/patterns-devel-mono/patterns-devel-mono-devel_mono/summary
+msgid ".NET Development"
+msgstr ".NET vývoj"
+
+# 53574 AttribValues/description
+#. tumbleweed/patterns-devel-mono/patterns-devel-mono-devel_mono/description
+#. leap/patterns-devel-mono/patterns-devel-mono-devel_mono/description
+msgid "Tools and libraries for .NET development using Mono."
+msgstr "Nástroje a knihovny potřebné pro vývoj v :NET pomocí Mono."
+
+#. tumbleweed/patterns-devel-osc/patterns-devel-osc-devel_osc_build/summary
+#. leap/patterns-devel-osc/patterns-devel-osc-devel_osc_build/summary
+msgid "Tools for Packaging with Open Build Service"
+msgstr "Nástroje pro tvorbu balíčků s Open Build Service"
+
+#. tumbleweed/patterns-devel-osc/patterns-devel-osc-devel_osc_build/description
+#. leap/patterns-devel-osc/patterns-devel-osc-devel_osc_build/description
+msgid "Tools for checkouting, patching, building and testing package via osc."
+msgstr "Nástroje kontroly, záplat, výstavby a testů balíčku pomocí osc."
+
+#. tumbleweed/patterns-devel-perl/patterns-devel-perl-devel_perl/summary
+#. leap/patterns-devel-perl/patterns-devel-perl-devel_perl/summary
+msgid "Perl Development"
+msgstr "Vývoj v Perlu"
+
+# 53574 AttribValues/description
+#. tumbleweed/patterns-devel-perl/patterns-devel-perl-devel_perl/description
+#. leap/patterns-devel-perl/patterns-devel-perl-devel_perl/description
+msgid ""
+"Tools and libraries for software development using the Perl programming "
+"language."
+msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Perl."
+
+#. tumbleweed/patterns-devel-python/patterns-devel-python-devel_python3/summary
+#. leap/patterns-devel-python/patterns-devel-python-devel_python3/summary
+msgid "Python 3 Developement"
+msgstr "Vývoj Python 3"
+
+#. tumbleweed/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/summary
+#. leap/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/summary
+msgid "Ruby Development"
+msgstr "Vývoj v Ruby"
+
+# 53574 AttribValues/description
+#. tumbleweed/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/description
+#. leap/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/description
+msgid ""
+"Tools and libraries for software development using the Ruby programming "
+"language."
+msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Ruby."
+
+#. tumbleweed/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/summary
+#. leap/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/summary
+msgid "Tcl/Tk Development"
+msgstr "Vývojový systém Tcl/Tk"
+
+# 53574 AttribValues/description
+#. tumbleweed/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/description
+#. leap/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/description
+msgid "Tools and libraries for development using Tcl and Tk."
+msgstr "Nástroje a knihovny potřebné pro vývoj v Tcl a Tk."
+
+#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/summary
+#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/summary
+msgid "Enlightenment"
+msgstr "Osvícení (enlightenment)"
+
+#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/description
+#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/description
+msgid "Enlightenment Window Manager and applications"
+msgstr "Správce oken Osvícení (enlightenment) a aplikace"
+
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts/summary
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/summary
+#. leap/patterns-fonts/patterns-fonts-fonts/summary
+#. leap/patterns-fonts/patterns-fonts-fonts_opt/summary
+msgid "Fonts"
+msgstr "Písma"
+
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts/description
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/description
+#. leap/patterns-fonts/patterns-fonts-fonts/description
+#. leap/patterns-fonts/patterns-fonts-fonts_opt/description
+msgid "Base fonts and font configuration."
+msgstr "Základní písma a jejich nastavení."
+
+#. tumbleweed/patterns-games/patterns-games-games/summary
+#. leap/patterns-games/patterns-games-games/summary
+msgid "Games"
+msgstr "Hry"
+
+# 54201 AttribValues/label
+#. tumbleweed/patterns-games/patterns-games-games/description
+#. leap/patterns-games/patterns-games-games/description
+msgid "A collection of games."
+msgstr "Sada her."
+
+#. tumbleweed/patterns-gnome/patterns-gnome-devel_gnome/summary
+#. leap/patterns-gnome/patterns-gnome-devel_gnome/summary
+msgid "GNOME Development"
+msgstr "Vývoj GNOME"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-devel_gnome/description
+#. leap/patterns-gnome/patterns-gnome-devel_gnome/description
+msgid "GNOME development packages."
+msgstr "Balíčky pro vývoj GNOME."
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
+#. leap/patterns-gnome/patterns-gnome-gnome/summary
+msgid "GNOME Desktop Environment"
+msgstr "Prostředí GNOME"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/description
+#. leap/patterns-gnome/patterns-gnome-gnome/description
+msgid ""
+"The GNOME desktop environment is an intuitive and attractive desktop for "
+"users."
+msgstr "GNOME je intuitivní a atraktivní grafické prostředí."
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_admin/summary
+msgid "GNOME Administration Tools"
+msgstr "Administrační nástroje prostředí GNOME"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/description
+#. leap/patterns-gnome/patterns-gnome-gnome_admin/description
+msgid "Administration Tools e.g. for desktop lockdown"
+msgstr "Administrační nástroje, např. pro uzamčení prostředí"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_basis/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/summary
+msgid "GNOME Base System"
+msgstr "Základní systém GNOME"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/description
+#. leap/patterns-gnome/patterns-gnome-gnome_basis/description
+#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/description
+msgid "Base packages for the GNOME desktop environment."
+msgstr "Základní balíčky prostředí GNOME."
+
+# 49722 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/description
+#. leap/patterns-gnome/patterns-gnome-gnome_games/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_games/description
+msgid "GNOME Games"
+msgstr "GNOME hry"
+
+# 28855 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_ide/summary
+msgid "GNOME Integrated Development Environment"
+msgstr "Integrované vývojové prostředí pro GNOME"
+
+# 49475 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/description
+#. leap/patterns-gnome/patterns-gnome-gnome_ide/description
+msgid "Development under GNOME"
+msgstr "Vývoj v GNOME"
+
+# 49722 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_imaging/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/summary
+msgid "GNOME Graphics"
+msgstr "GNOME grafika"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/description
+#. leap/patterns-gnome/patterns-gnome-gnome_imaging/description
+#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/description
+msgid "Handling of digital photos and graphics"
+msgstr "Práce s fotografiemi a grafikou"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_internet/summary
+msgid "GNOME Internet"
+msgstr "GNOME internet"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/description
+#. leap/patterns-gnome/patterns-gnome-gnome_internet/description
+msgid "GNOME Internet Applications"
+msgstr "GNOME internetové aplikace"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_laptop/summary
+msgid "GNOME Laptop"
+msgstr "GNOME notebook"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/description
+#. leap/patterns-gnome/patterns-gnome-gnome_laptop/description
+msgid "GNOME Tools designed specifically for use with laptop computers."
+msgstr "Nástroje prostředí GNOME navržené pro práci s notebooky."
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/description
+#. leap/patterns-gnome/patterns-gnome-gnome_multimedia/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_multimedia/description
+#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/description
+msgid "GNOME Multimedia"
+msgstr "GNOME multimédia"
+
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/description
+#. leap/patterns-gnome/patterns-gnome-gnome_office/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_office/description
+#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/description
+msgid "GNOME Office"
+msgstr "GNOME kancelář"
+
+# 54237 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/description
+#. leap/patterns-gnome/patterns-gnome-gnome_utilities/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_utilities/description
+msgid "GNOME Utilities"
+msgstr "GNOME nástroje"
+
+# 33139 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/summary
+#. leap/patterns-gnome/patterns-gnome-gnome_yast/summary
+msgid "YaST GNOME User Interfaces"
+msgstr "YaST GNOME uživatelského rozhraní"
+
+# 49768 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/description
+#. leap/patterns-gnome/patterns-gnome-gnome_yast/description
+msgid "Graphical YaST user interfaces for the GNOME desktop."
+msgstr "Grafické rozhraní programu YaST pro GNOME."
+
+# 58968 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/summary
+#. leap/patterns-gnome/patterns-gnome-sw_management_gnome/summary
+msgid "Package Management - Graphical Tools for GNOME"
+msgstr "Správa balíčků - grafické nástroje pro GNOME"
+
+# 58968 AttribValues/label
+#. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/description
+#. leap/patterns-gnome/patterns-gnome-sw_management_gnome/description
+msgid "Package Management - Graphical Tools"
+msgstr "Správa balíčků - grafické nástroje"
+
+#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/summary
+#. leap/patterns-haskell/patterns-haskell-haskell_platform/summary
+msgid "Haskell Platform"
+msgstr "Platforma Haskell"
+
+#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/description
+#. leap/patterns-haskell/patterns-haskell-haskell_platform/description
+msgid ""
+"The Haskell Platform is the easiest way to get started with programming "
+"Haskell. It comes with all you need to get up and running. Think of it as "
+"\"Haskell: batteries included.\""
+msgstr ""
+"Platforma Haskell je nejsnazší způsob, jak začít s programováním Haskell. "
+"Obsahuje vše, co je třeba k vytvoření a běhu. Představte si ji jako: "
+"\"Haskell: včetně baterií.\""
+
+#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft/summary
+#. leap/patterns-leechcraft/patterns-leechcraft-leechcraft/summary
+msgid "leechcraft"
+msgstr "leechcraft"
+
+#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_browser/summary
+#. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_browser/summary
+msgid "leechcraft_browser"
+msgstr "leechcraft_browser (prohlížeč)"
+
+#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_media/summary
+#. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_media/summary
+msgid "leechcraft_media"
+msgstr "leechcraft_media"
+
+#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_messenger/summary
+#. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_messenger/summary
+msgid "leechcraft_messenger"
+msgstr "leechcraft_messenger (přenos zpráv)"
+
+#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_netutils/summary
+#. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_netutils/summary
+msgid "leechcraft_netutils"
+msgstr "leechcraft_netutils (síťové utility)"
+
+#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_office/summary
+#. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_office/summary
+msgid "leechcraft_office"
+msgstr "leechcraft_office (kancelář)"
+
+#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_utilities/summary
+#. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_utilities/summary
+msgid "leechcraft_utilities"
+msgstr "leechcraft_utilities"
+
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde/summary
+#. leap/patterns-lxde/patterns-lxde-lxde/summary
+msgid "LXDE Desktop Environment"
+msgstr "Pracovní prostředí LXDE"
+
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde/description
+#. leap/patterns-lxde/patterns-lxde-lxde/description
+msgid ""
+"LXDE is a lightweight X11 desktop environment similiar to XFCE in its nature."
+msgstr "LXDE je odlehčené desktopové prostředí X11 v podstatě podobné XFCE."
+
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde_laptop/summary
+#. leap/patterns-lxde/patterns-lxde-lxde_laptop/summary
+msgid "LXDE Laptop"
+msgstr "LXDE notebook"
+
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde_laptop/description
+#. leap/patterns-lxde/patterns-lxde-lxde_laptop/description
+msgid "LXDE Tools designed specifically for use with laptop computers."
+msgstr "Nástroje prostředí LXDE navržené pro práci s notebooky."
+
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/summary
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/description
+#. leap/patterns-lxde/patterns-lxde-lxde_office/summary
+#. leap/patterns-lxde/patterns-lxde-lxde_office/description
+msgid "LXDE Office"
+msgstr "LXDE kancelář"
+
+#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/summary
+#. leap/patterns-lxqt/patterns-lxqt-lxqt/summary
+msgid "LXQt Desktop Environment"
+msgstr "Prostředí plochy LXQt"
+
+#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/description
+#. leap/patterns-lxqt/patterns-lxqt-lxqt/description
+msgid "LXQt is a lightweight desktop environment based on Qt."
+msgstr "LXQt je zjednodušené prostředí plochy založené na Qt."
+
+#. tumbleweed/patterns-mate/patterns-mate-mate/summary
+#. leap/patterns-mate/patterns-mate-mate/summary
+msgid "MATE Desktop Environment"
+msgstr "Prostředí plochy MATE"
+
+#. tumbleweed/patterns-mate/patterns-mate-mate/description
+#. leap/patterns-mate/patterns-mate-mate/description
+msgid ""
+"The MATE desktop environment is a desktop environment using traditional "
+"metaphors."
+msgstr ""
+"Prostředí plochy MATE je pracovní plocha používající tradiční metafory."
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_admin/summary
+#. leap/patterns-mate/patterns-mate-mate_admin/summary
+msgid "MATE Administration Tools"
+msgstr "Nástroje správy MATE"
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_admin/description
+#. leap/patterns-mate/patterns-mate-mate_admin/description
+msgid "Administration Tools e.g. for desktop lockdown."
+msgstr "Nástroje správy, např. pro uzamčení plochy."
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_basis/summary
+#. leap/patterns-mate/patterns-mate-mate_basis/summary
+msgid "MATE Base System"
+msgstr "Základní systém MATE"
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_basis/description
+#. leap/patterns-mate/patterns-mate-mate_basis/description
+msgid "Base packages for the MATE desktop environment."
+msgstr "Základní balíčky pro prostředí plochy MATE."
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_internet/summary
+#. leap/patterns-mate/patterns-mate-mate_internet/summary
+msgid "MATE Internet"
+msgstr "Internet MATE"
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_internet/description
+#. leap/patterns-mate/patterns-mate-mate_internet/description
+msgid "MATE Internet Applications."
+msgstr "Aplikace Internetu MATE."
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_laptop/summary
+#. leap/patterns-mate/patterns-mate-mate_laptop/summary
+msgid "MATE Laptop"
+msgstr "MATE Laptop"
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_laptop/description
+#. leap/patterns-mate/patterns-mate-mate_laptop/description
+msgid "MATE Tools designed specifically for use with laptop computers."
+msgstr "Nástroje MATE speciálně navržené pro použití na laptopech/ntb."
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_office/summary
+#. tumbleweed/patterns-mate/patterns-mate-mate_office/description
+#. tumbleweed/patterns-mate/patterns-mate-mate_office_opt/summary
+#. tumbleweed/patterns-mate/patterns-mate-mate_office_opt/description
+#. leap/patterns-mate/patterns-mate-mate_office/summary
+#. leap/patterns-mate/patterns-mate-mate_office/description
+#. leap/patterns-mate/patterns-mate-mate_office_opt/summary
+#. leap/patterns-mate/patterns-mate-mate_office_opt/description
+msgid "MATE Office"
+msgstr "MATE Office"
+
+#. tumbleweed/patterns-mate/patterns-mate-mate_utilities/summary
+#. tumbleweed/patterns-mate/patterns-mate-mate_utilities/description
+#. leap/patterns-mate/patterns-mate-mate_utilities/summary
+#. leap/patterns-mate/patterns-mate-mate_utilities/description
+msgid "MATE Utilities"
+msgstr "Utility MATE"
+
+#. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
+#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
+#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/summary
+#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/summary
+#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/summary
+#. tumbleweed/patterns-media/patterns-media-rest_dvd/summary
+#. leap/patterns-media/patterns-media-rest_cd_core/summary
+#. leap/patterns-media/patterns-media-rest_cd_gnome/summary
+#. leap/patterns-media/patterns-media-rest_cd_kde/summary
+#. leap/patterns-media/patterns-media-rest_cd_x11/summary
+#. leap/patterns-media/patterns-media-rest_core_dvd/summary
+#. leap/patterns-media/patterns-media-rest_dvd/summary
+msgid "Remaining Software"
+msgstr "Ostatní software"
+
+#. tumbleweed/patterns-media/patterns-media-rest_cd_core/description
+#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/description
+#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/description
+#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/description
+#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/description
+#. tumbleweed/patterns-media/patterns-media-rest_dvd/description
+#. leap/patterns-media/patterns-media-rest_cd_core/description
+#. leap/patterns-media/patterns-media-rest_cd_gnome/description
+#. leap/patterns-media/patterns-media-rest_cd_kde/description
+#. leap/patterns-media/patterns-media-rest_cd_x11/description
+#. leap/patterns-media/patterns-media-rest_core_dvd/description
+#. leap/patterns-media/patterns-media-rest_dvd/description
+msgid "Packages that are on CD but not in other patterns."
+msgstr "Balíčky, které jsou na CD, ale nejsou součástí žádného profilu."
+
+#. tumbleweed/patterns-network/patterns-network-network_admin/summary
+#. leap/patterns-network/patterns-network-network_admin/summary
+msgid "Network Administration"
+msgstr "Správa sítě"
+
+#. tumbleweed/patterns-network/patterns-network-network_admin/description
+#. leap/patterns-network/patterns-network-network_admin/description
+msgid "Tools for administering and debugging networks."
+msgstr "Nástroje pro správu sítě k ladění sítě."
+
+#. tumbleweed/patterns-office/patterns-office-office/summary
+#. leap/patterns-office/patterns-office-office/summary
+msgid "Office Software"
+msgstr "Kancelářské programy"
+
+#. tumbleweed/patterns-office/patterns-office-office/description
+#. leap/patterns-office/patterns-office-office/description
+msgid "Office software for your desktop environment including LibreOffice."
+msgstr "Kancelářské programy pro vaše pracovní prostředí včetně LibreOffice."
+
+#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/summary
+#. leap/patterns-server/patterns-server-dhcp_dns_server/summary
+#. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
+msgid "DHCP and DNS Server"
+msgstr "DHCP a DNS server"
+
+#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/description
+#. leap/patterns-server/patterns-server-dhcp_dns_server/description
+msgid ""
+"Software to set up a server for the Dynamic Host Configuration Protocol "
+"(DHCP) and the Domain Name System (DNS) services. DHCP provides "
+"configuration parameters to client computers to integrate them into a "
+"network, whereas DNS delivers information associated with domain names, in "
+"particular, the IP address."
+msgstr ""
+"Nastavení DHCP serveru, který se postará o automatické síťové nastavení "
+"pracovních stanic ve vaší síti. Součásti je také DNS server, který se "
+"postará o správné rozpoznávání jmen staniv síti."
+
+#. tumbleweed/patterns-server/patterns-server-directory_server/summary
+#. leap/patterns-server/patterns-server-directory_server/summary
+#. leap/patterns-server/patterns-server-directory_server-32bit/summary
+msgid "Directory Server (LDAP)"
+msgstr "Adresářový server (LDAP)"
+
+#. tumbleweed/patterns-server/patterns-server-directory_server/description
+#. leap/patterns-server/patterns-server-directory_server/description
+msgid ""
+"Software to set up a directory server with OpenLDAP. The Lightweight "
+"Directory Access Protocol (LDAP) is used to access online directory services."
+msgstr ""
+"Software k vytvoření adresářových serverů OpenLDAP. Pro přístup k on-line "
+"adresářovým službám se používá protokol Lightweight Directory Access "
+"Protocol (LDAP)."
+
+#. tumbleweed/patterns-server/patterns-server-file_server/summary
+#. leap/patterns-server/patterns-server-file_server/summary
+#. leap/patterns-server/patterns-server-file_server-32bit/summary
+msgid "File Server"
+msgstr "Souborový server"
+
+#. tumbleweed/patterns-server/patterns-server-file_server/description
+#. leap/patterns-server/patterns-server-file_server/description
+msgid ""
+"File services to host files so that they may be accessed or retrieved by "
+"other computers on the same network. This includes the FTP, SMB, and NFS "
+"protocols."
+msgstr ""
+"Souborové služby umožňující přístup k souborům z ostatních počítačů v síti. "
+"Obsahuje FTP, SMB a NFS protokoly."
+
+#. tumbleweed/patterns-server/patterns-server-gateway_server/summary
+#. leap/patterns-server/patterns-server-gateway_server/summary
+#. leap/patterns-server/patterns-server-gateway_server-32bit/summary
+msgid "Internet Gateway"
+msgstr "Internetová brána"
+
+#. tumbleweed/patterns-server/patterns-server-gateway_server/description
+#. leap/patterns-server/patterns-server-gateway_server/description
+msgid ""
+"Software to set up a proxy, firewall, and gateway server, including a "
+"virtual private network (VPN) gateway."
+msgstr ""
+"Nastavení proxy, firewallu a brány pro připojení k Internetu. Součástí je "
+"také VPN (virtual private network)."
+
+#. tumbleweed/patterns-server/patterns-server-kvm_server/summary
+#. leap/patterns-server/patterns-server-kvm_server/summary
+#. leap/patterns-server/patterns-server-kvm_server-32bit/summary
+msgid "KVM Host Server"
+msgstr "Hostitelský server KVM"
+
+#. tumbleweed/patterns-server/patterns-server-kvm_server/description
+#. tumbleweed/patterns-server/patterns-server-xen_server/description
+#. leap/patterns-server/patterns-server-kvm_server/description
+#. leap/patterns-server/patterns-server-xen_server/description
+msgid ""
+"Software to set up a server for configuring, managing, and monitoring "
+"virtual machines on a single physical machine."
+msgstr "Nastavení serveru pro správu a monitorování virtuálního stroje."
+
+#. tumbleweed/patterns-server/patterns-server-lamp_server/summary
+#. leap/patterns-server/patterns-server-lamp_server/summary
+#. leap/patterns-server/patterns-server-lamp_server-32bit/summary
+msgid "Web and LAMP Server"
+msgstr "Webový a LAMP server"
+
+#. tumbleweed/patterns-server/patterns-server-lamp_server/description
+#. leap/patterns-server/patterns-server-lamp_server/description
+msgid ""
+"Software to set up a Web server that is able to serve static, dynamic, and "
+"interactive content (like a Web shop). This includes Apache HTTP Server, the "
+"database management system MySQL, and scripting languages such as PHP, "
+"Python, Ruby on Rails, or Perl."
+msgstr ""
+"Nastavení webového serveru pro statický, dynamické i interaktivní obsah "
+"(např. webový obchod). Základem je webový server Apache, databázový systém "
+"MySQL a skriptovací jazyky jako např. PHP, Python, Ruby on Rails nebo Perl."
+
+#. tumbleweed/patterns-server/patterns-server-mail_server/summary
+#. leap/patterns-server/patterns-server-mail_server/summary
+#. leap/patterns-server/patterns-server-mail_server-32bit/summary
+msgid "Mail and News Server"
+msgstr "Poštovní a news server"
+
+#. tumbleweed/patterns-server/patterns-server-mail_server/description
+#. leap/patterns-server/patterns-server-mail_server/description
+msgid ""
+"Software to set up electronic mail and message services to handle email, "
+"mailing, and news lists, including a virus scanner to scan messages at the "
+"server level."
+msgstr ""
+"Software pro tvorbu elektronické pošty a služby zpráv e-mailu, okamžitých "
+"zpráv a seznamů odebíraného zpravodajství (kanálů), včetně virového skeneru "
+"k prohledání zpráv na úrovni serveru."
+
+#. tumbleweed/patterns-server/patterns-server-print_server/summary
+#. leap/patterns-server/patterns-server-printing/summary
+#. leap/patterns-server/patterns-server-printing-32bit/summary
+msgid "Print Server"
+msgstr "Tiskový server"
+
+#. tumbleweed/patterns-server/patterns-server-print_server/description
+msgid ""
+"Software used to host print queues so that they may be accessed by other "
+"computers on the same network. LPD, CUPS, and SMB print servers and queues "
+"are supported."
+msgstr ""
+"Software používaný pro vytváření tiskových front, ke kterým lze přistupovat "
+"z jiných počítačů v síti. Obsahuje podporu pro LDP, CUPS a SMB tiskové "
+"servery a fronty."
+
+#. tumbleweed/patterns-server/patterns-server-xen_server/summary
+#. leap/patterns-server/patterns-server-xen_server/summary
+#. leap/patterns-server/patterns-server-xen_server-32bit/summary
+msgid "Xen Virtual Machine Host Server"
+msgstr "Hostitelský systém pro Xen"
+
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
+#. leap/patterns-xfce/patterns-xfce-xfce/summary
+msgid "XFCE Desktop Environment"
+msgstr "Prostředí XFCE"
+
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce/description
+#. leap/patterns-xfce/patterns-xfce-xfce/description
+msgid "Xfce is a lightweight desktop environment for various *NIX systems."
+msgstr "Xfce je jednoduché pracovní prostředí pro různé *NIXové systémy."
+
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/summary
+#. leap/patterns-xfce/patterns-xfce-xfce_basis/summary
+msgid "XFCE Base System"
+msgstr "Základní systém XFCE"
+
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/description
+#. leap/patterns-xfce/patterns-xfce-xfce_basis/description
+msgid "Base packages for the XFCE Desktop Environment"
+msgstr "Základní balíčky prostředí pracovní plochy XFCE"
+
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_laptop/summary
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_laptop/description
+#. leap/patterns-xfce/patterns-xfce-xfce_laptop/summary
+#. leap/patterns-xfce/patterns-xfce-xfce_laptop/description
+msgid "XFCE Laptop"
+msgstr "XFCE Laptop"
+
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/summary
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/description
+#. leap/patterns-xfce/patterns-xfce-xfce_office/summary
+#. leap/patterns-xfce/patterns-xfce-xfce_office/description
+msgid "XFCE Office"
+msgstr "XFCE kancelář"
+
+#. tumbleweed/patterns-yast/patterns-yast-devel_yast/summary
+#. leap/patterns-yast/patterns-yast-devel_yast/summary
+msgid "YaST Development"
+msgstr "Vývoj YaSTu"
+
+#. tumbleweed/patterns-yast/patterns-yast-devel_yast/description
+#. leap/patterns-yast/patterns-yast-devel_yast/description
+msgid ""
+"Tools and libraries for developing YaST modules, the setup and configuration "
+"tool for openSUSE."
+msgstr ""
+"Nástroje a knihovny pro vývoj modulů programu YaST, instalačního a "
+"konfiguračního nástroje openSUSE."
+
+# 33139 AttribValues/label
+#. tumbleweed/patterns-yast/patterns-yast-x11_yast/summary
+#. leap/patterns-yast/patterns-yast-x11_yast/summary
+msgid "YaST User Interfaces"
+msgstr "YaST uživatelského rozhraní"
+
+# 49768 AttribValues/label
+#. tumbleweed/patterns-yast/patterns-yast-x11_yast/description
+#. leap/patterns-yast/patterns-yast-x11_yast/description
+msgid "Graphical YaST user interfaces for minimal X desktop."
+msgstr "Grafické rozhraní programu YaST pro minimální X systém."
+
+# 49865 AttribValues/label
+#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
+#. leap/patterns-yast/patterns-yast-yast2_basis/summary
+msgid "YaST System Administration"
+msgstr "YaST správa systému"
+
+# 49865 AttribValues/label
+#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/description
+#. leap/patterns-yast/patterns-yast-yast2_basis/description
+msgid "YaST tools for basic system administration."
+msgstr "Nástroje programu YaST pro základní správu systému."
+
+# 51925 AttribValues/label
+#. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/summary
+#. leap/patterns-yast/patterns-yast-yast2_install_wf/summary
+msgid "YaST Installation Packages"
+msgstr "Instalační balíčky programu YaST2"
+
+#. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/description
+#. leap/patterns-yast/patterns-yast-yast2_install_wf/description
+msgid "YaST tools for installing your system."
+msgstr "Nástroje YaSTu pro instalaci systému."
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_kde/summary
+#. leap/patterns-kde/patterns-kde-devel_kde/summary
+msgid "KDE Development"
+msgstr "Vývoj KDE"
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_kde/description
+#. leap/patterns-kde/patterns-kde-devel_kde/description
+msgid "KDE development packages."
+msgstr "Balíčky pro vývoj KDE."
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
+#. leap/patterns-kde/patterns-kde-devel_kde_frameworks/summary
+msgid "KDE Frameworks Development"
+msgstr "Vývoj KDE Frameworks"
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/description
+#. leap/patterns-kde/patterns-kde-devel_kde_frameworks/description
+msgid "KDE Frameworks development packages."
+msgstr "Vývojové balíčky KDE Frameworks."
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/summary
+#. leap/patterns-kde/patterns-kde-devel_qt5/summary
+msgid "Qt 5 Development"
+msgstr "Vývoj Qt 5"
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
+#. leap/patterns-kde/patterns-kde-devel_qt5/description
+msgid ""
+"Tools and libraries for software development using Qt 5, the latest version "
+"of the Qt toolkit."
+msgstr ""
+"Nástroje a knihovny pro vývoj softwaru s použitím Qt 5, poslední verze sady "
+"nástrojů Qt."
+
+#. tumbleweed/patterns-kde/patterns-kde-kde/summary
+#. leap/patterns-kde/patterns-kde-kde/summary
+#, fuzzy
+#| msgid "KDE Desktop Environment"
+msgid "KDE Plasma 5 Desktop Environment"
+msgstr "Prostředí KDE"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde/description
+#. leap/patterns-kde/patterns-kde-kde/description
+msgid ""
+"KDE is a powerful free software graphical desktop environment for Linux "
+"workstations. It combines ease of use, contemporary functionality, and "
+"outstanding graphical design with the technology of the Linux operating "
+"system."
+msgstr ""
+"KDE je svobodné grafické prostředí pro pracovní stanice. Snoubí v sobě "
+"uživatelskou přívětivost, moderní funkcionalitu a atraktivní vzhled s "
+"linuxovou technologií."
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_edutainment/summary
+#. leap/patterns-kde/patterns-kde-kde_edutainment/summary
+msgid "KDE Education"
+msgstr "Vzdělávání v KDE"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_edutainment/description
+#. leap/patterns-kde/patterns-kde-kde_edutainment/description
+msgid "KDE Applications - Tools to teach kids with computers"
+msgstr "Aplikace KDE - nástroje k výuce dětí s počítači"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_games/summary
+#. leap/patterns-kde/patterns-kde-kde_games/summary
+msgid "KDE Games"
+msgstr "KDE hry"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_games/description
+#. leap/patterns-kde/patterns-kde-kde_games/description
+msgid "KDE Applications - Games"
+msgstr "Aplikace KDE - hry"
+
+# 28855 AttribValues/label
+#. tumbleweed/patterns-kde/patterns-kde-kde_ide/summary
+#. leap/patterns-kde/patterns-kde-kde_ide/summary
+msgid "KDE Integrated Development Environment"
+msgstr "Integrované vývojové prostředí pro KDE"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
+#. leap/patterns-kde/patterns-kde-kde_ide/description
+msgid "Development environment for the Plasma Desktop"
+msgstr "Vývojové prostředí pro pracovní plochu Plasma"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_imaging/summary
+#. leap/patterns-kde/patterns-kde-kde_imaging/summary
+msgid "KDE Graphics"
+msgstr "KDE grafika"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_imaging/description
+#. leap/patterns-kde/patterns-kde-kde_imaging/description
+msgid "KDE Applicatons - Handling of digital photos and graphics"
+msgstr "Aplikace KDE - manipulace s fotografiemi a grafikou"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_internet/summary
+#. leap/patterns-kde/patterns-kde-kde_internet/summary
+msgid "KDE Internet"
+msgstr "KDE internet"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_internet/description
+#. leap/patterns-kde/patterns-kde-kde_internet/description
+msgid "KDE Internet Applications"
+msgstr "KDE internetové aplikace"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_multimedia/summary
+#. leap/patterns-kde/patterns-kde-kde_multimedia/summary
+msgid "KDE Multimedia"
+msgstr "KDE multimédia"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_multimedia/description
+#. leap/patterns-kde/patterns-kde-kde_multimedia/description
+msgid "KDE Applications - Multimedia"
+msgstr "Aplikace KDE - multimédia"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_office/summary
+#. tumbleweed/patterns-kde/patterns-kde-kde_office/description
+#. leap/patterns-kde/patterns-kde-kde_office/summary
+#. leap/patterns-kde/patterns-kde-kde_office/description
+msgid "KDE Office"
+msgstr "KDE kancelář"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
+#. leap/patterns-kde/patterns-kde-kde_plasma/summary
+msgid "KDE Plasma 5 Desktop"
+msgstr "Plocha KDE Plasma 5"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/description
+#. leap/patterns-kde/patterns-kde-kde_plasma/description
+msgid "Base packages for the KDE Plasma 5 desktop environment."
+msgstr "Základní balíčky pro prostředí plochy KDE Plasma 5."
+
+# 54237 AttribValues/label
+#. tumbleweed/patterns-kde/patterns-kde-kde_utilities/summary
+#. tumbleweed/patterns-kde/patterns-kde-kde_utilities_opt/summary
+#. leap/patterns-kde/patterns-kde-kde_utilities/summary
+#. leap/patterns-kde/patterns-kde-kde_utilities_opt/summary
+msgid "KDE Utilities"
+msgstr "KDE nástroje"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_utilities/description
+#. leap/patterns-kde/patterns-kde-kde_utilities/description
+msgid "KDE Applications - Utilities"
+msgstr "Aplikace KDE - utility"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_utilities_opt/description
+#. leap/patterns-kde/patterns-kde-kde_utilities_opt/description
+msgid "KDE Application - Additional Utilities"
+msgstr "Aplikace KDE - přídavné utility"
+
+# 33139 AttribValues/label
+#. tumbleweed/patterns-kde/patterns-kde-kde_yast/summary
+#. leap/patterns-kde/patterns-kde-kde_yast/summary
+msgid "YaST KDE User Interfaces"
+msgstr "YaST KDE uživatelského rozhraní"
+
+# 49768 AttribValues/label
+#. tumbleweed/patterns-kde/patterns-kde-kde_yast/description
+#. leap/patterns-kde/patterns-kde-kde_yast/description
+msgid "Graphical YaST user interfaces for the KDE desktop."
+msgstr "Grafické rozhraní programu YaST pro KDE."
+
+#. tumbleweed/patterns-rpm-macros/summary
+#. leap/patterns-rpm-macros/summary
+msgid "RPM macros for building of patterns modules"
+msgstr "RPM makra pro budování modulů šablon"
+
+#. tumbleweed/patterns-rpm-macros/description
+#. leap/patterns-rpm-macros/description
+msgid "This package contains SUSE RPM macros to aid creating patterns."
+msgstr "Tento balíček obsahuje makra SUSE RPM - pomoc při tvorbě šablon."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/summary
 msgid "openSUSE Kubic MicroOS System"
@@ -235,6 +1212,58 @@ msgid ""
 msgstr ""
 "Toto je zásobník na vrcholu MicroOS. Obsahuje vše pro kontejner a kubernety."
 
+#. tumbleweed/patterns-caasp/patterns-caasp-apparmor/summary
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Packages needed to enable Apparmor on openSUSE Kubic"
+msgstr "Balíčky pouze pro DVD s openSUSE Kubic"
+
+#. tumbleweed/patterns-caasp/patterns-caasp-apparmor/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
+msgid ""
+"This are packages which are required to enable Apparmor on SUSE CaaS "
+"Platform or openSUSE Kubic product."
+msgstr ""
+"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
+"produktu openSUSE Kubic."
+
+#. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
+msgid "Packages needed to run openSUSE Kubic on real hardware"
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
+msgid ""
+"This are packages which are required to install SUSE CaaS Platform or "
+"openSUSE Kubic product on real hardeare."
+msgstr ""
+"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
+"produktu openSUSE Kubic."
+
+#. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/summary
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
+msgstr "Balíčky pouze pro DVD s openSUSE Kubic"
+
+#. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
+msgid ""
+"This are packages which are required to enable IMA/EVM on SUSE CaaS Platform "
+"or openSUSE Kubic product."
+msgstr ""
+"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
+"produktu openSUSE Kubic."
+
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE Kubic"
 msgstr "Balíčky pouze pro DVD s openSUSE Kubic"
@@ -247,1112 +1276,325 @@ msgstr ""
 "Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
 "produktu openSUSE Kubic."
 
-#. tumbleweed/patterns-desktop/patterns-desktop-books/description
-#. leap/patterns-openSUSE/patterns-openSUSE-books/description
-msgid "Help and Documentation, various books."
-msgstr "Nápověda a dokumentace, různé knihy."
+#. tumbleweed/patterns-caasp/patterns-caasp-selinux/summary
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Packages needed to enable SELinux on openSUSE Kubic"
+msgstr "Balíčky pouze pro DVD s openSUSE Kubic"
 
-#. tumbleweed/patterns-desktop/patterns-desktop-imaging/summary
-#. tumbleweed/patterns-desktop/patterns-desktop-imaging_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-imaging/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-imaging_opt/summary
-msgid "Graphics"
-msgstr "Grafika"
-
-#. tumbleweed/patterns-desktop/patterns-desktop-imaging/description
-#. tumbleweed/patterns-desktop/patterns-desktop-imaging_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-imaging/description
-#. leap/patterns-openSUSE/patterns-openSUSE-imaging_opt/description
-msgid "Handling of digital photos and graphics."
-msgstr "Práce s fotografiemi a grafikou."
-
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-laptop/summary
-msgid "Laptop"
-msgstr "Notebook"
-
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/description
-#. leap/patterns-openSUSE/patterns-openSUSE-laptop/description
-msgid "Tools designed specifically for laptop computers."
-msgstr "Nástroje navržené pro práci s notebooky."
-
-#. tumbleweed/patterns-desktop/patterns-desktop-multimedia/summary
-#. tumbleweed/patterns-desktop/patterns-desktop-multimedia_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-multimedia/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-multimedia_opt/summary
-msgid "Multimedia"
-msgstr "Multimédia"
-
-#. tumbleweed/patterns-desktop/patterns-desktop-multimedia/description
-#. tumbleweed/patterns-desktop/patterns-desktop-multimedia_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-multimedia/description
+#. tumbleweed/patterns-caasp/patterns-caasp-selinux/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
 msgid ""
-"Multimedia players, sound editing tools, video and image manipulation "
-"applications."
+"This are packages which are required to enable SELinux on SUSE CaaS Platform "
+"or openSUSE Kubic product."
 msgstr ""
-"Multimediální přehrávače, nástroje pro editaci zvuku, programy pro práci s "
-"obrázky a videem."
+"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
+"produktu openSUSE Kubic."
 
-#. tumbleweed/patterns-desktop/patterns-desktop-technical_writing/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-technical_writing/summary
-msgid "Technical Writing"
-msgstr "Technické psaní"
-
-#. tumbleweed/patterns-desktop/patterns-desktop-technical_writing/description
-#. leap/patterns-openSUSE/patterns-openSUSE-technical_writing/description
-msgid "Authoring tools and editors for creating technical documentation."
-msgstr "Vývojové nástroje a editory pro tvorbu technické dokumentace."
-
-#. tumbleweed/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_C_C++/summary
-msgid "C/C++ Development"
-msgstr "Vývoj C/C++"
-
-#. tumbleweed/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_C_C++/description
-msgid ""
-"Tools and libraries for software development using C/C++ and other "
-"derivative of the C programming language."
+#. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
+msgid "Packages needed to let openSUSE Kubic act as LDAP client"
 msgstr ""
-"Nástroje a knihovny pro vývoj v C/C++ a jazycích odvozených od jazyka C."
 
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_basis/summary
-msgid "Base Development"
-msgstr "Základní vývoj"
-
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr "Minimální sada nástrojů potřebná pro kompilováni a linkování aplikací."
-
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_kernel/summary
-msgid "Linux Kernel Development"
-msgstr "Vývoj linuxového jádra"
-
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_kernel/description
-msgid "Tools for Linux kernel development."
-msgstr "Nástroje pro vývoj jádra."
-
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_rpm_build/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_rpm_build/summary
-msgid "RPM Build Environment"
-msgstr "Prostředí pro vytváření RPM"
-
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_rpm_build/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_rpm_build/description
+#. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
 msgid ""
-"Minimal set of tools and libraries for building packages using the RPM "
-"package manager."
-msgstr "Základní skupina nástrojů a knihoven pro vytváření RPM balíčků."
-
-# 54068 AttribValues/label
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_web/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_web/summary
-msgid "Web Development"
-msgstr "Webový vývoj"
-
-# 55869 AttribValues/description
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_web/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_web/description
-msgid "Tools and libraries for Web application development."
-msgstr "Nástroje a knihovny pro vývoj webových aplikací."
-
-#. tumbleweed/patterns-devel-java/patterns-devel-java-devel_java/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_java/summary
-msgid "Java Development"
-msgstr "Vývoj v jazyku Java"
-
-# 53574 AttribValues/description
-#. tumbleweed/patterns-devel-java/patterns-devel-java-devel_java/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_java/description
-msgid ""
-"Tools and libraries for software development using the Java programming "
-"language."
-msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Java."
-
-#. tumbleweed/patterns-devel-mono/patterns-devel-mono-devel_mono/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_mono/summary
-msgid ".NET Development"
-msgstr ".NET vývoj"
-
-# 53574 AttribValues/description
-#. tumbleweed/patterns-devel-mono/patterns-devel-mono-devel_mono/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_mono/description
-msgid "Tools and libraries for .NET development using Mono."
-msgstr "Nástroje a knihovny potřebné pro vývoj v :NET pomocí Mono."
-
-#. tumbleweed/patterns-devel-osc/patterns-devel-osc-devel_osc_build/summary
-msgid "Tools for Packaging with Open Build Service"
-msgstr "Nástroje pro tvorbu balíčků s Open Build Service"
-
-#. tumbleweed/patterns-devel-osc/patterns-devel-osc-devel_osc_build/description
-msgid "Tools for checkouting, patching, building and testing package via osc."
-msgstr "Nástroje kontroly, záplat, výstavby a testů balíčku pomocí osc."
-
-#. tumbleweed/patterns-devel-perl/patterns-devel-perl-devel_perl/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_perl/summary
-msgid "Perl Development"
-msgstr "Vývoj v Perlu"
-
-# 53574 AttribValues/description
-#. tumbleweed/patterns-devel-perl/patterns-devel-perl-devel_perl/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_perl/description
-msgid ""
-"Tools and libraries for software development using the Perl programming "
-"language."
-msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Perl."
-
-#. tumbleweed/patterns-devel-python/patterns-devel-python-devel_python/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_python/summary
-msgid "Python Development"
-msgstr "Vývoj v Pythonu"
-
-# 53574 AttribValues/description
-#. tumbleweed/patterns-devel-python/patterns-devel-python-devel_python/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_python/description
-msgid ""
-"Tools and libraries for software development using the Python programming "
-"language."
-msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Python."
-
-#. tumbleweed/patterns-devel-python/patterns-devel-python-devel_python3/summary
-msgid "Python 3 Developement"
-msgstr "Vývoj Python 3"
-
-#. tumbleweed/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_ruby/summary
-msgid "Ruby Development"
-msgstr "Vývoj v Ruby"
-
-# 53574 AttribValues/description
-#. tumbleweed/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_ruby/description
-msgid ""
-"Tools and libraries for software development using the Ruby programming "
-"language."
-msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Ruby."
-
-#. tumbleweed/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_tcl/summary
-msgid "Tcl/Tk Development"
-msgstr "Vývojový systém Tcl/Tk"
-
-# 53574 AttribValues/description
-#. tumbleweed/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_tcl/description
-msgid "Tools and libraries for development using Tcl and Tk."
-msgstr "Nástroje a knihovny potřebné pro vývoj v Tcl a Tk."
-
-#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/summary
-msgid "Enlightenment"
-msgstr "Osvícení (enlightenment)"
-
-#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/description
-msgid "Enlightenment Window Manager and applications"
-msgstr "Správce oken Osvícení (enlightenment) a aplikace"
-
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts/summary
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-fonts/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-fonts_opt/summary
-msgid "Fonts"
-msgstr "Písma"
-
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts/description
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-fonts/description
-#. leap/patterns-openSUSE/patterns-openSUSE-fonts_opt/description
-msgid "Base fonts and font configuration."
-msgstr "Základní písma a jejich nastavení."
-
-#. tumbleweed/patterns-games/patterns-games-games/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-games/summary
-msgid "Games"
-msgstr "Hry"
-
-# 54201 AttribValues/label
-#. tumbleweed/patterns-games/patterns-games-games/description
-#. leap/patterns-openSUSE/patterns-openSUSE-games/description
-msgid "A collection of games."
-msgstr "Sada her."
-
-#. tumbleweed/patterns-gnome/patterns-gnome-devel_gnome/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_gnome/summary
-msgid "GNOME Development"
-msgstr "Vývoj GNOME"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-devel_gnome/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_gnome/description
-msgid "GNOME development packages."
-msgstr "Balíčky pro vývoj GNOME."
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome/summary
-msgid "GNOME Desktop Environment"
-msgstr "Prostředí GNOME"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome/description
-msgid ""
-"The GNOME desktop environment is an intuitive and attractive desktop for "
-"users."
-msgstr "GNOME je intuitivní a atraktivní grafické prostředí."
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_admin/summary
-msgid "GNOME Administration Tools"
-msgstr "Administrační nástroje prostředí GNOME"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_admin/description
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_admin/description
-msgid "Administration Tools e.g. for desktop lockdown"
-msgstr "Administrační nástroje, např. pro uzamčení prostředí"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_basis/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_basis_opt/summary
-msgid "GNOME Base System"
-msgstr "Základní systém GNOME"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_basis/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_basis_opt/description
-msgid "Base packages for the GNOME desktop environment."
-msgstr "Základní balíčky prostředí GNOME."
-
-# 49722 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_games/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_games/description
-msgid "GNOME Games"
-msgstr "GNOME hry"
-
-# 28855 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_ide/summary
-msgid "GNOME Integrated Development Environment"
-msgstr "Integrované vývojové prostředí pro GNOME"
-
-# 49475 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_ide/description
-msgid "Development under GNOME"
-msgstr "Vývoj v GNOME"
-
-# 49722 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_imaging/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_imaging_opt/summary
-msgid "GNOME Graphics"
-msgstr "GNOME grafika"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_imaging/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_imaging_opt/description
-msgid "Handling of digital photos and graphics"
-msgstr "Práce s fotografiemi a grafikou"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_internet/summary
-msgid "GNOME Internet"
-msgstr "GNOME internet"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_internet/description
-msgid "GNOME Internet Applications"
-msgstr "GNOME internetové aplikace"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_laptop/summary
-msgid "GNOME Laptop"
-msgstr "GNOME notebook"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_laptop/description
-msgid "GNOME Tools designed specifically for use with laptop computers."
-msgstr "Nástroje prostředí GNOME navržené pro práci s notebooky."
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_multimedia/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_multimedia/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_multimedia_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_multimedia_opt/description
-msgid "GNOME Multimedia"
-msgstr "GNOME multimédia"
-
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_office/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_office_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_office_opt/description
-msgid "GNOME Office"
-msgstr "GNOME kancelář"
-
-# 54237 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_utilities/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_utilities/description
-msgid "GNOME Utilities"
-msgstr "GNOME nástroje"
-
-# 33139 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_yast/summary
-msgid "YaST GNOME User Interfaces"
-msgstr "YaST GNOME uživatelského rozhraní"
-
-# 49768 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gnome_yast/description
-msgid "Graphical YaST user interfaces for the GNOME desktop."
-msgstr "Grafické rozhraní programu YaST pro GNOME."
-
-# 58968 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-sw_management_gnome/summary
-msgid "Package Management - Graphical Tools for GNOME"
-msgstr "Správa balíčků - grafické nástroje pro GNOME"
-
-# 58968 AttribValues/label
-#. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/description
-#. tumbleweed/patterns-kde/patterns-kde-sw_management_kde/description
-#. leap/patterns-openSUSE/patterns-openSUSE-sw_management_gnome/description
-#. leap/patterns-openSUSE/patterns-openSUSE-sw_management_kde/description
-msgid "Package Management - Graphical Tools"
-msgstr "Správa balíčků - grafické nástroje"
-
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-haskell_platform/summary
-msgid "Haskell Platform"
-msgstr "Platforma Haskell"
-
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/description
-#. leap/patterns-openSUSE/patterns-openSUSE-haskell_platform/description
-msgid ""
-"The Haskell Platform is the easiest way to get started with programming "
-"Haskell. It comes with all you need to get up and running. Think of it as "
-"\"Haskell: batteries included.\""
+"This are packages which are required to enable LDAP client support via sssd "
+"on SUSE CaaS Platform or openSUSE Kubic product."
 msgstr ""
-"Platforma Haskell je nejsnazší způsob, jak začít s programováním Haskell. "
-"Obsahuje vše, co je třeba k vytvoření a běhu. Představte si ji jako: \""
-"Haskell: včetně baterií.\""
+"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
+"produktu openSUSE Kubic."
 
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_kde/summary
-msgid "KDE Development"
-msgstr "Vývoj KDE"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_kde/description
-msgid "KDE development packages."
-msgstr "Balíčky pro vývoj KDE."
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_kde_frameworks/summary
-msgid "KDE Frameworks Development"
-msgstr "Vývoj KDE Frameworks"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_kde_frameworks/description
-msgid "KDE Frameworks development packages."
-msgstr "Vývojové balíčky KDE Frameworks."
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_qt5/summary
-msgid "Qt 5 Development"
-msgstr "Vývoj Qt 5"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_qt5/description
-msgid ""
-"Tools and libraries for software development using Qt 5, the latest version "
-"of the Qt toolkit."
+#. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
+#. leap/patterns-hpc/patterns-hpc-compute_node/summary
+msgid "HPC compute node"
 msgstr ""
-"Nástroje a knihovny pro vývoj softwaru s použitím Qt 5, poslední verze sady "
-"nástrojů Qt."
 
-#. tumbleweed/patterns-kde/patterns-kde-kde/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde/summary
-msgid "KDE Desktop Environment"
-msgstr "Prostředí KDE"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde/description
+#. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
+#. leap/patterns-hpc/patterns-hpc-compute_node/description
 msgid ""
-"KDE is a powerful free software graphical desktop environment for Linux "
-"workstations. It combines ease of use, contemporary functionality, and "
-"outstanding graphical design with the technology of the Linux operating "
-"system."
+"A compute node has a minmal software image and mainly runs simultion "
+"programs. Services on this node should be reduced to a bare minimum and the "
+"node *must* be installed in a automatic manner. A basset of numerical "
+"libraries should also be installed."
 msgstr ""
-"KDE je svobodné grafické prostředí pro pracovní stanice. Snoubí v sobě "
-"uživatelskou přívětivost, moderní funkcionalitu a atraktivní vzhled s "
-"linuxovou technologií."
 
-#. tumbleweed/patterns-kde/patterns-kde-kde_edutainment/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_edutainment/summary
-msgid "KDE Education"
-msgstr "Vzdělávání v KDE"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_edutainment/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_edutainment/description
-msgid "KDE Applications - Tools to teach kids with computers"
-msgstr "Aplikace KDE - nástroje k výuce dětí s počítači"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_games/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_games/summary
-msgid "KDE Games"
-msgstr "KDE hry"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_games/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_games/description
-msgid "KDE Applications - Games"
-msgstr "Aplikace KDE - hry"
-
-# 28855 AttribValues/label
-#. tumbleweed/patterns-kde/patterns-kde-kde_ide/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_ide/summary
-msgid "KDE Integrated Development Environment"
-msgstr "Integrované vývojové prostředí pro KDE"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_ide/description
-msgid "Development environment for the Plasma Desktop"
-msgstr "Vývojové prostředí pro pracovní plochu Plasma"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_imaging/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_imaging/summary
-msgid "KDE Graphics"
-msgstr "KDE grafika"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_imaging/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_imaging/description
-msgid "KDE Applicatons - Handling of digital photos and graphics"
-msgstr "Aplikace KDE - manipulace s fotografiemi a grafikou"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_internet/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_internet/summary
-msgid "KDE Internet"
-msgstr "KDE internet"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_internet/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_internet/description
-msgid "KDE Internet Applications"
-msgstr "KDE internetové aplikace"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_multimedia/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_multimedia/summary
-msgid "KDE Multimedia"
-msgstr "KDE multimédia"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_multimedia/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_multimedia/description
-msgid "KDE Applications - Multimedia"
-msgstr "Aplikace KDE - multimédia"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_office/summary
-#. tumbleweed/patterns-kde/patterns-kde-kde_office/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_office/description
-msgid "KDE Office"
-msgstr "KDE kancelář"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_plasma/summary
-msgid "KDE Plasma 5 Desktop"
-msgstr "Plocha KDE Plasma 5"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_plasma/description
-msgid "Base packages for the KDE Plasma 5 desktop environment."
-msgstr "Základní balíčky pro prostředí plochy KDE Plasma 5."
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_telepathy/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_telepathy/summary
-msgid "KDE Telepathy"
-msgstr "Telepatie KDE"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_telepathy/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_telepathy/description
-msgid "KDE Applications - Telepathy"
-msgstr "Aplikace KDE - telepatie"
-
-# 54237 AttribValues/label
-#. tumbleweed/patterns-kde/patterns-kde-kde_utilities/summary
-#. tumbleweed/patterns-kde/patterns-kde-kde_utilities_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_utilities/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_utilities_opt/summary
-msgid "KDE Utilities"
-msgstr "KDE nástroje"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_utilities/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_utilities/description
-msgid "KDE Applications - Utilities"
-msgstr "Aplikace KDE - utility"
-
-#. tumbleweed/patterns-kde/patterns-kde-kde_utilities_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_utilities_opt/description
-msgid "KDE Application - Additional Utilities"
-msgstr "Aplikace KDE - přídavné utility"
-
-# 33139 AttribValues/label
-#. tumbleweed/patterns-kde/patterns-kde-kde_yast/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_yast/summary
-msgid "YaST KDE User Interfaces"
-msgstr "YaST KDE uživatelského rozhraní"
-
-# 49768 AttribValues/label
-#. tumbleweed/patterns-kde/patterns-kde-kde_yast/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kde_yast/description
-msgid "Graphical YaST user interfaces for the KDE desktop."
-msgstr "Grafické rozhraní programu YaST pro KDE."
-
-# 58968 AttribValues/label
-#. tumbleweed/patterns-kde/patterns-kde-sw_management_kde/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-sw_management_kde/summary
-msgid "Package Management - Graphical Tools for KDE"
-msgstr "Správa balíčků - grafické nástroje pro KDE"
-
-#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-leechcraft/summary
-msgid "leechcraft"
-msgstr "leechcraft"
-
-#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_browser/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-leechcraft_browser/summary
-msgid "leechcraft_browser"
-msgstr "leechcraft_browser (prohlížeč)"
-
-#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_media/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-leechcraft_media/summary
-msgid "leechcraft_media"
-msgstr "leechcraft_media"
-
-#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_messenger/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-leechcraft_messenger/summary
-msgid "leechcraft_messenger"
-msgstr "leechcraft_messenger (přenos zpráv)"
-
-#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_netutils/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-leechcraft_netutils/summary
-msgid "leechcraft_netutils"
-msgstr "leechcraft_netutils (síťové utility)"
-
-#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-leechcraft_office/summary
-msgid "leechcraft_office"
-msgstr "leechcraft_office (kancelář)"
-
-#. tumbleweed/patterns-leechcraft/patterns-leechcraft-leechcraft_utilities/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-leechcraft_utilities/summary
-msgid "leechcraft_utilities"
-msgstr "leechcraft_utilities"
-
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-lxde/summary
-msgid "LXDE Desktop Environment"
-msgstr "Pracovní prostředí LXDE"
-
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde/description
-#. leap/patterns-openSUSE/patterns-openSUSE-lxde/description
-msgid ""
-"LXDE is a lightweight X11 desktop environment similiar to XFCE in its nature."
-msgstr "LXDE je odlehčené desktopové prostředí X11 v podstatě podobné XFCE."
-
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde_laptop/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-lxde_laptop/summary
-msgid "LXDE Laptop"
-msgstr "LXDE notebook"
-
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde_laptop/description
-#. leap/patterns-openSUSE/patterns-openSUSE-lxde_laptop/description
-msgid "LXDE Tools designed specifically for use with laptop computers."
-msgstr "Nástroje prostředí LXDE navržené pro práci s notebooky."
-
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/summary
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/description
-#. leap/patterns-openSUSE/patterns-openSUSE-lxde_office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-lxde_office/description
-msgid "LXDE Office"
-msgstr "LXDE kancelář"
-
-#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-lxqt/summary
-msgid "LXQt Desktop Environment"
-msgstr "Prostředí plochy LXQt"
-
-#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-lxqt/description
-msgid "LXQt is a lightweight desktop environment based on Qt."
-msgstr "LXQt je zjednodušené prostředí plochy založené na Qt."
-
-#. tumbleweed/patterns-mate/patterns-mate-mate/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate/summary
-msgid "MATE Desktop Environment"
-msgstr "Prostředí plochy MATE"
-
-#. tumbleweed/patterns-mate/patterns-mate-mate/description
-msgid ""
-"The MATE desktop environment is a desktop environment using traditional "
-"metaphors."
-msgstr "Prostředí plochy MATE je pracovní plocha používající tradiční metafory."
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_admin/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_admin/summary
-msgid "MATE Administration Tools"
-msgstr "Nástroje správy MATE"
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_admin/description
-msgid "Administration Tools e.g. for desktop lockdown."
-msgstr "Nástroje správy, např. pro uzamčení plochy."
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_basis/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_basis/summary
-msgid "MATE Base System"
-msgstr "Základní systém MATE"
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_basis/description
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_basis/description
-msgid "Base packages for the MATE desktop environment."
-msgstr "Základní balíčky pro prostředí plochy MATE."
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_internet/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_internet/summary
-msgid "MATE Internet"
-msgstr "Internet MATE"
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_internet/description
-msgid "MATE Internet Applications."
-msgstr "Aplikace Internetu MATE."
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_laptop/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_laptop/summary
-msgid "MATE Laptop"
-msgstr "MATE Laptop"
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_laptop/description
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_laptop/description
-msgid "MATE Tools designed specifically for use with laptop computers."
-msgstr "Nástroje MATE speciálně navržené pro použití na laptopech/ntb."
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_office/summary
-#. tumbleweed/patterns-mate/patterns-mate-mate_office/description
-#. tumbleweed/patterns-mate/patterns-mate-mate_office_opt/summary
-#. tumbleweed/patterns-mate/patterns-mate-mate_office_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_office/description
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_office_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_office_opt/description
-msgid "MATE Office"
-msgstr "MATE Office"
-
-#. tumbleweed/patterns-mate/patterns-mate-mate_utilities/summary
-#. tumbleweed/patterns-mate/patterns-mate-mate_utilities/description
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_utilities/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_utilities/description
-msgid "MATE Utilities"
-msgstr "Utility MATE"
-
-#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
-#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/summary
-#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/summary
-#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/summary
-#. tumbleweed/patterns-media/patterns-media-rest_dvd/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_cd_gnome/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_cd_kde/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_cd_x11/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_core_dvd/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_dvd/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_dvd9/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_promo_dvd/summary
-msgid "Remaining Software"
-msgstr "Ostatní software"
-
-#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/description
-#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/description
-#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/description
-#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/description
-#. tumbleweed/patterns-media/patterns-media-rest_dvd/description
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_cd_gnome/description
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_cd_kde/description
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_cd_x11/description
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_core_dvd/description
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_dvd/description
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_dvd9/description
-#. leap/patterns-openSUSE/patterns-openSUSE-rest_promo_dvd/description
-msgid "Packages that are on CD but not in other patterns."
-msgstr "Balíčky, které jsou na CD, ale nejsou součástí žádného profilu."
-
-#. tumbleweed/patterns-network/patterns-network-network_admin/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-network_admin/summary
-msgid "Network Administration"
-msgstr "Správa sítě"
-
-#. tumbleweed/patterns-network/patterns-network-network_admin/description
-#. leap/patterns-openSUSE/patterns-openSUSE-network_admin/description
-msgid "Tools for administering and debugging networks."
-msgstr "Nástroje pro správu sítě k ladění sítě."
-
-#. tumbleweed/patterns-non_oss/summary
-#. tumbleweed/patterns-non_oss/patterns-non_oss_opt/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-non_oss/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-non_oss_opt/summary
-msgid "Misc. Proprietary Packages"
-msgstr "Různé proprietární balíčky"
-
-#. tumbleweed/patterns-non_oss/description
-msgid "Packages that are proprietary and not under an Open Source license"
-msgstr "Proprietární balíčky - nejsou šířeny pod některou z licencí Open Source"
-
-#. tumbleweed/patterns-non_oss/patterns-non_oss_opt/description
-#. leap/patterns-openSUSE/patterns-openSUSE-non_oss/description
-#. leap/patterns-openSUSE/patterns-openSUSE-non_oss_opt/description
-msgid "Packages that are proprietary and not under an Open Source license."
-msgstr "Balíčky, které nejsou šířeny pod některou z open source licencí."
-
-#. tumbleweed/patterns-office/patterns-office-office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-office_opt/summary
-msgid "Office Software"
-msgstr "Kancelářské programy"
-
-#. tumbleweed/patterns-office/patterns-office-office/description
-#. leap/patterns-openSUSE/patterns-openSUSE-office/description
-#. leap/patterns-openSUSE/patterns-openSUSE-office_opt/description
-msgid "Office software for your desktop environment including LibreOffice."
-msgstr "Kancelářské programy pro vaše pracovní prostředí včetně LibreOffice."
-
-#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-dhcp_dns_server/summary
-msgid "DHCP and DNS Server"
-msgstr "DHCP a DNS server"
-
-#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-dhcp_dns_server/description
-msgid ""
-"Software to set up a server for the Dynamic Host Configuration Protocol "
-"(DHCP) and the Domain Name System (DNS) services. DHCP provides "
-"configuration parameters to client computers to integrate them into a "
-"network, whereas DNS delivers information associated with domain names, in "
-"particular, the IP address."
+#. tumbleweed/patterns-hpc/patterns-hpc-development_node/summary
+#. leap/patterns-hpc/patterns-hpc-development_node/summary
+msgid "Packages needed to be able to develop HPC Apps"
 msgstr ""
-"Nastavení DHCP serveru, který se postará o automatické síťové nastavení "
-"pracovních stanic ve vaší síti. Součásti je také DNS server, který se "
-"postará o správné rozpoznávání jmen staniv síti."
 
-#. tumbleweed/patterns-server/patterns-server-directory_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-directory_server/summary
-msgid "Directory Server (LDAP)"
-msgstr "Adresářový server (LDAP)"
-
-#. tumbleweed/patterns-server/patterns-server-directory_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-directory_server/description
+#. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
+#. leap/patterns-hpc/patterns-hpc-development_node/description
 msgid ""
-"Software to set up a directory server with OpenLDAP. The Lightweight "
-"Directory Access Protocol (LDAP) is used to access online directory services."
+"This package provides all the relevant packages for developing HPC "
+"applications. It depends on the hpc-compute node and adds additionally the "
+"compilers and includes also the relevant managment packages."
 msgstr ""
-"Software k vytvoření adresářových serverů OpenLDAP. Pro přístup k on-line "
-"adresářovým službám se používá protokol Lightweight Directory Access "
-"Protocol (LDAP)."
 
-#. tumbleweed/patterns-server/patterns-server-file_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-file_server/summary
-msgid "File Server"
-msgstr "Souborový server"
-
-#. tumbleweed/patterns-server/patterns-server-file_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-file_server/description
-msgid ""
-"File services to host files so that they may be accessed or retrieved by "
-"other computers on the same network. This includes the FTP, SMB, and NFS "
-"protocols."
+#. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
+#. leap/patterns-hpc/patterns-hpc-libraries/summary
+msgid "HPC modularized libraries"
 msgstr ""
-"Souborové služby umožňující přístup k souborům z ostatních počítačů v síti. "
-"Obsahuje FTP, SMB a NFS protokoly."
 
-#. tumbleweed/patterns-server/patterns-server-gateway_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-gateway_server/summary
-msgid "Internet Gateway"
-msgstr "Internetová brána"
-
-#. tumbleweed/patterns-server/patterns-server-gateway_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-gateway_server/description
+#. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
+#. leap/patterns-hpc/patterns-hpc-libraries/description
 msgid ""
-"Software to set up a proxy, firewall, and gateway server, including a "
-"virtual private network (VPN) gateway."
+"This package provides all the modularized libraries so that they can be used "
+"in a hpc environment. Especially these libariries allows you to install a "
+"mpi enabled libarary for different mpi libraries."
 msgstr ""
-"Nastavení proxy, firewallu a brány pro připojení k Internetu. Součástí je "
-"také VPN (virtual private network)."
 
-#. tumbleweed/patterns-server/patterns-server-kvm_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-kvm_server/summary
-msgid "KVM Host Server"
-msgstr "Hostitelský server KVM"
+#. leap/patterns-base/patterns-base-32bit/summary
+msgid "32-Bit Runtime Environment"
+msgstr "32bitový běhový systém"
 
-#. tumbleweed/patterns-server/patterns-server-kvm_server/description
-#. tumbleweed/patterns-server/patterns-server-xen_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-kvm_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-xen_server/description
+#. leap/patterns-base/patterns-base-apparmor-32bit/description
+msgid "The 32bit pattern complementing apparmor."
+msgstr ""
+
+#. leap/patterns-base/patterns-base-base-32bit/description
+msgid "The 32bit pattern complementing base."
+msgstr ""
+
+#. leap/patterns-base/patterns-base-documentation/summary
+#. leap/patterns-base/patterns-base-documentation/description
+msgid "Help and Support Documentation"
+msgstr "Nápověda a dokumentace"
+
+#. leap/patterns-base/patterns-base-enhanced_base-32bit/description
+msgid "The 32bit pattern complementing enhanced_base."
+msgstr ""
+
+#. leap/patterns-base/patterns-base-minimal_base-32bit/description
+msgid "The 32bit pattern complementing minimal_base."
+msgstr ""
+
+#. leap/patterns-base/patterns-base-sw_management-32bit/description
+msgid "The 32bit pattern complementing sw_management."
+msgstr ""
+
+#. leap/patterns-base/patterns-base-x11-32bit/description
+msgid "The 32bit pattern complementing x11."
+msgstr ""
+
+#. leap/patterns-base/patterns-base-x11_enhanced-32bit/description
+msgid "The 32bit pattern complementing x11_enhanced."
+msgstr ""
+
+#. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/description
+msgid "The 32bit pattern complementing dhcp_dns_server."
+msgstr ""
+
+#. leap/patterns-server/patterns-server-directory_server-32bit/description
+msgid "The 32bit pattern complementing directory_server."
+msgstr ""
+
+#. leap/patterns-server/patterns-server-file_server-32bit/description
+msgid "The 32bit pattern complementing file_server."
+msgstr ""
+
+#. leap/patterns-server/patterns-server-gateway_server-32bit/description
+msgid "The 32bit pattern complementing gateway_server."
+msgstr ""
+
+#. leap/patterns-server/patterns-server-kvm_server-32bit/description
+msgid "The 32bit pattern complementing kvm_server."
+msgstr ""
+
+#. leap/patterns-server/patterns-server-kvm_tools/summary
+#. leap/patterns-server/patterns-server-kvm_tools-32bit/summary
+#, fuzzy
+#| msgid "KVM Virtualization Host (non-embedded)"
+msgid "KVM Virtualization Host and tools"
+msgstr "Virtualizační hostitel KVM (nezabudovaný)"
+
+#. leap/patterns-server/patterns-server-kvm_tools/description
+#, fuzzy
+#| msgid ""
+#| "Software to set up a server for configuring, managing, and monitoring "
+#| "virtual machines on a single physical machine."
 msgid ""
-"Software to set up a server for configuring, managing, and monitoring "
-"virtual machines on a single physical machine."
+"This will provide all minimal system to get a running KVM Hypervisor and be "
+"able to configure, manage, and monitor virtual machines on a single physical "
+"machine."
 msgstr "Nastavení serveru pro správu a monitorování virtuálního stroje."
 
-#. tumbleweed/patterns-server/patterns-server-lamp_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-lamp_server/summary
-msgid "Web and LAMP Server"
-msgstr "Webový a LAMP server"
-
-#. tumbleweed/patterns-server/patterns-server-lamp_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-lamp_server/description
-msgid ""
-"Software to set up a Web server that is able to serve static, dynamic, and "
-"interactive content (like a Web shop). This includes Apache HTTP Server, the "
-"database management system MySQL, and scripting languages such as PHP, "
-"Python, Ruby on Rails, or Perl."
+#. leap/patterns-server/patterns-server-kvm_tools-32bit/description
+msgid "The 32bit pattern complementing kvm_tools."
 msgstr ""
-"Nastavení webového serveru pro statický, dynamické i interaktivní obsah "
-"(např. webový obchod). Základem je webový server Apache, databázový systém "
-"MySQL a skriptovací jazyky jako např. PHP, Python, Ruby on Rails nebo Perl."
 
-#. tumbleweed/patterns-server/patterns-server-mail_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-mail_server/summary
-msgid "Mail and News Server"
-msgstr "Poštovní a news server"
-
-#. tumbleweed/patterns-server/patterns-server-mail_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-mail_server/description
-msgid ""
-"Software to set up electronic mail and message services to handle email, "
-"mailing, and news lists, including a virus scanner to scan messages at the "
-"server level."
+#. leap/patterns-server/patterns-server-lamp_server-32bit/description
+msgid "The 32bit pattern complementing lamp_server."
 msgstr ""
-"Software pro tvorbu elektronické pošty a služby zpráv e-mailu, okamžitých "
-"zpráv a seznamů odebíraného zpravodajství (kanálů), včetně virového skeneru "
-"k prohledání zpráv na úrovni serveru."
 
-#. tumbleweed/patterns-server/patterns-server-print_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-print_server/summary
-msgid "Print Server"
-msgstr "Tiskový server"
-
-#. tumbleweed/patterns-server/patterns-server-print_server/description
-#. leap/patterns-openSUSE/patterns-openSUSE-print_server/description
-msgid ""
-"Software used to host print queues so that they may be accessed by other "
-"computers on the same network. LPD, CUPS, and SMB print servers and queues "
-"are supported."
+#. leap/patterns-server/patterns-server-mail_server-32bit/description
+msgid "The 32bit pattern complementing mail_server."
 msgstr ""
-"Software používaný pro vytváření tiskových front, ke kterým lze přistupovat "
-"z jiných počítačů v síti. Obsahuje podporu pro LDP, CUPS a SMB tiskové "
-"servery a fronty."
 
-#. tumbleweed/patterns-server/patterns-server-xen_server/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-xen_server/summary
-msgid "Xen Virtual Machine Host Server"
-msgstr "Hostitelský systém pro Xen"
-
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce/summary
-msgid "XFCE Desktop Environment"
-msgstr "Prostředí XFCE"
-
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce/description
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce/description
-msgid "Xfce is a lightweight desktop environment for various *NIX systems."
-msgstr "Xfce je jednoduché pracovní prostředí pro různé *NIXové systémy."
-
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce_basis/summary
-msgid "XFCE Base System"
-msgstr "Základní systém XFCE"
-
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/description
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce_basis/description
-msgid "Base packages for the XFCE Desktop Environment"
-msgstr "Základní balíčky prostředí pracovní plochy XFCE"
-
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_laptop/summary
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_laptop/description
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce_laptop/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce_laptop/description
-msgid "XFCE Laptop"
-msgstr "XFCE Laptop"
-
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/summary
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/description
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce_office/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-xfce_office/description
-msgid "XFCE Office"
-msgstr "XFCE kancelář"
-
-#. tumbleweed/patterns-yast/patterns-yast-devel_yast/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_yast/summary
-msgid "YaST Development"
-msgstr "Vývoj YaSTu"
-
-#. tumbleweed/patterns-yast/patterns-yast-devel_yast/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_yast/description
+#. leap/patterns-server/patterns-server-printing/description
 msgid ""
-"Tools and libraries for developing YaST modules, the setup and configuration "
-"tool for openSUSE."
+"This pattern provides all packages necessary for printing. It provides all "
+"needed packages for printing to a locally connected printer, printing using "
+"a remote print server and for setting up a print server."
 msgstr ""
-"Nástroje a knihovny pro vývoj modulů programu YaST, instalačního a "
-"konfiguračního nástroje openSUSE."
 
-# 33139 AttribValues/label
-#. tumbleweed/patterns-yast/patterns-yast-x11_yast/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-x11_yast/summary
-msgid "YaST User Interfaces"
-msgstr "YaST uživatelského rozhraní"
+#. leap/patterns-server/patterns-server-printing-32bit/description
+msgid "The 32bit pattern complementing printing."
+msgstr ""
 
-# 49768 AttribValues/label
-#. tumbleweed/patterns-yast/patterns-yast-x11_yast/description
-#. leap/patterns-openSUSE/patterns-openSUSE-x11_yast/description
-msgid "Graphical YaST user interfaces for minimal X desktop."
-msgstr "Grafické rozhraní programu YaST pro minimální X systém."
+#. leap/patterns-server/patterns-server-xen_server-32bit/description
+msgid "The 32bit pattern complementing xen_server."
+msgstr ""
 
-# 49865 AttribValues/label
-#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-yast2_basis/summary
-msgid "YaST System Administration"
-msgstr "YaST správa systému"
+#. leap/patterns-server/patterns-server-xen_tools/summary
+#. leap/patterns-server/patterns-server-xen_tools-32bit/summary
+#, fuzzy
+#| msgid "XEN Virtualization Host (non-embedded)"
+msgid "XEN Virtualization Host and tools"
+msgstr "Virtualizační hostitel XEN (nezabudovaný)"
 
-# 49865 AttribValues/label
-#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/description
-#. leap/patterns-openSUSE/patterns-openSUSE-yast2_basis/description
-msgid "YaST tools for basic system administration."
-msgstr "Nástroje programu YaST pro základní správu systému."
+#. leap/patterns-server/patterns-server-xen_tools/description
+#, fuzzy
+#| msgid ""
+#| "Software to set up a server for configuring, managing, and monitoring "
+#| "virtual machines on a single physical machine."
+msgid ""
+"This will provide all minimal system to get a running XEN Hypervisor and be "
+"able to configure, manage, and monitor virtual machines on a single physical "
+"machine."
+msgstr "Nastavení serveru pro správu a monitorování virtuálního stroje."
 
-# 51925 AttribValues/label
-#. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/summary
-#. leap/patterns-openSUSE/patterns-openSUSE-yast2_install_wf/summary
-msgid "YaST Installation Packages"
-msgstr "Instalační balíčky programu YaST2"
+#. leap/patterns-server/patterns-server-xen_tools-32bit/description
+msgid "The 32bit pattern complementing xen_tools."
+msgstr ""
 
-#. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/description
-#. leap/patterns-openSUSE/patterns-openSUSE-yast2_install_wf/description
-msgid "YaST tools for installing your system."
-msgstr "Nástroje YaSTu pro instalaci systému."
+#~ msgid ""
+#~ "This pattern installs the 32-bit variant of all selected patterns, "
+#~ "allowing you to execute 32-bit software."
+#~ msgstr ""
+#~ "Tímto profilem se nainstalují 32bitové verze všech zvolených profilů. Lze "
+#~ "tak spouštět 32bitový software."
 
-#. tumbleweed/patterns-rpm-macros/summary
-msgid "RPM macros for building of patterns modules"
-msgstr "RPM makra pro budování modulů šablon"
+#~ msgid "64-Bit Runtime Environment"
+#~ msgstr "64 bitový běhový systém"
 
-#. tumbleweed/patterns-rpm-macros/description
-msgid "This package contains SUSE RPM macros to aid creating patterns."
-msgstr "Tento balíček obsahuje makra SUSE RPM - pomoc při tvorbě šablon."
+#~ msgid ""
+#~ "This pattern installs the 64-bit variant of all selected patterns, "
+#~ "allowing you to execute 64-bit software."
+#~ msgstr ""
+#~ "Tímto profilem se nainstalují 64bitové verze všech zvolených profilů. Lze "
+#~ "tak spouštět 64bitový software."
 
-# 28855 AttribValues/label
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_ide/summary
-msgid "Integrated Development Environments"
-msgstr "Integrovaná vývojová prostředí"
-
-# 28855 AttribValues/label
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_ide/description
-msgid "Integrated Development Environments."
-msgstr "Integrovaná vývojová prostředí."
-
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_python3/summary
-msgid "Python 3 Development"
-msgstr "Vývoj Python 3"
-
-# 51485 AttribValues/label
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_qt4/summary
-msgid "Qt 4 Development"
-msgstr "Vývoj v Qt 4"
+#~ msgid "Python Development"
+#~ msgstr "Vývoj v Pythonu"
 
 # 53574 AttribValues/description
-#. leap/patterns-openSUSE/patterns-openSUSE-devel_qt4/description
-msgid ""
-"Tools and libraries for software development using Qt 4, the latest version "
-"of the Qt toolkit."
-msgstr ""
-"Nástroje a knihovny potřebné pro vývoj v Qt 4, poslední verzi Qt toolkitu."
+#~ msgid ""
+#~ "Tools and libraries for software development using the Python programming "
+#~ "language."
+#~ msgstr "Nástroje a knihovny potřebné pro vývoj v jazyku Python."
 
-#. leap/patterns-openSUSE/patterns-openSUSE-enlightenment/summary
-msgid "Enlightment"
-msgstr "Enlightment"
+#~ msgid "KDE Telepathy"
+#~ msgstr "Telepatie KDE"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-enlightenment/description
-msgid "Enlightment Window Manager and applications"
-msgstr "Aplikace a správce oken Enlightenment"
+#~ msgid "KDE Applications - Telepathy"
+#~ msgstr "Aplikace KDE - telepatie"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-generic_server/summary
-msgid "Generic Server"
-msgstr "Obecný server"
+# 58968 AttribValues/label
+#~ msgid "Package Management - Graphical Tools for KDE"
+#~ msgstr "Správa balíčků - grafické nástroje pro KDE"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-generic_server/description
-msgid "Software that is useful to run on a server."
-msgstr "Software užitečný pro běh na serveru."
+#~ msgid "Misc. Proprietary Packages"
+#~ msgstr "Různé proprietární balíčky"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-mate/description
-msgid ""
-"The MATE desktop environment is a desktop environment using traditional "
-"metaphors"
-msgstr ""
-"Prostředí plochy MATE je prostředí pracovní plochy používající tradiční "
-"metafory"
+#~ msgid "Packages that are proprietary and not under an Open Source license"
+#~ msgstr ""
+#~ "Proprietární balíčky - nejsou šířeny pod některou z licencí Open Source"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-mate_internet/description
-msgid "MATE Internet Applications"
-msgstr "Internetové aplikace MATE"
+#~ msgid "Packages that are proprietary and not under an Open Source license."
+#~ msgstr "Balíčky, které nejsou šířeny pod některou z open source licencí."
 
-#. leap/patterns-openSUSE/patterns-openSUSE-misc_server/summary
-msgid "Miscellaneous Server"
-msgstr "Ostatní servery"
+# 28855 AttribValues/label
+#~ msgid "Integrated Development Environments"
+#~ msgstr "Integrovaná vývojová prostředí"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-misc_server/description
-msgid "Miscellaneous Server."
-msgstr "Ostatní servery."
+# 28855 AttribValues/label
+#~ msgid "Integrated Development Environments."
+#~ msgstr "Integrovaná vývojová prostředí."
 
-#. leap/patterns-openSUSE/patterns-openSUSE-multimedia_opt/description
-msgid ""
-"Multimedia players, sound editing tools , video and image manipulation "
-"applications."
-msgstr ""
-"Multimediální přehrávače, nástroje pro editaci zvuku nebo videa a programy "
-"pro práci s obrázky."
+#~ msgid "Python 3 Development"
+#~ msgstr "Vývoj Python 3"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-remote_desktop/summary
-msgid "Remote Desktop"
-msgstr "Vzdálená plocha"
+# 51485 AttribValues/label
+#~ msgid "Qt 4 Development"
+#~ msgstr "Vývoj v Qt 4"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-remote_desktop/description
-msgid "Tools to access a remote desktop."
-msgstr "Nástroje pro přístup ke vzdálené ploše."
+# 53574 AttribValues/description
+#~ msgid ""
+#~ "Tools and libraries for software development using Qt 4, the latest "
+#~ "version of the Qt toolkit."
+#~ msgstr ""
+#~ "Nástroje a knihovny potřebné pro vývoj v Qt 4, poslední verzi Qt toolkitu."
 
-#. leap/patterns-openSUSE/patterns-openSUSE-tabletpc/summary
-msgid "TabletPC"
-msgstr "TabletPC"
+#~ msgid "Enlightment"
+#~ msgstr "Enlightment"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-tabletpc/description
-msgid "Tools designed specifically for use with TabletPCs."
-msgstr "Nástroje navržené pro použití v kombinaci s TabletPC."
+#~ msgid "Enlightment Window Manager and applications"
+#~ msgstr "Aplikace a správce oken Enlightenment"
 
-#. leap/patterns-openSUSE/patterns-openSUSE-voip/summary
-msgid "Voice Over IP Clients"
-msgstr "Klienti pro IP telefonii"
+#~ msgid "Generic Server"
+#~ msgstr "Obecný server"
+
+#~ msgid "Software that is useful to run on a server."
+#~ msgstr "Software užitečný pro běh na serveru."
+
+#~ msgid ""
+#~ "The MATE desktop environment is a desktop environment using traditional "
+#~ "metaphors"
+#~ msgstr ""
+#~ "Prostředí plochy MATE je prostředí pracovní plochy používající tradiční "
+#~ "metafory"
+
+#~ msgid "MATE Internet Applications"
+#~ msgstr "Internetové aplikace MATE"
+
+#~ msgid "Miscellaneous Server"
+#~ msgstr "Ostatní servery"
+
+#~ msgid "Miscellaneous Server."
+#~ msgstr "Ostatní servery."
+
+#~ msgid ""
+#~ "Multimedia players, sound editing tools , video and image manipulation "
+#~ "applications."
+#~ msgstr ""
+#~ "Multimediální přehrávače, nástroje pro editaci zvuku nebo videa a "
+#~ "programy pro práci s obrázky."
+
+#~ msgid "Remote Desktop"
+#~ msgstr "Vzdálená plocha"
+
+#~ msgid "Tools to access a remote desktop."
+#~ msgstr "Nástroje pro přístup ke vzdálené ploše."
+
+#~ msgid "TabletPC"
+#~ msgstr "TabletPC"
+
+#~ msgid "Tools designed specifically for use with TabletPCs."
+#~ msgstr "Nástroje navržené pro použití v kombinaci s TabletPC."
+
+#~ msgid "Voice Over IP Clients"
+#~ msgstr "Klienti pro IP telefonii"
 
 # 49893 AttribValues/label
-#. leap/patterns-openSUSE/patterns-openSUSE-voip/description
-msgid "Client applications for Internet telephony."
-msgstr "Klientské aplikace pro internetovou telefonii."
+#~ msgid "Client applications for Internet telephony."
+#~ msgstr "Klientské aplikace pro internetovou telefonii."
 
 #~ msgid "Additional Software"
 #~ msgstr "Dodatečný software"
@@ -1465,9 +1707,6 @@ msgstr "Klientské aplikace pro internetovou telefonii."
 
 #~ msgid "Graphical Environments"
 #~ msgstr "Grafická rozhraní"
-
-#~ msgid "Help and Support Documentation"
-#~ msgstr "Nápověda a dokumentace"
 
 #~ msgid "High Availability"
 #~ msgstr "Vysoká dostupnost"
@@ -1592,9 +1831,6 @@ msgstr "Klientské aplikace pro internetovou telefonii."
 # 28855 AttribValues/label
 #~ msgid "KDE4 Integrated Development Environment"
 #~ msgstr "Integrované vývojové prostředí pro KDE4"
-
-#~ msgid "KVM Virtualization Host (non-embedded)"
-#~ msgstr "Virtualizační hostitel KVM (nezabudovaný)"
 
 #~ msgid "Kernel Development"
 #~ msgstr "Vývoj jádra"
@@ -1880,6 +2116,3 @@ msgstr "Klientské aplikace pro internetovou telefonii."
 # 33139 AttribValues/label
 #~ msgid "WebYaST: User interface components"
 #~ msgstr "WebYaST: Komponenty uživatelského rozhraní"
-
-#~ msgid "XEN Virtualization Host (non-embedded)"
-#~ msgstr "Virtualizační hostitel XEN (nezabudovaný)"

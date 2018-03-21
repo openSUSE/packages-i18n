@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2017-07-26 00:23:10\n"
+"POT-Creation-Date: 2018-03-21 10:09+0000\n"
 "PO-Revision-Date: 2016-02-02 01:17:11\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -176,6 +176,19 @@ msgstr ""
 #. tumbleweed/R-base/R-core-packages/description
 #. leap/R-base/R-core-packages/description
 msgid "Metapackage, Requires: all core Packages"
+msgstr ""
+
+#. tumbleweed/R-crayon/summary
+msgid "Colored Terminal Output"
+msgstr ""
+
+#. tumbleweed/R-crayon/description
+msgid ""
+"Colored terminal output on terminals that support 'ANSI' color and highlight "
+"codes. It also works in 'Emacs' 'ESS'. 'ANSI' color support is automatically "
+"detected. Colors and highlighting can be combined and nested. New styles can "
+"also be created easily. This package was inspired by the 'chalk' "
+"'JavaScript' project."
 msgstr ""
 
 #. tumbleweed/R-base/R-datasets/summary
@@ -414,7 +427,7 @@ msgstr ""
 #. tumbleweed/Rivet/libRivet-2_5_4/summary
 #. tumbleweed/Rivet/python-Rivet/summary
 #. leap/Rivet/Rivet-devel/summary
-#. leap/Rivet/libRivet-2_5_2/summary
+#. leap/Rivet/libRivet-2_5_4/summary
 #. leap/Rivet/python-Rivet/summary
 msgid "A toolkit for validation of Monte Carlo event generators"
 msgstr ""
@@ -487,16 +500,15 @@ msgstr ""
 #. tumbleweed/resource-agents/ldirectord/description
 #. leap/resource-agents/ldirectord/description
 msgid ""
-"ldirectord is a stand alone daemon for monitoring the services on real "
+"ldirectord is a stand-alone daemon for monitoring the services on real "
 "servers. Currently, HTTP, HTTPS, and FTP services are supported. ldirectord "
-"is simple to install and works with the heartbeat code (http://www.linux-ha."
-"org/).\n"
+"works with the heartbeat code (http://www.linux-ha.org/).\n"
 "\n"
-"See 'ldirectord -h' and linux-ha/doc/ldirectord for more information."
+"See `ldirectord -h` and linux-ha/doc/ldirectord for more information."
 msgstr ""
 
 #. tumbleweed/Rivet/libRivet-2_5_4/description
-#. leap/Rivet/libRivet-2_5_2/description
+#. leap/Rivet/libRivet-2_5_4/description
 msgid ""
 "The Rivet project (Robust Independent Validation of Experiment and Theory) "
 "is a toolkit for validation of Monte Carlo event generators. It provides a "
@@ -511,30 +523,16 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ragel/libfsm0/summary
+#. leap/ragel/libfsm0/summary
 msgid "Library implementing a finite state machine"
 msgstr ""
 
 #. tumbleweed/ragel/libfsm0/description
+#. leap/ragel/libfsm0/description
 msgid ""
 "libfsm is one of ragel's component libraries. Ragel compiles finite state "
 "machines from regular languages into executable C, C++, Objective-C, or D "
 "code."
-msgstr ""
-
-#. tumbleweed/rdma-core/libibcm1/summary
-#. tumbleweed/rdma-core/libibcm1-32bit/summary
-#. leap/rdma-core/libibcm1/summary
-#. leap/rdma-core/libibcm1-32bit/summary
-msgid "Userspace InfiniBand Connection Manager"
-msgstr ""
-
-#. tumbleweed/rdma-core/libibcm1/description
-#. tumbleweed/rdma-core/libibcm1-32bit/description
-#. leap/rdma-core/libibcm1/description
-#. leap/rdma-core/libibcm1-32bit/description
-msgid ""
-"libibcm provides a userspace library that handles the majority of the low "
-"level work required to open an RDMA connection between two machines."
 msgstr ""
 
 #. tumbleweed/rdma-core/libibumad3/summary
@@ -573,11 +571,11 @@ msgid ""
 "userspace to InfiniBand/iWARP adapters (kernel bypass) for fast path "
 "operations.\n"
 "\n"
-"Device-specific plug-in ibverbs userspace drivers are included:\n"
-"\n"
+"Device-specific plug-in ibverbs userspace drivers are included: \n"
 "- libcxgb3: Chelsio T3 iWARP HCA\n"
 "- libcxgb4: Chelsio T4 iWARP HCA\n"
 "- libhfi1: Intel Omni-Path HFI\n"
+"- libhns: HiSilicon Hip06 SoC\n"
 "- libi40iw: Intel Ethernet Connection X722 RDMA\n"
 "- libipathverbs: QLogic InfiniPath HCA\n"
 "- libmlx4: Mellanox ConnectX-3 InfiniBand HCA\n"
@@ -585,7 +583,9 @@ msgid ""
 "- libmthca: Mellanox InfiniBand HCA\n"
 "- libnes: NetEffect RNIC\n"
 "- libocrdma: Emulex OneConnect RDMA/RoCE Device\n"
-"- librxe: A software implementation of the RoCE protocol"
+"- libqedr: QLogic QL4xxx RoCE HCA\n"
+"- librxe: A software implementation of the RoCE protocol\n"
+"- libvmw_pvrdma: VMware paravirtual RDMA device"
 msgstr ""
 
 #. tumbleweed/rdma-core/libibverbs-utils/summary
@@ -614,6 +614,20 @@ msgstr ""
 msgid "This package contains the ibverbs runtime library."
 msgstr ""
 
+#. tumbleweed/rdma-core/libmlx4-1/summary
+#. tumbleweed/rdma-core/libmlx4-1-32bit/summary
+#. leap/rdma-core/libmlx4-1/summary
+#. leap/rdma-core/libmlx4-1-32bit/summary
+msgid "MLX4 runtime library"
+msgstr ""
+
+#. tumbleweed/rdma-core/libmlx4-1/description
+#. tumbleweed/rdma-core/libmlx4-1-32bit/description
+#. leap/rdma-core/libmlx4-1/description
+#. leap/rdma-core/libmlx4-1-32bit/description
+msgid "This package contains the mlx4 runtime library."
+msgstr ""
+
 #. tumbleweed/rdma-core/libmlx5-1/summary
 #. tumbleweed/rdma-core/libmlx5-1-32bit/summary
 #. leap/rdma-core/libmlx5-1/summary
@@ -626,16 +640,6 @@ msgstr ""
 #. leap/rdma-core/libmlx5-1/description
 #. leap/rdma-core/libmlx5-1-32bit/description
 msgid "This package contains the mlx5 runtime library."
-msgstr ""
-
-#. tumbleweed/ragel/libragel0/summary
-msgid "Finite state machine"
-msgstr ""
-
-#. tumbleweed/ragel/libragel0/description
-msgid ""
-"Ragel compiles finite state machines from regular languages into executable "
-"C, C++, Objective-C, or D code."
 msgstr ""
 
 #. tumbleweed/raptor/libraptor-devel/summary
@@ -729,6 +733,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rawstudio/librawstudio-devel/summary
+#. leap/rawstudio/librawstudio-devel/summary
 msgid "Development files for rawstudio"
 msgstr ""
 
@@ -737,6 +742,16 @@ msgstr ""
 msgid ""
 "This package contains, header files, and libraries needed to develop "
 "application that use librawstudio."
+msgstr ""
+
+#. tumbleweed/raylib/libraylib1/summary
+#. leap/raylib/libraylib1/summary
+msgid "C library for learning video game programming"
+msgstr ""
+
+#. tumbleweed/raylib/libraylib1/description
+#. leap/raylib/libraylib1/description
+msgid "A C library for learning video game programming."
 msgstr ""
 
 #. tumbleweed/redland/librdf0/summary
@@ -784,16 +799,20 @@ msgstr ""
 #. tumbleweed/rdma-core/librdmacm1-32bit/description
 #. leap/rdma-core/librdmacm1/description
 #. leap/rdma-core/librdmacm1-32bit/description
-msgid "librdmacm provides a userspace RDMA Communication Managment API."
+msgid "librdmacm provides a userspace RDMA Communication Management API."
 msgstr ""
 
 #. tumbleweed/re2/libre2-0/summary
+#. tumbleweed/re2/libre2-0-32bit/summary
 #. leap/re2/libre2-0/summary
+#. leap/re2/libre2-0-32bit/summary
 msgid "C++ fast alternative to backtracking RE engines"
 msgstr ""
 
 #. tumbleweed/re2/libre2-0/description
+#. tumbleweed/re2/libre2-0-32bit/description
 #. leap/re2/libre2-0/description
+#. leap/re2/libre2-0-32bit/description
 msgid ""
 "RE2 is a C++ library providing a fast, safe, thread-friendly alternative to "
 "backtracking regular expression engines like those used in PCRE, Perl, and "
@@ -830,18 +849,18 @@ msgid ""
 "of the REXX Interpreter."
 msgstr ""
 
-#. tumbleweed/reiser4progs/libreiser4-1_1-0/summary
-#. leap/reiser4progs/libreiser4-1_1-0/summary
+#. tumbleweed/reiser4progs/libreiser4-1_2-1/summary
+#. leap/reiser4progs/libreiser4-1_2-1/summary
 msgid "Reiser4 filesystem library"
 msgstr ""
 
-#. tumbleweed/reiser4progs/libreiser4-minimal-1_1-0/summary
-#. leap/reiser4progs/libreiser4-minimal-1_1-0/summary
+#. tumbleweed/reiser4progs/libreiser4-minimal-1_2-1/summary
+#. leap/reiser4progs/libreiser4-minimal-1_2-1/summary
 msgid "Minimal version of the Reiser4 filesystem library"
 msgstr ""
 
-#. tumbleweed/reiser4progs/libreiser4-minimal-1_1-0/description
-#. leap/reiser4progs/libreiser4-minimal-1_1-0/description
+#. tumbleweed/reiser4progs/libreiser4-minimal-1_2-1/description
+#. leap/reiser4progs/libreiser4-minimal-1_2-1/description
 msgid ""
 "libreiser4-minimal is a variant of the Reiser4 filesystem library that uses "
 "a reduced footprint and which has certain features disabled (plugin check, "
@@ -876,16 +895,18 @@ msgid ""
 "reiserfs file system."
 msgstr ""
 
-#. tumbleweed/reiser4progs/librepair-1_1-0/summary
-#. leap/reiser4progs/librepair-1_1-0/summary
+#. tumbleweed/reiser4progs/librepair-1_2-1/summary
+#. leap/reiser4progs/librepair-1_2-1/summary
 msgid "Repair library for the Reiser4 filesystem"
 msgstr ""
 
-#. tumbleweed/retro-gtk/libretro-gtk0/summary
+#. tumbleweed/retro-gtk/libretro-gtk-0_14/summary
+#. leap/retro-gtk/libretro-gtk0/summary
 msgid "Toolkit to write Gtk+3-based frontends to libretro"
 msgstr ""
 
-#. tumbleweed/retro-gtk/libretro-gtk0/description
+#. tumbleweed/retro-gtk/libretro-gtk-0_14/description
+#. leap/retro-gtk/libretro-gtk0/description
 msgid ""
 "retro-gtk wraps the libretro API for use in Gtk applications such as GNOME "
 "Games. (libretro is an API specification implemented by some emulator "
@@ -893,10 +914,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rhash/librhash0/summary
+#. leap/rhash/librhash0/summary
 msgid "LibRHash Shared Library"
 msgstr ""
 
 #. tumbleweed/rhash/librhash0/description
+#. leap/rhash/librhash0/description
 msgid ""
 "LibRHash is a professional, portable, thread-safe C library for computing a "
 "wide variety of hash sums, such as CRC32, MD4, MD5, SHA1, SHA256, SHA512, "
@@ -966,13 +989,31 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rrdtool/librrd8/summary
+#. leap/rrdtool/librrd8/summary
 msgid "Round Robin Database tool library"
 msgstr ""
 
 #. tumbleweed/rrdtool/librrd8/description
+#. leap/rrdtool/librrd8/description
 msgid ""
 "RRD stands for Round Robin Database. RRD is a system to store and display "
 "time-series data."
+msgstr ""
+
+#. tumbleweed/rtaudio/librtaudio6/summary
+#. leap/rtaudio/librtaudio6/summary
+msgid "Real-time audio I/O library"
+msgstr ""
+
+#. tumbleweed/rtaudio/librtaudio6/description
+#. leap/rtaudio/librtaudio6/description
+msgid ""
+"RtAudio is a set of C++ classes that provide a common API for realtime audio "
+"input/output across different operating systems. RtAudio allows simultaneous "
+"multi API support, supports dynamic connection of devices, provides "
+"extensive audio device parameter control, allows audio device capability "
+"probing, and has automatic internal conversion for data format, channel "
+"number compensation, (de)interleaving, and byte-swapping."
 msgstr ""
 
 #. tumbleweed/rtl-sdr/librtlsdr0/summary
@@ -985,53 +1026,44 @@ msgstr ""
 msgid "Library to run Realtek RTL2832 based DVB dongle as a SDR receiver."
 msgstr ""
 
-#. tumbleweed/ruby2.4/libruby2_4-2_4/summary
-#. leap/ruby2.1/libruby2_1-2_1/summary
-#. leap/ruby2.2/libruby2_2-2_2/summary
-#. leap/ruby2.3/libruby2_3-2_3/summary
-#. leap/ruby2.4/libruby2_4-2_4/summary
+#. tumbleweed/ruby2.5/libruby2_5-2_5/summary
+#. tumbleweed/ruby2.5/libruby2_5-2_5/description
+#. leap/ruby2.5/libruby2_5-2_5/summary
+#. leap/ruby2.5/libruby2_5-2_5/description
 msgid "Dynamic runtime library for Ruby"
-msgstr ""
-
-#. tumbleweed/ruby2.4/libruby2_4-2_4/description
-#. leap/ruby2.1/libruby2_1-2_1/description
-#. leap/ruby2.2/libruby2_2-2_2/description
-#. leap/ruby2.3/libruby2_3-2_3/description
-#. leap/ruby2.4/libruby2_4-2_4/description
-msgid "Dynamic runtime library libruby2.1.so.2.0.0 for Ruby"
 msgstr ""
 
 #. tumbleweed/rygel/librygel-core-2_6-2/summary
 #. leap/rygel/librygel-core-2_6-2/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA -- Core library"
+msgid "Core library for the Rygel UPnP/DLNA media server"
 msgstr ""
 
 #. tumbleweed/rygel/librygel-core-2_6-2/description
 #. leap/rygel/librygel-core-2_6-2/description
 msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
 "\n"
 "This package provides the core library of rygel."
 msgstr ""
 
 #. tumbleweed/rygel/librygel-db-2_6-2/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA -- Database library"
+#. leap/rygel/librygel-db-2_6-2/summary
+msgid "Database library for the Rygel UPnP/DLNA media server"
 msgstr ""
 
 #. tumbleweed/rygel/librygel-db-2_6-2/description
+#. leap/rygel/librygel-db-2_6-2/description
 msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
 "\n"
 "This package provides the database library of rygel."
 msgstr ""
 
 #. tumbleweed/rygel/librygel-renderer-2_6-2/summary
-#. tumbleweed/rygel/librygel-renderer-gst-2_6-2/summary
 #. leap/rygel/librygel-renderer-2_6-2/summary
-#. leap/rygel/librygel-renderer-gst-2_6-2/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA -- Renderer library"
+msgid "Render library for the Rygel UPnP/DLNA media server"
 msgstr ""
 
 #. tumbleweed/rygel/librygel-renderer-2_6-2/description
@@ -1039,45 +1071,53 @@ msgstr ""
 #. leap/rygel/librygel-renderer-2_6-2/description
 #. leap/rygel/librygel-renderer-gst-2_6-2/description
 msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
 "\n"
 "This package provides the renderer library of rygel."
 msgstr ""
 
+#. tumbleweed/rygel/librygel-renderer-gst-2_6-2/summary
+#. leap/rygel/librygel-renderer-gst-2_6-2/summary
+msgid "Gstreamer render library for the Rygel UPnP/DLNA media server"
+msgstr ""
+
 #. tumbleweed/rygel/librygel-ruih-2_0-1/summary
 #. leap/rygel/librygel-ruih-2_0-1/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA -- ruih library"
+msgid ""
+"Remote User Interface handling library for the Rygel UPnP/DLNA media server"
 msgstr ""
 
 #. tumbleweed/rygel/librygel-ruih-2_0-1/description
 #. leap/rygel/librygel-ruih-2_0-1/description
 msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
 "\n"
 "This package provides the ruih library of rygel."
 msgstr ""
 
 #. tumbleweed/rygel/librygel-server-2_6-2/summary
 #. leap/rygel/librygel-server-2_6-2/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA -- Server library"
+msgid "Server library for the Rygel UPnP/DLNA media server"
 msgstr ""
 
 #. tumbleweed/rygel/librygel-server-2_6-2/description
 #. leap/rygel/librygel-server-2_6-2/description
 msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
 "\n"
 "This package provides the server library of rygel."
 msgstr ""
 
 #. tumbleweed/rrdtool/lua-rrdtool/summary
+#. leap/rrdtool/lua-rrdtool/summary
 msgid "Lua bindings for RRDtool"
 msgstr ""
 
 #. tumbleweed/rrdtool/lua-rrdtool/description
+#. leap/rrdtool/lua-rrdtool/description
 msgid ""
 "RRD is the Acronym for Round Robin Database. RRD is a system to store and "
 "display time-series data (i.e. network bandwidth, machine-room temperature, "
@@ -1096,34 +1136,27 @@ msgstr ""
 msgid ""
 "razor-agents are little programs to retrieve or update information from the "
 "razor <http://razor.sourceforge.net/> network to exchange signatures of "
-"SPAM. This package contains the required perl modules."
+"SPAM. This package contains the required perl modules.\n"
+"\n"
+"\n"
+"\n"
+"Authors:\n"
+"--------     Vipul Ved Prakash <mail@vipul.net>"
 msgstr ""
 
 #. tumbleweed/rrdtool/perl-rrdtool/summary
+#. leap/rrdtool/perl-rrdtool/summary
 msgid "Perl bindings for RRDtool"
 msgstr ""
 
 #. tumbleweed/rrdtool/perl-rrdtool/description
+#. leap/rrdtool/perl-rrdtool/description
 msgid ""
 "RRD is the Acronym for Round Robin Database. RRD is a system to store and "
 "display time-series data (i.e. network bandwidth, machine-room temperature, "
 "server load average). This package contains documentation on using RRD.\n"
 "\n"
 "This package contains the Perl bindings."
-msgstr ""
-
-#. tumbleweed/redland-bindings/php5-redland/summary
-#. leap/redland-bindings/php5-redland/summary
-msgid "Php5 bindings for programs that use Redland"
-msgstr ""
-
-#. tumbleweed/redland-bindings/php5-redland/description
-#. leap/redland-bindings/php5-redland/description
-msgid ""
-"Redland librdf Language bindings provide high-level interfaces for RDF "
-"(Resource Description Framework) implemented on top of the Redland librdf "
-"library which provides an object-based RDF API, supports for syntaxes and "
-"triple stores. Php5 language bindings for the Redland RDF library."
 msgstr ""
 
 #. tumbleweed/Rivet/python-Rivet/description
@@ -1155,11 +1188,13 @@ msgid ""
 "triple stores. Python language bindings for the Redland RDF library."
 msgstr ""
 
-#. tumbleweed/rrdtool/python-rrdtool/summary
+#. tumbleweed/rrdtool/python3-rrdtool/summary
+#. leap/rrdtool/python3-rrdtool/summary
 msgid "Python bindings for RRDtool"
 msgstr ""
 
-#. tumbleweed/rrdtool/python-rrdtool/description
+#. tumbleweed/rrdtool/python3-rrdtool/description
+#. leap/rrdtool/python3-rrdtool/description
 msgid "Python RRDtool bindings."
 msgstr ""
 
@@ -1223,23 +1258,23 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/racket/racket-devel/summary
+#. leap/racket/racket-devel/summary
 #, fuzzy
 msgid "Development header files for Racket"
 msgstr "Programavimo aplinka vaikams"
 
 #. tumbleweed/racket/racket-devel/description
+#. leap/racket/racket-devel/description
 msgid ""
 "This package contains the symlinks, headers and object files needed to "
 "compile and link programs which use Racket."
 msgstr ""
 
 #. tumbleweed/radamsa/summary
-#. tumbleweed/radamsa/summary
 #. leap/radamsa/summary
 msgid "A test case generator for robustness testing, aka a fuzzer"
 msgstr ""
 
-#. tumbleweed/radamsa/description
 #. tumbleweed/radamsa/description
 #. leap/radamsa/description
 msgid ""
@@ -1275,8 +1310,9 @@ msgstr ""
 #. tumbleweed/radvd/description
 #. leap/radvd/description
 msgid ""
-"RADVD is the Router ADVertisement Daemon. It is used for automated "
-"configuration of IPv6 networks. Most people will not need this."
+"RADVD is the Router ADVertisement Daemon. It sends IPv6 RA packets to "
+"advertise available IPv6 networks, and is used for automated configuration "
+"of IPv6 clients."
 msgstr ""
 
 #. tumbleweed/rage/summary
@@ -1303,12 +1339,14 @@ msgstr ""
 
 #. tumbleweed/ragel-6/summary
 #. tumbleweed/ragel/summary
+#. leap/ragel-6/summary
 #. leap/ragel/summary
 msgid "Finite state machine compiler"
 msgstr ""
 
 #. tumbleweed/ragel-6/description
 #. tumbleweed/ragel/description
+#. leap/ragel-6/description
 #. leap/ragel/description
 msgid ""
 "Ragel compiles finite state machines from regular languages into executable "
@@ -1320,10 +1358,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ragel/ragel-devel/summary
-msgid "Development files for libragel, a finite state machine compiler library"
+#. leap/ragel/ragel-devel/summary
+msgid "Development files for ragel, a finite state machine compiler library"
 msgstr ""
 
 #. tumbleweed/ragel/ragel-devel/description
+#. leap/ragel/ragel-devel/description
 msgid ""
 "Ragel compiles finite state machines from regular languages into executable "
 "C, C++, Objective-C, or D code. This package contains the C headers for "
@@ -1331,10 +1371,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rakudo/summary
+#. leap/rakudo/summary
 msgid "Perl 6 implemenation that runs on MoarVM"
 msgstr ""
 
 #. tumbleweed/rakudo/description
+#. leap/rakudo/description
 msgid ""
 "Rakudo Perl 6, or just Rakudo, is an implementation of the Perl 6 "
 "specification that runs on the Moar virtual machine."
@@ -1354,10 +1396,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rarian/summary
+#. leap/rarian/summary
 msgid "Document cataloging system"
 msgstr ""
 
 #. tumbleweed/rarian/description
+#. leap/rarian/description
 msgid ""
 "Rarian is a document cataloging system. It manages documentation metadata, "
 "as specified by the Open Source Metadata Framework (OMF) Rarian is designed "
@@ -1365,12 +1409,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rarian/rarian-devel/summary
-#. tumbleweed/rarian/rarian-devel/summary
 #. leap/rarian/rarian-devel/summary
 msgid "Development files for rarian"
 msgstr ""
 
 #. tumbleweed/rarian/rarian-devel/description
+#. leap/rarian/rarian-devel/description
 msgid ""
 "Rarian is a document cataloging system.\n"
 "\n"
@@ -1378,27 +1422,16 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rarian/rarian-scrollkeeper-compat/summary
-#. tumbleweed/rarian/rarian-scrollkeeper-compat/summary
-#. leap/rarian/summary
 #. leap/rarian/rarian-scrollkeeper-compat/summary
 msgid "Rarian is designed to be a replacement for scrollkeeper"
 msgstr ""
 
 #. tumbleweed/rarian/rarian-scrollkeeper-compat/description
-msgid "Rarian is designed to be a replacement for scrollkeeper."
-msgstr ""
-
-#. tumbleweed/rarpd/summary
-#. leap/rarpd/summary
-msgid "Reverse Address Resolution Protocol Daemon"
-msgstr ""
-
-#. tumbleweed/rarpd/description
-#. leap/rarpd/description
+#. leap/rarian/rarian-scrollkeeper-compat/description
 msgid ""
-"Rarpd listens on the Ethernet for broadcast packets asking for reverse "
-"address resolution.  These packets are sent by hosts at boot time to find "
-"out their IP addresses."
+"Rarian is designed to be a replacement for scrollkeeper, and with this "
+"package, all your known scrollkeeper-based scripts and commands will "
+"transparently keep on working."
 msgstr ""
 
 #. tumbleweed/rasdaemon/summary
@@ -1444,13 +1477,25 @@ msgstr ""
 
 #. tumbleweed/rawstudio/summary
 #. leap/rawstudio/summary
-msgid "Raw-image converter"
-msgstr "Neapdoroto paveikslėlio konvertavimas"
+msgid "Converter for RAW image files"
+msgstr ""
 
 #. tumbleweed/rawstudio/description
 #. leap/rawstudio/description
 msgid "RawStudio is a digital camera RAW files processing software."
 msgstr ""
+
+#. tumbleweed/raylib/raylib-devel/summary
+#. leap/raylib/raylib-devel/summary
+#, fuzzy
+msgid "Development files for raylib"
+msgstr "Programavimo aplinka vaikams"
+
+#. tumbleweed/raylib/raylib-devel/description
+#. leap/raylib/raylib-devel/description
+#, fuzzy
+msgid "Development files and headers for raylib."
+msgstr "Programavimo aplinka vaikams"
 
 #. tumbleweed/razercfg/summary
 #. leap/razercfg/summary
@@ -1487,7 +1532,25 @@ msgid ""
 "Reporting Agent, can be blocked out by the rest of the Filtering Agents on "
 "the network.\n"
 "\n"
-"Can be used as one of the spamassassin rules."
+"Can be used as one of the spamassassin rules.\n"
+"\n"
+"\n"
+"\n"
+"Authors:\n"
+"--------     Vipul Ved Prakash <mail@vipul.net>"
+msgstr ""
+
+#. tumbleweed/rclone/summary
+#. leap/rclone/summary
+msgid "Rsync for cloud storage"
+msgstr ""
+
+#. tumbleweed/rclone/description
+#. leap/rclone/description
+msgid ""
+"rsync for cloud storage. rclone is a command line program to sync files and "
+"directories to and from a wide variety of cloud storage providers, providing "
+"various additional features."
 msgstr ""
 
 #. tumbleweed/rcs/summary
@@ -1504,25 +1567,11 @@ msgid ""
 "graphics, and papers."
 msgstr ""
 
-#. tumbleweed/rdate/summary
-#. leap/rdate/summary
-msgid "Tool to retrieve the time from an RFC 868 server"
-msgstr ""
-
-#. tumbleweed/rdate/description
-#. leap/rdate/description
-msgid ""
-"rdate retrieves and optionally sets the time from an RFC 868 server. It is a "
-"simple, significantly less complex (and less functional) replacement for NTP."
-msgstr ""
-
 #. tumbleweed/rdesktop/summary
-#. leap/rdesktop/summary
 msgid "A Remote Desktop Protocol client"
 msgstr ""
 
 #. tumbleweed/rdesktop/description
-#. leap/rdesktop/description
 msgid ""
 "rdesktop is an open source client for Windows NT Terminal Server and Windows "
 "2000 Terminal Services, capable of natively speaking Remote Desktop Protocol "
@@ -1549,19 +1598,6 @@ msgid ""
 "securely back a hard drive up to a remote location, and only the differences "
 "will be transmitted. Finally, rdiff-backup is easy to use and settings have "
 "sensical defaults."
-msgstr ""
-
-#. tumbleweed/rdist/summary
-#. leap/rdist/summary
-msgid "\"Remote File Distribution\" Utility"
-msgstr ""
-
-#. tumbleweed/rdist/description
-#. leap/rdist/description
-msgid ""
-"This utility makes it possible to distribute files to several computers "
-"within a network. If possible, file attributes such as: owner, group, mode, "
-"and mtime are retained. It is even possible to overwrite running binaries."
 msgstr ""
 
 #. tumbleweed/rdma-core/summary
@@ -1605,21 +1641,21 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rds-tools/summary
+#. leap/rds-tools/summary
 msgid "Support tools for Reliable Datagram Sockets"
 msgstr ""
 
-#. tumbleweed/rds-tools/description
 #. tumbleweed/rds-tools/description
 #. leap/rds-tools/description
 msgid "A collection of support tools for the RDS socket API."
 msgstr ""
 
 #. tumbleweed/rds-tools/rds-tools-devel/summary
+#. leap/rds-tools/rds-tools-devel/summary
 #, fuzzy
 msgid "Development files for Reliable Datagram Sockets"
 msgstr "Programavimo aplinka vaikams"
 
-#. tumbleweed/rds-tools/rds-tools-devel/description
 #. tumbleweed/rds-tools/rds-tools-devel/description
 #. leap/rds-tools/rds-tools-devel/description
 msgid "This package provides the header needed to use the RDS socket API."
@@ -1655,7 +1691,29 @@ msgstr ""
 
 #. tumbleweed/readline6/readline6-devel/summary
 #. tumbleweed/readline6/readline6-devel-32bit/summary
+#. leap/readline6/readline6-devel-32bit/summary
+#. leap/readline6/readline6-devel/summary
 msgid "Development files for the readline library version 6"
+msgstr ""
+
+#. tumbleweed/realmd/summary
+#. leap/realmd/summary
+msgid "AD integration detection"
+msgstr ""
+
+#. tumbleweed/realmd/description
+#. leap/realmd/description
+msgid ""
+"This packages contains realmd.\n"
+"\n"
+"Realmd is an on demand system DBus service, which allows callers to "
+"configure network authentication and domain membership in a standard way. "
+"realmd discovers information about the domain or realm automatically and "
+"does not require complicated configuration in order to join a domain or "
+"realm.\n"
+"\n"
+"realmd configures sssd or winbind to do the actual network authentication "
+"and user account lookups."
 msgstr ""
 
 #. tumbleweed/rear/summary
@@ -1665,6 +1723,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rear/description
+#. leap/rear/description
 msgid ""
 "Relax-and-Recover (abbreviated rear) is the leading Free Software disaster "
 "recovery framework.\n"
@@ -1745,18 +1804,16 @@ msgid ""
 "at the same time, controlled with locks and etcd."
 msgstr ""
 
-#. tumbleweed/recode/summary
-#. tumbleweed/recode/recode-devel/summary
-#. leap/recode/summary
-#. leap/recode/recode-devel/summary
-msgid "Character Set Converter"
+#. tumbleweed/recidivm/summary
+#. leap/recidivm/summary
+msgid "Tool for estimating peak virtual memory use"
 msgstr ""
 
-#. tumbleweed/recode/description
-#. tumbleweed/recode/recode-devel/description
-#. leap/recode/description
-#. leap/recode/recode-devel/description
-msgid "This package converts various character sets."
+#. tumbleweed/recidivm/description
+#. leap/recidivm/description
+msgid ""
+"recidivm estimates the target program's peak virtual memory use by running "
+"it multiple times with different memory limits."
 msgstr ""
 
 #. tumbleweed/recordmydesktop/summary
@@ -1809,7 +1866,7 @@ msgstr ""
 #. tumbleweed/redis/description
 #. leap/redis/description
 msgid ""
-"Redis is an advanced key-value store. It is similar to memcached but the "
+"redis is an advanced key-value store. It is similar to memcached but the "
 "dataset is not volatile, and values can be strings, exactly like in "
 "memcached, but also lists, sets, and ordered sets. All this data types can "
 "be manipulated with atomic operations to push/pop elements, add/remove "
@@ -1889,34 +1946,17 @@ msgid ""
 "checking for consistency (reiserfsck), and resizing (resize_reiserfs)."
 msgstr ""
 
-#. tumbleweed/rekonq/summary
-#. leap/rekonq/summary
-msgid "WebKit Based Web Browser for KDE"
+#. tumbleweed/remake/summary
+#. leap/remake/summary
+msgid "A gnu make version including a debuger"
 msgstr ""
 
-#. tumbleweed/rekonq/description
-#. leap/rekonq/description
+#. tumbleweed/remake/description
+#. leap/remake/description
 msgid ""
-"Rekonq is a web browser for KDE based on WebKit. It first focuses on being a "
-"light, fast & clean way to access to net. Its development is doubly based on "
-"using the new amazing features offered by the WebKit rendering engine and on "
-"the rock solid network KDE technologies."
-msgstr ""
-
-#. tumbleweed/rekonq/rekonq-doc/summary
-#. leap/rekonq/rekonq-doc/summary
-msgid "Documentation for rekonq"
-msgstr ""
-
-#. tumbleweed/rekonq/rekonq-doc/description
-#. leap/rekonq/rekonq-doc/description
-msgid ""
-"Rekonq is a web browser for KDE based on WebKit. It first focuses on being a "
-"light, fast & clean way to access to net. Its development is doubly based on "
-"using the new amazing features offered by the WebKit rendering engine and on "
-"the rock solid network KDE technologies.\n"
-"\n"
-"This package provides the documentation for rekonq."
+"remake is a patched and modernized version of GNU make utility that adds "
+"improved error reporting, the ability to trace execution in a comprehensible "
+"way, and a debugger."
 msgstr ""
 
 #. tumbleweed/remind/summary
@@ -1928,8 +1968,7 @@ msgstr ""
 #. leap/remind/description
 msgid ""
 "Remind is a sophisticated calendar and alarm program. It includes the "
-"following features:\n"
-"\n"
+"following features: \n"
 "* A sophisticated scripting language and intelligent   handling of "
 "exceptions and holidays.\n"
 "* Plain-text, PostScript and HTML output.\n"
@@ -1966,6 +2005,18 @@ msgid ""
 "This package contains header files needed for developing plugins for Remmina."
 msgstr ""
 
+#. tumbleweed/remmina/remmina-plugin-exec/summary
+#. leap/remmina/remmina-plugin-exec/summary
+msgid "Plugin for Remmina to allow execution of local commands"
+msgstr ""
+
+#. tumbleweed/remmina/remmina-plugin-exec/description
+#. leap/remmina/remmina-plugin-exec/description
+msgid ""
+"This package provides a plugin for Remmina allowing the execution of local "
+"commands."
+msgstr ""
+
 #. tumbleweed/remmina/remmina-plugin-rdp/summary
 #. leap/remmina/remmina-plugin-rdp/summary
 msgid "RDP Protocol Plugin for Remmina"
@@ -1976,6 +2027,18 @@ msgstr ""
 #. leap/remmina/remmina-plugin-rdp/description
 #. leap/remmina/remmina-plugin-vnc/description
 msgid "This package provides the RDP protocol plugin for Remmina."
+msgstr ""
+
+#. tumbleweed/remmina/remmina-plugin-secret/summary
+#. leap/remmina/remmina-plugin-secret/summary
+msgid "Gnome Keyring Pasword Manager Plugin for Remmina"
+msgstr ""
+
+#. tumbleweed/remmina/remmina-plugin-secret/description
+#. leap/remmina/remmina-plugin-secret/description
+msgid ""
+"This package provides a Remmina plugin for the GNOME keyring password "
+"manager."
 msgstr ""
 
 #. tumbleweed/remmina/remmina-plugin-spice/summary
@@ -2001,16 +2064,6 @@ msgstr ""
 #. tumbleweed/remmina/remmina-plugin-xdmcp/description
 #. leap/remmina/remmina-plugin-xdmcp/description
 msgid "This package provides the XDMCP protocol plugin for Remmina."
-msgstr ""
-
-#. tumbleweed/remmina/remmina-plugins-gnome/summary
-#. leap/remmina/remmina-plugins-gnome/summary
-msgid "GNOME Plugins for Remmina"
-msgstr ""
-
-#. tumbleweed/remmina/remmina-plugins-gnome/description
-#. leap/remmina/remmina-plugins-gnome/description
-msgid "This package provides the GNOME plugins for Remmina."
 msgstr ""
 
 #. tumbleweed/rendercheck/summary
@@ -2086,10 +2139,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/resolv_wrapper/summary
+#. leap/resolv_wrapper/summary
 msgid "A wrapper for DNS name resolving or DNS faking"
 msgstr ""
 
 #. tumbleweed/resolv_wrapper/description
+#. leap/resolv_wrapper/description
 msgid ""
 "resolv_wrapper makes it possible to contact your own DNS implmentation in "
 "your test environment. It requires socket_wrapper to be able to contact it. "
@@ -2100,19 +2155,9 @@ msgid ""
 "development/testing."
 msgstr ""
 
-#. tumbleweed/resolve-trivial-conflicts/summary
-#. leap/resolve-trivial-conflicts/summary
-msgid "Remove trivial conflict markers in a git repository"
-msgstr ""
-
-#. tumbleweed/resolve-trivial-conflicts/description
-#. leap/resolve-trivial-conflicts/description
-msgid "Remove trivial conflict markers in a git repository."
-msgstr ""
-
 #. tumbleweed/resource-agents/summary
 #. leap/resource-agents/summary
-msgid "Open Source HA Reusable Cluster Resource Scripts"
+msgid "HA Reusable Cluster Resource Scripts"
 msgstr ""
 
 #. tumbleweed/resource-agents/description
@@ -2135,11 +2180,23 @@ msgid ""
 "various resources."
 msgstr ""
 
+#. tumbleweed/restic/summary
+#. leap/restic/summary
+msgid "Fast, secure, efficient backup program"
+msgstr ""
+
+#. tumbleweed/restic/description
+#. leap/restic/description
+msgid "restic is a backup program that is fast, efficient and secure."
+msgstr ""
+
 #. tumbleweed/retro-gtk/retro-gtk-devel/summary
+#. leap/retro-gtk/retro-gtk-devel/summary
 msgid "Development files for retro-gtk, a Gtk+3 wrapper for libretro"
 msgstr ""
 
 #. tumbleweed/retro-gtk/retro-gtk-devel/description
+#. leap/retro-gtk/retro-gtk-devel/description
 msgid ""
 "retro-gtk wraps the libretro API for use in Gtk applications. This "
 "subpackage contains the headers to make use of the libretro-gtk library."
@@ -2166,7 +2223,13 @@ msgstr ""
 
 #. tumbleweed/rfbplaymacro/description
 #. leap/rfbplaymacro/description
-msgid "rfbplaymacro replays VNC macros as created by rfbproxy to a VNC server."
+msgid ""
+"rfbplaymacro replays VNC macros as created by rfbproxy to a VNC server.\n"
+"\n"
+"\n"
+"\n"
+"Authors:\n"
+"--------     Tim Waugh <twaugh@redhat.com>"
 msgstr ""
 
 #. tumbleweed/rfbproxy/summary
@@ -2178,20 +2241,12 @@ msgstr ""
 #. leap/rfbproxy/description
 msgid ""
 "rfbproxy is a simple proxy for VNC which allows recording of screen updates, "
-"key presses and mouse events for later replay."
-msgstr ""
-
-#. tumbleweed/rfkill/summary
-#. leap/rfkill/summary
-msgid "Tool for enabling and disabling wireless devices"
-msgstr ""
-
-#. tumbleweed/rfkill/description
-#. leap/rfkill/description
-msgid ""
-"rfkill is a small tool for accessing the Linux rfkill device interface, "
-"which is used to enable and disable wireless networking devices, typically "
-"WLAN, Bluetooth and mobile broadband."
+"key presses and mouse events for later replay.\n"
+"\n"
+"\n"
+"\n"
+"Authors:\n"
+"--------     Tim Waugh <twaugh@redhat.com>"
 msgstr ""
 
 #. tumbleweed/rgb/summary
@@ -2208,10 +2263,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rhash/summary
+#. leap/rhash/summary
 msgid "Recursive Hasher"
 msgstr ""
 
 #. tumbleweed/rhash/description
+#. leap/rhash/description
 msgid ""
 "RHash (Recurcive Hasher) is a console utility for computing and verifying "
 "magnet links and hash sums of files. It supports CRC32, MD4, MD5, SHA1/SHA2, "
@@ -2227,10 +2284,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rhash/rhash-devel/summary
+#. leap/rhash/rhash-devel/summary
 msgid "Headers and Static Library for LibRHash"
 msgstr ""
 
 #. tumbleweed/rhash/rhash-devel/description
+#. leap/rhash/rhash-devel/description
 msgid ""
 "LibRHash is a professional, portable, thread-safe C library for computing a "
 "wide variety of hash sums, such as CRC32, MD4, MD5, SHA1, SHA256, SHA512, "
@@ -2243,12 +2302,10 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rhythmbox/summary
-#. tumbleweed/rhythmbox/summary
 #. leap/rhythmbox/summary
 msgid "GNOME Music Management Application"
 msgstr ""
 
-#. tumbleweed/rhythmbox/description
 #. tumbleweed/rhythmbox/description
 #. leap/rhythmbox/description
 msgid ""
@@ -2257,12 +2314,10 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rhythmbox/rhythmbox-devel/summary
-#. tumbleweed/rhythmbox/rhythmbox-devel/summary
 #. leap/rhythmbox/rhythmbox-devel/summary
 msgid "GNOME Music Management Application -- Development Files"
 msgstr ""
 
-#. tumbleweed/rhythmbox/rhythmbox-devel/description
 #. tumbleweed/rhythmbox/rhythmbox-devel/description
 #. leap/rhythmbox/rhythmbox-devel/description
 msgid ""
@@ -2293,14 +2348,18 @@ msgstr ""
 
 #. tumbleweed/ristretto/summary
 #. leap/ristretto/summary
-msgid "Fast and Lightweight Image-viewer for the Xfce Desktop Environment"
+msgid "Image viewer for the Xfce Desktop Environment"
 msgstr ""
 
 #. tumbleweed/ristretto/description
 #. leap/ristretto/description
 msgid ""
-"Ristretto is a fast and lightweight picture-viewer for the Xfce desktop "
-"environment."
+"The Ristretto Image Viewer is an application that can be used to view, and "
+"scroll through images.\n"
+"\n"
+"It can be used to run a slideshow of images, open images with other "
+"applications like an image editor or configure an image as the desktop "
+"wallpaper."
 msgstr ""
 
 #. tumbleweed/rk/rk-devel/description
@@ -2326,22 +2385,14 @@ msgid ""
 "Rootkit Hunter scans files and systems for known and unknown rootkits, "
 "backdoors, and sniffers.  The package contains one shell script, a few text-"
 "based databases, and optional Perl modules. This tool scans for rootkits, "
-"backdoors, and local exploits by running tests like:\n"
-"\n"
-"* Comparing MD5 hashes\n"
-"\n"
-"* Looking for default files used by rootkits\n"
-"\n"
-"* Checking for wrong file permissions for binaries\n"
-"\n"
-"* Looking for suspected strings in LKM and KLD modules\n"
-"\n"
-"* Looking for hidden files\n"
-"\n"
-"* Optionally scanning within plain text and binary files\n"
-"\n"
-"* Checking software versions\n"
-"\n"
+"backdoors, and local exploits by running tests like: \n"
+"* Comparing MD5 hashes \n"
+"* Looking for default files used by rootkits \n"
+"* Checking for wrong file permissions for binaries \n"
+"* Looking for suspected strings in LKM and KLD modules \n"
+"* Looking for hidden files \n"
+"* Optionally scanning within plain text and binary files \n"
+"* Checking software versions \n"
 "* Testing applications"
 msgstr ""
 
@@ -2360,12 +2411,10 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rlwrap/summary
-#. tumbleweed/rlwrap/summary
 #. leap/rlwrap/summary
 msgid "A Readline Wrapper"
 msgstr ""
 
-#. tumbleweed/rlwrap/description
 #. tumbleweed/rlwrap/description
 #. leap/rlwrap/description
 msgid ""
@@ -2417,7 +2466,62 @@ msgid ""
 "that it is properly random."
 msgstr ""
 
+#. tumbleweed/robinhood/summary
+#. leap/robinhood/summary
+msgid "Policy engine and reporting tool for large filesystems"
+msgstr ""
+
+#. tumbleweed/robinhood/description
+#. leap/robinhood/description
+msgid ""
+"The Robinhood Policy Engine is a tool to manage contents of large file "
+"systems. It maintains a replicate of filesystem medatada in a database that "
+"can be queried at will. It makes it possible to schedule mass action on "
+"filesystem entries by defining attribute-based policies, provides fast "
+"'find' and 'du' enhanced clones, gives to administrators an overall view of "
+"filesystem contents through its web UI and command line tools.\n"
+"\n"
+"It supports any POSIX filesystem and implements advanced features for Lustre "
+"filesystems (list/purge files per OST or pool, read MDT changelogs...)"
+msgstr ""
+
+#. tumbleweed/robinhood/robinhood-tests/summary
+#. leap/robinhood/robinhood-tests/summary
+msgid "Internal tests for robinhood"
+msgstr ""
+
+#. tumbleweed/robinhood/robinhood-tests/description
+#. leap/robinhood/robinhood-tests/description
+msgid "Tests and examples for the robinhood policy engine."
+msgstr ""
+
+#. tumbleweed/robinhood/robinhood-tools/summary
+#. leap/robinhood/robinhood-tools/summary
+msgid "Tools for accessing the statistics"
+msgstr ""
+
+#. tumbleweed/robinhood/robinhood-tools/description
+#. leap/robinhood/robinhood-tools/description
+msgid ""
+"The commanline tools for extracting the information out of the robinhood "
+"database. Commands work like du or df and find. Be careful as robinhood_find "
+"does not always honor the file permissions."
+msgstr ""
+
+#. tumbleweed/robinhood/robinhood-webgui/summary
+#. leap/robinhood/robinhood-webgui/summary
+msgid "Web interface to vizualize filesystems stats"
+msgstr ""
+
+#. tumbleweed/robinhood/robinhood-webgui/description
+#. leap/robinhood/robinhood-webgui/description
+msgid ""
+"Web interface to vizualize filesystems stats. This uses robinhood database "
+"to display miscelancous user and group stats."
+msgstr ""
+
 #. tumbleweed/roccat-tools/roccat-arvo/summary
+#. leap/roccat-tools/roccat-arvo/summary
 msgid "Roccat Arvo userland tools"
 msgstr ""
 
@@ -2430,6 +2534,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-isku/summary
+#. leap/roccat-tools/roccat-isku/summary
 msgid "Roccat Isku userland tools"
 msgstr ""
 
@@ -2442,6 +2547,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-iskufx/summary
+#. leap/roccat-tools/roccat-iskufx/summary
 msgid "Roccat IskuFX userland tools"
 msgstr ""
 
@@ -2454,10 +2560,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-kiro/summary
+#. leap/roccat-tools/roccat-kiro/summary
 msgid "Roccat Kiro userland tools"
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-kiro/description
+#. leap/roccat-tools/roccat-kiro/description
 msgid ""
 "Kiro consists of a shared library, a console application and a GUI "
 "application. It helps users of the Kiro kernel driver to manipulate the "
@@ -2465,6 +2573,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-kone/summary
+#. leap/roccat-tools/roccat-kone/summary
 msgid "Roccat Kone userland tools"
 msgstr ""
 
@@ -2477,6 +2586,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-koneplus/summary
+#. leap/roccat-tools/roccat-koneplus/summary
 msgid "Roccat Kone[+] userland tools"
 msgstr ""
 
@@ -2489,6 +2599,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-konepure/summary
+#. leap/roccat-tools/roccat-konepure/summary
 msgid "Roccat KonePure userland tools"
 msgstr ""
 
@@ -2501,6 +2612,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-konextd/summary
+#. leap/roccat-tools/roccat-konextd/summary
 msgid "Roccat KoneXTD userland tools"
 msgstr ""
 
@@ -2513,16 +2625,19 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-kova2016/summary
+#. leap/roccat-tools/roccat-kova2016/summary
 msgid "Roccat Kova 2016 userland tools"
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-kova2016/description
+#. leap/roccat-tools/roccat-kova2016/description
 msgid ""
 "Kova2016 consists of a console application and a GUI application. It helps "
 "users to manipulate the Profiles and Settings of a Roccat Kova 2016 mouse."
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-kovaplus/summary
+#. leap/roccat-tools/roccat-kovaplus/summary
 msgid "Roccat Kova[+] userland tools"
 msgstr ""
 
@@ -2535,6 +2650,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-lua/summary
+#. leap/roccat-tools/roccat-lua/summary
 msgid "Roccat Lua userland tools"
 msgstr ""
 
@@ -2547,6 +2663,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-nyth/summary
+#. leap/roccat-tools/roccat-nyth/summary
 msgid "Roccat Nyth userland tools"
 msgstr ""
 
@@ -2559,6 +2676,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-pyra/summary
+#. leap/roccat-tools/roccat-pyra/summary
 msgid "Roccat Pyra userland tools"
 msgstr ""
 
@@ -2571,6 +2689,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-ryos/summary
+#. leap/roccat-tools/roccat-ryos/summary
 msgid "Roccat Ryos userland tools"
 msgstr ""
 
@@ -2583,6 +2702,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-savu/summary
+#. leap/roccat-tools/roccat-savu/summary
 msgid "Roccat Savu userland tools"
 msgstr ""
 
@@ -2595,10 +2715,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-skeltr/summary
+#. leap/roccat-tools/roccat-skeltr/summary
 msgid "Roccat Skeltr userland tools"
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-skeltr/description
+#. leap/roccat-tools/roccat-skeltr/description
 msgid ""
 "Skeltr consists of a shared library, a console application and a GUI "
 "application. It helps users of the Skeltr kernel driver to manipulate the "
@@ -2606,10 +2728,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-sova/summary
+#. leap/roccat-tools/roccat-sova/summary
 msgid "Roccat Sova userland tools"
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-sova/description
+#. leap/roccat-tools/roccat-sova/description
 msgid ""
 "Sova consists of a shared library, a console application and a GUI "
 "application. It helps users of the sova kernel driver to manipulate the "
@@ -2617,10 +2741,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-suora/summary
+#. leap/roccat-tools/roccat-suora/summary
 msgid "Roccat Suora userland tools"
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-suora/description
+#. leap/roccat-tools/roccat-suora/description
 msgid ""
 "Suora consists of a shared library, a console application and a GUI "
 "application. It helps users of the Suora kernel driver to manipulate the "
@@ -2628,16 +2754,19 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/roccat-tools/summary
+#. leap/roccat-tools/summary
 msgid "Common files shared by all Roccat tools"
 msgstr ""
 
 #. tumbleweed/roccat-tools/description
+#. leap/roccat-tools/description
 msgid ""
 "Roccat consists of a shared library and other files shared by device-"
 "specific applications for Roccat hardware."
 msgstr ""
 
 #. tumbleweed/roccat-tools/roccat-tyon/summary
+#. leap/roccat-tools/roccat-tyon/summary
 msgid "Roccat Tyon userland tools"
 msgstr ""
 
@@ -2712,6 +2841,18 @@ msgid ""
 "replacement."
 msgstr ""
 
+#. tumbleweed/rofi/rofi-devel/summary
+#. leap/rofi/rofi-devel/summary
+#, fuzzy
+msgid "Development files for rofi"
+msgstr "Programavimo aplinka vaikams"
+
+#. tumbleweed/rofi/rofi-devel/description
+#. leap/rofi/rofi-devel/description
+#, fuzzy
+msgid "Development files and headers for rofi"
+msgstr "Programavimo aplinka vaikams"
+
 #. tumbleweed/root-tail/summary
 #. leap/root-tail/summary
 msgid "Print Text Directly to the X Window System Root Window"
@@ -2722,7 +2863,12 @@ msgstr ""
 msgid ""
 "Tails a given file anywhere on your X Window System root window with a "
 "transparent background. It is customizable with regards to font, color, and "
-"more."
+"more.\n"
+"\n"
+"\n"
+"\n"
+"Authors:\n"
+"--------     Mike Baker <mjbaker@mtu.edu>     Marc Lehmann <pcg@goof.com>"
 msgstr ""
 
 #. tumbleweed/rosegarden/summary
@@ -2774,12 +2920,10 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rp-pppoe/summary
-#. tumbleweed/rp-pppoe/summary
 #. leap/rp-pppoe/summary
 msgid "A PPP Over Ethernet Redirector for PPPD"
 msgstr ""
 
-#. tumbleweed/rp-pppoe/description
 #. tumbleweed/rp-pppoe/description
 #. leap/rp-pppoe/description
 msgid ""
@@ -2800,6 +2944,31 @@ msgid ""
 "TCP transports over INET (IPv4), rpcbind can be configured to work on "
 "various transports supported by the TI-RPC. This includes TCP and UDP over "
 "IPv6. Moreover, rpcbind provides additional functions in regards to portmap."
+msgstr ""
+
+#. tumbleweed/rpcsvc-proto/rpcgen/summary
+#. leap/rpcsvc-proto/rpcgen/summary
+msgid "RPC protocol compiler"
+msgstr ""
+
+#. tumbleweed/rpcsvc-proto/rpcgen/description
+#. leap/rpcsvc-proto/rpcgen/description
+msgid ""
+"rpcgen is a tool that generates C code to implement an RPC protocol. The "
+"input to rpcgen is a language similar to C known as RPC Language (Remote "
+"Procedure Call Language)."
+msgstr ""
+
+#. tumbleweed/rpcsvc-proto/rpcsvc-proto-devel/summary
+#. leap/rpcsvc-proto/rpcsvc-proto-devel/summary
+msgid "RPC protocol definitions"
+msgstr ""
+
+#. tumbleweed/rpcsvc-proto/rpcsvc-proto-devel/description
+#. leap/rpcsvc-proto/rpcsvc-proto-devel/description
+msgid ""
+"The rpcsvc-proto package includes several rpcsvc header files and RPC "
+"protocol definitions from SunRPC sources (as shipped with glibc)."
 msgstr ""
 
 #. tumbleweed/rpm/summary
@@ -2835,6 +3004,12 @@ msgid ""
 "requires some packages that are usually required."
 msgstr ""
 
+#. tumbleweed/rpm/rpm-devel/summary
+#. leap/rpm/rpm-devel/summary
+#, fuzzy
+msgid "Development files for librpm"
+msgstr "Programavimo aplinka vaikams"
+
 #. tumbleweed/rpm/rpm-devel/description
 #. leap/rpm/rpm-devel/description
 msgid ""
@@ -2845,22 +3020,11 @@ msgid ""
 "knowledge of RPM packages in order to function."
 msgstr ""
 
-#. tumbleweed/rpm-python/description
-#. leap/rpm-python/description
-msgid ""
-"The rpm-python package contains a module that permits applications written "
-"in the Python programming language to use the interface supplied by RPM "
-"Package Manager libraries.\n"
-"\n"
-"This package should be installed if you want to develop Python programs that "
-"will manipulate RPM packages and databases."
-msgstr ""
-
 #. tumbleweed/rpmlint-mini/summary
 #. tumbleweed/rpmlint/summary
 #. leap/rpmlint/summary
 #. leap/rpmlint-mini/summary
-msgid "Rpm correctness checker"
+msgid "RPM file correctness checker"
 msgstr ""
 
 #. tumbleweed/rpmlint-mini/description
@@ -2868,15 +3032,17 @@ msgstr ""
 #. leap/rpmlint/description
 #. leap/rpmlint-mini/description
 msgid ""
-"Rpmlint is a tool to check common errors on rpm packages. Binary and source "
+"rpmlint is a tool to check common errors on RPM packages. Binary and source "
 "packages can be checked."
 msgstr ""
 
 #. tumbleweed/rrdtool/summary
+#. leap/rrdtool/summary
 msgid "Round Robin Database Tool to store and display time-series data"
 msgstr ""
 
 #. tumbleweed/rrdtool/description
+#. leap/rrdtool/description
 msgid ""
 "RRD stands for Round Robin Database. RRD is a system to store and display "
 "time-series data (i.e. network bandwidth, machine-room temperature, server "
@@ -2903,10 +3069,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rrdtool/rrdtool-devel/summary
+#. leap/rrdtool/rrdtool-devel/summary
 msgid "RRDtool header files"
 msgstr ""
 
 #. tumbleweed/rrdtool/rrdtool-devel/description
+#. leap/rrdtool/rrdtool-devel/description
 msgid ""
 "RRD stands for Round Robin Database. RRD is a system to store and display "
 "time-series data (i.e. network bandwidth, machine-room temperature, server "
@@ -2915,11 +3083,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rrdtool/rrdtool-doc/summary
+#. leap/rrdtool/rrdtool-doc/summary
 #, fuzzy
 msgid "Documentation for rrdtool"
 msgstr "Dokumentacijos palaikymas"
 
 #. tumbleweed/rrdtool/rrdtool-doc/description
+#. leap/rrdtool/rrdtool-doc/description
 msgid ""
 "RRD is the Acronym for Round Robin Database. RRD is a system to store and "
 "display time-series data (i.e. network bandwidth, machine-room temperature, "
@@ -3265,6 +3435,21 @@ msgid ""
 "code."
 msgstr ""
 
+#. tumbleweed/rtaudio/rtaudio-devel/summary
+#. leap/rtaudio/rtaudio-devel/summary
+#, fuzzy
+msgid "Development files for rtaudio"
+msgstr "Programavimo aplinka vaikams"
+
+#. tumbleweed/rtaudio/rtaudio-devel/description
+#. leap/rtaudio/rtaudio-devel/description
+msgid ""
+"RtAudio is a set of C++ classes that provide a common API for realtime audio "
+"input/output across different operating systems.\n"
+"\n"
+"This subpackage contains the headers for rtaudio."
+msgstr ""
+
 #. tumbleweed/rtkit/summary
 #. leap/rtkit/summary
 msgid "Realtime Policy and Watchdog Daemon"
@@ -3312,6 +3497,29 @@ msgstr ""
 msgid "Udev rules for rtl-sdr driver"
 msgstr ""
 
+#. tumbleweed/rtl_433/summary
+#. tumbleweed/rtl_433/rtl_433-devel/summary
+#. leap/rtl_433/summary
+#. leap/rtl_433/rtl_433-devel/summary
+msgid "Turns RTL2832 dongle into a 433.92MHz generic data receiver"
+msgstr ""
+
+#. tumbleweed/rtl_433/description
+#. leap/rtl_433/description
+msgid ""
+"An application using librtlsdr to decode the temperature from wireless "
+"temperature sensors (433.92MHz)"
+msgstr ""
+
+#. tumbleweed/rtl_433/rtl_433-devel/description
+#. leap/rtl_433/rtl_433-devel/description
+msgid ""
+"Turns RTL2832 dongle into a 433.92MHz generic data receiver.\n"
+"\n"
+"This subpackage contains header files for developing applications that want "
+"to make use of rtl_433."
+msgstr ""
+
 #. tumbleweed/rtorrent/summary
 #. leap/rtorrent/summary
 msgid "Console-based BitTorrent Client"
@@ -3326,96 +3534,47 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ruby/summary
-#. tumbleweed/ruby2.4/summary
+#. tumbleweed/ruby2.5/summary
 #. leap/ruby/summary
-#. leap/ruby2.1/summary
-#. leap/ruby2.2/summary
-#. leap/ruby2.3/summary
-#. leap/ruby2.4/summary
+#. leap/ruby2.5/summary
 msgid "An Interpreted Object-Oriented Scripting Language"
 msgstr ""
 
 #. tumbleweed/ruby/description
-#. tumbleweed/ruby2.4/description
 #. leap/ruby/description
-#. leap/ruby2.1/description
-#. leap/ruby2.2/description
-#. leap/ruby2.3/description
-#. leap/ruby2.4/description
 msgid ""
 "Ruby is an interpreted scripting language for quick and easy object-oriented "
 "programming.  It has many features for processing text files and performing "
 "system management tasks (as in Perl).  It is simple, straight-forward, and "
-"extensible.\n"
-"\n"
-"* Ruby features:\n"
-"\n"
-"- Simple Syntax\n"
-"\n"
-"- *Normal* Object-Oriented features (class, method calls, for    example)\n"
-"\n"
+"extensible. \n"
+"* Ruby features: \n"
+"- Simple Syntax \n"
+"- *Normal* Object-Oriented features (class, method calls, for    example) \n"
 "- *Advanced* Object-Oriented features(Mix-in, Singleton-method, for    "
-"example)\n"
-"\n"
-"- Operator Overloading\n"
-"\n"
-"- Exception Handling\n"
-"\n"
-"- Iterators and Closures\n"
-"\n"
-"- Garbage Collection\n"
-"\n"
-"- Dynamic Loading of Object Files (on some architectures)\n"
-"\n"
+"example) \n"
+"- Operator Overloading \n"
+"- Exception Handling \n"
+"- Iterators and Closures \n"
+"- Garbage Collection \n"
+"- Dynamic Loading of Object Files (on some architectures) \n"
 "- Highly Portable (works on many UNIX machines; DOS, Windows, Mac, BeOS, and "
 "more)"
 msgstr ""
 
 #. tumbleweed/ruby/ruby-devel/summary
-#. tumbleweed/ruby2.4/ruby2.4-devel/summary
+#. tumbleweed/ruby2.5/ruby2.5-devel/summary
 #. leap/ruby/ruby-devel/summary
-#. leap/ruby2.1/ruby2.1-devel/summary
-#. leap/ruby2.2/ruby2.2-devel/summary
-#. leap/ruby2.3/ruby2.3-devel/summary
-#. leap/ruby2.4/ruby2.4-devel/summary
+#. leap/ruby2.5/ruby2.5-devel/summary
 msgid "Development files to link against Ruby"
 msgstr ""
 
 #. tumbleweed/ruby/ruby-devel/description
-#. tumbleweed/ruby2.4/ruby2.4-devel/description
-#. tumbleweed/ruby2.4/ruby2.4-devel-extra/description
+#. tumbleweed/ruby2.5/ruby2.5-devel/description
+#. tumbleweed/ruby2.5/ruby2.5-devel-extra/description
 #. leap/ruby/ruby-devel/description
-#. leap/ruby2.1/ruby2.1-devel/description
-#. leap/ruby2.1/ruby2.1-devel-extra/description
-#. leap/ruby2.2/ruby2.2-devel/description
-#. leap/ruby2.2/ruby2.2-devel-extra/description
-#. leap/ruby2.3/ruby2.3-devel/description
-#. leap/ruby2.3/ruby2.3-devel-extra/description
-#. leap/ruby2.4/ruby2.4-devel/description
-#. leap/ruby2.4/ruby2.4-devel-extra/description
+#. leap/ruby2.5/ruby2.5-devel/description
+#. leap/ruby2.5/ruby2.5-devel-extra/description
 msgid "Development files to link against Ruby."
-msgstr ""
-
-#. tumbleweed/ruby-qt4/summary
-#. leap/ruby-qt4/summary
-msgid "QtRuby kdebindings library"
-msgstr ""
-
-#. tumbleweed/ruby-qt4/description
-#. leap/ruby-qt4/description
-msgid "Ruby bindings for the Qt4 libraries from the kdebindings project."
-msgstr ""
-
-#. tumbleweed/ruby-qt4/ruby-qt4-devel/summary
-#. leap/ruby-qt4/ruby-qt4-devel/summary
-msgid "Development libraries for Ruby-Qt4"
-msgstr ""
-
-#. tumbleweed/ruby-qt4/ruby-qt4-devel/description
-#. leap/ruby-qt4/ruby-qt4-devel/description
-msgid ""
-"This package contains development files for the Ruby bindings for the Qt4 "
-"libraries."
 msgstr ""
 
 #. tumbleweed/redland-bindings/ruby-redland/summary
@@ -3433,10 +3592,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/rrdtool/ruby-rrdtool/summary
+#. leap/rrdtool/ruby-rrdtool/summary
 msgid "Ruby bindings for RRDtool"
 msgstr ""
 
 #. tumbleweed/rrdtool/ruby-rrdtool/description
+#. leap/rrdtool/ruby-rrdtool/description
 msgid ""
 "RRD is the Acronym for Round Robin Database. RRD is a system to store and "
 "display time-series data (i.e. network bandwidth, machine-room temperature, "
@@ -3445,37 +3606,40 @@ msgid ""
 "This package contains the Ruby bindings."
 msgstr ""
 
-#. tumbleweed/ruby2.4/ruby2.4-devel-extra/summary
-#. leap/ruby2.1/ruby2.1-devel-extra/summary
-#. leap/ruby2.2/ruby2.2-devel-extra/summary
-#. leap/ruby2.3/ruby2.3-devel-extra/summary
-#. leap/ruby2.4/ruby2.4-devel-extra/summary
+#. tumbleweed/ruby2.5/description
+#. leap/ruby2.5/description
+msgid ""
+"Ruby is an interpreted scripting language for object-oriented programming. "
+"It has many features for processing text files and performing system "
+"management tasks (as in Perl).  It is extensible. \n"
+"* Ruby features: \n"
+"- Simple Syntax \n"
+"- *Normal* Object-Oriented features (class, method calls, for    example) \n"
+"- *Advanced* Object-Oriented features(Mix-in, Singleton-method, for    "
+"example) \n"
+"- Operator Overloading \n"
+"- Exception Handling \n"
+"- Iterators and Closures \n"
+"- Garbage Collection \n"
+"- Dynamic Loading of Object Files (on some architectures)"
+msgstr ""
+
+#. tumbleweed/ruby2.5/ruby2.5-devel-extra/summary
+#. leap/ruby2.5/ruby2.5-devel-extra/summary
 msgid "Special development files of ruby, normally not installed"
 msgstr ""
 
-#. tumbleweed/ruby2.4/ruby2.4-doc/summary
-#. tumbleweed/ruby2.4/ruby2.4-doc/description
-#. leap/ruby2.1/ruby2.1-doc/summary
-#. leap/ruby2.1/ruby2.1-doc/description
-#. leap/ruby2.2/ruby2.2-doc/summary
-#. leap/ruby2.2/ruby2.2-doc/description
-#. leap/ruby2.3/ruby2.3-doc/summary
-#. leap/ruby2.3/ruby2.3-doc/description
-#. leap/ruby2.4/ruby2.4-doc/summary
-#. leap/ruby2.4/ruby2.4-doc/description
+#. tumbleweed/ruby2.5/ruby2.5-doc/summary
+#. tumbleweed/ruby2.5/ruby2.5-doc/description
+#. leap/ruby2.5/ruby2.5-doc/summary
+#. leap/ruby2.5/ruby2.5-doc/description
 msgid "Documentation and samples for Ruby"
 msgstr ""
 
-#. tumbleweed/ruby2.4/ruby2.4-stdlib/summary
-#. tumbleweed/ruby2.4/ruby2.4-stdlib/description
-#. leap/ruby2.1/ruby2.1-stdlib/summary
-#. leap/ruby2.1/ruby2.1-stdlib/description
-#. leap/ruby2.2/ruby2.2-stdlib/summary
-#. leap/ruby2.2/ruby2.2-stdlib/description
-#. leap/ruby2.3/ruby2.3-stdlib/summary
-#. leap/ruby2.3/ruby2.3-stdlib/description
-#. leap/ruby2.4/ruby2.4-stdlib/summary
-#. leap/ruby2.4/ruby2.4-stdlib/description
+#. tumbleweed/ruby2.5/ruby2.5-stdlib/summary
+#. tumbleweed/ruby2.5/ruby2.5-stdlib/description
+#. leap/ruby2.5/ruby2.5-stdlib/summary
+#. leap/ruby2.5/ruby2.5-stdlib/description
 msgid "The Ruby standard library"
 msgstr ""
 
@@ -3496,6 +3660,1134 @@ msgid ""
 "You have to change some lines in /etc/inittab for having any effect after "
 "installing the package.  rungetty is based on mingetty and therefore not "
 "suitable for serial use."
+msgstr ""
+
+#. tumbleweed/rustfmt/summary
+#. leap/rustfmt/summary
+msgid "Format Rust code according to style guide"
+msgstr ""
+
+#. tumbleweed/rustfmt/description
+#. leap/rustfmt/description
+msgid "A tool for formatting Rust code according to style guidelines."
+msgstr ""
+
+#. tumbleweed/rxp/summary
+#. leap/rxp/summary
+msgid "XML Parser in C"
+msgstr ""
+
+#. tumbleweed/rxp/description
+#. leap/rxp/description
+msgid ""
+"The current version of RXP supports XML 1.1, Namespaces 1.1, xml:id, and XML "
+"Catalogs. To use an XML Catalog, set the environment variable "
+"XML_CATALOG_FILES to a space-separated list of catalog files.\n"
+"\n"
+"RXP was written by Richard Tobin at the Language Technology Group, Human "
+"Communication Research Centre, University of Edinburgh.\n"
+"\n"
+"A simple application (called rxp) is provided. It parses and writes XML "
+"data, optionally expanding entities, defaulting attributes, and translating "
+"to a different output encoding.\n"
+"\n"
+"Bug reports should be sent to richard@cogsci.ed.ac.uk.\n"
+"\n"
+"\n"
+"\n"
+"Authors:\n"
+"--------     Richard Tobin <richard@cogsci.ed.ac.uk>"
+msgstr ""
+
+#. tumbleweed/rxvt-unicode/summary
+#. leap/rxvt-unicode/summary
+msgid "Rxvt X Terminal with Unicode Support"
+msgstr ""
+
+#. tumbleweed/rxvt-unicode/description
+#. leap/rxvt-unicode/description
+msgid ""
+"rxvt-unicode is a clone of the well-known terminal emulator rxvt, modified "
+"to store text in Unicode (either UCS-2 or UCS-4) and to use locale-correct "
+"input and output. It also supports mixing multiple fonts at the same time, "
+"including Xft fonts."
+msgstr ""
+
+#. tumbleweed/rygel/summary
+#. leap/rygel/summary
+msgid "UPnP/DLNA home media server for GNOME"
+msgstr ""
+
+#. tumbleweed/rygel/description
+#. leap/rygel/description
+msgid ""
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network. In technical terms, it is both "
+"a UPnP AV MediaServer and MediaRenderer implemented through a plug-in "
+"mechanism. It conforms to DLNA and does on-the-fly conversion of media to "
+"format that client devices are capable of handling."
+msgstr ""
+
+#. tumbleweed/rygel/rygel-devel/summary
+#. leap/rygel/rygel-devel/summary
+#, fuzzy
+msgid "Development files for the Rygel UPnP/DLNA media server"
+msgstr "Programavimo aplinka vaikams"
+
+#. tumbleweed/rygel/rygel-devel/description
+#. leap/rygel/rygel-devel/description
+msgid ""
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
+"\n"
+"This package provides development files for rygel."
+msgstr ""
+
+#. tumbleweed/rygel/rygel-plugin-gstreamer-renderer/summary
+#. leap/rygel/rygel-plugin-gstreamer-renderer/summary
+msgid "GStreamer renderer plugin for the Rygel UPnP/DLNA media server"
+msgstr ""
+
+#. tumbleweed/rygel/rygel-plugin-gstreamer-renderer/description
+#. leap/rygel/rygel-plugin-gstreamer-renderer/description
+msgid ""
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
+"\n"
+"This package provides a standalone MediaRenderer plugin, based on the "
+"GStreamer playbin2 element."
+msgstr ""
+
+#. tumbleweed/rygel/rygel-plugin-tracker/summary
+#. leap/rygel/rygel-plugin-tracker/summary
+msgid "Tracker plugin for the Rygel UPnP/DLNA media server"
+msgstr ""
+
+#. tumbleweed/rygel/rygel-plugin-tracker/description
+#. leap/rygel/rygel-plugin-tracker/description
+msgid ""
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network.\n"
+"\n"
+"This package provides a plugin using tracker to export media found on the "
+"local machine."
+msgstr ""
+
+#. tumbleweed/rzip/summary
+#. leap/rzip/summary
+msgid "A large-file compression program"
+msgstr ""
+
+#. tumbleweed/rzip/description
+#. leap/rzip/description
+msgid ""
+"rzip is a compression program, similar in functionality to gzip or bzip2, "
+"but able to take advantage long distance redundencies in files, which can "
+"sometimes allow rzip to produce much better compression ratios than other "
+"programs."
+msgstr ""
+
+#. tumbleweed/rzsz/summary
+#. leap/rzsz/summary
+msgid "X-, Y-, and Z-Modem Data Transfer Protocols"
+msgstr ""
+
+#. tumbleweed/rzsz/description
+#. leap/rzsz/description
+msgid ""
+"rzsz allows you to use \"sz filename\" to send a file to your local system."
+msgstr ""
+
+#. tumbleweed/rdma-core/srp_daemon/summary
+#. leap/rdma-core/srp_daemon/summary
+msgid "Tools for using the InfiniBand SRP protocol devices"
+msgstr ""
+
+#. tumbleweed/rdma-core/srp_daemon/description
+#. leap/rdma-core/srp_daemon/description
+msgid ""
+"In conjunction with the kernel ib_srp driver, srp_daemon allows you to "
+"discover and use SCSI devices via the SCSI RDMA Protocol over InfiniBand."
+msgstr ""
+
+#. tumbleweed/rrdtool/tcl-rrdtool/summary
+#. leap/rrdtool/tcl-rrdtool/summary
+msgid "Tcl bindings for RRDtool"
+msgstr ""
+
+#. tumbleweed/rrdtool/tcl-rrdtool/description
+#. leap/rrdtool/tcl-rrdtool/description
+msgid ""
+"RRD is the Acronym for Round Robin Database. RRD is a system to store and "
+"display time-series data (i.e. network bandwidth, machine-room temperature, "
+"server load average). This package contains documentation on using RRD.\n"
+"\n"
+"This package contains the Tcl bindings."
+msgstr ""
+
+#. tumbleweed/retro-gtk/typelib-1_0-Retro-0_14/summary
+#. leap/retro-gtk/typelib-1_0-Retro-0_12/summary
+msgid "GObject introspection bindings for libretro-gtk"
+msgstr ""
+
+#. tumbleweed/retro-gtk/typelib-1_0-Retro-0_14/description
+#. leap/retro-gtk/typelib-1_0-Retro-0_12/description
+msgid ""
+"retro-gtk wraps the libretro API for use in Gtk applications. This "
+"subpackage contains the gobject bindings for the libretro-gtk shared library."
+msgstr ""
+
+#. tumbleweed/rygel/typelib-1_0-RygelCore-2_6/summary
+#. leap/rygel/typelib-1_0-RygelCore-2_6/summary
+msgid "GObject introspection files for the Rygel core library"
+msgstr ""
+
+#. tumbleweed/rygel/typelib-1_0-RygelCore-2_6/description
+#. tumbleweed/rygel/typelib-1_0-RygelRenderer-2_6/description
+#. tumbleweed/rygel/typelib-1_0-RygelRendererGst-2_6/description
+#. tumbleweed/rygel/typelib-1_0-RygelServer-2_6/description
+#. leap/rygel/typelib-1_0-RygelCore-2_6/description
+#. leap/rygel/typelib-1_0-RygelRenderer-2_6/description
+#. leap/rygel/typelib-1_0-RygelRendererGst-2_6/description
+#. leap/rygel/typelib-1_0-RygelServer-2_6/description
+msgid ""
+"Rygel is a home media server that allows sharing audio, video, pictures, and "
+"control of media player on your home network."
+msgstr ""
+
+#. tumbleweed/rygel/typelib-1_0-RygelRenderer-2_6/summary
+#. leap/rygel/typelib-1_0-RygelRenderer-2_6/summary
+msgid "GObject introspection files for the Rygel renderer library"
+msgstr ""
+
+#. tumbleweed/rygel/typelib-1_0-RygelRendererGst-2_6/summary
+#. leap/rygel/typelib-1_0-RygelRendererGst-2_6/summary
+msgid "GObject introspection files for the Rygel RendererGst library"
+msgstr ""
+
+#. tumbleweed/rygel/typelib-1_0-RygelServer-2_6/summary
+#. leap/rygel/typelib-1_0-RygelServer-2_6/summary
+msgid "GObject introspection files for the Rygel server library"
+msgstr ""
+
+#. tumbleweed/RemoteBox/summary
+#. leap/RemoteBox/summary
+msgid "A VirtualBox client with remote management"
+msgstr ""
+
+#. tumbleweed/RemoteBox/description
+#. leap/RemoteBox/description
+msgid ""
+"VirtualBox is traditionally considered to be a virtualization solution aimed "
+"at the desktop as opposed to other solutions such as KVM, Xen and VMWare ESX "
+"which are considered more server orientated solutions. While it is certainly "
+"possible to install VirtualBox on a server, it offers few remote management "
+"features beyond using the vboxmanage command line. RemoteBox aims to fill "
+"this gap by providing a graphical VirtualBox client which is able to "
+"communicate with and manage a VirtualBox server installation."
+msgstr ""
+
+#. tumbleweed/resource-agents/monitoring-plugins-metadata/summary
+#. leap/resource-agents/monitoring-plugins-metadata/summary
+msgid "Metadata for Monitoring plugins"
+msgstr ""
+
+#. tumbleweed/resource-agents/monitoring-plugins-metadata/description
+#. leap/resource-agents/monitoring-plugins-metadata/description
+msgid ""
+"XML files containing metadata which facilitates using nagios plugins as "
+"resource agents. These files were produced from help pages of individual "
+"nagios plugins."
+msgstr ""
+
+#. tumbleweed/rpmconf/python3-rpmconf/summary
+#. leap/rpmconf/python3-rpmconf/summary
+msgid "Python interface for rpmconf"
+msgstr ""
+
+#. tumbleweed/rpmconf/python3-rpmconf/description
+#. leap/rpmconf/python3-rpmconf/description
+msgid "Python interface for rpmconf and an essential part of rpmconf."
+msgstr ""
+
+#. tumbleweed/rust-packaging/python3-rust2rpm/summary
+#. leap/rust-packaging/python3-rust2rpm/summary
+msgid "Convert Rust packages to RPM"
+msgstr ""
+
+#. tumbleweed/rust-packaging/python3-rust2rpm/description
+#. leap/rust-packaging/python3-rust2rpm/description
+msgid ""
+"This tool creates RPM spec files for Rust packages. The packages can be "
+"downloaded from crates.io and this tool creates packages that comply with "
+"the Fedora Packaging Guidelines, Mageia packaging policy, and the openSUSE "
+"Packaging Guidelines."
+msgstr ""
+
+#. tumbleweed/rabbitmq-java-client/summary
+#. leap/rabbitmq-java-client/summary
+msgid "Java AMQP client library"
+msgstr ""
+
+#. tumbleweed/rabbitmq-java-client/description
+#. leap/rabbitmq-java-client/description
+msgid ""
+"The RabbitMQ Java client library allows Java code to interface to AMQP "
+"servers."
+msgstr ""
+
+#. tumbleweed/radeontop/radeontop-lang/summary
+#. leap/radeontop/radeontop-lang/summary
+msgid "Translations for package radeontop"
+msgstr ""
+
+#. tumbleweed/radeontop/radeontop-lang/description
+#. leap/radeontop/radeontop-lang/description
+msgid "Provides translations for the \"radeontop\" package."
+msgstr ""
+
+#. tumbleweed/radiotray/summary
+#. leap/radiotray/summary
+msgid "A streaming player for listening to online radios"
+msgstr ""
+
+#. tumbleweed/radiotray/description
+#. leap/radiotray/description
+msgid ""
+"Radio Tray is an online radio streaming player that runs on a Linux system "
+"tray. Its goal is to have the minimum interface possible, making it very "
+"straightforward to use.\n"
+"\n"
+"Radio Tray is not a full featured music player, there are plenty of "
+"excellent music players already. However, there was a need for a simple "
+"application with minimal interface just to listen to online radios. And "
+"that's the sole purpose of Radio Tray."
+msgstr ""
+
+#. tumbleweed/radiotray/radiotray-lang/summary
+#. leap/radiotray/radiotray-lang/summary
+msgid "Translations for package radiotray"
+msgstr ""
+
+#. tumbleweed/radiotray/radiotray-lang/description
+#. leap/radiotray/radiotray-lang/description
+msgid "Provides translations for the \"radiotray\" package."
+msgstr ""
+
+#. tumbleweed/raleway-fonts/summary
+#. leap/raleway-fonts/summary
+msgid "Elegant sans-serif Typeface Family"
+msgstr ""
+
+#. tumbleweed/raleway-fonts/description
+msgid ""
+"Raleway is an elegant sans-serif typeface, designed by Matt McInerney, "
+"initially in a single Thin weight. It is a display face that features both "
+"old style and lining numerals, standard and discretionary ligatures, a "
+"pretty complete set of diacritics, as well as stylistic alternates inspired "
+"by more geometric sans-serif typefaces than it's neo-grotesque inspired "
+"default character set.\n"
+"\n"
+"The Impallari?Fuenzalida derivative extends the Raleway font family into a "
+"full set of 9 weights with true italics and expanded character set support "
+"for all 104 Latin languages."
+msgstr ""
+
+#. tumbleweed/ranger/summary
+#. leap/ranger/summary
+msgid "Console File Manager"
+msgstr ""
+
+#. tumbleweed/ranger/description
+#. leap/ranger/description
+msgid ""
+"Ranger is a console file manager that gives you greater flexibility and a "
+"good overview of your files without having to leave your text console. It "
+"visualizes the directory tree in two dimensions: the directory hierarchy on "
+"one, lists of files on the other, with a preview to the right.\n"
+"\n"
+"The default keys are similar to those of Vim, Emacs and Midnight Commander, "
+"though ranger is easily controllable with just the arrow keys or the mouse."
+msgstr ""
+
+#. tumbleweed/rapid-photo-downloader/summary
+#. leap/rapid-photo-downloader/summary
+msgid "Parallel downloader for camera and smartphone photos"
+msgstr ""
+
+#. tumbleweed/rapid-photo-downloader/description
+#. leap/rapid-photo-downloader/description
+msgid ""
+"Rapid Photo Downloader downloads images in parallel from multiple devices, "
+"from every camera supported by gphoto2, including smartphones.\n"
+"\n"
+"RPD has a timeline, which groups photos and videos based on how much time "
+"elapsed between consecutive shots. It can be used to identify photos and "
+"videos taken at different periods in a single day or over consecutive days."
+msgstr ""
+
+#. tumbleweed/rapid-photo-downloader/rapid-photo-downloader-lang/summary
+#. leap/rapid-photo-downloader/rapid-photo-downloader-lang/summary
+msgid "Translations for package rapid-photo-downloader"
+msgstr ""
+
+#. tumbleweed/rapid-photo-downloader/rapid-photo-downloader-lang/description
+#. leap/rapid-photo-downloader/rapid-photo-downloader-lang/description
+msgid "Provides translations for the \"rapid-photo-downloader\" package."
+msgstr ""
+
+#. tumbleweed/rapport/summary
+#. leap/rapport/summary
+msgid "Work report generator for the lazy"
+msgstr ""
+
+#. tumbleweed/rapport/description
+#. leap/rapport/description
+msgid ""
+"Writing work reports is tedious. Some people have custom hacks. This is "
+"meant to be the last one. It's Apache-2.0 licensed and written in Python, "
+"not VimScript, not Bash, not Ruby, not C, ..., you probably got it ;-)"
+msgstr ""
+
+#. tumbleweed/raspberrypi-firmware/summary
+#. tumbleweed/raspberrypi-firmware/description
+#. leap/raspberrypi-firmware/summary
+#. leap/raspberrypi-firmware/description
+msgid "Binary bootloader and firmware files for Raspberry Pi"
+msgstr ""
+
+#. tumbleweed/raspberrypi-firmware-config/summary
+#. leap/raspberrypi-firmware-config/summary
+msgid "Configuration for the Raspberry Pi firmware loader"
+msgstr ""
+
+#. tumbleweed/raspberrypi-firmware-config/description
+#. leap/raspberrypi-firmware-config/description
+msgid ""
+"This package configures the Raspberry Pi boot process.\n"
+"\n"
+"Note: config.txt can be used to set some params (gpu_mem, etc.)"
+msgstr ""
+
+#. tumbleweed/raspberrypi-firmware-dt/summary
+#. leap/raspberrypi-firmware-dt/summary
+msgid "Device trees for the Raspberry Pi firmware loader"
+msgstr ""
+
+#. tumbleweed/raspberrypi-firmware-dt/description
+#. leap/raspberrypi-firmware-dt/description
+msgid ""
+"This package provides additional device tree base files as well as overlays "
+"for the Raspberry Pi boot process."
+msgstr ""
+
+#. tumbleweed/raspberrypi-firmware/raspberrypi-firmware-extra/summary
+#. leap/raspberrypi-firmware/raspberrypi-firmware-extra/summary
+msgid "Extra bootloaders for Raspberry Pi"
+msgstr ""
+
+#. tumbleweed/raspberrypi-firmware/raspberrypi-firmware-extra/description
+#. leap/raspberrypi-firmware/raspberrypi-firmware-extra/description
+msgid ""
+"This package provides the console, experimental and debug firmware files for "
+"Raspberry Pi"
+msgstr ""
+
+#. tumbleweed/rawstudio/rawstudio-lang/summary
+#. leap/rawstudio/rawstudio-lang/summary
+msgid "Translations for package rawstudio"
+msgstr ""
+
+#. tumbleweed/rawstudio/rawstudio-lang/description
+#. leap/rawstudio/rawstudio-lang/description
+msgid "Provides translations for the \"rawstudio\" package."
+msgstr ""
+
+#. tumbleweed/rcm/summary
+#. leap/rcm/summary
+msgid "An rc file (dotfile) management tool"
+msgstr ""
+
+#. tumbleweed/rcm/description
+msgid ""
+"The rcm suite of tools is for managing dotfiles directories. This is a "
+"directory containing all the .*rc files in your home directory (.zshrc, ."
+"vimrc, and so on). These files have gone by many names in history, such as ?"
+"rc files? because they typically end in rc or ?dotfiles? because they begin "
+"with a period."
+msgstr ""
+
+#. tumbleweed/read-only-root-fs/summary
+#. leap/read-only-root-fs/summary
+msgid "Files and Scripts for a RO root fileystem"
+msgstr ""
+
+#. tumbleweed/read-only-root-fs/description
+#. leap/read-only-root-fs/description
+msgid ""
+"Files, scripts and directories to run the system with a read-only root "
+"filesystem with /etc writeable via overlayfs."
+msgstr ""
+
+#. tumbleweed/realmd/realmd-lang/summary
+#. leap/realmd/realmd-lang/summary
+msgid "Translations for package realmd"
+msgstr ""
+
+#. tumbleweed/realmd/realmd-lang/description
+#. leap/realmd/realmd-lang/description
+msgid "Provides translations for the \"realmd\" package."
+msgstr ""
+
+#. tumbleweed/redeclipse/redeclipse-data/summary
+#. leap/redeclipse/redeclipse-data/summary
+msgid "Data files for the Red Eclipse game"
+msgstr ""
+
+#. tumbleweed/redeclipse/redeclipse-data/description
+#. leap/redeclipse/redeclipse-data/description
+msgid ""
+"The game is a new take on the first person arena shooter, built as a total "
+"conversion of Cube Engine 2 (Sauerbraten), which lends itself toward a "
+"balanced gameplay, with a general theme of agility in a variety of "
+"environments.\n"
+"\n"
+"This package contains the data files (maps, models, textures, sounds, etc.) "
+"for the Red Eclipse game."
+msgstr ""
+
+#. tumbleweed/rednotebook/summary
+#. leap/rednotebook/summary
+msgid "Graphical diary and journal"
+msgstr ""
+
+#. tumbleweed/rednotebook/description
+#. leap/rednotebook/description
+msgid ""
+"RedNotebook is a graphical journal to keep track of notes and thoughts. It "
+"includes a calendar navigation, customizable templates, export functionality "
+"and word clouds. You can also format, tag and search your entries."
+msgstr ""
+
+#. tumbleweed/rednotebook/rednotebook-lang/summary
+#. leap/rednotebook/rednotebook-lang/summary
+msgid "Translations for package rednotebook"
+msgstr ""
+
+#. tumbleweed/rednotebook/rednotebook-lang/description
+#. leap/rednotebook/rednotebook-lang/description
+msgid "Provides translations for the \"rednotebook\" package."
+msgstr ""
+
+#. tumbleweed/regexp/summary
+#. leap/regexp/summary
+msgid "Simple regular expressions API"
+msgstr ""
+
+#. tumbleweed/regexp/description
+#. leap/regexp/description
+msgid ""
+"Regexp is a 100% Pure Java Regular Expression package that was graciously "
+"donated to the Apache Software Foundation by Jonathan Locke. He originally "
+"wrote this software back in 1996 and it has stood up quite well to the test "
+"of time. It includes complete Javadoc documentation as well as a simple "
+"Applet for visual debugging and testing suite for compatibility."
+msgstr ""
+
+#. tumbleweed/relaxngDatatype/summary
+#. leap/relaxngDatatype/summary
+msgid "RELAX NG Datatype API"
+msgstr ""
+
+#. tumbleweed/relaxngDatatype/description
+#. leap/relaxngDatatype/description
+msgid ""
+"RELAX NG is a public space for test cases and other ancillary software "
+"related to the construction of the RELAX NG language and its implementations."
+msgstr ""
+
+#. tumbleweed/release-notes-openSUSE/summary
+#. leap/release-notes-openSUSE/summary
+msgid "Release Notes for openSUSE"
+msgstr ""
+
+#. tumbleweed/release-notes-openSUSE/description
+msgid ""
+"This package contains the release notes with the most important changes for "
+"openSUSE Tumbleweed."
+msgstr ""
+
+#. tumbleweed/remake/remake-lang/summary
+#. leap/remake/remake-lang/summary
+msgid "Translations for package remake"
+msgstr ""
+
+#. tumbleweed/remake/remake-lang/description
+#. leap/remake/remake-lang/description
+msgid "Provides translations for the \"remake\" package."
+msgstr ""
+
+#. tumbleweed/remmina/remmina-lang/summary
+#. leap/remmina/remmina-lang/summary
+msgid "Translations for package remmina"
+msgstr ""
+
+#. tumbleweed/remmina/remmina-lang/description
+#. leap/remmina/remmina-lang/description
+msgid "Provides translations for the \"remmina\" package."
+msgstr ""
+
+#. tumbleweed/rescue/summary
+#. leap/rescue/summary
+msgid "Action Adventure in Space"
+msgstr ""
+
+#. tumbleweed/rescue/description
+#. leap/rescue/description
+msgid ""
+"Rescue! Max is an Action Adventure in Space written in java. It is based on "
+"an old mac game called Rescue! by Tom Spreen.\n"
+"\n"
+"A 2D space real-time, action/strategy game. You are in control of a ship "
+"that you fly around space fighting enemies and making friends on your way. "
+"The main objective is to rescue people from planets and take them to star "
+"bases."
+msgstr ""
+
+#. tumbleweed/retext/summary
+#. leap/retext/summary
+msgid "Simple editor for Markdown and reStructuredText"
+msgstr ""
+
+#. tumbleweed/retext/description
+#. leap/retext/description
+msgid ""
+"ReText is simple text editor that supports Markdown and reStructuredText "
+"markup languages. It is written in Python using PyQt libraries."
+msgstr ""
+
+#. tumbleweed/reuse/summary
+#. leap/reuse/summary
+msgid "A tool for compliance with the REUSE Initiative recommendations"
+msgstr ""
+
+#. tumbleweed/reuse/description
+#. leap/reuse/description
+msgid ""
+"A tool for compliance with the REUSE Initiative recommendations.  "
+"Essentially, it is a linter that checks for a project's compliance, and a "
+"compiler that generates a project's bill of materials."
+msgstr ""
+
+#. tumbleweed/rfcat/summary
+#. leap/rfcat/summary
+msgid "The swiss army knife of subGHz"
+msgstr ""
+
+#. tumbleweed/rfcat/description
+#. leap/rfcat/description
+msgid ""
+"RfCat allows you to control the wireless transceiver from an interactive "
+"Python shell or your own program running on your computer."
+msgstr ""
+
+#. tumbleweed/rfcat/rfcat-udev/summary
+#. tumbleweed/rfcat/rfcat-udev/description
+#. leap/rfcat/rfcat-udev/summary
+#. leap/rfcat/rfcat-udev/description
+msgid "Udev rules for rfcat"
+msgstr ""
+
+#. tumbleweed/rfcdiff/summary
+#. leap/rfcdiff/summary
+msgid "Draft Diff Tool"
+msgstr ""
+
+#. tumbleweed/rfcdiff/description
+#. leap/rfcdiff/description
+msgid ""
+"The purpose of this program is to compare two versions of an Internet Draft, "
+"and as output produce a diff in one of several formats:\n"
+"- side-by-side HTML diff\n"
+"- paged wdiff output in a text terminal\n"
+"- a text file with changebars in the left margin\n"
+"- a simple unified diff output"
+msgstr ""
+
+#. tumbleweed/rhash/rhash-lang/summary
+#. leap/rhash/rhash-lang/summary
+msgid "Translations for package rhash"
+msgstr ""
+
+#. tumbleweed/rhash/rhash-lang/description
+#. leap/rhash/rhash-lang/description
+msgid "Provides translations for the \"rhash\" package."
+msgstr ""
+
+#. tumbleweed/rhino/summary
+#. tumbleweed/rhino/rhino-demo/summary
+#. leap/rhino/summary
+#. leap/rhino/rhino-demo/summary
+msgid "JavaScript for Java"
+msgstr ""
+
+#. tumbleweed/rhino/description
+#. tumbleweed/rhino/rhino-demo/description
+#. leap/rhino/description
+#. leap/rhino/rhino-demo/description
+msgid ""
+"Rhino is an open-source implementation of JavaScript written entirely in "
+"Java. It is typically embedded into Java applications to provide scripting "
+"to end users."
+msgstr ""
+
+#. tumbleweed/rhythmbox/rhythmbox-lang/summary
+#. leap/rhythmbox/rhythmbox-lang/summary
+msgid "Translations for package rhythmbox"
+msgstr ""
+
+#. tumbleweed/rhythmbox/rhythmbox-lang/description
+#. leap/rhythmbox/rhythmbox-lang/description
+msgid "Provides translations for the \"rhythmbox\" package."
+msgstr ""
+
+#. tumbleweed/ripit/summary
+#. leap/ripit/summary
+msgid "Perl Script to Create .ogg or .mp3 Files from an Audio CD"
+msgstr ""
+
+#. tumbleweed/ripit/description
+#. leap/ripit/description
+msgid ""
+"This Perl script makes it easy to create MP3 files from an audio CD. It "
+"tries to find the artist and song titles with the help of CDDB."
+msgstr ""
+
+#. tumbleweed/ristretto/ristretto-lang/summary
+#. leap/ristretto/ristretto-lang/summary
+msgid "Translations for package ristretto"
+msgstr ""
+
+#. tumbleweed/ristretto/ristretto-lang/description
+#. leap/ristretto/ristretto-lang/description
+msgid "Provides translations for the \"ristretto\" package."
+msgstr ""
+
+#. tumbleweed/rnd_jue-data/summary
+#. leap/rnd_jue-data/summary
+msgid "Data files for R'n'D jue"
+msgstr ""
+
+#. tumbleweed/rnd_jue-data/description
+#. leap/rnd_jue-data/description
+msgid ""
+"\"R'n'D jue\" is an alternative version of Rocks'n'Diamonds, developed in "
+"cooperation with R&D author Holger Schemel.\n"
+"\n"
+"In contrast to the \"rnd_jue -contribution package\" (still available on "
+"Download page) it is a separate and independent program with the same source "
+"code as the original R'n'D but with a completely different appearance.\n"
+"\n"
+"This is based on the wide customizing features which have been developed "
+"recently while all the integrated games have been produced with the R'n'D "
+"Level Editor, which is actually a great \"game creation tool\" for non-"
+"programmers. So far \"R'n'D jue\" is also an example for what is possible "
+"with the old Rocks'n'Diamonds and should be an inspiration for potential "
+"level designers and game developers.\n"
+"\n"
+"Regarding the games and levels \"R'n'D jue\" is intended for players who "
+"have both an eye for an attractive design and a bent especially for \"puzzle "
+"games\". The user will also find \"action\" and many opportunities to test "
+"his manual-skill - nevertheless, the main feature of \"R'n'D jue\" is "
+"primarily to offer some (moderate) challenges for the brain.\n"
+"\n"
+"Data files (levels, tapes, graphics, music, sound) for R'n'D jue."
+msgstr ""
+
+#. tumbleweed/rocksndiamonds-data/summary
+#. leap/rocksndiamonds-data/summary
+msgid "Data files for Rocks'n'Diamonds"
+msgstr ""
+
+#. tumbleweed/rocksndiamonds-data/description
+#. leap/rocksndiamonds-data/description
+msgid ""
+"This is a nice little game with color graphics and sound for your Unix "
+"system with color X11.  You need an 8-Bit color display or better.  It will "
+"not work on black&white systems, and maybe not on gray scale systems.\n"
+"\n"
+"If you know the game Boulder Dash (Commodore C64) or Emerald Mine (Amiga), "
+"you know what Rocks'n'Diamonds is about.\n"
+"\n"
+"Data files (levels, tapes, graphics, music, sound) for Rocks'n'Diamonds."
+msgstr ""
+
+#. tumbleweed/rocs/rocs-lang/summary
+#. leap/rocs/rocs-lang/summary
+msgid "Translations for package rocs"
+msgstr ""
+
+#. tumbleweed/rocs/rocs-lang/description
+#. leap/rocs/rocs-lang/description
+msgid "Provides translations for the \"rocs\" package."
+msgstr ""
+
+#. tumbleweed/rollback-helper/summary
+#. leap/rollback-helper/summary
+msgid "Helper Scripts for system rollback"
+msgstr ""
+
+#. tumbleweed/rollback-helper/description
+#. leap/rollback-helper/description
+msgid ""
+"The rollback-helper package is a collection of scripts, which, after a "
+"successfull filesystem rollback with snapper, resets registered products on "
+"SCC or SMT."
+msgstr ""
+
+#. tumbleweed/roundcubemail/summary
+#. leap/roundcubemail/summary
+msgid "A browser-based multilingual IMAP client"
+msgstr ""
+
+#. tumbleweed/roundcubemail/description
+#. leap/roundcubemail/description
+msgid ""
+"Roundcube Webmail is a browser-based multilingual IMAP client with an "
+"application-like user interface. It provides MIME support, address book, "
+"folder manipulation, message searching and spell checking.\n"
+"\n"
+"Roundcube Webmail is written in PHP and requires a MySQL database. The user "
+"interface is skinnable using XHTML and CSS 2."
+msgstr ""
+
+#. tumbleweed/rpmconf/summary
+#. leap/rpmconf/summary
+msgid "Tool to handle rpmnew and rpmsave files"
+msgstr ""
+
+#. tumbleweed/rpmconf/description
+#. leap/rpmconf/description
+msgid ""
+"This tool search for .rpmnew, .rpmsave and .rpmorig files and ask you what "
+"to do with them: Keep current version, place back old version, watch the "
+"diff or merge."
+msgstr ""
+
+#. tumbleweed/rpmdevtools/summary
+#. leap/rpmdevtools/summary
+msgid "RPM Development Tools"
+msgstr ""
+
+#. tumbleweed/rpmdevtools/description
+#. leap/rpmdevtools/description
+msgid ""
+"This package contains scripts and (X)Emacs support files to aid in "
+"development of RPM packages. rpmdev-setuptree    Create RPM build tree "
+"within user's home directory rpmdev-diff         Diff contents of two "
+"archives rpmdev-newspec      Creates new .spec from template rpmdev-"
+"rmdevelrpms  Find (and optionally remove) \"development\" RPMs rpmdev-"
+"checksig     Check package signatures using alternate RPM keyring "
+"rpminfo             Print information about executables and libraries rpmdev-"
+"md5/sha*     Display checksums of all files in an archive file rpmdev-"
+"vercmp       RPM version comparison checker spectool            Expand and "
+"download sources and patches in specfiles rpmdev-wipetree     Erase all "
+"files within dirs created by rpmdev-setuptree rpmdev-extract      Extract "
+"various archives, \"tar xvf\" style rpmdev-bumpspec     Bump revision in "
+"specfile ...and many more."
+msgstr ""
+
+#. tumbleweed/rpmlint-Factory/summary
+#. leap/rpmlint-Factory/summary
+msgid "RPM file correctness checker - openSUSE:Factory configuration"
+msgstr ""
+
+#. tumbleweed/rpmlint-Factory/description
+#. leap/rpmlint-Factory/description
+msgid ""
+"rpmlint is a tool to check common errors on RPM packages. This package "
+"provides the configuration specific for SUSE Factory."
+msgstr ""
+
+#. tumbleweed/rpmlint-Factory/rpmlint-Factory-strict/summary
+#. leap/rpmlint-Factory/rpmlint-Factory-strict/summary
+msgid "Conflict only applying to openSUSE:Factory itself"
+msgstr ""
+
+#. tumbleweed/rpmlint-Factory/rpmlint-Factory-strict/description
+#. leap/rpmlint-Factory/rpmlint-Factory-strict/description
+msgid ""
+"The package contains additional rpmlint configuration that forbids invalid "
+"licenses."
+msgstr ""
+
+#. tumbleweed/rpmorphan/summary
+#. leap/rpmorphan/summary
+msgid "List the orphaned RPM packages"
+msgstr ""
+
+#. tumbleweed/rpmorphan/description
+#. leap/rpmorphan/description
+msgid ""
+"Finds \"orphaned\" packages on your system. It determines which packages "
+"have no other packages depending on their installation, and shows you a list "
+"of these packages. It intends to be clone of deborphan debian tools for RPM "
+"packages."
+msgstr ""
+
+#. tumbleweed/rpmrebuild/summary
+#. leap/rpmrebuild/summary
+msgid "A tool to build a rpm file from the rpm database"
+msgstr ""
+
+#. tumbleweed/rpmrebuild/description
+#. leap/rpmrebuild/description
+msgid ""
+"rpmrebuild allows to build an rpm file from an installed rpm, or from "
+"another rpm file, with or without changes (batch or interactive). It can be "
+"extended by a plugin system. A typical use is to easy repackage a software "
+"after some configuration's change."
+msgstr ""
+
+#. tumbleweed/rsibreak/rsibreak-lang/summary
+#. leap/rsibreak/rsibreak-lang/summary
+msgid "Translations for package rsibreak"
+msgstr ""
+
+#. tumbleweed/rsibreak/rsibreak-lang/description
+#. leap/rsibreak/rsibreak-lang/description
+msgid "Provides translations for the \"rsibreak\" package."
+msgstr ""
+
+#. tumbleweed/rsnapshot/summary
+#. leap/rsnapshot/summary
+msgid "Backup program using hardlinks"
+msgstr ""
+
+#. tumbleweed/rsnapshot/description
+#. leap/rsnapshot/description
+msgid ""
+"rsnapshot is a filesystem snapshot utility for making backups of local and "
+"remote systems. Using rsync and hard links, it is possible to keep multiple, "
+"full backups instantly available. The disk space required is just a little "
+"more than the space of one full backup, plus incrementals. Depending on your "
+"configuration, it is quite possible to set up in just a few minutes. Files "
+"can be restored by the users who own them, without the root user getting "
+"involved. There are no tapes to change, so once it's set up, you may never "
+"need to think about it again."
+msgstr ""
+
+#. tumbleweed/rss2email/summary
+#. leap/rss2email/summary
+msgid "Receive RSS feeds by email"
+msgstr ""
+
+#. tumbleweed/rss2email/description
+#. leap/rss2email/description
+msgid ""
+"A free, open-source tool for Windows, Mac OS and UNIX for getting news from "
+"RSS feeds in email. It is a simple program which you can run in your "
+"crontab.  It watches RSS feeds and sends you nicely formatted email message "
+"for each new item."
+msgstr ""
+
+#. tumbleweed/rst2html5/summary
+#. leap/rst2html5/summary
+msgid "RestructuredText to (X)HTML5"
+msgstr ""
+
+#. tumbleweed/rst2html5/description
+#. leap/rst2html5/description
+msgid ""
+"rst2html tool generates basic HTML and CSS from Restructured Text. It "
+"provides ways to modify the output with extensions like Nice CSS (thanks to "
+"Twitter's Bootstrap CSS) or online presentations with deck.js."
+msgstr ""
+
+#. tumbleweed/rstcheck/summary
+#. leap/rstcheck/summary
+msgid "Checks syntax of rST and code blocks nested within it"
+msgstr ""
+
+#. tumbleweed/rstcheck/description
+#. leap/rstcheck/description
+msgid "Checks syntax of reStructuredText and code blocks nested within it."
+msgstr ""
+
+#. tumbleweed/rt2860/summary
+#. leap/rt2860/summary
+msgid "Userspace configuration files for rt2860 driver"
+msgstr ""
+
+#. tumbleweed/rt2860/description
+#. leap/rt2860/description
+msgid ""
+"This package contains a small configuration file of the rt2860 driver, "
+"currently read by the kernel module. In later versions this will go away.\n"
+"\n"
+"\n"
+"\n"
+"Authors:\n"
+"--------     Ralink Tech Inc."
+msgstr ""
+
+#. tumbleweed/rtorrent/rtorrent-vim/summary
+#. leap/rtorrent/rtorrent-vim/summary
+msgid "Vim syntax file for rTorrent's config file"
+msgstr ""
+
+#. tumbleweed/rtorrent/rtorrent-vim/description
+#. leap/rtorrent/rtorrent-vim/description
+msgid ""
+"Vim syntax file for rTorrent's config file, .rtorrent.rc The files are taken "
+"from http://www.vim.org/scripts/script.php?script_id=2234"
+msgstr ""
+
+#. tumbleweed/rubber/summary
+#. leap/rubber/summary
+msgid "An automated system for building LaTeX documents"
+msgstr ""
+
+#. tumbleweed/rubber/description
+#. leap/rubber/description
+msgid ""
+"Rubber is a building system for LaTeX documents. It is based on a routine "
+"that runs just as many compilations as necessary. The module system provides "
+"a great flexibility that virtually allows support for any package with no "
+"user intervention, as well as pre- and post-processing of the document. The "
+"standard modules currently provide support for bibtex, dvips, dvipdfm, "
+"pdftex, makeindex. A good number of standard packages are supported, "
+"including graphics/graphicx (with automatic conversion between various "
+"formats and Metapost compilation)."
+msgstr ""
+
+#. tumbleweed/ruby-common/summary
+#. leap/ruby-common/summary
+msgid "Collection of scripts and macros for ruby packaging"
+msgstr ""
+
+#. tumbleweed/ruby-common/description
+#. leap/ruby-common/description
+msgid ""
+"This package is needed for (generated) ruby gems. It provides hooks for "
+"automatic rpm provides and requires and macros that gem2rpm uses."
+msgstr ""
+
+#. tumbleweed/ruby-common/ruby-common-rails/summary
+#. leap/ruby-common/ruby-common-rails/summary
+msgid "Rails packaging support"
+msgstr ""
+
+#. tumbleweed/ruby-common/ruby-common-rails/description
+#. leap/ruby-common/ruby-common-rails/description
+msgid ""
+"This package is needed for (generated) ruby gems. It provides hooks for "
+"automatic rpm provides and requires and macros that gem2rpm uses.\n"
+"\n"
+"Rails packaging support files."
+msgstr ""
+
+#. tumbleweed/ruby2.5/ruby2.5-doc-ri/summary
+#. leap/ruby2.5/ruby2.5-doc-ri/summary
+msgid "Ruby Interactive Documentation"
+msgstr ""
+
+#. tumbleweed/ruby2.5/ruby2.5-doc-ri/description
+#. leap/ruby2.5/ruby2.5-doc-ri/description
+msgid "This package contains the RI docs for ruby"
+msgstr ""
+
+#. tumbleweed/runvdr-extreme-systemd/summary
+#. leap/runvdr-extreme-systemd/summary
+msgid "Startscripts and systemd unit file for VDR"
+msgstr ""
+
+#. tumbleweed/runvdr-extreme-systemd/description
+#. leap/runvdr-extreme-systemd/description
+msgid ""
+"This package contains runvdr.extreme as a startscript and a systemd unit "
+"file for VDR"
+msgstr ""
+
+#. tumbleweed/rust-packaging/summary
+#. leap/rust-packaging/summary
+msgid "RPM tools and macros for building Rust packages"
+msgstr ""
+
+#. tumbleweed/rust-packaging/description
+#. leap/rust-packaging/description
+msgid ""
+"This package provides the tools and macros for building projects in Rust on "
+"various architectures."
+msgstr ""
+
+#. tumbleweed/rust/rust-src/summary
+#. leap/rust/rust-src/summary
+msgid "Sources for the Rust standard library"
+msgstr ""
+
+#. tumbleweed/rust/rust-src/description
+#. leap/rust/rust-src/description
+msgid ""
+"This package includes source files for the Rust standard library. This is "
+"commonly used for function detail lookups in helper programs such as RLS or "
+"racer."
+msgstr ""
+
+#. tumbleweed/rust-srpm-macros/summary
+#. leap/rust-srpm-macros/summary
+msgid "RPM macros for building Rust source packages"
+msgstr ""
+
+#. tumbleweed/rust-srpm-macros/description
+#. leap/rust-srpm-macros/description
+msgid ""
+"This package provides the RPM macros for building usable Source RPMs of Rust "
+"packages."
+msgstr ""
+
+#. tumbleweed/rygel/rygel-lang/summary
+#. leap/rygel/rygel-lang/summary
+msgid "Translations for package rygel"
+msgstr ""
+
+#. tumbleweed/rygel/rygel-lang/description
+#. leap/rygel/rygel-lang/description
+msgid "Provides translations for the \"rygel\" package."
+msgstr ""
+
+#. tumbleweed/rypper/summary
+#. leap/rypper/summary
+msgid "Wrapper around zypper for managing multiple repositories"
+msgstr ""
+
+#. tumbleweed/rypper/description
+#. leap/rypper/description
+msgid ""
+"rypper is a wrapper around zypper for performing repository operations in "
+"batch.  It allows selection of which repositories to operate on via a number "
+"of different repository selection specifiers."
+msgstr ""
+
+#. tumbleweed/rmt-server/summary
+#. leap/rmt-server/summary
+msgid "Repository mirroring tool and registration proxy for SCC"
+msgstr ""
+
+#. tumbleweed/rmt-server/description
+#. leap/rmt-server/description
+msgid ""
+"This package provides a mirroring tool for RPM repositories and a "
+"registration proxy for the SUSE Customer Center (SCC).\n"
+"\n"
+"As registration is required for SUSE products, the registration proxy allows "
+"one to register SUSE products within a private network.\n"
+"\n"
+"It's possible to mirror SUSE, as well as openSUSE and other RPM "
+"repositories. SCC organization credentials are required to synchronize SUSE "
+"products, subscription information, and to mirror SUSE repositories.\n"
+"\n"
+"RMT supersedes the main functionality of SMT in SLES 15."
 msgstr ""
 
 #. tumbleweed/rust/summary
@@ -3556,285 +4848,7 @@ msgid ""
 "written in Rust."
 msgstr ""
 
-#. tumbleweed/rxp/summary
-#. leap/rxp/summary
-msgid "XML Parser in C"
-msgstr ""
-
-#. tumbleweed/rxp/description
-#. leap/rxp/description
-msgid ""
-"The current version of RXP supports XML 1.1, Namespaces 1.1, xml:id, and XML "
-"Catalogs. To use an XML Catalog, set the environment variable "
-"XML_CATALOG_FILES to a space-separated list of catalog files.\n"
-"\n"
-"RXP was written by Richard Tobin at the Language Technology Group, Human "
-"Communication Research Centre, University of Edinburgh.\n"
-"\n"
-"A simple application (called rxp) is provided. It parses and writes XML "
-"data, optionally expanding entities, defaulting attributes, and translating "
-"to a different output encoding.\n"
-"\n"
-"Bug reports should be sent to richard@cogsci.ed.ac.uk."
-msgstr ""
-
-#. tumbleweed/rxvt-unicode/summary
-#. leap/rxvt-unicode/summary
-msgid "Rxvt X Terminal with Unicode Support"
-msgstr ""
-
-#. tumbleweed/rxvt-unicode/description
-#. leap/rxvt-unicode/description
-msgid ""
-"rxvt-unicode is a clone of the well-known terminal emulator rxvt, modified "
-"to store text in Unicode (either UCS-2 or UCS-4) and to use locale-correct "
-"input and output. It also supports mixing multiple fonts at the same time, "
-"including Xft fonts."
-msgstr ""
-
-#. tumbleweed/rygel/summary
-#. leap/rygel/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA"
-msgstr ""
-
-#. tumbleweed/rygel/description
-#. leap/rygel/description
-msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network. In technical "
-"terms it is both a UPnP AV MediaServer and MediaRenderer implemented through "
-"a plug-in mechanism. Interoperability with other devices in the market is "
-"achieved by conformance to very strict requirements of DLNA and on the fly "
-"conversion of media to format that client devices are capable of handling."
-msgstr ""
-
-#. tumbleweed/rygel/rygel-devel/summary
-#. leap/rygel/rygel-devel/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA -- Development Files"
-msgstr ""
-
-#. tumbleweed/rygel/rygel-devel/description
-#. leap/rygel/rygel-devel/description
-msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
-"\n"
-"This package provides development files for rygel."
-msgstr ""
-
-#. tumbleweed/rygel/rygel-plugin-gstreamer-renderer/summary
-#. leap/rygel/rygel-plugin-gstreamer-renderer/summary
-msgid ""
-"Home Media Solution for GNOME based on UPnP/DLNA -- GStreamer Renderer Plugin"
-msgstr ""
-
-#. tumbleweed/rygel/rygel-plugin-gstreamer-renderer/description
-#. leap/rygel/rygel-plugin-gstreamer-renderer/description
-msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
-"\n"
-"This package provides a standalone MediaRenderer plugin, based on the "
-"GStreamer playbin2 element."
-msgstr ""
-
-#. tumbleweed/rygel/rygel-plugin-tracker/summary
-#. leap/rygel/rygel-plugin-tracker/summary
-msgid "Home Media Solution for GNOME based on UPnP/DLNA -- Tracker Plugin"
-msgstr ""
-
-#. tumbleweed/rygel/rygel-plugin-tracker/description
-#. leap/rygel/rygel-plugin-tracker/description
-msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
-"\n"
-"This package provides a plugin using tracker to export media found on the "
-"local machine."
-msgstr ""
-
-#. tumbleweed/rzip/summary
-#. leap/rzip/summary
-msgid "A large-file compression program"
-msgstr ""
-
-#. tumbleweed/rzip/description
-#. leap/rzip/description
-msgid ""
-"rzip is a compression program, similar in functionality to gzip or bzip2, "
-"but able to take advantage long distance redundencies in files, which can "
-"sometimes allow rzip to produce much better compression ratios than other "
-"programs."
-msgstr ""
-
-#. tumbleweed/rzsz/summary
-#. leap/rzsz/summary
-msgid "X-, Y-, and Z-Modem Data Transfer Protocols"
-msgstr ""
-
-#. tumbleweed/rzsz/description
-#. leap/rzsz/description
-msgid ""
-"rzsz allows you to use \"sz filename\" to send a file to your local system."
-msgstr ""
-
-#. tumbleweed/rdma-core/srp_daemon/summary
-#. leap/rdma-core/srp_daemon/summary
-msgid "Tools for using the InfiniBand SRP protocol devices"
-msgstr ""
-
-#. tumbleweed/rdma-core/srp_daemon/description
-#. leap/rdma-core/srp_daemon/description
-msgid ""
-"In conjunction with the kernel ib_srp driver, srp_daemon allows you to "
-"discover and use SCSI devices via the SCSI RDMA Protocol over InfiniBand."
-msgstr ""
-
-#. tumbleweed/rrdtool/tcl-rrdtool/summary
-msgid "Tcl bindings for RRDtool"
-msgstr ""
-
-#. tumbleweed/rrdtool/tcl-rrdtool/description
-msgid ""
-"RRD is the Acronym for Round Robin Database. RRD is a system to store and "
-"display time-series data (i.e. network bandwidth, machine-room temperature, "
-"server load average). This package contains documentation on using RRD.\n"
-"\n"
-"This package contains the Tcl bindings."
-msgstr ""
-
-#. tumbleweed/retro-gtk/typelib-1_0-Retro-0_10/summary
-msgid "GObject introspection bindings for libretro-gtk"
-msgstr ""
-
-#. tumbleweed/retro-gtk/typelib-1_0-Retro-0_10/description
-msgid ""
-"retro-gtk wraps the libretro API for use in Gtk applications. This "
-"subpackage contains the gobject bindings for the libretro-gtk shared library."
-msgstr ""
-
-#. tumbleweed/rygel/typelib-1_0-RygelCore-2_6/summary
-#. leap/rygel/typelib-1_0-RygelCore-2_6/summary
-msgid "Rygel Core library -- gobject introspection"
-msgstr ""
-
-#. tumbleweed/rygel/typelib-1_0-RygelCore-2_6/description
-#. tumbleweed/rygel/typelib-1_0-RygelRenderer-2_6/description
-#. tumbleweed/rygel/typelib-1_0-RygelRendererGst-2_6/description
-#. tumbleweed/rygel/typelib-1_0-RygelServer-2_6/description
-#. leap/rygel/typelib-1_0-RygelCore-2_6/description
-#. leap/rygel/typelib-1_0-RygelRenderer-2_6/description
-#. leap/rygel/typelib-1_0-RygelRendererGst-2_6/description
-#. leap/rygel/typelib-1_0-RygelServer-2_6/description
-msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network."
-msgstr ""
-
-#. tumbleweed/rygel/typelib-1_0-RygelRenderer-2_6/summary
-#. tumbleweed/rygel/typelib-1_0-RygelRendererGst-2_6/summary
-#. leap/rygel/typelib-1_0-RygelRenderer-2_6/summary
-#. leap/rygel/typelib-1_0-RygelRendererGst-2_6/summary
-msgid "Rygel Renderer library -- gobject introspection"
-msgstr ""
-
-#. tumbleweed/rygel/typelib-1_0-RygelServer-2_6/summary
-#. leap/rygel/typelib-1_0-RygelServer-2_6/summary
-msgid "Rygel Server library -- gobject introspection"
-msgstr ""
-
-#. tumbleweed/RemoteBox/summary
-#. leap/RemoteBox/summary
-msgid "A VirtualBox client with remote management"
-msgstr ""
-
-#. tumbleweed/RemoteBox/description
-#. leap/RemoteBox/description
-msgid ""
-"VirtualBox is traditionally considered to be a virtualization solution aimed "
-"at the desktop as opposed to other solutions such as KVM, Xen and VMWare ESX "
-"which are considered more server orientated solutions. While it is certainly "
-"possible to install VirtualBox on a server, it offers few remote management "
-"features beyond using the vboxmanage command line. RemoteBox aims to fill "
-"this gap by providing a graphical VirtualBox client which is able to "
-"communicate with and manage a VirtualBox server installation."
-msgstr ""
-
-#. tumbleweed/resource-agents/monitoring-plugins-metadata/summary
-#. leap/resource-agents/monitoring-plugins-metadata/summary
-msgid "Metadata for Monitoring plugins"
-msgstr ""
-
-#. tumbleweed/resource-agents/monitoring-plugins-metadata/description
-#. leap/resource-agents/monitoring-plugins-metadata/description
-msgid ""
-"XML files containing metadata which facilitates using nagios plugins as "
-"resource agents. These files were produced from help pages of individual "
-"nagios plugins."
-msgstr ""
-
-#. tumbleweed/rpmconf/python3-rpmconf/summary
-#. leap/rpmconf/python3-rpmconf/summary
-msgid "Python interface for rpmconf"
-msgstr ""
-
-#. tumbleweed/rpmconf/python3-rpmconf/description
-#. leap/rpmconf/python3-rpmconf/description
-msgid "Python interface for rpmconf and an essential part of rpmconf."
-msgstr ""
-
-#. tumbleweed/rabbitmq-java-client/summary
-#. leap/rabbitmq-java-client/summary
-msgid "Java AMQP client library"
-msgstr ""
-
-#. tumbleweed/rabbitmq-java-client/description
-#. leap/rabbitmq-java-client/description
-msgid ""
-"The RabbitMQ Java client library allows Java code to interface to AMQP "
-"servers."
-msgstr ""
-
-#. tumbleweed/radeontop/radeontop-lang/summary
-msgid "Translations for package radeontop"
-msgstr ""
-
-#. tumbleweed/radeontop/radeontop-lang/description
-msgid "Provides translations for the \"radeontop\" package."
-msgstr ""
-
-#. tumbleweed/radiotray/summary
-#. leap/radiotray/summary
-msgid "A streaming player for listening to online radios"
-msgstr ""
-
-#. tumbleweed/radiotray/description
-#. leap/radiotray/description
-msgid ""
-"Radio Tray is an online radio streaming player that runs on a Linux system "
-"tray. Its goal is to have the minimum interface possible, making it very "
-"straightforward to use.\n"
-"\n"
-"Radio Tray is not a full featured music player, there are plenty of "
-"excellent music players already. However, there was a need for a simple "
-"application with minimal interface just to listen to online radios. And "
-"that's the sole purpose of Radio Tray."
-msgstr ""
-
-#. tumbleweed/radiotray/radiotray-lang/summary
-msgid "Translations for package radiotray"
-msgstr ""
-
-#. tumbleweed/radiotray/radiotray-lang/description
-msgid "Provides translations for the \"radiotray\" package."
-msgstr ""
-
-#. tumbleweed/raleway-fonts/summary
-#. leap/raleway-fonts/summary
-msgid "Elegant sans-serif Typeface Family"
-msgstr ""
-
-#. tumbleweed/raleway-fonts/description
+#. leap/raleway-fonts/description
 msgid ""
 "Raleway is an elegant sans-serif typeface, designed by Matt McInerney, "
 "initially in a single Thin weight. It is a display face that features both "
@@ -3848,90 +4862,6 @@ msgid ""
 "for all 104 Latin languages."
 msgstr ""
 
-#. tumbleweed/ranger/summary
-#. leap/ranger/summary
-msgid "Console File Manager"
-msgstr ""
-
-#. tumbleweed/ranger/description
-#. leap/ranger/description
-msgid ""
-"Ranger is a console file manager that gives you greater flexibility and a "
-"good overview of your files without having to leave your text console. It "
-"visualizes the directory tree in two dimensions: the directory hierarchy on "
-"one, lists of files on the other, with a preview to the right.\n"
-"\n"
-"The default keys are similar to those of Vim, Emacs and Midnight Commander, "
-"though ranger is easily controllable with just the arrow keys or the mouse."
-msgstr ""
-
-#. tumbleweed/rapport/summary
-#. leap/rapport/summary
-msgid "Work report generator for the lazy"
-msgstr ""
-
-#. tumbleweed/rapport/description
-#. leap/rapport/description
-msgid ""
-"Writing work reports is tedious. Some people have custom hacks. This is "
-"meant to be the last one. It's Apache-2.0 licensed and written in Python, "
-"not VimScript, not Bash, not Ruby, not C, ..., you probably got it ;-)"
-msgstr ""
-
-#. tumbleweed/raspberrypi-firmware/summary
-#. tumbleweed/raspberrypi-firmware/description
-#. leap/raspberrypi-firmware/summary
-#. leap/raspberrypi-firmware/description
-msgid "Binary bootloader and firmware files for Raspberry Pi"
-msgstr ""
-
-#. tumbleweed/raspberrypi-firmware-config-rpi/summary
-#. tumbleweed/raspberrypi-firmware-config-rpi2/summary
-#. tumbleweed/raspberrypi-firmware-config-rpi3/summary
-#. leap/raspberrypi-firmware-config-rpi/summary
-#. leap/raspberrypi-firmware-config-rpi2/summary
-#. leap/raspberrypi-firmware-config-rpi3/summary
-msgid "Configuration for the Raspberry Pi firmware loader"
-msgstr ""
-
-#. tumbleweed/raspberrypi-firmware-config-rpi/description
-#. tumbleweed/raspberrypi-firmware-config-rpi2/description
-#. tumbleweed/raspberrypi-firmware-config-rpi3/description
-#. leap/raspberrypi-firmware-config-rpi/description
-#. leap/raspberrypi-firmware-config-rpi2/description
-#. leap/raspberrypi-firmware-config-rpi3/description
-msgid ""
-"This package configures the Raspberry Pi boot process.\n"
-"\n"
-"Note: config.txt can be used to set some params (gpu_mem, etc.)"
-msgstr ""
-
-#. tumbleweed/raspberrypi-firmware/raspberrypi-firmware-extra/summary
-#. leap/raspberrypi-firmware/raspberrypi-firmware-extra/summary
-msgid "Extra bootloaders for Raspberry Pi"
-msgstr ""
-
-#. tumbleweed/raspberrypi-firmware/raspberrypi-firmware-extra/description
-#. leap/raspberrypi-firmware/raspberrypi-firmware-extra/description
-msgid ""
-"This package provides the console, experimental and debug firmware files for "
-"Raspberry Pi"
-msgstr ""
-
-#. tumbleweed/rawstudio/rawstudio-lang/summary
-msgid "Translations for package rawstudio"
-msgstr ""
-
-#. tumbleweed/rawstudio/rawstudio-lang/description
-msgid "Provides translations for the \"rawstudio\" package."
-msgstr ""
-
-#. tumbleweed/rcm/summary
-#. leap/rcm/summary
-msgid "An rc file (dotfile) management tool"
-msgstr ""
-
-#. tumbleweed/rcm/description
 #. leap/rcm/description
 msgid ""
 "The rcm suite of tools is for managing dotfiles directories. This is a "
@@ -3941,1199 +4871,14 @@ msgid ""
 "with a period."
 msgstr ""
 
-#. tumbleweed/redeclipse/redeclipse-data/summary
-#. leap/redeclipse/redeclipse-data/summary
-msgid "Data files for the Red Eclipse game"
-msgstr ""
-
-#. tumbleweed/redeclipse/redeclipse-data/description
-#. leap/redeclipse/redeclipse-data/description
-msgid ""
-"The game is a new take on the first person arena shooter, built as a total "
-"conversion of Cube Engine 2 (Sauerbraten), which lends itself toward a "
-"balanced gameplay, with a general theme of agility in a variety of "
-"environments.\n"
-"\n"
-"This package contains the data files (maps, models, textures, sounds, etc.) "
-"for the Red Eclipse game."
-msgstr ""
-
-#. tumbleweed/rednotebook/summary
-#. leap/rednotebook/summary
-msgid "Graphical diary and journal"
-msgstr ""
-
-#. tumbleweed/rednotebook/description
-#. leap/rednotebook/description
-msgid ""
-"RedNotebook is a graphical journal to keep track of notes and thoughts. It "
-"includes a calendar navigation, customizable templates, export functionality "
-"and word clouds. You can also format, tag and search your entries."
-msgstr ""
-
-#. tumbleweed/rednotebook/rednotebook-lang/summary
-msgid "Translations for package rednotebook"
-msgstr ""
-
-#. tumbleweed/rednotebook/rednotebook-lang/description
-msgid "Provides translations for the \"rednotebook\" package."
-msgstr ""
-
-#. tumbleweed/regexp/summary
-#. leap/regexp/summary
-msgid "Simple regular expressions API"
-msgstr ""
-
-#. tumbleweed/regexp/description
-#. leap/regexp/description
-msgid ""
-"Regexp is a 100% Pure Java Regular Expression package that was graciously "
-"donated to the Apache Software Foundation by Jonathan Locke. He originally "
-"wrote this software back in 1996 and it has stood up quite well to the test "
-"of time. It includes complete Javadoc documentation as well as a simple "
-"Applet for visual debugging and testing suite for compatibility."
-msgstr ""
-
-#. tumbleweed/rekonq/rekonq-lang/summary
-msgid "Translations for package rekonq"
-msgstr ""
-
-#. tumbleweed/rekonq/rekonq-lang/description
-msgid "Provides translations for the \"rekonq\" package."
-msgstr ""
-
-#. tumbleweed/relaxngDatatype/summary
-#. leap/relaxngDatatype/summary
-#. leap/relaxngDatatype/relaxngDatatype-javadoc/summary
-msgid "RELAX NG Datatype API"
-msgstr ""
-
-#. tumbleweed/relaxngDatatype/description
-#. leap/relaxngDatatype/description
-#. leap/relaxngDatatype/relaxngDatatype-javadoc/description
-msgid ""
-"RELAX NG is a public space for test cases and other ancillary software "
-"related to the construction of the RELAX NG language and its implementations."
-msgstr ""
-
-#. tumbleweed/release-notes-openSUSE/summary
-#. leap/release-notes-openSUSE/summary
-msgid "Release Notes for openSUSE"
-msgstr ""
-
-#. tumbleweed/release-notes-openSUSE/description
 #. leap/release-notes-openSUSE/description
 msgid ""
 "This package contains the release notes with the most important changes for "
-"this openSUSE release. In HTML format, they are available in the help center."
+"this openSUSE release."
 msgstr ""
 
-#. tumbleweed/remmina/remmina-lang/summary
-msgid "Translations for package remmina"
-msgstr ""
-
-#. tumbleweed/remmina/remmina-lang/description
-msgid "Provides translations for the \"remmina\" package."
-msgstr ""
-
-#. tumbleweed/rescue/summary
-#. leap/rescue/summary
-msgid "Action Adventure in Space"
-msgstr ""
-
-#. tumbleweed/rescue/description
-#. leap/rescue/description
-msgid ""
-"Rescue! Max is an Action Adventure in Space written in java. It is based on "
-"an old mac game called Rescue! by Tom Spreen.\n"
-"\n"
-"A 2D space real-time, action/strategy game. You are in control of a ship "
-"that you fly around space fighting enemies and making friends on your way. "
-"The main objective is to rescue people from planets and take them to star "
-"bases."
-msgstr ""
-
-#. tumbleweed/retext/summary
-#. leap/retext/summary
-msgid "Simple editor for Markdown and reStructuredText"
-msgstr ""
-
-#. tumbleweed/retext/description
-#. leap/retext/description
-msgid ""
-"ReText is simple text editor that supports Markdown and reStructuredText "
-"markup languages. It is written in Python using PyQt libraries."
-msgstr ""
-
-#. tumbleweed/rfcdiff/summary
-msgid "Draft Diff Tool"
-msgstr ""
-
-#. tumbleweed/rfcdiff/description
-msgid ""
-"The purpose of this program is to compare two versions of an Internet Draft, "
-"and as output produce a diff in one of several formats:\n"
-"- side-by-side HTML diff\n"
-"- paged wdiff output in a text terminal\n"
-"- a text file with changebars in the left margin\n"
-"- a simple unified diff output"
-msgstr ""
-
-#. tumbleweed/rhash/rhash-lang/summary
-msgid "Translations for package rhash"
-msgstr ""
-
-#. tumbleweed/rhash/rhash-lang/description
-msgid "Provides translations for the \"rhash\" package."
-msgstr ""
-
-#. tumbleweed/rhino/summary
-#. tumbleweed/rhino/rhino-demo/summary
-#. leap/rhino/summary
-#. leap/rhino/rhino-demo/summary
-msgid "JavaScript for Java"
-msgstr ""
-
-#. tumbleweed/rhino/description
-#. tumbleweed/rhino/rhino-demo/description
-#. leap/rhino/description
-#. leap/rhino/rhino-demo/description
-msgid ""
-"Rhino is an open-source implementation of JavaScript written entirely in "
-"Java. It is typically embedded into Java applications to provide scripting "
-"to end users."
-msgstr ""
-
-#. tumbleweed/rhythmbox/rhythmbox-lang/summary
-msgid "Translations for package rhythmbox"
-msgstr ""
-
-#. tumbleweed/rhythmbox/rhythmbox-lang/description
-msgid "Provides translations for the \"rhythmbox\" package."
-msgstr ""
-
-#. tumbleweed/ripit/summary
-#. leap/ripit/summary
-msgid "Perl Script to Create .ogg or .mp3 Files from an Audio CD"
-msgstr ""
-
-#. tumbleweed/ripit/description
-#. leap/ripit/description
-msgid ""
-"This Perl script makes it easy to create MP3 files from an audio CD. It "
-"tries to find the artist and song titles with the help of CDDB."
-msgstr ""
-
-#. tumbleweed/ristretto/ristretto-lang/summary
-msgid "Translations for package ristretto"
-msgstr ""
-
-#. tumbleweed/ristretto/ristretto-lang/description
-msgid "Provides translations for the \"ristretto\" package."
-msgstr ""
-
-#. tumbleweed/rnd_jue-data/summary
-#. leap/rnd_jue-data/summary
-msgid "Data files for R'n'D jue"
-msgstr ""
-
-#. tumbleweed/rnd_jue-data/description
-#. leap/rnd_jue-data/description
-msgid ""
-"\"R'n'D jue\" is an alternative version of Rocks'n'Diamonds, developed in "
-"cooperation with R&D author Holger Schemel.\n"
-"\n"
-"In contrast to the \"rnd_jue -contribution package\" (still available on "
-"Download page) it is a separate and independent program with the same source "
-"code as the original R'n'D but with a completely different appearance.\n"
-"\n"
-"This is based on the wide customizing features which have been developed "
-"recently while all the integrated games have been produced with the R'n'D "
-"Level Editor, which is actually a great \"game creation tool\" for non-"
-"programmers. So far \"R'n'D jue\" is also an example for what is possible "
-"with the old Rocks'n'Diamonds and should be an inspiration for potential "
-"level designers and game developers.\n"
-"\n"
-"Regarding the games and levels \"R'n'D jue\" is intended for players who "
-"have both an eye for an attractive design and a bent especially for \"puzzle "
-"games\". The user will also find \"action\" and many opportunities to test "
-"his manual-skill - nevertheless, the main feature of \"R'n'D jue\" is "
-"primarily to offer some (moderate) challenges for the brain.\n"
-"\n"
-"Data files (levels, tapes, graphics, music, sound) for R'n'D jue."
-msgstr ""
-
-#. tumbleweed/rocksndiamonds-data/summary
-#. leap/rocksndiamonds-data/summary
-msgid "Data files for Rocks'n'Diamonds"
-msgstr ""
-
-#. tumbleweed/rocksndiamonds-data/description
-#. leap/rocksndiamonds-data/description
-msgid ""
-"This is a nice little game with color graphics and sound for your Unix "
-"system with color X11.  You need an 8-Bit color display or better.  It will "
-"not work on black&white systems, and maybe not on gray scale systems.\n"
-"\n"
-"If you know the game Boulder Dash (Commodore C64) or Emerald Mine (Amiga), "
-"you know what Rocks'n'Diamonds is about.\n"
-"\n"
-"Data files (levels, tapes, graphics, music, sound) for Rocks'n'Diamonds."
-msgstr ""
-
-#. tumbleweed/rocs/rocs-lang/summary
-msgid "Translations for package rocs"
-msgstr ""
-
-#. tumbleweed/rocs/rocs-lang/description
-msgid "Provides translations for the \"rocs\" package."
-msgstr ""
-
-#. tumbleweed/rollback-helper/summary
-#. leap/rollback-helper/summary
-msgid "Helper Scripts for system rollback"
-msgstr ""
-
-#. tumbleweed/rollback-helper/description
-#. leap/rollback-helper/description
-msgid ""
-"The rollback-helper package is a collection of scripts, which, after a "
-"successfull filesystem rollback with snapper, resets registered products on "
-"SCC or SMT."
-msgstr ""
-
-#. tumbleweed/roundcubemail/summary
-#. leap/roundcubemail/summary
-msgid "A modern browser-based multilingual IMAP client"
-msgstr ""
-
-#. tumbleweed/roundcubemail/description
-#. leap/roundcubemail/description
-msgid ""
-"Roundcube Webmail is a browser-based multilingual IMAP client with an "
-"application-like user interface. It provides full  functionality  you expect "
-"from an e-mail client, including MIME support, address book, folder "
-"manipulation, message searching and spell checking.\n"
-"\n"
-"Roundcube Webmail is written in PHP and requires the MySQL database. The "
-"user interface is fully skinnable using XHTML and CSS 2."
-msgstr ""
-
-#. tumbleweed/rpmconf/summary
-#. leap/rpmconf/summary
-msgid "Tool to handle rpmnew and rpmsave files"
-msgstr ""
-
-#. tumbleweed/rpmconf/description
-#. leap/rpmconf/description
-msgid ""
-"This tool search for .rpmnew, .rpmsave and .rpmorig files and ask you what "
-"to do with them: Keep current version, place back old version, watch the "
-"diff or merge."
-msgstr ""
-
-#. tumbleweed/rpmdevtools/summary
-#. leap/rpmdevtools/summary
-msgid "RPM Development Tools"
-msgstr ""
-
-#. tumbleweed/rpmdevtools/description
-#. leap/rpmdevtools/description
-msgid ""
-"This package contains scripts and (X)Emacs support files to aid in "
-"development of RPM packages. rpmdev-setuptree    Create RPM build tree "
-"within user's home directory rpmdev-diff         Diff contents of two "
-"archives rpmdev-newspec      Creates new .spec from template rpmdev-"
-"rmdevelrpms  Find (and optionally remove) \"development\" RPMs rpmdev-"
-"checksig     Check package signatures using alternate RPM keyring "
-"rpminfo             Print information about executables and libraries rpmdev-"
-"md5/sha*     Display checksums of all files in an archive file rpmdev-"
-"vercmp       RPM version comparison checker spectool            Expand and "
-"download sources and patches in specfiles rpmdev-wipetree     Erase all "
-"files within dirs created by rpmdev-setuptree rpmdev-extract      Extract "
-"various archives, \"tar xvf\" style rpmdev-bumpspec     Bump revision in "
-"specfile ...and many more."
-msgstr ""
-
-#. tumbleweed/rpmlint-Factory/summary
-#. leap/rpmlint-Factory/summary
-msgid "Rpm correctness checker - Factory configuration"
-msgstr ""
-
-#. tumbleweed/rpmlint-Factory/description
-#. leap/rpmlint-Factory/description
-msgid ""
-"Rpmlint is a tool to check common errors on rpm packages. This package "
-"provides the configuration specific for SUSE Factory."
-msgstr ""
-
-#. tumbleweed/rpmlint-Factory/rpmlint-Factory-strict/summary
-#. leap/rpmlint-Factory/rpmlint-Factory-strict/summary
-msgid "Confict only applying to openSUSE:Factory itself"
-msgstr ""
-
-#. tumbleweed/rpmlint-Factory/rpmlint-Factory-strict/description
-#. leap/rpmlint-Factory/rpmlint-Factory-strict/description
-msgid "Forbid invalid licenses"
-msgstr ""
-
-#. tumbleweed/rpmorphan/summary
-#. leap/rpmorphan/summary
-msgid "List the orphaned RPM packages"
-msgstr ""
-
-#. tumbleweed/rpmorphan/description
-#. leap/rpmorphan/description
-msgid ""
-"Finds \"orphaned\" packages on your system. It determines which packages "
-"have no other packages depending on their installation, and shows you a list "
-"of these packages. It intends to be clone of deborphan debian tools for RPM "
-"packages."
-msgstr ""
-
-#. tumbleweed/rpmrebuild/summary
-#. leap/rpmrebuild/summary
-msgid "A tool to build a rpm file from the rpm database"
-msgstr ""
-
-#. tumbleweed/rpmrebuild/description
-#. leap/rpmrebuild/description
-msgid ""
-"rpmrebuild allows to build an rpm file from an installed rpm, or from "
-"another rpm file, with or without changes (batch or interactive). It can be "
-"extended by a plugin system. A typical use is to easy repackage a software "
-"after some configuration's change."
-msgstr ""
-
-#. tumbleweed/rsibreak/rsibreak-lang/summary
-msgid "Translations for package rsibreak"
-msgstr ""
-
-#. tumbleweed/rsibreak/rsibreak-lang/description
-msgid "Provides translations for the \"rsibreak\" package."
-msgstr ""
-
-#. tumbleweed/rsnapshot/summary
-#. leap/rsnapshot/summary
-msgid "Backup program using hardlinks"
-msgstr ""
-
-#. tumbleweed/rsnapshot/description
-#. leap/rsnapshot/description
-msgid ""
-"rsnapshot is a filesystem snapshot utility for making backups of local and "
-"remote systems. Using rsync and hard links, it is possible to keep multiple, "
-"full backups instantly available. The disk space required is just a little "
-"more than the space of one full backup, plus incrementals. Depending on your "
-"configuration, it is quite possible to set up in just a few minutes. Files "
-"can be restored by the users who own them, without the root user getting "
-"involved. There are no tapes to change, so once it's set up, you may never "
-"need to think about it again."
-msgstr ""
-
-#. tumbleweed/rss2email/summary
-#. leap/rss2email/summary
-msgid "Receive RSS feeds by email"
-msgstr ""
-
-#. tumbleweed/rss2email/description
-#. leap/rss2email/description
-msgid ""
-"A free, open-source tool for Windows, Mac OS and UNIX for getting news from "
-"RSS feeds in email. It is a simple program which you can run in your "
-"crontab.  It watches RSS feeds and sends you nicely formatted email message "
-"for each new item."
-msgstr ""
-
-#. tumbleweed/rssguard/rssguard-lang/summary
-msgid "Translations for package rssguard"
-msgstr ""
-
-#. tumbleweed/rssguard/rssguard-lang/description
-msgid "Provides translations for the \"rssguard\" package."
-msgstr ""
-
-#. tumbleweed/rst2html5/summary
-#. leap/rst2html5/summary
-msgid "RestructuredText to (X)HTML5"
-msgstr ""
-
-#. tumbleweed/rst2html5/description
-msgid ""
-"rst2html tool generates basic HTML and CSS from Restructured Text. It "
-"provides ways to modify the output with extensions like Nice CSS (thanks to "
-"Twitter's Bootstrap CSS) or online presentations with deck.js."
-msgstr ""
-
-#. tumbleweed/rstcheck/summary
-#. leap/rstcheck/summary
-msgid "Checks syntax of rST and code blocks nested within it"
-msgstr ""
-
-#. tumbleweed/rstcheck/description
-#. leap/rstcheck/description
-msgid "Checks syntax of reStructuredText and code blocks nested within it."
-msgstr ""
-
-#. tumbleweed/rt2860/summary
-#. leap/rt2860/summary
-msgid "Userspace configuration files for rt2860 driver"
-msgstr ""
-
-#. tumbleweed/rt2860/description
-#. leap/rt2860/description
-msgid ""
-"This package contains a small configuration file of the rt2860 driver, "
-"currently read by the kernel module. In later versions this will go away."
-msgstr ""
-
-#. tumbleweed/rtorrent/rtorrent-vim/summary
-#. leap/rtorrent/rtorrent-vim/summary
-msgid "Vim syntax file for rTorrent's config file"
-msgstr ""
-
-#. tumbleweed/rtorrent/rtorrent-vim/description
-#. leap/rtorrent/rtorrent-vim/description
-msgid ""
-"Vim syntax file for rTorrent's config file, .rtorrent.rc The files are taken "
-"from http://www.vim.org/scripts/script.php?script_id=2234"
-msgstr ""
-
-#. tumbleweed/rubber/summary
-#. leap/rubber/summary
-msgid "An automated system for building LaTeX documents"
-msgstr ""
-
-#. tumbleweed/rubber/description
-#. leap/rubber/description
-msgid ""
-"Rubber is a building system for LaTeX documents. It is based on a routine "
-"that runs just as many compilations as necessary. The module system provides "
-"a great flexibility that virtually allows support for any package with no "
-"user intervention, as well as pre- and post-processing of the document. The "
-"standard modules currently provide support for bibtex, dvips, dvipdfm, "
-"pdftex, makeindex. A good number of standard packages are supported, "
-"including graphics/graphicx (with automatic conversion between various "
-"formats and Metapost compilation)."
-msgstr ""
-
-#. tumbleweed/ruby-common/summary
-#. leap/ruby-common/summary
-msgid "Collection of scripts and macros for ruby packaging"
-msgstr ""
-
-#. tumbleweed/ruby-common/description
-#. leap/ruby-common/description
-msgid ""
-"This package is needed for (generated) ruby gems. It provides hooks for "
-"automatic rpm provides and requires and macros that gem2rpm uses."
-msgstr ""
-
-#. tumbleweed/ruby2.4/ruby2.4-doc-ri/summary
-#. leap/ruby2.1/ruby2.1-doc-ri/summary
-#. leap/ruby2.2/ruby2.2-doc-ri/summary
-#. leap/ruby2.3/ruby2.3-doc-ri/summary
-#. leap/ruby2.4/ruby2.4-doc-ri/summary
-msgid "Ruby Interactive Documentation"
-msgstr ""
-
-#. tumbleweed/ruby2.4/ruby2.4-doc-ri/description
-#. leap/ruby2.1/ruby2.1-doc-ri/description
-#. leap/ruby2.2/ruby2.2-doc-ri/description
-#. leap/ruby2.3/ruby2.3-doc-ri/description
-#. leap/ruby2.4/ruby2.4-doc-ri/description
-msgid "This package contains the RI docs for ruby"
-msgstr ""
-
-#. tumbleweed/runvdr-extreme-systemd/summary
-#. leap/runvdr-extreme-systemd/summary
-msgid "Startscripts and systemd unit file for VDR"
-msgstr ""
-
-#. tumbleweed/runvdr-extreme-systemd/description
-#. leap/runvdr-extreme-systemd/description
-msgid ""
-"This package contains runvdr.extreme as a startscript and a systemd unit "
-"file for VDR"
-msgstr ""
-
-#. tumbleweed/rygel/rygel-lang/summary
-msgid "Translations for package rygel"
-msgstr ""
-
-#. tumbleweed/rygel/rygel-lang/description
-msgid "Provides translations for the \"rygel\" package."
-msgstr ""
-
-#. tumbleweed/rypper/summary
-#. leap/rypper/summary
-msgid "Wrapper around zypper for managing multiple repositories"
-msgstr ""
-
-#. tumbleweed/rypper/description
-#. leap/rypper/description
-msgid ""
-"rypper is a wrapper around zypper for performing repository operations in "
-"batch.  It allows selection of which repositories to operate on via a number "
-"of different repository selection specifiers."
-msgstr ""
-
-#. leap/radiotray/radiotray-lang/summary
-msgid "Languages for package radiotray"
-msgstr ""
-
-#. leap/radiotray/radiotray-lang/description
-msgid "Provides translations to the package radiotray"
-msgstr ""
-
-#. leap/raleway-fonts/description
-msgid ""
-"Raleway is an elegant sans-serif typeface, designed by Matt McInerney, "
-"initially in a single Thin weight. It is a display face that features both "
-"old style and lining numerals, standard and discretionary ligatures, a "
-"pretty complete set of diacritics, as well as stylistic alternates inspired "
-"by more geometric sans-serif typefaces than it's neo-grotesque inspired "
-"default character set.\n"
-"\n"
-"With Matt's approval, we extendeded Raleway Thin into a full 9 weights "
-"family, from Thin to Heavy. We also added True Italics for all the 9 "
-"weights, and expanded the Char-set support all 104 Latin Languages."
-msgstr ""
-
-#. leap/rapid-photo-downloader/summary
-msgid "Rapid Photo Downloader"
-msgstr "Greitas nuotraukų parsiuntimas"
-
-#. leap/rapid-photo-downloader/description
-msgid ""
-"Rapid Photo Downloader for Linux is written by a photographer for "
-"professional and amateur photographers. Its goal is to be the best photo "
-"downloader for the Linux Desktop. It is free software, released under the "
-"GNU GPL license."
-msgstr ""
-
-#. leap/rawstudio/rawstudio-lang/summary
-msgid "Languages for package rawstudio"
-msgstr ""
-
-#. leap/rawstudio/rawstudio-lang/description
-msgid "Provides translations to the package rawstudio"
-msgstr ""
-
-#. leap/rednotebook/rednotebook-lang/summary
-msgid "Languages for package rednotebook"
-msgstr ""
-
-#. leap/rednotebook/rednotebook-lang/description
-msgid "Provides translations to the package rednotebook"
-msgstr ""
-
-#. leap/rekonq/rekonq-lang/summary
-msgid "Languages for package rekonq"
-msgstr ""
-
-#. leap/rekonq/rekonq-lang/description
-msgid "Provides translations to the package rekonq"
-msgstr ""
-
-#. leap/remmina/remmina-lang/summary
-msgid "Languages for package remmina"
-msgstr ""
-
-#. leap/remmina/remmina-lang/description
-msgid "Provides translations to the package remmina"
-msgstr ""
-
-#. leap/rfc/summary
-msgid "The RFCs (Request For Comments)"
-msgstr ""
-
-#. leap/rfc/description
-msgid ""
-"This is the reference concerning Internet and Internet protocols. The matter "
-"discussed might be a little too theoretical for the laymen, but "
-"professionals can find all needed information."
-msgstr ""
-
-#. leap/rhythmbox/rhythmbox-lang/summary
-msgid "Languages for package rhythmbox"
-msgstr ""
-
-#. leap/rhythmbox/rhythmbox-lang/description
-msgid "Provides translations to the package rhythmbox"
-msgstr ""
-
-#. leap/ristretto/ristretto-lang/summary
-msgid "Languages for package ristretto"
-msgstr ""
-
-#. leap/ristretto/ristretto-lang/description
-msgid "Provides translations to the package ristretto"
-msgstr ""
-
-#. leap/rocs/rocs-lang/summary
-msgid "Languages for package rocs"
-msgstr ""
-
-#. leap/rocs/rocs-lang/description
-msgid "Provides translations to the package rocs"
-msgstr ""
-
-#. leap/rsibreak/rsibreak-lang/summary
-msgid "Languages for package rsibreak"
-msgstr ""
-
-#. leap/rsibreak/rsibreak-lang/description
-msgid "Provides translations to the package rsibreak"
-msgstr ""
-
-#. leap/rssguard/rssguard-lang/summary
-msgid "Languages for package rssguard"
-msgstr ""
+#~ msgid "Raw-image converter"
+#~ msgstr "Neapdoroto paveikslėlio konvertavimas"
 
-#. leap/rssguard/rssguard-lang/description
-msgid "Provides translations to the package rssguard"
-msgstr ""
-
-#. leap/rst2html5/description
-msgid ""
-"This tool will generate newer, nicer, more readable markup and provide ways "
-"to modify the output with extensions like nice css thanks to twitter's "
-"bootstrap css or online presentations with deck.js"
-msgstr ""
-
-#. leap/rygel/rygel-lang/summary
-msgid "Languages for package rygel"
-msgstr ""
-
-#. leap/rygel/rygel-lang/description
-msgid "Provides translations to the package rygel"
-msgstr ""
-
-#. leap/racket/drracket/summary
-msgid "Racket Scheme graphical development environment"
-msgstr ""
-
-#. leap/racket/drracket/description
-msgid ""
-"DrRacket is the graphical development environment for creating Racket "
-"applications."
-msgstr ""
-
-#. leap/rawstudio/librawstudio-devel/summary
-msgid "Development files for RawStudio"
-msgstr ""
-
-#. leap/rrdtool/lua-rrdtool/summary
-msgid "Lua bindings for rrdtool"
-msgstr ""
-
-#. leap/rrdtool/lua-rrdtool/description
-msgid ""
-"A tool to log and analyze data gathered from all kinds of data sources. The "
-"data analysis part of RRDtool is based on the ability to quickly generate "
-"graphical representations of the data values collected over a definable time "
-"period.\n"
-"\n"
-"This package contains the Lua bindings"
-msgstr ""
-
-#. leap/rrdtool/python-rrdtool/summary
-msgid "Python bindings for rrdtool"
-msgstr ""
-
-#. leap/rrdtool/python-rrdtool/description
-msgid ""
-"A tool to log and analyze data gathered from all kinds of data sources. The "
-"data analysis part of RRDtool is based on the ability to quickly generate "
-"graphical representations of the data values collected over a definable time "
-"period.\n"
-"\n"
-"This package contains the Python bindings"
-msgstr ""
-
-#. leap/racket/racket-devel/summary
-msgid "Development header files for PLT"
-msgstr ""
-
-#. leap/racket/racket-devel/description
-msgid ""
-"This package contains the symlinks, headers and object files needed to "
-"compile and link programs which use PLT."
-msgstr ""
-
-#. leap/racket/racket-games/summary
-msgid "Sample games from Racket Scheme"
-msgstr ""
-
-#. leap/racket/racket-games/description
-msgid "This package contains sample games from Racket project."
-msgstr ""
-
-#. leap/racket/racket-webserver/summary
-msgid "Webserver from Racket"
-msgstr ""
-
-#. leap/racket/racket-webserver/description
-msgid "Webserver from Racket Scheme."
-msgstr ""
-
-#. leap/rarian/description
-#. leap/rarian/rarian-scrollkeeper-compat/description
-msgid ""
-"Rarian is designed to be a replacement for scrollkeeper.  It is currently "
-"undergoing heavy development.  As of writing, rarian can be installed in "
-"place of scrollkeeper and everything will work okay (as far as my testing "
-"indicates)"
-msgstr ""
-
-#. leap/rarian/rarian-devel/description
-msgid ""
-"Rarian is designed to be a replacement for scrollkeeper.  It is currently "
-"undergoing heavy development.  As of writing, rarian can be installed in "
-"place of scrollkeeper and everything will work okay.\n"
-"\n"
-"This package contains the files for developing applications using rarian."
-msgstr ""
-
-#. leap/rds-tools/summary
-msgid "RDS Support Tools"
-msgstr ""
-
-#. leap/rds-tools/rds-tools-devel/summary
-msgid "RDS development files"
-msgstr ""
-
-#. leap/rear/description
-msgid ""
-"Relax-and-Recover (abbreviated rear) is a highly modular disaster recovery "
-"framework for GNU/Linux based systems, but can be easily extended to other "
-"UNIX alike systems. The disaster recovery information (and maybe the "
-"backups) can be stored via the network, local on hard disks or USB devices, "
-"DVD/CD-R, tape, etc. The result is also a bootable image that is capable of "
-"booting via PXE, DVD/CD and USB media.\n"
-"\n"
-"Relax-and-Recover integrates with other backup software and provides "
-"integrated bare metal disaster recovery abilities to the compatible backup "
-"software.\n"
-"\n"
-"Warning for users who like to upgrade Relax-and-Recover: Users who already "
-"use it must re-validate that their particular disaster recovery procedure "
-"still works. See in particular \"Version upgrades\" at http://en.opensuse."
-"org/SDB:Disaster_Recovery\n"
-"\n"
-"Additionally when you already use Relax-and-Recover and you upgrade software "
-"that is related to the basic system (e.g. kernel, storage, bootloader, init, "
-"networking) or you do other changes in your basic system, you must also re-"
-"validate that your particular disaster recovery procedure still works for "
-"you."
-msgstr ""
-
-#. leap/resolv_wrapper/summary
-msgid "A wrapper for dns name resolving or dns faking"
-msgstr ""
-
-#. leap/resolv_wrapper/description
-msgid ""
-"resolv_wrapper makes it possible on most UNIX platforms to contact your own "
-"DNS implmentation in your test environment. It requires socket_wrapper to be "
-"able to contact it.  If it doesn’t work on a special platform the wrapper is "
-"able to fake DNS queries and return valid responses to your application.\n"
-"\n"
-"This package doesn't have a devel package cause this project is for "
-"development/testing."
-msgstr ""
-
-#. leap/rman/summary
-msgid "RosettaMan - Filter for Manpages"
-msgstr ""
-
-#. leap/rman/description
-msgid ""
-"RosettaMan is a filter for UNIX manual pages needed by TkMan. It takes, as "
-"input, man pages formatted for a variety of UNIX flavors (not [tn]roff "
-"source) and produces, as output, a variety of file formats. Http-rman is "
-"also included. It provides access to the man pages via a normal web browser."
-msgstr ""
-
-#. leap/roccat-tools/roccat-arvo/summary
-msgid "Roccat Arvo userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-arvo-devel/summary
-msgid "Development header for Roccat Arvo"
-msgstr ""
-
-#. leap/roccat-tools/roccat-arvo-devel/description
-msgid ""
-"Arvo consists of a shared library, a console application and a GUI "
-"application. It helps users of the arvo kernel driver to manipulate the "
-"profiles and settings of a Roccat Arvo keyboard. These are the development "
-"headers needed to compile software that uses libarvo."
-msgstr ""
-
-#. leap/roccat-tools/roccat-isku/summary
-msgid "Roccat Isku userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-isku-devel/summary
-msgid "Development header for Roccat Isku"
-msgstr ""
-
-#. leap/roccat-tools/roccat-isku-devel/description
-msgid ""
-"Isku consists of a shared library, a console application and a GUI "
-"application. It helps users of the isku kernel driver to manipulate the "
-"profiles and settings of a Roccat Isku keyboard. These are the development "
-"headers needed to compile software that uses libisku."
-msgstr ""
-
-#. leap/roccat-tools/roccat-iskufx/summary
-msgid "Roccat IskuFX userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-iskufx-devel/summary
-msgid "Development header for Roccat IskuFX"
-msgstr ""
-
-#. leap/roccat-tools/roccat-iskufx-devel/description
-msgid ""
-"Isku consists of a shared library, a console application and a GUI "
-"application. It helps users of the isku kernel driver to manipulate the "
-"profiles and settings of a Roccat IskuFX keyboard. These are the development "
-"headers needed to compile software that uses libiskufx."
-msgstr ""
-
-#. leap/roccat-tools/roccat-kone/summary
-msgid "Roccat Kone userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-kone-devel/summary
-msgid "Development header for Roccat Kone"
-msgstr ""
-
-#. leap/roccat-tools/roccat-kone-devel/description
-msgid ""
-"Kone consists of a shared library, a console application and a GUI "
-"application. It helps users of the kone kernel driver to manipulate the "
-"profiles and settings of a Roccat Kone mouse. Here are the development "
-"headers needed to compile software that uses libkone."
-msgstr ""
-
-#. leap/roccat-tools/roccat-koneplus/summary
-msgid "Roccat Kone[+] userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-koneplus-devel/summary
-msgid "Development header for Roccat Kone[+]"
-msgstr ""
-
-#. leap/roccat-tools/roccat-koneplus-devel/description
-msgid ""
-"Koneplus consists of a shared library, a console application and a GUI "
-"application. It helps users of the koneplus kernel driver to manipulate the "
-"profiles and settings of a Roccat Kone[+] mouse. Here are the development "
-"headers needed to compile software that uses libkoneplus."
-msgstr ""
-
-#. leap/roccat-tools/roccat-konepure/summary
-msgid "Roccat KonePure userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-konepure-devel/summary
-msgid "Development header for Roccat KonePure"
-msgstr ""
-
-#. leap/roccat-tools/roccat-konepure-devel/description
-msgid ""
-"Konepure consists of a shared library, a console application and a GUI "
-"application. It helps users of the koneplus kernel driver to manipulate the "
-"profiles and settings of a Roccat KonePure mouse. Here are the development "
-"headers needed to compile software that uses libkonepure."
-msgstr ""
-
-#. leap/roccat-tools/roccat-konextd/summary
-msgid "Roccat KoneXTD userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-konextd-devel/summary
-msgid "Development header for Roccat KoneXTD"
-msgstr ""
-
-#. leap/roccat-tools/roccat-konextd-devel/description
-msgid ""
-"Konextd consists of a shared library, a console application and a GUI "
-"application. It helps users of the koneplus kernel driver to manipulate the "
-"profiles and settings of a Roccat KoneXTD mouse. Here are the development "
-"headers needed to compile software that uses libkonextd."
-msgstr ""
-
-#. leap/roccat-tools/roccat-kovaplus/summary
-msgid "Roccat Kova[+] userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-kovaplus-devel/summary
-msgid "Development header for Roccat Kova[+]"
-msgstr ""
-
-#. leap/roccat-tools/roccat-kovaplus-devel/description
-msgid ""
-"Kovaplus consists of a shared library, a console application and a GUI "
-"application. It helps users of the kovaplus kernel driver to manipulate the "
-"profiles and settings of a Roccat Kova[+] mouse. Here are the development "
-"headers needed to compile software that uses libkovaplus."
-msgstr ""
-
-#. leap/roccat-tools/roccat-lua/summary
-msgid "Roccat Lua userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-lua-devel/summary
-msgid "Development header for Roccat Lua"
-msgstr ""
-
-#. leap/roccat-tools/roccat-lua-devel/description
-msgid ""
-"Lua consists of a shared library, a console application and a GUI "
-"application. It helps users of the lua kernel driver to manipulate the "
-"Settings of a Roccat Lua mouse. Here are the development headers needed to "
-"compile software that uses liblua."
-msgstr ""
-
-#. leap/roccat-tools/roccat-nyth/summary
-msgid "Roccat Nyth userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-nyth-devel/summary
-msgid "Development header for Roccat Nyth"
-msgstr ""
-
-#. leap/roccat-tools/roccat-nyth-devel/description
-msgid ""
-"Nyth consists of a shared library, a console application and a GUI "
-"application. It helps users of the Nyth kernel driver to manipulate the "
-"profiles and settings of a Roccat Nyth mouse. Here are the development "
-"headers needed to compile software that uses libtyon."
-msgstr ""
-
-#. leap/roccat-tools/roccat-pyra/summary
-msgid "Roccat Pyra userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-pyra-devel/summary
-msgid "Development header for Roccat Pyra"
-msgstr ""
-
-#. leap/roccat-tools/roccat-pyra-devel/description
-msgid ""
-"Pyra consists of a shared library, a console application and a GUI "
-"application. It helps users of the pyra kernel driver to manipulate the "
-"profiles and settings of a Roccat Pyra mouse. Here are the development "
-"headers needed to compile software that uses libpyra."
-msgstr ""
-
-#. leap/roccat-tools/roccat-ryos/summary
-msgid "Roccat Ryos userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-ryos-devel/summary
-msgid "Development header for Roccat Ryos"
-msgstr ""
-
-#. leap/roccat-tools/roccat-ryos-devel/description
-msgid ""
-"Ryos consists of a shared library, a console application and a GUI "
-"application. It helps users of the ryos kernel driver to manipulate the "
-"profiles and settings of a Roccat Ryos mouse. Here are the development "
-"headers needed to compile software that uses libryos."
-msgstr ""
-
-#. leap/roccat-tools/roccat-savu/summary
-msgid "Roccat Savu userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-savu-devel/summary
-msgid "Development header for Roccat Savu"
-msgstr ""
-
-#. leap/roccat-tools/roccat-savu-devel/description
-msgid ""
-"Savu consists of a shared library, a console application and a GUI "
-"application. It helps users of the savu kernel driver to manipulate the "
-"profiles and settings of a Roccat Savu mouse. Here are the development "
-"headers needed to compile software that uses libsavu."
-msgstr ""
-
-#. leap/roccat-tools/summary
-msgid "Common files shared along all Roccat tools"
-msgstr ""
-
-#. leap/roccat-tools/description
-msgid ""
-"Roccat consists of a shared library and other files shared by device "
-"specific applications for Roccat hardware."
-msgstr ""
-
-#. leap/roccat-tools/roccat-tools-devel/summary
-msgid "Development headers for Roccat tools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-tools-devel/description
-msgid ""
-"Roccat consists of a shared library and other files shared by device "
-"specific applications for Roccat hardware. Here are the development headers "
-"needed to compile software that uses libroccat."
-msgstr ""
-
-#. leap/roccat-tools/roccat-tyon/summary
-msgid "Roccat Tyon userlandtools"
-msgstr ""
-
-#. leap/roccat-tools/roccat-tyon-devel/summary
-msgid "Development header for Roccat Tyon"
-msgstr ""
-
-#. leap/roccat-tools/roccat-tyon-devel/description
-msgid ""
-"Tyon consists of a shared library, a console application and a GUI "
-"application. It helps users of the tyon kernel driver to manipulate the "
-"profiles and settings of a Roccat Tyon mouse. Here are the development "
-"headers needed to compile software that uses libtyon."
-msgstr ""
-
-#. leap/rrdtool/summary
-msgid "A tool for data logging and analysis"
-msgstr ""
-
-#. leap/rrdtool/description
-#. leap/rrdtool/rrdtool-devel/description
-msgid ""
-"A tool to log and analyze data gathered from all kinds of data sources. The "
-"data analysis part of RRDtool is based on the ability to quickly generate "
-"graphical representations of the data values collected over a definable time "
-"period."
-msgstr ""
-
-#. leap/rrdtool/rrdtool-devel/summary
-msgid "A tool for data logging and analysis - Development files"
-msgstr ""
-
-#. leap/rsh/summary
-msgid "Clients for remote access commands (rsh, rlogin, and rcp)"
-msgstr ""
-
-#. leap/rsh/description
-msgid ""
-"This package contains programs that allow users to run commands on remote "
-"machines, to log in to other machines, and to copy files between machines "
-"(rsh, rexec, rlogin, and rcp).  These commands use rhosts style "
-"authentication.\n"
-"\n"
-"For secure communication, openssh (SSH) should be used."
-msgstr ""
-
-#. leap/rsh/rsh-server/summary
-msgid "Servers for Remote Access Commands (rsh, rlogin, rcp)"
-msgstr ""
-
-#. leap/rsh/rsh-server/description
-msgid ""
-"This package contains a set of server programs which allow users to run "
-"commands on remote machines, log in to other machines, and copy files "
-"between machines (rsh, rexec, rlogin, and rcp). All of these services are "
-"run by inetd and configured using /etc/inetd.conf. PAM will be used for "
-"authentication. SSH should be used for secure communication."
-msgstr ""
-
-#. leap/rsibreak/rsibreak-doc/summary
-msgid "Documentation for rsibreak"
-msgstr ""
-
-#. leap/rsibreak/rsibreak-doc/description
-msgid "This package provides documentation for rsibreak"
-msgstr ""
-
-#. leap/rsyslog/rsyslog-module-guardtime/summary
-msgid "GuardTime log file signing support module for rsyslog"
-msgstr ""
-
-#. leap/rsyslog/rsyslog-module-guardtime/description
-msgid ""
-"Rsyslog is an enhanced multi-threaded syslog daemon. See rsyslog package.\n"
-"\n"
-"This module provides log file signing support using GuardTime Keyless "
-"Signature Service and a rsgtutil utility to manage the files.\n"
-"\n"
-"The digital timestamping component of the service is officially certified "
-"and Guardtime is accredited as a timestamp authority by the European Union."
-msgstr ""
-
-#. leap/rrdtool/ruby-rrdtool/summary
-msgid "Ruby bindings for rrdtool"
-msgstr ""
-
-#. leap/rrdtool/ruby-rrdtool/description
-msgid ""
-"A tool to log and analyze data gathered from all kinds of data sources. The "
-"data analysis part of RRDtool is based on the ability to quickly generate "
-"graphical representations of the data values collected over a definable time "
-"period.\n"
-"\n"
-"This package contains the Ruby bindings"
-msgstr ""
-
-#. leap/ruby2.2/ruby2.2-tk/summary
-#. leap/ruby2.2/ruby2.2-tk/description
-#. leap/ruby2.3/ruby2.3-tk/summary
-#. leap/ruby2.3/ruby2.3-tk/description
-msgid "TCL/TK bindings for Ruby"
-msgstr ""
-
-#. leap/rustc-stage0/summary
-msgid ""
-"Systems programming language that runs blazingly fast (bootstrap binary)"
-msgstr ""
-
-#. leap/rustc-stage0/description
-msgid ""
-"Rust is a systems programming language focused on three goals: safety, "
-"speed, and concurrency. It maintains these goals without having a garbage "
-"collector, making it a useful language for a number of use cases other "
-"languages aren’t good at: embedding in other languages, programs with "
-"specific space and time requirements, and writing low-level code, like "
-"device drivers and operating systems. It improves on current languages "
-"targeting this space by having a number of compile-time safety checks that "
-"produce no runtime overhead, while eliminating all data races. Rust also "
-"aims to achieve ‘zero-cost abstractions’ even though some of these "
-"abstractions feel like those of a high-level language. Even then, Rust still "
-"allows precise control like a low-level language would. This package "
-"provides the stage0 binary required to build the initial compiler."
-msgstr ""
-
-#. leap/rygel/rygel-plugin-zdf-mediathek/summary
-msgid ""
-"Home Media Solution for GNOME based on UPnP/DLNA -- ZDF Mediathek Plugin"
-msgstr ""
-
-#. leap/rygel/rygel-plugin-zdf-mediathek/description
-msgid ""
-"Rygel is a home media solution that allows you to easily share audio, video "
-"and pictures, and control of media player on your home network.\n"
-"\n"
-"This package provides a plugin to export online media from the ZDF TV "
-"station."
-msgstr ""
-
-#. leap/rrdtool/tcl-rrdtool/summary
-msgid "Tcl bindings for rrdtool"
-msgstr ""
-
-#. leap/rrdtool/tcl-rrdtool/description
-msgid ""
-"A tool to log and analyze data gathered from all kinds of data sources. The "
-"data analysis part of RRDtool is based on the ability to quickly generate "
-"graphical representations of the data values collected over a definable time "
-"period.\n"
-"\n"
-"This package contains the Tcl bindings"
-msgstr ""
+#~ msgid "Rapid Photo Downloader"
+#~ msgstr "Greitas nuotraukų parsiuntimas"
