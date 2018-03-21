@@ -1,5 +1,6 @@
 #! /bin/sh
 set -e
+export LANG=C.utf8
 ## get package lists
 rm -rf 50-lists
 mkdir 50-lists
@@ -8,14 +9,14 @@ cd 50-lists
 for distro in tumbleweed leap; do
 ## set URLs
   case $distro in
-    "leap") URL="distribution/leap/42.3";;
-    "tumbleweed") URL="tumbleweed";;
+    "leap") URL="distribution/leap/15.0/repo/oss";;
+    "tumbleweed") URL="tumbleweed/repo/oss/suse";;
     *) continue;;
   esac
 
 ## get package descriptions
   echo "Generating POT file for ${distro}..."
-  python3 ../50-tools/repomd2gettext.py http://download.opensuse.org/${URL}/repo/oss/suse "${distro}" | msguniq > "${distro}-packages._pot"
+  python3 ../50-tools/repomd2gettext.py http://downloadcontent.opensuse.org/${URL} "${distro}" | msguniq > "${distro}-packages._pot"
 
   echo "OK"
 done
