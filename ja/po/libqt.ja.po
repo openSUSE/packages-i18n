@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-03-21 10:09+0000\n"
-"PO-Revision-Date: 2018-03-22 11:03+0000\n"
+"PO-Revision-Date: 2018-03-23 11:43+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
 "/libqt-master/ja/>\n"
@@ -684,6 +684,11 @@ msgid ""
 "additional layers on top, such as polylines and circles,  * and search for "
 "places and related images."
 msgstr ""
+"Qt Location API は、様々な位置情報サービスからのデータを利用して、マッピングソリューションを提供します。 Qt Location "
+"では、下記のようなことができます:\n"
+"\n"
+" * 地図データへのアクセスと提供 * 地図上の特定領域におけるタッチジェスチャーへの対応 * 位置情報や経路などに関する問い合わせ * "
+"多角形や円などの表示レイヤの追加 * 位置の検索や関連するイメージの検索など。"
 
 #. tumbleweed/libqt5-qtmultimedia/libQt5Multimedia5/summary
 #. tumbleweed/libqt5-qtmultimedia/libQt5Multimedia5-32bit/summary
@@ -711,19 +716,15 @@ msgstr ""
 #. tumbleweed/libqt5-qtbase/libQt5Network-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Network-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Network-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5 network library"
-msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
+msgstr "Qt5 ネットワークライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libQt5Network-devel/description
 #. tumbleweed/libqt5-qtbase/libQt5Network-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5Network-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5Network-devel/description
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5 network library."
-msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
+msgstr "Qt5 ネットワークライブラリ向け開発用ファイルです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Network5/summary
 #. tumbleweed/libqt5-qtbase/libQt5Network5-32bit/summary
@@ -741,15 +742,15 @@ msgid ""
 "IP. Operations such as requests, cookies, and sending data over HTTP are "
 "handled by various C++ classes."
 msgstr ""
+"Qt Network は TCP/IP を利用するプログラムに対して、 API を提供する仕組みです。リクエストやクッキーの制御のほか、 HTTP "
+"を介したデータ送信などを C++ クラスで処理することができます。"
 
 #. tumbleweed/libqt5-qtnetworkauth/libQt5NetworkAuth5/summary
 #. tumbleweed/libqt5-qtnetworkauth/libQt5NetworkAuth5-32bit/summary
 #. leap/libqt5-qtnetworkauth/libQt5NetworkAuth5-32bit/summary
 #. leap/libqt5-qtnetworkauth/libQt5NetworkAuth5/summary
-#, fuzzy
-#| msgid "Qt 5 Network Library"
 msgid "Qt 5 NetworkAuth Library"
-msgstr "Qt 5 ネットワークライブラリ"
+msgstr "Qt 5 NetworkAuth ライブラリ"
 
 #. tumbleweed/libqt5-qtnetworkauth/libQt5NetworkAuth5/description
 #. tumbleweed/libqt5-qtnetworkauth/libQt5NetworkAuth5-32bit/description
@@ -760,6 +761,9 @@ msgid ""
 "to obtain limited access to online accounts and HTTP services without "
 "exposing users' passwords. It supports OAuth versions 1 and 2."
 msgstr ""
+"Qt Network Authorization は、 Qt "
+"アプリケーションに対してオンラインアカウントへのアクセスを提供するほか、ユーザのパスワードをアクセス先のサイトに開示せずにアクセスする機能を提供します。 "
+"OAuth バージョン 1 と 2 に対応しています。"
 
 #. tumbleweed/libqt5-qtconnectivity/libQt5Nfc5/summary
 #. tumbleweed/libqt5-qtconnectivity/libQt5Nfc5-imports/summary
@@ -776,10 +780,8 @@ msgstr "Qt 5 Nfc アドオン"
 #. tumbleweed/libqt5-qtbase/libQt5OpenGL-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5OpenGL-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5OpenGL-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 SVG library"
 msgid "Development files for the Qt5 OpenGL library"
-msgstr "Qt5 SVG ライブラリ向け開発用ファイル"
+msgstr "Qt5 OpenGL ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libQt5OpenGL-devel/description
 #. tumbleweed/libqt5-qtbase/libQt5OpenGL-devel-32bit/description
@@ -791,6 +793,9 @@ msgid ""
 "Warning: This module should not be used anymore for new code. Please use the "
 "corresponding OpenGL classes in Qt GUI."
 msgstr ""
+"Qt5 OpenGL 向けの開発用ファイルです。\n"
+"\n"
+"警告: このモジュールは、新しいコードで使用すべきものではありません。代わりに Qt GUI 内にある関連する OpenGL クラスをお使いください。"
 
 #. tumbleweed/libqt5-qtbase/libQt5OpenGL5/summary
 #. tumbleweed/libqt5-qtbase/libQt5OpenGL5-32bit/summary
@@ -808,6 +813,9 @@ msgid ""
 "any other Qt widget, except that it opens an OpenGL display buffer where the "
 "OpenGL API can be used to render the contents."
 msgstr ""
+"Qt OpenGL モジュールは、任意の Qt ウイジェットを OpenGL "
+"ウイジェットとして利用できる機能を提供します。通常のディスプレイバッファではなく、 OpenGL のディスプレイバッファになりますので、これによって "
+"OpenGL API が内容を描画できるようになります。"
 
 #. tumbleweed/libqt5-qtbase/libQt5OpenGLExtensions-devel-static/summary
 #. tumbleweed/libqt5-qtbase/libQt5OpenGLExtensions-devel-static-32bit/summary
@@ -851,10 +859,8 @@ msgstr "Qt PlatformSupport モジュールです。"
 #. tumbleweed/libqt5-qtlocation/libQt5Positioning5-32bit/summary
 #. leap/libqt5-qtlocation/libQt5Positioning5-32bit/summary
 #. leap/libqt5-qtlocation/libQt5Positioning5/summary
-#, fuzzy
-#| msgid "Qt 5 Positioning Addon"
 msgid "Qt 5 Positioning Library"
-msgstr "Qt 5 Positioning アドオン"
+msgstr "Qt 5 Positioning ライブラリ"
 
 #. tumbleweed/libqt5-qtlocation/libQt5Positioning5/description
 #. tumbleweed/libqt5-qtlocation/libQt5Positioning5-32bit/description
@@ -867,24 +873,23 @@ msgid ""
 "determine a position on a map. In addition, satellite information can be "
 "retrieved and area-based monitoring be performed."
 msgstr ""
+"Qt Positioning API は開発者に対して、衛星や WiFi, テキストファイルなど、様々な情報源からの位置判断機能を提供するものです。この情"
+"報はたとえば、地図上の位置を判断する際に利用することができます。衛星からの情報を取得することができるほか、エリアベースのモニタリングも実施することができま"
+"す。"
 
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport-devel/summary
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5PrintSupport-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5PrintSupport-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 SerialPort library"
 msgid "Development files for the Qt5 print support library"
-msgstr "Qt5 SerialPort ライブラリ向け開発用ファイル"
+msgstr "Qt5 印刷サポートライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport-devel/description
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5PrintSupport-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5PrintSupport-devel/description
-#, fuzzy
-#| msgid "Development files for the Qt5 SerialPort library"
 msgid "Development files for the Qt5 print support library."
-msgstr "Qt5 SerialPort ライブラリ向け開発用ファイル"
+msgstr "Qt5 印刷サポートライブラリ向け開発用ファイルです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport5/summary
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport5-32bit/summary
@@ -903,6 +908,9 @@ msgid ""
 "to remote printers. Qt's printing system also supports PDF file generation, "
 "providing the foundation for basic report generation facilities."
 msgstr ""
+"プラットフォーム固有の印刷システムに対する抽象レイヤです。このライブラリを利用することで、 Qt "
+"アプリケーションから接続されているプリンタのほか、ネットワーク上離れた場所にあるプリンタからも印刷ができるようになります。 Qt の印刷システムでは、"
+"基本的な生成機構を提供する PDF ファイル生成にも対応しています。"
 
 #. tumbleweed/libqt5-qtquickcontrols2/libQt5QuickControls2-5/summary
 #. leap/libqt5-qtquickcontrols2/libQt5QuickControls2-5/summary
@@ -1003,10 +1011,8 @@ msgstr "Qt 5 QuickTemplates2 ライブラリ"
 #. tumbleweed/libqt5-qtremoteobjects/libQt5RemoteObjects5-32bit/summary
 #. leap/libqt5-qtremoteobjects/libQt5RemoteObjects5-32bit/summary
 #. leap/libqt5-qtremoteobjects/libQt5RemoteObjects5/summary
-#, fuzzy
-#| msgid "Qt 5 WebSockets Library"
 msgid "Qt 5 RemoteObjects Library"
-msgstr "Qt 5 WebSockets ライブラリ"
+msgstr "Qt 5 RemoteObjects ライブラリ"
 
 #. tumbleweed/libqt5-qtremoteobjects/libQt5RemoteObjects5/description
 #. tumbleweed/libqt5-qtremoteobjects/libQt5RemoteObjects5-32bit/description
@@ -1015,16 +1021,14 @@ msgstr "Qt 5 WebSockets ライブラリ"
 msgid ""
 "Qt Remote Objects (QtRO) is an inter-process communication (IPC) processes "
 "or computers."
-msgstr ""
+msgstr "Qt Remote Objects (QtRO) は、プロセスやコンピュータを跨いだプロセス間通信 (IPC) 機構です。"
 
 #. tumbleweed/libqt5-qtscript/libQt5Script5/summary
 #. tumbleweed/libqt5-qtscript/libQt5Script5-32bit/summary
 #. leap/libqt5-qtscript/libQt5Script5-32bit/summary
 #. leap/libqt5-qtscript/libQt5Script5/summary
-#, fuzzy
-#| msgid "Qt 5 QtScript Library"
 msgid "Qt 5 Script library"
-msgstr "Qt 5 QtScript ライブラリ"
+msgstr "Qt 5 Script ライブラリ"
 
 #. tumbleweed/libqt5-qtscript/libQt5Script5/description
 #. tumbleweed/libqt5-qtscript/libQt5Script5-32bit/description
@@ -1035,15 +1039,15 @@ msgid ""
 "evaluating and debugging of scripts, and advanced use of objects and "
 "functions. It also gives access to a low-level ECMAScript engine API."
 msgstr ""
+"Qt Script はアプリケーションにスクリプトの仕組みをもたらすものです。スクリプトの実行やデバッグのほか、オブジェクトや関数などを利用した高度な仕組"
+"みにも対応しています。また、低レベルの ECMAScript エンジン API へのアクセスも提供しています。"
 
 #. tumbleweed/libqt5-qtscxml/libQt5Scxml5/summary
 #. tumbleweed/libqt5-qtscxml/libQt5Scxml5-32bit/summary
 #. leap/libqt5-qtscxml/libQt5Scxml5-32bit/summary
 #. leap/libqt5-qtscxml/libQt5Scxml5/summary
-#, fuzzy
-#| msgid "Qt 5 Core Library"
 msgid "Qt 5 State Chart XML Library"
-msgstr "Qt 5 コアライブラリ"
+msgstr "Qt 5 State Chart XML ライブラリ"
 
 #. tumbleweed/libqt5-qtscxml/libQt5Scxml5/description
 #. tumbleweed/libqt5-qtscxml/libQt5Scxml5-32bit/description
@@ -1058,13 +1062,16 @@ msgid ""
 "+ file that has a class implementing the state machine. It also contains "
 "functionality to support data models and executable content."
 msgstr ""
+"Qt はアプリケーションを開発するためのライブラリ集です。\n"
+"\n"
+"Qt SCXML モジュールは、 SCXML ファイルからステートマシンを作成するための仕組みを提供します。動的なステートマシン (SCXML "
+"ファイルを読み込んで状態と遷移を作るもの) のほか、ステートマシンを実装するクラスとして C++ "
+"ファイルを生成することもできます。また、データモデルや実行可能なコンテンツにも対応しています。"
 
 #. tumbleweed/libqt5-qtscxml/libQt5Scxml5-imports/summary
 #. leap/libqt5-qtscxml/libQt5Scxml5-imports/summary
-#, fuzzy
-#| msgid "Qt 5 Serial Port Addon - QML imports"
 msgid "Qt 5 Scxml Addon - QML imports"
-msgstr "Qt 5 シリアルポートアドオン - QML インポート"
+msgstr "Qt 5 Scxml アドオン - QML インポート"
 
 #. tumbleweed/libqt5-qtscxml/libQt5Scxml5-imports/description
 #. leap/libqt5-qtscxml/libQt5Scxml5-imports/description
@@ -1076,15 +1083,17 @@ msgid ""
 "SCXML files. It also contains functionality to support data models and "
 "executable content."
 msgstr ""
+"Qt SCXML モジュールは、 SCXML ファイルからステートマシンを作成するための仕組みを提供します。\n"
+"\n"
+"動的なステートマシン (SCXML ファイルを読み込んで状態と遷移を作るもの) のほか、ステートマシンを実装するクラスとして C++ "
+"ファイルを生成することもできます。また、データモデルや実行可能なコンテンツにも対応しています。"
 
 #. tumbleweed/libqt5-qtsensors/libQt5Sensors5/summary
 #. tumbleweed/libqt5-qtsensors/libQt5Sensors5-32bit/summary
 #. leap/libqt5-qtsensors/libQt5Sensors5-32bit/summary
 #. leap/libqt5-qtsensors/libQt5Sensors5/summary
-#, fuzzy
-#| msgid "Qt 5 Core Library"
 msgid "Qt 5 Sensors library"
-msgstr "Qt 5 コアライブラリ"
+msgstr "Qt 5 Sensors ライブラリ"
 
 #. tumbleweed/libqt5-qtsensors/libQt5Sensors5/description
 #. tumbleweed/libqt5-qtsensors/libQt5Sensors5-32bit/description
@@ -1095,13 +1104,13 @@ msgid ""
 "interfaces. The Qt Sensors API also provides a motion gesture recognition "
 "API for devices."
 msgstr ""
+"Qt Sensors API は、センサーハードウエアを QML や C++ インターフェイス経由でアクセスできる仕組みです。 Qt Sensors "
+"API では、デバイス向けにモーションジェスチャーの認識を行なうこともできます。"
 
 #. tumbleweed/libqt5-qtsensors/libQt5Sensors5-imports/summary
 #. leap/libqt5-qtsensors/libQt5Sensors5-imports/summary
-#, fuzzy
-#| msgid "QML imports for the Qt 5 WebSockets library"
 msgid "QML imports for the Qt 5 Sensors library"
-msgstr "Qt 5 WebSockets ライブラリ向け QML インポート"
+msgstr "Qt 5 Sensors ライブラリ向け QML インポート"
 
 #. tumbleweed/libqt5-qtserialbus/libQt5SerialBus5/summary
 #. tumbleweed/libqt5-qtserialbus/summary
@@ -1156,10 +1165,8 @@ msgstr ""
 #. tumbleweed/libqt5-qtbase/libQt5Sql-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Sql-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Sql-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 SVG library"
 msgid "Development files for the Qt5 SQL library"
-msgstr "Qt5 SVG ライブラリ向け開発用ファイル"
+msgstr "Qt5 SQL ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libQt5Sql-devel/description
 #. tumbleweed/libqt5-qtbase/libQt5Sql5/description
@@ -1214,6 +1221,9 @@ msgid ""
 "\n"
 "The QPSQL driver supports version 7.3 and higher of the PostgreSQL server."
 msgstr ""
+"Qt SQL モジュールは、様々なデータベース API と通信を行なうためドライバプラグインを使用しています。\n"
+"\n"
+"QPSML ドライバは、 PostgreSQL サーバのうちバージョン 7.3 もしくはそれ以降に対応しています。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Sql5-sqlite/summary
 #. tumbleweed/libqt5-qtbase/libQt5Sql5-sqlite-32bit/summary
@@ -1235,6 +1245,11 @@ msgid ""
 "database server. SQLite operates on a single file, which must be set as the "
 "database name when opening a connection."
 msgstr ""
+"Qt SQL モジュールは、様々なデータベース API と通信を行なうためドライバプラグインを使用しています。\n"
+"\n"
+"Qt SQLite プラグインでは、 SQLite データベースへのアクセスを提供します。 SQLite "
+"はプロセス内データベースと呼ばれる仕組みで、別途のデータベースサーバを必要としない仕組みです。 SQLite "
+"は単一のファイルを利用して動作する仕組みで、接続を開く際にデータベース名を指定して動作します。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Sql5-unixODBC/summary
 #. tumbleweed/libqt5-qtbase/libQt5Sql5-unixODBC-32bit/summary
@@ -1255,6 +1270,10 @@ msgid ""
 "available data sources. Note that you also need to install and configure "
 "ODBC drivers for the ODBC driver manager that is installed on your system."
 msgstr ""
+"Qt SQL モジュールは、様々なデータベース API と通信を行なうためドライバプラグインを使用しています。\n"
+"\n"
+"QODBC ドライバは、 ODBC ドライバマネージャにアクセスして、利用可能なデータソースへのアクセス機構を提供します。なお、"
+"あらかじめお使いのシステムの ODBC ドライバマネージャに対して、 ODBC ドライバをインストールしておく必要があります。"
 
 #. tumbleweed/libqt5-qtsvg/libQt5Svg5/summary
 #. tumbleweed/libqt5-qtsvg/libQt5Svg5-32bit/summary
@@ -1278,19 +1297,15 @@ msgstr ""
 #. tumbleweed/libqt5-qtbase/libQt5Test-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Test-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Test-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5 testing library"
-msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
+msgstr "Qt5 testing ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libQt5Test-devel/description
 #. tumbleweed/libqt5-qtbase/libQt5Test-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5Test-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5Test-devel/description
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5 testing library."
-msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
+msgstr "Qt5 testing ライブラリ向け開発用ファイルです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Test5/summary
 #. tumbleweed/libqt5-qtbase/libQt5Test5-32bit/summary
@@ -1308,15 +1323,15 @@ msgid ""
 "Qt Test provides functionality commonly found in unit testing frameworks as "
 "well as extensions for testing graphical user interfaces."
 msgstr ""
+"Qt Test は Qt ベースのアプリケーションやライブラリに対する単体テスト向けフレームワークです。 Qt Test "
+"では、単体テストフレームワーク内によくある機能に対応しているほか、グラフィカルユーザインターフェイスをテストするための拡張も用意されています。"
 
 #. tumbleweed/libqt5-qtspeech/libQt5TextToSpeech5/summary
 #. tumbleweed/libqt5-qtspeech/libQt5TextToSpeech5-32bit/summary
 #. leap/libqt5-qtspeech/libQt5TextToSpeech5-32bit/summary
 #. leap/libqt5-qtspeech/libQt5TextToSpeech5/summary
-#, fuzzy
-#| msgid "Qt 5 Nfc Addon"
 msgid "Qt 5 Speech Addon"
-msgstr "Qt 5 Nfc アドオン"
+msgstr "Qt 5 Speech アドオン"
 
 #. tumbleweed/libqt5-qtspeech/libQt5TextToSpeech5/description
 #. tumbleweed/libqt5-qtspeech/libQt5TextToSpeech5-32bit/description
@@ -1329,6 +1344,10 @@ msgid ""
 "as text-to-speech, which is useful for end-users who are visually challenged "
 "or cannot access the application for whatever reason."
 msgstr ""
+"Qt はアプリケーションを開発するためのライブラリ集です。\n"
+"\n"
+"このモジュールは、 Qt アプリケーションでテキストスピーチの機能を提供します。視覚に支障のあるエンドユーザのほか、何らかの理由でアプリケーションにアクセ"
+"スできないユーザにも便利な仕組みです。"
 
 #. tumbleweed/libqt5-qtwayland/libQt5WaylandClient5/summary
 #. tumbleweed/libqt5-qtwayland/libQt5WaylandCompositor5/summary
@@ -1424,8 +1443,6 @@ msgstr ""
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKit5-devel-32bit/summary
 #. leap/libqt5-qtwebkit/libQt5WebKit5-devel-32bit/summary
 #. leap/libqt5-qtwebkit/libQt5WebKit5-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5 WebKit library"
 msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
 
@@ -1438,10 +1455,8 @@ msgstr "Qt 5 WebKit ライブラリ向け QML インポート"
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets-devel-32bit/summary
 #. leap/libqt5-qtwebkit/libQt5WebKitWidgets-devel-32bit/summary
 #. leap/libqt5-qtwebkit/libQt5WebKitWidgets-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit Widgets library"
 msgid "Development files for the Qt5 WebKit Widgets library"
-msgstr "Qt5 Webkit ウイジェットライブラリ向け開発用ファイル"
+msgstr "Qt5 WebKit ウイジェットライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets5/summary
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets5-32bit/summary
@@ -1496,10 +1511,8 @@ msgstr "Qt 5 WebSockets ライブラリ向け QML インポート"
 #. tumbleweed/libqt5-qtwebview/libQt5WebView5-32bit/summary
 #. leap/libqt5-qtwebview/libQt5WebView5-32bit/summary
 #. leap/libqt5-qtwebview/libQt5WebView5/summary
-#, fuzzy
-#| msgid "Qt 5 WebKit Library"
 msgid "Qt 5 WebView Library"
-msgstr "Qt 5 WebKit ライブラリ"
+msgstr "Qt 5 WebView ライブラリ"
 
 #. tumbleweed/libqt5-qtwebview/libQt5WebView5/description
 #. tumbleweed/libqt5-qtwebview/libQt5WebView5-imports/description
@@ -1512,31 +1525,27 @@ msgid ""
 "without necessarily including a full web browser stack by using native APIs "
 "where it makes sense."
 msgstr ""
+"Qt WebView は、 QML アプリケーション内に Web のコンテンツを表示するための仕組みで、アプリケーション側で完全な Web "
+"ブラウザ機能を実装することなく、便利に利用できる仕組みを備えています。"
 
 #. tumbleweed/libqt5-qtwebview/libQt5WebView5-imports/summary
 #. leap/libqt5-qtwebview/libQt5WebView5-imports/summary
-#, fuzzy
-#| msgid "Qt5 WebKit Library - QML imports"
 msgid "Qt 5 WebView Library - QML imports"
-msgstr "Qt5 WebKit ライブラリ - QML インポート"
+msgstr "Qt 5 WebView ライブラリ - QML インポート"
 
 #. tumbleweed/libqt5-qtbase/libQt5Widgets-devel/summary
 #. tumbleweed/libqt5-qtbase/libQt5Widgets-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Widgets-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Widgets-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit Widgets library"
 msgid "Development files for the Qt5 widgets library"
-msgstr "Qt5 Webkit ウイジェットライブラリ向け開発用ファイル"
+msgstr "Qt5 widgets ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libQt5Widgets-devel/description
 #. tumbleweed/libqt5-qtbase/libQt5Widgets-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5Widgets-devel-32bit/description
 #. leap/libqt5-qtbase/libQt5Widgets-devel/description
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit Widgets library"
 msgid "Development files for the Qt5 widgets library."
-msgstr "Qt5 Webkit ウイジェットライブラリ向け開発用ファイル"
+msgstr "Qt5 widgets ライブラリ向け開発用ファイルです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Widgets5/summary
 #. tumbleweed/libqt5-qtbase/libQt5Widgets5-32bit/summary
@@ -1549,16 +1558,10 @@ msgstr "Qt 5 ウイジェットライブラリ"
 #. tumbleweed/libqt5-qtbase/libQt5Widgets5-32bit/description
 #. leap/libqt5-qtbase/libQt5Widgets5-32bit/description
 #. leap/libqt5-qtbase/libQt5Widgets5/description
-#, fuzzy
-#| msgid ""
-#| "The Qt Quick Controls module provides a set of controls that can be used "
-#| "to build complete interfaces in Qt Quick."
 msgid ""
 "The Qt Widgets Module provides a set of UI elements to create classic "
 "desktop-style user interfaces."
-msgstr ""
-"Qt Quick コントロールモジュールは、 Qt Quick 内で完全なインターフェイスを構築"
-"する際に使用するコントロール集を提供します。"
+msgstr "Qt Widgets モジュールは、クラシックなデスクトップ型ユーザインターフェイスを作成するための UI 要素集を提供します。"
 
 #. tumbleweed/libqt5-qtx11extras/libQt5X11Extras5/summary
 #. tumbleweed/libqt5-qtx11extras/libQt5X11Extras5-32bit/summary
@@ -1618,10 +1621,8 @@ msgstr "LXQt 内で使用される QtXDG アイコンローダライブラリ"
 #. tumbleweed/libqt5-qtbase/libQt5Xml-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Xml-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Xml-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 3D library"
 msgid "Development files for the Qt5 XML library"
-msgstr "Qt5 3D ライブラリ向け開発用ファイル"
+msgstr "Qt5 XML ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libQt5Xml-devel/description
 #. tumbleweed/libqt5-qtbase/libQt5Xml-devel-32bit/description
@@ -1633,6 +1634,10 @@ msgid ""
 "(The module is not actively maintained anymore. Please use the "
 "QXmlStreamReader and QXmlStreamWriter classes in Qt Core instead.)"
 msgstr ""
+"Qt5 XML ライブラリ向けの開発用ファイルです。\n"
+"\n"
+"(このモジュールは、もはや積極的には開発されていません。代わりに Qt コア内の QXmlStreamReader や QXmlStreamWriter "
+"クラスをお使いください。)"
 
 #. tumbleweed/libqt5-qtbase/libQt5Xml5/summary
 #. tumbleweed/libqt5-qtbase/libQt5Xml5-32bit/summary
@@ -1648,7 +1653,7 @@ msgstr "Qt 5 Xml ライブラリ"
 msgid ""
 "The Qt XML module provides C++ implementations of the SAX and DOM standards "
 "for XML."
-msgstr ""
+msgstr "Qt XML モジュールは、 XML 向けの SAX および DOM 標準を C++ 言語で実装した仕組みを提供します。"
 
 #. tumbleweed/libqt5-qtxmlpatterns/libQt5XmlPatterns5/summary
 #. tumbleweed/libqt5-qtxmlpatterns/libQt5XmlPatterns5-32bit/summary
@@ -1833,21 +1838,14 @@ msgstr ""
 #. tumbleweed/libqt5-creator/summary
 #. leap/libqt5-creator/summary
 msgid "Integrated Development Environment targeting Qt apps"
-msgstr ""
+msgstr "Qt アプリ向け統合開発環境"
 
 #. tumbleweed/libqt5-creator/description
 #. leap/libqt5-creator/description
-#, fuzzy
-#| msgid ""
-#| "Qt Creator is a new, lightweight, cross-platform integrated development "
-#| "environment (IDE) designed to make development with the Qt application "
-#| "framework even faster and easier."
 msgid ""
 "Qt Creator is an integrated development environment (IDE) designed to "
 "facilitate development with the Qt application framework."
-msgstr ""
-"Qt Creator は新しく軽量で、複数のプラットフォームに対応した統合開発環境(IDE) "
-"です。 Qt アプリケーションを素早く簡単に作成するためのものです。"
+msgstr "Qt Creator は、 Qt アプリケーションフレームワークを利用した開発を支援するための統合開発環境(IDE) です。"
 
 #. tumbleweed/libqt5-creator/libqt5-creator-plugin-devel/summary
 #. leap/libqt5-creator/libqt5-creator-plugin-devel/summary
@@ -1875,10 +1873,8 @@ msgstr "Qt 5 Linguest ツール集です。"
 
 #. tumbleweed/libqt5-qttools/libqt5-linguist-devel/summary
 #. leap/libqt5-qttools/libqt5-linguist-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt 5 Logic 3D library"
 msgid "Development files for the Qt 5 Linguist tools"
-msgstr "Qt 5 Logic 3D ライブラリ向け開発用ファイル"
+msgstr "Qt 5 Linguist ツール向け開発用ファイル"
 
 #. tumbleweed/libqt5-qttools/libqt5-linguist-devel/description
 #. leap/libqt5-qttools/libqt5-linguist-devel/description
@@ -1948,29 +1944,19 @@ msgstr ""
 
 #. tumbleweed/libqt5-qtbase/libqt5-qtbase-devel/summary
 #. leap/libqt5-qtbase/libqt5-qtbase-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 3D library"
 msgid "Development files for the Qt5 base library"
-msgstr "Qt5 3D ライブラリ向け開発用ファイル"
+msgstr "Qt5 base ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtbase/libqt5-qtbase-devel/description
 #. leap/libqt5-qtbase/libqt5-qtbase-devel/description
-#, fuzzy
-#| msgid ""
-#| "You need this package, if you want to compile programs with Qt. It "
-#| "contains the \"Qt Crossplatform Development Kit\". It does contain "
-#| "include files and development applications like GUI designers, translator "
-#| "tools and code generators."
 msgid ""
 "You need this package if you want to compile programs with Qt. It contains "
 "the \"Qt Crossplatform Development Kit\". It does contain include files and "
 "development applications like GUI designers, translator tools and code "
 "generators."
 msgstr ""
-"Qt を利用してプログラムをコンパイルしたい場合に必要となるパッケージです。 こ"
-"のパッケージには、 \"Qt クロスプラットフォーム開発キット\" が含まれています。"
-"ヘッダファイルや GUI 設計などの開発用アプリケーション、翻訳ツールやコード生成"
-"器などが含まれています。"
+"Qt を利用してプログラムをコンパイルしたい場合に必要となるパッケージです。 このパッケージには、 \"Qt クロスプラットフォーム開発キット\" "
+"が含まれています。ヘッダファイルや GUI 設計などの開発用アプリケーション、翻訳ツールやコード生成器などが含まれています。"
 
 #. tumbleweed/libqt5-qtbase/libqt5-qtbase-examples/summary
 #. tumbleweed/libqt5-qtbase/libqt5-qtbase-examples-32bit/summary
@@ -1983,8 +1969,6 @@ msgstr "Qt5 基本サンプル"
 #. tumbleweed/libqt5-qtbase/libqt5-qtbase-examples-32bit/description
 #. leap/libqt5-qtbase/libqt5-qtbase-examples-32bit/description
 #. leap/libqt5-qtbase/libqt5-qtbase-examples/description
-#, fuzzy
-#| msgid "Examples for libqt5-qtbase modules."
 msgid "Examples for the libqt5-qtbase modules."
 msgstr "libqt5-qtbase モジュールの例です。"
 
@@ -2038,34 +2022,23 @@ msgstr "libqt5-qtcanvas3d モジュールの例です。"
 
 #. tumbleweed/libqt5-qtcharts/libqt5-qtcharts-examples/summary
 #. leap/libqt5-qtcharts/libqt5-qtcharts-examples/summary
-#, fuzzy
-#| msgid "QML imports for the Qt 5 WebSockets library"
 msgid "Example programs for the Qt 5 Charts Library"
-msgstr "Qt 5 WebSockets ライブラリ向け QML インポート"
+msgstr "Qt 5 Charts ライブラリ向けサンプルプログラム"
 
 #. tumbleweed/libqt5-qtcharts/libqt5-qtcharts-examples/description
 #. leap/libqt5-qtcharts/libqt5-qtcharts-examples/description
-#, fuzzy
-#| msgid "Examples for libqt5-qtsvg modules."
 msgid "Examples for Qt5 Charts module."
-msgstr "libqt5-qtsvg モジュールの例です。"
+msgstr "Qt5 Charts モジュールの例です。"
 
 #. tumbleweed/libqt5-qtcharts/libqt5-qtcharts-imports/summary
 #. leap/libqt5-qtcharts/libqt5-qtcharts-imports/summary
-#, fuzzy
-#| msgid "QML imports for the Qt5 WebKit library"
 msgid "QML imports for the Qt 5 Charts Library"
-msgstr "Qt 5 WebKit ライブラリ向け QML インポート"
+msgstr "Qt 5 Charts ライブラリ向け QML インポート"
 
 #. tumbleweed/libqt5-qtcharts/libqt5-qtcharts-imports/description
 #. leap/libqt5-qtcharts/libqt5-qtcharts-imports/description
-#, fuzzy
-#| msgid ""
-#| "This package contains QML import files for Qt5 Data Visualization module."
 msgid "This package contains QML import files."
-msgstr ""
-"このパッケージには、 Qt5 データ可視化モジュール向けの QML インポートファイル"
-"が含まれています。"
+msgstr "このパッケージには、 QML インポートファイルが含まれています。"
 
 #. tumbleweed/libqt5-qtconnectivity/libqt5-qtconnectivity-devel/description
 #. tumbleweed/libqt5-qtconnectivity/libqt5-qtconnectivity-devel-32bit/description
@@ -2190,34 +2163,25 @@ msgstr ""
 #. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-devel-32bit/summary
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-devel-32bit/summary
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 3D library"
 msgid "Development files for the Qt5 gamepad library"
-msgstr "Qt5 3D ライブラリ向け開発用ファイル"
+msgstr "Qt5 gamepad ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-devel/description
 #. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-devel-32bit/description
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-devel-32bit/description
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-devel/description
-#, fuzzy
-#| msgid "You need this package if you want to compile programs with qt3d."
 msgid "You need this package if you want to compile programs with QtGamepad."
-msgstr ""
-"qt3d を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
+msgstr "QtGamepad. を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
 
 #. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-examples/summary
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-examples/summary
-#, fuzzy
-#| msgid "Qt5 base examples"
 msgid "Qt5 gamepad examples"
-msgstr "Qt5 基本サンプル"
+msgstr "Qt5 gamepad サンプル"
 
 #. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-examples/description
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-examples/description
-#, fuzzy
-#| msgid "Examples for the libqt5-qt3d module."
 msgid "Examples for the libqt5-qtgamepad module."
-msgstr "libqt5-qt3d モジュールの例です。"
+msgstr "libqt5-qtgamepad モジュールの例です。"
 
 #. tumbleweed/libqt5-qtgraphicaleffects/summary
 #. leap/libqt5-qtgraphicaleffects/summary
@@ -2248,10 +2212,8 @@ msgstr ""
 #. tumbleweed/libqt5-qtlocation/libqt5-qtlocation-devel-32bit/summary
 #. leap/libqt5-qtlocation/libqt5-qtlocation-devel-32bit/summary
 #. leap/libqt5-qtlocation/libqt5-qtlocation-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt 5 3D Animation library"
 msgid "Development files for the Qt5 Location Library"
-msgstr "Qt 5 3D アニメーションライブラリ向け開発用ファイル"
+msgstr "Qt 5 Location ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtlocation/libqt5-qtlocation-devel/description
 #. tumbleweed/libqt5-qtlocation/libqt5-qtlocation-devel-32bit/description
@@ -2264,6 +2226,9 @@ msgid ""
 "This subpackage contains the header files for developing applications that "
 "want to make use of the Qt Location libraries."
 msgstr ""
+"Qt Location API は、様々な位置情報サービスからのデータを利用して、マッピングソリューションを提供します。 \n"
+"\n"
+"このサブパッケージには、 Qt Location ライブラリを利用して開発を行なうのに必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/libqt5-qtlocation/libqt5-qtlocation-examples/description
 #. leap/libqt5-qtlocation/libqt5-qtlocation-examples/description
@@ -2301,10 +2266,8 @@ msgstr "libqt5-qtmultimedia モジュールの例です。"
 #. tumbleweed/libqt5-qtnetworkauth/libqt5-qtnetworkauth-devel-32bit/summary
 #. leap/libqt5-qtnetworkauth/libqt5-qtnetworkauth-devel-32bit/summary
 #. leap/libqt5-qtnetworkauth/libqt5-qtnetworkauth-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5 NetworkAuth Library"
-msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
+msgstr "Qt5 NetworkAuth ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtnetworkauth/libqt5-qtnetworkauth-devel/description
 #. tumbleweed/libqt5-qtnetworkauth/libqt5-qtnetworkauth-devel-32bit/description
@@ -2318,20 +2281,21 @@ msgid ""
 "This subpackage contains the header files for developing applications that "
 "want to make use of libQt5NetworkAuth5."
 msgstr ""
+"Qt Network Authorization は、 Qt "
+"アプリケーションに対してオンラインアカウントへのアクセスを提供するほか、ユーザのパスワードをアクセス先のサイトに開示せずにアクセスする機能を提供します。 "
+"\n"
+"\n"
+"このサブパッケージには、 libQt5NetworkAuth5 を利用したアプリケーションを開発するのに必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/libqt5-qtnetworkauth/libqt5-qtnetworkauth-examples/summary
 #. leap/libqt5-qtnetworkauth/libqt5-qtnetworkauth-examples/summary
-#, fuzzy
-#| msgid "Qt5 sensors examples"
 msgid "Qt5 networkauth examples"
-msgstr "Qt5 sensors サンプル"
+msgstr "Qt5 networkauth サンプル"
 
 #. tumbleweed/libqt5-qtnetworkauth/libqt5-qtnetworkauth-examples/description
 #. leap/libqt5-qtnetworkauth/libqt5-qtnetworkauth-examples/description
-#, fuzzy
-#| msgid "Examples for libqt5-qtsensors module."
 msgid "Examples for libqt5-qtnetworkauth module."
-msgstr "libqt5-qtsensors モジュールの例です。"
+msgstr "libqt5-qtnetworkauth モジュールの例です。"
 
 #. tumbleweed/libqt5-qttools/libqt5-qtpaths/summary
 #. leap/libqt5-qttools/libqt5-qtpaths/summary
@@ -2392,53 +2356,37 @@ msgstr "libqt5-qtquickcontrols2 モジュールの例です。"
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-devel-32bit/summary
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-devel-32bit/summary
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5 RemoteObjects library"
-msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
+msgstr "Qt5 RemoteObjects ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-devel/description
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-devel-32bit/description
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-devel-32bit/description
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-devel/description
-#, fuzzy
-#| msgid ""
-#| "Qt is a set of libraries for developing applications.\n"
-#| "\n"
-#| "This package contains qtimageformats.\n"
-#| "\n"
-#| "You need this package, if you want to compile programs with "
-#| "qtimageformats."
 msgid ""
 "Qt Remote Objects (QtRO) is an inter-process communication (IPC) processes "
 "or computers.\n"
 "\n"
 "You need this package if you want to compile programs with QtRemoteObjects."
 msgstr ""
-"Qt はアプリケーションを開発するためのライブラリ群です。\n"
+"Qt Remote Objects (QtRO) は、プロセスやコンピュータを跨いだプロセス間通信 (IPC) 機構です。\n"
 "\n"
-"このパッケージには qtimageformats が含まれています。"
+"このパッケージには、 QtRemoteObjects を利用したプログラムをコンパイルするのに必要となるものです。"
 
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-examples/summary
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-examples/summary
-#, fuzzy
-#| msgid "Qt5 websockets examples"
 msgid "Qt5 remoteobjects examples"
-msgstr "Qt5 Websocket サンプル"
+msgstr "Qt5 remoteobjects サンプル"
 
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-examples/description
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-examples/description
-#, fuzzy
-#| msgid "Examples for the libqt5-qtwebsockets module."
 msgid "Examples for the libqt5-qtremoteobjects module."
-msgstr "libqt5-qtwebsockets モジュールの例です。"
+msgstr "libqt5-qtremoteobjects モジュールの例です。"
 
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-tools/summary
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-tools/summary
-#, fuzzy
-#| msgid "Qt 5 Declarative Tools"
 msgid "Qt 5 RemoteObjects Tools"
-msgstr "Qt 5 装飾ツール"
+msgstr "Qt 5 RemoteObjects ツール"
 
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-tools/description
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-tools/description
@@ -2449,15 +2397,16 @@ msgid ""
 "This package contains REPC, a compiler for Qt RemoteObjects API definition "
 "files."
 msgstr ""
+"Qt Remote Objects (QtRO) は、プロセスやコンピュータを跨いだプロセス間通信 (IPC) 機構です。\n"
+"\n"
+"このパッケージには、 Qt RemoteObjects API 定義ファイルである REPC が含まれています。"
 
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-devel/summary
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-devel-32bit/summary
 #. leap/libqt5-qtscript/libqt5-qtscript-devel-32bit/summary
 #. leap/libqt5-qtscript/libqt5-qtscript-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 SVG library"
 msgid "Development files for the Qt 5 Script library"
-msgstr "Qt5 SVG ライブラリ向け開発用ファイル"
+msgstr "Qt 5 Script ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-devel/description
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-devel-32bit/description
@@ -2469,13 +2418,14 @@ msgid ""
 "This subpackage contains the header files for developing applications that "
 "want to make use of libQt5Script5."
 msgstr ""
+"Qt Script はアプリケーションにスクリプトの機能を追加するモジュールです。\n"
+"\n"
+"このサブパッケージには、 libQt5Script5 を利用したアプリケーションを開発するのに必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-examples/summary
 #. leap/libqt5-qtscript/libqt5-qtscript-examples/summary
-#, fuzzy
-#| msgid "Qt5 script examples"
 msgid "Qt5 Script examples"
-msgstr "Qt5 script サンプル"
+msgstr "Qt5 Script サンプル"
 
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-examples/description
 #. leap/libqt5-qtscript/libqt5-qtscript-examples/description
@@ -2486,47 +2436,33 @@ msgstr "libqt5-qtscript モジュールの例です。"
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-devel-32bit/summary
 #. leap/libqt5-qtscxml/libqt5-qtscxml-devel-32bit/summary
 #. leap/libqt5-qtscxml/libqt5-qtscxml-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 SerialPort library"
 msgid "Development files for Qt5's State Chart XML library"
-msgstr "Qt5 SerialPort ライブラリ向け開発用ファイル"
+msgstr "Qt5 の State Chart XML ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-devel/description
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-devel-32bit/description
 #. leap/libqt5-qtscxml/libqt5-qtscxml-devel-32bit/description
 #. leap/libqt5-qtscxml/libqt5-qtscxml-devel/description
-#, fuzzy
-#| msgid "You need this package if you want to compile programs with QtSvg."
 msgid "You need this package if you want to compile programs with QtScxml."
-msgstr ""
-"QtSvg を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
+msgstr "QtScxml を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
 
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-examples/summary
 #. leap/libqt5-qtscxml/libqt5-qtscxml-examples/summary
-#, fuzzy
-#| msgid "Qt5 Serial Port examples"
 msgid "Qt5 State Chart XML examples"
-msgstr "Qt5 Serial Port サンプル"
+msgstr "Qt5 State Chart XML サンプル"
 
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-examples/description
 #. leap/libqt5-qtscxml/libqt5-qtscxml-examples/description
-#, fuzzy
-#| msgid "Examples for libqt5-qtscript module."
 msgid "Examples for libqt5-qtscxml module."
-msgstr "libqt5-qtscript モジュールの例です。"
+msgstr "libqt5-qtscxml モジュールの例です。"
 
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-tools/summary
 #. leap/libqt5-qtscxml/libqt5-qtscxml-tools/summary
 msgid "Qt 5 State Chart XML tools"
-msgstr ""
+msgstr "Qt 5 State Chart XML ツール"
 
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-tools/description
 #. leap/libqt5-qtscxml/libqt5-qtscxml-tools/description
-#, fuzzy
-#| msgid ""
-#| "Qt is a set of libraries for developing applications.\n"
-#| "\n"
-#| "This package contains additional style plugins."
 msgid ""
 "Qt is a set of libraries for developing applications.\n"
 "\n"
@@ -2534,16 +2470,14 @@ msgid ""
 msgstr ""
 "Qt はアプリケーションを開発するためのライブラリ群です。\n"
 "\n"
-"このパッケージには、追加のスタイルプラグインが含まれています。"
+"このパッケージには、 Qt SCXML ファイルを処理するためのツールが含まれています。"
 
 #. tumbleweed/libqt5-qtsensors/libqt5-qtsensors-devel/summary
 #. tumbleweed/libqt5-qtsensors/libqt5-qtsensors-devel-32bit/summary
 #. leap/libqt5-qtsensors/libqt5-qtsensors-devel-32bit/summary
 #. leap/libqt5-qtsensors/libqt5-qtsensors-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 SerialBus library"
 msgid "Development files for the Qt 5 Sensors library"
-msgstr "Qt5 SerialBus ライブラリ向け開発用ファイル"
+msgstr "Qt5 Sensors ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtsensors/libqt5-qtsensors-devel/description
 #. tumbleweed/libqt5-qtsensors/libqt5-qtsensors-devel-32bit/description
@@ -2556,6 +2490,9 @@ msgid ""
 "This subpackage contains the header files for developing applications that "
 "want to make use of libQt5Sensors5."
 msgstr ""
+"Qt Sensors API は、センサーハードウエアを QML や C++ インターフェイス経由でアクセスできる仕組みです。 \n"
+"\n"
+"このサブパッケージには、 libQt5Sensors5 を利用したアプリケーションを開発するのに必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/libqt5-qtsensors/libqt5-qtsensors-examples/summary
 #. leap/libqt5-qtsensors/libqt5-qtsensors-examples/summary
@@ -2632,34 +2569,25 @@ msgstr "libqt5-qtserialport モジュールの例です。"
 #. tumbleweed/libqt5-qtspeech/libqt5-qtspeech-devel-32bit/summary
 #. leap/libqt5-qtspeech/libqt5-qtspeech-devel-32bit/summary
 #. leap/libqt5-qtspeech/libqt5-qtspeech-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 SVG library"
 msgid "Development files for the Qt5 Speech library"
-msgstr "Qt5 SVG ライブラリ向け開発用ファイル"
+msgstr "Qt5 Speech ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtspeech/libqt5-qtspeech-devel/description
 #. tumbleweed/libqt5-qtspeech/libqt5-qtspeech-devel-32bit/description
 #. leap/libqt5-qtspeech/libqt5-qtspeech-devel-32bit/description
 #. leap/libqt5-qtspeech/libqt5-qtspeech-devel/description
-#, fuzzy
-#| msgid "You need this package if you want to compile programs with qt3d."
 msgid "You need this package if you want to compile programs with qtspeech."
-msgstr ""
-"qt3d を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
+msgstr "qtspeech を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
 
 #. tumbleweed/libqt5-qtspeech/libqt5-qtspeech-examples/summary
 #. leap/libqt5-qtspeech/libqt5-qtspeech-examples/summary
-#, fuzzy
-#| msgid "Qt5 SVG examples"
 msgid "Qt5 Speech examples"
-msgstr "Qt5 SVG サンプル"
+msgstr "Qt5 Speech サンプル"
 
 #. tumbleweed/libqt5-qtspeech/libqt5-qtspeech-examples/description
 #. leap/libqt5-qtspeech/libqt5-qtspeech-examples/description
-#, fuzzy
-#| msgid "Examples for the libqt5-qtsvg modules."
 msgid "Examples for the libqt5-qtspeech module."
-msgstr "libqt5-qtsvg モジュールの例です。"
+msgstr "libqt5-qtspeech モジュールの例です。"
 
 #. tumbleweed/libqt5-qtstyleplugins/summary
 #. leap/libqt5-qtstyleplugins/summary
@@ -2737,21 +2665,15 @@ msgstr "Qt 5 QtTools モジュール"
 #. tumbleweed/libqt5-qttools/libqt5-qttools-devel-32bit/summary
 #. leap/libqt5-qttools/libqt5-qttools-devel-32bit/summary
 #. leap/libqt5-qttools/libqt5-qttools-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 3D library"
 msgid "Development files for the Qt5 Tools library"
-msgstr "Qt5 3D ライブラリ向け開発用ファイル"
+msgstr "Qt5 Tools ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qttools/libqt5-qttools-devel/description
 #. tumbleweed/libqt5-qttools/libqt5-qttools-devel-32bit/description
 #. leap/libqt5-qttools/libqt5-qttools-devel-32bit/description
 #. leap/libqt5-qttools/libqt5-qttools-devel/description
-#, fuzzy
-#| msgid "You need this package, if you want to compile programs with qttools."
 msgid "You need this package if you want to compile programs with qttools."
-msgstr ""
-"qttools を利用するプログラムをコンパイルしたい場合に必要となるパッケージで"
-"す。"
+msgstr "qttools を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
 
 #. tumbleweed/libqt5-qttools/libqt5-qttools-doc/summary
 #. leap/libqt5-qttools/libqt5-qttools-doc/summary
@@ -2774,8 +2696,6 @@ msgstr "Qt5 ツールサンプル"
 
 #. tumbleweed/libqt5-qttools/libqt5-qttools-examples/description
 #. leap/libqt5-qttools/libqt5-qttools-examples/description
-#, fuzzy
-#| msgid "Examples for libqt5-qttools module."
 msgid "Examples for the libqt5-qttools module."
 msgstr "libqt5-qttools モジュールの例です。"
 
@@ -2883,19 +2803,6 @@ msgstr "Qt 5 WebEngine ライブラリ"
 #. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-32bit/description
 #. leap/libqt5-qtwebengine/libqt5-qtwebengine-32bit/description
 #. leap/libqt5-qtwebengine/description
-#, fuzzy
-#| msgid ""
-#| "Qt WebEngine provides functionality for rendering regions of dynamic web "
-#| "content.\n"
-#| "\n"
-#| "The functionality in Qt WebEngine is divided into the following modules:\n"
-#| "\n"
-#| "* QtWebEngineCore: Provides public API shared by both QtWebEngine and   "
-#| "QtWebEngineWidgets\n"
-#| "* QtWebEngine: Provides QML types for rendering web content within a   "
-#| "QML application\n"
-#| "* QtWebEngineWidgets: Provides a web browser engine as well as C++   "
-#| "classes to render and interact with web content"
 msgid ""
 "Qt WebEngine provides functionality for rendering regions of dynamic web "
 "content.\n"
@@ -2911,13 +2818,9 @@ msgstr ""
 "Qt WebEngine は、動的な Web コンテンツを生成する分野の機能を提供します。\n"
 "\n"
 "Qt WebEngine の機能は、下記のモジュールに分割されています:\n"
-"\n"
-"* QtWebEngineCore: QtWebEngine と QtWebEngineWidgets で共有される公開 API の"
-"提供\n"
-"* QtWebEngine: QML アプリケーション内で Web コンテンツを生成するための QML タ"
-"イプの提供\n"
-"* QtWebEngineWidgets: Web ブラウザエンジンと Web コンテンツを生成または操作す"
-"るための C++ クラスの提供"
+"* QtWebEngineCore: QtWebEngine と QtWebEngineWidgets で共有される公開 API の提供\n"
+"* QtWebEngine: QML アプリケーション内で Web コンテンツを生成するための QML タイプの提供\n"
+"* QtWebEngineWidgets: Web ブラウザエンジンと Web コンテンツを生成または操作するための C++ クラスの提供"
 
 #. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-devel/summary
 #. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-devel-32bit/summary
@@ -2928,12 +2831,9 @@ msgstr "Qt5 WebEngine ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-devel/description
 #. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-devel-32bit/description
-#, fuzzy
-#| msgid "You need this package if you want to compile programs with QtSvg."
 msgid ""
 "You need this package if you want to compile programs with Qt WebEngine."
-msgstr ""
-"QtSvg を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
+msgstr "Qt WebEngine を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
 
 #. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-examples/description
 #. leap/libqt5-qtwebengine/libqt5-qtwebengine-examples/description
@@ -2949,8 +2849,6 @@ msgstr "Qt 5 QtWebKit サンプルとデモ"
 #. tumbleweed/libqt5-qtwebsockets/libqt5-qtwebsockets-devel-32bit/summary
 #. leap/libqt5-qtwebsockets/libqt5-qtwebsockets-devel-32bit/summary
 #. leap/libqt5-qtwebsockets/libqt5-qtwebsockets-devel/summary
-#, fuzzy
-#| msgid "Developemnt files for the Qt5 WebSockets library"
 msgid "Development files for the Qt5 WebSockets library"
 msgstr "Qt5 WebSockets ライブラリ向け開発用ファイル"
 
@@ -2978,36 +2876,25 @@ msgstr "libqt5-qtwebsockets モジュールの例です。"
 #. tumbleweed/libqt5-qtwebview/libqt5-qtwebview-devel-32bit/summary
 #. leap/libqt5-qtwebview/libqt5-qtwebview-devel-32bit/summary
 #. leap/libqt5-qtwebview/libqt5-qtwebview-devel/summary
-#, fuzzy
-#| msgid "Development files for the Qt5 Webkit library"
 msgid "Development files for the Qt5's Webview library"
-msgstr "Qt5 WebKit ライブラリ向け開発用ファイル"
+msgstr "Qt5 の Webview ライブラリ向け開発用ファイル"
 
 #. tumbleweed/libqt5-qtwebview/libqt5-qtwebview-devel/description
 #. tumbleweed/libqt5-qtwebview/libqt5-qtwebview-devel-32bit/description
 #. leap/libqt5-qtwebview/libqt5-qtwebview-devel-32bit/description
 #. leap/libqt5-qtwebview/libqt5-qtwebview-devel/description
-#, fuzzy
-#| msgid ""
-#| "You need this package if you want to compile programs with QtWebSockets."
 msgid "You need this package if you want to compile programs with QtWebView."
-msgstr ""
-"QtWebSockets を利用するプログラムをコンパイルしたい場合に必要となるパッケージ"
-"です。"
+msgstr "QtWebView を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
 
 #. tumbleweed/libqt5-qtwebview/libqt5-qtwebview-examples/summary
 #. leap/libqt5-qtwebview/libqt5-qtwebview-examples/summary
-#, fuzzy
-#| msgid "Qt5 base examples"
 msgid "Qt5 webview examples"
-msgstr "Qt5 基本サンプル"
+msgstr "Qt5 webview サンプル"
 
 #. tumbleweed/libqt5-qtwebview/libqt5-qtwebview-examples/description
 #. leap/libqt5-qtwebview/libqt5-qtwebview-examples/description
-#, fuzzy
-#| msgid "Examples for libqt5-qtwebengine module."
 msgid "Examples for libqt5-qtwebview module."
-msgstr "libqt5-qtwebengine モジュールの例です。"
+msgstr "libqt5-qtwebview モジュールの例です。"
 
 #. tumbleweed/libqt5-qtx11extras/libqt5-qtx11extras-devel/summary
 #. tumbleweed/libqt5-qtx11extras/libqt5-qtx11extras-devel-32bit/summary
@@ -3073,270 +2960,171 @@ msgstr "C++ Qt ベースの Twitter ライブラリです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Core-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5Core-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 3D library"
 msgid "Non-ABI stable experimental API for the Qt5 core library"
-msgstr "Qt5 3D ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 core ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5Core-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5Core-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qt3d that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libQt5Core that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qt3d のプライベートヘッダが含まれています。これらは"
-"通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証も"
-"ありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーショ"
-"ンを構築するためのものです。"
+"このパッケージには libQt5Core のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5DBus-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5DBus-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 3D library"
 msgid "Non-ABI stable experimental API for the Qt5 D-Bus library"
-msgstr "Qt5 3D ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 D-Bus ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5DBus-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5DBus-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtsvg that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libQt5DBus that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qtsvg のプライベートヘッダが含まれています。これら"
-"は通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証"
-"もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
+"このパッケージには libQt5DBus のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Gui-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5Gui-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SVG library"
 msgid "Non-ABI stable experimental API for the Qt5 GUI library"
-msgstr "Qt5 SVG ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 GUI ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5Gui-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5Gui-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qt3d that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libQt5Gui that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qt3d のプライベートヘッダが含まれています。これらは"
-"通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証も"
-"ありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーショ"
-"ンを構築するためのものです。"
+"このパッケージには libQt5Gui のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5KmsSupport-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5KmsSupport-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SVG library"
 msgid "Non-ABI stable experimental API for the Qt5 KMS support library"
-msgstr "Qt5 SVG ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 KMS サポートライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5KmsSupport-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5KmsSupport-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtserialport that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libQt5KmsSupport that are normally "
 "not used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qtserialport のプライベートヘッダが含まれています。"
-"これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
-"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリ"
-"ケーションを構築するためのものです。"
+"このパッケージには libQt5KmsSupport "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Network-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5Network-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit library"
 msgid "Non-ABI stable experimental API for the Qt5 network library"
-msgstr "Qt5 Webkit ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 network ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5Network-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5Network-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtwebkit that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libQt5Network that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qtwebkit のプライベートヘッダが含まれています。これ"
-"らは通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保"
-"証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
+"このパッケージには libQt5Network のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、"
+" ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5OpenGL-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5OpenGL-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SVG library"
 msgid "Non-ABI stable experimental API for the Qt5 OpenGL library"
-msgstr "Qt5 SVG ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 OpenGL ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5OpenGL-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5OpenGL-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qt3d that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libQt5OpenGL that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qt3d のプライベートヘッダが含まれています。これらは"
-"通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証も"
-"ありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーショ"
-"ンを構築するためのものです。"
+"このパッケージには libQt5OpenGL のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5PlatformSupport-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5PlatformSupport-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SerialPort library"
 msgid "Non-ABI stable experimental API for the  Qt5 platform support library"
-msgstr "Qt5 SerialPort ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 プラットフォームサポートライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5PlatformSupport-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5PlatformSupport-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtserialport that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libQt5PlatformSupport that are "
 "normally not used by application development and that do not have any ABI or "
 "API guarantees. The packages that build against these have to require the "
 "exact Qt version."
 msgstr ""
-"このパッケージには libqt5-qtserialport のプライベートヘッダが含まれています。"
-"これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
-"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリ"
-"ケーションを構築するためのものです。"
+"このパッケージには libQt5PlatformSupport "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5PrintSupport-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SerialPort library"
 msgid "Non-ABI stable experimental API for the Qt5 print support library"
-msgstr "Qt5 SerialPort ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 印刷サポートライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5PrintSupport-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5PrintSupport-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtserialport that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libQt5PrintSupport that are "
 "normally not used by application development and that do not have any ABI or "
 "API guarantees. The packages that build against these have to require the "
 "exact Qt version."
 msgstr ""
-"このパッケージには libqt5-qtserialport のプライベートヘッダが含まれています。"
-"これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
-"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリ"
-"ケーションを構築するためのものです。"
+"このパッケージには libQt5PrintSupport "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Sql-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5Sql-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SVG library"
 msgid "Non-ABI stable experimental API for the Qt5 SQL library"
-msgstr "Qt5 SVG ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 SQL ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5Sql-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5Sql-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qt3d that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libQt5Sql that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qt3d のプライベートヘッダが含まれています。これらは"
-"通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証も"
-"ありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーショ"
-"ンを構築するためのものです。"
+"このパッケージには libQt5Sql のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtbase/libQt5Test-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5Test-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit library"
 msgid "Non-ABI stable experimental API for the Qt5 test library"
-msgstr "Qt5 Webkit ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 test ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5Test-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5Test-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qt3d that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libQt5Test that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qt3d のプライベートヘッダが含まれています。これらは"
-"通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証も"
-"ありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーショ"
-"ンを構築するためのものです。"
+"このパッケージには libQt5Test のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKit-private-headers-devel/summary
 #. leap/libqt5-qtwebkit/libQt5WebKit-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit library"
 msgid "Non-ABI stable experimental API for the Qt5 WebKit library"
-msgstr "Qt5 Webkit ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 WebKit ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKit-private-headers-devel/description
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets-private-headers-devel/description
@@ -3355,36 +3143,24 @@ msgstr ""
 
 #. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets-private-headers-devel/summary
 #. leap/libqt5-qtwebkit/libQt5WebKitWidgets-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit Widgets library"
 msgid "Non-ABI stable experimental API for the Qt5 WebKit Widgets library"
-msgstr "Qt5 Webkit ウイジェットライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 WebKit ウイジェットライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5Widgets-private-headers-devel/summary
 #. leap/libqt5-qtbase/libQt5Widgets-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit Widgets library"
 msgid "Non-ABI stable experimental API for the Qt5 widgets library"
-msgstr "Qt5 Webkit ウイジェットライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 ウイジェットライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtbase/libQt5Widgets-private-headers-devel/description
 #. leap/libqt5-qtbase/libQt5Widgets-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtsvg that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libQt5Widgets that are normally not "
 "used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qtsvg のプライベートヘッダが含まれています。これら"
-"は通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証"
-"もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
+"このパッケージには libQt5Widgets のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、"
+" ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt4-devel-doc/libqt4-devel-doc-data/description
 #. leap/libqt4-devel-doc/libqt4-devel-doc-data/description
@@ -3462,17 +3238,13 @@ msgstr ""
 
 #. tumbleweed/libqt5-qtdoc/summary
 #. leap/libqt5-qtdoc/summary
-#, fuzzy
-#| msgid "Qt documentation"
 msgid "Qt 5 API Documentation"
-msgstr "Qt ドキュメンテーション"
+msgstr "Qt 5 API ドキュメンテーション"
 
 #. tumbleweed/libqt5-qtdoc/libqt5-qtdoc-devel/summary
 #. leap/libqt5-qtdoc/libqt5-qtdoc-devel/summary
-#, fuzzy
-#| msgid "The architecture independent data files for the documentation."
 msgid "QDoc index files and doxygen tag files for Qt 5 API Documentation"
-msgstr "ドキュメンテーション向けのアーキテクチャ非依存データファイルです。"
+msgstr "Qt 5 API ドキュメンテーション向けの QDoc インデックスファイルと doxygen タグファイル"
 
 #. tumbleweed/libqt5-qtdoc/libqt5-qtdoc-devel/description
 #. leap/libqt5-qtdoc/libqt5-qtdoc-devel/description
@@ -3481,21 +3253,23 @@ msgid ""
 "create cross links between the QCH documentation files. This package is "
 "normally not required."
 msgstr ""
+"このパッケージには、 QCH ドキュメンテーションファイル間で相互リンクを作成するのに必要な、 QDoc インデックスファイルと doxygen "
+"タグファイルが含まれています。このパッケージは通常は不要です。"
 
 #. tumbleweed/libqt5-qtdoc/libqt5-qtdoc-html/summary
 #. leap/libqt5-qtdoc/libqt5-qtdoc-html/summary
 msgid "Qt 5 API Documentation in HTML format"
-msgstr ""
+msgstr "HTML 版の Qt 5 API ドキュメンテーション"
 
 #. tumbleweed/libqt5-qtdoc/libqt5-qtdoc-html/description
 #. leap/libqt5-qtdoc/libqt5-qtdoc-html/description
 msgid "This package contains the Qt API documentation in html format."
-msgstr ""
+msgstr "このパッケージには、 Qt API ドキュメンテーションの HTML 版が含まれています。"
 
 #. tumbleweed/libqt5-qtdoc/libqt5-qtdoc-qch/summary
 #. leap/libqt5-qtdoc/libqt5-qtdoc-qch/summary
 msgid "Qt 5 API Documentation in QCH format"
-msgstr ""
+msgstr "QCH 版の Qt 5 API ドキュメンテーション"
 
 #. tumbleweed/libqt5-qtdoc/libqt5-qtdoc-qch/description
 #. leap/libqt5-qtdoc/libqt5-qtdoc-qch/description
@@ -3503,58 +3277,42 @@ msgid ""
 "This package contains the Qt API Documentation in QCH format, which can be "
 "used by tools like KDevelop, Qt Assistant, Qt Creator, etc."
 msgstr ""
+"このパッケージには、 Qt API ドキュメンテーションの QCH 版が含まれています。 KDevelop や Qt Assistant, Qt "
+"Creator などから利用することができます。"
 
 #. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-private-headers-devel/summary
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 3D library"
 msgid "Non-ABI stable experimental API for the Qt5 gamepad library"
-msgstr "Qt5 3D ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 gamepad ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-private-headers-devel/description
 #. leap/libqt5-qtgamepad/libqt5-qtgamepad-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qt3d that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libqt5-qtgamepad that are normally "
 "not used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qt3d のプライベートヘッダが含まれています。これらは"
-"通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証も"
-"ありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーショ"
-"ンを構築するためのものです。"
+"このパッケージには libqt5-qtgamepad "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtlocation/libqt5-qtlocation-private-headers-devel/summary
 #. leap/libqt5-qtlocation/libqt5-qtlocation-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 3D library"
 msgid "Non-ABI stable experimental API for the Qt5 Location Library"
-msgstr "Qt5 3D ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 Location ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtlocation/libqt5-qtlocation-private-headers-devel/description
 #. leap/libqt5-qtlocation/libqt5-qtlocation-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtwayland that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libqt5-qtlocation that are normally "
 "not used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qtwayland のプライベートヘッダが含まれています。こ"
-"れらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API の"
-"保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリ"
-"ケーションを構築するためのものです。"
+"このパッケージには libqt5-qtlocation "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtmultimedia/libqt5-qtmultimedia-private-headers-devel/summary
 #. leap/libqt5-qtmultimedia/libqt5-qtmultimedia-private-headers-devel/summary
@@ -3576,62 +3334,42 @@ msgstr ""
 
 #. tumbleweed/libqt5-qtnetworkauth/libqt5-qtnetworkauth-private-headers-devel/summary
 #. leap/libqt5-qtnetworkauth/libqt5-qtnetworkauth-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit library"
 msgid "Non-ABI stable experimental API for the Qt5 NetworkAuth Library"
-msgstr "Qt5 Webkit ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 NetworkAuth ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtnetworkauth/libqt5-qtnetworkauth-private-headers-devel/description
 #. leap/libqt5-qtnetworkauth/libqt5-qtnetworkauth-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtwebkit that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libqt5-qtnetworkauth that are "
 "normally not used by application development and that do not have any ABI or "
 "API guarantees. The packages that build against these have to require the "
 "exact Qt version."
 msgstr ""
-"このパッケージには libqt5-qtwebkit のプライベートヘッダが含まれています。これ"
-"らは通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保"
-"証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
+"このパッケージには libqt5-qtnetworkauth "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-private-headers-devel/summary
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit library"
 msgid "Non-ABI stable experimental API for the Qt5 RemoteObjects library"
-msgstr "Qt5 Webkit ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 RemoteObjects ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtremoteobjects/libqt5-qtremoteobjects-private-headers-devel/description
 #. leap/libqt5-qtremoteobjects/libqt5-qtremoteobjects-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qttools that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libqt5-qtremoteobjects that are "
 "normally not used by application development and that do not have any ABI or "
 "API guarantees. The packages that build against these have to require the "
 "exact Qt version."
 msgstr ""
-"このパッケージには libqt5-qttools のプライベートヘッダが含まれています。これ"
-"らは通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保"
-"証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
+"このパッケージには libqt5-qtremoteobjects "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-private-headers-devel/summary
 #. leap/libqt5-qtscript/libqt5-qtscript-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SVG library"
 msgid "Non-ABI stable experimental API for the Qt5 Script library"
-msgstr "Qt5 SVG ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 Script ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtscript/libqt5-qtscript-private-headers-devel/description
 #. leap/libqt5-qtscript/libqt5-qtscript-private-headers-devel/description
@@ -3648,36 +3386,25 @@ msgstr ""
 
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-private-headers-devel/summary
 #. leap/libqt5-qtscxml/libqt5-qtscxml-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SerialPort library"
 msgid "Non-ABI stable experimental API for Qt5's State Chart XML library"
-msgstr "Qt5 SerialPort ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 の State Chart XML ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtscxml/libqt5-qtscxml-private-headers-devel/description
 #. leap/libqt5-qtscxml/libqt5-qtscxml-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtsvg that are normally "
-#| "not used by application development and that do not have any ABI or API "
-#| "guarantees. The packages that build against these have to require the "
-#| "exact Qt version."
 msgid ""
 "This package provides private headers of libqt5-qtscxml that are normally "
 "not used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qtsvg のプライベートヘッダが含まれています。これら"
-"は通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証"
-"もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
+"このパッケージには libqt5-qtscxml "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtsensors/libqt5-qtsensors-private-headers-devel/summary
 #. leap/libqt5-qtsensors/libqt5-qtsensors-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 SerialBus library"
 msgid "Non-ABI stable experimental API for the Qt5 Sensors library"
-msgstr "Qt5 SerialBus 向け非 ABI 安定実験版 API"
+msgstr "Qt5 Sensors ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtserialbus/libqt5-qtserialbus-private-headers-devel/summary
 #. leap/libqt5-qtserialbus/libqt5-qtserialbus-private-headers-devel/summary
@@ -3735,10 +3462,8 @@ msgstr ""
 
 #. tumbleweed/libqt5-qttools/libqt5-qttools-private-headers-devel/summary
 #. leap/libqt5-qttools/libqt5-qttools-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 3D library"
 msgid "Non-ABI stable experimental API for the Qt5 Tools library"
-msgstr "Qt5 3D ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 Tools ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qttools/libqt5-qttools-private-headers-devel/description
 #. leap/libqt5-qttools/libqt5-qttools-private-headers-devel/description
@@ -3795,22 +3520,15 @@ msgid "Non-ABI stable experimental API for the Qt5 WebEngine library"
 msgstr "Qt5 WebEngine ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtwebchannel that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libqt5-qtwebengine that are "
 "normally not used by application development and that do not have any ABI or "
 "API guarantees. The packages that build against these have to require the "
 "exact Qt version."
 msgstr ""
-"このパッケージには libqt5-qtwebchannel のプライベートヘッダが含まれています。"
-"これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
-"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリ"
-"ケーションを構築するためのものです。"
+"このパッケージには libqt5-qtwebengine "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtwebsockets/libqt5-qtwebsockets-private-headers-devel/summary
 #. leap/libqt5-qtwebsockets/libqt5-qtwebsockets-private-headers-devel/summary
@@ -3832,29 +3550,20 @@ msgstr ""
 
 #. tumbleweed/libqt5-qtwebview/libqt5-qtwebview-private-headers-devel/summary
 #. leap/libqt5-qtwebview/libqt5-qtwebview-private-headers-devel/summary
-#, fuzzy
-#| msgid "Non-ABI stable experimental API for the Qt5 Webkit library"
 msgid "Non-ABI stable experimental API for Qt5's Webview library"
-msgstr "Qt5 Webkit ライブラリ向け非 ABI 安定実験版 API"
+msgstr "Qt5 の Webview ライブラリ向け非 ABI 安定実験版 API"
 
 #. tumbleweed/libqt5-qtwebview/libqt5-qtwebview-private-headers-devel/description
 #. leap/libqt5-qtwebview/libqt5-qtwebview-private-headers-devel/description
-#, fuzzy
-#| msgid ""
-#| "This package provides private headers of libqt5-qtwebkit that are "
-#| "normally not used by application development and that do not have any ABI "
-#| "or API guarantees. The packages that build against these have to require "
-#| "the exact Qt version."
 msgid ""
 "This package provides private headers of libqt5-qtwebview that are normally "
 "not used by application development and that do not have any ABI or API "
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
-"このパッケージには libqt5-qtwebkit のプライベートヘッダが含まれています。これ"
-"らは通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保"
-"証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
+"このパッケージには libqt5-qtwebview "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtxmlpatterns/libqt5-qtxmlpatterns-private-headers-devel/summary
 #. leap/libqt5-qtxmlpatterns/libqt5-qtxmlpatterns-private-headers-devel/summary
