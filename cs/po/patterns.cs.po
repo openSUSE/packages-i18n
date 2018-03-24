@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2018-03-21 10:09+0000\n"
-"PO-Revision-Date: 2018-03-21 15:02+0000\n"
-"Last-Translator: Vojtech Zeisek <Vojtech.Zeisek@opensuse.org>\n"
+"PO-Revision-Date: 2018-03-24 12:01+0000\n"
+"Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n"
 "/patterns-master/cs/>\n"
 "Language: cs\n"
@@ -86,7 +86,7 @@ msgstr ""
 #. tumbleweed/patterns-base/patterns-base-basesystem/summary
 #. leap/patterns-base/patterns-base-basesystem/summary
 msgid "Base System (alias pattern for base)"
-msgstr ""
+msgstr "Základní systém (vzor aliasu pro základ)"
 
 # 22756 AttribValues/label
 #. tumbleweed/patterns-base/patterns-base-console/summary
@@ -132,13 +132,16 @@ msgstr ""
 
 #. tumbleweed/patterns-base/patterns-base-readonly_root_tools/summary
 #. leap/patterns-base/patterns-base-readonly_root_tools/summary
+#, fuzzy
 msgid "Read-Only Root Filesystem Tools"
-msgstr ""
+msgstr "Nástroje kořenového systému souborů Read-Only"
 
 #. tumbleweed/patterns-base/patterns-base-readonly_root_tools/description
 #. leap/patterns-base/patterns-base-readonly_root_tools/description
 msgid "Tools & Update Stack for systems with a read-only root filesystem."
 msgstr ""
+"Zásobník nástrojů a aktualizací pro systémy s takovým systémem souborů, kde "
+"nelze psát do kořenové složky."
 
 # 55598 AttribValues/label
 #. tumbleweed/patterns-base/patterns-base-sw_management/summary
@@ -1224,7 +1227,7 @@ msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
 msgid "Packages needed to run openSUSE Kubic on real hardware"
-msgstr ""
+msgstr "Balíčky nutné k běhu openSUSE Kubic na reálném hardwaru"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
 msgid ""
@@ -1239,16 +1242,12 @@ msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
 msgstr "Balíčky potřebné pro podporu IMA/EVM na openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable IMA/EVM on SUSE CaaS Platform "
 "or openSUSE Kubic product."
 msgstr ""
-"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
-"produktu openSUSE Kubic."
+"Balíčky požadované k zapnutí IMA/EVM na platformě SUSE CaaS nebo v produktu "
+"openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE Kubic"
@@ -1263,43 +1262,34 @@ msgstr ""
 "produktu openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-selinux/summary
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Packages needed to enable SELinux on openSUSE Kubic"
-msgstr "Balíčky pouze pro DVD s openSUSE Kubic"
+msgstr "Balíčky potřebné k zapnutí SELinux na openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-selinux/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable SELinux on SUSE CaaS Platform "
 "or openSUSE Kubic product."
 msgstr ""
-"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
-"produktu openSUSE Kubic."
+"Balíčky nutné k zapnutí SELinux na platformě SUSE CaaS nebo v produktu "
+"openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
 msgid "Packages needed to let openSUSE Kubic act as LDAP client"
-msgstr ""
+msgstr "Balíčky potřebné, aby se openSUSE Kubic stal klientem LDAP"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable LDAP client support via sssd "
 "on SUSE CaaS Platform or openSUSE Kubic product."
 msgstr ""
-"Jsou to přídavné balíčky, které by měly běžet na platformě SUSE CaaS nebo "
-"produktu openSUSE Kubic."
+"Balíčky, které jsou požadovány k zapnutí klientské podpory LDAP na platformě "
+"SUSE CaaS nebo v produktu openSUSE Kubic."
 
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
 #. leap/patterns-hpc/patterns-hpc-compute_node/summary
+#, fuzzy
 msgid "HPC compute node"
-msgstr ""
+msgstr "Výpočetní uzel HPC"
 
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
@@ -1309,11 +1299,15 @@ msgid ""
 "node *must* be installed in a automatic manner. A basset of numerical "
 "libraries should also be installed."
 msgstr ""
+"Výpočetní uzel obsahuje minimální software a zpracovává hlavně simulační "
+"programy. Služby tohoto uzlu lze omezit na naprosté minimum a uzel *musí* "
+"být instalován automaticky. Má být též instalována základní sada numerických "
+"knihoven."
 
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/summary
 #. leap/patterns-hpc/patterns-hpc-development_node/summary
 msgid "Packages needed to be able to develop HPC Apps"
-msgstr ""
+msgstr "Balíčky nutné pro vývoj aplikací pro HPC"
 
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
 #. leap/patterns-hpc/patterns-hpc-development_node/description
