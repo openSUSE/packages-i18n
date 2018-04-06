@@ -32,6 +32,7 @@ import os
 import re
 import zlib
 from lxml import etree as xml
+from urllib.parse import unquote
 
 
 REPOMD_NAMESPACES = {'md': "http://linux.duke.edu/metadata/common",
@@ -79,6 +80,7 @@ def readMetadata(data):
     summary_xpath = xml.XPath('string(./md:summary/text())', namespaces=REPOMD_NAMESPACES)
     description_xpath = xml.XPath('string(./md:description/text())', namespaces=REPOMD_NAMESPACES)
     sourcepkg_xpath = xml.XPath('string(./md:format/rpm:sourcerpm/text())', namespaces=REPOMD_NAMESPACES)
+    category_xpath = xml.XPath('string(./md:format/rpm:provides/rpm:entry[@name="pattern-category()"]/@ver)', namespaces=REPOMD_NAMESPACES)
 
     for package in package_iter(tree):
         name = name_xpath(package)
@@ -87,6 +89,7 @@ def readMetadata(data):
         sourcepkg = '-'.join(sourcepkg_xpath(package).split("-")[:-2])
         packages[name] = {'summary': summary_xpath(package),
                           'description': description_xpath(package),
+                          'category': unquote(category_xpath(package)),
                           'sourcepkg': sourcepkg}
     return packages
 
@@ -98,16 +101,23 @@ def gettextForPackage(packagename, package, distro):
     comment = "{}/{}".format(distro, packagename)
     ret = ""
     if package['summary'] != "":
-        ret += """#. {comment}/summary
+        ret += """\n#. {comment}/summary
 msgid {summary}
 msgstr ""
 """.format(comment=comment, summary=gettextQuote(package['summary']))
 
     if package['description'] != "":
-        ret += """#. {comment}/description
+        ret += """\n#. {comment}/description
 msgid {description}
 msgstr ""
 """.format(comment=comment, description=gettextQuote(package['description']))
+
+    if package['category'] != "":
+        ret += """\n#. {comment}/category
+msgid {category}
+msgstr ""
+""".format(comment=comment, category=gettextQuote(package['category']))
+
 
     return ret
 
@@ -136,7 +146,8 @@ msgstr ""
 "POT-Creation-Date: {}\\n"
 "MIME-Version: 1.0\\n"
 "Content-Type: text/plain; charset=UTF-8\\n"
-"Content-Transfer-Encoding: 8bit\\n"\n\n""".format(gettextDateTimeUTC(timestamp))
+"Content-Transfer-Encoding: 8bit\\n"
+""".format(gettextDateTimeUTC(timestamp))
 
     print(header)
 
