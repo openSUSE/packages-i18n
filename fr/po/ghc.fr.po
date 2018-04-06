@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-03-21 10:09+0000\n"
+"POT-Creation-Date: 2018-04-06 09:05+0000\n"
 "PO-Revision-Date: 2016-12-13 23:38+0100\n"
 "Last-Translator: Antoine Belvire <antoine.belvire@laposte.net>\n"
 "Language-Team: français <opensuse-fr@opensuse.org>\n"
@@ -9993,8 +9993,9 @@ msgid "This package provides the Haskell bencode library development files."
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-bento/summary
+#. leap/ghc-bento/summary
 #, fuzzy
-msgid "? Manage stateful components"
+msgid "🍱 Manage stateful components"
 msgstr "Paquet de base de kdepim"
 
 #. tumbleweed/ghc-bento/description
@@ -10297,6 +10298,7 @@ msgid "Binary and exponential searches"
 msgstr ""
 
 #. tumbleweed/ghc-binary-search/description
+#. leap/ghc-binary-search/description
 msgid ""
 "__Introduction__\n"
 "\n"
@@ -10308,7 +10310,7 @@ msgid ""
 "> pred :: Eq b => a -> b > pred :: (Eq b, Monad m) => a -> m b\n"
 "\n"
 "The predicates must satisfy that the domain range for any codomain value is "
-"continuous; that is, '?x?y?z. pred x == pred z ? pred y == pred x' .\n"
+"continuous; that is, '∀x≦y≦z. pred x == pred z ⇒ pred y == pred x' .\n"
 "\n"
 "For example, we can address the problem of finding the boundary of an upward-"
 "closed set of integers, using a combination of exponential and binary "
@@ -17269,9 +17271,10 @@ msgid "Systematic testing for Haskell concurrency"
 msgstr ""
 
 #. tumbleweed/ghc-dejafu/description
+#. leap/ghc-dejafu/description
 msgid ""
 "/[Déjà Fu is] A martial art in which the user's limbs move in time as well "
-"as space, [?] It is best described as \"the feeling that you have been "
+"as space, […] It is best described as \"the feeling that you have been "
 "kicked in the head this way before\"/ -- Terry Pratchett, Thief of Time\n"
 "\n"
 "Concurrency is nice, deadlocks and race conditions not so much. The 'Par' "
@@ -19689,6 +19692,7 @@ msgid "A monad for expressing SAT or QSAT problems using observable sharing"
 msgstr ""
 
 #. tumbleweed/ghc-ersatz/description
+#. leap/ghc-ersatz/description
 msgid ""
 "A monad for expressing SAT or QSAT problems using observable sharing.\n"
 "\n"
@@ -19709,15 +19713,15 @@ msgid ""
 "\n"
 "'ersatz-sudoku'\n"
 "\n"
-"> % time ersatz-sudoku > Problem: > ????????????????????????? > ? 5 3 ? "
-"7 ? ? > ? 6 ? 1 9 5 ? ? > ? 9 8 ? ? 6 ? > ????????????????????????? > ? 8 ? "
-"6 ? 3 ? > ? 4 ? 8 3 ? 1 ? > ? 7 ? 2 ? 6 ? > ????????????????????????? > ? "
-"6 ? ? 2 8 ? > ? ? 4 1 9 ? 5 ? > ? ? 8 ? 7 9 ? > ????????????????????????? > "
-"Solution: > ????????????????????????? > ? 5 3 4 ? 6 7 8 ? 9 1 2 ? > ? 6 7 "
-"2 ? 1 9 5 ? 3 4 8 ? > ? 1 9 8 ? 3 4 2 ? 5 6 7 ? > ????????????????????????? "
-"> ? 8 5 9 ? 7 6 1 ? 4 2 3 ? > ? 4 2 6 ? 8 5 3 ? 7 9 1 ? > ? 7 1 3 ? 9 2 4 ? "
-"8 5 6 ? > ????????????????????????? > ? 9 6 1 ? 5 3 7 ? 2 8 4 ? > ? 2 8 7 ? "
-"4 1 9 ? 6 3 5 ? > ? 3 4 5 ? 2 8 6 ? 1 7 9 ? > ????????????????????????? > "
+"> % time ersatz-sudoku > Problem: > ┌───────┬───────┬───────┐ > │ 5 3 │ 7 │ "
+"│ > │ 6 │ 1 9 5 │ │ > │ 9 8 │ │ 6 │ > ├───────┼───────┼───────┤ > │ 8 │ 6 │ "
+"3 │ > │ 4 │ 8 3 │ 1 │ > │ 7 │ 2 │ 6 │ > ├───────┼───────┼───────┤ > │ 6 │ │ "
+"2 8 │ > │ │ 4 1 9 │ 5 │ > │ │ 8 │ 7 9 │ > └───────┴───────┴───────┘ > "
+"Solution: > ┌───────┬───────┬───────┐ > │ 5 3 4 │ 6 7 8 │ 9 1 2 │ > │ 6 7 2 "
+"│ 1 9 5 │ 3 4 8 │ > │ 1 9 8 │ 3 4 2 │ 5 6 7 │ > ├───────┼───────┼───────┤ > "
+"│ 8 5 9 │ 7 6 1 │ 4 2 3 │ > │ 4 2 6 │ 8 5 3 │ 7 9 1 │ > │ 7 1 3 │ 9 2 4 │ 8 "
+"5 6 │ > ├───────┼───────┼───────┤ > │ 9 6 1 │ 5 3 7 │ 2 8 4 │ > │ 2 8 7 │ 4 "
+"1 9 │ 6 3 5 │ > │ 3 4 5 │ 2 8 6 │ 1 7 9 │ > └───────┴───────┴───────┘ > "
 "ersatz-sudoku 1,13s user 0,04s system 99% cpu 1,179 total\n"
 "\n"
 "'ersatz-regexp-grid'\n"
@@ -19799,9 +19803,10 @@ msgid "Client for etcd, a highly-availability key value store"
 msgstr ""
 
 #. tumbleweed/ghc-etcd/description
+#. leap/ghc-etcd/description
 msgid ""
 "etcd is a distributed key value store that provides a reliable way to store "
-"data across a cluster of machines. It?s open-source and available on GitHub. "
+"data across a cluster of machines. It’s open-source and available on GitHub. "
 "etcd gracefully handles leader elections during network partitions and will "
 "tolerate machine failure, including the leader.\n"
 "\n"
@@ -27379,12 +27384,13 @@ msgid "Library exposing some functionality of Haddock"
 msgstr ""
 
 #. tumbleweed/ghc-haddock-library/description
+#. leap/ghc-haddock-library/description
 msgid ""
 "Haddock is a documentation-generation tool for Haskell libraries. These "
 "modules expose some functionality of it without pulling in the GHC "
 "dependency. Please note that the API is likely to change so specify upper "
 "bounds in your project if you can't release often. For interacting with "
-"Haddock itself, see the ?haddock? package."
+"Haddock itself, see the ‘haddock’ package."
 msgstr ""
 
 #. tumbleweed/ghc-haddock-library/ghc-haddock-library-devel/summary
@@ -28239,21 +28245,25 @@ msgid ""
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-haskell-tools-cli/summary
+#. leap/ghc-haskell-tools-cli/summary
 msgid "Command-line frontend for Haskell-tools Refact"
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-cli/description
+#. leap/ghc-haskell-tools-cli/description
 msgid ""
 "Command-line frontend for Haskell-tools Refact. Not meant as a final "
 "product, only for demonstration purposes."
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-cli/ghc-haskell-tools-cli-devel/summary
+#. leap/ghc-haskell-tools-cli/ghc-haskell-tools-cli-devel/summary
 #, fuzzy
 msgid "Haskell haskell-tools-cli library development files"
 msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 
 #. tumbleweed/ghc-haskell-tools-cli/ghc-haskell-tools-cli-devel/description
+#. leap/ghc-haskell-tools-cli/ghc-haskell-tools-cli-devel/description
 #, fuzzy
 msgid ""
 "This package provides the Haskell haskell-tools-cli library development "
@@ -28261,21 +28271,25 @@ msgid ""
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-haskell-tools-daemon/summary
+#. leap/ghc-haskell-tools-daemon/summary
 msgid ""
 "Background process for Haskell-tools refactor that editors can connect to"
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-daemon/description
+#. leap/ghc-haskell-tools-daemon/description
 msgid ""
 "Background process for Haskell-tools refactor that editors can connect to."
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-daemon/ghc-haskell-tools-daemon-devel/summary
+#. leap/ghc-haskell-tools-daemon/ghc-haskell-tools-daemon-devel/summary
 #, fuzzy
 msgid "Haskell haskell-tools-daemon library development files"
 msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 
 #. tumbleweed/ghc-haskell-tools-daemon/ghc-haskell-tools-daemon-devel/description
+#. leap/ghc-haskell-tools-daemon/ghc-haskell-tools-daemon-devel/description
 #, fuzzy
 msgid ""
 "This package provides the Haskell haskell-tools-daemon library development "
@@ -28283,19 +28297,23 @@ msgid ""
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-haskell-tools-debug/summary
+#. leap/ghc-haskell-tools-debug/summary
 msgid "Debugging Tools for Haskell-tools"
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-debug/description
+#. leap/ghc-haskell-tools-debug/description
 msgid "Debugging Tools for Haskell-tools."
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-debug/ghc-haskell-tools-debug-devel/summary
+#. leap/ghc-haskell-tools-debug/ghc-haskell-tools-debug-devel/summary
 #, fuzzy
 msgid "Haskell haskell-tools-debug library development files"
 msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 
 #. tumbleweed/ghc-haskell-tools-debug/ghc-haskell-tools-debug-devel/description
+#. leap/ghc-haskell-tools-debug/ghc-haskell-tools-debug-devel/description
 #, fuzzy
 msgid ""
 "This package provides the Haskell haskell-tools-debug library development "
@@ -28303,10 +28321,12 @@ msgid ""
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-haskell-tools-demo/summary
+#. leap/ghc-haskell-tools-demo/summary
 msgid "A web-based demo for Haskell-tools Refactor"
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-demo/description
+#. leap/ghc-haskell-tools-demo/description
 msgid ""
 "Allows websocket clients to connect and performs refactorings on demand. The "
 "clients maintain a continous connection with the server, sending changes in "
@@ -28315,11 +28335,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ghc-haskell-tools-demo/ghc-haskell-tools-demo-devel/summary
+#. leap/ghc-haskell-tools-demo/ghc-haskell-tools-demo-devel/summary
 #, fuzzy
 msgid "Haskell haskell-tools-demo library development files"
 msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 
 #. tumbleweed/ghc-haskell-tools-demo/ghc-haskell-tools-demo-devel/description
+#. leap/ghc-haskell-tools-demo/ghc-haskell-tools-demo-devel/description
 #, fuzzy
 msgid ""
 "This package provides the Haskell haskell-tools-demo library development "
@@ -28413,10 +28435,12 @@ msgid ""
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-hasql/summary
+#. leap/ghc-hasql/summary
 msgid "An efficient PostgreSQL driver and a flexible mapping API"
 msgstr ""
 
 #. tumbleweed/ghc-hasql/description
+#. leap/ghc-hasql/description
 msgid ""
 "This package is the root of the \"hasql\" ecosystem.\n"
 "\n"
@@ -28425,11 +28449,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ghc-hasql/ghc-hasql-devel/summary
+#. leap/ghc-hasql/ghc-hasql-devel/summary
 #, fuzzy
 msgid "Haskell hasql library development files"
 msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 
 #. tumbleweed/ghc-hasql/ghc-hasql-devel/description
+#. leap/ghc-hasql/ghc-hasql-devel/description
 #, fuzzy
 msgid "This package provides the Haskell hasql library development files."
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
@@ -29232,11 +29258,13 @@ msgid "This package provides the Haskell hint library development files."
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-hip/summary
+#. leap/ghc-hip/summary
 #, fuzzy
 msgid "Haskell Image Processing (HIP) Library"
 msgstr "Utilitaire pour caméra digitale"
 
 #. tumbleweed/ghc-hip/description
+#. leap/ghc-hip/description
 msgid ""
 "Haskell Image Processing (HIP) Library provides an easy to use interface "
 "with a whole variaty of image manipulation capabilities.\n"
@@ -29255,11 +29283,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ghc-hip/ghc-hip-devel/summary
+#. leap/ghc-hip/ghc-hip-devel/summary
 #, fuzzy
 msgid "Haskell hip library development files"
 msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 
 #. tumbleweed/ghc-hip/ghc-hip-devel/description
+#. leap/ghc-hip/ghc-hip-devel/description
 #, fuzzy
 msgid "This package provides the Haskell hip library development files."
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
@@ -30078,6 +30108,30 @@ msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 #. leap/ghc-hpqtypes/ghc-hpqtypes-devel/description
 #, fuzzy
 msgid "This package provides the Haskell hpqtypes library development files."
+msgstr "Ce paquet contient les fichiers de développement du module kdepim."
+
+#. tumbleweed/ghc-hquantlib/summary
+#. leap/ghc-hquantlib/summary
+msgid "HQuantLib is a port of essencial parts of QuantLib to Haskell"
+msgstr ""
+
+#. tumbleweed/ghc-hquantlib/description
+#. leap/ghc-hquantlib/description
+msgid ""
+"HQuantLib is intended to be a functional style port of QuantLib (http://"
+"quantlib.org)."
+msgstr ""
+
+#. tumbleweed/ghc-hquantlib/ghc-hquantlib-devel/summary
+#. leap/ghc-hquantlib/ghc-hquantlib-devel/summary
+#, fuzzy
+msgid "Haskell hquantlib library development files"
+msgstr "Bibliothèque scientifique GNU - fichiers de développement"
+
+#. tumbleweed/ghc-hquantlib/ghc-hquantlib-devel/description
+#. leap/ghc-hquantlib/ghc-hquantlib-devel/description
+#, fuzzy
+msgid "This package provides the Haskell hquantlib library development files."
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-hreader/summary
@@ -32346,14 +32400,15 @@ msgid "Indentation sensitive parsing combinators for Parsec"
 msgstr ""
 
 #. tumbleweed/ghc-indentation-parsec/description
+#. leap/ghc-indentation-parsec/description
 msgid ""
 "Indentation sensitive parsing combinators for Parsec\n"
 "\n"
 "See\n"
 "\n"
-"__Michael D. Adams and Ömer S. A?acan__. Indentation-sensitive parsing for "
+"__Michael D. Adams and Ömer S. Ağacan__. Indentation-sensitive parsing for "
 "Parsec. In /Proceedings of the 2014 ACM SIGPLAN Symposium on Haskell/, "
-"Haskell ?14, pages 121?132. ACM, New York, NY, USA, September 2014. ISBN "
+"Haskell ’14, pages 121–132. ACM, New York, NY, USA, September 2014. ISBN "
 "978-1-4503-3041-1. <http://dx.doi.org/10.1145/2633357.2633369 "
 "doi:10.1145/2633357.2633369>.\n"
 "\n"
@@ -35008,8 +35063,9 @@ msgid "Haskell 98 Lens Families"
 msgstr ""
 
 #. tumbleweed/ghc-lens-family-core/description
+#. leap/ghc-lens-family-core/description
 msgid ""
-"This package provides first class(?) functional references. In addition to "
+"This package provides first class(†) functional references. In addition to "
 "the usual operations of getting, setting and composition, plus integration "
 "with the state monad, lens families provide some unique features: \n"
 "* Polymorphic updating \n"
@@ -35018,7 +35074,7 @@ msgid ""
 "* Cast \"toList\" functions to read-only traversals \n"
 "* Cast semantic editor combinators to modify-only traversals.\n"
 "\n"
-"(?) For optimal first-class support use the 'lens-family' package with rank "
+"(†) For optimal first-class support use the 'lens-family' package with rank "
 "2 / rank N polymorphism. \"Lens.Family.Clone\" allows for first-class "
 "support of lenses and traversals for those who require Haskell 98."
 msgstr ""
@@ -37168,16 +37224,17 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ghc-microlens/description
+#. leap/ghc-microlens/description
 msgid ""
 "NOTE: If you're writing an app, you probably want <http://hackage.haskell."
-"org/package/microlens-platform microlens-platform> ? it has the most "
+"org/package/microlens-platform microlens-platform> – it has the most "
 "features. <http://hackage.haskell.org/package/microlens microlens> is "
 "intended more for library writers who want a tiny lens library (after all, "
 "lenses are pretty useful for everything, not just for updating records!).\n"
 "\n"
 "This library is an extract from <http://hackage.haskell.org/package/lens "
-"lens> (with no dependencies). It's not a toy lenses library, unsuitable for ?"
-"real world?, but merely a small one. It is compatible with lens, and should "
+"lens> (with no dependencies). It's not a toy lenses library, unsuitable for "
+"“real world”, but merely a small one. It is compatible with lens, and should "
 "have same performance. It also has better documentation.\n"
 "\n"
 "There's a longer readme <https://github.com/aelve/microlens#readme on "
@@ -37195,17 +37252,16 @@ msgid ""
 "\n"
 "However, don't use this library if: \n"
 "* You need 'Iso's, 'Prism's, indexed traversals, or actually anything else "
-"which isn't defined here (tho some indexed functions are available "
-"elsewhere ? containers and vector provide them for their types, and <http://"
-"hackage.haskell.org/package/ilist ilist> provides indexed functions for "
-"lists). \n"
+"which isn't defined here (tho some indexed functions are available elsewhere "
+"– containers and vector provide them for their types, and <http://hackage."
+"haskell.org/package/ilist ilist> provides indexed functions for lists). \n"
 "* You want a library with a clean, understandable implementation (in which "
 "case you're looking for <http://hackage.haskell.org/package/lens-simple lens-"
 "simple>).\n"
 "\n"
 "As already mentioned, if you're writing an application which uses lenses "
 "more extensively, look at <http://hackage.haskell.org/package/microlens-"
-"platform microlens-platform> ? it combines features of most other microlens "
+"platform microlens-platform> – it combines features of most other microlens "
 "packages (<http://hackage.haskell.org/package/microlens-mtl microlens-mtl>, "
 "<http://hackage.haskell.org/package/microlens-th microlens-th>, <http://"
 "hackage.haskell.org/package/microlens-ghc microlens-ghc>).\n"
@@ -37299,9 +37355,10 @@ msgid "Microlens + array, bytestring, containers, transformers"
 msgstr ""
 
 #. tumbleweed/ghc-microlens-ghc/description
+#. leap/ghc-microlens-ghc/description
 msgid ""
 "Use this package instead of <http://hackage.haskell.org/package/microlens "
-"microlens> if you don't mind depending on all dependencies here ? 'Lens."
+"microlens> if you don't mind depending on all dependencies here – 'Lens."
 "Micro.GHC' reexports everything from 'Lens.Micro' and additionally provides "
 "orphan instances of microlens classes for packages coming with GHC (<http://"
 "hackage.haskell.org/package/array array>, <http://hackage.haskell.org/"
@@ -41215,6 +41272,7 @@ msgid "Implementation of difficult monads made easy with operational semantics"
 msgstr ""
 
 #. tumbleweed/ghc-operational/description
+#. leap/ghc-operational/description
 msgid ""
 "This library makes it easy to implement monads with tricky control flow.\n"
 "\n"
@@ -41227,9 +41285,9 @@ msgid ""
 "detailed introduction and features.\n"
 "\n"
 "Related packages: \n"
-"* MonadPrompt ? <http://hackage.haskell.org/package/MonadPrompt> \n"
-"* free ? <http://hackage.haskell.org/package/free> \n"
-"* free-operational ? <http://hackage.haskell.org/package/free-operational>."
+"* MonadPrompt — <http://hackage.haskell.org/package/MonadPrompt> \n"
+"* free — <http://hackage.haskell.org/package/free> \n"
+"* free-operational — <http://hackage.haskell.org/package/free-operational>."
 msgstr ""
 
 #. tumbleweed/ghc-operational-class/summary
@@ -41854,6 +41912,7 @@ msgid "Parsing combinators"
 msgstr ""
 
 #. tumbleweed/ghc-parsers/description
+#. leap/ghc-parsers/description
 msgid ""
 "This library provides convenient combinators for working with and building "
 "parsing combinator libraries.\n"
@@ -41861,7 +41920,7 @@ msgid ""
 "Given a few simple instances, e.g. for the class 'Text.Parser.Combinators."
 "Parsing' in \"Text.Parser.Combinators.Parsing\" you get access to a large "
 "number of canned definitions. Instances exist for the parsers provided by "
-"'parsec', 'attoparsec' and base?s \"Text.Read\"."
+"'parsec', 'attoparsec' and base’s \"Text.Read\"."
 msgstr ""
 
 #. tumbleweed/ghc-parsers/ghc-parsers-devel/summary
@@ -42035,11 +42094,13 @@ msgid "This package provides the Haskell path-extra library development files."
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-path-io/summary
-msgid "Interface to ?directory? package for users of ?path?"
+#. leap/ghc-path-io/summary
+msgid "Interface to ‘directory’ package for users of ‘path’"
 msgstr ""
 
 #. tumbleweed/ghc-path-io/description
-msgid "Interface to ?directory? package for users of ?path?."
+#. leap/ghc-path-io/description
+msgid "Interface to ‘directory’ package for users of ‘path’."
 msgstr ""
 
 #. tumbleweed/ghc-path-io/ghc-path-io-devel/summary
@@ -43986,12 +44047,14 @@ msgid ""
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
 
 #. tumbleweed/ghc-postgresql-typed/summary
+#. leap/ghc-postgresql-typed/summary
 msgid ""
 "PostgreSQL interface with compile-time SQL type checking, optional HDBC "
 "backend"
 msgstr ""
 
 #. tumbleweed/ghc-postgresql-typed/description
+#. leap/ghc-postgresql-typed/description
 msgid ""
 "Automatically type-check SQL statements at compile time. Uses Template "
 "Haskell and the raw PostgreSQL protocol to describe SQL statements at "
@@ -44010,11 +44073,13 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/ghc-postgresql-typed/ghc-postgresql-typed-devel/summary
+#. leap/ghc-postgresql-typed/ghc-postgresql-typed-devel/summary
 #, fuzzy
 msgid "Haskell postgresql-typed library development files"
 msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 
 #. tumbleweed/ghc-postgresql-typed/ghc-postgresql-typed-devel/description
+#. leap/ghc-postgresql-typed/ghc-postgresql-typed-devel/description
 #, fuzzy
 msgid ""
 "This package provides the Haskell postgresql-typed library development files."
@@ -47750,6 +47815,32 @@ msgstr "Bibliothèque scientifique GNU - fichiers de développement"
 #, fuzzy
 msgid "This package provides the Haskell rot13 library development files."
 msgstr "Ce paquet contient les fichiers de développement du module kdepim."
+
+#. tumbleweed/ghc-rpm-macros/summary
+#. leap/ghc-rpm-macros/summary
+#, fuzzy
+msgid "RPM Macros for building packages for GHC"
+msgstr "Paquet de base kdeartwork"
+
+#. tumbleweed/ghc-rpm-macros/description
+#. leap/ghc-rpm-macros/description
+msgid ""
+"A set of macros for building GHC packages following the openSUSE Haskell "
+"Guidelines.  ghc needs to be installed in order to make use of these macros."
+msgstr ""
+
+#. tumbleweed/ghc-rpm-macros/ghc-rpm-macros-extra/summary
+#. leap/ghc-rpm-macros/ghc-rpm-macros-extra/summary
+#, fuzzy
+msgid "Extra RPM macros for building Haskell packages with several libs"
+msgstr "Paquet de base kdeartwork"
+
+#. tumbleweed/ghc-rpm-macros/ghc-rpm-macros-extra/description
+#. leap/ghc-rpm-macros/ghc-rpm-macros-extra/description
+msgid ""
+"Extra macros used for subpackaging of Haskell libraries, for example in ghc "
+"and haskell-platform."
+msgstr ""
 
 #. tumbleweed/ghc-rss-conduit/summary
 #. leap/ghc-rss-conduit/summary
@@ -54942,12 +55033,13 @@ msgid "High-quality splittable pseudorandom number generator"
 msgstr ""
 
 #. tumbleweed/ghc-tf-random/description
+#. leap/ghc-tf-random/description
 msgid ""
 "This package contains an implementation of a high-quality splittable "
 "pseudorandom number generator. The generator is based on a cryptographic "
 "hash function built on top of the ThreeFish block cipher. See the paper /"
 "Splittable Pseudorandom Number Generators Using Cryptographic Hashing/ by "
-"Claessen, Pa?ka for details and the rationale of the design.\n"
+"Claessen, Pałka for details and the rationale of the design.\n"
 "\n"
 "The package provides the following: \n"
 "* A splittable PRNG that implements the standard 'System.Random.RandomGen' "
@@ -55255,12 +55347,13 @@ msgid "Provides a way to persist data from compile-time to runtime"
 msgstr ""
 
 #. tumbleweed/ghc-th-to-exp/description
+#. leap/ghc-th-to-exp/description
 msgid ""
 "This package provides a way to persist data from compile-time to runtime by "
 "producing Template Haskell expressions that evaluate to particular values. "
 "For example, if you have a value 'Just 1', then 'toExp (Just 1)' will "
 "produce the /expression/ '[e| Just 1 |]', which can be used in a splice. For "
-"a more direct example, here?s what that looks like without the quasiquote "
+"a more direct example, here’s what that looks like without the quasiquote "
 "notation:\n"
 "\n"
 ">>> toExp (Just 1) AppE (ConE GHC.Base.Just) (LitE (IntegerL 1))\n"
@@ -56183,9 +56276,10 @@ msgid "Generic applicative traversals"
 msgstr ""
 
 #. tumbleweed/ghc-traverse-with-class/description
+#. leap/ghc-traverse-with-class/description
 msgid ""
 "This is a generic programming library in the spirit of \"Scrap your "
-"boilerplate with class\", but with several improvements ? most notably, it's "
+"boilerplate with class\", but with several improvements — most notably, it's "
 "based on the 'gtraverse' function instead of 'gfoldl'. 'gtraverse' is "
 "equivalent in power to 'gfoldl', but lets you more easily write non-standard "
 "views of the data type."
@@ -56233,14 +56327,15 @@ msgid "Render trees as foldable HTML and Unicode art"
 msgstr ""
 
 #. tumbleweed/ghc-tree-view/description
+#. leap/ghc-tree-view/description
 msgid ""
 "Render trees as foldable HTML and Unicode art\n"
 "\n"
 "Example:\n"
 "\n"
 "> *Data.Tree.View> drawTree $ Node \"Add\" [Node \"Sub\" [Node \"3\" [], "
-"Node \"Mul\" [Node \"1\" [], Node \"2\" []]], Node \"4\" []] > Add > ??Sub "
-"> ? ??3 > ? ??Mul > ? ??1 > ? ??2 > ??4."
+"Node \"Mul\" [Node \"1\" [], Node \"2\" []]], Node \"4\" []] > Add > ├╴Sub > "
+"│ ├╴3 > │ └╴Mul > │ ├╴1 > │ └╴2 > └╴4."
 msgstr ""
 
 #. tumbleweed/ghc-tree-view/ghc-tree-view-devel/summary
@@ -56309,12 +56404,13 @@ msgid "Template Haskell hack to violate module abstractions"
 msgstr ""
 
 #. tumbleweed/ghc-true-name/description
+#. leap/ghc-true-name/description
 msgid ""
 "<http://tvtropes.org/pmwiki/pmwiki.php/Main/IKnowYourTrueName Knowing a true "
 "name gives one power over its owner>.\n"
 "\n"
-"A Template Haskell hack to get unexported 'Name's?be they types, data "
-"constructors, record fields or class methods?a slightly less unsafe way to "
+"A Template Haskell hack to get unexported 'Name's―be they types, data "
+"constructors, record fields or class methods―a slightly less unsafe way to "
 "violate another module's abstractions than 'unsafeCoerce'.\n"
 "\n"
 "A few <https://github.com/liyang/true-name/blob/master/sanity.hs quick "
@@ -60042,18 +60138,19 @@ msgid "Organized and simple web page scaffold for blaze and lucid"
 msgstr ""
 
 #. tumbleweed/ghc-webpage/description
+#. leap/ghc-webpage/description
 msgid ""
 "This is a general organization scheme for web pages, implemented for Lucid, "
 "and adapted for Blaze-html.\n"
 "\n"
-"> import Web.Page.Lucid > > ?> renderText $ template def \"some content\" > "
-"> ? \"<!DOCTYPE HTML><html><head><title></title><link href > rel=\"icon\"></"
+"> import Web.Page.Lucid > > λ> renderText $ template def \"some content\" > "
+"> ↪ \"<!DOCTYPE HTML><html><head><title></title><link href > rel=\"icon\"></"
 "head><body>some content</body></html>\"\n"
 "\n"
 "overload the particular areas with record syntax and stuff:\n"
 "\n"
-"> ?> let page = def title = \"foo\" > , bodyScripts = script_ [src_ \"jquery."
-"js\"] \"\" > > > ?> template page \"some content\" > > ? \"<!DOCTYPE "
+"> λ> let page = def title = \"foo\" > , bodyScripts = script_ [src_ \"jquery."
+"js\"] \"\" > > > λ> template page \"some content\" > > ↪ \"<!DOCTYPE "
 "HTML><html><head><title>foo</title> > </head><body>some content<script > src="
 "\"jquery.js\"></script></body></html>\" ."
 msgstr ""
@@ -61172,11 +61269,12 @@ msgid "Warm and fuzzy creation of XML documents"
 msgstr "Fournit les traductions au paquet kdebase4-SLED"
 
 #. tumbleweed/ghc-xml-conduit-writer/description
+#. leap/ghc-xml-conduit-writer/description
 msgid ""
-"?It can scarcely be denied that the supreme goal of all theory is to make "
+"“It can scarcely be denied that the supreme goal of all theory is to make "
 "the irreducible basic elements as simple and as few as possible without "
 "having to surrender the adequate representation of a single datum of "
-"experience.? ­? Albert Einstein\n"
+"experience.” ­— Albert Einstein\n"
 "\n"
 "Check out more examples in test/Main.hs and look at the results with\n"
 "--enable-tests."
@@ -62397,6 +62495,7 @@ msgid "Semigroups with absorption"
 msgstr ""
 
 #. tumbleweed/ghc-zero/description
+#. leap/ghc-zero/description
 msgid ""
 "'Monoid' is a 'Semigroup' glued with a neutral element called 'mempty'. In "
 "the same idea, 'Zero' is a 'Semigroup' glued with an absorbing element "
@@ -62404,7 +62503,7 @@ msgid ""
 "\n"
 "Keep in mind that 'Zero' requires 'Semigroup'. If you have 'Semigroup' "
 "defined to work with 'Monoid', you might end up with no way to implement "
-"'Zero'. That?s why the 'Semigroup' instance for 'Maybe' is confusing, "
+"'Zero'. That’s why the 'Semigroup' instance for 'Maybe' is confusing, "
 "because it relies on 'Monoid', and cannot be used with 'Zero'. 'Success' is "
 "the 'Zero' equivalent of 'Maybe' + 'Monoid'."
 msgstr ""
@@ -62617,449 +62716,9 @@ msgid ""
 "you have a '.ghci' file, or else to 'cabal repl')."
 msgstr ""
 
-#. tumbleweed/ghc-rpm-macros/summary
-#. leap/ghc-rpm-macros/summary
 #, fuzzy
-msgid "RPM Macros for building packages for GHC"
-msgstr "Paquet de base kdeartwork"
-
-#. tumbleweed/ghc-rpm-macros/description
-#. leap/ghc-rpm-macros/description
-msgid ""
-"A set of macros for building GHC packages following the openSUSE Haskell "
-"Guidelines.  ghc needs to be installed in order to make use of these macros."
-msgstr ""
-
-#. tumbleweed/ghc-rpm-macros/ghc-rpm-macros-extra/summary
-#. leap/ghc-rpm-macros/ghc-rpm-macros-extra/summary
-#, fuzzy
-msgid "Extra RPM macros for building Haskell packages with several libs"
-msgstr "Paquet de base kdeartwork"
-
-#. tumbleweed/ghc-rpm-macros/ghc-rpm-macros-extra/description
-#. leap/ghc-rpm-macros/ghc-rpm-macros-extra/description
-msgid ""
-"Extra macros used for subpackaging of Haskell libraries, for example in ghc "
-"and haskell-platform."
-msgstr ""
-
-#. tumbleweed/ghc-hquantlib/summary
-#. leap/ghc-hquantlib/summary
-msgid "HQuantLib is a port of essencial parts of QuantLib to Haskell"
-msgstr ""
-
-#. tumbleweed/ghc-hquantlib/description
-#. leap/ghc-hquantlib/description
-msgid ""
-"HQuantLib is intended to be a functional style port of QuantLib (http://"
-"quantlib.org)."
-msgstr ""
-
-#. tumbleweed/ghc-hquantlib/ghc-hquantlib-devel/summary
-#. leap/ghc-hquantlib/ghc-hquantlib-devel/summary
-#, fuzzy
-msgid "Haskell hquantlib library development files"
-msgstr "Bibliothèque scientifique GNU - fichiers de développement"
-
-#. tumbleweed/ghc-hquantlib/ghc-hquantlib-devel/description
-#. leap/ghc-hquantlib/ghc-hquantlib-devel/description
-#, fuzzy
-msgid "This package provides the Haskell hquantlib library development files."
-msgstr "Ce paquet contient les fichiers de développement du module kdepim."
-
-#. leap/ghc-bento/summary
-#, fuzzy
-msgid "🍱 Manage stateful components"
-msgstr "Paquet de base de kdepim"
-
-#. leap/ghc-binary-search/description
-msgid ""
-"__Introduction__\n"
-"\n"
-"This package provides varieties of binary search functions. c.f. \"Numeric."
-"Search\" for the examples.\n"
-"\n"
-"These search function can search for pure and monadic predicates, of type:\n"
-"\n"
-"> pred :: Eq b => a -> b > pred :: (Eq b, Monad m) => a -> m b\n"
-"\n"
-"The predicates must satisfy that the domain range for any codomain value is "
-"continuous; that is, '∀x≦y≦z. pred x == pred z ⇒ pred y == pred x' .\n"
-"\n"
-"For example, we can address the problem of finding the boundary of an upward-"
-"closed set of integers, using a combination of exponential and binary "
-"searches.\n"
-"\n"
-"Variants are provided for searching within bounded and unbounded intervals "
-"of both 'Integer' and bounded integral types.\n"
-"\n"
-"The package was created by Ross Paterson, and extended by Takayuki "
-"Muranushi, to be used together with SMT solvers.\n"
-"\n"
-"__The Module Structure__ \n"
-"* \"Numeric.Search\" provides the generic search combinator, to search for "
-"pure and monadic predicates. * \"Numeric.Search.Bounded\" , \"Numeric.Search."
-"Integer\" , \"Numeric.Search.Range\" provides the various specialized "
-"searchers, which means less number of function arguments, and easier to "
-"use.\n"
-"\n"
-"<<https://travis-ci.org/nushio3/binary-search.svg?branch=master>>."
-msgstr ""
-
-#. leap/ghc-dejafu/description
-msgid ""
-"/[Déjà Fu is] A martial art in which the user's limbs move in time as well "
-"as space, […] It is best described as \"the feeling that you have been "
-"kicked in the head this way before\"/ -- Terry Pratchett, Thief of Time\n"
-"\n"
-"Concurrency is nice, deadlocks and race conditions not so much. The 'Par' "
-"monad family, as defined in <https://hackage.haskell.org/package/abstract-"
-"par/docs/Control-Monad-Par-Class.html abstract-par> provides deterministic "
-"parallelism, but sometimes we can tolerate a bit of nondeterminism.\n"
-"\n"
-"This package builds on the <https://hackage.haskell.org/package/concurrency "
-"concurrency> package by enabling you to systematically and deterministically "
-"test your concurrent programs."
-msgstr ""
-
-#. leap/ghc-ersatz/description
-msgid ""
-"A monad for expressing SAT or QSAT problems using observable sharing.\n"
-"\n"
-"For example, we can express a full-adder with:\n"
-"\n"
-"> full_adder :: Bit -> Bit -> Bit -> (Bit, Bit) > full_adder a b cin = (s2, "
-"c1 || c2) > where (s1,c1) = half_adder a b > (s2,c2) = half_adder s1 cin\n"
-"\n"
-"> half_adder :: Bit -> Bit -> (Bit, Bit) > half_adder a b = (a `xor` b, a && "
-"b)\n"
-"\n"
-"/Longer Examples/\n"
-"\n"
-"Included are a couple of examples included with the distribution. Neither "
-"are as fast as a dedicated solver for their respective domains, but they "
-"showcase how you can solve real world problems involving 10s or 100s of "
-"thousands of variables and constraints with `ersatz`.\n"
-"\n"
-"'ersatz-sudoku'\n"
-"\n"
-"> % time ersatz-sudoku > Problem: > ┌───────┬───────┬───────┐ > │ 5 3 │ 7 │ "
-"│ > │ 6 │ 1 9 5 │ │ > │ 9 8 │ │ 6 │ > ├───────┼───────┼───────┤ > │ 8 │ 6 │ "
-"3 │ > │ 4 │ 8 3 │ 1 │ > │ 7 │ 2 │ 6 │ > ├───────┼───────┼───────┤ > │ 6 │ │ "
-"2 8 │ > │ │ 4 1 9 │ 5 │ > │ │ 8 │ 7 9 │ > └───────┴───────┴───────┘ > "
-"Solution: > ┌───────┬───────┬───────┐ > │ 5 3 4 │ 6 7 8 │ 9 1 2 │ > │ 6 7 2 "
-"│ 1 9 5 │ 3 4 8 │ > │ 1 9 8 │ 3 4 2 │ 5 6 7 │ > ├───────┼───────┼───────┤ > "
-"│ 8 5 9 │ 7 6 1 │ 4 2 3 │ > │ 4 2 6 │ 8 5 3 │ 7 9 1 │ > │ 7 1 3 │ 9 2 4 │ 8 "
-"5 6 │ > ├───────┼───────┼───────┤ > │ 9 6 1 │ 5 3 7 │ 2 8 4 │ > │ 2 8 7 │ 4 "
-"1 9 │ 6 3 5 │ > │ 3 4 5 │ 2 8 6 │ 1 7 9 │ > └───────┴───────┴───────┘ > "
-"ersatz-sudoku 1,13s user 0,04s system 99% cpu 1,179 total\n"
-"\n"
-"'ersatz-regexp-grid'\n"
-"\n"
-"This solves the \"regular crossword puzzle\" (<https://github.com/ekmett/"
-"ersatz/raw/master/notes/grid.pdf grid.pdf>) from the 2013 MIT mystery hunt.\n"
-"\n"
-"> % time ersatz-regexp-grid\n"
-"\n"
-"\"SPOILER\"\n"
-"\n"
-"> ersatz-regexp-grid 2,45s user 0,05s system 99% cpu 2,502 total."
-msgstr ""
-
-#. leap/ghc-etcd/description
-msgid ""
-"etcd is a distributed key value store that provides a reliable way to store "
-"data across a cluster of machines. It’s open-source and available on GitHub. "
-"etcd gracefully handles leader elections during network partitions and will "
-"tolerate machine failure, including the leader.\n"
-"\n"
-"Your applications can read and write data into etcd. A simple use-case is to "
-"store database connection details or feature flags in etcd as key value "
-"pairs. These values can be watched, allowing your app to reconfigure itself "
-"when they change.\n"
-"\n"
-"Advanced uses take advantage of the consistency guarantees to implement "
-"database leader elections or do distributed locking across a cluster of "
-"workers."
-msgstr ""
-
-#. leap/ghc-haddock-library/description
-msgid ""
-"Haddock is a documentation-generation tool for Haskell libraries. These "
-"modules expose some functionality of it without pulling in the GHC "
-"dependency. Please note that the API is likely to change so specify upper "
-"bounds in your project if you can't release often. For interacting with "
-"Haddock itself, see the ‘haddock’ package."
-msgstr ""
-
-#. leap/ghc-indentation-parsec/description
-msgid ""
-"Indentation sensitive parsing combinators for Parsec\n"
-"\n"
-"See\n"
-"\n"
-"__Michael D. Adams and Ömer S. Ağacan__. Indentation-sensitive parsing for "
-"Parsec. In /Proceedings of the 2014 ACM SIGPLAN Symposium on Haskell/, "
-"Haskell ’14, pages 121–132. ACM, New York, NY, USA, September 2014. ISBN "
-"978-1-4503-3041-1. <http://dx.doi.org/10.1145/2633357.2633369 "
-"doi:10.1145/2633357.2633369>.\n"
-"\n"
-"This package provides indentation combinators for Parsec. For Trifecta, "
-"install indentation-trifecta. For backward compatability or to install both, "
-"install indentation."
-msgstr ""
-
-#. leap/ghc-lens-family-core/description
-msgid ""
-"This package provides first class(†) functional references. In addition to "
-"the usual operations of getting, setting and composition, plus integration "
-"with the state monad, lens families provide some unique features: \n"
-"* Polymorphic updating \n"
-"* Traversals \n"
-"* Cast projection functions to read-only lenses \n"
-"* Cast \"toList\" functions to read-only traversals \n"
-"* Cast semantic editor combinators to modify-only traversals.\n"
-"\n"
-"(†) For optimal first-class support use the 'lens-family' package with rank "
-"2 / rank N polymorphism. \"Lens.Family.Clone\" allows for first-class "
-"support of lenses and traversals for those who require Haskell 98."
-msgstr ""
-
-#. leap/ghc-microlens/description
-msgid ""
-"NOTE: If you're writing an app, you probably want <http://hackage.haskell."
-"org/package/microlens-platform microlens-platform> – it has the most "
-"features. <http://hackage.haskell.org/package/microlens microlens> is "
-"intended more for library writers who want a tiny lens library (after all, "
-"lenses are pretty useful for everything, not just for updating records!).\n"
-"\n"
-"This library is an extract from <http://hackage.haskell.org/package/lens "
-"lens> (with no dependencies). It's not a toy lenses library, unsuitable for "
-"“real world”, but merely a small one. It is compatible with lens, and should "
-"have same performance. It also has better documentation.\n"
-"\n"
-"There's a longer readme <https://github.com/aelve/microlens#readme on "
-"Github>. It has a migration guide for lens users, a description of other "
-"packages in the family, a discussion of other lens libraries you could use "
-"instead, and so on.\n"
-"\n"
-"Here are some usecases for this library: \n"
-"* You want to define lenses or traversals in your own library, but don't "
-"want to depend on lens. Having lenses available often make working with a "
-"library more pleasant. \n"
-"* You just want to be able to use lenses to transform data (or even just use "
-"'over _1' to change the first element of a tuple). \n"
-"* You are new to lenses and want a small library to play with.\n"
-"\n"
-"However, don't use this library if: \n"
-"* You need 'Iso's, 'Prism's, indexed traversals, or actually anything else "
-"which isn't defined here (tho some indexed functions are available elsewhere "
-"– containers and vector provide them for their types, and <http://hackage."
-"haskell.org/package/ilist ilist> provides indexed functions for lists). \n"
-"* You want a library with a clean, understandable implementation (in which "
-"case you're looking for <http://hackage.haskell.org/package/lens-simple lens-"
-"simple>).\n"
-"\n"
-"As already mentioned, if you're writing an application which uses lenses "
-"more extensively, look at <http://hackage.haskell.org/package/microlens-"
-"platform microlens-platform> – it combines features of most other microlens "
-"packages (<http://hackage.haskell.org/package/microlens-mtl microlens-mtl>, "
-"<http://hackage.haskell.org/package/microlens-th microlens-th>, <http://"
-"hackage.haskell.org/package/microlens-ghc microlens-ghc>).\n"
-"\n"
-"If you want to export getters or folds and don't mind the <http://hackage."
-"haskell.org/package/contravariant contravariant> dependency, please consider "
-"using <http://hackage.haskell.org/package/microlens-contra microlens-"
-"contra>.\n"
-"\n"
-"If you haven't ever used lenses before, read <http://hackage.haskell.org/"
-"package/lens-tutorial/docs/Control-Lens-Tutorial.html this tutorial>. (It's "
-"for lens, but it applies to microlens just as well.)\n"
-"\n"
-"Note that microlens has no dependencies starting from GHC 7.10 (base-4.8). "
-"Prior to that, it depends on transformers-0.2 or above."
-msgstr ""
-
-#. leap/ghc-microlens-ghc/description
-msgid ""
-"Use this package instead of <http://hackage.haskell.org/package/microlens "
-"microlens> if you don't mind depending on all dependencies here – 'Lens."
-"Micro.GHC' reexports everything from 'Lens.Micro' and additionally provides "
-"orphan instances of microlens classes for packages coming with GHC (<http://"
-"hackage.haskell.org/package/array array>, <http://hackage.haskell.org/"
-"package/bytestring bytestring>, <http://hackage.haskell.org/package/"
-"containers containers>, <http://hackage.haskell.org/package/transfromers "
-"transformers>).\n"
-"\n"
-"The minor and major versions of microlens-ghc are incremented whenever the "
-"minor and major versions of microlens are incremented, so you can depend on "
-"the exact version of microlens-ghc without specifying the version of "
-"microlens you need.\n"
-"\n"
-"This package is a part of the <http://hackage.haskell.org/package/microlens "
-"microlens> family; see the readme <https://github.com/aelve/microlens#readme "
-"on Github>."
-msgstr ""
-
-#. leap/ghc-operational/description
-msgid ""
-"This library makes it easy to implement monads with tricky control flow.\n"
-"\n"
-"This is useful for: writing web applications in a sequential style, "
-"programming games with a uniform interface for human and AI players and easy "
-"replay capababilities, implementing fast parser monads, designing monadic "
-"DSLs, etc.\n"
-"\n"
-"See the project homepage <http://wiki.haskell.org/Operational> for a more "
-"detailed introduction and features.\n"
-"\n"
-"Related packages: \n"
-"* MonadPrompt — <http://hackage.haskell.org/package/MonadPrompt> \n"
-"* free — <http://hackage.haskell.org/package/free> \n"
-"* free-operational — <http://hackage.haskell.org/package/free-operational>."
-msgstr ""
-
-#. leap/ghc-parsers/description
-msgid ""
-"This library provides convenient combinators for working with and building "
-"parsing combinator libraries.\n"
-"\n"
-"Given a few simple instances, e.g. for the class 'Text.Parser.Combinators."
-"Parsing' in \"Text.Parser.Combinators.Parsing\" you get access to a large "
-"number of canned definitions. Instances exist for the parsers provided by "
-"'parsec', 'attoparsec' and base’s \"Text.Read\"."
-msgstr ""
-
-#. leap/ghc-path-io/summary
-msgid "Interface to ‘directory’ package for users of ‘path’"
-msgstr ""
-
-#. leap/ghc-path-io/description
-msgid "Interface to ‘directory’ package for users of ‘path’."
-msgstr ""
-
-#. leap/ghc-tf-random/description
-msgid ""
-"This package contains an implementation of a high-quality splittable "
-"pseudorandom number generator. The generator is based on a cryptographic "
-"hash function built on top of the ThreeFish block cipher. See the paper /"
-"Splittable Pseudorandom Number Generators Using Cryptographic Hashing/ by "
-"Claessen, Pałka for details and the rationale of the design.\n"
-"\n"
-"The package provides the following: \n"
-"* A splittable PRNG that implements the standard 'System.Random.RandomGen' "
-"class. \n"
-"* The generator also implements an alternative version of the 'System.Random."
-"TF.Gen.RandomGen' class (exported from \"System.Random.TF.Gen\"), which "
-"requires the generator to return pseudorandom integers from the full 32-bit "
-"range, and contains an n-way split function. \n"
-"* An alternative version of the 'Random' class is provided, which is linked "
-"to the new 'RandomGen' class, together with 'Random' instances for some "
-"integral types. \n"
-"* Two functions for initialising the generator with a non-deterministic "
-"seed: one using the system time, and one using the '/dev/urandom' UNIX "
-"special file.\n"
-"\n"
-"The package uses an adapted version of the reference C implementation of "
-"ThreeFish from the reference package of the Skein hash function (<https://"
-"www.schneier.com/skein.html>), originally written by Doug Whiting.\n"
-"\n"
-"Please note that even though the generator provides very high-quality "
-"pseudorandom numbers, it has not been designed with cryptographic "
-"applications in mind."
-msgstr ""
-
-#. leap/ghc-th-to-exp/description
-msgid ""
-"This package provides a way to persist data from compile-time to runtime by "
-"producing Template Haskell expressions that evaluate to particular values. "
-"For example, if you have a value 'Just 1', then 'toExp (Just 1)' will "
-"produce the /expression/ '[e| Just 1 |]', which can be used in a splice. For "
-"a more direct example, here’s what that looks like without the quasiquote "
-"notation:\n"
-"\n"
-">>> toExp (Just 1) AppE (ConE GHC.Base.Just) (LitE (IntegerL 1))\n"
-"\n"
-"This is done by using a typeclass, 'ToExp', that can be automatically "
-"derived for types that have a 'Generic' instance."
-msgstr ""
-
-#. leap/ghc-traverse-with-class/description
-msgid ""
-"This is a generic programming library in the spirit of \"Scrap your "
-"boilerplate with class\", but with several improvements — most notably, it's "
-"based on the 'gtraverse' function instead of 'gfoldl'. 'gtraverse' is "
-"equivalent in power to 'gfoldl', but lets you more easily write non-standard "
-"views of the data type."
-msgstr ""
-
-#. leap/ghc-tree-view/description
-msgid ""
-"Render trees as foldable HTML and Unicode art\n"
-"\n"
-"Example:\n"
-"\n"
-"> *Data.Tree.View> drawTree $ Node \"Add\" [Node \"Sub\" [Node \"3\" [], "
-"Node \"Mul\" [Node \"1\" [], Node \"2\" []]], Node \"4\" []] > Add > ├╴Sub > "
-"│ ├╴3 > │ └╴Mul > │ ├╴1 > │ └╴2 > └╴4."
-msgstr ""
-
-#. leap/ghc-true-name/description
-msgid ""
-"<http://tvtropes.org/pmwiki/pmwiki.php/Main/IKnowYourTrueName Knowing a true "
-"name gives one power over its owner>.\n"
-"\n"
-"A Template Haskell hack to get unexported 'Name's―be they types, data "
-"constructors, record fields or class methods―a slightly less unsafe way to "
-"violate another module's abstractions than 'unsafeCoerce'.\n"
-"\n"
-"A few <https://github.com/liyang/true-name/blob/master/sanity.hs quick "
-"examples>.\n"
-"\n"
-"I'm too lazy to keep a changelog, but I do write <https://github.com/liyang/"
-"true-name/commits/master detailed commit messages>."
-msgstr ""
-
-#. leap/ghc-webpage/description
-msgid ""
-"This is a general organization scheme for web pages, implemented for Lucid, "
-"and adapted for Blaze-html.\n"
-"\n"
-"> import Web.Page.Lucid > > λ> renderText $ template def \"some content\" > "
-"> ↪ \"<!DOCTYPE HTML><html><head><title></title><link href > rel=\"icon\"></"
-"head><body>some content</body></html>\"\n"
-"\n"
-"overload the particular areas with record syntax and stuff:\n"
-"\n"
-"> λ> let page = def title = \"foo\" > , bodyScripts = script_ [src_ \"jquery."
-"js\"] \"\" > > > λ> template page \"some content\" > > ↪ \"<!DOCTYPE "
-"HTML><html><head><title>foo</title> > </head><body>some content<script > src="
-"\"jquery.js\"></script></body></html>\" ."
-msgstr ""
-
-#. leap/ghc-xml-conduit-writer/description
-msgid ""
-"“It can scarcely be denied that the supreme goal of all theory is to make "
-"the irreducible basic elements as simple and as few as possible without "
-"having to surrender the adequate representation of a single datum of "
-"experience.” ­— Albert Einstein\n"
-"\n"
-"Check out more examples in test/Main.hs and look at the results with\n"
-"--enable-tests."
-msgstr ""
-
-#. leap/ghc-zero/description
-msgid ""
-"'Monoid' is a 'Semigroup' glued with a neutral element called 'mempty'. In "
-"the same idea, 'Zero' is a 'Semigroup' glued with an absorbing element "
-"called 'zero'.\n"
-"\n"
-"Keep in mind that 'Zero' requires 'Semigroup'. If you have 'Semigroup' "
-"defined to work with 'Monoid', you might end up with no way to implement "
-"'Zero'. That’s why the 'Semigroup' instance for 'Maybe' is confusing, "
-"because it relies on 'Monoid', and cannot be used with 'Zero'. 'Success' is "
-"the 'Zero' equivalent of 'Maybe' + 'Monoid'."
-msgstr ""
+#~ msgid "? Manage stateful components"
+#~ msgstr "Paquet de base de kdepim"
 
 #, fuzzy
 #~ msgid "Haskell BlogLiterately-diagrams library development files"
