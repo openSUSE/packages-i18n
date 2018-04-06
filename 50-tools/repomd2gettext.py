@@ -95,7 +95,7 @@ def readMetadata(data):
 
 
 def gettextForPackage(packagename, package, distro):
-    if packagename != package['sourcepkg']:
+    if packagename != package['sourcepkg'] and package['sourcepkg']:
         packagename = "{}/{}".format(package['sourcepkg'], packagename)
 
     comment = "{}/{}".format(distro, packagename)
