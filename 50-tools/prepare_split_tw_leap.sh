@@ -42,6 +42,8 @@ move_if_changed()
 if [ ! -r "$1" ]; then
   die "Usage: $0 URLS.TXT"
 fi
+urlfile="$1"
+shift
 
 while read distro url; do
   case $distro in
@@ -50,10 +52,10 @@ while read distro url; do
 
 ## get package descriptions
   log "Generating POT file for ${distro}..."
-  python3 50-tools/repomd2gettext.py http://downloadcontent.opensuse.org/${URL} "${distro}" | msguniq > "50-lists/${distro}-packages._pot"
+  python3 50-tools/repomd2gettext.py "$url" "$distro" | msguniq > "50-lists/${distro}-packages._pot"
 
   log "OK"
-done
+done < "$urlfile"
 
 cd 50-lists
 
