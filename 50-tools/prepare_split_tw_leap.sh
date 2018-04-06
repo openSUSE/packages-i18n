@@ -1,5 +1,6 @@
 #! /bin/sh
 set -e
+set -o pipefail
 export LANG=C.utf8
 ## get package lists
 rm -rf 50-lists
@@ -10,7 +11,7 @@ for distro in tumbleweed leap; do
 ## set URLs
   case $distro in
     "leap") URL="distribution/leap/15.0/repo/oss";;
-    "tumbleweed") URL="tumbleweed/repo/oss/suse";;
+    "tumbleweed") URL="tumbleweed/repo/oss";;
     *) continue;;
   esac
 
