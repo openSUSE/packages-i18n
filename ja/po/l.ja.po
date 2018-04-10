@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-04-06 13:24+0000\n"
-"PO-Revision-Date: 2018-01-09 05:37+0000\n"
+"PO-Revision-Date: 2018-04-10 14:04+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/l-"
-"master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-"
+"i18n/l-sle-15/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.17.1\n"
+"X-Generator: Weblate 2.18\n"
 
 #. Installer/less/summary
 #. Module-Basesystem/less/summary
@@ -35,7 +35,7 @@ msgstr ""
 #. Installer/libkdumpfile/libaddrxlat0/summary
 #. Module-Basesystem/libkdumpfile/libaddrxlat0/summary
 msgid "Address translation library used primarily by libkdumpfile"
-msgstr ""
+msgstr "主に libkdumpfile で使用されるアドレス変換ライブラリ"
 
 #. Installer/libkdumpfile/libaddrxlat0/description
 #. Module-Basesystem/libkdumpfile/libaddrxlat0/description
@@ -45,13 +45,16 @@ msgid ""
 "\n"
 "This package contains the libxattrxlat library."
 msgstr ""
+"アドレス領域間 (物理と論理の間) の変換処理を行なうための、抽象レイヤを提供するライブラリです。\n"
+"\n"
+"このパッケージには、 libxattrxlat ライブラリが含まれています。"
 
 #. Installer/libaio/libaio1/summary
 #. Installer/libaio/summary
 #. Module-Basesystem/libaio/libaio1/summary
 #. Module-Development-Tools/libaio/libaio1-32bit/summary
 msgid "Linux-Native Asynchronous I/O Access Library"
-msgstr ""
+msgstr "Linux 特有の非同期入出力アクセスライブラリ"
 
 #. Installer/libaio/libaio1/description
 #. Installer/libaio/description
@@ -64,13 +67,17 @@ msgid ""
 "facility requires this library to provide kernel-accelerated async I/O "
 "capabilities, as do applications that require the Linux-native async I/O API."
 msgstr ""
+"Linux 特有の非同期入出力機能 (\"async I/O\" や \"aio\" などと呼ばれます) には高度な API のほか、シンプルな "
+"POSIX 非同期入出力よりも多くの機能を備えています。 このライブラリでは Linux 特有の非同期入出力を提供します。 POSIX "
+"の非同期入出力機能でもこのライブラリを使用することで、 アプリケーションが Linux 特有の非同期入出力機能を使用したときと同程度に "
+"カーネル側で高速化された非同期入出力性能を引き出すことができます。"
 
 #. Installer/libapparmor/libapparmor1/summary
 #. Installer/libapparmor/summary
 #. Module-Basesystem/libapparmor/libapparmor1/summary
 #. Module-Basesystem/libapparmor/libapparmor1-32bit/summary
 msgid "Utility library for AppArmor"
-msgstr ""
+msgstr "AppArmor 向けユーティリティライブラリ"
 
 #. Installer/libapparmor/libapparmor1/description
 #. Installer/libapparmor/description
@@ -81,26 +88,28 @@ msgid ""
 "change_hat(2) symbol, used for sub-process confinement by AppArmor, as well "
 "as functions to parse AppArmor log messages."
 msgstr ""
+"このパッケージは libapparmor ライブラリを提供します。このライブラリには、 change_hat(2) シンボルが含まれていて、 "
+"AppArmor が提供するサブプロセス制約で使用されるほか、 AppArmor のログメッセージを処理する機能としても利用されます。"
 
 #. Installer/libassuan/libassuan0/summary
 #. Installer/libassuan/summary
 #. Module-Basesystem/libassuan/libassuan-devel/summary
 #. Module-Basesystem/libassuan/libassuan0/summary
 msgid "IPC library used by GnuPG version 2"
-msgstr ""
+msgstr "GnuPG バージョン 2 で使用される IPC ライブラリ"
 
 #. Installer/libassuan/libassuan0/description
 #. Installer/libassuan/description
 #. Module-Basesystem/libassuan/libassuan0/description
 msgid "Libassuan is the IPC library used by gpg2 (GnuPG version 2)"
-msgstr ""
+msgstr "libassuan は gpg2 (GnuPC バージョン 2) で使用される IPC ライブラリです。"
 
 #. Installer/libcap-ng/libcap-ng0/summary
 #. Installer/libcap-ng/summary
 #. Module-Basesystem/libcap-ng/libcap-ng0/summary
 #. Module-Basesystem/libcap-ng/libcap-ng0-32bit/summary
 msgid "An alternate Linux/POSIX capabilities library"
-msgstr ""
+msgstr "代替 Linux/POSIX ケーパビリティライブラリ"
 
 #. Installer/libcap-ng/libcap-ng0/description
 #. Module-Basesystem/libcap-ng/libcap-ng0/description
@@ -110,6 +119,8 @@ msgid ""
 "and set Linux process and file capabilities (modeled upon a withdrawn "
 "POSIX.1e draft)."
 msgstr ""
+"libcap-ng は libcap に対する代替機構で、 Linux プロセスとファイルのケーパビリティ (撤回された POSIX.1e "
+"ドラフトをベースにしています) を調査したり設定したりすることができます。"
 
 #. Installer/libcap/libcap2/summary
 #. Installer/libcap/summary
@@ -118,7 +129,7 @@ msgstr ""
 #. Module-Legacy/libcap1/summary
 #. Module-Legacy/libcap1/libcap1-32bit/summary
 msgid "Library for Capabilities (linux-privs) Support"
-msgstr ""
+msgstr "権限 (linux-privs) サポートライブラリ"
 
 #. Installer/libcap/libcap2/description
 #. Installer/libcap/description
@@ -132,13 +143,16 @@ msgid ""
 "capabilities within setuid binaries. If you use patches, this can be done "
 "automatically by the kernel."
 msgstr ""
+"権限ライブラリはスーパーユーザの万能性を減らすための手段です。 通常は root が起動したプログラムや setuid root "
+"が設定されたプログラムは 全てのことができてしまいます。 権限 (linux-privs) ライブラリはアクセス制御を細かく設定する機能を持っています。 "
+"カーネルパッチを使用しなくても、本ライブラリを使用することで setuid を設定したプログラム内から 不要な権限を削ぎ落とすことができるようになります。"
+" カーネルパッチを使用した場合は、カーネルでこれらを自動的に行なうことができます。"
 
 #. Installer/libconfig/libconfig11/summary
 #. Module-Basesystem/libconfig/libconfig++11/summary
 #. Module-Basesystem/libconfig/libconfig11/summary
-#, fuzzy
 msgid "Shared libraries for libconfig"
-msgstr "libyaml 向け共有ライブラリ"
+msgstr "libconfig 向け共有ライブラリ"
 
 #. Installer/libconfig/libconfig11/description
 #. Module-Basesystem/libconfig/libconfig++11/description
@@ -151,16 +165,19 @@ msgid ""
 "\n"
 "This package contains the shared libraries for libconfig."
 msgstr ""
+"Libconfig は、構造化された設定ファイルを操作するためのシンプルなライブラリです。このファイル形式は XML "
+"よりもコンパクトで読みやすい形式になっています。また、 XML "
+"とは異なり、型を識別することができるため、文字列をアプリケーションのコード側で処理するような手間もありません。\n"
+"\n"
+"このパッケージには、 libconfig の共有ライブラリが含まれています。"
 
 #. Installer/libcroco/libcroco-0_6-3/summary
 #. Installer/libcroco/summary
 #. Module-Basesystem/libcroco/summary
 #. Module-Basesystem/libcroco/libcroco-0_6-3/summary
 #. Module-Basesystem/libcroco/libcroco-0_6-3-32bit/summary
-#, fuzzy
-#| msgid "BLAS Shared Library"
 msgid "CSS2 Parser Library"
-msgstr "BLAS 共有ライブラリ"
+msgstr "CSS2 処理ライブラリ"
 
 #. Installer/libcroco/libcroco-0_6-3/description
 #. Installer/libcroco/description
@@ -171,12 +188,14 @@ msgid ""
 "Libcroco is a stand-alone CSS2 parsing library. It provides a low-level "
 "event-driven SAC-like API and a CSS object model-like API."
 msgstr ""
+"libcroco は単一で動作する CSS2 処理ライブラリです。低レベルのイベント型の SAC に似た API を提供するほか、 CSS "
+"オブジェクトモデルのような API も提供しています。"
 
 #. Installer/libdb-4_8/summary
 #. Module-Basesystem/libdb-4_8/libdb-4_8-32bit/summary
 #. Module-Basesystem/libdb-4_8/summary
 msgid "Berkeley DB Database Library Version 4.8"
-msgstr ""
+msgstr "Berkeley DB データベースライブラリ バージョン 4.8"
 
 #. Installer/libdb-4_8/description
 #. Module-Basesystem/libdb-4_8/libdb-4_8-32bit/description
@@ -187,13 +206,16 @@ msgid ""
 "\n"
 "This package contains the necessary runtime libraries."
 msgstr ""
+"Berkeley DB データベースは、アプリケーションにデータベース機能を提供するための プログラミングツールキットです。\n"
+"\n"
+"このパッケージには、必須のランタイムライブラリが含まれています。"
 
 #. Installer/libedit/libedit0/summary
 #. Installer/libedit/summary
 #. Module-Basesystem/libedit/libedit0/summary
 #. Module-Basesystem/libedit/libedit0-32bit/summary
 msgid "Command Line Editing and History Library"
-msgstr ""
+msgstr "コマンドライン編集と履歴のライブラリ"
 
 #. Installer/libedit/libedit0/description
 #. Installer/libedit/description
@@ -204,14 +226,14 @@ msgid ""
 "used by interactive programs that allow the user to type commands at a "
 "terminal prompt."
 msgstr ""
+"libedit はコマンドラインの編集と履歴機能を提供するライブラリです。ユーザが端末プロンプトからコマンドを入力するような、対話的なプログラムで使用する"
+"ことを想定した設計になっています。"
 
 #. Installer/libesmtp/summary
 #. Module-Basesystem/libesmtp/summary
 #. Module-Basesystem/libesmtp/libesmtp-devel/summary
-#, fuzzy
-#| msgid "A library for locking devices"
 msgid "A Library for Posting Electronic Mail"
-msgstr "デバイスを施錠するためのライブラリ"
+msgstr "電子メール送信ライブラリ"
 
 #. Installer/libesmtp/description
 #. Module-Basesystem/libesmtp/description
@@ -223,14 +245,15 @@ msgid ""
 "be able to post electronic mail but where mail functionality is not that "
 "program's primary purpose."
 msgstr ""
+"libESMTP は Exim のような事前設定済みのメール転送エージェント (MTA) に対し、電子メールの送信や発信を管理するライブラリです。"
+"メールユーザエージェント (MUA) "
+"のほか、その他のソフトウエアで電子メール送信の機能が必要でありながら、それが主の目的ではないプログラムを作成する場合に適しています。"
 
 #. Installer/libevent/libevent-2_1-8/summary
 #. Installer/libevent/summary
 #. Module-Basesystem/libevent/libevent-2_1-8/summary
-#, fuzzy
-#| msgid "The Lua integration library"
 msgid "An event notification library"
-msgstr "LUA 統合ライブラリ"
+msgstr "イベント通知ライブラリ"
 
 #. Installer/libevent/libevent-2_1-8/description
 #. Module-Basesystem/libevent/libevent-2_1-8/description
@@ -250,13 +273,22 @@ msgid ""
 "\n"
 "This package holds the shared libraries for libevent."
 msgstr ""
+"libevent API は、ファイルディスクリプタ上で特定のイベントが発生した場合や、指定した時間が経過した際に、コールバック関数を実行することができる"
+"機能を提供します。これに加えて、 libevent ではシグナルや通常のタイムアウトにも対応しています。\n"
+"\n"
+"現時点では、 libevent は /dev/poll, kqueue(2), イベントポート, POSIX select(2), Windows "
+"select(), poll(2), epoll(4) に対応しています。\n"
+"\n"
+"そのほか、 libevent ではバッファ付きのネットワーク I/O フレームワークやソケットのサポート, フィルタや流量制限, SSL "
+"やゼロコピーファイル転送, IOCP などにも対応しています。また、 libevent では DNS, HTTP, 最小限の RPC "
+"フレームワークサポートも含まれています。"
 
 #. Installer/libffi/libffi7/summary
 #. Installer/libffi/summary
 #. Module-Basesystem/libffi/libffi7/summary
 #. Module-Basesystem/libffi/libffi7-32bit/summary
 msgid "Foreign Function Interface Library"
-msgstr ""
+msgstr "外部関数インターフェイスライブラリ"
 
 #. Installer/libffi/libffi7/description
 #. Installer/libffi/description
@@ -268,16 +300,16 @@ msgid ""
 "various calling conventions.  This allows a programmer to call any function "
 "specified by a call interface description at run time."
 msgstr ""
+"libffi は可搬性のある高レベルなプログラミングインターフェイスで、様々な呼び出し方法を提供するものです。このインターフェイスを利用することで、実行時"
+"にインターフェイス仕様を提供することで、プログラマは任意の関数を呼び出すことができるようになります。"
 
 #. Installer/libgcrypt/libgcrypt20/summary
 #. Installer/libgcrypt/summary
 #. Module-Basesystem/libgcrypt/libgcrypt-devel/summary
 #. Module-Basesystem/libgcrypt/libgcrypt20/summary
 #. Module-Basesystem/libgcrypt/libgcrypt20-32bit/summary
-#, fuzzy
-#| msgid "The Lua integration library"
 msgid "The GNU Crypto Library"
-msgstr "LUA 統合ライブラリ"
+msgstr "GNU 暗号化ライブラリ"
 
 #. Installer/libgcrypt/libgcrypt20/description
 #. Module-Basesystem/libgcrypt/libgcrypt20/description
@@ -285,13 +317,13 @@ msgstr "LUA 統合ライブラリ"
 msgid ""
 "Libgcrypt is a general purpose crypto library based on the code used in "
 "GnuPG (alpha version)."
-msgstr ""
+msgstr "Libgcrypt は GnuPG で使用されているコードを元にした汎用の暗号化ライブラリ です (アルファ版です) 。"
 
 #. Installer/libgcrypt/libgcrypt20-hmac/summary
 #. Module-Basesystem/libgcrypt/libgcrypt20-hmac/summary
 #. Module-Basesystem/libgcrypt/libgcrypt20-hmac-32bit/summary
 msgid "HMAC checksums for the GNU Crypto Library"
-msgstr ""
+msgstr "GNU Crypto ライブラリの HMAC チェックサム"
 
 #. Installer/libgcrypt/libgcrypt20-hmac/description
 #. Module-Basesystem/libgcrypt/libgcrypt20-hmac/description
@@ -301,13 +333,15 @@ msgid ""
 "GnuPG (alpha version). This package contains the HMAC checksum files for "
 "integrity checking the library, as required by FIPS 140-2."
 msgstr ""
+"Libgcrypt は GnuPG で使用されているコードを元にした汎用の暗号化ライブラリです (アルファ版です) 。 このパッケージには、 FIPS "
+"140-2 で必要とされている、ライブラリの一貫性をチェックするための HMAC チェックサムファイルが含まれています。"
 
 #. Installer/libgpg-error/libgpg-error0/summary
 #. Installer/libgpg-error/summary
 #. Module-Basesystem/libgpg-error/libgpg-error0/summary
 #. Module-Basesystem/libgpg-error/libgpg-error0-32bit/summary
 msgid "Library That Defines Common Error Values for All GnuPG Components"
-msgstr ""
+msgstr "全ての GnuPG コンポーネント向けに定義した汎用エラー値のライブラリ"
 
 #. Installer/libgpg-error/libgpg-error0/description
 #. Installer/libgpg-error/description
@@ -318,12 +352,14 @@ msgid ""
 "components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt, "
 "pinentry, SmartCard Daemon, and possibly more in the future."
 msgstr ""
+"全ての GnuPG コンポーネント向けに定義した汎用エラー値のライブラリです。 GPG のほか、 GPGSM, GPGME, GPG-Agent, "
+"libgcrypt, pinentry, SmartCard デーモン などで使用されます。"
 
 #. Installer/libnettle/libhogweed4/summary
 #. Module-Basesystem/libnettle/libhogweed4/summary
 #. Module-Desktop-Applications/libnettle/libhogweed4-32bit/summary
 msgid "Cryptographic Library for Public Key Algorithms"
-msgstr ""
+msgstr "公開鍵アルゴリズム向け暗号化ライブラリ"
 
 #. Installer/libnettle/libhogweed4/description
 #. Module-Basesystem/libnettle/libhogweed4/description
@@ -336,13 +372,18 @@ msgid ""
 "\n"
 "The libhogweed library contains public key algorithms to use with libnettle."
 msgstr ""
+"Nettle はどのような用途においても簡単に利用できるように設計されている、暗号化ライブラリです。オブジェクト指向の言語 (C++, Python, "
+"Pike, ...) 向けの暗号化ツールキットとして利用できるほか、 LSH, GNUPG "
+"などのアプリケーション内や、カーネル内でも利用することができます。\n"
+"\n"
+"libhogweed ライブラリには、 libnettle で使用される公開鍵アルゴリズムが含まれています。"
 
 #. Installer/libidn2/libidn2-0/summary
 #. Module-Basesystem/libidn/libidn11/summary
 #. Module-Basesystem/libidn2/libidn2-0/summary
 #. Module-Basesystem/libidn2/libidn2-0-32bit/summary
 msgid "Support for Internationalized Domain Names (IDN)"
-msgstr ""
+msgstr "国際ドメイン名 (IDN) サポート"
 
 #. Installer/libidn2/libidn2-0/description
 #. Installer/libidn2/description
@@ -352,23 +393,23 @@ msgstr ""
 msgid ""
 "An implementation of the IDNA2008 specifications (RFCs 5890, 5891, 5892, "
 "5893)"
-msgstr ""
+msgstr "IDNA2008 仕様 (RFC 5890, 5891, 5892, 5893) の実装"
 
 #. Installer/libkcapi/libkcapi-tools/summary
 #. Module-Basesystem/libkcapi/libkcapi-tools/summary
 msgid "Linux Kernel Crypto API User Space Tools"
-msgstr ""
+msgstr "Linux カーネル暗号化 API ユーザスペースツール"
 
 #. Installer/libkcapi/libkcapi-tools/description
 #. Module-Basesystem/libkcapi/libkcapi-tools/description
 msgid "libkcapi user space tools to access certain hash algorithms."
-msgstr ""
+msgstr "ハッシュアルゴリズムにアクセスするための libkcapi ユーザスペースツールです。"
 
 #. Installer/libkdumpfile/libkdumpfile7/summary
 #. Installer/libkdumpfile/summary
 #. Module-Basesystem/libkdumpfile/libkdumpfile7/summary
 msgid "Kernel dump file access library"
-msgstr ""
+msgstr "カーネルダンプファイルアクセスライブラリ"
 
 #. Installer/libkdumpfile/libkdumpfile7/description
 #. Installer/libkdumpfile/description
@@ -378,13 +419,15 @@ msgid ""
 "files.  It supports different kernel dump core formats, virtual to physical "
 "translation, Xen mappings and more."
 msgstr ""
+"カーネルのダンプコアファイルを読み込むための抽象化レイヤを提供するライブラリです。仮想マシンにも物理マシンにも対応しているほか、 Xen "
+"のマッピングなど、さまざまなカーネルダンプコア形式に対応しています。"
 
 #. Installer/libksba/libksba8/summary
 #. Installer/libksba/summary
 #. Module-Basesystem/libksba/libksba-devel/summary
 #. Module-Basesystem/libksba/libksba8/summary
 msgid "A X.509 Library"
-msgstr ""
+msgstr "X.509 ライブラリ"
 
 #. Installer/libksba/libksba8/description
 #. Installer/libksba/description
@@ -392,7 +435,7 @@ msgstr ""
 msgid ""
 "KSBA is a library to simplify the task of working with X.509 certificates, "
 "CMS data, and related data."
-msgstr ""
+msgstr "KSBA は X.509 証明書や CMS などの関連データを取り扱う処理について、 単純化するためのライブラリです。"
 
 #. Installer/lttng-ust/liblttng-ust0/summary
 #. Installer/lttng-ust/summary
@@ -534,9 +577,8 @@ msgstr ""
 #. Installer/libmetalink/summary
 #. Module-Basesystem/libmetalink/libmetalink-devel/summary
 #. Module-Basesystem/libmetalink/libmetalink3/summary
-#, fuzzy
 msgid "Metalink Library"
-msgstr "\"ほどく\" ためのライブラリ"
+msgstr "メタリンクライブラリ"
 
 #. Installer/libmetalink/libmetalink3/description
 #. Installer/libmetalink/description
@@ -547,13 +589,14 @@ msgid ""
 "provide the programs written in C to add Metalink functionality such as "
 "parsing Metalink XML files."
 msgstr ""
+"libmetalink は C 言語で書かれたメタリンクライブラリです。メタリンクの XML ファイルの処理など、メタリンクの機能を C "
+"言語から利用できるように作られています。"
 
 #. Installer/libmnl/libmnl0/summary
 #. Installer/libmnl/summary
 #. Module-Basesystem/libmnl/libmnl0/summary
-#, fuzzy
 msgid "Minimalistic Netlink communication library"
-msgstr "C コンパイラランタイムライブラリ"
+msgstr "最低限の netlink 通信ライブラリ"
 
 #. Installer/libmnl/libmnl0/description
 #. Installer/libmnl/description
@@ -566,14 +609,15 @@ msgid ""
 "library aims to provide simple helpers that allows you to re-use code and to "
 "avoid re-inventing the wheel."
 msgstr ""
+"libmnl は netlink 開発者に対して作られた最小限の機能を持つユーザスペースライブラリです。 netlink ヘッダや TLV の処理や検証／"
+"構築など、よく必要とされる機能でありながら、間違えやすい多数の処理を実装しています。このライブラリは、コードの再利用のほか、車輪の再発明を避ける意味でのシ"
+"ンプルなヘルパーとなることを目指しています。"
 
 #. Installer/libmodman/libmodman1/summary
 #. Installer/libmodman/summary
 #. Module-Basesystem/libmodman/libmodman1/summary
-#, fuzzy
-#| msgid "VNC Development Library"
 msgid "A Module Management Library"
-msgstr "VBI デコードライブラリ"
+msgstr "モジュール管理ライブラリ"
 
 #. Installer/libmodman/libmodman1/description
 #. Installer/libmodman/description
@@ -581,15 +625,14 @@ msgstr "VBI デコードライブラリ"
 msgid ""
 "The Module Loading library offers the choice to use prelinked libraries from "
 "your application out of a pool."
-msgstr ""
+msgstr "モジュール読み込みライブラリは、お使いのアプリケーションから事前リンクされたライブラリを使用するための選択機能を外部から提供します。"
 
 #. Installer/libnetfilter_conntrack/libnetfilter_conntrack3/summary
 #. Installer/libnetfilter_conntrack/summary
 #. Module-Basesystem/libnetfilter_conntrack/libnetfilter_conntrack-devel/summary
 #. Module-Basesystem/libnetfilter_conntrack/libnetfilter_conntrack3/summary
-#, fuzzy
 msgid "Userspace library for the in-kernel connection tracking state table"
-msgstr "カーネル netlink ソケットを使用するための便利なライブラリ"
+msgstr "カーネル内の接続状態追跡テーブルを利用するための、ユーザスペースライブラリ"
 
 #. Installer/libnetfilter_conntrack/libnetfilter_conntrack3/description
 #. Installer/libnetfilter_conntrack/description
@@ -602,6 +645,10 @@ msgid ""
 "libnfnetlink_conntrack and libctnetlink. This library is currently used by "
 "conntrack-tools among many other applications."
 msgstr ""
+"libnetfilter_conntrack は、カーネル内部に搭載された接続状態追跡テーブルに対して、プログラミングインターフェイス (API) "
+"を提供するユーザスペースライブラリです。 libnetfilter_conntrack は以前、 libnfnetlink_conntrack および "
+"libctnetlink という名前で開発されていました。このライブラリは、他のアプリケーションと共に conntrack-tools "
+"で使用されています。"
 
 #. Installer/libnettle/libnettle6/summary
 #. Installer/libnettle/summary
@@ -609,7 +656,7 @@ msgstr ""
 #. Module-Basesystem/libnettle/libnettle6/summary
 #. Module-Desktop-Applications/libnettle/libnettle6-32bit/summary
 msgid "Cryptographic Library"
-msgstr ""
+msgstr "暗号化ライブラリ"
 
 #. Installer/libnettle/libnettle6/description
 #. Installer/libnettle/description
@@ -622,13 +669,16 @@ msgid ""
 "Python, Pike, ...), in applications like LSH or GNUPG, or even in kernel "
 "space."
 msgstr ""
+"Nettle はどのような用途においても簡単に利用できるように設計されている、暗号化ライブラリです。オブジェクト指向の言語 (C++, Python, "
+"Pike, ...) 向けの暗号化ツールキットとして利用できるほか、 LSH, GNUPG "
+"などのアプリケーション内や、カーネル内でも利用することができます。"
 
 #. Installer/libnfnetlink/libnfnetlink0/summary
 #. Installer/libnfnetlink/summary
 #. Module-Basesystem/libnfnetlink/libnfnetlink-devel/summary
 #. Module-Basesystem/libnfnetlink/libnfnetlink0/summary
 msgid "Low-level library for Netfilter-related kernel/userspace communication"
-msgstr ""
+msgstr "netfilter 関連カーネル／ユーザスペース通信向けの低レベルライブラリ"
 
 #. Installer/libnfnetlink/libnfnetlink0/description
 #. Installer/libnfnetlink/description
@@ -645,12 +695,18 @@ msgid ""
 "only used by other netfilter.org projects, such as libnetfilter_log, "
 "libnetfilter_queue or libnetfilter_conntrack."
 msgstr ""
+"libnfnetlink は netfilter 関連のカーネル／ユーザスペース通信を提供する、低レベルのライブラリです。カーネル内の "
+"netfilter サブシステム (nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack など) "
+"と、関連するユーザスペース側のユーザまたは管理ツールとの間で、汎用的なメッセージングインフラストラクチャを提供します。\n"
+"\n"
+"このライブラリは、アプリケーション開発者に対する公開 API として用意されているわけではありません。これは netfilter.org "
+"プロジェクトの内部で、 libnetfilter_log, libnetfilter_queue, libnetfilter_conntrack "
+"などのためにのみ使用されるべきものです。"
 
 #. Installer/libnl3/libnl-config/summary
 #. Module-Basesystem/libnl3/libnl-config/summary
-#, fuzzy
 msgid "Name maps for libnl"
-msgstr "libepub 向けヘッダファイル"
+msgstr "libnl 向け名前マップ"
 
 #. Installer/libnl3/libnl-config/description
 #. Module-Basesystem/libnl3/libnl-config/description
@@ -660,13 +716,16 @@ msgid ""
 "- name maps for class-ids -- class-names (like /etc/services)\n"
 "- aliases for locations within a packet (ip6.dst => byte offset)"
 msgstr ""
+"このパッケージには、 libnl 向けの設定ファイルとプログラムが含まれています。特に下記のものが含まれています:\n"
+"- クラス ID とクラス名を対応付ける名前マップ (/etc/services のような仕組み)\n"
+"- パケット内での場所に関する別名 (is6.dst => バイトオフセット値)"
 
 #. Installer/libnl3/libnl3-200/summary
 #. Installer/libnl3/summary
 #. Module-Basesystem/libnl3/libnl3-200/summary
 #. Module-Basesystem/libnl3/libnl3-200-32bit/summary
 msgid "Convenience library for working with Netlink sockets"
-msgstr ""
+msgstr "netlink ソケットを使用するための便利なライブラリ"
 
 #. Installer/libnl3/libnl3-200/description
 #. Module-Basesystem/libnl3/libnl3-200/description
@@ -675,13 +734,14 @@ msgid ""
 "The libnl suite is a collection of libraries providing APIs to netlink "
 "protocol based Linux kernel interfaces."
 msgstr ""
+"libnl スイートは、 Netlink プロトコルベースの Linux カーネルインターフェイスに対して、 API を提供するライブラリ集です。"
 
 #. Installer/libnsl/libnsl2/summary
 #. Installer/libnsl/summary
 #. Module-Basesystem/libnsl/libnsl2/summary
 #. Module-Basesystem/libnsl/libnsl2-32bit/summary
 msgid "Network Support Library (NIS/NIS+)"
-msgstr ""
+msgstr "ネットワークサポートライブラリ (NIS/NIS+)"
 
 #. Installer/libnsl/libnsl2/description
 #. Installer/libnsl/description
@@ -692,13 +752,16 @@ msgid ""
 "now a standalone library. The big difference is, that this library has "
 "support for IPv6. The NIS+ code is deprecated and only there \"as is\"."
 msgstr ""
+"NIS/NIS+ 向けのネットワークサポートライブラリはもともと glibc "
+"の一部として提供されていましたが、現在は単独のライブラリとして提供されています。このライブラリの大きな変更点としては、 IPv6 "
+"へのサポートがあげられます。 NIS+ の API は廃止予定であり、 \"現状ありのまま\" 提供されているものです。"
 
 #. Installer/libpciaccess/libpciaccess0/summary
 #. Installer/libpciaccess/summary
 #. Module-Basesystem/libpciaccess/libpciaccess0/summary
 #. Module-Basesystem/libpciaccess/libpciaccess0-32bit/summary
 msgid "Generic PCI access library"
-msgstr ""
+msgstr "汎用 PCI アクセスライブラリ"
 
 #. Installer/libpciaccess/libpciaccess0/description
 #. Installer/libpciaccess/description
@@ -707,7 +770,7 @@ msgstr ""
 msgid ""
 "Provides functionality for X to access the PCI bus and devices in a platform-"
 "independent way."
-msgstr ""
+msgstr "X に対して、 PCI バスへのアクセスをプラットフォームに依存しない方法で提供するための機能が含まれています。"
 
 #. Installer/libpng16/libpng16-16/summary
 #. Installer/libpng16/summary
@@ -715,7 +778,7 @@ msgstr ""
 #. Module-Basesystem/libpng16/libpng16-16/summary
 #. Module-Basesystem/libpng16/libpng16-16-32bit/summary
 msgid "Library for the Portable Network Graphics Format (PNG)"
-msgstr ""
+msgstr "Portable Network Graphics (PNG) ライブラリ"
 
 #. Installer/libpng16/libpng16-16/description
 #. Installer/libpng16/description
@@ -725,13 +788,13 @@ msgstr ""
 msgid ""
 "libpng is the official reference library for the Portable Network Graphics "
 "format (PNG)."
-msgstr ""
+msgstr "libpng は Portable Network Graphics (PNG) フォーマットにおける公式の参照ライブラリです。"
 
 #. Installer/libproxy/libproxy1/summary
 #. Installer/libproxy/summary
 #. Module-Basesystem/libproxy/libproxy1/summary
 msgid "Automatic proxy configuration management for applications"
-msgstr ""
+msgstr "アプリケーションに対する自動プロキシ設定管理"
 
 #. Installer/libproxy/libproxy1/description
 #. Module-Basesystem/libproxy/libproxy1/description
@@ -744,13 +807,18 @@ msgid ""
 "implementation, which complicate proxy support. libproxy exists to abstract "
 "this issue and provides an answer how to reach a certain network resource."
 msgstr ""
+"libproxy は自動プロキシ管理機能を提供するライブラリです。\n"
+"\n"
+"プロキシ自動設定 (PAC) を処理するには JavaScript が必要ですが、ほとんどのアプリケーションには用意されていません。また、 PAC "
+"スクリプトの場所を判断するには、プロキシサポートをさらにわかりにくくする WPAD プロトコル実装も必要となります。 libproxy "
+"では、このような問題を抽象化し、必要なネットワークリソースにアクセスできる機能を提供します。"
 
 #. Installer/libpsl/libpsl5/summary
 #. Installer/libpsl/summary
 #. Module-Basesystem/libpsl/libpsl5/summary
 #. Module-Basesystem/libpsl/libpsl5-32bit/summary
 msgid "C library for the Publix Suffix List"
-msgstr ""
+msgstr "Publix Suffix List 向け C ライブラリ"
 
 #. Installer/libpsl/libpsl5/description
 #. Installer/libpsl/description
@@ -765,29 +833,34 @@ msgid ""
 "\"super domain\" certificates. It is also use do highlight domain parts in a "
 "user interface and sorting domain lists by site."
 msgstr ""
+"libpsl は Public Suffix リストを処理するための C 言語ライブラリです。 \"Public Suffix\" "
+"とは、インターネット上のユーザが直接自分の名前を登録することのできる、ドメイン名を意味します。\n"
+"\n"
+"HTTP ユーザエージェントはこれを利用することで、プライバシーを漏えいさせるような \"スーパークッキー\" や \"スーパードメイン\" の証明書を避"
+"けることができるようになります。また、ユーザインターフェイス内でドメイン部分だけをハイライト表示したり、サイトごとにドメイン名を並べ替えたりすることもでき"
+"るようになります。"
 
 #. Installer/libpwquality/libpwquality-lang/summary
 #. Module-Basesystem/libpwquality/libpwquality-lang/summary
-#, fuzzy
-#| msgid "Translations for package lxinput"
 msgid "Translations for package libpwquality"
-msgstr "lxinput 向け翻訳パッケージ"
+msgstr "libpwquality 向け翻訳パッケージ"
 
 #. Installer/libpwquality/libpwquality-lang/description
 #. Module-Basesystem/libpwquality/libpwquality-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"lxinput\" package."
 msgid ""
 "Provides translations for the \"libpwquality\" package.\n"
 "\n"
 "BuildRequires:  pkgconfig(python2)"
-msgstr "lxinput パッケージ向けの翻訳データです。"
+msgstr ""
+"\"libpwquality\" パッケージ向けの翻訳データです。\n"
+"\n"
+"BuildRequires:  pkgconfig(python2)"
 
 #. Installer/libpwquality/libpwquality1/summary
 #. Installer/libpwquality/summary
 #. Module-Basesystem/libpwquality/libpwquality1/summary
 msgid "Library for password quality checking and generating random passwords"
-msgstr ""
+msgstr "パスワードの品質チェックと乱数からのパスワード生成機能を提供するライブラリ"
 
 #. Installer/libpwquality/libpwquality1/description
 #. Installer/libpwquality/description
@@ -795,14 +868,14 @@ msgstr ""
 msgid ""
 "libpwquality is a library for password quality checks and generation of "
 "random passwords that pass the checks."
-msgstr ""
+msgstr "libpwquality はパスワードの品質をチェックすることができるほか、このチェックに合格する乱数生成のパスワードを提供します。"
 
 #. Installer/libseccomp/libseccomp2/summary
 #. Installer/libseccomp/summary
 #. Module-Basesystem/libseccomp/libseccomp2/summary
 #. Module-Basesystem/libseccomp/libseccomp2-32bit/summary
 msgid "An enhanced Seccomp (mode 2) helper library"
-msgstr ""
+msgstr "拡張 seccomp (モード 2) ヘルパーライブラリ"
 
 #. Installer/libseccomp/libseccomp2/description
 #. Installer/libseccomp/description
@@ -816,13 +889,15 @@ msgid ""
 "filtering interface that should be familiar to, and easily adopted by "
 "application developers."
 msgstr ""
+"libseccomp ライブラリは、使いやすくプラットフォームに依存しない、 Linux カーネルのシステムコールのフィルタリング機構 (seccomp)"
+" へのインターフェイスを提供するライブラリです。 libseccomp の API は BPF ベースのシステムコールフィルタ言語から抽象化を行ない、より"
+"使いやすい関数呼び出し型のフィルタリングインターフェイスを提供します。これにより、アプリケーションの開発者にとって使いやすいものにしています。"
 
 #. Installer/libselinux/libselinux1/summary
 #. Module-Basesystem/libselinux/libselinux1/summary
 #. Module-Basesystem/libselinux/libselinux1-32bit/summary
-#, fuzzy
 msgid "SELinux runtime library"
-msgstr "C コンパイラランタイムライブラリ"
+msgstr "SELinux ランタイムライブラリ"
 
 #. Installer/libselinux/libselinux1/description
 #. Module-Basesystem/libselinux/libselinux1/description
@@ -835,12 +910,17 @@ msgid ""
 "implement mandatory access control policies, such as Type Enforcement, Role-"
 "based Access Control and Multi-Level Security.)"
 msgstr ""
+"libselinux はプロセスやファイルのセキュリティコンテキストの取得や設定、セキュリティポリシーの決定を取得するためのインターフェイスを提供します。"
+"\n"
+"\n"
+"(Security-enhanced Linux は、タイプエンフォースメントや役割ベースのアクセス制御のほか、マルチレベルのセキュリティにも対応した強制"
+"アクセス制御ポリシーを実装するカーネル機能とユーティリティ集です)"
 
 #. Installer/libsemanage/libsemanage1/summary
 #. Installer/libsemanage/summary
 #. Module-Basesystem/libsemanage/libsemanage1/summary
 msgid "SELinux policy management library"
-msgstr ""
+msgstr "SELinux ポリシー管理ライブラリ"
 
 #. Installer/libsemanage/libsemanage1/description
 #. Module-Basesystem/libsemanage/libsemanage1/description
@@ -854,12 +934,18 @@ msgid ""
 "implement mandatory access control policies, such as Type Enforcement, Role-"
 "based Access Control and Multi-Level Security.)"
 msgstr ""
+"libsemanage はポリシー管理ライブラリです。 libsepol と libselinux を利用して SELinux "
+"システムにアクセスするほか、ポリシーの読み込み時にヘルパープログラムを読み込んだり、 file_contexts "
+"の設定が正しいかどうかをチェックすることもできます。\n"
+"\n"
+"(Security-enhanced Linux は、タイプエンフォースメントや役割ベースのアクセス制御のほか、マルチレベルのセキュリティにも対応した強制"
+"アクセス制御ポリシーを実装するカーネル機能とユーティリティ集です)"
 
 #. Installer/libsepol/libsepol1/summary
 #. Installer/libsepol/summary
 #. Module-Basesystem/libsepol/libsepol1/summary
 msgid "SELinux binary policy manipulation library"
-msgstr ""
+msgstr "SELinux バイナリポリシー処理ライブラリ"
 
 #. Installer/libsepol/libsepol1/description
 #. Module-Basesystem/libsepol/libsepol1/description
@@ -873,11 +959,17 @@ msgid ""
 "implement mandatory access control policies, such as Type Enforcement, Role-"
 "based Access Control and Multi-Level Security.)"
 msgstr ""
+"libsepol は SELinux のバイナリポリシーを操作するための API を提供します。 checkpolicy (ポリシーコンパイラ) "
+"等のツールで利用されているほか、ポリシーの可否設定をカスタマイズするなど、バイナリポリシーの変更を利用する際に必要な load_policy "
+"などのプログラムでも利用されています。\n"
+"\n"
+"(Security-enhanced Linux は、タイプエンフォースメントや役割ベースのアクセス制御のほか、マルチレベルのセキュリティにも対応した強制"
+"アクセス制御ポリシーを実装するカーネル機能とユーティリティ集です)"
 
 #. Installer/libsmbios2/summary
 #. Module-Basesystem/libsmbios2/summary
 msgid "Libsmbios C shared libraries"
-msgstr ""
+msgstr "libsmbios C 共有ライブラリ"
 
 #. Installer/libsmbios2/description
 #. Module-Basesystem/libsmbios2/description
@@ -887,13 +979,17 @@ msgid ""
 "\n"
 "This package provides the C-based libsmbios library, with a C interface."
 msgstr ""
+"このパッケージには、標準の BIOS テーブル (SMBIOS テーブルなど) "
+"から情報を採取するクライアントプログラムから利用される、ライブラリとユーティリティが含まれています。\n"
+"\n"
+"このパッケージには、 C 言語インターフェイス付きの C 言語ベースの libsmbios が含まれています。"
 
 #. Installer/libsodium/libsodium23/summary
 #. Installer/libsodium/summary
 #. Module-Basesystem/libsodium/libsodium-devel/summary
 #. Module-Basesystem/libsodium/libsodium23/summary
 msgid "Portable NaCl-based crypto library"
-msgstr ""
+msgstr "可搬性のある NaCl ベースの暗号化ライブラリ"
 
 #. Installer/libsodium/libsodium23/description
 #. Module-Basesystem/libsodium/libsodium23/description
@@ -906,13 +1002,16 @@ msgid ""
 "Sodium is a portable, cross-compilable, installable, packageable fork of "
 "NaCl, with a compatible API."
 msgstr ""
+"NaCl (\"ソルト\" (塩) と発音します) "
+"は、暗号化やその解読、署名などに対応した、ネットワーク通信向けの使いやすい高速な新ソフトウエアライブラリです。 NaCl "
+"のゴールは、高レベルな暗号化ツールを構築するのに必要な、すべての中枢部を提供することにあります。\n"
+"\n"
+"Sodium は NaCl の移植やクロスコンパイル、インストールやパッケージなどを強化したフォークで、 API の互換性があります。"
 
 #. Installer/libsolv/libsolv-tools/summary
 #. Module-Basesystem/libsolv/libsolv-tools/summary
-#, fuzzy
-#| msgid "Utility to list X resources in widgets"
 msgid "Utilities to work with .solv files"
-msgstr "ウイジェット内で X 資源を一覧表示するユーティリティ"
+msgstr ".solv ファイルを扱うユーティリティ"
 
 #. Installer/libsolv/libsolv-tools/description
 #. Module-Basesystem/libsolv/libsolv-tools/description
@@ -922,13 +1021,15 @@ msgid ""
 "This subpackage contains utilities to create and work with the .solv files "
 "used by libsolv."
 msgstr ""
+"libsolv はパッケージの依存関係の解決と、リポジトリの読み込みを行なうライブラリです。\n"
+"\n"
+"このサブパッケージには、 libsolv で使用される .solv ファイルの作成と処理を行なうユーティリティが含まれています。"
 
 #. Installer/libssh/libssh4/summary
 #. Module-Basesystem/libssh/libssh4/summary
 #. Module-Basesystem/libssh/libssh4-32bit/summary
-#, fuzzy
 msgid "SSH library"
-msgstr "bzip2 ランタイムライブラリ"
+msgstr "SSH ライブラリ"
 
 #. Installer/libssh/libssh4/description
 #. Installer/libssh/description
@@ -942,15 +1043,19 @@ msgid ""
 "This package provides libssh from http://www.libssh.org that should not be "
 "confused with libssh2 available from http://www.libssh2.org (libssh2 package)"
 msgstr ""
+"ライブラリの形態で提供されている SSH の実装です。  libssh を使用することで、リモートのプログラムを実行したり、ファイルを転送したり、リモート"
+"のプログラムに対して機密を保護しながら透過的に使用できるトンネルを用意したりすることができます。 SFTP にも対応しています。\n"
+"\n"
+"このパッケージには、 http://www.libssh.org が提供する libssh が含まれています。 http://"
+"www.libssh2.org が提供する libssh2 (libssh2 パッケージ) とは異なるものであることに注意してください。"
 
 #. Installer/libtasn1/summary
 #. Installer/libtasn1/libtasn1-6/summary
 #. Module-Basesystem/libtasn1/summary
 #. Module-Basesystem/libtasn1/libtasn1-6/summary
 #. Module-Desktop-Applications/libtasn1/libtasn1-6-32bit/summary
-#, fuzzy
 msgid "ASN.1 parsing library"
-msgstr "簡単に使えるログ記録ライブラリ"
+msgstr "ASN.1 処理ライブラリ"
 
 #. Installer/libtasn1/description
 #. Installer/libtasn1/libtasn1-6/description
@@ -962,25 +1067,27 @@ msgid ""
 "This is the ASN.1 library used by GNUTLS. More up to date information can be "
 "found at http://www.gnu.org/software/gnutls and http://www.gnutls.org"
 msgstr ""
+"これは GNUTLS で使用される ASN.1 ライブラリです。 最新の情報は下記をご覧ください: "
+"http://www.gnu.org/software/gnutls および http://www.gnutls.org"
 
 #. Installer/libtirpc/libtirpc-netconfig/summary
 #. Module-Basesystem/libtirpc/libtirpc-netconfig/summary
 msgid "Netconfig configuration file for TI-RPC Library"
-msgstr ""
+msgstr "TI-RPC ライブラリ向け netconfig 設定ファイル"
 
 #. Installer/libtirpc/libtirpc-netconfig/description
 #. Module-Basesystem/libtirpc/libtirpc-netconfig/description
 msgid ""
 "This RPM contains the netconfig configuration file and manual page for the "
 "TI-RPC Library."
-msgstr ""
+msgstr "この RPM には、 netconfig 設定ファイルと TI-RPC ライブラリ向けのマニュアルページが含まれています。"
 
 #. Installer/libtirpc/libtirpc3/summary
 #. Installer/libtirpc/summary
 #. Module-Basesystem/libtirpc/libtirpc3/summary
 #. Module-Basesystem/libtirpc/libtirpc3-32bit/summary
 msgid "Transport Independent RPC Library"
-msgstr ""
+msgstr "転送方法に依存しない RPC ライブラリ"
 
 #. Installer/libtirpc/libtirpc3/description
 #. Installer/libtirpc/description
@@ -993,13 +1100,16 @@ msgid ""
 "implementation allows the support of other transports than UDP and TCP over "
 "IPv4."
 msgstr ""
+"Transport Independent RPC library (転送方法に依存しない RPC ライブラリ; TI-RPC) は、 glibc "
+"内に含まれている IPv6 アドレス非対応の標準 SunRPC ライブラリの置き換えとして作られたものです。 この実装は IPv4 上の UDP や "
+"TCP 以外にも対応しています。"
 
 #. Installer/libunistring/libunistring2/summary
 #. Installer/libunistring/summary
 #. Module-Basesystem/libunistring/libunistring2/summary
 #. Module-Basesystem/libunistring/libunistring2-32bit/summary
 msgid "GNU Unicode string library"
-msgstr ""
+msgstr "GNU Unicode 文字列ライブラリ"
 
 #. Installer/libunistring/libunistring2/description
 #. Installer/libunistring/description
@@ -1012,6 +1122,9 @@ msgid ""
 "(iteration, formatted output, width, word breaks, line breaks, "
 "normalization, case folding and regular expressions)."
 msgstr ""
+"この汎用 C ライブラリは、下記の 3 種類の Unicode 形式による文字列を実装しています:UTF-8, UTF-16, UTF-32. "
+"文字の処理機能 (名前、分類、プロパティ) のほか、文字列処理 "
+"(列挙、書式化出力、幅、ワードブレーク、ラインブレーク、正規化、大文字と小文字の変換、正規表現) 機能も備えています。"
 
 #. Installer/libunwind/summary
 #. Module-Basesystem/libunwind/summary
@@ -1024,28 +1137,27 @@ msgstr "\"ほどく\" ためのライブラリ"
 msgid ""
 "A portable and efficient C programming interface (API) to determine the call "
 "chain of a program."
-msgstr ""
+msgstr "プログラムの呼び出し履歴を便利かつ効果的に判断するための C プログラミングインターフェイスです。"
 
 #. Installer/libusb-1_0/libusb-1_0-0/summary
 #. Installer/libusb-1_0/summary
 #. Module-Basesystem/libusb-1_0/libusb-1_0-0/summary
 #. Module-Basesystem/libusb-1_0/libusb-1_0-devel/summary
-#, fuzzy
 msgid "USB Library"
-msgstr "bzip2 ランタイムライブラリ"
+msgstr "USB ライブラリ"
 
 #. Installer/libusb-1_0/libusb-1_0-0/description
 #. Installer/libusb-1_0/description
 #. Module-Basesystem/libusb-1_0/libusb-1_0-0/description
 #. Module-Basesystem/libusb-1_0/libusb-1_0-devel/description
 msgid "Libusb is a library that allows userspace access to USB devices."
-msgstr ""
+msgstr "libusb は、 USB デバイスにユーザスペースからアクセスするためのライブラリです。"
 
 #. Installer/libustr/libustr-1_0-1/summary
 #. Installer/libustr/summary
 #. Module-Basesystem/libustr/libustr-1_0-1/summary
 msgid "String library, very low memory overhead, simple to import"
-msgstr ""
+msgstr "メモリのオーパヘッドがとても少なく取り込みやすい文字列ライブラリ"
 
 #. Installer/libustr/libustr-1_0-1/description
 #. Installer/libustr/description
@@ -1056,13 +1168,15 @@ msgid ""
 "can just include a single header file into your .c and start using it. This "
 "package also distributes pre-built shared libraries."
 msgstr ""
+"Micro string ライブラリは純粋な strdup() と比べてもとても少ないオーパヘッドで動作します (0-20 バイトの文字列で平均 44%)"
+" 。既存の C コードからも簡単に使うことができます。 お使いの C ソースコードを修正して単一のヘッダファイルを読み込むようにするだけで "
+"使うことができます。このパッケージには事前に構築された共有ライブラリも含まれています。"
 
 #. Installer/libverto/libverto1/summary
 #. Module-Basesystem/libverto/libverto1/summary
 #. Module-Basesystem/libverto/libverto1-32bit/summary
-#, fuzzy
 msgid "Runtime libraries for libverto"
-msgstr "libyaml 向け共有ライブラリ"
+msgstr "libverto 向けのランタイムライブラリ"
 
 #. Installer/libverto/libverto1/description
 #. Installer/libverto/description
@@ -1081,13 +1195,20 @@ msgid ""
 "three because it lacks signal. However, glib will support signal in the "
 "future."
 msgstr ""
+"libverto は、特定のイベントループを選択することなく、非同期のインターフェイスを公開するライブラリ向けの機能を提供します。これにより、アプリケーシ"
+"ョンがこのライブラリを使用することで、負荷を減らす効果を期待することができます。\n"
+"\n"
+"libverto をベースにして、ライブラリではなくアプリケーションのパッケージを作成される方の場合は、特定の実装モジュールに依存するか、もしくは仮想の "
+"'libverto-module-base' を利用するかのいずれかにする必要があります。これにより、I/O やタイムアウト、"
+"シグナルなどの機能について少なくとも 1 つのモジュールがインストールされるようになります。現時点では、 glib だけがこの 3 つの機能を提供しない "
+"(具体的には、シグナル機能が提供されていない) ライブラリになっていますが、将来的に対応する予定とのことです。"
 
 #. Installer/libx86emu/libx86emu1/summary
 #. Installer/libx86emu/summary
 #. Module-Basesystem/libx86emu/libx86emu-devel/summary
 #. Module-Basesystem/libx86emu/libx86emu1/summary
 msgid "A small x86 emulation library."
-msgstr ""
+msgstr "小さな x86 エミュレーションライブラリ"
 
 #. Installer/libx86emu/libx86emu1/description
 #. Installer/libx86emu/description
@@ -1102,14 +1223,19 @@ msgid ""
 "Authors:\n"
 "--------     Steffen Winterfeldt"
 msgstr ""
+"この小さな x86 エミュレーションライブラリは、使いやすく拡張性の高いログ機能を持つライブラリです。\n"
+"\n"
+"\n"
+"\n"
+"作者:\n"
+"--------     Steffen Winterfeldt"
 
 #. Installer/libxml2/libxml2-2/summary
 #. Installer/libxml2/summary
 #. Module-Basesystem/libxml2/libxml2-2/summary
 #. Module-Basesystem/libxml2/libxml2-2-32bit/summary
-#, fuzzy
 msgid "A Library to Manipulate XML Files"
-msgstr "MIME メッセージを扱うためのモジュール"
+msgstr "XML ファイルを操作するライブラリ"
 
 #. Installer/libxml2/libxml2-2/description
 #. Module-Basesystem/libxml2/libxml2-2/description
@@ -1130,26 +1256,33 @@ msgid ""
 "The library also supports RelaxNG. Support for W3C XML Schemas is in "
 "progress."
 msgstr ""
+"XML C ライブラリは、もともと GNOME プロジェクト向けに開発されたものでした。いまや多くのプログラムで使用されるものとなり、さまざまな種類の "
+"XML ファイルを操作したり、データ構造を読み書きしたりするために使われています。\n"
+"\n"
+"このライブラリは、マークアップ言語に関連する既存の標準を多数実装しています。これには XML 標準のほか、 XML におけるネームスペースや XML "
+"ベース, RFC 2396, XPath, XPointer, HTML4, XInclude, SGML カタログ, XML "
+"カタログなどを実装しています。また多くの場合、 libxml "
+"は比較的厳密な実装が行なわれています。また、特に要求されたものではありませんが、下記のような仕様への対応も行なわれています: DOM, FTP "
+"クライアント, HTTP クライアント, SAX\n"
+"\n"
+"このライブラリは、 RelaxNG にも対応しています。 W3C XML スキーマへの対応は現在作業中です。"
 
 #. Installer/libxml2/libxml2-tools/summary
 #. Module-Basesystem/libxml2/libxml2-tools/summary
-#, fuzzy
 msgid "Tools using libxml"
-msgstr "libgpod ツール"
+msgstr "libxml を使用するツール"
 
 #. Installer/libxml2/libxml2-tools/description
 #. Module-Basesystem/libxml2/libxml2-tools/description
-#, fuzzy
 msgid ""
 "This package contains xmllint, a very useful tool proving libxml's power."
-msgstr ""
-"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+msgstr "このパッケージには、 libxml の便利な機能をツール形式で提供する xmllint が含まれています。"
 
 #. Installer/libyajl/libyajl2/summary
 #. Installer/libyajl/summary
 #. Module-Basesystem/libyajl/libyajl2/summary
 msgid "Yet Another JSON Library"
-msgstr ""
+msgstr "もう 1 つの JSON ライブラリ"
 
 #. Installer/libyajl/libyajl2/description
 #. Installer/libyajl/description
@@ -1157,7 +1290,7 @@ msgstr ""
 msgid ""
 "YAJL is a small event-driven (SAX-style) JSON parser written in ANSI C, and "
 "a small validating JSON generator."
-msgstr ""
+msgstr "YAJL は ANSI C で書かれた小さなイベント駆動型 (SAX スタイルの) JSON パーサー兼検証型 JSON 生成器です。"
 
 #. Installer/libyaml/libyaml-0-2/summary
 #. Module-Basesystem/libyaml/libyaml-0-2/summary
@@ -1172,14 +1305,15 @@ msgid ""
 "\n"
 "This package holds the shared library of libyaml."
 msgstr ""
+"C 言語で書かれた、 YAML 1.1 パーサとエミッタです。\n"
+"\n"
+"このパッケージには、 libyaml の共有ライブラリが含まれています。"
 
 #. Installer/libzio/libzio1/summary
 #. Installer/libzio/summary
 #. Module-Basesystem/libzio/libzio1/summary
-#, fuzzy
-#| msgid "A library for locking devices"
 msgid "A Library for Accessing Compressed Text Files"
-msgstr "デバイスを施錠するためのライブラリ"
+msgstr "圧縮テキストファイルにアクセスするライブラリ"
 
 #. Installer/libzio/libzio1/description
 #. Installer/libzio/description
@@ -1187,14 +1321,14 @@ msgstr "デバイスを施錠するためのライブラリ"
 msgid ""
 "Libzio provides a wrapper function for reading or writing gzip or bzip2 "
 "files with FILE streams."
-msgstr ""
+msgstr "libzio は gzip や bzip2 ファイルを読み書きするための FILE ストリームを作成するラッパー関数を提供します。"
 
 #. Installer/libzypp/summary
 #. Installer/libzypp/description
 #. Module-Basesystem/libzypp/summary
 #. Module-Basesystem/libzypp/description
 msgid "Package, Patch, Pattern, and Product Management"
-msgstr ""
+msgstr "パッケージ、修正、パターン、製品の管理"
 
 #. Installer/logrotate/summary
 #. Module-Basesystem/logrotate/summary
@@ -1283,7 +1417,7 @@ msgstr ""
 #. Module-Basesystem/libkcapi/libkcapi-devel/summary
 #. Module-Basesystem/libkcapi/libkcapi0/summary
 msgid "Linux Kernel Crypto API User Space Interface Library"
-msgstr ""
+msgstr "Linux カーネル暗号化 API ユーザスペースインターフェイスライブラリ"
 
 #. Installer/libkcapi/description
 msgid ""
@@ -1298,6 +1432,7 @@ msgid ""
 "The libnl suite is a collection of libraries providing APIs to Netlink "
 "protocol based Linux kernel interfaces."
 msgstr ""
+"libnl スイートは、 Netlink プロトコルベースの Linux カーネルインターフェイスに対して、 API を提供するライブラリ集です。"
 
 #. Installer/libproxy/description
 msgid ""
@@ -1330,6 +1465,9 @@ msgid ""
 "by programs like load_policy that need to perform specific transformations "
 "on binary policies such as customizing policy boolean settings."
 msgstr ""
+"libsepol は SELinux のバイナリポリシーを操作するための API を提供します。 checkpolicy (ポリシーコンパイラ) "
+"等のツールで利用されているほか、ポリシーの可否設定をカスタマイズするなど、バイナリポリシーの変更を利用する際に必要な load_policy "
+"などのプログラムでも利用されています。"
 
 #. Installer/libsodium/description
 msgid ""
@@ -1370,6 +1508,8 @@ msgid ""
 "used by many programs to load and save extensible data structures or "
 "manipulate any kind of XML files."
 msgstr ""
+"XML C ライブラリは、もともと GNOME プロジェクト向けに開発されたものでした。いまや多くのプログラムで使用されるものとなり、さまざまな種類の "
+"XML ファイルを操作したり、データ構造を読み書きしたりするために使われています。"
 
 #. Installer/libyaml/summary
 #. Installer/libyaml/description
@@ -1449,7 +1589,7 @@ msgstr ""
 
 #. Module-Basesystem/libdb-4_8/db48-utils/summary
 msgid "Command Line tools for Managing Berkeley DB Databases"
-msgstr ""
+msgstr "Berkeley DB データベースを管理するためのコマンドラインツール"
 
 #. Module-Basesystem/libdb-4_8/db48-utils/description
 msgid ""
@@ -1459,10 +1599,13 @@ msgid ""
 "This package contains the command line tools for managing Berkeley DB "
 "databases."
 msgstr ""
+"Berkeley DB データベースは、アプリケーションに対してデータベース機能を提供するツールキットです。\n"
+"\n"
+"このパッケージには、 Berkeley DB データベースを管理するためのコマンドラインツールが含まれています。"
 
 #. Module-Basesystem/librsvg/gdk-pixbuf-loader-rsvg/summary
 msgid "A gdk-pixbuf loader for SVG using librsvg"
-msgstr ""
+msgstr "librsvg を利用する SVG 向け gdk-pixbuf ローダ"
 
 #. Module-Basesystem/librsvg/gdk-pixbuf-loader-rsvg/description
 msgid ""
@@ -1471,6 +1614,10 @@ msgid ""
 "\n"
 "This package provides a librsvg-based gdk-pixbuf loader."
 msgstr ""
+"このパッケージには、 SVG (Scalable Vector Graphics) データを描画するための ライブラリが含まれています。"
+"このフォーマットは W3C で規定されたものです (詳しくは http://www.w3c.org をご覧ください) 。\n"
+"\n"
+"このパッケージには、 libopenraw ベースの gdk-pixbuf ローダが含まれています。"
 
 #. Module-Basesystem/lapack/lapack-devel/summary
 msgid "Linear Algebra Package"
@@ -1584,12 +1731,10 @@ msgstr ""
 "存在します。"
 
 #. Module-Basesystem/libFS/libFS-devel/summary
-#, fuzzy
 msgid "Development files for the X Font Service client library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X フォントサービスクライアントライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libFS/libFS-devel/description
-#, fuzzy
 msgid ""
 "This library is used by clients of X Font Servers (xfs), such as xfsinfo, "
 "xfslsfonts, and the X servers themselves.\n"
@@ -1597,28 +1742,27 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libFS6."
 msgstr ""
-"libXi は X 入力拡張向けのクライアント側ライブラリです。\n"
+"このライブラリは X フォントサーバ (xfs) のクライアントで使用されるもので、たとえば xfsinfo, xfslsfonts のほか、 X "
+"サーバ自身でも使用されます。\n"
 "\n"
-"このパッケージには、 libXi6 内のライブラリに対する、開発用のヘッダファイルが"
-"含まれています。"
+"このパッケージには、 libFS6 内のライブラリに対する開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libFS/libFS6/summary
-#, fuzzy
-#| msgid "LIRC client library"
 msgid "X Font Service client library"
-msgstr "LIRC クライアントライブラリ"
+msgstr "X フォントサービスクライアントライブラリ"
 
 #. Module-Basesystem/libFS/libFS6/description
 msgid ""
 "This library is used by clients of X Font Servers (xfs), such as xfsinfo, "
 "xfslsfonts, and the X servers themselves."
 msgstr ""
+"このライブラリは、 xfsinfo や xfslsfonts, X サーバそれ自身で使用される、 X フォントサーバ (xfs) のクライアントです。"
 
 #. Module-Basesystem/libHX/libHX-devel/summary
 #. Module-Basesystem/libHX/libHX28/summary
 #. Module-Basesystem/libHX/libHX28-32bit/summary
 msgid "Useful collection of routines for C and C++ programming"
-msgstr ""
+msgstr "C/C++ プログラミング向けの便利なルーチン集"
 
 #. Module-Basesystem/libHX/libHX-devel/description
 msgid ""
@@ -1627,6 +1771,8 @@ msgid ""
 "lists, string formatting and autoresizing, option and config file parsing, "
 "type checking casts and more."
 msgstr ""
+"libHX は C 言語でのライブラリ (C++ 言語向けのバインディングも用意されています)で、マップやキューイング、リンクリストや文字列の書式化と自動"
+"サイズ変更、オプションや設定ファイルの処理、型チェックやキャストなど、一般的に必要とされるデータ構造と関数を提供しています。"
 
 #. Module-Basesystem/libHX/libHX28/description
 #. Module-Basesystem/libHX/libHX28-32bit/description
@@ -1642,11 +1788,16 @@ msgid ""
 "library. The focus is on reducing the amount of time (and secondarily, the "
 "amount of code) a developer has to spend for otherwise implementing such."
 msgstr ""
+"libHX は C 言語でのライブラリ (C++ 言語向けのバインディングも用意されています)で、マップやキューイング、リンクリストや文字列の書式化と自動"
+"サイズ変更、オプションや設定ファイルの処理、型チェックやキャストなど、一般的に必要とされるデータ構造と関数を提供しています。\n"
+"\n"
+"libHX は、 C 言語や C++ 言語におけるデータ処理プログラムを素早く作成できるようにすることを目的にしていて、 (シンプルな) "
+"設定ファイルの読み込みやオプションの処理、ディレクトリの読み込みなどを、ライブラリの形でとりまとめることができます。これにより、開発にかかる時間を削減 "
+"(およびコード量も削減) し、その他の作業に時間を割くことができるようにしています。"
 
 #. Module-Basesystem/libICE/libICE-devel/summary
-#, fuzzy
 msgid "Development files for the X11 Inter-Client Exchange Library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X クライアント間データ交換管理ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libICE/libICE-devel/description
 msgid ""
@@ -1657,11 +1808,15 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libICE6."
 msgstr ""
+"クライアント間データ交換 (Inter-Client Exchange (ICE)) プロトコルは、クライアント間でデータ交換を行なうためのフレームワーク"
+"であり、一般的なネゴシエーション機構や単一の透過型接続を多重化する仕組みなどが用意されています。\n"
+"\n"
+"このパッケージには、 libICE6 内のライブラリに対する、開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libICE/libICE6/summary
 #. Module-Desktop-Applications/libICE/libICE6-32bit/summary
 msgid "X11 Inter-Client Exchange Library"
-msgstr ""
+msgstr "X11 クライアント間データ交換ライブラリ"
 
 #. Module-Basesystem/libICE/libICE6/description
 #. Module-Desktop-Applications/libICE/libICE6-32bit/description
@@ -1670,6 +1825,8 @@ msgid ""
 "for building such protocols, allowing them to make use of common negotiation "
 "mechanisms and to be multiplexed over a single transport connection."
 msgstr ""
+"クライアント間データ交換 (Inter-Client Exchange (ICE)) プロトコルは、クライアント間でデータ交換を行なうためのフレームワーク"
+"であり、一般的なネゴシエーション機構や単一の透過型接続を多重化する仕組みなどが用意されています。"
 
 #. Module-Basesystem/llvm5/libLLVM5-32bit/summary
 #. Module-Basesystem/llvm5/libLLVM5/summary
@@ -1692,18 +1849,16 @@ msgid "This package contains the link-time optimizer for LLVM."
 msgstr "このパッケージには、 C++ 言語向けの GNU コンパイラが含まれています。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Concurrent-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 Concurrent library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 Concurrent ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Concurrent-devel/description
-#, fuzzy
 msgid "Development files for the Qt5 Concurrent library."
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 Concurrent ライブラリ向け開発用ファイルです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Concurrent5/summary
 msgid "Qt 5 Concurrent Library"
-msgstr ""
+msgstr "Qt 5 Concurrent ライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Concurrent5/description
 msgid ""
@@ -1718,20 +1873,24 @@ msgid ""
 "memory (non-distributed) systems, and classes for managing asynchronous "
 "computations in GUI applications."
 msgstr ""
+"QtConcurrent ネームスペースは、ミューテックスや読み書きのロック、待機条件やセマフォなどの低レベルなスレッドプリミティブを利用せずに、"
+"マルチスレッド型のプログラムを開発するための高レベルな API を提供しています。  QtConcurrent "
+"を利用するプログラムは、利用可能なプロセッサコア数に応じて、利用するスレッド数が自動変化する仕組みを利用することができます。\n"
+"\n"
+"QtConcurrent では、 MapReduce や FilterReduce などの共有メモリ (非分散) システム向け実装並行リスト処理のほか、 "
+"GUI アプリケーション内で非同期計算処理を管理するためのクラスなど、並行リスト処理向けの関数型プログラミング API を提供しています。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Core-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 core library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 コアライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Core-devel/description
-#, fuzzy
 msgid "Development files for the Qt5 core library."
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 コアライブラリ向け開発用ファイルです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Core-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 core library"
-msgstr ""
+msgstr "Qt5 core ライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Core-private-headers-devel/description
 msgid ""
@@ -1740,12 +1899,12 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5Core のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Core5/summary
-#, fuzzy
-#| msgid "BLAS Shared Library"
 msgid "Qt 5 Core Library"
-msgstr "BLAS 共有ライブラリ"
+msgstr "Qt 5 コアライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Core5/description
 msgid ""
@@ -1756,21 +1915,27 @@ msgid ""
 "* object ownership in a natural way with guarded pointers (QPointer)\n"
 "* a dynamic cast that works across library boundaries"
 msgstr ""
+"Qt 5 コアライブラリです。 C++ に対してこれらの機能を追加します:\n"
+"* シグナルやスロットと呼ばれるオブジェクト通信機構\n"
+"* オブジェクトのプロパティへの問い合わせや設計\n"
+"* 階層的で問い合わせのできる統合型オブジェクトツリー\n"
+"* ガードポインタ (QPointer) 付きの自然なオブジェクト所有権\n"
+"* ライブラリの境界をまたがって動作する動的キャスト"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5DBus-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 D-Bus library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 D-Bus ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5DBus-devel/description
 msgid ""
 "Development files for the Qt5 D-Bus library. This package also contains "
 "Qt5's qdbusxml2cpp and qdbuscpp2xml binaries."
 msgstr ""
+"Qt5 D-Bus ライブラリ向けの開発用ファイルです。 Qt5 の qdbusxml2cpp と qdbuscpp2xml のバイナリも含まれています。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5DBus-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 D-Bus library"
-msgstr ""
+msgstr "Qt5 D-Bus ライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5DBus-private-headers-devel/description
 msgid ""
@@ -1779,30 +1944,30 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5DBus のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5DBus5/summary
 msgid "Qt5 D-Bus library"
-msgstr ""
+msgstr "Qt5 D-Bus ライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5DBus5/description
 msgid ""
 "The Qt D-Bus module is a library that can be used to perform inter-process "
 "communication using the D-Bus protocol."
-msgstr ""
+msgstr "Qt D-Bus モジュールは、 D-Bus プロトコルを利用してプロセス間通信を行なう際に必要なライブラリです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Gui-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 GUI library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 GUI ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Gui-devel/description
-#, fuzzy
 msgid "Development files for the Qt5 GUI library."
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 GUI ライブラリ向け開発用ファイルです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Gui-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 GUI library"
-msgstr ""
+msgstr "Qt5 GUI ライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Gui-private-headers-devel/description
 msgid ""
@@ -1811,10 +1976,12 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5Gui のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Gui5/summary
 msgid "Qt 5 GUI related libraries"
-msgstr ""
+msgstr "Qt 5 GUI 関連ライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Gui5/description
 msgid ""
@@ -1828,18 +1995,25 @@ msgid ""
 "APIs, like Qt Quick, which are much more suitable than the enablers found in "
 "the Qt GUI module."
 msgstr ""
+"Qt GUI モジュールは、ウインドウ処理のシステム統合やイベントの処理、 OpenGL や OpenGL ES との統合や 2D "
+"グラフィック、基本的なイメージ処理やフォント、テキストなどのクラスを提供します。これらのクラスは Qt "
+"のインターフェイスコード内で内部的に使用されていますが、直接利用することもできます。例えば低レベルな OpenGL ES グラフィック API "
+"を利用するアプリケーションの開発などに利用できます。\n"
+"\n"
+"ユーザインターフェイスを開発したいアプリケーション開発者に対しては、より高レベルな API (Qt Quick など) が提供されています。これらは "
+"Qt GUI モジュールを利用する場合に比べて、より適切な選択です。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5KmsSupport-devel-static/summary
 msgid "Qt KMS support module"
-msgstr ""
+msgstr "Qt KMS サポートモジュール"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5KmsSupport-devel-static/description
 msgid "Qt module to support Kernel Mode Setting."
-msgstr ""
+msgstr "カーネルモード設定 (KMS) サポートのための Qt モジュールです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5KmsSupport-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 KMS support library"
-msgstr ""
+msgstr "Qt5 KMS サポートライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5KmsSupport-private-headers-devel/description
 msgid ""
@@ -1848,20 +2022,21 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5KmsSupport "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Network-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 network library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 ネットワークライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Network-devel/description
-#, fuzzy
 msgid "Development files for the Qt5 network library."
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 ネットワークライブラリ向け開発用ファイルです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Network-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 network library"
-msgstr ""
+msgstr "Qt5 network ライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Network-private-headers-devel/description
 msgid ""
@@ -1870,10 +2045,12 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5Network のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、"
+" ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Network5/summary
 msgid "Qt 5 Network Library"
-msgstr ""
+msgstr "Qt 5 ネットワークライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Network5/description
 msgid ""
@@ -1881,11 +2058,12 @@ msgid ""
 "IP. Operations such as requests, cookies, and sending data over HTTP are "
 "handled by various C++ classes."
 msgstr ""
+"Qt Network は TCP/IP を利用するプログラムに対して、 API を提供する仕組みです。リクエストやクッキーの制御のほか、 HTTP "
+"を介したデータ送信などを C++ クラスで処理することができます。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5OpenGL-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 OpenGL library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 OpenGL ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5OpenGL-devel/description
 msgid ""
@@ -1894,10 +2072,13 @@ msgid ""
 "Warning: This module should not be used anymore for new code. Please use the "
 "corresponding OpenGL classes in Qt GUI."
 msgstr ""
+"Qt5 OpenGL 向けの開発用ファイルです。\n"
+"\n"
+"警告: このモジュールは、新しいコードで使用すべきものではありません。代わりに Qt GUI 内にある関連する OpenGL クラスをお使いください。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5OpenGL-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 OpenGL library"
-msgstr ""
+msgstr "Qt5 OpenGL ライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5OpenGL-private-headers-devel/description
 msgid ""
@@ -1906,10 +2087,12 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5OpenGL のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5OpenGL5/summary
 msgid "Qt 5 OpenGL Library"
-msgstr ""
+msgstr "Qt 5 OpenGL ライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5OpenGL5/description
 msgid ""
@@ -1917,26 +2100,29 @@ msgid ""
 "any other Qt widget, except that it opens an OpenGL display buffer where the "
 "OpenGL API can be used to render the contents."
 msgstr ""
+"Qt OpenGL モジュールは、任意の Qt ウイジェットを OpenGL "
+"ウイジェットとして利用できる機能を提供します。通常のディスプレイバッファではなく、 OpenGL のディスプレイバッファになりますので、これによって "
+"OpenGL API が内容を描画できるようになります。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PlatformHeaders-devel/summary
 msgid "Qt 5 PlatformHeaders"
-msgstr ""
+msgstr "Qt 5 PlatformHeaders"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PlatformHeaders-devel/description
 msgid "Qt 5 PlatformHeaders."
-msgstr ""
+msgstr "Qt 5 PlatformHeaders です。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PlatformSupport-devel-static/summary
 msgid "Qt PlatformSupport module"
-msgstr ""
+msgstr "Qt PlatformSupport モジュール"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PlatformSupport-devel-static/description
 msgid "Qt PlatformSupport module."
-msgstr ""
+msgstr "Qt PlatformSupport モジュールです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PlatformSupport-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the  Qt5 platform support library"
-msgstr ""
+msgstr "Qt5 プラットフォームサポートライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PlatformSupport-private-headers-devel/description
 msgid ""
@@ -1945,20 +2131,21 @@ msgid ""
 "API guarantees. The packages that build against these have to require the "
 "exact Qt version."
 msgstr ""
+"このパッケージには libQt5PlatformSupport "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PrintSupport-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 print support library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 印刷サポートライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PrintSupport-devel/description
-#, fuzzy
 msgid "Development files for the Qt5 print support library."
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 印刷サポートライブラリ向け開発用ファイルです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PrintSupport-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 print support library"
-msgstr ""
+msgstr "Qt5 印刷サポートライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PrintSupport-private-headers-devel/description
 msgid ""
@@ -1967,10 +2154,13 @@ msgid ""
 "API guarantees. The packages that build against these have to require the "
 "exact Qt version."
 msgstr ""
+"このパッケージには libQt5PrintSupport "
+"のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 ABI/API "
+"の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PrintSupport5/summary
 msgid "Qt 5 Print Support Library"
-msgstr ""
+msgstr "Qt 5 印刷サポートライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5PrintSupport5/description
 msgid ""
@@ -1979,10 +2169,13 @@ msgid ""
 "to remote printers. Qt's printing system also supports PDF file generation, "
 "providing the foundation for basic report generation facilities."
 msgstr ""
+"プラットフォーム固有の印刷システムに対する抽象レイヤです。このライブラリを利用することで、 Qt "
+"アプリケーションから接続されているプリンタのほか、ネットワーク上離れた場所にあるプリンタからも印刷ができるようになります。 Qt の印刷システムでは、"
+"基本的な生成機構を提供する PDF ファイル生成にも対応しています。"
 
 #. Module-Basesystem/libqt5-qtserialport/libQt5SerialPort5/summary
 msgid "Qt 5 Serial Port Addon"
-msgstr ""
+msgstr "Qt 5 シリアルポートアドオン"
 
 #. Module-Basesystem/libqt5-qtserialport/libQt5SerialPort5/description
 msgid ""
@@ -1991,11 +2184,12 @@ msgid ""
 "pinouts. This module does not support terminal features (echo, CR/LF "
 "control, text mode, timeouts/delays, or poinout signal change notification)."
 msgstr ""
+"Qt シリアルポートは、シリアルポートの設定や I/O 操作、 RS-232 ピンアウトの信号制御の取得および設定などを行なう機能を提供します。"
+"このモジュールには端末機能 (エコー、 CR/LF 制御、テキストモード、タイムアウト／遅延、ピンアウトの信号変化通知) はありません。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 SQL library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 SQL ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql-devel/description
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql5/description
@@ -2003,10 +2197,11 @@ msgid ""
 "Qt 5 libraries which are used for connection with an SQL server. You will "
 "need also a plugin package for a supported SQL server."
 msgstr ""
+"SQL サーバと接続するために使用される Qt 5 ライブラリです。 対応する SQL サーバ向けに、それぞれのプラグインパッケージが必要です。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 SQL library"
-msgstr ""
+msgstr "Qt5 SQL ライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql-private-headers-devel/description
 msgid ""
@@ -2015,16 +2210,16 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5Sql のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql5/summary
-#, fuzzy
-#| msgid "LXDE panel libraries"
 msgid "Qt 5 SQL related libraries"
-msgstr "LXDE パネルライブラリ"
+msgstr "Qt 5 SQL 関連ライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql5-sqlite/summary
 msgid "Qt 5 sqlite plugin"
-msgstr ""
+msgstr "Qt 5 sqlite プラグイン"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Sql5-sqlite/description
 msgid ""
@@ -2036,30 +2231,34 @@ msgid ""
 "database server. SQLite operates on a single file, which must be set as the "
 "database name when opening a connection."
 msgstr ""
+"Qt SQL モジュールは、様々なデータベース API と通信を行なうためドライバプラグインを使用しています。\n"
+"\n"
+"Qt SQLite プラグインでは、 SQLite データベースへのアクセスを提供します。 SQLite "
+"はプロセス内データベースと呼ばれる仕組みで、別途のデータベースサーバを必要としない仕組みです。 SQLite "
+"は単一のファイルを利用して動作する仕組みで、接続を開く際にデータベース名を指定して動作します。"
 
 #. Module-Basesystem/libqt5-qtsvg/libQt5Svg5/summary
 msgid "Qt 5 SVG Library"
-msgstr ""
+msgstr "Qt 5 SVG ライブラリ"
 
 #. Module-Basesystem/libqt5-qtsvg/libQt5Svg5/description
 msgid ""
 "The Qt SVG module provides functionality for displaying SVG images as a "
 "widget, and to create SVG files using drawing commands."
 msgstr ""
+"Qt SVG モジュールは、ウイジェットとして SVG 画像を表示したり、描画コマンドを利用して SVG ファイルを作成するための機能を提供します。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Test-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 testing library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 testing ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Test-devel/description
-#, fuzzy
 msgid "Development files for the Qt5 testing library."
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 testing ライブラリ向け開発用ファイルです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Test-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 test library"
-msgstr ""
+msgstr "Qt5 test ライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Test-private-headers-devel/description
 msgid ""
@@ -2068,10 +2267,12 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5Test のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、 "
+"ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Test5/summary
 msgid "Qt 5 Test Library"
-msgstr ""
+msgstr "Qt 5 テストライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Test5/description
 msgid ""
@@ -2079,10 +2280,12 @@ msgid ""
 "Qt Test provides functionality commonly found in unit testing frameworks as "
 "well as extensions for testing graphical user interfaces."
 msgstr ""
+"Qt Test は Qt ベースのアプリケーションやライブラリに対する単体テスト向けフレームワークです。 Qt Test "
+"では、単体テストフレームワーク内によくある機能に対応しているほか、グラフィカルユーザインターフェイスをテストするための拡張も用意されています。"
 
 #. Module-Basesystem/libqt5-qtwebchannel/libQt5WebChannel5/summary
 msgid "Qt 5 WebChannel Addon"
-msgstr ""
+msgstr "Qt 5 WebChannel アドオン"
 
 #. Module-Basesystem/libqt5-qtwebchannel/libQt5WebChannel5/description
 msgid ""
@@ -2094,12 +2297,16 @@ msgid ""
 "the JavaScript library to access the serialized QObjects published by the "
 "host applications."
 msgstr ""
+"Qt WebChannel は、サーバ (QML/C++ アプリケーション) とクライアント (HTML/JavaScript または QML "
+"アプリケーション) との間で、一対一の通信を行なう機能を提供します。\n"
+"\n"
+"このモジュールには、 C++/QML アプリケーションと HTML/JavaScript および QML クライアントとの間を、シームレスに統合する "
+"JavaScript ライブラリが含まれています。クライアント側でも、この JavaScript ライブラリを使用して、"
+"ホストアプリケーションが提供するシリアライズされた QObject にアクセスしなければなりません。"
 
 #. Module-Basesystem/libqt5-qtwebsockets/libQt5WebSockets5/summary
-#, fuzzy
-#| msgid "Web Phone"
 msgid "Qt 5 WebSockets Library"
-msgstr "Web 電話"
+msgstr "Qt 5 WebSockets ライブラリ"
 
 #. Module-Basesystem/libqt5-qtwebsockets/libQt5WebSockets5/description
 #. Module-Desktop-Applications/libqt5-qtwebsockets/libQt5WebSockets5-imports/description
@@ -2108,20 +2315,20 @@ msgid ""
 "applications to act as a server that can process WebSocket requests, or a "
 "client that can consume data received from the server, or both."
 msgstr ""
+"Qt WebSocket モジュールは、 Qt アプリケーションを WebSocket リクエストのサーバまたはクライアントにすることができる、 C++ "
+"および QML のインターフェイスを提供します。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Widgets-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 widgets library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 widgets ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Widgets-devel/description
-#, fuzzy
 msgid "Development files for the Qt5 widgets library."
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 widgets ライブラリ向け開発用ファイルです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Widgets-private-headers-devel/summary
 msgid "Non-ABI stable experimental API for the Qt5 widgets library"
-msgstr ""
+msgstr "Qt5 ウイジェットライブラリ向け非 ABI 安定実験版 API"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Widgets-private-headers-devel/description
 msgid ""
@@ -2130,20 +2337,22 @@ msgid ""
 "guarantees. The packages that build against these have to require the exact "
 "Qt version."
 msgstr ""
+"このパッケージには libQt5Widgets のプライベートヘッダが含まれています。これらは通常のアプリケーション開発では必要となることはありませんし、"
+" ABI/API の保証もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケーションを構築するためのものです。"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Widgets5/summary
 msgid "Qt 5 Widgets Library"
-msgstr ""
+msgstr "Qt 5 ウイジェットライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Widgets5/description
 msgid ""
 "The Qt Widgets Module provides a set of UI elements to create classic "
 "desktop-style user interfaces."
-msgstr ""
+msgstr "Qt Widgets モジュールは、クラシックなデスクトップ型ユーザインターフェイスを作成するための UI 要素集を提供します。"
 
 #. Module-Basesystem/libqt5-qtx11extras/libQt5X11Extras5/summary
 msgid "Qt 5 X11 Extras Addon"
-msgstr ""
+msgstr "Qt 5 X11 Extras アドオン"
 
 #. Module-Basesystem/libqt5-qtx11extras/libQt5X11Extras5/description
 msgid ""
@@ -2152,11 +2361,13 @@ msgid ""
 "several other desktop and embedded operating systems without having to "
 "rewrite the source code.)"
 msgstr ""
+"Qt X11 Extras は Qt プログラマに対して、 Linux/X11 プラットフォーム向けのアプリケーションの作成機能を提供します。 (Qt を"
+"利用して開発されたアプリケーションであれば、ソースコードを変更することなく、様々なデスクトップや組み込みオペレーティングシステムに配置して、動作させること"
+"ができます。)"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Xml-devel/summary
-#, fuzzy
 msgid "Development files for the Qt5 XML library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Qt5 XML ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Xml-devel/description
 msgid ""
@@ -2165,30 +2376,34 @@ msgid ""
 "(The module is not actively maintained anymore. Please use the "
 "QXmlStreamReader and QXmlStreamWriter classes in Qt Core instead.)"
 msgstr ""
+"Qt5 XML ライブラリ向けの開発用ファイルです。\n"
+"\n"
+"(このモジュールは、もはや積極的には開発されていません。代わりに Qt コア内の QXmlStreamReader や QXmlStreamWriter "
+"クラスをお使いください。)"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Xml5/summary
 msgid "Qt 5 Xml Library"
-msgstr ""
+msgstr "Qt 5 Xml ライブラリ"
 
 #. Module-Basesystem/libqt5-qtbase/libQt5Xml5/description
 msgid ""
 "The Qt XML module provides C++ implementations of the SAX and DOM standards "
 "for XML."
-msgstr ""
+msgstr "Qt XML モジュールは、 XML 向けの SAX および DOM 標準を C++ 言語で実装した仕組みを提供します。"
 
 #. Module-Basesystem/libqt5-qtxmlpatterns/libQt5XmlPatterns5/summary
 msgid "Qt 5 XmlPatterns Library"
-msgstr ""
+msgstr "Qt 5 XMLPatterns ライブラリ"
 
 #. Module-Basesystem/libqt5-qtxmlpatterns/libQt5XmlPatterns5/description
 msgid ""
 "The Qt XML Patterns module provides support for XPath, XQuery, XSLT, and XML "
 "Schema validation."
-msgstr ""
+msgstr "Qt XML パターンモジュールは、 XPath, XQuery, XSLT, XML スキーマ検証などの機能を提供します。"
 
 #. Module-Basesystem/libqt5-qtdeclarative/libQtQuick5/summary
 msgid "Qt 5 Declarative Library"
-msgstr ""
+msgstr "Qt 5 Declarative ライブラリ"
 
 #. Module-Basesystem/libqt5-qtdeclarative/libQtQuick5/description
 #. Module-Desktop-Applications/libqt5-qtquickcontrols2/libQt5QuickControls2-5/description
@@ -2201,11 +2416,13 @@ msgid ""
 "\n"
 "This package contains base tools, like string, xml, and network handling."
 msgstr ""
+"Qt はアプリケーションを開発するためのライブラリ群です。\n"
+"\n"
+"このパッケージには基本ツールである string や xml 、およびネットワーク処理機能が含まれています。"
 
 #. Module-Basesystem/libSM/libSM-devel/summary
-#, fuzzy
 msgid "Development files for the X Session Management library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X セッション管理ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libSM/libSM-devel/description
 msgid ""
@@ -2221,12 +2438,17 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libSM6."
 msgstr ""
+"X セッション管理プロトコルは、ユーザに対してセッションの保存や復元を行なうための統一的な仕組みを提供します。セッションとは、 X クライアント "
+"(プログラム) の集合を指す言葉で、それぞれのクライアントにはその状態を設定することができます。セッションはセッションマネージャと呼ばれるネットワークサー"
+"ビスで制御され、ユーザの代理としてクライアントにコマンドを送信します。これらのコマンドは、クライアントに対して状態の保存や復元を指示するもので、後から作業"
+"を再開するために必要な各種の情報を保存および復元し、作業を中断していないかのように動作させるものです。\n"
+"\n"
+"このパッケージには、 libSM6 内に存在するライブラリに対する、開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libSM/libSM6/summary
 #. Module-Desktop-Applications/libSM/libSM6-32bit/summary
-#, fuzzy
 msgid "X Session Management library"
-msgstr "X セッションマネージャ"
+msgstr "X セッション管理ライブラリ"
 
 #. Module-Basesystem/libSM/libSM6/description
 #. Module-Desktop-Applications/libSM/libSM6-32bit/description
@@ -2240,13 +2462,15 @@ msgid ""
 "state in such a way that the client can be restarted at a later time and "
 "resume its operation as if it had never been terminated."
 msgstr ""
+"X セッション管理プロトコルは、ユーザに対してセッションの保存や復元を行なうための統一的な仕組みを提供します。セッションとは、 X クライアント "
+"(プログラム) の集合を指す言葉で、それぞれのクライアントにはその状態を設定することができます。セッションはセッションマネージャと呼ばれるネットワークサー"
+"ビスで制御され、ユーザの代理としてクライアントにコマンドを送信します。これらのコマンドは、クライアントに対して状態の保存や復元を指示するもので、後から作業"
+"を再開するために必要な各種の情報を保存および復元し、作業を中断していないかのように動作させるものです。"
 
 #. Module-Basesystem/libX11/libX11-6/summary
 #. Module-Basesystem/libX11/libX11-6-32bit/summary
-#, fuzzy
-#| msgid "LIRC client library"
 msgid "Core X11 protocol client library"
-msgstr "LIRC クライアントライブラリ"
+msgstr "コア X11 プロトコルクライアントライブラリ"
 
 #. Module-Basesystem/libX11/libX11-6/description
 #. Module-Basesystem/libX11/libX11-6-32bit/description
@@ -2262,15 +2486,18 @@ msgid ""
 "application programs (clients) use to interface with the window system by "
 "means of a stream connection."
 msgstr ""
+"X Window System はネットワーク透過型のウインドウシステムで、 MIT が設計したシステムです。 X ディスプレイサーバは、モノクロおよびカ"
+"ラーのビットマップ表示機能付きのハードウエアを搭載した、コンピュータで動作します。サーバはユーザからの入力を配信し、同じマシンで動作しているものやネットワ"
+"ーク上離れた場所で動作するプログラムなど、様々なクライアントからの出力要求を受け入れます。 xlib は、アプリケーションプログラム (クライアント) "
+"から、ストリーム接続の形でウインドウシステムにアクセスするために使用する、インターフェイス型の C サブルーチンライブラリです。"
 
 #. Module-Basesystem/libX11/libX11-data/summary
 msgid "Shared data for the Core X11 protocol library"
-msgstr ""
+msgstr "コア X11 プロトコルライブラリ向け共有データ"
 
 #. Module-Basesystem/libX11/libX11-devel/summary
-#, fuzzy
 msgid "Development files for the Core X11 protocol library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "コア X11 プロトコルライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libX11/libX11-devel/description
 msgid ""
@@ -2285,17 +2512,21 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libX11-6 and libX11-xcb1."
 msgstr ""
+"X Window System はネットワーク透過型のウインドウシステムで、 MIT が設計したシステムです。 X ディスプレイサーバは、モノクロおよびカ"
+"ラーのビットマップ表示機能付きのハードウエアを搭載した、コンピュータで動作します。サーバはユーザからの入力を配信し、同じマシンで動作しているものやネットワ"
+"ーク上離れた場所で動作するプログラムなど、様々なクライアントからの出力要求を受け入れます。 xlib は、アプリケーションプログラム (クライアント) "
+"から、ストリーム接続の形でウインドウシステムにアクセスするために使用する、インターフェイス型の C サブルーチンライブラリです。\n"
+"\n"
+"このパッケージには、 libX11-6 および libX11-xcb1 内のライブラリに対する、開発用のヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libX11/libX11-xcb1/summary
 #. Module-Basesystem/libX11/libX11-xcb1-32bit/summary
-#, fuzzy
-#| msgid "LIRC client library"
 msgid "XCB X11 protocol client library"
-msgstr "LIRC クライアントライブラリ"
+msgstr "XCB X11 プロトコルクライアントライブラリ"
 
 #. Module-Basesystem/libXres/libXRes1/summary
 msgid "X Resource extension client library"
-msgstr ""
+msgstr "X リソース拡張クライアントライブラリ"
 
 #. Module-Basesystem/libXres/libXRes1/description
 msgid ""
@@ -2303,14 +2534,15 @@ msgid ""
 "extension to the X protocol. The Resource extension allows for X clients to "
 "see and monitor the X resource usage of various clients (pixmaps, et al)."
 msgstr ""
+"libXRes は X Window System のクライアントインターフェイスを提供する仕組みで、X プロトコルに対する Resource "
+"拡張を提供しまする Resource 拡張は X クライアントに対して、様々なクライアント (ピクセルマップなど) の X "
+"資源使用率の閲覧／監視機能を提供します。"
 
 #. Module-Basesystem/libXTrap/libXTrap-devel/summary
-#, fuzzy
 msgid "Development files for the X event Trap extension"
-msgstr "popt ライブラリ向け開発用ファイル"
+msgstr "X イベントトラップ拡張向け開発用ファイル"
 
 #. Module-Basesystem/libXTrap/libXTrap-devel/description
-#, fuzzy
 msgid ""
 "libXTrap provides an interface to the DEC-XTRAP extension, which allows for "
 "capture and synthesis of core input events.\n"
@@ -2318,25 +2550,24 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXTrap6."
 msgstr ""
-"libXi は X 入力拡張向けのクライアント側ライブラリです。\n"
+"libXTrap は DEC-XTRAP 拡張に対するインターフェイスを提供するもので、コア入力イベントのキャプチャと合成を行なうことができます。\n"
 "\n"
-"このパッケージには、 libXi6 内のライブラリに対する、開発用のヘッダファイルが"
-"含まれています。"
+"このパッケージには、 libXTrap6 内のライブラリに対する、開発用のヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXTrap/libXTrap6/summary
 msgid "X event Trap extension"
-msgstr ""
+msgstr "X イベントトラップ拡張"
 
 #. Module-Basesystem/libXTrap/libXTrap6/description
 msgid ""
 "libXTrap provides an interface to the DEC-XTRAP extension, which allows for "
 "capture and synthesis of core input events."
 msgstr ""
+"libXTrap は DEC-XTRAP 拡張に対するインターフェイスを提供するもので、コア入力イベントのキャプチャと合成を行なうことができます。"
 
 #. Module-Basesystem/libXau/libXau-devel/summary
-#, fuzzy
 msgid "Development files for the X11 authorization protocol library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X11 認可プロトコルライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXau/libXau-devel/description
 msgid ""
@@ -2349,11 +2580,16 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXau6."
 msgstr ""
+"libXau は、 X Window System "
+"のディスプレイに対して、個別のアクセスの仕組みを提供します。このライブラリは、既存のコアプロトコルとライブラリを使用してフックを作成し、 \""
+"マジッククッキー\" と呼ばれるサーバ固有の鍵を持っているクライアントだけが、ディスプレイにアクセスできるように制限する機能を提供します。\n"
+"\n"
+"このパッケージには、 libXau6 内のライブラリに対する開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXau/libXau6/summary
 #. Module-Basesystem/libXau/libXau6-32bit/summary
 msgid "X11 authorization protocol library"
-msgstr ""
+msgstr "X11 認可プロトコルライブラリ"
 
 #. Module-Basesystem/libXau/libXau6/description
 #. Module-Basesystem/libXau/libXau6-32bit/description
@@ -2364,12 +2600,14 @@ msgid ""
 "display to only those clients that show that they know a server-specific key "
 "called a \"magic cookie\"."
 msgstr ""
+"libXau は、 X Window System "
+"のディスプレイに対して、個別のアクセスの仕組みを提供します。このライブラリは、既存のコアプロトコルとライブラリを使用してフックを作成し、 \""
+"マジッククッキー\" と呼ばれるサーバ固有の鍵を持っているクライアントだけが、ディスプレイにアクセスできるように制限する機能を提供します。"
 
 #. Module-Basesystem/libXaw/libXaw-devel/summary
 #. Module-Desktop-Applications/libXaw3d/libXaw3d-devel/summary
-#, fuzzy
 msgid "Development files for the X Athena Widget Set"
-msgstr "popt ライブラリ向け開発用ファイル"
+msgstr "X Athena ウイジェットセット向け開発用ファイル"
 
 #. Module-Basesystem/libXaw/libXaw-devel/description
 msgid ""
@@ -2379,12 +2617,16 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXaw6/libXaw7/libXaw8."
 msgstr ""
+"X Window System Athena ウイジェット集は、 X ツールキット (Xt) "
+"固有のライブラリ上で提供される、シンプルなユーザインターフェイスを実装しています。\n"
+"\n"
+"このパッケージには、 libXaw6/libXaw7/libXaw8 内のライブラリに対する、開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXaw3d/libXaw3d8/summary
 #. Module-Desktop-Applications/libXaw3d/libXaw3d6/summary
 #. Module-Desktop-Applications/libXaw3d/libXaw3d7/summary
 msgid "The 3D Athena Widget Set"
-msgstr ""
+msgstr "3D Athena ウイジェットセット"
 
 #. Module-Basesystem/libXaw3d/libXaw3d8/description
 #. Module-Desktop-Applications/libXaw3d/libXaw3d6/description
@@ -2392,13 +2634,13 @@ msgstr ""
 msgid ""
 "Xaw3d is a general-purpose replacement for the Athena toolkit which adds a "
 "3D appearance and support for XPM images."
-msgstr ""
+msgstr "Xaw3d は Athena ツールキットの汎用的な置き換えで、 3D の外観と XPM 画像への対応が追加されています。"
 
 #. Module-Basesystem/libXaw/libXaw6/summary
 #. Module-Basesystem/libXaw/libXaw7/summary
 #. Module-Basesystem/libXaw/libXaw8/summary
 msgid "The X Athena Widget Set"
-msgstr ""
+msgstr "X Athena ウイジェットセット"
 
 #. Module-Basesystem/libXaw/libXaw6/description
 #. Module-Basesystem/libXaw/libXaw7/description
@@ -2407,11 +2649,11 @@ msgid ""
 "The X Window System Athena widget set implements simple user interfaces "
 "based upon the X Toolkit Intrinsics (Xt) library."
 msgstr ""
+"X Athena ウイジェットセットは、 X ツールキット固有ライブラリ (Xt) をベースにした、シンプルなユーザインターフェイスを実装しています。"
 
 #. Module-Basesystem/libXcomposite/libXcomposite-devel/summary
-#, fuzzy
 msgid "Development files for the X11 Composite extension library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X11 合成効果拡張ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXcomposite/libXcomposite-devel/description
 msgid ""
@@ -2429,11 +2671,18 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXcomposite1."
 msgstr ""
+"Composite 拡張は、下記のような関連機構を提供します:\n"
+"- 階層構造ごとのストレージ: ウインドウの全体階層に対する描画は、オフスクリーンのストレージに転送されます。\n"
+"- 自動影更新: 階層構造がオフスクリーンに描画されると、 X サーバはこれらの内容を親ウインドウ内に反映するための、自動的な仕組みを提供します。\n"
+"- 合成オーバーレイウインドウ: それぞれが干渉することのない面が割り当てられた、合成効果マネージャが提供されます。\n"
+"- 親ウインドウのクリップ: 手動で転送された子ウインドウが存在する場合、親ウインドウのクリップ処理を自動的に修正します。\n"
+"\n"
+"このパッケージには、 libXcomposite1 内のライブラリに対する、開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXcomposite/libXcomposite1/summary
 #. Module-Desktop-Applications/libXcomposite/libXcomposite1-32bit/summary
 msgid "X11 protocol Composite extension client library"
-msgstr ""
+msgstr "X プロトコル合成拡張クライアントライブラリ"
 
 #. Module-Basesystem/libXcomposite/libXcomposite1/description
 #. Module-Desktop-Applications/libXcomposite/libXcomposite1-32bit/description
@@ -2444,11 +2693,13 @@ msgid ""
 "automatically merged into the parent window or merged by external programs, "
 "called compositing managers."
 msgstr ""
+"Composite 拡張は、ウインドウの階層構造全体をオフスクリーンのバッファに描画するようにする拡張です。アプリケーションはバッファ内に存在する内容を取"
+"得し、必要な処理を行なうことができるようになっています。オフスクリーンのバッファは自動的に親ウインドウに合成させることができるほか、コンポジットマネージャ"
+"と呼ばれる外部プログラムで合成させることもできます。"
 
 #. Module-Basesystem/libXcursor/libXcursor-devel/summary
-#, fuzzy
 msgid "Development files for the X Window System Cursor library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X Window System カーソルライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXcursor/libXcursor-devel/description
 msgid ""
@@ -2460,11 +2711,16 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXcursor1."
 msgstr ""
+"Xcursor "
+"はカーソルを検出したり読み込んだりするためのライブラリです。カーソルはファイルまたはメモリから読み込むことができます。汎用カーソルライブラリは、標準の "
+"X カーソル名として割り当てられています。複数のサイズが存在するカーソルのの場合、ライブラリ側で最も適切なサイズを利用します。\n"
+"\n"
+"このパッケージには、 libXcursor1 内のライブラリに対する、開発用のヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXcursor/libXcursor1/summary
 #. Module-Desktop-Applications/libXcursor/libXcursor1-32bit/summary
 msgid "X Window System Cursor management library"
-msgstr ""
+msgstr "X Window System カーソル管理ライブラリ"
 
 #. Module-Basesystem/libXcursor/libXcursor1/description
 #. Module-Desktop-Applications/libXcursor/libXcursor1-32bit/description
@@ -2474,14 +2730,14 @@ msgid ""
 "the standard X cursor names.Cursors can exist in several sizes and the "
 "library automatically picks the best size."
 msgstr ""
+"Xcursor はカーソルの配置と読み込みを支援するライブラリです。カーソルはファイルやメモリから読み込むことができます。汎用カーソルのライブラリは、"
+"標準 X カーソルの名称に割り当てられるようになっています。また、複数のサイズが存在するカーソルの場合、ライブラリ側で適切なサイズを検出します。"
 
 #. Module-Basesystem/libXdamage/libXdamage-devel/summary
-#, fuzzy
 msgid "Development files for the X Damage Extension library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X Damage 拡張ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXdamage/libXdamage-devel/description
-#, fuzzy
 msgid ""
 "The X Damage Extension allows applications to track modified regions of "
 "drawables.\n"
@@ -2489,29 +2745,25 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXdamage1."
 msgstr ""
-"libXi は X 入力拡張向けのクライアント側ライブラリです。\n"
+"X Damage 拡張は、アプリケーションに対して描画可能領域のうち改変された部分を追跡することができる拡張です。\n"
 "\n"
-"このパッケージには、 libXi6 内のライブラリに対する、開発用のヘッダファイルが"
-"含まれています。"
+"このパッケージには、 libXdamage1 内のライブラリに対する、開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXdamage/libXdamage1/summary
 #. Module-Basesystem/libXdamage/libXdamage1-32bit/summary
-#, fuzzy
-#| msgid "The Lua integration library"
 msgid "X Damage Extension library"
-msgstr "LUA 統合ライブラリ"
+msgstr "X Damage 拡張ライブラリ"
 
 #. Module-Basesystem/libXdamage/libXdamage1/description
 #. Module-Basesystem/libXdamage/libXdamage1-32bit/description
 msgid ""
 "The X Damage Extension allows applications to track modified regions of "
 "drawables."
-msgstr ""
+msgstr "X Damage 拡張は、アプリケーションに対して描画可能領域のうち改変された部分を追跡することができる拡張です。"
 
 #. Module-Basesystem/libXdmcp/libXdmcp-devel/summary
-#, fuzzy
 msgid "Development files for the XDM Control Protocol library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "XDM 制御プロトコルライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXdmcp/libXdmcp-devel/description
 msgid ""
@@ -2525,10 +2777,15 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXdmcp6."
 msgstr ""
+"X Display Manager Control Protocol (XDMCP) は、リモートのホストからログインサービスを要求するための、自律型ディ"
+"スプレイ向け統合メカニズムです。自律型とは、ログインサービスを要求する側とは独立したハードウエアを持つディスプレイのことを意味しています。たとえば X "
+"端末 (画面、キーボード、マウス、プロセッサ、ネットワークインターフェイス) などは、よくある自律型ディスプレイです。\n"
+"\n"
+"このパッケージには、 libXdmcp6 内のライブラリに対する、開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXdmcp/libXdmcp6/summary
 msgid "X Display Manager Control Protocol library"
-msgstr ""
+msgstr "X ディスプレイマネージャ制御プロトコルライブラリ"
 
 #. Module-Basesystem/libXdmcp/libXdmcp6/description
 msgid ""
@@ -2539,11 +2796,13 @@ msgid ""
 "terminal (screen, keyboard, mouse, processor, network interface) is a prime "
 "example of an autonomous display."
 msgstr ""
+"X Display Manager Control Protocol (XDMCP) は、リモートのホストからログインサービスを要求するための、自律型ディ"
+"スプレイ向け統合メカニズムです。自律型とは、ログインサービスを要求する側とは独立したハードウエアを持つディスプレイのことを意味しています。たとえば X "
+"端末 (画面、キーボード、マウス、プロセッサ、ネットワークインターフェイス) などは、よくある自律型ディスプレイです。"
 
 #. Module-Basesystem/libXevie/libXevie-devel/summary
-#, fuzzy
 msgid "Development files for the X Event Interception Extension library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X イベント割り込み拡張ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXevie/libXevie-devel/description
 msgid ""
@@ -2556,10 +2815,15 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXevie1."
 msgstr ""
+"libXevie は X Window System のクライアントインターフェイスで、 X プロトコルのEvIE 拡張に対応します。 EvIE ("
+"イベント割り込み拡張 (Event Interception Extension))は、サーバ側から配信されるすべてのイベントに対して割り込みを行ない、そ"
+"れらに対して修正や廃棄など、何を行なうべきかを指定することができます。\n"
+"\n"
+"このパッケージには、 libXevie1 内のライブラリに対する、開発用のヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXevie/libXevie1/summary
 msgid "X Event Interception Extension library"
-msgstr ""
+msgstr "X イベント割り込み拡張ライブラリ"
 
 #. Module-Basesystem/libXevie/libXevie1/description
 msgid ""
@@ -2569,11 +2833,13 @@ msgid ""
 "then decide what to do with them, including being able to modify or discard "
 "events."
 msgstr ""
+"libXevie は X Window System のクライアントインターフェイスで、 X プロトコルのEvIE 拡張に対応します。 EvIE ("
+"イベント割り込み拡張 (Event Interception Extension))は、サーバ側から配信されるすべてのイベントに対して割り込みを行ない、そ"
+"れらに対して修正や廃棄など、何を行なうべきかを指定することができます。"
 
 #. Module-Basesystem/libXext/libXext-devel/summary
-#, fuzzy
 msgid "Development files for the X11 Common Extensions library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X11 汎用拡張ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXext/libXext-devel/description
 msgid ""
@@ -2589,11 +2855,21 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXext6."
 msgstr ""
+"Xext ライブラリには、いくつかの X11 拡張が含まれています:\n"
+"- ダブルバッファ拡張 (DBE/Xdbe)\n"
+"- ディスプレイ管理シグナル (DPMS) 拡張\n"
+"- X11 非矩形ウインドウ外形拡張 (Xshape)\n"
+"- MIT 共有メモリ拡張 (MIT-SHM/Xshm)\n"
+"- TOG-CUP (カラーマップ) プロトコル拡張 (Xcup)\n"
+"- X 拡張視覚情報拡張 (XEvi)\n"
+"- X11 ダブルバッファリング、マルチバッファリング、ステレオ拡張 (Xmbuf)\n"
+"\n"
+"このパッケージには、 libXext6 内のライブラリに対する、開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXext/libXext6/summary
 #. Module-Basesystem/libXext/libXext6-32bit/summary
 msgid "Common extensions to the X11 protocol"
-msgstr ""
+msgstr "X11 プロトコルに対する汎用拡張"
 
 #. Module-Basesystem/libXext/libXext6/description
 #. Module-Basesystem/libXext/libXext6-32bit/description
@@ -2607,14 +2883,20 @@ msgid ""
 "- X Extended Visual Information extension (XEvi)\n"
 "- X11 Double-Buffering, Multi-Buffering, and Stereo extension (Xmbuf)"
 msgstr ""
+"Xext ライブラリには、下記のように便利な X11 拡張が含まれています:\n"
+"- ダブルバッファ拡張 (DBVE/Xdbe)\n"
+"- ディスプレイの電源管理シグナル (DMPS) 拡張\n"
+"- X11 非矩形ウインドウ形状拡張 (Xshape)\n"
+"- MIT 共有メモリ拡張 (MIT-SHM/Xshm)\n"
+"- TOG-CUP (カラーマップ) プロトコル拡張 (Xcup)\n"
+"- X 拡張視覚情報拡張 (XEvi)\n"
+"- X11 ダブルバッファ／マルチバッファ／ステレオ拡張 (Xmbuf)"
 
 #. Module-Basesystem/libXfixes/libXfixes-devel/summary
-#, fuzzy
 msgid "Development files for the X11 Xfixes extension library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X11 Xfixes 拡張ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXfixes/libXfixes-devel/description
-#, fuzzy
 msgid ""
 "The X Fixes extension provides applications with work-arounds for various "
 "limitations in the core protocol.\n"
@@ -2622,28 +2904,26 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXfixes3."
 msgstr ""
-"libXi は X 入力拡張向けのクライアント側ライブラリです。\n"
+"X Fixes 拡張は、中枢プロトコルに存在する様々な制限に対して、アプリケーションに回避策を提供する拡張です。\n"
 "\n"
-"このパッケージには、 libXi6 内のライブラリに対する、開発用のヘッダファイルが"
-"含まれています。"
+"このパッケージには、 libXfixes3 内のライブラリ向けの開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXfixes/libXfixes3-32bit/summary
 #. Module-Basesystem/libXfixes/libXfixes3/summary
 msgid "X11 miscellaneous \"fixes\" extension library"
-msgstr ""
+msgstr "X11 その他の \"修正\" 拡張ライブラリ"
 
 #. Module-Basesystem/libXfixes/libXfixes3-32bit/description
 #. Module-Basesystem/libXfixes/libXfixes3/description
 msgid ""
 "The X Fixes extension provides applications with work-arounds for various "
 "limitations in the core protocol."
-msgstr ""
+msgstr "X Fixes 拡張は、中枢のプロトコルに存在するさまざまな制限を回避するために使用する、アプリケーション向けの拡張です。"
 
 #. Module-Basesystem/libXfont/libXfont-devel/summary
 #. Module-Basesystem/libXfont2/libXfont2-devel/summary
-#, fuzzy
 msgid "Development files for the X font handling library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X フォント処理ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXfont/libXfont-devel/description
 msgid ""
@@ -2657,11 +2937,18 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXfont1."
 msgstr ""
+"libXfont は旧来の X11 フォントシステムの中枢部を提供するもので、インデックスファイル (fonts.dir, fonts.alias, "
+"fonts.scale) や様々なフォントファイル形式を処理したり、それらを描画したりすることができます。これは X サーバや X フォントサーバ "
+"(xfs) のほか、いくつかのフォントユーティリティ (たとえば bdftopcf) などでも使用されています。ただし、通常の X11 "
+"クライアントは利用していません。 X11 クライアントは新しい API である libXft か、もしくはlibX11 の古い API "
+"経由でフォントにアクセスします。\n"
+"\n"
+"このパッケージには、 libXfont1 内のライブラリに対する開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXfont/libXfont1/summary
 #. Module-Basesystem/libXfont2/libXfont2-2/summary
 msgid "X font handling library for server and utilities"
-msgstr ""
+msgstr "サーバ向け X フォント処理ライブラリとユーティリティ"
 
 #. Module-Basesystem/libXfont/libXfont1/description
 #. Module-Basesystem/libXfont2/libXfont2-2/description
@@ -2673,6 +2960,11 @@ msgid ""
 "normal X11 clients. X11 clients access fonts via either the new APIs in "
 "libXft, or the legacy APIs in libX11."
 msgstr ""
+"libXfont は旧来の X11 フォントシステムの中枢部を提供するもので、インデックスファイル (fonts.dir, fonts.alias, "
+"fonts.scale) や様々なフォントファイル形式を処理したり、それらを描画したりすることができます。これは X サーバや X フォントサーバ "
+"(xfs) のほか、いくつかのフォントユーティリティ (たとえば bdftopcf) などでも使用されています。ただし、通常の X11 "
+"クライアントは利用していません。 X11 クライアントは新しい API である libXft か、もしくはlibX11 の古い API "
+"経由でフォントにアクセスします。"
 
 #. Module-Basesystem/libXfont2/libXfont2-devel/description
 msgid ""
@@ -2686,14 +2978,19 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXfont2-2."
 msgstr ""
+"libXfont は旧来の X11 フォントシステムの中枢部を提供するもので、インデックスファイル (fonts.dir, fonts.alias, "
+"fonts.scale) や様々なフォントファイル形式を処理したり、それらを表がしたりすることができます。これは X サーバであるX フォントサーバ "
+"(xfs) のほか、いくつかのフォントユーティリティ (たとえば bdftopcf) などでも使用されています。ただし、通常の X11 "
+"クライアントは利用していません。 X11 クライアントは新しい API である libXft か、もしくはlibX11 の古い API "
+"経由でフォントにアクセスします。\n"
+"\n"
+"このパッケージには、 libXfont2-2 内のライブラリに対する開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXfontcache/libXfontcache-devel/summary
-#, fuzzy
 msgid "Development files for the X TrueType font cache library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X TrueType フォントキャッシュライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXfontcache/libXfontcache-devel/description
-#, fuzzy
 msgid ""
 "FontCache is an extension that is used by X TrueType to cache information "
 "about fonts.\n"
@@ -2701,25 +2998,23 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXfontcache1."
 msgstr ""
-"libXi は X 入力拡張向けのクライアント側ライブラリです。\n"
+"FontCache は X TrueType で使用される拡張で、フォントに関する情報を記憶するために使用します。\n"
 "\n"
-"このパッケージには、 libXi6 内のライブラリに対する、開発用のヘッダファイルが"
-"含まれています。"
+"このパッケージには、 libXfontcache1 内のライブラリに対する開発用ヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXfontcache/libXfontcache1/summary
 msgid "X TrueType font cache extension client library"
-msgstr ""
+msgstr "X TrueType フォントキャッシュ拡張クライアントライブラリ"
 
 #. Module-Basesystem/libXfontcache/libXfontcache1/description
 msgid ""
 "FontCache is an extension that is used by X TrueType to cache information "
 "about fonts."
-msgstr ""
+msgstr "FontCache は X TrueType でフォントに関する情報を記録しておくために使用する拡張です。"
 
 #. Module-Basesystem/libXft/libXft-devel/summary
-#, fuzzy
 msgid "Development files for the X FreeType library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X FreeType ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXft/libXft-devel/description
 msgid ""
@@ -2730,11 +3025,15 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libXft2."
 msgstr ""
+"Xft は FreeType フォント描画ライブラリと X アプリケーションを接続するライブラリです。 Xft は fontconfig "
+"を利用してフォントを検出するため、設定ファイルを用意する必要がありません。\n"
+"\n"
+"このパッケージには、 libXft2 内のライブラリに対する、開発用のヘッダファイルが含まれています。"
 
 #. Module-Basesystem/libXft/libXft2/summary
 #. Module-Basesystem/libXft/libXft2-32bit/summary
 msgid "X FreeType library"
-msgstr ""
+msgstr "X FreeType ライブラリ"
 
 #. Module-Basesystem/libXft/libXft2/description
 #. Module-Basesystem/libXft/libXft2-32bit/description
@@ -2743,11 +3042,12 @@ msgid ""
 "rasterization library. Xft uses fontconfig to locate fonts so it has no "
 "configuration files."
 msgstr ""
+"Xft は X アプリケーションと FreeType フォント描画ライブラリとの間をつなぐライブラリです。 Xft は fontconfig "
+"を利用してフォントを見つける仕組みであるため、設定ファイルを用意する必要がありません。"
 
 #. Module-Basesystem/libXi/libXi-devel/summary
-#, fuzzy
 msgid "Development files for the X Input Extension library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "X 入力拡張ライブラリ向け開発用ファイル"
 
 #. Module-Basesystem/libXi/libXi-devel/description
 #, fuzzy
@@ -2764,20 +3064,17 @@ msgstr ""
 
 #. Module-Basesystem/libXi/libXi6/summary
 #. Module-Desktop-Applications/libXi/libXi6-32bit/summary
-#, fuzzy
-#| msgid "The Lua integration library"
 msgid "X Input Extension library"
-msgstr "LUA 統合ライブラリ"
+msgstr "X 入力拡張ライブラリ"
 
 #. Module-Basesystem/libXi/libXi6/description
 #. Module-Desktop-Applications/libXi/libXi6-32bit/description
 msgid "libXi is the client-side library for the X Input Extension."
-msgstr ""
+msgstr "libXi は X 入力拡張向けクライアント側ライブラリです。"
 
 #. Module-Basesystem/libXinerama/libXinerama-devel/summary
-#, fuzzy
 msgid "Development files for the X11 Xinerama extension"
-msgstr "popt ライブラリ向け開発用ファイル"
+msgstr "X11 Xinerama 拡張向け開発用ファイル"
 
 #. Module-Basesystem/libXinerama/libXinerama-devel/description
 msgid ""
