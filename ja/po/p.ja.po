@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-04-06 13:24+0000\n"
-"PO-Revision-Date: 2018-01-09 05:41+0000\n"
+"PO-Revision-Date: 2018-04-10 09:04+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/p-"
-"master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-"
+"i18n/p-sle-15/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.17.1\n"
+"X-Generator: Weblate 2.18\n"
 
 #. Installer/p11-kit/libp11-kit0/summary
 #. Installer/p11-kit/summary
@@ -172,7 +172,7 @@ msgstr ""
 #. Module-Basesystem/python-base/libpython2_7-1_0/summary
 #. Module-Basesystem/python3-base/libpython3_6m1_0/summary
 msgid "Python Interpreter shared library"
-msgstr ""
+msgstr "Python インタプリタ共有ライブラリ"
 
 #. Installer/python3-base/libpython3_6m1_0/description
 #. Module-Basesystem/python3-base/libpython3_6m1_0/description
@@ -185,6 +185,11 @@ msgid ""
 "This package contains libpython3.2 shared library for embedding in other "
 "applications."
 msgstr ""
+"Python はインタプリタ型言語で、オブジェクト指向のプログラミング言語です。 Tcl, Perl, Scheme, Java などとよく比較されます。"
+" Python の概要については、 python-doc (HTML) または python-doc-pdf (PDF) "
+"パッケージ内にドキュメンテーションやチュートリアルの形で書かれています。\n"
+"\n"
+"このパッケージには、他のアプリケーションに内蔵させる目的で使用する、libpython3.2 共有ライブラリが含まれています。"
 
 #. Installer/p11-kit/p11-kit-tools/summary
 #. Module-Basesystem/p11-kit/p11-kit-tools/summary
@@ -235,7 +240,7 @@ msgstr ""
 #. Module-Basesystem/perl/perl-base-32bit/summary
 #. Module-Basesystem/perl/perl-base/summary
 msgid "The Perl interpreter"
-msgstr ""
+msgstr "Perl インタプリタ"
 
 #. Installer/perl/description
 #. Module-Basesystem/perl/description
@@ -250,13 +255,19 @@ msgid ""
 "\n"
 "Some of the modules available on CPAN can be found in the \"perl\" series."
 msgstr ""
+"perl - Practical Extraction and Report Language\n"
+"\n"
+"Perl は任意のテキストファイルを読み出してこれらのテキストから 必要な情報を取り出し、これらの情報に基づく何らかのレポートを表示することに "
+"長けています。また、多くのシステム管理作業にも便利に使用することができます。\n"
+"\n"
+"Perl は美しさ (簡易性、美観、コンパクト性) よりも現実 (使いやすさ、便利さ、完全性) を追求しています。\n"
+"\n"
+" \"perl\" で始まるパッケージ名で、 CPAN 提供のモジュールがいくつか提供されています。"
 
 #. Installer/perl-Bootloader/summary
 #. Module-Basesystem/perl-Bootloader/summary
-#, fuzzy
-#| msgid "Library for manipulating partitions"
 msgid "Library for Configuring Boot Loaders"
-msgstr "パーティション操作ライブラリ"
+msgstr "ブートローダを設定するためのライブラリ"
 
 #. Installer/perl-Bootloader/description
 #. Module-Basesystem/perl-Bootloader/description
@@ -270,11 +281,19 @@ msgid ""
 "de>     Alexander Osthof <aosthof@suse.de>     Josef Reidinger "
 "<jreidinger@suse.cz>"
 msgstr ""
+"様々なブートローダを設定するための Perl モジュールです。\n"
+"\n"
+"\n"
+"\n"
+"作者:\n"
+"--------     Jiri Srain <jsrain@suse.cz>     Joachim Plack <jplack@suse.de>"
+"     Alexander Osthof <aosthof@suse.de>     Josef Reidinger "
+"<jreidinger@suse.cz>"
 
 #. Installer/perl-Config-General/summary
 #. Module-Basesystem/perl-Config-General/summary
 msgid "Generic Config Module"
-msgstr ""
+msgstr "汎用設定モジュール"
 
 #. Installer/perl-Config-General/description
 #. Module-Basesystem/perl-Config-General/description
@@ -292,6 +311,13 @@ msgid ""
 "In addition to the capabilities of an Apache config file it supports some "
 "enhancements such as here-documents, C-style comments or multiline options."
 msgstr ""
+"このモジュールは設定ファイルを開いて中身を解析する機能を提供します。 *new*メソッドはファイル名として 1 つのパラメータを指定するだけですし、 "
+"*getall*は全てのオプションに対するハッシュ変数を提供し、そこから設定ファイル内の値を取得することができます。\n"
+"\n"
+"*Config::General* で対応している設定ファイルの書式は、 Apache の設定ファイルの書式を踏襲するもので、実際にこのモジュールは "
+"Apache の設定ファイルと 100%の互換性が確保されています。ただし、単純な名前/値の組み合わせから成る設定ファイルにも対応しています。\n"
+"\n"
+"Apache の設定ファイルに対応しているほか、ヒアドキュメントや C 形式のコメント、複数行オプションなどにも対応しています。"
 
 #. Installer/perl/perl-base/description
 #. Module-Basesystem/perl/perl-base-32bit/description
@@ -308,6 +334,14 @@ msgid ""
 "\n"
 "This package contains only some basic modules and the perl binary itself."
 msgstr ""
+"perl - Practical Extraction and Report Language\n"
+"\n"
+"Perl は任意のテキストファイルを読み出してこれらのテキストから 必要な情報を取り出し、これらの情報に基づく何らかのレポートを表示することに "
+"長けています。また、多くのシステム管理作業にも便利に使用することができます。\n"
+"\n"
+"Perl は美しさ (簡易性、美観、コンパクト性) よりも現実 (使いやすさ、便利さ、完全性) を追求しています。\n"
+"\n"
+" このパッケージには、いくつかの基本モジュールと Perl バイナリ自身が含まれています。"
 
 #. Installer/permissions/summary
 #. Module-Basesystem/permissions/summary
@@ -496,16 +530,14 @@ msgstr ""
 #. Module-Basesystem/python-Babel/python2-Babel/summary
 #. Module-Basesystem/python-Babel/python3-Babel/summary
 msgid "Internationalization utilities"
-msgstr ""
+msgstr "国際化ユーティリティ"
 
 #. Installer/python-Babel/python3-Babel/description
 #. Installer/python-Babel/description
 #. Module-Basesystem/python-Babel/python2-Babel/description
 #. Module-Basesystem/python-Babel/python3-Babel/description
-#, fuzzy
-#| msgid "A collection of tools for handling PO files."
 msgid "A collection of tools for internationalizing Python applications."
-msgstr "PO ファイルを扱うツール集です。"
+msgstr "Python アプリケーションの国際化用ツール集です。"
 
 #. Installer/python-Jinja2/python3-Jinja2/summary
 #. Installer/python-Jinja2/summary
@@ -613,7 +645,7 @@ msgstr ""
 #. Module-Basesystem/python-chardet/python2-chardet/summary
 #. Module-Basesystem/python-chardet/python3-chardet/summary
 msgid "Universal encoding detector"
-msgstr ""
+msgstr "汎用エンコーディング検出器"
 
 #. Installer/python-chardet/python3-chardet/description
 #. Installer/python-chardet/description
@@ -643,6 +675,25 @@ msgid ""
 "    % chardetect.py somefile someotherfile     somefile: windows-1252 with "
 "confidence 0.5     someotherfile: ascii with confidence 1.0"
 msgstr ""
+"汎用文字エンコーディング検出\n"
+"----------------------------\n"
+"\n"
+"検出  - ASCII, UTF-8, UTF-16 (2 種類), UTF-32 (4 種類)  - Big5, GB2312, EUC-TW, HZ-"
+"GB-2312, ISO-2022-CN (繁体字および簡体字中国語)  - EUC-JP, SHIFT_JIS, ISO-2022-JP (日本語)  "
+"- EUC-KR, ISO-2022-KR (韓国語)  - KOI8-R, MacCyrillic, IBM855, IBM866, ISO-8859-"
+"5, windows-1251 (キリル文字)  - ISO-8859-2, windows-1250 (ハンガリー語)  - ISO-8859-5, "
+"windows-1251 (ブルガリア語)  - windows-1252 (英語)  - ISO-8859-7, windows-1253 "
+"(ギリシャ語)  - ISO-8859-8, windows-1255 (物理および論理ヘブライ語)  - TIS-620 (タイ語)\n"
+"\n"
+"Python 2.1 またはそれ以降が必要です。\n"
+"\n"
+"コマンドラインツール\n"
+"--------------------\n"
+"\n"
+"1 つまたは複数のファイルに対して、エンコーディングに関する情報を報告するコマンドラインツールです:\n"
+"\n"
+"    % chardetect.py somefile someotherfile     somefile: windows-1252 with "
+"confidence 0.5     someotherfile: ascii with confidence 1.0"
 
 #. Installer/python-dbus-python/python3-dbus-python/summary
 #. Installer/python-dbus-python/summary
@@ -664,7 +715,7 @@ msgstr ""
 #. Module-Basesystem/python-decorator/python2-decorator/summary
 #. Module-Basesystem/python-decorator/python3-decorator/summary
 msgid "Better living through Python with decorators"
-msgstr ""
+msgstr "Python とデコレータのよりよい共存"
 
 #. Installer/python-decorator/python3-decorator/description
 #. Installer/python-decorator/description
@@ -683,6 +734,12 @@ msgid ""
 "of useful decorators, such as memoize, tracing, redirecting_stdout, locked, "
 "etc."
 msgstr ""
+"現時点では、独自のデコレータを作成するには経験が必要で、それほど簡単なものではありません。たとえばデコレータの典型的な実装にはネスト型の関数が含まれますが"
+"、ネスト型よりもフラットな構造のほうがよりよいことは周知のものです。また、デコレータの典型的な実装では、デコレートされた関数の署名を保持しませんが、これは"
+"ドキュメンテーションツールや開発者を混乱させるもとになってしまっています。\n"
+"\n"
+"このデコレータモジュールは、そのようなデコレータの使用を平均的なユーザ向けに簡略化することにあるほか、便利なデコレータの仕組みを例示して広め、記憶やトレー"
+"ス、標準出力のリダイレクトやロックなどに利用できるようにする目的で作られています。"
 
 #. Installer/python-gobject/python3-gobject/summary
 #. Installer/python-gobject/summary
@@ -691,9 +748,8 @@ msgstr ""
 #. Module-Basesystem/python-gobject/python3-gobject/summary
 #. Module-Basesystem/python3-gobject2/summary
 #. Module-Basesystem/python3-gobject2/python3-gobject2-devel/summary
-#, fuzzy
 msgid "Python bindings for GObject"
-msgstr "Google のプロトコルバッファ向け C 言語バインディング"
+msgstr "GObject 向け Python バインディング"
 
 #. Installer/python-gobject/python3-gobject/description
 #. Installer/python-gobject/description
@@ -704,7 +760,7 @@ msgstr "Google のプロトコルバッファ向け C 言語バインディン�
 msgid ""
 "Pygobjects is an extension module for python that gives you access to GLib's "
 "GObjects."
-msgstr ""
+msgstr "Pygobjects は、 GLib が提供する GObject にアクセスすることができる Python 向け拡張モジュールです。"
 
 #. Installer/python-idna/python3-idna/summary
 #. Installer/python-idna/summary
@@ -712,6 +768,7 @@ msgstr ""
 #. Module-Basesystem/python-idna/python3-idna/summary
 msgid "Internationalized Domain Names in Applications (IDNA)"
 msgstr ""
+"Internationalized Domain Names in Applications (IDNA; アプリケーション内国際ドメイン名) サポート"
 
 #. Installer/python-idna/python3-idna/description
 #. Installer/python-idna/description
@@ -727,6 +784,12 @@ msgid ""
 "the “encodings.idna” module that comes with the Python standard library but "
 "currently only supports the older 2003 specification."
 msgstr ""
+"RFC 5981 http://tools.ietf.org/html/rfc5891 で規定されている Internationalised "
+"Domain Names in Applications (IDNA) プロトコルに対応するライブラリです。このプロトコルのバージョンは \""
+"IDNA2008\" としても知られていて、 2003 年に規定された早期標準とは異なる結果を出力する場合があります。\n"
+"\n"
+"このライブラリは、 Python 標準ライブラリでありながら、古い 2003 仕様にしか対応していない \"encodings.idna\" "
+"モジュールに対して、その場での置き換えを想定したライブラリです。"
 
 #. Installer/python-msgpack/python3-msgpack/summary
 #. Installer/python-msgpack/summary
@@ -761,14 +824,14 @@ msgstr "/proc 向け ps ユーティリティ"
 msgid ""
 "A graphical interface that lets you easily analyze and introspect unaltered "
 "running Python processes."
-msgstr ""
+msgstr "変更されていない実行中の Python プロセスを簡単に分析し、イントロスペクションすることのできるグラフィカルインタフェースです。"
 
 #. Installer/python-py/python3-py/summary
 #. Installer/python-py/summary
 #. Module-Basesystem/python-py/python2-py/summary
 #. Module-Basesystem/python-py/python3-py/summary
 msgid "Library with cross-python path, ini-parsing, io, code, log facilities"
-msgstr ""
+msgstr "cross-python path, ini-parsing, io, code, ログ機能ライブラリ"
 
 #. Installer/python-py/python3-py/description
 #. Installer/python-py/description
@@ -789,7 +852,7 @@ msgstr ""
 #. Module-Basesystem/python-pycrypto/python2-pycrypto/summary
 #. Module-Basesystem/python-pycrypto/python3-pycrypto/summary
 msgid "Cryptographic modules for Python"
-msgstr ""
+msgstr "Python 向け暗号化モジュール"
 
 #. Installer/python-pycrypto/python3-pycrypto/description
 #. Installer/python-pycrypto/description
@@ -806,13 +869,20 @@ msgid ""
 "into a     set of English words, primality testing.   * Some demo programs "
 "(currently all quite old and outdated)."
 msgstr ""
+"このパッケージには下記の機能が含まれています:\n"
+"\n"
+"  * ハッシュ関数: MD2, MD4, RIPEMD, SHA256.  * ブロック暗号化アルゴリズム: AES, ARC2, Blowfish, "
+"CAST, DES, Triple-DES, IDEA, RC5. * ストリーム暗号アルゴリズム: ARC4, シンプルな XOR  * "
+"公開鍵アルゴリズム: RSA, DSA, ElGamal, qNEW.  * プロトコル: All-or-nothing 変換, 分解/選別  * "
+"その他: 128 キーの鍵を英単語集に変換する RFC1751 モジュール。主にテスト用。  * いくつかのデモプログラム "
+"(現時点ではとても古く旧式のものです) 。"
 
 #. Installer/python-pytz/python3-pytz/summary
 #. Installer/python-pytz/summary
 #. Module-Basesystem/python-pytz/python2-pytz/summary
 #. Module-Basesystem/python-pytz/python3-pytz/summary
 msgid "World timezone definitions, modern and historical"
-msgstr ""
+msgstr "世界タイムゾーン定義 (最新／旧)"
 
 #. Installer/python-pytz/python3-pytz/description
 #. Installer/python-pytz/description
@@ -827,6 +897,12 @@ msgid ""
 "\n"
 "Amost all of the Olson timezones are supported."
 msgstr ""
+"pytz - pytz は、 Olson tz データベースを Python に取り込んだ、世界のタイムゾーン定義です。このライブラリは、 Python "
+"2.4 またはそれ以降のバージョンに対して、正確でクロスプラットフォーム対応のタイムゾーン計算機能を提供します。また、夏時間 (サマータイム) "
+"の終了間際に発生する、不確かな時間管理の問題も解決します。これにより、 Python ライブラリリファレンス (``datetime.tzinfo``) "
+"内にあるもの以上の機能を提供します。\n"
+"\n"
+"ほぼ全ての Olson タイムゾーンに対応しています。"
 
 #. Installer/python-pyzmq/python3-pyzmq/summary
 #. Installer/python-pyzmq/summary
@@ -844,13 +920,15 @@ msgid ""
 "PyZMQ is a lightweight and super-fast messaging library built on top of the "
 "ZeroMQ library (http://www.zeromq.org)."
 msgstr ""
+"PyZMQ は軽量で高速に動作するメッセージングライブラリです。このライブラリは ZeroMQ ライブラリ (http://www.zeromq.org)"
+" を利用して構築されています。"
 
 #. Installer/python-requests/python3-requests/summary
 #. Installer/python-requests/summary
 #. Module-Basesystem/python-requests/python2-requests/summary
 #. Module-Basesystem/python-requests/python3-requests/summary
 msgid "Awesome Python HTTP Library That's Actually Usable"
-msgstr ""
+msgstr "Awesome Python HTTP ライブラリ That's Actually Usable"
 
 #. Installer/python-requests/python3-requests/description
 #. Installer/python-requests/description
@@ -874,7 +952,7 @@ msgstr ""
 #. Module-Basesystem/python-rpm/python2-rpm/summary
 #. Module-Basesystem/python-rpm/python3-rpm/summary
 msgid "Python Bindings for Manipulating RPM Packages"
-msgstr ""
+msgstr "RPM パッケージを操作するための Python バインディング"
 
 #. Installer/python-rpm/python3-rpm/description
 #. Installer/python-rpm/description
@@ -911,7 +989,7 @@ msgstr ""
 #. Module-Basesystem/python-six/python2-six/summary
 #. Module-Basesystem/python-six/python3-six/summary
 msgid "Python 2 and 3 compatibility utilities"
-msgstr ""
+msgstr "Python 2/3 互換ユーティリティ"
 
 #. Installer/python-six/python3-six/description
 #. Installer/python-six/description
@@ -923,6 +1001,8 @@ msgid ""
 "of writing Python code that is compatible on both Python versions. See the "
 "documentation for more information on what is provided."
 msgstr ""
+"Six は Python 2/3 の互換性ライブラリです。 Python バージョン間の違いをスムーズに吸収するユーティリティ関数を提供しているため、"
+"どのバージョンの Python でも互換性のあるコードを記述できるように目指しています。提供物について、詳しくはドキュメンテーションをお読みください。"
 
 #. Installer/python-slip/python3-slip/summary
 #. Installer/python-slip/summary
@@ -969,7 +1049,7 @@ msgstr ""
 msgid ""
 "Open source version of scalable, non-blocking web server that power "
 "FriendFeed"
-msgstr ""
+msgstr "FriendFeed を利用するオープンソース版のスケーラブル／非ブロック型Web サーバ"
 
 #. Installer/python-tornado/python3-tornado/description
 #. Installer/python-tornado/description
@@ -991,13 +1071,23 @@ msgid ""
 "to the FriendFeed servers. (For more information on scaling servers to "
 "support thousands of clients, see The C10K problem.)"
 msgstr ""
+"Tornado は FriendFeed を利用する、スケーラブルで非ブロック型の Web サーバのオープンソース版です。 FriendFeed "
+"アプリケーションは、 web.py や Google の webapp に似た Web "
+"フレームワークを利用して書かれるものですが、それに加えて追加のツールや非ブロック型の構造に伴う利点も加わっています。\n"
+"\n"
+"フレームワークは多くの Web サーバフレームワーク (および多くの Python "
+"フレームワーク)とは異なった構造になっています。特に非ブロック型の構造であることと、比較的高速に動作する、という点が異なっています。非ブロック型の構造と "
+"epoll を使用した仕組みにより、数千にもおよぶ同時接続を処理することができるため、リアルタイムの Web "
+"サーバを構築するのに最適な仕組みになっています。また、 Web サーバは特に FriendFeed のリアルタイム機能を処理するように作られていて、 "
+"FriendFeed 内のアクティブなユーザが、サーバとの接続を維持できるようにもなっています (多数のクライアントに対応するための詳しい情報については、"
+" C10K 問題をお読みください) 。"
 
 #. Installer/python-urllib3/python3-urllib3/summary
 #. Installer/python-urllib3/summary
 #. Module-Basesystem/python-urllib3/python2-urllib3/summary
 #. Module-Basesystem/python-urllib3/python3-urllib3/summary
 msgid "HTTP library with thread-safe connection pooling, file post, and more"
-msgstr ""
+msgstr "スレッドセーフなコネクションプール機能や、ファイルポストなどの機能を含む HTTP ライブラリ"
 
 #. Installer/python-urllib3/python3-urllib3/description
 #. Installer/python-urllib3/description
@@ -1093,15 +1183,15 @@ msgstr ""
 
 #. Module-Basesystem/python-kiwi/kiwi-man-pages/summary
 msgid "KIWI - manual pages"
-msgstr ""
+msgstr "KIWI - マニュアルページ"
 
 #. Module-Basesystem/python-kiwi/kiwi-man-pages/description
 msgid "Provides manual pages to describe the kiwi commands"
-msgstr ""
+msgstr "kiwi コマンドのマニュアルページを提供します"
 
 #. Module-Basesystem/python-kiwi/kiwi-tools/summary
 msgid "KIWI - Collection of Boot Helper Tools"
-msgstr ""
+msgstr "KIWI - 起動ヘルパーツール集"
 
 #. Module-Basesystem/python-kiwi/kiwi-tools/description
 msgid ""
@@ -1110,6 +1200,8 @@ msgid ""
 "appliance. The tools are not meant to be used outside of the scope of kiwi "
 "appliance building."
 msgstr ""
+"このパッケージには、 kiwi に対するヘルパーツール集が含まれています。これらのツールは、アプライアンスの起動時の冒頭部分を制御する初期 RAM "
+"ディスクを作成することができます。これらのツールは wiki のアプライアンス構築とともに使用されるべきものとして作られています。"
 
 #. Module-Basesystem/pam_mount/libcryptmount-devel/summary
 msgid "Development files for libcryptmount"
@@ -1531,6 +1623,11 @@ msgid ""
 "This package contains libpython2.7 shared library for embedding in other "
 "applications."
 msgstr ""
+"Python はインタプリタ型言語で、オブジェクト指向のプログラミング言語です。 Tcl, Perl, Scheme, Java などとよく比較されます。"
+" Python の概要については、 python-doc (HTML) または python-doc-pdf (PDF) "
+"パッケージ内にドキュメンテーションやチュートリアルの形で書かれています。\n"
+"\n"
+"このパッケージには、他のアプリケーションに内蔵して使用するための libpython2.7 共有ライブラリが含まれています。"
 
 #. Module-Basesystem/p11-kit/p11-kit-devel/summary
 msgid "Library to work with PKCS#11 modules -- Development Files"
@@ -1861,9 +1958,8 @@ msgid ""
 msgstr ""
 
 #. Module-Basesystem/perl-Archive-Zip/summary
-#, fuzzy
 msgid "Provide an interface to ZIP archive files"
-msgstr "eog パッケージに対する翻訳データです。"
+msgstr "ZIP アーカイブファイルへのインターフェイス"
 
 #. Module-Basesystem/perl-Archive-Zip/description
 msgid ""
@@ -1886,20 +1982,33 @@ msgid ""
 "One can use Archive::Zip::MemberRead to read the zip file archive members as "
 "if they were files."
 msgstr ""
+"Archive::Zip モジュールは、 Perl プログラムから zip の書庫形式を作成／操作／読み込み／書き込みするためのモジュールです。\n"
+"\n"
+"新しい zip ファイルを作成したり、既存の zip ファイルを読み込んだりすることもできます。\n"
+"\n"
+"zip 形式の書庫を作成するにあたっては、ファイルやストリーム、文字列をそれぞれ書き込み先として指定することができます。書庫内のファイルに対しては、追加や"
+"削除、抽出や再配置、列挙などを行なうことができます。ファイル名の変更や日付の変更、コメントやその他の属性を問い合わせたり、修正したりすることもできます。こ"
+"れらの付属データは、圧縮することができるほか、非圧縮でも保存することができます。\n"
+"\n"
+"このほか、書庫内のファイルを既存の zip ファイルから作成することができるほか、既存のディレクトリやファイル、文字列から作成することもできます。\n"
+"\n"
+"このモジュールは、ファイル内の圧縮済みストリームを読み書きするにあたって、 Compress::Raw::Zlib を使用しています。\n"
+"\n"
+"なお、書庫内のファイルについては、 Archive::Zip::MemberRead を利用することで読み込むこともできます。"
 
 #. Module-Basesystem/perl-B-Hooks-EndOfScope/summary
 msgid "Execute code after a scope finished compilation"
-msgstr ""
+msgstr "スコープのコンパイルが完了した時点でのコード実行"
 
 #. Module-Basesystem/perl-B-Hooks-EndOfScope/description
 msgid ""
 "This module allows you to execute code when perl finished compiling the "
 "surrounding scope."
-msgstr ""
+msgstr "このモジュールは、 Perl が指定したスコープのコンパイルが完了した際に、コードを実行することができます。"
 
 #. Module-Basesystem/perl-BerkeleyDB/summary
 msgid "Perl extension for Berkeley DB version 2, 3, 4 or 5"
-msgstr ""
+msgstr "Berkeley DB バージョン 2, 3, 4, 5 向け Perl 拡張"
 
 #. Module-Basesystem/perl-BerkeleyDB/description
 msgid ""
