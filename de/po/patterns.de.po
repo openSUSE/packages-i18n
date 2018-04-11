@@ -15,10 +15,10 @@ msgstr ""
 "Project-Id-Version: patterns.de\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2018-04-06 13:24+0000\n"
-"PO-Revision-Date: 2018-04-05 16:02+0000\n"
-"Last-Translator: Sarah Kriesch <ada.lovelace@gmx.de>\n"
-"Language-Team: German <https://l10n.opensuse.org/projects/packages-i18n/"
-"patterns-master/de/>\n"
+"PO-Revision-Date: 2018-04-11 23:03+0000\n"
+"Last-Translator: Franziska Weinberger <f.weinberger@gemino.de>\n"
+"Language-Team: German <https://l10n.opensuse.org/projects/packages-i18n"
+"/patterns-sle-15/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -71,23 +71,18 @@ msgstr "Basistechnologien"
 
 #. Installer/patterns-base/patterns-base-minimal_base/description
 #. Module-Basesystem/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal SLE runtime system. It is really a minimal system, you "
 "can login and a shell will be started, that's all. It is intended as base "
 "for Appliances."
 msgstr ""
-"Dies ist das minimale openSUSE Laufzeitsystem. Es ist ein wirklich minimales "
+"Dies ist das minimale SLE-Laufzeitsystem. Es ist ein wirklich minimales "
 "System, wo Sie sich einloggen können und eine Shell wird gestartet, was "
 "alles ist. Es ist als Anwendungsbasis gedacht."
 
 #. Installer/patterns-base/summary
 msgid "Patterns for Installation (base patterns)"
-msgstr ""
+msgstr "Schemata für die Installation (Basisschemata)"
 
 #. Installer/patterns-base/description
 msgid ""
@@ -98,6 +93,12 @@ msgid ""
 "This particular package contains all the base / core patterns (and those "
 "that don't fit well anywhere else)."
 msgstr ""
+"Dies ist ein internes Paket, mit dem die Schemata bei der Einrichtung der "
+"Installationsquelle erstellt werden. Die Installation dieses Pakets ist "
+"nicht sinnvoll.\n"
+"\n"
+"Dieses spezielle Paket enthält alle Basis-/Kernschemata (und solche, die "
+"sonst nirgendwo hin passen)."
 
 #. Module-Basesystem/patterns-base/patterns-base-32bit/summary
 msgid "32-Bit Runtime Environment"
@@ -136,11 +137,11 @@ msgstr ""
 
 #. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/description
 msgid "The 32bit pattern complementing apparmor."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von AppArmor."
 
 #. Module-Basesystem/patterns-base/patterns-base-base-32bit/description
 msgid "The 32bit pattern complementing base."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung der Basis."
 
 #. Module-Basesystem/patterns-base/patterns-base-basesystem/summary
 msgid "Base System (alias pattern for base)"
@@ -170,11 +171,11 @@ msgstr ""
 
 #. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von enhanced_base."
 
 #. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von minimal_base."
 
 #. Module-Basesystem/patterns-base/patterns-base-sw_management/summary
 #. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/summary
@@ -191,7 +192,7 @@ msgstr ""
 
 #. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/description
 msgid "The 32bit pattern complementing sw_management."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von sw_management."
 
 #. Module-Basesystem/patterns-base/patterns-base-x11/summary
 #. Module-Basesystem/patterns-base/patterns-base-x11-32bit/summary
@@ -225,11 +226,11 @@ msgstr "Grafische Umgebungen"
 
 #. Module-Basesystem/patterns-base/patterns-base-x11-32bit/description
 msgid "The 32bit pattern complementing x11."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von x11."
 
 #. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von x11_enhanced."
 
 #. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -258,10 +259,8 @@ msgid "YaST tools for basic system administration."
 msgstr "YaST-Tools für die grundlegende Systemadministration."
 
 #. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/summary
-#, fuzzy
-#| msgid "GNOME Desktop Environment"
 msgid "GNOME Desktop Environment (Basic)"
-msgstr "GNOME Desktop-Umgebung"
+msgstr "GNOME Desktop-Umgebung (Basic)"
 
 #. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/description
 msgid ""
@@ -269,6 +268,10 @@ msgid ""
 "users. This pattern installs GNOME desktop environment with only essential "
 "graphical applications installed (File Manager, Web Browser)."
 msgstr ""
+"Die GNOME Desktop-Umgebung ist ein intuitiver und attraktiver Desktop für "
+"Benutzer. Mit diesem Schema wird eine GNOME-Desktop-Umgebung installiert, "
+"die nur die wichtigsten grafischen Anwendungen umfasst (Dateiverwaltung, "
+"Webbrowser)."
 
 #. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/summary
 msgid "GNOME Base System"
@@ -296,7 +299,7 @@ msgstr "Entwicklung"
 
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von devel_basis."
 
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/summary
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
@@ -309,7 +312,7 @@ msgstr "Werkzeuge für die Entwicklung und Übersetzung des Linux-Kernels."
 
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
 msgid "The 32bit pattern complementing devel_kernel."
-msgstr ""
+msgstr "Das 32-Bit-Schema zur Vervollständigung von devel_kernel."
 
 #. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/summary
 msgid "YaST Development"
@@ -324,10 +327,8 @@ msgstr ""
 "Einrichtungs- und Konfigurationswerkzeug für openSUSE."
 
 #. Module-HPC/patterns-hpc/patterns-hpc-compute_node/summary
-#, fuzzy
-#| msgid "SUSE Cloud Infrastructure Compute Node"
 msgid "HPC compute node"
-msgstr "SUSE Cloud Infrastructure Compute Node"
+msgstr "SUSE Cloud-Compute-Knoten für die Infrastruktur"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-compute_node/description
 msgid ""
@@ -336,6 +337,11 @@ msgid ""
 "node *must* be installed in a automatic manner. A basset of numerical "
 "libraries should also be installed."
 msgstr ""
+"Ein Compute-Knoten enthält ein minimales Softwareabbild und führt "
+"hauptsächlich Simulationsprogramme aus. Dienste auf diesem Knoten müssen auf "
+"das absolute Minimum beschränkt sein und der Knoten *muss* automatisch "
+"installiert werden. Eine Reihe grundlegender Bibliotheken muss ebenfalls "
+"installiert werden."
 
 #. Module-HPC/patterns-hpc/patterns-hpc-compute_node/category
 #. Module-HPC/patterns-hpc/patterns-hpc-development_node/category
@@ -353,10 +359,8 @@ msgid "Server Functions"
 msgstr "Serverfunktionen"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-development_node/summary
-#, fuzzy
-#| msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
 msgid "Packages needed to be able to develop HPC Apps"
-msgstr "Pakete  zur Aktivierung von IMA/EVM auf openSUSE Kubic notwendig"
+msgstr "Pakete, die zum Entwickeln von HPC-Apps benötigt werden"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-development_node/description
 msgid ""
@@ -364,10 +368,13 @@ msgid ""
 "applications. It depends on the hpc-compute node and adds additionally the "
 "compilers and includes also the relevant managment packages."
 msgstr ""
+"Dieses Paket enthält alle benötigten Pakete zum Entwickeln von HPC-"
+"Anwendungen. Es ist vom HPC-Compute-Knoten abhängig, fügt zusätzlich die "
+"Compiler hinzu und schließt auch die relevanten Verwaltungspakete ein."
 
 #. Module-HPC/patterns-hpc/patterns-hpc-libraries/summary
 msgid "HPC modularized libraries"
-msgstr ""
+msgstr "Modularisierte HPC-Bibliotheken"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-libraries/description
 msgid ""
@@ -375,14 +382,18 @@ msgid ""
 "in a hpc environment. Especially these libariries allows you to install a "
 "mpi enabled libarary for different mpi libraries."
 msgstr ""
+"Dieses Paket stellt alle modularisierten Bibliotheken bereit, sodass sie in "
+"einer HPC-Umgebung verwendet werden können. Insbesondere können Sie mit "
+"diesen Bibliotheken eine MPI-fähige Bibliothek zur Einbindung anderer MPI-"
+"Bibliotheken installieren."
 
 #. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/summary
 msgid "Live Patching"
-msgstr ""
+msgstr "Live Patching"
 
 #. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
-msgstr ""
+msgstr "Enthält Tools und Patches, um Fehler im Kernel zur Laufzeit zu beheben."
 
 #. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/category
 #. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/category
@@ -396,7 +407,7 @@ msgstr "Primäre Funktionen"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
 msgid "Amazon Web Services - All"
-msgstr ""
+msgstr "Amazon Web Services - Alle"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
 msgid ""
@@ -406,10 +417,15 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Amazon Web Services - Tools)."
 msgstr ""
+"Dieses Schema installiert alle Amazon Web Services-Kommandozeilentools, "
+"Pakete zur Instanzinitialisierung und Tools zur Kommunikation mit dem Cloud-"
+"Framework innerhalb einer ausgeführten Instanz. Es wird empfohlen, statt "
+"dieses Schemas eines der Schemata für spezifische Anwendungsfälle (z. B. "
+"Amazon Web Services - Tools) zu installieren."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
 msgid "Amazon Web Services - Instance Initialization"
-msgstr ""
+msgstr "Amazon Web Services - Instanzinitialisierung"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
 msgid ""
@@ -417,30 +433,37 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. cloud-init)."
 msgstr ""
+"Dieses Schema installiert die Pakete zur Amazon Web Services-"
+"Instanzinitialisierung, die die Bereitstellung und Ausführung von Instanzen "
+"im Cloud-Framework unterstützen (z. B. cloud-init)."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
 msgid "Amazon Web Services - Instance Tools"
-msgstr ""
+msgstr "Amazon Web Services - Instanztools"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
 msgid ""
 "This pattern install the Amazon Web Services instance specific tools which "
 "are used to collect instance metadata (e.g. python-ec2metadata)."
 msgstr ""
+"Dieses Schema installiert die instanzspezifischen Amazon Web Services-Tools, "
+"die zur Erfassung von Instanzmetadaten dienen (z. B. python-ec2metadata)."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
 msgid "Amazon Web Services - Tools"
-msgstr ""
+msgstr "Amazon Web Services - Tools"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
 msgid ""
 "This pattern installs the Amazon Web Services command line interface tools "
 "to communicate with the cloud framework (e.g. aws-cli)."
 msgstr ""
+"Dieses Schema installiert Amazon Web Services-Kommandozeilentools zur "
+"Kommunikation mit dem Cloud-Framework (z. B. aws-cli)."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
 msgid "Google Cloud Platform - All"
-msgstr ""
+msgstr "Google Cloud-Plattform - Alle"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
 msgid ""
@@ -450,10 +473,15 @@ msgid ""
 "install this pattern, but instead install one of the use-case specific "
 "patterns (e.g. Google Cloud Platform - Tools)."
 msgstr ""
+"Dieses Schema installiert alle Kommandozeilentools für die Google Cloud-"
+"Plattform, Pakete zur Instanzinitialisierung und Tools zur Kommunikation mit "
+"dem Cloud-Framework innerhalb einer ausgeführten Instanz. Es wird empfohlen, "
+"statt dieses Schemas eines der Schemata für spezifische Anwendungsfälle (z. "
+"B. Google Cloud-Plattform - Tools) zu installieren."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
 msgid "Google Cloud Platform - Instance Initialization"
-msgstr ""
+msgstr "Google Cloud-Plattform - Instanzinitialisierung"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
 msgid ""
@@ -461,30 +489,38 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. google-daemon)."
 msgstr ""
+"Dieses Schema installiert die Pakete zur Instanzinitialisierung für die "
+"Google Cloud-Plattform, die die Bereitstellung und Ausführung von Instanzen "
+"im Cloud-Framework unterstützen (z. B. google-daemon)."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
 msgid "Google Cloud Platform - Instance Tools"
-msgstr ""
+msgstr "Google Cloud-Plattform - Instanztools"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
 msgid ""
 "This pattern install the Google Cloud Platform instance specific tools which "
 "are used to collect instance metadata (e.g. python-gcemetadata)."
 msgstr ""
+"Dieses Schema installiert instanzspezifische Tools für die Google Cloud-"
+"Plattforms, die zur Erfassung von Instanzmetadaten dienen (z. B. python-"
+"gcemetadata)."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
 msgid "Google Cloud Platform - Tools"
-msgstr ""
+msgstr "Google Cloud-Plattform - Tools"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
 msgid ""
 "This pattern installs the Google Cloud Platform command line interface tools "
 "to communicate with the cloud framework (e.g. google-cloud-sdk)."
 msgstr ""
+"Dieses Schema installiert die Kommandozeilentools für die Google Cloud-"
+"Plattform zur Kommunikation mit dem Cloud-Framework (z. B. google-cloud-sdk)."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
 msgid "Microsoft Azure - All"
-msgstr ""
+msgstr "Microsoft Azure - Alle"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
 msgid ""
@@ -494,6 +530,11 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Microsoft Azure - Tools)."
 msgstr ""
+"Dieses Schema installiert alle Microsoft Azure-Kommandozeilentools, Pakete "
+"zur Instanzinitialisierung und Tools zur Kommunikation mit dem Cloud-"
+"Framework innerhalb einer ausgeführten Instanz. Es wird empfohlen, statt "
+"dieses Schemas eines der Schemata für spezifische Anwendungsfälle (z. B. "
+"Amazon Web Services - Tools) zu installieren."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
 msgid "Microsoft Azure - Instance Initialization"
@@ -538,6 +579,11 @@ msgid ""
 "pattern, but instead install one of the use-case specific patterns (e.g. "
 "OpenStack - Tools)."
 msgstr ""
+"Dieses Schema installiert alle OpenStack-Kommandozeilentools, Pakete zur "
+"Instanzinitialisierung und Tools zur Kommunikation mit dem Cloud-Framework "
+"innerhalb einer ausgeführten Instanz. Es wird empfohlen, statt dieses "
+"Schemas eines der Schemata für spezifische Anwendungsfälle (z. B. OpenStack -"
+" Tools) zu installieren."
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
 msgid "OpenStack - Instance Initialization"
