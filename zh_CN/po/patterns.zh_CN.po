@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-06 13:24+0000\n"
-"PO-Revision-Date: 2017-12-13 07:10+0000\n"
-"Last-Translator: Wenruo Qu <wqu@suse.com>\n"
+"PO-Revision-Date: 2018-04-12 13:01+0000\n"
+"Last-Translator: Emily Dong <Emily.Dong@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
-"i18n/patterns-master/zh_CN/>\n"
+"i18n/patterns-sle-15/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.17.1\n"
+"X-Generator: Weblate 2.18\n"
 
 #. Installer/patterns-base/patterns-base-base/summary
 #. Installer/patterns-base/patterns-base-minimal_base/summary
@@ -57,22 +57,16 @@ msgstr "基础技术"
 
 #. Installer/patterns-base/patterns-base-minimal_base/description
 #. Module-Basesystem/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal SLE runtime system. It is really a minimal system, you "
 "can login and a shell will be started, that's all. It is intended as base "
 "for Appliances."
 msgstr ""
-"这是 Novell SUSE Linux 企业版的最小运行时系统。它真的是一个最小化的系统，您可"
-"以登录，打开一个壳层，这就是全部了。它的目的是作为 Appliances 的基础。"
+"这是 SUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一个壳层，这就是全部了。它的目的是作为 Appliances 的基础。"
 
 #. Installer/patterns-base/summary
 msgid "Patterns for Installation (base patterns)"
-msgstr ""
+msgstr "安装软件集（基础软件集）"
 
 #. Installer/patterns-base/description
 msgid ""
@@ -83,6 +77,9 @@ msgid ""
 "This particular package contains all the base / core patterns (and those "
 "that don't fit well anywhere else)."
 msgstr ""
+"这是个内部软件包，用于在设置安装源时创建软件集。不应该安装此软件包。\n"
+"\n"
+"这个特定的软件包包含所有基础/核心软件集（以及在其他地方不太适合的软件集）。"
 
 #. Module-Basesystem/patterns-base/patterns-base-32bit/summary
 msgid "32-Bit Runtime Environment"
@@ -113,15 +110,15 @@ msgstr ""
 
 #. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/description
 msgid "The 32bit pattern complementing apparmor."
-msgstr ""
+msgstr "对 apparmor 进行补充的 32 位软件集。"
 
 #. Module-Basesystem/patterns-base/patterns-base-base-32bit/description
 msgid "The 32bit pattern complementing base."
-msgstr ""
+msgstr "对 base 进行补充的 32 位软件集。"
 
 #. Module-Basesystem/patterns-base/patterns-base-basesystem/summary
 msgid "Base System (alias pattern for base)"
-msgstr ""
+msgstr "基础系统（基础软件集的别名）"
 
 #. Module-Basesystem/patterns-base/patterns-base-documentation/summary
 #. Module-Basesystem/patterns-base/patterns-base-documentation/description
@@ -146,11 +143,11 @@ msgstr "这是扩展的基础运行时系统，附带了许多便利的软件包
 
 #. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
-msgstr ""
+msgstr "对 enhanced_base 进行补充的 32 位软件集。"
 
 #. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
-msgstr ""
+msgstr "对 minimal_base 进行补充的 32 位软件集。"
 
 #. Module-Basesystem/patterns-base/patterns-base-sw_management/summary
 #. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/summary
@@ -165,7 +162,7 @@ msgstr "此软件集提供了一个用于使您的系统保持最新的图形应
 
 #. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/description
 msgid "The 32bit pattern complementing sw_management."
-msgstr ""
+msgstr "对 sw_management 进行补充的 32 位软件集。"
 
 #. Module-Basesystem/patterns-base/patterns-base-x11/summary
 #. Module-Basesystem/patterns-base/patterns-base-x11-32bit/summary
@@ -197,11 +194,11 @@ msgstr "图形环境"
 
 #. Module-Basesystem/patterns-base/patterns-base-x11-32bit/description
 msgid "The 32bit pattern complementing x11."
-msgstr ""
+msgstr "对 x11 进行补充的 32 位软件集。"
 
 #. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
-msgstr ""
+msgstr "对 x11_enhanced 进行补充的 32 位软件集。"
 
 #. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -228,10 +225,8 @@ msgid "YaST tools for basic system administration."
 msgstr "基础系统管理所需的 YaST 工具。"
 
 #. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/summary
-#, fuzzy
-#| msgid "GNOME Desktop Environment"
 msgid "GNOME Desktop Environment (Basic)"
-msgstr "GNOME 桌面环境"
+msgstr "GNOME 桌面环境（基本）"
 
 #. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/description
 msgid ""
@@ -239,6 +234,8 @@ msgid ""
 "users. This pattern installs GNOME desktop environment with only essential "
 "graphical applications installed (File Manager, Web Browser)."
 msgstr ""
+"GNOME 桌面环境是一种对用户而言较为直观且较有吸引力的桌面。此软件集会安装预装了最基本的图形应用程序（文件管理器、Web 浏览器）的 GNOME "
+"桌面环境。"
 
 #. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/summary
 msgid "GNOME Base System"
@@ -265,7 +262,7 @@ msgstr "开发"
 
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
-msgstr ""
+msgstr "对 devel_basis 进行补充的 32 位软件集。"
 
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/summary
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
@@ -278,7 +275,7 @@ msgstr "Linux 内核开发工具。"
 
 #. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
 msgid "The 32bit pattern complementing devel_kernel."
-msgstr ""
+msgstr "对 devel_kernel 进行补充的 32 位软件集。"
 
 #. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/summary
 msgid "YaST Development"
@@ -291,10 +288,8 @@ msgid ""
 msgstr "YaST 模块开发所需的工具和库。YaST 是 openSUSE 的安装配置工具。"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-compute_node/summary
-#, fuzzy
-#| msgid "SUSE Cloud Infrastructure Compute Node"
 msgid "HPC compute node"
-msgstr "SUSE Cloud 基础设施计算节点"
+msgstr "HPC 计算节点"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-compute_node/description
 msgid ""
@@ -302,7 +297,7 @@ msgid ""
 "programs. Services on this node should be reduced to a bare minimum and the "
 "node *must* be installed in a automatic manner. A basset of numerical "
 "libraries should also be installed."
-msgstr ""
+msgstr "计算节点具有极简的软件映像，主要运行模拟程序。此节点上的服务应减少至最低数量，并且*不得*以自动方式安装节点。另外还应安装一定数量的库。"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-compute_node/category
 #. Module-HPC/patterns-hpc/patterns-hpc-development_node/category
@@ -320,36 +315,34 @@ msgid "Server Functions"
 msgstr "服务器功能"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-development_node/summary
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Packages needed to be able to develop HPC Apps"
-msgstr "仅适用于 openSUSE Kubic DVD 的软件包"
+msgstr "开发 HPC 应用程序所需的软件包"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-development_node/description
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the hpc-compute node and adds additionally the "
 "compilers and includes also the relevant managment packages."
-msgstr ""
+msgstr "此软件包提供与开发 HPC 应用程序相关的所有软件包。它依赖于 hpc 计算节点，会额外增加编译器，另外还包含相关的管理软件包。"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-libraries/summary
 msgid "HPC modularized libraries"
-msgstr ""
+msgstr "HPC 模块化库"
 
 #. Module-HPC/patterns-hpc/patterns-hpc-libraries/description
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in a hpc environment. Especially these libariries allows you to install a "
 "mpi enabled libarary for different mpi libraries."
-msgstr ""
+msgstr "此软件包提供所有模块化库，以便可在 HPC 环境中使用这些库。特别是，这些库可让您安装支持 MPI 的库，以便使用不同的 MPI 库。"
 
 #. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/summary
 msgid "Live Patching"
-msgstr ""
+msgstr "在线增补"
 
 #. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
-msgstr ""
+msgstr "提供用于在运行时修复内核的工具和增补程序。"
 
 #. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/category
 #. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/category
@@ -363,7 +356,7 @@ msgstr "主要功能"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
 msgid "Amazon Web Services - All"
-msgstr ""
+msgstr "Amazon Web Services - 所有"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
 msgid ""
@@ -373,10 +366,13 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Amazon Web Services - Tools)."
 msgstr ""
+"此软件集会安装所有 Amazon Web Services "
+"命令行界面工具、实例初始化软件包和用于从正在运行的实例中与云框架通讯的工具。建议不要安装此软件集，而是安装某个特定于用例的软件集（例如 Amazon "
+"Web Services - 工具）。"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
 msgid "Amazon Web Services - Instance Initialization"
-msgstr ""
+msgstr "Amazon Web Services - 实例初始化"
 
 #. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
 msgid ""
