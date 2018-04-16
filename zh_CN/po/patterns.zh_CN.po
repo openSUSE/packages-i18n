@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-06 13:24+0000\n"
+"POT-Creation-Date: 2018-04-16 13:01+0000\n"
 "PO-Revision-Date: 2018-04-13 02:42+0000\n"
 "Last-Translator: Emily Dong <Emily.Dong@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
@@ -14,18 +14,717 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 
-#. Installer/patterns-base/patterns-base-base/summary
-#. Installer/patterns-base/patterns-base-minimal_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-base/summary
-#. Module-Basesystem/patterns-base/patterns-base-base-32bit/summary
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/summary
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
+msgid "GEO Clustering for High Availability"
+msgstr "GEO Clustering for High Availability"
+
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/description
+msgid ""
+"This pattern provides tools for building multi-site clustering setups based "
+"on the SUSE Linux Enterprise High-Availability and its GEO extension."
+msgstr ""
+"此软件集提供基于 SUSE Linux Enterprise High-Availability 及其 GEO 扩展构建多"
+"站点群集设置的工具。"
+
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/category
+#. SLE/patterns-ha/patterns-ha-ha_sles/category
+msgid "Primary Functions"
+msgstr "主要功能"
+
+#. SLE/patterns-ha/patterns-ha-ha_sles/summary
+msgid "High Availability"
+msgstr "高在线率"
+
+#. SLE/patterns-ha/patterns-ha-ha_sles/description
+msgid ""
+"Provide tools to ensure a high degree of operational continuity and reduce "
+"the downtimes of your system."
+msgstr "提供保证高持续运营性和降低系统停机时间的工具。"
+
+#. SLE/patterns-hpc/patterns-hpc-compute_node/summary
+#, fuzzy
+#| msgid "HPC compute node"
+msgid "HPC Basic Compute Node"
+msgstr "HPC 计算节点"
+
+#. SLE/patterns-hpc/patterns-hpc-compute_node/description
+#, fuzzy
+#| msgid ""
+#| "A compute node has a minmal software image and mainly runs simultion "
+#| "programs. Services on this node should be reduced to a bare minimum and "
+#| "the node *must* be installed in a automatic manner. A basset of numerical "
+#| "libraries should also be installed."
+msgid ""
+"A compute node has a minimal software image and mainly runs simulation "
+"programs. Services on this node should be reduced to a bare minimum and the "
+"node *must* be installed in a automatic manner. The pattern HPC libraries "
+"should also be installed."
+msgstr ""
+"计算节点具有极简的软件映像，主要运行模拟程序。此节点上的服务应减少至最低数"
+"量，并且*不得*以自动方式安装节点。另外还应安装一定数量的库。"
+
+#. SLE/patterns-hpc/patterns-hpc-compute_node/category
+#. SLE/patterns-hpc/patterns-hpc-libraries/category
+msgid "Server Functions"
+msgstr "服务器功能"
+
+#. SLE/patterns-hpc/patterns-hpc-development_node/summary
+#, fuzzy
+#| msgid "KDE development packages"
+msgid "HPC Development Packages"
+msgstr "KDE 开发软件包"
+
+#. SLE/patterns-hpc/patterns-hpc-development_node/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the hpc-compute node and adds additionally "
+#| "the compilers and includes also the relevant managment packages."
+msgid ""
+"This package provides all the relevant packages for developing HPC "
+"applications. It depends on the HPC libraries and adds additionally the "
+"compilers and includes also the relevant management packages."
+msgstr ""
+"此软件包提供与开发 HPC 应用程序相关的所有软件包。它依赖于 hpc 计算节点，会额"
+"外增加编译器，另外还包含相关的管理软件包。"
+
+#. SLE/patterns-hpc/patterns-hpc-development_node/category
+msgid "Development"
+msgstr "开发"
+
+#. SLE/patterns-hpc/patterns-hpc-libraries/summary
+#, fuzzy
+#| msgid "HPC modularized libraries"
+msgid "HPC modularized Libraries"
+msgstr "HPC 模块化库"
+
+#. SLE/patterns-hpc/patterns-hpc-libraries/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in a hpc environment. Especially these libariries allows you to "
+#| "install a mpi enabled libarary for different mpi libraries."
+msgid ""
+"This package provides all the modularized libraries so that they can be used "
+"in an HPC environment. Especially these libraries allows you to install "
+"several MPI flavors in parallel. In order to use this libraries you have "
+"them to load first via the module command."
+msgstr ""
+"此软件包提供所有模块化库，以便可在 HPC 环境中使用这些库。特别是，这些库可让您"
+"安装支持 MPI 的库，以便使用不同的 MPI 库。"
+
+#. SLE/patterns-ofed/patterns-ofed-ofed/summary
+#. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
+msgid "Infiniband (OFED)"
+msgstr "Infiniband (OFED)"
+
+#. SLE/patterns-ofed/patterns-ofed-ofed/description
+msgid ""
+"This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
+"base packages. The base pattern includes the packages you need to get your "
+"Infiniband adapter operational, that is IB kernel modules and basic user "
+"level libraries."
+msgstr ""
+"此软件集定义了 OpenFabrics Enterprise Distribution (OFED) 软件的基础软件包。"
+"该基础软件集包含了让您的 Infiniband 适配器运行起来所需的软件包，即 IB 内核模"
+"块和基础用户级别库。"
+
+#. SLE/patterns-ofed/patterns-ofed-ofed-32bit/description
+msgid "The 32bit pattern complementing ofed."
+msgstr "对 ofed 进行补充的 32 位软件集。"
+
+#. SLE/patterns-rpm-macros/summary
+msgid "RPM macros for building of patterns modules"
+msgstr "用于构建软件集模组的 RPM 宏"
+
+#. SLE/patterns-rpm-macros/description
+msgid "This package contains SUSE RPM macros to aid creating patterns."
+msgstr "用来创建模式（Pattern)的SUSE RPM宏。"
+
+#. SLE/patterns-server/patterns-server-dhcp_dns_server/summary
+#. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
+msgid "DHCP and DNS Server"
+msgstr "DHCP 和 DNS 服务器"
+
+#. SLE/patterns-server/patterns-server-dhcp_dns_server/description
+msgid ""
+"Software to set up a server for the Dynamic Host Configuration Protocol "
+"(DHCP) and the Domain Name System (DNS) services. DHCP provides "
+"configuration parameters to client computers to integrate them into a "
+"network, whereas DNS delivers information associated with domain names, in "
+"particular, the IP address."
+msgstr ""
+"设置动态主机配置协议（DHCP）和域名系统 (DNS) 服务服务器所需的软件。DHCP 为客"
+"户机提供配置参数以将它们整合进一个网络，而 DNS 则传递与域名相关的信息，特别"
+"是，IP 地址。"
+
+#. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/description
+msgid "The 32bit pattern complementing dhcp_dns_server."
+msgstr "对 dhcp_dns_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server/patterns-server-directory_server/summary
+#. SLE/patterns-server/patterns-server-directory_server-32bit/summary
+msgid "Directory Server (LDAP)"
+msgstr "目录服务器 (LDAP)"
+
+#. SLE/patterns-server/patterns-server-directory_server/description
+msgid ""
+"Software to set up a directory server with OpenLDAP. The Lightweight "
+"Directory Access Protocol (LDAP) is used to access online directory services."
+msgstr ""
+"使用 OpenLDAP 设置目录服务器的软件。轻量级目录访问协议（LDAP）用于访问在线目"
+"录服务。"
+
+#. SLE/patterns-server/patterns-server-directory_server-32bit/description
+msgid "The 32bit pattern complementing directory_server."
+msgstr "对 directory_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
+msgid "FIPS 140-2 specific packages"
+msgstr "FIPS 140-2 特定的软件包"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+"此软件集会安装 FIPS 140-2 特定的软件包，以便对使用中的各种加密模块进行补充。"
+"如果您要运行“fips=1”的机器，则需要安装此软件集。\n"
+"\n"
+"请注意，此软件集仅支持符合 FIPS 140-2 的操作，不会直接使系统 FIPS 140-2 获得"
+"认证或验证。\n"
+"\n"
+"请参见有关 FIPS 140-2 认证状态的 SUSE 官方声明。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
+msgid "The 32bit pattern complementing fips."
+msgstr "对 fips 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
+msgid "Oracle Server Base"
+msgstr "Oracle 服务器基础"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
+msgid "Set up the server for installing Oracle databases."
+msgstr "为安装 Oracle 数据库设置服务器。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
+msgid "The 32bit pattern complementing oracle_server."
+msgstr "对 oracle_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
+msgid "SAP Application Server Base"
+msgstr "SAP 应用程序服务器基础"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
+msgid "Set up the server for installing SAP systems."
+msgstr "为安装 SAP 系统设置服务器。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
+msgid "The 32bit pattern complementing sap_server."
+msgstr "对 sap_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server/patterns-server-file_server/summary
+#. SLE/patterns-server/patterns-server-file_server-32bit/summary
+msgid "File Server"
+msgstr "文件服务器"
+
+#. SLE/patterns-server/patterns-server-file_server/description
+msgid ""
+"File services to host files so that they may be accessed or retrieved by "
+"other computers on the same network. This includes the FTP, SMB, and NFS "
+"protocols."
+msgstr ""
+"存储文件的文件服务，目的是使同一网络中的其它计算机可以访问或撷取这些文件。此"
+"软件集收纳了使用 FTP、SMB 和 NFS 协议的服务器软件。"
+
+#. SLE/patterns-server/patterns-server-file_server-32bit/description
+msgid "The 32bit pattern complementing file_server."
+msgstr "对 file_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server/patterns-server-gateway_server/summary
+#. SLE/patterns-server/patterns-server-gateway_server-32bit/summary
+msgid "Internet Gateway"
+msgstr "互联网网关"
+
+#. SLE/patterns-server/patterns-server-gateway_server/description
+msgid ""
+"Software to set up a proxy, firewall, and gateway server, including a "
+"virtual private network (VPN) gateway."
+msgstr "设置代理、防火墙和网关服务器所需的软件。包括虚拟专用网络 (VPN) 网关。"
+
+#. SLE/patterns-server/patterns-server-gateway_server-32bit/description
+msgid "The 32bit pattern complementing gateway_server."
+msgstr "对 gateway_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server/patterns-server-kvm_server/summary
+msgid "KVM Host Server"
+msgstr "KVM 主机服务器"
+
+#. SLE/patterns-server/patterns-server-kvm_server/description
+#. SLE/patterns-server/patterns-server-xen_server/description
+msgid ""
+"Software to set up a server for configuring, managing, and monitoring "
+"virtual machines on a single physical machine."
+msgstr "用于在单个物理主机上设置一个配置、管理和监控虚拟机的服务器的软件。"
+
+#. SLE/patterns-server/patterns-server-kvm_tools/summary
+msgid "KVM Virtualization Host and tools"
+msgstr "KVM 虚拟化主机和工具"
+
+#. SLE/patterns-server/patterns-server-kvm_tools/description
+msgid ""
+"This will provide all minimal system to get a running KVM Hypervisor and be "
+"able to configure, manage, and monitor virtual machines on a single physical "
+"machine."
+msgstr ""
+"此软件集将提供可获得运行中 KVM 超级管理程序，并可配置、管理和监控单个物理机上"
+"的各虚拟机的全套极简系统。"
+
+#. SLE/patterns-server/patterns-server-kvm_tools/category
+#. SLE/patterns-server/patterns-server-xen_tools/category
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/category
+msgid "Base Technologies"
+msgstr "基础技术"
+
+#. SLE/patterns-server/patterns-server-lamp_server/summary
+#. SLE/patterns-server/patterns-server-lamp_server-32bit/summary
+msgid "Web and LAMP Server"
+msgstr "Web 和 LAMP 服务器"
+
+#. SLE/patterns-server/patterns-server-lamp_server/description
+msgid ""
+"Software to set up a Web server that is able to serve static, dynamic, and "
+"interactive content (like a Web shop). This includes Apache HTTP Server, the "
+"database management system MySQL, and scripting languages such as PHP, "
+"Python, Ruby on Rails, or Perl."
+msgstr ""
+"设置能服务于静态、动态和交互式内容 (如网上商店) 的 Web 服务器所需的软件。 这"
+"包括 Apache HTTP 服务器、数据库管理系统 MySQL 和脚本语言，如 PHP、Python、"
+"Ruby on Rails 或 Perl。"
+
+#. SLE/patterns-server/patterns-server-lamp_server-32bit/description
+msgid "The 32bit pattern complementing lamp_server."
+msgstr "对 lamp_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server/patterns-server-mail_server/summary
+#. SLE/patterns-server/patterns-server-mail_server-32bit/summary
+msgid "Mail and News Server"
+msgstr "邮件和新闻服务器"
+
+#. SLE/patterns-server/patterns-server-mail_server/description
+msgid ""
+"Software to set up electronic mail and message services to handle email, "
+"mailing, and news lists, including a virus scanner to scan messages at the "
+"server level."
+msgstr ""
+"设置电子邮件和消息服务所需的软件，用来处理电子邮件、邮件和新闻列表。包含一个"
+"病毒扫描程序在服务器端扫描消息。"
+
+#. SLE/patterns-server/patterns-server-mail_server-32bit/description
+msgid "The 32bit pattern complementing mail_server."
+msgstr "对 mail_server 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server/patterns-server-printing/summary
+#. SLE/patterns-server/patterns-server-printing-32bit/summary
+msgid "Print Server"
+msgstr "打印服务器"
+
+#. SLE/patterns-server/patterns-server-printing/description
+msgid ""
+"This pattern provides all packages necessary for printing. It provides all "
+"needed packages for printing to a locally connected printer, printing using "
+"a remote print server and for setting up a print server."
+msgstr ""
+"此软件集提供执行打印所需的所有软件包。它提供了打印到本地连接的打印机、使用远"
+"程打印服务器打印以及设置打印服务器所需的所有软件包。"
+
+#. SLE/patterns-server/patterns-server-printing-32bit/description
+msgid "The 32bit pattern complementing printing."
+msgstr "对 printing 进行补充的 32 位软件集。"
+
+#. SLE/patterns-server/patterns-server-xen_server/summary
+msgid "Xen Virtual Machine Host Server"
+msgstr "Xen 虚拟机主机服务器"
+
+#. SLE/patterns-server/patterns-server-xen_tools/summary
+msgid "XEN Virtualization Host and tools"
+msgstr "XEN 虚拟化主机和工具"
+
+#. SLE/patterns-server/patterns-server-xen_tools/description
+msgid ""
+"This will provide all minimal system to get a running XEN Hypervisor and be "
+"able to configure, manage, and monitor virtual machines on a single physical "
+"machine."
+msgstr ""
+"此软件集将提供可获得运行中 XEN 超级管理程序，并可配置、管理和监控单个物理机上"
+"的各虚拟机的全套极简系统。"
+
+#. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/summary
+msgid "Web-Based Enterprise Management"
+msgstr "基于网络的企业管理"
+
+#. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/description
+msgid "The 32bit pattern complementing WBEM."
+msgstr "对 WBEM 进行补充的 32 位软件集。"
+
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/summary
+msgid "YaST Installation Packages"
+msgstr "YaST 安装软件包"
+
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/description
+msgid "YaST tools for installing your system."
+msgstr "系统安装所需的 YaST 工具。"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
+msgid "Base Development"
+msgstr "基础开发环境"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
+msgid "The 32bit pattern complementing devel_basis."
+msgstr "对 devel_basis 进行补充的 32 位软件集。"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
+msgid "Linux Kernel Development"
+msgstr "Linux 内核开发"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
+msgid "Tools for Linux kernel development."
+msgstr "Linux 内核开发工具。"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
+msgid "The 32bit pattern complementing devel_kernel."
+msgstr "对 devel_kernel 进行补充的 32 位软件集。"
+
+#. SLE/patterns-yast/patterns-yast-devel_yast/summary
+msgid "YaST Development"
+msgstr "YaST 开发"
+
+#. SLE/patterns-yast/patterns-yast-devel_yast/description
+msgid ""
+"Tools and libraries for developing YaST modules, the setup and configuration "
+"tool for openSUSE."
+msgstr "YaST 模块开发所需的工具和库。YaST 是 openSUSE 的安装配置工具。"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
+msgid "GNOME Desktop Environment (Basic)"
+msgstr "GNOME 桌面环境（基本）"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/description
+msgid ""
+"The GNOME desktop environment is an intuitive and attractive desktop for "
+"users. This pattern installs GNOME desktop environment with only essential "
+"graphical applications installed (File Manager, Web Browser)."
+msgstr ""
+"GNOME 桌面环境是一套直观迷人的用户桌面环境。此软件集会安装预装了最基本图形应"
+"用程序（文件管理器、Web 浏览器）的 GNOME 桌面环境。"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/category
+msgid "Graphical Environments"
+msgstr "图形环境"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/summary
+msgid "GNOME Base System"
+msgstr "GNOME 基础系统"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/description
+msgid "Base packages for the GNOME desktop environment."
+msgstr "GNOME 桌面环境的基础软件包。"
+
+#. SLE/patterns-lp/patterns-lp-lp_sles/summary
+msgid "Live Patching"
+msgstr "在线增补"
+
+#. SLE/patterns-lp/patterns-lp-lp_sles/description
+msgid "Provide tools and patches to fix kernel at runtime."
+msgstr "提供用于在运行时修复内核的工具和增补程序。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
+msgid "Amazon Web Services - All"
+msgstr "Amazon Web Services - 所有"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
+msgid ""
+"This pattern installs all Amazon Web Services command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Amazon Web Services - Tools)."
+msgstr ""
+"此软件集会安装所有 Amazon Web Services 命令行界面工具、实例初始化软件包和用于"
+"从正在运行的实例中与该云框架通讯的工具。不建议安装此软件集，而是安装某个特定"
+"于用例的软件集（例如 Amazon Web Services - 工具）。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
+msgid "Amazon Web Services - Instance Initialization"
+msgstr "Amazon Web Services - 实例初始化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
+msgid ""
+"This pattern installs the Amazon Web Services instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. cloud-init)."
+msgstr ""
+"此软件集会安装 Amazon Web Services 实例初始化软件包（例如 cloud-init），以支"
+"持该云框架中实例的供应和运行。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
+msgid "Amazon Web Services - Instance Tools"
+msgstr "Amazon Web Services - 实例工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
+msgid ""
+"This pattern install the Amazon Web Services instance specific tools which "
+"are used to collect instance metadata (e.g. python-ec2metadata)."
+msgstr ""
+"此软件集会安装 Amazon Web Services 实例特定的工具（例如 python-"
+"ec2metadata），用于收集实例元数据。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
+msgid "Amazon Web Services - Tools"
+msgstr "Amazon Web Services - 工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
+msgid ""
+"This pattern installs the Amazon Web Services command line interface tools "
+"to communicate with the cloud framework (e.g. aws-cli)."
+msgstr ""
+"此软件集会安装 Amazon Web Services 命令行界面工具（例如 aws-cli），用于与该云"
+"框架通讯。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
+msgid "Google Cloud Platform - All"
+msgstr "Google Cloud Platform - 所有"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
+msgid ""
+"This pattern installs all Google Cloud Platform command line interface "
+"tools, instance initialization packages and tools to communicate with the "
+"cloud framework from within a running instance. It is not recommended to "
+"install this pattern, but instead install one of the use-case specific "
+"patterns (e.g. Google Cloud Platform - Tools)."
+msgstr ""
+"此软件集会安装所有 Google Cloud Platform 命令行界面工具、实例初始化软件包和用"
+"于从正在运行的实例中与该云框架通讯的工具。不建议安装此软件包，而是安装某个特"
+"定于用例的软件集（例如 Google Cloud Platform - 工具）。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
+msgid "Google Cloud Platform - Instance Initialization"
+msgstr "Google Cloud Platform - 实例初始化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
+msgid ""
+"This pattern installs the Google Cloud Platform instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. google-daemon)."
+msgstr ""
+"此软件集会安装 Google Cloud Platform 实例初始化软件包（例如 google-daemon），"
+"以支持该云框架中实例的供应和运行。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
+msgid "Google Cloud Platform - Instance Tools"
+msgstr "Google Cloud Platform - 实例工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
+msgid ""
+"This pattern install the Google Cloud Platform instance specific tools which "
+"are used to collect instance metadata (e.g. python-gcemetadata)."
+msgstr ""
+"此软件集会安装 Google Cloud Platform 实例特定的工具（例如 python-"
+"gcemetadata），用于收集实例元数据。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
+msgid "Google Cloud Platform - Tools"
+msgstr "Google Cloud Platform - 工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
+msgid ""
+"This pattern installs the Google Cloud Platform command line interface tools "
+"to communicate with the cloud framework (e.g. google-cloud-sdk)."
+msgstr ""
+"此软件集会安装 Google Cloud Platform 命令行界面工具（例如 google-cloud-"
+"sdk），用于与该云框架通讯。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
+msgid "Microsoft Azure - All"
+msgstr "Microsoft Azure - 所有"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
+msgid ""
+"This pattern installs all Microsoft Azure command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Microsoft Azure - Tools)."
+msgstr ""
+"此软件集会安装所有 Microsoft Azure 命令行界面工具、实例初始化软件包和用于从正"
+"在运行的实例中与该云框架通讯的工具。不建议安装此软件包，而是安装某个特定于用"
+"例的软件集（例如 Microsoft Azure - 工具）。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
+msgid "Microsoft Azure - Instance Initialization"
+msgstr "Microsoft Azure - 实例初始化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
+msgid ""
+"This pattern installs the Microsoft Azure instance initialization packages "
+"which support the provisioning and running of instances in the cloud "
+"framework (e.g. python-azure-agent)."
+msgstr ""
+"此软件集会安装 Microsoft Azure 实例初始化软件包（例如 python-azure-agent），"
+"以支持该云框架中实例的供应和运行。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
+msgid "Microsoft Azure - Instance Tools"
+msgstr "Microsoft Azure - 实例工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
+msgid ""
+"This pattern install the Microsoft Azure instance specific tools which are "
+"used to collect instance metadata (e.g. azuremetadata)."
+msgstr ""
+"此软件集会安装 Microsoft Azure 实例特定的工具（例如 azuremetadata），用于收集"
+"实例元数据。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
+msgid "Microsoft Azure - Tools"
+msgstr "Microsoft Azure - 工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+msgid ""
+"This pattern installs the Microsoft Azure command line interface tools to "
+"communicate with the cloud framework (e.g. python-azurectl)."
+msgstr ""
+"此软件集会安装 Microsoft Azure 命令行界面工具（例如 python-azurectl），用于与"
+"该云框架通讯。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
+msgid "OpenStack - All"
+msgstr "OpenStack - 所有"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
+msgid ""
+"This pattern installs all OpenStack command line interface tools, instance "
+"initialization packages and tools to communicate with the cloud framework "
+"from within a running instance. It is not recommended to install this "
+"pattern, but instead install one of the use-case specific patterns (e.g. "
+"OpenStack - Tools)."
+msgstr ""
+"此软件集会安装所有 OpenStack 命令行界面工具、实例初始化软件包和用于从正在运行"
+"的实例中与该云框架通讯的工具。不建议安装此软件包，而是安装某个特定于用例的软"
+"件集（例如 OpenStack - 工具）。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
+msgid "OpenStack - Instance Initialization"
+msgstr "OpenStack - 实例初始化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
+msgid ""
+"This pattern installs the OpenStack instance initialization packages which "
+"support the provisioning and running of instances in the cloud framework (e."
+"g. cloud-init)."
+msgstr ""
+"此软件集会安装 OpenStack 实例初始化软件包（例如 cloud-init），以支持该云框架"
+"中实例的供应和运行。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
+msgid "OpenStack - Instance Tools"
+msgstr "OpenStack - 实例工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
+msgid ""
+"This pattern install the OpenStack instance specific tools which are used to "
+"collect instance metadata."
+msgstr "此软件集会安装 OpenStack 实例特定的工具，用于收集实例元数据。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
+msgid "OpenStack - Tools"
+msgstr "OpenStack - 工具"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
+msgid ""
+"This pattern installs the OpenStack command line interface tools to "
+"communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
+msgstr ""
+"此软件集会安装 OpenStack 命令行界面工具（例如 python-susepubliccloudinfo），"
+"用于与该云框架通讯。"
+
+#. SLE/patterns-sap/patterns-sap-b1/summary
+msgid "SAP BusinessOne Server Base"
+msgstr "SAP BusinessOne 服务器基础"
+
+#. SLE/patterns-sap/patterns-sap-b1/description
+msgid "Set up the server for installing SAP BusinessOne systems."
+msgstr "设置服务器以安装 SAP BusinessOne 系统。"
+
+#. SLE/patterns-sap/patterns-sap-hana/summary
+msgid "SAP HANA Server Base"
+msgstr "SAP HANA 服务器基础"
+
+#. SLE/patterns-sap/patterns-sap-hana/description
+msgid "Set up the server for installing SAP HANA systems."
+msgstr "设置服务器以安装 SAP HANA 系统。"
+
+#. SLE/patterns-sap/patterns-sap-nw/summary
+msgid "SAP NetWeaver Server Base"
+msgstr "SAP NetWeaver 服务器基础"
+
+#. SLE/patterns-sap/patterns-sap-nw/description
+msgid "Set up the server for installing SAP NetWeaver systems."
+msgstr "设置服务器以安装 SAP NetWeaver 系统。"
+
+#. SLE/patterns-base/patterns-base-32bit/summary
+msgid "32-Bit Runtime Environment"
+msgstr "32 位运行环境"
+
+#. SLE/patterns-base/patterns-base-32bit/description
+msgid ""
+"This will install the 32-bit variant of all selected patterns. This allows "
+"to execute 32-bit software."
+msgstr "此软件集将安装全部所选软件集的 32 位变体。之后将允许您执行 32 位软件。"
+
+#. SLE/patterns-base/patterns-base-apparmor/summary
+#. SLE/patterns-base/patterns-base-apparmor-32bit/summary
+msgid "AppArmor"
+msgstr "AppArmor"
+
+#. SLE/patterns-base/patterns-base-apparmor/description
+msgid ""
+"AppArmor is an application security framework that provides mandatory access "
+"control for programs. It protects from exploitation of software flaws and "
+"compromised systems. It offers an advanced tool set that automates the "
+"development of per-program application security without requiring additional "
+"knowledge."
+msgstr ""
+"AppArmor 是一个提供针对程序的强制性访问控制的应用程序安全框架。它能防止利用软"
+"件漏洞攻陷系统。它提供了一套高级工具自动化生成分程序的应用程序安全策略，从而"
+"无需额外的知识背景。"
+
+#. SLE/patterns-base/patterns-base-apparmor-32bit/description
+msgid "The 32bit pattern complementing apparmor."
+msgstr "对 apparmor 进行补充的 32 位软件集。"
+
+#. SLE/patterns-base/patterns-base-base/summary
+#. SLE/patterns-base/patterns-base-base-32bit/summary
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
 msgid "Base System"
 msgstr "基础系统"
 
-#. Installer/patterns-base/patterns-base-base/description
-#. Module-Basesystem/patterns-base/patterns-base-base/description
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/description
+#. SLE/patterns-base/patterns-base-base/description
+#. SLE/patterns-base/patterns-base-basesystem/description
 msgid ""
 "This is the base runtime system.  It contains only a minimal multiuser "
 "booting system. For running on real hardware, you need to add additional "
@@ -34,41 +733,125 @@ msgstr ""
 "这是基础运行时系统。它仅包含了一个极简的多用户引导系统。要在真实硬件上运行，"
 "您需要添加其它软件包和软件集来使此软件集发挥其自身的作用。"
 
-#. Installer/patterns-base/patterns-base-base/category
-#. Installer/patterns-base/patterns-base-minimal_base/category
-#. Module-Basesystem/patterns-base/patterns-base-32bit/category
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/category
-#. Module-Basesystem/patterns-base/patterns-base-base/category
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/category
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/category
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/category
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/category
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/category
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/category
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/category
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/category
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/category
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/category
-msgid "Base Technologies"
-msgstr "基础技术"
+#. SLE/patterns-base/patterns-base-base-32bit/description
+msgid "The 32bit pattern complementing base."
+msgstr "对 base 进行补充的 32 位软件集。"
 
-#. Installer/patterns-base/patterns-base-minimal_base/description
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/description
+#. SLE/patterns-base/patterns-base-basesystem/summary
+msgid "Base System (alias pattern for base)"
+msgstr "基础系统（基础软件集的别名）"
+
+#. SLE/patterns-base/patterns-base-documentation/summary
+#. SLE/patterns-base/patterns-base-documentation/description
+msgid "Help and Support Documentation"
+msgstr "帮助和支持文档"
+
+#. SLE/patterns-base/patterns-base-documentation/category
+msgid "Documentation"
+msgstr "文档"
+
+#. SLE/patterns-base/patterns-base-enhanced_base/summary
+#. SLE/patterns-base/patterns-base-enhanced_base-32bit/summary
+msgid "Enhanced Base System"
+msgstr "扩展的基础系统"
+
+#. SLE/patterns-base/patterns-base-enhanced_base/description
+msgid ""
+"This is the enhanced base runtime system with lots of convenience packages."
+msgstr "这是扩展的基础运行时系统，附带了许多便利的软件包。"
+
+#. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
+msgid "The 32bit pattern complementing enhanced_base."
+msgstr "对 enhanced_base 进行补充的 32 位软件集。"
+
+#. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
 "This is the minimal SLE runtime system. It is really a minimal system, you "
 "can login and a shell will be started, that's all. It is intended as base "
 "for Appliances."
 msgstr ""
-"这是 SUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一个壳层，这就是全部了。它的目的是作为 Appliances 的基础。"
+"这是 SUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一个壳"
+"层，这就是全部了。它的目的是作为 Appliances 的基础。"
 
-#. Installer/patterns-base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/description
+msgid "The 32bit pattern complementing minimal_base."
+msgstr "对 minimal_base 进行补充的 32 位软件集。"
+
+#. SLE/patterns-base/patterns-base-sw_management/summary
+#. SLE/patterns-base/patterns-base-sw_management-32bit/summary
+msgid "Software Management"
+msgstr "软件管理"
+
+#. SLE/patterns-base/patterns-base-sw_management/description
+msgid ""
+"This pattern provides a graphical application and a command line tool for "
+"keeping your system up to date."
+msgstr "此软件集提供了一个用于使您的系统保持最新的图形应用程序和命令行工具。"
+
+#. SLE/patterns-base/patterns-base-sw_management-32bit/description
+msgid "The 32bit pattern complementing sw_management."
+msgstr "对 sw_management 进行补充的 32 位软件集。"
+
+#. SLE/patterns-base/patterns-base-x11/summary
+#. SLE/patterns-base/patterns-base-x11-32bit/summary
+#. SLE/patterns-base/patterns-base-x11_enhanced/summary
+#. SLE/patterns-base/patterns-base-x11_enhanced-32bit/summary
+msgid "X Window System"
+msgstr "X 窗口系统"
+
+#. SLE/patterns-base/patterns-base-x11/description
+#. SLE/patterns-base/patterns-base-x11_enhanced/description
+msgid ""
+"The X Window System provides the only standard platform-independent "
+"networked graphical window system bridging the heterogeneous platforms in "
+"today's enterprise: from network servers to desktops, thin clients, laptops, "
+"and handhelds, independent of operating system and hardware."
+msgstr ""
+"X 窗口系统提供唯一的、标准的、独立于平台的、联网图形窗口系统，跨接当今企业中"
+"的各种平台： 从网络服务器到桌面、瘦客户端、笔电和手持设备，独立于操作系统和硬"
+"件。"
+
+#. SLE/patterns-base/patterns-base-x11-32bit/description
+msgid "The 32bit pattern complementing x11."
+msgstr "对 x11 进行补充的 32 位软件集。"
+
+#. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
+msgid "The 32bit pattern complementing x11_enhanced."
+msgstr "对 x11_enhanced 进行补充的 32 位软件集。"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr "编译和链接应用程序所需的最小工具集。"
+
+#. SLE/patterns-fonts/patterns-fonts-fonts/summary
+msgid "Fonts"
+msgstr "字体"
+
+#. SLE/patterns-fonts/patterns-fonts-fonts/description
+msgid "Base fonts and font configuration."
+msgstr "基础字体和字体配置。"
+
+#. SLE/patterns-yast/patterns-yast-x11_yast/summary
+msgid "YaST User Interfaces"
+msgstr "YaST 用户界面"
+
+#. SLE/patterns-yast/patterns-yast-x11_yast/description
+msgid "Graphical YaST user interfaces for minimal X desktop."
+msgstr "极简 X 桌面的 YaST 图形用户界面。"
+
+#. SLE/patterns-yast/patterns-yast-yast2_basis/summary
+msgid "YaST System Administration"
+msgstr "YaST 系统管理"
+
+#. SLE/patterns-yast/patterns-yast-yast2_basis/description
+msgid "YaST tools for basic system administration."
+msgstr "基础系统管理所需的 YaST 工具。"
+
+#. SLE/patterns-base/summary
 msgid "Patterns for Installation (base patterns)"
 msgstr "安装软件集（基础软件集）"
 
-#. Installer/patterns-base/description
+#. SLE/patterns-base/description
 msgid ""
 "This is an internal package that is used to create the patterns as part of "
 "the installation source setup.  Installation of this package does not make "
@@ -81,876 +864,130 @@ msgstr ""
 "\n"
 "这个特定的软件包包含所有基础/核心软件集（以及在其他地方不太适合的软件集）。"
 
-#. Module-Basesystem/patterns-base/patterns-base-32bit/summary
-msgid "32-Bit Runtime Environment"
-msgstr "32 位运行环境"
-
-#. Module-Basesystem/patterns-base/patterns-base-32bit/description
-msgid ""
-"This will install the 32-bit variant of all selected patterns. This allows "
-"to execute 32-bit software."
-msgstr "此软件集将安装全部所选软件集的 32 位变体。之后将允许您执行 32 位软件。"
-
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/summary
-#. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/summary
-msgid "AppArmor"
-msgstr "AppArmor"
-
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/description
-msgid ""
-"AppArmor is an application security framework that provides mandatory access "
-"control for programs. It protects from exploitation of software flaws and "
-"compromised systems. It offers an advanced tool set that automates the "
-"development of per-program application security without requiring additional "
-"knowledge."
-msgstr ""
-"AppArmor 是一个提供针对程序的强制性访问控制的应用程序安全框架。它能防止利用软"
-"件漏洞攻陷系统。它提供了一套高级工具自动化生成分程序的应用程序安全策略，从而"
-"无需额外的知识背景。"
-
-#. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/description
-msgid "The 32bit pattern complementing apparmor."
-msgstr "对 apparmor 进行补充的 32 位软件集。"
-
-#. Module-Basesystem/patterns-base/patterns-base-base-32bit/description
-msgid "The 32bit pattern complementing base."
-msgstr "对 base 进行补充的 32 位软件集。"
-
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
-msgstr "基础系统（基础软件集的别名）"
-
-#. Module-Basesystem/patterns-base/patterns-base-documentation/summary
-#. Module-Basesystem/patterns-base/patterns-base-documentation/description
-msgid "Help and Support Documentation"
-msgstr "帮助和支持文档"
-
-#. Module-Basesystem/patterns-base/patterns-base-documentation/category
-#. Product-WE/patterns-desktop/patterns-desktop-books/summary
-#. Product-WE/patterns-desktop/patterns-desktop-books/category
-msgid "Documentation"
-msgstr "文档"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/summary
-msgid "Enhanced Base System"
-msgstr "扩展的基础系统"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/description
-msgid ""
-"This is the enhanced base runtime system with lots of convenience packages."
-msgstr "这是扩展的基础运行时系统，附带了许多便利的软件包。"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/description
-msgid "The 32bit pattern complementing enhanced_base."
-msgstr "对 enhanced_base 进行补充的 32 位软件集。"
-
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/description
-msgid "The 32bit pattern complementing minimal_base."
-msgstr "对 minimal_base 进行补充的 32 位软件集。"
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/summary
-#. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/summary
-msgid "Software Management"
-msgstr "软件管理"
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/description
-msgid ""
-"This pattern provides a graphical application and a command line tool for "
-"keeping your system up to date."
-msgstr "此软件集提供了一个用于使您的系统保持最新的图形应用程序和命令行工具。"
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/description
-msgid "The 32bit pattern complementing sw_management."
-msgstr "对 sw_management 进行补充的 32 位软件集。"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11-32bit/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/summary
-msgid "X Window System"
-msgstr "X 窗口系统"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11/description
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/description
-msgid ""
-"The X Window System provides the only standard platform-independent "
-"networked graphical window system bridging the heterogeneous platforms in "
-"today's enterprise: from network servers to desktops, thin clients, laptops, "
-"and handhelds, independent of operating system and hardware."
-msgstr ""
-"X 窗口系统提供唯一的、标准的、独立于平台的、联网图形窗口系统，跨接当今企业中"
-"的各种平台： 从网络服务器到桌面、瘦客户端、笔电和手持设备，独立于操作系统和硬"
-"件。"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11/category
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/category
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/category
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/category
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "图形环境"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11-32bit/description
-msgid "The 32bit pattern complementing x11."
-msgstr "对 x11 进行补充的 32 位软件集。"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/description
-msgid "The 32bit pattern complementing x11_enhanced."
-msgstr "对 x11_enhanced 进行补充的 32 位软件集。"
-
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/summary
-msgid "Fonts"
-msgstr "字体"
-
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/description
-msgid "Base fonts and font configuration."
-msgstr "基础字体和字体配置。"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/summary
-msgid "YaST User Interfaces"
-msgstr "YaST 用户界面"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/description
-msgid "Graphical YaST user interfaces for minimal X desktop."
-msgstr "极简 X 桌面的 YaST 图形用户界面。"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/summary
-msgid "YaST System Administration"
-msgstr "YaST 系统管理"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/description
-msgid "YaST tools for basic system administration."
-msgstr "基础系统管理所需的 YaST 工具。"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/summary
-msgid "GNOME Desktop Environment (Basic)"
-msgstr "GNOME 桌面环境（基本）"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/description
-msgid ""
-"The GNOME desktop environment is an intuitive and attractive desktop for "
-"users. This pattern installs GNOME desktop environment with only essential "
-"graphical applications installed (File Manager, Web Browser)."
-msgstr ""
-"GNOME 桌面环境是一套直观迷人的用户桌面环境。此软件集会安装预装了最基本图形应用程序（文件管理器、Web 浏览器）的 GNOME 桌面环境。"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/summary
-msgid "GNOME Base System"
-msgstr "GNOME 基础系统"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/description
-msgid "Base packages for the GNOME desktop environment."
-msgstr "GNOME 桌面环境的基础软件包。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/summary
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
-msgid "Base Development"
-msgstr "基础开发环境"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr "编译和链接应用程序所需的最小工具集。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/category
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "开发"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
-msgid "The 32bit pattern complementing devel_basis."
-msgstr "对 devel_basis 进行补充的 32 位软件集。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/summary
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
-msgid "Linux Kernel Development"
-msgstr "Linux 内核开发"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/description
-msgid "Tools for Linux kernel development."
-msgstr "Linux 内核开发工具。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
-msgid "The 32bit pattern complementing devel_kernel."
-msgstr "对 devel_kernel 进行补充的 32 位软件集。"
-
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/summary
-msgid "YaST Development"
-msgstr "YaST 开发"
-
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/description
-msgid ""
-"Tools and libraries for developing YaST modules, the setup and configuration "
-"tool for openSUSE."
-msgstr "YaST 模块开发所需的工具和库。YaST 是 openSUSE 的安装配置工具。"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/summary
-msgid "HPC compute node"
-msgstr "HPC 计算节点"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/description
-msgid ""
-"A compute node has a minmal software image and mainly runs simultion "
-"programs. Services on this node should be reduced to a bare minimum and the "
-"node *must* be installed in a automatic manner. A basset of numerical "
-"libraries should also be installed."
-msgstr "计算节点具有极简的软件映像，主要运行模拟程序。此节点上的服务应减少至最低数量，并且*不得*以自动方式安装节点。另外还应安装一定数量的库。"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/category
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/category
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/category
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-printing/category
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/category
-msgid "Server Functions"
-msgstr "服务器功能"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/summary
-msgid "Packages needed to be able to develop HPC Apps"
-msgstr "开发 HPC 应用程序所需的软件包"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/description
-msgid ""
-"This package provides all the relevant packages for developing HPC "
-"applications. It depends on the hpc-compute node and adds additionally the "
-"compilers and includes also the relevant managment packages."
-msgstr "此软件包提供与开发 HPC 应用程序相关的所有软件包。它依赖于 hpc 计算节点，会额外增加编译器，另外还包含相关的管理软件包。"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/summary
-msgid "HPC modularized libraries"
-msgstr "HPC 模块化库"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/description
-msgid ""
-"This package provides all the modularized libraries so that they can be used "
-"in a hpc environment. Especially these libariries allows you to install a "
-"mpi enabled libarary for different mpi libraries."
-msgstr "此软件包提供所有模块化库，以便可在 HPC 环境中使用这些库。特别是，这些库可让您安装支持 MPI 的库，以便使用不同的 MPI 库。"
-
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/summary
-msgid "Live Patching"
-msgstr "在线增补"
-
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/description
-msgid "Provide tools and patches to fix kernel at runtime."
-msgstr "提供用于在运行时修复内核的工具和增补程序。"
-
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/category
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/category
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/category
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/category
-msgid "Primary Functions"
-msgstr "主要功能"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
-msgid "Amazon Web Services - All"
-msgstr "Amazon Web Services - 所有"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
-msgid ""
-"This pattern installs all Amazon Web Services command line interface tools, "
-"instance initialization packages and tools to communicate with the cloud "
-"framework from within a running instance. It is not recommended to install "
-"this pattern, but instead install one of the use-case specific patterns (e."
-"g. Amazon Web Services - Tools)."
-msgstr ""
-"此软件集会安装所有 Amazon Web Services "
-"命令行界面工具、实例初始化软件包和用于从正在运行的实例中与该云框架通讯的工具。不建议安装此软件集，而是安装某个特定于用例的软件集（例如 Amazon "
-"Web Services - 工具）。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
-msgid "Amazon Web Services - Instance Initialization"
-msgstr "Amazon Web Services - 实例初始化"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
-msgid ""
-"This pattern installs the Amazon Web Services instance initialization "
-"packages which support the provisioning and running of instances in the "
-"cloud framework (e.g. cloud-init)."
-msgstr "此软件集会安装 Amazon Web Services 实例初始化软件包（例如 cloud-init），以支持该云框架中实例的供应和运行。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
-msgid "Amazon Web Services - Instance Tools"
-msgstr "Amazon Web Services - 实例工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
-msgid ""
-"This pattern install the Amazon Web Services instance specific tools which "
-"are used to collect instance metadata (e.g. python-ec2metadata)."
-msgstr "此软件集会安装 Amazon Web Services 实例特定的工具（例如 python-ec2metadata），用于收集实例元数据。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
-msgid "Amazon Web Services - Tools"
-msgstr "Amazon Web Services - 工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
-msgid ""
-"This pattern installs the Amazon Web Services command line interface tools "
-"to communicate with the cloud framework (e.g. aws-cli)."
-msgstr "此软件集会安装 Amazon Web Services 命令行界面工具（例如 aws-cli），用于与该云框架通讯。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
-msgid "Google Cloud Platform - All"
-msgstr "Google Cloud Platform - 所有"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
-msgid ""
-"This pattern installs all Google Cloud Platform command line interface "
-"tools, instance initialization packages and tools to communicate with the "
-"cloud framework from within a running instance. It is not recommended to "
-"install this pattern, but instead install one of the use-case specific "
-"patterns (e.g. Google Cloud Platform - Tools)."
-msgstr ""
-"此软件集会安装所有 Google Cloud Platform "
-"命令行界面工具、实例初始化软件包和用于从正在运行的实例中与该云框架通讯的工具。不建议安装此软件包，而是安装某个特定于用例的软件集（例如 Google "
-"Cloud Platform - 工具）。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
-msgid "Google Cloud Platform - Instance Initialization"
-msgstr "Google Cloud Platform - 实例初始化"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
-msgid ""
-"This pattern installs the Google Cloud Platform instance initialization "
-"packages which support the provisioning and running of instances in the "
-"cloud framework (e.g. google-daemon)."
-msgstr ""
-"此软件集会安装 Google Cloud Platform 实例初始化软件包（例如 google-daemon），以支持该云框架中实例的供应和运行。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
-msgid "Google Cloud Platform - Instance Tools"
-msgstr "Google Cloud Platform - 实例工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
-msgid ""
-"This pattern install the Google Cloud Platform instance specific tools which "
-"are used to collect instance metadata (e.g. python-gcemetadata)."
-msgstr "此软件集会安装 Google Cloud Platform 实例特定的工具（例如 python-gcemetadata），用于收集实例元数据。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
-msgid "Google Cloud Platform - Tools"
-msgstr "Google Cloud Platform - 工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
-msgid ""
-"This pattern installs the Google Cloud Platform command line interface tools "
-"to communicate with the cloud framework (e.g. google-cloud-sdk)."
-msgstr "此软件集会安装 Google Cloud Platform 命令行界面工具（例如 google-cloud-sdk），用于与该云框架通讯。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
-msgid "Microsoft Azure - All"
-msgstr "Microsoft Azure - 所有"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
-msgid ""
-"This pattern installs all Microsoft Azure command line interface tools, "
-"instance initialization packages and tools to communicate with the cloud "
-"framework from within a running instance. It is not recommended to install "
-"this pattern, but instead install one of the use-case specific patterns (e."
-"g. Microsoft Azure - Tools)."
-msgstr ""
-"此软件集会安装所有 Microsoft Azure "
-"命令行界面工具、实例初始化软件包和用于从正在运行的实例中与该云框架通讯的工具。不建议安装此软件包，而是安装某个特定于用例的软件集（例如 "
-"Microsoft Azure - 工具）。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
-msgid "Microsoft Azure - Instance Initialization"
-msgstr "Microsoft Azure - 实例初始化"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
-msgid ""
-"This pattern installs the Microsoft Azure instance initialization packages "
-"which support the provisioning and running of instances in the cloud "
-"framework (e.g. python-azure-agent)."
-msgstr ""
-"此软件集会安装 Microsoft Azure 实例初始化软件包（例如 python-azure-agent），以支持该云框架中实例的供应和运行。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
-msgid "Microsoft Azure - Instance Tools"
-msgstr "Microsoft Azure - 实例工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
-msgid ""
-"This pattern install the Microsoft Azure instance specific tools which are "
-"used to collect instance metadata (e.g. azuremetadata)."
-msgstr "此软件集会安装 Microsoft Azure 实例特定的工具（例如 azuremetadata），用于收集实例元数据。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
-msgid "Microsoft Azure - Tools"
-msgstr "Microsoft Azure - 工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
-msgid ""
-"This pattern installs the Microsoft Azure command line interface tools to "
-"communicate with the cloud framework (e.g. python-azurectl)."
-msgstr "此软件集会安装 Microsoft Azure 命令行界面工具（例如 python-azurectl），用于与该云框架通讯。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
-msgid "OpenStack - All"
-msgstr "OpenStack - 所有"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
-msgid ""
-"This pattern installs all OpenStack command line interface tools, instance "
-"initialization packages and tools to communicate with the cloud framework "
-"from within a running instance. It is not recommended to install this "
-"pattern, but instead install one of the use-case specific patterns (e.g. "
-"OpenStack - Tools)."
-msgstr ""
-"此软件集会安装所有 OpenStack "
-"命令行界面工具、实例初始化软件包和用于从正在运行的实例中与该云框架通讯的工具。不建议安装此软件包，而是安装某个特定于用例的软件集（例如 "
-"OpenStack - 工具）。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
-msgid "OpenStack - Instance Initialization"
-msgstr "OpenStack - 实例初始化"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
-msgid ""
-"This pattern installs the OpenStack instance initialization packages which "
-"support the provisioning and running of instances in the cloud framework (e."
-"g. cloud-init)."
-msgstr "此软件集会安装 OpenStack 实例初始化软件包（例如 cloud-init），以支持该云框架中实例的供应和运行。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
-msgid "OpenStack - Instance Tools"
-msgstr "OpenStack - 实例工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
-msgid ""
-"This pattern install the OpenStack instance specific tools which are used to "
-"collect instance metadata."
-msgstr "此软件集会安装 OpenStack 实例特定的工具，用于收集实例元数据。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
-msgid "OpenStack - Tools"
-msgstr "OpenStack - 工具"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
-msgid ""
-"This pattern installs the OpenStack command line interface tools to "
-"communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
-msgstr "此软件集会安装 OpenStack 命令行界面工具（例如 python-susepubliccloudinfo），用于与该云框架通讯。"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/summary
-msgid "SAP BusinessOne Server Base"
-msgstr "SAP BusinessOne 服务器基础"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/description
-msgid "Set up the server for installing SAP BusinessOne systems."
-msgstr "设置服务器以安装 SAP BusinessOne 系统。"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/summary
-msgid "SAP HANA Server Base"
-msgstr "SAP HANA 服务器基础"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/description
-msgid "Set up the server for installing SAP HANA systems."
-msgstr "设置服务器以安装 SAP HANA 系统。"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/summary
-msgid "SAP NetWeaver Server Base"
-msgstr "SAP NetWeaver 服务器基础"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/description
-msgid "Set up the server for installing SAP NetWeaver systems."
-msgstr "设置服务器以安装 SAP NetWeaver 系统。"
-
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/summary
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed-32bit/summary
-msgid "Infiniband (OFED)"
-msgstr "Infiniband (OFED)"
-
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/description
-msgid ""
-"This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
-"base packages. The base pattern includes the packages you need to get your "
-"Infiniband adapter operational, that is IB kernel modules and basic user "
-"level libraries."
-msgstr ""
-"此软件集定义了 OpenFabrics Enterprise Distribution (OFED) 软件的基础软件包。"
-"该基础软件集包含了让您的 Infiniband 适配器运行起来所需的软件包，即 IB 内核模"
-"块和基础用户级别库。"
-
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed-32bit/description
-msgid "The 32bit pattern complementing ofed."
-msgstr "对 ofed 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-rpm-macros/summary
-msgid "RPM macros for building of patterns modules"
-msgstr "用于构建软件集模组的 RPM 宏"
-
-#. Module-Server-Applications/patterns-rpm-macros/description
-msgid "This package contains SUSE RPM macros to aid creating patterns."
-msgstr "用来创建模式（Pattern)的SUSE RPM宏。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
-msgid "DHCP and DNS Server"
-msgstr "DHCP 和 DNS 服务器"
-
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/description
-msgid ""
-"Software to set up a server for the Dynamic Host Configuration Protocol "
-"(DHCP) and the Domain Name System (DNS) services. DHCP provides "
-"configuration parameters to client computers to integrate them into a "
-"network, whereas DNS delivers information associated with domain names, in "
-"particular, the IP address."
-msgstr ""
-"设置动态主机配置协议（DHCP）和域名系统 (DNS) 服务服务器所需的软件。DHCP 为客"
-"户机提供配置参数以将它们整合进一个网络，而 DNS 则传递与域名相关的信息，特别"
-"是，IP 地址。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server-32bit/description
-msgid "The 32bit pattern complementing dhcp_dns_server."
-msgstr "对 dhcp_dns_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server-32bit/summary
-msgid "Directory Server (LDAP)"
-msgstr "目录服务器 (LDAP)"
-
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/description
-msgid ""
-"Software to set up a directory server with OpenLDAP. The Lightweight "
-"Directory Access Protocol (LDAP) is used to access online directory services."
-msgstr ""
-"使用 OpenLDAP 设置目录服务器的软件。轻量级目录访问协议（LDAP）用于访问在线目"
-"录服务。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server-32bit/description
-msgid "The 32bit pattern complementing directory_server."
-msgstr "对 directory_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
-msgid "FIPS 140-2 specific packages"
-msgstr "FIPS 140-2 特定的软件包"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/description
-msgid ""
-"This pattern installs the FIPS 140-2 specific packages that complete the "
-"various cryptographic modules in use. It is required if you want to run the "
-"machine with \"fips=1\".\n"
-"\n"
-"Please note that this pattern only enables FIPS 140-2 compliant operation, "
-"it does not directly make the system FIPS 140-2 certified nor validated.\n"
-"\n"
-"Please refer to SUSE official statements on the state of FIPS 140-2 "
-"certification."
-msgstr ""
-"此软件集会安装 FIPS 140-2 特定的软件包，以便对使用中的各种加密模块进行补充。如果您要运行“fips=1”的机器，则需要安装此软件集。\n"
-"\n"
-"请注意，此软件集仅支持符合 FIPS 140-2 的操作，不会直接使系统 FIPS 140-2 获得认证或验证。\n"
-"\n"
-"请参见有关 FIPS 140-2 认证状态的 SUSE 官方声明。"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
-msgid "The 32bit pattern complementing fips."
-msgstr "对 fips 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
-msgid "Oracle Server Base"
-msgstr "Oracle 服务器基础"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
-msgid "Set up the server for installing Oracle databases."
-msgstr "为安装 Oracle 数据库设置服务器。"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
-msgid "The 32bit pattern complementing oracle_server."
-msgstr "对 oracle_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
-msgid "SAP Application Server Base"
-msgstr "SAP 应用程序服务器基础"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
-msgid "Set up the server for installing SAP systems."
-msgstr "为安装 SAP 系统设置服务器。"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
-msgid "The 32bit pattern complementing sap_server."
-msgstr "对 sap_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-file_server-32bit/summary
-msgid "File Server"
-msgstr "文件服务器"
-
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/description
-msgid ""
-"File services to host files so that they may be accessed or retrieved by "
-"other computers on the same network. This includes the FTP, SMB, and NFS "
-"protocols."
-msgstr ""
-"存储文件的文件服务，目的是使同一网络中的其它计算机可以访问或撷取这些文件。此"
-"软件集收纳了使用 FTP、SMB 和 NFS 协议的服务器软件。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-file_server-32bit/description
-msgid "The 32bit pattern complementing file_server."
-msgstr "对 file_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server-32bit/summary
-msgid "Internet Gateway"
-msgstr "互联网网关"
-
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/description
-msgid ""
-"Software to set up a proxy, firewall, and gateway server, including a "
-"virtual private network (VPN) gateway."
-msgstr "设置代理、防火墙和网关服务器所需的软件。包括虚拟专用网络 (VPN) 网关。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server-32bit/description
-msgid "The 32bit pattern complementing gateway_server."
-msgstr "对 gateway_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/summary
-msgid "KVM Host Server"
-msgstr "KVM 主机服务器"
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/description
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/description
-msgid ""
-"Software to set up a server for configuring, managing, and monitoring "
-"virtual machines on a single physical machine."
-msgstr "用于在单个物理主机上设置一个配置、管理和监控虚拟机的服务器的软件。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/summary
-msgid "KVM Virtualization Host and tools"
-msgstr "KVM 虚拟化主机和工具"
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/description
-msgid ""
-"This will provide all minimal system to get a running KVM Hypervisor and be "
-"able to configure, manage, and monitor virtual machines on a single physical "
-"machine."
-msgstr "此软件集将提供可获得运行中 KVM 超级管理程序，并可配置、管理和监控单个物理机上的各虚拟机的全套极简系统。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server-32bit/summary
-msgid "Web and LAMP Server"
-msgstr "Web 和 LAMP 服务器"
-
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/description
-msgid ""
-"Software to set up a Web server that is able to serve static, dynamic, and "
-"interactive content (like a Web shop). This includes Apache HTTP Server, the "
-"database management system MySQL, and scripting languages such as PHP, "
-"Python, Ruby on Rails, or Perl."
-msgstr ""
-"设置能服务于静态、动态和交互式内容 (如网上商店) 的 Web 服务器所需的软件。 这"
-"包括 Apache HTTP 服务器、数据库管理系统 MySQL 和脚本语言，如 PHP、Python、"
-"Ruby on Rails 或 Perl。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server-32bit/description
-msgid "The 32bit pattern complementing lamp_server."
-msgstr "对 lamp_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server-32bit/summary
-msgid "Mail and News Server"
-msgstr "邮件和新闻服务器"
-
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/description
-msgid ""
-"Software to set up electronic mail and message services to handle email, "
-"mailing, and news lists, including a virus scanner to scan messages at the "
-"server level."
-msgstr ""
-"设置电子邮件和消息服务所需的软件，用来处理电子邮件、邮件和新闻列表。包含一个"
-"病毒扫描程序在服务器端扫描消息。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server-32bit/description
-msgid "The 32bit pattern complementing mail_server."
-msgstr "对 mail_server 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-printing/summary
-#. Module-Server-Applications/patterns-server/patterns-server-printing-32bit/summary
-msgid "Print Server"
-msgstr "打印服务器"
-
-#. Module-Server-Applications/patterns-server/patterns-server-printing/description
-msgid ""
-"This pattern provides all packages necessary for printing. It provides all "
-"needed packages for printing to a locally connected printer, printing using "
-"a remote print server and for setting up a print server."
-msgstr "此软件集提供执行打印所需的所有软件包。它提供了打印到本地连接的打印机、使用远程打印服务器打印以及设置打印服务器所需的所有软件包。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-printing-32bit/description
-msgid "The 32bit pattern complementing printing."
-msgstr "对 printing 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/summary
-msgid "Xen Virtual Machine Host Server"
-msgstr "Xen 虚拟机主机服务器"
-
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/summary
-msgid "XEN Virtualization Host and tools"
-msgstr "XEN 虚拟化主机和工具"
-
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/description
-msgid ""
-"This will provide all minimal system to get a running XEN Hypervisor and be "
-"able to configure, manage, and monitor virtual machines on a single physical "
-"machine."
-msgstr "此软件集将提供可获得运行中 XEN 超级管理程序，并可配置、管理和监控单个物理机上的各虚拟机的全套极简系统。"
-
-#. Module-Server-Applications/patterns-wbem/patterns-wbem-WBEM-32bit/summary
-msgid "Web-Based Enterprise Management"
-msgstr "基于网络的企业管理"
-
-#. Module-Server-Applications/patterns-wbem/patterns-wbem-WBEM-32bit/description
-msgid "The 32bit pattern complementing WBEM."
-msgstr "对 WBEM 进行补充的 32 位软件集。"
-
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/summary
-msgid "YaST Installation Packages"
-msgstr "YaST 安装软件包"
-
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/description
-msgid "YaST tools for installing your system."
-msgstr "系统安装所需的 YaST 工具。"
-
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
-msgid "GEO Clustering for High Availability"
-msgstr "GEO Clustering for High Availability"
-
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/description
-msgid ""
-"This pattern provides tools for building multi-site clustering setups based "
-"on the SUSE Linux Enterprise High-Availability and its GEO extension."
-msgstr "此软件集提供基于 SUSE Linux Enterprise High-Availability 及其 GEO 扩展构建多站点群集设置的工具。"
-
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/summary
-msgid "High Availability"
-msgstr "高在线率"
-
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/description
-msgid ""
-"Provide tools to ensure a high degree of operational continuity and reduce "
-"the downtimes of your system."
-msgstr "提供保证高持续运营性和降低系统停机时间的工具。"
-
-#. Product-WE/patterns-desktop/patterns-desktop-books/description
+#. SLE/patterns-desktop/patterns-desktop-books/description
 msgid "Help and Documentation, various books."
 msgstr "帮助和文档、多种书籍。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/summary
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/summary
+#. SLE/patterns-desktop/patterns-desktop-imaging/summary
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/summary
 msgid "Graphics"
 msgstr "图形"
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/description
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/description
+#. SLE/patterns-desktop/patterns-desktop-imaging/description
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/description
 msgid "Handling of digital photos and graphics."
 msgstr "数码照片和图像处理。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/category
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/category
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/category
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/category
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/category
-#. Product-WE/patterns-office/patterns-office-office/category
+#. SLE/patterns-desktop/patterns-desktop-imaging/category
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/category
+#. SLE/patterns-desktop/patterns-desktop-multimedia/category
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/category
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/category
+#. SLE/patterns-office/patterns-office-office/category
 msgid "Desktop Functions"
 msgstr "桌面功能"
 
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/summary
+#. SLE/patterns-desktop/patterns-desktop-laptop/summary
 msgid "Laptop"
 msgstr "笔记本"
 
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/description
+#. SLE/patterns-desktop/patterns-desktop-laptop/description
 msgid "Tools designed specifically for laptop computers."
 msgstr "专门为笔电设计的工具。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/summary
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/summary
+#. SLE/patterns-desktop/patterns-desktop-multimedia/summary
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/summary
 msgid "Multimedia"
 msgstr "多媒体"
 
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/description
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/description
+#. SLE/patterns-desktop/patterns-desktop-multimedia/description
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/description
 msgid ""
 "Multimedia players, sound editing tools, video and image manipulation "
 "applications."
 msgstr "多媒体播放器、音频编辑工具、视频和图像处理应用程序。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/summary
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/summary
 msgid "Technical Writing"
 msgstr "技术写作"
 
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/description
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/description
 msgid "Authoring tools and editors for creating technical documentation."
 msgstr "创建技术文档所需的创作工具和编辑器。"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment (Wayland)"
 msgstr "GNOME 桌面环境 (Wayland)"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/description
+#. SLE/patterns-gnome/patterns-gnome-gnome/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs components for GNOME to run with Wayland and "
 "X11 technologies."
-msgstr "GNOME 桌面环境是一套直观迷人的用户桌面环境。此软件集会安装适用于 GNOME 且使用 Wayland 和 X11 技术运行的组件。"
+msgstr ""
+"GNOME 桌面环境是一套直观迷人的用户桌面环境。此软件集会安装适用于 GNOME 且使"
+"用 Wayland 和 X11 技术运行的组件。"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/category
+#. SLE/patterns-gnome/patterns-gnome-gnome/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
 msgid "GNOME Desktop"
 msgstr "GNOME 桌面"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
 msgstr "GNOME 图形"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "数码照片和图像处理"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/summary
-msgid "GNOME Laptop"
-msgstr "GNOME 笔记本"
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
+msgid "GNOME Multimedia"
+msgstr "GNOME 多媒体"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/description
-msgid "GNOME Tools designed specifically for use with laptop computers."
-msgstr "为笔记本专门设计的 GNOME 工具。"
-
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/summary
 msgid "GNOME Desktop Environment (X11)"
 msgstr "GNOME 桌面环境 (X11)"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs a full featured GNOME desktop environment, "
 "including Office suite, E-Mail client, Web Browser, File Manager, running "
 "with X11 technology."
 msgstr ""
-"GNOME 桌面环境是一套直观迷人的用户桌面环境。此软件集会安装使用 X11 技术运行且功能完整的 GNOME 桌面环境，包括办公套件，电子邮件客户端、"
-"Web 浏览器、文件管理器。"
+"GNOME 桌面环境是一套直观迷人的用户桌面环境。此软件集会安装使用 X11 技术运行且"
+"功能完整的 GNOME 桌面环境，包括办公套件，电子邮件客户端、Web 浏览器、文件管理"
+"器。"
 
-#. Product-WE/patterns-office/patterns-office-office/summary
+#. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
 msgstr "办公软件"
 
-#. Product-WE/patterns-office/patterns-office-office/description
+#. SLE/patterns-office/patterns-office-office/description
 msgid "Office software for your desktop environment including LibreOffice."
 msgstr "用于您的桌面环境的办公软件，包括 LibreOffice。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
+msgid "System z HW crypto support"
+msgstr ""
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
+msgid ""
+"A selection of packages that installs the System z HW crypto stack on System "
+"z."
+msgstr ""
+
+#~ msgid "Packages needed to be able to develop HPC Apps"
+#~ msgstr "开发 HPC 应用程序所需的软件包"
+
+#~ msgid "GNOME Laptop"
+#~ msgstr "GNOME 笔记本"
+
+#~ msgid "GNOME Tools designed specifically for use with laptop computers."
+#~ msgstr "为笔记本专门设计的 GNOME 工具。"
 
 #~ msgid "Console Tools"
 #~ msgstr "控制台工具"
@@ -1076,9 +1113,6 @@ msgstr "用于您的桌面环境的办公软件，包括 LibreOffice。"
 #~ msgid "GNOME Internet Applications"
 #~ msgstr "GNOME 互联网应用程序"
 
-#~ msgid "GNOME Multimedia"
-#~ msgstr "GNOME 多媒体"
-
 #~ msgid "GNOME Office"
 #~ msgstr "GNOME 办公"
 
@@ -1107,11 +1141,6 @@ msgstr "用于您的桌面环境的办公软件，包括 LibreOffice。"
 #~ msgstr ""
 #~ "Haskell 平台是开始编程 Haskell 的最简单的方法。它包含了所有你需要的启动和"
 #~ "运行的程序。它的思想是“Haskell: batteries included.”"
-
-#, fuzzy
-#~| msgid "KDE development packages"
-#~ msgid "HPC Development Packages"
-#~ msgstr "KDE 开发软件包"
 
 #~ msgid "KDE Development"
 #~ msgstr "KDE 开发"

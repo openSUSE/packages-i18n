@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2018-04-06 13:24+0000\n"
+"POT-Creation-Date: 2018-04-16 13:01+0000\n"
 "PO-Revision-Date: 2018-04-12 12:44+0000\n"
 "Last-Translator: Ewelina Michalowska <ewelina.michalowska@stgambit.com>\n"
-"Language-Team: Polish <https://l10n.opensuse.org/projects/packages-i18n"
-"/patterns-sle-15/pl/>\n"
+"Language-Team: Polish <https://l10n.opensuse.org/projects/packages-i18n/"
+"patterns-sle-15/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,234 +20,444 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 
-#. Installer/patterns-base/patterns-base-base/summary
-#. Installer/patterns-base/patterns-base-minimal_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-base/summary
-#. Module-Basesystem/patterns-base/patterns-base-base-32bit/summary
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/summary
-msgid "Base System"
-msgstr "System podstawowy"
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
+msgid "GEO Clustering for High Availability"
+msgstr "Usługi klastrowe GEO dla wysokiej dostępności"
 
-#. Installer/patterns-base/patterns-base-base/description
-#. Module-Basesystem/patterns-base/patterns-base-base/description
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/description
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/description
 msgid ""
-"This is the base runtime system.  It contains only a minimal multiuser "
-"booting system. For running on real hardware, you need to add additional "
-"packages and pattern to make this pattern useful on its own."
+"This pattern provides tools for building multi-site clustering setups based "
+"on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
-"Podstawowy system uruchomieniowy. Zawiera tylko minimalny rozruchowy system "
-"dla wielu użytkowników. Do pracy na rzeczywistym komputerze wymagane są "
-"dodatkowe pakiety i wzorzec czyniący ten użytecznym."
+"Ten wzorzec zawiera narzędzia do tworzenia wieloośrodkowych konfiguracji "
+"klastrowania bazujących na wysokiej dostępności systemu SUSE Linux "
+"Enterprise oraz na jego rozszerzeniu GEO."
 
-#. Installer/patterns-base/patterns-base-base/category
-#. Installer/patterns-base/patterns-base-minimal_base/category
-#. Module-Basesystem/patterns-base/patterns-base-32bit/category
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/category
-#. Module-Basesystem/patterns-base/patterns-base-base/category
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/category
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/category
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/category
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/category
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/category
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/category
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/category
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/category
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/category
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/category
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/category
+#. SLE/patterns-ha/patterns-ha-ha_sles/category
+msgid "Primary Functions"
+msgstr "Funkcje podstawowe"
+
+#. SLE/patterns-ha/patterns-ha-ha_sles/summary
+msgid "High Availability"
+msgstr "Wysoka dostępność"
+
+#. SLE/patterns-ha/patterns-ha-ha_sles/description
+msgid ""
+"Provide tools to ensure a high degree of operational continuity and reduce "
+"the downtimes of your system."
+msgstr ""
+"Zestaw narzędzi zapewniających wysoki stopień ciągłości operacyjnej i "
+"ograniczających czas przestoju systemu."
+
+#. SLE/patterns-hpc/patterns-hpc-compute_node/summary
+#, fuzzy
+#| msgid "HPC compute node"
+msgid "HPC Basic Compute Node"
+msgstr "Węzeł obliczeniowy HPC"
+
+#. SLE/patterns-hpc/patterns-hpc-compute_node/description
+#, fuzzy
+#| msgid ""
+#| "A compute node has a minmal software image and mainly runs simultion "
+#| "programs. Services on this node should be reduced to a bare minimum and "
+#| "the node *must* be installed in a automatic manner. A basset of numerical "
+#| "libraries should also be installed."
+msgid ""
+"A compute node has a minimal software image and mainly runs simulation "
+"programs. Services on this node should be reduced to a bare minimum and the "
+"node *must* be installed in a automatic manner. The pattern HPC libraries "
+"should also be installed."
+msgstr ""
+"Węzeł obliczeniowy ma minimalny obraz oprogramowania i obsługuje głównie "
+"programy symulacji. Usługi w tym węźle powinny być ograniczone do "
+"absolutnego minimum, a sam węzeł *musi* być instalowany w sposób "
+"automatyczny. Powinien być również instalowany podstawowy zestaw bibliotek "
+"numerycznych."
+
+#. SLE/patterns-hpc/patterns-hpc-compute_node/category
+#. SLE/patterns-hpc/patterns-hpc-libraries/category
+msgid "Server Functions"
+msgstr "Funkcje serwera"
+
+#. SLE/patterns-hpc/patterns-hpc-development_node/summary
+#, fuzzy
+#| msgid "KDE development packages"
+msgid "HPC Development Packages"
+msgstr "Pakiety dla programistów KDE"
+
+#. SLE/patterns-hpc/patterns-hpc-development_node/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the hpc-compute node and adds additionally "
+#| "the compilers and includes also the relevant managment packages."
+msgid ""
+"This package provides all the relevant packages for developing HPC "
+"applications. It depends on the HPC libraries and adds additionally the "
+"compilers and includes also the relevant management packages."
+msgstr ""
+"Ten pakiet zawiera wszystkie pakiety, które są niezbędne do programowania "
+"aplikacji HPC. Jego funkcjonowanie jest zależne od węzła hpc-compute. Pakiet "
+"ten dodatkowo zawiera kompilatory i wszystkie potrzebne pakiety do "
+"zarządzania."
+
+#. SLE/patterns-hpc/patterns-hpc-development_node/category
+msgid "Development"
+msgstr "Programowanie"
+
+#. SLE/patterns-hpc/patterns-hpc-libraries/summary
+#, fuzzy
+#| msgid "HPC modularized libraries"
+msgid "HPC modularized Libraries"
+msgstr "Bilblioteki zmodularyzowane HPC"
+
+#. SLE/patterns-hpc/patterns-hpc-libraries/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in a hpc environment. Especially these libariries allows you to "
+#| "install a mpi enabled libarary for different mpi libraries."
+msgid ""
+"This package provides all the modularized libraries so that they can be used "
+"in an HPC environment. Especially these libraries allows you to install "
+"several MPI flavors in parallel. In order to use this libraries you have "
+"them to load first via the module command."
+msgstr ""
+"Ten pakiet zawiera wszystkie biblioteki zmodularyzowane i umożliwia używanie "
+"ich w środowisku HPC. Biblioteki te pozwalają zwłaszcza na instalowanie "
+"biblioteki zgodnej z MPI na potrzeby różnych bibliotek MPI."
+
+#. SLE/patterns-ofed/patterns-ofed-ofed/summary
+#. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
+msgid "Infiniband (OFED)"
+msgstr "Infiniband (OFED)"
+
+#. SLE/patterns-ofed/patterns-ofed-ofed/description
+msgid ""
+"This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
+"base packages. The base pattern includes the packages you need to get your "
+"Infiniband adapter operational, that is IB kernel modules and basic user "
+"level libraries."
+msgstr ""
+"Ten wzorzec definiuje podstawowe pakiety dla systemu OpenFabrics Enterprise "
+"Distribution (OFED). Zawarte są w nim podstawowe pakiety - moduły jądra IB i "
+"podstawowe biblioteki po stronie użytkownika, które umożliwiają uruchomienie "
+"adaptera Infiniband."
+
+#. SLE/patterns-ofed/patterns-ofed-ofed-32bit/description
+msgid "The 32bit pattern complementing ofed."
+msgstr "32-bitowy wzorzec uzupełniający system OFED."
+
+#. SLE/patterns-rpm-macros/summary
+msgid "RPM macros for building of patterns modules"
+msgstr "Makra RPM do tworzenia modułów z wzorcami"
+
+#. SLE/patterns-rpm-macros/description
+msgid "This package contains SUSE RPM macros to aid creating patterns."
+msgstr "Ten pakiet zawiera makra SUSE RPM ułatwiające tworzenie wzorców."
+
+#. SLE/patterns-server/patterns-server-dhcp_dns_server/summary
+#. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
+msgid "DHCP and DNS Server"
+msgstr "Serwer DHCP i DNS"
+
+#. SLE/patterns-server/patterns-server-dhcp_dns_server/description
+msgid ""
+"Software to set up a server for the Dynamic Host Configuration Protocol "
+"(DHCP) and the Domain Name System (DNS) services. DHCP provides "
+"configuration parameters to client computers to integrate them into a "
+"network, whereas DNS delivers information associated with domain names, in "
+"particular, the IP address."
+msgstr ""
+"Narzędzia serwera DHCP (Dynamic Host Configuration Protocol), który "
+"udostępnia komputerom klienckim parametry konfiguracyjne, dzięki którym mogą "
+"one połączyć się w sieć. Serwer DNS (Domain Name System) dostarcza "
+"informacje związane z nazwami domenowymi, w szczególności adresy IP."
+
+#. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/description
+msgid "The 32bit pattern complementing dhcp_dns_server."
+msgstr "32-bitowy wzorzec uzupełniający serwery usług DHCP i DNS."
+
+#. SLE/patterns-server/patterns-server-directory_server/summary
+#. SLE/patterns-server/patterns-server-directory_server-32bit/summary
+msgid "Directory Server (LDAP)"
+msgstr "Serwer usług katalogowych (LDAP)"
+
+#. SLE/patterns-server/patterns-server-directory_server/description
+msgid ""
+"Software to set up a directory server with OpenLDAP. The Lightweight "
+"Directory Access Protocol (LDAP) is used to access online directory services."
+msgstr ""
+"Oprogramowanie do instalowania serwera usług katalogowych OpenLDAP. Protokół "
+"LDAP (Lightweight Directory Access Protocol) służy do uzyskiwania dostępu "
+"online do usług katalogowych."
+
+#. SLE/patterns-server/patterns-server-directory_server-32bit/description
+msgid "The 32bit pattern complementing directory_server."
+msgstr "32-bitowy wzorzec uzupełniający serwer usług katalogowych."
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
+msgid "FIPS 140-2 specific packages"
+msgstr "Pakiety specyficzne dla norm FIPS 140-2"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+"Ten wzorzec służy do instalowania pakietów specyficznych dla norm FIPS "
+"140-2, które są uzupełnieniem różnych modułów kryptograficznych będących w "
+"użytku. Jest wymagany, jeśli komputer ma być uruchamiany z opcją "
+"\"fips=1\".\n"
+"\n"
+"Należy pamiętać, że ten wzorzec jedynie umożliwia wykonywanie operacji "
+"zgodnych z FIPS 140-2, natomiast nie sprawi, że system będzie certyfikowany "
+"lub zatwierdzony jako zgodny z tymi normami.\n"
+"\n"
+"Patrz: oficjalne oświadczenie SUSE dotyczące stanu certyfikacji zgodności z "
+"normami FIPS 140-2."
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
+msgid "The 32bit pattern complementing fips."
+msgstr "32-bitowy wzorzec uzupełniający normy FIPS."
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
+msgid "Oracle Server Base"
+msgstr "Baza serwera Oracle"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
+msgid "Set up the server for installing Oracle databases."
+msgstr "Konfiguracja serwera dla baz danych Oracle."
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
+msgid "The 32bit pattern complementing oracle_server."
+msgstr "32-bitowy wzorzec uzupełniający serwer Oracle."
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
+msgid "SAP Application Server Base"
+msgstr "Baza serwera programów SAP"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
+msgid "Set up the server for installing SAP systems."
+msgstr "Konfiguracja serwera do instalowania systemów SAP."
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
+msgid "The 32bit pattern complementing sap_server."
+msgstr "32-bitowy wzorzec uzupełniający serwer SAP."
+
+#. SLE/patterns-server/patterns-server-file_server/summary
+#. SLE/patterns-server/patterns-server-file_server-32bit/summary
+msgid "File Server"
+msgstr "Serwer plików"
+
+#. SLE/patterns-server/patterns-server-file_server/description
+msgid ""
+"File services to host files so that they may be accessed or retrieved by "
+"other computers on the same network. This includes the FTP, SMB, and NFS "
+"protocols."
+msgstr ""
+"Usługi plikowe do przechowywania i udostępniania plików innym komputerom w "
+"sieci za pomocą protokołów FTP, SMB i NFS."
+
+#. SLE/patterns-server/patterns-server-file_server-32bit/description
+msgid "The 32bit pattern complementing file_server."
+msgstr "32-bitowy wzorzec uzupełniający serwer plików."
+
+#. SLE/patterns-server/patterns-server-gateway_server/summary
+#. SLE/patterns-server/patterns-server-gateway_server-32bit/summary
+msgid "Internet Gateway"
+msgstr "Bramka internetowa"
+
+#. SLE/patterns-server/patterns-server-gateway_server/description
+msgid ""
+"Software to set up a proxy, firewall, and gateway server, including a "
+"virtual private network (VPN) gateway."
+msgstr ""
+"Oprogramowanie do konfiguracji serwera proxy, zapory sieciowej, serwera "
+"bramki i bramki wirtualnej sieci prywatnej (VPN)."
+
+#. SLE/patterns-server/patterns-server-gateway_server-32bit/description
+msgid "The 32bit pattern complementing gateway_server."
+msgstr "32-bitowy wzorzec uzupełniający serwer bramki internetowej."
+
+#. SLE/patterns-server/patterns-server-kvm_server/summary
+msgid "KVM Host Server"
+msgstr "Serwer hostów KVM"
+
+#. SLE/patterns-server/patterns-server-kvm_server/description
+#. SLE/patterns-server/patterns-server-xen_server/description
+msgid ""
+"Software to set up a server for configuring, managing, and monitoring "
+"virtual machines on a single physical machine."
+msgstr ""
+"Oprogramowanie do instalowania serwera służącego do konfigurowania i "
+"monitorowania maszyn wirtualnych oraz zarządzania nimi na jednej fizycznej "
+"maszynie."
+
+#. SLE/patterns-server/patterns-server-kvm_tools/summary
+msgid "KVM Virtualization Host and tools"
+msgstr "Host wirtualizacji KVM oraz narzędzia"
+
+#. SLE/patterns-server/patterns-server-kvm_tools/description
+msgid ""
+"This will provide all minimal system to get a running KVM Hypervisor and be "
+"able to configure, manage, and monitor virtual machines on a single physical "
+"machine."
+msgstr ""
+"Zapewnia kompletny minimalny system pozwalający uruchomić hyperwizora KVM, "
+"co z kolei umożliwi konfigurowanie i monitorowanie maszyn wirtualnych oraz "
+"zarządzanie nimi na jednej fizycznej maszynie."
+
+#. SLE/patterns-server/patterns-server-kvm_tools/category
+#. SLE/patterns-server/patterns-server-xen_tools/category
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/category
 msgid "Base Technologies"
 msgstr "Technologie podstawowe"
 
-#. Installer/patterns-base/patterns-base-minimal_base/description
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/description
+#. SLE/patterns-server/patterns-server-lamp_server/summary
+#. SLE/patterns-server/patterns-server-lamp_server-32bit/summary
+msgid "Web and LAMP Server"
+msgstr "Serwer sieci Web i LAMP"
+
+#. SLE/patterns-server/patterns-server-lamp_server/description
 msgid ""
-"This is the minimal SLE runtime system. It is really a minimal system, you "
-"can login and a shell will be started, that's all. It is intended as base "
-"for Appliances."
+"Software to set up a Web server that is able to serve static, dynamic, and "
+"interactive content (like a Web shop). This includes Apache HTTP Server, the "
+"database management system MySQL, and scripting languages such as PHP, "
+"Python, Ruby on Rails, or Perl."
 msgstr ""
-"To jest minimalne środowisko uruchomieniowe SLE. Stanowi ono absolutne "
-"minimum, gdzie można się zalogować, zostanie uruchomiona konsola i to "
-"wszystko. Docelowo jest ono bazą dla innych zastosowań."
+"Oprogramowanie serwera sieci Web, który może udostępniać treść statyczną, "
+"dynamiczną i interaktywną (np. sklep internetowy). Zawiera serwer HTTP "
+"Apache, system zarządzania bazą danych MySQL oraz języki skryptowe takie jak "
+"PHP, Python, Ruby on Rails, czy Perl."
 
-#. Installer/patterns-base/summary
-msgid "Patterns for Installation (base patterns)"
-msgstr "Wzorce do instalacji (wzorce podstawowe)"
+#. SLE/patterns-server/patterns-server-lamp_server-32bit/description
+msgid "The 32bit pattern complementing lamp_server."
+msgstr "32-bitowy wzorzec uzupełniający serwer LAMP."
 
-#. Installer/patterns-base/description
+#. SLE/patterns-server/patterns-server-mail_server/summary
+#. SLE/patterns-server/patterns-server-mail_server-32bit/summary
+msgid "Mail and News Server"
+msgstr "Serwer poczty i grup dyskusyjnych"
+
+#. SLE/patterns-server/patterns-server-mail_server/description
 msgid ""
-"This is an internal package that is used to create the patterns as part of "
-"the installation source setup.  Installation of this package does not make "
-"sense.\n"
-"\n"
-"This particular package contains all the base / core patterns (and those "
-"that don't fit well anywhere else)."
+"Software to set up electronic mail and message services to handle email, "
+"mailing, and news lists, including a virus scanner to scan messages at the "
+"server level."
 msgstr ""
-"Jest to wewnętrzny pakiet, który służy do tworzenia wzorców w ramach "
-"konfigurowania źródła instalacji. Instalowanie tego pakietu nie ma sensu.\n"
-"\n"
-"Ten konkretny pakiet zawiera wszystkie podstawowe / główne wzorce (a także "
-"te, które nie klasyfikują się nigdzie indziej)."
+"Oprogramowanie do konfiguracji serwera usług pocztowych do obsługi poczty "
+"elektronicznej, list pocztowych i grup dyskusyjnych wraz ze skanerem "
+"antywirusowym do sprawdzania treści wiadomości na poziomie serwera."
 
-#. Module-Basesystem/patterns-base/patterns-base-32bit/summary
-msgid "32-Bit Runtime Environment"
-msgstr "32-bitowe środowisko uruchomieniowe"
+#. SLE/patterns-server/patterns-server-mail_server-32bit/description
+msgid "The 32bit pattern complementing mail_server."
+msgstr "32-bitowy wzorzec uzupełniający serwer poczty."
 
-#. Module-Basesystem/patterns-base/patterns-base-32bit/description
+#. SLE/patterns-server/patterns-server-printing/summary
+#. SLE/patterns-server/patterns-server-printing-32bit/summary
+msgid "Print Server"
+msgstr "Serwer wydruku"
+
+#. SLE/patterns-server/patterns-server-printing/description
 msgid ""
-"This will install the 32-bit variant of all selected patterns. This allows "
-"to execute 32-bit software."
+"This pattern provides all packages necessary for printing. It provides all "
+"needed packages for printing to a locally connected printer, printing using "
+"a remote print server and for setting up a print server."
 msgstr ""
-"Spowoduje to zainstalowanie 32-bitowych wariantów wybranych wzorców. Pozwoli "
-"to uruchamiać programy 32-bitowe."
+"Ten wzorzec zawiera wszystkie pakiety niezbędne do drukowania. Umożliwiają "
+"one drukowanie na lokalnie podłączonych drukarkach i przez zdalne serwery "
+"drukowania oraz konfigurowanie serwerów drukowania."
 
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/summary
-#. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/summary
-msgid "AppArmor"
-msgstr "AppArmor"
+#. SLE/patterns-server/patterns-server-printing-32bit/description
+msgid "The 32bit pattern complementing printing."
+msgstr "32-bitowy wzorzec uzupełniający funkcje drukowania."
 
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/description
+#. SLE/patterns-server/patterns-server-xen_server/summary
+msgid "Xen Virtual Machine Host Server"
+msgstr "Serwer maszyn wirtualnych Xen"
+
+#. SLE/patterns-server/patterns-server-xen_tools/summary
+msgid "XEN Virtualization Host and tools"
+msgstr "Host wirtualizacji XEN i narzędzia"
+
+#. SLE/patterns-server/patterns-server-xen_tools/description
 msgid ""
-"AppArmor is an application security framework that provides mandatory access "
-"control for programs. It protects from exploitation of software flaws and "
-"compromised systems. It offers an advanced tool set that automates the "
-"development of per-program application security without requiring additional "
-"knowledge."
+"This will provide all minimal system to get a running XEN Hypervisor and be "
+"able to configure, manage, and monitor virtual machines on a single physical "
+"machine."
 msgstr ""
-"Program AppArmor to system zabezpieczeń programów, który umożliwia "
-"obowiązkową kontrolę dostępu dla programów. Zabezpiecza on przed "
-"wykorzystaniem błędów oprogramowania i skutkami włamań. Oferuje zestaw "
-"zaawansowanych narzędzi automatyzujących proces przygotowania zabezpieczeń "
-"dla konkretnych programów bez konieczności posiadania dodatkowej wiedzy."
+"Zapewnia kompletny minimalny system pozwalający uruchomić hyperwizora XEN, "
+"co z kolei umożliwi konfigurowanie i monitorowanie maszyn wirtualnych oraz "
+"zarządzanie nimi na jednej fizycznej maszynie."
 
-#. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/description
-msgid "The 32bit pattern complementing apparmor."
-msgstr "32-bitowy wzorzec uzupełniający środowisko AppArmor."
+#. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/summary
+msgid "Web-Based Enterprise Management"
+msgstr "Zarządzanie przedsiębiorstwem oparte o sieć Web"
 
-#. Module-Basesystem/patterns-base/patterns-base-base-32bit/description
-msgid "The 32bit pattern complementing base."
-msgstr "32-bitowy wzorzec uzupełniający system podstawowy."
-
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
-msgstr "System podstawowy (wzorzec aliasu dla systemu podstawowego)"
-
-#. Module-Basesystem/patterns-base/patterns-base-documentation/summary
-#. Module-Basesystem/patterns-base/patterns-base-documentation/description
-msgid "Help and Support Documentation"
-msgstr "Dokumentacja pomocy"
-
-#. Module-Basesystem/patterns-base/patterns-base-documentation/category
-#. Product-WE/patterns-desktop/patterns-desktop-books/summary
-#. Product-WE/patterns-desktop/patterns-desktop-books/category
-msgid "Documentation"
-msgstr "Dokumentacja"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/summary
-msgid "Enhanced Base System"
-msgstr "Rozszerzony system podstawowy"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/description
-msgid ""
-"This is the enhanced base runtime system with lots of convenience packages."
-msgstr "Rozszerzony system podstawowy z dużą ilością dogodnych pakietów."
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/description
-msgid "The 32bit pattern complementing enhanced_base."
-msgstr "32-bitowy wzorzec uzupełniający rozszerzony system podstawowy."
-
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/description
-msgid "The 32bit pattern complementing minimal_base."
-msgstr "32-bitowy wzorzec uzupełniający minimalny system podstawowy."
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/summary
-#. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/summary
-msgid "Software Management"
-msgstr "Zarządzanie oprogramowaniem"
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/description
-msgid ""
-"This pattern provides a graphical application and a command line tool for "
-"keeping your system up to date."
+#. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/description
+msgid "The 32bit pattern complementing WBEM."
 msgstr ""
-"Ten wzorzec zawiera program graficzny i narzędzie wiersza poleceń, która "
-"pozwala utrzymywać system w aktualnym stanie."
+"32-bitowy wzorzec uzupełniający funkcje zarządzania przedsiębiorstwem "
+"opartego o sieć Web."
 
-#. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/description
-msgid "The 32bit pattern complementing sw_management."
-msgstr "32-bitowy wzorzec uzupełniający zarządzanie oprogramowaniem."
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/summary
+msgid "YaST Installation Packages"
+msgstr "Pakiety instalacyjne YaST"
 
-#. Module-Basesystem/patterns-base/patterns-base-x11/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11-32bit/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/summary
-msgid "X Window System"
-msgstr "System X Window"
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/description
+msgid "YaST tools for installing your system."
+msgstr "Narzędzia YaST do instalacji systemu."
 
-#. Module-Basesystem/patterns-base/patterns-base-x11/description
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/description
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
+msgid "Base Development"
+msgstr "Podstawowe narzędzia programistyczne"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
+msgid "The 32bit pattern complementing devel_basis."
+msgstr "32-bitowy wzorzec uzupełniający podstawowe narzędzia programistyczne."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
+msgid "Linux Kernel Development"
+msgstr "Programowanie jądra systemu Linux"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
+msgid "Tools for Linux kernel development."
+msgstr "Narzędzia do programowania jądra systemu Linux."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
+msgid "The 32bit pattern complementing devel_kernel."
+msgstr "32-bitowy wzorzec uzupełniający funkcje programowania jądra."
+
+#. SLE/patterns-yast/patterns-yast-devel_yast/summary
+msgid "YaST Development"
+msgstr "Programowanie YaST"
+
+#. SLE/patterns-yast/patterns-yast-devel_yast/description
 msgid ""
-"The X Window System provides the only standard platform-independent "
-"networked graphical window system bridging the heterogeneous platforms in "
-"today's enterprise: from network servers to desktops, thin clients, laptops, "
-"and handhelds, independent of operating system and hardware."
+"Tools and libraries for developing YaST modules, the setup and configuration "
+"tool for openSUSE."
 msgstr ""
-"System X Window jest jedynym standardowym, niezależnym od platformy "
-"sieciowym graficznym systemem okienkowym, który niezależnie od systemu "
-"operacyjnego i sprzętu łączy różnorodne platformy współczesnego "
-"przedsiębiorstwa: od serwerów sieciowych po stacje robocze, klienty "
-"uproszczone, komputery i urządzenia przenośne."
+"Narzędzia i biblioteki do budowania modułów dla programu YaST - centrum "
+"sterowania systemem openSUSE."
 
-#. Module-Basesystem/patterns-base/patterns-base-x11/category
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/category
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/category
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/category
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "Środowiska graficzne"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11-32bit/description
-msgid "The 32bit pattern complementing x11."
-msgstr "32-bitowy wzorzec uzupełniający system x11."
-
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/description
-msgid "The 32bit pattern complementing x11_enhanced."
-msgstr "32-bitowy wzorzec uzupełniający rozszerzony system x11."
-
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/summary
-msgid "Fonts"
-msgstr "Czcionki"
-
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/description
-msgid "Base fonts and font configuration."
-msgstr "Podstawowe czcionki i ich konfiguracja."
-
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/summary
-msgid "YaST User Interfaces"
-msgstr "Interfejsy użytkownika YaST"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/description
-msgid "Graphical YaST user interfaces for minimal X desktop."
-msgstr "Graficzny interfejs programu YaST dla minimalnej stacji roboczej X."
-
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/summary
-msgid "YaST System Administration"
-msgstr "System zarządzania YaST"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/description
-msgid "YaST tools for basic system administration."
-msgstr "Narzędzia YaST do podstawowej administracji systemem."
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
 msgstr "Środowisko graficzne GNOME (podstawowe)"
 
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs GNOME desktop environment with only essential "
@@ -258,143 +468,33 @@ msgstr ""
 "GNOME z zainstalowanymi tylko podstawowymi aplikacjami graficznymi (menedżer "
 "plików, przeglądarka internetowa)."
 
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/category
+msgid "Graphical Environments"
+msgstr "Środowiska graficzne"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/summary
 msgid "GNOME Base System"
 msgstr "Podstawowy system GNOME"
 
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/description
 msgid "Base packages for the GNOME desktop environment."
 msgstr "Podstawowe pakiety dla środowiska graficznego GNOME."
 
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/summary
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
-msgid "Base Development"
-msgstr "Podstawowe narzędzia programistyczne"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr "Minimalny zestaw narzędzi do kompilowania i konsolidacji programów."
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/category
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Programowanie"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
-msgid "The 32bit pattern complementing devel_basis."
-msgstr "32-bitowy wzorzec uzupełniający podstawowe narzędzia programistyczne."
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/summary
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
-msgid "Linux Kernel Development"
-msgstr "Programowanie jądra systemu Linux"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/description
-msgid "Tools for Linux kernel development."
-msgstr "Narzędzia do programowania jądra systemu Linux."
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
-msgid "The 32bit pattern complementing devel_kernel."
-msgstr "32-bitowy wzorzec uzupełniający funkcje programowania jądra."
-
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/summary
-msgid "YaST Development"
-msgstr "Programowanie YaST"
-
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/description
-msgid ""
-"Tools and libraries for developing YaST modules, the setup and configuration "
-"tool for openSUSE."
-msgstr ""
-"Narzędzia i biblioteki do budowania modułów dla programu YaST - centrum "
-"sterowania systemem openSUSE."
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/summary
-msgid "HPC compute node"
-msgstr "Węzeł obliczeniowy HPC"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/description
-msgid ""
-"A compute node has a minmal software image and mainly runs simultion "
-"programs. Services on this node should be reduced to a bare minimum and the "
-"node *must* be installed in a automatic manner. A basset of numerical "
-"libraries should also be installed."
-msgstr ""
-"Węzeł obliczeniowy ma minimalny obraz oprogramowania i obsługuje głównie "
-"programy symulacji. Usługi w tym węźle powinny być ograniczone do "
-"absolutnego minimum, a sam węzeł *musi* być instalowany w sposób "
-"automatyczny. Powinien być również instalowany podstawowy zestaw bibliotek "
-"numerycznych."
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/category
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/category
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/category
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-printing/category
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/category
-msgid "Server Functions"
-msgstr "Funkcje serwera"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/summary
-msgid "Packages needed to be able to develop HPC Apps"
-msgstr "Pakiety niezbędne do programowania aplikacji HPC"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/description
-msgid ""
-"This package provides all the relevant packages for developing HPC "
-"applications. It depends on the hpc-compute node and adds additionally the "
-"compilers and includes also the relevant managment packages."
-msgstr ""
-"Ten pakiet zawiera wszystkie pakiety, które są niezbędne do programowania "
-"aplikacji HPC. Jego funkcjonowanie jest zależne od węzła hpc-compute. Pakiet "
-"ten dodatkowo zawiera kompilatory i wszystkie potrzebne pakiety do "
-"zarządzania."
-
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/summary
-msgid "HPC modularized libraries"
-msgstr "Bilblioteki zmodularyzowane HPC"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/description
-msgid ""
-"This package provides all the modularized libraries so that they can be used "
-"in a hpc environment. Especially these libariries allows you to install a "
-"mpi enabled libarary for different mpi libraries."
-msgstr ""
-"Ten pakiet zawiera wszystkie biblioteki zmodularyzowane i umożliwia używanie "
-"ich w środowisku HPC. Biblioteki te pozwalają zwłaszcza na instalowanie "
-"biblioteki zgodnej z MPI na potrzeby różnych bibliotek MPI."
-
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/summary
+#. SLE/patterns-lp/patterns-lp-lp_sles/summary
 msgid "Live Patching"
 msgstr "Mechanizm Live Patching"
 
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/description
+#. SLE/patterns-lp/patterns-lp-lp_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
 msgstr ""
 "Zawiera narzędzia i poprawki pozwalające naprawić jądro w czasie wykonywania."
 
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/category
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/category
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/category
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/category
-msgid "Primary Functions"
-msgstr "Funkcje podstawowe"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
 msgid "Amazon Web Services - All"
 msgstr "Amazon Web Services - wszystkie"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
 msgid ""
 "This pattern installs all Amazon Web Services command line interface tools, "
 "instance initialization packages and tools to communicate with the cloud "
@@ -409,11 +509,11 @@ msgstr ""
 "tego zaleca się instalację jednego ze wzorców specyficznych dla konkretnego "
 "przypadku użycia (np. Amazon Web Services - narzędzia)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
 msgid "Amazon Web Services - Instance Initialization"
 msgstr "Amazon Web Services - inicjalizacja instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
 msgid ""
 "This pattern installs the Amazon Web Services instance initialization "
 "packages which support the provisioning and running of instances in the "
@@ -423,11 +523,11 @@ msgstr ""
 "Web Services, które obsługują zaopatrywanie i uruchamianie instancji w "
 "środowisku chmury (np. cloud-init)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
 msgid "Amazon Web Services - Instance Tools"
 msgstr "Amazon Web Services - narzędzia do obsługi instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
 msgid ""
 "This pattern install the Amazon Web Services instance specific tools which "
 "are used to collect instance metadata (e.g. python-ec2metadata)."
@@ -436,11 +536,11 @@ msgstr ""
 "Services narzędzi, które są używane do gromadzenia metadanych instancji (np. "
 "python-ec2metadata)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
 msgid "Amazon Web Services - Tools"
 msgstr "Amazon Web Services - narzędzia"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
 msgid ""
 "This pattern installs the Amazon Web Services command line interface tools "
 "to communicate with the cloud framework (e.g. aws-cli)."
@@ -448,11 +548,11 @@ msgstr ""
 "Ten wzorzec służy do instalowania narzędzi interfejsu wiersza poleceń Amazon "
 "Web Services używanych do komunikacji ze środowiskiem chmury (np. aws-cli)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
 msgid "Google Cloud Platform - All"
 msgstr "Google Cloud Platform - wszystkie"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
 msgid ""
 "This pattern installs all Google Cloud Platform command line interface "
 "tools, instance initialization packages and tools to communicate with the "
@@ -467,11 +567,11 @@ msgstr ""
 "tego zaleca się instalację jednego ze wzorców specyficznych dla konkretnego "
 "przypadku użycia (np. Google Cloud Platform - narzędzia)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
 msgid "Google Cloud Platform - Instance Initialization"
 msgstr "Google Cloud Platform - inicjalizacja instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
 msgid ""
 "This pattern installs the Google Cloud Platform instance initialization "
 "packages which support the provisioning and running of instances in the "
@@ -481,11 +581,11 @@ msgstr ""
 "Cloud Platform, które obsługują zaopatrywanie i uruchamianie instancji w "
 "środowisku chmury (np. google-daemon)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
 msgid "Google Cloud Platform - Instance Tools"
 msgstr "Google Cloud Platform - narzędzia do obsługi instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
 msgid ""
 "This pattern install the Google Cloud Platform instance specific tools which "
 "are used to collect instance metadata (e.g. python-gcemetadata)."
@@ -494,11 +594,11 @@ msgstr ""
 "Platform narzędzi, które są używane do gromadzenia metadanych instancji (np. "
 "python-gcemetadata)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
 msgid "Google Cloud Platform - Tools"
 msgstr "Google Cloud Platform - narzędzia"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
 msgid ""
 "This pattern installs the Google Cloud Platform command line interface tools "
 "to communicate with the cloud framework (e.g. google-cloud-sdk)."
@@ -507,11 +607,11 @@ msgstr ""
 "Google Cloud Platform używanych do komunikacji ze środowiskiem chmury (np. "
 "google-cloud-sdk)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
 msgid "Microsoft Azure - All"
 msgstr "Microsoft Azure - wszystkie"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
 msgid ""
 "This pattern installs all Microsoft Azure command line interface tools, "
 "instance initialization packages and tools to communicate with the cloud "
@@ -526,11 +626,11 @@ msgstr ""
 "tego zaleca się instalację jednego ze wzorców specyficznych dla konkretnego "
 "przypadku użycia (np. Microsoft Azure - narzędzia)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
 msgid "Microsoft Azure - Instance Initialization"
 msgstr "Microsoft Azure - inicjalizacja instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
 msgid ""
 "This pattern installs the Microsoft Azure instance initialization packages "
 "which support the provisioning and running of instances in the cloud "
@@ -540,11 +640,11 @@ msgstr ""
 "Azure, które obsługują zaopatrywanie i uruchamianie instancji w środowisku "
 "chmury (np. python-azure-agent)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
 msgstr "Microsoft Azure - narzędzia do obsługi instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
 msgid ""
 "This pattern install the Microsoft Azure instance specific tools which are "
 "used to collect instance metadata (e.g. azuremetadata)."
@@ -553,11 +653,11 @@ msgstr ""
 "Azure narzędzi, które są używane do gromadzenia metadanych instancji (np. "
 "azuremetadata)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
 msgid "Microsoft Azure - Tools"
 msgstr "Microsoft Azure - narzędzia"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
 "communicate with the cloud framework (e.g. python-azurectl)."
@@ -566,11 +666,11 @@ msgstr ""
 "Microsoft Azure używanych do komunikacji ze środowiskiem chmury (np. python-"
 "azurectl)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
 msgid "OpenStack - All"
 msgstr "OpenStack - wszystkie"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
 msgid ""
 "This pattern installs all OpenStack command line interface tools, instance "
 "initialization packages and tools to communicate with the cloud framework "
@@ -585,11 +685,11 @@ msgstr ""
 "się instalację jednego ze wzorców specyficznych dla konkretnego przypadku "
 "użycia (np. OpenStack - narzędzia)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
 msgid "OpenStack - Instance Initialization"
 msgstr "OpenStack - inicjalizacja instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
 msgid ""
 "This pattern installs the OpenStack instance initialization packages which "
 "support the provisioning and running of instances in the cloud framework (e."
@@ -599,11 +699,11 @@ msgstr ""
 "OpenStack, które obsługują zaopatrywanie i uruchamianie instancji w "
 "środowisku chmury (np. cloud-init)."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
 msgid "OpenStack - Instance Tools"
 msgstr "OpenStack - narzędzia do obsługi instancji"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
 msgid ""
 "This pattern install the OpenStack instance specific tools which are used to "
 "collect instance metadata."
@@ -611,11 +711,11 @@ msgstr ""
 "Ten wzorzec służy do instalowania specyficznych dla instancji OpenStack "
 "narzędzi, które są używane do gromadzenia metadanych instancji."
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
 msgid "OpenStack - Tools"
 msgstr "OpenStack - narzędzia"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
 msgid ""
 "This pattern installs the OpenStack command line interface tools to "
 "communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
@@ -624,398 +724,278 @@ msgstr ""
 "OpenStack używanych do komunikacji ze środowiskiem chmury (np. python-"
 "susepubliccloudinfo)."
 
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/summary
+#. SLE/patterns-sap/patterns-sap-b1/summary
 msgid "SAP BusinessOne Server Base"
 msgstr "Baza serwera SAP BusinessOne"
 
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/description
+#. SLE/patterns-sap/patterns-sap-b1/description
 msgid "Set up the server for installing SAP BusinessOne systems."
 msgstr "Konfiguracja serwera do instalowania systemów SAP BusinessOne."
 
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/summary
+#. SLE/patterns-sap/patterns-sap-hana/summary
 msgid "SAP HANA Server Base"
 msgstr "Baza serwera SAP HANA"
 
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/description
+#. SLE/patterns-sap/patterns-sap-hana/description
 msgid "Set up the server for installing SAP HANA systems."
 msgstr "Konfiguracja serwera do instalowania systemów SAP HANA."
 
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/summary
+#. SLE/patterns-sap/patterns-sap-nw/summary
 msgid "SAP NetWeaver Server Base"
 msgstr "Baza serwera SAP NetWeaver"
 
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/description
+#. SLE/patterns-sap/patterns-sap-nw/description
 msgid "Set up the server for installing SAP NetWeaver systems."
 msgstr "Konfiguracja serwera do instalowania systemów SAP NetWeaver."
 
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/summary
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed-32bit/summary
-msgid "Infiniband (OFED)"
-msgstr "Infiniband (OFED)"
+#. SLE/patterns-base/patterns-base-32bit/summary
+msgid "32-Bit Runtime Environment"
+msgstr "32-bitowe środowisko uruchomieniowe"
 
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/description
+#. SLE/patterns-base/patterns-base-32bit/description
 msgid ""
-"This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
-"base packages. The base pattern includes the packages you need to get your "
-"Infiniband adapter operational, that is IB kernel modules and basic user "
-"level libraries."
+"This will install the 32-bit variant of all selected patterns. This allows "
+"to execute 32-bit software."
 msgstr ""
-"Ten wzorzec definiuje podstawowe pakiety dla systemu OpenFabrics Enterprise "
-"Distribution (OFED). Zawarte są w nim podstawowe pakiety - moduły jądra IB i "
-"podstawowe biblioteki po stronie użytkownika, które umożliwiają uruchomienie "
-"adaptera Infiniband."
+"Spowoduje to zainstalowanie 32-bitowych wariantów wybranych wzorców. Pozwoli "
+"to uruchamiać programy 32-bitowe."
 
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed-32bit/description
-msgid "The 32bit pattern complementing ofed."
-msgstr "32-bitowy wzorzec uzupełniający system OFED."
+#. SLE/patterns-base/patterns-base-apparmor/summary
+#. SLE/patterns-base/patterns-base-apparmor-32bit/summary
+msgid "AppArmor"
+msgstr "AppArmor"
 
-#. Module-Server-Applications/patterns-rpm-macros/summary
-msgid "RPM macros for building of patterns modules"
-msgstr "Makra RPM do tworzenia modułów z wzorcami"
-
-#. Module-Server-Applications/patterns-rpm-macros/description
-msgid "This package contains SUSE RPM macros to aid creating patterns."
-msgstr "Ten pakiet zawiera makra SUSE RPM ułatwiające tworzenie wzorców."
-
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
-msgid "DHCP and DNS Server"
-msgstr "Serwer DHCP i DNS"
-
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/description
+#. SLE/patterns-base/patterns-base-apparmor/description
 msgid ""
-"Software to set up a server for the Dynamic Host Configuration Protocol "
-"(DHCP) and the Domain Name System (DNS) services. DHCP provides "
-"configuration parameters to client computers to integrate them into a "
-"network, whereas DNS delivers information associated with domain names, in "
-"particular, the IP address."
+"AppArmor is an application security framework that provides mandatory access "
+"control for programs. It protects from exploitation of software flaws and "
+"compromised systems. It offers an advanced tool set that automates the "
+"development of per-program application security without requiring additional "
+"knowledge."
 msgstr ""
-"Narzędzia serwera DHCP (Dynamic Host Configuration Protocol), który "
-"udostępnia komputerom klienckim parametry konfiguracyjne, dzięki którym mogą "
-"one połączyć się w sieć. Serwer DNS (Domain Name System) dostarcza "
-"informacje związane z nazwami domenowymi, w szczególności adresy IP."
+"Program AppArmor to system zabezpieczeń programów, który umożliwia "
+"obowiązkową kontrolę dostępu dla programów. Zabezpiecza on przed "
+"wykorzystaniem błędów oprogramowania i skutkami włamań. Oferuje zestaw "
+"zaawansowanych narzędzi automatyzujących proces przygotowania zabezpieczeń "
+"dla konkretnych programów bez konieczności posiadania dodatkowej wiedzy."
 
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server-32bit/description
-msgid "The 32bit pattern complementing dhcp_dns_server."
-msgstr "32-bitowy wzorzec uzupełniający serwery usług DHCP i DNS."
+#. SLE/patterns-base/patterns-base-apparmor-32bit/description
+msgid "The 32bit pattern complementing apparmor."
+msgstr "32-bitowy wzorzec uzupełniający środowisko AppArmor."
 
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server-32bit/summary
-msgid "Directory Server (LDAP)"
-msgstr "Serwer usług katalogowych (LDAP)"
+#. SLE/patterns-base/patterns-base-base/summary
+#. SLE/patterns-base/patterns-base-base-32bit/summary
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
+msgid "Base System"
+msgstr "System podstawowy"
 
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/description
+#. SLE/patterns-base/patterns-base-base/description
+#. SLE/patterns-base/patterns-base-basesystem/description
 msgid ""
-"Software to set up a directory server with OpenLDAP. The Lightweight "
-"Directory Access Protocol (LDAP) is used to access online directory services."
+"This is the base runtime system.  It contains only a minimal multiuser "
+"booting system. For running on real hardware, you need to add additional "
+"packages and pattern to make this pattern useful on its own."
 msgstr ""
-"Oprogramowanie do instalowania serwera usług katalogowych OpenLDAP. Protokół "
-"LDAP (Lightweight Directory Access Protocol) służy do uzyskiwania dostępu "
-"online do usług katalogowych."
+"Podstawowy system uruchomieniowy. Zawiera tylko minimalny rozruchowy system "
+"dla wielu użytkowników. Do pracy na rzeczywistym komputerze wymagane są "
+"dodatkowe pakiety i wzorzec czyniący ten użytecznym."
 
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server-32bit/description
-msgid "The 32bit pattern complementing directory_server."
-msgstr "32-bitowy wzorzec uzupełniający serwer usług katalogowych."
+#. SLE/patterns-base/patterns-base-base-32bit/description
+msgid "The 32bit pattern complementing base."
+msgstr "32-bitowy wzorzec uzupełniający system podstawowy."
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
-msgid "FIPS 140-2 specific packages"
-msgstr "Pakiety specyficzne dla norm FIPS 140-2"
+#. SLE/patterns-base/patterns-base-basesystem/summary
+msgid "Base System (alias pattern for base)"
+msgstr "System podstawowy (wzorzec aliasu dla systemu podstawowego)"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/description
+#. SLE/patterns-base/patterns-base-documentation/summary
+#. SLE/patterns-base/patterns-base-documentation/description
+msgid "Help and Support Documentation"
+msgstr "Dokumentacja pomocy"
+
+#. SLE/patterns-base/patterns-base-documentation/category
+msgid "Documentation"
+msgstr "Dokumentacja"
+
+#. SLE/patterns-base/patterns-base-enhanced_base/summary
+#. SLE/patterns-base/patterns-base-enhanced_base-32bit/summary
+msgid "Enhanced Base System"
+msgstr "Rozszerzony system podstawowy"
+
+#. SLE/patterns-base/patterns-base-enhanced_base/description
 msgid ""
-"This pattern installs the FIPS 140-2 specific packages that complete the "
-"various cryptographic modules in use. It is required if you want to run the "
-"machine with \"fips=1\".\n"
+"This is the enhanced base runtime system with lots of convenience packages."
+msgstr "Rozszerzony system podstawowy z dużą ilością dogodnych pakietów."
+
+#. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
+msgid "The 32bit pattern complementing enhanced_base."
+msgstr "32-bitowy wzorzec uzupełniający rozszerzony system podstawowy."
+
+#. SLE/patterns-base/patterns-base-minimal_base/description
+msgid ""
+"This is the minimal SLE runtime system. It is really a minimal system, you "
+"can login and a shell will be started, that's all. It is intended as base "
+"for Appliances."
+msgstr ""
+"To jest minimalne środowisko uruchomieniowe SLE. Stanowi ono absolutne "
+"minimum, gdzie można się zalogować, zostanie uruchomiona konsola i to "
+"wszystko. Docelowo jest ono bazą dla innych zastosowań."
+
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/description
+msgid "The 32bit pattern complementing minimal_base."
+msgstr "32-bitowy wzorzec uzupełniający minimalny system podstawowy."
+
+#. SLE/patterns-base/patterns-base-sw_management/summary
+#. SLE/patterns-base/patterns-base-sw_management-32bit/summary
+msgid "Software Management"
+msgstr "Zarządzanie oprogramowaniem"
+
+#. SLE/patterns-base/patterns-base-sw_management/description
+msgid ""
+"This pattern provides a graphical application and a command line tool for "
+"keeping your system up to date."
+msgstr ""
+"Ten wzorzec zawiera program graficzny i narzędzie wiersza poleceń, która "
+"pozwala utrzymywać system w aktualnym stanie."
+
+#. SLE/patterns-base/patterns-base-sw_management-32bit/description
+msgid "The 32bit pattern complementing sw_management."
+msgstr "32-bitowy wzorzec uzupełniający zarządzanie oprogramowaniem."
+
+#. SLE/patterns-base/patterns-base-x11/summary
+#. SLE/patterns-base/patterns-base-x11-32bit/summary
+#. SLE/patterns-base/patterns-base-x11_enhanced/summary
+#. SLE/patterns-base/patterns-base-x11_enhanced-32bit/summary
+msgid "X Window System"
+msgstr "System X Window"
+
+#. SLE/patterns-base/patterns-base-x11/description
+#. SLE/patterns-base/patterns-base-x11_enhanced/description
+msgid ""
+"The X Window System provides the only standard platform-independent "
+"networked graphical window system bridging the heterogeneous platforms in "
+"today's enterprise: from network servers to desktops, thin clients, laptops, "
+"and handhelds, independent of operating system and hardware."
+msgstr ""
+"System X Window jest jedynym standardowym, niezależnym od platformy "
+"sieciowym graficznym systemem okienkowym, który niezależnie od systemu "
+"operacyjnego i sprzętu łączy różnorodne platformy współczesnego "
+"przedsiębiorstwa: od serwerów sieciowych po stacje robocze, klienty "
+"uproszczone, komputery i urządzenia przenośne."
+
+#. SLE/patterns-base/patterns-base-x11-32bit/description
+msgid "The 32bit pattern complementing x11."
+msgstr "32-bitowy wzorzec uzupełniający system x11."
+
+#. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
+msgid "The 32bit pattern complementing x11_enhanced."
+msgstr "32-bitowy wzorzec uzupełniający rozszerzony system x11."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr "Minimalny zestaw narzędzi do kompilowania i konsolidacji programów."
+
+#. SLE/patterns-fonts/patterns-fonts-fonts/summary
+msgid "Fonts"
+msgstr "Czcionki"
+
+#. SLE/patterns-fonts/patterns-fonts-fonts/description
+msgid "Base fonts and font configuration."
+msgstr "Podstawowe czcionki i ich konfiguracja."
+
+#. SLE/patterns-yast/patterns-yast-x11_yast/summary
+msgid "YaST User Interfaces"
+msgstr "Interfejsy użytkownika YaST"
+
+#. SLE/patterns-yast/patterns-yast-x11_yast/description
+msgid "Graphical YaST user interfaces for minimal X desktop."
+msgstr "Graficzny interfejs programu YaST dla minimalnej stacji roboczej X."
+
+#. SLE/patterns-yast/patterns-yast-yast2_basis/summary
+msgid "YaST System Administration"
+msgstr "System zarządzania YaST"
+
+#. SLE/patterns-yast/patterns-yast-yast2_basis/description
+msgid "YaST tools for basic system administration."
+msgstr "Narzędzia YaST do podstawowej administracji systemem."
+
+#. SLE/patterns-base/summary
+msgid "Patterns for Installation (base patterns)"
+msgstr "Wzorce do instalacji (wzorce podstawowe)"
+
+#. SLE/patterns-base/description
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense.\n"
 "\n"
-"Please note that this pattern only enables FIPS 140-2 compliant operation, "
-"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"This particular package contains all the base / core patterns (and those "
+"that don't fit well anywhere else)."
+msgstr ""
+"Jest to wewnętrzny pakiet, który służy do tworzenia wzorców w ramach "
+"konfigurowania źródła instalacji. Instalowanie tego pakietu nie ma sensu.\n"
 "\n"
-"Please refer to SUSE official statements on the state of FIPS 140-2 "
-"certification."
-msgstr ""
-"Ten wzorzec służy do instalowania pakietów specyficznych dla norm FIPS 140-"
-"2, które są uzupełnieniem różnych modułów kryptograficznych będących w "
-"użytku. Jest wymagany, jeśli komputer ma być uruchamiany z opcją \"fips=1\"."
-"\n"
-"\n"
-"Należy pamiętać, że ten wzorzec jedynie umożliwia wykonywanie operacji "
-"zgodnych z FIPS 140-2, natomiast nie sprawi, że system będzie certyfikowany "
-"lub zatwierdzony jako zgodny z tymi normami.\n"
-"\n"
-"Patrz: oficjalne oświadczenie SUSE dotyczące stanu certyfikacji zgodności z "
-"normami FIPS 140-2."
+"Ten konkretny pakiet zawiera wszystkie podstawowe / główne wzorce (a także "
+"te, które nie klasyfikują się nigdzie indziej)."
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
-msgid "The 32bit pattern complementing fips."
-msgstr "32-bitowy wzorzec uzupełniający normy FIPS."
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
-msgid "Oracle Server Base"
-msgstr "Baza serwera Oracle"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
-msgid "Set up the server for installing Oracle databases."
-msgstr "Konfiguracja serwera dla baz danych Oracle."
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
-msgid "The 32bit pattern complementing oracle_server."
-msgstr "32-bitowy wzorzec uzupełniający serwer Oracle."
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
-msgid "SAP Application Server Base"
-msgstr "Baza serwera programów SAP"
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
-msgid "Set up the server for installing SAP systems."
-msgstr "Konfiguracja serwera do instalowania systemów SAP."
-
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
-msgid "The 32bit pattern complementing sap_server."
-msgstr "32-bitowy wzorzec uzupełniający serwer SAP."
-
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-file_server-32bit/summary
-msgid "File Server"
-msgstr "Serwer plików"
-
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/description
-msgid ""
-"File services to host files so that they may be accessed or retrieved by "
-"other computers on the same network. This includes the FTP, SMB, and NFS "
-"protocols."
-msgstr ""
-"Usługi plikowe do przechowywania i udostępniania plików innym komputerom w "
-"sieci za pomocą protokołów FTP, SMB i NFS."
-
-#. Module-Server-Applications/patterns-server/patterns-server-file_server-32bit/description
-msgid "The 32bit pattern complementing file_server."
-msgstr "32-bitowy wzorzec uzupełniający serwer plików."
-
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server-32bit/summary
-msgid "Internet Gateway"
-msgstr "Bramka internetowa"
-
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/description
-msgid ""
-"Software to set up a proxy, firewall, and gateway server, including a "
-"virtual private network (VPN) gateway."
-msgstr ""
-"Oprogramowanie do konfiguracji serwera proxy, zapory sieciowej, serwera "
-"bramki i bramki wirtualnej sieci prywatnej (VPN)."
-
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server-32bit/description
-msgid "The 32bit pattern complementing gateway_server."
-msgstr "32-bitowy wzorzec uzupełniający serwer bramki internetowej."
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/summary
-msgid "KVM Host Server"
-msgstr "Serwer hostów KVM"
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/description
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/description
-msgid ""
-"Software to set up a server for configuring, managing, and monitoring "
-"virtual machines on a single physical machine."
-msgstr ""
-"Oprogramowanie do instalowania serwera służącego do konfigurowania i "
-"monitorowania maszyn wirtualnych oraz zarządzania nimi na jednej fizycznej "
-"maszynie."
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/summary
-msgid "KVM Virtualization Host and tools"
-msgstr "Host wirtualizacji KVM oraz narzędzia"
-
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/description
-msgid ""
-"This will provide all minimal system to get a running KVM Hypervisor and be "
-"able to configure, manage, and monitor virtual machines on a single physical "
-"machine."
-msgstr ""
-"Zapewnia kompletny minimalny system pozwalający uruchomić hyperwizora KVM, "
-"co z kolei umożliwi konfigurowanie i monitorowanie maszyn wirtualnych oraz "
-"zarządzanie nimi na jednej fizycznej maszynie."
-
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server-32bit/summary
-msgid "Web and LAMP Server"
-msgstr "Serwer sieci Web i LAMP"
-
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/description
-msgid ""
-"Software to set up a Web server that is able to serve static, dynamic, and "
-"interactive content (like a Web shop). This includes Apache HTTP Server, the "
-"database management system MySQL, and scripting languages such as PHP, "
-"Python, Ruby on Rails, or Perl."
-msgstr ""
-"Oprogramowanie serwera sieci Web, który może udostępniać treść statyczną, "
-"dynamiczną i interaktywną (np. sklep internetowy). Zawiera serwer HTTP "
-"Apache, system zarządzania bazą danych MySQL oraz języki skryptowe takie jak "
-"PHP, Python, Ruby on Rails, czy Perl."
-
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server-32bit/description
-msgid "The 32bit pattern complementing lamp_server."
-msgstr "32-bitowy wzorzec uzupełniający serwer LAMP."
-
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server-32bit/summary
-msgid "Mail and News Server"
-msgstr "Serwer poczty i grup dyskusyjnych"
-
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/description
-msgid ""
-"Software to set up electronic mail and message services to handle email, "
-"mailing, and news lists, including a virus scanner to scan messages at the "
-"server level."
-msgstr ""
-"Oprogramowanie do konfiguracji serwera usług pocztowych do obsługi poczty "
-"elektronicznej, list pocztowych i grup dyskusyjnych wraz ze skanerem "
-"antywirusowym do sprawdzania treści wiadomości na poziomie serwera."
-
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server-32bit/description
-msgid "The 32bit pattern complementing mail_server."
-msgstr "32-bitowy wzorzec uzupełniający serwer poczty."
-
-#. Module-Server-Applications/patterns-server/patterns-server-printing/summary
-#. Module-Server-Applications/patterns-server/patterns-server-printing-32bit/summary
-msgid "Print Server"
-msgstr "Serwer wydruku"
-
-#. Module-Server-Applications/patterns-server/patterns-server-printing/description
-msgid ""
-"This pattern provides all packages necessary for printing. It provides all "
-"needed packages for printing to a locally connected printer, printing using "
-"a remote print server and for setting up a print server."
-msgstr ""
-"Ten wzorzec zawiera wszystkie pakiety niezbędne do drukowania. Umożliwiają "
-"one drukowanie na lokalnie podłączonych drukarkach i przez zdalne serwery "
-"drukowania oraz konfigurowanie serwerów drukowania."
-
-#. Module-Server-Applications/patterns-server/patterns-server-printing-32bit/description
-msgid "The 32bit pattern complementing printing."
-msgstr "32-bitowy wzorzec uzupełniający funkcje drukowania."
-
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/summary
-msgid "Xen Virtual Machine Host Server"
-msgstr "Serwer maszyn wirtualnych Xen"
-
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/summary
-msgid "XEN Virtualization Host and tools"
-msgstr "Host wirtualizacji XEN i narzędzia"
-
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/description
-msgid ""
-"This will provide all minimal system to get a running XEN Hypervisor and be "
-"able to configure, manage, and monitor virtual machines on a single physical "
-"machine."
-msgstr ""
-"Zapewnia kompletny minimalny system pozwalający uruchomić hyperwizora XEN, "
-"co z kolei umożliwi konfigurowanie i monitorowanie maszyn wirtualnych oraz "
-"zarządzanie nimi na jednej fizycznej maszynie."
-
-#. Module-Server-Applications/patterns-wbem/patterns-wbem-WBEM-32bit/summary
-msgid "Web-Based Enterprise Management"
-msgstr "Zarządzanie przedsiębiorstwem oparte o sieć Web"
-
-#. Module-Server-Applications/patterns-wbem/patterns-wbem-WBEM-32bit/description
-msgid "The 32bit pattern complementing WBEM."
-msgstr ""
-"32-bitowy wzorzec uzupełniający funkcje zarządzania przedsiębiorstwem "
-"opartego o sieć Web."
-
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/summary
-msgid "YaST Installation Packages"
-msgstr "Pakiety instalacyjne YaST"
-
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/description
-msgid "YaST tools for installing your system."
-msgstr "Narzędzia YaST do instalacji systemu."
-
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
-msgid "GEO Clustering for High Availability"
-msgstr "Usługi klastrowe GEO dla wysokiej dostępności"
-
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/description
-msgid ""
-"This pattern provides tools for building multi-site clustering setups based "
-"on the SUSE Linux Enterprise High-Availability and its GEO extension."
-msgstr ""
-"Ten wzorzec zawiera narzędzia do tworzenia wieloośrodkowych konfiguracji "
-"klastrowania bazujących na wysokiej dostępności systemu SUSE Linux "
-"Enterprise oraz na jego rozszerzeniu GEO."
-
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/summary
-msgid "High Availability"
-msgstr "Wysoka dostępność"
-
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/description
-msgid ""
-"Provide tools to ensure a high degree of operational continuity and reduce "
-"the downtimes of your system."
-msgstr ""
-"Zestaw narzędzi zapewniających wysoki stopień ciągłości operacyjnej i "
-"ograniczających czas przestoju systemu."
-
-#. Product-WE/patterns-desktop/patterns-desktop-books/description
+#. SLE/patterns-desktop/patterns-desktop-books/description
 msgid "Help and Documentation, various books."
 msgstr "Pomoc oraz dokumentacja - różne podręczniki."
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/summary
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/summary
+#. SLE/patterns-desktop/patterns-desktop-imaging/summary
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/summary
 msgid "Graphics"
 msgstr "Grafika"
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/description
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/description
+#. SLE/patterns-desktop/patterns-desktop-imaging/description
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/description
 msgid "Handling of digital photos and graphics."
 msgstr "Obsługa zdjęć cyfrowych i grafiki."
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/category
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/category
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/category
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/category
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/category
-#. Product-WE/patterns-office/patterns-office-office/category
+#. SLE/patterns-desktop/patterns-desktop-imaging/category
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/category
+#. SLE/patterns-desktop/patterns-desktop-multimedia/category
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/category
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/category
+#. SLE/patterns-office/patterns-office-office/category
 msgid "Desktop Functions"
 msgstr "Funkcje stacji roboczej"
 
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/summary
+#. SLE/patterns-desktop/patterns-desktop-laptop/summary
 msgid "Laptop"
 msgstr "Komputer przenośny"
 
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/description
+#. SLE/patterns-desktop/patterns-desktop-laptop/description
 msgid "Tools designed specifically for laptop computers."
 msgstr "Narzędzia zaprojektowane do użytku z komputerami przenośnymi."
 
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/summary
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/summary
+#. SLE/patterns-desktop/patterns-desktop-multimedia/summary
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/summary
 msgid "Multimedia"
 msgstr "Multimedia"
 
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/description
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/description
+#. SLE/patterns-desktop/patterns-desktop-multimedia/description
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/description
 msgid ""
 "Multimedia players, sound editing tools, video and image manipulation "
 "applications."
 msgstr "Odtwarzacze multimedialne, edytory dźwiękowe, graficzne i wideo."
 
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/summary
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/summary
 msgid "Technical Writing"
 msgstr "Pisma techniczne"
 
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/description
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/description
 msgid "Authoring tools and editors for creating technical documentation."
 msgstr ""
 "Narzędzia dla autorów oraz edytory do tworzenia dokumentacji technicznej."
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment (Wayland)"
 msgstr "Środowisko graficzne GNOME (Wayland)"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/description
+#. SLE/patterns-gnome/patterns-gnome-gnome/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs components for GNOME to run with Wayland and "
@@ -1025,33 +1005,30 @@ msgstr ""
 "wzorzec służy do instalowania składników środowiska GNOME, które pozwolą na "
 "korzystanie z technologii Wayland oraz X11."
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/category
+#. SLE/patterns-gnome/patterns-gnome-gnome/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
 msgid "GNOME Desktop"
 msgstr "Środowisko GNOME"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
 msgstr "Grafika GNOME"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "Obsługa cyfrowych zdjęć i grafik"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/summary
-msgid "GNOME Laptop"
-msgstr "Komputer przenośny GNOME"
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
+msgid "GNOME Multimedia"
+msgstr "Multimedia GNOME"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/description
-msgid "GNOME Tools designed specifically for use with laptop computers."
-msgstr "Narzędzia zaprojektowane do użytku z komputerami przenośnymi."
-
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/summary
 msgid "GNOME Desktop Environment (X11)"
 msgstr "Środowisko graficzne GNOME (X11)"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs a full featured GNOME desktop environment, "
@@ -1063,13 +1040,32 @@ msgstr ""
 "środowiska graficznego GNOME zawierającego pakiet Office, klienta poczty e-"
 "mail, przeglądarkę internetową oraz menedżer plików."
 
-#. Product-WE/patterns-office/patterns-office-office/summary
+#. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
 msgstr "Oprogramowanie biurowe"
 
-#. Product-WE/patterns-office/patterns-office-office/description
+#. SLE/patterns-office/patterns-office-office/description
 msgid "Office software for your desktop environment including LibreOffice."
 msgstr "Oprogramowanie biurowe wraz z pakietem LibreOffice."
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
+msgid "System z HW crypto support"
+msgstr ""
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
+msgid ""
+"A selection of packages that installs the System z HW crypto stack on System "
+"z."
+msgstr ""
+
+#~ msgid "Packages needed to be able to develop HPC Apps"
+#~ msgstr "Pakiety niezbędne do programowania aplikacji HPC"
+
+#~ msgid "GNOME Laptop"
+#~ msgstr "Komputer przenośny GNOME"
+
+#~ msgid "GNOME Tools designed specifically for use with laptop computers."
+#~ msgstr "Narzędzia zaprojektowane do użytku z komputerami przenośnymi."
 
 #~ msgid "Console Tools"
 #~ msgstr "Narzędzia konsolowe"
@@ -1204,9 +1200,6 @@ msgstr "Oprogramowanie biurowe wraz z pakietem LibreOffice."
 #~ msgid "GNOME Internet Applications"
 #~ msgstr "Programy internetowe dla środowiska GNOME"
 
-#~ msgid "GNOME Multimedia"
-#~ msgstr "Multimedia GNOME"
-
 #~ msgid "GNOME Office"
 #~ msgstr "Biuro GNOME"
 
@@ -1224,11 +1217,6 @@ msgstr "Oprogramowanie biurowe wraz z pakietem LibreOffice."
 
 #~ msgid "Package Management - Graphical Tools"
 #~ msgstr "Zarządzanie pakietami - narzędzia graficzne"
-
-#, fuzzy
-#~| msgid "KDE development packages"
-#~ msgid "HPC Development Packages"
-#~ msgstr "Pakiety dla programistów KDE"
 
 #~ msgid "KDE Development"
 #~ msgstr "Programowanie KDE"

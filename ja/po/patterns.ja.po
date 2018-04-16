@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-06 13:24+0000\n"
+"POT-Creation-Date: 2018-04-16 13:01+0000\n"
 "PO-Revision-Date: 2018-04-09 23:01+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
-"/patterns-sle-15/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
+"patterns-sle-15/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,634 +14,150 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
 
-#. Installer/patterns-base/patterns-base-base/summary
-#. Installer/patterns-base/patterns-base-minimal_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-base/summary
-#. Module-Basesystem/patterns-base/patterns-base-base-32bit/summary
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/summary
-msgid "Base System"
-msgstr "基本システム"
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
+msgid "GEO Clustering for High Availability"
+msgstr "高可用性向け GEO クラスタリング"
 
-#. Installer/patterns-base/patterns-base-base/description
-#. Module-Basesystem/patterns-base/patterns-base-base/description
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/description
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/description
 msgid ""
-"This is the base runtime system.  It contains only a minimal multiuser "
-"booting system. For running on real hardware, you need to add additional "
-"packages and pattern to make this pattern useful on its own."
+"This pattern provides tools for building multi-site clustering setups based "
+"on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
-"これは基本的なランタイムシステムで、マルチユーザ環境を起動するのに最小限の"
-"パッケージのみを含んでいます。実際のハードウエア上で動作させる場合は、追加の"
-"パッケージとパターンをインストールして、使いやすくしておくのがよいでしょう。"
+"このパターンは、 SUSE Linux Enterprise High-Availability と GEO 拡張をベース"
+"にした、マルチサイト型のクラスタ設定を構築するためのツールをインストールしま"
+"す。"
 
-#. Installer/patterns-base/patterns-base-base/category
-#. Installer/patterns-base/patterns-base-minimal_base/category
-#. Module-Basesystem/patterns-base/patterns-base-32bit/category
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/category
-#. Module-Basesystem/patterns-base/patterns-base-base/category
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/category
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/category
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/category
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/category
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/category
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/category
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/category
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/category
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/category
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/category
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/category
-msgid "Base Technologies"
-msgstr "基本技術"
-
-#. Installer/patterns-base/patterns-base-minimal_base/description
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base/description
-msgid ""
-"This is the minimal SLE runtime system. It is really a minimal system, you "
-"can login and a shell will be started, that's all. It is intended as base "
-"for Appliances."
-msgstr ""
-"これは SLE の最小限ランタイムシステムです。ログインしてシェルを起動するまでの仕組みだけが用意されています。主にアプライアンスのベースとなる目的で作ら"
-"れているものです。"
-
-#. Installer/patterns-base/summary
-msgid "Patterns for Installation (base patterns)"
-msgstr "インストール用パターン (基本パターン)"
-
-#. Installer/patterns-base/description
-msgid ""
-"This is an internal package that is used to create the patterns as part of "
-"the installation source setup.  Installation of this package does not make "
-"sense.\n"
-"\n"
-"This particular package contains all the base / core patterns (and those "
-"that don't fit well anywhere else)."
-msgstr ""
-"これは、インストールソースの設定の一部としてパターンを作成する際に使用する内部パッケージです。このパッケージは何も意味を持ちません。\n"
-"\n"
-"このパッケージには、全ての基本および中枢パターン (および、それ以外のどこにも適合しないもの) が含まれています。"
-
-#. Module-Basesystem/patterns-base/patterns-base-32bit/summary
-msgid "32-Bit Runtime Environment"
-msgstr "32 ビットランタイム環境"
-
-#. Module-Basesystem/patterns-base/patterns-base-32bit/description
-msgid ""
-"This will install the 32-bit variant of all selected patterns. This allows "
-"to execute 32-bit software."
-msgstr ""
-"このパターンは、選択したパターンの 32 ビット版をインストールします。これによ"
-"り、 32 ビット版のソフトウエアを動作させることができるようになります。"
-
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/summary
-#. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/summary
-msgid "AppArmor"
-msgstr "AppArmor"
-
-#. Module-Basesystem/patterns-base/patterns-base-apparmor/description
-msgid ""
-"AppArmor is an application security framework that provides mandatory access "
-"control for programs. It protects from exploitation of software flaws and "
-"compromised systems. It offers an advanced tool set that automates the "
-"development of per-program application security without requiring additional "
-"knowledge."
-msgstr ""
-"AppArmor は、プログラムに対して強制アクセス制御機能を提供するアプリケーション"
-"セキュリティフレームワークです。ソフトウエアの欠陥から発生しうる不正なアクセ"
-"スを防止することができます。また、詳しい知識無しにプログラムごとのアプリケー"
-"ションセキュリティを自動的に開発することのできる、高度なツール集も用意されて"
-"います。"
-
-#. Module-Basesystem/patterns-base/patterns-base-apparmor-32bit/description
-msgid "The 32bit pattern complementing apparmor."
-msgstr "apparmor パターンを補完する 32 ビットパターンです。"
-
-#. Module-Basesystem/patterns-base/patterns-base-base-32bit/description
-msgid "The 32bit pattern complementing base."
-msgstr "base パターンを補完する 32 ビットパターンです。"
-
-#. Module-Basesystem/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
-msgstr "基本システム (base に対する別名のパターン)"
-
-#. Module-Basesystem/patterns-base/patterns-base-documentation/summary
-#. Module-Basesystem/patterns-base/patterns-base-documentation/description
-msgid "Help and Support Documentation"
-msgstr "ヘルプとサポート文書"
-
-#. Module-Basesystem/patterns-base/patterns-base-documentation/category
-#. Product-WE/patterns-desktop/patterns-desktop-books/summary
-#. Product-WE/patterns-desktop/patterns-desktop-books/category
-msgid "Documentation"
-msgstr "ドキュメンテーション"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/summary
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/summary
-msgid "Enhanced Base System"
-msgstr "拡張基本システム"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base/description
-msgid ""
-"This is the enhanced base runtime system with lots of convenience packages."
-msgstr "これは各種の便利なパッケージを含む、拡張基本ランタイムシステムです。"
-
-#. Module-Basesystem/patterns-base/patterns-base-enhanced_base-32bit/description
-msgid "The 32bit pattern complementing enhanced_base."
-msgstr "enhanced_base パターンを補完する 32 ビットパターンです。"
-
-#. Module-Basesystem/patterns-base/patterns-base-minimal_base-32bit/description
-msgid "The 32bit pattern complementing minimal_base."
-msgstr "minimal_base パターンを補完する 32 ビットパターンです。"
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/summary
-#. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/summary
-msgid "Software Management"
-msgstr "ソフトウエア管理"
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management/description
-msgid ""
-"This pattern provides a graphical application and a command line tool for "
-"keeping your system up to date."
-msgstr ""
-"このパターンは、お使いのシステムを最新の状態に保つためのグラフィカルアプリ"
-"ケーションおよびコマンドラインツールを提供しています。"
-
-#. Module-Basesystem/patterns-base/patterns-base-sw_management-32bit/description
-msgid "The 32bit pattern complementing sw_management."
-msgstr "sw_management パターンを補完する 32 ビットパターンです。"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11-32bit/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/summary
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/summary
-msgid "X Window System"
-msgstr "X Window System"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11/description
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/description
-msgid ""
-"The X Window System provides the only standard platform-independent "
-"networked graphical window system bridging the heterogeneous platforms in "
-"today's enterprise: from network servers to desktops, thin clients, laptops, "
-"and handhelds, independent of operating system and hardware."
-msgstr ""
-"X Window System はプラットフォームに依存しない標準型のネットワークグラフィカ"
-"ルウインドウシステムを提供するもので、現代の企業内環境ではよくある異種混合型"
-"ネットワークに対応しています。ネットワークサーバからデスクトップ、シンクライ"
-"アントやラップトップ、ハンドヘルドなど、オペレーティングシステムやハードウエ"
-"アに依存せずに利用することができます。"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11/category
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced/category
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/category
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/category
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "グラフィカル環境"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11-32bit/description
-msgid "The 32bit pattern complementing x11."
-msgstr "x11 パターンを補完する 32 ビットパターンです。"
-
-#. Module-Basesystem/patterns-base/patterns-base-x11_enhanced-32bit/description
-msgid "The 32bit pattern complementing x11_enhanced."
-msgstr "x11_enhanced パターンを補完する 32 ビットパターンです。"
-
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/summary
-msgid "Fonts"
-msgstr "フォント"
-
-#. Module-Basesystem/patterns-fonts/patterns-fonts-fonts/description
-msgid "Base fonts and font configuration."
-msgstr "基本フォントとフォント設定です。"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/summary
-msgid "YaST User Interfaces"
-msgstr "YaST ユーザインターフェイス"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-x11_yast/description
-msgid "Graphical YaST user interfaces for minimal X desktop."
-msgstr "最小 X デスクトップ向けグラフィカル YaST ユーザインターフェイスです。"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/summary
-msgid "YaST System Administration"
-msgstr "YaST システム管理"
-
-#. Module-Basesystem/patterns-yast/patterns-yast-yast2_basis/description
-msgid "YaST tools for basic system administration."
-msgstr "基本的なシステム管理を行なうための YaST ツール集です。"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/summary
-msgid "GNOME Desktop Environment (Basic)"
-msgstr "GNOME デスクトップ環境 (基本)"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basic/description
-msgid ""
-"The GNOME desktop environment is an intuitive and attractive desktop for "
-"users. This pattern installs GNOME desktop environment with only essential "
-"graphical applications installed (File Manager, Web Browser)."
-msgstr ""
-"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境です。このパターンは、主要なグラフィカルアプリケーション "
-"(ファイルマネージャ／Web ブラウザ) のみを利用する GNOME デスクトップ環境をインストールします。"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/summary
-msgid "GNOME Base System"
-msgstr "GNOME 基本システム"
-
-#. Module-Desktop-Applications/patterns-gnome/patterns-gnome-gnome_basis/description
-msgid "Base packages for the GNOME desktop environment."
-msgstr "GNOME デスクトップ環境向け基本パッケージです。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/summary
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
-msgid "Base Development"
-msgstr "基本的な開発"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr "アプリケーションのコンパイルとリンクに最小限必要なツール集です。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis/category
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "開発"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
-msgid "The 32bit pattern complementing devel_basis."
-msgstr "devel_basis パターンを補完する 32 ビットパターンです。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/summary
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
-msgid "Linux Kernel Development"
-msgstr "Linux カーネル開発"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel/description
-msgid "Tools for Linux kernel development."
-msgstr "Linux カーネル開発のためのツールです。"
-
-#. Module-Development-Tools/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
-msgid "The 32bit pattern complementing devel_kernel."
-msgstr "devel_kernel パターンを補完する 32 ビットパターンです。"
-
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/summary
-msgid "YaST Development"
-msgstr "YaST 開発"
-
-#. Module-Development-Tools/patterns-yast/patterns-yast-devel_yast/description
-msgid ""
-"Tools and libraries for developing YaST modules, the setup and configuration "
-"tool for openSUSE."
-msgstr ""
-"openSUSE におけるセットアップ兼設定ツールである YaST の、モジュールを開発する"
-"ためのツールとライブラリです。"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/summary
-msgid "HPC compute node"
-msgstr "HPC 計算ノード"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/description
-msgid ""
-"A compute node has a minmal software image and mainly runs simultion "
-"programs. Services on this node should be reduced to a bare minimum and the "
-"node *must* be installed in a automatic manner. A basset of numerical "
-"libraries should also be installed."
-msgstr ""
-"計算ノードとは最小限のパッケージのみがインストールされる環境で、主にシミュレーションプログラムを動作させるために使用するものです。このシステムで動作するサ"
-"ービスは最小限のものに限られるほか、ノードは自動的に管理されるものでなければなりません。数値処理関連のライブラリについても、インストールが行なわれます。"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-compute_node/category
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/category
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/category
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/category
-#. Module-Server-Applications/patterns-server/patterns-server-printing/category
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/category
-msgid "Server Functions"
-msgstr "サーバ機能"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/summary
-msgid "Packages needed to be able to develop HPC Apps"
-msgstr "HPC アプリを開発するのに必要なパッケージ"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-development_node/description
-msgid ""
-"This package provides all the relevant packages for developing HPC "
-"applications. It depends on the hpc-compute node and adds additionally the "
-"compilers and includes also the relevant managment packages."
-msgstr ""
-"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが含まれています。 hpc-compute "
-"ノードに依存しているほか、コンパイラや関連する管理パッケージなどが含まれています。"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/summary
-msgid "HPC modularized libraries"
-msgstr "HPC モジュール化ライブラリ"
-
-#. Module-HPC/patterns-hpc/patterns-hpc-libraries/description
-msgid ""
-"This package provides all the modularized libraries so that they can be used "
-"in a hpc environment. Especially these libariries allows you to install a "
-"mpi enabled libarary for different mpi libraries."
-msgstr ""
-"このパッケージには、全てのモジュール化されたライブラリが含まれていて、これらを HPC 環境で利用できる仕組みを備えています。特にこれらのライブラリは、 "
-"異なる mpi ライブラリをインストールすることができるようになります。"
-
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/summary
-msgid "Live Patching"
-msgstr "ライブパッチ処理"
-
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/description
-msgid "Provide tools and patches to fix kernel at runtime."
-msgstr "カーネルを動作中に修正するためのツールと修正が含まれています。"
-
-#. Module-Live-Patching/patterns-lp/patterns-lp-lp_sles/category
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/category
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/category
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/category
+#. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/category
+#. SLE/patterns-ha/patterns-ha-ha_sles/category
 msgid "Primary Functions"
 msgstr "主要機能"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
-msgid "Amazon Web Services - All"
-msgstr "Amazon Web サービス - 全て"
+#. SLE/patterns-ha/patterns-ha-ha_sles/summary
+msgid "High Availability"
+msgstr "高可用性"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
+#. SLE/patterns-ha/patterns-ha-ha_sles/description
 msgid ""
-"This pattern installs all Amazon Web Services command line interface tools, "
-"instance initialization packages and tools to communicate with the cloud "
-"framework from within a running instance. It is not recommended to install "
-"this pattern, but instead install one of the use-case specific patterns (e."
-"g. Amazon Web Services - Tools)."
+"Provide tools to ensure a high degree of operational continuity and reduce "
+"the downtimes of your system."
 msgstr ""
-"このパターンは、 Amazon Web サービスのコマンドラインインターフェイスツールのほか、インスタンス初期化パッケージとツールが含まれ、動作中のインス"
-"タンス内にあるクラウドフレームワークと通信することができます。このパターンのインストールは推奨されません。用途に応じた特定のパターン (例: "
-"Amazon Web サービス - ツールなど) をインストールしてください。"
+"運用の継続性とシステムのダウンタイムの縮小の支援を目的としたツールをインス"
+"トールします。"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
-msgid "Amazon Web Services - Instance Initialization"
-msgstr "Amazon Web サービス - インスタンス初期化"
+#. SLE/patterns-hpc/patterns-hpc-compute_node/summary
+#, fuzzy
+#| msgid "HPC compute node"
+msgid "HPC Basic Compute Node"
+msgstr "HPC 計算ノード"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
+#. SLE/patterns-hpc/patterns-hpc-compute_node/description
+#, fuzzy
+#| msgid ""
+#| "A compute node has a minmal software image and mainly runs simultion "
+#| "programs. Services on this node should be reduced to a bare minimum and "
+#| "the node *must* be installed in a automatic manner. A basset of numerical "
+#| "libraries should also be installed."
 msgid ""
-"This pattern installs the Amazon Web Services instance initialization "
-"packages which support the provisioning and running of instances in the "
-"cloud framework (e.g. cloud-init)."
+"A compute node has a minimal software image and mainly runs simulation "
+"programs. Services on this node should be reduced to a bare minimum and the "
+"node *must* be installed in a automatic manner. The pattern HPC libraries "
+"should also be installed."
 msgstr ""
-"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実行を制御することができる、 Amazon Web サービス初期化パッケージ "
-"(例: cloud-init) をインストールします。"
+"計算ノードとは最小限のパッケージのみがインストールされる環境で、主にシミュ"
+"レーションプログラムを動作させるために使用するものです。このシステムで動作す"
+"るサービスは最小限のものに限られるほか、ノードは自動的に管理されるものでなけ"
+"ればなりません。数値処理関連のライブラリについても、インストールが行なわれま"
+"す。"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
-msgid "Amazon Web Services - Instance Tools"
-msgstr "Amazon Web サービス - インスタンスツール"
+#. SLE/patterns-hpc/patterns-hpc-compute_node/category
+#. SLE/patterns-hpc/patterns-hpc-libraries/category
+msgid "Server Functions"
+msgstr "サーバ機能"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
+#. SLE/patterns-hpc/patterns-hpc-development_node/summary
+#, fuzzy
+#| msgid "KDE development packages."
+msgid "HPC Development Packages"
+msgstr "KDE 開発用パッケージ群です。"
+
+#. SLE/patterns-hpc/patterns-hpc-development_node/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the hpc-compute node and adds additionally "
+#| "the compilers and includes also the relevant managment packages."
 msgid ""
-"This pattern install the Amazon Web Services instance specific tools which "
-"are used to collect instance metadata (e.g. python-ec2metadata)."
+"This package provides all the relevant packages for developing HPC "
+"applications. It depends on the HPC libraries and adds additionally the "
+"compilers and includes also the relevant management packages."
 msgstr ""
-"このパターンは、インスタンスのメタデータを収集する際に使用する、 Amazon Web サービスインスタンス固有のツール (例: python-"
-"ec2metadata) をインストールします。"
+"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが"
+"含まれています。 hpc-compute ノードに依存しているほか、コンパイラや関連する管"
+"理パッケージなどが含まれています。"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
-msgid "Amazon Web Services - Tools"
-msgstr "Amazon Web サービス - ツール"
+#. SLE/patterns-hpc/patterns-hpc-development_node/category
+msgid "Development"
+msgstr "開発"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
+#. SLE/patterns-hpc/patterns-hpc-libraries/summary
+#, fuzzy
+#| msgid "HPC modularized libraries"
+msgid "HPC modularized Libraries"
+msgstr "HPC モジュール化ライブラリ"
+
+#. SLE/patterns-hpc/patterns-hpc-libraries/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in a hpc environment. Especially these libariries allows you to "
+#| "install a mpi enabled libarary for different mpi libraries."
 msgid ""
-"This pattern installs the Amazon Web Services command line interface tools "
-"to communicate with the cloud framework (e.g. aws-cli)."
+"This package provides all the modularized libraries so that they can be used "
+"in an HPC environment. Especially these libraries allows you to install "
+"several MPI flavors in parallel. In order to use this libraries you have "
+"them to load first via the module command."
 msgstr ""
-"このパターンは、クラウドフレームワークと通信するための Amazon Web サービスコマンドラインインターフェイスツール (例: aws-cli) "
-"をインストールします。"
+"このパッケージには、全てのモジュール化されたライブラリが含まれていて、これら"
+"を HPC 環境で利用できる仕組みを備えています。特にこれらのライブラリは、 異な"
+"る mpi ライブラリをインストールすることができるようになります。"
 
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
-msgid "Google Cloud Platform - All"
-msgstr "Google Cloud プラットフォーム - 全て"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
-msgid ""
-"This pattern installs all Google Cloud Platform command line interface "
-"tools, instance initialization packages and tools to communicate with the "
-"cloud framework from within a running instance. It is not recommended to "
-"install this pattern, but instead install one of the use-case specific "
-"patterns (e.g. Google Cloud Platform - Tools)."
-msgstr ""
-"このパターンは、 Google Cloud プラットフォームのコマンドラインインターフェイスツールのほか、インスタンス初期化パッケージとツールが含まれ、動"
-"作中のインスタンス内にあるクラウドフレームワークと通信することができます。このパターンのインストールは推奨されません。用途に応じた特定のパターン (例: "
-"Google Cloud プラットフォーム - ツールなど) をインストールしてください。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
-msgid "Google Cloud Platform - Instance Initialization"
-msgstr "Google Cloud プラットフォーム - インスタンス初期化"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
-msgid ""
-"This pattern installs the Google Cloud Platform instance initialization "
-"packages which support the provisioning and running of instances in the "
-"cloud framework (e.g. google-daemon)."
-msgstr ""
-"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実行を制御することができる、 Google Cloud "
-"プラットフォーム初期化パッケージ (例: google-daemon) をインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
-msgid "Google Cloud Platform - Instance Tools"
-msgstr "Google Cloud プラットフォーム - インスタンスツール"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
-msgid ""
-"This pattern install the Google Cloud Platform instance specific tools which "
-"are used to collect instance metadata (e.g. python-gcemetadata)."
-msgstr ""
-"このパターンは、インスタンスのメタデータを収集する際に使用する、 Google Cloud プラットフォームインスタンス固有のツール (例: "
-"python-gcemetadata) をインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
-msgid "Google Cloud Platform - Tools"
-msgstr "Google Cloud プラットフォーム - ツール"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
-msgid ""
-"This pattern installs the Google Cloud Platform command line interface tools "
-"to communicate with the cloud framework (e.g. google-cloud-sdk)."
-msgstr ""
-"このパターンは、クラウドフレームワークと通信するための Google Cloud プラットフォームコマンドラインインターフェイスツール (例: "
-"google-cloud-sdk) をインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
-msgid "Microsoft Azure - All"
-msgstr "Microsoft Azure - 全て"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
-msgid ""
-"This pattern installs all Microsoft Azure command line interface tools, "
-"instance initialization packages and tools to communicate with the cloud "
-"framework from within a running instance. It is not recommended to install "
-"this pattern, but instead install one of the use-case specific patterns (e."
-"g. Microsoft Azure - Tools)."
-msgstr ""
-"このパターンは、Microsoft Azure のコマンドラインインターフェイスツールのほか、インスタンス初期化パッケージとツールが含まれ、動作中のインス"
-"タンス内にあるクラウドフレームワークと通信することができます。このパターンのインストールは推奨されません。用途に応じた特定のパターン (例: "
-"Microsoft Azure - ツールなど) をインストールしてください。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
-msgid "Microsoft Azure - Instance Initialization"
-msgstr "Microsoft Azure - インスタンス初期化"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
-msgid ""
-"This pattern installs the Microsoft Azure instance initialization packages "
-"which support the provisioning and running of instances in the cloud "
-"framework (e.g. python-azure-agent)."
-msgstr ""
-"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実行を制御することができる、 Microsoft Azure 初期化パッケージ "
-"(例: python-azure-agent) をインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
-msgid "Microsoft Azure - Instance Tools"
-msgstr "Microsoft Azure - インスタンスツール"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
-msgid ""
-"This pattern install the Microsoft Azure instance specific tools which are "
-"used to collect instance metadata (e.g. azuremetadata)."
-msgstr ""
-"このパターンは、インスタンスのメタデータを収集する際に使用する、 Microsoft Azure インスタンス固有のツール (例: "
-"azuremetadata) をインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
-msgid "Microsoft Azure - Tools"
-msgstr "Microsoft Azure - ツール"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
-msgid ""
-"This pattern installs the Microsoft Azure command line interface tools to "
-"communicate with the cloud framework (e.g. python-azurectl)."
-msgstr ""
-"このパターンは、クラウドフレームワークと通信するための Microsoft Azure コマンドラインインターフェイスツール (例: python-"
-"azurectl) をインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
-msgid "OpenStack - All"
-msgstr "OpenStack - 全て"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
-msgid ""
-"This pattern installs all OpenStack command line interface tools, instance "
-"initialization packages and tools to communicate with the cloud framework "
-"from within a running instance. It is not recommended to install this "
-"pattern, but instead install one of the use-case specific patterns (e.g. "
-"OpenStack - Tools)."
-msgstr ""
-"このパターンは、 OpenStack のコマンドラインインターフェイスツールのほか、インスタンス初期化パッケージとツールが含まれ、動作中のインスタンス内に"
-"あるクラウドフレームワークと通信することができます。このパターンのインストールは推奨されません。用途に応じた特定のパターン (例: OpenStack -"
-" ツールなど) をインストールしてください。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
-msgid "OpenStack - Instance Initialization"
-msgstr "OpenStack - インスタンス初期化"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
-msgid ""
-"This pattern installs the OpenStack instance initialization packages which "
-"support the provisioning and running of instances in the cloud framework (e."
-"g. cloud-init)."
-msgstr ""
-"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実行を制御することができる、 OpenStack 初期化パッケージ (例: "
-"cloud-init) をインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
-msgid "OpenStack - Instance Tools"
-msgstr "OpenStack - インスタンスツール"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
-msgid ""
-"This pattern install the OpenStack instance specific tools which are used to "
-"collect instance metadata."
-msgstr "このパターンは、インスタンスのメタデータを収集する際に使用する、 OpenStack インスタンス固有のツールをインストールします。"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
-msgid "OpenStack - Tools"
-msgstr "OpenStack - ツール"
-
-#. Module-Public-Cloud/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
-msgid ""
-"This pattern installs the OpenStack command line interface tools to "
-"communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
-msgstr ""
-"このパターンは、クラウドフレームワークと通信するための OpenStack コマンドラインインターフェイスツール (例: python-"
-"susepubliccloudinfo) をインストールします。"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/summary
-msgid "SAP BusinessOne Server Base"
-msgstr "SAP BusinessOne サーバベース"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-b1/description
-msgid "Set up the server for installing SAP BusinessOne systems."
-msgstr "SAP BusinessOne システムをインストールするためのサーバを構築します。"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/summary
-msgid "SAP HANA Server Base"
-msgstr "SAP HANA サーバベース"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-hana/description
-msgid "Set up the server for installing SAP HANA systems."
-msgstr "SAP HANA システムをインストールするためのサーバを構築します。"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/summary
-msgid "SAP NetWeaver Server Base"
-msgstr "SAP NetWeaver サーバベース"
-
-#. Module-SAP-Applications/patterns-sap/patterns-sap-nw/description
-msgid "Set up the server for installing SAP NetWeaver systems."
-msgstr "SAP NetWeaver システムをインストールするためのサーバを構築します。"
-
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/summary
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed-32bit/summary
+#. SLE/patterns-ofed/patterns-ofed-ofed/summary
+#. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
 msgid "Infiniband (OFED)"
 msgstr "Infiniband (OFED)"
 
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed/description
+#. SLE/patterns-ofed/patterns-ofed-ofed/description
 msgid ""
 "This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
 "base packages. The base pattern includes the packages you need to get your "
 "Infiniband adapter operational, that is IB kernel modules and basic user "
 "level libraries."
 msgstr ""
-"このパターンは OpenFabrics Enterprise Distribution (OFED) "
-"ソフトウエアの基本パッケージをインストールします。この基本パターンには、 Infiniband アダプタを操作するために必要なパッケージのほか、 IB "
-"カーネルモジュールと基本的なユーザレベルライブラリが含まれています。"
+"このパターンは OpenFabrics Enterprise Distribution (OFED) ソフトウエアの基本"
+"パッケージをインストールします。この基本パターンには、 Infiniband アダプタを"
+"操作するために必要なパッケージのほか、 IB カーネルモジュールと基本的なユーザ"
+"レベルライブラリが含まれています。"
 
-#. Module-Server-Applications/patterns-ofed/patterns-ofed-ofed-32bit/description
+#. SLE/patterns-ofed/patterns-ofed-ofed-32bit/description
 msgid "The 32bit pattern complementing ofed."
 msgstr "ofed パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-rpm-macros/summary
+#. SLE/patterns-rpm-macros/summary
 msgid "RPM macros for building of patterns modules"
 msgstr "パターンモジュールを構築するための RPM マクロ"
 
-#. Module-Server-Applications/patterns-rpm-macros/description
+#. SLE/patterns-rpm-macros/description
 msgid "This package contains SUSE RPM macros to aid creating patterns."
 msgstr ""
 "このパッケージには、パターンを構築するための SUSE RPM マクロが含まれていま"
 "す。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
+#. SLE/patterns-server/patterns-server-dhcp_dns_server/summary
+#. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
 msgid "DHCP and DNS Server"
 msgstr "DHCP および DNS サーバ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server/description
+#. SLE/patterns-server/patterns-server-dhcp_dns_server/description
 msgid ""
 "Software to set up a server for the Dynamic Host Configuration Protocol "
 "(DHCP) and the Domain Name System (DNS) services. DHCP provides "
@@ -655,16 +171,16 @@ msgstr ""
 "にします。また、 DNS はドメイン名に関連した情報 (特に IP アドレス) を配信する"
 "際に使用する仕組みです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-dhcp_dns_server-32bit/description
+#. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/description
 msgid "The 32bit pattern complementing dhcp_dns_server."
 msgstr "dhcp_dns_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server-32bit/summary
+#. SLE/patterns-server/patterns-server-directory_server/summary
+#. SLE/patterns-server/patterns-server-directory_server-32bit/summary
 msgid "Directory Server (LDAP)"
 msgstr "ディレクトリサーバ (LDAP)"
 
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server/description
+#. SLE/patterns-server/patterns-server-directory_server/description
 msgid ""
 "Software to set up a directory server with OpenLDAP. The Lightweight "
 "Directory Access Protocol (LDAP) is used to access online directory services."
@@ -673,16 +189,16 @@ msgstr ""
 "ディレクトリアクセスプロトコル (LDAP) は、オンラインのディレクトリサービスに"
 "アクセスする際に使用します。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-directory_server-32bit/description
+#. SLE/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
 msgstr "directory_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
 msgid "FIPS 140-2 specific packages"
 msgstr "FIPS 140-2 固有パッケージ"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips/description
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
 msgid ""
 "This pattern installs the FIPS 140-2 specific packages that complete the "
 "various cryptographic modules in use. It is required if you want to run the "
@@ -694,50 +210,52 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
-"このパターンは、使用されている様々な暗号化モジュールを補完する、 FIPS 140-2 固有のパッケージをインストールします。 FIPS "
-"準拠に設定するには、お使いのマシンを \"fips=1\" で起動する必要があります。\n"
+"このパターンは、使用されている様々な暗号化モジュールを補完する、 FIPS 140-2 "
+"固有のパッケージをインストールします。 FIPS 準拠に設定するには、お使いのマシ"
+"ンを \"fips=1\" で起動する必要があります。\n"
 "\n"
-"なお、このパターンは FIPS 140-2 準拠の操作を有効化するだけのパターンであり、お使いのシステムを FIPS 140-2 "
-"認証のシステムにするわけではありません。\n"
+"なお、このパターンは FIPS 140-2 準拠の操作を有効化するだけのパターンであり、"
+"お使いのシステムを FIPS 140-2 認証のシステムにするわけではありません。\n"
 "\n"
-"FIPS 140-2 の認証状況について、詳しくは SUSE 公式のアナウンスをお読みください。"
+"FIPS 140-2 の認証状況について、詳しくは SUSE 公式のアナウンスをお読みくださ"
+"い。"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
 msgstr "fips パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
 msgid "Oracle Server Base"
 msgstr "Oracle Server ベース"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
 msgid "Set up the server for installing Oracle databases."
 msgstr "Oracle データベースをインストールするためのサーバを構築します。"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
 msgid "The 32bit pattern complementing oracle_server."
 msgstr "oracle_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
 msgid "SAP Application Server Base"
 msgstr "SAP アプリケーションサーバベース"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
 msgid "Set up the server for installing SAP systems."
 msgstr "SAP システムをインストールするためのサーバを構築します。"
 
-#. Module-Server-Applications/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
 msgid "The 32bit pattern complementing sap_server."
 msgstr "sap_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-file_server-32bit/summary
+#. SLE/patterns-server/patterns-server-file_server/summary
+#. SLE/patterns-server/patterns-server-file_server-32bit/summary
 msgid "File Server"
 msgstr "ファイルサーバ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-file_server/description
+#. SLE/patterns-server/patterns-server-file_server/description
 msgid ""
 "File services to host files so that they may be accessed or retrieved by "
 "other computers on the same network. This includes the FTP, SMB, and NFS "
@@ -747,16 +265,16 @@ msgstr ""
 "のコンピュータから、ファイルをアクセスしたり取得したりすることができるように"
 "なります。プロトコルとしては、 FTP, SMB, NFS が含まれます。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-file_server-32bit/description
+#. SLE/patterns-server/patterns-server-file_server-32bit/description
 msgid "The 32bit pattern complementing file_server."
 msgstr "file_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server-32bit/summary
+#. SLE/patterns-server/patterns-server-gateway_server/summary
+#. SLE/patterns-server/patterns-server-gateway_server-32bit/summary
 msgid "Internet Gateway"
 msgstr "インターネットゲートウエイ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server/description
+#. SLE/patterns-server/patterns-server-gateway_server/description
 msgid ""
 "Software to set up a proxy, firewall, and gateway server, including a "
 "virtual private network (VPN) gateway."
@@ -764,16 +282,16 @@ msgstr ""
 "仮想プライベートネットワーク (VPN) ゲートウエイを含む、プロキシ／ファイアウ"
 "オール／ゲートウエイサーバを構築するためのソフトウエアです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-gateway_server-32bit/description
+#. SLE/patterns-server/patterns-server-gateway_server-32bit/description
 msgid "The 32bit pattern complementing gateway_server."
 msgstr "gateway_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/summary
+#. SLE/patterns-server/patterns-server-kvm_server/summary
 msgid "KVM Host Server"
 msgstr "KVM ホストサーバ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_server/description
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/description
+#. SLE/patterns-server/patterns-server-kvm_server/description
+#. SLE/patterns-server/patterns-server-xen_server/description
 msgid ""
 "Software to set up a server for configuring, managing, and monitoring "
 "virtual machines on a single physical machine."
@@ -781,11 +299,11 @@ msgstr ""
 "単一の物理マシン内に複数の仮想マシンを設定し、管理し、監視することのできる"
 "サーバを設定するためのソフトウエアです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/summary
+#. SLE/patterns-server/patterns-server-kvm_tools/summary
 msgid "KVM Virtualization Host and tools"
 msgstr "KVM 仮想化ホストとツール"
 
-#. Module-Server-Applications/patterns-server/patterns-server-kvm_tools/description
+#. SLE/patterns-server/patterns-server-kvm_tools/description
 msgid ""
 "This will provide all minimal system to get a running KVM Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
@@ -795,12 +313,18 @@ msgstr ""
 "するほか、単一の物理マシンで複数の仮想マシンを設定し、管理し、監視することの"
 "できるサーバを設定します。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server-32bit/summary
+#. SLE/patterns-server/patterns-server-kvm_tools/category
+#. SLE/patterns-server/patterns-server-xen_tools/category
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/category
+msgid "Base Technologies"
+msgstr "基本技術"
+
+#. SLE/patterns-server/patterns-server-lamp_server/summary
+#. SLE/patterns-server/patterns-server-lamp_server-32bit/summary
 msgid "Web and LAMP Server"
 msgstr "Web および LAMP サーバ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server/description
+#. SLE/patterns-server/patterns-server-lamp_server/description
 msgid ""
 "Software to set up a Web server that is able to serve static, dynamic, and "
 "interactive content (like a Web shop). This includes Apache HTTP Server, the "
@@ -812,16 +336,16 @@ msgstr ""
 "か、 MySQL データベース管理システムや PHP, Python, Ruby on Rails, Perl などの"
 "スクリプト言語も含まれています。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-lamp_server-32bit/description
+#. SLE/patterns-server/patterns-server-lamp_server-32bit/description
 msgid "The 32bit pattern complementing lamp_server."
 msgstr "lamp_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/summary
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server-32bit/summary
+#. SLE/patterns-server/patterns-server-mail_server/summary
+#. SLE/patterns-server/patterns-server-mail_server-32bit/summary
 msgid "Mail and News Server"
 msgstr "メールとニュースのサーバ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server/description
+#. SLE/patterns-server/patterns-server-mail_server/description
 msgid ""
 "Software to set up electronic mail and message services to handle email, "
 "mailing, and news lists, including a virus scanner to scan messages at the "
@@ -832,16 +356,16 @@ msgstr ""
 "でメッセージをチェックすることができる、ウイルススキャナなども含まれていま"
 "す。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-mail_server-32bit/description
+#. SLE/patterns-server/patterns-server-mail_server-32bit/description
 msgid "The 32bit pattern complementing mail_server."
 msgstr "mail_server パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-printing/summary
-#. Module-Server-Applications/patterns-server/patterns-server-printing-32bit/summary
+#. SLE/patterns-server/patterns-server-printing/summary
+#. SLE/patterns-server/patterns-server-printing-32bit/summary
 msgid "Print Server"
 msgstr "印刷サーバ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-printing/description
+#. SLE/patterns-server/patterns-server-printing/description
 msgid ""
 "This pattern provides all packages necessary for printing. It provides all "
 "needed packages for printing to a locally connected printer, printing using "
@@ -851,19 +375,19 @@ msgstr ""
 "ローカルに接続されたプリンタのほか、ネットワーク上離れた場所にあるプリンタで"
 "の印刷や、印刷サーバの設定なども行なうことができます。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-printing-32bit/description
+#. SLE/patterns-server/patterns-server-printing-32bit/description
 msgid "The 32bit pattern complementing printing."
 msgstr "printing パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-server/patterns-server-xen_server/summary
+#. SLE/patterns-server/patterns-server-xen_server/summary
 msgid "Xen Virtual Machine Host Server"
 msgstr "Xen 仮想マシンホストサーバ"
 
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/summary
+#. SLE/patterns-server/patterns-server-xen_tools/summary
 msgid "XEN Virtualization Host and tools"
 msgstr "XEN 仮想化ホストとツール"
 
-#. Module-Server-Applications/patterns-server/patterns-server-xen_tools/description
+#. SLE/patterns-server/patterns-server-xen_tools/description
 msgid ""
 "This will provide all minimal system to get a running XEN Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
@@ -873,82 +397,571 @@ msgstr ""
 "するほか、単一の物理マシンで複数の仮想マシンを設定し、管理し、監視することの"
 "できるサーバを設定します。"
 
-#. Module-Server-Applications/patterns-wbem/patterns-wbem-WBEM-32bit/summary
+#. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/summary
 msgid "Web-Based Enterprise Management"
 msgstr "Web ベースのエンタープライズ管理"
 
-#. Module-Server-Applications/patterns-wbem/patterns-wbem-WBEM-32bit/description
+#. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/description
 msgid "The 32bit pattern complementing WBEM."
 msgstr "WBEM パターンを補完する 32 ビットパターンです。"
 
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/summary
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/summary
 msgid "YaST Installation Packages"
 msgstr "YaST インストールパッケージ"
 
-#. Module-Server-Applications/patterns-yast/patterns-yast-yast2_install_wf/description
+#. SLE/patterns-yast/patterns-yast-yast2_install_wf/description
 msgid "YaST tools for installing your system."
 msgstr "システムをインストールするための YaST ツール集です。"
 
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
-msgid "GEO Clustering for High Availability"
-msgstr "高可用性向け GEO クラスタリング"
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
+msgid "Base Development"
+msgstr "基本的な開発"
 
-#. Product-HA/patterns-ha-geo/patterns-ha-geo-ha_geo/description
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
+msgid "The 32bit pattern complementing devel_basis."
+msgstr "devel_basis パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
+msgid "Linux Kernel Development"
+msgstr "Linux カーネル開発"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
+msgid "Tools for Linux kernel development."
+msgstr "Linux カーネル開発のためのツールです。"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
+msgid "The 32bit pattern complementing devel_kernel."
+msgstr "devel_kernel パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-yast/patterns-yast-devel_yast/summary
+msgid "YaST Development"
+msgstr "YaST 開発"
+
+#. SLE/patterns-yast/patterns-yast-devel_yast/description
 msgid ""
-"This pattern provides tools for building multi-site clustering setups based "
-"on the SUSE Linux Enterprise High-Availability and its GEO extension."
+"Tools and libraries for developing YaST modules, the setup and configuration "
+"tool for openSUSE."
 msgstr ""
-"このパターンは、 SUSE Linux Enterprise High-Availability と GEO "
-"拡張をベースにした、マルチサイト型のクラスタ設定を構築するためのツールをインストールします。"
+"openSUSE におけるセットアップ兼設定ツールである YaST の、モジュールを開発する"
+"ためのツールとライブラリです。"
 
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/summary
-msgid "High Availability"
-msgstr "高可用性"
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
+msgid "GNOME Desktop Environment (Basic)"
+msgstr "GNOME デスクトップ環境 (基本)"
 
-#. Product-HA/patterns-ha/patterns-ha-ha_sles/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/description
 msgid ""
-"Provide tools to ensure a high degree of operational continuity and reduce "
-"the downtimes of your system."
-msgstr "運用の継続性とシステムのダウンタイムの縮小の支援を目的としたツールをインストールします。"
+"The GNOME desktop environment is an intuitive and attractive desktop for "
+"users. This pattern installs GNOME desktop environment with only essential "
+"graphical applications installed (File Manager, Web Browser)."
+msgstr ""
+"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境で"
+"す。このパターンは、主要なグラフィカルアプリケーション (ファイルマネージャ／"
+"Web ブラウザ) のみを利用する GNOME デスクトップ環境をインストールします。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-books/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_basic/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/category
+msgid "Graphical Environments"
+msgstr "グラフィカル環境"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/summary
+msgid "GNOME Base System"
+msgstr "GNOME 基本システム"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_basis/description
+msgid "Base packages for the GNOME desktop environment."
+msgstr "GNOME デスクトップ環境向け基本パッケージです。"
+
+#. SLE/patterns-lp/patterns-lp-lp_sles/summary
+msgid "Live Patching"
+msgstr "ライブパッチ処理"
+
+#. SLE/patterns-lp/patterns-lp-lp_sles/description
+msgid "Provide tools and patches to fix kernel at runtime."
+msgstr "カーネルを動作中に修正するためのツールと修正が含まれています。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
+msgid "Amazon Web Services - All"
+msgstr "Amazon Web サービス - 全て"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
+msgid ""
+"This pattern installs all Amazon Web Services command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Amazon Web Services - Tools)."
+msgstr ""
+"このパターンは、 Amazon Web サービスのコマンドラインインターフェイスツールの"
+"ほか、インスタンス初期化パッケージとツールが含まれ、動作中のインスタンス内に"
+"あるクラウドフレームワークと通信することができます。このパターンのインストー"
+"ルは推奨されません。用途に応じた特定のパターン (例: Amazon Web サービス - "
+"ツールなど) をインストールしてください。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
+msgid "Amazon Web Services - Instance Initialization"
+msgstr "Amazon Web サービス - インスタンス初期化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
+msgid ""
+"This pattern installs the Amazon Web Services instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. cloud-init)."
+msgstr ""
+"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実"
+"行を制御することができる、 Amazon Web サービス初期化パッケージ (例: cloud-"
+"init) をインストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
+msgid "Amazon Web Services - Instance Tools"
+msgstr "Amazon Web サービス - インスタンスツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
+msgid ""
+"This pattern install the Amazon Web Services instance specific tools which "
+"are used to collect instance metadata (e.g. python-ec2metadata)."
+msgstr ""
+"このパターンは、インスタンスのメタデータを収集する際に使用する、 Amazon Web "
+"サービスインスタンス固有のツール (例: python-ec2metadata) をインストールしま"
+"す。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
+msgid "Amazon Web Services - Tools"
+msgstr "Amazon Web サービス - ツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
+msgid ""
+"This pattern installs the Amazon Web Services command line interface tools "
+"to communicate with the cloud framework (e.g. aws-cli)."
+msgstr ""
+"このパターンは、クラウドフレームワークと通信するための Amazon Web サービスコ"
+"マンドラインインターフェイスツール (例: aws-cli) をインストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
+msgid "Google Cloud Platform - All"
+msgstr "Google Cloud プラットフォーム - 全て"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
+msgid ""
+"This pattern installs all Google Cloud Platform command line interface "
+"tools, instance initialization packages and tools to communicate with the "
+"cloud framework from within a running instance. It is not recommended to "
+"install this pattern, but instead install one of the use-case specific "
+"patterns (e.g. Google Cloud Platform - Tools)."
+msgstr ""
+"このパターンは、 Google Cloud プラットフォームのコマンドラインインターフェイ"
+"スツールのほか、インスタンス初期化パッケージとツールが含まれ、動作中のインス"
+"タンス内にあるクラウドフレームワークと通信することができます。このパターンの"
+"インストールは推奨されません。用途に応じた特定のパターン (例: Google Cloud プ"
+"ラットフォーム - ツールなど) をインストールしてください。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
+msgid "Google Cloud Platform - Instance Initialization"
+msgstr "Google Cloud プラットフォーム - インスタンス初期化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
+msgid ""
+"This pattern installs the Google Cloud Platform instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. google-daemon)."
+msgstr ""
+"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実"
+"行を制御することができる、 Google Cloud プラットフォーム初期化パッケージ "
+"(例: google-daemon) をインストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
+msgid "Google Cloud Platform - Instance Tools"
+msgstr "Google Cloud プラットフォーム - インスタンスツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
+msgid ""
+"This pattern install the Google Cloud Platform instance specific tools which "
+"are used to collect instance metadata (e.g. python-gcemetadata)."
+msgstr ""
+"このパターンは、インスタンスのメタデータを収集する際に使用する、 Google "
+"Cloud プラットフォームインスタンス固有のツール (例: python-gcemetadata) をイ"
+"ンストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
+msgid "Google Cloud Platform - Tools"
+msgstr "Google Cloud プラットフォーム - ツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
+msgid ""
+"This pattern installs the Google Cloud Platform command line interface tools "
+"to communicate with the cloud framework (e.g. google-cloud-sdk)."
+msgstr ""
+"このパターンは、クラウドフレームワークと通信するための Google Cloud プラット"
+"フォームコマンドラインインターフェイスツール (例: google-cloud-sdk) をインス"
+"トールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
+msgid "Microsoft Azure - All"
+msgstr "Microsoft Azure - 全て"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
+msgid ""
+"This pattern installs all Microsoft Azure command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Microsoft Azure - Tools)."
+msgstr ""
+"このパターンは、Microsoft Azure のコマンドラインインターフェイスツールのほ"
+"か、インスタンス初期化パッケージとツールが含まれ、動作中のインスタンス内にあ"
+"るクラウドフレームワークと通信することができます。このパターンのインストール"
+"は推奨されません。用途に応じた特定のパターン (例: Microsoft Azure - ツールな"
+"ど) をインストールしてください。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
+msgid "Microsoft Azure - Instance Initialization"
+msgstr "Microsoft Azure - インスタンス初期化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
+msgid ""
+"This pattern installs the Microsoft Azure instance initialization packages "
+"which support the provisioning and running of instances in the cloud "
+"framework (e.g. python-azure-agent)."
+msgstr ""
+"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実"
+"行を制御することができる、 Microsoft Azure 初期化パッケージ (例: python-"
+"azure-agent) をインストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
+msgid "Microsoft Azure - Instance Tools"
+msgstr "Microsoft Azure - インスタンスツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
+msgid ""
+"This pattern install the Microsoft Azure instance specific tools which are "
+"used to collect instance metadata (e.g. azuremetadata)."
+msgstr ""
+"このパターンは、インスタンスのメタデータを収集する際に使用する、 Microsoft "
+"Azure インスタンス固有のツール (例: azuremetadata) をインストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
+msgid "Microsoft Azure - Tools"
+msgstr "Microsoft Azure - ツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+msgid ""
+"This pattern installs the Microsoft Azure command line interface tools to "
+"communicate with the cloud framework (e.g. python-azurectl)."
+msgstr ""
+"このパターンは、クラウドフレームワークと通信するための Microsoft Azure コマン"
+"ドラインインターフェイスツール (例: python-azurectl) をインストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
+msgid "OpenStack - All"
+msgstr "OpenStack - 全て"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
+msgid ""
+"This pattern installs all OpenStack command line interface tools, instance "
+"initialization packages and tools to communicate with the cloud framework "
+"from within a running instance. It is not recommended to install this "
+"pattern, but instead install one of the use-case specific patterns (e.g. "
+"OpenStack - Tools)."
+msgstr ""
+"このパターンは、 OpenStack のコマンドラインインターフェイスツールのほか、イン"
+"スタンス初期化パッケージとツールが含まれ、動作中のインスタンス内にあるクラウ"
+"ドフレームワークと通信することができます。このパターンのインストールは推奨さ"
+"れません。用途に応じた特定のパターン (例: OpenStack - ツールなど) をインス"
+"トールしてください。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
+msgid "OpenStack - Instance Initialization"
+msgstr "OpenStack - インスタンス初期化"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
+msgid ""
+"This pattern installs the OpenStack instance initialization packages which "
+"support the provisioning and running of instances in the cloud framework (e."
+"g. cloud-init)."
+msgstr ""
+"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実"
+"行を制御することができる、 OpenStack 初期化パッケージ (例: cloud-init) をイン"
+"ストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
+msgid "OpenStack - Instance Tools"
+msgstr "OpenStack - インスタンスツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
+msgid ""
+"This pattern install the OpenStack instance specific tools which are used to "
+"collect instance metadata."
+msgstr ""
+"このパターンは、インスタンスのメタデータを収集する際に使用する、 OpenStack イ"
+"ンスタンス固有のツールをインストールします。"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
+msgid "OpenStack - Tools"
+msgstr "OpenStack - ツール"
+
+#. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
+msgid ""
+"This pattern installs the OpenStack command line interface tools to "
+"communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
+msgstr ""
+"このパターンは、クラウドフレームワークと通信するための OpenStack コマンドライ"
+"ンインターフェイスツール (例: python-susepubliccloudinfo) をインストールしま"
+"す。"
+
+#. SLE/patterns-sap/patterns-sap-b1/summary
+msgid "SAP BusinessOne Server Base"
+msgstr "SAP BusinessOne サーバベース"
+
+#. SLE/patterns-sap/patterns-sap-b1/description
+msgid "Set up the server for installing SAP BusinessOne systems."
+msgstr "SAP BusinessOne システムをインストールするためのサーバを構築します。"
+
+#. SLE/patterns-sap/patterns-sap-hana/summary
+msgid "SAP HANA Server Base"
+msgstr "SAP HANA サーバベース"
+
+#. SLE/patterns-sap/patterns-sap-hana/description
+msgid "Set up the server for installing SAP HANA systems."
+msgstr "SAP HANA システムをインストールするためのサーバを構築します。"
+
+#. SLE/patterns-sap/patterns-sap-nw/summary
+msgid "SAP NetWeaver Server Base"
+msgstr "SAP NetWeaver サーバベース"
+
+#. SLE/patterns-sap/patterns-sap-nw/description
+msgid "Set up the server for installing SAP NetWeaver systems."
+msgstr "SAP NetWeaver システムをインストールするためのサーバを構築します。"
+
+#. SLE/patterns-base/patterns-base-32bit/summary
+msgid "32-Bit Runtime Environment"
+msgstr "32 ビットランタイム環境"
+
+#. SLE/patterns-base/patterns-base-32bit/description
+msgid ""
+"This will install the 32-bit variant of all selected patterns. This allows "
+"to execute 32-bit software."
+msgstr ""
+"このパターンは、選択したパターンの 32 ビット版をインストールします。これによ"
+"り、 32 ビット版のソフトウエアを動作させることができるようになります。"
+
+#. SLE/patterns-base/patterns-base-apparmor/summary
+#. SLE/patterns-base/patterns-base-apparmor-32bit/summary
+msgid "AppArmor"
+msgstr "AppArmor"
+
+#. SLE/patterns-base/patterns-base-apparmor/description
+msgid ""
+"AppArmor is an application security framework that provides mandatory access "
+"control for programs. It protects from exploitation of software flaws and "
+"compromised systems. It offers an advanced tool set that automates the "
+"development of per-program application security without requiring additional "
+"knowledge."
+msgstr ""
+"AppArmor は、プログラムに対して強制アクセス制御機能を提供するアプリケーション"
+"セキュリティフレームワークです。ソフトウエアの欠陥から発生しうる不正なアクセ"
+"スを防止することができます。また、詳しい知識無しにプログラムごとのアプリケー"
+"ションセキュリティを自動的に開発することのできる、高度なツール集も用意されて"
+"います。"
+
+#. SLE/patterns-base/patterns-base-apparmor-32bit/description
+msgid "The 32bit pattern complementing apparmor."
+msgstr "apparmor パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-base/patterns-base-base/summary
+#. SLE/patterns-base/patterns-base-base-32bit/summary
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
+msgid "Base System"
+msgstr "基本システム"
+
+#. SLE/patterns-base/patterns-base-base/description
+#. SLE/patterns-base/patterns-base-basesystem/description
+msgid ""
+"This is the base runtime system.  It contains only a minimal multiuser "
+"booting system. For running on real hardware, you need to add additional "
+"packages and pattern to make this pattern useful on its own."
+msgstr ""
+"これは基本的なランタイムシステムで、マルチユーザ環境を起動するのに最小限の"
+"パッケージのみを含んでいます。実際のハードウエア上で動作させる場合は、追加の"
+"パッケージとパターンをインストールして、使いやすくしておくのがよいでしょう。"
+
+#. SLE/patterns-base/patterns-base-base-32bit/description
+msgid "The 32bit pattern complementing base."
+msgstr "base パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-base/patterns-base-basesystem/summary
+msgid "Base System (alias pattern for base)"
+msgstr "基本システム (base に対する別名のパターン)"
+
+#. SLE/patterns-base/patterns-base-documentation/summary
+#. SLE/patterns-base/patterns-base-documentation/description
+msgid "Help and Support Documentation"
+msgstr "ヘルプとサポート文書"
+
+#. SLE/patterns-base/patterns-base-documentation/category
+msgid "Documentation"
+msgstr "ドキュメンテーション"
+
+#. SLE/patterns-base/patterns-base-enhanced_base/summary
+#. SLE/patterns-base/patterns-base-enhanced_base-32bit/summary
+msgid "Enhanced Base System"
+msgstr "拡張基本システム"
+
+#. SLE/patterns-base/patterns-base-enhanced_base/description
+msgid ""
+"This is the enhanced base runtime system with lots of convenience packages."
+msgstr "これは各種の便利なパッケージを含む、拡張基本ランタイムシステムです。"
+
+#. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
+msgid "The 32bit pattern complementing enhanced_base."
+msgstr "enhanced_base パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-base/patterns-base-minimal_base/description
+msgid ""
+"This is the minimal SLE runtime system. It is really a minimal system, you "
+"can login and a shell will be started, that's all. It is intended as base "
+"for Appliances."
+msgstr ""
+"これは SLE の最小限ランタイムシステムです。ログインしてシェルを起動するまでの"
+"仕組みだけが用意されています。主にアプライアンスのベースとなる目的で作られて"
+"いるものです。"
+
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/description
+msgid "The 32bit pattern complementing minimal_base."
+msgstr "minimal_base パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-base/patterns-base-sw_management/summary
+#. SLE/patterns-base/patterns-base-sw_management-32bit/summary
+msgid "Software Management"
+msgstr "ソフトウエア管理"
+
+#. SLE/patterns-base/patterns-base-sw_management/description
+msgid ""
+"This pattern provides a graphical application and a command line tool for "
+"keeping your system up to date."
+msgstr ""
+"このパターンは、お使いのシステムを最新の状態に保つためのグラフィカルアプリ"
+"ケーションおよびコマンドラインツールを提供しています。"
+
+#. SLE/patterns-base/patterns-base-sw_management-32bit/description
+msgid "The 32bit pattern complementing sw_management."
+msgstr "sw_management パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-base/patterns-base-x11/summary
+#. SLE/patterns-base/patterns-base-x11-32bit/summary
+#. SLE/patterns-base/patterns-base-x11_enhanced/summary
+#. SLE/patterns-base/patterns-base-x11_enhanced-32bit/summary
+msgid "X Window System"
+msgstr "X Window System"
+
+#. SLE/patterns-base/patterns-base-x11/description
+#. SLE/patterns-base/patterns-base-x11_enhanced/description
+msgid ""
+"The X Window System provides the only standard platform-independent "
+"networked graphical window system bridging the heterogeneous platforms in "
+"today's enterprise: from network servers to desktops, thin clients, laptops, "
+"and handhelds, independent of operating system and hardware."
+msgstr ""
+"X Window System はプラットフォームに依存しない標準型のネットワークグラフィカ"
+"ルウインドウシステムを提供するもので、現代の企業内環境ではよくある異種混合型"
+"ネットワークに対応しています。ネットワークサーバからデスクトップ、シンクライ"
+"アントやラップトップ、ハンドヘルドなど、オペレーティングシステムやハードウエ"
+"アに依存せずに利用することができます。"
+
+#. SLE/patterns-base/patterns-base-x11-32bit/description
+msgid "The 32bit pattern complementing x11."
+msgstr "x11 パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
+msgid "The 32bit pattern complementing x11_enhanced."
+msgstr "x11_enhanced パターンを補完する 32 ビットパターンです。"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr "アプリケーションのコンパイルとリンクに最小限必要なツール集です。"
+
+#. SLE/patterns-fonts/patterns-fonts-fonts/summary
+msgid "Fonts"
+msgstr "フォント"
+
+#. SLE/patterns-fonts/patterns-fonts-fonts/description
+msgid "Base fonts and font configuration."
+msgstr "基本フォントとフォント設定です。"
+
+#. SLE/patterns-yast/patterns-yast-x11_yast/summary
+msgid "YaST User Interfaces"
+msgstr "YaST ユーザインターフェイス"
+
+#. SLE/patterns-yast/patterns-yast-x11_yast/description
+msgid "Graphical YaST user interfaces for minimal X desktop."
+msgstr "最小 X デスクトップ向けグラフィカル YaST ユーザインターフェイスです。"
+
+#. SLE/patterns-yast/patterns-yast-yast2_basis/summary
+msgid "YaST System Administration"
+msgstr "YaST システム管理"
+
+#. SLE/patterns-yast/patterns-yast-yast2_basis/description
+msgid "YaST tools for basic system administration."
+msgstr "基本的なシステム管理を行なうための YaST ツール集です。"
+
+#. SLE/patterns-base/summary
+msgid "Patterns for Installation (base patterns)"
+msgstr "インストール用パターン (基本パターン)"
+
+#. SLE/patterns-base/description
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense.\n"
+"\n"
+"This particular package contains all the base / core patterns (and those "
+"that don't fit well anywhere else)."
+msgstr ""
+"これは、インストールソースの設定の一部としてパターンを作成する際に使用する内"
+"部パッケージです。このパッケージは何も意味を持ちません。\n"
+"\n"
+"このパッケージには、全ての基本および中枢パターン (および、それ以外のどこにも"
+"適合しないもの) が含まれています。"
+
+#. SLE/patterns-desktop/patterns-desktop-books/description
 msgid "Help and Documentation, various books."
 msgstr "ヘルプとドキュメンテーション、および様々なブックです。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/summary
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/summary
+#. SLE/patterns-desktop/patterns-desktop-imaging/summary
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/summary
 msgid "Graphics"
 msgstr "グラフィック"
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/description
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/description
+#. SLE/patterns-desktop/patterns-desktop-imaging/description
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/description
 msgid "Handling of digital photos and graphics."
 msgstr "デジタルカメラの画像やグラフィックの処理を行ないます。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-imaging/category
-#. Product-WE/patterns-desktop/patterns-desktop-imaging_opt/category
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/category
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/category
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/category
-#. Product-WE/patterns-office/patterns-office-office/category
+#. SLE/patterns-desktop/patterns-desktop-imaging/category
+#. SLE/patterns-desktop/patterns-desktop-imaging_opt/category
+#. SLE/patterns-desktop/patterns-desktop-multimedia/category
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/category
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/category
+#. SLE/patterns-office/patterns-office-office/category
 msgid "Desktop Functions"
 msgstr "デスクトップ機能"
 
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/summary
+#. SLE/patterns-desktop/patterns-desktop-laptop/summary
 msgid "Laptop"
 msgstr "ラップトップ"
 
-#. Product-WE/patterns-desktop/patterns-desktop-laptop/description
+#. SLE/patterns-desktop/patterns-desktop-laptop/description
 msgid "Tools designed specifically for laptop computers."
 msgstr "特にラップトップコンピュータで使用するためのツール集です。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/summary
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/summary
+#. SLE/patterns-desktop/patterns-desktop-multimedia/summary
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/summary
 msgid "Multimedia"
 msgstr "マルチメディア"
 
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia/description
-#. Product-WE/patterns-desktop/patterns-desktop-multimedia_opt/description
+#. SLE/patterns-desktop/patterns-desktop-multimedia/description
+#. SLE/patterns-desktop/patterns-desktop-multimedia_opt/description
 msgid ""
 "Multimedia players, sound editing tools, video and image manipulation "
 "applications."
@@ -956,70 +969,89 @@ msgstr ""
 "マルチメディアプレーヤやサウンド編集ツール、ビデオや画像の操作アプリケーショ"
 "ンなどです。"
 
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/summary
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/summary
 msgid "Technical Writing"
 msgstr "技術文書作成"
 
-#. Product-WE/patterns-desktop/patterns-desktop-technical_writing/description
+#. SLE/patterns-desktop/patterns-desktop-technical_writing/description
 msgid "Authoring tools and editors for creating technical documentation."
 msgstr "技術文書を作成するための著述ツールおよび編集ソフトウエアです。"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment (Wayland)"
 msgstr "GNOME デスクトップ環境 (Wayland)"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/description
+#. SLE/patterns-gnome/patterns-gnome-gnome/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs components for GNOME to run with Wayland and "
 "X11 technologies."
 msgstr ""
-"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境です。このパターンは、 Wayland と X11 の両方を併用して、 "
-"GNOME を実行するためのコンポーネントをインストールします。"
+"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境で"
+"す。このパターンは、 Wayland と X11 の両方を併用して、 GNOME を実行するための"
+"コンポーネントをインストールします。"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/category
+#. SLE/patterns-gnome/patterns-gnome-gnome/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
 msgid "GNOME Desktop"
 msgstr "GNOME デスクトップ"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
 msgstr "GNOME グラフィック"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_imaging/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "デジタルカメラの写真や画像の処理"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/summary
-msgid "GNOME Laptop"
-msgstr "GNOME ラップトップ"
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
+msgid "GNOME Multimedia"
+msgstr "GNOME マルチメディア"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_laptop/description
-msgid "GNOME Tools designed specifically for use with laptop computers."
-msgstr "特にラップトップコンピュータ向けに設計された GNOME ツール集です。"
-
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/summary
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/summary
 msgid "GNOME Desktop Environment (X11)"
 msgstr "GNOME デスクトップ環境 (X11)"
 
-#. Product-WE/patterns-gnome/patterns-gnome-gnome_x11/description
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs a full featured GNOME desktop environment, "
 "including Office suite, E-Mail client, Web Browser, File Manager, running "
 "with X11 technology."
 msgstr ""
-"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境です。このパターンは、オフィススイートや電子メールクライアント、 Web "
-"ブラウザやファイルマネージャなど、 X11 を利用する完全機能の GNOME デスクトップ環境をインストールします。"
+"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境で"
+"す。このパターンは、オフィススイートや電子メールクライアント、 Web ブラウザや"
+"ファイルマネージャなど、 X11 を利用する完全機能の GNOME デスクトップ環境をイ"
+"ンストールします。"
 
-#. Product-WE/patterns-office/patterns-office-office/summary
+#. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
 msgstr "オフィスソフトウエア"
 
-#. Product-WE/patterns-office/patterns-office-office/description
+#. SLE/patterns-office/patterns-office-office/description
 msgid "Office software for your desktop environment including LibreOffice."
 msgstr "LibreOffice を含むデスクトップ環境向けオフィスソフトウエアです。"
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
+msgid "System z HW crypto support"
+msgstr ""
+
+#. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
+msgid ""
+"A selection of packages that installs the System z HW crypto stack on System "
+"z."
+msgstr ""
+
+#~ msgid "Packages needed to be able to develop HPC Apps"
+#~ msgstr "HPC アプリを開発するのに必要なパッケージ"
+
+#~ msgid "GNOME Laptop"
+#~ msgstr "GNOME ラップトップ"
+
+#~ msgid "GNOME Tools designed specifically for use with laptop computers."
+#~ msgstr "特にラップトップコンピュータ向けに設計された GNOME ツール集です。"
 
 #~ msgid "Console Tools"
 #~ msgstr "コンソールツール"
@@ -1164,9 +1196,6 @@ msgstr "LibreOffice を含むデスクトップ環境向けオフィスソフト
 #~ msgid "GNOME Internet Applications"
 #~ msgstr "GNOME インターネットアプリケーション"
 
-#~ msgid "GNOME Multimedia"
-#~ msgstr "GNOME マルチメディア"
-
 #~ msgid "GNOME Office"
 #~ msgstr "GNOME オフィス"
 
@@ -1197,11 +1226,6 @@ msgstr "LibreOffice を含むデスクトップ環境向けオフィスソフト
 #~ "Haskell プラットフォームは、 Haskell プログラミング言語を始めるのに最も簡"
 #~ "単な方法です。開発したり実行したりするのに必要な全てのものが揃っています。"
 #~ "言わば \"電池付き Haskell\" と言った感じです。"
-
-#, fuzzy
-#~| msgid "KDE development packages."
-#~ msgid "HPC Development Packages"
-#~ msgstr "KDE 開発用パッケージ群です。"
 
 #~ msgid "KDE Development"
 #~ msgstr "KDE 開発"
