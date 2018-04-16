@@ -62,7 +62,8 @@ cd 50-lists
 
 ## Merge distros
 rm -f *.pot
-msgcat *._pot | grep -v "#-#-#-#" > _packages.pot
+msgcat --use-first -o _packages.pot *._pot
+sed -i -e '/^#. #-#-#-#-#/d' _packages.pot
 #cat _packages.pot | msggrep -X -i -e "^tumbleweed/patterns\|^leap/patterns" -o patterns.pot
 #msgcat --unique -o __packages.pot patterns.pot _packages.pot && mv __packages.pot _packages.pot
 
@@ -75,20 +76,25 @@ for i in patterns {a..z}; do
     msgcat --unique --force-po -o __packages.pot $i.pot _packages.pot && mv __packages.pot _packages.pot
   fi
 done
-# move all the remaining packges in a
-tail -n +8 a.pot >> _packages.pot && mv _packages.pot a.pot
+if test -f a.pot; then
+  # move all the remaining packges in a
+  tail -n +8 a.pot >> _packages.pot && mv _packages.pot a.pot
 
-for ii in aspell ghc gnome golang google gstreamer gtk kde leechcraft libreoffice libqt lib mate myspell perl php python rubygem tesseract texlive-specs texlive wx xfce4 yast2; do
-  firstChar=${ii:0:1}
-  [ -e "$fistChar.pot" ] || continue
-  log -n "$ii "
-  msggrep -X -e "^[^/]\+/$ii" "$firstChar.pot" -o $ii.pot --no-wrap
-  if [ -e "$ii.pot" ]; then
-    msgcat --unique -o _$firstChar.pot $ii.pot $firstChar.pot && mv _$firstChar.pot $firstChar.pot
-  fi
-done
-log ""
-log "Splitting finished: $(date)"
+  for ii in aspell ghc gnome golang google gstreamer gtk kde leechcraft libreoffice libqt lib mate myspell perl php python rubygem tesseract texlive-specs texlive wx xfce4 yast2; do
+    firstChar=${ii:0:1}
+    [ -e "$fistChar.pot" ] || continue
+    log -n "$ii "
+    msggrep -X -e "^[^/]\+/$ii" "$firstChar.pot" -o $ii.pot --no-wrap
+    if [ -e "$ii.pot" ]; then
+      msgcat --unique -o _$firstChar.pot $ii.pot $firstChar.pot && mv _$firstChar.pot $firstChar.pot
+    fi
+  done
+  log ""
+  log "Splitting finished: $(date)"
+else
+	# SLE case
+	rm _packages.pot
+fi
 
 log "Statistics: "
 for i in *.pot; do

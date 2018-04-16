@@ -101,6 +101,9 @@ def gettextForPackage(packagename, package, distro):
     if distro.startswith('SLE'):
         distro = 'SLE'
 
+    if distro == 'SLE' and not packagename.startswith('pattern'):
+        return None
+
     comment = "{}/{}".format(distro, packagename)
     ret = ""
     if package['summary'] != "":
@@ -155,7 +158,9 @@ msgstr ""
     print(header)
 
     for packagename, package in md.items():
-        print(gettextForPackage(packagename, package, distro))
+        text = gettextForPackage(packagename, package, distro)
+        if text:
+            print(text)
 
     return 0
 
