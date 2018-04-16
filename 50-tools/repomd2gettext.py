@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 """
-This file parses the XML metadata of repomd repositories and 
+This file parses the XML metadata of repomd repositories and
 """
 
 from datetime import datetime
@@ -97,6 +97,9 @@ def readMetadata(data):
 def gettextForPackage(packagename, package, distro):
     if packagename != package['sourcepkg'] and package['sourcepkg']:
         packagename = "{}/{}".format(package['sourcepkg'], packagename)
+
+    if distro.startswith('SLE'):
+        distro = 'SLE'
 
     comment = "{}/{}".format(distro, packagename)
     ret = ""
