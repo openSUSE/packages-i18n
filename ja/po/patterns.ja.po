@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-04-16 13:01+0000\n"
-"PO-Revision-Date: 2018-04-09 23:01+0000\n"
+"PO-Revision-Date: 2018-04-17 10:58+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
-"patterns-sle-15/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
+"/patterns-sle-15/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,29 +45,18 @@ msgstr ""
 "トールします。"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
-#, fuzzy
-#| msgid "HPC compute node"
 msgid "HPC Basic Compute Node"
-msgstr "HPC 計算ノード"
+msgstr "HPC 基本計算ノード"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minmal software image and mainly runs simultion "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. A basset of numerical "
-#| "libraries should also be installed."
 msgid ""
 "A compute node has a minimal software image and mainly runs simulation "
 "programs. Services on this node should be reduced to a bare minimum and the "
 "node *must* be installed in a automatic manner. The pattern HPC libraries "
 "should also be installed."
 msgstr ""
-"計算ノードとは最小限のパッケージのみがインストールされる環境で、主にシミュ"
-"レーションプログラムを動作させるために使用するものです。このシステムで動作す"
-"るサービスは最小限のものに限られるほか、ノードは自動的に管理されるものでなけ"
-"ればなりません。数値処理関連のライブラリについても、インストールが行なわれま"
-"す。"
+"計算ノードとは最小限のパッケージのみがインストールされる環境で、主にシミュレーションプログラムを動作させるために使用するものです。このシステムで動作するサ"
+"ービスは最小限のものに限られるほか、ノードは自動的に管理されるものでなければなりません。 HPC ライブラリのパターンもインストールされます。"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -75,51 +64,36 @@ msgid "Server Functions"
 msgstr "サーバ機能"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/summary
-#, fuzzy
-#| msgid "KDE development packages."
 msgid "HPC Development Packages"
-msgstr "KDE 開発用パッケージ群です。"
+msgstr "KDE 開発用パッケージ群"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the hpc-compute node and adds additionally "
-#| "the compilers and includes also the relevant managment packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the HPC libraries and adds additionally the "
 "compilers and includes also the relevant management packages."
 msgstr ""
-"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが"
-"含まれています。 hpc-compute ノードに依存しているほか、コンパイラや関連する管"
-"理パッケージなどが含まれています。"
+"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが含まれています。 HPC "
+"ライブラリのほか、追加でコンパイラや関連する管理パッケージなどがインストールされます。"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/category
 msgid "Development"
 msgstr "開発"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized libraries"
 msgid "HPC modularized Libraries"
 msgstr "HPC モジュール化ライブラリ"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in a hpc environment. Especially these libariries allows you to "
-#| "install a mpi enabled libarary for different mpi libraries."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. Especially these libraries allows you to install "
 "several MPI flavors in parallel. In order to use this libraries you have "
 "them to load first via the module command."
 msgstr ""
-"このパッケージには、全てのモジュール化されたライブラリが含まれていて、これら"
-"を HPC 環境で利用できる仕組みを備えています。特にこれらのライブラリは、 異な"
-"る mpi ライブラリをインストールすることができるようになります。"
+"このパッケージには全てのモジュール化されたライブラリが含まれていて、HPC 環境内でそれらを利用できるようになっています。特にこれらのライブラリでは、"
+"異なる MPI "
+"環境を同時にインストールすることができるようになります。このライブラリを使用するには、まずモジュールコマンドでそれらを読み込む必要があります。"
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
@@ -1036,13 +1010,13 @@ msgstr "LibreOffice を含むデスクトップ環境向けオフィスソフト
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "System z ハードウエア暗号化サポート"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
-msgstr ""
+msgstr "System z で利用可能なハードウエア暗号化スタックに関連するパッケージをインストールします。"
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "HPC アプリを開発するのに必要なパッケージ"
