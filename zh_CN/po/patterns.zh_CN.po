@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-16 13:01+0000\n"
-"PO-Revision-Date: 2018-04-13 02:42+0000\n"
+"PO-Revision-Date: 2018-04-17 02:10+0000\n"
 "Last-Translator: Emily Dong <Emily.Dong@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
 "i18n/patterns-sle-15/zh_CN/>\n"
@@ -42,26 +42,16 @@ msgid ""
 msgstr "提供保证高持续运营性和降低系统停机时间的工具。"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
-#, fuzzy
-#| msgid "HPC compute node"
 msgid "HPC Basic Compute Node"
-msgstr "HPC 计算节点"
+msgstr "HPC 基本计算节点"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minmal software image and mainly runs simultion "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. A basset of numerical "
-#| "libraries should also be installed."
 msgid ""
 "A compute node has a minimal software image and mainly runs simulation "
 "programs. Services on this node should be reduced to a bare minimum and the "
 "node *must* be installed in a automatic manner. The pattern HPC libraries "
 "should also be installed."
-msgstr ""
-"计算节点具有极简的软件映像，主要运行模拟程序。此节点上的服务应减少至最低数"
-"量，并且*不得*以自动方式安装节点。另外还应安装一定数量的库。"
+msgstr "计算节点具有极简的软件映像，主要运行模拟程序。此节点上的服务应减少至最低数量，并且*不得*以自动方式安装节点。另外还应安装软件集 HPC 库。"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -69,49 +59,32 @@ msgid "Server Functions"
 msgstr "服务器功能"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/summary
-#, fuzzy
-#| msgid "KDE development packages"
 msgid "HPC Development Packages"
-msgstr "KDE 开发软件包"
+msgstr "HPC 开发软件包"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the hpc-compute node and adds additionally "
-#| "the compilers and includes also the relevant managment packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the HPC libraries and adds additionally the "
 "compilers and includes also the relevant management packages."
-msgstr ""
-"此软件包提供与开发 HPC 应用程序相关的所有软件包。它依赖于 hpc 计算节点，会额"
-"外增加编译器，另外还包含相关的管理软件包。"
+msgstr "此软件包提供与开发 HPC 应用程序相关的所有软件包。它依赖于 HPC 库，会额外增加编译器，另外还包含相关的管理软件包。"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/category
 msgid "Development"
 msgstr "开发"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized libraries"
 msgid "HPC modularized Libraries"
 msgstr "HPC 模块化库"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in a hpc environment. Especially these libariries allows you to "
-#| "install a mpi enabled libarary for different mpi libraries."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. Especially these libraries allows you to install "
 "several MPI flavors in parallel. In order to use this libraries you have "
 "them to load first via the module command."
 msgstr ""
-"此软件包提供所有模块化库，以便可在 HPC 环境中使用这些库。特别是，这些库可让您"
-"安装支持 MPI 的库，以便使用不同的 MPI 库。"
+"此软件包提供所有模块化库，以便可在 HPC 环境中使用这些库。特别是，这些库可让您并行安装多个 MPI 风格。要使用这些库，您需要先通过模块命令加载它们。"
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
@@ -972,13 +945,13 @@ msgstr "用于您的桌面环境的办公软件，包括 LibreOffice。"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "System z 硬件加密支持"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
-msgstr ""
+msgstr "会在 System z 上安装  System z 硬件加密堆栈的软件包选集。"
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "开发 HPC 应用程序所需的软件包"
