@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2018-04-16 13:01+0000\n"
-"PO-Revision-Date: 2018-04-17 14:03+0000\n"
+"PO-Revision-Date: 2018-04-17 14:33+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-i18n"
 "/patterns-sle-15/it/>\n"
@@ -50,12 +50,6 @@ msgid "HPC Basic Compute Node"
 msgstr "Nodo di calcolo di base HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minmal software image and mainly runs simultion "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. A basset of numerical "
-#| "libraries should also be installed."
 msgid ""
 "A compute node has a minimal software image and mainly runs simulation "
 "programs. Services on this node should be reduced to a bare minimum and the "
@@ -65,7 +59,7 @@ msgstr ""
 "Un nodo di calcolo presenta un'immagine software minima ed esegue "
 "principalmente programmi di simulazione. I servizi sul nodo devono essere "
 "ridotti al minimo e il nodo *deve* essere installato automaticamente. È "
-"necessario installare anche un minimo di librerie numeriche."
+"necessario installare anche il modello HPC."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -77,19 +71,14 @@ msgid "HPC Development Packages"
 msgstr "Pacchetti di sviluppo di HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the hpc-compute node and adds additionally "
-#| "the compilers and includes also the relevant managment packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the HPC libraries and adds additionally the "
 "compilers and includes also the relevant management packages."
 msgstr ""
 "Questo pacchetto fornisce tutti i pacchetti pertinenti per lo sviluppo di "
-"applicazioni HPC. Dipende dal nodo hpc-compute, inoltre aggiunge i "
-"compilatori e include anche tutti i pacchetti di gestione pertinenti."
+"applicazioni HPC. Dipende dalle librerie HPC e in più aggiunge i compilatori "
+"e include anche tutti i relativi pacchetti di gestione."
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/category
 msgid "Development"
@@ -100,11 +89,6 @@ msgid "HPC modularized Libraries"
 msgstr "Librerie modularizzate di HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in a hpc environment. Especially these libariries allows you to "
-#| "install a mpi enabled libarary for different mpi libraries."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. Especially these libraries allows you to install "
@@ -112,8 +96,10 @@ msgid ""
 "them to load first via the module command."
 msgstr ""
 "Questo pacchetto fornisce tutte le librerie modularizzate in modo da poterle "
-"utilizzare in un ambiente hpc. Tali librerie consentono soprattutto di "
-"installare una libreria abilitata mpi per diverse librerie mpi."
+"utilizzare in un ambiente HPC. Tali librerie consentono soprattutto di "
+"installare diverse varianti di MPI in parallelo. Per utilizzare queste "
+"librerie bisogna in prima battuta che siano caricate attraverso il comando "
+"module."
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
