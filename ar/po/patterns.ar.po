@@ -2,10 +2,10 @@
 msgid ""
 msgstr ""
 "POT-Creation-Date: 2018-04-16 13:01+0000\n"
-"PO-Revision-Date: 2018-04-16 15:17+0000\n"
+"PO-Revision-Date: 2018-04-17 14:00+0000\n"
 "Last-Translator: George Yacoub <george.yacoub@arabize.com>\n"
-"Language-Team: Arabic <https://l10n.opensuse.org/projects/packages-i18n/"
-"patterns-sle-15/ar/>\n"
+"Language-Team: Arabic <https://l10n.opensuse.org/projects/packages-i18n"
+"/patterns-sle-15/ar/>\n"
 "Language: ar\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
@@ -15,13 +15,16 @@ msgstr ""
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
 msgid "GEO Clustering for High Availability"
-msgstr ""
+msgstr "تكوين أنظمة المجموعات حسب المناطق الجغرافية لقابلية الوصول العالية"
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/description
 msgid ""
 "This pattern provides tools for building multi-site clustering setups based "
 "on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
+"يوفر هذا النمط أدوات لتنفيذ عمليات الإعداد الخاصة بتكوين أنظمة المجموعات في "
+"المواقع المتعددة استنادًا إلى SUSE Linux Enterprise High-Availability وملحق "
+"GEO الخاص به."
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/category
 #. SLE/patterns-ha/patterns-ha-ha_sles/category
@@ -30,27 +33,20 @@ msgstr "الوظائف الأساسية"
 
 #. SLE/patterns-ha/patterns-ha-ha_sles/summary
 msgid "High Availability"
-msgstr ""
+msgstr "قابلية وصول عالية"
 
 #. SLE/patterns-ha/patterns-ha-ha_sles/description
 msgid ""
 "Provide tools to ensure a high degree of operational continuity and reduce "
 "the downtimes of your system."
 msgstr ""
+"توفير الأدوات لضمان درجة عالية من استمرار التشغيل وخفض أوقات التعطل بالنظام."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
-#, fuzzy
-#| msgid "HPC compute node"
 msgid "HPC Basic Compute Node"
-msgstr "عقدة حساب HPC"
+msgstr "عقدة حساب HPC الأساسية"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minmal software image and mainly runs simultion "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. A basset of numerical "
-#| "libraries should also be installed."
 msgid ""
 "A compute node has a minimal software image and mainly runs simulation "
 "programs. Services on this node should be reduced to a bare minimum and the "
@@ -59,7 +55,7 @@ msgid ""
 msgstr ""
 "تتضمن عقدة الحساب صورة برنامج مصغر وتعمل بشكل رئيسي على تشغيل برامج "
 "المحاكاة. يجب تخفيض الخدمات على هذه العقدة إلى الحد الأدنى، كما *يلزم* تثبيت "
-"العقدة لتعمل بشكل تلقائي. ويجب أيضًا تثبيت سلسلة من المكتبات الرقمية."
+"العقدة لتعمل بشكل تلقائي. ويجب أيضًا تثبيت نمط مكتبات HPC."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -67,24 +63,17 @@ msgid "Server Functions"
 msgstr "وظائف الخادم"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/summary
-#, fuzzy
-#| msgid "Development"
 msgid "HPC Development Packages"
-msgstr "تطوير"
+msgstr "حزم تطوير HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the hpc-compute node and adds additionally "
-#| "the compilers and includes also the relevant managment packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the HPC libraries and adds additionally the "
 "compilers and includes also the relevant management packages."
 msgstr ""
-"توفر هذه الحزمة جميع الحزم ذات الصلة لتطوير تطبيقات HPC. وهي تعتمد على عقدة "
-"حساب hpc وتضيف المحولات البرمجية وتتضمن أيضًا حزم الإدارة ذات الصلة."
+"توفر هذه الحزمة جميع الحزم ذات الصلة لتطوير تطبيقات HPC. وهي تعتمد على "
+"مكتبات HPC وتضيف المحولات البرمجية وتتضمن أيضًا حزم الإدارة ذات الصلة."
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/category
 msgid "Development"
@@ -103,11 +92,15 @@ msgid ""
 "several MPI flavors in parallel. In order to use this libraries you have "
 "them to load first via the module command."
 msgstr ""
+"توفر هذه الحزمة جميع المكتبات المجزأة بحيث يمكن استخدامها في بيئة HPC. فهذه "
+"المكتبات تسمح لك بتثبيت العديد من أشكال MPI بالتوازي. ولاستخدام هذه المكتبات،"
+" يجب تحميلها أولاً بواسطة أمر الوحدة النمطية."
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
+#, fuzzy
 msgid "Infiniband (OFED)"
-msgstr ""
+msgstr "Infiniband (OFED)"
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/description
 msgid ""
@@ -116,23 +109,27 @@ msgid ""
 "Infiniband adapter operational, that is IB kernel modules and basic user "
 "level libraries."
 msgstr ""
+"يعمل هذا النمط على تعريف الحزم الرئيسية لبرنامج ‎‏OpenFabrics Enterprise "
+"Distribution (OFED)‎. يتضمن النمط الأساسي الحزم اللتي تحتاجها لتشغيل محوّل "
+"Infiniband، وهي وحدات kernel النمطية لـ IB ومكتبات مستوى المستخدم الأساسية."
 
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/description
 msgid "The 32bit pattern complementing ofed."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ ofed."
 
 #. SLE/patterns-rpm-macros/summary
 msgid "RPM macros for building of patterns modules"
-msgstr ""
+msgstr "وحدات ماكرو RPM لإنشاء الوحدات النمطية للأنماط"
 
 #. SLE/patterns-rpm-macros/description
 msgid "This package contains SUSE RPM macros to aid creating patterns."
 msgstr ""
+"تحتوي هذه الحزمة على وحدات الماكرو الخاصة بـ SUSE RPM لدعم إنشاء الأنماط."
 
 #. SLE/patterns-server/patterns-server-dhcp_dns_server/summary
 #. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
 msgid "DHCP and DNS Server"
-msgstr ""
+msgstr "خادم DHCP وDNS"
 
 #. SLE/patterns-server/patterns-server-dhcp_dns_server/description
 msgid ""
@@ -142,30 +139,36 @@ msgid ""
 "network, whereas DNS delivers information associated with domain names, in "
 "particular, the IP address."
 msgstr ""
+"برنامج لإعداد الخادم من أجل خدمات بروتوكول التكوين الديناميكي للمضيف (DHCP) "
+"ونظام أسماء المجالات (DNS). يوفر DHCP معلمات التكوين لأجهزة العملاء لدمجها "
+"في الشبكة، بينما يرسل DNS المعلومات المقترنة بأسماء المجالات، وخاصًة عنوان "
+"بروتوكول الإنترنت (IP)."
 
 #. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/description
 msgid "The 32bit pattern complementing dhcp_dns_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ dhcp_dns_server."
 
 #. SLE/patterns-server/patterns-server-directory_server/summary
 #. SLE/patterns-server/patterns-server-directory_server-32bit/summary
 msgid "Directory Server (LDAP)"
-msgstr ""
+msgstr "خادم الدليل (LDAP)"
 
 #. SLE/patterns-server/patterns-server-directory_server/description
 msgid ""
 "Software to set up a directory server with OpenLDAP. The Lightweight "
 "Directory Access Protocol (LDAP) is used to access online directory services."
 msgstr ""
+"برنامج لإعداد خادم الدليل باستخدام OpenLDAP. يتم استخدام البروتوكول الخفيف "
+"لتغيير بيانات الدليل (LDAP) للوصول إلى خدمات الدليل عبر الإنترنت."
 
 #. SLE/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ directory_server."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "الحزم الخاصة بمعيار FIPS 140-2"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
 msgid ""
@@ -179,41 +182,50 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"يعمل هذا النمط على تثبيت الحزم الخاصة بمعيار FIPS 140-2 والتي تُكمل وحدات "
+"التشفير النمطية المتعددة قيد الاستخدام. وهو ضروري إذا كنت تريد تشغيل الجهاز "
+"باستخدام \"fips=1\".\n"
+"\n"
+"الرجاء ملاحظة أن هذا النمط يعمل فقط على تمكين التشغيل المتوافق مع معيار FIPS "
+"140-2، ولا يعتمد بشكل مباشر توافق النظام مع معيار FIPS 140-2 أو يتحقق من صحة "
+"ذلك.\n"
+"\n"
+"الرجاء الاطلاع على بيانات SUSE الرسمية حول حالة اعتماد معيار FIPS 140-2."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ fips."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
 msgid "Oracle Server Base"
-msgstr ""
+msgstr "قاعدة خادم Oracle"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
 msgid "Set up the server for installing Oracle databases."
-msgstr ""
+msgstr "إعداد الخادم لتثبيت قواعد بيانات Oracle."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
 msgid "The 32bit pattern complementing oracle_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ oracle_server."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
 msgid "SAP Application Server Base"
-msgstr ""
+msgstr "قاعدة خادم تطبيقات SAP"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
 msgid "Set up the server for installing SAP systems."
-msgstr ""
+msgstr "إعداد الخادم لتثبيت أنظمة SAP."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
 msgid "The 32bit pattern complementing sap_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ sap_server."
 
 #. SLE/patterns-server/patterns-server-file_server/summary
 #. SLE/patterns-server/patterns-server-file_server-32bit/summary
 msgid "File Server"
-msgstr ""
+msgstr "خادم الملفات"
 
 #. SLE/patterns-server/patterns-server-file_server/description
 msgid ""
@@ -221,29 +233,34 @@ msgid ""
 "other computers on the same network. This includes the FTP, SMB, and NFS "
 "protocols."
 msgstr ""
+"خدمات الملفات الخاصة باستضافة الملفات بحيث يمكن الوصول إليها أو استردادها من "
+"قبل أجهزةالكمبيوتر الأخرى على نفس الشبكة. ويتضمن ذلك بروتوكولات FTP وSMB "
+"وNFS."
 
 #. SLE/patterns-server/patterns-server-file_server-32bit/description
 msgid "The 32bit pattern complementing file_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ file_server."
 
 #. SLE/patterns-server/patterns-server-gateway_server/summary
 #. SLE/patterns-server/patterns-server-gateway_server-32bit/summary
 msgid "Internet Gateway"
-msgstr ""
+msgstr "مدخل الإنترنت"
 
 #. SLE/patterns-server/patterns-server-gateway_server/description
 msgid ""
 "Software to set up a proxy, firewall, and gateway server, including a "
 "virtual private network (VPN) gateway."
 msgstr ""
+"برنامج لإعداد خادم وكيل وجدار حماية ومدخل، بما في ذلك مدخل الشبكة الظاهرية "
+"الخاصة (VPN)."
 
 #. SLE/patterns-server/patterns-server-gateway_server-32bit/description
 msgid "The 32bit pattern complementing gateway_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ gateway_server."
 
 #. SLE/patterns-server/patterns-server-kvm_server/summary
 msgid "KVM Host Server"
-msgstr ""
+msgstr "خادم استضافة KVM"
 
 #. SLE/patterns-server/patterns-server-kvm_server/description
 #. SLE/patterns-server/patterns-server-xen_server/description
@@ -251,10 +268,12 @@ msgid ""
 "Software to set up a server for configuring, managing, and monitoring "
 "virtual machines on a single physical machine."
 msgstr ""
+"برنامج لإعداد الخادم لتكوين الأجهزة الظاهرية وإدارتها ومراقبتها على جهاز "
+"فعلي واحد."
 
 #. SLE/patterns-server/patterns-server-kvm_tools/summary
 msgid "KVM Virtualization Host and tools"
-msgstr ""
+msgstr "استضافة الأجهزة الظاهرية KVM والأدوات"
 
 #. SLE/patterns-server/patterns-server-kvm_tools/description
 msgid ""
@@ -262,6 +281,8 @@ msgid ""
 "able to configure, manage, and monitor virtual machines on a single physical "
 "machine."
 msgstr ""
+"سيوفر ذلك الحد الأدنى من متطلبات النظام لتشغيل بيئة الأجهزة الظاهرية KVM "
+"والقدرة على تكوين الأجهزة الظاهرية وإدارتها ومراقبتها على جهاز فعلي واحد."
 
 #. SLE/patterns-server/patterns-server-kvm_tools/category
 #. SLE/patterns-server/patterns-server-xen_tools/category
@@ -272,7 +293,7 @@ msgstr "التقنيات الأساسية"
 #. SLE/patterns-server/patterns-server-lamp_server/summary
 #. SLE/patterns-server/patterns-server-lamp_server-32bit/summary
 msgid "Web and LAMP Server"
-msgstr ""
+msgstr "خادم الويب وLAMP"
 
 #. SLE/patterns-server/patterns-server-lamp_server/description
 msgid ""
@@ -281,15 +302,18 @@ msgid ""
 "database management system MySQL, and scripting languages such as PHP, "
 "Python, Ruby on Rails, or Perl."
 msgstr ""
+"برنامج لإعداد خادم ويب يمكنه معالجة المحتوى الثابت الديناميكي والتفاعلي (مثل "
+"متجر ويب). ويتضمن ذلك Apache HTTP Server ونظام إدارة قواعد البيانات MySQL "
+"ولغات البرمجة النصية مثل PHP أو Python أو Ruby on Rails أو Perl."
 
 #. SLE/patterns-server/patterns-server-lamp_server-32bit/description
 msgid "The 32bit pattern complementing lamp_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ lamp_server."
 
 #. SLE/patterns-server/patterns-server-mail_server/summary
 #. SLE/patterns-server/patterns-server-mail_server-32bit/summary
 msgid "Mail and News Server"
-msgstr ""
+msgstr "خادم البريد والأخبار"
 
 #. SLE/patterns-server/patterns-server-mail_server/description
 msgid ""
@@ -297,15 +321,18 @@ msgid ""
 "mailing, and news lists, including a virus scanner to scan messages at the "
 "server level."
 msgstr ""
+"برنامج لإعداد خدمات البريد الإلكتروني والرسائل لمعالجة قوائم البريد "
+"الإلكتروني والرسائل والأخبار، بما في ذلك ميزة فحص الفيروسات لفحص الرسائل على "
+"مستوى الخادم."
 
 #. SLE/patterns-server/patterns-server-mail_server-32bit/description
 msgid "The 32bit pattern complementing mail_server."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ mail_server."
 
 #. SLE/patterns-server/patterns-server-printing/summary
 #. SLE/patterns-server/patterns-server-printing-32bit/summary
 msgid "Print Server"
-msgstr ""
+msgstr "خادم الطباعة"
 
 #. SLE/patterns-server/patterns-server-printing/description
 msgid ""
@@ -313,18 +340,21 @@ msgid ""
 "needed packages for printing to a locally connected printer, printing using "
 "a remote print server and for setting up a print server."
 msgstr ""
+"يوفر هذا النمط جميع الحزم اللازمة للطباعة. وهو يوفر جميع الحزم اللازمة "
+"للطباعة على طابعة متصلة محليًا والطباعة باستخدام خادم طباعة عن بُعد ولإعداد "
+"خادم طباعة."
 
 #. SLE/patterns-server/patterns-server-printing-32bit/description
 msgid "The 32bit pattern complementing printing."
-msgstr ""
+msgstr "نمط 32bit المكمّل لميزة الطباعة."
 
 #. SLE/patterns-server/patterns-server-xen_server/summary
 msgid "Xen Virtual Machine Host Server"
-msgstr ""
+msgstr "خادم استضافة جهاز Xen الظاهري"
 
 #. SLE/patterns-server/patterns-server-xen_tools/summary
 msgid "XEN Virtualization Host and tools"
-msgstr ""
+msgstr "استضافة جهاز Xen الظاهري والأدوات"
 
 #. SLE/patterns-server/patterns-server-xen_tools/description
 msgid ""
@@ -332,14 +362,16 @@ msgid ""
 "able to configure, manage, and monitor virtual machines on a single physical "
 "machine."
 msgstr ""
+"سيوفر ذلك الحد الأدنى من متطلبات النظام لتشغيل بيئة أجهزة XEN الظاهرية "
+"والقدرة على تكوين الأجهزة الظاهرية وإدارتها ومراقبتها على جهاز فعلي واحد."
 
 #. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/summary
 msgid "Web-Based Enterprise Management"
-msgstr ""
+msgstr "إدارة المؤسسات المستندة إلى الويب"
 
 #. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/description
 msgid "The 32bit pattern complementing WBEM."
-msgstr ""
+msgstr "نمط 32bit المكمّل لـ WBEM."
 
 #. SLE/patterns-yast/patterns-yast-yast2_install_wf/summary
 msgid "YaST Installation Packages"
@@ -528,7 +560,7 @@ msgstr ""
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
 msgid "Microsoft Azure - All"
-msgstr ""
+msgstr "Microsoft Azure - الكل"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
 msgid ""
@@ -538,10 +570,14 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Microsoft Azure - Tools)."
 msgstr ""
+"يعمل هذا النمط على تثبيت كل أدوات واجهة سطر أوامر Microsoft Azure وحزم تهيئة "
+"المثيل وأدوات الاتصال بإطار عمل السحابة من داخل مثيل قيد التشغيل. لا يوصى "
+"بتثبيت هذا النمط، ولكن يوصى بدلاً من ذلك بتثبيت أحد الأنماط المخصصة وفقًا "
+"لحالة الاستخدام (على سبيل المثال، Microsoft Azure - الأدوات)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
 msgid "Microsoft Azure - Instance Initialization"
-msgstr ""
+msgstr "Microsoft Azure - تهيئة المثيل"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
 msgid ""
@@ -549,30 +585,36 @@ msgid ""
 "which support the provisioning and running of instances in the cloud "
 "framework (e.g. python-azure-agent)."
 msgstr ""
+"يعمل هذا النمط على تثبيت حزم تهيئة مثيل Microsoft Azure التي تدعم توفير "
+"المثيلات وتشغيلها في إطار عمل السحابة (على سبيل المثال، python-azure-agent)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
-msgstr ""
+msgstr "Microsoft Azure - أدوات المثيل"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
 msgid ""
 "This pattern install the Microsoft Azure instance specific tools which are "
 "used to collect instance metadata (e.g. azuremetadata)."
 msgstr ""
+"يعمل هذا النمط على تثبيت الأدوات الخاصة بمثيل Microsoft Azure والتي يتم "
+"استخدامها لحمع بيانات تعريف المثيل (على سبيل المثال، azuremetadata)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
 msgid "Microsoft Azure - Tools"
-msgstr ""
+msgstr "Microsoft Azure - الأدوات"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
 "communicate with the cloud framework (e.g. python-azurectl)."
 msgstr ""
+"يعمل هذا النمط على تثبيت أدوات واجهة سطر أوامر Microsoft Azure للاتصال بإطار "
+"عمل السحابة (على سبيل المثال، python-azurectl)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
 msgid "OpenStack - All"
-msgstr ""
+msgstr "OpenStack - الكل"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
 msgid ""
@@ -582,10 +624,14 @@ msgid ""
 "pattern, but instead install one of the use-case specific patterns (e.g. "
 "OpenStack - Tools)."
 msgstr ""
+"يعمل هذا النمط على تثبيت أدوات واجهة سطر أوامر OpenStack وحزم تهيئة المثيل "
+"وأدوات الاتصال بإطار عمل السحابة من داخل مثيل قيد التشغيل. لا يوصى بتثبيت "
+"هذا النمط، ولكن يوصى بدلاً من ذلك بتثبيت أحد الأنماط المخصصة للاستخدام حسب "
+"الحالة (على سبيل المثال، OpenStack - الأدوات)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
 msgid "OpenStack - Instance Initialization"
-msgstr ""
+msgstr "OpenStack - تهيئة المثيل"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
 msgid ""
@@ -593,50 +639,56 @@ msgid ""
 "support the provisioning and running of instances in the cloud framework (e."
 "g. cloud-init)."
 msgstr ""
+"يعمل هذا النمط على تثبيت حزم تهيئة مثيل OpenStack والتي تدعم توفير المثيلات "
+"وتشغيلها في إطار عمل السحابة (على سبيل المثال، cloud-init)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
 msgid "OpenStack - Instance Tools"
-msgstr ""
+msgstr "OpenStack - أدوات المثيل"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
 msgid ""
 "This pattern install the OpenStack instance specific tools which are used to "
 "collect instance metadata."
 msgstr ""
+"يعمل هذا النمط على تثبيت الأدوات الخاصة بمثيل OpenStack والتي يتم استخدامها "
+"لجمع بيانات تعريف المثيل."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
 msgid "OpenStack - Tools"
-msgstr ""
+msgstr "OpenStack - الأدوات"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
 msgid ""
 "This pattern installs the OpenStack command line interface tools to "
 "communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
 msgstr ""
+"يعمل هذا النمط على تثبيت أدوات واجهة سطر أوامر OpenStack للاتصال بإطار عمل "
+"السحابة (على سبيل المثال، python-susepubliccloudinfo)."
 
 #. SLE/patterns-sap/patterns-sap-b1/summary
 msgid "SAP BusinessOne Server Base"
-msgstr ""
+msgstr "قاعدة خادم SAP BusinessOne"
 
 #. SLE/patterns-sap/patterns-sap-b1/description
 msgid "Set up the server for installing SAP BusinessOne systems."
-msgstr ""
+msgstr "إعداد الخادم لتثبيت أنظمة SAP BusinessOne."
 
 #. SLE/patterns-sap/patterns-sap-hana/summary
 msgid "SAP HANA Server Base"
-msgstr ""
+msgstr "قاعدة خادم SAP HANA"
 
 #. SLE/patterns-sap/patterns-sap-hana/description
 msgid "Set up the server for installing SAP HANA systems."
-msgstr ""
+msgstr "إعداد الخادم لتثبيت أنظمة SAP HANA."
 
 #. SLE/patterns-sap/patterns-sap-nw/summary
 msgid "SAP NetWeaver Server Base"
-msgstr ""
+msgstr "قاعدة خادم SAP NetWeaver"
 
 #. SLE/patterns-sap/patterns-sap-nw/description
 msgid "Set up the server for installing SAP NetWeaver systems."
-msgstr ""
+msgstr "إعداد الخادم لتثبيت أنظمة SAP NetWeaver."
 
 #. SLE/patterns-base/patterns-base-32bit/summary
 msgid "32-Bit Runtime Environment"
@@ -827,17 +879,17 @@ msgstr ""
 
 #. SLE/patterns-desktop/patterns-desktop-books/description
 msgid "Help and Documentation, various books."
-msgstr ""
+msgstr "الإرشادات والتوثيق، كتب متعددة."
 
 #. SLE/patterns-desktop/patterns-desktop-imaging/summary
 #. SLE/patterns-desktop/patterns-desktop-imaging_opt/summary
 msgid "Graphics"
-msgstr ""
+msgstr "الصور"
 
 #. SLE/patterns-desktop/patterns-desktop-imaging/description
 #. SLE/patterns-desktop/patterns-desktop-imaging_opt/description
 msgid "Handling of digital photos and graphics."
-msgstr ""
+msgstr "معالجة الصور الرقمية والرسومات."
 
 #. SLE/patterns-desktop/patterns-desktop-imaging/category
 #. SLE/patterns-desktop/patterns-desktop-imaging_opt/category
@@ -846,20 +898,20 @@ msgstr ""
 #. SLE/patterns-desktop/patterns-desktop-technical_writing/category
 #. SLE/patterns-office/patterns-office-office/category
 msgid "Desktop Functions"
-msgstr ""
+msgstr "وظائف سطح المكتب"
 
 #. SLE/patterns-desktop/patterns-desktop-laptop/summary
 msgid "Laptop"
-msgstr ""
+msgstr "كمبيوتر محمول"
 
 #. SLE/patterns-desktop/patterns-desktop-laptop/description
 msgid "Tools designed specifically for laptop computers."
-msgstr ""
+msgstr "أدوات مصممة خصيصًا لأجهزة الكمبيوتر المحمول."
 
 #. SLE/patterns-desktop/patterns-desktop-multimedia/summary
 #. SLE/patterns-desktop/patterns-desktop-multimedia_opt/summary
 msgid "Multimedia"
-msgstr ""
+msgstr "الوسائط المتعددة"
 
 #. SLE/patterns-desktop/patterns-desktop-multimedia/description
 #. SLE/patterns-desktop/patterns-desktop-multimedia_opt/description
@@ -867,18 +919,20 @@ msgid ""
 "Multimedia players, sound editing tools, video and image manipulation "
 "applications."
 msgstr ""
+"برامج تشغيل الوسائط المتعددة وأدوات تحرير الصوت وتطبيقات استخدام مقاطع "
+"الفيديو والصور."
 
 #. SLE/patterns-desktop/patterns-desktop-technical_writing/summary
 msgid "Technical Writing"
-msgstr ""
+msgstr "الكتابة التقنية"
 
 #. SLE/patterns-desktop/patterns-desktop-technical_writing/description
 msgid "Authoring tools and editors for creating technical documentation."
-msgstr ""
+msgstr "أدوات الكتابة والتحرير لإنشاء وثائق تقنية."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment (Wayland)"
-msgstr ""
+msgstr "بيئة سطح المكتب GNOME (Wayland)‎"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/description
 msgid ""
@@ -886,29 +940,31 @@ msgid ""
 "users. This pattern installs components for GNOME to run with Wayland and "
 "X11 technologies."
 msgstr ""
+"تعد بيئة سطح المكتب GNOME عبارة عن سطح مكتب حدسي وجذاب للمستخدمين. يعمل هذا "
+"النمط على تثبيت المكونات لتشغيل GNOME مع تقنيات Wayland وX11."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/category
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
 msgid "GNOME Desktop"
-msgstr ""
+msgstr "سطح المكتب GNOME"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
-msgstr ""
+msgstr "رسومات GNOME"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
-msgstr ""
+msgstr "معالجة الصور الرقمية والرسومات"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
 msgid "GNOME Multimedia"
-msgstr ""
+msgstr "الوسائط المتعددة في GNOME"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_x11/summary
 msgid "GNOME Desktop Environment (X11)"
-msgstr ""
+msgstr "بيئة سطح المكتب GNOME (X11)‎"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_x11/description
 msgid ""
@@ -917,18 +973,22 @@ msgid ""
 "including Office suite, E-Mail client, Web Browser, File Manager, running "
 "with X11 technology."
 msgstr ""
+"إن بيئة سطح المكتب GNOME هي عبارة عن سطح مكتب حدسي وجذاب للمستخدمين. يعمل "
+"هذا النمط على تثبيت بيئة سطح المكتب GNOME بكامل ميزاتها، بما في ذلك مجموعة "
+"تطبيقات Office وعميل البريد الإلكتروني ومستعرض الويب وميزة إدارة الملفات، "
+"للعمل من خلال تقنية X11."
 
 #. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
-msgstr ""
+msgstr "برامج Office"
 
 #. SLE/patterns-office/patterns-office-office/description
 msgid "Office software for your desktop environment including LibreOffice."
-msgstr ""
+msgstr "برامج Office لبيئة سطح المكتب لديك بما في ذلك LibreOffice."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "دعم تشفير الأجهزة لأنظمة z"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
