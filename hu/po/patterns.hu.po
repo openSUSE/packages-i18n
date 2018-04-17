@@ -16,10 +16,10 @@ msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2018-04-16 13:01+0000\n"
-"PO-Revision-Date: 2018-04-12 15:53+0000\n"
+"PO-Revision-Date: 2018-04-17 16:28+0000\n"
 "Last-Translator: Robert Taisz <robert.taisz@emerald.hu>\n"
-"Language-Team: Hungarian <https://l10n.opensuse.org/projects/packages-i18n/"
-"patterns-sle-15/hu/>\n"
+"Language-Team: Hungarian <https://l10n.opensuse.org/projects/packages-i18n"
+"/patterns-sle-15/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,18 +58,10 @@ msgstr ""
 "rendszerleállások csökkentéséhez."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
-#, fuzzy
-#| msgid "HPC compute node"
 msgid "HPC Basic Compute Node"
-msgstr "HPC számítási csomópont"
+msgstr "HPC alapszintű számítási csomópont"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minmal software image and mainly runs simultion "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. A basset of numerical "
-#| "libraries should also be installed."
 msgid ""
 "A compute node has a minimal software image and mainly runs simulation "
 "programs. Services on this node should be reduced to a bare minimum and the "
@@ -79,8 +71,7 @@ msgstr ""
 "A számítási csomóponthoz minimális szoftverlemezkép tartozik, és elsősorban "
 "szimulációs programokat futtat. Az ebben a csomópontban használt "
 "szolgáltatásokat minimálisra kell korlátozni, és a csomópontnak automatikus "
-"telepítésűnek *kell* lennie. A numerikus könyvtárak készletét is telepíteni "
-"kell."
+"telepítésűnek *kell* lennie. A HPC mintáinak könyvtárait is telepíteni kell."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -88,42 +79,28 @@ msgid "Server Functions"
 msgstr "Kiszolgáló"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/summary
-#, fuzzy
-#| msgid "KDE development packages"
 msgid "HPC Development Packages"
-msgstr "Csomagok KDE-fejlesztéshez"
+msgstr "Csomagok HPC-fejlesztéshez"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the hpc-compute node and adds additionally "
-#| "the compilers and includes also the relevant managment packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the HPC libraries and adds additionally the "
 "compilers and includes also the relevant management packages."
 msgstr ""
 "Ez a csomag tartalmazza a HPC alkalmazások fejlesztéséhez szükséges összes "
-"fontos csomagot. A hpc-compute csomóponttól függ, a fordítóprogramokat "
-"egészíti ki, és tartalmazza a megfelelő felügyeleti csomagokat is."
+"fontos csomagot. A HPC könyvtáraktól függ, a fordítóprogramokat egészíti ki, "
+"és tartalmazza a megfelelő felügyeleti csomagokat is."
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/category
 msgid "Development"
 msgstr "Fejlesztés"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized libraries"
 msgid "HPC modularized Libraries"
 msgstr "HPC moduláris könyvtárak"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in a hpc environment. Especially these libariries allows you to "
-#| "install a mpi enabled libarary for different mpi libraries."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. Especially these libraries allows you to install "
@@ -131,9 +108,9 @@ msgid ""
 "them to load first via the module command."
 msgstr ""
 "Ez a csomag tartalmazza az összes moduláris csomagot, így azok "
-"felhasználhatók a HPC környezetben. Ezekkel a könyvtárakkal a különböző MPI "
-"könyvtárakhoz használható olyan könyvtárak telepíthetők, amelyeknél "
-"engedélyezve van az MPI."
+"felhasználhatók a HPC környezetben. Ezekkel a könyvtárakkal több MPI "
+"változat telepíthető párhuzamosan. A könyvtárak használatához először be "
+"kell tölteni azokat a module paranccsal."
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
@@ -1060,13 +1037,15 @@ msgstr ""
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "z HW rendszer kriptográfiai támogatása"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
 msgstr ""
+"Azok a csomagok, amelyek telepítik a z HW rendszer kriptográfiai készletét a "
+"z rendszerben."
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "A HPC alkalmazások fejlesztéséhez szükséges csomagok"
