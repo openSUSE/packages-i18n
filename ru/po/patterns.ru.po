@@ -13,16 +13,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-04-18 08:11+0000\n"
-"PO-Revision-Date: 2018-04-13 10:00+0000\n"
+"PO-Revision-Date: 2018-04-23 10:31+0000\n"
 "Last-Translator: Nikita Maynagashev <maynagashev@palex.ru>\n"
-"Language-Team: Russian <https://l10n.opensuse.org/projects/packages-i18n/"
-"patterns-sle-15/ru/>\n"
+"Language-Team: Russian <https://l10n.opensuse.org/projects/packages-i18n"
+"/patterns-sle-15/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
@@ -56,18 +56,10 @@ msgstr ""
 "ее простоев."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
-#, fuzzy
-#| msgid "HPC compute node"
 msgid "HPC Basic Compute Node"
-msgstr "Режим вычисления HPC"
+msgstr "Базовый вычислительный узел HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minmal software image and mainly runs simultion "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. A basset of numerical "
-#| "libraries should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
@@ -77,7 +69,8 @@ msgstr ""
 "На вычислительном узле установлен образ с минимальным набором ПО, и он в "
 "основном используется для запуска программ симуляции. На этом узле должен "
 "быть лишь минимальный набор сервисов, и он *должен* устанавливаться в "
-"автоматическом режиме. Также следует установить пакет цифровых библиотек."
+"автоматическом режиме. Также следует установить шаблон модульных библиотек "
+"HPC."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -85,42 +78,28 @@ msgid "Server Functions"
 msgstr "Серверные функции"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/summary
-#, fuzzy
-#| msgid "KDE development packages."
 msgid "HPC Development Packages"
-msgstr "Пакеты разработки для KDE."
+msgstr "Пакеты разработки для HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the hpc-compute node and adds additionally "
-#| "the compilers and includes also the relevant managment packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC modularized libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 "Этот пакет содержит все необходимые пакеты для разработки приложений HPC. "
-"Ему необходим вычислительный узел HPC, он добавляет дополнительные "
-"компиляторы и включает соответствующие пакеты управления."
+"Ему необходим шаблон модульных библиотек HPC. Кроме того, в нем есть "
+"дополнительные компиляторы GNU и соответствующие пакеты управления."
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/category
 msgid "Development"
 msgstr "Разработка"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized libraries"
 msgid "HPC modularized Libraries"
 msgstr "Модульные библиотеки HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in a hpc environment. Especially these libariries allows you to "
-#| "install a mpi enabled libarary for different mpi libraries."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
@@ -128,8 +107,9 @@ msgid ""
 "module command first."
 msgstr ""
 "Этот пакет содержит все модульные библиотеки, которые можно использовать в "
-"среде hpc. В частности, вы сможете установить библиотеку с поддержкой mpi "
-"для различных библиотек mpi."
+"среде HPC. Они позволяют паралелльно установить несколько разновидностей "
+"MPI. Для использования этих библиотек их необходимо сначала загрузить через "
+"команду module."
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
@@ -1049,13 +1029,15 @@ msgstr ""
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "Поддержка шифрования HW для System z"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
 msgstr ""
+"Набор пакетов, которые устанавливают стек шифрования System z HZ для System "
+"z."
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "Пакеты, необходимые для разработки приложений HPC"
