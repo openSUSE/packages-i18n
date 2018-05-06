@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: patterns.de\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2018-04-06 12:26+0000\n"
-"PO-Revision-Date: 2018-04-21 16:02+0000\n"
-"Last-Translator: Franziska Weinberger <f.weinberger@gemino.de>\n"
+"PO-Revision-Date: 2018-05-06 16:03+0000\n"
+"Last-Translator: Sarah Kriesch <ada.lovelace@gmx.de>\n"
 "Language-Team: German <https://l10n.opensuse.org/projects/packages-i18n"
 "/patterns-master/de/>\n"
 "Language: de\n"
@@ -886,7 +886,7 @@ msgstr ""
 #. leap/patterns-hpc/patterns-hpc-compute_node/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
-msgstr "Grundlegender HPC-Compute-Knoten"
+msgstr "Grundlegender HPC-Computer-Knoten"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
@@ -896,6 +896,11 @@ msgid ""
 "node *must* be installed in a automatic manner. The pattern HPC libraries "
 "should also be installed."
 msgstr ""
+"Ein Computer-Knoten hat ein minimales Software-Image und lässt hauptsächlich "
+"Simulationsprogramme laufen. Dienste sollten auf diesem Rechner auf ein "
+"absolutes Minimum reduziert werden  und der Rechner *muss* in "
+"automatisierter Form installiert werden. Das Pattern HPC libraries sollten "
+"auch installiert sein."
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
@@ -936,6 +941,9 @@ msgid ""
 "applications. It depends on the HPC libraries and adds additionally the "
 "compilers and includes also the relevant management packages."
 msgstr ""
+"Dieses Paket bietet alle relevanten Pakete zur Entwicklung von HPC-"
+"Applikationen. Es hängt von HPC-Bibliotheken ab und fügt zusätzlich die "
+"Compiler hinzu und beinhaltet auch die relevanten Management-Pakete."
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
@@ -950,6 +958,11 @@ msgid ""
 "several MPI flavors in parallel. In order to use this libraries you have "
 "them to load first via the module command."
 msgstr ""
+"Dieses Paket bietet alle modularisierten Bibliotheken, so dasss sie in einer "
+"HPC-Umgebung verwendet werden können. Besonders diese Bibliotheken erlauben "
+"es ihnen  unterschiedliche MPI-Varianten parallel zu installieren. Um diese "
+"Bibliotheken verwenden zu können, müssen sie diese zuerst mit dem Modul-"
+"Befehl laden."
 
 #. leap/patterns-kde/patterns-kde-devel_kde/summary
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde/summary
@@ -1461,7 +1474,7 @@ msgstr ""
 
 #. leap/patterns-server/patterns-server-kvm_server-32bit/description
 msgid "The 32bit pattern complementing kvm_server."
-msgstr ""
+msgstr "Die 32Bit-Pattern-Ergänzung kvm_server."
 
 #. leap/patterns-server/patterns-server-kvm_tools/summary
 #. leap/patterns-server/patterns-server-kvm_tools-32bit/summary
@@ -1480,7 +1493,7 @@ msgstr ""
 
 #. leap/patterns-server/patterns-server-kvm_tools-32bit/description
 msgid "The 32bit pattern complementing kvm_tools."
-msgstr ""
+msgstr "Die 32Bit-Ergänzung kvm_tools."
 
 #. leap/patterns-server/patterns-server-lamp_server/summary
 #. leap/patterns-server/patterns-server-lamp_server-32bit/summary
@@ -1554,7 +1567,7 @@ msgstr "Hostserver für Xen Virtual Machine"
 
 #. leap/patterns-server/patterns-server-xen_server-32bit/description
 msgid "The 32bit pattern complementing xen_server."
-msgstr ""
+msgstr "Die 32Bit-Pattern-Ergänzung xen_server."
 
 #. leap/patterns-server/patterns-server-xen_tools/summary
 #. leap/patterns-server/patterns-server-xen_tools-32bit/summary
@@ -1573,7 +1586,7 @@ msgstr ""
 
 #. leap/patterns-server/patterns-server-xen_tools-32bit/description
 msgid "The 32bit pattern complementing xen_tools."
-msgstr ""
+msgstr "Die 32Bit-Pattern-Ergänzung xen_tools."
 
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
@@ -1604,10 +1617,8 @@ msgstr "XFCE-Laptop"
 
 #. leap/patterns-xfce/patterns-xfce-xfce_laptop/category
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce_laptop/category
-#, fuzzy
-#| msgid "KDE Desktop"
 msgid "XFCE Desktop"
-msgstr "KDE-Desktop"
+msgstr "XFCE-Desktop"
 
 #. leap/patterns-xfce/patterns-xfce-xfce_office/summary
 #. leap/patterns-xfce/patterns-xfce-xfce_office/description
@@ -1755,32 +1766,25 @@ msgid "Packages needed to enable SELinux on openSUSE Kubic"
 msgstr "Pakete zur Aktivierung von SELinux auf openSUSE Kubic notwendig"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-selinux/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable SELinux on SUSE CaaS Platform "
 "or openSUSE Kubic product."
 msgstr ""
-"Das sind zusätzliche Pakete, die auf einer SUSE CaaS Plattform oder einem "
-"openSUSE Kubic Produkt sein sollten."
+"Das sind Pakete, die auf einer SUSE CaaS Plattform oder einem openSUSE Kubic "
+"Produkt zur Aktivierung von SELinux benötigt werden."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
 msgid "Packages needed to let openSUSE Kubic act as LDAP client"
-msgstr ""
+msgstr "notwendige Pakete um openSUSE Kubic als LDAP Client agieren zu lassen"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable LDAP client support via sssd "
 "on SUSE CaaS Platform or openSUSE Kubic product."
 msgstr ""
-"Das sind zusätzliche Pakete, die auf einer SUSE CaaS Plattform oder einem "
-"openSUSE Kubic Produkt sein sollten."
+"Das sind  Pakete, die auf einer SUSE CaaS Plattform oder einem openSUSE "
+"Kubic Produkt zur Aktivierung der LDAP Client Unterstützung via sssd "
+"benötigt werden."
 
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment"
