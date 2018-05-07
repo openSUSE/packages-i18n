@@ -4,7 +4,9 @@
 # and it could be called never more. Once regular projects maintenance will be
 # implemented, it could be deleted. This is just a source of needed code.
 
-BRANCH=master
+BRANCH_ON_GITHUB=master
+BRANCH_ON_WEBLATE=$BRANCH_ON_GITHUB
+BRANCH_SLUT=master
 
 set -o errexit
 
@@ -12,9 +14,9 @@ set -o errexit
 function generate() {
 	#echo "weblate_create_project packages-i18n" >&3
 	if test "$1" = a ; then
-		echo "weblate_create_component packages-i18n \"$1 $BRANCH\" \"\" \"$(github_repo openSUSE packages-i18n)\" \"\" \"$(github_branch_check openSUSE packages-i18n $BRANCH)\" $BRANCH \"50-pot/$1.pot\" \"*/po/$1.*.po\"" >&3
+		echo "weblate_create_component packages-i18n \"$1 $BRANCH_ON_WEBLATE\" \"$1-$BRANCH_SLUT\" \"$(github_repo openSUSE packages-i18n)\" \"\" \"$(github_branch_check openSUSE packages-i18n $BRANCH_ON_GITHUB)\" $BRANCH_ON_GITHUB \"50-pot/$1.pot\" \"*/po/$1.*.po\"" >&3
 	else
-		echo "weblate_create_component packages-i18n \"$1 $BRANCH\" \"\" \"$(weblatelink_repo packages-i18n a-master)\" \"\" \"\" $BRANCH \"50-pot/$1.pot\" \"*/po/$1.*.po\"" >&3
+		echo "weblate_create_component packages-i18n \"$1 $BRANCH_ON_WEBLATE\" \"$1-$BRANCH_SLUT\" \"$(weblatelink_repo packages-i18n a-$BRANCH_SLUT)\" \"\" \"\" $BRANCH_ON_GITHUB \"50-pot/$1.pot\" \"*/po/$1.*.po\"" >&3
 	fi
 }
 

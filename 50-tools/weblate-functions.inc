@@ -58,9 +58,10 @@ function weblate_create_project() {
 #		"push_on_commit":"true",
 #	}
 #EOF
+#project = Project(name="$NAME",slug="$SLUG",web="$WEB",push_on_commit=True)
 	weblate_django_shell <<EOF
 from weblate.trans.models.project import Project
-project = Project(name="$NAME",slug="$SLUG",web="$WEB",push_on_commit=True)
+project = Project(name="$NAME",slug="$SLUG",web="$WEB")
 project.save()
 EOF
 }
