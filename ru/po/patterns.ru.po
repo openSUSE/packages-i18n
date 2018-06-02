@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-04-06 12:26+0000\n"
-"PO-Revision-Date: 2018-04-23 13:05+0000\n"
-"Last-Translator: Nikita Maynagashev <maynagashev@palex.ru>\n"
+"PO-Revision-Date: 2018-06-02 18:42+0000\n"
+"Last-Translator: Alex Minton <alex239@gmail.com>\n"
 "Language-Team: Russian <https://l10n.opensuse.org/projects/packages-i18n"
 "/patterns-master/ru/>\n"
 "Language: ru\n"
@@ -213,12 +213,14 @@ msgstr "32-разрядный шаблон, который дополняет mi
 #. leap/patterns-base/patterns-base-readonly_root_tools/summary
 #. tumbleweed/patterns-base/patterns-base-readonly_root_tools/summary
 msgid "Read-Only Root Filesystem Tools"
-msgstr ""
+msgstr "Инструменты для корневой ФС только для чтения"
 
 #. leap/patterns-base/patterns-base-readonly_root_tools/description
 #. tumbleweed/patterns-base/patterns-base-readonly_root_tools/description
 msgid "Tools & Update Stack for systems with a read-only root filesystem."
 msgstr ""
+"Инструменты и стек обновления для систем с корневой файловой системой только "
+"для чтения."
 
 #. leap/patterns-base/patterns-base-sw_management/summary
 #. leap/patterns-base/patterns-base-sw_management-32bit/summary
@@ -881,6 +883,10 @@ msgid ""
 "node *must* be installed in a automatic manner. The pattern HPC libraries "
 "should also be installed."
 msgstr ""
+"У вычислительного узла минимальный набор ПО, в основном на нём запускаются "
+"программы симуляции. На таком узле должен быть абсолютный минимум служб и "
+"установка должна производиться в автоматическом режиме. Также необходимо "
+"установить шаблон «Библиотеки HPC»."
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
@@ -921,6 +927,9 @@ msgid ""
 "applications. It depends on the HPC libraries and adds additionally the "
 "compilers and includes also the relevant management packages."
 msgstr ""
+"Этот пакет предоставляет всё необходимое для разработки HPC-приложений. Он "
+"зависит от библиотек HPC и содержит дополнительные компиляторы и пакеты "
+"управления."
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
@@ -935,6 +944,10 @@ msgid ""
 "several MPI flavors in parallel. In order to use this libraries you have "
 "them to load first via the module command."
 msgstr ""
+"Этот пакет предоставляет все модуляризированные библиотеки для истользования "
+"в HPC-окружении. В частности эти библиотеки позволяют установить несколько "
+"выпусков MPI параллельно. Чтобы использовать эти библиотеки, их сперва нужно "
+"загрузить с помощью команды module."
 
 #. leap/patterns-kde/patterns-kde-devel_kde/summary
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde/summary
@@ -972,10 +985,8 @@ msgstr ""
 
 #. leap/patterns-kde/patterns-kde-kde/summary
 #. tumbleweed/patterns-kde/patterns-kde-kde/summary
-#, fuzzy
-#| msgid "KDE Desktop Environment"
 msgid "KDE Plasma 5 Desktop Environment"
-msgstr "Среда рабочего стола KDE"
+msgstr "Среда рабочего стола KDE Plasma 5"
 
 #. leap/patterns-kde/patterns-kde-kde/description
 #. tumbleweed/patterns-kde/patterns-kde-kde/description
@@ -1017,10 +1028,8 @@ msgstr "Приложения KDE — Инструменты для обучен�
 #. tumbleweed/patterns-kde/patterns-kde-kde_office/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_utilities/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_utilities_opt/category
-#, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "KDE Desktop"
-msgstr "Рабочий стол KDE Plasma 5"
+msgstr "Рабочий стол KDE"
 
 #. leap/patterns-kde/patterns-kde-kde_games/summary
 #. tumbleweed/patterns-kde/patterns-kde-kde_games/summary
@@ -1176,10 +1185,8 @@ msgstr ""
 
 #. leap/patterns-lxde/patterns-lxde-lxde_laptop/category
 #. tumbleweed/patterns-lxde/patterns-lxde-lxde_laptop/category
-#, fuzzy
-#| msgid "LXDE Laptop"
 msgid "LXDE Desktop"
-msgstr "Ноутбук LXDE"
+msgstr "Рабочий стол LXDE"
 
 #. leap/patterns-lxde/patterns-lxde-lxde_office/summary
 #. leap/patterns-lxde/patterns-lxde-lxde_office/description
@@ -1231,10 +1238,8 @@ msgstr ""
 #. tumbleweed/patterns-mate/patterns-mate-mate_laptop/category
 #. tumbleweed/patterns-mate/patterns-mate-mate_office_opt/category
 #. tumbleweed/patterns-mate/patterns-mate-mate_utilities/category
-#, fuzzy
-#| msgid "MATE Laptop"
 msgid "MATE Desktop"
-msgstr "Ноутбук MATE"
+msgstr "Рабочий стол MATE"
 
 #. leap/patterns-mate/patterns-mate-mate_basis/summary
 #. tumbleweed/patterns-mate/patterns-mate-mate_basis/summary
@@ -1449,7 +1454,7 @@ msgstr ""
 
 #. leap/patterns-server/patterns-server-kvm_server-32bit/description
 msgid "The 32bit pattern complementing kvm_server."
-msgstr ""
+msgstr "32-битный шаблон, дополняющий kvm_server."
 
 #. leap/patterns-server/patterns-server-kvm_tools/summary
 #. leap/patterns-server/patterns-server-kvm_tools-32bit/summary
@@ -1468,7 +1473,7 @@ msgstr ""
 
 #. leap/patterns-server/patterns-server-kvm_tools-32bit/description
 msgid "The 32bit pattern complementing kvm_tools."
-msgstr ""
+msgstr "32-битный шаблон, дополняющий"
 
 #. leap/patterns-server/patterns-server-lamp_server/summary
 #. leap/patterns-server/patterns-server-lamp_server-32bit/summary
@@ -1542,7 +1547,7 @@ msgstr "Хост-сервер виртуальных машин Xen"
 
 #. leap/patterns-server/patterns-server-xen_server-32bit/description
 msgid "The 32bit pattern complementing xen_server."
-msgstr ""
+msgstr "32-битный шаблон, дополняющий"
 
 #. leap/patterns-server/patterns-server-xen_tools/summary
 #. leap/patterns-server/patterns-server-xen_tools-32bit/summary
@@ -1561,7 +1566,7 @@ msgstr ""
 
 #. leap/patterns-server/patterns-server-xen_tools-32bit/description
 msgid "The 32bit pattern complementing xen_tools."
-msgstr ""
+msgstr "32-битный шаблон, дополняющий"
 
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
@@ -1592,10 +1597,8 @@ msgstr "Ноутбук XFCE"
 
 #. leap/patterns-xfce/patterns-xfce-xfce_laptop/category
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce_laptop/category
-#, fuzzy
-#| msgid "XFCE Laptop"
 msgid "XFCE Desktop"
-msgstr "Ноутбук XFCE"
+msgstr "Рабочий стол XFCE"
 
 #. leap/patterns-xfce/patterns-xfce-xfce_office/summary
 #. leap/patterns-xfce/patterns-xfce-xfce_office/description
@@ -1687,56 +1690,40 @@ msgid "Primary Functions"
 msgstr "Основные функции"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/summary
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Packages needed to enable Apparmor on openSUSE Kubic"
-msgstr "Пакеты только для DVD openSUSE Kubic"
+msgstr "Пакеты, необходимые для включения Apparmor на openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable Apparmor on SUSE CaaS "
 "Platform or openSUSE Kubic product."
 msgstr ""
-"Это дополнительные пакеты, которые должны быть на платформе SUSE CaaS "
-"Platform или в продукте openSUSE Kubic."
+"Это пакеты, которые должны быть на платформе SUSE CaaS Platform или в "
+"продукте openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
 msgid "Packages needed to run openSUSE Kubic on real hardware"
-msgstr ""
+msgstr "Пакеты, необходимые для запуска openSUSE Kubic на реальном оборудовании"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to install SUSE CaaS Platform or "
 "openSUSE Kubic product on real hardeare."
 msgstr ""
-"Это дополнительные пакеты, которые должны быть на платформе SUSE CaaS "
-"Platform или в продукте openSUSE Kubic."
+"Это пакеты, необходимые для установки платформы SUSE CaaS или продукта "
+"openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/summary
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
-msgstr "Пакеты только для DVD openSUSE Kubic"
+msgstr "Пакеты, необходимые для включения Apparmor на openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable IMA/EVM on SUSE CaaS Platform "
 "or openSUSE Kubic product."
 msgstr ""
-"Это дополнительные пакеты, которые должны быть на платформе SUSE CaaS "
-"Platform или в продукте openSUSE Kubic."
+"Это пакеты, необходимые для включения Apparmor на платформе SUSE CaaS или в "
+"продукте openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE Kubic"
@@ -1751,38 +1738,28 @@ msgstr ""
 "Platform или в продукте openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-selinux/summary
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Packages needed to enable SELinux on openSUSE Kubic"
-msgstr "Пакеты только для DVD openSUSE Kubic"
+msgstr "Пакеты, необходимые для включения IMA/EVM на openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-selinux/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable SELinux on SUSE CaaS Platform "
 "or openSUSE Kubic product."
 msgstr ""
-"Это дополнительные пакеты, которые должны быть на платформе SUSE CaaS "
-"Platform или в продукте openSUSE Kubic."
+"Это пакеты, необходимые для включения IMA/EVM на платформе SUSE CaaS или в "
+"продукте openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
 msgid "Packages needed to let openSUSE Kubic act as LDAP client"
-msgstr ""
+msgstr "Пакеты, необходимые для работы openSUSE Kubic в качестве LDAP-клиента"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
-#, fuzzy
-#| msgid ""
-#| "This are the additonal packages which should be on a SUSE CaaS Platform "
-#| "or openSUSE Kubic product."
 msgid ""
 "This are packages which are required to enable LDAP client support via sssd "
 "on SUSE CaaS Platform or openSUSE Kubic product."
 msgstr ""
-"Это дополнительные пакеты, которые должны быть на платформе SUSE CaaS "
-"Platform или в продукте openSUSE Kubic."
+"Это пакеты, необходимые для включения поддержки клиента LDAP черз sssd на "
+"платформе SUSE CaaS Platform или в продукте openSUSE Kubic."
 
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment"
