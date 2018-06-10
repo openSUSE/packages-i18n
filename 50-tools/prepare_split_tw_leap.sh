@@ -80,7 +80,7 @@ tail -n +8 a.pot >> _packages.pot && mv _packages.pot a.pot
 
 for ii in aspell ghc gnome golang google gstreamer gtk kde leechcraft libreoffice libqt lib mate myspell perl php python rubygem tesseract texlive-specs texlive wx xfce4 yast2; do
   firstChar=${ii:0:1}
-  [ -e "$fistChar.pot" ] || continue
+  [ -e "$firstChar.pot" ] || continue
   log -n "$ii "
   msggrep -X -e "^[^/]\+/$ii" "$firstChar.pot" -o $ii.pot --no-wrap
   if [ -e "$ii.pot" ]; then
