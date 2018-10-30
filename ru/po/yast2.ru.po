@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-06 12:26+0000\n"
+"POT-Creation-Date: 2018-10-30 14:08+0000\n"
 "PO-Revision-Date: 2017-07-28 18:46+0000\n"
 "Last-Translator: Alex Minton <alex239@gmail.com>\n"
 "Language-Team: Russian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -167,18 +167,6 @@ msgstr ""
 "Скрипты и шаблоны, необходимые для пересборки существующих модулей и "
 "компонентов YaST2 (как на ruby, так и на C++)."
 
-#. leap/yast2-caasp/summary
-#. tumbleweed/yast2-caasp/summary
-#, fuzzy
-#| msgid "YaST2 - IPL loader"
-msgid "YaST2 - CaaSP Module"
-msgstr "YaST2 — Загрузчик IPL"
-
-#. leap/yast2-caasp/description
-#. tumbleweed/yast2-caasp/description
-msgid "Containers as a Service Platform (CaaSP) specific module."
-msgstr ""
-
 #. leap/yast2-cluster/summary
 #. tumbleweed/yast2-cluster/summary
 msgid "Configuration of cluster"
@@ -278,20 +266,6 @@ msgid ""
 msgstr ""
 "Файлы данных для yast2-country вместе с наиболее часто используемыми "
 "функциями языкового API (языковой модуль)"
-
-#. leap/yast2-dbus-server/summary
-#. tumbleweed/yast2-dbus-server/summary
-msgid "YaST2 - DBus Server"
-msgstr "YaST2 — Сервер DBus"
-
-#. leap/yast2-dbus-server/description
-#. tumbleweed/yast2-dbus-server/description
-msgid ""
-"This package contains YaST DBus service, it provides DBus access to YaST "
-"components."
-msgstr ""
-"Этот пакет содержит службу YaST DBus, предоставляющую доступ по DBus к "
-"компонентам YaST."
 
 #. leap/yast2-devtools/summary
 #. tumbleweed/yast2-devtools/summary
@@ -569,6 +543,16 @@ msgstr ""
 "Этот агент используется различными модулями YaST2 для работы с LDAP. Он "
 "позволяет осуществлять поиск по дереву LDAP и добавлять/удалять/изменять "
 "записи на сервере LDAP."
+
+#. leap/yast2/yast2-logs/summary
+msgid "Collecting YAST information"
+msgstr ""
+
+#. leap/yast2/yast2-logs/description
+#, fuzzy
+#| msgid "This package contains the openSUSE theme for YaST2."
+msgid "This package contains scripts for handling YAST logs."
+msgstr "Этот пакет содержит тему openSUSE для YaST2."
 
 #. leap/yast2-mail/summary
 #. tumbleweed/yast2-mail/summary
@@ -886,6 +870,18 @@ msgstr ""
 #| msgid "The YaST2 component for configuring the inetd and xinetd daemons."
 msgid "The YaST2 component for configuring Rear - Relax and Recover Backup"
 msgstr "Компонент YaST2 для настройки демонов inetd и xinetd."
+
+#. leap/yast2-registration/summary
+#, fuzzy
+#| msgid "YaST2 - Add-On media installation code"
+msgid "YaST2 - Registration Module"
+msgstr "YaST2 — Код установки носителей с дополнениями"
+
+#. leap/yast2-registration/description
+msgid ""
+"The registration module to register products and/or to fetch an update "
+"source (mirror) automatically."
+msgstr ""
 
 #. leap/yast2-rmt/summary
 #. tumbleweed/yast2-rmt/summary
@@ -1811,14 +1807,14 @@ msgid "YaST2 - Translations for Serbian."
 msgstr "YaST2 — Перевод на сербский язык."
 
 #. leap/yast2-trans/yast2-trans-sr-latin/summary
-#. tumbleweed/yast2-trans/yast2-trans-sr-Latn/summary
+#. tumbleweed/yast2-trans/yast2-trans-sr-latin/summary
 #, fuzzy
 #| msgid "YaST2 - Serbian Translations"
 msgid "YaST2 - Serbian (Latin) Translations"
 msgstr "YaST2 — Сербский перевод"
 
 #. leap/yast2-trans/yast2-trans-sr-latin/description
-#. tumbleweed/yast2-trans/yast2-trans-sr-Latn/description
+#. tumbleweed/yast2-trans/yast2-trans-sr-latin/description
 #, fuzzy
 #| msgid "YaST2 - Translations for Serbian."
 msgid "YaST2 - Translations for Serbian (Latin)."
@@ -2092,6 +2088,30 @@ msgstr ""
 "YaST2 доступным для YCP-приложений (YCP — это скриптовый язык, на котором "
 "написано большинство модулей YaST2)."
 
+#. tumbleweed/yast2-boot-server/summary
+msgid "YaST2 - Network Booting and Wake-On-Lan Configuration"
+msgstr "YaST2 — Настройка загрузки по сети и Wake-On-Lan"
+
+#. tumbleweed/yast2-boot-server/description
+msgid "YaST2 module for network booting and Wake-On-Lan."
+msgstr "Модуль YaST2 для настройки загрузки по сети и Wake-On-Lan."
+
+#. tumbleweed/yast2-caasp/summary
+#, fuzzy
+#| msgid "YaST2 - IPL loader"
+msgid "YaST2 - CaaSP Module"
+msgstr "YaST2 — Загрузчик IPL"
+
+#. tumbleweed/yast2-caasp/description
+msgid "Containers as a Service Platform (CaaSP) specific module."
+msgstr ""
+
+#. tumbleweed/yast2-crowbar/summary
+#, fuzzy
+#| msgid "Configuration of iplb"
+msgid "Configuration of crowbar"
+msgstr "Настройка iplb"
+
 #. tumbleweed/yast2-docker/summary
 msgid "YaST2 - GUI for docker management"
 msgstr "YaST2 — GUI для управления docker"
@@ -2100,6 +2120,32 @@ msgstr "YaST2 — GUI для управления docker"
 msgid "Provides easy to use GUI for running docker containers."
 msgstr ""
 "Предоставляет простой в использовании GUI для запуска контейнеров docker."
+
+#. tumbleweed/yast2-samba-provision/summary
+#, fuzzy
+#| msgid "YaST2 - Samba Client Configuration"
+msgid "YaST2 - Samba AD DC provision"
+msgstr "YaST2 — Настройка клиента Samba"
+
+#. tumbleweed/yast2-samba-provision/description
+#, fuzzy
+#| msgid ""
+#| "This package contains the YaST2 component for configuration of an iSCSI "
+#| "client."
+msgid ""
+"This package contains the YaST2 component to configure samba as an Active "
+"Directory (TM) Domain Controller."
+msgstr "Этот пакет содержит компонент YaST2 для настройки клиента iSCSI."
+
+#~ msgid "YaST2 - DBus Server"
+#~ msgstr "YaST2 — Сервер DBus"
+
+#~ msgid ""
+#~ "This package contains YaST DBus service, it provides DBus access to YaST "
+#~ "components."
+#~ msgstr ""
+#~ "Этот пакет содержит службу YaST DBus, предоставляющую доступ по DBus к "
+#~ "компонентам YaST."
 
 #~ msgid "YaST2 - Authentication Server Configuration"
 #~ msgstr "YaST2 — Настройка сервера аутентификации"
@@ -2155,12 +2201,6 @@ msgstr ""
 #~ msgid "A wizard for creating your own Add-On product"
 #~ msgstr "Мастер создания ваших собственных дополнений"
 
-#~ msgid "YaST2 - Network Booting and Wake-On-Lan Configuration"
-#~ msgstr "YaST2 — Настройка загрузки по сети и Wake-On-Lan"
-
-#~ msgid "YaST2 module for network booting and Wake-On-Lan."
-#~ msgstr "Модуль YaST2 для настройки загрузки по сети и Wake-On-Lan."
-
 #~ msgid "YaST2 - Installation from Live Media"
 #~ msgstr "YaST2 — Установка с live-носителя"
 
@@ -2181,11 +2221,6 @@ msgstr ""
 #~ "Мастер создания ваших собственных продуктов (установочные образы, "
 #~ "загрузочные образы, образы XEN и т.д.) на основе имеющихся источников "
 #~ "установки."
-
-#, fuzzy
-#~| msgid "YaST2 - Add-On media installation code"
-#~ msgid "YaST2 - Registration Module"
-#~ msgstr "YaST2 — Код установки носителей с дополнениями"
 
 #~ msgid "All YaST .pot Files (for devel only)"
 #~ msgstr "Все .pot-файлы YaST (только для разработчиков)"

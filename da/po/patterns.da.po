@@ -2,17 +2,43 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2018-04-06 12:26+0000\n"
+"POT-Creation-Date: 2018-10-30 14:13+0000\n"
 "PO-Revision-Date: 2018-09-11 01:11+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: Danish <https://l10n.opensuse.org/projects/packages-i18n"
-"/patterns-master/da/>\n"
+"Language-Team: Danish <https://l10n.opensuse.org/projects/packages-i18n/"
+"patterns-master/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
+
+#. leap-nonoss/patterns-non_oss/summary
+#. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/summary
+#. tumbleweed-nonoss/patterns-non_oss/summary
+#. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/summary
+msgid "Misc. Proprietary Packages"
+msgstr "Div. proprietære pakker"
+
+#. leap-nonoss/patterns-non_oss/description
+#. tumbleweed-nonoss/patterns-non_oss/description
+msgid "Packages that are proprietary and not under an Open Source license"
+msgstr "Pakker som er proprietære og ikke under en open source-licens"
+
+#. leap-nonoss/patterns-non_oss/category
+#. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/category
+#. tumbleweed-nonoss/patterns-non_oss/category
+#. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/category
+#, fuzzy
+#| msgid "Office Software"
+msgid "Proprietary Software"
+msgstr "Kontorsoftware"
+
+#. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/description
+#. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/description
+msgid "Packages that are proprietary and not under an Open Source license."
+msgstr "Pakker som er proprietære og ikke under en open source-licens."
 
 #. leap/dhcp/dhcp-doc/summary
 #. leap/patterns-base/patterns-base-documentation/category
@@ -46,8 +72,8 @@ msgstr ""
 #. leap/patterns-base/patterns-base-enhanced_base/category
 #. leap/patterns-base/patterns-base-enhanced_base_opt/category
 #. leap/patterns-base/patterns-base-minimal_base/category
-#. leap/patterns-base/patterns-base-readonly_root_tools/category
 #. leap/patterns-base/patterns-base-sw_management/category
+#. leap/patterns-base/patterns-base-transactional_base/category
 #. leap/patterns-base/patterns-base-update_test/category
 #. leap/patterns-desktop/patterns-desktop-laptop/category
 #. leap/patterns-gnome/patterns-gnome-gnome_yast/category
@@ -67,15 +93,16 @@ msgstr ""
 #. tumbleweed/patterns-base/patterns-base-enhanced_base_opt/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base_conflicts/category
-#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/category
 #. tumbleweed/patterns-base/patterns-base-sw_management/category
+#. tumbleweed/patterns-base/patterns-base-transactional_base/category
 #. tumbleweed/patterns-base/patterns-base-update_test/category
 #. tumbleweed/patterns-base/patterns-base-x86/category
-#. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/category
 #. tumbleweed/patterns-desktop/patterns-desktop-laptop/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/category
 #. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_yast/category
+#. tumbleweed/patterns-server/patterns-server-kvm_tools/category
+#. tumbleweed/patterns-server/patterns-server-xen_tools/category
 #. tumbleweed/patterns-yast/patterns-yast-x11_yast/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/category
@@ -200,18 +227,6 @@ msgstr ""
 msgid "The 32bit pattern complementing minimal_base."
 msgstr "32-bit-mønsteret som komplimenterer minimal_base."
 
-#. leap/patterns-base/patterns-base-readonly_root_tools/summary
-#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/summary
-msgid "Read-Only Root Filesystem Tools"
-msgstr "Værktøjer til skrivebeskyttet rodfilsystem"
-
-#. leap/patterns-base/patterns-base-readonly_root_tools/description
-#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/description
-msgid "Tools & Update Stack for systems with a read-only root filesystem."
-msgstr ""
-"Værktøjer og opdateringsstik til systemer med et skrivebeskyttet "
-"rodfilsystem."
-
 #. leap/patterns-base/patterns-base-sw_management/summary
 #. leap/patterns-base/patterns-base-sw_management-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-sw_management/summary
@@ -230,6 +245,24 @@ msgstr ""
 #. leap/patterns-base/patterns-base-sw_management-32bit/description
 msgid "The 32bit pattern complementing sw_management."
 msgstr "32-bit-mønsteret som komplimenterer sw_management."
+
+#. leap/patterns-base/patterns-base-transactional_base/summary
+#. tumbleweed/patterns-base/patterns-base-transactional_base/summary
+#, fuzzy
+#| msgid "Enhanced Base System"
+msgid "Transactional Base System"
+msgstr "Forbedret grundlæggende system"
+
+#. leap/patterns-base/patterns-base-transactional_base/description
+#. tumbleweed/patterns-base/patterns-base-transactional_base/description
+#, fuzzy
+#| msgid "Tools & Update Stack for systems with a read-only root filesystem."
+msgid ""
+"This is the base system for a host updated by Transactional Updates. "
+"Includes Tools for systems with a read-only root filesystem."
+msgstr ""
+"Værktøjer og opdateringsstik til systemer med et skrivebeskyttet "
+"rodfilsystem."
 
 #. leap/patterns-base/patterns-base-update_test/summary
 #. tumbleweed/patterns-base/patterns-base-update_test/summary
@@ -277,6 +310,7 @@ msgstr ""
 #. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
 #. leap/patterns-fonts/patterns-fonts-fonts/category
 #. leap/patterns-fonts/patterns-fonts-fonts_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome/category
 #. leap/patterns-gnome/patterns-gnome-gnome_basic/category
 #. leap/patterns-gnome/patterns-gnome-gnome_basis/category
 #. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
@@ -298,8 +332,10 @@ msgstr ""
 #. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
 #. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
 #. tumbleweed/patterns-kde/patterns-kde-kde/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
 #. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
@@ -359,7 +395,6 @@ msgstr "Håndtering af digitale fotos og grafik."
 #. leap/patterns-media/patterns-media-rest_cd_kde/category
 #. leap/patterns-media/patterns-media-rest_cd_x11/category
 #. leap/patterns-media/patterns-media-rest_core_dvd/category
-#. leap/patterns-media/patterns-media-rest_dvd/category
 #. leap/patterns-office/patterns-office-office/category
 #. tumbleweed/patterns-desktop/patterns-desktop-imaging/category
 #. tumbleweed/patterns-desktop/patterns-desktop-imaging_opt/category
@@ -470,9 +505,7 @@ msgstr ""
 #. tumbleweed/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/category
 #. tumbleweed/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/category
 #. tumbleweed/patterns-gnome/patterns-gnome-devel_gnome/category
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/category
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/category
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/category
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/category
 #. tumbleweed/patterns-kde/patterns-kde-devel_qt5/category
 #. tumbleweed/patterns-yast/patterns-yast-devel_yast/category
@@ -481,6 +514,7 @@ msgstr "Udvikling"
 
 #. leap/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis/summary
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
 msgstr "Grundlæggende udvikling"
 
@@ -491,6 +525,7 @@ msgstr "Minimalt sæt af værktøjer til at kompilere og linke programmer."
 
 #. leap/patterns-devel-base/patterns-devel-base-devel_kernel/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
 msgid "Linux Kernel Development"
 msgstr "Linux-kerne-udvikling"
 
@@ -646,10 +681,12 @@ msgid "GNOME development packages."
 msgstr "GNOME-udviklingspakker."
 
 #. leap/patterns-gnome/patterns-gnome-gnome/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment (Wayland)"
 msgstr "GNOME-skrivebordsmiljø (Wayland)"
 
 #. leap/patterns-gnome/patterns-gnome-gnome/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs components for GNOME to run with Wayland and "
@@ -659,49 +696,13 @@ msgstr ""
 "brugere. Mønsteret installerer komponenter så GNOME kan kører med Wayland- "
 "og X11-teknologier."
 
-#. leap/patterns-gnome/patterns-gnome-gnome/category
-#. leap/patterns-gnome/patterns-gnome-gnome_admin/category
-#. leap/patterns-gnome/patterns-gnome-gnome_games/category
-#. leap/patterns-gnome/patterns-gnome-gnome_ide/category
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_internet/category
-#. leap/patterns-gnome/patterns-gnome-gnome_laptop/category
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia/category
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_office/category
-#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_utilities/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/category
-msgid "GNOME Desktop"
-msgstr "GNOME-skrivebord"
-
-#. leap/patterns-gnome/patterns-gnome-gnome_admin/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/summary
-msgid "GNOME Administration Tools"
-msgstr "GNOME-administrationsværktøjer"
-
-#. leap/patterns-gnome/patterns-gnome-gnome_admin/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/description
-msgid "Administration Tools e.g. for desktop lockdown"
-msgstr "Administrative værktøjer f.eks. til låsning af skrivebordet"
-
 #. leap/patterns-gnome/patterns-gnome-gnome_basic/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
 msgstr "GNOME-skrivebordsmiljø (grundlæggende)"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_basic/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs GNOME desktop environment with only essential "
@@ -732,6 +733,23 @@ msgstr "Grundlæggende pakker til GNOME-skrivebordsmiljøet."
 msgid "GNOME Games"
 msgstr "GNOME-spil"
 
+#. leap/patterns-gnome/patterns-gnome-gnome_games/category
+#. leap/patterns-gnome/patterns-gnome-gnome_ide/category
+#. leap/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. leap/patterns-gnome/patterns-gnome-gnome_internet/category
+#. leap/patterns-gnome/patterns-gnome-gnome_multimedia/category
+#. leap/patterns-gnome/patterns-gnome-gnome_office/category
+#. leap/patterns-gnome/patterns-gnome-gnome_utilities/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/category
+msgid "GNOME Desktop"
+msgstr "GNOME-skrivebord"
+
 #. leap/patterns-gnome/patterns-gnome-gnome_ide/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/summary
 msgid "GNOME Integrated Development Environment"
@@ -743,16 +761,12 @@ msgid "Development under GNOME"
 msgstr "Udvikling under GNOME"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_imaging/summary
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/summary
 msgid "GNOME Graphics"
 msgstr "GNOME-grafik"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_imaging/description
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/description
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/description
 msgid "Handling of digital photos and graphics"
 msgstr "Håndtering af digitale fotos og grafik"
 
@@ -766,35 +780,17 @@ msgstr "GNOME-internet"
 msgid "GNOME Internet Applications"
 msgstr "GNOME-internetprogrammer"
 
-#. leap/patterns-gnome/patterns-gnome-gnome_laptop/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/summary
-msgid "GNOME Laptop"
-msgstr "GNOME-bærbar"
-
-#. leap/patterns-gnome/patterns-gnome-gnome_laptop/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/description
-msgid "GNOME Tools designed specifically for use with laptop computers."
-msgstr "GNOME-værktøjer designet specielt til brug med bærbare computere."
-
 #. leap/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. leap/patterns-gnome/patterns-gnome-gnome_multimedia/description
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/summary
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/description
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/description
 msgid "GNOME Multimedia"
 msgstr "GNOME-multimedie"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_office/summary
 #. leap/patterns-gnome/patterns-gnome-gnome_office/description
-#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/summary
-#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/description
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/description
 msgid "GNOME Office"
 msgstr "GNOME-kontor"
 
@@ -806,10 +802,12 @@ msgid "GNOME Utilities"
 msgstr "GNOME-redskaber"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_x11/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/summary
 msgid "GNOME Desktop Environment (X11)"
 msgstr "GNOME-skrivebordsmiljø (X11)"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_x11/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs a full featured GNOME desktop environment, "
@@ -842,12 +840,10 @@ msgid "Package Management - Graphical Tools"
 msgstr "Pakkehåndtering - Grafiske værktøjer"
 
 #. leap/patterns-haskell/patterns-haskell-haskell_platform/summary
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/summary
 msgid "Haskell Platform"
 msgstr "Haskell-platform"
 
 #. leap/patterns-haskell/patterns-haskell-haskell_platform/description
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/description
 msgid ""
 "The Haskell Platform is the easiest way to get started with programming "
 "Haskell. It comes with all you need to get up and running. Think of it as "
@@ -864,11 +860,17 @@ msgstr "HPC grundlæggende computer-node"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
+#, fuzzy
+#| msgid ""
+#| "A compute node has a minimal software image and mainly runs simulation "
+#| "programs. Services on this node should be reduced to a bare minimum and "
+#| "the node *must* be installed in a automatic manner. The pattern HPC "
+#| "libraries should also be installed."
 msgid ""
-"A compute node has a minimal software image and mainly runs simulation "
-"programs. Services on this node should be reduced to a bare minimum and the "
-"node *must* be installed in a automatic manner. The pattern HPC libraries "
-"should also be installed."
+"A compute node comprises of a minimal software image and mainly runs "
+"simulation programs. Services on this node should be reduced to a bare "
+"minimum and the node *must* be installed in a automatic manner. The pattern "
+"'HPC modularized libraries' should also be installed."
 msgstr ""
 "En computer-node har et minimalt softwareaftryk og kører hovedsageligt "
 "simuleringsprogrammer. Tjenester på noden bør reduceres til et absolut "
@@ -877,6 +879,7 @@ msgstr ""
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
+#. leap/patterns-hpc/patterns-hpc-workload_server/category
 #. leap/patterns-network/patterns-network-network_admin/category
 #. leap/patterns-server/patterns-server-dhcp_dns_server/category
 #. leap/patterns-server/patterns-server-directory_server/category
@@ -889,6 +892,7 @@ msgstr ""
 #. leap/patterns-server/patterns-server-xen_server/category
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/category
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/category
+#. tumbleweed/patterns-hpc/patterns-hpc-workload_server/category
 #. tumbleweed/patterns-network/patterns-network-network_admin/category
 #. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/category
 #. tumbleweed/patterns-server/patterns-server-directory_server/category
@@ -897,7 +901,7 @@ msgstr ""
 #. tumbleweed/patterns-server/patterns-server-kvm_server/category
 #. tumbleweed/patterns-server/patterns-server-lamp_server/category
 #. tumbleweed/patterns-server/patterns-server-mail_server/category
-#. tumbleweed/patterns-server/patterns-server-print_server/category
+#. tumbleweed/patterns-server/patterns-server-printing/category
 #. tumbleweed/patterns-server/patterns-server-xen_server/category
 msgid "Server Functions"
 msgstr "Serverfunktioner"
@@ -909,10 +913,15 @@ msgstr "HPC-udviklingspakker"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the HPC libraries and adds additionally the "
+#| "compilers and includes also the relevant management packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
-"applications. It depends on the HPC libraries and adds additionally the "
-"compilers and includes also the relevant management packages."
+"applications. It depends on the pattern 'HPC modularized libraries'. In "
+"addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 "Pakken leverer alle relevante pakker til udvikling af HPC-programmer. Den er "
 "afhængig af HPC-bibliotekerne og tilføjer compilerne og inkluderer også de "
@@ -925,29 +934,44 @@ msgstr "HPC-moduleriseret biblioteket"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in an HPC environment. Especially these libraries allows you to "
+#| "install several MPI flavors in parallel. In order to use this libraries "
+#| "you have them to load first via the module command."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
-"in an HPC environment. Especially these libraries allows you to install "
-"several MPI flavors in parallel. In order to use this libraries you have "
-"them to load first via the module command."
+"in an HPC environment. These libraries allow to install several MPI flavors "
+"in parallel. In order to use thess libraries one needs to load them via the "
+"module command first."
 msgstr ""
 "Pakken leverer alle de modulaliserede biblioteker så de kan bruges i et HPC-"
 "miljø. Bibliotekerne giver dig specielt mulighed for at installere "
 "adskillige MPI-varianter parallelt. For at bruge bibliotekerne skal du "
 "første indlæse dem via module-kommandoen."
 
+#. leap/patterns-hpc/patterns-hpc-workload_server/summary
+#. tumbleweed/patterns-hpc/patterns-hpc-workload_server/summary
+msgid "HPC Workload Manager"
+msgstr ""
+
+#. leap/patterns-hpc/patterns-hpc-workload_server/description
+#. tumbleweed/patterns-hpc/patterns-hpc-workload_server/description
+msgid ""
+"This package provides all the relevant packages for running the central "
+"server component of the slurm workload manager."
+msgstr ""
+
 #. leap/patterns-kde/patterns-kde-devel_kde/summary
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/summary
 msgid "KDE Development"
 msgstr "KDE-udvikling"
 
 #. leap/patterns-kde/patterns-kde-devel_kde/description
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/description
 msgid "KDE development packages."
 msgstr "KDE-udviklingspakker."
 
 #. leap/patterns-kde/patterns-kde-devel_kde_frameworks/summary
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
 msgid "KDE Frameworks Development"
 msgstr "KDE-frameworks-udvikling"
 
@@ -962,7 +986,6 @@ msgid "Qt 5 Development"
 msgstr "Qt 5-udvikling"
 
 #. leap/patterns-kde/patterns-kde-devel_qt5/description
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
 msgid ""
 "Tools and libraries for software development using Qt 5, the latest version "
 "of the Qt toolkit."
@@ -971,12 +994,10 @@ msgstr ""
 "version af Qt-toolkittet."
 
 #. leap/patterns-kde/patterns-kde-kde/summary
-#. tumbleweed/patterns-kde/patterns-kde-kde/summary
 msgid "KDE Plasma 5 Desktop Environment"
 msgstr "KDE Plasma 5-skrivebordsmiljø"
 
 #. leap/patterns-kde/patterns-kde-kde/description
-#. tumbleweed/patterns-kde/patterns-kde-kde/description
 msgid ""
 "KDE is a powerful free software graphical desktop environment for Linux "
 "workstations. It combines ease of use, contemporary functionality, and "
@@ -1013,6 +1034,7 @@ msgstr "KDE-programmer - Værktøjer til at lære børn med computere"
 #. tumbleweed/patterns-kde/patterns-kde-kde_internet/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_multimedia/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_office/category
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_utilities/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_utilities_opt/category
 msgid "KDE Desktop"
@@ -1034,7 +1056,6 @@ msgid "KDE Integrated Development Environment"
 msgstr "KDE integererede udviklingsmiljø"
 
 #. leap/patterns-kde/patterns-kde-kde_ide/description
-#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
 msgid "Development environment for the Plasma Desktop"
 msgstr "Udviklingsmiljø til Plasma-skrivebordet"
 
@@ -1076,7 +1097,6 @@ msgid "KDE Office"
 msgstr "KDE-kontor"
 
 #. leap/patterns-kde/patterns-kde-kde_plasma/summary
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
 msgid "KDE Plasma 5 Desktop"
 msgstr "KDE Plasma 5-skrivebord"
 
@@ -1281,7 +1301,6 @@ msgstr "MATE-redskaber"
 #. leap/patterns-media/patterns-media-rest_cd_kde/summary
 #. leap/patterns-media/patterns-media-rest_cd_x11/summary
 #. leap/patterns-media/patterns-media-rest_core_dvd/summary
-#. leap/patterns-media/patterns-media-rest_dvd/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_kde/summary
@@ -1296,7 +1315,6 @@ msgstr "Resterende software"
 #. leap/patterns-media/patterns-media-rest_cd_kde/description
 #. leap/patterns-media/patterns-media-rest_cd_x11/description
 #. leap/patterns-media/patterns-media-rest_core_dvd/description
-#. leap/patterns-media/patterns-media-rest_dvd/description
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/description
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/description
 #. tumbleweed/patterns-media/patterns-media-rest_cd_kde/description
@@ -1341,6 +1359,7 @@ msgstr ""
 #. leap/patterns-server/patterns-server-dhcp_dns_server/summary
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/summary
+#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
 msgid "DHCP and DNS Server"
 msgstr "DHCP- og DNS-server"
 
@@ -1360,12 +1379,14 @@ msgstr ""
 "adressen."
 
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server-32bit/description
 msgid "The 32bit pattern complementing dhcp_dns_server."
 msgstr "32-bit-mønsteret som komplimenterer dhcp_dns_server."
 
 #. leap/patterns-server/patterns-server-directory_server/summary
 #. leap/patterns-server/patterns-server-directory_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-directory_server/summary
+#. tumbleweed/patterns-server/patterns-server-directory_server-32bit/summary
 msgid "Directory Server (LDAP)"
 msgstr "Directory-server (LDAP)"
 
@@ -1380,12 +1401,14 @@ msgstr ""
 "tjenester."
 
 #. leap/patterns-server/patterns-server-directory_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
 msgstr "32-bit-mønsteret som komplimenterer directory_server."
 
 #. leap/patterns-server/patterns-server-file_server/summary
 #. leap/patterns-server/patterns-server-file_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-file_server/summary
+#. tumbleweed/patterns-server/patterns-server-file_server-32bit/summary
 msgid "File Server"
 msgstr "Filserver"
 
@@ -1401,12 +1424,14 @@ msgstr ""
 "protokollerne."
 
 #. leap/patterns-server/patterns-server-file_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-file_server-32bit/description
 msgid "The 32bit pattern complementing file_server."
 msgstr "32-bit-mønsteret som komplimenterer file_server."
 
 #. leap/patterns-server/patterns-server-gateway_server/summary
 #. leap/patterns-server/patterns-server-gateway_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-gateway_server/summary
+#. tumbleweed/patterns-server/patterns-server-gateway_server-32bit/summary
 msgid "Internet Gateway"
 msgstr "Internet-gateway"
 
@@ -1420,11 +1445,11 @@ msgstr ""
 "virtuel privat netværk-gateway (VPN)."
 
 #. leap/patterns-server/patterns-server-gateway_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-gateway_server-32bit/description
 msgid "The 32bit pattern complementing gateway_server."
 msgstr "32-bit-mønsteret som komplimenterer gateway_server."
 
 #. leap/patterns-server/patterns-server-kvm_server/summary
-#. leap/patterns-server/patterns-server-kvm_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-kvm_server/summary
 msgid "KVM Host Server"
 msgstr "KVM-værtsserver"
@@ -1440,16 +1465,13 @@ msgstr ""
 "Software til at opsætte en server til konfigurering, håndtering og "
 "overvågning af virtuelle maskiner på en enkelt fysisk maskine."
 
-#. leap/patterns-server/patterns-server-kvm_server-32bit/description
-msgid "The 32bit pattern complementing kvm_server."
-msgstr "32-bit-mønsteret som komplimenterer kvm_server."
-
 #. leap/patterns-server/patterns-server-kvm_tools/summary
-#. leap/patterns-server/patterns-server-kvm_tools-32bit/summary
+#. tumbleweed/patterns-server/patterns-server-kvm_tools/summary
 msgid "KVM Virtualization Host and tools"
 msgstr "Vært og værktøjer til KVM-virtualisering"
 
 #. leap/patterns-server/patterns-server-kvm_tools/description
+#. tumbleweed/patterns-server/patterns-server-kvm_tools/description
 msgid ""
 "This will provide all minimal system to get a running KVM Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
@@ -1459,13 +1481,10 @@ msgstr ""
 "stand til at konfigurere, håndtere og overvåge virtuelle maskiner på en "
 "enkelt fysisk maskine."
 
-#. leap/patterns-server/patterns-server-kvm_tools-32bit/description
-msgid "The 32bit pattern complementing kvm_tools."
-msgstr "32-bit-mønsteret som komplimenterer kvm_tools."
-
 #. leap/patterns-server/patterns-server-lamp_server/summary
 #. leap/patterns-server/patterns-server-lamp_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-lamp_server/summary
+#. tumbleweed/patterns-server/patterns-server-lamp_server-32bit/summary
 msgid "Web and LAMP Server"
 msgstr "Web- og LAMP-server"
 
@@ -1483,12 +1502,14 @@ msgstr ""
 "Python, Ruby on Rails eller Perl."
 
 #. leap/patterns-server/patterns-server-lamp_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-lamp_server-32bit/description
 msgid "The 32bit pattern complementing lamp_server."
 msgstr "32-bit-mønsteret som komplimenterer lamp_server."
 
 #. leap/patterns-server/patterns-server-mail_server/summary
 #. leap/patterns-server/patterns-server-mail_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-mail_server/summary
+#. tumbleweed/patterns-server/patterns-server-mail_server-32bit/summary
 msgid "Mail and News Server"
 msgstr "Mail- og nyhedsserver"
 
@@ -1504,16 +1525,19 @@ msgstr ""
 "til at skanne meddelelser på serverniveauet."
 
 #. leap/patterns-server/patterns-server-mail_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-mail_server-32bit/description
 msgid "The 32bit pattern complementing mail_server."
 msgstr "32-bit-mønsteret som komplimenterer mail_server."
 
 #. leap/patterns-server/patterns-server-printing/summary
 #. leap/patterns-server/patterns-server-printing-32bit/summary
-#. tumbleweed/patterns-server/patterns-server-print_server/summary
+#. tumbleweed/patterns-server/patterns-server-printing/summary
+#. tumbleweed/patterns-server/patterns-server-printing-32bit/summary
 msgid "Print Server"
 msgstr "Udskrivningsserver"
 
 #. leap/patterns-server/patterns-server-printing/description
+#. tumbleweed/patterns-server/patterns-server-printing/description
 msgid ""
 "This pattern provides all packages necessary for printing. It provides all "
 "needed packages for printing to a locally connected printer, printing using "
@@ -1525,25 +1549,22 @@ msgstr ""
 "printerserver."
 
 #. leap/patterns-server/patterns-server-printing-32bit/description
+#. tumbleweed/patterns-server/patterns-server-printing-32bit/description
 msgid "The 32bit pattern complementing printing."
 msgstr "32-bit-mønsteret som komplimenterer printing."
 
 #. leap/patterns-server/patterns-server-xen_server/summary
-#. leap/patterns-server/patterns-server-xen_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-xen_server/summary
 msgid "Xen Virtual Machine Host Server"
 msgstr "Xen virtuel maskine-værtsserver"
 
-#. leap/patterns-server/patterns-server-xen_server-32bit/description
-msgid "The 32bit pattern complementing xen_server."
-msgstr "32-bit-mønsteret som komplimenterer xen_server."
-
 #. leap/patterns-server/patterns-server-xen_tools/summary
-#. leap/patterns-server/patterns-server-xen_tools-32bit/summary
+#. tumbleweed/patterns-server/patterns-server-xen_tools/summary
 msgid "XEN Virtualization Host and tools"
 msgstr "Vært og værktøjer til XEN-virtualisering"
 
 #. leap/patterns-server/patterns-server-xen_tools/description
+#. tumbleweed/patterns-server/patterns-server-xen_tools/description
 msgid ""
 "This will provide all minimal system to get a running XEN Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
@@ -1552,10 +1573,6 @@ msgstr ""
 "Det leverer et minimalt system til at få et kørende XEN-hypervisor og være i "
 "stand til at konfigurere, håndtere og overvåge virtuelle maskiner på en "
 "enkelt fysisk maskine."
-
-#. leap/patterns-server/patterns-server-xen_tools-32bit/description
-msgid "The 32bit pattern complementing xen_tools."
-msgstr "32-bit-mønsteret som komplimenterer xen_tools."
 
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
@@ -1645,7 +1662,9 @@ msgid "x86 Runtime Environment"
 msgstr "x86-afviklingsmiljø"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/summary
-msgid "openSUSE Kubic MicroOS System"
+#, fuzzy
+#| msgid "openSUSE Kubic MicroOS System"
+msgid "openSUSE Kubic MicroOS"
 msgstr "openSUSE Kubic MicroOS-system"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/description
@@ -1656,122 +1675,270 @@ msgstr ""
 "Dette er MicroOS runtime-systemet. Det indeholder kun et minimalt flerbruger-"
 "bootsystem."
 
-#. tumbleweed/patterns-caasp/patterns-caasp-Stack/summary
-msgid "openSUSE Kubic Stack"
-msgstr "openSUSE Kubic-stak"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-Stack/description
-msgid ""
-"This is the stack on top of MicroOS. It contains everything for container "
-"and kubernetes."
-msgstr ""
-"Dette er stakken ovenpå MicroOS. Det indeholder alt til container og "
-"kubernetes."
-
-#. tumbleweed/patterns-caasp/patterns-caasp-Stack/category
+#. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/category
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/category
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/category
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/category
+#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/category
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/category
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/category
+#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/category
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/category
-#. tumbleweed/patterns-caasp/patterns-caasp-selinux/category
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/category
-msgid "Primary Functions"
-msgstr "Primære funktioner"
+#, fuzzy
+#| msgid "openSUSE Kubic Stack"
+msgid "openSUSE Kubic"
+msgstr "openSUSE Kubic-stak"
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/summary
+msgid "Alternative Container Runtime"
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/description
+msgid "This pattern installs the alternative container runtime packages."
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/summary
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Alternative Packages only for the DVD of openSUSE Kubic"
+msgstr "Pakker kun til openSUSE Kubic-DVD'en"
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/description
+msgid "Alternative additonal packages on a openSUSE Kubic DVD."
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/summary
-msgid "Packages needed to enable Apparmor on openSUSE Kubic"
-msgstr "Pakker som behøves for at aktivere Apparmor på openSUSE Kubic"
+msgid "Apparmor Support"
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to enable Apparmor on SUSE CaaS "
+#| "Platform or openSUSE Kubic product."
 msgid ""
-"This are packages which are required to enable Apparmor on SUSE CaaS "
-"Platform or openSUSE Kubic product."
+"Packages required to enable Apparmor on SUSE CaaS Platform or openSUSE Kubic."
 msgstr ""
 "Dette er pakker som skal kræves for at aktivere Apparmor på SUSE CaaS-"
 "platform eller openSUSE Kubic-produkt."
 
+#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/summary
+msgid "Container Runtime"
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/description
+msgid "This pattern installs the default container runtime packages."
+msgstr ""
+
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
-msgid "Packages needed to run openSUSE Kubic on real hardware"
-msgstr "Pakker som skal bruges til at køre openSUSE Kubic på rigtig hardware"
+msgid "Hardware Support"
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to install SUSE CaaS Platform or "
+#| "openSUSE Kubic product on real hardeare."
 msgid ""
-"This are packages which are required to install SUSE CaaS Platform or "
-"openSUSE Kubic product on real hardeare."
+"Packages required to install SUSE CaaS Platform or openSUSE Kubic on real "
+"hardware."
 msgstr ""
 "Dette er pakker som skal kræves for at installere SUSE CaaS-platform eller "
 "openSUSE Kubic-produkt på rigtig hardware."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/summary
-msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
-msgstr "Pakker som behøves til at aktivere IMA/EVM på openSUSE Kubic"
+msgid "IMA/EVM Support"
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to enable IMA/EVM on SUSE CaaS "
+#| "Platform or openSUSE Kubic product."
 msgid ""
-"This are packages which are required to enable IMA/EVM on SUSE CaaS Platform "
-"or openSUSE Kubic product."
+"Packages required to enable IMA/EVM on SUSE CaaS Platform or openSUSE Kubic."
 msgstr ""
 "Dette er pakker som skal kræves for at aktivere IMA/EVM på SUSE CaaS-"
 "platform eller openSUSE Kubic-produkt."
+
+#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/summary
+msgid "kubeadm Stack"
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/description
+msgid ""
+"This provides a vanilla kubeadm stack. It contains everything needed to run "
+"kubernetes directly on top of MicroOS."
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE Kubic"
 msgstr "Pakker kun til openSUSE Kubic-DVD'en"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/description
-msgid ""
-"This are the additonal packages which should be on a SUSE CaaS Platform or "
-"openSUSE Kubic product."
-msgstr ""
-"Dette er yderligere pakker som skal bruges på en SUSE CaaS-platform eller "
-"openSUSE Kubic-produkt."
-
-#. tumbleweed/patterns-caasp/patterns-caasp-selinux/summary
-msgid "Packages needed to enable SELinux on openSUSE Kubic"
-msgstr "Pakker som behøves til at aktivere SELinux på openSUSE Kubic"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-selinux/description
-msgid ""
-"This are packages which are required to enable SELinux on SUSE CaaS Platform "
-"or openSUSE Kubic product."
-msgstr ""
-"Dette er pakker som skal kræves for at aktivere SELinux på SUSE CaaS-"
-"platform eller openSUSE Kubic-produkt."
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Additonal packages on a openSUSE Kubic DVD."
+msgstr "Pakker kun til openSUSE Kubic-DVD'en"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
-msgid "Packages needed to let openSUSE Kubic act as LDAP client"
+msgid "LDAP client"
 msgstr ""
-"Pakker som skal bruges til at lade openSUSE Kubic opføre sig som LDAP-klient"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to enable LDAP client support via "
+#| "sssd on SUSE CaaS Platform or openSUSE Kubic product."
 msgid ""
-"This are packages which are required to enable LDAP client support via sssd "
-"on SUSE CaaS Platform or openSUSE Kubic product."
+"Packages required to enable LDAP client support via sssd on SUSE CaaS "
+"Platform or openSUSE Kubic."
 msgstr ""
 "Dette er pakker som kræves for at aktivere understøttelse af LDAP-klient via "
 "sssd på SUSE CaaS-platform eller openSUSE Kubic-produkt."
 
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
-msgid "GNOME Desktop Environment"
-msgstr "GNOME-skrivebordsmiljø"
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing base."
+msgid "The 32bit pattern complementing devel_basis."
+msgstr "32-bit-mønsteret som komplimenterer base."
 
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/description
-msgid ""
-"The GNOME desktop environment is an intuitive and attractive desktop for "
-"users."
-msgstr ""
-"GNOME-skrivebordsmiljøet er et intuitivt og attraktivt skrivebord til "
-"brugere."
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing kvm_server."
+msgid "The 32bit pattern complementing devel_kernel."
+msgstr "32-bit-mønsteret som komplimenterer kvm_server."
 
-#. tumbleweed/patterns-server/patterns-server-print_server/description
+#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
+#, fuzzy
+#| msgid "KDE Frameworks Development"
+msgid "KDE Frameworks and Plasma Development"
+msgstr "KDE-frameworks-udvikling"
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
+#, fuzzy
+#| msgid "Tools and libraries for .NET development using Mono."
+msgid "Tools and libraries for software development using Qt 5."
+msgstr "Værktøjer og biblioteker til .NET-udvikling ved brug af Mono."
+
+#. tumbleweed/patterns-kde/patterns-kde-kde/summary
+#, fuzzy
+#| msgid "KDE Applications - Games"
+msgid "KDE Applications and Plasma 5 Desktop"
+msgstr "KDE-programmer - Spil"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde/description
+#, fuzzy
+#| msgid "Base packages for the KDE Plasma 5 desktop environment."
 msgid ""
-"Software used to host print queues so that they may be accessed by other "
-"computers on the same network. LPD, CUPS, and SMB print servers and queues "
-"are supported."
+"Packages providing the Plasma desktop environment and applications from KDE."
+msgstr "Grundlæggende pakker til KDE Plasma 5-skrivebordsmiljøet."
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
+msgid ""
+"KDE software for development (editors, integrated development environments, "
+"and associated tools)."
 msgstr ""
-"Software som bruges til at hoste udskrivningskøer så de kan tilgås af andre "
-"computere på det samme netværk. LPD-, CUPS- og SMB-udskrivningsservere og -"
-"køer understøttes."
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/summary
+msgid "KDE PIM Suite"
+msgstr ""
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/description
+msgid "The KDE PIM Suite (Kontact, KMail, KOrganizer, ...)."
+msgstr ""
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
+#, fuzzy
+#| msgid "KDE Plasma 5 Desktop"
+msgid "KDE Plasma 5 Desktop Base"
+msgstr "KDE Plasma 5-skrivebord"
+
+#~ msgid "Read-Only Root Filesystem Tools"
+#~ msgstr "Værktøjer til skrivebeskyttet rodfilsystem"
+
+#~ msgid "GNOME Administration Tools"
+#~ msgstr "GNOME-administrationsværktøjer"
+
+#~ msgid "Administration Tools e.g. for desktop lockdown"
+#~ msgstr "Administrative værktøjer f.eks. til låsning af skrivebordet"
+
+#~ msgid "GNOME Laptop"
+#~ msgstr "GNOME-bærbar"
+
+#~ msgid "GNOME Tools designed specifically for use with laptop computers."
+#~ msgstr "GNOME-værktøjer designet specielt til brug med bærbare computere."
+
+#~ msgid "The 32bit pattern complementing kvm_tools."
+#~ msgstr "32-bit-mønsteret som komplimenterer kvm_tools."
+
+#~ msgid "The 32bit pattern complementing xen_server."
+#~ msgstr "32-bit-mønsteret som komplimenterer xen_server."
+
+#~ msgid "The 32bit pattern complementing xen_tools."
+#~ msgstr "32-bit-mønsteret som komplimenterer xen_tools."
+
+#~ msgid ""
+#~ "This is the stack on top of MicroOS. It contains everything for container "
+#~ "and kubernetes."
+#~ msgstr ""
+#~ "Dette er stakken ovenpå MicroOS. Det indeholder alt til container og "
+#~ "kubernetes."
+
+#~ msgid "Primary Functions"
+#~ msgstr "Primære funktioner"
+
+#~ msgid "Packages needed to enable Apparmor on openSUSE Kubic"
+#~ msgstr "Pakker som behøves for at aktivere Apparmor på openSUSE Kubic"
+
+#~ msgid "Packages needed to run openSUSE Kubic on real hardware"
+#~ msgstr ""
+#~ "Pakker som skal bruges til at køre openSUSE Kubic på rigtig hardware"
+
+#~ msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
+#~ msgstr "Pakker som behøves til at aktivere IMA/EVM på openSUSE Kubic"
+
+#~ msgid ""
+#~ "This are the additonal packages which should be on a SUSE CaaS Platform "
+#~ "or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Dette er yderligere pakker som skal bruges på en SUSE CaaS-platform eller "
+#~ "openSUSE Kubic-produkt."
+
+#~ msgid "Packages needed to enable SELinux on openSUSE Kubic"
+#~ msgstr "Pakker som behøves til at aktivere SELinux på openSUSE Kubic"
+
+#~ msgid ""
+#~ "This are packages which are required to enable SELinux on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Dette er pakker som skal kræves for at aktivere SELinux på SUSE CaaS-"
+#~ "platform eller openSUSE Kubic-produkt."
+
+#~ msgid "Packages needed to let openSUSE Kubic act as LDAP client"
+#~ msgstr ""
+#~ "Pakker som skal bruges til at lade openSUSE Kubic opføre sig som LDAP-"
+#~ "klient"
+
+#~ msgid "GNOME Desktop Environment"
+#~ msgstr "GNOME-skrivebordsmiljø"
+
+#~ msgid ""
+#~ "The GNOME desktop environment is an intuitive and attractive desktop for "
+#~ "users."
+#~ msgstr ""
+#~ "GNOME-skrivebordsmiljøet er et intuitivt og attraktivt skrivebord til "
+#~ "brugere."
+
+#~ msgid ""
+#~ "Software used to host print queues so that they may be accessed by other "
+#~ "computers on the same network. LPD, CUPS, and SMB print servers and "
+#~ "queues are supported."
+#~ msgstr ""
+#~ "Software som bruges til at hoste udskrivningskøer så de kan tilgås af "
+#~ "andre computere på det samme netværk. LPD-, CUPS- og SMB-"
+#~ "udskrivningsservere og -køer understøttes."
 
 #~ msgid ""
 #~ "This pattern installs the 32-bit variant of all selected patterns, "
@@ -1808,15 +1975,6 @@ msgstr ""
 
 #~ msgid "Package Management - Graphical Tools for KDE"
 #~ msgstr "Pakkehåndtering - Grafiske værktøjer til KDE"
-
-#~ msgid "Misc. Proprietary Packages"
-#~ msgstr "Div. proprietære pakker"
-
-#~ msgid "Packages that are proprietary and not under an Open Source license"
-#~ msgstr "Pakker som er proprietære og ikke under en open source-licens"
-
-#~ msgid "Packages that are proprietary and not under an Open Source license."
-#~ msgstr "Pakker som er proprietære og ikke under en open source-licens."
 
 #~ msgid "Integrated Development Environments"
 #~ msgstr "Integererede udviklingsmiljøer"

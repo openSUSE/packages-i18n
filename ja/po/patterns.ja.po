@@ -2,17 +2,47 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-06 12:26+0000\n"
+"POT-Creation-Date: 2018-10-30 14:13+0000\n"
 "PO-Revision-Date: 2018-04-18 14:03+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n"
-"/patterns-master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
+"patterns-master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.18\n"
+
+#. leap-nonoss/patterns-non_oss/summary
+#. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/summary
+#. tumbleweed-nonoss/patterns-non_oss/summary
+#. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/summary
+msgid "Misc. Proprietary Packages"
+msgstr "その他のプロプライエタリパッケージ"
+
+#. leap-nonoss/patterns-non_oss/description
+#. tumbleweed-nonoss/patterns-non_oss/description
+msgid "Packages that are proprietary and not under an Open Source license"
+msgstr ""
+"プロプライエタリ (使用権のみが限定的に提供される) であり、オープンソースライ"
+"センスではないパッケージ群"
+
+#. leap-nonoss/patterns-non_oss/category
+#. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/category
+#. tumbleweed-nonoss/patterns-non_oss/category
+#. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/category
+#, fuzzy
+#| msgid "Office Software"
+msgid "Proprietary Software"
+msgstr "オフィスソフトウエア"
+
+#. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/description
+#. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/description
+msgid "Packages that are proprietary and not under an Open Source license."
+msgstr ""
+"プロプライエタリ (使用権のみが限定的に提供される) であり、オープンソースライ"
+"センスではないパッケージ群です。"
 
 #. leap/dhcp/dhcp-doc/summary
 #. leap/patterns-base/patterns-base-documentation/category
@@ -46,8 +76,8 @@ msgstr ""
 #. leap/patterns-base/patterns-base-enhanced_base/category
 #. leap/patterns-base/patterns-base-enhanced_base_opt/category
 #. leap/patterns-base/patterns-base-minimal_base/category
-#. leap/patterns-base/patterns-base-readonly_root_tools/category
 #. leap/patterns-base/patterns-base-sw_management/category
+#. leap/patterns-base/patterns-base-transactional_base/category
 #. leap/patterns-base/patterns-base-update_test/category
 #. leap/patterns-desktop/patterns-desktop-laptop/category
 #. leap/patterns-gnome/patterns-gnome-gnome_yast/category
@@ -67,15 +97,16 @@ msgstr ""
 #. tumbleweed/patterns-base/patterns-base-enhanced_base_opt/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base_conflicts/category
-#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/category
 #. tumbleweed/patterns-base/patterns-base-sw_management/category
+#. tumbleweed/patterns-base/patterns-base-transactional_base/category
 #. tumbleweed/patterns-base/patterns-base-update_test/category
 #. tumbleweed/patterns-base/patterns-base-x86/category
-#. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/category
 #. tumbleweed/patterns-desktop/patterns-desktop-laptop/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/category
 #. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_yast/category
+#. tumbleweed/patterns-server/patterns-server-kvm_tools/category
+#. tumbleweed/patterns-server/patterns-server-xen_tools/category
 #. tumbleweed/patterns-yast/patterns-yast-x11_yast/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/category
@@ -198,18 +229,6 @@ msgstr ""
 msgid "The 32bit pattern complementing minimal_base."
 msgstr "minimal_base パターンを補完する 32 ビットパターンです。"
 
-#. leap/patterns-base/patterns-base-readonly_root_tools/summary
-#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/summary
-msgid "Read-Only Root Filesystem Tools"
-msgstr "ルートファイルシステムを読み込み専用にするためのツール"
-
-#. leap/patterns-base/patterns-base-readonly_root_tools/description
-#. tumbleweed/patterns-base/patterns-base-readonly_root_tools/description
-msgid "Tools & Update Stack for systems with a read-only root filesystem."
-msgstr ""
-"読み込み専用のファイルシステムでシステム更新を行なうためのツールと更新スタッ"
-"クです。"
-
 #. leap/patterns-base/patterns-base-sw_management/summary
 #. leap/patterns-base/patterns-base-sw_management-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-sw_management/summary
@@ -228,6 +247,24 @@ msgstr ""
 #. leap/patterns-base/patterns-base-sw_management-32bit/description
 msgid "The 32bit pattern complementing sw_management."
 msgstr "sw_management パターンを補完する 32 ビットパターンです。"
+
+#. leap/patterns-base/patterns-base-transactional_base/summary
+#. tumbleweed/patterns-base/patterns-base-transactional_base/summary
+#, fuzzy
+#| msgid "Enhanced Base System"
+msgid "Transactional Base System"
+msgstr "拡張基本システム"
+
+#. leap/patterns-base/patterns-base-transactional_base/description
+#. tumbleweed/patterns-base/patterns-base-transactional_base/description
+#, fuzzy
+#| msgid "Tools & Update Stack for systems with a read-only root filesystem."
+msgid ""
+"This is the base system for a host updated by Transactional Updates. "
+"Includes Tools for systems with a read-only root filesystem."
+msgstr ""
+"読み込み専用のファイルシステムでシステム更新を行なうためのツールと更新スタッ"
+"クです。"
 
 #. leap/patterns-base/patterns-base-update_test/summary
 #. tumbleweed/patterns-base/patterns-base-update_test/summary
@@ -276,6 +313,7 @@ msgstr ""
 #. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
 #. leap/patterns-fonts/patterns-fonts-fonts/category
 #. leap/patterns-fonts/patterns-fonts-fonts_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome/category
 #. leap/patterns-gnome/patterns-gnome-gnome_basic/category
 #. leap/patterns-gnome/patterns-gnome-gnome_basis/category
 #. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
@@ -297,8 +335,10 @@ msgstr ""
 #. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
 #. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
 #. tumbleweed/patterns-kde/patterns-kde-kde/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
 #. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
@@ -358,7 +398,6 @@ msgstr "デジタルカメラの画像やグラフィックの処理を行ない
 #. leap/patterns-media/patterns-media-rest_cd_kde/category
 #. leap/patterns-media/patterns-media-rest_cd_x11/category
 #. leap/patterns-media/patterns-media-rest_core_dvd/category
-#. leap/patterns-media/patterns-media-rest_dvd/category
 #. leap/patterns-office/patterns-office-office/category
 #. tumbleweed/patterns-desktop/patterns-desktop-imaging/category
 #. tumbleweed/patterns-desktop/patterns-desktop-imaging_opt/category
@@ -467,9 +506,7 @@ msgstr ""
 #. tumbleweed/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/category
 #. tumbleweed/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/category
 #. tumbleweed/patterns-gnome/patterns-gnome-devel_gnome/category
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/category
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/category
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/category
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/category
 #. tumbleweed/patterns-kde/patterns-kde-devel_qt5/category
 #. tumbleweed/patterns-yast/patterns-yast-devel_yast/category
@@ -478,6 +515,7 @@ msgstr "開発"
 
 #. leap/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis/summary
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
 msgstr "基本的な開発"
 
@@ -488,6 +526,7 @@ msgstr "アプリケーションのコンパイルとリンクに最小限必要
 
 #. leap/patterns-devel-base/patterns-devel-base-devel_kernel/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
 msgid "Linux Kernel Development"
 msgstr "Linux カーネル開発"
 
@@ -637,68 +676,36 @@ msgid "GNOME development packages."
 msgstr "GNOME 開発用パッケージ群です。"
 
 #. leap/patterns-gnome/patterns-gnome-gnome/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
 msgid "GNOME Desktop Environment (Wayland)"
 msgstr "GNOME デスクトップ環境 (Wayland)"
 
 #. leap/patterns-gnome/patterns-gnome-gnome/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs components for GNOME to run with Wayland and "
 "X11 technologies."
 msgstr ""
-"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境です。このパターンは、 Wayland と X11 の両方を併用して、 "
-"GNOME を実行するためのコンポーネントをインストールします。"
-
-#. leap/patterns-gnome/patterns-gnome-gnome/category
-#. leap/patterns-gnome/patterns-gnome-gnome_admin/category
-#. leap/patterns-gnome/patterns-gnome-gnome_games/category
-#. leap/patterns-gnome/patterns-gnome-gnome_ide/category
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_internet/category
-#. leap/patterns-gnome/patterns-gnome-gnome_laptop/category
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia/category
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_office/category
-#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_utilities/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/category
-msgid "GNOME Desktop"
-msgstr "GNOME デスクトップ"
-
-#. leap/patterns-gnome/patterns-gnome-gnome_admin/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/summary
-msgid "GNOME Administration Tools"
-msgstr "GNOME 管理ツール"
-
-#. leap/patterns-gnome/patterns-gnome-gnome_admin/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_admin/description
-msgid "Administration Tools e.g. for desktop lockdown"
-msgstr "デスクトップのロックダウンなどの管理ツール"
+"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境で"
+"す。このパターンは、 Wayland と X11 の両方を併用して、 GNOME を実行するための"
+"コンポーネントをインストールします。"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_basic/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
 msgstr "GNOME デスクトップ環境 (基本)"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_basic/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs GNOME desktop environment with only essential "
 "graphical applications installed (File Manager, Web Browser)."
 msgstr ""
-"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境です。このパターンは、主要なグラフィカルアプリケーション "
-"(ファイルマネージャ／Web ブラウザ) のみを利用する GNOME デスクトップ環境をインストールします。"
+"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境で"
+"す。このパターンは、主要なグラフィカルアプリケーション (ファイルマネージャ／"
+"Web ブラウザ) のみを利用する GNOME デスクトップ環境をインストールします。"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_basis/summary
 #. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/summary
@@ -721,6 +728,23 @@ msgstr "GNOME デスクトップ環境向け基本パッケージです。"
 msgid "GNOME Games"
 msgstr "GNOME ゲーム"
 
+#. leap/patterns-gnome/patterns-gnome-gnome_games/category
+#. leap/patterns-gnome/patterns-gnome-gnome_ide/category
+#. leap/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. leap/patterns-gnome/patterns-gnome-gnome_internet/category
+#. leap/patterns-gnome/patterns-gnome-gnome_multimedia/category
+#. leap/patterns-gnome/patterns-gnome-gnome_office/category
+#. leap/patterns-gnome/patterns-gnome-gnome_utilities/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_games/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_internet/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_utilities/category
+msgid "GNOME Desktop"
+msgstr "GNOME デスクトップ"
+
 #. leap/patterns-gnome/patterns-gnome-gnome_ide/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_ide/summary
 msgid "GNOME Integrated Development Environment"
@@ -732,16 +756,12 @@ msgid "Development under GNOME"
 msgstr "GNOME での開発"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_imaging/summary
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/summary
 msgid "GNOME Graphics"
 msgstr "GNOME グラフィック"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_imaging/description
-#. leap/patterns-gnome/patterns-gnome-gnome_imaging_opt/description
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_imaging_opt/description
 msgid "Handling of digital photos and graphics"
 msgstr "デジタルカメラの写真や画像の処理"
 
@@ -755,35 +775,17 @@ msgstr "GNOME インターネット"
 msgid "GNOME Internet Applications"
 msgstr "GNOME インターネットアプリケーション"
 
-#. leap/patterns-gnome/patterns-gnome-gnome_laptop/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/summary
-msgid "GNOME Laptop"
-msgstr "GNOME ラップトップ"
-
-#. leap/patterns-gnome/patterns-gnome-gnome_laptop/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_laptop/description
-msgid "GNOME Tools designed specifically for use with laptop computers."
-msgstr "特にラップトップコンピュータ向けに設計された GNOME ツール集です。"
-
 #. leap/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. leap/patterns-gnome/patterns-gnome-gnome_multimedia/description
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/summary
-#. leap/patterns-gnome/patterns-gnome-gnome_multimedia_opt/description
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_multimedia_opt/description
 msgid "GNOME Multimedia"
 msgstr "GNOME マルチメディア"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_office/summary
 #. leap/patterns-gnome/patterns-gnome-gnome_office/description
-#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/summary
-#. leap/patterns-gnome/patterns-gnome-gnome_office_opt/description
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_office/description
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/summary
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_office_opt/description
 msgid "GNOME Office"
 msgstr "GNOME オフィス"
 
@@ -795,18 +797,22 @@ msgid "GNOME Utilities"
 msgstr "GNOME ユーティリティ"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_x11/summary
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/summary
 msgid "GNOME Desktop Environment (X11)"
 msgstr "GNOME デスクトップ環境 (X11)"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_x11/description
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/description
 msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs a full featured GNOME desktop environment, "
 "including Office suite, E-Mail client, Web Browser, File Manager, running "
 "with X11 technology."
 msgstr ""
-"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境です。このパターンは、オフィススイートや電子メールクライアント、 Web "
-"ブラウザやファイルマネージャなど、 X11 を利用する完全機能の GNOME デスクトップ環境をインストールします。"
+"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境で"
+"す。このパターンは、オフィススイートや電子メールクライアント、 Web ブラウザや"
+"ファイルマネージャなど、 X11 を利用する完全機能の GNOME デスクトップ環境をイ"
+"ンストールします。"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_yast/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/summary
@@ -830,12 +836,10 @@ msgid "Package Management - Graphical Tools"
 msgstr "パッケージ管理 - グラフィカルツール"
 
 #. leap/patterns-haskell/patterns-haskell-haskell_platform/summary
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/summary
 msgid "Haskell Platform"
 msgstr "Haskell プラットフォーム"
 
 #. leap/patterns-haskell/patterns-haskell-haskell_platform/description
-#. tumbleweed/patterns-haskell/patterns-haskell-haskell_platform/description
 msgid ""
 "The Haskell Platform is the easiest way to get started with programming "
 "Haskell. It comes with all you need to get up and running. Think of it as "
@@ -852,17 +856,26 @@ msgstr "HPC 基本計算ノード"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
+#, fuzzy
+#| msgid ""
+#| "A compute node has a minimal software image and mainly runs simulation "
+#| "programs. Services on this node should be reduced to a bare minimum and "
+#| "the node *must* be installed in a automatic manner. The pattern HPC "
+#| "libraries should also be installed."
 msgid ""
-"A compute node has a minimal software image and mainly runs simulation "
-"programs. Services on this node should be reduced to a bare minimum and the "
-"node *must* be installed in a automatic manner. The pattern HPC libraries "
-"should also be installed."
+"A compute node comprises of a minimal software image and mainly runs "
+"simulation programs. Services on this node should be reduced to a bare "
+"minimum and the node *must* be installed in a automatic manner. The pattern "
+"'HPC modularized libraries' should also be installed."
 msgstr ""
-"計算ノードとは最小限のパッケージのみがインストールされる環境で、主にシミュレーションプログラムを動作させるために使用するものです。このシステムで動作するサ"
-"ービスは最小限のものに限られるほか、ノードは自動的に管理されるものでなければなりません。 HPC ライブラリのパターンもインストールされます。"
+"計算ノードとは最小限のパッケージのみがインストールされる環境で、主にシミュ"
+"レーションプログラムを動作させるために使用するものです。このシステムで動作す"
+"るサービスは最小限のものに限られるほか、ノードは自動的に管理されるものでなけ"
+"ればなりません。 HPC ライブラリのパターンもインストールされます。"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
+#. leap/patterns-hpc/patterns-hpc-workload_server/category
 #. leap/patterns-network/patterns-network-network_admin/category
 #. leap/patterns-server/patterns-server-dhcp_dns_server/category
 #. leap/patterns-server/patterns-server-directory_server/category
@@ -875,6 +888,7 @@ msgstr ""
 #. leap/patterns-server/patterns-server-xen_server/category
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/category
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/category
+#. tumbleweed/patterns-hpc/patterns-hpc-workload_server/category
 #. tumbleweed/patterns-network/patterns-network-network_admin/category
 #. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/category
 #. tumbleweed/patterns-server/patterns-server-directory_server/category
@@ -883,7 +897,7 @@ msgstr ""
 #. tumbleweed/patterns-server/patterns-server-kvm_server/category
 #. tumbleweed/patterns-server/patterns-server-lamp_server/category
 #. tumbleweed/patterns-server/patterns-server-mail_server/category
-#. tumbleweed/patterns-server/patterns-server-print_server/category
+#. tumbleweed/patterns-server/patterns-server-printing/category
 #. tumbleweed/patterns-server/patterns-server-xen_server/category
 msgid "Server Functions"
 msgstr "サーバ機能"
@@ -895,13 +909,19 @@ msgstr "KDE 開発用パッケージ群"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the HPC libraries and adds additionally the "
+#| "compilers and includes also the relevant management packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
-"applications. It depends on the HPC libraries and adds additionally the "
-"compilers and includes also the relevant management packages."
+"applications. It depends on the pattern 'HPC modularized libraries'. In "
+"addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
-"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが含まれています。 HPC "
-"ライブラリのほか、追加でコンパイラや関連する管理パッケージなどがインストールされます。"
+"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが"
+"含まれています。 HPC ライブラリのほか、追加でコンパイラや関連する管理パッケー"
+"ジなどがインストールされます。"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
@@ -910,28 +930,44 @@ msgstr "HPC モジュール型ライブラリ"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in an HPC environment. Especially these libraries allows you to "
+#| "install several MPI flavors in parallel. In order to use this libraries "
+#| "you have them to load first via the module command."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
-"in an HPC environment. Especially these libraries allows you to install "
-"several MPI flavors in parallel. In order to use this libraries you have "
-"them to load first via the module command."
+"in an HPC environment. These libraries allow to install several MPI flavors "
+"in parallel. In order to use thess libraries one needs to load them via the "
+"module command first."
 msgstr ""
-"このパッケージには全てのモジュール化されたライブラリが含まれていて、HPC 環境内でそれらを利用できるようになっています。特にこれらのライブラリでは、"
-"異なる MPI "
-"環境を同時にインストールすることができるようになります。このライブラリを使用するには、まずモジュールコマンドでそれらを読み込む必要があります。"
+"このパッケージには全てのモジュール化されたライブラリが含まれていて、HPC 環境"
+"内でそれらを利用できるようになっています。特にこれらのライブラリでは、異なる "
+"MPI 環境を同時にインストールすることができるようになります。このライブラリを"
+"使用するには、まずモジュールコマンドでそれらを読み込む必要があります。"
+
+#. leap/patterns-hpc/patterns-hpc-workload_server/summary
+#. tumbleweed/patterns-hpc/patterns-hpc-workload_server/summary
+msgid "HPC Workload Manager"
+msgstr ""
+
+#. leap/patterns-hpc/patterns-hpc-workload_server/description
+#. tumbleweed/patterns-hpc/patterns-hpc-workload_server/description
+msgid ""
+"This package provides all the relevant packages for running the central "
+"server component of the slurm workload manager."
+msgstr ""
 
 #. leap/patterns-kde/patterns-kde-devel_kde/summary
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/summary
 msgid "KDE Development"
 msgstr "KDE 開発"
 
 #. leap/patterns-kde/patterns-kde-devel_kde/description
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde/description
 msgid "KDE development packages."
 msgstr "KDE 開発用パッケージ群です。"
 
 #. leap/patterns-kde/patterns-kde-devel_kde_frameworks/summary
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
 msgid "KDE Frameworks Development"
 msgstr "KDE フレームワーク開発"
 
@@ -946,7 +982,6 @@ msgid "Qt 5 Development"
 msgstr "Qt 5 開発"
 
 #. leap/patterns-kde/patterns-kde-devel_qt5/description
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
 msgid ""
 "Tools and libraries for software development using Qt 5, the latest version "
 "of the Qt toolkit."
@@ -955,12 +990,10 @@ msgstr ""
 "ツールとライブラリです。"
 
 #. leap/patterns-kde/patterns-kde-kde/summary
-#. tumbleweed/patterns-kde/patterns-kde-kde/summary
 msgid "KDE Plasma 5 Desktop Environment"
 msgstr "KDE Plasma 5 デスクトップ環境"
 
 #. leap/patterns-kde/patterns-kde-kde/description
-#. tumbleweed/patterns-kde/patterns-kde-kde/description
 msgid ""
 "KDE is a powerful free software graphical desktop environment for Linux "
 "workstations. It combines ease of use, contemporary functionality, and "
@@ -998,6 +1031,7 @@ msgstr "KDE アプリケーション - コンピュータで子供に教育す�
 #. tumbleweed/patterns-kde/patterns-kde-kde_internet/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_multimedia/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_office/category
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_utilities/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_utilities_opt/category
 msgid "KDE Desktop"
@@ -1019,7 +1053,6 @@ msgid "KDE Integrated Development Environment"
 msgstr "KDE 統合開発環境"
 
 #. leap/patterns-kde/patterns-kde-kde_ide/description
-#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
 msgid "Development environment for the Plasma Desktop"
 msgstr "Plasma デスクトップ向け開発環境"
 
@@ -1061,7 +1094,6 @@ msgid "KDE Office"
 msgstr "KDE オフィス"
 
 #. leap/patterns-kde/patterns-kde-kde_plasma/summary
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
 msgid "KDE Plasma 5 Desktop"
 msgstr "KDE Plasma 5 デスクトップ"
 
@@ -1264,7 +1296,6 @@ msgstr "MATE ユーティリティ"
 #. leap/patterns-media/patterns-media-rest_cd_kde/summary
 #. leap/patterns-media/patterns-media-rest_cd_x11/summary
 #. leap/patterns-media/patterns-media-rest_core_dvd/summary
-#. leap/patterns-media/patterns-media-rest_dvd/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_kde/summary
@@ -1279,7 +1310,6 @@ msgstr "残りのソフトウエア"
 #. leap/patterns-media/patterns-media-rest_cd_kde/description
 #. leap/patterns-media/patterns-media-rest_cd_x11/description
 #. leap/patterns-media/patterns-media-rest_core_dvd/description
-#. leap/patterns-media/patterns-media-rest_dvd/description
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/description
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/description
 #. tumbleweed/patterns-media/patterns-media-rest_cd_kde/description
@@ -1325,6 +1355,7 @@ msgstr ""
 #. leap/patterns-server/patterns-server-dhcp_dns_server/summary
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-dhcp_dns_server/summary
+#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
 msgid "DHCP and DNS Server"
 msgstr "DHCP および DNS サーバ"
 
@@ -1344,12 +1375,14 @@ msgstr ""
 "際に使用する仕組みです。"
 
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-dhcp_dns_server-32bit/description
 msgid "The 32bit pattern complementing dhcp_dns_server."
 msgstr "dhcp_dns_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-directory_server/summary
 #. leap/patterns-server/patterns-server-directory_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-directory_server/summary
+#. tumbleweed/patterns-server/patterns-server-directory_server-32bit/summary
 msgid "Directory Server (LDAP)"
 msgstr "ディレクトリサーバ (LDAP)"
 
@@ -1364,12 +1397,14 @@ msgstr ""
 "アクセスする際に使用します。"
 
 #. leap/patterns-server/patterns-server-directory_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
 msgstr "directory_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-file_server/summary
 #. leap/patterns-server/patterns-server-file_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-file_server/summary
+#. tumbleweed/patterns-server/patterns-server-file_server-32bit/summary
 msgid "File Server"
 msgstr "ファイルサーバ"
 
@@ -1385,12 +1420,14 @@ msgstr ""
 "なります。プロトコルとしては、 FTP, SMB, NFS が含まれます。"
 
 #. leap/patterns-server/patterns-server-file_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-file_server-32bit/description
 msgid "The 32bit pattern complementing file_server."
 msgstr "file_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-gateway_server/summary
 #. leap/patterns-server/patterns-server-gateway_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-gateway_server/summary
+#. tumbleweed/patterns-server/patterns-server-gateway_server-32bit/summary
 msgid "Internet Gateway"
 msgstr "インターネットゲートウエイ"
 
@@ -1404,11 +1441,11 @@ msgstr ""
 "オール／ゲートウエイサーバを構築するためのソフトウエアです。"
 
 #. leap/patterns-server/patterns-server-gateway_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-gateway_server-32bit/description
 msgid "The 32bit pattern complementing gateway_server."
 msgstr "gateway_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-kvm_server/summary
-#. leap/patterns-server/patterns-server-kvm_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-kvm_server/summary
 msgid "KVM Host Server"
 msgstr "KVM ホストサーバ"
@@ -1424,16 +1461,13 @@ msgstr ""
 "単一の物理マシン内に複数の仮想マシンを設定し、管理し、監視することのできる"
 "サーバを設定するためのソフトウエアです。"
 
-#. leap/patterns-server/patterns-server-kvm_server-32bit/description
-msgid "The 32bit pattern complementing kvm_server."
-msgstr "kvm_server パターンを補完する 32 ビットパターンです。"
-
 #. leap/patterns-server/patterns-server-kvm_tools/summary
-#. leap/patterns-server/patterns-server-kvm_tools-32bit/summary
+#. tumbleweed/patterns-server/patterns-server-kvm_tools/summary
 msgid "KVM Virtualization Host and tools"
 msgstr "KVM 仮想化ホストとツール"
 
 #. leap/patterns-server/patterns-server-kvm_tools/description
+#. tumbleweed/patterns-server/patterns-server-kvm_tools/description
 msgid ""
 "This will provide all minimal system to get a running KVM Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
@@ -1443,13 +1477,10 @@ msgstr ""
 "するほか、単一の物理マシンで複数の仮想マシンを設定し、管理し、監視することの"
 "できるサーバを設定します。"
 
-#. leap/patterns-server/patterns-server-kvm_tools-32bit/description
-msgid "The 32bit pattern complementing kvm_tools."
-msgstr "kvm_tools パターンを補完する 32 ビットパターンです。"
-
 #. leap/patterns-server/patterns-server-lamp_server/summary
 #. leap/patterns-server/patterns-server-lamp_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-lamp_server/summary
+#. tumbleweed/patterns-server/patterns-server-lamp_server-32bit/summary
 msgid "Web and LAMP Server"
 msgstr "Web および LAMP サーバ"
 
@@ -1467,12 +1498,14 @@ msgstr ""
 "スクリプト言語も含まれています。"
 
 #. leap/patterns-server/patterns-server-lamp_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-lamp_server-32bit/description
 msgid "The 32bit pattern complementing lamp_server."
 msgstr "lamp_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-mail_server/summary
 #. leap/patterns-server/patterns-server-mail_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-mail_server/summary
+#. tumbleweed/patterns-server/patterns-server-mail_server-32bit/summary
 msgid "Mail and News Server"
 msgstr "メールとニュースのサーバ"
 
@@ -1489,16 +1522,19 @@ msgstr ""
 "す。"
 
 #. leap/patterns-server/patterns-server-mail_server-32bit/description
+#. tumbleweed/patterns-server/patterns-server-mail_server-32bit/description
 msgid "The 32bit pattern complementing mail_server."
 msgstr "mail_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-printing/summary
 #. leap/patterns-server/patterns-server-printing-32bit/summary
-#. tumbleweed/patterns-server/patterns-server-print_server/summary
+#. tumbleweed/patterns-server/patterns-server-printing/summary
+#. tumbleweed/patterns-server/patterns-server-printing-32bit/summary
 msgid "Print Server"
 msgstr "印刷サーバ"
 
 #. leap/patterns-server/patterns-server-printing/description
+#. tumbleweed/patterns-server/patterns-server-printing/description
 msgid ""
 "This pattern provides all packages necessary for printing. It provides all "
 "needed packages for printing to a locally connected printer, printing using "
@@ -1509,25 +1545,22 @@ msgstr ""
 "の印刷や、印刷サーバの設定なども行なうことができます。"
 
 #. leap/patterns-server/patterns-server-printing-32bit/description
+#. tumbleweed/patterns-server/patterns-server-printing-32bit/description
 msgid "The 32bit pattern complementing printing."
 msgstr "printing パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-xen_server/summary
-#. leap/patterns-server/patterns-server-xen_server-32bit/summary
 #. tumbleweed/patterns-server/patterns-server-xen_server/summary
 msgid "Xen Virtual Machine Host Server"
 msgstr "Xen 仮想マシンホストサーバ"
 
-#. leap/patterns-server/patterns-server-xen_server-32bit/description
-msgid "The 32bit pattern complementing xen_server."
-msgstr "xen_server パターンを補完する 32 ビットパターンです。"
-
 #. leap/patterns-server/patterns-server-xen_tools/summary
-#. leap/patterns-server/patterns-server-xen_tools-32bit/summary
+#. tumbleweed/patterns-server/patterns-server-xen_tools/summary
 msgid "XEN Virtualization Host and tools"
 msgstr "XEN 仮想化ホストとツール"
 
 #. leap/patterns-server/patterns-server-xen_tools/description
+#. tumbleweed/patterns-server/patterns-server-xen_tools/description
 msgid ""
 "This will provide all minimal system to get a running XEN Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
@@ -1536,10 +1569,6 @@ msgstr ""
 "このパターンは、 XEN ハイパーバイザを実行するのに必要な最小限のシステムを提供"
 "するほか、単一の物理マシンで複数の仮想マシンを設定し、管理し、監視することの"
 "できるサーバを設定します。"
-
-#. leap/patterns-server/patterns-server-xen_tools-32bit/description
-msgid "The 32bit pattern complementing xen_tools."
-msgstr "xen_tools パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
@@ -1629,7 +1658,9 @@ msgid "x86 Runtime Environment"
 msgstr "x86 ランタイム環境"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/summary
-msgid "openSUSE Kubic MicroOS System"
+#, fuzzy
+#| msgid "openSUSE Kubic MicroOS System"
+msgid "openSUSE Kubic MicroOS"
 msgstr "openSUSE Kubic MicroOS システム"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/description
@@ -1640,122 +1671,268 @@ msgstr ""
 "これは MicroOS ランタイムシステムです。最小限のパッケージのみが含まれる、マル"
 "チユーザ型の起動システムが含まれています。"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-Stack/summary
-msgid "openSUSE Kubic Stack"
-msgstr "openSUSE Kubic スタック"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-Stack/description
-msgid ""
-"This is the stack on top of MicroOS. It contains everything for container "
-"and kubernetes."
-msgstr ""
-"これは MicroOS 上で利用されるものです。コンテナや Kubernetes で必要なものが全"
-"て含まれています。"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-Stack/category
+#. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/category
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/category
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/category
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/category
+#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/category
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/category
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/category
+#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/category
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/category
-#. tumbleweed/patterns-caasp/patterns-caasp-selinux/category
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/category
-msgid "Primary Functions"
-msgstr "主要機能"
+#, fuzzy
+#| msgid "openSUSE Kubic Stack"
+msgid "openSUSE Kubic"
+msgstr "openSUSE Kubic スタック"
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/summary
+msgid "Alternative Container Runtime"
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/description
+msgid "This pattern installs the alternative container runtime packages."
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/summary
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Alternative Packages only for the DVD of openSUSE Kubic"
+msgstr "openSUSE Kubic の DVD 向けのみのパッケージ"
+
+#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/description
+msgid "Alternative additonal packages on a openSUSE Kubic DVD."
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/summary
-msgid "Packages needed to enable Apparmor on openSUSE Kubic"
-msgstr "openSUSE Kubic で AppArmor を有効化するのに必要なパッケージ"
+msgid "Apparmor Support"
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to enable Apparmor on SUSE CaaS "
+#| "Platform or openSUSE Kubic product."
 msgid ""
-"This are packages which are required to enable Apparmor on SUSE CaaS "
-"Platform or openSUSE Kubic product."
+"Packages required to enable Apparmor on SUSE CaaS Platform or openSUSE Kubic."
 msgstr ""
 "ここには、 SUSE CaaS プラットフォームや openSUSE Kubic 製品で、 AppArmor を有"
 "効化する際に必要となるパッケージがあります。"
 
+#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/summary
+msgid "Container Runtime"
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/description
+msgid "This pattern installs the default container runtime packages."
+msgstr ""
+
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
-msgid "Packages needed to run openSUSE Kubic on real hardware"
-msgstr "物理ハードウエアで openSUSE Kunic を実行するのに必要なパッケージ"
+msgid "Hardware Support"
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to install SUSE CaaS Platform or "
+#| "openSUSE Kubic product on real hardeare."
 msgid ""
-"This are packages which are required to install SUSE CaaS Platform or "
-"openSUSE Kubic product on real hardeare."
+"Packages required to install SUSE CaaS Platform or openSUSE Kubic on real "
+"hardware."
 msgstr ""
 "ここには、物理ハードウエア上に SUSE CaaS プラットフォームや openSUSE Kubic 製"
 "品をインストールするのに必要な、各種パッケージがあります。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/summary
-msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
-msgstr "openSUSE Kubic 上で IMA/EVM を有効化するのに必要なパッケージ"
+msgid "IMA/EVM Support"
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to enable IMA/EVM on SUSE CaaS "
+#| "Platform or openSUSE Kubic product."
 msgid ""
-"This are packages which are required to enable IMA/EVM on SUSE CaaS Platform "
-"or openSUSE Kubic product."
+"Packages required to enable IMA/EVM on SUSE CaaS Platform or openSUSE Kubic."
 msgstr ""
 "ここには、 SUSE CaaS プラットフォームや openSUSE Kubic 製品で IMA/EVM を有効"
 "化するのに必要な、各種パッケージがあります。"
+
+#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/summary
+msgid "kubeadm Stack"
+msgstr ""
+
+#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/description
+msgid ""
+"This provides a vanilla kubeadm stack. It contains everything needed to run "
+"kubernetes directly on top of MicroOS."
+msgstr ""
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE Kubic"
 msgstr "openSUSE Kubic の DVD 向けのみのパッケージ"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/description
-msgid ""
-"This are the additonal packages which should be on a SUSE CaaS Platform or "
-"openSUSE Kubic product."
-msgstr ""
-"ここには、 SUSE CaaS プラットフォームや openSUSE Kubic プロジェクトで利用され"
-"る、追加のパッケージがあります。"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-selinux/summary
-msgid "Packages needed to enable SELinux on openSUSE Kubic"
-msgstr "openSUSE Kubic 上で SELinux を有効化するのに必要なパッケージ"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-selinux/description
-msgid ""
-"This are packages which are required to enable SELinux on SUSE CaaS Platform "
-"or openSUSE Kubic product."
-msgstr ""
-"ここには、 SUSE CaaS プラットフォームや openSUSE Kubic 製品で SELinux を有効"
-"化するのに必要な、各種パッケージがあります。"
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Additonal packages on a openSUSE Kubic DVD."
+msgstr "openSUSE Kubic の DVD 向けのみのパッケージ"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
-msgid "Packages needed to let openSUSE Kubic act as LDAP client"
+msgid "LDAP client"
 msgstr ""
-"openSUSE Kubic を LDAP クライアントとして動作させるために必要なパッケージ"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to enable LDAP client support via "
+#| "sssd on SUSE CaaS Platform or openSUSE Kubic product."
 msgid ""
-"This are packages which are required to enable LDAP client support via sssd "
-"on SUSE CaaS Platform or openSUSE Kubic product."
+"Packages required to enable LDAP client support via sssd on SUSE CaaS "
+"Platform or openSUSE Kubic."
 msgstr ""
 "ここには、 SUSE CaaS プラットフォームや openSUSE Kubic 製品上で、 sssd を介し"
 "て LDAP クライアント機能を有効化するのに必要な、各種パッケージがあります。"
 
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/summary
-msgid "GNOME Desktop Environment"
-msgstr "GNOME デスクトップ環境"
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing base."
+msgid "The 32bit pattern complementing devel_basis."
+msgstr "base パターンを補完する 32 ビットパターンです。"
 
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/description
-msgid ""
-"The GNOME desktop environment is an intuitive and attractive desktop for "
-"users."
-msgstr ""
-"GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境で"
-"す。"
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing kvm_server."
+msgid "The 32bit pattern complementing devel_kernel."
+msgstr "kvm_server パターンを補完する 32 ビットパターンです。"
 
-#. tumbleweed/patterns-server/patterns-server-print_server/description
+#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
+#, fuzzy
+#| msgid "KDE Frameworks Development"
+msgid "KDE Frameworks and Plasma Development"
+msgstr "KDE フレームワーク開発"
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
+#, fuzzy
+#| msgid "Tools and libraries for .NET development using Mono."
+msgid "Tools and libraries for software development using Qt 5."
+msgstr "Mono を使用する .NET 開発用のツールとライブラリです。"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde/summary
+#, fuzzy
+#| msgid "KDE Applications - Games"
+msgid "KDE Applications and Plasma 5 Desktop"
+msgstr "KDE アプリケーション - ゲーム"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde/description
+#, fuzzy
+#| msgid "Base packages for the KDE Plasma 5 desktop environment."
 msgid ""
-"Software used to host print queues so that they may be accessed by other "
-"computers on the same network. LPD, CUPS, and SMB print servers and queues "
-"are supported."
+"Packages providing the Plasma desktop environment and applications from KDE."
+msgstr "KDE Plasma5 デスクトップ環境向け基本パッケージです。"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
+msgid ""
+"KDE software for development (editors, integrated development environments, "
+"and associated tools)."
 msgstr ""
-"同じネットワーク内にある他のコンピュータからアクセスするための、印刷キューを"
-"ホスティングするために使用するソフトウエアです。 LPD, CUPS, SMB の各印刷サー"
-"バとキューに対応しています。"
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/summary
+msgid "KDE PIM Suite"
+msgstr ""
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/description
+msgid "The KDE PIM Suite (Kontact, KMail, KOrganizer, ...)."
+msgstr ""
+
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
+#, fuzzy
+#| msgid "KDE Plasma 5 Desktop"
+msgid "KDE Plasma 5 Desktop Base"
+msgstr "KDE Plasma 5 デスクトップ"
+
+#~ msgid "Read-Only Root Filesystem Tools"
+#~ msgstr "ルートファイルシステムを読み込み専用にするためのツール"
+
+#~ msgid "GNOME Administration Tools"
+#~ msgstr "GNOME 管理ツール"
+
+#~ msgid "Administration Tools e.g. for desktop lockdown"
+#~ msgstr "デスクトップのロックダウンなどの管理ツール"
+
+#~ msgid "GNOME Laptop"
+#~ msgstr "GNOME ラップトップ"
+
+#~ msgid "GNOME Tools designed specifically for use with laptop computers."
+#~ msgstr "特にラップトップコンピュータ向けに設計された GNOME ツール集です。"
+
+#~ msgid "The 32bit pattern complementing kvm_tools."
+#~ msgstr "kvm_tools パターンを補完する 32 ビットパターンです。"
+
+#~ msgid "The 32bit pattern complementing xen_server."
+#~ msgstr "xen_server パターンを補完する 32 ビットパターンです。"
+
+#~ msgid "The 32bit pattern complementing xen_tools."
+#~ msgstr "xen_tools パターンを補完する 32 ビットパターンです。"
+
+#~ msgid ""
+#~ "This is the stack on top of MicroOS. It contains everything for container "
+#~ "and kubernetes."
+#~ msgstr ""
+#~ "これは MicroOS 上で利用されるものです。コンテナや Kubernetes で必要なもの"
+#~ "が全て含まれています。"
+
+#~ msgid "Primary Functions"
+#~ msgstr "主要機能"
+
+#~ msgid "Packages needed to enable Apparmor on openSUSE Kubic"
+#~ msgstr "openSUSE Kubic で AppArmor を有効化するのに必要なパッケージ"
+
+#~ msgid "Packages needed to run openSUSE Kubic on real hardware"
+#~ msgstr "物理ハードウエアで openSUSE Kunic を実行するのに必要なパッケージ"
+
+#~ msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
+#~ msgstr "openSUSE Kubic 上で IMA/EVM を有効化するのに必要なパッケージ"
+
+#~ msgid ""
+#~ "This are the additonal packages which should be on a SUSE CaaS Platform "
+#~ "or openSUSE Kubic product."
+#~ msgstr ""
+#~ "ここには、 SUSE CaaS プラットフォームや openSUSE Kubic プロジェクトで利用"
+#~ "される、追加のパッケージがあります。"
+
+#~ msgid "Packages needed to enable SELinux on openSUSE Kubic"
+#~ msgstr "openSUSE Kubic 上で SELinux を有効化するのに必要なパッケージ"
+
+#~ msgid ""
+#~ "This are packages which are required to enable SELinux on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "ここには、 SUSE CaaS プラットフォームや openSUSE Kubic 製品で SELinux を有"
+#~ "効化するのに必要な、各種パッケージがあります。"
+
+#~ msgid "Packages needed to let openSUSE Kubic act as LDAP client"
+#~ msgstr ""
+#~ "openSUSE Kubic を LDAP クライアントとして動作させるために必要なパッケージ"
+
+#~ msgid "GNOME Desktop Environment"
+#~ msgstr "GNOME デスクトップ環境"
+
+#~ msgid ""
+#~ "The GNOME desktop environment is an intuitive and attractive desktop for "
+#~ "users."
+#~ msgstr ""
+#~ "GNOME デスクトップ環境は、ユーザに対して直感的かつ魅力的なデスクトップ環境"
+#~ "です。"
+
+#~ msgid ""
+#~ "Software used to host print queues so that they may be accessed by other "
+#~ "computers on the same network. LPD, CUPS, and SMB print servers and "
+#~ "queues are supported."
+#~ msgstr ""
+#~ "同じネットワーク内にある他のコンピュータからアクセスするための、印刷キュー"
+#~ "をホスティングするために使用するソフトウエアです。 LPD, CUPS, SMB の各印刷"
+#~ "サーバとキューに対応しています。"
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "HPC アプリを開発するのに必要なパッケージ"
@@ -1794,19 +1971,6 @@ msgstr ""
 
 #~ msgid "Package Management - Graphical Tools for KDE"
 #~ msgstr "パッケージ管理 - KDE 向けグラフィカルツール"
-
-#~ msgid "Misc. Proprietary Packages"
-#~ msgstr "その他のプロプライエタリパッケージ"
-
-#~ msgid "Packages that are proprietary and not under an Open Source license"
-#~ msgstr ""
-#~ "プロプライエタリ (使用権のみが限定的に提供される) であり、オープンソースラ"
-#~ "イセンスではないパッケージ群"
-
-#~ msgid "Packages that are proprietary and not under an Open Source license."
-#~ msgstr ""
-#~ "プロプライエタリ (使用権のみが限定的に提供される) であり、オープンソースラ"
-#~ "イセンスではないパッケージ群です。"
 
 #~ msgid "Integrated Development Environments"
 #~ msgstr "統合開発環境"

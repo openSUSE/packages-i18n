@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-06 12:26+0000\n"
+"POT-Creation-Date: 2018-10-30 14:08+0000\n"
 "PO-Revision-Date: 2016-02-02 01:17:11\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -157,18 +157,6 @@ msgstr ""
 "a már létező YaST modulok és komponensek (mind YCP, mind C++) "
 "újrafordításához is."
 
-#. leap/yast2-caasp/summary
-#. tumbleweed/yast2-caasp/summary
-#, fuzzy
-#| msgid "YaST2 - IPL loader"
-msgid "YaST2 - CaaSP Module"
-msgstr "YaST - IPL betöltő"
-
-#. leap/yast2-caasp/description
-#. tumbleweed/yast2-caasp/description
-msgid "Containers as a Service Platform (CaaSP) specific module."
-msgstr ""
-
 #. leap/yast2-cluster/summary
 #. tumbleweed/yast2-cluster/summary
 #, fuzzy
@@ -270,19 +258,6 @@ msgid ""
 msgstr ""
 "Adatfájlok a yast2-country modulhoz valamint a leggyakrabban használt API-"
 "funkciók (nyelvi modul)"
-
-#. leap/yast2-dbus-server/summary
-#. tumbleweed/yast2-dbus-server/summary
-#, fuzzy
-msgid "YaST2 - DBus Server"
-msgstr "YaST - DNS-kiszolgáló beállító modul"
-
-#. leap/yast2-dbus-server/description
-#. tumbleweed/yast2-dbus-server/description
-msgid ""
-"This package contains YaST DBus service, it provides DBus access to YaST "
-"components."
-msgstr ""
 
 #. leap/yast2-devtools/summary
 #. tumbleweed/yast2-devtools/summary
@@ -562,6 +537,16 @@ msgstr ""
 "Ügynökprogram, amelyet több YaST modul LDAP integrációjához használnak. "
 "Segítségével lehetőség nyílik LDAP fák böngészésére, valamint elemek "
 "hozzáadásra, módosításra és keresésre az LDAP szerveren."
+
+#. leap/yast2/yast2-logs/summary
+msgid "Collecting YAST information"
+msgstr ""
+
+#. leap/yast2/yast2-logs/description
+#, fuzzy
+#| msgid "This package contains the openSUSE theme for YaST2."
+msgid "This package contains scripts for handling YAST logs."
+msgstr "Ez a csomag a YaST openSUSE témáját tartalmazza."
 
 #. leap/yast2-mail/summary
 #. tumbleweed/yast2-mail/summary
@@ -865,6 +850,20 @@ msgstr ""
 #| msgid "The YaST2 component for configuring the inetd and xinetd daemons."
 msgid "The YaST2 component for configuring Rear - Relax and Recover Backup"
 msgstr "YaST inetd és xinetd démonok beállítómodul."
+
+#. leap/yast2-registration/summary
+#, fuzzy
+#| msgid "YaST2 - Add-On media installation code"
+msgid "YaST2 - Registration Module"
+msgstr "YaST - Kiegészítő média telepítője"
+
+#. leap/yast2-registration/description
+msgid ""
+"The registration module to register products and/or to fetch an update "
+"source (mirror) automatically."
+msgstr ""
+"A termékek regisztrálására és/vagy egy frissítési forrás (tükör) automatikus "
+"leszedésére használt regisztrációs modul."
 
 #. leap/yast2-rmt/summary
 #. tumbleweed/yast2-rmt/summary
@@ -1810,14 +1809,14 @@ msgid "YaST2 - Translations for Serbian."
 msgstr "YaST - Grúz fordítások."
 
 #. leap/yast2-trans/yast2-trans-sr-latin/summary
-#. tumbleweed/yast2-trans/yast2-trans-sr-Latn/summary
+#. tumbleweed/yast2-trans/yast2-trans-sr-latin/summary
 #, fuzzy
 #| msgid "YaST2 - Serbian Translations"
 msgid "YaST2 - Serbian (Latin) Translations"
 msgstr "YaST - Szerb fordítás"
 
 #. leap/yast2-trans/yast2-trans-sr-latin/description
-#. tumbleweed/yast2-trans/yast2-trans-sr-Latn/description
+#. tumbleweed/yast2-trans/yast2-trans-sr-latin/description
 #, fuzzy
 msgid "YaST2 - Translations for Serbian (Latin)."
 msgstr "YaST - Grúz fordítások."
@@ -2087,6 +2086,29 @@ msgstr ""
 "általános YaST felhasználói felület motorját (az YCP az a szkriptnyelv, "
 "amelyben a legtöbb YaST modul íródott)."
 
+#. tumbleweed/yast2-boot-server/summary
+msgid "YaST2 - Network Booting and Wake-On-Lan Configuration"
+msgstr "YaST - Hálózati rendszerindítás és Wake-On-Lan beállítása"
+
+#. tumbleweed/yast2-boot-server/description
+msgid "YaST2 module for network booting and Wake-On-Lan."
+msgstr "YaST modul a hálózati rendszerindításhoz és a Wake-On-Lan -hoz."
+
+#. tumbleweed/yast2-caasp/summary
+#, fuzzy
+#| msgid "YaST2 - IPL loader"
+msgid "YaST2 - CaaSP Module"
+msgstr "YaST - IPL betöltő"
+
+#. tumbleweed/yast2-caasp/description
+msgid "Containers as a Service Platform (CaaSP) specific module."
+msgstr ""
+
+#. tumbleweed/yast2-crowbar/summary
+#, fuzzy
+msgid "Configuration of crowbar"
+msgstr "A kdump beállítása"
+
 #. tumbleweed/yast2-docker/summary
 #, fuzzy
 msgid "YaST2 - GUI for docker management"
@@ -2095,6 +2117,28 @@ msgstr "Katalógus kezelése"
 #. tumbleweed/yast2-docker/description
 msgid "Provides easy to use GUI for running docker containers."
 msgstr ""
+
+#. tumbleweed/yast2-samba-provision/summary
+#, fuzzy
+#| msgid "YaST2 - Samba Client Configuration"
+msgid "YaST2 - Samba AD DC provision"
+msgstr "YaST - Samba-kliens beállító modulja"
+
+#. tumbleweed/yast2-samba-provision/description
+#, fuzzy
+#| msgid ""
+#| "This package contains the YaST2 component for configuration of an iSCSI "
+#| "client."
+msgid ""
+"This package contains the YaST2 component to configure samba as an Active "
+"Directory (TM) Domain Controller."
+msgstr ""
+"Ez a csomag tartalmazza az iSCSI-kezdeményező beállításához szükséges YaST "
+"összetevőket."
+
+#, fuzzy
+#~ msgid "YaST2 - DBus Server"
+#~ msgstr "YaST - DNS-kiszolgáló beállító modul"
 
 #, fuzzy
 #~ msgid "YaST2 - Authentication Server Configuration"
@@ -2150,12 +2194,6 @@ msgstr ""
 #~ msgid "A wizard for creating your own Add-On product"
 #~ msgstr "Varázsló, saját kiegészítő termékek készítéséhez"
 
-#~ msgid "YaST2 - Network Booting and Wake-On-Lan Configuration"
-#~ msgstr "YaST - Hálózati rendszerindítás és Wake-On-Lan beállítása"
-
-#~ msgid "YaST2 module for network booting and Wake-On-Lan."
-#~ msgstr "YaST modul a hálózati rendszerindításhoz és a Wake-On-Lan -hoz."
-
 #~ msgid "YaST2 - Installation from Live Media"
 #~ msgstr "YaST - CD/DVD-ről futó rendszer telepítése"
 
@@ -2176,18 +2214,6 @@ msgstr ""
 #~ "Varázsló saját terjesztések (telepítőlemezek, cd-ről futtatható "
 #~ "lemezképek, XEN lemezképes, stb.) készítéséhez már meglévő telepítési "
 #~ "források alapján."
-
-#, fuzzy
-#~| msgid "YaST2 - Add-On media installation code"
-#~ msgid "YaST2 - Registration Module"
-#~ msgstr "YaST - Kiegészítő média telepítője"
-
-#~ msgid ""
-#~ "The registration module to register products and/or to fetch an update "
-#~ "source (mirror) automatically."
-#~ msgstr ""
-#~ "A termékek regisztrálására és/vagy egy frissítési forrás (tükör) "
-#~ "automatikus leszedésére használt regisztrációs modul."
 
 #~ msgid "All YaST .pot Files (for devel only)"
 #~ msgstr "Az összes YaST .pot fájl (fejlesztőknek)"

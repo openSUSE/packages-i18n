@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-06 12:26+0000\n"
+"POT-Creation-Date: 2018-10-30 14:08+0000\n"
 "PO-Revision-Date: 2018-05-27 19:04+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
-"Language-Team: Italian <https://l10n.opensuse.org/projects/packages-"
-"i18n/g-master/it/>\n"
+"Language-Team: Italian <https://l10n.opensuse.org/projects/packages-i18n/g-"
+"master/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +48,6 @@ msgid "GeoLite country data for GeoIP"
 msgstr ""
 
 #. leap/GeoIP/GeoIP-data/description
-#. tumbleweed/GeoIP/GeoIP-data/description
 msgid ""
 "This package includes GeoLite data created by MaxMind, available from http://"
 "www.maxmind.com"
@@ -490,16 +489,6 @@ msgstr ""
 #. leap/gambas3/gambas3-gb-db-postgresql/description
 #. tumbleweed/gambas3/gambas3-gb-db-postgresql/description
 msgid "This component allows you to access Postgresql databases."
-msgstr ""
-
-#. leap/gambas3/gambas3-gb-db-sqlite2/summary
-#. tumbleweed/gambas3/gambas3-gb-db-sqlite2/summary
-msgid "SQLite2 database driver for Gambas"
-msgstr ""
-
-#. leap/gambas3/gambas3-gb-db-sqlite2/description
-#. tumbleweed/gambas3/gambas3-gb-db-sqlite2/description
-msgid "This component allows you to access Sqlite v. 2.x databases."
 msgstr ""
 
 #. leap/gambas3/gambas3-gb-db-sqlite3/summary
@@ -1588,7 +1577,7 @@ msgstr ""
 msgid ""
 "This package provides a web frontend to display the XML tree published by "
 "ganglia, and to provide historical graphs of collected metrics. This website "
-"is written in the PHP5 language and uses the Dwoo templating engine."
+"is written in the PHP5/7 language and uses the Dwoo templating engine."
 msgstr ""
 
 #. leap/gap/summary
@@ -3536,26 +3525,31 @@ msgid "Cabinet file library and tool"
 msgstr ""
 
 #. leap/gcab/description
-msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
-"\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression."
-msgstr ""
-
-#. leap/gcab/gcab-devel/summary
-#, fuzzy
-msgid "Cabinet file library -- Development files"
-msgstr "Libreria portabile degli eventi audio - file di sviluppo"
-
-#. leap/gcab/gcab-devel/description
+#. tumbleweed/gcab/description
 msgid ""
 "gcab is a tool and library for manipulating cabinet files.\n"
 "\n"
 "It uses the GObject API and provides GIR bindings. It supports creation of "
 "archives with simple MSZIP compression.\n"
 "\n"
-"This package provides development files to build code against libgcab"
+"This package provides gcab tool and its manuals."
+msgstr ""
+
+#. leap/gcab/gcab-devel/summary
+#. tumbleweed/gcab/gcab-devel/summary
+#, fuzzy
+msgid "Development files for the gcab cabinet file library"
+msgstr "File di sviluppo per la libreria unicap"
+
+#. leap/gcab/gcab-devel/description
+#. tumbleweed/gcab/gcab-devel/description
+msgid ""
+"gcab is a tool and library for manipulating cabinet files.\n"
+"\n"
+"It uses the GObject API and provides GIR bindings. It supports creation of "
+"archives with simple MSZIP compression.\n"
+"\n"
+"This package provides development files to build code against libgcab."
 msgstr ""
 
 #. leap/gcab/gcab-lang/summary
@@ -4479,12 +4473,10 @@ msgid "Turkish voices for the GCompris game."
 msgstr ""
 
 #. leap/gconf-editor/summary
-#. tumbleweed/gconf-editor/summary
 msgid "An Editor for the GConf Database System"
 msgstr "Un editor per il sistema di database GConf"
 
 #. leap/gconf-editor/description
-#. tumbleweed/gconf-editor/description
 msgid ""
 "Gconf-editor allows you to view and edit the values that are stored in the "
 "gconf database. This database is used for application settings in the GNOME "
@@ -4495,12 +4487,10 @@ msgstr ""
 "applicazioni nell'ambiente desktop GNOME."
 
 #. leap/gconf-editor/gconf-editor-lang/summary
-#. tumbleweed/gconf-editor/gconf-editor-lang/summary
 msgid "Translations for package gconf-editor"
 msgstr "Traduzioni per il pacchetto gconf-editor"
 
 #. leap/gconf-editor/gconf-editor-lang/description
-#. tumbleweed/gconf-editor/gconf-editor-lang/description
 msgid "Provides translations for the \"gconf-editor\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"gconf-editor\"."
 
@@ -4581,15 +4571,11 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gconf2\"."
 
 #. leap/gconfmm/gconfmm-devel/summary
 #. leap/gconfmm/libgconfmm-2_6-1/summary
-#. tumbleweed/gconfmm/gconfmm-devel/summary
-#. tumbleweed/gconfmm/libgconfmm-2_6-1/summary
 msgid "C++ Interface for GConf"
 msgstr "Interfaccia C++ per GConf"
 
 #. leap/gconfmm/gconfmm-devel/description
 #. leap/gconfmm/libgconfmm-2_6-1/description
-#. tumbleweed/gconfmm/gconfmm-devel/description
-#. tumbleweed/gconfmm/libgconfmm-2_6-1/description
 msgid ""
 "This package provides a C++ interface for GConf. It is a subpackage of the "
 "gnomemm project. The interface provides a convenient interface for C++ "
@@ -5047,10 +5033,16 @@ msgid "Compatibility Wrapper for Display Managers"
 msgstr "Wrapper di compatibilità Gdmflexiserver per i gestori dello schermo"
 
 #. leap/gdm/gdmflexiserver/description
+#. tumbleweed/gdm/gdmflexiserver/description
+#, fuzzy
+#| msgid ""
+#| "The gdmflexiserver tool interacts with the display manager to enable fast "
+#| "user switching. This package contains a wrapper that selects the correct "
+#| "gdmflexiserver implementatoin, based on the running display manager."
 msgid ""
-"The gdmflexiserver tool interacts with the display manager to enable fast "
+"The GDMFlexiServer tool interacts with the display manager to enable fast "
 "user switching. This package contains a wrapper that selects the correct "
-"gdmflexiserver implementatoin, based on the running display manager."
+"Gdmflexiserver implementation, based on the running display manager."
 msgstr ""
 "Lo strumento gdmflexiserver interagisce con il gestore dello schermo per "
 "attivare il cambio utente rapido. Questo pacchetto contiene un wrapper che "
@@ -5402,17 +5394,16 @@ msgstr "Fornisce le traduzioni per il pacchetto \"geany-plugins\"."
 #. leap/geary/summary
 #. tumbleweed/geary/summary
 #, fuzzy
-msgid "A lightweight email reader for the GNOME desktop"
+msgid "An email reader for the GNOME desktop"
 msgstr "Gestore dei file per il desktop GNOME"
 
 #. leap/geary/description
 #. tumbleweed/geary/description
 msgid ""
-"Geary is a new email reader for GNOME designed to let you read your email "
-"quickly and effortlessly.\n"
+"Geary is a email reader for GNOME.\n"
 "\n"
-"Its interface is based on conversations, so you can easily read an entire "
-"discussion without having to click from message to message."
+"Its interface is based on conversations, so entire discussion may be read "
+"without having to navigate between messages."
 msgstr ""
 
 #. leap/geary/geary-lang/summary
@@ -5424,6 +5415,24 @@ msgstr "Traduzioni per il pacchetto geary"
 #. tumbleweed/geary/geary-lang/description
 msgid "Provides translations for the \"geary\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"geary\"."
+
+#. leap/geda-gaf/geda-base/summary
+#. tumbleweed/geda-gaf/geda-base/summary
+#, fuzzy
+#| msgid "A collection of helpers for building DLNA applications"
+msgid "Common code for gEDA applications"
+msgstr "Una raccolta di assistenti per creare applicazioni DLNA"
+
+#. leap/geda-gaf/geda-base/description
+#. tumbleweed/geda-gaf/geda-base/description
+#, fuzzy
+#| msgid ""
+#| "This package provides the shared library for gpsd and other GPS aware "
+#| "applications."
+msgid "This package provides code common to all gEDA applications."
+msgstr ""
+"Questo pacchetto fornisce la libreria condivisa per gpsd e altre "
+"applicazioni GPS."
 
 #. leap/geda-gaf/geda-doc/summary
 #. tumbleweed/geda-gaf/geda-doc/summary
@@ -5924,30 +5933,33 @@ msgid "Provides translations for the \"geeqie\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"geeqie\"."
 
 #. leap/gegl/summary
-#. leap/gegl/gegl-0_2/summary
-#. leap/gegl-unstable/gegl-0_3/summary
-#. leap/gegl/gegl-devel/summary
-#. leap/gegl/gegl-doc/summary
-#. leap/gegl-unstable/summary
-#. leap/gegl-unstable/gegl-unstable-devel/summary
-#. leap/gegl/libgegl-0_2-0/summary
-#. leap/gegl-unstable/libgegl-0_3-0/summary
+#. leap/gegl/gegl-0_3/summary
+#. leap/gegl/libgegl-0_3-0/summary
 #. tumbleweed/gegl/summary
-#. tumbleweed/gegl/gegl-0_3/summary
-#. tumbleweed/gegl/libgegl-0_3-0/summary
+#. tumbleweed/gegl/gegl-0_4/summary
+#. tumbleweed/gegl/libgegl-0_4-0/summary
+#. tumbleweed/gegl/libgegl-0_4-0-32bit/summary
 msgid "Generic Graphics Library"
 msgstr "Libreria grafica generica"
 
 #. leap/gegl/description
-#. leap/gegl/gegl-0_2/description
-#. leap/gegl-unstable/gegl-0_3/description
+#. leap/gegl/gegl-0_3/description
 #. leap/gegl/gegl-doc/description
-#. leap/gegl-unstable/description
-#. leap/gegl/libgegl-0_2-0/description
-#. leap/gegl-unstable/libgegl-0_3-0/description
+#. leap/gegl/libgegl-0_3-0/description
+#. tumbleweed/gegl/description
+#. tumbleweed/gegl/gegl-0_4/description
+#. tumbleweed/gegl/gegl-doc/description
+#. tumbleweed/gegl/libgegl-0_4-0/description
+#. tumbleweed/gegl/libgegl-0_4-0-32bit/description
+#, fuzzy
+#| msgid ""
+#| "GEGL provides infrastructure to do demand based cached non destructive "
+#| "image editing on larger than RAM buffers. Through babl it provides "
+#| "support for a wide range of color models and pixel storage formats for "
+#| "input and output."
 msgid ""
 "GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl it provides support for a "
+"editing on larger than RAM buffers. Through babl, it provides support for a "
 "wide range of color models and pixel storage formats for input and output."
 msgstr ""
 "GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
@@ -5956,30 +5968,28 @@ msgstr ""
 "colori e formati di memorizzazione dei pixel sia per l'input, sia per "
 "l'output."
 
-#. leap/gegl/gegl-0_2-lang/summary
-#. tumbleweed/gegl/gegl-0_3-lang/summary
+#. leap/gegl/gegl-0_3-lang/summary
+#. tumbleweed/gegl/gegl-0_4-lang/summary
 msgid "Translations for package gegl"
 msgstr "Traduzioni per il pacchetto gegl"
 
-#. leap/gegl/gegl-0_2-lang/description
-#. tumbleweed/gegl/gegl-0_3-lang/description
+#. leap/gegl/gegl-0_3-lang/description
+#. tumbleweed/gegl/gegl-0_4-lang/description
 msgid "Provides translations for the \"gegl\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"gegl\"."
 
-#. leap/gegl-unstable/gegl-0_3-lang/summary
-msgid "Translations for package gegl-unstable"
-msgstr "Traduzioni per il pacchetto gegl-unstable"
-
-#. leap/gegl-unstable/gegl-0_3-lang/description
-msgid "Provides translations for the \"gegl-unstable\" package."
-msgstr "Fornisce le traduzioni per il pacchetto \"gegl-unstable\"."
+#. leap/gegl/gegl-devel/summary
+#. tumbleweed/gegl/gegl-devel/summary
+#, fuzzy
+msgid "Development files for the GEGL \"Generic Graphics Library\""
+msgstr "File di sviluppo per la libreria unicap"
 
 #. leap/gegl/gegl-devel/description
-#. leap/gegl-unstable/gegl-unstable-devel/description
+#. tumbleweed/gegl/gegl-devel/description
 #, fuzzy
 msgid ""
 "GEGL provides infratructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl it provides support for a "
+"editing on larger than RAM buffers. Through babl, it provides support for a "
 "wide range of color models and pixel storage formats for input and output."
 msgstr ""
 "GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
@@ -5987,6 +5997,12 @@ msgstr ""
 "RAM. Attraverso babl fornisce il supporto a un'ampia gamma di modelli di "
 "colori e formati di memorizzazione dei pixel sia per l'input, sia per "
 "l'output."
+
+#. leap/gegl/gegl-doc/summary
+#. tumbleweed/gegl/gegl-doc/summary
+#, fuzzy
+msgid "Documentation for the GEGL \"Generic Graphics Library\""
+msgstr "Documentazione per le librerie di base di KDE"
 
 #. leap/geis/geis-devel/summary
 #. tumbleweed/geis/geis-devel/summary
@@ -6023,7 +6039,6 @@ msgid "Game engine made with pre-rendered background"
 msgstr ""
 
 #. leap/gemrb/description
-#. tumbleweed/gemrb/description
 msgid ""
 "GemRB is an implementation of Bioware's Infinity Engine which was written to "
 "support pseudo-3D role playing games based on the Dungeons & Dragons "
@@ -6946,7 +6961,7 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gexif\"."
 #. leap/gf2x/gf2x-devel/summary
 #. tumbleweed/gf2x/gf2x-devel/summary
 #, fuzzy
-msgid "Development files for libgf2x"
+msgid "Development headers for libgf2x"
 msgstr "File di sviluppo per libgpod"
 
 #. leap/gf2x/gf2x-devel/description
@@ -6955,7 +6970,7 @@ msgid ""
 "gf2x is a library for fast multiplication of polynomials over the GF(2) "
 "binary field.\n"
 "\n"
-"This package contains the headers for the gf2x library."
+"This package contains the interface definitions for the gf2x library."
 msgstr ""
 
 #. leap/gfan/summary
@@ -7050,12 +7065,10 @@ msgstr ""
 "grafico del sistema. Il logo può essere usato con grub, lilo o syslinux."
 
 #. leap/ggz-client-libs/summary
-#. tumbleweed/ggz-client-libs/summary
 msgid "Common files needed to use GGZ"
 msgstr "File comuni richiesti per usare GGZ"
 
 #. leap/ggz-client-libs/description
-#. tumbleweed/ggz-client-libs/description
 msgid ""
 "The ggz-client-libs package provides the common procedures and utilities "
 "required to run the GGZ client and games. The routines are shared by other "
@@ -7067,12 +7080,10 @@ msgstr ""
 "compatibilità e la stabilità."
 
 #. leap/ggz-client-libs/ggz-client-libs-devel/summary
-#. tumbleweed/ggz-client-libs/ggz-client-libs-devel/summary
 msgid "Development files for ggz-client-libs"
 msgstr "File di sviluppo per ggz-client-libs"
 
 #. leap/ggz-client-libs/ggz-client-libs-devel/description
-#. tumbleweed/ggz-client-libs/ggz-client-libs-devel/description
 msgid ""
 "This package provides development files and headers needed to build software "
 "using ggz-client-libs"
@@ -7081,12 +7092,10 @@ msgstr ""
 "generare programmi usando ggz-client-libs."
 
 #. leap/ggz-client-libs/ggz-client-libs-lang/summary
-#. tumbleweed/ggz-client-libs/ggz-client-libs-lang/summary
 msgid "Translations for package ggz-client-libs"
 msgstr "Traduzioni per il pacchetto ggz-client-libs"
 
 #. leap/ggz-client-libs/ggz-client-libs-lang/description
-#. tumbleweed/ggz-client-libs/ggz-client-libs-lang/description
 msgid "Provides translations for the \"ggz-client-libs\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"ggz-client-libs\"."
 
@@ -7151,7 +7160,7 @@ msgid ""
 "and filtering (data compression / decompression / conversion) capabilities "
 "that appear as primitive operations in the PostScript language and in PDF.\n"
 "\n"
-"For information how to use Ghostscript see /usr/share/ghostscript/9.22/doc/"
+"For information how to use Ghostscript see /usr/share/ghostscript/9.25/doc/"
 "Use.htm"
 msgstr ""
 
@@ -7282,6 +7291,19 @@ msgstr "Traduzioni per il pacchetto ghostwriter"
 #. tumbleweed/ghostwriter/ghostwriter-lang/description
 msgid "Provides translations for the \"ghostwriter\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"ghostwriter\"."
+
+#. leap/giada/summary
+#. tumbleweed/giada/summary
+msgid "Sampler Audio Tool"
+msgstr ""
+
+#. leap/giada/description
+#. tumbleweed/giada/description
+msgid ""
+"Giada is an audio tool for DJs and live performers. Up to 32 samples may be "
+"loaded or recorded, and may be played in single mode (drum machine) or loop "
+"mode (sequencer). The keyboard can be used to control this."
+msgstr ""
 
 #. leap/giblib/giblib-devel/summary
 #. tumbleweed/giblib/giblib-devel/summary
@@ -8086,16 +8108,16 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gimp-save-for-web\"."
 
 #. leap/ginac/summary
 #. leap/ginac/libginac6/summary
-#. leap/ginac/libginac6-32bit/summary
 #. tumbleweed/ginac/summary
 #. tumbleweed/ginac/libginac6/summary
-#. tumbleweed/ginac/libginac6-32bit/summary
 #, fuzzy
 msgid "C++ library for symbolic calculations"
 msgstr "Libreria condivisa per applicazioni GPS"
 
 #. leap/ginac/description
+#. leap/ginac/libginac6/description
 #. tumbleweed/ginac/description
+#. tumbleweed/ginac/libginac6/description
 msgid ""
 "GiNaC (which stands for \"GiNaC is Not a CAS (Computer Algebra System)\") is "
 "an open framework for symbolic computation within the C++ programming "
@@ -8163,12 +8185,10 @@ msgstr ""
 "uniforme leggibile dalla macchina."
 
 #. leap/girl/summary
-#. tumbleweed/girl/summary
 msgid "Find live radio programs on radio broadcasters on the Internet"
 msgstr ""
 
 #. leap/girl/description
-#. tumbleweed/girl/description
 msgid ""
 "GNOME Internet Radio Locator (GIRL) is a program that allows the user to "
 "locate live radio programs by broadcasters on the Internet.\n"
@@ -8178,12 +8198,10 @@ msgid ""
 msgstr ""
 
 #. leap/girl/girl-lang/summary
-#. tumbleweed/girl/girl-lang/summary
 msgid "Translations for package girl"
 msgstr "Traduzioni per il pacchetto girl"
 
 #. leap/girl/girl-lang/description
-#. tumbleweed/girl/girl-lang/description
 msgid "Provides translations for the \"girl\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"girl\"."
 
@@ -8213,44 +8231,6 @@ msgstr ""
 "gli strumenti GTK e di posta per importare i repository di codice sorgente "
 "da latri sistemi di controllo delle revisioni come subversion, CVS e GNU "
 "arch."
-
-#. leap/git-annex/summary
-#. tumbleweed/git-annex/summary
-msgid "Manage files with git, without checking their contents into git"
-msgstr ""
-
-#. leap/git-annex/description
-#. tumbleweed/git-annex/description
-msgid ""
-"Git-annex allows managing files with git, without checking the file contents "
-"into git. While that may seem paradoxical, it is useful when dealing with "
-"files larger than git can currently easily handle, whether due to "
-"limitations in memory, time, or disk space.\n"
-"\n"
-"It can store large files in many places, from local hard drives, to a large "
-"number of cloud storage services, including S3, WebDAV, and rsync, with a "
-"dozen cloud storage providers usable via plugins. Files can be stored "
-"encrypted with gpg, so that the cloud storage provider cannot see your data. "
-"git-annex keeps track of where each file is stored, so it knows how many "
-"copies are available, and has many facilities to ensure your data is "
-"preserved.\n"
-"\n"
-"git-annex can also be used to keep a folder in sync between computers, "
-"noticing when files are changed, and automatically committing them to git "
-"and transferring them to other computers. The git-annex webapp makes it easy "
-"to set up and use git-annex this way."
-msgstr ""
-
-#. leap/git-annex/git-annex-bash-completion/summary
-#. tumbleweed/git-annex/git-annex-bash-completion/summary
-#, fuzzy
-msgid "Bash completion for git-annex"
-msgstr "File di documentazione per Subversion"
-
-#. leap/git-annex/git-annex-bash-completion/description
-#. tumbleweed/git-annex/git-annex-bash-completion/description
-msgid "Optional dependency offering bash completion for git-annex"
-msgstr ""
 
 #. leap/git/git-arch/summary
 #. tumbleweed/git/git-arch/summary
@@ -8283,12 +8263,10 @@ msgid ""
 msgstr ""
 
 #. leap/git-cola/summary
-#. tumbleweed/git-cola/summary
 msgid "Sleek and powerful Git GUI"
 msgstr ""
 
 #. leap/git-cola/description
-#. tumbleweed/git-cola/description
 msgid ""
 "git-cola is a simple, powerful, and feature-rich GUI for Git that provides "
 "an easy way to interact with Git repositories."
@@ -8504,12 +8482,10 @@ msgstr ""
 "delle versioni Git."
 
 #. leap/git-sync/summary
-#. tumbleweed/git-sync/summary
 msgid "Safe and simple one-script git synchronization"
 msgstr ""
 
 #. leap/git-sync/description
-#. tumbleweed/git-sync/description
 msgid ""
 "Suppose you have a set of text files you care about, multiple machines to "
 "work on, and a central git repository (a.k.a. bare reporitory) at your "
@@ -8624,7 +8600,7 @@ msgstr ""
 
 #. leap/gitolite/summary
 #. tumbleweed/gitolite/summary
-msgid "Highly flexible server for git directory version tracker"
+msgid "Server for git directory version tracker"
 msgstr ""
 
 #. leap/gitolite/description
@@ -9281,12 +9257,12 @@ msgstr "File di sviluppo per le API GLU"
 #. leap/glibmm2_4/glibmm2_4-devel/description
 #. leap/glibmm2_4/libgiomm-2_4-1/description
 #. leap/glibmm2_4/libgiomm-2_4-1-32bit/description
-#. leap/glibmm2/libgiomm-2_56-1/description
-#. leap/glibmm2/libgiomm-2_56-1-32bit/description
+#. leap/glibmm2/libgiomm-2_58-1/description
+#. leap/glibmm2/libgiomm-2_58-1-32bit/description
 #. leap/glibmm2_4/libglibmm-2_4-1/description
 #. leap/glibmm2_4/libglibmm-2_4-1-32bit/description
-#. leap/glibmm2/libglibmm-2_56-1/description
-#. leap/glibmm2/libglibmm-2_56-1-32bit/description
+#. leap/glibmm2/libglibmm-2_58-1/description
+#. leap/glibmm2/libglibmm-2_58-1-32bit/description
 #. tumbleweed/glibmm2/glibmm2-devel/description
 #. tumbleweed/glibmm2_4/glibmm2_4-devel/description
 #. tumbleweed/glibmm2_4/libgiomm-2_4-1/description
@@ -9371,6 +9347,7 @@ msgstr ""
 
 #. leap/gloox/gloox-devel/summary
 #. leap/gloox/libgloox17/summary
+#. leap/gloox/libgloox17-32bit/summary
 #. tumbleweed/gloox/gloox-devel/summary
 #. tumbleweed/gloox/libgloox17/summary
 #. tumbleweed/gloox/libgloox17-32bit/summary
@@ -9379,6 +9356,7 @@ msgstr ""
 
 #. leap/gloox/gloox-devel/description
 #. leap/gloox/libgloox17/description
+#. leap/gloox/libgloox17-32bit/description
 #. tumbleweed/gloox/gloox-devel/description
 #. tumbleweed/gloox/libgloox17/description
 #. tumbleweed/gloox/libgloox17-32bit/description
@@ -9417,12 +9395,10 @@ msgid ""
 msgstr ""
 
 #. leap/glproto/glproto-devel/summary
-#. tumbleweed/glproto/glproto-devel/summary
 msgid "The X11 Protocol: OpenGL extension"
 msgstr ""
 
 #. leap/glproto/glproto-devel/description
-#. tumbleweed/glproto/glproto-devel/description
 msgid ""
 "The GL protocol headers for X11 development. This extension defines a "
 "protocol for the client to send 3D rendering commands to the X server."
@@ -9434,7 +9410,6 @@ msgid "OpenGL and OpenGL ES shader front end and validator"
 msgstr ""
 
 #. leap/glslang/glslang-devel/description
-#. tumbleweed/glslang/glslang-devel/description
 msgid ""
 "glslang is the official reference compiler front end for the OpenGL ES and "
 "OpenGL shading languages. It implements a strict interpretation of the "
@@ -9750,6 +9725,16 @@ msgstr "Traduzioni per il pacchetto gmusicbrowser"
 msgid "Provides translations for the \"gmusicbrowser\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"gmusicbrowser\"."
 
+#. leap/gn/summary
+#. tumbleweed/gn/summary
+msgid "A meta-build system that generates build files for Ninja"
+msgstr ""
+
+#. leap/gn/description
+#. tumbleweed/gn/description
+msgid "GN is a meta-build system that generates build files for Ninja."
+msgstr ""
+
 #. leap/gnokii/summary
 #. leap/gnokii/gnokii-devel/summary
 #. leap/gnokii/gnokii-smsd/summary
@@ -9793,12 +9778,10 @@ msgid "Provides translations for the \"gnokii\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"gnokii\"."
 
 #. leap/genius/gnome-genius/summary
-#. tumbleweed/genius/gnome-genius/summary
 msgid "GNOME interface the the Genius general purpose calculator"
 msgstr ""
 
 #. leap/gpaste/gnome-shell-extension-gpaste/summary
-#. tumbleweed/gpaste/gnome-shell-extension-gpaste/summary
 #, fuzzy
 msgid "GNOME Shell Extension -- GPaste Status Menu"
 msgstr "Estensione della Shell GNOME - voce di spegnimento nel menu di stato"
@@ -10029,28 +10012,20 @@ msgstr ""
 #. leap/gnu-netcat/description
 #. tumbleweed/gnu-netcat/description
 msgid ""
-"Netcat is a featured networking utility which reads and writes data across "
-"network connections, using the TCP/IP protocol.  It is designed to be a "
-"reliable \"back-end\" tool that can be used directly or easily driven by "
-"other programs and scripts. At the same time, it is a feature-rich network "
-"debugging and exploration tool, since it can create almost any kind of "
-"connection you would need and has several interesting built-in "
-"capabilities.\n"
-"\n"
-"It provides access to the following main features:\n"
+"Netcat is a networking utility which reads and writes data across network "
+"connections. It is a \"back-end\" tool that can be used directly or driven "
+"by other programs and scripts. It is also a network debugging and "
+"exploration tool, since it can create a number of connection types. It "
+"provides the following main features:\n"
 "\n"
 "  * Outbound and inbound connections, TCP or UDP, to or from any ports.   * "
-"Featured tunneling mode which allows also special tunneling such as UDP "
-"to     TCP, with the possibility of specifying all network parameters "
-"(source     port/interface, listening port/interface, and the remote host "
-"allowed to     connect to the tunnel.   * Built-in port-scanning "
-"capabilities, with randomizer.   * Advanced usage options, such as buffered "
-"send-mode (one line every N     seconds), and hexdump (to stderr or to a "
-"specified file) of trasmitted and     received data.   * Optional RFC854 "
-"telnet codes parser and responder.\n"
-"\n"
-"The GNU Netcat is distributed freely under the GNU General Public License "
-"(GPL)."
+"Tunneling mode which allows also tunneling such as UDP to     TCP, with the "
+"possibility of specifying all network parameters (source     port/interface, "
+"listening port/interface, and the remote host allowed to     connect to the "
+"tunnel.   * Built-in port-scanning capabilities, with randomizer.   * "
+"Advanced usage options, such as buffered send-mode (one line every N     "
+"seconds), and hexdump (to stderr or to a specified file) of trasmitted "
+"and     received data.   * Optional RFC854 telnet codes parser and responder."
 msgstr ""
 
 #. leap/gnu-recutils/summary
@@ -10236,7 +10211,6 @@ msgid ""
 msgstr ""
 
 #. leap/gnubg/summary
-#. tumbleweed/gnubg/summary
 msgid "Plays and analyzes backgammon games and matches on a world class level"
 msgstr ""
 
@@ -10318,39 +10292,29 @@ msgid ""
 msgstr ""
 
 #. leap/gnucash/summary
-#. leap/gnucash/gnucash-devel/summary
 #. tumbleweed/gnucash/summary
-#. tumbleweed/gnucash/gnucash-devel/summary
 msgid "Personal Finance Manager"
 msgstr "Gestore di finanze personali"
 
 #. leap/gnucash/description
 #. tumbleweed/gnucash/description
+#, fuzzy
+#| msgid ""
+#| "GnuCash is a personal finance manager. A check-book like register GUI "
+#| "allows you to enter and track bank accounts, stocks, income and even "
+#| "currency trades. The interface is designed to be simple and easy to use, "
+#| "but is backed with double-entry accounting principles to ensure balanced "
+#| "books. This is the documentation module for GnuCash."
 msgid ""
 "GnuCash is a personal finance manager. A check book-like register GUI allows "
 "you to enter and track bank accounts, stocks, income, and even currency "
-"trades. A full set of reports allows you to see the state of your finances. "
-"The interface is designed to be simple and easy to use, but is backed with "
-"double-entry accounting principles to ensure balanced books."
-msgstr ""
-"GnuCash è un gestore di finanze personale. Una GUI in stile registro della "
-"contabilità permette di inserire e tener traccia di conti correnti, titoli, "
-"entrate e persino scambio monetario. Un insieme completo di rapporti "
-"permette di vedere lo stato delle proprie finanze. L'interfaccia è "
-"progettata per essere semplice e facile da usare ma è sostenuta di principi "
-"di partita doppia per assicurare contabilità bilanciate. "
-
-#. leap/gnucash/gnucash-devel/description
-#. leap/gnucash/python-gnucash/description
-#. tumbleweed/gnucash/gnucash-devel/description
-#. tumbleweed/gnucash/python-gnucash/description
-#, fuzzy
-msgid ""
-"GnuCash is a personal finance manager. A check-book like register GUI allows "
-"you to enter and track bank accounts, stocks, income and even currency "
-"trades. A full set of reports allow you to see the state of your finances. "
-"The interface is designed to be simple and easy to use, but is backed with "
-"double-entry accounting principles to ensure balanced books."
+"trades.\n"
+"\n"
+"Feature Highlights:\n"
+"\n"
+" * Double-Entry Accounting;  * Stock/Bond/Mutual Fund Accounts;  * Small-"
+"Business Accounting;  * Reports, Graphs;  * QIF/OFX/HBCI Import, Transaction "
+"Matching;  * Scheduled Transactions;  * Financial Calculations."
 msgstr ""
 "GnuCash è un gestore di finanze personale. Una GUI in stile registro della "
 "contabilità permette di inserire e tener traccia di conti correnti, titoli, "
@@ -10358,6 +10322,19 @@ msgstr ""
 "semplice e facile da usare ma è sostenuta di principi di partita doppia per "
 "assicurare contabilità bilanciate. Questo è il modulo di documentazione per "
 "GnuCash."
+
+#. leap/gnucash/gnucash-devel/summary
+#. tumbleweed/gnucash/gnucash-devel/summary
+#, fuzzy
+msgid "Development files for GnuCash"
+msgstr "File di sviluppo per lua"
+
+#. leap/gnucash/gnucash-devel/description
+#. tumbleweed/gnucash/gnucash-devel/description
+msgid ""
+"This package provides all the necessary files for development of GnuCash, a "
+"personal finance manager."
+msgstr ""
 
 #. leap/gnucash-docs/summary
 #. tumbleweed/gnucash-docs/summary
@@ -10403,16 +10380,6 @@ msgid ""
 msgstr ""
 "Un degno avversario negli scacchi che funziona in modalità testuale. "
 "Un'interfaccia X11 si trova nel pacchetto xboard."
-
-#. leap/gnugk/summary
-msgid "OpenH323 Gatekeeper--The GNU Gatekeeper"
-msgstr ""
-
-#. leap/gnugk/description
-msgid ""
-"The gatekeeper controls H.323 compatible clients (like ohphone) and can be "
-"used to set up a complete Internet telephony system."
-msgstr ""
 
 #. leap/gnugo/summary
 #. tumbleweed/gnugo/summary
@@ -10656,11 +10623,11 @@ msgid ""
 msgstr ""
 
 #. leap/gnuradio/gnuradio-wxgui/summary
-#. leap/gnuradio/libgnuradio-3_7_11-0_0_0/summary
-#. leap/gnuradio/libvolk1_3/summary
+#. leap/gnuradio/libgnuradio-3_7_12-0_0_0/summary
+#. leap/gnuradio/libvolk1_4/summary
 #. tumbleweed/gnuradio/gnuradio-wxgui/summary
-#. tumbleweed/gnuradio/libgnuradio-3_7_11-0_0_0/summary
-#. tumbleweed/gnuradio/libvolk1_3/summary
+#. tumbleweed/gnuradio/libgnuradio-3_7_12-0_0_0/summary
+#. tumbleweed/gnuradio/libvolk1_4/summary
 #, fuzzy
 msgid "Libraries for GNU Radio"
 msgstr "Librerie per CUPS"
@@ -10751,11 +10718,9 @@ msgid ""
 msgstr ""
 
 #. leap/gnutls/summary
-#. leap/gnutls/libgnutls-dane0/summary
 #. leap/gnutls/libgnutls30/summary
 #. leap/gnutls/libgnutls30-32bit/summary
 #. tumbleweed/gnutls/summary
-#. tumbleweed/gnutls/libgnutls-dane0/summary
 #. tumbleweed/gnutls/libgnutls30/summary
 #. tumbleweed/gnutls/libgnutls30-32bit/summary
 msgid "The GNU Transport Layer Security Library"
@@ -10798,6 +10763,8 @@ msgstr ""
 #. leap/go1.8/summary
 #. leap/go1.9/summary
 #. tumbleweed/go/summary
+#. tumbleweed/go1.10/summary
+#. tumbleweed/go1.11/summary
 #. tumbleweed/go1.4/summary
 #. tumbleweed/go1.6/summary
 #. tumbleweed/go1.7/summary
@@ -10811,6 +10778,8 @@ msgstr ""
 #. leap/go1.8/description
 #. leap/go1.9/description
 #. tumbleweed/go/description
+#. tumbleweed/go1.10/description
+#. tumbleweed/go1.11/description
 #. tumbleweed/go1.4/description
 #. tumbleweed/go1.6/description
 #. tumbleweed/go1.7/description
@@ -10829,6 +10798,8 @@ msgstr ""
 #. leap/go1.8/go1.8-doc/summary
 #. leap/go1.9/go1.9-doc/summary
 #. tumbleweed/go/go-doc/summary
+#. tumbleweed/go1.10/go1.10-doc/summary
+#. tumbleweed/go1.11/go1.11-doc/summary
 #. tumbleweed/go1.4/go1.4-doc/summary
 #. tumbleweed/go1.6/go1.6-doc/summary
 #. tumbleweed/go1.7/go1.7-doc/summary
@@ -10843,6 +10814,8 @@ msgstr "Documentazione"
 #. leap/go1.8/go1.8-doc/description
 #. leap/go1.9/go1.9-doc/description
 #. tumbleweed/go/go-doc/description
+#. tumbleweed/go1.10/go1.10-doc/description
+#. tumbleweed/go1.11/go1.11-doc/description
 #. tumbleweed/go1.4/go1.4-doc/description
 #. tumbleweed/go1.6/go1.6-doc/description
 #. tumbleweed/go1.7/go1.7-doc/description
@@ -10880,6 +10853,8 @@ msgstr "Fornisce le traduzioni per il pacchetto \"go-for-it\"."
 #. leap/go1.8/go1.8-race/summary
 #. leap/go1.9/go1.9-race/summary
 #. tumbleweed/go/go-race/summary
+#. tumbleweed/go1.10/go1.10-race/summary
+#. tumbleweed/go1.11/go1.11-race/summary
 #. tumbleweed/go1.4/go1.4-race/summary
 #. tumbleweed/go1.6/go1.6-race/summary
 #. tumbleweed/go1.7/go1.7-race/summary
@@ -10893,6 +10868,8 @@ msgstr ""
 #. leap/go1.8/go1.8-race/description
 #. leap/go1.9/go1.9-race/description
 #. tumbleweed/go/go-race/description
+#. tumbleweed/go1.10/go1.10-race/description
+#. tumbleweed/go1.11/go1.11-race/description
 #. tumbleweed/go1.4/go1.4-race/description
 #. tumbleweed/go1.6/go1.6-race/description
 #. tumbleweed/go1.7/go1.7-race/description
@@ -11008,14 +10985,12 @@ msgid ""
 msgstr ""
 
 #. leap/goffice-0_8/goffice-0_8-devel/summary
-#. tumbleweed/goffice-0_8/goffice-0_8-devel/summary
 #, fuzzy
 msgid "Development files for goffice"
 msgstr "File di sviluppo per glew"
 
 #. leap/goffice-0_8/goffice-0_8-devel/description
 #. leap/goffice/goffice-devel/description
-#. tumbleweed/goffice-0_8/goffice-0_8-devel/description
 #. tumbleweed/goffice/goffice-devel/description
 msgid ""
 "GOffice is a GLib/GTK+ set of document-centric objects and utilities.\n"
@@ -11024,12 +10999,10 @@ msgid ""
 msgstr ""
 
 #. leap/goffice-0_8/goffice-0_8-lang/summary
-#. tumbleweed/goffice-0_8/goffice-0_8-lang/summary
 msgid "Translations for package goffice-0_8"
 msgstr "Traduzioni per il pacchetto goffice-0_8"
 
 #. leap/goffice-0_8/goffice-0_8-lang/description
-#. tumbleweed/goffice-0_8/goffice-0_8-lang/description
 msgid "Provides translations for the \"goffice-0_8\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"goffice-0_8\"."
 
@@ -11309,7 +11282,6 @@ msgid "GPaste is a clipboard management daemon with DBus interface."
 msgstr ""
 
 #. leap/gpaste/gpaste-devel/summary
-#. tumbleweed/gpaste/gpaste-devel/summary
 #, fuzzy
 msgid "Library for managing clipboard history -- Development Files"
 msgstr ""
@@ -11404,24 +11376,6 @@ msgstr "Traduzioni per il pacchetto gperiodic"
 #. tumbleweed/gperiodic/gperiodic-lang/description
 msgid "Provides translations for the \"gperiodic\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"gperiodic\"."
-
-#. leap/gpg-offline/summary
-#. tumbleweed/gpg-offline/summary
-msgid "Trusted GPG Offline Keyring Manipulation Tool"
-msgstr ""
-
-#. leap/gpg-offline/description
-#. tumbleweed/gpg-offline/description
-msgid ""
-"A tool to manipulate with locally stored keyrings.\n"
-"\n"
-"Package sources can contain keyrings with keys used by upstream developers "
-"for signing of their project tarballs. Keys can be verified offline during "
-"building process.\n"
-"\n"
-"Package includes RPM macros for build-time offline verification of upstream "
-"tarballs during build."
-msgstr ""
 
 #. leap/gpg2/summary
 #. tumbleweed/gpg2/summary
@@ -11804,7 +11758,6 @@ msgstr ""
 "viene scollegato e ricollegato."
 
 #. leap/gpsd/gpsd-clients/summary
-#. tumbleweed/gpsd/gpsd-clients/summary
 msgid "Clients for gpsd with an X interface"
 msgstr ""
 
@@ -11908,15 +11861,13 @@ msgid "Documentation for gputils and supported PIC MCUs."
 msgstr "Documentazione per lensunf"
 
 #. leap/gpxsee/summary
-#. tumbleweed/gpxsee/summary
 msgid "GPS log files visualizing and analyzing tool"
 msgstr ""
 
 #. leap/gpxsee/description
-#. tumbleweed/gpxsee/description
 msgid ""
 "GPXSee is a Qt-based tool for visualizing and analyzing GPX, TCX, FIT, KML, "
-"IGC, NMEA and Garmin CSV files."
+"IGC, NMEA, OziExplorer files and Garmin CSV files."
 msgstr ""
 
 #. leap/gq/summary
@@ -13316,7 +13267,6 @@ msgid "GNU Scientific Library"
 msgstr "Libreria scientifica GNU"
 
 #. leap/gsl/description
-#. tumbleweed/gsl/description
 msgid ""
 "The GNU Scientific Library (GSL) is a collection of routines for numerical "
 "computing. The routines are written from scratch by the GSL team in ANSI C "
@@ -13327,13 +13277,10 @@ msgstr ""
 
 #. leap/gsl/gsl-devel/summary
 #. leap/gsl/gsl-doc/summary
-#. tumbleweed/gsl/gsl-devel/summary
-#. tumbleweed/gsl/gsl-doc/summary
 msgid "GNU Scientific Library - development files"
 msgstr "Libreria scientifica GNU - file di sviluppo"
 
 #. leap/gsl/gsl-devel/description
-#. tumbleweed/gsl/gsl-devel/description
 msgid ""
 "This package contains the headers, static libraries and some documentation "
 "for GSL.\n"
@@ -13377,7 +13324,6 @@ msgstr ""
 "quadrati - Costanti fisiche - Virgola mobile IEEE"
 
 #. leap/gsl/gsl-doc/description
-#. tumbleweed/gsl/gsl-doc/description
 #, fuzzy
 msgid ""
 "This package contains documentation for GSL\n"
@@ -13585,13 +13531,11 @@ msgid ""
 msgstr ""
 
 #. leap/gsynaptics/summary
-#. tumbleweed/gsynaptics/summary
 #, fuzzy
 msgid "A Graphical Front-End for Synaptics Touchpad Configuration"
 msgstr "Un front end grafico per la configurazione del TouchPad"
 
 #. leap/gsynaptics/description
-#. tumbleweed/gsynaptics/description
 #, fuzzy
 msgid ""
 "gsynaptics is a gnome applet that can be used to configure Synaptics "
@@ -13601,12 +13545,10 @@ msgstr ""
 "touchpad synaptics che viene comunemente usato nei portatili."
 
 #. leap/gsynaptics/gsynaptics-lang/summary
-#. tumbleweed/gsynaptics/gsynaptics-lang/summary
 msgid "Translations for package gsynaptics"
 msgstr "Traduzioni per il pacchetto gsynaptics"
 
 #. leap/gsynaptics/gsynaptics-lang/description
-#. tumbleweed/gsynaptics/gsynaptics-lang/description
 msgid "Provides translations for the \"gsynaptics\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"gsynaptics\"."
 
@@ -13909,6 +13851,22 @@ msgid ""
 "This subpackage contain the translations for the package gtypist."
 msgstr ""
 
+#. leap/guake/summary
+#. tumbleweed/guake/summary
+#, fuzzy
+msgid "Drop-down terminal for GNOME"
+msgstr ""
+"Un programma di utilità visualizzazione dei tipi di carattere per GNOME"
+
+#. leap/guake/description
+#. tumbleweed/guake/description
+#, fuzzy
+msgid "Guake is a dropdown terminal made for the GNOME desktop environment."
+msgstr ""
+"Glade è uno strumento RAD per permettere lo sviluppo rapido e semplice di "
+"interfacce utente per l'insieme di strumenti Gtk+ e per l'ambiente desktop "
+"GNOME."
+
 #. leap/gucharmap/summary
 #. tumbleweed/gucharmap/summary
 msgid "A Featureful Unicode Character Map"
@@ -14009,6 +13967,63 @@ msgid ""
 "language, to be used on bytevectors within Guile."
 msgstr ""
 
+#. leap/guile-cairo/summary
+#. tumbleweed/guile-cairo/summary
+#, fuzzy
+#| msgid "Mono bindings for libgsf."
+msgid "Guile bindings to Cairo"
+msgstr "Binding Mono per libgsf."
+
+#. leap/guile-cairo/description
+#. tumbleweed/guile-cairo/description
+#, fuzzy
+#| msgid "Mono bindings for libgsf."
+msgid "Guile bindings to Cairo library."
+msgstr "Binding Mono per libgsf."
+
+#. leap/guile-cairo/guile-cairo-devel/summary
+#. tumbleweed/guile-cairo/guile-cairo-devel/summary
+#, fuzzy
+msgid "Development files for Guile Cairo bindings"
+msgstr "File di sviluppo per libgpod"
+
+#. leap/guile-cairo/guile-cairo-devel/description
+#. tumbleweed/guile-cairo/guile-cairo-devel/description
+msgid "Files required to build software using Guile Cairo bindings."
+msgstr ""
+
+#. leap/guile-charting/summary
+#. tumbleweed/guile-charting/summary
+#, fuzzy
+msgid "Guile library for making charts"
+msgstr "Libreria per manipolare le partizioni"
+
+#. leap/guile-charting/description
+#. tumbleweed/guile-charting/description
+msgid ""
+"Guile-Charting is a library to create charts and graphs in Guile. It is thus "
+"far a hack."
+msgstr ""
+
+#. leap/guile-git/summary
+#. tumbleweed/guile-git/summary
+#, fuzzy
+#| msgid "Mono bindings for libgsf."
+msgid "Guile bindings of libgit2"
+msgstr "Binding Mono per libgsf."
+
+#. leap/guile-git/description
+#. tumbleweed/guile-git/description
+#, fuzzy
+#| msgid ""
+#| "Tools for importing CVS repositories to the Git version control system."
+msgid ""
+"This package provides Guile bindings to libgit2, a library manipulate "
+"repositories of the Git version control system."
+msgstr ""
+"Strumenti per importare i repository CVS nel sistema di controllo delle "
+"versioni Git."
+
 #. leap/guile-json/summary
 #. tumbleweed/guile-json/summary
 #, fuzzy
@@ -14039,6 +14054,38 @@ msgstr ""
 "in C. Guile fornisce una piattaforma di esecuzione indipendente dalla "
 "macchina che può essere collegata come libreria durante la creazione di "
 "programmi estensibili. Questo pacchetto contiene i moduli guile."
+
+#. leap/guile-sqlite3/summary
+#. tumbleweed/guile-sqlite3/summary
+msgid "SQLite3 database access from Guile"
+msgstr ""
+
+#. leap/guile-sqlite3/description
+#. tumbleweed/guile-sqlite3/description
+#, fuzzy
+#| msgid ""
+#| "This package provides openSUSE defaults for configurations based on GConf "
+#| "database system."
+msgid "This package provides Guile bindings to the SQLite3 database system."
+msgstr ""
+"Questo pacchetto offre i valori predefiniti di openSUSE per le "
+"configurazioni basate sul sistema di database GConf."
+
+#. leap/guile-ssh/guile-ssh-devel/summary
+#. tumbleweed/guile-ssh/guile-ssh-devel/summary
+#, fuzzy
+msgid "Development files for Guile-SSH"
+msgstr "File di sviluppo per lua"
+
+#. leap/guile-ssh/guile-ssh-devel/description
+#. tumbleweed/guile-ssh/guile-ssh-devel/description
+#, fuzzy
+msgid ""
+"The libraries and header files for developing applications that use guile-"
+"ssh."
+msgstr ""
+"Questo pacchetto contiene i file per sviluppare le applicazioni che "
+"utilizzano le librerie di Avogadro."
 
 #. leap/guilt/summary
 #. tumbleweed/guilt/summary
@@ -14552,7 +14599,6 @@ msgstr ""
 "dei file XML e la comunicazione tra i processi)."
 
 #. leap/gwenview5/summary
-#. tumbleweed/gwenview5/summary
 #, fuzzy
 #| msgid "Simple Image Viewer for KDE"
 msgid "Image Viewer for KDE"
@@ -14992,7 +15038,7 @@ msgstr ""
 
 #. leap/gsequencer/libags1/summary
 #. leap/gsequencer/libgsequencer0/summary
-#. tumbleweed/gsequencer/libags1/summary
+#. tumbleweed/gsequencer/libags2/summary
 #. tumbleweed/gsequencer/libgsequencer0/summary
 #, fuzzy
 msgid "GSequencer core libraries"
@@ -15000,7 +15046,7 @@ msgstr "Libreria principale di Plymouth"
 
 #. leap/gsequencer/libags1/description
 #. leap/gsequencer/libgsequencer0/description
-#. tumbleweed/gsequencer/libags1/description
+#. tumbleweed/gsequencer/libags2/description
 #. tumbleweed/gsequencer/libgsequencer0/description
 msgid ""
 "Advanced Gtk+ Sequencer is an audio sequencer application. This subpackage "
@@ -15315,15 +15361,13 @@ msgstr ""
 
 #. leap/gdbm/libgdbm4/summary
 #. leap/gdbm/libgdbm4-32bit/summary
-#. tumbleweed/gdbm/libgdbm4/summary
-#. tumbleweed/gdbm/libgdbm4-32bit/summary
+#. tumbleweed/gdbm/libgdbm5/summary
+#. tumbleweed/gdbm/libgdbm5-32bit/summary
 msgid "GNU dbm key/data database"
 msgstr "Database chiave/valore GNU dbm"
 
 #. leap/gdbm/libgdbm4/description
 #. leap/gdbm/libgdbm4-32bit/description
-#. tumbleweed/gdbm/libgdbm4/description
-#. tumbleweed/gdbm/libgdbm4-32bit/description
 msgid ""
 "GNU dbm is a library of database functions that use extensible hashing and "
 "work similar to the standard UNIX dbm. These routines are provided to a "
@@ -15587,8 +15631,8 @@ msgstr ""
 #. leap/gf2x/libgf2x-1_2/description
 #. tumbleweed/gf2x/libgf2x-1_2/description
 msgid ""
-"gf2x is a library for fast multiplication of polynomials over the GF(2) "
-"binary field."
+"gf2x is a library for multiplication of polynomials over the GF(2) binary "
+"field."
 msgstr ""
 
 #. leap/glusterfs/libgfapi0/summary
@@ -15753,17 +15797,13 @@ msgid ""
 msgstr ""
 
 #. leap/ginac/libginac-devel/summary
-#. leap/ginac/libginac-devel-32bit/summary
 #. tumbleweed/ginac/libginac-devel/summary
-#. tumbleweed/ginac/libginac-devel-32bit/summary
 #, fuzzy
 msgid "GiNaC development libraries and header files"
 msgstr "File di sviluppo e intestazioni per kactivities"
 
 #. leap/ginac/libginac-devel/description
-#. leap/ginac/libginac-devel-32bit/description
 #. tumbleweed/ginac/libginac-devel/description
-#. tumbleweed/ginac/libginac-devel-32bit/description
 msgid ""
 "GiNaC (which stands for \"GiNaC is Not a CAS (Computer Algebra System)\") is "
 "an open framework for symbolic computation within the C++ programming "
@@ -15771,16 +15811,6 @@ msgid ""
 "\n"
 "This package contains the libraries, include files and other resources you "
 "use to develop GiNaC applications."
-msgstr ""
-
-#. leap/ginac/libginac6/description
-#. leap/ginac/libginac6-32bit/description
-#. tumbleweed/ginac/libginac6/description
-#. tumbleweed/ginac/libginac6-32bit/description
-msgid ""
-" GiNaC (which stands for \"GiNaC is Not a CAS (Computer Algebra System)\") "
-"is an open framework for symbolic computation within the C++ programming "
-"language."
 msgstr ""
 
 #. leap/glib2/libgio-2_0-0/summary
@@ -15835,8 +15865,8 @@ msgstr ""
 
 #. leap/glibmm2_4/libgiomm-2_4-1/summary
 #. leap/glibmm2_4/libgiomm-2_4-1-32bit/summary
-#. leap/glibmm2/libgiomm-2_56-1/summary
-#. leap/glibmm2/libgiomm-2_56-1-32bit/summary
+#. leap/glibmm2/libgiomm-2_58-1/summary
+#. leap/glibmm2/libgiomm-2_58-1-32bit/summary
 #. tumbleweed/glibmm2_4/libgiomm-2_4-1/summary
 #. tumbleweed/glibmm2_4/libgiomm-2_4-1-32bit/summary
 #. tumbleweed/glibmm2/libgiomm-2_58-1/summary
@@ -16019,8 +16049,8 @@ msgstr "Libreria di utilità generali"
 
 #. leap/glibmm2_4/libglibmm-2_4-1/summary
 #. leap/glibmm2_4/libglibmm-2_4-1-32bit/summary
-#. leap/glibmm2/libglibmm-2_56-1/summary
-#. leap/glibmm2/libglibmm-2_56-1-32bit/summary
+#. leap/glibmm2/libglibmm-2_58-1/summary
+#. leap/glibmm2/libglibmm-2_58-1-32bit/summary
 #. tumbleweed/glibmm2_4/libglibmm-2_4-1/summary
 #. tumbleweed/glibmm2_4/libglibmm-2_4-1-32bit/summary
 #. tumbleweed/glibmm2/libglibmm-2_58-1/summary
@@ -16114,8 +16144,8 @@ msgid ""
 "This package contains C++ bindings C++ bindings for the GNU MP Library."
 msgstr ""
 
-#. leap/gnuradio/libgnuradio-3_7_11-0_0_0/description
-#. tumbleweed/gnuradio/libgnuradio-3_7_11-0_0_0/description
+#. leap/gnuradio/libgnuradio-3_7_12-0_0_0/description
+#. tumbleweed/gnuradio/libgnuradio-3_7_12-0_0_0/description
 msgid ""
 "GNU Radio is a collection of software that when combined with minimal "
 "hardware, allows the construction of radios where the actual waveforms "
@@ -16155,6 +16185,13 @@ msgstr "Pacchetto di sviluppo per gnutls"
 #. tumbleweed/gnutls/libgnutlsxx-devel/description
 msgid "Files needed for software development using gnutls."
 msgstr "File necessari per sviluppare software utilizzando gnutls."
+
+#. leap/gnutls/libgnutls-dane0/summary
+#. tumbleweed/gnutls/libgnutls-dane0/summary
+#, fuzzy
+#| msgid "The GNU Transport Layer Security Library"
+msgid "DANE support for the GNU Transport Layer Security Library"
+msgstr "La libreria GNU per la sicurezza del livello di trasporto"
 
 #. leap/gnutls/libgnutls-dane0/description
 #. tumbleweed/gnutls/libgnutls-dane0/description
@@ -16259,7 +16296,6 @@ msgstr ""
 #. leap/goffice/libgoffice-0_10-10/summary
 #. leap/goffice-0_8/libgoffice-0_8-8/summary
 #. tumbleweed/goffice/libgoffice-0_10-10/summary
-#. tumbleweed/goffice-0_8/libgoffice-0_8-8/summary
 msgid "GLib/GTK+ Set of Document-Centric Objects and Utilities"
 msgstr "Insieme di oggetti e utilità orientati ai documenti di GLib/GTK+"
 
@@ -16281,7 +16317,6 @@ msgstr ""
 "ripristino."
 
 #. leap/goffice-0_8/libgoffice-0_8-8/description
-#. tumbleweed/goffice-0_8/libgoffice-0_8-8/description
 #, fuzzy
 #| msgid ""
 #| "These are common operations for document-centric applications that    are "
@@ -16441,13 +16476,13 @@ msgstr ""
 "orientata agli oggetti."
 
 #. leap/gpaste/libgpaste9/summary
-#. tumbleweed/gpaste/libgpaste9/summary
+#. tumbleweed/gpaste/libgpaste11/summary
 #, fuzzy
 msgid "Library for managing clipboard history"
 msgstr "Libreria per manipolare le partizioni"
 
 #. leap/gpaste/libgpaste9/description
-#. tumbleweed/gpaste/libgpaste9/description
+#. tumbleweed/gpaste/libgpaste11/description
 msgid ""
 "GPaste is a clipboard management daemon with DBus interface.\n"
 "\n"
@@ -16553,13 +16588,13 @@ msgid ""
 msgstr ""
 
 #. leap/granite/libgranite4/summary
-#. tumbleweed/granite/libgranite4/summary
+#. tumbleweed/granite/libgranite5/summary
 #, fuzzy
 msgid "Granite is a development library"
 msgstr "Intestazioni e librerie di sviluppo per libotr"
 
 #. leap/granite/libgranite4/description
-#. tumbleweed/granite/libgranite4/description
+#. tumbleweed/granite/libgranite5/description
 msgid ""
 "Granite is an extension of GTK+. It provides the commonly used widgets found "
 "in Elementary applications."
@@ -16689,16 +16724,16 @@ msgstr ""
 
 #. leap/gsignond/libgsignond-common0/summary
 #. leap/gsignond/libgsignond-common0-32bit/summary
-#. tumbleweed/gsignond/libgsignond-common0/summary
-#. tumbleweed/gsignond/libgsignond-common0-32bit/summary
+#. tumbleweed/gsignond/libgsignond-common1/summary
+#. tumbleweed/gsignond/libgsignond-common1-32bit/summary
 #, fuzzy
 msgid "The core library for gsignond"
 msgstr "Libreria per libstatgrab"
 
 #. leap/gsignond/libgsignond-common0/description
 #. leap/gsignond/libgsignond-common0-32bit/description
-#. tumbleweed/gsignond/libgsignond-common0/description
-#. tumbleweed/gsignond/libgsignond-common0-32bit/description
+#. tumbleweed/gsignond/libgsignond-common1/description
+#. tumbleweed/gsignond/libgsignond-common1-32bit/description
 #, fuzzy
 #| msgid ""
 #| "A high-speed character set detection library\n"
@@ -16714,7 +16749,6 @@ msgstr ""
 "Questo pacchetto contiene la libreria condivisa libguess."
 
 #. leap/gsl/libgsl23/description
-#. tumbleweed/gsl/libgsl23/description
 msgid ""
 "The GNU Scientific Library (GSL) is a collection of routines for numerical "
 "computing. The routines are written from scratch by the GSL team in ANSI C "
@@ -16757,7 +16791,6 @@ msgid "A standard C language APIs for BLAS from GNU Scientific Library"
 msgstr ""
 
 #. leap/gsl/libgslcblas0/description
-#. tumbleweed/gsl/libgslcblas0/description
 msgid ""
 "This library provides a native C interface to BLAS routines. This is part of "
 "GNU Scientific Library."
@@ -16788,14 +16821,14 @@ msgid ""
 "This package contains the Gammu SMS daemon shared library."
 msgstr ""
 
-#. leap/gsoap/libgsoap-2_8_65/summary
-#. tumbleweed/gsoap/libgsoap-2_8_65/summary
+#. leap/gsoap/libgsoap-2_8_66/summary
+#. tumbleweed/gsoap/libgsoap-2_8_70/summary
 #, fuzzy
 msgid "Runtime libraries for gSOAP"
 msgstr "Librerie di esecuzione Boost::Graph"
 
-#. leap/gsoap/libgsoap-2_8_65/description
-#. tumbleweed/gsoap/libgsoap-2_8_65/description
+#. leap/gsoap/libgsoap-2_8_66/description
+#. tumbleweed/gsoap/libgsoap-2_8_70/description
 msgid ""
 "gSOAP is a toolkit for C and C++ server and client Web service applications, "
 "and is responsible for e.g. HTTP request handling and the serialization of "
@@ -16943,6 +16976,31 @@ msgstr ""
 "Guile fornisce una piattaforma di esecuzione indipendente dalla macchina che "
 "può essere collegata come libreria durante la creazione di programmi "
 "estensibili. Questo pacchetto contiene le librerie condivise."
+
+#. leap/guile-cairo/libguile-cairo0/summary
+#. tumbleweed/guile-cairo/libguile-cairo0/summary
+#, fuzzy
+msgid "Guile cairo libary"
+msgstr "Libreria del visualizzatore di desktop remoto"
+
+#. leap/guile-cairo/libguile-cairo0/description
+#. tumbleweed/guile-cairo/libguile-cairo0/description
+#, fuzzy
+#| msgid "Library for C-bindings for GetData."
+msgid "Libraries for Guile bindings for Cairo."
+msgstr "Libreria per i binding C per GetData."
+
+#. leap/guile-ssh/libguile-ssh11/summary
+#. tumbleweed/guile-ssh/libguile-ssh11/summary
+msgid "SSH protocol access from Guile"
+msgstr ""
+
+#. leap/guile-ssh/libguile-ssh11/description
+#. tumbleweed/guile-ssh/libguile-ssh11/description
+msgid ""
+"The shared libraries for guile-ssh, which let you access the SSH protocol "
+"from Guile."
+msgstr ""
 
 #. leap/guile1/libguile1-devel/description
 #. tumbleweed/guile1/libguile1-devel/description
@@ -17112,14 +17170,12 @@ msgstr ""
 "libYUI."
 
 #. leap/gwenhywfar/libgwengui-gtk2-0/summary
-#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/summary
 msgid "Multiplatform Helper Library for Other Libraries -- GTK+ UI Backend"
 msgstr ""
 "Libreria di supporto multipiattaforma per altre librerie - back end per "
 "l'interfaccia utente GTK+"
 
 #. leap/gwenhywfar/libgwengui-gtk2-0/description
-#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/description
 msgid ""
 "Gwenhywfar is a base library used to provide OS abstraction functions for "
 "Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
@@ -17557,8 +17613,8 @@ msgstr ""
 "La libreria di esecuzione necessaria per eseguire i programmi compilati con "
 "l'opzione -fsanitize=thread della Raccolta di compilatori GNU (GCC)."
 
-#. leap/gnuradio/libvolk1_3/description
-#. tumbleweed/gnuradio/libvolk1_3/description
+#. leap/gnuradio/libvolk1_4/description
+#. tumbleweed/gnuradio/libvolk1_4/description
 msgid ""
 "GNU Radio is a collection of software that when combined with minimal "
 "hardware, allows the construction of radios where the actual waveforms "
@@ -17779,12 +17835,6 @@ msgstr ""
 msgid "Python bindings for GlusterFS"
 msgstr "Binding Python per D-Bus"
 
-#. leap/gnucash/python-gnucash/summary
-#. tumbleweed/gnucash/python-gnucash/summary
-#, fuzzy
-msgid "Python bindings for GnuCash"
-msgstr "Binding Python per D-Bus"
-
 #. leap/geos/python2-geos/summary
 #. tumbleweed/geos/python2-geos/summary
 #, fuzzy
@@ -17900,6 +17950,18 @@ msgid "This package provides the python3 bindings for GEIS."
 msgstr ""
 "Questo pacchetto contiene il componente della libreria condivisa di tumbler."
 
+#. leap/gnucash/python3-gnucash/summary
+#. tumbleweed/gnucash/python3-gnucash/summary
+#, fuzzy
+msgid "Python bindings for GnuCash"
+msgstr "Binding Python per D-Bus"
+
+#. leap/gnucash/python3-gnucash/description
+msgid ""
+"This package provides the Python bindings for development of GnuCash, a "
+"personal finance manager, in Python 3."
+msgstr ""
+
 #. leap/gom/python3-gom/summary
 #. tumbleweed/gom/python3-gom/summary
 #, fuzzy
@@ -17983,6 +18045,23 @@ msgstr ""
 msgid "System user for use by the geoclue service"
 msgstr ""
 
+#. leap/gcab/typelib-1_0-GCab-1_0/summary
+#. tumbleweed/gcab/typelib-1_0-GCab-1_0/summary
+#, fuzzy
+msgid "Introspection bindings for the gcab cabinet file library"
+msgstr "Binding Python per la libreria gtk-vnc"
+
+#. leap/gcab/typelib-1_0-GCab-1_0/description
+#. tumbleweed/gcab/typelib-1_0-GCab-1_0/description
+msgid ""
+"gcab is a tool and library for manipulating cabinet files.\n"
+"\n"
+"It uses the GObject API and provides GIR bindings. It supports creation of "
+"archives with simple MSZIP compression.\n"
+"\n"
+"This package contains the introspection files."
+msgstr ""
+
 #. leap/gmime2_6/typelib-1_0-GMime-2_6/summary
 #. leap/gmime/typelib-1_0-GMime-3_0/summary
 #. tumbleweed/gmime2_6/typelib-1_0-GMime-2_6/summary
@@ -18011,7 +18090,6 @@ msgstr ""
 "Questo pacchetto fornisce i binding GObject di introspection per GCR."
 
 #. leap/gpaste/typelib-1_0-GPaste-1_0/summary
-#. tumbleweed/gpaste/typelib-1_0-GPaste-1_0/summary
 #, fuzzy
 msgid "Library for managing clipboard history -- Introspection bindings"
 msgstr "Una libreria per il render di dati SVG - binding Introspection"
@@ -18189,7 +18267,6 @@ msgstr ""
 "Questo pacchetto fornisce i binding GObject di introspection per GCR."
 
 #. leap/gdk-pixbuf/typelib-1_0-GdkPixbuf-2_0/summary
-#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixbuf-2_0/summary
 #, fuzzy
 #| msgid "Languages for package gbrainy"
 msgid "Introspection bindins for gdk-pixbuf"
@@ -18251,13 +18328,14 @@ msgstr ""
 "Questo pacchetto fornisce i binding GObject di Introspection per comunicare "
 "con il server GDM greeter."
 
-#. leap/gegl-unstable/typelib-1_0-Gegl-0_3/summary
+#. leap/gegl/typelib-1_0-Gegl-0_3/summary
+#. tumbleweed/gegl/typelib-1_0-Gegl-0_4/summary
 #, fuzzy
-#| msgid "An image loading library -- Introspection bindings"
-msgid "Generic Graphics Library - Introspection bindings"
-msgstr "Una libreria di caricamento di immagini - binding Introspection"
+msgid "Introspection bindings for the GEGL \"Generic Graphics Library\""
+msgstr "Binding Python per la libreria gtk-vnc"
 
-#. leap/gegl-unstable/typelib-1_0-Gegl-0_3/description
+#. leap/gegl/typelib-1_0-Gegl-0_3/description
+#. tumbleweed/gegl/typelib-1_0-Gegl-0_4/description
 #, fuzzy
 #| msgid ""
 #| "GEGL provides infrastructure to do demand based cached non destructive "
@@ -18266,7 +18344,7 @@ msgstr "Una libreria di caricamento di immagini - binding Introspection"
 #| "input and output."
 msgid ""
 "GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl it provides support for a "
+"editing on larger than RAM buffers. Through babl, it provides support for a "
 "wide range of color models and pixel storage formats for input and output.\n"
 "\n"
 "This package provides the GObject Introspection bindings for the libgegl "
@@ -18549,12 +18627,6 @@ msgid ""
 msgstr ""
 "Questo pacchetto contiene i binding Introspection per la libreria IBus."
 
-#. leap/ufw/summary
-#. tumbleweed/gufw/summary
-#. tumbleweed/ufw/summary
-msgid "Uncomplicated Firewall"
-msgstr ""
-
 #. leap/gnokii/xgnokii/description
 #. tumbleweed/gnokii/xgnokii/description
 msgid ""
@@ -18562,29 +18634,34 @@ msgid ""
 "installed as well."
 msgstr ""
 
-#. tumbleweed/gcab/description
+#. tumbleweed/GeoIP/GeoIP-data/description
 msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
-"\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression.\n"
-"\n"
-"This package provides gcab tool and its manuals."
+"This package does not actually contain any data. It only exists to give "
+"ownership the database files you can fetch using \"geoip-fetch\"."
 msgstr ""
 
-#. tumbleweed/gcab/gcab-devel/summary
-#, fuzzy
-msgid "Development files for the gcab cabinet file library"
-msgstr "File di sviluppo per la libreria unicap"
+#. tumbleweed/gajim-plugin-omemo/summary
+msgid "Gajim plugin for OMEMO Multi-End Message and Object Encryption"
+msgstr ""
 
-#. tumbleweed/gcab/gcab-devel/description
+#. tumbleweed/gajim-plugin-omemo/description
 msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
+"This plugin adds support to Gajim for the OMEMO Encryption, an XMPP "
+"Extension Protocol (XEP) for secure multi-client end-to-end encryption based "
+"on Double Ratchet and PEP."
+msgstr ""
+
+#. tumbleweed/gamemode/gamemoded/summary
+msgid "The GameMode daemon required by GameMode enabled games"
+msgstr ""
+
+#. tumbleweed/gamemode/gamemoded/description
+msgid ""
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
 "\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression.\n"
-"\n"
-"This package provides development files to build code against libgcab."
+"The GameMode daemon is installed as a D-Bus Service and will start "
+"automatically on first access by a client."
 msgstr ""
 
 #. tumbleweed/gcc/gcc-devel/summary
@@ -18626,21 +18703,23 @@ msgstr ""
 msgid "gcr-ssh-askpass allows an ssh command to callback for a password."
 msgstr ""
 
-#. tumbleweed/gdm/gdmflexiserver/description
+#. tumbleweed/gdbm/gdbm-devel/summary
+#. tumbleweed/gdbm/gdbm-devel-32bit/summary
 #, fuzzy
-#| msgid ""
-#| "The gdmflexiserver tool interacts with the display manager to enable fast "
-#| "user switching. This package contains a wrapper that selects the correct "
-#| "gdmflexiserver implementatoin, based on the running display manager."
-msgid ""
-"The GDMFlexiServer tool interacts with the display manager to enable fast "
-"user switching. This package contains a wrapper that selects the correct "
-"Gdmflexiserver implementation, based on the running display manager."
-msgstr ""
-"Lo strumento gdmflexiserver interagisce con il gestore dello schermo per "
-"attivare il cambio utente rapido. Questo pacchetto contiene un wrapper che "
-"seleziona la corretta implementazione di gdmflexiserver sulla base del "
-"gestore dello schermo in esecuzione."
+msgid "Development files for the dbm key/data database library"
+msgstr "File di sviluppo per la libreria unicap"
+
+#. tumbleweed/gdbm/gdbm-lang/summary
+#, fuzzy
+#| msgid "Translations for package gdm"
+msgid "Translations for package gdbm"
+msgstr "Traduzioni per il pacchetto gdm"
+
+#. tumbleweed/gdbm/gdbm-lang/description
+#, fuzzy
+#| msgid "Provides translations for the \"gdm\" package."
+msgid "Provides translations for the \"gdbm\" package."
+msgstr "Fornisce le traduzioni per il pacchetto \"gdm\"."
 
 #. tumbleweed/gedit/summary
 #, fuzzy
@@ -18673,54 +18752,42 @@ msgstr ""
 "\n"
 "Questo pacchetto contiene i file di sviluppo per C."
 
-#. tumbleweed/gegl/description
-#. tumbleweed/gegl/gegl-0_3/description
-#. tumbleweed/gegl/gegl-doc/description
-#. tumbleweed/gegl/libgegl-0_3-0/description
-#, fuzzy
-#| msgid ""
-#| "GEGL provides infrastructure to do demand based cached non destructive "
-#| "image editing on larger than RAM buffers. Through babl it provides "
-#| "support for a wide range of color models and pixel storage formats for "
-#| "input and output."
+#. tumbleweed/gemrb/description
 msgid ""
-"GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl, it provides support for a "
-"wide range of color models and pixel storage formats for input and output."
+"GemRB is an implementation of Bioware's Infinity Engine which was written to "
+"support pseudo-3D role playing games based on the Dungeons & Dragons "
+"ruleset.\n"
+"\n"
+"You will need the original game files of Baldur's Gate and the Icewind Dale "
+"series or Planescape: Torment to play."
 msgstr ""
-"GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
-"modo non distruttivo a richiesta basata su cache su buffer più grandi della "
-"RAM. Attraverso babl fornisce il supporto a un'ampia gamma di modelli di "
-"colori e formati di memorizzazione dei pixel sia per l'input, sia per "
-"l'output."
-
-#. tumbleweed/gegl/gegl-devel/summary
-#, fuzzy
-msgid "Development files for the GEGL \"Generic Graphics Library\""
-msgstr "File di sviluppo per la libreria unicap"
-
-#. tumbleweed/gegl/gegl-devel/description
-#, fuzzy
-msgid ""
-"GEGL provides infratructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl, it provides support for a "
-"wide range of color models and pixel storage formats for input and output."
-msgstr ""
-"GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
-"modo non distruttivo a richiesta basata su cache su buffer più grandi della "
-"RAM. Attraverso babl fornisce il supporto a un'ampia gamma di modelli di "
-"colori e formati di memorizzazione dei pixel sia per l'input, sia per "
-"l'output."
-
-#. tumbleweed/gegl/gegl-doc/summary
-#, fuzzy
-msgid "Documentation for the GEGL \"Generic Graphics Library\""
-msgstr "Documentazione per le librerie di base di KDE"
 
 #. tumbleweed/gfbgraph/gfbgraph-devel/summary
 #, fuzzy
 msgid "Development files for the Facebook Graph API access library"
 msgstr "File di sviluppo per la libreria unicap"
+
+#. tumbleweed/git-cola/summary
+#, fuzzy
+#| msgid "GUI for rsync"
+msgid "A GUI for Git"
+msgstr "GUI per rsync"
+
+#. tumbleweed/git-cola/description
+msgid ""
+"git-cola is a graphical user interface for Git that provides a way to "
+"interact with Git repositories."
+msgstr ""
+
+#. tumbleweed/git-sync/summary
+msgid "One-script git synchronization"
+msgstr ""
+
+#. tumbleweed/git-sync/description
+msgid ""
+"This script synchronizes, almost automatically, \"tracking\" repositories "
+"where a nice history is not as crucial as having one at all."
+msgstr ""
 
 #. tumbleweed/glom/summary
 #, fuzzy
@@ -18750,6 +18817,52 @@ msgstr "Traduzioni per il pacchetto glom"
 #. tumbleweed/glom/glom-lang/description
 msgid "Provides translations for the \"glom\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"glom\"."
+
+#. tumbleweed/glslang/glslang-devel/description
+msgid ""
+"glslang is a compiler front end for the OpenGL ES and OpenGL shading "
+"languages. It implements a strict interpretation of the specifications for "
+"these languages.\n"
+"\n"
+"spirv-remap is a utility to improve compression of SPIR-V binary files via "
+"entropy reduction, plus optional stripping of debug information and load/"
+"store optimization. It transforms SPIR-V to SPIR-V, remapping IDs. The "
+"resulting modules have an increased ID range (IDs are not as tightly packed "
+"around zero), but will compress better when multiple modules are compressed "
+"together, since compressor's dictionary can find better cross module "
+"commonality."
+msgstr ""
+
+#. tumbleweed/genius/gnome-genius/summary
+#, fuzzy
+msgid "GNOME interface for Genius, a general purpose calculator"
+msgstr "File di sviluppo per l'estensione di X per la cattura degli eventi"
+
+#. tumbleweed/gpaste/gnome-shell-extension-gpaste/summary
+msgid "GPaste status menu extension for GNOME Shell"
+msgstr ""
+
+#. tumbleweed/gnonograms/summary
+msgid "Program for creating and solving gnonogram puzzles"
+msgstr ""
+
+#. tumbleweed/gnonograms/description
+#, fuzzy
+#| msgid "GNU implementation of the JavaBeans Activation Framework"
+msgid "An implementation of the Japanese logic puzzle \"Nonograms\"."
+msgstr "Implementazione GNU di JAF, l'infrastruttura di attivazione JavaBeans"
+
+#. tumbleweed/gnonograms/gnonograms-lang/summary
+#, fuzzy
+#| msgid "Translations for package gramps"
+msgid "Translations for package gnonograms"
+msgstr "Traduzioni per il pacchetto gramps"
+
+#. tumbleweed/gnonograms/gnonograms-lang/description
+#, fuzzy
+#| msgid "Provides translations for the \"gramps\" package."
+msgid "Provides translations for the \"gnonograms\" package."
+msgstr "Fornisce le traduzioni per il pacchetto \"gramps\"."
 
 #. tumbleweed/gns3/summary
 #, fuzzy
@@ -18799,6 +18912,68 @@ msgid ""
 "You will need the new GNS3 GUI (gns3-gui repository) to control the server."
 msgstr ""
 
+#. tumbleweed/gnu-cobol/summary
+msgid "A COBOL compiler"
+msgstr ""
+
+#. tumbleweed/gnu-cobol/description
+#. tumbleweed/gnu-cobol/libcob-devel/description
+#. tumbleweed/gnu-cobol/libcob4/description
+msgid ""
+"GnuCOBOL (formerly OpenCOBOL) is a COBOL compiler. cobc translates COBOL to "
+"executable using intermediate C sources, providing full access to nearly all "
+"C libraries."
+msgstr ""
+
+#. tumbleweed/gnuastro/summary
+#, fuzzy
+#| msgid "GNU Zip Compression Utilities"
+msgid "GNU Astronomy Utilities"
+msgstr "Utilità GNU per la compressione ZIP"
+
+#. tumbleweed/gnuastro/description
+msgid ""
+"The GNU Astronomy Utilities (Gnuastro) contains various programs and library "
+"functions for the manipulation and analysis of astronomical data."
+msgstr ""
+
+#. tumbleweed/gnuastro/gnuastro-devel/summary
+#, fuzzy
+msgid "Development files for gnuastro"
+msgstr "File di sviluppo per glew"
+
+#. tumbleweed/gnuastro/gnuastro-devel/description
+msgid ""
+"Development files required for development with GNU Astronomy Utilities "
+"(Gnuastro)."
+msgstr ""
+
+#. tumbleweed/gnuastro/gnuastro-doc/summary
+#, fuzzy
+#| msgid "Documentation for the GNU compiler collection"
+msgid "Documentation for the GNU Astromomy Utilities"
+msgstr "Documentazione per la collezione di compilatori GNU"
+
+#. tumbleweed/gnuastro/gnuastro-doc/description
+#, fuzzy
+#| msgid "Documentation for the GNU compiler collection"
+msgid "Additional documentation for the GNU Astromomy Utilities."
+msgstr "Documentazione per la collezione di compilatori GNU"
+
+#. tumbleweed/gnubg/summary
+msgid "Backgammon game with analysis tools and neural network AI"
+msgstr ""
+
+#. tumbleweed/goaccess/summary
+msgid "Apache Web Log Analyzer"
+msgstr ""
+
+#. tumbleweed/goaccess/description
+msgid ""
+"GoAccess is an Apache web log analyzer that provides HTTP statistics for "
+"system administrators that require a visual report on the fly."
+msgstr ""
+
 #. tumbleweed/gob2/summary
 msgid "Preprocessor to Write GObject objects"
 msgstr ""
@@ -18809,6 +18984,71 @@ msgid ""
 "generated files are not editted. The syntax is inspired by Java, yacc/bison "
 "and lex."
 msgstr ""
+
+#. tumbleweed/gops/summary
+msgid ""
+"A tool to list and diagnose Go processes currently running on your system"
+msgstr ""
+
+#. tumbleweed/gops/description
+msgid ""
+"gops is a command to list and diagnose Go processes currently running on "
+"your system. For processes that starts the diagnostics agent, gops can "
+"report additional information such as the current stack trace, Go version, "
+"memory stats, etc. It is possible to use gops tool both in local and remote "
+"mode."
+msgstr ""
+
+#. tumbleweed/gpaste/gpaste-devel/summary
+#, fuzzy
+msgid "Development files for the gpaste clipboard history manager"
+msgstr "File di sviluppo per la libreria unicap"
+
+#. tumbleweed/gperftools/gperftools-devel-static/summary
+#, fuzzy
+msgid "Static libraries for performance tools for C++"
+msgstr "File di sviluppo per lua"
+
+#. tumbleweed/gperftools/gperftools-devel-static/description
+#, fuzzy
+msgid ""
+"The gperftools-devel-static package contains static libraries for developing "
+"applications that use the gperftools package."
+msgstr ""
+"Il pacchetto libv4l-devel contiene le librerie e i file di intestazione per "
+"sviluppare applicazioni che usano libv4l."
+
+#. tumbleweed/gpsd/gpsd-clients/summary
+msgid "Example clients for gpsd"
+msgstr ""
+
+#. tumbleweed/gpxsee/summary
+msgid "GPS log file visualization and analysis tool"
+msgstr ""
+
+#. tumbleweed/gpxsee/description
+msgid ""
+"GPXSee is a Qt-based tool for visualizing and analyzing GPX, TCX, FIT, KML, "
+"IGC, NMEA, SLF, LOC, OziExplorer (PLT, RTE, WPT) and Garmin CSV files."
+msgstr ""
+
+#. tumbleweed/grilo-plugins/grilo-plugins-devel/summary
+#, fuzzy
+msgid "Devel package for grilo-plugins"
+msgstr "Pacchetto di sviluppo per gnutls"
+
+#. tumbleweed/grilo-plugins/grilo-plugins-devel/description
+#, fuzzy
+msgid ""
+"Grilo is a framework for browsing and searching media content from various "
+"sources using a single API.\n"
+"\n"
+"This package provides development files."
+msgstr ""
+"Grilo è un'infrastruttura per sfogliare e cercare contenuti multimediali da "
+"varie fonti utilizzando una singola API.\n"
+"\n"
+"Questo pacchetto fornisce i plugin per accedere ai contenuti da YouTube."
 
 #. tumbleweed/grisbi/summary
 msgid "Personal Accounting Application"
@@ -18836,6 +19076,45 @@ msgstr "Traduzioni per il pacchetto grisbi"
 #. tumbleweed/grisbi/grisbi-lang/description
 msgid "Provides translations for the \"grisbi\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"grisbi\"."
+
+#. tumbleweed/gsl/description
+msgid ""
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages."
+msgstr ""
+
+#. tumbleweed/gsl/gsl-devel/summary
+#, fuzzy
+msgid "Development files for the GNU Scientific Library"
+msgstr "File di sviluppo per la libreria unicap"
+
+#. tumbleweed/gsl/gsl-devel/description
+msgid ""
+"This package contains the headers, static libraries and some documentation "
+"for GSL.\n"
+"\n"
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C, "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages."
+msgstr ""
+
+#. tumbleweed/gsl/gsl-doc/summary
+#, fuzzy
+msgid "Documentation for the GNU Scientific Library"
+msgstr "Documentazione per le librerie di base di KDE"
+
+#. tumbleweed/gsl/gsl-doc/description
+msgid ""
+"This package contains documentation for GSL\n"
+"\n"
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C, "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages."
+msgstr ""
 
 #. tumbleweed/gsound/summary
 msgid "A library for playing system sounds"
@@ -18867,69 +19146,68 @@ msgstr "Libreria condivisa per applicazioni GPS"
 msgid "Development files for the GTK+ spell checker library"
 msgstr "File di sviluppo per la libreria unicap"
 
-#. tumbleweed/gufw/description
+#. tumbleweed/gwenview5/summary
+#, fuzzy
+#| msgid "Simple Image Viewer for KDE"
+msgid "Image Viewer by KDE"
+msgstr "Semplice visualizzatore di immagini per KDE"
+
+#. tumbleweed/gnu-cobol/libcob-devel/summary
+#, fuzzy
+msgid "Include files for the GnuCOBOL shared library"
+msgstr "File di intestazione per la libreria libcap-ng"
+
+#. tumbleweed/gnu-cobol/libcob4/summary
+#, fuzzy
+#| msgid "The standard C++ shared library"
+msgid "GnuCOBOL shared library"
+msgstr "La libreria condivisa standard C++"
+
+#. tumbleweed/gamemode/libgamemode-devel/summary
+msgid "Headers for compiling games using GameMode"
+msgstr ""
+
+#. tumbleweed/gamemode/libgamemode-devel/description
 msgid ""
-"An easy, intuitive, way to manage your Linux firewall. It supports common "
-"tasks such as allowing or blocking pre-configured, common p2p, or individual "
-"ports port(s), and many others!"
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
+"\n"
+"This package contains the headers required to compile games with built-in "
+"GameMode support."
 msgstr ""
 
-#. tumbleweed/gufw/gufw-lang/summary
-msgid "Translations for package gufw"
-msgstr "Traduzioni per il pacchetto gufw"
-
-#. tumbleweed/gufw/gufw-lang/description
-msgid "Provides translations for the \"gufw\" package."
-msgstr "Fornisce le traduzioni per il pacchetto \"gufw\"."
-
-#. tumbleweed/guile-cairo/summary
+#. tumbleweed/gamemode/libgamemode0/summary
 #, fuzzy
-#| msgid "Mono bindings for libgsf."
-msgid "Guile bindings to Cairo"
-msgstr "Binding Mono per libgsf."
+msgid "GameMode client library"
+msgstr "Libreria Qt Zeitgeist"
 
-#. tumbleweed/guile-cairo/description
-#, fuzzy
-#| msgid "Mono bindings for libgsf."
-msgid "Guile bindings to Cairo library."
-msgstr "Binding Mono per libgsf."
-
-#. tumbleweed/guile-cairo/guile-cairo-devel/summary
-#, fuzzy
-msgid "Development files for Guile Cairo bindings"
-msgstr "File di sviluppo per libgpod"
-
-#. tumbleweed/guile-cairo/guile-cairo-devel/description
-msgid "Files required to build software using Guile Cairo bindings."
-msgstr ""
-
-#. tumbleweed/guile-charting/summary
-#, fuzzy
-msgid "Guile library for making charts"
-msgstr "Libreria per manipolare le partizioni"
-
-#. tumbleweed/guile-charting/description
+#. tumbleweed/gamemode/libgamemode0/description
 msgid ""
-"Guile-Charting is a library to create charts and graphs in Guile. It is thus "
-"far a hack."
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
+"\n"
+"Libgamemode is the client library used by games or libgamemodeauto to talk "
+"to the GameMode daemon."
 msgstr ""
 
-#. tumbleweed/guile-git/summary
-#, fuzzy
-#| msgid "Mono bindings for libgsf."
-msgid "Guile bindings of libgit2"
-msgstr "Binding Mono per libgsf."
+#. tumbleweed/gamemode/libgamemodeauto0/summary
+msgid "Helper library allowing to equip any game with GameMode support"
+msgstr ""
 
-#. tumbleweed/guile-git/description
-#, fuzzy
-#| msgid ""
-#| "Tools for importing CVS repositories to the Git version control system."
+#. tumbleweed/gamemode/libgamemodeauto0/description
 msgid ""
-"This package provides Guile bindings to libgit2, a library manipulate "
-"repositories of the Git version control system."
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
+"\n"
+"Libgamemodeauto allows you to use GameMode with any Game by preloading it "
+"into the game.\n"
+"\n"
+"    LD_PRELOAD=/usr/lib/libgamemodeauto.so.0 ./game\n"
+"\n"
+"For Steam games this can be done by editing the launch options:\n"
+"\n"
+"    LD_PRELOAD=$LD_PRELOAD:/usr/lib/libgamemodeauto.so.0 %command%"
 msgstr ""
-"Strumenti per importare i repository CVS nel sistema di controllo delle "
-"versioni Git."
 
 #. tumbleweed/gcr/libgck-1-0/summary
 #. tumbleweed/gcr/libgck-1-0-32bit/summary
@@ -18957,6 +19235,69 @@ msgstr "Libreria per i lavori relativi all'interfaccia utente crittografica"
 #, fuzzy
 msgid "Development files for gcr, a library for crypto UI related tasks"
 msgstr "File di sviluppo per libwebp, una libreria per il formato WebP"
+
+#. tumbleweed/gdbm/libgdbm5/description
+#. tumbleweed/gdbm/libgdbm5-32bit/description
+#, fuzzy
+#| msgid ""
+#| "GNU dbm is a library of database functions that use extensible hashing "
+#| "and work similar to the standard UNIX dbm. These routines are provided to "
+#| "a programmer needing to create and manipulate a hashed database.\n"
+#| "\n"
+#| "The basic use of GDBM is to store key/data pairs in a data file. Each key "
+#| "must be unique and each key is paired with only one data item.\n"
+#| "\n"
+#| "The library provides primitives for storing key/data pairs, searching and "
+#| "retrieving the data by its key and deleting a key along with its data. It "
+#| "also supports sequential iteration over all key/data pairs in a "
+#| "database.\n"
+#| "\n"
+#| "For compatibility with programs using old UNIX dbm functions, the package "
+#| "also provides traditional dbm and ndbm interfaces."
+msgid ""
+"GNU dbm is a library of database functions that use extensible hashing and "
+"work similar to the standard UNIX dbm. These routines are provided to a "
+"programmer needing to create and manipulate a hashed database.\n"
+"\n"
+"The basic use of GDBM is to store key/data pairs in a data file. Each key "
+"must be unique and each key is paired with only one data item.\n"
+"\n"
+"The library provides primitives for storing key/data pairs, searching and "
+"retrieving the data by its key and deleting a key along with its data. It "
+"also supports sequential iteration over all key/data pairs in a database."
+msgstr ""
+"GNU dbm è una libreria di funzioni di database che usano un hash estensibile "
+"e lavorano in modo simile al dbm UNIX standard. Queste routine sono fornite "
+"a un programmatore che deve creare e manipolare un database hash.\n"
+"\n"
+"L'uso di base di GDBM consiste nel memorizzare coppie chiave/valore in un "
+"file dati. Ogni chiave deve essere univoca e ogni chiave è appaiata con un "
+"solo valore.\n"
+"\n"
+"La libreria fornisce le primitive per memorizzare coppie chiave/valore, "
+"ricercare e recuperare il dato a partire dalla chiave e cancellare una "
+"chiave insieme al relativo valore. Supporta anche l'iterazione sequenziale "
+"su tutte le coppie chiave/valore in un database.\n"
+"\n"
+"Per compatibilità con i programmi che usano le vecchie funzioni dbm UNIX, il "
+"pacchetto fornisce altresì le interfacce tradizionali dbm e ndbm."
+
+#. tumbleweed/gdbm/libgdbm_compat4/summary
+#. tumbleweed/gdbm/libgdbm_compat4-32bit/summary
+#, fuzzy
+#| msgid "GNU dbm key/data database"
+msgid "GNU dbm key/data database compat wrapper"
+msgstr "Database chiave/valore GNU dbm"
+
+#. tumbleweed/gdbm/libgdbm_compat4/description
+#. tumbleweed/gdbm/libgdbm_compat4-32bit/description
+msgid ""
+"GNU dbm is a library of database functions that use extensible hashing and "
+"work similar to the standard UNIX dbm. These routines are provided to a "
+"programmer needing to create and manipulate a hashed database.\n"
+"\n"
+"This library is providing compatibility wrappers."
+msgstr ""
 
 #. tumbleweed/gfbgraph/libgfbgraph-0_2-0/summary
 msgid "Facebook Graph API access library"
@@ -18988,6 +19329,90 @@ msgid ""
 "This package contains development files to create extensions for glom."
 msgstr ""
 
+#. tumbleweed/glslang/libglslang-suse1/summary
+msgid "OpenGL and OpenGL ES shader front end implementation"
+msgstr ""
+
+#. tumbleweed/glslang/libglslang-suse1/description
+msgid ""
+"glslang is a compiler front end for the OpenGL ES and OpenGL shading "
+"languages. It implements a strict interpretation of the specifications for "
+"these languages."
+msgstr ""
+
+#. tumbleweed/gnuastro/libgnuastro5/summary
+#, fuzzy
+#| msgid "Library for the GNU Objective C Compiler"
+msgid "Libraries for the GNU Astronomy Utilities"
+msgstr "Libreria per il compilatore Objective C di GNU"
+
+#. tumbleweed/gnuastro/libgnuastro5/description
+msgid ""
+"Libraries for the manipulation and analysis of astronomical data, part of "
+"the GNU Astronomy Utilities (Gnuastro)."
+msgstr ""
+
+#. tumbleweed/gsl/libgsl23/description
+#, fuzzy
+#| msgid ""
+#| "The GNU Scientific Library (GSL) is a collection of routines for "
+#| "numerical computing. The routines are written from scratch by the GSL "
+#| "team in ANSI C and present a modern Applications Programming Interface "
+#| "(API) for C programmers, while allowing wrappers to be written for very "
+#| "high level languages.\n"
+#| "\n"
+#| "The library covers the following areas:\n"
+#| "\n"
+#| "Complex Numbers - Roots of Polynomials - Special Functions - Vectors and "
+#| "Matrices - Permutations - Sorting - BLAS Support - Linear Algebra - "
+#| "Eigensystems - Fast Fourier Transforms - Quadrature - Random Numbers - "
+#| "Quasi-Random Sequences - Random Distributions - Statistics - Histograms - "
+#| "N-Tuples - Monte Carlo Integration - Simulated Annealing - Differential "
+#| "Equations - Interpolation - Numerical Differentiation - Chebyshev "
+#| "Approximation - Series Acceleration - Discrete Hankel Transforms - Root-"
+#| "Finding - Minimization - Least-Squares Fitting - Physical Constants - "
+#| "IEEE Floating-Point"
+msgid ""
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages.\n"
+"\n"
+"The library covers the following areas:\n"
+"\n"
+"Complex Numbers - Roots of Polynomials - Special Functions - Vectors and "
+"Matrices - Permutations - Sorting - BLAS Support - Linear Algebra - "
+"Eigensystems - Fast Fourier Transforms - Quadrature - Random Numbers - Quasi-"
+"Random Sequences - Random Distributions - Statistics - Histograms - N-Tuples "
+"- Monte Carlo Integration - Simulated Annealing - Differential Equations - "
+"Interpolation - Numerical Differentiation - Chebyshev Approximation - Series "
+"Acceleration - Discrete Hankel Transforms - Root-Finding - Minimization - "
+"Least-Squares Fitting - Physical Constants - IEEE Floating-Point"
+msgstr ""
+"GSL, la libreria scientifica GNU, è una collezione di routine per i calcoli "
+"numerici. Le routine sono scritte da zero dal gruppo di GSL in ANSI C e "
+"presentano un'interfaccia di programmazione delle applicazioni (API) moderna "
+"per i programmatori C permettendo al contempo la scrittura di wrapper per "
+"linguaggi di livello veramente alto.\n"
+"\n"
+"La libreria copre le seguenti aree:\n"
+"\n"
+"Numeri complessi - Radici di polinomi - Funzioni speciali - Matrici e "
+"vettori - Permutazioni - Ordinamento - Supporto BLAS - Algebra lineare - "
+"Autosistemi - Trasformate di Fourier veloci - Quadratura -  Numeri casuali - "
+"Sequenze quasi-casuali - Distribuzioni casuali - Statistiche - Istogrammi - "
+"N-tuple - Integrazione Monte Carlo - Simulated annealing - Equazioni "
+"differenziali - Interpolazione - Differenziazione numerica - Approssimazione "
+"di Chebyshev - Accelerazione di serie - Trasformate discrete di Hankel - "
+"Ricerca di radici - Minimizzazione - Interpolazione con il metodo dei minimi "
+"quadrati - Costanti fisiche - Virgola mobile IEEE"
+
+#. tumbleweed/gsl/libgslcblas0/description
+msgid ""
+"This library provides a native C interface to BLAS routines. This is part of "
+"the GNU Scientific Library."
+msgstr ""
+
 #. tumbleweed/gsound/libgsound0/description
 msgid ""
 "GSound is a library for playing system sounds. It's designed to be used via "
@@ -19001,16 +19426,89 @@ msgstr ""
 msgid "Spell checker library for GTK+"
 msgstr "Librerie condivise per libotf"
 
-#. tumbleweed/guile-cairo/libguile-cairo0/summary
+#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/summary
 #, fuzzy
-msgid "Guile cairo libary"
-msgstr "Libreria del visualizzatore di desktop remoto"
+#| msgid "Multiplatform Helper Library for Other Libraries -- GTK+ UI Backend"
+msgid "Multiplatform Helper Library for Other Libraries -- GTK+ 2 UI Backend"
+msgstr ""
+"Libreria di supporto multipiattaforma per altre librerie - back end per "
+"l'interfaccia utente GTK+"
 
-#. tumbleweed/guile-cairo/libguile-cairo0/description
+#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/description
 #, fuzzy
-#| msgid "Library for C-bindings for GetData."
-msgid "Libraries for Guile bindings for Cairo."
-msgstr "Libreria per i binding C per GetData."
+#| msgid ""
+#| "Gwenhywfar is a base library used to provide OS abstraction functions for "
+#| "Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
+#| "needed functions (for example, for handling and parsing of configuration "
+#| "files, reading and writing of XML files, and interprocess "
+#| "communication).\n"
+#| "\n"
+#| "This package provides the GTK+ implementation of the generic UI toolkit."
+msgid ""
+"Gwenhywfar is a base library used to provide OS abstraction functions for "
+"Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
+"needed functions (for example, for handling and parsing of configuration "
+"files, reading and writing of XML files, and interprocess communication).\n"
+"\n"
+"This package provides the GTK+ 2 implementation of the generic UI toolkit."
+msgstr ""
+"Gwenhywfar è una libreria di base utilizzata per fornire funzioni di "
+"astrazione del sistema operativo per Linux, FreeBSD, OpenBSD, NetBSD e "
+"Windows. Include anche alcune funzioni spesso necessarie (per esempio per la "
+"gestione e l'analisi dei file di configurazione, la lettura e la scrittura "
+"dei file XML e la comunicazione tra i processi).\n"
+"\n"
+"Questo pacchetto fornisce l'implementazione GTK+ del generico insieme degli "
+"strumenti dell'interfaccia grafica."
+
+#. tumbleweed/gwenhywfar/libgwengui-gtk3-0/summary
+#, fuzzy
+#| msgid "Multiplatform Helper Library for Other Libraries -- GTK+ UI Backend"
+msgid "Multiplatform Helper Library for Other Libraries -- GTK+ 3 UI Backend"
+msgstr ""
+"Libreria di supporto multipiattaforma per altre librerie - back end per "
+"l'interfaccia utente GTK+"
+
+#. tumbleweed/gwenhywfar/libgwengui-gtk3-0/description
+#, fuzzy
+#| msgid ""
+#| "Gwenhywfar is a base library used to provide OS abstraction functions for "
+#| "Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
+#| "needed functions (for example, for handling and parsing of configuration "
+#| "files, reading and writing of XML files, and interprocess "
+#| "communication).\n"
+#| "\n"
+#| "This package provides the GTK+ implementation of the generic UI toolkit."
+msgid ""
+"Gwenhywfar is a base library used to provide OS abstraction functions for "
+"Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
+"needed functions (for example, for handling and parsing of configuration "
+"files, reading and writing of XML files, and interprocess communication).\n"
+"\n"
+"This package provides the GTK+ 3 implementation of the generic UI toolkit."
+msgstr ""
+"Gwenhywfar è una libreria di base utilizzata per fornire funzioni di "
+"astrazione del sistema operativo per Linux, FreeBSD, OpenBSD, NetBSD e "
+"Windows. Include anche alcune funzioni spesso necessarie (per esempio per la "
+"gestione e l'analisi dei file di configurazione, la lettura e la scrittura "
+"dei file XML e la comunicazione tra i processi).\n"
+"\n"
+"Questo pacchetto fornisce l'implementazione GTK+ del generico insieme degli "
+"strumenti dell'interfaccia grafica."
+
+#. tumbleweed/grpc/python2-grpcio/summary
+#. tumbleweed/grpc/python3-grpcio/summary
+#, fuzzy
+msgid ""
+"Python language bindings for grpc, a HTTP/2 Remote Procedure Call "
+"implementation"
+msgstr "File di sviluppo per l'estensione Xinerama di X11"
+
+#. tumbleweed/grpc/python2-grpcio/description
+#, fuzzy
+msgid "This subpackage contains the python2 bindings."
+msgstr ""
+"Questo pacchetto contiene il componente della libreria condivisa di tumbler."
 
 #. tumbleweed/gedit/python3-gedit/description
 msgid ""
@@ -19026,24 +19524,28 @@ msgstr ""
 "Interfaccia del fornitore di servizi di tecnologie di assistenza - binding "
 "Python"
 
-#. tumbleweed/gcab/typelib-1_0-GCab-1_0/summary
+#. tumbleweed/gnucash/python3-gnucash/description
 #, fuzzy
-msgid "Introspection bindings for the gcab cabinet file library"
-msgstr "Binding Python per la libreria gtk-vnc"
-
-#. tumbleweed/gcab/typelib-1_0-GCab-1_0/description
 msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
-"\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression.\n"
-"\n"
-"This package contains the introspection files."
+"This package provides the Python 3 bindings for development of GnuCash, a "
+"personal finance manager."
 msgstr ""
+"Questo pacchetto contiene il componente della libreria condivisa di tumbler."
+
+#. tumbleweed/grpc/python3-grpcio/description
+#, fuzzy
+msgid "This subpackage contains the python3 bindings."
+msgstr ""
+"Questo pacchetto contiene il componente della libreria condivisa di tumbler."
 
 #. tumbleweed/gfbgraph/typelib-1_0-GFBGraph-0_2/summary
 msgid "Introspection bindings for the Facebook Graph API access library"
 msgstr ""
+
+#. tumbleweed/gpaste/typelib-1_0-GPaste-1_0/summary
+#, fuzzy
+msgid "Introspection bindings for the gpaste clipboard history manager"
+msgstr "Binding Python per la libreria gtk-vnc"
 
 #. tumbleweed/gcr/typelib-1_0-Gck-1/summary
 #, fuzzy
@@ -19060,36 +19562,154 @@ msgid "Introspection bindings for gcr, a library for crypto UI related tasks"
 msgstr ""
 "Finestra di dialogo per le attività legate all'interfaccia crittografica"
 
-#. tumbleweed/gegl/typelib-1_0-Gegl-0_3/summary
+#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixbuf-2_0/summary
 #, fuzzy
-msgid "Introspection bindings for the GEGL \"Generic Graphics Library\""
-msgstr "Binding Python per la libreria gtk-vnc"
+#| msgid "Languages for package gbrainy"
+msgid "Introspection bindings for gdk-pixbuf"
+msgstr "Lingue per il pacchetto gbrainy"
 
-#. tumbleweed/gegl/typelib-1_0-Gegl-0_3/description
+#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixdata-2_0/summary
+#, fuzzy
+#| msgid "Languages for package gbrainy"
+msgid "Introspection bindings for gdk-pixdata"
+msgstr "Lingue per il pacchetto gbrainy"
+
+#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixdata-2_0/description
 #, fuzzy
 #| msgid ""
-#| "GEGL provides infrastructure to do demand based cached non destructive "
-#| "image editing on larger than RAM buffers. Through babl it provides "
-#| "support for a wide range of color models and pixel storage formats for "
-#| "input and output."
+#| "gdk-pixbuf is an image loading library that can be extended by loadable "
+#| "modules for new image formats. It is used by toolkits such as GTK+ or "
+#| "Clutter.\n"
+#| "\n"
+#| "This package provides the GObject Introspection bindings for gdk-pixbuf."
 msgid ""
-"GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl, it provides support for a "
-"wide range of color models and pixel storage formats for input and output.\n"
+"gdk-pixbuf is an image loading library that can be extended by loadable "
+"modules for new image formats. It is used by toolkits such as GTK+ or "
+"Clutter.\n"
 "\n"
-"This package provides the GObject Introspection bindings for the libgegl "
-"library."
+"This package provides the GObject Introspection bindings for gdk-pixdata."
 msgstr ""
-"GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
-"modo non distruttivo a richiesta basata su cache su buffer più grandi della "
-"RAM. Attraverso babl fornisce il supporto a un'ampia gamma di modelli di "
-"colori e formati di memorizzazione dei pixel sia per l'input, sia per "
-"l'output."
+"gdk-pixbuf è una libreria di caricamento delle immagini che può essere "
+"estesa con moduli caricabili per nuovi formati di immagini. È usata dagli "
+"insiemi di strumenti tipo GTK+ o Clutter.\n"
+"\n"
+"Questo pacchetto fornisce i binding GObject di Introspection per gdk-pixbuf."
 
 #. tumbleweed/gspell/typelib-1_0-Gspell-1/summary
 #, fuzzy
 msgid "Introspection bindings for the GTK+ spell checker library"
 msgstr "Binding Python per la libreria gtk-vnc"
+
+#, fuzzy
+#~ msgid "Cabinet file library -- Development files"
+#~ msgstr "Libreria portabile degli eventi audio - file di sviluppo"
+
+#~ msgid ""
+#~ "The gdmflexiserver tool interacts with the display manager to enable fast "
+#~ "user switching. This package contains a wrapper that selects the correct "
+#~ "gdmflexiserver implementatoin, based on the running display manager."
+#~ msgstr ""
+#~ "Lo strumento gdmflexiserver interagisce con il gestore dello schermo per "
+#~ "attivare il cambio utente rapido. Questo pacchetto contiene un wrapper "
+#~ "che seleziona la corretta implementazione di gdmflexiserver sulla base "
+#~ "del gestore dello schermo in esecuzione."
+
+#~ msgid ""
+#~ "GEGL provides infrastructure to do demand based cached non destructive "
+#~ "image editing on larger than RAM buffers. Through babl it provides "
+#~ "support for a wide range of color models and pixel storage formats for "
+#~ "input and output."
+#~ msgstr ""
+#~ "GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
+#~ "modo non distruttivo a richiesta basata su cache su buffer più grandi "
+#~ "della RAM. Attraverso babl fornisce il supporto a un'ampia gamma di "
+#~ "modelli di colori e formati di memorizzazione dei pixel sia per l'input, "
+#~ "sia per l'output."
+
+#~ msgid "Translations for package gegl-unstable"
+#~ msgstr "Traduzioni per il pacchetto gegl-unstable"
+
+#~ msgid "Provides translations for the \"gegl-unstable\" package."
+#~ msgstr "Fornisce le traduzioni per il pacchetto \"gegl-unstable\"."
+
+#, fuzzy
+#~ msgid ""
+#~ "GEGL provides infratructure to do demand based cached non destructive "
+#~ "image editing on larger than RAM buffers. Through babl it provides "
+#~ "support for a wide range of color models and pixel storage formats for "
+#~ "input and output."
+#~ msgstr ""
+#~ "GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
+#~ "modo non distruttivo a richiesta basata su cache su buffer più grandi "
+#~ "della RAM. Attraverso babl fornisce il supporto a un'ampia gamma di "
+#~ "modelli di colori e formati di memorizzazione dei pixel sia per l'input, "
+#~ "sia per l'output."
+
+#, fuzzy
+#~ msgid "Bash completion for git-annex"
+#~ msgstr "File di documentazione per Subversion"
+
+#~ msgid ""
+#~ "GnuCash is a personal finance manager. A check book-like register GUI "
+#~ "allows you to enter and track bank accounts, stocks, income, and even "
+#~ "currency trades. A full set of reports allows you to see the state of "
+#~ "your finances. The interface is designed to be simple and easy to use, "
+#~ "but is backed with double-entry accounting principles to ensure balanced "
+#~ "books."
+#~ msgstr ""
+#~ "GnuCash è un gestore di finanze personale. Una GUI in stile registro "
+#~ "della contabilità permette di inserire e tener traccia di conti correnti, "
+#~ "titoli, entrate e persino scambio monetario. Un insieme completo di "
+#~ "rapporti permette di vedere lo stato delle proprie finanze. L'interfaccia "
+#~ "è progettata per essere semplice e facile da usare ma è sostenuta di "
+#~ "principi di partita doppia per assicurare contabilità bilanciate. "
+
+#, fuzzy
+#~ msgid ""
+#~ "GnuCash is a personal finance manager. A check-book like register GUI "
+#~ "allows you to enter and track bank accounts, stocks, income and even "
+#~ "currency trades. A full set of reports allow you to see the state of your "
+#~ "finances. The interface is designed to be simple and easy to use, but is "
+#~ "backed with double-entry accounting principles to ensure balanced books."
+#~ msgstr ""
+#~ "GnuCash è un gestore di finanze personale. Una GUI in stile registro "
+#~ "della contabilità permette di inserire e tener traccia di conti correnti, "
+#~ "titoli, entrate e persino scambio monetario. L'interfaccia è progettata "
+#~ "per essere semplice e facile da usare ma è sostenuta di principi di "
+#~ "partita doppia per assicurare contabilità bilanciate. Questo è il modulo "
+#~ "di documentazione per GnuCash."
+
+#, fuzzy
+#~| msgid "An image loading library -- Introspection bindings"
+#~ msgid "Generic Graphics Library - Introspection bindings"
+#~ msgstr "Una libreria di caricamento di immagini - binding Introspection"
+
+#, fuzzy
+#~| msgid ""
+#~| "GEGL provides infrastructure to do demand based cached non destructive "
+#~| "image editing on larger than RAM buffers. Through babl it provides "
+#~| "support for a wide range of color models and pixel storage formats for "
+#~| "input and output."
+#~ msgid ""
+#~ "GEGL provides infrastructure to do demand based cached non destructive "
+#~ "image editing on larger than RAM buffers. Through babl it provides "
+#~ "support for a wide range of color models and pixel storage formats for "
+#~ "input and output.\n"
+#~ "\n"
+#~ "This package provides the GObject Introspection bindings for the libgegl "
+#~ "library."
+#~ msgstr ""
+#~ "GEGL fornisce l'infrastruttura per effettuare modifiche alle immagini in "
+#~ "modo non distruttivo a richiesta basata su cache su buffer più grandi "
+#~ "della RAM. Attraverso babl fornisce il supporto a un'ampia gamma di "
+#~ "modelli di colori e formati di memorizzazione dei pixel sia per l'input, "
+#~ "sia per l'output."
+
+#~ msgid "Translations for package gufw"
+#~ msgstr "Traduzioni per il pacchetto gufw"
+
+#~ msgid "Provides translations for the \"gufw\" package."
+#~ msgstr "Fornisce le traduzioni per il pacchetto \"gufw\"."
 
 #, fuzzy
 #~| msgid ""
@@ -19174,11 +19794,6 @@ msgstr "Binding Python per la libreria gtk-vnc"
 #, fuzzy
 #~ msgid "Provides translations for the \"glipper\" package."
 #~ msgstr "Fornisce le traduzioni al pacchetto eog."
-
-#, fuzzy
-#~ msgid "A dropdown terminal for GNOME"
-#~ msgstr ""
-#~ "Un programma di utilità visualizzazione dei tipi di carattere per GNOME"
 
 #, fuzzy
 #~| msgid "Languages for package gnucash"

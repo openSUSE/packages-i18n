@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-06 12:26+0000\n"
+"POT-Creation-Date: 2018-10-30 14:08+0000\n"
 "PO-Revision-Date: 2017-02-11 19:22+0000\n"
 "Last-Translator: Andriy Bandura <andriykopanytsia@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.opensuse.org/projects/packages-i18n/g-"
@@ -39,7 +39,6 @@ msgid "GeoLite country data for GeoIP"
 msgstr ""
 
 #. leap/GeoIP/GeoIP-data/description
-#. tumbleweed/GeoIP/GeoIP-data/description
 msgid ""
 "This package includes GeoLite data created by MaxMind, available from http://"
 "www.maxmind.com"
@@ -438,16 +437,6 @@ msgstr ""
 #. leap/gambas3/gambas3-gb-db-postgresql/description
 #. tumbleweed/gambas3/gambas3-gb-db-postgresql/description
 msgid "This component allows you to access Postgresql databases."
-msgstr ""
-
-#. leap/gambas3/gambas3-gb-db-sqlite2/summary
-#. tumbleweed/gambas3/gambas3-gb-db-sqlite2/summary
-msgid "SQLite2 database driver for Gambas"
-msgstr ""
-
-#. leap/gambas3/gambas3-gb-db-sqlite2/description
-#. tumbleweed/gambas3/gambas3-gb-db-sqlite2/description
-msgid "This component allows you to access Sqlite v. 2.x databases."
 msgstr ""
 
 #. leap/gambas3/gambas3-gb-db-sqlite3/summary
@@ -1511,7 +1500,7 @@ msgstr ""
 msgid ""
 "This package provides a web frontend to display the XML tree published by "
 "ganglia, and to provide historical graphs of collected metrics. This website "
-"is written in the PHP5 language and uses the Dwoo templating engine."
+"is written in the PHP5/7 language and uses the Dwoo templating engine."
 msgstr ""
 
 #. leap/gap/summary
@@ -3409,25 +3398,32 @@ msgid "Cabinet file library and tool"
 msgstr ""
 
 #. leap/gcab/description
-msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
-"\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression."
-msgstr ""
-
-#. leap/gcab/gcab-devel/summary
-msgid "Cabinet file library -- Development files"
-msgstr ""
-
-#. leap/gcab/gcab-devel/description
+#. tumbleweed/gcab/description
 msgid ""
 "gcab is a tool and library for manipulating cabinet files.\n"
 "\n"
 "It uses the GObject API and provides GIR bindings. It supports creation of "
 "archives with simple MSZIP compression.\n"
 "\n"
-"This package provides development files to build code against libgcab"
+"This package provides gcab tool and its manuals."
+msgstr ""
+
+#. leap/gcab/gcab-devel/summary
+#. tumbleweed/gcab/gcab-devel/summary
+#, fuzzy
+#| msgid "The header files for the lockdev library"
+msgid "Development files for the gcab cabinet file library"
+msgstr "Файли заголовків для бібліотеки lockdev"
+
+#. leap/gcab/gcab-devel/description
+#. tumbleweed/gcab/gcab-devel/description
+msgid ""
+"gcab is a tool and library for manipulating cabinet files.\n"
+"\n"
+"It uses the GObject API and provides GIR bindings. It supports creation of "
+"archives with simple MSZIP compression.\n"
+"\n"
+"This package provides development files to build code against libgcab."
 msgstr ""
 
 #. leap/gcab/gcab-lang/summary
@@ -4310,12 +4306,10 @@ msgid "Turkish voices for the GCompris game."
 msgstr ""
 
 #. leap/gconf-editor/summary
-#. tumbleweed/gconf-editor/summary
 msgid "An Editor for the GConf Database System"
 msgstr ""
 
 #. leap/gconf-editor/description
-#. tumbleweed/gconf-editor/description
 msgid ""
 "Gconf-editor allows you to view and edit the values that are stored in the "
 "gconf database. This database is used for application settings in the GNOME "
@@ -4323,13 +4317,11 @@ msgid ""
 msgstr ""
 
 #. leap/gconf-editor/gconf-editor-lang/summary
-#. tumbleweed/gconf-editor/gconf-editor-lang/summary
 #, fuzzy
 msgid "Translations for package gconf-editor"
 msgstr "YaST2 — Переклади на данську."
 
 #. leap/gconf-editor/gconf-editor-lang/description
-#. tumbleweed/gconf-editor/gconf-editor-lang/description
 #, fuzzy
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"gconf-editor\" package."
@@ -4412,15 +4404,11 @@ msgstr "Надає переклади для пакунку mc"
 
 #. leap/gconfmm/gconfmm-devel/summary
 #. leap/gconfmm/libgconfmm-2_6-1/summary
-#. tumbleweed/gconfmm/gconfmm-devel/summary
-#. tumbleweed/gconfmm/libgconfmm-2_6-1/summary
 msgid "C++ Interface for GConf"
 msgstr ""
 
 #. leap/gconfmm/gconfmm-devel/description
 #. leap/gconfmm/libgconfmm-2_6-1/description
-#. tumbleweed/gconfmm/gconfmm-devel/description
-#. tumbleweed/gconfmm/libgconfmm-2_6-1/description
 msgid ""
 "This package provides a C++ interface for GConf. It is a subpackage of the "
 "gnomemm project. The interface provides a convenient interface for C++ "
@@ -4854,10 +4842,11 @@ msgid "Compatibility Wrapper for Display Managers"
 msgstr ""
 
 #. leap/gdm/gdmflexiserver/description
+#. tumbleweed/gdm/gdmflexiserver/description
 msgid ""
-"The gdmflexiserver tool interacts with the display manager to enable fast "
+"The GDMFlexiServer tool interacts with the display manager to enable fast "
 "user switching. This package contains a wrapper that selects the correct "
-"gdmflexiserver implementatoin, based on the running display manager."
+"Gdmflexiserver implementation, based on the running display manager."
 msgstr ""
 
 #. leap/gdouros-abydos-fonts/summary
@@ -5206,17 +5195,16 @@ msgstr "Надає переклади для пакунку mc"
 
 #. leap/geary/summary
 #. tumbleweed/geary/summary
-msgid "A lightweight email reader for the GNOME desktop"
+msgid "An email reader for the GNOME desktop"
 msgstr ""
 
 #. leap/geary/description
 #. tumbleweed/geary/description
 msgid ""
-"Geary is a new email reader for GNOME designed to let you read your email "
-"quickly and effortlessly.\n"
+"Geary is a email reader for GNOME.\n"
 "\n"
-"Its interface is based on conversations, so you can easily read an entire "
-"discussion without having to click from message to message."
+"Its interface is based on conversations, so entire discussion may be read "
+"without having to navigate between messages."
 msgstr ""
 
 #. leap/geary/geary-lang/summary
@@ -5231,6 +5219,22 @@ msgstr "YaST2 — Переклади на данську."
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"geary\" package."
 msgstr "Надає переклади для пакунку mc"
+
+#. leap/geda-gaf/geda-base/summary
+#. tumbleweed/geda-gaf/geda-base/summary
+msgid "Common code for gEDA applications"
+msgstr ""
+
+#. leap/geda-gaf/geda-base/description
+#. tumbleweed/geda-gaf/geda-base/description
+#, fuzzy
+#| msgid ""
+#| "This package provides the shared library for gpsd and other GPS aware "
+#| "applications."
+msgid "This package provides code common to all gEDA applications."
+msgstr ""
+"Цей пакунок надає спільну бібліотеку для gpsd та інших програм програм із "
+"GPS."
 
 #. leap/geda-gaf/geda-doc/summary
 #. tumbleweed/geda-gaf/geda-doc/summary
@@ -5700,64 +5704,62 @@ msgid "Provides translations for the \"geeqie\" package."
 msgstr "Надає переклади для пакунку mc"
 
 #. leap/gegl/summary
-#. leap/gegl/gegl-0_2/summary
-#. leap/gegl-unstable/gegl-0_3/summary
-#. leap/gegl/gegl-devel/summary
-#. leap/gegl/gegl-doc/summary
-#. leap/gegl-unstable/summary
-#. leap/gegl-unstable/gegl-unstable-devel/summary
-#. leap/gegl/libgegl-0_2-0/summary
-#. leap/gegl-unstable/libgegl-0_3-0/summary
+#. leap/gegl/gegl-0_3/summary
+#. leap/gegl/libgegl-0_3-0/summary
 #. tumbleweed/gegl/summary
-#. tumbleweed/gegl/gegl-0_3/summary
-#. tumbleweed/gegl/libgegl-0_3-0/summary
+#. tumbleweed/gegl/gegl-0_4/summary
+#. tumbleweed/gegl/libgegl-0_4-0/summary
+#. tumbleweed/gegl/libgegl-0_4-0-32bit/summary
 msgid "Generic Graphics Library"
 msgstr ""
 
 #. leap/gegl/description
-#. leap/gegl/gegl-0_2/description
-#. leap/gegl-unstable/gegl-0_3/description
+#. leap/gegl/gegl-0_3/description
 #. leap/gegl/gegl-doc/description
-#. leap/gegl-unstable/description
-#. leap/gegl/libgegl-0_2-0/description
-#. leap/gegl-unstable/libgegl-0_3-0/description
+#. leap/gegl/libgegl-0_3-0/description
+#. tumbleweed/gegl/description
+#. tumbleweed/gegl/gegl-0_4/description
+#. tumbleweed/gegl/gegl-doc/description
+#. tumbleweed/gegl/libgegl-0_4-0/description
+#. tumbleweed/gegl/libgegl-0_4-0-32bit/description
 msgid ""
 "GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl it provides support for a "
+"editing on larger than RAM buffers. Through babl, it provides support for a "
 "wide range of color models and pixel storage formats for input and output."
 msgstr ""
 
-#. leap/gegl/gegl-0_2-lang/summary
-#. tumbleweed/gegl/gegl-0_3-lang/summary
+#. leap/gegl/gegl-0_3-lang/summary
+#. tumbleweed/gegl/gegl-0_4-lang/summary
 #, fuzzy
 msgid "Translations for package gegl"
 msgstr "YaST2 — Переклади на данську."
 
-#. leap/gegl/gegl-0_2-lang/description
-#. tumbleweed/gegl/gegl-0_3-lang/description
+#. leap/gegl/gegl-0_3-lang/description
+#. tumbleweed/gegl/gegl-0_4-lang/description
 #, fuzzy
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"gegl\" package."
 msgstr "Надає переклади для пакунку mc"
 
-#. leap/gegl-unstable/gegl-0_3-lang/summary
+#. leap/gegl/gegl-devel/summary
+#. tumbleweed/gegl/gegl-devel/summary
 #, fuzzy
-msgid "Translations for package gegl-unstable"
-msgstr "YaST2 — Переклади на данську."
-
-#. leap/gegl-unstable/gegl-0_3-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package mc"
-msgid "Provides translations for the \"gegl-unstable\" package."
-msgstr "Надає переклади для пакунку mc"
+msgid "Development files for the GEGL \"Generic Graphics Library\""
+msgstr "Файли розробки для бібліотеки clucene"
 
 #. leap/gegl/gegl-devel/description
-#. leap/gegl-unstable/gegl-unstable-devel/description
+#. tumbleweed/gegl/gegl-devel/description
 msgid ""
 "GEGL provides infratructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl it provides support for a "
+"editing on larger than RAM buffers. Through babl, it provides support for a "
 "wide range of color models and pixel storage formats for input and output."
 msgstr ""
+
+#. leap/gegl/gegl-doc/summary
+#. tumbleweed/gegl/gegl-doc/summary
+#, fuzzy
+msgid "Documentation for the GEGL \"Generic Graphics Library\""
+msgstr "Файли розробки для бібліотеки clucene"
 
 #. leap/geis/geis-devel/summary
 #. tumbleweed/geis/geis-devel/summary
@@ -5793,7 +5795,6 @@ msgid "Game engine made with pre-rendered background"
 msgstr ""
 
 #. leap/gemrb/description
-#. tumbleweed/gemrb/description
 msgid ""
 "GemRB is an implementation of Bioware's Infinity Engine which was written to "
 "support pseudo-3D role playing games based on the Dungeons & Dragons "
@@ -6595,8 +6596,9 @@ msgstr "Надає переклади для пакунку mc"
 
 #. leap/gf2x/gf2x-devel/summary
 #. tumbleweed/gf2x/gf2x-devel/summary
-msgid "Development files for libgf2x"
-msgstr ""
+#, fuzzy
+msgid "Development headers for libgf2x"
+msgstr "Файли розробки для Avogadro"
 
 #. leap/gf2x/gf2x-devel/description
 #. tumbleweed/gf2x/gf2x-devel/description
@@ -6604,7 +6606,7 @@ msgid ""
 "gf2x is a library for fast multiplication of polynomials over the GF(2) "
 "binary field.\n"
 "\n"
-"This package contains the headers for the gf2x library."
+"This package contains the interface definitions for the gf2x library."
 msgstr ""
 
 #. leap/gfan/summary
@@ -6689,12 +6691,10 @@ msgid ""
 msgstr ""
 
 #. leap/ggz-client-libs/summary
-#. tumbleweed/ggz-client-libs/summary
 msgid "Common files needed to use GGZ"
 msgstr ""
 
 #. leap/ggz-client-libs/description
-#. tumbleweed/ggz-client-libs/description
 msgid ""
 "The ggz-client-libs package provides the common procedures and utilities "
 "required to run the GGZ client and games. The routines are shared by other "
@@ -6702,25 +6702,21 @@ msgid ""
 msgstr ""
 
 #. leap/ggz-client-libs/ggz-client-libs-devel/summary
-#. tumbleweed/ggz-client-libs/ggz-client-libs-devel/summary
 msgid "Development files for ggz-client-libs"
 msgstr ""
 
 #. leap/ggz-client-libs/ggz-client-libs-devel/description
-#. tumbleweed/ggz-client-libs/ggz-client-libs-devel/description
 msgid ""
 "This package provides development files and headers needed to build software "
 "using ggz-client-libs"
 msgstr ""
 
 #. leap/ggz-client-libs/ggz-client-libs-lang/summary
-#. tumbleweed/ggz-client-libs/ggz-client-libs-lang/summary
 #, fuzzy
 msgid "Translations for package ggz-client-libs"
 msgstr "YaST2 — Переклади на данську."
 
 #. leap/ggz-client-libs/ggz-client-libs-lang/description
-#. tumbleweed/ggz-client-libs/ggz-client-libs-lang/description
 #, fuzzy
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"ggz-client-libs\" package."
@@ -6786,7 +6782,7 @@ msgid ""
 "and filtering (data compression / decompression / conversion) capabilities "
 "that appear as primitive operations in the PostScript language and in PDF.\n"
 "\n"
-"For information how to use Ghostscript see /usr/share/ghostscript/9.22/doc/"
+"For information how to use Ghostscript see /usr/share/ghostscript/9.25/doc/"
 "Use.htm"
 msgstr ""
 
@@ -6907,6 +6903,19 @@ msgstr "YaST2 — Переклади на данську."
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"ghostwriter\" package."
 msgstr "Надає переклади для пакунку mc"
+
+#. leap/giada/summary
+#. tumbleweed/giada/summary
+msgid "Sampler Audio Tool"
+msgstr ""
+
+#. leap/giada/description
+#. tumbleweed/giada/description
+msgid ""
+"Giada is an audio tool for DJs and live performers. Up to 32 samples may be "
+"loaded or recorded, and may be played in single mode (drum machine) or loop "
+"mode (sequencer). The keyboard can be used to control this."
+msgstr ""
 
 #. leap/giblib/giblib-devel/summary
 #. tumbleweed/giblib/giblib-devel/summary
@@ -7532,15 +7541,15 @@ msgstr "Надає переклади для пакунку mc"
 
 #. leap/ginac/summary
 #. leap/ginac/libginac6/summary
-#. leap/ginac/libginac6-32bit/summary
 #. tumbleweed/ginac/summary
 #. tumbleweed/ginac/libginac6/summary
-#. tumbleweed/ginac/libginac6-32bit/summary
 msgid "C++ library for symbolic calculations"
 msgstr ""
 
 #. leap/ginac/description
+#. leap/ginac/libginac6/description
 #. tumbleweed/ginac/description
+#. tumbleweed/ginac/libginac6/description
 msgid ""
 "GiNaC (which stands for \"GiNaC is Not a CAS (Computer Algebra System)\") is "
 "an open framework for symbolic computation within the C++ programming "
@@ -7609,12 +7618,10 @@ msgstr ""
 "Метою проекту є опис API і збирання їх у єдиний машиночитабельний формат."
 
 #. leap/girl/summary
-#. tumbleweed/girl/summary
 msgid "Find live radio programs on radio broadcasters on the Internet"
 msgstr ""
 
 #. leap/girl/description
-#. tumbleweed/girl/description
 msgid ""
 "GNOME Internet Radio Locator (GIRL) is a program that allows the user to "
 "locate live radio programs by broadcasters on the Internet.\n"
@@ -7624,13 +7631,11 @@ msgid ""
 msgstr ""
 
 #. leap/girl/girl-lang/summary
-#. tumbleweed/girl/girl-lang/summary
 #, fuzzy
 msgid "Translations for package girl"
 msgstr "YaST2 — Переклади на данську."
 
 #. leap/girl/girl-lang/description
-#. tumbleweed/girl/girl-lang/description
 #, fuzzy
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"girl\" package."
@@ -7652,44 +7657,6 @@ msgid ""
 "requires, it brings you a complete Git environment including GTK and email "
 "interfaces and tools for importing source code repositories from other "
 "revision control systems such as subversion, CVS, and GNU arch."
-msgstr ""
-
-#. leap/git-annex/summary
-#. tumbleweed/git-annex/summary
-msgid "Manage files with git, without checking their contents into git"
-msgstr ""
-
-#. leap/git-annex/description
-#. tumbleweed/git-annex/description
-msgid ""
-"Git-annex allows managing files with git, without checking the file contents "
-"into git. While that may seem paradoxical, it is useful when dealing with "
-"files larger than git can currently easily handle, whether due to "
-"limitations in memory, time, or disk space.\n"
-"\n"
-"It can store large files in many places, from local hard drives, to a large "
-"number of cloud storage services, including S3, WebDAV, and rsync, with a "
-"dozen cloud storage providers usable via plugins. Files can be stored "
-"encrypted with gpg, so that the cloud storage provider cannot see your data. "
-"git-annex keeps track of where each file is stored, so it knows how many "
-"copies are available, and has many facilities to ensure your data is "
-"preserved.\n"
-"\n"
-"git-annex can also be used to keep a folder in sync between computers, "
-"noticing when files are changed, and automatically committing them to git "
-"and transferring them to other computers. The git-annex webapp makes it easy "
-"to set up and use git-annex this way."
-msgstr ""
-
-#. leap/git-annex/git-annex-bash-completion/summary
-#. tumbleweed/git-annex/git-annex-bash-completion/summary
-#, fuzzy
-msgid "Bash completion for git-annex"
-msgstr "Підтримка завершення bash для systemd"
-
-#. leap/git-annex/git-annex-bash-completion/description
-#. tumbleweed/git-annex/git-annex-bash-completion/description
-msgid "Optional dependency offering bash completion for git-annex"
 msgstr ""
 
 #. leap/git/git-arch/summary
@@ -7719,12 +7686,10 @@ msgid ""
 msgstr ""
 
 #. leap/git-cola/summary
-#. tumbleweed/git-cola/summary
 msgid "Sleek and powerful Git GUI"
 msgstr ""
 
 #. leap/git-cola/description
-#. tumbleweed/git-cola/description
 msgid ""
 "git-cola is a simple, powerful, and feature-rich GUI for Git that provides "
 "an easy way to interact with Git repositories."
@@ -7911,12 +7876,10 @@ msgid ""
 msgstr ""
 
 #. leap/git-sync/summary
-#. tumbleweed/git-sync/summary
 msgid "Safe and simple one-script git synchronization"
 msgstr ""
 
 #. leap/git-sync/description
-#. tumbleweed/git-sync/description
 msgid ""
 "Suppose you have a set of text files you care about, multiple machines to "
 "work on, and a central git repository (a.k.a. bare reporitory) at your "
@@ -8020,7 +7983,7 @@ msgstr ""
 
 #. leap/gitolite/summary
 #. tumbleweed/gitolite/summary
-msgid "Highly flexible server for git directory version tracker"
+msgid "Server for git directory version tracker"
 msgstr ""
 
 #. leap/gitolite/description
@@ -8630,12 +8593,12 @@ msgstr "Файли розробки для Avogadro"
 #. leap/glibmm2_4/glibmm2_4-devel/description
 #. leap/glibmm2_4/libgiomm-2_4-1/description
 #. leap/glibmm2_4/libgiomm-2_4-1-32bit/description
-#. leap/glibmm2/libgiomm-2_56-1/description
-#. leap/glibmm2/libgiomm-2_56-1-32bit/description
+#. leap/glibmm2/libgiomm-2_58-1/description
+#. leap/glibmm2/libgiomm-2_58-1-32bit/description
 #. leap/glibmm2_4/libglibmm-2_4-1/description
 #. leap/glibmm2_4/libglibmm-2_4-1-32bit/description
-#. leap/glibmm2/libglibmm-2_56-1/description
-#. leap/glibmm2/libglibmm-2_56-1-32bit/description
+#. leap/glibmm2/libglibmm-2_58-1/description
+#. leap/glibmm2/libglibmm-2_58-1-32bit/description
 #. tumbleweed/glibmm2/glibmm2-devel/description
 #. tumbleweed/glibmm2_4/glibmm2_4-devel/description
 #. tumbleweed/glibmm2_4/libgiomm-2_4-1/description
@@ -8717,6 +8680,7 @@ msgstr ""
 
 #. leap/gloox/gloox-devel/summary
 #. leap/gloox/libgloox17/summary
+#. leap/gloox/libgloox17-32bit/summary
 #. tumbleweed/gloox/gloox-devel/summary
 #. tumbleweed/gloox/libgloox17/summary
 #. tumbleweed/gloox/libgloox17-32bit/summary
@@ -8725,6 +8689,7 @@ msgstr ""
 
 #. leap/gloox/gloox-devel/description
 #. leap/gloox/libgloox17/description
+#. leap/gloox/libgloox17-32bit/description
 #. tumbleweed/gloox/gloox-devel/description
 #. tumbleweed/gloox/libgloox17/description
 #. tumbleweed/gloox/libgloox17-32bit/description
@@ -8762,12 +8727,10 @@ msgid ""
 msgstr ""
 
 #. leap/glproto/glproto-devel/summary
-#. tumbleweed/glproto/glproto-devel/summary
 msgid "The X11 Protocol: OpenGL extension"
 msgstr ""
 
 #. leap/glproto/glproto-devel/description
-#. tumbleweed/glproto/glproto-devel/description
 msgid ""
 "The GL protocol headers for X11 development. This extension defines a "
 "protocol for the client to send 3D rendering commands to the X server."
@@ -8779,7 +8742,6 @@ msgid "OpenGL and OpenGL ES shader front end and validator"
 msgstr ""
 
 #. leap/glslang/glslang-devel/description
-#. tumbleweed/glslang/glslang-devel/description
 msgid ""
 "glslang is the official reference compiler front end for the OpenGL ES and "
 "OpenGL shading languages. It implements a strict interpretation of the "
@@ -9076,6 +9038,16 @@ msgstr "YaST2 — Переклади на данську."
 msgid "Provides translations for the \"gmusicbrowser\" package."
 msgstr "Надає переклади для пакунку mc"
 
+#. leap/gn/summary
+#. tumbleweed/gn/summary
+msgid "A meta-build system that generates build files for Ninja"
+msgstr ""
+
+#. leap/gn/description
+#. tumbleweed/gn/description
+msgid "GN is a meta-build system that generates build files for Ninja."
+msgstr ""
+
 #. leap/gnokii/summary
 #. leap/gnokii/gnokii-devel/summary
 #. leap/gnokii/gnokii-smsd/summary
@@ -9119,12 +9091,10 @@ msgid "Provides translations for the \"gnokii\" package."
 msgstr "Надає переклади для пакунку mc"
 
 #. leap/genius/gnome-genius/summary
-#. tumbleweed/genius/gnome-genius/summary
 msgid "GNOME interface the the Genius general purpose calculator"
 msgstr ""
 
 #. leap/gpaste/gnome-shell-extension-gpaste/summary
-#. tumbleweed/gpaste/gnome-shell-extension-gpaste/summary
 msgid "GNOME Shell Extension -- GPaste Status Menu"
 msgstr ""
 
@@ -9330,28 +9300,20 @@ msgstr ""
 #. leap/gnu-netcat/description
 #. tumbleweed/gnu-netcat/description
 msgid ""
-"Netcat is a featured networking utility which reads and writes data across "
-"network connections, using the TCP/IP protocol.  It is designed to be a "
-"reliable \"back-end\" tool that can be used directly or easily driven by "
-"other programs and scripts. At the same time, it is a feature-rich network "
-"debugging and exploration tool, since it can create almost any kind of "
-"connection you would need and has several interesting built-in "
-"capabilities.\n"
-"\n"
-"It provides access to the following main features:\n"
+"Netcat is a networking utility which reads and writes data across network "
+"connections. It is a \"back-end\" tool that can be used directly or driven "
+"by other programs and scripts. It is also a network debugging and "
+"exploration tool, since it can create a number of connection types. It "
+"provides the following main features:\n"
 "\n"
 "  * Outbound and inbound connections, TCP or UDP, to or from any ports.   * "
-"Featured tunneling mode which allows also special tunneling such as UDP "
-"to     TCP, with the possibility of specifying all network parameters "
-"(source     port/interface, listening port/interface, and the remote host "
-"allowed to     connect to the tunnel.   * Built-in port-scanning "
-"capabilities, with randomizer.   * Advanced usage options, such as buffered "
-"send-mode (one line every N     seconds), and hexdump (to stderr or to a "
-"specified file) of trasmitted and     received data.   * Optional RFC854 "
-"telnet codes parser and responder.\n"
-"\n"
-"The GNU Netcat is distributed freely under the GNU General Public License "
-"(GPL)."
+"Tunneling mode which allows also tunneling such as UDP to     TCP, with the "
+"possibility of specifying all network parameters (source     port/interface, "
+"listening port/interface, and the remote host allowed to     connect to the "
+"tunnel.   * Built-in port-scanning capabilities, with randomizer.   * "
+"Advanced usage options, such as buffered send-mode (one line every N     "
+"seconds), and hexdump (to stderr or to a specified file) of trasmitted "
+"and     received data.   * Optional RFC854 telnet codes parser and responder."
 msgstr ""
 
 #. leap/gnu-recutils/summary
@@ -9525,7 +9487,6 @@ msgid ""
 msgstr ""
 
 #. leap/gnubg/summary
-#. tumbleweed/gnubg/summary
 msgid "Plays and analyzes backgammon games and matches on a world class level"
 msgstr ""
 
@@ -9608,9 +9569,7 @@ msgid ""
 msgstr ""
 
 #. leap/gnucash/summary
-#. leap/gnucash/gnucash-devel/summary
 #. tumbleweed/gnucash/summary
-#. tumbleweed/gnucash/gnucash-devel/summary
 msgid "Personal Finance Manager"
 msgstr ""
 
@@ -9619,21 +9578,26 @@ msgstr ""
 msgid ""
 "GnuCash is a personal finance manager. A check book-like register GUI allows "
 "you to enter and track bank accounts, stocks, income, and even currency "
-"trades. A full set of reports allows you to see the state of your finances. "
-"The interface is designed to be simple and easy to use, but is backed with "
-"double-entry accounting principles to ensure balanced books."
+"trades.\n"
+"\n"
+"Feature Highlights:\n"
+"\n"
+" * Double-Entry Accounting;  * Stock/Bond/Mutual Fund Accounts;  * Small-"
+"Business Accounting;  * Reports, Graphs;  * QIF/OFX/HBCI Import, Transaction "
+"Matching;  * Scheduled Transactions;  * Financial Calculations."
 msgstr ""
 
+#. leap/gnucash/gnucash-devel/summary
+#. tumbleweed/gnucash/gnucash-devel/summary
+#, fuzzy
+msgid "Development files for GnuCash"
+msgstr "Файли розробки для Avogadro"
+
 #. leap/gnucash/gnucash-devel/description
-#. leap/gnucash/python-gnucash/description
 #. tumbleweed/gnucash/gnucash-devel/description
-#. tumbleweed/gnucash/python-gnucash/description
 msgid ""
-"GnuCash is a personal finance manager. A check-book like register GUI allows "
-"you to enter and track bank accounts, stocks, income and even currency "
-"trades. A full set of reports allow you to see the state of your finances. "
-"The interface is designed to be simple and easy to use, but is backed with "
-"double-entry accounting principles to ensure balanced books."
+"This package provides all the necessary files for development of GnuCash, a "
+"personal finance manager."
 msgstr ""
 
 #. leap/gnucash-docs/summary
@@ -9674,16 +9638,6 @@ msgstr ""
 msgid ""
 "A worthy chess opponent that runs in text mode. Find an X11 interface in the "
 "xboard package."
-msgstr ""
-
-#. leap/gnugk/summary
-msgid "OpenH323 Gatekeeper--The GNU Gatekeeper"
-msgstr ""
-
-#. leap/gnugk/description
-msgid ""
-"The gatekeeper controls H.323 compatible clients (like ohphone) and can be "
-"used to set up a complete Internet telephony system."
 msgstr ""
 
 #. leap/gnugo/summary
@@ -9891,11 +9845,11 @@ msgid ""
 msgstr ""
 
 #. leap/gnuradio/gnuradio-wxgui/summary
-#. leap/gnuradio/libgnuradio-3_7_11-0_0_0/summary
-#. leap/gnuradio/libvolk1_3/summary
+#. leap/gnuradio/libgnuradio-3_7_12-0_0_0/summary
+#. leap/gnuradio/libvolk1_4/summary
 #. tumbleweed/gnuradio/gnuradio-wxgui/summary
-#. tumbleweed/gnuradio/libgnuradio-3_7_11-0_0_0/summary
-#. tumbleweed/gnuradio/libvolk1_3/summary
+#. tumbleweed/gnuradio/libgnuradio-3_7_12-0_0_0/summary
+#. tumbleweed/gnuradio/libvolk1_4/summary
 msgid "Libraries for GNU Radio"
 msgstr ""
 
@@ -9982,11 +9936,9 @@ msgid ""
 msgstr ""
 
 #. leap/gnutls/summary
-#. leap/gnutls/libgnutls-dane0/summary
 #. leap/gnutls/libgnutls30/summary
 #. leap/gnutls/libgnutls30-32bit/summary
 #. tumbleweed/gnutls/summary
-#. tumbleweed/gnutls/libgnutls-dane0/summary
 #. tumbleweed/gnutls/libgnutls30/summary
 #. tumbleweed/gnutls/libgnutls30-32bit/summary
 msgid "The GNU Transport Layer Security Library"
@@ -10027,6 +9979,8 @@ msgstr ""
 #. leap/go1.8/summary
 #. leap/go1.9/summary
 #. tumbleweed/go/summary
+#. tumbleweed/go1.10/summary
+#. tumbleweed/go1.11/summary
 #. tumbleweed/go1.4/summary
 #. tumbleweed/go1.6/summary
 #. tumbleweed/go1.7/summary
@@ -10040,6 +9994,8 @@ msgstr ""
 #. leap/go1.8/description
 #. leap/go1.9/description
 #. tumbleweed/go/description
+#. tumbleweed/go1.10/description
+#. tumbleweed/go1.11/description
 #. tumbleweed/go1.4/description
 #. tumbleweed/go1.6/description
 #. tumbleweed/go1.7/description
@@ -10058,6 +10014,8 @@ msgstr ""
 #. leap/go1.8/go1.8-doc/summary
 #. leap/go1.9/go1.9-doc/summary
 #. tumbleweed/go/go-doc/summary
+#. tumbleweed/go1.10/go1.10-doc/summary
+#. tumbleweed/go1.11/go1.11-doc/summary
 #. tumbleweed/go1.4/go1.4-doc/summary
 #. tumbleweed/go1.6/go1.6-doc/summary
 #. tumbleweed/go1.7/go1.7-doc/summary
@@ -10071,6 +10029,8 @@ msgstr ""
 #. leap/go1.8/go1.8-doc/description
 #. leap/go1.9/go1.9-doc/description
 #. tumbleweed/go/go-doc/description
+#. tumbleweed/go1.10/go1.10-doc/description
+#. tumbleweed/go1.11/go1.11-doc/description
 #. tumbleweed/go1.4/go1.4-doc/description
 #. tumbleweed/go1.6/go1.6-doc/description
 #. tumbleweed/go1.7/go1.7-doc/description
@@ -10110,6 +10070,8 @@ msgstr "Надає переклади для пакунку mc"
 #. leap/go1.8/go1.8-race/summary
 #. leap/go1.9/go1.9-race/summary
 #. tumbleweed/go/go-race/summary
+#. tumbleweed/go1.10/go1.10-race/summary
+#. tumbleweed/go1.11/go1.11-race/summary
 #. tumbleweed/go1.4/go1.4-race/summary
 #. tumbleweed/go1.6/go1.6-race/summary
 #. tumbleweed/go1.7/go1.7-race/summary
@@ -10123,6 +10085,8 @@ msgstr ""
 #. leap/go1.8/go1.8-race/description
 #. leap/go1.9/go1.9-race/description
 #. tumbleweed/go/go-race/description
+#. tumbleweed/go1.10/go1.10-race/description
+#. tumbleweed/go1.11/go1.11-race/description
 #. tumbleweed/go1.4/go1.4-race/description
 #. tumbleweed/go1.6/go1.6-race/description
 #. tumbleweed/go1.7/go1.7-race/description
@@ -10241,13 +10205,11 @@ msgid ""
 msgstr ""
 
 #. leap/goffice-0_8/goffice-0_8-devel/summary
-#. tumbleweed/goffice-0_8/goffice-0_8-devel/summary
 msgid "Development files for goffice"
 msgstr ""
 
 #. leap/goffice-0_8/goffice-0_8-devel/description
 #. leap/goffice/goffice-devel/description
-#. tumbleweed/goffice-0_8/goffice-0_8-devel/description
 #. tumbleweed/goffice/goffice-devel/description
 msgid ""
 "GOffice is a GLib/GTK+ set of document-centric objects and utilities.\n"
@@ -10256,13 +10218,11 @@ msgid ""
 msgstr ""
 
 #. leap/goffice-0_8/goffice-0_8-lang/summary
-#. tumbleweed/goffice-0_8/goffice-0_8-lang/summary
 #, fuzzy
 msgid "Translations for package goffice-0_8"
 msgstr "YaST2 — Переклади на данську."
 
 #. leap/goffice-0_8/goffice-0_8-lang/description
-#. tumbleweed/goffice-0_8/goffice-0_8-lang/description
 #, fuzzy
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"goffice-0_8\" package."
@@ -10554,7 +10514,6 @@ msgid "GPaste is a clipboard management daemon with DBus interface."
 msgstr ""
 
 #. leap/gpaste/gpaste-devel/summary
-#. tumbleweed/gpaste/gpaste-devel/summary
 msgid "Library for managing clipboard history -- Development Files"
 msgstr ""
 
@@ -10642,24 +10601,6 @@ msgstr "YaST2 — Переклади на данську."
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"gperiodic\" package."
 msgstr "Надає переклади для пакунку mc"
-
-#. leap/gpg-offline/summary
-#. tumbleweed/gpg-offline/summary
-msgid "Trusted GPG Offline Keyring Manipulation Tool"
-msgstr ""
-
-#. leap/gpg-offline/description
-#. tumbleweed/gpg-offline/description
-msgid ""
-"A tool to manipulate with locally stored keyrings.\n"
-"\n"
-"Package sources can contain keyrings with keys used by upstream developers "
-"for signing of their project tarballs. Keys can be verified offline during "
-"building process.\n"
-"\n"
-"Package includes RPM macros for build-time offline verification of upstream "
-"tarballs during build."
-msgstr ""
 
 #. leap/gpg2/summary
 #. tumbleweed/gpg2/summary
@@ -11021,7 +10962,6 @@ msgid ""
 msgstr ""
 
 #. leap/gpsd/gpsd-clients/summary
-#. tumbleweed/gpsd/gpsd-clients/summary
 msgid "Clients for gpsd with an X interface"
 msgstr ""
 
@@ -11117,15 +11057,13 @@ msgid "Documentation for gputils and supported PIC MCUs."
 msgstr ""
 
 #. leap/gpxsee/summary
-#. tumbleweed/gpxsee/summary
 msgid "GPS log files visualizing and analyzing tool"
 msgstr ""
 
 #. leap/gpxsee/description
-#. tumbleweed/gpxsee/description
 msgid ""
 "GPXSee is a Qt-based tool for visualizing and analyzing GPX, TCX, FIT, KML, "
-"IGC, NMEA and Garmin CSV files."
+"IGC, NMEA, OziExplorer files and Garmin CSV files."
 msgstr ""
 
 #. leap/gq/summary
@@ -12437,7 +12375,6 @@ msgid "GNU Scientific Library"
 msgstr "Наукова бібліотека GNU"
 
 #. leap/gsl/description
-#. tumbleweed/gsl/description
 msgid ""
 "The GNU Scientific Library (GSL) is a collection of routines for numerical "
 "computing. The routines are written from scratch by the GSL team in ANSI C "
@@ -12448,13 +12385,10 @@ msgstr ""
 
 #. leap/gsl/gsl-devel/summary
 #. leap/gsl/gsl-doc/summary
-#. tumbleweed/gsl/gsl-devel/summary
-#. tumbleweed/gsl/gsl-doc/summary
 msgid "GNU Scientific Library - development files"
 msgstr ""
 
 #. leap/gsl/gsl-devel/description
-#. tumbleweed/gsl/gsl-devel/description
 msgid ""
 "This package contains the headers, static libraries and some documentation "
 "for GSL.\n"
@@ -12478,7 +12412,6 @@ msgid ""
 msgstr ""
 
 #. leap/gsl/gsl-doc/description
-#. tumbleweed/gsl/gsl-doc/description
 msgid ""
 "This package contains documentation for GSL\n"
 "\n"
@@ -12652,25 +12585,21 @@ msgid ""
 msgstr ""
 
 #. leap/gsynaptics/summary
-#. tumbleweed/gsynaptics/summary
 msgid "A Graphical Front-End for Synaptics Touchpad Configuration"
 msgstr ""
 
 #. leap/gsynaptics/description
-#. tumbleweed/gsynaptics/description
 msgid ""
 "gsynaptics is a gnome applet that can be used to configure Synaptics "
 "touchpads that are commonly found in laptops."
 msgstr ""
 
 #. leap/gsynaptics/gsynaptics-lang/summary
-#. tumbleweed/gsynaptics/gsynaptics-lang/summary
 #, fuzzy
 msgid "Translations for package gsynaptics"
 msgstr "YaST2 — Переклади на данську."
 
 #. leap/gsynaptics/gsynaptics-lang/description
-#. tumbleweed/gsynaptics/gsynaptics-lang/description
 #, fuzzy
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"gsynaptics\" package."
@@ -12968,6 +12897,16 @@ msgid ""
 "This subpackage contain the translations for the package gtypist."
 msgstr ""
 
+#. leap/guake/summary
+#. tumbleweed/guake/summary
+msgid "Drop-down terminal for GNOME"
+msgstr ""
+
+#. leap/guake/description
+#. tumbleweed/guake/description
+msgid "Guake is a dropdown terminal made for the GNOME desktop environment."
+msgstr ""
+
 #. leap/gucharmap/summary
 #. tumbleweed/gucharmap/summary
 msgid "A Featureful Unicode Character Map"
@@ -13066,6 +13005,53 @@ msgid ""
 "language, to be used on bytevectors within Guile."
 msgstr ""
 
+#. leap/guile-cairo/summary
+#. tumbleweed/guile-cairo/summary
+msgid "Guile bindings to Cairo"
+msgstr ""
+
+#. leap/guile-cairo/description
+#. tumbleweed/guile-cairo/description
+msgid "Guile bindings to Cairo library."
+msgstr ""
+
+#. leap/guile-cairo/guile-cairo-devel/summary
+#. tumbleweed/guile-cairo/guile-cairo-devel/summary
+#, fuzzy
+msgid "Development files for Guile Cairo bindings"
+msgstr "Файли розробки для Avogadro"
+
+#. leap/guile-cairo/guile-cairo-devel/description
+#. tumbleweed/guile-cairo/guile-cairo-devel/description
+msgid "Files required to build software using Guile Cairo bindings."
+msgstr ""
+
+#. leap/guile-charting/summary
+#. tumbleweed/guile-charting/summary
+#, fuzzy
+#| msgid "Shared library for GPS applications"
+msgid "Guile library for making charts"
+msgstr "Спільна бібліотека для програм GPS"
+
+#. leap/guile-charting/description
+#. tumbleweed/guile-charting/description
+msgid ""
+"Guile-Charting is a library to create charts and graphs in Guile. It is thus "
+"far a hack."
+msgstr ""
+
+#. leap/guile-git/summary
+#. tumbleweed/guile-git/summary
+msgid "Guile bindings of libgit2"
+msgstr ""
+
+#. leap/guile-git/description
+#. tumbleweed/guile-git/description
+msgid ""
+"This package provides Guile bindings to libgit2, a library manipulate "
+"repositories of the Git version control system."
+msgstr ""
+
 #. leap/guile-json/summary
 #. tumbleweed/guile-json/summary
 msgid "JSON module for Guile"
@@ -13090,6 +13076,35 @@ msgid ""
 "Guile provides a machine independent execution platform that can be linked "
 "in as a library when building extensible programs. This package contains "
 "guile modules."
+msgstr ""
+
+#. leap/guile-sqlite3/summary
+#. tumbleweed/guile-sqlite3/summary
+msgid "SQLite3 database access from Guile"
+msgstr ""
+
+#. leap/guile-sqlite3/description
+#. tumbleweed/guile-sqlite3/description
+#, fuzzy
+#| msgid ""
+#| "This package provides openSUSE defaults for configurations based on GConf "
+#| "database system."
+msgid "This package provides Guile bindings to the SQLite3 database system."
+msgstr ""
+"Цей пакунок надає типові налаштування openSUSE для конфігурації системи на "
+"основі бази даних GConf."
+
+#. leap/guile-ssh/guile-ssh-devel/summary
+#. tumbleweed/guile-ssh/guile-ssh-devel/summary
+#, fuzzy
+msgid "Development files for Guile-SSH"
+msgstr "Файли розробки для Avogadro"
+
+#. leap/guile-ssh/guile-ssh-devel/description
+#. tumbleweed/guile-ssh/guile-ssh-devel/description
+msgid ""
+"The libraries and header files for developing applications that use guile-"
+"ssh."
 msgstr ""
 
 #. leap/guilt/summary
@@ -13566,7 +13581,6 @@ msgid ""
 msgstr ""
 
 #. leap/gwenview5/summary
-#. tumbleweed/gwenview5/summary
 #, fuzzy
 #| msgid "Simple Image Viewer for KDE"
 msgid "Image Viewer for KDE"
@@ -13942,7 +13956,7 @@ msgstr ""
 
 #. leap/gsequencer/libags1/summary
 #. leap/gsequencer/libgsequencer0/summary
-#. tumbleweed/gsequencer/libags1/summary
+#. tumbleweed/gsequencer/libags2/summary
 #. tumbleweed/gsequencer/libgsequencer0/summary
 #, fuzzy
 msgid "GSequencer core libraries"
@@ -13950,7 +13964,7 @@ msgstr "Основна бібліотека Plymouth"
 
 #. leap/gsequencer/libags1/description
 #. leap/gsequencer/libgsequencer0/description
-#. tumbleweed/gsequencer/libags1/description
+#. tumbleweed/gsequencer/libags2/description
 #. tumbleweed/gsequencer/libgsequencer0/description
 msgid ""
 "Advanced Gtk+ Sequencer is an audio sequencer application. This subpackage "
@@ -14236,15 +14250,13 @@ msgstr ""
 
 #. leap/gdbm/libgdbm4/summary
 #. leap/gdbm/libgdbm4-32bit/summary
-#. tumbleweed/gdbm/libgdbm4/summary
-#. tumbleweed/gdbm/libgdbm4-32bit/summary
+#. tumbleweed/gdbm/libgdbm5/summary
+#. tumbleweed/gdbm/libgdbm5-32bit/summary
 msgid "GNU dbm key/data database"
 msgstr "База даних „ключ-дані“ GNU dbm"
 
 #. leap/gdbm/libgdbm4/description
 #. leap/gdbm/libgdbm4-32bit/description
-#. tumbleweed/gdbm/libgdbm4/description
-#. tumbleweed/gdbm/libgdbm4-32bit/description
 msgid ""
 "GNU dbm is a library of database functions that use extensible hashing and "
 "work similar to the standard UNIX dbm. These routines are provided to a "
@@ -14495,8 +14507,8 @@ msgstr ""
 #. leap/gf2x/libgf2x-1_2/description
 #. tumbleweed/gf2x/libgf2x-1_2/description
 msgid ""
-"gf2x is a library for fast multiplication of polynomials over the GF(2) "
-"binary field."
+"gf2x is a library for multiplication of polynomials over the GF(2) binary "
+"field."
 msgstr ""
 
 #. leap/glusterfs/libgfapi0/summary
@@ -14657,16 +14669,12 @@ msgid ""
 msgstr ""
 
 #. leap/ginac/libginac-devel/summary
-#. leap/ginac/libginac-devel-32bit/summary
 #. tumbleweed/ginac/libginac-devel/summary
-#. tumbleweed/ginac/libginac-devel-32bit/summary
 msgid "GiNaC development libraries and header files"
 msgstr ""
 
 #. leap/ginac/libginac-devel/description
-#. leap/ginac/libginac-devel-32bit/description
 #. tumbleweed/ginac/libginac-devel/description
-#. tumbleweed/ginac/libginac-devel-32bit/description
 msgid ""
 "GiNaC (which stands for \"GiNaC is Not a CAS (Computer Algebra System)\") is "
 "an open framework for symbolic computation within the C++ programming "
@@ -14674,16 +14682,6 @@ msgid ""
 "\n"
 "This package contains the libraries, include files and other resources you "
 "use to develop GiNaC applications."
-msgstr ""
-
-#. leap/ginac/libginac6/description
-#. leap/ginac/libginac6-32bit/description
-#. tumbleweed/ginac/libginac6/description
-#. tumbleweed/ginac/libginac6-32bit/description
-msgid ""
-" GiNaC (which stands for \"GiNaC is Not a CAS (Computer Algebra System)\") "
-"is an open framework for symbolic computation within the C++ programming "
-"language."
 msgstr ""
 
 #. leap/glib2/libgio-2_0-0/summary
@@ -14731,8 +14729,8 @@ msgstr ""
 
 #. leap/glibmm2_4/libgiomm-2_4-1/summary
 #. leap/glibmm2_4/libgiomm-2_4-1-32bit/summary
-#. leap/glibmm2/libgiomm-2_56-1/summary
-#. leap/glibmm2/libgiomm-2_56-1-32bit/summary
+#. leap/glibmm2/libgiomm-2_58-1/summary
+#. leap/glibmm2/libgiomm-2_58-1-32bit/summary
 #. tumbleweed/glibmm2_4/libgiomm-2_4-1/summary
 #. tumbleweed/glibmm2_4/libgiomm-2_4-1-32bit/summary
 #. tumbleweed/glibmm2/libgiomm-2_58-1/summary
@@ -14901,8 +14899,8 @@ msgstr "Інструментальна бібліотека загального
 
 #. leap/glibmm2_4/libglibmm-2_4-1/summary
 #. leap/glibmm2_4/libglibmm-2_4-1-32bit/summary
-#. leap/glibmm2/libglibmm-2_56-1/summary
-#. leap/glibmm2/libglibmm-2_56-1-32bit/summary
+#. leap/glibmm2/libglibmm-2_58-1/summary
+#. leap/glibmm2/libglibmm-2_58-1-32bit/summary
 #. tumbleweed/glibmm2_4/libglibmm-2_4-1/summary
 #. tumbleweed/glibmm2_4/libglibmm-2_4-1-32bit/summary
 #. tumbleweed/glibmm2/libglibmm-2_58-1/summary
@@ -14994,8 +14992,8 @@ msgid ""
 "This package contains C++ bindings C++ bindings for the GNU MP Library."
 msgstr ""
 
-#. leap/gnuradio/libgnuradio-3_7_11-0_0_0/description
-#. tumbleweed/gnuradio/libgnuradio-3_7_11-0_0_0/description
+#. leap/gnuradio/libgnuradio-3_7_12-0_0_0/description
+#. tumbleweed/gnuradio/libgnuradio-3_7_12-0_0_0/description
 msgid ""
 "GNU Radio is a collection of software that when combined with minimal "
 "hardware, allows the construction of radios where the actual waveforms "
@@ -15035,6 +15033,13 @@ msgstr "Пакунок розробки для dbusmenu-qt"
 #. tumbleweed/gnutls/libgnutlsxx-devel/description
 msgid "Files needed for software development using gnutls."
 msgstr ""
+
+#. leap/gnutls/libgnutls-dane0/summary
+#. tumbleweed/gnutls/libgnutls-dane0/summary
+#, fuzzy
+#| msgid "The GNU Transport Layer Security Library"
+msgid "DANE support for the GNU Transport Layer Security Library"
+msgstr "Бібліотека GNU для безпеки транспортного рівня"
 
 #. leap/gnutls/libgnutls-dane0/description
 #. tumbleweed/gnutls/libgnutls-dane0/description
@@ -15135,7 +15140,6 @@ msgstr ""
 #. leap/goffice/libgoffice-0_10-10/summary
 #. leap/goffice-0_8/libgoffice-0_8-8/summary
 #. tumbleweed/goffice/libgoffice-0_10-10/summary
-#. tumbleweed/goffice-0_8/libgoffice-0_8-8/summary
 msgid "GLib/GTK+ Set of Document-Centric Objects and Utilities"
 msgstr ""
 
@@ -15150,7 +15154,6 @@ msgid ""
 msgstr ""
 
 #. leap/goffice-0_8/libgoffice-0_8-8/description
-#. tumbleweed/goffice-0_8/libgoffice-0_8-8/description
 msgid ""
 "These are common operations for document-centric applications that    are "
 "conceptually simple, but complex to implement fully. -    Plug-ins \n"
@@ -15264,12 +15267,12 @@ msgid ""
 msgstr ""
 
 #. leap/gpaste/libgpaste9/summary
-#. tumbleweed/gpaste/libgpaste9/summary
+#. tumbleweed/gpaste/libgpaste11/summary
 msgid "Library for managing clipboard history"
 msgstr ""
 
 #. leap/gpaste/libgpaste9/description
-#. tumbleweed/gpaste/libgpaste9/description
+#. tumbleweed/gpaste/libgpaste11/description
 msgid ""
 "GPaste is a clipboard management daemon with DBus interface.\n"
 "\n"
@@ -15373,13 +15376,13 @@ msgid ""
 msgstr ""
 
 #. leap/granite/libgranite4/summary
-#. tumbleweed/granite/libgranite4/summary
+#. tumbleweed/granite/libgranite5/summary
 #, fuzzy
 msgid "Granite is a development library"
 msgstr "Переносна бібліотека системних звуків -- Бібліотека GTK+ 2"
 
 #. leap/granite/libgranite4/description
-#. tumbleweed/granite/libgranite4/description
+#. tumbleweed/granite/libgranite5/description
 msgid ""
 "Granite is an extension of GTK+. It provides the commonly used widgets found "
 "in Elementary applications."
@@ -15498,8 +15501,8 @@ msgstr ""
 
 #. leap/gsignond/libgsignond-common0/summary
 #. leap/gsignond/libgsignond-common0-32bit/summary
-#. tumbleweed/gsignond/libgsignond-common0/summary
-#. tumbleweed/gsignond/libgsignond-common0-32bit/summary
+#. tumbleweed/gsignond/libgsignond-common1/summary
+#. tumbleweed/gsignond/libgsignond-common1-32bit/summary
 #, fuzzy
 #| msgid "The Qt 5 library for testing."
 msgid "The core library for gsignond"
@@ -15507,8 +15510,8 @@ msgstr "Бібліотека Qt 5 для тестування."
 
 #. leap/gsignond/libgsignond-common0/description
 #. leap/gsignond/libgsignond-common0-32bit/description
-#. tumbleweed/gsignond/libgsignond-common0/description
-#. tumbleweed/gsignond/libgsignond-common0-32bit/description
+#. tumbleweed/gsignond/libgsignond-common1/description
+#. tumbleweed/gsignond/libgsignond-common1-32bit/description
 #, fuzzy
 #| msgid ""
 #| "A high-speed character set detection library\n"
@@ -15524,7 +15527,6 @@ msgstr ""
 "Цей пакунок містить спільну бібліотеку libguess."
 
 #. leap/gsl/libgsl23/description
-#. tumbleweed/gsl/libgsl23/description
 msgid ""
 "The GNU Scientific Library (GSL) is a collection of routines for numerical "
 "computing. The routines are written from scratch by the GSL team in ANSI C "
@@ -15550,7 +15552,6 @@ msgid "A standard C language APIs for BLAS from GNU Scientific Library"
 msgstr ""
 
 #. leap/gsl/libgslcblas0/description
-#. tumbleweed/gsl/libgslcblas0/description
 msgid ""
 "This library provides a native C interface to BLAS routines. This is part of "
 "GNU Scientific Library."
@@ -15580,13 +15581,13 @@ msgid ""
 "This package contains the Gammu SMS daemon shared library."
 msgstr ""
 
-#. leap/gsoap/libgsoap-2_8_65/summary
-#. tumbleweed/gsoap/libgsoap-2_8_65/summary
+#. leap/gsoap/libgsoap-2_8_66/summary
+#. tumbleweed/gsoap/libgsoap-2_8_70/summary
 msgid "Runtime libraries for gSOAP"
 msgstr ""
 
-#. leap/gsoap/libgsoap-2_8_65/description
-#. tumbleweed/gsoap/libgsoap-2_8_65/description
+#. leap/gsoap/libgsoap-2_8_66/description
+#. tumbleweed/gsoap/libgsoap-2_8_70/description
 msgid ""
 "gSOAP is a toolkit for C and C++ server and client Web service applications, "
 "and is responsible for e.g. HTTP request handling and the serialization of "
@@ -15724,6 +15725,29 @@ msgstr ""
 "забезпечує платформу для машинно-незалежного виконання, яка може бути "
 "використана як бібліотека при побудові розширюваних програм. Цей пакунок "
 "містить спільні бібліотеки."
+
+#. leap/guile-cairo/libguile-cairo0/summary
+#. tumbleweed/guile-cairo/libguile-cairo0/summary
+#, fuzzy
+msgid "Guile cairo libary"
+msgstr "Основна бібліотека Plymouth"
+
+#. leap/guile-cairo/libguile-cairo0/description
+#. tumbleweed/guile-cairo/libguile-cairo0/description
+msgid "Libraries for Guile bindings for Cairo."
+msgstr ""
+
+#. leap/guile-ssh/libguile-ssh11/summary
+#. tumbleweed/guile-ssh/libguile-ssh11/summary
+msgid "SSH protocol access from Guile"
+msgstr ""
+
+#. leap/guile-ssh/libguile-ssh11/description
+#. tumbleweed/guile-ssh/libguile-ssh11/description
+msgid ""
+"The shared libraries for guile-ssh, which let you access the SSH protocol "
+"from Guile."
+msgstr ""
 
 #. leap/guile1/libguile1-devel/description
 #. tumbleweed/guile1/libguile1-devel/description
@@ -15863,12 +15887,10 @@ msgid "This package contains the interface to the FOX toolkit for Gwenhywfar."
 msgstr ""
 
 #. leap/gwenhywfar/libgwengui-gtk2-0/summary
-#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/summary
 msgid "Multiplatform Helper Library for Other Libraries -- GTK+ UI Backend"
 msgstr ""
 
 #. leap/gwenhywfar/libgwengui-gtk2-0/description
-#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/description
 msgid ""
 "Gwenhywfar is a base library used to provide OS abstraction functions for "
 "Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
@@ -16237,8 +16259,8 @@ msgid ""
 "-fsanitize=undefined option of the GNU Compiler Collection (GCC)."
 msgstr ""
 
-#. leap/gnuradio/libvolk1_3/description
-#. tumbleweed/gnuradio/libvolk1_3/description
+#. leap/gnuradio/libvolk1_4/description
+#. tumbleweed/gnuradio/libvolk1_4/description
 msgid ""
 "GNU Radio is a collection of software that when combined with minimal "
 "hardware, allows the construction of radios where the actual waveforms "
@@ -16438,11 +16460,6 @@ msgstr ""
 msgid "Python bindings for GlusterFS"
 msgstr ""
 
-#. leap/gnucash/python-gnucash/summary
-#. tumbleweed/gnucash/python-gnucash/summary
-msgid "Python bindings for GnuCash"
-msgstr ""
-
 #. leap/geos/python2-geos/summary
 #. tumbleweed/geos/python2-geos/summary
 msgid "Python bindings for Geometry Engine"
@@ -16549,6 +16566,17 @@ msgstr ""
 msgid "This package provides the python3 bindings for GEIS."
 msgstr ""
 
+#. leap/gnucash/python3-gnucash/summary
+#. tumbleweed/gnucash/python3-gnucash/summary
+msgid "Python bindings for GnuCash"
+msgstr ""
+
+#. leap/gnucash/python3-gnucash/description
+msgid ""
+"This package provides the Python bindings for development of GnuCash, a "
+"personal finance manager, in Python 3."
+msgstr ""
+
 #. leap/gom/python3-gom/summary
 #. tumbleweed/gom/python3-gom/summary
 msgid "Python3 binding for the GObject Dara Mapper"
@@ -16618,6 +16646,22 @@ msgstr ""
 msgid "System user for use by the geoclue service"
 msgstr ""
 
+#. leap/gcab/typelib-1_0-GCab-1_0/summary
+#. tumbleweed/gcab/typelib-1_0-GCab-1_0/summary
+msgid "Introspection bindings for the gcab cabinet file library"
+msgstr ""
+
+#. leap/gcab/typelib-1_0-GCab-1_0/description
+#. tumbleweed/gcab/typelib-1_0-GCab-1_0/description
+msgid ""
+"gcab is a tool and library for manipulating cabinet files.\n"
+"\n"
+"It uses the GObject API and provides GIR bindings. It supports creation of "
+"archives with simple MSZIP compression.\n"
+"\n"
+"This package contains the introspection files."
+msgstr ""
+
 #. leap/gmime2_6/typelib-1_0-GMime-2_6/summary
 #. leap/gmime/typelib-1_0-GMime-3_0/summary
 #. tumbleweed/gmime2_6/typelib-1_0-GMime-2_6/summary
@@ -16641,7 +16685,6 @@ msgid ""
 msgstr ""
 
 #. leap/gpaste/typelib-1_0-GPaste-1_0/summary
-#. tumbleweed/gpaste/typelib-1_0-GPaste-1_0/summary
 msgid "Library for managing clipboard history -- Introspection bindings"
 msgstr ""
 
@@ -16773,7 +16816,6 @@ msgid ""
 msgstr ""
 
 #. leap/gdk-pixbuf/typelib-1_0-GdkPixbuf-2_0/summary
-#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixbuf-2_0/summary
 #, fuzzy
 msgid "Introspection bindins for gdk-pixbuf"
 msgstr "YaST2 — Переклади на данську."
@@ -16825,16 +16867,16 @@ msgid ""
 "with the GDM greeter server."
 msgstr ""
 
-#. leap/gegl-unstable/typelib-1_0-Gegl-0_3/summary
-#, fuzzy
-#| msgid "An image loading library -- Introspection bindings"
-msgid "Generic Graphics Library - Introspection bindings"
-msgstr "Бібліотека завантаження зображень - Прив'язки самоаналізу"
+#. leap/gegl/typelib-1_0-Gegl-0_3/summary
+#. tumbleweed/gegl/typelib-1_0-Gegl-0_4/summary
+msgid "Introspection bindings for the GEGL \"Generic Graphics Library\""
+msgstr ""
 
-#. leap/gegl-unstable/typelib-1_0-Gegl-0_3/description
+#. leap/gegl/typelib-1_0-Gegl-0_3/description
+#. tumbleweed/gegl/typelib-1_0-Gegl-0_4/description
 msgid ""
 "GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl it provides support for a "
+"editing on larger than RAM buffers. Through babl, it provides support for a "
 "wide range of color models and pixel storage formats for input and output.\n"
 "\n"
 "This package provides the GObject Introspection bindings for the libgegl "
@@ -17067,12 +17109,6 @@ msgid ""
 "This package contains the GObject Introspection bindings for the gsignond."
 msgstr "Цей пакунок містить прив'язки Python для бібліотеки Talloc."
 
-#. leap/ufw/summary
-#. tumbleweed/gufw/summary
-#. tumbleweed/ufw/summary
-msgid "Uncomplicated Firewall"
-msgstr ""
-
 #. leap/gnokii/xgnokii/description
 #. tumbleweed/gnokii/xgnokii/description
 msgid ""
@@ -17080,30 +17116,34 @@ msgid ""
 "installed as well."
 msgstr ""
 
-#. tumbleweed/gcab/description
+#. tumbleweed/GeoIP/GeoIP-data/description
 msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
-"\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression.\n"
-"\n"
-"This package provides gcab tool and its manuals."
+"This package does not actually contain any data. It only exists to give "
+"ownership the database files you can fetch using \"geoip-fetch\"."
 msgstr ""
 
-#. tumbleweed/gcab/gcab-devel/summary
-#, fuzzy
-#| msgid "The header files for the lockdev library"
-msgid "Development files for the gcab cabinet file library"
-msgstr "Файли заголовків для бібліотеки lockdev"
+#. tumbleweed/gajim-plugin-omemo/summary
+msgid "Gajim plugin for OMEMO Multi-End Message and Object Encryption"
+msgstr ""
 
-#. tumbleweed/gcab/gcab-devel/description
+#. tumbleweed/gajim-plugin-omemo/description
 msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
+"This plugin adds support to Gajim for the OMEMO Encryption, an XMPP "
+"Extension Protocol (XEP) for secure multi-client end-to-end encryption based "
+"on Double Ratchet and PEP."
+msgstr ""
+
+#. tumbleweed/gamemode/gamemoded/summary
+msgid "The GameMode daemon required by GameMode enabled games"
+msgstr ""
+
+#. tumbleweed/gamemode/gamemoded/description
+msgid ""
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
 "\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression.\n"
-"\n"
-"This package provides development files to build code against libgcab."
+"The GameMode daemon is installed as a D-Bus Service and will start "
+"automatically on first access by a client."
 msgstr ""
 
 #. tumbleweed/gcc/gcc-devel/summary
@@ -17142,12 +17182,23 @@ msgstr ""
 msgid "gcr-ssh-askpass allows an ssh command to callback for a password."
 msgstr ""
 
-#. tumbleweed/gdm/gdmflexiserver/description
-msgid ""
-"The GDMFlexiServer tool interacts with the display manager to enable fast "
-"user switching. This package contains a wrapper that selects the correct "
-"Gdmflexiserver implementation, based on the running display manager."
-msgstr ""
+#. tumbleweed/gdbm/gdbm-devel/summary
+#. tumbleweed/gdbm/gdbm-devel-32bit/summary
+#, fuzzy
+#| msgid "The header files for the lockdev library"
+msgid "Development files for the dbm key/data database library"
+msgstr "Файли заголовків для бібліотеки lockdev"
+
+#. tumbleweed/gdbm/gdbm-lang/summary
+#, fuzzy
+msgid "Translations for package gdbm"
+msgstr "YaST2 — Переклади на данську."
+
+#. tumbleweed/gdbm/gdbm-lang/description
+#, fuzzy
+#| msgid "Provides translations to the package mc"
+msgid "Provides translations for the \"gdbm\" package."
+msgstr "Надає переклади для пакунку mc"
 
 #. tumbleweed/gedit/summary
 msgid "UTF-8 text editor"
@@ -17174,37 +17225,42 @@ msgid ""
 "This subpackage contains the header files for creating gedit plugins."
 msgstr "Цей пакунок містить бібліотеки для IBus"
 
-#. tumbleweed/gegl/description
-#. tumbleweed/gegl/gegl-0_3/description
-#. tumbleweed/gegl/gegl-doc/description
-#. tumbleweed/gegl/libgegl-0_3-0/description
+#. tumbleweed/gemrb/description
 msgid ""
-"GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl, it provides support for a "
-"wide range of color models and pixel storage formats for input and output."
+"GemRB is an implementation of Bioware's Infinity Engine which was written to "
+"support pseudo-3D role playing games based on the Dungeons & Dragons "
+"ruleset.\n"
+"\n"
+"You will need the original game files of Baldur's Gate and the Icewind Dale "
+"series or Planescape: Torment to play."
 msgstr ""
-
-#. tumbleweed/gegl/gegl-devel/summary
-#, fuzzy
-msgid "Development files for the GEGL \"Generic Graphics Library\""
-msgstr "Файли розробки для бібліотеки clucene"
-
-#. tumbleweed/gegl/gegl-devel/description
-msgid ""
-"GEGL provides infratructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl, it provides support for a "
-"wide range of color models and pixel storage formats for input and output."
-msgstr ""
-
-#. tumbleweed/gegl/gegl-doc/summary
-#, fuzzy
-msgid "Documentation for the GEGL \"Generic Graphics Library\""
-msgstr "Файли розробки для бібліотеки clucene"
 
 #. tumbleweed/gfbgraph/gfbgraph-devel/summary
 #, fuzzy
 msgid "Development files for the Facebook Graph API access library"
 msgstr "Файли розробки для бібліотеки clucene"
+
+#. tumbleweed/git-cola/summary
+#, fuzzy
+#| msgid "GUI for rsync"
+msgid "A GUI for Git"
+msgstr "Графічний інтерфейс користувача для rsync"
+
+#. tumbleweed/git-cola/description
+msgid ""
+"git-cola is a graphical user interface for Git that provides a way to "
+"interact with Git repositories."
+msgstr ""
+
+#. tumbleweed/git-sync/summary
+msgid "One-script git synchronization"
+msgstr ""
+
+#. tumbleweed/git-sync/description
+msgid ""
+"This script synchronizes, almost automatically, \"tracking\" repositories "
+"where a nice history is not as crucial as having one at all."
+msgstr ""
 
 #. tumbleweed/glom/summary
 msgid "Database designer and user interface"
@@ -17235,6 +17291,49 @@ msgstr "YaST2 — Переклади на данську."
 #, fuzzy
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"glom\" package."
+msgstr "Надає переклади для пакунку mc"
+
+#. tumbleweed/glslang/glslang-devel/description
+msgid ""
+"glslang is a compiler front end for the OpenGL ES and OpenGL shading "
+"languages. It implements a strict interpretation of the specifications for "
+"these languages.\n"
+"\n"
+"spirv-remap is a utility to improve compression of SPIR-V binary files via "
+"entropy reduction, plus optional stripping of debug information and load/"
+"store optimization. It transforms SPIR-V to SPIR-V, remapping IDs. The "
+"resulting modules have an increased ID range (IDs are not as tightly packed "
+"around zero), but will compress better when multiple modules are compressed "
+"together, since compressor's dictionary can find better cross module "
+"commonality."
+msgstr ""
+
+#. tumbleweed/genius/gnome-genius/summary
+#, fuzzy
+msgid "GNOME interface for Genius, a general purpose calculator"
+msgstr "Файли розробки для бібліотеки clucene"
+
+#. tumbleweed/gpaste/gnome-shell-extension-gpaste/summary
+msgid "GPaste status menu extension for GNOME Shell"
+msgstr ""
+
+#. tumbleweed/gnonograms/summary
+msgid "Program for creating and solving gnonogram puzzles"
+msgstr ""
+
+#. tumbleweed/gnonograms/description
+msgid "An implementation of the Japanese logic puzzle \"Nonograms\"."
+msgstr ""
+
+#. tumbleweed/gnonograms/gnonograms-lang/summary
+#, fuzzy
+msgid "Translations for package gnonograms"
+msgstr "YaST2 — Переклади на данську."
+
+#. tumbleweed/gnonograms/gnonograms-lang/description
+#, fuzzy
+#| msgid "Provides translations to the package mc"
+msgid "Provides translations for the \"gnonograms\" package."
 msgstr "Надає переклади для пакунку mc"
 
 #. tumbleweed/gns3/summary
@@ -17284,6 +17383,65 @@ msgid ""
 "You will need the new GNS3 GUI (gns3-gui repository) to control the server."
 msgstr ""
 
+#. tumbleweed/gnu-cobol/summary
+msgid "A COBOL compiler"
+msgstr ""
+
+#. tumbleweed/gnu-cobol/description
+#. tumbleweed/gnu-cobol/libcob-devel/description
+#. tumbleweed/gnu-cobol/libcob4/description
+msgid ""
+"GnuCOBOL (formerly OpenCOBOL) is a COBOL compiler. cobc translates COBOL to "
+"executable using intermediate C sources, providing full access to nearly all "
+"C libraries."
+msgstr ""
+
+#. tumbleweed/gnuastro/summary
+#, fuzzy
+#| msgid "GNU Zip Compression Utilities"
+msgid "GNU Astronomy Utilities"
+msgstr "Утиліти стиснення GNU Zip"
+
+#. tumbleweed/gnuastro/description
+msgid ""
+"The GNU Astronomy Utilities (Gnuastro) contains various programs and library "
+"functions for the manipulation and analysis of astronomical data."
+msgstr ""
+
+#. tumbleweed/gnuastro/gnuastro-devel/summary
+#, fuzzy
+msgid "Development files for gnuastro"
+msgstr "Файли розробки для Avogadro"
+
+#. tumbleweed/gnuastro/gnuastro-devel/description
+msgid ""
+"Development files required for development with GNU Astronomy Utilities "
+"(Gnuastro)."
+msgstr ""
+
+#. tumbleweed/gnuastro/gnuastro-doc/summary
+#, fuzzy
+msgid "Documentation for the GNU Astromomy Utilities"
+msgstr "Документація для Digikam"
+
+#. tumbleweed/gnuastro/gnuastro-doc/description
+msgid "Additional documentation for the GNU Astromomy Utilities."
+msgstr ""
+
+#. tumbleweed/gnubg/summary
+msgid "Backgammon game with analysis tools and neural network AI"
+msgstr ""
+
+#. tumbleweed/goaccess/summary
+msgid "Apache Web Log Analyzer"
+msgstr ""
+
+#. tumbleweed/goaccess/description
+msgid ""
+"GoAccess is an Apache web log analyzer that provides HTTP statistics for "
+"system administrators that require a visual report on the fly."
+msgstr ""
+
 #. tumbleweed/gob2/summary
 msgid "Preprocessor to Write GObject objects"
 msgstr ""
@@ -17293,6 +17451,62 @@ msgid ""
 "GOB is a preprocessor for making GObject objects with inline C code so that "
 "generated files are not editted. The syntax is inspired by Java, yacc/bison "
 "and lex."
+msgstr ""
+
+#. tumbleweed/gops/summary
+msgid ""
+"A tool to list and diagnose Go processes currently running on your system"
+msgstr ""
+
+#. tumbleweed/gops/description
+msgid ""
+"gops is a command to list and diagnose Go processes currently running on "
+"your system. For processes that starts the diagnostics agent, gops can "
+"report additional information such as the current stack trace, Go version, "
+"memory stats, etc. It is possible to use gops tool both in local and remote "
+"mode."
+msgstr ""
+
+#. tumbleweed/gpaste/gpaste-devel/summary
+#, fuzzy
+msgid "Development files for the gpaste clipboard history manager"
+msgstr "Файли розробки для Avogadro"
+
+#. tumbleweed/gperftools/gperftools-devel-static/summary
+msgid "Static libraries for performance tools for C++"
+msgstr ""
+
+#. tumbleweed/gperftools/gperftools-devel-static/description
+msgid ""
+"The gperftools-devel-static package contains static libraries for developing "
+"applications that use the gperftools package."
+msgstr ""
+
+#. tumbleweed/gpsd/gpsd-clients/summary
+msgid "Example clients for gpsd"
+msgstr ""
+
+#. tumbleweed/gpxsee/summary
+msgid "GPS log file visualization and analysis tool"
+msgstr ""
+
+#. tumbleweed/gpxsee/description
+msgid ""
+"GPXSee is a Qt-based tool for visualizing and analyzing GPX, TCX, FIT, KML, "
+"IGC, NMEA, SLF, LOC, OziExplorer (PLT, RTE, WPT) and Garmin CSV files."
+msgstr ""
+
+#. tumbleweed/grilo-plugins/grilo-plugins-devel/summary
+#, fuzzy
+msgid "Devel package for grilo-plugins"
+msgstr "YaST2 — Переклади на данську."
+
+#. tumbleweed/grilo-plugins/grilo-plugins-devel/description
+msgid ""
+"Grilo is a framework for browsing and searching media content from various "
+"sources using a single API.\n"
+"\n"
+"This package provides development files."
 msgstr ""
 
 #. tumbleweed/grisbi/summary
@@ -17318,6 +17532,45 @@ msgstr "YaST2 — Переклади на данську."
 #| msgid "Provides translations to the package mc"
 msgid "Provides translations for the \"grisbi\" package."
 msgstr "Надає переклади для пакунку mc"
+
+#. tumbleweed/gsl/description
+msgid ""
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages."
+msgstr ""
+
+#. tumbleweed/gsl/gsl-devel/summary
+#, fuzzy
+msgid "Development files for the GNU Scientific Library"
+msgstr "Файли розробки для Avogadro"
+
+#. tumbleweed/gsl/gsl-devel/description
+msgid ""
+"This package contains the headers, static libraries and some documentation "
+"for GSL.\n"
+"\n"
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C, "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages."
+msgstr ""
+
+#. tumbleweed/gsl/gsl-doc/summary
+#, fuzzy
+msgid "Documentation for the GNU Scientific Library"
+msgstr "Файли розробки для бібліотеки clucene"
+
+#. tumbleweed/gsl/gsl-doc/description
+msgid ""
+"This package contains documentation for GSL\n"
+"\n"
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C, "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages."
+msgstr ""
 
 #. tumbleweed/gsound/summary
 msgid "A library for playing system sounds"
@@ -17350,61 +17603,69 @@ msgstr "Спільна бібліотека для програм GPS"
 msgid "Development files for the GTK+ spell checker library"
 msgstr "Файли заголовків для бібліотеки lockdev"
 
-#. tumbleweed/gufw/description
+#. tumbleweed/gwenview5/summary
+#, fuzzy
+#| msgid "Simple Image Viewer for KDE"
+msgid "Image Viewer by KDE"
+msgstr "Простий переглядач зображень для KDE"
+
+#. tumbleweed/gnu-cobol/libcob-devel/summary
+#, fuzzy
+#| msgid "The header files for the lockdev library"
+msgid "Include files for the GnuCOBOL shared library"
+msgstr "Файли заголовків для бібліотеки lockdev"
+
+#. tumbleweed/gnu-cobol/libcob4/summary
+#, fuzzy
+#| msgid "The standard C++ shared library"
+msgid "GnuCOBOL shared library"
+msgstr "Стандартна спільна бібліотека C++"
+
+#. tumbleweed/gamemode/libgamemode-devel/summary
+msgid "Headers for compiling games using GameMode"
+msgstr ""
+
+#. tumbleweed/gamemode/libgamemode-devel/description
 msgid ""
-"An easy, intuitive, way to manage your Linux firewall. It supports common "
-"tasks such as allowing or blocking pre-configured, common p2p, or individual "
-"ports port(s), and many others!"
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
+"\n"
+"This package contains the headers required to compile games with built-in "
+"GameMode support."
 msgstr ""
 
-#. tumbleweed/gufw/gufw-lang/summary
+#. tumbleweed/gamemode/libgamemode0/summary
 #, fuzzy
-msgid "Translations for package gufw"
-msgstr "YaST2 — Переклади на данську."
+#| msgid "GNU Scientific Library"
+msgid "GameMode client library"
+msgstr "Наукова бібліотека GNU"
 
-#. tumbleweed/gufw/gufw-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package mc"
-msgid "Provides translations for the \"gufw\" package."
-msgstr "Надає переклади для пакунку mc"
-
-#. tumbleweed/guile-cairo/summary
-msgid "Guile bindings to Cairo"
-msgstr ""
-
-#. tumbleweed/guile-cairo/description
-msgid "Guile bindings to Cairo library."
-msgstr ""
-
-#. tumbleweed/guile-cairo/guile-cairo-devel/summary
-#, fuzzy
-msgid "Development files for Guile Cairo bindings"
-msgstr "Файли розробки для Avogadro"
-
-#. tumbleweed/guile-cairo/guile-cairo-devel/description
-msgid "Files required to build software using Guile Cairo bindings."
-msgstr ""
-
-#. tumbleweed/guile-charting/summary
-#, fuzzy
-#| msgid "Shared library for GPS applications"
-msgid "Guile library for making charts"
-msgstr "Спільна бібліотека для програм GPS"
-
-#. tumbleweed/guile-charting/description
+#. tumbleweed/gamemode/libgamemode0/description
 msgid ""
-"Guile-Charting is a library to create charts and graphs in Guile. It is thus "
-"far a hack."
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
+"\n"
+"Libgamemode is the client library used by games or libgamemodeauto to talk "
+"to the GameMode daemon."
 msgstr ""
 
-#. tumbleweed/guile-git/summary
-msgid "Guile bindings of libgit2"
+#. tumbleweed/gamemode/libgamemodeauto0/summary
+msgid "Helper library allowing to equip any game with GameMode support"
 msgstr ""
 
-#. tumbleweed/guile-git/description
+#. tumbleweed/gamemode/libgamemodeauto0/description
 msgid ""
-"This package provides Guile bindings to libgit2, a library manipulate "
-"repositories of the Git version control system."
+"GameMode is a daemon/lib combo for Linux that allows games to request a set "
+"of optimisations be temporarily applied to the host OS.\n"
+"\n"
+"Libgamemodeauto allows you to use GameMode with any Game by preloading it "
+"into the game.\n"
+"\n"
+"    LD_PRELOAD=/usr/lib/libgamemodeauto.so.0 ./game\n"
+"\n"
+"For Steam games this can be done by editing the launch options:\n"
+"\n"
+"    LD_PRELOAD=$LD_PRELOAD:/usr/lib/libgamemodeauto.so.0 %command%"
 msgstr ""
 
 #. tumbleweed/gcr/libgck-1-0/summary
@@ -17435,6 +17696,69 @@ msgstr ""
 msgid "Development files for gcr, a library for crypto UI related tasks"
 msgstr "Файли розробки для бібліотеки clucene"
 
+#. tumbleweed/gdbm/libgdbm5/description
+#. tumbleweed/gdbm/libgdbm5-32bit/description
+#, fuzzy
+#| msgid ""
+#| "GNU dbm is a library of database functions that use extensible hashing "
+#| "and work similar to the standard UNIX dbm. These routines are provided to "
+#| "a programmer needing to create and manipulate a hashed database.\n"
+#| "\n"
+#| "The basic use of GDBM is to store key/data pairs in a data file. Each key "
+#| "must be unique and each key is paired with only one data item.\n"
+#| "\n"
+#| "The library provides primitives for storing key/data pairs, searching and "
+#| "retrieving the data by its key and deleting a key along with its data. It "
+#| "also supports sequential iteration over all key/data pairs in a "
+#| "database.\n"
+#| "\n"
+#| "For compatibility with programs using old UNIX dbm functions, the package "
+#| "also provides traditional dbm and ndbm interfaces."
+msgid ""
+"GNU dbm is a library of database functions that use extensible hashing and "
+"work similar to the standard UNIX dbm. These routines are provided to a "
+"programmer needing to create and manipulate a hashed database.\n"
+"\n"
+"The basic use of GDBM is to store key/data pairs in a data file. Each key "
+"must be unique and each key is paired with only one data item.\n"
+"\n"
+"The library provides primitives for storing key/data pairs, searching and "
+"retrieving the data by its key and deleting a key along with its data. It "
+"also supports sequential iteration over all key/data pairs in a database."
+msgstr ""
+"GNU dbm - бібліотека функцій баз даних, які використовують розширюване "
+"хешування і працюють аналогічно стандартному UNIX dbm. Ці процедури "
+"призначені для програміста, яким потрібно створювати і маніпулювати "
+"хешованою базою даних.\n"
+"\n"
+"Основне використання GDBM полягає в зберіганні пар ключ/дані у файлі даних. "
+"Кожен ключ має бути унікальним і кожен ключ працює в парі тільки з одним "
+"елементом даних.\n"
+"\n"
+"Бібліотека надає примітиви для зберігання пар ключ/дані, пошуку і вилучення "
+"даних по ключу і видалення ключа разом з даними. Вона також підтримує "
+"послідовні ітерації по всіх пар ключ/дані в базі даних.\n"
+"\n"
+"Для сумісності з програмами, що використовують старі функції UNIX dbm, "
+"пакунок також надає традиційні інтерфейси dbm та ndbm."
+
+#. tumbleweed/gdbm/libgdbm_compat4/summary
+#. tumbleweed/gdbm/libgdbm_compat4-32bit/summary
+#, fuzzy
+#| msgid "GNU dbm key/data database"
+msgid "GNU dbm key/data database compat wrapper"
+msgstr "База даних „ключ-дані“ GNU dbm"
+
+#. tumbleweed/gdbm/libgdbm_compat4/description
+#. tumbleweed/gdbm/libgdbm_compat4-32bit/description
+msgid ""
+"GNU dbm is a library of database functions that use extensible hashing and "
+"work similar to the standard UNIX dbm. These routines are provided to a "
+"programmer needing to create and manipulate a hashed database.\n"
+"\n"
+"This library is providing compatibility wrappers."
+msgstr ""
+
 #. tumbleweed/gfbgraph/libgfbgraph-0_2-0/summary
 msgid "Facebook Graph API access library"
 msgstr ""
@@ -17463,6 +17787,54 @@ msgid ""
 "This package contains development files to create extensions for glom."
 msgstr ""
 
+#. tumbleweed/glslang/libglslang-suse1/summary
+msgid "OpenGL and OpenGL ES shader front end implementation"
+msgstr ""
+
+#. tumbleweed/glslang/libglslang-suse1/description
+msgid ""
+"glslang is a compiler front end for the OpenGL ES and OpenGL shading "
+"languages. It implements a strict interpretation of the specifications for "
+"these languages."
+msgstr ""
+
+#. tumbleweed/gnuastro/libgnuastro5/summary
+#, fuzzy
+#| msgid "Libraries for ATM"
+msgid "Libraries for the GNU Astronomy Utilities"
+msgstr "Бібліотеки для ATM"
+
+#. tumbleweed/gnuastro/libgnuastro5/description
+msgid ""
+"Libraries for the manipulation and analysis of astronomical data, part of "
+"the GNU Astronomy Utilities (Gnuastro)."
+msgstr ""
+
+#. tumbleweed/gsl/libgsl23/description
+msgid ""
+"The GNU Scientific Library (GSL) is a collection of routines for numerical "
+"computing. The routines are written from scratch by the GSL team in ANSI C "
+"and present an Applications Programming Interface (API) for C programmers, "
+"while allowing wrappers to be written for very high level languages.\n"
+"\n"
+"The library covers the following areas:\n"
+"\n"
+"Complex Numbers - Roots of Polynomials - Special Functions - Vectors and "
+"Matrices - Permutations - Sorting - BLAS Support - Linear Algebra - "
+"Eigensystems - Fast Fourier Transforms - Quadrature - Random Numbers - Quasi-"
+"Random Sequences - Random Distributions - Statistics - Histograms - N-Tuples "
+"- Monte Carlo Integration - Simulated Annealing - Differential Equations - "
+"Interpolation - Numerical Differentiation - Chebyshev Approximation - Series "
+"Acceleration - Discrete Hankel Transforms - Root-Finding - Minimization - "
+"Least-Squares Fitting - Physical Constants - IEEE Floating-Point"
+msgstr ""
+
+#. tumbleweed/gsl/libgslcblas0/description
+msgid ""
+"This library provides a native C interface to BLAS routines. This is part of "
+"the GNU Scientific Library."
+msgstr ""
+
 #. tumbleweed/gsound/libgsound0/description
 msgid ""
 "GSound is a library for playing system sounds. It's designed to be used via "
@@ -17475,14 +17847,46 @@ msgstr ""
 msgid "Spell checker library for GTK+"
 msgstr ""
 
-#. tumbleweed/guile-cairo/libguile-cairo0/summary
-#, fuzzy
-msgid "Guile cairo libary"
-msgstr "Основна бібліотека Plymouth"
-
-#. tumbleweed/guile-cairo/libguile-cairo0/description
-msgid "Libraries for Guile bindings for Cairo."
+#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/summary
+msgid "Multiplatform Helper Library for Other Libraries -- GTK+ 2 UI Backend"
 msgstr ""
+
+#. tumbleweed/gwenhywfar/libgwengui-gtk2-0/description
+msgid ""
+"Gwenhywfar is a base library used to provide OS abstraction functions for "
+"Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
+"needed functions (for example, for handling and parsing of configuration "
+"files, reading and writing of XML files, and interprocess communication).\n"
+"\n"
+"This package provides the GTK+ 2 implementation of the generic UI toolkit."
+msgstr ""
+
+#. tumbleweed/gwenhywfar/libgwengui-gtk3-0/summary
+msgid "Multiplatform Helper Library for Other Libraries -- GTK+ 3 UI Backend"
+msgstr ""
+
+#. tumbleweed/gwenhywfar/libgwengui-gtk3-0/description
+msgid ""
+"Gwenhywfar is a base library used to provide OS abstraction functions for "
+"Linux, FreeBSD, OpenBSD, NetBSD, and Windows. It also includes some often "
+"needed functions (for example, for handling and parsing of configuration "
+"files, reading and writing of XML files, and interprocess communication).\n"
+"\n"
+"This package provides the GTK+ 3 implementation of the generic UI toolkit."
+msgstr ""
+
+#. tumbleweed/grpc/python2-grpcio/summary
+#. tumbleweed/grpc/python3-grpcio/summary
+msgid ""
+"Python language bindings for grpc, a HTTP/2 Remote Procedure Call "
+"implementation"
+msgstr ""
+
+#. tumbleweed/grpc/python2-grpcio/description
+#, fuzzy
+#| msgid "This package contains the python bindings for the Talloc library."
+msgid "This subpackage contains the python2 bindings."
+msgstr "Цей пакунок містить прив'язки Python для бібліотеки Talloc."
 
 #. tumbleweed/gedit/python3-gedit/description
 msgid ""
@@ -17495,23 +17899,27 @@ msgstr ""
 msgid "Database designer and user interface - Python bindings"
 msgstr ""
 
-#. tumbleweed/gcab/typelib-1_0-GCab-1_0/summary
-msgid "Introspection bindings for the gcab cabinet file library"
+#. tumbleweed/gnucash/python3-gnucash/description
+msgid ""
+"This package provides the Python 3 bindings for development of GnuCash, a "
+"personal finance manager."
 msgstr ""
 
-#. tumbleweed/gcab/typelib-1_0-GCab-1_0/description
-msgid ""
-"gcab is a tool and library for manipulating cabinet files.\n"
-"\n"
-"It uses the GObject API and provides GIR bindings. It supports creation of "
-"archives with simple MSZIP compression.\n"
-"\n"
-"This package contains the introspection files."
-msgstr ""
+#. tumbleweed/grpc/python3-grpcio/description
+#, fuzzy
+#| msgid "This package contains the python bindings for the Talloc library."
+msgid "This subpackage contains the python3 bindings."
+msgstr "Цей пакунок містить прив'язки Python для бібліотеки Talloc."
 
 #. tumbleweed/gfbgraph/typelib-1_0-GFBGraph-0_2/summary
 msgid "Introspection bindings for the Facebook Graph API access library"
 msgstr ""
+
+#. tumbleweed/gpaste/typelib-1_0-GPaste-1_0/summary
+#, fuzzy
+#| msgid "Base GObject Introspection Bindings"
+msgid "Introspection bindings for the gpaste clipboard history manager"
+msgstr "Основні прив'язки самоаналізу GObject"
 
 #. tumbleweed/gcr/typelib-1_0-Gck-1/summary
 #, fuzzy
@@ -17527,23 +17935,67 @@ msgstr "Бібліотека на основі GObject для доступу д�
 msgid "Introspection bindings for gcr, a library for crypto UI related tasks"
 msgstr "Діалог запиту користувача для завдань, пов'язаних з шифруванням"
 
-#. tumbleweed/gegl/typelib-1_0-Gegl-0_3/summary
-msgid "Introspection bindings for the GEGL \"Generic Graphics Library\""
-msgstr ""
+#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixbuf-2_0/summary
+#, fuzzy
+msgid "Introspection bindings for gdk-pixbuf"
+msgstr "YaST2 — Переклади на данську."
 
-#. tumbleweed/gegl/typelib-1_0-Gegl-0_3/description
+#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixdata-2_0/summary
+#, fuzzy
+msgid "Introspection bindings for gdk-pixdata"
+msgstr "YaST2 — Переклади на данську."
+
+#. tumbleweed/gdk-pixbuf/typelib-1_0-GdkPixdata-2_0/description
+#, fuzzy
+#| msgid ""
+#| "gdk-pixbuf is an image loading library that can be extended by loadable "
+#| "modules for new image formats. It is used by toolkits such as GTK+ or "
+#| "Clutter.\n"
+#| "\n"
+#| "This package provides the GObject Introspection bindings for gdk-pixbuf."
 msgid ""
-"GEGL provides infrastructure to do demand based cached non destructive image "
-"editing on larger than RAM buffers. Through babl, it provides support for a "
-"wide range of color models and pixel storage formats for input and output.\n"
+"gdk-pixbuf is an image loading library that can be extended by loadable "
+"modules for new image formats. It is used by toolkits such as GTK+ or "
+"Clutter.\n"
 "\n"
-"This package provides the GObject Introspection bindings for the libgegl "
-"library."
+"This package provides the GObject Introspection bindings for gdk-pixdata."
 msgstr ""
+"gdk-pixbuf - це бібліотека завантаження зображень, розширюється за рахунок "
+"додаткових модулів для підтримки нових форматів зображень. Вона "
+"використовується такими інструментами, як GTK+ та Clutter.\n"
+"\n"
+"Цей пакунок містить прив'язки самоаналізу GObject для gdk-pixbuf."
 
 #. tumbleweed/gspell/typelib-1_0-Gspell-1/summary
 msgid "Introspection bindings for the GTK+ spell checker library"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Translations for package gegl-unstable"
+#~ msgstr "YaST2 — Переклади на данську."
+
+#, fuzzy
+#~| msgid "Provides translations to the package mc"
+#~ msgid "Provides translations for the \"gegl-unstable\" package."
+#~ msgstr "Надає переклади для пакунку mc"
+
+#, fuzzy
+#~ msgid "Bash completion for git-annex"
+#~ msgstr "Підтримка завершення bash для systemd"
+
+#, fuzzy
+#~| msgid "An image loading library -- Introspection bindings"
+#~ msgid "Generic Graphics Library - Introspection bindings"
+#~ msgstr "Бібліотека завантаження зображень - Прив'язки самоаналізу"
+
+#, fuzzy
+#~ msgid "Translations for package gufw"
+#~ msgstr "YaST2 — Переклади на данську."
+
+#, fuzzy
+#~| msgid "Provides translations to the package mc"
+#~ msgid "Provides translations for the \"gufw\" package."
+#~ msgstr "Надає переклади для пакунку mc"
 
 #, fuzzy
 #~ msgid "Development files for GEGL, the \"Generic Graphics Library\""

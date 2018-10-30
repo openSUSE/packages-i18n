@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-06 12:26+0000\n"
+"POT-Creation-Date: 2018-10-30 14:08+0000\n"
 "PO-Revision-Date: 2018-02-24 11:06+0000\n"
 "Last-Translator: Andriy Bandura <andriykopanytsia@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -159,16 +159,6 @@ msgstr ""
 "Скрипти і шаблони, необхідні для повторного збирання наявних модулів і "
 "компонентів YaST2 (на ruby та на C++)."
 
-#. leap/yast2-caasp/summary
-#. tumbleweed/yast2-caasp/summary
-msgid "YaST2 - CaaSP Module"
-msgstr "YaST2 - модуль CaaSP"
-
-#. leap/yast2-caasp/description
-#. tumbleweed/yast2-caasp/description
-msgid "Containers as a Service Platform (CaaSP) specific module."
-msgstr "Контейнери як особливий модуль службової платформи (CaaSP)."
-
 #. leap/yast2-cluster/summary
 #. tumbleweed/yast2-cluster/summary
 msgid "Configuration of cluster"
@@ -265,20 +255,6 @@ msgid ""
 msgstr ""
 "Файли даних для yast2-country разом з найбільш часто використовуваними "
 "функціями мовного API (мовний модуль)"
-
-#. leap/yast2-dbus-server/summary
-#. tumbleweed/yast2-dbus-server/summary
-msgid "YaST2 - DBus Server"
-msgstr "YaST2 — Сервер DBus"
-
-#. leap/yast2-dbus-server/description
-#. tumbleweed/yast2-dbus-server/description
-msgid ""
-"This package contains YaST DBus service, it provides DBus access to YaST "
-"components."
-msgstr ""
-"Цей пакунок містить службу YaST DBus, що надає доступ DBus до компонентів "
-"YaST."
 
 #. leap/yast2-devtools/summary
 #. tumbleweed/yast2-devtools/summary
@@ -536,6 +512,16 @@ msgstr ""
 "Цей агент використовується різними модулями YaST2 для роботи з LDAP. Він "
 "дозволяє здійснювати пошук по дереву LDAP і додавати/видаляти/змінювати "
 "записи на сервері LDAP."
+
+#. leap/yast2/yast2-logs/summary
+msgid "Collecting YAST information"
+msgstr ""
+
+#. leap/yast2/yast2-logs/description
+#, fuzzy
+#| msgid "This package contains the openSUSE theme for YaST2."
+msgid "This package contains scripts for handling YAST logs."
+msgstr "Цей пакунок містить тему openSUSE для YaST2."
 
 #. leap/yast2-mail/summary
 #. tumbleweed/yast2-mail/summary
@@ -830,6 +816,18 @@ msgstr ""
 #| msgid "The YaST2 component for configuring the inetd and xinetd daemons."
 msgid "The YaST2 component for configuring Rear - Relax and Recover Backup"
 msgstr "Компонент YaST2 для налаштування фонових служб inetd і xinetd."
+
+#. leap/yast2-registration/summary
+#, fuzzy
+#| msgid "YaST2 - Add-On media installation code"
+msgid "YaST2 - Registration Module"
+msgstr "YaST2 - Код встановлення носіїв з доповненнями"
+
+#. leap/yast2-registration/description
+msgid ""
+"The registration module to register products and/or to fetch an update "
+"source (mirror) automatically."
+msgstr ""
 
 #. leap/yast2-rmt/summary
 #. tumbleweed/yast2-rmt/summary
@@ -1742,14 +1740,14 @@ msgid "YaST2 - Translations for Serbian."
 msgstr ""
 
 #. leap/yast2-trans/yast2-trans-sr-latin/summary
-#. tumbleweed/yast2-trans/yast2-trans-sr-Latn/summary
+#. tumbleweed/yast2-trans/yast2-trans-sr-latin/summary
 #, fuzzy
 #| msgid "YaST2 - German Translations"
 msgid "YaST2 - Serbian (Latin) Translations"
 msgstr "YaST2 — Німецький переклад"
 
 #. leap/yast2-trans/yast2-trans-sr-latin/description
-#. tumbleweed/yast2-trans/yast2-trans-sr-Latn/description
+#. tumbleweed/yast2-trans/yast2-trans-sr-latin/description
 #, fuzzy
 #| msgid "YaST2 - Translations for American English."
 msgid "YaST2 - Translations for Serbian (Latin)."
@@ -2020,6 +2018,30 @@ msgstr ""
 "доступним для YCP-додатків (YCP — це скриптова мова, якою написано більшість "
 "модулів YaST2)."
 
+#. tumbleweed/yast2-boot-server/summary
+#, fuzzy
+#| msgid "YaST2 - Network Configuration"
+msgid "YaST2 - Network Booting and Wake-On-Lan Configuration"
+msgstr "YaST2 — Налаштування мережі"
+
+#. tumbleweed/yast2-boot-server/description
+msgid "YaST2 module for network booting and Wake-On-Lan."
+msgstr ""
+
+#. tumbleweed/yast2-caasp/summary
+msgid "YaST2 - CaaSP Module"
+msgstr "YaST2 - модуль CaaSP"
+
+#. tumbleweed/yast2-caasp/description
+msgid "Containers as a Service Platform (CaaSP) specific module."
+msgstr "Контейнери як особливий модуль службової платформи (CaaSP)."
+
+#. tumbleweed/yast2-crowbar/summary
+#, fuzzy
+#| msgid "Configuration of cluster"
+msgid "Configuration of crowbar"
+msgstr "Налаштування кластера"
+
 #. tumbleweed/yast2-docker/summary
 msgid "YaST2 - GUI for docker management"
 msgstr "YaST2 — GUI для управління docker"
@@ -2027,6 +2049,32 @@ msgstr "YaST2 — GUI для управління docker"
 #. tumbleweed/yast2-docker/description
 msgid "Provides easy to use GUI for running docker containers."
 msgstr "Надає простий у використанні GUI для запуску контейнерів docker."
+
+#. tumbleweed/yast2-samba-provision/summary
+#, fuzzy
+#| msgid "YaST2 - Samba Client Configuration"
+msgid "YaST2 - Samba AD DC provision"
+msgstr "YaST2 - Налаштування клієнта Samba"
+
+#. tumbleweed/yast2-samba-provision/description
+#, fuzzy
+#| msgid ""
+#| "This package contains the YaST2 component for configuration of an iSCSI "
+#| "client."
+msgid ""
+"This package contains the YaST2 component to configure samba as an Active "
+"Directory (TM) Domain Controller."
+msgstr "Цей пакунок містить компонент YaST2 для налаштування клієнта iSCSI."
+
+#~ msgid "YaST2 - DBus Server"
+#~ msgstr "YaST2 — Сервер DBus"
+
+#~ msgid ""
+#~ "This package contains YaST DBus service, it provides DBus access to YaST "
+#~ "components."
+#~ msgstr ""
+#~ "Цей пакунок містить службу YaST DBus, що надає доступ DBus до компонентів "
+#~ "YaST."
 
 #~ msgid "YaST2 - Authentication Server Configuration"
 #~ msgstr "YaST2 - Налаштування сервера розпізнавання"
@@ -2076,11 +2124,6 @@ msgstr "Надає простий у використанні GUI для зап�
 
 #~ msgid "A wizard for creating your own Add-On product"
 #~ msgstr "Майстер створення ваших власних доповнень"
-
-#, fuzzy
-#~| msgid "YaST2 - Add-On media installation code"
-#~ msgid "YaST2 - Registration Module"
-#~ msgstr "YaST2 - Код встановлення носіїв з доповненнями"
 
 #~ msgid "YCP debugger client."
 #~ msgstr "Клієнт зневадника YCP."
