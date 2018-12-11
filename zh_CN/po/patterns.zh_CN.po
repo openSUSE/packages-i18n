@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-30 14:13+0000\n"
-"PO-Revision-Date: 2018-11-03 05:01+0000\n"
+"PO-Revision-Date: 2018-12-11 03:27+0000\n"
 "Last-Translator: Marguerite Su <i@marguerite.su>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
 "i18n/patterns-master/zh_CN/>\n"
@@ -818,20 +818,14 @@ msgstr "HPC 基本计算节点"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minimal software image and mainly runs simulation "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. The pattern HPC "
-#| "libraries should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC modularized libraries' should also be installed."
 msgstr ""
-"计算节点具有极简的软件映像，主要运行模拟程序。此节点上的服务应减少至最低数"
-"量，并且*不得*以自动方式安装节点。另外还应安装软件集 HPC 库。"
+"计算节点由最小化的软件映像构成，主要运行仿真相关的程序。该节点上运行的服务应降低至极限最低数量，并且该节点*必须*以自动化方式安装。另外也应安装 “"
+"HPC 模块化库” 这个软件集。"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
@@ -869,18 +863,12 @@ msgstr "HPC 开发软件包"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the HPC libraries and adds additionally the "
-#| "compilers and includes also the relevant management packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC modularized libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
-"此软件包提供与开发 HPC 应用程序相关的所有软件包。它依赖于 HPC 库，会额外增加"
-"编译器，另外还包含相关的管理软件包。"
+"该软件包提供了全部与 HPC 应用程序开发有关的软件包。它依赖于 “HPC 模块化库” 这个软件集。另外它还涵盖了 GNU 编译器和相关的管理软件包。"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
@@ -889,32 +877,24 @@ msgstr "HPC 模块化库"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in an HPC environment. Especially these libraries allows you to "
-#| "install several MPI flavors in parallel. In order to use this libraries "
-#| "you have them to load first via the module command."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
 "in parallel. In order to use thess libraries one needs to load them via the "
 "module command first."
-msgstr ""
-"此软件包提供所有模块化库，以便可在 HPC 环境中使用这些库。特别是，这些库可让您"
-"并行安装多个 MPI 风格。要使用这些库，您需要先通过模块命令加载它们。"
+msgstr "该软件包提供了全部可用于 HPC 环境中的模块化库。这些库允许并行安装多个 MPI 变种。用户需要先通过模块命令加载后才能够使用这些库。"
 
 #. leap/patterns-hpc/patterns-hpc-workload_server/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-workload_server/summary
 msgid "HPC Workload Manager"
-msgstr ""
+msgstr "HPC 工作量管理器"
 
 #. leap/patterns-hpc/patterns-hpc-workload_server/description
 #. tumbleweed/patterns-hpc/patterns-hpc-workload_server/description
 msgid ""
 "This package provides all the relevant packages for running the central "
 "server component of the slurm workload manager."
-msgstr ""
+msgstr "该软件包提供了全部运行 slurm 工作量管理器核心服务器组件相关的软件包。"
 
 #. leap/patterns-kde/patterns-kde-devel_kde/summary
 msgid "KDE Development"
@@ -1591,10 +1571,8 @@ msgid "x86 Runtime Environment"
 msgstr "x86 运行环境"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/summary
-#, fuzzy
-#| msgid "openSUSE Kubic MicroOS System"
 msgid "openSUSE Kubic MicroOS"
-msgstr "openSUSE Kubic MicroOS 系统"
+msgstr "openSUSE Kubic 迷你系统"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/description
 msgid ""
@@ -1612,174 +1590,131 @@ msgstr "这是 MicroOS 运行时系统。它仅包含了一个极简的多用户
 #. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/category
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/category
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/category
-#, fuzzy
-#| msgid "openSUSE Kubic Stack"
 msgid "openSUSE Kubic"
-msgstr "openSUSE Kubic 系统栈"
+msgstr "openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/summary
 msgid "Alternative Container Runtime"
-msgstr ""
+msgstr "额外的容器运行时"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/description
 msgid "This pattern installs the alternative container runtime packages."
-msgstr ""
+msgstr "该软件集将安装额外的容器运行时软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/summary
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Alternative Packages only for the DVD of openSUSE Kubic"
-msgstr "仅适用于 openSUSE Kubic DVD 的软件包"
+msgstr "仅用于 openSUSE Kubic DVD 的附加软件包"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/description
 msgid "Alternative additonal packages on a openSUSE Kubic DVD."
-msgstr ""
+msgstr "openSUSE Kubic DVD 上的额外附加软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/summary
 msgid "Apparmor Support"
-msgstr ""
+msgstr "Apparmor 支持"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to enable Apparmor on SUSE CaaS "
-#| "Platform or openSUSE Kubic product."
 msgid ""
 "Packages required to enable Apparmor on SUSE CaaS Platform or openSUSE Kubic."
-msgstr ""
-"这些是在 SUSE CaaS 平台或 openSUSE Kubic 产品上启用 Apparmor 所需的软件包。"
+msgstr "在 SUSE CaaS 平台或 openSUSE Kubic 上启用 Apparmor 所需的软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/summary
 msgid "Container Runtime"
-msgstr ""
+msgstr "容器运行时"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/description
 msgid "This pattern installs the default container runtime packages."
-msgstr ""
+msgstr "该软件集将安装默认的容器运行时软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
 msgid "Hardware Support"
-msgstr ""
+msgstr "硬件支持"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to install SUSE CaaS Platform or "
-#| "openSUSE Kubic product on real hardeare."
 msgid ""
 "Packages required to install SUSE CaaS Platform or openSUSE Kubic on real "
 "hardware."
-msgstr ""
-"这些是在实际硬件上安装 SUSE CaaS 平台或 openSUSE Kubic 产品上的所需的软件包。"
+msgstr "在真实硬件上安装 SUSE CaaS 平台或 openSUSE Kubic 所需的软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/summary
 msgid "IMA/EVM Support"
-msgstr ""
+msgstr "IMA/EVM 支持"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to enable IMA/EVM on SUSE CaaS "
-#| "Platform or openSUSE Kubic product."
 msgid ""
 "Packages required to enable IMA/EVM on SUSE CaaS Platform or openSUSE Kubic."
-msgstr ""
-"这些是在 SUSE CaaS 平台或 openSUSE Kubic 产品上启用 IMA/EVM 所需的软件包。"
+msgstr "在 SUSE CaaS 平台或 openSUSE Kubic 上启用 IMA/EVM 所需的软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/summary
 msgid "kubeadm Stack"
-msgstr ""
+msgstr "kubeadm 栈"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/description
 msgid ""
 "This provides a vanilla kubeadm stack. It contains everything needed to run "
 "kubernetes directly on top of MicroOS."
-msgstr ""
+msgstr "该软件集提供了上游的 kubeadm 栈。它涵盖了在迷你系统上直接运行 kubernetes 所需的全部软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE Kubic"
 msgstr "仅适用于 openSUSE Kubic DVD 的软件包"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/description
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Additonal packages on a openSUSE Kubic DVD."
-msgstr "仅适用于 openSUSE Kubic DVD 的软件包"
+msgstr "openSUSE Kubic DVD 上的附加软件包。"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
 msgid "LDAP client"
-msgstr ""
+msgstr "LDAP 客户端"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to enable LDAP client support via "
-#| "sssd on SUSE CaaS Platform or openSUSE Kubic product."
 msgid ""
 "Packages required to enable LDAP client support via sssd on SUSE CaaS "
 "Platform or openSUSE Kubic."
-msgstr ""
-"这些是在 SUSE CaaS 平台或 openSUSE Kubic 产品上启用通过 sssd 支持的 LDAP 客户"
-"端所需的软件包。"
+msgstr "在 SUSE CaaS 平台或 openSUSE Kubic 上通过 sssd 开启 LDAP 客户端支持所需的软件包。"
 
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing devel_basis."
-msgstr "对 base 进行补充的 32 位软件集。"
+msgstr "devel_basis 的 32 位版本的软件集。"
 
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing kvm_server."
 msgid "The 32bit pattern complementing devel_kernel."
-msgstr "KVM 服务器的 32 位模式补充。"
+msgstr "devel_kernel 的 32 位版本的软件集。"
 
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
-#, fuzzy
-#| msgid "KDE Frameworks Development"
 msgid "KDE Frameworks and Plasma Development"
-msgstr "KDE 框架开发"
+msgstr "KDE 框架和 Plasma 开发"
 
 #. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
-#, fuzzy
-#| msgid "Tools and libraries for .NET development using Mono."
 msgid "Tools and libraries for software development using Qt 5."
-msgstr "使用 Mono 进行 .NET 开发所需的工具和库。"
+msgstr "使用 Qt5 进行软件开发所需的工具和库文件。"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde/summary
-#, fuzzy
-#| msgid "KDE Applications - Games"
 msgid "KDE Applications and Plasma 5 Desktop"
-msgstr "KDE 应用程序 - 游戏"
+msgstr "KDE 应用程序和 Plasma 5 桌面"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde/description
-#, fuzzy
-#| msgid "Base packages for the KDE Plasma 5 desktop environment."
 msgid ""
 "Packages providing the Plasma desktop environment and applications from KDE."
-msgstr "KDE Plasma 5 桌面环境的基础软件包。"
+msgstr "该软件包提供了 KDE Plasma 桌面环境和应用程序。"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
 msgid ""
 "KDE software for development (editors, integrated development environments, "
 "and associated tools)."
-msgstr ""
+msgstr "KDE 软件开发软件集（编辑器，集成开发环境和相关工具）。"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_pim/summary
-#, fuzzy
-#| msgid "KDE System"
 msgid "KDE PIM Suite"
-msgstr "KDE 系统"
+msgstr "KDE 个人信息管理套件"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_pim/description
 msgid "The KDE PIM Suite (Kontact, KMail, KOrganizer, ...)."
-msgstr ""
+msgstr "KDE 个人信息管理套件 (Kontact, Kmail, KOrganizer, ...)。"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
-#, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "KDE Plasma 5 Desktop Base"
-msgstr "KDE Plasma 5 桌面"
+msgstr "KDE Plasma 5 基本桌面"
 
 #~ msgid "Read-Only Root Filesystem Tools"
 #~ msgstr "只读根文件系统工具"
