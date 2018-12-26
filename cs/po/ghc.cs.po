@@ -3,19 +3,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-10-30 14:08+0000\n"
-"PO-Revision-Date: 2016-02-02 01:17:11\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2019-01-24 22:52+0000\n"
+"Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
+"Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
+"ghc-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.3\n"
 
 #. leap/ghc/summary
 #. tumbleweed/ghc/summary
 msgid "The Glorious Glasgow Haskell Compiler"
-msgstr ""
+msgstr "Slavný glasgowský překladač Haskell"
 
 #. leap/ghc/description
 #. tumbleweed/ghc/description
@@ -36,10 +38,23 @@ msgid ""
 "information, links to research groups) are available from the Haskell home "
 "page at <http://www.haskell.org/>."
 msgstr ""
+"Haskell je standardní čistě funkční programovací jazyk; jeho současná verze "
+"je Haskell 98, schválená v prosinci 1998.\n"
+"\n"
+"GHC (Glasgow Haskell Compiler) je moderní, pokročilá programovací základna "
+"pro Haskell. Obsahuje optimalizační překladač generující dobrý kód vhodný "
+"pro řadu platforem, dále interaktivní systém pro praktický, rychlý vývoj.  "
+"Distribuce obsahuje i funkce profilující potřebu prostoru a času, velkou "
+"kolekci knihoven a podporu mnoha rozšíření jazyka, včetně paralelismu, "
+"zpracování výjimek a rozhraní pro jiné jazyky (C, C++, atd.).\n"
+"\n"
+"Z domovské stránky <http://www.haskell.org/> je dostupné množství prostředků "
+"Haskell (návodů, knihoven, specifikací, dokumentace, překladačů, interpretů, "
+"referencí, kontaktních informací, odkazů na výzkumné skupiny)."
 
 #. leap/ghc-AC-Vector/summary
 msgid "Efficient geometric vectors and transformations"
-msgstr ""
+msgstr "Efektivní geometrické vektory a transformace"
 
 #. leap/ghc-AC-Vector/description
 msgid ""
@@ -53,20 +68,27 @@ msgid ""
 "* Fixed a stupid bug in 'union'. Until now, the function could sometimes "
 "return gibberish answers. Hopefully this is now fixed."
 msgstr ""
+"Tato knihovna Haskell implementuje několik malých typů vektorů s poli "
+"'Double', s typy odlišnými pro každou velikost vektoru a třídu typů pro "
+"obecné zpracování vektorů. (Ačkoli je tento balíček zařazen do \"grafické\" "
+"kategorie, neobsahuje žádné grafické funkce. Obsahuje pouze datové struktury "
+"užitečné pro práci s grafikou.)\n"
+"\n"
+"Změny: \n"
+"* Opravena stupidní chyba v 'union'. Funkce mohla dosud občas vrátit "
+"nesmyslý výsledek. Snad je to už opraveno."
 
 #. leap/ghc-AC-Vector/ghc-AC-Vector-devel/summary
-#, fuzzy
 msgid "Haskell AC-Vector library development files"
-msgstr "Vývojové soubory pro Evolution Data Server"
+msgstr "Vývojové soubory knihovny Haskell AC-Vector"
 
 #. leap/ghc-AC-Vector/ghc-AC-Vector-devel/description
-#, fuzzy
 msgid "This package provides the Haskell AC-Vector library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory knihovny Haskell AC-Vector."
 
 #. leap/ghc-ALUT/summary
 msgid "A binding for the OpenAL Utility Toolkit"
-msgstr ""
+msgstr "Vazby pro sadu nástrojů programu OpenAL"
 
 #. leap/ghc-ALUT/description
 msgid ""
@@ -76,20 +98,23 @@ msgid ""
 "based, please see: <http://distro.ibiblio.org/rootlinux/rootlinux-ports/more/"
 "freealut/freealut-1.1.0/doc/alut.html>."
 msgstr ""
+"Vazba Haskell pro sadu nástrojů programu OpenAL, která tvoří správu kontextů "
+"OpenAL, čte zvuky v mnoha formátech a velmi snadno vytváří tvary vln. Více "
+"informací o C-knihovně, na níž je tato vazba založena, najdete na:\n"
+"<http://distro.ibiblio.org/rootlinux/rootlinux-ports/more/freealut/"
+"freealut-1.1.0/doc/alut.html>."
 
 #. leap/ghc-ALUT/ghc-ALUT-devel/summary
-#, fuzzy
 msgid "Haskell ALUT library development files"
-msgstr "Vývojové soubory pro Evolution Data Server"
+msgstr "Vývojové soubory knihovny Haskell ALUT"
 
 #. leap/ghc-ALUT/ghc-ALUT-devel/description
-#, fuzzy
 msgid "This package provides the Haskell ALUT library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje vývojové soubory knihovny Haskell ALUT."
 
 #. leap/ghc-BlastHTTP/summary
 msgid "Libary to interface with the NCBI blast REST interface"
-msgstr ""
+msgstr "Knihovna ke spojení s rozhraním NCBI blast REST"
 
 #. leap/ghc-BlastHTTP/description
 msgid ""
@@ -106,20 +131,28 @@ msgid ""
 "If you plan to submit more than 20 searches in one session, please look up "
 "the Usage Guidelines in the webservice information."
 msgstr ""
+"Hledá zadanou nukleotidovou nebo proteinovou sekvenci pomocí služby NCBI "
+"Blast REST a vrací výsledný blast ve tvaru XML s datovým typem BlastResult.\n"
+"\n"
+"Další informace o BLAST viz: <http://blast.ncbi.nlm.nih.gov/Blast.cgi>.\n"
+"\n"
+"Informace o webové službě NCBI viz: <http://www.ncbi.nlm.nih.gov/BLAST/"
+"developer.shtml>.\n"
+"\n"
+"Chcete-li předložit v jedné relaci více než 20 hledání, přečtěte si Usage "
+"Guidelines (způsob použití) v informacích webové služby."
 
 #. leap/ghc-BlastHTTP/ghc-BlastHTTP-devel/summary
-#, fuzzy
 msgid "Haskell BlastHTTP library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell BlastHTTP"
 
 #. leap/ghc-BlastHTTP/ghc-BlastHTTP-devel/description
-#, fuzzy
 msgid "This package provides the Haskell BlastHTTP library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory pro vývoj knihovny Haskell BlastHTTP."
 
 #. leap/ghc-Boolean/summary
 msgid "Generalized booleans and numbers"
-msgstr ""
+msgstr "Zobecněné booleány a čísla"
 
 #. leap/ghc-Boolean/description
 msgid ""
@@ -131,65 +164,66 @@ msgid ""
 "\n"
 "Copyright 2009-2013 Conal Elliott; BSD3 license."
 msgstr ""
+"Některé třídy pro všeobecné booleovské operace. Počínaje 0.10.0 používá "
+"tento balíček rodiny typů. Až do verze 0.0.2 používal MPTC s funkčními "
+"závislostmi. Děkuji Andymu Gillovi za návrhy a pomoc se změnou. Rovněž "
+"děkuji Alexi Horsmanovi za Data.Boolean.Overload a Janu Brackerovi za "
+"Data.Boolean.Numbers.\n"
+"\n"
+"© 2009-2013 Conal Elliott; licence BSD3."
 
 #. leap/ghc-Boolean/ghc-Boolean-devel/summary
-#, fuzzy
 msgid "Haskell Boolean library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell Boolean"
 
 #. leap/ghc-Boolean/ghc-Boolean-devel/description
-#, fuzzy
 msgid "This package provides the Haskell Boolean library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory pro vývoj knihovny Haskell Boolean."
 
 #. leap/ghc-BoundedChan/summary
-#, fuzzy
 msgid "Implementation of bounded channels"
-msgstr "Implementace klientské části specifikace HBCI "
+msgstr "Implementace omezených kanálů"
 
 #. leap/ghc-BoundedChan/description
 msgid ""
 "This library introduces BoundedChan. BoundedChans differ from Chans in that "
 "they are guaranteed to contain no more than a certain number of elements."
 msgstr ""
+"Tato knihovna uvádí BoundedChan. Tyto Omezené kanály se liší od Chans "
+"(kanálů) tím, že obsahují zaručeně nejvýše stanovené množství prvků."
 
 #. leap/ghc-BoundedChan/ghc-BoundedChan-devel/summary
-#, fuzzy
 msgid "Haskell BoundedChan library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell BoundedChan"
 
 #. leap/ghc-BoundedChan/ghc-BoundedChan-devel/description
-#, fuzzy
 msgid ""
 "This package provides the Haskell BoundedChan library development files."
-msgstr "Hlavičky a vývojářské knihovny pro fribidi"
+msgstr "Tento balíček obsahuje soubory pro vývoj knihovny Haskell BoundedChan."
 
 #. leap/ghc/ghc-Cabal/summary
 #. tumbleweed/ghc/ghc-Cabal/summary
 msgid "Haskell Cabal library"
-msgstr ""
+msgstr "Knihovna Haskell Cabal"
 
 #. leap/ghc/ghc-Cabal/description
 #. tumbleweed/ghc/ghc-Cabal/description
-#, fuzzy
 msgid "This package provides the Haskell Cabal library."
-msgstr "Tento balík obsahuje knihovnu libsmbclient."
+msgstr "Tento balíček obsahuje knihovnu Haskell Cabal."
 
 #. leap/ghc/ghc-Cabal-devel/summary
 #. tumbleweed/ghc/ghc-Cabal-devel/summary
-#, fuzzy
 msgid "Haskell Cabal library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell Cabal"
 
 #. leap/ghc/ghc-Cabal-devel/description
 #. tumbleweed/ghc/ghc-Cabal-devel/description
-#, fuzzy
 msgid "This package provides the Haskell Cabal library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory pro vývoj knihovny Haskell Cabal."
 
 #. leap/ghc-ChannelT/summary
 msgid "Generalized stream processors"
-msgstr ""
+msgstr "Zobecněné procesory streamu"
 
 #. leap/ghc-ChannelT/description
 msgid ""
@@ -198,21 +232,22 @@ msgid ""
 "exploring a particular corner of the design space of streaming IO (and other "
 "related tasks) in Haskell."
 msgstr ""
+"Vzájemné zobecnění <https://hackage.haskell.org/package/pipes pipes> a "
+"<https://hackage.haskell.org/package/machines machines>; knihovna pro výzkum "
+"specifické části prostoru návrhu streamovacího IO (a dalších souvisejících "
+"úkolů) v Haskellu."
 
 #. leap/ghc-ChannelT/ghc-ChannelT-devel/summary
-#, fuzzy
 msgid "Haskell ChannelT library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell ChannelT"
 
 #. leap/ghc-ChannelT/ghc-ChannelT-devel/description
-#, fuzzy
 msgid "This package provides the Haskell ChannelT library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory pro vývoj knihovny Haskell ChannelT."
 
 #. leap/ghc-Chart/summary
-#, fuzzy
 msgid "A library for generating 2D Charts and Plots"
-msgstr "Knihovna pro konfiguraci fontů"
+msgstr "Knihovna pro generování dvourozměrných diagramů a grafů"
 
 #. leap/ghc-Chart/description
 msgid ""
@@ -221,58 +256,57 @@ msgid ""
 "(<http://hackage.haskell.org/package/Chart-diagrams>). Documentation: "
 "https://github.com/timbod7/haskell-chart/wiki."
 msgstr ""
+"Knihovna pro generování dvourozměrných diagramů a grafů, se zázemím "
+"poskytnutým Cairo (<http://hackage.haskell.org/package/Chart-cairo>) a "
+"Diagrams (<http://hackage.haskell.org/package/Chart-diagrams>). Dokumentace: "
+"https://github.com/timbod7/haskell-chart/wiki."
 
 #. leap/ghc-Chart-cairo/summary
 msgid "Cairo backend for Charts"
-msgstr ""
+msgstr "Zázemí Cairo pro Charts"
 
 #. leap/ghc-Chart-cairo/description
 msgid "Cairo backend for Charts."
-msgstr ""
+msgstr "Zázemí Cairo pro Charts."
 
 #. leap/ghc-Chart-cairo/ghc-Chart-cairo-devel/summary
-#, fuzzy
 msgid "Haskell Chart-cairo library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell Chart-cairo"
 
 #. leap/ghc-Chart-cairo/ghc-Chart-cairo-devel/description
-#, fuzzy
 msgid ""
 "This package provides the Haskell Chart-cairo library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory pro vývoj knihovny Haskell Chart-cairo."
 
 #. leap/ghc-Chart/ghc-Chart-devel/summary
-#, fuzzy
 msgid "Haskell Chart library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell Chart"
 
 #. leap/ghc-Chart/ghc-Chart-devel/description
-#, fuzzy
 msgid "This package provides the Haskell Chart library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory pro vývoj knihovny Haskell Chart."
 
 #. leap/ghc-Chart-diagrams/summary
 msgid "Diagrams backend for Charts"
-msgstr ""
+msgstr "Diagramové zázemí pro Charts"
 
 #. leap/ghc-Chart-diagrams/description
 msgid "Diagrams backend for Charts."
-msgstr ""
+msgstr "Diagramové zázemí pro Charts."
 
 #. leap/ghc-Chart-diagrams/ghc-Chart-diagrams-devel/summary
-#, fuzzy
 msgid "Haskell Chart-diagrams library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory pro vývoj knihovny Haskell Chart-diagramy"
 
 #. leap/ghc-Chart-diagrams/ghc-Chart-diagrams-devel/description
-#, fuzzy
 msgid ""
 "This package provides the Haskell Chart-diagrams library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr ""
+"Tento balíček obsahuje soubory pro vývoj knihovny Haskell Chart-diagramy."
 
 #. leap/ghc-ChasingBottoms/summary
 msgid "For testing partial and infinite values"
-msgstr ""
+msgstr "Pro testování parciálních a infinitních hodnot"
 
 #. leap/ghc-ChasingBottoms/description
 msgid ""
@@ -360,21 +394,103 @@ msgid ""
 "functions require preemptive scheduling, and most of the rest requires 'Data."
 "Generics'; 'isBottom' only requires exceptions, though."
 msgstr ""
+"Potřebujete někdy testovat kód obsahující dolní limity [bottom] (např. "
+"volání 'chybové' / 'error' funkce), nebo kód obsahující infinitní hodnoty? "
+"Pak Vám tato knihovna může být užitečná.\n"
+"\n"
+"Obvykle je snadné získat přehled dolních limitů zobrazením hodnoty a "
+"čekáním, kolik se toho vytiskne, než se vyskytne první výjimka. To však brzy "
+"unaví nebo se těžko automatizuje např. pomocí QuickCheck "
+"(<http://www.cse.chalmers.se/~rjmh/QuickCheck/>). Pomocí této knihovny "
+"můžete jednoduše testovat, jak ukazují následující příklady.\n"
+"\n"
+"Test výslovně dolních limitů:\n"
+"\n"
+"> > isBottom (head []) > True\n"
+"\n"
+"> > isBottom bottom > True\n"
+"\n"
+"> > isBottom (_ -> bottom) > False\n"
+"\n"
+"> > isBottom (bottom, bottom) > False\n"
+"\n"
+"Srovnání finitních, parciálních hodnot:\n"
+"\n"
+"> > ((bottom, 3) :: (Bool, Int)) ==! (bottom, 2+5-4) > True\n"
+"\n"
+"> > ((bottom, bottom) :: (Bool, Int)) <! (bottom, 8) > True\n"
+"\n"
+"Zobrazení parciálních a infinitních hodnot ('\\/!' je sjednocení a '/\\!' je "
+"shoda):\n"
+"\n"
+"> > approxShow 4 $ (True, bottom) /! (bottom, 'b') > \"Just (True, 'b')\"\n"
+"\n"
+"> > approxShow 4 $ (True, bottom) /! (bottom, 'b') > \"(_|_, _|_)\"\n"
+"\n"
+"> > approxShow 4 $ ([1..] :: [Int]) > \"[1, 2, 3, _\"\n"
+"\n"
+"> > approxShow 4 $ (cycle [bottom] :: [Bool]) > \"[_|_, _|_, _|_, _\"\n"
+"\n"
+"Přibližné porovnání infinitních, parciálních hodnot:\n"
+"\n"
+"> > approx 100 [2,4..] ==! approx 100 (filter even [1..] :: [Int]) > True\n"
+"\n"
+"> > approx 100 [2,4..] /=! approx 100 (filter even [bottom..] :: [Int]) > "
+"True\n"
+"\n"
+"Kód výše spoléhá na to, že 'bottom', tak jako chyby 'error \"...\"', "
+"'undefined' a chyba souhlasu s šablonou, vedou k výjimkám. Někdy však jde o "
+"správné, ale nekončící výpočty, jako v následujícím příkladu, a pak je "
+"dobré, když lze uplatnit time-out:\n"
+"\n"
+"> > timeOut' 1 (reverse [1..5]) > Value [5,4,3,2,1]\n"
+"\n"
+"> > timeOut' 1 (reverse [1..]) > NonTermination\n"
+"\n"
+"Funkci time-out lze použít jako \"pomalé\" výpočty jako u spodních limitů "
+"[bottom]:\n"
+"\n"
+"' > let tweak = Tweak &#x7b; approxDepth = Just 5, timeOutLimit = Just 2 "
+"&#x7d; > semanticEq tweak (reverse [1..], [1..]) (bottom :: [Int], [1..] :: "
+"[Int]) True '\n"
+"\n"
+"' > let tweak = noTweak &#x7b; timeOutLimit = Just 2 &#x7d; > semanticJoin "
+"tweak (reverse [1..], True) ([] :: [Int], bottom) Just ([],True) '\n"
+"\n"
+"To ovšem může být nebezpečné:\n"
+"\n"
+"' > let tweak = noTweak &#x7b; timeOutLimit = Just 0 &#x7d; > semanticEq "
+"tweak (reverse [1..100000000]) (bottom :: [Integer]) True '\n"
+"\n"
+"Time-outy lze aplikovat i na výpočty 'IO':\n"
+"\n"
+"> > let primes () = unfoldr ((x:xs) -> Just (x, filter ((/= 0) . (`mod` x)) "
+"xs)) [2..] > > timeOutMicro 100 (print $ primes ()) > [2,NonTermination > > "
+"timeOutMicro 10000 (print $ take 10 $ primes ()) > "
+"[2,3,5,7,11,13,17,19,23,29] > Value ()\n"
+"\n"
+"Základní teorie a více příkladů použití QuickCheck najdete v článku \""
+"Chasing Bottoms, A Case Study in Program Verification in the Presence of "
+"Partial and Infinite Values\" (<http://www.cse.chalmers.se/~nad/publications/"
+"danielsson-jansson-mpc2004.html>).\n"
+"\n"
+"Kód byl testován pomocí GHC. Většinu částí lze patrně přenést na jiné "
+"kompilátory Haskell, což by si však vyžádalo další práci. Funkce 'TimeOut' "
+"vyžadují preemptivní plánování a většina ostatních vyžaduje 'Data.Generics'; "
+"ale 'isBottom' vyžaduje jen výjimky."
 
 #. leap/ghc-ChasingBottoms/ghc-ChasingBottoms-devel/summary
-#, fuzzy
 msgid "Haskell ChasingBottoms library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory vývoje knihovny Haskell ChasingBottoms"
 
 #. leap/ghc-ChasingBottoms/ghc-ChasingBottoms-devel/description
-#, fuzzy
 msgid ""
 "This package provides the Haskell ChasingBottoms library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory vývoje knihovny Haskell ChasingBottoms."
 
 #. leap/ghc-Clipboard/summary
 msgid "System clipboard interface"
-msgstr ""
+msgstr "Rozhraní systémové schránky"
 
 #. leap/ghc-Clipboard/description
 msgid ""
@@ -401,20 +517,41 @@ msgid ""
 "install it by 'sudo apt-get install libxrandr-dev' (or the equivalent on "
 "your system)."
 msgstr ""
+"/Clipboard/ je knihovna pro snadný přístup k systémové schránce [clipboard] "
+"s přídatnou podporou Unicode. Aktuálně je pouze na systémech Windows a GNU/"
+"Linux (X11).\n"
+"\n"
+"Napíšete-li například:\n"
+"\n"
+"> $ setClipboardString \"Hello, World!\"\n"
+"\n"
+"dostanete tím '\"Hello, World!\"' do schránky systému a můžete ho potom "
+"vložit [paste], kamkoli chcete.\n"
+"\n"
+"Napíšete-li:\n"
+"\n"
+"> $ modifyClipboardString reverse\n"
+"\n"
+"budete mít ve schránce '\"!dlroW ,olleH\"'. Takže:\n"
+"\n"
+"> $ getClipboardString > \"!dlroW ,olleH\"\n"
+"\n"
+"Další verze X11 závisí na balíčku 'X11', takže budete při kompilaci "
+"potřebovat přístup systému k vývojové knihovně X11. Můžete ji instalovat "
+"příkazem 'sudo apt-get install libxrandr-dev' (nebo ekvivalentem toho "
+"příkazu ve Vašem systému)."
 
 #. leap/ghc-Clipboard/ghc-Clipboard-devel/summary
-#, fuzzy
 msgid "Haskell Clipboard library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory vývojové knihovny Haskell Clipboard"
 
 #. leap/ghc-Clipboard/ghc-Clipboard-devel/description
-#, fuzzy
 msgid "This package provides the Haskell Clipboard library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory vývojové knihovny Haskell Clipboard."
 
 #. leap/ghc-ClustalParser/summary
 msgid "Libary for parsing Clustal tools output"
-msgstr ""
+msgstr "Knihovna pro zpracování výstupu bástrojů Clustal"
 
 #. leap/ghc-ClustalParser/description
 msgid ""
@@ -433,22 +570,33 @@ msgid ""
 "and produces ,among others, clustal output. It is part of infernal <http://"
 "infernal.janelia.org/>."
 msgstr ""
+"V současnosti obsahuje rozkladače [parsery] a datové typy pro: clustalw2, "
+"clustalo, mlocarna, cmalign\n"
+"\n"
+"Nástroje Clustal jsou prostředky vyrovnání vícesekvence určený pro "
+"biologické sekvence jako DNA, RNA a bílkoviny. Další úúdaje o nástrojích "
+"Clustal viz <http://www.clustal.org/>.\n"
+"\n"
+"Mlocarna je nástroj pro více sekvenčních vyrovnávání pro sekvence RNA se "
+"sekundární strukturou. Další úúdaje o nástroji Mlocarna viz "
+"<http://www.bioinf.uni-freiburg.de/Software/LocARNA/>.\n"
+"\n"
+"Cmalign je program pro vícesekvenční vyrovnávací sekvence založený na "
+"modelech RNA a mimo jiné produkuje výstup Clustal. Je částí ďábelského "
+"<http://infernal.janelia.org/>."
 
 #. leap/ghc-ClustalParser/ghc-ClustalParser-devel/summary
-#, fuzzy
 msgid "Haskell ClustalParser library development files"
-msgstr "GNU Scientific Library"
+msgstr "Soubory vývojové knihovny Haskell ClustalParser"
 
 #. leap/ghc-ClustalParser/ghc-ClustalParser-devel/description
-#, fuzzy
 msgid ""
 "This package provides the Haskell ClustalParser library development files."
-msgstr "Knihovny a hlavičkové soubory pro cyrus imapd"
+msgstr "Tento balíček obsahuje soubory vývojové knihovny Haskell ClustalParser."
 
 #. leap/ghc-ConfigFile/summary
-#, fuzzy
 msgid "Configuration file reading & writing"
-msgstr "Konfigurační nástroj pro imlib"
+msgstr "Čtení a zápis konfiguračního souboru"
 
 #. leap/ghc-ConfigFile/description
 msgid ""
