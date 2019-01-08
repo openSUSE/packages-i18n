@@ -13,17 +13,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2018-10-30 14:13+0000\n"
-"PO-Revision-Date: 2018-06-02 21:05+0000\n"
-"Last-Translator: Alex Minton <alex239@gmail.com>\n"
+"PO-Revision-Date: 2019-01-12 21:19+0000\n"
+"Last-Translator: Dmitry Khudorozhkov <drhoo777@gmail.com>\n"
 "Language-Team: Russian <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.3\n"
 
 #. leap-nonoss/patterns-non_oss/summary
 #. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/summary
@@ -41,10 +41,8 @@ msgstr "Проприетарные пакеты, не имеющие откры�
 #. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/category
 #. tumbleweed-nonoss/patterns-non_oss/category
 #. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/category
-#, fuzzy
-#| msgid "Office Software"
 msgid "Proprietary Software"
-msgstr "Офисные программы"
+msgstr "Несвободные программы"
 
 #. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/description
 #. tumbleweed-nonoss/patterns-non_oss/patterns-non_oss_opt/description
@@ -258,21 +256,18 @@ msgstr "32-разрядный шаблон, который дополняет sw
 
 #. leap/patterns-base/patterns-base-transactional_base/summary
 #. tumbleweed/patterns-base/patterns-base-transactional_base/summary
-#, fuzzy
-#| msgid "Enhanced Base System"
 msgid "Transactional Base System"
-msgstr "Расширенная базовая система"
+msgstr "Транзакционная базовая система"
 
 #. leap/patterns-base/patterns-base-transactional_base/description
 #. tumbleweed/patterns-base/patterns-base-transactional_base/description
-#, fuzzy
-#| msgid "Tools & Update Stack for systems with a read-only root filesystem."
 msgid ""
 "This is the base system for a host updated by Transactional Updates. "
 "Includes Tools for systems with a read-only root filesystem."
 msgstr ""
-"Инструменты и стек обновления для систем с корневой файловой системой только "
-"для чтения."
+"Это базовая система для компьютера, обновляемого транзакционными "
+"обновлениями. Включает инструменты для систем с корневой файловой системой "
+"только для чтения."
 
 #. leap/patterns-base/patterns-base-update_test/summary
 #. tumbleweed/patterns-base/patterns-base-update_test/summary
@@ -870,22 +865,16 @@ msgstr "Базовый вычислительный узел HPC"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node has a minimal software image and mainly runs simulation "
-#| "programs. Services on this node should be reduced to a bare minimum and "
-#| "the node *must* be installed in a automatic manner. The pattern HPC "
-#| "libraries should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC modularized libraries' should also be installed."
 msgstr ""
-"У вычислительного узла минимальный набор ПО, в основном на нём запускаются "
-"программы симуляции. На таком узле должен быть абсолютный минимум служб и "
-"установка должна производиться в автоматическом режиме. Также необходимо "
-"установить шаблон «Библиотеки HPC»."
+"Вычислительный узел включает минимальный программный образ и в основном на "
+"нём запускаются программы симуляции. На таком узле должен быть абсолютный "
+"минимум служб и установка *должна* производиться в автоматическом режиме. "
+"Также необходимо установить шаблон «Модульные библиотеки HPC»."
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
@@ -923,19 +912,14 @@ msgstr "Пакеты разработки для HPC"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the HPC libraries and adds additionally the "
-#| "compilers and includes also the relevant management packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC modularized libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 "Этот пакет предоставляет всё необходимое для разработки HPC-приложений. Он "
-"зависит от библиотек HPC и содержит дополнительные компиляторы и пакеты "
-"управления."
+"зависит от шаблона «Модульные библиотеки HPC» и содержит дополнительные "
+"компиляторы GNU и соответствующие пакеты управления."
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
@@ -944,27 +928,21 @@ msgstr "Модульные библиотеки HPC"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in an HPC environment. Especially these libraries allows you to "
-#| "install several MPI flavors in parallel. In order to use this libraries "
-#| "you have them to load first via the module command."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
 "in parallel. In order to use thess libraries one needs to load them via the "
 "module command first."
 msgstr ""
-"Этот пакет предоставляет все модуляризированные библиотеки для истользования "
-"в HPC-окружении. В частности эти библиотеки позволяют установить несколько "
-"выпусков MPI параллельно. Чтобы использовать эти библиотеки, их сперва нужно "
-"загрузить с помощью команды module."
+"Этот пакет предоставляет все модульные библиотеки для использования в HPC-"
+"окружении. Эти библиотеки позволяют установить несколько выпусков MPI "
+"параллельно. Чтобы использовать эти библиотеки, их сперва нужно загрузить с "
+"помощью команды module."
 
 #. leap/patterns-hpc/patterns-hpc-workload_server/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-workload_server/summary
 msgid "HPC Workload Manager"
-msgstr ""
+msgstr "Диспетчер рабочей нагрузки HPC"
 
 #. leap/patterns-hpc/patterns-hpc-workload_server/description
 #. tumbleweed/patterns-hpc/patterns-hpc-workload_server/description
@@ -972,6 +950,8 @@ msgid ""
 "This package provides all the relevant packages for running the central "
 "server component of the slurm workload manager."
 msgstr ""
+"Этот пакет предоставляет все соответствующие пакеты для запуска компонента "
+"центрального сервера диспетчера рабочей нагрузки slurm."
 
 #. leap/patterns-kde/patterns-kde-devel_kde/summary
 msgid "KDE Development"
@@ -1672,10 +1652,8 @@ msgid "x86 Runtime Environment"
 msgstr "Среда выполнения x86"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/summary
-#, fuzzy
-#| msgid "openSUSE Kubic MicroOS System"
 msgid "openSUSE Kubic MicroOS"
-msgstr "Система openSUSE Kubic MicroOS"
+msgstr "openSUSE Kubic MicroOS"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/description
 msgid ""
@@ -1695,175 +1673,147 @@ msgstr ""
 #. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/category
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/category
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/category
-#, fuzzy
-#| msgid "openSUSE Kubic Stack"
 msgid "openSUSE Kubic"
-msgstr "Стек openSUSE Kubic"
+msgstr "openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/summary
 msgid "Alternative Container Runtime"
-msgstr ""
+msgstr "Альтернативная среда времени выполнения для контейнеров"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/description
 msgid "This pattern installs the alternative container runtime packages."
 msgstr ""
+"Этот шаблон устанавливает пакеты альтернативной среды времени выполнения для "
+"контейнеров."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/summary
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Alternative Packages only for the DVD of openSUSE Kubic"
-msgstr "Пакеты только для DVD openSUSE Kubic"
+msgstr "Альтернативные пакеты только для DVD openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/description
 msgid "Alternative additonal packages on a openSUSE Kubic DVD."
-msgstr ""
+msgstr "Альтернативные дополнительные пакеты на DVD openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/summary
 msgid "Apparmor Support"
-msgstr ""
+msgstr "Поддержка Apparmor"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-apparmor/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to enable Apparmor on SUSE CaaS "
-#| "Platform or openSUSE Kubic product."
 msgid ""
 "Packages required to enable Apparmor on SUSE CaaS Platform or openSUSE Kubic."
 msgstr ""
-"Это пакеты, которые должны быть на платформе SUSE CaaS Platform или в "
-"продукте openSUSE Kubic."
+"Пакеты, необходимые для включения Apparmor на платформе SUSE CaaS или в "
+"openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/summary
 msgid "Container Runtime"
-msgstr ""
+msgstr "Среда времени выполнения для контейнеров"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/description
 msgid "This pattern installs the default container runtime packages."
 msgstr ""
+"Этот шаблон устанавливает пакеты по умолчанию для среды времени выполнения "
+"для контейнеров."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
 msgid "Hardware Support"
-msgstr ""
+msgstr "Поддержка оборудования"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to install SUSE CaaS Platform or "
-#| "openSUSE Kubic product on real hardeare."
 msgid ""
 "Packages required to install SUSE CaaS Platform or openSUSE Kubic on real "
 "hardware."
 msgstr ""
-"Это пакеты, необходимые для установки платформы SUSE CaaS или продукта "
-"openSUSE Kubic."
+"Пакеты, необходимые для установки платформы SUSE CaaS или openSUSE Kubic на "
+"реальном оборудовании."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/summary
 msgid "IMA/EVM Support"
-msgstr ""
+msgstr "Поддержка IMA/EVM"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to enable IMA/EVM on SUSE CaaS "
-#| "Platform or openSUSE Kubic product."
 msgid ""
 "Packages required to enable IMA/EVM on SUSE CaaS Platform or openSUSE Kubic."
 msgstr ""
-"Это пакеты, необходимые для включения Apparmor на платформе SUSE CaaS или в "
-"продукте openSUSE Kubic."
+"Пакеты, необходимые для включения IMA/EVM на платформе SUSE CaaS или в "
+"openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/summary
 msgid "kubeadm Stack"
-msgstr ""
+msgstr "Стек kubeadm"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/description
 msgid ""
 "This provides a vanilla kubeadm stack. It contains everything needed to run "
 "kubernetes directly on top of MicroOS."
 msgstr ""
+"Предоставляет ванильный стек kubeadm. Содержит всё необходимое для запуска "
+"kubernetes поверх MicroOS."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE Kubic"
 msgstr "Пакеты только для DVD openSUSE Kubic"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/description
-#, fuzzy
-#| msgid "Packages only for the DVD of openSUSE Kubic"
 msgid "Additonal packages on a openSUSE Kubic DVD."
-msgstr "Пакеты только для DVD openSUSE Kubic"
+msgstr "Дополнительные пакеты для DVD openSUSE Kubic."
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
 msgid "LDAP client"
-msgstr ""
+msgstr "Клиент LDAP"
 
 #. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
-#, fuzzy
-#| msgid ""
-#| "This are packages which are required to enable LDAP client support via "
-#| "sssd on SUSE CaaS Platform or openSUSE Kubic product."
 msgid ""
 "Packages required to enable LDAP client support via sssd on SUSE CaaS "
 "Platform or openSUSE Kubic."
 msgstr ""
-"Это пакеты, необходимые для включения поддержки клиента LDAP черз sssd на "
-"платформе SUSE CaaS Platform или в продукте openSUSE Kubic."
+"Пакеты, необходимые для включения поддержки клиента LDAP черз sssd на "
+"платформе SUSE CaaS или в openSUSE Kubic."
 
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing devel_basis."
-msgstr "32-разрядный шаблон, который дополняет base."
+msgstr "32-разрядный шаблон, который дополняет devel_basis."
 
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing kvm_server."
 msgid "The 32bit pattern complementing devel_kernel."
-msgstr "32-битный шаблон, дополняющий kvm_server."
+msgstr "32-разрядный шаблон, который дополняет devel_kernel."
 
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
-#, fuzzy
-#| msgid "KDE Frameworks Development"
 msgid "KDE Frameworks and Plasma Development"
-msgstr "Разработка для KDE Frameworks"
+msgstr "Разработка для KDE Frameworks и Plasma"
 
 #. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
-#, fuzzy
-#| msgid "Tools and libraries for .NET development using Mono."
 msgid "Tools and libraries for software development using Qt 5."
-msgstr "Инструменты и библиотеки для разработки на .NET с помощью Mono."
+msgstr "Инструменты и библиотеки для разработки ПО с использованием Qt 5."
 
 #. tumbleweed/patterns-kde/patterns-kde-kde/summary
-#, fuzzy
-#| msgid "KDE Applications - Games"
 msgid "KDE Applications and Plasma 5 Desktop"
-msgstr "Приложения KDE — Игры"
+msgstr "Приложения KDE и рабочий стол Plasma"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde/description
-#, fuzzy
-#| msgid "Base packages for the KDE Plasma 5 desktop environment."
 msgid ""
 "Packages providing the Plasma desktop environment and applications from KDE."
-msgstr "Основные пакеты для среды рабочего стола KDE Plasma 5."
+msgstr "Пакеты, предоставляющие среду рабочего стола Plasma и приложения KDE."
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
 msgid ""
 "KDE software for development (editors, integrated development environments, "
 "and associated tools)."
 msgstr ""
+"Программное обеспечение KDE для разработки (редакторы, интегрированные среды "
+"разработки и соответствующие инструменты)."
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_pim/summary
 msgid "KDE PIM Suite"
-msgstr ""
+msgstr "Комплект KDE PIM"
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_pim/description
 msgid "The KDE PIM Suite (Kontact, KMail, KOrganizer, ...)."
-msgstr ""
+msgstr "Комплект KDE PIM (Kontact, KMail, KOrganizer, …)."
 
 #. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
-#, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "KDE Plasma 5 Desktop Base"
-msgstr "Рабочий стол KDE Plasma 5"
+msgstr "Базовый рабочий стол KDE Plasma 5"
 
 #~ msgid "Read-Only Root Filesystem Tools"
 #~ msgstr "Инструменты для корневой ФС только для чтения"
