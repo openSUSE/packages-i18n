@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2018-10-30 14:13+0000\n"
-"PO-Revision-Date: 2018-04-23 10:05+0000\n"
+"PO-Revision-Date: 2019-02-12 10:35+0000\n"
 "Last-Translator: Ewelina Michalowska <ewelina.michalowska@stgambit.com>\n"
 "Language-Team: Polish <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.3\n"
 
 #. leap-nonoss/patterns-non_oss/summary
 #. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/summary
@@ -875,6 +875,11 @@ msgid ""
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC modularized libraries' should also be installed."
 msgstr ""
+"Węzeł obliczeniowy zawiera minimalny obraz oprogramowania i obsługuje "
+"głównie programy symulacji. Usługi w tym węźle powinny być ograniczone do "
+"absolutnego minimum, a sam węzeł *musi* być instalowany w sposób "
+"automatyczny. Powinien być również instalowany wzorzec zmodularyzowanych "
+"bibliotek HPC."
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
@@ -917,6 +922,10 @@ msgid ""
 "applications. It depends on the pattern 'HPC modularized libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
+"Ten pakiet zawiera wszystkie pakiety, które są niezbędne do programowania "
+"aplikacji HPC. Jego funkcjonowanie jest zależne od wzorca zmodularyzowanych "
+"bibliotek HPC. Pakiet ten dodatkowo zawiera kompilatory GNU i wszystkie "
+"potrzebne pakiety do zarządzania."
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
@@ -931,11 +940,15 @@ msgid ""
 "in parallel. In order to use thess libraries one needs to load them via the "
 "module command first."
 msgstr ""
+"Ten pakiet zawiera wszystkie biblioteki zmodularyzowane i umożliwia używanie "
+"ich w środowisku HPC. Biblioteki te pozwalają na równoległe zainstalowanie "
+"wielu wersji MPI. Aby można było korzystać z tych bibliotek, należy je "
+"najpierw załadować za pośrednictwem polecenia modułu."
 
 #. leap/patterns-hpc/patterns-hpc-workload_server/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-workload_server/summary
 msgid "HPC Workload Manager"
-msgstr ""
+msgstr "Menedżer obciążeń HPC"
 
 #. leap/patterns-hpc/patterns-hpc-workload_server/description
 #. tumbleweed/patterns-hpc/patterns-hpc-workload_server/description
@@ -943,6 +956,8 @@ msgid ""
 "This package provides all the relevant packages for running the central "
 "server component of the slurm workload manager."
 msgstr ""
+"Ten pakiet zawiera wszystkie pakiety, które są niezbędne do uruchomienia "
+"składnika serwera centralnego menedżera obciążeń slurm."
 
 #. leap/patterns-kde/patterns-kde-devel_kde/summary
 msgid "KDE Development"
@@ -1770,16 +1785,12 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing devel_basis."
-msgstr "32-bitowy wzorzec uzupełniający system podstawowy."
+msgstr "32-bitowy wzorzec uzupełniający podstawowe narzędzia programistyczne."
 
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing file_server."
 msgid "The 32bit pattern complementing devel_kernel."
-msgstr "32-bitowy wzorzec uzupełniający serwer plików."
+msgstr "32-bitowy wzorzec uzupełniający funkcje programowania jądra."
 
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
 #, fuzzy
