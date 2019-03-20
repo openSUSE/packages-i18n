@@ -69,7 +69,7 @@ def gettextDateTimeUTC(when):
 def readMetadata(data):
     """
     Reads XML from data, returns dict of
-    packagename => {'summary': "...", 'description': "...", 'sourcepkg': "..."}
+    packagename => {'summary': "...", 'group': "...", 'description': "...", 'sourcepkg': "..."}
     """
     tree = xml.fromstring(data)
 
@@ -78,6 +78,7 @@ def readMetadata(data):
     package_iter = xml.XPath('/md:metadata/md:package', namespaces=REPOMD_NAMESPACES)
     name_xpath = xml.XPath('string(./md:name/text())', namespaces=REPOMD_NAMESPACES)
     summary_xpath = xml.XPath('string(./md:summary/text())', namespaces=REPOMD_NAMESPACES)
+    group_xpath = xml.XPath('string(./md:format/rpm:group/text())', namespaces=REPOMD_NAMESPACES)
     description_xpath = xml.XPath('string(./md:description/text())', namespaces=REPOMD_NAMESPACES)
     sourcepkg_xpath = xml.XPath('string(./md:format/rpm:sourcerpm/text())', namespaces=REPOMD_NAMESPACES)
     category_xpath = xml.XPath('string(./md:format/rpm:provides/rpm:entry[@name="pattern-category()"]/@ver)', namespaces=REPOMD_NAMESPACES)
@@ -88,6 +89,7 @@ def readMetadata(data):
             continue
         sourcepkg = '-'.join(sourcepkg_xpath(package).split("-")[:-2])
         packages[name] = {'summary': summary_xpath(package),
+                          'group': group_xpath(package),
                           'description': description_xpath(package),
                           'category': unquote(category_xpath(package)),
                           'sourcepkg': sourcepkg}
@@ -105,6 +107,12 @@ def gettextForPackage(packagename, package, distro):
 msgid {summary}
 msgstr ""
 """.format(comment=comment, summary=gettextQuote(package['summary']))
+
+    if package['group'] != "":
+        ret += """\n#. {comment}/group
+msgid {group}
+msgstr ""
+""".format(comment=comment, group=gettextQuote(package['group']))
 
     if package['description'] != "":
         ret += """\n#. {comment}/description
