@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-04-25 12:33+0000\n"
+"POT-Creation-Date: 2019-03-22 14:34+0000\n"
 "PO-Revision-Date: 2019-01-12 21:19+0000\n"
 "Last-Translator: Dmitry Khudorozhkov <drhoo777@gmail.com>\n"
 "Language-Team: Russian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -25,9 +25,21 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.3\n"
 
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
 msgstr "Основа разработки"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr ""
+"Минимальный набор инструментов для компилирования и линковки приложений."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
+#. SLE/patterns-yast/patterns-yast-devel_yast/category
+msgid "Development"
+msgstr "Разработка"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -41,11 +53,6 @@ msgstr "Разработка ядра Linux"
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
 msgid "Tools for Linux kernel development."
 msgstr "Инструменты для разработки ядра Linux."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Разработка"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
 msgid "The 32bit pattern complementing devel_kernel."
@@ -140,10 +147,9 @@ msgstr ""
 "использованием технологий Wayland и X11."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
-msgid "GNOME Desktop"
-msgstr "Рабочий стол GNOME"
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
+msgid "Graphical Environments"
+msgstr "Графические среды"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
@@ -152,6 +158,11 @@ msgstr "Графика для GNOME"
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "Обработка цифровых фотографий и рисунков"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
+msgid "GNOME Desktop"
+msgstr "Рабочий стол GNOME"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
@@ -173,10 +184,6 @@ msgstr ""
 "для пользователей. Этот шаблон устанавливает полнофункциональную среду "
 "рабочего стола GNOME, включая пакет Office, почтовый клиент, веб-браузер и "
 "файловый менеджер, на базе технологии X11."
-
-#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "Графические среды"
 
 #. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -274,10 +281,10 @@ msgstr "32-разрядный шаблон, который дополняет ap
 
 #. SLE/patterns-base/patterns-base-base/summary
 #. SLE/patterns-base/patterns-base-base-32bit/summary
-#. SLE/patterns-base/patterns-base-minimal_base/summary
-#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
-msgid "Base System"
-msgstr "Базовая система"
+#, fuzzy
+#| msgid "MATE Base System"
+msgid "Minimal Base System"
+msgstr "Базовая система MATE"
 
 #. SLE/patterns-base/patterns-base-base/description
 #. SLE/patterns-base/patterns-base-basesystem/description
@@ -296,7 +303,9 @@ msgid "The 32bit pattern complementing base."
 msgstr "32-разрядный шаблон, который дополняет base."
 
 #. SLE/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
+#, fuzzy
+#| msgid "Base System (alias pattern for base)"
+msgid "Minimal Base System (alias pattern for base)"
 msgstr "Базовая система (шаблон-псевдоним base)"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
@@ -317,6 +326,11 @@ msgstr "Это расширенная базовая система с множ�
 #. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "32-разрядный шаблон, который дополняет enhanced_base."
+
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
+msgid "Minimal Appliance Base"
+msgstr ""
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
@@ -377,11 +391,6 @@ msgstr "32-разрядный шаблон, который дополняет x1
 #. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "32-разрядный шаблон, который дополняет x11_enhanced."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr ""
-"Минимальный набор инструментов для компилирования и линковки приложений."
 
 #. SLE/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -706,6 +715,62 @@ msgstr ""
 "Это шаблон устанавливает 32-битные варианты всех выбранных шаблонов. Это "
 "позволит вам запускать 32-битные программы."
 
+#. SLE/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. SLE/patterns-ha/description
+#. SLE/patterns-ha-geo/description
+#. SLE/patterns-lp/description
+#. SLE/patterns-rt/description
+#. SLE/patterns-sap/description
+#, fuzzy
+#| msgid ""
+#| "This is an internal package that is used to create the patterns as part "
+#| "of the installation source setup.  Installation of this package does not "
+#| "make sense.\n"
+#| "\n"
+#| "This particular package contains all the base / core patterns (and those "
+#| "that don't fit well anywhere else)."
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+"Это внутренний пакет, который используется для создания шаблонов при "
+"начальной установке. Устанавливать его нет смысла.\n"
+"\n"
+"Этот пакет содержит все базовые и основные шаблоны (а также шаблоны, которые "
+"не относятся ни к какому другому пакету)."
+
+#. SLE/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. SLE/patterns-lp/summary
+#, fuzzy
+#| msgid "Live Patching"
+msgid "Patterns for SLE Live Patching"
+msgstr "Установка исправлений в реальном времени"
+
+#. SLE/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. SLE/patterns-wbem/patterns-wbem-WBEM/description
+#, fuzzy
+#| msgid "Web-Based Enterprise Management"
+msgid "Web-based enterprise management."
+msgstr "Веб-средства управления корпоративными ресурсами"
+
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
 msgstr "Базовый вычислительный узел HPC"
@@ -929,9 +994,13 @@ msgid "Microsoft Azure - Tools"
 msgstr "Microsoft Azure — инструменты"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+#, fuzzy
+#| msgid ""
+#| "This pattern installs the Microsoft Azure command line interface tools to "
+#| "communicate with the cloud framework (e.g. python-azurectl)."
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
-"communicate with the cloud framework (e.g. python-azurectl)."
+"communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
 "Этот шаблон устанавливает инструменты интерфейса командной строки Microsoft "
 "Azure для обмена данными с облачной платформой (например, python-azurectl)."
@@ -1035,22 +1104,11 @@ msgstr "Базовый сервер SAP NetWeaver"
 msgid "Set up the server for installing SAP NetWeaver systems."
 msgstr "Настройка сервера для установки систем SAP NetWeaver."
 
+#~ msgid "Base System"
+#~ msgstr "Базовая система"
+
 #~ msgid "Patterns for Installation (base patterns)"
 #~ msgstr "Шаблоны для установки (базовые шаблоны)"
-
-#~ msgid ""
-#~ "This is an internal package that is used to create the patterns as part "
-#~ "of the installation source setup.  Installation of this package does not "
-#~ "make sense.\n"
-#~ "\n"
-#~ "This particular package contains all the base / core patterns (and those "
-#~ "that don't fit well anywhere else)."
-#~ msgstr ""
-#~ "Это внутренний пакет, который используется для создания шаблонов при "
-#~ "начальной установке. Устанавливать его нет смысла.\n"
-#~ "\n"
-#~ "Этот пакет содержит все базовые и основные шаблоны (а также шаблоны, "
-#~ "которые не относятся ни к какому другому пакету)."
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "Пакеты, необходимые для разработки приложений HPC"
@@ -1404,9 +1462,6 @@ msgstr "Настройка сервера для установки систем
 #~| msgid "MATE Laptop"
 #~ msgid "MATE Desktop"
 #~ msgstr "Ноутбук MATE"
-
-#~ msgid "MATE Base System"
-#~ msgstr "Базовая система MATE"
 
 #~ msgid "Base packages for the MATE desktop environment."
 #~ msgstr "Основные пакеты для среды рабочего стола MATE."

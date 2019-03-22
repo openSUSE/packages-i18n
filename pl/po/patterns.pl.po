@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2018-04-25 12:33+0000\n"
+"POT-Creation-Date: 2019-03-22 14:34+0000\n"
 "PO-Revision-Date: 2018-04-26 14:33+0000\n"
 "Last-Translator: Ewelina Michalowska <ewelina.michalowska@stgambit.com>\n"
 "Language-Team: Polish <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -20,9 +20,20 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
 msgstr "Podstawowe narzędzia programistyczne"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr "Minimalny zestaw narzędzi do kompilowania i konsolidacji programów."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
+#. SLE/patterns-yast/patterns-yast-devel_yast/category
+msgid "Development"
+msgstr "Programowanie"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -36,11 +47,6 @@ msgstr "Programowanie jądra systemu Linux"
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
 msgid "Tools for Linux kernel development."
 msgstr "Narzędzia do programowania jądra systemu Linux."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Programowanie"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
 msgid "The 32bit pattern complementing devel_kernel."
@@ -134,10 +140,9 @@ msgstr ""
 "korzystanie z technologii Wayland oraz X11."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
-msgid "GNOME Desktop"
-msgstr "Środowisko GNOME"
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
+msgid "Graphical Environments"
+msgstr "Środowiska graficzne"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
@@ -146,6 +151,11 @@ msgstr "Grafika GNOME"
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "Obsługa cyfrowych zdjęć i grafik"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
+msgid "GNOME Desktop"
+msgstr "Środowisko GNOME"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
@@ -167,10 +177,6 @@ msgstr ""
 "wzorzec służy do instalowania działającego w systemie X11 kompletnego "
 "środowiska graficznego GNOME zawierającego pakiet Office, klienta poczty e-"
 "mail, przeglądarkę internetową oraz menedżer plików."
-
-#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "Środowiska graficzne"
 
 #. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -267,9 +273,9 @@ msgstr "32-bitowy wzorzec uzupełniający środowisko AppArmor."
 
 #. SLE/patterns-base/patterns-base-base/summary
 #. SLE/patterns-base/patterns-base-base-32bit/summary
-#. SLE/patterns-base/patterns-base-minimal_base/summary
-#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
-msgid "Base System"
+#, fuzzy
+#| msgid "Base System"
+msgid "Minimal Base System"
 msgstr "System podstawowy"
 
 #. SLE/patterns-base/patterns-base-base/description
@@ -288,7 +294,9 @@ msgid "The 32bit pattern complementing base."
 msgstr "32-bitowy wzorzec uzupełniający system podstawowy."
 
 #. SLE/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
+#, fuzzy
+#| msgid "Base System (alias pattern for base)"
+msgid "Minimal Base System (alias pattern for base)"
 msgstr "System podstawowy (wzorzec aliasu dla systemu podstawowego)"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
@@ -309,6 +317,13 @@ msgstr "Rozszerzony system podstawowy z dużą ilością dogodnych pakietów."
 #. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "32-bitowy wzorzec uzupełniający rozszerzony system podstawowy."
+
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
+#, fuzzy
+#| msgid "Minimal System (Appliances)"
+msgid "Minimal Appliance Base"
+msgstr "System minimalny (zastosowania)"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
@@ -369,10 +384,6 @@ msgstr "32-bitowy wzorzec uzupełniający system x11."
 #. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "32-bitowy wzorzec uzupełniający rozszerzony system x11."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr "Minimalny zestaw narzędzi do kompilowania i konsolidacji programów."
 
 #. SLE/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -700,6 +711,60 @@ msgstr ""
 "Spowoduje to zainstalowanie 32-bitowych wariantów wybranych wzorców. Pozwoli "
 "to uruchamiać programy 32-bitowe."
 
+#. SLE/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. SLE/patterns-ha/description
+#. SLE/patterns-ha-geo/description
+#. SLE/patterns-lp/description
+#. SLE/patterns-rt/description
+#. SLE/patterns-sap/description
+#, fuzzy
+#| msgid ""
+#| "This is an internal package that is used to create the patterns as part "
+#| "of the installation source setup.  Installation of this package does not "
+#| "make sense.\n"
+#| "\n"
+#| "This particular package contains all the base / core patterns (and those "
+#| "that don't fit well anywhere else)."
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+"Jest to wewnętrzny pakiet, który służy do tworzenia wzorców w ramach "
+"konfigurowania źródła instalacji. Instalowanie tego pakietu nie ma sensu.\n"
+"\n"
+"Ten konkretny pakiet zawiera wszystkie podstawowe / główne wzorce (a także "
+"te, które nie klasyfikują się nigdzie indziej)."
+
+#. SLE/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. SLE/patterns-lp/summary
+#, fuzzy
+#| msgid "Live Patching"
+msgid "Patterns for SLE Live Patching"
+msgstr "Mechanizm Live Patching"
+
+#. SLE/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. SLE/patterns-wbem/patterns-wbem-WBEM/description
+msgid "Web-based enterprise management."
+msgstr "Zarządzanie przedsiębiorstwem oparte o sieć Web."
+
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
 msgstr "Podstawowy węzeł obliczeniowy HPC"
@@ -928,9 +993,13 @@ msgid "Microsoft Azure - Tools"
 msgstr "Microsoft Azure - narzędzia"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+#, fuzzy
+#| msgid ""
+#| "This pattern installs the Microsoft Azure command line interface tools to "
+#| "communicate with the cloud framework (e.g. python-azurectl)."
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
-"communicate with the cloud framework (e.g. python-azurectl)."
+"communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
 "Ten wzorzec służy do instalowania narzędzi interfejsu wiersza poleceń usług "
 "Microsoft Azure używanych do komunikacji ze środowiskiem chmury (np. python-"
@@ -1038,21 +1107,6 @@ msgstr "Konfiguracja serwera do instalowania systemów SAP NetWeaver."
 
 #~ msgid "Patterns for Installation (base patterns)"
 #~ msgstr "Wzorce do instalacji (wzorce podstawowe)"
-
-#~ msgid ""
-#~ "This is an internal package that is used to create the patterns as part "
-#~ "of the installation source setup.  Installation of this package does not "
-#~ "make sense.\n"
-#~ "\n"
-#~ "This particular package contains all the base / core patterns (and those "
-#~ "that don't fit well anywhere else)."
-#~ msgstr ""
-#~ "Jest to wewnętrzny pakiet, który służy do tworzenia wzorców w ramach "
-#~ "konfigurowania źródła instalacji. Instalowanie tego pakietu nie ma "
-#~ "sensu.\n"
-#~ "\n"
-#~ "Ten konkretny pakiet zawiera wszystkie podstawowe / główne wzorce (a "
-#~ "także te, które nie klasyfikują się nigdzie indziej)."
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "Pakiety niezbędne do programowania aplikacji HPC"
@@ -1737,9 +1791,6 @@ msgstr "Konfiguracja serwera do instalowania systemów SAP NetWeaver."
 #~ msgid "MONO development packages"
 #~ msgstr "Pakiety dla programistów MONO"
 
-#~ msgid "Minimal System (Appliances)"
-#~ msgstr "System minimalny (zastosowania)"
-
 #~ msgid "Minimal set of tools for compiling and linking applications"
 #~ msgstr "Minimalny zestaw narzędzi do kompilowania i konsolidacji programów"
 
@@ -1937,9 +1988,6 @@ msgstr "Konfiguracja serwera do instalowania systemów SAP NetWeaver."
 
 #~ msgid "Web based system management tool"
 #~ msgstr "Zarządzanie systemem przez interfejs www."
-
-#~ msgid "Web-based enterprise management."
-#~ msgstr "Zarządzanie przedsiębiorstwem oparte o sieć Web."
 
 #~ msgid "WebYaST"
 #~ msgstr "WebYaST"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2018-04-25 12:33+0000\n"
+"POT-Creation-Date: 2019-03-22 14:34+0000\n"
 "PO-Revision-Date: 2018-10-31 20:01+0000\n"
 "Last-Translator: David Medina <medipas@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -14,9 +14,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
 msgstr "Desenvolupament de base"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr "Conjunt d'eines mínim per compilar i enllaçar aplicacions."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
+#. SLE/patterns-yast/patterns-yast-devel_yast/category
+msgid "Development"
+msgstr "Desenvolupament"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -30,11 +41,6 @@ msgstr "Desenvolupament del nucli de Linux"
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
 msgid "Tools for Linux kernel development."
 msgstr "Eines per al desenvolupament del nucli de Linux."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Desenvolupament"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
 msgid "The 32bit pattern complementing devel_kernel."
@@ -129,10 +135,9 @@ msgstr ""
 "les tecnologies Wayland i X11."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
-msgid "GNOME Desktop"
-msgstr "Escriptori GNOME"
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
+msgid "Graphical Environments"
+msgstr "Entorns gràfics"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
@@ -141,6 +146,11 @@ msgstr "Gràfics del GNOME"
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "Gestió de fotografies i gràfics digitals"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
+msgid "GNOME Desktop"
+msgstr "Escriptori GNOME"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
@@ -163,10 +173,6 @@ msgstr ""
 "incloent-hi un conjunt de programes d'oficina, un client de correu "
 "electrònic, un navegador web, un administrador de fitxers; amb tecnologia "
 "X11."
-
-#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "Entorns gràfics"
 
 #. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -262,9 +268,9 @@ msgstr "El patró de 32 bits que completa l'Apparmor."
 
 #. SLE/patterns-base/patterns-base-base/summary
 #. SLE/patterns-base/patterns-base-base-32bit/summary
-#. SLE/patterns-base/patterns-base-minimal_base/summary
-#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
-msgid "Base System"
+#, fuzzy
+#| msgid "Base System"
+msgid "Minimal Base System"
 msgstr "Sistema de base"
 
 #. SLE/patterns-base/patterns-base-base/description
@@ -283,7 +289,9 @@ msgid "The 32bit pattern complementing base."
 msgstr "El patró de 32 bits que completa la base."
 
 #. SLE/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
+#, fuzzy
+#| msgid "Base System (alias pattern for base)"
+msgid "Minimal Base System (alias pattern for base)"
 msgstr "Sistema de base (patró d'àlies per a base)"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
@@ -306,6 +314,11 @@ msgstr ""
 #. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "El patró de 32 bits que completa la base millorada."
+
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
+msgid "Minimal Appliance Base"
+msgstr ""
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
@@ -366,10 +379,6 @@ msgstr "El patró de 32 bits que complementa X11."
 #. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "El patró de 32 bits que complementa X11 millorat."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr "Conjunt d'eines mínim per compilar i enllaçar aplicacions."
 
 #. SLE/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -697,6 +706,49 @@ msgstr ""
 "Això instal·larà la variant de 32 bits de tots els patrons instal·lats. Això "
 "permet executar programari de 32 bits."
 
+#. SLE/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. SLE/patterns-ha/description
+#. SLE/patterns-ha-geo/description
+#. SLE/patterns-lp/description
+#. SLE/patterns-rt/description
+#. SLE/patterns-sap/description
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+
+#. SLE/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. SLE/patterns-lp/summary
+#, fuzzy
+#| msgid "Live Patching"
+msgid "Patterns for SLE Live Patching"
+msgstr "Apedaçar en viu"
+
+#. SLE/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. SLE/patterns-wbem/patterns-wbem-WBEM/description
+#, fuzzy
+#| msgid "Web-Based Enterprise Management"
+msgid "Web-based enterprise management."
+msgstr "Gestió d'empresa basada en xarxa"
+
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
 msgstr "Node de computació bàsic HPC"
@@ -919,9 +971,13 @@ msgid "Microsoft Azure - Tools"
 msgstr "Microsoft Azure - Eines"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+#, fuzzy
+#| msgid ""
+#| "This pattern installs the Microsoft Azure command line interface tools to "
+#| "communicate with the cloud framework (e.g. python-azurectl)."
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
-"communicate with the cloud framework (e.g. python-azurectl)."
+"communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
 "Aquest patró instal·la les eines de la interfície de línia d'ordres de "
 "Microsoft Azure per comunicar-se amb el marc del núvol (p. ex.: python-"

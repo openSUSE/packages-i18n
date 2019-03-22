@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2018-04-25 12:33+0000\n"
+"POT-Creation-Date: 2019-03-22 14:34+0000\n"
 "PO-Revision-Date: 2018-11-05 00:01+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -28,9 +28,20 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
 msgstr "Základní vývoj"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr "Minimální sada nástrojů potřebná pro kompilováni a linkování aplikací."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
+#. SLE/patterns-yast/patterns-yast-devel_yast/category
+msgid "Development"
+msgstr "Vývoj"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -44,11 +55,6 @@ msgstr "Vývoj linuxového jádra"
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
 msgid "Tools for Linux kernel development."
 msgstr "Nástroje pro vývoj linuxového jádra."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Vývoj"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
 msgid "The 32bit pattern complementing devel_kernel."
@@ -143,10 +149,9 @@ msgstr ""
 "Wayland a X11."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
-msgid "GNOME Desktop"
-msgstr "GNOME Desktop"
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
+msgid "Graphical Environments"
+msgstr "Grafická rozhraní"
 
 # 49722 AttribValues/label
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
@@ -156,6 +161,11 @@ msgstr "GNOME Graphics"
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "Práce s digitálními fotografiemi a grafikou"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
+msgid "GNOME Desktop"
+msgstr "GNOME Desktop"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
@@ -177,10 +187,6 @@ msgstr ""
 "pro uživatele. Tato sestava instaluje úplné prostředí pracovní plochy GNOME, "
 "včetně sady Office, klienta e-mailu, webového prohlížeče, vše pro "
 "technologii X11."
-
-#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "Grafická rozhraní"
 
 #. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -271,10 +277,10 @@ msgstr "32bitový vzor doplňující apparmor."
 
 #. SLE/patterns-base/patterns-base-base/summary
 #. SLE/patterns-base/patterns-base-base-32bit/summary
-#. SLE/patterns-base/patterns-base-minimal_base/summary
-#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
-msgid "Base System"
-msgstr "Základní systém"
+#, fuzzy
+#| msgid "MATE Base System"
+msgid "Minimal Base System"
+msgstr "Základní systém MATE"
 
 #. SLE/patterns-base/patterns-base-base/description
 #. SLE/patterns-base/patterns-base-basesystem/description
@@ -292,7 +298,9 @@ msgid "The 32bit pattern complementing base."
 msgstr "32bitový vzor doplňující base."
 
 #. SLE/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
+#, fuzzy
+#| msgid "Base System (alias pattern for base)"
+msgid "Minimal Base System (alias pattern for base)"
 msgstr "Základní systém (vzor aliasu pro základ)"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
@@ -314,6 +322,13 @@ msgstr ""
 #. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "32bitový vzor doplňující enhanced_base."
+
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
+#, fuzzy
+#| msgid "Minimal System (Appliances)"
+msgid "Minimal Appliance Base"
+msgstr "Minimální systém"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
@@ -374,10 +389,6 @@ msgstr "32bitový vzor doplňující X11."
 #. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "32bitový vzor doplňující x11_enhanced."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr "Minimální sada nástrojů potřebná pro kompilováni a linkování aplikací."
 
 #. SLE/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -700,6 +711,60 @@ msgstr ""
 "Tímto se nainstalují 32bitové verze všech zvolených profilů. Lze tak "
 "spouštět 32bitový software."
 
+#. SLE/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. SLE/patterns-ha/description
+#. SLE/patterns-ha-geo/description
+#. SLE/patterns-lp/description
+#. SLE/patterns-rt/description
+#. SLE/patterns-sap/description
+#, fuzzy
+#| msgid ""
+#| "This is an internal package that is used to create the patterns as part "
+#| "of the installation source setup.  Installation of this package does not "
+#| "make sense.\n"
+#| "\n"
+#| "This particular package contains all the base / core patterns (and those "
+#| "that don't fit well anywhere else)."
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+"Toto je interní balíček, který se používá k vytváření vzorů v rámci "
+"nastavení zdroje instalace. Instalace tohoto balíčku nedává smysl.\n"
+"\n"
+"Tento konkrétní balíček obsahuje všechny základní vzory (a také ty, které se "
+"nehodí nikam jinam)."
+
+#. SLE/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. SLE/patterns-lp/summary
+#, fuzzy
+#| msgid "Live Patching"
+msgid "Patterns for SLE Live Patching"
+msgstr "Opravy za chodu"
+
+#. SLE/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. SLE/patterns-wbem/patterns-wbem-WBEM/description
+msgid "Web-based enterprise management."
+msgstr "Enterprise správa s webovým rozhraním."
+
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
 msgstr "Základní výpočetní uzel HPC"
@@ -919,9 +984,13 @@ msgid "Microsoft Azure - Tools"
 msgstr "Microsoft Azure – nástroje"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+#, fuzzy
+#| msgid ""
+#| "This pattern installs the Microsoft Azure command line interface tools to "
+#| "communicate with the cloud framework (e.g. python-azurectl)."
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
-"communicate with the cloud framework (e.g. python-azurectl)."
+"communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
 "Tento vzor nainstaluje nástroje rozhraní příkazového řádku Amazon Web "
 "Services na komunikaci s cloudovou architekturou (např. python-azurectl)."
@@ -1024,22 +1093,11 @@ msgstr "Základ pro SAP NetWeaver Server"
 msgid "Set up the server for installing SAP NetWeaver systems."
 msgstr "Příprava serveru pro instalaci systémů SAP NetWeaver."
 
+#~ msgid "Base System"
+#~ msgstr "Základní systém"
+
 #~ msgid "Patterns for Installation (base patterns)"
 #~ msgstr "Vzory pro instalaci (základní vzory)"
-
-#~ msgid ""
-#~ "This is an internal package that is used to create the patterns as part "
-#~ "of the installation source setup.  Installation of this package does not "
-#~ "make sense.\n"
-#~ "\n"
-#~ "This particular package contains all the base / core patterns (and those "
-#~ "that don't fit well anywhere else)."
-#~ msgstr ""
-#~ "Toto je interní balíček, který se používá k vytváření vzorů v rámci "
-#~ "nastavení zdroje instalace. Instalace tohoto balíčku nedává smysl.\n"
-#~ "\n"
-#~ "Tento konkrétní balíček obsahuje všechny základní vzory (a také ty, které "
-#~ "se nehodí nikam jinam)."
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "Balíčky nutné pro vývoj aplikací pro HPC"
@@ -1401,9 +1459,6 @@ msgstr "Příprava serveru pro instalaci systémů SAP NetWeaver."
 #~| msgid "GNOME Desktop"
 #~ msgid "MATE Desktop"
 #~ msgstr "Prostředí GNOME"
-
-#~ msgid "MATE Base System"
-#~ msgstr "Základní systém MATE"
 
 #~ msgid "Base packages for the MATE desktop environment."
 #~ msgstr "Základní balíčky pro prostředí plochy MATE."
@@ -1915,9 +1970,6 @@ msgstr "Příprava serveru pro instalaci systémů SAP NetWeaver."
 #~ msgid "MONO development packages"
 #~ msgstr "Balíčky pro vývoj MONO"
 
-#~ msgid "Minimal System (Appliances)"
-#~ msgstr "Minimální systém"
-
 #~ msgid "Minimal set of tools for compiling and linking applications"
 #~ msgstr ""
 #~ "Minimální sada nástrojů potřebná pro kompilováni a linkování aplikací"
@@ -2129,9 +2181,6 @@ msgstr "Příprava serveru pro instalaci systémů SAP NetWeaver."
 
 #~ msgid "Web based system management tool"
 #~ msgstr "Webový nástroj pro správu systému"
-
-#~ msgid "Web-based enterprise management."
-#~ msgstr "Enterprise správa s webovým rozhraním."
 
 #~ msgid "WebYaST"
 #~ msgstr "WebYaST"

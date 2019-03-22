@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns.nl\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2018-04-25 12:33+0000\n"
+"POT-Creation-Date: 2019-03-22 14:34+0000\n"
 "PO-Revision-Date: 2018-10-30 19:02+0000\n"
 "Last-Translator: Freek de Kruijf <freek@opensuse.org>\n"
 "Language-Team: Dutch <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -22,9 +22,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
 
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
 msgstr "Basisontwikkeling"
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
+msgid "Minimal set of tools for compiling and linking applications."
+msgstr ""
+"Minimale set gereedschappen voor het compileren en linken van programma's."
+
+#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
+#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
+#. SLE/patterns-yast/patterns-yast-devel_yast/category
+msgid "Development"
+msgstr "Ontwikkeling"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -38,11 +50,6 @@ msgstr "Linux-kernelontwikkeling"
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/description
 msgid "Tools for Linux kernel development."
 msgstr "Hulpprogramma's voor het ontwikkelen van de Linux-kernel."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Ontwikkeling"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
 msgid "The 32bit pattern complementing devel_kernel."
@@ -137,10 +144,9 @@ msgstr ""
 "Wayland en X11 technologieën te werken."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
-#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
-msgid "GNOME Desktop"
-msgstr "GNOME bureaublad"
+#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
+msgid "Graphical Environments"
+msgstr "Grafische omgevingen"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/summary
 msgid "GNOME Graphics"
@@ -149,6 +155,11 @@ msgstr "GNOME Grafisch"
 #. SLE/patterns-gnome/patterns-gnome-gnome_imaging/description
 msgid "Handling of digital photos and graphics"
 msgstr "Afhandelen van digitale foto's en afbeeldingen"
+
+#. SLE/patterns-gnome/patterns-gnome-gnome_imaging/category
+#. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/category
+msgid "GNOME Desktop"
+msgstr "GNOME bureaublad"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/summary
 #. SLE/patterns-gnome/patterns-gnome-gnome_multimedia/description
@@ -170,10 +181,6 @@ msgstr ""
 "voor gebruikers. Dit patroon installeert een van alle gemakken voorziene "
 "GNOME bureaubladomgeving, inclusief Office-suite, e-mailclient, webbrowser, "
 "bestandsbeheerder, werkend met X11 technologie."
-
-#. SLE/patterns-gnome/patterns-gnome-gnome_x11/category
-msgid "Graphical Environments"
-msgstr "Grafische omgevingen"
 
 #. SLE/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -271,10 +278,10 @@ msgstr "Het 32bit patroon dat apparmor complementeert."
 
 #. SLE/patterns-base/patterns-base-base/summary
 #. SLE/patterns-base/patterns-base-base-32bit/summary
-#. SLE/patterns-base/patterns-base-minimal_base/summary
-#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
-msgid "Base System"
-msgstr "Basissysteem"
+#, fuzzy
+#| msgid "MATE Base System"
+msgid "Minimal Base System"
+msgstr "MATE-basissysteem"
 
 #. SLE/patterns-base/patterns-base-base/description
 #. SLE/patterns-base/patterns-base-basesystem/description
@@ -293,7 +300,9 @@ msgid "The 32bit pattern complementing base."
 msgstr "Het 32bit patroon dat base complementeert."
 
 #. SLE/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
+#, fuzzy
+#| msgid "Base System (alias pattern for base)"
+msgid "Minimal Base System (alias pattern for base)"
 msgstr "Basissysteem (aliaspatroon voor basis)"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
@@ -314,6 +323,13 @@ msgstr "Dit is het verbeterd basisruntime-systeem met veel handige pakketten."
 #. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "Het 32bit patroon dat enhanced_base complementeert."
+
+#. SLE/patterns-base/patterns-base-minimal_base/summary
+#. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
+#, fuzzy
+#| msgid "Minimal System (Appliances)"
+msgid "Minimal Appliance Base"
+msgstr "Minimaal systeem (Appliances)"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
@@ -375,11 +391,6 @@ msgstr "Het 32bit patroon dat x11 complementeert."
 #. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "Het 32bit patroon dat x11_enhanced complementeert."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
-msgid "Minimal set of tools for compiling and linking applications."
-msgstr ""
-"Minimale set gereedschappen voor het compileren en linken van programma's."
 
 #. SLE/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -706,6 +717,61 @@ msgstr ""
 "Dit zal de 32-bits variant van alle geselecteerde patronen installeren. Dit "
 "maakt het mogelijk om 32-bit software uit te voeren."
 
+#. SLE/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. SLE/patterns-ha/description
+#. SLE/patterns-ha-geo/description
+#. SLE/patterns-lp/description
+#. SLE/patterns-rt/description
+#. SLE/patterns-sap/description
+#, fuzzy
+#| msgid ""
+#| "This is an internal package that is used to create the patterns as part "
+#| "of the installation source setup.  Installation of this package does not "
+#| "make sense.\n"
+#| "\n"
+#| "This particular package contains all the base / core patterns (and those "
+#| "that don't fit well anywhere else)."
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+"Dit is een intern pakket dat gebruikt wordt om de patronen te maken als "
+"onderdeel van de opzet van installatiebroncode.  Installatie van dit pakket "
+"is nutteloos.\n"
+"\n"
+"Dit specifieke pakket bevat alle basis / kern patronen (en diegenen die "
+"ergens anders niet goed passen)."
+
+#. SLE/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. SLE/patterns-lp/summary
+#, fuzzy
+#| msgid "Live Patching"
+msgid "Patterns for SLE Live Patching"
+msgstr "Live patching"
+
+#. SLE/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. SLE/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. SLE/patterns-wbem/patterns-wbem-WBEM/description
+msgid "Web-based enterprise management."
+msgstr "Web-gebaseerd enterprisebeheer."
+
 #. SLE/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
 msgstr "HPC-basisrekennode"
@@ -935,9 +1001,13 @@ msgid "Microsoft Azure - Tools"
 msgstr "Microsoft Azure - Hulpmiddelen"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+#, fuzzy
+#| msgid ""
+#| "This pattern installs the Microsoft Azure command line interface tools to "
+#| "communicate with the cloud framework (e.g. python-azurectl)."
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
-"communicate with the cloud framework (e.g. python-azurectl)."
+"communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
 "Dit patroon installeert de Microsoft Azure-"
 "opdrachtregelinterfacehulpmiddelen om te communiceren met het cloudframework "
@@ -1041,23 +1111,11 @@ msgstr "SAP NetWeaver-serverbasis"
 msgid "Set up the server for installing SAP NetWeaver systems."
 msgstr "Stel de server in voor het installeren van SAP NetWeaver-systemen."
 
+#~ msgid "Base System"
+#~ msgstr "Basissysteem"
+
 #~ msgid "Patterns for Installation (base patterns)"
 #~ msgstr "Patronen voor installatie (basispatronen)"
-
-#~ msgid ""
-#~ "This is an internal package that is used to create the patterns as part "
-#~ "of the installation source setup.  Installation of this package does not "
-#~ "make sense.\n"
-#~ "\n"
-#~ "This particular package contains all the base / core patterns (and those "
-#~ "that don't fit well anywhere else)."
-#~ msgstr ""
-#~ "Dit is een intern pakket dat gebruikt wordt om de patronen te maken als "
-#~ "onderdeel van de opzet van installatiebroncode.  Installatie van dit "
-#~ "pakket is nutteloos.\n"
-#~ "\n"
-#~ "Dit specifieke pakket bevat alle basis / kern patronen (en diegenen die "
-#~ "ergens anders niet goed passen)."
 
 #~ msgid "Packages needed to be able to develop HPC Apps"
 #~ msgstr "Pakketten nodig om HPC-apps te kunnen ontwikkelen"
@@ -1418,9 +1476,6 @@ msgstr "Stel de server in voor het installeren van SAP NetWeaver-systemen."
 #~| msgid "GNOME Desktop"
 #~ msgid "MATE Desktop"
 #~ msgstr "GNOME Desktop"
-
-#~ msgid "MATE Base System"
-#~ msgstr "MATE-basissysteem"
 
 #~ msgid "Base packages for the MATE desktop environment."
 #~ msgstr "Basispakketten voor de MATE-bureaubladomgeving."
@@ -1916,9 +1971,6 @@ msgstr "Stel de server in voor het installeren van SAP NetWeaver-systemen."
 #~ msgid "MONO development packages"
 #~ msgstr "Pakketten voor MONO-ontwikkeling"
 
-#~ msgid "Minimal System (Appliances)"
-#~ msgstr "Minimaal systeem (Appliances)"
-
 #~ msgid "Minimal set of tools for compiling and linking applications"
 #~ msgstr ""
 #~ "Minimale set hulpmiddelen voor het compileren en linken van toepassingen."
@@ -2121,9 +2173,6 @@ msgstr "Stel de server in voor het installeren van SAP NetWeaver-systemen."
 
 #~ msgid "Web based system management tool"
 #~ msgstr "Web-gebaseerd hulpmiddel voor systeembeheer."
-
-#~ msgid "Web-based enterprise management."
-#~ msgstr "Web-gebaseerd enterprisebeheer."
 
 #~ msgid "WebYaST"
 #~ msgstr "WebYaST"
