@@ -108,11 +108,11 @@ msgid {summary}
 msgstr ""
 """.format(comment=comment, summary=gettextQuote(package['summary']))
 
-    if package['group'] != "":
-        ret += """\n#. {comment}/group
-msgid {group}
-msgstr ""
-""".format(comment=comment, group=gettextQuote(package['group']))
+#     if package['group'] != "":
+#         ret += """\n#. {comment}/group
+# msgid {group}
+# msgstr ""
+# """.format(comment=comment, group=gettextQuote(package['group']))
 
     if package['description'] != "":
         ret += """\n#. {comment}/description
@@ -129,6 +129,17 @@ msgstr ""
 
     return ret
 
+
+def getgrouptextForPackage(packagename, package, distro):
+    ret = ""
+
+    if package['group'] != "":
+        for cat in gettextQuote(package['group']).replace('"','').split("/"):
+            ret += """\n#. {distro}/group
+msgid "{group}"
+msgstr ""
+""".format(distro=distro, group=cat)
+        return ret
 
 def fetchPrimaryXML(baseurl):
     repoindex_req = requests.get(baseurl + "/repodata/repomd.xml")
@@ -159,9 +170,11 @@ msgstr ""
 
     print(header)
 
-    for packagename, package in md.items():
-        print(gettextForPackage(packagename, package, distro))
-
+    with open(f"50-lists/{distro}-rpm-groups._pot", "a") as f:
+        f.write(header)
+        for packagename, package in md.items():
+            print(gettextForPackage(packagename, package, distro))
+            f.write(getgrouptextForPackage(packagename, package, distro)+"\n")
     return 0
 
 

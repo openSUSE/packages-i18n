@@ -60,6 +60,9 @@ done < "$urlfile"
 
 cd 50-lists
 
+#  TODO: deduplicate, merge, deduplicate and move 50-lists/${distro}-rpm-groups._pot files
+
+
 ## Merge distros
 rm -f *.pot
 msgcat *._pot | grep -v "#-#-#-#" > _packages.pot
