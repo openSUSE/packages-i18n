@@ -59,12 +59,20 @@ while read distro url; do
 done < "$urlfile"
 
 cd 50-lists
+rm -f *.pot
+
+# Merge rpm-groups files
+log "Generating POT file for RPM groups..."
+for i in *-rpm-groups.__pot; do
+  msguniq $i > "${i%.__pot}.___pot"
+done
+msgcat *-rpm-groups.___pot | grep -v "#-#-#-#" | msguniq > "rpm-groups.pot"
+log "OK"
 
 #  TODO: deduplicate, merge, deduplicate and move 50-lists/${distro}-rpm-groups._pot files
 
 
 ## Merge distros
-rm -f *.pot
 msgcat *._pot | grep -v "#-#-#-#" > _packages.pot
 #cat _packages.pot | msggrep -X -i -e "^tumbleweed/patterns\|^leap/patterns" -o patterns.pot
 #msgcat --unique -o __packages.pot patterns.pot _packages.pot && mv __packages.pot _packages.pot

@@ -108,12 +108,6 @@ msgid {summary}
 msgstr ""
 """.format(comment=comment, summary=gettextQuote(package['summary']))
 
-#     if package['group'] != "":
-#         ret += """\n#. {comment}/group
-# msgid {group}
-# msgstr ""
-# """.format(comment=comment, group=gettextQuote(package['group']))
-
     if package['description'] != "":
         ret += """\n#. {comment}/description
 msgid {description}
@@ -126,20 +120,20 @@ msgid {category}
 msgstr ""
 """.format(comment=comment, category=gettextQuote(package['category']))
 
-
     return ret
 
 
-def getgrouptextForPackage(packagename, package, distro):
+def getgrouptextForPackage(package, distro):
     ret = ""
 
     if package['group'] != "":
-        for cat in gettextQuote(package['group']).replace('"','').split("/"):
+        for cat in gettextQuote(package['group']).replace('"', '').split("/"):
             ret += """\n#. {distro}/group
 msgid "{group}"
 msgstr ""
 """.format(distro=distro, group=cat)
         return ret
+
 
 def fetchPrimaryXML(baseurl):
     repoindex_req = requests.get(baseurl + "/repodata/repomd.xml")
@@ -147,7 +141,7 @@ def fetchPrimaryXML(baseurl):
     path_primary = repoindex.xpath("string(./repo:data[@type='primary']/repo:location/@href)",
                                    namespaces=REPOMD_NAMESPACES)
     primary_req = requests.get(baseurl + "/" + path_primary)
-    return zlib.decompress(primary_req.content, wbits=zlib.MAX_WBITS|32)
+    return zlib.decompress(primary_req.content, wbits=zlib.MAX_WBITS | 32)
 
 
 def main(argv):
@@ -170,11 +164,11 @@ msgstr ""
 
     print(header)
 
-    with open(f"50-lists/{distro}-rpm-groups._pot", "a") as f:
+    with open(f"50-lists/{distro}-rpm-groups.__pot", "a") as f:
         f.write(header)
         for packagename, package in md.items():
             print(gettextForPackage(packagename, package, distro))
-            f.write(getgrouptextForPackage(packagename, package, distro)+"\n")
+            f.write(getgrouptextForPackage(package, distro)+"\n")
     return 0
 
 
