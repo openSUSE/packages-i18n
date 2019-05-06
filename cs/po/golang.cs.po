@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-10-30 14:08+0000\n"
+"POT-Creation-Date: 2019-05-06 14:28+0000\n"
 "PO-Revision-Date: 2019-02-12 10:35+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -45,7 +45,8 @@ msgstr "Nástroj příkazového řádku na bázi Go, pro exercism.io"
 #. tumbleweed/golang-github-exercism-cli/exercism/description
 #. tumbleweed/golang-github-exercism-cli/description
 msgid "The CLI provides a way to do the problems on exercism.io."
-msgstr "CLI (rozhraní příkazového řádku) umožňuje řešit problémy v exercism.io."
+msgstr ""
+"CLI (rozhraní příkazového řádku) umožňuje řešit problémy v exercism.io."
 
 #. leap/golang-github-cpuguy83-go-md2man/go-md2man/summary
 #. tumbleweed/golang-github-cpuguy83-go-md2man/go-md2man/summary
@@ -91,8 +92,8 @@ msgid ""
 "This is a pure Go implementation of leveled logs in the manner of the C++ "
 "package google-glog."
 msgstr ""
-"Čistá Go implementace strukturovaných záznamů (logů) ve stylu balíčků C++ \""
-"google-glog\"."
+"Čistá Go implementace strukturovaných záznamů (logů) ve stylu balíčků C++ "
+"\"google-glog\"."
 
 #. leap/golang-github-jteeuwen-go-bindata/summary
 #. tumbleweed/golang-github-jteeuwen-go-bindata/summary
@@ -167,8 +168,8 @@ msgid ""
 "Prometheus exporter for hardware and OS metrics exposed by *NIX kernels, "
 "written in Go with pluggable metric collectors."
 msgstr ""
-"Prometheus - exportér pro hardwarovou a OS metriku poskytovanou jádry *NIX ("
-"UNIX, XENIX,...), napsaný v Go, s připojitelnými sběrači metrik."
+"Prometheus - exportér pro hardwarovou a OS metriku poskytovanou jádry *NIX "
+"(UNIX, XENIX,...), napsaný v Go, s připojitelnými sběrači metrik."
 
 #. leap/golang-github-prometheus-prometheus/summary
 #. tumbleweed/golang-github-prometheus-prometheus/summary
@@ -244,8 +245,8 @@ msgid ""
 "ensure that generated anchor names are unique, that responsibility falls on "
 "the caller."
 msgstr ""
-"Balíček \"sanitized_anchor_name\" poskytuje funkčnost k tvorbě \""
-"desinfikovaných\" názvů kotev. Jeho logiku lze opakovaně použít různými "
+"Balíček \"sanitized_anchor_name\" poskytuje funkčnost k tvorbě "
+"\"desinfikovaných\" názvů kotev. Jeho logiku lze opakovaně použít různými "
 "balíčky k tvorbě názvů kotev spolupráce a odkazů na tyto kotvy. V "
 "současnosti se nesnaží, aby generované názvy kotev byly unikátní, za to "
 "odpovídá volající."
@@ -270,6 +271,20 @@ msgstr ""
 "Balíček gocheck naopak očekává, že standardní knihovna Go bude pracovat "
 "korektně, a buduje nad ní bohatší testovací rámec použitelný knihovnami a "
 "aplikacemi."
+
+#. leap/golang-org-x-sys/summary
+#. tumbleweed/golang-org-x-sys/summary
+msgid "Go packages for low-level interaction with the operating system"
+msgstr "Balíčky Go pro nízkoúrovňovou interakci s operačním systémem"
+
+#. leap/golang-org-x-sys/description
+#. tumbleweed/golang-org-x-sys/description
+msgid ""
+"This repository holds supplemental Go packages for low-level interactions "
+"with the operating system."
+msgstr ""
+"Toto úložiště obsahuje doplňkové balíčky Go pro nízkoúrovňovou interakci s "
+"operačním systémem."
 
 #. leap/golang-packaging/summary
 #. tumbleweed/golang-packaging/summary
@@ -299,18 +314,6 @@ msgstr ""
 "\n"
 "```lisp (require 'go-autocomplete)\t; zavést go autokompletační podporu ```"
 
-#. tumbleweed/golang-github-constabulary-gb/gb/summary
-#. tumbleweed/golang-github-constabulary-gb/summary
-msgid "Project based build tool for Go"
-msgstr "Projektový nástroj tvorby pro Go"
-
-#. tumbleweed/golang-github-constabulary-gb/gb/description
-#. tumbleweed/golang-github-constabulary-gb/description
-msgid ""
-"gb is a proof of concept replacement build tool for the Go programming "
-"language."
-msgstr "gb je důkaz náhrady koncepce nástroje tvorby pro programovací jazyk Go."
-
 #. tumbleweed/golang-org-x-tools/go-tools/summary
 #. tumbleweed/golang-org-x-tools/summary
 msgid "Additional toolsgraphy libraries"
@@ -338,8 +341,8 @@ msgid ""
 "caching purposes (hence \"daemon\") and provides context-sensitive "
 "autocompletion."
 msgstr ""
-"Gocode je pomocný nástroj pro integraci s Vaším editorem zdrojového kódu ("
-"jako je vim nebo emacs). Z kešovacích důvodů používá architekturu klient-"
+"Gocode je pomocný nástroj pro integraci s Vaším editorem zdrojového kódu "
+"(jako je vim nebo emacs). Z kešovacích důvodů používá architekturu klient-"
 "server (proto služba či \"démon\") a poskytuje kontextově citlivou "
 "autokompletaci."
 
@@ -361,13 +364,15 @@ msgstr ""
 "akceptující formátovací řetězec. Tento balíček také poskytuje výhodnou "
 "obálku pro každou funkci balíčku \"fmt\", která přijímá formátovací řetězec."
 
-#. tumbleweed/golang-github-pkg-errors/summary
-msgid "Simple error handling primitives"
-msgstr "Základní jednoduché zpracování chyb"
+#. tumbleweed/golang-github-naoina-go-stringutil/summary
+#, fuzzy
+#| msgid "Miscellaneous functions for formatting text"
+msgid "String functions for Golang"
+msgstr "Pomocné funkce pro formátování textu"
 
-#. tumbleweed/golang-github-pkg-errors/description
-msgid "Package errors provides simple error handling primitives."
-msgstr "Balíček poskytuje základní, jednoduché zpracování chyb."
+#. tumbleweed/golang-github-naoina-go-stringutil/description
+msgid "This library contains various string manipulation functions for Golang."
+msgstr ""
 
 #. tumbleweed/golang-github-rogpeppe-godef/summary
 msgid "Find symbol information in Go source"
@@ -436,18 +441,6 @@ msgstr ""
 "Balíček \"websocket\" implementuje klient a server protokolu WebSocket podle "
 "specifikace RFC-6455."
 
-#. tumbleweed/golang-org-x-sys/summary
-msgid "Go packages for low-level interaction with the operating system"
-msgstr "Balíčky Go pro nízkoúrovňovou interakci s operačním systémem"
-
-#. tumbleweed/golang-org-x-sys/description
-msgid ""
-"This repository holds supplemental Go packages for low-level interactions "
-"with the operating system."
-msgstr ""
-"Toto úložiště obsahuje doplňkové balíčky Go pro nízkoúrovňovou interakci s "
-"operačním systémem."
-
 #. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/summary
 msgid "Golang autocompletion files for Vim"
 msgstr "Autokompletační soubory Golang pro editor Vim"
@@ -455,6 +448,21 @@ msgstr "Autokompletační soubory Golang pro editor Vim"
 #. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/description
 msgid "Vim autocompletion for the Go programming language."
 msgstr "Autokompletace Vim pro programovací jazyk Go."
+
+#~ msgid "Project based build tool for Go"
+#~ msgstr "Projektový nástroj tvorby pro Go"
+
+#~ msgid ""
+#~ "gb is a proof of concept replacement build tool for the Go programming "
+#~ "language."
+#~ msgstr ""
+#~ "gb je důkaz náhrady koncepce nástroje tvorby pro programovací jazyk Go."
+
+#~ msgid "Simple error handling primitives"
+#~ msgstr "Základní jednoduché zpracování chyb"
+
+#~ msgid "Package errors provides simple error handling primitives."
+#~ msgstr "Balíček poskytuje základní, jednoduché zpracování chyb."
 
 #, fuzzy
 #~ msgid "Go bindings for SDL"

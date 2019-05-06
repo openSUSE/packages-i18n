@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-30 14:13+0000\n"
+"POT-Creation-Date: 2019-05-06 14:28+0000\n"
 "PO-Revision-Date: 2018-12-11 06:01+0000\n"
 "Last-Translator: Marguerite Su <i@marguerite.su>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
@@ -43,17 +43,19 @@ msgstr "私有和不使用开源许可证的软件包。"
 #. leap/patterns-desktop/patterns-desktop-books/summary
 #. leap/patterns-desktop/patterns-desktop-books/category
 #. tumbleweed/dhcp/dhcp-doc/summary
+#. tumbleweed/patterns-base/patterns-base-documentation/category
 #. tumbleweed/patterns-desktop/patterns-desktop-books/summary
 #. tumbleweed/patterns-desktop/patterns-desktop-books/category
 msgid "Documentation"
 msgstr "文档"
 
 #. leap/patterns-base/patterns-base-32bit/summary
+#. tumbleweed/patterns-base/patterns-base-32bit/summary
 msgid "32-Bit Runtime Environment"
 msgstr "32 位运行环境"
 
 #. leap/patterns-base/patterns-base-32bit/description
-#. tumbleweed/patterns-base/patterns-base-x86/description
+#. tumbleweed/patterns-base/patterns-base-32bit/description
 msgid ""
 "This will install the 32-bit variant of all selected patterns. This allows "
 "to execute 32-bit software."
@@ -80,6 +82,7 @@ msgstr "此软件集将安装全部所选软件集的 32 位变体。之后将�
 #. leap/patterns-yast/patterns-yast-x11_yast/category
 #. leap/patterns-yast/patterns-yast-yast2_basis/category
 #. leap/patterns-yast/patterns-yast-yast2_install_wf/category
+#. tumbleweed/patterns-base/patterns-base-32bit/category
 #. tumbleweed/patterns-base/patterns-base-apparmor/category
 #. tumbleweed/patterns-base/patterns-base-apparmor_opt/category
 #. tumbleweed/patterns-base/patterns-base-base/category
@@ -88,11 +91,9 @@ msgstr "此软件集将安装全部所选软件集的 32 位变体。之后将�
 #. tumbleweed/patterns-base/patterns-base-enhanced_base/category
 #. tumbleweed/patterns-base/patterns-base-enhanced_base_opt/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base/category
-#. tumbleweed/patterns-base/patterns-base-minimal_base_conflicts/category
 #. tumbleweed/patterns-base/patterns-base-sw_management/category
 #. tumbleweed/patterns-base/patterns-base-transactional_base/category
 #. tumbleweed/patterns-base/patterns-base-update_test/category
-#. tumbleweed/patterns-base/patterns-base-x86/category
 #. tumbleweed/patterns-desktop/patterns-desktop-laptop/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/category
 #. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/category
@@ -109,6 +110,7 @@ msgstr "基础技术"
 #. leap/patterns-base/patterns-base-apparmor-32bit/summary
 #. leap/patterns-base/patterns-base-apparmor_opt/summary
 #. tumbleweed/patterns-base/patterns-base-apparmor/summary
+#. tumbleweed/patterns-base/patterns-base-apparmor-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-apparmor_opt/summary
 msgid "AppArmor"
 msgstr "AppArmor"
@@ -129,24 +131,23 @@ msgstr ""
 "无需额外的知识背景。"
 
 #. leap/patterns-base/patterns-base-apparmor-32bit/description
+#. tumbleweed/patterns-base/patterns-base-apparmor-32bit/description
 msgid "The 32bit pattern complementing apparmor."
 msgstr "apparmor 软件集的 32 位版本。"
 
 #. leap/patterns-base/patterns-base-base/summary
 #. leap/patterns-base/patterns-base-base-32bit/summary
-#. leap/patterns-base/patterns-base-minimal_base/summary
-#. leap/patterns-base/patterns-base-minimal_base-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-base/summary
-#. tumbleweed/patterns-base/patterns-base-minimal_base/summary
-#. tumbleweed/patterns-base/patterns-base-minimal_base_conflicts/summary
-msgid "Base System"
-msgstr "基础系统"
+#. tumbleweed/patterns-base/patterns-base-base-32bit/summary
+#, fuzzy
+#| msgid "MATE Base System"
+msgid "Minimal Base System"
+msgstr "MATE 基础系统"
 
 #. leap/patterns-base/patterns-base-base/description
 #. leap/patterns-base/patterns-base-basesystem/description
 #. tumbleweed/patterns-base/patterns-base-base/description
 #. tumbleweed/patterns-base/patterns-base-basesystem/description
-#. tumbleweed/patterns-base/patterns-base-minimal_base_conflicts/description
 msgid ""
 "This is the base runtime system.  It contains only a minimal multiuser "
 "booting system. For running on real hardware, you need to add additional "
@@ -156,12 +157,15 @@ msgstr ""
 "您需要添加其它软件包和软件集来使此软件集发挥其自身的作用。"
 
 #. leap/patterns-base/patterns-base-base-32bit/description
+#. tumbleweed/patterns-base/patterns-base-base-32bit/description
 msgid "The 32bit pattern complementing base."
 msgstr "base 软件集的 32 位版本。"
 
 #. leap/patterns-base/patterns-base-basesystem/summary
 #. tumbleweed/patterns-base/patterns-base-basesystem/summary
-msgid "Base System (alias pattern for base)"
+#, fuzzy
+#| msgid "Base System (alias pattern for base)"
+msgid "Minimal Base System (alias pattern for base)"
 msgstr "基础系统（基础软件集的别名）"
 
 #. leap/patterns-base/patterns-base-console/summary
@@ -178,6 +182,8 @@ msgstr "对那些使用控制台而不用图形桌面环境的用户有用的程
 
 #. leap/patterns-base/patterns-base-documentation/summary
 #. leap/patterns-base/patterns-base-documentation/description
+#. tumbleweed/patterns-base/patterns-base-documentation/summary
+#. tumbleweed/patterns-base/patterns-base-documentation/description
 msgid "Help and Support Documentation"
 msgstr "帮助和支持文档"
 
@@ -185,6 +191,7 @@ msgstr "帮助和支持文档"
 #. leap/patterns-base/patterns-base-enhanced_base-32bit/summary
 #. leap/patterns-base/patterns-base-enhanced_base_opt/summary
 #. tumbleweed/patterns-base/patterns-base-enhanced_base/summary
+#. tumbleweed/patterns-base/patterns-base-enhanced_base-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-enhanced_base_opt/summary
 msgid "Enhanced Base System"
 msgstr "扩展的基础系统"
@@ -198,8 +205,18 @@ msgid ""
 msgstr "这是扩展的基础运行时系统，附带了许多便利的软件包。"
 
 #. leap/patterns-base/patterns-base-enhanced_base-32bit/description
+#. tumbleweed/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "enhanced_base 软件集的 32 位版本。"
+
+#. leap/patterns-base/patterns-base-minimal_base/summary
+#. leap/patterns-base/patterns-base-minimal_base-32bit/summary
+#. tumbleweed/patterns-base/patterns-base-minimal_base/summary
+#. tumbleweed/patterns-base/patterns-base-minimal_base-32bit/summary
+#, fuzzy
+#| msgid "Minimal System (Appliances)"
+msgid "Minimal Appliance Base"
+msgstr "极简系统 (Appliances)"
 
 #. leap/patterns-base/patterns-base-minimal_base/description
 #. tumbleweed/patterns-base/patterns-base-minimal_base/description
@@ -212,12 +229,14 @@ msgstr ""
 "以登录，打开一个壳层，这就是全部了。它的目的是作为 Appliances 的基础。"
 
 #. leap/patterns-base/patterns-base-minimal_base-32bit/description
+#. tumbleweed/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
 msgstr "minimal_base 软件集的 32 位版本。"
 
 #. leap/patterns-base/patterns-base-sw_management/summary
 #. leap/patterns-base/patterns-base-sw_management-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-sw_management/summary
+#. tumbleweed/patterns-base/patterns-base-sw_management-32bit/summary
 msgid "Software Management"
 msgstr "软件管理"
 
@@ -229,6 +248,7 @@ msgid ""
 msgstr "此软件集提供了一个用于使您的系统保持最新的图形应用程序和命令行工具。"
 
 #. leap/patterns-base/patterns-base-sw_management-32bit/description
+#. tumbleweed/patterns-base/patterns-base-sw_management-32bit/description
 msgid "The 32bit pattern complementing sw_management."
 msgstr "sw_management 软件集的 32 位版本。"
 
@@ -264,6 +284,9 @@ msgstr "测试更新栈工作状况所需的软件包。这些小软件包本身
 #. leap/patterns-base/patterns-base-x11_enhanced-32bit/summary
 #. leap/patterns-base/patterns-base-x11_opt/summary
 #. tumbleweed/patterns-base/patterns-base-x11/summary
+#. tumbleweed/patterns-base/patterns-base-x11-32bit/summary
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced/summary
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-x11_opt/summary
 msgid "X Window System"
 msgstr "X 窗口系统"
@@ -272,6 +295,7 @@ msgstr "X 窗口系统"
 #. leap/patterns-base/patterns-base-x11_enhanced/description
 #. leap/patterns-base/patterns-base-x11_opt/description
 #. tumbleweed/patterns-base/patterns-base-x11/description
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced/description
 #. tumbleweed/patterns-base/patterns-base-x11_opt/description
 msgid ""
 "The X Window System provides the only standard platform-independent "
@@ -306,6 +330,7 @@ msgstr ""
 #. leap/patterns-xfce/patterns-xfce-xfce_basis/category
 #. leap/patterns-xfce/patterns-xfce-xfce_office/category
 #. tumbleweed/patterns-base/patterns-base-x11/category
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced/category
 #. tumbleweed/patterns-base/patterns-base-x11_opt/category
 #. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/category
 #. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
@@ -330,10 +355,12 @@ msgid "Graphical Environments"
 msgstr "图形环境"
 
 #. leap/patterns-base/patterns-base-x11-32bit/description
+#. tumbleweed/patterns-base/patterns-base-x11-32bit/description
 msgid "The 32bit pattern complementing x11."
 msgstr "x11 软件集的 32 位版本。"
 
 #. leap/patterns-base/patterns-base-x11_enhanced-32bit/description
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "x11_enhanced 软件集的 32 位版本。"
 
@@ -369,11 +396,6 @@ msgstr "数码照片和图像处理。"
 #. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_netutils/category
 #. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_office/category
 #. leap/patterns-leechcraft/patterns-leechcraft-leechcraft_utilities/category
-#. leap/patterns-media/patterns-media-rest_cd_core/category
-#. leap/patterns-media/patterns-media-rest_cd_gnome/category
-#. leap/patterns-media/patterns-media-rest_cd_kde/category
-#. leap/patterns-media/patterns-media-rest_cd_x11/category
-#. leap/patterns-media/patterns-media-rest_core_dvd/category
 #. leap/patterns-office/patterns-office-office/category
 #. tumbleweed/patterns-desktop/patterns-desktop-imaging/category
 #. tumbleweed/patterns-desktop/patterns-desktop-imaging_opt/category
@@ -459,9 +481,7 @@ msgstr "使用 C/C++ 和其它从 C 语言衍生出来的语言进行软件开�
 #. leap/patterns-devel-ruby/patterns-devel-ruby-devel_ruby/category
 #. leap/patterns-devel-tcl/patterns-devel-tcl-devel_tcl/category
 #. leap/patterns-gnome/patterns-gnome-devel_gnome/category
-#. leap/patterns-haskell/patterns-haskell-haskell_platform/category
 #. leap/patterns-hpc/patterns-hpc-development_node/category
-#. leap/patterns-kde/patterns-kde-devel_kde/category
 #. leap/patterns-kde/patterns-kde-devel_kde_frameworks/category
 #. leap/patterns-kde/patterns-kde-devel_qt5/category
 #. leap/patterns-yast/patterns-yast-devel_yast/category
@@ -486,6 +506,7 @@ msgid "Development"
 msgstr "开发"
 
 #. leap/patterns-devel-base/patterns-devel-base-devel_basis/summary
+#. leap/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
@@ -496,7 +517,13 @@ msgstr "基础开发环境"
 msgid "Minimal set of tools for compiling and linking applications."
 msgstr "编译和链接应用程序所需的最小工具集。"
 
+#. leap/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
+msgid "The 32bit pattern complementing devel_basis."
+msgstr "devel_basis 软件集的 32 位版本。"
+
 #. leap/patterns-devel-base/patterns-devel-base-devel_kernel/summary
+#. leap/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/summary
 msgid "Linux Kernel Development"
@@ -506,6 +533,11 @@ msgstr "Linux 内核开发"
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel/description
 msgid "Tools for Linux kernel development."
 msgstr "Linux 内核开发工具。"
+
+#. leap/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
+#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
+msgid "The 32bit pattern complementing devel_kernel."
+msgstr "devel_kernel 软件集的 32 位版本。"
 
 #. leap/patterns-devel-base/patterns-devel-base-devel_rpm_build/summary
 #. tumbleweed/patterns-devel-base/patterns-devel-base-devel_rpm_build/summary
@@ -800,19 +832,6 @@ msgstr "软件包管理 - GNOME 图形化工具"
 msgid "Package Management - Graphical Tools"
 msgstr "软件包管理 - 图形化工具"
 
-#. leap/patterns-haskell/patterns-haskell-haskell_platform/summary
-msgid "Haskell Platform"
-msgstr "Haskell 平台"
-
-#. leap/patterns-haskell/patterns-haskell-haskell_platform/description
-msgid ""
-"The Haskell Platform is the easiest way to get started with programming "
-"Haskell. It comes with all you need to get up and running. Think of it as "
-"\"Haskell: batteries included.\""
-msgstr ""
-"Haskell 平台是开始编程 Haskell 的最简单的方法。它包含了所有你需要的启动和运行"
-"的程序。它的思想是“Haskell: batteries included.”"
-
 #. leap/patterns-hpc/patterns-hpc-compute_node/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
@@ -902,17 +921,10 @@ msgid ""
 "server component of the slurm workload manager."
 msgstr "该软件包提供了全部运行 slurm 工作量管理器核心服务器组件相关的软件包。"
 
-#. leap/patterns-kde/patterns-kde-devel_kde/summary
-msgid "KDE Development"
-msgstr "KDE 开发"
-
-#. leap/patterns-kde/patterns-kde-devel_kde/description
-msgid "KDE development packages."
-msgstr "KDE 开发软件包。"
-
 #. leap/patterns-kde/patterns-kde-devel_kde_frameworks/summary
-msgid "KDE Frameworks Development"
-msgstr "KDE 框架开发"
+#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
+msgid "KDE Frameworks and Plasma Development"
+msgstr "KDE 框架和 Plasma 开发"
 
 #. leap/patterns-kde/patterns-kde-devel_kde_frameworks/description
 #. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/description
@@ -925,24 +937,20 @@ msgid "Qt 5 Development"
 msgstr "Qt 5 开发"
 
 #. leap/patterns-kde/patterns-kde-devel_qt5/description
-msgid ""
-"Tools and libraries for software development using Qt 5, the latest version "
-"of the Qt toolkit."
-msgstr "用于使用 Qt 5 进行软件开发的工具和库，Qt 工具集的最新版本。"
+#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
+msgid "Tools and libraries for software development using Qt 5."
+msgstr "使用 Qt5 进行软件开发所需的工具和库文件。"
 
 #. leap/patterns-kde/patterns-kde-kde/summary
-msgid "KDE Plasma 5 Desktop Environment"
-msgstr "KDE Plasma 5 桌面环境"
+#. tumbleweed/patterns-kde/patterns-kde-kde/summary
+msgid "KDE Applications and Plasma 5 Desktop"
+msgstr "KDE 应用程序和 Plasma 5 桌面"
 
 #. leap/patterns-kde/patterns-kde-kde/description
+#. tumbleweed/patterns-kde/patterns-kde-kde/description
 msgid ""
-"KDE is a powerful free software graphical desktop environment for Linux "
-"workstations. It combines ease of use, contemporary functionality, and "
-"outstanding graphical design with the technology of the Linux operating "
-"system."
-msgstr ""
-"KDE 是一个用于 Linux 工作站的强大的自由软件图形桌面环境。它将易用性、现代的功"
-"能、杰出的图形设计与 Linux 操作系统的技术结合了起来。"
+"Packages providing the Plasma desktop environment and applications from KDE."
+msgstr "该软件包提供了 KDE Plasma 桌面环境和应用程序。"
 
 #. leap/patterns-kde/patterns-kde-kde_edutainment/summary
 #. tumbleweed/patterns-kde/patterns-kde-kde_edutainment/summary
@@ -961,6 +969,7 @@ msgstr "KDE 应用程序 - 用电脑教孩子的工具"
 #. leap/patterns-kde/patterns-kde-kde_internet/category
 #. leap/patterns-kde/patterns-kde-kde_multimedia/category
 #. leap/patterns-kde/patterns-kde-kde_office/category
+#. leap/patterns-kde/patterns-kde-kde_pim/category
 #. leap/patterns-kde/patterns-kde-kde_utilities/category
 #. leap/patterns-kde/patterns-kde-kde_utilities_opt/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_edutainment/category
@@ -992,8 +1001,11 @@ msgid "KDE Integrated Development Environment"
 msgstr "KDE 集成开发环境"
 
 #. leap/patterns-kde/patterns-kde-kde_ide/description
-msgid "Development environment for the Plasma Desktop"
-msgstr "Plasma 桌面开发环境"
+#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
+msgid ""
+"KDE software for development (editors, integrated development environments, "
+"and associated tools)."
+msgstr "KDE 软件开发软件集（编辑器，集成开发环境和相关工具）。"
 
 #. leap/patterns-kde/patterns-kde-kde_imaging/summary
 #. tumbleweed/patterns-kde/patterns-kde-kde_imaging/summary
@@ -1032,9 +1044,20 @@ msgstr "KDE 应用程序 - 多媒体"
 msgid "KDE Office"
 msgstr "KDE 办公"
 
+#. leap/patterns-kde/patterns-kde-kde_pim/summary
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/summary
+msgid "KDE PIM Suite"
+msgstr "KDE 个人信息管理套件"
+
+#. leap/patterns-kde/patterns-kde-kde_pim/description
+#. tumbleweed/patterns-kde/patterns-kde-kde_pim/description
+msgid "The KDE PIM Suite (Kontact, KMail, KOrganizer, ...)."
+msgstr "KDE 个人信息管理套件 (Kontact, Kmail, KOrganizer, ...)。"
+
 #. leap/patterns-kde/patterns-kde-kde_plasma/summary
-msgid "KDE Plasma 5 Desktop"
-msgstr "KDE Plasma 5 桌面"
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
+msgid "KDE Plasma 5 Desktop Base"
+msgstr "KDE Plasma 5 基本桌面"
 
 #. leap/patterns-kde/patterns-kde-kde_plasma/description
 #. tumbleweed/patterns-kde/patterns-kde-kde_plasma/description
@@ -1228,34 +1251,6 @@ msgstr "MATE 办公"
 #. tumbleweed/patterns-mate/patterns-mate-mate_utilities/description
 msgid "MATE Utilities"
 msgstr "MATE 实用工具"
-
-#. leap/patterns-media/patterns-media-rest_cd_core/summary
-#. leap/patterns-media/patterns-media-rest_cd_gnome/summary
-#. leap/patterns-media/patterns-media-rest_cd_kde/summary
-#. leap/patterns-media/patterns-media-rest_cd_x11/summary
-#. leap/patterns-media/patterns-media-rest_core_dvd/summary
-#. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
-#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
-#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/summary
-#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/summary
-#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/summary
-#. tumbleweed/patterns-media/patterns-media-rest_dvd/summary
-msgid "Remaining Software"
-msgstr "剩余软件"
-
-#. leap/patterns-media/patterns-media-rest_cd_core/description
-#. leap/patterns-media/patterns-media-rest_cd_gnome/description
-#. leap/patterns-media/patterns-media-rest_cd_kde/description
-#. leap/patterns-media/patterns-media-rest_cd_x11/description
-#. leap/patterns-media/patterns-media-rest_core_dvd/description
-#. tumbleweed/patterns-media/patterns-media-rest_cd_core/description
-#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/description
-#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/description
-#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/description
-#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/description
-#. tumbleweed/patterns-media/patterns-media-rest_dvd/description
-msgid "Packages that are on CD but not in other patterns."
-msgstr "位于 CD 中但不属于其它软件集的软件包。"
 
 #. leap/patterns-network/patterns-network-network_admin/summary
 #. tumbleweed/patterns-network/patterns-network-network_admin/summary
@@ -1572,159 +1567,284 @@ msgstr "YaST 安装软件包"
 msgid "YaST tools for installing your system."
 msgstr "系统安装所需的 YaST 工具。"
 
-#. tumbleweed/patterns-base/patterns-base-x86/summary
-msgid "x86 Runtime Environment"
-msgstr "x86 运行环境"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/summary
-msgid "openSUSE Kubic MicroOS"
+#. tumbleweed/openSUSE-MicroOS-release/summary
+#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-dvd/summary
+#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-kubic-dvd/summary
+#. tumbleweed/patterns-microos/patterns-microos-base/summary
+#, fuzzy
+#| msgid "openSUSE Kubic MicroOS"
+msgid "openSUSE MicroOS"
 msgstr "openSUSE Kubic 迷你系统"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/description
+#. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
+msgid "Container Runtime for non-clustered systems"
+msgstr ""
+
+#. tumbleweed/patterns-containers/patterns-containers-container_runtime/description
+#, fuzzy
+#| msgid "This pattern installs the default container runtime packages."
 msgid ""
-"This is the MicroOS runtime system. It contains only a minimal multiuser "
-"booting system."
-msgstr "这是 MicroOS 运行时系统。它仅包含了一个极简的多用户可引导系统。"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-MicroOS/category
-#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/category
-#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/category
-#. tumbleweed/patterns-caasp/patterns-caasp-apparmor/category
-#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/category
-#. tumbleweed/patterns-caasp/patterns-caasp-hardware/category
-#. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/category
-#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/category
-#. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/category
-#. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/category
-msgid "openSUSE Kubic"
-msgstr "openSUSE Kubic"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/summary
-msgid "Alternative Container Runtime"
-msgstr "额外的容器运行时"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-alt-container-runtime/description
-msgid "This pattern installs the alternative container runtime packages."
-msgstr "该软件集将安装额外的容器运行时软件包。"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/summary
-msgid "Alternative Packages only for the DVD of openSUSE Kubic"
-msgstr "仅用于 openSUSE Kubic DVD 的附加软件包"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-alt-onlyDVD/description
-msgid "Alternative additonal packages on a openSUSE Kubic DVD."
-msgstr "openSUSE Kubic DVD 上的额外附加软件包。"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-apparmor/summary
-msgid "Apparmor Support"
-msgstr "Apparmor 支持"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-apparmor/description
-msgid ""
-"Packages required to enable Apparmor on SUSE CaaS Platform or openSUSE Kubic."
-msgstr "在 SUSE CaaS 平台或 openSUSE Kubic 上启用 Apparmor 所需的软件包。"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/summary
-msgid "Container Runtime"
-msgstr "容器运行时"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-container-runtime/description
-msgid "This pattern installs the default container runtime packages."
+"This pattern installs the default container runtime packages for non-"
+"clustered systems."
 msgstr "该软件集将安装默认的容器运行时软件包。"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-hardware/summary
-msgid "Hardware Support"
-msgstr "硬件支持"
+#. tumbleweed/patterns-containers/patterns-containers-container_runtime/category
+#. tumbleweed/patterns-containers/patterns-containers-container_runtime_kubernetes/category
+#. tumbleweed/patterns-containers/patterns-containers-kubeadm/category
+#, fuzzy
+#| msgid "Container Runtime"
+msgid "Containers"
+msgstr "容器运行时"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-hardware/description
+#. tumbleweed/patterns-containers/patterns-containers-container_runtime_kubernetes/summary
+msgid "Container Runtime for kubernetes clustered systems"
+msgstr ""
+
+#. tumbleweed/patterns-containers/patterns-containers-container_runtime_kubernetes/description
+#, fuzzy
+#| msgid "This pattern installs the default container runtime packages."
 msgid ""
-"Packages required to install SUSE CaaS Platform or openSUSE Kubic on real "
-"hardware."
-msgstr "在真实硬件上安装 SUSE CaaS 平台或 openSUSE Kubic 所需的软件包。"
+"This pattern installs the default container runtime packages for kubernetes "
+"clustered systems."
+msgstr "该软件集将安装默认的容器运行时软件包。"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/summary
-msgid "IMA/EVM Support"
-msgstr "IMA/EVM 支持"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-ima_evm/description
-msgid ""
-"Packages required to enable IMA/EVM on SUSE CaaS Platform or openSUSE Kubic."
-msgstr "在 SUSE CaaS 平台或 openSUSE Kubic 上启用 IMA/EVM 所需的软件包。"
-
-#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/summary
+#. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
 msgid "kubeadm Stack"
 msgstr "kubeadm 栈"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-kubeadm/description
+#. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
+#, fuzzy
+#| msgid ""
+#| "This provides a vanilla kubeadm stack. It contains everything needed to "
+#| "run kubernetes directly on top of MicroOS."
 msgid ""
-"This provides a vanilla kubeadm stack. It contains everything needed to run "
-"kubernetes directly on top of MicroOS."
+"This provides a vanilla kubeadm stack. It contains everything needed to "
+"setup kubernetes using kubeadm."
 msgstr ""
 "该软件集提供了上游的 kubeadm 栈。它涵盖了在迷你系统上直接运行 kubernetes 所需"
 "的全部软件包。"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/summary
-msgid "Packages only for the DVD of openSUSE Kubic"
+#. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
+#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
+#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/summary
+#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/summary
+#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/summary
+#. tumbleweed/patterns-media/patterns-media-rest_dvd/summary
+msgid "Remaining Software"
+msgstr "剩余软件"
+
+#. tumbleweed/patterns-media/patterns-media-rest_cd_core/description
+#. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/description
+#. tumbleweed/patterns-media/patterns-media-rest_cd_kde/description
+#. tumbleweed/patterns-media/patterns-media-rest_cd_x11/description
+#. tumbleweed/patterns-media/patterns-media-rest_core_dvd/description
+#. tumbleweed/patterns-media/patterns-media-rest_dvd/description
+msgid "Packages that are on CD but not in other patterns."
+msgstr "位于 CD 中但不属于其它软件集的软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-alt_onlyDVD/summary
+#, fuzzy
+#| msgid "Alternative Packages only for the DVD of openSUSE Kubic"
+msgid "Alternative Packages only for the DVD of openSUSE MicroOS"
+msgstr "仅用于 openSUSE Kubic DVD 的附加软件包"
+
+#. tumbleweed/patterns-microos/patterns-microos-alt_onlyDVD/description
+#, fuzzy
+#| msgid "Alternative additonal packages on a openSUSE Kubic DVD."
+msgid "Alternative additional packages on a openSUSE MicroOS DVD."
+msgstr "openSUSE Kubic DVD 上的额外附加软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-alt_onlyDVD/category
+#. tumbleweed/patterns-microos/patterns-microos-apparmor/category
+#. tumbleweed/patterns-microos/patterns-microos-base/category
+#. tumbleweed/patterns-microos/patterns-microos-cloud/category
+#. tumbleweed/patterns-microos/patterns-microos-defaults/category
+#. tumbleweed/patterns-microos/patterns-microos-hardware/category
+#. tumbleweed/patterns-microos/patterns-microos-ima_evm/category
+#. tumbleweed/patterns-microos/patterns-microos-onlyDVD/category
+#. tumbleweed/patterns-microos/patterns-microos-selinux/category
+#. tumbleweed/patterns-microos/patterns-microos-sssd_ldap/category
+msgid "MicroOS"
+msgstr ""
+
+#. tumbleweed/patterns-microos/patterns-microos-apparmor/summary
+msgid "Apparmor Support"
+msgstr "Apparmor 支持"
+
+#. tumbleweed/patterns-microos/patterns-microos-apparmor/description
+#, fuzzy
+#| msgid "Packages needed to enable Apparmor on openSUSE Kubic"
+msgid "Packages required to enable Apparmor on openSUSE MicroOS."
+msgstr "在 openSUSE Kubic 上启用 Apparmor 的必需包"
+
+#. tumbleweed/patterns-microos/patterns-microos-base/description
+#. tumbleweed/patterns-microos/patterns-microos-basesystem/description
+#, fuzzy
+#| msgid ""
+#| "This is the MicroOS runtime system. It contains only a minimal multiuser "
+#| "booting system."
+msgid ""
+"This is the openSUSE MicroOS runtime system. It contains only a minimal "
+"multiuser booting system."
+msgstr "这是 MicroOS 运行时系统。它仅包含了一个极简的多用户可引导系统。"
+
+#. tumbleweed/patterns-microos/patterns-microos-basesystem/summary
+#, fuzzy
+#| msgid "Base System (alias pattern for base)"
+msgid "openSUSE MicroOS Base System (alias pattern for microos_base)"
+msgstr "基础系统（基础软件集的别名）"
+
+#. tumbleweed/patterns-microos/patterns-microos-cloud/summary
+msgid "Support for Cloud"
+msgstr ""
+
+#. tumbleweed/patterns-microos/patterns-microos-cloud/description
+#, fuzzy
+#| msgid ""
+#| "Packages required to enable IMA/EVM on SUSE CaaS Platform or openSUSE "
+#| "Kubic."
+msgid "Packages required to enable openSUSE MicroOS in the Cloud."
+msgstr "在 SUSE CaaS 平台或 openSUSE Kubic 上启用 IMA/EVM 所需的软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-defaults/summary
+#, fuzzy
+#| msgid "openSUSE Kubic MicroOS"
+msgid "openSUSE MicroOS defaults"
+msgstr "openSUSE Kubic 迷你系统"
+
+#. tumbleweed/patterns-microos/patterns-microos-defaults/description
+msgid ""
+"This provides default packages for openSUSE MicroOS which can be optionally "
+"replaced by alternatives."
+msgstr ""
+
+#. tumbleweed/patterns-microos/patterns-microos-hardware/summary
+msgid "Hardware Support"
+msgstr "硬件支持"
+
+#. tumbleweed/patterns-microos/patterns-microos-hardware/description
+#, fuzzy
+#| msgid ""
+#| "Packages required to install SUSE CaaS Platform or openSUSE Kubic on real "
+#| "hardware."
+msgid "Packages required to install openSUSE MicroOS on real hardware."
+msgstr "在真实硬件上安装 SUSE CaaS 平台或 openSUSE Kubic 所需的软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-ima_evm/summary
+msgid "IMA/EVM Support"
+msgstr "IMA/EVM 支持"
+
+#. tumbleweed/patterns-microos/patterns-microos-ima_evm/description
+#, fuzzy
+#| msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
+msgid "Packages required to enable IMA/EVM on openSUSE MicroOS."
+msgstr "在 openSUSE Kubic 上启用 IMA/EVM 的必需包"
+
+#. tumbleweed/patterns-microos/patterns-microos-onlyDVD/summary
+#, fuzzy
+#| msgid "Packages only for the DVD of openSUSE Kubic"
+msgid "Packages only for the DVD of openSUSE MicroOS"
 msgstr "仅适用于 openSUSE Kubic DVD 的软件包"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-onlyDVD/description
-msgid "Additonal packages on a openSUSE Kubic DVD."
+#. tumbleweed/patterns-microos/patterns-microos-onlyDVD/description
+#, fuzzy
+#| msgid "Additonal packages on a openSUSE Kubic DVD."
+msgid "Additional packages on a openSUSE MicroOS DVD."
 msgstr "openSUSE Kubic DVD 上的附加软件包。"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/summary
+#. tumbleweed/patterns-microos/patterns-microos-selinux/summary
+#, fuzzy
+#| msgid "IMA/EVM Support"
+msgid "SELinux Support"
+msgstr "IMA/EVM 支持"
+
+#. tumbleweed/patterns-microos/patterns-microos-selinux/description
+#, fuzzy
+#| msgid ""
+#| "This are packages which are required to enable SELinux on SUSE CaaS "
+#| "Platform or openSUSE Kubic product."
+msgid ""
+"This are packages which are required to enable SELinux on openSUSE MicroOS"
+msgstr ""
+"这些是在 SUSE CaaS 平台或 openSUSE Kubic 产品上启用 SELinux 所需的软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-sssd_ldap/summary
 msgid "LDAP client"
 msgstr "LDAP 客户端"
 
-#. tumbleweed/patterns-caasp/patterns-caasp-sssd-ldap/description
+#. tumbleweed/patterns-microos/patterns-microos-sssd_ldap/description
+#, fuzzy
+#| msgid ""
+#| "Packages required to enable LDAP client support via sssd on SUSE CaaS "
+#| "Platform or openSUSE Kubic."
 msgid ""
-"Packages required to enable LDAP client support via sssd on SUSE CaaS "
-"Platform or openSUSE Kubic."
+"Packages required to enable LDAP client support via sssd on openSUSE MicroOS."
 msgstr ""
 "在 SUSE CaaS 平台或 openSUSE Kubic 上通过 sssd 开启 LDAP 客户端支持所需的软件"
 "包。"
 
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
-msgid "The 32bit pattern complementing devel_basis."
-msgstr "devel_basis 软件集的 32 位版本。"
+#~ msgid "Base System"
+#~ msgstr "基础系统"
 
-#. tumbleweed/patterns-devel-base/patterns-devel-base-devel_kernel-32bit/description
-msgid "The 32bit pattern complementing devel_kernel."
-msgstr "devel_kernel 软件集的 32 位版本。"
+#~ msgid "Haskell Platform"
+#~ msgstr "Haskell 平台"
 
-#. tumbleweed/patterns-kde/patterns-kde-devel_kde_frameworks/summary
-msgid "KDE Frameworks and Plasma Development"
-msgstr "KDE 框架和 Plasma 开发"
+#~ msgid ""
+#~ "The Haskell Platform is the easiest way to get started with programming "
+#~ "Haskell. It comes with all you need to get up and running. Think of it as "
+#~ "\"Haskell: batteries included.\""
+#~ msgstr ""
+#~ "Haskell 平台是开始编程 Haskell 的最简单的方法。它包含了所有你需要的启动和"
+#~ "运行的程序。它的思想是“Haskell: batteries included.”"
 
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt5/description
-msgid "Tools and libraries for software development using Qt 5."
-msgstr "使用 Qt5 进行软件开发所需的工具和库文件。"
+#~ msgid "KDE Development"
+#~ msgstr "KDE 开发"
 
-#. tumbleweed/patterns-kde/patterns-kde-kde/summary
-msgid "KDE Applications and Plasma 5 Desktop"
-msgstr "KDE 应用程序和 Plasma 5 桌面"
+#~ msgid "KDE development packages."
+#~ msgstr "KDE 开发软件包。"
 
-#. tumbleweed/patterns-kde/patterns-kde-kde/description
-msgid ""
-"Packages providing the Plasma desktop environment and applications from KDE."
-msgstr "该软件包提供了 KDE Plasma 桌面环境和应用程序。"
+#~ msgid "KDE Frameworks Development"
+#~ msgstr "KDE 框架开发"
 
-#. tumbleweed/patterns-kde/patterns-kde-kde_ide/description
-msgid ""
-"KDE software for development (editors, integrated development environments, "
-"and associated tools)."
-msgstr "KDE 软件开发软件集（编辑器，集成开发环境和相关工具）。"
+#~ msgid ""
+#~ "Tools and libraries for software development using Qt 5, the latest "
+#~ "version of the Qt toolkit."
+#~ msgstr "用于使用 Qt 5 进行软件开发的工具和库，Qt 工具集的最新版本。"
 
-#. tumbleweed/patterns-kde/patterns-kde-kde_pim/summary
-msgid "KDE PIM Suite"
-msgstr "KDE 个人信息管理套件"
+#~ msgid "KDE Plasma 5 Desktop Environment"
+#~ msgstr "KDE Plasma 5 桌面环境"
 
-#. tumbleweed/patterns-kde/patterns-kde-kde_pim/description
-msgid "The KDE PIM Suite (Kontact, KMail, KOrganizer, ...)."
-msgstr "KDE 个人信息管理套件 (Kontact, Kmail, KOrganizer, ...)。"
+#~ msgid ""
+#~ "KDE is a powerful free software graphical desktop environment for Linux "
+#~ "workstations. It combines ease of use, contemporary functionality, and "
+#~ "outstanding graphical design with the technology of the Linux operating "
+#~ "system."
+#~ msgstr ""
+#~ "KDE 是一个用于 Linux 工作站的强大的自由软件图形桌面环境。它将易用性、现代"
+#~ "的功能、杰出的图形设计与 Linux 操作系统的技术结合了起来。"
 
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/summary
-msgid "KDE Plasma 5 Desktop Base"
-msgstr "KDE Plasma 5 基本桌面"
+#~ msgid "Development environment for the Plasma Desktop"
+#~ msgstr "Plasma 桌面开发环境"
+
+#~ msgid "KDE Plasma 5 Desktop"
+#~ msgstr "KDE Plasma 5 桌面"
+
+#~ msgid "x86 Runtime Environment"
+#~ msgstr "x86 运行环境"
+
+#~ msgid "openSUSE Kubic"
+#~ msgstr "openSUSE Kubic"
+
+#~ msgid "Alternative Container Runtime"
+#~ msgstr "额外的容器运行时"
+
+#~ msgid "This pattern installs the alternative container runtime packages."
+#~ msgstr "该软件集将安装额外的容器运行时软件包。"
+
+#~ msgid ""
+#~ "Packages required to enable Apparmor on SUSE CaaS Platform or openSUSE "
+#~ "Kubic."
+#~ msgstr "在 SUSE CaaS 平台或 openSUSE Kubic 上启用 Apparmor 所需的软件包。"
 
 #~ msgid "Read-Only Root Filesystem Tools"
 #~ msgstr "只读根文件系统工具"
@@ -1758,14 +1878,8 @@ msgstr "KDE Plasma 5 基本桌面"
 #~ msgid "Primary Functions"
 #~ msgstr "主要功能"
 
-#~ msgid "Packages needed to enable Apparmor on openSUSE Kubic"
-#~ msgstr "在 openSUSE Kubic 上启用 Apparmor 的必需包"
-
 #~ msgid "Packages needed to run openSUSE Kubic on real hardware"
 #~ msgstr "在实际硬件上运行 openSUSE Kubic 的必需包"
-
-#~ msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
-#~ msgstr "在 openSUSE Kubic 上启用 IMA/EVM 的必需包"
 
 #~ msgid ""
 #~ "This are the additonal packages which should be on a SUSE CaaS Platform "
@@ -1774,12 +1888,6 @@ msgstr "KDE Plasma 5 基本桌面"
 
 #~ msgid "Packages needed to enable SELinux on openSUSE Kubic"
 #~ msgstr "在 openSUSE Kubic 上启用 SELinux 的必需包"
-
-#~ msgid ""
-#~ "This are packages which are required to enable SELinux on SUSE CaaS "
-#~ "Platform or openSUSE Kubic product."
-#~ msgstr ""
-#~ "这些是在 SUSE CaaS 平台或 openSUSE Kubic 产品上启用 SELinux 所需的软件包。"
 
 #~ msgid "Packages needed to let openSUSE Kubic act as LDAP client"
 #~ msgstr "让 openSUSE Kubic 充当 LDAP 客户端的必需包"
@@ -2062,9 +2170,6 @@ msgstr "KDE Plasma 5 基本桌面"
 
 #~ msgid "MONO development packages"
 #~ msgstr "MONO 开发软件包"
-
-#~ msgid "Minimal System (Appliances)"
-#~ msgstr "极简系统 (Appliances)"
 
 #~ msgid "Minimal set of tools for compiling and linking applications"
 #~ msgstr "编译和链接应用程序所需的最小工具集"

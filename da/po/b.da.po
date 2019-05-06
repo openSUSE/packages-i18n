@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2018-10-30 14:13+0000\n"
+"POT-Creation-Date: 2019-05-06 14:28+0000\n"
 "PO-Revision-Date: 2017-07-26 00:23:10\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,40 +29,36 @@ msgstr ""
 msgid "Filesystem Benchmark"
 msgstr ""
 
-#. leap/BNFC/summary
-msgid "A compiler front-end generator"
+#. leap/Bear/summary
+#. tumbleweed/Bear/summary
+msgid "Tool to generate compilation database for clang tooling"
 msgstr ""
 
-#. leap/BNFC/description
+#. leap/Bear/description
+#. tumbleweed/Bear/description
 msgid ""
-"The BNF Converter is a compiler construction tool generating a compiler "
-"front-end from a Labelled BNF grammar. It was originally written to generate "
-"Haskell, but starting from Version 2.0, it can also be used for generating "
-"Java, C++, and C.\n"
+"Bear is a tool to generate compilation database for clang tooling.\n"
 "\n"
-"Given a Labelled BNF grammar the tool produces: an abstract syntax as a "
-"Haskell/C++/C module or Java directory, a case skeleton for the abstract "
-"syntax in the same language, an Alex, JLex, or Flex lexer generator file, a "
-"Happy, CUP, or Bison parser generator file, a pretty-printer as a Haskell/"
-"Java/C++/C module, a Latex file containing a readable specification of the "
-"language."
+"One way to get compilation database is to use cmake as build tool. When the "
+"project compiles with no cmake, but another build system, there is no free "
+"json file. Bear is a tool to generate such file during the build process."
 msgstr ""
 
 #. leap/Botan/summary
-#. leap/Botan/libbotan-2-5/summary
-#. leap/Botan/libbotan-2-5-32bit/summary
+#. leap/Botan/libbotan-2-10/summary
+#. leap/Botan/libbotan-2-10-32bit/summary
 #. tumbleweed/Botan/summary
-#. tumbleweed/Botan/libbotan-2-7/summary
-#. tumbleweed/Botan/libbotan-2-7-32bit/summary
+#. tumbleweed/Botan/libbotan-2-10/summary
+#. tumbleweed/Botan/libbotan-2-10-32bit/summary
 msgid "A C++ Crypto Library"
 msgstr ""
 
 #. leap/Botan/description
-#. leap/Botan/libbotan-2-5/description
-#. leap/Botan/libbotan-2-5-32bit/description
+#. leap/Botan/libbotan-2-10/description
+#. leap/Botan/libbotan-2-10-32bit/description
 #. tumbleweed/Botan/description
-#. tumbleweed/Botan/libbotan-2-7/description
-#. tumbleweed/Botan/libbotan-2-7-32bit/description
+#. tumbleweed/Botan/libbotan-2-10/description
+#. tumbleweed/Botan/libbotan-2-10-32bit/description
 msgid ""
 "Botan is a C++ library that provides support for many common cryptographic "
 "operations, including encryption, authentication, and X.509v3 certificates "
@@ -293,6 +289,28 @@ msgstr ""
 msgid "This package has a Qt4 GUI for backintime."
 msgstr ""
 
+#. leap/backward-cpp/summary
+#. tumbleweed/backward-cpp/summary
+msgid "Stack trace printer for C++"
+msgstr ""
+
+#. leap/backward-cpp/description
+#. tumbleweed/backward-cpp/description
+msgid ""
+"backward-cpp is a C++ library which prints stack traces on errors or "
+"segmentation faults."
+msgstr ""
+
+#. leap/backward-cpp/backward-cpp-devel/summary
+#. tumbleweed/backward-cpp/backward-cpp-devel/summary
+msgid "Development files for backward-cpp"
+msgstr ""
+
+#. leap/backward-cpp/backward-cpp-devel/description
+#. tumbleweed/backward-cpp/backward-cpp-devel/description
+msgid "Development files for backward-cpp, a stack trace printer for C++."
+msgstr ""
+
 #. leap/baekmuk-bitmap-fonts/summary
 #. tumbleweed/baekmuk-bitmap-fonts/summary
 msgid "Baekmuk Fonts, Bitmap Version"
@@ -325,6 +343,21 @@ msgid ""
 "Baka MPlayer is a libmpv-based multimedia player. It supports gesture "
 "seeking, desktop dimming, hardware accelerated playback (vdpau, vaapi, vda) "
 "and Youtube playback support (and others)."
+msgstr ""
+
+#. leap/ballerburg/summary
+#. tumbleweed/ballerburg/summary
+msgid "Two players, two castles, and a hill in between"
+msgstr ""
+
+#. leap/ballerburg/description
+#. tumbleweed/ballerburg/description
+msgid ""
+"Ballerburg is a castle combat game. Two players (which can be human or "
+"computer-controlled) try to destroy the opponent's castle with their "
+"cannons.\n"
+"\n"
+"Eckhard Kruse's original Ballerburg from 1987 ported to SDL."
 msgstr ""
 
 #. leap/baloo5/baloo5-file/summary
@@ -653,7 +686,6 @@ msgid "Include Files mandatory for Development of bash loadable builtins"
 msgstr ""
 
 #. leap/bash/bash-devel/description
-#. tumbleweed/bash/bash-devel/description
 msgid ""
 "This package contains the C header files for writing loadable new builtins "
 "for the interpreter Bash. Use -I /usr/include/bash/<version> on the "
@@ -743,6 +775,19 @@ msgid ""
 "whoami\t      Print out username of current user."
 msgstr ""
 
+#. leap/bat/summary
+#. tumbleweed/bat/summary
+msgid "A cat(1) clone with syntax highlighting and Git integration"
+msgstr ""
+
+#. leap/bat/description
+#. tumbleweed/bat/description
+msgid ""
+"A cat(1) clone which supports syntax highlighting for a large number of "
+"programming and markup languages. It has git integration and automatic "
+"paging."
+msgstr ""
+
 #. leap/batctl/summary
 #. tumbleweed/batctl/summary
 msgid "B.A.T.M.A.N. advanced control and management tool"
@@ -777,6 +822,19 @@ msgid ""
 "\n"
 "Bats is most useful when testing software written in Bash, but you can use "
 "it to test any UNIX program."
+msgstr ""
+
+#. leap/bazel/summary
+#. tumbleweed/bazel/summary
+msgid "Tool for the automation of building and testing of software"
+msgstr ""
+
+#. leap/bazel/description
+#. tumbleweed/bazel/description
+msgid ""
+"Tool for the automation of building and testing of software. It supports "
+"Java, C++ and Go as programing languages. It also has a support for Android "
+"and iOS as mobile operating systems."
 msgstr ""
 
 #. leap/bb/summary
@@ -858,53 +916,43 @@ msgid "This package contains utilities for configuring the bcache Module."
 msgstr ""
 
 #. leap/bcc/bcc-devel/summary
-#. tumbleweed/bcc/bcc-devel/summary
 msgid "BPF Compiler Collection (BCC) (devel package)"
 msgstr ""
 
 #. leap/bcc/bcc-devel/description
-#. tumbleweed/bcc/bcc-devel/description
 msgid "Shared library and pkg-config for developing BCC programs"
 msgstr ""
 
 #. leap/bcc/bcc-docs/summary
-#. tumbleweed/bcc/bcc-docs/summary
 msgid "BPF Compiler Collection (BCC) documentation"
 msgstr ""
 
 #. leap/bcc/bcc-docs/description
-#. tumbleweed/bcc/bcc-docs/description
 msgid ""
 "The documentation of how to write programs with BPF Compiler Collection (BCC)"
 msgstr ""
 
 #. leap/bcc/bcc-examples/summary
-#. tumbleweed/bcc/bcc-examples/summary
 msgid "Examples for BPF Compiler Collection (BCC)"
 msgstr ""
 
 #. leap/bcc/bcc-examples/description
-#. tumbleweed/bcc/bcc-examples/description
 msgid "Python and C examples for BPF Compiler Collection (BCC)"
 msgstr ""
 
 #. leap/bcc/bcc-lua/summary
-#. tumbleweed/bcc/bcc-lua/summary
 msgid "Lua interpreter for BPF Compiler Collection"
 msgstr ""
 
 #. leap/bcc/bcc-lua/description
-#. tumbleweed/bcc/bcc-lua/description
 msgid "Lua interpreter for BPF Compiler Collection (BCC)"
 msgstr ""
 
 #. leap/bcc/bcc-tools/summary
-#. tumbleweed/bcc/bcc-tools/summary
 msgid "Tracing tools of BPF Compiler Collection (BCC)"
 msgstr ""
 
 #. leap/bcc/bcc-tools/description
-#. tumbleweed/bcc/bcc-tools/description
 msgid "Python tracing scripts of BPF Compiler Collection (BCC)"
 msgstr ""
 
@@ -1368,12 +1416,14 @@ msgid ""
 msgstr ""
 
 #. leap/bibletime/summary
-msgid "An easy to use Bible study tool"
+#. tumbleweed/bibletime/summary
+msgid "A Bible study tool"
 msgstr ""
 
 #. leap/bibletime/description
+#. tumbleweed/bibletime/description
 msgid ""
-"BibleTime is a completely free Bible study program.\n"
+"BibleTime is a Bible study program.\n"
 "\n"
 "The software uses the SWORD programming library to work with over 200 free "
 "Bible texts, commentaries, dictionaries and books provided by the Crosswire "
@@ -1431,7 +1481,6 @@ msgid "X11 Front-End for BibTeX Databases"
 msgstr ""
 
 #. leap/bibview/description
-#. tumbleweed/bibview/description
 msgid ""
 "Using bibview, entries in several BiB databases can be moved, manipulated, "
 "created, and searched.\n"
@@ -1753,6 +1802,85 @@ msgid ""
 "\"biosdevname=[0|1]\""
 msgstr ""
 
+#. leap/bird/summary
+#. tumbleweed/bird/summary
+msgid "The BIRD Internet Routing Daemon"
+msgstr ""
+
+#. leap/bird/description
+#. tumbleweed/bird/description
+msgid ""
+"BIRD is an implementation for routing Internet Protocol packets. IPv4 and "
+"IPv6 are supported by running separate daemons. It establishes multiple "
+"routing tables, and uses BGP, RIP, and OSPF routing protocols, as well as "
+"statically defined routes.\n"
+"\n"
+"This package holds the IPv4 binaries."
+msgstr ""
+
+#. leap/bird/bird-common/summary
+#. tumbleweed/bird/bird-common/summary
+msgid "Common files for the BIRD Internet Routing Daemon"
+msgstr ""
+
+#. leap/bird/bird-common/description
+#. tumbleweed/bird/bird-common/description
+msgid ""
+"BIRD is an implementation for routing Internet Protocol packets.\n"
+"\n"
+"This package holds common files and directories."
+msgstr ""
+
+#. leap/bird/bird-doc/summary
+#. tumbleweed/bird/bird-doc/summary
+msgid "Documentation for the BIRD Internet Routing Daemon"
+msgstr ""
+
+#. leap/bird/bird-doc/description
+#. tumbleweed/bird/bird-doc/description
+msgid ""
+"BIRD is an implementation for routing Internet Protocol packets.\n"
+"\n"
+"This package holds the HTML documentation."
+msgstr ""
+
+#. leap/bird/bird6/summary
+#. tumbleweed/bird/bird6/summary
+msgid "The BIRD Internet Routing Daemon for IPv6"
+msgstr ""
+
+#. leap/bird/bird6/description
+#. tumbleweed/bird/bird6/description
+msgid ""
+"BIRD is an implementation for routing Internet Protocol packets. IPv4 and "
+"IPv6 are supported by running separate daemons. It establishes multiple "
+"routing tables, and uses BGP, RIP, and OSPF routing protocols, as well as "
+"statically defined routes.\n"
+"\n"
+"This package holds the IPv6 binaries."
+msgstr ""
+
+#. leap/birdie/summary
+#. tumbleweed/birdie/summary
+msgid "A native Twitter client"
+msgstr ""
+
+#. leap/birdie/description
+#. tumbleweed/birdie/description
+msgid ""
+"Birdie is a beautiful and fast Twitter client designed for Elementary OS."
+msgstr ""
+
+#. leap/birdie/birdie-lang/summary
+#. tumbleweed/birdie/birdie-lang/summary
+msgid "Translations for package birdie"
+msgstr ""
+
+#. leap/birdie/birdie-lang/description
+#. tumbleweed/birdie/birdie-lang/description
+msgid "Provides translations for the \"birdie\" package."
+msgstr ""
+
 #. leap/bison/summary
 #. leap/bison/bison-32bit/summary
 #. tumbleweed/bison/summary
@@ -2064,12 +2192,12 @@ msgid ""
 msgstr ""
 
 #. leap/blender/blender-devel/summary
-#. tumbleweed/blender/blender-devel/summary
+#. tumbleweed/blender/blender-cycles-devel/summary
 msgid "Headers for cycles rendering"
 msgstr ""
 
 #. leap/blender/blender-devel/description
-#. tumbleweed/blender/blender-devel/description
+#. tumbleweed/blender/blender-cycles-devel/description
 msgid ""
 "These are the cycles headers that blender uses for rendering with specific "
 "gpus"
@@ -2166,6 +2294,18 @@ msgid ""
 "\n"
 "This subpackage contains libraries and header files for developing "
 "applications that want to make use of the Bliss library."
+msgstr ""
+
+#. leap/blktests/summary
+#. tumbleweed/blktests/summary
+msgid "Linux kernel block layer testing framework"
+msgstr ""
+
+#. leap/blktests/description
+#. tumbleweed/blktests/description
+msgid ""
+"blktests is a test framework for the Linux kernel block layer and storage "
+"stack. It is inspired by the xfstests filesystem testing framework."
 msgstr ""
 
 #. leap/blktrace/summary
@@ -2749,7 +2889,7 @@ msgstr ""
 
 #. leap/bomber/summary
 #. tumbleweed/bomber/summary
-msgid "Invading cities with a plane"
+msgid "Game involving the invasion of cities with a plane"
 msgstr ""
 
 #. leap/bomber/description
@@ -2875,6 +3015,31 @@ msgid ""
 "\"The Linux Kernel Module Programming Guide\" by Ori Pomerantz"
 msgstr ""
 
+#. leap/bookworm/summary
+#. leap/fbreader/summary
+#. tumbleweed/bookworm/summary
+#. tumbleweed/fbreader/summary
+msgid "E-book reader"
+msgstr ""
+
+#. leap/bookworm/description
+#. tumbleweed/bookworm/description
+msgid ""
+"An eBook reader for Elementary OS.\n"
+"\n"
+"It uses poppler for decoding and read formats like EPUB, PDF, mobi, cbr, etc."
+msgstr ""
+
+#. leap/bookworm/bookworm-lang/summary
+#. tumbleweed/bookworm/bookworm-lang/summary
+msgid "Translations for package bookworm"
+msgstr ""
+
+#. leap/bookworm/bookworm-lang/description
+#. tumbleweed/bookworm/bookworm-lang/description
+msgid "Provides translations for the \"bookworm\" package."
+msgstr ""
+
 #. leap/boomaga/summary
 #. tumbleweed/boomaga/summary
 msgid "Virtual Printer for Viewing a Document before Printing"
@@ -2903,46 +3068,48 @@ msgid "Provides translations for the \"boomaga\" package."
 msgstr ""
 
 #. leap/boost-base/boost-license1_66_0/summary
-#. tumbleweed/boost-base/boost-license1_68_0/summary
+#. tumbleweed/boost-base/boost-license1_69_0/summary
 msgid "Boost License"
 msgstr ""
 
 #. leap/boost-base/boost-license1_66_0/description
-#. tumbleweed/boost-base/boost-license1_68_0/description
+#. tumbleweed/boost-base/boost-license1_69_0/description
 msgid "This package contains the license boost is provided under."
 msgstr ""
 
 #. leap/boost/boost_1_66-doc-html/summary
-#. tumbleweed/boost/boost_1_68-doc-html/summary
+#. tumbleweed/boost-extra/boost1_69_0-doc-html/summary
 msgid "HTML documentation for the Boost C++ Libraries"
 msgstr ""
 
 #. leap/boost/boost_1_66-doc-html/description
-#. tumbleweed/boost/boost_1_68-doc-html/description
+#. tumbleweed/boost-extra/boost1_69_0-doc-html/description
 msgid ""
 "This package contains the documentation of the boost dynamic libraries in "
 "HTML format."
 msgstr ""
 
 #. leap/boost/boost_1_66-doc-pdf/summary
-#. tumbleweed/boost/boost_1_68-doc-pdf/summary
+#. tumbleweed/boost-extra/boost1_69_0-doc-pdf/summary
 msgid "PDF documentation for the Boost C++ Libraries"
 msgstr ""
 
 #. leap/boost/boost_1_66-doc-pdf/description
-#. tumbleweed/boost/boost_1_68-doc-pdf/description
+#. tumbleweed/boost-extra/boost1_69_0-doc-pdf/description
 msgid ""
 "This package contains the documentation of the boost dynamic libraries in "
 "PDF format."
 msgstr ""
 
 #. leap/boost-base/boost_1_66-jam/summary
-#. tumbleweed/boost-base/boost_1_68-jam/summary
+#. tumbleweed/boost-defaults/boost-jam/summary
+#. tumbleweed/boost-base/boost1_69_0-jam/summary
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost_1_69_0-gnu-hpc-jam/summary
 msgid "A Boost Make Replacement"
 msgstr ""
 
 #. leap/boost-base/boost_1_66-jam/description
-#. tumbleweed/boost-base/boost_1_68-jam/description
+#. tumbleweed/boost-base/boost1_69_0-jam/description
 msgid ""
 "Boost Jam is a build tool based on FTJam, which in turn is based on Perforce "
 "Jam. It contains significant improvements made to facilitate its use in the "
@@ -2950,12 +3117,12 @@ msgid ""
 msgstr ""
 
 #. leap/boost/boost_1_66-quickbook/summary
-#. tumbleweed/boost/boost_1_68-quickbook/summary
+#. tumbleweed/boost-extra/boost1_69_0-quickbook/summary
 msgid "Documentation tool geared towards C++"
 msgstr ""
 
 #. leap/boost/boost_1_66-quickbook/description
-#. tumbleweed/boost/boost_1_68-quickbook/description
+#. tumbleweed/boost-extra/boost1_69_0-quickbook/description
 msgid ""
 "QuickBook is a WikiWiki style documentation tool geared towards C++ "
 "documentation using simple rules and markup for simple formatting tasks."
@@ -3029,10 +3196,7 @@ msgstr ""
 msgid ""
 "BorgBackup is a deduplicating backup program which stores deltas. It "
 "supports compression and authenticated encryption as well, facilitating "
-"frequent backups and storing to not fully trusted targets.\n"
-"\n"
-"Run borg for a commands overview and check out the docs at /usr/share/doc/"
-"packages/borgbackup/html/index.html."
+"frequent backups and storing to not fully trusted targets."
 msgstr ""
 
 #. leap/borgbackup/borgbackup-bash-completion/summary
@@ -3050,14 +3214,43 @@ msgid ""
 "This package contains the bash completion script for borgbackup."
 msgstr ""
 
+#. leap/borgbackup/borgbackup-doc/summary
+#. tumbleweed/borgbackup/borgbackup-doc/summary
+msgid "Documentation files for borgbackup"
+msgstr ""
+
+#. leap/borgbackup/borgbackup-doc/description
+#. tumbleweed/borgbackup/borgbackup-doc/description
+msgid ""
+"BorgBackup is a deduplicating backup program which stores deltas. It "
+"supports compression and authenticated encryption as well, facilitating "
+"frequent backups and storing to not fully trusted targets.\n"
+"\n"
+"Run borg for a commands overview and check out the docs at /usr/share/doc/"
+"packages/borgbackup/html/index.html."
+msgstr ""
+
 #. leap/borgbackup/borgbackup-fish-completion/summary
 #. tumbleweed/borgbackup/borgbackup-fish-completion/summary
 msgid "Fish Completion for borgbackup"
 msgstr ""
 
 #. leap/borgbackup/borgbackup-fish-completion/description
-#. leap/borgbackup/borgbackup-zsh-completion/description
 #. tumbleweed/borgbackup/borgbackup-fish-completion/description
+msgid ""
+"BorgBackup is a deduplicating backup program which stores deltas. It "
+"supports compression and authenticated encryption as well, facilitating "
+"frequent backups and storing to not fully trusted targets.\n"
+"\n"
+"This package contains the fish completion script for borgbackup."
+msgstr ""
+
+#. leap/borgbackup/borgbackup-zsh-completion/summary
+#. tumbleweed/borgbackup/borgbackup-zsh-completion/summary
+msgid "Zsh Completion for borgbackup"
+msgstr ""
+
+#. leap/borgbackup/borgbackup-zsh-completion/description
 #. tumbleweed/borgbackup/borgbackup-zsh-completion/description
 msgid ""
 "BorgBackup is a deduplicating backup program which stores deltas. It "
@@ -3065,11 +3258,6 @@ msgid ""
 "frequent backups and storing to not fully trusted targets.\n"
 "\n"
 "This package contains the zsh completion script for borgbackup."
-msgstr ""
-
-#. leap/borgbackup/borgbackup-zsh-completion/summary
-#. tumbleweed/borgbackup/borgbackup-zsh-completion/summary
-msgid "Zsh Completion for borgbackup"
 msgstr ""
 
 #. leap/borgmatic/summary
@@ -3117,7 +3305,6 @@ msgid "Five-in-a-row Board Game"
 msgstr ""
 
 #. leap/bovo/description
-#. tumbleweed/bovo/description
 msgid ""
 "Bovo is a Gomoku (Connect Five, Five in a row, X and O, etc) game for KDE."
 msgstr ""
@@ -3175,7 +3362,6 @@ msgid "Documentation and help files for bpython."
 msgstr ""
 
 #. leap/branding-openSUSE/summary
-#. tumbleweed/branding-openSUSE/summary
 msgid "openSUSE Brand File"
 msgstr ""
 
@@ -3404,7 +3590,7 @@ msgstr ""
 #. leap/brltty/tcl-brlapi/description
 #. tumbleweed/brltty/brlapi-devel/description
 #. tumbleweed/brltty/brlapi-java/description
-#. tumbleweed/brltty/libbrlapi0_6/description
+#. tumbleweed/brltty/libbrlapi0_7/description
 #. tumbleweed/brltty/ocaml-brlapi/description
 #. tumbleweed/brltty/python3-brlapi/description
 #. tumbleweed/brltty/tcl-brlapi/description
@@ -3720,12 +3906,10 @@ msgid ""
 msgstr ""
 
 #. leap/bsh/summary
-#. tumbleweed/bsh/summary
 msgid "Lightweight Scripting for Java"
 msgstr ""
 
 #. leap/bsh/description
-#. tumbleweed/bsh/description
 msgid ""
 "BeanShell is a small, free, embeddable Java source interpreter with object "
 "scripting language features written in Java. BeanShell executes standard "
@@ -3746,12 +3930,10 @@ msgid ""
 msgstr ""
 
 #. leap/bsh/bsh-demo/summary
-#. tumbleweed/bsh/bsh-demo/summary
 msgid "Demonstration and sample files for bsh"
 msgstr ""
 
 #. leap/bsh/bsh-demo/description
-#. tumbleweed/bsh/bsh-demo/description
 msgid ""
 "BeanShell is a small, free, embeddable, Java source interpreter with object "
 "scripting language features, written in Java.\n"
@@ -3760,12 +3942,10 @@ msgid ""
 msgstr ""
 
 #. leap/bsh/bsh-javadoc/summary
-#. tumbleweed/bsh/bsh-javadoc/summary
 msgid "Javadoc for bsh"
 msgstr ""
 
 #. leap/bsh/bsh-javadoc/description
-#. tumbleweed/bsh/bsh-javadoc/description
 msgid ""
 "BeanShell is a small, free, embeddable, Java source interpreter with object "
 "scripting language features, written in Java.\n"
@@ -3774,12 +3954,10 @@ msgid ""
 msgstr ""
 
 #. leap/bsh/bsh-manual/summary
-#. tumbleweed/bsh/bsh-manual/summary
 msgid "Manual for bsh"
 msgstr ""
 
 #. leap/bsh/bsh-manual/description
-#. tumbleweed/bsh/bsh-manual/description
 msgid ""
 "BeanShell is a small, free, embeddable, Java source interpreter with object "
 "scripting language features, written in Java.\n"
@@ -3788,12 +3966,10 @@ msgid ""
 msgstr ""
 
 #. leap/bsh2/summary
-#. tumbleweed/bsh2/summary
 msgid "Lightweight Scripting for Java (BeanShell Version 2.x)"
 msgstr ""
 
 #. leap/bsh2/description
-#. tumbleweed/bsh2/description
 msgid ""
 "BeanShell is a small, free, embeddable, Java source interpreter with object "
 "scripting language features, written in Java. BeanShell executes standard "
@@ -3828,7 +4004,6 @@ msgid "BSF support for bsh2"
 msgstr ""
 
 #. leap/bsh2/bsh2-bsf/description
-#. tumbleweed/bsh2/bsh2-bsf/description
 msgid "Lightweight Scripting for Java (BeanShell Version 2.x) (BSF support)."
 msgstr ""
 
@@ -3838,7 +4013,6 @@ msgid "ASM support for bsh2"
 msgstr ""
 
 #. leap/bsh2/bsh2-classgen/description
-#. tumbleweed/bsh2/bsh2-classgen/description
 msgid "Lightweight Scripting for Java (BeanShell Version 2.x) (ASM support)."
 msgstr ""
 
@@ -3848,7 +4022,6 @@ msgid "Demonstrations and samples for bsh2"
 msgstr ""
 
 #. leap/bsh2/bsh2-demo/description
-#. tumbleweed/bsh2/bsh2-demo/description
 msgid ""
 "Lightweight Scripting for Java (BeanShell Version 2.x) (demo and samples)."
 msgstr ""
@@ -3859,7 +4032,6 @@ msgid "Javadoc for bsh2"
 msgstr ""
 
 #. leap/bsh2/bsh2-javadoc/description
-#. tumbleweed/bsh2/bsh2-javadoc/description
 msgid ""
 "Lightweight Scripting for Java (BeanShell Version 2.x) (Java Documentation)."
 msgstr ""
@@ -3870,7 +4042,6 @@ msgid "Documentation for bsh2"
 msgstr ""
 
 #. leap/bsh2/bsh2-manual/description
-#. tumbleweed/bsh2/bsh2-manual/description
 msgid "Lightweight Scripting for Java (BeanShell Version 2.x) (Manual)."
 msgstr ""
 
@@ -4000,23 +4171,31 @@ msgid ""
 "containers that works as a setuid binary on kernels without user namespaces."
 msgstr ""
 
+#. leap/bucklespring/summary
+#. tumbleweed/bucklespring/summary
+msgid "Nostalgia keyboard sound emulator"
+msgstr ""
+
+#. leap/bucklespring/description
+#. tumbleweed/bucklespring/description
+msgid ""
+"This project emulates the sound of an old faithful IBM Model-M space saver "
+"bucklespring keyboard while typing on a notebook/pc."
+msgstr ""
+
 #. leap/budgie-desktop/summary
-#. tumbleweed/budgie-desktop/summary
 msgid "GTK3 Desktop Environment"
 msgstr ""
 
 #. leap/budgie-desktop/description
-#. tumbleweed/budgie-desktop/description
 msgid "Budgie Desktop is the flagship desktop for the Solus Operating System."
 msgstr ""
 
 #. leap/budgie-desktop/budgie-desktop-devel/summary
-#. tumbleweed/budgie-desktop/budgie-desktop-devel/summary
 msgid "Development files for the Budgie Desktop"
 msgstr ""
 
 #. leap/budgie-desktop/budgie-desktop-devel/description
-#. tumbleweed/budgie-desktop/budgie-desktop-devel/description
 msgid ""
 "This package provides development files required for software to be able to "
 "use and link against the Budgie APIs, to create their own applets for the "
@@ -4024,12 +4203,10 @@ msgid ""
 msgstr ""
 
 #. leap/budgie-desktop/budgie-desktop-docs/summary
-#. tumbleweed/budgie-desktop/budgie-desktop-docs/summary
 msgid "Documentation files for the Budgie Desktop"
 msgstr ""
 
 #. leap/budgie-desktop/budgie-desktop-docs/description
-#. tumbleweed/budgie-desktop/budgie-desktop-docs/description
 msgid ""
 "This package provides API Documentation for the Budgie Plugin API, in the "
 "GTK-Doc HTML format."
@@ -4152,6 +4329,27 @@ msgstr ""
 msgid ""
 "This package contains the parts which may be installed in the inner build "
 "system for generating delta rpm packages."
+msgstr ""
+
+#. leap/buildah/summary
+#. tumbleweed/buildah/summary
+msgid "Tool for building OCI containers"
+msgstr ""
+
+#. leap/buildah/description
+#. tumbleweed/buildah/description
+msgid ""
+"Buildah provides a command line tool which can be used to:\n"
+"- Create a working container, either from scratch or using an image as a   "
+"starting point\n"
+"- Create an image, either from a working container or via the instructions "
+"in a   Dockerfile\n"
+"- Build images in either the OCI image format or the traditional   upstream "
+"docker image format\n"
+"- Mount a working container's root filesystem for manipulation\n"
+"- Unmount a working container's root filesystem\n"
+"- Update the contents of a container's root filesystem\n"
+"- Delete a working container or an image"
 msgstr ""
 
 #. leap/buildstream/summary
@@ -4282,14 +4480,12 @@ msgstr ""
 #. leap/busybox/summary
 #. leap/busybox-static/summary
 #. tumbleweed/busybox/summary
-#. tumbleweed/busybox-static/summary
 msgid "The Swiss Army Knife of Embedded Linux"
 msgstr ""
 
 #. leap/busybox/description
 #. leap/busybox-static/description
 #. tumbleweed/busybox/description
-#. tumbleweed/busybox-static/description
 msgid ""
 "BusyBox combines tiny versions of many common UNIX utilities into a small "
 "single executable. It provides minimalist replacements for most of the "
@@ -4534,12 +4730,10 @@ msgid "The bzip2 program and library documentation."
 msgstr ""
 
 #. leap/bzr/summary
-#. tumbleweed/bzr/summary
 msgid "Friendly distributed version control system"
 msgstr ""
 
 #. leap/bzr/description
-#. tumbleweed/bzr/description
 msgid ""
 "Bazaar is a distributed version control system designed to be easy to use "
 "and intuitive, able to adapt to many workflows, reliable, and easily "
@@ -4557,7 +4751,6 @@ msgid "Provides translations for the \"bzr\" package."
 msgstr ""
 
 #. leap/bzr/bzr-test/summary
-#. tumbleweed/bzr/bzr-test/summary
 msgid "Friendly distributed version control system - Testsuite"
 msgstr ""
 
@@ -4603,36 +4796,12 @@ msgid ""
 "XML into the format expected from software center"
 msgstr ""
 
-#. leap/fbreader/summary
-#. tumbleweed/bookworm/summary
-#. tumbleweed/fbreader/summary
-msgid "E-book reader"
-msgstr ""
-
 #. leap/branding-openSUSE/gfxboot-branding-openSUSE/summary
-#. tumbleweed/branding-openSUSE/gfxboot-branding-openSUSE/summary
 msgid "Graphical bootloader openSUSE theme"
 msgstr ""
 
 #. leap/branding-openSUSE/gfxboot-branding-openSUSE/description
-#. tumbleweed/branding-openSUSE/gfxboot-branding-openSUSE/description
 msgid "openSUSE theme for gfxboot (graphical bootloader for grub)."
-msgstr ""
-
-#. leap/BNFC/ghc-BNFC/summary
-msgid "Haskell BNFC library"
-msgstr ""
-
-#. leap/BNFC/ghc-BNFC/description
-msgid "This package provides the Haskell BNFC shared library."
-msgstr ""
-
-#. leap/BNFC/ghc-BNFC-devel/summary
-msgid "Haskell BNFC library development files"
-msgstr ""
-
-#. leap/BNFC/ghc-BNFC-devel/description
-msgid "This package provides the Haskell BNFC library development files."
 msgstr ""
 
 #. leap/bijiben/gnome-shell-search-provider-bijiben/summary
@@ -4652,7 +4821,6 @@ msgid ""
 msgstr ""
 
 #. leap/branding-openSUSE/grub2-branding-openSUSE/summary
-#. tumbleweed/branding-openSUSE/grub2-branding-openSUSE/summary
 msgid "openSUSE branding for GRUB2's graphical console"
 msgstr ""
 
@@ -4670,6 +4838,23 @@ msgstr ""
 msgid "Plugin to play Buzztrax songs from any GStreamer compatible app."
 msgstr ""
 
+#. leap/bluebird-theme/gtk2-metatheme-bluebird/summary
+#. tumbleweed/bluebird-theme/gtk2-metatheme-bluebird/summary
+msgid ""
+"A Clean Minimalistic Theme for GNOME, XFCE, GTK+ 2 and 3 -- GTK+ 2 Support"
+msgstr ""
+
+#. leap/bluebird-theme/gtk2-metatheme-bluebird/description
+#. tumbleweed/bluebird-theme/gtk2-metatheme-bluebird/description
+msgid ""
+"The Bluebird Theme for GTK2/3 and xfwm4/emerald/metacity started out on the "
+"basis of Bluebird, but aims at reworking the intense blue tone to a more "
+"neutral blue-ish look that will be more pleasant to look at in everyday "
+"use.\n"
+"\n"
+"This package provides the GTK+ 2 support of Bluebird."
+msgstr ""
+
 #. leap/breeze-gtk/gtk2-metatheme-breeze/summary
 #. tumbleweed/breeze-gtk/gtk2-metatheme-breeze/summary
 msgid "GTK+ theme matching KDE's Breeze -- GTK+ 2 Support"
@@ -4684,13 +4869,29 @@ msgstr ""
 msgid "A GTK+ theme created to match with the new Plasma 5 Breeze theme."
 msgstr ""
 
+#. leap/bluebird-theme/gtk3-metatheme-bluebird/summary
+#. tumbleweed/bluebird-theme/gtk3-metatheme-bluebird/summary
+msgid ""
+"A Clean Minimalistic Theme for GNOME, XFCE, GTK+ 2 and 3 -- GTK+ 3 Support"
+msgstr ""
+
+#. leap/bluebird-theme/gtk3-metatheme-bluebird/description
+#. tumbleweed/bluebird-theme/gtk3-metatheme-bluebird/description
+msgid ""
+"The Bluebird Theme for GTK2/3 and xfwm4/emerald/metacity started out on the "
+"basis of Bluebird, but aims at reworking the intense blue tone to a more "
+"neutral blue-ish look that will be more pleasant to look at in everyday "
+"use.\n"
+"\n"
+"This package provides the GTK+ 3 support of Bluebird."
+msgstr ""
+
 #. leap/breeze-gtk/gtk3-metatheme-breeze/summary
 #. tumbleweed/breeze-gtk/gtk3-metatheme-breeze/summary
 msgid "GTK+ theme matching KDE's Breeze -- GTK+ 3 Support"
 msgstr ""
 
 #. leap/branding-openSUSE/icewm-theme-yast-installation/summary
-#. tumbleweed/branding-openSUSE/icewm-theme-yast-installation/summary
 msgid "Theme configuration for IceWM during the installation"
 msgstr ""
 
@@ -4713,7 +4914,7 @@ msgstr ""
 #. tumbleweed/baloo5/libKF5Baloo5-32bit/description
 #. tumbleweed/baloo5/libKF5Baloo5/description
 msgid ""
-"Baloo is a framework for searching and managing metadata This package "
+"Baloo is a framework for searching and managing metadata. This package "
 "contains Baloo's core library."
 msgstr ""
 
@@ -4729,7 +4930,7 @@ msgstr ""
 #. tumbleweed/baloo5/libKF5BalooEngine5-32bit/description
 #. tumbleweed/baloo5/libKF5BalooEngine5/description
 msgid ""
-"Baloo is a framework for searching and managing metadata This package "
+"Baloo is a framework for searching and managing metadata. This package "
 "contains Baloo's Engine library."
 msgstr ""
 
@@ -4752,12 +4953,10 @@ msgid ""
 msgstr ""
 
 #. leap/bcc/libbcc0/summary
-#. tumbleweed/bcc/libbcc0/summary
 msgid "Shared Library for BPF Compiler Collection"
 msgstr ""
 
 #. leap/bcc/libbcc0/description
-#. tumbleweed/bcc/libbcc0/description
 msgid "Shared Library for BPF Compiler Collection (BCC)"
 msgstr ""
 
@@ -4962,12 +5161,12 @@ msgid ""
 "implementations."
 msgstr ""
 
-#. leap/bladeRF/libbladeRF1/summary
+#. leap/bladeRF/libbladeRF2/summary
 #. tumbleweed/bladeRF/libbladeRF2/summary
 msgid "Library for bladeRF"
 msgstr ""
 
-#. leap/bladeRF/libbladeRF1/description
+#. leap/bladeRF/libbladeRF2/description
 #. tumbleweed/bladeRF/libbladeRF2/description
 msgid "Library for bladeRF, SDR transceiver."
 msgstr ""
@@ -5046,15 +5245,15 @@ msgstr ""
 
 #. leap/boost-base/libboost_atomic1_66_0/summary
 #. leap/boost-base/libboost_atomic1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_atomic1_68_0/summary
-#. tumbleweed/boost-base/libboost_atomic1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_atomic1_69_0/summary
+#. tumbleweed/boost-base/libboost_atomic1_69_0-32bit/summary
 msgid "Boost.Atomic runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_atomic1_66_0/description
 #. leap/boost-base/libboost_atomic1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_atomic1_68_0/description
-#. tumbleweed/boost-base/libboost_atomic1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_atomic1_69_0/description
+#. tumbleweed/boost-base/libboost_atomic1_69_0-32bit/description
 msgid ""
 "Run-Time support for Boost.Atomic, a library that provides atomic data types "
 "and operations on these data types, as well as memory ordering constraints "
@@ -5062,12 +5261,14 @@ msgid ""
 msgstr ""
 
 #. leap/boost-base/libboost_atomic1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_atomic1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_atomic-devel/summary
+#. tumbleweed/boost-base/libboost_atomic1_69_0-devel/summary
 msgid "Development headers for Boost.Atomic"
 msgstr ""
 
 #. leap/boost-base/libboost_atomic1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_atomic1_68_0-devel/description
+#. tumbleweed/boost-defaults/libboost_atomic-devel/description
+#. tumbleweed/boost-base/libboost_atomic1_69_0-devel/description
 msgid ""
 "Development support for Boost.Atomic, a library that provides atomic data "
 "types and operations on these data types, as well as memory ordering "
@@ -5076,46 +5277,48 @@ msgid ""
 msgstr ""
 
 #. leap/boost-base/libboost_chrono1_66_0/summary
-#. tumbleweed/boost-base/libboost_chrono1_68_0/summary
+#. tumbleweed/boost-base/libboost_chrono1_69_0/summary
 msgid "The Boost::Chrono runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_chrono1_66_0/description
-#. tumbleweed/boost-base/libboost_chrono1_68_0/description
+#. tumbleweed/boost-base/libboost_chrono1_69_0/description
 msgid "This package contains the Boost::Chrono runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_chrono1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_chrono1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_chrono-devel/summary
+#. tumbleweed/boost-base/libboost_chrono1_69_0-devel/summary
 msgid "Development headers for Boost.Chrono library"
 msgstr ""
 
 #. leap/boost-base/libboost_chrono1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_chrono1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_chrono1_69_0-devel/description
 msgid "This package contains Boost.Chrono development headers."
 msgstr ""
 
 #. leap/boost-base/libboost_container1_66_0/summary
 #. leap/boost-base/libboost_container1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_container1_68_0/summary
-#. tumbleweed/boost-base/libboost_container1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_container1_69_0/summary
+#. tumbleweed/boost-base/libboost_container1_69_0-32bit/summary
 msgid "Boost.Container runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_container1_66_0/description
 #. leap/boost-base/libboost_container1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_container1_68_0/description
-#. tumbleweed/boost-base/libboost_container1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_container1_69_0/description
+#. tumbleweed/boost-base/libboost_container1_69_0-32bit/description
 msgid "This package contains the Boost.Container runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_container1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_container1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_container-devel/summary
+#. tumbleweed/boost-base/libboost_container1_69_0-devel/summary
 msgid "Development headers for Boost.Container"
 msgstr ""
 
 #. leap/boost-base/libboost_container1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_container1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_container1_69_0-devel/description
 msgid ""
 "Development header files and libraries for Boost.Container. Boost.Container "
 "library implements several well-known containers, including STL containers. "
@@ -5126,27 +5329,28 @@ msgstr ""
 
 #. leap/boost-base/libboost_context1_66_0/summary
 #. leap/boost-base/libboost_context1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_context1_68_0/summary
-#. tumbleweed/boost-base/libboost_context1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_context1_69_0/summary
+#. tumbleweed/boost-base/libboost_context1_69_0-32bit/summary
 msgid "Boost.Context runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_context1_66_0/description
 #. leap/boost-base/libboost_context1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_context1_68_0/description
-#. tumbleweed/boost-base/libboost_context1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_context1_69_0/description
+#. tumbleweed/boost-base/libboost_context1_69_0-32bit/description
 msgid ""
 "Runtime support for Boost.Context, a library that providing cooperative "
 "multitasking support."
 msgstr ""
 
 #. leap/boost-base/libboost_context1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_context1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_context-devel/summary
+#. tumbleweed/boost-base/libboost_context1_69_0-devel/summary
 msgid "Development headers for Boost.Context"
 msgstr ""
 
 #. leap/boost-base/libboost_context1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_context1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_context1_69_0-devel/description
 msgid ""
 "Development headers and libraries for Boost.Context, a library that "
 "providing cooperative multitasking support."
@@ -5154,25 +5358,26 @@ msgstr ""
 
 #. leap/boost-base/libboost_coroutine1_66_0/summary
 #. leap/boost-base/libboost_coroutine1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_coroutine1_68_0/summary
-#. tumbleweed/boost-base/libboost_coroutine1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_coroutine1_69_0/summary
+#. tumbleweed/boost-base/libboost_coroutine1_69_0-32bit/summary
 msgid "Boost::Coroutine runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_coroutine1_66_0/description
 #. leap/boost-base/libboost_coroutine1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_coroutine1_68_0/description
-#. tumbleweed/boost-base/libboost_coroutine1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_coroutine1_69_0/description
+#. tumbleweed/boost-base/libboost_coroutine1_69_0-32bit/description
 msgid "This package contains the Boost Coroutine runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_coroutine1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_coroutine1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_coroutine-devel/summary
+#. tumbleweed/boost-base/libboost_coroutine1_69_0-devel/summary
 msgid "Development headers for Boost.Coroutine"
 msgstr ""
 
 #. leap/boost-base/libboost_coroutine1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_coroutine1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_coroutine1_69_0-devel/description
 msgid ""
 "This package provides headers for Boost.Coroutine libraries. Boost."
 "Coroutine2 provides templates for generalized subroutines which allow "
@@ -5181,25 +5386,26 @@ msgstr ""
 
 #. leap/boost-base/libboost_date_time1_66_0/summary
 #. leap/boost-base/libboost_date_time1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_date_time1_68_0/summary
-#. tumbleweed/boost-base/libboost_date_time1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_date_time1_69_0/summary
+#. tumbleweed/boost-base/libboost_date_time1_69_0-32bit/summary
 msgid "Boost.DateTime runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_date_time1_66_0/description
 #. leap/boost-base/libboost_date_time1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_date_time1_68_0/description
-#. tumbleweed/boost-base/libboost_date_time1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_date_time1_69_0/description
+#. tumbleweed/boost-base/libboost_date_time1_69_0-32bit/description
 msgid "This package contains the Boost Date.DateTime runtime libraries."
 msgstr ""
 
 #. leap/boost-base/libboost_date_time1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_date_time1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_date_time-devel/summary
+#. tumbleweed/boost-base/libboost_date_time1_69_0-devel/summary
 msgid "Development headers for Boost.DateTime library"
 msgstr ""
 
 #. leap/boost-base/libboost_date_time1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_date_time1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_date_time1_69_0-devel/description
 msgid ""
 "This package contains development header files and libraries for Boost."
 "DateTime library."
@@ -5207,25 +5413,26 @@ msgstr ""
 
 #. leap/boost-base/libboost_fiber1_66_0/summary
 #. leap/boost-base/libboost_fiber1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_fiber1_68_0/summary
-#. tumbleweed/boost-base/libboost_fiber1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_fiber1_69_0/summary
+#. tumbleweed/boost-base/libboost_fiber1_69_0-32bit/summary
 msgid "Boost.Fiber runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_fiber1_66_0/description
 #. leap/boost-base/libboost_fiber1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_fiber1_68_0/description
-#. tumbleweed/boost-base/libboost_fiber1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_fiber1_69_0/description
+#. tumbleweed/boost-base/libboost_fiber1_69_0-32bit/description
 msgid "This package contains Boost.Fiber runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_fiber1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_fiber1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_fiber-devel/summary
+#. tumbleweed/boost-base/libboost_fiber1_69_0-devel/summary
 msgid "Development headers for Boost.Fiber library"
 msgstr ""
 
 #. leap/boost-base/libboost_fiber1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_fiber1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_fiber1_69_0-devel/description
 msgid ""
 "This package contains development header files and libraries for Boost.Fiber "
 "library. Boost.Fiber is a cooperative multi-tasking userland threading "
@@ -5234,25 +5441,26 @@ msgstr ""
 
 #. leap/boost-base/libboost_filesystem1_66_0/summary
 #. leap/boost-base/libboost_filesystem1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_filesystem1_68_0/summary
-#. tumbleweed/boost-base/libboost_filesystem1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_filesystem1_69_0/summary
+#. tumbleweed/boost-base/libboost_filesystem1_69_0-32bit/summary
 msgid "Boost.Filesystem Runtime Libraries"
 msgstr ""
 
 #. leap/boost-base/libboost_filesystem1_66_0/description
 #. leap/boost-base/libboost_filesystem1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_filesystem1_68_0/description
-#. tumbleweed/boost-base/libboost_filesystem1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_filesystem1_69_0/description
+#. tumbleweed/boost-base/libboost_filesystem1_69_0-32bit/description
 msgid "This package contains the Boost.Filesystem library."
 msgstr ""
 
 #. leap/boost-base/libboost_filesystem1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_filesystem1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_filesystem-devel/summary
+#. tumbleweed/boost-base/libboost_filesystem1_69_0-devel/summary
 msgid "Development headers for Boost.Filesystem library"
 msgstr ""
 
 #. leap/boost-base/libboost_filesystem1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_filesystem1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_filesystem1_69_0-devel/description
 msgid ""
 "Development headers for Boost.Filesystem library, a library providing "
 "facilities to manipulate files and directories, and the paths that identify "
@@ -5261,25 +5469,26 @@ msgstr ""
 
 #. leap/boost-base/libboost_graph1_66_0/summary
 #. leap/boost-base/libboost_graph1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_graph1_68_0/summary
-#. tumbleweed/boost-base/libboost_graph1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_graph1_69_0/summary
+#. tumbleweed/boost-base/libboost_graph1_69_0-32bit/summary
 msgid "Boost.Graph runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_graph1_66_0/description
 #. leap/boost-base/libboost_graph1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_graph1_68_0/description
-#. tumbleweed/boost-base/libboost_graph1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_graph1_69_0/description
+#. tumbleweed/boost-base/libboost_graph1_69_0-32bit/description
 msgid "This package contains the Boost.Graph runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_graph1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_graph1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_graph-devel/summary
+#. tumbleweed/boost-base/libboost_graph1_69_0-devel/summary
 msgid "Development headers for Boost.Graph library"
 msgstr ""
 
 #. leap/boost-base/libboost_graph1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_graph1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_graph1_69_0-devel/description
 msgid ""
 "Development headers for Boost.Graph library. The BGL algorithms consist of a "
 "core set of algorithm patterns and a larger set of graph algorithms. The "
@@ -5289,59 +5498,63 @@ msgstr ""
 
 #. leap/boost/libboost_graph_parallel1_66_0/summary
 #. leap/boost/libboost_graph_parallel1_66_0-32bit/summary
-#. tumbleweed/boost/libboost_graph_parallel1_68_0/summary
-#. tumbleweed/boost/libboost_graph_parallel1_68_0-32bit/summary
+#. tumbleweed/boost-extra/libboost_graph_parallel1_69_0/summary
+#. tumbleweed/boost-extra/libboost_graph_parallel1_69_0-32bit/summary
 msgid "Boost.Graph.Distributed runtime library"
 msgstr ""
 
 #. leap/boost/libboost_graph_parallel1_66_0/description
 #. leap/boost/libboost_graph_parallel1_66_0-32bit/description
-#. tumbleweed/boost/libboost_graph_parallel1_68_0/description
-#. tumbleweed/boost/libboost_graph_parallel1_68_0-32bit/description
+#. tumbleweed/boost-extra/libboost_graph_parallel1_69_0/description
+#. tumbleweed/boost-extra/libboost_graph_parallel1_69_0-32bit/description
 msgid "This package contains the Boost.Graph parallel runtime library"
 msgstr ""
 
 #. leap/boost/libboost_graph_parallel1_66_0-devel/summary
-#. tumbleweed/boost/libboost_graph_parallel1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_graph_parallel-devel/summary
+#. tumbleweed/boost-extra/libboost_graph_parallel1_69_0-devel/summary
 msgid "Development headers for Boost.Graph parallel library"
 msgstr ""
 
 #. leap/boost/libboost_graph_parallel1_66_0-devel/description
-#. tumbleweed/boost/libboost_graph_parallel1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_graph_parallel1_69_0-devel/description
 msgid "Development headers for Boost.Graph parallel boost library."
 msgstr ""
 
 #. leap/boost-base/libboost_headers1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_headers1_68_0-devel/summary
+#. tumbleweed/boost-defaults/boost-devel/summary
+#. tumbleweed/boost-defaults/libboost_headers-devel/summary
+#. tumbleweed/boost-base/libboost_headers1_69_0-devel/summary
 msgid "Development headers for Boost"
 msgstr ""
 
 #. leap/boost-base/libboost_headers1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_headers1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_headers1_69_0-devel/description
 msgid "A collection of header-only libraries for Boost."
 msgstr ""
 
 #. leap/boost-base/libboost_iostreams1_66_0/summary
 #. leap/boost-base/libboost_iostreams1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_iostreams1_68_0/summary
-#. tumbleweed/boost-base/libboost_iostreams1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_iostreams1_69_0/summary
+#. tumbleweed/boost-base/libboost_iostreams1_69_0-32bit/summary
 msgid "Boost.IOStreams Runtime Libraries"
 msgstr ""
 
 #. leap/boost-base/libboost_iostreams1_66_0/description
 #. leap/boost-base/libboost_iostreams1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_iostreams1_68_0/description
-#. tumbleweed/boost-base/libboost_iostreams1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_iostreams1_69_0/description
+#. tumbleweed/boost-base/libboost_iostreams1_69_0-32bit/description
 msgid "This package contains the Boost.IOStreams Runtime libraries."
 msgstr ""
 
 #. leap/boost-base/libboost_iostreams1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_iostreams1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_iostreams-devel/summary
+#. tumbleweed/boost-base/libboost_iostreams1_69_0-devel/summary
 msgid "Development headers for Boost.IOStreans library"
 msgstr ""
 
 #. leap/boost-base/libboost_iostreams1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_iostreams1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_iostreams1_69_0-devel/description
 msgid ""
 "Boost.IOStreams provides a framework for defining streams, stream buffers "
 "and IO filters"
@@ -5349,45 +5562,47 @@ msgstr ""
 
 #. leap/boost-base/libboost_locale1_66_0/summary
 #. leap/boost-base/libboost_locale1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_locale1_68_0/summary
-#. tumbleweed/boost-base/libboost_locale1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_locale1_69_0/summary
+#. tumbleweed/boost-base/libboost_locale1_69_0-32bit/summary
 msgid "Boost::Locale runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_locale1_66_0/description
 #. leap/boost-base/libboost_locale1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_locale1_68_0/description
-#. tumbleweed/boost-base/libboost_locale1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_locale1_69_0/description
+#. tumbleweed/boost-base/libboost_locale1_69_0-32bit/description
 msgid "This package contains Boost::Locale runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_locale1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_locale1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_locale-devel/summary
+#. tumbleweed/boost-base/libboost_locale1_69_0-devel/summary
 msgid "Development headers for Boost.Locale library"
 msgstr ""
 
 #. leap/boost-base/libboost_locale1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_locale1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_locale1_69_0-devel/description
 msgid "This package contains development headers for Boost.Locale library."
 msgstr ""
 
 #. leap/boost-base/libboost_log1_66_0/summary
-#. tumbleweed/boost-base/libboost_log1_68_0/summary
+#. tumbleweed/boost-base/libboost_log1_69_0/summary
 msgid "Boost.Log runtime Run-Time library"
 msgstr ""
 
 #. leap/boost-base/libboost_log1_66_0/description
-#. tumbleweed/boost-base/libboost_log1_68_0/description
+#. tumbleweed/boost-base/libboost_log1_69_0/description
 msgid "This package contains runtime library for Boost.Log."
 msgstr ""
 
 #. leap/boost-base/libboost_log1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_log1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_log-devel/summary
+#. tumbleweed/boost-base/libboost_log1_69_0-devel/summary
 msgid "Development headers for Boost.Log library"
 msgstr ""
 
 #. leap/boost-base/libboost_log1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_log1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_log1_69_0-devel/description
 msgid ""
 "Development headers for Boost.Log library which aims to make logging "
 "significantly easier for the application developer. It provides a wide range "
@@ -5397,91 +5612,99 @@ msgstr ""
 
 #. leap/boost-base/libboost_math1_66_0/summary
 #. leap/boost-base/libboost_math1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_math1_68_0/summary
-#. tumbleweed/boost-base/libboost_math1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_math1_69_0/summary
+#. tumbleweed/boost-base/libboost_math1_69_0-32bit/summary
 msgid "Boost.Math runtime libraries"
 msgstr ""
 
 #. leap/boost-base/libboost_math1_66_0/description
 #. leap/boost-base/libboost_math1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_math1_68_0/description
-#. tumbleweed/boost-base/libboost_math1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_math1_69_0/description
+#. tumbleweed/boost-base/libboost_math1_69_0-32bit/description
 msgid "This package contains the Boost.Math Runtime libraries."
 msgstr ""
 
 #. leap/boost-base/libboost_math1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_math1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_math-devel/summary
+#. tumbleweed/boost-base/libboost_math1_69_0-devel/summary
 msgid "Development headers for Boost.Math libraries"
 msgstr ""
 
 #. leap/boost-base/libboost_math1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_math1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_math1_69_0-devel/description
 msgid "Development headers for Boost.Math* boost libraries."
 msgstr ""
 
 #. leap/boost/libboost_mpi1_66_0/summary
 #. leap/boost/libboost_mpi1_66_0-32bit/summary
-#. tumbleweed/boost/libboost_mpi1_68_0/summary
-#. tumbleweed/boost/libboost_mpi1_68_0-32bit/summary
+#. tumbleweed/boost-extra/libboost_mpi1_69_0/summary
+#. tumbleweed/boost-extra/libboost_mpi1_69_0-32bit/summary
 msgid "Boost.MPI runtime library"
 msgstr ""
 
 #. leap/boost/libboost_mpi1_66_0/description
 #. leap/boost/libboost_mpi1_66_0-32bit/description
-#. tumbleweed/boost/libboost_mpi1_68_0/description
-#. tumbleweed/boost/libboost_mpi1_68_0-32bit/description
+#. tumbleweed/boost-extra/libboost_mpi1_69_0/description
+#. tumbleweed/boost-extra/libboost_mpi1_69_0-32bit/description
 msgid "This package contains the Boost.MPI runtime library."
 msgstr ""
 
 #. leap/boost/libboost_mpi1_66_0-devel/summary
-#. tumbleweed/boost/libboost_mpi1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_mpi-devel/summary
+#. tumbleweed/boost-extra/libboost_mpi1_69_0-devel/summary
 msgid "Development headers for Boost.MPI library"
 msgstr ""
 
 #. leap/boost/libboost_mpi1_66_0-devel/description
-#. tumbleweed/boost/libboost_mpi1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_mpi1_69_0-devel/description
 msgid "Development headers for Boost.MPI boost library"
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py2_7-1_66_0/summary
-#. tumbleweed/boost/libboost_mpi_python-py2_7-1_68_0/summary
+#. tumbleweed/boost-extra/libboost_mpi_python-py2_7-1_69_0/summary
 msgid "Boost.MPI Python serialization library"
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py2_7-1_66_0/description
-#. tumbleweed/boost/libboost_mpi_python-py2_7-1_68_0/description
+#. tumbleweed/boost-extra/libboost_mpi_python-py2_7-1_69_0/description
 msgid "This package contains the Boost.MPI Python 2.7 serialization library"
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py2_7-1_66_0-devel/summary
-#. tumbleweed/boost/libboost_mpi_python-py2_7-1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_mpi_python-devel/summary
+#. tumbleweed/boost-extra/libboost_mpi_python-py2_7-1_69_0-devel/summary
 msgid "Development library for Boost.MPI Python 2.7 serialization"
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py2_7-1_66_0-devel/description
-#. tumbleweed/boost/libboost_mpi_python-py2_7-1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_mpi_python-py2_7-1_69_0-devel/description
 msgid ""
 "This package contains the Boost.MPI development library for Python 2.7 "
 "serialization interface."
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py3-1_66_0/summary
-#. tumbleweed/boost/libboost_mpi_python-py3-1_68_0/summary
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost_1_69_0-gnu-mvapich2-hpc-python3/summary
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost_1_69_0-gnu-openmpi2-hpc-python3/summary
+#. tumbleweed/boost-extra/libboost_mpi_python-py3-1_69_0/summary
 msgid "Boost.MPI Python 3.x serialization library"
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py3-1_66_0/description
-#. tumbleweed/boost/libboost_mpi_python-py3-1_68_0/description
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost_1_69_0-gnu-mvapich2-hpc-python3/description
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost_1_69_0-gnu-openmpi2-hpc-python3/description
+#. tumbleweed/boost-extra/libboost_mpi_python-py3-1_69_0/description
 msgid "This package contains the Boost.MPI Python 3.x serialization inteface."
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py3-1_66_0-devel/summary
-#. tumbleweed/boost/libboost_mpi_python-py3-1_68_0-devel/summary
+#. tumbleweed/boost-extra/libboost_mpi_python-py3-1_69_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_mpi_python3-devel/summary
 msgid "Development library for Boost.MPI Python 3.x serialization"
 msgstr ""
 
 #. leap/boost/libboost_mpi_python-py3-1_66_0-devel/description
-#. tumbleweed/boost/libboost_mpi_python-py3-1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_mpi_python-py3-1_69_0-devel/description
 msgid ""
 "This package contains the Boost.MPI development library for Python 3.x "
 "serialization interface"
@@ -5489,13 +5712,13 @@ msgstr ""
 
 #. leap/boost/libboost_numpy-py2_7-1_66_0/summary
 #. leap/boost/libboost_numpy-py3-1_66_0/summary
-#. tumbleweed/boost/libboost_numpy-py2_7-1_68_0/summary
-#. tumbleweed/boost/libboost_numpy-py3-1_68_0/summary
+#. tumbleweed/boost-extra/libboost_numpy-py2_7-1_69_0/summary
+#. tumbleweed/boost-extra/libboost_numpy-py3-1_69_0/summary
 msgid "Boost.Python.NumPy runtime library"
 msgstr ""
 
 #. leap/boost/libboost_numpy-py2_7-1_66_0/description
-#. tumbleweed/boost/libboost_numpy-py2_7-1_68_0/description
+#. tumbleweed/boost-extra/libboost_numpy-py2_7-1_69_0/description
 msgid ""
 "This package contains the Boost::Python::NumPy runtime library for default "
 "version of python."
@@ -5503,27 +5726,29 @@ msgstr ""
 
 #. leap/boost/libboost_numpy-py2_7-1_66_0-devel/summary
 #. leap/boost/libboost_numpy-py3-1_66_0-devel/summary
-#. tumbleweed/boost/libboost_numpy-py2_7-1_68_0-devel/summary
-#. tumbleweed/boost/libboost_numpy-py3-1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_numpy-devel/summary
+#. tumbleweed/boost-extra/libboost_numpy-py2_7-1_69_0-devel/summary
+#. tumbleweed/boost-extra/libboost_numpy-py3-1_69_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_numpy3-devel/summary
 msgid "Development headers for Boost.Python.NumPy library"
 msgstr ""
 
 #. leap/boost/libboost_numpy-py2_7-1_66_0-devel/description
-#. tumbleweed/boost/libboost_numpy-py2_7-1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_numpy-py2_7-1_69_0-devel/description
 msgid ""
 "Development headers for Boost::Python::NumPy library for the default version "
 "of python."
 msgstr ""
 
 #. leap/boost/libboost_numpy-py3-1_66_0/description
-#. tumbleweed/boost/libboost_numpy-py3-1_68_0/description
+#. tumbleweed/boost-extra/libboost_numpy-py3-1_69_0/description
 msgid ""
 "This package contains the Boost.Python.NumPy runtime libraries for python3 "
 "bindings."
 msgstr ""
 
 #. leap/boost/libboost_numpy-py3-1_66_0-devel/description
-#. tumbleweed/boost/libboost_numpy-py3-1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_numpy-py3-1_69_0-devel/description
 msgid ""
 "Development headers for Boost.Python.NumPy library. This package contains "
 "library for python3 development for boost."
@@ -5531,25 +5756,26 @@ msgstr ""
 
 #. leap/boost-base/libboost_program_options1_66_0/summary
 #. leap/boost-base/libboost_program_options1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_program_options1_68_0/summary
-#. tumbleweed/boost-base/libboost_program_options1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_program_options1_69_0/summary
+#. tumbleweed/boost-base/libboost_program_options1_69_0-32bit/summary
 msgid "Boost.ProgramOptions runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_program_options1_66_0/description
 #. leap/boost-base/libboost_program_options1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_program_options1_68_0/description
-#. tumbleweed/boost-base/libboost_program_options1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_program_options1_69_0/description
+#. tumbleweed/boost-base/libboost_program_options1_69_0-32bit/description
 msgid "This package contains the Boost.ProgramOptions runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_program_options1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_program_options1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_program_options-devel/summary
+#. tumbleweed/boost-base/libboost_program_options1_69_0-devel/summary
 msgid "Development headers for Boost.ProgramOptions library"
 msgstr ""
 
 #. leap/boost-base/libboost_program_options1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_program_options1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_program_options1_69_0-devel/description
 msgid ""
 "This package contains development headers for Boost.ProgramOptions library."
 msgstr ""
@@ -5558,17 +5784,17 @@ msgstr ""
 #. leap/boost/libboost_python-py2_7-1_66_0-32bit/summary
 #. leap/boost/libboost_python-py3-1_66_0/summary
 #. leap/boost/libboost_python-py3-1_66_0-32bit/summary
-#. tumbleweed/boost/libboost_python-py2_7-1_68_0/summary
-#. tumbleweed/boost/libboost_python-py2_7-1_68_0-32bit/summary
-#. tumbleweed/boost/libboost_python-py3-1_68_0/summary
-#. tumbleweed/boost/libboost_python-py3-1_68_0-32bit/summary
+#. tumbleweed/boost-extra/libboost_python-py2_7-1_69_0/summary
+#. tumbleweed/boost-extra/libboost_python-py2_7-1_69_0-32bit/summary
+#. tumbleweed/boost-extra/libboost_python-py3-1_69_0/summary
+#. tumbleweed/boost-extra/libboost_python-py3-1_69_0-32bit/summary
 msgid "Boost.Python runtime library"
 msgstr ""
 
 #. leap/boost/libboost_python-py2_7-1_66_0/description
 #. leap/boost/libboost_python-py2_7-1_66_0-32bit/description
-#. tumbleweed/boost/libboost_python-py2_7-1_68_0/description
-#. tumbleweed/boost/libboost_python-py2_7-1_68_0-32bit/description
+#. tumbleweed/boost-extra/libboost_python-py2_7-1_69_0/description
+#. tumbleweed/boost-extra/libboost_python-py2_7-1_69_0-32bit/description
 msgid ""
 "This package contains the Boost::Python runtime library for default version "
 "of python."
@@ -5576,13 +5802,15 @@ msgstr ""
 
 #. leap/boost/libboost_python-py2_7-1_66_0-devel/summary
 #. leap/boost/libboost_python-py3-1_66_0-devel/summary
-#. tumbleweed/boost/libboost_python-py2_7-1_68_0-devel/summary
-#. tumbleweed/boost/libboost_python-py3-1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_python-devel/summary
+#. tumbleweed/boost-extra/libboost_python-py2_7-1_69_0-devel/summary
+#. tumbleweed/boost-extra/libboost_python-py3-1_69_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_python3-devel/summary
 msgid "Development headers for Boost.Python library"
 msgstr ""
 
 #. leap/boost/libboost_python-py2_7-1_66_0-devel/description
-#. tumbleweed/boost/libboost_python-py2_7-1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_python-py2_7-1_69_0-devel/description
 msgid ""
 "Development headers for Boost::Python library for the default version of "
 "python."
@@ -5590,15 +5818,15 @@ msgstr ""
 
 #. leap/boost/libboost_python-py3-1_66_0/description
 #. leap/boost/libboost_python-py3-1_66_0-32bit/description
-#. tumbleweed/boost/libboost_python-py3-1_68_0/description
-#. tumbleweed/boost/libboost_python-py3-1_68_0-32bit/description
+#. tumbleweed/boost-extra/libboost_python-py3-1_69_0/description
+#. tumbleweed/boost-extra/libboost_python-py3-1_69_0-32bit/description
 msgid ""
 "This package contains the Boost.Python runtime libraries for python3 "
 "bindings."
 msgstr ""
 
 #. leap/boost/libboost_python-py3-1_66_0-devel/description
-#. tumbleweed/boost/libboost_python-py3-1_68_0-devel/description
+#. tumbleweed/boost-extra/libboost_python-py3-1_69_0-devel/description
 msgid ""
 "Development headers for Boost.Python library. This package contains library "
 "for python3 development for boost."
@@ -5606,98 +5834,95 @@ msgstr ""
 
 #. leap/boost-base/libboost_random1_66_0/summary
 #. leap/boost-base/libboost_random1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_random1_68_0/summary
-#. tumbleweed/boost-base/libboost_random1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_random1_69_0/summary
+#. tumbleweed/boost-base/libboost_random1_69_0-32bit/summary
 msgid "Boost.Random runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_random1_66_0/description
 #. leap/boost-base/libboost_random1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_random1_68_0/description
-#. tumbleweed/boost-base/libboost_random1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_random1_69_0/description
+#. tumbleweed/boost-base/libboost_random1_69_0-32bit/description
 msgid "This package contains the Boost.Random runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_random1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_random1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_random-devel/summary
+#. tumbleweed/boost-base/libboost_random1_69_0-devel/summary
 msgid "Development headers for Boost.Random library"
 msgstr ""
 
 #. leap/boost-base/libboost_random1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_random1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_random1_69_0-devel/description
 msgid "This package contains Boost.Random development headers."
 msgstr ""
 
 #. leap/boost-base/libboost_regex1_66_0/summary
 #. leap/boost-base/libboost_regex1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_regex1_68_0/summary
-#. tumbleweed/boost-base/libboost_regex1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_regex1_69_0/summary
+#. tumbleweed/boost-base/libboost_regex1_69_0-32bit/summary
 msgid "Boost.Regex runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_regex1_66_0/description
 #. leap/boost-base/libboost_regex1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_regex1_68_0/description
-#. tumbleweed/boost-base/libboost_regex1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_regex1_69_0/description
+#. tumbleweed/boost-base/libboost_regex1_69_0-32bit/description
 msgid "This package contains the Boost.Regex runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_regex1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_regex1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_regex-devel/summary
+#. tumbleweed/boost-base/libboost_regex1_69_0-devel/summary
 msgid "Development headers for Boost.Regex library"
 msgstr ""
 
 #. leap/boost-base/libboost_regex1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_regex1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_regex1_69_0-devel/description
 msgid "This package contains development headers for Boost.Regex library."
 msgstr ""
 
 #. leap/boost-base/libboost_serialization1_66_0/summary
 #. leap/boost-base/libboost_serialization1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_serialization1_68_0/summary
-#. tumbleweed/boost-base/libboost_serialization1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_serialization1_69_0/summary
+#. tumbleweed/boost-base/libboost_serialization1_69_0-32bit/summary
 msgid "Boost.Serialization runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_serialization1_66_0/description
 #. leap/boost-base/libboost_serialization1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_serialization1_68_0/description
-#. tumbleweed/boost-base/libboost_serialization1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_serialization1_69_0/description
+#. tumbleweed/boost-base/libboost_serialization1_69_0-32bit/description
 msgid "This package contains the Boost.Serialization runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_serialization1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_serialization1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_serialization-devel/summary
+#. tumbleweed/boost-base/libboost_serialization1_69_0-devel/summary
 msgid "Development headers for Boost.Serialization library"
 msgstr ""
 
 #. leap/boost-base/libboost_serialization1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_serialization1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_serialization1_69_0-devel/description
 msgid ""
 "This package contains development headers for Boost.Serialization library."
 msgstr ""
 
 #. leap/boost-base/libboost_signals1_66_0/summary
 #. leap/boost-base/libboost_signals1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_signals1_68_0/summary
-#. tumbleweed/boost-base/libboost_signals1_68_0-32bit/summary
 msgid "Boost.Signals runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_signals1_66_0/description
 #. leap/boost-base/libboost_signals1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_signals1_68_0/description
-#. tumbleweed/boost-base/libboost_signals1_68_0-32bit/description
 msgid "This package contains the Boost::Signals Runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_signals1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_signals1_68_0-devel/summary
 msgid "Development headers for Boost.Signals library"
 msgstr ""
 
 #. leap/boost-base/libboost_signals1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_signals1_68_0-devel/description
 msgid ""
 "This package contains development headers for Boost.Signals library. Boost."
 "Signals is deprecated in favour of Boost.Signals2, a header-only library and "
@@ -5706,25 +5931,26 @@ msgstr ""
 
 #. leap/boost-base/libboost_stacktrace1_66_0/summary
 #. leap/boost-base/libboost_stacktrace1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_stacktrace1_68_0/summary
-#. tumbleweed/boost-base/libboost_stacktrace1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_stacktrace1_69_0/summary
+#. tumbleweed/boost-base/libboost_stacktrace1_69_0-32bit/summary
 msgid "Boost.Stacktrace runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_stacktrace1_66_0/description
 #. leap/boost-base/libboost_stacktrace1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_stacktrace1_68_0/description
-#. tumbleweed/boost-base/libboost_stacktrace1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_stacktrace1_69_0/description
+#. tumbleweed/boost-base/libboost_stacktrace1_69_0-32bit/description
 msgid "This package contains the Boost.Stacktrace runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_stacktrace1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_stacktrace1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_stacktrace-devel/summary
+#. tumbleweed/boost-base/libboost_stacktrace1_69_0-devel/summary
 msgid "Development headers for Boost.Stacktrace library"
 msgstr ""
 
 #. leap/boost-base/libboost_stacktrace1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_stacktrace1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_stacktrace1_69_0-devel/description
 msgid ""
 "This package contains development headers for Boost.Stacktrace library. "
 "Boost.Stacktrace is a simple C++03 library that provide information about "
@@ -5733,49 +5959,48 @@ msgstr ""
 
 #. leap/boost-base/libboost_system1_66_0/summary
 #. leap/boost-base/libboost_system1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_system1_68_0/summary
-#. tumbleweed/boost-base/libboost_system1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_system1_69_0/summary
+#. tumbleweed/boost-base/libboost_system1_69_0-32bit/summary
 msgid "Boost.System runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_system1_66_0/description
 #. leap/boost-base/libboost_system1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_system1_68_0/description
-#. tumbleweed/boost-base/libboost_system1_68_0-32bit/description
 msgid "This package contains the Boost.System runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_system1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_system1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_system-devel/summary
+#. tumbleweed/boost-base/libboost_system1_69_0-devel/summary
 msgid "Development headers for Boost.System library"
 msgstr ""
 
 #. leap/boost-base/libboost_system1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_system1_68_0-devel/description
 msgid "This package contains development headers for Boost.System library."
 msgstr ""
 
 #. leap/boost-base/libboost_test1_66_0/summary
 #. leap/boost-base/libboost_test1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_test1_68_0/summary
-#. tumbleweed/boost-base/libboost_test1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_test1_69_0/summary
+#. tumbleweed/boost-base/libboost_test1_69_0-32bit/summary
 msgid "Boost.Test runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_test1_66_0/description
 #. leap/boost-base/libboost_test1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_test1_68_0/description
-#. tumbleweed/boost-base/libboost_test1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_test1_69_0/description
+#. tumbleweed/boost-base/libboost_test1_69_0-32bit/description
 msgid "This package contains the BoosttTest runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_test1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_test1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_test-devel/summary
+#. tumbleweed/boost-base/libboost_test1_69_0-devel/summary
 msgid "Development headers for Boost.Test library"
 msgstr ""
 
 #. leap/boost-base/libboost_test1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_test1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_test1_69_0-devel/description
 msgid ""
 "Development headers for Boost.Test library. Boost.Test supports for simple "
 "program testing, full unit testing, and for program execution monitoring."
@@ -5783,94 +6008,98 @@ msgstr ""
 
 #. leap/boost-base/libboost_thread1_66_0/summary
 #. leap/boost-base/libboost_thread1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_thread1_68_0/summary
-#. tumbleweed/boost-base/libboost_thread1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_thread1_69_0/summary
+#. tumbleweed/boost-base/libboost_thread1_69_0-32bit/summary
 msgid "Boost.Thread runtime libraries"
 msgstr ""
 
 #. leap/boost-base/libboost_thread1_66_0/description
 #. leap/boost-base/libboost_thread1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_thread1_68_0/description
-#. tumbleweed/boost-base/libboost_thread1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_thread1_69_0/description
+#. tumbleweed/boost-base/libboost_thread1_69_0-32bit/description
 msgid "This package contains the Boost.Thread runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_thread1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_thread1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_thread-devel/summary
+#. tumbleweed/boost-base/libboost_thread1_69_0-devel/summary
 msgid "Development headers for Boost.Thread library"
 msgstr ""
 
 #. leap/boost-base/libboost_thread1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_thread1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_thread1_69_0-devel/description
 msgid "This package contains development headers for Boost.Thread library."
 msgstr ""
 
 #. leap/boost-base/libboost_timer1_66_0/summary
-#. tumbleweed/boost-base/libboost_timer1_68_0/summary
+#. tumbleweed/boost-base/libboost_timer1_69_0/summary
 msgid "Boost.Timer runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_timer1_66_0/description
-#. tumbleweed/boost-base/libboost_timer1_68_0/description
+#. tumbleweed/boost-base/libboost_timer1_69_0/description
 msgid "This package contains Boost.Timer runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_timer1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_timer1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_timer-devel/summary
+#. tumbleweed/boost-base/libboost_timer1_69_0-devel/summary
 msgid "Development headers for Boost.Timer library"
 msgstr ""
 
 #. leap/boost-base/libboost_timer1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_timer1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_timer1_69_0-devel/description
 msgid "This package contains development headers for Boost.Timer library."
 msgstr ""
 
 #. leap/boost-base/libboost_type_erasure1_66_0/summary
 #. leap/boost-base/libboost_type_erasure1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_type_erasure1_68_0/summary
-#. tumbleweed/boost-base/libboost_type_erasure1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_type_erasure1_69_0/summary
+#. tumbleweed/boost-base/libboost_type_erasure1_69_0-32bit/summary
 msgid "Boost.TypeErasure runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_type_erasure1_66_0/description
 #. leap/boost-base/libboost_type_erasure1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_type_erasure1_68_0/description
-#. tumbleweed/boost-base/libboost_type_erasure1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_type_erasure1_69_0/description
+#. tumbleweed/boost-base/libboost_type_erasure1_69_0-32bit/description
 msgid "This package contains Boost::TypeErasure runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_type_erasure1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_type_erasure1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_type_erasure-devel/summary
+#. tumbleweed/boost-base/libboost_type_erasure1_69_0-devel/summary
 msgid "Development headers for Boost.TypeErasure library"
 msgstr ""
 
 #. leap/boost-base/libboost_type_erasure1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_type_erasure1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_type_erasure1_69_0-devel/description
 msgid ""
 "This package contains development headers for Boost.TypeErasure library."
 msgstr ""
 
 #. leap/boost-base/libboost_wave1_66_0/summary
 #. leap/boost-base/libboost_wave1_66_0-32bit/summary
-#. tumbleweed/boost-base/libboost_wave1_68_0/summary
-#. tumbleweed/boost-base/libboost_wave1_68_0-32bit/summary
+#. tumbleweed/boost-base/libboost_wave1_69_0/summary
+#. tumbleweed/boost-base/libboost_wave1_69_0-32bit/summary
 msgid "Boost.Wave runtime library"
 msgstr ""
 
 #. leap/boost-base/libboost_wave1_66_0/description
 #. leap/boost-base/libboost_wave1_66_0-32bit/description
-#. tumbleweed/boost-base/libboost_wave1_68_0/description
-#. tumbleweed/boost-base/libboost_wave1_68_0-32bit/description
+#. tumbleweed/boost-base/libboost_wave1_69_0/description
+#. tumbleweed/boost-base/libboost_wave1_69_0-32bit/description
 msgid "This package contains the Boost::Wave runtime library."
 msgstr ""
 
 #. leap/boost-base/libboost_wave1_66_0-devel/summary
-#. tumbleweed/boost-base/libboost_wave1_68_0-devel/summary
+#. tumbleweed/boost-defaults/libboost_wave-devel/summary
+#. tumbleweed/boost-base/libboost_wave1_69_0-devel/summary
 msgid "Development headers for Boost.Wave library"
 msgstr ""
 
 #. leap/boost-base/libboost_wave1_66_0-devel/description
-#. tumbleweed/boost-base/libboost_wave1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_wave1_69_0-devel/description
 msgid "This package contains development headers for Boost.Wave library."
 msgstr ""
 
@@ -5896,7 +6125,6 @@ msgid "Standalone eBPF library"
 msgstr ""
 
 #. leap/bcc/libbpf0/description
-#. tumbleweed/bcc/libbpf0/description
 msgid "A standalone library to load eBPF programs"
 msgstr ""
 
@@ -5943,7 +6171,7 @@ msgid ""
 msgstr ""
 
 #. leap/brltty/libbrlapi0_6/summary
-#. tumbleweed/brltty/libbrlapi0_6/summary
+#. tumbleweed/brltty/libbrlapi0_7/summary
 msgid "Library to use BRLTTY from applications"
 msgstr ""
 
@@ -6016,9 +6244,10 @@ msgid "Include Files and Libraries for developing with Btrfs"
 msgstr ""
 
 #. leap/btrfsprogs/libbtrfs-devel/description
+#. tumbleweed/btrfsprogs/libbtrfs-devel/description
 msgid ""
 "This package contains the libraries and headers files for developers to "
-"build applications to interface with btrfs."
+"build applications to interface with Btrfs."
 msgstr ""
 
 #. leap/btrfsprogs/libbtrfs0/summary
@@ -6034,22 +6263,18 @@ msgid ""
 msgstr ""
 
 #. leap/budgie-desktop/libbudgie-plugin0/summary
-#. tumbleweed/budgie-desktop/libbudgie-plugin0/summary
 msgid "Shared library for Budgie plugins"
 msgstr ""
 
 #. leap/budgie-desktop/libbudgie-plugin0/description
-#. tumbleweed/budgie-desktop/libbudgie-plugin0/description
 msgid "Shared library for budgie plugins to link against."
 msgstr ""
 
 #. leap/budgie-desktop/libbudgietheme0/summary
-#. tumbleweed/budgie-desktop/libbudgietheme0/summary
 msgid "Shared library for Budgie theming"
 msgstr ""
 
 #. leap/budgie-desktop/libbudgietheme0/description
-#. tumbleweed/budgie-desktop/libbudgietheme0/description
 msgid "Budgie theming engine shared library package."
 msgstr ""
 
@@ -6161,6 +6386,20 @@ msgid ""
 "bzrtp is a FOSS implementation of ZRTP keys exchange protocol. The library "
 "written in C 89, is fully portable, and can be executed on many platforms "
 "including x86 and ARM processors."
+msgstr ""
+
+#. leap/libressl/libcrypto43/summary
+#. leap/libressl/libcrypto43-32bit/summary
+#. leap/libressl/summary
+#. leap/libressl/libssl45/summary
+#. leap/libressl/libssl45-32bit/summary
+#. tumbleweed/boringssl/libboringssl0/summary
+#. tumbleweed/libressl/libcrypto45/summary
+#. tumbleweed/libressl/libcrypto45-32bit/summary
+#. tumbleweed/libressl/summary
+#. tumbleweed/libressl/libssl47/summary
+#. tumbleweed/libressl/libssl47-32bit/summary
+msgid "An SSL/TLS protocol implementation"
 msgstr ""
 
 #. leap/bind/libdns169-32bit/summary
@@ -6295,12 +6534,10 @@ msgid ""
 msgstr ""
 
 #. leap/budgie-desktop/libraven0/summary
-#. tumbleweed/budgie-desktop/libraven0/summary
 msgid "Shared library for Raven"
 msgstr ""
 
 #. leap/budgie-desktop/libraven0/description
-#. tumbleweed/budgie-desktop/libraven0/description
 msgid "Budgie Desktop Notification Center."
 msgstr ""
 
@@ -6314,8 +6551,8 @@ msgstr ""
 #. tumbleweed/libreadline5/summary
 #. tumbleweed/readline6/libreadline6-32bit/summary
 #. tumbleweed/readline6/libreadline6/summary
-#. tumbleweed/readline/libreadline7-32bit/summary
-#. tumbleweed/readline/libreadline7/summary
+#. tumbleweed/readline/libreadline8-32bit/summary
+#. tumbleweed/readline/libreadline8/summary
 msgid "The Readline Library"
 msgstr ""
 
@@ -6329,12 +6566,38 @@ msgstr ""
 #. tumbleweed/libreadline5/description
 #. tumbleweed/readline6/libreadline6-32bit/description
 #. tumbleweed/readline6/libreadline6/description
-#. tumbleweed/readline/libreadline7-32bit/description
-#. tumbleweed/readline/libreadline7/description
+#. tumbleweed/readline/libreadline8-32bit/description
+#. tumbleweed/readline/libreadline8/description
 msgid ""
 "The readline library is used by the Bourne Again Shell (bash, the standard "
 "command interpreter) for easy editing of command lines.  This includes "
 "history and search functionality."
+msgstr ""
+
+#. leap/branding-openSUSE/libreoffice-branding-openSUSE/summary
+msgid "openSUSE branding for LibreOffice"
+msgstr ""
+
+#. leap/branding-openSUSE/libreoffice-branding-openSUSE/description
+msgid "openSUSE 15.1 branding for LibreOffice"
+msgstr ""
+
+#. leap/bluebird-theme/metatheme-bluebird-common/summary
+#. tumbleweed/bluebird-theme/metatheme-bluebird-common/summary
+msgid ""
+"A Clean Minimalistic Theme for GNOME, XFCE, GTK+ 2 and 3 -- Common Files"
+msgstr ""
+
+#. leap/bluebird-theme/metatheme-bluebird-common/description
+#. tumbleweed/bluebird-theme/metatheme-bluebird-common/description
+msgid ""
+"The Bluebird theme for GTK2/3 and xfwm4/emerald/metacity started out on the "
+"basis of Bluebird, but aims at reworking the intense blue tone to a more "
+"neutral blue-ish look that will be more pleasant to look at in everyday "
+"use.\n"
+"\n"
+"This package provides the files common to the GTK+ themes and the window "
+"manager themes as well as background images."
 msgstr ""
 
 #. leap/breeze-gtk/metatheme-breeze-common/summary
@@ -6348,7 +6611,6 @@ msgid "Library to use BRLTTY from applications -- OCaml Bindings"
 msgstr ""
 
 #. leap/branding-openSUSE/plymouth-branding-openSUSE/summary
-#. tumbleweed/branding-openSUSE/plymouth-branding-openSUSE/summary
 msgid "openSUSE branding for Plymouth bootsplash"
 msgstr ""
 
@@ -6357,22 +6619,21 @@ msgid "openSUSE 15.1 branding for the plymouth bootsplash"
 msgstr ""
 
 #. leap/bcc/python2-bcc/summary
-#. tumbleweed/bcc/python2-bcc/summary
 msgid "Python2 bindings for BPF Compiler Collection"
 msgstr ""
 
 #. leap/bcc/python2-bcc/description
-#. tumbleweed/bcc/python2-bcc/description
 msgid "Python bindings for BPF Compiler Collection (BCC)"
 msgstr ""
 
 #. leap/boost/python2-boost_parallel_mpi1_66_0/summary
-#. tumbleweed/boost/python2-boost_parallel_mpi1_68_0/summary
+#. tumbleweed/boost-defaults/python-boost_parallel_mpi/summary
+#. tumbleweed/boost-extra/python2-boost_parallel_mpi1_69_0/summary
 msgid "Python 2.7 bindings for Boost.Parallel.MPI library"
 msgstr ""
 
 #. leap/boost/python2-boost_parallel_mpi1_66_0/description
-#. tumbleweed/boost/python2-boost_parallel_mpi1_68_0/description
+#. tumbleweed/boost-extra/python2-boost_parallel_mpi1_69_0/description
 msgid "This package contains the Boost.Parallel.MPI bindings for Python 2.7"
 msgstr ""
 
@@ -6392,12 +6653,10 @@ msgid ""
 msgstr ""
 
 #. leap/bcc/python3-bcc/summary
-#. tumbleweed/bcc/python3-bcc/summary
 msgid "Python3 bindings for BPF Compiler Collection"
 msgstr ""
 
 #. leap/bcc/python3-bcc/description
-#. tumbleweed/bcc/python3-bcc/description
 msgid "Python3 bindings for BPF Compiler Collection (BCC)"
 msgstr ""
 
@@ -6414,12 +6673,13 @@ msgid ""
 msgstr ""
 
 #. leap/boost/python3-boost_parallel_mpi1_66_0/summary
-#. tumbleweed/boost/python3-boost_parallel_mpi1_68_0/summary
+#. tumbleweed/boost-defaults/python3-boost_parallel_mpi/summary
+#. tumbleweed/boost-extra/python3-boost_parallel_mpi1_69_0/summary
 msgid "Python 3.x bindings for Boost.Parallel.MPI library"
 msgstr ""
 
 #. leap/boost/python3-boost_parallel_mpi1_66_0/description
-#. tumbleweed/boost/python3-boost_parallel_mpi1_68_0/description
+#. tumbleweed/boost-extra/python3-boost_parallel_mpi1_69_0/description
 msgid "This package contains the Boost.Parallel.MPI bindings for Python 3.x"
 msgstr ""
 
@@ -6458,6 +6718,16 @@ msgstr ""
 msgid ""
 "This package contains the documentation for using the readline library as "
 "well as programming with the interface of the readline library."
+msgstr ""
+
+#. leap/branding-openSUSE/systemd-icon-branding-openSUSE/summary
+msgid "Icons used with systemd"
+msgstr ""
+
+#. leap/branding-openSUSE/systemd-icon-branding-openSUSE/description
+msgid ""
+"Those icons are designed to represent openSUSE with systemd osrelease LOGO "
+"variable"
 msgstr ""
 
 #. leap/brltty/tcl-brlapi/summary
@@ -6543,12 +6813,10 @@ msgid ""
 msgstr ""
 
 #. leap/budgie-desktop/typelib_1_0-Budgie-0_1/summary
-#. tumbleweed/budgie-desktop/typelib_1_0-Budgie-0_1/summary
 msgid "Introspection bindings for the Budgie Desktop"
 msgstr ""
 
 #. leap/budgie-desktop/typelib_1_0-Budgie-0_1/description
-#. tumbleweed/budgie-desktop/typelib_1_0-Budgie-0_1/description
 msgid ""
 "This package provides GObject Introspection files required for developing "
 "Budgie Applets using interpreted languages, such as Python GObject "
@@ -6556,7 +6824,6 @@ msgid ""
 msgstr ""
 
 #. leap/branding-openSUSE/wallpaper-branding-openSUSE/summary
-#. tumbleweed/branding-openSUSE/wallpaper-branding-openSUSE/summary
 msgid "openSUSE default wallpapers"
 msgstr ""
 
@@ -6575,7 +6842,6 @@ msgid "The xbrlapi utility is a helper to have BrlAPI work on a X system."
 msgstr ""
 
 #. leap/branding-openSUSE/xfce4-splash-branding-openSUSE/summary
-#. tumbleweed/branding-openSUSE/xfce4-splash-branding-openSUSE/summary
 msgid "openSUSE branding for XFCE splash"
 msgstr ""
 
@@ -6584,7 +6850,6 @@ msgid "openSUSE 15.1 branding for the XFCE splash"
 msgstr ""
 
 #. leap/branding-openSUSE/yast2-qt-branding-openSUSE/summary
-#. tumbleweed/branding-openSUSE/yast2-qt-branding-openSUSE/summary
 msgid "openSUSE branding for yast2-qt"
 msgstr ""
 
@@ -6592,28 +6857,221 @@ msgstr ""
 msgid "openSUSE 15.1 branding and themes for yast2-qt"
 msgstr ""
 
-#. tumbleweed/Bear/summary
-msgid "Tool to generate compilation database for clang tooling"
+#. tumbleweed/base64coder/summary
+msgid "Base64 encoder/decoder Java library"
 msgstr ""
 
-#. tumbleweed/Bear/description
+#. tumbleweed/base64coder/description
 msgid ""
-"Bear is a tool to generate compilation database for clang tooling.\n"
+"Base64Coder is a Base64 encoder/decoder class.\n"
 "\n"
-"One way to get compilation database is to use cmake as build tool. When the "
-"project compiles with no cmake, but another build system, there is no free "
-"json file. Bear is a tool to generate such file during the build process."
+"There is no Base64 encoder/decoder in the standard Java SDK class library.  "
+"The undocumented classes sun.misc.BASE64Encoder and sun.misc.BASE64Decoder "
+"should not be used."
 msgstr ""
 
-#. tumbleweed/bat/summary
-msgid "A cat(1) clone with syntax highlighting and Git integration"
+#. tumbleweed/base64coder/base64coder-javadoc/summary
+msgid "API documentation for base64coder"
 msgstr ""
 
-#. tumbleweed/bat/description
+#. tumbleweed/base64coder/base64coder-javadoc/description
+msgid "This package contains API documentation for base64coder."
+msgstr ""
+
+#. tumbleweed/bash/bash-devel/description
 msgid ""
-"A cat(1) clone which supports syntax highlighting for a large number of "
-"programming and markup languages. It has git integration and automatic "
-"paging."
+"This package contains the C header files for writing loadable new builtins "
+"for the interpreter Bash. Use the output of the command `pkg-config bash --"
+"cflags' on the compilers command line."
+msgstr ""
+
+#. tumbleweed/bazel-gazelle/summary
+msgid "Generator of Bazel build files for Go projects"
+msgstr ""
+
+#. tumbleweed/bazel-gazelle/description
+msgid ""
+"Gazelle is a generator of Bazel build files for Go projects. It can create "
+"new BUILD.bazel files for a project that follows \"go build\" conventions, "
+"and it can update existing build files to include new sources, dependencies, "
+"and options. Gazelle may be run by Bazel using the gazelle rule, or it can "
+"be run as a command line tool. Gazelle can also be run in an external "
+"repository as part of the go_repository rule. Gazelle may be extended to "
+"support new languages and custom rule sets."
+msgstr ""
+
+#. tumbleweed/bazel-gazelle/bazel-gazelle-source/summary
+msgid "Source code of bazel-gazelle"
+msgstr ""
+
+#. tumbleweed/bazel-gazelle/bazel-gazelle-source/description
+msgid ""
+"Gazelle is a generator of Bazel build files for Go projects. It can create "
+"new BUILD.bazel files for a project that follows \"go build\" conventions, "
+"and it can update existing build files to include new sources, dependencies, "
+"and options. Gazelle may be run by Bazel using the gazelle rule, or it can "
+"be run as a command line tool. Gazelle can also be run in an external "
+"repository as part of the go_repository rule. Gazelle may be extended to "
+"support new languages and custom rule sets.\n"
+"\n"
+"This package contains source code for Gazelle."
+msgstr ""
+
+#. tumbleweed/bazel-rules-go/bazel-rules-go-source/summary
+msgid "Source code of bazel-rules-go"
+msgstr ""
+
+#. tumbleweed/bazel-rules-go/bazel-rules-go-source/description
+msgid ""
+"Bazel rules which support building software written in Go, specifically:\n"
+"- building libraries\n"
+"- building binaries\n"
+"- executing tests\n"
+"- vendoring\n"
+"- cgo builds\n"
+"- cross compilation\n"
+"- auto generating Bazel BUILD files\n"
+"- build-time code analysis via nogo\n"
+"\n"
+"This package contains source code of bazel-rules-go."
+msgstr ""
+
+#. tumbleweed/bazel-rules-proto/bazel-rules-proto-source/summary
+msgid "Source code of bazel-rules-proto"
+msgstr ""
+
+#. tumbleweed/bazel-rules-proto/bazel-rules-proto-source/description
+msgid ""
+"bazel-rules-proto is a set of Bazel rules for building Protocol Buffers.\n"
+"\n"
+"This package contains source code of bazel-rules-proto."
+msgstr ""
+
+#. tumbleweed/bazel-skylib/bazel-skylib-source/summary
+msgid "Source code of bazel-skylib"
+msgstr ""
+
+#. tumbleweed/bazel-skylib/bazel-skylib-source/description
+msgid ""
+"Skylib is a standard library that provides functions for manipulating "
+"collections, file paths, and common features for writing custom build rules "
+"in Bazel.\n"
+"\n"
+"This package contains source code of Skylib."
+msgstr ""
+
+#. tumbleweed/bazel-toolchains/bazel-toolchains-source/summary
+msgid "Source code of bazel-toolchains"
+msgstr ""
+
+#. tumbleweed/bazel-toolchains/bazel-toolchains-source/description
+msgid ""
+"bazel-toolchains is a repository of commonly used Bazel toolchain "
+"configuration files. They are required to configure Bazel to work inside a "
+"Docker container via a remote execution environment.\n"
+"\n"
+"This package contains source code of bazel-toolchains."
+msgstr ""
+
+#. tumbleweed/bcal/summary
+msgid "Command-line utility for storage conversions and calculations"
+msgstr ""
+
+#. tumbleweed/bcal/description
+msgid ""
+"bcal (Byte CALculator) is a command-line utility for storage, hardware and "
+"firmware developers who deal with storage-specific numerical calculations, "
+"expressions, unit conversions or address calculations frequently. If you are "
+"one and cannot calculate the hex address offset for (512 - 16) MiB "
+"immediately, or the value when the 43rd bit of a 64-bit address is set, bcal "
+"is for you."
+msgstr ""
+
+#. tumbleweed/bcc/bcc-devel/summary
+msgid "Header files for the BPF Compiler Collection"
+msgstr ""
+
+#. tumbleweed/bcc/bcc-devel/description
+msgid "Headers and pkg-config build descriptions for developing BCC programs."
+msgstr ""
+
+#. tumbleweed/bcc/bcc-docs/summary
+msgid "BPF Compiler Collection documentation"
+msgstr ""
+
+#. tumbleweed/bcc/bcc-docs/description
+msgid ""
+"Documentation on how to write programs with the BPF Compiler Collection."
+msgstr ""
+
+#. tumbleweed/bcc/bcc-examples/summary
+msgid "Examples from the BPF Compiler Collection"
+msgstr ""
+
+#. tumbleweed/bcc/bcc-examples/description
+msgid "Python and C examples from the BPF Compiler Collection."
+msgstr ""
+
+#. tumbleweed/bcc/bcc-lua/summary
+msgid "Lua interpreter for the BPF Compiler Collection"
+msgstr ""
+
+#. tumbleweed/bcc/bcc-lua/description
+msgid "Lua interpreter for the BPF Compiler Collection."
+msgstr ""
+
+#. tumbleweed/bcc/bcc-tools/summary
+msgid "Tracing tools from the BPF Compiler Collection"
+msgstr ""
+
+#. tumbleweed/bcc/bcc-tools/description
+msgid "Python tracing scripts from the BPF Compiler Collection."
+msgstr ""
+
+#. tumbleweed/bemenu/summary
+msgid "Dynamic menu library and client program inspired by dmenu"
+msgstr ""
+
+#. tumbleweed/bemenu/description
+msgid ""
+"Dynamic menu library and client program inspired by dmenu with support for "
+"X, Wayland and ncurses."
+msgstr ""
+
+#. tumbleweed/bemenu/bemenu-devel/summary
+msgid "Development files for bemenu"
+msgstr ""
+
+#. tumbleweed/bemenu/bemenu-devel/description
+msgid "Files required for development for Bemenu."
+msgstr ""
+
+#. tumbleweed/benji/summary
+msgid "Deduplicating block based backup software"
+msgstr ""
+
+#. tumbleweed/benji/description
+msgid ""
+"Deduplicating block based backup software for ceph/rbd, image files and "
+"devices."
+msgstr ""
+
+#. tumbleweed/beust-jcommander/summary
+msgid "Java framework for parsing command line parameters"
+msgstr ""
+
+#. tumbleweed/beust-jcommander/description
+msgid ""
+"JCommander is a Java framework that allows parsing command line parameters "
+"(with annotations)."
+msgstr ""
+
+#. tumbleweed/beust-jcommander/beust-jcommander-javadoc/summary
+msgid "API documentation for beust-jcommander"
+msgstr ""
+
+#. tumbleweed/beust-jcommander/beust-jcommander-javadoc/description
+msgid "This package contains the API documentation for beust-jcommander."
 msgstr ""
 
 #. tumbleweed/bff/bff-samples/summary
@@ -6624,38 +7082,25 @@ msgstr ""
 msgid "Some examples of programs written in Brainfuck."
 msgstr ""
 
-#. tumbleweed/bibletime/summary
-msgid "A Bible study tool"
-msgstr ""
-
-#. tumbleweed/bibletime/description
+#. tumbleweed/bibview/description
 msgid ""
-"BibleTime is a Bible study program.\n"
-"\n"
-"The software uses the SWORD programming library to work with over 200 free "
-"Bible texts, commentaries, dictionaries and books provided by the Crosswire "
-"Bible Society.\n"
-"\n"
-"BibleTime provides easy handling of digitalized texts (Bibles, commentaries "
-"and lexicons) and powerful features to work with these texts (search in "
-"texts, write own notes, save, print etc.)."
+"Using bibview, entries in several BiB databases can be moved, manipulated, "
+"created, and searched."
 msgstr ""
 
-#. tumbleweed/birdie/summary
-msgid "A native Twitter client"
+#. tumbleweed/bitlbee-mastodon/summary
+msgid "A Mastodon plugin for Bitlbee"
 msgstr ""
 
-#. tumbleweed/birdie/description
+#. tumbleweed/bitlbee-mastodon/description
 msgid ""
-"Birdie is a beautiful and fast Twitter client designed for Elementary OS."
-msgstr ""
-
-#. tumbleweed/birdie/birdie-lang/summary
-msgid "Translations for package birdie"
-msgstr ""
-
-#. tumbleweed/birdie/birdie-lang/description
-msgid "Provides translations for the \"birdie\" package."
+"This plugin allows Bitlbee to communicate with Mastodon instances. Mastodon "
+"is a free, open-source, decentralized microblogging network. Bitlbee is an "
+"IRC server connecting to various other text messaging services. You run "
+"Bitlbee and connect to it using an IRC client, then configure Bitlbee to "
+"connect to other services, such as a Mastodon instance where you already "
+"have an account. The benefit is that you can now use any IRC client you want "
+"to connect to Mastodon."
 msgstr ""
 
 #. tumbleweed/bleachbit/summary
@@ -6673,19 +7118,281 @@ msgid ""
 "website resources."
 msgstr ""
 
-#. tumbleweed/bookworm/description
+#. tumbleweed/bnd-maven-plugin/summary
+msgid "BND Maven plugin"
+msgstr ""
+
+#. tumbleweed/bnd-maven-plugin/description
+msgid "Collection of various Maven plugins provided by the Bnd project."
+msgstr ""
+
+#. tumbleweed/bnd-maven-plugin/bnd-maven-plugin-javadoc/summary
+msgid "Javadoc for bnd-maven-plugin"
+msgstr ""
+
+#. tumbleweed/bnd-maven-plugin/bnd-maven-plugin-javadoc/description
+msgid "API documentation for bnd-maven-plugin."
+msgstr ""
+
+#. tumbleweed/bolt/summary
+msgid "Thunderbolt 3 device manager"
+msgstr ""
+
+#. tumbleweed/bolt/description
 msgid ""
-"An eBook reader for Elementary OS.\n"
+"Userspace system daemon to enable security levels for Thunderbolt 3 on GNU/"
+"Linux."
+msgstr ""
+
+#. tumbleweed/bolt/bolt-tools/summary
+msgid "Bolt Tools"
+msgstr ""
+
+#. tumbleweed/bolt/bolt-tools/description
+msgid ""
+"The bolt-tools package contains optional tools from the Bolt software "
+"framework."
+msgstr ""
+
+#. tumbleweed/boost-defaults/boost-devel/description
+msgid "Default version of Boost headers"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost-gnu-hpc/summary
+msgid "Dependency package for boost_1_69_0-gnu-hpc"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost-gnu-hpc/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-hpc provides the dependency "
+"to get binary package boost_1_69_0-gnu-hpc. When this package gets updated "
+"it installs the latest version of boost_1_69_0-gnu-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost-gnu-hpc-devel/summary
+msgid "Dependency package for boost_1_69_0-gnu-hpc-devel"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost-gnu-hpc-devel/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-hpc-devel provides the "
+"dependency to get binary package boost_1_69_0-gnu-hpc-devel. When this "
+"package gets updated it installs the latest version of boost_1_69_0-gnu-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc/summary
+msgid "Dependency package for boost_1_69_0-gnu-mvapich2-hpc"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-mvapich2-hpc provides the "
+"dependency to get binary package boost_1_69_0-gnu-mvapich2-hpc. When this "
+"package gets updated it installs the latest version of boost_1_69_0-gnu-"
+"mvapich2-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc-devel/summary
+msgid "Dependency package for boost_1_69_0-gnu-mvapich2-hpc-devel"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc-devel/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-mvapich2-hpc-devel provides "
+"the dependency to get binary package boost_1_69_0-gnu-mvapich2-hpc-devel. "
+"When this package gets updated it installs the latest version of "
+"boost_1_69_0-gnu-mvapich2-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc-python2/summary
+msgid "Dependency package for boost_1_69_0-gnu-mvapich2-hpc-python2"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc-python2/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-mvapich2-hpc-python2 "
+"provides the dependency to get binary package boost_1_69_0-gnu-mvapich2-hpc-"
+"python2. When this package gets updated it installs the latest version of "
+"boost_1_69_0-gnu-mvapich2-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc-python3/summary
+msgid "Dependency package for boost_1_69_0-gnu-mvapich2-hpc-python3"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost-gnu-mvapich2-hpc-python3/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-mvapich2-hpc-python3 "
+"provides the dependency to get binary package boost_1_69_0-gnu-mvapich2-hpc-"
+"python3. When this package gets updated it installs the latest version of "
+"boost_1_69_0-gnu-mvapich2-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc/summary
+msgid "Dependency package for boost_1_69_0-gnu-openmpi2-hpc"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-openmpi2-hpc provides the "
+"dependency to get binary package boost_1_69_0-gnu-openmpi2-hpc. When this "
+"package gets updated it installs the latest version of boost_1_69_0-gnu-"
+"openmpi2-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc-devel/summary
+msgid "Dependency package for boost_1_69_0-gnu-openmpi2-hpc-devel"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc-devel/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-openmpi2-hpc-devel provides "
+"the dependency to get binary package boost_1_69_0-gnu-openmpi2-hpc-devel. "
+"When this package gets updated it installs the latest version of "
+"boost_1_69_0-gnu-openmpi2-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc-python2/summary
+msgid "Dependency package for boost_1_69_0-gnu-openmpi2-hpc-python2"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc-python2/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-openmpi2-hpc-python2 "
+"provides the dependency to get binary package boost_1_69_0-gnu-openmpi2-hpc-"
+"python2. When this package gets updated it installs the latest version of "
+"boost_1_69_0-gnu-openmpi2-hpc."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc-python3/summary
+msgid "Dependency package for boost_1_69_0-gnu-openmpi2-hpc-python3"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost-gnu-openmpi2-hpc-python3/description
+msgid ""
+"boost: Boost C++ Libraries The package boost-gnu-openmpi2-hpc-python3 "
+"provides the dependency to get binary package boost_1_69_0-gnu-openmpi2-hpc-"
+"python3. When this package gets updated it installs the latest version of "
+"boost_1_69_0-gnu-openmpi2-hpc."
+msgstr ""
+
+#. tumbleweed/boost-defaults/boost-jam/description
+msgid ""
+"Boost Jam is a build tool based on FTJam, which in turn is based on Perforce "
+"Jam. It contains significant improvements made to facilitate its use in the "
+"Boost Build System.\n"
 "\n"
-"It uses poppler for decoding and read formats like EPUB, PDF, mobi, cbr, etc."
+"This package installs the default version of Boost Jam."
 msgstr ""
 
-#. tumbleweed/bookworm/bookworm-lang/summary
-msgid "Translations for package bookworm"
+#. tumbleweed/boost_1_69_0-gnu-hpc/summary
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/summary
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/summary
+msgid "Boost C++ Libraries"
 msgstr ""
 
-#. tumbleweed/bookworm/bookworm-lang/description
-msgid "Provides translations for the \"bookworm\" package."
+#. tumbleweed/boost_1_69_0-gnu-hpc/description
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/description
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/description
+msgid ""
+"Boost provides free peer-reviewed portable C++ source libraries. The "
+"emphasis is on libraries that work well with the C++ Standard Library. One "
+"goal is to establish \"existing practice\" and provide reference "
+"implementations so that the Boost libraries are suitable for eventual "
+"standardization. Some of the libraries have already been proposed for "
+"inclusion in the C++ Standards Committee's upcoming C++ Standard Library "
+"Technical Report.\n"
+"\n"
+"Although Boost was begun by members of the C++ Standards Committee Library "
+"Working Group, membership has expanded to include nearly two thousand "
+"members of the C++ community at large."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost_1_69_0-gnu-hpc-devel/summary
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost_1_69_0-gnu-mvapich2-hpc-devel/summary
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost_1_69_0-gnu-openmpi2-hpc-devel/summary
+msgid "Development package for Boost C++"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost_1_69_0-gnu-hpc-devel/description
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost_1_69_0-gnu-mvapich2-hpc-devel/description
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost_1_69_0-gnu-openmpi2-hpc-devel/description
+msgid ""
+"This package contains all that is needed to develop/compile applications "
+"that use the Boost C++ libraries. For documentation see the documentation "
+"packages (html, man or pdf)."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-hpc/boost_1_69_0-gnu-hpc-jam/description
+msgid ""
+"Boost Jam is a build tool based on FTJam, which in turn is based on Perforce "
+"Jam. It contains significant improvements made to facilitate its use in the "
+"Boost Build System. This version is modularized so it does not conflict with "
+"other versions, but the module must be used before usage."
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost_1_69_0-gnu-mvapich2-hpc-python2/summary
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost_1_69_0-gnu-openmpi2-hpc-python2/summary
+msgid "Boost.MPI Python 2.x serialization library"
+msgstr ""
+
+#. tumbleweed/boost_1_69_0-gnu-mvapich2-hpc/boost_1_69_0-gnu-mvapich2-hpc-python2/description
+#. tumbleweed/boost_1_69_0-gnu-openmpi2-hpc/boost_1_69_0-gnu-openmpi2-hpc-python2/description
+msgid "This package contains the Boost.MPI Python 2.x serialization inteface."
+msgstr ""
+
+#. tumbleweed/boringssl/boringssl-devel/summary
+msgid "Development files for BoringSSL"
+msgstr ""
+
+#. tumbleweed/boringssl/boringssl-devel/description
+msgid ""
+"Development files for BoringSSL - an implementation of the Secure Sockets "
+"Layer (SSL) and Transport Layer Security (TLS) protocols, derived from "
+"OpenSSL."
+msgstr ""
+
+#. tumbleweed/bovo/description
+msgid ""
+"Bovo is a Gomoku (Connect Five, Five in a row, X and O, etc) game by KDE."
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/summary
+msgid "openSUSE Tumbleweed Brand File"
+msgstr ""
+
+#. tumbleweed/bsh2/summary
+msgid "Scripting for Java (BeanShell Version 2.x)"
+msgstr ""
+
+#. tumbleweed/bsh2/description
+msgid ""
+"BeanShell is an embeddable Java source interpreter with object scripting "
+"language features, written in Java. BeanShell executes standard Java "
+"statements and expressions, in addition to obvious scripting commands and "
+"syntax. BeanShell supports scripted objects as simple method closures like "
+"those in Perl and JavaScript. BeanShell can be used interactively for Java "
+"experimentation and debugging or as a scripting engine for applications."
+msgstr ""
+
+#. tumbleweed/bsh2/bsh2-bsf/description
+msgid "Scripting for Java (BeanShell Version 2.x) (BSF support)."
+msgstr ""
+
+#. tumbleweed/bsh2/bsh2-classgen/description
+msgid "Scripting for Java (BeanShell Version 2.x) (ASM support)."
+msgstr ""
+
+#. tumbleweed/bsh2/bsh2-demo/description
+msgid "Scripting for Java (BeanShell Version 2.x) (demo and samples)."
+msgstr ""
+
+#. tumbleweed/bsh2/bsh2-javadoc/description
+msgid "Scripting for Java (BeanShell Version 2.x) (Java Documentation)."
+msgstr ""
+
+#. tumbleweed/bsh2/bsh2-manual/description
+msgid "Scripting for Java (BeanShell Version 2.x) (Manual)."
 msgstr ""
 
 #. tumbleweed/btrfsprogs/btrfsprogs-static/summary
@@ -6701,25 +7408,6 @@ msgid ""
 "important updates"
 msgstr ""
 
-#. tumbleweed/buildah/summary
-msgid "Tool for building OCI containers"
-msgstr ""
-
-#. tumbleweed/buildah/description
-msgid ""
-"Buildah provides a command line tool which can be used to:\n"
-"- Create a working container, either from scratch or using an image as a   "
-"starting point\n"
-"- Create an image, either from a working container or via the instructions "
-"in a   Dockerfile\n"
-"- Build images in either the OCI image format or the traditional   upstream "
-"docker image format\n"
-"- Mount a working container's root filesystem for manipulation\n"
-"- Unmount a working container's root filesystem\n"
-"- Update the contents of a container's root filesystem\n"
-"- Delete a working container or an image"
-msgstr ""
-
 #. tumbleweed/bumblebee/description
 msgid ""
 "The Bumblebee daemon is a rewrite of the original Bumblebee service, "
@@ -6728,38 +7416,71 @@ msgid ""
 "management of the dGPU when it is not in use."
 msgstr ""
 
+#. tumbleweed/busybox/busybox-static/summary
+msgid "Static linked Swiss Army Knife of Embedded Linux"
+msgstr ""
+
+#. tumbleweed/busybox/busybox-static/description
+msgid ""
+"The static linked BusyBox combines tiny versions of many common UNIX "
+"utilities into a small single executable. It provides minimalist "
+"replacements for most of the utilities usually found in fileutils, "
+"shellutils, findutils, textutils, grep, gzip, tar, and more. BusyBox "
+"provides a fairly complete POSIX environment for any small or embedded "
+"system. The utilities in BusyBox generally have fewer options than their "
+"full-featured GNU cousins. The options that are included provide the "
+"expected functionality and behave very much like their GNU counterparts."
+msgstr ""
+
+#. tumbleweed/bzr/summary
+msgid "A distributed version control system"
+msgstr ""
+
+#. tumbleweed/bzr/description
+msgid ""
+"Bazaar is a distributed version control system. It can adapt to many "
+"workflows and is extendable."
+msgstr ""
+
+#. tumbleweed/bzr/bzr-test/summary
+msgid "Testsuite for the Bazaar distributed version control system"
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/gfxboot-branding-openSUSE/summary
+msgid "openSUSE Tumbleweed branding for gfxboot"
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/gfxboot-branding-openSUSE/description
+msgid ""
+"openSUSE Tumbleweed branding for gfxboot (graphical bootloader for grub)."
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/grub2-branding-openSUSE/summary
+msgid "openSUSE Tumbleweed branding for GRUB2"
+msgstr ""
+
 #. tumbleweed/branding-openSUSE/grub2-branding-openSUSE/description
-msgid "openSUSE 15.0 branding for the GRUB2's graphical console"
+msgid "openSUSE Tumbleweed branding for the GRUB2's graphical console"
 msgstr ""
 
-#. tumbleweed/bluebird-theme/gtk2-metatheme-bluebird/summary
-msgid ""
-"A Clean Minimalistic Theme for GNOME, XFCE, GTK+ 2 and 3 -- GTK+ 2 Support"
+#. tumbleweed/branding-openSUSE/icewm-theme-yast-installation/summary
+msgid "openSUSE Tumbleweed branding for IceWM during the installation"
 msgstr ""
 
-#. tumbleweed/bluebird-theme/gtk2-metatheme-bluebird/description
-msgid ""
-"The Bluebird Theme for GTK2/3 and xfwm4/emerald/metacity started out on the "
-"basis of Bluebird, but aims at reworking the intense blue tone to a more "
-"neutral blue-ish look that will be more pleasant to look at in everyday "
-"use.\n"
-"\n"
-"This package provides the GTK+ 2 support of Bluebird."
+#. tumbleweed/bcc/libbcc0/summary
+msgid "Shared library from the BPF Compiler Collection"
 msgstr ""
 
-#. tumbleweed/bluebird-theme/gtk3-metatheme-bluebird/summary
-msgid ""
-"A Clean Minimalistic Theme for GNOME, XFCE, GTK+ 2 and 3 -- GTK+ 3 Support"
+#. tumbleweed/bcc/libbcc0/description
+msgid "Shared Library from the BPF Compiler Collection."
 msgstr ""
 
-#. tumbleweed/bluebird-theme/gtk3-metatheme-bluebird/description
-msgid ""
-"The Bluebird Theme for GTK2/3 and xfwm4/emerald/metacity started out on the "
-"basis of Bluebird, but aims at reworking the intense blue tone to a more "
-"neutral blue-ish look that will be more pleasant to look at in everyday "
-"use.\n"
-"\n"
-"This package provides the GTK+ 3 support of Bluebird."
+#. tumbleweed/bemenu/libbemenu0/summary
+msgid "Dynamic menu library inspired by dmenu"
+msgstr ""
+
+#. tumbleweed/bemenu/libbemenu0/description
+msgid "Library for Bemenu, dynamic menu inspired by dmenu."
 msgstr ""
 
 #. tumbleweed/biblesync/libbiblesync2_0/summary
@@ -6774,24 +7495,306 @@ msgstr ""
 msgid "This package contains development files for libboinc."
 msgstr ""
 
-#. tumbleweed/boost-base/libboost_contract1_68_0/summary
+#. tumbleweed/boost-defaults/libboost_chrono-devel/description
+msgid ""
+"This package contains Boost.Chrono development headers.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_container-devel/description
+msgid ""
+"Development header files and libraries for Boost.Container. Boost.Container "
+"library implements several well-known containers, including STL containers. "
+"The aim of the library is to offers advanced features not present in "
+"standard containers or to offer the latest standard draft features for "
+"compilers that don't comply with the latest C++ standard.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_context-devel/description
+msgid ""
+"Development headers and libraries for Boost.Context, a library that "
+"providing cooperative multitasking support.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_contract-devel/summary
+#. tumbleweed/boost-base/libboost_contract1_69_0-devel/summary
+msgid "Development headers for Boost.Contract"
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_contract-devel/description
+msgid ""
+"Development headers and libraries for Boost.Contract, a library that "
+"implements Design by Contract or DbC or contract programming.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-base/libboost_contract1_69_0/summary
 msgid "Boost.Contract runtime library"
 msgstr ""
 
-#. tumbleweed/boost-base/libboost_contract1_68_0/description
+#. tumbleweed/boost-base/libboost_contract1_69_0/description
 msgid ""
 "Runtime support for Boost.Contract, a library that implements Design by "
 "Contract or DbC or contract programming."
 msgstr ""
 
-#. tumbleweed/boost-base/libboost_contract1_68_0-devel/summary
-msgid "Development headers for Boost.Contract"
-msgstr ""
-
-#. tumbleweed/boost-base/libboost_contract1_68_0-devel/description
+#. tumbleweed/boost-base/libboost_contract1_69_0-devel/description
 msgid ""
 "Development headers and libraries for Boost.Contract, a library that "
 "implements Design by Contract or DbC or contract programming."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_coroutine-devel/description
+msgid ""
+"This package provides headers for Boost.Coroutine libraries. Boost."
+"Coroutine2 provides templates for generalized subroutines which allow "
+"suspending and resuming execution at certain locations.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_date_time-devel/description
+msgid ""
+"This package contains development header files and libraries for Boost."
+"DateTime library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_fiber-devel/description
+msgid ""
+"This package contains development header files and libraries for Boost.Fiber "
+"library. Boost.Fiber is a cooperative multi-tasking userland threading "
+"library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_filesystem-devel/description
+msgid ""
+"Development headers for Boost.Filesystem library, a library providing "
+"facilities to manipulate files and directories, and the paths that identify "
+"them.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_graph-devel/description
+msgid ""
+"Development headers for Boost.Graph library. The BGL algorithms consist of a "
+"core set of algorithm patterns and a larger set of graph algorithms. The "
+"core algorithm patterns are Breadth First Search, Depth First Search, and "
+"Uniform Cost Search.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_graph_parallel-devel/description
+msgid ""
+"Development headers for Boost.Graph parallel boost library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_headers-devel/description
+msgid ""
+"A collection of header-only libraries for Boost. This package installs the "
+"dafault version."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_iostreams-devel/description
+msgid ""
+"Boost.IOStreams provides a framework for defining streams, stream buffers "
+"and IO filters\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_locale-devel/description
+msgid ""
+"This package contains development headers for Boost.Locale library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_log-devel/description
+msgid ""
+"Development headers for Boost.Log library which aims to make logging "
+"significantly easier for the application developer. It provides a wide range "
+"of out-of-the-box tools along with public interfaces for extending the "
+"library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_math-devel/description
+msgid ""
+"Development headers for Boost.Math* boost libraries.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_mpi-devel/description
+msgid ""
+"Development headers for Boost.MPI boost library\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_mpi_python-devel/description
+msgid ""
+"This package contains the Boost.MPI development library for Python 2.7 "
+"serialization interface.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_mpi_python3-devel/description
+msgid ""
+"This package contains the Boost.MPI development library for Python 3.x "
+"serialization interface\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_numpy-devel/description
+msgid ""
+"Development headers for Boost::Python::NumPy library for the default version "
+"of python.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_numpy3-devel/description
+msgid ""
+"Development headers for Boost.Python.NumPy library. This package contains "
+"library for python3 development for boost.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_program_options-devel/description
+msgid ""
+"This package contains development headers for Boost.ProgramOptions library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_python-devel/description
+msgid ""
+"Development headers for Boost::Python library for the default version of "
+"python.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_python3-devel/description
+msgid ""
+"Development headers for Boost.Python library. This package contains library "
+"for python3 development for boost.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_random-devel/description
+msgid ""
+"This package contains Boost.Random development headers.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_regex-devel/description
+msgid ""
+"This package contains development headers for Boost.Regex library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_serialization-devel/description
+msgid ""
+"This package contains development headers for Boost.Serialization library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_stacktrace-devel/description
+msgid ""
+"This package contains development headers for Boost.Stacktrace library. "
+"Boost.Stacktrace is a simple C++03 library that provide information about "
+"call sequence in a human-readable form.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_system-devel/description
+msgid ""
+"This package contains development headers for Boost.System library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-base/libboost_system1_69_0/description
+#. tumbleweed/boost-base/libboost_system1_69_0-32bit/description
+msgid "This package contains the Boost.System stub library."
+msgstr ""
+
+#. tumbleweed/boost-base/libboost_system1_69_0-devel/description
+msgid ""
+"This package contained Boost.System development library. It is no longer "
+"required as the library is headers only."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_test-devel/description
+msgid ""
+"Development headers for Boost.Test library. Boost.Test supports for simple "
+"program testing, full unit testing, and for program execution monitoring.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_thread-devel/description
+msgid ""
+"This package contains development headers for Boost.Thread library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_timer-devel/description
+msgid ""
+"This package contains development headers for Boost.Timer library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_type_erasure-devel/description
+msgid ""
+"This package contains development headers for Boost.TypeErasure library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boost-defaults/libboost_wave-devel/description
+msgid ""
+"This package contains development headers for Boost.Wave library.\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/boringssl/libboringssl0/description
+msgid ""
+"BoringSSL is an implementation of the Secure Sockets Layer (SSL) and "
+"Transport Layer Security (TLS) protocols, derived from OpenSSL."
+msgstr ""
+
+#. tumbleweed/bcc/libbpf0/description
+msgid ""
+"A standalone library to load eBPF (Extended Berkeley Packet Filter) programs."
 msgstr ""
 
 #. tumbleweed/breeze4-style/libbreezecommon4-5/summary
@@ -6808,12 +7811,6 @@ msgstr ""
 
 #. tumbleweed/breeze/libbreezecommon5-5/description
 msgid "Library containing support code for the Breeze Qt5 style."
-msgstr ""
-
-#. tumbleweed/btrfsprogs/libbtrfs-devel/description
-msgid ""
-"This package contains the libraries and headers files for developers to "
-"build applications to interface with Btrfs."
 msgstr ""
 
 #. tumbleweed/btrfsprogs/libbtrfsutil-devel/summary
@@ -6837,34 +7834,77 @@ msgid ""
 "Btrfs filesystems."
 msgstr ""
 
-#. tumbleweed/bluebird-theme/metatheme-bluebird-common/summary
-msgid ""
-"A Clean Minimalistic Theme for GNOME, XFCE, GTK+ 2 and 3 -- Common Files"
+#. tumbleweed/branding-openSUSE/libreoffice-branding-openSUSE/summary
+#. tumbleweed/branding-openSUSE/libreoffice-branding-openSUSE/description
+msgid "openSUSE Tumbleweed branding for LibreOffice"
 msgstr ""
 
-#. tumbleweed/bluebird-theme/metatheme-bluebird-common/description
-msgid ""
-"The Bluebird theme for GTK2/3 and xfwm4/emerald/metacity started out on the "
-"basis of Bluebird, but aims at reworking the intense blue tone to a more "
-"neutral blue-ish look that will be more pleasant to look at in everyday "
-"use.\n"
-"\n"
-"This package provides the files common to the GTK+ themes and the window "
-"manager themes as well as background images."
+#. tumbleweed/branding-openSUSE/plymouth-branding-openSUSE/summary
+msgid "openSUSE Tumbleweed branding for Plymouth bootsplash"
 msgstr ""
 
 #. tumbleweed/branding-openSUSE/plymouth-branding-openSUSE/description
-msgid "openSUSE 15.0 branding for the plymouth bootsplash"
+msgid "openSUSE Tumbleweed branding for the plymouth bootsplash"
+msgstr ""
+
+#. tumbleweed/boost-defaults/python-boost_parallel_mpi/description
+msgid ""
+"This package contains the Boost.Parallel.MPI bindings for Python 2.7\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/bcc/python2-bcc/summary
+msgid "Python2 bindings for the BPF Compiler Collection"
+msgstr ""
+
+#. tumbleweed/bcc/python2-bcc/description
+msgid "Python 2.x bindings for the BPF Compiler Collection."
+msgstr ""
+
+#. tumbleweed/bcc/python3-bcc/summary
+msgid "Python3 bindings for the BPF Compiler Collection"
+msgstr ""
+
+#. tumbleweed/bcc/python3-bcc/description
+msgid "Python 3.x bindings for the BPF Compiler Collection."
+msgstr ""
+
+#. tumbleweed/boost-defaults/python3-boost_parallel_mpi/description
+msgid ""
+"This package contains the Boost.Parallel.MPI bindings for Python 3.x\n"
+"\n"
+"This package installs the default Boost version of the library."
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/systemd-icon-branding-openSUSE/summary
+msgid "openSUSE Tumbleweed icons for systemd"
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/systemd-icon-branding-openSUSE/description
+msgid "openSUSE Tumbleweed icons for systemd os-release LOGO variable"
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/wallpaper-branding-openSUSE/summary
+msgid "openSUSE Tumbleweed default wallpapers"
 msgstr ""
 
 #. tumbleweed/branding-openSUSE/wallpaper-branding-openSUSE/description
-msgid "openSUSE 15.0 defaults wallpapers"
+msgid "openSUSE Tumbleweed defaults wallpapers"
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/xfce4-splash-branding-openSUSE/summary
+msgid "openSUSE Tumbleweed branding for XFCE splash"
 msgstr ""
 
 #. tumbleweed/branding-openSUSE/xfce4-splash-branding-openSUSE/description
-msgid "openSUSE 15.0 branding for the XFCE splash"
+msgid "openSUSE Tumbleweed branding for the XFCE splash"
+msgstr ""
+
+#. tumbleweed/branding-openSUSE/yast2-qt-branding-openSUSE/summary
+msgid "openSUSE Tumbleweed branding for YaST2 Qt"
 msgstr ""
 
 #. tumbleweed/branding-openSUSE/yast2-qt-branding-openSUSE/description
-msgid "openSUSE 15.0 branding and themes for yast2-qt"
+msgid "openSUSE Tumbleweed branding for YaST2 Qt, mainly used for installation"
 msgstr ""

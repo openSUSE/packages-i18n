@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2018-10-30 14:13+0000\n"
+"POT-Creation-Date: 2019-05-06 14:28+0000\n"
 "PO-Revision-Date: 2016-02-02 01:17:11\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -118,6 +118,19 @@ msgstr ""
 "permissions.local fájlhoz, majd futtassa a SuSEconfig parancsot:\n"
 "\n"
 "/usr/bin/suidperl       root.root        4755"
+
+#. leap/perl-Acme-Damn/summary
+#. tumbleweed/perl-Acme-Damn/summary
+msgid "'Unbless' Perl objects"
+msgstr ""
+
+#. leap/perl-Acme-Damn/description
+#. tumbleweed/perl-Acme-Damn/description
+msgid ""
+"*Acme::Damn* provides a single routine, *damn()*, which takes a blessed "
+"reference (a Perl object), and _unblesses_ it, to return the original "
+"reference."
+msgstr ""
 
 #. leap/perl-Algorithm-Annotate/summary
 #. tumbleweed/perl-Algorithm-Annotate/summary
@@ -1136,6 +1149,16 @@ msgid ""
 "shared library mechanisms."
 msgstr "OS103 "
 
+#. leap/perl-B-Debug/summary
+#. tumbleweed/perl-B-Debug/summary
+msgid "Walk Perl syntax tree, printing debug info about ops"
+msgstr ""
+
+#. leap/perl-B-Debug/description
+#. tumbleweed/perl-B-Debug/description
+msgid "See _ext/B/README_ and the newer B::Concise."
+msgstr ""
+
 #. leap/perl-B-Hooks-EndOfScope/summary
 #. tumbleweed/perl-B-Hooks-EndOfScope/summary
 msgid "Execute code after a scope finished compilation"
@@ -1311,7 +1334,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-BerkeleyDB/summary
-#. tumbleweed/perl-BerkeleyDB/summary
 msgid "Perl extension for Berkeley DB version 2, 3, 4 or 5"
 msgstr ""
 
@@ -1653,7 +1675,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-CGI-Simple/summary
-#. tumbleweed/perl-CGI-Simple/summary
 msgid "Simple totally OO CGI interface that is CGI.pm compliant"
 msgstr ""
 
@@ -1972,7 +1993,6 @@ msgid "A very simple module that exports one function called 'calendar'."
 msgstr ""
 
 #. leap/perl-Canary-Stability/summary
-#. tumbleweed/perl-Canary-Stability/summary
 msgid "Canary to Check Perl Compatibility for Schmorp's Modules"
 msgstr ""
 
@@ -2143,7 +2163,6 @@ msgid "Report errors from perspective of caller of a \"clan\" of modules"
 msgstr "OS103 "
 
 #. leap/perl-Carp-Clan/description
-#. tumbleweed/perl-Carp-Clan/description
 msgid ""
 "This module is based on \"'Carp.pm'\" from Perl 5.005_03. It has been "
 "modified to skip all package names matching the pattern given in the \"use\" "
@@ -3145,7 +3164,6 @@ msgid "Cut-and-Paste-Detector for Perl code"
 msgstr ""
 
 #. leap/perl-Code-DRY/description
-#. tumbleweed/perl-Code-DRY/description
 msgid ""
 "The module reports repeated text fragments (typically Perl code) that could "
 "be considered for isolation and/or abstraction in order to reduce multiple "
@@ -3371,7 +3389,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Config-Grammar/summary
-#. tumbleweed/perl-Config-Grammar/summary
 msgid "Grammar-Based, User-Friendly Config Parser"
 msgstr ""
 
@@ -3410,7 +3427,6 @@ msgid "simple .ini-file format"
 msgstr ""
 
 #. leap/perl-Config-IniFiles/summary
-#. tumbleweed/perl-Config-IniFiles/summary
 #, fuzzy
 msgid "Module for Reading .Ini-Style Configuration Files"
 msgstr "Modul a .ini-stílusú beállítási fájlok olvasásához"
@@ -3777,7 +3793,6 @@ msgid "Cookie::Baker provides simple cookie string generator and parser."
 msgstr ""
 
 #. leap/perl-Cpanel-JSON-XS/summary
-#. tumbleweed/perl-Cpanel-JSON-XS/summary
 msgid "Cpanel Fork of Json::Xs, Fast and Correct Serializing"
 msgstr ""
 
@@ -3917,6 +3932,27 @@ msgid ""
 "\n"
 "_NOTE_: Many of the methods in this package can croak, so use eval, or Error."
 "pm's try/catch mechanism to capture errors."
+msgstr ""
+
+#. leap/perl-Crypt-OpenSSL-Guess/summary
+#. tumbleweed/perl-Crypt-OpenSSL-Guess/summary
+msgid "Guess OpenSSL include path"
+msgstr ""
+
+#. leap/perl-Crypt-OpenSSL-Guess/description
+#. tumbleweed/perl-Crypt-OpenSSL-Guess/description
+msgid ""
+"Crypt::OpenSSL::Guess provides helpers to guess OpenSSL include path on any "
+"platforms.\n"
+"\n"
+"Often MacOS's homebrew OpenSSL cause a problem on installation due to "
+"include path is not added. Some CPAN module provides to modify include path "
+"with configure-args, but Carton or Module::CPANfile is not supported to pass "
+"configure-args to each modules. Crypt::OpenSSL::* modules should use it on "
+"your Makefile.PL.\n"
+"\n"
+"This module resolves the include path by Net::SSLeay's workaround. Original "
+"code is taken from 'inc/Module/Install/PRIVATE/Net/SSLeay.pm' by Net::SSLeay."
 msgstr ""
 
 #. leap/perl-Crypt-OpenSSL-RSA/summary
@@ -4189,7 +4225,6 @@ msgid "Self-contained RDBMS in a DBI Driver"
 msgstr ""
 
 #. leap/perl-DBD-SQLite/description
-#. tumbleweed/perl-DBD-SQLite/description
 msgid ""
 "SQLite is a public domain file-based relational database engine that you can "
 "find at http://www.sqlite.org/. \n"
@@ -4386,6 +4421,28 @@ msgstr ""
 msgid "Automatically set and update fields with values calculated at runtime."
 msgstr ""
 
+#. leap/perl-DBIx-Class-InflateColumn-FS/summary
+#. tumbleweed/perl-DBIx-Class-InflateColumn-FS/summary
+msgid "Inflate/deflate columns to Path::Class::File objects"
+msgstr ""
+
+#. leap/perl-DBIx-Class-InflateColumn-FS/description
+#. tumbleweed/perl-DBIx-Class-InflateColumn-FS/description
+msgid ""
+"Provides inflation to a Path::Class::File object allowing file system "
+"storage of BLOBS.\n"
+"\n"
+"The storage path is specified with 'fs_column_path'. Each file receives a "
+"unique name, so the storage for all FS columns can share the same path.\n"
+"\n"
+"Within the path specified by 'fs_column_path', files are stored in sub-"
+"directories based on the first 2 characters of the unique file names. Up to "
+"256 sub-directories will be created, as needed. Override '_fs_column_dirs' "
+"in a derived class to change this behavior.\n"
+"\n"
+"'fs_new_on_update' will create a new file name if the file has been updated."
+msgstr ""
+
 #. leap/perl-DBIx-Class-IntrospectableM2M/summary
 #. tumbleweed/perl-DBIx-Class-IntrospectableM2M/summary
 msgid "Introspect many-to-many shortcuts"
@@ -4462,6 +4519,33 @@ msgid ""
 "DBIx::Class::Loader.\n"
 "\n"
 "See DBIx::Class::Schema::Loader::Base for available options."
+msgstr ""
+
+#. leap/perl-DBIx-Class-UUIDColumns/summary
+#. tumbleweed/perl-DBIx-Class-UUIDColumns/summary
+msgid "Implicit uuid columns"
+msgstr ""
+
+#. leap/perl-DBIx-Class-UUIDColumns/description
+#. tumbleweed/perl-DBIx-Class-UUIDColumns/description
+msgid ""
+"This the DBIx::Class manpage component resembles the behaviour of the Class::"
+"DBI::UUID manpage, to make some columns implicitly created as uuid.\n"
+"\n"
+"When loaded, 'UUIDColumns' will search for a suitable uuid generation module "
+"from the following list of supported modules:\n"
+"\n"
+"  Data::UUID   APR::UUID*   UUID   Win32::Guidgen   Win32API::GUID\n"
+"\n"
+"If no supporting module can be found, an exception will be thrown. \n"
+"*APR::UUID will not be loaded under OpenBSD due to an as yet unidentified XS "
+"issue.\n"
+"\n"
+"If you would like to use a specific module, you can set the /uuid_class "
+"manpage:\n"
+"\n"
+"  __PACKAGE__->uuid_class('::Data::UUID');   __PACKAGE__-"
+">uuid_class('MyUUIDGenerator');"
 msgstr ""
 
 #. leap/perl-DBIx-Connector/summary
@@ -5163,6 +5247,47 @@ msgid ""
 "It is written in C for decent speed."
 msgstr ""
 
+#. leap/perl-Data-Tumbler/summary
+#. tumbleweed/perl-Data-Tumbler/summary
+msgid "Dynamic generation of nested combinations of variants"
+msgstr ""
+
+#. leap/perl-Data-Tumbler/description
+#. tumbleweed/perl-Data-Tumbler/description
+msgid ""
+"NOTE: This is alpha code and liable to change while it and Test::"
+"WriteVariants mature.\n"
+"\n"
+"The tumble() method calls a sequence of 'provider' code references each of "
+"which returns a hash. The first provider is called and then, for each hash "
+"item it returns, the tumble() method recurses to call the next provider.\n"
+"\n"
+"The recursion continues until there are no more providers to call, at which "
+"point the consumer code reference is called. Effectively the providers "
+"create a tree of combinations and the consumer is called at the leafs of the "
+"tree.\n"
+"\n"
+"If a provider returns no items then that part of the tree is pruned. Further "
+"providers, if any, are not called and the consumer is not called.\n"
+"\n"
+"During a call to tumble() three values are passed down through the tree and "
+"into the consumer: path, context, and payload.\n"
+"\n"
+"The path and context are derived from the names and values of the hashes "
+"returned by the providers. Typically the path define the current \"path\" "
+"through the tree of combinations.\n"
+"\n"
+"The providers are passed the current path, context, and payload. The payload "
+"is cloned at each level of recursion so that any changes made to it by "
+"providers are only visible within the scope of the generated sub-tree.\n"
+"\n"
+"Note that although the example above shows the path, context and payload as "
+"array references, the tumbler code makes no assumptions about them. They can "
+"be any kinds of values.\n"
+"\n"
+"See Test::WriteVariants for a practical example use."
+msgstr ""
+
 #. leap/perl-Data-Uniqid/summary
 #. tumbleweed/perl-Data-Uniqid/summary
 #, fuzzy
@@ -5202,6 +5327,20 @@ msgid ""
 "for the XS backend.\n"
 "\n"
 "There are many benchmarks in the _DIST-DIR/benchmark/_ directory."
+msgstr ""
+
+#. leap/perl-Data-Validate-IP/summary
+#. tumbleweed/perl-Data-Validate-IP/summary
+msgid "IPv4 and IPv6 validation methods"
+msgstr ""
+
+#. leap/perl-Data-Validate-IP/description
+#. tumbleweed/perl-Data-Validate-IP/description
+msgid ""
+"This module provides a number IP address validation subs that both validate "
+"and untaint their input. This includes both basic validation ('is_ipv4()' "
+"and 'is_ipv6()') and special cases like checking whether an address belongs "
+"to a specific network or whether an address is public or private (reserved)."
 msgstr ""
 
 #. leap/perl-Data-Visitor/summary
@@ -5397,7 +5536,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-DateTime/summary
-#. tumbleweed/perl-DateTime/summary
 msgid "Date and Time Object for Perl"
 msgstr ""
 
@@ -5452,12 +5590,10 @@ msgid ""
 msgstr ""
 
 #. leap/perl-DateTime-Format-Builder/summary
-#. tumbleweed/perl-DateTime-Format-Builder/summary
 msgid "Create DateTime parser classes and objects."
 msgstr ""
 
 #. leap/perl-DateTime-Format-Builder/description
-#. tumbleweed/perl-DateTime-Format-Builder/description
 msgid ""
 "DateTime::Format::Builder creates DateTime parsers. Many string formats of "
 "dates and times are simple and just require a basic regular expression to "
@@ -5894,6 +6030,21 @@ msgid ""
 "\n"
 "For these constructors you can avoid the mess by simply bailing out if "
 "global destruction is in effect."
+msgstr ""
+
+#. leap/perl-Devel-GlobalPhase/summary
+#. tumbleweed/perl-Devel-GlobalPhase/summary
+msgid "Detect perl's global phase on older perls"
+msgstr ""
+
+#. leap/perl-Devel-GlobalPhase/description
+#. tumbleweed/perl-Devel-GlobalPhase/description
+msgid ""
+"This gives access to ${^GLOBAL_PHASE} in versions of perl that don't provide "
+"it. The built in variable will be used if it is available.\n"
+"\n"
+"If all that is needed is detecting global destruction, Devel::"
+"GlobalDestruction should be used instead of this module."
 msgstr ""
 
 #. leap/perl-Devel-Hide/summary
@@ -6503,22 +6654,70 @@ msgstr ""
 
 #. leap/perl-Email-Address/summary
 #. tumbleweed/perl-Email-Address/summary
-msgid "(DEPRECATED) RFC 2822 Address Parsing and Creation"
+msgid "RFC 2822 Address Parsing and Creation"
 msgstr ""
 
 #. leap/perl-Email-Address/description
 #. tumbleweed/perl-Email-Address/description
 msgid ""
-"*ACHTUNG!* This module has a vulnerability (at https://cve.mitre.org/cgi-bin/"
-"cvename.cgi?name=CVE-2015-7686) which allows remote attackers to cause "
-"denial of service. In other words, sometimes it takes way too long to "
-"process certain kinds of input. Maybe someday this will be fixed. Until "
-"then, use *Email::Address::XS* instead which has backward compatible API.\n"
-"\n"
 "This class implements a regex-based RFC 2822 parser that locates email "
 "addresses in strings and returns a list of 'Email::Address' objects found. "
 "Alternatively you may construct objects manually. The goal of this software "
-"is to be correct, and very very fast."
+"is to be correct, and very very fast.\n"
+"\n"
+"Version 1.909 and earlier of this module had vulnerabilies (at https://cve."
+"mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7686) and (at https://cve.mitre."
+"org/cgi-bin/cvename.cgi?name=CVE-2018-12558) which allowed specially "
+"constructed email to cause a denial of service. The reported vulnerabilities "
+"and some other pathalogical cases (meaning they really shouldn't occur in "
+"normal email) have been addressed in version 1.910 and newer. If you're "
+"running version 1.909 or older, you should update!\n"
+"\n"
+"Alternatively, you could switch to *Email::Address::XS* which has a backward "
+"compatible API."
+msgstr ""
+
+#. leap/perl-Email-Address-XS/summary
+#. tumbleweed/perl-Email-Address-XS/summary
+msgid "Parse and format RFC 5322 email addresses and groups"
+msgstr ""
+
+#. leap/perl-Email-Address-XS/description
+#. tumbleweed/perl-Email-Address-XS/description
+msgid ""
+"This module implements at https://tools.ietf.org/html/rfc5322 parser and "
+"formatter of email addresses and groups. It parses an input string from "
+"email headers which contain a list of email addresses or a groups of email "
+"addresses (like From, To, Cc, Bcc, Reply-To, Sender, ...). Also it can "
+"generate a string value for those headers from a list of email addresses "
+"objects. Module is backward compatible with at https://tools.ietf.org/html/"
+"rfc2822 and at https://tools.ietf.org/html/rfc822.\n"
+"\n"
+"Parser and formatter functionality is implemented in XS and uses shared code "
+"from Dovecot IMAP server.\n"
+"\n"
+"It is a drop-in replacement for the Email::Address module which has several "
+"security issues. E.g. issue at https://cve.mitre.org/cgi-bin/cvename.cgi?"
+"name=CVE-2015-7686, which allows remote attackers to cause denial of "
+"service, is still present in Email::Address version 1.908.\n"
+"\n"
+"Email::Address::XS module was created to finally fix CVE-2015-7686.\n"
+"\n"
+"Existing applications that use Email::Address module could be easily "
+"switched to Email::Address::XS module. In most cases only changing 'use "
+"Email::Address' to 'use Email::Address::XS' and replacing every 'Email::"
+"Address' occurrence with 'Email::Address::XS' is sufficient.\n"
+"\n"
+"So unlike Email::Address, this module does not use regular expressions for "
+"parsing but instead native XS implementation parses input string "
+"sequentially according to RFC 5322 grammar.\n"
+"\n"
+"Additionally it has support also for named groups and so can be use instead "
+"of the Email::Address::List module.\n"
+"\n"
+"If you are looking for the module which provides object representation for "
+"the list of email addresses suitable for the MIME email headers, see Email::"
+"MIME::Header::AddressList."
 msgstr ""
 
 #. leap/perl-Email-Date-Format/summary
@@ -6659,7 +6858,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Encode/summary
-#. tumbleweed/perl-Encode/summary
 msgid "Character Encodings in Perl"
 msgstr ""
 
@@ -6871,7 +7069,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Error/summary
-#. tumbleweed/perl-Error/summary
 msgid "Error/exception handling in an OO-ish way"
 msgstr ""
 
@@ -7369,7 +7566,6 @@ msgid "Simple interface to F77 libs"
 msgstr "F77 függvénytárak egyszerű interfésze"
 
 #. leap/perl-ExtUtils-F77/description
-#. tumbleweed/perl-ExtUtils-F77/description
 msgid ""
 "This module tries to figure out how to link C programs with Fortran "
 "subroutines on your system. Basically one must add a list of Fortran runtime "
@@ -8260,12 +8456,10 @@ msgid ""
 msgstr ""
 
 #. leap/perl-File-Slurp/summary
-#. tumbleweed/perl-File-Slurp/summary
 msgid "Simple and Efficient Reading/Writing of Complete Files"
 msgstr ""
 
 #. leap/perl-File-Slurp/description
-#. tumbleweed/perl-File-Slurp/description
 msgid ""
 "This module provides subs that allow you to read or write entire files with "
 "one simple call. They are designed to be simple to use, have flexible ways "
@@ -9167,10 +9361,23 @@ msgid ""
 "  perldoc Gnome2::Wnck::index"
 msgstr ""
 
+#. leap/perl-GnuPG-Interface/summary
+#. tumbleweed/perl-GnuPG-Interface/summary
+#, fuzzy
+msgid "Perl interface to GnuPG"
+msgstr "OS103 Perl interfész a DNS névfeloldóhoz"
+
+#. leap/perl-GnuPG-Interface/description
+#. tumbleweed/perl-GnuPG-Interface/description
+msgid ""
+"GnuPG::Interface and its associated modules are designed to provide an "
+"object-oriented method for interacting with GnuPG, being able to perform "
+"functions such as but not limited to encrypting, signing, decryption, "
+"verification, and key-listing parsing."
+msgstr ""
+
 #. leap/perl-Goo-Canvas/summary
 #. leap/perl-Goo-Canvas/description
-#. tumbleweed/perl-Goo-Canvas/summary
-#. tumbleweed/perl-Goo-Canvas/description
 #, fuzzy
 msgid "Goo::Canvas Perl module"
 msgstr "Gtk2 Perl modul"
@@ -9853,12 +10060,10 @@ msgid ""
 msgstr ""
 
 #. leap/perl-HTTP-Daemon/summary
-#. tumbleweed/perl-HTTP-Daemon/summary
 msgid "a simple http server class"
 msgstr ""
 
 #. leap/perl-HTTP-Daemon/description
-#. tumbleweed/perl-HTTP-Daemon/description
 msgid ""
 "Instances of the 'HTTP::Daemon' class are HTTP/1.1 servers that listen on a "
 "socket for incoming requests. The 'HTTP::Daemon' is a subclass of 'IO::"
@@ -9905,7 +10110,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-HTTP-Headers-Fast/summary
-#. tumbleweed/perl-HTTP-Headers-Fast/summary
 #, fuzzy
 msgid "Faster Implementation of Http::Headers"
 msgstr "A SOAP Apache megvalósítása"
@@ -10691,7 +10895,6 @@ msgid "Functions for working with L<IO::Handle> like objects"
 msgstr ""
 
 #. leap/perl-IO-Handle-Util/description
-#. tumbleweed/perl-IO-Handle-Util/description
 msgid ""
 "This module provides a number of helpful routines to manipulate or create "
 "the IO::Handle manpage like objects."
@@ -11423,7 +11626,6 @@ msgid "Write Perl Subroutines in Other Programming Languages"
 msgstr "OS103 "
 
 #. leap/perl-Inline/description
-#. tumbleweed/perl-Inline/description
 msgid ""
 "The Inline module allows you to put source code from other programming "
 "languages directly \"inline\" in a Perl script or module. The code is "
@@ -11517,7 +11719,6 @@ msgid "JSON (JavaScript Object Notation) encoder/decoder"
 msgstr ""
 
 #. leap/perl-JSON/description
-#. tumbleweed/perl-JSON/description
 msgid ""
 "This module is a thin wrapper for JSON::XS-compatible modules with a few "
 "additional features. All the backend modules convert a Perl data structure "
@@ -11686,13 +11887,26 @@ msgid ""
 "INCOMPATIBLE****"
 msgstr ""
 
+#. leap/perl-JSON-Validator/summary
+#. tumbleweed/perl-JSON-Validator/summary
+msgid "Validate data against a JSON schema"
+msgstr ""
+
+#. leap/perl-JSON-Validator/description
+#. tumbleweed/perl-JSON-Validator/description
+msgid ""
+"JSON::Validator is a data structure validation library based around at "
+"https://json-schema.org/. This module can be used directly with a JSON "
+"schema or you can use the elegant DSL schema-builder JSON::Validator::joi to "
+"define the schema programmatically."
+msgstr ""
+
 #. leap/perl-JSON-XS/summary
 #. tumbleweed/perl-JSON-XS/summary
 msgid "JSON serialising/deserialising, done correctly and fast"
 msgstr ""
 
 #. leap/perl-JSON-XS/description
-#. tumbleweed/perl-JSON-XS/description
 msgid ""
 "This module converts Perl data structures to JSON and vice versa. Its "
 "primary goal is to be _correct_ and its secondary goal is to be _fast_. To "
@@ -11733,12 +11947,10 @@ msgid ""
 msgstr ""
 
 #. leap/perl-LWP-MediaTypes/summary
-#. tumbleweed/perl-LWP-MediaTypes/summary
 msgid "guess media type for a file or a URL"
 msgstr ""
 
 #. leap/perl-LWP-MediaTypes/description
-#. tumbleweed/perl-LWP-MediaTypes/description
 msgid ""
 "This module provides functions for handling media (also known as MIME) types "
 "and encodings. The mapping from file extensions to media types is defined by "
@@ -12411,12 +12623,10 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Linux-Inotify2/summary
-#. tumbleweed/perl-Linux-Inotify2/summary
 msgid "scalable directory/file change notification"
 msgstr "Skálázható könyvtár/fájlváltozás értesítő"
 
 #. leap/perl-Linux-Inotify2/description
-#. tumbleweed/perl-Linux-Inotify2/description
 msgid ""
 "This module implements an interface to the Linux 2.6.13 and later Inotify "
 "file/directory change notification sytem."
@@ -12782,7 +12992,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Log-Dispatchouli/summary
-#. tumbleweed/perl-Log-Dispatchouli/summary
 msgid "Simple Wrapper Around Log::Dispatch"
 msgstr ""
 
@@ -13114,7 +13323,6 @@ msgid "Signs/verifies Internet mail with DKIM/DomainKey signatures"
 msgstr "OS111 "
 
 #. leap/perl-Mail-DKIM/description
-#. tumbleweed/perl-Mail-DKIM/description
 msgid ""
 "This module implements the various components of the DKIM and DomainKeys "
 "message-signing and verifying standards for Internet mail. It currently "
@@ -13134,7 +13342,6 @@ msgid "An IMAP Client API"
 msgstr ""
 
 #. leap/perl-Mail-IMAPClient/description
-#. tumbleweed/perl-Mail-IMAPClient/description
 msgid ""
 "This module provides methods implementing the IMAP protocol to support "
 "interacting with IMAP message stores.\n"
@@ -13644,12 +13851,10 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Meta-Builder/summary
-#. tumbleweed/perl-Meta-Builder/summary
 msgid "Tools for creating Meta objects to track custom metrics."
 msgstr ""
 
 #. leap/perl-Meta-Builder/description
-#. tumbleweed/perl-Meta-Builder/description
 msgid ""
 "Meta programming is becomming more and more popular. The popularity of Meta "
 "programming comes from the fact that many problems are made significantly "
@@ -13707,13 +13912,14 @@ msgid "Job queue"
 msgstr ""
 
 #. leap/perl-Minion/description
+#. tumbleweed/perl-Minion/description
 msgid ""
 "Minion is a high performance job queue for the Perl programming language, "
 "with support for multiple named queues, priorities, delayed jobs, job "
 "dependencies, job progress, job results, retries with backoff, rate "
 "limiting, unique jobs, statistics, distributed workers, parallel processing, "
-"autoscaling, remote control, at http://mojolicious.org admin ui, resource "
-"leak protection and multiple backends (such as at http://www.postgresql."
+"autoscaling, remote control, at https://mojolicious.org admin ui, resource "
+"leak protection and multiple backends (such as at https://www.postgresql."
 "org).\n"
 "\n"
 "Job queues allow you to process time and/or computationally intensive tasks "
@@ -13721,6 +13927,20 @@ msgid ""
 "applications. Among those tasks you'll commonly find image resizing, spam "
 "filtering, HTTP downloads, building tarballs, warming caches and basically "
 "everything else you can imagine that's not super fast."
+msgstr ""
+
+#. leap/perl-Minion-Backend-SQLite/summary
+#. tumbleweed/perl-Minion-Backend-SQLite/summary
+msgid "SQLite backend for Minion job queue"
+msgstr ""
+
+#. leap/perl-Minion-Backend-SQLite/description
+#. tumbleweed/perl-Minion-Backend-SQLite/description
+msgid ""
+"Minion::Backend::SQLite is a backend for Minion based on Mojo::SQLite. All "
+"necessary tables will be created automatically with a set of migrations "
+"named 'minion'. If no connection string or ':temp:' is provided, the "
+"database will be created in a temporary directory."
 msgstr ""
 
 #. leap/perl-Mixin-Linewise/summary
@@ -13803,7 +14023,6 @@ msgid "Build and install Perl modules"
 msgstr "Egy új eszköz Perl modulokra alapozva."
 
 #. leap/perl-Module-Build/description
-#. tumbleweed/perl-Module-Build/description
 msgid ""
 "'Module::Build' is a system for building, testing, and installing Perl "
 "modules. It is meant to be an alternative to 'ExtUtils::MakeMaker'. "
@@ -14277,7 +14496,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Module-Starter/summary
-#. tumbleweed/perl-Module-Starter/summary
 msgid "Simple Starter Kit for Any Module"
 msgstr ""
 
@@ -14304,7 +14522,6 @@ msgid "Mojo::IOLoop::ReadWriteProcess is yet another process manager."
 msgstr ""
 
 #. leap/perl-Mojo-Pg/summary
-#. tumbleweed/perl-Mojo-Pg/summary
 msgid "Mojolicious ♥ PostgreSQL"
 msgstr ""
 
@@ -14453,6 +14670,19 @@ msgstr ""
 msgid ""
 "Mojolicious::Plugin::CHI is a simple plugin to work with CHI caches within "
 "Mojolicious."
+msgstr ""
+
+#. leap/perl-Mojolicious-Plugin-NYTProf/summary
+#. tumbleweed/perl-Mojolicious-Plugin-NYTProf/summary
+msgid "Auto handling of Devel::NYTProf in your Mojolicious app"
+msgstr ""
+
+#. leap/perl-Mojolicious-Plugin-NYTProf/description
+#. tumbleweed/perl-Mojolicious-Plugin-NYTProf/description
+msgid ""
+"This plugin enables Mojolicious to automatically generate Devel::NYTProf "
+"profiles and routes for your app, it has been inspired by Dancer::Plugin::"
+"NYTProf"
 msgstr ""
 
 #. leap/perl-Mojolicious-Plugin-RenderFile/summary
@@ -15701,6 +15931,25 @@ msgid ""
 "those in the configfile."
 msgstr ""
 
+#. leap/perl-MouseX-SimpleConfig/summary
+#. tumbleweed/perl-MouseX-SimpleConfig/summary
+msgid "A Mouse role for setting attributes from a simple configfile"
+msgstr ""
+
+#. leap/perl-MouseX-SimpleConfig/description
+#. tumbleweed/perl-MouseX-SimpleConfig/description
+msgid ""
+"This role loads simple configfiles to set object attributes. It is based on "
+"the abstract role MouseX::ConfigFromFile, and uses Config::Any to load your "
+"configfile. Config::Any will in turn support any of a variety of different "
+"config formats, detected by the file extension. See Config::Any for more "
+"details about supported formats.\n"
+"\n"
+"Like all MouseX::ConfigFromFile -derived configfile loaders, this module is "
+"automatically supported by the MouseX::Getopt role as well, which allows "
+"specifying '-configfile' on the commandline."
+msgstr ""
+
 #. leap/perl-MouseX-Types/summary
 #. leap/perl-MouseX-Types/description
 #. tumbleweed/perl-MouseX-Types/summary
@@ -16170,6 +16419,30 @@ msgid ""
 "oscompute manpage command line tool."
 msgstr ""
 
+#. leap/perl-Net-Patricia/summary
+#. tumbleweed/perl-Net-Patricia/summary
+msgid "Patricia Trie perl module for fast IP address lookups"
+msgstr ""
+
+#. leap/perl-Net-Patricia/description
+#. tumbleweed/perl-Net-Patricia/description
+msgid ""
+"This module uses a Patricia Trie data structure to quickly perform IP "
+"address prefix matching for applications such as IP subnet, network or "
+"routing table lookups. The data structure is based on a radix tree using a "
+"radix of two, so sometimes you see patricia implementations called \"radix\" "
+"as well. The term \"Trie\" is derived from the word \"retrieval\" but is "
+"pronounced like \"try\". Patricia stands for \"Practical Algorithm to "
+"Retrieve Information Coded as Alphanumeric\", and was first suggested for "
+"routing table lookups by Van Jacobsen. Patricia Trie performance "
+"characteristics are well-known as it has been employed for routing table "
+"lookups within the BSD kernel since the 4.3 Reno release.\n"
+"\n"
+"The BSD radix code is thoroughly described in \"TCP/IP Illustrated, Volume "
+"2\" by Wright and Stevens and in the paper ``A Tree-Based Packet Routing "
+"Table for Berkeley Unix'' by Keith Sklower."
+msgstr ""
+
 #. leap/perl-Net-Pcap/summary
 #. tumbleweed/perl-Net-Pcap/summary
 msgid "Interface to pcap LBL packet capture library"
@@ -16395,7 +16668,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Net-Whois-RIPE/summary
-#. tumbleweed/perl-Net-Whois-RIPE/summary
 #, fuzzy
 msgid "Pure-Perl Implementation of the Ripe Database Client"
 msgstr "Az NX munkamenet-kliens ingyenes megvalósítása."
@@ -16562,6 +16834,31 @@ msgid ""
 "hyphen ( - )."
 msgstr ""
 
+#. leap/perl-Number-WithError/summary
+#. tumbleweed/perl-Number-WithError/summary
+msgid "Numbers with error propagation and scientific rounding"
+msgstr ""
+
+#. leap/perl-Number-WithError/description
+#. tumbleweed/perl-Number-WithError/description
+msgid ""
+"This class is a container class for numbers with a number of associated "
+"symmetric and asymmetric errors. It overloads practically all common "
+"arithmetic operations and trigonometric functions to propagate the errors. "
+"It can do proper scientific rounding (as explained in more detail below in "
+"the documentation of the 'significant_digit()' method).\n"
+"\n"
+"You can use Math::BigFloat objects as the internal representation of numbers "
+"in order to support arbitrary precision calculations.\n"
+"\n"
+"Errors are propagated using Gaussian error propagation.\n"
+"\n"
+"With a notable exception, the test suite covers way over ninety percent of "
+"the code. The remaining holes are mostly difficult-to-test corner cases and "
+"sanity tests. The comparison routines are the exception for which there will "
+"be more extensive tests in a future release."
+msgstr ""
+
 #. leap/perl-OLE-Storage_Lite/summary
 #. tumbleweed/perl-OLE-Storage_Lite/summary
 msgid "Simple Class for OLE document interface."
@@ -16610,7 +16907,6 @@ msgid "Generate cryptographic signatures for objects"
 msgstr ""
 
 #. leap/perl-Object-Signature/description
-#. tumbleweed/perl-Object-Signature/description
 msgid ""
 "Object::Signature is an abstract base class that you can inherit from in "
 "order to allow your objects to generate unique cryptographic signatures.\n"
@@ -16945,7 +17241,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Package-Stash/summary
-#. tumbleweed/perl-Package-Stash/summary
 #, fuzzy
 msgid "routines for manipulating stashes"
 msgstr "Eszközök a PostScript fájlok manipulálására"
@@ -16973,13 +17268,11 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Package-Stash-XS/summary
-#. tumbleweed/perl-Package-Stash-XS/summary
 #, fuzzy
 msgid "faster and more correct implementation of the Package::Stash API"
 msgstr "A GNU JavaMail (tm) a JavaMail API nyílt megvalósítása."
 
 #. leap/perl-Package-Stash-XS/description
-#. tumbleweed/perl-Package-Stash-XS/description
 msgid ""
 "This is a backend for the Package::Stash manpage, which provides the "
 "functionality in a way that's less buggy and much faster. It will be used by "
@@ -17474,7 +17767,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Perl-Critic-Pulp/summary
-#. tumbleweed/perl-Perl-Critic-Pulp/summary
 msgid "Some Add-On Perlcritic Policies"
 msgstr ""
 
@@ -18057,7 +18349,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Prima/summary
-#. tumbleweed/perl-Prima/summary
 msgid "Perl Graphic Toolkit"
 msgstr ""
 
@@ -18951,6 +19242,62 @@ msgid ""
 "and started the Selenium Server (Selenium Server is a Java application)."
 msgstr ""
 
+#. leap/perl-Sereal-Decoder/summary
+#. tumbleweed/perl-Sereal-Decoder/summary
+msgid "Binary serialization module for Perl (decoder part)"
+msgstr ""
+
+#. leap/perl-Sereal-Decoder/description
+#. tumbleweed/perl-Sereal-Decoder/description
+msgid ""
+"This library implements a deserializer for an efficient, compact-output, and "
+"feature-rich binary protocol called _Sereal_. Its sister module Sereal::"
+"Encoder implements an encoder for this format. The two are released "
+"separately to allow for independent and safer upgrading.\n"
+"\n"
+"The Sereal protocol versions that are compatible with this decoder "
+"implementation are currently protocol versions 1, 2, 3 and 4. As it stands, "
+"it will refuse to attempt to decode future versions of the protocol, but if "
+"necessary there is likely going to be an option to decode the parts of the "
+"input that are compatible with version 4 of the protocol. The protocol was "
+"designed to allow for this.\n"
+"\n"
+"The protocol specification and many other bits of documentation can be found "
+"in the github repository. Right now, the specification is at https://github."
+"com/Sereal/Sereal/blob/master/sereal_spec.pod, there is a discussion of the "
+"design objectives in https://github.com/Sereal/Sereal/blob/master/README."
+"pod, and the output of our benchmarks can be seen at https://github.com/"
+"Sereal/Sereal/wiki/Sereal-Comparison-Graphs."
+msgstr ""
+
+#. leap/perl-Sereal-Encoder/summary
+#. tumbleweed/perl-Sereal-Encoder/summary
+msgid "Binary serialization module for Perl (encoder part)"
+msgstr ""
+
+#. leap/perl-Sereal-Encoder/description
+#. tumbleweed/perl-Sereal-Encoder/description
+msgid ""
+"This library implements an efficient, compact-output, and feature-rich "
+"serializer using a binary protocol called _Sereal_. Its sister module "
+"Sereal::Decoder implements a decoder for this format. The two are released "
+"separately to allow for independent and safer upgrading. If you care greatly "
+"about performance, consider reading the Sereal::Performance documentation "
+"after finishing this document.\n"
+"\n"
+"The Sereal protocol version emitted by this encoder implementation is "
+"currently protocol version 4 by default.\n"
+"\n"
+"The protocol specification and many other bits of documentation can be found "
+"in the github repository. Right now, the specification is at https://github."
+"com/Sereal/Sereal/blob/master/sereal_spec.pod, there is a discussion of the "
+"design objectives in https://github.com/Sereal/Sereal/blob/master/README."
+"pod, and the output of our benchmarks can be seen at https://github.com/"
+"Sereal/Sereal/wiki/Sereal-Comparison-Graphs. For more information on getting "
+"the best performance out of Sereal, have a look at the \"PERFORMANCE\" "
+"section below."
+msgstr ""
+
 #. leap/perl-Set-Crontab/summary
 #. tumbleweed/perl-Set-Crontab/summary
 #, fuzzy
@@ -19037,12 +19384,10 @@ msgid "Porters stemming algorithm for swedish."
 msgstr ""
 
 #. leap/perl-Socket-MsgHdr/summary
-#. tumbleweed/perl-Socket-MsgHdr/summary
 msgid "Perl interface for the sendmsg/recvmsg functions"
 msgstr "Perl felület a sendmsg/recvmsg funkciókhoz"
 
 #. leap/perl-Socket-MsgHdr/description
-#. tumbleweed/perl-Socket-MsgHdr/description
 msgid ""
 "Socket::MsgHdr provides advanced socket messaging operations via sendmsg and "
 "recvmsg.\n"
@@ -19324,6 +19669,14 @@ msgid ""
 "That's Spiffy!"
 msgstr ""
 
+#. leap/perl-Spooky-Patterns-XS/summary
+#. leap/perl-Spooky-Patterns-XS/description
+#. tumbleweed/perl-Spooky-Patterns-XS/summary
+#. tumbleweed/perl-Spooky-Patterns-XS/description
+#, fuzzy
+msgid "Spooky::Patterns::XS Perl module"
+msgstr "Gtk2 Perl modul"
+
 #. leap/perl-Spreadsheet-ParseExcel/summary
 #. tumbleweed/perl-Spreadsheet-ParseExcel/summary
 msgid "Read information from an Excel file."
@@ -19446,6 +19799,29 @@ msgid ""
 "* UNIX only\n"
 "\n"
 "  This server does not support Win32."
+msgstr ""
+
+#. leap/perl-Statistics-CaseResampling/summary
+#. tumbleweed/perl-Statistics-CaseResampling/summary
+msgid ""
+"Efficient resampling and calculation of medians with confidence intervals"
+msgstr ""
+
+#. leap/perl-Statistics-CaseResampling/description
+#. tumbleweed/perl-Statistics-CaseResampling/description
+msgid ""
+"The purpose of this (XS) module is to calculate the median (or in principle "
+"also other statistics) with confidence intervals on a sample. To do that, it "
+"uses a technique called bootstrapping. In a nutshell, it resamples the "
+"sample a lot of times and for each resample, it calculates the median. From "
+"the distribution of medians, it then calculates the confidence limits.\n"
+"\n"
+"In order to implement the confidence limit calculation, various other "
+"functions had to be implemented efficiently (both algorithmically efficient "
+"and done in C). These functions may be useful in their own right and are "
+"thus exposed to Perl. Most notably, this exposes a median (and general "
+"selection) algorithm that works in linear time as opposed to the trivial "
+"implementation that requires 'O(n*log(n))'."
 msgstr ""
 
 #. leap/perl-Statistics-Descriptive/summary
@@ -19954,6 +20330,16 @@ msgid ""
 "This package provides performant ways to generate subroutines from strings."
 msgstr ""
 
+#. leap/perl-Sub-Retry/summary
+#. tumbleweed/perl-Sub-Retry/summary
+msgid "Retry $N Times"
+msgstr ""
+
+#. leap/perl-Sub-Retry/description
+#. tumbleweed/perl-Sub-Retry/description
+msgid "Sub::Retry provides the function named 'retry'."
+msgstr ""
+
 #. leap/perl-Sub-Spec/summary
 #. leap/perl-Sub-Spec/description
 #. tumbleweed/perl-Sub-Spec/summary
@@ -20306,12 +20692,10 @@ msgid ""
 msgstr ""
 
 #. leap/perl-SystemPerl/summary
-#. tumbleweed/perl-SystemPerl/summary
 msgid "SystemPerl Language Extension to SystemC"
 msgstr ""
 
 #. leap/perl-SystemPerl/description
-#. tumbleweed/perl-SystemPerl/description
 msgid ""
 "SystemPerl is a version of the SystemC language. It is designed to expand "
 "text so that needless repetition in the language is minimized. By using the "
@@ -20324,13 +20708,11 @@ msgid ""
 msgstr ""
 
 #. leap/perl-SystemPerl/perl-SystemPerl-devel/summary
-#. tumbleweed/perl-SystemPerl/perl-SystemPerl-devel/summary
 #, fuzzy
 msgid "Development files for perl-SystemPerl"
 msgstr "Fejlesztői fájlok libcom_err programkönyvtárhoz"
 
 #. leap/perl-SystemPerl/perl-SystemPerl-devel/description
-#. tumbleweed/perl-SystemPerl/perl-SystemPerl-devel/description
 #, fuzzy
 msgid ""
 "The perl-SystemPerl-devel package contains libraries and header files for "
@@ -20617,13 +20999,12 @@ msgid ""
 msgstr ""
 
 #. leap/perl-TermReadLine-Gnu/summary
-#. tumbleweed/perl-TermReadLine-Gnu/summary
+#. tumbleweed/perl-Term-ReadLine-Gnu/summary
 #, fuzzy
 msgid "Perl extension for the GNU Readline/History Library"
 msgstr "OS103 "
 
 #. leap/perl-TermReadLine-Gnu/description
-#. tumbleweed/perl-TermReadLine-Gnu/description
 #, fuzzy
 msgid ""
 "This is an implementation of Term::ReadLine using the GNU Readline/History "
@@ -21008,6 +21389,35 @@ msgid ""
 "testing module must be used as the basis for your test suite."
 msgstr ""
 
+#. leap/perl-Test-Directory/summary
+#. tumbleweed/perl-Test-Directory/summary
+#, fuzzy
+msgid "Perl extension for maintaining test directories"
+msgstr "OS103 "
+
+#. leap/perl-Test-Directory/description
+#. tumbleweed/perl-Test-Directory/description
+msgid ""
+"Sometimes, testing code involves making sure that files are created and "
+"deleted as expected. This module simplifies maintaining test directories by "
+"tracking their status as they are modified or tested with this API, making "
+"it simple to test both individual files, as well as to verify that there are "
+"no missing or unknown files.\n"
+"\n"
+"Test::Directory implements an object-oriented interface for managing test "
+"directories. It tracks which files it knows about (by creating or testing "
+"them via its API), and can report if any files were missing or unexpectedly "
+"added.\n"
+"\n"
+"There are two flavors of methods for interacting with the directory. "
+"_Utility_ methods simply return a value (i.e. the number of files/errors) "
+"with no output, while the _Test_ functions use Test::Builder to produce the "
+"approriate test results and diagnostics for the test harness.\n"
+"\n"
+"The directory will be automatically cleaned up when the object goes out of "
+"scope; see the _clean_ method below for details."
+msgstr ""
+
 #. leap/perl-Test-EOL/summary
 #. tumbleweed/perl-Test-EOL/summary
 msgid "Check the correct line endings in your project"
@@ -21209,6 +21619,32 @@ msgid ""
 "It exports one routine by default: 'exception'."
 msgstr ""
 
+#. leap/perl-Test-File/summary
+#. tumbleweed/perl-Test-File/summary
+msgid "Test File Attributes"
+msgstr ""
+
+#. leap/perl-Test-File/description
+#. tumbleweed/perl-Test-File/description
+msgid ""
+"This modules provides a collection of test utilities for file attributes.\n"
+"\n"
+"Some file attributes depend on the owner of the process testing the file in "
+"the same way the file test operators do. For instance, root (or super-user "
+"or Administrator) may always be able to read files no matter the "
+"permissions.\n"
+"\n"
+"Some attributes don't make sense outside of Unix, either, so some tests "
+"automatically skip if they think they won't work on the platform. If you "
+"have a way to make these functions work on Windows, for instance, please "
+"send me a patch. :) IF you want to pretend to be Windows on a non-Windows "
+"machine (for instance, to test 'skip()'), you can set the "
+"'PRETEND_TO_BE_WINDOWS' environment variable.\n"
+"\n"
+"The optional NAME parameter for every function allows you to specify a name "
+"for the test. If not supplied, a reasonable default will be generated."
+msgstr ""
+
 #. leap/perl-Test-File-Contents/summary
 #. leap/perl-Test-File-Contents/description
 #. tumbleweed/perl-Test-File-Contents/summary
@@ -21236,6 +21672,28 @@ msgid ""
 "\n"
 "For this reason, unless you have File::ShareDir 1.00 or later installed, "
 "this module will not be usable by you."
+msgstr ""
+
+#. leap/perl-Test-Harness/summary
+#. tumbleweed/perl-Test-Harness/summary
+msgid "Run Perl standard test scripts with statistics"
+msgstr ""
+
+#. leap/perl-Test-Harness/description
+#. tumbleweed/perl-Test-Harness/description
+msgid ""
+"Although, for historical reasons, the Test::Harness distribution takes its "
+"name from this module it now exists only to provide TAP::Harness with an "
+"interface that is somewhat backwards compatible with Test::Harness 2.xx. If "
+"you're writing new code consider using TAP::Harness directly instead.\n"
+"\n"
+"Emulation is provided for 'runtests' and 'execute_tests' but the pluggable "
+"'Straps' interface that previous versions of Test::Harness supported is not "
+"reproduced here. Straps is now available as a stand alone module: Test::"
+"Harness::Straps.\n"
+"\n"
+"See TAP::Parser, TAP::Harness for the main documentation for this "
+"distribution."
 msgstr ""
 
 #. leap/perl-Test-HasVersion/summary
@@ -21324,7 +21782,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Test-Inter/summary
-#. tumbleweed/perl-Test-Inter/summary
 msgid "Framework for More Readable Interactive Test Scripts"
 msgstr ""
 
@@ -21427,6 +21884,88 @@ msgid ""
 "For example, if you call a method in a tracing block, perl might prepare a "
 "cache for the method. Thus, to trace true leaks, 'no_leaks_ok()' and "
 "'leaks_cmp_ok()' executes a block more than once."
+msgstr ""
+
+#. leap/perl-Test-LectroTest/summary
+#. tumbleweed/perl-Test-LectroTest/summary
+msgid "Easy, automatic, specification-based tests"
+msgstr ""
+
+#. leap/perl-Test-LectroTest/description
+#. tumbleweed/perl-Test-LectroTest/description
+msgid ""
+"This module provides a simple (yet full featured) interface to LectroTest, "
+"an automated, specification-based testing system for Perl. To use it, "
+"declare properties that specify the expected behavior of your software. "
+"LectroTest then checks your software to see whether those properties hold.\n"
+"\n"
+"Declare properties using the 'Property' function, which takes a block of "
+"code and promotes it to a Test::LectroTest::Property:\n"
+"\n"
+"    Property {                  MyModule::my_function( $x, $y ) >= 0;     }, "
+"name => \"my_function output is non-negative\" ;\n"
+"\n"
+"The first part of the block must contain a generator-binding declaration. "
+"For example:\n"
+"\n"
+"        \n"
+"\n"
+"(Note the special bracketing, which is required.) This particular binding "
+"says, \"For all integers _x_ and _y_.\" (By the way, you aren't limited to "
+"integers. LectroTest also gives you booleans, strings, lists, hashes, and "
+"more, and it lets you define your own generator types. See Test::LectroTest::"
+"Generator for more.)\n"
+"\n"
+"The second part of the block is simply a snippet of code that makes use of "
+"the variables we bound earlier to test whether a property holds for the "
+"piece of software we are testing:\n"
+"\n"
+"        MyModule::my_function( $x, $y ) >= 0;\n"
+"\n"
+"In this case, it asserts that 'MyModule::my_function($x,$y)' returns a non-"
+"negative result. (Yes, '$x' and '$y' refer to the same _x_ and _y_ that we "
+"bound to the generators earlier. LectroTest automagically loads these "
+"lexically bound Perl variables with values behind the scenes.) \n"
+"*Note:* If you want to use testing assertions like 'ok' from Test::Simple or "
+"'is', 'like', or 'cmp_ok' from Test::More (and the related family of Test::"
+"Builder-based testing modules), see Test::LectroTest::Compat, which lets you "
+"mix and match LectroTest with these modules.\n"
+"\n"
+"Finally, we give the whole Property a name, in this case \"my_function "
+"output is non-negative.\" It's a good idea to use a meaningful name because "
+"LectroTest refers to properties by name in its output.\n"
+"\n"
+"Let's take a look at the finished property specification:\n"
+"\n"
+"    Property {                  MyModule::my_function( $x, $y ) >= 0;     }, "
+"name => \"my_function output is non-negative\" ;\n"
+"\n"
+"It says, \"For all integers _x_ and _y_, we assert that my_function's output "
+"is non-negative.\"\n"
+"\n"
+"To check whether this property holds, simply put it in a Perl program that "
+"uses the Test::LectroTest module. (See the SYNOPSIS for an example.) When "
+"you run the program, LectroTest will load the property (and any others in "
+"the file) and check it by running random trials against the software you're "
+"testing. \n"
+"*Note:* If you want to place LectroTest property checks into a test plan "
+"managed by Test::Builder-based modules such as Test::Simple or Test::More, "
+"see Test::LectroTest::Compat.\n"
+"\n"
+"If LectroTest is able to \"break\" your software during the property check, "
+"it will emit a counterexample to your property's assertions and stop. You "
+"can plug the counterexample back into your software to debug the problem. "
+"(You might also want to add the counterexample to a list of regression "
+"tests.)\n"
+"\n"
+"A successful LectroTest looks like this:\n"
+"\n"
+"  1..1   ok 1 - 'my_function output is non-negative' (1000 attempts)\n"
+"\n"
+"On the other hand, if you're not so lucky:\n"
+"\n"
+"  1..1   not ok 1 - 'my_function output is non-negative' falsified \\       "
+"in 324 attempts"
 msgstr ""
 
 #. leap/perl-Test-LongString/summary
@@ -21606,6 +22145,13 @@ msgid ""
 "Test::Mojo::Pg makes the creation and removal of a transitory database "
 "during testing when using Mojo::Pg. This is useful when every test should "
 "work from a 'clean' database."
+msgstr ""
+
+#. leap/perl-Test-More-UTF8/summary
+#. leap/perl-Test-More-UTF8/description
+#. tumbleweed/perl-Test-More-UTF8/summary
+#. tumbleweed/perl-Test-More-UTF8/description
+msgid "Enhancing Test::More for UTF8-based projects"
 msgstr ""
 
 #. leap/perl-Test-Most/summary
@@ -21798,7 +22344,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Test-PerlTidy/summary
-#. tumbleweed/perl-Test-PerlTidy/summary
 msgid "Check That All Your Files Are Tidy"
 msgstr ""
 
@@ -22032,7 +22577,6 @@ msgid ""
 msgstr ""
 
 #. leap/perl-Test-Spelling/summary
-#. tumbleweed/perl-Test-Spelling/summary
 #, fuzzy
 msgid "Check for Spelling Errors in Pod Files"
 msgstr "POD hibák keresése fájlokban"
@@ -22422,6 +22966,22 @@ msgid ""
 "have a fallback when a certain dependency module is not installed."
 msgstr ""
 
+#. leap/perl-Test-WriteVariants/summary
+#. tumbleweed/perl-Test-WriteVariants/summary
+msgid "Dynamic generation of tests in nested combinations of contexts"
+msgstr ""
+
+#. leap/perl-Test-WriteVariants/description
+#. tumbleweed/perl-Test-WriteVariants/description
+msgid ""
+"Test::WriteVariants is a utility to create variants of a common test.\n"
+"\n"
+"Given the situation - like in DBI where some tests are the same for DBI::"
+"SQL::Nano and it's drop-in replacement SQL::Statement. Or a distribution duo "
+"having a Pure-Perl and an XS variant - and the same test shall be used to "
+"ensure XS and PP version are really drop-in replacements for each other."
+msgstr ""
+
 #. leap/perl-Test-YAML/summary
 #. tumbleweed/perl-Test-YAML/summary
 #, fuzzy
@@ -22439,6 +22999,22 @@ msgstr ""
 #. tumbleweed/perl-Test-YAML-Valid/summary
 #. tumbleweed/perl-Test-YAML-Valid/description
 msgid "Test for valid YAML"
+msgstr ""
+
+#. leap/perl-Test-utf8/summary
+#. tumbleweed/perl-Test-utf8/summary
+msgid "Handy utf8 tests"
+msgstr ""
+
+#. leap/perl-Test-utf8/description
+#. tumbleweed/perl-Test-utf8/description
+msgid ""
+"This module is a collection of tests useful for dealing with utf8 strings in "
+"Perl.\n"
+"\n"
+"This module has two types of tests: The validity tests check if a string is "
+"valid and not corrupt, whereas the characteristics tests will check that "
+"string has a given set of characteristics."
 msgstr ""
 
 #. leap/perl-Test2-Plugin-NoWarnings/summary
@@ -22863,6 +23439,25 @@ msgid ""
 "same,      But after they are produced,        they have different "
 "names.     +They both may be called deep and profound.     +Deeper and more "
 "profound,     +The door of all subtleties!"
+msgstr ""
+
+#. leap/perl-Text-RecordParser/summary
+#. tumbleweed/perl-Text-RecordParser/summary
+msgid "Read Record-Oriented Files"
+msgstr ""
+
+#. leap/perl-Text-RecordParser/description
+#. tumbleweed/perl-Text-RecordParser/description
+msgid ""
+"This module is for reading record-oriented data in a delimited text file. "
+"The most common example have records separated by newlines and fields "
+"separated by commas or tabs, but this module aims to provide a consistent "
+"interface for handling sequential records in a file however they may be "
+"delimited. Typically this data lists the fields in the first line of the "
+"file, in which case you should call 'bind_header' to bind the field name (or "
+"not, and it will be called implicitly). If the first line contains data, you "
+"can still bind your own field names via 'bind_fields'. Either way, you can "
+"then use many methods to get at the data as arrays or hashes."
 msgstr ""
 
 #. leap/perl-Text-Reform/summary
@@ -23451,6 +24046,25 @@ msgstr ""
 msgid "shift and scale time"
 msgstr ""
 
+#. leap/perl-Time-Moment/summary
+#. tumbleweed/perl-Time-Moment/summary
+msgid "Represents a date and time of day with an offset from UTC"
+msgstr ""
+
+#. leap/perl-Time-Moment/description
+#. tumbleweed/perl-Time-Moment/description
+msgid ""
+"'Time::Moment' is an immutable object representing a date and time of day "
+"with an offset from UTC in the ISO 8601 calendar system.\n"
+"\n"
+"Time is measured in nanoseconds since '0001-01-01T00Z'. In 'Time:Moment' "
+"leap seconds are ignored. It is assumed that there are exactly "
+"'86,400,000,000,000' nanoseconds per day. 'Time::Moment' can represent all "
+"epoch integers from '-62,135,596,800' to '253,402,300,799'; this range "
+"suffices to measure times to nanosecond precision for any instant that is "
+"within '0001-01-01T00:00:00Z' to '9999-12-31T23:59:59Z'."
+msgstr ""
+
 #. leap/perl-Time-Out/summary
 #. tumbleweed/perl-Time-Out/summary
 msgid "Easily timeout long running operations"
@@ -24037,6 +24651,22 @@ msgid ""
 "language."
 msgstr ""
 
+#. leap/perl-WWW-Form-UrlEncoded/summary
+#. tumbleweed/perl-WWW-Form-UrlEncoded/summary
+msgid "Parser and Builder for Application/X-Www-Form-Urlencoded"
+msgstr ""
+
+#. leap/perl-WWW-Form-UrlEncoded/description
+#. tumbleweed/perl-WWW-Form-UrlEncoded/description
+msgid ""
+"WWW::Form::UrlEncoded provides application/x-www-form-urlencoded parser and "
+"builder. This module aims to have compatibility with other CPAN modules like "
+"HTTP::Body's urlencoded parser.\n"
+"\n"
+"This module try to use WWW::Form::UrlEncoded::XS by default and fail to it, "
+"use WWW::Form::UrlEncoded::PP instead"
+msgstr ""
+
 #. leap/perl-WWW-Mechanize/summary
 #. tumbleweed/perl-WWW-Mechanize/summary
 msgid "Handy web browsing in a Perl object"
@@ -24275,6 +24905,7 @@ msgstr ""
 
 #. leap/perl-X11-Protocol/summary
 #. tumbleweed/perl-X11-Protocol/summary
+#. tumbleweed/perl-X11-Protocol-Other/summary
 msgid "Perl module for the X Window System Protocol, version 11"
 msgstr ""
 
@@ -24311,6 +24942,23 @@ msgid ""
 "Authors:\n"
 "--------     Robert Joop <yaph-020416@timesink.de>"
 msgstr "OS103 "
+
+#. leap/perl-XML-Atom-SimpleFeed/summary
+#. tumbleweed/perl-XML-Atom-SimpleFeed/summary
+msgid "No-fuss generation of Atom syndication feeds"
+msgstr ""
+
+#. leap/perl-XML-Atom-SimpleFeed/description
+#. tumbleweed/perl-XML-Atom-SimpleFeed/description
+msgid ""
+"This is a minimal API for generating Atom syndication feeds quickly and "
+"easily. It supports all aspects of the Atom format itself but has no "
+"mechanism for the inclusion of extension elements.\n"
+"\n"
+"You can supply strings for most things, and the module will provide useful "
+"defaults. When you want more control, you can provide data structures, as "
+"documented, to specify more particulars."
+msgstr ""
 
 #. leap/perl-XML-Bare/summary
 #. tumbleweed/perl-XML-Bare/summary
@@ -24662,12 +25310,13 @@ msgid "Lightweight pure-perl XML Parser (based on regexps)"
 msgstr ""
 
 #. leap/perl-XML-Parser-Lite/description
+#. tumbleweed/perl-XML-Parser-Lite/description
 msgid ""
-"This module implements an XML parser with a interface similar to the XML::"
-"Parser manpage. Though not all callbacks are supported, you should be able "
-"to use it in the same way you use XML::Parser. Due to using experimental "
-"regexp features it'll work only on Perl 5.6 and above and may behave "
-"differently on different platforms.\n"
+"This module implements an XML parser with a interface similar to XML::"
+"Parser. Though not all callbacks are supported, you should be able to use it "
+"in the same way you use XML::Parser. Due to using experimental regexp "
+"features it'll work only on Perl 5.6 and above and may behave differently on "
+"different platforms.\n"
 "\n"
 "Note that you cannot use regular expressions or split in callbacks. This is "
 "due to a limitation of perl's regular expression implementation (which is "
@@ -25068,7 +25717,6 @@ msgid "Perl YAML Serialization using XS and libyaml"
 msgstr ""
 
 #. leap/perl-YAML-Syck/summary
-#. tumbleweed/perl-YAML-Syck/summary
 msgid "Fast, lightweight YAML loader and dumper"
 msgstr ""
 
@@ -25553,6 +26201,37 @@ msgid ""
 "This was added on perl 5.22.0."
 msgstr ""
 
+#. leap/perl-forks/summary
+#. tumbleweed/perl-forks/summary
+msgid "Drop-in replacement for Perl threads using fork()"
+msgstr ""
+
+#. leap/perl-forks/description
+#. tumbleweed/perl-forks/description
+msgid ""
+"The \"forks\" pragma allows a developer to use threads without having to "
+"have a threaded perl, or to even run 5.8.0 or higher.\n"
+"\n"
+"Refer to the the threads manpage module for ithreads API documentation. "
+"Also, use\n"
+"\n"
+"    perl -Mforks -e 'print $threads::VERSION'\n"
+"\n"
+"to see what version of the threads manpage you should refer to regarding "
+"supported API features.\n"
+"\n"
+"There were a number of goals that I am trying to reach with this "
+"implementation.\n"
+"\n"
+"    Using this module *only* makes sense if you run on a system that has "
+"an     implementation of the 'fork' function by the Operating System. "
+"Windows     is currently the only known system on which Perl runs which does "
+"*not*     have an implementation of 'fork'. Therefore, it *doesn't* make "
+"any     sense to use this module on a Windows system. And therefore, a check "
+"is     made during installation barring you from installing on a Windows     "
+"system."
+msgstr ""
+
 #. leap/perl-gettext/summary
 #. tumbleweed/perl-gettext/summary
 msgid "Message Handling Functions"
@@ -25770,6 +26449,19 @@ msgid ""
 "These values are then available for reference by any code after import."
 msgstr ""
 
+#. leap/perl-mousex-getopt/summary
+#. tumbleweed/perl-mousex-getopt/summary
+#, fuzzy
+msgid "A Mouse role for processing command line options"
+msgstr "C függvénykönyvtár a parancssori paraméterek kezelésére"
+
+#. leap/perl-mousex-getopt/description
+#. tumbleweed/perl-mousex-getopt/description
+msgid ""
+"A Mouse role which provides an alternate constructor for creating objects "
+"using parameters passed in from the command line."
+msgstr ""
+
 #. leap/perl-multidimensional/summary
 #. tumbleweed/perl-multidimensional/summary
 msgid "Disables Multidimensional Array Emulation"
@@ -25839,6 +26531,22 @@ msgid ""
 "standardized API."
 msgstr ""
 
+#. leap/perl-prefork/summary
+#. tumbleweed/perl-prefork/summary
+msgid "Optimized module loading for forking or non-forking processes"
+msgstr ""
+
+#. leap/perl-prefork/description
+#. tumbleweed/perl-prefork/description
+msgid ""
+"The 'prefork' pragma is intended to allow module writers to optimise module "
+"loading for *both* scenarios with as little additional code as possible.\n"
+"\n"
+"prefork.pm is intended to serve as a central and optional marshalling point "
+"for state detection (are we running in compile-time or run-time mode) and to "
+"act as a relatively light-weight module loader."
+msgstr ""
+
 #. leap/perl-qpid/summary
 #. tumbleweed/perl-qpid/summary
 #, fuzzy
@@ -25851,7 +26559,6 @@ msgid "Perl bindings for the Qpid messaging framework."
 msgstr "gtk-vnc programkönyvtár - Python kötések"
 
 #. leap/perl-strictures/summary
-#. tumbleweed/perl-strictures/summary
 msgid "Turn On Strict and Make Most Warnings Fatal"
 msgstr ""
 
@@ -25932,17 +26639,6 @@ msgstr ""
 msgid "Perl 5 Reference Guide"
 msgstr ""
 
-#. tumbleweed/perl-Acme-Damn/summary
-msgid "'Unbless' Perl objects"
-msgstr ""
-
-#. tumbleweed/perl-Acme-Damn/description
-msgid ""
-"*Acme::Damn* provides a single routine, *damn()*, which takes a blessed "
-"reference (a Perl object), and _unblesses_ it, to return the original "
-"reference."
-msgstr ""
-
 #. tumbleweed/perl-App-CLI/description
 msgid ""
 "'App::CLI' dispatches CLI (command line interface) based commands into "
@@ -25951,7 +26647,7 @@ msgstr ""
 
 #. tumbleweed/perl-Archive-Tar-Wrapper/description
 msgid ""
-"Archive::Tar::Wrapper is an API wrapper around the 'tar' command line "
+"*Archive::Tar::Wrapper* is an API wrapper around the 'tar' command line "
 "program. It never stores anything in memory, but works on temporary "
 "directory structures on disk instead. It provides a mapping between the "
 "logical paths in the tarball and the 'real' files in the temporary directory "
@@ -25959,11 +26655,15 @@ msgid ""
 "\n"
 "It differs from Archive::Tar in two ways:\n"
 "\n"
-"  * Archive::Tar::Wrapper doesn't hold anything in memory. Everything is "
-"stored on disk.\n"
+"  * *Archive::Tar::Wrapper* almost doesn't hold anything in memory (see "
+"'write' method), instead using disk as storage.\n"
 "\n"
-"  * Archive::Tar::Wrapper is 100% compliant with the platform's 'tar' "
+"  * *Archive::Tar::Wrapper* is 100% compliant with the platform's 'tar' "
 "utility because it uses it internally."
+msgstr ""
+
+#. tumbleweed/perl-BerkeleyDB/summary
+msgid "Perl extension for Berkeley DB version 2, 3, 4, 5 or 6"
 msgstr ""
 
 #. tumbleweed/perl-Business-ISSN/description
@@ -26023,6 +26723,14 @@ msgid ""
 "application from the specific implementation details."
 msgstr ""
 
+#. tumbleweed/perl-CGI-Simple/summary
+msgid "Object-oriented CGI interface compliant to CGI.pm"
+msgstr ""
+
+#. tumbleweed/perl-Canary-Stability/summary
+msgid "Canary to check perl compatibility for schmorp's modules"
+msgstr ""
+
 #. tumbleweed/perl-Carp-Always/description
 msgid ""
 "This module is meant as a debugging aid. It can be used to make a script "
@@ -26047,6 +26755,55 @@ msgid ""
 "and 'confess'."
 msgstr ""
 
+#. tumbleweed/perl-Carp-Clan/description
+msgid ""
+"This module is based on \"'Carp.pm'\" from Perl 5.005_03. It has been "
+"modified to skip all package names matching the pattern given in the \"use\" "
+"statement inside the \"'qw()'\" term (or argument list).\n"
+"\n"
+"Suppose you have a family of modules or classes named \"Pack::A\", \"Pack::B"
+"\" and so on, and each of them uses \"'Carp::Clan qw(^Pack::);'\" (or at "
+"least the one in which the error or warning gets raised).\n"
+"\n"
+"Thus when for example your script \"tool.pl\" calls module \"Pack::A\", and "
+"module \"Pack::A\" calls module \"Pack::B\", an exception raised in module "
+"\"Pack::B\" will appear to have originated in \"tool.pl\" where \"Pack::A\" "
+"was called, and not in \"Pack::A\" where \"Pack::B\" was called, as the "
+"unmodified \"'Carp.pm'\" would try to make you believe ':-)'.\n"
+"\n"
+"This works similarly if \"Pack::B\" calls \"Pack::C\" where the exception is "
+"raised, et cetera.\n"
+"\n"
+"In other words, this blames all errors in the \"'Pack::*'\" modules on the "
+"user of these modules, i.e., on you. ';-)'\n"
+"\n"
+"The skipping of a clan (or family) of packages according to a pattern "
+"describing its members is necessary in cases where these modules are not "
+"classes derived from each other (and thus when examining '@ISA' - as in the "
+"original \"'Carp.pm'\" module - doesn't help).\n"
+"\n"
+"The purpose and advantage of this is that a \"clan\" of modules can work "
+"together (and call each other) and throw exceptions at various depths down "
+"the calling hierarchy and still appear as a monolithic block (as though they "
+"were a single module) from the perspective of the caller.\n"
+"\n"
+"In case you just want to ward off all error messages from the module in "
+"which you \"'use Carp::Clan'\", i.e., if you want to make all error messages "
+"or warnings to appear to originate from where your module was called (this "
+"is what you usually used to \"'use Carp;'\" for ';-)'), instead of in your "
+"module itself (which is what you can do with a \"die\" or \"warn\" anyway), "
+"you do not need to provide a pattern, the module will automatically provide "
+"the correct one for you.\n"
+"\n"
+"I.e., just \"'use Carp::Clan;'\" without any arguments and call \"carp\" or "
+"\"croak\" as appropriate, and they will automatically defend your module "
+"against all blames!\n"
+"\n"
+"In other words, a pattern is only necessary if you want to make several "
+"modules (more than one) work together and appear as though they were only "
+"one."
+msgstr ""
+
 #. tumbleweed/perl-Clone-Choose/summary
 msgid "Choose appropriate clone utility"
 msgstr ""
@@ -26062,23 +26819,24 @@ msgid ""
 "particular one."
 msgstr ""
 
-#. tumbleweed/perl-Crypt-OpenSSL-Guess/summary
-msgid "Guess OpenSSL include path"
+#. tumbleweed/perl-Code-DRY/description
+msgid ""
+"The module's main purpose is to report repeated text fragments (typically "
+"Perl code) that could be considered for isolation and/or abstraction in "
+"order to reduce multiple copies of the same code (aka cut and paste code)."
 msgstr ""
 
-#. tumbleweed/perl-Crypt-OpenSSL-Guess/description
-msgid ""
-"Crypt::OpenSSL::Guess provides helpers to guess OpenSSL include path on any "
-"platforms.\n"
-"\n"
-"Often MacOS's homebrew OpenSSL cause a problem on installation due to "
-"include path is not added. Some CPAN module provides to modify include path "
-"with configure-args, but Carton or Module::CPANfile is not supported to pass "
-"configure-args to each modules. Crypt::OpenSSL::* modules should use it on "
-"your Makefile.PL.\n"
-"\n"
-"This module resolves the include path by Net::SSLeay's workaround. Original "
-"code is taken from 'inc/Module/Install/PRIVATE/Net/SSLeay.pm' by Net::SSLeay."
+#. tumbleweed/perl-Config-Grammar/summary
+msgid "Grammar-based, user-friendly config parser"
+msgstr ""
+
+#. tumbleweed/perl-Config-IniFiles/summary
+#, fuzzy
+msgid "Module for reading .ini-style configuration files"
+msgstr "Modul a .ini-stílusú beállítási fájlok olvasásához"
+
+#. tumbleweed/perl-Cpanel-JSON-XS/summary
+msgid "CPanel fork of JSON::XS, fast and correct serializing"
 msgstr ""
 
 #. tumbleweed/perl-Crypt-OpenSSL-RSA/description
@@ -26105,6 +26863,38 @@ msgid ""
 "Note: On *LibreSSL* 'random_egd()' is not defined."
 msgstr ""
 
+#. tumbleweed/perl-DBD-SQLite/description
+msgid ""
+"SQLite is a public domain file-based relational database engine that you can "
+"find at https://www.sqlite.org/. \n"
+"*DBD::SQLite* is a Perl DBI driver for SQLite, that includes the entire "
+"thing in the distribution. So in order to get a fast transaction capable "
+"RDBMS working for your perl project you simply have to install this module, "
+"and *nothing* else.\n"
+"\n"
+"SQLite supports the following features: \n"
+"* Implements a large subset of SQL92\n"
+"\n"
+"See https://www.sqlite.org/lang.html for details. \n"
+"* A complete DB in a single disk file\n"
+"\n"
+"Everything for your database is stored in a single disk file, making it "
+"easier to move things around than with DBD::CSV. \n"
+"* Atomic commit and rollback\n"
+"\n"
+"Yes, *DBD::SQLite* is small and light, but it supports full transactions! \n"
+"* Extensible\n"
+"\n"
+"User-defined aggregate or regular functions can be registered with the SQL "
+"parser.\n"
+"\n"
+"There's lots more to it, so please refer to the docs on the SQLite web page, "
+"listed above, for SQL details. Also refer to DBI for details on how to use "
+"DBI itself. The API works like every DBI module does. However, currently "
+"many statement attributes are not implemented or are limited by the typeless "
+"nature of the SQLite database."
+msgstr ""
+
 #. tumbleweed/perl-DBIx-Class-Fixtures/summary
 msgid "Dump data and repopulate a database using rules"
 msgstr ""
@@ -26118,100 +26908,13 @@ msgid ""
 "and conditions based on your DBIx::Class schema."
 msgstr ""
 
-#. tumbleweed/perl-DBIx-Class-InflateColumn-FS/summary
-msgid "Inflate/deflate columns to Path::Class::File objects"
+#. tumbleweed/perl-Data-Validate-Domain/summary
+msgid "Domain and host name validation"
 msgstr ""
 
-#. tumbleweed/perl-DBIx-Class-InflateColumn-FS/description
+#. tumbleweed/perl-Data-Validate-Domain/description
 msgid ""
-"Provides inflation to a Path::Class::File object allowing file system "
-"storage of BLOBS.\n"
-"\n"
-"The storage path is specified with 'fs_column_path'. Each file receives a "
-"unique name, so the storage for all FS columns can share the same path.\n"
-"\n"
-"Within the path specified by 'fs_column_path', files are stored in sub-"
-"directories based on the first 2 characters of the unique file names. Up to "
-"256 sub-directories will be created, as needed. Override '_fs_column_dirs' "
-"in a derived class to change this behavior.\n"
-"\n"
-"'fs_new_on_update' will create a new file name if the file has been updated."
-msgstr ""
-
-#. tumbleweed/perl-DBIx-Class-UUIDColumns/summary
-msgid "Implicit uuid columns"
-msgstr ""
-
-#. tumbleweed/perl-DBIx-Class-UUIDColumns/description
-msgid ""
-"This the DBIx::Class manpage component resembles the behaviour of the Class::"
-"DBI::UUID manpage, to make some columns implicitly created as uuid.\n"
-"\n"
-"When loaded, 'UUIDColumns' will search for a suitable uuid generation module "
-"from the following list of supported modules:\n"
-"\n"
-"  Data::UUID   APR::UUID*   UUID   Win32::Guidgen   Win32API::GUID\n"
-"\n"
-"If no supporting module can be found, an exception will be thrown. \n"
-"*APR::UUID will not be loaded under OpenBSD due to an as yet unidentified XS "
-"issue.\n"
-"\n"
-"If you would like to use a specific module, you can set the /uuid_class "
-"manpage:\n"
-"\n"
-"  __PACKAGE__->uuid_class('::Data::UUID');   __PACKAGE__-"
-">uuid_class('MyUUIDGenerator');"
-msgstr ""
-
-#. tumbleweed/perl-Data-Tumbler/summary
-msgid "Dynamic generation of nested combinations of variants"
-msgstr ""
-
-#. tumbleweed/perl-Data-Tumbler/description
-msgid ""
-"NOTE: This is alpha code and liable to change while it and Test::"
-"WriteVariants mature.\n"
-"\n"
-"The tumble() method calls a sequence of 'provider' code references each of "
-"which returns a hash. The first provider is called and then, for each hash "
-"item it returns, the tumble() method recurses to call the next provider.\n"
-"\n"
-"The recursion continues until there are no more providers to call, at which "
-"point the consumer code reference is called. Effectively the providers "
-"create a tree of combinations and the consumer is called at the leafs of the "
-"tree.\n"
-"\n"
-"If a provider returns no items then that part of the tree is pruned. Further "
-"providers, if any, are not called and the consumer is not called.\n"
-"\n"
-"During a call to tumble() three values are passed down through the tree and "
-"into the consumer: path, context, and payload.\n"
-"\n"
-"The path and context are derived from the names and values of the hashes "
-"returned by the providers. Typically the path define the current \"path\" "
-"through the tree of combinations.\n"
-"\n"
-"The providers are passed the current path, context, and payload. The payload "
-"is cloned at each level of recursion so that any changes made to it by "
-"providers are only visible within the scope of the generated sub-tree.\n"
-"\n"
-"Note that although the example above shows the path, context and payload as "
-"array references, the tumbler code makes no assumptions about them. They can "
-"be any kinds of values.\n"
-"\n"
-"See Test::WriteVariants for a practical example use."
-msgstr ""
-
-#. tumbleweed/perl-Data-Validate-IP/summary
-msgid "IPv4 and IPv6 validation methods"
-msgstr ""
-
-#. tumbleweed/perl-Data-Validate-IP/description
-msgid ""
-"This module provides a number IP address validation subs that both validate "
-"and untaint their input. This includes both basic validation ('is_ipv4()' "
-"and 'is_ipv6()') and special cases like checking whether an address belongs "
-"to a specific network or whether an address is public or private (reserved)."
+"This module offers a few subroutines for validating domain and host names."
 msgstr ""
 
 #. tumbleweed/perl-Date-Manip/description
@@ -26285,17 +26988,25 @@ msgid ""
 "Each of these tasks is trivial (one or two lines at most) with this package."
 msgstr ""
 
-#. tumbleweed/perl-Devel-GlobalPhase/summary
-msgid "Detect perl's global phase on older perls"
+#. tumbleweed/perl-DateTime/summary
+msgid "Date and time object for Perl"
 msgstr ""
 
-#. tumbleweed/perl-Devel-GlobalPhase/description
+#. tumbleweed/perl-DateTime-Format-Builder/summary
+msgid "Create DateTime parser classes and objects"
+msgstr ""
+
+#. tumbleweed/perl-DateTime-Format-Builder/description
 msgid ""
-"This gives access to ${^GLOBAL_PHASE} in versions of perl that don't provide "
-"it. The built in variable will be used if it is available.\n"
+"DateTime::Format::Builder creates DateTime parsers. Many string formats of "
+"dates and times are simple and just require a basic regular expression to "
+"extract the relevant information. Builder provides a simple way to do this "
+"without writing reams of structural code.\n"
 "\n"
-"If all that is needed is detecting global destruction, Devel::"
-"GlobalDestruction should be used instead of this module."
+"Builder provides a number of methods, most of which you'll never need, or at "
+"least rarely need. They're provided more for exposing of the module's "
+"innards to any subclasses, or for when you need to do something slightly "
+"beyond what I expected."
 msgstr ""
 
 #. tumbleweed/perl-Devel-Hide/description
@@ -26378,45 +27089,8 @@ msgid ""
 "by 'Time::HiRes'' 'time()' function."
 msgstr ""
 
-#. tumbleweed/perl-Email-Address-XS/summary
-msgid "Parse and format RFC 5322 email addresses and groups"
-msgstr ""
-
-#. tumbleweed/perl-Email-Address-XS/description
-msgid ""
-"This module implements at https://tools.ietf.org/html/rfc5322 parser and "
-"formatter of email addresses and groups. It parses an input string from "
-"email headers which contain a list of email addresses or a groups of email "
-"addresses (like From, To, Cc, Bcc, Reply-To, Sender, ...). Also it can "
-"generate a string value for those headers from a list of email addresses "
-"objects. Module is backward compatible with at https://tools.ietf.org/html/"
-"rfc2822 and at https://tools.ietf.org/html/rfc822.\n"
-"\n"
-"Parser and formatter functionality is implemented in XS and uses shared code "
-"from Dovecot IMAP server.\n"
-"\n"
-"It is a drop-in replacement for the Email::Address module which has several "
-"security issues. E.g. issue at https://cve.mitre.org/cgi-bin/cvename.cgi?"
-"name=CVE-2015-7686, which allows remote attackers to cause denial of "
-"service, is still present in Email::Address version 1.908.\n"
-"\n"
-"Email::Address::XS module was created to finally fix CVE-2015-7686.\n"
-"\n"
-"Existing applications that use Email::Address module could be easily "
-"switched to Email::Address::XS module. In most cases only changing 'use "
-"Email::Address' to 'use Email::Address::XS' and replacing every 'Email::"
-"Address' occurrence with 'Email::Address::XS' is sufficient.\n"
-"\n"
-"So unlike Email::Address, this module does not use regular expressions for "
-"parsing but instead native XS implementation parses input string "
-"sequentially according to RFC 5322 grammar.\n"
-"\n"
-"Additionally it has support also for named groups and so can be use instead "
-"of the Email::Address::List module.\n"
-"\n"
-"If you are looking for the module which provides object representation for "
-"the list of email addresses suitable for the MIME email headers, see Email::"
-"MIME::Header::AddressList."
+#. tumbleweed/perl-Encode/summary
+msgid "Character encodings in Perl"
 msgstr ""
 
 #. tumbleweed/perl-Encode-JIS2K/description
@@ -26425,6 +27099,38 @@ msgid ""
 "This module implements encodings that covers JIS X 0213 charset (AKA JIS "
 "2000, hence the module name)."
 msgstr "OS103 "
+
+#. tumbleweed/perl-Error/summary
+msgid "Error"
+msgstr ""
+
+#. tumbleweed/perl-ExtUtils-F77/description
+msgid ""
+"This module tries to figure out how to link C programs with Fortran "
+"subroutines on your system. Basically one must add a list of Fortran runtime "
+"libraries. The problem is their location and name varies with each OS/"
+"compiler combination! It was originally developed to make building and "
+"installation of the PGPLOT module easier, which links to the pgplot Fortran "
+"graphics library. It is now used by a numnber of perl modules.\n"
+"\n"
+"This module tries to implement a simple 'rule-of-thumb' database for various "
+"flavours of UNIX systems. A simple self-documenting Perl database of "
+"knowledge/code for figuring out how to link for various combinations of OS "
+"and compiler is embedded in the modules Perl code. Please help save the "
+"world by submitted patches for new database entries for your system at "
+"https://github.com/PDLPorters/extutils-f77\n"
+"\n"
+"Note the default on most systems is now to search for a generic 'GNU' "
+"compiler which can be gfortran, g77, g95 or fort77 (in that order based on "
+"usage) and then find the appropriate link libraries automatically. (This is "
+"the 'Generic' 'GNU' database entry in the code.)\n"
+"\n"
+"The library list which the module returns can be explicitly overridden by "
+"setting the environment variable F77LIBS, e.g.\n"
+"\n"
+"  % setenv F77LIBS \"-lfoo -lbar\"   % perl -MExtUtils::F77 -e 'print "
+"ExtUtils::F77->compiler, \"\\n\"'   ..."
+msgstr ""
 
 #. tumbleweed/perl-ExtUtils-InstallPaths/description
 msgid ""
@@ -26496,6 +27202,19 @@ msgid ""
 "The end result is a single API that can find your resources on any platform, "
 "making it relatively trivial to create Perl software that works elegantly "
 "and correctly no matter where you run it."
+msgstr ""
+
+#. tumbleweed/perl-File-Slurp/summary
+#, fuzzy
+msgid "Perl module for reading/writing/modifying complete files"
+msgstr "Modul a .ini-stílusú beállítási fájlok olvasásához"
+
+#. tumbleweed/perl-File-Slurp/description
+msgid ""
+"This module provides subs that allow you to read or write entire files with "
+"one simple call. They are designed to be simple to use, have flexible ways "
+"to pass in or get the file contents and to be very efficient. There is also "
+"a sub to read in all the files in a directory."
 msgstr ""
 
 #. tumbleweed/perl-File-Temp/summary
@@ -26577,6 +27296,35 @@ msgid ""
 "information."
 msgstr ""
 
+#. tumbleweed/perl-HTTP-Daemon/summary
+#, fuzzy
+msgid "Simple http server class"
+msgstr "OS103 "
+
+#. tumbleweed/perl-HTTP-Daemon/description
+msgid ""
+"Instances of the 'HTTP::Daemon' class are HTTP/1.1 servers that listen on a "
+"socket for incoming requests. The 'HTTP::Daemon' is a subclass of 'IO::"
+"Socket::INET', so you can perform socket operations directly on it too.\n"
+"\n"
+"The accept() method will return when a connection from a client is "
+"available. The returned value will be an 'HTTP::Daemon::ClientConn' object "
+"which is another 'IO::Socket::INET' subclass. Calling the get_request() "
+"method on this object will read data from the client and return an 'HTTP::"
+"Request' object. The ClientConn object also provide methods to send back "
+"various responses.\n"
+"\n"
+"This HTTP daemon does not fork(2) for you. Your application, i.e. the user "
+"of the 'HTTP::Daemon' is responsible for forking if that is desirable. Also "
+"note that the user is responsible for generating responses that conform to "
+"the HTTP/1.1 protocol."
+msgstr ""
+
+#. tumbleweed/perl-HTTP-Headers-Fast/summary
+#, fuzzy
+msgid "Faster implementation of HTTP::Headers"
+msgstr "A SOAP Apache megvalósítása"
+
 #. tumbleweed/perl-Hash-MoreUtils/description
 msgid ""
 "Similar to List::MoreUtils, 'Hash::MoreUtils' contains trivial but commonly-"
@@ -26584,15 +27332,142 @@ msgid ""
 "a common API - speeding up by XS is far away at the moment."
 msgstr ""
 
-#. tumbleweed/perl-IO-Digest/summary
-msgid "Calculate digests while reading or writing"
-msgstr "Kivonat készítése írás vagy olvasás közben"
-
-#. tumbleweed/perl-IO-Digest/description
+#. tumbleweed/perl-IO-Handle-Util/description
 msgid ""
-"This module allows you to calculate digests while reading or writing from/to "
-"file handles. This avoids having to reread the same content to compute the "
-"digests after having written a file."
+"This module provides a number of helpful routines to manipulate or create "
+"IO::Handle like objects."
+msgstr ""
+
+#. tumbleweed/perl-Inline/description
+msgid ""
+"The Inline module allows you to put source code from other programming "
+"languages directly \"inline\" in a Perl script or module. The code is "
+"automatically compiled as needed, and then loaded for immediate access from "
+"Perl.\n"
+"\n"
+"Inline saves you from the hassle of having to write and compile your own "
+"glue code using facilities like XS or SWIG. Simply type the code where you "
+"want it and run your Perl as normal. All the hairy details are handled for "
+"you. The compilation and installation of your code chunks all happen "
+"transparently; all you will notice is the delay of compilation on the first "
+"run.\n"
+"\n"
+"The Inline code only gets compiled the first time you run it (or whenever it "
+"is modified) so you only take the performance hit once. Code that is Inlined "
+"into distributed modules (like on the CPAN) will get compiled when the "
+"module is installed, so the end user will never notice the compilation "
+"time.\n"
+"\n"
+"Best of all, it works the same on both Unix and Microsoft Windows. See "
+"Inline- Support for support information."
+msgstr ""
+
+#. tumbleweed/perl-Inline-Python/summary
+msgid "Write Perl subs and classes in Python"
+msgstr ""
+
+#. tumbleweed/perl-Inline-Python/description
+msgid ""
+"The 'Inline::Python' module allows you to put Python source code directly "
+"\"inline\" in a Perl script or module. It sets up an in-process Python "
+"interpreter, runs your code, and then examines Python's symbol table for "
+"things to bind to Perl. The process of interrogating the Python interpreter "
+"for globals only occurs the first time you run your Python code. The "
+"namespace is cached, and subsequent calls use the cached version.\n"
+"\n"
+"This document describes 'Inline::Python', the Perl package which gives you "
+"access to a Python interpreter. For lack of a better place to keep it, it "
+"also gives you instructions on how to use 'perlmodule', the Python package "
+"which gives you access to the Perl interpreter."
+msgstr ""
+
+#. tumbleweed/perl-JSON/description
+msgid ""
+"This module is a thin wrapper for JSON::XS-compatible modules with a few "
+"additional features. All the backend modules convert a Perl data structure "
+"to a JSON text and vice versa. This module uses JSON::XS by default, and "
+"when JSON::XS is not available, falls back on JSON::PP, which is in the Perl "
+"core since 5.14. If JSON::PP is not available either, this module then falls "
+"back on JSON::backportPP (which is actually JSON::PP in a different .pm "
+"file) bundled in the same distribution as this module. You can also "
+"explicitly specify to use Cpanel::JSON::XS, a fork of JSON::XS by Reini "
+"Urban.\n"
+"\n"
+"All these backend modules have slight incompatibilities between them, "
+"including extra features that other modules don't support, but as long as "
+"you use only common features (most important ones are described below), "
+"migration from backend to backend should be reasonably easy. For details, "
+"see each backend module you use."
+msgstr ""
+
+#. tumbleweed/perl-JSON-XS/description
+msgid ""
+"This module converts Perl data structures to JSON and vice versa. Its "
+"primary goal is to be _correct_ and its secondary goal is to be _fast_. To "
+"reach the latter goal it was written in C.\n"
+"\n"
+"See MAPPING, below, on how JSON::XS maps perl values to JSON values and vice "
+"versa."
+msgstr ""
+
+#. tumbleweed/perl-LWP-MediaTypes/summary
+msgid "Guess media type for a file or a URL"
+msgstr ""
+
+#. tumbleweed/perl-LWP-MediaTypes/description
+msgid ""
+"This module provides functions for handling media (also known as MIME) types "
+"and encodings. The mapping from file extensions to media types is defined by "
+"the _media.types_ file. If the _~/.media.types_ file exists it is used "
+"instead. For backwards compatibility we will also look for _~/.mime.types_.\n"
+"\n"
+"The following functions are exported by default: \n"
+"* guess_media_type( $filename ) \n"
+"* guess_media_type( $uri ) \n"
+"* guess_media_type( $filename_or_object, $header_to_modify )\n"
+"\n"
+"This function tries to guess media type and encoding for a file or objects "
+"that support the a 'path' or 'filename' method, eg, URI or File::Temp "
+"objects. When an object does not support either method, it will be "
+"stringified to determine the filename. It returns the content type, which is "
+"a string like '\"text/html\"'. In array context it also returns any content "
+"encodings applied (in the order used to encode the file). You can pass a URI "
+"object reference, instead of the file name.\n"
+"\n"
+"If the type can not be deduced from looking at the file name, then "
+"guess_media_type() will let the '-T' Perl operator take a look. If this "
+"works (and '-T' returns a TRUE value) then we return _text/plain_ as the "
+"type, otherwise we return _application/octet-stream_ as the type.\n"
+"\n"
+"The optional second argument should be a reference to a HTTP::Headers object "
+"or any object that implements the $obj->header method in a similar way. When "
+"it is present the values of the 'Content-Type' and 'Content-Encoding' will "
+"be set for this header. \n"
+"* media_suffix( $type, ... )\n"
+"\n"
+"This function will return all suffixes that can be used to denote the "
+"specified media type(s). Wildcard types can be used. In a scalar context it "
+"will return the first suffix found. Examples:\n"
+"\n"
+"  @suffixes = media_suffix('image/*', 'audio/basic');   $suffix = "
+"media_suffix('text/html');\n"
+"\n"
+"The following functions are only exported by explicit request: \n"
+"* add_type( $type, @exts )\n"
+"\n"
+"Associate a list of file extensions with the given media type. Example:\n"
+"\n"
+"    add_type(\"x-world/x-vrml\" => qw(wrl vrml)); \n"
+"* add_encoding( $type, @ext )\n"
+"\n"
+"Associate a list of file extensions with an encoding type. Example:\n"
+"\n"
+" add_encoding(\"x-gzip\" => \"gz\"); \n"
+"* read_media_types( @files )\n"
+"\n"
+"Parse media types files and add the type mappings found there. Example:\n"
+"\n"
+"    read_media_types(\"conf/mime.types\");"
 msgstr ""
 
 #. tumbleweed/perl-Lingua-EN-Sentence/description
@@ -26606,6 +27481,28 @@ msgid ""
 "are being taken care of. Still, if you see that there are words causing the "
 "get_sentences function to fail, you can add those to the module, so it "
 "notices them."
+msgstr ""
+
+#. tumbleweed/perl-Linux-Inotify2/summary
+#, fuzzy
+#| msgid "scalable directory/file change notification"
+msgid "Scalable directory/file change notification"
+msgstr "Skálázható könyvtár/fájlváltozás értesítő"
+
+#. tumbleweed/perl-Linux-Inotify2/description
+msgid ""
+"This module implements an interface to the Linux 2.6.13 and later Inotify "
+"file/directory change notification system.\n"
+"\n"
+"It has a number of advantages over the Linux::Inotify module:\n"
+"\n"
+"   - it is portable (Linux::Inotify only works on x86)    - the equivalent "
+"of fullname works correctly    - it is better documented    - it has "
+"callback-style interface, which is better suited for      integration.\n"
+"\n"
+"As for the inotify API itself - it is a very tricky, and somewhat unreliable "
+"API. For a good overview of the challenges you might run into, see this LWN "
+"article: https://lwn.net/Articles/605128/."
 msgstr ""
 
 #. tumbleweed/perl-List-UtilsBy/description
@@ -26623,33 +27520,138 @@ msgid ""
 "   my @people_sorted = sort_by { $_->name } @people;"
 msgstr ""
 
-#. tumbleweed/perl-Minion/description
+#. tumbleweed/perl-Log-Dispatchouli/summary
+msgid "Simple wrapper around Log::Dispatch"
+msgstr ""
+
+#. tumbleweed/perl-MCE/summary
+msgid "Many-Core Engine for Perl providing parallel processing capabilities"
+msgstr ""
+
+#. tumbleweed/perl-MCE/description
 msgid ""
-"Minion is a high performance job queue for the Perl programming language, "
-"with support for multiple named queues, priorities, delayed jobs, job "
-"dependencies, job progress, job results, retries with backoff, rate "
-"limiting, unique jobs, statistics, distributed workers, parallel processing, "
-"autoscaling, remote control, at https://mojolicious.org admin ui, resource "
-"leak protection and multiple backends (such as at https://www.postgresql."
-"org).\n"
+"MCE spawns a pool of workers and therefore does not fork a new process per "
+"each element of data. Instead, MCE follows a bank queuing model. Imagine the "
+"line being the data and bank-tellers the parallel workers. MCE enhances that "
+"model by adding the ability to chunk the next n elements from the input "
+"stream to the next available worker."
+msgstr ""
+
+#. tumbleweed/perl-Mail-DKIM/description
+msgid ""
+"This module implements the various components of the DKIM and DomainKeys "
+"message-signing and verifying standards for Internet mail. It currently "
+"tries to implement these specifications: \n"
+"* RFC4871, for DKIM \n"
+"* RFC4870, for DomainKeys \n"
+"* draft-ietf-dmarc-arc-protocol-06, for ARC\n"
 "\n"
-"Job queues allow you to process time and/or computationally intensive tasks "
-"in background processes, outside of the request/response lifecycle of web "
-"applications. Among those tasks you'll commonly find image resizing, spam "
-"filtering, HTTP downloads, building tarballs, warming caches and basically "
-"everything else you can imagine that's not super fast."
+"The module uses an object-oriented interface. You use one of two different "
+"classes, depending on whether you are signing or verifying a message. To "
+"sign, use the Mail::DKIM::Signer class. To verify, use the Mail::DKIM::"
+"Verifier class. Simple, eh?\n"
+"\n"
+"Likewise for ARC, use the ARC modules Mail::DKIM::ARC::Signer and Mail::"
+"DKIM::ARC::Verifier\n"
+"\n"
+"If you're sending to test libraries which expect the tags in headers to be "
+"sorted, you can set $Mail::DKIM::SORTTAGS to a true value, and all created "
+"headers will get sorted keys"
 msgstr ""
 
-#. tumbleweed/perl-Minion-Backend-SQLite/summary
-msgid "SQLite backend for Minion job queue"
-msgstr ""
-
-#. tumbleweed/perl-Minion-Backend-SQLite/description
+#. tumbleweed/perl-Mail-IMAPClient/description
 msgid ""
-"Minion::Backend::SQLite is a backend for Minion based on Mojo::SQLite. All "
-"necessary tables will be created automatically with a set of migrations "
-"named 'minion'. If no connection string or ':temp:' is provided, the "
-"database will be created in a temporary directory."
+"This module provides methods implementing the IMAP protocol to support "
+"interacting with IMAP message stores.\n"
+"\n"
+"The module is used by constructing or instantiating a new IMAPClient object "
+"via the new constructor method. Once the object has been instantiated, the "
+"connect method is either implicitly or explicitly called. At that point "
+"methods are available that implement the IMAP client commands as specified "
+"in *RFC3501*. When processing is complete, the logout object method should "
+"be called.\n"
+"\n"
+"This documentation is not meant to be a replacement for RFC3501 nor any "
+"other IMAP related RFCs.\n"
+"\n"
+"Note that this documentation uses the term _folder_ in place of RFC3501's "
+"use of _mailbox_. This documentation reserves the use of the term _mailbox_ "
+"to refer to the set of folders owned by a specific IMAP id."
+msgstr ""
+
+#. tumbleweed/perl-Meta-Builder/summary
+msgid "Tools for creating Meta objects to track custom metrics"
+msgstr ""
+
+#. tumbleweed/perl-Meta-Builder/description
+msgid ""
+"Meta programming is becoming more and more popular. The popularity of Meta "
+"programming comes from the fact that many problems are made significantly "
+"easier. There are a few specialized Meta tools out there, for instance Class:"
+"MOP which is used by Moose to track class metadata.\n"
+"\n"
+"Meta::Builder is designed to be a generic tool for writing Meta objects. "
+"Unlike specialized tools, Meta::Builder makes no assumptions about what "
+"metrics you will care about. Meta::Builder also makes it simple for others "
+"to extend your meta-object based tools by providing hooks for other packages "
+"to add metrics to your meta object.\n"
+"\n"
+"If a specialized Meta object tool is available to meet your needs please use "
+"it. However if you need a simple Meta object to track a couple metrics, use "
+"Meta::Builder.\n"
+"\n"
+"Meta::Builder is also low-sugar and low-dep. In most cases you will not want "
+"a class that needs a meta object to use your meta-object class directly. "
+"Rather you will usually want to create a sugar class that exports enhanced "
+"API functions that manipulate the meta object."
+msgstr ""
+
+#. tumbleweed/perl-Module-Build/description
+msgid ""
+"'Module::Build' is a system for building, testing, and installing Perl "
+"modules. It is meant to be an alternative to 'ExtUtils::MakeMaker'. "
+"Developers may alter the behavior of the module through subclassing. It also "
+"does not require a 'make' on your system - most of the 'Module::Build' code "
+"is pure-perl and written in a very cross-platform way.\n"
+"\n"
+"See \"COMPARISON\" for more comparisons between 'Module::Build' and other "
+"installer tools.\n"
+"\n"
+"To install 'Module::Build', and any other module that uses 'Module::Build' "
+"for its installation process, do the following:\n"
+"\n"
+"  perl Build.PL       # 'Build.PL' script creates the 'Build' script   ./"
+"Build             # Need ./ to ensure we're using this \"Build\" script   ./"
+"Build test        # and not another one that happens to be in the PATH   ./"
+"Build install\n"
+"\n"
+"This illustrates initial configuration and the running of three 'actions'. "
+"In this case the actions run are 'build' (the default action), 'test', and "
+"'install'. Other actions defined so far include:\n"
+"\n"
+"  build                          manifest   clean                          "
+"manifest_skip   code                           manpages   "
+"config_data                    pardist   diff                           "
+"ppd   dist                           ppmdist   "
+"distcheck                      prereq_data   distclean                      "
+"prereq_report   distdir                        pure_install   "
+"distinstall                    realclean   distmeta                       "
+"retest   distsign                       skipcheck   "
+"disttest                       test   docs                           "
+"testall   fakeinstall                    testcover   "
+"help                           testdb   html                           "
+"testpod   install                        testpodcoverage   "
+"installdeps                    versioninstall\n"
+"\n"
+"You can run the 'help' action for a complete list of actions."
+msgstr ""
+
+#. tumbleweed/perl-Module-Starter/summary
+msgid "Simple starter kit for any module"
+msgstr ""
+
+#. tumbleweed/perl-Mojo-Pg/summary
+msgid "Wrapper around DBD::Pg for using PostgreSql with Mojolicious"
 msgstr ""
 
 #. tumbleweed/perl-Mojo-Pg/description
@@ -26663,6 +27665,28 @@ msgid ""
 "the publish/subscribe pattern."
 msgstr ""
 
+#. tumbleweed/perl-Mojo-Redis/summary
+msgid "Redis driver based on Mojo::IOLoop"
+msgstr ""
+
+#. tumbleweed/perl-Mojo-Redis/description
+msgid ""
+"Mojo::Redis is a Redis driver that use the Mojo::IOLoop, which makes it "
+"integrate easily with the Mojolicious framework.\n"
+"\n"
+"It tries to mimic the same interface as Mojo::Pg, Mojo::mysql and Mojo::"
+"SQLite, but the methods for talking to the database vary.\n"
+"\n"
+"This module is in no way compatible with the 1.xx version of Mojo::Redis and "
+"this version also tries to fix a lot of the confusing methods in Mojo::"
+"Redis2 related to pubsub.\n"
+"\n"
+"This module is currently EXPERIMENTAL, and bad design decisions will be "
+"fixed without warning. Please report at https://github.com/jhthorsen/mojo-"
+"redis/issues if you find this module useful, annoying or if you simply find "
+"bugs. Feedback can also be sent to 'jhthorsen@cpan.org'."
+msgstr ""
+
 #. tumbleweed/perl-Mojo-SQLite/description
 msgid ""
 "Mojo::SQLite is a tiny wrapper around DBD::SQLite that makes at https://www."
@@ -26670,17 +27694,6 @@ msgid ""
 "web framework. Use all at http://sqlite.org/lang.html SQLite has to offer, "
 "generate CRUD queries from data structures, and manage your database schema "
 "with migrations."
-msgstr ""
-
-#. tumbleweed/perl-Mojolicious-Plugin-NYTProf/summary
-msgid "Auto handling of Devel::NYTProf in your Mojolicious app"
-msgstr ""
-
-#. tumbleweed/perl-Mojolicious-Plugin-NYTProf/description
-msgid ""
-"This plugin enables Mojolicious to automatically generate Devel::NYTProf "
-"profiles and routes for your app, it has been inspired by Dancer::Plugin::"
-"NYTProf"
 msgstr ""
 
 #. tumbleweed/perl-Mojolicious-Plugin-Status/summary
@@ -26694,21 +27707,15 @@ msgid ""
 "for debugging."
 msgstr ""
 
-#. tumbleweed/perl-MouseX-SimpleConfig/summary
-msgid "A Mouse role for setting attributes from a simple configfile"
-msgstr ""
+#. tumbleweed/perl-MusicBrainz-DiscID/summary
+#, fuzzy
+msgid "Perl interface for the MusicBrainz libdiscid library"
+msgstr "OS103 Perl interfész az uulib függvénytárhoz"
 
-#. tumbleweed/perl-MouseX-SimpleConfig/description
+#. tumbleweed/perl-MusicBrainz-DiscID/description
 msgid ""
-"This role loads simple configfiles to set object attributes. It is based on "
-"the abstract role MouseX::ConfigFromFile, and uses Config::Any to load your "
-"configfile. Config::Any will in turn support any of a variety of different "
-"config formats, detected by the file extension. See Config::Any for more "
-"details about supported formats.\n"
-"\n"
-"Like all MouseX::ConfigFromFile -derived configfile loaders, this module is "
-"automatically supported by the MouseX::Getopt role as well, which allows "
-"specifying '-configfile' on the commandline."
+"MusicBrainz::DiscID is a class to calculate a MusicBrainz DiscID from an "
+"audio CD in the drive."
 msgstr ""
 
 #. tumbleweed/perl-Net-DNS/description
@@ -26719,6 +27726,16 @@ msgid ""
 "\n"
 "The programmer should be familiar with the structure of a DNS packet. See "
 "RFC 1035 or DNS and BIND (Albitz & Liu) for details."
+msgstr ""
+
+#. tumbleweed/perl-Net-DNS-Resolver-Mock/summary
+msgid "Mock a DNS Resolver object for testing"
+msgstr ""
+
+#. tumbleweed/perl-Net-DNS-Resolver-Mock/description
+msgid ""
+"A subclass of Net::DNS::Resolver which parses a zonefile for it's data "
+"source. Primarily for use in testing."
 msgstr ""
 
 #. tumbleweed/perl-Net-Netmask/description
@@ -26745,49 +27762,48 @@ msgid ""
 "IPv6 support was added in 1.9104."
 msgstr ""
 
-#. tumbleweed/perl-Net-Patricia/summary
-msgid "Patricia Trie perl module for fast IP address lookups"
-msgstr ""
+#. tumbleweed/perl-Net-Whois-RIPE/summary
+#, fuzzy
+msgid "Pure-Perl implementation of the RIPE Database client"
+msgstr "Az NX munkamenet-kliens ingyenes megvalósítása."
 
-#. tumbleweed/perl-Net-Patricia/description
+#. tumbleweed/perl-Object-Signature/description
 msgid ""
-"This module uses a Patricia Trie data structure to quickly perform IP "
-"address prefix matching for applications such as IP subnet, network or "
-"routing table lookups. The data structure is based on a radix tree using a "
-"radix of two, so sometimes you see patricia implementations called \"radix\" "
-"as well. The term \"Trie\" is derived from the word \"retrieval\" but is "
-"pronounced like \"try\". Patricia stands for \"Practical Algorithm to "
-"Retrieve Information Coded as Alphanumeric\", and was first suggested for "
-"routing table lookups by Van Jacobsen. Patricia Trie performance "
-"characteristics are well-known as it has been employed for routing table "
-"lookups within the BSD kernel since the 4.3 Reno release.\n"
+"Object::Signature is an abstract base class that you can inherit from in "
+"order to allow your objects to generate unique cryptographic signatures.\n"
 "\n"
-"The BSD radix code is thoroughly described in \"TCP/IP Illustrated, Volume "
-"2\" by Wright and Stevens and in the paper ``A Tree-Based Packet Routing "
-"Table for Berkeley Unix'' by Keith Sklower."
+"The method used to generate the signature is based on Storable and Digest::"
+"MD5. The object is fed to 'Storable::nfreeze' to get a string, which is then "
+"passed to Digest::MD5::md5_hex to get a unique 32 character hexadecimal "
+"signature."
 msgstr ""
 
-#. tumbleweed/perl-Number-WithError/summary
-msgid "Numbers with error propagation and scientific rounding"
+#. tumbleweed/perl-PPIx-QuoteLike/summary
+msgid "Parse Perl string literals and string-literal-like things"
 msgstr ""
 
-#. tumbleweed/perl-Number-WithError/description
+#. tumbleweed/perl-PPIx-QuoteLike/description
 msgid ""
-"This class is a container class for numbers with a number of associated "
-"symmetric and asymmetric errors. It overloads practically all common "
-"arithmetic operations and trigonometric functions to propagate the errors. "
-"It can do proper scientific rounding (as explained in more detail below in "
-"the documentation of the 'significant_digit()' method).\n"
-"\n"
-"You can use Math::BigFloat objects as the internal representation of numbers "
-"in order to support arbitrary precision calculations.\n"
-"\n"
-"Errors are propagated using Gaussian error propagation.\n"
-"\n"
-"With a notable exception, the test suite covers way over ninety percent of "
-"the code. The remaining holes are mostly difficult-to-test corner cases and "
-"sanity tests. The comparison routines are the exception for which there will "
-"be more extensive tests in a future release."
+"This Perl class parses Perl string literals and things that are reasonably "
+"like string literals. Its real reason for being is to find interpolated "
+"variables for Perl::Critic policies and similar code."
+msgstr ""
+
+#. tumbleweed/perl-Package-Stash/summary
+#, fuzzy
+msgid "Routines for Manipulating Stashes"
+msgstr "Eszközök a PostScript fájlok manipulálására"
+
+#. tumbleweed/perl-Package-Stash-XS/summary
+#, fuzzy
+msgid "Faster and More Correct Implementation of the Package::Stash Api"
+msgstr "A GNU JavaMail (tm) a JavaMail API nyílt megvalósítása."
+
+#. tumbleweed/perl-Package-Stash-XS/description
+msgid ""
+"This is a backend for Package::Stash, which provides the functionality in a "
+"way that's less buggy and much faster. It will be used by default if it's "
+"installed, and should be preferred in all environments with a compiler."
 msgstr ""
 
 #. tumbleweed/perl-Path-Tiny/description
@@ -26820,6 +27836,15 @@ msgid ""
 "requires Perl 5.008001 or later."
 msgstr ""
 
+#. tumbleweed/perl-PathTools/summary
+#. tumbleweed/perl-PathTools/description
+msgid "Tools for working with directory and file names"
+msgstr ""
+
+#. tumbleweed/perl-Perl-Critic-Pulp/summary
+msgid "Some add-on perlcritic policies"
+msgstr ""
+
 #. tumbleweed/perl-Plack-Middleware-LogErrors/description
 msgid ""
 "'psgi.errors' defaults to 'STDERR' in most backends, which results in "
@@ -26837,10 +27862,25 @@ msgid ""
 "option indicating a filename, 'psgi.errors' is used)."
 msgstr ""
 
+#. tumbleweed/perl-Prima/summary
+#, fuzzy
+msgid "Perl graphic toolkit"
+msgstr "KDE4 - archívum alkalmazás"
+
 #. tumbleweed/perl-Proc-Fork/summary
 #, fuzzy
 msgid "Simple, Intuitive Interface to the Fork() System Call"
 msgstr "OS111 "
+
+#. tumbleweed/perl-Protocol-Redis/summary
+msgid "Redis protocol parser/encoder with asynchronous capabilities"
+msgstr ""
+
+#. tumbleweed/perl-Protocol-Redis/description
+msgid ""
+"Redis protocol parser/encoder with asynchronous capabilities and at http://"
+"redis.io/topics/pipelining support."
+msgstr ""
 
 #. tumbleweed/perl-Quantum-Superpositions/summary
 #, fuzzy
@@ -26936,7 +27976,7 @@ msgid "SDL bindings to Perl"
 msgstr ""
 
 #. tumbleweed/perl-Sereal/summary
-msgid "Fast, compact, powerful binary (de-)serialization"
+msgid "Binary (de-)serialization module for Perl"
 msgstr ""
 
 #. tumbleweed/perl-Sereal/description
@@ -26962,92 +28002,35 @@ msgid ""
 "Sereal/Sereal/wiki/Sereal-Comparison-Graphs."
 msgstr ""
 
-#. tumbleweed/perl-Sereal-Decoder/summary
-msgid "Fast, compact, powerful binary deserialization"
+#. tumbleweed/perl-Socket-MsgHdr/summary
+msgid "Sendmsg, Recvmsg and Ancillary Data Operations"
 msgstr ""
 
-#. tumbleweed/perl-Sereal-Decoder/description
+#. tumbleweed/perl-Socket-MsgHdr/description
 msgid ""
-"This library implements a deserializer for an efficient, compact-output, and "
-"feature-rich binary protocol called _Sereal_. Its sister module Sereal::"
-"Encoder implements an encoder for this format. The two are released "
-"separately to allow for independent and safer upgrading.\n"
+"Socket::MsgHdr provides advanced socket messaging operations via sendmsg and "
+"recvmsg. Like their C counterparts, these functions accept few parameters, "
+"instead stuffing a lot of information into a complex structure.\n"
 "\n"
-"The Sereal protocol versions that are compatible with this decoder "
-"implementation are currently protocol versions 1, 2, 3 and 4. As it stands, "
-"it will refuse to attempt to decode future versions of the protocol, but if "
-"necessary there is likely going to be an option to decode the parts of the "
-"input that are compatible with version 4 of the protocol. The protocol was "
-"designed to allow for this.\n"
-"\n"
-"The protocol specification and many other bits of documentation can be found "
-"in the github repository. Right now, the specification is at https://github."
-"com/Sereal/Sereal/blob/master/sereal_spec.pod, there is a discussion of the "
-"design objectives in https://github.com/Sereal/Sereal/blob/master/README."
-"pod, and the output of our benchmarks can be seen at https://github.com/"
-"Sereal/Sereal/wiki/Sereal-Comparison-Graphs."
+"This structure describes the message sent or received (buf), the peer on the "
+"other end of the socket (name), and ancillary or so-called control "
+"information (cmsghdr). This ancillary data may be used for file descriptor "
+"passing, IPv6 operations, and a host of implemenation-specific extensions."
 msgstr ""
 
-#. tumbleweed/perl-Sereal-Encoder/summary
-msgid "Fast, compact, powerful binary serialization"
-msgstr ""
-
-#. tumbleweed/perl-Sereal-Encoder/description
-msgid ""
-"This library implements an efficient, compact-output, and feature-rich "
-"serializer using a binary protocol called _Sereal_. Its sister module "
-"Sereal::Decoder implements a decoder for this format. The two are released "
-"separately to allow for independent and safer upgrading. If you care greatly "
-"about performance, consider reading the Sereal::Performance documentation "
-"after finishing this document.\n"
-"\n"
-"The Sereal protocol version emitted by this encoder implementation is "
-"currently protocol version 4 by default.\n"
-"\n"
-"The protocol specification and many other bits of documentation can be found "
-"in the github repository. Right now, the specification is at https://github."
-"com/Sereal/Sereal/blob/master/sereal_spec.pod, there is a discussion of the "
-"design objectives in https://github.com/Sereal/Sereal/blob/master/README."
-"pod, and the output of our benchmarks can be seen at https://github.com/"
-"Sereal/Sereal/wiki/Sereal-Comparison-Graphs. For more information on getting "
-"the best performance out of Sereal, have a look at the \"PERFORMANCE\" "
-"section below."
-msgstr ""
-
-#. tumbleweed/perl-Spooky-Patterns-XS/summary
-#. tumbleweed/perl-Spooky-Patterns-XS/description
+#. tumbleweed/perl-Term-ReadLine-Gnu/description
 #, fuzzy
-msgid "Spooky::Patterns::XS Perl module"
-msgstr "Gtk2 Perl modul"
-
-#. tumbleweed/perl-Statistics-CaseResampling/summary
 msgid ""
-"Efficient resampling and calculation of medians with confidence intervals"
-msgstr ""
-
-#. tumbleweed/perl-Statistics-CaseResampling/description
-msgid ""
-"The purpose of this (XS) module is to calculate the median (or in principle "
-"also other statistics) with confidence intervals on a sample. To do that, it "
-"uses a technique called bootstrapping. In a nutshell, it resamples the "
-"sample a lot of times and for each resample, it calculates the median. From "
-"the distribution of medians, it then calculates the confidence limits.\n"
+"This is an implementation of Term::ReadLine using the GNU Readline/History "
+"Library.\n"
 "\n"
-"In order to implement the confidence limit calculation, various other "
-"functions had to be implemented efficiently (both algorithmically efficient "
-"and done in C). These functions may be useful in their own right and are "
-"thus exposed to Perl. Most notably, this exposes a median (and general "
-"selection) algorithm that works in linear time as opposed to the trivial "
-"implementation that requires 'O(n*log(n))'."
-msgstr ""
-
-#. tumbleweed/perl-Sub-Retry/summary
-msgid "Retry $N Times"
-msgstr ""
-
-#. tumbleweed/perl-Sub-Retry/description
-msgid "Sub::Retry provides the function named 'retry'."
-msgstr ""
+"For basic functions object oriented interface is provided. These are "
+"described in the section \"Standard Methods\" and \"Term::ReadLine::Gnu "
+"Functions\".\n"
+"\n"
+"This package also has the interface with the almost all functions and "
+"variables which are documented in the GNU Readline/History Library Manual."
+msgstr "OS103 "
 
 #. tumbleweed/perl-Test-Base/summary
 #, fuzzy
@@ -27077,165 +28060,45 @@ msgid ""
 "Test::Deep has *_a lot_* of exports. See EXPORTS below."
 msgstr ""
 
-#. tumbleweed/perl-Test-Directory/summary
-#, fuzzy
-msgid "Perl extension for maintaining test directories"
-msgstr "OS103 "
-
-#. tumbleweed/perl-Test-Directory/description
-msgid ""
-"Sometimes, testing code involves making sure that files are created and "
-"deleted as expected. This module simplifies maintaining test directories by "
-"tracking their status as they are modified or tested with this API, making "
-"it simple to test both individual files, as well as to verify that there are "
-"no missing or unknown files.\n"
-"\n"
-"Test::Directory implements an object-oriented interface for managing test "
-"directories. It tracks which files it knows about (by creating or testing "
-"them via its API), and can report if any files were missing or unexpectedly "
-"added.\n"
-"\n"
-"There are two flavors of methods for interacting with the directory. "
-"_Utility_ methods simply return a value (i.e. the number of files/errors) "
-"with no output, while the _Test_ functions use Test::Builder to produce the "
-"approriate test results and diagnostics for the test harness.\n"
-"\n"
-"The directory will be automatically cleaned up when the object goes out of "
-"scope; see the _clean_ method below for details."
-msgstr ""
-
-#. tumbleweed/perl-Test-File/summary
-msgid "Test File Attributes"
-msgstr ""
-
-#. tumbleweed/perl-Test-File/description
-msgid ""
-"This modules provides a collection of test utilities for file attributes.\n"
-"\n"
-"Some file attributes depend on the owner of the process testing the file in "
-"the same way the file test operators do. For instance, root (or super-user "
-"or Administrator) may always be able to read files no matter the "
-"permissions.\n"
-"\n"
-"Some attributes don't make sense outside of Unix, either, so some tests "
-"automatically skip if they think they won't work on the platform. If you "
-"have a way to make these functions work on Windows, for instance, please "
-"send me a patch. :) IF you want to pretend to be Windows on a non-Windows "
-"machine (for instance, to test 'skip()'), you can set the "
-"'PRETEND_TO_BE_WINDOWS' environment variable.\n"
-"\n"
-"The optional NAME parameter for every function allows you to specify a name "
-"for the test. If not supplied, a reasonable default will be generated."
-msgstr ""
-
-#. tumbleweed/perl-Test-Harness/summary
-msgid "Run Perl standard test scripts with statistics"
-msgstr ""
-
-#. tumbleweed/perl-Test-Harness/description
-msgid ""
-"Although, for historical reasons, the Test::Harness distribution takes its "
-"name from this module it now exists only to provide TAP::Harness with an "
-"interface that is somewhat backwards compatible with Test::Harness 2.xx. If "
-"you're writing new code consider using TAP::Harness directly instead.\n"
-"\n"
-"Emulation is provided for 'runtests' and 'execute_tests' but the pluggable "
-"'Straps' interface that previous versions of Test::Harness supported is not "
-"reproduced here. Straps is now available as a stand alone module: Test::"
-"Harness::Straps.\n"
-"\n"
-"See TAP::Parser, TAP::Harness for the main documentation for this "
-"distribution."
-msgstr ""
-
-#. tumbleweed/perl-Test-LectroTest/summary
-msgid "Easy, automatic, specification-based tests"
-msgstr ""
-
-#. tumbleweed/perl-Test-LectroTest/description
-msgid ""
-"This module provides a simple (yet full featured) interface to LectroTest, "
-"an automated, specification-based testing system for Perl. To use it, "
-"declare properties that specify the expected behavior of your software. "
-"LectroTest then checks your software to see whether those properties hold.\n"
-"\n"
-"Declare properties using the 'Property' function, which takes a block of "
-"code and promotes it to a Test::LectroTest::Property:\n"
-"\n"
-"    Property {                  MyModule::my_function( $x, $y ) >= 0;     }, "
-"name => \"my_function output is non-negative\" ;\n"
-"\n"
-"The first part of the block must contain a generator-binding declaration. "
-"For example:\n"
-"\n"
-"        \n"
-"\n"
-"(Note the special bracketing, which is required.) This particular binding "
-"says, \"For all integers _x_ and _y_.\" (By the way, you aren't limited to "
-"integers. LectroTest also gives you booleans, strings, lists, hashes, and "
-"more, and it lets you define your own generator types. See Test::LectroTest::"
-"Generator for more.)\n"
-"\n"
-"The second part of the block is simply a snippet of code that makes use of "
-"the variables we bound earlier to test whether a property holds for the "
-"piece of software we are testing:\n"
-"\n"
-"        MyModule::my_function( $x, $y ) >= 0;\n"
-"\n"
-"In this case, it asserts that 'MyModule::my_function($x,$y)' returns a non-"
-"negative result. (Yes, '$x' and '$y' refer to the same _x_ and _y_ that we "
-"bound to the generators earlier. LectroTest automagically loads these "
-"lexically bound Perl variables with values behind the scenes.) \n"
-"*Note:* If you want to use testing assertions like 'ok' from Test::Simple or "
-"'is', 'like', or 'cmp_ok' from Test::More (and the related family of Test::"
-"Builder-based testing modules), see Test::LectroTest::Compat, which lets you "
-"mix and match LectroTest with these modules.\n"
-"\n"
-"Finally, we give the whole Property a name, in this case \"my_function "
-"output is non-negative.\" It's a good idea to use a meaningful name because "
-"LectroTest refers to properties by name in its output.\n"
-"\n"
-"Let's take a look at the finished property specification:\n"
-"\n"
-"    Property {                  MyModule::my_function( $x, $y ) >= 0;     }, "
-"name => \"my_function output is non-negative\" ;\n"
-"\n"
-"It says, \"For all integers _x_ and _y_, we assert that my_function's output "
-"is non-negative.\"\n"
-"\n"
-"To check whether this property holds, simply put it in a Perl program that "
-"uses the Test::LectroTest module. (See the SYNOPSIS for an example.) When "
-"you run the program, LectroTest will load the property (and any others in "
-"the file) and check it by running random trials against the software you're "
-"testing. \n"
-"*Note:* If you want to place LectroTest property checks into a test plan "
-"managed by Test::Builder-based modules such as Test::Simple or Test::More, "
-"see Test::LectroTest::Compat.\n"
-"\n"
-"If LectroTest is able to \"break\" your software during the property check, "
-"it will emit a counterexample to your property's assertions and stop. You "
-"can plug the counterexample back into your software to debug the problem. "
-"(You might also want to add the counterexample to a list of regression "
-"tests.)\n"
-"\n"
-"A successful LectroTest looks like this:\n"
-"\n"
-"  1..1   ok 1 - 'my_function output is non-negative' (1000 attempts)\n"
-"\n"
-"On the other hand, if you're not so lucky:\n"
-"\n"
-"  1..1   not ok 1 - 'my_function output is non-negative' falsified \\       "
-"in 324 attempts"
+#. tumbleweed/perl-Test-Inter/summary
+msgid "Framework for more readable interactive test scripts"
 msgstr ""
 
 #. tumbleweed/perl-Test-Manifest/summary
 msgid "Interact with a T/Test_manifest File"
 msgstr ""
 
-#. tumbleweed/perl-Test-More-UTF8/summary
-#. tumbleweed/perl-Test-More-UTF8/description
-msgid "Enhancing Test::More for UTF8-based projects"
+#. tumbleweed/perl-Test-Perl-Critic/summary
+msgid "Use Perl::Critic in test programs"
 msgstr ""
+
+#. tumbleweed/perl-Test-Perl-Critic/description
+msgid ""
+"Test::Perl::Critic wraps the Perl::Critic engine in a convenient subroutine "
+"suitable for test programs written using the Test::More framework. This "
+"makes it easy to integrate coding-standards enforcement into the build "
+"process. For ultimate convenience (at the expense of some flexibility), see "
+"the criticism pragma.\n"
+"\n"
+"If you have an large existing code base, you might prefer to use Test::Perl::"
+"Critic::Progressive, which allows you to clean your code incrementally "
+"instead of all at once..\n"
+"\n"
+"If you'd like to try Perl::Critic without installing anything, there is a "
+"web-service available at http://perlcritic.com. The web-service does not "
+"support all the configuration features that are available in the native "
+"Perl::Critic API, but it should give you a good idea of what Perl::Critic "
+"can do."
+msgstr ""
+
+#. tumbleweed/perl-Test-PerlTidy/summary
+msgid "Check that all your files are tidy"
+msgstr ""
+
+#. tumbleweed/perl-Test-Spelling/summary
+#, fuzzy
+msgid "Check for spelling errors in POD files"
+msgstr "POD hibák keresése fájlokban"
 
 #. tumbleweed/perl-Test-Warn/description
 msgid ""
@@ -27249,67 +28112,8 @@ msgid ""
 "time to go take a look."
 msgstr ""
 
-#. tumbleweed/perl-Test-WriteVariants/summary
-msgid "Dynamic generation of tests in nested combinations of contexts"
-msgstr ""
-
-#. tumbleweed/perl-Test-WriteVariants/description
-msgid ""
-"Test::WriteVariants is a utility to create variants of a common test.\n"
-"\n"
-"Given the situation - like in DBI where some tests are the same for DBI::"
-"SQL::Nano and it's drop-in replacement SQL::Statement. Or a distribution duo "
-"having a Pure-Perl and an XS variant - and the same test shall be used to "
-"ensure XS and PP version are really drop-in replacements for each other."
-msgstr ""
-
 #. tumbleweed/perl-Test-YAML/description
 msgid "Test::YAML is a subclass of Test::Base with YAML specific support."
-msgstr ""
-
-#. tumbleweed/perl-Test-utf8/summary
-msgid "Handy utf8 tests"
-msgstr ""
-
-#. tumbleweed/perl-Test-utf8/description
-msgid ""
-"This module is a collection of tests useful for dealing with utf8 strings in "
-"Perl.\n"
-"\n"
-"This module has two types of tests: The validity tests check if a string is "
-"valid and not corrupt, whereas the characteristics tests will check that "
-"string has a given set of characteristics."
-msgstr ""
-
-#. tumbleweed/perl-Text-RecordParser/summary
-msgid "Read Record-Oriented Files"
-msgstr ""
-
-#. tumbleweed/perl-Text-RecordParser/description
-msgid ""
-"This module is for reading record-oriented data in a delimited text file. "
-"The most common example have records separated by newlines and fields "
-"separated by commas or tabs, but this module aims to provide a consistent "
-"interface for handling sequential records in a file however they may be "
-"delimited. Typically this data lists the fields in the first line of the "
-"file, in which case you should call 'bind_header' to bind the field name (or "
-"not, and it will be called implicitly). If the first line contains data, you "
-"can still bind your own field names via 'bind_fields'. Either way, you can "
-"then use many methods to get at the data as arrays or hashes."
-msgstr ""
-
-#. tumbleweed/perl-WWW-Form-UrlEncoded/summary
-msgid "Parser and Builder for Application/X-Www-Form-Urlencoded"
-msgstr ""
-
-#. tumbleweed/perl-WWW-Form-UrlEncoded/description
-msgid ""
-"WWW::Form::UrlEncoded provides application/x-www-form-urlencoded parser and "
-"builder. This module aims to have compatibility with other CPAN modules like "
-"HTTP::Body's urlencoded parser.\n"
-"\n"
-"This module try to use WWW::Form::UrlEncoded::XS by default and fail to it, "
-"use WWW::Form::UrlEncoded::PP instead"
 msgstr ""
 
 #. tumbleweed/perl-WWW-Mechanize/description
@@ -27333,17 +28137,36 @@ msgid ""
 "content and use that as input to a test call."
 msgstr ""
 
-#. tumbleweed/perl-XML-Parser-Lite/description
+#. tumbleweed/perl-WebService-MusicBrainz/summary
+msgid "Web service API to MusicBrainz database"
+msgstr ""
+
+#. tumbleweed/perl-WebService-MusicBrainz/description
+msgid "An API to search the musicbrainz.org database."
+msgstr ""
+
+#. tumbleweed/perl-X11-Protocol-Other/description
 msgid ""
-"This module implements an XML parser with a interface similar to XML::"
-"Parser. Though not all callbacks are supported, you should be able to use it "
-"in the same way you use XML::Parser. Due to using experimental regexp "
-"features it'll work only on Perl 5.6 and above and may behave differently on "
-"different platforms.\n"
-"\n"
-"Note that you cannot use regular expressions or split in callbacks. This is "
-"due to a limitation of perl's regular expression implementation (which is "
-"not re-entrant)."
+"Miscellaneous extras and helpers for X11::Protocol: \n"
+"- X11::Protocol::Other - misc helpers\n"
+"- X11::Protocol::ChooseWindow - user click on window\n"
+"- X11::Protocol::GrabServer - oop block scope server grab\n"
+"- X11::Protocol::WM - window manager things\n"
+"- X11::Protocol::XSetRoot - set root window background\n"
+"- X11::AtomConstants - atoms\n"
+"- X11::CursorFont - cursor names\n"
+"- Encode::X11 - compound text encode/decode\n"
+"- X11::Protocol::Ext::Composite - obscured window content\n"
+"- X11::Protocol::Ext::DAMAGE - window/pixmap content changes\n"
+"- X11::Protocol::Ext::DOUBLE_BUFFER - off-screen swapped drawing\n"
+"- X11::Protocol::Ext::MIT_SCREEN_SAVER - external screen saver\n"
+"- X11::Protocol::Ext::MIT_SHM - images through shared memory\n"
+"- X11::Protocol::Ext::MIT_SUNDRY_NONSTANDARD - old bug mode\n"
+"- X11::Protocol::Ext::TOG_CUP - colormap helpers\n"
+"- X11::Protocol::Ext::XFree86_DGA - direct video RAM access\n"
+"- X11::Protocol::Ext::XFIXES - various regions, cursors, selection events\n"
+"- X11::Protocol::Ext::XINERAMA.pm - multiple monitors as one big screen\n"
+"- X11::Protocol::Ext::X_Resource - server usage statistics"
 msgstr ""
 
 #. tumbleweed/perl-XML-SAX/summary
@@ -27369,6 +28192,10 @@ msgid ""
 "A more friendly URL as well as a PODification of the spec are in the works."
 msgstr ""
 
+#. tumbleweed/perl-YAML-Syck/summary
+msgid "Perl YAML loader and dumper"
+msgstr ""
+
 #. tumbleweed/perl-autobox/description
 msgid ""
 "The autobox pragma allows methods to be called on integers, floats, strings, "
@@ -27385,64 +28212,17 @@ msgid ""
 "value - or SCALAR if the value is a non-reference."
 msgstr ""
 
-#. tumbleweed/perl-forks/summary
-msgid "Drop-in replacement for Perl threads using fork()"
-msgstr ""
-
-#. tumbleweed/perl-forks/description
-msgid ""
-"The \"forks\" pragma allows a developer to use threads without having to "
-"have a threaded perl, or to even run 5.8.0 or higher.\n"
-"\n"
-"Refer to the the threads manpage module for ithreads API documentation. "
-"Also, use\n"
-"\n"
-"    perl -Mforks -e 'print $threads::VERSION'\n"
-"\n"
-"to see what version of the threads manpage you should refer to regarding "
-"supported API features.\n"
-"\n"
-"There were a number of goals that I am trying to reach with this "
-"implementation.\n"
-"\n"
-"    Using this module *only* makes sense if you run on a system that has "
-"an     implementation of the 'fork' function by the Operating System. "
-"Windows     is currently the only known system on which Perl runs which does "
-"*not*     have an implementation of 'fork'. Therefore, it *doesn't* make "
-"any     sense to use this module on a Windows system. And therefore, a check "
-"is     made during installation barring you from installing on a Windows     "
-"system."
-msgstr ""
-
-#. tumbleweed/perl-mousex-getopt/summary
-#, fuzzy
-msgid "A Mouse role for processing command line options"
-msgstr "C függvénykönyvtár a parancssori paraméterek kezelésére"
-
-#. tumbleweed/perl-mousex-getopt/description
-msgid ""
-"A Mouse role which provides an alternate constructor for creating objects "
-"using parameters passed in from the command line."
-msgstr ""
-
-#. tumbleweed/perl-prefork/summary
-msgid "Optimized module loading for forking or non-forking processes"
-msgstr ""
-
-#. tumbleweed/perl-prefork/description
-msgid ""
-"The 'prefork' pragma is intended to allow module writers to optimise module "
-"loading for *both* scenarios with as little additional code as possible.\n"
-"\n"
-"prefork.pm is intended to serve as a central and optional marshalling point "
-"for state detection (are we running in compile-time or run-time mode) and to "
-"act as a relatively light-weight module loader."
-msgstr ""
-
 #. tumbleweed/perl-qpid/description
 #, fuzzy
 msgid "Perl bindings needed for the Qpid messaging framework."
 msgstr "gtk-vnc programkönyvtár - Python kötések"
+
+#. tumbleweed/perl-strictures/summary
+msgid "Turn on strict and make most warnings fatal"
+msgstr ""
+
+#~ msgid "Calculate digests while reading or writing"
+#~ msgstr "Kivonat készítése írás vagy olvasás közben"
 
 #, fuzzy
 #~ msgid "Stringprep Profile for Internationalized Domain Names (S<RFC?3491>)"
@@ -27504,18 +28284,10 @@ msgstr "gtk-vnc programkönyvtár - Python kötések"
 #~ msgstr "Cryptix ASN1 megvalósítás"
 
 #, fuzzy
-#~ msgid "A module for reading .ini-style configuration files."
-#~ msgstr "Modul a .ini-stílusú beállítási fájlok olvasásához"
-
-#, fuzzy
 #~ msgid ""
 #~ "This is GDGraph, a package to generate charts, using Lincoln Stein's GD."
 #~ "pm. See the documentation for some history and more information."
 #~ msgstr "OS103 "
-
-#, fuzzy
-#~ msgid "Perl interface to GnuPG"
-#~ msgstr "OS103 Perl interfész a DNS névfeloldóhoz"
 
 #, fuzzy
 #~ msgid ""
