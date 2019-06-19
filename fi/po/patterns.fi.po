@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: patterns.fi\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2018-04-25 12:33+0000\n"
-"PO-Revision-Date: 2019-05-14 23:54+0000\n"
+"PO-Revision-Date: 2019-06-19 15:49+0000\n"
 "Last-Translator: Tommi Nieminen <software@legisign.org>\n"
 "Language-Team: Finnish <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-sle-15/fi/>\n"
@@ -34,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.3\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
 msgid "Base Development"
@@ -434,11 +434,11 @@ msgstr ""
 
 #. SLE/patterns-rpm-macros/summary
 msgid "RPM macros for building of patterns modules"
-msgstr ""
+msgstr "RPM-makrot kuviomoduulien koostamiseen"
 
 #. SLE/patterns-rpm-macros/description
 msgid "This package contains SUSE RPM macros to aid creating patterns."
-msgstr ""
+msgstr "Tämä paketti sisältää SUSEn RPM-makrot kuvioiden luomiseksi."
 
 #. SLE/patterns-server/patterns-server-dhcp_dns_server/summary
 #. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
@@ -471,7 +471,7 @@ msgstr "Palvelintoiminnot"
 
 #. SLE/patterns-server/patterns-server-dhcp_dns_server-32bit/description
 msgid "The 32bit pattern complementing dhcp_dns_server."
-msgstr ""
+msgstr "dhcp_dns_serveriä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-server/patterns-server-directory_server/summary
 #. SLE/patterns-server/patterns-server-directory_server-32bit/summary
@@ -483,10 +483,12 @@ msgid ""
 "Software to set up a directory server with OpenLDAP. The Lightweight "
 "Directory Access Protocol (LDAP) is used to access online directory services."
 msgstr ""
+"Ohjelma OpenLDAPia käyttävän hakemistopalvelimen asettamiseen. LDAPilla ("
+"Lightweight Directory Access Protocol) käytetään verkon hakemistopalveluja."
 
 #. SLE/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
-msgstr ""
+msgstr "directory_serveriä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
@@ -562,7 +564,7 @@ msgstr ""
 
 #. SLE/patterns-server/patterns-server-file_server-32bit/description
 msgid "The 32bit pattern complementing file_server."
-msgstr ""
+msgstr "file_serveriä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-server/patterns-server-gateway_server/summary
 #. SLE/patterns-server/patterns-server-gateway_server-32bit/summary
@@ -579,7 +581,7 @@ msgstr ""
 
 #. SLE/patterns-server/patterns-server-gateway_server-32bit/description
 msgid "The 32bit pattern complementing gateway_server."
-msgstr ""
+msgstr "gateway_serveriä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-server/patterns-server-kvm_server/summary
 msgid "KVM Host Server"
@@ -595,17 +597,17 @@ msgstr ""
 
 #. SLE/patterns-server/patterns-server-kvm_tools/summary
 msgid "KVM Virtualization Host and tools"
-msgstr ""
+msgstr "KVM-virtualisointipalvelin ja -työkalut"
 
 #. SLE/patterns-server/patterns-server-kvm_tools/description
-#, fuzzy
 msgid ""
 "This will provide all minimal system to get a running KVM Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
 "machine."
 msgstr ""
-"Virtuaalikonepalvelin, joka mahdollistaa useiden virtuaalikoneiden "
-"asentamisen, hallinnan ja valvonnan yhdelle fyysiselle tietokoneelle."
+"Tämä tarjoaa KVM-hypervisiirin toteuttavan vähimmäisjärjestelmän, jolla voi "
+"asettaa, hallita ja valvoa useita virtuaalikoneita yksittäisellä fyysisellä "
+"koneella."
 
 #. SLE/patterns-server/patterns-server-lamp_server/summary
 #. SLE/patterns-server/patterns-server-lamp_server-32bit/summary
@@ -626,7 +628,7 @@ msgstr ""
 
 #. SLE/patterns-server/patterns-server-lamp_server-32bit/description
 msgid "The 32bit pattern complementing lamp_server."
-msgstr ""
+msgstr "lamp_serveriä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-server/patterns-server-mail_server/summary
 #. SLE/patterns-server/patterns-server-mail_server-32bit/summary
@@ -639,10 +641,13 @@ msgid ""
 "mailing, and news lists, including a virus scanner to scan messages at the "
 "server level."
 msgstr ""
+"Ohjelma sähköposti- ja viestipalvelujen asettamiseksi sähköpostin ja "
+"keskusteluryhmien käsittelemiseksi. Sisältää viestien palvelintason  "
+"virustarkistuksen."
 
 #. SLE/patterns-server/patterns-server-mail_server-32bit/description
 msgid "The 32bit pattern complementing mail_server."
-msgstr ""
+msgstr "mail_serveriä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-server/patterns-server-printing/summary
 #. SLE/patterns-server/patterns-server-printing-32bit/summary
@@ -655,10 +660,13 @@ msgid ""
 "needed packages for printing to a locally connected printer, printing using "
 "a remote print server and for setting up a print server."
 msgstr ""
+"Tämä kuvio tarjoaa tulostuksen vaatimat paketit. Se tarjoaa kaikki paketit, "
+"joita tarvitaan paikallisesti kytkettyyn tulostimeen tai "
+"etätulostuspalveluun tulostamiseksi tai tulostuspalvelimen asettamiseksi."
 
 #. SLE/patterns-server/patterns-server-printing-32bit/description
 msgid "The 32bit pattern complementing printing."
-msgstr ""
+msgstr "printingiä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/summary
 msgid "Web-Based Enterprise Management"
@@ -927,17 +935,17 @@ msgstr "Isäntäpalvelin Xen-virtuaalikoneille"
 
 #. SLE/patterns-server/patterns-server-xen_tools/summary
 msgid "XEN Virtualization Host and tools"
-msgstr ""
+msgstr "XEN-virtualisointipalvelin ja -työkalut"
 
 #. SLE/patterns-server/patterns-server-xen_tools/description
-#, fuzzy
 msgid ""
 "This will provide all minimal system to get a running XEN Hypervisor and be "
 "able to configure, manage, and monitor virtual machines on a single physical "
 "machine."
 msgstr ""
-"Virtuaalikonepalvelin, joka mahdollistaa useiden virtuaalikoneiden "
-"asentamisen, hallinnan ja valvonnan yhdelle fyysiselle tietokoneelle."
+"Tämä tarjoaa XEN-hypervisiirin ajamiseen tarvittavan vähimmäisjärjestelmän, "
+"jolla voi määrittää, hallita ja valvoa useita virtuaalikoneita yksittäisellä "
+"fyysisellä koneella."
 
 #. SLE/patterns-sap/patterns-sap-b1/summary
 #, fuzzy
