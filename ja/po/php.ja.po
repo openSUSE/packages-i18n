@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2019-05-06 14:28+0000\n"
-"PO-Revision-Date: 2018-04-12 12:04+0000\n"
+"PO-Revision-Date: 2019-07-29 08:41+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "php-master/ja/>\n"
@@ -12,14 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #. leap/php7/apache2-mod_php7/summary
 #. tumbleweed/php7/apache2-mod_php7/summary
-#, fuzzy
-#| msgid "PHP7 Module for Apache 2.0"
 msgid "PHP7 module for the Apache 2.x webserver"
-msgstr "Apache 2.0 向け PHP7 モジュール"
+msgstr "Apache 2.x Web サーバ向け PHP7 モジュール"
 
 #. leap/php7/apache2-mod_php7/description
 #. tumbleweed/php7/apache2-mod_php7/description
@@ -44,21 +42,20 @@ msgstr ""
 
 #. leap/php-composer/summary
 #. tumbleweed/php-composer/summary
-#, fuzzy
 msgid "Dependency Management for PHP"
-msgstr "GNOME 向け電源管理"
+msgstr "PHP 向け依存関係管理"
 
 #. leap/php-composer/description
 #. tumbleweed/php-composer/description
 msgid ""
 "Composer is a dependency manager tracking local dependencies of your "
 "projects and libraries."
-msgstr ""
+msgstr "Composer はお使いのプロジェクトやライブラリに対して、ローカルの依存関係を追跡することのできる依存関係マネージャです。"
 
 #. leap/php-cs-fixer/summary
 #. tumbleweed/php-cs-fixer/summary
 msgid "PHP Coding Standards Fixer"
-msgstr ""
+msgstr "PHP コーディング標準修正器"
 
 #. leap/php-cs-fixer/description
 #. tumbleweed/php-cs-fixer/description
@@ -71,22 +68,20 @@ msgid ""
 "It can modernize code (like converting the pow function to the ** operator "
 "on PHP 5.6) and (micro) optimize it."
 msgstr ""
+"PHP コーディング標準修正器 (PHP CS Fixer) ツールは、標準に従ってコードを修正するためのツールです。 PSR-1 や PSR-2 など、"
+" PHP コーディング標準として規定されているものに従って修正を行なうことができます。類似のコミュニティプロジェクトとしては、 Symfony "
+"などがあります。設定を行なうことで、独自のスタイルを定義することもできます。\n"
+"\n"
+"このツールは、コードの最新化 (pow 関数を PHP 5.6 で提供されるようになった ** 演算子に変換するなど) や (部分的な) "
+"最適化にも対応しています。"
 
 #. leap/php7/summary
 #. tumbleweed/php7/summary
 msgid "Interpreter for the PHP scripting language version 7"
-msgstr ""
+msgstr "PHP スクリプト言語バージョン 7 向けインタプリタ"
 
 #. leap/php7/description
 #. tumbleweed/php7/description
-#, fuzzy
-#| msgid ""
-#| "This package contains the PHP5 core files, including PHP binary (CLI) and "
-#| "PHP configuration (php.ini). This package must be installed in order to "
-#| "use PHP. Additionally, extension modules and server modules (e.g. for "
-#| "Apache) may be installed.\n"
-#| "\n"
-#| "Additional documentation is available in package php-doc."
 msgid ""
 "PHP is a server-side HTML embedded scripting language designed primarily for "
 "web development but also used as a general-purpose programming language.\n"
@@ -98,13 +93,12 @@ msgid ""
 "\n"
 "Additional documentation is available in package php-doc."
 msgstr ""
-"このパッケージには PHP5 の中枢を為すファイルと PHP のバイナリ (CLI) 、および "
-"PHP 設定ファイル (PHP.INI) が含まれています。このパッケージは PHP を使用する"
-"にあたって必ず必要となるパッケージです。追加で拡張モジュールやサーバモジュー"
-"ル (たとえば Apache 向けのものなど) をインストールする必要があるかもしれませ"
-"ん。\n"
+"PHP はサーバ内で動作する HTML 組み込み型スクリプト言語で、一般的には Web "
+"開発用に作られているものですが、汎用的なプログラミング言語としても使用することができます。\n"
 "\n"
-"追加のドキュメンテーションは、 php-doc パッケージにあります。"
+"このパッケージには Zend PHP と呼ばれる、 PHP の標準実装が含まれています。このほか、 PHP のコマンドラインバイナリや設定ファイル "
+"(php.ini) も含まれています。このパッケージは、 PHP を使用する際には必ずインストールしなければなりません。これに加えて、"
+"拡張モジュールやサーバモジュール (Apache など) もインストールする必要があるかもしれません。"
 
 #. leap/php7-APCu/summary
 #. tumbleweed/php7-APCu/summary
@@ -118,11 +112,13 @@ msgid ""
 "the deployment of Zend Optimizer+ as the primary solution to opcode caching "
 "in future versions of PHP."
 msgstr ""
+"APCu はユーザ側キャッシュを意味しています。 APC は Zend Optimizer+ を配置するための準備としてオペコードキャッシュを削除し、"
+"将来バージョンの PHP でのオペコードキャッシュに対する最適なソリューションとなっています。"
 
 #. leap/php7/php7-bcmath/summary
 #. tumbleweed/php7/php7-bcmath/summary
 msgid "\"Binary Calculator\" extension for PHP"
-msgstr ""
+msgstr "PHP 向け \"バイナリ計算\" 拡張"
 
 #. leap/php7/php7-bcmath/description
 #. tumbleweed/php7/php7-bcmath/description
@@ -134,7 +130,7 @@ msgstr "文字列で表記可能な任意の桁数／精度に対応した、 �
 #. leap/php7/php7-bz2/summary
 #. tumbleweed/php7/php7-bz2/summary
 msgid "bzip2 codec support for PHP"
-msgstr ""
+msgstr "PHP 向け bzip2 コーデックサポート"
 
 #. leap/php7/php7-bz2/description
 #. tumbleweed/php7/php7-bz2/description
@@ -148,9 +144,8 @@ msgstr ""
 #. tumbleweed/php7/php7-calendar/summary
 #. tumbleweed/php7-phalcon/summary
 #. tumbleweed/php7/php7-xsl/summary
-#, fuzzy
 msgid "PHP7 Extension Module"
-msgstr "PHP5 拡張モジュール"
+msgstr "PHP7 拡張モジュール"
 
 #. leap/php7/php7-calendar/description
 #. tumbleweed/php7/php7-calendar/description
@@ -160,7 +155,7 @@ msgstr "異なるカレンダフォーマット間で変換することのでき
 #. leap/php7/php7-ctype/summary
 #. tumbleweed/php7/php7-ctype/summary
 msgid "Character class extension for PHP"
-msgstr ""
+msgstr "PHP 向け文字クラス拡張"
 
 #. leap/php7/php7-ctype/description
 #. tumbleweed/php7/php7-ctype/description
@@ -172,9 +167,8 @@ msgstr ""
 
 #. leap/php7/php7-curl/summary
 #. tumbleweed/php7/php7-curl/summary
-#, fuzzy
 msgid "libcurl integration for PHP"
-msgstr "DBus 向け Glib 統合"
+msgstr "PHP 向け libcurl 統合"
 
 #. leap/php7/php7-curl/description
 #. tumbleweed/php7/php7-curl/description
@@ -182,12 +176,12 @@ msgid ""
 "PHP interface to libcurl that allows you to connect to and communicate with "
 "servers of many different types, using protocols of many different types."
 msgstr ""
+"さまざまな種類のサーバに対して接続を行ない、さまざまな種類のプロトコルで通信を行なうことのできる、 libcurl 向けの PHP インターフェイスです。"
 
 #. leap/php7/php7-dba/summary
 #. tumbleweed/php7/php7-dba/summary
-#, fuzzy
 msgid "Database abstraction layer for PHP"
-msgstr "C 言語向けデータベース独立抽象インターフェイス"
+msgstr "PHP 向けデータベース抽象レイヤ"
 
 #. leap/php7/php7-dba/description
 #. tumbleweed/php7/php7-dba/description
@@ -206,7 +200,7 @@ msgstr ""
 #. leap/php7/php7-devel/summary
 #. tumbleweed/php7/php7-devel/summary
 msgid "PHP7 development files for C/C++ extensions"
-msgstr ""
+msgstr "C/C++ 拡張向け PHP7 開発用ファイル"
 
 #. leap/php7/php7-devel/description
 #. tumbleweed/php7/php7-devel/description
@@ -216,34 +210,28 @@ msgid ""
 "\n"
 "This package contains the C headers to build PHP extensions."
 msgstr ""
+"PHP はサーバ内で動作する HTML 組み込み型スクリプト言語で、一般的には Web "
+"開発用に作られているものですが、汎用的なプログラミング言語としても使用することができます。\n"
+"\n"
+"このパッケージには、 PHP 拡張を構築するのに必要な C 言語ヘッダが含まれています。"
 
 #. leap/php7/php7-dom/summary
 #. tumbleweed/php7/php7-dom/summary
 msgid "Document Object Model extension for PHP"
-msgstr ""
+msgstr "PHP 向け Document Object Model 拡張"
 
 #. leap/php7/php7-dom/description
 #. tumbleweed/php7/php7-dom/description
-#, fuzzy
-#| msgid "This module adds DOM support."
 msgid "This module adds Document Object Model (DOM) support."
-msgstr "このモジュールは、 DOM 対応を追加します。"
+msgstr "このモジュールは、 Document Object Model (DOM) 対応を追加します。"
 
 #. leap/php7/php7-embed/summary
 #. tumbleweed/php7/php7-embed/summary
-#, fuzzy
 msgid "Embedded SAPI Library"
-msgstr "MIME ライブラリ"
+msgstr "組み込み SAPI ライブラリ"
 
 #. leap/php7/php7-embed/description
 #. tumbleweed/php7/php7-embed/description
-#, fuzzy
-#| msgid ""
-#| "PHP is a server-side, cross-platform, HTML embedded scripting language. "
-#| "If you are completely new to PHP and want to get some idea of how it "
-#| "works, have a look at the Introductory Tutorial.  Once you get beyond "
-#| "that have a look at the example archive sites and some of the other "
-#| "resources available in the Links section. PHP5 is the latest version."
 msgid ""
 "PHP is a server-side, cross-platform HTML embedded scripting language. If "
 "you are completely new to PHP and want to get some idea of how it works, "
@@ -251,16 +239,14 @@ msgid ""
 "look at the example archive sites and some of the other resources available "
 "in the links section."
 msgstr ""
-"PHP はサーバサイドで動作し、複数のプラットフォームに対応した HTML に内蔵する "
-"タイプのスクリプト言語です。 PHP を全くはじめて使う場合で、どのように動作する"
-"のかを ご覧になりたい場合は、紹介チュートリアルをご覧ください。 その後リンク"
-"集からサンプルのアーカイブサイトや その他の資源にアクセスすることもできま"
-"す。 PHP5 は最新のバージョンです。"
+"PHP はサーバサイドで動作し、複数のプラットフォームに対応した HTML に内蔵する タイプのスクリプト言語です。 PHP を全くはじめて使う場合で、"
+"どのように動作するのかを ご覧になりたい場合は、紹介チュートリアルをご覧ください。 その後リンク集からサンプルのアーカイブサイトや "
+"その他の資源にアクセスすることもできます。"
 
 #. leap/php7/php7-enchant/summary
 #. tumbleweed/php7/php7-enchant/summary
 msgid "Spell checking extension for PHP"
-msgstr ""
+msgstr "PHP 向けスペルチェック拡張"
 
 #. leap/php7/php7-enchant/description
 #. tumbleweed/php7/php7-enchant/description
@@ -271,36 +257,33 @@ msgid ""
 "library. Everything should \"just work\" for any and every definition of "
 "\"just working.\""
 msgstr ""
+"Enchant は Enchant ライブラリに対する PHP バインディングです。 Enchant は、全てのスペルチェックライブラリの上位に位置して均"
+"一性と適合性をもたらす仕組みであるほか、個別のプロバイダライブラリでは提供していない機能を補完する仕組みでもあります。ただし、全ての定義において「正しく機"
+"能する」必要があります。"
 
 #. leap/php7/php7-exif/summary
 #. tumbleweed/php7/php7-exif/summary
 msgid "EXIF metadata extensions for PHP"
-msgstr ""
+msgstr "PHP 向けメタデータ拡張"
 
 #. leap/php7/php7-exif/description
 #. tumbleweed/php7/php7-exif/description
-#, fuzzy
-#| msgid ""
-#| "PHP functions for extracting EXIF (metadata from images) information "
-#| "stored in headers of JPEG and TIFF images."
 msgid ""
 "PHP functions for extracting EXIF (Exchangable Image File Format; metadata "
 "from images) information stored in headers of JPEG and TIFF images."
 msgstr ""
-"JPEG や TIFF 画像内のヘッダに保存された、EXIF (画像内のメタデータ) を取り出す"
-"ための PHP 関数です。"
+"JPEG や TIFF 画像内のヘッダに保存された、EXIF (Exchangable Image File Format; 画像内のメタデータ) "
+"を取り出すための PHP 関数です。"
 
 #. leap/php7/php7-fastcgi/summary
 #. tumbleweed/php7/php7-fastcgi/summary
-#, fuzzy
 msgid "FastCGI PHP7 Module"
-msgstr "FastCGI PHP5 モジュール"
+msgstr "FastCGI PHP7 モジュール"
 
 #. leap/php7/php7-fastcgi/description
 #. leap/php7/php7-fpm/description
 #. tumbleweed/php7/php7-fastcgi/description
 #. tumbleweed/php7/php7-fpm/description
-#, fuzzy
 msgid ""
 "PHP is a server-side, cross-platform HTML embedded scripting language. If "
 "you are completely new to PHP and want to get some idea of how it works, "
@@ -311,19 +294,16 @@ msgid ""
 "Please refer to /usr/share/doc/packages/php7/README.FastCGI for information "
 "on how to use this module."
 msgstr ""
-"PHP はサーバサイドで動作し、複数のプラットフォームに対応した HTML に内蔵する "
-"タイプのスクリプト言語です。 PHP を全くはじめて使う場合で、どのように動作する"
-"のかを ご覧になりたい場合は、紹介チュートリアルをご覧ください。 その後リンク"
-"集からサンプルのアーカイブサイトや その他の資源にアクセスすることもできま"
-"す。\n"
+"PHP はサーバサイドで動作し、複数のプラットフォームに対応した HTML に内蔵する タイプのスクリプト言語です。 PHP を全くはじめて使う場合で、"
+"どのように動作するのかを ご覧になりたい場合は、紹介チュートリアルをご覧ください。 その後リンク集からサンプルのアーカイブサイトや "
+"その他の資源にアクセスすることもできます。\n"
 "\n"
-"このモジュールの使用方法についての情報は、 /usr/share/doc/packages/php5/"
-"README.FastCGI をご覧ください。"
+"このモジュールの使用方法についての情報は、 /usr/share/doc/packages/php7/README.FastCGI をご覧ください。"
 
 #. leap/php7/php7-fileinfo/summary
 #. tumbleweed/php7/php7-fileinfo/summary
 msgid "File identification extension for PHP"
-msgstr ""
+msgstr "PHP 向けファイル識別拡張"
 
 #. leap/php7/php7-fileinfo/description
 #. tumbleweed/php7/php7-fileinfo/description
@@ -333,11 +313,13 @@ msgid ""
 "within the file. It uses (a bundled version of) libmagic to heuristically "
 "determine this."
 msgstr ""
+"このモジュール内に組み込まれている関数を使用すると、ファイル内の特定位置にあるマジックバイトを読み込んで検索を行ない、ファイルの内容やエンコーディングを判"
+"別することができます。このモジュールは、 libmagic を利用してヒューリスティックに判別しています。"
 
 #. leap/php7/php7-firebird/summary
 #. tumbleweed/php7/php7-firebird/summary
 msgid "Firebird database client for PHP"
-msgstr ""
+msgstr "PHP 向け Firebird データベースクライアント"
 
 #. leap/php7/php7-firebird/description
 #. tumbleweed/php7/php7-firebird/description
@@ -346,33 +328,27 @@ msgstr "firebird データベースサーバにアクセスするための PHP �
 
 #. leap/php7/php7-fpm/summary
 #. tumbleweed/php7/php7-fpm/summary
-#, fuzzy
 msgid "FastCGI Process Manager PHP7 Module"
-msgstr "FastCGI PHP5 モジュール"
+msgstr "FastCGI プロセスマネージャ PHP7 モジュール"
 
 #. leap/php7/php7-ftp/summary
 #. tumbleweed/php7/php7-ftp/summary
 msgid "FTP protocol support for PHP"
-msgstr ""
+msgstr "PHP 向け FTP プロトコルサポート"
 
 #. leap/php7/php7-ftp/description
 #. tumbleweed/php7/php7-ftp/description
-#, fuzzy
-#| msgid ""
-#| "PHP functions for access to file servers speaking the File Transfer "
-#| "Protocol (FTP) as defined in rfc959."
 msgid ""
 "PHP functions for access to file servers speaking the File Transfer Protocol "
 "(FTP) as defined in RFC 959."
 msgstr ""
-"RFC959 で規定されているファイル転送プロトコル (FTP) のサービスを提供する ファ"
-"イルサーバに対し、このプロトコルを通してファイルアクセスを行なうための PHP 関"
-"数です。"
+"RFC959 で規定されているファイル転送プロトコル (FTP) のサービスを提供するファイルサーバに対し、"
+"このプロトコルを通してファイルアクセスを行なうための PHP 関数です。"
 
 #. leap/php7/php7-gd/summary
 #. tumbleweed/php7/php7-gd/summary
 msgid "GD Graphics Library extension for PHP"
-msgstr ""
+msgstr "PHP 向け GD グラフィックライブラリ拡張"
 
 #. leap/php7/php7-gd/description
 #. tumbleweed/php7/php7-gd/description
@@ -387,9 +363,8 @@ msgstr ""
 
 #. leap/php7-geoip/summary
 #. tumbleweed/php7-geoip/summary
-#, fuzzy
 msgid "PHP module for MaxMind GeoIP libraries"
-msgstr "openais 標準クラスタフレームワークライブラリ"
+msgstr "MaxMind GeoIP ライブラリ向け PHP モジュール"
 
 #. leap/php7-geoip/description
 #. tumbleweed/php7-geoip/description
@@ -398,43 +373,37 @@ msgid ""
 "State, Country, Longitude, Latitude, and other information as all, such as "
 "ISP and connection type. For more info, please visit Maxmind's website."
 msgstr ""
+"この PHP 拡張を使用することで、 IP アドレスから国や都市のほか、緯度や経度のほか、 ISP や接続の種類など、様々な情報を検索することができます。"
+"詳しくは Maxmind の Web サイトをご覧ください。"
 
 #. leap/php7/php7-gettext/summary
 #. tumbleweed/php7/php7-gettext/summary
 msgid "Native language support for PHP"
-msgstr ""
+msgstr "PHP 向けネイティブ言語サポート"
 
 #. leap/php7/php7-gettext/description
 #. tumbleweed/php7/php7-gettext/description
-#, fuzzy
-#| msgid ""
-#| "PHP functions that implement an NLS (Native Language Support) API which "
-#| "can be used to internationalize your PHP applications."
 msgid ""
 "PHP functions that implement a Native Language Support (NLS) API which can "
 "be used to internationalize your PHP applications."
-msgstr ""
-"NLS (母国語対応) API を実装する PHP 関数です。 お使いの PHP アプリケーション"
-"を国際化することができます。"
+msgstr "母国語対応 (NLS) API を実装する PHP 関数です。 お使いの PHP アプリケーションを国際化することができます。"
 
 #. leap/php7-gmagick/summary
 #. tumbleweed/php7-gmagick/summary
-#, fuzzy
-#| msgid "Document Files for ImageMagick Library"
 msgid "Wrapper to the GraphicsMagick library"
-msgstr "ImageMagick ライブラリ向け開発用ファイル"
+msgstr "GraphicsMagick ライブラリに対するラッパー"
 
 #. leap/php7-gmagick/description
 #. tumbleweed/php7-gmagick/description
 msgid ""
 "PHP extension to create, modify and obtain meta information of images using "
 "the GraphicsMagick API"
-msgstr ""
+msgstr "GraphicsMagick API を利用して、画像のメタ情報を作成／編集／取得することのできる PHP 拡張です"
 
 #. leap/php7/php7-gmp/summary
 #. tumbleweed/php7/php7-gmp/summary
 msgid "Bignum extension for PHP"
-msgstr ""
+msgstr "PHP 向け Bignum 拡張"
 
 #. leap/php7/php7-gmp/description
 #. tumbleweed/php7/php7-gmp/description
@@ -446,29 +415,22 @@ msgstr ""
 
 #. leap/php7-ice/summary
 #. tumbleweed/php7-ice/summary
-#, fuzzy
-#| msgid "Simple and fast PHP framework delivered as C-extension"
 msgid "PHP framework delivered as C extension"
-msgstr "シンプルで高速な C エクステンション型の PHP フレームワーク"
+msgstr "C 言語拡張として配布される PHP フレームワーク"
 
 #. leap/php7-ice/description
 #. tumbleweed/php7-ice/description
-#, fuzzy
-#| msgid ""
-#| "Simple and fast PHP framework delivered as C-extension. You don't need "
-#| "learn or use the C language, since the functionality is exposed as PHP "
-#| "classes ready for you to use."
 msgid ""
 "ICE is a PHP framework delivered as C extension. You don't need learn or use "
 "the C language, since the functionality is exposed as PHP classes."
 msgstr ""
-"シンプルで高速な C エクステンションの PHP フレームワークです。この機能は PHP "
-"のクラスとして公開されているため、 C 言語の知識は必要ありません。"
+"ICE は C 言語の拡張として配布される PHP フレームワークです。全ての機能は PHP クラスとして提供されることから、 C "
+"言語の機能を学んだり使用したりする必要はありません。"
 
 #. leap/php7/php7-iconv/summary
 #. tumbleweed/php7/php7-iconv/summary
 msgid "Character set conversion functions for PHP"
-msgstr ""
+msgstr "PHP 向け文字セット変換関数"
 
 #. leap/php7/php7-iconv/description
 #. tumbleweed/php7/php7-iconv/description
@@ -479,26 +441,26 @@ msgid ""
 "set. Supported character sets depend on the iconv implementation of your "
 "system."
 msgstr ""
+"このモジュールには、 iconv 文字セット変換機構へのインターフェイスが含まれています。このモジュールを使用することで、"
+"ローカルの文字セットで表わされている文字列を他の文字セット (主に Unicode) に変換することができます。対応可能な文字セットは、"
+"お使いのシステムにおける iconv 実装に依存して決まります。"
 
 #. leap/php7-imagick/summary
 #. tumbleweed/php7-imagick/summary
-#, fuzzy
-#| msgid "Document Files for ImageMagick Library"
 msgid "Wrapper to the ImageMagick library"
-msgstr "ImageMagick ライブラリ向け開発用ファイル"
+msgstr "ImageMagick ライブラリに対するラッパー"
 
 #. leap/php7-imagick/description
 #. tumbleweed/php7-imagick/description
 msgid ""
 "PHP extension to create, modify and obtain meta information of images using "
 "the ImageMagick API"
-msgstr ""
+msgstr "ImageMagick API を利用して画像のメタ情報を作成／編集／取得するための PHP 拡張です"
 
 #. leap/php7/php7-intl/summary
 #. tumbleweed/php7/php7-intl/summary
-#, fuzzy
 msgid "ICU integration for PHP"
-msgstr "DBus 向け Glib 統合"
+msgstr "PHP 向け ICU 統合"
 
 #. leap/php7/php7-intl/description
 #. tumbleweed/php7/php7-intl/description
@@ -508,36 +470,35 @@ msgid ""
 "conformant collation as well as date, time, number and currency formatting "
 "in their scripts."
 msgstr ""
+"国際化 (intl) 拡張は ICU ライブラリ向けのラッパーであり、 PHP のプログラマに対して UCA (Unicode Collation "
+"Algorithm) 準拠の照合機能を提供します。このラッパーでは、スクリプト内で日付や時刻、数値や通貨の書式化も行なうことができます。"
 
 #. leap/php7/php7-json/summary
 #. tumbleweed/php7/php7-json/summary
 msgid "JSON (de)serializer functions for PHP"
-msgstr ""
+msgstr "PHP 向け JSON シリアライザ／デシリアライザ"
 
 #. leap/php7/php7-json/description
 #. tumbleweed/php7/php7-json/description
 msgid ""
 "This extension implements the JavaScript Object Notation (JSON) data-"
 "interchange format."
-msgstr ""
+msgstr "この拡張は、 JavaScript Object Notation (JSON) データ交換形式を実装しています。"
 
 #. leap/php7/php7-ldap/summary
 #. tumbleweed/php7/php7-ldap/summary
 msgid "LDAP protocol support for PHP"
-msgstr ""
+msgstr "PHP 向け LDAP プロトコルサポート"
 
 #. leap/php7/php7-ldap/description
 #. tumbleweed/php7/php7-ldap/description
-#, fuzzy
-#| msgid "PHP interface to Lightweight Directory Access Protocol (LDAP)."
 msgid "PHP interface to the Lightweight Directory Access Protocol (LDAP)."
-msgstr ""
-"軽量ディレクトリアクセスプロトコル (LDAP) に対する PHP インターフェイスです。"
+msgstr "軽量ディレクトリアクセスプロトコル (LDAP) に対する PHP インターフェイスです。"
 
 #. leap/php7/php7-mbstring/summary
 #. tumbleweed/php7/php7-mbstring/summary
 msgid "Multibyte string functions for PHP"
-msgstr ""
+msgstr "PHP 向けマルチバイト文字列関数"
 
 #. leap/php7/php7-mbstring/description
 #. tumbleweed/php7/php7-mbstring/description
@@ -548,25 +509,26 @@ msgid ""
 "encodings such as UTF-8 and UCS-2 and many single-byte encodings for "
 "convenience."
 msgstr ""
+"mbstring は PHP 内でマルチバイトエンコーディングの取り扱うことのできる、マルチバイト固有の文字列関数を提供しています。 mbstring "
+"はさまざまなエンコーディング間での変換を処理することもできます。 mbstring は UTF-8 や UCS-2 などの Unicode "
+"ベースのエンコーディングにも対応しているほか、利便性のためシングルバイトのエンコーディングにも対応しています。"
 
 #. leap/php7-memcached/summary
 #. tumbleweed/php7-memcached/summary
-#, fuzzy
-#| msgid "PHP5 readline extension"
 msgid "PHP MemcacheD client Extension"
-msgstr "PHP5 readline 拡張"
+msgstr "PHP MemcacheD クライアント拡張"
 
 #. leap/php7-memcached/description
 #. tumbleweed/php7-memcached/description
 msgid ""
 "This extension uses libmemcached library to provide API for communicating "
 "with memcached servers."
-msgstr ""
+msgstr "この拡張は libmemcached ライブラリを使用して、 memcached サーバとの間での通信を行なう API を提供しています。"
 
 #. leap/php7/php7-mysql/summary
 #. tumbleweed/php7/php7-mysql/summary
 msgid "MySQL database client for PHP"
-msgstr ""
+msgstr "PHP 向け MySQL データベースクライアント"
 
 #. leap/php7/php7-mysql/description
 #. tumbleweed/php7/php7-mysql/description
@@ -576,19 +538,17 @@ msgstr "MySQL データベースサーバにアクセスするための PHP 関�
 #. leap/php7/php7-odbc/summary
 #. tumbleweed/php7/php7-odbc/summary
 msgid "ODBC extension for PHP"
-msgstr ""
+msgstr "PHP 向け ODBC 拡張"
 
 #. leap/php7/php7-odbc/description
 #. tumbleweed/php7/php7-odbc/description
-#, fuzzy
-#| msgid "This module adds ODBC support."
 msgid "This module adds Open Database Connectivity (ODBC) support."
-msgstr "このモジュールは ODBC サポートを追加します。"
+msgstr "このモジュールは Open Database Connectivity (ODBC) サポートを追加します。"
 
 #. leap/php7/php7-opcache/summary
 #. tumbleweed/php7/php7-opcache/summary
 msgid "Opcode cache extension for PHP"
-msgstr ""
+msgstr "PHP 向け opcode キャッシュ拡張"
 
 #. leap/php7/php7-opcache/description
 #. tumbleweed/php7/php7-opcache/description
@@ -597,12 +557,13 @@ msgid ""
 "shared memory, thereby removing the need for PHP to load and parse scripts "
 "on each request."
 msgstr ""
+"OPcache は共有メモリ内にコンパイル済みのスクリプトバイトコードを保存することで、 PHP の性能を改善することのできる仕組みです。これにより、"
+"それぞれのリクエストでいちいち PHP を読み込んで処理する必要が無くなります。"
 
 #. leap/php7/php7-openssl/summary
 #. tumbleweed/php7/php7-openssl/summary
-#, fuzzy
 msgid "OpenSSL integration for PHP"
-msgstr "DBus 向け Glib 統合"
+msgstr "PHP 向け OpenSSL 統合"
 
 #. leap/php7/php7-openssl/description
 #. tumbleweed/php7/php7-openssl/description
@@ -611,11 +572,14 @@ msgid ""
 "asymmetric encryption and decryption, PBKDF2, PKCS#7, PKCS#12, X.509 and "
 "other crypto operations. It also provides an implementation of TLS streams."
 msgstr ""
+"この拡張は、対称型／非対称型の暗号化および復号化、具体的には PBKDF2, PKCS#7, PKCS#12, X.509 "
+"やその他の暗号操作に対応することのできる、 OpenSSL ライブラリの関数へのバインディングを提供しています。 TLS "
+"ストリームの実装も含まれています。"
 
 #. leap/php7/php7-pcntl/summary
 #. tumbleweed/php7/php7-pcntl/summary
 msgid "Process Control extension for PHP"
-msgstr ""
+msgstr "PHP 向けプロセス制御拡張"
 
 #. leap/php7/php7-pcntl/description
 #. tumbleweed/php7/php7-pcntl/description
@@ -624,11 +588,13 @@ msgid ""
 "creation, program execution, signal handling and process termination (fork, "
 "waitpid, signal, WIF flags, etc.)"
 msgstr ""
+"PHP 向けプロセス制御拡張は、 Unix スタイルのプロセス作成やプログラムの実行、そしてシグナル処理やプロセスの終了処理などの機能 (fork, "
+"waitpid, signal, WIF フラグなど) を実装しています"
 
 #. leap/php7/php7-pdo/summary
 #. tumbleweed/php7/php7-pdo/summary
 msgid "PHP Data Objects extension for PHP"
-msgstr ""
+msgstr "PHP 向けデータオブジェクト拡張"
 
 #. leap/php7/php7-pdo/description
 #. tumbleweed/php7/php7-pdo/description
@@ -643,6 +609,13 @@ msgid ""
 "data. PDO does not provide a database abstraction; it does not rewrite SQL "
 "or emulate missing features."
 msgstr ""
+"PHP Data Objects (PDO) 拡張は、 PHP 内でのデータベースアクセスのためのインターフェイスを定義します。 PDO "
+"インターフェイスを実装するデータベースドライバを作成することで、それぞれのデータベースシステムに対応した拡張を作り上げることができます。なお、"
+"データベースシステムごとに PDO ドライバを作成する必要があることに注意してください。\n"
+"\n"
+"PDO はデータベースアクセスの抽象レイヤを提供するものであるため、使用するデータベースシステムに依存することなく、同じ関数を使用したままさまざまなデータ"
+"ベースに問い合わせを行ない、データを取得することができます。また、 PDO ではデータベースそのものの抽象化は行なっていません。そのため、 SQL "
+"の書き換えや提供していない機能の補足などは行ないません。"
 
 #. leap/php7/php7-pear/summary
 #. tumbleweed/php7/php7-pear/summary
@@ -651,13 +624,6 @@ msgstr "PHP 拡張とアプリケーションのリポジトリ"
 
 #. leap/php7/php7-pear/description
 #. tumbleweed/php7/php7-pear/description
-#, fuzzy
-#| msgid ""
-#| "PEAR is a code repository for PHP extensions and PHP library code similar "
-#| "to TeX's CTAN and Perl's CPAN. This package provides an access to the "
-#| "repository.\n"
-#| "\n"
-#| "See http://pear.php.net/manual/ for more details."
 msgid ""
 "PEAR is a code repository for PHP extensions and PHP library code similar to "
 "TeX's CTAN and Perl's CPAN. This package provides an access to the "
@@ -665,16 +631,14 @@ msgid ""
 "\n"
 "See https://pear.php.net/manual for more details."
 msgstr ""
-"PEAR は TeX で言うところの CTAN, Perl で言うところの CPAN に似た、 PHP の拡張"
-"とライブラリコードに関するリポジトリです。 このパッケージは、このリポジトリへ"
-"のアクセス機能を提供します。\n"
+"PEAR は TeX で言うところの CTAN, Perl で言うところの CPAN に似た、 PHP の拡張とライブラリコードに関するリポジトリです。 "
+"このパッケージは、このリポジトリへのアクセス機能を提供します。\n"
 "\n"
 "詳しくは http://pear.php.net/manual/ をお読みください。"
 
 #. leap/php7/php7-pear-Archive_Tar/summary
-#, fuzzy
 msgid "Tar file management class"
-msgstr "ライブラリ管理システム"
+msgstr "tar ファイル管理クラス"
 
 #. leap/php7/php7-pear-Archive_Tar/description
 msgid ""
@@ -683,11 +647,14 @@ msgid ""
 "PHP has the zlib extension built-in orloaded. Bz2 compression is also "
 "supported with the bz2 extension loaded."
 msgstr ""
+"このクラスは PHP 内での tar ファイルへのアクセス機能を提供します。 tar "
+"ファイルの作成や内容の一覧取得のほか、抽出や追加などを行なうことができます。また、 PHP 側で内蔵もしくは外付けの zlib 拡張が利用できれば、 "
+"gzip 圧縮にも対応します。このほか、 bz2 拡張を読み込んでいれば、 bz2 圧縮にも対応することができます。"
 
 #. leap/php7-pear-Auth_SASL/summary
 #. tumbleweed/php7-pear-Auth_SASL/summary
 msgid "Abstraction of various SASL mechanism responses"
-msgstr ""
+msgstr "さまざまな SASL 機構の応答に対する抽象化"
 
 #. leap/php7-pear-Auth_SASL/description
 #. tumbleweed/php7-pear-Auth_SASL/description
@@ -695,12 +662,13 @@ msgid ""
 "Provides code to generate responses to common SASL mechanisms, including:   "
 "- Digest-MD5   - CramMD5   - Plain   - Anonymous   - Login (Pseudo mechanism)"
 msgstr ""
+"一般的な SASL 機構 (Digest-MD5, CramMD5, Plain, Anonymous, Login (Pseudo "
+"mechanism)) に対する応答を生成するコードを提供しています"
 
 #. leap/php7-pear-MDB2/summary
 #. tumbleweed/php7-pear-MDB2/summary
-#, fuzzy
 msgid "Database abstraction layer"
-msgstr "C 言語向けデータベース独立抽象インターフェイス"
+msgstr "データベース抽象レイヤ"
 
 #. leap/php7-pear-MDB2/description
 #. tumbleweed/php7-pear-MDB2/description
@@ -737,22 +705,50 @@ msgid ""
 "* Full integration into the PEAR Framework\n"
 "* PHPDoc API documentation"
 msgstr ""
+"PEAR MDB2 は PEAR DB および Metabase の PHP データベース抽象化レイヤを組み合わせたものです。\n"
+"\n"
+"対応する全ての RDBMS に対して一般的な API を提供しています。主なデータベースシステムの抽象化パッケージとは異なり、 MDB2 "
+"ではより可搬性に富む構成になっています。 MDB2 では多くの機能の大部分をオプションとして提供し、可搬性の高い SQL "
+"ステートメントを構築できるようになっています:\n"
+"* オブジェクト指向の API\n"
+"* データベースサーバを指定するための DSN (データソース名) もしくは配列形式への対応\n"
+"* データ型の抽象化および必要に応じたデータ型の変換\n"
+"* 可搬性の問題に対応するためのさまざまなオプションのフェッチモード\n"
+"* 可搬性のあるエラーコード\n"
+"* シーケンシャル／ノンシーケンシャル行フェッチ、およびバルクフェッチへの対応\n"
+"* バッファ有り／無しでの問い合わせを行なう機能\n"
+"* フェッチした行に対する順序型配列および連想配列への対応\n"
+"* Prepare/execute (バインド) 時の名前付き／名前無し擬似プレースホルダへの対応\n"
+"* 擬似シーケンス／擬似自動加算\n"
+"* 擬似 Replace\n"
+"* 制限付きの擬似 sub select\n"
+"* 擬似的な行数制限\n"
+"* トランザクション／セーブポイント対応\n"
+"* ラージオブジェクトへの対応\n"
+"* インデックス／ユニークキー／プライマリキーへの対応\n"
+"* パターンマッチングの抽象化\n"
+"* 必要に応じて高度な機能を読み込むためのモジュール型フレームワーク\n"
+"* 情報スキーマの読み込み機能\n"
+"* RDBMS 管理メソッド (作成 (create)、削除 (drop)、変更 (alter))\n"
+"* 既存のデータベースからのリバースエンジニアリングスキーマ\n"
+"* SQL 関数呼び出しの抽象化\n"
+"* PEAR フレームワークに対する完全な統合\n"
+"* PHPDoc API ドキュメンテーション"
 
 #. leap/php7-pear-MDB2_Driver_mysqli/summary
 #. tumbleweed/php7-pear-MDB2_Driver_mysqli/summary
 msgid "MySQLi MDB2 driver"
-msgstr ""
+msgstr "MySQLi MDB2 ドライバ"
 
 #. leap/php7-pear-MDB2_Driver_mysqli/description
 #. tumbleweed/php7-pear-MDB2_Driver_mysqli/description
-#, fuzzy
 msgid "This is the MySQLi MDB2 driver."
-msgstr "Ruby 向け MySQL API モジュール"
+msgstr "これは MySQLi MDB2 ドライバです。"
 
 #. leap/php7-pear-Mail_Mime/summary
 #. tumbleweed/php7-pear-Mail_Mime/summary
 msgid "PHP classes to create MIME messages"
-msgstr ""
+msgstr "MIME メッセージを作成するための PHP クラス"
 
 #. leap/php7-pear-Mail_Mime/description
 #. tumbleweed/php7-pear-Mail_Mime/description
@@ -763,11 +759,14 @@ msgid ""
 "messages. It supports non-ASCII characters in filenames, subjects, "
 "recipients, etc."
 msgstr ""
+"Mail_Mime は MIME メッセージの作成や編集を行なうためのクラスを提供します。テキストパートや HTML パート、そしてインラインの "
+"HTML 画像や添付、そしてメッセージを添付したものを作成することができます。またファイル名やタイトル、受信者等には非 ASCII "
+"文字を使用することができます。"
 
 #. leap/php7-pear-Net_IDNA2/summary
 #. tumbleweed/php7-pear-Net_IDNA2/summary
 msgid "PHP library for Punycode encoding and decoding"
-msgstr ""
+msgstr "Punycode エンコード／デコードを行なうための PHP ライブラリ"
 
 #. leap/php7-pear-Net_IDNA2/description
 #. tumbleweed/php7-pear-Net_IDNA2/description
@@ -778,11 +777,14 @@ msgid ""
 "form and their encoded form as it will be used in the DNS (Domain Name "
 "System)."
 msgstr ""
+"このパッケージには、国際化ドメイン名 (RFC 3490) "
+"の相互変換を行なうためのクラスが含まれています。世界中にあるさまざまなレジストリからの情報を利用して、 DNS (Domain Name System) "
+"で使用されるドメイン名の元の (ローカライズされた) 形式とエンコードされた形式の間を相互に変換することができます。"
 
 #. leap/php7-pear-Net_LDAP2/summary
 #. tumbleweed/php7-pear-Net_LDAP2/summary
 msgid "Object oriented interface for searching and manipulating LDAP-entries"
-msgstr ""
+msgstr "LDAP エントリを検索したり操作したりするためのオブジェクト指向インターフェイス"
 
 #. leap/php7-pear-Net_LDAP2/description
 #. tumbleweed/php7-pear-Net_LDAP2/description
@@ -796,27 +798,30 @@ msgid ""
 "\n"
 "Net_LDAP2 layers itself on top of PHP's existing ldap extensions."
 msgstr ""
+"Net_LDAP2 は Net_LDAP の後継となるもので、ディレクトリサーバに対する Perl の Net::LDAPobject "
+"インターフェイスのクローンを提供します。 Net::LDAP 側で提供するほとんどの機能が含まれていますが、独自のものもあります。 Net_LDAP2 "
+"の特長は下記のとおりです: * シンプルなオブジェクト指向のインターフェイスにより、接続やエントリの検索、フィルタなどを使用することができます。  * "
+"TLS/LDAP v3 にも対応しています。  * LDAP の項目の修正や削除、作成などにも対応しています。  * スキーマの処理にも対応しています。"
+"\n"
+"\n"
+"Net_LDAP2 レイヤそれ自身は、 PHP の既存の LDAP 拡張上に作られています。"
 
 #. leap/php7-pear-Net_SMTP/summary
 #. tumbleweed/php7-pear-Net_SMTP/summary
-#, fuzzy
 msgid "An implementation of the SMTP protocol"
-msgstr "SCGI プロトコルの Python 実装"
+msgstr "SMTP プロトコルの実装"
 
 #. leap/php7-pear-Net_SMTP/description
 #. tumbleweed/php7-pear-Net_SMTP/description
-#, fuzzy
 msgid ""
 "Provides an implementation of the SMTP protocol using PEAR's Net_Socket "
 "class."
-msgstr "SCGI プロトコルの Python 実装"
+msgstr "PEAR の Net_Socket クラスを利用した SMTP プロトコルの実装を提供します。"
 
 #. leap/php7-pear-Net_Sieve/summary
 #. tumbleweed/php7-pear-Net_Sieve/summary
-#, fuzzy
-#| msgid "PHP7 Module for Apache 2.0"
 msgid "PHP module for talking to a sieve server"
-msgstr "Apache 2.0 向け PHP7 モジュール"
+msgstr "sieve サーバと対話を行なうための PHP モジュール"
 
 #. leap/php7-pear-Net_Sieve/description
 #. tumbleweed/php7-pear-Net_Sieve/description
@@ -825,12 +830,13 @@ msgid ""
 "protocol. It can be used to install and remove sieve scripts, mark them "
 "active etc."
 msgstr ""
+"このパッケージには、 managesieve プロトコルを実装するサーバとの間で、通信を行なうための API が含まれています。 sieve "
+"スクリプトのインストールや削除のほか、アクティブ化などを行なうことができます。"
 
 #. leap/php7-pear-Net_Socket/summary
 #. tumbleweed/php7-pear-Net_Socket/summary
-#, fuzzy
 msgid "Network Socket Interface"
-msgstr "ネットワークセキュリティサービス"
+msgstr "ネットワークソケットインターフェイス"
 
 #. leap/php7-pear-Net_Socket/description
 #. tumbleweed/php7-pear-Net_Socket/description
@@ -840,11 +846,13 @@ msgid ""
 "block-wise, line-wise and special formats like network byte-order ip "
 "addresses)."
 msgstr ""
+"Net_Socket は TCP ソケットに対するクラスインターフェイスです。ブロッキング／非ブロッキング型の操作に対応しているほか、さまざまな読み込み／"
+"書き込みモード (バイト単位、ブロック単位、行単位) のほか、ネットワークバイトオーダーの IP アドレス変換なども行なうことができます。"
 
 #. leap/php7-pear-XML_Parser/summary
 #. tumbleweed/php7-pear-XML_Parser/summary
 msgid "XML parsing class based on PHP's bundled expat"
-msgstr ""
+msgstr "PHP 内蔵の expat をベースにした XML 処理クラス"
 
 #. leap/php7-pear-XML_Parser/description
 #. tumbleweed/php7-pear-XML_Parser/description
@@ -862,11 +870,21 @@ msgid ""
 "object, so you do not have to extend XML_Parser anymore in order to parse a "
 "document with it."
 msgstr ""
+"これは PHP の内蔵 XML 拡張をベースにした XML パーサです。\n"
+"\n"
+"このモジュールでは \"func\" と \"event\" の 2 種類の動作モードを提供しています。 \"func\" モードの場合、"
+"それぞれの要素に対して対応する関数 (タグの開始位置では xmltag_要素名 が、タグの終了位置では xmltag_要素名_) を検索するのに対して、 "
+"\"event\" モードでは汎用的なコールバックセットを使用して行ないます。\n"
+"\n"
+"バージョン 1.2.0 以降では、 XML_Parser_Simple "
+"と呼ばれるクラスが提供されるようになり、要素に対するスタックの自動提供を行なうことができますので、これによってほとんどの XML "
+"文書をより簡単に処理できるようになっています。これに加えて、パーサとハンドラオブジェクトを別途にすることができますので、文書を処理するに際して "
+"XML_Parser を拡張させる必要が無くなっています。"
 
 #. leap/php7/php7-pgsql/summary
 #. tumbleweed/php7/php7-pgsql/summary
 msgid "PostgreSQL database client for PHP"
-msgstr ""
+msgstr "PHP 向け PostgreSQL データベースクライアント"
 
 #. leap/php7/php7-pgsql/description
 #. tumbleweed/php7/php7-pgsql/description
@@ -887,13 +905,15 @@ msgid ""
 "dynamic and static typed and it supports just the features we need to create "
 "and maintain a project like Phalcon."
 msgstr ""
+"Phalcon はオープンソースの PHP 5 向けフルスタックフレームワークです。 C "
+"言語の拡張として記述され、性能に対して最適化されるようになっています。なお、 C 言語そのものを知る必要はありません。機能は全て PHP "
+"クラス側に提供される仕組みで、そこからすぐに使えるようになっているためです。 Zephir は高レベルな言語で、 C 言語と PHP "
+"の中間に存在する言語です。動的および静的な型付けのほか、 Phalcon のようなプロジェクト内で必要な機能に対応しています。"
 
 #. leap/php7/php7-phar/summary
 #. tumbleweed/php7/php7-phar/summary
-#, fuzzy
-#| msgid "PHP5 readline extension"
 msgid "PHP Archive extension for PHP"
-msgstr "PHP5 readline 拡張"
+msgstr "PHP 向けアーカイブ拡張"
 
 #. leap/php7/php7-phar/description
 #. tumbleweed/php7/php7-phar/description
@@ -907,12 +927,18 @@ msgid ""
 "class, much as PDO provides a unified interface for accessing different "
 "databases. Phar also can convert between tar, zip and phar file formats."
 msgstr ""
+"phar 拡張は、 PHP アプリケーションの全体を \"phar\" (PHP Archive) "
+"と呼ばれる形式にまとめ、配布やインストールを簡略化できる仕組みを提供しています。\n"
+"\n"
+"これに加えて、 phar 拡張にはファイル形式の抽象化メソッドが提供されています。これにより、 PharData クラスを介して tar や zip "
+"ファイルを作成したり編集したりすることができ、 PDO "
+"がさまざまなデータベースにアクセスするための統一的なインターフェイスを提供するのと同程度の機能を提供しています。 Phar では tar, zip, "
+"phar の各ファイル形式の間での相互変換にも対応しています。"
 
 #. leap/php7-phpunit8/summary
 #. tumbleweed/php7-phpunit8/summary
-#, fuzzy
 msgid "Testing framework for PHP"
-msgstr "C++ 向け型セーフ シグナルフレームワーク"
+msgstr "PHP 向けテストフレームワーク"
 
 #. leap/php7-phpunit8/description
 #. tumbleweed/php7-phpunit8/description
@@ -920,13 +946,13 @@ msgid ""
 "PHPUnit is a programmer-oriented testing framework for PHP. It is an "
 "instance of the xUnit architecture for unit testing frameworks."
 msgstr ""
+"PHPUnit はプログラマ向けの PHP 用テストフレームワークです。 単体テストフレームワーク向けの xUnit "
+"アーキテクチャのインスタンスでもあります。"
 
 #. leap/php7/php7-posix/summary
 #. tumbleweed/php7/php7-posix/summary
-#, fuzzy
-#| msgid "PHP functions for SNMP."
 msgid "POSIX functions for PHP"
-msgstr "SNMP 向け PHP 関数"
+msgstr "PHP 向け POSIX 関数"
 
 #. leap/php7/php7-posix/description
 #. tumbleweed/php7/php7-posix/description
@@ -935,51 +961,46 @@ msgid ""
 "1003.1 (POSIX.1) standards document which are not accessible through other "
 "means."
 msgstr ""
+"このモジュールには、他の手段ではアクセスすることのできない IEEE 1003.1 (POSIX.1) "
+"標準文書内に定義された関数へのインターフェイスが含まれています。"
 
 #. leap/php7/php7-readline/summary
 #. tumbleweed/php7/php7-readline/summary
-#, fuzzy
 msgid "PHP7 readline extension"
-msgstr "PHP5 readline 拡張"
+msgstr "PHP7 readline 拡張"
 
 #. leap/php7/php7-readline/description
 #. tumbleweed/php7/php7-readline/description
-#, fuzzy
-#| msgid ""
-#| "PHP interface to libedit, which provides editable command line as well as "
-#| "PHP interactive mode (php -a)"
 msgid ""
 "PHP interface to libedit, which provides editable command line as well as "
 "PHP interactive mode (php -a)."
 msgstr ""
-"libedit に対する PHP インターフェイスです。 PHP の対話モード (php -a) と同様"
-"に、編集可能なコマンドラインを提供します。"
+"libedit に対する PHP インターフェイスです。 PHP の対話モード (php -a) と同様に、編集可能なコマンドラインを提供します。"
 
 #. leap/php7-redis/summary
 #. tumbleweed/php7-redis/summary
 msgid "API for communicating with Redis servers"
-msgstr ""
+msgstr "Redis サーバと通信するための API"
 
 #. leap/php7-redis/description
 #. tumbleweed/php7-redis/description
-#, fuzzy
 msgid "This extension provides an API for communicating with Redis servers"
-msgstr "このパッケージは、様々な文字セットを変換します。"
+msgstr "この拡張は、 Redis サーバとの間で通信を行なうための API を提供します"
 
 #. leap/php7/php7-shmop/summary
 #. tumbleweed/php7/php7-shmop/summary
 msgid "Alternate, low-level shared memory implementation for PHP"
-msgstr ""
+msgstr "PHP 向けの代替低レベル共有ライブラリ実装"
 
 #. leap/php7/php7-shmop/description
 #. tumbleweed/php7/php7-shmop/description
 msgid "An extension created as an alternative to the sysvmsg module."
-msgstr ""
+msgstr "sysvmsg モジュールの代替として作成された拡張です。"
 
 #. leap/php7-smbclient/summary
 #. tumbleweed/php7-smbclient/summary
 msgid "A PHP wrapper for libsmbclient"
-msgstr ""
+msgstr "libsmbclient 向け PHP ラッパー"
 
 #. leap/php7-smbclient/description
 #. tumbleweed/php7-smbclient/description
@@ -987,13 +1008,13 @@ msgid ""
 "smbclient is a PHP extension that uses Samba's libsmbclient library to "
 "provide Samba related functions and 'smb' streams to PHP programs."
 msgstr ""
+"smbclient は Samba の libsmbclient ライブラリを利用して、 Samba 関連の機能や 'smb' ストリームを PHP "
+"プログラムに提供することのできる、 PHP 拡張です。"
 
 #. leap/php7/php7-snmp/summary
 #. tumbleweed/php7/php7-snmp/summary
-#, fuzzy
-#| msgid "HTML documentation for PHP."
 msgid "SNMP extension for PHP"
-msgstr "PHP 向けの HTML ドキュメンテーションです。"
+msgstr "PHP 向け SNMP 拡張"
 
 #. leap/php7/php7-snmp/description
 #. tumbleweed/php7/php7-snmp/description
@@ -1005,11 +1026,16 @@ msgid ""
 "concepts are the same and the PHP functions change their behavior depending "
 "on the Net-SNMP configuration files and environment variables."
 msgstr ""
+"SNMP 拡張は Simple Network Management Protocol (SNMP) "
+"を介して、リモートのデバイスの管理を行なうためのツールセットを提供します。\n"
+"\n"
+"下位に存在する Net-SNMP ライブラリに対するラッパーとして存在することから、全ての基本的な考え方は Net-SNMP と同じであり、 PHP "
+"関数の動作を変更したい場合は、設定ファイルや環境変数を使用してください。"
 
 #. leap/php7/php7-soap/summary
 #. tumbleweed/php7/php7-soap/summary
 msgid "SOAP/WSDL extension module for PHP"
-msgstr ""
+msgstr "PHP 向け SOAP/WSDL 拡張モジュール"
 
 #. leap/php7/php7-soap/description
 #. tumbleweed/php7/php7-soap/description
@@ -1027,58 +1053,37 @@ msgstr ""
 #. leap/php7/php7-sockets/summary
 #. tumbleweed/php7/php7-sockets/summary
 msgid "Berkeley sockets API for PHP"
-msgstr ""
+msgstr "PHP 向け Berkeley ソケット API"
 
 #. leap/php7/php7-sockets/description
 #. tumbleweed/php7/php7-sockets/description
-#, fuzzy
-#| msgid ""
-#| "A low-level interface to the socket communication functions based on the "
-#| "popular BSD sockets, providing the possibility to act as a socket server "
-#| "as well as a client. This extension is experimental!"
 msgid ""
 "The socket extension implements a low-level interface to the socket "
 "communication functions based on the BSD sockets API, providing the "
 "possibility to act as a socket server as well as a client."
 msgstr ""
-"よく知られた BSD ソケットをベースにした、ソケット通信関数に対する 低レベルイ"
-"ンターフェイスです。クライアント機能だけでなく、 サーバとして動作するための機"
-"能も備えています。 この拡張は実験中のものです！"
+"BSD ソケットをベースにした、ソケット通信関数に対する低レベルインターフェイスです。クライアント機能だけでなく、 "
+"サーバとして動作するための機能も備えています。"
 
 #. leap/php7/php7-sodium/summary
 #. tumbleweed/php7/php7-sodium/summary
 msgid "Cryptographic Extension Based on Libsodium"
-msgstr ""
+msgstr "libsodium をベースにした暗号化拡張"
 
 #. leap/php7/php7-sodium/description
 #. tumbleweed/php7/php7-sodium/description
 msgid ""
 "PHP binding to libsodium software library for encryption, decryption, "
 "signatures, password hashing and more."
-msgstr ""
+msgstr "暗号化や複合化、署名やパスワードハッシュなどの機能に対応した、 libsodium ソフトウエアに対する PHP バインディングです。"
 
 #. leap/php7/php7-sqlite/summary
 #. tumbleweed/php7/php7-sqlite/summary
 msgid "SQLite database client for PHP"
-msgstr ""
+msgstr "PHP 向け SQLite データベースクライアント"
 
 #. leap/php7/php7-sqlite/description
 #. tumbleweed/php7/php7-sqlite/description
-#, fuzzy
-#| msgid ""
-#| "This is an extension for the SQLite Embeddable SQL Database Engine. "
-#| "http://www.sqlite.org/\n"
-#| "\n"
-#| "SQLite is a C library that implements an embeddable SQL database engine. "
-#| "Programs that link with the SQLite library can have SQL database access "
-#| "without running a separate RDBMS process.\n"
-#| "\n"
-#| "SQLite is not a client library used to connect to a big database server. "
-#| "SQLite is the server. The SQLite library reads and writes directly to and "
-#| "from the database files on disk.\n"
-#| "\n"
-#| "This package includes sqlite and pdo_sqlite modules for sqlite version 2 "
-#| "and 3 respectively."
 msgid ""
 "This is an extension for the SQLite Embeddable SQL Database Engine. https://"
 "www.sqlite.org\n"
@@ -1094,33 +1099,31 @@ msgid ""
 "This package includes sqlite and pdo_sqlite modules for sqlite version 2 and "
 "3 respectively."
 msgstr ""
-"SQLite は内蔵可能な SQL データベースエンジンを実装する C ライブラリです。 "
-"SQLite ライブラリとリンクするプログラムは、別途起動するような RDBMS プロセス"
-"を必要とせず SQL データベースアクセスを行なうことができます。\n"
+"これは SQLIte 組み込み可能 SQL データベースエンジン (https://www.sqlite.org) に対する拡張です。\n"
 "\n"
-"SQLite は巨大なデータベースサーバに接続するために使用するクライアントライブラ"
-"リではありません。 SQLite はサーバであり、 SQLite ライブラリがディスク上にあ"
-"るデータベースファイルに直接読み書きを行ないます。\n"
+"SQLite は内蔵可能な SQL データベースエンジンを実装する C ライブラリです。 SQLite ライブラリとリンクするプログラムは、"
+"別途起動するような RDBMS プロセスを必要とせず SQL データベースアクセスを行なうことができます。\n"
 "\n"
-"このパッケージには、 sqlite および pdo_sqlite と呼ばれる、それぞれ sqlite "
-"バージョン 2 および 3 向けのモジュールが含まれています。"
+"SQLite は巨大なデータベースサーバに接続するために使用するクライアントライブラリではありません。 SQLite はサーバであり、 SQLite "
+"ライブラリがディスク上にあるデータベースファイルに直接読み書きを行ないます。\n"
+"\n"
+"このパッケージには、 sqlite および pdo_sqlite と呼ばれる、それぞれ sqlite バージョン 2 および 3 "
+"向けのモジュールが含まれています。"
 
 #. leap/php7/php7-sysvmsg/summary
 #. tumbleweed/php7/php7-sysvmsg/summary
 msgid "SysV Message Queue support for PHP"
-msgstr ""
+msgstr "PHP 向け SysV メッセージキューサポート"
 
 #. leap/php7/php7-sysvmsg/description
 #. tumbleweed/php7/php7-sysvmsg/description
-#, fuzzy
-#| msgid "This module provides System V IPC support."
 msgid "This module provides System V Message Queue support."
-msgstr "このモジュールは System V IPC サポートを提供します。"
+msgstr "このモジュールは System V メッセージキューサポートを提供します。"
 
 #. leap/php7/php7-sysvsem/summary
 #. tumbleweed/php7/php7-sysvsem/summary
 msgid "SysV Semaphore support for PHP"
-msgstr ""
+msgstr "PHP 向け SysV セマフォサポート"
 
 #. leap/php7/php7-sysvsem/description
 #. tumbleweed/php7/php7-sysvsem/description
@@ -1130,7 +1133,7 @@ msgstr "System V セマフォに対する PHP インターフェイスです。"
 #. leap/php7/php7-sysvshm/summary
 #. tumbleweed/php7/php7-sysvshm/summary
 msgid "SysV Shared Memory support for PHP"
-msgstr ""
+msgstr "PHP 向け SysV 共有メモリサポート"
 
 #. leap/php7/php7-sysvshm/description
 #. tumbleweed/php7/php7-sysvshm/description
@@ -1140,31 +1143,24 @@ msgstr "System V 共有メモリに対する PHP インターフェイスです�
 #. leap/php7/php7-tidy/summary
 #. tumbleweed/php7/php7-tidy/summary
 msgid "PHP7 binding for the Tidy HTML cleaner"
-msgstr ""
+msgstr "Tidy HTML クリーナー向け PHP7 バインディング"
 
 #. leap/php7/php7-tidy/description
 #. tumbleweed/php7/php7-tidy/description
-#, fuzzy
-#| msgid ""
-#| "Tidy is an extension based on Libtidy (http://tidy.sf.net/) and allows a "
-#| "PHP developer to clean, repair, and traverse HTML, XHTML, and XML "
-#| "documents -- including ones with embedded scripting languages such as PHP "
-#| "or ASP within them using OO constructs."
 msgid ""
 "Tidy is an extension based on Libtidy (http://tidy.sourceforge.net) and "
 "allows a PHP developer to clean, repair, and traverse HTML, XHTML, and XML "
 "documents -- including ones with embedded scripting languages such as PHP or "
 "ASP within them using OO constructs."
 msgstr ""
-"Tidy は Libtidy (http://tidy.sf.net/) をベースにした拡張で、 PHP の開発者に対"
-"してHTML, XHTML, XML の各文書をクリーンアップ／清掃／アクセスする機能を提供し"
-"ます。PHP や ASP などの中で、オブジェクト指向のコンストラクタを使用する内蔵型"
-"スクリプト言語も用意されています。"
+"Tidy は Libtidy (http://tidy.sf.net/) をベースにした拡張で、 PHP の開発者に対して HTML, XHTML, "
+"XML の各文書をクリーンアップ／清掃／アクセスする機能を提供します。PHP や ASP "
+"などの中で、オブジェクト指向のコンストラクタを使用する内蔵型スクリプト言語も用意されています。"
 
 #. leap/php7/php7-tokenizer/summary
 #. tumbleweed/php7/php7-tokenizer/summary
 msgid "Extension module to access Zend Engine's PHP tokenizer"
-msgstr ""
+msgstr "Zend エンジンの PHP トークナイザへのアクセスを行なう拡張モジュール"
 
 #. leap/php7/php7-tokenizer/description
 #. tumbleweed/php7/php7-tokenizer/description
@@ -1182,19 +1178,19 @@ msgstr ""
 #. leap/php7-uuid/summary
 #. tumbleweed/php7-uuid/summary
 msgid "PHP UUID support functions"
-msgstr ""
+msgstr "PHP UUID サポート関数"
 
 #. leap/php7-uuid/description
 #. tumbleweed/php7-uuid/description
 msgid ""
 " This extension provides functions to generate and analyse universally "
 "unique identifiers (UUIDs)."
-msgstr ""
+msgstr " この拡張は、 Universally Unique IDentifier (UUID) を生成したり分析したりするための関数を提供します。"
 
 #. leap/php7/php7-wddx/summary
 #. tumbleweed/php7/php7-wddx/summary
 msgid "WDDX support for PHP"
-msgstr ""
+msgstr "PHP 向け WDDX サポート"
 
 #. leap/php7/php7-wddx/description
 #. tumbleweed/php7/php7-wddx/description
@@ -1204,11 +1200,14 @@ msgid ""
 "mechanism designed to pass data between different environments and different "
 "computers."
 msgstr ""
+"WDDX (Web Distributed Data Exchange) を扱うための PHP 関数です。この WDDX は、プログラミング言語にもプラッ"
+"トフォームにも、伝送手順にも依存しない、中立なデータ交換機構を意味するものです。異なる環境や異なるコンピュータ同士でデータ交換を行なうために作られています"
+"。"
 
 #. leap/php7-xdebug/summary
 #. tumbleweed/php7-xdebug/summary
 msgid "Extended PHP debugger"
-msgstr ""
+msgstr "拡張 PHP デバッガ"
 
 #. leap/php7-xdebug/description
 #. tumbleweed/php7-xdebug/description
@@ -1226,11 +1225,19 @@ msgid ""
 "  * profiling information for PHP scripts   * code coverage analysis   * "
 "capabilities to debug your scripts interactively with a debug client"
 msgstr ""
+"Xdebug 拡張は、下記のようなデバッグ情報を提供することで、スクリプト内に存在するバグの検出を促進する仕組みです:\n"
+"\n"
+"  * エラーメッセージ内にスタック情報や関数トレースなどを含めることができます:    o ユーザ定義関数に対する完全なパラメータ表示    o "
+"関数名、ファイル名、行数などの表示    o メンバー関数への対応  * メモリ割り当て  * 無限再帰呼び出しへの保護\n"
+"\n"
+"XDebug では、下記も提供しています:\n"
+"\n"
+"  * PHP スクリプト向けのプロファイル情報の提供  * コードカバレッジの分析  * デバッグクライアントを利用したスクリプトの対話型デバッグ機能"
 
 #. leap/php7/php7-xmlreader/summary
 #. tumbleweed/php7/php7-xmlreader/summary
 msgid "Streaming XML reader extension for PHP"
-msgstr ""
+msgstr "PHP 向けストリーム型 XML 読み込み拡張"
 
 #. leap/php7/php7-xmlreader/description
 #. tumbleweed/php7/php7-xmlreader/description
@@ -1238,11 +1245,13 @@ msgid ""
 "The XMLReader extension is an XML Pull parser. The reader acts as a cursor "
 "going forward on the document stream and stopping at each node on the way."
 msgstr ""
+"XMLReader 拡張は XML のプル型パーサーです。 XMLReader "
+"は文書ストリーム内の前進カーソルとして動作し、現われたノードの末尾で停止する仕組みを備えています。"
 
 #. leap/php7/php7-xmlrpc/summary
 #. tumbleweed/php7/php7-xmlrpc/summary
 msgid "XML RPC support for PHP"
-msgstr ""
+msgstr "PHP 向け XML RPC サポート"
 
 #. leap/php7/php7-xmlrpc/description
 #. tumbleweed/php7/php7-xmlrpc/description
@@ -1252,7 +1261,7 @@ msgstr "このモジュールは、 XMLRPC-EPI サポートを追加します。
 #. leap/php7/php7-xmlwriter/summary
 #. tumbleweed/php7/php7-xmlwriter/summary
 msgid "Streaming-based XML writer extension for PHP"
-msgstr ""
+msgstr "PHP 向けストリーム型 XML 書き込み拡張"
 
 #. leap/php7/php7-xmlwriter/description
 #. tumbleweed/php7/php7-xmlwriter/description
@@ -1270,23 +1279,25 @@ msgid ""
 "PHP's XSL extension implements the XSL (Extensible Stylesheet Language) "
 "standard, performing XSLT transformations using the libxslt library"
 msgstr ""
+"PHP の XSL 拡張は XSL (Extensible Stylesheet Language) を実装する拡張で、 libxslt "
+"ライブラリを利用して XSLT 変換を行なうことができます"
 
 #. leap/php7/php7-zip/summary
 #. tumbleweed/php7/php7-zip/summary
 msgid "ZIP archive support for PHP"
-msgstr ""
+msgstr "PHP 向け ZIP アーカイブサポート"
 
 #. leap/php7/php7-zip/description
 #. tumbleweed/php7/php7-zip/description
 msgid ""
 "This extension allows to transparently read or write ZIP compressed archives "
 "and the files inside them."
-msgstr ""
+msgstr "この拡張は、 ZIP 形式で圧縮された書庫や、その書庫の中にあるファイルを透過的に読み込んだり書き込んだりすることができます。"
 
 #. leap/php7/php7-zlib/summary
 #. tumbleweed/php7/php7-zlib/summary
 msgid "Zlib compression support for PHP"
-msgstr ""
+msgstr "PHP 向け Zlib 圧縮サポート"
 
 #. leap/php7/php7-zlib/description
 #. tumbleweed/php7/php7-zlib/description
@@ -1295,11 +1306,13 @@ msgid ""
 "files, through versions of most of the filesystem functions which work with "
 "gzip-compressed files (and uncompressed files, too, but not with sockets)."
 msgstr ""
+"このモジュールは、 gzip 圧縮ファイルで動作するほとんどのファイルシステム関数のバージョンを通して、gzip（.gz）"
+"圧縮ファイルを透過的に読み書きすることができます (非圧縮でもかまいませんが、ソケットと併用することはできません) 。"
 
 #. leap/phpMyAdmin/summary
 #. tumbleweed/phpMyAdmin/summary
 msgid "Administration of MySQL over the web"
-msgstr ""
+msgstr "Web での MySQL 管理"
 
 #. leap/phpMyAdmin/description
 #. tumbleweed/phpMyAdmin/description
@@ -1331,11 +1344,30 @@ msgid ""
 "1.17)   * communicate in 57 different languages   * synchronize two "
 "databases residing on the same as well as remote servers     (see FAQ 9.1)"
 msgstr ""
+"phpMyAdmin は MySQL サーバ全体を管理することのできるアプリケーション (スーパーユーザの権限が必要です) "
+"で、単一のデータベースを管理することもできます。後者を実現するには、 MySQL "
+"ユーザを適切に設定して、必要なデータベースにのみ読み書きできるように設定する必要があります。詳しくは MySQL "
+"マニュアルの適切な箇所を参照してください。\n"
+"\n"
+"現時点では、 phpMyAdmin には下記のような機能があります:\n"
+"\n"
+"  * データベースやテーブル、ビューやフィールド、インデックスなどの参照や削除  * "
+"データベースやテーブル、フィールドやインデックスなどの作成／コピー／削除  * サーバやデータベース、テーブルなどのメンテナンス "
+"(サーバ側の設定の提案にも対応)  * SQL ステートメントの実行や編集、ブックマーク設定 (一括問い合わせにも対応)  * "
+"テキストのテーブルへの読み込み  * テーブルのダンプの作成や読み込み  * さまざまなデータ形式でのデータの書き出し: CSV, XML, PDF, "
+"ISO/IEC 26300 -     OpenDocument テキストおよび表計算, Word, Excel, L^AT[E]X 形式など  * "
+"Microsoft Excel や OpenDocument 表計算、 XML, CSV, SQL ファイルによる、    データや MySQL "
+"構造の取り込み  * 複数サーバの管理  * MySQL のユーザと権限の管理  * MyISAM テーブルの参照整合性のチェック  * Query-"
+"by-example (QBE) の使用による、必要なテーブルの自動接続を使用した複雑な問い合わせの作成  * データベース配置の PDF 図作成  * "
+"データベース全体もしくは一部への問い合わせ  * 保存されているデータから任意の形式への変換、 BLOB "
+"データの画像変換やダウンロードリンクへの変換など  * データベースやテーブル、ビューなどの変更追跡  * InnoDB テーブルと外部キーへの対応 ("
+"FAQ 3.6 を参照)  * mysqli と呼ばれる改善された MySQL 拡張への対応 (FAQ 1.17 を参照)  * 57 "
+"種類の異なる言語に対応  * 同じサーバ内や異なるサーバ同士でのデータベースの同期 (FAQ 9.1 を参照)"
 
 #. leap/phpPgAdmin/summary
 #. tumbleweed/phpPgAdmin/summary
 msgid "Administration of PostgreSQL over the web"
-msgstr ""
+msgstr "Web での PostgreSQL 管理"
 
 #. leap/phpPgAdmin/description
 msgid ""
@@ -1358,6 +1390,22 @@ msgid ""
 "conflicts. Edit Russian data using a Japanese interface!\n"
 "* Easy to install and configur"
 msgstr ""
+"phpPgAdmin は PostgreSQL 向けの Web ベース管理ツールです。 PostgreSQL の DBA (データベース管理者) "
+"のほか、初心者やホスティングサービスにも完璧な仕組みです。\n"
+"\n"
+"機能\n"
+"* 複数サーバの管理\n"
+"* PostgreSQL 8.4.x, 9.0.x, 9.1.x, 9.2.x への対応\n"
+"* 全要素の管理機能: "
+"ユーザやグループ、データベースやスキーマ、テーブルやインデックス、制約やトリガー、ルールや権限、ビューやシーケンス、関数や高度なオブジェクト、"
+"レポートに対応\n"
+"* データ操作の単純化: テーブルやビュー、レポートなどの参照、任意の SQL の実行、 select, insert, update, delete "
+"への対応\n"
+"* テーブルのデータから任意の形式への出力: SQL, COPY, XML, XHTML, CSV, タブ区切り, pg_dump\n"
+"* SQL スクリプトの取り込み、データのコピー、 XML, CSV, タブ区切りへの対応\n"
+"* Slony マスター／スレーブ型レプリケーションエンジン\n"
+"* 言語サポートの充実化: 27 種類の言語に対応、エンコーディングの矛盾無し、日本語インターフェイスを利用してロシア語データの編集にも対応します!\n"
+"* インストールと設定が簡単"
 
 #. tumbleweed/phpPgAdmin/description
 msgid ""
@@ -1380,6 +1428,22 @@ msgid ""
 "conflicts. Edit Russian data using a Japanese interface!\n"
 "* Easy to install and configur"
 msgstr ""
+"phpPgAdmin は PostgreSQL 向けの Web ベース管理ツールです。 PostgreSQL の DBA (データベース管理者) "
+"のほか、初心者やホスティングサービスにも完璧な仕組みです。\n"
+"\n"
+"機能\n"
+"* 複数サーバの管理\n"
+"* PostgreSQL 8.4.x, 9.x.x, 10.x, 11.x への対応\n"
+"* 全要素の管理機能: "
+"ユーザやグループ、データベースやスキーマ、テーブルやインデックス、制約やトリガー、ルールや権限、ビューやシーケンス、関数や高度なオブジェクト、"
+"レポートに対応\n"
+"* データ操作の単純化: テーブルやビュー、レポートなどの参照、任意の SQL の実行、 select, insert, update, delete "
+"への対応\n"
+"* テーブルのデータから任意の形式への出力: SQL, COPY, XML, XHTML, CSV, タブ区切り, pg_dump\n"
+"* SQL スクリプトの取り込み、データのコピー、 XML, CSV, タブ区切りへの対応\n"
+"* Slony マスター／スレーブ型レプリケーションエンジン\n"
+"* 言語サポートの充実化: 27 種類の言語に対応、エンコーディングの矛盾無し、日本語インターフェイスを利用してロシア語データの編集にも対応します!\n"
+"* インストールと設定が簡単"
 
 #, fuzzy
 #~| msgid ""
