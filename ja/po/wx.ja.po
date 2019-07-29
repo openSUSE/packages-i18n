@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2019-05-06 14:28+0000\n"
-"PO-Revision-Date: 2018-01-09 06:00+0000\n"
+"PO-Revision-Date: 2019-07-29 05:50+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/wx-"
-"master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
+"wx-master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.17.1\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #. leap/wxWidgets-3_0-nostl/libwx_baseu-suse-nostl3/summary
 #. leap/wxWidgets-3_0/libwx_baseu-suse3/summary
@@ -157,6 +157,10 @@ msgid ""
 "and is provided for old programs which fail to use e.g. wxString and instead "
 "rely on the wxChar pointer API."
 msgstr ""
+"wxWidgets クロスプラットフォーム型 GUI 向けのライブラリです。\n"
+"\n"
+"この wxWidgets の派生系は、 STL 型 (std::string など) を使用せずに構築されているほか、 wxString "
+"などを使用することができず、その代わりに wxChar ポインタ API に依存している古いプログラム向けに提供されているものです。"
 
 #. leap/wxWidgets-3_0/libwx_baseu-suse3/description
 #. leap/wxWidgets-3_0/libwx_baseu-suse3-32bit/description
@@ -283,15 +287,13 @@ msgstr ""
 #. tumbleweed/wxWidgets-3_0-nostl/libwx_gtk2u_xrc-suse-nostl3_0_4/description
 #. tumbleweed/wxWidgets-3_0/libwx_gtk2u_xrc-suse3_0_4/description
 #. tumbleweed/wxWidgets-3_0/libwx_gtk2u_xrc-suse3_0_4-32bit/description
-#, fuzzy
 msgid "Library for the wxWidgets cross-platform GUI."
-msgstr "WebP グラフィックフォーマット向けライブラリ"
+msgstr "wxWidgets クロスプラットフォーム型 GUI 向けのライブラリです。"
 
 #. leap/wxlua/libwxlua/summary
 #. tumbleweed/wxlua/libwxlua/summary
-#, fuzzy
 msgid "Set of Lua bindings to the C++ wxWidgets cross-platform GUI library"
-msgstr "WebP グラフィックフォーマット向けライブラリ"
+msgstr "C++ wxWidgets クロスプラットフォーム型 GUI ライブラリに対する Lua バインディング"
 
 #. leap/wxlua/libwxlua/description
 #. tumbleweed/wxlua/libwxlua/description
@@ -302,12 +304,15 @@ msgid ""
 "dialogs, menus, toolbars, controls, image loading and saving, drawing, "
 "sockets, streams, printing, clipboard access... and much more."
 msgstr ""
+"wxLua は C++ wxWidgets クロスプラットフォーム型 GUI ライブラリに対するバインディング集で、 Lua "
+"プログラミング言語に対応するための仕組みです。 wxWidgets 側で提供されているほぼ全ての機能を Lua から使用することができますので、お使いのプ"
+"ログラムからウインドウやダイアログ、メニューやツールバー、コントロールや画像読み込み／保存、描画やソケット、ストリームや印刷、クリップボードアクセスなど、"
+"多数の機能にアクセスすることができるようになります。"
 
 #. leap/wxstedit/libwxstedit-wx30gtk2u-1_6_0/summary
 #. tumbleweed/wxstedit/libwxstedit-wx30gtk2u-1_6_0/summary
-#, fuzzy
 msgid "Library for the wxWidgets's Scintilla wrapper"
-msgstr "WebP グラフィックフォーマット向けライブラリ"
+msgstr "wxWidgets の Scintilla ラッパー向けライブラリ"
 
 #. leap/wxstedit/libwxstedit-wx30gtk2u-1_6_0/description
 #. leap/wxstedit/description
@@ -327,33 +332,40 @@ msgid ""
 "necessary code to ease the burden of providing a full featured editor or a "
 "set of identically styled editors in a notebook or frame."
 msgstr ""
+"wxStEdit は wxWidgets の Scintilla テキストエディタウイジェットに対する wxStyledTextCtrl ラッパー向けのラ"
+"イブラリおよびサンプルプログラムです。さまざまな便利機能や追加機能が提供され、たとえば必要な設定やスタイル、言語管理機能のほか、メニューの作成や更新、スプ"
+"リッタやメモ、フレームコンポーネントなどを使用することができます。このほか、検索や置換の機能やエディタの設定、プロパティダイアログなどの機能も追加されてい"
+"ます。巨大なプログラムへの組み込みも容易になるよう作られており、可能な限りの管理を行なうことで、拡張性が高くなるように作られています。個別の機能や "
+"&quot;ヘルパー&quot; 機能は、必要であれば無効化したり上書きしたりすることもできます。少なくともこのエディタは、 "
+"wxStyledTextCtrl "
+"を利用し、完全機能のエディタに必要な機能を追加していますので、メモ帳やフレーム内で同じスタイルのエディタとして使用することができるようになっています。"
 
 #. leap/wxsvg/libwxsvg-devel/summary
 #. tumbleweed/wxsvg/libwxsvg-devel/summary
 msgid "Header files for wxsvg"
-msgstr ""
+msgstr "wxsvg 向けヘッダファイル"
 
 #. leap/wxsvg/libwxsvg-devel/description
 #. tumbleweed/wxsvg/libwxsvg-devel/description
 msgid "Include files for developing programs based on wxsvg."
-msgstr ""
+msgstr "wxsvg をベースにしてプログラムを開発するのに必要なヘッダファイルです。"
 
 #. leap/wxsvg/libwxsvg3/summary
 #. leap/wxsvg/summary
 #. tumbleweed/wxsvg/libwxsvg3/summary
 #. tumbleweed/wxsvg/summary
 msgid "Library to create, manipulate and render SVG files"
-msgstr ""
+msgstr "SVG ファイルを作成／操作／描画するためのライブラリ"
 
 #. leap/wxsvg/libwxsvg3/description
 #. tumbleweed/wxsvg/libwxsvg3/description
 msgid "Dynamic libraries from wxsvg, as required at runtime."
-msgstr ""
+msgstr "実行時に必要に応じて使用することのできる、 wxsvg からの動的ライブラリです。"
 
 #. leap/wxEDID/summary
 #. tumbleweed/wxEDID/summary
 msgid "Extended Display Identification Data editor"
-msgstr ""
+msgstr "拡張ディスプレイ情報データ (EDID) エディタ"
 
 #. leap/wxEDID/description
 #. tumbleweed/wxEDID/description
@@ -366,23 +378,29 @@ msgid ""
 "and import EDID data to/from text files (hex ASCII format) and also to save "
 "the structures as a human-readable text."
 msgstr ""
+"wxEDID は wxWidgets ベースの EDID (Extended Display Identification Data) "
+"エディタです。このソフトウエアは現状開発が始まったばかりのものであり、ベースとなる EDID v1.3+ 構造や CEA-861 "
+"(最初の拡張ブロックとして) などを修正できるようになっています。また、通常のエディタ機能に加え、 DTD "
+"コンストラクタと呼ばれる機能が提供されています。これにより、タイミングの選択や編集を容易にできるようになっています。また、 EDID "
+"データをテキストファイル (16 進数形式) "
+"に出力したり、テキスト形式で書かれているものを取り込んだりすることができるほか、人間にとってわかりやすい形式で保存することもできます。"
 
 #. leap/wxEphe/summary
 #. tumbleweed/wxEphe/summary
 msgid "Astronomical ephemeris for the Sun, Moon and solar system planets"
-msgstr ""
+msgstr "太陽／月／太陽系の惑星向け天文暦"
 
 #. leap/wxEphe/description
 #. tumbleweed/wxEphe/description
 msgid ""
 "wxEphe displays astronomical ephemeris for the Sun, the Moon and solar "
 "system planets, given the date and observer's location."
-msgstr ""
+msgstr "wxEphe は太陽や月のほか、太陽系の惑星に対する天文暦を表示することができます。日付や観測者の場所を指定することもできます。"
 
 #. leap/wxGTK3-3_2/wxGTK3-3_2-devel/summary
 #. tumbleweed/wxGTK3-3_2/wxGTK3-3_2-devel/summary
 msgid "Development files for GTK3-backed wxWidgets 3.2"
-msgstr ""
+msgstr "GTK3 バックエンド型の wxWidgets 3.2 向け開発用ファイル"
 
 #. leap/wxGTK3-3_2/wxGTK3-3_2-devel/description
 msgid ""
@@ -395,23 +413,30 @@ msgid ""
 "Note: wxWidgets variant devel packages are mutually exclusive. Please read /"
 "usr/share/doc/packages/wxGTK3-3_2/README.SUSE to pick a correct variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxGTK3 で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxGTK3-3_2/README.SUSE をお読みください。"
 
 #. leap/wxMaxima/summary
 #. tumbleweed/wxMaxima/summary
-#, fuzzy
 msgid "Graphical User Interface for the maxima Computer Algebra System"
-msgstr "Tracker 向けグラフィカルユーザインターフェイス"
+msgstr "maxima コンピュータ代数システム向けグラフィカルユーザインターフェイス"
 
 #. leap/wxMaxima/description
 #. tumbleweed/wxMaxima/description
 msgid ""
 "wxMaxima is a GUI for the computer algebra system maxima based on wxWidgets."
-msgstr ""
+msgstr "wxMaxima は wxWidgets をベースにしたコンピュータ代数システム maxima 向け GUI です。"
 
 #. leap/wxQt-3_2/wxQt-3_2-devel/summary
 #. tumbleweed/wxQt-3_2/wxQt-3_2-devel/summary
 msgid "Development files for Qt-backed wxWidgets 3.2"
-msgstr ""
+msgstr "Qt バックエンド型 wxWidgets 3.2 向け開発用ファイル"
 
 #. leap/wxQt-3_2/wxQt-3_2-devel/description
 msgid ""
@@ -424,13 +449,21 @@ msgid ""
 "Note: wxWidgets variant devel packages are mutually exclusive. Please read /"
 "usr/share/doc/packages/wxQt-3_2/README.SUSE to pick a correct variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxQt で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxQt-3_2/README.SUSE をお読みください。"
 
 #. leap/wxWidgets-3_0/wxWidgets-3_0-devel/summary
 #. leap/wxWidgets-3_0/wxWidgets-3_0-devel-32bit/summary
 #. tumbleweed/wxWidgets-3_0/wxWidgets-3_0-devel/summary
 #. tumbleweed/wxWidgets-3_0/wxWidgets-3_0-devel-32bit/summary
 msgid "Development files for GTK2-backed wxWidgets 3.0"
-msgstr ""
+msgstr "GTK2 バックエンド型 wxWidgets 3.0 向け開発用ファイル"
 
 #. leap/wxWidgets-3_0/wxWidgets-3_0-devel/description
 #. leap/wxWidgets-3_0/wxWidgets-3_0-devel-32bit/description
@@ -446,29 +479,33 @@ msgid ""
 "Note: wxWidgets variant devel packages are mutually exclusive. Please read /"
 "usr/share/doc/packages/wxWidgets-3_0/README.SUSE to pick a correct variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxGTK2 で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxWidgets-3_0/README.SUSE をお読みください。"
 
 #. leap/wxWidgets-3_0-docs/summary
 #. leap/wxWidgets-docs/summary
 #. tumbleweed/wxWidgets-3_0-docs/summary
 #. tumbleweed/wxWidgets-docs/summary
-#, fuzzy
 msgid "wxWidgets Documentation"
-msgstr "wxGTK ドキュメント"
+msgstr "wxWidgets ドキュメンテーション"
 
 #. leap/wxWidgets-3_0-docs/description
 #. leap/wxWidgets-docs/description
 #. tumbleweed/wxWidgets-3_0-docs/description
 #. tumbleweed/wxWidgets-docs/description
-#, fuzzy
 msgid "This package contains wxWidgets documentation in HTML format."
-msgstr ""
-"このパッケージには HTML や PDF 形式での [pkg://wxGTK] ドキュメントが含まれて"
-"います。"
+msgstr "このパッケージには、 HTML 形式での wxWidgets ドキュメンテーションが含まれています。"
 
 #. leap/wxWidgets-3_0-nostl/wxWidgets-3_0-nostl-devel/summary
 #. tumbleweed/wxWidgets-3_0-nostl/wxWidgets-3_0-nostl-devel/summary
 msgid "Development files for an old API variant of wxWidgets"
-msgstr ""
+msgstr "wxWidgets の古い API 形式向け開発用ファイル"
 
 #. leap/wxWidgets-3_0-nostl/wxWidgets-3_0-nostl-devel/description
 #. tumbleweed/wxWidgets-3_0-nostl/wxWidgets-3_0-nostl-devel/description
@@ -483,6 +520,14 @@ msgid ""
 "usr/share/doc/packages/wxWidgets-3_0-nostl/README.SUSE to pick a correct "
 "variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxGTK2 で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxWidgets-3_0-nostl/README.SUSE をお読みください。"
 
 #. leap/wxWidgets-3_0/wxWidgets-3_0-plugin-sound_sdlu-3_0/summary
 #. leap/wxWidgets-3_0/wxWidgets-3_0-plugin-sound_sdlu-3_0-32bit/summary
@@ -490,9 +535,8 @@ msgstr ""
 #. tumbleweed/wxWidgets-3_0/wxWidgets-3_0-plugin-sound_sdlu-3_0/summary
 #. tumbleweed/wxWidgets-3_0/wxWidgets-3_0-plugin-sound_sdlu-3_0-32bit/summary
 #. tumbleweed/wxWidgets-3_2/wxWidgets-3_2-plugin-sound_sdlu-3_2/summary
-#, fuzzy
 msgid "wxWidgets SDL Plugin"
-msgstr "wxGTK ドキュメント"
+msgstr "wxWidgets SDL プラグイン"
 
 #. leap/wxWidgets-3_0/wxWidgets-3_0-plugin-sound_sdlu-3_0/description
 #. leap/wxWidgets-3_0/wxWidgets-3_0-plugin-sound_sdlu-3_0-32bit/description
@@ -501,12 +545,12 @@ msgstr "wxGTK ドキュメント"
 #. tumbleweed/wxWidgets-3_0/wxWidgets-3_0-plugin-sound_sdlu-3_0-32bit/description
 #. tumbleweed/wxWidgets-3_2/wxWidgets-3_2-plugin-sound_sdlu-3_2/description
 msgid "SDL Plugin for the wxWidgets cross-platform GUI."
-msgstr ""
+msgstr "wxWidgets クロスプラットフォーム型 GUI 向け SDL プラグインです。"
 
 #. leap/wxWidgets-3_2/wxWidgets-3_2-devel/summary
 #. tumbleweed/wxWidgets-3_2/wxWidgets-3_2-devel/summary
 msgid "Development files for GTK2-backed wxWidgets 3.2"
-msgstr ""
+msgstr "GTK2 バックエンド型 wxWidgets 3.2 向け開発用ファイル"
 
 #. leap/wxWidgets-3_2/wxWidgets-3_2-devel/description
 msgid ""
@@ -519,25 +563,29 @@ msgid ""
 "Note: wxWidgets variant devel packages are mutually exclusive. Please read /"
 "usr/share/doc/packages/wxWidgets-3_2/README.SUSE to pick a correct variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxGTK2 で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxWidgets-3_2/README.SUSE をお読みください。"
 
 #. leap/wxWidgets-3_0/wxWidgets-lang/summary
 #. tumbleweed/wxWidgets-3_0/wxWidgets-lang/summary
-#, fuzzy
-#| msgid "Translations for package wxhexeditor"
 msgid "Translations for wxWidgets"
-msgstr "wxhexeditor 向け翻訳パッケージ"
+msgstr "wxWidgets 向け翻訳データ"
 
 #. leap/wxWidgets-3_0/wxWidgets-lang/description
 #. tumbleweed/wxWidgets-3_0/wxWidgets-lang/description
-#, fuzzy
-#| msgid "Provides translations to the package wxWidgets"
 msgid "Provides translations for wxWidgets."
-msgstr "wxWidgets パッケージに対する翻訳を提供します。"
+msgstr "wxWidgets に対する翻訳を提供します。"
 
 #. leap/wxhexeditor/summary
 #. tumbleweed/wxhexeditor/summary
 msgid "A free HEX editor / disk editor"
-msgstr ""
+msgstr "フリー 16 進数エディタ／ディスクエディタ"
 
 #. leap/wxhexeditor/description
 #. tumbleweed/wxhexeditor/description
@@ -547,6 +595,9 @@ msgid ""
 "Features:  * Small footprint on RAM;  * Raw Disk Access (on POSIX systems);  "
 "* Does not create temporary files."
 msgstr ""
+"wxHexEditor は非常に巨大なファイルを扱うことのできる 16 進数エディタです。最大で 2^64 "
+"バイトまでのファイルを扱うことができます。またディスクエディタとして使用することもできます。主な機能:  * 小さなメモリフットプリント  * "
+"直接ディスクアクセス (POSIX システムのみ)  * 一時ファイル無しでの機能提供"
 
 #. leap/wxhexeditor/wxhexeditor-lang/summary
 #. tumbleweed/wxhexeditor/wxhexeditor-lang/summary
@@ -561,7 +612,7 @@ msgstr "wxhexeditor パッケージ向けの翻訳データです。"
 #. leap/wxlua/summary
 #. tumbleweed/wxlua/summary
 msgid "Lua IDE with a GUI debugger and binding generator"
-msgstr ""
+msgstr "GUI デバッガやバインディング生成機能の付いた Lua IDE"
 
 #. leap/wxlua/description
 #. tumbleweed/wxlua/description
@@ -570,11 +621,13 @@ msgid ""
 "wxLua) with a GUI debugger, a binding generator and wxWidgets bindings "
 "usable as a module."
 msgstr ""
+"このパッケージには、 GUI デバッガやバインディング生成機能、そして wxWidgets のバインディングをモジュールとして使用することのできる、"
+"統合開発環境 (Integrated Development Environments (IDE), wxLua で書かれています) が含まれています。"
 
 #. leap/wxlua/wxlua-devel/summary
 #. tumbleweed/wxlua/wxlua-devel/summary
 msgid "Development files of libwxlua"
-msgstr ""
+msgstr "libwxlua 向け開発用ファイル"
 
 #. leap/wxlua/wxlua-devel/description
 #. tumbleweed/wxlua/wxlua-devel/description
@@ -582,40 +635,38 @@ msgid ""
 "This package contains files to be used in your C++ programs to embed a Lua "
 "interpreter with the wxWidgets API."
 msgstr ""
+"このパッケージには、お使いの C++ プログラム内で wxWidgets API を使用し、 Lua "
+"インタプリタ機能を組み込むことのできるファイルが含まれています。"
 
 #. leap/wxmp3gain/summary
 #. tumbleweed/wxmp3gain/summary
 msgid "Front-end for mp3gain based on wxWidgets"
-msgstr ""
+msgstr "wxWidgets をベースにした mp3gain 向けフロントエンド"
 
 #. leap/wxmp3gain/description
 #. tumbleweed/wxmp3gain/description
 msgid "A front-end for mp3gain based on the wxWidgets toolkit."
-msgstr ""
+msgstr "wxWidgets ツールキットをベースにした mp3gain 向けのフロントエンドです。"
 
 #. leap/wxmp3gain/wxmp3gain-lang/summary
 #. tumbleweed/wxmp3gain/wxmp3gain-lang/summary
-#, fuzzy
-#| msgid "Translations for package wxhexeditor"
 msgid "Translations for package wxmp3gain"
-msgstr "wxhexeditor 向け翻訳パッケージ"
+msgstr "wxmp3gain 向け翻訳データ"
 
 #. leap/wxmp3gain/wxmp3gain-lang/description
 #. tumbleweed/wxmp3gain/wxmp3gain-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"wxhexeditor\" package."
 msgid "Provides translations for the \"wxmp3gain\" package."
-msgstr "wxhexeditor パッケージ向けの翻訳データです。"
+msgstr "\"wxmp3gain\" パッケージ向けの翻訳データです。"
 
 #. leap/wxstedit/summary
 #. tumbleweed/wxstedit/summary
 msgid "Sample program for wxWidgets's wxStyledTextCtrl Scintilla wrapper"
-msgstr ""
+msgstr "wxWidgets の wxStyledTextCtrl Scintilla ラッパー向けサンプルプログラム"
 
 #. leap/wxstedit/wxstedit-devel/summary
 #. tumbleweed/wxstedit/wxstedit-devel/summary
 msgid "Development files of libwxstedit"
-msgstr ""
+msgstr "libwxstedit 向け開発用ファイル"
 
 #. leap/wxstedit/wxstedit-devel/description
 #. tumbleweed/wxstedit/wxstedit-devel/description
@@ -623,17 +674,17 @@ msgid ""
 "libwxstedit is a library for the wxWidgets's wxStyledTextCtrl wrapper around "
 "the Scintilla text editor widget."
 msgstr ""
+"libwxstedit は Scintilla テキストエディタウイジェットをラッピングする、 wxWidgets の wxStyledTextCtrl "
+"ラッパー向けのライブラリです。"
 
 #. leap/wxsvg/description
 #. tumbleweed/wxsvg/description
 msgid "WxSVG is a C++ library to create, manipulate and render SVG files."
-msgstr ""
+msgstr "WxSVG は SVG ファイルの作成や編集、描画に対応した C++ ライブラリです。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_baseu-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets base library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets 基本ライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_baseu-suse3_1_3/description
 msgid ""
@@ -642,58 +693,55 @@ msgid ""
 "portability classes that abstract differences between platforms. wxBase can "
 "be used to develop console-only applications."
 msgstr ""
+"それぞれの wxWidgets アプリケーションは、このライブラリに対してリンクしなければなりません。ここには全ての wxWidgets "
+"コードが依存するクラス (wxString など) のほか、プラットフォームごとに異なる仕様を抽象化する可搬性クラスも用意されています。 wxBase "
+"はコンソールのみのアプリケーションを開発する際に使用することができるものです。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_baseu_net-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets networking library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets ネットワーキングライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_baseu_net-suse3_1_3/description
 msgid "Classes for network access with wxWidgets."
-msgstr ""
+msgstr "wxWidgets でネットワークアクセスを使用するためのクラスです。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_baseu_xml-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets XML parser library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets XML パーサーライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_baseu_xml-suse3_1_3/description
 msgid "This library contains classes for parsing XML documents."
-msgstr ""
+msgstr "このライブラリには、 XML 文書を処理するためのクラスが含まれています。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_adv-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_adv-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_adv-suse3_1_3/summary
 msgid "wxWidgets advanced widgets and rarely-used widgets"
-msgstr ""
+msgstr "wxWidgets の追加ウイジェットおよびあまり使用されないウイジェット"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_adv-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_adv-suse3_1_3/description
 #. tumbleweed/wxQt-3_2/libwx_qtu_adv-suse3_1_3/description
 msgid "Advanced or rarely-used GUI classes for wxWidgets."
-msgstr ""
+msgstr "wxWidgets 向けの追加のウイジェットのほか、あまり使用されることのない GUI クラスが含まれています。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_aui-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_aui-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_aui-suse3_1_3/summary
 msgid "wxWidgets advanced user interface docking library"
-msgstr ""
+msgstr "wxWidgets の高度なユーザインターフェイスドッキングライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_aui-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_aui-suse3_1_3/description
 #. tumbleweed/wxQt-3_2/libwx_qtu_aui-suse3_1_3/description
 msgid "The Advanced User Interface docking library of wxWidgets."
-msgstr ""
+msgstr "wxWidgets の高度なユーザインターフェイスドッキングライブラリです。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_core-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_core-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_core-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets basic GUI class library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets 基本 GUI クラスライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_core-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_core-suse3_1_3/description
@@ -703,14 +751,14 @@ msgid ""
 "wxWidgets GUI applications must link against this library, only console mode "
 "applications need not."
 msgstr ""
+"GDI クラスやコンソールなど、このライブラリには基本的な GUI クラスが含まれています。全ての wxWidgets GUI "
+"アプリケーションは、このライブラリにリンクしなければなりません。コンソールアプリケーションについては、リンクする必要はありません。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_gl-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_gl-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_gl-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets OpenGL integration library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets OpenGL 統合ライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_gl-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_gl-suse3_1_3/description
@@ -718,13 +766,13 @@ msgstr "wxWidgets ライブラリ"
 msgid ""
 "This library contains the wxGLCanvas class for integration of OpenGL with "
 "wxWidgets."
-msgstr ""
+msgstr "このライブラリには、 wxWidgets で OpenGL への統合を提供する wxGLCanvas クラスが含まれています。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_html-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_html-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_html-suse3_1_3/summary
 msgid "wxWidgets HTML parser and renderer library"
-msgstr ""
+msgstr "wxWidgets HTML パーサー／レンダラライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_html-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_html-suse3_1_3/description
@@ -735,14 +783,15 @@ msgid ""
 "rich text viewer — for example, to display an About Box or the result of a "
 "database search."
 msgstr ""
+"wxHTML ライブラリには、 HTML を処理したり表示したりするのに必要なクラスが含まれています。ただし、高度な HTML ブラウザとして使用すること"
+"は想定されておらず、一般的なリッチテキストビューアとして使用する目的で提供されています。用途としてはたとえば、バージョン情報の表示やデータベース検索の結果"
+"表示などを想定しています。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_media-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_media-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_media-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets media class library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets メディアクラスライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_media-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_media-suse3_1_3/description
@@ -750,13 +799,13 @@ msgstr "wxWidgets ライブラリ"
 msgid ""
 "wxMediaCtrl is a class for displaying types of media, such as videos, audio "
 "files, natively through native codecs."
-msgstr ""
+msgstr "wxMediaCtrl は、ネイティブなコーデックを介してビデオやオーディオなどのメディアに対応した、メディア表示クラスです。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_propgrid-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_propgrid-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_propgrid-suse3_1_3/summary
 msgid "wxWidgets property grid class library"
-msgstr ""
+msgstr "wxWidgets プロパティグリッドクラスライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_propgrid-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_propgrid-suse3_1_3/description
@@ -764,13 +813,13 @@ msgstr ""
 msgid ""
 "wxPropertyGrid is a specialized grid for editing properties, in other words, "
 "name=value pairs."
-msgstr ""
+msgstr "wxPropertyGrid はプロパティ (言い換えれば '名前=値' の対) を編集するための特殊なグリッド機能を提供します。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_qa-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_qa-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_qa-suse3_1_3/summary
 msgid "wxWidgets quality assurance class library"
-msgstr ""
+msgstr "wxWidgets 品質保証クラスライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_qa-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_qa-suse3_1_3/description
@@ -780,25 +829,27 @@ msgid ""
 "containing the wxDebugReport class. wxDebugReport is used to generate a "
 "debug report, containing information about the program current state."
 msgstr ""
+"これは品質保証を行なうための追加クラス、 wxDebugReport クラスを含むライブラリです。 wxDebugReport "
+"はデバッグレポートを生成する際に使用するクラスで、プログラムの現在の状態に関する情報を含んでいます。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_ribbon-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_ribbon-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_ribbon-suse3_1_3/summary
 msgid "wxWidgets's ribbon user interface library"
-msgstr ""
+msgstr "wxWidgets のリボンユーザインターフェイスライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_ribbon-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_ribbon-suse3_1_3/description
 #. tumbleweed/wxQt-3_2/libwx_qtu_ribbon-suse3_1_3/description
 msgid ""
 "The wxRibbon library is a set of classes for writing a ribbon user interface."
-msgstr ""
+msgstr "wxRibbon ライブラリは、リボンユーザインターフェイス向けのクラス集です。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_richtext-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_richtext-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_richtext-suse3_1_3/summary
 msgid "wxWidgets Rich Text editor class library"
-msgstr ""
+msgstr "wxWidgets リッチテキストエディタクラスライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_richtext-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_richtext-suse3_1_3/description
@@ -809,27 +860,28 @@ msgid ""
 "is intended for \"natural\" text in the sense that source code is better "
 "served by wxStyledTextCtrl."
 msgstr ""
+"wxRichTextCtrl "
+"はリッチテキストエディタの機能を実装する汎用的なライブラリで、さまざまな文字スタイルや段落の整形、画像などを扱うことができます。なお、このライブラリは "
+"\"自然言語\" テキストを扱うためのものであり、ソースコードを扱う場合は wxStyledTextCtrl のほうが適切です。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_stc-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_stc-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_stc-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets styled text class library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets スタイル付きテキストクラスライブラリ"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_stc-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_stc-suse3_1_3/description
 #. tumbleweed/wxQt-3_2/libwx_qtu_stc-suse3_1_3/description
 msgid ""
 "A wxWidgets implementation of the Scintilla source code editing component."
-msgstr ""
+msgstr "Scintilla ソースコード編集コンポーネントの wxWidgets 実装です。"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_xrc-suse3_1_3/summary
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_xrc-suse3_1_3/summary
 #. tumbleweed/wxQt-3_2/libwx_qtu_xrc-suse3_1_3/summary
 msgid "wxWidgets's XML-based resource system"
-msgstr ""
+msgstr "wxWidgets の XML ベースリソースシステム"
 
 #. tumbleweed/wxWidgets-3_2/libwx_gtk2u_xrc-suse3_1_3/description
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_xrc-suse3_1_3/description
@@ -839,22 +891,23 @@ msgid ""
 "interface elements such as dialogs, menu bars and toolbars, to be stored in "
 "text files and loaded into the application at run-time."
 msgstr ""
+"XRC としても知られている、 wxWidgets の XML ベースリソースシステムです。これにより、ダイアログやメニューバー、ツールバーなどの要素を、"
+"テキストファイル内に保存しておき、アプリケーションの動作時に読み込むことができるようになります。"
 
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_webview-suse3_1_3/summary
-#, fuzzy
-#| msgid "wxWidgets Library"
 msgid "wxWidgets HTML/browser class library"
-msgstr "wxWidgets ライブラリ"
+msgstr "wxWidgets HTML/ブラウザクラスライブラリ"
 
 #. tumbleweed/wxGTK3-3_2/libwx_gtk3u_webview-suse3_1_3/description
 msgid ""
 "Library for a wxWidgets control that can be used to render web (HTML / CSS / "
 "javascript) documents."
 msgstr ""
+"Web (HTML / CSS / javascript) 文書を描画するために使用することのできる、 wxWidgets コンソール向けライブラリです。"
 
 #. tumbleweed/wxsqlite3/libwxcode_gtk2u_wxsqlite3-3_0-0/summary
 msgid "C++ wrapper around SQLite 3.x"
-msgstr ""
+msgstr "SQLite 3.x 向け C++ ラッパー"
 
 #. tumbleweed/wxsqlite3/libwxcode_gtk2u_wxsqlite3-3_0-0/description
 #. tumbleweed/wxsqlite3/wxsqlite3-devel/description
@@ -862,6 +915,8 @@ msgid ""
 "wxSQLite3 is a C++ wrapper around the public domain SQLite 3.x database and "
 "is specifically designed for use in programs based on the wxWidgets library."
 msgstr ""
+"wxSQLite3 はパブリックドメインの SQLite 3.x データベースに対する C++ ラッパーで、特に wxWidgets "
+"ライブラリをベースにしたプログラムで使用するよう設計されたライブラリです。"
 
 #. tumbleweed/wxGTK3-3_2/wxGTK3-3_2-devel/description
 msgid ""
@@ -874,6 +929,14 @@ msgid ""
 "Note: wxWidgets variant devel packages are mutually exclusive. Please read /"
 "usr/share/doc/packages/wxGTK3-3_2/README.SUSE to pick a correct variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxGTK3 で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxGTK3-3_2/README.SUSE をお読みください。"
 
 #. tumbleweed/wxQt-3_2/wxQt-3_2-devel/description
 msgid ""
@@ -886,6 +949,14 @@ msgid ""
 "Note: wxWidgets variant devel packages are mutually exclusive. Please read /"
 "usr/share/doc/packages/wxQt-3_2/README.SUSE to pick a correct variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxQt で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxQt-3_2/README.SUSE をお読みください。"
 
 #. tumbleweed/wxWidgets-3_2/wxWidgets-3_2-devel/description
 msgid ""
@@ -898,10 +969,18 @@ msgid ""
 "Note: wxWidgets variant devel packages are mutually exclusive. Please read /"
 "usr/share/doc/packages/wxWidgets-3_2/README.SUSE to pick a correct variant."
 msgstr ""
+"wxWidgets はクロスプラットフォーム型の GUI 開発向け C++ ライブラリです。 wxWidgets を使用することで、さまざまな GUI "
+"(GTK+, Motif, MS Windows, MacOS X, Windows CE, GPE) "
+"向けのアプリケーションを、同一のソースコードから作成することができます。\n"
+"\n"
+"このパッケージには、 wxGTK2 で開発を行なうのに必要な、全てのファイルが含まれています。\n"
+"\n"
+"注意: wxWidgets には、相互に排他関係にある開発用パッケージが各種用意されています。適切な種類を選択するために、 /usr/share/doc/"
+"packages/wxWidgets-3_2/README.SUSE をお読みください。"
 
 #. tumbleweed/wxsqlite3/wxsqlite3-devel/summary
 msgid "C++ wrapper around SQLite 3.x - Development Files"
-msgstr ""
+msgstr "SQLite 3.x 向け C++ ラッパー - 開発用ファイル"
 
 #~ msgid "Languages for package wxWidgets"
 #~ msgstr "wxWidgets 向け言語パッケージ"
