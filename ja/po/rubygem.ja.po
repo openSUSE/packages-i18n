@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2019-05-06 14:28+0000\n"
-"PO-Revision-Date: 2019-08-01 10:51+0000\n"
+"PO-Revision-Date: 2019-08-05 07:06+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "rubygem-master/ja/>\n"
@@ -820,6 +820,9 @@ msgid ""
 "implementation is based heavily on Mauricio Ferna'ndez's implementation in "
 "rpa-base, but has been reorganised to promote reuse in other projects."
 msgstr ""
+"Archive::Tar::Minitar は POSIX tar(1) アーカイブファイルを扱うことができる、純粋 Ruby "
+"ライブラリ兼コマンドラインユーティリティです。実装面では rpa-base 内の Mauricio Ferna'ndez "
+"氏による実装を主なベースとしていますが、他のプロジェクトでの再利用性を考慮して再構成されています。"
 
 #. leap/rubygem-archive-tar-minitar/ruby2.5-rubygem-archive-tar-minitar-doc/summary
 #. tumbleweed/rubygem-archive-tar-minitar/ruby2.6-rubygem-archive-tar-minitar-doc/summary
@@ -834,7 +837,7 @@ msgstr "archive-tar-minitar 向け RDoc ドキュメンテーション"
 #. tumbleweed/rubygem-arel-8/ruby2.6-rubygem-arel-8/summary
 #. tumbleweed/rubygem-arel/ruby2.6-rubygem-arel/summary
 msgid "Arel Really Exasperates Logicians"
-msgstr ""
+msgstr "Arel Really Exasperates Logicians"
 
 #. leap/rubygem-arel-6/ruby2.5-rubygem-arel-6/description
 #. leap/rubygem-arel/ruby2.5-rubygem-arel/description
@@ -850,6 +853,10 @@ msgid ""
 "your own ORM with it, focusing on innovative object and collection modeling "
 "as opposed to database compatibility and query generation."
 msgstr ""
+"Arel Really Exasperates Logicians は Ruby 向けの SQL AST マネージャです。複雑な SQL "
+"の問い合わせ文の生成を簡単に行なうことができます。さまざまな RDBMS "
+"に対応していて、フレームワークのフレームワークとなることを目指しています。これにより、革新的なオブジェクトに注力し、"
+"データベースの互換性をモデル化した独自の ORM を構築して、問い合わせを行なうことができます。"
 
 #. leap/rubygem-arel-6/ruby2.5-rubygem-arel-doc-6/summary
 #. leap/rubygem-arel/ruby2.5-rubygem-arel-doc/summary
@@ -4213,7 +4220,7 @@ msgid ""
 "frameworks, and software in between (the so-called middleware) into a single "
 "method call. Also see http://rack.github.io/."
 msgstr ""
-"Rack は Ruby 内で Web アプリケーションを開発するための、最小限でモジュール型の追加可能なインターフェイスを提供します。"
+"Rack は Ruby 内で Web アプリケーションを開発するための、最小限でモジュール型の順応性の高いインターフェイスを提供します。"
 "できる限りシンプルな方法で HTTP のリクエストやレスポンスをラッピングしていることから、 Web サーバや Web "
 "フレームワーク、ソフトウエアなどを統合し、単一のメソッドコールとして作り上げることができる (そのため、ミドルウエアと呼ばれます) 仕組みです。 "
 "http://rack.github.io/ もご覧ください。"
@@ -5655,7 +5662,7 @@ msgstr "Turbolinks JavaScript アセット"
 #. leap/rubygem-turbolinks-source/ruby2.5-rubygem-turbolinks-source/description
 #. tumbleweed/rubygem-turbolinks-source/ruby2.6-rubygem-turbolinks-source/description
 msgid "Turbolinks JavaScript assets."
-msgstr ""
+msgstr "Turbolinks JavaScript アセットです。"
 
 #. leap/rubygem-turbolinks-source/ruby2.5-rubygem-turbolinks-source-doc/summary
 #. tumbleweed/rubygem-turbolinks-source/ruby2.6-rubygem-turbolinks-source-doc/summary
@@ -6373,7 +6380,7 @@ msgstr "Docker 向けの SLE イメージ用変更履歴作成"
 msgid ""
 "A tool to generate Docker images changelog starting from the .packages files "
 "created by kiwi."
-msgstr ""
+msgstr "kiwi で作成した .packages ファイルを出発点として、 Docker イメージの変更履歴を生成するツールです。"
 
 #. tumbleweed/rubygem-changelog-generator/ruby2.6-rubygem-changelog_generator-doc/summary
 msgid "RDoc documentation for changelog_generator"
@@ -6466,6 +6473,7 @@ msgid ""
 "Extends String class or add a ColorizedString with methods to set text "
 "color, background color and text effects."
 msgstr ""
+"String クラスを拡張するか、 ColorizedString を追加してメソッドを設定し、文字の色や背景色、テキスト効果を設定することができます。"
 
 #. tumbleweed/rubygem-colorize/ruby2.6-rubygem-colorize-doc/summary
 msgid "RDoc documentation for colorize"
@@ -6747,7 +6755,7 @@ msgstr "faraday_middleware-multi_json 向けテストスイート"
 
 #. tumbleweed/rubygem-fast_xs/ruby2.6-rubygem-fast_xs/summary
 msgid "fast_xs provides C extensions for escaping text"
-msgstr ""
+msgstr "fast_xs: テキストをエスケープ処理するための C 言語拡張"
 
 #. tumbleweed/rubygem-fast_xs/ruby2.6-rubygem-fast_xs/description
 msgid ""
@@ -6764,6 +6772,16 @@ msgid ""
 "handle it.  XML::Builder as packaged in Rails 2.0 will be automatically use "
 "String#fast_xs instead of String#to_xs available."
 msgstr ""
+"fast_xs はテキストをエスケープ処理するための C 言語拡張です。オリジナルの String#fast_xs メソッドは Sam Ruby 氏の "
+"xchar コードをベースにしています:\n"
+"* http://intertwingly.net/stories/2005/09/28/xchar.rb\n"
+"* http://intertwingly.net/blog/2005/09/28/XML-Cleansing なぜ Hpricot "
+"とともに古いバージョンも同梱されているのでしょうか (パッチは送信済み) 。このバージョンは Hpricot "
+"コードの最新版と互換するように作られています。 Ruby on Rails では、Hpricot 内もしくはバンドルされたパッケージの gem 版にある "
+"String#fast_xs を自動的に使用します。 String#fast_xs は Sam Ruby 氏によるオリジナル版の実装 "
+"(String#to_xs) とほとんど同じ変換を行ないますが、 \"&quot;\" についてもエスケープを行なうようになっています "
+"(この動作は任意ではありますが、全てのパーサーではそれを処理するようになっています) 。 XML::Builder は Rails 2.0 "
+"内のパッケージとして、利用可能な String#to_xs の代わりに String#fast_xs を自動的に使用します。"
 
 #. tumbleweed/rubygem-fast_xs/ruby2.6-rubygem-fast_xs-doc/summary
 msgid "RDoc documentation for fast_xs"
@@ -6775,7 +6793,7 @@ msgstr "fast_xs 向けテストスイート"
 
 #. tumbleweed/rubygem-fastercsv/ruby2.6-rubygem-fastercsv/summary
 msgid "FasterCSV is CSV, but faster, smaller, and cleaner"
-msgstr ""
+msgstr "FasterCSV: CSV でありながら高速で小さく、きれいな出力をするライブラリ"
 
 #. tumbleweed/rubygem-fastercsv/ruby2.6-rubygem-fastercsv/description
 msgid ""
@@ -6783,6 +6801,8 @@ msgid ""
 "It is significantly faster and smaller while still being pure Ruby code. It "
 "also strives for a better interface."
 msgstr ""
+"FasterCSV は標準 CSV ライブラリの完全な置き換えとして作られているものです。純粋な Ruby "
+"コードで作られているにもかかわらず、比較的高速で小さなコードになっています。このほか、よりよいインターフェイスも提供されています。"
 
 #. tumbleweed/rubygem-fastercsv/ruby2.6-rubygem-fastercsv-doc/summary
 msgid "RDoc documentation for fastercsv"
@@ -6794,12 +6814,11 @@ msgstr "fastercsv 向けテストスイート"
 
 #. tumbleweed/rubygem-file-tail/ruby2.6-rubygem-file-tail/summary
 msgid "File::Tail for Ruby"
-msgstr ""
+msgstr "Ruby 向け File::Tail"
 
 #. tumbleweed/rubygem-file-tail/ruby2.6-rubygem-file-tail/description
-#, fuzzy
 msgid "Library to tail files in Ruby."
-msgstr "ini ファイルを処理するライブラリ"
+msgstr "Ruby でファイルの末尾部分を表示するためのライブラリです。"
 
 #. tumbleweed/rubygem-file-tail/ruby2.6-rubygem-file-tail-doc/summary
 msgid "RDoc documentation for file-tail"
@@ -6807,13 +6826,13 @@ msgstr "file-tail 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-flog/ruby2.6-rubygem-flog/summary
 msgid "Flog reports the most tortured code in an easy to read pain report"
-msgstr ""
+msgstr "Flog: コードの品質を読みやすいレポートで表示するモジュール"
 
 #. tumbleweed/rubygem-flog/ruby2.6-rubygem-flog/description
 msgid ""
 "Flog reports the most tortured code in an easy to read pain report. The "
 "higher the score, the more pain the code is in."
-msgstr ""
+msgstr "Flog はコードの品質を読みやすいレポートで表示するモジュールです。スコアが高ければ高いほど、コードが痛々しいことを表わします。"
 
 #. tumbleweed/rubygem-flog/ruby2.6-rubygem-flog-doc/summary
 msgid "RDoc documentation for flog"
@@ -6825,7 +6844,7 @@ msgstr "flog 向けテストスイート"
 
 #. tumbleweed/rubygem-fluentd/ruby2.6-rubygem-fluentd/summary
 msgid "Fluentd event collector"
-msgstr ""
+msgstr "Fluentd イベントコレクタ"
 
 #. tumbleweed/rubygem-fluentd/ruby2.6-rubygem-fluentd/description
 msgid ""
@@ -6833,6 +6852,8 @@ msgid ""
 "management. It can collect, process and ship many kinds of data in near real-"
 "time."
 msgstr ""
+"Fluentd はオープンソースのデータコレクタで、ログの管理にスケーラビリティを与え、単純化することができます。さまざまな種類のデータをほぼリアルタイム"
+"で収集して発信することができます。"
 
 #. tumbleweed/rubygem-fluentd/ruby2.6-rubygem-fluentd-doc/summary
 msgid "RDoc documentation for fluentd"
@@ -6844,11 +6865,11 @@ msgstr "fluentd 向けテストスイート"
 
 #. tumbleweed/rubygem-gettext-setup/ruby2.6-rubygem-gettext-setup/summary
 msgid "A gem to ease internationalization with fast_gettext"
-msgstr ""
+msgstr "fast_gettext で国際化を簡単に行なうための gem"
 
 #. tumbleweed/rubygem-gettext-setup/ruby2.6-rubygem-gettext-setup/description
 msgid "A gem to ease i18n."
-msgstr ""
+msgstr "i18n を簡単に行なう gem です。"
 
 #. tumbleweed/rubygem-gettext-setup/ruby2.6-rubygem-gettext-setup-doc/summary
 msgid "RDoc documentation for gettext-setup"
@@ -6859,9 +6880,8 @@ msgid "Test suite for gettext-setup"
 msgstr "gettext-setup 向けテストスイート"
 
 #. tumbleweed/rubygem-gpgme/ruby2.6-rubygem-gpgme/summary
-#, fuzzy
 msgid "Ruby binding of GPGME"
-msgstr "libproxy 向け Python バインディング"
+msgstr "GPGME 向け Ruby バインディング"
 
 #. tumbleweed/rubygem-gpgme/ruby2.6-rubygem-gpgme/description
 msgid ""
@@ -6870,6 +6890,10 @@ msgid ""
 "applications. It provides a High-Level Crypto API for encryption, "
 "decryption, signing, signature verification and key management."
 msgstr ""
+"Ruby-GPGME は GPGME (GnuPG Made Easy) の Ruby 言語バインディングです。 GnuPG Made Easy "
+"(GPGME) はアプリケーション側から GnuPG "
+"に対して簡単にアクセスできるように設計されたライブラリで、暗号化やその解読、書名や署名検証、鍵管理などの機能を、高レベルな暗号化 API "
+"として提供しています。"
 
 #. tumbleweed/rubygem-gpgme/ruby2.6-rubygem-gpgme-doc/summary
 msgid "RDoc documentation for gpgme"
@@ -6881,7 +6905,7 @@ msgstr "gpgme 向けテストスイート"
 
 #. tumbleweed/rubygem-haml-rails/ruby2.6-rubygem-haml-rails/summary
 msgid "let your Gemfile do the configuring"
-msgstr ""
+msgstr "Gemfile で設定を行なうことができるようにするモジュール"
 
 #. tumbleweed/rubygem-haml-rails/ruby2.6-rubygem-haml-rails/description
 msgid ""
@@ -6890,6 +6914,8 @@ msgid ""
 "application.rb when your Gemfile already clearly indicated what templating "
 "engine you have installed. Hurrah."
 msgstr ""
+"Haml-rails は Rails 4 向けの Haml 生成器です。 Haml をテンプレートエンジンとして使用することもできますので、お使いの "
+"Gemfile 内に使用しているテンプレートエンジンが書かれているような場合、 application.rb 無理矢理ねじ込む必要はありません。"
 
 #. tumbleweed/rubygem-haml-rails/ruby2.6-rubygem-haml-rails-doc/summary
 msgid "RDoc documentation for haml-rails"
@@ -6901,13 +6927,15 @@ msgstr "haml-rails 向けテストスイート"
 
 #. tumbleweed/rubygem-has_mobile_views/ruby2.6-rubygem-has_mobile_views/summary
 msgid "A Rails plugin which allows for rendering special templates for"
-msgstr ""
+msgstr "特殊なテンプレートを描画できるようにするための Rails プラグイン"
 
 #. tumbleweed/rubygem-has_mobile_views/ruby2.6-rubygem-has_mobile_views/description
 msgid ""
 "This Rails plugin allows for rendering special templates for mobile devices, "
 "using the existing views and partials as a fallback."
 msgstr ""
+"モバイルデバイス向けに特殊なテンプレートを描画できるようにするための Rails "
+"プラグインです。既存のビューやパーシャルをフォールバックとして使用することができます。"
 
 #. tumbleweed/rubygem-has_mobile_views/ruby2.6-rubygem-has_mobile_views-doc/summary
 msgid "RDoc documentation for has_mobile_views"
@@ -6930,10 +6958,15 @@ msgid ""
 "copiousfreetime dot org * `git clone url git://github.com/copiousfreetime/"
 "hitimes.git`."
 msgstr ""
+"(https://travis-ci.org/copiousfreetime/hitimes.svg?branch=master)](https"
+"://travis-ci.org/copiousfreetime/hitimes) 性能情報を記録するための、高速な高解像度タイマーライブラリです。 * "
+"(http://github.com/copiousfreetime/hitimes) * (http://github.com.org/"
+"copiousfreetime/hitimes) * email jeremy at copiousfreetime dot org * `git "
+"clone url git://github.com/copiousfreetime/hitimes.git`."
 
 #. tumbleweed/rubygem-hoe/ruby2.6-rubygem-hoe/summary
 msgid "Hoe is a rake/rubygems helper for project Rakefiles"
-msgstr ""
+msgstr "Hoe: プロジェクトの Rakefile に対する rake/rubygem ヘルパー"
 
 #. tumbleweed/rubygem-hoe/ruby2.6-rubygem-hoe/description
 msgid ""
@@ -6944,6 +6977,11 @@ msgid ""
 "announcement.. See class rdoc for help. Hint: `ri Hoe` or any of the plugins "
 "listed below. For extra goodness, see: http://docs.seattlerb.org/hoe/Hoe.pdf."
 msgstr ""
+"Hoe はプロジェクトの Rakefile に対する rake/rubygem "
+"ヘルパーです。プロジェクトの管理やリリースのほか、動的なプラグインシステムにより、簡単に拡張を行なうことができます。 Hoe "
+"には一般的なプロジェクトで必要となるプラグインが含まれていて、たとえば rdoc "
+"の生成やテスト、パッケージ作成や配置、アナウンスなどを行なうことができます。詳しくはクラスの rdoc をお読みください。ヒント: `ri Hoe` "
+"やプラグインをご覧ください。さらに詳しい情報については、 http://docs.seattlerb.org/hoe/Hoe.pdf をお読みください。"
 
 #. tumbleweed/rubygem-hoe/ruby2.6-rubygem-hoe-doc/summary
 msgid "RDoc documentation for hoe"
@@ -6955,13 +6993,13 @@ msgstr "hoe 向けテストスイート"
 
 #. tumbleweed/rubygem-http_accept_language/ruby2.6-rubygem-http_accept_language/summary
 msgid "Find out which locale the user preferes by reading the languages"
-msgstr ""
+msgstr "言語情報を読み取ることで必要なロケールを検出するモジュール"
 
 #. tumbleweed/rubygem-http_accept_language/ruby2.6-rubygem-http_accept_language/description
 msgid ""
 "Find out which locale the user preferes by reading the languages they "
 "specified in their browser."
-msgstr ""
+msgstr "ブラウザ内の言語情報を読み取ることで、必要なロケールを検出するモジュールです。"
 
 #. tumbleweed/rubygem-http_accept_language/ruby2.6-rubygem-http_accept_language-doc/summary
 msgid "RDoc documentation for http_accept_language"
@@ -7001,6 +7039,31 @@ msgid ""
 "\n"
 "var1 = baz var2 = shoodle."
 msgstr ""
+"Windows の世界では既に有名な仕組みですが、 INI ファイルは柔軟な構造であることから、さまざまなシステムで利用することができます。 INI "
+"ファイルには設定データを保存することができ、容易に処理したり変更したりすることができます。 INI ファイルを使用している主なプロジェクトとしては、 "
+"Samba や Trac などがあります。 INI ファイルに関する詳細については、 [Wikipedia "
+"のページ](https://ja.wikipedia.org/wiki/INI%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB) "
+"をお読みください。\n"
+"\n"
+"INI ファイル内に含まれている基本要素をプロパティと言います。それぞれのプロパティには名前と値が存在していて、それらはイコール *=* "
+"で区切ります。名前をイコールの左側に、値を右側にそれぞれ配置し、 名前=値 の形式になります。\n"
+"\n"
+"セクション定義は *[* と *]* の記号を利用して指定し、たとえば下記の例のように `[section1]` や `[section2]` "
+"のように記述します。セクション定義はセクションの開始位置に記述します。それ以下のプロパティは、それぞれのセクションに属するものとして解釈します。\n"
+"\n"
+"セミコロン *;* や番号記号 *#* で始まる行は、いずれもコメント行として解釈します。コメント行の内容については、 INI "
+"ファイルの処理で解釈を行ないません。\n"
+"\n"
+"一般的な INI ファイルの例は下記のとおりです:\n"
+"\n"
+"[section1] ; section 1のコメント\n"
+"var1 = foo\n"
+"var2 = doodle\n"
+"var3 = multiline values \\ are also possible\n"
+"\n"
+"[section2]\n"
+"var1 = baz\n"
+"var2 = shoodle."
 
 #. tumbleweed/rubygem-inifile/ruby2.6-rubygem-inifile-doc/summary
 msgid "RDoc documentation for inifile"
@@ -7011,9 +7074,8 @@ msgid "Test suite for inifile"
 msgstr "inifile 向けテストスイート"
 
 #. tumbleweed/rubygem-ipaddress/ruby2.6-rubygem-ipaddress/summary
-#, fuzzy
 msgid "IPv4/IPv6 address manipulation library"
-msgstr "IPv4/IPv6 操作ライブラリ"
+msgstr "IPv4/IPv6 アドレス操作ライブラリ"
 
 #. tumbleweed/rubygem-ipaddress/ruby2.6-rubygem-ipaddress/description
 msgid ""
@@ -7021,6 +7083,8 @@ msgid ""
 "addresses both powerful and simple. It mantains a layer of compatibility "
 "with Ruby's own IPAddr, while addressing many of its issues."
 msgstr ""
+"IPAddress は IPv4/IPv6 アドレスをパワフルかつシンプルに操作することを目指した Ruby ライブラリです。 Ruby "
+"に内蔵されている IPAddr との互換性も確保されており、そこでの問題を多数解決しています。"
 
 #. tumbleweed/rubygem-ipaddress/ruby2.6-rubygem-ipaddress-doc/summary
 msgid "RDoc documentation for ipaddress"
@@ -7032,11 +7096,11 @@ msgstr "ipaddress 向けテストスイート"
 
 #. tumbleweed/rubygem-jekyll/ruby2.6-rubygem-jekyll/summary
 msgid "A simple, blog aware, static site generator"
-msgstr ""
+msgstr "シンプルでブログ対応の静的なサイト生成"
 
 #. tumbleweed/rubygem-jekyll/ruby2.6-rubygem-jekyll/description
 msgid "Jekyll is a simple, blog aware, static site generator."
-msgstr ""
+msgstr "Jekyll はシンプルでブログ対応の静的なサイト生成モジュールです。"
 
 #. tumbleweed/rubygem-jekyll/ruby2.6-rubygem-jekyll-doc/summary
 msgid "RDoc documentation for jekyll"
@@ -7044,11 +7108,11 @@ msgstr "jekyll 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-jekyll-sass-converter/ruby2.6-rubygem-jekyll-sass-converter/summary
 msgid "A basic Sass converter for Jekyll"
-msgstr ""
+msgstr "Jekyll 向け基本 Sass コンバータ"
 
 #. tumbleweed/rubygem-jekyll-sass-converter/ruby2.6-rubygem-jekyll-sass-converter/description
 msgid "A basic Sass converter for Jekyll."
-msgstr ""
+msgstr "Jekyll 向け基本 Sass コンバータです。"
 
 #. tumbleweed/rubygem-jekyll-sass-converter/ruby2.6-rubygem-jekyll-sass-converter-doc/summary
 msgid "RDoc documentation for jekyll-sass-converter"
@@ -7056,11 +7120,11 @@ msgstr "jekyll-sass-converter 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-jekyll-watch/ruby2.6-rubygem-jekyll-watch/summary
 msgid "Rebuild your Jekyll site when a file changes with the `--watch`"
-msgstr ""
+msgstr "ファイルが `--watch` で変更された際に Jekyll サイトを再構築するモジュール"
 
 #. tumbleweed/rubygem-jekyll-watch/ruby2.6-rubygem-jekyll-watch/description
 msgid "Rebuild your Jekyll site when a file changes with the `--watch` switch."
-msgstr ""
+msgstr "ファイルが `--watch` で変更された際に Jekyll サイトを再構築するモジュールです。"
 
 #. tumbleweed/rubygem-jekyll-watch/ruby2.6-rubygem-jekyll-watch-doc/summary
 msgid "RDoc documentation for jekyll-watch"
@@ -7068,12 +7132,11 @@ msgstr "jekyll-watch 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-jmespath/ruby2.6-rubygem-jmespath/summary
 msgid "JMESPath - Ruby Edition"
-msgstr ""
+msgstr "JMESPath - Ruby Edition"
 
 #. tumbleweed/rubygem-jmespath/ruby2.6-rubygem-jmespath/description
-#, fuzzy
 msgid "Implements JMESPath for Ruby."
-msgstr "Linux 向け 802.1q VLAN 実装"
+msgstr "Ruby 向けの JMESPath 実装です。"
 
 #. tumbleweed/rubygem-jmespath/ruby2.6-rubygem-jmespath-doc/summary
 msgid "RDoc documentation for jmespath"
@@ -7097,22 +7160,22 @@ msgstr "journey 向けテストスイート"
 
 #. tumbleweed/rubygem-jquery-ui-rails/ruby2.6-rubygem-jquery-ui-rails/summary
 msgid "jQuery UI packaged for the Rails asset pipeline"
-msgstr ""
+msgstr "Rails アセットパイプライン向けの jQuery UI パッケージ"
 
 #. tumbleweed/rubygem-jquery-ui-rails/ruby2.6-rubygem-jquery-ui-rails/description
 msgid ""
 "jQuery UI's JavaScript, CSS, and image files packaged for the Rails 3.1+ "
 "asset pipeline."
 msgstr ""
+"Rails 3.1+ アセットパイプライン向けにパッケージ化された、 jQuery UI の JavaScript, CSS, イメージファイルです。"
 
 #. tumbleweed/rubygem-jquery-ui-rails/ruby2.6-rubygem-jquery-ui-rails-doc/summary
 msgid "RDoc documentation for jquery-ui-rails"
 msgstr "jquery-ui-rails 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-json/ruby2.6-rubygem-json/description
-#, fuzzy
 msgid "This is a JSON implementation as a Ruby extension in C."
-msgstr "これは Xvnc の TigerVNC 実装です。"
+msgstr "C 言語で実装された JSON 実装の Ruby 拡張です。"
 
 #. tumbleweed/rubygem-json/ruby2.6-rubygem-json-doc/summary
 msgid "RDoc documentation for json"
@@ -7124,10 +7187,13 @@ msgid ""
 "later should make this obsolete.  kgio provides non-blocking I/O methods for "
 "Ruby without raising exceptions on EAGAIN and EINPROGRESS."
 msgstr ""
+"これは古いプロジェクトですので、新しいプロジェクトでは使用しないでください。また、 Ruby 2.3 "
+"およびそれ以降のバージョンでは、廃止予定としてマークされています。 kgio は Ruby で EAGAIN や EINPROGRESS "
+"の例外を発生させることなく、非同期の I/O メソッドを提供します。"
 
 #. tumbleweed/rubygem-launchy/ruby2.6-rubygem-launchy/summary
 msgid "Launchy is helper class for launching cross-platform applications in"
-msgstr ""
+msgstr "Launchy: クロスプラットフォーム対応のアプリケーションを起動するためのヘルパークラス"
 
 #. tumbleweed/rubygem-launchy/ruby2.6-rubygem-launchy/description
 msgid ""
@@ -7137,6 +7203,10 @@ msgid ""
 "differently on each platform. Launchy is here to make a common approach to "
 "launching external application from within ruby programs."
 msgstr ""
+"Launchy は fire and forget のやり方を採用した、クロスプラットフォーム対応のアプリケーションを起動するためのヘルパークラスです。"
+"プラットフォームに共通した種類のアプリケーション (ブラウザ、電子メールクライアントなど) "
+"が各種存在していますが、それらはプラットフォームごとに異なる起動方式になっています。 Launchy は Ruby "
+"のプログラム内から、これらのアプリケーションを起動するための汎用アプローチを提供しています。"
 
 #. tumbleweed/rubygem-launchy/ruby2.6-rubygem-launchy-doc/summary
 msgid "RDoc documentation for launchy"
@@ -7148,11 +7218,11 @@ msgstr "launchy 向けテストスイート"
 
 #. tumbleweed/rubygem-levenshtein/ruby2.6-rubygem-levenshtein/summary
 msgid "Calculates the Levenshtein distance between two byte strings"
-msgstr ""
+msgstr "2 つのバイト文字列間のレーベンシュタイン距離の計算"
 
 #. tumbleweed/rubygem-levenshtein/ruby2.6-rubygem-levenshtein/description
 msgid "Calculates the Levenshtein distance between two byte strings."
-msgstr ""
+msgstr "2 つのバイト文字列間のレーベンシュタイン距離を計算します。"
 
 #. tumbleweed/rubygem-levenshtein/ruby2.6-rubygem-levenshtein-doc/summary
 msgid "RDoc documentation for levenshtein"
@@ -7163,14 +7233,12 @@ msgid "Test suite for levenshtein"
 msgstr "levenshtein 向けテストスイート"
 
 #. tumbleweed/rubygem-librarian/ruby2.6-rubygem-librarian/summary
-#, fuzzy
 msgid "A Framework for Bundlers"
-msgstr "ログ向け .NET フレームワーク"
+msgstr "Bundlers 向けフレームワーク"
 
 #. tumbleweed/rubygem-librarian/ruby2.6-rubygem-librarian/description
-#, fuzzy
 msgid "A Framework for Bundlers."
-msgstr "ログ向け .NET フレームワーク"
+msgstr "Bundlers 向けフレームワークです。"
 
 #. tumbleweed/rubygem-librarian/ruby2.6-rubygem-librarian-doc/summary
 msgid "RDoc documentation for librarian"
@@ -7182,13 +7250,14 @@ msgstr "librarian 向けテストスイート"
 
 #. tumbleweed/rubygem-lightbox2/ruby2.6-rubygem-lightbox2/summary
 msgid "lightbox2 for Ruby on Rails"
-msgstr ""
+msgstr "Ruby on Rails 向け lightbox2"
 
 #. tumbleweed/rubygem-lightbox2/ruby2.6-rubygem-lightbox2/description
 msgid ""
 "This gem for Ruby on Rails provides the lightbox2 library to Rails's asset "
 "pipeline."
 msgstr ""
+"この Ruby on Rails 向けの gem は、 Rails のアセットパイプラインに対して lightbox2 ライブラリを提供します。"
 
 #. tumbleweed/rubygem-lightbox2/ruby2.6-rubygem-lightbox2-doc/summary
 msgid "RDoc documentation for lightbox2"
@@ -7197,27 +7266,25 @@ msgstr "lightbox2 向け RDoc ドキュメンテーション"
 #. tumbleweed/rubygem-lolcat/ruby2.6-rubygem-lolcat/summary
 msgid ""
 "Add the colors of the rainbow to your terminal a.k.a. Rainbows and Unicorns!"
-msgstr ""
+msgstr "端末内に虹の色を追加するモジュール (別名: Rainbows and Unicorns)"
 
 #. tumbleweed/rubygem-lolcat/ruby2.6-rubygem-lolcat/description
 msgid ""
 "This is a console program that transforms text from files or stdin by adding "
 "crazy rainbow colors or even animations."
-msgstr ""
+msgstr "テキストファイルや標準入力からのテキストに対して、虹の色やアニメーションを追加するコンソールプログラムです。"
 
 #. tumbleweed/rubygem-lolcat/ruby2.6-rubygem-lolcat-doc/summary
 msgid "RDoc documentation for lolcat"
 msgstr "lolcat 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-memcache-client/ruby2.6-rubygem-memcache-client/summary
-#, fuzzy
 msgid "A Ruby library for accessing memcached"
-msgstr "Facebook サービスにアクセスするためのライブラリ"
+msgstr "memcached にアクセスするためのライブラリ"
 
 #. tumbleweed/rubygem-memcache-client/ruby2.6-rubygem-memcache-client/description
-#, fuzzy
 msgid "A Ruby library for accessing memcached."
-msgstr "Facebook サービスにアクセスするためのライブラリです。"
+msgstr "memcached にアクセスするためのライブラリです。"
 
 #. tumbleweed/rubygem-memcache-client/ruby2.6-rubygem-memcache-client-doc/summary
 msgid "RDoc documentation for memcache-client"
@@ -7229,11 +7296,11 @@ msgstr "memcache-client 向けテストスイート"
 
 #. tumbleweed/rubygem-mercenary/ruby2.6-rubygem-mercenary/summary
 msgid "Lightweight and flexible library for writing command-line apps in"
-msgstr ""
+msgstr "コマンドラインアプリケーションを作成するための軽量で柔軟なライブラリ"
 
 #. tumbleweed/rubygem-mercenary/ruby2.6-rubygem-mercenary/description
 msgid "Lightweight and flexible library for writing command-line apps in Ruby."
-msgstr ""
+msgstr "Ruby でコマンドラインアプリケーションを作成するための軽量で柔軟なライブラリです。"
 
 #. tumbleweed/rubygem-mercenary/ruby2.6-rubygem-mercenary-doc/summary
 msgid "RDoc documentation for mercenary"
@@ -7245,13 +7312,13 @@ msgstr "mercenary 向けテストスイート"
 
 #. tumbleweed/rubygem-mini_magick/ruby2.6-rubygem-mini_magick/summary
 msgid "Manipulate images with minimal use of memory via ImageMagick /"
-msgstr ""
+msgstr "最小限のメモリ量での画像操作"
 
 #. tumbleweed/rubygem-mini_magick/ruby2.6-rubygem-mini_magick/description
 msgid ""
 "Manipulate images with minimal use of memory via ImageMagick / "
 "GraphicsMagick."
-msgstr ""
+msgstr "ImageMagick / GraphicsMagick を介して、最小限のメモリ量で画像操作を行ないます。"
 
 #. tumbleweed/rubygem-mini_magick/ruby2.6-rubygem-mini_magick-doc/summary
 msgid "RDoc documentation for mini_magick"
@@ -7266,19 +7333,23 @@ msgid ""
 "Antoine Toulme forked the original project on rubyforge to place it on "
 "github, under http://www.github.com/atoulme/minitar."
 msgstr ""
+"Archive::Tar::Minitar は POSIX tar(1) アーカイブファイルを扱うことができる、純粋 Ruby "
+"ライブラリ兼コマンドラインユーティリティです。実装面では rpa-base 内の Mauricio Ferna'ndez "
+"氏による実装を主なベースとしていますが、他のプロジェクトでの再利用性を考慮して再構成されています。 Antoine Toulme "
+"氏がオリジナルのプロジェクトを Rubyforge 内にフォークし、 github 内に配置 (http://www.github.com/"
+"atoulme/minitar) しています。"
 
 #. tumbleweed/rubygem-minitar/ruby2.6-rubygem-minitar-doc/summary
 msgid "RDoc documentation for minitar"
 msgstr "minitar 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-mixlib-authentication/ruby2.6-rubygem-mixlib-authentication/summary
-#, fuzzy
 msgid "Mixes in simple per-request authentication"
-msgstr "指紋認証のための PAM モジュール"
+msgstr "シンプルなリクエスト毎認証のミックスイン"
 
 #. tumbleweed/rubygem-mixlib-authentication/ruby2.6-rubygem-mixlib-authentication/description
 msgid "Mixes in simple per-request authentication."
-msgstr ""
+msgstr "シンプルなリクエスト毎認証のミックスインです。"
 
 #. tumbleweed/rubygem-mixlib-authentication/ruby2.6-rubygem-mixlib-authentication-doc/summary
 msgid "RDoc documentation for mixlib-authentication"
@@ -7290,11 +7361,11 @@ msgstr "mixlib-authentication 向けテストスイート"
 
 #. tumbleweed/rubygem-mixlib-cli/ruby2.6-rubygem-mixlib-cli/summary
 msgid "A simple mixin for CLI interfaces, including option parsing"
-msgstr ""
+msgstr "オプション処理機能付きのシンプルな CLI インターフェイスミックスイン"
 
 #. tumbleweed/rubygem-mixlib-cli/ruby2.6-rubygem-mixlib-cli/description
 msgid "A simple mixin for CLI interfaces, including option parsing."
-msgstr ""
+msgstr "オプション処理機能付きのシンプルな CLI インターフェイスミックスインです。"
 
 #. tumbleweed/rubygem-mixlib-cli/ruby2.6-rubygem-mixlib-cli-doc/summary
 msgid "RDoc documentation for mixlib-cli"
@@ -7302,11 +7373,11 @@ msgstr "mixlib-cli 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-mixlib-log/ruby2.6-rubygem-mixlib-log/summary
 msgid "A gem that provides a simple mixin for log functionality"
-msgstr ""
+msgstr "ログ機能向けのシンプルなミックスインを提供する gem"
 
 #. tumbleweed/rubygem-mixlib-log/ruby2.6-rubygem-mixlib-log/description
 msgid "A gem that provides a simple mixin for log functionality."
-msgstr ""
+msgstr "ログ機能向けのシンプルなミックスインを提供する gem です。"
 
 #. tumbleweed/rubygem-mixlib-log/ruby2.6-rubygem-mixlib-log-doc/summary
 msgid "RDoc documentation for mixlib-log"
@@ -7314,11 +7385,11 @@ msgstr "mixlib-log 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-mixlib-shellout/ruby2.6-rubygem-mixlib-shellout/summary
 msgid "Run external commands on Unix or Windows"
-msgstr ""
+msgstr "Unix や Windows での外部コマンド実行"
 
 #. tumbleweed/rubygem-mixlib-shellout/ruby2.6-rubygem-mixlib-shellout/description
 msgid "Run external commands on Unix or Windows."
-msgstr ""
+msgstr "Unix や Windows で外部コマンドを実行します。"
 
 #. tumbleweed/rubygem-mixlib-shellout/ruby2.6-rubygem-mixlib-shellout-doc/summary
 msgid "RDoc documentation for mixlib-shellout"
@@ -7326,11 +7397,11 @@ msgstr "mixlib-shellout 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-mobileesp_converted/ruby2.6-rubygem-mobileesp_converted/summary
 msgid "Provides device type detection based on HTTP request headers"
-msgstr ""
+msgstr "HTTP リクエストヘッダをベースにしたデバイスタイプの検出"
 
 #. tumbleweed/rubygem-mobileesp_converted/ruby2.6-rubygem-mobileesp_converted/description
 msgid "Autoconverted version (from Java to Ruby) of MobileESP library."
-msgstr ""
+msgstr "MobileESP ライブラリの自動変換 (Java から Ruby) 版です。"
 
 #. tumbleweed/rubygem-mobileesp_converted/ruby2.6-rubygem-mobileesp_converted-doc/summary
 msgid "RDoc documentation for mobileesp_converted"
@@ -7341,15 +7412,16 @@ msgid "Test suite for mobileesp_converted"
 msgstr "mobileesp_converted 向けテストスイート"
 
 #. tumbleweed/rubygem-mocha/ruby2.6-rubygem-mocha/summary
-#, fuzzy
 msgid "Mocking and stubbing library"
-msgstr "PDF 処理／作成ライブラリ"
+msgstr "モック／スタブライブラリ"
 
 #. tumbleweed/rubygem-mocha/ruby2.6-rubygem-mocha/description
 msgid ""
 "Mocking and stubbing library with JMock/SchMock syntax, which allows mocking "
 "and stubbing of methods on real (non-mock) classes."
 msgstr ""
+"JMock や SchMock の書式によるモック／スタブライブラリです。実際の (モックではない) "
+"クラス内のメソッドをモック化したりスタブ化したりすることができます。"
 
 #. tumbleweed/rubygem-mocha/ruby2.6-rubygem-mocha-doc/summary
 msgid "RDoc documentation for mocha"
@@ -7362,12 +7434,12 @@ msgstr "mocha 向けテストスイート"
 #. tumbleweed/rubygem-moneta-0_7/ruby2.6-rubygem-moneta-0_7/summary
 #. tumbleweed/rubygem-moneta/ruby2.6-rubygem-moneta/summary
 msgid "A unified interface to key/value stores, including Redis, Memcached,"
-msgstr ""
+msgstr "Redis, Memcached などのキー／値の対を提供する統合インターフェイス"
 
 #. tumbleweed/rubygem-moneta-0_7/ruby2.6-rubygem-moneta-0_7/description
 #. tumbleweed/rubygem-moneta/ruby2.6-rubygem-moneta/description
 msgid "A unified interface to key/value stores."
-msgstr ""
+msgstr "キー／値の対を提供する統合インターフェイスです。"
 
 #. tumbleweed/rubygem-moneta-0_7/ruby2.6-rubygem-moneta-doc-0_7/summary
 #. tumbleweed/rubygem-moneta/ruby2.6-rubygem-moneta-doc/summary
@@ -7382,12 +7454,12 @@ msgstr "moneta 向けテストスイート"
 #. tumbleweed/rubygem-mysql2-0.4/ruby2.6-rubygem-mysql2-0.4/summary
 #. tumbleweed/rubygem-mysql2/ruby2.6-rubygem-mysql2/summary
 msgid "A simple, fast Mysql library for Ruby, binding to libmysql"
-msgstr ""
+msgstr "libmysql にバインドする Ruby 向けのシンプルで高速な Mysql ライブラリ"
 
 #. tumbleweed/rubygem-mysql2-0.4/ruby2.6-rubygem-mysql2-0.4/description
 #. tumbleweed/rubygem-mysql2/ruby2.6-rubygem-mysql2/description
 msgid "A simple, fast Mysql library for Ruby, binding to libmysql."
-msgstr ""
+msgstr "libmysql にバインドする Ruby 向けのシンプルで高速な Mysql ライブラリです。"
 
 #. tumbleweed/rubygem-mysql2-0.4/ruby2.6-rubygem-mysql2-doc-0.4/summary
 #. tumbleweed/rubygem-mysql2/ruby2.6-rubygem-mysql2-doc/summary
@@ -7402,12 +7474,12 @@ msgstr "mysql2 向けテストスイート"
 #. tumbleweed/rubygem-net-ssh-multi/ruby2.6-rubygem-net-ssh-multi/summary
 #. tumbleweed/rubygem-net-ssh-multi-1_1/ruby2.6-rubygem-net-ssh-multi-1_1/summary
 msgid "Control multiple Net::SSH connections via a single interface"
-msgstr ""
+msgstr "単一のインターフェイスで複数の Net::SSH 接続を管理するモジュール"
 
 #. tumbleweed/rubygem-net-ssh-multi/ruby2.6-rubygem-net-ssh-multi/description
 #. tumbleweed/rubygem-net-ssh-multi-1_1/ruby2.6-rubygem-net-ssh-multi-1_1/description
 msgid "Control multiple Net::SSH connections via a single interface."
-msgstr ""
+msgstr "単一のインターフェイスで複数の Net::SSH 接続を管理するモジュールです。"
 
 #. tumbleweed/rubygem-net-ssh-multi/ruby2.6-rubygem-net-ssh-multi-doc/summary
 #. tumbleweed/rubygem-net-ssh-multi-1_1/ruby2.6-rubygem-net-ssh-multi-doc-1_1/summary
@@ -7421,13 +7493,14 @@ msgstr "net-ssh-multi 向けテストスイート"
 
 #. tumbleweed/rubygem-open4/ruby2.6-rubygem-open4/summary
 msgid "open4"
-msgstr ""
+msgstr "open4"
 
 #. tumbleweed/rubygem-open4/ruby2.6-rubygem-open4/description
 msgid ""
 "open child process with handles on pid, stdin, stdout, and stderr: manage "
 "child processes and their io handles easily."
 msgstr ""
+"pid, stdin, stdout, stderr の各ハンドルで子プロセスを開きます。子プロセスのプログラムやハンドルを簡単に管理することができます。"
 
 #. tumbleweed/rubygem-open4/ruby2.6-rubygem-open4-doc/summary
 msgid "RDoc documentation for open4"
@@ -7438,14 +7511,12 @@ msgid "Test suite for open4"
 msgstr "open4 向けテストスイート"
 
 #. tumbleweed/rubygem-owncloud-admin/ruby2.6-rubygem-owncloud-admin/summary
-#, fuzzy
 msgid "ownCloud administration"
-msgstr "ネットワーク管理"
+msgstr "ownCloud 管理"
 
 #. tumbleweed/rubygem-owncloud-admin/ruby2.6-rubygem-owncloud-admin/description
-#, fuzzy
 msgid "Command line tool for installing and administering ownCloud."
-msgstr "RAW デジタル写真のデコードと処理を行なうコマンドラインツールです。"
+msgstr "ownCloud をインストールしたり管理したりするためのコマンドラインツールです。"
 
 #. tumbleweed/rubygem-owncloud-admin/ruby2.6-rubygem-owncloud-admin-doc/summary
 msgid "RDoc documentation for owncloud-admin"
@@ -7464,10 +7535,20 @@ msgid ""
 "\" result.each do |row| puts \" %7d |  | %s \" % row.values_at('procpid', "
 "'usename', 'current_query') end end."
 msgstr ""
+"Pg は {PostgreSQL RDBMS}[http://www.postgresql.org/] に対する Ruby インターフェイスです。 {"
+"PostgreSQL 9.2 およびそれ以降のバージョン}[http://www.postgresql.org/support/versioning/] "
+"で動作します。シンプルな使用例は下記のとおりです:\n"
+"\n"
+"require 'pg'\n"
+"\n"
+"conn = PG.connect( dbname: 'sales' ) conn.exec( \"SELECT * FROM "
+"pg_stat_activity\" ) do |result| puts \"     PID | User             | Query\""
+" result.each do |row| puts \" %7d |  | %s \" % row.values_at('procpid', "
+"'usename', 'current_query') end end."
 
 #. tumbleweed/rubygem-pry_debug/ruby2.6-rubygem-pry_debug/summary
 msgid "A pure-ruby debugger"
-msgstr ""
+msgstr "純粋 Ruby デバッガ"
 
 #. tumbleweed/rubygem-pry_debug/ruby2.6-rubygem-pry_debug/description
 msgid ""
@@ -7475,6 +7556,8 @@ msgid ""
 "other until you find what caused the bug. Just add a breakpoint and see the "
 "value of any variable."
 msgstr ""
+"純粋 Ruby デバッガです。何がバグの原因なのかがわかるまでは、 \"ここ\" "
+"には何も配置してはなりません。ブレークポイントを設定して変数の値を参照することもできます。"
 
 #. tumbleweed/rubygem-pry_debug/ruby2.6-rubygem-pry_debug-doc/summary
 msgid "RDoc documentation for pry_debug"
@@ -7486,11 +7569,11 @@ msgstr "pry_debug 向けテストスイート"
 
 #. tumbleweed/rubygem-puma_worker_killer/ruby2.6-rubygem-puma_worker_killer/summary
 msgid "If you have a memory leak in your web code puma_worker_killer can"
-msgstr ""
+msgstr "puma_worker_killer: メモリリーク検出"
 
 #. tumbleweed/rubygem-puma_worker_killer/ruby2.6-rubygem-puma_worker_killer/description
 msgid "Kills pumas, the code kind ."
-msgstr ""
+msgstr "メモリリークを検出します。"
 
 #. tumbleweed/rubygem-puma_worker_killer/ruby2.6-rubygem-puma_worker_killer-doc/summary
 msgid "RDoc documentation for puma_worker_killer"
@@ -7501,15 +7584,12 @@ msgid "Test suite for puma_worker_killer"
 msgstr "puma_worker_killer 向けテストスイート"
 
 #. tumbleweed/rubygem-pundit/ruby2.6-rubygem-pundit/summary
-#, fuzzy
-#| msgid "Simple authorization solution for Rails"
 msgid "OO authorization for Rails"
-msgstr "Rails 向けのシンプルな認可ソリューション"
+msgstr "Rails 向け OO 認可"
 
 #. tumbleweed/rubygem-pundit/ruby2.6-rubygem-pundit/description
-#, fuzzy
 msgid "Object oriented authorization for Rails applications."
-msgstr "アプリケーションに対して認証機能を提供するセキュリティツール"
+msgstr "Rails アプリケーションに対してオブジェクト指向の認可を設定します。"
 
 #. tumbleweed/rubygem-pundit/ruby2.6-rubygem-pundit-doc/summary
 msgid "RDoc documentation for pundit"
@@ -7521,11 +7601,11 @@ msgstr "pundit 向けテストスイート"
 
 #. tumbleweed/rubygem-quiet_assets/ruby2.6-rubygem-quiet_assets/summary
 msgid "Turns off Rails asset pipeline log"
-msgstr ""
+msgstr "Rails アセットパイプラインログの無効化"
 
 #. tumbleweed/rubygem-quiet_assets/ruby2.6-rubygem-quiet_assets/description
 msgid "Quiet Assets turns off Rails asset pipeline log."
-msgstr ""
+msgstr "Quiet Assets は Rails のアセットパイプラインログを無効化します。"
 
 #. tumbleweed/rubygem-quiet_assets/ruby2.6-rubygem-quiet_assets-doc/summary
 msgid "RDoc documentation for quiet_assets"
@@ -7543,6 +7623,10 @@ msgid ""
 "frameworks, and software in between (the so-called middleware) into a single "
 "method call. Also see http://rack.github.com/."
 msgstr ""
+"Rack は Ruby 内で Web アプリケーションを開発するための、最小限でモジュール型の順応性の高いインターフェイスを提供します。"
+"できる限りシンプルな方法で HTTP のリクエストやレスポンスをラッピングしていることから、 Web サーバや Web "
+"フレームワーク、ソフトウエアなどを統合し、単一のメソッドコールとして作り上げることができる (そのため、ミドルウエアと呼ばれます) 仕組みです。 "
+"http://rack.github.io/ もご覧ください。"
 
 #. tumbleweed/rubygem-rack-1_4/ruby2.6-rubygem-rack-1_4/description
 msgid ""
@@ -7552,6 +7636,10 @@ msgid ""
 "frameworks, and software in between (the so-called middleware) into a single "
 "method call. Also see http://rack.github.com/."
 msgstr ""
+"Rack は Ruby 内で Web アプリケーションを開発するための、最小限でモジュール型の順応性の高いインターフェイスを提供します。"
+"できる限りシンプルな方法で HTTP のリクエストやレスポンスをラッピングしていることから、 Web サーバや Web "
+"フレームワーク、ソフトウエアなどを統合し、単一のメソッドコールとして作り上げることができる (そのため、ミドルウエアと呼ばれます) 仕組みです。 "
+"http://rack.github.io/ もご覧ください。"
 
 #. tumbleweed/rubygem-rack/ruby2.6-rubygem-rack/description
 msgid ""
@@ -7561,6 +7649,10 @@ msgid ""
 "frameworks, and software in between (the so-called middleware) into a single "
 "method call. Also see https://rack.github.io/."
 msgstr ""
+"Rack は Ruby 内で Web アプリケーションを開発するための、最小限でモジュール型の順応性の高いインターフェイスを提供します。"
+"できる限りシンプルな方法で HTTP のリクエストやレスポンスをラッピングしていることから、 Web サーバや Web "
+"フレームワーク、ソフトウエアなどを統合し、単一のメソッドコールとして作り上げることができる (そのため、ミドルウエアと呼ばれます) 仕組みです。 "
+"http://rack.github.io/ もご覧ください。"
 
 #. tumbleweed/rubygem-rack-cache-1_2/ruby2.6-rubygem-rack-cache-1_2/summary
 msgid "HTTP Caching for Rack"
@@ -7601,11 +7693,11 @@ msgstr "rack-ssl 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-rails-deprecated_sanitizer/ruby2.6-rubygem-rails-deprecated_sanitizer/summary
 msgid "Deprecated sanitizer API extracted from Action View"
-msgstr ""
+msgstr "Action View から抽出した古い無毒化 API"
 
 #. tumbleweed/rubygem-rails-deprecated_sanitizer/ruby2.6-rubygem-rails-deprecated_sanitizer/description
 msgid "Deprecated sanitizer API extracted from Action View."
-msgstr ""
+msgstr "Action View から抽出した古い無毒化 API です。"
 
 #. tumbleweed/rubygem-rails-deprecated_sanitizer/ruby2.6-rubygem-rails-deprecated_sanitizer-doc/summary
 msgid "RDoc documentation for rails-deprecated_sanitizer"
@@ -7633,13 +7725,14 @@ msgstr "rails-i18n 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-rake-compiler/ruby2.6-rubygem-rake-compiler/summary
 msgid "Rake-based Ruby Extension (C, Java) task generator"
-msgstr ""
+msgstr "Rake ベースの Ruby 拡張 (C, Java) タスク生成"
 
 #. tumbleweed/rubygem-rake-compiler/ruby2.6-rubygem-rake-compiler/description
 msgid ""
 "Provide a standard and simplified way to build and package Ruby extensions "
 "(C, Java) using Rake as glue."
 msgstr ""
+"Rake をグルーとして使用し、 Ruby の拡張 (C, Java) を構築したりパッケージ化したりすることのできる標準的でシンプルな方法を提供します。"
 
 #. tumbleweed/rubygem-rake-compiler/ruby2.6-rubygem-rake-compiler-doc/summary
 msgid "RDoc documentation for rake-compiler"
@@ -7661,6 +7754,8 @@ msgid ""
 "includes the +rdoc+ and +ri+ tools for generating and displaying "
 "documentation from the command-line."
 msgstr ""
+"RDoc は Ruby プロジェクト向けに HTML やコマンドラインのドキュメンテーションを生成します。 RDoc には +rdoc+ および +ri+"
+" ツールが含まれ、コマンドラインからドキュメンテーションを生成した閲覧したりすることができます。"
 
 #. tumbleweed/rubygem-rdoc-4/ruby2.6-rubygem-rdoc-doc-4/summary
 msgid "RDoc documentation for rdoc"
@@ -7672,11 +7767,11 @@ msgstr "rdoc 向けテストスイート"
 
 #. tumbleweed/rubygem-restility/ruby2.6-rubygem-restility/summary
 msgid "Set of tools for writing REST style web services"
-msgstr ""
+msgstr "REST 形式の Web サービスを記述するためのツール集"
 
 #. tumbleweed/rubygem-restility/ruby2.6-rubygem-restility/description
 msgid "Generates REST documentation in Docbook and HTML format."
-msgstr ""
+msgstr "Docbook および HTML 形式で REST のドキュメンテーションを生成します。"
 
 #. tumbleweed/rubygem-restility/ruby2.6-rubygem-restility-doc/summary
 msgid "RDoc documentation for restility"
@@ -7688,7 +7783,7 @@ msgstr "restility 向けテストスイート"
 
 #. tumbleweed/rubygem-rgen/ruby2.6-rubygem-rgen/summary
 msgid "Ruby Modelling and Generator Framework"
-msgstr ""
+msgstr "Ruby モデリング／ジェネレータフレームワーク"
 
 #. tumbleweed/rubygem-rgen/ruby2.6-rubygem-rgen/description
 msgid ""
@@ -7696,6 +7791,8 @@ msgid ""
 "This means that it helps you build Metamodels, instantiate Models, modify "
 "and transform Models and finally generate arbitrary textual content from it."
 msgstr ""
+"RGen は Ruby で Model Driven Software Development (MDSD) を行なうためのフレームワークです。メタモデル"
+"を構築してモデルのインスタンスを作成し、モデルを修正したり変形させたりすることで、任意のテキスト型コンテンツを生成することを意味します。"
 
 #. tumbleweed/rubygem-rgen/ruby2.6-rubygem-rgen-doc/summary
 msgid "RDoc documentation for rgen"
@@ -7708,13 +7805,13 @@ msgstr "rgen 向けテストスイート"
 #. tumbleweed/rubygem-rouge-1/ruby2.6-rubygem-rouge-1/summary
 #. tumbleweed/rubygem-rouge/ruby2.6-rubygem-rouge/summary
 msgid "A pure-ruby colorizer based on pygments"
-msgstr ""
+msgstr "pygments をベースにした純粋 Ruby 色づけ機能"
 
 #. tumbleweed/rubygem-rouge-1/ruby2.6-rubygem-rouge-1/description
 #. tumbleweed/rubygem-rouge/ruby2.6-rubygem-rouge/description
 msgid ""
 "Rouge aims to a be a simple, easy-to-extend drop-in replacement for pygments."
-msgstr ""
+msgstr "Rouge は、 pygments に対するシンプルで拡張しやすい即時入れ替え版となることを目指しています。"
 
 #. tumbleweed/rubygem-rouge-1/ruby2.6-rubygem-rouge-doc-1/summary
 #. tumbleweed/rubygem-rouge/ruby2.6-rubygem-rouge-doc/summary
@@ -7768,13 +7865,15 @@ msgstr "ruby-libvirt 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-ruby-shadow/ruby2.6-rubygem-ruby-shadow/summary
 msgid "*nix Shadow Password Module"
-msgstr ""
+msgstr "*nix Shadow パスワードモジュール"
 
 #. tumbleweed/rubygem-ruby-shadow/ruby2.6-rubygem-ruby-shadow/description
 msgid ""
 "This module provides access to shadow passwords on Linux, OSX, FreeBSD, "
 "OpenBSD, and Solaris."
 msgstr ""
+"このモジュールは、 Linux, OSX, FreeBSD, OpenBSD, Solaris で使用される、 shadow "
+"パスワードへのアクセス機能を提供します。"
 
 #. tumbleweed/rubygem-ruby-shadow/ruby2.6-rubygem-ruby-shadow-doc/summary
 msgid "RDoc documentation for ruby-shadow"
@@ -7782,7 +7881,7 @@ msgstr "ruby-shadow 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-rubyforge/ruby2.6-rubygem-rubyforge/summary
 msgid "A script which automates a limited set of rubyforge operations"
-msgstr ""
+msgstr "RubyForge の一部の操作を自動化するスクリプト"
 
 #. tumbleweed/rubygem-rubyforge/ruby2.6-rubygem-rubyforge/description
 msgid ""
@@ -7795,6 +7894,13 @@ msgid ""
 "* For all rubyforge upgrades, run 'rubyforge config' to ensure you have "
 "latest."
 msgstr ""
+"RubyForge の一部の操作を自動化するスクリプトです。\n"
+"* 完全な使用方法を読むには、 'rubyforge help' を実行してください。\n"
+"* セットアップ: 初心者および 0.4.0 へアップグレードしたユーザ向け:\n"
+"* rubyforge セットアップ (ユーザ名とパスワードを削除してください)\n"
+"* ~/.rubyforge/user-config.yml を編集してください\n"
+"* rubyforge config\n"
+"* 全ての rubyforge アップグレードについては、 'rubyforge config' を実行してください。"
 
 #. tumbleweed/rubygem-rubyforge/ruby2.6-rubygem-rubyforge-doc/summary
 msgid "RDoc documentation for rubyforge"
@@ -7812,15 +7918,18 @@ msgid ""
 "formatted, standard CSS using the command line tool or a web-framework "
 "plugin."
 msgstr ""
+"Ruby Sass は古いライブラリです。詳しくは https://sass-lang.com/ruby-sass をお読みください。Sass は "
+"CSS を再度面白いものにします。 Sass は CSS "
+"の拡張で、入れ子になったルールや変数、ミックスインやセレクタの継承など、さまざまな拡張が行なわれています。コマンドラインツールや Web "
+"フレームワークプラグインを使用することで、読みやすい標準的な CSS に変換することができます。"
 
 #. tumbleweed/rubygem-sassc/ruby2.6-rubygem-sassc/summary
 msgid "Use libsass with Ruby!"
-msgstr ""
+msgstr "Ruby での libsass の使用"
 
 #. tumbleweed/rubygem-sassc/ruby2.6-rubygem-sassc/description
-#, fuzzy
 msgid "Use libsass with Ruby!."
-msgstr "ini ファイルを処理するライブラリ"
+msgstr "Ruby で libsass を使用します。"
 
 #. tumbleweed/rubygem-sassc/ruby2.6-rubygem-sassc-doc/summary
 msgid "RDoc documentation for sassc"
@@ -7828,7 +7937,7 @@ msgstr "sassc 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-sassc-rails/ruby2.6-rubygem-sassc-rails/summary
 msgid "Integrate SassC-Ruby into Rails"
-msgstr ""
+msgstr "SassC-Ruby と Rails の統合"
 
 #. tumbleweed/rubygem-sassc-rails/ruby2.6-rubygem-sassc-rails/description
 msgid ""
@@ -7836,6 +7945,8 @@ msgid ""
 "for larger codebases. This gem integrates the C implementation of Sass, "
 "LibSass, into the asset pipeline."
 msgstr ""
+"Sass を使用したいのですが、巨大なコードベースを使用していると、コンパイルにしばらくの時間がかかってしまいます。この gem は Sass の C "
+"言語実装である libsass を、アセットパイプラインに統合します。"
 
 #. tumbleweed/rubygem-sassc-rails/ruby2.6-rubygem-sassc-rails-doc/summary
 msgid "RDoc documentation for sassc-rails"
@@ -7851,11 +7962,11 @@ msgstr "sassc 向けテストスイート"
 
 #. tumbleweed/rubygem-sdoc/ruby2.6-rubygem-sdoc/summary
 msgid "rdoc html with javascript search index"
-msgstr ""
+msgstr "javascript 検索索引付きの rdoc html"
 
 #. tumbleweed/rubygem-sdoc/ruby2.6-rubygem-sdoc/description
 msgid "rdoc generator html with javascript search index."
-msgstr ""
+msgstr "javascript 検索索引付きの rdoc html 生成器です。"
 
 #. tumbleweed/rubygem-sdoc/ruby2.6-rubygem-sdoc-doc/summary
 msgid "RDoc documentation for sdoc"
@@ -7867,11 +7978,11 @@ msgstr "sdoc 向けテストスイート"
 
 #. tumbleweed/rubygem-serverengine/ruby2.6-rubygem-serverengine/summary
 msgid "ServerEngine - multiprocess server framework"
-msgstr ""
+msgstr "ServerEngine: マルチプロセスサーバフレームワーク"
 
 #. tumbleweed/rubygem-serverengine/ruby2.6-rubygem-serverengine/description
 msgid "A framework to implement robust multiprocess servers like Unicorn."
-msgstr ""
+msgstr "Unicorn のような強健なマルチプロセスサーバを実装するフレームワークです。"
 
 #. tumbleweed/rubygem-serverengine/ruby2.6-rubygem-serverengine-doc/summary
 msgid "RDoc documentation for serverengine"
@@ -7883,11 +7994,11 @@ msgstr "serverengine 向けテストスイート"
 
 #. tumbleweed/rubygem-simple_oauth/ruby2.6-rubygem-simple_oauth/summary
 msgid "Simply builds and verifies OAuth headers"
-msgstr ""
+msgstr "OAuth ヘッダのシンプルな構築と検証"
 
 #. tumbleweed/rubygem-simple_oauth/ruby2.6-rubygem-simple_oauth/description
 msgid "Simply builds and verifies OAuth headers."
-msgstr ""
+msgstr "OAuth ヘッダのシンプルな構築と検証を行ないます。"
 
 #. tumbleweed/rubygem-simple_oauth/ruby2.6-rubygem-simple_oauth-doc/summary
 msgid "RDoc documentation for simple_oauth"
@@ -7895,26 +8006,21 @@ msgstr "simple_oauth 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-slop-3/ruby2.6-rubygem-slop-3/summary
 #. tumbleweed/rubygem-slop/ruby2.6-rubygem-slop/summary
-#, fuzzy
 msgid "Simple Lightweight Option Parsing"
-msgstr "シンプルで軽量なオーディオミキサー"
+msgstr "シンプルで軽量なオプション処理"
 
 #. tumbleweed/rubygem-slop-3/ruby2.6-rubygem-slop-3/description
 #. tumbleweed/rubygem-slop-3_3/ruby2.6-rubygem-slop-3_3/description
-#, fuzzy
 msgid "A simple DSL for gathering options and parsing the command line."
-msgstr ""
-"設定ファイルの読み込みとコマンドライン引数を処理する Perl5 モジュールです。"
+msgstr "コマンドラインを処理してオプションを収集するシンプルな DSL です。"
 
 #. tumbleweed/rubygem-slop-3_3/ruby2.6-rubygem-slop-3_3/summary
 msgid "Option gathering made easy"
-msgstr ""
+msgstr "オプション処理の簡易化"
 
 #. tumbleweed/rubygem-slop/ruby2.6-rubygem-slop/description
-#, fuzzy
 msgid "A DSL for gathering options and parsing command line flags."
-msgstr ""
-"設定ファイルの読み込みとコマンドライン引数を処理する Perl5 モジュールです。"
+msgstr "コマンドラインフラグを処理してオプションを収集するシンプルな DSL です。"
 
 #. tumbleweed/rubygem-slop-3/ruby2.6-rubygem-slop-doc-3/summary
 #. tumbleweed/rubygem-slop-3_3/ruby2.6-rubygem-slop-doc-3_3/summary
@@ -7930,11 +8036,11 @@ msgstr "slop 向けテストスイート"
 
 #. tumbleweed/rubygem-sprockets-helpers/ruby2.6-rubygem-sprockets-helpers/summary
 msgid "Asset path helpers for Sprockets 2.x & 3.x applications"
-msgstr ""
+msgstr "Sprockets 2.x & 3.x アプリケーション向けのアセットパスヘルパー"
 
 #. tumbleweed/rubygem-sprockets-helpers/ruby2.6-rubygem-sprockets-helpers/description
 msgid "Asset path helpers for Sprockets 2.x & 3.x applications."
-msgstr ""
+msgstr "Sprockets 2.x & 3.x アプリケーション向けのアセットパスヘルパーです。"
 
 #. tumbleweed/rubygem-sprockets-helpers/ruby2.6-rubygem-sprockets-helpers-doc/summary
 msgid "RDoc documentation for sprockets-helpers"
@@ -7946,11 +8052,11 @@ msgstr "sprockets-helpers 向けテストスイート"
 
 #. tumbleweed/rubygem-stackdeck/ruby2.6-rubygem-stackdeck/summary
 msgid "Manages stack traces across language boundaries"
-msgstr ""
+msgstr "言語の境界を越えたスタックトレース"
 
 #. tumbleweed/rubygem-stackdeck/ruby2.6-rubygem-stackdeck/description
 msgid "Manages stack traces across language boundaries."
-msgstr ""
+msgstr "言語の境界を越えたスタックトレースです。"
 
 #. tumbleweed/rubygem-stackdeck/ruby2.6-rubygem-stackdeck-doc/summary
 msgid "RDoc documentation for stackdeck"
@@ -7961,16 +8067,12 @@ msgid "Test suite for stackdeck"
 msgstr "stackdeck 向けテストスイート"
 
 #. tumbleweed/rubygem-stomp/ruby2.6-rubygem-stomp/summary
-#, fuzzy
-#| msgid "A client program for the telnet remote login protocol"
 msgid "Ruby client for the Stomp messaging protocol"
-msgstr "Telnet リモートログインプロトコル向けクライアントプログラム"
+msgstr "Stomp メッセージングプロトコル向けの Ruby クライアント"
 
 #. tumbleweed/rubygem-stomp/ruby2.6-rubygem-stomp/description
-#, fuzzy
-#| msgid "A client program for the telnet remote login protocol"
 msgid "Ruby client for the Stomp messaging protocol."
-msgstr "Telnet リモートログインプロトコル向けクライアントプログラム"
+msgstr "Stomp メッセージングプロトコル向けの Ruby クライアントです。"
 
 #. tumbleweed/rubygem-stomp/ruby2.6-rubygem-stomp-doc/summary
 msgid "RDoc documentation for stomp"
@@ -7981,16 +8083,12 @@ msgid "Test suite for stomp"
 msgstr "stomp 向けテストスイート"
 
 #. tumbleweed/rubygem-strptime/ruby2.6-rubygem-strptime/summary
-#, fuzzy
-#| msgid "KDE Javascript engine"
 msgid "a fast strptime/strftime engine"
-msgstr "KDE Javascript エンジン"
+msgstr "高速な strptime/strftime エンジン"
 
 #. tumbleweed/rubygem-strptime/ruby2.6-rubygem-strptime/description
-#, fuzzy
-#| msgid "KDE Javascript engine"
 msgid "a fast strptime/strftime engine which uses VM."
-msgstr "KDE Javascript エンジン"
+msgstr "VM を使用する高速な strptime/strftime エンジンです。"
 
 #. tumbleweed/rubygem-strptime/ruby2.6-rubygem-strptime-doc/summary
 msgid "RDoc documentation for strptime"
@@ -7998,13 +8096,13 @@ msgstr "strptime 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-systemu/ruby2.6-rubygem-systemu/summary
 msgid "systemu"
-msgstr ""
+msgstr "systemu"
 
 #. tumbleweed/rubygem-systemu/ruby2.6-rubygem-systemu/description
 msgid ""
 "universal capture of stdout and stderr and handling of child process pid for "
 "windows, *nix, etc."
-msgstr ""
+msgstr "Windows や *nix 等で動作する、標準出力や標準エラー出力の汎用採取および子プロセス ID の管理モジュールです。"
 
 #. tumbleweed/rubygem-systemu/ruby2.6-rubygem-systemu-doc/summary
 msgid "RDoc documentation for systemu"
@@ -8016,9 +8114,8 @@ msgstr "systemu 向けテストスイート"
 
 #. tumbleweed/rubygem-taskjuggler/ruby2.6-rubygem-taskjuggler/summary
 #. tumbleweed/rubygem-taskjuggler/summary
-#, fuzzy
 msgid "A Project Management Software"
-msgstr "KDE の画面管理ソフトウエア"
+msgstr "プロジェクト管理ソフトウエア"
 
 #. tumbleweed/rubygem-taskjuggler/ruby2.6-rubygem-taskjuggler/description
 #. tumbleweed/rubygem-taskjuggler/description
@@ -8032,6 +8129,10 @@ msgid ""
 "resource assignment, cost and revenue planing, risk and communication "
 "management."
 msgstr ""
+"TaskJuggler はモダンでパワフル、フリー／オープンソースソフトウエアのプロジェクト管理ツールです。プロジェクトの計画や追跡の機能は、一般的に使用"
+"されているガントチャート編集ツールよりも柔軟で優れた新しいアプローチになっています。 TaskJuggler は重要なプロジェクトを管理している場合にも便"
+"利な管理ソフトウエアです。最初のアイディア段階からプロジェクトの完了まで、プロジェクト管理作業の全てに対応しています。プロジェクトのスコープ範囲やリソース"
+"の管理、コストと予算の計画、リスクとコミュニケーションの管理など、様々なことに対応しています。"
 
 #. tumbleweed/rubygem-taskjuggler/ruby2.6-rubygem-taskjuggler-doc/summary
 msgid "RDoc documentation for taskjuggler"
@@ -8043,7 +8144,7 @@ msgstr "taskjuggler 向けテストスイート"
 
 #. tumbleweed/rubygem-text-hyphen/ruby2.6-rubygem-text-hyphen/summary
 msgid "Text::Hyphen is a Ruby library to hyphenate words in various"
-msgstr ""
+msgstr "Text::Hyphen: 単語のハイフン処理のための Ruby ライブラリ"
 
 #. tumbleweed/rubygem-text-hyphen/ruby2.6-rubygem-text-hyphen/description
 msgid ""
@@ -8063,6 +8164,15 @@ msgid ""
 "be providing any bug fixes related to Ruby 1.8. New features will be "
 "developed and tested against Ruby 1.9 only."
 msgstr ""
+"Text::Hyphen は TeX ハイフン処理パターンの Ruby 化版を利用した、各種言語対応の単語ハイフン処理 Ruby "
+"ライブラリです。記述している言語の種類に応じた正しいハイフン設定を行なうことができます。アルゴリズムは Donald E. Knuth 氏による TeX "
+"タイプセットシステムのものをベースにしています。また、オリジナルの Perl 実装版 {TeX::Hyphen}[http://search.cpan."
+"org/author/JANPAZ/TeX-Hyphen-0.140/lib/TeX/Hyphen.pm] と {Ruby "
+"移植版}[http://rubyforge.org/projects/text-format] をベースにしています。また、"
+"言語のハイフンパターンファイルは {CTAN}[http://www.ctan.org] の 2004.12.19 時点と Austin Ziegler "
+"氏の翻訳をベースにしています。これはロシア語にも対応し、直近のバージョンにおける独自のハイフン処理の不具合を修正した小さなリリースです。このリリースは "
+"Ruby 1.8.7 と 1.9.2 の両方 (ただし下記参照) に対応しています。簡単に言うと、 Ruby 1.8 は廃止予定となり、 Ruby "
+"1.8 に関連したバグ修正については、今後は提供されなくなる予定です。新機能は Ruby 1.9 に対してのみ開発およびテストされる予定です。"
 
 #. tumbleweed/rubygem-text-hyphen/ruby2.6-rubygem-text-hyphen-doc/summary
 msgid "RDoc documentation for text-hyphen"
@@ -8074,13 +8184,13 @@ msgstr "text-hyphen 向けテストスイート"
 
 #. tumbleweed/rubygem-timers/ruby2.6-rubygem-timers/summary
 msgid "Pure Ruby one-shot and periodic timers"
-msgstr ""
+msgstr "純粋 Ruby によるワンショット／定期タイマー"
 
 #. tumbleweed/rubygem-timers/ruby2.6-rubygem-timers/description
 msgid ""
 "Schedule procs to run after a certain time, or at periodic intervals, using "
 "any API that accepts a timeout."
-msgstr ""
+msgstr "一定時間の経過後や一定の時間間隔でプロシージャを呼び出します。タイムアウトを受け付ける任意の API を使用することができます。"
 
 #. tumbleweed/rubygem-timers/ruby2.6-rubygem-timers-doc/summary
 msgid "RDoc documentation for timers"
@@ -8092,11 +8202,11 @@ msgstr "timers 向けテストスイート"
 
 #. tumbleweed/rubygem-tmuxinator/ruby2.6-rubygem-tmuxinator/summary
 msgid "Create and manage complex tmux sessions easily"
-msgstr ""
+msgstr "複雑な tmux セッションを簡単に作成および管理するモジュール"
 
 #. tumbleweed/rubygem-tmuxinator/ruby2.6-rubygem-tmuxinator/description
 msgid "Create and manage complex tmux sessions easily."
-msgstr ""
+msgstr "複雑な tmux セッションを簡単に作成および管理するモジュールです。"
 
 #. tumbleweed/rubygem-tmuxinator/ruby2.6-rubygem-tmuxinator-doc/summary
 msgid "RDoc documentation for tmuxinator"
@@ -8108,11 +8218,11 @@ msgstr "tmuxinator 向けテストスイート"
 
 #. tumbleweed/rubygem-tomlrb/ruby2.6-rubygem-tomlrb/summary
 msgid "A racc based toml parser"
-msgstr ""
+msgstr "racc ベースの toml パーサー"
 
 #. tumbleweed/rubygem-tomlrb/ruby2.6-rubygem-tomlrb/description
 msgid "A racc based toml parser."
-msgstr ""
+msgstr "racc ベースの toml パーサーです。"
 
 #. tumbleweed/rubygem-tomlrb/ruby2.6-rubygem-tomlrb-doc/summary
 msgid "RDoc documentation for tomlrb"
@@ -8120,7 +8230,7 @@ msgstr "tomlrb 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-treetop/ruby2.6-rubygem-treetop/description
 msgid "A Parsing Expression Grammar (PEG) Parser generator DSL for Ruby."
-msgstr ""
+msgstr "Ruby 向け Parsing Expression Grammar (PEG) パーサージェネレータです。"
 
 #. tumbleweed/rubygem-trollop/ruby2.6-rubygem-trollop/description
 msgid ""
@@ -8129,6 +8239,10 @@ msgid ""
 "**DEPRECATION** This gem has been renamed to optimist and will no longer be "
 "supported. Please switch to optimist as soon as possible."
 msgstr ""
+"Trollop は Ruby 向けの邪魔にならないコマンドラインオプション処理モジュールです。\n"
+"\n"
+"**廃止予定** この gem は optimist という名前に変更されていて、このモジュールはサポートされていません。できる限り早期に "
+"optimist に移行してください。"
 
 #. tumbleweed/rubygem-tzinfo-0/ruby2.6-rubygem-tzinfo-0/summary
 msgid "Daylight-savings aware timezone library"
@@ -8145,23 +8259,24 @@ msgstr ""
 
 #. tumbleweed/rubygem-tzinfo/ruby2.6-rubygem-tzinfo/summary
 msgid "Time Zone Library"
-msgstr ""
+msgstr "タイムゾーンライブラリ"
 
 #. tumbleweed/rubygem-tzinfo/ruby2.6-rubygem-tzinfo/description
 msgid ""
 "TZInfo provides access to time zone data and allows times to be converted "
 "using time zone rules."
-msgstr ""
+msgstr "TZInfo はタイムゾーンデータへのアクセス方法や、タイムゾーンルールを利用して時間同士を変換する機能を提供します。"
 
 #. tumbleweed/rubygem-tzinfo-data/ruby2.6-rubygem-tzinfo-data/summary
 msgid "Timezone Data for TZInfo"
-msgstr ""
+msgstr "TZInfo 向けタイムゾーンデータ"
 
 #. tumbleweed/rubygem-tzinfo-data/ruby2.6-rubygem-tzinfo-data/description
 msgid ""
 "TZInfo::Data contains data from the IANA Time Zone database packaged as Ruby "
 "modules for use with TZInfo."
 msgstr ""
+"TZInfo::Data には TZInfo で使用するための Ruby モジュール向けの IANA Time Zone データベースが含まれています。"
 
 #. tumbleweed/rubygem-tzinfo-data/ruby2.6-rubygem-tzinfo-data-doc/summary
 msgid "RDoc documentation for tzinfo-data"
@@ -8169,7 +8284,7 @@ msgstr "tzinfo-data 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-unicorn/ruby2.6-rubygem-unicorn/summary
 msgid "Rack HTTP server for fast clients and Unix"
-msgstr ""
+msgstr "高速なクライアント向けの Rack HTTP サーバ"
 
 #. tumbleweed/rubygem-unicorn/ruby2.6-rubygem-unicorn/description
 msgid ""
@@ -8179,6 +8294,9 @@ msgid ""
 "placing a reverse proxy capable of fully buffering both the the request and "
 "response in between unicorn and slow clients."
 msgstr ""
+"unicorm は Rack アプリケーション向けの HTTP サーバで、低遅延で広帯域な高速クライアントに対して設計され、 Unix や Unix "
+"系のカーネルでの特長を生かすようにした仕組みです。遅いクライアントの場合はリバースプロキシとして動作し、 unicorn "
+"と遅いクライアントとの間で完全なバッファ機能を提供します。"
 
 #. tumbleweed/rubygem-unicorn/ruby2.6-rubygem-unicorn-doc/summary
 msgid "RDoc documentation for unicorn"
@@ -8190,11 +8308,11 @@ msgstr "unicorn 向けテストスイート"
 
 #. tumbleweed/rubygem-unicorn-worker-killer/ruby2.6-rubygem-unicorn-worker-killer/summary
 msgid "Kill unicorn workers by memory and request counts"
-msgstr ""
+msgstr "メモリやリクエストカウントで unicorn ワーカーを停止するモジュール"
 
 #. tumbleweed/rubygem-unicorn-worker-killer/ruby2.6-rubygem-unicorn-worker-killer/description
 msgid "Kill unicorn workers by memory and request counts."
-msgstr ""
+msgstr "メモリやリクエストカウントで unicorn ワーカーを停止するモジュールです。"
 
 #. tumbleweed/rubygem-unicorn-worker-killer/ruby2.6-rubygem-unicorn-worker-killer-doc/summary
 msgid "RDoc documentation for unicorn-worker-killer"
@@ -8202,7 +8320,7 @@ msgstr "unicorn-worker-killer 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-vagrant-spec/ruby2.6-rubygem-vagrant-spec/summary
 msgid "Tool and library for testing Vagrant plugins"
-msgstr ""
+msgstr "Vagrant プラグインをテストするためのツールとライブラリ"
 
 #. tumbleweed/rubygem-vagrant-spec/ruby2.6-rubygem-vagrant-spec/description
 msgid ""
@@ -8216,6 +8334,13 @@ msgid ""
 "that the test library can be used with your test framework of choice, but "
 "the entire tool is geared very heavily towards RSpec."
 msgstr ""
+"vagrant-spec は Vagrany とさまざまなコンポーネントがどのように振る舞うべきかを指定した仕様であるとともに、 Vagrant "
+"に対する独自の単体テストと受け入れテストを作成できるようにするテストヘルパーのライブラリです。\n"
+"\n"
+"ライブラリには RSpec のマッチャに加え、 Vagrant の単体テストや受け入れテストの両方を支援するためのヘルパーメソッド集が提供されています。 "
+"RSpec "
+"コンポーネントはヘルパーメソッド上に構築され、お使いのテストフレームワークと併用して使用できるようになっています。ただし、ツール全体については、 "
+"RSpec を非常に重視しています。"
 
 #. tumbleweed/rubygem-vagrant-spec/ruby2.6-rubygem-vagrant-spec-doc/summary
 msgid "RDoc documentation for vagrant-spec"
@@ -8227,21 +8352,21 @@ msgstr "vagrant-spec 向けテストスイート"
 
 #. tumbleweed/rubygem-warden/ruby2.6-rubygem-warden/summary
 msgid "An authentication library compatible with all Rack-based frameworks"
-msgstr ""
+msgstr "全ての Rack ベースフレームワークと互換性のある認証ライブラリ"
 
 #. tumbleweed/rubygem-warden/ruby2.6-rubygem-warden/description
 msgid "An authentication library compatible with all Rack-based frameworks."
-msgstr ""
+msgstr "全ての Rack ベースフレームワークと互換性のある認証ライブラリです。"
 
 #. tumbleweed/rubygem-websocket/ruby2.6-rubygem-websocket/summary
 #. tumbleweed/rubygem-libwebsocket/summary
 #. tumbleweed/rubygem-libwebsocket/description
 msgid "Universal Ruby library to handle WebSocket protocol"
-msgstr ""
+msgstr "WebSocket プロトコルを処理するための汎用 Ruby ライブラリ"
 
 #. tumbleweed/rubygem-websocket/ruby2.6-rubygem-websocket/description
 msgid "Universal Ruby library to handle WebSocket protocol."
-msgstr ""
+msgstr "WebSocket プロトコルを処理するための汎用 Ruby ライブラリです。"
 
 #. tumbleweed/rubygem-websocket/ruby2.6-rubygem-websocket-doc/summary
 msgid "RDoc documentation for websocket"
@@ -8253,13 +8378,15 @@ msgstr "websocket 向けテストスイート"
 
 #. tumbleweed/rubygem-xdg/ruby2.6-rubygem-xdg/summary
 msgid "XDG provides an interface for using XDG directory standard"
-msgstr ""
+msgstr "XDG: XDG ディレクトリ標準を使用するためのインターフェイス"
 
 #. tumbleweed/rubygem-xdg/ruby2.6-rubygem-xdg/description
 msgid ""
 "XDG provides a module for supporting the XDG Base Directory Standard. See "
 "http://standards.freedesktop.org/basedir-spec/basedir-spec-0.6.html."
 msgstr ""
+"XDG は XDG ディレクトリ標準を使用するためのインターフェイスです。詳しくは http://standards.freedesktop.org/"
+"basedir-spec/basedir-spec-0.6.html をお読みください。"
 
 #. tumbleweed/rubygem-xdg/ruby2.6-rubygem-xdg-doc/summary
 msgid "RDoc documentation for xdg"
@@ -8271,11 +8398,11 @@ msgstr "xdg 向けテストスイート"
 
 #. tumbleweed/rubygem-xml-simple/ruby2.6-rubygem-xml-simple/summary
 msgid "A simple API for XML processing"
-msgstr ""
+msgstr "XML を処理するためのシンプルな API"
 
 #. tumbleweed/rubygem-xml-simple/ruby2.6-rubygem-xml-simple/description
 msgid "A simple API for XML processing."
-msgstr ""
+msgstr "XML を処理するためのシンプルな API です。"
 
 #. tumbleweed/rubygem-xml-simple/ruby2.6-rubygem-xml-simple-doc/summary
 msgid "RDoc documentation for xml-simple"
@@ -8283,13 +8410,13 @@ msgstr "xml-simple 向け RDoc ドキュメンテーション"
 
 #. tumbleweed/rubygem-xmlhash/ruby2.6-rubygem-xmlhash/summary
 msgid "Xmlhash is a naive form of XML::Simple"
-msgstr ""
+msgstr "Xmlhash: XML::Simple の素朴な形"
 
 #. tumbleweed/rubygem-xmlhash/ruby2.6-rubygem-xmlhash/description
 msgid ""
 "A small C module that wraps libxml2's xmlreader to parse a XML string into a "
 "ruby hash."
-msgstr ""
+msgstr "XML 文字列を Ruby のハッシュに変換する、 libxml2 の xmlreader をラッピングした小さな C 言語モジュールです。"
 
 #. tumbleweed/rubygem-xmlhash/ruby2.6-rubygem-xmlhash-doc/summary
 msgid "RDoc documentation for xmlhash"
@@ -8301,11 +8428,11 @@ msgstr "xmlhash 向けテストスイート"
 
 #. tumbleweed/rubygem-yajl-ruby/ruby2.6-rubygem-yajl-ruby/summary
 msgid "Ruby C bindings to the excellent Yajl JSON stream-based parser"
-msgstr ""
+msgstr "素晴らしい Yajl JSON ストリームベースパーサーに対する Ruby C バインディング"
 
 #. tumbleweed/rubygem-yajl-ruby/ruby2.6-rubygem-yajl-ruby/description
 msgid "Ruby C bindings to the excellent Yajl JSON stream-based parser library."
-msgstr ""
+msgstr "素晴らしい Yajl JSON ストリームベースパーサーライブラリに対する Ruby C バインディングです。"
 
 #. tumbleweed/rubygem-yajl-ruby/ruby2.6-rubygem-yajl-ruby-doc/summary
 msgid "RDoc documentation for yajl-ruby"
@@ -8350,11 +8477,11 @@ msgstr "cancan 向けテストスイート"
 
 #. tumbleweed/rubygem-docker-api/summary
 msgid "A simple REST client for the Docker Remote API"
-msgstr ""
+msgstr "Docker Remote API 向けのシンプルな REST クライアント"
 
 #. tumbleweed/rubygem-docker-api/description
 msgid "A simple REST client for the Docker Remote API."
-msgstr ""
+msgstr "Docker Remote API 向けのシンプルな REST クライアントです。"
 
 #. tumbleweed/rubygem-docker-api/rubygem-docker-api-doc/summary
 msgid "RDoc documentation for docker-api"
@@ -8366,12 +8493,11 @@ msgstr "docker-api 向けテストスイート"
 
 #. tumbleweed/rubygem-gettext_activerecord/summary
 msgid "Localization support for ActiveRecord by Ruby-GetText-Package"
-msgstr ""
+msgstr "Ruby-GetText-Package による ActiveRecord 向けローカライズサポート"
 
 #. tumbleweed/rubygem-gettext_activerecord/description
-#, fuzzy
 msgid "Localization support for ActiveRecord by Ruby-GetText-Package."
-msgstr "DateTime.pm 向けローカライズサポート"
+msgstr "Ruby-GetText-Package による ActiveRecord 向けローカライズサポートです。"
 
 #. tumbleweed/rubygem-gettext_activerecord/rubygem-gettext_activerecord-doc/summary
 msgid "RDoc documentation for gettext_activerecord"
@@ -8393,17 +8519,18 @@ msgstr "libwebsocket 向けテストスイート"
 msgid ""
 "sexp_processor branches from ParseTree bringing all the generic sexp "
 "processing tools with it"
-msgstr ""
+msgstr "ParseTree から分岐した sexp_processor: sexp プロセッシングツール"
 
 #. tumbleweed/rubygem-shoes/summary
 msgid "Shoes is the best little GUI toolkit for Ruby"
-msgstr ""
+msgstr "Shoes: Ruby 向けの最小 GUI ツールキット"
 
 #. tumbleweed/rubygem-shoes/description
 msgid ""
 "Shoes is the best little GUI toolkit for Ruby. This gem is currently a "
 "placeholder until we properly gemfiy Shoes."
 msgstr ""
+"Shoes は Ruby 向けの最小 GUI ツールキットです。この gem は、 Shoes 向けの適切な gem を作成するまでのプレースホルダです。"
 
 #. tumbleweed/rubygem-shoes/rubygem-shoes-doc/summary
 msgid "RDoc documentation for shoes"
