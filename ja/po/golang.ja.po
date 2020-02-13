@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2019-05-06 14:28+0000\n"
+"POT-Creation-Date: 2020-02-13 12:47+0000\n"
 "PO-Revision-Date: 2019-05-14 14:47+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -210,12 +210,10 @@ msgstr ""
 "他のコンポーネントを構築する際に利用します。"
 
 #. leap/golang-github-russross-blackfriday/summary
-#. tumbleweed/golang-github-russross-blackfriday/summary
 msgid "Markdown processor implemented in Go"
 msgstr "Go 言語で実装されたマークダウンプロセッサ"
 
 #. leap/golang-github-russross-blackfriday/description
-#. tumbleweed/golang-github-russross-blackfriday/description
 msgid ""
 "Blackfriday is a Markdown processor implemented in Go. It is paranoid about "
 "its input (so you can safely feed it user-supplied data), it is fast, it "
@@ -250,6 +248,20 @@ msgstr ""
 "用性のあるアンカー名の作成や、これらのアンカーに対するリンクを行なうことがで"
 "きます。なお、現時点では生成されたアンカー名が唯一のものであるかどうかを確認"
 "しません。このような機能は呼び出し側で実装してください。"
+
+#. leap/golang-github-vpenso-prometheus_slurm_exporter/summary
+#. tumbleweed/golang-github-vpenso-prometheus_slurm_exporter/summary
+#, fuzzy
+#| msgid "Prometheus exporter for machine metrics"
+msgid "Prometheus exporter for Slurm metrics"
+msgstr "マシンメトリック向け Prometheus エクスポータ"
+
+#. leap/golang-github-vpenso-prometheus_slurm_exporter/description
+#. tumbleweed/golang-github-vpenso-prometheus_slurm_exporter/description
+msgid ""
+"Prometheus collector and exporter for metrics extracted from the Slurm "
+"resource scheduling system."
+msgstr ""
 
 #. leap/golang-gopkgin-check/summary
 #. tumbleweed/golang-gopkgin-check/summary
@@ -350,24 +362,39 @@ msgstr ""
 "組み (そのため \"デーモン\" と呼ばれます) により、文脈依存のオートコンプリー"
 "ト機能を提供します。"
 
-#. tumbleweed/golang-github-kr-pretty/summary
-msgid "Pretty printing for Go values"
-msgstr "Go の値の見やすい表示"
+#. tumbleweed/golang-github-boynux-squid_exporter/summary
+#, fuzzy
+#| msgid "Prometheus Alertmanager"
+msgid "Squid Prometheus Exporter"
+msgstr "Prometheus アラートマネージャ"
 
-#. tumbleweed/golang-github-kr-pretty/description
-msgid ""
-"Package pretty provides pretty-printing for go values. This is useful during "
-"debugging, to avoid wrapping long output lines in the terminal. It provides "
-"a function, Formatter, that can be used with any function that accepts a "
-"format string. This package also provides a convenience wrapper for each "
-"function in package fmt that takes a format string."
+#. tumbleweed/golang-github-boynux-squid_exporter/description
+msgid "Exports squid metrics in Prometheus format"
 msgstr ""
-"pretty パッケージは Go における値を見やすく表示するための仕組みを提供します。"
-"デバッグ目的で使用すると、端末側で長い行が勝手に改行されたりする問題を避ける"
-"ことができます。このほか、 Formatter と呼ばれる関数も提供しています。これは書"
-"式文字列を受け付けて表示することができます。このパッケージには、書式文字列を"
-"受け付ける fmt パッケージ内の各関数に対する、便利なラッパーも用意されていま"
-"す。"
+
+#. tumbleweed/golang-github-golang-protobuf/summary
+#. tumbleweed/golang-github-golang-protobuf/protoc-gen-go/summary
+msgid "Go support for Protocol Buffers - Google's data interchange format"
+msgstr ""
+"Protocol Buffers (Google のデータ交換フォーマット) 向け Go 言語サポート"
+
+#. tumbleweed/golang-github-golang-protobuf/description
+#. tumbleweed/golang-github-golang-protobuf/protoc-gen-go/description
+msgid ""
+"This package provides Go support, in the form of a library and protocol "
+"compiler plugin, for Google's protocol buffers. (RPC is not supported.)"
+msgstr ""
+"このパッケージは、ライブラリやプロトコルコンパイラのプラグインの形式を取る、 "
+"Google の protocol buffers 向けの Go 言語サポートです (RPC には未対応です)"
+
+#. tumbleweed/golang-github-lusitaniae-apache_exporter/summary
+msgid "Apache Exporter for Prometheus"
+msgstr ""
+
+#. tumbleweed/golang-github-lusitaniae-apache_exporter/description
+msgid ""
+"Exports apache mod_status statistics via HTTP for Prometheus consumption."
+msgstr ""
 
 #. tumbleweed/golang-github-naoina-go-stringutil/summary
 msgid "String functions for Golang"
@@ -375,7 +402,9 @@ msgstr "Golang 向け文字列関数"
 
 #. tumbleweed/golang-github-naoina-go-stringutil/description
 msgid "This library contains various string manipulation functions for Golang."
-msgstr "このライブラリには、 Golang で文字列を操作するためのさまざまな関数が含まれています。"
+msgstr ""
+"このライブラリには、 Golang で文字列を操作するためのさまざまな関数が含まれて"
+"います。"
 
 #. tumbleweed/golang-github-rogpeppe-godef/summary
 msgid "Find symbol information in Go source"
@@ -389,25 +418,17 @@ msgstr ""
 "Godef は、表現またはソースファイル内の場所を指定することで、シンボルが参照す"
 "る定義の場所を表示することができます。"
 
-#. tumbleweed/golang-googlecode-mango-doc/summary
-#. tumbleweed/golang-googlecode-mango-doc/mango-doc/summary
-msgid "Automatically create man pages from Go packages"
-msgstr "Go パッケージからの自動的なマニュアルページ生成"
+#. tumbleweed/golang-github-wrouesnel-postgres_exporter/summary
+#, fuzzy
+#| msgid "Prometheus exporter for machine metrics"
+msgid "Prometheus exporter for PostgreSQL"
+msgstr "マシンメトリック向け Prometheus エクスポータ"
 
-#. tumbleweed/golang-googlecode-mango-doc/description
-#. tumbleweed/golang-googlecode-mango-doc/mango-doc/description
-msgid "Create a man page from a Go package's source file's documentation."
+#. tumbleweed/golang-github-wrouesnel-postgres_exporter/description
+msgid ""
+"Prometheus exporter for PostgreSQL server metrics. Supported PostgreSQL "
+"versions: 9.1 and up."
 msgstr ""
-"Go パッケージのソースファイル内にあるドキュメンテーションからマニュアルページ"
-"を作成します。"
-
-#. tumbleweed/golang-org-x-crypto/summary
-msgid "Go supplementary cryptography libraries"
-msgstr "Go 補助暗号化ライブラリ"
-
-#. tumbleweed/golang-org-x-crypto/description
-msgid "Go supplementary cryptography libraries."
-msgstr "Go 補助暗号化ライブラリです。"
 
 #. tumbleweed/golang-org-x-net-context/summary
 msgid "Context defines the Context type"
@@ -443,6 +464,16 @@ msgstr ""
 "websocket パッケージは、 RFC 6455 で規定されている WebSocket プロトコルのう"
 "ち、クライアントとサーバを実装しています。"
 
+#. tumbleweed/golang-org-x-sync/summary
+msgid "Go concurrency primitives"
+msgstr ""
+
+#. tumbleweed/golang-org-x-sync/description
+msgid ""
+"This repository provides Go concurrency primitives in addition to the ones "
+"provided by the language and \"sync\" and \"sync/atomic\" packages."
+msgstr ""
+
 #. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/summary
 msgid "Golang autocompletion files for Vim"
 msgstr "Vim 向け Golang オートコンプリートファイル"
@@ -450,6 +481,37 @@ msgstr "Vim 向け Golang オートコンプリートファイル"
 #. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/description
 msgid "Vim autocompletion for the Go programming language."
 msgstr "Go プログラミング言語向けの Vim オートコンプリートです。"
+
+#~ msgid "Pretty printing for Go values"
+#~ msgstr "Go の値の見やすい表示"
+
+#~ msgid ""
+#~ "Package pretty provides pretty-printing for go values. This is useful "
+#~ "during debugging, to avoid wrapping long output lines in the terminal. It "
+#~ "provides a function, Formatter, that can be used with any function that "
+#~ "accepts a format string. This package also provides a convenience wrapper "
+#~ "for each function in package fmt that takes a format string."
+#~ msgstr ""
+#~ "pretty パッケージは Go における値を見やすく表示するための仕組みを提供しま"
+#~ "す。デバッグ目的で使用すると、端末側で長い行が勝手に改行されたりする問題を"
+#~ "避けることができます。このほか、 Formatter と呼ばれる関数も提供していま"
+#~ "す。これは書式文字列を受け付けて表示することができます。このパッケージに"
+#~ "は、書式文字列を受け付ける fmt パッケージ内の各関数に対する、便利なラッ"
+#~ "パーも用意されています。"
+
+#~ msgid "Automatically create man pages from Go packages"
+#~ msgstr "Go パッケージからの自動的なマニュアルページ生成"
+
+#~ msgid "Create a man page from a Go package's source file's documentation."
+#~ msgstr ""
+#~ "Go パッケージのソースファイル内にあるドキュメンテーションからマニュアル"
+#~ "ページを作成します。"
+
+#~ msgid "Go supplementary cryptography libraries"
+#~ msgstr "Go 補助暗号化ライブラリ"
+
+#~ msgid "Go supplementary cryptography libraries."
+#~ msgstr "Go 補助暗号化ライブラリです。"
 
 #~ msgid "Project based build tool for Go"
 #~ msgstr "Go 向けのプロジェクトベースのビルドツール"
@@ -537,18 +599,6 @@ msgstr "Go プログラミング言語向けの Vim オートコンプリート�
 #~ "レームワークです。 Falcore はフィルタパイプラインベースの HTTP サーバライ"
 #~ "ブラリです。いくつかのシンプルなコンポーネントをつなぎ合わせるだけで、任意"
 #~ "の複雑な HTTP サービスを構築することができます"
-
-#~ msgid "Go support for Protocol Buffers - Google's data interchange format"
-#~ msgstr ""
-#~ "Protocol Buffers (Google のデータ交換フォーマット) 向け Go 言語サポート"
-
-#~ msgid ""
-#~ "This package provides Go support, in the form of a library and protocol "
-#~ "compiler plugin, for Google's protocol buffers. (RPC is not supported.)"
-#~ msgstr ""
-#~ "このパッケージは、ライブラリやプロトコルコンパイラのプラグインの形式を取"
-#~ "る、 Google の protocol buffers 向けの Go 言語サポートです (RPC には未対応"
-#~ "です)"
 
 #~ msgid "A simple framework to write webapps in Go"
 #~ msgstr "Go 内で Web アプリを記述するためのシンプルなフレームワーク"

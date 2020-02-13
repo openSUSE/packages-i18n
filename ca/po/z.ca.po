@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2019-05-06 14:28+0000\n"
+"POT-Creation-Date: 2020-02-13 12:47+0000\n"
 "PO-Revision-Date: 2017-07-26 00:23:10\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -42,12 +42,12 @@ msgid ""
 "example, gzip and the ZIP archive format."
 msgstr ""
 
-#. leap/z3/libz3-4_6/summary
+#. leap/z3/libz3-4_8/summary
 #. tumbleweed/z3/libz3-4_8/summary
 msgid "Library for the Z3 SMT theorem prover"
 msgstr ""
 
-#. leap/z3/libz3-4_6/description
+#. leap/z3/libz3-4_8/description
 #. tumbleweed/z3/libz3-4_8/description
 msgid ""
 "Z3 is a Satisfiability Modulo Theories (SMT) solver and integrates several "
@@ -299,21 +299,25 @@ msgstr ""
 #. tumbleweed/zstd/libzstd-devel-static/description
 msgid ""
 "Zstd, short for Zstandard, is a lossless compression algorithm, targeting "
-"real-time compression scenarios at zlib-level compression ratio.\n"
+"faster compression than zlib at comparable ratios.\n"
 "\n"
 "Needed for compiling programs that link with the library."
 msgstr ""
 
 #. leap/zstd/libzstd1/summary
+#. leap/zstd/libzstd1-32bit/summary
 #. tumbleweed/zstd/libzstd1/summary
+#. tumbleweed/zstd/libzstd1-32bit/summary
 msgid "Zstd compression library"
 msgstr ""
 
 #. leap/zstd/libzstd1/description
+#. leap/zstd/libzstd1-32bit/description
 #. tumbleweed/zstd/libzstd1/description
+#. tumbleweed/zstd/libzstd1-32bit/description
 msgid ""
 "Zstd, short for Zstandard, is a lossless compression algorithm, targeting "
-"real-time compression scenarios at zlib-level compression ratio.\n"
+"faster compression than zlib at comparable ratios.\n"
 "\n"
 "This subpackage contains the implementation as a shared library."
 msgstr ""
@@ -363,25 +367,11 @@ msgid ""
 "algorithms of zlib."
 msgstr ""
 
-#. leap/zlib/minizip-devel/summary
-#. tumbleweed/zlib/minizip-devel/summary
-msgid "Development files for the minizip library"
-msgstr ""
-
-#. leap/zlib/minizip-devel/description
-#. tumbleweed/zlib/minizip-devel/description
-msgid ""
-"This package contains the libraries and header files needed for developing "
-"applications which use minizip."
-msgstr ""
-
 #. leap/zinnia/python-zinnia/summary
-#. tumbleweed/zinnia/python-zinnia/summary
 msgid "Python bindings for zinnia"
 msgstr ""
 
 #. leap/zinnia/python-zinnia/description
-#. tumbleweed/zinnia/python-zinnia/description
 msgid "This package contains python bindings for zinnia."
 msgstr ""
 
@@ -473,12 +463,10 @@ msgid ""
 msgstr ""
 
 #. leap/zabbix/zabbix-bash-completion/summary
-#. tumbleweed/zabbix/zabbix-bash-completion/summary
 msgid "Zabbix bash completion"
 msgstr ""
 
 #. leap/zabbix/zabbix-bash-completion/description
-#. tumbleweed/zabbix/zabbix-bash-completion/description
 msgid "Bash completion for Zabbix daemons and utilities"
 msgstr ""
 
@@ -581,12 +569,10 @@ msgid "The Zabbix server compiled with PostgreSQL support."
 msgstr ""
 
 #. leap/zabbix/zabbix-server-sqlite/summary
-#. tumbleweed/zabbix/zabbix-server-sqlite/summary
 msgid "Zabbix server with SQLite support"
 msgstr ""
 
 #. leap/zabbix/zabbix-server-sqlite/description
-#. tumbleweed/zabbix/zabbix-server-sqlite/description
 msgid "The Zabbix server compiled with SQLite support."
 msgstr ""
 
@@ -669,6 +655,7 @@ msgid "PDF support for zathura via poppler"
 msgstr ""
 
 #. leap/zathura-plugin-pdf-poppler/description
+#. tumbleweed/zathura-plugin-pdf-mupdf/description
 #. tumbleweed/zathura-plugin-pdf-poppler/description
 msgid ""
 "The zathura-pdf-poppler plugin adds PDF support to zathura by using the "
@@ -846,12 +833,10 @@ msgid ""
 msgstr ""
 
 #. leap/zeroinstall-injector/summary
-#. tumbleweed/zeroinstall-injector/summary
 msgid "Decentralised cross-distribution software installation"
 msgstr ""
 
 #. leap/zeroinstall-injector/description
-#. tumbleweed/zeroinstall-injector/description
 msgid ""
 "The Zero Install Injector makes it easy for users to install software "
 "without needing root privileges. It takes the URL of a program and runs it "
@@ -1321,27 +1306,26 @@ msgstr ""
 #. leap/zstd/description
 #. tumbleweed/zstd/description
 msgid ""
-"Zstd, short for Zstandard, is a lossless compression algorithm, targeting "
-"real-time compression scenarios at zlib-level compression ratio.\n"
+"Zstd, short for Zstandard, is a lossless compression algorithm. Speed vs. "
+"compression trade-off is configurable in small increments. Decompression "
+"speed is preserved and remains roughly the same at all settings, a property "
+"shared by most LZ compression algorithms, such as zlib or lzma.\n"
 "\n"
-"Zstd can also offer stronger compression ratios at the cost of compression "
-"speed. Speed vs. compression trade-off is configurable by small increments. "
-"Decompression speed is preserved and remains roughly the same at all "
-"settings, a property shared by most LZ compression algorithms, such as zlib "
-"or lzma."
+"At roughly the same ratio, zstd (v1.4.0) achieves ~870% faster compression "
+"than gzip. For roughly the same time, zstd achives a ~12% better ratio than "
+"gzip. LZMA outperforms zstd by ~10% faster compression for same ratio, or ~1–"
+"4% size reduction for same time."
 msgstr ""
 
 #. leap/zsync/summary
 #. leap/zsync/zsync-devel/summary
 #. tumbleweed/zsync/summary
-#. tumbleweed/zsync/zsync-devel/summary
 msgid "Client-side Implementation of the Rsync Algorithm over HTTP"
 msgstr ""
 
 #. leap/zsync/description
 #. leap/zsync/zsync-devel/description
 #. tumbleweed/zsync/description
-#. tumbleweed/zsync/zsync-devel/description
 msgid ""
 "zsync is a implementation of rsync over HTTP. It allows updating of files "
 "from a remote Web server without requiring a full download or a special "
@@ -1550,17 +1534,10 @@ msgid "Zypper subcommand for products and packages lifecycle information."
 msgstr ""
 
 #. leap/zypper/zypper-log/summary
-#. tumbleweed/zypper/zypper-log/summary
-msgid "CLI for accessing the zypper logfile"
-msgstr ""
-
 #. leap/zypper/zypper-log/description
+#. tumbleweed/zypper/zypper-log/summary
 #. tumbleweed/zypper/zypper-log/description
-msgid ""
-"CLI for accessing the zypper logfile\n"
-"\n"
-"Authors:\n"
-"--------     Dominik Heidler <dheidler@suse.de>"
+msgid "CLI for accessing the zypper logfile"
 msgstr ""
 
 #. leap/zypper-migration-plugin/summary
@@ -1587,6 +1564,16 @@ msgid ""
 "--------     Michael Andres <ma@suse.de>"
 msgstr ""
 
+#. leap/zypper-search-packages-plugin/summary
+msgid "Zypper subcommand for online package search"
+msgstr ""
+
+#. leap/zypper-search-packages-plugin/description
+msgid ""
+"Zypper subcommand for online package search via the API of the SUSE Customer "
+"Center."
+msgstr ""
+
 #. leap/zziplib/zziplib-devel/summary
 #. leap/zziplib/zziplib-devel-32bit/summary
 #. tumbleweed/zziplib/zziplib-devel/summary
@@ -1600,6 +1587,30 @@ msgstr ""
 #. tumbleweed/zziplib/zziplib-devel-32bit/description
 msgid ""
 "That are the header files needed for developing applications using ZZipLib."
+msgstr ""
+
+#. tumbleweed/zam-plugins/ladspa-zam-plugins/summary
+#. tumbleweed/zam-plugins/lv2-zam-plugins/summary
+#. tumbleweed/zam-plugins/zam-plugins-jack/summary
+#. tumbleweed/zam-plugins/zam-plugins-vst/summary
+msgid "A collection of audio plugins for high quality processing"
+msgstr ""
+
+#. tumbleweed/zam-plugins/ladspa-zam-plugins/description
+#. tumbleweed/zam-plugins/lv2-zam-plugins/description
+#. tumbleweed/zam-plugins/zam-plugins-jack/description
+#. tumbleweed/zam-plugins/zam-plugins-vst/description
+msgid "${sum}."
+msgstr ""
+
+#. tumbleweed/zxing-cpp/libZXingCore1/summary
+msgid "Library for processing 1D and 2D barcodes"
+msgstr ""
+
+#. tumbleweed/zxing-cpp/libZXingCore1/description
+msgid ""
+"ZXing (\"zebra crossing\") is an multi-format 1D/2D barcode image processing "
+"library. This package provides a C++ implementation."
 msgstr ""
 
 #. tumbleweed/zathura/summary
@@ -1624,12 +1635,24 @@ msgstr ""
 msgid "Development and header files for the zathura package."
 msgstr ""
 
+#. tumbleweed/zathura/zathura-fish-completion/summary
+msgid "Zathura fish completion"
+msgstr ""
+
+#. tumbleweed/zathura/zathura-fish-completion/description
+msgid "Optional dependency offering fish completion for zathura"
+msgstr ""
+
 #. tumbleweed/zathura-plugin-cb/summary
 msgid "Comic book support for zathura"
 msgstr ""
 
 #. tumbleweed/zathura-plugin-djvu/summary
 msgid "DjVu support for zathura using the djvulibre library"
+msgstr ""
+
+#. tumbleweed/zathura-plugin-pdf-mupdf/summary
+msgid "PDF support for zathura via mupdf"
 msgstr ""
 
 #. tumbleweed/zathura/zathura-zsh-completion/summary
@@ -1670,6 +1693,22 @@ msgid ""
 "filesystem and ensure that they are maximally sparse."
 msgstr ""
 
+#. tumbleweed/zinc/summary
+msgid "Incremental scala compiler"
+msgstr ""
+
+#. tumbleweed/zinc/description
+msgid "Zinc is a stand-alone version of sbt's incremental compiler."
+msgstr ""
+
+#. tumbleweed/zipkin-api/zipkin-api-source/summary
+msgid "Source code of zipkin-api"
+msgstr ""
+
+#. tumbleweed/zipkin-api/zipkin-api-source/description
+msgid "This package contains source code of zipkin-api"
+msgstr ""
+
 #. tumbleweed/zp/summary
 msgid "Shorter command of zypper"
 msgstr ""
@@ -1685,6 +1724,17 @@ msgid ""
 "- zs: sudo zypper search\n"
 "\n"
 "Have a lot of fun..."
+msgstr ""
+
+#. tumbleweed/zxing-cpp/zxing-cpp-devel/summary
+msgid "Header files for zxing, a library for processing 1D and 2D barcodes"
+msgstr ""
+
+#. tumbleweed/zxing-cpp/zxing-cpp-devel/description
+msgid ""
+"ZXing (\"zebra crossing\") is an multi-format 1D/2D barcode image processing "
+"library. This package provides header files to use ZXing in other "
+"applications."
 msgstr ""
 
 #. tumbleweed/zynaddsubfx/zynaddsubfx-common/description

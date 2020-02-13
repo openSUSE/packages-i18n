@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2019-05-06 14:28+0000\n"
+"POT-Creation-Date: 2020-02-13 12:47+0000\n"
 "PO-Revision-Date: 2019-05-14 14:48+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -27,12 +27,13 @@ msgid ""
 "The Group Policy Management console for YaST provides tools for creating and "
 "modifying Group Policy Objects in Active Directory."
 msgstr ""
-"Active Directory 内のグループポリシーオブジェクトを作成したり修正したりすることのできる、 YaST "
-"向けのグループポリシー管理コンソールです。"
+"Active Directory 内のグループポリシーオブジェクトを作成したり修正したりするこ"
+"とのできる、 YaST 向けのグループポリシー管理コンソールです。"
 
 #. leap/yast2/summary
-msgid "YaST2 - Main Package"
-msgstr "YaST2 - メインパッケージ"
+#. tumbleweed/yast2/summary
+msgid "YaST2 Main Package"
+msgstr "YaST2 メインパッケージ"
 
 #. leap/yast2/description
 #. tumbleweed/yast2/description
@@ -42,6 +43,17 @@ msgid ""
 msgstr ""
 "このパッケージには YaST2 で SUSE Linux をインストールするのに必要な、データと"
 "スクリプトが含まれています。"
+
+#. leap/yast2-adcommon-python/summary
+#. tumbleweed/yast2-adcommon-python/summary
+msgid "Common code for the yast python ad modules"
+msgstr "yast python ad モジュール向け汎用コード"
+
+#. leap/yast2-adcommon-python/description
+#. tumbleweed/yast2-adcommon-python/description
+msgid ""
+"Common code shared by the yast2-aduc, yast2-adsi, and yast2-gpmc modules."
+msgstr "yast2-aduc, yast2-adsi, yast2-gpmc の各モジュールで共通のコードです。"
 
 #. leap/yast2-add-on/summary
 #. tumbleweed/yast2-add-on/summary
@@ -55,6 +67,20 @@ msgstr ""
 "このパッケージには YaST アドオンメディアのインストールコードが含まれていま"
 "す。"
 
+#. leap/yast2-adsi/summary
+#. tumbleweed/yast2-adsi/summary
+msgid "Active Directory Compatible Service Interfaces Editor"
+msgstr ""
+
+#. leap/yast2-adsi/description
+#. tumbleweed/yast2-adsi/description
+msgid ""
+"The ADSI Edit for YaST module provides tools for viewing and modifying an "
+"LDAP tree."
+msgstr ""
+"LDAP ツリーを表示したり編集したりすることのできる、 ADSI エディタ YaST モ"
+"ジュールです。"
+
 #. leap/yast2-aduc/summary
 #. tumbleweed/yast2-aduc/summary
 msgid "Active Directory Users and Computers for YaST"
@@ -67,8 +93,9 @@ msgid ""
 "creating and modifying Users, Groups, and Computer objects in Active "
 "Directory."
 msgstr ""
-"Active Directory 内のユーザやグループ、コンピュータなどのオブジェクトを作成したり編集したりすることのできる、 YaST 向けの "
-"Active Directory ユーザとコンピュータモジュールです。"
+"Active Directory 内のユーザやグループ、コンピュータなどのオブジェクトを作成し"
+"たり編集したりすることのできる、 YaST 向けの Active Directory ユーザとコン"
+"ピュータモジュールです。"
 
 #. leap/yast2-alternatives/summary
 #. tumbleweed/yast2-alternatives/summary
@@ -87,7 +114,9 @@ msgstr "YaST2 - AppArmor プロファイル管理のためのプラグイン"
 
 #. leap/yast2-apparmor/description
 #. tumbleweed/yast2-apparmor/description
-msgid "Yast2 forms and components for the management of AppArmor profiles."
+#, fuzzy
+#| msgid "Yast2 forms and components for the management of AppArmor profiles."
+msgid "YaST2 forms and components for the management of AppArmor profiles."
 msgstr ""
 "AppArmor プロファイルを管理するための YaST2 フォームとコンポーネントです。"
 
@@ -292,6 +321,18 @@ msgstr ""
 "このパッケージには DHCP サーバ設定を行なうための YaST2 コンポーネントが含まれ"
 "ています。"
 
+#. leap/yast2-dns-manager/summary
+#. tumbleweed/yast2-dns-manager/summary
+msgid "Samba Internal DNS Manager"
+msgstr ""
+
+#. leap/yast2-dns-manager/description
+#. tumbleweed/yast2-dns-manager/description
+msgid ""
+"DNS Manager for the Internal Samba Active Directory Domain Controller DNS "
+"server."
+msgstr ""
+
 #. leap/yast2-dns-server/summary
 #. tumbleweed/yast2-dns-server/summary
 msgid "YaST2 - DNS Server Configuration"
@@ -303,6 +344,16 @@ msgid "This package contains the YaST2 component for DNS server configuration."
 msgstr ""
 "このパッケージには、 DNS サーバ設定を行なうための YaST2 コンポーネントが含ま"
 "れています。"
+
+#. leap/yast2-docker/summary
+#. tumbleweed/yast2-docker/summary
+msgid "YaST2 - GUI for docker management"
+msgstr "YaST2 - Docker 管理用 GUI"
+
+#. leap/yast2-docker/description
+#. tumbleweed/yast2-docker/description
+msgid "Provides easy to use GUI for running docker containers."
+msgstr "動作中の Docker コンテナ向けの使いやすい GUI を提供します。"
 
 #. leap/yast2-drbd/summary
 #. tumbleweed/yast2-drbd/summary
@@ -537,8 +588,9 @@ msgstr ""
 "なったりすることができます。"
 
 #. leap/yast2/yast2-logs/summary
-msgid "Collecting YAST information"
-msgstr "YaST ログの収集"
+#. tumbleweed/yast2/yast2-logs/summary
+msgid "Scripts for handling YAST logs"
+msgstr "YaST ログを処理するためのスクリプト"
 
 #. leap/yast2/yast2-logs/description
 #. tumbleweed/yast2/yast2-logs/description
@@ -580,7 +632,9 @@ msgstr "YaST2 - オンライン移行"
 
 #. leap/yast2-migration/description
 msgid "This package contains the YaST2 component for online migration."
-msgstr "このパッケージにはオンライン移行を行なうための YaST2 コンポーネントが含まれています。"
+msgstr ""
+"このパッケージにはオンライン移行を行なうための YaST2 コンポーネントが含まれて"
+"います。"
 
 #. leap/yast2-multipath/summary
 #. tumbleweed/yast2-multipath/summary
@@ -635,6 +689,13 @@ msgstr ""
 #. tumbleweed/yast2-nfs-server/yast2-nfs-common/summary
 msgid "Configuration of NFS, common parts"
 msgstr "NFS 設定のうちの汎用部分"
+
+#. leap/yast2-nfs-server/yast2-nfs-common/description
+#. tumbleweed/yast2-nfs-server/yast2-nfs-common/description
+#, fuzzy
+#| msgid "Common code for the yast python ad modules"
+msgid "Common data for the NFS client and server modules"
+msgstr "yast python ad モジュール向け汎用コード"
 
 #. leap/yast2-nfs-server/summary
 #. tumbleweed/yast2-nfs-server/summary
@@ -935,7 +996,6 @@ msgid "YaST2 - Samba AD DC provision"
 msgstr "YaST2 - Samba AD DC 準備"
 
 #. leap/yast2-samba-provision/description
-#. tumbleweed/yast2-samba-provision/description
 msgid ""
 "This package contains the YaST2 component to configure samba as an Active "
 "Directory (TM) Domain Controller."
@@ -1094,7 +1154,9 @@ msgstr ""
 
 #. leap/yast2-sudo/summary
 #. tumbleweed/yast2-sudo/summary
-msgid "YaST2 - sudo configuration"
+#, fuzzy
+#| msgid "YaST2 - sudo configuration"
+msgid "YaST2 - Sudo configuration"
 msgstr "YaST2 - sudo 設定"
 
 #. leap/yast2-sudo/description
@@ -2124,29 +2186,6 @@ msgstr ""
 "ターフェイスエンジンのうち、開発者向けのパッケージです。 YCP は多くの YaST2 "
 "モジュールで利用されているスクリプト言語です。"
 
-#. tumbleweed/yast2/summary
-msgid "YaST2 Main Package"
-msgstr "YaST2 メインパッケージ"
-
-#. tumbleweed/yast2-adcommon-python/summary
-msgid "Common code for the yast python ad modules"
-msgstr "yast python ad モジュール向け汎用コード"
-
-#. tumbleweed/yast2-adcommon-python/description
-msgid ""
-"Common code shared by the yast2-aduc, yast2-adsi, and yast2-gpmc modules."
-msgstr "yast2-aduc, yast2-adsi, yast2-gpmc の各モジュールで共通のコードです。"
-
-#. tumbleweed/yast2-adsi/summary
-msgid "ADSI Edit for YaST"
-msgstr "YaST 向け ADSI 編集"
-
-#. tumbleweed/yast2-adsi/description
-msgid ""
-"The ADSI Edit for YaST module provides tools for viewing and modifying an "
-"LDAP tree."
-msgstr "LDAP ツリーを表示したり編集したりすることのできる、 ADSI エディタ YaST モジュールです。"
-
 #. tumbleweed/yast2-caasp/summary
 msgid "YaST2 - CaaSP Module"
 msgstr "YaST2 - CaaSP モジュール"
@@ -2154,15 +2193,14 @@ msgstr "YaST2 - CaaSP モジュール"
 #. tumbleweed/yast2-caasp/description
 msgid ""
 "Containers as a Service Platform (CaaSP) and openSUSE Kubic specific module."
-msgstr "Containers as a Service Platform (CaaSP) および openSUSE Kubic 固有のモジュールです。"
+msgstr ""
+"Containers as a Service Platform (CaaSP) および openSUSE Kubic 固有のモジュー"
+"ルです。"
 
-#. tumbleweed/yast2-docker/summary
-msgid "YaST2 - GUI for docker management"
-msgstr "YaST2 - Docker 管理用 GUI"
-
-#. tumbleweed/yast2-docker/description
-msgid "Provides easy to use GUI for running docker containers."
-msgstr "動作中の Docker コンテナ向けの使いやすい GUI を提供します。"
+#. tumbleweed/yast2-firstboot-wsl/summary
+#. tumbleweed/yast2-firstboot-wsl/description
+msgid "YaST2 firstboot settings for WSL images"
+msgstr ""
 
 #. tumbleweed/yast2-fonts/summary
 msgid "YaST2 - Fonts Configuration"
@@ -2176,9 +2214,26 @@ msgstr ""
 "優先するフォントを選択するとともに、描画時に使用するアルゴリズムを選択するた"
 "めの X11 フォント設定モジュールです。"
 
-#. tumbleweed/yast2/yast2-logs/summary
-msgid "Scripts for handling YAST logs"
-msgstr "YaST ログを処理するためのスクリプト"
+#. tumbleweed/yast2-samba-provision/description
+#, fuzzy
+#| msgid ""
+#| "This package contains the YaST2 component to configure samba as an Active "
+#| "Directory (TM) Domain Controller."
+msgid ""
+"This package contains the YaST2 component to configure samba as an Active "
+"Directory Domain Controller."
+msgstr ""
+"このパッケージには、 Samba を Active Directory (TM) のドメインコントローラと"
+"して設定するための YaST2 コンポーネントが含まれています。"
+
+#~ msgid "YaST2 - Main Package"
+#~ msgstr "YaST2 - メインパッケージ"
+
+#~ msgid "Collecting YAST information"
+#~ msgstr "YaST ログの収集"
+
+#~ msgid "ADSI Edit for YaST"
+#~ msgstr "YaST 向け ADSI 編集"
 
 #~ msgid "YaST2 - Theme (openSUSE)"
 #~ msgstr "YaST2 - テーマ (openSUSE)"
