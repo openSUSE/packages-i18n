@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2020-02-13 12:47+0000\n"
-"PO-Revision-Date: 2019-07-29 08:41+0000\n"
+"PO-Revision-Date: 2020-02-14 07:54+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "php-master/ja/>\n"
@@ -797,10 +797,8 @@ msgstr ""
 
 #. leap/php7-maxminddb/summary
 #. tumbleweed/php7-maxminddb/summary
-#, fuzzy
-#| msgid "PHP functions for access to firebird database servers."
 msgid "PHP extension providing access to maxminddb databases"
-msgstr "firebird データベースサーバにアクセスするための PHP 関数です。"
+msgstr "maxminddb データベースへのアクセス機能を提供する PHP 拡張"
 
 #. leap/php7-maxminddb/description
 #. tumbleweed/php7-maxminddb/description
@@ -808,6 +806,7 @@ msgid ""
 "This extension provides access to maxminddb databases and is a drop-in "
 "replacement for MaxMind\\Db\\Reader."
 msgstr ""
+"この拡張は maxminddb データベースへのアクセス機能を提供します。 MaxMind\\Db\\Reader をその場で置き換えることができます。"
 
 #. leap/php7/php7-mbstring/summary
 #. tumbleweed/php7/php7-mbstring/summary
@@ -1520,15 +1519,6 @@ msgstr ""
 "* インストールと設定が簡単"
 
 #. tumbleweed/php-cs-fixer/description
-#, fuzzy
-#| msgid ""
-#| "The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes code to follow "
-#| "standards; this can be the PHP coding standards as defined in the PSR-1, "
-#| "PSR-2, etc., or other community driven ones like the Symfony one. Custom "
-#| "styles can also be defined through configuration.\n"
-#| "\n"
-#| "It can modernize code (like converting the pow function to the ** "
-#| "operator on PHP 5.6) and (micro) optimize it."
 msgid ""
 "The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes code to follow "
 "standards; this can be the PHP coding standards as defined in the PSR-1, "
@@ -1538,18 +1528,16 @@ msgid ""
 "It can modernise code (like converting the pow function to the ** operator "
 "on PHP 5.6) and (micro) optimize it."
 msgstr ""
-"PHP コーディング標準修正器 (PHP CS Fixer) ツールは、標準に従ってコードを修正"
-"するためのツールです。 PSR-1 や PSR-2 など、 PHP コーディング標準として規定さ"
-"れているものに従って修正を行なうことができます。類似のコミュニティプロジェク"
-"トとしては、 Symfony などがあります。設定を行なうことで、独自のスタイルを定義"
-"することもできます。\n"
+"PHP コーディング標準修正器 (PHP CS Fixer) ツールは、標準に従ってコードを修正するためのツールです。 PSR-1 や PSR-2 など、"
+" PHP コーディング標準として規定されているものに従って修正を行なうことができます。類似のコミュニティプロジェクトとしては、 Symfony "
+"などがあります。設定を行なうことで、独自のスタイルを定義することもできます。\n"
 "\n"
-"このツールは、コードの最新化 (pow 関数を PHP 5.6 で提供されるようになった ** "
-"演算子に変換するなど) や (部分的な) 最適化にも対応しています。"
+"このツールは、コードの最新化 (pow 関数を PHP 5.6 で提供されるようになった ** 演算子に変換するなど) や (部分的な) "
+"最適化にも対応しています。"
 
 #. tumbleweed/php7-libphutil/summary
 msgid "Phabrcator PHP utility classes"
-msgstr ""
+msgstr "Phabrcator PHP ユーティリティクラス"
 
 #. tumbleweed/php7-libphutil/description
 msgid ""
@@ -1570,30 +1558,31 @@ msgid ""
 "* Library System: an introspectable, inventoried system for organizing PHP "
 "code   and managing dependencies, supported by static analysis."
 msgstr ""
+"libphutil は PHP 向けのユーティリティクラス／関数集です。 Phabricator や Arcanist で使用されています。\n"
+"\n"
+"libphutil の主な機能は下記のとおりです:\n"
+"* 中枢ユーティリティ: 一般的なデータ操作を単純化することのできる ipull() などの便利な関数集;\n"
+"* ファイルシステム: ファイルシステムへのアクセスや失敗時の例外生成などを厳密に提供する Filesystem "
+"などのクラスです。ファイルを取り扱う際に強健なコードを簡単に生成できるようになります;\n"
+"* コマンド実行: libphutil には ExecFuture 内にパワフルなコマンドプリミティブが含まれていて、"
+"これによってシステムコマンドを実行するコマンドラインスクリプトを簡単に作れるようにしています (詳しくは Command Execution "
+"をお読みください);\n"
+"* xsprintf(): 独自の変換ルールを使用する sprintf() に似た関数を提供します;\n"
+"* ライブラリシステム: PHP コードの統合や依存関係管理など、静的な分析に必要なイントロスペクション対応のインベントリ型システムです。"
 
 #. tumbleweed/php7-lzf/summary
-#, fuzzy
 msgid "LZF compression"
-msgstr "SSH 認証向けの PAM モジュール"
+msgstr "LZF 圧縮"
 
 #. tumbleweed/php7-lzf/description
 msgid "This package handles LZF de/compression."
-msgstr ""
+msgstr "このパッケージは、 LZF の圧縮および展開の機能を提供します。"
 
 #. tumbleweed/php7-pear/php7-pecl/summary
-#, fuzzy
-#| msgid "PHP7 Extension Module"
 msgid "PHP Extension Community Library"
-msgstr "PHP7 拡張モジュール"
+msgstr "PHP7 拡張コミュニティライブラリ"
 
 #. tumbleweed/php7-pear/php7-pecl/description
-#, fuzzy
-#| msgid ""
-#| "PEAR is a code repository for PHP extensions and PHP library code similar "
-#| "to TeX's CTAN and Perl's CPAN. This package provides an access to the "
-#| "repository.\n"
-#| "\n"
-#| "See https://pear.php.net/manual for more details."
 msgid ""
 "PECL is a repository for PHP Extensions, providing a directory of all known "
 "extensions and hosting facilities for downloading and development of PHP "
@@ -1601,11 +1590,9 @@ msgid ""
 "\n"
 "See https://pecl.php.net for more details."
 msgstr ""
-"PEAR は TeX で言うところの CTAN, Perl で言うところの CPAN に似た、 PHP の拡張"
-"とライブラリコードに関するリポジトリです。 このパッケージは、このリポジトリへ"
-"のアクセス機能を提供します。\n"
+"PECL は PHP 拡張のリポジトリで、全ての既知の拡張の一覧機能を提供し、 PHP 拡張のダウンロードや開発をも支援しています。\n"
 "\n"
-"詳しくは http://pear.php.net/manual/ をお読みください。"
+"詳しくは http://pecl.php.net をお読みください。"
 
 #~ msgid "Tar file management class"
 #~ msgstr "tar ファイル管理クラス"
