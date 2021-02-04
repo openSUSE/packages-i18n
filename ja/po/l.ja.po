@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2018-04-11 05:03+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/l-"
@@ -111,13 +111,11 @@ msgstr ""
 "多く提供しています。"
 
 #. leap/lapack-man/blas-man/summary
-#. tumbleweed/lapack-man/blas-man/summary
 #, fuzzy
 msgid "Documentation for BLAS (Basic Linear Algebra Subprograms)"
 msgstr "KDE 基本ライブラリ向けのドキュメンテーション"
 
 #. leap/lapack-man/blas-man/description
-#. tumbleweed/lapack-man/blas-man/description
 #, fuzzy
 msgid ""
 "The blas-man package contains documentation for BLAS (Basic Linear Algebra "
@@ -128,10 +126,13 @@ msgstr ""
 "キュメンテーションが含まれています。"
 
 #. leap/llvm/clang/summary
+#. leap/llvm11/clang11/summary
 #. leap/llvm5/clang5/summary
 #. leap/llvm7/clang7/summary
+#. leap/llvm9/clang9/summary
 #. tumbleweed/llvm/clang/summary
-#. tumbleweed/llvm6/clang6/summary
+#. tumbleweed/llvm10/clang10/summary
+#. tumbleweed/llvm11/clang11/summary
 #. tumbleweed/llvm7/clang7/summary
 #. tumbleweed/llvm8/clang8/summary
 #. tumbleweed/llvm9/clang9/summary
@@ -151,16 +152,11 @@ msgstr ""
 #. leap/llvm/clang-checker/summary
 #. leap/llvm5/clang5-checker/summary
 #. leap/llvm7/clang7-checker/summary
-#. tumbleweed/llvm/clang-checker/summary
-#. tumbleweed/llvm6/clang6-checker/summary
-#. tumbleweed/llvm7/clang7-checker/summary
-#. tumbleweed/llvm8/clang8-checker/summary
-#. tumbleweed/llvm9/clang9-checker/summary
+#. leap/llvm9/clang9-checker/summary
 msgid "Static code analyzer for CLANG"
 msgstr ""
 
 #. leap/llvm/clang-checker/description
-#. tumbleweed/llvm/clang-checker/description
 msgid ""
 "This package contains scan-build and scan-view, command line static code "
 "analyzers for CLANG.\n"
@@ -171,13 +167,19 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/clang-devel/summary
+#. leap/llvm11/clang11-devel/summary
+#. leap/llvm11/clang11-devel-32bit/summary
 #. leap/llvm5/clang5-devel-32bit/summary
 #. leap/llvm5/clang5-devel/summary
 #. leap/llvm7/clang7-devel-32bit/summary
 #. leap/llvm7/clang7-devel/summary
+#. leap/llvm9/clang9-devel-32bit/summary
+#. leap/llvm9/clang9-devel/summary
 #. tumbleweed/llvm/clang-devel/summary
-#. tumbleweed/llvm6/clang6-devel-32bit/summary
-#. tumbleweed/llvm6/clang6-devel/summary
+#. tumbleweed/llvm10/clang10-devel/summary
+#. tumbleweed/llvm10/clang10-devel-32bit/summary
+#. tumbleweed/llvm11/clang11-devel/summary
+#. tumbleweed/llvm11/clang11-devel-32bit/summary
 #. tumbleweed/llvm7/clang7-devel-32bit/summary
 #. tumbleweed/llvm7/clang7-devel/summary
 #. tumbleweed/llvm8/clang8-devel-32bit/summary
@@ -198,9 +200,32 @@ msgid ""
 "Clang version should depend on this."
 msgstr ""
 
+#. leap/llvm11/clang-tools/summary
+#. tumbleweed/llvm11/clang-tools/summary
+#, fuzzy
+msgid "Tools for Clang"
+msgstr "libgpod ツール"
+
+#. leap/llvm11/clang-tools/description
+#. tumbleweed/llvm11/clang-tools/description
+msgid ""
+"This package contains tools and scripts for using Clang, including:\n"
+"* bash completions for clang,\n"
+"* the clang-doc tool,\n"
+"* plugins for using clang-format, clang-rename, clang-include-fixer   in vim "
+"and emacs.\n"
+"* scripts for using clang-format: git-clang-format and clang-format-diff,\n"
+"* scripts for using clang-tidy: run-clang-tidy and clang-tidy-diff,\n"
+"* scripts for using the Clang static analyzer: scan-build and scan-view,\n"
+"* a script for using find-all-symbols: run-find-all-symbols."
+msgstr ""
+
+#. leap/llvm11/clang11/description
 #. leap/llvm5/clang5/description
 #. leap/llvm7/clang7/description
-#. tumbleweed/llvm6/clang6/description
+#. leap/llvm9/clang9/description
+#. tumbleweed/llvm10/clang10/description
+#. tumbleweed/llvm11/clang11/description
 #. tumbleweed/llvm7/clang7/description
 #. tumbleweed/llvm8/clang8/description
 #. tumbleweed/llvm9/clang9/description
@@ -208,23 +233,18 @@ msgstr ""
 msgid "This package contains the clang (C language) frontend for LLVM."
 msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
 
-#. leap/llvm5/clang5-checker/description
-#. leap/llvm7/clang7-checker/description
-#. tumbleweed/llvm6/clang6-checker/description
-#. tumbleweed/llvm7/clang7-checker/description
-#. tumbleweed/llvm8/clang8-checker/description
-#. tumbleweed/llvm9/clang9-checker/description
-msgid ""
-"This package contains scan-build and scan-view, command line static code "
-"analyzers for CLANG."
-msgstr ""
-
+#. leap/llvm11/clang11-devel/description
+#. leap/llvm11/clang11-devel-32bit/description
 #. leap/llvm5/clang5-devel-32bit/description
 #. leap/llvm5/clang5-devel/description
 #. leap/llvm7/clang7-devel-32bit/description
 #. leap/llvm7/clang7-devel/description
-#. tumbleweed/llvm6/clang6-devel-32bit/description
-#. tumbleweed/llvm6/clang6-devel/description
+#. leap/llvm9/clang9-devel-32bit/description
+#. leap/llvm9/clang9-devel/description
+#. tumbleweed/llvm10/clang10-devel/description
+#. tumbleweed/llvm10/clang10-devel-32bit/description
+#. tumbleweed/llvm11/clang11-devel/description
+#. tumbleweed/llvm11/clang11-devel-32bit/description
 #. tumbleweed/llvm7/clang7-devel-32bit/description
 #. tumbleweed/llvm7/clang7-devel/description
 #. tumbleweed/llvm8/clang8-devel-32bit/description
@@ -238,6 +258,34 @@ msgid ""
 msgstr ""
 "このパッケージには、 K デスクトップ環境ワークスペース向けの基本パッケージが含"
 "まれています。開発用ファイルです。"
+
+#. leap/llvm11/clang11-doc/summary
+#. leap/llvm9/clang9-doc/summary
+#. tumbleweed/llvm10/clang10-doc/summary
+#. tumbleweed/llvm11/clang11-doc/summary
+#. tumbleweed/llvm9/clang9-doc/summary
+#, fuzzy
+#| msgid "Documentation for log4c"
+msgid "Documentation for Clang"
+msgstr "log4c 向けドキュメンテーション"
+
+#. leap/llvm11/clang11-doc/description
+#. leap/llvm9/clang9-doc/description
+#. tumbleweed/llvm10/clang10-doc/description
+#. tumbleweed/llvm11/clang11-doc/description
+#. tumbleweed/llvm9/clang9-doc/description
+#, fuzzy
+msgid "This package contains documentation for the Clang compiler."
+msgstr ""
+"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+
+#. leap/llvm5/clang5-checker/description
+#. leap/llvm7/clang7-checker/description
+#. leap/llvm9/clang9-checker/description
+msgid ""
+"This package contains scan-build and scan-view, command line static code "
+"analyzers for CLANG."
+msgstr ""
 
 #. leap/lvm2-device-mapper/device-mapper/summary
 #. tumbleweed/lvm2-device-mapper/device-mapper/summary
@@ -480,6 +528,23 @@ msgstr ""
 "このパッケージには LADSPA プラグインを開発するのに必要なヘッダファイルを含ん"
 "でいます。"
 
+#. leap/lsp-plugins/ladspa-lsp-plugins/summary
+#. tumbleweed/lsp-plugins/ladspa-lsp-plugins/summary
+msgid "Linux Studio Plugins Documents (LADSPA)"
+msgstr ""
+
+#. leap/lsp-plugins/ladspa-lsp-plugins/description
+#. tumbleweed/lsp-plugins/ladspa-lsp-plugins/description
+msgid ""
+"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
+"compatible with LADSPA, LV2 and LinuxVST formats.\n"
+"\n"
+"The basic idea is to fill the lack of good and useful plugins under the GNU/"
+"Linux platform.\n"
+"\n"
+"This is the LADSPA version of the plugins."
+msgstr ""
+
 #. leap/ladspa-matched/summary
 #. tumbleweed/ladspa-matched/summary
 msgid "LADSPA matched plugin"
@@ -631,13 +696,11 @@ msgid ""
 "This package provides the Java (HTML) Documentation for laf-plugin."
 msgstr ""
 
-#. leap/lam/lam-32bit/summary
 #. leap/lam/summary
 #. leap/lam/lam-devel/summary
 msgid "Local Area Multicomputer"
 msgstr "ローカルエリアマルチコンピュータ"
 
-#. leap/lam/lam-32bit/description
 #. leap/lam/description
 msgid ""
 "LAM (Local Area Multicomputer) is an MPI programming environment and "
@@ -820,8 +883,6 @@ msgstr "線形代数パッケージ"
 
 #. leap/lapack-man/summary
 #. leap/lapack-man/description
-#. tumbleweed/lapack-man/summary
-#. tumbleweed/lapack-man/description
 msgid "Manpages for LAPACK"
 msgstr "LAPACK のマニュアルページ"
 
@@ -846,13 +907,11 @@ msgid "LAPACKE headers and development files."
 msgstr "libotr 向けのヘッダと開発ライブラリです。"
 
 #. leap/lapack/lapacke-devel-static/summary
-#. tumbleweed/lapack/lapacke-devel-static/summary
 #, fuzzy
 msgid "LAPACKE development files - static libraries"
 msgstr "MariaDB 開発用ヘッダファイルとライブラリ"
 
 #. leap/lapack/lapacke-devel-static/description
-#. tumbleweed/lapack/lapacke-devel-static/description
 #, fuzzy
 msgid "LAPACKE development files  - static libraries."
 msgstr "libibcm 向けの開発ファイルです。"
@@ -1028,7 +1087,6 @@ msgid "LaTeX to RTF Converter"
 msgstr ""
 
 #. leap/latex2rtf/description
-#. tumbleweed/latex2rtf/description
 msgid ""
 "LaTeX2RTF is a translator program to convert LaTeX formatted text files into "
 "“rich text format” (RTF) files. RTF is a published standard format by "
@@ -1142,6 +1200,21 @@ msgid ""
 "set query_command=\"lbdbq %{s}\""
 msgstr ""
 
+#. leap/lbreakouthd/summary
+#. tumbleweed/lbreakouthd/summary
+#, fuzzy
+msgid "Classic Breakout-Style Game"
+msgstr "戦略型ボードゲーム"
+
+#. leap/lbreakouthd/description
+#. tumbleweed/lbreakouthd/description
+msgid ""
+"LBreakoutHD is a scaleable 16:9 remake of LBreakout2, a Breakout-style "
+"arcade game for Linux featuring a number of added graphical enhancements and "
+"effects. You control a paddle at the bottom of the playing field and must "
+"destroy bricks at the top by bouncing balls against them."
+msgstr ""
+
 #. leap/lbxproxy/summary
 msgid "Low BandWidth X proxy"
 msgstr "低帯域 X プロキシ"
@@ -1196,54 +1269,6 @@ msgstr ""
 msgid ""
 "LCAB is a small program for linux that creates an uncompressed MS Cabinet "
 "File from a set of input files."
-msgstr ""
-
-#. leap/lcdf-typetools/summary
-#. tumbleweed/lcdf-typetools/summary
-msgid "Programs to manipulate OpenType and multiple-master fonts"
-msgstr ""
-
-#. leap/lcdf-typetools/description
-#. tumbleweed/lcdf-typetools/description
-msgid ""
-"This package contains four tools for working with OpenType fonts:\n"
-"\n"
-" cfftot1    allows you to translate Compact Font Format (CFF) or             "
-"PostScript-flavored OpenType fonts into PostScript             Type 1 font "
-"format\n"
-"\n"
-" otfinfo    reports information about OpenType fonts, such as "
-"the             features they support and the contents of their "
-"``size''             optical size option\n"
-"\n"
-" otftotfm   allows you to create TeX font metrics and encodings "
-"for             using OpenType fonts\n"
-"\n"
-" t1dotlessj creates a Type 1 font with a single character --             the "
-"dotless j corresponding to the specified design\n"
-"\n"
-" t1lint     checks a Type 1 font for correctness (preliminary)\n"
-"\n"
-" t1reencode reencodes a Type 1 font, replacing its internal encoding "
-"with             one you specify\n"
-"\n"
-" t1testpage creates a PostScript test page for a specified             font "
-"file (preliminary)\n"
-"\n"
-"The package now includes programs for working with multiple-master fonts "
-"formerly distributed as mminstance.  These tools allow you to use multiple-"
-"master fonts with programs that require single-master fonts (afm2tfm, ps2pk, "
-"fontinst, etc.).  Both programs work fine with fonts that contain "
-"intermediate masters (e.g., Adobe Jenson MM and Adobe Kepler MM).\n"
-"\n"
-"mmafm        creates an AFM (Adobe font metric) file corresponding "
-"to              a single instance of a multiple-master font.  It "
-"reads              (and therefore requires) the AMFM and AFM "
-"files              distributed with the font.\n"
-"\n"
-"mmpfb        creates a normal, single-master font program that "
-"looks              like an instance of a multiple-master font.  It "
-"reads              the multiple-master font program in PFA or PFB format."
 msgstr ""
 
 #. leap/lcms2/summary
@@ -1375,6 +1400,12 @@ msgstr ""
 #. tumbleweed/ldc/ldc-bash-completion/description
 msgid "Optional dependency offering bash completion for ldc2"
 msgstr ""
+
+#. leap/ldc/ldc-jit-devel/description
+#. tumbleweed/ldc/ldc-jit-devel/description
+#, fuzzy
+msgid "This package contains the LDC jit development files."
+msgstr "このパッケージには、 libnova 向けの開発用ファイルが含まれています。"
 
 #. leap/ldc/ldc-phobos-devel/description
 #. tumbleweed/ldc/ldc-phobos-devel/description
@@ -1586,6 +1617,20 @@ msgid ""
 "\n"
 "This package contains development headers and libraries for the legion "
 "library."
+msgstr ""
+
+#. leap/leiningen/summary
+#. tumbleweed/leiningen/summary
+msgid "Automation for Clojure projects"
+msgstr ""
+
+#. leap/leiningen/description
+#. tumbleweed/leiningen/description
+msgid ""
+"Working on Clojure projects with tools designed for Java can be an exercise "
+"in frustration. With Leiningen, builds can be describe with Clojure. "
+"Leiningen handles fetching dependencies, running tests, packaging projects "
+"and can be extended with a number of plugins."
 msgstr ""
 
 #. leap/lekha/summary
@@ -1830,13 +1875,38 @@ msgstr ""
 "このパッケージには、 libXi6 内のライブラリに対する、開発用のヘッダファイルが"
 "含まれています。"
 
-#. leap/LHAPDF/libLHAPDF-6_2_1/summary
-#. tumbleweed/LHAPDF/libLHAPDF-6_2_3/summary
+#. leap/live555/libBasicUsageEnvironment1/summary
+#. leap/live555/libliveMedia66/summary
+#. tumbleweed/live555/libBasicUsageEnvironment1/summary
+#. tumbleweed/live555/libliveMedia81/summary
+msgid "Basic Usage Environment library of live555 streaming media"
+msgstr ""
+
+#. leap/live555/libBasicUsageEnvironment1/description
+#. leap/live555/libUsageEnvironment3/description
+#. leap/live555/libgroupsock8/description
+#. leap/live555/libliveMedia66/description
+#. leap/live555/description
+#. leap/live555/live555-devel/description
+#. tumbleweed/live555/libBasicUsageEnvironment1/description
+#. tumbleweed/live555/libUsageEnvironment3/description
+#. tumbleweed/live555/libgroupsock8/description
+#. tumbleweed/live555/libliveMedia81/description
+#. tumbleweed/live555/description
+#. tumbleweed/live555/live555-devel/description
+msgid ""
+"This code forms a set of C++ libraries for multimedia streaming, using open "
+"standard protocols (RTP/RTCP, RTSP, SIP). These libraries can be used to "
+"build streaming applications"
+msgstr ""
+
+#. leap/LHAPDF/libLHAPDF-6_2_3/summary
+#. tumbleweed/LHAPDF/libLHAPDF-6_3_0/summary
 msgid "A library for unified and interface to PDF sets"
 msgstr ""
 
-#. leap/LHAPDF/libLHAPDF-6_2_1/description
-#. tumbleweed/LHAPDF/libLHAPDF-6_2_3/description
+#. leap/LHAPDF/libLHAPDF-6_2_3/description
+#. tumbleweed/LHAPDF/libLHAPDF-6_3_0/description
 msgid ""
 "LHAPDF provides a unified and interface to PDF (probability distribution "
 "function) sets. It also works with the more recent multiple \"error\" sets, "
@@ -1848,12 +1918,18 @@ msgid ""
 "This package provides the shared library for LHAPDF."
 msgstr ""
 
+#. leap/llvm11/libLLVM11/summary
+#. leap/llvm11/libLLVM11-32bit/summary
 #. leap/llvm5/libLLVM5-32bit/summary
 #. leap/llvm5/libLLVM5/summary
 #. leap/llvm7/libLLVM7-32bit/summary
 #. leap/llvm7/libLLVM7/summary
-#. tumbleweed/llvm6/libLLVM6-32bit/summary
-#. tumbleweed/llvm6/libLLVM6/summary
+#. leap/llvm9/libLLVM9-32bit/summary
+#. leap/llvm9/libLLVM9/summary
+#. tumbleweed/llvm10/libLLVM10/summary
+#. tumbleweed/llvm10/libLLVM10-32bit/summary
+#. tumbleweed/llvm11/libLLVM11/summary
+#. tumbleweed/llvm11/libLLVM11-32bit/summary
 #. tumbleweed/llvm7/libLLVM7-32bit/summary
 #. tumbleweed/llvm7/libLLVM7/summary
 #. tumbleweed/llvm8/libLLVM8-32bit/summary
@@ -1863,12 +1939,18 @@ msgstr ""
 msgid "Libraries for LLVM"
 msgstr "LLVM 向けライブラリ"
 
+#. leap/llvm11/libLLVM11/description
+#. leap/llvm11/libLLVM11-32bit/description
 #. leap/llvm5/libLLVM5-32bit/description
 #. leap/llvm5/libLLVM5/description
 #. leap/llvm7/libLLVM7-32bit/description
 #. leap/llvm7/libLLVM7/description
-#. tumbleweed/llvm6/libLLVM6-32bit/description
-#. tumbleweed/llvm6/libLLVM6/description
+#. leap/llvm9/libLLVM9-32bit/description
+#. leap/llvm9/libLLVM9/description
+#. tumbleweed/llvm10/libLLVM10/description
+#. tumbleweed/llvm10/libLLVM10-32bit/description
+#. tumbleweed/llvm11/libLLVM11/description
+#. tumbleweed/llvm11/libLLVM11-32bit/description
 #. tumbleweed/llvm7/libLLVM7-32bit/description
 #. tumbleweed/llvm7/libLLVM7/description
 #. tumbleweed/llvm8/libLLVM8-32bit/description
@@ -1878,12 +1960,18 @@ msgstr "LLVM 向けライブラリ"
 msgid "This package contains the shared libraries needed for LLVM."
 msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
 
+#. leap/llvm11/libLTO11/summary
+#. leap/llvm11/libLTO11-32bit/summary
 #. leap/llvm5/libLTO5-32bit/summary
 #. leap/llvm5/libLTO5/summary
 #. leap/llvm7/libLTO7-32bit/summary
 #. leap/llvm7/libLTO7/summary
-#. tumbleweed/llvm6/libLTO6-32bit/summary
-#. tumbleweed/llvm6/libLTO6/summary
+#. leap/llvm9/libLTO9-32bit/summary
+#. leap/llvm9/libLTO9/summary
+#. tumbleweed/llvm10/libLTO10/summary
+#. tumbleweed/llvm10/libLTO10-32bit/summary
+#. tumbleweed/llvm11/libLTO11/summary
+#. tumbleweed/llvm11/libLTO11-32bit/summary
 #. tumbleweed/llvm7/libLTO7-32bit/summary
 #. tumbleweed/llvm7/libLTO7/summary
 #. tumbleweed/llvm8/libLTO8-32bit/summary
@@ -1893,12 +1981,18 @@ msgstr "このパッケージには LLVM 向けの共有ライブラリが含ま
 msgid "Link-time optimizer for LLVM"
 msgstr ""
 
+#. leap/llvm11/libLTO11/description
+#. leap/llvm11/libLTO11-32bit/description
 #. leap/llvm5/libLTO5-32bit/description
 #. leap/llvm5/libLTO5/description
 #. leap/llvm7/libLTO7-32bit/description
 #. leap/llvm7/libLTO7/description
-#. tumbleweed/llvm6/libLTO6-32bit/description
-#. tumbleweed/llvm6/libLTO6/description
+#. leap/llvm9/libLTO9-32bit/description
+#. leap/llvm9/libLTO9/description
+#. tumbleweed/llvm10/libLTO10/description
+#. tumbleweed/llvm10/libLTO10-32bit/description
+#. tumbleweed/llvm11/libLTO11/description
+#. tumbleweed/llvm11/libLTO11-32bit/description
 #. tumbleweed/llvm7/libLTO7-32bit/description
 #. tumbleweed/llvm7/libLTO7/description
 #. tumbleweed/llvm8/libLTO8-32bit/description
@@ -1910,14 +2004,14 @@ msgstr ""
 msgid "This package contains the link-time optimizer for LLVM."
 msgstr "このパッケージには、 C++ 言語向けの GNU コンパイラが含まれています。"
 
-#. leap/limesuite/libLimeSuite19_01-1/summary
-#. tumbleweed/limesuite/libLimeSuite20_01-1/summary
+#. leap/limesuite/libLimeSuite20_01-1/summary
+#. tumbleweed/limesuite/libLimeSuite20_10-1/summary
 #, fuzzy
 msgid "Library for Lime Suite"
 msgstr "GNU Objective C コンパイラ向けライブラリ"
 
-#. leap/limesuite/libLimeSuite19_01-1/description
-#. tumbleweed/limesuite/libLimeSuite20_01-1/description
+#. leap/limesuite/libLimeSuite20_01-1/description
+#. tumbleweed/limesuite/libLimeSuite20_10-1/description
 msgid ""
 "Lime Suite is a collection of software supporting several hardware platforms "
 "and other tools for developing with LMS7-based hardware."
@@ -1939,6 +2033,11 @@ msgstr "unicap ライブラリ向け開発用ファイル"
 #. leap/lazarus/libQt5Pas1/description
 #. tumbleweed/lazarus/libQt5Pas1/description
 msgid "Library that allows to use Qt5 with Free Pascal"
+msgstr ""
+
+#. leap/live555/libUsageEnvironment3/summary
+#. tumbleweed/live555/libUsageEnvironment3/summary
+msgid "Usage Environment library of live555 streaming media"
 msgstr ""
 
 #. leap/linux-atm/libatm1/summary
@@ -1969,13 +2068,13 @@ msgstr ""
 "BLAS (Basic Linear Algebra Subprograms) は数値代数向けの標準ライブラリです。"
 "BLAS は線形代数向けの基本的なアルゴリズムを多数提供しています。"
 
-#. leap/llvm7/libc++-devel/summary
-#. tumbleweed/llvm9/libc++-devel/summary
+#. leap/llvm11/libc++-devel/summary
+#. tumbleweed/llvm11/libc++-devel/summary
 msgid "C++ standard library implementation (devel package)"
 msgstr ""
 
-#. leap/llvm7/libc++-devel/description
-#. tumbleweed/llvm9/libc++-devel/description
+#. leap/llvm11/libc++-devel/description
+#. tumbleweed/llvm11/libc++-devel/description
 #, fuzzy
 msgid ""
 "This package contains libc++, a new implementation of the C++ standard "
@@ -1984,13 +2083,13 @@ msgstr ""
 "このパッケージには、 K デスクトップ環境ワークスペース向けの基本パッケージが含"
 "まれています。開発用ファイルです。"
 
-#. leap/llvm7/libc++1/summary
-#. tumbleweed/llvm9/libc++1/summary
+#. leap/llvm11/libc++1/summary
+#. tumbleweed/llvm11/libc++1/summary
 msgid "C++ standard library implementation"
 msgstr ""
 
-#. leap/llvm7/libc++1/description
-#. tumbleweed/llvm9/libc++1/description
+#. leap/llvm11/libc++1/description
+#. tumbleweed/llvm11/libc++1/description
 #, fuzzy
 #| msgid ""
 #| "This package contains an implementation of the ATK interfaces for GNOME "
@@ -2002,41 +2101,47 @@ msgstr ""
 "このパッケージには、 GNOME ウイジェット向けの ATK インターフェイスの実装が含"
 "まれています。"
 
-#. leap/llvm7/libc++abi-devel/summary
-#. tumbleweed/llvm9/libc++abi-devel/summary
+#. leap/llvm11/libc++abi-devel/summary
+#. tumbleweed/llvm11/libc++abi-devel/summary
 #, fuzzy
 #| msgid "VBI decoding library - devel package"
 msgid "C++ standard library ABI (devel package)"
 msgstr "VBI デコードライブラリ - 開発者向けパッケージ"
 
-#. leap/llvm7/libc++abi-devel/description
-#. tumbleweed/llvm9/libc++abi-devel/description
+#. leap/llvm11/libc++abi-devel/description
+#. tumbleweed/llvm11/libc++abi-devel/description
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
 "standard library, targeting C++11. (development files)"
 msgstr ""
 
-#. leap/llvm7/libc++abi1/summary
-#. tumbleweed/llvm9/libc++abi1/summary
+#. leap/llvm11/libc++abi1/summary
+#. tumbleweed/llvm11/libc++abi1/summary
 #, fuzzy
 #| msgid "The Ruby standard library"
 msgid "C++ standard library ABI"
 msgstr "Ruby 共有ライブラリ"
 
-#. leap/llvm7/libc++abi1/description
-#. tumbleweed/llvm9/libc++abi1/description
+#. leap/llvm11/libc++abi1/description
+#. tumbleweed/llvm11/libc++abi1/description
 #, fuzzy
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
 "standard library, targeting C++11."
 msgstr "このパッケージには gnet ライブラリの追加文書が含まれています。"
 
+#. leap/llvm11/libclang11/summary
+#. leap/llvm11/libclang11-32bit/summary
 #. leap/llvm5/libclang5-32bit/summary
 #. leap/llvm5/libclang5/summary
 #. leap/llvm7/libclang7-32bit/summary
 #. leap/llvm7/libclang7/summary
-#. tumbleweed/llvm6/libclang6-32bit/summary
-#. tumbleweed/llvm6/libclang6/summary
+#. leap/llvm9/libclang9-32bit/summary
+#. leap/llvm9/libclang9/summary
+#. tumbleweed/llvm10/libclang10/summary
+#. tumbleweed/llvm10/libclang10-32bit/summary
+#. tumbleweed/llvm11/libclang11/summary
+#. tumbleweed/llvm11/libclang11-32bit/summary
 #. tumbleweed/llvm7/libclang7-32bit/summary
 #. tumbleweed/llvm7/libclang7/summary
 #. tumbleweed/llvm8/libclang8-32bit/summary
@@ -2046,12 +2151,18 @@ msgstr "このパッケージには gnet ライブラリの追加文書が含ま
 msgid "Library files needed for clang"
 msgstr ""
 
+#. leap/llvm11/libclang11/description
+#. leap/llvm11/libclang11-32bit/description
 #. leap/llvm5/libclang5-32bit/description
 #. leap/llvm5/libclang5/description
 #. leap/llvm7/libclang7-32bit/description
 #. leap/llvm7/libclang7/description
-#. tumbleweed/llvm6/libclang6-32bit/description
-#. tumbleweed/llvm6/libclang6/description
+#. leap/llvm9/libclang9-32bit/description
+#. leap/llvm9/libclang9/description
+#. tumbleweed/llvm10/libclang10/description
+#. tumbleweed/llvm10/libclang10-32bit/description
+#. tumbleweed/llvm11/libclang11/description
+#. tumbleweed/llvm11/libclang11-32bit/description
 #. tumbleweed/llvm7/libclang7-32bit/description
 #. tumbleweed/llvm7/libclang7/description
 #. tumbleweed/llvm8/libclang8-32bit/description
@@ -2104,16 +2215,21 @@ msgstr "GNU Objective C コンパイラ向けライブラリ"
 msgid "Device mapper main shared library"
 msgstr ""
 
-#. leap/ldc/libdruntime-ldc86/summary
-#. tumbleweed/ldc/libdruntime-ldc86/summary
+#. leap/ldc/libdruntime-ldc91/summary
+#. tumbleweed/ldc/libdruntime-ldc94/summary
 #, fuzzy
 msgid "Minimal D runtime library"
 msgstr "C コンパイラランタイムライブラリ"
 
-#. leap/ldc/libdruntime-ldc86/description
-#. tumbleweed/ldc/libdruntime-ldc86/description
+#. leap/ldc/libdruntime-ldc91/description
+#. tumbleweed/ldc/libdruntime-ldc94/description
 msgid ""
 "The minimal runtime library required to support the D programming language."
+msgstr ""
+
+#. leap/live555/libgroupsock8/summary
+#. tumbleweed/live555/libgroupsock8/summary
+msgid "Group sock library of live555 streaming media"
 msgstr ""
 
 #. leap/lirc/libirrecord0/summary
@@ -2176,13 +2292,43 @@ msgid ""
 "- error code as a return value instead of the INFO parameter."
 msgstr ""
 
-#. leap/laszip/liblaszip3/summary
+#. leap/lasso/liblasso-devel/summary
+#. tumbleweed/lasso/liblasso-devel/summary
+#, fuzzy
+msgid "Lasso development headers and documentation"
+msgstr "libapparmor 向けの開発用ヘッダとライブラリ"
+
+#. leap/lasso/liblasso-devel/description
+#. tumbleweed/lasso/liblasso-devel/description
+#, fuzzy
+msgid ""
+"This package contains the header files, static libraries and development "
+"documentation for Lasso."
+msgstr ""
+"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+
+#. leap/lasso/liblasso3/summary
+#. tumbleweed/lasso/liblasso3/summary
+#, fuzzy
+msgid "Lasso runtime libraries"
+msgstr "C コンパイラランタイムライブラリ"
+
+#. leap/lasso/liblasso3/description
+#. tumbleweed/lasso/liblasso3/description
+#, fuzzy
+msgid ""
+"This package contains the runtime libraries for lasso (Liberty Alliance "
+"Single Sign On)."
+msgstr ""
+"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+
+#. leap/laszip/liblaszip8/summary
 #. tumbleweed/laszip/liblaszip8/summary
 #, fuzzy
 msgid "Library files for laszip"
 msgstr "fipscheck 向けライブラリ"
 
-#. leap/laszip/liblaszip3/description
+#. leap/laszip/liblaszip8/description
 #. tumbleweed/laszip/liblaszip8/description
 msgid ""
 "A free product of rapidlasso GmbH - quickly turns bulky LAS files into "
@@ -2196,13 +2342,13 @@ msgid ""
 "This package contain only the dynamic build."
 msgstr ""
 
-#. leap/laszip/liblaszip_api3/summary
+#. leap/laszip/liblaszip_api8/summary
 #. tumbleweed/laszip/liblaszip_api8/summary
 #, fuzzy
 msgid "API library files for liblaszip"
 msgstr "fipscheck 向けライブラリ"
 
-#. leap/laszip/liblaszip_api3/description
+#. leap/laszip/liblaszip_api8/description
 #. tumbleweed/laszip/liblaszip_api8/description
 msgid "API library for laszip This package contain only the dynamic build."
 msgstr ""
@@ -2236,11 +2382,13 @@ msgstr ""
 
 #. leap/ldacBT/libldac2/summary
 #. tumbleweed/ldacBT/libldac2/summary
+#. tumbleweed/ldacBT/libldac2-32bit/summary
 msgid "A lossy audio codec for Bluetooth connections"
 msgstr ""
 
 #. leap/ldacBT/libldac2/description
 #. tumbleweed/ldacBT/libldac2/description
+#. tumbleweed/ldacBT/libldac2-32bit/description
 msgid ""
 "LDAC is an audio coding technology developed by Sony. It enables the "
 "transmission of High-Resolution Audio content, even over a Bluetooth "
@@ -2306,12 +2454,30 @@ msgid ""
 "Libraries and Header Files to Develop Programs with ldb2 Support."
 msgstr "tdb1 に対応するプログラムを開発するためのライブラリとヘッダファイル"
 
+#. leap/ldb/libldb1/summary
+#. leap/ldb/libldb1-32bit/summary
 #. leap/ldb/libldb2/summary
 #. leap/ldb/libldb2-32bit/summary
 #. tumbleweed/ldb/libldb2/summary
 #. tumbleweed/ldb/libldb2-32bit/summary
 msgid "An LDAP-like embedded database"
 msgstr "LDAP 型の内蔵データベース"
+
+#. leap/ldb/libldb1/description
+#. leap/ldb/libldb1-32bit/description
+#, fuzzy
+#| msgid ""
+#| "Ldb is an LDAP-like embedded database.\n"
+#| "\n"
+#| "This package includes the ldb1 library."
+msgid ""
+"LDB is an LDAP-like embedded database.\n"
+"\n"
+"This package includes the ldb1 library."
+msgstr ""
+"Ldb は LDAP 型の内蔵データベースです。\n"
+"\n"
+"このパッケージには、 ldb1 ライブラリが含まれています。"
 
 #. leap/ldb/libldb2/description
 #. leap/ldb/libldb2-32bit/description
@@ -2330,6 +2496,21 @@ msgstr ""
 "Ldb は LDAP 型の内蔵データベースです。\n"
 "\n"
 "このパッケージには、 ldb1 ライブラリが含まれています。"
+
+#. leap/ldc/libldc-jit91/summary
+#. tumbleweed/ldc/libldc-jit94/summary
+#, fuzzy
+#| msgid "The Ruby standard library"
+msgid "The LDC jit library"
+msgstr "Ruby 共有ライブラリ"
+
+#. leap/ldc/libldc-jit91/description
+#. tumbleweed/ldc/libldc-jit94/description
+#, fuzzy
+msgid "This package includes ldc's jit library."
+msgstr ""
+"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
+"が含まれています。"
 
 #. leap/ldmtool/libldm-1_0-0/summary
 #. tumbleweed/ldmtool/libldm-1_0-0/summary
@@ -2416,7 +2597,6 @@ msgstr ""
 "lensfun ライブラリ／データベースを使用するのに必要なライブラリファイルです。"
 
 #. leap/leptonica/liblept5/summary
-#. leap/leptonica/liblept5-32bit/summary
 #. tumbleweed/leptonica/liblept5/summary
 #. tumbleweed/leptonica/liblept5-32bit/summary
 #, fuzzy
@@ -2426,7 +2606,6 @@ msgstr ""
 "す。"
 
 #. leap/leptonica/liblept5/description
-#. leap/leptonica/liblept5-32bit/description
 #. tumbleweed/leptonica/liblept5/description
 #. tumbleweed/leptonica/liblept5-32bit/description
 #, fuzzy
@@ -2475,19 +2654,6 @@ msgstr ""
 "LightDM に対するインターフェイスを利用するクライアント向けの GObject ベースの"
 "ライブラリです。"
 
-#. leap/lightdm/liblightdm-qt-3-0/summary
-#, fuzzy
-msgid "LightDM Qt4-based Client Library"
-msgstr "LightDM GObject ベースのクライアントライブラリ"
-
-#. leap/lightdm/liblightdm-qt-3-0/description
-#, fuzzy
-msgid ""
-"A Qt4-based library for LightDM clients to use to interface with LightDM."
-msgstr ""
-"LightDM に対するインターフェイスを利用するクライアント向けの GObject ベースの"
-"ライブラリです。"
-
 #. leap/lightdm/liblightdm-qt5-3-0/summary
 #. tumbleweed/lightdm/liblightdm-qt5-3-0/summary
 #, fuzzy
@@ -2517,6 +2683,18 @@ msgid ""
 "\n"
 "This package contains the shared library."
 msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. leap/lightstep-tracer-cpp/liblightstep_tracer0/summary
+#. tumbleweed/lightstep-tracer-cpp/liblightstep_tracer0/summary
+msgid "C++ library for LightStep distributed tracing"
+msgstr ""
+
+#. leap/lightstep-tracer-cpp/liblightstep_tracer0/description
+#. tumbleweed/lightstep-tracer-cpp/liblightstep_tracer0/description
+msgid ""
+"Shared library for lightstep-tracer-cpp - C++ library for LightStep "
+"distributed tracing."
+msgstr ""
 
 #. leap/lilv/liblilv-0-0/summary
 #. leap/lilv/liblilv-0-0-32bit/summary
@@ -2574,18 +2752,16 @@ msgid ""
 msgstr ""
 
 #. leap/linphone/liblinphone++9/summary
-#. leap/linphone/liblinphone++9-32bit/summary
-#. tumbleweed/linphone/liblinphone++9/summary
-#. tumbleweed/linphone/liblinphone++9-32bit/summary
+#. tumbleweed/linphone/liblinphone++10-32bit/summary
+#. tumbleweed/linphone/liblinphone++10/summary
 #, fuzzy
 #| msgid "Web Phone"
 msgid "Web Phone C++ library"
 msgstr "Web 電話"
 
 #. leap/linphone/liblinphone++9/description
-#. leap/linphone/liblinphone++9-32bit/description
-#. tumbleweed/linphone/liblinphone++9/description
-#. tumbleweed/linphone/liblinphone++9-32bit/description
+#. tumbleweed/linphone/liblinphone++10-32bit/description
+#. tumbleweed/linphone/liblinphone++10/description
 #, fuzzy
 #| msgid ""
 #| "Linphone is a Web phone with a GNOME interface. It lets you make two-"
@@ -2689,18 +2865,16 @@ msgid "Provides translations for the \"linphone\" package."
 msgstr "linphone パッケージ向けの翻訳データです。"
 
 #. leap/linphone/liblinphone9/summary
-#. leap/linphone/liblinphone9-32bit/summary
-#. tumbleweed/linphone/liblinphone9/summary
-#. tumbleweed/linphone/liblinphone9-32bit/summary
+#. tumbleweed/linphone/liblinphone10-32bit/summary
+#. tumbleweed/linphone/liblinphone10/summary
 #, fuzzy
 #| msgid "Web Phone"
 msgid "Web Phone library"
 msgstr "Web 電話"
 
 #. leap/linphone/liblinphone9/description
-#. leap/linphone/liblinphone9-32bit/description
-#. tumbleweed/linphone/liblinphone9/description
-#. tumbleweed/linphone/liblinphone9-32bit/description
+#. tumbleweed/linphone/liblinphone10-32bit/description
+#. tumbleweed/linphone/liblinphone10/description
 #, fuzzy
 #| msgid ""
 #| "Linphone is a Web phone with a GNOME interface. It lets you make two-"
@@ -2812,9 +2986,12 @@ msgid ""
 "This package contains shared library for littleb."
 msgstr ""
 
+#. leap/llvm11/liblldb11/summary
 #. leap/llvm5/liblldb5/summary
 #. leap/llvm7/liblldb7/summary
-#. tumbleweed/llvm6/liblldb6/summary
+#. leap/llvm9/liblldb9/summary
+#. tumbleweed/llvm10/liblldb10/summary
+#. tumbleweed/llvm11/liblldb11/summary
 #. tumbleweed/llvm7/liblldb7/summary
 #. tumbleweed/llvm8/liblldb8/summary
 #. tumbleweed/llvm9/liblldb9/summary
@@ -2822,9 +2999,12 @@ msgstr ""
 msgid "LLDB software debugger runtime library"
 msgstr "Boost::Regex ランタイムライブラリ"
 
+#. leap/llvm11/liblldb11/description
 #. leap/llvm5/liblldb5/description
 #. leap/llvm7/liblldb7/description
-#. tumbleweed/llvm6/liblldb6/description
+#. leap/llvm9/liblldb9/description
+#. tumbleweed/llvm10/liblldb10/description
+#. tumbleweed/llvm11/liblldb11/description
 #. tumbleweed/llvm7/liblldb7/description
 #. tumbleweed/llvm8/liblldb8/description
 #. tumbleweed/llvm9/liblldb9/description
@@ -2834,7 +3014,6 @@ msgstr ""
 "このパッケージには YaST2 向けのメニュー選択コンポーネントが含まれています。"
 
 #. leap/lldpd/liblldpctl4/summary
-#. tumbleweed/lldpd/liblldpctl4/summary
 msgid "Implementation of IEEE 802.1ab - Shared library"
 msgstr ""
 
@@ -2852,15 +3031,15 @@ msgstr ""
 
 #. leap/lmdb/liblmdb-0_9_17/summary
 #. leap/lmdb/liblmdb-0_9_17-32bit/summary
-#. tumbleweed/lmdb/liblmdb-0_9_23/summary
-#. tumbleweed/lmdb/liblmdb-0_9_23-32bit/summary
+#. tumbleweed/lmdb/liblmdb-0_9_24/summary
+#. tumbleweed/lmdb/liblmdb-0_9_24-32bit/summary
 msgid "Shared library for Lightning Memory-Mapped Database (LMDB)"
 msgstr "Lightning Memory-Mapped Database (LMDB) 向け共有ライブラリ"
 
 #. leap/lmdb/liblmdb-0_9_17/description
 #. leap/lmdb/liblmdb-0_9_17-32bit/description
-#. tumbleweed/lmdb/liblmdb-0_9_23/description
-#. tumbleweed/lmdb/liblmdb-0_9_23-32bit/description
+#. tumbleweed/lmdb/liblmdb-0_9_24/description
+#. tumbleweed/lmdb/liblmdb-0_9_24-32bit/description
 msgid ""
 "LMDB is a Btree-based database management library with an API similar to "
 "BerkeleyDB. The library is thread-aware and supports concurrent read/write "
@@ -2928,7 +3107,6 @@ msgstr ""
 "liblog4c-doc パッケージには、 log4c のドキュメンテーションが含まれています。"
 
 #. leap/log4c/liblog4c3/summary
-#. leap/log4c/liblog4c3-32bit/summary
 #. tumbleweed/log4c/liblog4c3/summary
 #. tumbleweed/log4c/liblog4c3-32bit/summary
 msgid ""
@@ -2936,7 +3114,6 @@ msgid ""
 msgstr ""
 
 #. leap/log4c/liblog4c3/description
-#. leap/log4c/liblog4c3-32bit/description
 #. tumbleweed/log4c/liblog4c3/description
 #. tumbleweed/log4c/liblog4c3-32bit/description
 msgid ""
@@ -2946,14 +3123,15 @@ msgid ""
 msgstr ""
 
 #. leap/log4cplus/liblog4cplus-1_1-5/summary
-#. tumbleweed/log4cplus/liblog4cplus-1_1-5/summary
+#. leap/spdlog/libspdlog1/summary
+#. tumbleweed/log4cplus/liblog4cplus-1_2-5/summary
 #. tumbleweed/spdlog/libspdlog1/summary
 #, fuzzy
 msgid "C++ logging library"
 msgstr "簡単に使えるログ記録ライブラリ"
 
 #. leap/log4cplus/liblog4cplus-1_1-5/description
-#. tumbleweed/log4cplus/liblog4cplus-1_1-5/description
+#. tumbleweed/log4cplus/liblog4cplus-1_2-5/description
 msgid ""
 "log4cplus is a simple to use C++ logging API providing thread-safe, "
 "flexible, and arbitrarily granular control over log management and "
@@ -2975,7 +3153,7 @@ msgstr "表計算ファイル処理ライブラリ"
 #. leap/log4cxx/liblog4cxx-devel/summary
 #. leap/log4cxx/liblog4cxx10/summary
 #. tumbleweed/log4cxx/liblog4cxx-devel/summary
-#. tumbleweed/log4cxx/liblog4cxx10/summary
+#. tumbleweed/log4cxx/liblog4cxx11/summary
 #, fuzzy
 msgid "Log4j like C++ Logging Library"
 msgstr "簡単に使えるログ記録ライブラリ"
@@ -2983,7 +3161,7 @@ msgstr "簡単に使えるログ記録ライブラリ"
 #. leap/log4cxx/liblog4cxx-devel/description
 #. leap/log4cxx/liblog4cxx10/description
 #. tumbleweed/log4cxx/liblog4cxx-devel/description
-#. tumbleweed/log4cxx/liblog4cxx10/description
+#. tumbleweed/log4cxx/liblog4cxx11/description
 msgid "Log4cxx is a port to C++ of the log4j logging library."
 msgstr ""
 
@@ -3005,11 +3183,13 @@ msgstr ""
 "ファイルが含まれています。"
 
 #. leap/log4shib/liblog4shib1/summary
+#. leap/log4shib/liblog4shib2/summary
 #. tumbleweed/log4shib/liblog4shib2/summary
 msgid "Log for C++, Shibboleth Edition"
 msgstr ""
 
 #. leap/log4shib/liblog4shib1/description
+#. leap/log4shib/liblog4shib2/description
 #. tumbleweed/log4shib/liblog4shib2/description
 msgid ""
 "Log for C++ is a library of classes for flexible logging to files, syslog, "
@@ -3057,7 +3237,7 @@ msgstr ""
 "イナリ、半連続や特殊順序セット (SOS) モデルなどを解決します。"
 
 #. leap/lrslib/liblrsgmp-062/summary
-#. tumbleweed/lrslib/liblrs-7_0a0/summary
+#. tumbleweed/lrslib/liblrs1/summary
 msgid "Reverse Search Vertex Enumeration library"
 msgstr ""
 
@@ -3070,10 +3250,12 @@ msgid ""
 msgstr ""
 
 #. leap/lttng-tools/liblttng-ctl0/summary
+#. tumbleweed/lttng-tools/liblttng-ctl0/summary
 msgid "Linux Trace Toolkit Next Generation control and utility library"
 msgstr ""
 
 #. leap/lttng-tools/liblttng-ctl0/description
+#. tumbleweed/lttng-tools/liblttng-ctl0/description
 #, fuzzy
 msgid ""
 "This package provides a userspace library for controlling the LTTng "
@@ -3090,6 +3272,7 @@ msgid "Linux Trace Toolkit Userspace Tracer library"
 msgstr ""
 
 #. leap/lttng-ust/liblttng-ust-ctl4/description
+#. leap/lttng-ust/liblttng-ust-python-agent0/description
 #. leap/lttng-ust/liblttng-ust0/description
 #. tumbleweed/lttng-ust/liblttng-ust-ctl4/description
 #. tumbleweed/lttng-ust/liblttng-ust-python-agent0/description
@@ -3097,6 +3280,11 @@ msgstr ""
 msgid ""
 "This library may be used by user space applications to generate tracepoints "
 "within the kernel LTT subsystem."
+msgstr ""
+
+#. leap/lttng-ust/liblttng-ust-python-agent0/summary
+#. tumbleweed/lttng-ust/liblttng-ust-python-agent0/summary
+msgid "Linux Trace Toolkit Userspace Tracer Python agent library"
 msgstr ""
 
 #. leap/lua51/liblua5_1-5-32bit/summary
@@ -3107,6 +3295,8 @@ msgstr ""
 #. tumbleweed/lua51/liblua5_1-5/summary
 #. tumbleweed/lua53/liblua5_3-5-32bit/summary
 #. tumbleweed/lua53/liblua5_3-5/summary
+#. tumbleweed/lua54/liblua5_4-5-32bit/summary
+#. tumbleweed/lua54/liblua5_4-5/summary
 msgid "The Lua integration library"
 msgstr "LUA 統合ライブラリ"
 
@@ -3122,10 +3312,14 @@ msgstr "LUA 統合ライブラリ"
 #. tumbleweed/lua51/liblua5_1-5/description
 #. tumbleweed/lua53/liblua5_3-5-32bit/description
 #. tumbleweed/lua53/liblua5_3-5/description
+#. tumbleweed/lua54/liblua5_4-5-32bit/description
+#. tumbleweed/lua54/liblua5_4-5/description
 #. tumbleweed/lua51/description
 #. tumbleweed/lua51/lua51-doc/description
 #. tumbleweed/lua53/description
 #. tumbleweed/lua53/lua53-doc/description
+#. tumbleweed/lua54/description
+#. tumbleweed/lua54/lua54-doc/description
 #, fuzzy
 #| msgid ""
 #| "Lua is a programming language originally designed for extending "
@@ -3176,6 +3370,22 @@ msgid ""
 "This package contains the library."
 msgstr ""
 
+#. leap/moonjit/libluajit-5_1-2/summary
+#. leap/lua51-luajit/libluajit-5_1-2-32bit/summary
+#. tumbleweed/moonjit/libluajit-5_1-2/summary
+#. tumbleweed/moonjit/libluajit-5_1-2-32bit/summary
+#, fuzzy
+msgid "Library for JIT Lua compiler"
+msgstr "OCaml コンパイラで内部的に使用されるライブラリ"
+
+#. leap/moonjit/libluajit-5_1-2/description
+#. leap/lua51-luajit/libluajit-5_1-2-32bit/description
+#. tumbleweed/moonjit/libluajit-5_1-2/description
+#. tumbleweed/moonjit/libluajit-5_1-2-32bit/description
+#, fuzzy
+msgid "Libraries to use JIT Lua compiler"
+msgstr "OCaml コンパイラで内部的に使用されるライブラリ"
+
 #. leap/lucene++/liblucene++0/summary
 #. tumbleweed/lucene++/liblucene++0/summary
 msgid "A high-performance, full-featured text search engine written in C++"
@@ -3188,12 +3398,40 @@ msgid ""
 "performance, full-featured text search engine."
 msgstr ""
 
+#. leap/lunar-date/liblunar-date-3_0-1/summary
+#. leap/lunar-date/summary
+#. tumbleweed/lunar-date/liblunar-date-3_0-1/summary
+#. tumbleweed/lunar-date/summary
+#, fuzzy
+#| msgid "The Ruby standard library"
+msgid "Chinese Lunar calendar library"
+msgstr "Ruby 共有ライブラリ"
+
+#. leap/lunar-date/liblunar-date-3_0-1/description
+#. leap/lunar-date/description
+#. tumbleweed/lunar-date/liblunar-date-3_0-1/description
+#. tumbleweed/lunar-date/description
+msgid "Library to support date conversion from/to chinese lunar calendar"
+msgstr ""
+
+#. leap/lvm2/liblvm2app2_2/summary
+#, fuzzy
+msgid "LVM2 application api library"
+msgstr "アプリケーションインジケータライブラリ"
+
+#. leap/lvm2/liblvm2app2_2/description
+#, fuzzy
+msgid "LVM library for applications api"
+msgstr "KDE 教育アプリケーション向けライブラリ"
+
+#. leap/lvm2/liblvm2cmd2_02/summary
 #. leap/lvm2/liblvm2cmd2_03/summary
 #. tumbleweed/lvm2/liblvm2cmd2_03/summary
 #, fuzzy
 msgid "LVM2 command line library"
 msgstr "メール処理ライブラリ"
 
+#. leap/lvm2/liblvm2cmd2_02/description
 #. leap/lvm2/liblvm2cmd2_03/description
 #. tumbleweed/lvm2/liblvm2cmd2_03/description
 msgid ""
@@ -3368,9 +3606,12 @@ msgstr "lockdev ライブラリ向けヘッダファイル"
 msgid "The LAME MP3 encoder library"
 msgstr "Ruby 共有ライブラリ"
 
+#. leap/llvm11/libomp11-devel/summary
 #. leap/llvm5/libomp5-devel/summary
 #. leap/llvm7/libomp7-devel/summary
-#. tumbleweed/llvm6/libomp6-devel/summary
+#. leap/llvm9/libomp9-devel/summary
+#. tumbleweed/llvm10/libomp10-devel/summary
+#. tumbleweed/llvm11/libomp11-devel/summary
 #. tumbleweed/llvm7/libomp7-devel/summary
 #. tumbleweed/llvm8/libomp8-devel/summary
 #. tumbleweed/llvm9/libomp9-devel/summary
@@ -3378,9 +3619,12 @@ msgstr "Ruby 共有ライブラリ"
 msgid "MPI plugin for LLVM"
 msgstr "TagLib 向け拡張プラグイン"
 
+#. leap/llvm11/libomp11-devel/description
 #. leap/llvm5/libomp5-devel/description
 #. leap/llvm7/libomp7-devel/description
-#. tumbleweed/llvm6/libomp6-devel/description
+#. leap/llvm9/libomp9-devel/description
+#. tumbleweed/llvm10/libomp10-devel/description
+#. tumbleweed/llvm11/libomp11-devel/description
 #. tumbleweed/llvm7/libomp7-devel/description
 #. tumbleweed/llvm8/libomp8-devel/description
 #. tumbleweed/llvm9/libomp9-devel/description
@@ -3389,15 +3633,15 @@ msgstr "TagLib 向け拡張プラグイン"
 msgid "This package contains the OpenMP MPI plugin for LLVM."
 msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
 
-#. leap/ldc/libphobos2-ldc86/summary
-#. tumbleweed/ldc/libphobos2-ldc86/summary
+#. leap/ldc/libphobos2-ldc91/summary
+#. tumbleweed/ldc/libphobos2-ldc94/summary
 #, fuzzy
 #| msgid "The Ruby standard library"
 msgid "The D standard library"
 msgstr "Ruby 共有ライブラリ"
 
-#. leap/ldc/libphobos2-ldc86/description
-#. tumbleweed/ldc/libphobos2-ldc86/description
+#. leap/ldc/libphobos2-ldc91/description
+#. tumbleweed/ldc/libphobos2-ldc94/description
 #, fuzzy
 msgid "This package includes ldc's phobos library - The D standard library."
 msgstr ""
@@ -3408,6 +3652,7 @@ msgstr ""
 #. leap/lua53-toluapp/libtolua++-5_3-1/summary
 #. tumbleweed/lua51-toluapp/libtolua++-5_1-1/summary
 #. tumbleweed/lua53-toluapp/libtolua++-5_3-1/summary
+#. tumbleweed/lua54-toluapp/libtolua++-5_4-1/summary
 msgid "Runtime libraries for tolua++"
 msgstr ""
 
@@ -3415,6 +3660,7 @@ msgstr ""
 #. leap/lua53-toluapp/libtolua++-5_3-1/description
 #. tumbleweed/lua51-toluapp/libtolua++-5_1-1/description
 #. tumbleweed/lua53-toluapp/libtolua++-5_3-1/description
+#. tumbleweed/lua54-toluapp/libtolua++-5_4-1/description
 msgid "This package provides shared libraries for tolua++."
 msgstr ""
 
@@ -3422,6 +3668,7 @@ msgstr ""
 #. leap/lua53-toluapp/libtolua++-5_3-devel/summary
 #. tumbleweed/lua51-toluapp/libtolua++-5_1-devel/summary
 #. tumbleweed/lua53-toluapp/libtolua++-5_3-devel/summary
+#. tumbleweed/lua54-toluapp/libtolua++-5_4-devel/summary
 msgid "Development headers for tolua++"
 msgstr ""
 
@@ -3429,6 +3676,7 @@ msgstr ""
 #. leap/lua53-toluapp/libtolua++-5_3-devel/description
 #. tumbleweed/lua51-toluapp/libtolua++-5_1-devel/description
 #. tumbleweed/lua53-toluapp/libtolua++-5_3-devel/description
+#. tumbleweed/lua54-toluapp/libtolua++-5_4-devel/description
 msgid "This package provides development headers for tolua++."
 msgstr ""
 
@@ -3460,9 +3708,39 @@ msgid "End of life dates for specific packages"
 msgstr ""
 
 #. leap/lifecycle-data/lifecycle-data-openSUSE/description
+#. leap/lifecycle-data-sle-module-basesystem/description
+#. leap/lifecycle-data-sle-module-desktop-applications/description
+#. leap/lifecycle-data-sle-module-desktop-productivity/description
+#. leap/lifecycle-data-sle-module-development-tools/description
+#. leap/lifecycle-data-sle-module-hpc/description
+#. leap/lifecycle-data-sle-module-server-applications/description
 #. tumbleweed/lifecycle-data/lifecycle-data-openSUSE/description
 msgid ""
 "Package lifecycle data.  This is the source of zypper lifecycle information."
+msgstr ""
+
+#. leap/lifecycle-data-sle-module-basesystem/summary
+msgid "SLE Basesystem Lifecycle Data"
+msgstr ""
+
+#. leap/lifecycle-data-sle-module-desktop-applications/summary
+msgid "SLE Desktop Applications Module Lifecycle Data"
+msgstr ""
+
+#. leap/lifecycle-data-sle-module-desktop-productivity/summary
+msgid "SLE Desktop Productivity Module Lifecycle Data"
+msgstr ""
+
+#. leap/lifecycle-data-sle-module-development-tools/summary
+msgid "SLE Development Tools Module Lifecycle Data"
+msgstr ""
+
+#. leap/lifecycle-data-sle-module-hpc/summary
+msgid "SLE HPC Module Lifecycle Data"
+msgstr ""
+
+#. leap/lifecycle-data-sle-module-server-applications/summary
+msgid "SLE Server Applications Module Lifecycle Data"
 msgstr ""
 
 #. leap/lifelines/summary
@@ -3663,19 +3941,6 @@ msgstr "lightdm 向け翻訳パッケージ"
 msgid "Provides translations for the \"lightdm\" package."
 msgstr "lightdm パッケージ向けの翻訳データです。"
 
-#. leap/lightdm/lightdm-qt-devel/summary
-#, fuzzy
-msgid "Development Files for liblightdm-qt-3-0"
-msgstr "libalkimia 向け開発用ファイル"
-
-#. leap/lightdm/lightdm-qt-devel/description
-#, fuzzy
-msgid ""
-"This package contains development files needed for developing Qt4-based "
-"LightDM clients."
-msgstr ""
-"このパッケージには libqimageblitz 向けの開発用ファイルが含まれています。"
-
 #. leap/lightdm/lightdm-qt5-devel/summary
 #. tumbleweed/lightdm/lightdm-qt5-devel/summary
 #, fuzzy
@@ -3745,6 +4010,26 @@ msgstr "lightsoff 向け翻訳パッケージ"
 #. tumbleweed/lightsoff/lightsoff-lang/description
 msgid "Provides translations for the \"lightsoff\" package."
 msgstr "lightsoff パッケージ向けの翻訳データです。"
+
+#. leap/lightstep-tracer-cpp/lightstep-tracer-cpp-devel/summary
+#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-devel/summary
+#, fuzzy
+msgid "Development files for the LightStep C++ library"
+msgstr "unicap ライブラリ向け開発用ファイル"
+
+#. leap/lightstep-tracer-cpp/lightstep-tracer-cpp-devel/description
+#. leap/lightstep-tracer-cpp/lightstep-tracer-cpp-source/description
+#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-devel/description
+#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-source/description
+msgid ""
+"Development files for lightstep-tracer-cpp - C++ library for LightStep "
+"distributed tracing."
+msgstr ""
+
+#. leap/lightstep-tracer-cpp/lightstep-tracer-cpp-source/summary
+#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-source/summary
+msgid "Source code of the LightStep C++ library"
+msgstr ""
 
 #. leap/lighttpd/summary
 #. tumbleweed/lighttpd/summary
@@ -3851,20 +4136,6 @@ msgid ""
 "* a dynamic page is usually fragmented and the fragments have    different "
 "livetimes \n"
 "* the different fragements can be cached independently"
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_geoip/summary
-#. tumbleweed/lighttpd/lighttpd-mod_geoip/summary
-msgid "GeoIP legacy database support for Lighttp"
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_geoip/description
-#. tumbleweed/lighttpd/lighttpd-mod_geoip/description
-msgid ""
-"This module supports fast ip/location lookups using the legacy MaxMind "
-"GeoIP / GeoCity databases. The databases were discontinued 2 January 2019 "
-"and this module is deprecated. See lighttpd-mod_maxminddb which supports "
-"MaxMind GeoIP2."
 msgstr ""
 
 #. leap/lighttpd/lighttpd-mod_magnet/summary
@@ -4053,34 +4324,6 @@ msgid ""
 "tests are passed."
 msgstr ""
 
-#. leap/lilo/summary
-#. tumbleweed/lilo/summary
-msgid "The Linux Loader, a Boot Menu"
-msgstr "Linux ローダー (起動メニュー)"
-
-#. leap/lilo/description
-#. tumbleweed/lilo/description
-msgid ""
-"LILO boots Linux from your hard drive. It can also boot other operating "
-"systems, such as MS-DOS and OS/2, and can even boot DOS from the second hard "
-"drive. The configuration file is /etc/lilo.conf.\n"
-"\n"
-"The PowerPC variant can be used on new PowerMacs and CHRP machines.\n"
-"\n"
-"The ix86 variant comes with Memtest86, offering an image that can be booted "
-"to perform a memory test."
-msgstr ""
-"LILO はお使いのハードディスクから Linux が起動できるようにするためのもので"
-"す。 MS-DOS や OS/2 など、他のオペレーティングシステムを起動することもできる"
-"ほか、 2 番目のハードディスクから DOS を起動したりすることもできます。 設定"
-"ファイルは /etc/lilo.conf にあります。\n"
-"\n"
-"新しい PowerMac や CHRP マシンなど、 PowerPC のマシンでも動作するものがありま"
-"す。\n"
-"\n"
-"x86 版の LILO は memtest86 が同梱されています。これはメモリテストを起動するた"
-"めのイメージです。"
-
 #. leap/lilypond/summary
 #. tumbleweed/lilypond/summary
 msgid "A typesetting system for music notation"
@@ -4091,21 +4334,6 @@ msgstr ""
 msgid ""
 "LilyPond is an automated music engraving system. It formats music "
 "beautifully and automatically, and has a friendly syntax for its input files."
-msgstr ""
-
-#. leap/lilypond/lilypond-century-schoolbook-l-fonts/summary
-#. tumbleweed/lilypond/lilypond-century-schoolbook-l-fonts/summary
-msgid "Lilypond Century Schoolbook L fonts"
-msgstr ""
-
-#. leap/lilypond/lilypond-century-schoolbook-l-fonts/description
-#. tumbleweed/lilypond/lilypond-century-schoolbook-l-fonts/description
-msgid ""
-"LilyPond is an automated music engraving system. It formats music "
-"beautifully and automatically, and has a friendly syntax for its input "
-"files.\n"
-"\n"
-"These are the Century Schoolbook L fonts included in the package."
 msgstr ""
 
 #. leap/lilypond-doc/summary
@@ -4219,9 +4447,7 @@ msgstr ""
 msgid ""
 "LilyPond is an automated music engraving system. It formats music "
 "beautifully and automatically, and has a friendly syntax for its input "
-"files.\n"
-"\n"
-"These are the emmentaler fonts included in the package."
+"files. These are the lilypond emmentaler fonts."
 msgstr ""
 
 #. leap/lilypond/lilypond-fonts-common/summary
@@ -4234,9 +4460,20 @@ msgstr ""
 msgid ""
 "LilyPond is an automated music engraving system. It formats music "
 "beautifully and automatically, and has a friendly syntax for its input "
-"files.\n"
-"\n"
-"This contains the directory common to all lilypond fonts."
+"files. This contains the directory common to all lilypond fonts."
+msgstr ""
+
+#. leap/lilypond/lilypond-texgy-fonts/summary
+#. tumbleweed/lilypond/lilypond-texgy-fonts/summary
+msgid "Lilypond Century Schoolbook L fonts"
+msgstr ""
+
+#. leap/lilypond/lilypond-texgy-fonts/description
+#. tumbleweed/lilypond/lilypond-texgy-fonts/description
+msgid ""
+"LilyPond is an automated music engraving system. It formats music "
+"beautifully and automatically, and has a friendly syntax for its input "
+"files. These are the lilypond Texgy fonts."
 msgstr ""
 
 #. leap/limesuite/summary
@@ -4348,31 +4585,6 @@ msgid ""
 "Grammar."
 msgstr ""
 
-#. leap/linkchecker/summary
-msgid "Check Websites and HTML Documents for Broken Links"
-msgstr ""
-"繋がっていないリンクを検出するための Web サイトや HTML ドキュメントのチェッ"
-"カー"
-
-#. leap/linkchecker/description
-msgid ""
-"LinkChecker checks websites and HTML documents for broken links. Features "
-"are: \n"
-"* recursive checking \n"
-"* multithreaded \n"
-"* output in colored or normal text, HTML, SQL, CSV, XML or a sitemap    "
-"graph in different formats \n"
-"* HTTP/1.1, HTTPS, FTP, mailto:, news:, nntp:, Gopher, Telnet and    local "
-"file links support \n"
-"* restriction of link checking with regular expression filters for    URLs \n"
-"* proxy support \n"
-"* username/password authorization for HTTP and FTP \n"
-"* robots.txt exclusion protocol support \n"
-"* i18n support \n"
-"* a command line interface \n"
-"* a (Fast)CGI web interface (requires HTTP server)"
-msgstr ""
-
 #. leap/linkloop/summary
 #. tumbleweed/linkloop/summary
 msgid "Test network connectivity at link layer (layer-2)"
@@ -4460,9 +4672,10 @@ msgid "Graphical wireless scanning for Linux"
 msgstr ""
 
 #. leap/linssid/description
+#. tumbleweed/linssid/description
 msgid ""
-"LinSSID is graphically and functionally similar to Inssider (Microsoft™ "
-"Windows®). It is written in C++ using Linux wireless tools and Qt5."
+"LinSSID is graphically and functionally similar to Inssider (from Microsoft "
+"Windows). It is written in C++ using Linux wireless tools and Qt5."
 msgstr ""
 
 #. leap/linux-atm/summary
@@ -4565,26 +4778,17 @@ msgstr ""
 "べての子プログラムに継承されますが、現在のシェルやプロセスよりも上の (親の) "
 "プロセスには影響を与えません。"
 
-#. leap/linux_pcnfsd2/summary
-msgid "RPC Server That Supports ONC Clients"
-msgstr "ONC クライアント対応の RPC サーバ"
-
-#. leap/linux_pcnfsd2/description
-#, fuzzy
-#| msgid ""
-#| "RPC server that supports ONC clients on PC (DOS, OS/2, Macintosh, and "
-#| "other) systems."
-msgid ""
-"RPC server that supports ONC clients on PC (DOS, OS/2, Macintosh, and other) "
-"systems.\n"
-"\n"
-"\n"
-"\n"
-"Authors:\n"
-"--------     Alexander Bezprozvanny <bez@parsy.spb.su>"
+#. leap/linux_logo/summary
+#. tumbleweed/linux_logo/summary
+msgid "Prints the linux logo on the text console"
 msgstr ""
-"PC (DOS, OS/2, Macintosh ほか) システム上の ONC クライアントに 対応する RPC "
-"サーバです。"
+
+#. leap/linux_logo/description
+#. tumbleweed/linux_logo/description
+msgid ""
+"The Linux logo on the text console, with colors and system information. "
+"Contains a number of built-in logos."
+msgstr ""
 
 #. leap/linuxconsoletools/summary
 #. tumbleweed/linuxconsoletools/summary
@@ -4774,13 +4978,11 @@ msgstr ""
 "ト内のウイジェットに対して、 X 資源の一覧表示を行ないます。"
 
 #. leap/lit/summary
-#. tumbleweed/lit/python2-lit/summary
 #. tumbleweed/lit/python3-lit/summary
 msgid "A portable tool for executing test suites"
 msgstr ""
 
 #. leap/lit/description
-#. tumbleweed/lit/python2-lit/description
 #. tumbleweed/lit/python3-lit/description
 msgid ""
 "Lit is a portable tool for executing LLVM and Clang style test suites, "
@@ -5019,23 +5221,11 @@ msgid ""
 "isohybrid, such as openSUSE installation DVD and other Linux distributions."
 msgstr ""
 
+#. leap/live555/summary
 #. leap/live555/live555-devel/summary
 #. tumbleweed/live555/summary
 #. tumbleweed/live555/live555-devel/summary
 msgid "LIVE555 Streaming Media"
-msgstr ""
-
-#. leap/live555/live555-devel/description
-#. tumbleweed/live555/libBasicUsageEnvironment1/description
-#. tumbleweed/live555/libUsageEnvironment3/description
-#. tumbleweed/live555/libgroupsock8/description
-#. tumbleweed/live555/libliveMedia66/description
-#. tumbleweed/live555/description
-#. tumbleweed/live555/live555-devel/description
-msgid ""
-"This code forms a set of C++ libraries for multimedia streaming, using open "
-"standard protocols (RTP/RTCP, RTSP, SIP). These libraries can be used to "
-"build streaming applications"
 msgstr ""
 
 #. leap/livedtd/summary
@@ -5063,6 +5253,7 @@ msgstr ""
 "\" リンクが含まれます。"
 
 #. leap/livestreamer/summary
+#. tumbleweed/streamlink/summary
 msgid "Program to pipe streams from services into a video player"
 msgstr ""
 
@@ -5138,10 +5329,13 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/lld/summary
+#. leap/llvm11/lld11/summary
 #. leap/llvm5/lld5/summary
 #. leap/llvm7/lld7/summary
+#. leap/llvm9/lld9/summary
 #. tumbleweed/llvm/lld/summary
-#. tumbleweed/llvm6/lld6/summary
+#. tumbleweed/llvm10/lld10/summary
+#. tumbleweed/llvm11/lld11/summary
 #. tumbleweed/llvm7/lld7/summary
 #. tumbleweed/llvm8/lld8/summary
 #. tumbleweed/llvm9/lld9/summary
@@ -5151,10 +5345,13 @@ msgid "Linker for Clang/LLVM"
 msgstr "LLVM 向けライブラリ"
 
 #. leap/llvm/lld/description
+#. leap/llvm11/lld11/description
 #. leap/llvm5/lld5/description
 #. leap/llvm7/lld7/description
+#. leap/llvm9/lld9/description
 #. tumbleweed/llvm/lld/description
-#. tumbleweed/llvm6/lld6/description
+#. tumbleweed/llvm10/lld10/description
+#. tumbleweed/llvm11/lld11/description
 #. tumbleweed/llvm7/lld7/description
 #. tumbleweed/llvm8/lld8/description
 #. tumbleweed/llvm9/lld9/description
@@ -5165,10 +5362,13 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/lldb/summary
+#. leap/llvm11/lldb11/summary
 #. leap/llvm5/lldb5/summary
 #. leap/llvm7/lldb7/summary
+#. leap/llvm9/lldb9/summary
 #. tumbleweed/llvm/lldb/summary
-#. tumbleweed/llvm6/lldb6/summary
+#. tumbleweed/llvm10/lldb10/summary
+#. tumbleweed/llvm11/lldb11/summary
 #. tumbleweed/llvm7/lldb7/summary
 #. tumbleweed/llvm8/lldb8/summary
 #. tumbleweed/llvm9/lldb9/summary
@@ -5189,10 +5389,13 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/lldb-devel/summary
+#. leap/llvm11/lldb11-devel/summary
 #. leap/llvm5/lldb5-devel/summary
 #. leap/llvm7/lldb7-devel/summary
+#. leap/llvm9/lldb9-devel/summary
 #. tumbleweed/llvm/lldb-devel/summary
-#. tumbleweed/llvm6/lldb6-devel/summary
+#. tumbleweed/llvm10/lldb10-devel/summary
+#. tumbleweed/llvm11/lldb11-devel/summary
 #. tumbleweed/llvm7/lldb7-devel/summary
 #. tumbleweed/llvm8/lldb8-devel/summary
 #. tumbleweed/llvm9/lldb9-devel/summary
@@ -5209,9 +5412,12 @@ msgid ""
 "LLDB version should depend on this."
 msgstr ""
 
+#. leap/llvm11/lldb11/description
 #. leap/llvm5/lldb5/description
 #. leap/llvm7/lldb7/description
-#. tumbleweed/llvm6/lldb6/description
+#. leap/llvm9/lldb9/description
+#. tumbleweed/llvm10/lldb10/description
+#. tumbleweed/llvm11/lldb11/description
 #. tumbleweed/llvm7/lldb7/description
 #. tumbleweed/llvm8/lldb8/description
 #. tumbleweed/llvm9/lldb9/description
@@ -5222,9 +5428,12 @@ msgid ""
 "disassembler."
 msgstr ""
 
+#. leap/llvm11/lldb11-devel/description
 #. leap/llvm5/lldb5-devel/description
 #. leap/llvm7/lldb7-devel/description
-#. tumbleweed/llvm6/lldb6-devel/description
+#. leap/llvm9/lldb9-devel/description
+#. tumbleweed/llvm10/lldb10-devel/description
+#. tumbleweed/llvm11/lldb11-devel/description
 #. tumbleweed/llvm7/lldb7-devel/description
 #. tumbleweed/llvm8/lldb8-devel/description
 #. tumbleweed/llvm9/lldb9-devel/description
@@ -5255,7 +5464,6 @@ msgid ""
 msgstr ""
 
 #. leap/lldpd/lldpd-devel/summary
-#. tumbleweed/lldpd/lldpd-devel/summary
 msgid "Implementation of IEEE 802.1ab - Tools and header files for developers"
 msgstr ""
 
@@ -5288,10 +5496,13 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/summary
+#. leap/llvm11/summary
 #. leap/llvm5/summary
 #. leap/llvm7/summary
+#. leap/llvm9/summary
 #. tumbleweed/llvm/summary
-#. tumbleweed/llvm6/summary
+#. tumbleweed/llvm10/summary
+#. tumbleweed/llvm11/summary
 #. tumbleweed/llvm7/summary
 #. tumbleweed/llvm8/summary
 #. tumbleweed/llvm9/summary
@@ -5315,13 +5526,19 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/llvm-LTO-devel/summary
+#. leap/llvm11/llvm11-LTO-devel/summary
+#. leap/llvm11/llvm11-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel/summary
 #. leap/llvm7/llvm7-LTO-devel-32bit/summary
 #. leap/llvm7/llvm7-LTO-devel/summary
+#. leap/llvm9/llvm9-LTO-devel-32bit/summary
+#. leap/llvm9/llvm9-LTO-devel/summary
 #. tumbleweed/llvm/llvm-LTO-devel/summary
-#. tumbleweed/llvm6/llvm6-LTO-devel-32bit/summary
-#. tumbleweed/llvm6/llvm6-LTO-devel/summary
+#. tumbleweed/llvm10/llvm10-LTO-devel/summary
+#. tumbleweed/llvm10/llvm10-LTO-devel-32bit/summary
+#. tumbleweed/llvm11/llvm11-LTO-devel/summary
+#. tumbleweed/llvm11/llvm11-LTO-devel-32bit/summary
 #. tumbleweed/llvm7/llvm7-LTO-devel-32bit/summary
 #. tumbleweed/llvm7/llvm7-LTO-devel/summary
 #. tumbleweed/llvm8/llvm8-LTO-devel-32bit/summary
@@ -5342,13 +5559,19 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/llvm-devel/summary
+#. leap/llvm11/llvm11-devel/summary
+#. leap/llvm11/llvm11-devel-32bit/summary
 #. leap/llvm5/llvm5-devel-32bit/summary
 #. leap/llvm5/llvm5-devel/summary
 #. leap/llvm7/llvm7-devel-32bit/summary
 #. leap/llvm7/llvm7-devel/summary
+#. leap/llvm9/llvm9-devel-32bit/summary
+#. leap/llvm9/llvm9-devel/summary
 #. tumbleweed/llvm/llvm-devel/summary
-#. tumbleweed/llvm6/llvm6-devel-32bit/summary
-#. tumbleweed/llvm6/llvm6-devel/summary
+#. tumbleweed/llvm10/llvm10-devel/summary
+#. tumbleweed/llvm10/llvm10-devel-32bit/summary
+#. tumbleweed/llvm11/llvm11-devel/summary
+#. tumbleweed/llvm11/llvm11-devel-32bit/summary
 #. tumbleweed/llvm7/llvm7-devel-32bit/summary
 #. tumbleweed/llvm7/llvm7-devel/summary
 #. tumbleweed/llvm8/llvm8-devel-32bit/summary
@@ -5373,9 +5596,6 @@ msgstr ""
 #. leap/llvm/llvm-emacs-plugins/summary
 #. leap/llvm5/llvm5-emacs-plugins/summary
 #. leap/llvm7/llvm7-emacs-plugins/summary
-#. tumbleweed/llvm6/llvm6-emacs-plugins/summary
-#. tumbleweed/llvm7/llvm7-emacs-plugins/summary
-#. tumbleweed/llvm8/llvm8-emacs-plugins/summary
 #, fuzzy
 msgid "Emacs plugins for LLVM"
 msgstr "TagLib 向け拡張プラグイン"
@@ -5390,10 +5610,13 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/llvm-gold/summary
+#. leap/llvm11/llvm11-gold/summary
 #. leap/llvm5/llvm5-gold/summary
 #. leap/llvm7/llvm7-gold/summary
+#. leap/llvm9/llvm9-gold/summary
 #. tumbleweed/llvm/llvm-gold/summary
-#. tumbleweed/llvm6/llvm6-gold/summary
+#. tumbleweed/llvm10/llvm10-gold/summary
+#. tumbleweed/llvm11/llvm11-gold/summary
 #. tumbleweed/llvm7/llvm7-gold/summary
 #. tumbleweed/llvm8/llvm8-gold/summary
 #. tumbleweed/llvm9/llvm9-gold/summary
@@ -5412,10 +5635,13 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/llvm-vim-plugins/summary
+#. leap/llvm11/llvm11-vim-plugins/summary
 #. leap/llvm5/llvm5-vim-plugins/summary
 #. leap/llvm7/llvm7-vim-plugins/summary
+#. leap/llvm9/llvm9-vim-plugins/summary
 #. tumbleweed/llvm/llvm-vim-plugins/summary
-#. tumbleweed/llvm6/llvm6-vim-plugins/summary
+#. tumbleweed/llvm10/llvm10-vim-plugins/summary
+#. tumbleweed/llvm11/llvm11-vim-plugins/summary
 #. tumbleweed/llvm7/llvm7-vim-plugins/summary
 #. tumbleweed/llvm8/llvm8-vim-plugins/summary
 #. tumbleweed/llvm9/llvm9-vim-plugins/summary
@@ -5433,9 +5659,12 @@ msgid ""
 "specific LLVM version should depend on this."
 msgstr ""
 
+#. leap/llvm11/description
 #. leap/llvm5/description
 #. leap/llvm7/description
-#. tumbleweed/llvm6/description
+#. leap/llvm9/description
+#. tumbleweed/llvm10/description
+#. tumbleweed/llvm11/description
 #. tumbleweed/llvm7/description
 #. tumbleweed/llvm8/description
 #. tumbleweed/llvm9/description
@@ -5448,12 +5677,18 @@ msgid ""
 "well as libraries with equivalent functionality."
 msgstr ""
 
+#. leap/llvm11/llvm11-LTO-devel/description
+#. leap/llvm11/llvm11-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel/description
 #. leap/llvm7/llvm7-LTO-devel-32bit/description
 #. leap/llvm7/llvm7-LTO-devel/description
-#. tumbleweed/llvm6/llvm6-LTO-devel-32bit/description
-#. tumbleweed/llvm6/llvm6-LTO-devel/description
+#. leap/llvm9/llvm9-LTO-devel-32bit/description
+#. leap/llvm9/llvm9-LTO-devel/description
+#. tumbleweed/llvm10/llvm10-LTO-devel/description
+#. tumbleweed/llvm10/llvm10-LTO-devel-32bit/description
+#. tumbleweed/llvm11/llvm11-LTO-devel/description
+#. tumbleweed/llvm11/llvm11-LTO-devel-32bit/description
 #. tumbleweed/llvm7/llvm7-LTO-devel-32bit/description
 #. tumbleweed/llvm7/llvm7-LTO-devel/description
 #. tumbleweed/llvm8/llvm8-LTO-devel-32bit/description
@@ -5467,12 +5702,18 @@ msgstr ""
 "このパッケージには、 K デスクトップ環境ワークスペース向けの基本パッケージが含"
 "まれています。開発用ファイルです。"
 
+#. leap/llvm11/llvm11-devel/description
+#. leap/llvm11/llvm11-devel-32bit/description
 #. leap/llvm5/llvm5-devel-32bit/description
 #. leap/llvm5/llvm5-devel/description
 #. leap/llvm7/llvm7-devel-32bit/description
 #. leap/llvm7/llvm7-devel/description
-#. tumbleweed/llvm6/llvm6-devel-32bit/description
-#. tumbleweed/llvm6/llvm6-devel/description
+#. leap/llvm9/llvm9-devel-32bit/description
+#. leap/llvm9/llvm9-devel/description
+#. tumbleweed/llvm10/llvm10-devel/description
+#. tumbleweed/llvm10/llvm10-devel-32bit/description
+#. tumbleweed/llvm11/llvm11-devel/description
+#. tumbleweed/llvm11/llvm11-devel-32bit/description
 #. tumbleweed/llvm7/llvm7-devel-32bit/description
 #. tumbleweed/llvm7/llvm7-devel/description
 #. tumbleweed/llvm8/llvm8-devel-32bit/description
@@ -5487,18 +5728,32 @@ msgstr ""
 "このパッケージには、 FLAC ライブラリを利用するアプリケーションを開発するのに"
 "必要な、各種ファイルが含まれています。"
 
-#. leap/llvm5/llvm5-emacs-plugins/description
-#. leap/llvm7/llvm7-emacs-plugins/description
-#. tumbleweed/llvm6/llvm6-emacs-plugins/description
-#. tumbleweed/llvm7/llvm7-emacs-plugins/description
-#. tumbleweed/llvm8/llvm8-emacs-plugins/description
+#. leap/llvm11/llvm11-doc/summary
+#. leap/llvm9/llvm9-doc/summary
+#. tumbleweed/llvm10/llvm10-doc/summary
+#. tumbleweed/llvm11/llvm11-doc/summary
+#. tumbleweed/llvm9/llvm9-doc/summary
 #, fuzzy
-msgid "This package contains Emacs plugins for LLVM like syntax highlighting."
-msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+#| msgid "Documentation for log4c"
+msgid "Documentation for LLVM"
+msgstr "log4c 向けドキュメンテーション"
 
+#. leap/llvm11/llvm11-doc/description
+#. leap/llvm9/llvm9-doc/description
+#. tumbleweed/llvm10/llvm10-doc/description
+#. tumbleweed/llvm11/llvm11-doc/description
+#. tumbleweed/llvm9/llvm9-doc/description
+#, fuzzy
+#| msgid "This package contains additional documentation of the GNet library."
+msgid "This package contains documentation for the LLVM infrastructure."
+msgstr "このパッケージには gnet ライブラリの追加文書が含まれています。"
+
+#. leap/llvm11/llvm11-gold/description
 #. leap/llvm5/llvm5-gold/description
 #. leap/llvm7/llvm7-gold/description
-#. tumbleweed/llvm6/llvm6-gold/description
+#. leap/llvm9/llvm9-gold/description
+#. tumbleweed/llvm10/llvm10-gold/description
+#. tumbleweed/llvm11/llvm11-gold/description
 #. tumbleweed/llvm7/llvm7-gold/description
 #. tumbleweed/llvm8/llvm8-gold/description
 #. tumbleweed/llvm9/llvm9-gold/description
@@ -5507,18 +5762,25 @@ msgstr "このパッケージには libao 向けのメイン出力プラグイ�
 msgid "This package contains the Gold linker plugin for LLVM."
 msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
 
+#. leap/llvm11/llvm11-opt-viewer/summary
 #. leap/llvm5/llvm5-opt-viewer/summary
 #. leap/llvm7/llvm7-opt-viewer/summary
-#. tumbleweed/llvm6/llvm6-opt-viewer/summary
+#. leap/llvm9/llvm9-opt-viewer/summary
+#. tumbleweed/llvm/llvm-opt-viewer/summary
+#. tumbleweed/llvm10/llvm10-opt-viewer/summary
+#. tumbleweed/llvm11/llvm11-opt-viewer/summary
 #. tumbleweed/llvm7/llvm7-opt-viewer/summary
 #. tumbleweed/llvm8/llvm8-opt-viewer/summary
 #. tumbleweed/llvm9/llvm9-opt-viewer/summary
 msgid "Tools for visualising the LLVM optimization records"
 msgstr ""
 
+#. leap/llvm11/llvm11-opt-viewer/description
 #. leap/llvm5/llvm5-opt-viewer/description
 #. leap/llvm7/llvm7-opt-viewer/description
-#. tumbleweed/llvm6/llvm6-opt-viewer/description
+#. leap/llvm9/llvm9-opt-viewer/description
+#. tumbleweed/llvm10/llvm10-opt-viewer/description
+#. tumbleweed/llvm11/llvm11-opt-viewer/description
 #. tumbleweed/llvm7/llvm7-opt-viewer/description
 #. tumbleweed/llvm8/llvm8-opt-viewer/description
 #. tumbleweed/llvm9/llvm9-opt-viewer/description
@@ -5527,36 +5789,39 @@ msgid ""
 "fsave-optimization-record. Used for compiler-assisted performance analysis."
 msgstr ""
 
-#. leap/llvm5/llvm5-vim-plugins/description
-#. leap/llvm7/llvm7-vim-plugins/description
-#. tumbleweed/llvm6/llvm6-vim-plugins/description
-#. tumbleweed/llvm7/llvm7-vim-plugins/description
-#. tumbleweed/llvm8/llvm8-vim-plugins/description
-#. tumbleweed/llvm9/llvm9-vim-plugins/description
-#, fuzzy
-msgid "This package contains vim plugins for LLVM like syntax highlighting."
-msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+#. leap/llvm11/llvm11-polly/summary
+#. leap/llvm9/llvm9-polly/summary
+#. tumbleweed/llvm/llvm-polly/summary
+#. tumbleweed/llvm10/llvm10-polly/summary
+#. tumbleweed/llvm11/llvm11-polly/summary
+#. tumbleweed/llvm7/llvm7-polly/summary
+#. tumbleweed/llvm8/llvm8-polly/summary
+#. tumbleweed/llvm9/llvm9-polly/summary
+msgid "LLVM Framework for High-Level Loop and Data-Locality Optimizations"
+msgstr ""
 
-#. leap/llvm7/llvm7-polly/summary
-#. tumbleweed/llvm6/llvm6-polly/summary
+#. leap/llvm11/llvm11-polly/description
+#. leap/llvm9/llvm9-polly/description
+#. tumbleweed/llvm10/llvm10-polly/description
+#. tumbleweed/llvm11/llvm11-polly/description
+#. tumbleweed/llvm7/llvm7-polly/description
+#. tumbleweed/llvm8/llvm8-polly/description
+#. tumbleweed/llvm9/llvm9-polly/description
 msgid ""
 "Polly is a high-level loop and data-locality optimizer and optimization "
-"infrastructure for LLVM."
+"infrastructure for LLVM. It uses an abstract mathematical representation "
+"based on integer polyhedra to analyze and optimize the memory access pattern "
+"of a program. Polly can currently perform classical loop transformations, "
+"especially tiling and loop fusion to improve data-locality. It can also "
+"exploit OpenMP level parallelism and expose SIMDization opportunities."
 msgstr ""
 
-#. leap/llvm7/llvm7-polly/description
-#. tumbleweed/llvm6/llvm6-polly/description
-msgid ""
-"Polly uses an abstract mathematical representation based on integer "
-"polyhedra o analyze and optimize the memory access pattern of a program. We "
-"currently perform classical loop transformations, especially tiling and loop "
-"fusion to improve data-locality. Polly can also exploit OpenMP level "
-"parallelism, expose SIMDization opportunities. Work has also be done in the "
-"area of automatic GPU code generation."
-msgstr ""
-
+#. leap/llvm11/llvm11-polly-devel/summary
 #. leap/llvm7/llvm7-polly-devel/summary
-#. tumbleweed/llvm6/llvm6-polly-devel/summary
+#. leap/llvm9/llvm9-polly-devel/summary
+#. tumbleweed/llvm/llvm-polly-devel/summary
+#. tumbleweed/llvm10/llvm10-polly-devel/summary
+#. tumbleweed/llvm11/llvm11-polly-devel/summary
 #. tumbleweed/llvm7/llvm7-polly-devel/summary
 #. tumbleweed/llvm8/llvm8-polly-devel/summary
 #. tumbleweed/llvm9/llvm9-polly-devel/summary
@@ -5565,14 +5830,52 @@ msgstr ""
 msgid "Development files for Polly"
 msgstr "lua 向け開発用ファイル"
 
+#. leap/llvm11/llvm11-polly-devel/description
 #. leap/llvm7/llvm7-polly-devel/description
-#. tumbleweed/llvm6/llvm6-polly-devel/description
+#. leap/llvm9/llvm9-polly-devel/description
+#. tumbleweed/llvm10/llvm10-polly-devel/description
+#. tumbleweed/llvm11/llvm11-polly-devel/description
 #. tumbleweed/llvm7/llvm7-polly-devel/description
 #. tumbleweed/llvm8/llvm8-polly-devel/description
 #. tumbleweed/llvm9/llvm9-polly-devel/description
 #, fuzzy
 msgid "This package contains the development files for Polly."
 msgstr "このパッケージには、 libnova 向けの開発用ファイルが含まれています。"
+
+#. leap/llvm11/llvm11-vim-plugins/description
+#. leap/llvm5/llvm5-vim-plugins/description
+#. leap/llvm7/llvm7-vim-plugins/description
+#. leap/llvm9/llvm9-vim-plugins/description
+#. tumbleweed/llvm10/llvm10-vim-plugins/description
+#. tumbleweed/llvm11/llvm11-vim-plugins/description
+#. tumbleweed/llvm7/llvm7-vim-plugins/description
+#. tumbleweed/llvm8/llvm8-vim-plugins/description
+#. tumbleweed/llvm9/llvm9-vim-plugins/description
+#, fuzzy
+msgid "This package contains vim plugins for LLVM like syntax highlighting."
+msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+
+#. leap/llvm5/llvm5-emacs-plugins/description
+#. leap/llvm7/llvm7-emacs-plugins/description
+#, fuzzy
+msgid "This package contains Emacs plugins for LLVM like syntax highlighting."
+msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+
+#. leap/llvm7/llvm7-polly/summary
+msgid ""
+"Polly is a high-level loop and data-locality optimizer and optimization "
+"infrastructure for LLVM."
+msgstr ""
+
+#. leap/llvm7/llvm7-polly/description
+msgid ""
+"Polly uses an abstract mathematical representation based on integer "
+"polyhedra o analyze and optimize the memory access pattern of a program. We "
+"currently perform classical loop transformations, especially tiling and loop "
+"fusion to improve data-locality. Polly can also exploit OpenMP level "
+"parallelism, expose SIMDization opportunities. Work has also be done in the "
+"area of automatic GPU code generation."
+msgstr ""
 
 #. leap/lmarbles/summary
 #. tumbleweed/lmarbles/summary
@@ -5650,29 +5953,22 @@ msgstr ""
 "このパッケージには、 liblmdb ライブラリを使用するプログラムをコンパイルするの"
 "に必要な、各種ファイルが含まれています。"
 
-#. leap/lmms/summary
-#. tumbleweed/lmms/summary
-msgid "Linux MultiMedia Studio"
+#. leap/lnav/summary
+#. tumbleweed/lnav/summary
+msgid "Logfile Navigator"
 msgstr ""
 
-#. leap/lmms/description
-#. tumbleweed/lmms/description
+#. leap/lnav/description
+#. tumbleweed/lnav/description
 msgid ""
-"LMMS is a free cross-platform music studio which allows you to produce music "
-"with your computer. This includes the creation of melodies and beats, the "
-"synthesis and mixing of sounds, and arranging of samples."
-msgstr ""
-
-#. leap/lmms/lmms-devel/summary
-#. tumbleweed/lmms/lmms-devel/summary
-msgid "Headers to create LMMS plugins"
-msgstr ""
-
-#. leap/lmms/lmms-devel/description
-#. tumbleweed/lmms/lmms-devel/description
-msgid ""
-"Headers that provide access to the LMMS features. Install it if you plan to "
-"create a LMMS plugin."
+"The Logfile Navigator, lnav for short, is a curses-based tool for viewing "
+"and analyzing log files. The value added by lnav over text viewers or "
+"editors is that it takes advantage of any semantic information that can be "
+"gleaned from the log file, such as timestamps and log levels. Using this "
+"extra semantic information, lnav can do things like interleaving messages "
+"from different files, generate histograms of messages over time, and provide "
+"hotkeys for navigating through the file. These features are meant to allow "
+"the user to quickly and efficiently focus on problems."
 msgstr ""
 
 #. leap/lndir/summary
@@ -5752,14 +6048,16 @@ msgid ""
 msgstr ""
 
 #. leap/log4j/summary
-#. leap/log4j-mini/summary
-#. tumbleweed/log4j12/summary
-#. tumbleweed/log4j12-mini/summary
-msgid "Java logging tool"
+#. tumbleweed/log4j/summary
+#, fuzzy
+#| msgid "Java logging tool"
+msgid "Java logging package"
 msgstr "Java ログツール"
 
 #. leap/log4j/description
 #. leap/log4j-mini/description
+#. leap/log4j12/description
+#. leap/log4j12-mini/description
 #. tumbleweed/log4j/description
 #. tumbleweed/log4j12/description
 #. tumbleweed/log4j12-mini/description
@@ -5771,25 +6069,69 @@ msgstr ""
 "す。"
 
 #. leap/log4j/log4j-javadoc/summary
-#. tumbleweed/log4j12/log4j12-javadoc/summary
+#. tumbleweed/log4j/log4j-javadoc/summary
 #, fuzzy
-msgid "Java logging tool (Documentation)"
-msgstr "ドキュメンテーション向けカタログシステム"
+#| msgid "Documentation for log4j."
+msgid "API documentation for log4j"
+msgstr "7.0 文書"
 
 #. leap/log4j/log4j-javadoc/description
-#. tumbleweed/log4j12/log4j12-javadoc/description
-msgid "Documentation javadoc for Java logging tool log4j."
+#. tumbleweed/log4j/log4j-javadoc/description
+#, fuzzy
+#| msgid "Documentation for log4j."
+msgid "API documentation for log4j."
+msgstr "7.0 文書"
+
+#. leap/log4j/log4j-jcl/summary
+#. tumbleweed/log4j/log4j-jcl/summary
+msgid "Apache Log4j Commons Logging Bridge"
+msgstr ""
+
+#. leap/log4j/log4j-jcl/description
+#. tumbleweed/log4j/log4j-jcl/description
+msgid "Apache Log4j Commons Logging Bridge."
 msgstr ""
 
 #. leap/log4j/log4j-manual/summary
+#. leap/log4j12/log4j12-manual/summary
 #. tumbleweed/log4j12/log4j12-manual/summary
 #, fuzzy
 msgid "Java logging tool (Manual)"
 msgstr "Java ログツール"
 
 #. leap/log4j/log4j-manual/description
+#. leap/log4j12/log4j12-manual/description
 #. tumbleweed/log4j12/log4j12-manual/description
 msgid "Documentation manual for Java logging tool log4j."
+msgstr ""
+
+#. leap/log4j-mini/summary
+#. leap/log4j12/summary
+#. leap/log4j12-mini/summary
+#. tumbleweed/log4j12/summary
+#. tumbleweed/log4j12-mini/summary
+msgid "Java logging tool"
+msgstr "Java ログツール"
+
+#. leap/log4j/log4j-slf4j/summary
+#. tumbleweed/log4j/log4j-slf4j/summary
+msgid "Binding between LOG4J 2 API and SLF4J"
+msgstr ""
+
+#. leap/log4j/log4j-slf4j/description
+#. tumbleweed/log4j/log4j-slf4j/description
+msgid "Binding between LOG4J 2 API and SLF4J."
+msgstr ""
+
+#. leap/log4j12/log4j12-javadoc/summary
+#. tumbleweed/log4j12/log4j12-javadoc/summary
+#, fuzzy
+msgid "Java logging tool (Documentation)"
+msgstr "ドキュメンテーション向けカタログシステム"
+
+#. leap/log4j12/log4j12-javadoc/description
+#. tumbleweed/log4j12/log4j12-javadoc/description
+msgid "Documentation javadoc for Java logging tool log4j."
 msgstr ""
 
 #. leap/log4net/summary
@@ -5806,6 +6148,59 @@ msgid ""
 msgstr ""
 "log4net はプログラマに対して、様々な出力形式によるログ記録を支援するツールで"
 "す。log4net は log4j フレームワークの .NET ランタイム移植版です。"
+
+#. leap/logback/summary
+#. tumbleweed/logback/summary
+#, fuzzy
+msgid "A Java logging library"
+msgstr "簡単に使えるログ記録ライブラリ"
+
+#. leap/logback/description
+#. tumbleweed/logback/description
+msgid ""
+"Logback is intended as a successor to the popular log4j project. At present "
+"time, logback is divided into three modules, logback-core, logback-classic "
+"and logback-access.\n"
+"\n"
+"The logback-core module lays the groundwork for the other two modules. The "
+"logback-classic module can be assimilated to a significantly improved "
+"version of log4j. Moreover, logback-classic natively implements the SLF4J "
+"API so that you can readily switch back and forth between logback and other "
+"logging frameworks such as log4j or java.util.logging (JUL).\n"
+"\n"
+"The logback-access module integrates with Servlet containers, such as Tomcat "
+"and Jetty, to provide HTTP-access log functionality. Note that you could "
+"easily build your own module on top of logback-core."
+msgstr ""
+
+#. leap/logback/logback-access/summary
+#. tumbleweed/logback/logback-access/summary
+msgid "Logback-access module for Servlet integration"
+msgstr ""
+
+#. leap/logback/logback-access/description
+#. tumbleweed/logback/logback-access/description
+msgid ""
+"The logback-access module integrates with Servlet containers, such as Tomcat "
+"and Jetty, to provide HTTP-access log functionality. Note that you could "
+"easily build your own module on top of logback-core."
+msgstr ""
+
+#. leap/logback/logback-examples/summary
+#. tumbleweed/logback/logback-examples/summary
+msgid "Logback Examples Module"
+msgstr ""
+
+#. leap/logback/logback-examples/description
+#. tumbleweed/logback/logback-examples/description
+msgid "logback-examples module."
+msgstr ""
+
+#. leap/logback/logback-javadoc/summary
+#. tumbleweed/logback/logback-javadoc/summary
+#, fuzzy
+msgid "Javadoc for logback"
+msgstr "JSDL4J 向け Javadoc"
 
 #. leap/logdigest/summary
 #. tumbleweed/logdigest/summary
@@ -5954,6 +6349,18 @@ msgstr "lokalize 向け翻訳パッケージ"
 #. tumbleweed/lokalize/lokalize-lang/description
 msgid "Provides translations for the \"lokalize\" package."
 msgstr "lokalize パッケージ向けの翻訳データです。"
+
+#. leap/loki/summary
+#. tumbleweed/loki/summary
+msgid "Loki: like Prometheus, but for logs."
+msgstr ""
+
+#. leap/loki/description
+#. tumbleweed/loki/description
+msgid ""
+"Loki is a horizontally-scalable, highly-available, multi-tenant log "
+"aggregation system inspired by Prometheus."
+msgstr ""
 
 #. leap/lollypop/summary
 #. tumbleweed/lollypop/summary
@@ -6218,6 +6625,20 @@ msgid ""
 "were created in the Open Document Format. In addition, it can now also "
 "search in documents created by Microsoft Word, Excel or PowerPoint from the "
 "2007 version in an OOXML format."
+msgstr ""
+
+#. leap/lostfeathers/summary
+msgid "Help a bird to recover his magical feathers"
+msgstr ""
+
+#. leap/lostfeathers/description
+msgid ""
+"The Lost Feathers\n"
+"\n"
+"You control a boy and his bird named Py. Your goal is to recover Py's "
+"magical feathers, which were stolen by Evil Businessman.\n"
+"\n"
+"Help a bird to recover his magical feathers."
 msgstr ""
 
 #. leap/loudmouth/loudmouth-devel/description
@@ -6523,6 +6944,43 @@ msgstr ""
 "ト) をそれぞれ表示することができます。また、パスを指定することでファイルや"
 "ディレクトリを絞って表示することもできます。"
 
+#. leap/lsp-plugins/summary
+#. tumbleweed/lsp-plugins/summary
+msgid "Linux Studio Plugins Project (Stand-alone)"
+msgstr ""
+
+#. leap/lsp-plugins/description
+#. tumbleweed/lsp-plugins/description
+msgid ""
+"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
+"compatible with LADSPA, LV2 and LinuxVST formats.\n"
+"\n"
+"The basic idea is to fill the lack of good and useful plugins under the GNU/"
+"Linux platform."
+msgstr ""
+
+#. leap/lsp-plugins/lsp-plugins-common/summary
+#. tumbleweed/lsp-plugins/lsp-plugins-common/summary
+msgid "Linux Studio Plugins (Common files)"
+msgstr ""
+
+#. leap/lsp-plugins/lsp-plugins-common/description
+#. tumbleweed/lsp-plugins/lsp-plugins-common/description
+#, fuzzy
+#| msgid "Development files for log4cplus"
+msgid "Common files for lsp-plugins."
+msgstr "log4cplus 向け開発用ファイル"
+
+#. leap/lsp-plugins/lsp-plugins-doc/summary
+#. tumbleweed/lsp-plugins/lsp-plugins-doc/summary
+msgid "Linux Studio Plugins Documents"
+msgstr ""
+
+#. leap/lsp-plugins/lsp-plugins-doc/description
+#. tumbleweed/lsp-plugins/lsp-plugins-doc/description
+msgid "Documents for Linux Studio Plugins Project"
+msgstr ""
+
 #. leap/lsscsi/summary
 #. tumbleweed/lsscsi/summary
 msgid "List all SCSI devices in the system"
@@ -6532,6 +6990,21 @@ msgstr "システム内の全 SCSI デバイスの一覧表示"
 #. tumbleweed/lsscsi/description
 msgid "The lsscsi command lists information about SCSI devices in Linux."
 msgstr "lsscsi コマンドは、 Linux 内の SCSI デバイスについて一覧を表示します。"
+
+#. leap/lsvpd/summary
+msgid "VPD Hardware Inventory Utilities for Linux"
+msgstr ""
+
+#. leap/lsvpd/description
+msgid ""
+"The lsvpd package contains both the lsvpd, lscfg and lsmcode commands. These "
+"commands, along with a boot-time scanning script called update-device-tree, "
+"constitute a simple hardware inventory system. The lsvpd command provides "
+"Vital Product Data (VPD) about hardware components to higher-level "
+"serviceability tools. The lscfg command provides a more human-readable "
+"format of the VPD, as well as some system-specific information.  lsmcode "
+"lists microcode and firmware levels."
+msgstr ""
 
 #. leap/lsyncd/summary
 #. tumbleweed/lsyncd/summary
@@ -6583,25 +7056,31 @@ msgstr ""
 "まくいかなかったり期待通りに動作しなかったりすることに注意してください。"
 
 #. leap/lttng-modules/summary
+#. leap/lttng-modules/lttng-modules-kmp-default/summary
+#. leap/lttng-modules/lttng-modules-kmp-preempt/summary
 #. tumbleweed/lttng-modules/summary
+#. tumbleweed/lttng-modules/lttng-modules-kmp-default/summary
+#. tumbleweed/lttng-modules/lttng-modules-kmp-pae/summary
 msgid "Licensing information for package lttng-modules"
 msgstr ""
 
 #. leap/lttng-modules/description
+#. leap/lttng-modules/lttng-modules-kmp-default/description
+#. leap/lttng-modules/lttng-modules-kmp-preempt/description
 #. tumbleweed/lttng-modules/description
+#. tumbleweed/lttng-modules/lttng-modules-kmp-default/description
+#. tumbleweed/lttng-modules/lttng-modules-kmp-pae/description
 #, fuzzy
 msgid ""
 "This package provides licensing documentation for the lttng kmp packages."
 msgstr ""
 "このパッケージには、 skanlite 向けのドキュメンテーションが含まれています。"
 
-#. leap/lttng-modules/lttng-modules-kmp-default/summary
+#. leap/lttng-modules/lttng-modules-kmp-rt/summary
 msgid "LTTng 2.0 Kernel Tracing Modules"
 msgstr ""
 
-#. leap/lttng-modules/lttng-modules-kmp-default/description
-#. tumbleweed/lttng-modules/lttng-modules-kmp-default/description
-#. tumbleweed/lttng-modules/lttng-modules-kmp-pae/description
+#. leap/lttng-modules/lttng-modules-kmp-rt/description
 #, fuzzy
 msgid ""
 "This package contains the LTTng 2.0 Kernel Modules necessary for "
@@ -6612,11 +7091,15 @@ msgstr ""
 
 #. leap/lttng-tools/summary
 #. leap/lttng-tools/lttng-tools-devel/summary
+#. tumbleweed/lttng-tools/summary
+#. tumbleweed/lttng-tools/lttng-tools-devel/summary
 msgid "Linux Trace Toolkit Next Generation userspace tools"
 msgstr ""
 
 #. leap/lttng-tools/description
 #. leap/lttng-tools/lttng-tools-devel/description
+#. tumbleweed/lttng-tools/description
+#. tumbleweed/lttng-tools/lttng-tools-devel/description
 #, fuzzy
 msgid ""
 "This package provides the userspace tools for controlling the LTTng "
@@ -6730,6 +7213,7 @@ msgstr ""
 #. leap/lua53/summary
 #. tumbleweed/lua51/summary
 #. tumbleweed/lua53/summary
+#. tumbleweed/lua54/summary
 #, fuzzy
 #| msgid "Small Embeddable Language with Simple Procedural Syntax"
 msgid "Small Embeddable Language with Procedural Syntax"
@@ -6759,10 +7243,34 @@ msgid ""
 "Lua 5.3; it is compatible with Lua 5.1, 5.2 and 5.3."
 msgstr ""
 
+#. leap/lua51-compat-5.3/summary
+#. leap/lua53-compat-5.3/summary
+#. tumbleweed/lua51-compat-5.3/summary
+#. tumbleweed/lua53-compat-5.3/summary
+#. tumbleweed/lua54-compat-5.3/summary
+msgid "Lua-5.3-style APIs for Lua 5.2 and 5.1"
+msgstr ""
+
+#. leap/lua51-compat-5.3/description
+#. leap/lua51-luaterm/description
+#. leap/lua53-compat-5.3/description
+#. leap/lua53-luaterm/description
+#. tumbleweed/lua51-compat-5.3/description
+#. tumbleweed/lua51-luaterm/description
+#. tumbleweed/lua53-compat-5.3/description
+#. tumbleweed/lua53-luaterm/description
+#. tumbleweed/lua54-compat-5.3/description
+#. tumbleweed/lua54-luaterm/description
+#, fuzzy
+#| msgid "This package provides a set of default configurations for LXDE"
+msgid "This package provides terminal operations for Lua"
+msgstr " LXDE 向けの既定の設定集"
+
 #. leap/lua51/lua51-devel/summary
 #. leap/lua53/lua53-devel/summary
 #. tumbleweed/lua51/lua51-devel/summary
 #. tumbleweed/lua53/lua53-devel/summary
+#. tumbleweed/lua54/lua54-devel/summary
 msgid "Development files for lua"
 msgstr "lua 向け開発用ファイル"
 
@@ -6770,6 +7278,7 @@ msgstr "lua 向け開発用ファイル"
 #. leap/lua53/lua53-devel/description
 #. tumbleweed/lua51/lua51-devel/description
 #. tumbleweed/lua53/lua53-devel/description
+#. tumbleweed/lua54/lua54-devel/description
 #, fuzzy
 #| msgid ""
 #| "Lua is a programming language originally designed for extending "
@@ -6795,28 +7304,15 @@ msgstr ""
 #. leap/lua53/lua53-doc/summary
 #. tumbleweed/lua51/lua51-doc/summary
 #. tumbleweed/lua53/lua53-doc/summary
+#. tumbleweed/lua54/lua54-doc/summary
 msgid "Documentation for Lua, a small embeddable language"
-msgstr ""
-
-#. leap/lua51-ldbus/summary
-#. leap/lua53-ldbus/summary
-#. tumbleweed/lua51-ldbus/summary
-#. tumbleweed/lua53-ldbus/summary
-#, fuzzy
-msgid "Lua bindings to dbus"
-msgstr "Qt4 ライブラリ向け Mono バインディング"
-
-#. leap/lua51-ldbus/description
-#. leap/lua53-ldbus/description
-#. tumbleweed/lua51-ldbus/description
-#. tumbleweed/lua53-ldbus/description
-msgid "ldbus is a C binding to dbus for Lua."
 msgstr ""
 
 #. leap/lua51-lgi/summary
 #. leap/lua53-lgi/summary
 #. tumbleweed/lua51-lgi/summary
 #. tumbleweed/lua53-lgi/summary
+#. tumbleweed/lua54-lgi/summary
 #, fuzzy
 msgid "Lua bindings to GObject libraries"
 msgstr "Qt4 ライブラリ向け Mono バインディング"
@@ -6829,6 +7325,8 @@ msgstr "Qt4 ライブラリ向け Mono バインディング"
 #. tumbleweed/lua51-lgi/lua51-lgi-doc/description
 #. tumbleweed/lua53-lgi/description
 #. tumbleweed/lua53-lgi/lua53-lgi-doc/description
+#. tumbleweed/lua54-lgi/description
+#. tumbleweed/lua54-lgi/lua54-lgi-doc/description
 msgid ""
 "Dynamic Lua binding to any library which is introspectable using gobject-"
 "introspection. Allows using GObject-based libraries directly from Lua."
@@ -6838,6 +7336,7 @@ msgstr ""
 #. leap/lua53-lgi/lua53-lgi-doc/summary
 #. tumbleweed/lua51-lgi/lua51-lgi-doc/summary
 #. tumbleweed/lua53-lgi/lua53-lgi-doc/summary
+#. tumbleweed/lua54-lgi/lua54-lgi-doc/summary
 msgid "Lua bindings to GObject libraries - documentation and samples"
 msgstr ""
 
@@ -6845,6 +7344,7 @@ msgstr ""
 #. leap/lua53-lpeg/summary
 #. tumbleweed/lua51-lpeg/summary
 #. tumbleweed/lua53-lpeg/summary
+#. tumbleweed/lua54-lpeg/summary
 msgid "Parsing Expression Grammars For Lua"
 msgstr ""
 
@@ -6852,6 +7352,7 @@ msgstr ""
 #. leap/lua53-lpeg/description
 #. tumbleweed/lua51-lpeg/description
 #. tumbleweed/lua53-lpeg/description
+#. tumbleweed/lua54-lpeg/description
 msgid ""
 "LPeg is a new pattern-matching library for Lua, based on Parsing Expression "
 "Grammars (PEGs)."
@@ -6861,6 +7362,7 @@ msgstr ""
 #. leap/lua53-lpeg/lua53-lpeg-doc/summary
 #. tumbleweed/lua51-lpeg/lua51-lpeg-doc/summary
 #. tumbleweed/lua53-lpeg/lua53-lpeg-doc/summary
+#. tumbleweed/lua54-lpeg/lua54-lpeg-doc/summary
 #, fuzzy
 #| msgid "Documentation for log4c"
 msgid "Lua Documentation for lpeg"
@@ -6870,41 +7372,17 @@ msgstr "log4c 向けドキュメンテーション"
 #. leap/lua53-lpeg/lua53-lpeg-doc/description
 #. tumbleweed/lua51-lpeg/lua51-lpeg-doc/description
 #. tumbleweed/lua53-lpeg/lua53-lpeg-doc/description
+#. tumbleweed/lua54-lpeg/lua54-lpeg-doc/description
 msgid ""
 "Documentation and examples included with the library, sometimes generated by "
 "luadoc or ldoc."
 msgstr ""
 
-#. leap/lua51-lua-dbus/summary
-#. leap/lua53-lua-dbus/summary
-#. tumbleweed/lua51-lua-dbus/summary
-#. tumbleweed/lua53-lua-dbus/summary
-msgid "Convenient dbus api for lua"
-msgstr ""
-
-#. leap/lua51-lua-dbus/description
-#. leap/lua53-lua-dbus/description
-#. tumbleweed/lua51-lua-dbus/description
-#. tumbleweed/lua53-lua-dbus/description
-msgid "lua-dbus is a convenient lua api for dbus"
-msgstr ""
-
-#. leap/lua51-lua-mpris/summary
-#. leap/lua51-lua-mpris/description
-#. leap/lua53-lua-mpris/summary
-#. leap/lua53-lua-mpris/description
-#. tumbleweed/lua51-lua-mpris/summary
-#. tumbleweed/lua51-lua-mpris/description
-#. tumbleweed/lua53-lua-mpris/summary
-#. tumbleweed/lua53-lua-mpris/description
-#, fuzzy
-msgid "MPRIS api for lua"
-msgstr "TagLib 向け拡張プラグイン"
-
 #. leap/lua51-luadbi/summary
 #. leap/lua53-luadbi/summary
 #. tumbleweed/lua51-luadbi/summary
 #. tumbleweed/lua53-luadbi/summary
+#. tumbleweed/lua54-luadbi/summary
 msgid "A database interface library for Lua"
 msgstr ""
 
@@ -6912,6 +7390,7 @@ msgstr ""
 #. leap/lua53-luadbi/description
 #. tumbleweed/lua51-luadbi/description
 #. tumbleweed/lua53-luadbi/description
+#. tumbleweed/lua54-luadbi/description
 msgid ""
 "LuaDBI is a database interface library for Lua. It is designed to provide a "
 "RDBMS agnostic API for handling database operations. LuaDBI also provides "
@@ -6927,6 +7406,7 @@ msgstr ""
 #. leap/lua53-luaevent/summary
 #. tumbleweed/lua51-luaevent/summary
 #. tumbleweed/lua53-luaevent/summary
+#. tumbleweed/lua54-luaevent/summary
 msgid "A binding of libevent to Lua"
 msgstr ""
 
@@ -6934,6 +7414,7 @@ msgstr ""
 #. leap/lua53-luaevent/description
 #. tumbleweed/lua51-luaevent/description
 #. tumbleweed/lua53-luaevent/description
+#. tumbleweed/lua54-luaevent/description
 msgid ""
 "This is a binding of libevent to Lua. It will serve as a drop-in replacement "
 "for copas, and eventually support more features (async DNS, HTTP, RPC...)."
@@ -6943,6 +7424,7 @@ msgstr ""
 #. leap/lua53-luaexpat/summary
 #. tumbleweed/lua51-luaexpat/summary
 #. tumbleweed/lua53-luaexpat/summary
+#. tumbleweed/lua54-luaexpat/summary
 msgid "A SAX XML parser based on the Expat library"
 msgstr ""
 
@@ -6950,6 +7432,7 @@ msgstr ""
 #. leap/lua53-luaexpat/description
 #. tumbleweed/lua51-luaexpat/description
 #. tumbleweed/lua53-luaexpat/description
+#. tumbleweed/lua54-luaexpat/description
 msgid "LuaExpat is a SAX XML parser based on the Expat library."
 msgstr ""
 
@@ -6957,6 +7440,7 @@ msgstr ""
 #. leap/lua53-luafilesystem/summary
 #. tumbleweed/lua51-luafilesystem/summary
 #. tumbleweed/lua53-luafilesystem/summary
+#. tumbleweed/lua54-luafilesystem/summary
 #, fuzzy
 msgid "Filesystem support for Lua"
 msgstr "UDF ファイルシステムツール"
@@ -6965,6 +7449,7 @@ msgstr "UDF ファイルシステムツール"
 #. leap/lua53-luafilesystem/description
 #. tumbleweed/lua51-luafilesystem/description
 #. tumbleweed/lua53-luafilesystem/description
+#. tumbleweed/lua54-luafilesystem/description
 msgid ""
 "LuaFileSystem is a Lua library developed to complement the set of functions "
 "related to file systems offered by the standard Lua distribution.\n"
@@ -6973,10 +7458,39 @@ msgid ""
 "structure and file attributes."
 msgstr ""
 
+#. leap/lua51-luajit/summary
+#. leap/moonjit/summary
+#. tumbleweed/moonjit/summary
+#, fuzzy
+msgid "JIT compiler for Lua language"
+msgstr "Lua 言語向けネットワークサポート"
+
+#. leap/lua51-luajit/description
+#. leap/moonjit/description
+#. tumbleweed/moonjit/description
+#, fuzzy
+msgid "A Just-In-Time Compiler for Lua language"
+msgstr "Java 向けタイムゾーンコンパイラ"
+
+#. leap/lua51-luajit/lua51-luajit-devel/summary
+#. leap/moonjit/moonjit-devel/summary
+#. tumbleweed/moonjit/moonjit-devel/summary
+#, fuzzy
+msgid "Devel files for LuaJIT"
+msgstr "lua 向け開発用ファイル"
+
+#. leap/lua51-luajit/lua51-luajit-devel/description
+#. leap/moonjit/moonjit-devel/description
+#. tumbleweed/moonjit/moonjit-devel/description
+#, fuzzy
+msgid "Devel files for luajit package"
+msgstr "lua 向け開発用ファイル"
+
 #. leap/lua51-luaposix/summary
 #. leap/lua53-luaposix/summary
 #. tumbleweed/lua51-luaposix/summary
 #. tumbleweed/lua53-luaposix/summary
+#. tumbleweed/lua54-luaposix/summary
 msgid "POSIX library for Lua"
 msgstr ""
 
@@ -6984,6 +7498,7 @@ msgstr ""
 #. leap/lua53-luaposix/description
 #. tumbleweed/lua51-luaposix/description
 #. tumbleweed/lua53-luaposix/description
+#. tumbleweed/lua54-luaposix/description
 msgid ""
 "This is a POSIX library for Lua which provides access to many POSIX features "
 "to Lua programs."
@@ -6993,6 +7508,7 @@ msgstr ""
 #. leap/lua53-luarocks/summary
 #. tumbleweed/lua51-luarocks/summary
 #. tumbleweed/lua53-luarocks/summary
+#. tumbleweed/lua54-luarocks/summary
 msgid "A deployment and management system for Lua modules"
 msgstr ""
 
@@ -7000,6 +7516,7 @@ msgstr ""
 #. leap/lua53-luarocks/description
 #. tumbleweed/lua51-luarocks/description
 #. tumbleweed/lua53-luarocks/description
+#. tumbleweed/lua54-luarocks/description
 msgid ""
 "LuaRocks allows you to install Lua modules as self-contained packages called "
 "\"rocks\", which also contain version dependency information. This "
@@ -7013,6 +7530,7 @@ msgstr ""
 #. leap/lua53-luasec/summary
 #. tumbleweed/lua51-luasec/summary
 #. tumbleweed/lua53-luasec/summary
+#. tumbleweed/lua54-luasec/summary
 msgid "A Lua binding for OpenSSL"
 msgstr ""
 
@@ -7020,6 +7538,7 @@ msgstr ""
 #. leap/lua53-luasec/description
 #. tumbleweed/lua51-luasec/description
 #. tumbleweed/lua53-luasec/description
+#. tumbleweed/lua54-luasec/description
 msgid ""
 "It is a binding for OpenSSL library to provide TLS/SSL communication. It "
 "takes an already established TCP connection and creates a secure session "
@@ -7030,6 +7549,7 @@ msgstr ""
 #. leap/lua53-luasocket/summary
 #. tumbleweed/lua51-luasocket/summary
 #. tumbleweed/lua53-luasocket/summary
+#. tumbleweed/lua54-luasocket/summary
 msgid "Network support for the Lua language"
 msgstr "Lua 言語向けネットワークサポート"
 
@@ -7037,6 +7557,7 @@ msgstr "Lua 言語向けネットワークサポート"
 #. leap/lua53-luasocket/description
 #. tumbleweed/lua51-luasocket/description
 #. tumbleweed/lua53-luasocket/description
+#. tumbleweed/lua54-luasocket/description
 msgid ""
 "LuaSocket is a Lua extension library that is composed by two parts: a C core "
 "that provides support for the TCP and UDP transport layers, and a set of Lua "
@@ -7058,6 +7579,7 @@ msgstr ""
 #. leap/lua53-luasql/summary
 #. tumbleweed/lua51-luasql/summary
 #. tumbleweed/lua53-luasql/summary
+#. tumbleweed/lua54-luasql/summary
 msgid "Simple interface from Lua to a DBMS"
 msgstr ""
 
@@ -7065,6 +7587,7 @@ msgstr ""
 #. leap/lua53-luasql/description
 #. tumbleweed/lua51-luasql/description
 #. tumbleweed/lua53-luasql/description
+#. tumbleweed/lua54-luasql/description
 msgid ""
 "A simple interface from Lua to a DBMS. It enables a Lua program to:  - "
 "Connect to ODBC, ADO, Oracle, MySQL, SQLite and PostgreSQL databases;  - "
@@ -7072,28 +7595,93 @@ msgid ""
 "fashion."
 msgstr ""
 
+#. leap/lua51-luasystem/summary
+#. leap/lua53-luasystem/summary
+#. tumbleweed/lua51-luasystem/summary
+#. tumbleweed/lua53-luasystem/summary
+#. tumbleweed/lua54-luasystem/summary
+msgid "Platform independent system calls for Lua"
+msgstr ""
+
+#. leap/lua51-luasystem/description
+#. leap/lua53-luasystem/description
+#. tumbleweed/lua51-luasystem/description
+#. tumbleweed/lua53-luasystem/description
+#. tumbleweed/lua54-luasystem/description
+msgid "Adds a Lua API for making platform independent system calls."
+msgstr ""
+
 #. leap/lua51-luaterm/summary
 #. leap/lua53-luaterm/summary
 #. tumbleweed/lua51-luaterm/summary
 #. tumbleweed/lua53-luaterm/summary
+#. tumbleweed/lua54-luaterm/summary
 msgid "Terminal operations for Lua"
 msgstr ""
 
-#. leap/lua51-luaterm/description
-#. leap/lua53-luaterm/description
-#. tumbleweed/lua51-compat-5.3/description
-#. tumbleweed/lua51-luaterm/description
-#. tumbleweed/lua53-compat-5.3/description
-#. tumbleweed/lua53-luaterm/description
+#. leap/lua51-luv/summary
+#. leap/lua53-luv/summary
+#. tumbleweed/lua51-luv/summary
+#. tumbleweed/lua53-luv/summary
+#. tumbleweed/lua54-luv/summary
 #, fuzzy
-#| msgid "This package provides a set of default configurations for LXDE"
-msgid "This package provides terminal operations for Lua"
-msgstr " LXDE 向けの既定の設定集"
+msgid "Bare libuv bindings for lua"
+msgstr "sat ソルバー向け Perl バインディングです。"
+
+#. leap/lua51-luv/description
+#. leap/lua53-luv/description
+#. tumbleweed/lua51-luv/description
+#. tumbleweed/lua53-luv/description
+#. tumbleweed/lua54-luv/description
+msgid ""
+"This library makes libuv available to lua scripts. It was made for the luvit "
+"project but should usable from nearly any lua project.\n"
+"\n"
+"The library can be used by multiple threads at once. Each thread is assumed "
+"to load the library from a different lua_State. Luv will create a unique "
+"uv_loop_t for each state. You can't share uv handles between states/loops.\n"
+"\n"
+"The best docs currently are the libuv docs themselves. Hopfully soon we'll "
+"have a copy locally tailored for lua."
+msgstr ""
+
+#. leap/lua51-luv/lua51-luv-devel/summary
+#. tumbleweed/lua51-luv/lua51-luv-devel/summary
+#, fuzzy
+msgid "Header files for lua51-luv"
+msgstr "lua 向け開発用ファイル"
+
+#. leap/lua51-luv/lua51-luv-devel/description
+#. tumbleweed/lua51-luv/lua51-luv-devel/description
+#, fuzzy
+msgid ""
+"This subpackage contains header files for developing applications that want "
+"to make use of lua51-luv."
+msgstr ""
+"このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
+"ファイルが含まれています。"
+
+#. leap/lua51-markdown/summary
+#. leap/lua53-markdown/summary
+#. tumbleweed/lua51-markdown/summary
+#. tumbleweed/lua53-markdown/summary
+#. tumbleweed/lua54-markdown/summary
+msgid "Markdown text-to-html markup system"
+msgstr ""
+
+#. leap/lua51-markdown/description
+#. leap/lua53-markdown/description
+#. tumbleweed/lua51-markdown/description
+#. tumbleweed/lua53-markdown/description
+#. tumbleweed/lua54-markdown/description
+msgid "A pure-lua implementation of the Markdown text-to-html markup system."
+msgstr ""
 
 #. leap/lua51-messagepack/summary
 #. leap/lua53-messagepack/summary
 #. tumbleweed/lua51-messagepack/summary
 #. tumbleweed/lua53-messagepack/summary
+#. tumbleweed/lua54-messagepack/summary
 msgid "MessagePack is an efficient binary serialization format"
 msgstr ""
 
@@ -7101,6 +7689,7 @@ msgstr ""
 #. leap/lua53-messagepack/description
 #. tumbleweed/lua51-messagepack/description
 #. tumbleweed/lua53-messagepack/description
+#. tumbleweed/lua54-messagepack/description
 msgid ""
 "MessagePack is an efficient binary serialization format. It lets you "
 "exchange data among multiple languages like JSON but it's faster and "
@@ -7112,6 +7701,7 @@ msgstr ""
 #. leap/lua53-mpack/summary
 #. tumbleweed/lua51-mpack/summary
 #. tumbleweed/lua53-mpack/summary
+#. tumbleweed/lua54-mpack/summary
 #, fuzzy
 msgid "Implementation of MessagePack for Lua 5.1"
 msgstr "\"シングルトン\" クラスの実装"
@@ -7120,15 +7710,33 @@ msgstr "\"シングルトン\" クラスの実装"
 #. leap/lua53-mpack/description
 #. tumbleweed/lua51-mpack/description
 #. tumbleweed/lua53-mpack/description
+#. tumbleweed/lua54-mpack/description
 msgid ""
 "mpack is a binary serialization/RPC library that implements both the msgpack "
 "and msgpack-rpc specifications."
+msgstr ""
+
+#. leap/lua51-say/summary
+#. leap/lua53-say/summary
+#. tumbleweed/lua51-say/summary
+#. tumbleweed/lua53-say/summary
+#. tumbleweed/lua54-say/summary
+msgid "Lua string hashing library, useful for internationalization"
+msgstr ""
+
+#. leap/lua51-say/description
+#. leap/lua53-say/description
+#. tumbleweed/lua51-say/description
+#. tumbleweed/lua53-say/description
+#. tumbleweed/lua54-say/description
+msgid "Useful for internationalization."
 msgstr ""
 
 #. leap/lua51-zlib/summary
 #. leap/lua53-zlib/summary
 #. tumbleweed/lua51-zlib/summary
 #. tumbleweed/lua53-zlib/summary
+#. tumbleweed/lua54-zlib/summary
 msgid "Simple streaming interface to zlib for Lua"
 msgstr ""
 
@@ -7136,8 +7744,25 @@ msgstr ""
 #. leap/lua53-zlib/description
 #. tumbleweed/lua51-zlib/description
 #. tumbleweed/lua53-zlib/description
+#. tumbleweed/lua54-zlib/description
 msgid "lua-zlib is a simple streaming interface to zlib for Lua."
 msgstr ""
+
+#. leap/lua53-luv/lua53-luv-devel/summary
+#. tumbleweed/lua53-luv/lua53-luv-devel/summary
+#, fuzzy
+msgid "Header files for lua53-luv"
+msgstr "lua 向け開発用ファイル"
+
+#. leap/lua53-luv/lua53-luv-devel/description
+#. tumbleweed/lua53-luv/lua53-luv-devel/description
+#, fuzzy
+msgid ""
+"This subpackage contains header files for developing applications that want "
+"to make use of lua53-luv."
+msgstr ""
+"このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
+"ファイルが含まれています。"
 
 #. leap/luabind/luabind-devel/summary
 #. tumbleweed/luabind/luabind-devel/summary
@@ -7182,19 +7807,6 @@ msgid ""
 msgstr ""
 "CLucene は Lucene の C++ 移植版で、高性能で完全機能のテキスト検索エンジンで"
 "す。 CLucene は C++ 言語で書かれている以上に高速になっています。"
-
-#. leap/lucene/summary
-#. tumbleweed/lucene/lucene-core/summary
-msgid "Text search engine"
-msgstr ""
-
-#. leap/lucene/description
-#. tumbleweed/lucene/lucene-core/description
-msgid ""
-"Apache Lucene is a full-text search engine written entirely in Java. It "
-"offers fuzzy search based on edit (Levenshtein) distance, incremental "
-"indexing, ranked searching, field-based searches and multi-index searches."
-msgstr ""
 
 #. leap/lucene/lucene-analyzers-common/summary
 #. tumbleweed/lucene/lucene-analyzers-common/summary
@@ -7268,14 +7880,25 @@ msgid ""
 "package provides the \"codecs\" module for Lucene."
 msgstr ""
 
+#. leap/lucene/lucene-core/summary
+#. tumbleweed/lucene/lucene-core/summary
+msgid "Text search engine"
+msgstr ""
+
+#. leap/lucene/lucene-core/description
+#. tumbleweed/lucene/lucene-core/description
+msgid ""
+"Apache Lucene is a full-text search engine written entirely in Java. It "
+"offers fuzzy search based on edit (Levenshtein) distance, incremental "
+"indexing, ranked searching, field-based searches and multi-index searches."
+msgstr ""
+
 #. leap/lucene/lucene-facet/summary
-#. tumbleweed/lucene/lucene-facet/summary
 #, fuzzy
 msgid "Facet module for lucene"
 msgstr "lua 向け開発用ファイル"
 
 #. leap/lucene/lucene-facet/description
-#. tumbleweed/lucene/lucene-facet/description
 msgid ""
 "Apache Lucene is a full-text search engine written entirely in Java. This "
 "package provides the \"facet\" module for Lucene."
@@ -7380,12 +8003,11 @@ msgid ""
 msgstr ""
 
 #. leap/lucene/lucene-spatial/summary
-#. tumbleweed/lucene/lucene-spatial/summary
+#. tumbleweed/lucene/lucene-monitor/summary
 msgid "Spatial module for lucene"
 msgstr ""
 
 #. leap/lucene/lucene-spatial/description
-#. tumbleweed/lucene/lucene-spatial/description
 msgid ""
 "Apache Lucene is a full-text search engine written entirely in Java. This "
 "package provides the \"spatial\" module for Lucene."
@@ -7465,13 +8087,49 @@ msgstr ""
 "UTF-8 に変換したり、端末への入力を UTF-8 からロケールのエンコーディングに変換"
 "したりすることができます。"
 
+#. leap/lunar-date/lunar-date-devel/summary
+#. tumbleweed/lunar-date/lunar-date-devel/summary
+#, fuzzy
+msgid "Chinese Lunar calendar library development files"
+msgstr "bzip2 ランタイムライブラリの開発用ファイル"
+
+#. leap/lunar-date/lunar-date-devel/description
+#. tumbleweed/lunar-date/lunar-date-devel/description
+#, fuzzy
+msgid "Development files for Chinese Lunar calendar library"
+msgstr "unicap ライブラリ向け開発用ファイル"
+
+#. leap/lunar-date/lunar-date-doc/summary
+#. tumbleweed/lunar-date/lunar-date-doc/summary
+msgid "Chinese Lunar calendar library Documents"
+msgstr ""
+
+#. leap/lunar-date/lunar-date-doc/description
+#. tumbleweed/lunar-date/lunar-date-doc/description
+#, fuzzy
+msgid "Documents for Chinese Lunar calendar library"
+msgstr "unicap ライブラリ向け開発用ファイル"
+
+#. leap/lunar-date/lunar-date-lang/summary
+#. tumbleweed/lunar-date/lunar-date-lang/summary
+#, fuzzy
+#| msgid "Translations for package lxtask"
+msgid "Translations for package lunar-date"
+msgstr "lxtask 向け翻訳パッケージ"
+
+#. leap/lunar-date/lunar-date-lang/description
+#. tumbleweed/lunar-date/lunar-date-lang/description
+#, fuzzy
+#| msgid "Provides translations for the \"lxtask\" package."
+msgid "Provides translations for the \"lunar-date\" package."
+msgstr "lxtask パッケージ向けの翻訳データです。"
+
 #. leap/lutris/summary
 #. tumbleweed/lutris/summary
 msgid "Manager for game installation and execution"
 msgstr ""
 
 #. leap/lutris/description
-#. tumbleweed/lutris/description
 msgid ""
 "Lutris allows to gather and manage (install, configure and launch) all games "
 "acquired from any source, in a single interface. This includes, for example, "
@@ -7661,6 +8319,23 @@ msgid ""
 "functionality. This package contains LV2 example plugins."
 msgstr ""
 
+#. leap/lsp-plugins/lv2-lsp-plugins/summary
+#. tumbleweed/lsp-plugins/lv2-lsp-plugins/summary
+msgid "Linux Studio Plugins Documents (LV2)"
+msgstr ""
+
+#. leap/lsp-plugins/lv2-lsp-plugins/description
+#. tumbleweed/lsp-plugins/lv2-lsp-plugins/description
+msgid ""
+"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
+"compatible with LADSPA, LV2 and LinuxVST formats.\n"
+"\n"
+"The basic idea is to fill the lack of good and useful plugins under the GNU/"
+"Linux platform.\n"
+"\n"
+"This is the LV2 version of the plugins."
+msgstr ""
+
 #. leap/lv2-swh-plugins/summary
 #. tumbleweed/lv2-swh-plugins/summary
 msgid "LV2 ports of LADSPA swh plugins"
@@ -7687,6 +8362,19 @@ msgid ""
 msgstr ""
 "LVM2 論理ボリュームマネージャを設定したり使用したりするためのプログラムとマ"
 "ニュアルページです。"
+
+#. leap/lvm2-clvm/summary
+msgid "Clustered LVM2"
+msgstr ""
+
+#. leap/lvm2-clvm/description
+#. leap/lvm2-clvm/lvm2-cmirrord/description
+msgid "A daemon for using LVM2 Logival Volumes in a clustered environment."
+msgstr ""
+
+#. leap/lvm2-clvm/lvm2-cmirrord/summary
+msgid "Clustered RAID 1 support using device-mapper and corosync"
+msgstr ""
 
 #. leap/lvm2/lvm2-devel/summary
 #. tumbleweed/lvm2/lvm2-devel/summary
@@ -8623,6 +9311,16 @@ msgid ""
 "packages/lyx/) for more information."
 msgstr ""
 
+#. leap/lyx/lyx-fonts/summary
+#. tumbleweed/lyx/lyx-fonts/summary
+msgid "Fonts for displaying math"
+msgstr ""
+
+#. leap/lyx/lyx-fonts/description
+#. tumbleweed/lyx/lyx-fonts/description
+msgid "A collection of Math symbol fonts for LyX."
+msgstr ""
+
 #. leap/lz4/summary
 #. tumbleweed/lz4/summary
 #, fuzzy
@@ -8805,21 +9503,6 @@ msgstr ""
 "- 互換性による gzip に対する即時の置き換え\n"
 "- 可搬性"
 
-#. leap/lua51-lua-mpris/mpv-plugin-mpris/summary
-#. tumbleweed/lua51-lua-mpris/mpv-plugin-mpris/summary
-msgid "MPV plugin to add MPRIS support"
-msgstr ""
-
-#. leap/lua51-lua-mpris/mpv-plugin-mpris/description
-#. tumbleweed/lua51-lua-mpris/mpv-plugin-mpris/description
-msgid ""
-"mpv is a movie player based on MPlayer and mplayer2. It supports a wide "
-"variety of video file formats, audio and video codecs, and subtitle types.\n"
-"\n"
-"This package installs a lua plugin for mpv to add mpris support through a "
-"dbus interface."
-msgstr ""
-
 #. leap/lxc/pam_cgfs/summary
 #. tumbleweed/lxc/pam_cgfs/summary
 msgid "PAM module to provide unprivileged cgroupfs"
@@ -8845,21 +9528,6 @@ msgstr "sat ソルバー向け Perl バインディングです。"
 msgid "Perl bindings for the ldns library."
 msgstr "libsolv ライブラリ向け Perl バインディング"
 
-#. leap/LHAPDF/python-LHAPDF/summary
-#. tumbleweed/LHAPDF/python-LHAPDF/summary
-#, fuzzy
-msgid "Python bindings for LHAPDF, a library for PDF sets"
-msgstr "gtk-vnc ライブラリ向け Python バインディング"
-
-#. leap/LHAPDF/python-LHAPDF/description
-#. tumbleweed/LHAPDF/python-LHAPDF/description
-msgid ""
-"LHAPDF provides a unified and interface to PDF (probability distribution "
-"function) sets.\n"
-"\n"
-"This package provides the python wrapper for LHAPDF."
-msgstr ""
-
 #. leap/lammps/python-lammps/summary
 #. tumbleweed/lammps/python-lammps/summary
 msgid "LAMMPS python module"
@@ -8883,14 +9551,60 @@ msgid ""
 "This subpackage contains LAMMPS's Python module."
 msgstr ""
 
+#. leap/ldb/python-ldb/summary
+#. leap/ldb/python-ldb-32bit/summary
+#, fuzzy
+msgid "Python bindings for the LDB library"
+msgstr "gtk-vnc ライブラリ向け Python バインディング"
+
+#. leap/ldb/python-ldb/description
+#. leap/ldb/python-ldb-32bit/description
+#, fuzzy
+msgid "This package contains the Python bindings for the LDB library."
+msgstr ""
+"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
+"が含まれています。"
+
+#. leap/ldb/python-ldb-devel/summary
+#, fuzzy
+msgid "Development files for the Python bindings for the LDB library"
+msgstr "X フォント処理ライブラリ向け開発用ファイル"
+
+#. leap/ldb/python-ldb-devel/description
+#. leap/ldb/python3-ldb-devel/description
+#. tumbleweed/ldb/python3-ldb-devel/description
+#, fuzzy
+msgid ""
+"This package contains the development files for the Python bindings for the "
+"LDB library."
+msgstr ""
+"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
+"が含まれています。"
+
+#. leap/LHAPDF/python2-LHAPDF/summary
+#. leap/LHAPDF/python3-LHAPDF/summary
+#. tumbleweed/LHAPDF/python3-LHAPDF/summary
+msgid "A library for unified interface to PDF sets"
+msgstr ""
+
+#. leap/LHAPDF/python2-LHAPDF/description
+#. leap/LHAPDF/python3-LHAPDF/description
+#. tumbleweed/LHAPDF/python3-LHAPDF/description
+msgid ""
+"LHAPDF provides a unified and interface to PDF (probability distribution "
+"function) sets. It also works with the more recent multiple \"error\" sets, "
+"and incorporates many of the older sets found in PDFLIB, including pion and "
+"photon PDFs. In LHAPDF, the computer code and input parameters/grids are "
+"separated, thus allowing updating and no limit to the expansion "
+"possibilities."
+msgstr ""
+
 #. leap/link-grammar/python2-clinkgrammar/summary
-#. tumbleweed/link-grammar/python2-clinkgrammar/summary
 #, fuzzy
 msgid "Python 2 bindings for link-grammar, a grammar checker"
 msgstr "libgnomecanvas 向け Python バインディング"
 
 #. leap/link-grammar/python2-clinkgrammar/description
-#. tumbleweed/link-grammar/python2-clinkgrammar/description
 msgid ""
 "The Link Grammar Parser is a syntactic parser of a number of languages, "
 "based on Link Grammar, an original theory of syntax and morphology.\n"
@@ -8899,17 +9613,16 @@ msgid ""
 "Python 2."
 msgstr ""
 
-#. leap/llvm7/python3-clang/summary
-#. tumbleweed/llvm9/python3-clang/summary
+#. leap/llvm11/python3-clang/summary
+#. tumbleweed/llvm11/python3-clang/summary
 #, fuzzy
 msgid "Python bindings for libclang"
 msgstr "libgnomecanvas 向け Python バインディング"
 
-#. leap/llvm7/python3-clang/description
+#. leap/llvm11/python3-clang/description
 #. leap/llvm5/python3-lldb5/description
 #. leap/llvm7/python3-lldb7/description
-#. tumbleweed/llvm9/python3-clang/description
-#. tumbleweed/llvm6/python3-lldb6/description
+#. tumbleweed/llvm11/python3-clang/description
 #. tumbleweed/llvm7/python3-lldb7/description
 #, fuzzy
 msgid ""
@@ -8934,6 +9647,18 @@ msgid ""
 "Python 3."
 msgstr ""
 
+#. leap/lasso/python3-lasso/summary
+#. tumbleweed/lasso/python3-lasso/summary
+msgid "Liberty Alliance Single Sign On (lasso) Python bindings"
+msgstr ""
+
+#. leap/lasso/python3-lasso/description
+#. tumbleweed/lasso/python3-lasso/description
+msgid ""
+"Python language bindings for the lasso (Liberty Alliance Single Sign On) "
+"library."
+msgstr ""
+
 #. leap/ldb/python3-ldb/summary
 #. leap/ldb/python3-ldb-32bit/summary
 #. tumbleweed/ldb/python3-ldb/summary
@@ -8952,16 +9677,6 @@ msgstr ""
 #. tumbleweed/ldb/python3-ldb-devel/summary
 msgid "Development files for the Python3 bindings for the LDB library"
 msgstr ""
-
-#. leap/ldb/python3-ldb-devel/description
-#. tumbleweed/ldb/python3-ldb-devel/description
-#, fuzzy
-msgid ""
-"This package contains the development files for the Python bindings for the "
-"LDB library."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
 
 #. leap/ldns/python3-ldns/summary
 #. tumbleweed/ldns/python3-ldns/summary
@@ -9001,10 +9716,13 @@ msgid ""
 msgstr ""
 
 #. leap/llvm/python3-lldb/summary
+#. leap/llvm11/python3-lldb11/summary
 #. leap/llvm5/python3-lldb5/summary
 #. leap/llvm7/python3-lldb7/summary
+#. leap/llvm9/python3-lldb9/summary
 #. tumbleweed/llvm/python3-lldb/summary
-#. tumbleweed/llvm6/python3-lldb6/summary
+#. tumbleweed/llvm10/python3-lldb10/summary
+#. tumbleweed/llvm11/python3-lldb11/summary
 #. tumbleweed/llvm7/python3-lldb7/summary
 #. tumbleweed/llvm8/python3-lldb8/summary
 #. tumbleweed/llvm9/python3-lldb9/summary
@@ -9024,6 +9742,34 @@ msgid ""
 "LLDB version should depend on this."
 msgstr ""
 
+#. leap/llvm11/python3-lldb11/description
+#. leap/llvm9/python3-lldb9/description
+#. tumbleweed/llvm10/python3-lldb10/description
+#. tumbleweed/llvm11/python3-lldb11/description
+#. tumbleweed/llvm8/python3-lldb8/description
+#. tumbleweed/llvm9/python3-lldb9/description
+#, fuzzy
+msgid ""
+"This package contains the Python bindings for LLDB. It also contains pretty "
+"printers for the C++ standard library."
+msgstr ""
+"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
+"が含まれています。"
+
+#. leap/lttng-ust/python3-lttngust/summary
+#. tumbleweed/lttng-ust/python3-lttngust/summary
+msgid "Linux Trace Toolkit Userspace Tracer Python 3 agent"
+msgstr ""
+
+#. leap/lttng-ust/python3-lttngust/description
+#. tumbleweed/lttng-ust/python3-lttngust/description
+msgid ""
+"This library may be used by user space applications to generate tracepoints "
+"within the kernel LTT subsystem.\n"
+"\n"
+"This package provides the LLTng-UST Python 3 agent."
+msgstr ""
+
 #. leap/limesuite/soapysdr0.7-module-lms7/summary
 #. tumbleweed/limesuite/soapysdr0.7-module-lms7/summary
 msgid "SoapySDR LMS7 support module"
@@ -9036,10 +9782,19 @@ msgid ""
 "supports LimeSDR devices within the Soapy API."
 msgstr ""
 
+#. leap/texlive-specs-o/texlive-lua-alt-getopt/summary
+#. tumbleweed/lua51-alt-getopt/summary
+#. tumbleweed/lua53-alt-getopt/summary
+#. tumbleweed/lua54-alt-getopt/summary
+#. tumbleweed/texlive-specs-o/texlive-lua-alt-getopt/summary
+msgid "Process application arguments the same way as getopt_long"
+msgstr ""
+
 #. leap/lua51-toluapp/toluapp-5.1/summary
 #. leap/lua53-toluapp/toluapp-5.3/summary
 #. tumbleweed/lua51-toluapp/toluapp-5.1/summary
 #. tumbleweed/lua53-toluapp/toluapp-5.3/summary
+#. tumbleweed/lua54-toluapp/toluapp-5.4/summary
 #, fuzzy
 msgid "C/C++ with Lua Integration Tool"
 msgstr "LUA 統合ライブラリ"
@@ -9048,6 +9803,7 @@ msgstr "LUA 統合ライブラリ"
 #. leap/lua53-toluapp/toluapp-5.3/description
 #. tumbleweed/lua51-toluapp/toluapp-5.1/description
 #. tumbleweed/lua53-toluapp/toluapp-5.3/description
+#. tumbleweed/lua54-toluapp/toluapp-5.4/description
 msgid ""
 "tolua++ is an extended version of tolua, a tool to integrate C/C++ code with "
 "Lua. tolua++ includes new features oriented to c++ such as:\n"
@@ -9074,6 +9830,34 @@ msgstr ""
 "このパッケージには appindicator ライブラリの GObject イントロスペクションバイ"
 "ンディングが含まれています。"
 
+#. leap/lunar-date/typelib-1_0-LunarDate-3_0/summary
+#. tumbleweed/lunar-date/typelib-1_0-LunarDate-3_0/summary
+msgid "Chinese Lunar calendar introspection bindings"
+msgstr ""
+
+#. leap/lunar-date/typelib-1_0-LunarDate-3_0/description
+#. tumbleweed/lunar-date/typelib-1_0-LunarDate-3_0/description
+msgid ""
+"Introspection bindings for Chinese Lunar calendar for use in Gnome Shell"
+msgstr ""
+
+#. leap/lsp-plugins/vst-lsp-plugins/summary
+#. tumbleweed/lsp-plugins/vst-lsp-plugins/summary
+msgid "Linux Studio Plugins Documents (VST)"
+msgstr ""
+
+#. leap/lsp-plugins/vst-lsp-plugins/description
+#. tumbleweed/lsp-plugins/vst-lsp-plugins/description
+msgid ""
+"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
+"compatible with LADSPA, LV2 and LinuxVST formats.\n"
+"\n"
+"The basic idea is to fill the lack of good and useful plugins under the GNU/"
+"Linux platform.\n"
+"\n"
+"This is the VST version of the plugins."
+msgstr ""
+
 #. leap/latencytop/xlatencytop/description
 #. tumbleweed/latencytop/xlatencytop/description
 msgid ""
@@ -9084,31 +9868,221 @@ msgid ""
 "contains version with graphic interface."
 msgstr ""
 
-#. tumbleweed/llvm9/clang9-doc/summary
-#, fuzzy
-#| msgid "Documentation for log4c"
-msgid "Documentation for Clang"
-msgstr "log4c 向けドキュメンテーション"
-
-#. tumbleweed/llvm9/clang9-doc/description
-#, fuzzy
-msgid "This package contains documentation for the Clang compiler."
-msgstr ""
-"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
-
-#. tumbleweed/lsp-plugins/ladspa-lsp-plugins/summary
-msgid "Linux Studio Plugins Documents (LADSPA)"
+#. leap/zoo/summary
+#. tumbleweed/lha/summary
+#. tumbleweed/zoo/summary
+msgid "Pack Program"
 msgstr ""
 
-#. tumbleweed/lsp-plugins/ladspa-lsp-plugins/description
+#. tumbleweed/LHAPDF/LHAPDF-doc/summary
+#, fuzzy
+msgid "API documentation for LHAPDF, a library for PDF sets"
+msgstr "unicap ライブラリ向け開発用ファイル"
+
+#. tumbleweed/LHAPDF/LHAPDF-doc/description
 msgid ""
-"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
-"compatible with LADSPA, LV2 and LinuxVST formats.\n"
+"LHAPDF provides a unified and interface to PDF (probability distribution "
+"function) sets.\n"
 "\n"
-"The basic idea is to fill the lack of good and useful plugins under the GNU/"
-"Linux platform.\n"
+"This package provides the API documentation for LHAPDF in HTML format."
+msgstr ""
+
+#. tumbleweed/lapack/cblas-devel-static/summary
+#, fuzzy
+msgid "CBLAS - static libraries"
+msgstr "線形代数パッケージ"
+
+#. tumbleweed/liquidhaskell/ghc-liquidhaskell/summary
+msgid "Haskell liquidhaskell library"
+msgstr ""
+
+#. tumbleweed/liquidhaskell/ghc-liquidhaskell/description
+#, fuzzy
+msgid "This package provides the Haskell liquidhaskell shared library."
+msgstr "Boost::Container ランタイムライブラリ"
+
+#. tumbleweed/liquidhaskell/ghc-liquidhaskell-devel/summary
+#, fuzzy
+msgid "Haskell liquidhaskell library development files"
+msgstr "bzip2 ランタイムライブラリの開発用ファイル"
+
+#. tumbleweed/liquidhaskell/ghc-liquidhaskell-devel/description
+#, fuzzy
+msgid ""
+"This package provides the Haskell liquidhaskell library development files."
+msgstr "bzip2 ランタイムライブラリの開発用ファイル"
+
+#. tumbleweed/ladish/summary
+#, fuzzy
+#| msgid "Linux Audio Session Handler"
+msgid "LADI Session Handler"
+msgstr "Linux オーディオセッション処理"
+
+#. tumbleweed/ladish/description
+msgid ""
+"LADI Session Handler or simply ladish is a session management system for "
+"JACK applications on GNU/Linux."
+msgstr ""
+
+#. tumbleweed/lal/lal-devel/summary
+#, fuzzy
+msgid "Headers and source files for building against lal"
+msgstr "libotr 向けのヘッダと開発ライブラリです。"
+
+#. tumbleweed/lal/lal-devel/description
+msgid ""
+"The LSC Algorithm Library Suite (LALSuite) is comprised of various "
+"gravitational wave data analysis routines written in C following the ISO/IEC "
+"9899:1999 standard.\n"
 "\n"
-"This is the LADSPA version of the plugins."
+"This package provides the header files and sources need for building "
+"software against lal."
+msgstr ""
+
+#. tumbleweed/lalapps/summary
+#. tumbleweed/lalapps/python3-lalapps/summary
+#, fuzzy
+msgid "LSC Algorithm Library Applications"
+msgstr "KDE 教育アプリケーション向けライブラリ"
+
+#. tumbleweed/lalapps/description
+#. tumbleweed/lalapps/python3-lalapps/description
+msgid ""
+"The LSC Algorithm Library Applications for gravitational wave data analysis. "
+"This package contains applications that are built on tools in the LSC "
+"Algorithm Library."
+msgstr ""
+
+#. tumbleweed/lalburst/lalburst-devel/summary
+#, fuzzy
+#| msgid "Development files for LLDB"
+msgid "Development files for LAL Burst"
+msgstr "LLDB 向け開発用ファイル"
+
+#. tumbleweed/lalburst/lalburst-devel/description
+#, fuzzy
+msgid ""
+"This package contains sources and header files needed to build applications "
+"that use the LAL Burst library."
+msgstr ""
+"このパッケージには、 FLAC ライブラリを利用するアプリケーションを開発するのに"
+"必要な、各種ファイルが含まれています。"
+
+#. tumbleweed/lalframe/lalframe-devel/summary
+#, fuzzy
+#| msgid "Development files for LLDB"
+msgid "Development files for LAL Frame"
+msgstr "LLDB 向け開発用ファイル"
+
+#. tumbleweed/lalframe/lalframe-devel/description
+#, fuzzy
+msgid ""
+"This package contains sources and header files needed to build applications "
+"that use the LAL Frame library."
+msgstr ""
+"このパッケージには、 FLAC ライブラリを利用するアプリケーションを開発するのに"
+"必要な、各種ファイルが含まれています。"
+
+#. tumbleweed/lalinference/lalinference-data/summary
+#, fuzzy
+#| msgid "Data files for lensfun/lensfun-devel"
+msgid "Data files for lalinference"
+msgstr "lensfun/lensfun-devel 向けデータファイル"
+
+#. tumbleweed/lalinference/lalinference-data/description
+#, fuzzy
+msgid "This package provides the data files for lalinference."
+msgstr "このパッケージには、 libnova 向けの開発用ファイルが含まれています。"
+
+#. tumbleweed/lalinference/lalinference-devel/summary
+#, fuzzy
+#| msgid "Development files for LLDB"
+msgid "Development files for LAL Inference"
+msgstr "LLDB 向け開発用ファイル"
+
+#. tumbleweed/lalinference/lalinference-devel/description
+#, fuzzy
+msgid ""
+"This package contains sources and header files needed to build applications "
+"that use the LAL Inference library."
+msgstr ""
+"このパッケージには、 FLAC ライブラリを利用するアプリケーションを開発するのに"
+"必要な、各種ファイルが含まれています。"
+
+#. tumbleweed/lalinspiral/lalinspiral-devel/summary
+#, fuzzy
+#| msgid "Development files for LLDB"
+msgid "Development files for LAL Inspiral"
+msgstr "LLDB 向け開発用ファイル"
+
+#. tumbleweed/lalinspiral/lalinspiral-devel/description
+#, fuzzy
+msgid ""
+"This package contains sources and header files needed to build applications "
+"that use the LAL Inspiral library."
+msgstr ""
+"このパッケージには、 FLAC ライブラリを利用するアプリケーションを開発するのに"
+"必要な、各種ファイルが含まれています。"
+
+#. tumbleweed/lalmetaio/lalmetaio-devel/summary
+#, fuzzy
+#| msgid "Development files for LLDB"
+msgid "Development files for LAL metaio"
+msgstr "LLDB 向け開発用ファイル"
+
+#. tumbleweed/lalmetaio/lalmetaio-devel/description
+#, fuzzy
+msgid ""
+"This package contains sources and header files needed to build applications "
+"that use the LAL MetaIO library."
+msgstr ""
+"このパッケージには、 FLAC ライブラリを利用するアプリケーションを開発するのに"
+"必要な、各種ファイルが含まれています。"
+
+#. tumbleweed/lalpulsar/lalpulsar-data/summary
+msgid "Data files for use with LAL Pulsar"
+msgstr ""
+
+#. tumbleweed/lalpulsar/lalpulsar-data/description
+msgid ""
+"This package provides auxiliary data useful for analyses with LAL Pulsar."
+msgstr ""
+
+#. tumbleweed/lalpulsar/lalpulsar-devel/summary
+#, fuzzy
+#| msgid "Development files for lua"
+msgid "Development files for LAL Pulsar"
+msgstr "lua 向け開発用ファイル"
+
+#. tumbleweed/lalpulsar/lalpulsar-devel/description
+#, fuzzy
+msgid ""
+"This package contains sources and header files needed to build applications "
+"that use the LAL Pulsar library."
+msgstr ""
+"このパッケージには、 FLAC ライブラリを利用するアプリケーションを開発するのに"
+"必要な、各種ファイルが含まれています。"
+
+#. tumbleweed/lalsimulation/lalsimulation-data/summary
+#, fuzzy
+#| msgid "Common data required by plugins"
+msgid "Data files required for analyses using lalsimulation"
+msgstr "プラグインが必要とする共通データ"
+
+#. tumbleweed/lalsimulation/lalsimulation-data/description
+msgid ""
+"This package provides the data files used when running analyses involving "
+"lalsimulation."
+msgstr ""
+
+#. tumbleweed/lalsimulation/lalsimulation-devel/summary
+msgid "Headers and source files for building against LALSimulation"
+msgstr ""
+
+#. tumbleweed/lalsimulation/lalsimulation-devel/description
+msgid ""
+"This package provides the header and sources for coding against "
+"LALSimulation."
 msgstr ""
 
 #. tumbleweed/lammps/lammps-data/summary
@@ -9133,6 +10107,133 @@ msgid ""
 "This subpackage contains LAMMPS's potential files"
 msgstr ""
 
+#. tumbleweed/language-detector/summary
+msgid "Language Detection Library for Java"
+msgstr ""
+
+#. tumbleweed/language-detector/description
+msgid "A language detector / language guesser library in Java."
+msgstr ""
+
+#. tumbleweed/language-detector/language-detector-javadoc/summary
+#, fuzzy
+msgid "Javadoc for language-detector"
+msgstr "JSDL4J 向け Javadoc"
+
+#. tumbleweed/language-detector/language-detector-javadoc/description
+#, fuzzy
+msgid "This package contains javadoc for language-detector."
+msgstr ""
+"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+
+#. tumbleweed/languagetool/summary
+msgid "Style and Grammar Checker for 25+ Languages"
+msgstr ""
+
+#. tumbleweed/languagetool/description
+msgid "LanguageTool is a free and open-source grammar checker."
+msgstr ""
+
+#. tumbleweed/languagetool-core/summary
+#. tumbleweed/languagetool-core/languagetool-core-tests/summary
+msgid "Style and Grammar Checker for 25+ Languages - Core package"
+msgstr ""
+
+#. tumbleweed/languagetool-core/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid ""
+"LanguageTool is a free and open-source grammar checker. This package "
+"contains the core library"
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/languagetool-core/languagetool-core-javadoc/summary
+#, fuzzy
+msgid "Javadoc for languagetool-core"
+msgstr "JSDL4J 向け Javadoc"
+
+#. tumbleweed/languagetool-core/languagetool-core-javadoc/description
+#, fuzzy
+msgid "This package contains javadoc for languagetool-core."
+msgstr ""
+"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+
+#. tumbleweed/languagetool-core/languagetool-core-tests/description
+msgid ""
+"LanguageTool is a free and open-source grammar checker. This package "
+"contains the test-jar for core library"
+msgstr ""
+
+#. tumbleweed/languagetool/languagetool-javadoc/summary
+#, fuzzy
+msgid "Javadoc for languagetool"
+msgstr "JSDL4J 向け Javadoc"
+
+#. tumbleweed/languagetool/languagetool-javadoc/description
+#, fuzzy
+msgid "This package contains javadoc for languagetool."
+msgstr ""
+"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+
+#. tumbleweed/languagetool/languagetool-libs/summary
+msgid "Style and Grammar Checker for 25+ Languages (libraries)"
+msgstr ""
+
+#. tumbleweed/languagetool/languagetool-libs/description
+msgid ""
+"LanguageTool is a free and open-source grammar checker.\n"
+"\n"
+"This package contains the jar files built by languagetool project."
+msgstr ""
+
+#. tumbleweed/languagetool-tools/summary
+msgid "Style and Grammar Checker for 25+ Languages - Tools package"
+msgstr ""
+
+#. tumbleweed/languagetool-tools/description
+msgid ""
+"LanguageTool is a free and open-source grammar checker. This package "
+"contains the tools for dictionary developers"
+msgstr ""
+
+#. tumbleweed/languagetool-tools/languagetool-tools-javadoc/summary
+#, fuzzy
+msgid "Javadoc for languagetool-tools"
+msgstr "ldapjdk 向け Javadoc"
+
+#. tumbleweed/languagetool-tools/languagetool-tools-javadoc/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid "This package contains javadoc for languagetool-tools."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lapack-man/summary
+#, fuzzy
+#| msgid "Manpages for LAPACK"
+msgid "Manpages for LAPACK and BLAS"
+msgstr "LAPACK のマニュアルページ"
+
+#. tumbleweed/lapack-man/description
+#, fuzzy
+msgid ""
+"The lapack-man package contains documentation for LAPACK (Linear Algebra "
+"PACKage) and BLAS (Basic Linear Algebra Subprograms) routines, in the form "
+"of man pages."
+msgstr ""
+"このパッケージには、 readline ライブラリの使用方法に関する内容と、readline ラ"
+"イブラリのインターフェイスを利用した場合のプログラミングについて説明した、ド"
+"キュメンテーションが含まれています。"
+
+#. tumbleweed/lapack/lapacke-devel-static/summary
+#, fuzzy
+msgid "LAPACKE static libraries"
+msgstr "MariaDB 開発用ヘッダファイルとライブラリ"
+
+#. tumbleweed/lapack/lapacke-devel-static/description
+#, fuzzy
+msgid "LAPACKE development files - static libraries."
+msgstr "libibcm 向けの開発ファイルです。"
+
 #. tumbleweed/laptop-mode-tools/laptop-mode-tools-gui/summary
 msgid "Graphical User Interface for the laptop mode tools"
 msgstr ""
@@ -9143,18 +10244,219 @@ msgstr ""
 msgid "This package contains a graphical user interface for laptop-mode-tools."
 msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
 
-#. tumbleweed/lbreakouthd/summary
-#, fuzzy
-msgid "Classic Breakout-Style Game"
-msgstr "戦略型ボードゲーム"
+#. tumbleweed/lash/summary
+msgid "Linux Audio Session Handler"
+msgstr "Linux オーディオセッション処理"
 
-#. tumbleweed/lbreakouthd/description
+#. tumbleweed/lash/description
+#, fuzzy
+#| msgid ""
+#| "LASH (formerly LADCCA) is a session management system for JACK and ALSA "
+#| "audio applications on GNU/Linux. Its aim is to allow you to have many "
+#| "different audio programs running at once and to save the setup, close "
+#| "them down, then reload the setup at some other time."
 msgid ""
-"LBreakoutHD is a scaleable 16:9 remake of LBreakout2, a Breakout-style "
-"arcade game for Linux featuring a number of added graphical enhancements and "
-"effects. You control a paddle at the bottom of the playing field and must "
-"destroy bricks at the top by bouncing balls against them."
+"LASH (formerly LADCCA) is a session management system for JACK and ALSA "
+"audio applications on GNU/Linux. Its aim is to allow you to have many "
+"different audio programs running at once and to save the setup, close them "
+"down, then reload the setup at some other time."
 msgstr ""
+"LASH (以前は LADCCA という名前でした) は GNU/Linux 上での JACK および ALSA "
+"オーディオ アプリケーション向けのセッション管理システムです。本アプリケーショ"
+"ンは多数の 異なるオーディオアプリケーションを同時に実行し、設定を保存しておい"
+"て次回の 起動時に設定を読み込み直すといった機能を目指しています。"
+
+#. tumbleweed/lash/lash-devel/summary
+#. tumbleweed/lash/liblash1/summary
+#. tumbleweed/lash/liblash1-32bit/summary
+msgid "Development package for LASH"
+msgstr "LASH の開発パッケージ"
+
+#. tumbleweed/lash/lash-devel/description
+#, fuzzy
+msgid "This package contains the development files for the LASH system."
+msgstr "このパッケージには、 libnova 向けの開発用ファイルが含まれています。"
+
+#. tumbleweed/last-resort-font/summary
+msgid ""
+"A special-purpose font that includes a collection of glyphs to represent "
+"types of Unicode characters"
+msgstr ""
+
+#. tumbleweed/last-resort-font/description
+msgid ""
+"Last Resort is a special-purpose font that includes a collection of glyphs "
+"to represent types of Unicode characters. These glyphs are specifically "
+"designed to allow users to recognize that a code point is one of the "
+"following: \n"
+"* A specific type of Unicode character\n"
+"* In the PUA (Private Use Area) for which no agreement exists\n"
+"* Unassigned (reserved for future assignment)\n"
+"* A noncharacter"
+msgstr ""
+
+#. tumbleweed/latex2rtf/description
+msgid ""
+"LaTeX2RTF is a translator program to convert LaTeX formatted text files into "
+"“rich text format” (RTF) files. RTF is a published standard format by "
+"Microsoft. This standard can be ambiguous in places, but RTF is supported by "
+"many text editors. Specifically, it is supported by Microsoft Word. This "
+"means that the conversion of a LaTeX document to RTF allows anyone with a "
+"copy of Word to ponvert LaTeX files to Word .doc or .docx files."
+msgstr ""
+
+#. tumbleweed/lcdf-typetools/summary
+msgid "Programs to manipulate OpenType and multiple-master fonts"
+msgstr ""
+
+#. tumbleweed/lcdf-typetools/description
+msgid ""
+"This package contains four tools for working with OpenType fonts:\n"
+"\n"
+" cfftot1    allows you to translate Compact Font Format (CFF) or             "
+"PostScript-flavored OpenType fonts into PostScript             Type 1 font "
+"format\n"
+"\n"
+" otfinfo    reports information about OpenType fonts, such as "
+"the             features they support and the contents of their "
+"``size''             optical size option\n"
+"\n"
+" otftotfm   allows you to create TeX font metrics and encodings "
+"for             using OpenType fonts\n"
+"\n"
+" t1dotlessj creates a Type 1 font with a single character --             the "
+"dotless j corresponding to the specified design\n"
+"\n"
+" t1lint     checks a Type 1 font for correctness (preliminary)\n"
+"\n"
+" t1reencode reencodes a Type 1 font, replacing its internal encoding "
+"with             one you specify\n"
+"\n"
+" t1testpage creates a PostScript test page for a specified             font "
+"file (preliminary)\n"
+"\n"
+"The package now includes programs for working with multiple-master fonts "
+"formerly distributed as mminstance.  These tools allow you to use multiple-"
+"master fonts with programs that require single-master fonts (afm2tfm, ps2pk, "
+"fontinst, etc.).  Both programs work fine with fonts that contain "
+"intermediate masters (e.g., Adobe Jenson MM and Adobe Kepler MM).\n"
+"\n"
+"mmafm        creates an AFM (Adobe font metric) file corresponding "
+"to              a single instance of a multiple-master font.  It "
+"reads              (and therefore requires) the AMFM and AFM "
+"files              distributed with the font.\n"
+"\n"
+"mmpfb        creates a normal, single-master font program that "
+"looks              like an instance of a multiple-master font.  It "
+"reads              the multiple-master font program in PFA or PFB format."
+msgstr ""
+
+#. tumbleweed/ldap-sdk/summary
+msgid "LDAP SDK"
+msgstr ""
+
+#. tumbleweed/ldap-sdk/description
+#, fuzzy
+#| msgid ""
+#| "The Mozilla LDAP SDKs enable you to write applications that access, "
+#| "manage, and update the information stored in an LDAP directory."
+msgid ""
+"The Mozilla LDAP SDKs enable you to write applications which access, manage, "
+"and update the information stored in an LDAP directory."
+msgstr ""
+"Mozilla LDAP 開発キットを使用することで、 LDAP ディレクトリ内に保存された情報"
+"にアクセスしたり 管理したり、更新したりするアプリケーションを作成することがで"
+"きるようになります。"
+
+#. tumbleweed/ldap-sdk/ldap-sdk-javadoc/summary
+#. tumbleweed/ldap-sdk/ldap-sdk-javadoc/description
+#, fuzzy
+#| msgid "Javadoc for ldapjdk"
+msgid "Javadoc for ldap-sdk"
+msgstr "ldapjdk 向け Javadoc"
+
+#. tumbleweed/ldas-tools-al/ldas-tools-al-devel/summary
+#, fuzzy
+msgid "Headers and source files for developing with ldas-tools-al"
+msgstr ""
+"hunspell での開発を行なうのに必要なヘッダファイルとライブラリファイルです。"
+
+#. tumbleweed/ldas-tools-al/ldas-tools-al-devel/description
+msgid ""
+"This package provides the headers and sources needed for developing programs "
+"using ldas-tools-al - LDAS tools abstraction toolkit."
+msgstr ""
+
+#. tumbleweed/ldas-tools-al-swig/summary
+#. tumbleweed/ldas-tools-al-swig/python3-ldas-tools-al-swig/summary
+msgid ""
+"LDAS (LIGO Data Analysis System) tools abstraction toolkit language bindings"
+msgstr ""
+
+#. tumbleweed/ldas-tools-al-swig/description
+msgid ""
+"This provides different language bindings for the LDAS tools abstaction "
+"library.\n"
+"\n"
+"Provides: python2-ldas-tools-al-swig = 2.6.7-1.1"
+msgstr ""
+
+#. tumbleweed/ldas-tools-cmake/summary
+msgid ""
+"A collection of CMake functions used by LDAS (LIGO Data Analysis System) "
+"Tools"
+msgstr ""
+
+#. tumbleweed/ldas-tools-cmake/description
+msgid ""
+"LDAS (LIGO Data Analysis System) is a collection of libraries and "
+"executables aid in the processing of gravitation wave data sets. ldas-tools-"
+"cmake provides the a collection of cmake functions used by LDAS."
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-c-devel/summary
+msgid "Headers and source files for developing with ldas-tools-framecpp's in C"
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-c-devel/description
+msgid ""
+"This package provides the headers and sources needed for developing programs "
+"with ldas-tools-framecpp in C."
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-devel/summary
+#, fuzzy
+msgid "Headers and source files for developing with ldas-tools-framecpp"
+msgstr ""
+"hunspell での開発を行なうのに必要なヘッダファイルとライブラリファイルです。"
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-devel/description
+msgid ""
+"This package provides the headers and sources needed for developing programs "
+"using ldas-tools-framecpp - a toolkit providing C++ bindings for libframe."
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-doc/summary
+msgid "HTML documentation for ldas-tools-framecpp API"
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-doc/description
+#, fuzzy
+msgid ""
+"This package provides the API documentation for ldas-tools-framecpp in HTML "
+"format."
+msgstr ""
+"このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-utils/summary
+msgid "Command line tools for use with framecpp"
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/ldas-tools-framecpp-utils/description
+#, fuzzy
+#| msgid "This package provides a set of default configurations for LXDE"
+msgid "This package provides command line tools  for use with framecpp."
+msgstr " LXDE 向けの既定の設定集"
 
 #. tumbleweed/leafnode/summary
 #, fuzzy
@@ -9179,16 +10481,15 @@ msgstr ""
 "です。 NNTP の一部の機能に対応しているほか、 プロバイダのニュースサーバに定期"
 "的なアクセスを行なう機能を備えています。"
 
-#. tumbleweed/leiningen/summary
-msgid "Automation for Clojure projects"
+#. tumbleweed/leocad/summary
+msgid "CAD program for creating virtual LEGO models"
 msgstr ""
 
-#. tumbleweed/leiningen/description
+#. tumbleweed/leocad/description
 msgid ""
-"Working on Clojure projects with tools designed for Java can be an exercise "
-"in frustration. With Leiningen, builds can be describe with Clojure. "
-"Leiningen handles fetching dependencies, running tests, packaging projects "
-"and can be extended with a number of plugins."
+"CAD program for creating virtual LEGO models. It has an intuitive interface, "
+"designed to allow new users to start creating new models without having to "
+"spend too much time learning the application."
 msgstr ""
 
 #. tumbleweed/leveldb/summary
@@ -9204,38 +10505,236 @@ msgstr ""
 "\n"
 "このパッケージには、 C 言語向けの開発用ファイルが含まれています。"
 
-#. tumbleweed/live555/libBasicUsageEnvironment1/summary
-#. tumbleweed/live555/libliveMedia66/summary
-msgid "Basic Usage Environment library of live555 streaming media"
-msgstr ""
+#. tumbleweed/levmar/levmar-devel/summary
+#, fuzzy
+#| msgid "Development files for liblodepng"
+msgid "Development files for levmar library, and demo program"
+msgstr "liblodepng 向け開発用ファイル"
 
-#. tumbleweed/live555/libUsageEnvironment3/summary
-msgid "Usage Environment library of live555 streaming media"
-msgstr ""
+#. tumbleweed/levmar/levmar-devel/description
+#, fuzzy
+msgid "Development files for the levmar library, and demo program."
+msgstr "unicap ライブラリ向け開発用ファイル"
 
-#. tumbleweed/live555/libgroupsock8/summary
-msgid "Group sock library of live555 streaming media"
-msgstr ""
-
-#. tumbleweed/lightstep-tracer-cpp/liblightstep_tracer0/summary
-msgid "C++ library for LightStep distributed tracing"
-msgstr ""
-
-#. tumbleweed/lightstep-tracer-cpp/liblightstep_tracer0/description
+#. tumbleweed/lha/description
 msgid ""
-"Shared library for lightstep-tracer-cpp - C++ library for LightStep "
-"distributed tracing."
+"Lha is a packer comparable to ZIP (PKZIP), ZOO, and others. It has been "
+"included for compatibility reasons only. Use GZIP for general archiving "
+"purposes, because it is the standard for Linux."
 msgstr ""
 
-#. tumbleweed/lodepng/liblodepng-r84/summary
+#. tumbleweed/lapack/libcblas3/summary
+#. tumbleweed/lapack/libcblas3-32bit/summary
+#, fuzzy
+#| msgid "BLAS Shared Library"
+msgid "CBLAS Shared Library"
+msgstr "BLAS 共有ライブラリ"
+
+#. tumbleweed/ldas-tools-framecpp/libframecpp/summary
+msgid ""
+"Shared lib for ldas-tools-framecpp - C++ bindings for dealing with frame data"
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/libframecpp/description
+msgid ""
+"This package provides the shared library for ldas-tools-framecpp - a toolkit "
+"providing C++ bindings for working with frame data."
+msgstr ""
+
+#. tumbleweed/ldas-tools-framecpp/libframecppc3/summary
+#, fuzzy
+msgid "Shared lib for C bindings for ldas-tools-framecpp"
+msgstr "sat ソルバー向け Perl バインディングです。"
+
+#. tumbleweed/ldas-tools-framecpp/libframecppc3/description
+#, fuzzy
+#| msgid "This package contains the library for the LASH system."
+msgid ""
+"This package provides the shared library for the C wrappers of ldas-tools-"
+"framecpp."
+msgstr "このパッケージには LASH システム向けのライブラリが含まれています。"
+
+#. tumbleweed/lal/liblal20/summary
+#, fuzzy
+msgid "Shared library for LAL"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lal/liblal20/description
+msgid ""
+"The LSC Algorithm Library Suite (LALSuite) is comprised of various "
+"gravitational wave data analysis routines written in C following the ISO/IEC "
+"9899:1999 standard.\n"
+"\n"
+"This package provides the shared library for lal."
+msgstr ""
+
+#. tumbleweed/lalburst/liblalburst6/summary
+#, fuzzy
+msgid "Shared library for LAL Burst"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lalburst/liblalburst6/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid ""
+"This package contains the shared-object libraries needed to run applications "
+"that use the LAL Burst library."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lalframe/liblalframe11/summary
+#, fuzzy
+msgid "Shared library for LAL Frame"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lalframe/liblalframe11/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid ""
+"This package contains the shared-object libraries needed to run applications "
+"that use the LAL Frame library."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lalinference/liblalinference21/summary
+#, fuzzy
+msgid "Shared library for LAL Inference"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lalinference/liblalinference21/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid ""
+"This package contains the shared-object libraries needed to run applications "
+"that use the LAL Inference library."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lalinspiral/liblalinspiral15/summary
+#, fuzzy
+msgid "Shared library for LAL Inspiral"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lalinspiral/liblalinspiral15/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid ""
+"This package contains the shared-object libraries needed to run applications "
+"that use the LAL Inspiral library."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lalmetaio/liblalmetaio8/summary
+#. tumbleweed/metaio/libmetaio1/summary
+msgid "Shared library for libmetaio - LIGO Light-Weight XML library"
+msgstr ""
+
+#. tumbleweed/lalmetaio/liblalmetaio8/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid ""
+"This package contains the shared-object libraries needed to run applications "
+"that use the LAL MetaIO library."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lalpulsar/liblalpulsar21/summary
+#, fuzzy
+msgid "Shared library for LAL Pulsar"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lalpulsar/liblalpulsar21/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid ""
+"This package contains the shared-object libraries needed to run applications "
+"that use the LAL Pulsar library."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lalsimulation/liblalsimulation23/summary
+#, fuzzy
+msgid "Shared library for LALSimulation"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lalsimulation/liblalsimulation23/description
+#, fuzzy
+#| msgid "This package contains the shared libraries needed for LLVM."
+msgid "This package provides the shared library for LALSimulation."
+msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+
+#. tumbleweed/lal/liblalsupport14/summary
+#, fuzzy
+msgid "Shared library for LALSupport"
+msgstr "libyaml 向け共有ライブラリ"
+
+#. tumbleweed/lal/liblalsupport14/description
+msgid ""
+"The LSC Algorithm Library Suite (LALSuite) is comprised of various "
+"gravitational wave data analysis routines written in C following the ISO/IEC "
+"9899:1999 standard.\n"
+"\n"
+"This package provides the shared library for lalsupport."
+msgstr ""
+
+#. tumbleweed/lash/liblash1/description
+#. tumbleweed/lash/liblash1-32bit/description
+msgid "This package contains the library for the LASH system."
+msgstr "このパッケージには LASH システム向けのライブラリが含まれています。"
+
+#. tumbleweed/ldas-tools-al/libldastoolsal7/summary
+msgid "Shared lib for ldas-tools-al - LDAS tools abstraction toolkit"
+msgstr ""
+
+#. tumbleweed/ldas-tools-al/libldastoolsal7/description
+msgid ""
+"This package provides the shared library for ldas-tools-al - LDAS tools "
+"abstraction toolkit."
+msgstr ""
+
+#. tumbleweed/levmar/liblevmar2/summary
+msgid "Levenberg-Marquardt nonlinear least squares algorithm"
+msgstr ""
+
+#. tumbleweed/levmar/liblevmar2/description
+msgid ""
+"levmar is a native ANSI C implementation of the Levenberg-Marquardt "
+"optimization algorithm.  Both unconstrained and constrained (under linear "
+"equations, inequality and box constraints) Levenberg-Marquardt variants are "
+"included.  The LM algorithm is an iterative technique that finds a local "
+"minimum of a function that is expressed as the sum of squares of nonlinear "
+"functions.  It has become a standard technique for nonlinear least-squares "
+"problems and can be thought of as a combination of steepest descent and the "
+"Gauss-Newton method.  When the current solution is far from the correct on, "
+"the algorithm behaves like a steepest descent method: slow, but guaranteed "
+"to converge.  When the current solution is close to the correct solution, it "
+"becomes a Gauss-Newton method"
+msgstr ""
+
+#. tumbleweed/lime/liblime0/summary
+msgid "Instant Message End-to-End Encryption Library"
+msgstr ""
+
+#. tumbleweed/lime/liblime0/description
+msgid ""
+"LIME is an encryption library for one-to-one and group instant messaging, "
+"allowing users to exchange messages privately and asynchronously. It "
+"supports multiple devices per user and multiple users per device.\n"
+"\n"
+"LIME offers two major security benefits to instant messaging users:   * End-"
+"to-end encryption, which means that only you and your     contact (and not "
+"even the server) can decrypt the content that     you shared.   * Perfect "
+"forward secrecy, which ensures that encrypted messages     cannot be "
+"decrypted by a third party, even if a key is     compromised in the future."
+msgstr ""
+
+#. tumbleweed/lldpd/liblldpctl4/summary
+msgid "Implementation of IEEE 802.1ab"
+msgstr ""
+
+#. tumbleweed/lodepng/liblodepng-r207/summary
 msgid "PNG encoder and decoder"
 msgstr ""
 
-#. tumbleweed/lodepng/liblodepng-r84/description
+#. tumbleweed/lodepng/liblodepng-r207/description
 msgid "A PNG encoder and decoder library."
 msgstr ""
 
-#. tumbleweed/lrslib/liblrs-7_0a0/description
+#. tumbleweed/lrslib/liblrs1/description
 #, fuzzy
 msgid ""
 "lrslib is a library for the reverse search algorithm for vertex enumeration/"
@@ -9250,10 +10749,6 @@ msgstr ""
 "このサブパッケージには、共有ライブラリの形式で提供される圧縮および展開機能が"
 "含まれています。"
 
-#. tumbleweed/lttng-ust/liblttng-ust-python-agent0/summary
-msgid "Linux Trace Toolkit Userspace Tracer Python agent library"
-msgstr ""
-
 #. tumbleweed/lunar-calendar/liblunar-calendar-3_0-1/summary
 #, fuzzy
 #| msgid "The Ruby standard library"
@@ -9265,18 +10760,6 @@ msgstr "Ruby 共有ライブラリ"
 msgid "This package contains the libraries for lunar-calendar."
 msgstr ""
 "このパッケージには、 xfwm4 向けの HTML ドキュメンテーションが含まれています。"
-
-#. tumbleweed/lunar-date/liblunar-date-3_0-1/summary
-#. tumbleweed/lunar-date/summary
-#, fuzzy
-#| msgid "The Ruby standard library"
-msgid "Chinese Lunar calendar library"
-msgstr "Ruby 共有ライブラリ"
-
-#. tumbleweed/lunar-date/liblunar-date-3_0-1/description
-#. tumbleweed/lunar-date/description
-msgid "Library to support date conversion from/to chinese lunar calendar"
-msgstr ""
 
 #. tumbleweed/lzo/liblzo2-2/description
 #. tumbleweed/lzo/liblzo2-2-32bit/description
@@ -9298,26 +10781,49 @@ msgstr ""
 "LZO はリアルタイムでのデータ圧縮と展開に適切な仕組みになっています。つまり、"
 "データの圧縮率よりも速度に主眼を置いています。"
 
-#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-devel/summary
+#. tumbleweed/lime/lime-devel/summary
 #, fuzzy
-msgid "Development files for the LightStep C++ library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+#| msgid "Development files for littleb"
+msgid "Development files for lime"
+msgstr "littleb 向け開発用ファイル"
 
-#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-devel/description
-#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-source/description
+#. tumbleweed/lime/lime-devel/description
 msgid ""
-"Development files for lightstep-tracer-cpp - C++ library for LightStep "
-"distributed tracing."
+"LIME is an encryption library for one-to-one and group instant messaging, "
+"allowing users to exchange messages privately and asynchronously. It "
+"supports multiple devices per user and multiple users per device.\n"
+"\n"
+"The soci development package includes the header files, libraries, "
+"development tools necessary for compiling and linking applications which "
+"will use lime."
 msgstr ""
 
-#. tumbleweed/lightstep-tracer-cpp/lightstep-tracer-cpp-source/summary
-msgid "Source code of the LightStep C++ library"
+#. tumbleweed/linstor/linstor-common/summary
+msgid "Common files shared between controller and satellite"
 msgstr ""
 
-#. tumbleweed/linssid/description
+#. tumbleweed/linstor/linstor-common/description
 msgid ""
-"LinSSID is graphically and functionally similar to Inssider (from Microsoft "
-"Windows). It is written in C++ using Linux wireless tools and Qt5."
+"Linstor shared components between linstor-controller and linstor-satellite"
+msgstr ""
+
+#. tumbleweed/linstor/linstor-controller/summary
+msgid "Linstor controller specific files"
+msgstr ""
+
+#. tumbleweed/linstor/linstor-controller/description
+msgid ""
+"Linstor controller manages linstor satellites and persistent data storage."
+msgstr ""
+
+#. tumbleweed/linstor/linstor-satellite/summary
+msgid "Linstor satellite specific files"
+msgstr ""
+
+#. tumbleweed/linstor/linstor-satellite/description
+msgid ""
+"Linstor satellite, communicates with linstor-controller and creates drbd "
+"resource files."
 msgstr ""
 
 #. tumbleweed/linux32/description
@@ -9382,6 +10888,14 @@ msgstr ""
 "したりして、 jscalで利用できるようにするツール\n"
 "* jstest - ジョイスティックデバイスのテスト"
 
+#. tumbleweed/liquidhaskell/summary
+msgid "Liquid Types for Haskell"
+msgstr ""
+
+#. tumbleweed/liquidhaskell/description
+msgid "Liquid Types for Haskell."
+msgstr ""
+
 #. tumbleweed/litetran/summary
 #, fuzzy
 #| msgid "KDE Translation Editor"
@@ -9429,50 +10943,76 @@ msgid ""
 "scripts."
 msgstr ""
 
-#. tumbleweed/llvm7/llvm7-polly/summary
-#. tumbleweed/llvm8/llvm8-polly/summary
-#. tumbleweed/llvm9/llvm9-polly/summary
-msgid "LLVM Framework for High-Level Loop and Data-Locality Optimizations"
+#. tumbleweed/lldpd/lldpd-devel/summary
+msgid "Headers for the lldpd implementation"
 msgstr ""
 
-#. tumbleweed/llvm7/llvm7-polly/description
-#. tumbleweed/llvm8/llvm8-polly/description
-#. tumbleweed/llvm9/llvm9-polly/description
+#. tumbleweed/llvm/llvm-opt-viewer/description
+msgid ""
+"Set of tools for visualising the LLVM optimization records generated with -"
+"fsave-optimization-record. Used for compiler-assisted performance analysis.\n"
+"\n"
+"This package is a dummy package that depends on the version of llvm-opt-"
+"viewer that openSUSE currently supports.  Packages that don't require a "
+"specific LLVM version should depend on this."
+msgstr ""
+
+#. tumbleweed/llvm/llvm-polly/description
 msgid ""
 "Polly is a high-level loop and data-locality optimizer and optimization "
 "infrastructure for LLVM. It uses an abstract mathematical representation "
 "based on integer polyhedra to analyze and optimize the memory access pattern "
 "of a program. Polly can currently perform classical loop transformations, "
 "especially tiling and loop fusion to improve data-locality. It can also "
-"exploit OpenMP level parallelism and expose SIMDization opportunities."
+"exploit OpenMP level parallelism and expose SIMDization opportunities.\n"
+"\n"
+"This package is a dummy package that depends on the version of llvm-polly "
+"that openSUSE currently supports.  Packages that don't require a specific "
+"LLVM version should depend on this."
 msgstr ""
 
-#. tumbleweed/llvm9/llvm9-doc/summary
-#, fuzzy
-#| msgid "Documentation for log4c"
-msgid "Documentation for LLVM"
-msgstr "log4c 向けドキュメンテーション"
-
-#. tumbleweed/llvm9/llvm9-doc/description
-#, fuzzy
-#| msgid "This package contains additional documentation of the GNet library."
-msgid "This package contains documentation for the LLVM infrastructure."
-msgstr "このパッケージには gnet ライブラリの追加文書が含まれています。"
-
-#. tumbleweed/lnav/summary
-msgid "Logfile Navigator"
-msgstr ""
-
-#. tumbleweed/lnav/description
+#. tumbleweed/llvm/llvm-polly-devel/description
 msgid ""
-"The Logfile Navigator, lnav for short, is a curses-based tool for viewing "
-"and analyzing log files. The value added by lnav over text viewers or "
-"editors is that it takes advantage of any semantic information that can be "
-"gleaned from the log file, such as timestamps and log levels. Using this "
-"extra semantic information, lnav can do things like interleaving messages "
-"from different files, generate histograms of messages over time, and provide "
-"hotkeys for navigating through the file. These features are meant to allow "
-"the user to quickly and efficiently focus on problems."
+"This package contains the development files for Polly.\n"
+"\n"
+"This package is a dummy package that depends on the version of llvm-polly-"
+"devel that openSUSE currently supports.  Packages that don't require a "
+"specific LLVM version should depend on this."
+msgstr ""
+
+#. tumbleweed/lmms/summary
+msgid "Linux MultiMedia Studio"
+msgstr ""
+
+#. tumbleweed/lmms/description
+msgid ""
+"LMMS is a free cross-platform music studio which allows you to produce music "
+"with your computer. This includes the creation of melodies and beats, the "
+"synthesis and mixing of sounds, and arranging of samples.\n"
+"\n"
+"You need to install lmms-vst for VST plugins"
+msgstr ""
+
+#. tumbleweed/lmms/lmms-devel/summary
+msgid "Headers to create LMMS plugins"
+msgstr ""
+
+#. tumbleweed/lmms/lmms-devel/description
+msgid ""
+"Headers that provide access to the LMMS features. Install it if you plan to "
+"create a LMMS plugin."
+msgstr ""
+
+#. tumbleweed/lmms/lmms-vst/summary
+msgid "Wine dependent VST plugins"
+msgstr ""
+
+#. tumbleweed/lmms/lmms-vst/description
+msgid ""
+"LMMS is a free cross-platform music studio which allows you to produce music "
+"with your computer. This includes the creation of melodies and beats, the "
+"synthesis and mixing of sounds, and arranging of samples. This package "
+"contains the wine dependent VST plugins"
 msgstr ""
 
 #. tumbleweed/loadlin/summary
@@ -9489,6 +11029,16 @@ msgid ""
 "and Hans Lermen (LOADLIN)."
 msgstr ""
 
+#. tumbleweed/local-npm-registry/summary
+msgid "Localhost-only version of NPM registry"
+msgstr ""
+
+#. tumbleweed/local-npm-registry/description
+msgid ""
+"localhost-only npm registry serves NPM packages on localhost address "
+"allowing running of \"npm install\" in a non-networked environment"
+msgstr ""
+
 #. tumbleweed/lodepng/lodepng-devel/summary
 msgid "Development files for liblodepng"
 msgstr "liblodepng 向け開発用ファイル"
@@ -9497,91 +11047,6 @@ msgstr "liblodepng 向け開発用ファイル"
 #, fuzzy
 msgid "Development files for liblodepng, a PNG encoder and decoder library."
 msgstr "X ビデオ拡張ライブラリ向け開発用ファイル"
-
-#. tumbleweed/log4j/summary
-#, fuzzy
-#| msgid "Java logging tool"
-msgid "Java logging package"
-msgstr "Java ログツール"
-
-#. tumbleweed/log4j/log4j-javadoc/summary
-#, fuzzy
-#| msgid "Documentation for log4j."
-msgid "API documentation for log4j"
-msgstr "7.0 文書"
-
-#. tumbleweed/log4j/log4j-javadoc/description
-#, fuzzy
-#| msgid "Documentation for log4j."
-msgid "API documentation for log4j."
-msgstr "7.0 文書"
-
-#. tumbleweed/log4j/log4j-jcl/summary
-msgid "Apache Log4j Commons Logging Bridge"
-msgstr ""
-
-#. tumbleweed/log4j/log4j-jcl/description
-msgid "Apache Log4j Commons Logging Bridge."
-msgstr ""
-
-#. tumbleweed/log4j/log4j-slf4j/summary
-msgid "Binding between LOG4J 2 API and SLF4J"
-msgstr ""
-
-#. tumbleweed/log4j/log4j-slf4j/description
-msgid "Binding between LOG4J 2 API and SLF4J."
-msgstr ""
-
-#. tumbleweed/logback/summary
-#, fuzzy
-msgid "A Java logging library"
-msgstr "簡単に使えるログ記録ライブラリ"
-
-#. tumbleweed/logback/description
-msgid ""
-"Logback is intended as a successor to the popular log4j project. At present "
-"time, logback is divided into three modules, logback-core, logback-classic "
-"and logback-access.\n"
-"\n"
-"The logback-core module lays the groundwork for the other two modules. The "
-"logback-classic module can be assimilated to a significantly improved "
-"version of log4j. Moreover, logback-classic natively implements the SLF4J "
-"API so that you can readily switch back and forth between logback and other "
-"logging frameworks such as log4j or java.util.logging (JUL).\n"
-"\n"
-"The logback-access module integrates with Servlet containers, such as Tomcat "
-"and Jetty, to provide HTTP-access log functionality. Note that you could "
-"easily build your own module on top of logback-core."
-msgstr ""
-
-#. tumbleweed/logback/logback-access/summary
-msgid "Logback-access module for Servlet integration"
-msgstr ""
-
-#. tumbleweed/logback/logback-access/description
-msgid ""
-"The logback-access module integrates with Servlet containers, such as Tomcat "
-"and Jetty, to provide HTTP-access log functionality. Note that you could "
-"easily build your own module on top of logback-core."
-msgstr ""
-
-#. tumbleweed/logback/logback-examples/summary
-msgid "Logback Examples Module"
-msgstr ""
-
-#. tumbleweed/logback/logback-examples/description
-msgid "logback-examples module."
-msgstr ""
-
-#. tumbleweed/logback/logback-javadoc/summary
-#, fuzzy
-msgid "Javadoc for logback"
-msgstr "JSDL4J 向け Javadoc"
-
-#. tumbleweed/logback/logback-javadoc/description
-#, fuzzy
-msgid "API documentation for the Logback library"
-msgstr "7.0 文書"
 
 #. tumbleweed/logrotate/summary
 #, fuzzy
@@ -9637,20 +11102,6 @@ msgid ""
 "to use in programs can be displayed."
 msgstr ""
 
-#. tumbleweed/lostfeathers/summary
-msgid "Help a bird to recover his magical feathers"
-msgstr ""
-
-#. tumbleweed/lostfeathers/description
-msgid ""
-"The Lost Feathers\n"
-"\n"
-"You control a boy and his bird named Py. Your goal is to recover Py's "
-"magical feathers, which were stolen by Evil Businessman.\n"
-"\n"
-"Help a bird to recover his magical feathers."
-msgstr ""
-
 #. tumbleweed/lrslib/description
 #, fuzzy
 msgid ""
@@ -9686,37 +11137,6 @@ msgstr ""
 
 #. tumbleweed/lsb/summary
 msgid "LSB Fake Package"
-msgstr ""
-
-#. tumbleweed/lsp-plugins/summary
-msgid "Linux Studio Plugins Project (Stand-alone)"
-msgstr ""
-
-#. tumbleweed/lsp-plugins/description
-msgid ""
-"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
-"compatible with LADSPA, LV2 and LinuxVST formats.\n"
-"\n"
-"The basic idea is to fill the lack of good and useful plugins under the GNU/"
-"Linux platform."
-msgstr ""
-
-#. tumbleweed/lsp-plugins/lsp-plugins-common/summary
-msgid "Linux Studio Plugins (Common files)"
-msgstr ""
-
-#. tumbleweed/lsp-plugins/lsp-plugins-common/description
-#, fuzzy
-#| msgid "Development files for log4cplus"
-msgid "Common files for lsp-plugins."
-msgstr "log4cplus 向け開発用ファイル"
-
-#. tumbleweed/lsp-plugins/lsp-plugins-doc/summary
-msgid "Linux Studio Plugins Documents"
-msgstr ""
-
-#. tumbleweed/lsp-plugins/lsp-plugins-doc/description
-msgid "Documents for Linux Studio Plugins Project"
 msgstr ""
 
 #. tumbleweed/ltrace/summary
@@ -9765,11 +11185,6 @@ msgstr ""
 "なお、本プログラムは作成途中のものであり、たとえば子プロセスの追跡などは、う"
 "まくいかなかったり期待通りに動作しなかったりすることに注意してください。"
 
-#. tumbleweed/lttng-modules/lttng-modules-kmp-default/summary
-#. tumbleweed/lttng-modules/lttng-modules-kmp-pae/summary
-msgid "LTTng Kernel Tracing Modules"
-msgstr ""
-
 #. tumbleweed/ltxml/summary
 msgid "Integrated Set of XML Tools"
 msgstr ""
@@ -9811,23 +11226,223 @@ msgstr ""
 "このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
 "ファイルが含まれています。"
 
-#. tumbleweed/lua51-compat-5.3/summary
-#. tumbleweed/lua53-compat-5.3/summary
-msgid "Lua-5.3-style APIs for Lua 5.2 and 5.1"
+#. tumbleweed/lua51-alt-getopt/description
+#. tumbleweed/lua53-alt-getopt/description
+#. tumbleweed/lua54-alt-getopt/description
+msgid ""
+"alt-getopt is a module for Lua programming language for processing "
+"application's arguments the same way BSD/GNU getopt_long(3) functions do.  "
+"The main goal is compatibility with SUS \"Utility Syntax Guidelines\" "
+"guidelines 3-13."
+msgstr ""
+
+#. tumbleweed/lua51-argparse/summary
+#. tumbleweed/lua51-dkjson/summary
+#. tumbleweed/lua53-argparse/summary
+#. tumbleweed/lua53-dkjson/summary
+#. tumbleweed/lua54-argparse/summary
+#. tumbleweed/lua54-dkjson/summary
+msgid "A feature-rich command-line argument parser"
+msgstr ""
+
+#. tumbleweed/lua51-argparse/description
+#. tumbleweed/lua51-dkjson/description
+#. tumbleweed/lua53-argparse/description
+#. tumbleweed/lua53-dkjson/description
+#. tumbleweed/lua54-argparse/description
+#. tumbleweed/lua54-dkjson/description
+msgid ""
+"Argparse supports positional arguments, options, flags, optional arguments, "
+"subcommands and more. Argparse automatically generates usage, help, and "
+"error messages, and can generate shell completion scripts."
+msgstr ""
+
+#. tumbleweed/lua51-busted/summary
+#. tumbleweed/lua53-busted/summary
+#. tumbleweed/lua54-busted/summary
+msgid "Unit testing framework with a focus on being easy to use"
+msgstr ""
+
+#. tumbleweed/lua51-busted/description
+#. tumbleweed/lua53-busted/description
+#. tumbleweed/lua54-busted/description
+msgid ""
+"busted is a unit testing framework with a focus on being easy to use. busted "
+"works with lua >= 5.1, moonscript, terra, and LuaJIT >= 2.0.0.\n"
+"\n"
+"busted test specs read naturally without being too verbose. You can even "
+"chain asserts and negations, such as assert.not.equals. Nest blocks of tests "
+"with contextual descriptions using describe, and add tags to blocks so you "
+"can run arbitrary groups of tests.\n"
+"\n"
+"An extensible assert library allows you to extend and craft your own assert "
+"functions specific to your case with method chaining. A modular output "
+"library lets you add on your own output format, along with the default "
+"pretty and plain terminal output, JSON with and without streaming, and TAP-"
+"compatible output that allows you to run busted specs within most CI "
+"servers. You can even register phrases for internationaliation with custom "
+"or built-in language packs."
+msgstr ""
+
+#. tumbleweed/lua51-cliargs/summary
+#. tumbleweed/lua51-mediator_lua/summary
+#. tumbleweed/lua53-cliargs/summary
+#. tumbleweed/lua53-mediator_lua/summary
+#. tumbleweed/lua54-cliargs/summary
+#. tumbleweed/lua54-mediator_lua/summary
+msgid "Command-line argument parsing module for Lua"
+msgstr ""
+
+#. tumbleweed/lua51-cliargs/description
+#. tumbleweed/lua53-cliargs/description
+#. tumbleweed/lua54-cliargs/description
+msgid ""
+"This module adds support for accepting CLI arguments easily using multiple "
+"notations and argument types.\n"
+"\n"
+"cliargs allows you to define required, optional, and flag arguments."
+msgstr ""
+
+#. tumbleweed/lua51-copas/summary
+#. tumbleweed/lua53-copas/summary
+#. tumbleweed/lua54-copas/summary
+msgid "Coroutine Oriented Portable Asynchronous Services"
+msgstr ""
+
+#. tumbleweed/lua51-copas/description
+#. tumbleweed/lua53-copas/description
+#. tumbleweed/lua54-copas/description
+msgid ""
+"Copas is a dispatcher based on coroutines that can be used by TCP/IP "
+"servers. It uses LuaSocket as the interface with the TCP/IP stack. A server "
+"registered with Copas should provide a handler for requests and use Copas "
+"socket functions to send the response. Copas loops through requests and "
+"invokes the corresponding handlers. For a full implementation of a Copas "
+"HTTP server you can refer to Xavante as an example."
+msgstr ""
+
+#. tumbleweed/lua51-coxpcall/summary
+#. tumbleweed/lua53-coxpcall/summary
+#. tumbleweed/lua54-coxpcall/summary
+msgid "Coroutine safe xpcall and pcall"
+msgstr ""
+
+#. tumbleweed/lua51-coxpcall/description
+#. tumbleweed/lua53-coxpcall/description
+#. tumbleweed/lua54-coxpcall/description
+msgid ""
+"Encapsulates the protected calls with a coroutine based loop, so errors can "
+"be handled without the usual Lua 5.x pcall/xpcall issues with coroutines "
+"yielding inside the call to pcall or xpcall."
+msgstr ""
+
+#. tumbleweed/lua51-ldbus/summary
+#. tumbleweed/lua53-ldbus/summary
+#. tumbleweed/lua54-ldbus/summary
+#, fuzzy
+msgid "Lua bindings to dbus"
+msgstr "Qt4 ライブラリ向け Mono バインディング"
+
+#. tumbleweed/lua51-ldbus/description
+#. tumbleweed/lua53-ldbus/description
+#. tumbleweed/lua54-ldbus/description
+msgid "ldbus is a C binding to dbus for Lua."
 msgstr ""
 
 #. tumbleweed/lua51-ldoc/summary
 #. tumbleweed/lua53-ldoc/summary
+#. tumbleweed/lua54-ldoc/summary
 msgid "LuaDoc-compatible documentation generation system"
 msgstr ""
 
 #. tumbleweed/lua51-ldoc/description
 #. tumbleweed/lua53-ldoc/description
+#. tumbleweed/lua54-ldoc/description
 msgid ""
 "LDoc is a LuaDoc-compatible documentation generator which can also process C "
 "extension source. Markdown may be optionally used to render comments, as "
 "well as integrated readme documentation and pretty-printed example files."
 msgstr ""
+
+#. tumbleweed/lua51-loadkit/summary
+#. tumbleweed/lua53-loadkit/summary
+#. tumbleweed/lua54-loadkit/summary
+msgid "Loadkit allows you to load arbitrary files within the Lua package path"
+msgstr ""
+
+#. tumbleweed/lua51-loadkit/description
+#. tumbleweed/lua53-loadkit/description
+#. tumbleweed/lua54-loadkit/description
+msgid ""
+"Loadkit lets you register new file extension handlers that can be opened "
+"with require, or you can just search for files of any extension using the "
+"current search path."
+msgstr ""
+
+#. tumbleweed/lua51-lpeg_patterns/summary
+#. tumbleweed/lua53-lpeg_patterns/summary
+#. tumbleweed/lua54-lpeg_patterns/summary
+msgid "Collection of LPEG patterns"
+msgstr ""
+
+#. tumbleweed/lua51-lpeg_patterns/description
+#. tumbleweed/lua53-lpeg_patterns/description
+#. tumbleweed/lua54-lpeg_patterns/description
+msgid ""
+"A collection of LPEG patterns\n"
+"\n"
+"Use cases:  * Strict validation of user input  * Searching free-form input"
+msgstr ""
+
+#. tumbleweed/lua51-lua-dbus/summary
+#. tumbleweed/lua53-lua-dbus/summary
+#. tumbleweed/lua54-lua-dbus/summary
+msgid "Convenient dbus api for lua"
+msgstr ""
+
+#. tumbleweed/lua51-lua-dbus/description
+#. tumbleweed/lua53-lua-dbus/description
+#. tumbleweed/lua54-lua-dbus/description
+msgid "lua-dbus is a convenient lua api for dbus"
+msgstr ""
+
+#. tumbleweed/lua51-lua-ev/summary
+#. tumbleweed/lua53-lua-ev/summary
+#. tumbleweed/lua54-lua-ev/summary
+#, fuzzy
+#| msgid "The Lua integration library"
+msgid "Lua integration with libev"
+msgstr "LUA 統合ライブラリ"
+
+#. tumbleweed/lua51-lua-ev/description
+#. tumbleweed/lua53-lua-ev/description
+#. tumbleweed/lua54-lua-ev/description
+msgid "Lua integration with libev (http://dist.schmorp.de/libev)"
+msgstr ""
+
+#. tumbleweed/lua51-lua-ev/lua51-lua-ev-devel/summary
+#, fuzzy
+msgid "Header files for lua51-lua-ev"
+msgstr "lua 向け開発用ファイル"
+
+#. tumbleweed/lua51-lua-ev/lua51-lua-ev-devel/description
+#, fuzzy
+msgid ""
+"This subpackage contains header files for developing applications that want "
+"to make use of lua51-lua-ev."
+msgstr ""
+"このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
+"ファイルが含まれています。"
+
+#. tumbleweed/lua51-lua-mpris/summary
+#. tumbleweed/lua51-lua-mpris/description
+#. tumbleweed/lua53-lua-mpris/summary
+#. tumbleweed/lua53-lua-mpris/description
+#. tumbleweed/lua54-lua-mpris/summary
+#. tumbleweed/lua54-lua-mpris/description
+#, fuzzy
+msgid "MPRIS api for lua"
+msgstr "TagLib 向け拡張プラグイン"
 
 #. tumbleweed/lua51-luasocket/lua51-luasocket-devel/summary
 #, fuzzy
@@ -9843,69 +11458,101 @@ msgstr ""
 "このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
 "ファイルが含まれています。"
 
-#. tumbleweed/lua51-luasystem/summary
-#. tumbleweed/lua53-luasystem/summary
-msgid "Platform independent system calls for Lua"
+#. tumbleweed/lua51-luassert/summary
+#. tumbleweed/lua53-luassert/summary
+#. tumbleweed/lua54-luassert/summary
+msgid "Lua Assertions Extension"
 msgstr ""
 
-#. tumbleweed/lua51-luasystem/description
-#. tumbleweed/lua53-luasystem/description
-msgid "Adds a Lua API for making platform independent system calls."
-msgstr ""
-
-#. tumbleweed/lua51-luv/summary
-#. tumbleweed/lua53-luv/summary
-#, fuzzy
-msgid "Bare libuv bindings for lua"
-msgstr "sat ソルバー向け Perl バインディングです。"
-
-#. tumbleweed/lua51-luv/description
-#. tumbleweed/lua53-luv/description
+#. tumbleweed/lua51-luassert/description
+#. tumbleweed/lua53-luassert/description
+#. tumbleweed/lua54-luassert/description
 msgid ""
-"This library makes libuv available to lua scripts. It was made for the luvit "
-"project but should usable from nearly any lua project.\n"
-"\n"
-"The library can be used by multiple threads at once. Each thread is assumed "
-"to load the library from a different lua_State. Luv will create a unique "
-"uv_loop_t for each state. You can't share uv handles between states/loops.\n"
-"\n"
-"The best docs currently are the libuv docs themselves. Hopfully soon we'll "
-"have a copy locally tailored for lua."
+"Adds a framework that allows registering new assertions without compromising "
+"builtin assertion functionality."
 msgstr ""
 
-#. tumbleweed/lua51-luv/lua51-luv-devel/summary
+#. tumbleweed/lua51-mediator_lua/description
+#. tumbleweed/lua53-mediator_lua/description
+#. tumbleweed/lua54-mediator_lua/description
+msgid ""
+"This module adds support for accepting CLI arguments easily using multiple "
+"notations and argument types.\n"
+"\n"
+"mediator_lua allows you to define required, optional, and flag arguments."
+msgstr ""
+
+#. tumbleweed/lua51-moonscript/summary
+#. tumbleweed/lua53-moonscript/summary
+#. tumbleweed/lua54-moonscript/summary
+msgid "A programmer friendly language that compiles to Lua"
+msgstr ""
+
+#. tumbleweed/lua51-moonscript/description
+#. tumbleweed/lua53-moonscript/description
+#. tumbleweed/lua54-moonscript/description
+msgid "A programmer friendly language that compiles to Lua."
+msgstr ""
+
+#. tumbleweed/lua51-penlight/summary
+#. tumbleweed/lua53-penlight/summary
+#. tumbleweed/lua54-penlight/summary
+msgid "Generally useful modules inspired by the Python standard libraries"
+msgstr ""
+
+#. tumbleweed/lua51-penlight/description
+#. tumbleweed/lua53-penlight/description
+#. tumbleweed/lua54-penlight/description
+msgid ""
+"A set of pure Lua libraries focusing on input data handling (such as reading "
+"configuration files), functional programming (such as map, reduce, "
+"placeholder expressions,etc), and OS path management. Much of the "
+"functionality is inspired by the Python standard libraries."
+msgstr ""
+
+#. tumbleweed/lua51-penlight/lua51-penlight-doc/summary
 #, fuzzy
-msgid "Header files for lua51-luv"
+#| msgid "Documentation for log4c"
+msgid "Documentation for lua51-penlight"
+msgstr "log4c 向けドキュメンテーション"
+
+#. tumbleweed/lua51-penlight/lua51-penlight-doc/description
+#, fuzzy
+#| msgid "Documentation for log4c"
+msgid "Documentation for the package lua51-penlight"
+msgstr "log4c 向けドキュメンテーション"
+
+#. tumbleweed/lua53-editorconfig-core-lua/summary
+#. tumbleweed/lua54-editorconfig-core-lua/summary
+#, fuzzy
+#| msgid "Network support for the Lua language"
+msgid "EditorConfig Core support for the Lua language"
+msgstr "Lua 言語向けネットワークサポート"
+
+#. tumbleweed/lua53-editorconfig-core-lua/description
+#. tumbleweed/lua54-editorconfig-core-lua/description
+msgid ""
+"EditorConfig makes it easy to maintain the correct coding style when "
+"switching between different text editors and betweendifferent projects. The "
+"EditorConfig project maintains a file format and plugins for various text "
+"editors which allow this file format to be read and used by those editors. "
+"EditorConfig Lua Core provides the same functionality as the Editorconfig C "
+"Core library."
+msgstr ""
+
+#. tumbleweed/lua53-lua-ev/lua53-lua-ev-devel/summary
+#, fuzzy
+msgid "Header files for lua53-lua-ev"
 msgstr "lua 向け開発用ファイル"
 
-#. tumbleweed/lua51-luv/lua51-luv-devel/description
+#. tumbleweed/lua53-lua-ev/lua53-lua-ev-devel/description
 #, fuzzy
 msgid ""
 "This subpackage contains header files for developing applications that want "
-"to make use of lua51-luv."
+"to make use of lua53-lua-ev."
 msgstr ""
 "このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
 "ファイルが含まれています。"
-
-#. tumbleweed/lua51-markdown/summary
-#. tumbleweed/lua53-markdown/summary
-msgid "Markdown text-to-html markup system"
-msgstr ""
-
-#. tumbleweed/lua51-markdown/description
-#. tumbleweed/lua53-markdown/description
-msgid "A pure-lua implementation of the Markdown text-to-html markup system."
-msgstr ""
-
-#. tumbleweed/lua51-say/summary
-#. tumbleweed/lua53-say/summary
-msgid "Lua string hashing library, useful for internationalization"
-msgstr ""
-
-#. tumbleweed/lua51-say/description
-#. tumbleweed/lua53-say/description
-msgid "Useful for internationalization."
-msgstr ""
 
 #. tumbleweed/lua53-luasocket/lua53-luasocket-devel/summary
 #, fuzzy
@@ -9921,19 +11568,77 @@ msgstr ""
 "このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
 "ファイルが含まれています。"
 
-#. tumbleweed/lua53-luv/lua53-luv-devel/summary
+#. tumbleweed/lua53-penlight/lua53-penlight-doc/summary
 #, fuzzy
-msgid "Header files for lua53-luv"
+#| msgid "Documentation for log4c"
+msgid "Documentation for lua53-penlight"
+msgstr "log4c 向けドキュメンテーション"
+
+#. tumbleweed/lua53-penlight/lua53-penlight-doc/description
+#, fuzzy
+#| msgid "Documentation for log4c"
+msgid "Documentation for the package lua53-penlight"
+msgstr "log4c 向けドキュメンテーション"
+
+#. tumbleweed/lua54-lua-ev/lua54-lua-ev-devel/summary
+#, fuzzy
+msgid "Header files for lua54-lua-ev"
 msgstr "lua 向け開発用ファイル"
 
-#. tumbleweed/lua53-luv/lua53-luv-devel/description
+#. tumbleweed/lua54-lua-ev/lua54-lua-ev-devel/description
 #, fuzzy
 msgid ""
 "This subpackage contains header files for developing applications that want "
-"to make use of lua53-luv."
+"to make use of lua54-lua-ev."
 msgstr ""
 "このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
 "ファイルが含まれています。"
+
+#. tumbleweed/lua54-luasocket/lua54-luasocket-devel/summary
+#, fuzzy
+msgid "Header files for lua54-luasocket"
+msgstr "lua 向け開発用ファイル"
+
+#. tumbleweed/lua54-luasocket/lua54-luasocket-devel/description
+#, fuzzy
+msgid ""
+"This subpackage contains header files for developing applications that want "
+"to make use of lua54-luasocket."
+msgstr ""
+"このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
+"ファイルが含まれています。"
+
+#. tumbleweed/lua54-luv/lua54-luv-devel/summary
+#, fuzzy
+msgid "Header files for lua54-luv"
+msgstr "lua 向け開発用ファイル"
+
+#. tumbleweed/lua54-luv/lua54-luv-devel/description
+#, fuzzy
+msgid ""
+"This subpackage contains header files for developing applications that want "
+"to make use of lua54-luv."
+msgstr ""
+"このパッケージには、 SDL ライブラリを利用した開発を行なうのに必要な、 各種"
+"ファイルが含まれています。"
+
+#. tumbleweed/lua54-penlight/lua54-penlight-doc/summary
+#, fuzzy
+#| msgid "Documentation for log4c"
+msgid "Documentation for lua54-penlight"
+msgstr "log4c 向けドキュメンテーション"
+
+#. tumbleweed/lua54-penlight/lua54-penlight-doc/description
+#, fuzzy
+#| msgid "Documentation for log4c"
+msgid "Documentation for the package lua54-penlight"
+msgstr "log4c 向けドキュメンテーション"
+
+#. tumbleweed/lucene/lucene-monitor/description
+msgid ""
+"Apache Lucene is a full-text search engine written entirely in Java. This "
+"package provides the \"monitor\" module for Lucene."
+msgstr ""
 
 #. tumbleweed/lunar-calendar/summary
 msgid "Chinese Lunar calendar"
@@ -9984,51 +11689,33 @@ msgstr "lxrandr 向け翻訳パッケージ"
 msgid "Provides translations for the \"lunar-calendar\" package."
 msgstr "lxrandr パッケージ向けの翻訳データです。"
 
-#. tumbleweed/lunar-date/lunar-date-devel/summary
-#, fuzzy
-msgid "Chinese Lunar calendar library development files"
-msgstr "bzip2 ランタイムライブラリの開発用ファイル"
-
-#. tumbleweed/lunar-date/lunar-date-devel/description
-#, fuzzy
-msgid "Development files for Chinese Lunar calendar library"
-msgstr "unicap ライブラリ向け開発用ファイル"
-
-#. tumbleweed/lunar-date/lunar-date-doc/summary
-msgid "Chinese Lunar calendar library Documents"
-msgstr ""
-
-#. tumbleweed/lunar-date/lunar-date-doc/description
-#, fuzzy
-msgid "Documents for Chinese Lunar calendar library"
-msgstr "unicap ライブラリ向け開発用ファイル"
-
-#. tumbleweed/lunar-date/lunar-date-lang/summary
-#, fuzzy
-#| msgid "Translations for package lxtask"
-msgid "Translations for package lunar-date"
-msgstr "lxtask 向け翻訳パッケージ"
-
-#. tumbleweed/lunar-date/lunar-date-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"lxtask\" package."
-msgid "Provides translations for the \"lunar-date\" package."
-msgstr "lxtask パッケージ向けの翻訳データです。"
-
-#. tumbleweed/lsp-plugins/lv2-lsp-plugins/summary
-msgid "Linux Studio Plugins Documents (LV2)"
-msgstr ""
-
-#. tumbleweed/lsp-plugins/lv2-lsp-plugins/description
+#. tumbleweed/lutris/description
 msgid ""
-"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
-"compatible with LADSPA, LV2 and LinuxVST formats.\n"
-"\n"
-"The basic idea is to fill the lack of good and useful plugins under the GNU/"
-"Linux platform.\n"
-"\n"
-"This is the LV2 version of the plugins."
+"Lutris allows to gather and manage (install, configure and launch) all games "
+"acquired from any source, in a single interface. This includes, for example, "
+"Steam or GOG games, Windows games (WINE), or emulated console games and "
+"browser games."
 msgstr ""
+
+#. tumbleweed/lxqt-archiver/summary
+msgid "LXQt File Archiver"
+msgstr ""
+
+#. tumbleweed/lxqt-archiver/description
+msgid "LXQt file archiver."
+msgstr ""
+
+#. tumbleweed/lxqt-archiver/lxqt-archiver-lang/summary
+#, fuzzy
+#| msgid "Translations for package lxrandr"
+msgid "Translations for package lxqt-archiver"
+msgstr "lxrandr 向け翻訳パッケージ"
+
+#. tumbleweed/lxqt-archiver/lxqt-archiver-lang/description
+#, fuzzy
+#| msgid "Provides translations for the \"lxrandr\" package."
+msgid "Provides translations for the \"lxqt-archiver\" package."
+msgstr "lxrandr パッケージ向けの翻訳データです。"
 
 #. tumbleweed/lzham_codec/lzham_codec-devel/summary
 #, fuzzy
@@ -10064,26 +11751,210 @@ msgstr ""
 "LZO はリアルタイムでのデータ圧縮と展開に適切な仕組みになっています。つまり、"
 "データの圧縮率よりも速度に主眼を置いています。"
 
-#. tumbleweed/llvm8/python3-lldb8/description
-#. tumbleweed/llvm9/python3-lldb9/description
+#. tumbleweed/lal/octave-lal/summary
+#, fuzzy
+msgid "Octave module for lal"
+msgstr "lua 向け開発用ファイル"
+
+#. tumbleweed/lal/octave-lal/description
+msgid ""
+"The LSC Algorithm Library Suite (LALSuite) is comprised of various "
+"gravitational wave data analysis routines written in C following the ISO/IEC "
+"9899:1999 standard.\n"
+"\n"
+"This package provides the octave module for lal."
+msgstr ""
+
+#. tumbleweed/lalburst/octave-lalburst/summary
+#, fuzzy
+msgid "Octave bindings for LAL Burst"
+msgstr "PAM 向け Python バインディング"
+
+#. tumbleweed/lalburst/octave-lalburst/description
 #, fuzzy
 msgid ""
-"This package contains the Python bindings for LLDB. It also contains pretty "
-"printers for the C++ standard library."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+"This package provides the necessary files for using LAL Burst with octave."
+msgstr "このパッケージには、 pidgin の openSUSE 向けの外観が含まれています。"
 
-#. tumbleweed/lttng-ust/python3-lttngust/summary
-msgid "Linux Trace Toolkit Userspace Tracer Python 3 agent"
-msgstr ""
+#. tumbleweed/lalframe/octave-lalframe/summary
+#, fuzzy
+msgid "Octave bindings for LAL Frame"
+msgstr "PAM 向け Python バインディング"
 
-#. tumbleweed/lttng-ust/python3-lttngust/description
+#. tumbleweed/lalframe/octave-lalframe/description
+#, fuzzy
 msgid ""
-"This library may be used by user space applications to generate tracepoints "
-"within the kernel LTT subsystem.\n"
-"\n"
-"This package provides the LLTng-UST Python 3 agent."
+"This package provides the necessary files for using LAL Frame with octave."
+msgstr "Boost::Container ランタイムライブラリ"
+
+#. tumbleweed/lalinference/octave-lalinference/summary
+msgid "Octave bindings for LAL Inference"
+msgstr ""
+
+#. tumbleweed/lalinference/octave-lalinference/description
+msgid ""
+"This package provides the necessary files for using LAL Inference with "
+"octave."
+msgstr ""
+
+#. tumbleweed/lalinspiral/octave-lalinspiral/summary
+#, fuzzy
+msgid "Octave bindings for LAL Inspiral"
+msgstr "sat ソルバー向け Perl バインディングです。"
+
+#. tumbleweed/lalinspiral/octave-lalinspiral/description
+#, fuzzy
+msgid ""
+"This package provides the necessary files for using LAL Inspiral with octave."
+msgstr ""
+"このパッケージには、 Thunar ボリュームマネージャの openSUSE 向け外観が含まれ"
+"ています。"
+
+#. tumbleweed/lalmetaio/octave-lalmetaio/summary
+#, fuzzy
+msgid "Octave bindings for LAL MetaIO"
+msgstr "PAM 向け Python バインディング"
+
+#. tumbleweed/lalmetaio/octave-lalmetaio/description
+#, fuzzy
+msgid ""
+"This package provides the necessary files for using LAL MetaIO with octave."
+msgstr ""
+"このパッケージには、 Thunar ボリュームマネージャの openSUSE 向け外観が含まれ"
+"ています。"
+
+#. tumbleweed/lalpulsar/octave-lalpulsar/summary
+#, fuzzy
+msgid "Octave bindings for LAL Pulsar"
+msgstr "sat ソルバー向け Perl バインディングです。"
+
+#. tumbleweed/lalpulsar/octave-lalpulsar/description
+#, fuzzy
+msgid ""
+"This package provides the necessary files for using LAL Pulsar with octave."
+msgstr "このパッケージには、 pidgin の openSUSE 向けの外観が含まれています。"
+
+#. tumbleweed/lalsimulation/octave-lalsimulation/summary
+#, fuzzy
+msgid "Octave bindings for LALSimulation"
+msgstr "PAM 向け Python バインディング"
+
+#. tumbleweed/lalsimulation/octave-lalsimulation/description
+msgid ""
+"This package provides the necessary files for using LALSimulation with "
+"octave."
+msgstr ""
+
+#. tumbleweed/lalburst/python3-lalburst/summary
+msgid "LSC Algorithm Burst Library"
+msgstr ""
+
+#. tumbleweed/lalburst/python3-lalburst/description
+msgid "The LSC Algorithm Burst Library for gravitational wave data analysis."
+msgstr ""
+
+#. tumbleweed/lalinference/python3-lalinference/summary
+msgid "LSC Algorithm Inference Library"
+msgstr ""
+
+#. tumbleweed/lalinference/python3-lalinference/description
+msgid ""
+"The LSC Algorithm Inference Library for gravitational wave data analysis."
+msgstr ""
+
+#. tumbleweed/lalinspiral/python3-lalinspiral/summary
+msgid "LSC Algorithm Inspiral Library"
+msgstr ""
+
+#. tumbleweed/lalinspiral/python3-lalinspiral/description
+msgid ""
+"The LSC Algorithm Inspiral Library for gravitational wave data analysis."
+msgstr ""
+
+#. tumbleweed/lalmetaio/python3-lalmetaio/summary
+msgid "LSC Algorithm MetaIO Library"
+msgstr ""
+
+#. tumbleweed/lalmetaio/python3-lalmetaio/description
+msgid "The LSC Algorithm MetaIO Library for gravitational wave data analysis."
+msgstr ""
+
+#. tumbleweed/lalpulsar/python3-lalpulsar/summary
+msgid "LSC Algorithm Pulsar Library"
+msgstr ""
+
+#. tumbleweed/lalpulsar/python3-lalpulsar/description
+msgid "The LSC Algorithm Pulsar Library for gravitational wave data analysis."
+msgstr ""
+
+#. tumbleweed/lalsimulation/python3-lalsimulation/summary
+msgid "LSC Algorithm Simulation Library"
+msgstr ""
+
+#. tumbleweed/lalsimulation/python3-lalsimulation/description
+msgid ""
+"The LSC Algorithm Simulation Library for gravitational wave data analysis. "
+"This package contains the shared-object libraries needed to run applications "
+"that use the LAL Simulation library."
+msgstr ""
+
+#. tumbleweed/lash/python3-lash/summary
+#, fuzzy
+msgid "Python bindings for LASH"
+msgstr "PAM 向け Python バインディング"
+
+#. tumbleweed/lash/python3-lash/description
+#, fuzzy
+msgid "This package contains the language bindings for Python."
+msgstr ""
+"このパッケージには、 GConf 向けの Python バインディングが含まれています。"
+
+#. tumbleweed/ldas-tools-al-swig/python3-ldas-tools-al-swig/description
+msgid ""
+"This provides different language bindings for the LDAS tools abstaction "
+"library."
+msgstr ""
+
+#. tumbleweed/linstor-client/python3-linstor-client/description
+msgid ""
+"This client program communicates to a linstor controller node which manages "
+"the DRBD9 resources."
+msgstr ""
+
+#. tumbleweed/lal/python36-lal/summary
+#. tumbleweed/lal/python38-lal/summary
+msgid "A collection of various gravitational wave data analysis routines"
+msgstr ""
+
+#. tumbleweed/lal/python36-lal/description
+#. tumbleweed/lal/python38-lal/description
+msgid ""
+"The LSC Algorithm Library Suite (LALSuite) is comprised of various "
+"gravitational wave data analysis routines written in C following the ISO/IEC "
+"9899:1999 standard."
+msgstr ""
+
+#. tumbleweed/lalframe/python36-lalframe/summary
+#. tumbleweed/lalframe/python38-lalframe/summary
+msgid "LSC Algorithm Frame Library for gravitational wave data analysis"
+msgstr ""
+
+#. tumbleweed/lalframe/python36-lalframe/description
+#. tumbleweed/lalframe/python38-lalframe/description
+msgid "The LSC Algorithm Frame Library for gravitational wave data analysis."
+msgstr ""
+
+#. tumbleweed/lscsoft-glue/python36-lscsoft-glue/summary
+#. tumbleweed/lscsoft-glue/python38-lscsoft-glue/summary
+msgid "Grid LSC User Environment"
+msgstr ""
+
+#. tumbleweed/lscsoft-glue/python36-lscsoft-glue/description
+#. tumbleweed/lscsoft-glue/python38-lscsoft-glue/description
+msgid ""
+"Glue is a collection of utilities for running data analysis pipelines for "
+"online and offline analysis as well as accessing various grid utilities.  It "
+"also provides the infrastructure for the segment database."
 msgstr ""
 
 #. tumbleweed/lunar-calendar/typelib-1_0-LunarCalendar-3_0/summary
@@ -10100,29 +11971,83 @@ msgstr ""
 "このパッケージには appindicator ライブラリの GObject イントロスペクションバイ"
 "ンディングが含まれています。"
 
-#. tumbleweed/lunar-date/typelib-1_0-LunarDate-3_0/summary
-msgid "Chinese Lunar calendar introspection bindings"
-msgstr ""
+#, fuzzy
+#~ msgid "LightDM Qt4-based Client Library"
+#~ msgstr "LightDM GObject ベースのクライアントライブラリ"
 
-#. tumbleweed/lunar-date/typelib-1_0-LunarDate-3_0/description
-msgid ""
-"Introspection bindings for Chinese Lunar calendar for use in Gnome Shell"
-msgstr ""
+#, fuzzy
+#~ msgid ""
+#~ "A Qt4-based library for LightDM clients to use to interface with LightDM."
+#~ msgstr ""
+#~ "LightDM に対するインターフェイスを利用するクライアント向けの GObject ベー"
+#~ "スのライブラリです。"
 
-#. tumbleweed/lsp-plugins/vst-lsp-plugins/summary
-msgid "Linux Studio Plugins Documents (VST)"
-msgstr ""
+#, fuzzy
+#~ msgid "Development Files for liblightdm-qt-3-0"
+#~ msgstr "libalkimia 向け開発用ファイル"
 
-#. tumbleweed/lsp-plugins/vst-lsp-plugins/description
-msgid ""
-"LSP (Linux Studio Plugins) is a collection of open-source plugins currently "
-"compatible with LADSPA, LV2 and LinuxVST formats.\n"
-"\n"
-"The basic idea is to fill the lack of good and useful plugins under the GNU/"
-"Linux platform.\n"
-"\n"
-"This is the VST version of the plugins."
-msgstr ""
+#, fuzzy
+#~ msgid ""
+#~ "This package contains development files needed for developing Qt4-based "
+#~ "LightDM clients."
+#~ msgstr ""
+#~ "このパッケージには libqimageblitz 向けの開発用ファイルが含まれています。"
+
+#~ msgid "The Linux Loader, a Boot Menu"
+#~ msgstr "Linux ローダー (起動メニュー)"
+
+#~ msgid ""
+#~ "LILO boots Linux from your hard drive. It can also boot other operating "
+#~ "systems, such as MS-DOS and OS/2, and can even boot DOS from the second "
+#~ "hard drive. The configuration file is /etc/lilo.conf.\n"
+#~ "\n"
+#~ "The PowerPC variant can be used on new PowerMacs and CHRP machines.\n"
+#~ "\n"
+#~ "The ix86 variant comes with Memtest86, offering an image that can be "
+#~ "booted to perform a memory test."
+#~ msgstr ""
+#~ "LILO はお使いのハードディスクから Linux が起動できるようにするためのもので"
+#~ "す。 MS-DOS や OS/2 など、他のオペレーティングシステムを起動することもでき"
+#~ "るほか、 2 番目のハードディスクから DOS を起動したりすることもできます。 "
+#~ "設定ファイルは /etc/lilo.conf にあります。\n"
+#~ "\n"
+#~ "新しい PowerMac や CHRP マシンなど、 PowerPC のマシンでも動作するものがあ"
+#~ "ります。\n"
+#~ "\n"
+#~ "x86 版の LILO は memtest86 が同梱されています。これはメモリテストを起動す"
+#~ "るためのイメージです。"
+
+#~ msgid "Check Websites and HTML Documents for Broken Links"
+#~ msgstr ""
+#~ "繋がっていないリンクを検出するための Web サイトや HTML ドキュメントの"
+#~ "チェッカー"
+
+#~ msgid "RPC Server That Supports ONC Clients"
+#~ msgstr "ONC クライアント対応の RPC サーバ"
+
+#, fuzzy
+#~| msgid ""
+#~| "RPC server that supports ONC clients on PC (DOS, OS/2, Macintosh, and "
+#~| "other) systems."
+#~ msgid ""
+#~ "RPC server that supports ONC clients on PC (DOS, OS/2, Macintosh, and "
+#~ "other) systems.\n"
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "Authors:\n"
+#~ "--------     Alexander Bezprozvanny <bez@parsy.spb.su>"
+#~ msgstr ""
+#~ "PC (DOS, OS/2, Macintosh ほか) システム上の ONC クライアントに 対応する "
+#~ "RPC サーバです。"
+
+#, fuzzy
+#~ msgid "Python bindings for LHAPDF, a library for PDF sets"
+#~ msgstr "gtk-vnc ライブラリ向け Python バインディング"
+
+#, fuzzy
+#~ msgid "API documentation for the Logback library"
+#~ msgstr "7.0 文書"
 
 #, fuzzy
 #~ msgid "Languages for package compton-conf"
@@ -10142,39 +12067,11 @@ msgstr ""
 #~ msgid "Provides translations to the package libfm-qt"
 #~ msgstr "libfm パッケージ向けの翻訳データです。"
 
-#, fuzzy
-#~ msgid "Libraries to use JIT Lua compiler"
-#~ msgstr "OCaml コンパイラで内部的に使用されるライブラリ"
-
-#, fuzzy
-#~ msgid "LVM2 application api library"
-#~ msgstr "アプリケーションインジケータライブラリ"
-
-#, fuzzy
-#~ msgid "LVM library for applications api"
-#~ msgstr "KDE 教育アプリケーション向けライブラリ"
-
 #~ msgid "Languages for package liblxqt"
 #~ msgstr "liblxqt 向け言語パッケージ"
 
 #~ msgid "Provides translations to the package liblxqt"
 #~ msgstr "liblxqt パッケージ向けの翻訳データです。"
-
-#, fuzzy
-#~ msgid "JIT compiler for Lua language"
-#~ msgstr "Lua 言語向けネットワークサポート"
-
-#, fuzzy
-#~ msgid "A Just-In-Time Compiler for Lua language"
-#~ msgstr "Java 向けタイムゾーンコンパイラ"
-
-#, fuzzy
-#~ msgid "Devel files for LuaJIT"
-#~ msgstr "lua 向け開発用ファイル"
-
-#, fuzzy
-#~ msgid "Devel files for luajit package"
-#~ msgstr "lua 向け開発用ファイル"
 
 #, fuzzy
 #~| msgid "Languages for package lxinput"
@@ -10222,14 +12119,6 @@ msgstr ""
 #~ msgstr "gconf2 パッケージに対する翻訳データです。"
 
 #, fuzzy
-#~ msgid "Python bindings for the LDB library"
-#~ msgstr "gtk-vnc ライブラリ向け Python バインディング"
-
-#, fuzzy
-#~ msgid "Development files for the Python bindings for the LDB library"
-#~ msgstr "X フォント処理ライブラリ向け開発用ファイル"
-
-#, fuzzy
 #~ msgid "Languages for package qterminal"
 #~ msgstr "lxterminal 向け言語パッケージ"
 
@@ -10272,34 +12161,6 @@ msgstr ""
 #~| msgid "Manpages for LAPACK"
 #~ msgid "Manual page for Lmod"
 #~ msgstr "LAPACK のマニュアルページ"
-
-#~ msgid "Linux Audio Session Handler"
-#~ msgstr "Linux オーディオセッション処理"
-
-#, fuzzy
-#~| msgid ""
-#~| "LASH (formerly LADCCA) is a session management system for JACK and ALSA "
-#~| "audio applications on GNU/Linux. Its aim is to allow you to have many "
-#~| "different audio programs running at once and to save the setup, close "
-#~| "them down, then reload the setup at some other time."
-#~ msgid ""
-#~ "LASH (formerly LADCCA) is a session management system for JACK and ALSA "
-#~ "audio applications on GNU/Linux. Its aim is to allow you to have many "
-#~ "different audio programs running at once and to save the setup, close "
-#~ "them down, then reload the setup at some other time.\n"
-#~ "\n"
-#~ "Authors:\n"
-#~ "--------     Bob Ham <node@users.sourceforge.net>     Dave Robillard "
-#~ "<drobilla@connect.carelton.ca>"
-#~ msgstr ""
-#~ "LASH (以前は LADCCA という名前でした) は GNU/Linux 上での JACK および "
-#~ "ALSA オーディオ アプリケーション向けのセッション管理システムです。本アプリ"
-#~ "ケーションは多数の 異なるオーディオアプリケーションを同時に実行し、設定を"
-#~ "保存しておいて次回の 起動時に設定を読み込み直すといった機能を目指していま"
-#~ "す。"
-
-#~ msgid "Development package for LASH"
-#~ msgstr "LASH の開発パッケージ"
 
 #, fuzzy
 #~ msgid "Integrated LaTeX Environment for the GNOME desktop"
@@ -10363,13 +12224,6 @@ msgstr ""
 #~ "Lessons for Lizards への貢献については、下記をお読みください:\n"
 #~ "\n"
 #~ "http://developer.novell.com/wiki/index.php/Lessons_for_Lizards"
-
-#~ msgid "This package contains the library for the LASH system."
-#~ msgstr "このパッケージには LASH システム向けのライブラリが含まれています。"
-
-#, fuzzy
-#~ msgid "Python bindings for LASH"
-#~ msgstr "PAM 向け Python バインディング"
 
 #, fuzzy
 #~ msgid ""
@@ -10446,14 +12300,6 @@ msgstr ""
 
 #~ msgid "Little cms is a small speed optimized color management engine."
 #~ msgstr "Little cms は、小さく高速なカラーマネージメントエンジンです。"
-
-#, fuzzy
-#~ msgid "Tools from ldns"
-#~ msgstr "libgpod ツール"
-
-#, fuzzy
-#~ msgid "Shared libraries for linuxsampler"
-#~ msgstr "libyaml 向け共有ライブラリ"
 
 #~ msgid ""
 #~ "Lua is a programming language originally designed for extending "
@@ -10550,11 +12396,6 @@ msgstr ""
 #~ msgid "An English grammar checker (Perl bindings)"
 #~ msgstr "英文法チェック"
 
-#, fuzzy
-#~ msgid "This package contains the language bindings for Python."
-#~ msgstr ""
-#~ "このパッケージには、 GConf 向けの Python バインディングが含まれています。"
-
 #~ msgid "Python Bindings for the Little CMS Engine"
 #~ msgstr "Little CMS Engine 向け Python バインディング"
 
@@ -10563,11 +12404,6 @@ msgstr ""
 
 #~ msgid "Provides translations for the \"lightdm-kde-greeter\" package."
 #~ msgstr "lightdm-kde-greeter パッケージ向けの翻訳データです。"
-
-#, fuzzy
-#~| msgid "Common data required by plugins"
-#~ msgid "Common data file required for running an LXQt session"
-#~ msgstr "プラグインが必要とする共通データ"
 
 #, fuzzy
 #~ msgid "openSUSE-default theme for LXQt"
@@ -10945,9 +12781,6 @@ msgstr ""
 #~ msgid "Global keyboard shortcuts Tools"
 #~ msgstr "グローバルデスクトップキーボードショートカット"
 
-#~ msgid "Javadoc for ldapjdk"
-#~ msgstr "ldapjdk 向け Javadoc"
-
 #~ msgid "LIRC remote definitions"
 #~ msgstr "LIRC リモート定義"
 
@@ -10995,14 +12828,6 @@ msgstr ""
 
 #~ msgid "The Mozilla LDAP Java SDK"
 #~ msgstr "Mozilla LDAP Java 開発キット"
-
-#~ msgid ""
-#~ "The Mozilla LDAP SDKs enable you to write applications that access, "
-#~ "manage, and update the information stored in an LDAP directory."
-#~ msgstr ""
-#~ "Mozilla LDAP 開発キットを使用することで、 LDAP ディレクトリ内に保存された"
-#~ "情報にアクセスしたり 管理したり、更新したりするアプリケーションを作成する"
-#~ "ことができるようになります。"
 
 #~ msgid ""
 #~ "The Mozilla LDAP SDKs enable you to write applications which access, "

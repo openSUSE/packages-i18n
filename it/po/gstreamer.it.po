@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2019-01-24 22:53+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -13,15 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.3\n"
-
-#. leap/gconf2/gconf2-devel/summary
-#. leap/gstreamer-plugins-qt/gstreamer-plugins-qt-devel/summary
-#. leap/gstreamer-plugins-qt5/gstreamer-plugins-qt5-devel/summary
-#. leap/libglade2/libglade2-devel/summary
-#. tumbleweed/gconf2/gconf2-devel/summary
-#. tumbleweed/libglade2/libglade2-devel/summary
-msgid "Include files and libraries mandatory for development"
-msgstr "File di inclusione e librerie obbligatori per lo sviluppo"
 
 #. leap/gstreamer/summary
 #. leap/gstreamer/gstreamer-32bit/summary
@@ -83,8 +74,13 @@ msgstr ""
 #. leap/gstreamer-plugins-base/libgstapp-1_0-0-32bit/summary
 #. leap/gstreamer-plugins-base/libgstaudio-1_0-0/summary
 #. leap/gstreamer-plugins-base/libgstaudio-1_0-0-32bit/summary
+#. leap/gstreamer-plugins-bad/libgstbadallocators-1_0-0/summary
 #. leap/gstreamer-plugins-bad/libgstbadaudio-1_0-0/summary
 #. leap/gstreamer-plugins-bad/libgstbadaudio-1_0-0-32bit/summary
+#. leap/gstreamer-plugins-bad/libgstbadbase-1_0-0/summary
+#. leap/gstreamer-plugins-bad/libgstbadbase-1_0-0-32bit/summary
+#. leap/gstreamer-plugins-bad/libgstbadvideo-1_0-0/summary
+#. leap/gstreamer-plugins-bad/libgstbadvideo-1_0-0-32bit/summary
 #. leap/gstreamer-plugins-bad/libgstbasecamerabinsrc-1_0-0/summary
 #. leap/gstreamer-plugins-bad/libgstbasecamerabinsrc-1_0-0-32bit/summary
 #. leap/gstreamer-plugins-bad/libgstcodecparsers-1_0-0/summary
@@ -119,6 +115,8 @@ msgstr ""
 #. leap/gstreamer-plugins-base/libgsttag-1_0-0-32bit/summary
 #. leap/gstreamer-plugins-bad/libgsturidownloader-1_0-0/summary
 #. leap/gstreamer-plugins-bad/libgsturidownloader-1_0-0-32bit/summary
+#. leap/gstreamer-plugins-bad/libgstvdpau/summary
+#. leap/gstreamer-plugins-bad/libgstvdpau-32bit/summary
 #. leap/gstreamer-plugins-base/libgstvideo-1_0-0/summary
 #. leap/gstreamer-plugins-base/libgstvideo-1_0-0-32bit/summary
 #. leap/gstreamer-plugins-bad/libgstwebrtc-1_0-0/summary
@@ -150,6 +148,8 @@ msgstr ""
 #. tumbleweed/gstreamer-plugins-bad/libgstbasecamerabinsrc-1_0-0-32bit/summary
 #. tumbleweed/gstreamer-plugins-bad/libgstcodecparsers-1_0-0/summary
 #. tumbleweed/gstreamer-plugins-bad/libgstcodecparsers-1_0-0-32bit/summary
+#. tumbleweed/gstreamer-plugins-bad/libgstcodecs-1_0-0/summary
+#. tumbleweed/gstreamer-plugins-bad/libgstcodecs-1_0-0-32bit/summary
 #. tumbleweed/gstreamer-plugins-base/libgstfft-1_0-0/summary
 #. tumbleweed/gstreamer-plugins-base/libgstfft-1_0-0-32bit/summary
 #. tumbleweed/gstreamer-plugins-base/libgstgl-1_0-0/summary
@@ -182,6 +182,8 @@ msgstr ""
 #. tumbleweed/gstreamer-plugins-bad/libgsturidownloader-1_0-0-32bit/summary
 #. tumbleweed/gstreamer-plugins-base/libgstvideo-1_0-0/summary
 #. tumbleweed/gstreamer-plugins-base/libgstvideo-1_0-0-32bit/summary
+#. tumbleweed/gstreamer-plugins-bad/libgstvulkan-1_0-0/summary
+#. tumbleweed/gstreamer-plugins-bad/libgstvulkan-1_0-0-32bit/summary
 #. tumbleweed/gstreamer-plugins-bad/libgstwebrtc-1_0-0/summary
 #. tumbleweed/gstreamer-plugins-bad/libgstwebrtc-1_0-0-32bit/summary
 msgid "GStreamer Streaming-Media Framework Plug-Ins"
@@ -219,15 +221,33 @@ msgstr "Servizi di editing GStreamer"
 #. tumbleweed/gstreamer-editing-services/gstreamer-editing-services-devel/description
 #. tumbleweed/gstreamer-editing-services/libges-1_0-0/description
 #. tumbleweed/gstreamer-editing-services/typelib-1_0-GES-1_0/description
+#, fuzzy
+#| msgid ""
+#| "The GStreamer multimedia framework and the accompanying GNonLin set of "
+#| "plugins for non-linear editing offer all the building blocks for:\n"
+#| "\n"
+#| "    Decoding and encoding to a wide variety of formats, through all the "
+#| "available GStreamer plugins.\n"
+#| "\n"
+#| "    Easily choosing segments of streams and arranging them through time "
+#| "through the GNonLin set of plugins.\n"
+#| "\n"
+#| "But all those building blocks only offer stream-level access, which "
+#| "results in developers who want to write non-linear editors to write a "
+#| "consequent amount of code to get to the level of non-linear editing "
+#| "notions which are closer and more meaningful for the end-user (and "
+#| "therefore the application).\n"
+#| "\n"
+#| "The GStreamer Editing Services (hereafter GES) aims to fill the gap "
+#| "between GStreamer/GNonLin and the application developer by offering a "
+#| "series of classes to simplify the creation of many kind of editing-"
+#| "related applications."
 msgid ""
 "The GStreamer multimedia framework and the accompanying GNonLin set of "
-"plugins for non-linear editing offer all the building blocks for:\n"
-"\n"
-"    Decoding and encoding to a wide variety of formats, through all the "
-"available GStreamer plugins.\n"
-"\n"
-"    Easily choosing segments of streams and arranging them through time "
-"through the GNonLin set of plugins.\n"
+"plugins for non-linear editing offer all the building blocks for: Decoding "
+"and encoding to a wide variety of formats, through all the available "
+"GStreamer plugins. Easily choosing segments of streams and arranging them "
+"through time through the GNonLin set of plugins.\n"
 "\n"
 "But all those building blocks only offer stream-level access, which results "
 "in developers who want to write non-linear editors to write a consequent "
@@ -282,8 +302,13 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gstreamer\"."
 #. leap/gstreamer-plugins-bad/gstreamer-plugins-bad-doc/description
 #. leap/gstreamer-plugins-bad/libgstadaptivedemux-1_0-0/description
 #. leap/gstreamer-plugins-bad/libgstadaptivedemux-1_0-0-32bit/description
+#. leap/gstreamer-plugins-bad/libgstbadallocators-1_0-0/description
 #. leap/gstreamer-plugins-bad/libgstbadaudio-1_0-0/description
 #. leap/gstreamer-plugins-bad/libgstbadaudio-1_0-0-32bit/description
+#. leap/gstreamer-plugins-bad/libgstbadbase-1_0-0/description
+#. leap/gstreamer-plugins-bad/libgstbadbase-1_0-0-32bit/description
+#. leap/gstreamer-plugins-bad/libgstbadvideo-1_0-0/description
+#. leap/gstreamer-plugins-bad/libgstbadvideo-1_0-0-32bit/description
 #. leap/gstreamer-plugins-bad/libgstbasecamerabinsrc-1_0-0/description
 #. leap/gstreamer-plugins-bad/libgstbasecamerabinsrc-1_0-0-32bit/description
 #. leap/gstreamer-plugins-bad/libgstcodecparsers-1_0-0/description
@@ -304,6 +329,8 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gstreamer\"."
 #. leap/gstreamer-plugins-bad/libgstsctp-1_0-0-32bit/description
 #. leap/gstreamer-plugins-bad/libgsturidownloader-1_0-0/description
 #. leap/gstreamer-plugins-bad/libgsturidownloader-1_0-0-32bit/description
+#. leap/gstreamer-plugins-bad/libgstvdpau/description
+#. leap/gstreamer-plugins-bad/libgstvdpau-32bit/description
 #. leap/gstreamer-plugins-bad/libgstwayland-1_0-0/description
 #. leap/gstreamer-plugins-bad/libgstwayland-1_0-0-32bit/description
 #. leap/gstreamer-plugins-bad/libgstwebrtc-1_0-0/description
@@ -320,6 +347,8 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gstreamer\"."
 #. tumbleweed/gstreamer-plugins-bad/libgstbasecamerabinsrc-1_0-0-32bit/description
 #. tumbleweed/gstreamer-plugins-bad/libgstcodecparsers-1_0-0/description
 #. tumbleweed/gstreamer-plugins-bad/libgstcodecparsers-1_0-0-32bit/description
+#. tumbleweed/gstreamer-plugins-bad/libgstcodecs-1_0-0/description
+#. tumbleweed/gstreamer-plugins-bad/libgstcodecs-1_0-0-32bit/description
 #. tumbleweed/gstreamer-plugins-base/libgstgl-1_0-0/description
 #. tumbleweed/gstreamer-plugins-base/libgstgl-1_0-0-32bit/description
 #. tumbleweed/gstreamer-plugins-bad/libgstinsertbin-1_0-0/description
@@ -336,6 +365,8 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gstreamer\"."
 #. tumbleweed/gstreamer-plugins-bad/libgstsctp-1_0-0-32bit/description
 #. tumbleweed/gstreamer-plugins-bad/libgsturidownloader-1_0-0/description
 #. tumbleweed/gstreamer-plugins-bad/libgsturidownloader-1_0-0-32bit/description
+#. tumbleweed/gstreamer-plugins-bad/libgstvulkan-1_0-0/description
+#. tumbleweed/gstreamer-plugins-bad/libgstvulkan-1_0-0-32bit/description
 #. tumbleweed/gstreamer-plugins-bad/libgstwayland-1_0-0/description
 #. tumbleweed/gstreamer-plugins-bad/libgstwayland-1_0-0-32bit/description
 #. tumbleweed/gstreamer-plugins-bad/libgstwebrtc-1_0-0/description
@@ -372,14 +403,12 @@ msgstr ""
 "basato su GStreamer."
 
 #. leap/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth/summary
-#. leap/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth-32bit/summary
 #. tumbleweed/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth/summary
 #. tumbleweed/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth-32bit/summary
 msgid "Fluidsynth plugin for GStreamer"
 msgstr "Plugin fluidsynth per GStreamer"
 
 #. leap/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth/description
-#. leap/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth-32bit/description
 #. tumbleweed/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth/description
 #. tumbleweed/gstreamer-plugins-bad/gstreamer-plugins-bad-fluidsynth-32bit/description
 msgid "Add fluidsynth midi support to any GStreamer based tool."
@@ -423,6 +452,7 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gstreamer-plugins-bad\"."
 #. leap/gstreamer-plugins-base/libgsttag-1_0-0-32bit/description
 #. leap/gstreamer-plugins-base/libgstvideo-1_0-0/description
 #. leap/gstreamer-plugins-base/libgstvideo-1_0-0-32bit/description
+#. leap/gstreamer-plugins-bad/typelib-1_0-GstBadAllocators-1_0/description
 #. leap/gstreamer-plugins-bad/typelib-1_0-GstInsertBin-1_0/description
 #. leap/gstreamer-plugins-bad/typelib-1_0-GstMpegts-1_0/description
 #. leap/gstreamer-plugins-bad/typelib-1_0-GstPlayer-1_0/description
@@ -453,9 +483,14 @@ msgstr "Fornisce le traduzioni per il pacchetto \"gstreamer-plugins-bad\"."
 #. tumbleweed/gstreamer-plugins-base/libgsttag-1_0-0-32bit/description
 #. tumbleweed/gstreamer-plugins-base/libgstvideo-1_0-0/description
 #. tumbleweed/gstreamer-plugins-base/libgstvideo-1_0-0-32bit/description
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstBadAudio-1_0/description
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstCodecs-1_0/description
 #. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstInsertBin-1_0/description
 #. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstMpegts-1_0/description
 #. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstPlayer-1_0/description
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstVulkan-1_0/description
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstVulkanWayland-1_0/description
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstVulkanXCB-1_0/description
 #. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstWebRTC-1_0/description
 msgid ""
 "GStreamer is a streaming media framework based on graphs of filters that "
@@ -592,14 +627,12 @@ msgstr ""
 "plugins-good."
 
 #. leap/gstreamer-plugins-libav/summary
-#. leap/gstreamer-plugins-libav/gstreamer-plugins-libav-32bit/summary
 #. tumbleweed/gstreamer-plugins-libav/summary
 #. tumbleweed/gstreamer-plugins-libav/gstreamer-plugins-libav-32bit/summary
 msgid "A ffmpeg/libav plugin for GStreamer"
 msgstr "Un plugin ffmpeg/libav per GStreamer"
 
 #. leap/gstreamer-plugins-libav/description
-#. leap/gstreamer-plugins-libav/gstreamer-plugins-libav-32bit/description
 #. tumbleweed/gstreamer-plugins-libav/description
 #. tumbleweed/gstreamer-plugins-libav/gstreamer-plugins-libav-32bit/description
 msgid ""
@@ -643,55 +676,6 @@ msgstr ""
 "nuovi plugin.\n"
 "\n"
 "Questo plugin contiene la documentazione."
-
-#. leap/gstreamer-plugins-qt/summary
-#. leap/gstreamer-plugins-qt5/summary
-msgid "C++/Qt bindings for GStreamer"
-msgstr "Binding C++/Qt per GStreamer"
-
-#. leap/gstreamer-plugins-qt/description
-#. leap/gstreamer-plugins-qt5/description
-msgid ""
-"GStreamer is a streaming-media framework, based on graphs of filters which "
-"operate on media data. Applications using this library can do anything from "
-"real-time sound processing to playing videos, and just about anything else "
-"media-related.  Its plug-in-based architecture means that new data types or "
-"processing capabilities can be added by installing new plug-ins.\n"
-"\n"
-"This package contains C++/Qt bindings for GStreamer."
-msgstr ""
-"GStreamer è un'infrastruttura di diffusione multimediale, basata su grafi di "
-"filtri che operano sui dati multimediali. Le applicazioni che usano questa "
-"libreria possono fare qualsiasi cosa, dall'elaborazione dei suoni in tempo "
-"reale alla riproduzione di video e appunto qualsiasi altra cosa relativa al "
-"multimediale. La sua architettura basata su plugin implica che i nuovi tipi "
-"di dati o nuove capacità di elaborazione possono essere aggiunti installando "
-"nuovi plugin.\n"
-"\n"
-"Questo pacchetto contiene i binding C++/Qt per GStreamer."
-
-#. leap/gstreamer-plugins-qt/gstreamer-plugins-qt-devel/description
-#. leap/gstreamer-plugins-qt5/gstreamer-plugins-qt5-devel/description
-msgid ""
-"GStreamer is a streaming-media framework, based on graphs of filters which "
-"operate on media data. Applications using this library can do anything from "
-"real-time sound processing to playing videos, and just about anything else "
-"media-related.  Its plug-in-based architecture means that new data types or "
-"processing capabilities can be added by installing new plug-ins.\n"
-"\n"
-"This package contains development files and headers for the C++/Qt bindings "
-"for GStreamer."
-msgstr ""
-"GStreamer è un'infrastruttura di diffusione multimediale, basata su grafi di "
-"filtri che operano sui dati multimediali. Le applicazioni che usano questa "
-"libreria possono fare qualsiasi cosa, dall'elaborazione dei suoni in tempo "
-"reale alla riproduzione di video e appunto qualsiasi altra cosa relativa al "
-"multimediale. La sua architettura basata su plugin implica che nuovi tipi di "
-"dati o nuove capacità di elaborazione possono essere aggiunti installando "
-"nuovi plugin.\n"
-"\n"
-"Questo pacchetto contiene i file di sviluppo e le intestazioni per i binding "
-"C++/Qt per GStreamer."
 
 #. leap/gstreamer-plugins-ugly/description
 #. leap/gstreamer-plugins-ugly/gstreamer-plugins-ugly-32bit/description
@@ -771,22 +755,21 @@ msgstr ""
 "File di sviluppo per la libreria GStreamer per realizzare un server RTSP."
 
 #. leap/gstreamer-transcoder/summary
-#. tumbleweed/gstreamer-transcoder/summary
+#. tumbleweed/gstreamer-plugins-bad/gstreamer-transcoder/summary
 msgid "GStreamer Transcoding API"
 msgstr "API di transcodifica di GStreamer"
 
 #. leap/gstreamer-transcoder/description
-#. tumbleweed/gstreamer-transcoder/description
 msgid "GStreamer Transcoding API. Used by Pitvi currently."
 msgstr "API di transcodifica di GStreamer. Attualmente usata da Pitivi."
 
 #. leap/gstreamer-transcoder/gstreamer-transcoder-devel/summary
-#. tumbleweed/gstreamer-transcoder/gstreamer-transcoder-devel/summary
+#. tumbleweed/gstreamer-plugins-bad/gstreamer-transcoder-devel/summary
 msgid "Development files for the GStreamer Transcoding API"
 msgstr "File di sviluppo per le API di transcodifica di GStreamer"
 
 #. leap/gstreamer-transcoder/gstreamer-transcoder-devel/description
-#. tumbleweed/gstreamer-transcoder/gstreamer-transcoder-devel/description
+#. tumbleweed/gstreamer-plugins-bad/gstreamer-transcoder-devel/description
 msgid ""
 "This subpackage contains the header files needed to build applications "
 "making use of the GStreamer Transcoding API."
@@ -795,16 +778,32 @@ msgstr ""
 "compilare applicazioni che fanno uso delle API di transcodifica di GStreamer."
 
 #. leap/gstreamer-validate/summary
-msgid "Validate GStreamer Pipelines"
+#. leap/gstreamer-validate/libgstvalidate-1_0-0/summary
+#. tumbleweed/gstreamer-devtools/libgstvalidate-1_0-0/summary
+#, fuzzy
+#| msgid "Validate GStreamer Pipelines"
+msgid "GStreamer pipeline validator"
 msgstr "Validazione dei flussi GStreamer"
 
 #. leap/gstreamer-validate/description
+#, fuzzy
+#| msgid ""
+#| "The goal of GstValidate is to be able to detect when elements are not "
+#| "behaving as expected and report it to the user so he knows how things are "
+#| "supposed to work inside a GstPipeline. In the end, fixing issues found by "
+#| "the tool will ensure that all elements behave all together in the "
+#| "expected way.\n"
+#| "\n"
+#| "The easiest way of using GstValidate is to use one of its command-line "
+#| "tools, located at tools/ directory. It is also possible to monitor "
+#| "GstPipelines from any application by using the LD_PRELOAD gstvalidate "
+#| "lib. The third way of using it is to write your own application that "
+#| "links and uses libgstvalidate."
 msgid ""
-"The goal of GstValidate is to be able to detect when elements are not "
-"behaving as expected and report it to the user so he knows how things are "
-"supposed to work inside a GstPipeline. In the end, fixing issues found by "
-"the tool will ensure that all elements behave all together in the expected "
-"way.\n"
+"GstValidate detects when elements are not behaving as expected and report it "
+"to the user so he knows how things are supposed to work inside a "
+"GstPipeline. In the end, fixing issues found by the tool will ensure that "
+"all elements behave all together in the expected way.\n"
 "\n"
 "The easiest way of using GstValidate is to use one of its command-line "
 "tools, located at tools/ directory. It is also possible to monitor "
@@ -825,18 +824,29 @@ msgstr ""
 "che collega e usa libgstvalidate."
 
 #. leap/gstreamer-validate/gstreamer-validate-devel/summary
-msgid "Validate GStreamer Pipelines -- Developer's files"
-msgstr "Validazione dei flussi GStreamer -- File per lo sviluppatore"
+#, fuzzy
+#| msgid "Development files for the GStreamer-based RTSP server library"
+msgid "Header files for the GStreamer pipeline validator"
+msgstr "File di sviluppo per la libreria per server RTSP basata su GStreamer"
 
 #. leap/gstreamer-validate/gstreamer-validate-devel/description
 #. leap/gstreamer-validate/libgstvalidate-1_0-0/description
 #. leap/gstreamer-validate/typelib-1_0-GstValidate-1_0/description
+#. tumbleweed/gstreamer-devtools/gstreamer-devtools-devel/description
+#. tumbleweed/gstreamer-devtools/libgstvalidate-1_0-0/description
+#. tumbleweed/gstreamer-devtools/typelib-1_0-GstValidate-1_0/description
+#, fuzzy
+#| msgid ""
+#| "The goal of GstValidate is to be able to detect when elements are not "
+#| "behaving as expected and report it to the user so he knows how things are "
+#| "supposed to work inside a GstPipeline. In the end, fixing issues found by "
+#| "the tool will ensure that all elements behave all together in the "
+#| "expected way."
 msgid ""
-"The goal of GstValidate is to be able to detect when elements are not "
-"behaving as expected and report it to the user so he knows how things are "
-"supposed to work inside a GstPipeline. In the end, fixing issues found by "
-"the tool will ensure that all elements behave all together in the expected "
-"way."
+"GstValidate detects when elements are not behaving as expected and report it "
+"to the user so he knows how things are supposed to work inside a "
+"GstPipeline. In the end, fixing issues found by the tool will ensure that "
+"all elements behave all together in the expected way."
 msgstr ""
 "L'obiettivo di GstValidate è riuscire a rilevare quando degli elementi non "
 "si stanno comportando come atteso e segnalare la cosa all'utente in modo che "
@@ -889,19 +899,15 @@ msgstr ""
 "libreria."
 
 #. leap/gstreamer-transcoder/libgsttranscoder-1_0-0/summary
-#. tumbleweed/gstreamer-transcoder/libgsttranscoder-1_0-0/summary
+#. tumbleweed/gstreamer-plugins-bad/libgsttranscoder-1_0-0/summary
 msgid "GStreamer Transcoder API"
 msgstr "API di transcodifica di GStreamer"
 
 #. leap/gstreamer-transcoder/libgsttranscoder-1_0-0/description
-#. tumbleweed/gstreamer-transcoder/libgsttranscoder-1_0-0/description
+#. tumbleweed/gstreamer-plugins-bad/libgsttranscoder-1_0-0/description
 msgid "This subpackage contains the implementation of the GStreamer API."
 msgstr ""
 "Questo sottopacchetto contiene l'implementazione delle API di GStreamer."
-
-#. leap/gstreamer-validate/libgstvalidate-1_0-0/summary
-msgid "Validate GStreamer Pipelines -- System Libraries"
-msgstr "Validazione dei flussi GStreamer -- Librerie di sistema"
 
 #. leap/gstreamer-plugins-bad/libgstwayland-1_0-0/summary
 #. leap/gstreamer-plugins-bad/libgstwayland-1_0-0-32bit/summary
@@ -913,14 +919,18 @@ msgstr ""
 "Wayland"
 
 #. leap/gstreamer/typelib-1_0-Gst-1_0/summary
+#. leap/gstreamer/typelib-1_0-Gst-1_0-32bit/summary
 #. tumbleweed/gstreamer/typelib-1_0-Gst-1_0/summary
+#. tumbleweed/gstreamer/typelib-1_0-Gst-1_0-32bit/summary
 msgid "Streaming-Media Framework Runtime -- Introspection bindings"
 msgstr ""
 "Componenti di esecuzione dell'infrastruttura di diffusione multimediale - "
 "binding Introspection"
 
 #. leap/gstreamer/typelib-1_0-Gst-1_0/description
+#. leap/gstreamer/typelib-1_0-Gst-1_0-32bit/description
 #. tumbleweed/gstreamer/typelib-1_0-Gst-1_0/description
+#. tumbleweed/gstreamer/typelib-1_0-Gst-1_0-32bit/description
 msgid ""
 "GStreamer is a streaming-media framework, based on graphs of filters which "
 "operate on media data. Applications using this library can do anything from "
@@ -943,6 +953,8 @@ msgstr ""
 #. leap/gstreamer-plugins-base/typelib-1_0-GstAllocators-1_0/summary
 #. leap/gstreamer-plugins-base/typelib-1_0-GstApp-1_0/summary
 #. leap/gstreamer-plugins-base/typelib-1_0-GstAudio-1_0/summary
+#. leap/gstreamer-plugins-bad/typelib-1_0-GstBadAllocators-1_0/summary
+#. leap/gstreamer-plugins-base/typelib-1_0-GstFft-1_0/summary
 #. leap/gstreamer-plugins-base/typelib-1_0-GstGL-1_0/summary
 #. leap/gstreamer-plugins-bad/typelib-1_0-GstInsertBin-1_0/summary
 #. leap/gstreamer-plugins-bad/typelib-1_0-GstMpegts-1_0/summary
@@ -957,7 +969,12 @@ msgstr ""
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstAllocators-1_0/summary
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstApp-1_0/summary
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstAudio-1_0/summary
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstBadAudio-1_0/summary
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstCodecs-1_0/summary
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGL-1_0/summary
+#. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGLEGL-1_0/summary
+#. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGLWayland-1_0/summary
+#. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGLX11-1_0/summary
 #. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstInsertBin-1_0/summary
 #. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstMpegts-1_0/summary
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstPbutils-1_0/summary
@@ -967,6 +984,9 @@ msgstr ""
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstSdp-1_0/summary
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstTag-1_0/summary
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstVideo-1_0/summary
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstVulkan-1_0/summary
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstVulkanWayland-1_0/summary
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstVulkanXCB-1_0/summary
 #. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstWebRTC-1_0/summary
 msgid "GStreamer Streaming-Media Framework Plug-Ins -- Introspection bindings"
 msgstr ""
@@ -976,6 +996,7 @@ msgstr ""
 #. leap/gstreamer-plugins-base/typelib-1_0-GstAllocators-1_0/description
 #. leap/gstreamer-plugins-base/typelib-1_0-GstApp-1_0/description
 #. leap/gstreamer-plugins-base/typelib-1_0-GstAudio-1_0/description
+#. leap/gstreamer-plugins-base/typelib-1_0-GstFft-1_0/description
 #. leap/gstreamer-plugins-base/typelib-1_0-GstGL-1_0/description
 #. leap/gstreamer-plugins-base/typelib-1_0-GstPbutils-1_0/description
 #. leap/gstreamer-plugins-base/typelib-1_0-GstRtp-1_0/description
@@ -987,6 +1008,9 @@ msgstr ""
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstApp-1_0/description
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstAudio-1_0/description
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGL-1_0/description
+#. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGLEGL-1_0/description
+#. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGLWayland-1_0/description
+#. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstGLX11-1_0/description
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstPbutils-1_0/description
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstRtp-1_0/description
 #. tumbleweed/gstreamer-plugins-base/typelib-1_0-GstRtsp-1_0/description
@@ -1028,12 +1052,12 @@ msgstr ""
 "RTSP."
 
 #. leap/gstreamer-transcoder/typelib-1_0-GstTranscoder-1_0/summary
-#. tumbleweed/gstreamer-transcoder/typelib-1_0-GstTranscoder-1_0/summary
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstTranscoder-1_0/summary
 msgid "Introspection bindings for the GStreamer Transcoder API"
 msgstr "Binding Introspection per le API di transcodifica di GStreamer"
 
 #. leap/gstreamer-transcoder/typelib-1_0-GstTranscoder-1_0/description
-#. tumbleweed/gstreamer-transcoder/typelib-1_0-GstTranscoder-1_0/description
+#. tumbleweed/gstreamer-plugins-bad/typelib-1_0-GstTranscoder-1_0/description
 msgid ""
 "This subpackage contains the introspection bindings for the GStreamer "
 "Transcoding API."
@@ -1042,17 +1066,20 @@ msgstr ""
 "transcodifica di GStreamer."
 
 #. leap/gstreamer-validate/typelib-1_0-GstValidate-1_0/summary
-msgid "Validate GStreamer Pipelines -- GObject Introspection bindings"
-msgstr "Validazione flussi GStreamer - Binding GObject di Introspection"
-
-#. tumbleweed/gstreamer-validate/summary
-#. tumbleweed/gstreamer-validate/libgstvalidate-1_0-0/summary
+#. tumbleweed/gstreamer-devtools/typelib-1_0-GstValidate-1_0/summary
 #, fuzzy
-#| msgid "Validate GStreamer Pipelines"
-msgid "GStreamer pipeline validator"
-msgstr "Validazione dei flussi GStreamer"
+#| msgid "Introspection bindings for the GStreamer-based RTSP server library"
+msgid "GObject introspection bindings for the GStreamer pipeline validator"
+msgstr ""
+"Binding Introspection per la libreria per server RTSP basata su GStreamer"
 
-#. tumbleweed/gstreamer-validate/description
+#. tumbleweed/gstreamer-devtools/summary
+#, fuzzy
+#| msgid "Development files for the GStreamer Transcoding API"
+msgid "Development and debugging tools for GStreamer"
+msgstr "File di sviluppo per le API di transcodifica di GStreamer"
+
+#. tumbleweed/gstreamer-devtools/description
 #, fuzzy
 #| msgid ""
 #| "The goal of GstValidate is to be able to detect when elements are not "
@@ -1067,6 +1094,8 @@ msgstr "Validazione dei flussi GStreamer"
 #| "lib. The third way of using it is to write your own application that "
 #| "links and uses libgstvalidate."
 msgid ""
+"Development and debugging tools for GStreamer\n"
+"\n"
 "GstValidate detects when elements are not behaving as expected and report it "
 "to the user so he knows how things are supposed to work inside a "
 "GstPipeline. In the end, fixing issues found by the tool will ensure that "
@@ -1090,40 +1119,117 @@ msgstr ""
 "libgstvalidate. La terza maniera di utilizzarlo è scrivere un'applicazione "
 "che collega e usa libgstvalidate."
 
-#. tumbleweed/gstreamer-validate/gstreamer-validate-devel/summary
+#. tumbleweed/gstreamer-devtools/gstreamer-devtools-devel/summary
 #, fuzzy
 #| msgid "Development files for the GStreamer-based RTSP server library"
-msgid "Header files for the GStreamer pipeline validator"
+msgid "Header files for the GStreamer development and debugging tools"
 msgstr "File di sviluppo per la libreria per server RTSP basata su GStreamer"
 
-#. tumbleweed/gstreamer-validate/gstreamer-validate-devel/description
-#. tumbleweed/gstreamer-validate/libgstvalidate-1_0-0/description
-#. tumbleweed/gstreamer-validate/typelib-1_0-GstValidate-1_0/description
+#. tumbleweed/gstreamer-plugins-bad/gstreamer-transcoder/description
 #, fuzzy
-#| msgid ""
-#| "The goal of GstValidate is to be able to detect when elements are not "
-#| "behaving as expected and report it to the user so he knows how things are "
-#| "supposed to work inside a GstPipeline. In the end, fixing issues found by "
-#| "the tool will ensure that all elements behave all together in the "
-#| "expected way."
-msgid ""
-"GstValidate detects when elements are not behaving as expected and report it "
-"to the user so he knows how things are supposed to work inside a "
-"GstPipeline. In the end, fixing issues found by the tool will ensure that "
-"all elements behave all together in the expected way."
-msgstr ""
-"L'obiettivo di GstValidate è riuscire a rilevare quando degli elementi non "
-"si stanno comportando come atteso e segnalare la cosa all'utente in modo che "
-"sappia come le cose dovrebbero operare all'interno di una GstPipeline. Alla "
-"fine, la correzione dei problemi riscontrati dallo strumento assicura che "
-"tutti gli elementi operino di concerto nel modo atteso."
+#| msgid "GStreamer Transcoding API"
+msgid "GStreamer Transcoding cli tool and API"
+msgstr "API di transcodifica di GStreamer"
 
-#. tumbleweed/gstreamer-validate/typelib-1_0-GstValidate-1_0/summary
-#, fuzzy
-#| msgid "Introspection bindings for the GStreamer-based RTSP server library"
-msgid "GObject introspection bindings for the GStreamer pipeline validator"
-msgstr ""
-"Binding Introspection per la libreria per server RTSP basata su GStreamer"
+#~ msgid "Include files and libraries mandatory for development"
+#~ msgstr "File di inclusione e librerie obbligatori per lo sviluppo"
+
+#~ msgid "C++/Qt bindings for GStreamer"
+#~ msgstr "Binding C++/Qt per GStreamer"
+
+#~ msgid ""
+#~ "GStreamer is a streaming-media framework, based on graphs of filters "
+#~ "which operate on media data. Applications using this library can do "
+#~ "anything from real-time sound processing to playing videos, and just "
+#~ "about anything else media-related.  Its plug-in-based architecture means "
+#~ "that new data types or processing capabilities can be added by installing "
+#~ "new plug-ins.\n"
+#~ "\n"
+#~ "This package contains C++/Qt bindings for GStreamer."
+#~ msgstr ""
+#~ "GStreamer è un'infrastruttura di diffusione multimediale, basata su grafi "
+#~ "di filtri che operano sui dati multimediali. Le applicazioni che usano "
+#~ "questa libreria possono fare qualsiasi cosa, dall'elaborazione dei suoni "
+#~ "in tempo reale alla riproduzione di video e appunto qualsiasi altra cosa "
+#~ "relativa al multimediale. La sua architettura basata su plugin implica "
+#~ "che i nuovi tipi di dati o nuove capacità di elaborazione possono essere "
+#~ "aggiunti installando nuovi plugin.\n"
+#~ "\n"
+#~ "Questo pacchetto contiene i binding C++/Qt per GStreamer."
+
+#~ msgid ""
+#~ "GStreamer is a streaming-media framework, based on graphs of filters "
+#~ "which operate on media data. Applications using this library can do "
+#~ "anything from real-time sound processing to playing videos, and just "
+#~ "about anything else media-related.  Its plug-in-based architecture means "
+#~ "that new data types or processing capabilities can be added by installing "
+#~ "new plug-ins.\n"
+#~ "\n"
+#~ "This package contains development files and headers for the C++/Qt "
+#~ "bindings for GStreamer."
+#~ msgstr ""
+#~ "GStreamer è un'infrastruttura di diffusione multimediale, basata su grafi "
+#~ "di filtri che operano sui dati multimediali. Le applicazioni che usano "
+#~ "questa libreria possono fare qualsiasi cosa, dall'elaborazione dei suoni "
+#~ "in tempo reale alla riproduzione di video e appunto qualsiasi altra cosa "
+#~ "relativa al multimediale. La sua architettura basata su plugin implica "
+#~ "che nuovi tipi di dati o nuove capacità di elaborazione possono essere "
+#~ "aggiunti installando nuovi plugin.\n"
+#~ "\n"
+#~ "Questo pacchetto contiene i file di sviluppo e le intestazioni per i "
+#~ "binding C++/Qt per GStreamer."
+
+#~ msgid "Validate GStreamer Pipelines"
+#~ msgstr "Validazione dei flussi GStreamer"
+
+#~ msgid ""
+#~ "The goal of GstValidate is to be able to detect when elements are not "
+#~ "behaving as expected and report it to the user so he knows how things are "
+#~ "supposed to work inside a GstPipeline. In the end, fixing issues found by "
+#~ "the tool will ensure that all elements behave all together in the "
+#~ "expected way.\n"
+#~ "\n"
+#~ "The easiest way of using GstValidate is to use one of its command-line "
+#~ "tools, located at tools/ directory. It is also possible to monitor "
+#~ "GstPipelines from any application by using the LD_PRELOAD gstvalidate "
+#~ "lib. The third way of using it is to write your own application that "
+#~ "links and uses libgstvalidate."
+#~ msgstr ""
+#~ "L'obiettivo di GstValidate è riuscire a rilevare quando degli elementi "
+#~ "non si stanno comportando come atteso e segnalare la cosa all'utente in "
+#~ "modo che sappia come le cose dovrebbero operare all'interno di una "
+#~ "GstPipeline. Alla fine, la correzione dei problemi riscontrati dallo "
+#~ "strumento assicura che tutti gli elementi operino di concerto nel modo "
+#~ "atteso.\n"
+#~ "\n"
+#~ "La maniera più semplice di usare GstValidate è usare uno dei suoi "
+#~ "strumenti a riga di comando, ubicato nella directory tools/. È anche "
+#~ "possibile monitorare GstPipeline da una qualsiasi applicazione usando "
+#~ "LD_PRELOAD libgstvalidate. La terza maniera di utilizzarlo è scrivere "
+#~ "un'applicazione che collega e usa libgstvalidate."
+
+#~ msgid "Validate GStreamer Pipelines -- Developer's files"
+#~ msgstr "Validazione dei flussi GStreamer -- File per lo sviluppatore"
+
+#~ msgid ""
+#~ "The goal of GstValidate is to be able to detect when elements are not "
+#~ "behaving as expected and report it to the user so he knows how things are "
+#~ "supposed to work inside a GstPipeline. In the end, fixing issues found by "
+#~ "the tool will ensure that all elements behave all together in the "
+#~ "expected way."
+#~ msgstr ""
+#~ "L'obiettivo di GstValidate è riuscire a rilevare quando degli elementi "
+#~ "non si stanno comportando come atteso e segnalare la cosa all'utente in "
+#~ "modo che sappia come le cose dovrebbero operare all'interno di una "
+#~ "GstPipeline. Alla fine, la correzione dei problemi riscontrati dallo "
+#~ "strumento assicura che tutti gli elementi operino di concerto nel modo "
+#~ "atteso."
+
+#~ msgid "Validate GStreamer Pipelines -- System Libraries"
+#~ msgstr "Validazione dei flussi GStreamer -- Librerie di sistema"
+
+#~ msgid "Validate GStreamer Pipelines -- GObject Introspection bindings"
+#~ msgstr "Validazione flussi GStreamer - Binding GObject di Introspection"
 
 #~ msgid "Languages for package gstreamer-0_10"
 #~ msgstr "Lingue per il pacchetto gstreamer-0_10"

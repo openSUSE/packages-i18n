@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2018-05-16 11:04+0000\n"
 "Last-Translator: Alessio Adamo <alessio.adamo@gmail.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-i18n/gtk-"
@@ -139,16 +139,24 @@ msgstr "Questo pacchetto contiene i binding Mono per glib."
 
 #. leap/gtk-doc/summary
 #. tumbleweed/gtk-doc/summary
-msgid "GTK+ DocBook Documentation Generator"
+#, fuzzy
+#| msgid "GTK+ DocBook Documentation Generator"
+msgid "GTK+ Documentation Generator"
 msgstr "Generatore di documentazione DocBook di GTK+"
 
 #. leap/gtk-doc/description
 #. tumbleweed/gtk-doc/description
+#, fuzzy
+#| msgid ""
+#| "Gtkdoc is a set of Perl scripts that generate API reference documentation "
+#| "in DocBook format.  It can extract documentation from source code "
+#| "comments in a manner similar to Java-doc.  It is used to generate the "
+#| "documentation for GLib, Gtk+, and GNOME."
 msgid ""
-"Gtkdoc is a set of Perl scripts that generate API reference documentation in "
-"DocBook format.  It can extract documentation from source code comments in a "
-"manner similar to Java-doc.  It is used to generate the documentation for "
-"GLib, Gtk+, and GNOME."
+"Gtkdoc is a set of Python scripts that generates API reference documentation "
+"in e.g DocBook, HTML or PDF format.  It can extract documentation from "
+"source code comments in a manner similar to Java-doc.  It is used to "
+"generate the documentation for GLib, Gtk+, and GNOME."
 msgstr ""
 "Gtkdoc è un insieme di script Perl che generano la documentazione di "
 "riferimento dell'API in formato DocBook. Può estrarre documentazione dai "
@@ -156,14 +164,49 @@ msgstr ""
 "generare la documentazione per GLib, Gtk+ e GNOME."
 
 #. leap/gtk-doc/gtk-doc-lang/summary
-#. tumbleweed/gtk-doc/gtk-doc-lang/summary
 msgid "Translations for package gtk-doc"
 msgstr "Traduzioni per il pacchetto gtk-doc"
 
 #. leap/gtk-doc/gtk-doc-lang/description
-#. tumbleweed/gtk-doc/gtk-doc-lang/description
 msgid "Provides translations for the \"gtk-doc\" package."
 msgstr "Fornisce le traduzioni per il pacchetto \"gtk-doc\"."
+
+#. leap/gtk-doc-manual/summary
+#. tumbleweed/gtk-doc-manual/summary
+#, fuzzy
+#| msgid "Languages for package gtk-doc"
+msgid "Manual for Gtkdoc"
+msgstr "Lingue per il pacchetto gtk-doc"
+
+#. leap/gtk-doc-manual/description
+#. tumbleweed/gtk-doc-manual/description
+msgid "User manual for Gtkdoc"
+msgstr ""
+
+#. leap/gtk-doc-manual/gtk-doc-manual-lang/summary
+#. tumbleweed/gtk-doc-manual/gtk-doc-manual-lang/summary
+#, fuzzy
+#| msgid "Translations for package gtk-doc"
+msgid "Translations for package gtk-doc-manual"
+msgstr "Traduzioni per il pacchetto gtk-doc"
+
+#. leap/gtk-doc-manual/gtk-doc-manual-lang/description
+#. tumbleweed/gtk-doc-manual/gtk-doc-manual-lang/description
+#, fuzzy
+#| msgid "Provides translations for the \"gtk-doc\" package."
+msgid "Provides translations for the \"gtk-doc-manual\" package."
+msgstr "Fornisce le traduzioni per il pacchetto \"gtk-doc\"."
+
+#. leap/gtk-doc/gtk-doc-mkpdf/summary
+#. tumbleweed/gtk-doc/gtk-doc-mkpdf/summary
+msgid "Gtkdoc PDF Generator"
+msgstr ""
+
+#. leap/gtk-doc/gtk-doc-mkpdf/description
+#. tumbleweed/gtk-doc/gtk-doc-mkpdf/description
+#, fuzzy
+msgid "PDF generator for Gtkdoc."
+msgstr "Documentazione di Terminal"
 
 #. leap/gtk-key-theme-ctrluftw/summary
 #. tumbleweed/gtk-key-theme-ctrluftw/summary
@@ -178,6 +221,18 @@ msgid ""
 "other common key bindings (like ctrl-p) this is one is reduced to the bare "
 "minimum to make text entries usable."
 msgstr ""
+
+#. leap/gtk-layer-shell/gtk-layer-shell-devel/summary
+#. tumbleweed/gtk-layer-shell/gtk-layer-shell-devel/summary
+#, fuzzy
+msgid "Development files for gtk-layer-shell"
+msgstr "File di sviluppo per taglib"
+
+#. leap/gtk-layer-shell/gtk-layer-shell-devel/description
+#. tumbleweed/gtk-layer-shell/gtk-layer-shell-devel/description
+#, fuzzy
+msgid "Development files and headers for gtk-layer-shell"
+msgstr "File di sviluppo per taglib"
 
 #. leap/gtk-recordMyDesktop/summary
 #, fuzzy
@@ -236,6 +291,23 @@ msgstr "Binding per il linguaggio .Net per GTK+"
 #. tumbleweed/gtk-sharp2/description
 msgid "This package contains Mono bindings for gtk+, gdk, atk, and pango."
 msgstr "Questo pacchetto contiene i binding Mono per gtk+, gdk, atk e pango."
+
+#. leap/gtk-sharp2/gtk-sharp2-complete/summary
+#. leap/gtk-sharp3/gtk-sharp3-complete/summary
+#. tumbleweed/gtk-sharp2/gtk-sharp2-complete/summary
+#. tumbleweed/gtk-sharp3/gtk-sharp3-complete/summary
+msgid "GTK+ and GNOME bindings for Mono (virtual package)"
+msgstr ""
+
+#. leap/gtk-sharp2/gtk-sharp2-complete/description
+#. tumbleweed/gtk-sharp2/gtk-sharp2-complete/description
+msgid ""
+"Gtk# is a library that allows you to build fully native graphical GNOME "
+"applications using Mono. Gtk# is a binding to GTK+, the cross platform user "
+"interface toolkit used in GNOME. It includes bindings for Gtk, Atk, Pango, "
+"Gdk, libgnome, libgnomeui and libgnomecanvas.  (Virtual package which "
+"depends on all gtk-sharp2 subpackages)"
+msgstr ""
 
 #. leap/gtk-sharp2/gtk-sharp2-doc/summary
 #. leap/gtk-sharp3/gtk-sharp3-doc/summary
@@ -311,12 +383,15 @@ msgid "Files for developing programs that use gapi-sharp3."
 msgstr "File necessari per sviluppare software che utilizzano AAlib."
 
 #. leap/gtk-vnc/gtk-vnc-devel/summary
+#. leap/gtk-vnc2/gtk-vnc2-devel/summary
 #. tumbleweed/gtk-vnc/gtk-vnc-devel/summary
 #, fuzzy
 msgid "A GTK widget for VNC clients -- Development Files"
 msgstr "Un widget GTK per client VNC"
 
 #. leap/gtk-vnc/gtk-vnc-devel/description
+#. leap/gtk-vnc2/gtk-vnc2-devel/description
+#. leap/gtk-vnc2/libgtk-vnc-1_0-0/description
 #. leap/gtk-vnc/libgtk-vnc-2_0-0/description
 #. tumbleweed/gtk-vnc/gtk-vnc-devel/description
 #. tumbleweed/gtk-vnc/libgtk-vnc-2_0-0/description
@@ -353,21 +428,39 @@ msgid ""
 " - gvncviewer: a simple VNC client"
 msgstr ""
 
-#. leap/gtk-xfce-engine/summary
-#. leap/gtk-xfce-engine/gtk-xfce-engine-32bit/summary
+#. leap/gtk2-branding-SLE/summary
 #, fuzzy
-msgid "Xfce GTK+-2.0 Theme Engine"
-msgstr "Motore di temi GTK+ 2 ThinIce"
-
-#. leap/gtk-xfce-engine/description
-#. leap/gtk-xfce-engine/gtk-xfce-engine-32bit/description
-#, fuzzy
-msgid ""
-"The Xfce GTK theme engine provides various different themes which allow for "
-"homogeneity in applications for both business and personal desktops."
+#| msgid "The GTK+ toolkit library (version 2) -- openSUSE theme configuration"
+msgid "The GTK+ toolkit library (version 2) -- SLE theme configuration"
 msgstr ""
-"Il motore di temi GTK+-2.0 di Xfce fornisce vari temi diversi che permettono "
-"omogeneità in applicazioni per entrambi i desktop personale e commerciale."
+"La libreria dell'insieme di strumenti GTK+ (versione 2) - configurazione del "
+"tema openSUSE"
+
+#. leap/gtk2-branding-SLE/description
+#. leap/gtk3-branding-SLE/description
+#, fuzzy
+#| msgid ""
+#| "GTK+ is a multi-platform toolkit for creating graphical user interfaces. "
+#| "Offering a complete set of widgets, GTK+ is suitable for projects ranging "
+#| "from small one-off projects to complete application suites.\n"
+#| "\n"
+#| "This package provides the openSUSE theme configuration for widgets and "
+#| "icon themes."
+msgid ""
+"GTK+ is a multi-platform toolkit for creating graphical user interfaces. "
+"Offering a complete set of widgets, GTK+ is suitable for projects ranging "
+"from small one-off projects to complete application suites.\n"
+"\n"
+"This package provides the SLE theme configuration for widgets and icon "
+"themes."
+msgstr ""
+"GTK+ è un insieme di strumenti multi-piattaforma per creare interfacce "
+"utente grafiche. Offrendo un set completo di widget, GTK+ è adatto per "
+"progetti che spaziano dai piccoli progetti a sé stanti alle suite complete "
+"di applicazioni.\n"
+"\n"
+"Questo pacchetto fornisce la configurazione del tema openSUSE per i temi di "
+"widget e icone."
 
 #. leap/gtk2-branding-openSUSE/summary
 #. tumbleweed/gtk2-branding-openSUSE/summary
@@ -429,8 +522,8 @@ msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
 #. tumbleweed/gtk2/libgtk-2_0-0-32bit/description
 #. tumbleweed/gtk3/libgtk-3-0/description
 #. tumbleweed/gtk3/libgtk-3-0-32bit/description
-#. tumbleweed/gtk4/libgtk-4-0/description
-#. tumbleweed/gtk4/libgtk-4-0-32bit/description
+#. tumbleweed/gtk4/libgtk-4-1-32bit/description
+#. tumbleweed/gtk4/libgtk-4-1/description
 msgid ""
 "GTK+ is a multi-platform toolkit for creating graphical user interfaces. "
 "Offering a complete set of widgets, GTK+ is suitable for projects ranging "
@@ -487,7 +580,6 @@ msgid ""
 msgstr ""
 
 #. leap/gtk2-engine-cleanice/summary
-#. leap/gtk2-engine-cleanice/gtk2-engine-cleanice-32bit/summary
 #. tumbleweed/gtk2-engine-cleanice/summary
 #. tumbleweed/gtk2-engine-cleanice/gtk2-engine-cleanice-32bit/summary
 #, fuzzy
@@ -495,7 +587,6 @@ msgid "CleanIce GTK Theme Engine"
 msgstr "Motore di temi GTK+ 2 ThinIce"
 
 #. leap/gtk2-engine-cleanice/description
-#. leap/gtk2-engine-cleanice/gtk2-engine-cleanice-32bit/description
 #. tumbleweed/gtk2-engine-cleanice/description
 #. tumbleweed/gtk2-engine-cleanice/gtk2-engine-cleanice-32bit/description
 #, fuzzy
@@ -616,14 +707,12 @@ msgstr ""
 "UI semplice."
 
 #. leap/gtk2-engine-murrine/summary
-#. leap/gtk2-engine-murrine/gtk2-engine-murrine-32bit/summary
 #. tumbleweed/gtk2-engine-murrine/summary
 #. tumbleweed/gtk2-engine-murrine/gtk2-engine-murrine-32bit/summary
 msgid "Murrine GTK Theme Engine"
 msgstr "Motore di temi GTK Murrine"
 
 #. leap/gtk2-engine-murrine/description
-#. leap/gtk2-engine-murrine/gtk2-engine-murrine-32bit/description
 #. tumbleweed/gtk2-engine-murrine/description
 #. tumbleweed/gtk2-engine-murrine/gtk2-engine-murrine-32bit/description
 msgid ""
@@ -636,7 +725,6 @@ msgstr ""
 "vetro, è semplice ed elegante alla vista ed è estremamente personalizzabile."
 
 #. leap/gtk2-metatheme-nimbus/gtk2-engine-nimbus/summary
-#. leap/gtk2-metatheme-nimbus/gtk2-engine-nimbus-32bit/summary
 #. tumbleweed/gtk2-metatheme-nimbus/gtk2-engine-nimbus/summary
 #. tumbleweed/gtk2-metatheme-nimbus/gtk2-engine-nimbus-32bit/summary
 #, fuzzy
@@ -644,7 +732,6 @@ msgid "Nimbus GTK Theme Engine"
 msgstr "Motore di temi GTK+ 2 Mist"
 
 #. leap/gtk2-metatheme-nimbus/gtk2-engine-nimbus/description
-#. leap/gtk2-metatheme-nimbus/gtk2-engine-nimbus-32bit/description
 #. leap/gtk2-metatheme-nimbus/description
 #. leap/gtk2-metatheme-nimbus/nimbus-icon-theme/description
 #. tumbleweed/gtk2-metatheme-nimbus/gtk2-engine-nimbus/description
@@ -845,6 +932,8 @@ msgstr ""
 
 #. leap/gtk2/gtk2-immodule-tigrigna/summary
 #. leap/gtk2/gtk2-immodule-tigrigna-32bit/summary
+#. leap/gtk2/gtk2-immodules-tigrigna/summary
+#. leap/gtk2/gtk2-immodules-tigrigna-32bit/summary
 #. tumbleweed/gtk2/gtk2-immodule-tigrigna/summary
 #. tumbleweed/gtk2/gtk2-immodule-tigrigna-32bit/summary
 #, fuzzy
@@ -854,8 +943,12 @@ msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
 
 #. leap/gtk2/gtk2-immodule-tigrigna/description
 #. leap/gtk2/gtk2-immodule-tigrigna-32bit/description
+#. leap/gtk2/gtk2-immodules-tigrigna/description
+#. leap/gtk2/gtk2-immodules-tigrigna-32bit/description
 #. leap/gtk3/gtk3-immodule-tigrigna/description
 #. leap/gtk3/gtk3-immodule-tigrigna-32bit/description
+#. leap/gtk3/gtk3-immodules-tigrigna/description
+#. leap/gtk3/gtk3-immodules-tigrigna-32bit/description
 #. tumbleweed/gtk2/gtk2-immodule-tigrigna/description
 #. tumbleweed/gtk2/gtk2-immodule-tigrigna-32bit/description
 #. tumbleweed/gtk3/gtk3-immodule-tigrigna/description
@@ -1065,6 +1158,14 @@ msgstr "Questo pacchetto fornisce il tema GTK+ 2 ThinIce."
 msgid "Auxiliary utilities for the GTK+ toolkit library v2"
 msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
 
+#. leap/gtk3-branding-SLE/summary
+#, fuzzy
+#| msgid "The GTK+ toolkit library (version 3) -- openSUSE theme configuration"
+msgid "The GTK+ toolkit library (version 3) -- SLE theme configuration"
+msgstr ""
+"La libreria dell'insieme di strumenti GTK+ (versione 3) - configurazione del "
+"tema openSUSE"
+
 #. leap/gtk3-branding-openSUSE/summary
 #. tumbleweed/gtk3-branding-openSUSE/summary
 msgid "The GTK+ toolkit library (version 3) -- openSUSE theme configuration"
@@ -1224,6 +1325,8 @@ msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
 
 #. leap/gtk3/gtk3-immodule-tigrigna/summary
 #. leap/gtk3/gtk3-immodule-tigrigna-32bit/summary
+#. leap/gtk3/gtk3-immodules-tigrigna/summary
+#. leap/gtk3/gtk3-immodules-tigrigna-32bit/summary
 #. tumbleweed/gtk3/gtk3-immodule-tigrigna/summary
 #. tumbleweed/gtk3/gtk3-immodule-tigrigna-32bit/summary
 #, fuzzy
@@ -1511,8 +1614,11 @@ msgstr "Interfaccia C++ per GTK3 (una libreria per interfacce grafiche per X)"
 #. leap/gtkmm3/libgtkmm-3_0-1/description
 #. leap/gtkmm3/libgtkmm-3_0-1-32bit/description
 #. tumbleweed/gtkmm3/gtkmm3-devel/description
+#. tumbleweed/gtkmm4/gtkmm4-devel/description
 #. tumbleweed/gtkmm3/libgtkmm-3_0-1/description
 #. tumbleweed/gtkmm3/libgtkmm-3_0-1-32bit/description
+#. tumbleweed/gtkmm4/libgtkmm-4_0-0-32bit/description
+#. tumbleweed/gtkmm4/libgtkmm-4_0-0/description
 msgid ""
 "Gtkmm provides a C++ interface to the GTK+ GUI library. gtkmm3 wraps GTK+ 3. "
 "Highlights include typesafe callbacks, widgets extensible via inheritance "
@@ -1533,6 +1639,7 @@ msgstr "Interfaccia C++ per GTK3 (una libreria per interfacce grafiche per X)"
 
 #. leap/gtkmm3/gtkmm3-doc/description
 #. tumbleweed/gtkmm3/gtkmm3-doc/description
+#. tumbleweed/gtkmm4/gtkmm4-doc/description
 #, fuzzy
 msgid ""
 "Gtkmm provides a C++ interface to the GTK+ GUI library. gtkmm3 wraps GTK+ 3. "
@@ -1890,6 +1997,21 @@ msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
 msgid "The GTK+ toolkit library (version 3)"
 msgstr "La libreria dell'insieme di strumenti GTK+ (versione 3)"
 
+#. leap/gtk-layer-shell/libgtk-layer-shell0/summary
+#. leap/gtk-layer-shell/typelib-1_0-GtkLayerShell-0_1/summary
+#. tumbleweed/gtk-layer-shell/libgtk-layer-shell0/summary
+#. tumbleweed/gtk-layer-shell/typelib-1_0-GtkLayerShell-0_1/summary
+msgid "Library to create desktop components for Wayland"
+msgstr ""
+
+#. leap/gtk-layer-shell/libgtk-layer-shell0/description
+#. tumbleweed/gtk-layer-shell/libgtk-layer-shell0/description
+msgid ""
+"A library to create panels and other desktop components for Wayland using "
+"the Layer Shell protocol"
+msgstr ""
+
+#. leap/gtk-vnc2/libgtk-vnc-1_0-0/summary
 #. leap/gtk-vnc/libgtk-vnc-2_0-0/summary
 #. tumbleweed/gtk-vnc/libgtk-vnc-2_0-0/summary
 msgid "A GTK widget for VNC clients"
@@ -1986,9 +2108,7 @@ msgstr ""
 "piattaforma per le applicazioni GTK+ per gestire e legare gli hotkey a "
 "livello del desktop."
 
-#. leap/gtkhtml/libgtkhtml-4_0-0-32bit/summary
 #. leap/gtkhtml/libgtkhtml-4_0-0/summary
-#. leap/gtkhtml/libgtkhtml-editor-4_0-0-32bit/summary
 #. leap/gtkhtml/libgtkhtml-editor-4_0-0/summary
 #. tumbleweed/gtkhtml/libgtkhtml-4_0-0-32bit/summary
 #. tumbleweed/gtkhtml/libgtkhtml-4_0-0/summary
@@ -1997,9 +2117,7 @@ msgstr ""
 msgid "Lightweight HTML rendering/printing/editing engine"
 msgstr "Un motore leggero per visualizzare/stampare/modificare codice HTML"
 
-#. leap/gtkhtml/libgtkhtml-4_0-0-32bit/description
 #. leap/gtkhtml/libgtkhtml-4_0-0/description
-#. leap/gtkhtml/libgtkhtml-editor-4_0-0-32bit/description
 #. leap/gtkhtml/libgtkhtml-editor-4_0-0/description
 #. tumbleweed/gtkhtml/libgtkhtml-4_0-0-32bit/description
 #. tumbleweed/gtkhtml/libgtkhtml-4_0-0/description
@@ -2139,6 +2257,23 @@ msgstr "Tema Sonar GTK+ e Metacity - file comuni"
 msgid "Nimbus Icon Theme"
 msgstr "Tema delle icone di GNOME"
 
+#. leap/gtk-vnc2/python-gtk-vnc/summary
+msgid "Python bindings for the gtk-vnc library"
+msgstr "Binding Python per la libreria gtk-vnc"
+
+#. leap/gtk-vnc2/python-gtk-vnc/description
+msgid ""
+"gtk-vnc is a VNC viewer widget for GTK+. It is built using coroutines "
+"allowing it to be completely asynchronous while remaining single threaded.\n"
+"\n"
+"This package contains the python bindings for gtk-vnc."
+msgstr ""
+"gtk-vnc è un widget visualizzatore VNC per GTK+. È generato usando le "
+"coroutine che gli permettono di essere completamente asincrono rimanendo un "
+"singolo thread.\n"
+"\n"
+"Questo pacchetto contiene i binding Python per gtk-vnc."
+
 #. leap/gtk2-metatheme-sonar/sonar-icon-theme/summary
 #. tumbleweed/gtk2-metatheme-sonar/sonar-icon-theme/summary
 msgid "Sonar Icon Theme"
@@ -2229,6 +2364,17 @@ msgstr ""
 msgid "Introspection bindings for the GTK+ toolkit library (version 3)"
 msgstr "La libreria dell'insieme di strumenti GTK+ (versione 3)"
 
+#. leap/gtk-layer-shell/typelib-1_0-GtkLayerShell-0_1/description
+#. tumbleweed/gtk-layer-shell/typelib-1_0-GtkLayerShell-0_1/description
+msgid ""
+"This library is a companion library to GObject and Gtk+. It provides various "
+"features that are wished in the underlying library but are not for various "
+"reasons. In most cases, they are wildly out of scope for those libraries. In "
+"other cases, the design isn't quite generic enough to work for everyone..\n"
+"\n"
+"This package provides the GObject Introspection bindings for gtk-layer-shell."
+msgstr ""
+
 #. leap/gtksourceview/typelib-1_0-GtkSource-3_0/summary
 #. tumbleweed/gtksourceview/typelib-1_0-GtkSource-3_0/summary
 msgid "Introspection bindings for the GTK+ source editing widget"
@@ -2267,12 +2413,14 @@ msgstr "Widget GTK+ per la modifica di sorgenti - binding Introspection"
 msgid "GTK3 Spell Checker Interface Library -- Introspection bindings"
 msgstr "La libreria clutter - binding GObject di Introspection"
 
+#. leap/gtk-vnc2/typelib-1_0-GtkVnc-1_0/summary
 #. leap/gtk-vnc/typelib-1_0-GtkVnc-2_0/summary
 #. tumbleweed/gtk-vnc/typelib-1_0-GtkVnc-2_0/summary
 #, fuzzy
 msgid "A GTK widget for VNC clients -- Introspection bindings"
 msgstr "Integrazione con GTK+ per Clutter - binding Introspection"
 
+#. leap/gtk-vnc2/typelib-1_0-GtkVnc-1_0/description
 #. leap/gtk-vnc/typelib-1_0-GtkVnc-2_0/description
 #. tumbleweed/gtk-vnc/typelib-1_0-GtkVnc-2_0/description
 #, fuzzy
@@ -2300,16 +2448,6 @@ msgstr "Tema Industrial per GTK+ 2"
 #| msgid "This package installs the theme engine libraries for GTK+ 2."
 msgid "This package enhances gettext with an International Tag Set for GTK+ 4"
 msgstr "Questo pacchetto installa le librerie dei motori dei temi per GTK+ 2."
-
-#. tumbleweed/gtk-layer-shell/gtk-layer-shell-devel/summary
-#, fuzzy
-msgid "Development files for gtk-layer-shell"
-msgstr "File di sviluppo per taglib"
-
-#. tumbleweed/gtk-layer-shell/gtk-layer-shell-devel/description
-#, fuzzy
-msgid "Development files and headers for gtk-layer-shell"
-msgstr "File di sviluppo per taglib"
 
 #. tumbleweed/gtk2-metatheme-gilouche/summary
 #, fuzzy
@@ -2346,14 +2484,14 @@ msgstr "Tema GTK+ e Metacity creato per openSUSE 11.2."
 msgid "Upstream theme configuration for the GTK+ toolkit library v4"
 msgstr ""
 
-#. tumbleweed/gtk4/gtk4-devel/summary
 #. tumbleweed/gtk4/gtk4-devel-32bit/summary
+#. tumbleweed/gtk4/gtk4-devel/summary
 #, fuzzy
 msgid "Development files for the GTK+ toolkit library v4"
 msgstr "File di sviluppo per taglib"
 
-#. tumbleweed/gtk4/gtk4-devel/description
 #. tumbleweed/gtk4/gtk4-devel-32bit/description
+#. tumbleweed/gtk4/gtk4-devel/description
 #, fuzzy
 #| msgid ""
 #| "GTK+ is a multi-platform toolkit for creating graphical user interfaces. "
@@ -2393,6 +2531,28 @@ msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
 msgid "Auxiliary utilities for the GTK+ toolkit library v4"
 msgstr ""
 
+#. tumbleweed/gtkgreet/summary
+msgid "GTK based greeter for greetd"
+msgstr ""
+
+#. tumbleweed/gtkgreet/description
+msgid "GTK based greeter for greetd, to be run under cage or similar."
+msgstr ""
+
+#. tumbleweed/gtkmm4/gtkmm4-devel/summary
+#. tumbleweed/gtkmm4/libgtkmm-4_0-0-32bit/summary
+#. tumbleweed/gtkmm4/libgtkmm-4_0-0/summary
+#, fuzzy
+#| msgid "C++ Interface for GTK2 (a GUI library for X)"
+msgid "C++ Interface for GTK4 (a GUI library for X)"
+msgstr ""
+"Interfaccia C++ per GTK2 (una libreria per l'interfaccia grafica per X)"
+
+#. tumbleweed/gtkmm4/gtkmm4-doc/summary
+#, fuzzy
+msgid "C++ Interface for GTK4 (a GUI Library for X)"
+msgstr "Interfaccia C++ per GTK3 (una libreria per interfacce grafiche per X)"
+
 #. tumbleweed/gtkpod/summary
 #, fuzzy
 msgid "A platform independent GUI for the Apple iPod"
@@ -2404,23 +2564,12 @@ msgstr ""
 msgid "Development files for gtkpod, a GUI for Apple iPods"
 msgstr "File di sviluppo per taglib"
 
-#. tumbleweed/gtk4/libgtk-4-0/summary
-#. tumbleweed/gtk4/libgtk-4-0-32bit/summary
+#. tumbleweed/gtk4/libgtk-4-1-32bit/summary
+#. tumbleweed/gtk4/libgtk-4-1/summary
 #, fuzzy
 #| msgid "The GTK+ toolkit library (version 2)"
 msgid "The GTK+ toolkit library (version 4)"
 msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
-
-#. tumbleweed/gtk-layer-shell/libgtk-layer-shell0/summary
-#. tumbleweed/gtk-layer-shell/typelib-1_0-GtkLayerShell-0_1/summary
-msgid "Library to create desktop components for Wayland"
-msgstr ""
-
-#. tumbleweed/gtk-layer-shell/libgtk-layer-shell0/description
-msgid ""
-"A library to create panels and other desktop components for Wayland using "
-"the Layer Shell protocol"
-msgstr ""
 
 #. tumbleweed/gtk2-metatheme-sonar/metatheme-sonar-common/summary
 #, fuzzy
@@ -2434,31 +2583,18 @@ msgstr "Tema Sonar GTK+ e Metacity - file comuni"
 msgid "Introspection bindings for the GTK+ toolkit library v4"
 msgstr "La libreria dell'insieme di strumenti GTK+ (versione 2)"
 
-#. tumbleweed/gtk-layer-shell/typelib-1_0-GtkLayerShell-0_1/description
-msgid ""
-"This library is a companion library to GObject and Gtk+. It provides various "
-"features that are wished in the underlying library but are not for various "
-"reasons. In most cases, they are wildly out of scope for those libraries. In "
-"other cases, the design isn't quite generic enough to work for everyone..\n"
-"\n"
-"This package provides the GObject Introspection bindings for gtk-layer-shell."
-msgstr ""
+#, fuzzy
+#~ msgid "Xfce GTK+-2.0 Theme Engine"
+#~ msgstr "Motore di temi GTK+ 2 ThinIce"
 
-#~ msgid "Python bindings for the gtk-vnc library"
-#~ msgstr "Binding Python per la libreria gtk-vnc"
-
+#, fuzzy
 #~ msgid ""
-#~ "gtk-vnc is a VNC viewer widget for GTK+. It is built using coroutines "
-#~ "allowing it to be completely asynchronous while remaining single "
-#~ "threaded.\n"
-#~ "\n"
-#~ "This package contains the python bindings for gtk-vnc."
+#~ "The Xfce GTK theme engine provides various different themes which allow "
+#~ "for homogeneity in applications for both business and personal desktops."
 #~ msgstr ""
-#~ "gtk-vnc è un widget visualizzatore VNC per GTK+. È generato usando le "
-#~ "coroutine che gli permettono di essere completamente asincrono rimanendo "
-#~ "un singolo thread.\n"
-#~ "\n"
-#~ "Questo pacchetto contiene i binding Python per gtk-vnc."
+#~ "Il motore di temi GTK+-2.0 di Xfce fornisce vari temi diversi che "
+#~ "permettono omogeneità in applicazioni per entrambi i desktop personale e "
+#~ "commerciale."
 
 #, fuzzy
 #~ msgid ""
@@ -2602,12 +2738,6 @@ msgstr ""
 #~ msgstr "Libreria che fornisce un widget avanzato per GdkPixbuf"
 
 #, fuzzy
-#~| msgid "C++ Interface for GTK2 (a GUI library for X)"
-#~ msgid "C++ Interface for GTK4 (a GUI library for X)"
-#~ msgstr ""
-#~ "Interfaccia C++ per GTK2 (una libreria per l'interfaccia grafica per X)"
-
-#, fuzzy
 #~ msgid "C++ interface for gtksourceview -- Development Files"
 #~ msgstr "Interfaccia C++ per i file XML - file di sviluppo"
 
@@ -2652,14 +2782,6 @@ msgstr ""
 #~| msgid "The GTK+ toolkit library (version 3) -- Tools"
 #~ msgid "The GTK+ toolkit library (version 3) -- Config schema"
 #~ msgstr "La libreria dell'insieme di strumenti GTK+ (versione 3) - strumenti"
-
-#, fuzzy
-#~ msgid "C++ Interface for GTK4 (a GUI Library for X)"
-#~ msgstr ""
-#~ "Interfaccia C++ per GTK3 (una libreria per interfacce grafiche per X)"
-
-#~ msgid "Languages for package gtk-doc"
-#~ msgstr "Lingue per il pacchetto gtk-doc"
 
 #~ msgid "Provides translations to the package gtk-doc"
 #~ msgstr "Fornisce le traduzioni al pacchetto gtk-doc."
@@ -2762,7 +2884,3 @@ msgstr ""
 
 #~ msgid "Provides translations to the package gtkspell3"
 #~ msgstr "Fornisce le traduzioni al pacchetto gtkspell3."
-
-#, fuzzy
-#~ msgid "Documentation for gtkcam."
-#~ msgstr "Documentazione di Terminal"

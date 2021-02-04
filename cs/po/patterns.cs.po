@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2020-02-13 19:54+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -90,26 +90,36 @@ msgstr ""
 #. leap/patterns-base/patterns-base-sw_management/category
 #. leap/patterns-base/patterns-base-transactional_base/category
 #. leap/patterns-base/patterns-base-update_test/category
+#. leap/patterns-certification/patterns-certification-common-criteria/category
 #. leap/patterns-desktop/patterns-desktop-laptop/category
+#. leap/patterns-desktop/patterns-desktop-mobile/category
 #. leap/patterns-gnome/patterns-gnome-gnome_yast/category
 #. leap/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. leap/patterns-kde/patterns-kde-kde_yast/category
+#. leap/patterns-sap/patterns-sap-b1/category
+#. leap/patterns-sap/patterns-sap-hana/category
+#. leap/patterns-sap/patterns-sap-nw/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/category
 #. leap/patterns-server/patterns-server-kvm_tools/category
 #. leap/patterns-server/patterns-server-xen_tools/category
 #. leap/patterns-yast/patterns-yast-x11_yast/category
 #. leap/patterns-yast/patterns-yast-yast2_basis/category
+#. leap/patterns-yast/patterns-yast-yast2_desktop/category
 #. leap/patterns-yast/patterns-yast-yast2_install_wf/category
+#. leap/patterns-yast/patterns-yast-yast2_server/category
 #. tumbleweed/patterns-base/patterns-base-32bit/category
 #. tumbleweed/patterns-base/patterns-base-apparmor/category
 #. tumbleweed/patterns-base/patterns-base-base/category
 #. tumbleweed/patterns-base/patterns-base-basesystem/category
+#. tumbleweed/patterns-base/patterns-base-bootloader/category
 #. tumbleweed/patterns-base/patterns-base-console/category
 #. tumbleweed/patterns-base/patterns-base-enhanced_base/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base/category
+#. tumbleweed/patterns-base/patterns-base-selinux/category
 #. tumbleweed/patterns-base/patterns-base-sw_management/category
 #. tumbleweed/patterns-base/patterns-base-transactional_base/category
 #. tumbleweed/patterns-base/patterns-base-update_test/category
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/category
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/category
 #. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_yast/category
@@ -117,7 +127,9 @@ msgstr ""
 #. tumbleweed/patterns-server/patterns-server-xen_tools/category
 #. tumbleweed/patterns-yast/patterns-yast-x11_yast/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/category
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/category
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/category
 msgid "Base Technologies"
 msgstr "Základní technologie"
 
@@ -175,9 +187,69 @@ msgid "The 32bit pattern complementing base."
 msgstr "32bitový vzor doplňující base."
 
 #. leap/patterns-base/patterns-base-basesystem/summary
-#. tumbleweed/patterns-base/patterns-base-basesystem/summary
 msgid "Minimal Base System (alias pattern for base)"
 msgstr "Minimální základní systém (alias předloha pro něj)"
+
+#. leap/patterns-base/patterns-base-basic_desktop/summary
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/summary
+msgid "A very basic desktop (previously part of x11 pattern)"
+msgstr "Nejzákladnější pracovní plocha (předtím část šablony x11)"
+
+#. leap/patterns-base/patterns-base-basic_desktop/description
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/description
+msgid "This pattern installs a rather basic desktop (icewm)"
+msgstr "Tato šablona instaluje dosti základní pracovní plochu (icewm)"
+
+#. leap/patterns-base/patterns-base-basic_desktop/category
+#. leap/patterns-base/patterns-base-x11/category
+#. leap/patterns-base/patterns-base-x11_enhanced/category
+#. leap/patterns-base/patterns-base-x11_opt/category
+#. leap/patterns-base/patterns-base-x11_raspberrypi/category
+#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
+#. leap/patterns-fonts/patterns-fonts-fonts/category
+#. leap/patterns-fonts/patterns-fonts-fonts_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basic/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basis/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome_x11/category
+#. leap/patterns-kde/patterns-kde-kde/category
+#. leap/patterns-kde/patterns-kde-kde_plasma/category
+#. leap/patterns-lxde/patterns-lxde-lxde/category
+#. leap/patterns-lxde/patterns-lxde-lxde_office/category
+#. leap/patterns-lxqt/patterns-lxqt-lxqt/category
+#. leap/patterns-mate/patterns-mate-mate/category
+#. leap/patterns-mate/patterns-mate-mate_basis/category
+#. leap/patterns-mate/patterns-mate-mate_office/category
+#. leap/patterns-xfce/patterns-xfce-xfce/category
+#. leap/patterns-xfce/patterns-xfce-xfce_basis/category
+#. leap/patterns-xfce/patterns-xfce-xfce_office/category
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/category
+#. tumbleweed/patterns-base/patterns-base-x11/category
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced/category
+#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/category
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
+#. tumbleweed/patterns-kde/patterns-kde-kde/category
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/category
+#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/category
+#. tumbleweed/patterns-mate/patterns-mate-mate/category
+#. tumbleweed/patterns-mate/patterns-mate-mate_basis/category
+#. tumbleweed/patterns-mate/patterns-mate-mate_office/category
+#. tumbleweed/openSUSEway/patterns-openSUSEway/category
+#. tumbleweed/patterns-sway/patterns-sway-sway/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/category
+msgid "Graphical Environments"
+msgstr "Grafická rozhraní"
 
 # 22756 AttribValues/label
 #. leap/patterns-base/patterns-base-console/summary
@@ -229,7 +301,6 @@ msgid "Minimal Appliance Base"
 msgstr "Minimální funkční základ systémů"
 
 #. leap/patterns-base/patterns-base-minimal_base/description
-#. tumbleweed/patterns-base/patterns-base-minimal_base/description
 msgid ""
 "This is the minimal openSUSE runtime system. It is really a minimal system, "
 "you can login and a shell will be started, that's all. It is intended as "
@@ -298,6 +369,7 @@ msgstr "Balíčky pro testování aktualizace. Tyto balíčky nemají žádnou f
 #. leap/patterns-base/patterns-base-x11_enhanced/summary
 #. leap/patterns-base/patterns-base-x11_enhanced-32bit/summary
 #. leap/patterns-base/patterns-base-x11_opt/summary
+#. leap/patterns-base/patterns-base-x11_raspberrypi/summary
 #. tumbleweed/patterns-base/patterns-base-x11/summary
 #. tumbleweed/patterns-base/patterns-base-x11-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced/summary
@@ -308,6 +380,7 @@ msgstr "Systém X Window"
 #. leap/patterns-base/patterns-base-x11/description
 #. leap/patterns-base/patterns-base-x11_enhanced/description
 #. leap/patterns-base/patterns-base-x11_opt/description
+#. leap/patterns-base/patterns-base-x11_raspberrypi/description
 #. tumbleweed/patterns-base/patterns-base-x11/description
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced/description
 msgid ""
@@ -321,53 +394,6 @@ msgstr ""
 "spolehlivě slouží v serverech, pracovních stanicích, tenkých klientech, "
 "noteboocích a PDA."
 
-#. leap/patterns-base/patterns-base-x11/category
-#. leap/patterns-base/patterns-base-x11_enhanced/category
-#. leap/patterns-base/patterns-base-x11_opt/category
-#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
-#. leap/patterns-fonts/patterns-fonts-fonts/category
-#. leap/patterns-fonts/patterns-fonts-fonts_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basic/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basis/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_x11/category
-#. leap/patterns-kde/patterns-kde-kde/category
-#. leap/patterns-kde/patterns-kde-kde_plasma/category
-#. leap/patterns-lxde/patterns-lxde-lxde/category
-#. leap/patterns-lxde/patterns-lxde-lxde_office/category
-#. leap/patterns-lxqt/patterns-lxqt-lxqt/category
-#. leap/patterns-mate/patterns-mate-mate/category
-#. leap/patterns-mate/patterns-mate-mate_basis/category
-#. leap/patterns-mate/patterns-mate-mate_office/category
-#. leap/patterns-xfce/patterns-xfce-xfce/category
-#. leap/patterns-xfce/patterns-xfce-xfce_basis/category
-#. leap/patterns-xfce/patterns-xfce-xfce_office/category
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/category
-#. tumbleweed/patterns-base/patterns-base-x11/category
-#. tumbleweed/patterns-base/patterns-base-x11_enhanced/category
-#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/category
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
-#. tumbleweed/patterns-kde/patterns-kde-kde/category
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/category
-#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/category
-#. tumbleweed/patterns-mate/patterns-mate-mate/category
-#. tumbleweed/patterns-mate/patterns-mate-mate_basis/category
-#. tumbleweed/patterns-mate/patterns-mate-mate_office/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/category
-msgid "Graphical Environments"
-msgstr "Grafická rozhraní"
-
 #. leap/patterns-base/patterns-base-x11-32bit/description
 #. tumbleweed/patterns-base/patterns-base-x11-32bit/description
 msgid "The 32bit pattern complementing x11."
@@ -377,6 +403,10 @@ msgstr "32bitový vzor doplňující X11."
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "32bitový vzor doplňující x11_enhanced."
+
+#. leap/patterns-certification/patterns-certification-common-criteria/summary
+msgid "Tools and scripts for Common Criteria"
+msgstr ""
 
 #. leap/patterns-desktop/patterns-desktop-books/description
 #. tumbleweed/patterns-desktop/patterns-desktop-books/description
@@ -431,14 +461,19 @@ msgid "Desktop Functions"
 msgstr "Pracovní stanice"
 
 #. leap/patterns-desktop/patterns-desktop-laptop/summary
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/summary
 msgid "Laptop"
 msgstr "Notebook"
 
 #. leap/patterns-desktop/patterns-desktop-laptop/description
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/description
+#. leap/patterns-desktop/patterns-desktop-mobile/description
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/description
 msgid "Tools designed specifically for laptop computers."
 msgstr "Nástroje navržené pro práci s notebooky."
+
+#. leap/patterns-desktop/patterns-desktop-mobile/summary
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/summary
+msgid "Mobile"
+msgstr ""
 
 #. leap/patterns-desktop/patterns-desktop-multimedia/summary
 #. leap/patterns-desktop/patterns-desktop-multimedia_opt/summary
@@ -863,6 +898,59 @@ msgstr "Správa balíčků - grafické nástroje pro GNOME"
 msgid "Package Management - Graphical Tools"
 msgstr "Správa balíčků - grafické nástroje"
 
+#. leap/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. leap/patterns-ha/description
+#. leap/patterns-ha-geo/description
+#. leap/patterns-lp/description
+#. leap/patterns-rt/description
+#. leap/patterns-sap/description
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+
+#. leap/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
+#, fuzzy
+#| msgid "High Availability"
+msgid "GEO Clustering for High Availability"
+msgstr "Vysoká dostupnost"
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/description
+msgid ""
+"This pattern provides tools for building multi-site clustering setups based "
+"on the SUSE Linux Enterprise High-Availability and its GEO extension."
+msgstr ""
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/category
+#. leap/patterns-ha/patterns-ha-ha_sles/category
+#. leap/patterns-lp/patterns-lp-lp_sles/category
+#. leap/patterns-ofed/patterns-ofed-ofed/category
+#. leap/patterns-rt/patterns-rt-rt_sles/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/category
+#. leap/patterns-wbem/patterns-wbem-WBEM/category
+msgid "Primary Functions"
+msgstr "Primární funkce"
+
+#. leap/patterns-ha/patterns-ha-ha_sles/summary
+msgid "High Availability"
+msgstr "Vysoká dostupnost"
+
+#. leap/patterns-ha/patterns-ha-ha_sles/description
+msgid ""
+"Provide tools to ensure a high degree of operational continuity and reduce "
+"the downtimes of your system."
+msgstr "Nabízí nástroje k zajištění operability a výkonu systému."
+
 #. leap/patterns-hpc/patterns-hpc-compute_node/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
@@ -870,11 +958,17 @@ msgstr "Základní výpočetní uzel HPC"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
+#, fuzzy
+#| msgid ""
+#| "A compute node comprises of a minimal software image and mainly runs "
+#| "simulation programs. Services on this node should be reduced to a bare "
+#| "minimum and the node *must* be installed in a automatic manner. The "
+#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
-"'HPC modularized libraries' should also be installed."
+"'HPC Modularized libraries' should also be installed."
 msgstr ""
 "Výpočetní uzel obsahuje obraz minimálního software a hlavně na něm běží "
 "simulační programy. Služby tohoto uzlu lze omezit na naprosté minimum a uzel "
@@ -917,9 +1011,15 @@ msgstr "Balíčky pro vývoj HPC"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
+#| "addition it includes the GNU compilers and the relevant management "
+#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
-"applications. It depends on the pattern 'HPC modularized libraries'. In "
+"applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 "Tento balíček poskytuje všechny relevantní balíčky pro vývoj aplikací HPC, "
@@ -928,15 +1028,23 @@ msgstr ""
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
-msgid "HPC modularized Libraries"
+#, fuzzy
+#| msgid "HPC modularized Libraries"
+msgid "HPC Modularized Libraries"
 msgstr "Modularizované knihovny HPC"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in an HPC environment. These libraries allow to install several MPI "
+#| "flavors in parallel. In order to use thess libraries one needs to load "
+#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
-"in parallel. In order to use thess libraries one needs to load them via the "
+"in parallel. In order to use these libraries one needs to load them via the "
 "module command first."
 msgstr ""
 "Tento balíček poskytuje všechny modularizované knihovny, aby je bylo možné "
@@ -1181,6 +1289,19 @@ msgstr "leechcraft_office (kancelář)"
 msgid "leechcraft_utilities"
 msgstr "leechcraft_utilities"
 
+#. leap/patterns-lp/summary
+msgid "Patterns for SLE Live Patching"
+msgstr ""
+
+#. leap/patterns-lp/patterns-lp-lp_sles/summary
+msgid "Live Patching"
+msgstr ""
+
+#. leap/patterns-lp/patterns-lp-lp_sles/description
+#. leap/patterns-rt/patterns-rt-rt_sles/description
+msgid "Provide tools and patches to fix kernel at runtime."
+msgstr ""
+
 #. leap/patterns-lxde/patterns-lxde-lxde/summary
 #. tumbleweed/patterns-lxde/patterns-lxde-lxde/summary
 msgid "LXDE Desktop Environment"
@@ -1318,6 +1439,28 @@ msgstr "Správa sítě"
 msgid "Tools for administering and debugging networks."
 msgstr "Nástroje pro správu sítě k ladění sítě."
 
+#. leap/patterns-ofed/patterns-ofed-ofed/summary
+#. leap/patterns-ofed/patterns-ofed-ofed-32bit/summary
+msgid "Infiniband (OFED)"
+msgstr "Infiniband (OFED)"
+
+#. leap/patterns-ofed/patterns-ofed-ofed/description
+msgid ""
+"This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
+"base packages. The base pattern includes the packages you need to get your "
+"Infiniband adapter operational, that is IB kernel modules and basic user "
+"level libraries."
+msgstr ""
+"Tento profil obsahuje balíčky založené na OpenFabrics Enterprise "
+"Distribution (OFED). Základní profil obsahuje IB moduly jádra a základní "
+"uživatelské knihovny."
+
+#. leap/patterns-ofed/patterns-ofed-ofed-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing base."
+msgid "The 32bit pattern complementing ofed."
+msgstr "32bitový vzor doplňující base."
+
 #. leap/patterns-office/patterns-office-office/summary
 #. tumbleweed/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -1328,6 +1471,182 @@ msgstr "Kancelářské programy"
 msgid "Office software for your desktop environment including LibreOffice."
 msgstr "Kancelářské programy pro vaše desktopovéprostředí včetně LibreOffice."
 
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
+msgid "Amazon Web Services - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
+msgid ""
+"This pattern installs all Amazon Web Services command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Amazon Web Services - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
+msgid "Amazon Web Services - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
+msgid ""
+"This pattern installs the Amazon Web Services instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. cloud-init)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
+msgid "Amazon Web Services - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
+msgid ""
+"This pattern install the Amazon Web Services instance specific tools which "
+"are used to collect instance metadata (e.g. python-ec2metadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
+msgid "Amazon Web Services - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
+msgid ""
+"This pattern installs the Amazon Web Services command line interface tools "
+"to communicate with the cloud framework (e.g. aws-cli)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
+msgid "Google Cloud Platform - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
+msgid ""
+"This pattern installs all Google Cloud Platform command line interface "
+"tools, instance initialization packages and tools to communicate with the "
+"cloud framework from within a running instance. It is not recommended to "
+"install this pattern, but instead install one of the use-case specific "
+"patterns (e.g. Google Cloud Platform - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
+msgid "Google Cloud Platform - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
+msgid ""
+"This pattern installs the Google Cloud Platform instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. google-daemon)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
+msgid "Google Cloud Platform - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
+msgid ""
+"This pattern install the Google Cloud Platform instance specific tools which "
+"are used to collect instance metadata (e.g. python-gcemetadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
+msgid "Google Cloud Platform - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
+msgid ""
+"This pattern installs the Google Cloud Platform command line interface tools "
+"to communicate with the cloud framework (e.g. google-cloud-sdk)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
+msgid "Microsoft Azure - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
+msgid ""
+"This pattern installs all Microsoft Azure command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Microsoft Azure - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
+msgid "Microsoft Azure - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
+msgid ""
+"This pattern installs the Microsoft Azure instance initialization packages "
+"which support the provisioning and running of instances in the cloud "
+"framework (e.g. python-azure-agent)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
+msgid "Microsoft Azure - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
+msgid ""
+"This pattern install the Microsoft Azure instance specific tools which are "
+"used to collect instance metadata (e.g. azuremetadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
+msgid "Microsoft Azure - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+msgid ""
+"This pattern installs the Microsoft Azure command line interface tools to "
+"communicate with the cloud framework (e.g. azure-cli)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
+msgid "OpenStack - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
+msgid ""
+"This pattern installs all OpenStack command line interface tools, instance "
+"initialization packages and tools to communicate with the cloud framework "
+"from within a running instance. It is not recommended to install this "
+"pattern, but instead install one of the use-case specific patterns (e.g. "
+"OpenStack - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
+msgid "OpenStack - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
+msgid ""
+"This pattern installs the OpenStack instance initialization packages which "
+"support the provisioning and running of instances in the cloud framework (e."
+"g. cloud-init)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
+msgid "OpenStack - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
+msgid ""
+"This pattern install the OpenStack instance specific tools which are used to "
+"collect instance metadata."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
+msgid "OpenStack - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
+msgid ""
+"This pattern installs the OpenStack command line interface tools to "
+"communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
+msgstr ""
+
 #. leap/patterns-rpm-macros/summary
 #. tumbleweed/patterns-rpm-macros/summary
 msgid "RPM macros for building of patterns modules"
@@ -1337,6 +1656,54 @@ msgstr "RPM makra pro budování modulů šablon"
 #. tumbleweed/patterns-rpm-macros/description
 msgid "This package contains SUSE RPM macros to aid creating patterns."
 msgstr "Tento balíček obsahuje makra SUSE RPM - pomoc při tvorbě šablon."
+
+#. leap/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. leap/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. leap/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. leap/patterns-sap/patterns-sap-b1/summary
+#, fuzzy
+#| msgid "SAP Application Server Base"
+msgid "SAP BusinessOne Server Base"
+msgstr "Základ pro aplikační server SAP"
+
+#. leap/patterns-sap/patterns-sap-b1/description
+#, fuzzy
+#| msgid "Set up the server for installing SAP systems."
+msgid "Set up the server for installing SAP BusinessOne systems."
+msgstr "Připravit server pro instalaci systémů SAP."
+
+#. leap/patterns-sap/patterns-sap-hana/summary
+#, fuzzy
+#| msgid "SAP Application Server Base"
+msgid "SAP HANA Server Base"
+msgstr "Základ pro aplikační server SAP"
+
+#. leap/patterns-sap/patterns-sap-hana/description
+#, fuzzy
+#| msgid "Set up the server for installing SAP systems."
+msgid "Set up the server for installing SAP HANA systems."
+msgstr "Připravit server pro instalaci systémů SAP."
+
+#. leap/patterns-sap/patterns-sap-nw/summary
+#, fuzzy
+#| msgid "SAP Application Server Base"
+msgid "SAP NetWeaver Server Base"
+msgstr "Základ pro aplikační server SAP"
+
+#. leap/patterns-sap/patterns-sap-nw/description
+#, fuzzy
+#| msgid "Set up the server for installing SAP systems."
+msgid "Set up the server for installing SAP NetWeaver systems."
+msgstr "Připravit server pro instalaci systémů SAP."
 
 #. leap/patterns-server/patterns-server-dhcp_dns_server/summary
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
@@ -1384,6 +1751,70 @@ msgstr ""
 #. tumbleweed/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
 msgstr "32-bitový vzor doplňující adresářový server (directory_server)."
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
+msgid "FIPS 140-2 specific packages"
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing base."
+msgid "The 32bit pattern complementing fips."
+msgstr "32bitový vzor doplňující base."
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
+msgid "System z HW crypto support"
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
+msgid ""
+"A selection of packages that installs the System z HW crypto stack on System "
+"z."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
+msgid "Oracle Server Base"
+msgstr "Základ pro Oracle"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
+msgid "Set up the server for installing Oracle databases."
+msgstr "Připravuje server na instalaci databáze Oracle."
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing file_server."
+msgid "The 32bit pattern complementing oracle_server."
+msgstr "32bitový vzor doplňující file_server."
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
+msgid "SAP Application Server Base"
+msgstr "Základ pro aplikační server SAP"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
+msgid "Set up the server for installing SAP systems."
+msgstr "Připravit server pro instalaci systémů SAP."
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing lamp_server."
+msgid "The 32bit pattern complementing sap_server."
+msgstr "32bitový vzor doplňující lamp_server."
 
 #. leap/patterns-server/patterns-server-file_server/summary
 #. leap/patterns-server/patterns-server-file_server-32bit/summary
@@ -1549,6 +1980,21 @@ msgstr ""
 "jeho nastavení, správy a monitorování virtuálních strojů na jednom fyzickém "
 "stroji."
 
+#. leap/patterns-wbem/patterns-wbem-WBEM/summary
+#. leap/patterns-wbem/patterns-wbem-WBEM-32bit/summary
+msgid "Web-Based Enterprise Management"
+msgstr "Webová enterprise správa"
+
+#. leap/patterns-wbem/patterns-wbem-WBEM/description
+msgid "Web-based enterprise management."
+msgstr "Enterprise správa s webovým rozhraním."
+
+#. leap/patterns-wbem/patterns-wbem-WBEM-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing x11."
+msgid "The 32bit pattern complementing WBEM."
+msgstr "32bitový vzor doplňující X11."
+
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
 msgid "XFCE Desktop Environment"
@@ -1616,7 +2062,6 @@ msgstr "Grafické rozhraní programu YaST pro minimální X systém."
 
 # 49865 AttribValues/label
 #. leap/patterns-yast/patterns-yast-yast2_basis/summary
-#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
 msgid "YaST System Administration"
 msgstr "YaST správa systému"
 
@@ -1624,6 +2069,22 @@ msgstr "YaST správa systému"
 #. leap/patterns-yast/patterns-yast-yast2_basis/description
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/description
 msgid "YaST tools for basic system administration."
+msgstr "Nástroje programu YaST pro základní správu systému."
+
+# 54237 AttribValues/label
+#. leap/patterns-yast/patterns-yast-yast2_desktop/summary
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/summary
+#, fuzzy
+#| msgid "KDE Utilities"
+msgid "YaST Desktop Utilities"
+msgstr "KDE nástroje"
+
+# 49865 AttribValues/label
+#. leap/patterns-yast/patterns-yast-yast2_desktop/description
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/description
+#, fuzzy
+#| msgid "YaST tools for basic system administration."
+msgid "YaST tools for desktop system administration."
 msgstr "Nástroje programu YaST pro základní správu systému."
 
 # 51925 AttribValues/label
@@ -1637,29 +2098,83 @@ msgstr "Instalační balíčky programu YaST2"
 msgid "YaST tools for installing your system."
 msgstr "Nástroje YaSTu pro instalaci systému."
 
-#. tumbleweed/openSUSE-MicroOS-release/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-appliance/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-appliance-kubic/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-dvd/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-kubic-dvd/summary
+#. leap/patterns-yast/patterns-yast-yast2_server/summary
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/summary
+#, fuzzy
+#| msgid "MATE Utilities"
+msgid "YaST Server Utilities"
+msgstr "Utility MATE"
+
+# 49865 AttribValues/label
+#. leap/patterns-yast/patterns-yast-yast2_server/description
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/description
+#, fuzzy
+#| msgid "YaST tools for basic system administration."
+msgid "YaST tools for server system administration."
+msgstr "Nástroje programu YaST pro základní správu systému."
+
+#. tumbleweed/MicroOS-release/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-appliance/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-appliance-kubic/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-dvd/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-kubic-dvd/summary
 #. tumbleweed/patterns-microos/patterns-microos-base/summary
 msgid "openSUSE MicroOS"
 msgstr "openSUSE MicroOS"
 
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/summary
-msgid "A very basic desktop (previously part of x11 pattern)"
-msgstr "Nejzákladnější pracovní plocha (předtím část šablony x11)"
+#. tumbleweed/patterns-base/patterns-base-basesystem/summary
+#, fuzzy
+#| msgid "Minimal Base System (alias pattern for base)"
+msgid "Base System (alias pattern for base)"
+msgstr "Minimální základní systém (alias předloha pro něj)"
 
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/description
-msgid "This pattern installs a rather basic desktop (icewm)"
-msgstr "Tato šablona instaluje dosti základní pracovní plochu (icewm)"
+#. tumbleweed/patterns-base/patterns-base-bootloader/summary
+msgid "Bootloader"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-bootloader/description
+msgid "This pattern holds files required for booting the system"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-minimal_base/description
+#, fuzzy
+#| msgid ""
+#| "This is the minimal openSUSE runtime system. It is really a minimal "
+#| "system, you can login and a shell will be started, that's all. It is "
+#| "intended as base for Appliances."
+msgid ""
+"This is the minimal runtime system. It is really a minimal system. It is "
+"intended as base for Appliances."
+msgstr ""
+"Toto je minimální openSUSE provozní systém. Je to opravdu minimální systém: "
+"můžete se přihlásit a bude spuštěna příkazová řádka, toť vše. Je zamýšlen "
+"jako základ pro aplikace."
+
+#. tumbleweed/patterns-base/patterns-base-selinux/summary
+#, fuzzy
+#| msgid "SELinux Support"
+msgid "SELinux"
+msgstr "Podpora SELinux"
+
+#. tumbleweed/patterns-base/patterns-base-selinux/description
+msgid ""
+"Security-Enhanced Linux (SELinux) provides a mechanism for supporting access "
+"control security policies, including mandatory access controls (MAC). Its "
+"architecture strives to separate enforcement of security decisions from the "
+"security policy, and streamlines the amount of software involved with "
+"security policy enforcement."
+msgstr ""
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
 msgstr "Základ šablony Ceph"
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
-msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
+#, fuzzy
+#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
+msgid ""
+"This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
+"containers."
 msgstr "Základna pro balíčky ovladačů Ceph, Rook, Ceph CSI."
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
@@ -1699,7 +2214,9 @@ msgstr ""
 "běžící v clusteru kubernet."
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
-msgid "kubeadm Stack"
+#, fuzzy
+#| msgid "kubeadm Stack"
+msgid "Kubernetes kubeadm Stack"
 msgstr "kubeadm zásobník"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
@@ -1723,9 +2240,12 @@ msgid "Kubic Admin Node"
 msgstr "Administrátorský uzel Kubic"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
+#, fuzzy
+#| msgid ""
+#| "This pattern installs the the software required for an openSUSE Kubic "
+#| "Admin Node."
 msgid ""
-"This pattern installs the the software required for an openSUSE Kubic Admin "
-"Node."
+"This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr ""
 "Tato šablona instaluje software nezbytný pro Administrátorský uzel openSUSE "
 "Kubic."
@@ -1783,7 +2303,11 @@ msgstr "Přídavné alternativní balíčky pro DVD openSUSE MicroOS."
 #. tumbleweed/patterns-microos/patterns-microos-apparmor/category
 #. tumbleweed/patterns-microos/patterns-microos-base/category
 #. tumbleweed/patterns-microos/patterns-microos-cloud/category
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/category
 #. tumbleweed/patterns-microos/patterns-microos-defaults/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/category
 #. tumbleweed/patterns-microos/patterns-microos-hardware/category
 #. tumbleweed/patterns-microos/patterns-microos-ima_evm/category
 #. tumbleweed/patterns-microos/patterns-microos-onlyDVD/category
@@ -1821,6 +2345,18 @@ msgstr "Podpora Cloudu"
 msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
 
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
+#, fuzzy
+#| msgid "Web based system management tool"
+msgid "Web based remote system managemet"
+msgstr "Webový nástroj pro správu systému"
+
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/description
+msgid ""
+"Packages required to run the Cockpit system management service. For the web "
+"service the cockpit-ws container is required."
+msgstr ""
+
 #. tumbleweed/patterns-microos/patterns-microos-defaults/summary
 msgid "openSUSE MicroOS defaults"
 msgstr "Výchozí předlohy openSUSE MicroOS"
@@ -1832,6 +2368,42 @@ msgid ""
 msgstr ""
 "Poskytuje výchozí balíčky pro openSUSE MicroOS, které lze nahradit "
 "alternativami."
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
+#, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
+msgid "Common packages for Desktops on MicroOS"
+msgstr "Základní balíčky prostředí pracovní plochy XFCE"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
+#, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
+msgid "Packages required for openSUSE MicroOS Desktops."
+msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
+#, fuzzy
+#| msgid "GNOME Desktop"
+msgid "MicroOS GNOME Desktop"
+msgstr "GNOME Desktop"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
+#, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
+msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
+msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
+#, fuzzy
+#| msgid "KDE Plasma 5 Desktop"
+msgid "MicroOS KDE Plasma Desktop"
+msgstr "Plocha KDE Plasma 5"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
+#, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
+msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
+msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/summary
 msgid "Hardware Support"
@@ -1879,6 +2451,20 @@ msgstr ""
 "Balíčky nezbytné k zapnutí klientské podpory LDAP (přes sssd) v openSUSE "
 "MicroOS."
 
+#. tumbleweed/patterns-sway/patterns-sway-sway/summary
+msgid "Sway Tiling Wayland Compositor and related tools"
+msgstr ""
+
+#. tumbleweed/patterns-sway/patterns-sway-sway/description
+msgid "Sway Tiling Wayland Compositor and related tools."
+msgstr ""
+
+#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
+#, fuzzy
+#| msgid "MATE Utilities"
+msgid "YaST Base Utilities"
+msgstr "Utility MATE"
+
 #~ msgid "Base System"
 #~ msgstr "Základní systém"
 
@@ -1925,9 +2511,6 @@ msgstr ""
 
 #~ msgid "Development environment for the Plasma Desktop"
 #~ msgstr "Vývojové prostředí pro pracovní plochu Plasma"
-
-#~ msgid "KDE Plasma 5 Desktop"
-#~ msgstr "Plocha KDE Plasma 5"
 
 #~ msgid "x86 Runtime Environment"
 #~ msgstr "x86 běhové prostředí"
@@ -1978,9 +2561,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Toto je zásobník na vrcholu MicroOS. Obsahuje vše pro kontejner a "
 #~ "kubernety."
-
-#~ msgid "Primary Functions"
-#~ msgstr "Primární funkce"
 
 #~ msgid "Packages needed to run openSUSE Kubic on real hardware"
 #~ msgstr "Balíčky nutné k běhu openSUSE Kubic na reálném hardwaru"
@@ -2218,12 +2798,6 @@ msgstr ""
 #~ msgid "Geographical Clustering"
 #~ msgstr "Geografické clusterování"
 
-#~ msgid "High Availability"
-#~ msgstr "Vysoká dostupnost"
-
-#~ msgid "Infiniband (OFED)"
-#~ msgstr "Infiniband (OFED)"
-
 #~ msgid "Java Environment"
 #~ msgstr "Java prostředí"
 
@@ -2376,9 +2950,6 @@ msgstr ""
 #~ msgid "Novell Client for Linux"
 #~ msgstr "Novell klient pro Linux"
 
-#~ msgid "Oracle Server Base"
-#~ msgstr "Základ pro Oracle"
-
 #~ msgid "Packages required to setup a Cloud Admin Node."
 #~ msgstr "Balíčky, které jsou vyžadovány pro nastavení uzlu Cloud Admina."
 
@@ -2395,19 +2966,11 @@ msgstr ""
 #~ msgid "Proprietary Java packages."
 #~ msgstr "Proprietární Java balíčky."
 
-#~ msgid ""
-#~ "Provide tools to ensure a high degree of operational continuity and "
-#~ "reduce the downtimes of your system."
-#~ msgstr "Nabízí nástroje k zajištění operability a výkonu systému."
-
 #~ msgid "Real time kernel and utilities for SUSE Linux Enterprise."
 #~ msgstr "Real time jádro a nástroje pro SUSE Linux Enterprise."
 
 #~ msgid "Ruby on Rails Development"
 #~ msgstr "Vývoj Ruby on Rails"
-
-#~ msgid "SAP Application Server Base"
-#~ msgstr "Základ pro aplikační server SAP"
 
 #~ msgid "SDK: .NET Development"
 #~ msgstr "SDK:.NET vývoj"
@@ -2486,12 +3049,6 @@ msgstr ""
 #~ msgid "SUSE Moblin"
 #~ msgstr "SUSE Moblin"
 
-#~ msgid "Set up the server for installing Oracle databases."
-#~ msgstr "Připravuje server na instalaci databáze Oracle."
-
-#~ msgid "Set up the server for installing SAP systems."
-#~ msgstr "Připravit server pro instalaci systémů SAP."
-
 #~ msgid ""
 #~ "Software to set up a directory server with OpenLDAP. The Lightweight "
 #~ "Directory Access Protocol (LDAP) is used to access online directory "
@@ -2536,16 +3093,6 @@ msgstr ""
 #~ msgid "This is the default system for this product."
 #~ msgstr "Toto je výchozí systém pro tento produkt."
 
-#~ msgid ""
-#~ "This pattern defines the OpenFabrics Enterprise Distribution (OFED) "
-#~ "software base packages. The base pattern includes the packages you need "
-#~ "to get your Infiniband adapter operational, that is IB kernel modules and "
-#~ "basic user level libraries."
-#~ msgstr ""
-#~ "Tento profil obsahuje balíčky založené na OpenFabrics Enterprise "
-#~ "Distribution (OFED). Základní profil obsahuje IB moduly jádra a základní "
-#~ "uživatelské knihovny."
-
 #~ msgid "Toolchain to build code for the Cell processor."
 #~ msgstr "Toolchain pro vytváření kódu pro procesory Cell."
 
@@ -2576,15 +3123,6 @@ msgstr ""
 
 #~ msgid "Voice over IP server."
 #~ msgstr "Server pro IP telefonii."
-
-#~ msgid "Web based system management tool"
-#~ msgstr "Webový nástroj pro správu systému"
-
-#~ msgid "Web-Based Enterprise Management"
-#~ msgstr "Webová enterprise správa"
-
-#~ msgid "Web-based enterprise management."
-#~ msgstr "Enterprise správa s webovým rozhraním."
 
 #~ msgid "WebYaST"
 #~ msgstr "WebYaST"

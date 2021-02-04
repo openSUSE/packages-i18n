@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2018-11-02 13:02+0000\n"
 "Last-Translator: Antoine Belvire <antoine.belvire@opensuse.org>\n"
 "Language-Team: French <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -14,20 +14,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.18\n"
-
-#. leap/yast-gpmc/summary
-#. leap/yast2-gpmc/summary
-#. tumbleweed/yast2-gpmc/summary
-msgid "Group Policy Management Console for YaST"
-msgstr ""
-
-#. leap/yast-gpmc/description
-#. leap/yast2-gpmc/description
-#. tumbleweed/yast2-gpmc/description
-msgid ""
-"The Group Policy Management console for YaST provides tools for creating and "
-"modifying Group Policy Objects in Active Directory."
-msgstr ""
 
 #. leap/yast2/summary
 #. tumbleweed/yast2/summary
@@ -195,6 +181,29 @@ msgid ""
 msgstr ""
 "Des scripts et des modèles nécessaires pour reconstruire les modules YaST2 "
 "existants et les composants (aussi bien en Ruby qu'en C++)."
+
+#. leap/yast2-caasp/summary
+#. tumbleweed/yast2-caasp/summary
+msgid "YaST2 - CaaSP Module"
+msgstr "YaST2 - Module CaaSP"
+
+#. leap/yast2-caasp/description
+#. tumbleweed/yast2-caasp/description
+#, fuzzy
+#| msgid "Containers as a Service Platform (CaaSP) specific module."
+msgid ""
+"Containers as a Service Platform (CaaSP) and openSUSE Kubic specific module."
+msgstr "Module spécifique pour Containers as a Service Platform (CaaSP)."
+
+#. leap/yast2-cio/summary
+#, fuzzy
+#| msgid "YaST2 - GUI for docker management"
+msgid "YaST2 - IO Channel management"
+msgstr "YaST2 - Interface graphique pour la gestion de Docker"
+
+#. leap/yast2-cio/description
+msgid "Provides interface for blacklisting and unblocking IO channels"
+msgstr ""
 
 #. leap/yast2-cluster/summary
 #. tumbleweed/yast2-cluster/summary
@@ -423,6 +432,13 @@ msgstr ""
 "le mot de passe root et les logins d'utilisateur doivent être créés pour "
 "personnaliser le système."
 
+#. leap/yast2-firstboot-wsl/summary
+#. leap/yast2-firstboot-wsl/description
+#. tumbleweed/yast2-firstboot-wsl/summary
+#. tumbleweed/yast2-firstboot-wsl/description
+msgid "YaST2 firstboot settings for WSL images"
+msgstr ""
+
 #. leap/yast2-ftp-server/summary
 #. tumbleweed/yast2-ftp-server/summary
 msgid "YaST2 - FTP configuration"
@@ -441,6 +457,26 @@ msgstr ""
 #. tumbleweed/yast2-geo-cluster/summary
 msgid "Configuration of booth"
 msgstr "Configuration de Booth"
+
+#. leap/yast2-gpmc/summary
+#. tumbleweed/yast2-gpmc/summary
+msgid "Group Policy Management Console for YaST"
+msgstr ""
+
+#. leap/yast2-gpmc/description
+#. tumbleweed/yast2-gpmc/description
+msgid ""
+"The Group Policy Management console for YaST provides tools for creating and "
+"modifying Group Policy Objects in Active Directory."
+msgstr ""
+
+#. leap/yast2-hana-update/summary
+msgid "SUSE HANA Cluster Update"
+msgstr ""
+
+#. leap/yast2-hana-update/description
+msgid "A YaST2 module to update SAP HANA software within a SUSE Cluster"
+msgstr ""
 
 #. leap/yast2-hardware-detection/summary
 #. tumbleweed/yast2-hardware-detection/summary
@@ -900,13 +936,11 @@ msgstr ""
 "(mandataire)."
 
 #. leap/yast2-python-bindings/summary
-#. tumbleweed/yast2-python-bindings/summary
 msgid "Python bindings for the YaST platform"
 msgstr "Bindings Python pour la plate-forme YaST"
 
 #. leap/yast2-python-bindings/description
 #. leap/yast2-python-bindings/yast2-python3-bindings/description
-#. tumbleweed/yast2-python-bindings/description
 #. tumbleweed/yast2-python-bindings/yast2-python3-bindings/description
 msgid ""
 "The bindings allow YaST modules to be written using the Python language and "
@@ -959,6 +993,16 @@ msgstr ""
 "Le module d'enregistrement pour enregistrer des produits et/ou récupérer une "
 "source de mise à jour (miroir) automatiquement."
 
+#. leap/yast2-reipl/summary
+#, fuzzy
+#| msgid "YaST2 - CaaSP Module"
+msgid "YaST2 - IPL loader"
+msgstr "YaST2 - Module CaaSP"
+
+#. leap/yast2-reipl/description
+msgid "Module for loading IPL from running system on S/390"
+msgstr "Module pour charger IPL depuis un système s'exécutant sur un S/390"
+
 #. leap/yast2-rmt/summary
 #. tumbleweed/yast2-rmt/summary
 msgid "YaST2 - Module to configure RMT"
@@ -987,6 +1031,24 @@ msgstr ""
 "Les bindings permettent aux modules YaST d'être écrits en utilisant le "
 "langage Ruby et permettent aussi aux scripts Ruby d'utiliser des agents, des "
 "API et des modules YaST."
+
+#. leap/yast2-s390/summary
+#, fuzzy
+#| msgid "YaST2 - DNS Server Configuration"
+msgid "YaST2 - S/390 Specific Features Configuration"
+msgstr "YaST2 - configuration de serveur DNS"
+
+#. leap/yast2-s390/description
+#, fuzzy
+#| msgid ""
+#| "This package contains the YaST2 component for configuration of an iSCSI "
+#| "client."
+msgid ""
+"This package contains the YaST component for configuration of S/390-specific "
+"features."
+msgstr ""
+"Ce paquet contient le composant de YaST2 pour la configuration d'un client "
+"iSCSI."
 
 #. leap/yast2-samba-client/summary
 #. tumbleweed/yast2-samba-client/summary
@@ -1435,12 +1497,10 @@ msgid "YaST2 - Translations for Greek."
 msgstr "YaST2 - Traductions pour le grec."
 
 #. leap/yast2-trans/yast2-trans-en/summary
-#. tumbleweed/yast2-trans/yast2-trans-en/summary
 msgid "YaST2 - English Translations"
 msgstr "YaST2 - Traductions anglaises"
 
 #. leap/yast2-trans/yast2-trans-en/description
-#. tumbleweed/yast2-trans/yast2-trans-en/description
 msgid "YaST2 - English Translations."
 msgstr "YaST2 - Traductions anglaises."
 
@@ -1455,12 +1515,10 @@ msgid "YaST2 - Translations for British English."
 msgstr "YaST2 - Traduction pour l'anglais britannique."
 
 #. leap/yast2-trans/yast2-trans-en_US/summary
-#. tumbleweed/yast2-trans/yast2-trans-en_US/summary
 msgid "YaST2 - Translations"
 msgstr "YaST2 - Traductions"
 
 #. leap/yast2-trans/yast2-trans-en_US/description
-#. tumbleweed/yast2-trans/yast2-trans-en_US/description
 msgid "YaST2 - Translations for American English."
 msgstr "YaST2 - Traduction pour l'anglais américain."
 
@@ -2217,22 +2275,6 @@ msgstr ""
 "utilisateur de YaST2 disponible pour les applications YCP (YCP est le "
 "langage de script en lequel la plupart des modules de YaST2 sont écrits)."
 
-#. tumbleweed/yast2-caasp/summary
-msgid "YaST2 - CaaSP Module"
-msgstr "YaST2 - Module CaaSP"
-
-#. tumbleweed/yast2-caasp/description
-#, fuzzy
-#| msgid "Containers as a Service Platform (CaaSP) specific module."
-msgid ""
-"Containers as a Service Platform (CaaSP) and openSUSE Kubic specific module."
-msgstr "Module spécifique pour Containers as a Service Platform (CaaSP)."
-
-#. tumbleweed/yast2-firstboot-wsl/summary
-#. tumbleweed/yast2-firstboot-wsl/description
-msgid "YaST2 firstboot settings for WSL images"
-msgstr ""
-
 #. tumbleweed/yast2-fonts/summary
 msgid "YaST2 - Fonts Configuration"
 msgstr "YaST2 - Configuration des polices de caractères"
@@ -2388,9 +2430,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Developer documentation for yast2-printer."
 #~ msgstr "YaST2 - Scripts d'installation et documentation"
-
-#~ msgid "Module for loading IPL from running system on S/390"
-#~ msgstr "Module pour charger IPL depuis un système s'exécutant sur un S/390"
 
 #~ msgid "This package contains autogenerated documentation for yast2-network"
 #~ msgstr "Ce paquet contient la documetation auto-générée pour yast2-network"

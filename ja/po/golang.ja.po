@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2020-02-14 07:54+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -15,7 +15,9 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 
 #. leap/golang-github-docker-libnetwork/docker-libnetwork/summary
+#. leap/golang-github-docker-libnetwork-kubic/docker-libnetwork-kubic/summary
 #. leap/golang-github-docker-libnetwork/summary
+#. leap/golang-github-docker-libnetwork-kubic/summary
 #. tumbleweed/golang-github-docker-libnetwork/docker-libnetwork/summary
 #. tumbleweed/golang-github-docker-libnetwork-kubic/docker-libnetwork-kubic/summary
 #. tumbleweed/golang-github-docker-libnetwork/summary
@@ -24,6 +26,7 @@ msgid "Docker Networking"
 msgstr "Docker ネットワーキング"
 
 #. leap/golang-github-docker-libnetwork/docker-libnetwork/description
+#. leap/golang-github-docker-libnetwork-kubic/docker-libnetwork-kubic/description
 #. tumbleweed/golang-github-docker-libnetwork/docker-libnetwork/description
 #. tumbleweed/golang-github-docker-libnetwork-kubic/docker-libnetwork-kubic/description
 msgid ""
@@ -32,6 +35,26 @@ msgid ""
 msgstr ""
 "Docker に対して libnetwork サポートを提供する、 Docker で使用される docker-"
 "proxy バイナリです。"
+
+#. leap/golang-github-nsf-gocode/emacs-completion-golang/summary
+#. tumbleweed/golang-github-nsf-gocode/emacs-completion-golang/summary
+msgid "Golang autocompletion files for Emacs"
+msgstr "Emacs 向け Golang オートコンプリートファイル"
+
+#. leap/golang-github-nsf-gocode/emacs-completion-golang/description
+#. tumbleweed/golang-github-nsf-gocode/emacs-completion-golang/description
+msgid ""
+"Emacs autocompletion for the Go programming language.\n"
+"\n"
+"Add the following to your emacs-config:\n"
+"\n"
+"```lisp (require 'go-autocomplete)\t; load go autocompletion backend ```"
+msgstr ""
+"Go プログラミング言語向け Emacs オートコンプリート機能です。\n"
+"\n"
+"下記の内容を emacs-config 内に追加してお使いください:\n"
+"\n"
+"```lisp (require 'go-autocomplete); load go autocompletion backend ```"
 
 #. leap/golang-github-exercism-cli/exercism/summary
 #. leap/golang-github-exercism-cli/summary
@@ -59,12 +82,52 @@ msgstr "マークダウンをマニュアルページに変換するツールで
 msgid "Tool to converts markdown into man pages."
 msgstr "マークダウンをマニュアルページに変換するツールです。"
 
+#. leap/golang-github-nsf-gocode/gocode/summary
+#. leap/golang-github-nsf-gocode/summary
+#. tumbleweed/golang-github-nsf-gocode/gocode/summary
+#. tumbleweed/golang-github-nsf-gocode/summary
+msgid "An autocompletion daemon for the Go programming language"
+msgstr "Go プログラミング言語向けオートコンプリートデーモン"
+
+#. leap/golang-github-nsf-gocode/gocode/description
+#. leap/golang-github-nsf-gocode/description
+#. tumbleweed/golang-github-nsf-gocode/gocode/description
+#. tumbleweed/golang-github-nsf-gocode/description
+msgid ""
+"Gocode is a helper tool which is intended to be integrated with your source "
+"code editor such as vim or emacs. It uses a client-server architecture for "
+"caching purposes (hence \"daemon\") and provides context-sensitive "
+"autocompletion."
+msgstr ""
+"Gocode は、 vim や emacs などのようなソースコードエディタに統合されることを目"
+"的とした、ヘルパーツールです。キャッシュを目的としたクライアント-サーバ型の仕"
+"組み (そのため \"デーモン\" と呼ばれます) により、文脈依存のオートコンプリー"
+"ト機能を提供します。"
+
+#. leap/golang-github-QubitProducts-exporter_exporter/summary
+#. leap/golang-github-QubitProducts-exporter_exporter/description
+#. tumbleweed/golang-github-QubitProducts-exporter_exporter/summary
+#. tumbleweed/golang-github-QubitProducts-exporter_exporter/description
+msgid "Reverse proxy designed for Prometheus exporters"
+msgstr ""
+
+#. leap/golang-github-boynux-squid_exporter/summary
+#. tumbleweed/golang-github-boynux-squid_exporter/summary
+msgid "Squid Prometheus Exporter"
+msgstr "Squid Prometheus エクスポータ"
+
+#. leap/golang-github-boynux-squid_exporter/description
+#. tumbleweed/golang-github-boynux-squid_exporter/description
+msgid "Exports squid metrics in Prometheus format"
+msgstr "Prometheus 形式で squid メトリックのエクスポートを行ないます"
+
 #. leap/golang-github-cpuguy83-go-md2man/summary
 #. tumbleweed/golang-github-cpuguy83-go-md2man/summary
 msgid "Convert markdown into man pages"
 msgstr "マークダウンからのマニュアルページへの変換"
 
 #. leap/golang-github-docker-libnetwork/description
+#. leap/golang-github-docker-libnetwork-kubic/description
 #. tumbleweed/golang-github-docker-libnetwork/description
 #. tumbleweed/golang-github-docker-libnetwork-kubic/description
 msgid ""
@@ -139,6 +202,31 @@ msgstr "テキストを整形するための各種関数"
 msgid "This is a Go package for manipulating paragraphs of text."
 msgstr "これはテキストの段落を操作するための Go パッケージです。"
 
+#. leap/golang-github-lusitaniae-apache_exporter/summary
+#. tumbleweed/golang-github-lusitaniae-apache_exporter/summary
+msgid "Apache Exporter for Prometheus"
+msgstr "Prometheus 向け Apache エクスポータ"
+
+#. leap/golang-github-lusitaniae-apache_exporter/description
+#. tumbleweed/golang-github-lusitaniae-apache_exporter/description
+msgid ""
+"Exports apache mod_status statistics via HTTP for Prometheus consumption."
+msgstr ""
+"Prometheus 消費のために HTTP 経由で Apache mod_status の統計情報をエクスポー"
+"トします。"
+
+#. leap/golang-github-naoina-go-stringutil/summary
+#. tumbleweed/golang-github-naoina-go-stringutil/summary
+msgid "String functions for Golang"
+msgstr "Golang 向け文字列関数"
+
+#. leap/golang-github-naoina-go-stringutil/description
+#. tumbleweed/golang-github-naoina-go-stringutil/description
+msgid "This library contains various string manipulation functions for Golang."
+msgstr ""
+"このライブラリには、 Golang で文字列を操作するためのさまざまな関数が含まれて"
+"います。"
+
 #. leap/golang-github-prometheus-alertmanager/summary
 #. tumbleweed/golang-github-prometheus-alertmanager/summary
 msgid "Prometheus Alertmanager"
@@ -209,6 +297,20 @@ msgstr ""
 "Prometheus ユーティリティツールは Prometheus プロジェクトで使用されるもので、"
 "他のコンポーネントを構築する際に利用します。"
 
+#. leap/golang-github-rogpeppe-godef/summary
+#. tumbleweed/golang-github-rogpeppe-godef/summary
+msgid "Find symbol information in Go source"
+msgstr "Go ソース内でのシンボル情報の検索"
+
+#. leap/golang-github-rogpeppe-godef/description
+#. tumbleweed/golang-github-rogpeppe-godef/description
+msgid ""
+"Godef, given an expression or a location in a source file, prints the "
+"location of the definition of the symbol referred to."
+msgstr ""
+"Godef は、表現またはソースファイル内の場所を指定することで、シンボルが参照す"
+"る定義の場所を表示することができます。"
+
 #. leap/golang-github-russross-blackfriday/summary
 msgid "Markdown processor implemented in Go"
 msgstr "Go 言語で実装されたマークダウンプロセッサ"
@@ -259,7 +361,23 @@ msgstr "Slurm メトリック向け Prometheus エクスポータ"
 msgid ""
 "Prometheus collector and exporter for metrics extracted from the Slurm "
 "resource scheduling system."
-msgstr "Slurm リソース／スケジュールシステムから抽出したメトリックに対する Prometheus コレクタ／エクスポータです。"
+msgstr ""
+"Slurm リソース／スケジュールシステムから抽出したメトリックに対する "
+"Prometheus コレクタ／エクスポータです。"
+
+#. leap/golang-github-wrouesnel-postgres_exporter/summary
+#. tumbleweed/golang-github-wrouesnel-postgres_exporter/summary
+msgid "Prometheus exporter for PostgreSQL"
+msgstr "PostgreSQL 向け Prometheus エクスポータ"
+
+#. leap/golang-github-wrouesnel-postgres_exporter/description
+#. tumbleweed/golang-github-wrouesnel-postgres_exporter/description
+msgid ""
+"Prometheus exporter for PostgreSQL server metrics. Supported PostgreSQL "
+"versions: 9.1 and up."
+msgstr ""
+"PostgreSQL サーバメトリック向けの Prometheus エクスポータです。 PostgreSQL "
+"バージョン 9.1 もしくはそれ以降に対応しています。"
 
 #. leap/golang-gopkgin-check/summary
 #. tumbleweed/golang-gopkgin-check/summary
@@ -281,6 +399,46 @@ msgstr ""
 "的スリムなものになっています。一方の gocheck パッケージでは、 Go 言語が提供す"
 "る標準ライブラリが正しく動作する前提で作られていて、各種のライブラリやアプリ"
 "ケーションをより便利にテストできる仕組みを構築しています。"
+
+#. leap/golang-org-x-net-context/summary
+#. tumbleweed/golang-org-x-net-context/summary
+msgid "Context defines the Context type"
+msgstr "コンテキストタイプを定義するコンテキスト"
+
+#. leap/golang-org-x-net-context/description
+#. tumbleweed/golang-org-x-net-context/description
+msgid ""
+"Package context defines the Context type, which carries deadlines, "
+"cancelation signals, and other request-scoped values across API boundaries "
+"and between processes."
+msgstr ""
+"context パッケージはコンテキストタイプを定義するもので、デッドラインやキャン"
+"セルシグナルのほか、リクエストスコープの値を API 境界およびプロセス間を跨いで"
+"伝送する仕組みを提供します。"
+
+#. leap/golang-org-x-net-html/summary
+#. tumbleweed/golang-org-x-net-html/summary
+msgid "Package html implements an HTML5-compliant tokenizer and parser"
+msgstr "html パッケージ - HTML5 準拠のトークナイザおよびパーサの実装"
+
+#. leap/golang-org-x-net-html/description
+#. tumbleweed/golang-org-x-net-html/description
+msgid "Package html implements an HTML5-compliant tokenizer and parser."
+msgstr "html パッケージは、 HTML5 準拠のトークナイザおよびパーサを実装します。"
+
+#. leap/golang-org-x-net-websocket/summary
+#. tumbleweed/golang-org-x-net-websocket/summary
+msgid "Websocket implements a client and server for the WebSocket protocol"
+msgstr "WebSocket - WebSocket プロトコルのクライアントとサーバの実装"
+
+#. leap/golang-org-x-net-websocket/description
+#. tumbleweed/golang-org-x-net-websocket/description
+msgid ""
+"Package websocket implements a client and server for the WebSocket protocol "
+"as specified in RFC 6455."
+msgstr ""
+"websocket パッケージは、 RFC 6455 で規定されている WebSocket プロトコルのう"
+"ち、クライアントとサーバを実装しています。"
 
 #. leap/golang-org-x-sys/summary
 #. tumbleweed/golang-org-x-sys/summary
@@ -310,23 +468,15 @@ msgstr ""
 "bash で記述された、 golang をパッケージングするための支援用ツールチェインで"
 "す。"
 
-#. tumbleweed/golang-github-nsf-gocode/emacs-completion-golang/summary
-msgid "Golang autocompletion files for Emacs"
-msgstr "Emacs 向け Golang オートコンプリートファイル"
+#. leap/golang-github-nsf-gocode/vim-completion-golang/summary
+#. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/summary
+msgid "Golang autocompletion files for Vim"
+msgstr "Vim 向け Golang オートコンプリートファイル"
 
-#. tumbleweed/golang-github-nsf-gocode/emacs-completion-golang/description
-msgid ""
-"Emacs autocompletion for the Go programming language.\n"
-"\n"
-"Add the following to your emacs-config:\n"
-"\n"
-"```lisp (require 'go-autocomplete)\t; load go autocompletion backend ```"
-msgstr ""
-"Go プログラミング言語向け Emacs オートコンプリート機能です。\n"
-"\n"
-"下記の内容を emacs-config 内に追加してお使いください:\n"
-"\n"
-"```lisp (require 'go-autocomplete); load go autocompletion backend ```"
+#. leap/golang-github-nsf-gocode/vim-completion-golang/description
+#. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/description
+msgid "Vim autocompletion for the Go programming language."
+msgstr "Go プログラミング言語向けの Vim オートコンプリートです。"
 
 #. tumbleweed/golang-org-x-tools/go-tools/summary
 #. tumbleweed/golang-org-x-tools/summary
@@ -341,32 +491,6 @@ msgid ""
 msgstr ""
 "このパッケージには、 Go チームが開発しているものの、メインのソースツリー内に"
 "は取り込まれていない、追加の toolsgraphy ライブラリが含まれています。"
-
-#. tumbleweed/golang-github-nsf-gocode/gocode/summary
-#. tumbleweed/golang-github-nsf-gocode/summary
-msgid "An autocompletion daemon for the Go programming language"
-msgstr "Go プログラミング言語向けオートコンプリートデーモン"
-
-#. tumbleweed/golang-github-nsf-gocode/gocode/description
-#. tumbleweed/golang-github-nsf-gocode/description
-msgid ""
-"Gocode is a helper tool which is intended to be integrated with your source "
-"code editor such as vim or emacs. It uses a client-server architecture for "
-"caching purposes (hence \"daemon\") and provides context-sensitive "
-"autocompletion."
-msgstr ""
-"Gocode は、 vim や emacs などのようなソースコードエディタに統合されることを目"
-"的とした、ヘルパーツールです。キャッシュを目的としたクライアント-サーバ型の仕"
-"組み (そのため \"デーモン\" と呼ばれます) により、文脈依存のオートコンプリー"
-"ト機能を提供します。"
-
-#. tumbleweed/golang-github-boynux-squid_exporter/summary
-msgid "Squid Prometheus Exporter"
-msgstr "Squid Prometheus エクスポータ"
-
-#. tumbleweed/golang-github-boynux-squid_exporter/description
-msgid "Exports squid metrics in Prometheus format"
-msgstr "Prometheus 形式で squid メトリックのエクスポートを行ないます"
 
 #. tumbleweed/golang-github-golang-protobuf/summary
 #. tumbleweed/golang-github-golang-protobuf/protoc-gen-go/summary
@@ -383,83 +507,6 @@ msgstr ""
 "このパッケージは、ライブラリやプロトコルコンパイラのプラグインの形式を取る、 "
 "Google の protocol buffers 向けの Go 言語サポートです (RPC には未対応です)"
 
-#. tumbleweed/golang-github-lusitaniae-apache_exporter/summary
-msgid "Apache Exporter for Prometheus"
-msgstr "Prometheus 向け Apache エクスポータ"
-
-#. tumbleweed/golang-github-lusitaniae-apache_exporter/description
-msgid ""
-"Exports apache mod_status statistics via HTTP for Prometheus consumption."
-msgstr "Prometheus 消費のために HTTP 経由で Apache mod_status の統計情報をエクスポートします。"
-
-#. tumbleweed/golang-github-naoina-go-stringutil/summary
-msgid "String functions for Golang"
-msgstr "Golang 向け文字列関数"
-
-#. tumbleweed/golang-github-naoina-go-stringutil/description
-msgid "This library contains various string manipulation functions for Golang."
-msgstr ""
-"このライブラリには、 Golang で文字列を操作するためのさまざまな関数が含まれて"
-"います。"
-
-#. tumbleweed/golang-github-rogpeppe-godef/summary
-msgid "Find symbol information in Go source"
-msgstr "Go ソース内でのシンボル情報の検索"
-
-#. tumbleweed/golang-github-rogpeppe-godef/description
-msgid ""
-"Godef, given an expression or a location in a source file, prints the "
-"location of the definition of the symbol referred to."
-msgstr ""
-"Godef は、表現またはソースファイル内の場所を指定することで、シンボルが参照す"
-"る定義の場所を表示することができます。"
-
-#. tumbleweed/golang-github-wrouesnel-postgres_exporter/summary
-msgid "Prometheus exporter for PostgreSQL"
-msgstr "PostgreSQL 向け Prometheus エクスポータ"
-
-#. tumbleweed/golang-github-wrouesnel-postgres_exporter/description
-msgid ""
-"Prometheus exporter for PostgreSQL server metrics. Supported PostgreSQL "
-"versions: 9.1 and up."
-msgstr ""
-"PostgreSQL サーバメトリック向けの Prometheus エクスポータです。 PostgreSQL バージョン 9.1 "
-"もしくはそれ以降に対応しています。"
-
-#. tumbleweed/golang-org-x-net-context/summary
-msgid "Context defines the Context type"
-msgstr "コンテキストタイプを定義するコンテキスト"
-
-#. tumbleweed/golang-org-x-net-context/description
-msgid ""
-"Package context defines the Context type, which carries deadlines, "
-"cancelation signals, and other request-scoped values across API boundaries "
-"and between processes."
-msgstr ""
-"context パッケージはコンテキストタイプを定義するもので、デッドラインやキャン"
-"セルシグナルのほか、リクエストスコープの値を API 境界およびプロセス間を跨いで"
-"伝送する仕組みを提供します。"
-
-#. tumbleweed/golang-org-x-net-html/summary
-msgid "Package html implements an HTML5-compliant tokenizer and parser"
-msgstr "html パッケージ - HTML5 準拠のトークナイザおよびパーサの実装"
-
-#. tumbleweed/golang-org-x-net-html/description
-msgid "Package html implements an HTML5-compliant tokenizer and parser."
-msgstr "html パッケージは、 HTML5 準拠のトークナイザおよびパーサを実装します。"
-
-#. tumbleweed/golang-org-x-net-websocket/summary
-msgid "Websocket implements a client and server for the WebSocket protocol"
-msgstr "WebSocket - WebSocket プロトコルのクライアントとサーバの実装"
-
-#. tumbleweed/golang-org-x-net-websocket/description
-msgid ""
-"Package websocket implements a client and server for the WebSocket protocol "
-"as specified in RFC 6455."
-msgstr ""
-"websocket パッケージは、 RFC 6455 で規定されている WebSocket プロトコルのう"
-"ち、クライアントとサーバを実装しています。"
-
 #. tumbleweed/golang-org-x-sync/summary
 msgid "Go concurrency primitives"
 msgstr "Go 並行処理プリミティブ"
@@ -469,15 +516,8 @@ msgid ""
 "This repository provides Go concurrency primitives in addition to the ones "
 "provided by the language and \"sync\" and \"sync/atomic\" packages."
 msgstr ""
-"Go 言語側で提供している並行処理機能や \"sync\", \"sync/atomic\" パッケージに付加する機能を提供するリポジトリです。"
-
-#. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/summary
-msgid "Golang autocompletion files for Vim"
-msgstr "Vim 向け Golang オートコンプリートファイル"
-
-#. tumbleweed/golang-github-nsf-gocode/vim-completion-golang/description
-msgid "Vim autocompletion for the Go programming language."
-msgstr "Go プログラミング言語向けの Vim オートコンプリートです。"
+"Go 言語側で提供している並行処理機能や \"sync\", \"sync/atomic\" パッケージに"
+"付加する機能を提供するリポジトリです。"
 
 #~ msgid "Pretty printing for Go values"
 #~ msgstr "Go の値の見やすい表示"

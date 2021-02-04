@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: repomd2gettext\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2021-01-05 16:38+0000\n"
 "Last-Translator: Tommi Nieminen <software@legisign.org>\n"
 "Language-Team: Finnish <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -12,22 +12,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.6.1\n"
-
-#. leap/yast-gpmc/summary
-#. leap/yast2-gpmc/summary
-#. tumbleweed/yast2-gpmc/summary
-msgid "Group Policy Management Console for YaST"
-msgstr "Ryhmäkäytäntöjen hallintakonsoli YaST:lle"
-
-#. leap/yast-gpmc/description
-#. leap/yast2-gpmc/description
-#. tumbleweed/yast2-gpmc/description
-msgid ""
-"The Group Policy Management console for YaST provides tools for creating and "
-"modifying Group Policy Objects in Active Directory."
-msgstr ""
-"YaST hallintakonsoli tarjoaa työkaluja ryhmäkäytäntöjen luomiseen ja "
-"muokkaamiseen toimialueen (AD) hakemistopalvelussa."
 
 #. leap/yast2/summary
 #. tumbleweed/yast2/summary
@@ -194,6 +178,28 @@ msgid ""
 msgstr ""
 "Skriptit ja mallit, joita tarvitaan nykyisten YaST2 moduulien ja "
 "komponenttien (sekä Ruby ja C++) jälleenrakentamiseen."
+
+#. leap/yast2-caasp/summary
+#. tumbleweed/yast2-caasp/summary
+msgid "YaST2 - CaaSP Module"
+msgstr "YaST2 – CaaSP-osa"
+
+#. leap/yast2-caasp/description
+#. tumbleweed/yast2-caasp/description
+msgid ""
+"Containers as a Service Platform (CaaSP) and openSUSE Kubic specific module."
+msgstr ""
+"CaaSP (Containers as a Service Platform) ja openSUSEn Kubic-spesifi osa."
+
+#. leap/yast2-cio/summary
+#, fuzzy
+#| msgid "YaST2 - GUI for docker management"
+msgid "YaST2 - IO Channel management"
+msgstr "YaST2 - GUI docker hallinta"
+
+#. leap/yast2-cio/description
+msgid "Provides interface for blacklisting and unblocking IO channels"
+msgstr ""
 
 #. leap/yast2-cluster/summary
 #. tumbleweed/yast2-cluster/summary
@@ -412,6 +418,13 @@ msgstr ""
 "määritetty joitakin viimeistelyvaiheita kuten root-tunnuksen salasanaa ja "
 "muiden tunnusten luontia lukuun ottamatta."
 
+#. leap/yast2-firstboot-wsl/summary
+#. leap/yast2-firstboot-wsl/description
+#. tumbleweed/yast2-firstboot-wsl/summary
+#. tumbleweed/yast2-firstboot-wsl/description
+msgid "YaST2 firstboot settings for WSL images"
+msgstr "YaST2:n ensikäynnistysasetukset WSL-kuville"
+
 #. leap/yast2-ftp-server/summary
 #. tumbleweed/yast2-ftp-server/summary
 msgid "YaST2 - FTP configuration"
@@ -430,6 +443,28 @@ msgstr ""
 #. tumbleweed/yast2-geo-cluster/summary
 msgid "Configuration of booth"
 msgstr "Booth-määritys"
+
+#. leap/yast2-gpmc/summary
+#. tumbleweed/yast2-gpmc/summary
+msgid "Group Policy Management Console for YaST"
+msgstr "Ryhmäkäytäntöjen hallintakonsoli YaST:lle"
+
+#. leap/yast2-gpmc/description
+#. tumbleweed/yast2-gpmc/description
+msgid ""
+"The Group Policy Management console for YaST provides tools for creating and "
+"modifying Group Policy Objects in Active Directory."
+msgstr ""
+"YaST hallintakonsoli tarjoaa työkaluja ryhmäkäytäntöjen luomiseen ja "
+"muokkaamiseen toimialueen (AD) hakemistopalvelussa."
+
+#. leap/yast2-hana-update/summary
+msgid "SUSE HANA Cluster Update"
+msgstr ""
+
+#. leap/yast2-hana-update/description
+msgid "A YaST2 module to update SAP HANA software within a SUSE Cluster"
+msgstr ""
 
 #. leap/yast2-hardware-detection/summary
 #. tumbleweed/yast2-hardware-detection/summary
@@ -749,10 +784,10 @@ msgid ""
 "with or without the X Window System. It can be started from the YaST control "
 "center."
 msgstr ""
-"YaST verkkopäivitys (YOU) tarjoaa kätevän tavan ladata ja asentaa tietoturva-"
-" ja muita järjestelmäpäivityksiä. Oletuksena se käyttää virallisia SUSE "
-"peilipalvelimia päivityslähteinä, mutta se voi myös käyttää paikallisia "
-"arkistoja korjauksiin tai CD-levyjä.\n"
+"YaST verkkopäivitys (YOU) tarjoaa kätevän tavan ladata ja asentaa "
+"tietoturva- ja muita järjestelmäpäivityksiä. Oletuksena se käyttää "
+"virallisia SUSE peilipalvelimia päivityslähteinä, mutta se voi myös käyttää "
+"paikallisia arkistoja korjauksiin tai CD-levyjä.\n"
 "\n"
 "Tämä paketti tarjoaa graafisen käyttöliittymän YOU:lle, jota voidaan käyttää "
 "X Window ikkunoinnin kanssa tai ilman. Se voidaan käynnistää YaST-"
@@ -861,13 +896,11 @@ msgstr ""
 "Tämä paketti sisältää YaST2 komponentin välityspalvelimen määrityksiä varten."
 
 #. leap/yast2-python-bindings/summary
-#. tumbleweed/yast2-python-bindings/summary
 msgid "Python bindings for the YaST platform"
 msgstr "Python-sidokset YaST-alustalle"
 
 #. leap/yast2-python-bindings/description
 #. leap/yast2-python-bindings/yast2-python3-bindings/description
-#. tumbleweed/yast2-python-bindings/description
 #. tumbleweed/yast2-python-bindings/yast2-python3-bindings/description
 msgid ""
 "The bindings allow YaST modules to be written using the Python language and "
@@ -917,6 +950,16 @@ msgstr ""
 "Rekisteröintimoduuli, jolla rekisteröidään tuotteet ja/tai haetaan "
 "päivityslähde (peilipalvelin) automaattisesti."
 
+#. leap/yast2-reipl/summary
+#, fuzzy
+#| msgid "YaST2 - CaaSP Module"
+msgid "YaST2 - IPL loader"
+msgstr "YaST2 – CaaSP-osa"
+
+#. leap/yast2-reipl/description
+msgid "Module for loading IPL from running system on S/390"
+msgstr ""
+
 #. leap/yast2-rmt/summary
 #. tumbleweed/yast2-rmt/summary
 msgid "YaST2 - Module to configure RMT"
@@ -944,6 +987,23 @@ msgid ""
 msgstr ""
 "Sidokset mahdollistavat YaST-moduulien kirjoittamisen Ruby-kielellä ja Ruby-"
 "komennot voivat käyttää YaST-agentteja, sovellusliittymää ja moduuleja."
+
+#. leap/yast2-s390/summary
+#, fuzzy
+#| msgid "YaST2 - DNS Server Configuration"
+msgid "YaST2 - S/390 Specific Features Configuration"
+msgstr "YaST2 - DNS-palvelimen määritys"
+
+#. leap/yast2-s390/description
+#, fuzzy
+#| msgid ""
+#| "This package contains the YaST2 component for configuration of an iSCSI "
+#| "client."
+msgid ""
+"This package contains the YaST component for configuration of S/390-specific "
+"features."
+msgstr ""
+"Tämä paketti sisältää YaST2-komponentin iSCSI-asiakkaan määritystä varten."
 
 #. leap/yast2-samba-client/summary
 #. tumbleweed/yast2-samba-client/summary
@@ -1225,8 +1285,8 @@ msgid ""
 "This is a container package.  Its only purpose is to build the yast2-trans-"
 "LL, yast2-trans-LLL, and yast2-trans-LL_CC packages as subpackages."
 msgstr ""
-"Tämä on konttipakkaus.  Sen ainoa tarkoitus on rakentaa yast2-trans-LL, yast2"
-"-trans-LLL, ja yast2-trans-LL_CC -paketit alipaketeina."
+"Tämä on konttipakkaus.  Sen ainoa tarkoitus on rakentaa yast2-trans-LL, "
+"yast2-trans-LLL, ja yast2-trans-LL_CC -paketit alipaketeina."
 
 #. leap/yast2-trans/yast2-trans-af/summary
 #. tumbleweed/yast2-trans/yast2-trans-af/summary
@@ -1367,12 +1427,10 @@ msgid "YaST2 - Translations for Greek."
 msgstr "YaST2 – Käännökset kreikaksi."
 
 #. leap/yast2-trans/yast2-trans-en/summary
-#. tumbleweed/yast2-trans/yast2-trans-en/summary
 msgid "YaST2 - English Translations"
 msgstr "YaST2 - käännökset englanniksi"
 
 #. leap/yast2-trans/yast2-trans-en/description
-#. tumbleweed/yast2-trans/yast2-trans-en/description
 msgid "YaST2 - English Translations."
 msgstr "YaST2 - käännökset englanniksi."
 
@@ -1387,12 +1445,10 @@ msgid "YaST2 - Translations for British English."
 msgstr "YaST2 – Käännökset brittienglanniksi."
 
 #. leap/yast2-trans/yast2-trans-en_US/summary
-#. tumbleweed/yast2-trans/yast2-trans-en_US/summary
 msgid "YaST2 - Translations"
 msgstr "YaST2 – Käännökset"
 
 #. leap/yast2-trans/yast2-trans-en_US/description
-#. tumbleweed/yast2-trans/yast2-trans-en_US/description
 msgid "YaST2 - Translations for American English."
 msgstr "YaST2 – Käännökset amerikanenglanniksi."
 
@@ -2141,21 +2197,6 @@ msgstr ""
 "Tämä on kehityspaketti, jonka avulla YaST2:n käyttöliittymämoottori saadaan "
 "YCP-sovellusten käyttöön (missä YCP on skriptikieli, jolla useimmat YaST2-"
 "osat on kirjoitettu)."
-
-#. tumbleweed/yast2-caasp/summary
-msgid "YaST2 - CaaSP Module"
-msgstr "YaST2 – CaaSP-osa"
-
-#. tumbleweed/yast2-caasp/description
-msgid ""
-"Containers as a Service Platform (CaaSP) and openSUSE Kubic specific module."
-msgstr ""
-"CaaSP (Containers as a Service Platform) ja openSUSEn Kubic-spesifi osa."
-
-#. tumbleweed/yast2-firstboot-wsl/summary
-#. tumbleweed/yast2-firstboot-wsl/description
-msgid "YaST2 firstboot settings for WSL images"
-msgstr "YaST2:n ensikäynnistysasetukset WSL-kuville"
 
 #. tumbleweed/yast2-fonts/summary
 msgid "YaST2 - Fonts Configuration"

@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2020-09-30 13:48+0000\n"
 "Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
-"Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/"
-"packages-i18n/patterns-master/zh_CN/>\n"
+"Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
+"i18n/patterns-master/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,26 +73,36 @@ msgstr "此软件集将安装全部所选软件集的 32 位变体。之后将�
 #. leap/patterns-base/patterns-base-sw_management/category
 #. leap/patterns-base/patterns-base-transactional_base/category
 #. leap/patterns-base/patterns-base-update_test/category
+#. leap/patterns-certification/patterns-certification-common-criteria/category
 #. leap/patterns-desktop/patterns-desktop-laptop/category
+#. leap/patterns-desktop/patterns-desktop-mobile/category
 #. leap/patterns-gnome/patterns-gnome-gnome_yast/category
 #. leap/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. leap/patterns-kde/patterns-kde-kde_yast/category
+#. leap/patterns-sap/patterns-sap-b1/category
+#. leap/patterns-sap/patterns-sap-hana/category
+#. leap/patterns-sap/patterns-sap-nw/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/category
 #. leap/patterns-server/patterns-server-kvm_tools/category
 #. leap/patterns-server/patterns-server-xen_tools/category
 #. leap/patterns-yast/patterns-yast-x11_yast/category
 #. leap/patterns-yast/patterns-yast-yast2_basis/category
+#. leap/patterns-yast/patterns-yast-yast2_desktop/category
 #. leap/patterns-yast/patterns-yast-yast2_install_wf/category
+#. leap/patterns-yast/patterns-yast-yast2_server/category
 #. tumbleweed/patterns-base/patterns-base-32bit/category
 #. tumbleweed/patterns-base/patterns-base-apparmor/category
 #. tumbleweed/patterns-base/patterns-base-base/category
 #. tumbleweed/patterns-base/patterns-base-basesystem/category
+#. tumbleweed/patterns-base/patterns-base-bootloader/category
 #. tumbleweed/patterns-base/patterns-base-console/category
 #. tumbleweed/patterns-base/patterns-base-enhanced_base/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base/category
+#. tumbleweed/patterns-base/patterns-base-selinux/category
 #. tumbleweed/patterns-base/patterns-base-sw_management/category
 #. tumbleweed/patterns-base/patterns-base-transactional_base/category
 #. tumbleweed/patterns-base/patterns-base-update_test/category
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/category
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/category
 #. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_yast/category
@@ -100,7 +110,9 @@ msgstr "此软件集将安装全部所选软件集的 32 位变体。之后将�
 #. tumbleweed/patterns-server/patterns-server-xen_tools/category
 #. tumbleweed/patterns-yast/patterns-yast-x11_yast/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/category
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/category
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/category
 msgid "Base Technologies"
 msgstr "基础技术"
 
@@ -156,9 +168,69 @@ msgid "The 32bit pattern complementing base."
 msgstr "极简基础系统软件集的 32 位版本。"
 
 #. leap/patterns-base/patterns-base-basesystem/summary
-#. tumbleweed/patterns-base/patterns-base-basesystem/summary
 msgid "Minimal Base System (alias pattern for base)"
 msgstr "极简基础系统（基础模组的别名）"
+
+#. leap/patterns-base/patterns-base-basic_desktop/summary
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/summary
+msgid "A very basic desktop (previously part of x11 pattern)"
+msgstr "非常基础的桌面（先前属于 x11 模组）"
+
+#. leap/patterns-base/patterns-base-basic_desktop/description
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/description
+msgid "This pattern installs a rather basic desktop (icewm)"
+msgstr "此软件集可安装一个相当基础的桌面（icewm）。"
+
+#. leap/patterns-base/patterns-base-basic_desktop/category
+#. leap/patterns-base/patterns-base-x11/category
+#. leap/patterns-base/patterns-base-x11_enhanced/category
+#. leap/patterns-base/patterns-base-x11_opt/category
+#. leap/patterns-base/patterns-base-x11_raspberrypi/category
+#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
+#. leap/patterns-fonts/patterns-fonts-fonts/category
+#. leap/patterns-fonts/patterns-fonts-fonts_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basic/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basis/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome_x11/category
+#. leap/patterns-kde/patterns-kde-kde/category
+#. leap/patterns-kde/patterns-kde-kde_plasma/category
+#. leap/patterns-lxde/patterns-lxde-lxde/category
+#. leap/patterns-lxde/patterns-lxde-lxde_office/category
+#. leap/patterns-lxqt/patterns-lxqt-lxqt/category
+#. leap/patterns-mate/patterns-mate-mate/category
+#. leap/patterns-mate/patterns-mate-mate_basis/category
+#. leap/patterns-mate/patterns-mate-mate_office/category
+#. leap/patterns-xfce/patterns-xfce-xfce/category
+#. leap/patterns-xfce/patterns-xfce-xfce_basis/category
+#. leap/patterns-xfce/patterns-xfce-xfce_office/category
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/category
+#. tumbleweed/patterns-base/patterns-base-x11/category
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced/category
+#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/category
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
+#. tumbleweed/patterns-kde/patterns-kde-kde/category
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/category
+#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/category
+#. tumbleweed/patterns-mate/patterns-mate-mate/category
+#. tumbleweed/patterns-mate/patterns-mate-mate_basis/category
+#. tumbleweed/patterns-mate/patterns-mate-mate_office/category
+#. tumbleweed/openSUSEway/patterns-openSUSEway/category
+#. tumbleweed/patterns-sway/patterns-sway-sway/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/category
+msgid "Graphical Environments"
+msgstr "图形环境"
 
 #. leap/patterns-base/patterns-base-console/summary
 #. tumbleweed/patterns-base/patterns-base-console/summary
@@ -207,12 +279,13 @@ msgid "Minimal Appliance Base"
 msgstr "极简设备基础"
 
 #. leap/patterns-base/patterns-base-minimal_base/description
-#. tumbleweed/patterns-base/patterns-base-minimal_base/description
 msgid ""
 "This is the minimal openSUSE runtime system. It is really a minimal system, "
 "you can login and a shell will be started, that's all. It is intended as "
 "base for Appliances."
-msgstr "这是 openSUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一个壳层，这就是全部了。它的目的是作为设备的基础。"
+msgstr ""
+"这是 openSUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一"
+"个壳层，这就是全部了。它的目的是作为设备的基础。"
 
 #. leap/patterns-base/patterns-base-minimal_base-32bit/description
 #. tumbleweed/patterns-base/patterns-base-minimal_base-32bit/description
@@ -269,6 +342,7 @@ msgstr "测试更新栈工作状况所需的软件包。这些小软件包本身
 #. leap/patterns-base/patterns-base-x11_enhanced/summary
 #. leap/patterns-base/patterns-base-x11_enhanced-32bit/summary
 #. leap/patterns-base/patterns-base-x11_opt/summary
+#. leap/patterns-base/patterns-base-x11_raspberrypi/summary
 #. tumbleweed/patterns-base/patterns-base-x11/summary
 #. tumbleweed/patterns-base/patterns-base-x11-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced/summary
@@ -279,6 +353,7 @@ msgstr "X 窗口系统"
 #. leap/patterns-base/patterns-base-x11/description
 #. leap/patterns-base/patterns-base-x11_enhanced/description
 #. leap/patterns-base/patterns-base-x11_opt/description
+#. leap/patterns-base/patterns-base-x11_raspberrypi/description
 #. tumbleweed/patterns-base/patterns-base-x11/description
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced/description
 msgid ""
@@ -287,55 +362,8 @@ msgid ""
 "today's enterprise: from network servers to desktops, thin clients, laptops, "
 "and handhelds, independent of operating system and hardware."
 msgstr ""
-"X 窗口系统提供唯一、标准、独立于平台的网络图形窗口系统，跨接当今企业中的各种平台： "
-"从网络服务器到桌面、瘦客户端、笔记本和手持设备，独立于操作系统和硬件。"
-
-#. leap/patterns-base/patterns-base-x11/category
-#. leap/patterns-base/patterns-base-x11_enhanced/category
-#. leap/patterns-base/patterns-base-x11_opt/category
-#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
-#. leap/patterns-fonts/patterns-fonts-fonts/category
-#. leap/patterns-fonts/patterns-fonts-fonts_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basic/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basis/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_x11/category
-#. leap/patterns-kde/patterns-kde-kde/category
-#. leap/patterns-kde/patterns-kde-kde_plasma/category
-#. leap/patterns-lxde/patterns-lxde-lxde/category
-#. leap/patterns-lxde/patterns-lxde-lxde_office/category
-#. leap/patterns-lxqt/patterns-lxqt-lxqt/category
-#. leap/patterns-mate/patterns-mate-mate/category
-#. leap/patterns-mate/patterns-mate-mate_basis/category
-#. leap/patterns-mate/patterns-mate-mate_office/category
-#. leap/patterns-xfce/patterns-xfce-xfce/category
-#. leap/patterns-xfce/patterns-xfce-xfce_basis/category
-#. leap/patterns-xfce/patterns-xfce-xfce_office/category
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/category
-#. tumbleweed/patterns-base/patterns-base-x11/category
-#. tumbleweed/patterns-base/patterns-base-x11_enhanced/category
-#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/category
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
-#. tumbleweed/patterns-kde/patterns-kde-kde/category
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/category
-#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/category
-#. tumbleweed/patterns-mate/patterns-mate-mate/category
-#. tumbleweed/patterns-mate/patterns-mate-mate_basis/category
-#. tumbleweed/patterns-mate/patterns-mate-mate_office/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/category
-msgid "Graphical Environments"
-msgstr "图形环境"
+"X 窗口系统提供唯一、标准、独立于平台的网络图形窗口系统，跨接当今企业中的各种"
+"平台： 从网络服务器到桌面、瘦客户端、笔记本和手持设备，独立于操作系统和硬件。"
 
 #. leap/patterns-base/patterns-base-x11-32bit/description
 #. tumbleweed/patterns-base/patterns-base-x11-32bit/description
@@ -346,6 +374,10 @@ msgstr "x11 软件集的 32 位版本。"
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
 msgstr "增强 x11 软件集的 32 位版本。"
+
+#. leap/patterns-certification/patterns-certification-common-criteria/summary
+msgid "Tools and scripts for Common Criteria"
+msgstr ""
 
 #. leap/patterns-desktop/patterns-desktop-books/description
 #. tumbleweed/patterns-desktop/patterns-desktop-books/description
@@ -400,14 +432,19 @@ msgid "Desktop Functions"
 msgstr "桌面功能"
 
 #. leap/patterns-desktop/patterns-desktop-laptop/summary
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/summary
 msgid "Laptop"
 msgstr "笔记本"
 
 #. leap/patterns-desktop/patterns-desktop-laptop/description
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/description
+#. leap/patterns-desktop/patterns-desktop-mobile/description
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/description
 msgid "Tools designed specifically for laptop computers."
 msgstr "专门为笔记本电脑设计的工具。"
+
+#. leap/patterns-desktop/patterns-desktop-mobile/summary
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/summary
+msgid "Mobile"
+msgstr ""
 
 #. leap/patterns-desktop/patterns-desktop-multimedia/summary
 #. leap/patterns-desktop/patterns-desktop-multimedia_opt/summary
@@ -664,7 +701,9 @@ msgid ""
 "The GNOME desktop environment is an intuitive and attractive desktop for "
 "users. This pattern installs components for GNOME to run with Wayland and "
 "X11 technologies."
-msgstr "GNOME 桌面环境是一套对用户直观且具有吸引力的桌面。此软件集会安装适用于 GNOME 且使用 Wayland 和 X11 技术运行的组件。"
+msgstr ""
+"GNOME 桌面环境是一套对用户直观且具有吸引力的桌面。此软件集会安装适用于 GNOME "
+"且使用 Wayland 和 X11 技术运行的组件。"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_basic/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/summary
@@ -678,7 +717,8 @@ msgid ""
 "users. This pattern installs GNOME desktop environment with only essential "
 "graphical applications installed (File Manager, Web Browser)."
 msgstr ""
-"GNOME 桌面环境是一套对用户直观且具有吸引力的桌面。此软件集会安装预装了最基本图形应用程序（文件管理器、Web 浏览器）的 GNOME 桌面环境。"
+"GNOME 桌面环境是一套对用户直观且具有吸引力的桌面。此软件集会安装预装了最基本"
+"图形应用程序（文件管理器、Web 浏览器）的 GNOME 桌面环境。"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_basis/summary
 #. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/summary
@@ -782,8 +822,9 @@ msgid ""
 "including Office suite, E-Mail client, Web Browser, File Manager, running "
 "with X11 technology."
 msgstr ""
-"GNOME 桌面环境是一套对用户直观且具有吸引力的桌面。此软件集会安装使用 X11 技术运行且功能完整的 GNOME "
-"桌面环境，包括办公套件、电子邮件客户端、Web 浏览器、文件管理器。"
+"GNOME 桌面环境是一套对用户直观且具有吸引力的桌面。此软件集会安装使用 X11 技术"
+"运行且功能完整的 GNOME 桌面环境，包括办公套件、电子邮件客户端、Web 浏览器、文"
+"件管理器。"
 
 #. leap/patterns-gnome/patterns-gnome-gnome_yast/summary
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/summary
@@ -805,6 +846,59 @@ msgstr "软件包管理 - GNOME 图形化工具"
 msgid "Package Management - Graphical Tools"
 msgstr "软件包管理 - 图形化工具"
 
+#. leap/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. leap/patterns-ha/description
+#. leap/patterns-ha-geo/description
+#. leap/patterns-lp/description
+#. leap/patterns-rt/description
+#. leap/patterns-sap/description
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+
+#. leap/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
+#, fuzzy
+#| msgid "High Availability"
+msgid "GEO Clustering for High Availability"
+msgstr "高在线率"
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/description
+msgid ""
+"This pattern provides tools for building multi-site clustering setups based "
+"on the SUSE Linux Enterprise High-Availability and its GEO extension."
+msgstr ""
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/category
+#. leap/patterns-ha/patterns-ha-ha_sles/category
+#. leap/patterns-lp/patterns-lp-lp_sles/category
+#. leap/patterns-ofed/patterns-ofed-ofed/category
+#. leap/patterns-rt/patterns-rt-rt_sles/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/category
+#. leap/patterns-wbem/patterns-wbem-WBEM/category
+msgid "Primary Functions"
+msgstr "主要功能"
+
+#. leap/patterns-ha/patterns-ha-ha_sles/summary
+msgid "High Availability"
+msgstr "高在线率"
+
+#. leap/patterns-ha/patterns-ha-ha_sles/description
+msgid ""
+"Provide tools to ensure a high degree of operational continuity and reduce "
+"the downtimes of your system."
+msgstr "提供保证高持续运营性和降低系统停机时间的工具。"
+
 #. leap/patterns-hpc/patterns-hpc-compute_node/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
@@ -812,11 +906,17 @@ msgstr "HPC 基本计算节点"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
+#, fuzzy
+#| msgid ""
+#| "A compute node comprises of a minimal software image and mainly runs "
+#| "simulation programs. Services on this node should be reduced to a bare "
+#| "minimum and the node *must* be installed in a automatic manner. The "
+#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
-"'HPC modularized libraries' should also be installed."
+"'HPC Modularized libraries' should also be installed."
 msgstr ""
 "计算节点由最小化的软件映像构成，主要运行仿真相关的程序。该节点上运行的服务应"
 "降低至极限最低数量，并且该节点*必须*以自动化方式安装。另外也应安装 “HPC 模块"
@@ -858,24 +958,39 @@ msgstr "HPC 开发软件包"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
+#| "addition it includes the GNU compilers and the relevant management "
+#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
-"applications. It depends on the pattern 'HPC modularized libraries'. In "
+"applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
-"该软件包提供了全部与 HPC 应用程序开发有关的软件包。它依赖于“HPC 模块化库”这个软件集。另外它还涵盖了 GNU 编译器和相关的管理软件包。"
+"该软件包提供了全部与 HPC 应用程序开发有关的软件包。它依赖于“HPC 模块化库”这个"
+"软件集。另外它还涵盖了 GNU 编译器和相关的管理软件包。"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
-msgid "HPC modularized Libraries"
+#, fuzzy
+#| msgid "HPC modularized Libraries"
+msgid "HPC Modularized Libraries"
 msgstr "HPC 模块化库"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
+#, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in an HPC environment. These libraries allow to install several MPI "
+#| "flavors in parallel. In order to use thess libraries one needs to load "
+#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
-"in parallel. In order to use thess libraries one needs to load them via the "
+"in parallel. In order to use these libraries one needs to load them via the "
 "module command first."
 msgstr ""
 "该软件包提供了全部可用于 HPC 环境中的模块化库。这些库允许并行安装多个 MPI 变"
@@ -1110,6 +1225,19 @@ msgstr "leechcraft 办公"
 msgid "leechcraft_utilities"
 msgstr "leechcraft 实用工具"
 
+#. leap/patterns-lp/summary
+msgid "Patterns for SLE Live Patching"
+msgstr ""
+
+#. leap/patterns-lp/patterns-lp-lp_sles/summary
+msgid "Live Patching"
+msgstr ""
+
+#. leap/patterns-lp/patterns-lp-lp_sles/description
+#. leap/patterns-rt/patterns-rt-rt_sles/description
+msgid "Provide tools and patches to fix kernel at runtime."
+msgstr ""
+
 #. leap/patterns-lxde/patterns-lxde-lxde/summary
 #. tumbleweed/patterns-lxde/patterns-lxde-lxde/summary
 msgid "LXDE Desktop Environment"
@@ -1246,6 +1374,28 @@ msgstr "网络管理"
 msgid "Tools for administering and debugging networks."
 msgstr "管理和调试网络所需的工具。"
 
+#. leap/patterns-ofed/patterns-ofed-ofed/summary
+#. leap/patterns-ofed/patterns-ofed-ofed-32bit/summary
+msgid "Infiniband (OFED)"
+msgstr "Infiniband (OFED)"
+
+#. leap/patterns-ofed/patterns-ofed-ofed/description
+msgid ""
+"This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
+"base packages. The base pattern includes the packages you need to get your "
+"Infiniband adapter operational, that is IB kernel modules and basic user "
+"level libraries."
+msgstr ""
+"此软件集定义了 OpenFabrics Enterprise Distribution (OFED) 软件的基础软件包。"
+"该基础软件集包含了让您的 Infiniband 适配器运行起来所需的软件包，即 IB 内核模"
+"块和基础用户级别库。"
+
+#. leap/patterns-ofed/patterns-ofed-ofed-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing base."
+msgid "The 32bit pattern complementing ofed."
+msgstr "极简基础系统软件集的 32 位版本。"
+
 #. leap/patterns-office/patterns-office-office/summary
 #. tumbleweed/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -1256,6 +1406,182 @@ msgstr "办公软件"
 msgid "Office software for your desktop environment including LibreOffice."
 msgstr "用于您的桌面环境的办公软件，包括 LibreOffice。"
 
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
+msgid "Amazon Web Services - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
+msgid ""
+"This pattern installs all Amazon Web Services command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Amazon Web Services - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
+msgid "Amazon Web Services - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
+msgid ""
+"This pattern installs the Amazon Web Services instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. cloud-init)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
+msgid "Amazon Web Services - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
+msgid ""
+"This pattern install the Amazon Web Services instance specific tools which "
+"are used to collect instance metadata (e.g. python-ec2metadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
+msgid "Amazon Web Services - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
+msgid ""
+"This pattern installs the Amazon Web Services command line interface tools "
+"to communicate with the cloud framework (e.g. aws-cli)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
+msgid "Google Cloud Platform - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
+msgid ""
+"This pattern installs all Google Cloud Platform command line interface "
+"tools, instance initialization packages and tools to communicate with the "
+"cloud framework from within a running instance. It is not recommended to "
+"install this pattern, but instead install one of the use-case specific "
+"patterns (e.g. Google Cloud Platform - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
+msgid "Google Cloud Platform - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
+msgid ""
+"This pattern installs the Google Cloud Platform instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. google-daemon)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
+msgid "Google Cloud Platform - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
+msgid ""
+"This pattern install the Google Cloud Platform instance specific tools which "
+"are used to collect instance metadata (e.g. python-gcemetadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
+msgid "Google Cloud Platform - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
+msgid ""
+"This pattern installs the Google Cloud Platform command line interface tools "
+"to communicate with the cloud framework (e.g. google-cloud-sdk)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
+msgid "Microsoft Azure - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
+msgid ""
+"This pattern installs all Microsoft Azure command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Microsoft Azure - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
+msgid "Microsoft Azure - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
+msgid ""
+"This pattern installs the Microsoft Azure instance initialization packages "
+"which support the provisioning and running of instances in the cloud "
+"framework (e.g. python-azure-agent)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
+msgid "Microsoft Azure - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
+msgid ""
+"This pattern install the Microsoft Azure instance specific tools which are "
+"used to collect instance metadata (e.g. azuremetadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
+msgid "Microsoft Azure - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+msgid ""
+"This pattern installs the Microsoft Azure command line interface tools to "
+"communicate with the cloud framework (e.g. azure-cli)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
+msgid "OpenStack - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
+msgid ""
+"This pattern installs all OpenStack command line interface tools, instance "
+"initialization packages and tools to communicate with the cloud framework "
+"from within a running instance. It is not recommended to install this "
+"pattern, but instead install one of the use-case specific patterns (e.g. "
+"OpenStack - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
+msgid "OpenStack - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
+msgid ""
+"This pattern installs the OpenStack instance initialization packages which "
+"support the provisioning and running of instances in the cloud framework (e."
+"g. cloud-init)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
+msgid "OpenStack - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
+msgid ""
+"This pattern install the OpenStack instance specific tools which are used to "
+"collect instance metadata."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
+msgid "OpenStack - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
+msgid ""
+"This pattern installs the OpenStack command line interface tools to "
+"communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
+msgstr ""
+
 #. leap/patterns-rpm-macros/summary
 #. tumbleweed/patterns-rpm-macros/summary
 msgid "RPM macros for building of patterns modules"
@@ -1265,6 +1591,54 @@ msgstr "用于构建软件集模组的 RPM 宏"
 #. tumbleweed/patterns-rpm-macros/description
 msgid "This package contains SUSE RPM macros to aid creating patterns."
 msgstr "此软件包包含用来创建模式（Pattern）的 SUSE RPM 宏。"
+
+#. leap/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. leap/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. leap/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. leap/patterns-sap/patterns-sap-b1/summary
+#, fuzzy
+#| msgid "SAP Application Server Base"
+msgid "SAP BusinessOne Server Base"
+msgstr "SAP 应用程序服务器基础"
+
+#. leap/patterns-sap/patterns-sap-b1/description
+#, fuzzy
+#| msgid "Set up the server for installing SAP systems."
+msgid "Set up the server for installing SAP BusinessOne systems."
+msgstr "为安装 SAP 系统设置服务器。"
+
+#. leap/patterns-sap/patterns-sap-hana/summary
+#, fuzzy
+#| msgid "SAP Application Server Base"
+msgid "SAP HANA Server Base"
+msgstr "SAP 应用程序服务器基础"
+
+#. leap/patterns-sap/patterns-sap-hana/description
+#, fuzzy
+#| msgid "Set up the server for installing SAP systems."
+msgid "Set up the server for installing SAP HANA systems."
+msgstr "为安装 SAP 系统设置服务器。"
+
+#. leap/patterns-sap/patterns-sap-nw/summary
+#, fuzzy
+#| msgid "SAP Application Server Base"
+msgid "SAP NetWeaver Server Base"
+msgstr "SAP 应用程序服务器基础"
+
+#. leap/patterns-sap/patterns-sap-nw/description
+#, fuzzy
+#| msgid "Set up the server for installing SAP systems."
+msgid "Set up the server for installing SAP NetWeaver systems."
+msgstr "为安装 SAP 系统设置服务器。"
 
 #. leap/patterns-server/patterns-server-dhcp_dns_server/summary
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
@@ -1282,8 +1656,9 @@ msgid ""
 "network, whereas DNS delivers information associated with domain names, in "
 "particular, the IP address."
 msgstr ""
-"设置动态主机配置协议（DHCP）和域名系统（DNS）服务器所需的软件。DHCP 为客户机提供配置参数以将它们整合进一个网络，而 DNS "
-"则传递与域名相关的信息，特别是，IP 地址。"
+"设置动态主机配置协议（DHCP）和域名系统（DNS）服务器所需的软件。DHCP 为客户机"
+"提供配置参数以将它们整合进一个网络，而 DNS 则传递与域名相关的信息，特别是，"
+"IP 地址。"
 
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/description
 #. tumbleweed/patterns-server/patterns-server-dhcp_dns_server-32bit/description
@@ -1310,6 +1685,70 @@ msgstr ""
 #. tumbleweed/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
 msgstr "目录服务器软件集的 32 位版本。"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
+msgid "FIPS 140-2 specific packages"
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing base."
+msgid "The 32bit pattern complementing fips."
+msgstr "极简基础系统软件集的 32 位版本。"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
+msgid "System z HW crypto support"
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
+msgid ""
+"A selection of packages that installs the System z HW crypto stack on System "
+"z."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
+msgid "Oracle Server Base"
+msgstr "Oracle 服务器基础"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
+msgid "Set up the server for installing Oracle databases."
+msgstr "为安装 Oracle 数据库设置服务器。"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing file_server."
+msgid "The 32bit pattern complementing oracle_server."
+msgstr "文件服务器软件集的 32 位版本。"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
+msgid "SAP Application Server Base"
+msgstr "SAP 应用程序服务器基础"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
+msgid "Set up the server for installing SAP systems."
+msgstr "为安装 SAP 系统设置服务器。"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing lamp_server."
+msgid "The 32bit pattern complementing sap_server."
+msgstr "Web 和 LAMP 服务器软件集的 32 位版本。"
 
 #. leap/patterns-server/patterns-server-file_server/summary
 #. leap/patterns-server/patterns-server-file_server-32bit/summary
@@ -1396,8 +1835,9 @@ msgid ""
 "database management system MySQL, and scripting languages such as PHP, "
 "Python, Ruby on Rails, or Perl."
 msgstr ""
-"设置能服务于静态、动态和交互式内容（如网上商店）的 Web 服务器所需的软件。 这包括 Apache HTTP 服务器、数据库管理系统 MySQL "
-"和脚本语言，如 PHP、Python、Ruby on Rails 或 Perl。"
+"设置能服务于静态、动态和交互式内容（如网上商店）的 Web 服务器所需的软件。 这"
+"包括 Apache HTTP 服务器、数据库管理系统 MySQL 和脚本语言，如 PHP、Python、"
+"Ruby on Rails 或 Perl。"
 
 #. leap/patterns-server/patterns-server-lamp_server-32bit/description
 #. tumbleweed/patterns-server/patterns-server-lamp_server-32bit/description
@@ -1468,6 +1908,21 @@ msgstr ""
 "此软件集将提供可获得运行中 XEN 超级管理程序，并可配置、管理和监控单个物理机上"
 "的各虚拟机的全套极简系统。"
 
+#. leap/patterns-wbem/patterns-wbem-WBEM/summary
+#. leap/patterns-wbem/patterns-wbem-WBEM-32bit/summary
+msgid "Web-Based Enterprise Management"
+msgstr "基于网络的企业管理"
+
+#. leap/patterns-wbem/patterns-wbem-WBEM/description
+msgid "Web-based enterprise management."
+msgstr "基于网络的企业管理。"
+
+#. leap/patterns-wbem/patterns-wbem-WBEM-32bit/description
+#, fuzzy
+#| msgid "The 32bit pattern complementing x11."
+msgid "The 32bit pattern complementing WBEM."
+msgstr "x11 软件集的 32 位版本。"
+
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
 msgid "XFCE Desktop Environment"
@@ -1530,13 +1985,26 @@ msgid "Graphical YaST user interfaces for minimal X desktop."
 msgstr "极简 X 桌面的 YaST 图形用户界面。"
 
 #. leap/patterns-yast/patterns-yast-yast2_basis/summary
-#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
 msgid "YaST System Administration"
 msgstr "YaST 系统管理"
 
 #. leap/patterns-yast/patterns-yast-yast2_basis/description
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/description
 msgid "YaST tools for basic system administration."
+msgstr "基础系统管理所需的 YaST 工具。"
+
+#. leap/patterns-yast/patterns-yast-yast2_desktop/summary
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/summary
+#, fuzzy
+#| msgid "KDE Utilities"
+msgid "YaST Desktop Utilities"
+msgstr "KDE 实用工具"
+
+#. leap/patterns-yast/patterns-yast-yast2_desktop/description
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/description
+#, fuzzy
+#| msgid "YaST tools for basic system administration."
+msgid "YaST tools for desktop system administration."
 msgstr "基础系统管理所需的 YaST 工具。"
 
 #. leap/patterns-yast/patterns-yast-yast2_install_wf/summary
@@ -1549,29 +2017,81 @@ msgstr "YaST 安装软件包"
 msgid "YaST tools for installing your system."
 msgstr "系统安装所需的 YaST 工具。"
 
-#. tumbleweed/openSUSE-MicroOS-release/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-appliance/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-appliance-kubic/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-dvd/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-kubic-dvd/summary
+#. leap/patterns-yast/patterns-yast-yast2_server/summary
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/summary
+#, fuzzy
+#| msgid "MATE Utilities"
+msgid "YaST Server Utilities"
+msgstr "MATE 实用工具"
+
+#. leap/patterns-yast/patterns-yast-yast2_server/description
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/description
+#, fuzzy
+#| msgid "YaST tools for basic system administration."
+msgid "YaST tools for server system administration."
+msgstr "基础系统管理所需的 YaST 工具。"
+
+#. tumbleweed/MicroOS-release/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-appliance/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-appliance-kubic/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-dvd/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-kubic-dvd/summary
 #. tumbleweed/patterns-microos/patterns-microos-base/summary
 msgid "openSUSE MicroOS"
 msgstr "openSUSE 微系统"
 
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/summary
-msgid "A very basic desktop (previously part of x11 pattern)"
-msgstr "非常基础的桌面（先前属于 x11 模组）"
+#. tumbleweed/patterns-base/patterns-base-basesystem/summary
+#, fuzzy
+#| msgid "Minimal Base System (alias pattern for base)"
+msgid "Base System (alias pattern for base)"
+msgstr "极简基础系统（基础模组的别名）"
 
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/description
-msgid "This pattern installs a rather basic desktop (icewm)"
-msgstr "此软件集可安装一个相当基础的桌面（icewm）。"
+#. tumbleweed/patterns-base/patterns-base-bootloader/summary
+msgid "Bootloader"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-bootloader/description
+msgid "This pattern holds files required for booting the system"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-minimal_base/description
+#, fuzzy
+#| msgid ""
+#| "This is the minimal openSUSE runtime system. It is really a minimal "
+#| "system, you can login and a shell will be started, that's all. It is "
+#| "intended as base for Appliances."
+msgid ""
+"This is the minimal runtime system. It is really a minimal system. It is "
+"intended as base for Appliances."
+msgstr ""
+"这是 openSUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一"
+"个壳层，这就是全部了。它的目的是作为设备的基础。"
+
+#. tumbleweed/patterns-base/patterns-base-selinux/summary
+#, fuzzy
+#| msgid "SELinux Support"
+msgid "SELinux"
+msgstr "SELinux 支持"
+
+#. tumbleweed/patterns-base/patterns-base-selinux/description
+msgid ""
+"Security-Enhanced Linux (SELinux) provides a mechanism for supporting access "
+"control security policies, including mandatory access controls (MAC). Its "
+"architecture strives to separate enforcement of security decisions from the "
+"security policy, and streamlines the amount of software involved with "
+"security policy enforcement."
+msgstr ""
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
 msgstr "Ceph 基础"
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
-msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
+#, fuzzy
+#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
+msgid ""
+"This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
+"containers."
 msgstr "此软件集提供了 Ceph、Rook、Ceph CSI 驱动的软件包。"
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
@@ -1606,14 +2126,18 @@ msgid ""
 msgstr "该软件集将安装用于 Kubernetes 集群系统的默认容器运行时软件包。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
-msgid "kubeadm Stack"
+#, fuzzy
+#| msgid "kubeadm Stack"
+msgid "Kubernetes kubeadm Stack"
 msgstr "Kubeadm 栈"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
 msgid ""
 "This provides a vanilla kubeadm stack. It contains everything needed to "
 "setup kubernetes using kubeadm."
-msgstr "该软件集提供了上游的 kubeadm 栈。它包含使用 kubeadm 设置 kubernetes 所需的全部软件包。"
+msgstr ""
+"该软件集提供了上游的 kubeadm 栈。它包含使用 kubeadm 设置 kubernetes 所需的全"
+"部软件包。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubernetes_utilities/summary
 msgid "Utilities to manage kubernetes"
@@ -1628,9 +2152,12 @@ msgid "Kubic Admin Node"
 msgstr "Kubic 管理节点"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
+#, fuzzy
+#| msgid ""
+#| "This pattern installs the the software required for an openSUSE Kubic "
+#| "Admin Node."
 msgid ""
-"This pattern installs the the software required for an openSUSE Kubic Admin "
-"Node."
+"This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr "此软件集将安装 openSUSE Kubic 管理节点所需的软件。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_loadbalancer/summary
@@ -1683,7 +2210,11 @@ msgstr "openSUSE 微系统 DVD 上可替换的附加软件包。"
 #. tumbleweed/patterns-microos/patterns-microos-apparmor/category
 #. tumbleweed/patterns-microos/patterns-microos-base/category
 #. tumbleweed/patterns-microos/patterns-microos-cloud/category
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/category
 #. tumbleweed/patterns-microos/patterns-microos-defaults/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/category
 #. tumbleweed/patterns-microos/patterns-microos-hardware/category
 #. tumbleweed/patterns-microos/patterns-microos-ima_evm/category
 #. tumbleweed/patterns-microos/patterns-microos-onlyDVD/category
@@ -1705,7 +2236,8 @@ msgstr "在 openSUSE 微系统上启用 Apparmor 的必需包。"
 msgid ""
 "This is the openSUSE MicroOS runtime system. It contains only a minimal "
 "multiuser booting system."
-msgstr "这是 openSUSE MicroOS 运行时系统。它仅包含了一个极简的多用户可引导系统。"
+msgstr ""
+"这是 openSUSE MicroOS 运行时系统。它仅包含了一个极简的多用户可引导系统。"
 
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/summary
 msgid "openSUSE MicroOS Base System (alias pattern for microos_base)"
@@ -1719,6 +2251,18 @@ msgstr "云支持"
 msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgstr "在云节点上启用 openSUSE 微系统所需的软件包。"
 
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
+#, fuzzy
+#| msgid "Web based system management tool"
+msgid "Web based remote system managemet"
+msgstr "基于网络的系统管理工具"
+
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/description
+msgid ""
+"Packages required to run the Cockpit system management service. For the web "
+"service the cockpit-ws container is required."
+msgstr ""
+
 #. tumbleweed/patterns-microos/patterns-microos-defaults/summary
 msgid "openSUSE MicroOS defaults"
 msgstr "openSUSE 微系统默认"
@@ -1727,7 +2271,44 @@ msgstr "openSUSE 微系统默认"
 msgid ""
 "This provides default packages for openSUSE MicroOS which can be optionally "
 "replaced by alternatives."
-msgstr "此软件集提供了 openSUSE 微系统的默认软件包，可以选择用替换软件包取代它们。"
+msgstr ""
+"此软件集提供了 openSUSE 微系统的默认软件包，可以选择用替换软件包取代它们。"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
+#, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
+msgid "Common packages for Desktops on MicroOS"
+msgstr "XFCE 桌面环境的基础软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
+#, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
+msgid "Packages required for openSUSE MicroOS Desktops."
+msgstr "在云节点上启用 openSUSE 微系统所需的软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
+#, fuzzy
+#| msgid "GNOME Desktop"
+msgid "MicroOS GNOME Desktop"
+msgstr "GNOME 桌面"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
+#, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
+msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
+msgstr "在云节点上启用 openSUSE 微系统所需的软件包。"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
+#, fuzzy
+#| msgid "KDE Plasma 5 Desktop"
+msgid "MicroOS KDE Plasma Desktop"
+msgstr "KDE Plasma 5 桌面"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
+#, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
+msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
+msgstr "在云节点上启用 openSUSE 微系统所需的软件包。"
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/summary
 msgid "Hardware Support"
@@ -1771,6 +2352,20 @@ msgid ""
 "Packages required to enable LDAP client support via sssd on openSUSE MicroOS."
 msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软件包。"
 
+#. tumbleweed/patterns-sway/patterns-sway-sway/summary
+msgid "Sway Tiling Wayland Compositor and related tools"
+msgstr ""
+
+#. tumbleweed/patterns-sway/patterns-sway-sway/description
+msgid "Sway Tiling Wayland Compositor and related tools."
+msgstr ""
+
+#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
+#, fuzzy
+#| msgid "MATE Utilities"
+msgid "YaST Base Utilities"
+msgstr "MATE 实用工具"
+
 #~ msgid "Base System"
 #~ msgstr "基础系统"
 
@@ -1813,9 +2408,6 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 
 #~ msgid "Development environment for the Plasma Desktop"
 #~ msgstr "Plasma 桌面开发环境"
-
-#~ msgid "KDE Plasma 5 Desktop"
-#~ msgstr "KDE Plasma 5 桌面"
 
 #~ msgid "x86 Runtime Environment"
 #~ msgstr "x86 运行环境"
@@ -1862,9 +2454,6 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 #~ "This is the stack on top of MicroOS. It contains everything for container "
 #~ "and kubernetes."
 #~ msgstr "这是MicroOS上运行的协议栈。提供了Kubernet以及容器所需的依赖。"
-
-#~ msgid "Primary Functions"
-#~ msgstr "主要功能"
 
 #~ msgid "Packages needed to run openSUSE Kubic on real hardware"
 #~ msgstr "在实际硬件上运行 openSUSE Kubic 的必需包"
@@ -2072,12 +2661,6 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 #~ msgid "Geographical Clustering"
 #~ msgstr "地理集群"
 
-#~ msgid "High Availability"
-#~ msgstr "高在线率"
-
-#~ msgid "Infiniband (OFED)"
-#~ msgstr "Infiniband (OFED)"
-
 #~ msgid "Java Environment"
 #~ msgstr "Java 环境"
 
@@ -2180,9 +2763,6 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 #~ msgid "Novell Client for Linux"
 #~ msgstr "Linux 下的 Novell 客户端"
 
-#~ msgid "Oracle Server Base"
-#~ msgstr "Oracle 服务器基础"
-
 #~ msgid "Packages required to setup a Cloud Admin Node."
 #~ msgstr "设置 Cloud 管理节点所需的软件包。"
 
@@ -2198,19 +2778,11 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 #~ msgid "Proprietary Java packages."
 #~ msgstr "私有 Java 软件包。"
 
-#~ msgid ""
-#~ "Provide tools to ensure a high degree of operational continuity and "
-#~ "reduce the downtimes of your system."
-#~ msgstr "提供保证高持续运营性和降低系统停机时间的工具。"
-
 #~ msgid "Real time kernel and utilities for SUSE Linux Enterprise."
 #~ msgstr "SUSE Linux 企业版的实时内核和工具。"
 
 #~ msgid "Ruby on Rails Development"
 #~ msgstr "Ruby on Rails 开发"
-
-#~ msgid "SAP Application Server Base"
-#~ msgstr "SAP 应用程序服务器基础"
 
 #~ msgid "SDK: .NET Development"
 #~ msgstr "SDK: .NET 开发"
@@ -2281,12 +2853,6 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 #~ msgid "SUSE Moblin"
 #~ msgstr "SUSE Moblin"
 
-#~ msgid "Set up the server for installing Oracle databases."
-#~ msgstr "为安装 Oracle 数据库设置服务器。"
-
-#~ msgid "Set up the server for installing SAP systems."
-#~ msgstr "为安装 SAP 系统设置服务器。"
-
 #~ msgid ""
 #~ "Software to set up a directory server with OpenLDAP. The Lightweight "
 #~ "Directory Access Protocol (LDAP) is used to access online directory "
@@ -2326,16 +2892,6 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 #~ msgid "This is the default system for this product."
 #~ msgstr "这是本产品的默认系统。"
 
-#~ msgid ""
-#~ "This pattern defines the OpenFabrics Enterprise Distribution (OFED) "
-#~ "software base packages. The base pattern includes the packages you need "
-#~ "to get your Infiniband adapter operational, that is IB kernel modules and "
-#~ "basic user level libraries."
-#~ msgstr ""
-#~ "此软件集定义了 OpenFabrics Enterprise Distribution (OFED) 软件的基础软件"
-#~ "包。该基础软件集包含了让您的 Infiniband 适配器运行起来所需的软件包，即 IB "
-#~ "内核模块和基础用户级别库。"
-
 #~ msgid "Toolchain to build code for the Cell processor."
 #~ msgstr "为手机处理器编译代码所需的工具集。"
 
@@ -2362,15 +2918,6 @@ msgstr "在 openSUSE 微系统上启用 LDAP 客户端 sssd 支持所需的软�
 
 #~ msgid "Voice over IP server."
 #~ msgstr "语音通话服务器。"
-
-#~ msgid "Web based system management tool"
-#~ msgstr "基于网络的系统管理工具"
-
-#~ msgid "Web-Based Enterprise Management"
-#~ msgstr "基于网络的企业管理"
-
-#~ msgid "Web-based enterprise management."
-#~ msgstr "基于网络的企业管理。"
 
 #~ msgid "WebYaST"
 #~ msgstr "WebYaST"

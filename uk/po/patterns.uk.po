@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2020-02-13 12:47+0000\n"
+"POT-Creation-Date: 2021-02-04 03:35+0000\n"
 "PO-Revision-Date: 2017-07-16 17:28+0000\n"
 "Last-Translator: Andriy Bandura <andriykopanytsia@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -77,26 +77,36 @@ msgstr ""
 #. leap/patterns-base/patterns-base-sw_management/category
 #. leap/patterns-base/patterns-base-transactional_base/category
 #. leap/patterns-base/patterns-base-update_test/category
+#. leap/patterns-certification/patterns-certification-common-criteria/category
 #. leap/patterns-desktop/patterns-desktop-laptop/category
+#. leap/patterns-desktop/patterns-desktop-mobile/category
 #. leap/patterns-gnome/patterns-gnome-gnome_yast/category
 #. leap/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. leap/patterns-kde/patterns-kde-kde_yast/category
+#. leap/patterns-sap/patterns-sap-b1/category
+#. leap/patterns-sap/patterns-sap-hana/category
+#. leap/patterns-sap/patterns-sap-nw/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/category
 #. leap/patterns-server/patterns-server-kvm_tools/category
 #. leap/patterns-server/patterns-server-xen_tools/category
 #. leap/patterns-yast/patterns-yast-x11_yast/category
 #. leap/patterns-yast/patterns-yast-yast2_basis/category
+#. leap/patterns-yast/patterns-yast-yast2_desktop/category
 #. leap/patterns-yast/patterns-yast-yast2_install_wf/category
+#. leap/patterns-yast/patterns-yast-yast2_server/category
 #. tumbleweed/patterns-base/patterns-base-32bit/category
 #. tumbleweed/patterns-base/patterns-base-apparmor/category
 #. tumbleweed/patterns-base/patterns-base-base/category
 #. tumbleweed/patterns-base/patterns-base-basesystem/category
+#. tumbleweed/patterns-base/patterns-base-bootloader/category
 #. tumbleweed/patterns-base/patterns-base-console/category
 #. tumbleweed/patterns-base/patterns-base-enhanced_base/category
 #. tumbleweed/patterns-base/patterns-base-minimal_base/category
+#. tumbleweed/patterns-base/patterns-base-selinux/category
 #. tumbleweed/patterns-base/patterns-base-sw_management/category
 #. tumbleweed/patterns-base/patterns-base-transactional_base/category
 #. tumbleweed/patterns-base/patterns-base-update_test/category
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/category
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/category
 #. tumbleweed/patterns-gnome/patterns-gnome-gnome_yast/category
 #. tumbleweed/patterns-gnome/patterns-gnome-sw_management_gnome/category
 #. tumbleweed/patterns-kde/patterns-kde-kde_yast/category
@@ -104,7 +114,9 @@ msgstr ""
 #. tumbleweed/patterns-server/patterns-server-xen_tools/category
 #. tumbleweed/patterns-yast/patterns-yast-x11_yast/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/category
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/category
 #. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/category
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/category
 msgid "Base Technologies"
 msgstr "Базові технології"
 
@@ -166,9 +178,69 @@ msgid "The 32bit pattern complementing base."
 msgstr ""
 
 #. leap/patterns-base/patterns-base-basesystem/summary
-#. tumbleweed/patterns-base/patterns-base-basesystem/summary
 msgid "Minimal Base System (alias pattern for base)"
 msgstr ""
+
+#. leap/patterns-base/patterns-base-basic_desktop/summary
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/summary
+msgid "A very basic desktop (previously part of x11 pattern)"
+msgstr ""
+
+#. leap/patterns-base/patterns-base-basic_desktop/description
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/description
+msgid "This pattern installs a rather basic desktop (icewm)"
+msgstr ""
+
+#. leap/patterns-base/patterns-base-basic_desktop/category
+#. leap/patterns-base/patterns-base-x11/category
+#. leap/patterns-base/patterns-base-x11_enhanced/category
+#. leap/patterns-base/patterns-base-x11_opt/category
+#. leap/patterns-base/patterns-base-x11_raspberrypi/category
+#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
+#. leap/patterns-fonts/patterns-fonts-fonts/category
+#. leap/patterns-fonts/patterns-fonts-fonts_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basic/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basis/category
+#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. leap/patterns-gnome/patterns-gnome-gnome_x11/category
+#. leap/patterns-kde/patterns-kde-kde/category
+#. leap/patterns-kde/patterns-kde-kde_plasma/category
+#. leap/patterns-lxde/patterns-lxde-lxde/category
+#. leap/patterns-lxde/patterns-lxde-lxde_office/category
+#. leap/patterns-lxqt/patterns-lxqt-lxqt/category
+#. leap/patterns-mate/patterns-mate-mate/category
+#. leap/patterns-mate/patterns-mate-mate_basis/category
+#. leap/patterns-mate/patterns-mate-mate_office/category
+#. leap/patterns-xfce/patterns-xfce-xfce/category
+#. leap/patterns-xfce/patterns-xfce-xfce_basis/category
+#. leap/patterns-xfce/patterns-xfce-xfce_office/category
+#. tumbleweed/patterns-base/patterns-base-basic_desktop/category
+#. tumbleweed/patterns-base/patterns-base-x11/category
+#. tumbleweed/patterns-base/patterns-base-x11_enhanced/category
+#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/category
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
+#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
+#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
+#. tumbleweed/patterns-kde/patterns-kde-kde/category
+#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
+#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/category
+#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/category
+#. tumbleweed/patterns-mate/patterns-mate-mate/category
+#. tumbleweed/patterns-mate/patterns-mate-mate_basis/category
+#. tumbleweed/patterns-mate/patterns-mate-mate_office/category
+#. tumbleweed/openSUSEway/patterns-openSUSEway/category
+#. tumbleweed/patterns-sway/patterns-sway-sway/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/category
+#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/category
+msgid "Graphical Environments"
+msgstr "Графічні середовища"
 
 #. leap/patterns-base/patterns-base-console/summary
 #. tumbleweed/patterns-base/patterns-base-console/summary
@@ -218,7 +290,6 @@ msgid "Minimal Appliance Base"
 msgstr ""
 
 #. leap/patterns-base/patterns-base-minimal_base/description
-#. tumbleweed/patterns-base/patterns-base-minimal_base/description
 msgid ""
 "This is the minimal openSUSE runtime system. It is really a minimal system, "
 "you can login and a shell will be started, that's all. It is intended as "
@@ -287,6 +358,7 @@ msgstr ""
 #. leap/patterns-base/patterns-base-x11_enhanced/summary
 #. leap/patterns-base/patterns-base-x11_enhanced-32bit/summary
 #. leap/patterns-base/patterns-base-x11_opt/summary
+#. leap/patterns-base/patterns-base-x11_raspberrypi/summary
 #. tumbleweed/patterns-base/patterns-base-x11/summary
 #. tumbleweed/patterns-base/patterns-base-x11-32bit/summary
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced/summary
@@ -297,6 +369,7 @@ msgstr "Віконна система X"
 #. leap/patterns-base/patterns-base-x11/description
 #. leap/patterns-base/patterns-base-x11_enhanced/description
 #. leap/patterns-base/patterns-base-x11_opt/description
+#. leap/patterns-base/patterns-base-x11_raspberrypi/description
 #. tumbleweed/patterns-base/patterns-base-x11/description
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced/description
 msgid ""
@@ -310,53 +383,6 @@ msgstr ""
 "підприємствах: від мережних серверів до стільниць, тонких клієнтів, лептопів "
 "і кишенькових ПК, незалежно від операційних систем і обладнання."
 
-#. leap/patterns-base/patterns-base-x11/category
-#. leap/patterns-base/patterns-base-x11_enhanced/category
-#. leap/patterns-base/patterns-base-x11_opt/category
-#. leap/patterns-enlightenment/patterns-enlightenment-enlightenment/category
-#. leap/patterns-fonts/patterns-fonts-fonts/category
-#. leap/patterns-fonts/patterns-fonts-fonts_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basic/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basis/category
-#. leap/patterns-gnome/patterns-gnome-gnome_basis_opt/category
-#. leap/patterns-gnome/patterns-gnome-gnome_x11/category
-#. leap/patterns-kde/patterns-kde-kde/category
-#. leap/patterns-kde/patterns-kde-kde_plasma/category
-#. leap/patterns-lxde/patterns-lxde-lxde/category
-#. leap/patterns-lxde/patterns-lxde-lxde_office/category
-#. leap/patterns-lxqt/patterns-lxqt-lxqt/category
-#. leap/patterns-mate/patterns-mate-mate/category
-#. leap/patterns-mate/patterns-mate-mate_basis/category
-#. leap/patterns-mate/patterns-mate-mate_office/category
-#. leap/patterns-xfce/patterns-xfce-xfce/category
-#. leap/patterns-xfce/patterns-xfce-xfce_basis/category
-#. leap/patterns-xfce/patterns-xfce-xfce_office/category
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/category
-#. tumbleweed/patterns-base/patterns-base-x11/category
-#. tumbleweed/patterns-base/patterns-base-x11_enhanced/category
-#. tumbleweed/patterns-enlightenment/patterns-enlightenment-enlightenment/category
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts/category
-#. tumbleweed/patterns-fonts/patterns-fonts-fonts_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basic/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_basis_opt/category
-#. tumbleweed/patterns-gnome/patterns-gnome-gnome_x11/category
-#. tumbleweed/patterns-kde/patterns-kde-kde/category
-#. tumbleweed/patterns-kde/patterns-kde-kde_plasma/category
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde/category
-#. tumbleweed/patterns-lxde/patterns-lxde-lxde_office/category
-#. tumbleweed/patterns-lxqt/patterns-lxqt-lxqt/category
-#. tumbleweed/patterns-mate/patterns-mate-mate/category
-#. tumbleweed/patterns-mate/patterns-mate-mate_basis/category
-#. tumbleweed/patterns-mate/patterns-mate-mate_office/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_basis/category
-#. tumbleweed/patterns-xfce/patterns-xfce-xfce_office/category
-msgid "Graphical Environments"
-msgstr "Графічні середовища"
-
 #. leap/patterns-base/patterns-base-x11-32bit/description
 #. tumbleweed/patterns-base/patterns-base-x11-32bit/description
 msgid "The 32bit pattern complementing x11."
@@ -365,6 +391,10 @@ msgstr ""
 #. leap/patterns-base/patterns-base-x11_enhanced-32bit/description
 #. tumbleweed/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
+msgstr ""
+
+#. leap/patterns-certification/patterns-certification-common-criteria/summary
+msgid "Tools and scripts for Common Criteria"
 msgstr ""
 
 #. leap/patterns-desktop/patterns-desktop-books/description
@@ -420,14 +450,19 @@ msgid "Desktop Functions"
 msgstr "Стільничні функції"
 
 #. leap/patterns-desktop/patterns-desktop-laptop/summary
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/summary
 msgid "Laptop"
 msgstr "Ноутбук"
 
 #. leap/patterns-desktop/patterns-desktop-laptop/description
-#. tumbleweed/patterns-desktop/patterns-desktop-laptop/description
+#. leap/patterns-desktop/patterns-desktop-mobile/description
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/description
 msgid "Tools designed specifically for laptop computers."
 msgstr "Засоби, спеціально створені для використання з ноутбуками."
+
+#. leap/patterns-desktop/patterns-desktop-mobile/summary
+#. tumbleweed/patterns-desktop/patterns-desktop-mobile/summary
+msgid "Mobile"
+msgstr ""
 
 #. leap/patterns-desktop/patterns-desktop-multimedia/summary
 #. leap/patterns-desktop/patterns-desktop-multimedia_opt/summary
@@ -841,6 +876,59 @@ msgstr "Управління пакунками — графічні засоб�
 msgid "Package Management - Graphical Tools"
 msgstr "Управління пакунками — графічні засоби"
 
+#. leap/patterns-ha/summary
+msgid "Patterns for SLE HA"
+msgstr ""
+
+#. leap/patterns-ha/description
+#. leap/patterns-ha-geo/description
+#. leap/patterns-lp/description
+#. leap/patterns-rt/description
+#. leap/patterns-sap/description
+msgid ""
+"This is an internal package that is used to create the patterns as part of "
+"the installation source setup.  Installation of this package does not make "
+"sense."
+msgstr ""
+
+#. leap/patterns-ha-geo/summary
+msgid "Patterns for SLE HA GEO"
+msgstr ""
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
+msgid "GEO Clustering for High Availability"
+msgstr ""
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/description
+msgid ""
+"This pattern provides tools for building multi-site clustering setups based "
+"on the SUSE Linux Enterprise High-Availability and its GEO extension."
+msgstr ""
+
+#. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/category
+#. leap/patterns-ha/patterns-ha-ha_sles/category
+#. leap/patterns-lp/patterns-lp-lp_sles/category
+#. leap/patterns-ofed/patterns-ofed-ofed/category
+#. leap/patterns-rt/patterns-rt-rt_sles/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/category
+#. leap/patterns-wbem/patterns-wbem-WBEM/category
+#, fuzzy
+#| msgid "Server Functions"
+msgid "Primary Functions"
+msgstr "Серверні функції"
+
+#. leap/patterns-ha/patterns-ha-ha_sles/summary
+msgid "High Availability"
+msgstr ""
+
+#. leap/patterns-ha/patterns-ha-ha_sles/description
+msgid ""
+"Provide tools to ensure a high degree of operational continuity and reduce "
+"the downtimes of your system."
+msgstr ""
+
 #. leap/patterns-hpc/patterns-hpc-compute_node/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
 msgid "HPC Basic Compute Node"
@@ -852,7 +940,7 @@ msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
-"'HPC modularized libraries' should also be installed."
+"'HPC Modularized libraries' should also be installed."
 msgstr ""
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
@@ -895,13 +983,13 @@ msgstr "Пакунки розробки для KDE."
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
 msgid ""
 "This package provides all the relevant packages for developing HPC "
-"applications. It depends on the pattern 'HPC modularized libraries'. In "
+"applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
-msgid "HPC modularized Libraries"
+msgid "HPC Modularized Libraries"
 msgstr ""
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
@@ -909,7 +997,7 @@ msgstr ""
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
-"in parallel. In order to use thess libraries one needs to load them via the "
+"in parallel. In order to use these libraries one needs to load them via the "
 "module command first."
 msgstr ""
 
@@ -1152,6 +1240,19 @@ msgstr "leechcraft_office"
 msgid "leechcraft_utilities"
 msgstr "leechcraft_utilities"
 
+#. leap/patterns-lp/summary
+msgid "Patterns for SLE Live Patching"
+msgstr ""
+
+#. leap/patterns-lp/patterns-lp-lp_sles/summary
+msgid "Live Patching"
+msgstr ""
+
+#. leap/patterns-lp/patterns-lp-lp_sles/description
+#. leap/patterns-rt/patterns-rt-rt_sles/description
+msgid "Provide tools and patches to fix kernel at runtime."
+msgstr ""
+
 #. leap/patterns-lxde/patterns-lxde-lxde/summary
 #. tumbleweed/patterns-lxde/patterns-lxde-lxde/summary
 msgid "LXDE Desktop Environment"
@@ -1292,6 +1393,23 @@ msgstr "Адміністрування мережі"
 msgid "Tools for administering and debugging networks."
 msgstr "Засоби для адміністрування та зневадження мереж."
 
+#. leap/patterns-ofed/patterns-ofed-ofed/summary
+#. leap/patterns-ofed/patterns-ofed-ofed-32bit/summary
+msgid "Infiniband (OFED)"
+msgstr ""
+
+#. leap/patterns-ofed/patterns-ofed-ofed/description
+msgid ""
+"This pattern defines the OpenFabrics Enterprise Distribution (OFED) software "
+"base packages. The base pattern includes the packages you need to get your "
+"Infiniband adapter operational, that is IB kernel modules and basic user "
+"level libraries."
+msgstr ""
+
+#. leap/patterns-ofed/patterns-ofed-ofed-32bit/description
+msgid "The 32bit pattern complementing ofed."
+msgstr ""
+
 #. leap/patterns-office/patterns-office-office/summary
 #. tumbleweed/patterns-office/patterns-office-office/summary
 msgid "Office Software"
@@ -1301,6 +1419,182 @@ msgstr "Офісні програми"
 #. tumbleweed/patterns-office/patterns-office-office/description
 msgid "Office software for your desktop environment including LibreOffice."
 msgstr "Офісне ПЗ для вашого стільничного середовища, включно з LibreOffice."
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
+msgid "Amazon Web Services - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
+msgid ""
+"This pattern installs all Amazon Web Services command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Amazon Web Services - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
+msgid "Amazon Web Services - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
+msgid ""
+"This pattern installs the Amazon Web Services instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. cloud-init)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
+msgid "Amazon Web Services - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
+msgid ""
+"This pattern install the Amazon Web Services instance specific tools which "
+"are used to collect instance metadata (e.g. python-ec2metadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
+msgid "Amazon Web Services - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
+msgid ""
+"This pattern installs the Amazon Web Services command line interface tools "
+"to communicate with the cloud framework (e.g. aws-cli)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
+msgid "Google Cloud Platform - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
+msgid ""
+"This pattern installs all Google Cloud Platform command line interface "
+"tools, instance initialization packages and tools to communicate with the "
+"cloud framework from within a running instance. It is not recommended to "
+"install this pattern, but instead install one of the use-case specific "
+"patterns (e.g. Google Cloud Platform - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
+msgid "Google Cloud Platform - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
+msgid ""
+"This pattern installs the Google Cloud Platform instance initialization "
+"packages which support the provisioning and running of instances in the "
+"cloud framework (e.g. google-daemon)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
+msgid "Google Cloud Platform - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
+msgid ""
+"This pattern install the Google Cloud Platform instance specific tools which "
+"are used to collect instance metadata (e.g. python-gcemetadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
+msgid "Google Cloud Platform - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
+msgid ""
+"This pattern installs the Google Cloud Platform command line interface tools "
+"to communicate with the cloud framework (e.g. google-cloud-sdk)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
+msgid "Microsoft Azure - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
+msgid ""
+"This pattern installs all Microsoft Azure command line interface tools, "
+"instance initialization packages and tools to communicate with the cloud "
+"framework from within a running instance. It is not recommended to install "
+"this pattern, but instead install one of the use-case specific patterns (e."
+"g. Microsoft Azure - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
+msgid "Microsoft Azure - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
+msgid ""
+"This pattern installs the Microsoft Azure instance initialization packages "
+"which support the provisioning and running of instances in the cloud "
+"framework (e.g. python-azure-agent)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
+msgid "Microsoft Azure - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
+msgid ""
+"This pattern install the Microsoft Azure instance specific tools which are "
+"used to collect instance metadata (e.g. azuremetadata)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
+msgid "Microsoft Azure - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
+msgid ""
+"This pattern installs the Microsoft Azure command line interface tools to "
+"communicate with the cloud framework (e.g. azure-cli)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
+msgid "OpenStack - All"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
+msgid ""
+"This pattern installs all OpenStack command line interface tools, instance "
+"initialization packages and tools to communicate with the cloud framework "
+"from within a running instance. It is not recommended to install this "
+"pattern, but instead install one of the use-case specific patterns (e.g. "
+"OpenStack - Tools)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
+msgid "OpenStack - Instance Initialization"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
+msgid ""
+"This pattern installs the OpenStack instance initialization packages which "
+"support the provisioning and running of instances in the cloud framework (e."
+"g. cloud-init)."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
+msgid "OpenStack - Instance Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
+msgid ""
+"This pattern install the OpenStack instance specific tools which are used to "
+"collect instance metadata."
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
+msgid "OpenStack - Tools"
+msgstr ""
+
+#. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
+msgid ""
+"This pattern installs the OpenStack command line interface tools to "
+"communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
+msgstr ""
 
 #. leap/patterns-rpm-macros/summary
 #. tumbleweed/patterns-rpm-macros/summary
@@ -1312,6 +1606,48 @@ msgstr "Макроси RPM для збирання різних модулів �
 msgid "This package contains SUSE RPM macros to aid creating patterns."
 msgstr ""
 "Цей пакунок містить макроси SUSE RPM, які допомагають створювати шаблони."
+
+#. leap/patterns-rt/summary
+msgid "Patterns for SLE Real Time Module"
+msgstr ""
+
+#. leap/patterns-rt/patterns-rt-rt_sles/summary
+msgid "SLE Real Time Module"
+msgstr ""
+
+#. leap/patterns-sap/summary
+msgid "Patterns for SLES for SAP Applications"
+msgstr ""
+
+#. leap/patterns-sap/patterns-sap-b1/summary
+msgid "SAP BusinessOne Server Base"
+msgstr ""
+
+#. leap/patterns-sap/patterns-sap-b1/description
+#, fuzzy
+#| msgid "YaST tools for installing your system."
+msgid "Set up the server for installing SAP BusinessOne systems."
+msgstr "Засоби YaST для встановлення вашої системи."
+
+#. leap/patterns-sap/patterns-sap-hana/summary
+msgid "SAP HANA Server Base"
+msgstr ""
+
+#. leap/patterns-sap/patterns-sap-hana/description
+#, fuzzy
+#| msgid "YaST tools for installing your system."
+msgid "Set up the server for installing SAP HANA systems."
+msgstr "Засоби YaST для встановлення вашої системи."
+
+#. leap/patterns-sap/patterns-sap-nw/summary
+msgid "SAP NetWeaver Server Base"
+msgstr ""
+
+#. leap/patterns-sap/patterns-sap-nw/description
+#, fuzzy
+#| msgid "YaST tools for installing your system."
+msgid "Set up the server for installing SAP NetWeaver systems."
+msgstr "Засоби YaST для встановлення вашої системи."
 
 #. leap/patterns-server/patterns-server-dhcp_dns_server/summary
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
@@ -1359,6 +1695,70 @@ msgstr ""
 #. leap/patterns-server/patterns-server-directory_server-32bit/description
 #. tumbleweed/patterns-server/patterns-server-directory_server-32bit/description
 msgid "The 32bit pattern complementing directory_server."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
+msgid "FIPS 140-2 specific packages"
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
+msgid "The 32bit pattern complementing fips."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
+msgid "System z HW crypto support"
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
+msgid ""
+"A selection of packages that installs the System z HW crypto stack on System "
+"z."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
+#, fuzzy
+#| msgid "File Server"
+msgid "Oracle Server Base"
+msgstr "Файловий сервер"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
+msgid "Set up the server for installing Oracle databases."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
+msgid "The 32bit pattern complementing oracle_server."
+msgstr ""
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
+#, fuzzy
+#| msgid "KDE Applications - Games"
+msgid "SAP Application Server Base"
+msgstr "Програми KDE - Ігри"
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
+#, fuzzy
+#| msgid "YaST tools for installing your system."
+msgid "Set up the server for installing SAP systems."
+msgstr "Засоби YaST для встановлення вашої системи."
+
+#. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
+msgid "The 32bit pattern complementing sap_server."
 msgstr ""
 
 #. leap/patterns-server/patterns-server-file_server/summary
@@ -1531,6 +1931,19 @@ msgstr ""
 "Програмне забезпечення установки сервера для налаштування, управління та "
 "відстеження роботи віртуальних машин на одній фізичній машині."
 
+#. leap/patterns-wbem/patterns-wbem-WBEM/summary
+#. leap/patterns-wbem/patterns-wbem-WBEM-32bit/summary
+msgid "Web-Based Enterprise Management"
+msgstr ""
+
+#. leap/patterns-wbem/patterns-wbem-WBEM/description
+msgid "Web-based enterprise management."
+msgstr ""
+
+#. leap/patterns-wbem/patterns-wbem-WBEM-32bit/description
+msgid "The 32bit pattern complementing WBEM."
+msgstr ""
+
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
 msgid "XFCE Desktop Environment"
@@ -1597,13 +2010,26 @@ msgid "Graphical YaST user interfaces for minimal X desktop."
 msgstr "Графічна оболонка користувача YaST для мінімальної X стільниці."
 
 #. leap/patterns-yast/patterns-yast-yast2_basis/summary
-#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
 msgid "YaST System Administration"
 msgstr "Адміністрування системи (YaST)"
 
 #. leap/patterns-yast/patterns-yast-yast2_basis/description
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/description
 msgid "YaST tools for basic system administration."
+msgstr "Засоби YaST для простого адміністрування системи."
+
+#. leap/patterns-yast/patterns-yast-yast2_desktop/summary
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/summary
+#, fuzzy
+#| msgid "KDE Utilities"
+msgid "YaST Desktop Utilities"
+msgstr "Утиліти KDE"
+
+#. leap/patterns-yast/patterns-yast-yast2_desktop/description
+#. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/description
+#, fuzzy
+#| msgid "YaST tools for basic system administration."
+msgid "YaST tools for desktop system administration."
 msgstr "Засоби YaST для простого адміністрування системи."
 
 #. leap/patterns-yast/patterns-yast-yast2_install_wf/summary
@@ -1616,23 +2042,68 @@ msgstr "Пакунки встановлення YaST"
 msgid "YaST tools for installing your system."
 msgstr "Засоби YaST для встановлення вашої системи."
 
-#. tumbleweed/openSUSE-MicroOS-release/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-appliance/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-appliance-kubic/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-dvd/summary
-#. tumbleweed/openSUSE-MicroOS-release/openSUSE-MicroOS-release-kubic-dvd/summary
+#. leap/patterns-yast/patterns-yast-yast2_server/summary
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/summary
+#, fuzzy
+#| msgid "MATE Utilities"
+msgid "YaST Server Utilities"
+msgstr "Утиліти MATE"
+
+#. leap/patterns-yast/patterns-yast-yast2_server/description
+#. tumbleweed/patterns-yast/patterns-yast-yast2_server/description
+#, fuzzy
+#| msgid "YaST tools for basic system administration."
+msgid "YaST tools for server system administration."
+msgstr "Засоби YaST для простого адміністрування системи."
+
+#. tumbleweed/MicroOS-release/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-appliance/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-appliance-kubic/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-dvd/summary
+#. tumbleweed/MicroOS-release/MicroOS-release-kubic-dvd/summary
 #. tumbleweed/patterns-microos/patterns-microos-base/summary
 #, fuzzy
 #| msgid "openSUSE Kubic MicroOS System"
 msgid "openSUSE MicroOS"
 msgstr "Система openSUSE Kubic MicroOS"
 
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/summary
-msgid "A very basic desktop (previously part of x11 pattern)"
+#. tumbleweed/patterns-base/patterns-base-basesystem/summary
+msgid "Base System (alias pattern for base)"
 msgstr ""
 
-#. tumbleweed/patterns-base/patterns-base-basic_desktop/description
-msgid "This pattern installs a rather basic desktop (icewm)"
+#. tumbleweed/patterns-base/patterns-base-bootloader/summary
+msgid "Bootloader"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-bootloader/description
+msgid "This pattern holds files required for booting the system"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-minimal_base/description
+#, fuzzy
+#| msgid ""
+#| "This is the minimal openSUSE runtime system. It is really a minimal "
+#| "system, you can login and a shell will be started, that's all. It is "
+#| "intended as base for Appliances."
+msgid ""
+"This is the minimal runtime system. It is really a minimal system. It is "
+"intended as base for Appliances."
+msgstr ""
+"Це мінімальна система виконання openSUSE. Це дійсно мінімальна система, ви "
+"можете увійти, запуститься оболонка і все. Вона є основою для побутової "
+"техніки."
+
+#. tumbleweed/patterns-base/patterns-base-selinux/summary
+msgid "SELinux"
+msgstr ""
+
+#. tumbleweed/patterns-base/patterns-base-selinux/description
+msgid ""
+"Security-Enhanced Linux (SELinux) provides a mechanism for supporting access "
+"control security policies, including mandatory access controls (MAC). Its "
+"architecture strives to separate enforcement of security decisions from the "
+"security policy, and streamlines the amount of software involved with "
+"security policy enforcement."
 msgstr ""
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
@@ -1640,7 +2111,9 @@ msgid "Ceph base"
 msgstr ""
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
-msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
+msgid ""
+"This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
+"containers."
 msgstr ""
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
@@ -1675,7 +2148,7 @@ msgid ""
 msgstr ""
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
-msgid "kubeadm Stack"
+msgid "Kubernetes kubeadm Stack"
 msgstr ""
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
@@ -1698,8 +2171,7 @@ msgstr ""
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
 msgid ""
-"This pattern installs the the software required for an openSUSE Kubic Admin "
-"Node."
+"This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr ""
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_loadbalancer/summary
@@ -1756,7 +2228,11 @@ msgstr "Пакунки лише для DVD із openSUSE Kubic"
 #. tumbleweed/patterns-microos/patterns-microos-apparmor/category
 #. tumbleweed/patterns-microos/patterns-microos-base/category
 #. tumbleweed/patterns-microos/patterns-microos-cloud/category
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/category
 #. tumbleweed/patterns-microos/patterns-microos-defaults/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/category
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/category
 #. tumbleweed/patterns-microos/patterns-microos-hardware/category
 #. tumbleweed/patterns-microos/patterns-microos-ima_evm/category
 #. tumbleweed/patterns-microos/patterns-microos-onlyDVD/category
@@ -1806,6 +2282,16 @@ msgstr ""
 "Це додаткові пакунки, як повинні бути на платформі SUSE CaaS чи продукті "
 "openSUSE Kubic."
 
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
+msgid "Web based remote system managemet"
+msgstr ""
+
+#. tumbleweed/patterns-microos/patterns-microos-cockpit/description
+msgid ""
+"Packages required to run the Cockpit system management service. For the web "
+"service the cockpit-ws container is required."
+msgstr ""
+
 #. tumbleweed/patterns-microos/patterns-microos-defaults/summary
 #, fuzzy
 #| msgid "openSUSE Kubic MicroOS System"
@@ -1817,6 +2303,54 @@ msgid ""
 "This provides default packages for openSUSE MicroOS which can be optionally "
 "replaced by alternatives."
 msgstr ""
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
+#, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
+msgid "Common packages for Desktops on MicroOS"
+msgstr "Основні пакунки для стільничного середовища XFCE"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
+msgid "Packages required for openSUSE MicroOS Desktops."
+msgstr ""
+"Це додаткові пакунки, як повинні бути на платформі SUSE CaaS чи продукті "
+"openSUSE Kubic."
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
+#, fuzzy
+#| msgid "GNOME Desktop"
+msgid "MicroOS GNOME Desktop"
+msgstr "Стільниця GNOME"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
+msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
+msgstr ""
+"Це додаткові пакунки, як повинні бути на платформі SUSE CaaS чи продукті "
+"openSUSE Kubic."
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
+#, fuzzy
+#| msgid "KDE Plasma 5 Desktop"
+msgid "MicroOS KDE Plasma Desktop"
+msgstr "Стільниця KDE Plasma 5"
+
+#. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
+#, fuzzy
+#| msgid ""
+#| "This are the additonal packages which should be on a SUSE CaaS Platform "
+#| "or openSUSE Kubic product."
+msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
+msgstr ""
+"Це додаткові пакунки, як повинні бути на платформі SUSE CaaS чи продукті "
+"openSUSE Kubic."
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/summary
 msgid "Hardware Support"
@@ -1884,6 +2418,20 @@ msgstr ""
 "Це додаткові пакунки, як повинні бути на платформі SUSE CaaS чи продукті "
 "openSUSE Kubic."
 
+#. tumbleweed/patterns-sway/patterns-sway-sway/summary
+msgid "Sway Tiling Wayland Compositor and related tools"
+msgstr ""
+
+#. tumbleweed/patterns-sway/patterns-sway-sway/description
+msgid "Sway Tiling Wayland Compositor and related tools."
+msgstr ""
+
+#. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
+#, fuzzy
+#| msgid "MATE Utilities"
+msgid "YaST Base Utilities"
+msgstr "Утиліти MATE"
+
 #~ msgid "Base System"
 #~ msgstr "Базова система"
 
@@ -1933,9 +2481,6 @@ msgstr ""
 
 #~ msgid "Development environment for the Plasma Desktop"
 #~ msgstr "Середовище розробки для стільниці Plasma"
-
-#~ msgid "KDE Plasma 5 Desktop"
-#~ msgstr "Стільниця KDE Plasma 5"
 
 #~ msgid "x86 Runtime Environment"
 #~ msgstr "Середовище виконання x86"
