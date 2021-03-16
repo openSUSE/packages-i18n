@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2020-02-14 07:54+0000\n"
+"PO-Revision-Date: 2021-03-16 03:56+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/ja/>\n"
@@ -396,7 +396,7 @@ msgstr "x11_enhanced パターンを補完する 32 ビットパターンです�
 
 #. leap/patterns-certification/patterns-certification-common-criteria/summary
 msgid "Tools and scripts for Common Criteria"
-msgstr ""
+msgstr "コモンクライテリア向けツールとスクリプト"
 
 #. leap/patterns-desktop/patterns-desktop-books/description
 #. tumbleweed/patterns-desktop/patterns-desktop-books/description
@@ -463,7 +463,7 @@ msgstr "特にラップトップコンピュータで使用するためのツー
 #. leap/patterns-desktop/patterns-desktop-mobile/summary
 #. tumbleweed/patterns-desktop/patterns-desktop-mobile/summary
 msgid "Mobile"
-msgstr ""
+msgstr "モバイル"
 
 #. leap/patterns-desktop/patterns-desktop-multimedia/summary
 #. leap/patterns-desktop/patterns-desktop-multimedia_opt/summary
@@ -878,7 +878,7 @@ msgstr "パッケージ管理 - グラフィカルツール"
 
 #. leap/patterns-ha/summary
 msgid "Patterns for SLE HA"
-msgstr ""
+msgstr "SLE HA用のパターン"
 
 #. leap/patterns-ha/description
 #. leap/patterns-ha-geo/description
@@ -889,21 +889,23 @@ msgid ""
 "This is an internal package that is used to create the patterns as part of "
 "the installation source setup.  Installation of this package does not make "
 "sense."
-msgstr ""
+msgstr "これは、インストールソースの設定の一部としてパターンを作成する際に使用する内部パッケージです。このパッケージは何も意味を持ちません。"
 
 #. leap/patterns-ha-geo/summary
 msgid "Patterns for SLE HA GEO"
-msgstr ""
+msgstr "SLE HA GEO用のパターン"
 
 #. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
 msgid "GEO Clustering for High Availability"
-msgstr ""
+msgstr "高可用性向け GEO クラスタリング"
 
 #. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/description
 msgid ""
 "This pattern provides tools for building multi-site clustering setups based "
 "on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
+"このパターンは、 SUSE Linux Enterprise High-Availability と GEO "
+"拡張をベースにした、マルチサイト型のクラスタ設定を構築するためのツールをインストールします。"
 
 #. leap/patterns-ha-geo/patterns-ha-geo-ha_geo/category
 #. leap/patterns-ha/patterns-ha-ha_sles/category
@@ -919,13 +921,13 @@ msgstr "主要機能"
 
 #. leap/patterns-ha/patterns-ha-ha_sles/summary
 msgid "High Availability"
-msgstr ""
+msgstr "高可用性"
 
 #. leap/patterns-ha/patterns-ha-ha_sles/description
 msgid ""
 "Provide tools to ensure a high degree of operational continuity and reduce "
 "the downtimes of your system."
-msgstr ""
+msgstr "運用の継続性とシステムのダウンタイムの縮小の支援を目的としたツールをインストールします。"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/summary
@@ -934,22 +936,14 @@ msgstr "HPC 基本計算ノード"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node comprises of a minimal software image and mainly runs "
-#| "simulation programs. Services on this node should be reduced to a bare "
-#| "minimum and the node *must* be installed in a automatic manner. The "
-#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC Modularized libraries' should also be installed."
 msgstr ""
-"計算ノードとは最小限のソフトウエアイメージから成る環境で、主にシミュレーショ"
-"ンプログラムを動作させるために使用するものです。このシステムで動作するサービ"
-"スは最小限のものに限られるほか、ノードは自動的に管理されるものでなければなり"
-"ません。 'HPC モジュール型ライブラリ' のパターンもインストールされます。"
+"計算ノードとは最小限のソフトウエアイメージから成る環境で、主にシミュレーションプログラムを動作させるために使用するものです。このシステムで動作するサービス"
+"は最小限のものに限られるほか、ノードは自動的に管理されるものでなければなりません。 'HPC モジュール型ライブラリ' のパターンもインストールされます。"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
 #. leap/patterns-hpc/patterns-hpc-libraries/category
@@ -987,47 +981,30 @@ msgstr "KDE 開発用パッケージ群"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
-#| "addition it includes the GNU compilers and the relevant management "
-#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
-"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが"
-"含まれています。 'HPC モジュール型ライブラリ' のパターンに依存しています。こ"
-"のほか、追加で GNU コンパイラや関連する管理パッケージなどがインストールされま"
-"す。"
+"このパッケージには、 HPC アプリケーションを開発するのに必要な関連パッケージが含まれています。 'HPC モジュール型ライブラリ' "
+"のパターンに依存しています。このほか、追加で GNU コンパイラや関連する管理パッケージなどがインストールされます。"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "HPC モジュール型ライブラリ"
 
 #. leap/patterns-hpc/patterns-hpc-libraries/description
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in an HPC environment. These libraries allow to install several MPI "
-#| "flavors in parallel. In order to use thess libraries one needs to load "
-#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
 "in parallel. In order to use these libraries one needs to load them via the "
 "module command first."
 msgstr ""
-"このパッケージには全てのモジュール化されたライブラリが含まれていて、HPC 環境"
-"内でそれらを利用できるようになっています。これらのライブラリは、同時に複数の "
-"MPI 形式をインストールすることができます。これらのライブラリを使用するには、"
-"あらかじめモジュールコマンドを利用してそれらを読み込んでおく必要があります。"
+"このパッケージには全てのモジュール化されたライブラリが含まれていて、HPC 環境内でそれらを利用できるようになっています。これらのライブラリは、"
+"同時に複数の MPI "
+"形式をインストールすることができます。これらのライブラリを使用するには、あらかじめモジュールコマンドを利用してそれらを読み込んでおく必要があります。"
 
 #. leap/patterns-hpc/patterns-hpc-workload_server/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-workload_server/summary
@@ -1265,16 +1242,16 @@ msgstr "leechcraft ユーティリティ"
 
 #. leap/patterns-lp/summary
 msgid "Patterns for SLE Live Patching"
-msgstr ""
+msgstr "SLE ライブパッチ向けパターン"
 
 #. leap/patterns-lp/patterns-lp-lp_sles/summary
 msgid "Live Patching"
-msgstr ""
+msgstr "ライブパッチ処理"
 
 #. leap/patterns-lp/patterns-lp-lp_sles/description
 #. leap/patterns-rt/patterns-rt-rt_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
-msgstr ""
+msgstr "カーネルを動作中に修正するためのツールと修正が含まれています。"
 
 #. leap/patterns-lxde/patterns-lxde-lxde/summary
 #. tumbleweed/patterns-lxde/patterns-lxde-lxde/summary
@@ -1416,7 +1393,7 @@ msgstr "ネットワークの管理やデバッグを行なうためのツール
 #. leap/patterns-ofed/patterns-ofed-ofed/summary
 #. leap/patterns-ofed/patterns-ofed-ofed-32bit/summary
 msgid "Infiniband (OFED)"
-msgstr ""
+msgstr "Infiniband (OFED)"
 
 #. leap/patterns-ofed/patterns-ofed-ofed/description
 msgid ""
@@ -1425,12 +1402,13 @@ msgid ""
 "Infiniband adapter operational, that is IB kernel modules and basic user "
 "level libraries."
 msgstr ""
+"このパターンは OpenFabrics Enterprise Distribution (OFED) "
+"ソフトウエアの基本パッケージをインストールします。この基本パターンには、 Infiniband アダプタを操作するために必要なパッケージのほか、 IB "
+"カーネルモジュールと基本的なユーザレベルライブラリが含まれています。"
 
 #. leap/patterns-ofed/patterns-ofed-ofed-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing ofed."
-msgstr "base パターンを補完する 32 ビットパターンです。"
+msgstr "ofed パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-office/patterns-office-office/summary
 #. tumbleweed/patterns-office/patterns-office-office/summary
@@ -1444,7 +1422,7 @@ msgstr "LibreOffice を含むデスクトップ環境向けオフィスソフト
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
 msgid "Amazon Web Services - All"
-msgstr ""
+msgstr "Amazon Web サービス - 全て"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
 msgid ""
@@ -1454,10 +1432,13 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Amazon Web Services - Tools)."
 msgstr ""
+"このパターンは、 Amazon Web サービスのコマンドラインインターフェイスツールのほか、インスタンス初期化パッケージとツールが含まれ、動作中のインス"
+"タンス内にあるクラウドフレームワークと通信することができます。このパターンのインストールは推奨されません。用途に応じた特定のパターン (例: "
+"Amazon Web サービス - ツールなど) をインストールしてください。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
 msgid "Amazon Web Services - Instance Initialization"
-msgstr ""
+msgstr "Amazon Web サービス - インスタンス初期化"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
 msgid ""
@@ -1465,30 +1446,36 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. cloud-init)."
 msgstr ""
+"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実行を制御することができる、 Amazon Web サービス初期化パッケージ "
+"(例: cloud-init) をインストールします。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
 msgid "Amazon Web Services - Instance Tools"
-msgstr ""
+msgstr "Amazon Web サービス - インスタンスツール"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
 msgid ""
 "This pattern install the Amazon Web Services instance specific tools which "
 "are used to collect instance metadata (e.g. python-ec2metadata)."
 msgstr ""
+"このパターンは、インスタンスのメタデータを収集する際に使用する、 Amazon Web サービスインスタンス固有のツール (例: python-"
+"ec2metadata) をインストールします。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
 msgid "Amazon Web Services - Tools"
-msgstr ""
+msgstr "Amazon Web サービス - ツール"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
 msgid ""
 "This pattern installs the Amazon Web Services command line interface tools "
 "to communicate with the cloud framework (e.g. aws-cli)."
 msgstr ""
+"このパターンは、クラウドフレームワークと通信するための Amazon Web サービスコマンドラインインターフェイスツール (例: aws-cli) "
+"をインストールします。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
 msgid "Google Cloud Platform - All"
-msgstr ""
+msgstr "Google Cloud プラットフォーム - 全て"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
 msgid ""
@@ -1498,10 +1485,13 @@ msgid ""
 "install this pattern, but instead install one of the use-case specific "
 "patterns (e.g. Google Cloud Platform - Tools)."
 msgstr ""
+"このパターンは、 Google Cloud プラットフォームのコマンドラインインターフェイスツールのほか、インスタンス初期化パッケージとツールが含まれ、動"
+"作中のインスタンス内にあるクラウドフレームワークと通信することができます。このパターンのインストールは推奨されません。用途に応じた特定のパターン (例: "
+"Google Cloud プラットフォーム - ツールなど) をインストールしてください。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
 msgid "Google Cloud Platform - Instance Initialization"
-msgstr ""
+msgstr "Google Cloud プラットフォーム - インスタンス初期化"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
 msgid ""
@@ -1509,30 +1499,36 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. google-daemon)."
 msgstr ""
+"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実行を制御することができる、 Google Cloud "
+"プラットフォーム初期化パッケージ (例: google-daemon) をインストールします。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
 msgid "Google Cloud Platform - Instance Tools"
-msgstr ""
+msgstr "Google Cloud プラットフォーム - インスタンスツール"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
 msgid ""
 "This pattern install the Google Cloud Platform instance specific tools which "
 "are used to collect instance metadata (e.g. python-gcemetadata)."
 msgstr ""
+"このパターンは、インスタンスのメタデータを収集する際に使用する、 Google Cloud プラットフォームインスタンス固有のツール (例: "
+"python-gcemetadata) をインストールします。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
 msgid "Google Cloud Platform - Tools"
-msgstr ""
+msgstr "Google Cloud プラットフォーム - ツール"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
 msgid ""
 "This pattern installs the Google Cloud Platform command line interface tools "
 "to communicate with the cloud framework (e.g. google-cloud-sdk)."
 msgstr ""
+"このパターンは、クラウドフレームワークと通信するための Google Cloud プラットフォームコマンドラインインターフェイスツール (例: "
+"google-cloud-sdk) をインストールします。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
 msgid "Microsoft Azure - All"
-msgstr ""
+msgstr "Microsoft Azure - 全て"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
 msgid ""
@@ -1542,10 +1538,13 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Microsoft Azure - Tools)."
 msgstr ""
+"このパターンは、Microsoft Azure のコマンドラインインターフェイスツールのほか、インスタンス初期化パッケージとツールが含まれ、動作中のインス"
+"タンス内にあるクラウドフレームワークと通信することができます。このパターンのインストールは推奨されません。用途に応じた特定のパターン (例: "
+"Microsoft Azure - ツールなど) をインストールしてください。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
 msgid "Microsoft Azure - Instance Initialization"
-msgstr ""
+msgstr "Microsoft Azure - インスタンス初期化"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
 msgid ""
@@ -1553,6 +1552,8 @@ msgid ""
 "which support the provisioning and running of instances in the cloud "
 "framework (e.g. python-azure-agent)."
 msgstr ""
+"このパターンは、クラウドフレームワーク内でインスタンスのプロビジョニングや実行を制御することができる、 Microsoft Azure 初期化パッケージ "
+"(例: python-azure-agent) をインストールします。"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
@@ -1647,30 +1648,24 @@ msgid "SAP BusinessOne Server Base"
 msgstr ""
 
 #. leap/patterns-sap/patterns-sap-b1/description
-#, fuzzy
-#| msgid "YaST tools for installing your system."
 msgid "Set up the server for installing SAP BusinessOne systems."
-msgstr "システムをインストールするための YaST ツール集です。"
+msgstr "SAP BusinessOne システムをインストールするためのサーバを構築します。"
 
 #. leap/patterns-sap/patterns-sap-hana/summary
 msgid "SAP HANA Server Base"
 msgstr ""
 
 #. leap/patterns-sap/patterns-sap-hana/description
-#, fuzzy
-#| msgid "YaST tools for installing your system."
 msgid "Set up the server for installing SAP HANA systems."
-msgstr "システムをインストールするための YaST ツール集です。"
+msgstr "SAP HANA システムをインストールするためのサーバを構築します。"
 
 #. leap/patterns-sap/patterns-sap-nw/summary
 msgid "SAP NetWeaver Server Base"
 msgstr ""
 
 #. leap/patterns-sap/patterns-sap-nw/description
-#, fuzzy
-#| msgid "YaST tools for installing your system."
 msgid "Set up the server for installing SAP NetWeaver systems."
-msgstr "システムをインストールするための YaST ツール集です。"
+msgstr "SAP NetWeaver システムをインストールするためのサーバを構築します。"
 
 #. leap/patterns-server/patterns-server-dhcp_dns_server/summary
 #. leap/patterns-server/patterns-server-dhcp_dns_server-32bit/summary
@@ -1740,10 +1735,8 @@ msgid ""
 msgstr ""
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing fips."
-msgstr "base パターンを補完する 32 ビットパターンです。"
+msgstr "fips パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
@@ -1757,39 +1750,29 @@ msgstr ""
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 #. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
-#, fuzzy
-#| msgid "File Server"
 msgid "Oracle Server Base"
-msgstr "ファイルサーバ"
+msgstr "Oracle Server ベース"
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/description
 msgid "Set up the server for installing Oracle databases."
 msgstr ""
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing file_server."
 msgid "The 32bit pattern complementing oracle_server."
-msgstr "file_server パターンを補完する 32 ビットパターンです。"
+msgstr "oracle_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
 #. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
-#, fuzzy
-#| msgid "KDE Applications - Games"
 msgid "SAP Application Server Base"
-msgstr "KDE アプリケーション - ゲーム"
+msgstr "SAP アプリケーションサーバベース"
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server/description
-#, fuzzy
-#| msgid "YaST tools for installing your system."
 msgid "Set up the server for installing SAP systems."
-msgstr "システムをインストールするための YaST ツール集です。"
+msgstr "SAP システムをインストールするためのサーバを構築します。"
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing lamp_server."
 msgid "The 32bit pattern complementing sap_server."
-msgstr "lamp_server パターンを補完する 32 ビットパターンです。"
+msgstr "sap_server パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-server/patterns-server-file_server/summary
 #. leap/patterns-server/patterns-server-file_server-32bit/summary
@@ -1970,10 +1953,8 @@ msgid "Web-based enterprise management."
 msgstr ""
 
 #. leap/patterns-wbem/patterns-wbem-WBEM-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing x11."
 msgid "The 32bit pattern complementing WBEM."
-msgstr "x11 パターンを補完する 32 ビットパターンです。"
+msgstr "WBEM パターンを補完する 32 ビットパターンです。"
 
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 #. tumbleweed/patterns-xfce/patterns-xfce-xfce/summary
@@ -2049,17 +2030,13 @@ msgstr "基本的なシステム管理を行なうための YaST ツール集で
 
 #. leap/patterns-yast/patterns-yast-yast2_desktop/summary
 #. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/summary
-#, fuzzy
-#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
-msgstr "KDE ユーティリティ"
+msgstr "YaST デスクトップユーティリティ"
 
 #. leap/patterns-yast/patterns-yast-yast2_desktop/description
 #. tumbleweed/patterns-yast/patterns-yast-yast2_desktop/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
-msgstr "基本的なシステム管理を行なうための YaST ツール集です。"
+msgstr "デスクトップシステムの管理を行なうための YaST ツール集です。"
 
 #. leap/patterns-yast/patterns-yast-yast2_install_wf/summary
 #. tumbleweed/patterns-yast/patterns-yast-yast2_install_wf/summary
@@ -2073,17 +2050,13 @@ msgstr "システムをインストールするための YaST ツール集です
 
 #. leap/patterns-yast/patterns-yast-yast2_server/summary
 #. tumbleweed/patterns-yast/patterns-yast-yast2_server/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Server Utilities"
-msgstr "MATE ユーティリティ"
+msgstr "YaST サーバユーティリティ"
 
 #. leap/patterns-yast/patterns-yast-yast2_server/description
 #. tumbleweed/patterns-yast/patterns-yast-yast2_server/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
-msgstr "基本的なシステム管理を行なうための YaST ツール集です。"
+msgstr "サーバシステムの管理を行なうための YaST ツール集です。"
 
 #. tumbleweed/MicroOS-release/summary
 #. tumbleweed/MicroOS-release/MicroOS-release-appliance/summary
@@ -2095,10 +2068,8 @@ msgid "openSUSE MicroOS"
 msgstr "openSUSE MicroOS"
 
 #. tumbleweed/patterns-base/patterns-base-basesystem/summary
-#, fuzzy
-#| msgid "Minimal Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
-msgstr "最小基本システム (base に対する別名のパターン)"
+msgstr "基本システム (base に対する別名のパターン)"
 
 #. tumbleweed/patterns-base/patterns-base-bootloader/summary
 msgid "Bootloader"
@@ -2109,24 +2080,14 @@ msgid "This pattern holds files required for booting the system"
 msgstr ""
 
 #. tumbleweed/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
-msgstr ""
-"これは openSUSE の最小限ランタイムシステムです。ログインしてシェルを起動する"
-"までの仕組みだけが用意されています。主にアプライアンスのベースとなる目的で作"
-"られているものです。"
+msgstr "これは最小限のランタイムシステムです。主にアプライアンスのベースとなる目的で作られているものです。"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
-#, fuzzy
-#| msgid "SELinux Support"
 msgid "SELinux"
-msgstr "SELinux サポート"
+msgstr "SELinux"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/description
 msgid ""
@@ -2142,12 +2103,10 @@ msgid "Ceph base"
 msgstr "基本 Ceph"
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
-#, fuzzy
-#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
 msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
-msgstr "Ceph, Rook, Ceph CSI ドライバパッケージの基礎部分を提供します。"
+msgstr "Ceph, Rook, Ceph CSI ドライバパッケージとコンテナの基礎部分を提供します。"
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/category
@@ -2185,10 +2144,8 @@ msgstr ""
 "パッケージをインストールします。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
-#, fuzzy
-#| msgid "kubeadm Stack"
 msgid "Kubernetes kubeadm Stack"
-msgstr "kubeadm スタック"
+msgstr "Kubernetes kubeadm スタック"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
 msgid ""
@@ -2213,15 +2170,9 @@ msgid "Kubic Admin Node"
 msgstr "Kubic 管理ノード"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
-#, fuzzy
-#| msgid ""
-#| "This pattern installs the the software required for an openSUSE Kubic "
-#| "Admin Node."
 msgid ""
 "This pattern installs the software required for an openSUSE Kubic Admin Node."
-msgstr ""
-"このパターンは、 openSUSE Kubic 管理ノードに必要なソフトウエアをインストール"
-"します。"
+msgstr "このパターンは、 openSUSE Kubic 管理ノードに必要なソフトウエアをインストールします。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_loadbalancer/summary
 msgid "Kubic Loadbalancer Node"
@@ -2344,43 +2295,28 @@ msgstr ""
 "既定のパッケージを提供します。"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
-msgstr "XFCE デスクトップ環境向けの基本パッケージ"
+msgstr "MicroOS 上のデスクトップ向けの汎用パッケージ"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for openSUSE MicroOS Desktops."
-msgstr ""
-"クラウド内で openSUSE MicroOS を有効化するのに必要な各種パッケージです。"
+msgstr "openSUSE MicroOS デスクトップ向けの各種パッケージです。"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
-#, fuzzy
-#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
-msgstr "GNOME デスクトップ"
+msgstr "MicroOS GNOME デスクトップ"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
-msgstr ""
-"クラウド内で openSUSE MicroOS を有効化するのに必要な各種パッケージです。"
+msgstr "openSUSE MicroOS デスクトップを GNOME と共に使用するのに必要な各種パッケージです。"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
-#, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "MicroOS KDE Plasma Desktop"
-msgstr "KDE Plasma 5 デスクトップ"
+msgstr "MicroOS KDE Plasma デスクトップ"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
-msgstr ""
-"クラウド内で openSUSE MicroOS を有効化するのに必要な各種パッケージです。"
+msgstr "openSUSE MicroOS デスクトップを KDE Plasma と共に使用するのに必要な各種パッケージです"
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/summary
 msgid "Hardware Support"
@@ -2439,10 +2375,8 @@ msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr ""
 
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Base Utilities"
-msgstr "MATE ユーティリティ"
+msgstr "YaST 基本ユーティリティ"
 
 #~ msgid "Base System"
 #~ msgstr "基本システム"
