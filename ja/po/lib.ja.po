@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-03-18 04:56+0000\n"
+"PO-Revision-Date: 2021-03-18 11:56+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "lib-master/ja/>\n"
@@ -8681,6 +8681,22 @@ msgid ""
 "AFUs. AFU MMIO space can be mapped into the current process memory, and AFUs "
 "can be configured and controlled via MMIO reads and writes."
 msgstr ""
+"コヒーレントアクセラレータインターフェイスはアクセラレータ (FPGA などのデバイス) と POWER "
+"システムとの間でコヒーレントな接続ができるようにするための仕組みです。ここでの「コヒーレント」とは、アクセラレータと CPU "
+"とが同一のシステムメモリに直接アクセスできることを指すほか、同様に効率的なアドレスを行なうことを指します。 IBM "
+"社はコヒーレントアクセラレータプロセッサインターフェイス (CAPI) としてこれを規定しています。 Linux の世界では、 ISDN CAPI "
+"サブシステムとの混同を避けるため、 CXL と表記します。\n"
+"\n"
+"Linux カーネルはデバイスの POWER サービスレイヤ (PSL) と対話します。"
+"ユーザ側のアプリケーションはデバイスのアクセラレータファンクションユニット (AFU) "
+"と対話を行ないます。コヒーレントアクセラレータインターフェイスに関する詳細は、 Linux カーネルソース内の Documentation/"
+"powerpc/cxl.txt をお読みください。\n"
+"\n"
+"CXL ライブラリはユーザ側のアプリケーションに対して、コヒーレントなデバイス接続機能を提供します。 CXL "
+"デバイスは列挙可能な仕組みで、提供される機能についても問い合わせることができます。 AFU "
+"は開いて現在のプロセスに割り当てたり、起動したりすることができます。 AFU 固有の Work Element Descriptors (WED) "
+"で指定できるジョブは、 AFU に送信して実行させることができます。 AFU の MMIO 領域は、現在のプロセスのメモリにマップすることができるほか、 "
+"MMIO の読み書きで AFU を設定したり制御したりすることができます。"
 
 #. leap/libdaemon/libdaemon-devel/summary
 #. leap/libdaemon/libdaemon0/summary
@@ -9271,7 +9287,7 @@ msgstr "信頼性のあるログライブラリ"
 msgid ""
 "A library containing support routines for calculating with and printing "
 "decimal floating point values."
-msgstr ""
+msgstr "10 進数の小数点値を計算したり表示したりするためのルーチンを含むライブラリです。"
 
 #. leap/libdfp/libdfp-devel-static/summary
 #, fuzzy
@@ -9283,7 +9299,7 @@ msgstr "ファイルシステム事前割り当てインターフェイスライ
 msgid ""
 "A static library containing support routines for calculating with and "
 "printing decimal floating point values."
-msgstr ""
+msgstr "10 進数の小数点値を計算したり表示したりするためのルーチンを含む静的なライブラリです。"
 
 #. leap/libdiscid/libdiscid-devel/summary
 #. leap/libdiscid/libdiscid0/summary
@@ -10189,6 +10205,8 @@ msgid ""
 "programming to be used for communicating with devices implementing the E1.31 "
 "(sACN) protocol."
 msgstr ""
+"E1.31 (sACN) プロトコルを実行するデバイスとの間で通信を行なう際に使用する、クライアントおよびサーバプログラム向けパケット API の C/"
+"C++ ライブラリです。"
 
 #. leap/libe131/libe131-devel/summary
 #. tumbleweed/libe131/libe131-devel/summary
@@ -17048,6 +17066,9 @@ msgid ""
 "This provides  equivalent functionality to the catalog files supported in "
 "Microsoft Windows."
 msgstr ""
+"このライブラリは gzip で圧縮された JSON カタログファイルを読み書きする機能を提供するもので、各ファイルに対する GPG, PKCS-7, "
+"SHA-256 チェックサムなどを保存することができます。このライブラリは Microsoft Windows "
+"でサポートされているカタログファイルと同等の機能を提供します。"
 
 #. leap/libjpeg-turbo/summary
 #. leap/libjpeg62-turbo/summary
@@ -18219,7 +18240,7 @@ msgstr ""
 
 #. leap/libldap-legacy/summary
 msgid "Package to provide libldap-2.4"
-msgstr ""
+msgstr "libldap-2.4 を提供するパッケージ"
 
 #. leap/liblightgrep/liblightgrep-devel/summary
 #. tumbleweed/liblightgrep/liblightgrep-devel/summary
@@ -18461,6 +18482,10 @@ msgid ""
 "In addition, this library offers a number of functions to create, manage and "
 "remove generic lockfiles."
 msgstr ""
+"このライブラリは SysV システムにおける -imail 内に存在する様々な機能を実装しています。これらの機能は、 /var/mail "
+"のような標準メールボックスのロック (施錠) を行なうよう設計されています。\n"
+"\n"
+"これに加えて、このライブラリは汎用的なロックファイルを作成／管理／削除する様々な機能を提供しています。"
 
 #. leap/liblogging/liblogging-devel/summary
 #. tumbleweed/liblogging/liblogging-devel/summary
@@ -18870,7 +18895,7 @@ msgstr ""
 #. leap/libluksde/libluksde-tools/description
 #. tumbleweed/libluksde/libluksde-tools/description
 msgid "libluksde-tools is a project to access LUKS Disk Encrypted volumes."
-msgstr ""
+msgstr "libluksde-tools は LUKS ディスク暗号化ボリュームにアクセスするためのプロジェクトです。"
 
 #. leap/libluksde/libluksde1/description
 #. tumbleweed/libluksde/libluksde1/description
@@ -26640,6 +26665,9 @@ msgid ""
 "\n"
 "This package is for RetroArch/Libretro front-end."
 msgstr ""
+"FFmpeg はオーディオやビデオ、サブタイトルや関連するメタデータなどに対応した、マルチメディアコンテンツの処理ライブラリおよびツール集です。\n"
+"\n"
+"このパッケージには RetroArch/Libretro フロントエンドが含まれています。"
 
 #. leap/libretro-flycast/summary
 #. tumbleweed/libretro-flycast/summary
@@ -27184,6 +27212,10 @@ msgid ""
 "The librtasevent shared library provides users with a set of definitions and "
 "common routines useful in parsing and dumping the contents of RTAS events."
 msgstr ""
+"librtas 共有ライブラリは、特定の RTAS コールを生成することのできるインターフェイスを提供するユーザスペースライブラリです。このライブラリは "
+"RTAS のユーザモジュールと RTAS のシステムコールのいずれかを利用して、カーネルを直接呼び出すことができます。\n"
+"\n"
+"librtasevent 共有ライブラリは RTAS イベントの内容を処理したりダンプしたりする際に便利な、各種の定義や汎用ルーチンなどを提供します。"
 
 #. leap/librtprocess/librtprocess-devel/summary
 #. tumbleweed/librtprocess/librtprocess-devel/summary
@@ -27201,6 +27233,9 @@ msgid ""
 "\n"
 "This package holds the development files."
 msgstr ""
+"これは RawTherapee の高度に最適化された処理ルーチンを他の FOSS 写真編集ソフトウエアに提供することを目指しているプロジェクトです。\n"
+"\n"
+"このパッケージには開発用のファイルが含まれています。"
 
 #. leap/librtprocess/librtprocess0/summary
 #. tumbleweed/librtprocess/librtprocess0/summary
@@ -27218,6 +27253,9 @@ msgid ""
 "\n"
 "This package holds the shared library."
 msgstr ""
+"これは RawTherapee の高度に最適化された処理ルーチンを他の FOSS 写真編集ソフトウエアに提供することを目指しているプロジェクトです。\n"
+"\n"
+"このパッケージには共有ライブラリが含まれています。"
 
 #. leap/librubberband/librubberband-devel/summary
 #. tumbleweed/librubberband/librubberband-devel/summary
@@ -27469,7 +27507,7 @@ msgstr ""
 #. leap/libsearpc/libsearpc1/summary
 #. tumbleweed/libsearpc/libsearpc1/summary
 msgid "Library to handle the serialization/deserialization part of RPC"
-msgstr ""
+msgstr "RPC のシリアライズ／デシリアライズパートを処理するライブラリ"
 
 #. leap/libsearpc/libsearpc1/description
 #. tumbleweed/libsearpc/libsearpc1/description
@@ -27483,6 +27521,12 @@ msgid ""
 "RPC function. Each RPC function defined in the server side should take an "
 "extra GError argument to report error."
 msgstr ""
+"Searpc は GObject システムをベースにした単純 C 言語 RPC フレームワークです。 Searpc は RPC "
+"のうちシリアライズとデシリアライズの部分を処理し、それ以外はユーザ側での実装にゆだねられています。\n"
+"\n"
+"シリアライズ／デシリアライズの仕組みは JSON 形式で、 json-glib ライブラリを介して提供されています。シリアライズされた JSON "
+"オブジェクトは RPC の実行後、サーバからクライアント側に返却されます。サーバ側で規定されたそれぞれの RPC 機能では、エラー報告時に追加の "
+"GError パラメータを設定する必要があります。"
 
 #. leap/libseccomp/libseccomp-devel/summary
 #. tumbleweed/libseccomp/libseccomp-devel/summary
@@ -27923,7 +27967,7 @@ msgstr ""
 #. leap/libservicelog/summary
 #. leap/libservicelog/libservicelog-1_1-1/summary
 msgid "Servicelog Database and Library"
-msgstr ""
+msgstr "サービスログデータベースおよびライブラリ"
 
 #. leap/libservicelog/description
 #. leap/libservicelog/libservicelog-1_1-1/description
@@ -27933,6 +27977,8 @@ msgid ""
 "for the logging of serviceable and informational events, and for the logging "
 "of service procedures that have been performed upon the system."
 msgstr ""
+"libservicelog パッケージには、システムサービスに関連するイベントを保存するためのデータベースを作成したり、管理したりする機能が含まれています"
+"。このデータベースでは、サービス可能イベントと情報イベントの記録、およびシステムで実行されたサービス手順のログ記録を行なうことができます。"
 
 #. leap/libservicelog/libservicelog-devel/summary
 #, fuzzy
@@ -28396,7 +28442,7 @@ msgstr "文字列ライブラリ"
 msgid ""
 "A user-mode networking library used by virtual machines, containers or "
 "various tools."
-msgstr ""
+msgstr "仮想マシンやコンテナ、その他のツールで使用されるユーザモードネットワークライブラリです。"
 
 #. leap/libsmbios/libsmbios-devel/summary
 #. tumbleweed/libsmbios/libsmbios-devel/summary
@@ -36806,6 +36852,13 @@ msgid ""
 "Herrmann <aherrman@de.ibm.com>     Stefan Voelkel <Stefan.Voelkel@millenux."
 "com>"
 msgstr ""
+"zfcp デバイスドライバ zSeries 向けの Linux での FCP デバイスのドライバです。 zfcp デバイスドライバのうち、 FC-HBA "
+"の全体実装は zfcp HBA API と呼ばれています。これは FC-HBA 内での API を提供する共有ライブラリです。\n"
+"\n"
+"作者:\n"
+"--------     Sven Schuetz <sven@de.ibm.com> (active maintainer)     Andreas "
+"Herrmann <aherrman@de.ibm.com>     Stefan Voelkel "
+"<Stefan.Voelkel@millenux.com>"
 
 #. leap/libzhuyin/libzhuyin-1_1-data/summary
 msgid "Data files for libzhuyin 1.1"
@@ -37131,7 +37184,7 @@ msgstr ""
 #. leap/liblockfile/lockfile/summary
 #. tumbleweed/liblockfile/lockfile/summary
 msgid "Support and cli utilities based on liblockfile"
-msgstr ""
+msgstr "liblockfile をベースにしたサポートおよび cli ユーティリティ"
 
 #. leap/liblockfile/lockfile/description
 #. tumbleweed/liblockfile/lockfile/description
