@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-03-19 16:56+0000\n"
+"PO-Revision-Date: 2021-03-20 00:56+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "lib-master/ja/>\n"
@@ -42428,6 +42428,10 @@ msgid ""
 "This package requires the NVIDIA driver (>= 340.29) to be installed "
 "separately."
 msgstr ""
+"nvidia-container ライブラリは、NVIDIA ハードウェアを利用してGNU/Linux コンテナを設定するためのインターフェイスを提供しま"
+"す。この実装はいくつかのカーネルサブシステムに依存しており、コンテナランタイムに依存しないように設計されています。\n"
+"\n"
+"このパッケージでは、NVIDIA ドライバ(>= 340.29)を別途インストールする必要があります。"
 
 #. tumbleweed/libnvidia-container/libnvidia-container-tools/summary
 msgid "NVIDIA container runtime library (command-line tools)"
@@ -42441,6 +42445,10 @@ msgid ""
 "\n"
 "This package contains command-line tools that facilitate using the library."
 msgstr ""
+"nvidia-container ライブラリは、NVIDIA ハードウェアを利用してGNU/Linux コンテナを設定するためのインターフェイスを提供しま"
+"す。この実装はいくつかのカーネルサブシステムに依存しており、コンテナランタイムに依存しないように設計されています。\n"
+"\n"
+"このパッケージには、ライブラリの使用を容易にするコマンドラインツールが含まれています。"
 
 #. tumbleweed/libnvidia-container/libnvidia-container1/summary
 msgid "NVIDIA container runtime library"
@@ -42464,7 +42472,7 @@ msgstr "Openmpt の libmodplug"
 
 #. tumbleweed/libopenmpt-modplug/libopenmpt_modplug1/description
 msgid "The ModPlug mod file playing library (emulated via libopenmpt)."
-msgstr ""
+msgstr "ModPlug mod ファイル再生ライブラリ (libopenmpt 経由でエミュレート)。"
 
 #. tumbleweed/libosip2/libosip2-12/summary
 msgid "Implementation of SIP (RFC 3261)"
@@ -42534,6 +42542,10 @@ msgid ""
 "filling modes. The clipping code is based on the Vatti clipping algorithm, "
 "and outperforms other clipping libraries."
 msgstr ""
+"このライブラリは、主に 2D ポリゴンに対してブール値のクリッピング操作 (交差、和、差およびXOR) を実行します。また、ポリゴンオフセットも実行します"
+"。このライブラリは、複雑な(自己交差)ポリゴン、穴のあるポリゴン、およびオーバーラップする同一直線上のエッジを持つポリゴンを処理します。クリッピングの入力"
+"ポリゴンは、偶数奇数、ゼロ以外、正および負の塗りつぶしモードを使用できます。クリッピングコードは Vatti "
+"クリッピングアルゴリズムに基づいており、他のクリッピングライブラリよりも優れています。"
 
 #. tumbleweed/libproxy-plugins/libproxy-sharp/summary
 msgid ".Net bindings for libproxy"
@@ -42777,7 +42789,7 @@ msgstr ""
 msgid ""
 "Library with algorithms for computing finite and finitely presented "
 "semigroups"
-msgstr ""
+msgstr "有限および有限に提示された半群を計算するためのアルゴリズムをもつライブラリ"
 
 #. tumbleweed/libsemigroups/libsemigroups1/description
 msgid ""
@@ -42789,6 +42801,10 @@ msgid ""
 "Knuth-Bendix algorithm for finitely presented semigroups and monoids;   * "
 "the Schreier-Sims algorithm for permutation groups."
 msgstr ""
+"有限および有限に与えられた半群を計算するためのいくつかのアルゴリズムの実装を含むC++11ライブラリ。\n"
+"\n"
+"*有限半群を計算するためのFroidure-Pinアルゴリズム *有限に提示された半群およびモノイドに対する Todd-Coxeter アルゴリズム "
+"*有限に提示された半群およびモノイドに対するKnuth-Bendix アルゴリズム *置換群に対する Schreier-Sims アルゴリズム。"
 
 #. tumbleweed/libsharp/libsharp-devel/summary
 msgid "Headers and devel files for libsharp"
@@ -43052,7 +43068,7 @@ msgstr ""
 #. tumbleweed/libupnpp/libupnpp9/summary
 #. tumbleweed/libupnpp/libupnpp9/description
 msgid "Library providing a higher level C++ API over libnpupnp or libupnp"
-msgstr ""
+msgstr "libnpupnp やl ibupnp よりも高いレベルの C++ API を提供するライブラリ"
 
 #. tumbleweed/libusbmuxd/libusbmuxd-tools/summary
 msgid "An example tools to forward localhost ports to iOS devices"
@@ -43206,7 +43222,7 @@ msgstr ""
 
 #. tumbleweed/libwhich/summary
 msgid "Which for Dynamic Libraries"
-msgstr ""
+msgstr "ダイナミックライブラリ用 which"
 
 #. tumbleweed/libwhich/description
 msgid "A command line utility to locate shared libraries by name."
@@ -43231,7 +43247,7 @@ msgstr "xkbcommon 提供のユーティリティ"
 
 #. tumbleweed/libxkbcommon/libxkbcommon-tools/description
 msgid "xkbcommon tools for introspectino and debugging."
-msgstr ""
+msgstr "introspectino とデバッグ用の xkbcommon ツール。"
 
 #. tumbleweed/libxkbcommon/libxkbregistry-devel/summary
 msgid "Header files for xkbregistry"
@@ -43245,12 +43261,16 @@ msgid ""
 "This is aimed at tools that provide a listing of available keyboard layouts "
 "to the user."
 msgstr ""
+"libxkbregistryは C のルールセットで使用可能な XKB モデル、レイアウト、およびバリエーションをリストしたCライブラリです。\n"
+"\n"
+"これは、使用可能なキーボードレイアウトのリストをユーザに提供するツールを対象としています。"
 
 #. tumbleweed/libxkbcommon/libxkbregistry0/description
 msgid ""
 "libxkbregistry is a C library that lists available XKB models, layouts and "
 "variants for a given ruleset."
 msgstr ""
+"libxkbregistryは C のルールセットで使用可能な XKB モデル、レイアウト、およびバリエーションをリストした C ライブラリです。"
 
 #. tumbleweed/libxklavier/libxklavier-devel/summary
 msgid "Development files for libxklavier"
