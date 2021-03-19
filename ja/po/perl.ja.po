@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-03-18 11:56+0000\n"
+"PO-Revision-Date: 2021-03-19 11:56+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "perl-master/ja/>\n"
@@ -20566,6 +20566,24 @@ msgid ""
 "found will always be the lowest-indexed element in a   range of   non-unique "
 "keys."
 msgstr ""
+"分割統治法を使用する並べ替え済みリストのバイナリ検索です。それぞれの列挙で領域を半分に分割していき、結果が見つかるまで繰り替えし処理を行ないます。"
+"バイナリ検索での計算の複雑性は O(log n) です。\n"
+"\n"
+"このモジュールは性能を改善する目的で、 XS "
+"コードを利用したバイナリ検索アルゴリズムをいくつか実装しています。このモジュールを直接使用してもかまいませんし、一般的な List::"
+"BinarySearch のプラグインとして使用してもかまいません。\n"
+"\n"
+"このモジュールにおけるバイナリ検索のアルゴリズムは _Deferred Detection_ としても知られていて、この _Deferred "
+"Detection_ は安定的な検索を提供します。安定的な検索アルゴリズムでは、不安定な検索アルゴリズムと比較すると下記のような特性があります:\n"
+"* * ユニークではないキーが存在する場合、バイナリ検索は常に該当する要素の中にある最初の値を返すことになります。不安定なバイナリ検索では、最初のもの以外"
+"を返す場合があります。\n"
+"* * 最悪の場合でも最良の場合でも、計算の複雑性は常に O(log n) になります。不安定な検索では目的の値が見つかった時点で停止しますが、"
+"最悪の場合 O(log n) になります。実用的な観点では通常意味はありません。\n"
+"* * 安定的なバイナリ検索では列挙ごとに 1 つの対に対して 1 回の関係比較が行なわれますが、不安定なバイナリ検索では 2 回の比較が必要になります。"
+"\n"
+"* * 全体的な結果では、不安定なバイナリ検索のほうが \"最適な場合\" の性能が高くなりますが、安定したバイナリ検索の場合のほうが比較回数が少なくなる"
+"という事実から、最悪の場合の性能が向上することになります。また、平均的にはほぼ同等の性能になります。\n"
+"安定的な検索では \"最適な場合\" の性能を少し無駄にしてしまう代わりに、ユニークではないキーが存在する場合でも最初の要素を返すことが保証されます。"
 
 #. leap/perl-List-MoreUtils/summary
 #. leap/perl-List-SomeUtils/summary
@@ -22530,22 +22548,6 @@ msgstr "ジョブキュー"
 
 #. leap/perl-Minion/description
 #. tumbleweed/perl-Minion/description
-#, fuzzy
-#| msgid ""
-#| "Minion is a high performance job queue for the Perl programming language, "
-#| "with support for multiple named queues, priorities, delayed jobs, job "
-#| "dependencies, job progress, job results, retries with backoff, rate "
-#| "limiting, unique jobs, statistics, distributed workers, parallel "
-#| "processing, autoscaling, remote control, at https://mojolicious.org admin "
-#| "ui, resource leak protection and multiple backends (such as at https://"
-#| "www.postgresql.org).\n"
-#| "\n"
-#| "Job queues allow you to process time and/or computationally intensive "
-#| "tasks in background processes, outside of the request/response lifecycle "
-#| "of web applications. Among those tasks you'll commonly find image "
-#| "resizing, spam filtering, HTTP downloads, building tarballs, warming "
-#| "caches and basically everything else you can imagine that's not super "
-#| "fast."
 msgid ""
 "Minion is a high performance job queue for the Perl programming language, "
 "with support for multiple named queues, priorities, delayed jobs, job "
@@ -22561,18 +22563,14 @@ msgid ""
 "filtering, HTTP downloads, building tarballs, warming caches and basically "
 "everything else you can imagine that's not super fast."
 msgstr ""
-"Minion は Perl プログラミング言語における高性能なジョブキューです。複数の名前"
-"付きキューに対応しているほか、優先順位や遅延ジョブ、ジョブ同士の依存関係や進"
-"捗管理、結果やバックオフ付きの再試行、ユニークジョブや統計情報、分散ワーカー"
-"や並行処理、自動スケールやリモートコントロール (https://mojolicious.org) 、管"
-"理 UI やリソースリーク検出、複数バックエンド (https://www.postgresql.org な"
-"ど) の機能があります。 \n"
+"Minion は Perl プログラミング言語における高性能なジョブキューです。複数の名前付きキューに対応しているほか、優先順位や遅延ジョブ、ジョブ同士の"
+"依存関係や進捗管理、結果やバックオフ付きの再試行、ユニークジョブやジョブの有効期限設定、統計情報や分散ワーカー、並行処理や自動スケール、"
+"リモートコントロール (https://mojolicious.org) 、管理 UI やリソースリーク検出、複数バックエンド (https://"
+"www.postgresql.org など) の機能があります。 \n"
 "\n"
-"ジョブキューは裏での一括処理を管理する仕組みで、 Web アプリケーションのリクエ"
-"スト／レスポンスとは別枠で動作するものです。これらのタスクには例えば、画像の"
-"サイズ変更や SPAM のフィルタリング、 HTTP のダウンロードや tar ボールのビル"
-"ド、キャッシュの再活性化など、あらゆることを非常に高速に処理することができま"
-"す。"
+"ジョブキューは裏での一括処理を管理する仕組みで、 Web アプリケーションのリクエスト／レスポンスとは別枠で動作するものです。これらのタスクには例えば、"
+"画像のサイズ変更や SPAM のフィルタリング、 HTTP のダウンロードや tar "
+"ボールのビルド、キャッシュの再活性化など、あらゆることを非常に高速に処理することができます。"
 
 #. leap/perl-Minion-Backend-SQLite/summary
 #. tumbleweed/perl-Minion-Backend-SQLite/summary
@@ -23747,7 +23745,7 @@ msgstr ""
 #. leap/perl-Mojolicious-Plugin-OAuth2/summary
 #. tumbleweed/perl-Mojolicious-Plugin-OAuth2/summary
 msgid "Auth against OAuth2 APIs"
-msgstr ""
+msgstr "OAuth2 API に対する認証"
 
 #. leap/perl-Mojolicious-Plugin-OAuth2/description
 #. tumbleweed/perl-Mojolicious-Plugin-OAuth2/description
@@ -23762,6 +23760,13 @@ msgid ""
 "\n"
 "   $ mojo version"
 msgstr ""
+"この Mojolicious プラグインは、 http://oauth.net プロバイダに対して簡単に認証を行なうことができるプラグインです。いくつかの"
+"著名なプロバイダに対する設定が提供されていますが、それ以外についても簡単に追加することができます。\n"
+"\n"
+"なお、 OAuth2 を使用するには https が必要となりますので、 https に対応するための追加の Mojolicious "
+"依存関係も合わせて使用する必要があります。また、 IO::Socket::SSL がインストールされているかどうかもご確認ください。\n"
+"\n"
+"   $ mojo version"
 
 #. leap/perl-Mojolicious-Plugin-RenderFile/summary
 #. tumbleweed/perl-Mojolicious-Plugin-RenderFile/summary
@@ -41061,29 +41066,6 @@ msgstr "YAML 1.2 プロセッサ"
 
 #. leap/perl-YAML-PP/description
 #. tumbleweed/perl-YAML-PP/description
-#, fuzzy
-#| msgid ""
-#| "YAML::PP is a modern, modular YAML processor.\n"
-#| "\n"
-#| "It aims to support 'YAML 1.2' and 'YAML 1.1'. See http://yaml.org/.\n"
-#| "\n"
-#| "YAML is a serialization language. The YAML input is called \"YAML Stream"
-#| "\". A stream consists of one or more \"Documents\", seperated by a line "
-#| "with a document start marker '---'. A document optionally ends with the "
-#| "document end marker '...'.\n"
-#| "\n"
-#| "This allows to process continuous streams additionally to a fixed input "
-#| "file or string.\n"
-#| "\n"
-#| "The YAML::PP frontend will currently load all documents, and return only "
-#| "the last if called with scalar context.\n"
-#| "\n"
-#| "The YAML backend is implemented in a modular way that allows to add "
-#| "custom handling of YAML tags, perl objects and data types. The inner API "
-#| "is not yet stable. Suggestions welcome.\n"
-#| "\n"
-#| "You can check out all current parse and load results from the yaml-test-"
-#| "suite here: https://perlpunk.github.io/YAML-PP-p5/test-suite.html"
 msgid ""
 "YAML::PP is a modular YAML processor.\n"
 "\n"
@@ -41108,29 +41090,24 @@ msgid ""
 "You can check out all current parse and load results from the yaml-test-"
 "suite here: https://perlpunk.github.io/YAML-PP-p5/test-suite.html"
 msgstr ""
-"YAML::PP はモダンでモジュール型の YAML プロセッサです。\n"
+"YAML::PP はモジュール型の YAML プロセッサです。\n"
 "\n"
-"'YAML 1.2' と 'YAML 1.1' をサポートするように作られています。詳しくは http://"
-"yaml.org/ をお読みください。\n"
+"'YAML 1.2' と 'YAML 1.1' をサポートするように作られています。詳しくは http://yaml.org/ をお読みください。"
+"いくつかの (稀な) 書式には対応しておりませんので、下記をお読みください。\n"
 "\n"
-"YAML はシリアライズ化のための言語です。 YAML の入力は \"YAML ストリーム\" と"
-"呼ばれます。ストリームには 1 つもしくはそれ以上の \"ドキュメント\" が含まれ、"
-"ドキュメントの区切りマーカーである '---' で行を区切って出力します。ドキュメン"
-"トは終了マーカーである '...' で終わることもあります。\n"
+"YAML はシリアライズ化のための言語です。 YAML の入力は \"YAML ストリーム\" と呼ばれます。ストリームには 1 つもしくはそれ以上の "
+"\"ドキュメント\" が含まれ、ドキュメントの区切りマーカーである '---' で行を区切って出力します。ドキュメントは終了マーカーである '...' "
+"で終わることもあります。\n"
 "\n"
-"このモジュールは連続したストリームを処理して、固定の入力ファイルや文字列に変"
-"換します。\n"
+"このモジュールは連続したストリームを処理して、固定の入力ファイルや文字列に変換します。\n"
 "\n"
-"YAML:PP フロントエンドは現時点では全てのドキュメントを読み込みますが、スカ"
-"ラーコンテキストでは最後に処理したもののみを返します。\n"
+"YAML:PP フロントエンドは現時点では全てのドキュメントを読み込みますが、スカラーコンテキストでは最初に処理したもののみを返します。\n"
 "\n"
-"YAML のバックエンドはモジュール型の構造で、 YAML の独自タグや Perl オブジェク"
-"ト、データタイプなどを追加できるようになっています。ただし内部 API は不安定で"
-"あることに注意してください。また、提案があれば歓迎します。\n"
+"YAML のバックエンドはモジュール型の構造で、 YAML の独自タグや Perl オブジェクト、データタイプなどを追加できるようになっています。"
+"ただし内部 API は不安定であることに注意してください。また、提案があれば歓迎します。\n"
 "\n"
-"このほか、 yaml-test-suite で処理と読み込みの結果を確認することもできます。詳"
-"しくは https://perlpunk.github.io/YAML-PP-p5/test-suite.html をお読みくださ"
-"い。"
+"このほか、 yaml-test-suite で処理と読み込みの結果を確認することもできます。詳しくは https://perlpunk.github."
+"io/YAML-PP-p5/test-suite.html をお読みください"
 
 #. leap/perl-YAML-Syck/summary
 msgid "Fast, lightweight YAML loader and dumper"
@@ -41756,10 +41733,8 @@ msgstr ""
 
 #. leap/perl/perl-core-DB_File-32bit/summary
 #. leap/perl/perl-core-DB_File/summary
-#, fuzzy
-#| msgid "Perl interface to GnuPG"
 msgid "Perl 5 interface to Berkeley DB"
-msgstr "GnuPG に対する Perl インターフェイス"
+msgstr "Berkeley DB に対する Perl 5 インターフェイス"
 
 #. leap/perl/perl-core-DB_File-32bit/description
 #. leap/perl/perl-core-DB_File/description
@@ -42681,7 +42656,7 @@ msgstr "wxWidgets バイナリの構築／検出／使用"
 
 #. tumbleweed/perl-Any-URI-Escape/summary
 msgid "Load URI::Escape::XS preferentially over URI::Escape"
-msgstr ""
+msgstr "URI::Escape よりも URI::Escape::XS を優先して読み込むモジュール"
 
 #. tumbleweed/perl-Any-URI-Escape/description
 msgid ""
@@ -42691,6 +42666,10 @@ msgid ""
 "The insides of this module aren't completely shaken out yet, so patches "
 "welcome."
 msgstr ""
+"URI::Escape は素晴らしいモジュールですが、 URI::Escape::XS のほうがより高速に動作します。このモジュールは "
+"URI::Escape::XS を読み込んで、 XS がインストールされていれば 2 種類の最も一般的なメソッドを取り込みます。\n"
+"\n"
+"このモジュールの内部はまだ完全にはできあがっていません。パッチ歓迎です。"
 
 #. tumbleweed/perl-AnyEvent/summary
 msgid "The DBI of event loop programming"
@@ -42698,13 +42677,15 @@ msgstr "イベントループプログラミングの DBI"
 
 #. tumbleweed/perl-AnyEvent-Connector/summary
 msgid "Tcp_connect with Transparent Proxy Handling"
-msgstr ""
+msgstr "透過型プロキシ処理機能を持つ tcp_connect"
 
 #. tumbleweed/perl-AnyEvent-Connector/description
 msgid ""
 "AnyEvent::Connector object has 'tcp_connect' method compatible with that "
 "from AnyEvent::Socket, and it handles proxy settings transparently."
 msgstr ""
+"AnyEvent::Connector オブジェクトには 'tcp_connect' メソッドがあり、これは AnyEvent::Socket "
+"からのものと互換性があります。これにより、プロキシ設定を透過的に処理することができます。"
 
 #. tumbleweed/perl-AnyEvent-HTTP/summary
 #, fuzzy
@@ -42714,7 +42695,7 @@ msgstr "シンプルながらも非ブロック型の http/https クライアン
 
 #. tumbleweed/perl-AnyEvent-WebSocket-Client/summary
 msgid "WebSocket client for AnyEvent"
-msgstr ""
+msgstr "AnyEvent 向け WebSocket クライアント"
 
 #. tumbleweed/perl-AnyEvent-WebSocket-Client/description
 msgid ""
@@ -42729,10 +42710,18 @@ msgid ""
 "using this module. The older version of the API has since been deprecated "
 "and removed."
 msgstr ""
+"このクラスは Web サーバとの間を取り持つインターフェイスを提供するもので、 WebSocket プロトコルを AnyEvent "
+"コンテキスト内で取り扱う機能を提供します。車輪の再発明をすることなく Protocol::WebSocket を使用していますが、"
+"より細かい調整が必要な場合は AnyEvent と Protocol::WebSocket "
+"を直接使用することをお勧めします。ただし、このクラスを使えば時間をかけずに簡単に作ることができます。\n"
+"\n"
+"推奨 API が AnyEvent::WebSocket::Connection クラスのバージョン 0.12 "
+"で追加されていますので、このモジュールを使用する場合はそのバージョンを使用することをお勧めします。それより古いバージョンの API "
+"は廃止され、削除されています。"
 
 #. tumbleweed/perl-AnyEvent-WebSocket-Server/summary
 msgid "WebSocket server for AnyEvent"
-msgstr ""
+msgstr "AnyEvent 向け WebSocket サーバ"
 
 #. tumbleweed/perl-AnyEvent-WebSocket-Server/description
 msgid ""
@@ -42742,6 +42731,10 @@ msgid ""
 "  * Currently this module supports WebSocket protocol version 13 only. See "
 "at https://tools.ietf.org/html/rfc6455 for detail."
 msgstr ""
+"このクラスは、 AnyEvent のコンテキスト内で WebSocket サーバの実装を提供します。\n"
+"\n"
+"  * 現時点では、このモジュールは WebSocket プロトコル 13 にのみ対応しています。詳しくは https://tools.ietf.org/"
+"html/rfc6455 をお読みください。"
 
 #. tumbleweed/perl-Apache-Session/summary
 #, fuzzy
@@ -42816,6 +42809,11 @@ msgid ""
 "whatever _RangeMessage.xml_ you like if you have updated data. See that "
 "module for details."
 msgstr ""
+"このモジュールは ISBN-10 と ISBN-13 を含む International Standard Book Numbers を処理します。\n"
+"\n"
+"データは Business::ISBN::Data からのものを使用していますので、コードとデータは別々に更新することができます。また "
+"Business::ISBN::Data と任意の RangeMessage.xml_ "
+"を使用することで、必要な最新データを使用することもできます。詳しくはモジュール内の説明をお読みください。"
 
 #. tumbleweed/perl-Business-ISBN-Data/summary
 msgid "Data pack for Business::ISBN"
@@ -43009,7 +43007,7 @@ msgstr "CGI.pm 準拠のオブジェクト指向 CGI インターフェイス"
 
 #. tumbleweed/perl-CPAN-Common-Index/summary
 msgid "Common library for searching CPAN modules, authors and distributions"
-msgstr ""
+msgstr "CPAN モジュールとその作者、配布物を検索するための汎用ライブラリ"
 
 #. tumbleweed/perl-CPAN-Common-Index/description
 msgid ""
@@ -43024,6 +43022,13 @@ msgid ""
 "using different index backends, querying each in turn, and returning the "
 "first result."
 msgstr ""
+"このモジュールは様々な CPAN インデックスサービスを取り扱うための汎用ライブラリを提供します。最小限の機能に絞って作られていて、できる限り少ない種類の"
+"コアモジュールのみを使用しています。\n"
+"\n"
+"'CPAN::Common::Index' モジュールは抽象クラスで、汎用的な API "
+"を提供しています。個別のバックエンドがそれぞれのインデックスを表わしています。\n"
+"\n"
+"SYNOPSIS にも書かれていますが、とある興味深い使い方として、多重化があります。異なるインデックスバックエンドを使用し、最初に届いた結果を返します。"
 
 #. tumbleweed/perl-CPAN-Uploader/summary
 #, fuzzy
@@ -43282,7 +43287,7 @@ msgstr ""
 
 #. tumbleweed/perl-Code-TidyAll/summary
 msgid "Engine for tidyall, your all-in-one code tidier and validator"
-msgstr ""
+msgstr "tidyall (オールインワン型コード成形およびバリデータ) 向けエンジン"
 
 #. tumbleweed/perl-Code-TidyAll/description
 msgid ""
