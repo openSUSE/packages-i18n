@@ -3,10 +3,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-01-03 20:37+0000\n"
-"Last-Translator: Jens Maucher <jens.maucher@gmx.de>\n"
-"Language-Team: German <https://l10n.opensuse.org/projects/packages-i18n/a-"
-"master/de/>\n"
+"PO-Revision-Date: 2021-03-24 13:57+0000\n"
+"Last-Translator: Gemineo <vistatec@gemineo.de>\n"
+"Language-Team: German <https://l10n.opensuse.org/projects/packages-i18n/"
+"a-master/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -500,6 +500,22 @@ msgid ""
 "\n"
 "This package contains shared library for 96BoardsGPIO."
 msgstr ""
+"Dies ist die 96BoardGPIO-Bibliothek, die Hardware über die GPIO auf der "
+"96Boards-Familie von Boards steuert, die die CE-Spezifikationen erfüllen.\n"
+"\n"
+"Alle diese Boards verwenden die gleichen Pins für den Low Speed Expansion "
+"Connector, sodass jede Erweiterungsplatine in jedes 96Board eingesteckt "
+"werden kann und eine elektrische Verbindung hergestellt wird. Verschiedene "
+"SoCs haben jedoch unterschiedliche GPIO-Pins. Auch wenn sich die Pins "
+"elektrisch an der gleichen Stelle befinden, ist unterschiedlicher Code "
+"erforderlich, um die GPIOs an den Pins 23–34 zu aktivieren und zu verwenden."
+"\n"
+"\n"
+"Die 96BoardGPIO-Bibliothek abstrahiert die Informationen, sodass bestimmt "
+"werden kann, welches Board verwendet wird und welche Pins verwendet werden "
+"sollen, die Bibliothek erledigt den Rest.\n"
+"\n"
+"Dieses Paket enthält eine gemeinsame Bibliothek für 96BoardsGPIO."
 
 #. leap/4ti2/libzsolve0/summary
 #. tumbleweed/4ti2/libzsolve0/summary
@@ -532,6 +548,18 @@ msgid ""
 "\n"
 "This package contains python bindings for 96BoardsGPIO."
 msgstr ""
+"Dies ist die 96BoardGPIO-Bibliothek, die Hardware über die GPIO auf der "
+"96Boards-Familie von Boards steuert, die die CE-Spezifikationen erfüllen. "
+"Diese Boards haben den gleichen Low Speed Expansion Connector, aber "
+"verschiedene SOCs haben unterschiedliche GPIO-Pins, für die "
+"unterschiedlicher Code verwendet werden muss, um die Pins 23–34 auf dem "
+"Connector zu aktivieren.\n"
+"\n"
+"Die 96BoardGPIO-Bibliothek abstrahiert die Informationen, sodass bestimmt "
+"werden kann, welches Board verwendet wird und welche Pins zu verwenden sind, "
+"die Bibliothek erledigt den Rest.\n"
+"\n"
+"Dieses Paket enthält Python-Anbindungen für 96BoardsGPIO."
 
 #. tumbleweed/4store/lib4store-devel/description
 msgid "This package provides 4store RDF storage development files."
@@ -578,6 +606,34 @@ msgid ""
 "System requirements Any system-level or application-level color management "
 "system that uses ICC color profiles."
 msgstr ""
+"Erstellen Sie hochwertige Farb-Workflows mit Adobe ICC-Profilen.\n"
+"\n"
+"Adobe möchte konsistente, hochwertige Farb-Workflows ermöglichen. Damit Farb-"
+"Workflows erfolgreich genutzt werden können, müssen Farbinformationen von "
+"vielen Personen gemeinsam genutzt werden, vom ursprünglichen Ersteller bis "
+"zum endgültigen Herausgeber.\n"
+"\n"
+"In unserem komprimierten Archiv sind enthalten:\n"
+"\n"
+"4 RGB-Profile\n"
+"\n"
+"Adobe RGB (1998) Apple RGB ColorMatch RGB sRGB IEC61966-2.1\n"
+"\n"
+"10 CMYK-Profile\n"
+"\n"
+"US Web Coated (SWOP) v2 US Web Uncoated v2 US Sheetfed Coated v2 US Sheetfed "
+"Uncoated v2 Europe ISO Coated FOGRA27 Euroscale Uncoated v2 Japan Web Coated "
+"(Ad) Japan Color 2001 Coated Japan Color 2001 Uncoated Japan Color 2002 "
+"Newspaper\n"
+"\n"
+"Weitere Informationen zu ICC-Profilen finden Sie auf der Website des "
+"International Color Consortium (http://www.color.org/).\n"
+"\n"
+"Weitere Informationen zum ICC-Farbmanagement finden Sie in den technischen "
+"Handbüchern auf der Adobe-Website.\n"
+"\n"
+"Systemanforderungen Jedes Farbmanagementsystem auf System- oder "
+"Anwendungsebene, das ICC-Farbprofile verwendet."
 
 #. leap/AppCSXCAD/summary
 #. tumbleweed/AppCSXCAD/summary
@@ -602,6 +658,8 @@ msgid ""
 "AppStream-Core makes it easy to access application information from the "
 "AppStream database over a nice GObject-based interface."
 msgstr ""
+"AppStream-Core ermöglicht einfachen Zugriff auf Anwendungsinformationen über "
+"die AppStream-Datenbank mit einer angenehmen GObject-basierten Schnittstelle."
 
 #. leap/AppStream/AppStream-devel/summary
 #. tumbleweed/AppStream/AppStream-devel/summary
@@ -633,6 +691,10 @@ msgid ""
 "\n"
 "This package contains the documentation files for AppStream."
 msgstr ""
+"AppStream-Core ermöglicht einfachen Zugriff auf Anwendungsinformationen über "
+"die AppStream-Datenbank mit einer angenehme GObject-basierte Schnittstelle.\n"
+"\n"
+"Dieses Paket enthält die Dokumentationsdateien für AppStream."
 
 #. leap/AppStream/AppStream-lang/summary
 #. tumbleweed/AppStream/AppStream-lang/summary
@@ -648,6 +710,7 @@ msgstr "Liefert Übersetzungen für das Paket \"AppStream\"."
 #. tumbleweed/AusweisApp2/summary
 msgid "Official authentication app for German ID cards and residence permits"
 msgstr ""
+"Offizielle Authentifizierungs-App für deutsche Ausweise und Aufenthaltstitel"
 
 #. leap/AusweisApp2/description
 #. tumbleweed/AusweisApp2/description
@@ -657,6 +720,11 @@ msgid ""
 "To use this app, a supported RFID card reader or compatible NFC smart phone "
 "is required."
 msgstr ""
+"Diese App wurde von der deutschen Regierung entwickelt und herausgegeben, um "
+"für die Onlineauthentifizierung mit elektronischen deutschen "
+"Personalausweisen und Aufenthaltstiteln verwendet zu werden. Um diese App zu "
+"nutzen, ist ein unterstütztes RFID-Kartenlesegerät oder ein kompatibles NFC-"
+"Smartphone erforderlich."
 
 #. leap/PackageKit/description
 #. leap/PackageKit-Qt/PackageKit-Qt-devel/description
@@ -683,6 +751,12 @@ msgid ""
 "graphical tools used in different distributions, and use some of the latest "
 "technology like PolicyKit to make the process suck less."
 msgstr ""
+"PackageKit ist ein System, das die Installation und Aktualisierung von "
+"Software auf Ihrem Computer vereinfachen soll. Durch das Design sollen "
+"vorrangig alle grafischen Software-Werkzeuge vereinheitlicht, die in "
+"verschiedenen Distributionen verwendet werden, und einige der neuesten "
+"Technologien wie PolicyKit verwendet werden, um den Prozess angenehmer zu "
+"gestalten."
 
 #. leap/Regina-REXX/Regina-REXX-devel/summary
 #. leap/cinnamon-control-center/cinnamon-control-center-devel/summary
@@ -944,6 +1018,12 @@ msgid ""
 "PostScript.  Only language text which can be converted from UTF-8 to latin "
 "encodings are supported."
 msgstr ""
+"a2ps wandelt ASCII-Text in PostScript um. Diese Funktion wird z. B. von "
+"apsfilter verwendet, um ASCII-Text schön drucken zu können.\n"
+"\n"
+"Achtung: a2ps kann keinen komplexen Unicode-Text (UTF-8) in PostScript zu "
+"konvertieren. Es werden nur Sprachtexte unterstützt, die von UTF-8 in "
+"lateinische Kodierungen konvertiert werden können."
 
 #. leap/a2ps/a2ps-devel/summary
 #. tumbleweed/a2ps/a2ps-devel/summary
@@ -978,12 +1058,12 @@ msgstr ""
 #. tumbleweed/a52dec/liba52-0/summary
 #. tumbleweed/a52dec/liba52-0-32bit/summary
 msgid "ATSC A/52 stream decoder library"
-msgstr ""
+msgstr "ATSC A/52-Stream-Decoder-Bibliothek"
 
 #. leap/a52dec/description
 #. tumbleweed/a52dec/description
 msgid "liba52 is a library for decoding ATSC A/52 streams."
-msgstr ""
+msgstr "liba52 ist eine Bibliothek zur Dekodierung von ATSC A/52-Streams."
 
 #. leap/aaa_base/summary
 #. tumbleweed/aaa_base/summary
@@ -1027,6 +1107,9 @@ msgid ""
 "to catch potential heap corruptions. It's not installed by default as it may "
 "degrade performance."
 msgstr ""
+"Dieses Paket legt Umgebungsvariablen fest, die strengere malloc-Prüfungen "
+"ermöglichen, um potenzielle Heap-Beschädigungen abzufangen. Es ist nicht "
+"standardmäßig installiert, da es die Leistung beeinträchtigen kann."
 
 #. leap/aaa_base/aaa_base-wsl/summary
 #. tumbleweed/aaa_base/aaa_base-wsl/summary
@@ -1039,6 +1122,9 @@ msgid ""
 "This package includes some special settings needed on Windows Subsystem for "
 "Linux. It should only be installed on WSL and not on regular Linux systems."
 msgstr ""
+"Dieses Paket enthält einige spezielle Einstellungen, die auf dem Windows "
+"Subsystem für Linux benötigt werden. Es sollte nur auf WSL und nicht auf "
+"normalen Linux-Systemen installiert werden."
 
 #. leap/aalib/summary
 #. leap/aalib/libaa1/summary
@@ -1047,7 +1133,7 @@ msgstr ""
 #. tumbleweed/aalib/libaa1/summary
 #. tumbleweed/aalib/libaa1-32bit/summary
 msgid "An ASCII Art Library"
-msgstr ""
+msgstr "Eine ASCII-Kunstbibliothek"
 
 #. leap/aalib/description
 #. leap/aalib/libaa1/description
@@ -1060,6 +1146,10 @@ msgid ""
 "device. In fact, there is no graphical output possible. AA-lib replaces old-"
 "fashioned output methods with a powerful ASCII art renderer."
 msgstr ""
+"AA-lib ist eine Low-Level-Grafikbibliothek. AA-lib benötigt kein "
+"Grafikgerät. Eine grafische Ausgabe ist tatsächlich nicht einmal möglich. AA-"
+"lib ersetzt altmodische Ausgabemethoden durch einen leistungsfähigen ASCII-"
+"Art-Renderer."
 
 #. leap/aalib/aalib-devel/summary
 #. leap/aalib/aalib-devel-32bit/summary
@@ -1079,6 +1169,8 @@ msgstr "Dateien, die für die Software-Entwicklung mit AAlib benötigt werden."
 #. tumbleweed/abcde/summary
 msgid "Front-end program to a number of utilities for encoding a CD to files"
 msgstr ""
+"Front-End-Programm für eine Reihe von Dienstprogrammen zum Kodieren einer CD "
+"in Dateien"
 
 #. leap/abcde/description
 #. tumbleweed/abcde/description
@@ -1087,11 +1179,15 @@ msgid ""
 "MP3 encoder, defaulting to oggenc. It grabs an entire CD and converts each "
 "track to Ogg or MP3, and then comments or adds ID3 tags to each file."
 msgstr ""
+"Ein Front-End-Programm für cdparanoia, wget, cd-discid, id3 und einen "
+"eigenen Ogg- oder MP3-Encoder, standardmäßig oggenc. Es erfasst eine ganze "
+"CD, konvertiert jeden Track in Ogg oder MP3 und fügt Kommentare oder ID3-"
+"Tags zu jeder Datei hinzu."
 
 #. leap/abcm2ps/summary
 #. tumbleweed/abcm2ps/summary
 msgid "A program to typeset abc tunes into Postscript"
-msgstr ""
+msgstr "Ein Programm zum Setzen von abc-Tunes in Postscript"
 
 #. leap/abcm2ps/description
 #. tumbleweed/abcm2ps/description
@@ -1102,11 +1198,17 @@ msgid ""
 "keyboards and a pedal board. abcm2ps introduces many extensions to the ABC "
 "language that make it suitable for classical music."
 msgstr ""
+"abcm2ps ist ein Paket, das Musikstücke vom ABC-Format in PostScript "
+"konvertiert. Basierend auf abc2ps Version 1.2.5 wurde es hauptsächlich zum "
+"Ausgeben von Barockorgel-Partituren entwickelt, die unabhängige Stimmen "
+"haben, die wiederum auf mindestens einem Tasten- und einem Pedalsatz "
+"gespielt werden. abcm2ps führt viele Erweiterungen für die ABC-Sprache ein, "
+"wodurch es für klassische Musik gut geeignet ist."
 
 #. leap/abi-compliance-checker/summary
 #. tumbleweed/abi-compliance-checker/summary
 msgid "A Compliance Checker For library ABIs"
-msgstr ""
+msgstr "Ein Compliance-Checker für Bibliotheks-ABIs"
 
 #. leap/abi-compliance-checker/description
 #. tumbleweed/abi-compliance-checker/description
@@ -1123,11 +1225,26 @@ msgid ""
 "old applications to run with newer library versions without the need to "
 "recompile."
 msgstr ""
+"ABI Compliance Checker (ACC) ist ein einfach zu bedienendes Tool zur "
+"Überprüfung der Abwärtskompatibilität (BC) einer gemeinsam genutzten C/C++-"
+"Bibliothek. Es prüft Header-Dateien zusammen mit gemeinsam genutzten "
+"Bibliotheken alter sowie neuer Versionen und analysiert Änderungen im "
+"Application Binary Interface (ABI), die zu Kompatibilitätsproblemen führen "
+"können: Änderungen im aufrufenden Stack, Änderungen der v-Tabelle, entfernte "
+"Symbole usw. Eine Unterbrechung der Binärkompatibilität kann zu Abstürzen "
+"oder fehlerhaftem Verhalten von Anwendungen führen, die mit einer alten "
+"Version der Bibliothek erstellt wurden, wenn sie auf einer neuen Version "
+"ausgeführt werden. Das Tool ist für Bibliotheksentwickler und "
+"Betriebssystembetreuer vorgesehen, die Binärkompatibilität gewährleisten, d. "
+"h. alte Anwendungen mit neueren Bibliotheksversionen auführen lassen "
+"möchten, ohne sie neu kompilieren zu müssen."
 
 #. leap/abi-dumper/summary
 #. tumbleweed/abi-dumper/summary
 msgid "Tool to dump ABI of an ELF object containing DWARF debug info"
 msgstr ""
+"Tool zum Dumpen der ABI eines ELF-Objekts, das DWARF-"
+"Fehlerbehebungsinformationen enthält"
 
 #. leap/abi-dumper/description
 #. tumbleweed/abi-dumper/description
@@ -1135,11 +1252,16 @@ msgid ""
 "The tool is intended to be used with ABI Compliance Checker tool for "
 "tracking ABI changes of a C/C++ library or kernel module."
 msgstr ""
+"Das Tool ist für die Verwendung mit dem Tool ABI Compliance Checker "
+"vorgesehen, um ABI-Änderungen einer C/C++-Bibliothek oder eines Kernelmoduls "
+"zu verfolgen."
 
 #. leap/abi-monitor/summary
 #. tumbleweed/abi-monitor/summary
 msgid "A tool to monitor and build new versions of a software library"
 msgstr ""
+"Ein Tool zur Überwachung und Erstellung neuer Versionen einer "
+"Softwarebibliothek"
 
 #. leap/abi-monitor/description
 #. tumbleweed/abi-monitor/description
@@ -1147,11 +1269,14 @@ msgid ""
 "Monitor new versions of a software library, try to build them and create "
 "profiles for abi-tracker"
 msgstr ""
+"Neue Versionen einer Software-Bibliothek überwachen, versuchen, sie zu "
+"erstellen und Profile für abi-Tracker erstellen"
 
 #. leap/abi-tracker/summary
 #. tumbleweed/abi-tracker/summary
 msgid "Visualize ABI changes timeline of a C/C++ software library"
 msgstr ""
+"Zeitleiste der ABI-Änderungen einer C/C++-Softwarebibliothek visualisieren"
 
 #. leap/abi-tracker/description
 #. tumbleweed/abi-tracker/description
@@ -1161,6 +1286,11 @@ msgid ""
 "It requires input profile of the library in JSON format. It can be created "
 "manually or automatically generated by the ABI Monitor."
 msgstr ""
+"Dieses Tool visualisiert eine ABI-Änderungszeitlinie einer C/"
+"C++-Softwarebibliothek.\n"
+"\n"
+"Es benötigt ein Eingabeprofil der Bibliothek im JSON-Format. Es kann manuell "
+"erstellt oder automatisch durch den ABI Monitor generiert werden."
 
 #. leap/abiword/summary
 #. tumbleweed/abiword/summary
@@ -1201,7 +1331,7 @@ msgstr ""
 #. leap/abook/summary
 #. tumbleweed/abook/summary
 msgid "Text-based addressbook program"
-msgstr ""
+msgstr "Textbasiertes Adressbuchprogramm"
 
 #. leap/abook/description
 #. tumbleweed/abook/description
@@ -1209,6 +1339,8 @@ msgid ""
 "Abook is a text-based addressbook program designed to use with mutt mail "
 "client."
 msgstr ""
+"Abook ist ein textbasiertes Adressbuchprogramm, das für die Verwendung mit "
+"dem Mailclient mutt etwickelt wurde."
 
 #. leap/abook/abook-lang/summary
 #. tumbleweed/abook/abook-lang/summary
@@ -1223,7 +1355,7 @@ msgstr "Liefert Übersetzungen für das Paket \"abook\"."
 #. leap/abootimg/summary
 #. tumbleweed/abootimg/summary
 msgid "Android boot image manipulator"
-msgstr ""
+msgstr "Android-Boot-Image-Manipulator"
 
 #. leap/abootimg/description
 #. tumbleweed/abootimg/description
@@ -1231,10 +1363,12 @@ msgid ""
 "Android boot image manipulator. It can create/update/unpack boot.img - boot "
 "file used by Android OS."
 msgstr ""
+"Android-Boot-Image-Manipulator. Kann boot.img – die von Android OS "
+"verwendete Boot-Datei – erstellen/aktualisieren/entpacken."
 
 #. leap/abseil-cpp/abseil-cpp-source/summary
 msgid "Source code of Abseil"
-msgstr ""
+msgstr "Quellcode von Abseil"
 
 #. leap/abseil-cpp/abseil-cpp-source/description
 msgid ""
@@ -1242,11 +1376,14 @@ msgid ""
 "standard library. It also provides features incorporated into C++14 and C+"
 "+17 standards."
 msgstr ""
+"Quellcode von Abseil, einer Sammlung von C++11-Bibliotheken, die die C++-"
+"Standardbibliothek erweitern. Bietet auch Funktionen, die in den Standards "
+"C++14 und C++17 enthalten sind."
 
 #. leap/acarsdec/summary
 #. tumbleweed/acarsdec/summary
 msgid "ACARS SDR decoder"
-msgstr ""
+msgstr "ACARS-SDR-Decoder"
 
 #. leap/acarsdec/description
 #. tumbleweed/acarsdec/description
@@ -1254,48 +1391,50 @@ msgid ""
 "A multi-channels acars decoder with built-in rtl_sdr front end. It comes "
 "with a database backend : acarsserv to store receved acars messages."
 msgstr ""
+"Ein mehrkanaliger acars-Decoder mit integriertem rtl_sdr-Frontend. Enthält "
+"ein Datenbank-Backend: acarsserv zum SPeichern empfangener acars-Nachrichten."
 
 #. leap/acbuild/summary
 msgid "A build tool for ACIs"
-msgstr ""
+msgstr "Ein Erstellungswerkzeug für ACIs"
 
 #. leap/acbuild/description
 msgid ""
 "A command line utility to build and modify App Container Images (ACIs), the "
 "container image format defined in the App Container (appc) spec."
 msgstr ""
+"Ein Befehlszeilenprogramm zum Erstellen und Ändern von App Container Images "
+"(ACIs), dem Container-Image-Format, das in den App Container(appc)-"
+"Spezifikation definiert ist."
 
 #. leap/accel-config/summary
 #. tumbleweed/accel-config/summary
 msgid "Configure accelerator subsystem devices"
-msgstr ""
+msgstr "Konfigurieren von Geräten des Beschleuniger-Subsystems"
 
 #. leap/accel-config/description
 #. tumbleweed/accel-config/description
 msgid "Utility library for configuring the accelerator subsystem."
-msgstr ""
+msgstr "Hilfsbibliothek für die Konfiguration des Beschleuniger-Subsystems."
 
 #. leap/accel-config/accel-config-devel/summary
 #. tumbleweed/accel-config/accel-config-devel/summary
-#, fuzzy
 msgid "Development files for libaccfg"
-msgstr "Dateien zur Entwicklung mit libgnomesu"
+msgstr "Dateien zur Entwicklung mit libaccfg"
 
 #. leap/accel-config/accel-config-devel/description
 #. tumbleweed/accel-config/accel-config-devel/description
-#, fuzzy
 msgid ""
 "The accel-config-devel package contains libraries and header files for "
 "developing applications that use accel-config."
 msgstr ""
-"Dieses Paket enthält die statischen Bibliotheken und Headerdateien, die zur "
-"Entwicklung von Programmen benötigt werden, welche die smbclient-"
-"Programmierschnittstelle nutzen."
+"Das Paket accel-config-devel enthält Bibliotheken und Header-Dateien für die "
+"Entwicklung von Anwendungen, die accel-config verwenden."
 
 #. leap/accerciser/summary
 #. tumbleweed/accerciser/summary
 msgid "Accessibility debugging tool"
-msgstr ""
+msgstr "Fehlerbehebungstool für Barrierefreiheit"
 
 #. leap/accerciser/description
 #. tumbleweed/accerciser/description
@@ -1309,6 +1448,14 @@ msgid ""
 "\n"
 "In essence, Accerciser is a next generation at-poke tool."
 msgstr ""
+"Accerciser ist ein interaktiver Python-Barrierefreiheitsexplorer für GNOME-"
+"Desktops. Verwendet AT-SPI, um Widgets zu inspizieren und zu steuern. So "
+"können Sie überprüfen, ob eine Anwendung korrekte Informationen an assistive "
+"Technologien und automatisierte Test-Frameworks liefert. Accerciser verfügt "
+"über ein einfaches Plugin-Framework, mit dem Sie benutzerdefinierte "
+"Ansichten von Informationen zur Barrierefreiheit erstellen können.\n"
+"\n"
+"Im Wesentlichen ist Accerciser ein At-Poke-Tool der nächsten Generation."
 
 #. leap/accerciser/accerciser-lang/summary
 #. tumbleweed/accerciser/accerciser-lang/summary
@@ -1323,7 +1470,7 @@ msgstr "Liefert Übersetzungen für das Paket \"accerciser\"."
 #. leap/accerciser/accerciser-plugin-IPython/summary
 #. tumbleweed/accerciser/accerciser-plugin-IPython/summary
 msgid "Accessibility debugging tool - IPython console widget"
-msgstr ""
+msgstr "Fehlerbehebungstool für Barrierefreiheit – IPython-Konsolenwidget"
 
 #. leap/accerciser/accerciser-plugin-IPython/description
 #. tumbleweed/accerciser/accerciser-plugin-IPython/description
@@ -1333,11 +1480,15 @@ msgid ""
 "\n"
 "This package provides the IPython console widget"
 msgstr ""
+"Accerciser ist ein interaktiver Python-Explorer für Barrierefreiheit für "
+"GNOME-Desktops.\n"
+"\n"
+"Dieses Paket stellt das IPython-Konsolenwidget bereit"
 
 #. leap/accounts-qml-module/summary
 #. tumbleweed/accounts-qml-module/summary
 msgid "QML bindings for libaccounts-qt + libsignon-qt"
-msgstr ""
+msgstr "QML-Bindungen für libaccounts-qt + libsignon-qt"
 
 #. leap/accounts-qml-module/description
 #. tumbleweed/accounts-qml-module/description
@@ -1346,25 +1497,26 @@ msgid ""
 "their authentication data. It's a tiny wrapper around the Qt-based APIs of "
 "libaccounts-qt and libsignon-qt."
 msgstr ""
+"Dieses QML-Modul bietet eine API zum Verwalten der Onlinekonten des "
+"Benutzers und zum Abrufen seiner Authentifizierungsdaten. Es ist ein kleiner "
+"Wrapper um die Qt-basierten APIs von libaccounts-qt und libsignon-qt."
 
 #. leap/accounts-qml-module/accounts-qml-module-doc/summary
 #. tumbleweed/accounts-qml-module/accounts-qml-module-doc/summary
-#, fuzzy
 msgid "Documentation for accounts-qml-module"
-msgstr "Dokumentation zu gawk."
+msgstr "Dokumentation zu accounts-qml-module"
 
 #. leap/accounts-qml-module/accounts-qml-module-doc/description
 #. tumbleweed/accounts-qml-module/accounts-qml-module-doc/description
-#, fuzzy
 msgid ""
 "This package contains the developer documentation for accounts-qml-module."
 msgstr ""
-"Dieses Paket enthält Dienstprogramme für die Adress- und Terminverwaltung."
+"Dieses Paket enthält die Entwicklerdokumentation für accounts-qml-module."
 
 #. leap/accountsservice/summary
 #. tumbleweed/accountsservice/summary
 msgid "D-Bus Service to Manipulate User Account Information"
-msgstr "D-Bus Dienst zur Manipulation von Nutzer-Konten-Informationen"
+msgstr "D-Bus-Dienst zur Manipulation von Benutzerkonten-Informationen"
 
 #. leap/accountsservice/description
 #. tumbleweed/accountsservice/description
@@ -1374,11 +1526,17 @@ msgid ""
 "\n"
 "The implementation is based on the useradd, usermod and userdel commands."
 msgstr ""
+"Der accountservice-Server stellt eine Reihe von D-Bus-Schnittstellen zum "
+"Abfragen und Manipulieren von Benutzerkonten-Informationen bereit.\n"
+"\n"
+"Die Implementierung basiert auf den Befehlen useradd, usermod und userdel."
 
 #. leap/accountsservice/accountsservice-devel/summary
 #. tumbleweed/accountsservice/accountsservice-devel/summary
 msgid "Header files for the user account information manipulation service"
 msgstr ""
+"Header-Dateien für den Dienst zur Manipulation von Benutzerkonten-"
+"Informationen"
 
 #. leap/accountsservice/accountsservice-devel/description
 #. tumbleweed/accountsservice/accountsservice-devel/description
@@ -1386,6 +1544,8 @@ msgid ""
 "The accountsservice server provides a set of D-Bus interfaces for querying "
 "and manipulating user account information."
 msgstr ""
+"Der accountservice-Server stellt eine Reihe von D-Bus-Schnittstellen für die "
+"Abfrage und Bearbeitung von Benutzerkonten-Informationen bereit."
 
 #. leap/accountsservice/accountsservice-lang/summary
 #. tumbleweed/accountsservice/accountsservice-lang/summary
@@ -1400,7 +1560,7 @@ msgstr "Liefert Übersetzungen für das Paket \"accountsservice\"."
 #. leap/acct/summary
 #. tumbleweed/acct/summary
 msgid "User-Specific Process Accounting"
-msgstr ""
+msgstr "Benutzerspezifische Prozessabrechnung"
 
 #. leap/acct/description
 #. tumbleweed/acct/description
@@ -1408,19 +1568,21 @@ msgid ""
 "This package contains the programs necessary for user-specific process "
 "accounting: sa, accton, and lastcomm."
 msgstr ""
-"Dieses Paket enthält die notwenidgen Programme für Nutzer-spezifische "
-"Prozessverwaltung: sa, accton, und lastcomm."
+"Dieses Paket enthält die notwenidgen Programme für benutzerspezifische "
+"Prozessverwaltung: sa, accton und lastcomm."
 
 #. leap/ack/summary
 #. tumbleweed/ack/summary
 msgid "Grep-Like Text Finder"
-msgstr ""
+msgstr "Grep-ähnliche Textsuche"
 
 #. leap/ack/description
 #. tumbleweed/ack/description
 msgid ""
 "ack is a grep-like tool tailored to working with large trees of source code."
 msgstr ""
+"ack ist ein Grep-ähnliches Tool, das auf die Arbeit mit großen "
+"Quellcodebäumen zugeschnitten ist."
 
 #. leap/acl/summary
 #. tumbleweed/acl/summary
@@ -1439,7 +1601,7 @@ msgstr ""
 #. leap/acpi/summary
 #. tumbleweed/acpi/summary
 msgid "Command-line ACPI client"
-msgstr ""
+msgstr "Befehlszeilen-ACPI-Client"
 
 #. leap/acpi/description
 #. tumbleweed/acpi/description
@@ -1448,12 +1610,15 @@ msgid ""
 "the functionality of the 'old' apm command on ACPI systems. It includes "
 "battery and thermal information."
 msgstr ""
+"Linux ACPI-Client ist ein kleines Befehlszeilenprogramm, das versucht, die "
+"Funktionalität des 'alten' apm-Befehls auf ACPI-Systemen zu replizieren. Es "
+"enthält Batterie- und Wärmeinformationen."
 
 #. leap/acpica/summary
 msgid "This is a set of tools to display and debug your BIOS ACPI tables"
 msgstr ""
-"Hierbei handelt es sich um einen Satz Werkzeuge zum Anzeigen und Debuggen "
-"der ACPI-Tabellen Ihres BIOS"
+"Hierbei handelt es sich um einen Satz Tools zum Anzeigen und Debuggen der "
+"ACPI-Tabellen Ihres BIOS"
 
 #. leap/acpica/description
 #. tumbleweed/acpica/description
@@ -1471,6 +1636,18 @@ msgid ""
 "This AML is suitable for inclusion as a DSDT in system firmware. It also can "
 "disassemble AML, for debugging purposes."
 msgstr ""
+"Die enthaltenen Tools nutzen denselben Code, wie der, der in der ACPI-"
+"Implementierung des Kernels verwendet wird. Der Code des acpica-Projekts ist "
+"genau der gleiche wie der ACPI-Parser- und Interpreter-Code des Kernels. Der "
+"Code wird regelmäßig vom acpica-Projekt in den Kernel synchronisiert. Wenn "
+"Sie z. B. Fehler in der ACPI-Implementierung des Kernels identifizieren, ist "
+"es einfacher, diese im Userspace zu debuggen, wenn möglich. Wenn der Fehler "
+"Teil des acpica-Codes ist, muss er an das acpica-Projekt geschickt werden, "
+"damit er in die Mainline-Kernelquellen eingebunden werden kann.\n"
+"\n"
+"iasl kompiliert ASL (ACPI Source Language) in AML (ACPI Machine Language). "
+"Diese AML eignet sich zur Einbindung als DSDT in System-Firmware. Sie kann "
+"auch AML für Debugging-Zwecke disassemblieren."
 
 #. leap/acpid/summary
 msgid "Executes Actions at ACPI Events"
@@ -1483,11 +1660,15 @@ msgid ""
 "occurs, executes programs to handle the event. The start script loads all "
 "needed modules."
 msgstr ""
+"ACPID ist ein völlig flexibler, vollständig erweiterbarer Daemon für die "
+"Bereitstellung von ACPI-Ereignissen. Überwacht eine Datei (/proc/acpi/event) "
+"und führt beim Auftreten eines Ereignisses Programme zur Behandlung des "
+"Ereignisses aus. Das Startskript lädt alle benötigten Module."
 
 #. leap/actkbd/summary
 #. tumbleweed/actkbd/summary
 msgid "A keyboard shortcut daemon"
-msgstr ""
+msgstr "Ein Tastenkombinations-Daemon"
 
 #. leap/actkbd/description
 #. tumbleweed/actkbd/description
@@ -1496,17 +1677,22 @@ msgid ""
 "commands. It can be used to utilize multimedia keys on simple setups, or "
 "assigned custom actions to rarely used keys."
 msgstr ""
+"actkbd ist ein Daemon, der auf benutzerdefinierte Tasten reagiert und "
+"bestimmte Befehle auslöst. Er kann verwendet werden, um Multimediatasten bei "
+"einfachen Setups zu nutzen oder selten genutzten Tasten benutzerdefinierte "
+"Aktionen zuzuweisen."
 
 #. leap/adaptec-firmware/summary
 #. tumbleweed/adaptec-firmware/summary
 msgid "Firmware files for Adaptec SAS Cards (AIC94xx Series)"
-msgstr ""
+msgstr "Firmware-Dateien für Adaptec SAS Cards (AIC94xx-Serie)"
 
 #. leap/adaptec-firmware/description
 #. tumbleweed/adaptec-firmware/description
 msgid ""
 "Firmware files for the Adaptec AIC94xx (Razor) Series of SAS HBA Adapters."
 msgstr ""
+"Firmware-Dateien für die Adaptec AIC94xx-Serie (Razor) der SAS HBA Adapter."
 
 #. leap/adaptx/summary
 #. tumbleweed/adaptx/summary
@@ -1516,7 +1702,7 @@ msgstr "XSLT Processor in Java geschrieben"
 #. leap/adaptx/description
 #. tumbleweed/adaptx/description
 msgid "AdaptX is an extensible stylesheet language (XSL) processor."
-msgstr ""
+msgstr "AdaptX ist ein XSL-Prozessor (Extensible Stylesheet Language)."
 
 #. leap/adaptx/adaptx-doc/summary
 #. tumbleweed/adaptx/adaptx-doc/summary
@@ -1541,7 +1727,7 @@ msgstr "Dieses Paket enthält die Javadoc Dokumentation zu AdaptX."
 #. leap/adcli/summary
 #. tumbleweed/adcli/summary
 msgid "Tool for performing actions on an Active Directory domain"
-msgstr ""
+msgstr "Tool zur Durchführung von Aktionen in einer Active Directory-Domäne"
 
 #. leap/adcli/description
 msgid ""
@@ -1549,12 +1735,14 @@ msgid ""
 "samba) and managing machine accounts there. Will probably expand to cover "
 "other AD related tasks as well."
 msgstr ""
+"Bibliothek mit Routinen zum Verbinden einer Maschine mit dem Active "
+"Directory (ohne Samba) und zum Verwalten von Maschinenkonten dort. Wird "
+"wahrscheinlich erweitert, um auch andere AD-bezogene Aufgaben abzudecken."
 
 #. leap/adcli/adcli-doc/summary
 #. tumbleweed/adcli/adcli-doc/summary
-#, fuzzy
 msgid "Documentation for adcli"
-msgstr "Dokumentation zu gawk."
+msgstr "Dokumentation zu adcli"
 
 #. leap/adcli/adcli-doc/description
 msgid ""
@@ -1564,11 +1752,16 @@ msgid ""
 "\n"
 "This package contains the documentation for adcli."
 msgstr ""
+"Bibliothek mit Routinen zum Verbinden einer Maschine mit Active Directory ("
+"ohne Samba) und zum Verwalten von Maschinenkonten dort. Wird wahrscheinlich "
+"erweitert, um auch andere AD-bezogene Aufgaben abzudecken.\n"
+"\n"
+"Dieses Paket enthält die Dokumentation für adcli."
 
 #. leap/addrwatch/summary
 #. tumbleweed/addrwatch/summary
 msgid "A tool for IPv4/IPv6 and Ethernet address pairing monitoring"
-msgstr ""
+msgstr "Ein Tool zur Überwachung von IPv4/IPv6- und Ethernet-Adresskopplungen"
 
 #. leap/addrwatch/description
 #. tumbleweed/addrwatch/description
@@ -1588,12 +1781,27 @@ msgid ""
 "persistent network pairings' state, but instead logs all the events that "
 "allow pairing discovery."
 msgstr ""
+"Dies ist ein ähnliches Tool wie arpwatch. Hauptzweck ist die Überwachung des "
+"Netzwerks und die Anmeldung von entdeckten Ethernet-zu-IPv4/IPv6-"
+"Adresspaaren. Es unterstützt die Überwachung mehrerer "
+"Netzwerkschnittstellen, die Überwachung von VLAN-getaggten (802.1Q) Paketen "
+"und kann Ausgaben in stdout, einfache Textdateien, syslog, sqlite3 und MySQL "
+"erstellen. Addrwatch verfolgt IPv6-Adressen von Hosts, die IPv6-Datenschutz-"
+"Erweiterungen (RFC4941) verwenden.\n"
+"\n"
+"Der Hauptunterschied zwischen arpwatch und addrwatch ist das Format der "
+"Ausgabedateien.\n"
+"\n"
+"Während arpwatch nur den aktuellen Status der Kopplungen speichert und es "
+"zulässt, eine E-Mail-Benachrichtigung zu senden, wenn eine Kopplungsänderung "
+"auftritt, hält addrwatch den Status der Netzwerkkopplungen nicht dauerhaft "
+"fest, sondern protokolliert alle Ereignisse, die eine Kopplungserkennung "
+"ermöglichen."
 
 #. leap/ade/ade-devel/summary
 #. tumbleweed/ade/ade-devel/summary
-#, fuzzy
 msgid "Development files for using ade"
-msgstr "Dateien zur Entwicklung mit libgnomesu"
+msgstr "Dateien zur Verwendung von ade"
 
 #. leap/ade/ade-devel/description
 #. tumbleweed/ade/ade-devel/description
@@ -1601,21 +1809,24 @@ msgid ""
 "A graph construction, manipulation, and processing framework. It is suitable "
 "for organizing data flow processing and execution."
 msgstr ""
+"Ein Framework zur Erstellung, Manipulation und Verarbeitung von Graphen. "
+"Eignet sich für die Organisation der Verarbeitung und Ausführung von "
+"Datenströmen."
 
 #. leap/adinatha-fonts/summary
 #. tumbleweed/adinatha-fonts/summary
 msgid "Tamil-Brahmi font"
-msgstr ""
+msgstr "Tamil-Brahmi-Schrift"
 
 #. leap/adinatha-fonts/description
 #. tumbleweed/adinatha-fonts/description
 msgid "Adinatha is a  working Unicode Tamil Brahmi font."
-msgstr ""
+msgstr "Adinatha ist eine funktionierende Unicode-Tamil-Brahmi-Schrift."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc/summary
 #. tumbleweed/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-mpich-hpc"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-mpich-hpc"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc/description
 #. tumbleweed/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc/description
@@ -1625,11 +1836,15 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-mpich-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-mpich-hpc "
+"stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-mpich-hpc bereit. "
+"Wenn dieses Paket aktualisiert wird, wird die neueste Version von "
+"adios_1_13_1-gnu-mpich-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel/summary
 #. tumbleweed/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-mpich-hpc-devel"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-mpich-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel/description
 #. tumbleweed/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel/description
@@ -1639,11 +1854,15 @@ msgid ""
 "devel. When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-mpich-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-mpich-hpc-"
+"devel stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-mpich-hpc-"
+"devel bereit. Wenn dieses Paket aktualisiert wird, wird die neueste Version "
+"von adios_1_13_1-gnu-mpich-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel-static/summary
 #. tumbleweed/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-mpich-hpc-devel-static"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-mpich-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel-static/description
 #. tumbleweed/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel-static/description
@@ -1653,11 +1872,15 @@ msgid ""
 "hpc-devel-static. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-mpich-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-mpich-hpc-"
+"devel-static stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-mpich-"
+"hpc-devel-static bereit. Wenn dieses Paket aktualisiert wird, wird die "
+"neueste Version von adios_1_13_1-gnu-mpich-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc/summary
 #. tumbleweed/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-mvapich2-hpc"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-mvapich2-hpc"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc/description
 #. tumbleweed/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc/description
@@ -1667,11 +1890,15 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-mvapich2-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-mvapich2-hpc "
+"stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-mvapich2-hpc bereit. "
+"Wenn dieses Paket aktualisiert wird, wird die neueste Version von "
+"adios_1_13_1-gnu-mvapich2-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel/summary
 #. tumbleweed/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-mvapich2-hpc-devel"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-mvapich2-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel/description
 #. tumbleweed/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel/description
@@ -1681,11 +1908,15 @@ msgid ""
 "mvapich2-hpc-devel. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-mvapich2-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-mvapich2-hpc-"
+"devel stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-mvapich2-hpc-"
+"devel bereit. Wenn dieses Paket aktualisiert wird, wird die neueste Version "
+"von adios_1_13_1-gnu-mvapich2-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel-static/summary
 #. tumbleweed/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-mvapich2-hpc-devel-static"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-mvapich2-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel-static/description
 #. tumbleweed/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel-static/description
@@ -1695,11 +1926,15 @@ msgid ""
 "mvapich2-hpc-devel-static. When this package gets updated it installs the "
 "latest version of adios_1_13_1-gnu-mvapich2-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-mvapich2-hpc-"
+"devel-static stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-mvapich2"
+"-hpc-devel-static bereit. Wenn dieses Paket aktualisiert wird, wird die "
+"neueste Version von adios_1_13_1-gnu-mvapich2-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc/summary
 #. tumbleweed/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi2-hpc"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-openmpi2-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc/description
 #. tumbleweed/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc/description
@@ -1709,11 +1944,15 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-openmpi2-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-openmpi2-hpc "
+"stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-openmpi2-hpc bereit. "
+"Wenn dieses Paket aktualisiert wird, wird die neueste Version von "
+"adios_1_13_1-gnu-openmpi2-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel/summary
 #. tumbleweed/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi2-hpc-devel"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-openmpi2-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel/description
 #. tumbleweed/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel/description
@@ -1723,11 +1962,15 @@ msgid ""
 "openmpi2-hpc-devel. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-openmpi2-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-openmpi2-hpc-"
+"devel stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-openmpi2-hpc-"
+"devel bereit. Wenn dieses Paket aktualisiert wird, wird die neueste Version "
+"von adios_1_13_1-gnu-openmpi2-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel-static/summary
 #. tumbleweed/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi2-hpc-devel-static"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-openmpi2-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel-static/description
 #. tumbleweed/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel-static/description
@@ -1737,11 +1980,15 @@ msgid ""
 "openmpi2-hpc-devel-static. When this package gets updated it installs the "
 "latest version of adios_1_13_1-gnu-openmpi2-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-openmpi2-hpc-"
+"devel-static stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-openmpi2"
+"-hpc-devel-static bereit. Wenn dieses Paket aktualisiert wird, wird die "
+"neueste Version von adios_1_13_1-gnu-openmpi2-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc/summary
 #. tumbleweed/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi3-hpc"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-openmpi3-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc/description
 #. tumbleweed/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc/description
@@ -1751,11 +1998,15 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-openmpi3-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-openmpi3-hpc "
+"stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-openmpi3-hpc bereit. "
+"Wenn dieses Paket aktualisiert wird, wird die neueste Version von "
+"adios_1_13_1-gnu-openmpi3-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel/summary
 #. tumbleweed/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi3-hpc-devel"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-openmpi3-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel/description
 #. tumbleweed/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel/description
@@ -1765,11 +2016,15 @@ msgid ""
 "openmpi3-hpc-devel. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-openmpi3-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-openmpi3-hpc-"
+"devel stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-openmpi3-hpc-"
+"devel bereit. Wenn dieses Paket aktualisiert wird, wird die neueste Version "
+"von adios_1_13_1-gnu-openmpi3-hpc installiert."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel-static/summary
 #. tumbleweed/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi3-hpc-devel-static"
-msgstr ""
+msgstr "Abhängigkeitspaket für adios_1_13_1-gnu-openmpi3-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel-static/description
 #. tumbleweed/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel-static/description
@@ -1779,6 +2034,10 @@ msgid ""
 "openmpi3-hpc-devel-static. When this package gets updated it installs the "
 "latest version of adios_1_13_1-gnu-openmpi3-hpc."
 msgstr ""
+"adios: Das adaptierbare IO-System (ADIOS) Das Paket adios-gnu-openmpi3-hpc-"
+"devel-static stellt die Abhängigkeit zum Binärpaket adios_1_13_1-gnu-openmpi3"
+"-hpc-devel-static bereit. Wenn dieses Paket aktualisiert wird, wird die "
+"neueste Version von adios_1_13_1-gnu-openmpi3-hpc installiert."
 
 #. leap/adios-openmpi2/summary
 #. leap/adios-openmpi3/summary
@@ -1795,7 +2054,7 @@ msgstr ""
 #. tumbleweed/adios_1_13_1-gnu-openmpi2-hpc/summary
 #. tumbleweed/adios_1_13_1-gnu-openmpi3-hpc/summary
 msgid "The Adaptable IO System (ADIOS)"
-msgstr ""
+msgstr "Das adaptierbare IO-System (ADIOS)"
 
 #. leap/adios-openmpi2/description
 #. leap/adios-openmpi3/description
