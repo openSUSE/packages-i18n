@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-03-20 03:56+0000\n"
-"Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
+"PO-Revision-Date: 2021-03-27 10:57+0000\n"
+"Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "perl-master/ja/>\n"
 "Language: ja\n"
@@ -43218,6 +43218,9 @@ msgid ""
 "\n"
 "You can call this API from your own program instead of executing 'tidyall'."
 msgstr ""
+"これは tidyall で使用されているエンジンです - 概要について知るには、まず tidyall をご覧ください。\n"
+"\n"
+"この API を使用することで、 'tidyall' を実行する代わりに独自のプログラムを起動できるようになります。"
 
 #. tumbleweed/perl-Config-AutoConf/summary
 msgid "Module to implement some of AutoConf macros in pure perl"
@@ -43233,7 +43236,7 @@ msgstr "文法ベースでユーザにわかりやすい設定パーサ"
 
 #. tumbleweed/perl-Config-INI-Reader-Ordered/summary
 msgid ".ini-file parser that returns sections in order"
-msgstr ""
+msgstr "セクションを順序通りに返す .ini ファイルパーサー"
 
 #. tumbleweed/perl-Config-INI-Reader-Ordered/description
 msgid ""
@@ -43241,6 +43244,9 @@ msgid ""
 "preserves section order. See Config::INI::Reader for all documentation; the "
 "only difference is as presented in the SYNOPSIS."
 msgstr ""
+"Config::INI::Reader::Ordered は Config::INI::Reader "
+"のサブクラスで、セクションの出現順序を保持する機能を追加します。全てのドキュメンテーションを読むには、 Config::INI::Reader "
+"をお読みください。違いは SYNOPSIS 内に示されています。"
 
 #. tumbleweed/perl-Config-IniFiles/summary
 msgid "Module for reading .ini-style configuration files"
@@ -43257,7 +43263,7 @@ msgstr "ASN.1 エンコード／デコードライブラリ"
 #. tumbleweed/perl-Convert-UUlib/summary
 msgid ""
 "Decode uu/xx/b64/mime/yenc/etc-encoded data from a massive number of files"
-msgstr ""
+msgstr "大量のファイルから uu/xx/b64/mime/yenc/etc でエンコードされたファイルをデコードするモジュール"
 
 #. tumbleweed/perl-Convert-UUlib/description
 msgid ""
@@ -43275,6 +43281,16 @@ msgid ""
 "about the C-library used in this interface, and the rest of this document "
 "and especially the non-trivial decoder program at the end."
 msgstr ""
+"このモジュールは Frank Pilhofer 氏が開発した、 usenet (およびその他のリソース) "
+"で提供されるバイナリメッセージをデコードするライブラリである、 uulib/uudeview "
+"ライブラリに対するインターフェイスとして開発が開始されました。\n"
+"\n"
+"当初の提供元が開発を断念したのち、このモジュールは継続的にバグ修正と改善が行なわれてきました。"
+"特にセキュリティ面の修正と速度に関する修正が中心となっています (ただし、信頼のできないデータをデコードする目的では開発されていません。オリジナルの "
+"uudeview よりは安全であることは間違いないのですが・・) 。\n"
+"\n"
+"このインターフェイス内で使用されている C 言語ライブラリについて深い情報を知るには、配布物に含まれる doc/library.pdf "
+"ファイルをお読みください。また、本文書の残りの部分や一般的ではないデコーダプログラムについては、末尾に説明があります。"
 
 #. tumbleweed/perl-Cpanel-JSON-XS/summary
 msgid "CPanel fork of JSON::XS, fast and correct serializing"
@@ -43282,7 +43298,7 @@ msgstr "高速で正確なシリアライズを行なう Json::XS の Cpanel for
 
 #. tumbleweed/perl-Crypt-JWT/summary
 msgid "JSON Web Token (JWT, JWS, JWE) as defined by RFC7519, RFC7515, RFC7516"
-msgstr ""
+msgstr "RFC7519, RFC7515, RFC7516 で定義されている JSON Web トークン (JWT, JWS, JWE)"
 
 #. tumbleweed/perl-Crypt-JWT/description
 msgid ""
@@ -43297,6 +43313,15 @@ msgid ""
 "This module supports *Compact JWS/JWE* and *Flattened JWS/JWE JSON* "
 "serialization, general JSON serialization is not supported yet."
 msgstr ""
+"*JSON Web Token (JWT)* - https://tools.ietf.org/html/rfc7519 の実装です。実装は JSON "
+"Web Signature (JWS)* - https://tools.ietf.org/html/rfc7515 だけでなく、 *JSON Web "
+"Encryption (JWE)* - https://tools.ietf.org/html/rfc7516 も含まれています。\n"
+"\n"
+"このモジュールは *JSON Web Algorithms (JWA)* - https://tools.ietf.org/html/rfc7518 "
+"で知れ冷めている *全て (100%) のアルゴリズム* が含まれています。\n"
+"\n"
+"このモジュールは *Compact JWS/JWE* および *Flattened JWS/JWE JSON* の各シリアライズが含まれていますが、"
+"一般的な JSON シリアライズはまだサポートされていません。"
 
 #. tumbleweed/perl-Crypt-OpenSSL-RSA/description
 msgid ""
@@ -43513,10 +43538,12 @@ msgid ""
 "originally created to remove code duplication between Dancer::Plugin::DBIC "
 "and Dancer2::Plugin::DBIC."
 msgstr ""
+"DBIx::Class のアプリケーションに対する文法シュガーです。これは元々 Dancer::Plugin::DBIC と "
+"Dancer2::Plugin::DBIC の両方にあるコードの重複を削除するために作られたものでした。"
 
 #. tumbleweed/perl-DBIx-Class-Migration/summary
 msgid "Use the best tools together for sane database migrations"
-msgstr ""
+msgstr "適切なデータベース移行を行なうための最適なツールの使用"
 
 #. tumbleweed/perl-DBIx-Class-Migration/description
 msgid ""
@@ -43560,10 +43587,38 @@ msgid ""
 "Class::Migration::Features. The remainder of this POD is API level "
 "documentation on the various internals."
 msgstr ""
+"DBIx::Class::DeploymentHandler は、バージョン付きの DBIx::Class 管理データベース向けの適切なワークフローを作成"
+"する問題を解決するためのソリューションです。しかしながら、特定の移行を表現するよりも、独自のバージョン付けや移行のワークフローを構築するためのツールキット"
+"以上のものとしての存在になっています。そのため、これが最も親しみやすいツールとは限らなくなっています。もしも新しい DBIx::Class のプロジェクト"
+"を開始しようとしている場合で、特定の独自のワークフロー要件をお持ちでない場合は、サンプルスクリプト集を含むツールキットとしてよりも、適度に明快で標準的な書"
+"き方を好むかもしれません。\n"
+"\n"
+"DBIx::Class::Migration では DBIx::Class::DeploymentHandler と DBIx::Class::"
+"Fixtures を組み合わせたロジックを標準的なチュートリアルと共に定義することで、データベースのバージョンや移行、データのテストなどの最適なソリューシ"
+"ョンを直感的に作成することができます。これに加えて Test::mysqld や Test::Postgresql58 と共に DBD::Sqlite を"
+"使用することで、ローカルのデータベースサンドボックスを容易に作成することもできます。これによりお使いのデータベースをテストするための統合ポイントを提供する"
+"ことになり、 Test::DBIx::Class "
+"のようなツールを介してデータベースドリブンでロジックの少ないコートを容易に作成することができます。最後に、 Catalyst  "
+"などのアプリケーションフレームワーク内で適切な開発パターンへの提案も行なっています。\n"
+"\n"
+"DBIx::Class::Migration では DBIx::Class "
+"を数年間にわたって使い込んできた経験をベースにしてコードやアドバイスを提供しています。これは新しいプロジェクトを始める際の開始点となるべきものです。"
+"このソリューションは DBIx::Class を使用していてデータベースの移行を行ないたい場合にうまく当てはまるようになっていますが、次に何をすべきかはわ"
+"かっていません。これらのソリューションは小規模なプロジェクトから中規模のプロジェクトまでスケールするようになっていますし、"
+"多数の開発者が関わる複数のターゲット環境 (開発 -> 検証 -> 本番) "
+"も含まれています。非常に複雑なデータベースバージョン要件をお持ちの場合で巨大なチームを構成していて、アーキテクチャ側の問題を抱えているような場合は、 "
+"DBIx::Class::DeploymentHandler を利用して直接何らかのものを構築したほうが適切でしょう。\n"
+"\n"
+"DBIx::Class::Migration は DBIx::Class::Migration::Script "
+"のようなインターフェイスを構築するベースクラスが作られています。\n"
+"\n"
+"詳しいアプローチドキュメンテーションをお読みになりたい場合は、 DBIx::Class::Migration::Tutorial をお読みください。また、"
+"高レベルな機能概要を知りたい場合は DBIx::Class::Migration::Features をお読みください。 POD の残りの箇所では、"
+"様々な内部仕様を表わす API レベルドキュメンテーションを説明しています。"
 
 #. tumbleweed/perl-Dancer2/summary
 msgid "Lightweight yet powerful web application framework"
-msgstr ""
+msgstr "軽量ながらもパワフルな Web アプリケーションフレームワーク"
 
 #. tumbleweed/perl-Dancer2/description
 msgid ""
@@ -43581,10 +43636,22 @@ msgid ""
 "This is the main module for the Dancer2 distribution. It contains logic for "
 "creating a new Dancer2 application."
 msgstr ""
+"Dancer2 は Dancer の新世代で、 Perl 向けの軽量 Web フレームワークです。 Dancer2 は Moo "
+"をベースにして完全に書き換えられています。\n"
+"\n"
+"Dancer2 は速度を向上する目的で、必要に応じて XS モジュールを使用することができますが、 その中枢部分は fatpack "
+"可能なままになっています (App::FatPacker を介しています) 。そのため、独自の CPAN モジュールをサポートしないホストであっても、 "
+"Dancer2 を容易に配置できるように名手います。\n"
+"\n"
+"Dancer2 は簡単でわかり安い仕組みです:\n"
+"\n"
+"    use Dancer2;     get '/' => sub { \"Hello World\" };     dance;\n"
+"\n"
+"これは Dancer2 配布物のメインモジュールです。新しい Dancer2 アプリケーションを構築するためのロジックが含まれています。"
 
 #. tumbleweed/perl-Dancer2-Plugin-Auth-Extensible/summary
 msgid "Extensible authentication framework for Dancer2 apps"
-msgstr ""
+msgstr "Dancer2 アプリ向けの拡張可能な認証フレームワーク"
 
 #. tumbleweed/perl-Dancer2-Plugin-Auth-Extensible/description
 msgid ""
@@ -43602,10 +43669,21 @@ msgid ""
 "hashed passwords is included, or you can use Crypt::SaltedHash yourself to "
 "do so, or use the 'slappasswd' utility if you have it installed."
 msgstr ""
+"Dancer2 アプリ向けのユーザ認証および認可フレームワークプラグインです。\n"
+"\n"
+"特定の経路でユーザのログインを求めるように設定するのが簡単で、役割ベースのアクセス制御の提供のほか、様々な認証方式や認証ソース "
+"(設定ファイル、データベース、 Unix システムユーザなど) を設定することができます。\n"
+"\n"
+"複数の認証領域に対応するよう設計されているほか、拡張性の高さやパスワードの安全確保をできる限り簡単に処理できるように作られています。"
+"認証プロバイダ向けのベースクラスは 'RFC2307' "
+"形式のハッシュパスワードを簡単に取り扱うことができるため、パスワードをそのまま保存するような危険を冒すこともありません。また、シンプルなスクリプトである "
+"*dancer2-generate-crypted-password* では、 RFC2307 形式のハッシュパスワードを簡単に作成することができますし、"
+" Crypt::SaltedHash でも同様のことを行なうことができます。また、 'slappasswd'  "
+"がインストールされていれば、それでもかまいません。"
 
 #. tumbleweed/perl-Dancer2-Plugin-Auth-Extensible-Provider-DBIC/summary
 msgid "Authenticate via the Dancer2::Plugin::DBIC plugin"
-msgstr ""
+msgstr "Dancer2::Plugin::DBIC プラグインを介した認証"
 
 #. tumbleweed/perl-Dancer2-Plugin-Auth-Extensible-Provider-DBIC/description
 msgid ""
@@ -43619,10 +43697,17 @@ msgid ""
 "See Dancer2::Plugin::Auth::Extensible for details on how to use the "
 "authentication framework."
 msgstr ""
+"このクラスはデータベースを利用してユーザを認証するように設計された認証プロバイダで、データベースへのアクセスにあたっては "
+"Dancer2::Plugin::DBIC を使用しています。\n"
+"\n"
+"データベースの接続設定については、適切な Dancer2::Plugin::DBIC をお読みください。また CONFIGURATION "
+"セクションには、認証プロバイダの設定方法とデータベースの詳細が記されています。\n"
+"\n"
+"認証フレームワークの使用方法の詳細については、 Dancer2::Plugin::Auth::Extensible をお読みください。"
 
 #. tumbleweed/perl-Dancer2-Plugin-DBIC/summary
 msgid "DBIx::Class interface for Dancer2 applications"
-msgstr ""
+msgstr "Dancer2 アプリケーション向け DBIx::Class インターフェイス"
 
 #. tumbleweed/perl-Dancer2-Plugin-DBIC/description
 msgid ""
@@ -43635,14 +43720,20 @@ msgid ""
 "\n"
 "This plugin is a thin wrapper around DBICx::Sugar."
 msgstr ""
+"このプラグインは、データベースを利用した Dancer2 アプリケーションを非常に簡単に開発することのできるものです。このプラグインでは、 "
+"'schema' キーワードで DBIx::Class::Schema のオブジェクトを返す関数を公開します。このほか 'resultset' と "
+"'rset' というキーワードも公開しています。あとはデータベースの接続に関する情報を設定するだけです。性能に関しては、スキーマオブジェクトがメモリ内にキ"
+"ャッシュされ、初回アクセス時に遅延読み込みが行なわれるようになっています。\n"
+"\n"
+"このプラグインは DBICx::Sugar に対する薄いラッパーです。"
 
 #. tumbleweed/perl-Dancer2-Plugin-REST/summary
 msgid "Plugin for writing RESTful apps with Dancer2"
-msgstr ""
+msgstr "Dancer2 で RESTful なアプリを記述するためのプラグイン"
 
 #. tumbleweed/perl-Dancer2-Plugin-REST/description
 msgid "This plugin helps you write a RESTful webservice with Dancer2."
-msgstr ""
+msgstr "このプラグインは、 Dancer2 で RESTful な Web サービスを記述するための支援を行ないます。"
 
 #. tumbleweed/perl-Dancer2-Plugin-WebSocket/summary
 msgid "Add a websocket interface to your Dancers app"
@@ -43658,6 +43749,11 @@ msgid ""
 "supports the psgi _streaming_, _nonblocking_ and _io_. Twiggy is the most "
 "popular server fitting the bill."
 msgstr ""
+"'Dancer2::Plugin::WebSocket' は Plack::App::WebSocket に対するインターフェイスを提供するもので、 "
+"Dancer アプリ内で WebSocket の接続を行なって対話できるようにします。\n"
+"\n"
+"Plack::App::WebSocket とこのプラグインは、 psgi _streaming_, _nonblocking_, _io_ "
+"にそれぞれ対応する plack サーバが必要となります。 Twiggy がもっとも有名なサーバです。"
 
 #. tumbleweed/perl-Data-Compare/summary
 msgid "Compare perl data structures"
@@ -44465,7 +44561,7 @@ msgstr "このモジュールは 'parse_dir' と呼ばれる単一の関数を�
 
 #. tumbleweed/perl-File-Share/summary
 msgid "Extend File::ShareDir to Local Libraries"
-msgstr ""
+msgstr "File::ShareDir のローカルライブラリへの拡張"
 
 #. tumbleweed/perl-File-Share/description
 msgid ""
