@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-03-29 01:57+0000\n"
+"PO-Revision-Date: 2021-03-29 04:57+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "perl-master/ja/>\n"
@@ -44938,7 +44938,7 @@ msgstr ""
 
 #. tumbleweed/perl-GooCanvas2/summary
 msgid "Perl binding for GooCanvas2 widget using Glib::Object::Introspection"
-msgstr ""
+msgstr "Glib::Object::Introspection を利用した GooCanvas2 ウイジェットに対する Perl バインディング"
 
 #. tumbleweed/perl-GooCanvas2/description
 msgid ""
@@ -44954,6 +44954,14 @@ msgid ""
 "documentation will perhaps come in later versions. But applying the C "
 "documentation should be no problem."
 msgstr ""
+"GooCanvas2 は gtk3 を使用する新しいキャンバスウイジェットで、 Cairo 2D ライブラリを利用して描画を行ないます。これは、"
+"この素晴らしい Canvas ウイジェットに対するシンプルで基本的な実装です。\n"
+"\n"
+"詳しい情報については https://wiki.gnome.org/action/show/Projects/GooCanvas をお読みください。\n"
+"\n"
+"GooCanvas2 の使用方法などの手順については、今のところ https://developer.gnome.org/goocanvas/"
+"unstable/ をお読みください。 Perl 固有のドキュメンテーションは、おそらく将来のバージョンで提供される予定です。ただし、 C "
+"言語のドキュメンテーションをそのままお読みいただいても問題はないはずです。"
 
 #. tumbleweed/perl-Graph/summary
 msgid "Graph data structures and algorithms"
@@ -45050,6 +45058,15 @@ msgid ""
 "and then displayed in the list. This same mechanism can be expanded by "
 "defining arbitrary new column types before calling the new function."
 msgstr ""
+"Gtk3 はパワフルではありますが、複雑な MVC (モデル, ビュー, コントローラ) を使用してリストやツリーのウイジェットを実装しています。 "
+"Gtk3::SimpleList はこのような複雑なセットアップ作業を簡略化し、リスト構造を自然に取り扱うことができるようになります。\n"
+"\n"
+"Gtk3::SimpleList を作成したあとは、単純な Perl "
+"の配列としてリストデータに割り当てる列を指定します。行は通常の配列操作と同じ形式で追加や削除を行なうことができます。 'data' "
+"というメンバーは単純な配列の参照として使用できますので、 Perl の一般的な配列操作でリストデータを扱うことができます。\n"
+"\n"
+"同様に列についても Perl のスカラー値として扱うことができます。スカラー値は Perl の通常の仕組みでテキストに変換され、リスト内に表示されるように"
+"なります。また、新しい関数を呼び出す前に、新しい列タイプを作成しておくことで、任意の列タイプを作成することもできます。"
 
 #. tumbleweed/perl-HTML-Clean/description
 msgid ""
@@ -45099,7 +45116,7 @@ msgstr "HTML の洗浄と消毒化のための Perl 拡張"
 #. tumbleweed/perl-HTTP-BrowserDetect/summary
 msgid ""
 "Determine Web browser, version, and platform from an HTTP user agent string"
-msgstr ""
+msgstr "HTTP のユーザエージェント文字列からの Web ブラウザとバージョン、プラットフォームの判別"
 
 #. tumbleweed/perl-HTTP-BrowserDetect/description
 msgid ""
@@ -45113,6 +45130,13 @@ msgid ""
 "available at http://www.mozilla.org/docs/web-developer/sniffer/browser_type."
 "html."
 msgstr ""
+"HTTP::BrowserDetect は HTTP の User-Agent "
+"文字列に対する多数のテストを実施します。これらのテストの結果は、オブジェクトに対するメソッドとして利用することができます。\n"
+"\n"
+"このモジュールの処理をオンラインで確認したい場合は、 http://www.browserdetect.org/ をご覧ください。\n"
+"\n"
+"このモジュールは元々、 http://www.mozilla.org/docs/web-developer/sniffer/"
+"browser_type.html にある JavaScript のブラウザ検出コードを元にしています。"
 
 #. tumbleweed/perl-HTTP-Cookies/description
 msgid ""
@@ -45372,7 +45396,7 @@ msgstr "HTTP::Headers のより高速な実装"
 
 #. tumbleweed/perl-HTTP-Tinyish/summary
 msgid "HTTP::Tiny compatible HTTP client wrappers"
-msgstr ""
+msgstr "HTTP::Tiny 互換の HTTP クライアントラッパー"
 
 #. tumbleweed/perl-HTTP-Tinyish/description
 msgid ""
@@ -45384,6 +45408,11 @@ msgid ""
 "environment where you need to be able to download CPAN modules without an "
 "HTTPS support in built-in HTTP library."
 msgstr ""
+"HTTP::Tinyish は HTTP クライアントモジュールである LWP, HTTP::Tiny のほか、 'curl' や 'wget' などの "
+"HTTP クライアントソフトウエアに対するラッパーモジュールです。\n"
+"\n"
+"HTTP::Tiny との API 互換性を提供しているほか、実装は App::cpanminus から抽出した仕組みになっています。このモジュールは、"
+"組み込みの HTTP ライブラリ内に存在する HTTPS サポートを使用せず、 CPAN モジュールでダウンロードしたいような場合に有用です。"
 
 #. tumbleweed/perl-Hash-Merge/description
 msgid ""
@@ -45439,6 +45468,15 @@ msgid ""
 "exactly or else classes that differ only in ways unrelated to the\n"
 "*Heap::Elem* interface."
 msgstr ""
+"Heap コレクションモジュールは、要素に対するヒープを管理するためのルーチンを提供します。"
+"ヒープは構造内での要素の最小値を常に簡単に抽出することのできる部分ソート済み構造です (逆順の並べ替えルーチンを指定すれば、逆を実装することもできます) "
+"。\n"
+"\n"
+"要素が動的に変化するようなものの場合、ヒープはコレクションが完全に並べ替えられている状態を維持し続けるための最小のオーバーヘッドとして動作します。\n"
+"\n"
+"要素は必ず \"Heap::Elem\" "
+"で指定されるオブジェクトでなければならず、全ての要素はヒープに挿入される際、相互に比較可能でもなければなりません。つまり、厳密に同一のクラスを指定するか、"
+"もしくは *Heap::Elem* インターフェイスとは関係のない方法でのみ異なるクラスでなければなりません。"
 
 #. tumbleweed/perl-IO-Async/description
 msgid ""
@@ -45479,7 +45517,7 @@ msgstr ""
 
 #. tumbleweed/perl-IO-Compress-Lzma/summary
 msgid "Write lzma files/buffers"
-msgstr ""
+msgstr "lzma ファイル／バッファの書き込み"
 
 #. tumbleweed/perl-IO-Compress-Lzma/description
 msgid ""
@@ -45489,6 +45527,9 @@ msgid ""
 "For reading lzma files/buffers, see the companion module IO::Uncompress::"
 "UnLzma."
 msgstr ""
+"このモジュールは、 lzma で圧縮されたデータをファイルやバッファに書き込むことのできる Perl インターフェイスを提供します。\n"
+"\n"
+"lzma ファイルやバッファの読み込みについては、コンパニオンモジュールである IO::Uncompress::UnLzma をご覧ください。"
 
 #. tumbleweed/perl-IO-HTML/description
 msgid ""
@@ -45646,7 +45687,7 @@ msgstr ""
 
 #. tumbleweed/perl-IO-stringy/summary
 msgid "I/O on in-core objects like strings and arrays"
-msgstr ""
+msgstr "文字列や配列などのような中枢オブジェクト内 I/O"
 
 #. tumbleweed/perl-IO-stringy/description
 msgid ""
@@ -45663,6 +45704,17 @@ msgid ""
 "stop worrying about whether your function's caller handed you a string, a "
 "globref, or a FileHandle."
 msgstr ""
+"このツールキットは主に、通常のファイルハンドルを除く、従来型の I/O とオブジェクト指向型の I/O "
+"の両方を処理するモジュールを提供するためのものです。オブジェクト指向型のものとしては特に、 IO::Scalar, IO::ScalarArray, "
+"IO::Lines を対象としています。\n"
+"\n"
+"さらに古い IO::Handle については IO::AtomicFile "
+"が提供されています。こちらはアトミックに更新されるファイルを容易に作成するために使用するものです。\n"
+"\n"
+"また \"this-may-prove-useful\" のコーナーでは、 wraphandle() 関数を公開する IO::Wrap "
+"と呼ばれる仕組みを提供し、 IO::Handle のようなラッパー内での bless ではない何かを提供しています。これにより OO "
+"型の文法を使用できることになりますので、お使いの関数内での呼び出しが文字列なのか globref "
+"なのか、それともファイルハンドルなのかを気にせずに利用できるようになります。"
 
 #. tumbleweed/perl-IPC-Run/summary
 msgid "System() and background procs w/ piping, redirs, ptys (Unix, Win32)"
@@ -45836,7 +45888,7 @@ msgstr ""
 
 #. tumbleweed/perl-JSON-Parse/summary
 msgid "Parse JSON"
-msgstr ""
+msgstr "JSON の処理"
 
 #. tumbleweed/perl-JSON-Parse/description
 msgid ""
@@ -45857,6 +45909,18 @@ msgid ""
 "JSON::Parse accepts only UTF-8 as input. See UTF-8 only and Handling of "
 "Unicode."
 msgstr ""
+"JSON (\"JavaScript Object Notation\" の略で、 RFC 8259 で規定) を処理するためのモジュールです。\n"
+"\n"
+"JSON::Parse は parse_json という関数が提供されていて、これは JSON を含む文字列をパラメータとして与えることで、それと等価な "
+"Perl 構造体を返すものです。また、 JSON の書式が正しいかどうかを判断して true もしくは false を返す valid_json "
+"も含まれています。こちらは JSON が正しくない場合、詳しいエラーを返すことができます。また、 read_json 関数ではファイルから JSON "
+"データを読み込むことができますし、 parse_json の例外を返さないバージョンである parse_json_safe も用意されています。\n"
+"\n"
+"特別な方法で処理を行ないたい場合は、 new や parse などのメソッドも用意されています。こちらは JSON "
+"の処理オブジェクトを作成して処理することができます。詳しくは METHODS をお読みください。\n"
+"\n"
+"JSON::Parse は入力できる文字列コードとして UTF-8 のみに対応しています。詳しくは UTF-8 only および Handling of "
+"Unicode をお読みください。"
 
 #. tumbleweed/perl-JSON-Validator/description
 msgid ""
@@ -46062,7 +46126,7 @@ msgstr ""
 
 #. tumbleweed/perl-List-BinarySearch/summary
 msgid "Binary Search within a sorted array."
-msgstr ""
+msgstr "並べ替えられた配列内でのバイナリ検索"
 
 #. tumbleweed/perl-List-BinarySearch/description
 msgid ""
@@ -46103,11 +46167,30 @@ msgid ""
 "either automatically install the XS module, or prompt to automatically "
 "install it. See CONFIGURATION for details."
 msgstr ""
+"このバイナリ検索モジュールは *並べ替え済みの* 配列を分割統治法によって検索する仕組みを提供しています。領域内では半分ずつに分割していって、結果が見つか"
+"るまでその処理を繰り返します。そのためバイナリ検索での計算の複雑性は、 O(log n) で表わされることになります。\n"
+"\n"
+"このモジュール内でのバイナリ検索アルゴリズムは、バイナリ検索の仕組み内での _遅延検出_ として知られています。遅延検出は *安定した検索* "
+"を提供します。安定したバイナリ検索アルゴリズムには、それ以外の (安定しない) バイナリ検索と比較して、下記のような特性があります:\n"
+"* 非ユニークなキーが存在するような場合、バイナリ検索の結果は必ず配列内の最初の要素を返します。不安定なバイナリ検索では配列内の最初の要素以外を返す場合が"
+"あります。\n"
+"* 計算処理にかかる時間は、最良でも最悪でも O(log n) になります。不安定な検索の場合は目的の値が見つかった時点で停止しますので、最悪のケースで "
+"O(log n) になります。実際の環境では、この違いはあまり意味がありません。\n"
+"* 安定したバイナリ検索の場合、列挙ごとに対を 1 回ずつ比較することになります。不安定な検索の場合は、列挙ごとに 2 回の比較が必要になります。\n"
+"* 全体的な結果は、 \"最適な\" 場合は不安定なバイナリ検索のほうがよりよい結果になりますが、 \"最悪の\" "
+"場合は列挙ごとの比較が少なくなることから安定したバイナリ検索のほうが速くなりますし、平均的な場合はほぼ同等になります。つまり、安定したバイナリ検索では "
+"\"最適な\" 場合の性能を少し犠牲にすることで、非ユニークなキーが存在する環境でも配列内の順序で最初の値を返すことができます。\n"
+"\n"
+"このモジュールにはコンパニオン \"XS\" モジュールも用意されていますので、可能な限り List::BinarySearch::XS "
+"もインストールしておくことをお勧めします。 List::BinarySearch::XS がインストールされている場合、 'binsearch' や "
+"'binsearch_pos' では XS コードを使用するようになります。この動作は '$ENV{List_BinarySearch_PP}' を "
+"true の値にすることで上書きすることができます。ほとんどの CPAN インストーラでは XS "
+"モジュールを自動インストールするか、もしくは自動的にインストールするようプロンプトを表示します。詳しくは CONFIGURATION をお読みください。"
 
 #. tumbleweed/perl-List-Compare/summary
 #. tumbleweed/perl-List-Compare/description
 msgid "Compare elements of two or more lists"
-msgstr ""
+msgstr "2 つもしくは複数のリスト内の要素の比較"
 
 #. tumbleweed/perl-List-UtilsBy/description
 msgid ""
@@ -46167,7 +46250,7 @@ msgstr ""
 
 #. tumbleweed/perl-Log-Any-Adapter-Callback/summary
 msgid "(DEPRECATED) Send Log::Any logs to a subroutine"
-msgstr ""
+msgstr "(廃止予定) Log::Any のサブルーチンへの送信"
 
 #. tumbleweed/perl-Log-Any-Adapter-Callback/description
 msgid ""
@@ -46190,6 +46273,22 @@ msgid ""
 "where $method is the name of method (like \"debug\") and ($self, $format, "
 "@params) are given by Log::Any."
 msgstr ""
+"廃止告知: バージョン 1.708 の Log::Any の配布物には、同様の処理を行なう Log::Any::Adapter::Capture "
+"というモジュールが同梱されていますが、このアダプタは廃止する予定です。\n"
+"\n"
+"このアダプタは Log::Any のログ記録メソッド ($log->debug(), $log->error() など) や検出メソッド "
+"($log->is_warning(), $log->is_fatal() など) "
+"を呼び出す際、コールバックサブルーチンを指定することができるものでした。\n"
+"\n"
+"このアダプタはログをカスタマイズする際に使用するもので、数行ほどのコードを省略することのできる便利な仕組みでした。 Log::Any "
+"のアダプタクラスを作成することで、同様の効果を得ることができます。\n"
+"\n"
+"ログのコールバックサブルーチンは、下記のようなパラメータで呼び出されます:\n"
+"\n"
+" ($method, $self, $format, @params)\n"
+"\n"
+"ここで $method はメソッド名 (例: \"debug\") 、 ($self, $format, @params) は Log::Any "
+"に指定したものになります。"
 
 #. tumbleweed/perl-Log-Dispatchouli/summary
 msgid "Simple wrapper around Log::Dispatch"
@@ -46205,7 +46304,7 @@ msgstr "Mac のプロパティリストを低レベルで操作するモジュ�
 
 #. tumbleweed/perl-Mail-AuthenticationResults/summary
 msgid "Object Oriented Authentication-Results Headers"
-msgstr ""
+msgstr "オブジェクト指向型の Authentication-Results ヘッダ"
 
 #. tumbleweed/perl-Mail-AuthenticationResults/description
 msgid ""
@@ -46224,6 +46323,19 @@ msgid ""
 "\n"
 "It is a work in progress.."
 msgstr ""
+"オブジェクト指向型の Authentication-Results 電子メールヘッダです。\n"
+"\n"
+"このパーサーは一般的に使用されているほとんどの Authentication-Results ヘッダを処理することができますが、 RFC7601 "
+"への完全な準拠までは達成できていません。\n"
+"\n"
+"RFC7601 との違い\n"
+"\n"
+"authserv-id セクション内にキー／値の対が存在する場合、これは RFC の仕様には従っていませんが、 Yahoo! "
+"などのサービスで使用されています。\n"
+"\n"
+"文字列化する際にデータ内の構造にキー／値に加えてコメントが追加されます。\n"
+"\n"
+"このモジュールは現在も開発途上です。"
 
 #. tumbleweed/perl-Mail-DKIM/description
 msgid ""
@@ -46277,10 +46389,13 @@ msgid ""
 "this class. Methods which are related to folders is implemented in the Mail::"
 "Box::Message extension."
 msgstr ""
+"'Mail::Message' オブジェクトは RFC2822 で規定された MIME "
+"エンコードされたメッセージ情報を含めるための仕組みです。このクラスでは、メールボックス (フォルダ) "
+"内に保存されたメッセージに関する処理が含まれています。フォルダに関するメソッドは Mail::Box::Message 拡張で実装されています。"
 
 #. tumbleweed/perl-Mail-Transport/summary
 msgid "Use Mail Transfer Agents (MTAs)"
-msgstr ""
+msgstr "メール転送エージェント (MTA) の使用"
 
 #. tumbleweed/perl-Mail-Transport/description
 msgid ""
@@ -46294,6 +46409,13 @@ msgid ""
 "\n"
 "Extends \"DESCRIPTION\" in Mail::Reporter."
 msgstr ""
+"'Mail::Transport' を拡張したオブジェクトを使用することで、さまざまなプロトコルを利用したメッセージの送受信を実装することができます。\n"
+"\n"
+"Mail::Transport::Send はこのクラスを拡張したもので、 SMTP などの送信プロトコルに対する一般的な機能を提供しています。同様に "
+"Mail::Transport::Receive "
+"では受信メソッドが提供されています。このほか、いくつかの伝送プロトコルに対する送受信機能も用意されています。\n"
+"\n"
+"Mail::Reporter 内の \"DESCRIPTION\" もお読みください。"
 
 #. tumbleweed/perl-MailTools/summary
 msgid "Bundle of ancient email modules"
@@ -46305,12 +46427,12 @@ msgstr "GMP をベースにした Math::BigInt 等向けバックエンドライ
 
 #. tumbleweed/perl-Math-Int64/summary
 msgid "Manipulate 64 bits integers in Perl"
-msgstr ""
+msgstr "Perl 内での 64 ビット整数の取り扱い"
 
 #. tumbleweed/perl-Math-Int64/description
 msgid ""
 "This module adds support for 64 bit integers, signed and unsigned, to Perl."
-msgstr ""
+msgstr "このモジュールは符号有りもしくは符号無しの 64 ビット整数を Perl 内で扱えるようにします。"
 
 #. tumbleweed/perl-Math-PlanePath/summary
 msgid "Points on a path through the 2-D plane"
@@ -46589,7 +46711,7 @@ msgstr ""
 
 #. tumbleweed/perl-Menlo/summary
 msgid "CPAN client"
-msgstr ""
+msgstr "CPAN クライアント"
 
 #. tumbleweed/perl-Menlo/description
 msgid ""
@@ -46597,6 +46719,8 @@ msgid ""
 "internals with a set of modules that are more flexible, extensible and "
 "easier to use."
 msgstr ""
+"Menlo は _cpanm 2.0_ に対するバックエンドで、より柔軟性が高く、拡張性に富み、使いやすい cpanm "
+"モジュールの置き換えとして機能することを目指しています。"
 
 #. tumbleweed/perl-Menlo-Legacy/summary
 msgid "Legacy internal and client support for Menlo"
@@ -46613,6 +46737,12 @@ msgid ""
 "This way Menlo can evolve and be refactored without the fear of breaking any "
 "downstream clients, including 'cpanm' itself."
 msgstr ""
+"Menlo::Legacy は cpanmipus の従来バージョンにおける内部仕様や動作を実装する Menlo::CLI::Compat "
+"互換ライブラリをインストールするためのパッケージです。これは cpanm を使用する既存のユーザと Carton, Carmel, App:cpm "
+"などの API クライアントに対して、 cpanm 固有の機能や動作をそのまま使い続けることができるようにするためのものです。\n"
+"\n"
+"この方法により、 Menlo は 'cpanm' "
+"自身を含むダウンストリームクライアントに対して互換性の破壊を伴うことなく進化および改善できるようになっています。"
 
 #. tumbleweed/perl-Meta-Builder/summary
 msgid "Tools for creating Meta objects to track custom metrics"
@@ -46662,7 +46792,7 @@ msgstr ""
 
 #. tumbleweed/perl-Metrics-Any/summary
 msgid "Abstract collection of monitoring metrics"
-msgstr ""
+msgstr "監視メトリックの抽象コレクション"
 
 #. tumbleweed/perl-Metrics-Any/description
 msgid ""
