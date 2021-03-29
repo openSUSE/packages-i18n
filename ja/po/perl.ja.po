@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-03-29 04:57+0000\n"
+"PO-Revision-Date: 2021-03-29 10:57+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "perl-master/ja/>\n"
@@ -46817,6 +46817,18 @@ msgid ""
 "reporting (as well as to write code which does not itself depend on the code "
 "required to perform that reporting)."
 msgstr ""
+"特定のイベントが発生した回数などの監視メトリックに対して、それを報告するためのモジュールです。このほか、モニタリングサービスに対してイベントの収集を行なっ"
+"て送信するプログラムも備えています。\n"
+"\n"
+"Log::Any からヒントを得て作られたもので、このモジュールは問題点を 2 つの側面に分解します。監視目的でのメトリックを提供したいモジュール側では "
+"'use Metrics::Any' を指定することで、イベント情報を取得するための _コレクタ_ を定義することができます。規定ではこのコレクタは何も行"
+"ないませんが、特定のレポートを行なうような場合でも、追加の要件を追加することなく使用できるようになっています。\n"
+"\n"
+"複数のモジュールを使用するプログラムの場合は異なるポリシーを適用します。この場合は、何らかの外部システムにメトリックを報告する目的で 'use "
+"Metrics::Any::Adapter' ステートメントを使用することで _アダプタ_ 実装を使用してください。\n"
+"\n"
+"これらの分離により、モジュールの作者が報告の仕組みを知ることなくメトリックを報告するためのコードを作成できるようになります "
+"(また、報告を行なうのに必要なコードにも依存しないようになります。"
 
 #. tumbleweed/perl-Modern-Perl/summary
 msgid "Enable all of the features of Modern Perl with one import"
@@ -46900,7 +46912,7 @@ msgstr ""
 
 #. tumbleweed/perl-Module-Build-Prereqs-FromCPANfile/summary
 msgid "Construct prereq parameters of Module::Build from cpanfile"
-msgstr ""
+msgstr "cpanfile からの Module::Build のパラメータの prereq 構築"
 
 #. tumbleweed/perl-Module-Build-Prereqs-FromCPANfile/description
 msgid ""
@@ -46910,12 +46922,16 @@ msgid ""
 "Currently it does not support \"optional features\" specification (See "
 "cpanfile/feature)."
 msgstr ""
+"このシンプルなモジュールは cpanfile を読み込んで、その内容を Module::Build の 'new()' メソッド向けの prereq "
+"パラメータに変換します。\n"
+"\n"
+"現時点では \"optional features\" には対応していません (詳しくは cpanfile/feature をお読みください) 。"
 
 #. tumbleweed/perl-Module-Build-Using-PkgConfig/summary
 msgid ""
 "Extend Module::Build to more easily use platform libraries provided by pkg-"
 "config"
-msgstr ""
+msgstr "pkg-config で提供されるプラットフォームをより容易に使用できるようにするための Module::Build の拡張"
 
 #. tumbleweed/perl-Module-Build-Using-PkgConfig/description
 msgid ""
@@ -46928,6 +46944,12 @@ msgid ""
 "based wrappers of these system libraries, allowing them to be dynamically "
 "installed at build time if the platform does not provide them."
 msgstr ""
+"Module::Build のサブクラスである本クラスは、 _pkg-config_ で管理されるプラットフォーム側ライブラリを使用する XS "
+"ベースのモジュール配布物に対し、 _Build.PL_ での支援を行なう各種のメソッドを提供します。\n"
+"\n"
+"プラットフォーム全体に対してインストールされているライブラリと _pkg-config_ それ自身に加え、このサブクラスではシステムライブラリに対する "
+"'Alien::' ベースのラッパーの支援を行なうことができます。これにより、プラットフォーム側では提供されていないライブラリがある場合、その構築の時点で"
+"動的にインストールできるようになります。"
 
 #. tumbleweed/perl-Module-Signature/description
 msgid ""
@@ -46978,7 +47000,7 @@ msgstr "任意のモジュールに対するシンプルなスターターキッ
 
 #. tumbleweed/perl-Mojo-Log-Colored/summary
 msgid "Colored Mojo logging"
-msgstr ""
+msgstr "色付き Mojo ログ"
 
 #. tumbleweed/perl-Mojo-Log-Colored/description
 msgid ""
@@ -46991,6 +47013,12 @@ msgid ""
 "output would also be colored. That does not make a lot of sense, so you "
 "don't want to do that. Use this for development, not production."
 msgstr ""
+"Mojo::Log::Colored は端末に対して Mojolicious で色つきの出力を行なうことのできるロガーです。 Term::"
+"ANSIColor をベースにして各ログレベルに色を設定することができるほか、既定の色をそのまま使用することもできます。これにより、ログ全体が色付きで出力"
+"されるようになります。\n"
+"\n"
+"このモジュールは Mojo::Log を継承しているため、 'file' に対してそれを与えることで色つきのファイル出力を行なうこともできます。ほとんどの"
+"場合において意味のないものではありますが・・。また、このモジュールは開発用に使用すべきものであり、本番環境では使用すべきではありません。"
 
 #. tumbleweed/perl-Mojo-Pg/summary
 msgid "Wrapper around DBD::Pg for using PostgreSql with Mojolicious"
@@ -47075,6 +47103,8 @@ msgid ""
 "when it comes to processing JavaScript. It is recommended that you switch to "
 "Mojolicious::Plugin::Webpack if you want to write modern JavaScript code."
 msgstr ""
+"Mojolicious::Plugin::AssetPack は非常に限られた機能セットで、特に JavaScript を処理するような場合には顕著です。"
+"新しい JavaScript を作成したい場合は、 Mojolicious::Plugin::Webpack に切り替えることをお勧めします。"
 
 #. tumbleweed/perl-Mojolicious-Plugin-Status/summary
 msgid "Mojolicious server status"
@@ -47107,6 +47137,14 @@ msgid ""
 "\n"
 "  ./package.json   ./webpack.config.js"
 msgstr ""
+"Mojolicious::Plugin::Webpack は https://webpack.js.org/ と作業を行なう際の利便性を提供する "
+"Mojolicious プラグインです。このプラグインは下記のようなことを行ないます:\n"
+"* 1.\n"
+"\n"
+"最小限の 'package.json' と Webpack の設定ファイルを生成します。これは手作業で作成することもできますが、 Webpack "
+"に慣れていなければ、全ての詳細まで正しく設定するには時間のかかる作業になってしまいます。\n"
+"\n"
+"  ./package.json   ./webpack.config.js"
 
 #. tumbleweed/perl-Moo/description
 msgid ""
@@ -47162,10 +47200,16 @@ msgid ""
 "When a prefix is mentioned, it will be prepended to the mentioned name, with "
 "a '_' in between."
 msgstr ""
+"これは Moo の拡張として提供されているもので、 Moo に対して他の属性を追加することができます。何らかのものが指定されると、通常の値を設定する \""
+"チェイン\" を指定する代わりに、環境を指定するチェインを設定します。\n"
+"\n"
+"環境変数は与えられたそのものの名前のほか、大文字に変換したものも検索対象になります。\n"
+"\n"
+"プレフィクスが指定された場合、それは指定した名前の前に追加され、名前との間に '_' が挿入されます。"
 
 #. tumbleweed/perl-MooX-Locale-Passthrough/summary
 msgid "Provide API used in translator modules without translating"
-msgstr ""
+msgstr "変換無しでの変換モジュール内で使用する API"
 
 #. tumbleweed/perl-MooX-Locale-Passthrough/description
 msgid ""
@@ -47176,10 +47220,15 @@ msgid ""
 "This software is released together with MooX::Locale::TextDomain::OO, which "
 "allowes then to plugin any desired translation."
 msgstr ""
+"'MooX::Locale::Passthrough' は CPAN モジュールに対して、変換 API に重い依存関係 (外部ソフトウエア) や要件 "
+"(操作結果の解決) をもたらさずに処理する機能を提供します。\n"
+"\n"
+"このソフトウエアは MooX::Locale::TextDomain::OO "
+"と呼ばれる、任意の必要な変換に接続することのできるモジュールとともに公開されています。"
 
 #. tumbleweed/perl-MooX-Options/summary
 msgid "Explicit Options eXtension for Object Class"
-msgstr ""
+msgstr "オブジェクトクラスに対する明示的なオプション拡張"
 
 #. tumbleweed/perl-MooX-Options/description
 msgid ""
@@ -47191,12 +47240,21 @@ msgid ""
 "The 'option' keyword takes additional parameters and uses Getopt::Long::"
 "Descriptive to generate a command line tool."
 msgstr ""
+"Moo (Moose オブジェクト) を利用したコマンドラインツールを作成します。\n"
+"\n"
+"全てのものは明示的な存在で、 'option' キーワードを指定することで通常の 'has' "
+"を置き換えて、コマンドライン内で独自の属性を使用することができます。\n"
+"\n"
+"'option' キーワードには追加のパラメータを指定できるほか、 Getopt::Long::Descriptive "
+"を利用してコマンドラインツールを構築することができます。"
 
 #. tumbleweed/perl-MooX-Traits/description
 msgid ""
 "Was any of the SYNOPSIS unexpected? Basically, this module is the same thing "
 "as MooseX::Traits and MouseX::Traits, only for Moo. _Quelle surprise_, right?"
 msgstr ""
+"SYNOPSIS は予期しないものでしたでしょうか？ 基本的に、このモジュールは MooseX::Traits と MouseX::Traits "
+"と同じものですが、 Moo 向けだけのものです。驚きですか？"
 
 #. tumbleweed/perl-MooX-late/summary
 msgid "Easily translate Moose code to Moo"
@@ -47298,6 +47356,11 @@ msgid ""
 "defined as simple Moose accessors using the 'option' and 'parameter' "
 "keywords respectively."
 msgstr ""
+"MooseX-App "
+"は高度にカスタマイズ可能なヘルパーで、ユーザフレンドリなコマンドラインアプリケーションを、よくある面倒な手間を省いて作成することができる仕組みです。"
+"任意の既存の Moose クラスを指定するだけで、あとは ('use MooseX-App qw(PluginA PluginB ...);') の 1 "
+"行を追加して、元の名前空間内にコマンドごとのクラスを 1 つずつ作成するだけです。オプションや位置依存のパラメータは、 'option' や "
+"'parameter' のキーワードを使用することで、単純な Moose アクセサーとして定義することができます。"
 
 #. tumbleweed/perl-MooseX-Storage/summary
 msgid "Serialization framework for Moose classes"
@@ -47305,7 +47368,7 @@ msgstr "Moose クラス向けシリアライズフレームワーク"
 
 #. tumbleweed/perl-Net-AMQP-RabbitMQ/summary
 msgid "Interact with RabbitMQ over AMQP using librabbitmq"
-msgstr ""
+msgstr "librabbitmq を利用して AMQP 経由での RabbitMQ との対話"
 
 #. tumbleweed/perl-Net-AMQP-RabbitMQ/description
 msgid ""
@@ -47317,6 +47380,11 @@ msgid ""
 "You should be making good use of 'eval' around these methods to ensure that "
 "you appropriately catch the errors."
 msgstr ""
+"'Net::AMQP::RabbitMQ' は librabbitmq "
+"に対する薄いラッパーで、エクスチェンジやキューに対する接続や定義、キューのバインドやその解除、イベントの消費や受信などを行なうことができます。\n"
+"\n"
+"このモジュール内でのエラー処理は、主に 'Perl_croak' (die) によって実現されています。エラーを取得できるようにするため、"
+"これらのメソッドを使用する場合は 'eval' を適切に使用するようにしてください。"
 
 #. tumbleweed/perl-Net-DBus/description
 msgid ""
@@ -47460,13 +47528,15 @@ msgstr ""
 
 #. tumbleweed/perl-Net-OBS-Client/summary
 msgid "Simple OBS API calls"
-msgstr ""
+msgstr "シンプルな OBS API コール"
 
 #. tumbleweed/perl-Net-OBS-Client/description
 msgid ""
 "Net::OBS::Client aims to simplify usage of OBS (https://openbuildservice."
 "org) API calls in perl."
 msgstr ""
+"Net::OBS::Client は OBS (https://openbuildservice.org) の API コールを Perl "
+"から簡単に利用できるようにすることを目指しています。"
 
 #. tumbleweed/perl-Net-Whois-RIPE/summary
 msgid "Pure-Perl implementation of the RIPE Database client"
@@ -47550,19 +47620,19 @@ msgstr "PAUSE と同じ方法での .pm ファイルの処理"
 
 #. tumbleweed/perl-Passwd-Keyring-Gnome/summary
 msgid "Password storage implementation based on GNOME Keyring"
-msgstr ""
+msgstr "GNOME キーリングをベースにしたパスワードストレージ実装"
 
 #. tumbleweed/perl-Passwd-Keyring-Gnome/description
 msgid "Password storage implementation based on GNOME Keyring."
-msgstr ""
+msgstr "GNOME キーリングをベースにしたパスワードストレージ実装です。"
 
 #. tumbleweed/perl-Passwd-Keyring-KDEWallet/summary
 msgid "Password storage implementation based on KDE Wallet"
-msgstr ""
+msgstr "KDE Wallet をベースにしたパスワードストレージ実装"
 
 #. tumbleweed/perl-Passwd-Keyring-KDEWallet/description
 msgid "Password storage implementation based on KDE Wallet."
-msgstr ""
+msgstr "KDE Wallet をベースにしたパスワードストレージ実装です。"
 
 #. tumbleweed/perl-Path-Tiny/description
 msgid ""
@@ -47629,7 +47699,7 @@ msgstr "いくつかのアドオン Perlcritic ポリシー"
 
 #. tumbleweed/perl-PerlX-Maybe/summary
 msgid "Return a Pair Only If They Are Both Defined"
-msgstr ""
+msgstr "対の両方が定義されている場合にのみ返すモジュール"
 
 #. tumbleweed/perl-PerlX-Maybe/description
 msgid ""
@@ -47662,25 +47732,50 @@ msgid ""
 "\n"
 "A slightly more elegant solution is the 'maybe' function."
 msgstr ""
+"Mosse のクラス (およびその他のいくつかのクラス) では、属性値が設定されていない場合と undef "
+"が設定されている場合を区別して扱います。コンストラクタのパラメータに対して下記のような指定を行なった場合を想定します:\n"
+"\n"
+" my $bob = Person->new(     name => $name,     age => $age,  );\n"
+"\n"
+"'$name' や '$age' の変数がそれぞれ undef である場合 (未定義の場合) は、 'name' や 'age' の属性が Person "
+"クラスの型制約に違反することになってしまいます。\n"
+"\n"
+"(注意: あなた自身が対象のクラスの _作者_ である場合は、 MooseX::UndefTolerant を使用することで問題を解決できます。ただし、 "
+"UndefTolerant を使用していないクラスが存在したりしてしまうと、解決できなくなってしまいます) 。\n"
+"\n"
+"このような Person コンストラクタで undef に設定された name や age "
+"を定義しないままにしておきたい場合は、下記のような醜いコードが必要になってしまいます:\n"
+"\n"
+" my $bob = Person->new(     defined $name ? (name => $name) : (),     "
+"defined $age ? (age => $age) : (),  );\n"
+"\n"
+"これを下記のように改善することができます:\n"
+"\n"
+" use PerlX::Maybe;\n"
+"\n"
+" my $bob = Person->new(     (name => $name) x!!(defined $name),     (age  => "
+"$age)  x!!(defined $age),  );\n"
+"\n"
+"より洗練されたソリューションとして、 'maybe' 関数があります。"
 
 #. tumbleweed/perl-Plack-App-WebSocket/summary
 msgid "WebSocket server as a PSGI application"
-msgstr ""
+msgstr "PSCI アプリケーションとしての WebSocket サーバ"
 
 #. tumbleweed/perl-Plack-App-WebSocket/description
 msgid ""
 "This module is a PSGI application that creates an endpoint for WebSocket "
 "connections."
-msgstr ""
+msgstr "このモジュールは WebSocket のエンドポイントを作成する PSGI アプリケーションです。"
 
 #. tumbleweed/perl-Plack-Middleware-FixMissingBodyInRedirect/summary
 msgid ""
 "Plack::Middleware which sets body for redirect response, if it's not alr[cut]"
-msgstr ""
+msgstr "リダイレクト応答の本文部分を設定する Plack::Middleware"
 
 #. tumbleweed/perl-Plack-Middleware-FixMissingBodyInRedirect/description
 msgid "This module sets body in redirect response, if it's not already set."
-msgstr ""
+msgstr "このモジュールは、未設定の場合に転送応答時の本文部分を設定します。"
 
 #. tumbleweed/perl-Plack-Middleware-LogErrors/description
 msgid ""
@@ -47716,11 +47811,11 @@ msgstr ""
 #. tumbleweed/perl-Plack-Middleware-RemoveRedundantBody/summary
 msgid ""
 "Plack::Middleware which removes body for HTTP response if it's not required"
-msgstr ""
+msgstr "不要な場合に HTTP 応答から本文部分を削除する Plack::Middleware"
 
 #. tumbleweed/perl-Plack-Middleware-RemoveRedundantBody/description
 msgid "This module removes body in HTTP response, if it's not required."
-msgstr ""
+msgstr "このモジュールは、不要であれば HTTP 応答内の本文を削除します。"
 
 #. tumbleweed/perl-Pod-Elemental/summary
 msgid "Work with nestable Pod elements"
@@ -47743,6 +47838,16 @@ msgid ""
 "transformer also eliminates the need to track elements representing vertical "
 "whitespace."
 msgstr ""
+"Pod::Elemental は Pod (plain old documentation|perlpod) "
+"を要素ツリーとして扱うためのシステムです。このモデルは、特に HTML DOM などのような他の文書システムでは有名な存在になっています。 Pod::"
+"Elemental のドキュメントオブジェクトモデルは HTML DOM "
+"よりは洗練されていないものになっていますが、文書の形式変更をより簡単に扱うことができます。\n"
+"\n"
+"一般的には Pod 文書を読み込んでさまざまな形式変更を行なうことになるでしょう。一般的には Pod5 整形 "
+"(Pod::Elemental::Transformer::Pod5) が最もよくある変更でしょう。これは Perl 5 のドキュメンテーション内で "
+"Pod コマンドに対する基本的な説明を記述したもので、 '=begin', '=end', '=for' "
+"などのコマンドが文書の領域を示すものになっています。また、文頭の空白は逐語的な段落などとして解釈されます。 Pod5 "
+"の変換機能は、垂直方向の空白を表わすトラック要素の必要性を削減します。"
 
 #. tumbleweed/perl-Pod-Parser/summary
 msgid "Base Class for Creating Pod Filters and Translators"
@@ -47761,6 +47866,12 @@ msgid ""
 "components of the POD. Subclasses of *Pod::Parser* override these methods to "
 "translate the POD into whatever output format they desire."
 msgstr ""
+"*注意: このモジュールは古いものとして考えられています。新しい Perl リリース (5.18 もしくはそれ以降) では、 Perl の中枢部から "
+"Pod パーサーが削除される予定で、 Pod-Simple が Pod に関わる全てを行ないます。 *\n"
+"*Pod::Parser* は POD のフィルタやトランスレータを作成するためのベースクラスです。入力ストリームからの POD "
+"セクションを処理する際の多くの面倒を省いて、テキストの実際の変換処理そのものに注力できる仕組みを提供します。\n"
+"*Pod::Parser* は POD を処理しますが、メソッド呼び出しでさまざまな POD のコンポーネントにアクセスする機能を提供します。 "
+"*Pod::Parser* のサブクラスではこれらのメソッドをオーバーライドして、 POD を必要なさまざまな形式に変換することもできます。"
 
 #. tumbleweed/perl-Pod-Spell/summary
 msgid "Formatter for spellchecking Pod"
@@ -47768,7 +47879,7 @@ msgstr "スペルチェック Pod 向けフォーマッタ"
 
 #. tumbleweed/perl-Pod-Usage/summary
 msgid "Extracts POD documentation and shows usage information"
-msgstr ""
+msgstr "POD ドキュメンテーションの抽出と使用方法の表示"
 
 #. tumbleweed/perl-Prima/summary
 msgid "Perl graphic toolkit"
@@ -47780,7 +47891,7 @@ msgstr "fork() システムコールに対するシンプルで直感的なイ�
 
 #. tumbleweed/perl-Proc-SyncExec/summary
 msgid "Spawn processes but report exec() errors"
-msgstr ""
+msgstr "プロセスを起動するが exec() エラーを報告するモジュール"
 
 #. tumbleweed/perl-Proc-SyncExec/description
 msgid ""
@@ -47788,10 +47899,12 @@ msgid ""
 "error return. If the child's exec() call fails the reason for the failure is "
 "reported back to the parent."
 msgstr ""
+"このモジュールは、完全なエラー返却を行なうことのできる同期型プロセス起動の関数を提供します。子の exec() "
+"が何らかの理由で失敗した場合、そのエラーを親に報告することができます。"
 
 #. tumbleweed/perl-Protocol-HTTP2/summary
 msgid "HTTP/2 protocol implementation (RFC 7540)"
-msgstr ""
+msgstr "HTTP/2 プロトコル実装 (RFC 7540)"
 
 #. tumbleweed/perl-Protocol-HTTP2/description
 msgid ""
@@ -47800,6 +47913,9 @@ msgid ""
 "this module to implement your own HTTP/2 client/server/intermediate on top "
 "of your favorite event loop over plain or tls socket (see examples)."
 msgstr ""
+"Protocol::HTTP2 は HTTP/2 プロトコル (https://tools.ietf.org/html/rfc7540) の実装で、 "
+"HTTP/2 フレームのステートフルなデコーダおよびエンコーダとして動作します。このモジュールを利用することで、独自の HTTP/2 "
+"クライアント／サーバ／仲介を作成して必要なイベントループ内で使用できるほか、 TLS ソケットを扱ったりすることもできます (サンプルをご覧ください) 。"
 
 #. tumbleweed/perl-Quantum-Superpositions/summary
 msgid "QM-like superpositions in Perl"
@@ -47969,7 +48085,7 @@ msgstr "コアデータ、メッセージ、 XML 処理向けのクラスセッ�
 
 #. tumbleweed/perl-Ref-Util/summary
 msgid "Utility functions for checking references"
-msgstr ""
+msgstr "参照チェックのためのユーティリティ関数集"
 
 #. tumbleweed/perl-Ref-Util/description
 msgid ""
@@ -48080,6 +48196,93 @@ msgid ""
 "\n"
 "See below for benchmark results."
 msgstr ""
+"Ref::Util は *より賢い* (および通常は高速な) 方法で、参照を識別するための支援機能を提供します。簡単に言うと下記のような感じです:\n"
+"\n"
+"    \n"
+"\n"
+"    ref( $foo ) eq 'ARRAY'              is_plain_arrayref( $foo )\n"
+"\n"
+"    use Scalar::Util qw( reftype );     reftype( $foo ) eq 'ARRAY'          "
+"is_arrayref( $foo )\n"
+"\n"
+"違いは下記のとおりです:\n"
+"* * 文字列定数に対して比較する必要がありません\n"
+"\n"
+"'ref' を呼び出した場合、参照が文字列に変換されたあと 'ARRAY' や 'HASH' "
+"などの固定文字列と比較を行なうことになります。それだけではありません。固定の文字列を誤って指定してしまうこともあります。\n"
+"\n"
+"Scalar::Util の 'reftype' を使用しても、下記のように文字列と比較することができます:\n"
+"\n"
+"    if ( reftype($foo) eq 'ARRAY' ) { ... } \n"
+"* * bless された変数にも対応\n"
+"*注意:* 将来のバージョンでは、既定の関数呼び出しでは *純粋な* もののみを扱うことになります。つまり、明示的に非 bless "
+"参照を行なうことになります。\n"
+"\n"
+"*bless された* 参照を明示的にチェックしたい場合は、 'is_blessed_*' 関数をお使いください。現在のメイン関数のように動作する "
+"'is_any_*' バリエーションもあります。こちらは bless されていてもいなくても動作します。\n"
+"\n"
+"'ref' を呼び出すと、参照型 (*SCALAR*, *ARRAY*, *HASH* など) か bless したパッケージ名が返されます。\n"
+"\n"
+"'is_arrayref' などを呼び出すと、変数フラグをチェックして、 bless されているものであれば bless "
+"した変数の型を知ることができます。\n"
+"\n"
+"    my $foo = bless {}, 'PKG';     ref($foo) eq 'HASH'; # 失敗する\n"
+"\n"
+"    use Ref::Util 'is_hashref';     my $foo = bless {}, 'PKG';     "
+"is_hashref($foo); # 動作する\n"
+"\n"
+"その一方、状況によっては bless された参照を除外したほうが適切な場合もあります。これは単純にオブジェクトがハッシュを利用して実装されているからといっ"
+"て、それをハッシュのまま扱うのが正しいとは限らないからです。このような状況下では、 'is_plain_hashref' などの関数を使用することで、 "
+"'is_hashref' と同等の性能改善を得ることができます。\n"
+"\n"
+"このほか、 'is_blessed_hashref' のような関数群も提供されています; これらはそれぞれ対応する型をりようして実装されている "
+"bless されたオブジェクトインスタンスである場合に true を返します。\n"
+"* * tie 変数や magic への対応\n"
+"\n"
+"tie 変数 (Readonly などで使用されています) にも対応しています。\n"
+"\n"
+"    use Ref::Util qw<is_plain_hashref>;     use Readonly;\n"
+"\n"
+"    Readonly::Scalar my $rh2 => { a => { b => 2 } };     "
+"is_plain_hashref($rh2); # 成功\n"
+"\n"
+"Ref::Util では 0.100 以降でこれに対応しています。それ以前のバージョンの場合、テストは失敗します。\n"
+"* * オーバーロードの無視\n"
+"\n"
+"これらの関数はオーバーロードされた演算子を無視し、単純に変数の型のみをチェックします。オーバーロードは問題が多く、混乱を起こすものであるため、将来的にもサ"
+"ポートされない可能性があります。\n"
+"\n"
+"オーバーロードを使用することで、変数を不透明なコンテナにしてしまい、それらがどのようなものであるのか、およびそれらをどのように扱うのかがわからなくなってし"
+"まいます。これにより、さまざまな能力をテストしなければならなくなります ('eval' を利用してクラッシュを回避する必要も生じます) "
+"し、変数を利用しようとしている人に対してインターフェイスを作成する必要もあります。その内部を調べる明確な方法が無いという点だけが問題です。\n"
+"* * subtle 型の無視:\n"
+"\n"
+"下記の型は Scalar::Util の 'reftype' で提供されているものですが、サポート対象外です:\n"
+"\n"
+"  * * 'VSTRING'\n"
+"\n"
+"これは VSTRING 向けにフラグが設定された 'PVMG' (\"通常の\" 変数) です。これは参照ではありませんので、サポート対象ではありません。"
+"\n"
+"\n"
+"  * * 'LVALUE'\n"
+"\n"
+"他のスカラー値を代理する変数です。これも参照ではありませんので、サポート対象外です。\n"
+"\n"
+"  * * 'INVLIST'\n"
+"\n"
+"この方に対するドキュメンテーションはありませんでした。\n"
+"\n"
+"何らかの適切な理由が見つかれば、サポートを追加するかもしれません。\n"
+"* * 高速性\n"
+"\n"
+"可能な限り Ref::Util は Ref::Util::XS を実装として使用します (C コンパイラが利用できない場合は Perl のみで実装された "
+"Ref::Util の代替機能を使用します。こちらはあまり高速ではありません) 。\n"
+"\n"
+"事実、 Ref::Util::XS には内部に 2 種類の実装が存在しています。これは利用している Perl "
+"のバージョンでサポートされている機能が異なるためにそうなっています。独自の OP に対応する Perl を使用している場合は OP を追加して使用します "
+"(こちらのほうが高速です) 。その他の Perl の場合は、単純に XS 関数をそのまま呼び出します (それでも純粋な Perl よりは高速です) 。\n"
+"\n"
+"ベンチマーク結果については下記をお読みください。"
 
 #. tumbleweed/perl-Ref-Util-XS/summary
 msgid "XS implementation for Ref::Util"
