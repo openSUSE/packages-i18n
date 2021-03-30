@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-03-29 10:57+0000\n"
+"PO-Revision-Date: 2021-03-30 09:57+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "perl-master/ja/>\n"
@@ -48301,10 +48301,18 @@ msgid ""
 "\n"
 "See Ref::Util for full documentation of the available functions."
 msgstr ""
+"Ref::Util::XS は Ref::Util の XS 実装で、 'ref' "
+"の返り値を調べる従来の方法よりずっと便利な参照の識別支援を行なういくつかの関数を提供しています。\n"
+"\n"
+"お使いのシステムに C コンパイラが存在する場合、 Ref::Util をインストールしたら Ref::Util::XS を使用すべきです。 "
+"'Ref::Util::XS' は自動的にインストールされ使用されるようになるはずです。これにより、 'Ref::Util' "
+"をそのまま使用するよりは顕著に高速化することができます。\n"
+"\n"
+"利用可能な関数について、詳しくは Ref::Util をお読みください。"
 
 #. tumbleweed/perl-Reply/summary
 msgid "Read, eval, print, loop, yay!"
-msgstr ""
+msgstr "Read, eval, print, loop, yay!"
 
 #. tumbleweed/perl-Reply/description
 msgid ""
@@ -48315,6 +48323,10 @@ msgid ""
 "Reply::Plugin), and through plugins supports many advanced features such as "
 "coloring and pretty printing, readline support, and pluggable commands."
 msgstr ""
+"注意: このパッケージは初期リリースであり、このモジュール内の実装は流動的に変化し続けています。フィードバックをお願いします！\n"
+"\n"
+"Reply は Perl に対する軽量で拡張性の飛んだ仕組みです。プラグインベース (詳しくは Reply::Plugin をお読みください) "
+"であり、それらを使用することで色付けやわかりやすい出力、 readline のサポートやプラグイン志井のできるコマンドなどに対応しています。"
 
 #. tumbleweed/perl-Role-Tiny/summary
 msgid "Roles: a nouvelle cuisine portion size slice of Moose"
@@ -48361,7 +48373,7 @@ msgstr "スーパークラスのメソッド実行の制御"
 
 #. tumbleweed/perl-Search-Elasticsearch/summary
 msgid "The official client for Elasticsearch"
-msgstr ""
+msgstr "Elasticsearch の公式クライアント"
 
 #. tumbleweed/perl-Search-Elasticsearch/description
 msgid ""
@@ -48370,6 +48382,9 @@ msgid ""
 "powerful open source, distributed real-time search and analytics engine for "
 "the cloud. You can read more about it on at http://www.elastic.co."
 msgstr ""
+"Search::Elasticsearch は Elasticsearch (http://elastic.co) の公式 Perl クライアントです。 "
+"Elasticsearch 自身は柔軟性が高く、パワフルなオープンソースです。クラウド内のリアルタイム検索や分析エンジンとして配布されています。詳しくは "
+"http://www.elastic.co をお読みください。"
 
 #. tumbleweed/perl-Selenium-Remote-Driver/description
 msgid ""
@@ -48449,7 +48464,7 @@ msgstr ""
 
 #. tumbleweed/perl-Session-Token/summary
 msgid "Secure, efficient, simple random session token generation"
-msgstr ""
+msgstr "機密性が高く効率的でシンプルな、乱数からのセッショントークン生成"
 
 #. tumbleweed/perl-Session-Token/description
 msgid ""
@@ -48480,6 +48495,26 @@ msgid ""
 "in ISAAC is '2**40', although no cycles this short have ever been found (and "
 "probably don't exist at all). On average, ISAAC cycles are '2**8295'."
 msgstr ""
+"このモジュールはセッショントークやパスワードリセットコード、暫定パスワードや乱数識別子などを作成することのできる、機密性が高く効率的でシンプルなインターフ"
+"ェイスです。\n"
+"\n"
+"Session::Token オブジェクトを作成すると、 '/dev/urandom' (Linux, Solaris, およびほとんどの BSDs) "
+"または '/dev/arandom' (いくつかの古い BSD) や Crypt::Random::Source::Strong::Win32 "
+"(Windows) から 1024 バイトを読み込みます。読み込んだバイト列は擬似乱数生成器 (http://www.burtleburtle.net/"
+"bob/rand/isaacafa.html) に対する乱数シードとして使用されます。\n"
+"\n"
+"このオブジェクトを作成したあとは、繰り返し 'get' メソッドを呼び出すことで、新しいトークンを毎回取得できるようになります。\n"
+"*重要*: アプリケーション内で 'fork' が行なわれると、本ジェネレータ内部の状態についても複製が行なわれることになりますので、そのままでは親プロセ"
+"スも子プロセスも同一のトークンを生成してしまうことになります。そのため、いずれか片方のプロセスではオブジェクトを再作成するようにしてください (Perl "
+"の rand と同じです) 。\n"
+"\n"
+"ジェネレータコンテキストが作成されたあとは、トークン生成でシステムコールを使用することはありません。これが Session::Token "
+"の効率性を高めています。しかしながら、これは特定の用途でのみ重要です (一般的な Web セッションではそうではありません) 。\n"
+"\n"
+"ISAAC は暗号理論的に機密性の高い PRNG (擬似乱数) で、いくつかの重要な領域で既知の RC4 アルゴリズムを改善しています。たとえば RC4 "
+"が行なうような短いサイクルや初期バイアスなどがそれにあたります。 ISAAC で論理的に最も短いサイクルは '2**40' で、"
+"実際のところはこれほどまでに短いサイクルは見つかっていません (そしておそらく存在しないはず) 。平均的には ISAAC のサイクルは '2**"
+"8295' です。"
 
 #. tumbleweed/perl-Set-IntSpan/summary
 msgid "Manages sets of integers"
@@ -48504,6 +48539,18 @@ msgid ""
 "operations involving complements to be carried out consistently, without "
 "having to worry about the actual value of INT_MAX on your machine."
 msgstr ""
+"'Set::IntSpan' は整数セットを管理します。特に連続した整数を長く実行する用途に最適化されいます。たとえば .newsrc "
+"ファイルでは下記のように記事リストを管理します:\n"
+"\n"
+"  alt.foo: 1-21,28,31   alt.bar: 1-14192,14194,14196-14221\n"
+"\n"
+"このような連続した整数は _スパン_ と呼ばれることもあります。\n"
+"\n"
+"セットはランレングス形式で内部的に保存され、コンパクトな記憶領域でありながら効率的な計算を実現しています。特に set "
+"操作はエンコードされた形式で直接実行することができます。\n"
+"\n"
+"'Set::IntSpan' は有限セットの管理を行なうために設計されています。しかしながら、 { x | x>n } "
+"のような無限セットも表現することができます。これにより補数を含む操作を、マシンの INT_MAX の値に注意することなく、安定的に実行することができます。"
 
 #. tumbleweed/perl-Set-Object/summary
 msgid "Set of objects and strings"
@@ -48522,6 +48569,10 @@ msgid ""
 "For a more complete implementation of mathematical set theory, see Set::"
 "Scalar. For sets of arbitrary objects, see Set::Object."
 msgstr ""
+"Set::Tiny は一般的な Perl ハッシュに対する薄いラッパーで、しばしば必要となる集合の操作、たとえば 2 "
+"つのセットの文字列が等しいかどうかや、一方が他方に包含されているかどうかなどの処理を行ないます。\n"
+"\n"
+"数学的集合論に対する詳しい説明は Set::Scalar を、任意のオブジェクトの集合については Set::Object をそれぞれお読みください。"
 
 #. tumbleweed/perl-Socket-MsgHdr/summary
 msgid "Sendmsg, Recvmsg and Ancillary Data Operations"
@@ -48573,6 +48624,8 @@ msgid ""
 "These types can be used with Moose, Moo, Params::ValidationCompiler, and "
 "other modules."
 msgstr ""
+"このライブラリは Path::Tiny 型のセットや Specio に対する強制機能を提供するものです。これらの型は Moose, Moo, "
+"Params::ValidationCompiler などのモジュールで使用されています。"
 
 #. tumbleweed/perl-Spreadsheet-ParseXLSX/summary
 msgid "Parse Xlsx Files"
@@ -48826,7 +48879,7 @@ msgstr "文字列処理ユーティリティ機能"
 msgid ""
 "String::Util provides a collection of small, handy functions for processing "
 "strings in various ways."
-msgstr ""
+msgstr "String::Util は、文字列を様々な方法で処理する小さくて扱いやすい関数群を提供します。"
 
 #. tumbleweed/perl-Struct-Dumb/summary
 msgid "Make simple lightweight record-like structures"
@@ -48848,6 +48901,13 @@ msgid ""
 "Also, unlike MooX::HandlesVia, it honours type constraints, plus it doesn't "
 "have the limitation that it can't mutate non-reference values."
 msgstr ""
+"Moose のネイティブな属性の仕組みや MooX::HandlesVia "
+"を以前に使用したことがあれば、このモジュールが行なうことが非常によいものであることがわかるでしょう。\n"
+"\n"
+"なぜ車輪の再発明を？とお考えかもしれませんが、これは Moo, Moose, Mouse やその他の OO ツールキットなどで動作する、いわば 1 "
+"つで全てを支配できる指輪のようなものです。\n"
+"\n"
+"なお MooX::HandlesVia とは異なり、型制約を尊重する仕組みであるほか、非参照の値を変更できない制限もありません。"
 
 #. tumbleweed/perl-Sys-LoadAvg/description
 msgid "Module for accessing System load averages."
@@ -48855,7 +48915,7 @@ msgstr "システムロードアベレージにアクセスするための モ�
 
 #. tumbleweed/perl-Sys-MemInfo/summary
 msgid "Query the total free and used physical memory"
-msgstr ""
+msgstr "物理メモリの使用済み容量と空き容量の問い合わせ"
 
 #. tumbleweed/perl-Sys-MemInfo/description
 msgid ""
@@ -48871,10 +48931,20 @@ msgid ""
 "\n"
 "It should work on FreeBSD 4 and Windows 9X/ME/NT/200X/Vista."
 msgstr ""
+"Sys::MemInfo はバイト単位で物理メモリの使用済み容量と空き容量を返します。それぞれ totalmem と freemem "
+"という変数で返されます。\n"
+"\n"
+"スワップメモリの使用済み容量と空き容量については、 totalswap と freeswap の各変数で返されます。\n"
+"\n"
+"このモジュールは Linux 3.13.0, UnixWare 7.1.2, AIX5, OpenBSD 3.8, NetBSD 2.0.2, "
+"FreBSD 5.4, HPUX11, Solaris 9, Tru64 5.1, Irix 6.5, Mac OS X 10.2 darwin, "
+"Windows XP でそれぞれテストされています。\n"
+"\n"
+"FreeBSD 4 と Windows 9X/ME/NT/200X/Vista で動作するはずです。"
 
 #. tumbleweed/perl-System-Command/summary
 msgid "Object for running system commands"
-msgstr ""
+msgstr "実行中のシステムコマンドに対するオブジェクト"
 
 #. tumbleweed/perl-System-Command/description
 msgid ""
@@ -48882,18 +48952,20 @@ msgid ""
 "an object representing them, allowing to interact with them through their "
 "'STDIN', 'STDOUT' and 'STDERR' handles."
 msgstr ""
+"System::Command は外部のシステムコマンドを実行するためのクラスで、その実行中のコマンド自身をオブジェクトとして返します。これにより、 "
+"'STDIN', 'STDOUT', 'STDERR' の各ハンドルを制御できるようになります。"
 
 #. tumbleweed/perl-Template-Plugin-Filter-ANSIColor/summary
 msgid "Colorizes text using ANSI colors"
-msgstr ""
+msgstr "ANSI カラー設定によるテキストの色づけ"
 
 #. tumbleweed/perl-Template-Plugin-Filter-ANSIColor/description
 msgid "colorizes text using ANSI colors"
-msgstr ""
+msgstr "ANSI カラー設定によるテキストの色づけ"
 
 #. tumbleweed/perl-Template-Plugin-JSON-Escape/summary
 msgid "Adds a .json vmethod and a json filter"
-msgstr ""
+msgstr ".sjon vmethod と json フィルタの追加"
 
 #. tumbleweed/perl-Template-Plugin-JSON-Escape/description
 msgid ""
@@ -48904,6 +48976,10 @@ msgid ""
 "It also provides decoding function to keep compatibility with Template::"
 "Plugin::JSON."
 msgstr ""
+"このプラグインは JSON 文字列を HTML 内に埋め込むための仕組みです。出力時には '<' や '&' などの文字を、 XSS 攻撃を防ぐために '"
+"\\uxxxx' にエンコードします。\n"
+"\n"
+"このほか、 Template::Plugin::JSON との互換性を維持するためのデコード関数も提供されています。"
 
 #. tumbleweed/perl-Template-Tiny/summary
 msgid "Template Toolkit reimplemented in as little code as possible"
@@ -48926,6 +49002,17 @@ msgid ""
 "compile phase (but despite this is still quicker, owing to heavy use of the "
 "Perl regular expression engine."
 msgstr ""
+"*Template::Tiny* は Template ツールキットの機能の一部を再実装したもので、できる限り少ないコード行数でこれを実現しています。\n"
+"\n"
+"これはテンプレートの処理にあたって軽量でメモリの使用量も少なく、かつ CPU "
+"の消費量も少なくなるように作られています。そのため、将来的に全ての機能が必要となってアップグレードを行なうか、もしくは TT "
+"スタイルのテンプレート処理を使い続けるのかを選ぶことができるようになります。\n"
+"\n"
+"実装は一部分の機能にとどまりますが、 template と stash の API との互換性は完全に確保されています。 *Template::Tiny*"
+" で使用される全てのテンプレートは、将来的に完全機能版の Template ツールキットに透過的に移行できるように作られています。\n"
+"\n"
+"なお、 Template ツールキットとは異なり、 *Template::Tiny* はコンパイルフェーズでのテンプレート処理は行ないません (ただし "
+"Perl の正規表現エンジンを使用しているため、それでも高速に動作します) 。"
 
 #. tumbleweed/perl-Term-ReadLine-Gnu/description
 msgid ""
@@ -48951,7 +49038,7 @@ msgstr ""
 
 #. tumbleweed/perl-Term-Terminfo/summary
 msgid "Access the terminfo database"
-msgstr ""
+msgstr "terminfo データベースへのアクセス"
 
 #. tumbleweed/perl-Term-Terminfo/description
 msgid ""
@@ -48972,10 +49059,21 @@ msgid ""
 "if it is available at compile-time. If not, it will use _<term.h>_ and _-"
 "lcurses_. For more detail, see the SEE ALSO section below."
 msgstr ""
+"このクラス内のオブジェクトは、 _terminfo_ データベースエントリへのアクセス機能を提供します。\n"
+"\n"
+"このデータベースは端末に関する情報を保持するもので、端末機能に対する 3 種類の個別セットを定義しています。フラグでは端末の特定機能やバグの存在有無を、数"
+"値では端末のサイズやカウント、その他の数値表現を、文字列では端末が認識できる制御文字列をそれぞれ表わします。\n"
+"\n"
+"機能には 2 種類の名前が設定されます。短いほうの名前は capname 、長いほうの名前は varname と呼ばれます。このクラスでは　 2 "
+"種類のメソッドを提供していて、一方は capname で、他方は varname で動作するようになっています。\n"
+"\n"
+"このモジュールでは、必要に応じて terminfo(5) データベースにアクセスするための _unibilium_ "
+"を使用することもできます。これは通常コンパイル時に利用するものですが、それ以外の場合は _<term.h>_ と _-lcurses_ "
+"をそれぞれ使用します。詳しくは SEE ALSO セクションをお読みください。"
 
 #. tumbleweed/perl-Test-API/summary
 msgid "Test a list of subroutines provided by a module"
-msgstr ""
+msgstr "モジュールが提供するサブルーチンリストのテスト"
 
 #. tumbleweed/perl-Test-API/description
 msgid ""
@@ -48983,6 +49081,9 @@ msgid ""
 "useful for confirming a planned API in testing and ensuring that other "
 "functions aren't unintentionally included via import."
 msgstr ""
+"このシンプルなテストモジュールは、モジュールが提供するサブルーチンリストをテストすることができます。これはテスト時に設計通りの API "
+"仕様に準拠しているかどうかを確認する際に有用であるほか、 import "
+"を介してその他の関数が不正に取り込まれていないかどうかをテストする際にも使用することができます。"
 
 #. tumbleweed/perl-Test-Base/summary
 msgid "Data Driven Testing Framework"
@@ -49248,7 +49349,7 @@ msgstr ""
 
 #. tumbleweed/perl-Test-Magpie/summary
 msgid "Mocking framework with method stubs and behaviour verification"
-msgstr ""
+msgstr "メソッドスタブと振る舞い検証のためのモッキングフレームワーク"
 
 #. tumbleweed/perl-Test-Magpie/description
 msgid ""
@@ -49285,6 +49386,29 @@ msgid ""
 "of argument, or consume multiple arguments. See Test::Magpie::"
 "ArgumentMatcher for the juicy details."
 msgstr ""
+"Test::Magpie はテストダブルフレームワークで、 Java 向けの Mockito フレームワークや Python-Mockito "
+"プロジェクトに強く感化されてできたものです。 Mockito では、何が起こるべきなのかを明確に指定するのではなく、その動作のオブジェクトを \""
+"隠密に\" 調査します。このような仕組みは非常に柔軟なものであり、 EasyMock のようなモッキングシステムよりもずっと簡単に扱うことができますので、"
+" Perl 版の実装を行なったわけです。\n"
+"* モックオブジェクト\n"
+"\n"
+"モックオブジェクトは Test::Magpie::Mock "
+"で表わされるオブジェクトですが、期待通りの任意のものになりすますことができます。モックオブジェクトには任意のメソッドを設定できますし、"
+"役割やスーパークラスに対する isa "
+"サブクラスも任意に設定することができます。この仕組みにより、モックオブジェクトを容易に作成して実際のオブジェクトであるかのように扱うことができます。\n"
+"* メソッドスタブ\n"
+"\n"
+"モックオブジェクトでは任意のメソッドを呼び出すことができますが、それは呼び出しとして記録されます。既定では、"
+"メソッド呼び出しはスカラーコンテキストの場合は 'undef' を、リストコンテキストの場合は空のリストを返します。ただし多くの場合において、クライアント"
+"側からはいくつかのパラメータを指定してメソッドを呼び出したいはずです。そのため、メソッドスタブを指定してパラメータを返すようにします。\n"
+"* 対話の検証\n"
+"\n"
+"作成した具体的なコード (テスト対象のコード) を呼び出した後は、モック内でそれが正しく動作したことを確認する必要があります。これを実現するため、適切なパ"
+"ラメータおよび適切な回数の呼び出しでコードの検証を行なうことができます。\n"
+"* パラメータマッチング\n"
+"\n"
+"Magpie では呼び出し内で渡されるパラメータを検証するための支援メソッドも用意されています。パラメータ間の同一性のほか、パラメータの汎用型の消費や複数"
+"パラメータの消費などがそれにあたります。詳しくは Test::Magpie::ArgumentMatcher をお読みください。"
 
 #. tumbleweed/perl-Test-Manifest/summary
 msgid "Interact with a t/test_manifest file"
@@ -49292,7 +49416,7 @@ msgstr "t/test_manifest ファイルの処理"
 
 #. tumbleweed/perl-Test-Metrics-Any/summary
 msgid "Assert that code produces metrics via L<Metrics::Any>"
-msgstr ""
+msgstr "コードが L<Metrics::Any> を介して生成されることの仮定"
 
 #. tumbleweed/perl-Test-Metrics-Any/description
 msgid ""
@@ -49302,10 +49426,14 @@ msgid ""
 "Loading this module automatically sets the Metrics::Any::Adapter type to "
 "'Test'."
 msgstr ""
+"このテストモジュールは単体テストを作成する際の支援を行なうもので、コードが Metrics::Any を介してメトリックを報告するテストに対応しています。"
+"\n"
+"\n"
+"このモジュールを読み込むと、 Metrics::Any::Adapter 型が自動的に 'Test' に設定されます。"
 
 #. tumbleweed/perl-Test-MockDateTime/summary
 msgid "Mock Datetime->Now Calls During Tests"
-msgstr ""
+msgstr "テスト時の Datetime->Now の擬似"
 
 #. tumbleweed/perl-Test-MockDateTime/description
 msgid ""
@@ -49337,10 +49465,33 @@ msgid ""
 "A drawback when relying on this module is that you must know that the module "
 "you are testing uses 'DateTime->now' to obtain the current time. =cut"
 msgstr ""
+"現在時刻を取得する処理は、テストシナリオを作成する際には不便な仕組みです。テストの実行時には特定の既知の時刻値を取得できるようにすれば、テスト結果がより推"
+"測可能なものになるはずです。\n"
+"\n"
+"他の Date モックとの違いは使用方法の簡潔さで、擬似的な日付はテストのスコープ内でのみ存在し、安定しているべきものである、という考え方を使用しています"
+"。このスコープを外れると通常通りの日時を取得できるようになります。これにより、簡易なモジュールになっています。\n"
+"\n"
+"このシンプルなモジュールは、指定したブロックの実行時に指定した日時に偽装するだけの仕組みを提供します。既定では 'on' "
+"キーワードがテストファイルのネームスペースに公開され、 DateTime::Format::DateParse "
+"で認識可能な形式で日時を取得できるようにします。\n"
+"\n"
+"    on '2013-01-02 03:04:05', sub { ... };\n"
+"\n"
+"上記は下記と同じ動作になります:\n"
+"\n"
+"    {         my $now = DateTime::Format::DateParse->parse_datetime("
+"             '2013-01-02 03:04:05'         );\n"
+"\n"
+"        local *DateTime::now = sub { $now->clone };\n"
+"\n"
+"        ... everything from code block above     }\n"
+"\n"
+"このモジュールに依存することによる欠点は、テスト対象のモジュールが 'DateTime->now' "
+"を利用して時刻を取得しているかどうかを知っておく必要がある、という点です。 =cut"
 
 #. tumbleweed/perl-Test-Modern/summary
 msgid "precision testing for modern perl"
-msgstr ""
+msgstr "モダン Perl 向け精密性テスト"
 
 #. tumbleweed/perl-Test-Modern/description
 msgid ""
@@ -49359,6 +49510,16 @@ msgid ""
 "above; and if you can persuade its dependencies to install (not necessarily "
 "easy!), should be OK on anything back to Perl 5.6.1."
 msgstr ""
+"Test::Modern は Test::More, Test::Fatal manpage, Test::Warnings, Test::API, "
+"Test::LongString, Test::Deep の最良の機能を提供するもので、 Test::Requires, Test::"
+"DescribeMe, Test::Moose, Test::CleanNamespaces などのアイディアも採用しています。\n"
+"\n"
+"Test::Modern はスクリプト内で strict や warnings の使用を自動的に課す仕組みになっているほか、 IO::File "
+"を自動的に読み込むようにもなっています (Modern::Perl が行なうことと多くは同じです) 。\n"
+"\n"
+"Test::Modern はモダンなテストフレームワークですが、それ以前のバージョンの Perl でも動作するはずです。 Perl 5.8.9 "
+"もしくはそれ以降であれば簡単にインストールできますし、依存関係を問題なくインストールできる (簡単である必要はありません) 環境であれば、 Perl "
+"5.6.1 での問題なく動作するはずです。"
 
 #. tumbleweed/perl-Test-Refcount/summary
 msgid "Assert reference counts on objects"
@@ -49602,7 +49763,7 @@ msgstr "信頼性のあるジョブキュー"
 
 #. tumbleweed/perl-Tie-Handle-Offset/summary
 msgid "Tied handle that hides the beginning of a file"
-msgstr ""
+msgstr "ファイルの冒頭部を隠蔽する tie ハンドル"
 
 #. tumbleweed/perl-Tie-Handle-Offset/description
 msgid ""
@@ -49614,6 +49775,11 @@ msgid ""
 "at the offset. Likewise, 'seek($fh,80,0)' will seek to 80 bytes from the "
 "offset instead of 80 bytes from the actual start of the file."
 msgstr ""
+"このモジュールはファイルの冒頭部を隠蔽するファイルハンドルを提供します。ファイルを開くと、ファイルハンドルは指定した位置まで移動されます。 'seek()"
+"' や 'tell()' の呼び出しは、それぞれ指定した位置を隠蔽するように動作します。\n"
+"\n"
+"たとえば 'tell($fh)' が 0 を返した場合でも、実際のファイル位置はオフセット値分だけズレています。同様に 'seek($fh,80,0)' "
+"を実行すると、通常はファイルの冒頭部から 80 バイト目に移動しますが、このモジュールでは 80 バイトにオフセット値を足した分だけの位置に移動します。"
 
 #. tumbleweed/perl-Tie-Hash-DBD/summary
 msgid "Tie a plain hash to a database table"
@@ -49650,11 +49816,11 @@ msgstr ""
 
 #. tumbleweed/perl-Tk/summary
 msgid "Graphical user interface toolkit for Perl"
-msgstr ""
+msgstr "Perl 向けグラフィカルユーザインターフェイスツールキット"
 
 #. tumbleweed/perl-Tk/description
 msgid "Tk - a graphical user interface toolkit for Perl"
-msgstr ""
+msgstr "Tk - Perl 向けグラフィカルユーザインターフェイスツールキット"
 
 #. tumbleweed/perl-Tk/perl-Tk-devel/summary
 msgid "Development files for perl-Tk"
@@ -49662,11 +49828,11 @@ msgstr "perl-Tk 向け開発用ファイル"
 
 #. tumbleweed/perl-Tk/perl-Tk-devel/description
 msgid "Development files for Tk - a graphical user interface toolkit for Perl"
-msgstr ""
+msgstr "Tk - Perl 向けグラフィカルユーザインターフェイスツールキット向け開発用ファイル"
 
 #. tumbleweed/perl-Twiggy/summary
 msgid "AnyEvent HTTP server for PSGI"
-msgstr ""
+msgstr "PSGI 向け AnyEvent HTTP サーバ"
 
 #. tumbleweed/perl-Twiggy/description
 msgid ""
@@ -49705,6 +49871,37 @@ msgid ""
 "\n"
 "    start_server --port 8111 -- plackup --server Twiggy app.psgi"
 msgstr ""
+"Twiggy は下記のようなユニークな機能を持つ軽量高速な HTTP サーバです:\n"
+"* PSGI\n"
+"\n"
+"任意の PSGI アプリケーションを動作させることができます。 _psgi.nonblocking_ と _psgi.streaming_ "
+"の両方のインターフェイスに完全対応しています。\n"
+"* AnyEvent\n"
+"\n"
+"このサーバは AnyEvent を利用していて、非ブロッキングなイベントループ内で動作しています。そのため、 I/O "
+"の重いジョブを動作させたり、長時間ポーリングなどで遅延応答をしたり、 WebSocket や (サーバプッシュ型の) "
+"ストリーミングコンテンツを流すようなイベントドリブンな Web アプリケーションに最適です。\n"
+"\n"
+"このソフトウエアは Plack::Server::AnyEvent と呼ばれていましたが、これは後から Twiggy に名前変更されました。\n"
+"* 高速なヘッダパーサ\n"
+"\n"
+"XS/C ベースの HTTP ヘッダパーサが含まれていますので、最高の性能を発揮することができます (ただし使用は任意で、 HTTP::Parser::"
+"XS モジュールをインストールしておく必要があります。詳しくは Plack::HTTPParser をお読みください) 。\n"
+"* 軽量で高速\n"
+"\n"
+"Twiggy を動作させるのに必要なメモリは 6MB だけで、 MacBook Pro 13\" late 2009 の環境で Perl 5.10 "
+"を利用している場合、 1 プロセスで 4500 リクエスト毎秒を処理することができます。\n"
+"* スーパーデーモン対応\n"
+"\n"
+"Server::Starter に対応し、ホットデプロイやリクエスト終了後再起動に対応しています。\n"
+"\n"
+"このモジュールを使用するには:\n"
+"\n"
+"    plackup --server Twiggy --port 8111 app.psgi\n"
+"\n"
+"の代わりに Server::Starter をインストールして、下記のように実行します:\n"
+"\n"
+"    start_server --port 8111 -- plackup --server Twiggy app.psgi"
 
 #. tumbleweed/perl-Type-Tiny/summary
 msgid "Tiny, yet Moo(se)-compatible type constraint"
@@ -49726,7 +49923,7 @@ msgstr ""
 
 #. tumbleweed/perl-UNIVERSAL-ref/summary
 msgid "Turns ref() into a multimethod"
-msgstr ""
+msgstr "ref() のマルチメソッド対応"
 
 #. tumbleweed/perl-UNIVERSAL-ref/description
 msgid ""
@@ -49734,6 +49931,8 @@ msgid ""
 "called on an object that has requested an overloaded ref, the object's '-"
 ">ref' method will be called and its return value used instead."
 msgstr ""
+"このモジュールは内蔵関数である ref() の動作を変更するためのものです。 ref() がオーバーロードされた ref "
+"を持つオブジェクトに対して呼び出された場合、オブジェクトの '->ref' メソッドを呼び出して、その返り値を使用するようにします。"
 
 #. tumbleweed/perl-URI-ws/summary
 msgid "WebSocket support for URI package"
@@ -49745,10 +49944,12 @@ msgid ""
 "methods for WebSocket URIs as it does for HTTP ones. For secure WebSockets, "
 "see URI::wss."
 msgstr ""
+"このモジュールをインストールすると、 URI パッケージは HTTP で提供されるメソッドと同じものを WebSocket "
+"に対して実施できるようになります。 WebSocket の SSL 暗号化版については、 URI::wss をご覧ください。"
 
 #. tumbleweed/perl-UUID/summary
 msgid "DCE compatible Universally Unique Identifier library for Perl"
-msgstr ""
+msgstr "DCE 互換の Perl 向け Universally Unique Identifier (UUID) ライブラリ"
 
 #. tumbleweed/perl-UUID/description
 msgid ""
@@ -49762,10 +49963,18 @@ msgid ""
 "Open Software Foundation (OSF) Distributed Computing Environment (DCE) "
 "utility uuidgen."
 msgstr ""
+"UUID "
+"ライブラリはオブジェクトに対する唯一の識別番号を生成するための仕組みで、ローカルシステム内だけでなくさまざまなシステムにまたがって使用することができます。"
+"たとえば HTTP の Cookie 生成では、識別番号の衝突を防ぎながら、かつサーバ間の通信を行なうことなく、複数の Web "
+"サーバにまたがった識別子を生成しています。\n"
+"\n"
+"生成された UUID はシステム内でもシステム外でもそれなりの唯一性が期待されます。また、 Open Software Foundation (OSF) "
+"Distributed Computing Environment (DCE) が提供する uuidgen "
+"ユーティリティが生成する値とも互換性があります。"
 
 #. tumbleweed/perl-Unicode-EastAsianWidth/summary
 msgid "East Asian Width properties"
-msgstr ""
+msgstr "東アジアの文字幅ライブラリ"
 
 #. tumbleweed/perl-Unicode-EastAsianWidth/description
 msgid ""
@@ -49795,6 +50004,24 @@ msgid ""
 "will no longer work on Perl 5.16 and later versions, and hence is not "
 "recommended."
 msgstr ""
+"このモジュールはユーザ指定の Unicode プロパティを提供するもので、東アジアのもじを扱う際に使用するものです。仕様は "
+"http://www.unicode.org/unicode/reports/tr11/ に書かれています。\n"
+"\n"
+"呼び出し側のスコープに対して、下記のような関数を公開して Perl の Unicode マッチングシステムで使用することができます: "
+"'InEastAsianFullwidth', 'InEastAsianHalfwidth', 'InEastAsianAmbiguous', "
+"'InEastAsianNarrow' 'InEastAsianWide', 'InEastAsianNeutral'\n"
+"\n"
+"上記の TR11 に従って、 2 種類の状況依存のプロパティが追加で公開されます: 'InFullwidth' ('Fullwidth' と "
+"'Wide' の合成) および 'InHalfwidth' ('Halfwidth', 'Narrow', 'Neutral' の合成)\n"
+"\n"
+"_曖昧な_ 文字は、既定では 'InHalfwidth' として扱われますが、このモジュールの使用を始める前のコンパイル時に、 "
+"'$Unicode::EastAsianWidth::EastAsian' の値を true にすることで、動作を変更することができます:\n"
+"\n"
+"    BEGIN { $Unicode::EastAsianWidth::EastAsian = 1; }     use "
+"Unicode::EastAsianWidth;\n"
+"\n"
+"実行時に '$Unicode::EastAsianWidth::EastAsian' を設定しても、 Perl 5.8 から 5.14 "
+"までの間であれば問題なく動作しますが、 Perl 5.16 およびそれ以降のバージョンでは動作しなくなるものと思われます。そのため非推奨です。"
 
 #. tumbleweed/perl-Unicode-Normalize/description
 msgid ""
@@ -49824,7 +50051,7 @@ msgstr ""
 
 #. tumbleweed/perl-User-Identity/summary
 msgid "Maintain info about a physical person"
-msgstr ""
+msgstr "物理的な人間に関する情報の管理"
 
 #. tumbleweed/perl-User-Identity/description
 msgid ""
@@ -49844,6 +50071,17 @@ msgid ""
 "\n"
 "Extends \"DESCRIPTION\" in User::Identity::Item."
 msgstr ""
+"'User-Identity' の配布物では、特定の 1 人のユーザに対する情報オブジェクト集を管理ことができます。 'User::Identity' "
+"モジュールでは、既定値や変換、多くの場合において必要な組み合わせを利用して、スマートに解決しようとしています。\n"
+"\n"
+"このモジュールでは記憶領域に関する実装は行なっていませんので、必要であれば簡単もしくは複雑な Perl "
+"プログラムで作成する必要があります。この方法により、 XML ファイルでデータを保存するのに比べて、より柔軟な仕組みになっています。たとえば Data::"
+"Dumper, Storable, DBI, AddressBook "
+"など、さまざまなデータ保存形式が考えられます。この処理に対する拡張も現在開発予定です。\n"
+"\n"
+"より多くのユーザ情報が必要である場合は、モジュールの作者に問い合わせてください。\n"
+"\n"
+"User::Identity::Item 内では \"DESCRIPTION\" の拡張を行なっています。"
 
 #. tumbleweed/perl-WWW-Form-UrlEncoded/summary
 msgid "Parser and builder for application/x-www-form-urlencoded"
@@ -50089,16 +50327,25 @@ msgid ""
 "Parser. Therefore XML::Parser, XML::DOM and LWP::Simple have to be installed "
 "properly for XML::XSLT to run."
 msgstr ""
+"このモジュールは W3C の XSLT 仕様を実装しているモジュールです。この仕様に記されている全ての仕様を実装することを目的としていますが、現時点ではま"
+"だ実現できていません。しかしながら、既に動作するレベルまで到達できています。各コマンドの状態について、詳しくは XML::XSLT "
+"コマンドをお読みください。\n"
+"\n"
+"XML::XSLT は XML::DOM と LWP::Simple を使用しています。 XML::DOM は XML::Parser "
+"を使用しています。そのため、 XML::XSLT を実行するには、 XML::Parser, XML::DOM, LWP::Simple "
+"の各モジュールが必要となります。"
 
 #. tumbleweed/perl-XString/summary
 msgid "Isolated String helpers from B"
-msgstr ""
+msgstr "B から独立した文字列ヘルパー"
 
 #. tumbleweed/perl-XString/description
 msgid ""
 "XString provides the B string helpers in one isolated package. Right now "
 "only cstring and perlstring are available."
 msgstr ""
+"XString は 1 つの独立したパッケージ内に B 文字列ヘルパーを提供しています。現時点では cstring と perlstring "
+"のみ提供されています。"
 
 #. tumbleweed/perl-YAML-LibYAML-API/summary
 msgid "Wrapper around the C libyaml library"
@@ -50137,7 +50384,7 @@ msgstr ""
 
 #. tumbleweed/perl-YAML-PP-LibYAML/summary
 msgid "Faster parsing for YAML::PP"
-msgstr ""
+msgstr "YAML::PP 向けの高速処理"
 
 #. tumbleweed/perl-YAML-PP-LibYAML/description
 msgid ""
@@ -50145,6 +50392,9 @@ msgid ""
 "Parser as a the backend parser, it uses YAML::PP::LibYAML::Parser which "
 "calls YAML::LibYAML::API, an XS wrapper around the 'C libyaml'."
 msgstr ""
+"YAML::PP::LibYAML は YAML::PP のサブクラスです。 YAML::PP::Parser "
+"をバックエンドパーサとして使用する代わりに YAML::PP::LibYAML::Parser を使用して、ここから YAML::LibYAML::"
+"API ('C libyaml' に対する XS ラッパー) を呼び出しています。"
 
 #. tumbleweed/perl-YAML-Syck/summary
 msgid "Perl YAML loader and dumper"
@@ -50412,7 +50662,7 @@ msgstr ""
 
 #. tumbleweed/perl-lib-relative/summary
 msgid "Add paths relative to the current file to @INC"
-msgstr ""
+msgstr "現在のファイルからの相対パスの @INC への追加"
 
 #. tumbleweed/perl-lib-relative/description
 msgid ""
@@ -50437,6 +50687,19 @@ msgid ""
 "For cases where this module cannot be loaded beforehand, the last section of "
 "the \"SYNOPSIS\" can be copy-pasted into a file to perform the same task."
 msgstr ""
+"ローカルディレクトリからモジュールを読み込む際、 @INC にパスを追加するのは簡単に思われますが、いくつか注意すべき点があります。 '@INC' "
+"に相対パスをそのまま追加してしまうと、後ほどカレントディレクトリを変更してしまうと、モジュールの読み込み元も変更されてしまいます。これは　Perl "
+"5.26.0 までデフォルトで '@INC' に設定されていた '.' も同様ですし、 'use lib 'path/to/lib'' "
+"のような相対パス指定でも同じことになります。これらのディレクトリは書き込み可能である可能性があるため、場合によっては脆弱性にもなり得ます。それに加えて、"
+"一般的に使用されている FindBin モジュールはインタプリタの状態に依存して動作しますし、 Perl インタプリタを実行した元のスクリプトのパスにも影"
+"響を受けます。また、生成されたコードや組み込まれたコードの場合は、回避策を別途用意する必要があるかもしれません。このモジュールでは、現在のファイルからの相"
+"対パスを受け付けて絶対パスに変換し、それを '@INC' に追加しています。\n"
+"\n"
+"もしもこのモジュールが既に読み込み可能な状態にあれば、これを lib.pm と併用して使用することができます。これに相対パスを指定することで、現在のファイ"
+"ルからの相対パスとして絶対パスに変換され、ライブラリに渡されるようになります。複数のパラメータは個別に絶対パスに変換されますし、最初から絶対パスになってい"
+"れば変換されずに渡されるようになっています。\n"
+"\n"
+"このモジュールを事前に読み込むことができない場合は、 \"SYNOPSIS\" の最後のセクションをお読みになり、ファイルを貼り付けてください。"
 
 #. tumbleweed/perl-local-lib/summary
 msgid "Create and use a local lib/ for perl modules with PERL5LIB"
