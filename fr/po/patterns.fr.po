@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-04-14 12:56+0000\n"
+"PO-Revision-Date: 2021-04-14 20:56+0000\n"
 "Last-Translator: Lucie Charrier <c.chalu@free.fr>\n"
 "Language-Team: French <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/fr/>\n"
@@ -960,12 +960,6 @@ msgstr "Nœud de calcul de base HPC"
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node comprises of a minimal software image and mainly runs "
-#| "simulation programs. Services on this node should be reduced to a bare "
-#| "minimum and the node *must* be installed in a automatic manner. The "
-#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
@@ -975,7 +969,7 @@ msgstr ""
 "Un nœud de calcul comprend une image logicielle minimale et exécute "
 "principalement des programmes de simulation. Les services sur un tel nœud "
 "doivent être réduits au minimum et le nœud *doit* être installé de manière "
-"automatique. Le modèle « bibliothèques HPC modularisées » doit également "
+"automatique. Le modèle « bibliothèques HPC Modularisées » doit également "
 "être installé."
 
 #. leap/patterns-hpc/patterns-hpc-compute_node/category
@@ -1014,26 +1008,18 @@ msgstr "Paquets de développement HPC"
 
 #. leap/patterns-hpc/patterns-hpc-development_node/description
 #. tumbleweed/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
-#| "addition it includes the GNU compilers and the relevant management "
-#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 "Ce paquet fournit tous les paquets pertinents pour le développement "
-"d'applications HPC. Il dépend du modèle « bibliothèques HPC modularisées ». "
+"d'applications HPC. Il dépend du modèle « bibliothèques HPC Modularisées ». "
 "Il inclut également les compilateurs GNU et les paquets de gestion "
 "pertinents."
 
 #. leap/patterns-hpc/patterns-hpc-libraries/summary
 #. tumbleweed/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "Bibliothèques modularisées HPC"
 
@@ -1470,10 +1456,8 @@ msgstr ""
 "utilisateur basiques."
 
 #. leap/patterns-ofed/patterns-ofed-ofed-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing ofed."
-msgstr "Le modèle 32bit complétant base."
+msgstr "Le modèle 32bit complétant OFED."
 
 #. leap/patterns-office/patterns-office-office/summary
 #. tumbleweed/patterns-office/patterns-office-office/summary
@@ -1658,10 +1642,12 @@ msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
 "communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
+"Ce modèle installe les outils d'interface de ligne de commande Microsoft "
+"Azure pour communiquer avec la structure cloud (par ex. azure-cli)."
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
 msgid "OpenStack - All"
-msgstr ""
+msgstr "OpenStack - Tout"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
 msgid ""
@@ -1671,10 +1657,16 @@ msgid ""
 "pattern, but instead install one of the use-case specific patterns (e.g. "
 "OpenStack - Tools)."
 msgstr ""
+"Ce modèle installe tous les outils d'interface de ligne de commande "
+"OpenStack, les paquets d'initialisation d'instance et les outils pour "
+"communiquer avec la structure cloud à partir d'une instance en cours "
+"d'exécution. Plutôt que d'installer ce modèle, il est préférable d'installer "
+"l'un des modèles spécifiques aux cas d'utilisation (par ex. OpenStack - "
+"Outils)."
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
 msgid "OpenStack - Instance Initialization"
-msgstr ""
+msgstr "OpenStack - Initialisation d'instance"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
 msgid ""
@@ -1682,26 +1674,34 @@ msgid ""
 "support the provisioning and running of instances in the cloud framework (e."
 "g. cloud-init)."
 msgstr ""
+"Ce modèle installe les paquets d'initialisation d'instance OpenStack qui "
+"prennent en charge le provisioning et l'exécution des instances dans la "
+"structure cloud (par ex. cloud-init)."
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
 msgid "OpenStack - Instance Tools"
-msgstr ""
+msgstr "OpenStack - Outils d'instance"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
 msgid ""
 "This pattern install the OpenStack instance specific tools which are used to "
 "collect instance metadata."
 msgstr ""
+"Ce modèle installe les outils spécifiques à une instance OpenStack qui sont "
+"utilisés pour collecter les métadonnées de l'instance."
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
 msgid "OpenStack - Tools"
-msgstr ""
+msgstr "OpenStack - Outils"
 
 #. leap/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
 msgid ""
 "This pattern installs the OpenStack command line interface tools to "
 "communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
 msgstr ""
+"Ce modèle installe les outils d'interface de ligne de commande OpenStack "
+"pour communiquer avec la structure cloud (par ex. python-"
+"susepubliccloudinfo)."
 
 #. leap/patterns-rpm-macros/summary
 #. tumbleweed/patterns-rpm-macros/summary
@@ -1717,33 +1717,27 @@ msgstr ""
 
 #. leap/patterns-rt/summary
 msgid "Patterns for SLE Real Time Module"
-msgstr ""
+msgstr "Modèles pour SLE Real Time Module"
 
 #. leap/patterns-rt/patterns-rt-rt_sles/summary
 msgid "SLE Real Time Module"
-msgstr ""
+msgstr "SLE Real Time Module"
 
 #. leap/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
-msgstr ""
+msgstr "Modèles pour SLES pour applications SAP"
 
 #. leap/patterns-sap/patterns-sap-b1/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP BusinessOne Server Base"
-msgstr "Base serveur pour applications SAP"
+msgstr "Base serveur pour SAP BusinessOne"
 
 #. leap/patterns-sap/patterns-sap-b1/description
-#, fuzzy
-#| msgid "Set up the server for installing SAP systems."
 msgid "Set up the server for installing SAP BusinessOne systems."
-msgstr "Configurez le serveur pour installer des systèmes SAP."
+msgstr "Configurez le serveur pour installer des systèmes SAP BusinessOne."
 
 #. leap/patterns-sap/patterns-sap-hana/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP HANA Server Base"
-msgstr "Base serveur pour applications SAP"
+msgstr "Base serveur pour SAP HANA"
 
 #. leap/patterns-sap/patterns-sap-hana/description
 #, fuzzy
@@ -1814,7 +1808,7 @@ msgstr "Le modèle 32bit complétant directory_server."
 #. leap/patterns-server-enterprise/patterns-server-enterprise-fips/summary
 #. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "Paquets spécifiques à FIPS 140-2"
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-fips/description
 msgid ""
@@ -1828,6 +1822,16 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"Ce modèle installe les paquets spécifiques à FIPS 140-2 qui complètent les "
+"différents modules cryptographiques utilisés. Il est nécessaire si vous "
+"voulez exécuter la machine avec \"fips=1\".\n"
+"\n"
+"Notez que ce modèle active seulement les opérations conformes à FIPS 140-2 ; "
+"il ne fait pas directement du système un système certifié ou validé FIPS "
+"140-2.\n"
+"\n"
+"Reportez-vous aux instructions SUSE officielles concernant l'état de la "
+"certification FIPS 140-2."
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 #, fuzzy
@@ -1837,13 +1841,15 @@ msgstr "Le modèle 32bit complétant base."
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "Prise en charge de la cryptographie matérielle Sytem z"
 
 #. leap/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
 msgstr ""
+"Sélection de paquets qui installe la pile cryptographique matérielle System "
+"z sur System z."
 
 # TLABEL fr_FR_2002_02_20_2232__6
 #. leap/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
@@ -2192,11 +2198,11 @@ msgstr "Système de base minimal (alias pour base)"
 
 #. tumbleweed/patterns-base/patterns-base-bootloader/summary
 msgid "Bootloader"
-msgstr ""
+msgstr "Chargeur d'amorçage"
 
 #. tumbleweed/patterns-base/patterns-base-bootloader/description
 msgid "This pattern holds files required for booting the system"
-msgstr ""
+msgstr "Ce modèle contient les fichiers nécessaires au démarrage du système"
 
 #. tumbleweed/patterns-base/patterns-base-minimal_base/description
 #, fuzzy
@@ -2226,6 +2232,11 @@ msgid ""
 "security policy, and streamlines the amount of software involved with "
 "security policy enforcement."
 msgstr ""
+"Security-Enhanced Linux (SELinux) fournit un mécanisme pour supporter les "
+"politiques de sécurité de contrôle d'accès, y compris les contrôles d'accès "
+"obligatoires (MAC). Son architecture s'efforce de séparer l'application des "
+"règles de sécurité de la politique de sécurité, et rationalise la quantité "
+"de logiciels impliqués dans l'application de la politique de sécurité."
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
@@ -2236,6 +2247,8 @@ msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
 msgstr ""
+"Cela fournit la base pour les paquets et conteneurs de pilotes Ceph, Rook, "
+"Ceph CSI."
 
 #. tumbleweed/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/category
@@ -2503,11 +2516,11 @@ msgstr ""
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/summary
 msgid "Sway Tiling Wayland Compositor and related tools"
-msgstr ""
+msgstr "Compositeur Sway Tiling Wayland et outils associés"
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
-msgstr ""
+msgstr "Compositeur Sway Tiling Wayland et outils associés."
 
 #. tumbleweed/patterns-yast/patterns-yast-yast2_basis/summary
 #, fuzzy
