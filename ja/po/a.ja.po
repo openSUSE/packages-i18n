@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-04-28 02:06+0000\n"
+"PO-Revision-Date: 2021-04-28 05:57+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "a-master/ja/>\n"
@@ -6206,37 +6206,6 @@ msgstr "Apache 向け内蔵 Perl"
 
 #. leap/apache2-mod_perl/description
 #. tumbleweed/apache2-mod_perl/description
-#, fuzzy
-#| msgid ""
-#| "The Apache/Perl integration project brings together the full power of the "
-#| "Perl programming language and the Apache HTTP server.\n"
-#| "\n"
-#| "With mod_perl, it is possible to write Apache modules entirely in Perl. "
-#| "The persistent interpreter embedded in the server avoids the overhead of "
-#| "starting an external interpreter and the penalty of Perl start-up time.\n"
-#| "\n"
-#| "Note that you do not need mod_perl to run perl scripts via the common "
-#| "gateway interface (CGI). mod_perl enables you to run Perl scripts in an "
-#| "embedded interpreter if the additional performance is needed, but may "
-#| "require modifications to the scripts.\n"
-#| "\n"
-#| "Usage:\n"
-#| "\n"
-#| "To load the module into Apache, run the command \"a2enmod perl\" as "
-#| "root.\n"
-#| "\n"
-#| "To learn about the configuration, the best reference unequivocally is "
-#| "http://perl.apache.org/docs/\n"
-#| "\n"
-#| "For porting 1.0 applications to 2.0, the page http://perl.apache.org/"
-#| "docs/2.0/user/porting/compat.html should give the required information.\n"
-#| "\n"
-#| "Most mod_perl handlers use the perl-script handler. Scripts can run in "
-#| "\"mod_perl mode\" (preconfigured for URLs starting with /perl/) or \"perl "
-#| "cgi mode\" (preconfigured for URLs starting /cgi-perl). Plain CGI scripts "
-#| "can be run via /cgi-bin/. In all these cases, the script would be placed "
-#| "inside the /srv/www/cgi-bin/ directory. Refer to /etc/apache2/conf.d/"
-#| "mod_perl.conf about this configuration."
 msgid ""
 "The Apache/Perl integration project brings together the full power of the "
 "Perl programming language and the Apache HTTP server.\n"
@@ -6250,36 +6219,16 @@ msgid ""
 "embedded interpreter if the additional performance is needed, but may "
 "require modifications to the scripts."
 msgstr ""
-"Apache/Perl 統合化プロジェクトは、 Perl プログラミング言語と Apache HTTP サー"
-"バの両方について、その力を最大限に引き出すために作られました。\n"
+"Apache/Perl 統合化プロジェクトは、 Perl プログラミング言語と Apache HTTP "
+"サーバの両方について、その力を最大限に引き出すために作られました。\n"
 "\n"
-"mod_perl を利用することで、 Apache モジュール全体を Perl で記述することができ"
-"るようになります。この常駐型のインタプリタは、サーバ内でのインタプリタのオー"
-"バーヘッドと、 Perl の起動時間を削減する効果をもたらします。\n"
+"mod_perl を利用することで、 Apache モジュール全体を Perl "
+"で記述することができるようになります。この常駐型のインタプリタは、サーバ内でのインタプリタのオーバーヘッドと、 Perl "
+"の起動時間を削減する効果をもたらします。\n"
 "\n"
-"なお、 mod_perl は perl スクリプトを CGI (Common Gateway Interface) として動"
-"作させるのに、必ずしも必要なものではありません。 mod_perl はさらなる性能向上"
-"を目指す目的で、 Perl スクリプトを内蔵のインタプリタで動作させるようにするも"
-"ので、場合によってはスクリプト側の修正が必要になるかもしれません。\n"
-"\n"
-"使用方法:\n"
-"\n"
-"Apache にモジュールを読み込むには、 root で \"a2enmod perl\" コマンドを実行し"
-"ます。\n"
-"\n"
-"設定内容について知るには、もっとも正確な文書が http://perl.apache.org/docs/に"
-"あります。\n"
-"\n"
-"1.0 のアプリケーションを 2.0 に移植するには、 http://perl.apache.org/"
-"docs/2.0/user/porting/compat.html で必要な情報を得てください。\n"
-"\n"
-"多くの mod_perl ハンドラは、 Perl スクリプトのハンドラを使用します。スクリプ"
-"トは\"mod_perl モード\" (/perl/ で始まる設定済み URL) で動作させることができ"
-"るほか、\"perl CGI モード\" (/cgi-perl で始まる設定済み URL) で動作させること"
-"ができます。単純な CGI スクリプトであれば、 /cgi-bin/ に配置してもかまいませ"
-"ん。いずれの場合とも、スクリプトは /srv/www/cgi-bin/ ディレクトリ内に配置しま"
-"す。設定内容について詳しくは、 /etc/apache2/conf.d/mod_perl.conf を参照してく"
-"ださい。"
+"なお、 mod_perl は perl スクリプトを CGI (Common Gateway Interface) "
+"として動作させるのに、必ずしも必要なものではありません。 mod_perl はさらなる性能向上を目指す目的で、 Perl "
+"スクリプトを内蔵のインタプリタで動作させるようにするもので、場合によってはスクリプト側の修正が必要になるかもしれません。"
 
 #. leap/apache2-mod_perl/apache2-mod_perl-devel/summary
 #. tumbleweed/apache2-mod_perl/apache2-mod_perl-devel/summary
@@ -6298,9 +6247,8 @@ msgstr ""
 
 #. leap/php7/apache2-mod_php7/summary
 #. tumbleweed/apache2-mod_php7/summary
-#, fuzzy
 msgid "PHP7 module for the Apache 2.x webserver"
-msgstr "Apache 2 Web サーバ向けサンプルページ"
+msgstr "Apache 2.x Web サーバ向けサンプルページ"
 
 #. leap/php7/apache2-mod_php7/description
 #. tumbleweed/apache2-mod_php7/description
@@ -6331,9 +6279,8 @@ msgid ""
 msgstr ""
 
 #. leap/apache2-mod_wsgi/summary
-#, fuzzy
 msgid "A WSGI interface for Python web applications in Apache"
-msgstr "入力抽出層用のユーザインタフェース"
+msgstr "Apache 内の インタフェース"
 
 #. leap/apache2-mod_wsgi/description
 #. leap/apache2-mod_wsgi-python3/description
@@ -6382,9 +6329,8 @@ msgstr ""
 "理者が一般的に使用するために便利なものです。"
 
 #. leap/apache2/apache2-worker/summary
-#, fuzzy
 msgid "Apache 2 worker MPM (Multi-Processing Module)"
-msgstr "Apache 2 \"prework\" MPM (マルチプロセッシングモジュール)"
+msgstr "Apache 2 worker  MPM (マルチプロセッシングモジュール)"
 
 #. leap/apache2/apache2-worker/description
 msgid ""
@@ -6421,9 +6367,8 @@ msgstr ""
 
 #. leap/apcupsd/apcupsd-cgi/summary
 #. tumbleweed/apcupsd/apcupsd-cgi/summary
-#, fuzzy
 msgid "Web interface for apcupsd"
-msgstr "Cairo 向け C++ インターフェイス"
+msgstr "apcupsd 向け Web インターフェイス"
 
 #. leap/apcupsd/apcupsd-cgi/description
 #. tumbleweed/apcupsd/apcupsd-cgi/description
@@ -6437,9 +6382,8 @@ msgstr ""
 
 #. leap/apfel/apfel-devel/summary
 #. tumbleweed/apfel/apfel-devel/summary
-#, fuzzy
 msgid "Development files for Apfel, a PDF Evolution Library"
-msgstr "X11 キーボードファイル操作ライブラリ向け開発用ファイル"
+msgstr "Apfel 向け開発用ファイル"
 
 #. leap/apfel/apfel-devel/description
 #. tumbleweed/apfel/apfel-devel/description
@@ -6453,9 +6397,8 @@ msgstr ""
 
 #. leap/apfel/apfel-doc/summary
 #. tumbleweed/apfel/apfel-doc/summary
-#, fuzzy
 msgid "Documentation for APFEL, a PDF evolution library"
-msgstr "X11 キーボードファイル操作ライブラリ向け開発用ファイル"
+msgstr "PDF 改善ライブラリ  向け開発用ファイル"
 
 #. leap/apfel/apfel-doc/description
 #. tumbleweed/apfel/apfel-doc/description
@@ -6495,16 +6438,13 @@ msgstr ""
 
 #. leap/apiguardian/apiguardian-javadoc/summary
 #. tumbleweed/apiguardian/apiguardian-javadoc/summary
-#, fuzzy
-#| msgid "Javadoc for ant"
 msgid "Javadoc for apiguardian"
-msgstr "Ant 向け Javadoc"
+msgstr "apiguardian 向け Javadoc"
 
 #. leap/apiguardian/apiguardian-javadoc/description
 #. tumbleweed/apiguardian/apiguardian-javadoc/description
-#, fuzzy
 msgid "API documentation for apiguardian."
-msgstr "7.0 文書"
+msgstr "apiguardian 向けの API ドキュメント"
 
 #. leap/apparmor/apparmor-abstractions/summary
 #. tumbleweed/apparmor/apparmor-abstractions/summary
@@ -6608,14 +6548,10 @@ msgstr ""
 
 #. leap/apparmor-rpm-macros/description
 #. tumbleweed/apparmor-rpm-macros/description
-#, fuzzy
-#| msgid "This package provides macros and scripts to support Java packaging."
 msgid ""
 "Package that provides RPM macros used to setup apparmor profiles for "
 "packaging."
-msgstr ""
-"このパッケージには、 Java パッケージングに対応するためのマクロとスクリプトが"
-"含まれています。"
+msgstr "Java パッケージングに対応するためのマクロとスクリプトが含まれています。"
 
 #. leap/apparmor/apparmor-utils/summary
 #. tumbleweed/apparmor/apparmor-utils/summary
@@ -6637,10 +6573,8 @@ msgstr ""
 
 #. leap/appeditor/summary
 #. tumbleweed/appeditor/summary
-#, fuzzy
-#| msgid "Application Menu for Qt"
 msgid "Application Entry Editor"
-msgstr "Qt 向けアプリケーションメニュー"
+msgstr "アプリケーションエントリエディタ"
 
 #. leap/appeditor/description
 #. tumbleweed/appeditor/description
@@ -6651,17 +6585,13 @@ msgstr ""
 
 #. leap/appeditor/appeditor-lang/summary
 #. tumbleweed/appeditor/appeditor-lang/summary
-#, fuzzy
-#| msgid "Translations for package appcenter"
 msgid "Translations for package appeditor"
-msgstr "appcenter 向け翻訳パッケージ"
+msgstr "appeditor パッケージ向け翻訳"
 
 #. leap/appeditor/appeditor-lang/description
 #. tumbleweed/appeditor/appeditor-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"appcenter\" package."
 msgid "Provides translations for the \"appeditor\" package."
-msgstr "appcenter パッケージ向けの翻訳データです。"
+msgstr "\"appeditor\" パッケージ向けの翻訳データです。"
 
 #. leap/appframework/summary
 #. leap/appframework/appframework-javadoc/summary
@@ -6751,20 +6681,6 @@ msgstr "AppStream 抽象化ライブラリ"
 #. leap/appstream-glib/appstream-glib-devel/description
 #. tumbleweed/appstream-glib/description
 #. tumbleweed/appstream-glib/appstream-glib-devel/description
-#, fuzzy
-#| msgid ""
-#| "This library provides GObjects and helper methods to make it easy to read "
-#| "and write AppStream metadata. It also provides a simple DOM "
-#| "implementation that makes it easy to edit nodes and convert to and from "
-#| "the standardized XML representation.\n"
-#| "\n"
-#| "What this library allows you to do:\n"
-#| "\n"
-#| "* Read and write compressed AppStream XML files\n"
-#| "* Add and search for applications in an application store\n"
-#| "* Get screenshot image data and release announcements\n"
-#| "* Easily retrieve the best application data for the current locale\n"
-#| "* Efficiently interface with more heavy-weight parsers like expat"
 msgid ""
 "This library provides GObjects and helper methods to read and write "
 "AppStream metadata. It also provides a DOM implementation to edit nodes and "
@@ -6777,9 +6693,8 @@ msgid ""
 "* Easily retrieve the best application data for the current locale\n"
 "* Efficiently interface with more heavy-weight parsers like expat"
 msgstr ""
-"このライブラリは、 AppStream メタデータを読み書きするための使いやすい "
-"GObject とヘルパーメソッドを提供しています。シンプルな DOM 実装で、標準化され"
-"た XML 表記をノードに変換したり、その逆を実施したりすることもできます。\n"
+"このライブラリは、 AppStream メタデータを読み書きするための GObject とヘルパーメソッドを提供しています。これは DOM 実装で、"
+"標準化された XML 表記をノードに変換したり、その逆を実施したりすることもできます。\n"
 "\n"
 "このライブラリでできることは下記のとおりです:\n"
 "\n"
@@ -6791,9 +6706,8 @@ msgstr ""
 
 #. leap/appstream-glib/appstream-glib-devel/summary
 #. tumbleweed/appstream-glib/appstream-glib-devel/summary
-#, fuzzy
 msgid "Development files for the AppStream abstraction library"
-msgstr "X-ビデオ動画補償ライブラリ向け開発用ファイル"
+msgstr "AppStream 抽象化ライブラリ向け開発用ファイル"
 
 #. leap/appstream-glib/appstream-glib-lang/summary
 #. tumbleweed/appstream-glib/appstream-glib-lang/summary
@@ -6807,10 +6721,8 @@ msgstr "appstream-glib パッケージ向けの翻訳データです。"
 
 #. leap/apr/apr-devel/summary
 #. tumbleweed/apr/apr-devel/summary
-#, fuzzy
-#| msgid "Apache Portable Runtime (APR) Library"
 msgid "Development files for the Apache Portable Runtime (APR) library"
-msgstr "Apache Portable Runtime (APR) ライブラリ"
+msgstr "Apache Portable Runtime (APR) ライブラリ向けの開発用ファイル"
 
 #. leap/apr/apr-devel/description
 #. tumbleweed/apr/apr-devel/description
@@ -6825,24 +6737,17 @@ msgstr ""
 
 #. leap/apr-util/apr-util-devel/summary
 #. tumbleweed/apr-util/apr-util-devel/summary
-#, fuzzy
 msgid "Development files for the Apache Portable Runtime (APR) Utility Library"
-msgstr "unicap ライブラリ向け開発用ファイル"
+msgstr "Apache Portable Runtime (APR)  ユーティリティライブラリ向け開発用ファイル"
 
 #. leap/apr-util/apr-util-devel/description
 #. tumbleweed/apr-util/apr-util-devel/description
-#, fuzzy
-#| msgid ""
-#| "The audit-devel package contains the static libraries and header files "
-#| "needed for developing applications that need to use the audit framework "
-#| "libraries."
 msgid ""
 "This subpackage contains header files for developing applications that want "
 "to make use of the APR Utility library."
 msgstr ""
-"audit-devel パッケージには、 audit フレームワークライブラリを利用する必要のあ"
-"るアプリケーションについて、これを開発する際に必要な静的ライブラリとヘッダ"
-"ファイルが含まれています。"
+"このサブパッケージには、 audit "
+"フレームワークライブラリを利用する必要のあるアプリケーションについて、これを開発する際に必要なヘッダファイルが含まれています。"
 
 #. leap/apt-cacher-ng/summary
 msgid "A caching proxy specialized for Linux distribution packages"
@@ -6868,9 +6773,8 @@ msgstr ""
 #. leap/apulse/summary
 #. tumbleweed/apulse/summary
 #. tumbleweed/apulse/apulse-32bit/summary
-#, fuzzy
 msgid "PulseAudio emulation for ALSA"
-msgstr "libao 向け PulseAudio プラグイン"
+msgstr "ALSA 向け PulseAudio エミュレーション"
 
 #. leap/apulse/description
 #. tumbleweed/apulse/description
@@ -6927,7 +6831,6 @@ msgstr ""
 
 #. leap/aqbanking/aqbanking-doc/description
 #. tumbleweed/aqbanking/aqbanking-doc/description
-#, fuzzy
 msgid ""
 "AqBanking is a generic OnlineBanking interface. It allows multiple backends "
 "(currently HBCI) and multiple frontends  (e.g. KDE, GNOME, console) to be "
@@ -6935,9 +6838,10 @@ msgid ""
 "\n"
 "This package contains a handbook."
 msgstr ""
-"AqBanking は汎用のオンラインバンキングインターフェイスです。複数のバックエン"
-"ド (現時点では HBCI) に対応するほか、複数のフロントエンド (KDE, GNOME, コン"
-"ソールなど) に対応しています。"
+"AqBanking は汎用のオンラインバンキングインターフェイスです。複数のバックエンド (現時点では HBCI) に対応するほか、複数のフロントエンド "
+"(KDE, GNOME, コンソールなど) に対応しています。\n"
+"\n"
+"このパッケージには、ハンドブックが含まれています。"
 
 #. leap/aqbanking/aqbanking-lang/summary
 #. tumbleweed/aqbanking/aqbanking-lang/summary
@@ -6972,16 +6876,13 @@ msgstr ""
 
 #. leap/aqute-bnd/aqute-bnd-javadoc/summary
 #. tumbleweed/aqute-bnd/aqute-bnd-javadoc/summary
-#, fuzzy
-#| msgid "Javadoc for ant"
 msgid "Javadoc for aqute-bnd"
-msgstr "Ant 向け Javadoc"
+msgstr "aqute-bnd 向け Javadoc"
 
 #. leap/aqute-bnd/aqute-bnd-javadoc/description
 #. tumbleweed/aqute-bnd/aqute-bnd-javadoc/description
-#, fuzzy
 msgid "API documentation for aqute-bnd."
-msgstr "7.0 文書"
+msgstr "aqute-bnd 用の API ドキュメントです。"
 
 #. leap/aqute-bnd/aqute-bndlib/summary
 #. tumbleweed/aqute-bnd/aqute-bndlib/summary
