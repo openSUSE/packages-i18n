@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-02-04 03:35+0000\n"
-"PO-Revision-Date: 2021-05-08 05:57+0000\n"
+"PO-Revision-Date: 2021-05-08 10:57+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "p-master/ja/>\n"
@@ -41,17 +41,13 @@ msgstr "シンプルなソフトウエアインストール管理システム"
 
 #. leap/PackageKit/PackageKit-backend-dnf/summary
 #. tumbleweed/PackageKit/PackageKit-backend-dnf/summary
-#, fuzzy
-#| msgid "Simple software installation management software"
 msgid "DNF backend for the PackageKit installation management software"
-msgstr "シンプルなソフトウエアインストール管理システム"
+msgstr "PackageKit インストール管理ソフトウェア用の DNF バックエンド"
 
 #. leap/PackageKit/PackageKit-backend-zypp/summary
 #. tumbleweed/PackageKit/PackageKit-backend-zypp/summary
-#, fuzzy
-#| msgid "Simple software installation management software"
 msgid "Zypp backend for the PackageKit installation management software"
-msgstr "シンプルなソフトウエアインストール管理システム"
+msgstr "PackageKit インストール管理ソフトウェア用の Zypp バックエンド"
 
 #. leap/PackageKit-branding-openSUSE/summary
 #. tumbleweed/PackageKit-branding-openSUSE/summary
@@ -81,11 +77,9 @@ msgstr ""
 
 #. leap/PackageKit/PackageKit-branding-upstream/summary
 #. tumbleweed/PackageKit/PackageKit-branding-upstream/summary
-#, fuzzy
-#| msgid "Simple software installation management software"
 msgid ""
 "Upstream configuration for the PackageKit installation management software"
-msgstr "シンプルなソフトウエアインストール管理システム"
+msgstr "PackageKit インストール管理ソフトウェア用の DNF バックエンド"
 
 #. leap/PackageKit/PackageKit-branding-upstream/description
 #. tumbleweed/PackageKit/PackageKit-branding-upstream/description
@@ -8773,8 +8767,9 @@ msgid ""
 msgstr ""
 "ECO 5000 シリアルスマートカードリーダ向けのドライバです。\n"
 "\n"
-"このドライバは、 pcsc-lite パッケージから提供される PCSC-Lite デーモンで使用することを意図しています。 このインターフェイスは、 "
-"Card Terminal Basic Command Set (CT-BCS) "
+"このドライバは、 pcsc-lite パッケージから提供される PCSC-Lite デーモンで使用することを意図しています。 \n"
+"\n"
+"このインターフェイスは、 Card Terminal Basic Command Set (CT-BCS) "
 "を使用する端末に対してアクセスを提供します。このドライバには、同期カード向けの業界間コマンドセットから提供される、メモリカードへの対応も含まれています。"
 "\n"
 "\n"
@@ -11139,9 +11134,9 @@ msgid ""
 "-qi, -ql) and the ARCHIVES.gz file for the desired information. It shows "
 "README, README.SuSE, and FAQ, when available."
 msgstr ""
-"Pin - パッケージ情報 (Package InformatioN) の略です。 Pin はインストール済み"
-"のパッケージ (rpm -qi -ql) と ARCHIVES.gz 内を検索して、必要な情報を探しま"
-"す。なお、 README, README.SuSE, FAQ についても、存在すれば表示を行ないます。"
+"Pin - パッケージ情報 (Package InformatioN) の略です。\n"
+" Pin はインストール済みのパッケージ (rpm -qi -ql) と ARCHIVES.gz 内を検索して、必要な情報を探します。なお、 "
+"README, README.SuSE, FAQ についても、存在すれば表示を行ないます。"
 
 #. leap/pinentry/summary
 #. leap/pinentry/pinentry-emacs/summary
@@ -16343,19 +16338,15 @@ msgid ""
 "whitelisting of clients, only Berkeley DB and no large mysql nor postgresql "
 "DB needed."
 msgstr ""
-"Postgrey はグレイリストを実装する Postfix のポリシーサーバです。 SMTP 経由で "
-"Postfix からメールの配送要求を受け取ると、 CLIENT_IP (クライアント IP) / "
-"SENDER (発信者) / RECIPIENT (受信者) の組み合わせが作成されます。 この組み合"
-"わせがはじめて検出されたものであった場合、または この組み合わせが 5 分以内に"
-"検出済みのものであった場合に、 一時的なエラーとしてメールを拒否します。 SPAM "
-"やウイルスの発信者は その後に再試行しないことが多いのですが、 RFC では再試行"
-"が求められています。\n"
+"Postgrey はグレイリストを実装する Postfix のポリシーサーバです。 SMTP 経由で Postfix からメールの配送要求を受け取ると、 "
+"CLIENT_IP (クライアント IP) / SENDER (発信者) / RECIPIENT (受信者) の組み合わせが作成されます。 "
+"この組み合わせがはじめて検出されたものであった場合、または この組み合わせが 5 分以内に検出済みのものであった場合に、 "
+"一時的なエラーとしてメールを拒否します。 SPAM やウイルスの発信者は その後に再試行しないことが多いのですが、 RFC では再試行が求められています。"
 "\n"
-"Postfix 2.1.1 からの greylist.pl と比較して、下記の機能が追加されています:\n"
 "\n"
-"安全なデータベースシステム, 自動メンテナンス, ホワイトリスト, サブネット検"
-"索, クライアントの自動ホワイトリスト化, mySQL や PostgreSQL のような巨大デー"
-"タベースを必要とせず、 BerkeleyDB のみでの動作"
+"Postfix 2.1.1 からの greylist.pl と比較して、下記の機能が追加されています:安全なデータベースシステム, 自動メンテナンス, "
+"ホワイトリスト, サブネット検索, クライアントの自動ホワイトリスト化, mySQL や PostgreSQL のような巨大データベースを必要とせず、 "
+"BerkeleyDB のみでの動作します。"
 
 #. leap/postsrsd/summary
 #. tumbleweed/postsrsd/summary
@@ -17040,12 +17031,11 @@ msgid ""
 "* Search/Filterin the current playlist.\n"
 "* Search lyrics."
 msgstr ""
-"Gtk, sqlite をベースにし、 C 言語のみで書かれた GNU/Linux 向けの軽量音楽プ"
-"レーヤです。高速で軽量であるばかりか、日々の作業を邪魔しないように作られてい"
-"ます。\n"
+"Gtk, sqlite をベースにし、 C 言語のみで書かれた GNU/Linux "
+"向けの軽量音楽プレーヤです。高速で軽量であるばかりか、日々の作業を邪魔しないように作られています。\n"
 "\n"
-"Pragha は、元の作者が開発を中止した Consonance Music Manager (http://sites."
-"google.com/site/consonancemanager/) からの派生物です。\n"
+"Pragha は、元の作者が開発を中止した Consonance Music Manager (http://sites.google.com/site/"
+"consonancemanager/) からの派生物です。\n"
 "\n"
 "下記に機能を示します:\n"
 "* sqlite3 を利用したライブラリ管理\n"
@@ -17053,15 +17043,14 @@ msgstr ""
 "* 複数のビュー\n"
 "* libnotify による OSD サポート\n"
 "* ID3 タグ編集機能\n"
-"* mp3, ogg, flac, modplug, wav, asf, wma, mp4, m4a, MonkeyAudio, オーディオ "
-"CD のサポート\n"
-"* Last.fm のスクロビング, カバーアートの取得, アーティスト情報の取得, 類似す"
-"る曲の追加, 好き嫌いなどの設定\n"
+"* mp3, ogg, flac, modplug, wav, asf, wma, mp4, m4a, MonkeyAudio, オーディオ CD "
+"のサポート\n"
+"* Last.fm のスクロビング, カバーアートの取得, アーティスト情報の取得, 類似する曲の追加, 好き嫌いなどの設定\n"
 "* 再生リストの管理 (M3U エクスポート)\n"
 "* DBUS 管理インターフェイス\n"
 "* MPRIS2 サポート\n"
 "* 現在の再生リスト内での検索やフィルタ\n"
-"* 歌詞の検索"
+"* 歌詞の検索。"
 
 #. leap/pragha/pragha-lang/summary
 #. tumbleweed/pragha/pragha-lang/summary
@@ -19481,10 +19470,11 @@ msgid ""
 "This package provides the compatibility layer for drop-in replacement of "
 "ESOUND."
 msgstr ""
-"pulseaudio は Linux や Unix 系のオペレーティングシステム、および Microsoft "
-"Windows 向けのネットワーク対応サウンドサーバです。 Enlightened Sound Daemon "
-"(ESOUND) の改良型置き換え候補となるべく作られています。 このパッケージには、 "
-"ESOUND の置き換え候補となるための互換レイヤが提供されています。"
+"pulseaudio は Linux や Unix 系のオペレーティングシステム、および Microsoft Windows "
+"向けのネットワーク対応サウンドサーバです。 Enlightened Sound Daemon (ESOUND) "
+"の改良型置き換え候補となるべく作られています。\n"
+"\n"
+" このパッケージには、 ESOUND の置き換え候補となるための互換レイヤが提供されています。"
 
 #. leap/pulseaudio/pulseaudio-gdm-hooks/summary
 #. tumbleweed/pulseaudio/pulseaudio-gdm-hooks/summary
@@ -19607,10 +19597,11 @@ msgid ""
 "\n"
 "This package includes support for Jack-based applications."
 msgstr ""
-"pulseaudio は Linux や Unix 系のオペレーティングシステム、および Microsoft "
-"Windows 向けのネットワーク対応サウンドサーバです。 Enlightened Sound Daemon "
-"(ESOUND) の改良型置き換え候補となるべく作られています。 このパッケージには、 "
-"Jack ベースのアプリケーション向けのサポートが含まれています。"
+"pulseaudio は Linux や Unix 系のオペレーティングシステム、および Microsoft Windows "
+"向けのネットワーク対応サウンドサーバです。 Enlightened Sound Daemon (ESOUND) "
+"の改良型置き換え候補となるべく作られています。\n"
+"\n"
+" このパッケージには、 Jack ベースのアプリケーション向けのサポートが含まれています。"
 
 #. leap/pulseaudio/pulseaudio-module-lirc/summary
 #. tumbleweed/pulseaudio/pulseaudio-module-lirc/summary
