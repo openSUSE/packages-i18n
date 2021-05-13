@@ -9,5 +9,3 @@ All the scripts (see `50-tools/`) used to split the main repo descriptions file 
 Calling `make` in the top directory is what you need in most cases. It generates metadata for Tumbleweed.
 
 You need to update `package-translations` package afterwards.
-
-For some reason, `rpm-groups.pot` is not translated here, but in yast-translations. Call `tools/rpm-groups-pot-update.sh` from `yast-translations` repository to get it into the final location.
