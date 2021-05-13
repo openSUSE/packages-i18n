@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 """
-This file parses the XML metadata of repomd repositories and 
+This file parses the XML metadata of repomd repositories and
 """
 
 from datetime import datetime
@@ -69,7 +69,7 @@ def gettextDateTimeUTC(when):
 def readMetadata(data):
     """
     Reads XML from data, returns dict of
-    packagename => {'summary': "...", 'group': "...", 'description': "...", 'sourcepkg': "..."}
+    packagename => {'summary': "...", 'description': "...", 'sourcepkg': "..."}
     """
     tree = xml.fromstring(data)
 
@@ -78,7 +78,6 @@ def readMetadata(data):
     package_iter = xml.XPath('/md:metadata/md:package', namespaces=REPOMD_NAMESPACES)
     name_xpath = xml.XPath('string(./md:name/text())', namespaces=REPOMD_NAMESPACES)
     summary_xpath = xml.XPath('string(./md:summary/text())', namespaces=REPOMD_NAMESPACES)
-    group_xpath = xml.XPath('string(./md:format/rpm:group/text())', namespaces=REPOMD_NAMESPACES)
     description_xpath = xml.XPath('string(./md:description/text())', namespaces=REPOMD_NAMESPACES)
     sourcepkg_xpath = xml.XPath('string(./md:format/rpm:sourcerpm/text())', namespaces=REPOMD_NAMESPACES)
     category_xpath = xml.XPath('string(./md:format/rpm:provides/rpm:entry[@name="pattern-category()"]/@ver)', namespaces=REPOMD_NAMESPACES)
@@ -89,7 +88,6 @@ def readMetadata(data):
             continue
         sourcepkg = '-'.join(sourcepkg_xpath(package).split("-")[:-2])
         packages[name] = {'summary': summary_xpath(package),
-                          'group': group_xpath(package),
                           'description': description_xpath(package),
                           'category': unquote(category_xpath(package)),
                           'sourcepkg': sourcepkg}
@@ -99,6 +97,12 @@ def readMetadata(data):
 def gettextForPackage(packagename, package, distro):
     if packagename != package['sourcepkg'] and package['sourcepkg']:
         packagename = "{}/{}".format(package['sourcepkg'], packagename)
+
+    if distro.startswith('SLE'):
+        distro = 'SLE'
+
+    if distro == 'SLE' and not packagename.startswith('pattern'):
+        return None
 
     comment = "{}/{}".format(distro, packagename)
     ret = ""
@@ -120,19 +124,8 @@ msgid {category}
 msgstr ""
 """.format(comment=comment, category=gettextQuote(package['category']))
 
+
     return ret
-
-
-def getgrouptextForPackage(package, distro):
-    ret = ""
-
-    if package['group'] != "":
-        for cat in gettextQuote(package['group']).replace('"', '').split("/"):
-            ret += """\n#. {distro}/group
-msgid "{group}"
-msgstr ""
-""".format(distro=distro, group=cat)
-        return ret
 
 
 def fetchPrimaryXML(baseurl):
@@ -141,7 +134,7 @@ def fetchPrimaryXML(baseurl):
     path_primary = repoindex.xpath("string(./repo:data[@type='primary']/repo:location/@href)",
                                    namespaces=REPOMD_NAMESPACES)
     primary_req = requests.get(baseurl + "/" + path_primary)
-    return zlib.decompress(primary_req.content, wbits=zlib.MAX_WBITS | 32)
+    return zlib.decompress(primary_req.content, wbits=zlib.MAX_WBITS|32)
 
 
 def main(argv):
@@ -164,11 +157,11 @@ msgstr ""
 
     print(header)
 
-    with open(f"50-lists/{distro}-rpm-groups.__pot", "a") as f:
-        f.write(header)
-        for packagename, package in md.items():
-            print(gettextForPackage(packagename, package, distro))
-            f.write(getgrouptextForPackage(package, distro)+"\n")
+    for packagename, package in md.items():
+        text = gettextForPackage(packagename, package, distro)
+        if text:
+            print(text)
+
     return 0
 
 
