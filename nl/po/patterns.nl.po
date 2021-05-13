@@ -141,19 +141,14 @@ msgid "Minimal Appliance Base"
 msgstr "Minimale basis voor toepassingen"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal SLE runtime system. It is really a minimal system, you "
 "can login and a shell will be started, that's all. It is intended as base "
 "for Appliances."
 msgstr ""
-"Dit is het minimale Novell SUSE Linux Enterprise runtime-systeem. Het is "
-"echt een minimaal systeem, u kunt inloggen en een shell wordt gestart en dat "
-"is alles. Het is bedoeld als basis voor appliances."
+"Dit is het minimale Novell SLE runtime-systeem. Het is echt een minimaal "
+"systeem, u kunt inloggen en een shell wordt gestart en dat is alles. Het is "
+"bedoeld als basis voor appliances."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -290,6 +285,9 @@ msgid ""
 "the installation source setup.  Installation of this package does not make "
 "sense."
 msgstr ""
+"Dit is een intern pakket dat gebruikt wordt om de patronen te maken als "
+"onderdeel van de opzet van installatiebroncode.  Installatie van dit pakket "
+"is nutteloos."
 
 #. SLE/patterns-ha-geo/summary
 msgid "Patterns for SLE HA GEO"
@@ -297,19 +295,20 @@ msgstr "Patronen voor SLE HA GEO"
 
 #. SLE/patterns-lp/summary
 msgid "Patterns for SLE Live Patching"
-msgstr ""
+msgstr "Patronen voor SLE live patching"
 
 #. SLE/patterns-rt/summary
 msgid "Patterns for SLE Real Time Module"
-msgstr ""
+msgstr "Patronen voor SLE realtime module"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/summary
 msgid "SLE Real Time Module"
-msgstr ""
+msgstr "SLE realtime module"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
 msgstr ""
+"Levert hulpmiddelen en patches om de kernel tijdens runtime te repareren."
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/category
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
@@ -335,7 +334,7 @@ msgstr "Web-gebaseerd enterprisebeheer."
 
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
-msgstr ""
+msgstr "Patronen voor SLES voor SAP toepassingen"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
@@ -450,7 +449,7 @@ msgstr ""
 
 #. SLE/patterns-lp/patterns-lp-lp_sles/summary
 msgid "Live Patching"
-msgstr ""
+msgstr "Live patching"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
 msgid "Amazon Web Services - All"
@@ -464,10 +463,16 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Amazon Web Services - Tools)."
 msgstr ""
+"Dit patroon installeert alle Amazon Web Services-"
+"opdrachtregelinterfacehulpmiddelen, bijvoorbeeld initialisatiepakketten en "
+"hulpmiddelen om te communiceren met het cloudframework tijdens de "
+"uitvoering. Het is niet aanbevolen om dit patroon te installeren, maar om in "
+"plaats daarvan een van de gebruiksspecifieke patronen (bijv. Amazon Web "
+"Services - Hulpmiddelen) te installeren."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
 msgid "Amazon Web Services - Instance Initialization"
-msgstr ""
+msgstr "Amazon webservices - Initialisatie van een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
 msgid ""
@@ -475,30 +480,39 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. cloud-init)."
 msgstr ""
+"Dit patroon installeert de Amazon Web Services-"
+"exemplaarinitialisatiepakketten die de levering en uitvoering ondersteunen "
+"van exemplaren in het cloudframework (bijv. cloud-init)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
 msgid "Amazon Web Services - Instance Tools"
-msgstr ""
+msgstr "Amazon webservices - Hulpmiddelen voor een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
 msgid ""
 "This pattern install the Amazon Web Services instance specific tools which "
 "are used to collect instance metadata (e.g. python-ec2metadata)."
 msgstr ""
+"Dit patroon installeert de Amazon Web Services-exemplaarspecifieke "
+"hulpmiddelen die worden gebruikt om metagegevens van een exemplaar te "
+"verzamelen (bijvoorbeeld python-ec2metagegevens)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
 msgid "Amazon Web Services - Tools"
-msgstr ""
+msgstr "Amazon webservices - Hulpmiddelen"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
 msgid ""
 "This pattern installs the Amazon Web Services command line interface tools "
 "to communicate with the cloud framework (e.g. aws-cli)."
 msgstr ""
+"Dit patroon installeert de Amazon Web Services "
+"opdrachtregelinterfacehulpmiddelen om te communiceren met het cloudframework "
+"(bijvoorbeeld aws-cli)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
 msgid "Google Cloud Platform - All"
-msgstr ""
+msgstr "Google cloud-platform - Alles"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
 msgid ""
@@ -508,10 +522,16 @@ msgid ""
 "install this pattern, but instead install one of the use-case specific "
 "patterns (e.g. Google Cloud Platform - Tools)."
 msgstr ""
+"Dit patroon installeert alle Amazon Web Services-"
+"opdrachtregelinterfacehulpmiddelen, bijvoorbeeld initialisatiepakketten en "
+"hulpmiddelen om te communiceren met het cloudframework tijdens de "
+"uitvoering. Het is niet aan te raden om dit patroon te installeren, maar in "
+"plaats daarvan een van de gebruiksspecifieke patronen (bijv. Amazon Web "
+"Services - Hulpmiddelen) te installeren."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
 msgid "Google Cloud Platform - Instance Initialization"
-msgstr ""
+msgstr "Google cloud-platform - Initialisatie van een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
 msgid ""
@@ -519,30 +539,39 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. google-daemon)."
 msgstr ""
+"Dit patroon installeert de Amazon Web Services-"
+"uitvoeringsinitialisatiepakketten die de levering en uitvoering ondersteunen "
+"van uitvoeringen in het cloudframework (bijv. google-daemon)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
 msgid "Google Cloud Platform - Instance Tools"
-msgstr ""
+msgstr "Google cloud-platform - Hulpmiddelen voor een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
 msgid ""
 "This pattern install the Google Cloud Platform instance specific tools which "
 "are used to collect instance metadata (e.g. python-gcemetadata)."
 msgstr ""
+"Dit patroon installeert de Google Cloud Platform-uitvoeringsspecifieke "
+"hulpmiddelen die worden gebruikt voor het verzamelen van "
+"uitvoeringsmetagegevens (bijv. python-gcemetagegevens)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
 msgid "Google Cloud Platform - Tools"
-msgstr ""
+msgstr "Google cloud-platform - Hulpmiddelen"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
 msgid ""
 "This pattern installs the Google Cloud Platform command line interface tools "
 "to communicate with the cloud framework (e.g. google-cloud-sdk)."
 msgstr ""
+"Dit patroon installeert de Google Cloud Platform-"
+"opdrachtregelinterfacehulpmiddelen om te communiceren met het cloudframework "
+"(bijv. google-cloud-sdk)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
 msgid "Microsoft Azure - All"
-msgstr ""
+msgstr "Microsoft Azure - Alles"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
 msgid ""
@@ -552,10 +581,16 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Microsoft Azure - Tools)."
 msgstr ""
+"Dit patroon installeert alle Microsoft Azure-"
+"opdrachtregelinterfacehulpmiddelen, initialisatiepakketten voor een "
+"exemplaar en hulpmiddelen om te communiceren met het cloudframework vanuit "
+"een lopende uitvoering. Het is niet aanbevolen om dit patroon te "
+"installeren, maar om in plaats daarvan één van de specifieke patronen voor "
+"use-cases te installeren (bijv. Microsoft Azure - Hulpmiddelen)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
 msgid "Microsoft Azure - Instance Initialization"
-msgstr ""
+msgstr "Microsoft Azure - Initialisatie van een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
 msgid ""
@@ -563,30 +598,39 @@ msgid ""
 "which support the provisioning and running of instances in the cloud "
 "framework (e.g. python-azure-agent)."
 msgstr ""
+"Dit patroon installeert de Microsoft Azure-uitvoeringsinitialisatiepakketten "
+"die de levering en uitvoering ondersteunen van exemplaren in het "
+"cloudframework (bijv. python-azure-agent)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
-msgstr ""
+msgstr "Microsoft Azure - Hulpmiddelen voor een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
 msgid ""
 "This pattern install the Microsoft Azure instance specific tools which are "
 "used to collect instance metadata (e.g. azuremetadata)."
 msgstr ""
+"Dit patroon installeert de Microsoft Azure-uitvoeringsspecifieke "
+"hulpmiddelen die worden gebruikt voor het verzamelen van metagegevens van "
+"het exemplaar (bijv. azuremetagegevens)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
 msgid "Microsoft Azure - Tools"
-msgstr ""
+msgstr "Microsoft Azure - Hulpmiddelen"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
 "communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
+"Dit patroon installeert de Microsoft Azure-"
+"opdrachtregelinterfacehulpmiddelen om te communiceren met het cloudframework "
+"(bijv. azure-cli)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
 msgid "OpenStack - All"
-msgstr ""
+msgstr "OpenStack - Alles"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
 msgid ""
@@ -596,10 +640,15 @@ msgid ""
 "pattern, but instead install one of the use-case specific patterns (e.g. "
 "OpenStack - Tools)."
 msgstr ""
+"Dit patroon installeert alle OpenStack-opdrachtregelinterfacehulpmiddelen, "
+"initialisatiepakketten en hulpmiddelen om te communiceren met het "
+"cloudframework vanuit een exemplaar. Het is niet aanbevolen om dit patroon "
+"te installeren, maar om in plaats daarvan een van de gebruiksspecifieke "
+"patronen (bijv. OpenStack - Hulpmiddelen) te installeren."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
 msgid "OpenStack - Instance Initialization"
-msgstr ""
+msgstr "OpenStack - Initialisatie van een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
 msgid ""
@@ -607,26 +656,33 @@ msgid ""
 "support the provisioning and running of instances in the cloud framework (e."
 "g. cloud-init)."
 msgstr ""
+"Dit patroon installeert de OpenStack-exemplaarinitialisatiepakketten die de "
+"levering en uitvoering ondersteunen van exemplaren in het cloudframework "
+"(bijv. cloud-init)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
 msgid "OpenStack - Instance Tools"
-msgstr ""
+msgstr "OpenStack - Hulpmiddelen voor een exemplaar"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
 msgid ""
 "This pattern install the OpenStack instance specific tools which are used to "
 "collect instance metadata."
 msgstr ""
+"Dit patroon installeert de OpenStack-exemplaarspecifieke hulpmiddelen die "
+"worden gebruikt om metagegevens van het exemplaar te verzamelen."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
 msgid "OpenStack - Tools"
-msgstr ""
+msgstr "OpenStack - Hulpmiddelen"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
 msgid ""
 "This pattern installs the OpenStack command line interface tools to "
 "communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
 msgstr ""
+"Dit patroon installeert de OpenStack-opdrachtregelinterfacehulpmiddelen om "
+"te communiceren met het cloudframework (bijv. python-susepubliccloudinfo)."
 
 #. SLE/patterns-sap/patterns-sap-b1/summary
 msgid "SAP BusinessOne Server Base"
@@ -729,7 +785,7 @@ msgstr "Het 32bit patroon dat directory_server complementeert."
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "FIPS 140-2 specifieke pakketten"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
 msgid ""
@@ -743,6 +799,16 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"Dit patroon installeert de FIPS 140-2-specifieke pakketten die de "
+"verschillende gebruikte cryptografische modules complementeren. Dit is nodig "
+"als u het apparaat \"fips=1\" wilt laten uitvoeren.\n"
+"\n"
+"Let erop dat met dit patroon alleen werking volgens FIPS 140-2 kan worden "
+"gebruikt, het maakt het systeem niet direct FIPS 140-2-gecertificeerd of -"
+"gevalideerd.\n"
+"\n"
+"Raadpleeg de officiële verklaringen van SUSE over de staat van FIPS 140-2 "
+"certificering."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
@@ -901,13 +967,15 @@ msgstr "YaST-hulpmiddelen voor het installeren van uw systeem."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "Crypto-ondersteuning voor HW systeem Z"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
 msgstr ""
+"Een selectie van pakketten die de cryptostack voor het System z HW "
+"installeert op System z."
 
 #. SLE/patterns-server/patterns-server-xen_server/summary
 msgid "Xen Virtual Machine Host Server"
@@ -948,6 +1016,9 @@ msgid ""
 "This pattern provides tools for building multi-site clustering setups based "
 "on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
+"Dit patroon biedt hulpmiddelen voor het bouwen van clusteringconfiguraties "
+"op meerdere websites op basis van de hoge beschikbaarheid van SUSE Linux "
+"Enterprise en de GEO-extensie ervan."
 
 #. SLE/patterns-ha/patterns-ha-ha_sles/summary
 msgid "High Availability"
@@ -1157,19 +1228,16 @@ msgstr "Containers"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
 #, fuzzy
-#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
 msgstr "XFCE bureaubladomgeving"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
 #, fuzzy
-#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
 msgstr "Minimaal basissysteem"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
 #, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
 msgstr "Basispakketten voor de XFCE bureaubladomgeving"
 
@@ -1671,7 +1739,6 @@ msgstr "openSUSE MicroOS"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
 #, fuzzy
-#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
 msgstr "KDE Desktop"
 
@@ -1770,15 +1837,11 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
 #, fuzzy
-#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
 msgstr "LXDE bureaubladomgeving"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
 #, fuzzy
-#| msgid ""
-#| "The MATE desktop environment is a desktop environment using traditional "
-#| "metaphors."
 msgid ""
 "The Deepin desktop environment is a desktop environment using traditional "
 "metaphors."
@@ -1786,37 +1849,31 @@ msgstr "De MATE-bureaubladomgeving maakt gebruik van traditionele metaforen."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
 #, fuzzy
-#| msgid "KDE Administration Tools"
 msgid "Deepin Administration Tools"
 msgstr "KDE Systeembeheer"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
 #, fuzzy
-#| msgid "KDE Base System"
 msgid "Deepin Base System"
 msgstr "KDE Basissysteem"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
 #, fuzzy
-#| msgid "Base packages for the KDE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
 msgstr "Basispakketten voor de KDE Desktop Environment."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
 #, fuzzy
-#| msgid "KDE Internet"
 msgid "Deepin Internet"
 msgstr "KDE Internet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
 #, fuzzy
-#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
 msgstr "KDE Internetprogramma's"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
 #, fuzzy
-#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
 msgstr "KDE Multimedia"
 
@@ -1829,14 +1886,12 @@ msgstr ""
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
 #, fuzzy
-#| msgid "KDE Office"
 msgid "Deepin Office"
 msgstr "KDE Kantoor"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
 #, fuzzy
-#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
 msgstr "KDE Hulpprogramma's"
 
@@ -1905,15 +1960,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using Micro DNF"
 msgstr "openSUSE MicroOS standaarden"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
@@ -1923,15 +1974,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using PackageKit"
 msgstr "openSUSE MicroOS standaarden"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
@@ -1941,15 +1988,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS"
 msgid "openSUSE MicroOS using Zypper"
 msgstr "openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
@@ -2069,6 +2112,43 @@ msgstr ""
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr ""
+
+#~ msgid ""
+#~ "A compute node comprises of a minimal software image and mainly runs "
+#~ "simulation programs. Services on this node should be reduced to a bare "
+#~ "minimum and the node *must* be installed in a automatic manner. The "
+#~ "pattern 'HPC modularized libraries' should also be installed."
+#~ msgstr ""
+#~ "Een rekennode bestaat uit een minimale image met software en voert "
+#~ "hoofdzakelijk simultieprogramma's uit. Services op deze node zouden "
+#~ "beperkt moeten worden tot een minimum en de node *moet* geïnstalleerd "
+#~ "zijn op een automatische manier. Het patroon HPC modulaire bibliotheken "
+#~ "zou ook geïnstalleerd moeten zijn."
+
+#~ msgid ""
+#~ "This package provides all the relevant packages for developing HPC "
+#~ "applications. It depends on the pattern 'HPC modularized libraries'. In "
+#~ "addition it includes the GNU compilers and the relevant management "
+#~ "packages."
+#~ msgstr ""
+#~ "Dit pakket levert alle relevante pakketten voor ontwikkeling van HPC "
+#~ "toepassingen. Het hangt af van het patroon 'HPC modulaire bibliotheken' "
+#~ "Daarnaast bevat het compilers en include-bestanden en de relevante "
+#~ "pakketten voor beheer."
+
+#~ msgid "HPC modularized Libraries"
+#~ msgstr "HPC gemodulariseerde bibliotheken"
+
+#~ msgid ""
+#~ "This package provides all the modularized libraries so that they can be "
+#~ "used in an HPC environment. These libraries allow to install several MPI "
+#~ "flavors in parallel. In order to use thess libraries one needs to load "
+#~ "them via the module command first."
+#~ msgstr ""
+#~ "Dit pakket bevat alle gemoduleerde bibliotheken zodat ze gebruikt kunnen "
+#~ "worden in een HPC-omgeving. Deze bibliotheken stellen in staat "
+#~ "verschillende MPI smaken parallel installeren. Om deze te kunnen "
+#~ "gebruiken moet u ze eerst laden via het commando module."
 
 #~ msgid "YaST System Administration"
 #~ msgstr "YaST Systeembeheer"
@@ -2726,3 +2806,87 @@ msgstr ""
 
 #~ msgid "WebYaST: User interface components"
 #~ msgstr "WebYaST-gebruikersinterfacecomponenten"
+
+#~ msgid "Patterns for Installation (base patterns)"
+#~ msgstr "Patronen voor installatie (basispatronen)"
+
+#~ msgid "Packages needed to be able to develop HPC Apps"
+#~ msgstr "Pakketten nodig om HPC-apps te kunnen ontwikkelen"
+
+#~ msgid "KDE Plasma 5 Desktop"
+#~ msgstr "KDE Plasma 5-bureaublad"
+
+#~ msgid "openSUSE Kubic MicroOS System"
+#~ msgstr "openSUSE Kubic MicroOS-systeem"
+
+#~ msgid ""
+#~ "This is the MicroOS runtime system. It contains only a minimal multiuser "
+#~ "booting system."
+#~ msgstr ""
+#~ "Dit is het MicroOS-runtimesysteem. Het bevat alleen een minimaal "
+#~ "multigebruikeropstartsysteem."
+
+#~ msgid "openSUSE Kubic Stack"
+#~ msgstr "openSUSE Kubic-stack"
+
+#~ msgid "Packages needed to enable Apparmor on openSUSE Kubic"
+#~ msgstr "Pakketten nodig om Apparmor op openSUSE Kubic in te schakelen"
+
+#~ msgid ""
+#~ "This are packages which are required to enable Apparmor on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Dit zijn de pakketten die nodig zijn om Apparmor op SUSE CaaS Platform of "
+#~ "het openSUSE Kubic product in te schakelen."
+
+#~ msgid ""
+#~ "This are packages which are required to install SUSE CaaS Platform or "
+#~ "openSUSE Kubic product on real hardeare."
+#~ msgstr ""
+#~ "Dit zijn de pakketten dir vereist zijn om SUSE CaaS-platform of het "
+#~ "openSUSE Kubic-product op echte hardware te installeren."
+
+#~ msgid ""
+#~ "This are packages which are required to enable IMA/EVM on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Dit zijn de pakketten die vereist zijn om IMA/EVM op SUSE CaaS Platform "
+#~ "of het openSUSE Kubic product in te schakelen."
+
+#~ msgid "Packages only for the DVD of openSUSE Kubic"
+#~ msgstr "Pakketten enkel voor de DVD van openSUSE Kubic"
+
+#~ msgid ""
+#~ "This are packages which are required to enable SELinux on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Dit zijn de pakketten die vereist zijn om SELinux op SUSE CaaS Platform "
+#~ "of het openSUSE Kubic product in te schakelen."
+
+#~ msgid ""
+#~ "This are packages which are required to enable LDAP client support via "
+#~ "sssd on SUSE CaaS Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Dit zijn de pakketten die vereist zijn om LDAP client ondersteuning via "
+#~ "sssd op SUSE CaaS-platform of het openSUSE Kubic product in te schakelen."
+
+#~ msgid "Base packages for the KDE desktop environment."
+#~ msgstr "Basispakketten voor de KDE Desktop Environment."
+
+#~ msgid "Desktop Base System"
+#~ msgstr "Grafisch basissysteem"
+
+#~ msgid "KDE Administration Tools"
+#~ msgstr "KDE Systeembeheer"
+
+#~ msgid "KDE Base System"
+#~ msgstr "KDE Basissysteem"
+
+#~ msgid "KDE System"
+#~ msgstr "KDE Systeem"
+
+#~ msgid "SUSE Cloud Admin Node"
+#~ msgstr "SUSE Cloud Admin Node"
+
+#~ msgid "Web based system management tool"
+#~ msgstr "Web-gebaseerd hulpmiddel voor systeembeheer."

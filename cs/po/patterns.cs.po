@@ -145,19 +145,14 @@ msgid "Minimal Appliance Base"
 msgstr "Minimální funkční základ systémů"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal SLE runtime system. It is really a minimal system, you "
 "can login and a shell will be started, that's all. It is intended as base "
 "for Appliances."
 msgstr ""
-"Toto je minimální openSUSE provozní systém. Je to opravdu minimální systém: "
-"můžete se přihlásit a bude spuštěna příkazová řádka, toť vše. Je zamýšlen "
-"jako základ pro aplikace."
+"Toto je minimální běhový systém SLE. Je to opravdu minimální systém: můžete "
+"se přihlásit a bude spuštěno prostředí příkazového řádku, to je všechno. Je "
+"zamýšlen jako základ pro zařízení."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -229,7 +224,6 @@ msgstr "Grafické rozhraní programu YaST pro minimální X systém."
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
 #, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Base Utilities"
 msgstr "Utility MATE"
 
@@ -241,27 +235,23 @@ msgstr "Nástroje programu YaST pro základní správu systému."
 # 54237 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
 #, fuzzy
-#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
 msgstr "KDE nástroje"
 
 # 49865 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
 #, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
 msgstr "Nástroje programu YaST pro základní správu systému."
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/summary
 #, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Server Utilities"
 msgstr "Utility MATE"
 
 # 49865 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
 #, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
 msgstr "Nástroje programu YaST pro základní správu systému."
 
@@ -297,7 +287,7 @@ msgstr "Nástroje navržené pro práci s notebooky."
 
 #. SLE/patterns-ha/summary
 msgid "Patterns for SLE HA"
-msgstr ""
+msgstr "Vzory pro SLE HA"
 
 #. SLE/patterns-ha/description
 #. SLE/patterns-ha-geo/description
@@ -308,26 +298,28 @@ msgid ""
 "the installation source setup.  Installation of this package does not make "
 "sense."
 msgstr ""
+"Toto je interní balíček, který se používá k vytváření vzorů v rámci "
+"nastavení zdroje instalace. Instalace tohoto balíčku nedává smysl."
 
 #. SLE/patterns-ha-geo/summary
 msgid "Patterns for SLE HA GEO"
-msgstr ""
+msgstr "Vzory pro SLE HA GEO"
 
 #. SLE/patterns-lp/summary
 msgid "Patterns for SLE Live Patching"
-msgstr ""
+msgstr "Šablony pro SLE - opravy za chodu"
 
 #. SLE/patterns-rt/summary
 msgid "Patterns for SLE Real Time Module"
-msgstr ""
+msgstr "Šablony pro modul SLE - reálný čas"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/summary
 msgid "SLE Real Time Module"
-msgstr ""
+msgstr "Modul SLE pro reálný čas"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
-msgstr ""
+msgstr "Obsahuje nástroje a opravy na opravu jádra za běhu."
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/category
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
@@ -353,7 +345,7 @@ msgstr "Enterprise správa s webovým rozhraním."
 
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
-msgstr ""
+msgstr "Šablony pro SLES pro architekturu SAP"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
@@ -405,11 +397,6 @@ msgstr "Základní výpočetní uzel HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
 #, fuzzy
-#| msgid ""
-#| "A compute node comprises of a minimal software image and mainly runs "
-#| "simulation programs. Services on this node should be reduced to a bare "
-#| "minimum and the node *must* be installed in a automatic manner. The "
-#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
@@ -433,11 +420,6 @@ msgstr "Balíčky pro vývoj HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
 #, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
-#| "addition it includes the GNU compilers and the relevant management "
-#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
@@ -449,17 +431,11 @@ msgstr ""
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
 #, fuzzy
-#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "Modularizované knihovny HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
 #, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in an HPC environment. These libraries allow to install several MPI "
-#| "flavors in parallel. In order to use thess libraries one needs to load "
-#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
@@ -484,11 +460,11 @@ msgstr ""
 
 #. SLE/patterns-lp/patterns-lp-lp_sles/summary
 msgid "Live Patching"
-msgstr ""
+msgstr "Opravy za chodu"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
 msgid "Amazon Web Services - All"
-msgstr ""
+msgstr "Amazon Web Services – vše"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
 msgid ""
@@ -498,10 +474,15 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Amazon Web Services - Tools)."
 msgstr ""
+"Tento vzor nainstaluje z Amazon Web Services všechny nástroje rozhraní "
+"příkazového řádku, všechny balíčky pro incializaci instancí a všechny "
+"nástroje pro komunikaci s cloudovou architekturou z běžící instance. "
+"Nedoporučujeme instalovat přímo tento vzor, nýbrž jeden ze vzorů pro "
+"konkrétní požadovaný případ použití (např. Amazon Web Services – nástroje)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
 msgid "Amazon Web Services - Instance Initialization"
-msgstr ""
+msgstr "Amazon Web Services – inicializace instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
 msgid ""
@@ -509,30 +490,37 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. cloud-init)."
 msgstr ""
+"Tento vzor nainstaluje všechny balíčky pro inicializaci instancí Amazon Web "
+"Services, které podporují zřizování a spouštění instancí v cloudové "
+"architektuře (např. cloud-init)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
 msgid "Amazon Web Services - Instance Tools"
-msgstr ""
+msgstr "Amazon Web Services – nástroje instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
 msgid ""
 "This pattern install the Amazon Web Services instance specific tools which "
 "are used to collect instance metadata (e.g. python-ec2metadata)."
 msgstr ""
+"Tento vzor nainstaluje nástroje specifické pro instanci Amazon Web Services, "
+"které se používají ke sběru metadat instance (např. python-ec2metadata)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
 msgid "Amazon Web Services - Tools"
-msgstr ""
+msgstr "Amazon Web Services – nástroje"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
 msgid ""
 "This pattern installs the Amazon Web Services command line interface tools "
 "to communicate with the cloud framework (e.g. aws-cli)."
 msgstr ""
+"Tento vzor nainstaluje nástroje rozhraní příkazového řádku Amazon Web "
+"Services na komunikaci s cloudovou architekturou (např. aws-cli)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
 msgid "Google Cloud Platform - All"
-msgstr ""
+msgstr "Google Cloud Platform – vše"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
 msgid ""
@@ -542,10 +530,15 @@ msgid ""
 "install this pattern, but instead install one of the use-case specific "
 "patterns (e.g. Google Cloud Platform - Tools)."
 msgstr ""
+"Tento vzor nainstaluje z Google Cloud Platform všechny nástroje rozhraní "
+"příkazového řádku, všechny balíčky pro incializaci instancí a všechny "
+"nástroje pro komunikaci s cloudovou architekturou z běžící instance. "
+"Nedoporučujeme instalovat přímo tento vzor, nýbrž jeden ze vzorů pro "
+"konkrétní požadovaný případ použití (např. Google Cloud Platform – nástroje)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
 msgid "Google Cloud Platform - Instance Initialization"
-msgstr ""
+msgstr "Google Cloud Platform – inicializace instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
 msgid ""
@@ -553,30 +546,38 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. google-daemon)."
 msgstr ""
+"Tento vzor nainstaluje všechny balíčky pro inicializaci instancí Google "
+"Cloud Platform, které podporují zřizování a spouštění instancí v cloudové "
+"architektuře (např. google-daemon)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
 msgid "Google Cloud Platform - Instance Tools"
-msgstr ""
+msgstr "Google Cloud Platform – nástroje instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
 msgid ""
 "This pattern install the Google Cloud Platform instance specific tools which "
 "are used to collect instance metadata (e.g. python-gcemetadata)."
 msgstr ""
+"Tento vzor nainstaluje nástroje specifické pro instanci Google Cloud "
+"Platform, které se používají ke sběru metadat instance (např. python-"
+"gcemetadata)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
 msgid "Google Cloud Platform - Tools"
-msgstr ""
+msgstr "Google Cloud Platform – nástroje"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
 msgid ""
 "This pattern installs the Google Cloud Platform command line interface tools "
 "to communicate with the cloud framework (e.g. google-cloud-sdk)."
 msgstr ""
+"Tento vzor nainstaluje nástroje rozhraní příkazového řádku Google Cloud "
+"Platform na komunikaci s cloudovou architekturou (např. google-cloud-sdk)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
 msgid "Microsoft Azure - All"
-msgstr ""
+msgstr "Microsoft Azure – vše"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
 msgid ""
@@ -586,10 +587,15 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Microsoft Azure - Tools)."
 msgstr ""
+"Tento vzor nainstaluje z Microsoft Azure všechny nástroje rozhraní "
+"příkazového řádku, všechny balíčky pro incializaci instancí a všechny "
+"nástroje pro komunikaci s cloudovou architekturou z běžící instance. "
+"Nedoporučujeme instalovat přímo tento vzor, nýbrž jeden ze vzorů pro "
+"konkrétní požadovaný případ použití (např. Microsoft Azure – nástroje)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
 msgid "Microsoft Azure - Instance Initialization"
-msgstr ""
+msgstr "Microsoft Azure – inicializace instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
 msgid ""
@@ -597,30 +603,37 @@ msgid ""
 "which support the provisioning and running of instances in the cloud "
 "framework (e.g. python-azure-agent)."
 msgstr ""
+"Tento vzor nainstaluje všechny balíčky pro inicializaci instancí Microsoft "
+"Azure, které podporují zřizování a spouštění instancí v cloudové "
+"architektuře (např. python-azure-agent)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
-msgstr ""
+msgstr "Microsoft Azure – nástroje instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
 msgid ""
 "This pattern install the Microsoft Azure instance specific tools which are "
 "used to collect instance metadata (e.g. azuremetadata)."
 msgstr ""
+"Tento vzor nainstaluje nástroje specifické pro instanci Microsoft Azure, "
+"které se používají ke sběru metadat instance (např. azuremetadata)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
 msgid "Microsoft Azure - Tools"
-msgstr ""
+msgstr "Microsoft Azure – nástroje"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
 "communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
+"Tato šablona instaluje nástroje rozhraní příkazového řádku Microsoft Azure "
+"ke komunikaci s cloudovou architekturou (např. azure-cli)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
 msgid "OpenStack - All"
-msgstr ""
+msgstr "OpenStack – vše"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
 msgid ""
@@ -630,10 +643,15 @@ msgid ""
 "pattern, but instead install one of the use-case specific patterns (e.g. "
 "OpenStack - Tools)."
 msgstr ""
+"Tento vzor nainstaluje z OpenStack všechny nástroje rozhraní příkazového "
+"řádku, všechny balíčky pro incializaci instancí a všechny nástroje pro "
+"komunikaci s cloudovou architekturou z běžící instance. Nedoporučujeme "
+"instalovat přímo tento vzor, nýbrž jeden ze vzorů pro konkrétní požadovaný "
+"případ použití (např. OpenStack – nástroje)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
 msgid "OpenStack - Instance Initialization"
-msgstr ""
+msgstr "OpenStack – inicializace instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
 msgid ""
@@ -641,62 +659,57 @@ msgid ""
 "support the provisioning and running of instances in the cloud framework (e."
 "g. cloud-init)."
 msgstr ""
+"Tento vzor nainstaluje všechny balíčky pro inicializaci instancí OpenStack, "
+"které podporují zřizování a spouštění instancí v cloudové architektuře "
+"(např. cloud-init)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
 msgid "OpenStack - Instance Tools"
-msgstr ""
+msgstr "OpenStack – nástroje instancí"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
 msgid ""
 "This pattern install the OpenStack instance specific tools which are used to "
 "collect instance metadata."
 msgstr ""
+"Tento vzor nainstaluje nástroje specifické pro instanci OpenStack, které se "
+"používají ke sběru metadat instance."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
 msgid "OpenStack - Tools"
-msgstr ""
+msgstr "OpenStack – nástroje"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
 msgid ""
 "This pattern installs the OpenStack command line interface tools to "
 "communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
 msgstr ""
+"Tento vzor nainstaluje nástroje rozhraní příkazového řádku OpenStack na "
+"komunikaci s cloudovou architekturou (např. python-susepubliccloudinfo)."
 
 #. SLE/patterns-sap/patterns-sap-b1/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP BusinessOne Server Base"
-msgstr "Základ pro aplikační server SAP"
+msgstr "Základ pro SAP BusinessOne Server"
 
 #. SLE/patterns-sap/patterns-sap-b1/description
-#, fuzzy
-#| msgid "Set up the server for installing SAP systems."
 msgid "Set up the server for installing SAP BusinessOne systems."
-msgstr "Připravit server pro instalaci systémů SAP."
+msgstr "Příprava serveru pro instalaci systémů SAP BusinessOne."
 
 #. SLE/patterns-sap/patterns-sap-hana/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP HANA Server Base"
-msgstr "Základ pro aplikační server SAP"
+msgstr "Základ pro SAP HANA Server"
 
 #. SLE/patterns-sap/patterns-sap-hana/description
-#, fuzzy
-#| msgid "Set up the server for installing SAP systems."
 msgid "Set up the server for installing SAP HANA systems."
-msgstr "Připravit server pro instalaci systémů SAP."
+msgstr "Příprava serveru pro instalaci systémů SAP HANA."
 
 #. SLE/patterns-sap/patterns-sap-nw/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP NetWeaver Server Base"
-msgstr "Základ pro aplikační server SAP"
+msgstr "Základ pro SAP NetWeaver Server"
 
 #. SLE/patterns-sap/patterns-sap-nw/description
-#, fuzzy
-#| msgid "Set up the server for installing SAP systems."
 msgid "Set up the server for installing SAP NetWeaver systems."
-msgstr "Připravit server pro instalaci systémů SAP."
+msgstr "Příprava serveru pro instalaci systémů SAP NetWeaver."
 
 #. SLE/patterns-certification/patterns-certification-common-criteria/summary
 msgid "Tools and scripts for Common Criteria"
@@ -719,10 +732,8 @@ msgstr ""
 "uživatelské knihovny."
 
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing ofed."
-msgstr "32bitový vzor doplňující base."
+msgstr "32bitový vzor doplňující ofed."
 
 #. SLE/patterns-rpm-macros/summary
 msgid "RPM macros for building of patterns modules"
@@ -774,7 +785,7 @@ msgstr "32-bitový vzor doplňující adresářový server (directory_server)."
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "Balíčky specifické pro FIPS 140-2"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
 msgid ""
@@ -788,18 +799,24 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"Tento vzor nainstaluje balíčky specifické pro FIPS 140-2, které doplňují "
+"různé používané kryptogracické moduly. Je požadován, pokud chcete počítač "
+"spouštět s \"fips=1\".\n"
+"\n"
+"Upozrňujeme, že tento vzor jenom umožňuje provoz operací FIPS 140-2. Naučiní "
+"systém automaticky certifikovaným pro FIPS 140-2 ani ověřeným pro FIPS "
+"140-2.\n"
+"\n"
+"Informace ohledně stavu certifikace FIPS 140-2 najdete v oficiálních "
+"prohlášeních SUSE."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing fips."
-msgstr "32bitový vzor doplňující base."
+msgstr "32bitový vzor doplňující fips."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing file_server."
 msgid "The 32bit pattern complementing oracle_server."
-msgstr "32bitový vzor doplňující file_server."
+msgstr "32bitový vzor doplňující oracle_server."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
@@ -811,10 +828,8 @@ msgid "Set up the server for installing SAP systems."
 msgstr "Připravit server pro instalaci systémů SAP."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing lamp_server."
 msgid "The 32bit pattern complementing sap_server."
-msgstr "32bitový vzor doplňující lamp_server."
+msgstr "32bitový vzor doplňující sap_server."
 
 #. SLE/patterns-server/patterns-server-file_server/summary
 #. SLE/patterns-server/patterns-server-file_server-32bit/summary
@@ -934,10 +949,8 @@ msgid "The 32bit pattern complementing printing."
 msgstr "32bitový vzor doplňující printing."
 
 #. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing x11."
 msgid "The 32bit pattern complementing WBEM."
-msgstr "32bitový vzor doplňující X11."
+msgstr "32bitový vzor doplňující WBEM."
 
 # 51925 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_install_wf/summary
@@ -950,13 +963,14 @@ msgstr "Nástroje YaSTu pro instalaci systému."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "Podpora šifrování Systému z HW"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
 msgstr ""
+"Výběr balíčků instalujících šifrovací suitu ze Systému z HW na Systém z."
 
 #. SLE/patterns-server/patterns-server-xen_server/summary
 msgid "Xen Virtual Machine Host Server"
@@ -990,16 +1004,16 @@ msgstr ""
 "jen pro čtení (read-only root filesystem)."
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
-#, fuzzy
-#| msgid "High Availability"
 msgid "GEO Clustering for High Availability"
-msgstr "Vysoká dostupnost"
+msgstr "GEO Clustering pro vysokou dostupnost"
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/description
 msgid ""
 "This pattern provides tools for building multi-site clustering setups based "
 "on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
+"Tento vzor poskytuje nástroje pro vytváření clusterových konfigurací s více "
+"lokalitami na SUSE Linux Enterprise High-Availability a rozšíření GEO."
 
 #. SLE/patterns-ha/patterns-ha-ha_sles/summary
 msgid "High Availability"
@@ -1146,7 +1160,6 @@ msgstr ""
 
 #. leap/patterns-base/patterns-base-basesystem/summary
 #, fuzzy
-#| msgid "Minimal Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
 msgstr "Minimální základní systém (alias předloha pro něj)"
 
@@ -1172,10 +1185,6 @@ msgstr "Aplikace užitečné pro uživatele nepoužívající grafické prostře
 
 #. leap/patterns-base/patterns-base-minimal_base/description
 #, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
@@ -1200,7 +1209,6 @@ msgstr "Základ šablony Ceph"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
 #, fuzzy
-#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
 msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
@@ -1212,19 +1220,16 @@ msgstr "Kontejnery"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
 #, fuzzy
-#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
 msgstr "Prostředí XFCE"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
 #, fuzzy
-#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
 msgstr "Minimální základní systém"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
 #, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
 msgstr "Základní balíčky prostředí pracovní plochy XFCE"
 
@@ -1727,13 +1732,11 @@ msgstr "openSUSE MicroOS"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
 #, fuzzy
-#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
 msgstr "Prostředí KDE"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
 #, fuzzy
-#| msgid "SELinux Support"
 msgid "SELinux"
 msgstr "Podpora SELinux"
 
@@ -1773,7 +1776,6 @@ msgstr ""
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
 #, fuzzy
-#| msgid "kubeadm Stack"
 msgid "Kubernetes kubeadm Stack"
 msgstr "kubeadm zásobník"
 
@@ -1799,9 +1801,6 @@ msgstr "Administrátorský uzel Kubic"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
 #, fuzzy
-#| msgid ""
-#| "This pattern installs the the software required for an openSUSE Kubic "
-#| "Admin Node."
 msgid ""
 "This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr ""
@@ -1833,15 +1832,11 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
 #, fuzzy
-#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
 msgstr "Pracovní prostředí LXDE"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
 #, fuzzy
-#| msgid ""
-#| "The MATE desktop environment is a desktop environment using traditional "
-#| "metaphors."
 msgid ""
 "The Deepin desktop environment is a desktop environment using traditional "
 "metaphors."
@@ -1850,37 +1845,31 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
 #, fuzzy
-#| msgid "KDE Administration Tools"
 msgid "Deepin Administration Tools"
 msgstr "Administrační nástroje KDE"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
 #, fuzzy
-#| msgid "KDE Base System"
 msgid "Deepin Base System"
 msgstr "Základní systém KDE"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
 #, fuzzy
-#| msgid "Base packages for the KDE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
 msgstr "Základní balíčky prostředí KDE."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
 #, fuzzy
-#| msgid "KDE Internet"
 msgid "Deepin Internet"
 msgstr "KDE internet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
 #, fuzzy
-#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
 msgstr "KDE internetové aplikace"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
 #, fuzzy
-#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
 msgstr "KDE multimédia"
 
@@ -1893,7 +1882,6 @@ msgstr ""
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
 #, fuzzy
-#| msgid "KDE Office"
 msgid "Deepin Office"
 msgstr "KDE kancelář"
 
@@ -1901,7 +1889,6 @@ msgstr "KDE kancelář"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
 #, fuzzy
-#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
 msgstr "KDE nástroje"
 
@@ -1970,15 +1957,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using Micro DNF"
 msgstr "Výchozí předlohy openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
@@ -1988,15 +1971,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using PackageKit"
 msgstr "Výchozí předlohy openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
@@ -2006,15 +1985,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS"
 msgid "openSUSE MicroOS using Zypper"
 msgstr "openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
@@ -2036,7 +2011,6 @@ msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
 #, fuzzy
-#| msgid "Web based system management tool"
 msgid "Web based remote system managemet"
 msgstr "Webový nástroj pro správu systému"
 
@@ -2060,37 +2034,31 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
 #, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
 msgstr "Základní balíčky prostředí pracovní plochy XFCE"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
 #, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for openSUSE MicroOS Desktops."
 msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
 #, fuzzy
-#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
 msgstr "GNOME Desktop"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
 #, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
 msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
 #, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "MicroOS KDE Plasma Desktop"
 msgstr "Plocha KDE Plasma 5"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
 #, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
 msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
 
@@ -2147,6 +2115,41 @@ msgstr ""
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr ""
+
+#~ msgid ""
+#~ "A compute node comprises of a minimal software image and mainly runs "
+#~ "simulation programs. Services on this node should be reduced to a bare "
+#~ "minimum and the node *must* be installed in a automatic manner. The "
+#~ "pattern 'HPC modularized libraries' should also be installed."
+#~ msgstr ""
+#~ "Výpočetní uzel obsahuje obraz minimálního software a hlavně na něm běží "
+#~ "simulační programy. Služby tohoto uzlu lze omezit na naprosté minimum a "
+#~ "uzel *musí* být instalován automaticky. Má též být instalována vzorová "
+#~ "sada modulárních knihoven HPC."
+
+#~ msgid ""
+#~ "This package provides all the relevant packages for developing HPC "
+#~ "applications. It depends on the pattern 'HPC modularized libraries'. In "
+#~ "addition it includes the GNU compilers and the relevant management "
+#~ "packages."
+#~ msgstr ""
+#~ "Tento balíček poskytuje všechny relevantní balíčky pro vývoj aplikací "
+#~ "HPC, Závisí na vzorové sadě modulárních knihoven HPC. Navíc obsahuje GNU "
+#~ "kompilátory a relevantní balíčky pro správu."
+
+#~ msgid "HPC modularized Libraries"
+#~ msgstr "Modularizované knihovny HPC"
+
+#~ msgid ""
+#~ "This package provides all the modularized libraries so that they can be "
+#~ "used in an HPC environment. These libraries allow to install several MPI "
+#~ "flavors in parallel. In order to use thess libraries one needs to load "
+#~ "them via the module command first."
+#~ msgstr ""
+#~ "Tento balíček poskytuje všechny modularizované knihovny, aby je bylo "
+#~ "možné použít v prostředí HPC. Tyto knihovny umožňují instalovat několik "
+#~ "druhů MPI paralelně. Před použitím musíte tyto knihovny nejprve zavést "
+#~ "příkazem module."
 
 # 49865 AttribValues/label
 #~ msgid "YaST System Administration"
@@ -2818,3 +2821,92 @@ msgstr ""
 # 33139 AttribValues/label
 #~ msgid "WebYaST: User interface components"
 #~ msgstr "WebYaST: Komponenty uživatelského rozhraní"
+
+#~ msgid "Patterns for Installation (base patterns)"
+#~ msgstr "Vzory pro instalaci (základní vzory)"
+
+#~ msgid "Tools & Update Stack for systems with a read-only root filesystem."
+#~ msgstr ""
+#~ "Zásobník nástrojů a aktualizací pro systémy s takovým systémem souborů, "
+#~ "kde nelze psát do kořenové složky."
+
+#~ msgid "KDE Plasma 5 Desktop"
+#~ msgstr "Plocha KDE Plasma 5"
+
+#~ msgid "openSUSE Kubic MicroOS System"
+#~ msgstr "openSUSE Kubic MicroOS System"
+
+#~ msgid ""
+#~ "This is the MicroOS runtime system. It contains only a minimal multiuser "
+#~ "booting system."
+#~ msgstr ""
+#~ "Toto je provozní systém MicroOS. Obsahuje pouze minimální víceuživatelský "
+#~ "zaváděcí systém."
+
+#~ msgid "openSUSE Kubic Stack"
+#~ msgstr "openSUSE Kubic Stack"
+
+#~ msgid "Packages needed to enable Apparmor on openSUSE Kubic"
+#~ msgstr "Balíčky potřebné pro Apparmor na openSUSE Kubic"
+
+#~ msgid ""
+#~ "This are packages which are required to enable Apparmor on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Jsou to balíčky, které vyžadované k tomu, aby Apparmor běžel na platformě "
+#~ "SUSE CaaS nebo produktu openSUSE Kubic."
+
+#~ msgid ""
+#~ "This are packages which are required to install SUSE CaaS Platform or "
+#~ "openSUSE Kubic product on real hardeare."
+#~ msgstr ""
+#~ "Jsou to balíčky, které jsou potřebné k instalaci platformy SUSE CaaS nebo "
+#~ "produktu openSUSE Kubic na skutečném hardware."
+
+#~ msgid "Packages needed to enable IMA/EVM on openSUSE Kubic"
+#~ msgstr "Balíčky potřebné pro podporu IMA/EVM na openSUSE Kubic"
+
+#~ msgid ""
+#~ "This are packages which are required to enable IMA/EVM on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Balíčky požadované k zapnutí IMA/EVM na platformě SUSE CaaS nebo v "
+#~ "produktu openSUSE Kubic."
+
+#~ msgid "Packages only for the DVD of openSUSE Kubic"
+#~ msgstr "Balíčky pouze pro DVD s openSUSE Kubic"
+
+#~ msgid ""
+#~ "This are packages which are required to enable SELinux on SUSE CaaS "
+#~ "Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Balíčky nutné k zapnutí SELinux na platformě SUSE CaaS nebo v produktu "
+#~ "openSUSE Kubic."
+
+#~ msgid ""
+#~ "This are packages which are required to enable LDAP client support via "
+#~ "sssd on SUSE CaaS Platform or openSUSE Kubic product."
+#~ msgstr ""
+#~ "Balíčky, které jsou požadovány k zapnutí klientské podpory LDAP na "
+#~ "platformě SUSE CaaS nebo v produktu openSUSE Kubic."
+
+#~ msgid "Base packages for the KDE desktop environment."
+#~ msgstr "Základní balíčky prostředí KDE."
+
+#~ msgid "Desktop Base System"
+#~ msgstr "Základní systém plochy"
+
+#~ msgid "KDE Administration Tools"
+#~ msgstr "Administrační nástroje KDE"
+
+#~ msgid "KDE Base System"
+#~ msgstr "Základní systém KDE"
+
+#~ msgid "KDE System"
+#~ msgstr "Systém KDE"
+
+#~ msgid "SUSE Cloud Admin Node"
+#~ msgstr "Administrátorský uzel SUSE Cloudu"
+
+#~ msgid "Web based system management tool"
+#~ msgstr "Webový nástroj pro správu systému"

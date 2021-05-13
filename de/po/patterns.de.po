@@ -147,19 +147,14 @@ msgid "Minimal Appliance Base"
 msgstr "Minimale Appliance-Basis"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal SLE runtime system. It is really a minimal system, you "
 "can login and a shell will be started, that's all. It is intended as base "
 "for Appliances."
 msgstr ""
-"Dies ist das minimale openSUSE Laufzeitsystem. Es ist ein wirklich minimales "
-"System, wo Sie sich einloggen können und eine Shell wird gestartet - das ist "
-"alles. Es ist als Basis für Anwendungen gedacht."
+"Dies ist das minimale SLE-Laufzeitsystem. Es ist ein wirklich minimales "
+"System, bei dem Sie sich einloggen können und eine Shell gestartet wird. Das "
+"ist alles. Es ist als Anwendungsbasis gedacht."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -231,7 +226,6 @@ msgstr "Grafische YaST-Benutzeroberflächen für den Minimalen X Desktop."
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
 #, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Base Utilities"
 msgstr "MATE-Hilfsprogramme"
 
@@ -241,25 +235,21 @@ msgstr "YaST-Tools für die grundlegende Systemadministration."
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
 #, fuzzy
-#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
 msgstr "KDE-Dienstprogramme"
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
 #, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
 msgstr "YaST-Tools für die grundlegende Systemadministration."
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/summary
 #, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Server Utilities"
 msgstr "MATE-Hilfsprogramme"
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
 #, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
 msgstr "YaST-Tools für die grundlegende Systemadministration."
 
@@ -298,7 +288,7 @@ msgstr ""
 
 #. SLE/patterns-ha/summary
 msgid "Patterns for SLE HA"
-msgstr ""
+msgstr "Schemata für SLE HA"
 
 #. SLE/patterns-ha/description
 #. SLE/patterns-ha-geo/description
@@ -309,26 +299,30 @@ msgid ""
 "the installation source setup.  Installation of this package does not make "
 "sense."
 msgstr ""
+"Dies ist ein internes Paket, mit dem die Schemata bei der Einrichtung der "
+"Installationsquelle erstellt werden können. Die Installation dieses Pakets "
+"ist nicht wirklich sinnvoll."
 
 #. SLE/patterns-ha-geo/summary
 msgid "Patterns for SLE HA GEO"
-msgstr ""
+msgstr "Schemata für SLE HA GEO"
 
 #. SLE/patterns-lp/summary
 msgid "Patterns for SLE Live Patching"
-msgstr ""
+msgstr "Schemata für SLE Live Patching"
 
 #. SLE/patterns-rt/summary
 msgid "Patterns for SLE Real Time Module"
-msgstr ""
+msgstr "Schemata für SLE-Echtzeitmodul"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/summary
 msgid "SLE Real Time Module"
-msgstr ""
+msgstr "SLE-Echtzeitmodul"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
 msgstr ""
+"Enthält Tools und Patches, um Fehler im Kernel zur Laufzeit zu beheben."
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/category
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
@@ -355,7 +349,7 @@ msgstr "Webbasierte Unternehmensverwaltung."
 
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
-msgstr ""
+msgstr "Schemata für SLES für SAP-Anwendungen"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
@@ -408,11 +402,6 @@ msgstr "Grundlegender HPC-Computer-Knoten"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
 #, fuzzy
-#| msgid ""
-#| "A compute node comprises of a minimal software image and mainly runs "
-#| "simulation programs. Services on this node should be reduced to a bare "
-#| "minimum and the node *must* be installed in a automatic manner. The "
-#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
@@ -437,11 +426,6 @@ msgstr "HPC-Entwicklungspakete"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
 #, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
-#| "addition it includes the GNU compilers and the relevant management "
-#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
@@ -454,17 +438,11 @@ msgstr ""
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
 #, fuzzy
-#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "Modularisierte HPC-Bibliotheken"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
 #, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in an HPC environment. These libraries allow to install several MPI "
-#| "flavors in parallel. In order to use thess libraries one needs to load "
-#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
@@ -490,11 +468,11 @@ msgstr ""
 
 #. SLE/patterns-lp/patterns-lp-lp_sles/summary
 msgid "Live Patching"
-msgstr ""
+msgstr "Live Patching"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/summary
 msgid "Amazon Web Services - All"
-msgstr ""
+msgstr "Amazon Web Services – Alle"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services/description
 msgid ""
@@ -504,10 +482,15 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Amazon Web Services - Tools)."
 msgstr ""
+"Dieses Schema installiert alle Amazon Web Services-Kommandozeilentools, "
+"Pakete zur Instanzinitialisierung und Tools zur Kommunikation mit dem Cloud-"
+"Framework innerhalb einer ausgeführten Instanz. Es wird empfohlen, statt "
+"dieses Schemas eines der Schemata für spezifische Anwendungsfälle (z. B. "
+"Amazon Web Services – Tools) zu installieren."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/summary
 msgid "Amazon Web Services - Instance Initialization"
-msgstr ""
+msgstr "Amazon Web Services – Instanzinitialisierung"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Init/description
 msgid ""
@@ -515,30 +498,37 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. cloud-init)."
 msgstr ""
+"Dieses Schema installiert die Pakete zur Amazon Web Services-"
+"Instanzinitialisierung, die die Bereitstellung und Ausführung von Instanzen "
+"im Cloud-Framework unterstützen (z. B. cloud-init)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/summary
 msgid "Amazon Web Services - Instance Tools"
-msgstr ""
+msgstr "Amazon Web Services – Instanztools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Instance-Tools/description
 msgid ""
 "This pattern install the Amazon Web Services instance specific tools which "
 "are used to collect instance metadata (e.g. python-ec2metadata)."
 msgstr ""
+"Dieses Schema installiert die instanzspezifischen Amazon Web Services-Tools, "
+"die zur Erfassung von Instanzmetadaten dienen (z. B. python-ec2metadata)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/summary
 msgid "Amazon Web Services - Tools"
-msgstr ""
+msgstr "Amazon Web Services – Tools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Amazon-Web-Services-Tools/description
 msgid ""
 "This pattern installs the Amazon Web Services command line interface tools "
 "to communicate with the cloud framework (e.g. aws-cli)."
 msgstr ""
+"Dieses Schema installiert Amazon Web Services-Kommandozeilentools zur "
+"Kommunikation mit dem Cloud-Framework (z. B. aws-cli)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/summary
 msgid "Google Cloud Platform - All"
-msgstr ""
+msgstr "Google Cloud-Plattform – Alle"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform/description
 msgid ""
@@ -548,10 +538,15 @@ msgid ""
 "install this pattern, but instead install one of the use-case specific "
 "patterns (e.g. Google Cloud Platform - Tools)."
 msgstr ""
+"Dieses Schema installiert alle Kommandozeilentools für die Google Cloud-"
+"Plattform, Pakete zur Instanzinitialisierung und Tools zur Kommunikation mit "
+"dem Cloud-Framework innerhalb einer ausgeführten Instanz. Es wird empfohlen, "
+"statt dieses Schemas eines der Schemata für spezifische Anwendungsfälle (z. "
+"B. Google Cloud-Plattform – Tools) zu installieren."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/summary
 msgid "Google Cloud Platform - Instance Initialization"
-msgstr ""
+msgstr "Google Cloud-Plattform – Instanzinitialisierung"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Init/description
 msgid ""
@@ -559,30 +554,38 @@ msgid ""
 "packages which support the provisioning and running of instances in the "
 "cloud framework (e.g. google-daemon)."
 msgstr ""
+"Dieses Schema installiert die Pakete zur Instanzinitialisierung für die "
+"Google Cloud-Plattform, die die Bereitstellung und Ausführung von Instanzen "
+"im Cloud-Framework unterstützen (z. B. google-daemon)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/summary
 msgid "Google Cloud Platform - Instance Tools"
-msgstr ""
+msgstr "Google Cloud-Plattform – Instanztools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Instance-Tools/description
 msgid ""
 "This pattern install the Google Cloud Platform instance specific tools which "
 "are used to collect instance metadata (e.g. python-gcemetadata)."
 msgstr ""
+"Dieses Schema installiert instanzspezifische Tools für die Google Cloud-"
+"Plattform, die zur Erfassung von Instanzmetadaten dienen (z. B. python-"
+"gcemetadata)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/summary
 msgid "Google Cloud Platform - Tools"
-msgstr ""
+msgstr "Google Cloud-Plattform – Tools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Google-Cloud-Platform-Tools/description
 msgid ""
 "This pattern installs the Google Cloud Platform command line interface tools "
 "to communicate with the cloud framework (e.g. google-cloud-sdk)."
 msgstr ""
+"Dieses Schema installiert die Kommandozeilentools für die Google Cloud-"
+"Plattform zur Kommunikation mit dem Cloud-Framework (z. B. google-cloud-sdk)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/summary
 msgid "Microsoft Azure - All"
-msgstr ""
+msgstr "Microsoft Azure – Alle"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure/description
 msgid ""
@@ -592,10 +595,15 @@ msgid ""
 "this pattern, but instead install one of the use-case specific patterns (e."
 "g. Microsoft Azure - Tools)."
 msgstr ""
+"Dieses Schema installiert alle Microsoft Azure-Kommandozeilentools, Pakete "
+"zur Instanzinitialisierung und Tools zur Kommunikation mit dem Cloud-"
+"Framework innerhalb einer ausgeführten Instanz. Es wird empfohlen, statt "
+"dieses Schemas eines der Schemata für spezifische Anwendungsfälle (z. B. "
+"Amazon Web Services – Tools) zu installieren."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/summary
 msgid "Microsoft Azure - Instance Initialization"
-msgstr ""
+msgstr "Microsoft Azure – Instanzinitialisierung"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Init/description
 msgid ""
@@ -603,30 +611,37 @@ msgid ""
 "which support the provisioning and running of instances in the cloud "
 "framework (e.g. python-azure-agent)."
 msgstr ""
+"Dieses Schema installiert die Pakete zur Microsoft Azure-"
+"Instanzinitialisierung, die die Bereitstellung und Ausführung von Instanzen "
+"im Cloud-Framework unterstützen (z. B. python-azure-agent)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
-msgstr ""
+msgstr "Microsoft Azure – Instanztools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/description
 msgid ""
 "This pattern install the Microsoft Azure instance specific tools which are "
 "used to collect instance metadata (e.g. azuremetadata)."
 msgstr ""
+"Dieses Schema installiert die instanzspezifischen Microsoft Azure-Tools, die "
+"zur Erfassung von Instanzmetadaten dienen (z. B. azuremetadata)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/summary
 msgid "Microsoft Azure - Tools"
-msgstr ""
+msgstr "Microsoft Azure – Tools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Tools/description
 msgid ""
 "This pattern installs the Microsoft Azure command line interface tools to "
 "communicate with the cloud framework (e.g. azure-cli)."
 msgstr ""
+"Dieses Schema installiert Microsoft Azure-Kommandozeilentools zur "
+"Kommunikation mit dem Cloud-Framework (z. B. azure-cli)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/summary
 msgid "OpenStack - All"
-msgstr ""
+msgstr "OpenStack – Alle"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack/description
 msgid ""
@@ -636,10 +651,15 @@ msgid ""
 "pattern, but instead install one of the use-case specific patterns (e.g. "
 "OpenStack - Tools)."
 msgstr ""
+"Dieses Schema installiert alle OpenStack-Kommandozeilentools, Pakete zur "
+"Instanzinitialisierung und Tools zur Kommunikation mit dem Cloud-Framework "
+"innerhalb einer ausgeführten Instanz. Es wird empfohlen, statt dieses "
+"Schemas eines der Schemata für spezifische Anwendungsfälle (z. B. OpenStack "
+"– Tools) zu installieren."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/summary
 msgid "OpenStack - Instance Initialization"
-msgstr ""
+msgstr "OpenStack – Instanzinitialisierung"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Init/description
 msgid ""
@@ -647,62 +667,59 @@ msgid ""
 "support the provisioning and running of instances in the cloud framework (e."
 "g. cloud-init)."
 msgstr ""
+"Dieses Schema installiert die Pakete zur OpenStack-Instanzinitialisierung, "
+"die die Bereitstellung und Ausführung von Instanzen im Cloud-Framework "
+"unterstützen (z. B. cloud-init)."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/summary
 msgid "OpenStack - Instance Tools"
-msgstr ""
+msgstr "OpenStack – Instanztools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Instance-Tools/description
 msgid ""
 "This pattern install the OpenStack instance specific tools which are used to "
 "collect instance metadata."
 msgstr ""
+"Dieses Schema installiert die instanzspezifischen OpenStack-Tools, die zur "
+"Erfassung von Instanzmetadaten dienen."
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/summary
 msgid "OpenStack - Tools"
-msgstr ""
+msgstr "OpenStack – Tools"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-OpenStack-Tools/description
 msgid ""
 "This pattern installs the OpenStack command line interface tools to "
 "communicate with the cloud framework (e.g. python-susepubliccloudinfo)."
 msgstr ""
+"Dieses Schema installiert OpenStack-Kommandozeilentools zur Kommunikation "
+"mit dem Cloud-Framework (z. B. python-susepubliccloudinfo)."
 
 #. SLE/patterns-sap/patterns-sap-b1/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP BusinessOne Server Base"
-msgstr "SAP-Anwendungsserver-Basis"
+msgstr "SAP BusinessOne-Serverbasis"
 
 #. SLE/patterns-sap/patterns-sap-b1/description
-#, fuzzy
-#| msgid "Set up the server for installing SAP systems."
 msgid "Set up the server for installing SAP BusinessOne systems."
-msgstr "Richten Sie den Server für die Installation von SAP-Systemen ein."
+msgstr ""
+"Richten Sie den Server für die Installation von SAP BusinessOne-Systemen ein."
 
 #. SLE/patterns-sap/patterns-sap-hana/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP HANA Server Base"
-msgstr "SAP-Anwendungsserver-Basis"
+msgstr "SAP HANA-Serverbasis"
 
 #. SLE/patterns-sap/patterns-sap-hana/description
-#, fuzzy
-#| msgid "Set up the server for installing SAP systems."
 msgid "Set up the server for installing SAP HANA systems."
-msgstr "Richten Sie den Server für die Installation von SAP-Systemen ein."
+msgstr "Richten Sie den Server für die Installation von SAP HANA-Systemen ein."
 
 #. SLE/patterns-sap/patterns-sap-nw/summary
-#, fuzzy
-#| msgid "SAP Application Server Base"
 msgid "SAP NetWeaver Server Base"
-msgstr "SAP-Anwendungsserver-Basis"
+msgstr "SAP NetWeaver-Serverbasis"
 
 #. SLE/patterns-sap/patterns-sap-nw/description
-#, fuzzy
-#| msgid "Set up the server for installing SAP systems."
 msgid "Set up the server for installing SAP NetWeaver systems."
-msgstr "Richten Sie den Server für die Installation von SAP-Systemen ein."
+msgstr ""
+"Richten Sie den Server für die Installation von SAP NetWeaver-Systemen ein."
 
 #. SLE/patterns-certification/patterns-certification-common-criteria/summary
 msgid "Tools and scripts for Common Criteria"
@@ -726,10 +743,8 @@ msgstr ""
 "Kernel-Module und einfache Benutzerbibliotheken."
 
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing ofed."
-msgstr "Das 32-Bit-Schema welches die Basis ergänzt."
+msgstr "Das 32-Bit-Schema zur Ergänzung von ofed."
 
 #. SLE/patterns-rpm-macros/summary
 msgid "RPM macros for building of patterns modules"
@@ -785,7 +800,7 @@ msgstr "Das 32-Bit-Schema zur Ergänzung von directory_server."
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "FIPS 140-2-spezifische Pakete"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
 msgid ""
@@ -799,18 +814,24 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"Dieses Schema installiert die FIPS 140-2-spezifischen Pakete zur "
+"Vervollständigung der verschiedenen verwendeten kryptographischen Module. Es "
+"ist erforderlich, wenn Sie das System mit \"fips=1\" ausführen möchten.\n"
+"\n"
+"Beachten Sie, dass dieses Schema nur einen FIPS 140-2-konformen Betrieb "
+"ermöglicht und das System im Hinblick auf den FIPS 140-2-Standard nicht "
+"zertifiziert oder validiert.\n"
+"\n"
+"Weitere Informationen erhalten Sie in den offiziellen SUSE-Erklärungen zum "
+"Status der FIPS 140-2-Zertifizierung."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing fips."
-msgstr "Das 32-Bit-Schema welches die Basis ergänzt."
+msgstr "Das 32-Bit-Schema zur Ergänzung von fips."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing file_server."
 msgid "The 32bit pattern complementing oracle_server."
-msgstr "Das 32-Bit-Schema zur Ergänzung von file_server."
+msgstr "Das 32-Bit-Schema zur Ergänzung von oracle_server."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/summary
@@ -822,10 +843,8 @@ msgid "Set up the server for installing SAP systems."
 msgstr "Richten Sie den Server für die Installation von SAP-Systemen ein."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing lamp_server."
 msgid "The 32bit pattern complementing sap_server."
-msgstr "Das 32-Bit-Schema zur Ergänzung von lamp_server."
+msgstr "Das 32-Bit-Schema zur Ergänzung von sap_server."
 
 #. SLE/patterns-server/patterns-server-file_server/summary
 #. SLE/patterns-server/patterns-server-file_server-32bit/summary
@@ -949,10 +968,8 @@ msgid "The 32bit pattern complementing printing."
 msgstr "Das 32-Bit-Schema zur Ergänzung der Druckfunktion."
 
 #. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/description
-#, fuzzy
-#| msgid "The 32bit pattern complementing x11."
 msgid "The 32bit pattern complementing WBEM."
-msgstr "Das 32-Bit-Schema welches x11 ergänzt."
+msgstr "Das 32-Bit-Schema zur Ergänzung von WBEM."
 
 # 51925 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_install_wf/summary
@@ -965,13 +982,15 @@ msgstr "YaST-Tools zur Installation des Systems."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "Kryptounterstützung für System z"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
 msgstr ""
+"Eine Auswahl von Paketen, mit denen das System 'z HW crypto stack' auf "
+"System z installiert wird."
 
 #. SLE/patterns-server/patterns-server-xen_server/summary
 msgid "Xen Virtual Machine Host Server"
@@ -1005,16 +1024,17 @@ msgstr ""
 "einem Nur-Lesen Rootdateisystem."
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
-#, fuzzy
-#| msgid "High Availability"
 msgid "GEO Clustering for High Availability"
-msgstr "Hochverfügbarkeit"
+msgstr "GEO-Clustering für High Availability"
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/description
 msgid ""
 "This pattern provides tools for building multi-site clustering setups based "
 "on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
+"Dieses Schema enthält Tools zur Erstellung von Cluster-Einrichtungen, die "
+"mehrere Sites umfassen, auf Basis der SUSE Linux Enterprise High-"
+"Availability- und GEO-Extension."
 
 #. SLE/patterns-ha/patterns-ha-ha_sles/summary
 msgid "High Availability"
@@ -1162,7 +1182,6 @@ msgstr ""
 
 #. leap/patterns-base/patterns-base-basesystem/summary
 #, fuzzy
-#| msgid "Minimal Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
 msgstr "Minimales Basissystem (Alias-Schema für Basis)"
 
@@ -1188,10 +1207,6 @@ msgstr ""
 
 #. leap/patterns-base/patterns-base-minimal_base/description
 #, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
@@ -1218,7 +1233,6 @@ msgstr "Ceph Basis"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
 #, fuzzy
-#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
 msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
@@ -1231,19 +1245,16 @@ msgstr "Container"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
 #, fuzzy
-#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
 msgstr "XFCE-Desktop-Umgebung"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
 #, fuzzy
-#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
 msgstr "Minimales Basissystem"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
 #, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
 msgstr "Grundlegende Pakete für die XFCE-Desktop-Umgebung"
 
@@ -1746,13 +1757,11 @@ msgstr "openSUSE MicroOS"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
 #, fuzzy
-#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
 msgstr "KDE-Desktop"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
 #, fuzzy
-#| msgid "SELinux Support"
 msgid "SELinux"
 msgstr "SELinux-Unterstützung"
 
@@ -1791,7 +1800,6 @@ msgstr ""
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
 #, fuzzy
-#| msgid "kubeadm Stack"
 msgid "Kubernetes kubeadm Stack"
 msgstr "kubeadm-Stack"
 
@@ -1819,9 +1827,6 @@ msgstr "Kubic Admin Node"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
 #, fuzzy
-#| msgid ""
-#| "This pattern installs the the software required for an openSUSE Kubic "
-#| "Admin Node."
 msgid ""
 "This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr ""
@@ -1854,15 +1859,11 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
 #, fuzzy
-#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
 msgstr "LXDE Desktop-Umgebung"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
 #, fuzzy
-#| msgid ""
-#| "The MATE desktop environment is a desktop environment using traditional "
-#| "metaphors."
 msgid ""
 "The Deepin desktop environment is a desktop environment using traditional "
 "metaphors."
@@ -1872,37 +1873,31 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
 #, fuzzy
-#| msgid "KDE Administration Tools"
 msgid "Deepin Administration Tools"
 msgstr "KDE Administrationswerkzeuge"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
 #, fuzzy
-#| msgid "KDE Base System"
 msgid "Deepin Base System"
 msgstr "KDE Basissystem"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
 #, fuzzy
-#| msgid "Base packages for the KDE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
 msgstr "Grundlegende Pakete für die KDE-Desktop-Umgebung."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
 #, fuzzy
-#| msgid "KDE Internet"
 msgid "Deepin Internet"
 msgstr "KDE Internet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
 #, fuzzy
-#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
 msgstr "KDE Internetanwendungen"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
 #, fuzzy
-#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
 msgstr "KDE Multimedia"
 
@@ -1915,14 +1910,12 @@ msgstr ""
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
 #, fuzzy
-#| msgid "KDE Office"
 msgid "Deepin Office"
 msgstr "KDE Office"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
 #, fuzzy
-#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
 msgstr "KDE-Dienstprogramme"
 
@@ -1993,15 +1986,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using Micro DNF"
 msgstr "openSUSE MicroOS Standards"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
@@ -2011,15 +2000,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using PackageKit"
 msgstr "openSUSE MicroOS Standards"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
@@ -2029,15 +2014,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
 #, fuzzy
-#| msgid "openSUSE MicroOS"
 msgid "openSUSE MicroOS using Zypper"
 msgstr "openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
 #, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
@@ -2061,7 +2042,6 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
 #, fuzzy
-#| msgid "Web based system management tool"
 msgid "Web based remote system managemet"
 msgstr "Webbasiertes Systemverwaltungsprogramm."
 
@@ -2085,13 +2065,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
 #, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
 msgstr "Grundlegende Pakete für die XFCE-Desktop-Umgebung"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
 #, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for openSUSE MicroOS Desktops."
 msgstr ""
 "Pakete, die für die Aktivierung von openSUSE MicroOS in der Cloud "
@@ -2099,13 +2077,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
 #, fuzzy
-#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
 msgstr "GNOME-Desktop"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
 #, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
 msgstr ""
 "Pakete, die für die Aktivierung von openSUSE MicroOS in der Cloud "
@@ -2113,13 +2089,11 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
 #, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "MicroOS KDE Plasma Desktop"
 msgstr "KDE Plasma 5 Desktop"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
 #, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
 msgstr ""
 "Pakete, die für die Aktivierung von openSUSE MicroOS in der Cloud "
@@ -2182,6 +2156,43 @@ msgstr ""
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr ""
+
+#~ msgid ""
+#~ "A compute node comprises of a minimal software image and mainly runs "
+#~ "simulation programs. Services on this node should be reduced to a bare "
+#~ "minimum and the node *must* be installed in a automatic manner. The "
+#~ "pattern 'HPC modularized libraries' should also be installed."
+#~ msgstr ""
+#~ "Ein Computer-Knoten umfasst ein minimales Software-Abbild und lässt "
+#~ "hauptsächlich Simulationsprogramme laufen. Dienste auf diesem Knoten "
+#~ "sollten auf ein absolutes Minimum reduziert werden  und der Knoten *muss* "
+#~ "in automatisierter Form installiert werden. Das Schema 'HPC "
+#~ "Modularisierte Bibliotheken' sollte auch installiert sein."
+
+#~ msgid ""
+#~ "This package provides all the relevant packages for developing HPC "
+#~ "applications. It depends on the pattern 'HPC modularized libraries'. In "
+#~ "addition it includes the GNU compilers and the relevant management "
+#~ "packages."
+#~ msgstr ""
+#~ "Dieses Paket bietet alle relevanten Pakete die Entwicklung von HPC-"
+#~ "Applikationen. Es hängt von dem Schema 'HPC Modulairiserte Bibliotheken' "
+#~ "ab. Zusätzliche  beinhaltet es die GNU-Compiler hinzu und die relevanten "
+#~ "Verwaltungs-Pakete."
+
+#~ msgid "HPC modularized Libraries"
+#~ msgstr "Modularisierte HPC-Bibliotheken"
+
+#~ msgid ""
+#~ "This package provides all the modularized libraries so that they can be "
+#~ "used in an HPC environment. These libraries allow to install several MPI "
+#~ "flavors in parallel. In order to use thess libraries one needs to load "
+#~ "them via the module command first."
+#~ msgstr ""
+#~ "Dieses Paket bietet alle modularisierten Bibliotheken, so dass sie in "
+#~ "einer HPC-Umgebung verwendet werden können. Diese Bibliotheken "
+#~ "ermöglichen die Installation mehrerer MPI Sorten. Um diese Bibliotheken "
+#~ "zu nutzen, müssen sie zunächst über den Module-Kommando geladen werden."
 
 #~ msgid "YaST System Administration"
 #~ msgstr "YaST-Systemverwaltung"
@@ -2861,3 +2872,6 @@ msgstr ""
 
 #~ msgid "WebYaST: User interface components"
 #~ msgstr "WebYast-Benutzeroberfläche"
+
+#~ msgid "Patterns for Installation (base patterns)"
+#~ msgstr "Schemata für die Installation (Basisschemata)"
