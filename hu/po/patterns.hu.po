@@ -226,6 +226,7 @@ msgstr "Grafikus YaST felhasználói felület minimális asztali környezethez."
 # 50815 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
 #, fuzzy
+#| msgid "KDE Utilities"
 msgid "YaST Base Utilities"
 msgstr "KDE segédprogramok"
 
@@ -237,12 +238,14 @@ msgstr "YaST eszközök alapszintű rendszeradminisztrációhoz."
 # 50815 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
 #, fuzzy
+#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
 msgstr "KDE segédprogramok"
 
 # 49865 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
 #, fuzzy
+#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
 msgstr "YaST eszközök alapszintű rendszeradminisztrációhoz."
 
@@ -253,6 +256,7 @@ msgstr ""
 # 49865 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
 #, fuzzy
+#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
 msgstr "YaST eszközök alapszintű rendszeradminisztrációhoz."
 
@@ -400,6 +404,11 @@ msgstr "HPC alapszintű számítási csomópont"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
 #, fuzzy
+#| msgid ""
+#| "A compute node comprises of a minimal software image and mainly runs "
+#| "simulation programs. Services on this node should be reduced to a bare "
+#| "minimum and the node *must* be installed in a automatic manner. The "
+#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
@@ -424,6 +433,11 @@ msgstr "Csomagok HPC-fejlesztéshez"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
 #, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
+#| "addition it includes the GNU compilers and the relevant management "
+#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
@@ -436,11 +450,17 @@ msgstr ""
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
 #, fuzzy
+#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "HPC moduláris könyvtárak"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
 #, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in an HPC environment. These libraries allow to install several MPI "
+#| "flavors in parallel. In order to use thess libraries one needs to load "
+#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
@@ -1010,6 +1030,7 @@ msgstr ""
 
 #. SLE/patterns-base/patterns-base-transactional_base/summary
 #, fuzzy
+#| msgid "Desktop Base System"
 msgid "Transactional Base System"
 msgstr "Alaprendszer (munkaállomáshoz)"
 
@@ -1158,6 +1179,7 @@ msgstr "Egyéb szabadalom alá eső csomagok"
 
 #. leap-nonoss/patterns-non_oss/description
 #, fuzzy
+#| msgid "Packages that are proprietary and not under an Open Source license."
 msgid "Packages that are proprietary and not under an Open Source license"
 msgstr ""
 "Programcsomagok, amelyek szabadalom alá esnek és nem nyílt forrású licenc "
@@ -1184,6 +1206,7 @@ msgstr ""
 
 #. leap/patterns-base/patterns-base-basesystem/summary
 #, fuzzy
+#| msgid "Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
 msgstr "Alaprendszer (az alap aliasmintája)"
 
@@ -1209,6 +1232,12 @@ msgstr ""
 
 #. leap/patterns-base/patterns-base-minimal_base/description
 #, fuzzy
+#| msgid ""
+#| "This is the minimal Novell SUSE Linux Enterprise runtime system. It is "
+#| "really a minimal system, you can login and a shell will be started, "
+#| "that's all. It is intended as base for Appliances. Support for this "
+#| "minimal pattern is only possible as part of an OEM agreement or after "
+#| "upgrading the system to the Server Base pattern"
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
@@ -1247,17 +1276,20 @@ msgstr ""
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
 #, fuzzy
+#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
 msgstr "XFCE asztali környezet"
 
 # src/create_utf8.c:50
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
 #, fuzzy
+#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
-msgstr "Alaprendszer"
+msgstr "Minimális alaprendszer"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
 #, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
 msgstr "XFCE asztali környezet alapcsomagok."
 
@@ -1460,6 +1492,7 @@ msgstr "Qt fejlesztői csomag"
 # 48771 AttribValues/label
 #. leap/patterns-kde/patterns-kde-devel_qt5/description
 #, fuzzy
+#| msgid "Tools and libraries for .NET development using Mono."
 msgid "Tools and libraries for software development using Qt 5."
 msgstr ""
 ".NET fejlesztéshez használt segédprogramok és programkönyvtárak Mono "
@@ -1552,6 +1585,7 @@ msgstr "KDE irodai alkalmazások"
 # src/create_utf8.c:44
 #. leap/patterns-kde/patterns-kde-kde_pim/summary
 #, fuzzy
+#| msgid "KDE System"
 msgid "KDE PIM Suite"
 msgstr "KDE rendszer"
 
@@ -1561,6 +1595,7 @@ msgstr ""
 
 #. leap/patterns-kde/patterns-kde-kde_plasma/summary
 #, fuzzy
+#| msgid "KDE Desktop"
 msgid "KDE Plasma 5 Desktop Base"
 msgstr "KDE asztali környezet"
 
@@ -1652,6 +1687,7 @@ msgstr "Kifejezetten noteszgépekhez készített LXDE-alkalmazások."
 
 #. leap/patterns-lxde/patterns-lxde-lxde_laptop/category
 #, fuzzy
+#| msgid "GNOME Desktop"
 msgid "LXDE Desktop"
 msgstr "GNOME asztali környezet"
 
@@ -1692,6 +1728,7 @@ msgstr ""
 #. leap/patterns-mate/patterns-mate-mate_office_opt/category
 #. leap/patterns-mate/patterns-mate-mate_utilities/category
 #, fuzzy
+#| msgid "GNOME Desktop"
 msgid "MATE Desktop"
 msgstr "GNOME asztali környezet"
 
@@ -1764,6 +1801,7 @@ msgstr "XFCE noteszgép"
 
 #. leap/patterns-xfce/patterns-xfce-xfce_laptop/category
 #, fuzzy
+#| msgid "GNOME Desktop"
 msgid "XFCE Desktop"
 msgstr "GNOME asztali környezet"
 
@@ -1788,6 +1826,7 @@ msgstr ""
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
 #, fuzzy
+#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
 msgstr "KDE asztali környezet"
 
@@ -1873,11 +1912,15 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
 #, fuzzy
+#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
 msgstr "LXDE asztali környezet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
 #, fuzzy
+#| msgid ""
+#| "The GNOME desktop environment is an intuitive and attractive desktop for "
+#| "users."
 msgid ""
 "The Deepin desktop environment is a desktop environment using traditional "
 "metaphors."
@@ -1886,33 +1929,38 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
 #, fuzzy
+#| msgid "KDE Administration Tools"
 msgid "Deepin Administration Tools"
 msgstr "SLES adminisztrációs eszközök"
 
-# src/create_utf8.c:50
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
 #, fuzzy
+#| msgid "Desktop Base System"
 msgid "Deepin Base System"
-msgstr "KDE alaprendszer"
+msgstr "Alaprendszer (munkaállomáshoz)"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
 #, fuzzy
+#| msgid "Base packages for the KDE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
 msgstr "KDE asztali környezet alapcsomagok."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
 #, fuzzy
+#| msgid "KDE Internet"
 msgid "Deepin Internet"
 msgstr "KDE internet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
 #, fuzzy
+#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
 msgstr "KDE internetes alkalmazások"
 
 # src/create_utf8.c:48
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
 #, fuzzy
+#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
 msgstr "KDE-alapú multimédia-alkalmazások"
 
@@ -1925,6 +1973,7 @@ msgstr ""
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
 #, fuzzy
+#| msgid "KDE Office"
 msgid "Deepin Office"
 msgstr "KDE irodai alkalmazások"
 
@@ -1932,6 +1981,7 @@ msgstr "KDE irodai alkalmazások"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
 #, fuzzy
+#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
 msgstr "KDE segédprogramok"
 
@@ -1993,6 +2043,9 @@ msgstr ""
 #. tumbleweed/patterns-microos/patterns-microos-base/description
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/description
 #, fuzzy
+#| msgid ""
+#| "This is the base runtime system.  It contains only a minimal multiuser "
+#| "booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system. It contains only a minimal "
 "multiuser booting system."
@@ -2006,6 +2059,9 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
 #, fuzzy
+#| msgid ""
+#| "This is the base runtime system.  It contains only a minimal multiuser "
+#| "booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
@@ -2019,6 +2075,9 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
 #, fuzzy
+#| msgid ""
+#| "This is the base runtime system.  It contains only a minimal multiuser "
+#| "booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
@@ -2032,6 +2091,9 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
 #, fuzzy
+#| msgid ""
+#| "This is the base runtime system.  It contains only a minimal multiuser "
+#| "booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
@@ -2041,6 +2103,7 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/summary
 #, fuzzy
+#| msgid "Base System (alias pattern for base)"
 msgid "openSUSE MicroOS Base System (alias pattern for microos_base)"
 msgstr "Alaprendszer (az alap aliasmintája)"
 
@@ -2054,6 +2117,7 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
 #, fuzzy
+#| msgid "Web based system management tool"
 msgid "Web based remote system managemet"
 msgstr "Webes rendszerfelügyeleti eszköz"
 
@@ -2075,6 +2139,7 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
 #, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
 msgstr "XFCE asztali környezet alapcsomagok."
 
@@ -2084,6 +2149,7 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
 #, fuzzy
+#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
 msgstr "GNOME asztali környezet"
 
@@ -2093,6 +2159,7 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
 #, fuzzy
+#| msgid "KDE Desktop"
 msgid "MicroOS KDE Plasma Desktop"
 msgstr "KDE asztali környezet"
 
@@ -2150,6 +2217,28 @@ msgstr ""
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr ""
 
+#, fuzzy
+#~| msgid ""
+#~| "This is the minimal Novell SUSE Linux Enterprise runtime system. It is "
+#~| "really a minimal system, you can login and a shell will be started, "
+#~| "that's all. It is intended as base for Appliances. Support for this "
+#~| "minimal pattern is only possible as part of an OEM agreement or after "
+#~| "upgrading the system to the Server Base pattern"
+#~ msgid ""
+#~ "This is the minimal openSUSE runtime system. It is really a minimal "
+#~ "system, you can login and a shell will be started, that's all. It is "
+#~ "intended as base for Appliances."
+#~ msgstr ""
+#~ "Ez egy minimális Novell SUSE Linux Enterprise futtatókörnyezet. "
+#~ "Bejelentkezést követően a parancssori felület indul el, amely tökéletesen "
+#~ "elegendő különböző készülékek alaprendszereként. A minimális telepítési "
+#~ "minta támogatása csak OEM partnerek számára érhető el, vagy azoknak, aki "
+#~ "a Kiszolgáló alapmintára bővítik a rendszert."
+
+# 49865 AttribValues/label
+#~ msgid "YaST System Administration"
+#~ msgstr "YaST rendszeradminisztráció"
+
 #~ msgid ""
 #~ "A compute node comprises of a minimal software image and mainly runs "
 #~ "simulation programs. Services on this node should be reduced to a bare "
@@ -2186,10 +2275,6 @@ msgstr ""
 #~ "felhasználhatók a HPC környezetben. Ezekkel a könyvtárakkal több MPI "
 #~ "változat telepíthető párhuzamosan. A könyvtárak használatához először be "
 #~ "kell tölteni azokat a module parancs segítségével."
-
-# 49865 AttribValues/label
-#~ msgid "YaST System Administration"
-#~ msgstr "YaST rendszeradminisztráció"
 
 #~ msgid "KDE Development"
 #~ msgstr "KDE fejlesztőkörnyezet"
@@ -2423,6 +2508,10 @@ msgstr ""
 
 #~ msgid "KDE"
 #~ msgstr "KDE"
+
+# src/create_utf8.c:50
+#~ msgid "KDE Base System"
+#~ msgstr "KDE alaprendszer"
 
 #~ msgid "KDE Desktop Effects"
 #~ msgstr "KDE asztali effektek"
@@ -2699,26 +2788,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Ez egy alap futtatókörnyezet. Csak egy minimális, többfelhasználós "
 #~ "környezetet tartalmaz."
-
-#~ msgid ""
-#~ "The GNOME desktop environment is an intuitive and attractive desktop for "
-#~ "users."
-#~ msgstr ""
-#~ "A GNOME egy intuitív és tetszetős asztali környezet Linux "
-#~ "munkaállomásokhoz."
-
-#~ msgid "Base packages for the KDE desktop environment."
-#~ msgstr "KDE asztali környezet alapcsomagok."
-
-#~ msgid "Desktop Base System"
-#~ msgstr "Alaprendszer (munkaállomáshoz)"
-
-#~ msgid "KDE Administration Tools"
-#~ msgstr "SLES adminisztrációs eszközök"
-
-# src/create_utf8.c:50
-#~ msgid "KDE Base System"
-#~ msgstr "KDE alaprendszer"
 
 # src/create_utf8.c:44
 #~ msgid "KDE System"

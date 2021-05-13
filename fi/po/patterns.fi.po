@@ -156,15 +156,11 @@ msgid "Minimal Appliance Base"
 msgstr "Minimaalinen laiteasennus"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
 msgid ""
 "This is the minimal SLE runtime system. It is really a minimal system, you "
 "can login and a shell will be started, that's all. It is intended as base "
 "for Appliances."
 msgstr ""
-"Tämä on minimaalinen openSUSE-ajonaikaisjärjestelmä. Se on todella "
-"minimaalinen: sisään voi kirjautua ja komentotulkin käynnistää, siinä "
-"kaikki. Se on tarkoitettu laiteasennusten perustaksi."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -236,6 +232,7 @@ msgstr ""
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
 #, fuzzy
+#| msgid "MATE Utilities"
 msgid "YaST Base Utilities"
 msgstr "MATE-apuohjelmat"
 
@@ -245,21 +242,25 @@ msgstr "YaST-työkalut perusjärjestelmänhallintaan."
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
 #, fuzzy
+#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
 msgstr "KDE-apuohjelmat"
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
 #, fuzzy
+#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
 msgstr "YaST-työkalut perusjärjestelmänhallintaan."
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/summary
 #, fuzzy
+#| msgid "MATE Utilities"
 msgid "YaST Server Utilities"
 msgstr "MATE-apuohjelmat"
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
 #, fuzzy
+#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
 msgstr "YaST-työkalut perusjärjestelmänhallintaan."
 
@@ -405,6 +406,11 @@ msgstr "HPC-peruslaskentasolmu"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
 #, fuzzy
+#| msgid ""
+#| "A compute node comprises of a minimal software image and mainly runs "
+#| "simulation programs. Services on this node should be reduced to a bare "
+#| "minimum and the node *must* be installed in a automatic manner. The "
+#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
@@ -428,6 +434,11 @@ msgstr "HPC-kehityspaketit"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
 #, fuzzy
+#| msgid ""
+#| "This package provides all the relevant packages for developing HPC "
+#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
+#| "addition it includes the GNU compilers and the relevant management "
+#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
@@ -439,11 +450,17 @@ msgstr ""
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
 #, fuzzy
+#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "Modularisoidut HPC-kirjastot"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
 #, fuzzy
+#| msgid ""
+#| "This package provides all the modularized libraries so that they can be "
+#| "used in an HPC environment. These libraries allow to install several MPI "
+#| "flavors in parallel. In order to use thess libraries one needs to load "
+#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
@@ -693,6 +710,7 @@ msgstr ""
 
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/description
 #, fuzzy
+#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing ofed."
 msgstr "base-kuviota täydentävä 32-bittinen kuvio."
 
@@ -763,11 +781,13 @@ msgstr ""
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 #, fuzzy
+#| msgid "The 32bit pattern complementing base."
 msgid "The 32bit pattern complementing fips."
 msgstr "base-kuviota täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/description
 #, fuzzy
+#| msgid "The 32bit pattern complementing file_server."
 msgid "The 32bit pattern complementing oracle_server."
 msgstr "file_serveriä täydentävä 32-bittinen kuvio."
 
@@ -782,6 +802,7 @@ msgstr "Pystytä palvelin SAP-järjestelmien asentamista varten."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-sap_server-32bit/description
 #, fuzzy
+#| msgid "The 32bit pattern complementing lamp_server."
 msgid "The 32bit pattern complementing sap_server."
 msgstr "lamp_serveriä täydentävä 32-bittinen kuvio."
 
@@ -907,6 +928,7 @@ msgstr "printingiä täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-wbem/patterns-wbem-WBEM-32bit/description
 #, fuzzy
+#| msgid "The 32bit pattern complementing x11."
 msgid "The 32bit pattern complementing WBEM."
 msgstr "x11-kuviota täydentävä 32-bittinen kuvio."
 
@@ -1109,6 +1131,7 @@ msgstr ""
 
 #. leap/patterns-base/patterns-base-basesystem/summary
 #, fuzzy
+#| msgid "Minimal Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
 msgstr "Minimaalinen perusjärjestelmä (alias base-kuviolle)"
 
@@ -1134,6 +1157,10 @@ msgstr ""
 
 #. leap/patterns-base/patterns-base-minimal_base/description
 #, fuzzy
+#| msgid ""
+#| "This is the minimal openSUSE runtime system. It is really a minimal "
+#| "system, you can login and a shell will be started, that's all. It is "
+#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
@@ -1160,6 +1187,7 @@ msgstr "Ceph alusta"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
 #, fuzzy
+#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
 msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
@@ -1171,16 +1199,19 @@ msgstr "Kontit"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
 #, fuzzy
+#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
 msgstr "XFCE-työpöytäympäristö"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
 #, fuzzy
+#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
 msgstr "Minimaalinen perusjärjestelmä"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
 #, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
 msgstr "Peruspaketit XFCE-työpöytäympäristölle"
 
@@ -1670,11 +1701,13 @@ msgstr "openSUSE MicroOS"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
 #, fuzzy
+#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
 msgstr "KDE-työpöytä"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
 #, fuzzy
+#| msgid "SELinux Support"
 msgid "SELinux"
 msgstr "SELinux tuki"
 
@@ -1713,6 +1746,7 @@ msgstr ""
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
 #, fuzzy
+#| msgid "kubeadm Stack"
 msgid "Kubernetes kubeadm Stack"
 msgstr "kubeadm pino"
 
@@ -1738,6 +1772,9 @@ msgstr "Kubic Admin solmu"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
 #, fuzzy
+#| msgid ""
+#| "This pattern installs the the software required for an openSUSE Kubic "
+#| "Admin Node."
 msgid ""
 "This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr ""
@@ -1768,11 +1805,15 @@ msgstr ""
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
 #, fuzzy
+#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
 msgstr "LXDE-työpöytäympäristö"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
 #, fuzzy
+#| msgid ""
+#| "The MATE desktop environment is a desktop environment using traditional "
+#| "metaphors."
 msgid ""
 "The Deepin desktop environment is a desktop environment using traditional "
 "metaphors."
@@ -1780,31 +1821,37 @@ msgstr "MATE on perinteiseen työpöytäkäsitykseen perustuva työpöytäympär
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
 #, fuzzy
+#| msgid "MATE Administration Tools"
 msgid "Deepin Administration Tools"
 msgstr "MATE-ylläpitotyökalut"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
 #, fuzzy
+#| msgid "Base System"
 msgid "Deepin Base System"
 msgstr "Perusjärjestelmä"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
 #, fuzzy
+#| msgid "Base packages for the MATE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
 msgstr "Peruspaketit MATE-työpöytäympäristölle."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
 #, fuzzy
+#| msgid "KDE Internet"
 msgid "Deepin Internet"
 msgstr "KDE-Internet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
 #, fuzzy
+#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
 msgstr "KDE-internetsovellukset"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
 #, fuzzy
+#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
 msgstr "KDE-multimedia"
 
@@ -1817,12 +1864,14 @@ msgstr ""
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
 #, fuzzy
+#| msgid "KDE Office"
 msgid "Deepin Office"
 msgstr "KDE-toimisto"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
 #, fuzzy
+#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
 msgstr "KDE-apuohjelmat"
 
@@ -1892,11 +1941,15 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
 #, fuzzy
+#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using Micro DNF"
 msgstr "openSUSE MicroOS oletukset"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
 #, fuzzy
+#| msgid ""
+#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
+#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
@@ -1906,11 +1959,15 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
 #, fuzzy
+#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using PackageKit"
 msgstr "openSUSE MicroOS oletukset"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
 #, fuzzy
+#| msgid ""
+#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
+#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
@@ -1920,11 +1977,15 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
 #, fuzzy
+#| msgid "openSUSE MicroOS"
 msgid "openSUSE MicroOS using Zypper"
 msgstr "openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
 #, fuzzy
+#| msgid ""
+#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
+#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
@@ -1969,22 +2030,26 @@ msgstr ""
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
 #, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
 msgstr "Peruspaketit XFCE-työpöytäympäristölle"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
 #, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for openSUSE MicroOS Desktops."
 msgstr ""
 "Paketit, jotka tarvitaan openSUSE MicroOS käyttöönottamiseen pilvipalvelussa."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
 #, fuzzy
+#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
 msgstr "GNOME-työpöytä"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
 #, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
 msgstr ""
 "Paketit, jotka tarvitaan openSUSE MicroOS käyttöönottamiseen pilvipalvelussa."
@@ -1996,6 +2061,7 @@ msgstr "KDE-työpöytä"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
 #, fuzzy
+#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
 msgstr ""
 "Paketit, jotka tarvitaan openSUSE MicroOS käyttöönottamiseen pilvipalvelussa."
@@ -2057,6 +2123,18 @@ msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr ""
 
 #~ msgid ""
+#~ "This is the minimal openSUSE runtime system. It is really a minimal "
+#~ "system, you can login and a shell will be started, that's all. It is "
+#~ "intended as base for Appliances."
+#~ msgstr ""
+#~ "Tämä on minimaalinen openSUSE-ajonaikaisjärjestelmä. Se on todella "
+#~ "minimaalinen: sisään voi kirjautua ja komentotulkin käynnistää, siinä "
+#~ "kaikki. Se on tarkoitettu laiteasennusten perustaksi."
+
+#~ msgid "YaST System Administration"
+#~ msgstr "YaST-järjestelmänhallinta"
+
+#~ msgid ""
 #~ "A compute node comprises of a minimal software image and mainly runs "
 #~ "simulation programs. Services on this node should be reduced to a bare "
 #~ "minimum and the node *must* be installed in a automatic manner. The "
@@ -2090,9 +2168,6 @@ msgstr ""
 #~ "kirjastot, jotka sallivat useiden rinnakkaisten MPI-versioiden "
 #~ "asentamisen. Kirjastojen käyttämiseksi ne on ensin ladattava "
 #~ "moduulikomennolla."
-
-#~ msgid "YaST System Administration"
-#~ msgstr "YaST-järjestelmänhallinta"
 
 #~ msgid "KDE Development"
 #~ msgstr "KDE-kehitys"
