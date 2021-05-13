@@ -40,23 +40,25 @@ move_if_changed()
 if [ ! -r "$1" ]; then
   die "Usage: $0 URLS.TXT"
 fi
-urlfile="$1"
-shift
 
 # get package lists
 rm -rf 50-lists
 mkdir 50-lists
-while read distro url; do
-  case $distro in
-    \#*) continue ;;
-  esac
+while [ ! -z "$1" ]; do
+  urlfile="$1"
+  shift
+  while read distro url; do
+    case $distro in
+      \#*) continue ;;
+    esac
 
-## get package descriptions
-  log "Generating POT file for ${distro}..."
-  python3 50-tools/repomd2gettext.py "$url" "$distro" | msguniq > "50-lists/${distro}-packages._pot"
+  ## get package descriptions
+    log "Generating POT file for ${distro}..."
+    python3 50-tools/repomd2gettext.py "$url" "$distro" | msguniq > "50-lists/${distro}-packages._pot"
 
-  log "OK"
-done < "$urlfile"
+    log "OK"
+  done < "$urlfile"
+done
 
 cd 50-lists
 rm -f *.pot
