@@ -3,15 +3,16 @@ msgstr ""
 "Project-Id-Version: repomd2gettext\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2021-05-13 01:18+0000\n"
-"PO-Revision-Date: 2019-10-12 05:52+0000\n"
-"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
-"Language-Team: Chinese (Taiwan) <https://l10n.opensuse.org/projects/packages-"
-"i18n/patterns-master/zh_TW/>\n"
+"PO-Revision-Date: 2021-05-17 10:59+0000\n"
+"Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
+"Language-Team: Chinese (Taiwan) <https://l10n.opensuse.org/projects/"
+"packages-i18n/patterns-master/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Weblate 3.6.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. SLE/patterns-base/patterns-base-32bit/summary
 msgid "32-Bit Runtime Environment"
@@ -83,11 +84,11 @@ msgstr "精簡基礎系統（基礎軟體集別名）"
 
 #. SLE/patterns-base/patterns-base-basic_desktop/summary
 msgid "A very basic desktop (previously part of x11 pattern)"
-msgstr ""
+msgstr "非常基本的桌面 (先前屬於 x11 模式)"
 
 #. SLE/patterns-base/patterns-base-basic_desktop/description
 msgid "This pattern installs a rather basic desktop (icewm)"
-msgstr ""
+msgstr "此模式會安裝一個相當基本的桌面 (icewm)"
 
 #. SLE/patterns-base/patterns-base-basic_desktop/category
 #. SLE/patterns-base/patterns-base-x11/category
@@ -196,38 +197,28 @@ msgid "Graphical YaST user interfaces for minimal X desktop."
 msgstr "精簡 X 桌面系統的 YaST 圖形使用者介面。"
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Base Utilities"
-msgstr "MATE 工具程式"
+msgstr "YaST 基礎公用程式"
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/description
 msgid "YaST tools for basic system administration."
 msgstr "基礎系統管理用的 YaST 工具。"
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
-#, fuzzy
-#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
-msgstr "KDE 工具"
+msgstr "YaST 桌面公用程式"
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
-msgstr "基礎系統管理用的 YaST 工具。"
+msgstr "用於桌面系統管理的 YaST 工具。"
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Server Utilities"
-msgstr "MATE 工具程式"
+msgstr "YaST 伺服器公用程式"
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
-msgstr "基礎系統管理用的 YaST 工具。"
+msgstr "用於伺服器系統管理的 YaST 工具。"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
@@ -287,7 +278,7 @@ msgstr "SLE Real Time Module 的模式"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/summary
 msgid "SLE Real Time Module"
-msgstr "SLE Real Time Module"
+msgstr "SLE Real Time 模組"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
@@ -366,20 +357,14 @@ msgid "HPC Basic Compute Node"
 msgstr "HPC 基本計算節點"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node comprises of a minimal software image and mainly runs "
-#| "simulation programs. Services on this node should be reduced to a bare "
-#| "minimum and the node *must* be installed in a automatic manner. The "
-#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC Modularized libraries' should also be installed."
 msgstr ""
-"構成精簡軟體影像的計算節點，主要執行模擬程式。此節點上的服務應減少至最小值，"
-"且 *必須* 以自動方式安裝節點。另外還應安裝「HPC 模組化程式庫」模式。"
+"計算節點由一個極簡軟體影像構成，主要執行模擬程式。此節點上的服務應減至最低數量，並且該節點*必須*以自動化方式安裝。此外還應安裝 \"HPC "
+"模組化程式庫\" 模式。"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -392,41 +377,25 @@ msgid "HPC Development Packages"
 msgstr "HPC 開發套件"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
-#| "addition it includes the GNU compilers and the relevant management "
-#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
-"此套件提供開發 HPC 應用程式所需的所有相關套件。該套件相依於模式「HPC 模組化程"
-"式庫」。此外，它還包含 GNU 編譯器以及相關的管理套件。"
+"此套件提供用於開發 HPC 應用程式的所有相關套件。它相依於 \"HPC 模組化程式庫\" 模式。此外，它還包含 GNU 編譯器和相關的管理套件。"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "HPC 模組化程式庫"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in an HPC environment. These libraries allow to install several MPI "
-#| "flavors in parallel. In order to use thess libraries one needs to load "
-#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
 "in parallel. In order to use these libraries one needs to load them via the "
 "module command first."
 msgstr ""
-"此套件提供所有模組化程式庫以在 HPC 環境中使用。這些程式庫允許同時安裝多個 "
-"MPI 類別。若要使用這些程式庫，使用者需要先透過模組指令將其載入。"
+"此套件提供可用於 HPC 環境中的所有模組化程式庫。這些程式庫允許平行安裝多個 MPI 變體。使用者需要先透過模組指令載入這些程式庫，然後才能使用它們。"
 
 #. SLE/patterns-hpc/patterns-hpc-workload_server/summary
 msgid "HPC Workload Manager"
@@ -574,8 +543,8 @@ msgid ""
 "which support the provisioning and running of instances in the cloud "
 "framework (e.g. python-azure-agent)."
 msgstr ""
-"此模式會安裝支援在 Microsoft Azure 雲端架構中佈建和執行例項的  Microsoft "
-"Azure 例項啟始化套件 (例如 python-azure-agent)。"
+"此模式會安裝支援在 Microsoft Azure 雲端架構中佈建和執行例項的 Microsoft Azure 例項啟始化套件 (例如 python-"
+"azure-agent)。"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
@@ -678,7 +647,7 @@ msgstr "設定要安裝 SAP NetWeaver 系統的伺服器。"
 
 #. SLE/patterns-certification/patterns-certification-common-criteria/summary
 msgid "Tools and scripts for Common Criteria"
-msgstr ""
+msgstr "通用準則的工具和程序檔"
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
@@ -948,12 +917,10 @@ msgid "Transactional Base System"
 msgstr "事務性基礎系統"
 
 #. SLE/patterns-base/patterns-base-transactional_base/description
-#, fuzzy
-#| msgid "Tools & Update Stack for systems with a read-only root filesystem."
 msgid ""
 "This is the base system for a host updated by Transactional Updates. "
 "Includes Tools for systems with a read-only root filesystem."
-msgstr "用於唯讀 root 檔案系統的工具與更新堆疊。"
+msgstr "這是採用交易性更新的主機的基礎系統。包含採用唯讀根檔案系統的系統所需的工具。"
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
 msgid "GEO Clustering for High Availability"
@@ -1002,7 +969,7 @@ msgstr "桌面功能"
 
 #. SLE/patterns-desktop/patterns-desktop-mobile/summary
 msgid "Mobile"
-msgstr ""
+msgstr "行動"
 
 #. SLE/patterns-desktop/patterns-desktop-multimedia/summary
 #. SLE/patterns-desktop/patterns-desktop-multimedia_opt/summary
@@ -1094,7 +1061,7 @@ msgstr "專利軟體"
 
 #. leap-nonoss/patterns-non_oss/patterns-non_oss_opt/description
 msgid "Packages that are proprietary and not under an Open Source license."
-msgstr "有專利且非開放原始碼授權的套件"
+msgstr "有專利且非開放原始碼授權的套件。"
 
 #. leap/cinnamon/description
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/description
@@ -1102,21 +1069,19 @@ msgid ""
 "Cinnamon is a modern Linux desktop which provides advanced innovative "
 "features and a traditional user experience. It's easy to use, powerful and "
 "flexible."
-msgstr ""
+msgstr "Cinnamon 是一款現代 Linux 桌面，提供進階創新功能和傳統的使用者體驗，靈活易用且功能強大。"
 
 #. leap/patterns-base/patterns-base-basesystem/summary
-#, fuzzy
-#| msgid "Minimal Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
-msgstr "精簡基礎系統（基礎軟體集別名）"
+msgstr "基礎系統 (base 的別名模式)"
 
 #. leap/patterns-base/patterns-base-bootloader/summary
 msgid "Bootloader"
-msgstr ""
+msgstr "開機載入程式"
 
 #. leap/patterns-base/patterns-base-bootloader/description
 msgid "This pattern holds files required for booting the system"
-msgstr ""
+msgstr "此模式包含將系統開機所需的檔案"
 
 #. leap/patterns-base/patterns-base-console/summary
 msgid "Console Tools"
@@ -1129,17 +1094,10 @@ msgid ""
 msgstr "對那些使用終端器而不使用圖形桌面環境的使用者有用的應用程式。"
 
 #. leap/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
-msgstr ""
-"這是最小化的 openSUSE 執行系統。它真的是一個最小化的系統，你可以登入然後 "
-"Shell 開啟，就這樣。它的目的是作為 Appliances 的基礎。"
+msgstr "這是極簡執行時期系統。它是真正意義上的極簡系統，用於做為裝置的基礎。"
 
 #. leap/patterns-base/patterns-base-update_test/summary
 msgid "Tests for the Update Stack"
@@ -1154,35 +1112,29 @@ msgstr ""
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
-msgstr ""
+msgstr "Ceph 基礎"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
 msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
-msgstr ""
+msgstr "此模式提供 Ceph、Rook、Ceph CSI 驅動程式套件和容器的基礎。"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
 msgid "Containers"
 msgstr "容器"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
-#, fuzzy
-#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
-msgstr "XFCE 桌面環境"
+msgstr "Cinnamon 桌面環境"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
-#, fuzzy
-#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
-msgstr "精簡基礎系統"
+msgstr "Cinnamon 基礎系統"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
-msgstr "XFCE 桌面環境的基礎套件"
+msgstr "Cinnamon 桌面環境的基礎套件"
 
 #. leap/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/summary
 msgid "C/C++ Development"
@@ -1362,11 +1314,9 @@ msgid "KDE Applications and Plasma 5 Desktop"
 msgstr "KDE 應用程式及 Plasma 5 桌面"
 
 #. leap/patterns-kde/patterns-kde-kde/description
-#, fuzzy
-#| msgid "Base packages for the KDE Plasma 5 desktop environment."
 msgid ""
 "Packages providing the Plasma desktop environment and applications from KDE."
-msgstr "KDE Plasma 5 桌面環境的基礎軟體包。"
+msgstr "提供 Plasma 桌面環境和 KDE 中應用程式的套件。"
 
 #. leap/patterns-kde/patterns-kde-kde_edutainment/summary
 msgid "KDE Education"
@@ -1455,13 +1405,11 @@ msgstr "KDE Plasma 5 桌面環境的基礎軟體包。"
 
 #. leap/patterns-kde/patterns-kde-kde_telepathy/summary
 msgid "KDE Telepathy"
-msgstr ""
+msgstr "KDE Telepathy"
 
 #. leap/patterns-kde/patterns-kde-kde_telepathy/description
-#, fuzzy
-#| msgid "KDE Applications - Multimedia"
 msgid "KDE Applications - Telepathy"
-msgstr "KDE 應用程式 - 多媒體"
+msgstr "KDE 應用程式 - Telepathy"
 
 #. leap/patterns-kde/patterns-kde-kde_utilities/summary
 #. leap/patterns-kde/patterns-kde-kde_utilities_opt/summary
@@ -1594,14 +1542,14 @@ msgstr "MATE 筆電"
 
 #. leap/patterns-mate/patterns-mate-mate_laptop/description
 msgid "MATE Tools designed specifically for use with laptop computers."
-msgstr ""
+msgstr "專門設計用於筆記型電腦的 MATE 工具。"
 
 #. leap/patterns-mate/patterns-mate-mate_office/summary
 #. leap/patterns-mate/patterns-mate-mate_office/description
 #. leap/patterns-mate/patterns-mate-mate_office_opt/summary
 #. leap/patterns-mate/patterns-mate-mate_office_opt/description
 msgid "MATE Office"
-msgstr "MATE 辦公環境"
+msgstr "MATE 辦公程式"
 
 #. leap/patterns-mate/patterns-mate-mate_utilities/summary
 #. leap/patterns-mate/patterns-mate-mate_utilities/description
@@ -1614,7 +1562,7 @@ msgstr "網路管理"
 
 #. leap/patterns-network/patterns-network-network_admin/description
 msgid "Tools for administering and debugging networks."
-msgstr "用於管理與除錯的網路管理工具"
+msgstr "用於對網路進行管理與除錯的工具。"
 
 #. leap/patterns-xfce/patterns-xfce-xfce/summary
 msgid "XFCE Desktop Environment"
@@ -1644,7 +1592,7 @@ msgstr "XFCE 桌面"
 #. leap/patterns-xfce/patterns-xfce-xfce_office/summary
 #. leap/patterns-xfce/patterns-xfce-xfce_office/description
 msgid "XFCE Office"
-msgstr "XFCE Office"
+msgstr "XFCE 辦公程式"
 
 #. tumbleweed/MicroOS-release/summary
 #. tumbleweed/MicroOS-release/MicroOS-release-appliance/summary
@@ -1661,16 +1609,12 @@ msgstr "openSUSE MicroOS"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
-#, fuzzy
-#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
-msgstr "KDE 桌面"
+msgstr "Deepin 桌面"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
-#, fuzzy
-#| msgid "SELinux Support"
 msgid "SELinux"
-msgstr "SELinux 支援"
+msgstr "SELinux"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/description
 msgid ""
@@ -1680,147 +1624,125 @@ msgid ""
 "security policy, and streamlines the amount of software involved with "
 "security policy enforcement."
 msgstr ""
+"安全增強型 Linux (SELinux) 提供用於支援存取控制安全性規則 (包括強制存取控制 (MAC)) "
+"的機制。其架構會盡力分開執行安全性決策與安全性規則，並精簡安全性規則執行涉及的軟體量。"
 
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
-msgstr ""
+msgstr "非叢集系統的容器執行時期"
 
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/description
 msgid ""
 "This pattern installs the default container runtime packages for non-"
 "clustered systems."
-msgstr ""
+msgstr "該模式將安裝用於非叢集系統的預設容器執行時期套件。"
 
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime_kubernetes/summary
 msgid "Container Runtime for kubernetes clustered systems"
-msgstr ""
+msgstr "Kubernetes 叢集系統的容器執行時期"
 
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime_kubernetes/description
 msgid ""
 "This pattern installs the default container runtime packages for kubernetes "
 "clustered systems."
-msgstr ""
+msgstr "該模式將安裝用於 Kubernetes 叢集系統的預設容器執行時期套件。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
-#, fuzzy
-#| msgid "kubeadm Stack"
 msgid "Kubernetes kubeadm Stack"
-msgstr "kubeadm 堆疊"
+msgstr "Kubernetes kubeadm 堆疊"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
 msgid ""
 "This provides a vanilla kubeadm stack. It contains everything needed to "
 "setup kubernetes using kubeadm."
-msgstr ""
+msgstr "該模式提供原版 kubeadm 堆疊。它包含設定使用 kubeadm 的 kubernetes 所需的全部套件。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubernetes_utilities/summary
 msgid "Utilities to manage kubernetes"
-msgstr ""
+msgstr "Kubernetes 管理公用程式"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubernetes_utilities/description
 msgid "This pattern installs utilities helpful to manage kubernetes."
-msgstr ""
+msgstr "該模式將安裝有助於管理 Kubernetes 的公用程式。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/summary
 msgid "Kubic Admin Node"
-msgstr ""
+msgstr "Kubic 管理節點"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
 msgid ""
 "This pattern installs the software required for an openSUSE Kubic Admin Node."
-msgstr ""
+msgstr "此模式將安裝 openSUSE Kubic 管理節點所需的軟體。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_loadbalancer/summary
 msgid "Kubic Loadbalancer Node"
-msgstr ""
+msgstr "Kubic 負載平衡器節點"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_loadbalancer/description
 msgid ""
 "This pattern installs the the software required for an openSUSE Kubic "
 "Loadbalancer Node."
-msgstr ""
+msgstr "此模式將安裝 openSUSE Kubic 負載平衡器節點所需的軟體。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_worker/summary
 msgid "Kubic Worker Node"
-msgstr ""
+msgstr "Kubic 工作節點"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_worker/description
 msgid ""
 "This pattern installs the the software required for an openSUSE Kubic Worker "
 "Node."
-msgstr ""
+msgstr "此模式將安裝 openSUSE Kubic 工作節點所需的軟體。"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
-#, fuzzy
-#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
-msgstr "LXDE 桌面環境"
+msgstr "Deepin 桌面環境"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
-#, fuzzy
-#| msgid ""
-#| "The MATE desktop environment is a desktop environment using traditional "
-#| "metaphors."
 msgid ""
 "The Deepin desktop environment is a desktop environment using traditional "
 "metaphors."
-msgstr "MATE 桌面環境是使用傳統隱喻的桌面環境。"
+msgstr "Deepin 桌面環境是使用傳統隱喻設計的桌面環境。"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
-#, fuzzy
-#| msgid "MATE Administration Tools"
 msgid "Deepin Administration Tools"
-msgstr "MATE 管理工具"
+msgstr "Deepin 管理工具"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
-#, fuzzy
-#| msgid "Base System"
 msgid "Deepin Base System"
-msgstr "基礎系統"
+msgstr "Deepin 基礎系統"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
-#, fuzzy
-#| msgid "Base packages for the MATE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
-msgstr "MATE 桌面環境的基礎軟體包。"
+msgstr "Deepin 桌面環境的基礎套件。"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
-#, fuzzy
-#| msgid "KDE Internet"
 msgid "Deepin Internet"
-msgstr "KDE 網際網路"
+msgstr "Deepin 網際網路"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
-#, fuzzy
-#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
-msgstr "KDE 網路應用程式"
+msgstr "Deepin 網際網路應用程式。"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
-#, fuzzy
-#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
-msgstr "KDE 多媒體"
+msgstr "Deepin 多媒體"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/description
 msgid "Deepin multimedia applications."
-msgstr ""
+msgstr "Deepin 多媒體應用程式。"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office/description
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
-#, fuzzy
-#| msgid "KDE Office"
 msgid "Deepin Office"
-msgstr "KDE 辦公程式"
+msgstr "Deepin 辦公程式"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
-#, fuzzy
-#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
-msgstr "KDE 工具"
+msgstr "Deepin 公用程式"
 
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
@@ -1842,11 +1764,11 @@ msgstr "在 CD 中但不屬於其他模式的套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-alt_onlyDVD/summary
 msgid "Alternative Packages only for the DVD of openSUSE MicroOS"
-msgstr ""
+msgstr "僅適用於 openSUSE MicroOS DVD 的備選套件"
 
 #. tumbleweed/patterns-microos/patterns-microos-alt_onlyDVD/description
 msgid "Alternative additional packages on a openSUSE MicroOS DVD."
-msgstr ""
+msgstr "openSUSE MicroOS DVD 上的備選附加套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-alt_onlyDVD/category
 #. tumbleweed/patterns-microos/patterns-microos-apparmor/category
@@ -1874,56 +1796,48 @@ msgstr "Apparmor 支援"
 
 #. tumbleweed/patterns-microos/patterns-microos-apparmor/description
 msgid "Packages required to enable Apparmor on openSUSE MicroOS."
-msgstr ""
+msgstr "在 openSUSE MicroOS 上啟用 Apparmor 所需的套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-base/description
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/description
 msgid ""
 "This is the openSUSE MicroOS runtime system. It contains only a minimal "
 "multiuser booting system."
-msgstr ""
+msgstr "這是 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using Micro DNF"
-msgstr "openSUSE MicroOS 預設值"
+msgstr "使用 Micro DNF 的 openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
-msgstr ""
+msgstr "這是使用 Micro DNF 套件管理員的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using PackageKit"
-msgstr "openSUSE MicroOS 預設值"
+msgstr "使用 PackageKit 的 openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
-msgstr ""
+msgstr "這是使用 PackageKit 服務的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS"
 msgid "openSUSE MicroOS using Zypper"
-msgstr "openSUSE MicroOS"
+msgstr "使用 Zypper 的 openSUSE MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
-msgstr ""
+msgstr "這是使用 Zypper 套件管理員的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/summary
-#, fuzzy
-#| msgid "Base System (alias pattern for base)"
 msgid "openSUSE MicroOS Base System (alias pattern for microos_base)"
-msgstr "基礎系統（基礎軟體集別名）"
+msgstr "openSUSE MicroOS 基礎系統 (microos_base 的別名模式)"
 
 #. tumbleweed/patterns-microos/patterns-microos-cloud/summary
 msgid "Support for Cloud"
@@ -1931,17 +1845,17 @@ msgstr "支援雲端環境"
 
 #. tumbleweed/patterns-microos/patterns-microos-cloud/description
 msgid "Packages required to enable openSUSE MicroOS in the Cloud."
-msgstr ""
+msgstr "在雲端啟用 openSUSE MicroOS 所需的套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
 msgid "Web based remote system managemet"
-msgstr ""
+msgstr "基於 Web 的遠端系統管理"
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/description
 msgid ""
 "Packages required to run the Cockpit system management service. For the web "
 "service the cockpit-ws container is required."
-msgstr ""
+msgstr "執行 Cockpit 系統管理服務所需的套件。對於 Web 服務，需要使用 cockpit-ws 容器。"
 
 #. tumbleweed/patterns-microos/patterns-microos-defaults/summary
 msgid "openSUSE MicroOS defaults"
@@ -1951,37 +1865,31 @@ msgstr "openSUSE MicroOS 預設值"
 msgid ""
 "This provides default packages for openSUSE MicroOS which can be optionally "
 "replaced by alternatives."
-msgstr ""
+msgstr "此模式提供 openSUSE MicroOS 的預設套件，您可以選擇以備選套件取代它們。"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
-msgstr "XFCE 桌面環境的基礎套件"
+msgstr "MicroOS 上的桌面通用的套件"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
 msgid "Packages required for openSUSE MicroOS Desktops."
-msgstr ""
+msgstr "openSUSE MicroOS 桌面所需的套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
-#, fuzzy
-#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
-msgstr "GNOME 桌面"
+msgstr "MicroOS GNOME 桌面"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
 msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
-msgstr ""
+msgstr "使用 GNOME 的 openSUSE MicroOS 桌面所需的套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
-#, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "MicroOS KDE Plasma Desktop"
-msgstr "KDE Plasma 5 桌面"
+msgstr "MicroOS KDE Plasma 桌面"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
 msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
-msgstr ""
+msgstr "使用 KDE Plasma 的 openSUSE MicroOS 所需的套件"
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/summary
 msgid "Hardware Support"
@@ -1989,7 +1897,7 @@ msgstr "硬體支援"
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/description
 msgid "Packages required to install openSUSE MicroOS on real hardware."
-msgstr ""
+msgstr "在實際硬體上安裝 openSUSE MicroOS 所需的套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-ima_evm/summary
 msgid "IMA/EVM Support"
@@ -1997,15 +1905,15 @@ msgstr "IMA/EVM 支援"
 
 #. tumbleweed/patterns-microos/patterns-microos-ima_evm/description
 msgid "Packages required to enable IMA/EVM on openSUSE MicroOS."
-msgstr ""
+msgstr "在 openSUSE MicroOS 上啟用 IMA/EVM 所需的套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-onlyDVD/summary
 msgid "Packages only for the DVD of openSUSE MicroOS"
-msgstr ""
+msgstr "僅適用於 openSUSE MicroOS DVD 的套件"
 
 #. tumbleweed/patterns-microos/patterns-microos-onlyDVD/description
 msgid "Additional packages on a openSUSE MicroOS DVD."
-msgstr ""
+msgstr "openSUSE MicroOS DVD 上的附加套件。"
 
 #. tumbleweed/patterns-microos/patterns-microos-selinux/summary
 msgid "SELinux Support"
@@ -2014,7 +1922,7 @@ msgstr "SELinux 支援"
 #. tumbleweed/patterns-microos/patterns-microos-selinux/description
 msgid ""
 "This are packages which are required to enable SELinux on openSUSE MicroOS"
-msgstr ""
+msgstr "這是在 openSUSE MicroOS 上啟用 SELinux 所需的套件"
 
 #. tumbleweed/patterns-microos/patterns-microos-sssd_ldap/summary
 msgid "LDAP client"
@@ -2023,15 +1931,15 @@ msgstr "LDAP 客戶端"
 #. tumbleweed/patterns-microos/patterns-microos-sssd_ldap/description
 msgid ""
 "Packages required to enable LDAP client support via sssd on openSUSE MicroOS."
-msgstr ""
+msgstr "在 openSUSE MicroOS 上啟用 LDAP 用戶端 sssd 支援所需的套件。"
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/summary
 msgid "Sway Tiling Wayland Compositor and related tools"
-msgstr ""
+msgstr "Sway Tiling Wayland 撰寫器和相關工具"
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
-msgstr ""
+msgstr "Sway Tiling Wayland 撰寫器和相關工具。"
 
 #~ msgid ""
 #~ "This is the minimal openSUSE runtime system. It is really a minimal "
