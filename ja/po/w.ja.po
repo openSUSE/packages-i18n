@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-05-13 01:18+0000\n"
-"PO-Revision-Date: 2021-05-06 11:57+0000\n"
+"PO-Revision-Date: 2021-05-24 10:58+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/w-"
-"master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
+"w-master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #. leap-nonoss/wine-mono/summary
 msgid "A .NET replacement for use by Wine"
@@ -48,6 +48,8 @@ msgid ""
 "Debug information is useful when developing applications that use this "
 "package or when debugging this package."
 msgstr ""
+"このパッケージは、WSL-DistroLauncher　"
+"パッケージのデバッグ情報を提供します。デバッグ情報は、このパッケージを使用するアプリケーション開発や、このパッケージをデバッグする際に役立ちます。"
 
 #. leap/WindowMaker/summary
 msgid "A Colorful and Flexible Window Manager"
@@ -142,6 +144,11 @@ msgid ""
 "\n"
 "This package contains shared library for wordnet."
 msgstr ""
+"WordNet は、英語の大規模語彙データベースです。名詞、動詞、形容詞、副詞は、それぞれが異なる概念を表現する認知な類義関係のセット (synset) "
+"にグループ化されています。シンセットは、概念的、意味的、および語彙的な関係によって相互にリンクされます。このようにして作られた、意味のある関連する単語や概"
+"念のネットワークは、ブラウザでナビゲートすることができます。WordNet の構造は、計算言語学や自然言語処理のための有用なツールとなっています。\n"
+"\n"
+"このパッケージには wordnet 用の共有ライブラリが含まれます。"
 
 #. leap/wpebackend-fdo/libWPEBackend-fdo-1_0-1/summary
 #. leap/wpebackend-fdo/libWPEBackend-fdo-1_0-1-32bit/summary
@@ -219,6 +226,12 @@ msgid ""
 "Waffle's immediate goal is to enable Piglit, Mesa's OpenGL test suite, to "
 "test multiple GL flavors."
 msgstr ""
+"Waffle は、GL の API とウィンドウシステムの選択をランタイムに拡張する C 言語のライブラリです。例えば、Linux で、Waffle "
+"を使うことで、アプリケーションは OpenGL 3.3 のコアプロファイルを持つ X11/EGL、OpenGL ES2 を持つ Wayland、"
+"その他のウィンドウシステムや API の組み合わせが選択可能になります。\n"
+"\n"
+"Waffle の当面の目標は、Mesa の OpenGL テストスイートである Piglit が、複数の GL "
+"フレーバーをテストできるようにすることです。"
 
 #. leap/waltham/libwaltham0/summary
 msgid "Wayland-style network IPC library"
@@ -239,6 +252,16 @@ msgid ""
 "interface is provided\n"
 "* no multi-threading support for sharing objects between threads"
 msgstr ""
+"Waltham は Wayland に影響を受けて設計されたネットワーク IPC ライブラリで、プロトコルとプロトコル API の両面で優れています。"
+"プロトコルは XML ファイルで記述されています。ビルド時にジェネレータが XML を C コードに変換します。\n"
+"\n"
+"Wayland と Waltham の主な違いは以下の通りです。\n"
+"* Waltham は通信に TCP ソケットを使用\n"
+"* Waltham は、ファイル記述子の送信不可\n"
+"* Waltham の API は最小限で、サーバー側とクライアント側で対称的\n"
+"* Waltham は、イベントループの実装を提供せず\n"
+"* “レジストリ”の実装はライブラリから省かれており、インターフェイスのみが提供\n"
+"* スレッド間でオブジェクトを共有するマルチスレッドのサポートはなし"
 
 #. leap/wavpack/libwavpack1-32bit/summary
 #. leap/wavpack/libwavpack1/summary
@@ -256,6 +279,10 @@ msgid ""
 "where quality is paramount. The compression ratio depends on the source "
 "material, but generally is between 30% and 70%."
 msgstr ""
+"WavPack は、可逆圧縮、高品質な非可逆圧縮、そして独自のハイブリッド圧縮モードを提供するオープンな音声圧縮フォーマットです。\n"
+"\n"
+"可逆圧縮（ロスレス）モードは、オーディオ素材のアーカイブなど品質を最優先する場合に最適です。圧縮率は素材となる音声データによって変化しますが、概ね30％か"
+"ら70％になります。"
 
 #. leap/wayland/libwayland-client0/summary
 #. leap/wayland/libwayland-client0-32bit/summary
@@ -310,6 +337,8 @@ msgid ""
 "within the Wayland framework. This allows for applications that need not run "
 "full-screen and cooperate with a compositor."
 msgstr ""
+"このパッケージは、Wayland フレームワーク内で動作する EGL を用いるプログラムのための追加機能を提供します。この機能によって、フルスクリーンで動"
+"作する必要のないアプリケーションや、コンポジタとの連携が可能になります。"
 
 #. leap/wayland/libwayland-server0/summary
 #. leap/wayland/libwayland-server0-32bit/summary
@@ -358,6 +387,8 @@ msgid ""
 "implements the \"World Coordinate System\" (WCS) standard in FITS (Flexible "
 "Image Transport System)."
 msgstr ""
+"WCSLIB は、FITS(Flexible Image Transport System) における WCS (World Coordinate "
+"System) 規格を実装した C ライブラリで、Fortran の完全なラッパーも提供します。"
 
 #. leap/webkit2gtk3/libwebkit2gtk-4_0-37/summary
 #. leap/webkit2gtk3/libwebkit2gtk-4_0-37-32bit/summary
@@ -3311,10 +3342,12 @@ msgid ""
 "Utility program for screen recording of wlroots-based compositors (more "
 "specifically, those that support wlr-screencopy-v1 and xdg-output)."
 msgstr ""
+"wlroots ベースのコンポジタの画面を記録するためのユーティリティプログラムです。 (具体的には wlr-screencopy-v1 と xdg-"
+"output をサポートするコンポジタの画面を記録します)。"
 
 #. tumbleweed/wildmidi/summary
 msgid "Softsynth midi player"
-msgstr ""
+msgstr "ソフトシンセ MIDI プレイヤー"
 
 #. tumbleweed/wildmidi/description
 msgid ""
@@ -3360,7 +3393,7 @@ msgstr ""
 
 #. tumbleweed/wl-clipboard/summary
 msgid "Wayland Clipboard Utilities"
-msgstr ""
+msgstr "Wayland クリップボード ユーティリティ"
 
 #. tumbleweed/wl-clipboard/description
 msgid ""
