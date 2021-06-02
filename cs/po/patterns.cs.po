@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2021-05-13 01:18+0000\n"
-"PO-Revision-Date: 2021-05-31 22:58+0000\n"
+"PO-Revision-Date: 2021-06-02 16:57+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/cs/>\n"
@@ -247,10 +247,8 @@ msgstr "Serverové utility YaST"
 
 # 49865 AttribValues/label
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
-msgstr "Nástroje programu YaST pro základní správu systému."
+msgstr "Nástroje programu YaST pro správu serverových systémů."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
@@ -393,22 +391,16 @@ msgid "HPC Basic Compute Node"
 msgstr "Základní výpočetní uzel HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node comprises of a minimal software image and mainly runs "
-#| "simulation programs. Services on this node should be reduced to a bare "
-#| "minimum and the node *must* be installed in a automatic manner. The "
-#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC Modularized libraries' should also be installed."
 msgstr ""
-"Výpočetní uzel obsahuje obraz minimálního software a hlavně na něm běží "
+"Výpočetní uzel obsahuje obraz minimálního software a běží na něm hlavně "
 "simulační programy. Služby tohoto uzlu lze omezit na naprosté minimum a uzel "
 "*musí* být instalován automaticky. Má též být instalována vzorová sada "
-"modulárních knihoven HPC."
+"'Modularizovaných knihoven HPC'."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -421,34 +413,20 @@ msgid "HPC Development Packages"
 msgstr "Balíčky pro vývoj HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
-#| "addition it includes the GNU compilers and the relevant management "
-#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 "Tento balíček poskytuje všechny relevantní balíčky pro vývoj aplikací HPC, "
-"Závisí na vzorové sadě modulárních knihoven HPC. Navíc obsahuje GNU "
+"Závisí na vzorové sadě 'Modularizovaných knihoven HPC'. Navíc obsahuje GNU "
 "kompilátory a relevantní balíčky pro správu."
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
 msgstr "Modularizované knihovny HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the modularized libraries so that they can be "
-#| "used in an HPC environment. These libraries allow to install several MPI "
-#| "flavors in parallel. In order to use thess libraries one needs to load "
-#| "them via the module command first."
 msgid ""
 "This package provides all the modularized libraries so that they can be used "
 "in an HPC environment. These libraries allow to install several MPI flavors "
@@ -726,7 +704,7 @@ msgstr "Příprava serveru pro instalaci systémů SAP NetWeaver."
 
 #. SLE/patterns-certification/patterns-certification-common-criteria/summary
 msgid "Tools and scripts for Common Criteria"
-msgstr ""
+msgstr "Nástroje a skripty pro Obecná kritéria"
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
@@ -1063,7 +1041,7 @@ msgstr "Pracovní stanice"
 
 #. SLE/patterns-desktop/patterns-desktop-mobile/summary
 msgid "Mobile"
-msgstr ""
+msgstr "Mobilní"
 
 #. SLE/patterns-desktop/patterns-desktop-multimedia/summary
 #. SLE/patterns-desktop/patterns-desktop-multimedia_opt/summary
@@ -1170,20 +1148,21 @@ msgid ""
 "features and a traditional user experience. It's easy to use, powerful and "
 "flexible."
 msgstr ""
+"Cinnamon je moderní linuxové pracovní prostředí poskytující pokročilé "
+"inovativní funkce a tradiční uživatelskou zkušenost. Je snadno použitelné, "
+"výkonné a flexibilní."
 
 #. leap/patterns-base/patterns-base-basesystem/summary
-#, fuzzy
-#| msgid "Minimal Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
-msgstr "Minimální základní systém (alias předloha pro něj)"
+msgstr "Základní systém (alias předloha pro základnu)"
 
 #. leap/patterns-base/patterns-base-bootloader/summary
 msgid "Bootloader"
-msgstr ""
+msgstr "Zavaděč systému"
 
 #. leap/patterns-base/patterns-base-bootloader/description
 msgid "This pattern holds files required for booting the system"
-msgstr ""
+msgstr "Tato šablona obsahuje soubory potřebné pro start systému"
 
 # 22756 AttribValues/label
 #. leap/patterns-base/patterns-base-console/summary
@@ -1198,18 +1177,12 @@ msgid ""
 msgstr "Aplikace užitečné pro uživatele nepoužívající grafické prostředí."
 
 #. leap/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
 msgstr ""
-"Toto je minimální openSUSE provozní systém. Je to opravdu minimální systém: "
-"můžete se přihlásit a bude spuštěna příkazová řádka, toť vše. Je zamýšlen "
-"jako základ pro aplikace."
+"Toto je minimální provozní systém. Je to opravdu minimální systém. Je "
+"zamýšlen jako základna aplikací."
 
 #. leap/patterns-base/patterns-base-update_test/summary
 msgid "Tests for the Update Stack"
@@ -1226,34 +1199,26 @@ msgid "Ceph base"
 msgstr "Základ šablony Ceph"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
-#, fuzzy
-#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
 msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
-msgstr "Základna pro balíčky ovladačů Ceph, Rook, Ceph CSI."
+msgstr "Základna pro balíčky ovladačů a kontejnery Ceph, Rook, Ceph CSI."
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
 msgid "Containers"
 msgstr "Kontejnery"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
-#, fuzzy
-#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
-msgstr "Prostředí XFCE"
+msgstr "Prostředí plochy Cinnamon"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
-#, fuzzy
-#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
-msgstr "Minimální základní systém"
+msgstr "Základní systém Cinnamon"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
-msgstr "Základní balíčky prostředí pracovní plochy XFCE"
+msgstr "Základní balíčky prostředí pracovní plochy Cinnamon"
 
 #. leap/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/summary
 msgid "C/C++ Development"
@@ -1753,16 +1718,12 @@ msgstr "openSUSE MicroOS"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
-#, fuzzy
-#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
-msgstr "Prostředí KDE"
+msgstr "Prostředí plochy Deepin"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
-#, fuzzy
-#| msgid "SELinux Support"
 msgid "SELinux"
-msgstr "Podpora SELinux"
+msgstr "SELinux"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/description
 msgid ""
@@ -1772,6 +1733,11 @@ msgid ""
 "security policy, and streamlines the amount of software involved with "
 "security policy enforcement."
 msgstr ""
+"Security-Enhanced Linux (SELinux) poskytuje mechanismus pro podporu zásad "
+"zabezpečení řízení přístupu, včetně povinných ovládacích prvků přístupu (MAC)"
+". Jeho architektura se snaží oddělit prosazování bezpečnostních rozhodnutí "
+"od bezpečnostních zásad a snižuje množství softwaru zapojeného do vynucování "
+"bezpečnostních zásad."
 
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
@@ -1799,10 +1765,8 @@ msgstr ""
 "běžící v clusteru kubernet."
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
-#, fuzzy
-#| msgid "kubeadm Stack"
 msgid "Kubernetes kubeadm Stack"
-msgstr "kubeadm zásobník"
+msgstr "Zásobník Kubernetes kubeadm"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
 msgid ""
@@ -1825,10 +1789,6 @@ msgid "Kubic Admin Node"
 msgstr "Administrátorský uzel Kubic"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
-#, fuzzy
-#| msgid ""
-#| "This pattern installs the the software required for an openSUSE Kubic "
-#| "Admin Node."
 msgid ""
 "This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr ""
@@ -1859,78 +1819,56 @@ msgstr ""
 "Tato šablona instaluje software nezbytný pro Pracovní uzel openSUSE Kubic."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
-#, fuzzy
-#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
-msgstr "Pracovní prostředí LXDE"
+msgstr "Pracovní prostředí Deepin"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
-#, fuzzy
-#| msgid ""
-#| "The MATE desktop environment is a desktop environment using traditional "
-#| "metaphors."
 msgid ""
 "The Deepin desktop environment is a desktop environment using traditional "
 "metaphors."
 msgstr ""
-"Prostředí plochy MATE je pracovní plocha používající tradiční metafory."
+"Prostředí plochy Deepin je pracovní plocha používající tradiční metafory."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
-#, fuzzy
-#| msgid "KDE Administration Tools"
 msgid "Deepin Administration Tools"
-msgstr "Administrační nástroje KDE"
+msgstr "Nástroje správy Deepin"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
-#, fuzzy
-#| msgid "Desktop Base System"
 msgid "Deepin Base System"
-msgstr "Základní systém plochy"
+msgstr "Základní systém Deepin"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
-#, fuzzy
-#| msgid "Base packages for the KDE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
-msgstr "Základní balíčky prostředí KDE."
+msgstr "Základní balíčky prostředí plochy Deepin."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
-#, fuzzy
-#| msgid "KDE Internet"
 msgid "Deepin Internet"
-msgstr "KDE internet"
+msgstr "Deepin internet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
-#, fuzzy
-#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
-msgstr "KDE internetové aplikace"
+msgstr "Internetové aplikace pro Deepin."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
-#, fuzzy
-#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
-msgstr "KDE multimédia"
+msgstr "Multimédia pro Deepin"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/description
 msgid "Deepin multimedia applications."
-msgstr ""
+msgstr "Multimediální aplikace pro Deepin."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office/description
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
-#, fuzzy
-#| msgid "KDE Office"
 msgid "Deepin Office"
-msgstr "KDE kancelář"
+msgstr "Kancelářské aplikace pro Deepin"
 
 # 54237 AttribValues/label
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
-#, fuzzy
-#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
-msgstr "KDE nástroje"
+msgstr "Nástroje Deepin"
 
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
@@ -1996,58 +1934,40 @@ msgstr ""
 "víceuživatelský zaváděcí systém."
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using Micro DNF"
-msgstr "Výchozí předlohy openSUSE MicroOS"
+msgstr "OpenSUSE MicroOS, používá Micro DNF"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
-#, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
 msgstr ""
-"Toto je provozní systém openSUSE MicroOS. Obsahuje pouze minimální "
-"víceuživatelský zaváděcí systém."
+"Toto je provozní systém openSUSE MicroOS používající správce balíčků Micro "
+"DNF. Obsahuje pouze minimální víceuživatelský zaváděcí systém."
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using PackageKit"
-msgstr "Výchozí předlohy openSUSE MicroOS"
+msgstr "openSUSE MicroOS používající PackageKit"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
-#, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
 msgstr ""
-"Toto je provozní systém openSUSE MicroOS. Obsahuje pouze minimální "
-"víceuživatelský zaváděcí systém."
+"Toto je provozní systém openSUSE MicroOS používající službu PackageKit. "
+"Obsahuje pouze minimální víceuživatelský zaváděcí systém."
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS"
 msgid "openSUSE MicroOS using Zypper"
-msgstr "openSUSE MicroOS"
+msgstr "openSUSE MicroOS používající Zypper"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
-#, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
 msgstr ""
-"Toto je provozní systém openSUSE MicroOS. Obsahuje pouze minimální "
-"víceuživatelský zaváděcí systém."
+"Toto je provozní systém openSUSE MicroOS používající správu balíčků Zypper. "
+"Obsahuje pouze minimální víceuživatelský zaváděcí systém."
 
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/summary
 msgid "openSUSE MicroOS Base System (alias pattern for microos_base)"
@@ -2062,16 +1982,16 @@ msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
-#, fuzzy
-#| msgid "Web based system management tool"
 msgid "Web based remote system managemet"
-msgstr "Webový nástroj pro správu systému"
+msgstr "Webová vzdálená správa systémů"
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/description
 msgid ""
 "Packages required to run the Cockpit system management service. For the web "
 "service the cockpit-ws container is required."
 msgstr ""
+"Balíčky potřebné ke spuštění služby správy systému Cockpit. Pro webovou "
+"službu je nutný kontejner cockpit-ws."
 
 #. tumbleweed/patterns-microos/patterns-microos-defaults/summary
 msgid "openSUSE MicroOS defaults"
@@ -2086,40 +2006,28 @@ msgstr ""
 "alternativami."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
-msgstr "Základní balíčky prostředí pracovní plochy XFCE"
+msgstr "Základní balíčky prostředí pracovní plochy MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for openSUSE MicroOS Desktops."
-msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
+msgstr "Balíčky nezbytné pro pracovní plochy v openSUSE MicroOS."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
-#, fuzzy
-#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
-msgstr "GNOME Desktop"
+msgstr "Pracovní plocha GNOME v MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
-msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
+msgstr "Balíčky nezbytné pro pracovní plochu openSUSE MicroOS s GNOME."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
-#, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "MicroOS KDE Plasma Desktop"
-msgstr "Plocha KDE Plasma 5"
+msgstr "Plocha MicroOS KDE Plasma"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
-msgstr "Balíčky nezbytné k zapnutí openSUSE MicroOS v Cloudu."
+msgstr "Balíčky nezbytné pro openSUSE MicroOS s KDE Plasma."
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/summary
 msgid "Hardware Support"
@@ -2169,11 +2077,11 @@ msgstr ""
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/summary
 msgid "Sway Tiling Wayland Compositor and related tools"
-msgstr ""
+msgstr "Sway Tiling Wayland Compositor a související nástroje"
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
-msgstr ""
+msgstr "Sway Tiling Wayland Compositor a související nástroje."
 
 #~ msgid ""
 #~ "This is the minimal openSUSE runtime system. It is really a minimal "
