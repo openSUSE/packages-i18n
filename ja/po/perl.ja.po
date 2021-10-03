@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-05-13 01:18+0000\n"
-"PO-Revision-Date: 2021-10-03 05:11+0000\n"
+"PO-Revision-Date: 2021-10-03 12:11+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "perl-master/ja/>\n"
@@ -855,7 +855,7 @@ msgstr ""
 
 #. leap/perl-Apache2-AuthCookieDBI/summary
 msgid "An AuthCookie module backed by a DBI database."
-msgstr "DBI データベースをバックエンドとする AuthCookie モジュール"
+msgstr "DBI データベースをバックエンドとする AuthCookie モジュール。"
 
 #. leap/perl-Apache2-AuthCookieDBI/description
 msgid ""
@@ -40544,6 +40544,16 @@ msgid ""
 "perlbrew.pl/. The following documentation features the API of 'App::"
 "perlbrew' module, and may not be remotely close to what your want to read."
 msgstr ""
+"perlbrewはperlの構築とインストールを簡単な方法で自動化するプログラムです。複数の分離されたPerl環境と、それらを切り替えるためのメカニズムを"
+"提供します。\n"
+"\n"
+"すべては'~/perl5/perlbrew'の後にインストールされます。次に、perlbrewによって提供されたbashrc/cshrcを含めて、PATH"
+"を調整する必要があります。cpanモジュールは'HOME'内にもインストールされるので、'sudo'コマンドを実行しなくてもcpanモジュールをインストー"
+"ルできるという利点があります。\n"
+"\n"
+"perlbrewの使用方法のドキュメントについては、https://metacpan.org/,でperlbrewコマンドをオンにするか、「"
+"perlbrew help」を実行するか、またはhttps://perlbrew.pl/を見てください。以下のドキュメントは'App::perlbrew'"
+"モジュールのAPIを中心として扱っており、あなたが読みたいものに遠く及ばないかもしれません。"
 
 #. tumbleweed/perl-Archive-Extract/summary
 msgid "Generic archive extracting mechanism"
@@ -41090,7 +41100,7 @@ msgstr ""
 
 #. tumbleweed/perl-Config-Identity/summary
 msgid "Load (and optionally decrypt via GnuPG) user/pass identity information"
-msgstr ""
+msgstr "ユーザー/パスのID情報を読み込む(オプションでGnuPGを使って復号化する)"
 
 #. tumbleweed/perl-Config-Identity/description
 msgid ""
@@ -41101,6 +41111,9 @@ msgid ""
 "\n"
 "For PAUSE access, an identity is a 'user'/'password' pair"
 msgstr ""
+"Config::Identityは、ユーザー/パスのID情報をロード(およびオプションでGnuPGを介して復号化)するためのツールです。\n"
+"GitHub APIアクセスの場合、IDは'login'と'token'のペアです。\n"
+"PAUSEアクセスの場合、IDは「user」と「password」のペアです。"
 
 #. tumbleweed/perl-Config-IniFiles/summary
 msgid "Module for reading .ini-style configuration files"
@@ -41758,6 +41771,16 @@ msgid ""
 "Whenever you type 'use Data::Printer' or 'use DDP', we export two functions "
 "to your namespace:"
 msgstr ""
+"人気のData::Dumperは素晴らしいツールであり、データ構造を文字列化して\"eval\"で戻すのに適したものにすることを目的としています。重要なの"
+"は、多くの人がデータ構造やオブジェクトを調査やデバッグのために画面上に出力するために(そしてData::Dumpのような似たようなものを)それを使い続けて"
+"いるということであり、そのためにこれらのモジュールを使うことはできますが、それが必要だという意味ではありません。\n"
+"\n"
+"そこでData::Printerが登場します。これは1つの事を、1つの事だけを行うためのものです。\n"
+"_format Perl 変数とオブジェクトを人が調査出来るようにします_\n"
+"Perlデータ構造を直列化/格納/復元する場合、このモジュールは役に立ちません。Storable、Data::Dumper、JSONなどを試してみてくださ"
+"い。CPANはそんなソリューションでいっぱいです!\n"
+"\n"
+"「use Data::Printer」または「use DDP」と入力するたびに、2つの関数がネームスペースにエクスポートされます。"
 
 #. tumbleweed/perl-Data-Visitor/description
 msgid ""
@@ -41990,7 +42013,7 @@ msgstr "実行中の OS の判断"
 
 #. tumbleweed/perl-Devel-Cover-Report-Codecovbash/summary
 msgid "Generate a JSON file to be uploaded with the codecov bash script"
-msgstr ""
+msgstr "codecov bashスクリプトを使用してアップロードするJSONファイルを生成します。"
 
 #. tumbleweed/perl-Devel-Cover-Report-Codecovbash/description
 msgid ""
@@ -42005,6 +42028,13 @@ msgid ""
 "Mizune's at https://metacpan.org/release/Devel-Cover-Report-Codecov "
 "distribution."
 msgstr ""
+"これはCodecovのカバレッジレポータです。codecovが提供するbashスクリプトでアップロード可能なJSONファイルを生成します。詳細については、"
+"https://docs.codecov.io/docs/about-the-codecov-bash-uploaderを参照してください。\n"
+"\n"
+"生成されるファイルの名前は_codecov.json_で、デフォルトでは_cover_db_ディレクトリに置かれます。\n"
+"\n"
+"このディストリビューションのほとんどすべてのコードは、https://metacpan.org/release/Devel-Cover-Report-"
+"CodecovディストリビューションにあるPine Mizune のコードを単純にコピーしたものです。"
 
 #. tumbleweed/perl-Devel-Declare/summary
 msgid "(DEPRECATED) Adding keywords to perl, in perl"
@@ -43044,6 +43074,8 @@ msgid ""
 "manner. By default all HTML is restricted. You may alter the default "
 "behaviour by supplying your own tag rules."
 msgstr ""
+"このモジュールは、HTML::Parserを使用して、テキストからHTMLを制限的に除去します。既定では、すべてのHTMLが制限されています。独自のタグ規"
+"則を指定することで、既定の動作を変更できます。"
 
 #. tumbleweed/perl-HTML-Scrubber/summary
 msgid "Perl extension for scrubbing/sanitizing HTML"
@@ -43091,10 +43123,15 @@ msgid ""
 "use of HTTP::Request and HTTP::Response objects. An LWP-compatible adapter "
 "is available as HTTP::CookieJar::LWP."
 msgstr ""
+"このモジュールは、http://tools.ietf.org/html/rfc6265に準拠して、最小限のHTTPユーザーエージェントcookie "
+"jarを実装します。\n"
+"\n"
+"一般的に使用されるHTTP::Cookiesモジュールとは異なり、このモジュールではHTTP::RequestオブジェクトとHTTP::Responseオ"
+"ブジェクトを使用する必要はありません。LWP互換アダプタは、HTTP::CookieJar::LWPとして使用できます。"
 
 #. tumbleweed/perl-HTTP-CookieMonster/summary
 msgid "Easy read/write access to your jar of HTTP::Cookies"
-msgstr ""
+msgstr "HTTP::Cookiesのjarファイルへの容易な読み取り/書き込みアクセス"
 
 #. tumbleweed/perl-HTTP-CookieMonster/description
 msgid ""
@@ -43103,6 +43140,8 @@ msgid ""
 "easy and clean as it could be. For instance, if you want to find a "
 "particular cookie, you can't just ask for it by name."
 msgstr ""
+"このモジュールが作成されたのは、HTTP::Cookiesをいじるのは簡単ではないからです。HTTP::Cookiesは非常に便利なモジュールですが、それ"
+"を使用することは必ずしも簡単でクリーンであるとは限りません。例えば、特定のクッキーを見つけたい場合、名前だけでそれを要求することはできません。"
 
 #. tumbleweed/perl-HTTP-Cookies/description
 msgid ""
@@ -43366,7 +43405,7 @@ msgstr "HTTP::Headers のより高速な実装"
 
 #. tumbleweed/perl-HTTP-Parser/summary
 msgid "Parse HTTP/1.1 request into HTTP::Request/Response object"
-msgstr ""
+msgstr "HTTP/1.1要求をHTTP::Request/Responseオブジェクトにパースします"
 
 #. tumbleweed/perl-HTTP-Parser/description
 msgid ""
@@ -43375,10 +43414,12 @@ msgid ""
 "complete request has been read. HTTP/1.1 chunking is supported. It dies if "
 "it finds an error."
 msgstr ""
+"これはHTTP要求パーサーです。受信したテキストのチャンクを取得し、必要なものに関する「ヒント」を返すか、完全な要求が読み込まれたときにHTTP::Req"
+"uestを返します。HTTP/1.1チャンクはサポートされています。エラーが検出された場合は停止します。"
 
 #. tumbleweed/perl-HTTP-Server-Simple-PSGI/summary
 msgid "PSGI handler for HTTP::Server::Simple"
-msgstr ""
+msgstr "HTTP::Server::SimpleのPSGIハンドラ"
 
 #. tumbleweed/perl-HTTP-Server-Simple-PSGI/description
 msgid ""
@@ -43387,6 +43428,9 @@ msgid ""
 "which itself doesn't depend on any non-core modules so it's best to be used "
 "as an embedded web server."
 msgstr ""
+"HTTP::Server::Simple::PSGIは、PSGIアプリケーションを実行できるHTTP::Server::SimpleベースのHTTPサーバ"
+"ーです。このモジュールはHTTP::Server::Simpleにのみ依存しており、それ自体はコア以外のモジュールには依存していないため、組み込みWebサ"
+"ーバとして使用するのが最適です。"
 
 #. tumbleweed/perl-HTTP-Tinyish/summary
 msgid "HTTP::Tiny compatible HTTP client wrappers"
@@ -44107,6 +44151,16 @@ msgid ""
 "possible, so that you can easily toggle output on and off and otherwise "
 "adjust how you deal with the output."
 msgstr ""
+"BETA BETA BETA. これは現在実験中です。状況は変わる可能性があります。調整してください。\n"
+"\n"
+"機械化されたスクリプトをデバッグするのは困難です(少なくとも退屈です)。LWP::Debugは非推奨です。独自のデバッグハンドラを作成するか、プロキシを設"
+"定するか、Wiresharkをインストールすることをお勧めします。これらはすべて実行可能なソリューションですが、このモジュールは作業の一部を節約するために"
+"存在します。このモジュールの中身はPlack::Middleware::DebugLoggingから引用され、今度はCatalystから内部のほとんどを引"
+"用されました。LWP::ConsoleLoggerに慣れていない人には、LWP::ConsoleLogger::Easyラッパーを使い始めることをお勧めし"
+"ます。これにより、数分で稼働を開始できます。LWP::ConsoleLogger::Easyで選択される設定を調整する必要がある場合(あるいは単におしゃれ"
+"にしたい場合)は、こちらをお読みください。\n"
+"\n"
+"これはデバッグ・ライブラリーなので、出力のオン/オフを簡単に切り替えたり、出力の処理方法を調整したりできるように、できるだけ多くの可変状態を残しました。"
 
 #. tumbleweed/perl-LWP-MediaTypes/summary
 msgid "Guess media type for a file or a URL"
@@ -44441,6 +44495,33 @@ msgid ""
 "that occur, so if any of the standards change, and you want a new release "
 "sooner, just email me and I'll get one out."
 msgstr ""
+"*Locale-Codes*は、何かを一意に識別するコードのセットを処理するように設計されたモジュールのセットを含むディストリビューションです。たとえば、"
+"異なる国、異なる通貨、異なる言語などに関連付けられたコードがあります。これらのコードセットは、通常、何らかの標準で保持されています。\n"
+"\n"
+"このディストリビューションによって、これらのコード・リストを操作する方法が提供されます。さまざまな標準からのデータは、いかなる種類の一貫したAPIでも利用"
+"できないので、リストへのアクセスはいかなる直接的な方法でも利用できません。これを補正するために、コードのリストはこのディストリビューション内に内部的に格納"
+"され、ディストリビューションは定期的に更新されて、その時点で既知のすべてのコードが含まれます。これは、さまざまな標準で行われるさまざまな変更に対応するため"
+"に、このディストリビューションを最新の状態に保つ必要があることを意味します。\n"
+"\n"
+"従来、モジュールは各タイプのコード・セットを処理するために作成されてきました。したがって、国別リストを操作するためのモジュールや、通貨リストなどのためのモ"
+"ジュールがあります。バージョン3."
+"00以降、これらの個々のモジュールはすべて、実際の作業をすべて行う中央モジュール(直接使用するようには意図されていません)のラッパーとして書かれました。"
+"\n"
+"\n"
+"バージョン3.50から、中央モジュールはオブジェクト指向インターフェースを提供するために少し修正されました。個々のタイプのコード・セットを処理するためのモ"
+"ジュールはすべて、改良されたOOモジュールを使用するように変更されていますので、従来のインターフェースは従来どおり動作します。その結果、従来の機能的な(O"
+"Oでない)インターフェースを自由に使用したり、OOインターフェースを使用してラッパー・モジュールを完全にバイパスしたりすることができます。\n"
+"\n"
+"どちらの方法も今後サポートされるため、ニーズに最も適した方法を使用してください。\n"
+"\n"
+"各タイプ内では、任意の数のコードセットが許可されます。たとえば、国コードのセットは、ISO-3166規格、IANA、および国連を含むいくつかの異なる場所に"
+"保持されます。国のリストは類似しているが、同一ではありません。複数のコードセットがサポートされていますが、国のリストが1対1ではないため、あるコードセット"
+"から別のコードセットに変換しようとしても、常に動作するとは限りません。\n"
+"\n"
+"これらすべてのモジュールのすべてのデータは、元の標準から直接(または可能な限り直接に近い)取得されるため、リリース時に最新である必要があります。\n"
+"\n"
+"年に数回新しいバージョンをリリースして、標準に加えられた変更を取り入れる予定です。しかし、変更が発生したことを常に把握しているわけではないので、いずれかの"
+"標準が変更されて、より早く新しいリリースが必要になった場合は、メールをいただければ、それを入手できます。"
 
 #. tumbleweed/perl-Locale-Maketext-Gettext/description
 msgid ""
@@ -45589,6 +45670,13 @@ msgid ""
 "    My::Sensitive::Class->new( password => $sensitive, extra_value => "
 "'foo' );"
 msgstr ""
+"このモジュールをロードするだけで、コンストラクターは「厳密」になります。クラスが宣言していない属性init引数を指定してコンストラクターを呼び出すと、コン"
+"ストラクターは終了します。これは小さなタイプミスを検出するための優れた方法です。\n"
+"\n"
+"アプリケーションはCarp::Alwaysを使って'die'にスタックトレースを生成することができます。以前はすべての例外にトレースが含まれていましたが、"
+"これにより機密情報が漏洩する可能性がありました。たとえば\n"
+"\n"
+"    My::Sensitive::Class->new(password=>$sensitive,extra_value=>'foo');"
 
 #. tumbleweed/perl-MooX-Traits/description
 msgid ""
@@ -45760,6 +45848,32 @@ msgid ""
 "commandline overrides configfile, which overrides explicit new_with_options "
 "parameters."
 msgstr ""
+"これは、コマンドラインから渡されたパラメータを使用してオブジェクトを作成するための代替コンストラクタを提供する役割です。\n"
+"\n"
+"このモジュールは、クラスの属性をイントロスペクションすることによって、コマンド・ライン・パラメーターを使用して可能な限りDBIMを試みます。コマンドライン"
+"オプションとして属性の名前を使用し、型制約が定義されている場合は、Getopt::Longを設定してオプションを適切に処理します。\n"
+"\n"
+"trait MouseX::Getopt::Meta::Attribute::Traitまたは属性metaclass "
+"MouseX::Getopt::Meta::Attributeを使用して、既定以外のコマンドラインオプションの名前とエイリアスを取得できます。\n"
+"\n"
+"trait MouseX::Getopt::Meta::Attribute::Trait::NoGetoptまたは属性metaclass MouseX::"
+"Getopt::Meta::Attribute::NoGetoptを使用して、'MouseX::Getopt'がコマンドラインオプションの属性を無視するよ"
+"うにできます。\n"
+"\n"
+"既定では、属性のメタクラスがMouseX::Getopt::Meta::Attributeに設定されていない限り、アンダースコアで始まる属性にはコマンドラ"
+"イン引数のサポートが与えられません。アクセサの名前に先頭の下線を付けない場合は、次のようにします。\n"
+"\n"
+"     has '_foo' => (accessor => 'foo', ...);\n"
+"\n"
+"     has '_bar' => (reader => 'bar', ...);\n"
+"これは、Getoptは--fooパラメータを処理しないが、コードは'foo'メソッドを呼び出すことができることを意味します。\n"
+"\n"
+"MouseX::SimpleConfigのように、クラスがMouseX::ConfigFromFileに基づくconfigfile-"
+"loadingロールも使用する場合、MouseX::Getoptの'new_with_options'は、'--"
+"configfile'オプションで指定されたconfigfile(またはconfigfile属性に指定された既定値)をロードします。\n"
+"\n"
+"複数の場所で指定されたオプションは、次の優先順位に従います。commandline overrides "
+"configfile。これは明示的なnew_with_optionsパラメータを上書きします。"
 
 #. tumbleweed/perl-Net-AMQP-RabbitMQ/summary
 msgid "Interact with RabbitMQ over AMQP using librabbitmq"
@@ -45794,6 +45908,11 @@ msgid ""
 "their parameters consist of validated IPs or CIDRs. See cidrvalidate() and "
 "BUGS, below, for more information."
 msgstr ""
+"Net::CIDRパッケージには、CIDR表記で表現されたIPネットブロックのリストを操作する関数が含まれています。Net::CIDR関数は、IPv4アド"
+"レスとIPv6アドレスの両方を処理します。\n"
+"\n"
+"以下に説明するcidrvalidate()関数は、その引数が単一の有効なIPアドレスまたはCIDRであることをチェックします。残りの関数は、パラメータが有"
+"効なIPまたはCIDRで構成されていることを前提としています。詳細については、後述のcidrvalidate() と BUGSを参照してください。"
 
 #. tumbleweed/perl-Net-CIDR-Lite/description
 msgid ""
@@ -46095,7 +46214,7 @@ msgstr ""
 
 #. tumbleweed/perl-Parse-MIME/summary
 msgid "Parse mime-types, match against media ranges"
-msgstr ""
+msgstr "MIMEタイプを解析し、メディア範囲と照合します"
 
 #. tumbleweed/perl-Parse-MIME/description
 msgid ""
@@ -46104,6 +46223,9 @@ msgid ""
 "HTTP specification [RFC 2616] for a complete explanation: http://www.w3.org/"
 "Protocols/rfc2616/rfc2616-sec14.html#sec14.1"
 msgstr ""
+"このモジュールは、MIMEタイプを処理するための基本的な関数を提供します。これは、メディア範囲のリストに対して一致するMIMEタイプを処理できます。完全な"
+"説明については、HTTP仕様[RFC2616]のセクション14.1を参照してください。http://www.w3.org/Protocols/"
+"rfc2616/rfc2616-sec14.html#sec14.1"
 
 #. tumbleweed/perl-Parse-PMFile/summary
 msgid "Parses .pm file as PAUSE does"
@@ -46317,7 +46439,7 @@ msgstr "このモジュールは、不要であれば HTTP 応答内の本文を
 #. tumbleweed/perl-Plack-Test-Agent/summary
 #. tumbleweed/perl-Plack-Test-Agent/description
 msgid "OO interface for testing low-level Plack/PSGI apps"
-msgstr ""
+msgstr "低レベルのPlack/PSGIアプリをテストするためのOOインターフェース"
 
 #. tumbleweed/perl-Pod-Elemental/summary
 msgid "Work with nestable Pod elements"
@@ -46910,6 +47032,7 @@ msgid ""
 "SQL::Abstract::Pg extends SQL::Abstract with a few PostgreSQL features used "
 "by Mojo::Pg."
 msgstr ""
+"SQL::Abstract::Pgは、Mojo::Pgによって使用されるいくつかのPostgreSQL機能によってSQL::Abstractを拡張します。"
 
 #. tumbleweed/perl-SQL-Translator/summary
 msgid "Manipulate structured data definitions (SQL and more)"
@@ -47451,7 +47574,7 @@ msgstr "既知の接頭辞群をベースにした文字列の書き換え"
 
 #. tumbleweed/perl-String-Trim/summary
 msgid "Trim whitespace from your strings"
-msgstr ""
+msgstr "文字列から空白を削除します"
 
 #. tumbleweed/perl-String-Trim/description
 msgid ""
@@ -47459,6 +47582,8 @@ msgid ""
 "'$/' (typically, that's newline), but 'trim' will trim all leading and "
 "trailing whitespace."
 msgstr ""
+"'String::Trim'は、文字列から空白を削除します。chompは'$/'だけを削除します(通常は改行です)が、'trim'は前後の空白をすべて削除"
+"します。"
 
 #. tumbleweed/perl-String-Util/summary
 msgid "String processing utility functions"
@@ -47640,7 +47765,7 @@ msgstr ""
 
 #. tumbleweed/perl-Term-Size-Any/summary
 msgid "Retrieve terminal size"
-msgstr ""
+msgstr "端末サイズを取得します"
 
 #. tumbleweed/perl-Term-Size-Any/description
 msgid ""
@@ -47661,6 +47786,16 @@ msgid ""
 "disabled the fallback to Term::Size and Term::Size::ReadKey which are buggy "
 "by now.)"
 msgstr ""
+"これは端末サイズを取得するための統一されたインタフェースです。これは既知の選択肢リストの1つのモジュールをロードし、それぞれが所望の端末情報を得るための何"
+"らかの方法を実装します。このロードされたモジュールは、実際には'Term::Size::Any'の代わりにジョブを実行します。\n"
+"\n"
+"したがって、'Term::Size::Any'は、次のいずれかのモジュールの可用性に依存します。\n"
+"\n"
+"    Term::Size(間もなくサポートされる予定)Term::Size::Perl "
+"Term::Size::ReadKey(間もなくサポートされる予定)Term::Size::Win32\n"
+"このリリースは、Windows32システムで実行されている場合、Term::Size::Win32にフォールバックします。他のプラットフォームでは、正常に"
+"ロードされたTerm::Size::Perl、Term::SizeまたはTerm::Size::ReadKeyの1番目が使用されます。(正直に言うと、今で"
+"はバグが多いTerm::SizeとTerm::Size::ReadKeyへのフォールバックを無効にしました。)"
 
 #. tumbleweed/perl-Term-Size-Perl/summary
 msgid "Perl extension for retrieving terminal size (Perl version)"
@@ -47670,7 +47805,7 @@ msgstr "端末サイズを取得するための Perl 拡張(Perl 版)"
 msgid ""
 "Yet another implementation of 'Term::Size'. Now in pure Perl, with the "
 "exception of a C probe run on build time."
-msgstr ""
+msgstr "'Term::Size'のさらに別の実装。純粋なPerlでは、Cプローブはビルド時に実行されます。"
 
 #. tumbleweed/perl-Term-Terminfo/summary
 msgid "Access the terminfo database"
@@ -47913,7 +48048,7 @@ msgstr "ファイル属性のテスト"
 
 #. tumbleweed/perl-Test-HTTP-MockServer/summary
 msgid "Implement a mock HTTP server for use in tests"
-msgstr ""
+msgstr "テストで使用するモックHTTPサーバを実装します"
 
 #. tumbleweed/perl-Test-HTTP-MockServer/description
 msgid ""
@@ -47941,6 +48076,21 @@ msgid ""
 "state is shared between the code running in the mock server and the test "
 "code."
 msgstr ""
+"テストを作成する際に、特定のAPIで使用されるトランスポートのタイプの依存性インジェクションを行う必要がない場合があります。場合によっては、そのコードが常"
+"に実際のHTTPを使用し、接続先のホストとポートだけを制御することもあります。\n"
+"\n"
+"このクラスは、呼び出されるサービスを模倣する簡単な方法を提供します。これは、localhost上のランダムなポートにバインドし、どのポートがそうであったか"
+"を調査できるようにすることによって行われます。ランダム・ポートを使用するということは、同じホスト上で並行して実行されるテストで使用できることを意味します。"
+"\n"
+"\n"
+"接続の存続時間がテスト自体の存続時間によって定義されるように、ソケットは主テスト・プロセスにバインドされ、listenされます。\n"
+"\n"
+"ソケットはすでにバインドされてリッスンされているので、2つのconntrolメソッド(start_mock_serverとstop_mock_server"
+")はaccept呼び出しに対してのみforkします。つまり、モック・コードの予想を変更するために、テスト中に何度かstartとstopを呼び出しても安全で"
+"す。\n"
+"\n"
+"これにより、テスト・ケースの各ステップにわたってモック・サーバーの予測を容易に構成することができます。一方、モック・サーバーで実行されているコードとテスト"
+"・コードの間で状態が共有されていないことも意味します。"
 
 #. tumbleweed/perl-Test-Inter/summary
 msgid "Framework for more readable interactive test scripts"
@@ -48477,22 +48627,22 @@ msgstr ""
 
 #. tumbleweed/perl-Text-SimpleTable/summary
 msgid "Simple Eyecandy ASCII Tables"
-msgstr ""
+msgstr "簡単なEyecandy ASCIIテーブル"
 
 #. tumbleweed/perl-Text-SimpleTable/description
 msgid "Simple eyecandy ASCII tables."
-msgstr ""
+msgstr "簡単なeyecandy ASCIIテーブル。"
 
 #. tumbleweed/perl-Text-SimpleTable-AutoWidth/summary
 msgid ""
 "Text::SimpleTable::AutoWidth - Simple eyecandy ASCII tables with auto-wi[cut]"
-msgstr ""
+msgstr "Text::SimpleTable::AutoWidth-auto-wi[cut]を使用した単純なeyecandy ASCIIテーブル"
 
 #. tumbleweed/perl-Text-SimpleTable-AutoWidth/description
 msgid ""
 "Simple eyecandy ASCII tables with auto-selection columns width, as seen in "
 "Catalyst."
-msgstr ""
+msgstr "Catalystで見られるように、自動選択列幅を持つ単純なEyecandy ASCIIテーブル。"
 
 #. tumbleweed/perl-Text-Sprintf-Named/summary
 msgid "Sprintf-like function with named conversions"
@@ -48742,6 +48892,10 @@ msgid ""
 "regexes, of course, but making sure you get the anchoring and escaping right "
 "is tedious and error-prone - this module is simpler."
 msgstr ""
+"URI::Queryは単純なURIクエリー文字列操作を提供し、WebアプリケーションのGETおよびPOST要求からURIクエリー文字列を作成および操作でき"
+"るようにします。これは主に、現在の要求に対してパラメータの一部のサブセットを保持し、場合によっては他のパラメータを追加または置換するリンクを作成する場合に"
+"役立ちます。クエリー文字列が与えられれば、これは正規表現を使って行うことができますが、アンカーとエスケープが正しく行われるようにするのは面倒でエラーが発生"
+"しやすく、このモジュールの方が簡単です。"
 
 #. tumbleweed/perl-URI-ws/summary
 msgid "WebSocket support for URI package"
@@ -48949,6 +49103,7 @@ msgid ""
 "A Perl interface to various services that shorten URLs. These sites maintain "
 "databases of long URLs, each of which has a unique identifier."
 msgstr ""
+"URLを短縮するさまざまなサービスへのPerlインタフェース。これらのサイトは、それぞれ一意の識別子を持つ長いURLのデータベースを保持しています。"
 
 #. tumbleweed/perl-WebService-MusicBrainz/description
 msgid "API to search the musicbrainz.org database"
