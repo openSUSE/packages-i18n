@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-05-13 01:18+0000\n"
-"PO-Revision-Date: 2021-10-09 06:11+0000\n"
+"PO-Revision-Date: 2021-10-09 09:11+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "q-master/ja/>\n"
@@ -1045,34 +1045,6 @@ msgid "Directory Statistics"
 msgstr "ディレクトリ統計"
 
 #. leap/qdirstat/description
-#, fuzzy
-#| msgid ""
-#| "QDirStat is a graphical application to show where your disk space has "
-#| "gone and to help you to clean it up.\n"
-#| "\n"
-#| "This is a Qt-only port of the old Qt3/KDE3-based KDirStat, now based on "
-#| "the latest Qt 5. It does not need any KDE libs or infrastructure. It runs "
-#| "on every X11-based desktop on Linux, BSD and other Unix-like systems.\n"
-#| "\n"
-#| "QDirStat has a number of new features compared to KDirStat. To name a "
-#| "few: \n"
-#| "- Multi-selection in both the tree and the treemap.\n"
-#| "- Unlimited number of user-defined cleanup actions.\n"
-#| "- Properly show errors of cleanup actions (and their output, if "
-#| "desired).\n"
-#| "- File categories (MIME types) and their treemap color are now "
-#| "configurable.\n"
-#| "- Exclude rules for directories are easily configurable.\n"
-#| "- Desktop-agnostic; no longer relies on KDE or any other specific "
-#| "desktop.\n"
-#| "\n"
-#| "For more details and screenshots, see\n"
-#| "\n"
-#| "    https://github.com/shundhammer/qdirstat\n"
-#| "\n"
-#| "and the local documentation in\n"
-#| "\n"
-#| "    /usr/share/doc/packages/qdirstat/README.md"
 msgid ""
 " QDirStat is a graphical application to show where your disk space has gone "
 "and to help you to clean it up.\n"
@@ -1114,20 +1086,32 @@ msgid ""
 "\n"
 "    /usr/share/doc/packages/qdirstat/README.md"
 msgstr ""
-"QDirStat は、ディスク・スペースがどこに移動したかを示し、ディスク・スペースの"
-"クリーンアップを支援するグラフィカル・アプリケーションです。\n"
-"これは古い Qt3/KDE3 ベースの KDirStat の Qt 専用ポートで、現在は最新の Qt 5 "
-"をベースにしています。KDE のライブラリやインフラは必要ありません。Linux、"
-"BSD、その他の Unix ライクなシステム上のすべての X11 ベースのデスクトップで動"
-"作します。\n"
+" QDirStat は、ディスク・スペースがどこに移動したかを示し、ディスク・スペースのクリーンアップを支援するグラフィカル・アプリケーションです。\n"
+"\n"
+"これは古い Qt3/KDE3 ベースの KDirStat の Qt 専用ポートで、現在は最新の Qt 5 をベースにしています。KDE "
+"のライブラリやインフラは必要ありません。Linux、BSD、その他の Unix ライクなシステム上のすべての X11 ベースのデスクトップで動作します。"
+"\n"
 "\n"
 "QDirStat には KDirStat に比べて数多くの新機能があります。\n"
 "-ツリーとツリーマップの両方での複数選択。\n"
 "-ユーザー定義のクリーンアップ操作の数は無制限。\n"
 "-クリーンアップ操作(および必要に応じてその出力)のエラーを正しく表示。\n"
 "-ファイルカテゴリ(MIME タイプ)とそのツリーマップカラーを設定可能。\n"
-"-ディレクトリの除外ルールは簡単に設定可能。\n"
-"-デスクトップに依存しない。KDE やその他の特定のデスクトップに依存しない。\n"
+"- パッケージマネージャは以下をサポートします:\n"
+"\n"
+" -システムファイルが属するソフトウェアパッケージを表示します。\n"
+"\n"
+" - インストールされているソフトウェアパッケージとその個々のファイルのディスク使用状況を示す Packagesビュー。\n"
+"\n"
+" -システムディレクトリ内のどのファイルが、インストールされているソフトウェアパッケージに属していないかを示す、パッケージ化されていないファイルビュー。"
+"\n"
+"-新しいビュー:\n"
+"\n"
+" -ファイルタイプごとのディスク使用量(ファイル名拡張子別)。\n"
+"\n"
+" -ファイルサイズのヒストグラム表示。\n"
+"\n"
+" -マウントされた各ファイル・システムの空きディスク・サイズ、使用済みディスク・サイズ、予約済みディスク・サイズ(df のように)\n"
 "\n"
 "より詳しい説明と画面イメージは以下を参照してください。\n"
 "\n"
@@ -1442,11 +1426,9 @@ msgid "Virtio-gpu pci device for QEMU"
 msgstr ""
 
 #. leap/qemu/qemu-hw-display-virtio-gpu-pci/description
-#, fuzzy
-#| msgid "This package contains a virtio gpu driver for QEMU"
 msgid ""
 "This package contains a module providing the virtio gpu pci device for QEMU."
-msgstr "このパッケージには、 QEMU向け virtio gpu ドライバーが含まれています"
+msgstr "このパッケージには、 QEMU向け virtio gpu pci デバイスを提供するモジュールが含まれています。"
 
 #. leap/qemu/qemu-hw-display-virtio-vga/summary
 #, fuzzy
@@ -1455,23 +1437,19 @@ msgid "Virtio vga device for QEMU"
 msgstr "QEMU 向け Virtio GPU ディスプレイサポート"
 
 #. leap/qemu/qemu-hw-display-virtio-vga/description
-#, fuzzy
-#| msgid "This package contains a virtio vga driver for QEMU"
 msgid ""
 "This package contains a module providing the virtio vga device for QEMU."
-msgstr "このパッケージには、QEMU向け virtio vgaドライバーが含まれています"
+msgstr "このパッケージには、QEMU 向け virtio vgaドライバーが含まれています。"
 
 #. leap/qemu/qemu-hw-s390x-virtio-gpu-ccw/summary
 msgid "S390x virtio-gpu ccw device for QEMU"
 msgstr ""
 
 #. leap/qemu/qemu-hw-s390x-virtio-gpu-ccw/description
-#, fuzzy
-#| msgid "This package contains a virtio gpu driver for QEMU"
 msgid ""
 "This package contains a module providing the s390x virtio gpu ccw device for "
 "QEMU."
-msgstr "このパッケージには、 QEMU向け virtio gpu ドライバーが含まれています"
+msgstr "このパッケージには、 QEMU 向けs390x virtio ccw デバイスを提供するモジュールが含まれています。"
 
 #. leap/qemu/qemu-hw-usb-redirect/summary
 msgid "USB redirection support for QEMU"
@@ -1752,16 +1730,11 @@ msgid "Vhost user mode virtio-gpu 2D/3D rendering backend for QEMU"
 msgstr ""
 
 #. leap/qemu/qemu-vhost-user-gpu/description
-#, fuzzy
-#| msgid ""
-#| "This package contains a vhost user mode virtio-gpu 2D/3D rendering "
-#| "backend for QEMU"
 msgid ""
 "This package contains a vhost user mode virtio-gpu 2D/3D rendering backend "
 "for QEMU."
 msgstr ""
-"このパッケージには、 QEMU 向け vhost ユーザーモードの virtio-gpu 2D/3D レンダ"
-"リングバックエンドが含まれています"
+"このパッケージには、 QEMU 向け vhost ユーザーモードの virtio-gpu 2D/3D レンダリングバックエンドが含まれています。"
 
 #. leap/qemu/qemu-x86/summary
 msgid "Machine emulator and virtualizer for x86 architectures"
@@ -3187,9 +3160,7 @@ msgstr ""
 msgid ""
 "The qwt6-designer package contains the plugin for the Qt5 User Interface "
 "designer tool."
-msgstr ""
-"qwt6-designer パッケージには、 Qt5  のユーザインターフェースデザイナーツール"
-"向けプラグインが含まれています。"
+msgstr "qwt6-designer パッケージには、 Qt5 のユーザインターフェースデザイナーツール向けプラグインが含まれています。"
 
 #. leap/qwt6/qwt6-devel/summary
 msgid "Include headers and Qt Designer plugin for Qwt(Qt5)"
@@ -3506,10 +3477,8 @@ msgid "Qt 6 LabsAnimation library"
 msgstr "Qt 6 3DAnimation ライブラリ"
 
 #. tumbleweed/qt6-declarative/libQt6LabsAnimation6/description
-#, fuzzy
-#| msgid "Qt 6 3DAnimation library"
 msgid "The Qt 6 LabsAnimation library."
-msgstr "Qt 6 3DAnimation ライブラリ"
+msgstr "Qt 6 LabsAnimation ライブラリ。"
 
 #. tumbleweed/qt6-declarative/libQt6LabsFolderListModel6/summary
 #, fuzzy
@@ -3598,10 +3567,8 @@ msgid "Qt 6 OpcUa Client Library"
 msgstr "Qt 6 CoAP クライアントライブラリ"
 
 #. tumbleweed/qt6-opcua/libQt6OpcUa6/description
-#, fuzzy
-#| msgid "Qt 6 CoAP Client Library"
 msgid "Qt 6 OpcUa Client Library."
-msgstr "Qt 6 CoAP クライアントライブラリ"
+msgstr "Qt 6 OpcUa クライアントライブラリ。"
 
 #. tumbleweed/qt6-base/libQt6OpenGL6/summary
 msgid "Qt 6 OpenGL library"
@@ -4117,9 +4084,7 @@ msgstr ""
 
 #. tumbleweed/qt6-3d-docs/qt6-3d-docs-html/description
 msgid "This package contains documentation for qt6-3d-docs in HTML format."
-msgstr ""
-"このパッケージには、  qt6-3d-docs のドキュメンテーションが HTML 形式で含まれ"
-"ています。"
+msgstr "このパッケージには、 qt6-3d-docs のドキュメンテーションが HTML 形式で含まれています。"
 
 #. tumbleweed/qt6-3d-docs/qt6-3d-docs-qch/summary
 msgid "Documentation for qt6-3d-docs in QCH format"
@@ -4605,13 +4570,9 @@ msgid "Documentation for qt6-datavis3d-docs in HTML format"
 msgstr "qt6-coap-docs の QCH 形式によるドキュメンテーション"
 
 #. tumbleweed/qt6-datavis3d-docs/qt6-datavis3d-docs-html/description
-#, fuzzy
-#| msgid "This package contains documentation for qt6-3d-docs in HTML format."
 msgid ""
 "This package contains documentation for qt6-datavis3d-docs in HTML format."
-msgstr ""
-"このパッケージには、  qt6-3d-docs のドキュメンテーションが HTML 形式で含まれ"
-"ています。"
+msgstr "このパッケージには、 qt6-datavis3d-docs のドキュメンテーションが HTML 形式で含まれています。"
 
 #. tumbleweed/qt6-datavis3d-docs/qt6-datavis3d-docs-qch/summary
 #, fuzzy
@@ -4784,9 +4745,7 @@ msgstr ""
 
 #. tumbleweed/qt6-base/qt6-docs-common/description
 msgid "This package contains common files used for building Qt documentation."
-msgstr ""
-"このパッケージには Qt  ドキュメントを構築するのに使われる共通ファイルが含まれ"
-"ています。"
+msgstr "このパッケージには Qt ドキュメントを構築するのに使われる共通ファイルが含まれています。"
 
 #. tumbleweed/qt6-base/qt6-gui-devel/summary
 msgid "Development files for the Qt 6 GUI libraries"
@@ -5899,9 +5858,7 @@ msgstr ""
 msgid ""
 "This package contains documentation for qt6-quicktimeline-docs in HTML "
 "format."
-msgstr ""
-"このパッケージには、 qt6-quicktimeline-docs  の HTML 形式のドキュメンテーショ"
-"ンが含まれています。"
+msgstr "このパッケージには、 qt6-quicktimeline-docs の HTML 形式のドキュメンテーションが含まれています。"
 
 #. tumbleweed/qt6-quicktimeline-docs/qt6-quicktimeline-docs-qch/summary
 msgid "Documentation for qt6-quicktimeline-docs in QCH format"
@@ -5910,9 +5867,7 @@ msgstr ""
 #. tumbleweed/qt6-quicktimeline-docs/qt6-quicktimeline-docs-qch/description
 msgid ""
 "This package contains documentation for qt6-quicktimeline-docs in QCH format."
-msgstr ""
-"このパッケージには、 qt6-quicktimeline-docs  の QCH 形式のドキュメンテーショ"
-"ンが含まれています。"
+msgstr "このパッケージには、 qt6-quicktimeline-docs の QCH 形式のドキュメンテーションが含まれています。"
 
 #. tumbleweed/qt6-quicktimeline/qt6-quicktimeline-imports/summary
 msgid "Qt 6 QuickTimeline QML files and plugins"
@@ -6056,9 +6011,7 @@ msgstr ""
 
 #. tumbleweed/qt6-svg-docs/qt6-svg-docs-html/description
 msgid "This package contains documentation for qt6-svg-docs in HTML format."
-msgstr ""
-"このパッケージには、qt6-svg-docs  の HTML 形式のドキュメンテーションが含まれ"
-"ています。"
+msgstr "このパッケージには、qt6-svg-docs の HTML 形式のドキュメンテーションが含まれています。"
 
 #. tumbleweed/qt6-svg-docs/qt6-svg-docs-qch/summary
 msgid "Documentation for qt6-svg-docs in QCH format"
@@ -6066,9 +6019,7 @@ msgstr ""
 
 #. tumbleweed/qt6-svg-docs/qt6-svg-docs-qch/description
 msgid "This package contains documentation for qt6-svg-docs in QCH format."
-msgstr ""
-"このパッケージには、qt6-svg-docs  の QCH 形式のドキュメンテーションが含まれて"
-"います。"
+msgstr "このパッケージには、qt6-svg-docs の QCH 形式のドキュメンテーションが含まれています。"
 
 #. tumbleweed/qt6-svg/qt6-svg-examples/summary
 #, fuzzy
@@ -6188,10 +6139,8 @@ msgid "Qt 6 tool for generating .qch help catalogs."
 msgstr ""
 
 #. tumbleweed/qt6-tools/qt6-tools-linguist/summary
-#, fuzzy
-#| msgid "Translations for Qt6 libraries and tools."
 msgid "Translation tool for Qt applications"
-msgstr "Qt6 ライブラリとツール向け翻訳パッケージです。"
+msgstr "Qt6 アプリケーション向け翻訳ツール"
 
 #. tumbleweed/qt6-tools/qt6-tools-linguist/description
 msgid ""
