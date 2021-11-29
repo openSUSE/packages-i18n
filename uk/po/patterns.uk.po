@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2019-03-22 14:34+0000\n"
-"PO-Revision-Date: 2021-11-28 22:12+0000\n"
+"PO-Revision-Date: 2021-11-30 00:13+0000\n"
 "Last-Translator: Taras Panchenko <top39@ukr.net>\n"
 "Language-Team: Ukrainian <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-sle-15-sp1/uk/>\n"
@@ -184,13 +184,16 @@ msgstr "Офісне ПЗ для вашого стільничного сере�
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
 msgid "GEO Clustering for High Availability"
-msgstr ""
+msgstr "Кластеризація GEO для високої доступності"
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/description
 msgid ""
 "This pattern provides tools for building multi-site clustering setups based "
 "on the SUSE Linux Enterprise High-Availability and its GEO extension."
 msgstr ""
+"Цей шаблон надає інструменти для створення налаштувань кластеризації кількох "
+"сайтів на основі SUSE Linux Enterprise High-Availability та його розширення "
+"GEO."
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/category
 #. SLE/patterns-ha/patterns-ha-ha_sles/category
@@ -479,7 +482,7 @@ msgstr "32-бітовий шаблон, який доповнює directory_serv
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "Спеціальні пакунки для FIPS 140-2"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
 msgid ""
@@ -493,6 +496,15 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"Цей шаблон встановлює спеціальні пакунки для FIPS 140-2, які доповнюють "
+"задіяні криптографічні модулі. Він потрібен для запуску комп'ютера з \"fips="
+"1\".\n"
+"\n"
+"Зверніть увагу, що цей шаблон лише надає сумісність з FIPS 140-2, він не "
+"робить систему сертифікованою чи перевіреною за стандартом FIPS 140-2.\n"
+"\n"
+"Будь ласка, зверніться до офіційних заяв SUSE щодо стану сертифікації FIPS "
+"140-2."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
@@ -500,13 +512,14 @@ msgstr "32-бітовий шаблон, який доповнює fips."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/summary
 msgid "System z HW crypto support"
-msgstr ""
+msgstr "Підтримка шифрування System z HW"
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-hwcrypto/description
 msgid ""
 "A selection of packages that installs the System z HW crypto stack on System "
 "z."
 msgstr ""
+"Вибір пакунків, які встановлюють стек шифрування System z HW на System z."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server-32bit/summary
@@ -583,7 +596,7 @@ msgstr ""
 
 #. SLE/patterns-server/patterns-server-kvm_tools/summary
 msgid "KVM Virtualization Host and tools"
-msgstr ""
+msgstr "Вузол та інструменти віртуалізації KVM"
 
 #. SLE/patterns-server/patterns-server-kvm_tools/description
 msgid ""
@@ -646,6 +659,9 @@ msgid ""
 "needed packages for printing to a locally connected printer, printing using "
 "a remote print server and for setting up a print server."
 msgstr ""
+"Цей шаблон надає всі пакунки, необхідні для друку. Він надає всі необхідні "
+"пакунки для друку на локально підключеному принтері, друку за допомогою "
+"віддаленого сервера друку та для налаштування сервера друку."
 
 #. SLE/patterns-server/patterns-server-printing-32bit/description
 msgid "The 32bit pattern complementing printing."
@@ -732,6 +748,10 @@ msgid ""
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC modularized libraries' should also be installed."
 msgstr ""
+"Обчислювальний вузол містить мінімальний програмний образ і головним чином "
+"виконує застосунки моделювання. Служби на цьому вузлі повинні бути зведені "
+"до мінімуму, а вузол *повинен* бути встановлений автоматично. Також слід "
+"встановити шаблон «Модульовані бібліотеки HPC»."
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/summary
 msgid "HPC Development Packages"
@@ -743,10 +763,13 @@ msgid ""
 "applications. It depends on the pattern 'HPC modularized libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
+"Цей пакунок містить усі необхідні пакунки для розробки програм HPC. Він "
+"залежить від шаблону «Модульовані бібліотеки HPC». Крім того, він включає "
+"компілятори GNU та відповідні пакунки керування."
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
 msgid "HPC modularized Libraries"
-msgstr ""
+msgstr "Модульовані бібліотеки HPC"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
 msgid ""
@@ -755,6 +778,10 @@ msgid ""
 "in parallel. In order to use thess libraries one needs to load them via the "
 "module command first."
 msgstr ""
+"Цей пакунок надає всі модульовані бібліотеки, щоб їх можна було "
+"використовувати у середовищі HPC. Ці бібліотеки дозволяють встановлювати "
+"кілька варіантів MPI паралельно. Щоб використовувати ці бібліотеки, спочатку "
+"їх потрібно завантажити за допомогою команди module."
 
 #. SLE/patterns-hpc/patterns-hpc-workload_server/summary
 msgid "HPC Workload Manager"
@@ -1000,7 +1027,7 @@ msgstr "Хост-сервер віртуальних машин Xen"
 
 #. SLE/patterns-server/patterns-server-xen_tools/summary
 msgid "XEN Virtualization Host and tools"
-msgstr ""
+msgstr "Вузол та інструменти віртуалізації XEN"
 
 #. SLE/patterns-server/patterns-server-xen_tools/description
 msgid ""
