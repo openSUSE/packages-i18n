@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2021-05-13 01:18+0000\n"
-"PO-Revision-Date: 2022-01-26 11:12+0000\n"
+"PO-Revision-Date: 2022-01-26 17:13+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "v-master/ja/>\n"
@@ -31,21 +31,26 @@ msgid ""
 "* X Window fonts: PCF, BDF.\n"
 "* Other fonts: TrueType, Type 1, HBF, Syotai Club, JG, ekanji"
 msgstr ""
+"VFlibはC言語で記述されたフォントライブラリで、フォントのビットマップを取得するためのいくつかの関数を備えています。VFlibのユニークな特徴は、異な"
+"るフォーマットのフォントが統一されたインタフェースによってアクセスされることです。\n"
+"\n"
+"VFlibは次のフォント形式をサポートしています。\n"
+"*TeXフォント:PK、GF、VF、TFM Omega\n"
+"*TeXフォント:OFM(レベル0)、OVF\n"
+"*Xウィンドウフォント:PCF、BDF。\n"
+"*その他のフォント:TrueType、Type 1、HBF、Syotai Club、JG、ekanji"
 
 #. leap/VFlib3/VFlib3-devel/summary
-#, fuzzy
 msgid "Development libraries for VFlib3"
-msgstr "Perl-Qt4 向け開発ライブラリ"
+msgstr "VFlib3用開発ライブラリ"
 
 #. leap/VFlib3/VFlib3-devel/description
-#, fuzzy
 msgid "Development headers and libraries for VFlib3"
-msgstr "Marble 向けの開発用ヘッダとライブラリです。"
+msgstr "VFlib3用の開発ヘッダとライブラリ"
 
 #. leap/Vc/Vc-devel/summary
-#, fuzzy
 msgid "Development Files for Vc"
-msgstr "GeoIP 向け開発ファイル"
+msgstr "Vcの開発ファイル"
 
 #. leap/Vc/Vc-devel/description
 msgid ""
@@ -56,11 +61,14 @@ msgid ""
 "\n"
 "This package provides development headers needed to build software using Vc."
 msgstr ""
+"VcはC++コードの明示的なベクトル化を容易にするためのフリーのソフトウェアライブラリです。これは、直感的なAPIを持ち、異なるコンパイラとコンパイラ・バ"
+"ージョン間の移植性と、異なるベクトル命令セット間の移植性を提供します。\n"
+"\n"
+"このパッケージは、Vcを使用してソフトウェアを構築するために必要な開発ヘッダーを提供します。"
 
 #. leap/Vc/Vc-devel-doc/summary
-#, fuzzy
 msgid "API documentation for Vc"
-msgstr "smb4k 向けドキュメンテーション"
+msgstr "VcのAPIドキュメント"
 
 #. leap/Vc/Vc-devel-doc/description
 msgid ""
@@ -71,11 +79,14 @@ msgid ""
 "\n"
 "This package provides the API documentation"
 msgstr ""
+"VcはC++コードの明示的なベクトル化を容易にするためのフリーのソフトウェアライブラリです。これは、直感的なAPIを持ち、異なるコンパイラとコンパイラ・バ"
+"ージョン間の移植性と、異なるベクトル命令セット間の移植性を提供します。\n"
+"\n"
+"このパッケージは、APIドキュメントを提供します。"
 
 #. leap/Vc/Vc-devel-static/summary
-#, fuzzy
 msgid "Vc Static Library"
-msgstr "Tcl 標準ライブラリ"
+msgstr "VC 静的ライブラリ"
 
 #. leap/Vc/Vc-devel-static/description
 msgid ""
@@ -86,10 +97,14 @@ msgid ""
 "\n"
 "This package provides the Vc static library."
 msgstr ""
+"VcはC++コードの明示的なベクトル化を容易にするためのフリーのソフトウェアライブラリです。これは、直感的なAPIを持ち、異なるコンパイラとコンパイラ・バ"
+"ージョン間の移植性と、異なるベクトル命令セット間の移植性を提供します。\n"
+"\n"
+"このパッケージは、Vc 静的ライブラリを提供します。"
 
 #. leap/ViTables/summary
 msgid "A viewer package for PyTables"
-msgstr ""
+msgstr "PyTables 向けビューワーパッケージ"
 
 #. leap/ViTables/description
 msgid ""
@@ -97,11 +112,13 @@ msgid ""
 "and HDF5 format. With ViTables you can easily navigate through the data "
 "hierarchy, view and modify metadata, view actual data and more."
 msgstr ""
+"ViTablesは、PyTables形式とHDF5形式の両方でファイルを参照および編集するためのグラフィカルツールです。ViTablesでは、データ階層の"
+"ナビゲート、メタデータの表示と変更、実際のデータの表示などを簡単に行うことができます。"
 
 #. leap/VirtualGL/summary
 #. leap/VirtualGL/VirtualGL-devel/summary
 msgid "A toolkit for displaying OpenGL applications to thin clients"
-msgstr ""
+msgstr "OpenGLアプリケーションをシンクライアントに表示するためのツールキット"
 
 #. leap/VirtualGL/description
 #. leap/VirtualGL/VirtualGL-devel/description
@@ -126,55 +143,62 @@ msgid ""
 "Interactive Hardware Accelerated Remote 3D-Visualization\" (Engel, Sommer, "
 "Ertl 2000.)"
 msgstr ""
+"VirtualGLは、ほとんどのLinux OpenGLアプリケーションを、アプリケーションを変更することなく、シンクライアントにリモートで表示できるよう"
+"にするライブラリです。VGLは実行時に自身をアプリケーションに挿入し、一握りのGLXコールをインターセプトして、サーバのディスプレイ(おそらく3Dアクセラ"
+"レータが接続されている)に再ルーティングします。これにより、すべての3Dレンダリングがサーバのディスプレイで行われます。各フレームがサーバによってレンダリ"
+"ングされると、VirtualGLはサーバのフレームバッファからピクセルを読み戻し、適切なXウィンドウに再合成するためにクライアントに送信します。Virtu"
+"alGLを使用すると、GLXをサポートしていないVNCやその他のリモートディスプレイ環境に、ハードウェアアクセラレーションによる3D機能を提供できます。L"
+"AN環境では、内蔵のモーションJPEGビデオ配信システムとともに使用して、フルスクリーン3Dアプリケーションを20フレーム/秒以上でリモート表示することも"
+"できます。\n"
+"\n"
+"VirtualGLは、「A Generic Solution for Hardware-Accelerated Remote "
+"Visualization」(Stegmaier,Magallon,エルトル2002)や「A Framework for Interactive "
+"Hardware Accelerated Remote 3D-Visualization」(Engel,Sommer,エルトル2000)など、このトピック"
+"に関するさまざまな学術論文で発表されたアイデアに基づいています。"
 
 #. leap/vala-panel-appmenu/appmenu-gtk-module-common/summary
 msgid "Common files for appmenu-gtk{2,3}-module"
-msgstr ""
+msgstr "appmenu-gtk{2,3}-moduleの共通ファイル"
 
 #. leap/vala-panel-appmenu/appmenu-gtk-module-common/description
-#, fuzzy
 msgid "This package contains common data-files for appmenu-gtk{2,3}-module."
-msgstr "このパッケージには qtwebkit 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージには、appmenu-gtk{2,3}-module用の共通データファイルが含まれています。"
 
 #. leap/vala-panel-appmenu/appmenu-gtk2-module/summary
 msgid "GtkMenuShell D-Bus exporter (GTK+ 2)"
-msgstr ""
+msgstr "GtkMenuShell D-Bus エクスポータ(GTK+2)"
 
 #. leap/vala-panel-appmenu/appmenu-gtk2-module/description
 msgid "This GTK 2 module exports GtkMenuShells over D-Bus."
-msgstr ""
+msgstr "このGTK 2モジュールは、D-Bus経由でGtkMenuShellsをエクスポートします。"
 
 #. leap/vala-panel-appmenu/appmenu-gtk3-module/summary
 msgid "GtkMenuShell D-Bus exporter (GTK+ 3)"
-msgstr ""
+msgstr "GtkMenuShellの D-Bus エクスポータ(GTK+3)"
 
 #. leap/vala-panel-appmenu/appmenu-gtk3-module/description
 msgid "This GTK 3 module exports GtkMenuShells over D-Bus."
-msgstr ""
+msgstr "このGTK 3モジュールは、D-Bus経由でGtkMenuShellsをエクスポートします。"
 
 #. leap/vala-panel-appmenu/appmenu-registrar/summary
 msgid "Canonical AppMenu Registrar Provider"
-msgstr ""
+msgstr "Canonical AppMenu Registrarプロバイダ"
 
 #. leap/vala-panel-appmenu/appmenu-registrar/description
 msgid "com.canonical.AppMenu.Registrar provider"
-msgstr ""
+msgstr "com.canonical.AppMenu.Registrarプロバイダ"
 
 #. leap/v4l-utils/dvb-utils/summary
-#, fuzzy
 msgid "Utilities for DVB devices"
-msgstr "PC カード向けユーティリティ"
+msgstr "DVBデバイス用のユーティリティ"
 
 #. leap/v4l-utils/dvb-utils/description
-#, fuzzy
 msgid "dvb-utils is a collection of various DVB utilities."
-msgstr "基本的なシステムユーティリティ集"
+msgstr "dvb-utilsは、さまざまなDVBユーティリティのコレクションです。"
 
 #. leap/vte/glade-catalog-vte/summary
-#, fuzzy
-#| msgid "Terminal Emulator Library"
 msgid "Glade catalog for the VTE terminal emulator library"
-msgstr "端末エミュレータライブラリ"
+msgstr "VTEターミナル・エミュレータ・ライブラリ用の Glade カタログ"
 
 #. leap/vte/glade-catalog-vte/description
 msgid ""
@@ -198,11 +222,14 @@ msgid ""
 "\n"
 "This package provide source code for v2ray-core"
 msgstr ""
+"Project Vは、コンピュータネットワークを構築するためのネットワークツールのセットです。これは、ネットワーク接続を保護し、プライバシーを保護します。"
+"\n"
+"\n"
+"このパッケージはv2ray-core用のソースコードを提供します。"
 
 #. leap/vertex-gtk-theme/gtk2-metatheme-vertex/summary
-#, fuzzy
 msgid "Vertex GTK+2 Theme"
-msgstr "Crux GTK+ 2 テーマ エンジン"
+msgstr "Vertex GTK+2テーマ"
 
 #. leap/vertex-gtk-theme/gtk2-metatheme-vertex/description
 msgid ""
@@ -212,11 +239,14 @@ msgid ""
 "\n"
 "This package contains the GTK+2 theme."
 msgstr ""
+"Vertex はモダンなテーマで、3つのバリエーションから選択できます。既定のバリエーションは、暗いヘッダバー、明るいバリエーション、および暗いバリエーシ"
+"ョンです。MATE、Xfce、およびCinnamonをサポートしています。\n"
+"\n"
+"このパッケージには、GTK+2テーマが含まれています。"
 
 #. leap/vertex-gtk-theme/gtk3-metatheme-vertex/summary
-#, fuzzy
 msgid "Vertex GTK+3 Theme"
-msgstr "Crux GTK+ 2 テーマ エンジン"
+msgstr "Vertex GTK+3テーマ"
 
 #. leap/vertex-gtk-theme/gtk3-metatheme-vertex/description
 msgid ""
@@ -226,103 +256,79 @@ msgid ""
 "\n"
 "This package contains the GTK+3 theme."
 msgstr ""
+"Vertex はモダンなテーマで、3つのバリエーションから選択できます。既定のバリエーションは、暗いヘッダバー、明るいバリエーション、および暗いバリエーシ"
+"ョンです。MATE、Xfce、およびCinnamonをサポートしています。\n"
+"\n"
+"このパッケージには、GTK+3テーマが含まれています。"
 
 #. leap/vim/gvim/summary
 msgid "A GUI for Vi"
 msgstr "vi の GUI 版"
 
 #. leap/vim/gvim/description
-#, fuzzy
-#| msgid ""
-#| "Copy and modify /usr/share/vim/current/gvimrc to ~/.gvimrc if needed.\n"
-#| "\n"
-#| "Package gvim contains the largest set of features of vim, which is "
-#| "graphical windows and language interpreter, like python, ruby, or perl. "
-#| "You need package vim for the help and other documentation too. If you "
-#| "want less features, you might want to install vim instead."
 msgid ""
 "Package gvim contains the largest set of features of vim, which is graphical "
 "windows and language interpreter, like python, ruby, or perl. You need "
 "package vim for the help and other documentation too. If you want less "
 "features, you might want to install vim instead."
 msgstr ""
-"まずは必要であれば、 /usr/share/vim/current/gvimrc を ~/.gvimrc コピーしてか"
-"ら修正してください。\n"
-"\n"
-"gvim パッケージには vim の巨大なセットが含まれていて、グラフィカルなウインド"
-"ウや Python, Ruby, Perl などの言語インタプリタが含まれています。ヘルプやその"
-"他のドキュメンテーションが必要となる場合は、 vim パッケージも必要です。また、"
-"多くの機能を必要としない場合は、 vim を代わりにインストールしてもかまいませ"
-"ん。"
+"パッケージgvimには、vimの最大の機能セットが含まれています。これは、python、ruby、perlなどのグラフィカル・ウィンドウと言語インタープリ"
+"ターです。ヘルプやその他のドキュメントのためにもvimパッケージが必要です。機能を少なくする場合は、代わりにvimをインストールします。"
 
 #. leap/VFlib3/libVFlib3-5/summary
-#, fuzzy
-#| msgid "Versatile Font Library"
 msgid "Versatile font library VFlib3"
-msgstr "多用途フォントライブラリ"
+msgstr "汎用フォントライブラリVFlib3"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk-parser-devel/summary
 msgid "Common development-files for libappmenu-gtk{2,3}-parser"
-msgstr ""
+msgstr "libappmenu-gtk{2,3}-parser 用の共通開発ファイル"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk-parser-devel/description
-#, fuzzy
 msgid ""
 "This package contains common headers and documentation for libappmenu-"
 "gtk{2,3}-parser."
-msgstr ""
-"このパッケージには、 doxygen で作成した Qwt ウイジェットの開発者用ドキュメン"
-"テーションが含まれています。"
+msgstr "このパッケージには、libappmenu-gtk{2,3}-parser用の共通ヘッダーとドキュメントが含まれています。"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk2-parser-devel/summary
-#, fuzzy
-#| msgid "Development files for vala-panel"
 msgid "Development files for libappmenu-gtk2-parser"
-msgstr "vala-panel 向け開発用ファイル"
+msgstr "libappmenu-gtk2-parser用の開発ファイル"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk2-parser-devel/description
-#, fuzzy
 msgid "This package contains development-files for libappmenu-gtk2-parser."
-msgstr "このパッケージには qtwebkit 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージには、libappmenu-gtk2-parser用の開発ファイルが含まれています。"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk2-parser0/summary
 msgid "Gtk2MenuShell to GMenuModel parser"
-msgstr ""
+msgstr "Gtk2MenuShellからGMenuModelへのパーサ"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk2-parser0/description
 msgid "This library converts Gtk3MenuShells into GMenuModels."
-msgstr ""
+msgstr "このライブラリーはGtk3MenuShellsをGMenuModelsに変換します。"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk3-parser-devel/summary
-#, fuzzy
-#| msgid "Development files for vala-panel"
 msgid "Development files for libappmenu-gtk3-parser"
-msgstr "vala-panel 向け開発用ファイル"
+msgstr "libappmenu-gtk3-parser用の開発ファイル"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk3-parser-devel/description
-#, fuzzy
 msgid "This package contains development-files for libappmenu-gtk3-parser."
-msgstr "このパッケージには qtwebkit 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージには、libappmenu-gtk3-parser用の開発ファイルが含まれています。"
 
 #. leap/v4l-utils/libdvbv5-0/summary
 #. leap/v4l-utils/libdvbv5-0-32bit/summary
 msgid "Library that provides access to DVB adapter cards"
-msgstr ""
+msgstr "DVBアダプタカードへのアクセスを提供するライブラリ"
 
 #. leap/v4l-utils/libdvbv5-0/description
 #. leap/v4l-utils/libdvbv5-0-32bit/description
-#, fuzzy
 msgid ""
 "libdvbv5 is a library meant to be used by digital TV applications that need "
 "to talk with media hardware.\n"
 "\n"
 "This package contains shared lib for packages that use libdvbv5."
 msgstr ""
-"libv4l2 は v4l2 デバイスに対する v4l2 の API を提供します。なお、必要であれば"
-"libv4lconvert による透過的な変換をアプリケーション側に提供します。\n"
+"libdvbv5は、メディアハードウェアと通信する必要があるデジタルテレビアプリケーションによって使用されることを意図したライブラリです。\n"
 "\n"
-"このパッケージには、 libv4l2 を使用するパッケージ向けの共有ライブラリが含まれ"
-"ています。"
+"このパッケージには、libdvbv5を使用するパッケージ用の共有ライブラリが含まれています。"
 
 #. leap/v4l-utils/libdvbv5-0-lang/summary
 #. leap/v4l-utils/v4l-utils-lang/summary
@@ -339,13 +345,11 @@ msgid "Development files for libdvbv5"
 msgstr "libdvbv5 向け開発用ファイル"
 
 #. leap/v4l-utils/libdvbv5-devel/description
-#, fuzzy
 msgid ""
 "The libdvbv5-devel package contains libraries and header files for "
 "developing applications that use libdvbv5."
 msgstr ""
-"libv4l-devel パッケージには、 libv4l を使用するアプリケーションをコンパイルお"
-"よび開発するのに必要な、ヘッダファイルとライブラリが含まれています。"
+"libdvbv5-develパッケージには、libdvbv5を使用するアプリケーションを開発するためのライブラリーとヘッダーファイルが含まれています。"
 
 #. leap/vhostmd/libmetrics-devel/summary
 #. leap/vhostmd/libmetrics0/summary
@@ -358,19 +362,13 @@ msgstr "仮想ホストメトリックデーモン (vhostmd)"
 #. leap/vhostmd/libmetrics0/description
 #. leap/vhostmd/description
 #. leap/vhostmd/vm-dump-metrics/description
-#, fuzzy
-#| msgid ""
-#| "vhostmd provides a \"metrics communication channel\" between a host and "
-#| "its hosted virtual machines, allowing limited introspection of host "
-#| "resource usage from within virtual machines"
 msgid ""
 "vhostmd provides a \"metrics communication channel\" between a host and its "
 "hosted virtual machines, allowing limited introspection of host resource "
 "usage from within virtual machines."
 msgstr ""
-"vhostmd はホストと仮想マシンとの間に \"メトリック通信チャンネル\" を提供しま"
-"す。仮想マシン内からホストの資源の使用についての情報の一部を内部監視すること"
-"ができます。"
+"vhostmdは、ホストとそのホストされる仮想マシンとの間に「メトリック通信チャネル」を提供し、仮想マシン内からのホストリソース使用の限定されたイントロス"
+"ペクションを可能にします。"
 
 #. leap/v4l-utils/libv4l/summary
 #. leap/v4l-utils/libv4l-32bit/summary
@@ -474,28 +472,24 @@ msgstr ""
 "まれています。"
 
 #. leap/vacuum-im/libvacuumutils37/summary
-#, fuzzy
 msgid "Shared library libvacuumutils for Vacuum-IM"
-msgstr "Fcitx 向け共有ライブラリ"
+msgstr "Vacuum-IMの共有ライブラリlibvacuumutils"
 
 #. leap/vacuum-im/libvacuumutils37/description
-#, fuzzy
 msgid "This package includes shared libraris needed to work Vacuum-IM program."
-msgstr "このパッケージには LLVM 向けの共有ライブラリが含まれています。"
+msgstr "このパッケージには、Vacuum-IMプログラムを実行するために必要な共有librarisが含まれています。"
 
 #. leap/vala/libvala-0_38-0/summary
 #. leap/vala/libvala-0_46-0/summary
 #. leap/vala/libvala-0_48-0/summary
-#, fuzzy
-#| msgid "Programming language for GNOME"
 msgid "Vala programming language runtime"
-msgstr "GNOME 向けプログラミング言語"
+msgstr "Vala プログラミング言語ランタイム"
 
 #. leap/vala/libvala-0_38-0/description
 #. leap/vala/libvala-0_46-0/description
 #. leap/vala/libvala-0_48-0/description
 msgid "Runtime library for the Vala programming language."
-msgstr ""
+msgstr "Vala プログラミング言語用のランタイムライブラリ。"
 
 #. leap/vala/libvala-0_38-devel/summary
 #. leap/vala/libvala-0_46-devel/summary
@@ -507,15 +501,14 @@ msgstr "GNOME 向けプログラミング言語"
 #. leap/vala/libvala-0_38-devel/description
 #. leap/vala/libvala-0_46-devel/description
 #. leap/vala/libvala-0_48-devel/description
-#, fuzzy
 msgid "Development files for the Vala runtime library."
-msgstr "libraw 向け開発用ファイル"
+msgstr "Vala ランタイムライブラリ用の開発ファイル。"
 
 #. leap/vala/libvaladoc-0_38-0/summary
 #. leap/vala/libvaladoc-0_46-0/summary
 #. leap/vala/libvaladoc-0_48-0/summary
 msgid "Valadoc runtime"
-msgstr ""
+msgstr "Valadocランタイム"
 
 #. leap/vala/libvaladoc-0_38-0/description
 #. leap/vala/libvaladoc-0_46-0/description
@@ -527,14 +520,13 @@ msgstr ""
 msgid ""
 "Valadoc is a documentation generator for generating API documentation from "
 "Vala source code."
-msgstr ""
+msgstr "Valadocは、Vala ソースコードからAPIドキュメントを生成するためのドキュメントジェネレータです。"
 
 #. leap/vala/libvaladoc-0_38-devel/summary
 #. leap/vala/libvaladoc-0_46-devel/summary
 #. leap/vala/libvaladoc-0_48-devel/summary
-#, fuzzy
 msgid "Development files for the valadoc runtime"
-msgstr "libraw 向け開発用ファイル"
+msgstr "valadocランタイム用の開発ファイル"
 
 #. leap/vala/libvaladoc-0_38-devel/description
 #. leap/vala/libvaladoc-0_46-devel/description
@@ -545,6 +537,9 @@ msgid ""
 "\n"
 "This package contains the libvaladoc development files."
 msgstr ""
+"Valadocは、Vala ソースコードからAPIドキュメントを生成するためのドキュメントジェネレータです。\n"
+"\n"
+"このパッケージには、libvaladoc開発ファイルが含まれています。"
 
 #. leap/vamp-plugin-sdk/libvamp-hostsdk3/summary
 msgid "Library for Vamp audio analysis plugin hosts"
@@ -561,32 +556,31 @@ msgstr ""
 "論による観測結果) を出力する C/C++ プラグイン向け API です。"
 
 #. leap/vamp-plugin-sdk/libvamp-sdk2/summary
-#, fuzzy
 msgid "Library for Vamp audio analysis plugins"
-msgstr "Vamp オーディオ分析プラグインホスト向けライブラリ"
+msgstr "Vampオーディオ分析プラグイン用ライブラリ"
 
 #. leap/vapoursynth/libvapoursynth-50/summary
 msgid "A video processing framework"
-msgstr ""
+msgstr "ビデオ処理フレームワーク"
 
 #. leap/vapoursynth/libvapoursynth-50/description
 msgid "VapourSynth's core library with a C++ API."
-msgstr ""
+msgstr "C++APIを備えたVapourSynthのコアライブラリ。"
 
 #. leap/vapoursynth/libvapoursynth-script0/summary
 msgid "Library for interfacing Python with VapourSynth"
-msgstr ""
+msgstr "PythonとVapourSynthをインターフェースするライブラリー"
 
 #. leap/vapoursynth/libvapoursynth-script0/description
 msgid ""
 "VSScript (or libvapoursynth-script) is a library for interfacing Python with "
 "VapourSynth."
 msgstr ""
+"VSScript(またはlibvapoursynthスクリプト)は、PythonとVapourSynthをインターフェースするためのライブラリーです。"
 
 #. leap/varnish/libvarnishapi2/summary
-#, fuzzy
 msgid "Shared libraries for Varnish"
-msgstr "MariaDB の共有ライブラリ"
+msgstr "Varnishの共有ライブラリ"
 
 #. leap/varnish/libvarnishapi2/description
 msgid ""
@@ -601,6 +595,13 @@ msgid ""
 "\n"
 "This package holds the shared libraries for varnish."
 msgstr ""
+"VarnishはHTTPアクセラレータです。リバースプロキシと呼ばれることが多いアプリケーションで、HTTPプロトコルを介して要求されたドキュメントを保存"
+"(キャッシュ)します。\n"
+"\n"
+"特定の基準に基づいて、文書を要求する次のクライアントは、キャッシュされた文書か、バックエンドサーバから要求された「新しい」文書のいずれかを与えられます。こ"
+"の目的は、潜在的に多くのユーザに同じドキュメントを提供することによって、バックエンドサーバに送信される要求を最小限に抑えることです。\n"
+"\n"
+"このパッケージには、varnish の共有ライブラリが含まれています。"
 
 #. leap/vcdimager/libvcdinfo0/summary
 #. leap/vcdimager/libvcdinfo0-32bit/summary
@@ -622,53 +623,48 @@ msgstr ""
 
 #. leap/vde2/libvdehist-devel/summary
 msgid "VDE hist header files"
-msgstr ""
+msgstr "VDE histヘッダファイル"
 
 #. leap/vde2/libvdehist-devel/description
-#, fuzzy
 msgid "This package contains VDE hist header files"
-msgstr "このパッケージには kdepim モジュールの中枢のファイルが含まれています。"
+msgstr "このパッケージには、VDE histヘッダーファイルが含まれています。"
 
 #. leap/vde2/libvdehist0/summary
-#, fuzzy
 msgid "VDE history library"
-msgstr "VDE プラグライブラリ"
+msgstr "VDE history ライブラリー"
 
 #. leap/vde2/libvdehist0/description
 msgid ""
 "This package contains VDE history library A library to manage history and "
 "command completion for vde mgmt protocol"
 msgstr ""
+"このパッケージには、VDE history ライブラリが含まれています。vde 管理プロトコルの履歴とコマンド完了を管理するためのライブラリです。"
 
 #. leap/vde2/libvdemgmt-devel/summary
-#, fuzzy
 msgid "VDE management files"
-msgstr "KDE ウインドウマネージャ - 開発用ファイル"
+msgstr "VDE管理ファイル"
 
 #. leap/vde2/libvdemgmt-devel/description
-#, fuzzy
 msgid "This package contains VDE management files"
-msgstr "このパッケージには、 taglib に対する開発用ファイルが含まれています。"
+msgstr "このパッケージにはVDE管理ファイルが含まれています。"
 
 #. leap/vde2/libvdemgmt0/summary
-#, fuzzy
 msgid "VDE management library"
-msgstr "KDE のセッション管理ライブラリ"
+msgstr "VDE管理ライブラリ"
 
 #. leap/vde2/libvdemgmt0/description
 msgid ""
 "This package contains a library to interact with vde_switch management "
 "console using pre-made unattended scripts."
-msgstr ""
+msgstr "このパッケージには、事前に作成された無人スクリプトを使用してvde_switch管理コンソールと対話するためのライブラリが含まれています。"
 
 #. leap/vde2/libvdeplug-devel/summary
 msgid "VDE plug header files"
-msgstr ""
+msgstr "VDE plug ヘッダファイル"
 
 #. leap/vde2/libvdeplug-devel/description
-#, fuzzy
 msgid "This package contains VDE plug header files"
-msgstr "このパッケージには、 libpisock 向けの開発ヘッダが含まれています。"
+msgstr "このパッケージにはVDEプラグヘッダファイルが含まれています。"
 
 #. leap/vde2/libvdeplug3/summary
 msgid "VDE plug library"
@@ -686,47 +682,39 @@ msgstr ""
 
 #. leap/vde2/libvdesnmp-devel/summary
 msgid "VDE SNMP header files"
-msgstr ""
+msgstr "VDE SNMPヘッダファイル"
 
 #. leap/vde2/libvdesnmp-devel/description
-#, fuzzy
 msgid "This package contains VDE SNMP header files."
-msgstr "このパッケージには kdepim モジュールの中枢のファイルが含まれています。"
+msgstr "このパッケージには、VDE SNMPヘッダーファイルが含まれています。"
 
 #. leap/vde2/libvdesnmp0/summary
-#, fuzzy
 msgid "VDE snmp library"
-msgstr "KDE スキャンライブラリ"
+msgstr "VDE snmpライブラリ"
 
 #. leap/vde2/libvdesnmp0/description
-#, fuzzy
 msgid ""
 "This package contains VDE snmp library SNMP library for Virtual Distributed "
 "Ethernet"
-msgstr ""
-"このパッケージには、ストレージ管理を行なうためのライブラリである libstorage "
-"が含まれています。"
+msgstr "このパッケージには、仮想分散イーサネット用のVDE SNMPライブラリが含まれています。"
 
 #. leap/vid_stab/libvidstab-devel/summary
-#, fuzzy
-#| msgid "Development files for libdvbv5"
 msgid "Development files for libvidstab1_1"
-msgstr "libdvbv5 向け開発用ファイル"
+msgstr "libvidstab1_1開発用ファイル"
 
 #. leap/vid_stab/libvidstab-devel/description
-#, fuzzy
 msgid "Development (headers and libraries) files for libvidstab1_1."
-msgstr "Marble 向けの開発用ヘッダとライブラリです。"
+msgstr "libvidstab1_1用の開発(ヘッダとライブラリ)ファイル。"
 
 #. leap/vid_stab/libvidstab1_1/summary
 msgid "A library to deshake video"
-msgstr ""
+msgstr "deshake video へのライブラリ"
 
 #. leap/vid_stab/libvidstab1_1/description
 msgid ""
 "A library to deshake videos, designed to stabilize even strongly jiggled "
 "clips."
-msgstr ""
+msgstr "強く jiggled されたクリップも安定させるように設計された、deshake video のライブラリ。"
 
 #. leap/vigra/libvigraimpex11/summary
 msgid "Computer vision Library"
@@ -748,24 +736,19 @@ msgstr ""
 "コンポーネントを追加することができます。"
 
 #. leap/vips/libvips-devel/summary
-#, fuzzy
 msgid "Development files for the VIPS library"
-msgstr "libraw 向け開発用ファイル"
+msgstr "VIPSライブラリーの開発ファイル"
 
 #. leap/vips/libvips-devel/description
-#, fuzzy
 msgid ""
 "This package contains the development files for developing applications that "
 "want to make use of the VIPS library."
-msgstr ""
-"このパッケージには、 MariaDB をアプリケーションに組み込む開発を行なうのに必要"
-"な、ヘッダファイルとライブラリファイルが含まれています。"
+msgstr "このパッケージには、VIPSライブラリを利用するアプリケーションを開発するための開発ファイルが含まれています。"
 
 #. leap/vips/libvips42/summary
 #. leap/vips/typelib-1_0-Vips-8_5/summary
-#, fuzzy
 msgid "C/C++ library for processing large images"
-msgstr "Facebook サービスにアクセスするためのライブラリ"
+msgstr "大容量画像処理用C/C++ライブラリ"
 
 #. leap/vips/libvips42/description
 #. leap/vips/typelib-1_0-Vips-8_5/description
@@ -775,100 +758,88 @@ msgid ""
 "working with colour, for scientific analysis and for general research and "
 "development."
 msgstr ""
+"VIPSは画像処理システムです。大きなイメージ(使用可能なRAM容量よりも大きいイメージ)、多くのCPU、カラーの処理、科学的分析、一般的な研究開発に適し"
+"ています。"
 
 #. leap/virglrenderer/libvirglrenderer0/summary
 msgid "Virgil3D renderer"
-msgstr ""
+msgstr "Virgil3Dレンダラ"
 
 #. leap/virglrenderer/libvirglrenderer0/description
 msgid ""
 "The virgil3d rendering library is a library used by qemu to implement 3D GPU "
 "support for the virtio GPU."
-msgstr ""
+msgstr "virgil3dレンダリングライブラリは、virtio GPUの3D GPUサポートを実装するためにqemuが使用するライブラリです。"
 
 #. leap/virt-sandbox/libvirt-sandbox-1_0-5/summary
 msgid "Libvirt application sandbox framework libraries"
-msgstr ""
+msgstr "libvirtアプリケーションサンドボックスフレームワークライブラリ"
 
 #. leap/virt-sandbox/libvirt-sandbox-1_0-5/description
-#, fuzzy
 msgid ""
 "This package provides a framework for building application sandboxes using "
 "libvirt."
-msgstr ""
-"このパッケージには、鍵ユーティリティ向けのヘッダとライブラリが含まれていま"
-"す。"
+msgstr "このパッケージは、libvirtを使用してアプリケーションのサンドボックスを構築するためのフレームワークを提供します。"
 
 #. leap/virt-sandbox/libvirt-sandbox-devel/summary
-#, fuzzy
 msgid "Libvirt application sandbox framework development files"
-msgstr "ピクセル操作ライブラリ - 開発用ファイル"
+msgstr "libvirtアプリケーションサンドボックスフレームワーク開発ファイル"
 
 #. leap/virt-sandbox/libvirt-sandbox-devel/description
-#, fuzzy
 msgid ""
 "This package provides development header files and libraries for the libvirt "
 "sandbox"
-msgstr ""
-"このパッケージには、鍵ユーティリティ向けのヘッダとライブラリが含まれていま"
-"す。"
+msgstr "このパッケージは、libvirt サンドボックス用の開発ヘッダーファイルとライブラリを提供します。"
 
 #. leap/vkd3d/libvkd3d-utils1/summary
 msgid "Direct3D 12 to Vulkan translation library utilities"
-msgstr ""
+msgstr "Direct3D 12からVulkanへの変換ライブラリユーティリティ"
 
 #. leap/vkd3d/libvkd3d-utils1/description
 msgid ""
 "This is a Direct3D 12 to Vulkan translation utilities library for use by e."
 "g. Wine."
-msgstr ""
+msgstr "これは、Wineなどが使用するDirect3D 12からVulkanへの変換ユーティリティライブラリです。"
 
 #. leap/vkd3d/libvkd3d1/summary
 msgid "Direct3D 12 to Vulkan translation library"
-msgstr ""
+msgstr "Direct3D 12からVulkanへの変換ライブラリ"
 
 #. leap/vkd3d/libvkd3d1/description
 msgid ""
 "This is a Direct3D 12 to Vulkan translation library for use by e.g. Wine."
-msgstr ""
+msgstr "これは、Wineなどが使用するDirect3D 12 to Vulkan変換ライブラリです。"
 
 #. leap/vlc/libvlc5/summary
 #. leap/vlc/libvlccore9/summary
 msgid "Shared code for the VLC media player program"
-msgstr ""
+msgstr "VLCメディアプレーヤープログラムの共有コード"
 
 #. leap/vlc/libvlc5/description
 #. leap/vlc/libvlccore9/description
-#, fuzzy
 msgid "This subpackage contains libraries that are part of VLC."
-msgstr "このパッケージには IBus 向けのライブラリが含まれています。"
+msgstr "このサブパッケージには、VLCの一部であるライブラリが含まれています。"
 
 #. leap/vmaf/libvmaf1/summary
 msgid "Perceptual video quality assessment algorithm"
-msgstr ""
+msgstr "知覚ビデオ品質評価アルゴリズム"
 
 #. leap/vmaf/libvmaf1/description
 msgid "VMAF is a perceptual video quality assessment algorithm."
-msgstr ""
+msgstr "VMAFは知覚ビデオ品質評価アルゴリズムです。"
 
 #. leap/volk/libvolk2_3/summary
-#, fuzzy
 msgid "VOLK shared library"
-msgstr "libyaml 向け共有ライブラリ"
+msgstr "VOLK 共用ライブラリー"
 
 #. leap/volk/libvolk2_3/description
-#, fuzzy
 msgid "This package provides the VOLK shared library."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージは、ウォルク共用ライブラリーを提供します。"
 
 #. leap/voro++/libvoro++0/summary
 #. leap/voro++/summary
-#, fuzzy
-#| msgid "Versatile Font Library"
 msgid "Voronoi tessellation library"
-msgstr "多用途フォントライブラリ"
+msgstr "ボロノイ分割ライブラリ"
 
 #. leap/voro++/libvoro++0/description
 msgid ""
@@ -882,11 +853,15 @@ msgid ""
 "\n"
 "This package contains the voro++ library."
 msgstr ""
+"Voro++は、ボロノイ面分割の三次元計算を行うためのソフトウェアライブラリです。Voro++ ライブラリーの際立った特徴は、細胞ベースの計算を実行し、各"
+"粒子のボロノイ細胞を個別に計算することです。これは、ボロノイセルの特徴(例えば、体積、重心、面の数)を使用して粒子のシステムを分析することができる、セルベ"
+"ースの統計に依存するアプリケーションに特に適しています。\n"
+"\n"
+"このパッケージには、voro++ ライブラリが含まれています。"
 
 #. leap/votca-csg/libvotca_csg6/summary
-#, fuzzy
 msgid "Libraries for the VOTCA coarse graining engine"
-msgstr "HTML レンダリングエンジン"
+msgstr "VOTCA 粗粒化エンジン用のライブラリ"
 
 #. leap/votca-csg/libvotca_csg6/description
 msgid ""
@@ -896,12 +871,15 @@ msgid ""
 "\n"
 "This package contains libraries for the Coarse Graining Engine of VOTCA."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCAの粗粒度エンジン用のライブラリが含まれています。"
 
 #. leap/votca-tools/libvotca_tools6/summary
 #. leap/votca-tools/summary
-#, fuzzy
 msgid "VOTCA tools library"
-msgstr "CD-ROM アクセスライブラリ"
+msgstr "VOTCAツールライブラリ"
 
 #. leap/votca-tools/libvotca_tools6/description
 msgid ""
@@ -911,10 +889,14 @@ msgid ""
 "\n"
 "This package contains the basic tools library of VOTCA package."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCAパッケージの基本ツールライブラリが含まれています。"
 
 #. leap/vpp/libvpp0/summary
 msgid "VPP libraries"
-msgstr ""
+msgstr "VPPライブラリ"
 
 #. leap/vpp/libvpp0/description
 msgid ""
@@ -923,16 +905,21 @@ msgid ""
 "formatting. svm - vm library vlib - vector processing library vlib-api - "
 "binary API library vnet -  network stack library"
 msgstr ""
+"このパッケージには、ベクトル、ハッシュ、ビットマップ、プール、文字列フォーマットをサポートするvppinfra基礎ライブラリを含むVPP共有ライブラリが含"
+"まれています。svm - vm ライブラリ vlib - ベクトル処理ライブラリ vlib - api - バイナリAPIライブラリ vnet - "
+"ネットワークスタックライブラリ"
 
 #. leap/vsqlite++/libvsqlitepp3/summary
 msgid "Well designed C++ sqlite 3.x wrapper library"
-msgstr ""
+msgstr "適切に設計されたC++sqlite 3.xラッパーライブラリ"
 
 #. leap/vsqlite++/libvsqlitepp3/description
 msgid ""
 "VSQLite++ is a C++ wrapper for sqlite3 using the C++ standard library and "
 "boost. VSQLite++ is designed to be easy to use and focuses on simplicity."
 msgstr ""
+"VSQLite++は、C++標準ライブラリとboostを使用するsqlite3のC++ラッパーです。VSQLite++は使いやすいように設計され、シンプル"
+"さに重点が置かれています。"
 
 #. leap/vte/libvte-2_91-0/summary
 #. leap/vte2/libvte9/summary
@@ -953,7 +940,7 @@ msgstr ""
 #. leap/vtk-openmpi2/libvtk1-openmpi2/summary
 #. leap/vtk-openmpi3/libvtk1-openmpi3/summary
 msgid "The Visualization Toolkit - A high level 3D visualization library"
-msgstr ""
+msgstr "Visualization Toolkit - 高度な3Dビジュアライゼーションライブラリ"
 
 #. leap/vtk/libvtk1/description
 #. leap/vtk-openmpi2/libvtk1-openmpi2/description
@@ -966,11 +953,15 @@ msgid ""
 "\n"
 "This package provides the shared libraries for VTK."
 msgstr ""
+"VTKは画像処理,3Dグラフィックス,ボリュームレンダリング,視覚化のためのソフトウェアシステムです。VTKには、多くの高度なアルゴリズム(サーフェス再構"
+"築、暗黙的モデリング、デシメーションなど)とレンダリング技術(ハードウェア加速ボリュームレンダリング、LOD制御など)が含まれます。\n"
+"\n"
+"このパッケージは、VTK用の共有ライブラリを提供します。"
 
 #. leap/vulkan-loader/libvulkan1/summary
 #. leap/vulkan-loader/libvulkan1-32bit/summary
 msgid "The Vulkan 3D graphics and compute API"
-msgstr ""
+msgstr "Vulkan 3Dグラフィックスと計算API"
 
 #. leap/vulkan-loader/libvulkan1/description
 #. leap/vulkan-loader/libvulkan1-32bit/description
@@ -979,18 +970,20 @@ msgid ""
 "modern GPUs with low overhead and targeting realtime graphics applications "
 "such as games and interactive media."
 msgstr ""
+"Vulkanは3DグラフィックスおよびコンピューティングAPIであり、オーバーヘッドの低い最新のGPUへのクロスプラットフォームアクセスを提供し、ゲームや"
+"インタラクティブメディアなどのリアルタイムグラフィックスアプリケーションをターゲットにしています。"
 
 #. leap/vala-panel-appmenu/mate-applet-appmenu/summary
 msgid "AppMenu (Global Menu) plugin for mate-panel"
-msgstr ""
+msgstr "mate-panel 用のAppMenu(グローバルメニュー)プラグイン"
 
 #. leap/vala-panel-appmenu/mate-applet-appmenu/description
 msgid "This is Global Menu plugin for using with MATE Panel."
-msgstr ""
+msgstr "これは、MATE Panel で使用するグローバルメニュープラグインです。"
 
 #. leap/vertex-gtk-theme/metatheme-vertex-common/summary
 msgid "Vertex Common Theme Files"
-msgstr ""
+msgstr "Vertex 共通テーマファイル"
 
 #. leap/vertex-gtk-theme/metatheme-vertex-common/description
 msgid ""
@@ -1000,26 +993,24 @@ msgid ""
 "\n"
 "This package contains common files and themes for Marco, Xfwm4, and Cinnamon."
 msgstr ""
+"Vertex はモダンなテーマで、3つのバリエーションから選択できます。既定のバリエーションは、暗いヘッダバー、明るいバリエーション、および暗いバリエーシ"
+"ョンです。MATE、Xfce、およびCinnamonをサポートしています。\n"
+"\n"
+"このパッケージには、Marco、Xfwm4、およびCinnamonの共通ファイルと共通テーマが含まれています。"
 
 #. leap/vips/python-vips/summary
-#, fuzzy
 msgid "Python bindings for VIPS image processing library"
-msgstr "Talloc ライブラリ向け Python バインディング"
+msgstr "VIPSイメージ処理ライブラリ用のPythonバインディング"
 
 #. leap/vips/python-vips/description
-#, fuzzy
 msgid "This package contains the Python bindings for the VIPS library."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、VIPSライブラリのPythonバインディングが含まれています。"
 
 #. leap/vte2/python-vte/summary
-#, fuzzy
 msgid "Python bindings for the VTE terminal emulator library"
-msgstr "Talloc ライブラリ向け Python バインディング"
+msgstr "VTEターミナルエミュレータライブラリ用のPythonバインディング"
 
 #. leap/vte2/python-vte/description
-#, fuzzy
 msgid ""
 "VTE is a terminal emulator library that provides a terminal widget for use "
 "with GTK+ as well as handling of child process and terminal emulation "
@@ -1027,44 +1018,41 @@ msgid ""
 "\n"
 "This package provides the python bindings for VTE."
 msgstr ""
-"VTE は GTK+ 2.0 向けの端末ウイジェットを提供する端末エミュレータライブラリ"
-"で、 子プロセスの処理や端末エミュレーション設定などの機能を備えています。 こ"
-"のパッケージには追加のドキュメンテーションが含まれています。\n"
+"VTEはターミナルエミュレータライブラリであり、GTK+で使用するためのターミナルウィジェットと、子プロセスおよびターミナルエミュレーション設定の処理を提"
+"供します。\n"
 "\n"
-"このパッケージには、 VTE に対する GObject イントロスペクションバインディング"
-"が含まれています。"
+"このパッケージは、VTEのPythonバインディングを提供します。"
 
 #. leap/virt-bootstrap/python2-virt-bootstrap/summary
 #. leap/virt-bootstrap/python3-virt-bootstrap/summary
 msgid "System container rootfs creation tool"
-msgstr ""
+msgstr "システムコンテナrootfs作成ツール"
 
 #. leap/virt-bootstrap/python2-virt-bootstrap/description
 #. leap/virt-bootstrap/python3-virt-bootstrap/description
 msgid ""
 "Provides a way to create the root file system to use for libvirt containers."
-msgstr ""
+msgstr "libvirtコンテナーに使用するルート・ファイルシステムを作成する方法を提供します。"
 
 #. leap/vulkan-doc/python3-spec_tools/summary
 msgid "Build tools for the Vulkan layer validation ICD"
-msgstr ""
+msgstr "Vulkan レイヤ検証ICD用の構築ツール"
 
 #. leap/vulkan-doc/python3-spec_tools/description
 msgid "Build scripts for use by the Vulkan layer validation ICD build stage."
-msgstr ""
+msgstr "Vulkan reiya 検証ICD構築段階で使用するための構築スクリプト。"
 
 #. leap/vapoursynth/python3-vapoursynth/summary
 msgid "Python interface for VapourSynth"
-msgstr ""
+msgstr "VapourSynth用Pythonインターフェイス"
 
 #. leap/vapoursynth/python3-vapoursynth/description
 msgid "Python interface for VapourSynth/VSSCript."
-msgstr ""
+msgstr "VapourSynth/VSSCript用のPythonインターフェース。"
 
 #. leap/virtualbox/python3-virtualbox/summary
-#, fuzzy
 msgid "Python bindings for virtualbox"
-msgstr "libproxy 向け Python バインディング"
+msgstr "virtualbox用のPythonバインディング"
 
 #. leap/virtualbox/python3-virtualbox/description
 msgid "Python XPCOM bindings to virtualbox. Used e.g. by vboxgtk package."
@@ -1075,9 +1063,8 @@ msgstr ""
 #. leap/vtk/python3-vtk/summary
 #. leap/vtk-openmpi2/python3-vtk-openmpi2/summary
 #. leap/vtk-openmpi3/python3-vtk-openmpi3/summary
-#, fuzzy
 msgid "Python bindings for VTK"
-msgstr "KDE 4 向け Python バインディング"
+msgstr "VTK用のPythonバインディング"
 
 #. leap/vtk/python3-vtk/description
 #. leap/vtk-openmpi2/python3-vtk-openmpi2/description
@@ -1090,32 +1077,34 @@ msgid ""
 "\n"
 "This package provides python 3.x bindings for VTK."
 msgstr ""
+"VTKは画像処理,3Dグラフィックス,ボリュームレンダリング,視覚化のためのソフトウェアシステムです。VTKには、多くの高度なアルゴリズム(サーフェス再構"
+"築、暗黙的モデリング、デシメーションなど)とレンダリング技術(ハードウェア加速ボリュームレンダリング、LOD制御など)が含まれます。\n"
+"\n"
+"このパッケージは、VTK用のpython 3.xバインディングを提供します。"
 
 #. leap/v4l-utils/qv4l2/summary
 msgid "Video4linux test control and streaming test application"
-msgstr ""
+msgstr "Video4linux テスト制御およびストリーミングテストアプリケーション"
 
 #. leap/v4l-utils/qv4l2/description
 msgid "qv4l2 is a test control and streaming test application for video4linux."
-msgstr ""
+msgstr "qv4l2は、video4linux用のテストコントロールおよびストリーミングテストアプリケーションです。"
 
 #. leap/virt-sandbox/typelib-1_0-LibvirtSandbox-1_0/summary
-#, fuzzy
 msgid "GLib and GObject mapping of libvirt-sandbox - gi-bindings"
-msgstr "libvirt の GLib および GObject のマッピング - gi-bindings"
+msgstr "libvirt-sandbox-gi-bindingsのgLibおよびGObjectマッピング"
 
 #. leap/virt-sandbox/typelib-1_0-LibvirtSandbox-1_0/description
-#, fuzzy
 msgid ""
 "This package provides Gnome-introspection bindings for building applications "
 "within a sandbox using libvirt."
 msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+"このパッケージは、libvirtを使用してサンドボックス内でアプリケーションを構築するためのGnome-"
+"introspectionバインディングを提供します。"
 
 #. leap/vte/typelib-1_0-Vte-2.91/summary
 msgid "Introspection bindings for the VTE terminal emulator library"
-msgstr ""
+msgstr "VTEターミナル・エミュレーター・ライブラリーのイントロスペクション・バインディング"
 
 #. leap/vte/typelib-1_0-Vte-2.91/description
 msgid ""
@@ -1134,13 +1123,14 @@ msgstr ""
 
 #. leap/v2ray-core/summary
 msgid "Network tools for building a computer network"
-msgstr ""
+msgstr "コンピュータネットワークを構築するためのネットワークツール"
 
 #. leap/v2ray-core/description
 msgid ""
 "Project V is a set of network tools for building a computer network. It "
 "secures network connections and protects privacy."
 msgstr ""
+"Project Vは、コンピュータネットワークを構築するためのネットワークツールのセットです。これは、ネットワーク接続を保護し、プライバシーを保護します。"
 
 #. leap/v4l-utils/summary
 msgid "Utilities for video4linux"
@@ -1152,26 +1142,25 @@ msgstr "v4l-utils は video4linux (V4L) のユーティリティ集です。"
 
 #. leap/v4l-utils/v4l-utils-devel-tools/summary
 msgid "Utilities for v4l2 / DVB driver development and debugging"
-msgstr ""
+msgstr "v4l2/DVBドライバ開発およびデバッグ用のユーティリティ"
 
 #. leap/v4l-utils/v4l-utils-devel-tools/description
 msgid "Utilities for v4l2 / DVB driver authors for development and debugging."
-msgstr ""
+msgstr "v4l2/DVBドライバ作成者用の開発およびデバッグ用ユーティリティ。"
 
 #. leap/v4l2loopback/v4l2loopback-autoload/summary
-#, fuzzy
 msgid "Autoload driver for V4L2 loopback devices"
-msgstr "PC カード向けユーティリティ"
+msgstr "V4L2ループバックデバイス用の自動ロードドライバ"
 
 #. leap/v4l2loopback/v4l2loopback-autoload/description
 msgid "Configuration files to autoload the module during system startup."
-msgstr ""
+msgstr "システムの起動時にモジュールを自動ロードする設定ファイル。"
 
 #. leap/v4l2loopback/v4l2loopback-kmp-64kb/summary
 #. leap/v4l2loopback/v4l2loopback-kmp-default/summary
 #. leap/v4l2loopback/v4l2loopback-kmp-preempt/summary
 msgid "A kernel module to create V4L2 loopback devices"
-msgstr ""
+msgstr "V4L2ループバックデバイスを作成するカーネルモジュール"
 
 #. leap/v4l2loopback/v4l2loopback-kmp-64kb/description
 #. leap/v4l2loopback/v4l2loopback-kmp-default/description
@@ -1182,27 +1171,23 @@ msgid ""
 "but the video will not be read from e.g. a capture card but instead it is "
 "generated by another application."
 msgstr ""
+"このモジュールでは、「仮想ビデオデバイス」を作成できます。通常の(v4l2)アプリケーションは、これらのデバイスを通常のビデオデバイスであるかのように読み"
+"取りますが、ビデオはキャプチャカードなどからは読み取られず、別のアプリケーションによって生成されます。"
 
 #. leap/v4l2loopback/v4l2loopback-utils/summary
-#, fuzzy
 msgid "Utils for V4L2 loopback devices"
-msgstr "PC カード向けユーティリティ"
+msgstr "V4L2ループバックデバイス用のユーティリティ"
 
 #. leap/v4l2loopback/v4l2loopback-utils/description
 msgid ""
 "v4l2loopback-ctl for controlling FPS, placeholder image and image format."
-msgstr ""
+msgstr "v4l2loopback-ctl:FPS、プレースホルダイメージ、およびイメージフォーマットを制御します。"
 
 #. leap/vacation/summary
 msgid "A way to automatically reply to incoming e-mail"
 msgstr "到着する電子メールに対して自動的に応答する方法"
 
 #. leap/vacation/description
-#, fuzzy
-#| msgid ""
-#| "This program answers your e-mail when you are lying on the beach.\n"
-#| "\n"
-#| "Documentation: man vacation"
 msgid ""
 "This program answers your e-mail when you are lying on the beach.\n"
 "\n"
@@ -1214,14 +1199,19 @@ msgid ""
 "--------     Sean F Rima <sean.rima@tcob1.uklinux.net>     Eric P. "
 "Allman     Harald Milz <hm@seneca.muc.de>"
 msgstr ""
-"このプログラムは、あなたが休暇を取っている際に自動的にメールに応答する機能を"
-"提供します。\n"
+"このプログラムは、ビーチで横になっているときに電子メールに返信します。\n"
 "\n"
-"ドキュメントは以下をお読みください: man vacation"
+"ドキュメント: man vacation\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Sean F Rima <sean.rima@tcob1.uklinux.net>     Eric P. "
+"Allman     Harald Milz <hm@seneca.muc.de>"
 
 #. leap/vacuum-im/summary
 msgid "Jabber client written with Qt"
-msgstr ""
+msgstr "Qtで書かれたJabberクライアント"
 
 #. leap/vacuum-im/description
 msgid ""
@@ -1229,18 +1219,16 @@ msgid ""
 "available via plugins. This enforces modularity and ensures well defined "
 "component interaction via interfaces."
 msgstr ""
+"コア・プログラムは単なるプラグイン・ローダーであり、すべての機能はプラグインを介して利用可能です。これによりモジュール性が強化され、インターフェースを介し"
+"たコンポーネントの相互作用が明確に定義されます。"
 
 #. leap/vacuum-im/vacuum-im-devel/summary
-#, fuzzy
 msgid "Development files for Vacuum-IM"
-msgstr "GeoIP 向け開発ファイル"
+msgstr "Vacuum-IMの開発ファイル"
 
 #. leap/vacuum-im/vacuum-im-devel/description
-#, fuzzy
 msgid "This package includes files needed to develop Vacuum-IM modules."
-msgstr ""
-"このパッケージには LADSPA プラグインを開発するのに必要なヘッダファイルを含ん"
-"でいます。"
+msgstr "このパッケージには、Vacuum-IMモジュールの開発に必要なファイルが含まれています。"
 
 #. leap/vacuum-im/vacuum-im-lang/summary
 msgid "Translations for package vacuum-im"
@@ -1252,49 +1240,49 @@ msgstr "vacuum-im パッケージ向けの翻訳データです。"
 
 #. leap/vacuum-im-plugins-dbusnotifications/summary
 msgid "Vacuum-IM notification messages through system DBus"
-msgstr ""
+msgstr "システムDBusを介したVacuum-IM通知メッセージ"
 
 #. leap/vacuum-im-plugins-dbusnotifications/description
 msgid ""
 "The plug-in uses org.freedesktop.Notifications for show of notification "
 "messages"
-msgstr ""
+msgstr "プラグインはorg.freedesktop.Notificationsを使用して、通知メッセージを表示します。"
 
 #. leap/vacuum-im-plugins-gmailnotify/summary
 msgid "GMailNotify plugin for Vacuum-IM"
-msgstr ""
+msgstr "Vacuum-IM用GMailNotifyプラグイン"
 
 #. leap/vacuum-im-plugins-gmailnotify/description
 msgid "Vacuum-IM plugin for gmail notifications."
-msgstr ""
+msgstr "Gmail通知用のVacuum-IMプラグイン。"
 
 #. leap/vacuum-im/vacuum-im-plugins-spellchecker/summary
 msgid "Vacuum-IM spellchecker plugin"
-msgstr ""
+msgstr "Vacuum-IM spellcheckerプラグイン"
 
 #. leap/vacuum-im/vacuum-im-plugins-spellchecker/description
 msgid "Highlights words that may not be spelled correctly."
-msgstr ""
+msgstr "スペルが正しくない可能性のある単語をハイライトします。"
 
 #. leap/vacuum-im/vacuum-im-plugins-statistics/summary
 msgid "Vacuum-IM application statistics collection plugin"
-msgstr ""
+msgstr "Vacuum-IMアプリケーション統計収集プラグイン"
 
 #. leap/vacuum-im/vacuum-im-plugins-statistics/description
 msgid "This plugin needed to collect application statistics."
-msgstr ""
+msgstr "このプラグインは、アプリケーション統計を収集するために必要でした。"
 
 #. leap/vacuum-im-plugins-usermood/summary
 msgid "Vacuum-IM user mood plugin"
-msgstr ""
+msgstr "Vacuum-IM user mood プラグイン"
 
 #. leap/vacuum-im-plugins-usermood/description
 msgid "Vacuum-IM plugin to send and receive information about user moods."
-msgstr ""
+msgstr "user mood に関する情報を送受信するためのVacuum-IMプラグイン。"
 
 #. leap/vacuum-im-plugins-usertune/summary
 msgid "Vacuum-IM User Tune Handler plugin"
-msgstr ""
+msgstr "Vacuum-IM User Tune Handlerプラグイン"
 
 #. leap/vacuum-im-plugins-usertune/description
 msgid ""
@@ -1305,17 +1293,19 @@ msgid ""
 "personal eventing protocol, a profile of XMPP publish-subscribe specified in "
 "XEP-0163."
 msgstr ""
+"このプラグインはXEP-0118をサポートします。ユーザが聴いている音楽に関する情報(タイトル、トラック番号、コレクション、演奏者、作曲者、長さ、ユーザ評"
+"価など)を通信するためのペイロードフォーマットを定義します。ペイロード形式は通常、XEP-"
+"0163で指定されたXMPPパブリッシュ/サブスクライブのプロファイルであるパーソナルイベントプロトコルを使用して転送されます。"
 
 #. leap/vala/description
 msgid ""
 "Vala is an object-oriented programming language with a self-hosting compiler "
 "that generates C code and uses the GObject system."
-msgstr ""
+msgstr "Vala は、Cコードを生成し、GObjectシステムを使用する自己ホストコンパイラを備えたオブジェクト指向プログラミング言語です。"
 
 #. leap/vala-panel/summary
-#, fuzzy
 msgid "A Gtk3 desktop panel based on Vala"
-msgstr "fbpanel をベースにした軽量 X11 デスクトップパネル"
+msgstr "Vala をベースにしたGtk3デスクトップパネル"
 
 #. leap/vala-panel/description
 msgid ""
@@ -1327,18 +1317,22 @@ msgid ""
 "former LXPanel plugins are separate binaries now    and live in another "
 "packages (volume applet for example)."
 msgstr ""
+"Vala Panel は、Vala とGtk3で書かれたデスクトップパネルです。最初はLXPanelのフォークでしたが、0.2.0は Vala で完全に書"
+"き直されています。これはLXPanelと同じ機能を提供しますが、メモリ使用量が少し大きくなります。*X11依存性はパネルコアから取り除かれています(しかし"
+"、現在はWaylandやMirのような他のディスプレイサーバではテストされていません)。*以前のLXPanelプラグインのいくつかは、現在は別個のバイナリ"
+"であり、別のパッケージ(例えばボリュームアプレット)で動作しています。"
 
 #. leap/vala-panel-appmenu/vala-panel-appmenu-lang/summary
-#, fuzzy
 msgid "Languages for package vala-panel-appmenu"
-msgstr "lxpanel 向け言語パッケージ"
+msgstr "パッケージ vala-panel-appmenu の言語-appmenu"
 
 #. leap/vala-panel-appmenu/vala-panel-appmenu-lang/description
-#, fuzzy
 msgid ""
 "Provides translations to the packages xfce4-panel-plugin-appmenu, mate-"
 "applet-appmenu and vala-panel-plugin-appmenu."
-msgstr "xfce4-panel-plugin-sensors パッケージに対する翻訳を提供します。"
+msgstr ""
+"xfce4-panel-plugin-appmenu、mate-applet-appmenu、vala-panel-plugin-appmenu "
+"の各パッケージに翻訳を提供します。"
 
 #. leap/vala-panel/vala-panel-devel/summary
 msgid "Development files for vala-panel"
@@ -1350,81 +1344,73 @@ msgid ""
 "\n"
 "This is a development package for vala-panel."
 msgstr ""
+"Vala Panel は、Vala とGtk3で書かれたデスクトップパネルです。\n"
+"\n"
+"これはvala-panel 用の開発パッケージです。"
 
 #. leap/vala-panel-extras/vala-panel-extras-battery/summary
 msgid "Vala Panel Extras -- Battery plugin"
-msgstr ""
+msgstr "Vala Panel 拡張 -- バッテリプラグイン"
 
 #. leap/vala-panel-extras/vala-panel-extras-battery/description
-#, fuzzy
 msgid ""
 "This package contains a UPower-based battery plugin for StatusNotifierItem."
-msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+msgstr "このパッケージには、StatusNotifierItem用のUPowerベースのバッテリプラグインが含まれています。"
 
 #. leap/vala-panel-extras/vala-panel-extras-gtop/summary
 msgid "Vala Panel Extras -- Network speed plugin"
-msgstr ""
+msgstr "Vala Panel 拡張 -- ネットワーク速度プラグイン"
 
 #. leap/vala-panel-extras/vala-panel-extras-gtop/description
-#, fuzzy
 msgid ""
 "This package contains a libgtop-based network speed plugin for "
 "StatusNotifierItem."
-msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+msgstr "このパッケージには、StatusNotifierItem用のlibgtopベースのネットワーク速度プラグインが含まれています。"
 
 #. leap/vala-panel-extras/vala-panel-extras-lang/summary
-#, fuzzy
 msgid "Languages for vala-panel extras"
-msgstr "anjuta-extras 向け言語パッケージ"
+msgstr "Vala Panel 拡張用の言語"
 
 #. leap/vala-panel-extras/vala-panel-extras-lang/description
-#, fuzzy
 msgid "Provides translations to the vala-panel extras."
-msgstr "vte パッケージに対する翻訳を提供します。"
+msgstr "Vala Panel 拡張に翻訳を提供します。"
 
 #. leap/vala-panel-extras/vala-panel-extras-volume/summary
 msgid "Vala Panel Extras -- Volume plugin"
-msgstr ""
+msgstr "Vala Panel 拡張 -- ボリュームプラグイン"
 
 #. leap/vala-panel-extras/vala-panel-extras-volume/description
-#, fuzzy
 msgid ""
 "This package contains an ALSA-based volume plugin using StatusNotifierItem."
-msgstr ""
-"このパッケージには、すべての QSystemTrayIcon を StatusNotifierItems (アプリ"
-"ケーションインジケータ) に置き換える Qt プラグインが含まれています。"
+msgstr "このパッケージには、StatusNotifierItemを使用するALSAベースのボリューム・プラグインが含まれています。"
 
 #. leap/vala-panel-extras/vala-panel-extras-weather/summary
 msgid "Vala Panel Extras -- Weather plugin"
-msgstr ""
+msgstr "Vala Panel 拡張 -- 天候プラグイン"
 
 #. leap/vala-panel-extras/vala-panel-extras-weather/description
-#, fuzzy
 msgid ""
 "This package contains a gweather-based weather plugin for StatusNotifierItem."
-msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+msgstr "このパッケージには、StatusNotifierItem用のgweatherベースの気象プラグインが含まれています。"
 
 #. leap/vala-panel-extras/vala-panel-extras-xkb/summary
 msgid "Vala Panel Extras -- Keyboard layout plugin"
-msgstr ""
+msgstr "Vala Panel 拡張 -- キーボードレイアウトプラグイン"
 
 #. leap/vala-panel-extras/vala-panel-extras-xkb/description
-#, fuzzy
 msgid ""
 "This package contains a XCB-based keyboard layout plugin for "
 "StatusNotifierItem."
-msgstr "このパッケージには libao 向けのメイン出力プラグインが含まれています。"
+msgstr "このパッケージには、StatusNotifierItem用のXCBベースのキーボードレイアウトプラグインが含まれています。"
 
 #. leap/vala-panel-extras/vala-panel-extras-xkb-flags/summary
 msgid "Flags for vala-panel-extras-xkb"
-msgstr ""
+msgstr "vala Panel-extras-xkbのフラグ"
 
 #. leap/vala-panel-extras/vala-panel-extras-xkb-flags/description
-#, fuzzy
 msgid ""
 "This package contains language flags for a vala-panel-extras-xkb package."
-msgstr ""
-"このパッケージには webyast-base 向けの CSS, アイコン, 画像が含まれています。"
+msgstr "このパッケージには、vala-panel-extras-xkbパッケージ用の言語フラグが含まれています。"
 
 #. leap/vala-panel/vala-panel-lang/summary
 msgid "Translations for package vala-panel"
@@ -1436,47 +1422,45 @@ msgstr "vala-panel パッケージ向けの翻訳データです。"
 
 #. leap/vala-panel-appmenu/vala-panel-plugin-appmenu/summary
 msgid "AppMenu (Global Menu) plugin for vala-panel"
-msgstr ""
+msgstr "Vala Panel 用 AppMenu(グローバルメニュー)プラグイン"
 
 #. leap/vala-panel-appmenu/vala-panel-plugin-appmenu/description
 msgid "This is Global Menu plugin for using with Vala Panel."
-msgstr ""
+msgstr "これは Vala Panel で使用するグローバルメニュープラグインです。"
 
 #. leap/vala-panel/vala-panel-plugins-base/summary
 msgid "Plugins for vala-panel -- non-X11 plugins"
-msgstr ""
+msgstr "Vala Panel 用プラグイン -- X11 以外のプラグイン"
 
 #. leap/vala-panel/vala-panel-plugins-base/description
-#, fuzzy
 msgid ""
 "Vala Panel is a desktop panel written in Vala and Gtk3.\n"
 "\n"
 "This package contains main plugins for vala-panel: clock, launchbar, "
 "applications menu and so on."
 msgstr ""
-"このパッケージにはアプリケーションマニュアルのウクライナ語翻訳が含まれていま"
-"す。"
+"Vala Panel は、Vala とGtk3で書かれたデスクトップパネルです。\n"
+"\n"
+"このパッケージには、Vala Panel 用の主要なプラグイン(clock、launchbar、applications menuなど)が含まれています。"
 
 #. leap/vala-panel/vala-panel-plugins-wnck/summary
-#, fuzzy
 msgid "Plugins for vala-panel -- X11 plugins"
-msgstr "xfce4-panel-plugin-sensors 向け言語パッケージ"
+msgstr "Vala Panel 用プラグイン -- X11プラグイン"
 
 #. leap/vala-panel/vala-panel-plugins-wnck/description
-#, fuzzy
 msgid ""
 "Vala Panel is a desktop panel written in Vala and Gtk3.\n"
 "\n"
 "This package contains X11 plugins for vala-panel: tasklist, system tray, and "
 "others."
 msgstr ""
-"このパッケージには webyast-base 向けの CSS, アイコン, 画像が含まれています。"
+"Vala Panel は、Vala とGtk3で書かれたデスクトップパネルです。\n"
+"\n"
+"このパッケージには、Vala Panel 用の X11プラグイン(タスクリスト、システムトレイなど)が含まれています。"
 
 #. leap/vala-panel/vala-panel-runner/summary
-#, fuzzy
-#| msgid "Development files for vala-panel"
 msgid "Commands runner for vala-panel"
-msgstr "vala-panel 向け開発用ファイル"
+msgstr "Vala Panel 用コマンドランナー"
 
 #. leap/vala-panel/vala-panel-runner/description
 msgid ""
@@ -1484,23 +1468,25 @@ msgid ""
 "\n"
 "This is a simple commands runner for vala-panel."
 msgstr ""
+"Vala Panel は、Vala とGtk3で書かれたデスクトップパネルです。\n"
+"\n"
+"これは、Vala Panel の単純なコマンドランナーです。"
 
 #. leap/vala/valadoc/summary
 msgid "Generator for API documentation from Vala source"
-msgstr ""
+msgstr "Vala source からの API ドキュメント生成器"
 
 #. leap/vala/valadoc-doclet-devhelp/summary
-#, fuzzy
 msgid "Devhelp plugin for the valadoc generator"
-msgstr "libraw 向け開発用ファイル"
+msgstr "valadocジェネレータ用のDevhelpプラグイン"
 
 #. leap/vala/valadoc-doclet-gtkdoc/summary
 msgid "Gtkdoc plugin for valadoc"
-msgstr ""
+msgstr "valadoc用Gtkdocプラグイン"
 
 #. leap/vala/valadoc-doclet-html/summary
 msgid "HTML plugin for valadoc"
-msgstr ""
+msgstr "valadoc用HTMLプラグイン"
 
 #. leap/valgrind/summary
 #. leap/valgrind/valgrind-32bit/summary
@@ -1552,10 +1538,8 @@ msgstr ""
 
 #. leap/valgrind-client-headers-source/valgrind-client-headers/summary
 #. leap/valgrind/valgrind-devel/summary
-#, fuzzy
-#| msgid "Video Disk Recorder"
 msgid "Header files for for Valgrind"
-msgstr "ビデオディスクレコーダ"
+msgstr "Valgrind 用のヘッダーファイル"
 
 #. leap/valgrind-client-headers-source/valgrind-client-headers/description
 msgid ""
@@ -1563,42 +1547,40 @@ msgid ""
 "inclusion into regular programs. The program can detect if it is running "
 "under Valgrind and interact with the Valgrind core and plugins."
 msgstr ""
+"このパッケージには、通常のプログラムに組み込むためのBSDスタイルのライセンスされたValgrindヘッダファイルが含まれています。プログラムはValgr"
+"indの下で実行されているかどうかを検出し、Valgrindコアとプラグインと対話することができます。"
 
 #. leap/valgrind/valgrind-devel/description
-#, fuzzy
 msgid "This package contains the Valgrind header files."
-msgstr "このパッケージには、 libpisock 向けの開発ヘッダが含まれています。"
+msgstr "このパッケージには、Valgrindヘッダファイルが含まれています。"
 
 #. leap/vamp-plugin-sdk/summary
 msgid "An API for audio analysis and feature extraction plugins"
-msgstr ""
+msgstr "オーディオ分析およびフィーチャ抽出プラグイン用のAPI"
 
 #. leap/vamp-plugin-sdk/vamp-plugin-sdk-devel/summary
 msgid "Development files for vamp-plugin-sdk"
 msgstr "vamp-plugin-sdk 向け開発用ファイル"
 
 #. leap/vamp-plugin-sdk/vamp-plugin-sdk-devel/description
-#, fuzzy
 msgid ""
 "The vamp-plugin-sdk-devel package contains documentation examples and header "
 "files for developing applications that use vamp-plugin-sdk."
 msgstr ""
-"libv4l-devel パッケージには、 libv4l を使用するアプリケーションをコンパイルお"
-"よび開発するのに必要な、ヘッダファイルとライブラリが含まれています。"
+"vamp-plugin-sdk-develパッケージには、vamp-plugin-"
+"sdkを使用するアプリケーションを開発するためのドキュメント例とヘッダファイルが含まれています。"
 
 #. leap/vapoursynth/vapoursynth-devel/summary
-#, fuzzy
-#| msgid "Development files for Varnish"
 msgid "Development files for VapourSynth"
-msgstr "Varnish 向け開発用ファイル"
+msgstr "VapourSynth向け開発ファイル"
 
 #. leap/vapoursynth/vapoursynth-devel/description
 msgid "Header files and pkg-config headers for VapourSynth."
-msgstr ""
+msgstr "VapourSynth用のヘッダーファイルとpkg-configヘッダー。"
 
 #. leap/vapoursynth/vapoursynth-plugin-eedi3/summary
 msgid "EEDI3 plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth向けEEDI3プラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-eedi3/description
 msgid ""
@@ -1612,42 +1594,47 @@ msgid ""
 "long), and the change in interpolation direction from pixel to pixel (favor "
 "small changes)."
 msgstr ""
+"eedi3は非常に低速なエッジ指向の補間フィルタです。\n"
+"\n"
+"eedi3は、コスト汎関数を最小化することによって、2つの線の間で最良の非減少(非交差)ワープを見つけることによって機能します。コストは、近傍の類似性(類"
+"似しているように見える接続領域に有利)、補間された値によって生成される垂直差(小さな差に有利)、補間方向(短い接続対長い接続に有利)、およびピクセルからピ"
+"クセルへの補間方向の変化(小さな変化に有利)に基づいています。"
 
 #. leap/vapoursynth/vapoursynth-plugin-imwri/summary
 msgid "Image writer plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth向け画像書き込みプラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-imwri/description
 msgid "Image writer plugin for VapourSynth."
-msgstr ""
+msgstr "VapourSynth向け画像書き込みプラグイン。"
 
 #. leap/vapoursynth/vapoursynth-plugin-miscfilters/summary
 msgid "Miscelaneous plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth用プラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-miscfilters/description
 msgid "Set of miscelaneous filters for VapourSynth."
-msgstr ""
+msgstr "VapourSynth用各種フィルターのセットです。"
 
 #. leap/vapoursynth/vapoursynth-plugin-morpho/summary
 msgid "Morpho plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth向け Morpho プラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-morpho/description
 msgid "Morpho plugin for VapourSynth."
-msgstr ""
+msgstr "VapourSynth向け Morpho プラグイン。"
 
 #. leap/vapoursynth/vapoursynth-plugin-ocr/summary
 msgid "OCR plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth向けOCRプラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-ocr/description
 msgid "Tesseract OCR framwerork support for VapourSynth."
-msgstr ""
+msgstr "VapourSynthに対する Tesseract OCR フレームワーク支援。"
 
 #. leap/vapoursynth/vapoursynth-plugin-removegrain/summary
 msgid "RGVS plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth用RGVSプラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-removegrain/description
 msgid ""
@@ -1657,51 +1644,49 @@ msgid ""
 "If there are fewer modes than planes, the last mode specified will be used "
 "for the remaining planes."
 msgstr ""
+"RemoveGrainは空間的ノイズ除去フィルタです。\n"
+"\n"
+"モード0〜24が実装されています。平面ごとに異なるモードを指定できます。平面よりもモードが少ない場合は、最後に指定したモードが残りの平面に使用されます。"
 
 #. leap/vapoursynth/vapoursynth-plugin-subtext/summary
-#, fuzzy
 msgid "Subtitles plugin for VapourSynth"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "VapourSynth用字幕プラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-subtext/description
 msgid "Plugin with subtitles support for VapourSynth."
-msgstr ""
+msgstr "VapourSynthの字幕をサポートするプラグイン。"
 
 #. leap/vapoursynth/vapoursynth-plugin-vinverse/summary
 msgid "Vinverse plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth用Vinverseプラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-vinverse/description
 msgid ""
 "Vinverse is a simple filter to remove residual combing, based on an AviSynth "
 "script by Didée."
-msgstr ""
+msgstr "Vinverseは、DidéeのAviSynthスクリプトに基づいて、残留コーミングを除去する単純なフィルタです。"
 
 #. leap/vapoursynth/vapoursynth-plugin-vivtc/summary
 msgid "VIVTC plugin for VapourSynth"
-msgstr ""
+msgstr "VapourSynth用VIVTCプラグイン"
 
 #. leap/vapoursynth/vapoursynth-plugin-vivtc/description
 msgid ""
 "VIVTC is a set of filters that can be used for inverse telecine. It is a "
 "rewrite of some of tritical’s TIVTC filters."
-msgstr ""
+msgstr "VIVTCは、逆テレシネに使用できるフィルタのセットです。これは三分法のTIVTCフィルターの一部を書き換えたものです。"
 
 #. leap/vapoursynth/vapoursynth-tools/summary
 msgid "Extra tools for VapourSynth"
-msgstr ""
+msgstr "VapourSynth用の追加ツール"
 
 #. leap/vapoursynth/vapoursynth-tools/description
-#, fuzzy
 msgid "This package contains the vspipe tool for interfacing with VapourSynth."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、VapourSynthと通信するためのvspipeツールが含まれています。"
 
 #. leap/variety/summary
-#, fuzzy
 msgid "Wallpaper changer"
-msgstr "壁紙パッケージ"
+msgstr "壁紙の交換"
 
 #. leap/variety/description
 msgid ""
@@ -1715,10 +1700,16 @@ msgid ""
 "Apart from displaying images from local folders, several different online "
 "sources can be used to fetch wallpapers according to user-specified criteria."
 msgstr ""
+"Varietyは、ユーザー指定の画像または自動的にダウンロードされた画像を使用して、デスクトップの壁紙を定期的に変更します。\n"
+"\n"
+"多様性はパネルの指標として便利であり、簡単に一時停止したり再開したりすることができます。マウスホイールを使用して、現在の気分に最適な壁紙を見つけるまで壁紙"
+"を前後にスクロールできます。\n"
+"\n"
+"ローカルフォルダから画像を表示することとは別に、いくつかの異なるオンラインソースを使用して、ユーザ指定の基準に従って壁紙を取得することができます。"
 
 #. leap/varnish/summary
 msgid "Accelerator for HTTP services"
-msgstr ""
+msgstr "HTTPサービスのアクセラレータ"
 
 #. leap/varnish/description
 msgid ""
@@ -1731,6 +1722,11 @@ msgid ""
 "server. The purpose of this is to minimize the requests going to the backend "
 "server(s) by serving the same document to potentially many users."
 msgstr ""
+"VarnishはHTTPアクセラレータです。リバースプロキシと呼ばれることが多いアプリケーションで、HTTPプロトコルを介して要求されたドキュメントを保存"
+"(キャッシュ)します。\n"
+"\n"
+"特定の基準に基づいて、文書を要求する次のクライアントは、キャッシュされた文書か、バックエンドサーバから要求された「新しい」文書のいずれかを与えられます。こ"
+"の目的は、潜在的に多くのユーザに同じドキュメントを提供することによって、バックエンドサーバに送信される要求を最小限に抑えることです。"
 
 #. leap/varnish/varnish-devel/summary
 msgid "Development files for Varnish"
@@ -1744,20 +1740,24 @@ msgid ""
 "\n"
 "This package holds the development files for varnish."
 msgstr ""
+"VarnishはHTTPアクセラレータです。リバースプロキシと呼ばれることが多いアプリケーションで、HTTPプロトコルを介して要求されたドキュメントを保存"
+"(キャッシュ)します。\n"
+"\n"
+"このパッケージには、varnish の開発ファイルが入っています。"
 
 #. leap/vboot/summary
 msgid "Chromium vboot"
-msgstr ""
+msgstr "Chromium vboot"
 
 #. leap/vboot/description
 msgid ""
 "VBoot contains verified boot reference implementation and helper tools for "
 "Chrome OS devices."
-msgstr ""
+msgstr "VBootには、Chrome OSデバイス用の検証済みのブートリファレンス実装とヘルパーツールが含まれています。"
 
 #. leap/vbrfix/summary
 msgid "Repair MP3 files that have incorrect VBR information"
-msgstr ""
+msgstr "不正なVBR情報を持つMP3ファイルを修復"
 
 #. leap/vbrfix/description
 msgid ""
@@ -1775,21 +1775,24 @@ msgid ""
 "merging two VBR MP3s together with a merging tool and then needing a newly-"
 "calculated VBR null frame."
 msgstr ""
+"多くのMP3デコーダは、ファイルサイズを最初のデータパケットのビットレートで割った値に基づいて、MP3ファイルの時間長を推定します。song は無音で始ま"
+"り、したがって低いビットレートのパケットで始まる可能性があるため、この長さ予測はまったく無意味な値を生成する可能性があります。また、VBRファイルをジャン"
+"プする場合、通常、ファイルの50%はソングの50%ではありません。\n"
+"\n"
+"vbrfixは、ファイルの先頭にVBRヌルフレームを配置して、MP3プレーヤーに曲の長さと曲全体のインデックス付けに関する情報を伝えます。\n"
+"\n"
+"vbrfixはまた、MP 3以外のすべてのコンテンツが削除されるので、MP "
+"3に関するその他の問題を修正することもできます(ただし、自分が記述したタグを保持することはできます)。また、2つのVBR MP "
+"3をマージツールと一緒にマージし、新たに計算されたVBRヌルフレームを必要とする場合にも役立ちます。"
 
 #. leap/vcdimager/description
 #. leap/vcdimager/vcdimager-devel/description
-#, fuzzy
-#| msgid ""
-#| "GNU VCDImager is a full-featured mastering suite for authoring, "
-#| "disassembling and analyzing Video CDs and Super Video CDs. This is the "
-#| "core library"
 msgid ""
 "GNU VCDImager is a full-featured mastering suite for authoring, "
 "disassembling and analyzing Video CDs and Super Video CDs."
 msgstr ""
-"GNU VCDImager は、オーサリングや展開、解析にも完全対応した、ビデオ CD／スー"
-"パービデオ CD のマスタリングスイートです。このパッケージには、コアライブラリ"
-"が含まれています。"
+"GNU VCDImagerは、Video CDおよびSuper Video "
+"CDをオーサリング、分解、および分析するためのフル機能のマスタリングスイートです。"
 
 #. leap/vcron/summary
 msgid "TK-Interface for cron and at"
@@ -1804,10 +1807,16 @@ msgid ""
 "Authors:\n"
 "--------     Daniel Roche <dan@lectra.com>"
 msgstr ""
+"cronおよびatの TK-インターフェイス。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Daniel Roche <dan@lectra.com>"
 
 #. leap/vcsh/summary
 msgid "Config manager for $HOME based on git"
-msgstr ""
+msgstr "gitをベースにした$HOMEの設定マネージャ"
 
 #. leap/vcsh/description
 msgid ""
@@ -1816,19 +1825,20 @@ msgid ""
 "you can have one repository per config set (zsh, vim, ssh, etc), picking and "
 "choosing which configs you want to use on which machine."
 msgstr ""
+"vcshを使用すると、いくつかのgitリポジトリを持つことができます。すべてのgitリポジトリは、作業ツリーを$HOMEに維持し、互いに影響を与えないよう"
+"にします。つまり、構成セット(zsh、vim、sshなど)ごとに1つのリポジトリを作成し、どのマシンでどの構成を使用するかを選択できます。"
 
 #. leap/vcsh/vcsh-zsh-completion/summary
 msgid "ZSH Completion for vcsh"
-msgstr ""
+msgstr "vcshのZSH補完"
 
 #. leap/vcsh/vcsh-zsh-completion/description
 msgid "zsh command line completion support for vcsh."
-msgstr ""
+msgstr "zshコマンドライン補完機能(vcsh用)。"
 
 #. leap/vde2/summary
-#, fuzzy
 msgid "Virtual Distributed Ethernet"
-msgstr "機器中立な分散インターフェイス"
+msgstr "仮想分散Ethernet"
 
 #. leap/vde2/description
 msgid ""
@@ -1845,21 +1855,25 @@ msgid ""
 "despite     of the change of virtual cables, i.e. the change of IP "
 "addresses     and interface in the real world"
 msgstr ""
+"VDE は、インターネットを介して一連の物理コンピュータ上で生成可能な仮想ネットワークです。\n"
+"\n"
+"VDE は (1)実際のGNU-linuxボックス(tuntap) (2)仮想マシン(UML-User Mode "
+"Linux,qemu,bochs,MPS)を接続します。\n"
+"\n"
+"VDE は次のように使用できます。　(i)汎用トンネルを作成する(イーサネットで実行されるすべてのプロトコルをトンネルに入れることができる)　(ii)"
+"tuntap の自由なアクセスを必要とせずに、一連の仮想マシンをインターネットに接続する　(iii)モビリティをサポートする: VDE "
+"は仮想ケーブルの変更、すなわち実世界でのIPアドレスとインタフェースの変更にもかかわらず、相互接続されたままにすることができる"
 
 #. leap/vde2/vde2-cryptcab/summary
 #. leap/vde2/vde2-slirp/summary
-#, fuzzy
 msgid "VDE ecryption module"
-msgstr "Perl DES 暗号化モジュール"
+msgstr "VDE暗号化モジュール"
 
 #. leap/vde2/vde2-cryptcab/description
-#, fuzzy
 msgid ""
 "This package contains CryptCab, which can be used to send encrypted data "
 "over an UDP link."
-msgstr ""
-"このパッケージには、多くの古い X クライアントで使用されている X ビットマップ"
-"が含まれています。"
+msgstr "このパッケージにはCryptCabが含まれており、UDPリンクを介して暗号化されたデータを送信するために使用できます。"
 
 #. leap/vde2/vde2-slirp/description
 msgid ""
@@ -1875,10 +1889,17 @@ msgid ""
 "IPv4 only. IPv6 is still unsupported (will be supported when slirpvde will "
 "be rewritten using the  LWIPv6  network stack)."
 msgstr ""
+"slirpvdeはVDEネットワーク用のslirpインタフェースです。Slirpvdeは、すべてのユニット(仮想マシンまたは実マシン)を、slirpvde"
+"がNAT/マスカレードルータとして実行されているホストのネットワークに接続します。デフォルトルートはノード2(デフォルトネットワーク設定では10.0.2."
+"2)で、DNSはノード3(10.0.2.3)で再マッピングされます。\n"
+"\n"
+"Slirpvdeは、標準のユーザ権限(ルートアクセスは不要)を使用して実行されます。すべての接続はslirpvde自体によって再生成されます。\n"
+"\n"
+"IPv4のみ。IPv6はまだサポートされていません(slirpvdeがLWIPv6ネットワークスタックを使用して書き換えられるときにサポートされます)。"
 
 #. leap/vegastrike/summary
 msgid "3D OpenGL spaceflight simulator"
-msgstr ""
+msgstr "3D OpenGL宇宙飛行シミュレータ"
 
 #. leap/vegastrike/description
 msgid ""
@@ -1887,21 +1908,24 @@ msgid ""
 "endless possibility before you and just enough cash to scrape together a "
 "life. Yet danger lurks in the space beyond."
 msgstr ""
+"Vega StrikeはGPL 3D OpenGL Action RPGスペースシムで、プレイヤーはトレードや賞金獲得を行うことができます。あなたは古いぼ"
+"ろぼろのWayfarer貨物船から出発し、あなたの前に無限の可能性と人生をかき集めるのに十分な現金を持っています。しかし、その先には危険が潜んでいます。"
 
 #. leap/vegastrike-data/summary
-#, fuzzy
 msgid "Data files for Vega Strike"
-msgstr "garcon 向けデータファイル"
+msgstr "Vega Strike のデータファイル"
 
 #. leap/vegastrike-data/description
 msgid ""
 "Data files for Vega Strike, a GPL 3D OpenGL Action RPG space sim that allows "
 "a player to trade and bounty hunt."
 msgstr ""
+"GPL 3D OpenGL Action RPGスペースシムであるVega "
+"Strikeのデータファイルで、プレイヤーは取引と賞金獲得を行うことができます。"
 
 #. leap/vegastrike-extra/summary
 msgid "Extra textures and content for Vega Strike"
-msgstr ""
+msgstr "Vega Strike用の追加のテクスチャとコンテンツ"
 
 #. leap/vegastrike-extra/description
 msgid ""
@@ -1910,10 +1934,14 @@ msgid ""
 "\n"
 "This package is not essential for playing the game."
 msgstr ""
+"さらに、GPL 3D OpenGL Action RPGスペースシムであるVega "
+"Strikeでは、オプションのテクスチャファイルとコンテンツが提供されており、プレイヤーはこれを利用して取引や賞金獲得を行うことができます。\n"
+"\n"
+"このパッケージは、ゲームをプレイするのに必須ではありません。"
 
 #. leap/vegastrike-music/summary
 msgid "Music for Vega Strike"
-msgstr ""
+msgstr "Vega Strike 用の音楽"
 
 #. leap/vegastrike-music/description
 msgid ""
@@ -1921,10 +1949,13 @@ msgid ""
 "to trade and bounty hunt. This archive contains the music files necessary to "
 "hear music in VegaStrike. These files are *not* essential to play the game."
 msgstr ""
+"Music for Vega Strikeは、3D OpenGL Action RPGスペースシムで、プレイヤーは取引や賞金獲得を行うことができます。この"
+"アーカイブには、VegaStrikeのヒア・ミュージックに必要な音楽ファイルが含まれています。これらのファイルは、ゲームをプレイするために不可欠なものでは"
+"ありません。"
 
 #. leap/vegastrike-speech/summary
 msgid "Speech files for Vega Strike"
-msgstr ""
+msgstr "Vega Strike のスピーチファイル"
 
 #. leap/vegastrike-speech/description
 msgid ""
@@ -1934,10 +1965,14 @@ msgid ""
 "\n"
 "This package is not required to play Vega Strike."
 msgstr ""
+"オプションの音声ファイルを使用して、キャラクタの声を聞くことができます。Vega Strikeは、GPL 3D OpenGL Action "
+"RPGスペースシムで、プレイヤーが取引や賞金獲得を行うことができます。\n"
+"\n"
+"このパッケージはベガ・ストライクをプレイするのに必要ではありません。"
 
 #. leap/velocity/summary
 msgid "Java-based template engine"
-msgstr ""
+msgstr "Javaベースのテンプレートエンジン"
 
 #. leap/velocity/description
 #. leap/velocity/velocity-demo/description
@@ -1962,24 +1997,31 @@ msgid ""
 "service that will allow web applications to be developed according to a true "
 "MVC model."
 msgstr ""
+"VelocityはJavaベースのテンプレート・エンジンです。単純でありながら強力なテンプレート言語を使用して、Javaコードで定義されたオブジェクトを参"
+"照することができます。VelocityをWeb開発に使用すると、Web設計者はJavaプログラマーと並行して、Model-View-Controller("
+"MVC)モデルに従ってWebサイトを開発することができます。つまり、Webページ設計者は見栄えの良いサイトを作成することだけに専念でき、プログラマーは一流"
+"のコードを書くことだけに専念できます。VelocityはJavaコードをWebページから分離し、Webサイトを長期にわたって保守しやすくし、Java "
+"Server Pages(JSP)やPHPに代わる実行可能な選択肢を提供します。Velocityの機能はWebサイトの領域をはるかに超えています。たとえば"
+"、テンプレートからSQLとPostScriptとXMLを生成することができます(XML変換の詳細については、Anakiaを参照してください)。ソースコード"
+"およびレポートを生成するためのスタンドアロンユーティリティとして、または他のシステムの統合コンポーネントとして使用できます。Velocityは、"
+"Turbine Webアプリケーション・フレームワーク用のテンプレート・サービスも提供しています。Velocity+Turbineは、真のMVCモデルに従"
+"ってWebアプリケーションを開発するためのテンプレート・サービスを提供します。"
 
 #. leap/velocity/velocity-demo/summary
 msgid "Demo for velocity"
-msgstr ""
+msgstr "velocity のデモ"
 
 #. leap/velocity/velocity-javadoc/summary
-#, fuzzy
 msgid "Javadoc for velocity"
-msgstr "jedit の javadoc です。"
+msgstr "velocity の Javadoc"
 
 #. leap/velocity/velocity-manual/summary
-#, fuzzy
 msgid "Manual for velocity"
-msgstr "JUnit 向けマニュアル"
+msgstr "velocity のマニュアル"
 
 #. leap/verilator/summary
 msgid "Compiling Verilog HDL simulator"
-msgstr ""
+msgstr "Verilog HDLシミュレータのコンパイル"
 
 #. leap/verilator/description
 msgid ""
@@ -1987,11 +2029,12 @@ msgid ""
 "PSL, SystemVerilog and Synthesis assertions into an optimized model which is "
 "in turn wrapped inside a C++/SystemC module for faster execution."
 msgstr ""
+"Verilatorは合成可能なVerilog(テストベンチコードではない)といくつかのPSL,SystemVerilog,Synthesisアサーションを"
+"コンパイルして最適化されたモデルにし,それをC++/SystemCモジュール内にラップして実行を高速化します。"
 
 #. leap/verilator/verilator-doc/summary
-#, fuzzy
 msgid "Documentation for verilator in HTML format"
-msgstr "libgnomeprint 向けドキュメンテーション"
+msgstr "HTML形式の verilator のドキュメント"
 
 #. leap/verilator/verilator-doc/description
 msgid ""
@@ -1999,11 +2042,13 @@ msgid ""
 "\n"
 "This package contains documentation for verilator in HTML format."
 msgstr ""
+"Verilatorはコンパイル用のVerilog HDLシミュレータです。\n"
+"\n"
+"このパッケージには、HTML形式のverilatorに関するドキュメントが含まれています。"
 
 #. leap/verilator/verilator-doc-pdf/summary
-#, fuzzy
 msgid "Documentation for verilator in PDF format"
-msgstr "libgnomeprint 向けドキュメンテーション"
+msgstr "PDF形式の verilator のドキュメント"
 
 #. leap/verilator/verilator-doc-pdf/description
 msgid ""
@@ -2011,11 +2056,13 @@ msgid ""
 "\n"
 "This package contains documentation for verilator in PDF format."
 msgstr ""
+"Verilatorはコンパイル用のVerilog HDLシミュレータです。\n"
+"\n"
+"このパッケージには、PDF形式の verilator のマニュアルが含まれています。"
 
 #. leap/verilator/verilator-examples/summary
-#, fuzzy
 msgid "Examples for verilator"
-msgstr "ruby 向けサンプルスクリプト"
+msgstr "verilator の例"
 
 #. leap/verilator/verilator-examples/description
 msgid ""
@@ -2023,10 +2070,13 @@ msgid ""
 "\n"
 "This package contains examples of using verilator."
 msgstr ""
+"Verilatorはコンパイル用のVerilog HDLシミュレータです。\n"
+"\n"
+"このパッケージには、verilatorの使用例が含まれています。"
 
 #. leap/veyon/summary
 msgid "Free and Open Source computer monitoring and classroom management"
-msgstr ""
+msgstr "無料およびオープンソースのコンピュータ監視およびクラスルーム管理"
 
 #. leap/veyon/description
 msgid ""
@@ -2047,10 +2097,21 @@ msgid ""
 "subnet   and therefore students at home can join lessons via VPN connections "
 "just   by installing the Veyon service"
 msgstr ""
+"Veyonは、WindowsおよびLinuxをサポートするコンピュータ監視およびクラスルーム管理用の無料のオープンソースソフトウェアです。これにより、教師"
+"はコンピューター・ラボを表示および制御し、生徒と対話することができます。Veyonはさまざまな言語で利用でき、多くの便利な機能を提供しています。\n"
+"*コンピュータラボで行われていることを概要モードで確認し、スクリーンショットを撮ります。\n"
+"*ユーザーをサポートおよび支援するためのリモートコントロールコンピュータ\n"
+"*デモモード(フルスクリーンまたはウィンドウ)を使用して、教師の画面をリアルタイムで生徒にブロードキャストする。\n"
+"*教師の注意を引くためにワークステーションをロックする\n"
+"*生徒にテキストメッセージを送信する\n"
+"*リモートコンピュータの電源オン/オフと再起動\n"
+"*任意のコマンド/スクリプトのリモートログオフおよびリモート実行\n"
+"*ホームスクーリング-Veyonのネットワーク技術はサブネットに限定されないため、自宅の生徒はVeyonサービスをインストールするだけでVPN接続を介して"
+"レッスンに参加可能"
 
 #. leap/vgrep/summary
 msgid "Frontend for git-grep and grep"
-msgstr ""
+msgstr "git-grepおよびgrepのフロントエンド"
 
 #. leap/vgrep/description
 msgid ""
@@ -2061,6 +2122,9 @@ msgid ""
 "statistics of files and directory trees or showing the context lines before "
 "and after the matches."
 msgstr ""
+"vgrepは、ディレクトリー内のテキスト・パターンを検索するコマンド行ツールです。これはgrepおよびgit-grepのフロントエンドとして機能し、ユーザ"
+"指定のエディタでインデックス付きのマッチ行を開くことができます。vgrepは古代のcgvg文字に触発されたものですが、ファイルやディレクトリツリーの統計を"
+"リストしたり、マッチの前後のコンテキストラインを表示するなど、さらなる操作を行うように拡張されています。"
 
 #. leap/vhba-kmp/vhba-kmp-64kb/summary
 #. leap/vhba-kmp/vhba-kmp-default/summary
@@ -2084,13 +2148,14 @@ msgstr ""
 
 #. leap/vidcutter/summary
 msgid "Video cutter and joiner"
-msgstr ""
+msgstr "ビデオカッターおよび結合"
 
 #. leap/vidcutter/description
 msgid ""
 "Vidcutter is a Qt5-based application for video trimming/splitting and "
 "merging/joining. The backend is driven by FFmpeg."
 msgstr ""
+"Vidcutterは、ビデオのトリミング/分割とマージ/結合のためのQt 5ベースのアプリケーションです。バックエンドはFFmpegによって駆動されます。"
 
 #. leap/videoproto/videoproto-devel/summary
 msgid "The X11 Protocol: X Video extension"
@@ -2111,19 +2176,6 @@ msgid "Elegant Image Viewer"
 msgstr "上品な画像ビューア"
 
 #. leap/viewnior/description
-#, fuzzy
-#| msgid ""
-#| "Viewnior is an image viewer program. Created to be simple, fast and "
-#| "elegant. It's minimalistic interface provides more screen space for your "
-#| "images. Among its features are:\n"
-#| "\n"
-#| "* Fullscreen & Slideshow\n"
-#| "* Rotate, flip, save, delete images\n"
-#| "* Animation support\n"
-#| "* Browse only selected images\n"
-#| "* Navigation window\n"
-#| "* Simple interface\n"
-#| "* Configurable mouse actions"
 msgid ""
 "Viewnior is an image viewer program. Created to be simple, fast and elegant. "
 "It's minimalistic interface provides more screen space for your images. "
@@ -2136,17 +2188,15 @@ msgid ""
 "* Simple interface\n"
 "* Configurable mouse actions"
 msgstr ""
-"Viewnior は画像ビューアプログラムです。シンプルで高速、かつ上品な動作を特長に"
-"しています。また、最小限にとどめたインターフェイスにより、画像の表示領域をよ"
-"り広くすることができています。主な機能は下記のとおりです:\n"
-"\n"
-"* フルスクリーン表示とスライドショー\n"
-"* 回転、フリップ、画像の保存／削除\n"
-"* アニメーションへの対応\n"
-"* 選択した画像のみの表示\n"
-"* ナビゲーションウインドウ\n"
-"* シンプルなインターフェイス\n"
-"* 設定変更可能なマウス動作"
+"Viewniorは画像ビューアプログラムです。シンプルに、速く、エレガントに仕上げました。最小限のインターフェイスで、画像を表示するための画面スペースが広"
+"がります。機能には次のものがあります。\n"
+"*フルスクリーンおよびスライドショー\n"
+"*イメージの回転、反転、保存、削除\n"
+"*アニメーションのサポート\n"
+"*選択したイメージのみを参照\n"
+"*ナビゲーションウィンドウ\n"
+"*シンプルなインターフェイス\n"
+"*設定可能なマウス操作"
 
 #. leap/viewnior/viewnior-lang/summary
 msgid "Translations for package viewnior"
@@ -2196,7 +2246,7 @@ msgstr ""
 
 #. leap/vifm/summary
 msgid "Ncurses based file manager with vi like keybindings"
-msgstr ""
+msgstr "ncursesベースのファイルマネージャで、viはkeybindingsのようなもの"
 
 #. leap/vifm/description
 msgid ""
@@ -2205,38 +2255,27 @@ msgid ""
 "of commands. It supports UTF-8, a quick file view similar to midnight "
 "commander's quick view, and configurable color schemes."
 msgstr ""
+"Vifmはncursesベースのファイル・マネージャーで、viのようなキー・バインディングにより、新しいコマンド・セットを学習することなくファイルを完全に"
+"キーボードで制御することができます。UTF-8、ミッドナイトコマンダーのクイックビューに似たクイックファイルビュー、および設定可能なカラースキームをサポー"
+"トします。"
 
 #. leap/vifm-colors/summary
 msgid "Color themes for vifm"
-msgstr ""
+msgstr "vifmのカラーテーマ"
 
 #. leap/vifm-colors/description
-#, fuzzy
 msgid "Color themes for vifm file manager."
-msgstr "カラーマネージメント向けカラープロファイル"
+msgstr "vifmファイルマネージャのカラーテーマ。"
 
 #. leap/vigra/vigra-devel/summary
-#, fuzzy
 msgid "Development files for VIGRA Library"
-msgstr "libraw 向け開発用ファイル"
+msgstr "VIGRA ライブラリの開発ファイル"
 
 #. leap/vim/summary
 msgid "Vi IMproved"
 msgstr "Vi　IMproved"
 
 #. leap/vim/description
-#, fuzzy
-#| msgid ""
-#| "Vim (Vi IMproved) is an almost compatible version of the UNIX editor vi. "
-#| "Almost every possible command can be performed using only ASCII "
-#| "characters. Only the 'Q' command is missing (you do not need it). Many "
-#| "new features have been added: multilevel undo, command line history, file "
-#| "name completion, block operations, and editing of binary data.\n"
-#| "\n"
-#| "Vi is available for the AMIGA, MS-DOS, Windows NT, and various versions "
-#| "of UNIX.\n"
-#| "\n"
-#| "For SUSE Linux, Vim is used as /usr/bin/vi."
 msgid ""
 "Vim (Vi IMproved) is an almost compatible version of the UNIX editor vi. "
 "Almost every possible command can be performed using only ASCII characters. "
@@ -2244,48 +2283,41 @@ msgid ""
 "been added: multilevel undo, command line history, file name completion, "
 "block operations, and editing of binary data."
 msgstr ""
-"Vim (Vi IMproved) は UNIX エディタ vi のほぼ互換版です。 ほとんどの vi で存在"
-"するコマンドは ASCII 文字でのみ利用することができます。 ただし 'Q' コマンドに"
-"ついては利用できません (おそらく必要になることもないでしょう) 。 以下のような"
-"多くの新しい機能が追加されています : 多段階の undo (取り消し), コマンドライン"
-"履歴, ファイル名補完, ブロック操作, バイナリデータの編集\n"
-"\n"
-"vi は AMIGA, MS-DOS, Windows NT および様々なバージョンの UNIX で利用できま"
-"す。\n"
-"\n"
-"SuSE Linux では、 vim は /usr/bin/vi として利用できます。"
+"Vim(Vi imProved)は、UNIXエディタviのほぼ互換性のあるバージョンです。ほとんどすべての可能なコマンドは、ASCII文字を使用して実行で"
+"きます。'Q'コマンドだけが欠落しています(必要ありません)。マルチレベルの取り消し、コマンドライン履歴、ファイル名の補完、ブロック操作、バイナリデータの"
+"編集など、多くの新機能が追加されました。"
 
 #. leap/vim-bootstrap/summary
 msgid "Vim Bootstrap is a vimrc generator"
-msgstr ""
+msgstr "Vim Bootstrapはvimrcジェネレータです"
 
 #. leap/vim-bootstrap/description
 msgid ""
 "Vim Bootstrap is generator provides a simple method of generating a .vimrc "
 "configuration for vim, NeoVim, NeoVim-Qt, MacVim and GVim."
 msgstr ""
+"Vim Bootstrap is generatorは、vim、NeoVim、NeoVim-Qt、MacVim、およびGVimの.vimrc "
+"設定を生成する簡単な方法を提供します。"
 
 #. leap/vim/vim-data/summary
 msgid "Data files needed for extended vim functionality"
-msgstr ""
+msgstr "拡張vim機能に必要なデータファイル"
 
 #. leap/vim/vim-data/description
-#, fuzzy
 msgid "This package contains optional runtime & syntax files for vim."
-msgstr "このパッケージには qtwebkit 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージには、vim用のオプションのランタイムおよび構文ファイルが含まれています。"
 
 #. leap/vim/vim-data-common/summary
 msgid "Common Data files for vim & gvim"
-msgstr ""
+msgstr "vimおよびgvimの共通データファイル"
 
 #. leap/vim/vim-data-common/description
-#, fuzzy
 msgid "This package contains basic runtime & syntax files for vim"
-msgstr "このパッケージには qtwebkit 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージには、vim用の基本的なランタイムファイルと構文ファイルが含まれています。"
 
 #. leap/vim-plugins/vim-plugin-NERDcommenter/summary
 msgid "A plugin that allows for easy commenting of code for many filetypes"
-msgstr ""
+msgstr "多くのファイルタイプのコードを簡単にコメント化できるプラグイン"
 
 #. leap/vim-plugins/vim-plugin-NERDcommenter/description
 msgid ""
@@ -2293,11 +2325,12 @@ msgid ""
 "which may be invoked via key mappings and a commenting menu. These "
 "operations are available for most filetypes."
 msgstr ""
+"NERDコメンテーターは、キーマッピングとコメントメニューを介して呼び出すことができる多くの異なるコメント操作とスタイルを提供します。これらの操作は、ほと"
+"んどのファイルタイプで使用できます。"
 
 #. leap/vim-plugins/vim-plugin-NERDtree/summary
-#, fuzzy
 msgid "A tree explorer plugin for navigating the filesystem"
-msgstr "XFS ファイルシステムの管理ユーティリティ"
+msgstr "ファイル・システムをナビゲートするためのツリー・エクスプローラ・プラグイン"
 
 #. leap/vim-plugins/vim-plugin-NERDtree/description
 msgid ""
@@ -2306,10 +2339,12 @@ msgid ""
 "you manipulate with the keyboard and/or mouse. It also allows you to perform "
 "simple filesystem operations."
 msgstr ""
+"NERDツリーでは、ファイルシステムを表示したり、ファイルやディレクトリを開くことができます。ファイル・システムは、キーボードやマウスで操作するツリーの形"
+"式で表示されます。また、単純なファイルシステム操作を実行することもできます。"
 
 #. leap/vim-plugins/vim-plugin-a/summary
 msgid "Alternate files quickly"
-msgstr ""
+msgstr "代替ファイルの迅速な作成"
 
 #. leap/vim-plugins/vim-plugin-a/description
 msgid ""
@@ -2319,18 +2354,21 @@ msgid ""
 "support for C, C++ and ADA95 and can be configured to support a variety of "
 "languages."
 msgstr ""
+"対応するファイルをすばやく切り替えるためのVimプラグイン。たとえば、foo.cを編集していて、foo."
+"hを編集する必要がある場合は、単にAを実行します。次にfoo.hを編集して、foo."
+"cに切り替えます。もう一度Aを実行します。C、C++、ADA95のサポートが組み込まれており、さまざまな言語をサポートするように設定することができます。"
 
 #. leap/vim-plugins/vim-plugin-ack/summary
 msgid "Run the ack search tool from Vim"
-msgstr ""
+msgstr "Vimからack検索ツールを実行"
 
 #. leap/vim-plugins/vim-plugin-ack/description
 msgid "Run the ack search tool from Vim, with enhanced results listing."
-msgstr ""
+msgstr "拡張された結果リストを使用して、Vimからack検索ツールを実行します。"
 
 #. leap/vim-plugins/vim-plugin-align/summary
 msgid "Plugin to produce aligned text, equations, declarations, etc"
-msgstr ""
+msgstr "位置合わせされたテキスト、計算式、宣言などを生成するプラグイン"
 
 #. leap/vim-plugins/vim-plugin-align/description
 msgid ""
@@ -2339,10 +2377,12 @@ msgid ""
 "separators, not just the first one, and the separators may be the same "
 "across the line or different."
 msgstr ""
+"Alignを使用すると、ステートメントを等号に整列したり、コメントボックスを作成したり、コメントを整列したり、宣言を整列したりできます。最初のセパレータだ"
+"けでなく、複数のセパレータの位置合わせを処理します。セパレータは、行全体で同じであっても、異なっていてもかまいません。"
 
 #. leap/vim-plugins/vim-plugin-bufexplorer/summary
 msgid "Buffer Explorer / Browser"
-msgstr ""
+msgstr "バッファエクスプローラ/ブラウザ"
 
 #. leap/vim-plugins/vim-plugin-bufexplorer/description
 msgid ""
@@ -2353,38 +2393,44 @@ msgid ""
 "open that buffer in a new tab.  If the buffer is in another tab already, "
 "bufexplorer can switch to that tab if you would like."
 msgstr ""
+"bufexplorerでは、'\\be'を使用してexplorer."
+"vimを開くことで、バッファをすばやく切り替えることができます。次に、通常の移動キーまたはマウスを使用して必要なバッファを選択し、"
+"最後に<Enter>または<Left Mouse Click>を押して現在のウィンドウでバッファを開くか、<Shift Enter>または't'を押して新"
+"しいタブでバッファを開きます。バッファがすでに別のタブにある場合、bufexplorerは必要に応じてそのタブに切り替えることができます。"
 
 #. leap/vim-plugins/vim-plugin-calendar/summary
 msgid "Calendar for vim"
-msgstr ""
+msgstr "vim用カレンダー"
 
 #. leap/vim-plugins/vim-plugin-calendar/description
 msgid "Plugin for vim that displays simple calendar in the side window."
-msgstr ""
+msgstr "簡易カレンダーをサイドウィンドウに表示するvim用のプラグイン。"
 
 #. leap/vim-plugins/vim-plugin-colorschemes/summary
 msgid "Vim color schemes selection"
-msgstr ""
+msgstr "Vimカラースキームの選択"
 
 #. leap/vim-plugins/vim-plugin-colorschemes/description
 msgid ""
 "Selection of vim color schemes based on Colors Sample Pack - http://www.vim."
 "org/scripts/script.php?script_id=625."
 msgstr ""
+"カラーサンプルパック - http://www.vim.org/scripts/script."
+"php?script_id=625に基づいたvimカラースキームの選択。"
 
 #. leap/vim-plugins/vim-plugin-colorsel/summary
 msgid "A RGB/HSV color selector"
-msgstr ""
+msgstr "RGB/HSVカラーセレクタ"
 
 #. leap/vim-plugins/vim-plugin-colorsel/description
 msgid ""
 "A simple interactive RGB/HSV color selector modelled after Gimp2 RGB/HSV "
 "color selector."
-msgstr ""
+msgstr "Gimp2 RGB/HSVカラーセレクタをモデル化した単純なインタラクティブRGB/HSVカラーセレクタ。"
 
 #. leap/vim-plugins/vim-plugin-diffchanges/summary
 msgid "Show changes since the last save"
-msgstr ""
+msgstr "最後に保存してからの変更を表示"
 
 #. leap/vim-plugins/vim-plugin-diffchanges/description
 msgid ""
@@ -2393,11 +2439,12 @@ msgid ""
 "functionality is in the form of a plugin, is a bit more robust, and can be "
 "toggled."
 msgstr ""
+"前回の保存以降に現在のバッファに加えられた変更を表示します。このプラグインは、Hacking "
+"Vimのマニュアルの例に基づいています。違いは、この機能がプラグイン形式であり、少し堅牢で、切り替えが可能であることです。"
 
 #. leap/vim-plugins/vim-plugin-editorconfig/summary
-#, fuzzy
 msgid "EditorConfig plugin for Vim"
-msgstr "ekiga 向け Evolution プラグイン"
+msgstr "Vim用EditorConfigプラグイン"
 
 #. leap/vim-plugins/vim-plugin-editorconfig/description
 msgid ""
@@ -2410,20 +2457,23 @@ msgid ""
 "\n"
 "This package contains a Vim plugin to support EditorConfig."
 msgstr ""
+"EditorConfigは、開発者が異なるエディタやIDE間で一貫したコーディングスタイルを定義し、維持するのに役立ちます。EditorConfigプロジ"
+"ェクトは、コーディングスタイルを定義するためのファイル形式と、エディタがファイル形式を読み取り、定義されたスタイルに準拠できるようにするテキストエディタプ"
+"ラグインのコレクションで構成されています。EditorConfigファイルは読みやすく、バージョン管理システムとうまく連携します。\n"
+"\n"
+"このパッケージには、EditorConfigをサポートするVimプラグインが含まれています。"
 
 #. leap/vim-plugins/vim-plugin-fugitive/summary
-#, fuzzy
 msgid "Fugitive plugin for Vim"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "Vim用の一時的なプラグイン"
 
 #. leap/vim-plugins/vim-plugin-fugitive/description
-#, fuzzy
 msgid "Provides git integration with vim."
-msgstr "Subversion 向け KWallet 統合"
+msgstr "gitをvimと統合します。"
 
 #. leap/vim-plugins/vim-plugin-gitdiff/summary
 msgid "Show git diff in a split window"
-msgstr ""
+msgstr "分割ウィンドウにgit diffを表示"
 
 #. leap/vim-plugins/vim-plugin-gitdiff/description
 msgid ""
@@ -2433,10 +2483,13 @@ msgid ""
 "GITChanges [commitish]     Highlight lines that were changed since the HEAD "
 "or some other changeset."
 msgstr ""
+"このスクリプトは、vimでgit diffsを表示する2つの関数を提供します。:GITDiff[commitish] vimウィンドウを垂直に分割し、分割"
+"されたファイルのHEADまたはその他の変更セットのバージョンを表示して、それらを相違させます。:GITChanges【commitish】HEADまたはそ"
+"の他の変更セット以降に変更された行を強調表示します。"
 
 #. leap/vim-plugins/vim-plugin-gnupg/summary
 msgid "Plugin for transparent editing of gpg encrypted files"
-msgstr ""
+msgstr "gpg暗号化ファイルを透過的に編集するプラグイン"
 
 #. leap/vim-plugins/vim-plugin-gnupg/description
 msgid ""
@@ -2447,11 +2500,14 @@ msgid ""
 "encrypted to all recipients before it is written. The script turns off "
 "viminfo, swapfile, and undofile to increase security."
 msgstr ""
+"このスクリプトは、gpg暗号化ファイルの透過的な編集を実装します。ファイル名には、「.gpg」、「.pgp」、または「.asc」という拡張子を付ける必要が"
+"あります。このようなファイルを開くと、コンテンツが復号化され、新しいファイルを開くと、スクリプトは暗号化されたファイルの受信者を要求します。ファイルの内容"
+"は、書き込まれる前にすべての受信者に対して暗号化されます。スクリプトは、セキュリティを強化するために、viminfo、スワップファイル、およびundofi"
+"leをオフにします。"
 
 #. leap/vim-plugins/vim-plugin-latex/summary
-#, fuzzy
 msgid "A rich set of tools for editing LaTeX"
-msgstr "電子メール送信用 git ツール"
+msgstr "LaTeXを編集するための豊富なツール"
 
 #. leap/vim-plugins/vim-plugin-latex/description
 msgid ""
@@ -2460,10 +2516,12 @@ msgid ""
 "years into one comprehensive package. It provides a set of tools which "
 "enable you to do all your LaTeX-ing without needing to quit Vim."
 msgstr ""
+"Vim-LaTeX(別名LaTeXスイート)は成熟したプロジェクトであり、vimコミュニティが長年にわたって作成してきた豊富なLaTeXツールを1つの包括"
+"的なパッケージにまとめることを目的としています。Vimを終了することなくすべてのLaTeXを実行できるようにする一連のツールが用意されています。"
 
 #. leap/vim-plugins/vim-plugin-locateopen/summary
 msgid "Edit file without entering the whole path"
-msgstr ""
+msgstr "パス全体を入力せずにファイルを編集"
 
 #. leap/vim-plugins/vim-plugin-locateopen/description
 msgid ""
@@ -2474,18 +2532,23 @@ msgid ""
 "Usage:   :LocateEdit somefile.txt   :LocateSplit somefile.txt   :"
 "LocateSource somefile.vim   :LocateRead somefile.txt"
 msgstr ""
+"このスクリプトはslocate(または同様のアプリケーション)を使用して、ユーザーがパスを入力しなくてもファイルを開くことができるようにします。複数のファ"
+"イルが見つかった場合、ユーザは開くファイルを選択できます。\n"
+"\n"
+"使用法:   :LocateEdit somefile.txt   :LocateSplit somefile.txt   :LocateSource "
+"somefile.vim   :LocateRead somefile.txt"
 
 #. leap/vim-plugins/vim-plugin-matrix/summary
 msgid "Matrix screensaver for vim"
-msgstr ""
+msgstr "vim用のMatrixスクリーンセーバー"
 
 #. leap/vim-plugins/vim-plugin-matrix/description
 msgid "Matrix screensaver for VIM, inspired by Chris Allegretta's cmatrix."
-msgstr ""
+msgstr "Chris AllegrettaのcmatrixにインスパイアされたVIM用のMatrixスクリーンセーバー。"
 
 #. leap/vim-plugins/vim-plugin-minibufexpl/summary
 msgid "Elegant buffer explorer that takes very little screen space"
-msgstr ""
+msgstr "スクリーンスペースをほとんど必要としないエレガントなバッファエクスプローラ"
 
 #. leap/vim-plugins/vim-plugin-minibufexpl/description
 msgid ""
@@ -2494,10 +2557,12 @@ msgid ""
 "Buffers that are modified get visually marked and buffers that are open in a "
 "window get visually marked."
 msgstr ""
+"Minibufexplorerでは、適切な「タブ」をダブルクリックして、バッファをすばやく切り替えることができます。バッファが開いたり閉じたりすると、タブ"
+"が更新されます。変更されたバッファは視覚的にマークされ、ウィンドウで開いているバッファは視覚的にマークされます。"
 
 #. leap/vim-plugins/vim-plugin-multiplesearch/summary
 msgid "Display multiple searches at the same time"
-msgstr ""
+msgstr "複数の検索を同時に表示"
 
 #. leap/vim-plugins/vim-plugin-multiplesearch/description
 msgid ""
@@ -2506,11 +2571,12 @@ msgid ""
 "different color, and all searches are displayed at once.  After the maximum "
 "number of colors is used, the script starts over with the first color."
 msgstr ""
+"MultipleSearchを使用すると、複数の検索結果を同時に画面に表示できます。検索結果はそれぞれ異なる色で強調表示され、すべての検索が一度に表示され"
+"ます。最大数のカラーが使用された後、スクリプトは最初のカラーからやり直します。"
 
 #. leap/vim-plugins/vim-plugin-neomutt/summary
-#, fuzzy
 msgid "Neomutt plugin for Vim"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "Vim用Neomuttプラグイン"
 
 #. leap/vim-plugins/vim-plugin-neomutt/description
 msgid ""
@@ -2518,10 +2584,12 @@ msgid ""
 "it sets the mail filetype to temporary mail files created by neomutt when "
 "writing or editing emails."
 msgstr ""
+"このプラグインは、neomutt構成ファイルの構文を提供します。さらに、メールファイルタイプは、メールを作成または編集するときにneomuttが作成した一"
+"時的なメールファイルに設定されます。"
 
 #. leap/vim-plugins/vim-plugin-project/summary
 msgid "Organize/Navigate projects of files"
-msgstr ""
+msgstr "ファイルのプロジェクトを編成/ナビゲート"
 
 #. leap/vim-plugins/vim-plugin-project/description
 msgid ""
@@ -2534,38 +2602,41 @@ msgid ""
 "need for a buffer explorer because you have your list of files on the left "
 "of the vim window."
 msgstr ""
+"このプラグインの基本機能を使用して、頻繁にアクセスするファイルのリストを設定し、簡単にナビゲーションできるようにすることができます。ファイルのリストがvi"
+"mウィンドウの左側のウィンドウに表示されます。ファイルを開くには、<Return>キーを押すか、リスト内のファイル名をダブルクリックします。これは、私が使"
+"用したいくつかのIDEの動作に似ています。これは、file-explorerを使ってディレクトリー階層をナビゲートするよりも使いやすいと思います。また、v"
+"imウィンドウの左側にファイルのリストがあるため、バッファエクスプローラが不要になります。"
 
 #. leap/vim-plugins/vim-plugin-quilt/summary
-#, fuzzy
 msgid "Quilt support for vim"
-msgstr "Dovecot 向け SQLite サポート"
+msgstr "vimの Quilt サポート"
 
 #. leap/vim-plugins/vim-plugin-quilt/description
 msgid "Vim plugin that helps with quilt operations from inside vim."
-msgstr ""
+msgstr "vim内からの quilt 操作を支援するVimプラグイン。"
 
 #. leap/vim-plugins/vim-plugin-rails/summary
 msgid "Support for Ruby on Rails development"
-msgstr ""
+msgstr "Ruby on Rails開発のサポート"
 
 #. leap/vim-plugins/vim-plugin-rails/description
 msgid ""
 "This plugin offers the many features for Ruby on Rails application "
 "development."
-msgstr ""
+msgstr "このプラグインは、Ruby on Railsアプリケーション開発のための多くの機能を提供します。"
 
 #. leap/vim-plugins/vim-plugin-searchcomplete/summary
 msgid "Tab completion of words inside of a search"
-msgstr ""
+msgstr "検索内の単語のタブ補完"
 
 #. leap/vim-plugins/vim-plugin-searchcomplete/description
 msgid ""
 "This plugin allows to tab-complete words while typing in a search ('/')."
-msgstr ""
+msgstr "このプラグインを使用すると、検索('/')に入力しながらタブで単語を完成させることができます。"
 
 #. leap/vim-plugins/vim-plugin-showmarks/summary
 msgid "Visually shows the location of marks"
-msgstr ""
+msgstr "マークの位置を視覚的に示します"
 
 #. leap/vim-plugins/vim-plugin-showmarks/description
 msgid ""
@@ -2577,10 +2648,13 @@ msgid ""
 "its location.  It can be toggled on and off and individual marks can be "
 "hidden."
 msgstr ""
+"ShowMarksは位置マークを視覚的に表現します。Marks はバッファ内の重要なポイント間を行ったり来たりする場合に便利ですが、マークを配置した場所を"
+"確認しないと追跡するのが難しい場合があります。ShowMarks氏は、バッファーの一番左の列に記号を入れることで、生活が楽になることを願っています。記号は"
+",標章のラベル及びその位置を示します。オンとオフを切り替えたり、個々のマークを非表示にすることができます。"
 
 #. leap/vim-plugins/vim-plugin-snipmate/summary
 msgid "Implements some of TextMate's snippets features in Vim"
-msgstr ""
+msgstr "VimでTextMateのスニペット機能の一部を実装します"
 
 #. leap/vim-plugins/vim-plugin-snipmate/description
 msgid ""
@@ -2595,20 +2669,26 @@ msgid ""
 "\n"
 "for (i = 0; i < count; i++) { }"
 msgstr ""
+"snipMate は、TextMate のスニペット機能のいくつかを Vim で実装する、控えめで簡潔なvimスクリプトを目指しています。スニペットは、頻"
+"繁に入力されるテキストであり、トリガーワードの後に<tab>を使用してドキュメントに挿入できます。\n"
+"\n"
+"たとえば、snipMate."
+"vimのデフォルトのインストールを使用するCファイルでは、挿入モードで「for<tab>」と入力すると、Cの典型的なforループが展開されます。\n"
+"\n"
+"for(i=0;i<count;i++){}"
 
 #. leap/vim-plugins/vim-plugin-supertab/summary
 msgid "Easy insert mode completion with Tab key"
-msgstr ""
+msgstr "Tabキーによる簡単な挿入モードの完了"
 
 #. leap/vim-plugins/vim-plugin-supertab/description
 msgid ""
 "This script allows you to use the tab key to do all your insert completion."
-msgstr ""
+msgstr "このスクリプトを使用すると、タブキーを使用してすべての挿入を完了できます。"
 
 #. leap/vim-plugins/vim-plugin-taglist/summary
-#, fuzzy
 msgid "Source code browser with support for many languages"
-msgstr "多数の言語に対応したソースコードのハイライト表示"
+msgstr "多くの言語をサポートするソースコードブラウザ"
 
 #. leap/vim-plugins/vim-plugin-taglist/description
 msgid ""
@@ -2617,29 +2697,31 @@ msgid ""
 "efficiently browse through source code files for different programming "
 "languages."
 msgstr ""
+"「Tag List」プラグインは、Vim用のソースコードブラウザプラグインであり、ソースコードファイルの構造の概要を提供し、さまざまなプログラミング言語の"
+"ソースコードファイルを効率的にブラウズできるようにします。"
 
 #. leap/vim-plugins/vim-plugin-tlib/summary
-#, fuzzy
 msgid "Utility functions for vim"
-msgstr "Gtk 向けユーティリティ機能"
+msgstr "vimのユーティリティ関数"
 
 #. leap/vim-plugins/vim-plugin-tlib/description
 msgid ""
 "This library provides some utility functions. There isn't much need to "
 "install it unless another plugin requires you to do so."
 msgstr ""
+"このライブラリは、いくつかのユーティリティ関数を提供します。別のプラグインがインストールを要求しない限り、インストールする必要はほとんどありません。"
 
 #. leap/vim-plugins/vim-plugin-tregisters/summary
 msgid "List, edit, and run/execute registers/clipboards"
-msgstr ""
+msgstr "レジスタ/クリップボードの実行、一覧表示、編集"
 
 #. leap/vim-plugins/vim-plugin-tregisters/description
 msgid "List, edit, and run or execute registers and/or clipboards"
-msgstr ""
+msgstr "レジスタおよび/またはクリップボードの実行、編集、および実行"
 
 #. leap/vim-plugins/vim-plugin-tselectbuffer/summary
 msgid "A quick buffer selector/switcher"
-msgstr ""
+msgstr "クイックバッファセレクタ/スイッチャ"
 
 #. leap/vim-plugins/vim-plugin-tselectbuffer/description
 msgid ""
@@ -2647,10 +2729,12 @@ msgid ""
 "features other buffer selectors have but can be useful for quickly switching "
 "to a different buffer or for deleting buffers."
 msgstr ""
+"このプラグインは、単純なバッファセレクタを提供します。他のバッファセレクタに備わっている機能をすべて備えているわけではありませんが、別のバッファにすばやく"
+"切り替える場合やバッファを削除する場合に便利です。"
 
 #. leap/vim-plugins/vim-plugin-tselectfiles/summary
 msgid "A quick file selector/browser/explorer"
-msgstr ""
+msgstr "クイックファイルセレクタ/ブラウザ/エクスプローラ"
 
 #. leap/vim-plugins/vim-plugin-tselectfiles/description
 msgid ""
@@ -2658,10 +2742,12 @@ msgid ""
 "but can be nevertheless be useful for quickly selecting a few files or "
 "renaming them."
 msgstr ""
+"このプラグインは、シンプルなファイルブラウザを提供します。完全なエクスプローラではありませんが、いくつかのファイルをすばやく選択したり、名前を変更したりす"
+"る場合に便利です。"
 
 #. leap/vim-plugins/vim-plugin-utl/summary
 msgid "Universal text linking for vim"
-msgstr ""
+msgstr "vimのユニバーサルテキストリンク"
 
 #. leap/vim-plugins/vim-plugin-utl/description
 msgid ""
@@ -2669,11 +2755,12 @@ msgid ""
 "Hyperlinks can be used to start applications, open related documents, or "
 "bookmark parts of your text document."
 msgstr ""
+"ユニバーサルテキストリンクを使用すると、テキストドキュメント内にハイパーリンクを設定できます。ハイパーリンクを使用して、アプリケーションを起動したり、関連"
+"ドキュメントを開いたり、テキストドキュメントの一部をブックマークすることができます。"
 
 #. leap/vim-plugins/vim-plugin-vimwiki/summary
-#, fuzzy
 msgid "Personal wiki for vim"
-msgstr "libxml2 に対する Perl バインディング"
+msgstr "vim用の個人用wiki"
 
 #. leap/vim-plugins/vim-plugin-vimwiki/description
 msgid ""
@@ -2682,10 +2769,13 @@ msgid ""
 "to go to your index wiki file. By default it is located in ~/vimwiki/index."
 "wiki. You do not have to create it manually - vimwiki can make it for you."
 msgstr ""
+"VimwikiはVimの個人的なwikiです。これを使用して、ハイパーリンク付きのテキストファイルを編成できます。クイックスタートを実行するには、<Lea"
+"der>ww(通常は\\ww)を押して、インデックスWikiファイルに移動します。デフォルトでは、~/vimwiki/index."
+"wikiにあります。手動で作成する必要はありません。vimwikiで作成できます。"
 
 #. leap/vim-plugins/vim-plugin-zoomwin/summary
 msgid "Zoom in/out of windows (toggle between one window and multi-window)"
-msgstr ""
+msgstr "ウィンドウの拡大/縮小(1つのウィンドウと複数のウィンドウを切り替える)"
 
 #. leap/vim-plugins/vim-plugin-zoomwin/description
 msgid ""
@@ -2694,25 +2784,30 @@ msgid ""
 "     Press <c-w>o : the current window zooms into a full screen      Press "
 "<c-w>o again: the previous set of windows is restored"
 msgstr ""
+"これは、ウィンドウのズームインとズームアウトを簡単にするためのものです。使用方法:\n"
+"\n"
+"     <c-w>oキーを押すと、現在のウィンドウが全画面表示になります。もう一度<c-w>oキーを押すと、前のウィンドウセットが復元されます。"
 
 #. leap/vim/vim-small/summary
 msgid "Vim with reduced features"
-msgstr ""
+msgstr "機能を削減したVim"
 
 #. leap/vim/vim-small/description
 msgid ""
 "Vim compiled with reduced feature set such as no script interpreters built in"
-msgstr ""
+msgstr "スクリプトインタプリタが組み込まれていないなどの機能セットを削減してコンパイルされたVim"
 
 #. leap/vimb/summary
 msgid "The vim-like browser"
-msgstr ""
+msgstr "vimのようなブラウザ"
 
 #. leap/vimb/description
 msgid ""
 "vimb is a WebKit-based web browser that behaves like the vimperator plugin "
 "for Firefox, and has usage paradigms from the editor vim."
 msgstr ""
+"vimbはWebKitベースのWebブラウザで、Firefox用のVimperatorプラグインのように動作し、エディタvimからの使用パラダイムを持って"
+"います。"
 
 #. leap/vinagre/summary
 msgid "VNC client for GNOME"
@@ -2753,38 +2848,29 @@ msgid "Provides translations for the \"vino\" package."
 msgstr "vino パッケージ向けの翻訳データです。"
 
 #. leap/vips/vips-doc/summary
-#, fuzzy
 msgid "Documentation for VIPS library"
-msgstr "libdwarf のドキュメンテーション"
+msgstr "VIPSライブラリのマニュアル"
 
 #. leap/vips/vips-doc/description
-#, fuzzy
 msgid ""
 "This package contains documentation about the VIPS library in HTML and PDF "
 "formats."
-msgstr ""
-"このパッケージには HTML や PDF 形式での [pkg://wxGTK] ドキュメントが含まれて"
-"います。"
+msgstr "このパッケージには、HTMLおよびPDF形式のVIPSライブラリに関するドキュメントが含まれています。"
 
 #. leap/vips/vips-tools/summary
-#, fuzzy
 msgid "Command line tools for VIPS library"
-msgstr "libdwarf のドキュメンテーション"
+msgstr "VIPSライブラリ用のコマンドラインツール"
 
 #. leap/vips/vips-tools/description
-#, fuzzy
 msgid ""
 "This package contains command line tools for processing large images using "
 "the VIPS library."
-msgstr ""
-"このパッケージには YaST2 内からパッケージマネージャライブラリに アクセスする"
-"ためのネームスペースが含まれています。"
+msgstr "このパッケージには、VIPSライブラリを使用して大きなイメージを処理するためのコマンドラインツールが含まれています。"
 
 #. leap/virglrenderer/virglrenderer-devel/summary
 #. leap/virglrenderer/virglrenderer-test-server/summary
-#, fuzzy
 msgid "Virgil3D renderer development files"
-msgstr "MariaDB 組み込みサーバ開発用ファイル"
+msgstr "Virgil3Dレンダラ開発ファイル"
 
 #. leap/virglrenderer/virglrenderer-devel/description
 msgid ""
@@ -2792,6 +2878,8 @@ msgid ""
 "support for the virtio GPU. This package contains the virgil3d renderer "
 "development files."
 msgstr ""
+"virgil3dレンダリングライブラリは、virtio GPUの3D "
+"GPUサポートを実装するためにqemuが使用するライブラリです。このパッケージには、virgil3dレンダラ開発ファイルが含まれています。"
 
 #. leap/virglrenderer/virglrenderer-test-server/description
 msgid ""
@@ -2799,6 +2887,8 @@ msgid ""
 "support for the virtio GPU. This package contains a server to test virgl "
 "rendering without GL."
 msgstr ""
+"virgil3dレンダリングライブラリは、virtio GPUの3D GPUサポートを実装するためにqemuが使用するライブラリです。このパッケージには、"
+"GLを使用しないvirglレンダリングをテストするためのサーバが含まれています。"
 
 #. leap/virt-manager/virt-install/summary
 msgid "Utilities for installing virtual machines"
@@ -2846,20 +2936,18 @@ msgstr ""
 "install 関連のツールです。"
 
 #. leap/virt-sandbox/summary
-#, fuzzy
 msgid "Libvirt application sandbox framework"
-msgstr "アプリケーションセットアップの切り替え"
+msgstr "libvirtアプリケーションサンドボックスフレームワーク"
 
 #. leap/virt-sandbox/description
 msgid ""
 "This package provides a command for running applications within a sandbox "
 "using libvirt."
-msgstr ""
+msgstr "このパッケージは、libvirtを使用してサンドボックス内でアプリケーションを実行するためのコマンドを提供します。"
 
 #. leap/virt-top/summary
-#, fuzzy
 msgid "Utility like top(1) for displaying virtualization stats"
-msgstr "仮想マシンをインストールするためのユーティリティ"
+msgstr "top(1)のような仮想化の統計を表示するユーティリティ"
 
 #. leap/virt-top/description
 msgid ""
@@ -2870,6 +2958,10 @@ msgid ""
 "It uses libvirt so it is capable of showing stats across a variety of "
 "different virtualization systems."
 msgstr ""
+"virt-topは、仮想化されたドメインの統計を表示するための「top(1)」のようなユーティリティです。多くのキーとコマンドラインオプションは、通常の'"
+"top'と同じです。\n"
+"\n"
+"libvirtを使用しているため、さまざまな仮想化システムにわたって統計を表示できます。"
 
 #. leap/virt-viewer/summary
 msgid "Virtual Machine Viewer"
@@ -2885,9 +2977,8 @@ msgstr ""
 "サーバの詳細を閲覧するのに libvirt を使用します。"
 
 #. leap/virt-what/summary
-#, fuzzy
 msgid "Detect if running in a virtual machine"
-msgstr "仮想マシンをインストールするためのユーティリティ"
+msgstr "仮想マシンで実行されているかどうかを検出"
 
 #. leap/virt-what/description
 msgid ""
@@ -2896,10 +2987,12 @@ msgid ""
 "what(1) to find out how to use it.  This file is for developers and people "
 "compiling from source."
 msgstr ""
+"これはスクリプトの中の仮想化の種類を調べるために使用できるスクリプト集です。詳しい使い方については、virt-"
+"what(1)のマニュアルページを読んでください。このファイルは開発者とソースからコンパイルする人のためのものです。"
 
 #. leap/virtme/summary
 msgid "Tools for virtualize the running distro or a rootfs"
-msgstr ""
+msgstr "実行中のdistroまたはrootfsを仮想化するためのツール"
 
 #. leap/virtme/description
 msgid ""
@@ -2909,6 +3002,10 @@ msgid ""
 "Right now it is not really configurable enough for being useful as a sort of "
 "sandbox."
 msgstr ""
+"Virtmeは、ディスクイメージ全体の代わりにホストLinuxディストリビューションまたはrootfsを使用する仮想化されたLinuxカーネルを実行するた"
+"めのツールセットです。\n"
+"\n"
+"現時点では、サンドボックスのようなものとして使用するには十分な設定ができません。"
 
 #. leap/virtualbox/summary
 msgid "VirtualBox is an Emulator"
@@ -2923,40 +3020,39 @@ msgid ""
 "freely available as Open Source Software under the terms of the GNU Public "
 "License (GPL)."
 msgstr ""
+"VirtualBoxは、x86コンピュータ用のホスト型ハイパーバイザです。Windows、Linux、BSD、OS/2、Solaris、Haiku、OSx"
+"86などのバージョンと派生版を実行するゲスト仮想マシンの作成と管理、およびAppleハードウェア上でのmacOSゲストの限定的な仮想化をサポートします。V"
+"irtualBoxは、GNU Public License(GPL)の条件に基づいて、オープンソースソフトウェアとして無償で入手できます。"
 
 #. leap/virtualbox/virtualbox-devel/summary
-#, fuzzy
 msgid "Devel files for virtualbox"
-msgstr "taglib 向け開発用ファイル"
+msgstr "virtualbox用のファイルを展開"
 
 #. leap/virtualbox/virtualbox-devel/description
-#, fuzzy
 msgid "Development file for virtualbox"
-msgstr "taglib 向け開発用ファイル"
+msgstr "virtualbox用開発ファイル"
 
 #. leap/virtualbox/virtualbox-guest-desktop-icons/summary
 msgid "Icons for guest desktop files"
-msgstr ""
+msgstr "ゲストデスクトップファイル用のアイコン"
 
 #. leap/virtualbox/virtualbox-guest-desktop-icons/description
-#, fuzzy
 msgid ""
 "This package contains icons for guest desktop files that were created on the "
 "desktop."
-msgstr ""
-"このパッケージには、 K デスクトップ環境ワークスペース向けの基本パッケージが含"
-"まれています。"
+msgstr "このパッケージには、デスクトップ上で作成されたゲストデスクトップファイルのアイコンが含まれています。"
 
 #. leap/virtualbox/virtualbox-guest-source/summary
-#, fuzzy
 msgid "Source files for virtualbox guest kernel modules"
-msgstr "新しいモジュールが見つかりませんでした。"
+msgstr "virtualboxゲストカーネルモジュール用のソースファイル"
 
 #. leap/virtualbox/virtualbox-guest-source/description
 msgid ""
 "Source files for virtualbox guest kernel modules These can be built for "
 "custom kernels using sudo /sbin/vboxguestconfig"
 msgstr ""
+"virtualboxゲストカーネルモジュール用のソースファイル。これらはsudo/sbin/"
+"vboxguestconfigを使ってカスタムカーネル用に構築することができます"
 
 #. leap/virtualbox/virtualbox-guest-tools/summary
 msgid "VirtualBox guest tools"
@@ -2971,49 +3067,39 @@ msgid "VirtualBox X11 drivers for mouse and video"
 msgstr "マウスやビデオ向け VirtualBox X11 ドライバ"
 
 #. leap/virtualbox/virtualbox-guest-x11/description
-#, fuzzy
-#| msgid ""
-#| "VirtualBox This package contains X11 guest utilities and X11 guest mouse "
-#| "and video drivers"
 msgid ""
 "This package contains X11 guest utilities and X11 guest mouse and video "
 "drivers"
-msgstr ""
-"VirtualBox X11 ドライバには、 X11 用のゲスト向けユーティリティとマウス／ビデ"
-"オドライバが含まれています。"
+msgstr "このパッケージには、X11ゲストユーティリティとX11ゲストマウスおよびビデオドライバが含まれています。"
 
 #. leap/virtualbox/virtualbox-host-source/summary
-#, fuzzy
 msgid "Source files for virtualbox host kernel modules"
-msgstr "新しいモジュールが見つかりませんでした。"
+msgstr "virtualboxホストカーネルモジュール用のソースファイル"
 
 #. leap/virtualbox/virtualbox-host-source/description
 msgid ""
 "Source files for virtualbox host kernel modules These can be built for "
 "custom kernels using sudo /sbin/vboxconfig"
 msgstr ""
+"virtualbox ホストカーネルモジュール用のソースファイル これらはsudo/sbin/vboxconfig "
+"を使ってカスタムカーネル用に構築することができます。"
 
 #. leap/virtualbox-kmp/virtualbox-kmp-default/summary
 #. leap/virtualbox-kmp/virtualbox-kmp-preempt/summary
-#, fuzzy
-#| msgid "Guest kernel modules for VirtualBox"
 msgid "Kernel modules for VirtualBox"
-msgstr "VirtualBox 向けゲスト側カーネルモジュール"
+msgstr "VirtualBox用カーネルモジュール"
 
 #. leap/virtualbox/virtualbox-qt/summary
 msgid "Qt GUI part for virtualbox"
 msgstr "virtualbox 向け Qt GUI"
 
 #. leap/virtualbox/virtualbox-qt/description
-#, fuzzy
 msgid "This package contains the code for the GUI used to control VMs."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、VMの制御に使用されるGUIのコードが含まれています。"
 
 #. leap/virtualbox/virtualbox-vnc/summary
 msgid "VNC desktop sharing"
-msgstr ""
+msgstr "VNCデスクトップ共有"
 
 #. leap/virtualbox/virtualbox-vnc/description
 msgid ""
@@ -3022,20 +3108,22 @@ msgid ""
 "computer. When this optional feature is desired, it is installed as an "
 "\"extpack\" for VirtualBox. The implementation is licensed under GPL."
 msgstr ""
+"Virtual Network Computing(VNC)は、Remote Frame Buffer Protocol(RFB)を使用して別のコンピュー"
+"タをリモート制御するグラフィカルデスクトップ共有システムです。このオプション機能が必要な場合は、VirtualBoxの「extpack」としてインストール"
+"されます。実装はGPLの下でライセンスされています。"
 
 #. leap/virtualbox/virtualbox-websrv/summary
-#, fuzzy
 msgid "WebService GUI part for virtualbox"
-msgstr "virtualbox 向け Qt GUI"
+msgstr "virtualbox用WebService GUI部品"
 
 #. leap/virtualbox/virtualbox-websrv/description
 msgid ""
 "The VirtualBox web server is used to control headless VMs using a browser."
-msgstr ""
+msgstr "VirtualBox Webサーバは、ブラウザを使用してヘッドレスVMを制御するために使用されます。"
 
 #. leap/viruskiller/summary
 msgid "Arcade shoot 'em up game about virus invasion"
-msgstr ""
+msgstr "アーケードのシューティングゲームウイルスの侵入"
 
 #. leap/viruskiller/description
 msgid ""
@@ -3047,20 +3135,24 @@ msgid ""
 "Others will just eat them right there on the spot! See how long you and your "
 "computer can survive the onslaught!"
 msgstr ""
+"コンピュータが侵入されました!Microsoft Internet Explorer、Microsoft Outlook、Microsoft MSN "
+"Messenger、およびMicrosoft Recycle Binのセキュリティホールを通じて、数多くの小さなウイルスが侵入されています。あなたの信頼で"
+"きるマウスを使って、彼らがあなたのファイルを破壊する前に、あなたは盗聴者を撃つ必要があります!彼らのホームディレクトリから彼らを盗んで、彼らのセキュリティ"
+"ホールに連れ戻す人もいます。他の人はその場で食べます!あなたとあなたのコンピュータが猛攻撃に耐えられる期間を見てみましょう!"
 
 #. leap/vit/summary
 msgid "Curses-based front end to Taskwarrior"
-msgstr ""
+msgstr "Taskwarrior 用の cursesベースのフロントエンド"
 
 #. leap/vit/description
 msgid ""
 "VIT - a minimalistic Taskwarrior full-screen terminal interface with Vim key "
 "bindings"
-msgstr ""
+msgstr "VIT - Vimキーバインディングを備えた、Taskwarriorの最小限のフルスクリーンターミナルインターフェイス"
 
 #. leap/vitetris/summary
 msgid "Terminal-based Tetris clone"
-msgstr ""
+msgstr "端末ベースのテトリスクローン"
 
 #. leap/vitetris/description
 msgid ""
@@ -3075,11 +3167,16 @@ msgid ""
 "play at higher levels. (It does not make it possible to prevent the piece "
 "from ever locking by abusing lock delay resets.)"
 msgstr ""
+"Vitetris は、端末ベースのテトリスゲームです。ネットワークまたは同じキーボードを使用して、1人または2人のプレーヤーで再生できます。\n"
+"\n"
+"Vitetris には、両方のプレーヤーが難易度(レベルと高さ)を選択できる、カスタマイズ可能な外観とnetplayがあります。(音は出ません)。\n"
+"\n"
+"回転、得点、レベル、スピードは任天堂の初期のテトリスゲームに似ており、短いロック遅延が追加され、より高いレベルでプレイすることが可能になっています。(ロッ"
+"ク遅延リセットを悪用してピースがロックされるのを防ぐことはできません)"
 
 #. leap/vkd3d/vkd3d-devel/summary
-#, fuzzy
 msgid "Development headers for the Direct3D 12 to Vulkan translation library"
-msgstr "libraw 向け開発用ファイル"
+msgstr "Direct3D 12からVulkanへの変換ライブラリの開発ヘッダ"
 
 #. leap/vkd3d/vkd3d-devel/description
 msgid ""
@@ -3087,40 +3184,35 @@ msgid ""
 "\n"
 "These are its development libraries and headers."
 msgstr ""
+"これは、Wineなどが使用するDirect3D 12 to Vulkan変換ライブラリです。\n"
+"\n"
+"これらは開発ライブラリとヘッダです。"
 
 #. leap/vkeybd/summary
-#, fuzzy
-#| msgid "Vkeybd - Virtual Keyboard Instrument"
 msgid "Virtual Keyboard Instrument"
-msgstr "vkeybd - 仮想キーボード (楽器)"
+msgstr "仮想キーボードインストゥルメント"
 
 #. leap/vkeybd/description
-#, fuzzy
-#| msgid ""
-#| "Vkeybd is a virtual keyboard (as in musical instrument) for AWE32/64, raw "
-#| "MIDI, and ALSA sequencer drivers.  It is written in Tcl/Tk.  Enjoy "
-#| "playing music with your \"computer\" keyboard."
 msgid ""
 "Vkeybd is a virtual keyboard (as in musical instrument) for AWE32/64, raw "
 "MIDI, and ALSA sequencer drivers.  It is written in Tcl/Tk.  Enjoy playing "
 "music with your \"computer\" keyboard."
 msgstr ""
-"vkeybd は AWE32/64, 未加工の MIDI, ALSA シーケンサドライバ向けの仮想キーボー"
-"ド (楽器) です。 Tcl/Tk で書かれています。 お使いの \"コンピュータ\" キーボー"
-"ドで楽曲を演奏してみてください。"
+"Vkeybdは、AWE32/64、raw MIDI、およびALSAシーケンサドライバ用の(楽器のような)仮想キーボードです。Tcl/"
+"Tkで書かれています。「コンピュータ」キーボードで音楽を楽しむことができます。"
 
 #. leap/vkmark/summary
 msgid "Vulkan benchmark utility"
-msgstr ""
+msgstr "Vulkanベンチマークユーティリティ"
 
 #. leap/vkmark/description
 msgid ""
 "An extensible Vulkan benchmarking suite with targeted, configurable scenes."
-msgstr ""
+msgstr "拡張可能なVulkanベンチマークスイートなシーンを備えた拡張可能なベンチマーク・スイート。"
 
 #. leap/vkquake/summary
 msgid "Quake 1 port using Vulkan instead of OpenGL for rendering"
-msgstr ""
+msgstr "Quake 1ポート(レンダリングにOpenGLの代わりにVulkanを使用)"
 
 #. leap/vkquake/description
 msgid ""
@@ -3129,16 +3221,16 @@ msgid ""
 "like Arcane Dimensions or In The Shadows. Game data must be placed in ~/."
 "vkquake/id1 ."
 msgstr ""
+"vkQuakeはQuake "
+"1ポートで、レンダリングにOpenGLの代わりにVulkanを使用します。人気のあるQuakeSpasmの港をベースにしていて、Arcane "
+"DimensionsやIn The Shadowsのような互換性のあるすべてのモードを実行します。ゲームデータは~/.vkquake/"
+"id1に配置する必要があります。"
 
 #. leap/vlan/summary
 msgid "802.1q VLAN Implementation for Linux"
 msgstr "Linux 向け 802.1q VLAN 実装"
 
 #. leap/vlan/description
-#, fuzzy
-#| msgid ""
-#| "An 802.1q vlan implementation for Linux. See http://www.candelatech.com/"
-#| "~greear/vlan.html for more information."
 msgid ""
 "An 802.1q vlan implementation for Linux. See http://www.candelatech.com/"
 "~greear/vlan.html for more information.\n"
@@ -3148,13 +3240,17 @@ msgid ""
 "Authors:\n"
 "--------     Ben Greear <greearb@candelatech.com>"
 msgstr ""
-"Linux 向けの 802.1q VLAN 実装です。 詳細は http://www.candelatech.com/"
-"~greear/vlan.html をお読みください。"
+"Linux用の802.1q vlan実装。詳細については、http://www.candelatech.com/~greear/vlan."
+"htmlを参照してください。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Ben Greear <greearb@candelatech.com>"
 
 #. leap/vlc/summary
-#, fuzzy
 msgid "Graphical media player"
-msgstr "マルチメディアプレーヤ"
+msgstr "グラフィカルメディアプレーヤー"
 
 #. leap/vlc/description
 msgid ""
@@ -3163,39 +3259,38 @@ msgid ""
 "various streaming protocols. It can also be used as a server to stream in "
 "unicast or multicast in IPv4 or IPv6 on a high-bandwidth network."
 msgstr ""
+"VLCメディアプレーヤーは、DVD、VCD、およびさまざまなストリーミングプロトコルだけでなく、多くのオーディオおよびビデオファイルとフォーマット(MPE"
+"G、DivX、mp3、oggなど)用のマルチメディアプレーヤーです。また、高帯域幅ネットワークでIPv4またはIPv6のユニキャストまたはマルチキャストを"
+"ストリーミングするサーバとしても使用できます。"
 
 #. leap/vlc/vlc-codec-gstreamer/summary
-#, fuzzy
-#| msgid "GStreamer integration for Clutter"
 msgid "GStreamer integration for the VLC media player"
-msgstr "Clutter 向け GStreamer 統合"
+msgstr "VLCメディアプレーヤー向けGStreamer統合"
 
 #. leap/vlc/vlc-codec-gstreamer/description
 msgid ""
 "This package enhances the functionality of the VLC media player by using "
 "GStreamer and its submodules as a backend to decode streams."
 msgstr ""
+"このパッケージは、ストリームをデコードするバックエンドとしてGStreamerとそのサブモジュールを使用することによって、VLCメディアプレーヤーの機能を"
+"拡張します。"
 
 #. leap/vlc/vlc-devel/summary
-#, fuzzy
 msgid "Development files for the VLC media player system"
-msgstr "libavresample 向け開発用ファイル"
+msgstr "VLCメディアプレーヤーシステム用の開発ファイル"
 
 #. leap/vlc/vlc-devel/description
-#, fuzzy
 msgid ""
 "These development headers are required if you plan on coding against VLC."
-msgstr "SSH ライブラリ向け開発用ファイル"
+msgstr "これらの開発ヘッダーは、VLCに対するコーディングを計画している場合に必要です。"
 
 #. leap/vlc/vlc-jack/summary
-#, fuzzy
-#| msgid "GStreamer integration for Clutter"
 msgid "Jack integration for the VLC media player"
-msgstr "Clutter 向け GStreamer 統合"
+msgstr "VLCメディアプレーヤーの Jack 統合"
 
 #. leap/vlc/vlc-jack/description
 msgid "This package adds jack support to vlc via plugins."
-msgstr ""
+msgstr "このパッケージはvlcにプラグイン経由でjackサポートを追加します。"
 
 #. leap/vlc/vlc-lang/summary
 msgid "Translations for package vlc"
@@ -3207,7 +3302,7 @@ msgstr "vlc パッケージ向けの翻訳データです。"
 
 #. leap/vlc/vlc-noX/summary
 msgid "VLC without X dependencies"
-msgstr ""
+msgstr "X依存性のないVLC"
 
 #. leap/vlc/vlc-noX/description
 msgid ""
@@ -3218,42 +3313,41 @@ msgid ""
 "Should you decide to install the GUI modules, vlc-noX will stay installed as "
 "a dependency."
 msgstr ""
+"VLCのこのパッケージには、インストールに必要な基本要件が含まれています。グラフィカル・ユーザー・インターフェースは含まれていないため、たとえばストリーミ"
+"ング・サーバを実行するなど、サーバのインストールにも最適です。\n"
+"\n"
+"GUIモジュールをインストールする場合、vlc-NOxは依存関係としてインストールされたままになります。"
 
 #. leap/vlc/vlc-opencv/summary
-#, fuzzy
-#| msgid "Interface for media player KParts"
 msgid "OpenCV plugins for VLC media player"
-msgstr "メディアプレーヤ KParts 向けインターフェイス"
+msgstr "VLCメディアプレーヤー用OpenCVプラグイン"
 
 #. leap/vlc/vlc-opencv/description
 msgid ""
 "This subpackage provides a wrapper plugin for OpenCV for OpenCV based video "
 "filters and a face detection example."
-msgstr ""
+msgstr "このサブパッケージは、OpenCVベースのビデオフィルタ用のOpenCVのラッパープラグインと、顔検出の例を提供します。"
 
 #. leap/vlc/vlc-qt/summary
-#, fuzzy
-#| msgid "Interface for media player KParts"
 msgid "Qt interface for the VLC media player"
-msgstr "メディアプレーヤ KParts 向けインターフェイス"
+msgstr "VLCメディアプレーヤーのQtインターフェース"
 
 #. leap/vlc/vlc-qt/description
 msgid ""
 "This subpackage provides a Qt interface for VLC and selects it by default "
 "when `vlc` is invoked from an X session."
-msgstr ""
+msgstr "このサブパッケージはVLC用のQtインターフェースを提供し、Xセッションから`vlc`が呼び出されたときにデフォルトでそれを選択します。"
 
 #. leap/vlc/vlc-vdpau/summary
-#, fuzzy
-#| msgid "Interface for media player KParts"
 msgid "Additional vdpau codecs for the VLC media player"
-msgstr "メディアプレーヤ KParts 向けインターフェイス"
+msgstr "VLCメディアプレーヤー用の追加のvdpauコーデック"
 
 #. leap/vlc/vlc-vdpau/description
 msgid ""
 "This package enhances the functionality of the VLC media player by vdpau "
 "codecs that are not available in the stock openSUSE distribution."
 msgstr ""
+"このパッケージは、現在のopenSUSEディストリビューションでは使用できないvdpauコーデックによってVLCメディアプレーヤーの機能を拡張します。"
 
 #. leap/vlgothic-fonts/summary
 msgid "VL-Gothic TrueType font family"
@@ -3272,23 +3366,6 @@ msgid "Tool to Define a Virtual Machine and Install Its Operating System"
 msgstr "仮想マシンを定義して OS をインストールするツール"
 
 #. leap/vm-install/description
-#, fuzzy
-#| msgid ""
-#| "vm-install can define a Xen virtual machine, and cause an operating "
-#| "system to begin installing within that virtual machine.\n"
-#| "\n"
-#| "vm-install can be used in a variety of ways:\n"
-#| "\n"
-#| "* It can be used interactively or non-interactively.\n"
-#| "\n"
-#| "* It can automatically pick reasonable VM defaults for a given type    of "
-#| "operating system.\n"
-#| "\n"
-#| "* It can perform completely non-interactive installs, driven via XML    "
-#| "files and/or command line parameters.\n"
-#| "\n"
-#| "* The  supporting  Python  modules  can  be 'import'-ed into other Python "
-#| "programs, to create VMs programmatically."
 msgid ""
 "vm-install can define a Xen virtual machine, and cause an operating system "
 "to begin installing within that virtual machine.\n"
@@ -3307,35 +3384,32 @@ msgid ""
 "Authors:\n"
 "--------     Charles Coffing <ccoffing@novell.com>"
 msgstr ""
-"vm-install は Xen 仮想マシンを設定し、オペレーティングシステムに対してその仮"
-"想マシン内でのインストールを開始することができます。\n"
+"vm-installはXen仮想マシンを定義し、その仮想マシン内でオペレーティングシステムのインストールを開始させることができます。\n"
 "\n"
-"vm-install は下記のような様々な方法で利用できます:\n"
+"vm-installは次のようなさまざまな方法で使用できます。\n"
+"*対話的または非対話的に使用できます。\n"
+"*特定のタイプのオペレーティングシステムに適したVMのデフォルトを自動的に選択できます。\n"
+"*XMLファイルやコマンドラインパラメータを使用して、完全に非対話型のインストールを実行できます。\n"
+"*サポートするPythonモジュールを他のPythonプログラムに「インポート」して、VMをプログラム的に作成できます。\n"
 "\n"
-"* 対話処理付きでも、対話処理無しでも起動できます。\n"
 "\n"
-"* 指定したオペレーティングシステムの種類に応じた既定値を、自動的に設定するこ"
-"とができます。\n"
 "\n"
-"* XML ファイルやコマンドラインパラメータを利用して、完全に対話処理のない形で"
-"インストールを行なうこともできます。\n"
-"\n"
-"* 仮想マシンを機械的に作成するため、 Python モジュールを他の Python プログラ"
-"ム内に 'インポート' することができます。"
+"著者:\n"
+"--------     Charles Coffing <ccoffing@novell.com>"
 
 #. leap/vmaf/vmaf-devel/summary
 msgid "Development tools for Video Multi-Method Assessment Fusion"
-msgstr ""
+msgstr "Video Multi-Method Assessment Fusionの開発ツール"
 
 #. leap/vmaf/vmaf-devel/description
 msgid ""
 "VMAF is a perceptual video quality assessment algorithm developed by "
 "Netflix. This package contains the library API definitions."
-msgstr ""
+msgstr "VMAFはNetflixが開発した知覚ビデオ品質評価アルゴリズムです。このパッケージには、ライブラリAPI定義が含まれています。"
 
 #. leap/vms-empire/summary
 msgid "Simulation of a full-scale war between two emperors"
-msgstr ""
+msgstr "両皇帝の全面戦争のシミュレーション"
 
 #. leap/vms-empire/description
 msgid ""
@@ -3346,66 +3420,66 @@ msgid ""
 "you do. This game is the ancestor of all the multiplayer 4X simulations out "
 "there, including Civilization and Master of Orion."
 msgstr ""
+"すべての4x(拡張/探索/利用/駆除)ゲームの祖先。VMS-Empireは、コンピュータとあなたという2人の皇帝の間の本格的な戦争のシミュレーションです。"
+"もちろん、1人だけの余地があるので、相手を倒すことがゲームの目的です。コンピュータは、ユーザーが実行するのと同じルールで再生されます。このゲームは、"
+"Civilization and Master of Orionをはじめとする、すべてのマルチプレーヤー4Xシミュレーションの祖先です。"
 
 #. leap/vmtouch/summary
 msgid "Portable file system cache diagnostics and control"
-msgstr ""
+msgstr "ポータブルファイルシステムキャッシュの診断と制御"
 
 #. leap/vmtouch/description
 msgid ""
 "A tool for learning about and controlling the file system cache of unix and "
 "unix-like systems."
-msgstr ""
+msgstr "unixおよびunixライクなシステムのファイルシステムキャッシュについて学習し、制御するためのツール。"
 
 #. leap/vncmanager/summary
-#, fuzzy
 msgid "Session manager for VNC"
-msgstr "X セッションマネージャ"
+msgstr "VNC用のセッションマネージャ"
 
 #. leap/vncmanager/description
 msgid ""
 "Session manager for VNC. It listens on VNC port and spawns Xvnc processes "
 "for incoming clients."
-msgstr ""
+msgstr "VNCのセッションマネージャ。VNCポートでリッスンし、着信クライアントに対してXvncプロセスを生成します。"
 
 #. leap/vncmanager-controller/summary
 #. leap/vncmanager-controller/vncmanager-controller-gnome/summary
-#, fuzzy
 msgid "Configuration application for VNC session"
-msgstr "高可用性クラスタの設定ツール"
+msgstr "VNCセッション用の構成アプリケーション"
 
 #. leap/vncmanager-controller/description
 #. leap/vncmanager-controller/vncmanager-controller-gnome/description
 msgid ""
 "This is configuration application to configure sharing and security from "
 "inside VNC session."
-msgstr ""
+msgstr "これは、VNCセッション内から共有とセキュリティを設定するための設定アプリケーションです。"
 
 #. leap/vncmanager-greeter/summary
-#, fuzzy
 msgid "Greeter for VNC session manager"
-msgstr "X セッションマネージャ"
+msgstr "VNCセッションマネージャ用のGreeter"
 
 #. leap/vncmanager-greeter/description
 msgid ""
 "This is graphical greeter that appears when VNC client connects to VNC "
 "manager."
-msgstr ""
+msgstr "これは、VNCクライアントがVNCマネージャに接続したときに表示されるグラフィカル挨拶です。"
 
 #. leap/vnote/summary
 msgid "A Vim-inspired note-taking application, especially for Markdown"
-msgstr ""
+msgstr "Vimからヒントを得たメモ作成アプリケーション(特にMarkdown用)"
 
 #. leap/vnote/description
 msgid ""
 "VNote is a note-taking application, designed especially for Markdown. VNote "
 "provides both note management and Markdown edit experience."
 msgstr ""
+"VNoteはメモを取るアプリケーションで、特にMarkdown用に設計されています。VNoteは、ノート管理とマークダウン編集の両方の機能を提供します。"
 
 #. leap/vnstat/summary
-#, fuzzy
 msgid "Network Traffic Monitor"
-msgstr "ネットワークトラフィックアナライザ"
+msgstr "ネットワークトラフィックモニタ"
 
 #. leap/vnstat/description
 msgid ""
@@ -3414,11 +3488,12 @@ msgid ""
 "sniffer. The traffic information is analyzed from the /proc filesystem, so "
 "vnStat can be used without root permissions."
 msgstr ""
+"vnStatは、Linux用のネットワークトラフィックモニタで、選択したインターフェイスの毎日のネットワークトラフィックのログを保持します。vnStatは"
+"パケットスニファではありません。トラフィック情報は/procファイルシステムから分析されるので、vnStatはroot権限なしで使用できます。"
 
 #. leap/vnstat/vnstat-cgi/summary
-#, fuzzy
 msgid "Graph Visualization CGI Script for vnstat"
-msgstr "グラフ視覚化ツール"
+msgstr "vnstat用グラフ視覚化CGIスクリプト"
 
 #. leap/vnstat/vnstat-cgi/description
 msgid ""
@@ -3430,11 +3505,14 @@ msgid ""
 "This package contains a CGI script that visualizes graphs of the collected "
 "traffic statistics."
 msgstr ""
+"vnStatは、Linux用のネットワークトラフィックモニタで、選択したインターフェイスの毎日のネットワークトラフィックのログを保持します。vnStatは"
+"パケットスニファではありません。トラフィック情報は/procファイルシステムから分析されるので、vnStatはroot権限なしで使用できます。\n"
+"\n"
+"このパッケージには、収集されたトラフィック統計情報のグラフを視覚化するCGIスクリプトが含まれています。"
 
 #. leap/vocal/summary
-#, fuzzy
 msgid "A podcast client for the desktop"
-msgstr "Okteta は KDE デスクトップにおける 16 進数エディタです。"
+msgstr "デスクトップ向けのポッドキャストクライアント"
 
 #. leap/vocal/description
 msgid ""
@@ -3443,6 +3521,8 @@ msgid ""
 "library management, library importing and exporting, custom skip intervals, "
 "and more."
 msgstr ""
+"Elementary OSおよびその他のGTKベースのLinuxデスクトップ用に設計されたポッドキャストアプリケーション。内蔵ビデオプレーヤー、自動更新、"
+"スマートライブラリ管理、ライブラリのインポートとエクスポート、カスタムスキップ間隔などが含まれます。"
 
 #. leap/vocal/vocal-lang/summary
 msgid "Translations for package vocal"
@@ -3453,9 +3533,8 @@ msgid "Provides translations for the \"vocal\" package."
 msgstr "vocal パッケージ向けの翻訳データです。"
 
 #. leap/vodovod/summary
-#, fuzzy
 msgid "Pipe connecting action puzzle game"
-msgstr "パス仕様を処理するためのクロスプロットフォームモジュール"
+msgstr "パイプ接続アクションパズルゲーム"
 
 #. leap/vodovod/description
 msgid ""
@@ -3466,48 +3545,49 @@ msgid ""
 "score. Some of the levels also have obstacles where pipes cannot be placed. "
 "The game is playable with joystick/joypad as well."
 msgstr ""
+"各レベルには限られた数のパイプがあり、それらを組み合わせて、スクリーンの上部にある家からの水が下部にある貯蔵タンクに流れるようにする必要があります。ポイン"
+"トは水が流れるパイプセグメントごとに与えられ、ゲームの目標は高いスコアに到達することです。一部のレベルには、パイプを配置できない障害物もあります。このゲー"
+"ムはジョイスティック/ジョイパッドでもプレイできます。"
 
 #. leap/vokoscreenNG/summary
 msgid "Screencast creator"
-msgstr ""
+msgstr "スクリーンキャスト作成ツール"
 
 #. leap/vokoscreenNG/description
 msgid ""
 "vokoscreenNG is a user friendly Open Source screencaster for Linux and "
 "Windows."
-msgstr ""
+msgstr "vokoscreenNGは、LinuxおよびWindows用のユーザーフレンドリーなオープンソースscreencasterです。"
 
 #. leap/volk/summary
 msgid "Vector-Optimized Library of Kernels"
-msgstr ""
+msgstr "カーネルのベクトル最適化ライブラリ"
 
 #. leap/volk/description
 msgid ""
 "VOLK provides a library of vector-optimized kernels. It is a subproject of "
 "GNU Radio, but can also be used standalone."
-msgstr ""
+msgstr "VOLK はベクトル最適化カーネルのライブラリを提供しています。これはGNU Radioのサブプロジェクトですが、単独で使うこともできます。"
 
 #. leap/volk/volk-devel/summary
-#, fuzzy
 msgid "Development files for VOLK"
-msgstr "GeoIP 向け開発ファイル"
+msgstr "VOLK 用開発ファイル"
 
 #. leap/volk/volk-devel/description
-#, fuzzy
 msgid "This package provides the the development files for VOLK."
-msgstr "このパッケージには qtwebkit 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージは、VOLK 用の開発ファイルを提供します。"
 
 #. leap/volk/volk_modtool/summary
 msgid "VOLK modtool"
-msgstr ""
+msgstr "VOLK modtool"
 
 #. leap/volk/volk_modtool/description
 msgid "This package provides volk_modtool, used for creating new VOLK kernels."
-msgstr ""
+msgstr "このパッケージは、新しい VOLK カーネルの作成に使用されるウォルク_modtoolを提供します。"
 
 #. leap/vollkorn-fonts/summary
 msgid "A serif font for everyday use"
-msgstr ""
+msgstr "日常的に使用する serif フォント"
 
 #. leap/vollkorn-fonts/description
 msgid ""
@@ -3517,21 +3597,16 @@ msgid ""
 "(\"Vollkorn\" is German for »wholemeal« which refers to the old term "
 "\"Brotschrift\".)"
 msgstr ""
+"Vollkornは、暗くて肉のような serif "
+"と弾むような表情を持つテキストフェースです。ヘッドラインやタイトルだけでなく、ボディタイプとしても使用できます。\n"
+"\n"
+"(「Vollkorn」はドイツ語で「Brotschrift」という古い用語を意味する「ホールミール」を意味します。)"
 
 #. leap/vorbis-tools/summary
 msgid "Ogg Vorbis Tools"
 msgstr "Ogg Vorbis ツール"
 
 #. leap/vorbis-tools/description
-#, fuzzy
-#| msgid ""
-#| "This package contains some tools for Ogg Vorbis:\n"
-#| "\n"
-#| "oggenc (an encoder) and ogg123 (a playback tool). It also has "
-#| "vorbiscomment (to add comments to Vorbis files), ogginfo (to give all "
-#| "useful information about an Ogg file, including streams in it), oggdec (a "
-#| "simple command line decoder), and vcut (which allows you to cut up Vorbis "
-#| "files)."
 msgid ""
 "This package contains some tools for Ogg Vorbis:\n"
 "\n"
@@ -3548,12 +3623,19 @@ msgid ""
 "Boessenkool <segher@xiph.org>     Michael Gold <mgold@ncf.ca>     "
 "Xiphophorus Company <team@xiph.org>"
 msgstr ""
-"このパッケージには Ogg Vorbis 向けの各種ツールが含まれています:\n"
+"このパッケージには、Ogg Vorbis 用のツールがか含まれています。\n"
 "\n"
-"oggenc (エンコーダ) と ogg123 (再生ツール) のほか、 vorbiscomment (Vorbisファ"
-"イルにコメントを追加するツール), ogginfo (ストリームなど、 Ogg ファイルに対す"
-"るすべての情報を取得するツール), oggdec (シンプルなコマンドラインデコーダ), "
-"vcut (Vorbis ファイルを切り出すツール) などがあります。"
+"oggenc (エンコーダ)および ogg123 (再生ツール)。また、vorbiscomment (Vorbis ファイルにコメントを追加するため)、"
+"ogginfo (ストリームを含む Ogg ファイルに関するすべての有用な情報を提供するため)、oggdec (シンプルなコマンドラインデコーダ)、"
+"vcut (Vorbis ファイルをカットするため)もあります。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Michael Smith <msmith@xiph.org>     Kenneth Arnold <kcarnold-"
+"xiph@arnoldnet.net>     Stan Seibert <volsung@xiph.org>     Segher "
+"Boessenkool <segher@xiph.org>     Michael Gold <mgold@ncf.ca>     "
+"Xiphophorus Company <team@xiph.org>"
 
 #. leap/vorbis-tools/vorbis-tools-lang/summary
 msgid "Translations for package vorbis-tools"
@@ -3565,7 +3647,7 @@ msgstr "vorbis-tools パッケージ向けの翻訳データです。"
 
 #. leap/vorbisgain/summary
 msgid "Calculate the Replay Gain for Ogg Vorbis files"
-msgstr ""
+msgstr "Ogg Vorbisファイルの再生ゲインを計算"
 
 #. leap/vorbisgain/description
 msgid ""
@@ -3587,6 +3669,17 @@ msgid ""
 "The end result is that playback is both more convenient and of higher "
 "quality compared to a non-VorbisGain'ed file."
 msgstr ""
+"Ogg Vorbis ファイルの再生ゲインを計算\n"
+"\n"
+"VorbisGain は、心理音響法を使用してOgg Vorbis "
+"ファイルのボリュームを事前定義された標準化されたラウドネスに補正するユーティリティです。\n"
+"\n"
+"これは、符号化の前に一般的に使用される正規化の代替として意味されます。正規化によって各曲のピーク音量が同じになることは保証されますが、残念ながら、これは音"
+"楽の見かけの音量については何も言いません。その結果、多くの正規化されたファイルは依然として同じように大きく聞こえません。VorbisGain はこの欠点に"
+"対処するために心理音響学を利用しています。さらに、正規化とは異なり、これはファイルにタグを追加することによって機能する可逆手続きです。さらに、再生時にクリ"
+"ッピングを防ぐためのヒントも追加されます。これはReplayGain技術に基づいています。\n"
+"\n"
+"その結果、非VorbisGain'edファイルと比較して、再生がより便利で高品質になります。"
 
 #. leap/voro++/description
 msgid ""
@@ -3598,11 +3691,13 @@ msgid ""
 "cells (e.g. volume, centroid, number of faces) can be used to analyze a "
 "system of particles."
 msgstr ""
+"Voro++は、ボロノイ面分割の三次元計算を行うためのソフトウェアライブラリです。Voro++ ライブラリーの際立った特徴は、細胞ベースの計算を実行し、各"
+"粒子のボロノイ細胞を個別に計算することです。これは、ボロノイセルの特徴(例えば、体積、重心、面の数)を使用して粒子のシステムを分析することができる、セルベ"
+"ースの統計に依存するアプリケーションに特に適しています。"
 
 #. leap/voro++/voro++-devel/summary
-#, fuzzy
 msgid "Development headers and libraries for voro++"
-msgstr "Marble 向けの開発用ヘッダとライブラリです。"
+msgstr "voro++用の開発ヘッダとライブラリ"
 
 #. leap/voro++/voro++-devel/description
 msgid ""
@@ -3616,10 +3711,15 @@ msgid ""
 "\n"
 "This package contains development headers and libraries for voro++."
 msgstr ""
+"Voro++は、ボロノイ面分割の三次元計算を行うためのソフトウェアライブラリです。Voro++ ライブラリーの際立った特徴は、細胞ベースの計算を実行し、各"
+"粒子のボロノイ細胞を個別に計算することです。これは、ボロノイセルの特徴(例えば、体積、重心、面の数)を使用して粒子のシステムを分析することができる、セルベ"
+"ースの統計に依存するアプリケーションに特に適しています。\n"
+"\n"
+"このパッケージには、voro++用の開発ヘッダーとライブラリが含まれています。"
 
 #. leap/vorta/summary
 msgid "Desktop Backup Client based on BorgBackup"
-msgstr ""
+msgstr "BorgBackupベースのデスクトップバックアップクライアント"
 
 #. leap/vorta/description
 msgid ""
@@ -3627,11 +3727,12 @@ msgid ""
 "the desktop environment to protect data from disk failure, ransomware and "
 "theft."
 msgstr ""
+"VortaはLinuxデスクトップ用のバックアップクライアントです。BorgBackupとデスクトップ環境を統合し、ディスク障害、ランサムウェア、盗難から"
+"データを保護します。"
 
 #. leap/votca-csg/summary
-#, fuzzy
 msgid "VOTCA coarse-graining engine"
-msgstr "HTML レンダリングエンジン"
+msgstr "VOTCA粗粒化エンジン"
 
 #. leap/votca-csg/description
 msgid ""
@@ -3641,10 +3742,14 @@ msgid ""
 "\n"
 "This package contains the Coarse Graining Engine of VOTCA."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCAの粗粒化エンジンが入っています。"
 
 #. leap/votca-csg/votca-csg-bash/summary
 msgid "Bash completion for votca"
-msgstr ""
+msgstr "votca向けのBash補完"
 
 #. leap/votca-csg/votca-csg-bash/description
 msgid ""
@@ -3655,10 +3760,15 @@ msgid ""
 "\n"
 "This package contains the bash completion support for votca-csg."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining Applications(VOTCA)は,各種"
+"システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。反復メソッドはbash+perlを使って実装されま"
+"す。\n"
+"\n"
+"このパッケージには、votca-csgのbash補完サポートが含まれています。"
 
 #. leap/votca-csg/votca-csg-common/summary
 msgid "Architecture-independent data files for VOTCA CSG"
-msgstr ""
+msgstr "VOTCA CSGのアーキテクチャに依存しないデータファイル"
 
 #. leap/votca-csg/votca-csg-common/description
 msgid ""
@@ -3668,25 +3778,24 @@ msgid ""
 "\n"
 "This package contains the architecture-independent data files for VOTCA CSG."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCA CSGのアーキテクチャに依存しないデータファイルが含まれています。"
 
 #. leap/votca-csg/votca-csg-devel/summary
-#, fuzzy
 msgid "Development headers and libraries for the VOTCA Coarse Graining Engine"
-msgstr "Marble 向けの開発用ヘッダとライブラリです。"
+msgstr "VOTCA粗粒化エンジンの開発ヘッダとライブラリ"
 
 #. leap/votca-csg/votca-csg-devel/description
-#, fuzzy
 msgid ""
 "This package contains development headers and libraries for the VOTCA Coarse "
 "Graining Engine."
-msgstr ""
-"このパッケージには、 MariaDB をアプリケーションに組み込む開発を行なうのに必要"
-"な、ヘッダファイルとライブラリファイルが含まれています。"
+msgstr "このパッケージには、VOTCA粗粒度エンジン用の開発ヘッダーとライブラリが含まれています。"
 
 #. leap/votca-csg/votca-csg-doc/summary
-#, fuzzy
 msgid "Manual for VOTCA Coarse Graining Engine"
-msgstr "HTML レンダリングエンジン"
+msgstr "VOTCA粗粒化エンジンマニュアル"
 
 #. leap/votca-csg/votca-csg-doc/description
 msgid ""
@@ -3696,10 +3805,14 @@ msgid ""
 "\n"
 "This package contains the PDF manual."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージにはPDFマニュアルが含まれています。"
 
 #. leap/votca-csg/votca-csg-tutorials/summary
 msgid "Tutorial documentation for VOTCA Coarse Graining Engine"
-msgstr ""
+msgstr "VOTCA粗粒化エンジンのチュートリアルドキュメント"
 
 #. leap/votca-csg/votca-csg-tutorials/description
 msgid ""
@@ -3709,10 +3822,14 @@ msgid ""
 "\n"
 "This package contains the tutorial documentation and sample data."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、チュートリアルのドキュメントとサンプルデータが含まれています。"
 
 #. leap/votca-csgapps/summary
 msgid "VOTCA coarse-graining engine applications"
-msgstr ""
+msgstr "VOTCA粗粒化エンジンアプリケーション"
 
 #. leap/votca-csgapps/description
 msgid ""
@@ -3723,6 +3840,10 @@ msgid ""
 "This package contains sample applications of the VOTCA Coarse Graining "
 "Engine."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCA粗粒化エンジンのサンプルアプリケーションが含まれています。"
 
 #. leap/votca-tools/description
 msgid ""
@@ -3730,11 +3851,12 @@ msgid ""
 "is a package to reduce the amount of routine work when doing systematic "
 "coarse-graining of various systems. The core is written in C++."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。"
 
 #. leap/votca-tools/votca-tools-devel/summary
-#, fuzzy
 msgid "Development headers and libraries for votca-tools"
-msgstr "Marble 向けの開発用ヘッダとライブラリです。"
+msgstr "votca-tools 用開発ヘッダとライブラリ"
 
 #. leap/votca-tools/votca-tools-devel/description
 msgid ""
@@ -3744,10 +3866,14 @@ msgid ""
 "\n"
 "This package contains development headers and libraries for votca-tools."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、votca-tools 用の開発ヘッダーとライブラリが含まれています。"
 
 #. leap/voxelands/summary
 msgid "An InfiniMiner/Minecraft inspired game"
-msgstr ""
+msgstr "InfiniMiner/マインクラフトにインスパイアされたゲーム"
 
 #. leap/voxelands/description
 msgid ""
@@ -3760,11 +3886,16 @@ msgid ""
 "else their creativity can think of on multiplayer servers and singleplayer "
 "worlds across multiple game modes."
 msgstr ""
+"Voxelandsは、Minetest、マインクラフト、Infiniminerなどの初期の「voxel ワールド」スタイルのゲームに触発されたサンドボック"
+"ス構築ゲームです。ゲームプレイでは、プレイヤーは完全に破壊可能な3Dゲームの世界に入り、さまざまなツールを使ってさまざまな種類のブロック、アイテム、生物を"
+"配置したり、掘り起こしたりできます。\n"
+"\n"
+"ゲーム内では、プレイヤーは複数のゲームモードにまたがるマルチプレーヤーサーバーやシングルプレイヤーの世界で、構造物やアート作品など、創造性が考えられるあら"
+"ゆるものを構築することができます。"
 
 #. leap/vpcs/summary
-#, fuzzy
 msgid "Virtual PC Simulator"
-msgstr "VirtualBox エミュレータ"
+msgstr "仮想PCシミュレータ"
 
 #. leap/vpcs/description
 msgid ""
@@ -3782,6 +3913,16 @@ msgid ""
 "receives the packets via udp. In the ether mode, via /dev/tap, not support "
 "on the Windows."
 msgstr ""
+"VPCSは最大9台のPCをシミュレートできます。DynamipsのCiscoルータを調査する場合は、仮想PCからping/"
+"tracerouteを実行するか、または他のホスト/ルータにping/tracerouteを実行できます。VPCSは従来のPCではなく、LinuxやWin"
+"dows上で実行されているプログラムであり、使用できるネットワークコマンドはごくわずかです。しかし、VPCSは、Dynamipsで Cisco デバイスを"
+"研究する際に大きな役割を果たします。VPCSは、DynamipsネットワークでPCとして使用されているルータまたはVMwareボックスを置き換えることがで"
+"きます。\n"
+"\n"
+"VPCSを使用すると、CPU/メモリを節約できます。とても小さいです。\n"
+"\n"
+"VPCSはudpモードまたはetherモードで実行できるようになりました。udpモードでは、VPCSはudp経由でパケットを送受信します。etherモード"
+"(/dev/tap経由)では、Windowsではサポートされていません。"
 
 #. leap/vpnc/summary
 msgid "A Client for Cisco VPN concentrator"
@@ -3823,33 +3964,30 @@ msgid ""
 "vector packet engine API test tool vpp_json_test - vector packet engine JSON "
 "test tool"
 msgstr ""
+"Vector Packet Processingプラットフォームは、スイッチ/ルータ機能を提供するフレームワークです。これはCiscoのパケット処理スタッ"
+"クをベースにしており、一般的なCPUで実行できます。このパッケージはVPP実行可能ファイルを提供します:"
+"vpp,vpp_api_test,vpp_json_test vpp-ベクトルパケットエンジンvpp_api_test-"
+"ベクトルパケットエンジンAPIテストツールvpp_json_test-ベクトルパケットエンジンJSONテストツール"
 
 #. leap/vpp/vpp-api-lua/summary
 msgid "VPP api lua bindings"
-msgstr ""
+msgstr "VPP api luaバインディング"
 
 #. leap/vpp/vpp-api-lua/description
-#, fuzzy
 msgid "This package contains the lua bindings for the vpp api"
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、vpp apiのluaバインディングが含まれています。"
 
 #. leap/vpp/vpp-api-python/summary
-#, fuzzy
 msgid "VPP api python bindings"
-msgstr "KDE 4 向け Python バインディング"
+msgstr "VPP api Pythonバインディング"
 
 #. leap/vpp/vpp-api-python/description
-#, fuzzy
 msgid "This package contains the python bindings for the vpp api"
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、vpp api 用の python バインディングが含まれています。"
 
 #. leap/vpp/vpp-devel/summary
 msgid "VPP header files, static libraries"
-msgstr ""
+msgstr "VPPヘッダファイル、スタティックライブラリ"
 
 #. leap/vpp/vpp-devel/description
 msgid ""
@@ -3858,16 +3996,18 @@ msgid ""
 "vlibmemory vnet - devices, classify, dhcp, ethernet flow, gre, ip, etc. vpp-"
 "api vppinfra"
 msgstr ""
+"このパッケージには、VPPのヘッダファイルが含まれています。コンパイル用のプログラムを作成し、vpp "
+"libでリンクする場合は、このパッケージをインストールします。vlib vlibmemory vnet-devices、classify、dhcp、"
+"ethernet flow、gre、ipなどvpp-api vppinfra"
 
 #. leap/vpp/vpp-plugins/summary
 msgid "Vector Packet Processing--runtime plugins"
-msgstr ""
+msgstr "ベクトルパケット処理--ランタイムプラグイン"
 
 #. leap/vpp/vpp-plugins/description
-#, fuzzy
 msgid ""
 "This package contains the VPP plugins which are loaded by VPP at startup"
-msgstr "このパッケージには、 libpisock 向けの開発ヘッダが含まれています。"
+msgstr "このパッケージには、起動時にVPPによってロードされるVPPプラグインが含まれています。"
 
 #. leap/vsftpd/summary
 msgid "Very Secure FTP Daemon - Written from Scratch"
@@ -3891,18 +4031,16 @@ msgstr ""
 " vsftpd は常に このソフトウエアより素早く動作し、多数のユーザが行なったテストでは 2 倍程度高速であることが示されています。"
 
 #. leap/vsqlite++/vsqlite++-devel/summary
-#, fuzzy
 msgid "Development files for vsqlite++"
-msgstr "stoken 向け開発用ファイル"
+msgstr "vsqlite++用開発ファイル"
 
 #. leap/vsqlite++/vsqlite++-devel/description
-#, fuzzy
 msgid "This package contains development files for vsqlite++."
-msgstr "このパッケージには qtwebkit 向けの開発用ファイルが含まれています。"
+msgstr "このパッケージには、vsqlite++用の開発ファイルが含まれています。"
 
 #. leap/vtable-dumper/summary
 msgid "Tool to list content of virtual tables in a C++ shared library"
-msgstr ""
+msgstr "C++共有ライブラリの仮想テーブルのコンテンツを一覧表示するツール"
 
 #. leap/vtable-dumper/description
 msgid ""
@@ -3910,18 +4048,14 @@ msgid ""
 "maintainers of Linux distributions who are interested in ensuring backward "
 "binary compatibility."
 msgstr ""
+"vtable-"
+"dumperは、後方バイナリ互換性の確保に関心のあるソフトウェアライブラリの開発者とLinuxディストリビューションのメンテナーを対象としています。"
 
 #. leap/vtcl/summary
 msgid "Visual Tcl"
 msgstr "ビジュアル Tcl"
 
 #. leap/vtcl/description
-#, fuzzy
-#| msgid ""
-#| "Visual Tcl is a freely-available, high-quality application development "
-#| "environment for UNIX, Windows, and Macintosh platforms. Writing entirely "
-#| "in Tcl and generating pure Tcl should make porting either unnecessary or "
-#| "trivial."
 msgid ""
 "Visual Tcl is a freely-available, high-quality application development "
 "environment for UNIX, Windows, and Macintosh platforms. Writing entirely in "
@@ -3933,15 +4067,18 @@ msgid ""
 "Authors:\n"
 "--------     Stewart Allen <stewart@neuron.com>"
 msgstr ""
-"ビジュアル Tcl は無償で利用できる UNIX, Windows, Macintosh プラットフォーム "
-"向け高品質アプリケーション開発環境です。全体的に Tcl で 記述を行ない純粋な "
-"Tcl を生成することで、移植での面倒や手間を省きます。"
+"Visual Tclは、UNIX、Windows、およびMacintoshプラットフォーム用の、無料で利用可能な高品質のアプリケーション開発環境です。完全"
+"にTclで書き、純粋なTclを生成することは、移植を不必要にするか、ささいなものにすべきです。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Stewart Allen <stewart@neuron.com>"
 
 #. leap/vte/vte-devel/summary
 #. leap/vte2/vte2-devel/summary
-#, fuzzy
 msgid "Development files for the VTE terminal emulator library"
-msgstr "libraw 向け開発用ファイル"
+msgstr "VTEターミナルエミュレータライブラリ用の開発ファイル"
 
 #. leap/vte/vte-devel/description
 #. leap/vte2/vte2-devel/description
@@ -3968,11 +4105,10 @@ msgstr "vte パッケージ向けの翻訳データです。"
 
 #. leap/vte/vte-tools/summary
 msgid "Tools from the VTE terminal emulator package"
-msgstr ""
+msgstr "VTEターミナルエミュレータパッケージのツール"
 
 #. leap/vte/vte-tools/description
 #. leap/vte2/vte2-tools/description
-#, fuzzy
 msgid ""
 "VTE is a terminal emulator library that provides a terminal widget for use "
 "with GTK+ as well as handling of child process and terminal emulation "
@@ -3980,12 +4116,10 @@ msgid ""
 "\n"
 "This package provides tools using VTE."
 msgstr ""
-"VTE は GTK+ 2.0 向けの端末ウイジェットを提供する端末エミュレータライブラリ"
-"で、 子プロセスの処理や端末エミュレーション設定などの機能を備えています。 こ"
-"のパッケージには追加のドキュメンテーションが含まれています。\n"
+"VTEはターミナルエミュレータライブラリであり、GTK+で使用するためのターミナルウィジェットと、子プロセスおよびターミナルエミュレーション設定の処理を提"
+"供します。\n"
 "\n"
-"このパッケージには、 VTE に対する GObject イントロスペクションバインディング"
-"が含まれています。"
+"このパッケージは、VTEを使用するツールを提供します。"
 
 #. leap/vte2/vte2-lang/summary
 msgid "Translations for package vte2"
@@ -3996,16 +4130,14 @@ msgid "Provides translations for the \"vte2\" package."
 msgstr "vte2 パッケージ向けの翻訳データです。"
 
 #. leap/vte2/vte2-tools/summary
-#, fuzzy
-#| msgid "Terminal Emulator Library"
 msgid "Tools from the VTE terminal emulator library"
-msgstr "端末エミュレータライブラリ"
+msgstr "VTEターミナルエミュレータライブラリからのツール"
 
 #. leap/vtk/vtk-devel/summary
 #. leap/vtk-openmpi2/vtk-openmpi2-devel/summary
 #. leap/vtk-openmpi3/vtk-openmpi3-devel/summary
 msgid "VTK header files for building C++ code"
-msgstr ""
+msgstr "C++コードを構築するためのヘッダファイルのVTK"
 
 #. leap/vtk/vtk-devel/description
 #. leap/vtk-openmpi2/vtk-openmpi2-devel/description
@@ -4019,13 +4151,16 @@ msgid ""
 "This provides development libraries and header files required to compile C++ "
 "programs that use VTK to do 3D visualisation."
 msgstr ""
+"VTKは画像処理,3Dグラフィックス,ボリュームレンダリング,視覚化のためのソフトウェアシステムです。VTKには、多くの高度なアルゴリズム(サーフェス再構"
+"築、暗黙的モデリング、デシメーションなど)とレンダリング技術(ハードウェア加速ボリュームレンダリング、LOD制御など)が含まれます。\n"
+"\n"
+"これは、VTKを使用して3D可視化を行うC++プログラムをコンパイルするために必要な開発ライブラリとヘッダファイルを提供します。"
 
 #. leap/vtk/vtk-devel-doc/summary
 #. leap/vtk-openmpi2/vtk-openmpi2-devel-doc/summary
 #. leap/vtk-openmpi3/vtk-openmpi3-devel-doc/summary
-#, fuzzy
 msgid "VTK API documentation"
-msgstr "smb4k 向けドキュメンテーション"
+msgstr "VTK APIドキュメント"
 
 #. leap/vtk/vtk-devel-doc/description
 #. leap/vtk-openmpi2/vtk-openmpi2-devel-doc/description
@@ -4039,13 +4174,16 @@ msgid ""
 "This provides the VTK API documentation useful for developing programs that "
 "use VTK to do 3D visualisation."
 msgstr ""
+"VTKは画像処理,3Dグラフィックス,ボリュームレンダリング,視覚化のためのソフトウェアシステムです。VTKには、多くの高度なアルゴリズム(サーフェス再構"
+"築、暗黙的モデリング、デシメーションなど)とレンダリング技術(ハードウェア加速ボリュームレンダリング、LOD制御など)が含まれます。\n"
+"\n"
+"これは、VTKを使用して3D視覚化を行うプログラムを開発するために役立つVTK APIドキュメントを提供します。"
 
 #. leap/vtk/vtk-java/summary
 #. leap/vtk-openmpi2/vtk-openmpi2-java/summary
 #. leap/vtk-openmpi3/vtk-openmpi3-java/summary
-#, fuzzy
 msgid "Java bindings for VTK"
-msgstr "Python 向け udev バインディング"
+msgstr "VTK用Javaバインディング"
 
 #. leap/vtk/vtk-java/description
 #. leap/vtk-openmpi2/vtk-openmpi2-java/description
@@ -4058,13 +4196,16 @@ msgid ""
 "\n"
 "This package provides java bindings for VTK."
 msgstr ""
+"VTKは画像処理,3Dグラフィックス,ボリュームレンダリング,視覚化のためのソフトウェアシステムです。VTKには、多くの高度なアルゴリズム(サーフェス再構"
+"築、暗黙的モデリング、デシメーションなど)とレンダリング技術(ハードウェア加速ボリュームレンダリング、LOD制御など)が含まれます。\n"
+"\n"
+"このパッケージは、VTK用のJavaバインディングを提供します。"
 
 #. leap/vtk-openmpi2/vtk-openmpi2-qt/summary
 #. leap/vtk-openmpi3/vtk-openmpi3-qt/summary
 #. leap/vtk/vtk-qt/summary
-#, fuzzy
 msgid "Qt Designer plugin for QVTKWidget"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "QVTKWidget 用 Qt Designerプラグイン"
 
 #. leap/vtk-openmpi2/vtk-openmpi2-qt/description
 #. leap/vtk-openmpi3/vtk-openmpi3-qt/description
@@ -4077,11 +4218,14 @@ msgid ""
 "\n"
 "This package provides a Qt Designer plugin for the QVTKWidget."
 msgstr ""
+"VTKは画像処理,3Dグラフィックス,ボリュームレンダリング,視覚化のためのソフトウェアシステムです。VTKには、多くの高度なアルゴリズム(サーフェス再構"
+"築、暗黙的モデリング、デシメーションなど)とレンダリング技術(ハードウェア加速ボリュームレンダリング、LOD制御など)が含まれます。\n"
+"\n"
+"このパッケージは、QVTKWidget用のQt Designerプラグインを提供します。"
 
 #. leap/vtkdata/summary
-#, fuzzy
 msgid "Kitware VTK Library Data"
-msgstr "ハードウエアライブラリ"
+msgstr "Kitware VTKライブラリデータ"
 
 #. leap/vtkdata/description
 msgid ""
@@ -4091,10 +4235,14 @@ msgid ""
 "\n"
 "This package contains some example data for the Toolkit."
 msgstr ""
+"Visualization ToolKit(VTK)は、世界中の何千人もの研究者や開発者が使用している、3Dコンピュータグラフィックス、画像処理、視覚化の"
+"ためのオープンソースで自由に利用できるソフトウェアシステムです。\n"
+"\n"
+"このパッケージには、Toolkitのサンプル・データが含まれています。"
 
 #. leap/vulkan/summary
 msgid "Vulkan loader and validation layers"
-msgstr ""
+msgstr "Vulkanローダ層と検証層"
 
 #. leap/vulkan/description
 msgid ""
@@ -4105,12 +4253,15 @@ msgid ""
 "This package contains the reference ICD loader and validation layers for "
 "Vulkan."
 msgstr ""
+"Vulkanは3DグラフィックスおよびコンピューティングAPIであり、オーバーヘッドの低い最新のGPUへのクロスプラットフォームアクセスを提供し、ゲームや"
+"インタラクティブメディアなどのリアルタイムグラフィックスアプリケーションをターゲットにしています。\n"
+"\n"
+"このパッケージには、参照ICDローダーとVulkanのための検証レイヤが含まれています。"
 
 #. leap/vulkan-loader/vulkan-devel/summary
 #. leap/vulkan/vulkan-devel-32bit/summary
-#, fuzzy
 msgid "Vulkan development package"
-msgstr "EsounD 開発パッケージ"
+msgstr "Vulkan開発パッケージ"
 
 #. leap/vulkan-loader/vulkan-devel/description
 #. leap/vulkan/vulkan-devel-32bit/description
@@ -4122,10 +4273,14 @@ msgid ""
 "This subpackage contains the development headers for packages wanting to "
 "make use of Vulkan."
 msgstr ""
+"Vulkanは3DグラフィックスおよびコンピューティングAPIであり、オーバーヘッドの低い最新のGPUへのクロスプラットフォームアクセスを提供し、ゲームや"
+"インタラクティブメディアなどのリアルタイムグラフィックスアプリケーションをターゲットにしています。\n"
+"\n"
+"このサブパッケージには、Vulkanを利用したいパッケージ用の開発ヘッダーが含まれています。"
 
 #. leap/vulkan-doc/summary
 msgid "Formal documentation of the Vulkan API"
-msgstr ""
+msgstr "Vulkan APIの正式な文書"
 
 #. leap/vulkan-doc/description
 msgid ""
@@ -4135,10 +4290,13 @@ msgid ""
 " * The Vulkan API Specification  * Specification of Vulkan extensions  * API "
 "reference (\"manual\") pages"
 msgstr ""
+"このパッケージには、次のようなVulkan APIの正式なドキュメントが含まれています。\n"
+"\n"
+" *Vulkan API仕様*Vulkan拡張仕様*APIリファレンス(「マニュアル」)ページ"
 
 #. leap/vulkan-headers/summary
 msgid "Vulkan C and C++ API header files"
-msgstr ""
+msgstr "Vulkan C/C++APIヘッダファイル"
 
 #. leap/vulkan-headers/description
 msgid ""
@@ -4149,10 +4307,14 @@ msgid ""
 "This package contains the development headers for packages wanting to make "
 "use of Vulkan."
 msgstr ""
+"Vulkanは3DグラフィックスおよびコンピューティングAPIであり、オーバーヘッドの低い最新のGPUへのクロスプラットフォームアクセスを提供し、ゲームや"
+"インタラクティブメディアなどのリアルタイムグラフィックスアプリケーションをターゲットにしています。\n"
+"\n"
+"このパッケージには、Vulkanを利用したいパッケージ用の開発ヘッダーが含まれています。"
 
 #. leap/vulkan-tools/summary
 msgid "Diagnostic utilities for Vulkan"
-msgstr ""
+msgstr "Vulkanの診断ユーティリティ"
 
 #. leap/vulkan-tools/description
 msgid ""
@@ -4162,10 +4324,14 @@ msgid ""
 "\n"
 "This package contains the Khronos official Vulkan tools and utilities."
 msgstr ""
+"Vulkanは3DグラフィックスおよびコンピューティングAPIであり、オーバーヘッドの低い最新のGPUへのクロスプラットフォームアクセスを提供し、ゲームや"
+"インタラクティブメディアなどのリアルタイムグラフィックスアプリケーションをターゲットにしています。\n"
+"\n"
+"このパッケージには、Khronosの公式Vulkanツールとユーティリティが含まれています。"
 
 #. leap/vulkan-validationlayers/summary
 msgid "Validation layers for Vulkan"
-msgstr ""
+msgstr "Vulkanの検証レイヤ"
 
 #. leap/vulkan-validationlayers/description
 msgid ""
@@ -4175,57 +4341,46 @@ msgid ""
 "\n"
 "This package contains the Khronos official Vulkan validation layers."
 msgstr ""
+"Vulkanは3DグラフィックスおよびコンピューティングAPIであり、オーバーヘッドの低い最新のGPUへのクロスプラットフォームアクセスを提供し、ゲームや"
+"インタラクティブメディアなどのリアルタイムグラフィックスアプリケーションをターゲットにしています。\n"
+"\n"
+"このパッケージには、Khronos公式Vulkan検証レイヤが含まれています。"
 
 #. leap/vym/summary
-#, fuzzy
-#| msgid ""
-#| "View Your Mind - generate and manipulate maps which show your thoughts"
 msgid "Tool to generate and manipulate thought maps"
-msgstr ""
-"VYM (View Your Mind) - あなたの考えを表わす地図を生成したり操ったりするソフト"
-"ウエア"
+msgstr "思考地図を作成し操作するツール"
 
 #. leap/vym/description
-#, fuzzy
-#| msgid ""
-#| "VYM  (View Your Mind) is a tool to generate and manipulate maps which "
-#| "show your thoughts. Such maps can help you to improve your creativity and "
-#| "effectivity. You can use them for time management, to organize tasks, to "
-#| "get an overview over complex contexts, to sort your ideas etc. Some "
-#| "people even think it is fun to work with such maps..."
 msgid ""
 "VYM (View Your Mind) is a tool to generate and manipulate maps which show "
 "thoughts. Such maps can help improve creativity and effectivity. They can be "
 "used for time management, to organize tasks, to get an overview over complex "
 "contexts, to sort ideas etc."
 msgstr ""
-"VYM (View Your Mind) はあなたの考えを表わすマップを生成したり操ったりするソフ"
-"トウエアです。ここで生成したマップは、あなたの創造性や効率性を改善するのに役"
-"立つでしょう。時間の管理に利用できるほか、作業のとりまとめや複雑な事象の外観"
-"作成、アイディアの並べ替えなど様々なものがあります。このようなマップ上で作業"
-"をするのが楽しいと考える人もいるようです。"
+"VYM(View Your Mind)は,思考を表す地図を生成・操作するツールです。このようなマップは、創造性と有効性を高めるのに役立ちます。時間管理、タ"
+"スクの整理、複雑なコンテキストの概要の取得、アイデアのソートなどに使用できます。"
 
 #. leap/vala-panel-appmenu/xfce4-panel-plugin-appmenu/summary
 msgid "AppMenu (Global Menu) plugin for xfce4-panel"
-msgstr ""
+msgstr "xfce4-panel 用のAppMenu(グローバルメニュー)プラグイン"
 
 #. leap/vala-panel-appmenu/xfce4-panel-plugin-appmenu/description
 msgid "This is Global Menu plugin for using with Xfce Panel."
-msgstr ""
+msgstr "これは、Xfceパネルで使用するグローバルメニュープラグインです。"
 
 #. tumbleweed/vte/glade-catalog-vte/summary
 msgid "Glade catalog for vte"
-msgstr ""
+msgstr "VTE用 Glade カタログ"
 
 #. tumbleweed/vte/glade-catalog-vte/description
 msgid ""
 "This package provides a catalog for Glade, to allow the use the vte widgets "
 "in Glade."
-msgstr ""
+msgstr "このパッケージはGlade 用のカタログを提供し、Gladeでvteウィジェットを使用できるようにします。"
 
 #. tumbleweed/vulkan-validationlayers/libVkLayer_utils-1_2_176_0/summary
 msgid "Vulkan validation layer utility library"
-msgstr ""
+msgstr "Vulkan検証画層ユーティリティライブラリ"
 
 #. tumbleweed/vulkan-validationlayers/libVkLayer_utils-1_2_176_0/description
 msgid ""
@@ -4233,33 +4388,32 @@ msgid ""
 "\n"
 "This package contains a utility library."
 msgstr ""
+"Vulkanは3Dグラフィックスと計算APIです。\n"
+"\n"
+"このパッケージにはユーティリティライブラリが含まれています。"
 
 #. tumbleweed/vkd3d/libvkd3d-shader1/summary
 #. tumbleweed/vkd3d/libvkd3d-shader1-32bit/summary
-#, fuzzy
 msgid "Direct3D 12 to Vulkan translation shader library"
-msgstr "libraw 向け開発用ファイル"
+msgstr "Direct3D 12からVulkanへの変換シェーダライブラリ"
 
 #. tumbleweed/vkd3d/libvkd3d-shader1/description
 #. tumbleweed/vkd3d/libvkd3d-shader1-32bit/description
 msgid "This is a Direct3D 12 to Vulkan shader library for use by e.g. Wine."
-msgstr ""
+msgstr "これは、Wineなどが使用するDirect3D 12 to Vulkanシェーダライブラリです。"
 
 #. tumbleweed/vmem/libvmem-devel/summary
-#, fuzzy
 msgid "Development files for the Volatile allocation library"
-msgstr "libraw 向け開発用ファイル"
+msgstr "Volatile割り当てライブラリの開発ファイル"
 
 #. tumbleweed/vmem/libvmem1/summary
-#, fuzzy
-#| msgid "Versatile Font Library"
 msgid "Volatile Memory allocation library"
-msgstr "多用途フォントライブラリ"
+msgstr "揮発性メモリ割り当てライブラリ"
 
 #. tumbleweed/votca-ctp/libvotca_ctp5/summary
 #. tumbleweed/votca-ctp/summary
 msgid "VOTCA charge transport module"
-msgstr ""
+msgstr "VOTCA電荷移送モジュール"
 
 #. tumbleweed/votca-ctp/libvotca_ctp5/description
 #. tumbleweed/votca-ctp/description
@@ -4271,11 +4425,15 @@ msgid ""
 "\n"
 "This package contains the charge transport module for VOTCA."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージにはVOTCA用の電荷移送モジュールが入っています。"
 
 #. tumbleweed/votca-xtp/libvotca_xtp2021/summary
 #. tumbleweed/votca-xtp/summary
 msgid "VOTCA excitation and charge properties module"
-msgstr ""
+msgstr "VOTCA励起電荷特性モジュール"
 
 #. tumbleweed/votca-xtp/libvotca_xtp2021/description
 msgid ""
@@ -4286,80 +4444,69 @@ msgid ""
 "This package contains the libraries for the excitation and charge properties "
 "module for VOTCA."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージは,VOTCA用の励起及び電荷特性モジュールのためのライブラリを含みます。"
 
 #. tumbleweed/vagrant/summary
-#, fuzzy
 msgid "Tool for building and distributing virtualized development environments"
-msgstr "統合開発環境"
+msgstr "仮想化された開発環境を構築および配布するためのツール"
 
 #. tumbleweed/vagrant/description
 msgid ""
 "Vagrant is a tool for building and distributing virtualized development "
 "environments."
-msgstr ""
+msgstr "Vagrantは、仮想化された開発環境を構築して配布するためのツールです。"
 
 #. tumbleweed/vagrant/vagrant-bash-completion/summary
 msgid "Vagrant bash autocompletion"
-msgstr ""
+msgstr "Vagrant bash 自動補完"
 
 #. tumbleweed/vagrant/vagrant-bash-completion/description
-#, fuzzy
 msgid "Optional dependency offering bash completion for vagrant"
-msgstr ""
-"様々な PulseAudio ユーティリティ向けの bash 補完機能を提供するオプションの依"
-"存関係"
+msgstr "vagrantのbash補完を提供するオプションの依存関係"
 
 #. tumbleweed/vagrant/vagrant-doc/summary
-#, fuzzy
 msgid "Documentation for Vagrant"
-msgstr "libdwarf のドキュメンテーション"
+msgstr "Vagrantのドキュメント"
 
 #. tumbleweed/vagrant/vagrant-doc/description
-#, fuzzy
 msgid "This package contains the documentation for vagrant."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、vagrantのドキュメントが含まれています。"
 
 #. tumbleweed/vagrant/vagrant-emacs/summary
-#, fuzzy
 msgid "Vagrantfile syntax files for the emacs editor"
-msgstr "Okteta 16 進数エディタ向け開発用ファイル"
+msgstr "emacsエディタ用のvagrantfile構文ファイル"
 
 #. tumbleweed/vagrant/vagrant-emacs/description
-#, fuzzy
 msgid "Optional dependency offering emacs syntax files for Vagrantfile"
-msgstr ""
-"様々な PulseAudio ユーティリティ向けの bash 補完機能を提供するオプションの依"
-"存関係"
+msgstr "Vagrantfile用のemacs構文ファイルを提供するオプションの依存関係"
 
 #. tumbleweed/vagrant-libvirt/summary
 msgid "Vagrant provider for libvirt"
-msgstr ""
+msgstr "libvirt用のVagrantプロバイダ"
 
 #. tumbleweed/vagrant-libvirt/description
 msgid ""
 "This is a Vagrant plugin that adds a Libvirt provider to Vagrant, allowing "
 "Vagrant to control and provision machines via the Libvirt toolkit."
 msgstr ""
+"これはVagrantプラグインであり、LibvirtプロバイダをVagrantに追加して、Libvirtツールキットを介してVagrantがマシンを制御お"
+"よびプロビジョニングできるようにします。"
 
 #. tumbleweed/vagrant-libvirt/vagrant-libvirt-doc/summary
-#, fuzzy
 msgid "Documentation for vagrant-libvirt"
-msgstr "libdwarf のドキュメンテーション"
+msgstr "vagrant-libvirtのドキュメント"
 
 #. tumbleweed/vagrant-libvirt/vagrant-libvirt-doc/description
-#, fuzzy
 msgid ""
 "This package contains the documentation for the Libvirt provider to Vagrant."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、LibvirtプロバイダーからVagrantへのドキュメントが含まれています。"
 
 #. tumbleweed/vagrant-sshfs/summary
-#, fuzzy
 msgid "SSHFS synced folder implementation for Vagrant"
-msgstr "libdwarf のドキュメンテーション"
+msgstr "Vagrant用のSSHFS同期フォルダ実装"
 
 #. tumbleweed/vagrant-sshfs/description
 msgid ""
@@ -4368,23 +4515,22 @@ msgid ""
 "this by executing the SSHFS client software within the guest, which creates "
 "an SSH connection from the Vagrant guest back to the Vagrant host."
 msgstr ""
+"このVagrantプラグインは、SSHFSを介してVagrantホストからVagrantゲストにフォルダをマウントするための同期フォルダサポートを追加しま"
+"す。デフォルトモードでは、ゲスト内でSSHFSクライアントソフトウェアを実行してこれを行います。これにより、VagrantゲストからVagrantホストへ"
+"のSSH接続が作成されます。"
 
 #. tumbleweed/vagrant-sshfs/vagrant-sshfs-doc/summary
-#, fuzzy
 msgid "Documentation for vagrant-sshfs"
-msgstr "libdwarf のドキュメンテーション"
+msgstr "vagrant-sshfsのマニュアル"
 
 #. tumbleweed/vagrant-sshfs/vagrant-sshfs-doc/description
-#, fuzzy
 msgid ""
 "This package contains the documentation for the SSHFS provider to Vagrant."
-msgstr ""
-"このパッケージには Qt4 ライブラリの Perl バインディングに対する開発用ファイル"
-"が含まれています。"
+msgstr "このパッケージには、VagrantへのSSHFSプロバイダのドキュメントが含まれています。"
 
 #. tumbleweed/vagrant-sshfs/vagrant-sshfs-testsuite/summary
 msgid "Testsuite for vagrant-sshfs"
-msgstr ""
+msgstr "vagrant-sshfs用のテストスイート"
 
 #. tumbleweed/vagrant-sshfs/vagrant-sshfs-testsuite/description
 msgid ""
@@ -4392,84 +4538,80 @@ msgid ""
 "most likely do not want to install this package, unless you want to test "
 "vagrant-sshfs."
 msgstr ""
+"このパッケージには、Vagrant用のSSHFSプロバイダのテストスイートが含まれています。vagrant-"
+"sshfsをテストする場合以外は、このパッケージをインストールしない方がよいでしょう。"
 
 #. tumbleweed/vagrant/vagrant-vim/summary
-#, fuzzy
 msgid "Vagrantfile syntax files for the vim editor"
-msgstr "imake ユーティリティ向けのデータファイル"
+msgstr "vimエディタ用のVagrantfile構文ファイル"
 
 #. tumbleweed/vagrant/vagrant-vim/description
-#, fuzzy
 msgid "Optional dependency offering vim syntax files for Vagrantfile"
-msgstr ""
-"様々な PulseAudio ユーティリティ向けの bash 補完機能を提供するオプションの依"
-"存関係"
+msgstr "vim構文ファイルをVagrantfileに提供するオプションの依存関係"
 
 #. tumbleweed/vcontrold/summary
 msgid "Daemon for communication with Viessmann heating controllers"
-msgstr ""
+msgstr "Viessmannと通信するためのデーモン加熱制御コントローラ"
 
 #. tumbleweed/vcontrold/description
 msgid ""
 "vcontrold is a software daemon written in C for communication with the "
 "\"Optolink\" interface of Viessmann heating controllers."
 msgstr ""
+"vcontroldは、Viessmann加熱コントローラの「Optolink」インターフェースと通信するためにCで書かれたソフトウェアデーモンです。"
 
 #. tumbleweed/velero/description
 msgid ""
 "velero is a backup program. It supports verification, encryption, snapshots "
 "and deduplication."
-msgstr ""
+msgstr "veleroはバックアッププログラムです。これは、検証、暗号化、スナップショット、重複除外をサポートしています。"
 
 #. tumbleweed/velero-plugin-for-aws/summary
-#, fuzzy
 msgid "Velero plugin for AWS"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "Velero向けプラグイン"
 
 #. tumbleweed/velero-plugin-for-aws/description
 msgid "Plugins to support Velero on Amazon Web Service (AWS)"
-msgstr ""
+msgstr "Amazon Web Service(AWS)でVeleroをサポートするプラグイン"
 
 #. tumbleweed/velero-plugin-for-gcp/summary
-#, fuzzy
 msgid "Velero plugin for GCP"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "GCP用Veleroプラグイン"
 
 #. tumbleweed/velero-plugin-for-gcp/description
 msgid "Plugins to support Velero on Google Cloud Platform (GCP)"
-msgstr ""
+msgstr "Google Cloud Platform(GCP)でVeleroをサポートするプラグイン"
 
 #. tumbleweed/velero-plugin-for-microsoft-azure/summary
 msgid "Velero plugin for Microsoft Azure"
-msgstr ""
+msgstr "Microsoft Azure用Veleroプラグイン"
 
 #. tumbleweed/velero-plugin-for-microsoft-azure/description
 msgid "Plugins to support Velero on Microsoft Azure"
-msgstr ""
+msgstr "Microsoft Azure上でVeleroをサポートするプラグイン"
 
 #. tumbleweed/velum-branding/summary
 msgid "Branding for velum"
-msgstr ""
+msgstr "velum のブランド化"
 
 #. tumbleweed/velum-branding/description
 msgid "kubic branding themes for velum"
-msgstr ""
+msgstr "velum の kubic ブランド化テーマ"
 
 #. tumbleweed/verilator/verilator-devel/summary
-#, fuzzy
-#| msgid "Terminal Emulator Library -- Development Files"
 msgid "Verilator library header files"
-msgstr "端末エミュレータライブラリ - 開発用ファイル"
+msgstr "Verilatorライブラリヘッダファイル"
 
 #. tumbleweed/verilator/verilator-devel/description
 msgid ""
 "Development files for Verilator, a compiling Verilog HDL simulator. It "
 "includes header files and a pkgconfig file."
 msgstr ""
+"Verilog HDLシミュレータをコンパイルするVerilator用の開発ファイル。これには、ヘッダファイルとpkgconfigファイルが含まれます。"
 
 #. tumbleweed/veyon/summary
 msgid "Computer monitoring and classroom management"
-msgstr ""
+msgstr "コンピュータ監視と教室管理"
 
 #. tumbleweed/veyon/description
 msgid ""
@@ -4488,59 +4630,51 @@ msgid ""
 "* remote logoff and remote execute arbitrary commands/scripts\n"
 "* do home schooling"
 msgstr ""
+"Veyonは、WindowsおよびLinuxをサポートするコンピュータ監視およびクラスルーム管理用のソフトウェアです。これにより、教師はコンピューター・ラ"
+"ボを表示および制御し、生徒と対話することができます。Veyonにはさまざまな言語があります。ユーザーは次の操作を実行できます。\n"
+"*コンピュータラボで行われていることを概要モードで確認し、スクリーンショットを撮ります。\n"
+"*ユーザーをサポートおよび支援するためのリモートコントロールコンピュータ\n"
+"*デモモード(フルスクリーンまたはウィンドウ)を使用して、教師の画面をリアルタイムで生徒にブロードキャストする。\n"
+"*教師の注意を引くためにワークステーションをロックする\n"
+"*生徒にテキストメッセージを送信する\n"
+"*電源のオン/オフとリモートコンピュータの再起動\n"
+"*リモートログオフおよびリモート実行任意のコマンド/スクリプト\n"
+"*ホームスクーリング"
 
 #. tumbleweed/vgrabbj/summary
 msgid "Image grabber for v4l devices"
-msgstr ""
+msgstr "v4lデバイス用のイメージグラバー"
 
 #. tumbleweed/vgrabbj/description
 msgid ""
 "vgrabbj is used to grab single images from a video4linux device (e.g. "
 "webcam) and store it in a file (jpg/png)."
 msgstr ""
+"vgrabbjを使用して、video4linuxデバイス(Webカメラなど)から1つのイメージを取得し、ファイル(jpg/png)に保存します。"
 
 #. tumbleweed/vido/summary
 msgid "Online Video Downloader"
-msgstr ""
+msgstr "オンラインビデオダウンローダー"
 
 #. tumbleweed/vido/description
 msgid ""
 "This tool downloads online videos from various sources including archive.org "
 "and others."
-msgstr ""
+msgstr "このツールは、archive.orgなどを含むさまざまなソースからオンラインビデオをダウンロードします。"
 
 #. tumbleweed/vido/vido-lang/summary
-#, fuzzy
-#| msgid "Translations for package vino"
 msgid "Translations for package vido"
-msgstr "vino 向け翻訳パッケージ"
+msgstr "パッケージ言語の翻訳"
 
 #. tumbleweed/vido/vido-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"vino\" package."
 msgid "Provides translations for the \"vido\" package."
-msgstr "vino パッケージ向けの翻訳データです。"
+msgstr "\"vido\"パッケージの翻訳を提供します。"
 
 #. tumbleweed/viewnior/summary
-#, fuzzy
-#| msgid "Elegant Image Viewer"
 msgid "An Image Viewer"
-msgstr "上品な画像ビューア"
+msgstr "イメージビューア"
 
 #. tumbleweed/viewnior/description
-#, fuzzy
-#| msgid ""
-#| "Viewnior is an image viewer program. Created to be simple, fast and "
-#| "elegant. It's minimalistic interface provides more screen space for your "
-#| "images. Among its features are:\n"
-#| "\n"
-#| "* Fullscreen & Slideshow\n"
-#| "* Rotate, flip, save, delete images\n"
-#| "* Animation support\n"
-#| "* Browse only selected images\n"
-#| "* Navigation window\n"
-#| "* Simple interface\n"
-#| "* Configurable mouse actions"
 msgid ""
 "Viewnior is an image viewer program with a minimal interface. Its features "
 "are: \n"
@@ -4552,21 +4686,18 @@ msgid ""
 "* Simple interface\n"
 "* Configurable mouse actions"
 msgstr ""
-"Viewnior は画像ビューアプログラムです。シンプルで高速、かつ上品な動作を特長に"
-"しています。また、最小限にとどめたインターフェイスにより、画像の表示領域をよ"
-"り広くすることができています。主な機能は下記のとおりです:\n"
-"\n"
-"* フルスクリーン表示とスライドショー\n"
-"* 回転、フリップ、画像の保存／削除\n"
-"* アニメーションへの対応\n"
-"* 選択した画像のみの表示\n"
-"* ナビゲーションウインドウ\n"
-"* シンプルなインターフェイス\n"
-"* 設定変更可能なマウス動作"
+"Viewniorは最小限のインタフェースを持つ画像ビューアプログラムです。その機能は次のとおりです。\n"
+"*フルスクリーンおよびスライドショー\n"
+"*イメージの回転、反転、保存、削除\n"
+"*アニメーションのサポート\n"
+"*選択したイメージのみを参照\n"
+"*ナビゲーションウィンドウ\n"
+"*シンプルなインターフェイス\n"
+"*設定可能なマウス操作"
 
 #. tumbleweed/vilistextum/summary
 msgid "Convert HTML to text with hyperlink references"
-msgstr ""
+msgstr "ハイパーリンク参照を含むテキストへのHTMLの変換"
 
 #. tumbleweed/vilistextum/description
 msgid ""
@@ -4577,6 +4708,12 @@ msgid ""
 ".mailcap: text/html; vilistextum -ul --charset %{charset} - - ; "
 "copiousoutput;"
 msgstr ""
+"端末でHTMLを見るための簡単なプログラムです。\n"
+"\n"
+"ハイパーリンクが脚注として表示されます。\n"
+"\n"
+".mailcap: text/html; vilistextum -ul --charset %{charset} - - ; "
+"copiousoutput;"
 
 #. tumbleweed/vim-plugins/vim-plugin-bufexplorer/description
 msgid ""
@@ -4592,28 +4729,33 @@ msgid ""
 "that if the buffer is already in another tab, bufexplorer can switch to that "
 "tab automatically for you if you would like."
 msgstr ""
+"bufexplorerでは、デフォルトのパブリックインターフェイスの1つを使用して、バッファ間をすばやく簡単に切り替えることができます。\\<"
+"Leader\\>be normal open\\<Leader\\>bt toggle open/close\\<Leader\\>bs force "
+"horizontal split open\\<Leader\\>bv force vertical split open\n"
+"\n"
+"bufexplorer ウィンドウが開いたら、通常の移動キー(hjkl)を使用して移動し、またはを使用して、開くバッファを選択します。選択したバッファを新"
+"しいタブで開きたい場合は、または't'を押します。タブでバッファを開くとき、バッファがすでに別のタブにある場合は、必要に応じてbufexplorerが自動"
+"的にそのタブに切り替えることができることに注意してください。"
 
 #. tumbleweed/vim-plugins/vim-plugin-file-line/summary
-#, fuzzy
 msgid "File-line plugin for Vim"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "Vim用 File-line プラグイン"
 
 #. tumbleweed/vim-plugins/vim-plugin-file-line/description
 msgid "Plugin for vim to enable opening a file in a given line."
-msgstr ""
+msgstr "vim用のプラグイン。指定した行でファイルを開くことができます。"
 
 #. tumbleweed/vim-plugins/vim-plugin-salt/summary
-#, fuzzy
 msgid "Salt plugin for Vim"
-msgstr "Squid 向けフィルタプラグイン"
+msgstr "Vim用 Salt プラグイン"
 
 #. tumbleweed/vim-plugins/vim-plugin-salt/description
 msgid "This Vim plugin provides support for editing Saltstack .sls files."
-msgstr ""
+msgstr "このVimプラグインは、Saltstack.slsファイルの編集をサポートしています。"
 
 #. tumbleweed/virt-p2v/summary
 msgid "Tools to convert a physical machine to run on KVM"
-msgstr ""
+msgstr "物理マシンをKVMで実行するように変換するツール"
 
 #. tumbleweed/virt-p2v/description
 msgid ""
@@ -4627,10 +4769,16 @@ msgid ""
 "\n"
 "To convert virtual machines from other hypervisors, see virt-v2v."
 msgstr ""
+"Virt-p2v は物理マシンを変換(仮想化)して、KVM の下で仮想マシンとして実行できるようにします。\n"
+"\n"
+"このパッケージには、virt-p2vブートCDまたはUSBディスクイメージを作成するために必要なツールが含まれています。これらのイメージは、変換を実行する"
+"ために物理マシン上でブートされます。また、変換を完了するには、virt-v2vを別の場所にインストールする必要があります。\n"
+"\n"
+"仮想マシンを他のハイパーバイザから変換するには、virt-v2vを参照してください。"
 
 #. tumbleweed/virt-v2v/summary
 msgid "Tools to convert a virtual machine to run on KVM"
-msgstr ""
+msgstr "仮想マシンをKVM上で実行するように変換するツール"
 
 #. tumbleweed/virt-v2v/description
 msgid ""
@@ -4641,36 +4789,40 @@ msgid ""
 "can modify the guest to make it bootable on KVM and install virtio drivers "
 "so it will run quickly."
 msgstr ""
+"Virt-v2vは、外部ハイパーバイザーから1つのゲストを変換してKVM上で実行します。VMware、Xen、Hyper-V、およびその他のハイパーバイザ"
+"ー上で実行されているLinuxおよびWindowsゲストを読み取り、libvirt、OpenStack、oVirt、Red Hat Virtualisat"
+"ion(RHV)、またはその他のいくつかのターゲットによって管理されるKVMに変換できます。ゲストを変更してKVMで起動できるようにしたり、virtioド"
+"ライバをインストールしてすぐに実行できるようにすることができます。"
 
 #. tumbleweed/virt-v2v/virt-v2v-bash-completion/summary
 msgid "Bash tab-completion for virt-v2v"
-msgstr ""
+msgstr "virt-v2v用のbashタブ補完"
 
 #. tumbleweed/virt-v2v/virt-v2v-bash-completion/description
 msgid ""
 "Install this package if you want intelligent bash tab-completion for virt-"
 "v2v."
-msgstr ""
+msgstr "virt-v2v用のインテリジェントなbashタブ補完が必要な場合は、このパッケージをインストールします。"
 
 #. tumbleweed/virt-v2v/virt-v2v-man-pages-ja/summary
 msgid "Japanese (ja) man pages for virt-v2v"
-msgstr ""
+msgstr "virt-v2vの日本語(ja)マニュアルページ"
 
 #. tumbleweed/virt-v2v/virt-v2v-man-pages-ja/description
 msgid "virt-v2v-man-pages-ja contains Japanese (ja) man pages for virt-v2v."
-msgstr ""
+msgstr "virt-v2v-man-pages-jaには、virt-v2vに関する日本語(ja)のmanページが含まれています。"
 
 #. tumbleweed/virt-v2v/virt-v2v-man-pages-uk/summary
 msgid "Ukrainian (uk) man pages for virt-v2v"
-msgstr ""
+msgstr "virt-v2vに関するウクライナ語(uk)のmanページ"
 
 #. tumbleweed/virt-v2v/virt-v2v-man-pages-uk/description
 msgid "virt-v2v-man-pages-uk contains Ukrainian (uk) man pages for virt-v2v."
-msgstr ""
+msgstr "virt-v2v-man-pages-ukには、virt-v2vに関するウクライナ語(uk)のmanページが含まれています。"
 
 #. tumbleweed/vis/summary
 msgid "An editor combining the strengths of both vi(m) and sam"
-msgstr ""
+msgstr "vi(m)とsamの両方の長所を組み合わせたエディタ"
 
 #. tumbleweed/vis/description
 msgid ""
@@ -4681,10 +4833,13 @@ msgid ""
 "selections and combines it with sam's structural regular expression based "
 "command language."
 msgstr ""
+"Visは、vi(m)とsamの両方の長所を組み合わせた、現代的でレガシーのないシンプルで効率的なエディタを目指しています。\n"
+"\n"
+"viのモーダル編集を拡張し、複数のカーソル/選択をサポートするように組み込み、samの構造的な正規表現ベースのコマンド言語と組み合わせています。"
 
 #. tumbleweed/vit/summary
 msgid "Visual Interactive Taskwarrior full-screen terminal interface"
-msgstr ""
+msgstr "Visual Interactive Taskwarriorフルスクリーン端末インタフェース"
 
 #. tumbleweed/vit/description
 msgid ""
@@ -4694,27 +4849,21 @@ msgid ""
 "Multiple/customizable themes  * Override/customize column formatters  * "
 "Intelligent sub-project indenting"
 msgstr ""
+"Visual Interactive Taskwarriorフルスクリーン端末インタフェース。機能:*完全にカスタマイズ可能なキーバインディング(デフォル"
+"トのVim様)*すっきりした表示*マウスなし*速度*列ごとの色付け*高度なタブ完成*複数/カスタマイズ可能なテーマ*列フォーマッタの上書き/カスタマイズ*"
+"インテリジェントなサブプロジェクトのインデント"
 
 #. tumbleweed/vkbasalt/summary
 msgid "Vulkan post processing layer"
-msgstr ""
+msgstr "Vulkan後処理レイヤ"
 
 #. tumbleweed/vkbasalt/description
 msgid ""
 "vkBasalt is a Vulkan post processing layer to enhance the visual graphics of "
 "games."
-msgstr ""
+msgstr "vkBasaltは,ゲームのビジュアルグラフィックスを強化するVulkan後処理レイヤです。"
 
 #. tumbleweed/vorbis-tools/description
-#, fuzzy
-#| msgid ""
-#| "This package contains some tools for Ogg Vorbis:\n"
-#| "\n"
-#| "oggenc (an encoder) and ogg123 (a playback tool). It also has "
-#| "vorbiscomment (to add comments to Vorbis files), ogginfo (to give all "
-#| "useful information about an Ogg file, including streams in it), oggdec (a "
-#| "simple command line decoder), and vcut (which allows you to cut up Vorbis "
-#| "files)."
 msgid ""
 "This package contains some tools for Ogg Vorbis:\n"
 "\n"
@@ -4723,12 +4872,11 @@ msgid ""
 "about an Ogg file, including streams in it), oggdec (a simple command line "
 "decoder), and vcut (which allows you to cut up Vorbis files)."
 msgstr ""
-"このパッケージには Ogg Vorbis 向けの各種ツールが含まれています:\n"
+"このパッケージには、Ogg Vorbis 用のツールがか含まれています。\n"
 "\n"
-"oggenc (エンコーダ) と ogg123 (再生ツール) のほか、 vorbiscomment (Vorbisファ"
-"イルにコメントを追加するツール), ogginfo (ストリームなど、 Ogg ファイルに対す"
-"るすべての情報を取得するツール), oggdec (シンプルなコマンドラインデコーダ), "
-"vcut (Vorbis ファイルを切り出すツール) などがあります。"
+"oggenc(エンコーダ)およびogg123(再生ツール)。また、vorbiscomment(Vorbisファイルにコメントを追加するため)、ogginf"
+"o(ストリームを含むOggファイルに関するすべての有用な情報を提供するため)、oggdec(シンプルなコマンドラインデコーダ)、vcut(Vorbisファ"
+"イルをカットするため)もあります。"
 
 #. tumbleweed/votca-csg/votca-csg-apps/description
 msgid ""
@@ -4739,10 +4887,14 @@ msgid ""
 "This package contains sample applications of the VOTCA Coarse Graining "
 "Engine. Previously packages as votca-csgapps."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCA粗粒化エンジンのサンプルアプリケーションが含まれています。以前はvotca csgappsとしてパックされていました。"
 
 #. tumbleweed/votca-ctp/votca-ctp-common/summary
 msgid "Architecture-independent data files for VOTCA CTP"
-msgstr ""
+msgstr "VOTCA CTPのアーキテクチャに依存しないデータファイル"
 
 #. tumbleweed/votca-ctp/votca-ctp-common/description
 msgid ""
@@ -4752,15 +4904,18 @@ msgid ""
 "\n"
 "This package contains the architecture-independent data files for VOTCA CTP."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCA CTPのアーキテクチャに依存しないデータファイルが含まれています。"
 
 #. tumbleweed/votca-ctp/votca-ctp-devel/summary
-#, fuzzy
 msgid "Development headers and libraries for VOTCA CTP"
-msgstr "Marble 向けの開発用ヘッダとライブラリです。"
+msgstr "VOTCA CTP用開発ヘッダとライブラリ"
 
 #. tumbleweed/votca-ctp/votca-ctp-doc/summary
 msgid "Architecture independent doc files for VOTCA CTP"
-msgstr ""
+msgstr "VOTCA CTP用のアーキテクチャに依存しないdocファイル"
 
 #. tumbleweed/votca-ctp/votca-ctp-doc/description
 msgid ""
@@ -4771,6 +4926,10 @@ msgid ""
 "This package contains the architecture-independent documentation files for "
 "VOTCA CTP."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCA CTPのアーキテクチャに依存しないドキュメントファイルが含まれています。"
 
 #. tumbleweed/votca-xtp/description
 msgid ""
@@ -4780,10 +4939,14 @@ msgid ""
 "\n"
 "This package contains the excitation and charge properties module for VOTCA."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージはVOTCA用の励起及び電荷特性モジュールを含んでいます。"
 
 #. tumbleweed/votca-xtp/votca-xtp-common/summary
 msgid "Architecture-independent data files for VOTCA XTP"
-msgstr ""
+msgstr "VOTCA XTPのアーキテクチャに依存しないデータファイル"
 
 #. tumbleweed/votca-xtp/votca-xtp-common/description
 msgid ""
@@ -4793,11 +4956,14 @@ msgid ""
 "\n"
 "This package contains the architecture-independent data files for VOTCA XTP."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには、VOTCA XTPのアーキテクチャに依存しないデータファイルが含まれています。"
 
 #. tumbleweed/votca-xtp/votca-xtp-devel/summary
-#, fuzzy
 msgid "Development headers and libraries for VOTCA XTP"
-msgstr "Marble 向けの開発用ヘッダとライブラリです。"
+msgstr "VOTCA XTPの開発ヘッダとライブラリ"
 
 #. tumbleweed/votca-xtp/votca-xtp-devel/description
 msgid ""
@@ -4808,6 +4974,10 @@ msgid ""
 "This package contains the development headers and libraries for the "
 "excitation and charge properties module engine for VOTCA."
 msgstr ""
+"Versatile Object-oriented Toolkit for Coarse-graining "
+"Applications(VOTCA)は,各種システムの組織的な粗視化を行う際のルーチン作業量を削減するパッケージです。コアはC++で書かれています。\n"
+"\n"
+"このパッケージには,VOTCA用の励起・電荷特性モジュールエンジンの開発ヘッダとライブラリが含まれています。"
 
 #. tumbleweed/vulkan-validationlayers/description
 msgid ""
@@ -4815,10 +4985,13 @@ msgid ""
 "\n"
 "This package contains the Khronos official Vulkan validation layers."
 msgstr ""
+"Vulkanは3Dグラフィックスと計算APIです。\n"
+"\n"
+"このパッケージには、Khronos公式Vulkan検証レイヤが含まれています。"
 
 #. tumbleweed/vulkan-validationlayers/vulkan-validationlayers-devel/summary
 msgid "Vulkan validation layer support files"
-msgstr ""
+msgstr "Vulkan検証レイヤのサポートファイル"
 
 #. tumbleweed/vulkan-validationlayers/vulkan-validationlayers-devel/description
 msgid ""
@@ -4826,6 +4999,9 @@ msgid ""
 "\n"
 "This package contains support files for the VkLayer utility library."
 msgstr ""
+"Vulkanは3Dグラフィックスと計算APIです。\n"
+"\n"
+"このパッケージには、VkLayerユーティリティライブラリのサポートファイルが含まれています。"
 
 #, fuzzy
 #~ msgid "Languages for package vala-panel-plugin-sntray"
