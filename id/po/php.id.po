@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2021-05-13 01:18+0000\n"
+"POT-Creation-Date: 2022-02-23 08:40+0000\n"
 "PO-Revision-Date: 2020-10-02 06:48+0000\n"
 "Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -13,28 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.6.1\n"
-
-#. leap/php7/apache2-mod_php7/summary
-#, fuzzy
-msgid "PHP7 module for the Apache 2.x webserver"
-msgstr "Modul PHP7 untuk webserver Apache 2.x"
-
-#. leap/php7/apache2-mod_php7/description
-#, fuzzy
-msgid ""
-"PHP is a server-side, cross-platform HTML embedded scripting language. If "
-"you are completely new to PHP and want to get some idea of how it works, "
-"have a look at the Introductory tutorial. Once you get beyond that, have a "
-"look at the example archive sites and some of the other resources available "
-"in the links section.\n"
-"\n"
-"Please refer to /usr/share/doc/packages/php7/README.SUSE for information on "
-"how to load the module into the Apache webserver."
-msgstr ""
-"PHP adalah bahasa skrip HTML html lintas platform sisi server. Jika Anda "
-"benar-benar baru untuk PHP dan ingin mendapatkan beberapa ide tentang cara "
-"kerjanya, lihat tutorial Pengantar. Setelah Anda melampaui itu, lihat contoh "
-"situs arsip dan beberapa sumber daya lain yang tersedia di bagian link."
 
 #. leap/php-composer/summary
 #, fuzzy
@@ -62,7 +40,7 @@ msgid ""
 "PSR-2, etc., or other community driven ones like the Symfony one. Custom "
 "styles can also be defined through configuration.\n"
 "\n"
-"It can modernize code (like converting the pow function to the ** operator "
+"It can modernise code (like converting the pow function to the ** operator "
 "on PHP 5.6) and (micro) optimize it."
 msgstr ""
 
@@ -257,24 +235,28 @@ msgid ""
 msgstr ""
 
 #. leap/php7/summary
+#. leap/php7/php7-cli/summary
 #. leap/php7-test/summary
 #, fuzzy
 msgid "Interpreter for the PHP scripting language version 7"
 msgstr "Penerjemah untuk bahasa skrip PHP versi 7"
 
 #. leap/php7/description
-#. leap/php7-test/description
+#. leap/php8/description
+#, fuzzy
 msgid ""
 "PHP is a server-side HTML embedded scripting language designed primarily for "
 "web development but also used as a general-purpose programming language.\n"
 "\n"
-"This package contains the standard implementation of PHP, namely Zend PHP. "
-"Included are the PHP command-line binary and the configuration file (php."
-"ini). This package must be installed in order to use PHP. Additionally, "
-"extension modules and server modules (e.g. for Apache) may be installed.\n"
-"\n"
-"Additional documentation is available in package php-doc."
+"This package contains the base files for all subpackages and must be "
+"installed in order to use PHP. Additionally, extension modules and server "
+"modules (e.g. for Apache) may be installed."
 msgstr ""
+"PHP adalah bahasa skrip html sisi server yang dirancang terutama untuk "
+"pengembangan web tetapi juga digunakan sebagai bahasa pemrograman tujuan "
+"umum.\n"
+"\n"
+"Paket ini berisi header C untuk membangun ekstensi PHP."
 
 #. leap/php7-APCu/summary
 #, fuzzy
@@ -293,11 +275,13 @@ msgstr ""
 "caching opcode dalam versi PHP yang akan datang."
 
 #. leap/php7/php7-bcmath/summary
+#. leap/php8/php8-bcmath/summary
 #, fuzzy
 msgid "\"Binary Calculator\" extension for PHP"
 msgstr "Ekstensi \"Kalkulator Biner\" untuk PHP"
 
 #. leap/php7/php7-bcmath/description
+#. leap/php8/php8-bcmath/description
 #, fuzzy
 msgid ""
 "Binary Calculator which supports numbers of any size and precision, "
@@ -307,11 +291,13 @@ msgstr ""
 "dinyatakan sebagai string."
 
 #. leap/php7/php7-bz2/summary
+#. leap/php8/php8-bz2/summary
 #, fuzzy
 msgid "bzip2 codec support for PHP"
 msgstr "dukungan codec bzip2 untuk PHP"
 
 #. leap/php7/php7-bz2/description
+#. leap/php8/php8-bz2/description
 #, fuzzy
 msgid "PHP functions to read and write bzip2 (.bz2) compressed files."
 msgstr "PHP berfungsi untuk membaca dan menulis file terkompresi bzip2 (.bz2)."
@@ -324,16 +310,38 @@ msgid "PHP7 Extension Module"
 msgstr "Modul Ekstensi PHP7"
 
 #. leap/php7/php7-calendar/description
+#. leap/php8/php8-calendar/description
 #, fuzzy
 msgid "PHP functions for converting between different calendar formats."
 msgstr "Fungsi PHP untuk mengonversi antara format kalender yang berbeda."
 
+#. leap/php7/php7-cli/description
+#. leap/php8/php8-cli/description
+#, fuzzy
+msgid ""
+"PHP is a server-side HTML embedded scripting language designed primarily for "
+"web development but also used as a general-purpose programming language.\n"
+"\n"
+"This package contains the standard implementation of PHP, namely Zend PHP. "
+"Included are the PHP command-line binary and the configuration file (php."
+"ini).\n"
+"\n"
+"Additional documentation is available in package php-doc."
+msgstr ""
+"PHP adalah bahasa skrip html sisi server yang dirancang terutama untuk "
+"pengembangan web tetapi juga digunakan sebagai bahasa pemrograman tujuan "
+"umum.\n"
+"\n"
+"Paket ini berisi header C untuk membangun ekstensi PHP."
+
 #. leap/php7/php7-ctype/summary
+#. leap/php8/php8-ctype/summary
 #, fuzzy
 msgid "Character class extension for PHP"
 msgstr "Ekstensi kelas karakter untuk PHP"
 
 #. leap/php7/php7-ctype/description
+#. leap/php8/php8-ctype/description
 #, fuzzy
 msgid ""
 "PHP functions for checking whether a character or string falls into a "
@@ -343,11 +351,13 @@ msgstr ""
 "karakter tertentu sesuai dengan lokal saat ini."
 
 #. leap/php7/php7-curl/summary
+#. leap/php8/php8-curl/summary
 #, fuzzy
 msgid "libcurl integration for PHP"
 msgstr "integrasi libcurl untuk PHP"
 
 #. leap/php7/php7-curl/description
+#. leap/php8/php8-curl/description
 #, fuzzy
 msgid ""
 "PHP interface to libcurl that allows you to connect to and communicate with "
@@ -358,11 +368,13 @@ msgstr ""
 "berbagai jenis."
 
 #. leap/php7/php7-dba/summary
+#. leap/php8/php8-dba/summary
 #, fuzzy
 msgid "Database abstraction layer for PHP"
 msgstr "Lapisan abstraksi database untuk PHP"
 
 #. leap/php7/php7-dba/description
+#. leap/php8/php8-dba/description
 #, fuzzy
 msgid ""
 "This is a general abstraction layer for several file-based databases. As "
@@ -383,6 +395,7 @@ msgid "PHP7 development files for C/C++ extensions"
 msgstr "File pengembangan PHP7 untuk ekstensi C/C++"
 
 #. leap/php7/php7-devel/description
+#. leap/php8/php8-devel/description
 #, fuzzy
 msgid ""
 "PHP is a server-side HTML embedded scripting language designed primarily for "
@@ -397,23 +410,29 @@ msgstr ""
 "Paket ini berisi header C untuk membangun ekstensi PHP."
 
 #. leap/php7/php7-dom/summary
+#. leap/php8/php8-dom/summary
 #, fuzzy
 msgid "Document Object Model extension for PHP"
 msgstr "Ekstensi Model Objek Dokumen untuk PHP"
 
 #. leap/php7/php7-dom/description
+#. leap/php8/php8-dom/description
 #, fuzzy
 msgid "This module adds Document Object Model (DOM) support."
 msgstr "Modul ini menambahkan dukungan Document Object Model (DOM)."
 
-#. leap/php7/php7-embed/summary
+#. leap/php7-embed/summary
+#. leap/php8-embed/summary
 #, fuzzy
 msgid "Embedded SAPI Library"
 msgstr "Perpustakaan SAPI Tertanam"
 
-#. leap/php7/php7-embed/description
-#. leap/php7/php7-fastcgi/description
-#. leap/php7/php7-fpm/description
+#. leap/php7-embed/description
+#. leap/php7-fastcgi/description
+#. leap/php7-fpm/description
+#. leap/php8-embed/description
+#. leap/php8-fastcgi/description
+#. leap/php8-fpm/description
 #, fuzzy
 msgid ""
 "PHP is a server-side, cross-platform HTML embedded scripting language. If "
@@ -428,11 +447,13 @@ msgstr ""
 "situs arsip dan beberapa sumber daya lain yang tersedia di bagian link."
 
 #. leap/php7/php7-enchant/summary
+#. leap/php8/php8-enchant/summary
 #, fuzzy
 msgid "Spell checking extension for PHP"
 msgstr "Ekstensi pemeriksaan ejaan untuk PHP"
 
 #. leap/php7/php7-enchant/description
+#. leap/php8/php8-enchant/description
 #, fuzzy
 msgid ""
 "Enchant is the PHP binding for the Enchant library. Enchant steps in to "
@@ -448,11 +469,13 @@ msgstr ""
 "setiap definisi \"hanya bekerja.\""
 
 #. leap/php7/php7-exif/summary
+#. leap/php8/php8-exif/summary
 #, fuzzy
 msgid "EXIF metadata extensions for PHP"
 msgstr "Ekstensi metadata EXIF untuk PHP"
 
 #. leap/php7/php7-exif/description
+#. leap/php8/php8-exif/description
 #, fuzzy
 msgid ""
 "PHP functions for extracting EXIF (Exchangable Image File Format; metadata "
@@ -462,17 +485,19 @@ msgstr ""
 "dipertukarkan; metadata dari gambar) informasi yang disimpan di header "
 "gambar JPEG dan TIFF."
 
-#. leap/php7/php7-fastcgi/summary
+#. leap/php7-fastcgi/summary
 #, fuzzy
 msgid "FastCGI PHP7 Module"
 msgstr "Modul FastCGI PHP7"
 
 #. leap/php7/php7-fileinfo/summary
+#. leap/php8/php8-fileinfo/summary
 #, fuzzy
 msgid "File identification extension for PHP"
 msgstr "Ekstensi identifikasi file untuk PHP"
 
 #. leap/php7/php7-fileinfo/description
+#. leap/php8/php8-fileinfo/description
 #, fuzzy
 msgid ""
 "The functions in this module try to guess the content type and encoding of a "
@@ -485,27 +510,19 @@ msgstr ""
 "Ini menggunakan (versi bundel) libmagic untuk menentukan ini secara "
 "heuristik."
 
-#. leap/php7/php7-firebird/summary
-#, fuzzy
-msgid "Firebird database client for PHP"
-msgstr "Firebird database client untuk PHP"
-
-#. leap/php7/php7-firebird/description
-#, fuzzy
-msgid "PHP functions for access to firebird database servers."
-msgstr "Fungsi PHP untuk akses ke server database firebird."
-
-#. leap/php7/php7-fpm/summary
+#. leap/php7-fpm/summary
 #, fuzzy
 msgid "FastCGI Process Manager PHP7 Module"
 msgstr "Modul PHP7 Manajer Proses FastCGI"
 
 #. leap/php7/php7-ftp/summary
+#. leap/php8/php8-ftp/summary
 #, fuzzy
 msgid "FTP protocol support for PHP"
 msgstr "Dukungan protokol FTP untuk PHP"
 
 #. leap/php7/php7-ftp/description
+#. leap/php8/php8-ftp/description
 #, fuzzy
 msgid ""
 "PHP functions for access to file servers speaking the File Transfer Protocol "
@@ -515,11 +532,13 @@ msgstr ""
 "(FTP) seperti yang didefinisikan dalam RFC 959."
 
 #. leap/php7/php7-gd/summary
+#. leap/php8/php8-gd/summary
 #, fuzzy
 msgid "GD Graphics Library extension for PHP"
 msgstr "Ekstensi Pustaka Grafis GD untuk PHP"
 
 #. leap/php7/php7-gd/description
+#. leap/php8/php8-gd/description
 #, fuzzy
 msgid ""
 "PHP functions to create and manipulate image files in a variety of different "
@@ -531,11 +550,13 @@ msgstr ""
 "nyaman lagi: PHP dapat menghasilkan aliran gambar langsung ke browser."
 
 #. leap/php7/php7-gettext/summary
+#. leap/php8/php8-gettext/summary
 #, fuzzy
 msgid "Native language support for PHP"
 msgstr "Dukungan bahasa asli untuk PHP"
 
 #. leap/php7/php7-gettext/description
+#. leap/php8/php8-gettext/description
 #, fuzzy
 msgid ""
 "PHP functions that implement a Native Language Support (NLS) API which can "
@@ -559,11 +580,13 @@ msgstr ""
 "gambar menggunakan GraphicsMagick API"
 
 #. leap/php7/php7-gmp/summary
+#. leap/php8/php8-gmp/summary
 #, fuzzy
 msgid "Bignum extension for PHP"
 msgstr "Ekstensi Bignum untuk PHP"
 
 #. leap/php7/php7-gmp/description
+#. leap/php8/php8-gmp/description
 #, fuzzy
 msgid ""
 "PHP functions for work with arbitrary-length integers using the GNU MP "
@@ -588,11 +611,13 @@ msgstr ""
 "sebagai kelas PHP."
 
 #. leap/php7/php7-iconv/summary
+#. leap/php8/php8-iconv/summary
 #, fuzzy
 msgid "Character set conversion functions for PHP"
 msgstr "Fungsi konversi set karakter untuk PHP"
 
 #. leap/php7/php7-iconv/description
+#. leap/php8/php8-iconv/description
 #, fuzzy
 msgid ""
 "This module contains an interface to iconv character set conversion "
@@ -621,11 +646,13 @@ msgstr ""
 "gambar menggunakan ImageMagick API"
 
 #. leap/php7/php7-intl/summary
+#. leap/php8/php8-intl/summary
 #, fuzzy
 msgid "ICU integration for PHP"
 msgstr "Integrasi ICU untuk PHP"
 
 #. leap/php7/php7-intl/description
+#. leap/php8/php8-intl/description
 #, fuzzy
 msgid ""
 "The internationalization (intl) extension is a wrapper for the ICU library, "
@@ -653,11 +680,13 @@ msgstr ""
 "Notation (JSON)."
 
 #. leap/php7/php7-ldap/summary
+#. leap/php8/php8-ldap/summary
 #, fuzzy
 msgid "LDAP protocol support for PHP"
 msgstr "Dukungan protokol LDAP untuk PHP"
 
 #. leap/php7/php7-ldap/description
+#. leap/php8/php8-ldap/description
 #, fuzzy
 msgid "PHP interface to the Lightweight Directory Access Protocol (LDAP)."
 msgstr "Antarmuka PHP ke Lightweight Directory Access Protocol (LDAP)."
@@ -712,11 +741,13 @@ msgstr ""
 "drop-in untuk MaxMind\\Db\\Reader."
 
 #. leap/php7/php7-mbstring/summary
+#. leap/php8/php8-mbstring/summary
 #, fuzzy
 msgid "Multibyte string functions for PHP"
 msgstr "Fungsi string multibyte untuk PHP"
 
 #. leap/php7/php7-mbstring/description
+#. leap/php8/php8-mbstring/description
 #, fuzzy
 msgid ""
 "mbstring provides multibyte specific string functions that help dealing with "
@@ -746,31 +777,37 @@ msgstr ""
 "berkomunikasi dengan server memcached."
 
 #. leap/php7/php7-mysql/summary
+#. leap/php8/php8-mysql/summary
 #, fuzzy
 msgid "MySQL database client for PHP"
 msgstr "Klien database MySQL untuk PHP"
 
 #. leap/php7/php7-mysql/description
+#. leap/php8/php8-mysql/description
 #, fuzzy
 msgid "PHP functions for access to MySQL database servers."
 msgstr "Fungsi PHP untuk akses ke server database MySQL."
 
 #. leap/php7/php7-odbc/summary
+#. leap/php8/php8-odbc/summary
 #, fuzzy
 msgid "ODBC extension for PHP"
 msgstr "Ekstensi ODBC untuk PHP"
 
 #. leap/php7/php7-odbc/description
+#. leap/php8/php8-odbc/description
 #, fuzzy
 msgid "This module adds Open Database Connectivity (ODBC) support."
 msgstr "Modul ini menambahkan dukungan Open Database Connectivity (ODBC)."
 
 #. leap/php7/php7-opcache/summary
+#. leap/php8/php8-opcache/summary
 #, fuzzy
 msgid "Opcode cache extension for PHP"
 msgstr "Ekstensi cache Opcode untuk PHP"
 
 #. leap/php7/php7-opcache/description
+#. leap/php8/php8-opcache/description
 #, fuzzy
 msgid ""
 "OPcache improves PHP performance by storing precompiled script bytecode in "
@@ -782,11 +819,13 @@ msgstr ""
 "PHP untuk memuat dan mengurai skrip pada setiap permintaan."
 
 #. leap/php7/php7-openssl/summary
+#. leap/php8/php8-openssl/summary
 #, fuzzy
 msgid "OpenSSL integration for PHP"
 msgstr "Integrasi OpenSSL untuk PHP"
 
 #. leap/php7/php7-openssl/description
+#. leap/php8/php8-openssl/description
 #, fuzzy
 msgid ""
 "This extension binds functions of OpenSSL library for symmetric and "
@@ -798,11 +837,13 @@ msgstr ""
 "kripto lainnya. Ini juga menyediakan implementasi aliran TLS."
 
 #. leap/php7/php7-pcntl/summary
+#. leap/php8/php8-pcntl/summary
 #, fuzzy
 msgid "Process Control extension for PHP"
 msgstr "Ekstensi Kontrol Proses untuk PHP"
 
 #. leap/php7/php7-pcntl/description
+#. leap/php8/php8-pcntl/description
 #, fuzzy
 msgid ""
 "Process Control support in PHP implements the Unix style of process "
@@ -814,11 +855,13 @@ msgstr ""
 "waitpid, sinyal, bendera WIF, dll.)"
 
 #. leap/php7/php7-pdo/summary
+#. leap/php8/php8-pdo/summary
 #, fuzzy
 msgid "PHP Data Objects extension for PHP"
 msgstr "Ekstensi Objek Data PHP untuk PHP"
 
 #. leap/php7/php7-pdo/description
+#. leap/php8/php8-pdo/description
 msgid ""
 "The PHP Data Objects (PDO) extension defines an interface for accessing "
 "databases in PHP. Each database driver that implements the PDO interface can "
@@ -851,18 +894,6 @@ msgstr ""
 "\n"
 "Lihat https://pear.php.net/manual untuk detail selengkapnya."
 
-#. leap/php7/php7-pear-Archive_Tar/summary
-msgid "Tar file management class"
-msgstr ""
-
-#. leap/php7/php7-pear-Archive_Tar/description
-msgid ""
-"This class provides handling of tar files in PHP. It supports creating, "
-"listing, extracting and adding to tar files. Gzip support is available if "
-"PHP has the zlib extension built-in orloaded. Bz2 compression is also "
-"supported with the bz2 extension loaded."
-msgstr ""
-
 #. leap/php7-pear/php7-pecl/summary
 #, fuzzy
 msgid "PHP Extension Community Library"
@@ -884,11 +915,13 @@ msgstr ""
 "Lihat https://pecl.php.net untuk detail selengkapnya."
 
 #. leap/php7/php7-pgsql/summary
+#. leap/php8/php8-pgsql/summary
 #, fuzzy
 msgid "PostgreSQL database client for PHP"
 msgstr "Klien database PostgreSQL untuk PHP"
 
 #. leap/php7/php7-pgsql/description
+#. leap/php8/php8-pgsql/description
 #, fuzzy
 msgid ""
 "PHP functions for access to PostgreSQL database servers. It includes both "
@@ -908,11 +941,13 @@ msgid ""
 msgstr ""
 
 #. leap/php7/php7-phar/summary
+#. leap/php8/php8-phar/summary
 #, fuzzy
 msgid "PHP Archive extension for PHP"
 msgstr "Ekstensi Arsip PHP untuk PHP"
 
 #. leap/php7/php7-phar/description
+#. leap/php8/php8-phar/description
 msgid ""
 "The phar extension provides a way to put entire PHP applications into a "
 "single file called a \"phar\" (PHP Archive) for distribution and "
@@ -939,11 +974,13 @@ msgstr ""
 "Ini adalah contoh arsitektur xUnit untuk kerangka kerja pengujian unit."
 
 #. leap/php7/php7-posix/summary
+#. leap/php8/php8-posix/summary
 #, fuzzy
 msgid "POSIX functions for PHP"
 msgstr "POSIX untuk PHP"
 
 #. leap/php7/php7-posix/description
+#. leap/php8/php8-posix/description
 #, fuzzy
 msgid ""
 "This module contains an interface to those functions defined in the IEEE "
@@ -959,6 +996,7 @@ msgid "PHP7 readline extension"
 msgstr "Ekstensi bacaan PHP7"
 
 #. leap/php7/php7-readline/description
+#. leap/php8/php8-readline/description
 #, fuzzy
 msgid ""
 "PHP interface to libedit, which provides editable command line as well as "
@@ -978,11 +1016,13 @@ msgid "This extension provides an API for communicating with Redis servers"
 msgstr "Ekstensi ini menyediakan API untuk berkomunikasi dengan server Redis"
 
 #. leap/php7/php7-shmop/summary
+#. leap/php8/php8-shmop/summary
 #, fuzzy
 msgid "Alternate, low-level shared memory implementation for PHP"
 msgstr "Implementasi memori bersama tingkat rendah alternatif untuk PHP"
 
 #. leap/php7/php7-shmop/description
+#. leap/php8/php8-shmop/description
 #, fuzzy
 msgid "An extension created as an alternative to the sysvmsg module."
 msgstr "Ekstensi yang dibuat sebagai alternatif untuk modul sysvmsg."
@@ -1002,11 +1042,13 @@ msgstr ""
 "Samba untuk menyediakan fungsi terkait Samba dan aliran 'smb' ke program PHP."
 
 #. leap/php7/php7-snmp/summary
+#. leap/php8/php8-snmp/summary
 #, fuzzy
 msgid "SNMP extension for PHP"
 msgstr "Ekstensi SNMP untuk PHP"
 
 #. leap/php7/php7-snmp/description
+#. leap/php8/php8-snmp/description
 #, fuzzy
 msgid ""
 "The SNMP extension provides a toolset for managing remote devices via the "
@@ -1024,11 +1066,13 @@ msgstr ""
 "mereka tergantung pada file konfigurasi Net-SNMP dan variabel lingkungan."
 
 #. leap/php7/php7-soap/summary
+#. leap/php8/php8-soap/summary
 #, fuzzy
 msgid "SOAP/WSDL extension module for PHP"
 msgstr "Modul ekstensi SOAP/WSDL untuk PHP"
 
 #. leap/php7/php7-soap/description
+#. leap/php8/php8-soap/description
 #, fuzzy
 msgid ""
 "This module provides SOAP support.\n"
@@ -1042,11 +1086,13 @@ msgstr ""
 "mendukung subset spesifikasi SOAP 1.1, SOAP 1.2 dan WSDL 1.1."
 
 #. leap/php7/php7-sockets/summary
+#. leap/php8/php8-sockets/summary
 #, fuzzy
 msgid "Berkeley sockets API for PHP"
 msgstr "Berkeley soket API untuk PHP"
 
 #. leap/php7/php7-sockets/description
+#. leap/php8/php8-sockets/description
 #, fuzzy
 msgid ""
 "The socket extension implements a low-level interface to the socket "
@@ -1058,11 +1104,13 @@ msgstr ""
 "bertindak sebagai server soket serta klien."
 
 #. leap/php7/php7-sodium/summary
+#. leap/php8/php8-sodium/summary
 #, fuzzy
 msgid "Cryptographic Extension Based on Libsodium"
 msgstr "Ekstensi Kriptografi Berdasarkan Libsodium"
 
 #. leap/php7/php7-sodium/description
+#. leap/php8/php8-sodium/description
 #, fuzzy
 msgid ""
 "PHP binding to libsodium software library for encryption, decryption, "
@@ -1072,11 +1120,13 @@ msgstr ""
 "tanda tangan, hashing kata sandi, dan banyak lagi."
 
 #. leap/php7/php7-sqlite/summary
+#. leap/php8/php8-sqlite/summary
 #, fuzzy
 msgid "SQLite database client for PHP"
 msgstr "SQLite database client untuk PHP"
 
 #. leap/php7/php7-sqlite/description
+#. leap/php8/php8-sqlite/description
 msgid ""
 "This is an extension for the SQLite Embeddable SQL Database Engine. https://"
 "www.sqlite.org\n"
@@ -1094,52 +1144,45 @@ msgid ""
 msgstr ""
 
 #. leap/php7/php7-sysvmsg/summary
+#. leap/php8/php8-sysvmsg/summary
 #, fuzzy
 msgid "SysV Message Queue support for PHP"
 msgstr "Dukungan Antrean Pesan SysV untuk PHP"
 
 #. leap/php7/php7-sysvmsg/description
+#. leap/php8/php8-sysvmsg/description
 #, fuzzy
 msgid "This module provides System V Message Queue support."
 msgstr "Modul ini menyediakan dukungan Antrean Pesan Sistem V."
 
 #. leap/php7/php7-sysvsem/summary
+#. leap/php8/php8-sysvsem/summary
 #, fuzzy
 msgid "SysV Semaphore support for PHP"
 msgstr "Dukungan SysV Semaphore untuk PHP"
 
 #. leap/php7/php7-sysvsem/description
+#. leap/php8/php8-sysvsem/description
 #, fuzzy
 msgid "PHP interface for System V semaphores."
 msgstr "Antarmuka PHP untuk semaphores Sistem V."
 
 #. leap/php7/php7-sysvshm/summary
+#. leap/php8/php8-sysvshm/summary
 #, fuzzy
 msgid "SysV Shared Memory support for PHP"
 msgstr "Dukungan Memori Bersama SysV untuk PHP"
 
 #. leap/php7/php7-sysvshm/description
+#. leap/php8/php8-sysvshm/description
 #, fuzzy
 msgid "PHP interface for System V shared memory."
 msgstr "Antarmuka PHP untuk memori bersama Sistem V."
 
-#. leap/php7/php7-testresults/summary
-msgid "        PHP7 testsuite results"
+#. leap/php7-test/description
+#. leap/php8-test/description
+msgid "Run php upstream testsuite."
 msgstr ""
-
-#. leap/php7/php7-testresults/description
-#, fuzzy
-msgid ""
-"PHP is a server-side HTML embedded scripting language designed primarily for "
-"web development but also used as a general-purpose programming language.\n"
-"\n"
-"This package contains results from running the PHP7 testsuite."
-msgstr ""
-"PHP adalah bahasa skrip html sisi server yang dirancang terutama untuk "
-"pengembangan web tetapi juga digunakan sebagai bahasa pemrograman tujuan "
-"umum.\n"
-"\n"
-"Paket ini berisi header C untuk membangun ekstensi PHP."
 
 #. leap/php7/php7-tidy/summary
 #, fuzzy
@@ -1147,6 +1190,7 @@ msgid "PHP7 binding for the Tidy HTML cleaner"
 msgstr "Pengikatan PHP7 untuk pembersih HTML Rapi"
 
 #. leap/php7/php7-tidy/description
+#. leap/php8/php8-tidy/description
 #, fuzzy
 msgid ""
 "Tidy is an extension based on Libtidy (http://tidy.sourceforge.net) and "
@@ -1160,11 +1204,13 @@ msgstr ""
 "seperti PHP atau ASP di dalamnya menggunakan konstruksi OO."
 
 #. leap/php7/php7-tokenizer/summary
+#. leap/php8/php8-tokenizer/summary
 #, fuzzy
 msgid "Extension module to access Zend Engine's PHP tokenizer"
 msgstr "Modul ekstensi untuk mengakses tokenizer PHP Zend Engine"
 
 #. leap/php7/php7-tokenizer/description
+#. leap/php8/php8-tokenizer/description
 #, fuzzy
 msgid ""
 "The tokenizer functions provide an interface to the PHP tokenizer embedded "
@@ -1191,24 +1237,6 @@ msgstr ""
 "Ekstensi ini menyediakan fungsi untuk menghasilkan dan menganalisis "
 "pengidentifikasi unik universal (UUID)."
 
-#. leap/php7/php7-wddx/summary
-#, fuzzy
-msgid "WDDX support for PHP"
-msgstr "Dukungan WDDX untuk PHP"
-
-#. leap/php7/php7-wddx/description
-#, fuzzy
-msgid ""
-"PHP functions for working with WDDX - Web Distributed Data Exchange, a "
-"programming language-, platform- and transport-neutral data interchange "
-"mechanism designed to pass data between different environments and different "
-"computers."
-msgstr ""
-"Fungsi PHP untuk bekerja dengan WDDX - Web Distributed Data Exchange, "
-"mekanisme pertukaran data pemrograman bahasa, platform, dan transportasi "
-"netral yang dirancang untuk meneruskan data antara lingkungan yang berbeda "
-"dan komputer yang berbeda."
-
 #. leap/php7-xdebug/summary
 #, fuzzy
 msgid "Extended PHP debugger"
@@ -1231,11 +1259,13 @@ msgid ""
 msgstr ""
 
 #. leap/php7/php7-xmlreader/summary
+#. leap/php8/php8-xmlreader/summary
 #, fuzzy
 msgid "Streaming XML reader extension for PHP"
 msgstr "Streaming ekstensi pembaca XML untuk PHP"
 
 #. leap/php7/php7-xmlreader/description
+#. leap/php8/php8-xmlreader/description
 #, fuzzy
 msgid ""
 "The XMLReader extension is an XML Pull parser. The reader acts as a cursor "
@@ -1256,11 +1286,13 @@ msgid "This module adds XMLRPC-EPI support."
 msgstr "Modul ini menambahkan dukungan XMLRPC-EPI."
 
 #. leap/php7/php7-xmlwriter/summary
+#. leap/php8/php8-xmlwriter/summary
 #, fuzzy
 msgid "Streaming-based XML writer extension for PHP"
 msgstr "Ekstensi penulis XML berbasis streaming untuk PHP"
 
 #. leap/php7/php7-xmlwriter/description
+#. leap/php8/php8-xmlwriter/description
 #, fuzzy
 msgid ""
 "XMLWriter wraps the libxml xmlWriter API. Represents a writer that provides "
@@ -1272,6 +1304,7 @@ msgstr ""
 "data XML."
 
 #. leap/php7/php7-xsl/description
+#. leap/php8/php8-xsl/description
 #, fuzzy
 msgid ""
 "PHP's XSL extension implements the XSL (Extensible Stylesheet Language) "
@@ -1281,11 +1314,13 @@ msgstr ""
 "melakukan transformasi XSLT menggunakan library libxslt"
 
 #. leap/php7/php7-zip/summary
+#. leap/php8/php8-zip/summary
 #, fuzzy
 msgid "ZIP archive support for PHP"
 msgstr "Dukungan arsip ZIP untuk PHP"
 
 #. leap/php7/php7-zip/description
+#. leap/php8/php8-zip/description
 #, fuzzy
 msgid ""
 "This extension allows to transparently read or write ZIP compressed archives "
@@ -1295,11 +1330,13 @@ msgstr ""
 "secara transparan dan file di dalamnya."
 
 #. leap/php7/php7-zlib/summary
+#. leap/php8/php8-zlib/summary
 #, fuzzy
 msgid "Zlib compression support for PHP"
 msgstr "Dukungan kompresi Zlib untuk PHP"
 
 #. leap/php7/php7-zlib/description
+#. leap/php8/php8-zlib/description
 #, fuzzy
 msgid ""
 "This module enables to transparently read and write gzip (.gz) compressed "
@@ -1310,6 +1347,44 @@ msgstr ""
 "secara transparan, melalui versi sebagian besar fungsi sistem berkas yang "
 "bekerja dengan file yang dikompresi gzip (dan file yang tidak dikompresi "
 "juga, tetapi tidak dengan soket)."
+
+#. leap/php8/summary
+#. leap/php8/php8-cli/summary
+#. leap/php8-test/summary
+#, fuzzy
+msgid "Interpreter for the PHP scripting language version 8"
+msgstr "Penerjemah untuk bahasa skrip PHP versi 7"
+
+#. leap/php8/php8-calendar/summary
+#. leap/php8/php8-xsl/summary
+#, fuzzy
+msgid "PHP8 Extension Module"
+msgstr "Modul Ekstensi PHP7"
+
+#. leap/php8/php8-devel/summary
+#, fuzzy
+msgid "PHP8 development files for C/C++ extensions"
+msgstr "File pengembangan PHP7 untuk ekstensi C/C++"
+
+#. leap/php8-fastcgi/summary
+#, fuzzy
+msgid "FastCGI PHP8 Module"
+msgstr "Modul FastCGI PHP7"
+
+#. leap/php8-fpm/summary
+#, fuzzy
+msgid "FastCGI Process Manager PHP8 Module"
+msgstr "Modul PHP7 Manajer Proses FastCGI"
+
+#. leap/php8/php8-readline/summary
+#, fuzzy
+msgid "PHP8 readline extension"
+msgstr "Ekstensi bacaan PHP7"
+
+#. leap/php8/php8-tidy/summary
+#, fuzzy
+msgid "PHP8 binding for the Tidy HTML cleaner"
+msgstr "Pengikatan PHP7 untuk pembersih HTML Rapi"
 
 #. leap/phpMyAdmin/summary
 #, fuzzy
@@ -1346,183 +1421,24 @@ msgid ""
 "databases residing on the same as well as remote servers     (see FAQ 9.1)"
 msgstr ""
 
+#. leap/phpMyAdmin/phpMyAdmin-apache/summary
+msgid "Apache configuration for phpMyAdmin"
+msgstr ""
+
+#. leap/phpMyAdmin/phpMyAdmin-lang/summary
+msgid "Translations for package phpMyAdmin"
+msgstr ""
+
+#. leap/phpMyAdmin/phpMyAdmin-lang/description
+msgid "Provides translations for the \"phpMyAdmin\" package."
+msgstr ""
+
 #. leap/phpPgAdmin/summary
 #, fuzzy
 msgid "Administration of PostgreSQL over the web"
 msgstr "Administrasi PostgreSQL melalui web"
 
 #. leap/phpPgAdmin/description
-msgid ""
-"phpPgAdmin is a web-based administration tool for PostgreSQL. It is perfect "
-"for PostgreSQL DBAs, newbies and hosting services.\n"
-"\n"
-"Features \n"
-"* Administer multiple servers\n"
-"* Support for PostgreSQL 8.4.x, 9.x.x, 10.x, 11.x\n"
-"* Manage all aspects of: \to Users & groups \to Databases \to Schemas \to "
-"Tables, indexes, constraints, triggers, rules & privileges \to Views, "
-"sequences & functions \to Advanced objects \to Reports\n"
-"* Easy data manipulation: \to Browse tables, views & reports \to Execute "
-"arbitrary SQL \to Select, insert, update and delete\n"
-"* Dump table data in a variety of formats: SQL, COPY, XML, XHTML, CSV, "
-"Tabbed, pg_dump\n"
-"* Import SQL scripts, COPY data, XML, CSV and Tabbed\n"
-"* Supports the Slony master-slave replication engine\n"
-"* Excellent language support: \to Available in 27 languages \to No encoding "
-"conflicts. Edit Russian data using a Japanese interface!\n"
-"* Easy to install and configur"
-msgstr ""
-
-#. tumbleweed/php-cs-fixer/description
-msgid ""
-"The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes code to follow "
-"standards; this can be the PHP coding standards as defined in the PSR-1, "
-"PSR-2, etc., or other community driven ones like the Symfony one. Custom "
-"styles can also be defined through configuration.\n"
-"\n"
-"It can modernise code (like converting the pow function to the ** operator "
-"on PHP 5.6) and (micro) optimize it."
-msgstr ""
-
-#. tumbleweed/php7/description
-#. tumbleweed/php8/description
-#, fuzzy
-msgid ""
-"PHP is a server-side HTML embedded scripting language designed primarily for "
-"web development but also used as a general-purpose programming language.\n"
-"\n"
-"This package contains the base files for all subpackages and must be "
-"installed in order to use PHP. Additionally, extension modules and server "
-"modules (e.g. for Apache) may be installed."
-msgstr ""
-"PHP adalah bahasa skrip html sisi server yang dirancang terutama untuk "
-"pengembangan web tetapi juga digunakan sebagai bahasa pemrograman tujuan "
-"umum.\n"
-"\n"
-"Paket ini berisi header C untuk membangun ekstensi PHP."
-
-#. tumbleweed/php7/php7-cli/description
-#. tumbleweed/php8/php8-cli/description
-#, fuzzy
-msgid ""
-"PHP is a server-side HTML embedded scripting language designed primarily for "
-"web development but also used as a general-purpose programming language.\n"
-"\n"
-"This package contains the standard implementation of PHP, namely Zend PHP. "
-"Included are the PHP command-line binary and the configuration file (php."
-"ini).\n"
-"\n"
-"Additional documentation is available in package php-doc."
-msgstr ""
-"PHP adalah bahasa skrip html sisi server yang dirancang terutama untuk "
-"pengembangan web tetapi juga digunakan sebagai bahasa pemrograman tujuan "
-"umum.\n"
-"\n"
-"Paket ini berisi header C untuk membangun ekstensi PHP."
-
-#. tumbleweed/php7-memcache/summary
-#. tumbleweed/php8-memcache/summary
-#, fuzzy
-msgid "PHP Memcache client Extension"
-msgstr "Ekstensi klien PHP MemcacheD"
-
-#. tumbleweed/php7-memcache/description
-#. tumbleweed/php8-memcache/description
-msgid ""
-"Memcached is a caching daemon designed especially for dynamic web "
-"applications to decrease database load by storing objects in memory. This "
-"extension allows you to work with memcached through handy OO and procedural "
-"interfaces. The extension allows use to store sessions in memcached via "
-"memcache."
-msgstr ""
-
-#. tumbleweed/php7-phalcon/description
-msgid ""
-"Phalcon is a framework for PHP 5 written as a C extension. Zephir is a high-"
-"level language, something between C and PHP. It is both dynamic and static "
-"typed and it supports the features we need to create and maintain a project "
-"like Phalcon."
-msgstr ""
-
-#. tumbleweed/php7-psr/summary
-#. tumbleweed/php8-psr/summary
-#, fuzzy
-msgid "PSR Extension Module"
-msgstr "Modul Ekstensi PHP7"
-
-#. tumbleweed/php7-psr/description
-#. tumbleweed/php8-psr/description
-msgid ""
-"This extension provides the accepted PSR interfaces, so they can be used in "
-"an extension."
-msgstr ""
-
-#. tumbleweed/php7-test/description
-#. tumbleweed/php8-test/description
-msgid "Run php upstream testsuite."
-msgstr ""
-
-#. tumbleweed/php7-uuid/description
-#. tumbleweed/php8-uuid/description
-#, fuzzy
-msgid ""
-"This extension provides functions to generate and analyse universally unique "
-"identifiers (UUIDs)."
-msgstr ""
-"Ekstensi ini menyediakan fungsi untuk menghasilkan dan menganalisis "
-"pengidentifikasi unik universal (UUID)."
-
-#. tumbleweed/php8/summary
-#. tumbleweed/php8/php8-cli/summary
-#. tumbleweed/php8-test/summary
-#, fuzzy
-msgid "Interpreter for the PHP scripting language version 8"
-msgstr "Penerjemah untuk bahasa skrip PHP versi 7"
-
-#. tumbleweed/php8/php8-calendar/summary
-#. tumbleweed/php8/php8-xsl/summary
-#, fuzzy
-msgid "PHP8 Extension Module"
-msgstr "Modul Ekstensi PHP7"
-
-#. tumbleweed/php8/php8-devel/summary
-#, fuzzy
-msgid "PHP8 development files for C/C++ extensions"
-msgstr "File pengembangan PHP7 untuk ekstensi C/C++"
-
-#. tumbleweed/php8-fastcgi/summary
-#, fuzzy
-msgid "FastCGI PHP8 Module"
-msgstr "Modul FastCGI PHP7"
-
-#. tumbleweed/php8-fpm/summary
-#, fuzzy
-msgid "FastCGI Process Manager PHP8 Module"
-msgstr "Modul PHP7 Manajer Proses FastCGI"
-
-#. tumbleweed/php8/php8-readline/summary
-#, fuzzy
-msgid "PHP8 readline extension"
-msgstr "Ekstensi bacaan PHP7"
-
-#. tumbleweed/php8/php8-tidy/summary
-#, fuzzy
-msgid "PHP8 binding for the Tidy HTML cleaner"
-msgstr "Pengikatan PHP7 untuk pembersih HTML Rapi"
-
-#. tumbleweed/phpMyAdmin/phpMyAdmin-apache/summary
-msgid "Apache configuration for phpMyAdmin"
-msgstr ""
-
-#. tumbleweed/phpMyAdmin/phpMyAdmin-lang/summary
-msgid "Translations for package phpMyAdmin"
-msgstr ""
-
-#. tumbleweed/phpMyAdmin/phpMyAdmin-lang/description
-msgid "Provides translations for the \"phpMyAdmin\" package."
-msgstr ""
-
-#. tumbleweed/phpPgAdmin/description
 msgid ""
 "phpPgAdmin is a web-based administration tool for PostgreSQL. It is perfect "
 "for PostgreSQL DBAs, newbies and hosting services.\n"
@@ -1544,9 +1460,189 @@ msgid ""
 "* Easy to install and configure"
 msgstr ""
 
-#. tumbleweed/phpPgAdmin/phpPgAdmin-apache/summary
+#. leap/phpPgAdmin/phpPgAdmin-apache/summary
 msgid "Apache configuration for phpPgAdmin"
 msgstr ""
+
+#. tumbleweed/php7-imagick/description
+#. tumbleweed/php8-imagick/description
+#, fuzzy
+msgid ""
+"PHP extension to create, modify and obtain meta information of images using "
+"the ImageMagick API."
+msgstr ""
+"Ekstensi PHP untuk membuat, memodifikasi, dan mendapatkan informasi meta "
+"gambar menggunakan ImageMagick API"
+
+#. tumbleweed/php7-memcache/summary
+#. tumbleweed/php8-memcache/summary
+#, fuzzy
+msgid "PHP Memcache client Extension"
+msgstr "Ekstensi klien PHP MemcacheD"
+
+#. tumbleweed/php7-memcache/description
+#. tumbleweed/php8-memcache/description
+msgid ""
+"Memcached is a caching daemon designed especially for dynamic web "
+"applications to decrease database load by storing objects in memory. This "
+"extension allows you to work with memcached through handy OO and procedural "
+"interfaces. The extension allows use to store sessions in memcached via "
+"memcache."
+msgstr ""
+
+#. tumbleweed/php7-phalcon/description
+msgid ""
+"Phalcon is a framework for PHP7 written as a C extension. Zephir is a high-"
+"level language, something between C and PHP. It is both dynamic and static "
+"typed and it supports the features we need to create and maintain a project "
+"like Phalcon."
+msgstr ""
+
+#. tumbleweed/php7-psr/summary
+#. tumbleweed/php8-psr/summary
+#, fuzzy
+msgid "PSR Extension Module"
+msgstr "Modul Ekstensi PHP7"
+
+#. tumbleweed/php7-psr/description
+#. tumbleweed/php8-psr/description
+msgid ""
+"This extension provides the accepted PSR interfaces, so they can be used in "
+"an extension."
+msgstr ""
+
+#. tumbleweed/php7-uuid/description
+#. tumbleweed/php8-uuid/description
+#, fuzzy
+msgid ""
+"This extension provides functions to generate and analyse universally unique "
+"identifiers (UUIDs)."
+msgstr ""
+"Ekstensi ini menyediakan fungsi untuk menghasilkan dan menganalisis "
+"pengidentifikasi unik universal (UUID)."
+
+#. tumbleweed/php8/php8-bz2/summary
+#, fuzzy
+msgid "PHP bzip2 codec support"
+msgstr "dukungan codec bzip2 untuk PHP"
+
+#. tumbleweed/php8/php8-calendar/summary
+#. tumbleweed/php8/php8-xsl/summary
+#, fuzzy
+msgid "PHP Extension Module"
+msgstr "Modul Ekstensi PHP7"
+
+#. tumbleweed/php8/php8-curl/summary
+#, fuzzy
+msgid "PHP libcurl integration"
+msgstr "integrasi libcurl untuk PHP"
+
+#. tumbleweed/php8/php8-devel/summary
+#, fuzzy
+msgid "PHP development files for C/C++ extensions"
+msgstr "File pengembangan PHP7 untuk ekstensi C/C++"
+
+#. tumbleweed/php8-fastcgi/summary
+#, fuzzy
+msgid "FastCGI PHP Module"
+msgstr "Modul FastCGI PHP7"
+
+#. tumbleweed/php8/php8-ffi/summary
+msgid "Main interface to C code and data"
+msgstr ""
+
+#. tumbleweed/php8/php8-ffi/description
+msgid ""
+"This extension allows the loading of shared libraries (.DLL or .so), calling "
+"of C functions and accessing of C data structures in pure PHP, without "
+"having to have deep knowledge of the Zend extension API, and without having "
+"to learn a third \"intermediate\" language."
+msgstr ""
+
+#. tumbleweed/php8-fpm/summary
+#, fuzzy
+msgid "FastCGI Process Manager PHP Module"
+msgstr "Modul PHP7 Manajer Proses FastCGI"
+
+#. tumbleweed/php8-fpm/php8-fpm-apache/summary
+#, fuzzy
+msgid "Apache configuration for PHP-FPM"
+msgstr "Integrasi OpenSSL untuk PHP"
+
+#. tumbleweed/php8-fpm/php8-fpm-apache/description
+msgid ""
+"Configuration for Apache to pass all requests for PHP scripts to the PHP-FPM "
+"server using reverse proxy."
+msgstr ""
+
+#. tumbleweed/php8/php8-readline/summary
+#, fuzzy
+msgid "PHP readline extension"
+msgstr "Ekstensi bacaan PHP7"
+
+#. tumbleweed/php8/php8-tidy/summary
+#, fuzzy
+msgid "PHP binding for the Tidy HTML cleaner"
+msgstr "Pengikatan PHP7 untuk pembersih HTML Rapi"
+
+#, fuzzy
+#~ msgid "PHP7 module for the Apache 2.x webserver"
+#~ msgstr "Modul PHP7 untuk webserver Apache 2.x"
+
+#, fuzzy
+#~ msgid ""
+#~ "PHP is a server-side, cross-platform HTML embedded scripting language. If "
+#~ "you are completely new to PHP and want to get some idea of how it works, "
+#~ "have a look at the Introductory tutorial. Once you get beyond that, have "
+#~ "a look at the example archive sites and some of the other resources "
+#~ "available in the links section.\n"
+#~ "\n"
+#~ "Please refer to /usr/share/doc/packages/php7/README.SUSE for information "
+#~ "on how to load the module into the Apache webserver."
+#~ msgstr ""
+#~ "PHP adalah bahasa skrip HTML html lintas platform sisi server. Jika Anda "
+#~ "benar-benar baru untuk PHP dan ingin mendapatkan beberapa ide tentang "
+#~ "cara kerjanya, lihat tutorial Pengantar. Setelah Anda melampaui itu, "
+#~ "lihat contoh situs arsip dan beberapa sumber daya lain yang tersedia di "
+#~ "bagian link."
+
+#, fuzzy
+#~ msgid "Firebird database client for PHP"
+#~ msgstr "Firebird database client untuk PHP"
+
+#, fuzzy
+#~ msgid "PHP functions for access to firebird database servers."
+#~ msgstr "Fungsi PHP untuk akses ke server database firebird."
+
+#, fuzzy
+#~ msgid ""
+#~ "PHP is a server-side HTML embedded scripting language designed primarily "
+#~ "for web development but also used as a general-purpose programming "
+#~ "language.\n"
+#~ "\n"
+#~ "This package contains results from running the PHP7 testsuite."
+#~ msgstr ""
+#~ "PHP adalah bahasa skrip html sisi server yang dirancang terutama untuk "
+#~ "pengembangan web tetapi juga digunakan sebagai bahasa pemrograman tujuan "
+#~ "umum.\n"
+#~ "\n"
+#~ "Paket ini berisi header C untuk membangun ekstensi PHP."
+
+#, fuzzy
+#~ msgid "WDDX support for PHP"
+#~ msgstr "Dukungan WDDX untuk PHP"
+
+#, fuzzy
+#~ msgid ""
+#~ "PHP functions for working with WDDX - Web Distributed Data Exchange, a "
+#~ "programming language-, platform- and transport-neutral data interchange "
+#~ "mechanism designed to pass data between different environments and "
+#~ "different computers."
+#~ msgstr ""
+#~ "Fungsi PHP untuk bekerja dengan WDDX - Web Distributed Data Exchange, "
+#~ "mekanisme pertukaran data pemrograman bahasa, platform, dan transportasi "
+#~ "netral yang dirancang untuk meneruskan data antara lingkungan yang "
+#~ "berbeda dan komputer yang berbeda."
 
 #, fuzzy
 #~ msgid "PHP module for MaxMind GeoIP libraries"

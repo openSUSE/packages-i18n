@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: repomd2gettext\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2021-05-13 01:18+0000\n"
+"POT-Creation-Date: 2022-02-23 08:40+0000\n"
 "PO-Revision-Date: 2021-05-17 10:59+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
-"Language-Team: Chinese (Taiwan) <https://l10n.opensuse.org/projects/"
-"packages-i18n/patterns-master/zh_TW/>\n"
+"Language-Team: Chinese (Taiwan) <https://l10n.opensuse.org/projects/packages-"
+"i18n/patterns-master/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -363,8 +363,9 @@ msgid ""
 "minimum and the node *must* be installed in a automatic manner. The pattern "
 "'HPC Modularized libraries' should also be installed."
 msgstr ""
-"計算節點由一個極簡軟體影像構成，主要執行模擬程式。此節點上的服務應減至最低數量，並且該節點*必須*以自動化方式安裝。此外還應安裝 \"HPC "
-"模組化程式庫\" 模式。"
+"計算節點由一個極簡軟體影像構成，主要執行模擬程式。此節點上的服務應減至最低數"
+"量，並且該節點*必須*以自動化方式安裝。此外還應安裝 \"HPC 模組化程式庫\" 模"
+"式。"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -382,7 +383,8 @@ msgid ""
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
-"此套件提供用於開發 HPC 應用程式的所有相關套件。它相依於 \"HPC 模組化程式庫\" 模式。此外，它還包含 GNU 編譯器和相關的管理套件。"
+"此套件提供用於開發 HPC 應用程式的所有相關套件。它相依於 \"HPC 模組化程式庫\" "
+"模式。此外，它還包含 GNU 編譯器和相關的管理套件。"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
 msgid "HPC Modularized Libraries"
@@ -395,7 +397,8 @@ msgid ""
 "in parallel. In order to use these libraries one needs to load them via the "
 "module command first."
 msgstr ""
-"此套件提供可用於 HPC 環境中的所有模組化程式庫。這些程式庫允許平行安裝多個 MPI 變體。使用者需要先透過模組指令載入這些程式庫，然後才能使用它們。"
+"此套件提供可用於 HPC 環境中的所有模組化程式庫。這些程式庫允許平行安裝多個 "
+"MPI 變體。使用者需要先透過模組指令載入這些程式庫，然後才能使用它們。"
 
 #. SLE/patterns-hpc/patterns-hpc-workload_server/summary
 msgid "HPC Workload Manager"
@@ -543,8 +546,8 @@ msgid ""
 "which support the provisioning and running of instances in the cloud "
 "framework (e.g. python-azure-agent)."
 msgstr ""
-"此模式會安裝支援在 Microsoft Azure 雲端架構中佈建和執行例項的 Microsoft Azure 例項啟始化套件 (例如 python-"
-"azure-agent)。"
+"此模式會安裝支援在 Microsoft Azure 雲端架構中佈建和執行例項的 Microsoft "
+"Azure 例項啟始化套件 (例如 python-azure-agent)。"
 
 #. SLE/patterns-public-cloud-15/patterns-public-cloud-15-Microsoft-Azure-Instance-Tools/summary
 msgid "Microsoft Azure - Instance Tools"
@@ -920,7 +923,8 @@ msgstr "事務性基礎系統"
 msgid ""
 "This is the base system for a host updated by Transactional Updates. "
 "Includes Tools for systems with a read-only root filesystem."
-msgstr "這是採用交易性更新的主機的基礎系統。包含採用唯讀根檔案系統的系統所需的工具。"
+msgstr ""
+"這是採用交易性更新的主機的基礎系統。包含採用唯讀根檔案系統的系統所需的工具。"
 
 #. SLE/patterns-ha-geo/patterns-ha-geo-ha_geo/summary
 msgid "GEO Clustering for High Availability"
@@ -1069,7 +1073,9 @@ msgid ""
 "Cinnamon is a modern Linux desktop which provides advanced innovative "
 "features and a traditional user experience. It's easy to use, powerful and "
 "flexible."
-msgstr "Cinnamon 是一款現代 Linux 桌面，提供進階創新功能和傳統的使用者體驗，靈活易用且功能強大。"
+msgstr ""
+"Cinnamon 是一款現代 Linux 桌面，提供進階創新功能和傳統的使用者體驗，靈活易用"
+"且功能強大。"
 
 #. leap/patterns-base/patterns-base-basesystem/summary
 msgid "Base System (alias pattern for base)"
@@ -1612,6 +1618,28 @@ msgstr "openSUSE MicroOS"
 msgid "Deepin Desktop"
 msgstr "Deepin 桌面"
 
+#. tumbleweed/patterns-base/patterns-base-base/summary
+#. tumbleweed/patterns-base/patterns-base-base-32bit/summary
+#, fuzzy
+#| msgid "MATE Base System"
+msgid "Base System"
+msgstr "MATE 基礎系統"
+
+#. tumbleweed/patterns-base/patterns-base-base/description
+#. tumbleweed/patterns-base/patterns-base-basesystem/description
+#, fuzzy
+#| msgid ""
+#| "This is the base runtime system.  It contains only a minimal multiuser "
+#| "booting system. For running on real hardware, you need to add additional "
+#| "packages and pattern to make this pattern useful on its own."
+msgid ""
+"This is the base runtime system.  It contains only a basic multiuser booting "
+"system. For running on real hardware, you need to add additional packages "
+"and pattern to make this pattern useful on its own."
+msgstr ""
+"這是一個基礎執行時期系統。它僅包含一個精簡的多重使用者開機系統。若要在實際硬"
+"體上運作，您需要新增其他套件及模式，使該模式發揮作用。"
+
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
 msgid "SELinux"
 msgstr "SELinux"
@@ -1624,8 +1652,34 @@ msgid ""
 "security policy, and streamlines the amount of software involved with "
 "security policy enforcement."
 msgstr ""
-"安全增強型 Linux (SELinux) 提供用於支援存取控制安全性規則 (包括強制存取控制 (MAC)) "
-"的機制。其架構會盡力分開執行安全性決策與安全性規則，並精簡安全性規則執行涉及的軟體量。"
+"安全增強型 Linux (SELinux) 提供用於支援存取控制安全性規則 (包括強制存取控制 "
+"(MAC)) 的機制。其架構會盡力分開執行安全性決策與安全性規則，並精簡安全性規則執"
+"行涉及的軟體量。"
+
+#. tumbleweed/patterns-budgie/patterns-budgie-budgie/summary
+#, fuzzy
+#| msgid "Deepin Desktop Environment"
+msgid "Budgie Desktop Environment"
+msgstr "Deepin 桌面環境"
+
+#. tumbleweed/patterns-budgie/patterns-budgie-budgie/description
+msgid ""
+"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
+"the way of the user."
+msgstr ""
+
+#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/summary
+#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/description
+#, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
+msgid "Applets for Budgie Desktop Environment"
+msgstr "XFCE 桌面環境的基礎套件"
+
+#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/category
+#, fuzzy
+#| msgid "Deepin Desktop"
+msgid "Budgie Desktop"
+msgstr "Deepin 桌面"
 
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
@@ -1655,7 +1709,9 @@ msgstr "Kubernetes kubeadm 堆疊"
 msgid ""
 "This provides a vanilla kubeadm stack. It contains everything needed to "
 "setup kubernetes using kubeadm."
-msgstr "該模式提供原版 kubeadm 堆疊。它包含設定使用 kubeadm 的 kubernetes 所需的全部套件。"
+msgstr ""
+"該模式提供原版 kubeadm 堆疊。它包含設定使用 kubeadm 的 kubernetes 所需的全部"
+"套件。"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubernetes_utilities/summary
 msgid "Utilities to manage kubernetes"
@@ -1699,8 +1755,12 @@ msgid "Deepin Desktop Environment"
 msgstr "Deepin 桌面環境"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
+#, fuzzy
+#| msgid ""
+#| "The Deepin desktop environment is a desktop environment using traditional "
+#| "metaphors."
 msgid ""
-"The Deepin desktop environment is a desktop environment using traditional "
+"The Deepin desktop environment is a desktop environment using fashion "
 "metaphors."
 msgstr "Deepin 桌面環境是使用傳統隱喻設計的桌面環境。"
 
@@ -1744,6 +1804,18 @@ msgstr "Deepin 辦公程式"
 msgid "Deepin Utilities"
 msgstr "Deepin 公用程式"
 
+#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/summary
+#, fuzzy
+#| msgid "Qt 5 Development"
+msgid "Qt 6 Development"
+msgstr "Qt 5 開發"
+
+#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/description
+#, fuzzy
+#| msgid "Tools and libraries for software development using Qt 5."
+msgid "Tools and libraries for software development using Qt 6."
+msgstr "使用 Qt5 進行軟體開發所需的工具與函式庫。"
+
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_kde/summary
@@ -1785,6 +1857,8 @@ msgstr "openSUSE MicroOS DVD 上的備選附加套件。"
 #. tumbleweed/patterns-microos/patterns-microos-hardware/category
 #. tumbleweed/patterns-microos/patterns-microos-ima_evm/category
 #. tumbleweed/patterns-microos/patterns-microos-onlyDVD/category
+#. tumbleweed/patterns-microos/patterns-microos-ra_agent/category
+#. tumbleweed/patterns-microos/patterns-microos-ra_verifier/category
 #. tumbleweed/patterns-microos/patterns-microos-selinux/category
 #. tumbleweed/patterns-microos/patterns-microos-sssd_ldap/category
 msgid "MicroOS"
@@ -1803,7 +1877,8 @@ msgstr "在 openSUSE MicroOS 上啟用 Apparmor 所需的套件。"
 msgid ""
 "This is the openSUSE MicroOS runtime system. It contains only a minimal "
 "multiuser booting system."
-msgstr "這是 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
+msgstr ""
+"這是 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
 msgid "openSUSE MicroOS using Micro DNF"
@@ -1813,7 +1888,9 @@ msgstr "使用 Micro DNF 的 openSUSE MicroOS"
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
-msgstr "這是使用 Micro DNF 套件管理員的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
+msgstr ""
+"這是使用 Micro DNF 套件管理員的 openSUSE MicroOS 執行時期系統。它僅包含一個極"
+"簡的多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
 msgid "openSUSE MicroOS using PackageKit"
@@ -1823,7 +1900,9 @@ msgstr "使用 PackageKit 的 openSUSE MicroOS"
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
-msgstr "這是使用 PackageKit 服務的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
+msgstr ""
+"這是使用 PackageKit 服務的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的"
+"多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
 msgid "openSUSE MicroOS using Zypper"
@@ -1833,7 +1912,9 @@ msgstr "使用 Zypper 的 openSUSE MicroOS"
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
-msgstr "這是使用 Zypper 套件管理員的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡的多使用者開機系統。"
+msgstr ""
+"這是使用 Zypper 套件管理員的 openSUSE MicroOS 執行時期系統。它僅包含一個極簡"
+"的多使用者開機系統。"
 
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/summary
 msgid "openSUSE MicroOS Base System (alias pattern for microos_base)"
@@ -1855,7 +1936,9 @@ msgstr "基於 Web 的遠端系統管理"
 msgid ""
 "Packages required to run the Cockpit system management service. For the web "
 "service the cockpit-ws container is required."
-msgstr "執行 Cockpit 系統管理服務所需的套件。對於 Web 服務，需要使用 cockpit-ws 容器。"
+msgstr ""
+"執行 Cockpit 系統管理服務所需的套件。對於 Web 服務，需要使用 cockpit-ws 容"
+"器。"
 
 #. tumbleweed/patterns-microos/patterns-microos-defaults/summary
 msgid "openSUSE MicroOS defaults"
@@ -1915,6 +1998,30 @@ msgstr "僅適用於 openSUSE MicroOS DVD 的套件"
 msgid "Additional packages on a openSUSE MicroOS DVD."
 msgstr "openSUSE MicroOS DVD 上的附加套件。"
 
+#. tumbleweed/patterns-microos/patterns-microos-ra_agent/summary
+msgid "Remote Attestation (Agent) Support"
+msgstr ""
+
+#. tumbleweed/patterns-microos/patterns-microos-ra_agent/description
+#, fuzzy
+#| msgid "Packages required to enable Apparmor on openSUSE MicroOS."
+msgid ""
+"Packages required to enable remote attestation via Keylime agent on openSUSE "
+"MicroOS."
+msgstr "在 openSUSE MicroOS 上啟用 Apparmor 所需的套件。"
+
+#. tumbleweed/patterns-microos/patterns-microos-ra_verifier/summary
+msgid "Remote Attestation (Verifier) Support"
+msgstr ""
+
+#. tumbleweed/patterns-microos/patterns-microos-ra_verifier/description
+#, fuzzy
+#| msgid "Packages required to enable Apparmor on openSUSE MicroOS."
+msgid ""
+"Packages required to enable remote attestation via Keylime verifier on "
+"openSUSE MicroOS."
+msgstr "在 openSUSE MicroOS 上啟用 Apparmor 所需的套件。"
+
 #. tumbleweed/patterns-microos/patterns-microos-selinux/summary
 msgid "SELinux Support"
 msgstr "SELinux 支援"
@@ -1940,6 +2047,26 @@ msgstr "Sway Tiling Wayland 撰寫器和相關工具"
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr "Sway Tiling Wayland 撰寫器和相關工具。"
+
+#. tumbleweed/patterns-wsl/patterns-wsl-base/summary
+msgid "Base WSL packages"
+msgstr ""
+
+#. tumbleweed/patterns-wsl/patterns-wsl-base/description
+msgid ""
+"This package contains the wsl_base pattern: recommended tools,libraries for "
+"using WSL."
+msgstr ""
+
+#. tumbleweed/patterns-wsl/patterns-wsl-gui/summary
+msgid "WSL GUI packages"
+msgstr ""
+
+#. tumbleweed/patterns-wsl/patterns-wsl-gui/description
+msgid ""
+"This package contains the wsl_gui pattern: recommended tools,libraries for "
+"using WSLg."
+msgstr ""
 
 #~ msgid ""
 #~ "This is the minimal openSUSE runtime system. It is really a minimal "
