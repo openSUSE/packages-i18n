@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2021-05-13 01:18+0000\n"
+"POT-Creation-Date: 2022-02-23 08:40+0000\n"
 "PO-Revision-Date: 2021-05-17 10:59+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -337,12 +337,16 @@ msgid ""
 "memory (non-distributed) systems, and classes for managing asynchronous "
 "computations in GUI applications."
 msgstr ""
-"QtConcurrent ネームスペースは、ミューテックスや読み書きのロック、待機条件やセマフォなどの低レベルなスレッドプリミティブを利用せずに、"
-"マルチスレッド型のプログラムを開発するための高レベルな API を提供しています。 QtConcurrent "
-"を利用するプログラムは、利用可能なプロセッサコア数に応じて、利用するスレッド数が自動変化する仕組みを利用することができます。\n"
+"QtConcurrent ネームスペースは、ミューテックスや読み書きのロック、待機条件やセ"
+"マフォなどの低レベルなスレッドプリミティブを利用せずに、マルチスレッド型のプ"
+"ログラムを開発するための高レベルな API を提供しています。 QtConcurrent を利用"
+"するプログラムは、利用可能なプロセッサコア数に応じて、利用するスレッド数が自"
+"動変化する仕組みを利用することができます。\n"
 "\n"
-"QtConcurrent では、 MapReduce や FilterReduce などの共有メモリ (非分散) システム向け実装並行リスト処理のほか、 "
-"GUI アプリケーション内で非同期計算処理を管理するためのクラスなど、並行リスト処理向けの関数型プログラミング API を提供しています。"
+"QtConcurrent では、 MapReduce や FilterReduce などの共有メモリ (非分散) シス"
+"テム向け実装並行リスト処理のほか、 GUI アプリケーション内で非同期計算処理を管"
+"理するためのクラスなど、並行リスト処理向けの関数型プログラミング API を提供し"
+"ています。"
 
 #. leap/libqt5-qtbase/libQt5Core-devel-32bit/summary
 #. leap/libqt5-qtbase/libQt5Core-devel/summary
@@ -775,6 +779,22 @@ msgstr "Qt OpenGLExtensions モジュール"
 #. leap/libqt5-qtbase/libQt5OpenGLExtensions-devel-static/description
 msgid "Qt OpenGLExtensions module."
 msgstr "Qt OpenGLExtensions モジュールです。"
+
+#. leap/libqt5-qtwebengine/libQt5Pdf5/summary
+msgid "Qt5 PDF library"
+msgstr "Qt5 PDF ライブラリ"
+
+#. leap/libqt5-qtwebengine/libQt5Pdf5/description
+msgid "Main library of the Qt PDF module."
+msgstr "Qt PDF モジュールのメインライブラリです。"
+
+#. leap/libqt5-qtwebengine/libQt5PdfWidgets5/summary
+msgid "Qt5 PDF library for Qt Widgets"
+msgstr "Widgets 向け Qt5 PDF ライブラリ"
+
+#. leap/libqt5-qtwebengine/libQt5PdfWidgets5/description
+msgid "Library of the Qt PDF module with support for Qt Widgets."
+msgstr "Qt Widgets に対応した Qt PDF モジュールのライブラリです。"
 
 #. leap/libqt5-qtbase/libQt5PlatformHeaders-devel/summary
 msgid "Qt 5 PlatformHeaders"
@@ -1330,9 +1350,9 @@ msgstr "Qt5 WebKit ライブラリ"
 #. leap/libqt5-qtwebkit/libQt5WebKit5-devel/description
 #. leap/libqt5-qtwebkit/libQt5WebKit5-imports/description
 #. leap/libqt5-qtwebkit/libQt5WebKitWidgets-devel/description
-msgid "You need this package if you want to compile programs with qtwebkit."
+msgid "You need this package if you want to compile programs with QtWebKit."
 msgstr ""
-"qtwebkit を利用するプログラムをコンパイルしたい場合は、このパッケージが必要で"
+"QtWebKit を利用するプログラムをコンパイルしたい場合に必要となるパッケージで"
 "す。"
 
 #. leap/libqt5-qtwebkit/libQt5WebKit5-devel/summary
@@ -1357,15 +1377,15 @@ msgstr "Qt 5 WebKit ウイジェットライブラリ"
 
 #. leap/libqt5-qtwebkit/libQt5WebKitWidgets5/description
 msgid ""
-"The Qt WebKit module provides the WebView API, which allows QML applications "
+"The QtWebKit module provides the WebView API which allows QML applications "
 "to render regions of dynamic web content. A WebView component may share the "
 "screen with other QML components or encompass the full screen as specified "
 "within the QML application."
 msgstr ""
-"Qt WebKit モジュールでは、 QML アプリケーションから動的な Web コンテンツを描"
-"画するための WebView API を提供しています。 WebView コンポーネントは、他の "
-"QML コンポーネントと画面を共有したり、 QML アプリケーション内で規定して画面全"
-"体を覆うようにすることもできます。"
+"QtWebKit モジュールでは、 QML アプリケーションから動的な Web コンテンツを描画"
+"するための WebView API を提供しています。 WebView コンポーネントは、他の QML "
+"コンポーネントと画面を共有したり、 QML アプリケーション内で規定して画面全体を"
+"覆うようにすることもできます。"
 
 #. leap/libqt5-qtwebsockets/libQt5WebSockets5-32bit/summary
 #. leap/libqt5-qtwebsockets/libQt5WebSockets5/summary
@@ -1723,12 +1743,15 @@ msgid ""
 "content from HTML to Qt Quick or even sharing the same WebGL code between Qt "
 "Quick and HTML applications."
 msgstr ""
-"Qt Canvas 3D モジュールは、 Qt Quick JavaScript から OpenGL のような 3D 描画呼び出しの機能を提供します。\n"
+"Qt Canvas 3D モジュールは、 Qt Quick JavaScript から OpenGL のような 3D 描画"
+"呼び出しの機能を提供します。\n"
 "\n"
-"Qt Canvas 3D は Qt 5.5 から完全サポートされるようになった Qt モジュールです。 Canvas3D は WebGL "
-"のような低レベルの OpenGL 系 API を提供するもので、 JavaScript から 3D "
-"の描画コマンドを実行することができるようになります。また、 WebGL のコンテンツを HTML から Qt Quick に移植することができるほか、 "
-"Qt Quick と HTML アプリケーションとの間で、同じ WebGL のコードを共有することもできます。"
+"Qt Canvas 3D は Qt 5.5 から完全サポートされるようになった Qt モジュールで"
+"す。 Canvas3D は WebGL のような低レベルの OpenGL 系 API を提供するもので、 "
+"JavaScript から 3D の描画コマンドを実行することができるようになります。ま"
+"た、 WebGL のコンテンツを HTML から Qt Quick に移植することができるほか、 Qt "
+"Quick と HTML アプリケーションとの間で、同じ WebGL のコードを共有することもで"
+"きます。"
 
 #. leap/libqt5-qtcanvas3d/libqt5-qtcanvas3d-examples/summary
 msgid "Qt5 Canvas 3D examples"
@@ -1763,7 +1786,6 @@ msgstr ""
 
 #. leap/libqt5-qtconnectivity/libqt5-qtconnectivity-examples/summary
 #. leap/libqt5-qtlocation/libqt5-qtlocation-examples/summary
-#. leap/libqt5-qtwebengine/libqt5-qtwebengine-examples/summary
 msgid "Qt5 location examples"
 msgstr "Qt5 ロケーションサンプル"
 
@@ -2086,6 +2108,47 @@ msgstr "QStandardPaths に対するコマンドラインクライアント"
 #. leap/libqt5-qttools/libqt5-qtpaths/description
 msgid "Command line client to QStandardPaths."
 msgstr "QStandardPaths 向けのコマンドラインクライアントです。"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-devel/summary
+msgid "Development files for the Qt5 PDF library"
+msgstr "Qt5 PDF ライブラリ向け開発用ファイル"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-devel/description
+msgid "You need this package if you want to compile programs with Qt PDF."
+msgstr ""
+"Qt PDF を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-examples/summary
+msgid "Qt5 PDF examples"
+msgstr "Qt5 PDF サンプル"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-examples/description
+msgid "Examples for the libqt5-qtpdf module."
+msgstr "libqt5-qtpdf モジュールの例です。"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-imports/summary
+msgid "Qt5 PDF module for QML"
+msgstr "QML 向け Qt5 PDF モジュール"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-imports/description
+msgid "Qt Quick module for the Qt PDF library."
+msgstr "Qt PDF ライブラリ向け Qt Quick モジュールです。"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-private-headers-devel/summary
+msgid "Non-ABI stable experimental API for the Qt5 PDF library"
+msgstr "Qt5 PDF ライブラリ向け非安定 ABI 実験版 API"
+
+#. leap/libqt5-qtwebengine/libqt5-qtpdf-private-headers-devel/description
+msgid ""
+"This package provides private headers of libqt5-qtpdf that are normally not "
+"used by application development and that do not have any ABI or API "
+"guarantees. The packages that build against these have to require the exact "
+"Qt version."
+msgstr ""
+"このパッケージには libqt5-qtpdf のプライベートヘッダが含まれています。これら"
+"は通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証"
+"もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
+"ションを構築するためのものです。"
 
 #. leap/libqt5-qtquickcontrols/summary
 #. leap/libqt5-qtquickcontrols2/summary
@@ -2724,6 +2787,10 @@ msgstr ""
 "Qt WebEngine を利用するプログラムをコンパイルしたい場合に必要となるパッケージ"
 "です。"
 
+#. leap/libqt5-qtwebengine/libqt5-qtwebengine-examples/summary
+msgid "Qt5 WebEngine examples"
+msgstr "Qt5 WebEngine サンプル"
+
 #. leap/libqt5-qtwebengine/libqt5-qtwebengine-examples/description
 msgid "Examples for the libqt5-qtwebengine module."
 msgstr "libqt5-qtwebengine モジュールの例です。"
@@ -2926,22 +2993,6 @@ msgstr ""
 "このパッケージには、 BodyMovin アニメーションファイルを読み込むためのライブラ"
 "リが含まれています。"
 
-#. tumbleweed/libqt5-qtwebengine/libQt5Pdf5/summary
-msgid "Qt5 PDF library"
-msgstr "Qt5 PDF ライブラリ"
-
-#. tumbleweed/libqt5-qtwebengine/libQt5Pdf5/description
-msgid "Main library of the Qt PDF module."
-msgstr "Qt PDF モジュールのメインライブラリです。"
-
-#. tumbleweed/libqt5-qtwebengine/libQt5PdfWidgets5/summary
-msgid "Qt5 PDF library for Qt Widgets"
-msgstr "Widgets 向け Qt5 PDF ライブラリ"
-
-#. tumbleweed/libqt5-qtwebengine/libQt5PdfWidgets5/description
-msgid "Library of the Qt PDF module with support for Qt Widgets."
-msgstr "Qt Widgets に対応した Qt PDF モジュールのライブラリです。"
-
 #. tumbleweed/libqt5-qtquick3d/libQt5Quick3D5/summary
 msgid "Qt5 Quick3D Library"
 msgstr "Qt5 Quick3D ライブラリ"
@@ -2968,31 +3019,6 @@ msgstr "Qt5 Quick3D アセットインポートライブラリ"
 msgid "Qt Quick 3D Library for importing of 3D assets."
 msgstr "3D アセットを取り込むための Qt Quick 3D ライブラリです。"
 
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKit5-32bit/description
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKit5/description
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKit5-devel-32bit/description
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKit5-devel/description
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKit5-imports/description
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets-devel-32bit/description
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets-devel/description
-msgid "You need this package if you want to compile programs with QtWebKit."
-msgstr ""
-"QtWebKit を利用するプログラムをコンパイルしたい場合に必要となるパッケージで"
-"す。"
-
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets5-32bit/description
-#. tumbleweed/libqt5-qtwebkit/libQt5WebKitWidgets5/description
-msgid ""
-"The QtWebKit module provides the WebView API which allows QML applications "
-"to render regions of dynamic web content. A WebView component may share the "
-"screen with other QML components or encompass the full screen as specified "
-"within the QML application."
-msgstr ""
-"QtWebKit モジュールでは、 QML アプリケーションから動的な Web コンテンツを描画"
-"するための WebView API を提供しています。 WebView コンポーネントは、他の QML "
-"コンポーネントと画面を共有したり、 QML アプリケーション内で規定して画面全体を"
-"覆うようにすることもできます。"
-
 #. tumbleweed/libqtolm/libQtOlm3_0/summary
 msgid "Qt wrapper for libolm"
 msgstr "libolm 向け Qt ラッパー"
@@ -3011,6 +3037,21 @@ msgstr "D-Bus を介した通信を行なうためのコマンドラインクラ
 msgid "Command line client for communication over D-Bus."
 msgstr "D-Bus を介した通信を行なうためのコマンドラインクライアントです。"
 
+#. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-imports/summary
+#, fuzzy
+#| msgid "QML imports for the XmlPatterns module"
+msgid "QML imports for the Qt5 Gamepad module"
+msgstr "XmlPatterns モジュール向け QML インポート"
+
+#. tumbleweed/libqt5-qtgamepad/libqt5-qtgamepad-imports/description
+#, fuzzy
+#| msgid ""
+#| "This package contains QML import files for Qt5 Data Visualization module."
+msgid "This package contains QML import files for the Qt5 Gamepad module."
+msgstr ""
+"このパッケージには、 Qt5 データ可視化モジュール向けの QML インポートファイル"
+"が含まれています。"
+
 #. tumbleweed/libqt5-qtlottie/summary
 msgid "Qt 5 Quick Lottie Addon"
 msgstr "Qt 5 Quick Lottie アドオン"
@@ -3022,47 +3063,6 @@ msgid ""
 msgstr ""
 "このパッケージには、 QML で BodyMovin ファイルを再生するための Qt 5 向け QML "
 "モジュールが含まれています。"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-devel/summary
-msgid "Development files for the Qt5 PDF library"
-msgstr "Qt5 PDF ライブラリ向け開発用ファイル"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-devel/description
-msgid "You need this package if you want to compile programs with Qt PDF."
-msgstr ""
-"Qt PDF を利用するプログラムをコンパイルしたい場合に必要となるパッケージです。"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-examples/summary
-msgid "Qt5 PDF examples"
-msgstr "Qt5 PDF サンプル"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-examples/description
-msgid "Examples for the libqt5-qtpdf module."
-msgstr "libqt5-qtpdf モジュールの例です。"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-imports/summary
-msgid "Qt5 PDF module for QML"
-msgstr "QML 向け Qt5 PDF モジュール"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-imports/description
-msgid "Qt Quick module for the Qt PDF library."
-msgstr "Qt PDF ライブラリ向け Qt Quick モジュールです。"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-private-headers-devel/summary
-msgid "Non-ABI stable experimental API for the Qt5 PDF library"
-msgstr "Qt5 PDF ライブラリ向け非安定 ABI 実験版 API"
-
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtpdf-private-headers-devel/description
-msgid ""
-"This package provides private headers of libqt5-qtpdf that are normally not "
-"used by application development and that do not have any ABI or API "
-"guarantees. The packages that build against these have to require the exact "
-"Qt version."
-msgstr ""
-"このパッケージには libqt5-qtpdf のプライベートヘッダが含まれています。これら"
-"は通常のアプリケーション開発では必要となることはありませんし、 ABI/API の保証"
-"もありません。このパッケージは、特定の Qt バージョンを必要とするアプリケー"
-"ションを構築するためのものです。"
 
 #. tumbleweed/libqt5-qtquick3d/libqt5-qtquick3d-devel/description
 msgid "You need this package if you want to compile programs with Qt Quick 3D."
@@ -3144,10 +3144,6 @@ msgstr "Qt5 ヘルプファイル (qch) 生成器"
 msgid "Binaries for generating .qch help catalogs."
 msgstr ".qch ヘルプカタログを生成するためのバイナリです。"
 
-#. tumbleweed/libqt5-qtwebengine/libqt5-qtwebengine-examples/summary
-msgid "Qt5 WebEngine examples"
-msgstr "Qt5 WebEngine サンプル"
-
 #. tumbleweed/libqtolm/libqtolm-devel/summary
 msgid "Development files for libqtolm"
 msgstr "libqtolm 向けの開発用ファイル"
@@ -3159,6 +3155,22 @@ msgid ""
 msgstr ""
 "libqtolm-devel パッケージには、 libqtolm を利用してアプリケーションの開発を行"
 "なうのに必要な、ライブラリとヘッダファイルが含まれています。"
+
+#~ msgid "You need this package if you want to compile programs with qtwebkit."
+#~ msgstr ""
+#~ "qtwebkit を利用するプログラムをコンパイルしたい場合は、このパッケージが必"
+#~ "要です。"
+
+#~ msgid ""
+#~ "The Qt WebKit module provides the WebView API, which allows QML "
+#~ "applications to render regions of dynamic web content. A WebView "
+#~ "component may share the screen with other QML components or encompass the "
+#~ "full screen as specified within the QML application."
+#~ msgstr ""
+#~ "Qt WebKit モジュールでは、 QML アプリケーションから動的な Web コンテンツを"
+#~ "描画するための WebView API を提供しています。 WebView コンポーネントは、他"
+#~ "の QML コンポーネントと画面を共有したり、 QML アプリケーション内で規定して"
+#~ "画面全体を覆うようにすることもできます。"
 
 #~ msgid ""
 #~ "You need this package, if you want to compile programs with Qt. It "
