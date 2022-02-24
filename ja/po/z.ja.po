@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-23 08:40+0000\n"
-"PO-Revision-Date: 2021-10-03 16:11+0000\n"
+"PO-Revision-Date: 2022-02-24 01:12+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/z-"
-"master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
+"z-master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.9.1\n"
 
 #. leap/zam-plugins/ladspa-zam-plugins/summary
 #. leap/zam-plugins/lv2-zam-plugins/summary
@@ -1835,7 +1835,7 @@ msgstr ""
 #. tumbleweed/zlib-ng-compat/libz-ng-compat1/summary
 #. tumbleweed/zlib-ng/libz-ng2/summary
 msgid "Zlib replacement with SIMD optimizations"
-msgstr ""
+msgstr "SIMD 最適化を伴う Zlib 置換"
 
 #. tumbleweed/zlib-ng-compat/libz-ng-compat1/description
 #. tumbleweed/zlib-ng/libz-ng2/description
@@ -1843,6 +1843,7 @@ msgid ""
 "zlib-ng is a zlib replacement with support for CPU intrinsics (SSSE3, AVX2, "
 "NEON, VSX) when available."
 msgstr ""
+"zlib-ng は zlib を置き換えたもので、CPU 組み込み関数(SSSE3、AVX2、NEON、VSX)が利用可能な場合にはサポートします。"
 
 #. tumbleweed/zfp/libzfp0/summary
 msgid "Read and write numerical arrays"
@@ -1935,40 +1936,26 @@ msgid "Development package for zfp."
 msgstr "zfp 向け開発用パッケージ。"
 
 #. tumbleweed/zlib-ng-compat/zlib-ng-compat-devel/summary
-#, fuzzy
-#| msgid "Development files for zinnia"
 msgid "Development files for zlib-ng-compat"
-msgstr "zinnia 向け開発用ファイル"
+msgstr "zlib-ng-compat 向け開発用ファイル"
 
 #. tumbleweed/zlib-ng-compat/zlib-ng-compat-devel/description
-#, fuzzy
-#| msgid ""
-#| "The zinnia-devel package contains libraries and header files for "
-#| "developing applications that use zinnia."
 msgid ""
 "The zlib-ng-compat-devel package contains header files for developing "
 "application that use zlib-ng-compat."
 msgstr ""
-"zinnia-devel パッケージには、 zinnia を使用するアプリケーションを開発するのに"
-"必要な、ヘッダファイルとライブラリが含まれています。"
+"zlib-ng-compat パッケージには、 zlib-ng-compat "
+"を使用するアプリケーションを開発するのに必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/zlib-ng/zlib-ng-devel/summary
-#, fuzzy
-#| msgid "Development files for libzimg2"
 msgid "Development files for zlib-ng"
-msgstr "libzimg2 向け開発用ファイル"
+msgstr "zlib-ng 向け開発用ファイル"
 
 #. tumbleweed/zlib-ng/zlib-ng-devel/description
-#, fuzzy
-#| msgid ""
-#| "The libzimg-devel package contains libraries and header files for "
-#| "developing applications that use libzimg2."
 msgid ""
 "The zlib-ng-devel package contains header files for developing application "
 "that use zlib-ng."
-msgstr ""
-"libzimg-devel パッケージには、 libzimg2 を使用するアプリケーションを開発する"
-"のに必要な、ヘッダファイルとライブラリが含まれています。"
+msgstr "zlib-ng パッケージには、 zlib-ng を使用するアプリケーションを開発するのに必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/zlib/zlib-testsuite/summary
 msgid "Provide the test examples to reproduce test suite"
@@ -1996,7 +1983,7 @@ msgstr ""
 
 #. tumbleweed/zram-generator/summary
 msgid "Systemd unit generator for zram swap devices"
-msgstr ""
+msgstr "zram スワップデバイス用の systemd ユニット生成器"
 
 #. tumbleweed/zram-generator/description
 msgid ""
@@ -2009,18 +1996,18 @@ msgid ""
 "usr/share/doc/zram-generator/zram-generator.conf.example for an example and "
 "a list of available settings."
 msgstr ""
+"これはzram上でのスワップを可能にするsystemdユニットジェネレータです(zram では物理的なスワップデバイスはありません。利用可能な RAM "
+"の一部は圧縮されたページを保存するために使われ、基本的にCPUサイクルをメモリと交換します)。\n"
+"\n"
+"ファイルシステムを使用してswap デバイスと zram デバイスを構成およびアクティブ化するには、/etc/systemd/"
+"zram.generator.conf に構成ファイルを作成します。使用可能な設定の例とリストについては、/usr/share/doc/"
+"zram-generator/zram-generator.conf.example を参照してください。"
 
 #. tumbleweed/zstd/zstd-gzip/summary
 msgid "zstd and zlib based gzip drop-in"
-msgstr ""
+msgstr "zstd と zlib ベースの gzip ドロップイン"
 
 #. tumbleweed/zstd/zstd-gzip/description
-#, fuzzy
-#| msgid ""
-#| "Zstd, short for Zstandard, is a lossless compression algorithm, targeting "
-#| "faster compression than zlib at comparable ratios.\n"
-#| "\n"
-#| "This subpackage contains the implementation as a shared library."
 msgid ""
 "Zstd, short for Zstandard, is a lossless compression algorithm, targeting "
 "faster compression than zlib at comparable ratios.\n"
@@ -2028,10 +2015,9 @@ msgid ""
 "This subpackage provides a compatible alternative to gzip(1) using an "
 "optimized deflate/zlib handling."
 msgstr ""
-"Zstd は Zstandard の略で、可逆圧縮アルゴリズムです。同等の比率で zlib よりも"
-"高速な圧縮を目的としています。\n"
+"Zstd は Zstandard の略で、可逆圧縮アルゴリズムです。同等の比率で zlib よりも高速な圧縮を目的としています。\n"
 "\n"
-"このサブパッケージには、共有ライブラリの実装が含まれています。"
+"このサブパッケージは、最適化された deflate/zlib 処理を使用して gzip(1) と互換性のある代替手段を提供します。"
 
 #. tumbleweed/zutils/summary
 msgid "Collection of utilities for dealing with compressed files"
@@ -2058,13 +2044,15 @@ msgstr ""
 msgid ""
 "Update the system, search, install and remove the package, configure the "
 "repos."
-msgstr ""
+msgstr "システムの更新、パッケージの検索、インストールと削除、リポジトリの設定を行います。"
 
 #. tumbleweed/zypp-gui/description
 msgid ""
 "Application can update the system, search, install and remove the package, "
 "configure the repos. It achieves some functions of command zypper."
 msgstr ""
+"アプリケーションは、システムの更新、検索、パッケージのインストールと削除、リポジトリの設定を行うことができ、zypper "
+"コマンドのいくつかの機能を実現します。"
 
 #. tumbleweed/zypper-changelog-plugin/summary
 msgid "Changelog listing tool"
