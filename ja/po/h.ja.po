@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-23 08:40+0000\n"
-"PO-Revision-Date: 2022-02-24 06:12+0000\n"
+"PO-Revision-Date: 2022-02-24 09:12+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "h-master/ja/>\n"
@@ -7228,12 +7228,12 @@ msgstr "\"help2man\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/helvum/summary
 msgid "A GTK patchbay for pipewire"
-msgstr ""
+msgstr "pipewire向けGTKパッチベイ"
 
 #. tumbleweed/helvum/description
 msgid ""
 "Helvum is a GTK-based patchbay for pipewire, inspired by the JACK tool catia."
-msgstr ""
+msgstr "Helvumは、JACKツールcatiaからインスパイアされたGTKベースのpipewire用パッチベイです。"
 
 #. tumbleweed/hexchat/summary
 msgid "A graphical IRC (chat) client"
@@ -7303,7 +7303,7 @@ msgstr "HPPCのテンプレートエンジンおよびコード生成。"
 
 #. tumbleweed/hsetroot/summary
 msgid "Advanced wallpaper tool for X"
-msgstr ""
+msgstr "X用の高度な壁紙ツール"
 
 #. tumbleweed/hsetroot/description
 msgid ""
@@ -7321,10 +7321,17 @@ msgid ""
 "diagonally, vertically) it also allows you to adjust brightness, contrast "
 "and gamma-level. hsetroot also supports alpha-channels when rendering things."
 msgstr ""
+"hsetrootは、X用の壁紙(「root pixmap」)を作ることができるツールです。グラデーション、ソリッド、画像のレンダリングのような多くのオプシ"
+"ョンがありますが、それらを操作したり、連結したりすることもできます。標準の背景イメージを1つ使用し、濃淡を使用して現在のテーマに合わせます。もちろん "
+"aterm や xchat のような半透明なアプリケーションとも互換性があります。\n"
+"\n"
+"現時点で、hsetroot は、グラデーション(距離が可変のマルチカラー)、ソリッド(長方形)、イメージ(中央揃え、タイル表示、フルスクリーン、最大アスペ"
+"クト)をレンダリングできます。色付け(カラーマスクを重ねる)、ぼかし、シャープネス、反転(水平、斜め、垂直)の操作をサポートしており、明るさ、コントラスト"
+"、ガンマレベルを調整することもできます。hsetrootは、レンダリング時のアルファチャンネルもサポートしています。"
 
 #. tumbleweed/htcondor/summary
 msgid "HTCondor is a Distributed High Throughput Computing system"
-msgstr ""
+msgstr "HTCondor は分散ハイスループットコンピューティングシステムです。"
 
 #. tumbleweed/htcondor/description
 msgid ""
@@ -7334,10 +7341,13 @@ msgid ""
 "submit them to an HTCondor scheduler, which will run them on worker nodes "
 "managed by HTCondor."
 msgstr ""
+"HTCondorは、University of Wisconsin-MadisonのCenter for High Throughput "
+"Computingで開発されたDistributed High Throughput Computingシステムです。これを使えば、大規模なコンピューティ"
+"ングワークロードをジョブに分割してHTCondorスケジューラに送信し、HTCondorが管理するワーカノード上で実行することができます。"
 
 #. tumbleweed/htcondor/htcondor-bosco/summary
 msgid "BOSCO, a HTCondor overlay system for managing jobs at remote clusters"
-msgstr ""
+msgstr "BOSCO リモートクラスタでジョブを管理するためのHTCondorオーバーレイシステム"
 
 #. tumbleweed/htcondor/htcondor-bosco/description
 msgid ""
@@ -7350,10 +7360,15 @@ msgid ""
 "HTCondor cluster.  This allows the user to run their workflows using "
 "HTCondor tools across multiple clusters."
 msgstr ""
+"BOSCO では、ローカルにインストールされたHTCondorが、中継メカニズムとしてSSHを使用して、リモートクラスタにジョブを送信することができます。"
+"これは、リモートクラスタがPBS、SGE、LSF、または別のHTCondorシステムなど、異なるバッチシステムを使用している場合に適しています。\n"
+"\n"
+"BOSCO はオーバーレイシステムを提供しているので、リモートクラスタはHTCondorクラスタのように見えます。これにより、ユーザは複数のクラスタ間でH"
+"TCondorツールを使用してワークフローを実行できます。"
 
 #. tumbleweed/htcondor/htcondor-classads/summary
 msgid "HTCondor's classified advertisement language"
-msgstr ""
+msgstr "HTCondorの案内広告言語"
 
 #. tumbleweed/htcondor/htcondor-classads/description
 msgid ""
@@ -7375,58 +7390,67 @@ msgid ""
 "ad. Classad matching is used by the HTCondor central manager to determine "
 "the compatibility of jobs and workstations where they may be run."
 msgstr ""
+"案内広告(classads)はHTCondorの共通語です。ジョブ、ワークステーション、およびその他のリソースを記述するために使用されます。ジョブをスケジ"
+"ュールするために、HTCondorプロセスによって交換されます。統計およびデバッグの目的でファイルに記録されます。これらは、システムの現在の状態を調べるた"
+"めに使用されます。\n"
+"\n"
+"classadは、アトリビュート名から式へのマッピングです。最も単純な場合、式は単純な定数(整数、浮動小数点、または文字列)です。したがって、classa"
+"dはプロパティリストの一形態です。また、属性式はより複雑になる場合があります。classadの属性表現を他の広告と比較して評価するプロトコルがあります。た"
+"とえば、ある広告の「other.size>3」という表現は、他の広告にsizeという名前の属性があり、その属性の値が3より大きい整数である(または評価され"
+"る)場合にtrueと評価されます。各広告に、他の広告のコンテキストでtrueと評価される属性要件がある場合は、2つのclassads が一致します。Cla"
+"ssadマッチングは、HTCondor中央マネージャによって、ジョブおよびそれらが実行される可能性のあるワークステーションの互換性を判断するために使用され"
+"ます。"
 
 #. tumbleweed/htcondor/htcondor-classads-devel/summary
 msgid "Headers for HTCondor's classified advertisement language"
-msgstr ""
+msgstr "HTCondorのクラシファイド広告言語のヘッダー"
 
 #. tumbleweed/htcondor/htcondor-classads-devel/description
 msgid ""
 "Header files for HTCondor's ClassAd Library, a powerful and flexible, semi-"
 "structured representation of data."
-msgstr ""
+msgstr "HTCondorのClassAdライブラリ用のヘッダファイル。強力で柔軟な、半構造化されたデータ表現です。"
 
 #. tumbleweed/htcondor/htcondor-credmon-oauth/summary
 msgid "OAuth2 credmon for HTCondor."
-msgstr ""
+msgstr "HTCondorのOAuth2 credmon。"
 
 #. tumbleweed/htcondor/htcondor-credmon-oauth/description
 msgid ""
 "The OAuth2 credmon allows users to obtain credentials from configured OAuth2 "
 "endpoints and to use those credentials securely inside running jobs."
 msgstr ""
+"OAuth2 "
+"credmonは、ユーザが設定されたOAuth2エンドポイントから資格情報を取得し、実行中のジョブ内でそれらの資格情報を安全に使用できるようにします。"
 
 #. tumbleweed/htcondor/htcondor-credmon-vault/summary
 msgid "Vault credmon for HTCondor."
-msgstr ""
+msgstr "HTCondorの Vault credmon。"
 
 #. tumbleweed/htcondor/htcondor-credmon-vault/description
 msgid ""
 "The Vault credmon allows users to obtain credentials from Vault using "
 "htgettoken and to use those credentials securely inside running jobs."
 msgstr ""
+"Vault "
+"credmonでは、ユーザはhtgettokenを使用してVaultから資格情報を取得し、実行中のジョブ内でそれらの資格情報を安全に使用できます。"
 
 #. tumbleweed/htcondor/htcondor-devel/summary
 #. tumbleweed/htcondor/htcondor-devel/description
-#, fuzzy
-#| msgid "Development files for hdf"
 msgid "Development files for HTCondor"
-msgstr "hdf 向け開発用ファイル"
+msgstr "HTCondor向け開発ファイル"
 
 #. tumbleweed/htcondor/htcondor-doc/summary
 msgid "Man pages and exmamples for htcondor"
-msgstr ""
+msgstr "htcondorのマニュアルページと例"
 
 #. tumbleweed/htcondor/htcondor-doc/description
-#, fuzzy
-#| msgid "This package contains the header and library files for httrack."
 msgid "This package contains the man pages and addional exmples for htcondor"
-msgstr ""
-"このパッケージには httrack のヘッダとライブラリファイルが含まれています。"
+msgstr "このパッケージには、htcondor のマニュアルページとその他の例が含まれています。"
 
 #. tumbleweed/htcondor/htcondor-kbdd/summary
 msgid "HTCondor Keyboard Daemon"
-msgstr ""
+msgstr "HTCondorキーボード daemon"
 
 #. tumbleweed/htcondor/htcondor-kbdd/description
 msgid ""
@@ -7434,20 +7458,22 @@ msgid ""
 "on systems where no device (e.g. /dev/*) can be used to determine console "
 "idle time."
 msgstr ""
+"condor_kbddモニタはログインしたXユーザのアクティビティをモニタします。コンソールのアイドル時間を判断するために使用できるデバイス(例:/"
+"dev/*)がないシステムでのみ有効です。"
 
 #. tumbleweed/htcondor/htcondor-procd/summary
 msgid "HTCondor Process tracking Daemon"
-msgstr ""
+msgstr "HTCondorプロセストラッキングデーモン"
 
 #. tumbleweed/htcondor/htcondor-procd/description
 msgid ""
 "A daemon for tracking child processes started by a parent. Part of HTCondor, "
 "but able to be stand-alone"
-msgstr ""
+msgstr "親によって開始された子プロセスを追跡する daemon。HTCondorの一部であるが、単独で存在できます。"
 
 #. tumbleweed/htcondor/htcondor-vm-gahp/summary
 msgid "HTCondor's VM Gahp"
-msgstr ""
+msgstr "HTCondorのVM Gahp"
 
 #. tumbleweed/htcondor/htcondor-vm-gahp/description
 msgid ""
@@ -7455,6 +7481,8 @@ msgid ""
 "The VM Universe uses libvirt to start and control VMs under HTCondor's "
 "Startd."
 msgstr ""
+"condor_vm-gahpは、HTCondorの仮想マシンユニバース機能を有効にします。VM "
+"Universeはlibvirtを使用して、HTCondorのStartdの下でVMを起動および制御します。"
 
 #. tumbleweed/html-xml-utils/summary
 msgid "A number of utilities for manipulating HTML and XML files"
@@ -7685,7 +7713,7 @@ msgstr ""
 
 #. tumbleweed/hyper-v-enhanced-session/summary
 msgid "Hyper-V Enhanced session setup for openSUSE"
-msgstr ""
+msgstr "Hyper-V openSUSE用の拡張セッションセットアップ"
 
 #. tumbleweed/hyper-v-enhanced-session/description
 msgid ""
@@ -7697,6 +7725,11 @@ msgid ""
 "EnhancedSessionTransportType HvSocket' to enable.\n"
 "* Provides /etc/xrdp/startwm.sh.userwindowmanager-sample to use in '$HOME'."
 msgstr ""
+"*Hyper-V上のopenSUSE VMが「拡張セッション」を使用できるようにするための前提条件となるセットアップを完了します。\n"
+"*sddmではなく、lightdmで動作します。gdmは問題ではなく、Gnomeのインストールから削除するのは難しい。\n"
+"*PowerShellで、'Set-VM-VMName<vmの名前>-EnhancedSessionTransportType "
+"HvSocket'を実行して有効にします。\n"
+"*'$HOME'で使用する/etc/xrdp/startwm.sh.userwindowmanagerサンプルを提供します。"
 
 #. tumbleweed/hypre_2_20_0-gnu-openmpi1-hpc/hypre-gnu-openmpi1-hpc-devel/summary
 msgid "Dependency package for hypre_2_20_0-gnu-openmpi1-hpc-devel"
@@ -7995,7 +8028,7 @@ msgstr ""
 
 #. tumbleweed/htcondor/minicondor/summary
 msgid "Configuration for a single-node HTCondor"
-msgstr ""
+msgstr "シングルノードHTCondor用の構成"
 
 #. tumbleweed/htcondor/minicondor/description
 msgid ""
@@ -8003,18 +8036,19 @@ msgid ""
 "time. It only configures the IPv4 loopback address, turns on basic security, "
 "and shortens many timers to be more responsive."
 msgstr ""
+"この設定例は、初めてHTCondorを試す場合に適しています。IPv4ループバックアドレスを設定し、基本的なセキュリティをオンにし、応答を向上させるために"
+"多くのタイマーを短縮するだけです。"
 
 #. tumbleweed/htcondor/python3-condor/summary
-#, fuzzy
-#| msgid "Python bindings for HepMC"
 msgid "Python bindings for HTCondor."
-msgstr "HepMC 向け Python バインディング"
+msgstr "HTCondor向けPythonバインディング。"
 
 #. tumbleweed/htcondor/python3-condor/description
 msgid ""
 "The python bindings allow one to directly invoke the C++ implementations of "
 "the ClassAd library and HTCondor from python"
 msgstr ""
+"pythonバインディングを使用すると、ClassAd ライブラリとHTCondor の C++ 実装を python から直接呼び出すことができます。"
 
 #. tumbleweed/hxtools/vfontas/summary
 msgid "Bitmap font file transformation utility"
