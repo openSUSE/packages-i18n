@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-23 08:40+0000\n"
-"PO-Revision-Date: 2022-02-25 01:12+0000\n"
+"PO-Revision-Date: 2022-02-28 14:12+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "c-master/ja/>\n"
@@ -584,6 +584,17 @@ msgid ""
 "For all other use cases please install the \"ca-certificates-mozilla\" "
 "package."
 msgstr ""
+"このパッケージには、コンテナで使用するためにMozillaFirefoxから抽出されたOpenSSL用のCAルート証明書の静的セットが含まれています。/"
+"var/lib/ca-certificatesがまだ存在しない場合、パッケージは/var/lib/ca-"
+"certificatesを静的な証明書のセットで事前に埋めます。\n"
+"\n"
+"したがって、このパッケージをアップグレードしても、システム内のルートCA証明書のリストは更新されません。\n"
+"\n"
+"このパッケージを使用して追加のルートCA証明書を設定することはできません。\n"
+"\n"
+"このパッケージは、p11-kitのインストールを避けたいコンテナでのみ使用することを意図しています。\n"
+"\n"
+"その他のユースケースでは、「ca-certificates-mozilla」パッケージをインストールしてください。"
 
 #. leap/ca-certificates-steamtricks/summary
 msgid "Provides /etc/ssl/certs/ca-certificates.crt"
@@ -1078,16 +1089,12 @@ msgid "Caja development files"
 msgstr "Caja開発ファイル"
 
 #. leap/caja-dropbox/caja-dropbox-lang/summary
-#, fuzzy
-#| msgid "Translations for package caja"
 msgid "Translations for package caja-dropbox"
-msgstr "caja 向け翻訳パッケージ"
+msgstr "caja-dropboxパッケージの翻訳"
 
 #. leap/caja-dropbox/caja-dropbox-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"caja\" package."
 msgid "Provides translations for the \"caja-dropbox\" package."
-msgstr "caja パッケージ向けの翻訳データです。"
+msgstr "\"caja-dropbox\"パッケージの翻訳を提供します。"
 
 #. leap/caja-dropbox/caja-extension-dropbox/summary
 msgid "Dropbox client integrated into Caja"
@@ -2037,13 +2044,13 @@ msgstr ""
 
 #. leap/cargo-packaging/summary
 msgid "Some macros to assist with cargo and rust packaging"
-msgstr ""
+msgstr "cargo 及び rust のパッケージングを支援するいくつかのマクロ"
 
 #. leap/cargo-packaging/description
 msgid ""
 "A set of macros to assist with cargo and rust packaging, written in a manner "
 "that follows rust's best practices."
-msgstr ""
+msgstr "rustのベストプラクティスに従った方法で記述された、cargo と rust のパッケージングを支援するマクロのセット。"
 
 #. leap/caribou/summary
 msgid "On-screen Keyboard for GNOME"
@@ -2724,9 +2731,8 @@ msgstr ""
 #. leap/lcms2/liblcms2-devel/summary
 #. leap/lcms2/liblcms2-devel-32bit/summary
 #. leap/libmusicbrainz/libmusicbrainz-devel/summary
-#, fuzzy
 msgid "Include Files and Libraries Mandatory for Development"
-msgstr "開発用ヘッダファイルとライブラリ"
+msgstr "開発に必須のインクルードファイルとライブラリ"
 
 #. leap/cdrdao/summary
 msgid "Write CD-Rs in Disk-At-Once Mode"
@@ -2991,25 +2997,23 @@ msgstr ""
 
 #. leap/cepces/summary
 msgid "Certificate Enrollment through CEP/CES"
-msgstr ""
+msgstr "CEP/CESを介した証明書登録"
 
 #. leap/cepces/description
 msgid ""
 "cepces is an application for enrolling certificates through CEP and CES. It "
 "currently only operates through certmonger."
-msgstr ""
+msgstr "cepcesは、CEPおよびCESを通じて証明書を登録するためのアプリケーションです。現在はcertmonger経由でのみ操作します。"
 
 #. leap/cepces/cepces-certmonger/summary
-#, fuzzy
-#| msgid "GStreamer integration for Clutter"
 msgid "certmonger integration for cepces"
-msgstr "Clutter 向け GStreamer 統合"
+msgstr "cepcesのcertmonger統合"
 
 #. leap/cepces/cepces-certmonger/description
 msgid ""
 "cepces is an application for enrolling certificates through CEP and CES. "
 "This package provides the certmonger integration."
-msgstr ""
+msgstr "cepcesは、CEPおよびCESを通じて証明書を登録するためのアプリケーションです。このパッケージは、certmonger統合を提供します。"
 
 #. leap/ceph/summary
 msgid "User space components of the Ceph file system"
@@ -3819,10 +3823,8 @@ msgid "Japanese Morphological Analysis System"
 msgstr "形態素解析システム 茶筌"
 
 #. leap/chasen/description
-#, fuzzy
-#| msgid "Japanese Morphological Analysis System"
 msgid "ChaSen is a Japanese morphological analysis system."
-msgstr "形態素解析システム 茶筌"
+msgstr "ChaSenは日本語の形態素解析システムです。"
 
 #. leap/chasen/chasen-devel/summary
 msgid "Libraries and header files for ChaSen developers"
@@ -5063,10 +5065,8 @@ msgstr ""
 "ド文字列/Unicodeがない"
 
 #. leap/cli11/cli11-doc/summary
-#, fuzzy
-#| msgid "Documentation for Crash"
 msgid "Documentation for CLI11"
-msgstr "7.0 文書"
+msgstr "CLI11のドキュメント"
 
 #. leap/cli11/cli11-doc/description
 msgid ""
@@ -5123,7 +5123,7 @@ msgstr ""
 
 #. leap/clingo/summary
 msgid "A grounder and solver for logic programs"
-msgstr ""
+msgstr "論理プログラム用の grounder とソルバー"
 
 #. leap/clingo/description
 msgid ""
@@ -5132,24 +5132,20 @@ msgid ""
 "problems as logic programs. The clingo system then takes such a logic "
 "program and computes answer sets representing solutions to the given problem."
 msgstr ""
+"ClingoはAnswer Set Programming(ASP)のPotasscoプロジェクトの一部です。ASPは組合せ問題を論理プログラムとして記述"
+"するための単純で強力なモデリング言語を提供します。次に、clingo "
+"システムは,そのような論理プログラムを受け取り、与えられた問題に対する解を表す回答集合を計算します。"
 
 #. leap/clingo/clingo-devel/summary
-#, fuzzy
-#| msgid "Development files for coq"
 msgid "Development files for clingo"
-msgstr "coq用の開発ファイル"
+msgstr "clingo用開発ファイル"
 
 #. leap/clingo/clingo-devel/description
-#, fuzzy
-#| msgid ""
-#| "The crossguid-devel package contains libraries and header files for "
-#| "developing applications that use libcrossguid."
 msgid ""
 "The clingo-devel package contains libraries and header files for developing "
 "applications that use clingo."
 msgstr ""
-"crossguid-develパッケージには、libcrossguidを使用するアプリケーションを開発す"
-"るためのライブラリーとヘッダー・ファイルが含まれています。"
+"clingo-develパッケージには、clingoを使用するアプリケーションを開発するためのライブラリーとヘッダー・ファイルが含まれています。"
 
 #. leap/clipgrab/summary
 msgid "Video downloader"
@@ -5435,10 +5431,8 @@ msgstr ""
 
 #. leap/cloud-regionsrv-client/cloud-regionsrv-client-addon-azure/summary
 #. leap/cloud-regionsrv-client/cloud-regionsrv-client-addon-azure/description
-#, fuzzy
-#| msgid "Cloud Environment Guest Registration Plugin for Microsoft Azure"
 msgid "Enable/Disable Guest Registration for Microsoft Azure"
-msgstr "Microsoft Azure用クラウド環境ゲスト登録プラグイン"
+msgstr "Microsoft Azureのゲスト登録を有効/無効にする"
 
 #. leap/cloud-regionsrv-client/cloud-regionsrv-client-generic-config/summary
 msgid "Cloud Environment Guest Registration Configuration"
@@ -6752,17 +6746,13 @@ msgid "System Daemon for Managing Color Devices -- GTK Integration"
 msgstr "カラーデバイス管理用システムデーモン--GTK統合"
 
 #. leap/colord-gtk/colord-gtk-doc/summary
-#, fuzzy
-#| msgid "Developer documentation for csync"
 msgid "Development Documentation for colord-gtk"
-msgstr "csync 向け開発者用ドキュメンテーション"
+msgstr "colord-gtkの開発ドキュメント"
 
 #. leap/colord-gtk/colord-gtk-doc/description
-#, fuzzy
-#| msgid "This package contains documentation for the cfitsio library."
 msgid ""
 "This package contains development documentation for the colord-gtk packages."
-msgstr "このパッケージには、cfitsio ライブラリの文書が含まれています。"
+msgstr "このパッケージには、colord-gtkパッケージの開発ドキュメントが含まれています。"
 
 #. leap/colord-gtk/colord-gtk-lang/summary
 msgid "Translations for package colord-gtk"
@@ -7661,41 +7651,45 @@ msgstr ""
 
 #. leap/consoleet-darwin-fonts/summary
 msgid "Vector/OTF versions of the Darwin console font"
-msgstr ""
+msgstr "Darwin コンソールフォントのVector/OTF バージョン"
 
 #. leap/consoleet-darwin-fonts/description
 msgid "The 8x16 system console font from the MacOS kernel, Darwin (XNU)."
-msgstr ""
+msgstr "macOSカーネル Darwin(XNU) からの8x16システムコンソールフォント。"
 
 #. leap/consoleet-kbd-fonts/summary
 msgid "Vector/OTF versions of openSUSE's \"kbd\" fonts"
-msgstr ""
+msgstr "openSUSEの「kbd」フォントのVector/OTF 版"
 
 #. leap/consoleet-kbd-fonts/description
 msgid ""
 "These are OpenType remakes of (some of) the VGA bitmap fonts otherwise found "
 "in the \"kbd\" package and in /usr/share/kbd/consolefonts/."
 msgstr ""
+"これらは、\"kbd\"パッケージや/usr/share/kbd/consolefonts/"
+"にあるVGAビットマップフォント(の一部)をOpenTypeで再作成したものです。"
 
 #. leap/consoleet-oldschoolpc-fonts/summary
 msgid "Smooth-edge versions of int10h's IBM/PC fonts"
-msgstr ""
+msgstr "int10hのIBM/PCフォントの滑らかなエッジ版"
 
 #. leap/consoleet-oldschoolpc-fonts/description
 msgid ""
 "A modification of the int10h oldschoolpc font pack with some fonts redone "
 "with smooth edges."
-msgstr ""
+msgstr "int10h oldschoolpcフォントパックを修正し、フォントを塗り直してエッジを滑らかにしました。"
 
 #. leap/consoleet-terminus-fonts/summary
 msgid "Vector/OTF versions of the Terminus bitmap fonts"
-msgstr ""
+msgstr "Terminusビットマップフォントの Vector/OTFバージョン"
 
 #. leap/consoleet-terminus-fonts/description
 msgid ""
 "The Terminus bitmap fonts, provided in OpenType vector format. Both original "
 "(jagged-edge) and smooth-edge variants are provided."
 msgstr ""
+"OpenTypeベクトル形式で提供されるTerminusビットマップフォントです。オリジナル(ギザギザのエッジ)とスムーズエッジの両方のバリエーションが提"
+"供されています。"
 
 #. leap/container-diff/summary
 msgid "Tool to analyze and compare container images"
@@ -10011,13 +10005,13 @@ msgstr "\"cryptsetup\"パッケージの翻訳を提供します。(cryptsetup)"
 
 #. leap/cryptsetup/cryptsetup-ssh/summary
 msgid "Cryptsetup LUKS2 SSH token"
-msgstr ""
+msgstr "Cryptsetup LUKS2 SSHトークン"
 
 #. leap/cryptsetup/cryptsetup-ssh/description
 msgid ""
 "Experimental cryptsetup plugin for unlocking LUKS2 devices with token "
 "connected to an SSH server."
-msgstr ""
+msgstr "SSHサーバに接続されたトークンを使用してLUKS2デバイスのロックを解除するための実験的なcryptsetupプラグイン。"
 
 #. leap/cscope/summary
 msgid "Interactive Tool for Browsing C Source Code"
@@ -10179,18 +10173,6 @@ msgid "Simple CSV file parser for the UNIX command line"
 msgstr "UNIXコマンドライン用の単純なCSVファイルパーサ"
 
 #. leap/csvprintf/description
-#, fuzzy
-#| msgid ""
-#| "csvprintf is a simple UNIX command line utility for parsing CSV files.\n"
-#| "\n"
-#| "csvprintf works like the printf(1) command line utility: you supply a "
-#| "printf(1) format string on the command line, and each row of the CSV file "
-#| "is split into arguments and formatted accordingly. The format specifiers "
-#| "in the format string contain numeric or symbolic column accessors to "
-#| "specify which CSV column to format.\n"
-#| "\n"
-#| "csvprintf can also convert CSV files into XML documents. The xml2csv "
-#| "command converts XML documents so generated back into CSV files."
 msgid ""
 "csvprintf is a simple UNIX command line utility for parsing CSV files.\n"
 "\n"
@@ -10203,17 +10185,13 @@ msgid ""
 "csvprintf can also convert CSV files into XML and JSON documents and Bash "
 "variable assignments suitable for eval(1)."
 msgstr ""
-"csvprintfは、CSVファイルを解析するための単純なUNIXコマンドラインユーティリ"
-"ティです。\n"
+"csvprintfは、CSVファイルを解析するための単純なUNIXコマンドラインユーティリティです。\n"
 "\n"
-"csvprintfはprintf(1)コマンドラインユーティリティと同じように機能します。コマ"
-"ンドラインにprintf(1)フォーマット文字列を指定すると、CSVファイルの各行が引数"
-"に分割され、それに応じてフォーマットされます。フォーマット文字列のフォーマッ"
-"ト指定子には、フォーマットするCSVカラムを指定するための数値カラムまたはシンボ"
-"リックカラムのアクセサが含まれます。\n"
+"csvprintfはprintf(1)コマンドラインユーティリティと同じように機能します。コマンドラインにprintf(1)フォーマット文字列を指定すると"
+"、CSVファイルの各行が引数に分割され、それに応じてフォーマットされます。フォーマット文字列のフォーマット指定子には、フォーマットするCSVカラムを指定す"
+"るための数値カラムまたはシンボリックカラムのアクセサが含まれます。\n"
 "\n"
-"csvprintfでは、CSVファイルをXML文書に変換することもできます。xml2csvコマンド"
-"は、生成されたXMLドキュメントをCSVファイルに変換し直します。"
+"csvprintfでは、CSVファイルをXMLやJSON文書に変換したり、eval(1)に適したBash変数を代入したりすることもできます。"
 
 #. leap/csync/summary
 #. leap/csync/libcsync-plugin-sftp/summary
@@ -12375,16 +12353,16 @@ msgstr ""
 "リ。160以上の言語バージョン用の表もあります。"
 
 #. leap/clingo/libclingo4/summary
-#, fuzzy
-#| msgid "Header files for cddlib"
 msgid "Libraries file(s) for clingo"
-msgstr "cddlib用ヘッダファイル"
+msgstr "clingo用のライブラリファイル"
 
 #. leap/clingo/libclingo4/description
 msgid ""
 "Clingo is part of the Potassco project for Answer Set Programming (ASP). "
 "This package include clingo libraries."
 msgstr ""
+"ClingoはAnswer Set "
+"Programming(ASP)のPotasscoプロジェクトの一部です。このパッケージにはclingoライブラリが含まれています。"
 
 #. leap/clucene-core/libclucene-contribs-lib1/summary
 msgid "Language specific text analyzers for clucene-core"
@@ -13638,7 +13616,7 @@ msgstr ""
 
 #. leap/clingo/lua-clingo/summary
 msgid "Lua bindings for Clingo"
-msgstr ""
+msgstr "ClingoのLuaバインディング"
 
 #. leap/clingo/lua-clingo/description
 msgid ""
@@ -13647,6 +13625,9 @@ msgid ""
 "Detailed information (including a User's manual), source code, and pre-"
 "compiled binaries are available at: http://potassco.org/"
 msgstr ""
+"ClinggoのLuaバインディングは、論理プログラムのグラウンダーでありソルバーです。\n"
+"\n"
+"詳細な情報(ユーザーマニュアルを含む)、ソースコード、コンパイル済みバイナリは、次のWebサイトで入手できます。http://potassco.org/"
 
 #. leap/cdrtools/mkisofs/summary
 msgid "A program to generate an ISO-9660/Joliet/HFS/UDF hybrid filesystem"
@@ -13828,13 +13809,15 @@ msgstr "Compiz Config Manager に対するバックエンドです。"
 
 #. leap/cepces/python3-cepces/summary
 msgid "Python part of cepces"
-msgstr ""
+msgstr "cepces の python 部分"
 
 #. leap/cepces/python3-cepces/description
 msgid ""
 "cepces is an application for enrolling certificates through CEP and CES. "
 "This package provides the Python part for CEP and CES interaction."
 msgstr ""
+"cepcesは、CEPおよびCESを通じて証明書を登録するためのアプリケーションです。このパッケージは、CEPとCESの対話のためのPython部分を提供"
+"します。"
 
 #. leap/ceph/python3-ceph-argparse/summary
 msgid "Python 3 utility libraries for Ceph CLI"
@@ -13877,10 +13860,8 @@ msgstr ""
 "リが含まれています。"
 
 #. leap/clingo/python3-clingo/summary
-#, fuzzy
-#| msgid "Python bindings to Caffe"
 msgid "Python 3 bindings for Clingo"
-msgstr "PythonのCaffeへの結合"
+msgstr "ClingoのPython 3バインディング"
 
 #. leap/clingo/python3-clingo/description
 msgid ""
@@ -13895,6 +13876,13 @@ msgid ""
 "Detailed information (including a User's manual), source code, and pre-"
 "compiled binaries are available at: http://potassco.org/"
 msgstr ""
+"このモジュールは、基底項を処理し、インスタンス化プロセスを制御する関数とクラスを提供します。cligo "
+"builtでは、解決プロセスを制御および検査するための追加機能を使用できます。\n"
+"\n"
+"pythonスクリプトブロックで定義された関数は、インスタンス化プロセス中に@-syntaxを使用して呼び出すことができます。メイン機能が提供されている場"
+"合は、既定の grounding/解決プロセスをカスタマイズできます。\n"
+"\n"
+"詳細な情報(ユーザーマニュアルを含む)、ソースコード、コンパイル済みバイナリは、次のWebサイトで入手できます。http://potassco.org/"
 
 #. leap/clustershell/python3-clustershell/summary
 msgid "ClusterShell module for Python 3"
@@ -14185,10 +14173,8 @@ msgstr ""
 "ンディングを提供します。"
 
 #. leap/colord-gtk/typelib-1_0-ColordGtk-1_0/summary
-#, fuzzy
-#| msgid "Pango Integration, Introspection bindings for cogl"
 msgid "GTK Integration Introspection bindings for colord-gtk"
-msgstr "Pango Integration,coglのイントロスペクションバインディング"
+msgstr "colord-gtkのGTK統合イントロスペクション・バインディング"
 
 #. leap/colord-gtk/typelib-1_0-ColordGtk-1_0/description
 msgid ""
@@ -14331,7 +14317,7 @@ msgstr "c3p0のJavadocドキュメント。"
 
 #. tumbleweed/caddy/summary
 msgid "Fast, multi-platform web server with automatic HTTPS"
-msgstr ""
+msgstr "自動HTTPSを備えた高速なマルチプラットフォームWebサーバ"
 
 #. tumbleweed/caddy/description
 msgid ""
@@ -14341,6 +14327,9 @@ msgid ""
 "It operates primarily at L4 (transport layer) and L7 (application layer) of "
 "the OSI model, though it has the ability to work with other layers."
 msgstr ""
+"Caddyは、Goで記述された、サイト、サービス、アプリを提供するための強力で拡張可能なプラットフォームです。\n"
+"\n"
+"主にOSIモデルのL4(トランスポート層)とL7(アプリケーション層)で動作しますが、他の層と連携することもできます。"
 
 #. tumbleweed/cage/summary
 msgid "Wayland Kiosk"
@@ -14583,13 +14572,12 @@ msgstr ""
 
 #. tumbleweed/cepces/cepces-selinux/summary
 #. tumbleweed/cepces/cepces-selinux/description
-#, fuzzy
 msgid "SELinux support for cepces"
-msgstr "Dovecot 向け MySQL サポート"
+msgstr "cepcesでのSELinuxのサポート"
 
 #. tumbleweed/cfssl/summary
 msgid "CloudFlare's PKI/TLS toolkit"
-msgstr ""
+msgstr "CloudFlareのPKI/TLSツールキット"
 
 #. tumbleweed/cfssl/description
 msgid ""
@@ -14604,10 +14592,16 @@ msgid ""
 "which takes the JSON output from the cfssl     and multirootca programs and "
 "writes certificates, keys, CSRs, and     bundles to disk."
 msgstr ""
+"CFSSLは、CloudFlareのPKI/TLSスイスアーミーナイフです。これはコマンドラインツールであると同時に、TLS証明書の署名、検証、"
+"バンドルのためのHTTP APIサーバでもあります。CFSSLは次のもので構成されています:\n"
+"\n"
+"  * cfsslプログラムは、CFSSLパッケージを使用する標準的なコマンドラインユーティリティです。* "
+"multirootcaプログラム。複数の署名キーを使用できる認証機関サーバです。* 認証プールバンドルを構築するためのmkbundleプログラム。* cf"
+"sslプログラムとmultirootcaプログラムからJSON出力を取得し、証明書、鍵、CSR、バンドルをディスクに書き込むcfssljsonプログラム。"
 
 #. tumbleweed/cg3/summary
 msgid "VISL Constraint Grammar implementation"
-msgstr ""
+msgstr "VISL制約文法の実装"
 
 #. tumbleweed/cg3/description
 #. tumbleweed/cg3/libcg3-1/description
@@ -14617,12 +14611,12 @@ msgid ""
 "into a grammar that assigns grammatical tags (\"readings\") to words or "
 "other tokens in running text."
 msgstr ""
+"制約文法(CG)は自然言語処理(NLP)の方法論的パラダイムです。言語学者によって書かれた文脈依存規則は、文法タグ(「読み」)を実行中のテキスト内の単語ま"
+"たは他のトークンに割り当てる文法にコンパイルされます。"
 
 #. tumbleweed/cg3/cg3-devel/summary
-#, fuzzy
-#| msgid "Development files for the Clutter library"
 msgid "Development files for the VISL Constraint Grammar library"
-msgstr "クラッタライブラリ用の開発ファイル"
+msgstr "VISL制約文法ライブラリの開発ファイル"
 
 #. tumbleweed/cg3/cg3-devel/description
 msgid ""
@@ -14634,6 +14628,10 @@ msgid ""
 "This subpackage contains the files needed to build programs that want to use "
 "VISL CG-3."
 msgstr ""
+"制約文法(CG)は自然言語処理(NLP)の方法論的パラダイムです。言語学者によって書かれた文脈依存規則は、文法タグ(「読み」)を実行中のテキスト内の単語ま"
+"たは他のトークンに割り当てる文法にコンパイルされます。\n"
+"\n"
+"このサブパッケージには、VISL CG-3を使用するプログラムを構築するために必要なファイルが含まれています。"
 
 #. tumbleweed/cglm/cglm-devel/summary
 msgid "Header files for C OpenGL Mathematics"
@@ -14715,12 +14713,12 @@ msgstr "checkstyleのAPIドキュメント。"
 #. tumbleweed/cilium-cli/summary
 msgid ""
 "CLI to install, manage & troubleshoot Kubernetes clusters running Cilium"
-msgstr ""
+msgstr "Ciliumを実行するKubernetesクラスタをインストール、管理、トラブルシューティングするためのCLI"
 
 #. tumbleweed/cilium-cli/description
 msgid ""
 "CLI to install, manage and troubleshoot Kubernetes clusters running Cilium"
-msgstr ""
+msgstr "Ciliumを実行するKubernetesクラスタをインストール、管理、トラブルシューティングするためのCLI"
 
 #. tumbleweed/cinema/summary
 msgid "A video player for local files"
@@ -14782,11 +14780,11 @@ msgstr ""
 
 #. tumbleweed/clash/summary
 msgid "A rule-based tunnel in Go"
-msgstr ""
+msgstr "Goのルールベースのトンネル"
 
 #. tumbleweed/clash/description
 msgid "Clash is a rule-based tunnel in Go."
-msgstr ""
+msgstr "ClashはGoのルールベースのトンネルです。"
 
 #. tumbleweed/clipit/description
 msgid ""
@@ -14919,20 +14917,18 @@ msgstr ""
 "このサブパッケージは、その開発ヘッダーを提供します。"
 
 #. tumbleweed/cmake-ui/cmake-doc-qhelp/summary
-#, fuzzy
-#| msgid "Cppreference documentation for offline reading - qhelp version"
 msgid "CMake documentation for offline reading - qhelp version"
-msgstr "オフラインで読むためのCppreference文書 - qhelp版"
+msgstr "オフラインで読むためのCMakeドキュメント - qhelpバージョン"
 
 #. tumbleweed/cmake-ui/cmake-doc-qhelp/description
 msgid "CMake documentation for offline reading - qhelp version."
-msgstr "オフラインで読むための CMake 文書 - qhelp版"
+msgstr "オフラインで読むための CMake 文書 - qhelp版。"
 
 #. tumbleweed/cmctl/summary
 msgid ""
 "CLI tool that can help you to manage cert-manager resources inside your "
 "cluster"
-msgstr ""
+msgstr "クラスタ内のcert-managerリソースの管理を支援するCLIツール"
 
 #. tumbleweed/cmctl/description
 msgid ""
@@ -14941,6 +14937,8 @@ msgid ""
 "recommended to use as a stand alone binary as this allows the use of command "
 "auto-completion."
 msgstr ""
+"cmctlは、クラスタ内のcert-managerリソースの管理に役立つCLIツールです。kubectlプラグインとしても利用可能であるが、コマンドの自動"
+"補完を使用できるため、スタンドアロンバイナリとして使用することを推奨します。"
 
 #. tumbleweed/cmh/summary
 msgid "Igusa (genus 2) class polynomial computation"
@@ -15066,10 +15064,8 @@ msgid "The Cockpit component for configuring kernel crash dumping."
 msgstr "カーネルクラッシュダンプを設定するためのCockpitコンポーネント。"
 
 #. tumbleweed/cockpit-machines/summary
-#, fuzzy
-#| msgid "Cockpit user interface for packages"
 msgid "Cockpit user interface for virtual machines"
-msgstr "パッケージ用 Cockpit ユーザインタフェース"
+msgstr "仮想マシンの Cockpit ユーザーインターフェイス"
 
 #. tumbleweed/cockpit-machines/description
 msgid ""
@@ -15077,6 +15073,9 @@ msgid ""
 "\n"
 "If \"virt-install\" is installed, you can also create new virtual machines."
 msgstr ""
+"仮想マシンを管理するCockpitコンポーネント\n"
+"\n"
+"virt-installがインストールされている場合は、新しい仮想マシンを作成することもできます。"
 
 #. tumbleweed/cockpit/cockpit-networkmanager/summary
 msgid "Cockpit user interface for networking, using NetworkManager"
@@ -15210,16 +15209,16 @@ msgid "This package contains the API documentation for codemodel."
 msgstr "このパッケージには、codemodel用のAPIドキュメントが含まれています。"
 
 #. tumbleweed/collectd/collectd-plugin-amqp/summary
-#, fuzzy
-#| msgid "MQTT Plugin for collectd"
 msgid "AMQP Plugin for collectd"
-msgstr "collectd 用のMQTTプラグイン"
+msgstr "collectd用AMQPプラグイン"
 
 #. tumbleweed/collectd/collectd-plugin-amqp/description
 msgid ""
 "The AMQP plugin transmits or receives values collected by collectd via the "
 "Advanced Message Queuing Protocol (AMQP)."
 msgstr ""
+"AMQPプラグインは、collectdによって収集された値を、Advanced Message Queuing "
+"Protocol(AMQP)を介して送受信します。"
 
 #. tumbleweed/collectd/collectd-plugin-gps/summary
 msgid "GPSD monitoring plugin for collectd"
@@ -15230,17 +15229,12 @@ msgid "Optional collectd plugin to monitor gpsd."
 msgstr "gpsdを監視するためのオプションの collectd プラグイン。"
 
 #. tumbleweed/collectd/collectd-plugin-modbus/summary
-#, fuzzy
-#| msgid "MQTT Plugin for collectd"
 msgid "TCP Modbus Plugin for collectd"
-msgstr "collectd 用のMQTTプラグイン"
+msgstr "collectd用TCP Modbusプラグイン"
 
 #. tumbleweed/collectd/collectd-plugin-modbus/description
-#, fuzzy
-#| msgid "Optional collectd plugin to monitor devices using SNMP."
 msgid "Optional collectd plugin to communicate with TCP Modbus devices."
-msgstr ""
-"SNMPを使用してデバイスを監視するためのオプションの collectd プラグイン。"
+msgstr "TCP Modbusデバイスと通信するためのオプションのcollectdプラグイン。"
 
 #. tumbleweed/collectd/collectd-plugin-mqtt/summary
 msgid "MQTT Plugin for collectd"
@@ -15363,10 +15357,8 @@ msgstr ""
 "れはリファレンス実装です。"
 
 #. tumbleweed/container-build-checks/summary
-#, fuzzy
-#| msgid "Tool to analyze and compare container images"
 msgid "Scripts to validate built container images"
-msgstr "コンテナイメージを分析および比較するツール"
+msgstr "構築されたコンテナイメージを検証するスクリプト"
 
 #. tumbleweed/container-build-checks/description
 msgid ""
@@ -15374,27 +15366,23 @@ msgid ""
 "container image policies (https://en.opensuse.org/"
 "Building_derived_containers)."
 msgstr ""
+"このツールは、構築されたコンテナイメージがopenSUSEコンテナイメージポリシー(https://en.opensuse.org/"
+"Building_derived_containers))に準拠しているかをチェックします。"
 
 #. tumbleweed/container-build-checks/container-build-checks-strict/summary
 #. tumbleweed/container-build-checks/container-build-checks-strict/description
-#, fuzzy
-#| msgid "Generic configuration for the region service"
 msgid "Strict configuration for container-build-checks"
-msgstr "リージョンサービスの汎用設定"
+msgstr "コンテナビルドチェックのための厳密な設定"
 
 #. tumbleweed/container-build-checks/container-build-checks-vendor-SUSE/summary
 #. tumbleweed/container-build-checks/container-build-checks-vendor-SUSE/description
-#, fuzzy
-#| msgid "openSUSE MicroOS configuration file for could-init"
 msgid "SUSE configuration for container-build-checks"
-msgstr "OpenSUSE MicroOS構成ファイル(could-init用)"
+msgstr "コンテナー・ビルド・チェック用のSUSE構成"
 
 #. tumbleweed/container-build-checks/container-build-checks-vendor-openSUSE/summary
 #. tumbleweed/container-build-checks/container-build-checks-vendor-openSUSE/description
-#, fuzzy
-#| msgid "openSUSE MicroOS configuration file for could-init"
 msgid "openSUSE configuration for container-build-checks"
-msgstr "OpenSUSE MicroOS構成ファイル(could-init用)"
+msgstr "container-build-checks 用のopenSUSE構成"
 
 #. tumbleweed/container-registry-systemd/summary
 msgid "Systemd service files and config files for container-registry"
@@ -15429,13 +15417,6 @@ msgstr ""
 "し、診断ユーティリティを使用できます。これの主な目的は問題診断です。"
 
 #. tumbleweed/containers-systemd/description
-#, fuzzy
-#| msgid ""
-#| "This package contains the configuration files and systemd units to run "
-#| "the openSUSE containers via podman managed by systemd. Currently "
-#| "supported are bind, dhcp-server, dovecot, fetchmail, haproxy, mariadb, "
-#| "minidlna, nginx, openldap, postfix, samba spamassassin, squid and wsdd. "
-#| "Additional, there is a timer to cleanup dangling container images."
 msgid ""
 "This package contains the configuration files and systemd units to run the "
 "openSUSE containers via podman managed by systemd. Currently supported are "
@@ -15443,11 +15424,10 @@ msgid ""
 "openldap, postfix, roundcube, samba, spamassassin, squid and wsdd. "
 "Additional, there is a timer to cleanup dangling container images."
 msgstr ""
-"このパッケージには、構成ファイルと、systemdが管理するpodman経由でopenSUSEコン"
-"テナを実行するsystemdユニットが含まれています。現在サポートされているのは"
-"bind,dhcp-server,dovecot,fetchmail,haproxy,mariadb,minidlna,nginx,openldap,"
-"postfix,samba spamassassin,squid,wsddです。さらに、未結合のコンテナイメージを"
-"クリーンアップするタイマーもあります。"
+"このパッケージには、systemd によって管理されるpodman 経由でopenSUSEコンテナを実行するための設定ファイルと systemd "
+"ユニットが含まれています。現在サポートされているのはbind,dhcp-server,dovecot,fetchmail,haproxy,mariadb,"
+"minidlna,nginx,openldap,postfix,roundcube,samba,spamassassin,squid,wsdd "
+"です。さらに、未結合のコンテナイメージをクリーンアップするタイマーもあります。"
 
 #. tumbleweed/convmv/summary
 msgid "Utility to convert file names between encodings"
@@ -15510,15 +15490,13 @@ msgid "This package contains development files for Coq."
 msgstr "このパッケージには、Coqの開発ファイルが含まれています。"
 
 #. tumbleweed/coq/coq-doc/summary
-#, fuzzy
-#| msgid "Documentation for conky"
 msgid "Documentation for coq"
-msgstr "conkyのドキュメント"
+msgstr "coqのドキュメント"
 
 #. tumbleweed/coq/coq-doc/description
 msgid ""
 "HTML reference manual for Coq and full documentation of the standard library."
-msgstr ""
+msgstr "CoqのHTMLリファレンスマニュアルと標準ライブラリの完全なドキュメント。"
 
 #. tumbleweed/coq/coq-ide/summary
 msgid "IDE for The Coq Proof Assistant"
@@ -15534,7 +15512,7 @@ msgstr ""
 
 #. tumbleweed/cosign/summary
 msgid "Container Signing, Verification and Storage in an OCI registry"
-msgstr ""
+msgstr "コンテナの署名、検証、OCIレジストリへの保存"
 
 #. tumbleweed/cosign/description
 msgid ""
@@ -15546,6 +15524,13 @@ msgid ""
 "- Our free OIDC PKI (Fulcio)\n"
 "- Built-in binary transparency and timestamping service (Rekor)"
 msgstr ""
+"Cosignの狙いは、署名を目に見えないインフラストラクチャにすることです。\n"
+"\n"
+"Cosignは次の機能をサポートしています\n"
+"- ハードウェアおよびKMSの署名\n"
+"- Bring-your-own PKI(自分のPKIを持参する)\n"
+"- 無料のOIDC PKI(Fulcio)\n"
+"- 組み込みバイナリ透過とタイムスタンプサービス(Rekor)"
 
 #. tumbleweed/coxeter/summary
 msgid "Computation on Coxeter groups"
@@ -15678,10 +15663,8 @@ msgstr ""
 "用にCPU miner を最適化したアセンブリ。"
 
 #. tumbleweed/cracklib/cracklib-dict-small/summary
-#, fuzzy
-#| msgid "Small dictionary for cracklib - A Password-Checking Library"
 msgid "Small dictionary for cracklib, a password checking library"
-msgstr "cracklib (パスワードチェックライブラリ) 向け小辞書"
+msgstr "パスワード検査ライブラリ cracklib 用の小さな辞書"
 
 #. tumbleweed/cramfs-tools/summary
 msgid "Tools for CramFs (Compressed ROM File System)"
@@ -15722,22 +15705,10 @@ msgstr ""
 "ことで、この問題を解決しています。"
 
 #. tumbleweed/cross-aarch64-gcc11/description
-#, fuzzy
-#| msgid "The GNU Compiler Collection as a cross-compiler targeting riscv64."
 msgid "The GNU Compiler Collection as a cross-compiler targeting aarch64."
-msgstr "riscv64を対象としたクロスコンパイラとしてのGNU Compiler Collection。"
+msgstr "GNU Compiler CollectionクロスコンパイラとしてのGNU Compiler Collection。"
 
 #. tumbleweed/cross-aarch64-gcc11-bootstrap/description
-#, fuzzy
-#| msgid ""
-#| "The GNU Compiler Collection as a cross-compiler targeting riscv64.\n"
-#| "\n"
-#| "\n"
-#| "\n"
-#| "\n"
-#| "\n"
-#| "This is a package that is necessary for bootstrapping another package "
-#| "only, it is not intended for any other use."
 msgid ""
 "The GNU Compiler Collection as a cross-compiler targeting aarch64.\n"
 "\n"
@@ -15748,14 +15719,13 @@ msgid ""
 "This is a package that is necessary for bootstrapping another package only, "
 "it is not intended for any other use."
 msgstr ""
-"riscv64を対象としたクロスコンパイラとしてのGNU Compiler Collection。\n"
+"GNU Compiler CollectionクロスコンパイラとしてのGNU Compiler Collection。\n"
 "\n"
 "\n"
 "\n"
 "\n"
 "\n"
-"これは、別のパッケージをブートストラップするためだけに必要なパッケージであ"
-"り、他の用途を意図したものではありません。"
+"これは、別のパッケージをブートストラップするためだけに必要なパッケージであり、他の用途を意図したものではありません。"
 
 #. tumbleweed/cross-amdgcn-gcc10/summary
 #. tumbleweed/cross-amdgcn-gcc11/summary
@@ -15967,16 +15937,12 @@ msgstr ""
 "るためのライブラリーとヘッダー・ファイルが含まれています。"
 
 #. tumbleweed/crow-translate/crow-translate-lang/summary
-#, fuzzy
-#| msgid "Translations for package cantata"
 msgid "Translations for package crow-translate"
-msgstr "cantata パッケージの翻訳"
+msgstr "パッケージcrow-translateの翻訳"
 
 #. tumbleweed/crow-translate/crow-translate-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"cantata\" package."
 msgid "Provides translations for the \"crow-translate\" package."
-msgstr "「cantata」パッケージの翻訳を提供します。"
+msgstr "「crow-translate」パッケージの翻訳を提供します。"
 
 #. tumbleweed/crun/summary
 msgid "OCI runtime written in C"
@@ -15992,7 +15958,7 @@ msgstr ""
 
 #. tumbleweed/cryfs/summary
 msgid "Cryptographic filesystem for the cloud"
-msgstr ""
+msgstr "クラウド用の暗号化ファイルシステム"
 
 #. tumbleweed/cryfs/description
 msgid ""
@@ -16043,14 +16009,12 @@ msgstr ""
 "ます。"
 
 #. tumbleweed/csound/csound-samples/summary
-#, fuzzy
-#| msgid "Development files for Csound"
 msgid "Data files for csound"
-msgstr "Csoundの開発ファイル"
+msgstr "csoundのデータファイル"
 
 #. tumbleweed/csound/csound-samples/description
 msgid "HRTF datafiles and Soundfont for csound"
-msgstr ""
+msgstr "csoundのHRTFデータファイルとサウンドフォント"
 
 #. tumbleweed/cura-lulzbot/description
 msgid ""
@@ -16072,7 +16036,7 @@ msgstr ""
 
 #. tumbleweed/curtail/summary
 msgid "A simple and useful image compressor"
-msgstr ""
+msgstr "シンプルで便利な画像圧縮ツール"
 
 #. tumbleweed/curtail/description
 msgid ""
@@ -16080,18 +16044,16 @@ msgid ""
 "PNG, JPEG and WEBP file types. It support both lossless and lossy "
 "compression modes with an option to whether keep or not metadata of images."
 msgstr ""
+"Conduit(以前のImCompressor)は便利な画像圧縮ツールで、PNG、JPEG、WEBPファイルタイプをサポートしています。可逆圧縮モードと非"
+"可逆圧縮モードの両方をサポートしており、画像のメタデータを保持するかどうかのオプションもあります。"
 
 #. tumbleweed/curtail/curtail-lang/summary
-#, fuzzy
-#| msgid "Translations for package coreutils"
 msgid "Translations for package curtail"
-msgstr "coreutils 向け翻訳パッケージ"
+msgstr "curtail パッケージの翻訳"
 
 #. tumbleweed/curtail/curtail-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"coreutils\" package."
 msgid "Provides translations for the \"curtail\" package."
-msgstr "coreutils パッケージ向けの翻訳データです。"
+msgstr "「curtail」パッケージの翻訳を提供します。"
 
 #. tumbleweed/cvise/summary
 msgid "Super-parallel Python port of the C-Reduce"
@@ -16130,19 +16092,9 @@ msgstr ""
 
 #. tumbleweed/cyreal-lora-fonts/summary
 msgid "Serif family for text. Variable Open Source Font"
-msgstr ""
+msgstr "テキスト用のSerifファミリ。可変オープンソースフォント"
 
 #. tumbleweed/cyreal-lora-fonts/description
-#, fuzzy
-#| msgid ""
-#| "Lora is a well-balanced contemporary serif with roots in calligraphy. It "
-#| "is a text typeface with moderate contrast well suited for body text.\n"
-#| "\n"
-#| "A paragraph set in Lora will make a memorable appearance because of its "
-#| "brushed curves in contrast with driving serifs. The overall typographic "
-#| "voice of Lora perfectly conveys the mood of a modern-day story, or an art "
-#| "essay. Technically Lora is optimised for screen appearance, and works "
-#| "equally well in print."
 msgid ""
 "Lora is a well-balanced contemporary serif with roots in calligraphy. It is "
 "a text typeface with moderate contrast well suited for body text. A "
@@ -16156,47 +16108,19 @@ msgid ""
 "\n"
 "Designed by Olga Karpushina, and Alexei Vanyashin for Cyreal."
 msgstr ""
-"Lora は、書道にルーツを持つバランスのとれた現代のセリフです。ボディテキストに"
-"適した適度なコントラストのテキスト書体です。\n"
+"Lora は、書道にルーツを持つバランスのとれた現代の serif です。ボディテキストに適した適度なコントラストのテキスト書体です。Loraに設定された"
+"段落は、駆動セリフとは対照的に、そのブラシ仕上げの曲線のために、印象的な外観を作るでしょう。Lora "
+"の全体的なタイポグラフィの声は、現代の物語や芸術のエッセイの雰囲気を完璧に伝えています。\n"
 "\n"
-"Loraに設定された段落は、駆動セリフとは対照的に、そのブラシ仕上げの曲線のため"
-"に、印象的な外観を作るでしょう。Lora の全体的なタイポグラフィの声は、現代の物"
-"語や芸術のエッセイの雰囲気を完璧に伝えています。技術的には、Loraは画面の外観"
-"に最適化されており、印刷でも同じように機能します。"
+"技術的には、Loraは画面の外観に最適化されており、印刷でも同じように機能します。\n"
+"\n"
+"Olga Karpushina と Alexei Vanyashin が Cyreal のためにデザインしました。"
 
 #. tumbleweed/cyrus-imapd/summary
 msgid "The Cyrus IMAP and POP Mail Server"
 msgstr "Cyrus IMAP および POP メールサーバ"
 
 #. tumbleweed/cyrus-imapd/description
-#, fuzzy
-#| msgid ""
-#| "The cyrus-imapd package contains the core of the Cyrus IMAP server. It is "
-#| "a scaleable enterprise mail system designed for use from small to large "
-#| "enterprise environments using standards-based internet mail "
-#| "technologies.\n"
-#| "\n"
-#| "A full Cyrus IMAP implementation allows a seamless mail and bulletin "
-#| "board environment to be set up across multiple servers. It differs from "
-#| "other IMAP server implementations in that it is run on \"sealed\" "
-#| "servers, where users are not normally permitted to log in and have no "
-#| "system account on the server. The mailbox database is stored in parts of "
-#| "the filesystem that are private to the Cyrus IMAP server. All user access "
-#| "to mail is through software using the IMAP, POP3 or KPOP protocols. It "
-#| "also includes support for virtual domains, NNTP, mailbox annotations, and "
-#| "much more. The private mailbox database design gives the server large "
-#| "advantages in efficiency, scalability and administratability. Multiple "
-#| "concurrent read/write connections to the same mailbox are permitted. The "
-#| "server supports access control lists on mailboxes and storage quotas on "
-#| "mailbox hierarchies.\n"
-#| "\n"
-#| "The Cyrus IMAP server supports the IMAP4rev1 protocol described in RFC "
-#| "3501. IMAP4rev1 has been approved as a proposed standard. It supports any "
-#| "authentication mechanism available from the SASL library, imaps/pop3s/"
-#| "nntps (IMAP/POP3/NNTP encrypted using SSL and TLSv1) can be used for "
-#| "security. The server supports single instance store where possible when "
-#| "an email message is addressed to multiple recipients, SIEVE provides "
-#| "server side email filtering."
 msgid ""
 "This package contains the core of the Cyrus IMAP server. It is a mail system "
 "designed for use with standards-based Internet mail technologies.\n"
@@ -16221,51 +16145,35 @@ msgid ""
 "is addressed to multiple recipients. SIEVE provides server side email "
 "filtering."
 msgstr ""
-"cyrus-imapd パッケージには、 Cyrus IMAP サーバの中枢部が含まれています。"
-"Cyrus IMAP サーバはスケーラビリティに富むエンタープライズ用途のメールシステム"
-"で、小規模な環境から巨大な企業環境まで、標準をベースにしたインターネット技術"
-"を提供します。\n"
+"このパッケージには、Cyrus "
+"IMAPサーバのコアが含まれています。これは、標準ベースのインターネットメール技術で使用するように設計されたメールシステムです。\n"
 "\n"
-"完全な Cyrus IMAP 実装は、複数のサーバに跨る電子メールと電子掲示板を境目なく"
-"シームレスに統合することができます。通常ではユーザがログインできず、システム"
-"のアカウントとは別途にアカウントを設定するような秘密主義の他の IMAP サーバの"
-"実装とは異なり、メールボックスのデータベースはファイルシステム内に構築され、 "
-"Cyrus IMAP サーバ内で独占的に使用することができます。また、メールに対するユー"
-"ザからのアクセスは、 IMAP, POP3, KPOP の各プロトコルを利用してアクセスするこ"
-"とができます。仮想ドメインや NNTP のほか、 メールボックスへの注釈などにも対応"
-"しています。独自のメールボックスデータベースの仕組みにより、サーバの効率的か"
-"つスケーラビリティに富み、さらには管理性にも富む構造になっています。それ以外"
-"にも、同じメールボックスに対して複数の同時接続を受け付け、読み書きする機能も"
-"備えています。サーバはメールボックスに対するアクセス制御リストのほか、メール"
-"ボックス構造に対して容量制限を設定することもできます。\n"
+"完全なCyrus IMAP実装により、メールと掲示板の環境を複数のサーバにわたって設定することができます。他のIMAP IMAPサーバ実装とは異なり、「封"
+"印された」サーバ上で実行され、ユーザは通常ログインを許可されず、サーバ上のシステムアカウントを持ちません。メールボックスデータベースは、Cyrus IMA"
+"Pサーバにとってプライベートなファイルシステムの一部に格納されています。メールへのすべてのユーザアクセスは、IMAP、POP3、またはKPOPプロトコルを"
+"使用するソフトウェアを通じて行われます。また、仮想ドメイン、NNTP、メールボックス注釈のサポートも含まれています。同じメールボックスへの複数の同時読み取"
+"り/書き込み接続が許可されます。サーバは、メールボックスのアクセス制御リストとメールボックス階層のストレージクォータをサポートしています。\n"
 "\n"
-"Cyrus IMAP サーバは RFC 3501 に規定された IMAP4rev1 に対応しています。 "
-"IMAPrev1 は標準化提唱状態にあり、 SASL ライブラリから提供される任意の認証機構"
-"を利用することができます。また、 imaps/pop3s/nntps (IMAP/POP3/NNTP に SSL や "
-"TLSv1 の暗号化を追加したプロトコル) を利用して、セキュリティを高めることもで"
-"きます。それ以外にも、単一のインスタンスのストアで複数の受信者に電子メールを"
-"送信することのできるほか、 SIEVE ではサーバ側での電子メールフィルタリングも提"
-"供しています。"
+"Cyrus IMAPサーバは、RFC 3501に記述されているIMAP4rev1プロトコルをサポートしています。IMAP4rev1は提案された標準として承"
+"認されました。SASLライブラリから利用可能な任意の認証メカニズムをサポートしており、imaps/pop3s/"
+"nntps(SSLとTLSv1を使用して暗号化されたIMAP/POP3/NNTP)をセキュリティに使用できます。サーバは、電子メールメッセージが複数の受信"
+"者に宛てられている場合、可能な限りシングルインスタンスストアをサポートします。SIEVEはサーバ側の電子メールフィルタリングを提供します。"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-devel/summary
-#, fuzzy
-#| msgid "Libraries and headers for CharLS"
 msgid "Libraries and Includes for cyrus-imapd"
-msgstr "CharLSのライブラリとヘッダ"
+msgstr "cyrus-imapdのライブラリとインクルード"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-devel/description
-#, fuzzy
 msgid ""
 "The cyrus-imapd-devel package contains header files and libraries necessary "
 "for developing applications which use the imclient library."
 msgstr ""
-"libndp-devel パッケージには、 libndp を使用するプログラムを開発するのに必要"
-"な、 ヘッダファイルと静的ライブラリが含まれています。"
+"cyrus-imapd-"
+"develパッケージには、imclientライブラリを使用するアプリケーションを開発するために必要なヘッダファイルとライブラリが含まれています。"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-snmp/summary
-#, fuzzy
 msgid "SNMP support for the Cyrus IMAP and POP Mail Server"
-msgstr "Cyrus IMAP および POP メールサーバ"
+msgstr "Cyrus IMAPおよびPOPメールサーバのSNMPサポート"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-snmp/description
 msgid ""
@@ -16274,31 +16182,30 @@ msgid ""
 "\n"
 "This package pulls in dependencies to enable SNMP support for cyrus-imapd."
 msgstr ""
+"このパッケージには、Cyrus "
+"IMAPサーバのコアが含まれています。これは、標準ベースのインターネットメール技術で使用するように設計されたメールシステムです。\n"
+"\n"
+"このパッケージは、cyrus-imapdのSNMPサポートを有効にするための依存関係を取り込みます。"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-snmp-mibs/summary
-#, fuzzy
 msgid "MIBs for the Cyrus IMAP and POP Mail Server"
-msgstr "Cyrus IMAP および POP メールサーバ"
+msgstr "Cyrus IMAPおよびPOPメールサーバのMIB"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-snmp-mibs/description
-#, fuzzy
 msgid ""
 "This package contains MIBs for the Cyrus IMAP server. They are required to "
 "use cyrus-imapd with SNMP."
-msgstr ""
-"このパッケージには Cyrus IMAP サーバ向けの Perl モジュールが含まれています。"
+msgstr "このパッケージには、Cyrus IMAPサーバのMIBが含まれています。SNMPでcyrus-imapdを使用する必要があります。"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-utils/summary
-#, fuzzy
-#| msgid "Web Console for Linux servers"
 msgid "Test tools for mail servers"
-msgstr "Linuxサーバー用のWeb Console"
+msgstr "メールサーバー用テストツール"
 
 #. tumbleweed/cyrus-imapd/cyrus-imapd-utils/description
 msgid ""
 "This package contains test tools for mail protocols (not only cyrus-imapd "
 "specific)."
-msgstr ""
+msgstr "このパッケージには、メールプロトコル用のテストツールが含まれています(cyrus-imapd特有のものだけではありません)。"
 
 #. tumbleweed/cegui/libCEGUI-0/description
 #. tumbleweed/cegui/libCEGUIIrrlichtRenderer-0-2/description
@@ -16367,10 +16274,8 @@ msgid "Library for Extracting, Verifying, and Fixing Audio Tracks from CDs"
 msgstr "CDからオーディオトラックを抽出、確認、および修正するためのライブラリ"
 
 #. tumbleweed/cg3/libcg3-1/summary
-#, fuzzy
-#| msgid "CUnit shared library"
 msgid "VISL Constraint Grammar shared library"
-msgstr "CUnit共用ライブラリー"
+msgstr "VISL制約文法共有ライブラリ"
 
 #. tumbleweed/cglm/libcglm0/summary
 msgid "OpenGL mathematics (glm) for C"
@@ -16485,22 +16390,14 @@ msgstr "C-Pluffは、C++プログラム用のプラグインフレームワー�
 
 #. tumbleweed/cracklib/libcrack2/description
 #. tumbleweed/cracklib/libcrack2-32bit/description
-#, fuzzy
-#| msgid ""
-#| "CrackLib tests passwords to determine whether they match certainsecurity-"
-#| "oriented characteristics. You can use CrackLib to stopusers from choosing "
-#| "passwords that are too simple.This package contains a full dictionary "
-#| "file used by cracklib."
 msgid ""
 "CrackLib tests passwords to determine whether they match certain security-"
 "oriented characteristics. You can use CrackLib to stopusers from choosing "
 "passwords that are too simple.This package contains a full dictionary file "
 "used by cracklib."
 msgstr ""
-"cracklib はパスワードの強度がセキュリティ要件に該当しているかどうかを試すため"
-"のライブラリです。cracklib ライブラリを利用することで、ユーザに対して単純すぎ"
-"るパスワードを使用しないようにさせることができます。このパッケージには "
-"cracklib で使用する辞書ファイルが含まれています。"
+"CrackLibはパスワードをテストして、特定のセキュリティ指向の特性に一致するかどうかを判断します。CrackLibを使えば、あまりにも単純なパスワード"
+"を選択しなくてもstopusersすることができます。このパッケージには、cracklibで使われる完全な辞書ファイルが含まれています。"
 
 #. tumbleweed/crossguid/libcrossguid0/summary
 msgid "C++ GUID/UUID library"
@@ -16578,7 +16475,7 @@ msgstr ""
 #. tumbleweed/csound/python3-csound/summary
 #. tumbleweed/csound/python3-csound/description
 msgid "Csound opcodes for python"
-msgstr ""
+msgstr "python用のcsoundオペコード"
 
 #~ msgid "C++ Interface for Cairo"
 #~ msgstr "Cairo用C++インタフェース"
