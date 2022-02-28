@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2017-03-05 00:55+0800\n"
 "Last-Translator: Dingzhong Chen <wsxy162@gmail.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
@@ -230,6 +230,17 @@ msgstr ""
 #| msgid "Versatile Font Library"
 msgid "Versatile font library VFlib3"
 msgstr "Versatile 字体库"
+
+#. leap/vnote/libVSyntaxHighlighting1/summary
+#. leap/vnote/libVTextEdit1/summary
+msgid "Library files for vnote"
+msgstr ""
+
+#. leap/vnote/libVSyntaxHighlighting1/description
+#. leap/vnote/libVTextEdit1/description
+#, fuzzy
+msgid "This package provides library files for vnote."
+msgstr "包中含有意外的版本"
 
 #. leap/vala-panel-appmenu/libappmenu-gtk-parser-devel/summary
 msgid "Common development-files for libappmenu-gtk{2,3}-parser"
@@ -685,11 +696,11 @@ msgid ""
 "development."
 msgstr ""
 
-#. leap/virglrenderer/libvirglrenderer0/summary
+#. leap/virglrenderer/libvirglrenderer1/summary
 msgid "Virgil3D renderer"
 msgstr ""
 
-#. leap/virglrenderer/libvirglrenderer0/description
+#. leap/virglrenderer/libvirglrenderer1/description
 msgid ""
 "The virgil3d rendering library is a library used by qemu to implement 3D GPU "
 "support for the virtio GPU."
@@ -861,12 +872,14 @@ msgstr ""
 #. leap/vtk/libvtk1/summary
 #. leap/vtk-openmpi2/libvtk1-openmpi2/summary
 #. leap/vtk-openmpi3/libvtk1-openmpi3/summary
+#. leap/vtk-openmpi4/libvtk1-openmpi4/summary
 msgid "The Visualization Toolkit - A high level 3D visualization library"
 msgstr ""
 
 #. leap/vtk/libvtk1/description
 #. leap/vtk-openmpi2/libvtk1-openmpi2/description
 #. leap/vtk-openmpi3/libvtk1-openmpi3/description
+#. leap/vtk-openmpi4/libvtk1-openmpi4/description
 msgid ""
 "VTK is a software system for image processing, 3D graphics, volume rendering "
 "and visualization. VTK includes many advanced algorithms (e.g. surface "
@@ -949,6 +962,7 @@ msgstr ""
 #. leap/vtk/python3-vtk/summary
 #. leap/vtk-openmpi2/python3-vtk-openmpi2/summary
 #. leap/vtk-openmpi3/python3-vtk-openmpi3/summary
+#. leap/vtk-openmpi4/python3-vtk-openmpi4/summary
 #, fuzzy
 msgid "Python bindings for VTK"
 msgstr "D-Bus 的 Python 绑定"
@@ -956,6 +970,7 @@ msgstr "D-Bus 的 Python 绑定"
 #. leap/vtk/python3-vtk/description
 #. leap/vtk-openmpi2/python3-vtk-openmpi2/description
 #. leap/vtk-openmpi3/python3-vtk-openmpi3/description
+#. leap/vtk-openmpi4/python3-vtk-openmpi4/description
 msgid ""
 "VTK is a software system for image processing, 3D graphics, volume rendering "
 "and visualization. VTK includes many advanced algorithms (e.g. surface "
@@ -1034,13 +1049,11 @@ msgstr ""
 
 #. leap/v4l2loopback/v4l2loopback-kmp-64kb/summary
 #. leap/v4l2loopback/v4l2loopback-kmp-default/summary
-#. leap/v4l2loopback/v4l2loopback-kmp-preempt/summary
 msgid "A kernel module to create V4L2 loopback devices"
 msgstr ""
 
 #. leap/v4l2loopback/v4l2loopback-kmp-64kb/description
 #. leap/v4l2loopback/v4l2loopback-kmp-default/description
-#. leap/v4l2loopback/v4l2loopback-kmp-preempt/description
 msgid ""
 "This module allows you to create \"virtual video devices\". Normal (v4l2) "
 "applications will read these devices as if they were ordinary video devices, "
@@ -1943,13 +1956,11 @@ msgstr ""
 
 #. leap/vhba-kmp/vhba-kmp-64kb/summary
 #. leap/vhba-kmp/vhba-kmp-default/summary
-#. leap/vhba-kmp/vhba-kmp-preempt/summary
 msgid "Virtual SCSI Host Bus adapter"
 msgstr ""
 
 #. leap/vhba-kmp/vhba-kmp-64kb/description
 #. leap/vhba-kmp/vhba-kmp-default/description
-#. leap/vhba-kmp/vhba-kmp-preempt/description
 msgid ""
 "A Linux kernel module implementing a virtual SCSI Host Bus Adapter to act as "
 "a low-level SCSI driver and which provides the SCSI layer with a virtual "
@@ -2152,12 +2163,17 @@ msgstr ""
 
 #. leap/vim-plugins/vim-plugin-bufexplorer/description
 msgid ""
-"With bufexplorer, you can quickly switch between buffers by using '\\be' to "
-"open the explorer.vim. Then by using the normal movement keys or mouse to "
-"select the needed buffer and then finally pressing <Enter> or <Left Mouse "
-"Click> to open the buffer in the current window or <Shift Enter> or 't' to "
-"open that buffer in a new tab.  If the buffer is in another tab already, "
-"bufexplorer can switch to that tab if you would like."
+"With bufexplorer, you can quickly and easily switch between buffers by using "
+"the one of the default public interfaces: \\<Leader\\>be normal open "
+"\\<Leader\\>bt toggle open / close \\<Leader\\>bs force horizontal split "
+"open \\<Leader\\>bv force vertical split open\n"
+"\n"
+"Once the bufexplorer window is open you can use the normal movement keys "
+"(hjkl) to move around and then use or to select the buffer you would like to "
+"open. If you would like to have the selected buffer opened in a new tab, "
+"simply press either or 't'. Please note that when opening a buffer in a tab, "
+"that if the buffer is already in another tab, bufexplorer can switch to that "
+"tab automatically for you if you would like."
 msgstr ""
 
 #. leap/vim-plugins/vim-plugin-calendar/summary
@@ -2215,6 +2231,15 @@ msgid ""
 "version control systems.\n"
 "\n"
 "This package contains a Vim plugin to support EditorConfig."
+msgstr ""
+
+#. leap/vim-plugins/vim-plugin-file-line/summary
+#, fuzzy
+msgid "File-line plugin for Vim"
+msgstr "TagLib 的额外插件"
+
+#. leap/vim-plugins/vim-plugin-file-line/description
+msgid "Plugin for vim to enable opening a file in a given line."
 msgstr ""
 
 #. leap/vim-plugins/vim-plugin-fugitive/summary
@@ -2278,6 +2303,16 @@ msgid ""
 "\n"
 "Usage:   :LocateEdit somefile.txt   :LocateSplit somefile.txt   :"
 "LocateSource somefile.vim   :LocateRead somefile.txt"
+msgstr ""
+
+#. leap/vim-plugins/vim-plugin-markdown/summary
+msgid "Markdown support for vim"
+msgstr ""
+
+#. leap/vim-plugins/vim-plugin-markdown/description
+msgid ""
+"Syntax highlighting, matching rules and mappings for the original Markdown "
+"and extensions."
 msgstr ""
 
 #. leap/vim-plugins/vim-plugin-matrix/summary
@@ -2357,6 +2392,15 @@ msgstr ""
 msgid ""
 "This plugin offers the many features for Ruby on Rails application "
 "development."
+msgstr ""
+
+#. leap/vim-plugins/vim-plugin-salt/summary
+#, fuzzy
+msgid "Salt plugin for Vim"
+msgstr "TagLib 的额外插件"
+
+#. leap/vim-plugins/vim-plugin-salt/description
+msgid "This Vim plugin provides support for editing Saltstack .sls files."
 msgstr ""
 
 #. leap/vim-plugins/vim-plugin-searchcomplete/summary
@@ -2833,7 +2877,6 @@ msgid ""
 msgstr ""
 
 #. leap/virtualbox-kmp/virtualbox-kmp-default/summary
-#. leap/virtualbox-kmp/virtualbox-kmp-preempt/summary
 #, fuzzy
 msgid "Kernel modules for VirtualBox"
 msgstr "包管理模块（对于 Linux）"
@@ -3714,12 +3757,14 @@ msgstr ""
 #. leap/vtk/vtk-devel/summary
 #. leap/vtk-openmpi2/vtk-openmpi2-devel/summary
 #. leap/vtk-openmpi3/vtk-openmpi3-devel/summary
+#. leap/vtk-openmpi4/vtk-openmpi4-devel/summary
 msgid "VTK header files for building C++ code"
 msgstr ""
 
 #. leap/vtk/vtk-devel/description
 #. leap/vtk-openmpi2/vtk-openmpi2-devel/description
 #. leap/vtk-openmpi3/vtk-openmpi3-devel/description
+#. leap/vtk-openmpi4/vtk-openmpi4-devel/description
 msgid ""
 "VTK is a software system for image processing, 3D graphics, volume rendering "
 "and visualization. VTK includes many advanced algorithms (e.g. surface "
@@ -3730,29 +3775,10 @@ msgid ""
 "programs that use VTK to do 3D visualisation."
 msgstr ""
 
-#. leap/vtk/vtk-devel-doc/summary
-#. leap/vtk-openmpi2/vtk-openmpi2-devel-doc/summary
-#. leap/vtk-openmpi3/vtk-openmpi3-devel-doc/summary
-#, fuzzy
-msgid "VTK API documentation"
-msgstr "7.0 文档"
-
-#. leap/vtk/vtk-devel-doc/description
-#. leap/vtk-openmpi2/vtk-openmpi2-devel-doc/description
-#. leap/vtk-openmpi3/vtk-openmpi3-devel-doc/description
-msgid ""
-"VTK is a software system for image processing, 3D graphics, volume rendering "
-"and visualization. VTK includes many advanced algorithms (e.g. surface "
-"reconstruction, implicit modelling, decimation) and rendering techniques (e."
-"g. hardware-accelerated volume rendering, LOD control).\n"
-"\n"
-"This provides the VTK API documentation useful for developing programs that "
-"use VTK to do 3D visualisation."
-msgstr ""
-
 #. leap/vtk/vtk-java/summary
 #. leap/vtk-openmpi2/vtk-openmpi2-java/summary
 #. leap/vtk-openmpi3/vtk-openmpi3-java/summary
+#. leap/vtk-openmpi4/vtk-openmpi4-java/summary
 #, fuzzy
 msgid "Java bindings for VTK"
 msgstr "D-Bus 的 Python 绑定"
@@ -3760,6 +3786,7 @@ msgstr "D-Bus 的 Python 绑定"
 #. leap/vtk/vtk-java/description
 #. leap/vtk-openmpi2/vtk-openmpi2-java/description
 #. leap/vtk-openmpi3/vtk-openmpi3-java/description
+#. leap/vtk-openmpi4/vtk-openmpi4-java/description
 msgid ""
 "VTK is a software system for image processing, 3D graphics, volume rendering "
 "and visualization. VTK includes many advanced algorithms (e.g. surface "
@@ -3771,13 +3798,15 @@ msgstr ""
 
 #. leap/vtk-openmpi2/vtk-openmpi2-qt/summary
 #. leap/vtk-openmpi3/vtk-openmpi3-qt/summary
+#. leap/vtk-openmpi4/vtk-openmpi4-qt/summary
 #. leap/vtk/vtk-qt/summary
 #, fuzzy
-msgid "Qt Designer plugin for QVTKWidget"
-msgstr "TagLib 的额外插件"
+msgid "Qt libraries for VTK"
+msgstr "正在创建资源数据库"
 
 #. leap/vtk-openmpi2/vtk-openmpi2-qt/description
 #. leap/vtk-openmpi3/vtk-openmpi3-qt/description
+#. leap/vtk-openmpi4/vtk-openmpi4-qt/description
 #. leap/vtk/vtk-qt/description
 msgid ""
 "VTK is a software system for image processing, 3D graphics, volume rendering "
@@ -3785,7 +3814,7 @@ msgid ""
 "reconstruction, implicit modelling, decimation) and rendering techniques (e."
 "g. hardware-accelerated volume rendering, LOD control).\n"
 "\n"
-"This package provides a Qt Designer plugin for the QVTKWidget."
+"This package provides the Qt libraries for VTK."
 msgstr ""
 
 #. leap/vtkdata/summary
@@ -3917,22 +3946,11 @@ msgid ""
 "This package provides the headers and cmake modules for VecCore."
 msgstr ""
 
-#. tumbleweed/vnote/libVSyntaxHighlighting1/summary
-#. tumbleweed/vnote/libVTextEdit1/summary
-msgid "Library files for vnote"
-msgstr ""
-
-#. tumbleweed/vnote/libVSyntaxHighlighting1/description
-#. tumbleweed/vnote/libVTextEdit1/description
-#, fuzzy
-msgid "This package provides library files for vnote."
-msgstr "包中含有意外的版本"
-
-#. tumbleweed/vulkan-validationlayers/libVkLayer_utils-1_2_198_0/summary
+#. tumbleweed/vulkan-validationlayers/libVkLayer_utils-1_3_204_0/summary
 msgid "Vulkan validation layer utility library"
 msgstr ""
 
-#. tumbleweed/vulkan-validationlayers/libVkLayer_utils-1_2_198_0/description
+#. tumbleweed/vulkan-validationlayers/libVkLayer_utils-1_3_204_0/description
 msgid ""
 "Vulkan is a 3D graphics and compute API.\n"
 "\n"
@@ -4396,49 +4414,6 @@ msgid ""
 "copiousoutput;"
 msgstr ""
 
-#. tumbleweed/vim-plugins/vim-plugin-bufexplorer/description
-msgid ""
-"With bufexplorer, you can quickly and easily switch between buffers by using "
-"the one of the default public interfaces: \\<Leader\\>be normal open "
-"\\<Leader\\>bt toggle open / close \\<Leader\\>bs force horizontal split "
-"open \\<Leader\\>bv force vertical split open\n"
-"\n"
-"Once the bufexplorer window is open you can use the normal movement keys "
-"(hjkl) to move around and then use or to select the buffer you would like to "
-"open. If you would like to have the selected buffer opened in a new tab, "
-"simply press either or 't'. Please note that when opening a buffer in a tab, "
-"that if the buffer is already in another tab, bufexplorer can switch to that "
-"tab automatically for you if you would like."
-msgstr ""
-
-#. tumbleweed/vim-plugins/vim-plugin-file-line/summary
-#, fuzzy
-msgid "File-line plugin for Vim"
-msgstr "TagLib 的额外插件"
-
-#. tumbleweed/vim-plugins/vim-plugin-file-line/description
-msgid "Plugin for vim to enable opening a file in a given line."
-msgstr ""
-
-#. tumbleweed/vim-plugins/vim-plugin-markdown/summary
-msgid "Markdown support for vim"
-msgstr ""
-
-#. tumbleweed/vim-plugins/vim-plugin-markdown/description
-msgid ""
-"Syntax highlighting, matching rules and mappings for the original Markdown "
-"and extensions."
-msgstr ""
-
-#. tumbleweed/vim-plugins/vim-plugin-salt/summary
-#, fuzzy
-msgid "Salt plugin for Vim"
-msgstr "TagLib 的额外插件"
-
-#. tumbleweed/vim-plugins/vim-plugin-salt/description
-msgid "This Vim plugin provides support for editing Saltstack .sls files."
-msgstr ""
-
 #. tumbleweed/vips/vips-modules-8.12/summary
 msgid "Additional modules for libvips"
 msgstr ""
@@ -4596,27 +4571,6 @@ msgid ""
 "This package contains the tutorial documentation and sample data."
 msgstr ""
 
-#. tumbleweed/vtk-openmpi2/vtk-openmpi2-qt/summary
-#. tumbleweed/vtk-openmpi3/vtk-openmpi3-qt/summary
-#. tumbleweed/vtk-openmpi4/vtk-openmpi4-qt/summary
-#. tumbleweed/vtk/vtk-qt/summary
-#, fuzzy
-msgid "Qt libraries for VTK"
-msgstr "正在创建资源数据库"
-
-#. tumbleweed/vtk-openmpi2/vtk-openmpi2-qt/description
-#. tumbleweed/vtk-openmpi3/vtk-openmpi3-qt/description
-#. tumbleweed/vtk-openmpi4/vtk-openmpi4-qt/description
-#. tumbleweed/vtk/vtk-qt/description
-msgid ""
-"VTK is a software system for image processing, 3D graphics, volume rendering "
-"and visualization. VTK includes many advanced algorithms (e.g. surface "
-"reconstruction, implicit modelling, decimation) and rendering techniques (e."
-"g. hardware-accelerated volume rendering, LOD control).\n"
-"\n"
-"This package provides the Qt libraries for VTK."
-msgstr ""
-
 #. tumbleweed/vulkan-validationlayers/description
 msgid ""
 "Vulkan is a 3D graphics and compute API.\n"
@@ -4634,6 +4588,14 @@ msgid ""
 "\n"
 "This package contains support files for the VkLayer utility library."
 msgstr ""
+
+#, fuzzy
+#~ msgid "VTK API documentation"
+#~ msgstr "7.0 文档"
+
+#, fuzzy
+#~ msgid "Qt Designer plugin for QVTKWidget"
+#~ msgstr "TagLib 的额外插件"
 
 #, fuzzy
 #~ msgid "Glade catalog for the VTE terminal emulator library"

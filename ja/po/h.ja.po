@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2022-02-24 09:12+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
-"h-master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/h-"
+"master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -770,12 +770,46 @@ msgstr "CPUベースのパスワード復活ユーティリティ"
 
 #. leap/hashcat/description
 msgid ""
-"Hashcat is an advanced CPU-based password recovery utility, supporting seven "
-"unique modes of testing for over 100 optimized hashing algorithms."
+"Hashcat is a password recovery utility, supporting seven unique modes of "
+"testing for over 100 optimized hashing algorithms.\n"
+"\n"
+"GPU Driver requirements:\n"
+"\n"
+" * AMD GPUs on Linux require \"RadeonOpenCompute (ROCm)\" Software    "
+"Platform (3.1 or later)  * AMD GPUs on Windows require \"AMD Radeon "
+"Adrenalin 2020    Edition\" (20.2.2 or later)  * Intel and AMD CPUs require "
+"\"OpenCL Runtime for Intel Core and    Intel Xeon Processors\" (16.1.1 or "
+"later)  * NVIDIA GPUs require \"NVIDIA Driver\" (440.64 or later) and    "
+"\"CUDA Toolkit\" (9.0 or later)"
 msgstr ""
-"Hashcatは、高度なCPUベースのパスワード・リカバリー・ユーティリティーであり、"
-"100以上の最適化されたハッシュ・アルゴリズムに対して7つの独自のテスト・モード"
-"をサポートしています。"
+"Hashcatはパスワード・リカバリー・ユーティリティーであり、100以上の最適化され"
+"たハッシュ・アルゴリズムに対して7つの独自のテスト・モードをサポートしていま"
+"す。\n"
+"\n"
+"GPUドライバの要件:\n"
+"\n"
+" *Linux上のAMD GPUには「RadeonOpenCompute(ROCm)」ソフトウェアプラットフォーム"
+"(3.1以降)が必要*Windows上のAMD GPUには「AMD Radeon Adrenin 2020 Edition」"
+"(20.2.2以降)が必要*IntelおよびAMD CPUには「OpenCL Runtime for Intel Core and "
+"Intel Xeon Processors」(16.1.1以降)が必要*NVIDIA GPUには「NVIDIA Driver」"
+"(440.64以降)および「CUDA Toolkit」(9.0以降)が必要"
+
+#. leap/hashcat/hashcat-devel/summary
+msgid "Header files for making hashcat plugins"
+msgstr "hashcatプラグインを作成するためのヘッダファイル"
+
+#. leap/hashcat/hashcat-devel/description
+msgid ""
+"Hashcat is a password recovery utility, supporting seven unique modes of "
+"testing for over 100 optimized hashing algorithms.\n"
+"\n"
+"This subpackage contains the header files."
+msgstr ""
+"Hashcatはパスワード・リカバリー・ユーティリティーであり、100以上の最適化され"
+"たハッシュ・アルゴリズムに対して7つの独自のテスト・モードをサポートしていま"
+"す。\n"
+"\n"
+"このサブパッケージには、ファイルが含まれています。"
 
 #. leap/hashdeep/summary
 msgid "Compute MD5, SHA-1, SHA-256, Tiger or Whirlpool message digests"
@@ -3740,6 +3774,39 @@ msgstr ""
 "ノテーション付きHTML 4.01、インラインCSSスタイリング付きXHTML 1.0、LaTeX、"
 "miRCチャットコードです。"
 
+#. leap/hsetroot/summary
+msgid "Advanced wallpaper tool for X"
+msgstr "X用の高度な壁紙ツール"
+
+#. leap/hsetroot/description
+msgid ""
+"hsetroot is a tool which allows you to compose wallpapers (\"root pixmaps\") "
+"for X. It has a lot of options like rendering gradients, solids, images but "
+"it also allows you to perform manipulations on those things, or chain them "
+"together. You could use one standard background image for isntance, and "
+"using tint to make it fit your current theme. And yes, of course it is "
+"compatible with semi-translucent applications like aterm and xchat :)\n"
+"\n"
+"At this time, hsetroot can render: gradients (multi-color with variable "
+"distance), solids (rectangles) and images (centered, tiled, fullscreen, or "
+"maximum aspect). It supports the following manipulations: tinting "
+"(overlaying a color mask), blurring, sharpening, flipping (horizontally, "
+"diagonally, vertically) it also allows you to adjust brightness, contrast "
+"and gamma-level. hsetroot also supports alpha-channels when rendering things."
+msgstr ""
+"hsetrootは、X用の壁紙(「root pixmap」)を作ることができるツールです。グラデー"
+"ション、ソリッド、画像のレンダリングのような多くのオプションがありますが、そ"
+"れらを操作したり、連結したりすることもできます。標準の背景イメージを1つ使用"
+"し、濃淡を使用して現在のテーマに合わせます。もちろん aterm や xchat のような"
+"半透明なアプリケーションとも互換性があります。\n"
+"\n"
+"現時点で、hsetroot は、グラデーション(距離が可変のマルチカラー)、ソリッド(長"
+"方形)、イメージ(中央揃え、タイル表示、フルスクリーン、最大アスペクト)をレンダ"
+"リングできます。色付け(カラーマスクを重ねる)、ぼかし、シャープネス、反転(水"
+"平、斜め、垂直)の操作をサポートしており、明るさ、コントラスト、ガンマレベルを"
+"調整することもできます。hsetrootは、レンダリング時のアルファチャンネルもサ"
+"ポートしています。"
+
 #. leap/hspec-discover/summary
 msgid "Automatically discover and run Hspec tests"
 msgstr "Hspecテストを自動的に検出して実行"
@@ -3932,65 +3999,16 @@ msgstr ""
 "も含まれています。"
 
 #. leap/html-xml-utils/summary
-msgid "A number of simple utilities for manipulating HTML and XML files"
-msgstr "HTMLおよびXMLファイルを操作するための多数の簡単なユーティリティー"
+msgid "A number of utilities for manipulating HTML and XML files"
+msgstr "HTMLおよびXMLファイルを操作するための多数のユーティリティー"
 
 #. leap/html-xml-utils/description
 msgid ""
-"HTML-XML-utils provides a number of simple utilities for manipulating and "
-"converting HTML and XML files in various ways. The suite consists of the "
-"following tools:\n"
-"\n"
-"asc2xml      -  convert from UTF-8 to &\\#nnn; entities xml2asc      -  "
-"convert from &\\#nnn; entities to UTF-8 hxaddid      -  add IDs to selected "
-"elements hxcite       -  replace bibliographic references by hyperlinks "
-"hxcite-mkbib -  expand references and create bibliography hxclean      -  "
-"apply heuristics to correct an HTML file hxcopy       -  copy an HTML file "
-"while preserving relative links hxcount      -  count elements and "
-"attributes in HTML or XML files hxextract    -  extract selected elements "
-"hxincl       -  expand included HTML or XML files hxindex      -  create an "
-"alphabetically sorted index hxmkbib      -  create bibliography from a "
-"template hxmultitoc   -  create a table of contents for a set of HTML files "
-"hxname2id    -  move some ID= or NAME= from A elements to their parents "
-"hxnormalize  -  pretty-print an HTML file hxnsxml      -  convert output of "
-"hxxmlns back to normal XML hxnum        -  number section headings in an "
-"HTML file hxpipe       -  convert XML to a format easier to parse with Perl "
-"or AWK hxprintlinks -  number links & add table of URLs at end of an HTML "
-"file hxprune      -  remove marked elements from an HTML file hxref        "
-"-  generate cross-references hxselect     -  extract elements that match a "
-"(CSS) selector hxtoc        -  insert a table of contents in an HTML file "
-"hxuncdata    -  replace CDATA sections by character entities hxunent      -  "
-"replace HTML predefined character entities to UTF-8 hxunpipe     -  convert "
-"output of pipe back to XML format hxunxmlns    -  replace \"global names\" "
-"by XML Namespace prefixes hxwls        -  list links in an HTML file "
-"hxxmlns      -  replace XML Namespace prefixes by \"global names\""
+"HTML-XML-utils provides a number of utilities for manipulating and "
+"converting HTML and XML files in various ways."
 msgstr ""
-"HTML-XML-utilsには、HTMLファイルとXMLファイルをさまざまな方法で操作したり変換"
-"したりするための簡単なユーティリティーが多数用意されています。スイートは、次"
-"のツールで構成されています。\n"
-"\n"
-"asc2xml - UTF-8から&\\#nnn エンティティに変換します。 xml2asc - &\\#nnn エン"
-"ティティからUTF-8に変換します。 hxaddid - 選択された要素にIDを追加します。"
-"hxcite - ハイパーリンクで書誌参照を置き換えます。hxcite-mkbib - 参照を拡張"
-"し、書誌を作成します。 hxclean - ヒューリスティックスを適用してHTMLファイルを"
-"訂正します。hxcopy - 相対リンクを保持しながら HTML ファイルをコピーします。"
-"hxcount - HTMLまたはXMLファイル内の要素と属性を数えます。 hxextract - 選択さ"
-"れた要素を抽出します。 hxincl  - インクルードされたHTML 又は XML ファイルを展"
-"開します。 hxindex  - アルファベット順に並んだインデックスを生成します。  "
-"hxmkbib - テンプレートから書誌を作成します。 hxmultitoc  - HTML ファイル群の"
-"目次を生成します。 hxname2id - A要素からその親にID=またはNAME=を移動します。A"
-"要素のセットの目次を作成します。 hxnormalize  - HTMLファイルを清書印刷しま"
-"す。 hxnsxml - hxxmlns の出力を通常の XML に変換します。 hxnum - HTML ファイ"
-"ル中のセクション見出しを数えます。 hxpipe - XML を Perl または AWK で解析しや"
-"すい形式に変換します。 hxprintlinks  - 番号リンクと URL テーブルを HTML ファ"
-"イルの末尾に追加します。 hxprune - マークされた要素をHTMLファイルから削除しま"
-"す。 hxref  - クロスリファレンスを生成します。 hxselect - (CSS)セレクタに一致"
-"する要素を抽出します。 hxtoc - HTMLファイルに目次を挿入します。hxuncdata - "
-"CDATAセクションを文字エンティティで置き換えます。 hxunent - HTML定義済み文字"
-"エンティティをUTF-8 に置き換えます。 hxunpipe - パイプの出力をXML形式に変換し"
-"ます。 hxunxmlns - グローバル名をXML名前空間プレフィックスで置き換えます。 "
-"hxwls - HTML ファイルにリンクをリストします。 hxxmlns - XML 名前空間プリ"
-"フィックスをグローバル名に置き換えます。"
+"HTML-XML-utilsには、HTMLファイルとXMLファイルをさまざまな方法で操作および変換"
+"するためのユーティリティーが多数用意されています。"
 
 #. leap/html2ps/summary
 msgid "HTML to PostScript Converter"
@@ -5286,6 +5304,19 @@ msgstr ""
 "Harminvは高調波反転の問題を解決するためのライブラリです。与えられた帯域幅内の"
 "有限数の正弦波(おそらく指数関数的に減衰する)の和からなる離散時間有限長信号が"
 "与えられると、それはそれらの正弦波の周波数、減衰定数、振幅、位相を決定しま"
+"す。"
+
+#. leap/hashcat/libhashcat6_2_1/summary
+msgid "Implementation of the hashcat engine"
+msgstr "hashcat エンジン用の実装"
+
+#. leap/hashcat/libhashcat6_2_1/description
+msgid ""
+"Hashcat is a password recovery utility, supporting seven unique modes of "
+"testing for over 100 optimized hashing algorithms."
+msgstr ""
+"Hashcatはパスワード・リカバリー・ユーティリティーであり、100以上の最適化され"
+"たハッシュ・アルゴリズムに対して7つの独自のテスト・モードをサポートしていま"
 "す。"
 
 #. leap/haveged/libhavege2/summary
@@ -6882,49 +6913,6 @@ msgstr "hamster-time-tracker 向け翻訳パッケージ"
 msgid "Provides translations for the \"hamster-time-tracker\" package."
 msgstr "hamster-time-tracker パッケージ向けの翻訳データです。"
 
-#. tumbleweed/hashcat/description
-msgid ""
-"Hashcat is a password recovery utility, supporting seven unique modes of "
-"testing for over 100 optimized hashing algorithms.\n"
-"\n"
-"GPU Driver requirements:\n"
-"\n"
-" * AMD GPUs on Linux require \"RadeonOpenCompute (ROCm)\" Software    "
-"Platform (3.1 or later)  * AMD GPUs on Windows require \"AMD Radeon "
-"Adrenalin 2020    Edition\" (20.2.2 or later)  * Intel and AMD CPUs require "
-"\"OpenCL Runtime for Intel Core and    Intel Xeon Processors\" (16.1.1 or "
-"later)  * NVIDIA GPUs require \"NVIDIA Driver\" (440.64 or later) and    "
-"\"CUDA Toolkit\" (9.0 or later)"
-msgstr ""
-"Hashcatはパスワード・リカバリー・ユーティリティーであり、100以上の最適化され"
-"たハッシュ・アルゴリズムに対して7つの独自のテスト・モードをサポートしていま"
-"す。\n"
-"\n"
-"GPUドライバの要件:\n"
-"\n"
-" *Linux上のAMD GPUには「RadeonOpenCompute(ROCm)」ソフトウェアプラットフォーム"
-"(3.1以降)が必要*Windows上のAMD GPUには「AMD Radeon Adrenin 2020 Edition」"
-"(20.2.2以降)が必要*IntelおよびAMD CPUには「OpenCL Runtime for Intel Core and "
-"Intel Xeon Processors」(16.1.1以降)が必要*NVIDIA GPUには「NVIDIA Driver」"
-"(440.64以降)および「CUDA Toolkit」(9.0以降)が必要"
-
-#. tumbleweed/hashcat/hashcat-devel/summary
-msgid "Header files for making hashcat plugins"
-msgstr "hashcatプラグインを作成するためのヘッダファイル"
-
-#. tumbleweed/hashcat/hashcat-devel/description
-msgid ""
-"Hashcat is a password recovery utility, supporting seven unique modes of "
-"testing for over 100 optimized hashing algorithms.\n"
-"\n"
-"This subpackage contains the header files."
-msgstr ""
-"Hashcatはパスワード・リカバリー・ユーティリティーであり、100以上の最適化され"
-"たハッシュ・アルゴリズムに対して7つの独自のテスト・モードをサポートしていま"
-"す。\n"
-"\n"
-"このサブパッケージには、ファイルが含まれています。"
-
 #. tumbleweed/hawtbuf/summary
 msgid "A rich byte buffer library"
 msgstr "リッチ・バイト・バッファ・ライブラリ"
@@ -6980,37 +6968,365 @@ msgstr ""
 msgid "Developer documentation of HBCI4Java."
 msgstr "HBCI4Java 用の開発者用ドキュメント。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc/summary
-msgid "Dependency package for hdf5_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5-gnu-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-hpc"
+msgid "Dependency package for hdf5_1_10_8-gnu-hpc"
+msgstr "hdf5_1_10_7-gnu-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5-gnu-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-hpc provides the dependency to get binary package "
+#| "hdf5_1_10_7-gnu-hpc. When this package gets updated it installs the "
+#| "latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-hpc provides the dependency to get binary package hdf5_1_10_8-gnu-"
+"hpc. When this package gets updated it installs the latest version of "
+"hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"hpcは、バイナリパッケージhdf5_1_10_7-gnu-hpcを取得するための依存関係を提供し"
+"ます。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-hpcがイン"
+"ストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5-gnu-hpc-devel/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-hpc-devel"
+msgid "Dependency package for hdf5_1_10_8-gnu-hpc-devel"
+msgstr "hdf5_1_10_7-gnu-hpc-devel 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5-gnu-hpc-devel/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-hpc-devel provides the dependency to get binary package "
+#| "hdf5_1_10_7-gnu-hpc-devel. When this package gets updated it installs the "
+#| "latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-hpc-devel provides the dependency to get binary package hdf5_1_10_8-"
+"gnu-hpc-devel. When this package gets updated it installs the latest version "
+"of hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"hpc-develは、バイナリパッケージhdf5_1_10_7-gnu-hpc-develを取得するための依存"
+"性を提供します。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-"
+"gnu-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/hdf5-gnu-mpich-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-mpich-hpc"
+msgid "Dependency package for hdf5_1_10_8-gnu-mpich-hpc"
+msgstr "hdf5_1_10_7-gnu-mpich-hpc 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/hdf5-gnu-mpich-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-mpich-hpc provides the dependency to get binary package "
+#| "hdf5_1_10_7-gnu-mpich-hpc. When this package gets updated it installs the "
+#| "latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-mpich-hpc provides the dependency to get binary package hdf5_1_10_8-"
+"gnu-mpich-hpc. When this package gets updated it installs the latest version "
+"of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"mpich-hpcは、バイナリパッケージhdf5_1_10_7-gnu-mpich-hpcを取得するための依存"
+"関係を提供します。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-"
+"gnu-mpich-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/hdf5-gnu-mpich-hpc-devel/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-mpich-hpc-devel"
+msgid "Dependency package for hdf5_1_10_8-gnu-mpich-hpc-devel"
+msgstr "hdf5_1_10_7-gnu-mpich-hpc-devel 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/hdf5-gnu-mpich-hpc-devel/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-mpich-hpc-devel provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-mpich-hpc-devel. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-mpich-hpc-devel provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-mpich-hpc-devel. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"mpich-hpc-develは、バイナリパッケージhdf5_1_10_7-gnu-mpich-hpc-develを取得す"
+"るための依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-mpich-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/hdf5-gnu-mvapich2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-mvapich2-hpc"
+msgid "Dependency package for hdf5_1_10_8-gnu-mvapich2-hpc"
+msgstr "hdf5_1_10_7-gnu-mvapich2-hpc 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/hdf5-gnu-mvapich2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-mvapich2-hpc provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-mvapich2-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-mvapich2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-mvapich2-hpc provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-mvapich2-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"mvapich2-hpcは、バイナリパッケージhdf5_1_10_7-gnu-mvapich2-hpcを取得するため"
+"の依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-mvapich2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/hdf5-gnu-mvapich2-hpc-devel/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-mvapich2-hpc-devel"
+msgid "Dependency package for hdf5_1_10_8-gnu-mvapich2-hpc-devel"
+msgstr "hdf5_1_10_7-gnu-mvapich2-hpc-devel 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/hdf5-gnu-mvapich2-hpc-devel/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-mvapich2-hpc-devel provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-mvapich2-hpc-devel. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-mvapich2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-mvapich2-hpc-devel provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-mvapich2-hpc-devel. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"mvapich2-hpc-develは、バイナリパッケージhdf5_1_10_7-gnu-mvapich2-hpc-develを"
+"取得するための依存関係を提供します。このパッケージが更新されると、最新バー"
+"ジョンのhdf5_1_10_7-gnu-mvapich2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi1-hpc"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi1-hpc"
 msgstr "hdf5_1_10_7-gnu-openmpi1-hpc 用の依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi1-hpc provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi1-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "hdf5-gnu-openmpi1-hpc provides the dependency to get binary package "
-"hdf5_1_10_7-gnu-openmpi1-hpc. When this package gets updated it installs the "
-"latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"hdf5_1_10_8-gnu-openmpi1-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージHDF5-gnu-"
 "openmpi1-hpcは、バイナリパッケージHDF5_1_10_7-gnu-openmpi1-hpcを取得するため"
 "の依存関係を提供します。このパッケージが更新されると、最新バージョンの"
 "hdf5_1_10_7-gnu-openmpi1-hpcがインストールされます。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc-devel/summary
-msgid "Dependency package for hdf5_1_10_7-gnu-openmpi1-hpc-devel"
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc-devel/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi1-hpc-devel"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi1-hpc-devel"
 msgstr "hdf5_1_10_7-gnu-openmpi1-hpc-devel 用の依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc-devel/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5-gnu-openmpi1-hpc-devel/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi1-hpc-devel provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi1-hpc-devel. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "hdf5-gnu-openmpi1-hpc-devel provides the dependency to get binary package "
-"hdf5_1_10_7-gnu-openmpi1-hpc-devel. When this package gets updated it "
-"installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"hdf5_1_10_8-gnu-openmpi1-hpc-devel. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージHDF5-gnu-"
 "openmpi1-hpc-develは、バイナリパッケージHDF5_1_10_7-gnu-openmpi1-hpc-develを"
 "取得するための依存関係を提供します。このパッケージが更新されると、最新バー"
 "ジョンのhdf5_1_10_7-gnu-openmpi1-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/hdf5-gnu-openmpi2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi2-hpc"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi2-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi2-hpc 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/hdf5-gnu-openmpi2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi2-hpc provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi2-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-openmpi2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-openmpi2-hpc provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-openmpi2-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"openmpi2-hpcは、バイナリパッケージhdf5_1_10_7-gnu-openmpi2-hpcを取得するため"
+"の依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-openmpi2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/hdf5-gnu-openmpi2-hpc-devel/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi2-hpc-devel"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi2-hpc-devel"
+msgstr "hdf5_1_10_7-gnu-openmpi2-hpc-devel 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/hdf5-gnu-openmpi2-hpc-devel/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi2-hpc-devel provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi2-hpc-devel. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-openmpi2-hpc-devel provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-openmpi2-hpc-devel. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"openmpi2-hpc-develは、バイナリパッケージhdf5_1_10_7-gnu-openmpi2-hpc-develを"
+"取得するための依存関係を提供します。このパッケージが更新されると、最新バー"
+"ジョンのhdf5_1_10_7-gnu-openmpi2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/hdf5-gnu-openmpi3-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi3-hpc"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi3-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi3-hpc 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/hdf5-gnu-openmpi3-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi3-hpc provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi3-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-openmpi3-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-openmpi3-hpc provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-openmpi3-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"openmpi3-hpcは、バイナリパッケージhdf5_1_10_7-gnu-openmpi3-hpcを取得するため"
+"の依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-openmpi3-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/hdf5-gnu-openmpi3-hpc-devel/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi3-hpc-devel"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi3-hpc-devel"
+msgstr "hdf5_1_10_7-gnu-openmpi3-hpc-devel 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/hdf5-gnu-openmpi3-hpc-devel/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi3-hpc-devel provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi3-hpc-devel. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi3-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-openmpi3-hpc-devel provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-openmpi3-hpc-devel. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"openmpi3-hpc-develは、バイナリパッケージhdf5_1_10_7-gnu-openmpi3-hpc-develを"
+"取得するための依存関係を提供します。このパッケージが更新されると、最新バー"
+"ジョンのhdf5_1_10_7-gnu-openmpi3-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/hdf5-gnu-openmpi4-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi4-hpc"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi4-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi4-hpc 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/hdf5-gnu-openmpi4-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi4-hpc provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi4-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-openmpi4-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-openmpi4-hpc provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-openmpi4-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用のコマンドラインプログラムパッケージhdf5-"
+"gnu-openmpi4-hpcは、バイナリパッケージhdf5_1_10_7-gnu-openmpi4-hpcを取得する"
+"ための依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-openmpi4-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/hdf5-gnu-openmpi4-hpc-devel/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-gnu-openmpi4-hpc-devel"
+msgid "Dependency package for hdf5_1_10_8-gnu-openmpi4-hpc-devel"
+msgstr "hdf5_1_10_7-gnu-openmpi4-hpc-devel 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/hdf5-gnu-openmpi4-hpc-devel/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-gnu-openmpi4-hpc-devel provides the dependency to get binary "
+#| "package hdf5_1_10_7-gnu-openmpi4-hpc-devel. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi4-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-gnu-openmpi4-hpc-devel provides the dependency to get binary package "
+"hdf5_1_10_8-gnu-openmpi4-hpc-devel. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-gnu-"
+"openmpi4-hpc-develは、バイナリパッケージhdf5_1_10_7-gnu-openmpi4-hpc-develを"
+"取得するための依存関係を提供します。このパッケージが更新されると、最新バー"
+"ジョンのhdf5_1_10_7-gnu-openmpi4-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5-hpc-examples/summary
+#, fuzzy
+#| msgid "Dependency package for hdf5_1_10_7-hpc-examples"
+msgid "Dependency package for hdf5_1_10_8-hpc-examples"
+msgstr "hdf5_1_10_7-hpc-examples 用の依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5-hpc-examples/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package hdf5-hpc-examples provides the dependency to get binary package "
+#| "hdf5_1_10_7-hpc-examples. When this package gets updated it installs the "
+#| "latest version of hdf5_1_10_7-hpc-examples."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"hdf5-hpc-examples provides the dependency to get binary package hdf5_1_10_8-"
+"hpc-examples. When this package gets updated it installs the latest version "
+"of hdf5_1_10_8-hpc-examples."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージhdf5-hpc-"
+"examplesは、バイナリパッケージhdf5_1_10_7-hpc-examplesを取得するための依存関"
+"係を提供します。When this package gets updated it installs the latest "
+"version of hdf5_1_10_7-hpc-examples."
 
 #. tumbleweed/hdf5-openmpi1/description
 msgid ""
@@ -7062,7 +7378,61 @@ msgstr ""
 "\n"
 "このパッケージは、HDF5のopenmpi1バージョン用の静的ライブラリを提供します。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5_1_10_8-gnu-hpc-devel/summary
+#, fuzzy
+#| msgid "Development files for hdf5_1_10_7-gnu-hpc"
+msgid "Development files for hdf5_1_10_8-gnu-hpc"
+msgstr "hdf5_1_10_7-gnu-hpc 用の開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5_1_10_8-gnu-hpc-devel-static/summary
+#, fuzzy
+#| msgid "Static development files for hdf5_1_10_7-gnu-hpc"
+msgid "Static development files for hdf5_1_10_8-gnu-hpc"
+msgstr "hdf5_1_10_7-gnu-hpc 用の静的開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5_1_10_8-gnu-hpc-module/summary
+#, fuzzy
+#| msgid "Module files for hdf5_1_10_7-gnu-hpc"
+msgid "Module files for hdf5_1_10_8-gnu-hpc"
+msgstr "hdf5_1_10_7-gnu-hpc 用のモジュールファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/hdf5_1_10_8-gnu-mpich-hpc-devel/summary
+#, fuzzy
+#| msgid "Development files for hdf5_1_10_7-gnu-mpich-hpc"
+msgid "Development files for hdf5_1_10_8-gnu-mpich-hpc"
+msgstr "hdf5_1_10_7-gnu-mpich-hpc 用の開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/hdf5_1_10_8-gnu-mpich-hpc-devel-static/summary
+#, fuzzy
+#| msgid "Static development files for hdf5_1_10_7-gnu-mpich-hpc"
+msgid "Static development files for hdf5_1_10_8-gnu-mpich-hpc"
+msgstr "hdf5_1_10_7-gnu-mpich-hpc 用の静的開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/hdf5_1_10_8-gnu-mpich-hpc-module/summary
+#, fuzzy
+#| msgid "Module files for hdf5_1_10_7-gnu-mpich-hpc"
+msgid "Module files for hdf5_1_10_8-gnu-mpich-hpc"
+msgstr "hdf5_1_10_7-gnu-mpich-hpc 用のモジュールファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/hdf5_1_10_8-gnu-mvapich2-hpc-devel/summary
+#, fuzzy
+#| msgid "Development files for hdf5_1_10_7-gnu-mvapich2-hpc"
+msgid "Development files for hdf5_1_10_8-gnu-mvapich2-hpc"
+msgstr "hdf5_1_10_7-gnu-mvapich2-hpc 用の開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/hdf5_1_10_8-gnu-mvapich2-hpc-devel-static/summary
+#, fuzzy
+#| msgid "Static development files for hdf5_1_10_7-gnu-mvapich2-hpc"
+msgid "Static development files for hdf5_1_10_8-gnu-mvapich2-hpc"
+msgstr "hdf5_1_10_7-gnu-mvapich2-hpc 用の静的開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/hdf5_1_10_8-gnu-mvapich2-hpc-module/summary
+#, fuzzy
+#| msgid "Module files for hdf5_1_10_7-gnu-mvapich2-hpc"
+msgid "Module files for hdf5_1_10_8-gnu-mvapich2-hpc"
+msgstr "hdf5_1_10_7-gnu-mvapich2-hpc 用のモジュールファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/description
 msgid ""
 "HDF5 is a data model, library, and file format for storing and managing "
 "data. It supports an unlimited variety of datatypes.\n"
@@ -7076,11 +7446,13 @@ msgstr ""
 "このパッケージには、HDF5ファイルを操作するためのgnu-openmpi-hpcバージョンの"
 "ユーティリティー関数が含まれています。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5_1_10_7-gnu-openmpi1-hpc-devel/summary
-msgid "Development files for hdf5_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5_1_10_8-gnu-openmpi1-hpc-devel/summary
+#, fuzzy
+#| msgid "Development files for hdf5_1_10_7-gnu-openmpi1-hpc"
+msgid "Development files for hdf5_1_10_8-gnu-openmpi1-hpc"
 msgstr "hdf5_1_10_7-gnu-openmpi1-hpc 用の開発用ファイル"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5_1_10_7-gnu-openmpi1-hpc-devel/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5_1_10_8-gnu-openmpi1-hpc-devel/description
 msgid ""
 "HDF5 is a data model, library, and file format for storing and managing "
 "data. It supports an unlimited variety of datatypes.\n"
@@ -7094,11 +7466,13 @@ msgstr ""
 "このパッケージには、HDF5のgnu-openmpi-hpcバージョンを使用するプロジェクトを作"
 "成するために必要なすべてのファイルが含まれています。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5_1_10_7-gnu-openmpi1-hpc-devel-static/summary
-msgid "Static development files for hdf5_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5_1_10_8-gnu-openmpi1-hpc-devel-static/summary
+#, fuzzy
+#| msgid "Static development files for hdf5_1_10_7-gnu-openmpi1-hpc"
+msgid "Static development files for hdf5_1_10_8-gnu-openmpi1-hpc"
 msgstr "hdf5_1_10_7-gnu-openmpi1-hpc 向けの静的開発用ファイル"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5_1_10_7-gnu-openmpi1-hpc-devel-static/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5_1_10_8-gnu-openmpi1-hpc-devel-static/description
 msgid ""
 "HDF5 is a data model, library, and file format for storing and managing "
 "data. It supports an unlimited variety of datatypes.\n"
@@ -7112,9 +7486,71 @@ msgstr ""
 "このパッケージは、HDF5のgnu-openmpi-hpcバージョン用の静的ライブラリを提供しま"
 "す。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/hdf5_1_10_7-gnu-openmpi1-hpc-module/summary
-msgid "Module files for hdf5_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/hdf5_1_10_8-gnu-openmpi1-hpc-module/summary
+#, fuzzy
+#| msgid "Module files for hdf5_1_10_7-gnu-openmpi1-hpc"
+msgid "Module files for hdf5_1_10_8-gnu-openmpi1-hpc"
 msgstr "hdf5_1_10_7-gnu-openmpi1-hpc 用の静的開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/hdf5_1_10_8-gnu-openmpi2-hpc-devel/summary
+#, fuzzy
+#| msgid "Development files for hdf5_1_10_7-gnu-openmpi2-hpc"
+msgid "Development files for hdf5_1_10_8-gnu-openmpi2-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi2-hpc 用の開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/hdf5_1_10_8-gnu-openmpi2-hpc-devel-static/summary
+#, fuzzy
+#| msgid "Static development files for hdf5_1_10_7-gnu-openmpi2-hpc"
+msgid "Static development files for hdf5_1_10_8-gnu-openmpi2-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi2-hpc 用の静的開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/hdf5_1_10_8-gnu-openmpi2-hpc-module/summary
+#, fuzzy
+#| msgid "Module files for hdf5_1_10_7-gnu-openmpi2-hpc"
+msgid "Module files for hdf5_1_10_8-gnu-openmpi2-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi2-hpc 用のモジュールファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/hdf5_1_10_8-gnu-openmpi3-hpc-devel/summary
+#, fuzzy
+#| msgid "Development files for hdf5_1_10_7-gnu-openmpi3-hpc"
+msgid "Development files for hdf5_1_10_8-gnu-openmpi3-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi3-hpc 用の開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/hdf5_1_10_8-gnu-openmpi3-hpc-devel-static/summary
+#, fuzzy
+#| msgid "Static development files for hdf5_1_10_7-gnu-openmpi3-hpc"
+msgid "Static development files for hdf5_1_10_8-gnu-openmpi3-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi3-hpc 用の静的開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/hdf5_1_10_8-gnu-openmpi3-hpc-module/summary
+#, fuzzy
+#| msgid "Module files for hdf5_1_10_7-gnu-openmpi3-hpc"
+msgid "Module files for hdf5_1_10_8-gnu-openmpi3-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi3-hpc 用のモジュールファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/hdf5_1_10_8-gnu-openmpi4-hpc-devel/summary
+#, fuzzy
+#| msgid "Development files for hdf5_1_10_7-gnu-openmpi4-hpc"
+msgid "Development files for hdf5_1_10_8-gnu-openmpi4-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi4-hpc 用の開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/hdf5_1_10_8-gnu-openmpi4-hpc-devel-static/summary
+#, fuzzy
+#| msgid "Static development files for hdf5_1_10_7-gnu-openmpi4-hpc"
+msgid "Static development files for hdf5_1_10_8-gnu-openmpi4-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi4-hpc 用の静的開発用ファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/hdf5_1_10_8-gnu-openmpi4-hpc-module/summary
+#, fuzzy
+#| msgid "Module files for hdf5_1_10_7-gnu-openmpi4-hpc"
+msgid "Module files for hdf5_1_10_8-gnu-openmpi4-hpc"
+msgstr "hdf5_1_10_7-gnu-openmpi4-hpc 用のモジュールファイル"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/hdf5_1_10_8-hpc-examples/summary
+#, fuzzy
+#| msgid "Examples for hdf5_1_10_7-gnu-hpc"
+msgid "Examples for hdf5_1_10_8-gnu-hpc"
+msgstr "hdf5_1_10_7-gnu-hpc の例"
 
 #. tumbleweed/hdjmod/hdjmod-kmp-default/summary
 #. tumbleweed/hdjmod/hdjmod-kmp-pae/summary
@@ -7233,7 +7669,9 @@ msgstr "pipewire向けGTKパッチベイ"
 #. tumbleweed/helvum/description
 msgid ""
 "Helvum is a GTK-based patchbay for pipewire, inspired by the JACK tool catia."
-msgstr "Helvumは、JACKツールcatiaからインスパイアされたGTKベースのpipewire用パッチベイです。"
+msgstr ""
+"Helvumは、JACKツールcatiaからインスパイアされたGTKベースのpipewire用パッチベ"
+"イです。"
 
 #. tumbleweed/hexchat/summary
 msgid "A graphical IRC (chat) client"
@@ -7301,34 +7739,6 @@ msgstr "HPPCテンプレートエンジン"
 msgid "Template Processor and Code Generation for HPPC."
 msgstr "HPPCのテンプレートエンジンおよびコード生成。"
 
-#. tumbleweed/hsetroot/summary
-msgid "Advanced wallpaper tool for X"
-msgstr "X用の高度な壁紙ツール"
-
-#. tumbleweed/hsetroot/description
-msgid ""
-"hsetroot is a tool which allows you to compose wallpapers (\"root pixmaps\") "
-"for X. It has a lot of options like rendering gradients, solids, images but "
-"it also allows you to perform manipulations on those things, or chain them "
-"together. You could use one standard background image for isntance, and "
-"using tint to make it fit your current theme. And yes, of course it is "
-"compatible with semi-translucent applications like aterm and xchat :)\n"
-"\n"
-"At this time, hsetroot can render: gradients (multi-color with variable "
-"distance), solids (rectangles) and images (centered, tiled, fullscreen, or "
-"maximum aspect). It supports the following manipulations: tinting "
-"(overlaying a color mask), blurring, sharpening, flipping (horizontally, "
-"diagonally, vertically) it also allows you to adjust brightness, contrast "
-"and gamma-level. hsetroot also supports alpha-channels when rendering things."
-msgstr ""
-"hsetrootは、X用の壁紙(「root pixmap」)を作ることができるツールです。グラデーション、ソリッド、画像のレンダリングのような多くのオプシ"
-"ョンがありますが、それらを操作したり、連結したりすることもできます。標準の背景イメージを1つ使用し、濃淡を使用して現在のテーマに合わせます。もちろん "
-"aterm や xchat のような半透明なアプリケーションとも互換性があります。\n"
-"\n"
-"現時点で、hsetroot は、グラデーション(距離が可変のマルチカラー)、ソリッド(長方形)、イメージ(中央揃え、タイル表示、フルスクリーン、最大アスペ"
-"クト)をレンダリングできます。色付け(カラーマスクを重ねる)、ぼかし、シャープネス、反転(水平、斜め、垂直)の操作をサポートしており、明るさ、コントラスト"
-"、ガンマレベルを調整することもできます。hsetrootは、レンダリング時のアルファチャンネルもサポートしています。"
-
 #. tumbleweed/htcondor/summary
 msgid "HTCondor is a Distributed High Throughput Computing system"
 msgstr "HTCondor は分散ハイスループットコンピューティングシステムです。"
@@ -7342,12 +7752,15 @@ msgid ""
 "managed by HTCondor."
 msgstr ""
 "HTCondorは、University of Wisconsin-MadisonのCenter for High Throughput "
-"Computingで開発されたDistributed High Throughput Computingシステムです。これを使えば、大規模なコンピューティ"
-"ングワークロードをジョブに分割してHTCondorスケジューラに送信し、HTCondorが管理するワーカノード上で実行することができます。"
+"Computingで開発されたDistributed High Throughput Computingシステムです。これ"
+"を使えば、大規模なコンピューティングワークロードをジョブに分割してHTCondorス"
+"ケジューラに送信し、HTCondorが管理するワーカノード上で実行することができま"
+"す。"
 
 #. tumbleweed/htcondor/htcondor-bosco/summary
 msgid "BOSCO, a HTCondor overlay system for managing jobs at remote clusters"
-msgstr "BOSCO リモートクラスタでジョブを管理するためのHTCondorオーバーレイシステム"
+msgstr ""
+"BOSCO リモートクラスタでジョブを管理するためのHTCondorオーバーレイシステム"
 
 #. tumbleweed/htcondor/htcondor-bosco/description
 msgid ""
@@ -7360,11 +7773,14 @@ msgid ""
 "HTCondor cluster.  This allows the user to run their workflows using "
 "HTCondor tools across multiple clusters."
 msgstr ""
-"BOSCO では、ローカルにインストールされたHTCondorが、中継メカニズムとしてSSHを使用して、リモートクラスタにジョブを送信することができます。"
-"これは、リモートクラスタがPBS、SGE、LSF、または別のHTCondorシステムなど、異なるバッチシステムを使用している場合に適しています。\n"
+"BOSCO では、ローカルにインストールされたHTCondorが、中継メカニズムとしてSSHを"
+"使用して、リモートクラスタにジョブを送信することができます。これは、リモート"
+"クラスタがPBS、SGE、LSF、または別のHTCondorシステムなど、異なるバッチシステム"
+"を使用している場合に適しています。\n"
 "\n"
-"BOSCO はオーバーレイシステムを提供しているので、リモートクラスタはHTCondorクラスタのように見えます。これにより、ユーザは複数のクラスタ間でH"
-"TCondorツールを使用してワークフローを実行できます。"
+"BOSCO はオーバーレイシステムを提供しているので、リモートクラスタはHTCondorク"
+"ラスタのように見えます。これにより、ユーザは複数のクラスタ間でHTCondorツール"
+"を使用してワークフローを実行できます。"
 
 #. tumbleweed/htcondor/htcondor-classads/summary
 msgid "HTCondor's classified advertisement language"
@@ -7390,16 +7806,21 @@ msgid ""
 "ad. Classad matching is used by the HTCondor central manager to determine "
 "the compatibility of jobs and workstations where they may be run."
 msgstr ""
-"案内広告(classads)はHTCondorの共通語です。ジョブ、ワークステーション、およびその他のリソースを記述するために使用されます。ジョブをスケジ"
-"ュールするために、HTCondorプロセスによって交換されます。統計およびデバッグの目的でファイルに記録されます。これらは、システムの現在の状態を調べるた"
-"めに使用されます。\n"
+"案内広告(classads)はHTCondorの共通語です。ジョブ、ワークステーション、および"
+"その他のリソースを記述するために使用されます。ジョブをスケジュールするため"
+"に、HTCondorプロセスによって交換されます。統計およびデバッグの目的でファイル"
+"に記録されます。これらは、システムの現在の状態を調べるために使用されます。\n"
 "\n"
-"classadは、アトリビュート名から式へのマッピングです。最も単純な場合、式は単純な定数(整数、浮動小数点、または文字列)です。したがって、classa"
-"dはプロパティリストの一形態です。また、属性式はより複雑になる場合があります。classadの属性表現を他の広告と比較して評価するプロトコルがあります。た"
-"とえば、ある広告の「other.size>3」という表現は、他の広告にsizeという名前の属性があり、その属性の値が3より大きい整数である(または評価され"
-"る)場合にtrueと評価されます。各広告に、他の広告のコンテキストでtrueと評価される属性要件がある場合は、2つのclassads が一致します。Cla"
-"ssadマッチングは、HTCondor中央マネージャによって、ジョブおよびそれらが実行される可能性のあるワークステーションの互換性を判断するために使用され"
-"ます。"
+"classadは、アトリビュート名から式へのマッピングです。最も単純な場合、式は単純"
+"な定数(整数、浮動小数点、または文字列)です。したがって、classadはプロパティリ"
+"ストの一形態です。また、属性式はより複雑になる場合があります。classadの属性表"
+"現を他の広告と比較して評価するプロトコルがあります。たとえば、ある広告の"
+"「other.size>3」という表現は、他の広告にsizeという名前の属性があり、その属性"
+"の値が3より大きい整数である(または評価される)場合にtrueと評価されます。各広告"
+"に、他の広告のコンテキストでtrueと評価される属性要件がある場合は、2つの"
+"classads が一致します。Classadマッチングは、HTCondor中央マネージャによって、"
+"ジョブおよびそれらが実行される可能性のあるワークステーションの互換性を判断す"
+"るために使用されます。"
 
 #. tumbleweed/htcondor/htcondor-classads-devel/summary
 msgid "Headers for HTCondor's classified advertisement language"
@@ -7409,7 +7830,9 @@ msgstr "HTCondorのクラシファイド広告言語のヘッダー"
 msgid ""
 "Header files for HTCondor's ClassAd Library, a powerful and flexible, semi-"
 "structured representation of data."
-msgstr "HTCondorのClassAdライブラリ用のヘッダファイル。強力で柔軟な、半構造化されたデータ表現です。"
+msgstr ""
+"HTCondorのClassAdライブラリ用のヘッダファイル。強力で柔軟な、半構造化された"
+"データ表現です。"
 
 #. tumbleweed/htcondor/htcondor-credmon-oauth/summary
 msgid "OAuth2 credmon for HTCondor."
@@ -7420,8 +7843,8 @@ msgid ""
 "The OAuth2 credmon allows users to obtain credentials from configured OAuth2 "
 "endpoints and to use those credentials securely inside running jobs."
 msgstr ""
-"OAuth2 "
-"credmonは、ユーザが設定されたOAuth2エンドポイントから資格情報を取得し、実行中のジョブ内でそれらの資格情報を安全に使用できるようにします。"
+"OAuth2 credmonは、ユーザが設定されたOAuth2エンドポイントから資格情報を取得"
+"し、実行中のジョブ内でそれらの資格情報を安全に使用できるようにします。"
 
 #. tumbleweed/htcondor/htcondor-credmon-vault/summary
 msgid "Vault credmon for HTCondor."
@@ -7432,8 +7855,8 @@ msgid ""
 "The Vault credmon allows users to obtain credentials from Vault using "
 "htgettoken and to use those credentials securely inside running jobs."
 msgstr ""
-"Vault "
-"credmonでは、ユーザはhtgettokenを使用してVaultから資格情報を取得し、実行中のジョブ内でそれらの資格情報を安全に使用できます。"
+"Vault credmonでは、ユーザはhtgettokenを使用してVaultから資格情報を取得し、実"
+"行中のジョブ内でそれらの資格情報を安全に使用できます。"
 
 #. tumbleweed/htcondor/htcondor-devel/summary
 #. tumbleweed/htcondor/htcondor-devel/description
@@ -7446,7 +7869,8 @@ msgstr "htcondorのマニュアルページと例"
 
 #. tumbleweed/htcondor/htcondor-doc/description
 msgid "This package contains the man pages and addional exmples for htcondor"
-msgstr "このパッケージには、htcondor のマニュアルページとその他の例が含まれています。"
+msgstr ""
+"このパッケージには、htcondor のマニュアルページとその他の例が含まれています。"
 
 #. tumbleweed/htcondor/htcondor-kbdd/summary
 msgid "HTCondor Keyboard Daemon"
@@ -7458,8 +7882,9 @@ msgid ""
 "on systems where no device (e.g. /dev/*) can be used to determine console "
 "idle time."
 msgstr ""
-"condor_kbddモニタはログインしたXユーザのアクティビティをモニタします。コンソールのアイドル時間を判断するために使用できるデバイス(例:/"
-"dev/*)がないシステムでのみ有効です。"
+"condor_kbddモニタはログインしたXユーザのアクティビティをモニタします。コン"
+"ソールのアイドル時間を判断するために使用できるデバイス(例:/dev/*)がないシステ"
+"ムでのみ有効です。"
 
 #. tumbleweed/htcondor/htcondor-procd/summary
 msgid "HTCondor Process tracking Daemon"
@@ -7469,7 +7894,9 @@ msgstr "HTCondorプロセストラッキングデーモン"
 msgid ""
 "A daemon for tracking child processes started by a parent. Part of HTCondor, "
 "but able to be stand-alone"
-msgstr "親によって開始された子プロセスを追跡する daemon。HTCondorの一部であるが、単独で存在できます。"
+msgstr ""
+"親によって開始された子プロセスを追跡する daemon。HTCondorの一部であるが、単独"
+"で存在できます。"
 
 #. tumbleweed/htcondor/htcondor-vm-gahp/summary
 msgid "HTCondor's VM Gahp"
@@ -7483,18 +7910,6 @@ msgid ""
 msgstr ""
 "condor_vm-gahpは、HTCondorの仮想マシンユニバース機能を有効にします。VM "
 "Universeはlibvirtを使用して、HTCondorのStartdの下でVMを起動および制御します。"
-
-#. tumbleweed/html-xml-utils/summary
-msgid "A number of utilities for manipulating HTML and XML files"
-msgstr "HTMLおよびXMLファイルを操作するための多数のユーティリティー"
-
-#. tumbleweed/html-xml-utils/description
-msgid ""
-"HTML-XML-utils provides a number of utilities for manipulating and "
-"converting HTML and XML files in various ways."
-msgstr ""
-"HTML-XML-utilsには、HTMLファイルとXMLファイルをさまざまな方法で操作および変換"
-"するためのユーティリティーが多数用意されています。"
 
 #. tumbleweed/htmlcxx/summary
 msgid "HTML and CSS APIs for C++"
@@ -7725,11 +8140,14 @@ msgid ""
 "EnhancedSessionTransportType HvSocket' to enable.\n"
 "* Provides /etc/xrdp/startwm.sh.userwindowmanager-sample to use in '$HOME'."
 msgstr ""
-"*Hyper-V上のopenSUSE VMが「拡張セッション」を使用できるようにするための前提条件となるセットアップを完了します。\n"
-"*sddmではなく、lightdmで動作します。gdmは問題ではなく、Gnomeのインストールから削除するのは難しい。\n"
+"*Hyper-V上のopenSUSE VMが「拡張セッション」を使用できるようにするための前提条"
+"件となるセットアップを完了します。\n"
+"*sddmではなく、lightdmで動作します。gdmは問題ではなく、Gnomeのインストールか"
+"ら削除するのは難しい。\n"
 "*PowerShellで、'Set-VM-VMName<vmの名前>-EnhancedSessionTransportType "
 "HvSocket'を実行して有効にします。\n"
-"*'$HOME'で使用する/etc/xrdp/startwm.sh.userwindowmanagerサンプルを提供します。"
+"*'$HOME'で使用する/etc/xrdp/startwm.sh.userwindowmanagerサンプルを提供しま"
+"す。"
 
 #. tumbleweed/hypre_2_20_0-gnu-openmpi1-hpc/hypre-gnu-openmpi1-hpc-devel/summary
 msgid "Dependency package for hypre_2_20_0-gnu-openmpi1-hpc-devel"
@@ -7833,19 +8251,6 @@ msgstr ""
 "このライブラリは、その目的のために互換レイヤーと最小限のlibhal実装を提供しま"
 "す。このライブラリには、完全なHALインタフェースやデーモンはありません。"
 
-#. tumbleweed/hashcat/libhashcat6_2_1/summary
-msgid "Implementation of the hashcat engine"
-msgstr "hashcat エンジン用の実装"
-
-#. tumbleweed/hashcat/libhashcat6_2_1/description
-msgid ""
-"Hashcat is a password recovery utility, supporting seven unique modes of "
-"testing for over 100 optimized hashing algorithms."
-msgstr ""
-"Hashcatはパスワード・リカバリー・ユーティリティーであり、100以上の最適化され"
-"たハッシュ・アルゴリズムに対して7つの独自のテスト・モードをサポートしていま"
-"す。"
-
 #. tumbleweed/hdf5-openmpi1/libhdf5-103-openmpi1/description
 #. tumbleweed/hdf5-openmpi1/libhdf5-103-openmpi1-32bit/description
 #. tumbleweed/hdf5-openmpi1/libhdf5_fortran102-openmpi1/description
@@ -7862,24 +8267,176 @@ msgstr ""
 "このパッケージには、HDF5ランタイムライブラリのopenmpi1バージョンが含まれてい"
 "ます。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5-gnu-openmpi1-hpc/summary
-msgid "Dependency package for libhdf5_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5-gnu-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_1_10_7-gnu-hpc"
+msgid "Dependency package for libhdf5_1_10_8-gnu-hpc"
+msgstr "libhdf5_1_10_7-gnu-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5-gnu-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5-gnu-hpc provides the dependency to get binary package "
+#| "libhdf5_1_10_7-gnu-hpc. When this package gets updated it installs the "
+#| "latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5-gnu-hpc provides the dependency to get binary package libhdf5_1_10_8-"
+"gnu-hpc. When this package gets updated it installs the latest version of "
+"hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージlibhdf5-"
+"gnu-hpcは、バイナリパッケージlibhdf5_1_10_7-gnu-hpcを取得するための依存関係を"
+"提供します。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-hpc"
+"がインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5-gnu-mpich-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_1_10_7-gnu-mpich-hpc"
+msgid "Dependency package for libhdf5_1_10_8-gnu-mpich-hpc"
+msgstr "libhdf5_1_10_7-gnu-mpich-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5-gnu-mpich-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5-gnu-mpich-hpc provides the dependency to get binary "
+#| "package libhdf5_1_10_7-gnu-mpich-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5-gnu-mpich-hpc provides the dependency to get binary package "
+"libhdf5_1_10_8-gnu-mpich-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージlibhdf5-"
+"gnu-mpich-hpcは、バイナリパッケージlibhdf5_1_10_7-gnu-mpich-hpcを取得するため"
+"の依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-mpich-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5-gnu-mvapich2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_1_10_7-gnu-mvapich2-hpc"
+msgid "Dependency package for libhdf5_1_10_8-gnu-mvapich2-hpc"
+msgstr "libhdf5_1_10_7-gnu-mvapich2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5-gnu-mvapich2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5-gnu-mvapich2-hpc provides the dependency to get binary "
+#| "package libhdf5_1_10_7-gnu-mvapich2-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-mvapich2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5-gnu-mvapich2-hpc provides the dependency to get binary package "
+"libhdf5_1_10_8-gnu-mvapich2-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージlibhdf5-"
+"gnu-mvapich2-hpcは、バイナリパッケージlibhdf5_1_10_7-gnu-mvapich2-hpcを取得す"
+"るための依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-mvapich2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5-gnu-openmpi1-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_1_10_7-gnu-openmpi1-hpc"
+msgid "Dependency package for libhdf5_1_10_8-gnu-openmpi1-hpc"
 msgstr "libhdf5_1_10_7-gnu-openmpi1-hpc 向けの依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5-gnu-openmpi1-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5-gnu-openmpi1-hpc provides the dependency to get binary "
+#| "package libhdf5_1_10_7-gnu-openmpi1-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "libhdf5-gnu-openmpi1-hpc provides the dependency to get binary package "
-"libhdf5_1_10_7-gnu-openmpi1-hpc. When this package gets updated it installs "
-"the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"libhdf5_1_10_8-gnu-openmpi1-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージlibhdf5-"
 "gnu-openmpi1-hpcは、バイナリパッケージlibhdf5_1_10_7-gnu-openmpi1-hpcを取得す"
 "るための依存関係を提供します。このパッケージが更新されると、最新バージョンの"
 "hdf5_1_10_7-gnu-openmpi1-hpcがインストールされます。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_1_10_7-gnu-openmpi1-hpc/description
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_fortran_1_10_7-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5-gnu-openmpi2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_1_10_7-gnu-openmpi2-hpc"
+msgid "Dependency package for libhdf5_1_10_8-gnu-openmpi2-hpc"
+msgstr "hdf5_1_10_1-gnu-openmpi1-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5-gnu-openmpi2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5-gnu-openmpi2-hpc provides the dependency to get binary "
+#| "package libhdf5_1_10_7-gnu-openmpi2-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-openmpi2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5-gnu-openmpi2-hpc provides the dependency to get binary package "
+"libhdf5_1_10_8-gnu-openmpi2-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージlibhdf5-"
+"gnu-openmpi2-hpcは、バイナリパッケージlibhdf5_1_10_7-gnu-openmpi2-hpcを取得す"
+"るための依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-openmpi2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5-gnu-openmpi3-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_1_10_7-gnu-openmpi3-hpc"
+msgid "Dependency package for libhdf5_1_10_8-gnu-openmpi3-hpc"
+msgstr "libhdf5_1_10_7-gnu-openmpi3-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5-gnu-openmpi3-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5-gnu-openmpi3-hpc provides the dependency to get binary "
+#| "package libhdf5_1_10_7-gnu-openmpi3-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-openmpi3-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5-gnu-openmpi3-hpc provides the dependency to get binary package "
+"libhdf5_1_10_8-gnu-openmpi3-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージlibhdf5-"
+"gnu-openmpi3-hpcは、バイナリパッケージlibhdf5_1_10_7-gnu-openmpi3-hpcを取得す"
+"るための依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-openmpi3-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5-gnu-openmpi4-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_1_10_7-gnu-openmpi4-hpc"
+msgid "Dependency package for libhdf5_1_10_8-gnu-openmpi4-hpc"
+msgstr "libhdf5_1_10_7-gnu-openmpi4-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5-gnu-openmpi4-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5-gnu-openmpi4-hpc provides the dependency to get binary "
+#| "package libhdf5_1_10_7-gnu-openmpi4-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-openmpi4-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5-gnu-openmpi4-hpc provides the dependency to get binary package "
+"libhdf5_1_10_8-gnu-openmpi4-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:科学データフォーマット用コマンドラインプログラムパッケージlibhdf5-gnu-"
+"openmpi4-hpcは、バイナリパッケージlibhdf5_1_10_7-gnu-openmpi4-hpcを取得するた"
+"めの依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-openmpi4-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_1_10_8-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_fortran_1_10_8-gnu-openmpi1-hpc/description
 msgid ""
 "HDF5 is a data model, library, and file format for storing and managing "
 "data. It supports an unlimited variety of datatypes.\n"
@@ -7893,53 +8450,519 @@ msgstr ""
 "このパッケージには、HDF5ランタイムライブラリのgnu-openmpi-hpcバージョンが含ま"
 "れています。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_cpp-gnu-openmpi1-hpc/summary
-msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_cpp-gnu-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-hpc"
+msgid "Dependency package for libhdf5_cpp_1_10_8-gnu-hpc"
+msgstr "libhdf5_cpp_1_10_7-gnu-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_cpp-gnu-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_cpp-gnu-hpc provides the dependency to get binary package "
+#| "libhdf5_cpp_1_10_7-gnu-hpc. When this package gets updated it installs "
+#| "the latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_cpp-gnu-hpc provides the dependency to get binary package "
+"libhdf5_cpp_1_10_8-gnu-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_cpp-gnu-hpcは、バイナリパッケージlibhdf5_cpp_1_10_7-gnu-hpcを取得する"
+"ための依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_cpp-gnu-mpich-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-mpich-hpc"
+msgid "Dependency package for libhdf5_cpp_1_10_8-gnu-mpich-hpc"
+msgstr "libhdf5_cpp_1_10_7-gnu-mpich-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_cpp-gnu-mpich-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_cpp-gnu-mpich-hpc provides the dependency to get binary "
+#| "package libhdf5_cpp_1_10_7-gnu-mpich-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_cpp-gnu-mpich-hpc provides the dependency to get binary package "
+"libhdf5_cpp_1_10_8-gnu-mpich-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_cpp-gnu-mpich-hpcは、バイナリパッケージlibhdf5_cpp_1_10_7-gnu-mpich-"
+"hpcを取得するための依存関係を提供します。このパッケージが更新されると、最新"
+"バージョンのhdf5_1_10_7-gnu-mpich-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_cpp-gnu-mvapich2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-mvapich2-hpc"
+msgid "Dependency package for libhdf5_cpp_1_10_8-gnu-mvapich2-hpc"
+msgstr "libhdf5_cpp_1_10_7-gnu-mvapich2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_cpp-gnu-mvapich2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_cpp-gnu-mvapich2-hpc provides the dependency to get "
+#| "binary package libhdf5_cpp_1_10_7-gnu-mvapich2-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-mvapich2-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_cpp-gnu-mvapich2-hpc provides the dependency to get binary package "
+"libhdf5_cpp_1_10_8-gnu-mvapich2-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_cpp-gnu-mvapich2-hpcは、バイナリパッケージlibhdf5_cpp_1_10_7-gnu-"
+"mvapich2-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-mvapich2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_cpp-gnu-openmpi1-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-openmpi1-hpc"
+msgid "Dependency package for libhdf5_cpp_1_10_8-gnu-openmpi1-hpc"
 msgstr "libhdf5_cpp_1_10_7-gnu-openmpi1-hpc 向けの依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_cpp-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_cpp-gnu-openmpi1-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_cpp-gnu-openmpi1-hpc provides the dependency to get "
+#| "binary package libhdf5_cpp_1_10_7-gnu-openmpi1-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-"
+#| "hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "libhdf5_cpp-gnu-openmpi1-hpc provides the dependency to get binary package "
-"libhdf5_cpp_1_10_7-gnu-openmpi1-hpc. When this package gets updated it "
-"installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"libhdf5_cpp_1_10_8-gnu-openmpi1-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
 "libhdf5_cpp-gnu-openmpi1-hpcは、バイナリパッケージlibhdf5_cpp_1_10_7-gnu-"
 "openmpi1-hpcを取得するための依存関係を提供します。このパッケージが更新される"
 "と、最新バージョンのhdf5_1_10_7-gnu-openmpi1-hpcがインストールされます。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_fortran-gnu-openmpi1-hpc/summary
-msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_cpp-gnu-openmpi2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-openmpi2-hpc"
+msgid "Dependency package for libhdf5_cpp_1_10_8-gnu-openmpi2-hpc"
+msgstr "libhdf5_cpp_1_10_7-gnu-openmpi2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_cpp-gnu-openmpi2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_cpp-gnu-openmpi2-hpc provides the dependency to get "
+#| "binary package libhdf5_cpp_1_10_7-gnu-openmpi2-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi2-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_cpp-gnu-openmpi2-hpc provides the dependency to get binary package "
+"libhdf5_cpp_1_10_8-gnu-openmpi2-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_cpp-gnu-openmpi2-hpcは、バイナリパッケージlibhdf5_cpp_1_10_7-gnu-"
+"openmpi2-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-openmpi2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_cpp-gnu-openmpi3-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-openmpi3-hpc"
+msgid "Dependency package for libhdf5_cpp_1_10_8-gnu-openmpi3-hpc"
+msgstr "libhdf5_cpp_1_10_7-gnu-openmpi3-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_cpp-gnu-openmpi3-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_cpp-gnu-openmpi3-hpc provides the dependency to get "
+#| "binary package libhdf5_cpp_1_10_7-gnu-openmpi3-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi3-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_cpp-gnu-openmpi3-hpc provides the dependency to get binary package "
+"libhdf5_cpp_1_10_8-gnu-openmpi3-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_cpp-gnu-openmpi3-hpcは、バイナリパッケージlibhdf5_cpp_1_10_7-gnu-"
+"openmpi3-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-openmpi3-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_cpp-gnu-openmpi4-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_cpp_1_10_7-gnu-openmpi4-hpc"
+msgid "Dependency package for libhdf5_cpp_1_10_8-gnu-openmpi4-hpc"
+msgstr "libhdf5_cpp_1_10_7-gnu-openmpi4-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_cpp-gnu-openmpi4-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_cpp-gnu-openmpi4-hpc provides the dependency to get "
+#| "binary package libhdf5_cpp_1_10_7-gnu-openmpi4-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi4-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_cpp-gnu-openmpi4-hpc provides the dependency to get binary package "
+"libhdf5_cpp_1_10_8-gnu-openmpi4-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_cpp-gnu-openmpi4-hpcは、バイナリパッケージlibhdf5_cpp_1_10_7-gnu-"
+"openmpi4-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-openmpi4-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_fortran-gnu-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-hpc"
+msgid "Dependency package for libhdf5_fortran_1_10_8-gnu-hpc"
+msgstr "libhdf5_fortran_1_10_7-gnu-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_fortran-gnu-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_fortran-gnu-hpc provides the dependency to get binary "
+#| "package libhdf5_fortran_1_10_7-gnu-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_fortran-gnu-hpc provides the dependency to get binary package "
+"libhdf5_fortran_1_10_8-gnu-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_fortran-gnu-hpcは、バイナリパッケージlibhdf5_fortran_1_10_7-gnu-hpcを"
+"取得するための依存関係を提供します。このパッケージが更新されると、最新バー"
+"ジョンのhdf5_1_10_7-gnu-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_fortran-gnu-mpich-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-mpich-hpc"
+msgid "Dependency package for libhdf5_fortran_1_10_8-gnu-mpich-hpc"
+msgstr "libhdf5_fortran_1_10_7-gnu-mpich-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_fortran-gnu-mpich-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_fortran-gnu-mpich-hpc provides the dependency to get "
+#| "binary package libhdf5_fortran_1_10_7-gnu-mpich-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_fortran-gnu-mpich-hpc provides the dependency to get binary package "
+"libhdf5_fortran_1_10_8-gnu-mpich-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_fortran-gnu-mpich-hpcは、バイナリパッケージlibhdf5_fortran_1_10_7-"
+"gnu-mpich-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-mpich-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_fortran-gnu-mvapich2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-mvapich2-hpc"
+msgid "Dependency package for libhdf5_fortran_1_10_8-gnu-mvapich2-hpc"
+msgstr "libhdf5_fortran_1_10_7-gnu-mvapich2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_fortran-gnu-mvapich2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_fortran-gnu-mvapich2-hpc provides the dependency to get "
+#| "binary package libhdf5_fortran_1_10_7-gnu-mvapich2-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-mvapich2-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_fortran-gnu-mvapich2-hpc provides the dependency to get binary "
+"package libhdf5_fortran_1_10_8-gnu-mvapich2-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_fortran-gnu-mvapich2-hpcは、バイナリパッケージlibhdf5_fortran_1_10_7-"
+"gnu-mvapich2-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-mvapich2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_fortran-gnu-openmpi1-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-openmpi1-hpc"
+msgid "Dependency package for libhdf5_fortran_1_10_8-gnu-openmpi1-hpc"
 msgstr "libhdf5_fortran_1_10_7-gnu-openmpi1-hpc 向けの依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_fortran-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_fortran-gnu-openmpi1-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_fortran-gnu-openmpi1-hpc provides the dependency to get "
+#| "binary package libhdf5_fortran_1_10_7-gnu-openmpi1-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-"
+#| "hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "libhdf5_fortran-gnu-openmpi1-hpc provides the dependency to get binary "
-"package libhdf5_fortran_1_10_7-gnu-openmpi1-hpc. When this package gets "
-"updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"package libhdf5_fortran_1_10_8-gnu-openmpi1-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
 "libhdf5_fortran-gnu-openmpi1-hpcは、バイナリパッケージlibhdf5_fortran_1_10_7-"
 "gnu-openmpi1-hpcを取得するための依存性を提供します。このパッケージが更新され"
 "ると、最新バージョンのhdf5_1_10_7-gnu-openmpi1-hpcがインストールされます。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_hl-gnu-openmpi1-hpc/summary
-msgid "Dependency package for libhdf5_hl_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_fortran-gnu-openmpi2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-openmpi2-hpc"
+msgid "Dependency package for libhdf5_fortran_1_10_8-gnu-openmpi2-hpc"
+msgstr "libhdf5_fortran_1_10_7-gnu-openmpi2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_fortran-gnu-openmpi2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_fortran-gnu-openmpi2-hpc provides the dependency to get "
+#| "binary package libhdf5_fortran_1_10_7-gnu-openmpi2-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi2-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_fortran-gnu-openmpi2-hpc provides the dependency to get binary "
+"package libhdf5_fortran_1_10_8-gnu-openmpi2-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_fortran-gnu-openmpi2-hpcは、バイナリパッケージlibhdf5_fortran_1_10_7-"
+"gnu-openmpi2-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-openmpi2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_fortran-gnu-openmpi3-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-openmpi3-hpc"
+msgid "Dependency package for libhdf5_fortran_1_10_8-gnu-openmpi3-hpc"
+msgstr "libhdf5_fortran_1_10_7-gnu-openmpi3-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_fortran-gnu-openmpi3-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_fortran-gnu-openmpi3-hpc provides the dependency to get "
+#| "binary package libhdf5_fortran_1_10_7-gnu-openmpi3-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi3-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_fortran-gnu-openmpi3-hpc provides the dependency to get binary "
+"package libhdf5_fortran_1_10_8-gnu-openmpi3-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_fortran-gnu-openmpi3-hpcは、バイナリパッケージlibhdf5_fortran_1_10_7-"
+"gnu-openmpi3-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-openmpi3-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_fortran-gnu-openmpi4-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_fortran_1_10_7-gnu-openmpi4-hpc"
+msgid "Dependency package for libhdf5_fortran_1_10_8-gnu-openmpi4-hpc"
+msgstr "libhdf5_fortran_1_10_7-gnu-openmpi4-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_fortran-gnu-openmpi4-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_fortran-gnu-openmpi4-hpc provides the dependency to get "
+#| "binary package libhdf5_fortran_1_10_7-gnu-openmpi4-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi4-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_fortran-gnu-openmpi4-hpc provides the dependency to get binary "
+"package libhdf5_fortran_1_10_8-gnu-openmpi4-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_fortran-gnu-openmpi4-hpcは、バイナリパッケージlibhdf5_fortran_1_10_7-"
+"gnu-openmpi4-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-openmpi4-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_hl-gnu-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_1_10_7-gnu-hpc"
+msgid "Dependency package for libhdf5_hl_1_10_8-gnu-hpc"
+msgstr "libhdf5_hl_1_10_7-gnu-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_hl-gnu-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl-gnu-hpc provides the dependency to get binary package "
+#| "libhdf5_hl_1_10_7-gnu-hpc. When this package gets updated it installs the "
+#| "latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl-gnu-hpc provides the dependency to get binary package "
+"libhdf5_hl_1_10_8-gnu-hpc. When this package gets updated it installs the "
+"latest version of hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl-gnu-hpcは、バイナリパッケージlibhdf5_hl_1_10_7-gnu-hpcを取得するた"
+"めの依存関係を提供します。このパッケージが更新されると、最新バージョンの"
+"hdf5_1_10_7-gnu-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_hl-gnu-mpich-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_1_10_7-gnu-mpich-hpc"
+msgid "Dependency package for libhdf5_hl_1_10_8-gnu-mpich-hpc"
+msgstr "libhdf5_hl_1_10_7-gnu-mpich-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_hl-gnu-mpich-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl-gnu-mpich-hpc provides the dependency to get binary "
+#| "package libhdf5_hl_1_10_7-gnu-mpich-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl-gnu-mpich-hpc provides the dependency to get binary package "
+"libhdf5_hl_1_10_8-gnu-mpich-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl-gnu-mpich-hpcは、バイナリパッケージlibhdf5_hl_1_10_7-gnu-mpich-hpc"
+"を取得するための依存関係を提供します。このパッケージが更新されると、最新バー"
+"ジョンのhdf5_1_10_7-gnu-mpich-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_hl-gnu-mvapich2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_1_10_7-gnu-mvapich2-hpc"
+msgid "Dependency package for libhdf5_hl_1_10_8-gnu-mvapich2-hpc"
+msgstr "libhdf5_hl_1_10_7-gnu-mvapich2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_hl-gnu-mvapich2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl-gnu-mvapich2-hpc provides the dependency to get binary "
+#| "package libhdf5_hl_1_10_7-gnu-mvapich2-hpc. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-mvapich2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl-gnu-mvapich2-hpc provides the dependency to get binary package "
+"libhdf5_hl_1_10_8-gnu-mvapich2-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl-gnu-mvapich2-hpcは、バイナリパッケージlibhdf5_hl_1_10_7-gnu-"
+"mvapich2-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-mvapich2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_hl-gnu-openmpi1-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_1_10_7-gnu-openmpi1-hpc"
+msgid "Dependency package for libhdf5_hl_1_10_8-gnu-openmpi1-hpc"
 msgstr "libhdf5_hl_1_10_7-gnu-openmpi1-hpc 向けの依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_hl-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_hl-gnu-openmpi1-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl-gnu-openmpi1-hpc provides the dependency to get binary "
+#| "package libhdf5_hl_1_10_7-gnu-openmpi1-hpc. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "libhdf5_hl-gnu-openmpi1-hpc provides the dependency to get binary package "
-"libhdf5_hl_1_10_7-gnu-openmpi1-hpc. When this package gets updated it "
-"installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"libhdf5_hl_1_10_8-gnu-openmpi1-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
 "libhdf5_hl-gnu-openmpi1-hpcは、バイナリパッケージlibhdf5_hl_1_10_7-gnu-"
 "openmpi1-hpcを取得するための依存関係を提供します。このパッケージが更新される"
 "と、最新バージョンのhdf5_1_10_7-gnu-openmpi1-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_hl-gnu-openmpi2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_1_10_7-gnu-openmpi2-hpc"
+msgid "Dependency package for libhdf5_hl_1_10_8-gnu-openmpi2-hpc"
+msgstr "libhdf5_hl_1_10_7-gnu-openmpi2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_hl-gnu-openmpi2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl-gnu-openmpi2-hpc provides the dependency to get binary "
+#| "package libhdf5_hl_1_10_7-gnu-openmpi2-hpc. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl-gnu-openmpi2-hpc provides the dependency to get binary package "
+"libhdf5_hl_1_10_8-gnu-openmpi2-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl-gnu-openmpi2-hpcは、バイナリパッケージlibhdf5_hl_1_10_7-gnu-"
+"openmpi2-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-openmpi2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_hl-gnu-openmpi3-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_1_10_7-gnu-openmpi3-hpc"
+msgid "Dependency package for libhdf5_hl_1_10_8-gnu-openmpi3-hpc"
+msgstr "libhdf5_hl_1_10_7-gnu-openmpi3-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_hl-gnu-openmpi3-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl-gnu-openmpi3-hpc provides the dependency to get binary "
+#| "package libhdf5_hl_1_10_7-gnu-openmpi3-hpc. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi3-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl-gnu-openmpi3-hpc provides the dependency to get binary package "
+"libhdf5_hl_1_10_8-gnu-openmpi3-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl-gnu-openmpi3-hpcは、バイナリパッケージlibhdf5_hl_1_10_7-gnu-"
+"openmpi3-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-openmpi3-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_hl-gnu-openmpi4-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_1_10_7-gnu-openmpi4-hpc"
+msgid "Dependency package for libhdf5_hl_1_10_8-gnu-openmpi4-hpc"
+msgstr "libhdf5_hl_1_10_7-gnu-openmpi4-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_hl-gnu-openmpi4-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl-gnu-openmpi4-hpc provides the dependency to get binary "
+#| "package libhdf5_hl_1_10_7-gnu-openmpi4-hpc. When this package gets "
+#| "updated it installs the latest version of hdf5_1_10_7-gnu-openmpi4-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl-gnu-openmpi4-hpc provides the dependency to get binary package "
+"libhdf5_hl_1_10_8-gnu-openmpi4-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl-gnu-openmpi4-hpcは、バイナリパッケージlibhdf5_hl_1_10_7-gnu-"
+"openmpi4-hpcを取得するための依存関係を提供します。このパッケージが更新される"
+"と、最新バージョンのhdf5_1_10_7-gnu-openmpi4-hpcがインストールされます。"
 
 #. tumbleweed/hdf5-openmpi1/libhdf5_hl100-openmpi1/description
 #. tumbleweed/hdf5-openmpi1/libhdf5_hl100-openmpi1-32bit/description
@@ -7958,8 +8981,8 @@ msgstr ""
 "このパッケージには、高レベルHDF5ランタイムライブラリのopenmpi1バージョンが含"
 "まれています。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_hl_1_10_7-gnu-openmpi1-hpc/description
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5hl_fortran_1_10_7-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_hl_1_10_8-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5hl_fortran_1_10_8-gnu-openmpi1-hpc/description
 msgid ""
 "HDF5 is a data model, library, and file format for storing and managing "
 "data. It supports an unlimited variety of datatypes.\n"
@@ -7973,38 +8996,357 @@ msgstr ""
 "このパッケージには、高レベルHDF5ランタイムライブラリのgnu-openmpi-hpcバージョ"
 "ンが含まれています。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_hl_cpp-gnu-openmpi1-hpc/summary
-msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_hl_cpp-gnu-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-hpc"
+msgid "Dependency package for libhdf5_hl_cpp_1_10_8-gnu-hpc"
+msgstr "libhdf5_hl_cpp_1_10_7-gnu-hpcc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_hl_cpp-gnu-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_cpp-gnu-hpc provides the dependency to get binary "
+#| "package libhdf5_hl_cpp_1_10_7-gnu-hpc. When this package gets updated it "
+#| "installs the latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_cpp-gnu-hpc provides the dependency to get binary package "
+"libhdf5_hl_cpp_1_10_8-gnu-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_cpp-gnu-hpcは、バイナリパッケージlibhdf5_hl_cpp_1_10_7-gnu-hpcを取"
+"得するための依存関係を提供します。このパッケージが更新されると、最新バージョ"
+"ンのhdf5_1_10_7-gnu-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_hl_cpp-gnu-mpich-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-mpich-hpc"
+msgid "Dependency package for libhdf5_hl_cpp_1_10_8-gnu-mpich-hpc"
+msgstr "ibhdf5_hl_cpp_1_10_7-gnu-mpich-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_hl_cpp-gnu-mpich-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_cpp-gnu-mpich-hpc provides the dependency to get "
+#| "binary package libhdf5_hl_cpp_1_10_7-gnu-mpich-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_cpp-gnu-mpich-hpc provides the dependency to get binary package "
+"libhdf5_hl_cpp_1_10_8-gnu-mpich-hpc. When this package gets updated it "
+"installs the latest version of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマットのコマンドラインプログラムパッケージ"
+"libhdf5_hl_cpp-gnu-mpich-hpcは、バイナリパッケージlibhdf5_hl_cpp_1_10_7-gnu-"
+"mpich-hpcを取得するための依存関係を提供します。このパッケージが更新されると、"
+"最新バージョンのhdf5_1_10_7-gnu-mpich-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_hl_cpp-gnu-mvapich2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-mvapich2-hpc"
+msgid "Dependency package for libhdf5_hl_cpp_1_10_8-gnu-mvapich2-hpc"
+msgstr "libhdf5_hl_cpp_1_10_7-gnu-mvapich2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_hl_cpp-gnu-mvapich2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_cpp-gnu-mvapich2-hpc provides the dependency to get "
+#| "binary package libhdf5_hl_cpp_1_10_7-gnu-mvapich2-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-mvapich2-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_cpp-gnu-mvapich2-hpc provides the dependency to get binary "
+"package libhdf5_hl_cpp_1_10_8-gnu-mvapich2-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_cpp-gnu-mvapich2-hpcは、バイナリパッケージlibhdf5_hl_cpp_1_10_7-"
+"gnu-mvapich2-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-mvapich2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_hl_cpp-gnu-openmpi1-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-openmpi1-hpc"
+msgid "Dependency package for libhdf5_hl_cpp_1_10_8-gnu-openmpi1-hpc"
 msgstr "libhdf5_hl_cpp_1_10_7-gnu-openmpi1-hpc 向けの依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_hl_cpp-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_hl_cpp-gnu-openmpi1-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_cpp-gnu-openmpi1-hpc provides the dependency to get "
+#| "binary package libhdf5_hl_cpp_1_10_7-gnu-openmpi1-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-"
+#| "hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "libhdf5_hl_cpp-gnu-openmpi1-hpc provides the dependency to get binary "
-"package libhdf5_hl_cpp_1_10_7-gnu-openmpi1-hpc. When this package gets "
-"updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"package libhdf5_hl_cpp_1_10_8-gnu-openmpi1-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
 "libhdf5_hl_cpp-gnu-openmpi1-hpcは、バイナリパッケージlibhdf5_hl_cpp_1_10_7-"
 "gnu-openmpi1-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
 "れると、最新バージョンのhdf5_1_10_7-gnu-openmpi1-hpcがインストールされます。"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_hl_fortran-gnu-openmpi1-hpc/summary
-msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-openmpi1-hpc"
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_hl_cpp-gnu-openmpi2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-openmpi2-hpc"
+msgid "Dependency package for libhdf5_hl_cpp_1_10_8-gnu-openmpi2-hpc"
+msgstr "libhdf5_hl_cpp_1_10_7-gnu-openmpi2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_hl_cpp-gnu-openmpi2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_cpp-gnu-openmpi2-hpc provides the dependency to get "
+#| "binary package libhdf5_hl_cpp_1_10_7-gnu-openmpi2-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi2-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_cpp-gnu-openmpi2-hpc provides the dependency to get binary "
+"package libhdf5_hl_cpp_1_10_8-gnu-openmpi2-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_cpp-gnu-openmpi2-hpcは、バイナリパッケージlibhdf5_hl_cpp_1_10_7-"
+"gnu-openmpi2-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-openmpi2-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_hl_cpp-gnu-openmpi3-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-openmpi3-hpc"
+msgid "Dependency package for libhdf5_hl_cpp_1_10_8-gnu-openmpi3-hpc"
+msgstr "libhdf5_hl_cpp_1_10_7-gnu-openmpi3-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_hl_cpp-gnu-openmpi3-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_cpp-gnu-openmpi3-hpc provides the dependency to get "
+#| "binary package libhdf5_hl_cpp_1_10_7-gnu-openmpi3-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi3-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_cpp-gnu-openmpi3-hpc provides the dependency to get binary "
+"package libhdf5_hl_cpp_1_10_8-gnu-openmpi3-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_cpp-gnu-openmpi3-hpcは、バイナリパッケージlibhdf5_hl_cpp_1_10_7-"
+"gnu-openmpi3-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-openmpi3-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_hl_cpp-gnu-openmpi4-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5_hl_cpp_1_10_7-gnu-openmpi4-hpc"
+msgid "Dependency package for libhdf5_hl_cpp_1_10_8-gnu-openmpi4-hpc"
+msgstr "libhdf5_hl_cpp_1_10_7-gnu-openmpi4-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_hl_cpp-gnu-openmpi4-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_cpp-gnu-openmpi4-hpc provides the dependency to get "
+#| "binary package libhdf5_hl_cpp_1_10_7-gnu-openmpi4-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-openmpi4-"
+#| "hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_cpp-gnu-openmpi4-hpc provides the dependency to get binary "
+"package libhdf5_hl_cpp_1_10_8-gnu-openmpi4-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_cpp-gnu-openmpi4-hpcは、バイナリパッケージlibhdf5_hl_cpp_1_10_7-"
+"gnu-openmpi4-hpcを取得するための依存関係を提供します。このパッケージが更新さ"
+"れると、最新バージョンのhdf5_1_10_7-gnu-openmpi4-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_hl_fortran-gnu-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-hpc"
+msgid "Dependency package for libhdf5hl_fortran_1_10_8-gnu-hpc"
+msgstr "libhdf5hl_fortran_1_10_7-gnu-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-hpc/libhdf5_hl_fortran-gnu-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_fortran-gnu-hpc provides the dependency to get binary "
+#| "package libhdf5hl_fortran_1_10_7-gnu-hpc. When this package gets updated "
+#| "it installs the latest version of hdf5_1_10_7-gnu-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_fortran-gnu-hpc provides the dependency to get binary package "
+"libhdf5hl_fortran_1_10_8-gnu-hpc. When this package gets updated it installs "
+"the latest version of hdf5_1_10_8-gnu-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_fortran-gnu-hpcは、バイナリパッケージlibhdf5hl_fortran_1_10_7-gnu-"
+"hpcを取得するための依存性を提供します。このパッケージが更新されると、最新バー"
+"ジョンのhdf5_1_10_7-gnu-hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_hl_fortran-gnu-mpich-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-mpich-hpc"
+msgid "Dependency package for libhdf5hl_fortran_1_10_8-gnu-mpich-hpc"
+msgstr "libhdf5hl_fortran_1_10_7-gnu-mpich-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mpich-hpc/libhdf5_hl_fortran-gnu-mpich-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_fortran-gnu-mpich-hpc provides the dependency to get "
+#| "binary package libhdf5hl_fortran_1_10_7-gnu-mpich-hpc. When this package "
+#| "gets updated it installs the latest version of hdf5_1_10_7-gnu-mpich-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_fortran-gnu-mpich-hpc provides the dependency to get binary "
+"package libhdf5hl_fortran_1_10_8-gnu-mpich-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-mpich-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_fortran-gnu-mpich-hpcは、バイナリパッケージ"
+"libhdf5hl_fortran_1_10_7-gnu-mpich-hpcを取得するための依存関係を提供します。"
+"このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-mpich-hpcがイン"
+"ストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_hl_fortran-gnu-mvapich2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-mvapich2-hpc"
+msgid "Dependency package for libhdf5hl_fortran_1_10_8-gnu-mvapich2-hpc"
+msgstr "libhdf5hl_fortran_1_10_7-gnu-mvapich2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-mvapich2-hpc/libhdf5_hl_fortran-gnu-mvapich2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_fortran-gnu-mvapich2-hpc provides the dependency to "
+#| "get binary package libhdf5hl_fortran_1_10_7-gnu-mvapich2-hpc. When this "
+#| "package gets updated it installs the latest version of hdf5_1_10_7-gnu-"
+#| "mvapich2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_fortran-gnu-mvapich2-hpc provides the dependency to get binary "
+"package libhdf5hl_fortran_1_10_8-gnu-mvapich2-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-mvapich2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_fortran-gnu-mvapich2-hpcは、バイナリパッケージ"
+"libhdf5hl_fortran_1_10_7-gnu-mvapich2-hpcを取得するための依存関係を提供しま"
+"す。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-mvapich2-"
+"hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_hl_fortran-gnu-openmpi1-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-openmpi1-hpc"
+msgid "Dependency package for libhdf5hl_fortran_1_10_8-gnu-openmpi1-hpc"
 msgstr "libhdf5hl_fortran_1_10_7-gnu-openmpi1-hpc 向けの依存パッケージ"
 
-#. tumbleweed/hdf5_1_10_7-gnu-openmpi1-hpc/libhdf5_hl_fortran-gnu-openmpi1-hpc/description
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi1-hpc/libhdf5_hl_fortran-gnu-openmpi1-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_fortran-gnu-openmpi1-hpc provides the dependency to "
+#| "get binary package libhdf5hl_fortran_1_10_7-gnu-openmpi1-hpc. When this "
+#| "package gets updated it installs the latest version of hdf5_1_10_7-gnu-"
+#| "openmpi1-hpc."
 msgid ""
 "hdf5: Command-line programs for the HDF5 scientific data format The package "
 "libhdf5_hl_fortran-gnu-openmpi1-hpc provides the dependency to get binary "
-"package libhdf5hl_fortran_1_10_7-gnu-openmpi1-hpc. When this package gets "
-"updated it installs the latest version of hdf5_1_10_7-gnu-openmpi1-hpc."
+"package libhdf5hl_fortran_1_10_8-gnu-openmpi1-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi1-hpc."
 msgstr ""
 "hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
 "libhdf5_hl_fortran-gnu-openmpi1-hpcは、バイナリパッケージ"
 "libhdf5hl_fortran_1_10_7-gnu-openmpi1-hpcを取得するための依存性を提供します。"
 "このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-openmpi1-hpcが"
 "インストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_hl_fortran-gnu-openmpi2-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-openmpi2-hpc"
+msgid "Dependency package for libhdf5hl_fortran_1_10_8-gnu-openmpi2-hpc"
+msgstr "libhdf5hl_fortran_1_10_7-gnu-openmpi2-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi2-hpc/libhdf5_hl_fortran-gnu-openmpi2-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_fortran-gnu-openmpi2-hpc provides the dependency to "
+#| "get binary package libhdf5hl_fortran_1_10_7-gnu-openmpi2-hpc. When this "
+#| "package gets updated it installs the latest version of hdf5_1_10_7-gnu-"
+#| "openmpi2-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_fortran-gnu-openmpi2-hpc provides the dependency to get binary "
+"package libhdf5hl_fortran_1_10_8-gnu-openmpi2-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi2-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_fortran-gnu-openmpi2-hpcは、バイナリパッケージ"
+"libhdf5hl_fortran_1_10_7-gnu-openmpi2-hpcを取得するための依存関係を提供しま"
+"す。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-openmpi2-"
+"hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_hl_fortran-gnu-openmpi3-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-openmpi3-hpc"
+msgid "Dependency package for libhdf5hl_fortran_1_10_8-gnu-openmpi3-hpc"
+msgstr "libhdf5hl_fortran_1_10_7-gnu-openmpi3-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi3-hpc/libhdf5_hl_fortran-gnu-openmpi3-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_fortran-gnu-openmpi3-hpc provides the dependency to "
+#| "get binary package libhdf5hl_fortran_1_10_7-gnu-openmpi3-hpc. When this "
+#| "package gets updated it installs the latest version of hdf5_1_10_7-gnu-"
+#| "openmpi3-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_fortran-gnu-openmpi3-hpc provides the dependency to get binary "
+"package libhdf5hl_fortran_1_10_8-gnu-openmpi3-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi3-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_fortran-gnu-openmpi3-hpcは、バイナリパッケージ"
+"libhdf5hl_fortran_1_10_7-gnu-openmpi3-hpcを取得するための依存関係を提供しま"
+"す。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-openmpi3-"
+"hpcがインストールされます。"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_hl_fortran-gnu-openmpi4-hpc/summary
+#, fuzzy
+#| msgid "Dependency package for libhdf5hl_fortran_1_10_7-gnu-openmpi4-hpc"
+msgid "Dependency package for libhdf5hl_fortran_1_10_8-gnu-openmpi4-hpc"
+msgstr "libhdf5hl_fortran_1_10_7-gnu-openmpi4-hpc 向け依存パッケージ"
+
+#. tumbleweed/hdf5_1_10_8-gnu-openmpi4-hpc/libhdf5_hl_fortran-gnu-openmpi4-hpc/description
+#, fuzzy
+#| msgid ""
+#| "hdf5: Command-line programs for the HDF5 scientific data format The "
+#| "package libhdf5_hl_fortran-gnu-openmpi4-hpc provides the dependency to "
+#| "get binary package libhdf5hl_fortran_1_10_7-gnu-openmpi4-hpc. When this "
+#| "package gets updated it installs the latest version of hdf5_1_10_7-gnu-"
+#| "openmpi4-hpc."
+msgid ""
+"hdf5: Command-line programs for the HDF5 scientific data format The package "
+"libhdf5_hl_fortran-gnu-openmpi4-hpc provides the dependency to get binary "
+"package libhdf5hl_fortran_1_10_8-gnu-openmpi4-hpc. When this package gets "
+"updated it installs the latest version of hdf5_1_10_8-gnu-openmpi4-hpc."
+msgstr ""
+"hdf5:HDF5科学データフォーマット用コマンドラインプログラムパッケージ"
+"libhdf5_hl_fortran-gnu-openmpi4-hpcは、バイナリパッケージ"
+"libhdf5hl_fortran_1_10_7-gnu-openmpi4-hpcを取得するための依存関係を提供しま"
+"す。このパッケージが更新されると、最新バージョンのhdf5_1_10_7-gnu-openmpi4-"
+"hpcがインストールされます。"
 
 #. tumbleweed/healpix/libhealpix_cxx3/summary
 msgid "Shared library for healpix - C++ bindings"
@@ -8036,8 +9378,9 @@ msgid ""
 "time. It only configures the IPv4 loopback address, turns on basic security, "
 "and shortens many timers to be more responsive."
 msgstr ""
-"この設定例は、初めてHTCondorを試す場合に適しています。IPv4ループバックアドレスを設定し、基本的なセキュリティをオンにし、応答を向上させるために"
-"多くのタイマーを短縮するだけです。"
+"この設定例は、初めてHTCondorを試す場合に適しています。IPv4ループバックアドレ"
+"スを設定し、基本的なセキュリティをオンにし、応答を向上させるために多くのタイ"
+"マーを短縮するだけです。"
 
 #. tumbleweed/htcondor/python3-condor/summary
 msgid "Python bindings for HTCondor."
@@ -8048,7 +9391,8 @@ msgid ""
 "The python bindings allow one to directly invoke the C++ implementations of "
 "the ClassAd library and HTCondor from python"
 msgstr ""
-"pythonバインディングを使用すると、ClassAd ライブラリとHTCondor の C++ 実装を python から直接呼び出すことができます。"
+"pythonバインディングを使用すると、ClassAd ライブラリとHTCondor の C++ 実装を "
+"python から直接呼び出すことができます。"
 
 #. tumbleweed/hxtools/vfontas/summary
 msgid "Bitmap font file transformation utility"
@@ -8067,6 +9411,75 @@ msgstr ""
 "変換(bdf/clt/pbm/psf/raw DOSフォント)、およびsfdへのベクトルエクスポート"
 "(FontForgeを介したTrueType/OpenType/WOFFなど)です。ベクトル書き出しでは、ビッ"
 "トマップフォントのギザギザしたエッジを滑らかにすることができます。"
+
+#~ msgid ""
+#~ "Hashcat is an advanced CPU-based password recovery utility, supporting "
+#~ "seven unique modes of testing for over 100 optimized hashing algorithms."
+#~ msgstr ""
+#~ "Hashcatは、高度なCPUベースのパスワード・リカバリー・ユーティリティーであ"
+#~ "り、100以上の最適化されたハッシュ・アルゴリズムに対して7つの独自のテスト・"
+#~ "モードをサポートしています。"
+
+#~ msgid "A number of simple utilities for manipulating HTML and XML files"
+#~ msgstr "HTMLおよびXMLファイルを操作するための多数の簡単なユーティリティー"
+
+#~ msgid ""
+#~ "HTML-XML-utils provides a number of simple utilities for manipulating and "
+#~ "converting HTML and XML files in various ways. The suite consists of the "
+#~ "following tools:\n"
+#~ "\n"
+#~ "asc2xml      -  convert from UTF-8 to &\\#nnn; entities xml2asc      -  "
+#~ "convert from &\\#nnn; entities to UTF-8 hxaddid      -  add IDs to "
+#~ "selected elements hxcite       -  replace bibliographic references by "
+#~ "hyperlinks hxcite-mkbib -  expand references and create bibliography "
+#~ "hxclean      -  apply heuristics to correct an HTML file hxcopy       -  "
+#~ "copy an HTML file while preserving relative links hxcount      -  count "
+#~ "elements and attributes in HTML or XML files hxextract    -  extract "
+#~ "selected elements hxincl       -  expand included HTML or XML files "
+#~ "hxindex      -  create an alphabetically sorted index hxmkbib      -  "
+#~ "create bibliography from a template hxmultitoc   -  create a table of "
+#~ "contents for a set of HTML files hxname2id    -  move some ID= or NAME= "
+#~ "from A elements to their parents hxnormalize  -  pretty-print an HTML "
+#~ "file hxnsxml      -  convert output of hxxmlns back to normal XML "
+#~ "hxnum        -  number section headings in an HTML file hxpipe       -  "
+#~ "convert XML to a format easier to parse with Perl or AWK hxprintlinks -  "
+#~ "number links & add table of URLs at end of an HTML file hxprune      -  "
+#~ "remove marked elements from an HTML file hxref        -  generate cross-"
+#~ "references hxselect     -  extract elements that match a (CSS) selector "
+#~ "hxtoc        -  insert a table of contents in an HTML file hxuncdata    "
+#~ "-  replace CDATA sections by character entities hxunent      -  replace "
+#~ "HTML predefined character entities to UTF-8 hxunpipe     -  convert "
+#~ "output of pipe back to XML format hxunxmlns    -  replace \"global names"
+#~ "\" by XML Namespace prefixes hxwls        -  list links in an HTML file "
+#~ "hxxmlns      -  replace XML Namespace prefixes by \"global names\""
+#~ msgstr ""
+#~ "HTML-XML-utilsには、HTMLファイルとXMLファイルをさまざまな方法で操作したり"
+#~ "変換したりするための簡単なユーティリティーが多数用意されています。スイート"
+#~ "は、次のツールで構成されています。\n"
+#~ "\n"
+#~ "asc2xml - UTF-8から&\\#nnn エンティティに変換します。 xml2asc - &\\#nnn エ"
+#~ "ンティティからUTF-8に変換します。 hxaddid - 選択された要素にIDを追加しま"
+#~ "す。hxcite - ハイパーリンクで書誌参照を置き換えます。hxcite-mkbib - 参照を"
+#~ "拡張し、書誌を作成します。 hxclean - ヒューリスティックスを適用してHTML"
+#~ "ファイルを訂正します。hxcopy - 相対リンクを保持しながら HTML ファイルをコ"
+#~ "ピーします。hxcount - HTMLまたはXMLファイル内の要素と属性を数えます。 "
+#~ "hxextract - 選択された要素を抽出します。 hxincl  - インクルードされたHTML "
+#~ "又は XML ファイルを展開します。 hxindex  - アルファベット順に並んだイン"
+#~ "デックスを生成します。  hxmkbib - テンプレートから書誌を作成します。 "
+#~ "hxmultitoc  - HTML ファイル群の目次を生成します。 hxname2id - A要素からそ"
+#~ "の親にID=またはNAME=を移動します。A要素のセットの目次を作成します。 "
+#~ "hxnormalize  - HTMLファイルを清書印刷します。 hxnsxml - hxxmlns の出力を通"
+#~ "常の XML に変換します。 hxnum - HTML ファイル中のセクション見出しを数えま"
+#~ "す。 hxpipe - XML を Perl または AWK で解析しやすい形式に変換します。 "
+#~ "hxprintlinks  - 番号リンクと URL テーブルを HTML ファイルの末尾に追加しま"
+#~ "す。 hxprune - マークされた要素をHTMLファイルから削除します。 hxref  - ク"
+#~ "ロスリファレンスを生成します。 hxselect - (CSS)セレクタに一致する要素を抽"
+#~ "出します。 hxtoc - HTMLファイルに目次を挿入します。hxuncdata - CDATAセク"
+#~ "ションを文字エンティティで置き換えます。 hxunent - HTML定義済み文字エン"
+#~ "ティティをUTF-8 に置き換えます。 hxunpipe - パイプの出力をXML形式に変換し"
+#~ "ます。 hxunxmlns - グローバル名をXML名前空間プレフィックスで置き換えま"
+#~ "す。 hxwls - HTML ファイルにリンクをリストします。 hxxmlns - XML 名前空間"
+#~ "プリフィックスをグローバル名に置き換えます。"
 
 #~ msgid "Harminv solves the problem of harmonic inversion"
 #~ msgstr "Harminvは高調波反転の問題を解決します"

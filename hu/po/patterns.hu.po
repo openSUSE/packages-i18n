@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2019-02-12 10:35+0000\n"
 "Last-Translator: Robert Taisz <robert.taisz@emerald.hu>\n"
 "Language-Team: Hungarian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -43,6 +43,7 @@ msgstr ""
 #. SLE/patterns-base/patterns-base-apparmor/category
 #. SLE/patterns-base/patterns-base-base/category
 #. SLE/patterns-base/patterns-base-basesystem/category
+#. SLE/patterns-base/patterns-base-bootloader/category
 #. SLE/patterns-base/patterns-base-enhanced_base/category
 #. SLE/patterns-base/patterns-base-minimal_base/category
 #. SLE/patterns-base/patterns-base-sw_management/category
@@ -117,6 +118,14 @@ msgstr ""
 msgid "Graphical Environments"
 msgstr "Grafikus környezet"
 
+#. SLE/patterns-base/patterns-base-bootloader/summary
+msgid "Bootloader"
+msgstr ""
+
+#. SLE/patterns-base/patterns-base-bootloader/description
+msgid "This pattern holds files required for booting the system"
+msgstr ""
+
 #. SLE/patterns-base/patterns-base-documentation/summary
 #. SLE/patterns-base/patterns-base-documentation/description
 msgid "Help and Support Documentation"
@@ -141,20 +150,58 @@ msgstr "Kibővített futtatókörnyezet sok kényelmi funkcióval."
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "Az enhanced_base lehetőséget kiegészítő 32 bites minta."
 
+#. SLE/patterns-base/patterns-base-fips/summary
+msgid "FIPS 140-2 specific packages"
+msgstr "FIPS 140-2 csomagok"
+
+#. SLE/patterns-base/patterns-base-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+"Ez a minta telepíti azokat az FIPS 140-2 csomagokat, amelyek kiegészítik a "
+"használatban lévő különböző kriptográfiai modulokat. Akkor szükséges, ha az "
+"\"fips=1\" beállítással kívánja futtatni a gépet.\n"
+"\n"
+"Vegye figyelembe, hogy ez a minta csak az FIPS 140-2 kompatibilis működést "
+"teszi lehetővé, a rendszert nem látja el közvetlenül FIPS 140-2 "
+"tanúsítvánnyal, és nem is hitelesíti.\n"
+"\n"
+"Az FIPS 140-2 tanúsítványról a SUSE hivatalos közleményében tájékozódhat."
+
+#. SLE/patterns-base/patterns-base-fips/category
+msgid "Primary Functions"
+msgstr "Elsődleges funkciók"
+
 #. SLE/patterns-base/patterns-base-minimal_base/summary
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
 msgid "Minimal Appliance Base"
 msgstr "Minimális alaprendszer készülékekhez"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
+#, fuzzy
+#| msgid ""
+#| "This is the minimal Novell SUSE Linux Enterprise runtime system. It is "
+#| "really a minimal system, you can login and a shell will be started, "
+#| "that's all. It is intended as base for Appliances. Support for this "
+#| "minimal pattern is only possible as part of an OEM agreement or after "
+#| "upgrading the system to the Server Base pattern"
 msgid ""
-"This is the minimal SLE runtime system. It is really a minimal system, you "
-"can login and a shell will be started, that's all. It is intended as base "
-"for Appliances."
+"This is the minimal runtime system. It is really a minimal system. It is "
+"intended as base for Appliances."
 msgstr ""
-"Ez egy minimális SLE futtatókörnyezet. Bejelentkezést követően a parancssori "
-"felület indul el, amely tökéletesen elegendő különböző készülékek "
-"alaprendszereként."
+"Ez egy minimális Novell SUSE Linux Enterprise futtatókörnyezet. "
+"Bejelentkezést követően a parancssori felület indul el, amely tökéletesen "
+"elegendő különböző készülékek alaprendszereként. A minimális telepítési "
+"minta támogatása csak OEM partnerek számára érhető el, vagy azoknak, aki a "
+"Kiszolgáló alapmintára bővítik a rendszert."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -327,12 +374,6 @@ msgstr "SLE valós idejű modul"
 msgid "Provide tools and patches to fix kernel at runtime."
 msgstr "Eszközök és javítások a kernel futásidőben történő kijavításához."
 
-#. SLE/patterns-rt/patterns-rt-rt_sles/category
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
-#. SLE/patterns-wbem/patterns-wbem-WBEM/category
-msgid "Primary Functions"
-msgstr "Elsődleges funkciók"
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 msgid "Oracle Server Base"
 msgstr "Oracle-kiszolgáló alap"
@@ -349,6 +390,31 @@ msgstr "Webalapú vállalati felügyelet"
 msgid "Web-based enterprise management."
 msgstr "Webalapú vállalati felügyelet."
 
+#. SLE/patterns-wsl/patterns-wsl-base/summary
+msgid "Base WSL packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/description
+msgid ""
+"This package contains the wsl_base pattern: recommended tools,libraries for "
+"using WSL."
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/category
+#. SLE/patterns-wsl/patterns-wsl-gui/category
+msgid "Development"
+msgstr "Fejlesztés"
+
+#. SLE/patterns-wsl/patterns-wsl-gui/summary
+msgid "WSL GUI packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-gui/description
+msgid ""
+"This package contains the wsl_gui pattern: recommended tools,libraries for "
+"using WSLg."
+msgstr ""
+
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
 msgstr "Minták az SLE modulokhoz és az SAP alkalmazásokhoz"
@@ -362,12 +428,6 @@ msgstr "Alap fejlesztőkörnyezet"
 msgid "Minimal set of tools for compiling and linking applications."
 msgstr ""
 "Minimális eszközkészlet alkalmazások lefordításához és összeszerkesztéséhez."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Fejlesztés"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -817,33 +877,6 @@ msgstr ""
 msgid "The 32bit pattern complementing directory_server."
 msgstr "A directory_server lehetőséget kiegészítő 32 bites minta."
 
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
-msgid "FIPS 140-2 specific packages"
-msgstr "FIPS 140-2 csomagok"
-
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
-msgid ""
-"This pattern installs the FIPS 140-2 specific packages that complete the "
-"various cryptographic modules in use. It is required if you want to run the "
-"machine with \"fips=1\".\n"
-"\n"
-"Please note that this pattern only enables FIPS 140-2 compliant operation, "
-"it does not directly make the system FIPS 140-2 certified nor validated.\n"
-"\n"
-"Please refer to SUSE official statements on the state of FIPS 140-2 "
-"certification."
-msgstr ""
-"Ez a minta telepíti azokat az FIPS 140-2 csomagokat, amelyek kiegészítik a "
-"használatban lévő különböző kriptográfiai modulokat. Akkor szükséges, ha az "
-"\"fips=1\" beállítással kívánja futtatni a gépet.\n"
-"\n"
-"Vegye figyelembe, hogy ez a minta csak az FIPS 140-2 kompatibilis működést "
-"teszi lehetővé, a rendszert nem látja el közvetlenül FIPS 140-2 "
-"tanúsítvánnyal, és nem is hitelesíti.\n"
-"\n"
-"Az FIPS 140-2 tanúsítványról a SUSE hivatalos közleményében tájékozódhat."
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
 msgstr "Az fips lehetőséget kiegészítő 32 bites minta."
@@ -1210,14 +1243,6 @@ msgstr ""
 msgid "Base System (alias pattern for base)"
 msgstr "Alaprendszer (az alap aliasmintája)"
 
-#. leap/patterns-base/patterns-base-bootloader/summary
-msgid "Bootloader"
-msgstr ""
-
-#. leap/patterns-base/patterns-base-bootloader/description
-msgid "This pattern holds files required for booting the system"
-msgstr ""
-
 # 22756 AttribValues/label
 #. leap/patterns-base/patterns-base-console/summary
 msgid "Console Tools"
@@ -1230,24 +1255,6 @@ msgid ""
 msgstr ""
 "Hasznos alkalmazások azoknak, akik nem grafikus környezetet használnak."
 
-#. leap/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal Novell SUSE Linux Enterprise runtime system. It is "
-#| "really a minimal system, you can login and a shell will be started, "
-#| "that's all. It is intended as base for Appliances. Support for this "
-#| "minimal pattern is only possible as part of an OEM agreement or after "
-#| "upgrading the system to the Server Base pattern"
-msgid ""
-"This is the minimal runtime system. It is really a minimal system. It is "
-"intended as base for Appliances."
-msgstr ""
-"Ez egy minimális Novell SUSE Linux Enterprise futtatókörnyezet. "
-"Bejelentkezést követően a parancssori felület indul el, amely tökéletesen "
-"elegendő különböző készülékek alaprendszereként. A minimális telepítési "
-"minta támogatása csak OEM partnerek számára érhető el, vagy azoknak, aki a "
-"Kiszolgáló alapmintára bővítik a rendszert."
-
 #. leap/patterns-base/patterns-base-update_test/summary
 msgid "Tests for the Update Stack"
 msgstr "Frissítés tesztelése"
@@ -1259,6 +1266,31 @@ msgid ""
 msgstr ""
 "Csomagok, amelyeket a frissítés ellenőrzéséhez használnak.  Ezek kis méretű "
 "csomagok, amelyeknek nincsen önálló funkcionalitása."
+
+#. leap/patterns-budgie/patterns-budgie-budgie/summary
+#, fuzzy
+#| msgid "LXDE Desktop Environment"
+msgid "Budgie Desktop Environment"
+msgstr "LXDE asztali környezet"
+
+#. leap/patterns-budgie/patterns-budgie-budgie/description
+msgid ""
+"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
+"the way of the user."
+msgstr ""
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/summary
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/description
+#, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
+msgid "Applets for Budgie Desktop Environment"
+msgstr "XFCE asztali környezet alapcsomagok."
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/category
+#, fuzzy
+#| msgid "Remote Desktop"
+msgid "Budgie Desktop"
+msgstr "Távoli munkaasztal"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
@@ -1494,6 +1526,20 @@ msgstr "Qt fejlesztői csomag"
 #, fuzzy
 #| msgid "Tools and libraries for .NET development using Mono."
 msgid "Tools and libraries for software development using Qt 5."
+msgstr ""
+".NET fejlesztéshez használt segédprogramok és programkönyvtárak Mono "
+"használatával."
+
+#. leap/patterns-kde/patterns-kde-devel_qt6/summary
+#, fuzzy
+msgid "Qt 6 Development"
+msgstr "Qt fejlesztői csomag"
+
+# 48771 AttribValues/label
+#. leap/patterns-kde/patterns-kde-devel_qt6/description
+#, fuzzy
+#| msgid "Tools and libraries for .NET development using Mono."
+msgid "Tools and libraries for software development using Qt 6."
 msgstr ""
 ".NET fejlesztéshez használt segédprogramok és programkönyvtárak Mono "
 "használatával."
@@ -1867,31 +1913,6 @@ msgid ""
 "security policy enforcement."
 msgstr ""
 
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/summary
-#, fuzzy
-#| msgid "LXDE Desktop Environment"
-msgid "Budgie Desktop Environment"
-msgstr "LXDE asztali környezet"
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/description
-msgid ""
-"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
-"the way of the user."
-msgstr ""
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/summary
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/description
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
-msgid "Applets for Budgie Desktop Environment"
-msgstr "XFCE asztali környezet alapcsomagok."
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/category
-#, fuzzy
-#| msgid "Remote Desktop"
-msgid "Budgie Desktop"
-msgstr "Távoli munkaasztal"
-
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
 msgstr ""
@@ -2033,20 +2054,6 @@ msgstr "KDE irodai alkalmazások"
 #| msgid "KDE Utilities"
 msgid "Deepin Utilities"
 msgstr "KDE segédprogramok"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/summary
-#, fuzzy
-msgid "Qt 6 Development"
-msgstr "Qt fejlesztői csomag"
-
-# 48771 AttribValues/label
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/description
-#, fuzzy
-#| msgid "Tools and libraries for .NET development using Mono."
-msgid "Tools and libraries for software development using Qt 6."
-msgstr ""
-".NET fejlesztéshez használt segédprogramok és programkönyvtárak Mono "
-"használatával."
 
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
@@ -2302,25 +2309,14 @@ msgstr ""
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr ""
 
-#. tumbleweed/patterns-wsl/patterns-wsl-base/summary
-msgid "Base WSL packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-base/description
-msgid ""
-"This package contains the wsl_base pattern: recommended tools,libraries for "
-"using WSL."
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/summary
-msgid "WSL GUI packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/description
-msgid ""
-"This package contains the wsl_gui pattern: recommended tools,libraries for "
-"using WSLg."
-msgstr ""
+#~ msgid ""
+#~ "This is the minimal SLE runtime system. It is really a minimal system, "
+#~ "you can login and a shell will be started, that's all. It is intended as "
+#~ "base for Appliances."
+#~ msgstr ""
+#~ "Ez egy minimális SLE futtatókörnyezet. Bejelentkezést követően a "
+#~ "parancssori felület indul el, amely tökéletesen elegendő különböző "
+#~ "készülékek alaprendszereként."
 
 #, fuzzy
 #~| msgid ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Chinese (China) (packages-i18n)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2021-05-17 10:59+0000\n"
 "Last-Translator: Grace Yu <grace.yu@excel-gits.com>\n"
 "Language-Team: Chinese (China) <https://l10n.opensuse.org/projects/packages-"
@@ -28,6 +28,7 @@ msgstr "此软件集将安装全部所选软件集的 32 位变体。之后将�
 #. SLE/patterns-base/patterns-base-apparmor/category
 #. SLE/patterns-base/patterns-base-base/category
 #. SLE/patterns-base/patterns-base-basesystem/category
+#. SLE/patterns-base/patterns-base-bootloader/category
 #. SLE/patterns-base/patterns-base-enhanced_base/category
 #. SLE/patterns-base/patterns-base-minimal_base/category
 #. SLE/patterns-base/patterns-base-sw_management/category
@@ -97,6 +98,14 @@ msgstr "此软件集可安装一个相当基础的桌面（icewm）。"
 msgid "Graphical Environments"
 msgstr "图形环境"
 
+#. SLE/patterns-base/patterns-base-bootloader/summary
+msgid "Bootloader"
+msgstr "引导加载器"
+
+#. SLE/patterns-base/patterns-base-bootloader/description
+msgid "This pattern holds files required for booting the system"
+msgstr "此软件集包含引导系统所需的文件"
+
 #. SLE/patterns-base/patterns-base-documentation/summary
 #. SLE/patterns-base/patterns-base-documentation/description
 msgid "Help and Support Documentation"
@@ -120,6 +129,34 @@ msgstr "这是增强的基础运行时系统，附带了许多便利的软件包
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "对 enhanced_base 进行补充的 32 位软件集。"
 
+#. SLE/patterns-base/patterns-base-fips/summary
+msgid "FIPS 140-2 specific packages"
+msgstr "FIPS 140-2 特定的软件包"
+
+#. SLE/patterns-base/patterns-base-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+"此软件集会安装 FIPS 140-2 特定的软件包，以便对使用中的各种加密模块进行补充。"
+"如果您要运行“fips=1”的机器，则需要安装此软件集。\n"
+"\n"
+"请注意，此软件集仅支持符合 FIPS 140-2 的操作，不会直接使系统 FIPS 140-2 获得"
+"认证或验证。\n"
+"\n"
+"请参见有关 FIPS 140-2 认证状态的 SUSE 官方声明。"
+
+#. SLE/patterns-base/patterns-base-fips/category
+msgid "Primary Functions"
+msgstr "主要功能"
+
 #. SLE/patterns-base/patterns-base-minimal_base/summary
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
 msgid "Minimal Appliance Base"
@@ -127,12 +164,9 @@ msgstr "极简设备基础"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
-"This is the minimal SLE runtime system. It is really a minimal system, you "
-"can login and a shell will be started, that's all. It is intended as base "
-"for Appliances."
-msgstr ""
-"这是 SUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一个壳"
-"层，这就是全部了。它的目的是作为 Appliances 的基础。"
+"This is the minimal runtime system. It is really a minimal system. It is "
+"intended as base for Appliances."
+msgstr "这是最小运行时系统。它是真正意义上的极简系统，用于作为设备的基础。"
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -282,12 +316,6 @@ msgstr "SLE Real Time 模块"
 msgid "Provide tools and patches to fix kernel at runtime."
 msgstr "提供用于在运行时修复内核的工具和增补程序。"
 
-#. SLE/patterns-rt/patterns-rt-rt_sles/category
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
-#. SLE/patterns-wbem/patterns-wbem-WBEM/category
-msgid "Primary Functions"
-msgstr "主要功能"
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 msgid "Oracle Server Base"
 msgstr "Oracle 服务器基础"
@@ -304,6 +332,31 @@ msgstr "基于网络的企业管理"
 msgid "Web-based enterprise management."
 msgstr "基于网络的企业管理。"
 
+#. SLE/patterns-wsl/patterns-wsl-base/summary
+msgid "Base WSL packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/description
+msgid ""
+"This package contains the wsl_base pattern: recommended tools,libraries for "
+"using WSL."
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/category
+#. SLE/patterns-wsl/patterns-wsl-gui/category
+msgid "Development"
+msgstr "开发"
+
+#. SLE/patterns-wsl/patterns-wsl-gui/summary
+msgid "WSL GUI packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-gui/description
+msgid ""
+"This package contains the wsl_gui pattern: recommended tools,libraries for "
+"using WSLg."
+msgstr ""
+
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
 msgstr "SLES for SAP Applications 软件集"
@@ -316,12 +369,6 @@ msgstr "基础开发环境"
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
 msgid "Minimal set of tools for compiling and linking applications."
 msgstr "编译和链接应用程序所需的最小工具集。"
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "开发"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -716,31 +763,6 @@ msgstr ""
 msgid "The 32bit pattern complementing directory_server."
 msgstr "目录服务器软件集的 32 位版本。"
 
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
-msgid "FIPS 140-2 specific packages"
-msgstr "FIPS 140-2 特定的软件包"
-
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
-msgid ""
-"This pattern installs the FIPS 140-2 specific packages that complete the "
-"various cryptographic modules in use. It is required if you want to run the "
-"machine with \"fips=1\".\n"
-"\n"
-"Please note that this pattern only enables FIPS 140-2 compliant operation, "
-"it does not directly make the system FIPS 140-2 certified nor validated.\n"
-"\n"
-"Please refer to SUSE official statements on the state of FIPS 140-2 "
-"certification."
-msgstr ""
-"此软件集会安装 FIPS 140-2 特定的软件包，以便对使用中的各种加密模块进行补充。"
-"如果您要运行“fips=1”的机器，则需要安装此软件集。\n"
-"\n"
-"请注意，此软件集仅支持符合 FIPS 140-2 的操作，不会直接使系统 FIPS 140-2 获得"
-"认证或验证。\n"
-"\n"
-"请参见有关 FIPS 140-2 认证状态的 SUSE 官方声明。"
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
 msgstr "对 fips 进行补充的 32 位软件集。"
@@ -1080,14 +1102,6 @@ msgstr ""
 msgid "Base System (alias pattern for base)"
 msgstr "基础系统（base 的别名软件集）"
 
-#. leap/patterns-base/patterns-base-bootloader/summary
-msgid "Bootloader"
-msgstr "引导加载器"
-
-#. leap/patterns-base/patterns-base-bootloader/description
-msgid "This pattern holds files required for booting the system"
-msgstr "此软件集包含引导系统所需的文件"
-
 #. leap/patterns-base/patterns-base-console/summary
 msgid "Console Tools"
 msgstr "控制台工具"
@@ -1098,12 +1112,6 @@ msgid ""
 "environment."
 msgstr "对那些使用控制台而不用图形桌面环境的用户有用的程序。"
 
-#. leap/patterns-base/patterns-base-minimal_base/description
-msgid ""
-"This is the minimal runtime system. It is really a minimal system. It is "
-"intended as base for Appliances."
-msgstr "这是最小运行时系统。它是真正意义上的极简系统，用于作为设备的基础。"
-
 #. leap/patterns-base/patterns-base-update_test/summary
 msgid "Tests for the Update Stack"
 msgstr "更新栈测试"
@@ -1113,6 +1121,31 @@ msgid ""
 "Packages used for testing that the update stack works.  These tiny packages "
 "do not have any functionality themselves."
 msgstr "测试更新栈工作状况所需的软件包。这些小软件包本身并没有任何功能。"
+
+#. leap/patterns-budgie/patterns-budgie-budgie/summary
+#, fuzzy
+#| msgid "Deepin Desktop Environment"
+msgid "Budgie Desktop Environment"
+msgstr "Deepin 桌面环境"
+
+#. leap/patterns-budgie/patterns-budgie-budgie/description
+msgid ""
+"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
+"the way of the user."
+msgstr ""
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/summary
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/description
+#, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
+msgid "Applets for Budgie Desktop Environment"
+msgstr "XFCE 桌面环境的基础软件包。"
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/category
+#, fuzzy
+#| msgid "Remote Desktop"
+msgid "Budgie Desktop"
+msgstr "远程桌面"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
@@ -1311,6 +1344,18 @@ msgstr "Qt 5 开发"
 
 #. leap/patterns-kde/patterns-kde-devel_qt5/description
 msgid "Tools and libraries for software development using Qt 5."
+msgstr "使用 Qt5 进行软件开发所需的工具和库文件。"
+
+#. leap/patterns-kde/patterns-kde-devel_qt6/summary
+#, fuzzy
+#| msgid "Qt 5 Development"
+msgid "Qt 6 Development"
+msgstr "Qt 5 开发"
+
+#. leap/patterns-kde/patterns-kde-devel_qt6/description
+#, fuzzy
+#| msgid "Tools and libraries for software development using Qt 5."
+msgid "Tools and libraries for software development using Qt 6."
 msgstr "使用 Qt5 进行软件开发所需的工具和库文件。"
 
 #. leap/patterns-kde/patterns-kde-kde/summary
@@ -1652,31 +1697,6 @@ msgstr ""
 "(MAC)）的机制。其体系结构会尽力分开实施安全决策与安全策略，并精简安全策略实施"
 "涉及的软件量。"
 
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/summary
-#, fuzzy
-#| msgid "Deepin Desktop Environment"
-msgid "Budgie Desktop Environment"
-msgstr "Deepin 桌面环境"
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/description
-msgid ""
-"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
-"the way of the user."
-msgstr ""
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/summary
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/description
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
-msgid "Applets for Budgie Desktop Environment"
-msgstr "XFCE 桌面环境的基础软件包。"
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/category
-#, fuzzy
-#| msgid "Remote Desktop"
-msgid "Budgie Desktop"
-msgstr "远程桌面"
-
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
 msgstr "非集群系统的容器运行时"
@@ -1799,18 +1819,6 @@ msgstr "Deepin 办公"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
 msgid "Deepin Utilities"
 msgstr "Deepin 实用工具"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/summary
-#, fuzzy
-#| msgid "Qt 5 Development"
-msgid "Qt 6 Development"
-msgstr "Qt 5 开发"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/description
-#, fuzzy
-#| msgid "Tools and libraries for software development using Qt 5."
-msgid "Tools and libraries for software development using Qt 6."
-msgstr "使用 Qt5 进行软件开发所需的工具和库文件。"
 
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
@@ -2045,25 +2053,13 @@ msgstr "Sway Tiling Wayland 合成器和相关工具"
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr "Sway Tiling Wayland 合成器和相关工具。"
 
-#. tumbleweed/patterns-wsl/patterns-wsl-base/summary
-msgid "Base WSL packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-base/description
-msgid ""
-"This package contains the wsl_base pattern: recommended tools,libraries for "
-"using WSL."
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/summary
-msgid "WSL GUI packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/description
-msgid ""
-"This package contains the wsl_gui pattern: recommended tools,libraries for "
-"using WSLg."
-msgstr ""
+#~ msgid ""
+#~ "This is the minimal SLE runtime system. It is really a minimal system, "
+#~ "you can login and a shell will be started, that's all. It is intended as "
+#~ "base for Appliances."
+#~ msgstr ""
+#~ "这是 SUSE 的最小运行时系统。它真的是一个最小化的系统，您可以登录，打开一个"
+#~ "壳层，这就是全部了。它的目的是作为 Appliances 的基础。"
 
 #~ msgid ""
 #~ "This is the minimal openSUSE runtime system. It is really a minimal "

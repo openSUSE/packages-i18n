@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2022-02-24 13:12+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
-"r-master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/r-"
+"master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -567,6 +567,8 @@ msgstr ""
 #. leap/rust1.53/cargo1.53/summary
 #. leap/rust1.54/cargo1.54/summary
 #. leap/rust1.55/cargo1.55/summary
+#. leap/rust1.56/cargo1.56/summary
+#. leap/rust1.57/cargo1.57/summary
 msgid "The Rust package manager"
 msgstr "Rustパッケージマネージャ"
 
@@ -575,6 +577,8 @@ msgstr "Rustパッケージマネージャ"
 #. leap/rust1.53/cargo1.53/description
 #. leap/rust1.54/cargo1.54/description
 #. leap/rust1.55/cargo1.55/description
+#. leap/rust1.56/cargo1.56/description
+#. leap/rust1.57/cargo1.57/description
 msgid "Cargo downloads dependencies of Rust projects and compiles it."
 msgstr "CargoはRustプロジェクトの依存関係をダウンロードしてコンパイルします。"
 
@@ -773,9 +777,10 @@ msgid ""
 "- libsiw: A software implementation of the iWarp protocol\n"
 "- libvmw_pvrdma: VMware paravirtual RDMA device"
 msgstr ""
-"libibverbsは、InfiniBandアーキテクチャ仕様およびRDMAプロトコル動詞仕様に記述されているように、ユーザ空間プロセスがRDMA「動詞」"
-"を使用できるようにするライブラリです。これには、高速パス操作のためのユーザ空間からInfiniBand/"
-"iWARPアダプタへの直接ハードウェアアクセス(カーネルバイパス)が含まれます。\n"
+"libibverbsは、InfiniBandアーキテクチャ仕様およびRDMAプロトコル動詞仕様に記述"
+"されているように、ユーザ空間プロセスがRDMA「動詞」を使用できるようにするライ"
+"ブラリです。これには、高速パス操作のためのユーザ空間からInfiniBand/iWARPアダ"
+"プタへの直接ハードウェアアクセス(カーネルバイパス)が含まれます。\n"
 "\n"
 "デバイス固有のプラグインibverbsユーザ空間ドライバが含まれています。\n"
 "- libcxgb3:Chelsio T3 iWARP HCA\n"
@@ -897,8 +902,10 @@ msgid ""
 msgstr ""
 "このライブラリは,Raft 合意プロトコルの完全非同期C実装です。\n"
 "\n"
-"コアRaft アルゴリズムロジックと、ネットワーキングおよび永続ストレージ用のI/Oを定義するプラグイン可能なインターフェイスを実装します。このアルゴリズ"
-"ムは、リーダーシップの選択、ログ複製、ログ圧縮、およびメンバーシップの変更をサポートします。\n"
+"コアRaft アルゴリズムロジックと、ネットワーキングおよび永続ストレージ用のI/O"
+"を定義するプラグイン可能なインターフェイスを実装します。このアルゴリズムは、"
+"リーダーシップの選択、ログ複製、ログ圧縮、およびメンバーシップの変更をサポー"
+"トします。\n"
 "\n"
 "libuvに基づくI/Oインタフェースのストック実装が含まれます。"
 
@@ -3223,6 +3230,45 @@ msgstr ""
 "(mksreiserfs) のほか、一貫性を確認するためのユーティリティ(reiserfsck) 、サイ"
 "ズ変更を行なうユーティリティ (resize_reiserfs) が含まれています。"
 
+#. leap/rekor/summary
+msgid "Supply Chain Transparency Log"
+msgstr "サプライチェーンの透明性ログ"
+
+#. leap/rekor/description
+msgid ""
+"Rekor's goals are to provide an immutable tamper resistant ledger of "
+"metadata generated within a software projects supply chain. Rekor will "
+"enable software maintainers and build systems to record signed metadata to "
+"an immutable record. Other parties can then query said metadata to enable "
+"them to make informed decisions on trust and non-repudiation of an object's "
+"lifecycle. For more details visit the sigstore website\n"
+"\n"
+"The Rekor project provides a restful API based server for validation and a "
+"transparency log for storage. A CLI application is available to make and "
+"verify entries, query the transparency log for inclusion proof, integrity "
+"verification of the transparency log or retrieval of entries by either "
+"public key or artifact.\n"
+"\n"
+"Rekor fulfils the signature transparency role of sigstore's software signing "
+"infrastructure. However, Rekor can be run on its own and is designed to be "
+"extensible to working with different manifest schemas and PKI tooling."
+msgstr ""
+"Rekorの目標は、ソフトウェアプロジェクトのサプライチェーン内で生成されたメタ"
+"データの不変で改ざん耐性のある台帳を提供することです。Rekorは、ソフトウェアメ"
+"ンテナーとビルドシステムが、署名されたメタデータを不変レコードに記録できるよ"
+"うにします。その後、他の関係者は、前記メタデータを照会して、オブジェクトのラ"
+"イフサイクルの信頼及び否認防止に関する情報に基づいた決定を行うことができるよ"
+"うにします。詳細については、sigstoreのWebサイトを参照してください。\n"
+"\n"
+"Rekorプロジェクトでは、検証用のAPIベースのサーバとストレージ用の透過ログを提"
+"供します。CLIアプリケーションを使用して、エントリの作成と検証、透過ログへの包"
+"含証明の照会、透過ログの整合性検証、公開キーまたはアーティファクトによるエン"
+"トリの取得を実行できます。\n"
+"\n"
+"Rekorはsigstoreのソフトウェア署名インフラにおいて、署名の透明性という役目を果"
+"たしています。しかし、Rekorはそれ自体で実行することができ、異なるマニフェスト"
+"スキーマとPKIツールで動作するように拡張できるように設計されています。"
+
 #. leap/relaxngDatatype/summary
 msgid "RELAX NG Datatype API"
 msgstr "RELAX NGデータ型API"
@@ -3667,7 +3713,9 @@ msgstr "DPAA2を作成・管理するツール"
 msgid ""
 "restool is a user space application providing the ability to dynamically "
 "create and manage DPAA2 containers and objects from Linux."
-msgstr "restoolは、LinuxからDPAA2コンテナとオブジェクトを動的に作成し管理する機能を提供するユーザ空間アプリケーションです。"
+msgstr ""
+"restoolは、LinuxからDPAA2コンテナとオブジェクトを動的に作成し管理する機能を提"
+"供するユーザ空間アプリケーションです。"
 
 #. leap/restorecond/summary
 msgid "Daemon to restore SELinux contexts"
@@ -5815,6 +5863,23 @@ msgstr ""
 "\n"
 "このパッケージには、rsyslogの追加ドキュメントが含まれています。"
 
+#. leap/rsyslog/rsyslog-module-dbi/summary
+msgid "Database support via DBI"
+msgstr "DBIによるデータベースのサポート"
+
+#. leap/rsyslog/rsyslog-module-dbi/description
+msgid ""
+"Rsyslog is an enhanced multi-threaded syslog daemon. See rsyslog package.\n"
+"\n"
+"This package provides a module with the support for logging into DBI "
+"supported databases."
+msgstr ""
+"Rsyslogは、拡張されたマルチスレッドsyslogデーモンです。rsyslogパッケージを参"
+"照してください。\n"
+"\n"
+"このパッケージは、DBIでサポートされるデータベースへのログインをサポートするモ"
+"ジュールを提供します。"
+
 #. leap/rsyslog/rsyslog-module-elasticsearch/summary
 msgid "ElasticSearch output module for syslog"
 msgstr "syslogのElasticSearch出力モジュール"
@@ -6034,6 +6099,21 @@ msgstr ""
 "このモジュールでは、syslogメッセージをSNMPv1およびv2cトラップとして送信できま"
 "す。"
 
+#. leap/rsyslog/rsyslog-module-udpspoof/summary
+msgid "UDP spoof support module for syslog"
+msgstr "syslogのUDPスプーフィングサポートモジュール"
+
+#. leap/rsyslog/rsyslog-module-udpspoof/description
+msgid ""
+"Rsyslog is an enhanced multi-threaded syslog daemon. See rsyslog package.\n"
+"\n"
+"This module provides a UDP forwarder that allows changing the sender address."
+msgstr ""
+"Rsyslogは、拡張されたマルチスレッドsyslogデーモンです。rsyslogパッケージを参"
+"照してください。\n"
+"\n"
+"このモジュールは、送信元アドレスを変更できるUDPフォワーダを提供します。"
+
 #. leap/rt-tests/summary
 msgid "Realtime Kernel Testsuite"
 msgstr "リアルタイムカーネルテストスイート"
@@ -6150,7 +6230,6 @@ msgstr "Realtek 802.11 ac 8812 au wifiカード用カーネルドライバ"
 #. leap/rtl8812au/description
 #. leap/rtl8812au/rtl8812au-kmp-64kb/description
 #. leap/rtl8812au/rtl8812au-kmp-default/description
-#. leap/rtl8812au/rtl8812au-kmp-preempt/description
 msgid ""
 "Kernel driver for Realtek 802.11ac 8812au wifi cards\n"
 "\n"
@@ -6171,7 +6250,6 @@ msgstr ""
 
 #. leap/rtl8812au/rtl8812au-kmp-64kb/summary
 #. leap/rtl8812au/rtl8812au-kmp-default/summary
-#. leap/rtl8812au/rtl8812au-kmp-preempt/summary
 msgid "Kernel driver for Realtek 802.11ac rtl8812au wifi cards"
 msgstr "Realtek 802.11 ac rtl8812au wifiカード用カーネルドライバ"
 
@@ -6294,13 +6372,11 @@ msgstr "Realtek 8852 AEのファームウェア。802.11 ax/Wi-Fi 6対応のWifi
 
 #. leap/rtw89/rtw89-kmp-64kb/summary
 #. leap/rtw89/rtw89-kmp-default/summary
-#. leap/rtw89/rtw89-kmp-preempt/summary
 msgid "Driver for Realtek 8852AE Wifi chip"
 msgstr "Realtek 8852 AE Wifiチップ用ドライバ"
 
 #. leap/rtw89/rtw89-kmp-64kb/description
 #. leap/rtw89/rtw89-kmp-default/description
-#. leap/rtw89/rtw89-kmp-preempt/description
 msgid ""
 "A driver for the Realtek 8852AE. Wifi chip with 802.11ax / Wi-Fi 6 support."
 msgstr "Realtek 8852 AE用のドライバ。802.11 ax/Wi-Fi 6対応のWifiチップ。"
@@ -6313,7 +6389,9 @@ msgstr "パッケージrtw89-kmpのUEFIセキュアブート証明書"
 msgid ""
 "This package contains the UEFI Secure Boot certificate used to sign modules "
 "in the rtw89-kmp packages."
-msgstr "このパッケージには、rtw89-kmpパッケージ内のモジュールへの署名に使用されるUEFIセキュアブート証明書が含まれています。"
+msgstr ""
+"このパッケージには、rtw89-kmpパッケージ内のモジュールへの署名に使用されるUEFI"
+"セキュアブート証明書が含まれています。"
 
 #. leap/rubber/summary
 msgid "An automated system for building LaTeX documents"
@@ -6570,9 +6648,7 @@ msgid ""
 "thread, discussions. RC settings can be changed directly.\n"
 "\n"
 "It's a native alternative to the official embedded browser type of desktop "
-"app available from Rocket.Chat project.\n"
-"\n"
-"Ruqola uses Kirigami components based on QtQuick."
+"app available from Rocket.Chat project."
 msgstr ""
 "RuqolaはKDEデスクトップ用のRocket.Chatクライアントです。\n"
 "\n"
@@ -6581,15 +6657,23 @@ msgstr ""
 "す。\n"
 "\n"
 "これは、Rocket.Chatプロジェクトで提供されている公式の組み込みブラウザタイプの"
-"デスクトップアプリに代わるネイティブなものです。\n"
-"\n"
-"Ruqolaでは、QtQuickをベースにした Kirigami コンポーネントを使用しています。"
+"デスクトップアプリに代わるネイティブなものです。"
+
+#. leap/ruqola/ruqola-lang/summary
+msgid "Translations for package ruqola"
+msgstr "パッケージruqolaの翻訳"
+
+#. leap/ruqola/ruqola-lang/description
+msgid "Provides translations for the \"ruqola\" package."
+msgstr "「ruqola」パッケージの翻訳を提供します。"
 
 #. leap/rust/summary
 #. leap/rust1.43/summary
 #. leap/rust1.53/summary
 #. leap/rust1.54/summary
 #. leap/rust1.55/summary
+#. leap/rust1.56/summary
+#. leap/rust1.57/summary
 msgid "A systems programming language"
 msgstr "システム・プログラミング言語"
 
@@ -6598,6 +6682,8 @@ msgstr "システム・プログラミング言語"
 #. leap/rust1.53/description
 #. leap/rust1.54/description
 #. leap/rust1.55/description
+#. leap/rust1.56/description
+#. leap/rust1.57/description
 msgid ""
 "Rust is a systems programming language focused on three goals: safety, "
 "speed, and concurrency. It maintains these goals without having a garbage "
@@ -7013,7 +7099,8 @@ msgid ""
 "* Can be extended with plugins.\n"
 "* Is GPLv3-licensed free software."
 msgstr ""
-"Radicaleは、小さくても強力なCalDAV(カレンダー、To Doリスト)とCardDAV(連絡先)サーバであり、以下の機能を備えています。\n"
+"Radicaleは、小さくても強力なCalDAV(カレンダー、To Doリスト)とCardDAV(連絡先)"
+"サーバであり、以下の機能を備えています。\n"
 "* カレンダーと連絡先リストをCalDAV、CardDAV、HTTPを通じて共有。\n"
 "* イベント、todo、日記、名刺をサポートしています。\n"
 "* すぐに利用でき、複雑なセットアップや構成は不要です。\n"
@@ -7052,8 +7139,8 @@ msgid ""
 msgstr ""
 "CargoはRustプロジェクトの依存関係をダウンロードしてコンパイルします。\n"
 "\n"
-"⚠　これはビルドパイプライン用のRustツールチェーンです。開発環境用にRustをインストールしたい場合は、代わりに'rustup'をインストールする必要"
-"があります。"
+"⚠　これはビルドパイプライン用のRustツールチェーンです。開発環境用にRustをイン"
+"ストールしたい場合は、代わりに'rustup'をインストールする必要があります。"
 
 #. tumbleweed/recastnavigation/libDebugUtils1/summary
 msgid "Debug Utils Library for Recastnavigation"
@@ -7062,7 +7149,9 @@ msgstr "Recastnavigation用デバッグユーティリティライブラリ"
 #. tumbleweed/recastnavigation/libDebugUtils1/description
 msgid ""
 "This package contains the debug utilities library for the recastnavigation."
-msgstr "このパッケージには、recastnavigation用のデバッグユーティリティライブラリが含まれています。"
+msgstr ""
+"このパッケージには、recastnavigation用のデバッグユーティリティライブラリが含"
+"まれています。"
 
 #. tumbleweed/recastnavigation/libDetour1/summary
 msgid "Detour Library for Recastnatnaviagtion"
@@ -7070,7 +7159,9 @@ msgstr "Recastnatnaviagtionの Detour ライブラリ"
 
 #. tumbleweed/recastnavigation/libDetour1/description
 msgid "This package contains the detour library part of Recastnatnaviagtion."
-msgstr "このパッケージには、Recastnatnaviagtionの detour ライブラリの一部が含まれています。"
+msgstr ""
+"このパッケージには、Recastnatnaviagtionの detour ライブラリの一部が含まれてい"
+"ます。"
 
 #. tumbleweed/recastnavigation/libDetourCrowd1/summary
 msgid "Detour Crowd Library for Recastnatnaviagtion"
@@ -7079,7 +7170,9 @@ msgstr "Recastnatnaviagtionのための Detour Crowd ライブラリ"
 #. tumbleweed/recastnavigation/libDetourCrowd1/description
 msgid ""
 "This package contains the detour crowd library part of Recastnatnaviagtion."
-msgstr "このパッケージには、Recastnatnaviagtionの Detour Crowd ライブラリの一部が含まれています。"
+msgstr ""
+"このパッケージには、Recastnatnaviagtionの Detour Crowd ライブラリの一部が含ま"
+"れています。"
 
 #. tumbleweed/recastnavigation/libDetourTileCache1/summary
 msgid "Detour Tile Cache Library for Recastnatnaviagtion"
@@ -7089,7 +7182,9 @@ msgstr "Recastnatnaviagtionの Detour タイルキャッシュライブラリ"
 msgid ""
 "This package contains the detour tile cache library part of "
 "Recastnatnaviagtion."
-msgstr "このパッケージには、Recastnatnaviagtionの Detour タイルキャッシュライブラリ部分が含まれています。"
+msgstr ""
+"このパッケージには、Recastnatnaviagtionの Detour タイルキャッシュライブラリ部"
+"分が含まれています。"
 
 #. tumbleweed/recastnavigation/libRecast1/summary
 msgid "Recast Library for Recastnatnaviagtion"
@@ -7097,7 +7192,8 @@ msgstr "Recastnatnaviagtion向け Recast ライブラリ"
 
 #. tumbleweed/recastnavigation/libRecast1/description
 msgid "This package contains the recast library of Recastnatnaviagtion."
-msgstr "このパッケージには、Recastnatnaviagtionの Recast ライブラリが含まれています。"
+msgstr ""
+"このパッケージには、Recastnatnaviagtionの Recast ライブラリが含まれています。"
 
 #. tumbleweed/re/libre1/summary
 msgid "Library for real-time communications with async IO support"
@@ -7143,7 +7239,8 @@ msgstr ""
 
 #. tumbleweed/rnnoise/librnnoise0/summary
 msgid "Recurrent neural network for audio noise reduction - Shared library"
-msgstr "オーディオノイズ低減のためのリカレントニューラルネットワーク - 共有ライブラリ"
+msgstr ""
+"オーディオノイズ低減のためのリカレントニューラルネットワーク - 共有ライブラリ"
 
 #. tumbleweed/rnnoise/librnnoise0/description
 msgid ""
@@ -7237,7 +7334,8 @@ msgstr "リバースエンジニアリングフレームワーク"
 #. tumbleweed/radare2/description
 msgid ""
 "Opensource tools to disassemble, debug, analyze and manipulate binary files."
-msgstr "バイナリファイルを分解、デバッグ、分析、操作するためのオープンソースツール。"
+msgstr ""
+"バイナリファイルを分解、デバッグ、分析、操作するためのオープンソースツール。"
 
 #. tumbleweed/radare2/radare2-devel/summary
 msgid "Devel files for radare2"
@@ -7281,8 +7379,9 @@ msgid ""
 "format. It features small explicit keys, no config options, and UNIX-style "
 "composability."
 msgstr ""
-"Rageは単純で最新のセキュアなファイル暗号化ツールで、ageフォーマットを使用しています。小さな明示的なキーを持ち、設定オプションがなく、UNIXスタイ"
-"ルの構成機能を備えています。"
+"Rageは単純で最新のセキュアなファイル暗号化ツールで、ageフォーマットを使用して"
+"います。小さな明示的なキーを持ち、設定オプションがなく、UNIXスタイルの構成機"
+"能を備えています。"
 
 #. tumbleweed/rage-encryption/rage-encryption-bash-completion/summary
 msgid "Bash completion for rage-encryption"
@@ -7313,8 +7412,9 @@ msgid ""
 "with your Rancher Server. For usage information see: https://rancher.com/"
 "docs/rancher/v2.x/en/cli/"
 msgstr ""
-"Rancher Command Line Interface(CLI;コマンドラインインターフェイス)は、Rancherサーバと対話するための統合ツールで"
-"す。使用方法については、https://rancher.com/docs/rancher/v2.x/ja/cli/を参照してください。"
+"Rancher Command Line Interface(CLI;コマンドラインインターフェイス)は、Rancher"
+"サーバと対話するための統合ツールです。使用方法については、https://rancher."
+"com/docs/rancher/v2.x/ja/cli/を参照してください。"
 
 #. tumbleweed/rancher-kim/summary
 msgid "Rancher kim - The Kubernetes Image Manager"
@@ -7329,9 +7429,11 @@ msgid ""
 "talking to the backing containerd/CRI directly. kim enables building images "
 "locally, natively on your k3s cluster."
 msgstr ""
-"kimはKubernetes対応のCLIであり、Kubeletの基盤となるcontainerdソケット(イメージを構築するため)にバインドされたBuild"
-"Kitデーモンと、CLIがイメージ管理(プッシュ、プルなどを考慮)のために活用する小さなサーバサイドエージェントで構成される、小さなビルダーバックエンドを"
-"インストールします。kimを使用すると、k3sクラスタ上でネイティブにローカルにイメージを構築できます。"
+"kimはKubernetes対応のCLIであり、Kubeletの基盤となるcontainerdソケット(イメー"
+"ジを構築するため)にバインドされたBuildKitデーモンと、CLIがイメージ管理(プッ"
+"シュ、プルなどを考慮)のために活用する小さなサーバサイドエージェントで構成され"
+"る、小さなビルダーバックエンドをインストールします。kimを使用すると、k3sクラ"
+"スタ上でネイティブにローカルにイメージを構築できます。"
 
 #. tumbleweed/rancher-selinux/summary
 msgid "SELinux policy module for Rancher"
@@ -7341,7 +7443,9 @@ msgstr "Rancher用のSELinuxポリシーモジュール"
 msgid ""
 "This package installs and sets up the SELinux policy security module for "
 "Rancher."
-msgstr "このパッケージは、Rancher用のSELinuxポリシーセキュリティモジュールをインストールし、設定します。"
+msgstr ""
+"このパッケージは、Rancher用のSELinuxポリシーセキュリティモジュールをインス"
+"トールし、設定します。"
 
 #. tumbleweed/range-v3/range-v3-devel/summary
 msgid "Development files for range-v3"
@@ -7393,12 +7497,13 @@ msgid ""
 "Note: config.txt should not be used to set manually params (gpu_mem, etc.) "
 "please create extraconfig.txt instead."
 msgstr ""
-"このパッケージは、Raspberry Piブートプロセスを設定します。2つのフレーバーがあります: * raspberrypi-firmware-"
-"config - デフォルトの設定 * raspberrypi-firmware-config-camera - start_x=1を有効にし、"
-"gpu_mem を増やしてカメラモジュールを使用できるようにする設定\n"
+"このパッケージは、Raspberry Piブートプロセスを設定します。2つのフレーバーがあ"
+"ります: * raspberrypi-firmware-config - デフォルトの設定 * raspberrypi-"
+"firmware-config-camera - start_x=1を有効にし、gpu_mem を増やしてカメラモ"
+"ジュールを使用できるようにする設定\n"
 "\n"
-"注:config.txtは、パラメータ(gpu_memなど)を手動で設定するために使用しないでください。代わりにextraconfig."
-"txtを作成してください。"
+"注:config.txtは、パラメータ(gpu_memなど)を手動で設定するために使用しないでく"
+"ださい。代わりにextraconfig.txtを作成してください。"
 
 #. tumbleweed/raspberrypi-firmware-eeprom/summary
 msgid "Raspberry Pi 4 EEPROM firmware upgrade package"
@@ -7685,7 +7790,9 @@ msgstr "Recastnavigationライブラリのインクルードファイル"
 msgid ""
 "This package contains files and libraries needed for develeopment with "
 "recastnavigation libraries."
-msgstr "このパッケージには、recastnavigationライブラリとの開発に必要なファイルとライブラリが含まれています。"
+msgstr ""
+"このパッケージには、recastnavigationライブラリとの開発に必要なファイルとライ"
+"ブラリが含まれています。"
 
 #. tumbleweed/reco/summary
 msgid "Audio Recording App"
@@ -7755,9 +7862,12 @@ msgid ""
 "- Python\n"
 "- YAML"
 msgstr ""
-"多くのデフォルトの正規表現パーサーには、最悪の場合の無限の複雑さがあります。正規表現の照合は、一致する入力文字列とともに提示された場合に迅速に行われます。"
-"しかし、一致しない入力ストリングがあると、正規表現のmatcherが異常なバックトラッキングループに入り、処理に時間がかかる可能性があります。これはサービ"
-"ス拒否を引き起こす可能性があります。なぜなら、CPUは正規表現を照合しようとして動かなくなるからです。\n"
+"多くのデフォルトの正規表現パーサーには、最悪の場合の無限の複雑さがあります。"
+"正規表現の照合は、一致する入力文字列とともに提示された場合に迅速に行われま"
+"す。しかし、一致しない入力ストリングがあると、正規表現のmatcherが異常なバック"
+"トラッキングループに入り、処理に時間がかかる可能性があります。これはサービス"
+"拒否を引き起こす可能性があります。なぜなら、CPUは正規表現を照合しようとして動"
+"かなくなるからです。\n"
 "\n"
 "このツールの目的は次のとおりです。\n"
 "* ReDoSに対して脆弱な正規表現を見つける\n"
@@ -7793,40 +7903,6 @@ msgstr ""
 "    大容量ファイルのサポート(1 TiBまでテスト済み) 整数/浮動小数点値タイプのデ"
 "コード マシンコードの分解 バイト範囲の強調表示と注釈"
 
-#. tumbleweed/rekor/summary
-msgid "Supply Chain Transparency Log"
-msgstr "サプライチェーンの透明性ログ"
-
-#. tumbleweed/rekor/description
-msgid ""
-"Rekor's goals are to provide an immutable tamper resistant ledger of "
-"metadata generated within a software projects supply chain. Rekor will "
-"enable software maintainers and build systems to record signed metadata to "
-"an immutable record. Other parties can then query said metadata to enable "
-"them to make informed decisions on trust and non-repudiation of an object's "
-"lifecycle. For more details visit the sigstore website\n"
-"\n"
-"The Rekor project provides a restful API based server for validation and a "
-"transparency log for storage. A CLI application is available to make and "
-"verify entries, query the transparency log for inclusion proof, integrity "
-"verification of the transparency log or retrieval of entries by either "
-"public key or artifact.\n"
-"\n"
-"Rekor fulfils the signature transparency role of sigstore's software signing "
-"infrastructure. However, Rekor can be run on its own and is designed to be "
-"extensible to working with different manifest schemas and PKI tooling."
-msgstr ""
-"Rekorの目標は、ソフトウェアプロジェクトのサプライチェーン内で生成されたメタデータの不変で改ざん耐性のある台帳を提供することです。Rekorは、ソフト"
-"ウェアメンテナーとビルドシステムが、署名されたメタデータを不変レコードに記録できるようにします。その後、他の関係者は、前記メタデータを照会して、オブジェク"
-"トのライフサイクルの信頼及び否認防止に関する情報に基づいた決定を行うことができるようにします。詳細については、sigstoreのWebサイトを参照してくだ"
-"さい。\n"
-"\n"
-"Rekorプロジェクトでは、検証用のAPIベースのサーバとストレージ用の透過ログを提供します。CLIアプリケーションを使用して、エントリの作成と検証、透過"
-"ログへの包含証明の照会、透過ログの整合性検証、公開キーまたはアーティファクトによるエントリの取得を実行できます。\n"
-"\n"
-"Rekorはsigstoreのソフトウェア署名インフラにおいて、署名の透明性という役目を果たしています。しかし、Rekorはそれ自体で実行することができ、"
-"異なるマニフェストスキーマとPKIツールで動作するように拡張できるように設計されています。"
-
 #. tumbleweed/relaxngcc/summary
 msgid "RELAX NG Compiler Compiler"
 msgstr "RELAX NGコンパイラコンパイラ"
@@ -7859,6 +7935,30 @@ msgstr ""
 "このパッケージには、openSUSE Tumbleweedの最も重要な変更を含むリリースノートが"
 "含まれています。"
 
+#. tumbleweed/reload4j/summary
+msgid "Revival of EOLed log4j 1.x"
+msgstr ""
+
+#. tumbleweed/reload4j/description
+msgid ""
+"The reload4j project is a fork of Apache log4j version 1.2.17 in order to "
+"fix most pressing security issues. It is intended as a drop-in replacement "
+"for log4j version 1.2.17; replacement of log4j.jar with reload4j.jar in a "
+"build without needing to make changes to source code."
+msgstr ""
+
+#. tumbleweed/reload4j/reload4j-javadoc/summary
+#, fuzzy
+#| msgid "Javadoc for replacer"
+msgid "Javadoc for reload4j"
+msgstr "replacerのJavadoc"
+
+#. tumbleweed/reload4j/reload4j-javadoc/description
+#, fuzzy
+#| msgid "This package contains the API documentation for resteasy."
+msgid "This package contains the API documentation for reload4j."
+msgstr "このパッケージには、resteasyのAPIドキュメントが含まれています。"
+
 #. tumbleweed/rem/rem-devel/summary
 msgid "Librem development files"
 msgstr "Librem開発ファイル"
@@ -7889,7 +7989,9 @@ msgstr "Remmina用VNCプロトコルプラグイン(GTK+ウィジェット経由
 msgid ""
 "This package provides the RDP protocol plugin for Remmina using the VNC "
 "viewer widget for GTK+."
-msgstr "このパッケージは、GTK+用のVNCビューアウィジェットを使用して、Remmina用のRDPプロトコルプラグインを提供します。"
+msgstr ""
+"このパッケージは、GTK+用のVNCビューアウィジェットを使用して、Remmina用のRDPプ"
+"ロトコルプラグインを提供します。"
 
 #. tumbleweed/remontoire/summary
 msgid "A keybinding viewer for i3 and other programs"
@@ -7956,8 +8058,8 @@ msgid ""
 "RenderDoc is a frame-capture based graphics debugger, currently available "
 "for Vulkan, D3D11, D3D12, OpenGL, and OpenGL ES development."
 msgstr ""
-"RenderDoc はフレームキャプチャベースのグラフィックデバッガであり、現在、Vulkan、D3D11、D3D12、OpenGL、OpenGL "
-"ES開発で利用できます。"
+"RenderDoc はフレームキャプチャベースのグラフィックデバッガであり、現在、"
+"Vulkan、D3D11、D3D12、OpenGL、OpenGL ES開発で利用できます。"
 
 #. tumbleweed/renderdoc/renderdoc-devel/summary
 msgid "Development files for renderdoc"
@@ -7989,9 +8091,12 @@ msgid ""
 "Checking signatures of mirrored repositories and creating signatures of the "
 "generated Package indexes is supported."
 msgstr ""
-"debianはrepreproパッケージ(.deb)のリポジトリを管理するためのツールです。手動で挿入されたファイル、または他のリポジトリから(部分的に)"
-"ダウンロードされたファイルを保存して、1つのプール/階層にミラーリングします。管理されたパッケージとファイルはBerkeley DBに格納されるため、デー"
-"タベースサーバは必要ありません。ミラー化されたリポジトリのシグニチャのチェックと、生成されたパッケージインデックスのシグニチャの作成がサポートされます。"
+"debianはrepreproパッケージ(.deb)のリポジトリを管理するためのツールです。手動"
+"で挿入されたファイル、または他のリポジトリから(部分的に)ダウンロードされた"
+"ファイルを保存して、1つのプール/階層にミラーリングします。管理されたパッケー"
+"ジとファイルはBerkeley DBに格納されるため、データベースサーバは必要ありませ"
+"ん。ミラー化されたリポジトリのシグニチャのチェックと、生成されたパッケージイ"
+"ンデックスのシグニチャの作成がサポートされます。"
 
 #. tumbleweed/resteasy/summary
 msgid "Framework for RESTful Web services and Java applications"
@@ -8184,10 +8289,13 @@ msgid ""
 "triggered builds, and much more. All it takes to get going is an existing "
 "Kubernetes cluster and the rio CLI."
 msgstr ""
-"RioはKubernetes用のApplication Deployment Engineであり、標準的なKubernetesクラスタ上に階層化することが"
-"できます。いくつかのKubernetesカスタムリソースとユーザエクスペリエンスを強化するCLIで構成されているため、ユーザはKubernetesにサービ"
-"スを簡単にデプロイでき、継続的デリバリ、DNS、HTTPS、ルーティング、モニタリング、自動スケーリング、カナリアデプロイメント、git-"
-"triggeredビルドなどを自動的に取得できます。導入に必要なのは、既存のKubernetesクラスタとrio CLIだけです。"
+"RioはKubernetes用のApplication Deployment Engineであり、標準的なKubernetesク"
+"ラスタ上に階層化することができます。いくつかのKubernetesカスタムリソースと"
+"ユーザエクスペリエンスを強化するCLIで構成されているため、ユーザはKubernetesに"
+"サービスを簡単にデプロイでき、継続的デリバリ、DNS、HTTPS、ルーティング、モニ"
+"タリング、自動スケーリング、カナリアデプロイメント、git-triggeredビルドなどを"
+"自動的に取得できます。導入に必要なのは、既存のKubernetesクラスタとrio CLIだけ"
+"です。"
 
 #. tumbleweed/ritchie-cli/summary
 msgid "Ritchie - One CLI to rule them all"
@@ -8200,8 +8308,9 @@ msgid ""
 "contains the CLI core, which can execute formulas stored inside other "
 "repositories such as ritchie-formulas."
 msgstr ""
-"Ritchieは、チームのためにCLIを作成して調整するオープンソースフレームワークです。式を簡単に作成、構築、共有できます。このパッケージにはCLIコア"
-"が含まれており、Ritchie-Formulasなどの他のリポジトリ内に保存された式を実行できます。"
+"Ritchieは、チームのためにCLIを作成して調整するオープンソースフレームワークで"
+"す。式を簡単に作成、構築、共有できます。このパッケージにはCLIコアが含まれてお"
+"り、Ritchie-Formulasなどの他のリポジトリ内に保存された式を実行できます。"
 
 #. tumbleweed/rkdeveloptool/summary
 msgid "Utility for Rockchip SoCs"
@@ -8246,12 +8355,16 @@ msgid ""
 "label enforcement     Regularly scans components for CVEs using trivy in our "
 "build pipeline"
 msgstr ""
-"RKE2は、RKE Governmentとも呼ばれ、Rancherの次世代Kubernetesディストリビューションです。完全に適合したKubernete"
-"sディストリビューションであり、米国内のセキュリティとコンプライアンスに焦点を当てています。Federal Government sector.\n"
+"RKE2は、RKE Governmentとも呼ばれ、Rancherの次世代Kubernetesディストリビュー"
+"ションです。完全に適合したKubernetesディストリビューションであり、米国内のセ"
+"キュリティとコンプライアンスに焦点を当てています。Federal Government "
+"sector.\n"
 "\n"
-"これらの目標を達成するために、RKE2は次のことを実行します。オペレータの介入を最小限に抑えてクラスタがCIS "
-"Kubernetesベンチマークに合格できるデフォルトと設定オプションを提供FIPS 140-2準拠SELinuxポリシーとMCS(Multi-"
-"Category Security)ラベルの適用をサポートビルドパイプラインでtrivyを使用して、コンポーネントを定期的にスキャンしてCVEを検出"
+"これらの目標を達成するために、RKE2は次のことを実行します。オペレータの介入を"
+"最小限に抑えてクラスタがCIS Kubernetesベンチマークに合格できるデフォルトと設"
+"定オプションを提供FIPS 140-2準拠SELinuxポリシーとMCS(Multi-Category Security)"
+"ラベルの適用をサポートビルドパイプラインでtrivyを使用して、コンポーネントを定"
+"期的にスキャンしてCVEを検出"
 
 #. tumbleweed/rke2-selinux/summary
 msgid "SELinux policy module for rke2"
@@ -8261,7 +8374,9 @@ msgstr "rke2用のSELinuxポリシーモジュール"
 msgid ""
 "This package installs and sets up the SELinux policy security module for "
 "rke2."
-msgstr "このパッケージは、rke2用のSELinuxポリシーセキュリティモジュールをインストールし、設定します。"
+msgstr ""
+"このパッケージは、rke2用のSELinuxポリシーセキュリティモジュールをインストール"
+"し、設定します。"
 
 #. tumbleweed/rmw/summary
 msgid "Safe-remove utility for the command line"
@@ -8276,9 +8391,11 @@ msgid ""
 "of the unique features of rmw is the ability to purge items from your waste "
 "(or trash) directories after x number of days."
 msgstr ""
-"rmw(Remove To Waste)は、コマンドライン用の安全な削除ユーティリティです。設定ファイルで指定されたディレクトリとの間でファイルを移動およ"
-"び復元できます。また、通常のデスクトップごみ箱フォルダと統合することもできます(デスクトップ環境でFreeDesktop.org "
-"Trash仕様を使用している場合)。rmwのユニークな機能の1つは、x日後にwaste(またはtrash)ディレクトリからアイテムをパージできることです。"
+"rmw(Remove To Waste)は、コマンドライン用の安全な削除ユーティリティです。設定"
+"ファイルで指定されたディレクトリとの間でファイルを移動および復元できます。ま"
+"た、通常のデスクトップごみ箱フォルダと統合することもできます(デスクトップ環境"
+"でFreeDesktop.org Trash仕様を使用している場合)。rmwのユニークな機能の1つは、x"
+"日後にwaste(またはtrash)ディレクトリからアイテムをパージできることです。"
 
 #. tumbleweed/rmw/rmw-lang/summary
 msgid "Translations for package rmw"
@@ -8290,7 +8407,8 @@ msgstr "「rmw」パッケージの翻訳を提供します。"
 
 #. tumbleweed/rnnoise/rnnoise-devel/summary
 msgid "Recurrent neural network for audio noise reduction - Development Files"
-msgstr "オーディオノイズ低減のためのリカレントニューラルネットワーク-開発ファイル"
+msgstr ""
+"オーディオノイズ低減のためのリカレントニューラルネットワーク-開発ファイル"
 
 #. tumbleweed/rnnoise/rnnoise-devel/description
 msgid ""
@@ -8353,9 +8471,10 @@ msgid ""
 "unprivileged user (known as \"Rootless mode\"), so as to protect the real "
 "root on the host from potential container-breakout attacks."
 msgstr ""
-"RootlessKitは、user_namespaceを使用した「fake "
-"root」のLinuxネイティブ実装です。RootlessKitは、DockerとKubernetesを非特権ユーザ(「The "
-"ROOTLESSモード」と呼ばれる)として実行することで、潜在的なコンテナブレークアウト攻撃からホスト上の実際のルートを保護することを意図しています。"
+"RootlessKitは、user_namespaceを使用した「fake root」のLinuxネイティブ実装で"
+"す。RootlessKitは、DockerとKubernetesを非特権ユーザ(「The ROOTLESSモード」と"
+"呼ばれる)として実行することで、潜在的なコンテナブレークアウト攻撃からホスト上"
+"の実際のルートを保護することを意図しています。"
 
 #. tumbleweed/rpi-eeprom-config/summary
 msgid "Raspberry Pi 4 eeprom firmware configuration tool"
@@ -8383,12 +8502,14 @@ msgid ""
 "reader. Put the SD card you'll use with your Raspberry Pi into the reader "
 "and run Raspberry Pi Imager."
 msgstr ""
-" Raspberry Pi Imagerは、Raspberry Pi OSやその他のオペレーティングシステムをmicroSDカードにインストールして、"
-"Raspberry Piですぐに使えるようにするための、素早く簡単な方法です。Raspberry Pi "
-"Imagerを使用してオペレーティングシステムをインストールする方法については、45秒のビデオをご覧ください。\n"
+" Raspberry Pi Imagerは、Raspberry Pi OSやその他のオペレーティングシステムを"
+"microSDカードにインストールして、Raspberry Piですぐに使えるようにするための、"
+"素早く簡単な方法です。Raspberry Pi Imagerを使用してオペレーティングシステムを"
+"インストールする方法については、45秒のビデオをご覧ください。\n"
 "\n"
-"SDカードリーダーを搭載したコンピュータにRaspberry Pi Imagerをダウンロードしてインストールします。Raspberry "
-"Piで使うSDカードをリーダーに入れて、Raspberry Pi Imagerを起動します。"
+"SDカードリーダーを搭載したコンピュータにRaspberry Pi Imagerをダウンロードして"
+"インストールします。Raspberry Piで使うSDカードをリーダーに入れて、Raspberry "
+"Pi Imagerを起動します。"
 
 #. tumbleweed/rpm/rpm-build-perl/summary
 msgid "RPM dependency generator for Perl"
@@ -8454,7 +8575,9 @@ msgstr "gVisor OCI コンテナランタイム"
 msgid ""
 "gVisor is an application kernel for containers that provides efficient "
 "defense-in-depth anywhere."
-msgstr "gVisorは、あらゆる場所で効率的な深層防御を提供するコンテナ用のアプリケーションカーネルです。"
+msgstr ""
+"gVisorは、あらゆる場所で効率的な深層防御を提供するコンテナ用のアプリケーショ"
+"ンカーネルです。"
 
 #. tumbleweed/runsc/runsc-containerd/summary
 msgid "Containerd config file for runsc"
@@ -8463,31 +8586,6 @@ msgstr "runscのコンテナ化された構成ファイル"
 #. tumbleweed/runsc/runsc-containerd/description
 msgid "The default Containerd config file for runsc."
 msgstr "runscのデフォルトのContainerd構成ファイル。"
-
-#. tumbleweed/ruqola/description
-msgid ""
-"Ruqola is a Rocket.Chat client for the KDE desktop.\n"
-"\n"
-"It supports multi-account, search in room, open close rooms, direct message, "
-"thread, discussions. RC settings can be changed directly.\n"
-"\n"
-"It's a native alternative to the official embedded browser type of desktop "
-"app available from Rocket.Chat project."
-msgstr ""
-"RuqolaはKDEデスクトップ用のRocket.Chatクライアントです。\n"
-"\n"
-"マルチアカウント、ルーム内検索、オープンクローズルーム、ダイレクトメッセージ、スレッド、ディスカッションをサポートします。RCの設定は直接変更できます。"
-"\n"
-"\n"
-"これは、Rocket.Chatプロジェクトで提供されている公式の組み込みブラウザタイプのデスクトップアプリに代わるネイティブなものです。"
-
-#. tumbleweed/ruqola/ruqola-lang/summary
-msgid "Translations for package ruqola"
-msgstr "パッケージruqolaの翻訳"
-
-#. tumbleweed/ruqola/ruqola-lang/description
-msgid "Provides translations for the \"ruqola\" package."
-msgstr "「ruqola」パッケージの翻訳を提供します。"
 
 #. tumbleweed/rust/description
 msgid ""
@@ -8498,10 +8596,11 @@ msgid ""
 "install Rust for a development environment, you should install 'rustup' "
 "instead."
 msgstr ""
-"Rustは、安全性、速度、並行性という3つの目標に焦点を当てたシステム・プログラミング言語です。\n"
+"Rustは、安全性、速度、並行性という3つの目標に焦点を当てたシステム・プログラミ"
+"ング言語です。\n"
 "\n"
-"⚠　これはビルドパイプライン用のRustツールチェーンです。開発環境用にRustをインストールしたい場合は、代わりに'rustup'をインストールする必要"
-"があります。"
+"⚠　これはビルドパイプライン用のRustツールチェーンです。開発環境用にRustをイン"
+"ストールしたい場合は、代わりに'rustup'をインストールする必要があります。"
 
 #. tumbleweed/rustscan/summary
 msgid "Fast network port scanner"
@@ -8523,7 +8622,9 @@ msgstr "ユーザのRustツールチェーンを管理するツール"
 msgid ""
 "A tool to manager user Rust toolchains. This is generally used by developers "
 "managing multiple parallel toolchains in their environment."
-msgstr "Rustツールチェーンを管理するためのツール。これは一般に、環境内で複数の並列ツールチェーンを管理する開発者によって使用されます。"
+msgstr ""
+"Rustツールチェーンを管理するためのツール。これは一般に、環境内で複数の並列"
+"ツールチェーンを管理する開発者によって使用されます。"
 
 #. tumbleweed/rxtx-java/summary
 msgid "Full Java CommAPI implementation"
@@ -8532,6 +8633,29 @@ msgstr "完全なJava comMAPI実装"
 #. tumbleweed/rxtx-java/rxtx-java-javadoc/summary
 msgid "Javadocs for rxtx-java"
 msgstr "rxtx-javaのJava doc"
+
+#~ msgid ""
+#~ "Ruqola is a Rocket.Chat client for the KDE desktop.\n"
+#~ "\n"
+#~ "It supports multi-account, search in room, open close rooms, direct "
+#~ "message, thread, discussions. RC settings can be changed directly.\n"
+#~ "\n"
+#~ "It's a native alternative to the official embedded browser type of "
+#~ "desktop app available from Rocket.Chat project.\n"
+#~ "\n"
+#~ "Ruqola uses Kirigami components based on QtQuick."
+#~ msgstr ""
+#~ "RuqolaはKDEデスクトップ用のRocket.Chatクライアントです。\n"
+#~ "\n"
+#~ "マルチアカウント、ルーム内検索、オープンクローズルーム、ダイレクトメッセー"
+#~ "ジ、スレッド、ディスカッションをサポートします。RCの設定は直接変更できま"
+#~ "す。\n"
+#~ "\n"
+#~ "これは、Rocket.Chatプロジェクトで提供されている公式の組み込みブラウザタイ"
+#~ "プのデスクトップアプリに代わるネイティブなものです。\n"
+#~ "\n"
+#~ "Ruqolaでは、QtQuickをベースにした Kirigami コンポーネントを使用していま"
+#~ "す。"
 
 #~ msgid "Package provides header files for recommended R-Matrix"
 #~ msgstr "推奨されるR-Matrix用のヘッダーファイルを提供するパッケージ"
@@ -8818,37 +8942,6 @@ msgstr "rxtx-javaのJava doc"
 #~ "パッケージを持たないパッケージが決定され、これらのパッケージのリストが表示"
 #~ "されます。これは、RPMパッケージ用のdeborphan debianツールのクローンである"
 #~ "ことを意図しています。"
-
-#~ msgid "Database support via DBI"
-#~ msgstr "DBIによるデータベースのサポート"
-
-#~ msgid ""
-#~ "Rsyslog is an enhanced multi-threaded syslog daemon. See rsyslog "
-#~ "package.\n"
-#~ "\n"
-#~ "This package provides a module with the support for logging into DBI "
-#~ "supported databases."
-#~ msgstr ""
-#~ "Rsyslogは、拡張されたマルチスレッドsyslogデーモンです。rsyslogパッケージを"
-#~ "参照してください。\n"
-#~ "\n"
-#~ "このパッケージは、DBIでサポートされるデータベースへのログインをサポートす"
-#~ "るモジュールを提供します。"
-
-#~ msgid "UDP spoof support module for syslog"
-#~ msgstr "syslogのUDPスプーフィングサポートモジュール"
-
-#~ msgid ""
-#~ "Rsyslog is an enhanced multi-threaded syslog daemon. See rsyslog "
-#~ "package.\n"
-#~ "\n"
-#~ "This module provides a UDP forwarder that allows changing the sender "
-#~ "address."
-#~ msgstr ""
-#~ "Rsyslogは、拡張されたマルチスレッドsyslogデーモンです。rsyslogパッケージを"
-#~ "参照してください。\n"
-#~ "\n"
-#~ "このモジュールは、送信元アドレスを変更できるUDPフォワーダを提供します。"
 
 #~ msgid "Vim syntax file for rTorrent's config file"
 #~ msgstr "rTorrentのconfigファイル用のVim構文ファイル"

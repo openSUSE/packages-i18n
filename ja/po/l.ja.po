@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2022-02-24 09:12+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
-"l-master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/l-"
+"master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -132,6 +132,7 @@ msgstr ""
 
 #. leap/llvm/clang/summary
 #. leap/llvm11/clang11/summary
+#. leap/llvm13/clang13/summary
 #. leap/llvm5/clang5/summary
 #. leap/llvm7/clang7/summary
 #. leap/llvm9/clang9/summary
@@ -155,6 +156,8 @@ msgstr ""
 #. leap/llvm/clang-devel/summary
 #. leap/llvm11/clang11-devel/summary
 #. leap/llvm11/clang11-devel-32bit/summary
+#. leap/llvm13/clang13-devel/summary
+#. leap/llvm13/clang13-devel-32bit/summary
 #. leap/llvm5/clang5-devel-32bit/summary
 #. leap/llvm5/clang5-devel/summary
 #. leap/llvm7/clang7-devel-32bit/summary
@@ -178,6 +181,27 @@ msgstr ""
 "\n"
 "このパッケージは、openSUSE が現在サポートしているclang-develのバージョンに依"
 "存するダミー・パッケージです。特定のClangバージョンを必要としないパッケージ"
+"は、これに依存するはずです。"
+
+#. leap/llvm/clang-doc/summary
+#. leap/llvm11/clang11-doc/summary
+#. leap/llvm13/clang13-doc/summary
+#. leap/llvm9/clang9-doc/summary
+msgid "Documentation for Clang"
+msgstr "Clangのドキュメント"
+
+#. leap/llvm/clang-doc/description
+msgid ""
+"This package contains documentation for the Clang compiler.\n"
+"\n"
+"This package is a dummy package that depends on the version of clang-doc "
+"that openSUSE currently supports.  Packages that don't require a specific "
+"Clang version should depend on this."
+msgstr ""
+"このパッケージには、Clangコンパイラのドキュメントが含まれています。\n"
+"\n"
+"このパッケージはダミー・パッケージで、openSUSEが現在サポートしているclang-doc"
+"のバージョンに依存しています。特定のClangバージョンを必要としないパッケージ"
 "は、これに依存するはずです。"
 
 #. leap/llvm11/clang-tools/summary
@@ -209,6 +233,7 @@ msgstr ""
 "* find-all-symbolsを使用するスクリプト: run-find-all-symbols。"
 
 #. leap/llvm11/clang11/description
+#. leap/llvm13/clang13/description
 #. leap/llvm5/clang5/description
 #. leap/llvm7/clang7/description
 #. leap/llvm9/clang9/description
@@ -218,6 +243,8 @@ msgstr ""
 
 #. leap/llvm11/clang11-devel/description
 #. leap/llvm11/clang11-devel-32bit/description
+#. leap/llvm13/clang13-devel/description
+#. leap/llvm13/clang13-devel-32bit/description
 #. leap/llvm5/clang5-devel-32bit/description
 #. leap/llvm5/clang5-devel/description
 #. leap/llvm7/clang7-devel-32bit/description
@@ -231,12 +258,8 @@ msgstr ""
 "このパッケージには、LLVM用のclang(C言語)フロントエンドが含まれています。(開発"
 "ファイル)"
 
-#. leap/llvm11/clang11-doc/summary
-#. leap/llvm9/clang9-doc/summary
-msgid "Documentation for Clang"
-msgstr "Clangのドキュメント"
-
 #. leap/llvm11/clang11-doc/description
+#. leap/llvm13/clang13-doc/description
 #. leap/llvm9/clang9-doc/description
 msgid "This package contains documentation for the Clang compiler."
 msgstr "このパッケージには、Clangコンパイラのドキュメントが含まれています。"
@@ -266,7 +289,8 @@ msgid ""
 "This package provides Linux kernel headers for aarch64, the kernel API "
 "description required for compilation of almost all programs."
 msgstr ""
-"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるaarch64用のLinuxカーネル・ヘッダーを提供します。"
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるaarch64用のLinuxカーネル・ヘッダーを提供します。"
 
 #. leap/linux-glibc-devel/cross-arm-linux-glibc-devel/summary
 msgid "Linux headers for arm userspace cross development"
@@ -277,7 +301,8 @@ msgid ""
 "This package provides Linux kernel headers for arm, the kernel API "
 "description required for compilation of almost all programs."
 msgstr ""
-"このパッケージはarm用のLinuxカーネルヘッダを提供します。armは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述です。"
+"このパッケージはarm用のLinuxカーネルヘッダを提供します。armは、ほとんどすべて"
+"のプログラムのコンパイルに必要なカーネルAPI記述です。"
 
 #. leap/linux-glibc-devel/cross-hppa-linux-glibc-devel/summary
 msgid "Linux headers for hppa userspace cross development"
@@ -287,7 +312,9 @@ msgstr "hppaユーザー空間クロス開発用のLinuxヘッダー"
 msgid ""
 "This package provides Linux kernel headers for hppa, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、hppa(ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述)用のLinuxカーネルヘッダーを提供します。"
+msgstr ""
+"このパッケージは、hppa(ほとんどすべてのプログラムのコンパイルに必要なカーネル"
+"API記述)用のLinuxカーネルヘッダーを提供します。"
 
 #. leap/linux-glibc-devel/cross-i386-linux-glibc-devel/summary
 msgid "Linux headers for i386 userspace cross development"
@@ -297,7 +324,9 @@ msgstr "i386ユーザー空間クロス開発用Linuxヘッダー"
 msgid ""
 "This package provides Linux kernel headers for i386, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるi386用のLinuxカーネルヘッダを提供します。"
+msgstr ""
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるi386用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-m68k-linux-glibc-devel/summary
 msgid "Linux headers for m68k userspace cross development"
@@ -307,7 +336,9 @@ msgstr "m68kユーザ空間クロス開発用Linuxヘッダ"
 msgid ""
 "This package provides Linux kernel headers for m68k, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるm68k用のLinuxカーネルヘッダを提供します。"
+msgstr ""
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるm68k用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-mips-linux-glibc-devel/summary
 msgid "Linux headers for mips userspace cross development"
@@ -317,7 +348,9 @@ msgstr "mipsユーザ空間クロス開発用Linuxヘッダ"
 msgid ""
 "This package provides Linux kernel headers for mips, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、mips(ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述)用のLinuxカーネルヘッダを提供します。"
+msgstr ""
+"このパッケージは、mips(ほとんどすべてのプログラムのコンパイルに必要なカーネル"
+"API記述)用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-ppc64-linux-glibc-devel/summary
 msgid "Linux headers for ppc64 userspace cross development"
@@ -327,7 +360,9 @@ msgstr "ppc64ユーザー空間クロス開発用のLinuxヘッダー"
 msgid ""
 "This package provides Linux kernel headers for ppc64, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるppc64用のLinuxカーネルヘッダを提供します。"
+msgstr ""
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるppc64用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-ppc64le-linux-glibc-devel/summary
 msgid "Linux headers for ppc64le userspace cross development"
@@ -338,7 +373,8 @@ msgid ""
 "This package provides Linux kernel headers for ppc64le, the kernel API "
 "description required for compilation of almost all programs."
 msgstr ""
-"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるppc64le用のLinuxカーネルヘッダを提供します。"
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるppc64le用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-riscv64-linux-glibc-devel/summary
 msgid "Linux headers for riscv64 userspace cross development"
@@ -349,7 +385,8 @@ msgid ""
 "This package provides Linux kernel headers for riscv64, the kernel API "
 "description required for compilation of almost all programs."
 msgstr ""
-"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるriscv64用のLinuxカーネルヘッダを提供します。"
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるriscv64用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-s390x-linux-glibc-devel/summary
 msgid "Linux headers for s390x userspace cross development"
@@ -359,7 +396,9 @@ msgstr "s390xユーザー空間クロス開発用Linuxヘッダー"
 msgid ""
 "This package provides Linux kernel headers for s390x, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるs390x用のLinuxカーネルヘッダを提供します。"
+msgstr ""
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるs390x用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-sparc-linux-glibc-devel/summary
 msgid "Linux headers for sparc userspace cross development"
@@ -369,7 +408,9 @@ msgstr "sparcユーザー空間クロス開発用Linuxヘッダー"
 msgid ""
 "This package provides Linux kernel headers for sparc, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、sparc(ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述)用のLinuxカーネルヘッダを提供します。"
+msgstr ""
+"このパッケージは、sparc(ほとんどすべてのプログラムのコンパイルに必要なカーネ"
+"ルAPI記述)用のLinuxカーネルヘッダを提供します。"
 
 #. leap/linux-glibc-devel/cross-sparc64-linux-glibc-devel/summary
 msgid "Linux headers for sparc64 userspace cross development"
@@ -380,8 +421,8 @@ msgid ""
 "This package provides Linux kernel headers for sparc64, the kernel API "
 "description required for compilation of almost all programs."
 msgstr ""
-"このパッケージは、sparc64用のLinuxカーネルヘッダを提供します。sparc64は、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
-"述です。"
+"このパッケージは、sparc64用のLinuxカーネルヘッダを提供します。sparc64は、ほと"
+"んどすべてのプログラムのコンパイルに必要なカーネルAPI記述です。"
 
 #. leap/linux-glibc-devel/cross-x86_64-linux-glibc-devel/summary
 msgid "Linux headers for x86_64 userspace cross development"
@@ -391,7 +432,9 @@ msgstr "x86_64ユーザー空間クロス開発用Linuxヘッダー"
 msgid ""
 "This package provides Linux kernel headers for x86_64, the kernel API "
 "description required for compilation of almost all programs."
-msgstr "このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記述であるx86_64用のLinuxカーネルヘッダを提供します。"
+msgstr ""
+"このパッケージは、ほとんどすべてのプログラムのコンパイルに必要なカーネルAPI記"
+"述であるx86_64用のLinuxカーネルヘッダを提供します。"
 
 #. leap/lvm2-device-mapper/device-mapper/summary
 msgid "Device Mapper Tools"
@@ -623,9 +666,10 @@ msgid ""
 "library for CMT (Computer Music Toolkit). See the /usr/share/doc/packages/"
 "ladspa-cmt directory for documentation."
 msgstr ""
-"このツールキットは、CMT(Computer Music Toolkit)用のLADSPA(Linux Audio Developer's Simple "
-"Plug-in API)プラグインライブラリとして提供されている一連の楽音処理・合成ツールです。マニュアルについては、/usr/share/doc/"
-"packages/ladspa-cmtディレクトリを参照してください。"
+"このツールキットは、CMT(Computer Music Toolkit)用のLADSPA(Linux Audio "
+"Developer's Simple Plug-in API)プラグインライブラリとして提供されている一連の"
+"楽音処理・合成ツールです。マニュアルについては、/usr/share/doc/packages/"
+"ladspa-cmtディレクトリを参照してください。"
 
 #. leap/ladspa/ladspa-devel/summary
 msgid "Include Files mandatory for Development"
@@ -1253,16 +1297,18 @@ msgstr ""
 "す。"
 
 #. leap/latte-dock/summary
-msgid "Task manager"
-msgstr "タスクマネージャ"
+msgid "Replacement Dock for Plasma Desktops"
+msgstr "Plasmaデスクトップの交換用 Dock"
 
 #. leap/latte-dock/description
 msgid ""
-"Latte is a dock based on plasma frameworks that animating its contents by "
-"using parabolic zoom effect."
+"Latte is an alternative application launcher and dock for Plasma. It "
+"animates its contents by using a parabolic zoom effect and tries to be there "
+"only when it is needed."
 msgstr ""
-"Latteは放物線ズーム効果を利用してコンテンツをアニメートするプラズマフレーム"
-"ワークに基づいた dock です。"
+"LatteはPlasmaの代替アプリケーションランチャー兼 Dock です。パラボラズーム効果"
+"を使用してコンテンツをアニメーション化し、必要なときにだけ表示しようとしま"
+"す。"
 
 #. leap/latte-dock/latte-dock-lang/summary
 msgid "Translations for package latte-dock"
@@ -1271,6 +1317,20 @@ msgstr "latte-dockパッケージの翻訳"
 #. leap/latte-dock/latte-dock-lang/description
 msgid "Provides translations for the \"latte-dock\" package."
 msgstr "latte-dockパッケージの翻訳を提供します。"
+
+#. leap/layer-shell-qt/layer-shell-qt5/summary
+msgid "wlr-layer-shell integration for Qt 5"
+msgstr "Qt 5用のwlr-layer-shell統合"
+
+#. leap/layer-shell-qt/layer-shell-qt5/description
+#. leap/layer-shell-qt/layer-shell-qt5-devel/description
+msgid "This allows integration of Qt applications with wlr-layer-shell."
+msgstr ""
+"これにより、Qtアプリケーションをwlr-layer-shellと統合することができます。"
+
+#. leap/layer-shell-qt/layer-shell-qt5-devel/summary
+msgid "wlr-layer-shell integration for Qt 5 - development files"
+msgstr "Qt 5開発ファイル用のwlr-layer-shell統合"
 
 #. leap/lazarus/summary
 msgid "FreePascal RAD IDE and Component Library"
@@ -2004,6 +2064,8 @@ msgstr ""
 
 #. leap/llvm11/libLLVM11/summary
 #. leap/llvm11/libLLVM11-32bit/summary
+#. leap/llvm13/libLLVM13/summary
+#. leap/llvm13/libLLVM13-32bit/summary
 #. leap/llvm5/libLLVM5-32bit/summary
 #. leap/llvm5/libLLVM5/summary
 #. leap/llvm7/libLLVM7-32bit/summary
@@ -2015,6 +2077,8 @@ msgstr "LLVM 向けライブラリ"
 
 #. leap/llvm11/libLLVM11/description
 #. leap/llvm11/libLLVM11-32bit/description
+#. leap/llvm13/libLLVM13/description
+#. leap/llvm13/libLLVM13-32bit/description
 #. leap/llvm5/libLLVM5-32bit/description
 #. leap/llvm5/libLLVM5/description
 #. leap/llvm7/libLLVM7-32bit/description
@@ -2026,6 +2090,8 @@ msgstr "このパッケージには LLVM 向けの共有ライブラリが含ま
 
 #. leap/llvm11/libLTO11/summary
 #. leap/llvm11/libLTO11-32bit/summary
+#. leap/llvm13/libLTO13/summary
+#. leap/llvm13/libLTO13-32bit/summary
 #. leap/llvm5/libLTO5-32bit/summary
 #. leap/llvm5/libLTO5/summary
 #. leap/llvm7/libLTO7-32bit/summary
@@ -2037,6 +2103,8 @@ msgstr "LLVM用のリンク時間オプティマイザ"
 
 #. leap/llvm11/libLTO11/description
 #. leap/llvm11/libLTO11-32bit/description
+#. leap/llvm13/libLTO13/description
+#. leap/llvm13/libLTO13-32bit/description
 #. leap/llvm5/libLTO5-32bit/description
 #. leap/llvm5/libLTO5/description
 #. leap/llvm7/libLTO7-32bit/description
@@ -2098,11 +2166,11 @@ msgstr ""
 "BLAS (Basic Linear Algebra Subprograms) は数値代数向けの標準ライブラリです。"
 "BLAS は線形代数向けの基本的なアルゴリズムを多数提供しています。"
 
-#. leap/llvm11/libc++-devel/summary
+#. leap/llvm13/libc++-devel/summary
 msgid "C++ standard library implementation (devel package)"
 msgstr "C++標準ライブラリ実装(develパッケージ)"
 
-#. leap/llvm11/libc++-devel/description
+#. leap/llvm13/libc++-devel/description
 msgid ""
 "This package contains libc++, a new implementation of the C++ standard "
 "library, targeting C++11. (development files)"
@@ -2110,11 +2178,11 @@ msgstr ""
 "このパッケージには、C++11を対象としたC++標準ライブラリの新しい実装であるlibc+"
 "+が含まれています。(開発ファイル)"
 
-#. leap/llvm11/libc++1/summary
+#. leap/llvm13/libc++1/summary
 msgid "C++ standard library implementation"
 msgstr "C++標準ライブラリの実装"
 
-#. leap/llvm11/libc++1/description
+#. leap/llvm13/libc++1/description
 msgid ""
 "This package contains libc++, a new implementation of the C++ standard "
 "library, targeting C++11."
@@ -2122,11 +2190,11 @@ msgstr ""
 "このパッケージには、C++11を対象としたC++標準ライブラリの新しい実装であるlibc+"
 "+が含まれています。"
 
-#. leap/llvm11/libc++abi-devel/summary
+#. leap/llvm13/libc++abi-devel/summary
 msgid "C++ standard library ABI (devel package)"
 msgstr "C++標準ライブラリABI(開発パッケージ)"
 
-#. leap/llvm11/libc++abi-devel/description
+#. leap/llvm13/libc++abi-devel/description
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
 "standard library, targeting C++11. (development files)"
@@ -2134,11 +2202,11 @@ msgstr ""
 "このパッケージには、C++11を対象としたC++標準ライブラリの新しい実装であるlibc+"
 "+用のABIが含まれています。(開発ファイル)"
 
-#. leap/llvm11/libc++abi1/summary
+#. leap/llvm13/libc++abi1/summary
 msgid "C++ standard library ABI"
 msgstr "C++標準ライブラリABI"
 
-#. leap/llvm11/libc++abi1/description
+#. leap/llvm13/libc++abi1/description
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
 "standard library, targeting C++11."
@@ -2148,6 +2216,8 @@ msgstr ""
 
 #. leap/llvm11/libclang11/summary
 #. leap/llvm11/libclang11-32bit/summary
+#. leap/llvm13/libclang13/summary
+#. leap/llvm13/libclang13-32bit/summary
 #. leap/llvm5/libclang5-32bit/summary
 #. leap/llvm5/libclang5/summary
 #. leap/llvm7/libclang7-32bit/summary
@@ -2159,6 +2229,8 @@ msgstr "Clangに必要なライブラリファイル"
 
 #. leap/llvm11/libclang11/description
 #. leap/llvm11/libclang11-32bit/description
+#. leap/llvm13/libclang13/description
+#. leap/llvm13/libclang13-32bit/description
 #. leap/llvm5/libclang5-32bit/description
 #. leap/llvm5/libclang5/description
 #. leap/llvm7/libclang7-32bit/description
@@ -2885,6 +2957,7 @@ msgstr ""
 "このパッケージにはlittleb用の共用ライブラリーが入っています。"
 
 #. leap/llvm11/liblldb11/summary
+#. leap/llvm13/liblldb13/summary
 #. leap/llvm5/liblldb5/summary
 #. leap/llvm7/liblldb7/summary
 #. leap/llvm9/liblldb9/summary
@@ -2892,6 +2965,7 @@ msgid "LLDB software debugger runtime library"
 msgstr "LLDBソフトウェアデバッガランタイムライブラリ"
 
 #. leap/llvm11/liblldb11/description
+#. leap/llvm13/liblldb13/description
 #. leap/llvm5/liblldb5/description
 #. leap/llvm7/liblldb7/description
 #. leap/llvm9/liblldb9/description
@@ -3061,7 +3135,6 @@ msgstr ""
 
 #. leap/loudmouth/libloudmouth-1-0/summary
 #. leap/loudmouth/loudmouth-devel/summary
-#. leap/loudmouth/loudmouth-doc/summary
 msgid "Jabber Client Library Written in C"
 msgstr "C 言語で書かれた Jabber クライアントライブラリ"
 
@@ -3259,19 +3332,19 @@ msgstr "LXDE パネルライブラリ"
 msgid "Library for interpolability and access to the lxpanel API by plugins."
 msgstr "interpolability用ライブラリとプラグインによるlxpanel APIへのアクセス。"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui0/summary
+#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui1/summary
 msgid "UI lxqt-globalkeys libraries"
 msgstr "UI lxqt-globalkeysライブラリ"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui0/description
+#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui1/description
 msgid "UI system libraries for lxqt-globalkeys"
 msgstr "lxqt-globalkeys用のUIシステムライブラリ"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys0/summary
+#. leap/lxqt-globalkeys/liblxqt-globalkeys1/summary
 msgid "Lxqt-globalkeys libraries"
 msgstr "Lxqt-globalkeysライブラリ"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys0/description
+#. leap/lxqt-globalkeys/liblxqt-globalkeys1/description
 msgid "lxqt-globalkeys main system library"
 msgstr "lxqt-globalkeysメインシステムライブラリ"
 
@@ -3362,6 +3435,7 @@ msgid "The LAME MP3 encoder library"
 msgstr "LAME MP3エンコーダライブラリ"
 
 #. leap/llvm11/libomp11-devel/summary
+#. leap/llvm13/libomp13-devel/summary
 #. leap/llvm5/libomp5-devel/summary
 #. leap/llvm7/libomp7-devel/summary
 #. leap/llvm9/libomp9-devel/summary
@@ -3369,6 +3443,7 @@ msgid "MPI plugin for LLVM"
 msgstr "LLVM用のMPIプラグイン"
 
 #. leap/llvm11/libomp11-devel/description
+#. leap/llvm13/libomp13-devel/description
 #. leap/llvm5/libomp5-devel/description
 #. leap/llvm7/libomp7-devel/description
 #. leap/llvm9/libomp9-devel/description
@@ -3739,14 +3814,6 @@ msgstr "lighttpdでのLDAP認証"
 msgid "A module to provide LDAP authentication in lighttpd."
 msgstr "lighttpdでLDAP認証を提供するモジュール。"
 
-#. leap/lighttpd/lighttpd-mod_authn_mysql/summary
-msgid "MySQL authentication in lighttpd"
-msgstr "lighttpdでのMySQL認証"
-
-#. leap/lighttpd/lighttpd-mod_authn_mysql/description
-msgid "A module to provide MySQL authentication in lighttpd."
-msgstr "lighttpdでMySQL認証を提供するモジュール。"
-
 #. leap/lighttpd/lighttpd-mod_authn_pam/summary
 msgid "PAM authentication in lighttpd"
 msgstr "lighttpdでのPAM認証"
@@ -3762,34 +3829,6 @@ msgstr "lighttpdでのSASL認証"
 #. leap/lighttpd/lighttpd-mod_authn_sasl/description
 msgid "A module to provide SASL authentication in lighttpd."
 msgstr "lighttpdでSASL認証を提供するモジュール。"
-
-#. leap/lighttpd/lighttpd-mod_cml/summary
-msgid "CML (Cache Meta Language) module for Lighttpd"
-msgstr "Lighttpd 向け CML (キャッシュメタ言語) モジュール"
-
-#. leap/lighttpd/lighttpd-mod_cml/description
-msgid ""
-"CML is a Meta language to describe the dependencies of a page at one side "
-"and building a page from its fragments on the oth er side using LUA.\n"
-"\n"
-"CML (Cache Meta Language) wants to solves several problems: \n"
-"* dynamic content needs caching to perform \n"
-"* checking if the content is dirty inside of the application is    usually "
-"more expensive than sending out the cached data \n"
-"* a dynamic page is usually fragmented and the fragments have    different "
-"livetimes \n"
-"* the different fragements can be cached independently"
-msgstr ""
-"CMLは,ページの一方の辺の依存関係を記述し、他方の辺のフラグメントからLUAを用い"
-"てページを構築するメタ言語です。\n"
-"\n"
-"CML(Cache Meta Language)はいくつかの問題を解決しようとしています:\n"
-"* 動的コンテンツを実行するにはキャッシュが必要\n"
-"* コンテンツがアプリケーション内部で汚れているかどうかをチェックすることは、"
-"通常、キャッシュされたデータを送信するよりもコストがかかります。\n"
-"* 動的ページは通常フラグメント化されており、フラグメントの生存時間は異なりま"
-"す。\n"
-"* 異なるフラグメントは個別にキャッシュできます。"
 
 #. leap/lighttpd/lighttpd-mod_magnet/summary
 msgid "A module to control the request handling in lighttpd"
@@ -3816,18 +3855,6 @@ msgstr ""
 "このモジュールは、MaxMind GeoIP2データベースを使用した高速ip/locationルック"
 "アップをサポートします。"
 
-#. leap/lighttpd/lighttpd-mod_mysql_vhost/summary
-msgid "MySQL based virtual hosts (vhosts) module for Lighttpd"
-msgstr "lighttpd 向け MySQL ベースの仮想ホスト (vhosts) モジュール"
-
-#. leap/lighttpd/lighttpd-mod_mysql_vhost/description
-msgid ""
-"With MySQL based vhosting you can put the information where to look for a "
-"document-root of a given host into a MySQL database."
-msgstr ""
-"MySQLベースのvhostingでは、特定のホストのドキュメントルートを検索する場所の情"
-"報をMySQLデータベースに入れることができます。"
-
 #. leap/lighttpd/lighttpd-mod_rrdtool/summary
 msgid "Lighttpd module to feed rrdtool databases"
 msgstr "rrdtool データベースにデータを与えるための lighttpd モジュール"
@@ -3844,34 +3871,6 @@ msgstr ""
 "\n"
 "このモジュールは、 lighttpd からの通信状況を rrdtool データベースに保存するた"
 "めのモジュールです。"
-
-#. leap/lighttpd/lighttpd-mod_trigger_b4_dl/summary
-msgid "Another anti hot-linking module for Lighttpd"
-msgstr "もう 1 つの lighttpd 向けホットリンク阻止モジュール"
-
-#. leap/lighttpd/lighttpd-mod_trigger_b4_dl/description
-msgid ""
-"Anti Hotlinking: \n"
-"* if user requests download-url directly the request is denied and    he is "
-"redirected to ''deny-url' \n"
-"* if user visits trigger-url before requesting download-url access    is "
-"granted \n"
-"* if user visits download-url again after trigger-timeout has run    down to "
-"the request is denied and he is redirected  to deny-url\n"
-"\n"
-"The storage for the trigger information is either stored locally in a gdbm "
-"file or remotly in memcached."
-msgstr ""
-"アンチホットリンク:\n"
-"* ユーザがdownload-urlを直接要求した場合、その要求は拒否され、ユーザは「deny-"
-"url」にリダイレクトされます。\n"
-"* ダウンロードURLアクセスが許可される前に、ユーザがtrigger-urlにアクセスした"
-"場合\n"
-"* トリガータイムアウトが発生して要求が拒否された後、ユーザが再度download-url"
-"にアクセスした場合、ユーザはdeny-urlにリダイレクトされます。\n"
-"\n"
-"トリガー情報のストレージは、ローカルでgdbmファイルに格納されるか、remotlyで"
-"memcachedに格納されます。"
 
 #. leap/lighttpd/lighttpd-mod_vhostdb_dbi/summary
 msgid "DBI based virtual hosts module for Lighttpd"
@@ -4774,6 +4773,7 @@ msgstr ""
 
 #. leap/llvm/lld/summary
 #. leap/llvm11/lld11/summary
+#. leap/llvm13/lld13/summary
 #. leap/llvm5/lld5/summary
 #. leap/llvm7/lld7/summary
 #. leap/llvm9/lld9/summary
@@ -4782,6 +4782,7 @@ msgstr "Clang/LLVM用リンカー"
 
 #. leap/llvm/lld/description
 #. leap/llvm11/lld11/description
+#. leap/llvm13/lld13/description
 #. leap/llvm5/lld5/description
 #. leap/llvm7/lld7/description
 #. leap/llvm9/lld9/description
@@ -4796,6 +4797,7 @@ msgstr ""
 
 #. leap/llvm/lldb/summary
 #. leap/llvm11/lldb11/summary
+#. leap/llvm13/lldb13/summary
 #. leap/llvm5/lldb5/summary
 #. leap/llvm7/lldb7/summary
 #. leap/llvm9/lldb9/summary
@@ -4823,6 +4825,7 @@ msgstr ""
 
 #. leap/llvm/lldb-devel/summary
 #. leap/llvm11/lldb11-devel/summary
+#. leap/llvm13/lldb13-devel/summary
 #. leap/llvm5/lldb5-devel/summary
 #. leap/llvm7/lldb7-devel/summary
 #. leap/llvm9/lldb9-devel/summary
@@ -4844,6 +4847,7 @@ msgstr ""
 "れに依存する必要があります。"
 
 #. leap/llvm11/lldb11/description
+#. leap/llvm13/lldb13/description
 #. leap/llvm5/lldb5/description
 #. leap/llvm7/lldb7/description
 #. leap/llvm9/lldb9/description
@@ -4858,6 +4862,7 @@ msgstr ""
 "ロジェクトの既存のライブラリを高度に活用します。"
 
 #. leap/llvm11/lldb11-devel/description
+#. leap/llvm13/lldb13-devel/description
 #. leap/llvm5/lldb5-devel/description
 #. leap/llvm7/lldb7-devel/description
 #. leap/llvm9/lldb9-devel/description
@@ -4937,6 +4942,7 @@ msgstr ""
 
 #. leap/llvm/summary
 #. leap/llvm11/summary
+#. leap/llvm13/summary
 #. leap/llvm5/summary
 #. leap/llvm7/summary
 #. leap/llvm9/summary
@@ -4970,6 +4976,8 @@ msgstr ""
 #. leap/llvm/llvm-LTO-devel/summary
 #. leap/llvm11/llvm11-LTO-devel/summary
 #. leap/llvm11/llvm11-LTO-devel-32bit/summary
+#. leap/llvm13/llvm13-LTO-devel/summary
+#. leap/llvm13/llvm13-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel/summary
 #. leap/llvm7/llvm7-LTO-devel-32bit/summary
@@ -4997,6 +5005,8 @@ msgstr ""
 #. leap/llvm/llvm-devel/summary
 #. leap/llvm11/llvm11-devel/summary
 #. leap/llvm11/llvm11-devel-32bit/summary
+#. leap/llvm13/llvm13-devel/summary
+#. leap/llvm13/llvm13-devel-32bit/summary
 #. leap/llvm5/llvm5-devel-32bit/summary
 #. leap/llvm5/llvm5-devel/summary
 #. leap/llvm7/llvm7-devel-32bit/summary
@@ -5022,8 +5032,30 @@ msgstr ""
 "するダミーパッケージです。特定のLLVMバージョンを必要としないパッケージは、こ"
 "れに依存するはずです。"
 
+#. leap/llvm/llvm-doc/summary
+#. leap/llvm11/llvm11-doc/summary
+#. leap/llvm13/llvm13-doc/summary
+#. leap/llvm9/llvm9-doc/summary
+msgid "Documentation for LLVM"
+msgstr "LLVMのドキュメント"
+
+#. leap/llvm/llvm-doc/description
+msgid ""
+"This package contains documentation for the LLVM infrastructure.\n"
+"\n"
+"This package is a dummy package that depends on the version of llvm-doc that "
+"openSUSE currently supports.  Packages that don't require a specific LLVM "
+"version should depend on this."
+msgstr ""
+"このパッケージには、LLVMインフラストラクチャのマニュアルが含まれています。\n"
+"\n"
+"このパッケージはダミー・パッケージであり、openSUSEが現在サポートしているllvm-"
+"docのバージョンに依存しています。特定のLLVMバージョンを必要としないパッケージ"
+"は、これに依存するはずです。"
+
 #. leap/llvm/llvm-gold/summary
 #. leap/llvm11/llvm11-gold/summary
+#. leap/llvm13/llvm13-gold/summary
 #. leap/llvm5/llvm5-gold/summary
 #. leap/llvm7/llvm7-gold/summary
 #. leap/llvm9/llvm9-gold/summary
@@ -5046,6 +5078,7 @@ msgstr ""
 
 #. leap/llvm/llvm-opt-viewer/summary
 #. leap/llvm11/llvm11-opt-viewer/summary
+#. leap/llvm13/llvm13-opt-viewer/summary
 #. leap/llvm5/llvm5-opt-viewer/summary
 #. leap/llvm7/llvm7-opt-viewer/summary
 #. leap/llvm9/llvm9-opt-viewer/summary
@@ -5070,6 +5103,7 @@ msgstr ""
 
 #. leap/llvm/llvm-polly/summary
 #. leap/llvm11/llvm11-polly/summary
+#. leap/llvm13/llvm13-polly/summary
 #. leap/llvm9/llvm9-polly/summary
 msgid "LLVM Framework for High-Level Loop and Data-Locality Optimizations"
 msgstr "高レベルループおよびデータ局所性最適化のためのLLVMフレームワーク"
@@ -5099,6 +5133,7 @@ msgstr ""
 
 #. leap/llvm/llvm-polly-devel/summary
 #. leap/llvm11/llvm11-polly-devel/summary
+#. leap/llvm13/llvm13-polly-devel/summary
 #. leap/llvm7/llvm7-polly-devel/summary
 #. leap/llvm9/llvm9-polly-devel/summary
 msgid "Development files for Polly"
@@ -5120,6 +5155,7 @@ msgstr ""
 
 #. leap/llvm/llvm-vim-plugins/summary
 #. leap/llvm11/llvm11-vim-plugins/summary
+#. leap/llvm13/llvm13-vim-plugins/summary
 #. leap/llvm5/llvm5-vim-plugins/summary
 #. leap/llvm7/llvm7-vim-plugins/summary
 #. leap/llvm9/llvm9-vim-plugins/summary
@@ -5142,6 +5178,7 @@ msgstr ""
 "は、これに依存するはずです。"
 
 #. leap/llvm11/description
+#. leap/llvm13/description
 #. leap/llvm5/description
 #. leap/llvm7/description
 #. leap/llvm9/description
@@ -5162,6 +5199,8 @@ msgstr ""
 
 #. leap/llvm11/llvm11-LTO-devel/description
 #. leap/llvm11/llvm11-LTO-devel-32bit/description
+#. leap/llvm13/llvm13-LTO-devel/description
+#. leap/llvm13/llvm13-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel/description
 #. leap/llvm7/llvm7-LTO-devel-32bit/description
@@ -5176,6 +5215,8 @@ msgstr ""
 
 #. leap/llvm11/llvm11-devel/description
 #. leap/llvm11/llvm11-devel-32bit/description
+#. leap/llvm13/llvm13-devel/description
+#. leap/llvm13/llvm13-devel-32bit/description
 #. leap/llvm5/llvm5-devel-32bit/description
 #. leap/llvm5/llvm5-devel/description
 #. leap/llvm7/llvm7-devel-32bit/description
@@ -5189,18 +5230,15 @@ msgstr ""
 "このパッケージには、LLVMインフラストラクチャを使用する新しいネイティブプログ"
 "ラムの開発に必要なライブラリファイルとヘッダーファイルが含まれています。"
 
-#. leap/llvm11/llvm11-doc/summary
-#. leap/llvm9/llvm9-doc/summary
-msgid "Documentation for LLVM"
-msgstr "LLVMのドキュメント"
-
 #. leap/llvm11/llvm11-doc/description
+#. leap/llvm13/llvm13-doc/description
 #. leap/llvm9/llvm9-doc/description
 msgid "This package contains documentation for the LLVM infrastructure."
 msgstr ""
 "このパッケージには、LLVMインフラストラクチャのマニュアルが含まれています。"
 
 #. leap/llvm11/llvm11-gold/description
+#. leap/llvm13/llvm13-gold/description
 #. leap/llvm5/llvm5-gold/description
 #. leap/llvm7/llvm7-gold/description
 #. leap/llvm9/llvm9-gold/description
@@ -5208,6 +5246,7 @@ msgid "This package contains the Gold linker plugin for LLVM."
 msgstr "このパッケージには、LLVM用のGoldリンカプラグインが含まれています。"
 
 #. leap/llvm11/llvm11-opt-viewer/description
+#. leap/llvm13/llvm13-opt-viewer/description
 #. leap/llvm5/llvm5-opt-viewer/description
 #. leap/llvm7/llvm7-opt-viewer/description
 #. leap/llvm9/llvm9-opt-viewer/description
@@ -5219,6 +5258,7 @@ msgstr ""
 "ツールのセット。コンパイラ支援のパフォーマンス分析に使用されます。"
 
 #. leap/llvm11/llvm11-polly/description
+#. leap/llvm13/llvm13-polly/description
 #. leap/llvm9/llvm9-polly/description
 msgid ""
 "Polly is a high-level loop and data-locality optimizer and optimization "
@@ -5235,12 +5275,14 @@ msgstr ""
 "ます。"
 
 #. leap/llvm11/llvm11-polly-devel/description
+#. leap/llvm13/llvm13-polly-devel/description
 #. leap/llvm7/llvm7-polly-devel/description
 #. leap/llvm9/llvm9-polly-devel/description
 msgid "This package contains the development files for Polly."
 msgstr "このパッケージには、Pollyの開発ファイルが含まれています。"
 
 #. leap/llvm11/llvm11-vim-plugins/description
+#. leap/llvm13/llvm13-vim-plugins/description
 #. leap/llvm5/llvm5-vim-plugins/description
 #. leap/llvm7/llvm7-vim-plugins/description
 #. leap/llvm9/llvm9-vim-plugins/description
@@ -5650,6 +5692,14 @@ msgstr ""
 "\n"
 "結果は、毎日sysadminにメールで送信されます。"
 
+#. leap/log4j12/logfactor5/summary
+msgid "Log Viewer GUI"
+msgstr "ログ・ビューアのGUI"
+
+#. leap/log4j12/logfactor5/description
+msgid "LogFactor5 is a Swing based GUI to view log4j logs."
+msgstr "LogFactor5は、log4jログを表示するSwingベースのGUIです。"
+
 #. leap/logrotate/summary
 msgid ""
 "Cron service for rotating, compressing, mailing and removing system log files"
@@ -5810,7 +5860,8 @@ msgid ""
 "\n"
 "This package contains the Loki server"
 msgstr ""
-"Lokiは、Prometheusにインスパイアされた、水平スケーラブルで高可用性のマルチテナントログ集約システムです。\n"
+"Lokiは、Prometheusにインスパイアされた、水平スケーラブルで高可用性のマルチテ"
+"ナントログ集約システムです。\n"
 "\n"
 "このパッケージには、Lokiサーバが含まれています。"
 
@@ -6090,7 +6141,6 @@ msgstr ""
 "PowerPointで作成されたドキュメントをOOXML形式で検索できるようになりました。"
 
 #. leap/loudmouth/loudmouth-devel/description
-#. leap/loudmouth/loudmouth-doc/description
 msgid ""
 "Loudmouth is a lightweight and easy-to-use C library for programming with "
 "the Jabber protocol. It's designed to be easy to get started with and yet "
@@ -6471,13 +6521,11 @@ msgstr ""
 
 #. leap/lttng-modules/summary
 #. leap/lttng-modules/lttng-modules-kmp-default/summary
-#. leap/lttng-modules/lttng-modules-kmp-preempt/summary
 msgid "Licensing information for package lttng-modules"
 msgstr "パッケージlttng-modulesのライセンス情報"
 
 #. leap/lttng-modules/description
 #. leap/lttng-modules/lttng-modules-kmp-default/description
-#. leap/lttng-modules/lttng-modules-kmp-preempt/description
 msgid ""
 "This package provides licensing documentation for the lttng kmp packages."
 msgstr ""
@@ -8654,7 +8702,8 @@ msgid ""
 "\n"
 "This package contains the Promtail client."
 msgstr ""
-"Lokiは、Prometheusにインスパイアされた、水平スケーラブルで高可用性のマルチテナントログ集約システムです。\n"
+"Lokiは、Prometheusにインスパイアされた、水平スケーラブルで高可用性のマルチテ"
+"ナントログ集約システムです。\n"
 "\n"
 "このパッケージには、Promtailクライアントが含まれています。"
 
@@ -8711,11 +8760,11 @@ msgstr ""
 "ピュータコードと入力パラメータ/グリッドが分離されているので、更新が可能であ"
 "り、拡張の可能性に制限がありません。"
 
-#. leap/llvm11/python3-clang/summary
+#. leap/llvm13/python3-clang/summary
 msgid "Python bindings for libclang"
 msgstr "libclangのPythonバインディング"
 
-#. leap/llvm11/python3-clang/description
+#. leap/llvm13/python3-clang/description
 #. leap/llvm5/python3-lldb5/description
 #. leap/llvm7/python3-lldb7/description
 msgid ""
@@ -8831,6 +8880,7 @@ msgstr ""
 
 #. leap/llvm/python3-lldb/summary
 #. leap/llvm11/python3-lldb11/summary
+#. leap/llvm13/python3-lldb13/summary
 #. leap/llvm5/python3-lldb5/summary
 #. leap/llvm7/python3-lldb7/summary
 #. leap/llvm9/python3-lldb9/summary
@@ -8854,6 +8904,7 @@ msgstr ""
 "は、これに依存する必要があります。"
 
 #. leap/llvm11/python3-lldb11/description
+#. leap/llvm13/python3-lldb13/description
 #. leap/llvm9/python3-lldb9/description
 msgid ""
 "This package contains the Python bindings for LLDB. It also contains pretty "
@@ -8973,19 +9024,6 @@ msgstr ""
 #. tumbleweed/lapack/cblas-devel-static/summary
 msgid "CBLAS - static libraries"
 msgstr "CBLAS - 静的ライブラリ"
-
-#. tumbleweed/llvm/clang-doc/description
-msgid ""
-"This package contains documentation for the Clang compiler.\n"
-"\n"
-"This package is a dummy package that depends on the version of clang-doc "
-"that openSUSE currently supports.  Packages that don't require a specific "
-"Clang version should depend on this."
-msgstr ""
-"このパッケージには、Clangコンパイラのドキュメントが含まれています。\n"
-"\n"
-"このパッケージはダミー・パッケージで、openSUSEが現在サポートしているclang-"
-"docのバージョンに依存しています。特定のClangバージョンを必要としないパッケージは、これに依存するはずです。"
 
 #. tumbleweed/lagrange/summary
 msgid "Desktop GUI client for browsing Geminispace"
@@ -9305,32 +9343,6 @@ msgstr ""
 "* 協定のないPUA(Private Use Area)内\n"
 "* 未割り当て(将来の割り当て用に予約済み)\n"
 "* 非文字"
-
-#. tumbleweed/latte-dock/summary
-msgid "Replacement Dock for Plasma Desktops"
-msgstr "Plasmaデスクトップの交換用 Dock"
-
-#. tumbleweed/latte-dock/description
-msgid ""
-"Latte is an alternative application launcher and dock for Plasma. It "
-"animates its contents by using a parabolic zoom effect and tries to be there "
-"only when it is needed."
-msgstr ""
-"LatteはPlasmaの代替アプリケーションランチャー兼 Dock "
-"です。パラボラズーム効果を使用してコンテンツをアニメーション化し、必要なときにだけ表示しようとします。"
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5/summary
-msgid "wlr-layer-shell integration for Qt 5"
-msgstr "Qt 5用のwlr-layer-shell統合"
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5/description
-#. tumbleweed/layer-shell-qt/layer-shell-qt5-devel/description
-msgid "This allows integration of Qt applications with wlr-layer-shell."
-msgstr "これにより、Qtアプリケーションをwlr-layer-shellと統合することができます。"
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5-devel/summary
-msgid "wlr-layer-shell integration for Qt 5 - development files"
-msgstr "Qt 5開発ファイル用のwlr-layer-shell統合"
 
 #. tumbleweed/lcdf-typetools/summary
 msgid "Programs to manipulate OpenType and multiple-master fonts"
@@ -9772,8 +9784,9 @@ msgid ""
 "into its lemma 'cat' and the grammatical information <neutrum,plural>. "
 "Generation is the opposite process."
 msgstr ""
-"lttoolboxは、語彙処理、形態素解析、単語生成のためのツールボックスです。分析とは、単語(例えば、cats)をその補題「cat」と文法的情報<neu"
-"trum,複数形>に分割するプロセスです。生成は逆の過程です。"
+"lttoolboxは、語彙処理、形態素解析、単語生成のためのツールボックスです。分析と"
+"は、単語(例えば、cats)をその補題「cat」と文法的情報<neutrum,複数形>に分割する"
+"プロセスです。生成は逆の過程です。"
 
 #. tumbleweed/lunar-calendar/liblunar-calendar-3_0-1/summary
 msgid "The lunar-calendar libraries"
@@ -9792,8 +9805,9 @@ msgid ""
 "This library makes libuv available to lua scripts. It was made for the luvit "
 "project but should usable from nearly any lua project."
 msgstr ""
-"このライブラリは、libuvをluaスクリプトで利用できるようにします。luvitプロジェクト用に作成されましたが、ほとんどすべてのluaプロジェクトで使"
-"用できるはずです。"
+"このライブラリは、libuvをluaスクリプトで利用できるようにします。luvitプロジェ"
+"クト用に作成されましたが、ほとんどすべてのluaプロジェクトで使用できるはずで"
+"す。"
 
 #. tumbleweed/lzo/liblzo2-2/description
 #. tumbleweed/lzo/liblzo2-2-32bit/description
@@ -9941,19 +9955,6 @@ msgstr ""
 "きます。uname -m はすべての子プログラムに継承されますが、プロセス階層内の現在"
 "のシェルまたはそれより上のプロセスには影響しません。"
 
-#. tumbleweed/llvm/llvm-doc/description
-msgid ""
-"This package contains documentation for the LLVM infrastructure.\n"
-"\n"
-"This package is a dummy package that depends on the version of llvm-doc that "
-"openSUSE currently supports.  Packages that don't require a specific LLVM "
-"version should depend on this."
-msgstr ""
-"このパッケージには、LLVMインフラストラクチャのマニュアルが含まれています。\n"
-"\n"
-"このパッケージはダミー・パッケージであり、openSUSEが現在サポートしているllvm-"
-"docのバージョンに依存しています。特定のLLVMバージョンを必要としないパッケージは、これに依存するはずです。"
-
 #. tumbleweed/loadlin/summary
 msgid "Linux Loader with Command Line from DOS"
 msgstr "DOSからのコマンドラインを備えたLinuxローダー"
@@ -9998,17 +9999,10 @@ msgid ""
 "\n"
 "This package contains the LogCLI command-line tool."
 msgstr ""
-"Lokiは、Prometheusにインスパイアされた、水平スケーラブルで高可用性のマルチテナントログ集約システムです。\n"
+"Lokiは、Prometheusにインスパイアされた、水平スケーラブルで高可用性のマルチテ"
+"ナントログ集約システムです。\n"
 "\n"
 "このパッケージには、LogCLIコマンドラインツールが含まれています。"
-
-#. tumbleweed/log4j12/logfactor5/summary
-msgid "Log Viewer GUI"
-msgstr "ログ・ビューアのGUI"
-
-#. tumbleweed/log4j12/logfactor5/description
-msgid "LogFactor5 is a Swing based GUI to view log4j logs."
-msgstr "LogFactor5は、log4jログを表示するSwingベースのGUIです。"
 
 #. tumbleweed/logwatch/summary
 msgid "Tool to analyze and report on system logs"
@@ -10063,10 +10057,12 @@ msgid ""
 "* if configured to do so and memory availability worsens, activate the "
 "kernel's   OOM killer."
 msgstr ""
-"Low Memory Monitorは初期ブートデーモンで、カーネルからのメモリ圧力情報を監視します。メモリ圧力によってメモリがすぐに利用できなくなり、対"
-"話性の問題が発生する場合は、次の処理を行います。\n"
+"Low Memory Monitorは初期ブートデーモンで、カーネルからのメモリ圧力情報を監視"
+"します。メモリ圧力によってメモリがすぐに利用できなくなり、対話性の問題が発生"
+"する場合は、次の処理を行います。\n"
 "*メモリ不足時にユーザ空間アプリケーションにDにD-Bus信号を送信します。\n"
-"* そうするように設定されていてメモリの可用性が悪くなった場合は、カーネルのOOMキラーを有効にします。"
+"* そうするように設定されていてメモリの可用性が悪くなった場合は、カーネルのOOM"
+"キラーを有効にします。"
 
 #. tumbleweed/low-memory-monitor/low-memory-monitor-doc/summary
 msgid "Documentation for low-memory-monitor"
@@ -10074,7 +10070,8 @@ msgstr "low-memory-monitor のドキュメント"
 
 #. tumbleweed/low-memory-monitor/low-memory-monitor-doc/description
 msgid "This package provides documentation for low-memory-monitor."
-msgstr "このパッケージには、low-memory-monitor に関するドキュメントが含まれています。"
+msgstr ""
+"このパッケージには、low-memory-monitor に関するドキュメントが含まれています。"
 
 #. tumbleweed/ltrace/summary
 #. tumbleweed/ltrace/ltrace-32bit/summary
@@ -10121,11 +10118,13 @@ msgid ""
 "processor, and lt-expand, which generates all possible mappings between "
 "surface forms and lexical forms in the dictionary."
 msgstr ""
-"lttoolboxは、語彙処理、形態素解析、単語生成のためのツールボックスです。分析とは、単語(例えば、cats)をその補題「cat」と文法的情報<neu"
-"trum,複数形>に分割するプロセスです。生成は逆の過程です。\n"
+"lttoolboxは、語彙処理、形態素解析、単語生成のためのツールボックスです。分析と"
+"は、単語(例えば、cats)をその補題「cat」と文法的情報<neutrum,複数形>に分割する"
+"プロセスです。生成は逆の過程です。\n"
 "\n"
-"このパッケージには、lt-comp コンパイラ、lt-proc プロセッサ、lt-"
-"expandの3つのプログラムが用意されています。これらのプログラムは、辞書内の表面形式と字句形式の間の可能なすべてのマッピングを生成します。"
+"このパッケージには、lt-comp コンパイラ、lt-proc プロセッサ、lt-expandの3つの"
+"プログラムが用意されています。これらのプログラムは、辞書内の表面形式と字句形"
+"式の間の可能なすべてのマッピングを生成します。"
 
 #. tumbleweed/lttoolbox/lttoolbox-devel/summary
 msgid "Development files for the Lexical Toolbox"
@@ -10140,8 +10139,9 @@ msgid ""
 "\n"
 "This subpackage contains the development files for lttoolbox."
 msgstr ""
-"lttoolboxは、語彙処理、形態素解析、単語生成のためのツールボックスです。分析とは、単語(例えば、cats)をその補題「cat」と文法的情報<neu"
-"trum,複数形>に分割するプロセスです。生成は逆の過程です。\n"
+"lttoolboxは、語彙処理、形態素解析、単語生成のためのツールボックスです。分析と"
+"は、単語(例えば、cats)をその補題「cat」と文法的情報<neutrum,複数形>に分割する"
+"プロセスです。生成は逆の過程です。\n"
 "\n"
 "このサブパッケージには、lttoolbox用の開発ファイルが含まれています。"
 
@@ -10161,13 +10161,15 @@ msgid ""
 "an executable. Embed it in other programs to support runtime extensibility "
 "and interactive development."
 msgstr ""
-"FennelはLuaにコンパイルされるlispです。使いやすく、表現力があり、手書きのLuaと比較してオーバーヘッドがほぼ0であることを目標としています。"
+"FennelはLuaにコンパイルされるlispです。使いやすく、表現力があり、手書きのLua"
+"と比較してオーバーヘッドがほぼ0であることを目標としています。\n"
 "\n"
-"\n"
-"• Luaとの完全な互換性-Luaの任意の関数またはライブラリを使用できます。• オーバーヘッド0 - "
-"コンパイルされたコードは、手書きのLuaと同等か、それ以上に効率的であるべきです。•コンパイル時マクロ - "
-"実行時にFennelに依存しないコンパイル済みコードを提供します。• 埋め込み可能 - "
-"Fennelは1ファイルライブラリであり、実行可能ファイルでもあります。実行時の拡張性と対話型開発をサポートするために、他のプログラムに埋め込みます。"
+"• Luaとの完全な互換性-Luaの任意の関数またはライブラリを使用できます。• オー"
+"バーヘッド0 - コンパイルされたコードは、手書きのLuaと同等か、それ以上に効率的"
+"であるべきです。•コンパイル時マクロ - 実行時にFennelに依存しないコンパイル済"
+"みコードを提供します。• 埋め込み可能 - Fennelは1ファイルライブラリであり、実"
+"行可能ファイルでもあります。実行時の拡張性と対話型開発をサポートするために、"
+"他のプログラムに埋め込みます。"
 
 #. tumbleweed/lua-language-server/summary
 msgid "Lua Language Server coded by Lua"
@@ -10177,7 +10179,8 @@ msgstr "LuaによってコーディングされたLua言語サーバ"
 msgid ""
 "This package provides a Language Server Protocol (LSP) implementation for "
 "Lua."
-msgstr "このパッケージは、Lua用のLSP(Language Server Protocol)実装を提供します。"
+msgstr ""
+"このパッケージは、Lua用のLSP(Language Server Protocol)実装を提供します。"
 
 #. tumbleweed/lua54-penlight/lua-penlight-doc/summary
 msgid "Documentation for lua-penlight"
@@ -10371,12 +10374,14 @@ msgid ""
 "dkjson is written in Lua without any dependencies, but when LPeg is "
 "available dkjson can use it to speed up decoding."
 msgstr ""
-"dkjsonは、JSONデータのエンコードとデコードを行うのモジュールである。UTF-8をサポートしています。\n"
+"dkjsonは、JSONデータのエンコードとデコードを行うのモジュールである。UTF-8をサ"
+"ポートしています。\n"
 "\n"
-"JSON(JavaScript Object "
-"Notation)は、JavaScriptデータ構造の構文に基づいてデータをシリアライズするためのフォーマットです。\n"
+"JSON(JavaScript Object Notation)は、JavaScriptデータ構造の構文に基づいてデー"
+"タをシリアライズするためのフォーマットです。\n"
 "\n"
-"dkjsonは何の依存関係もなくLuaで書かれているが、LPegが利用できるようになれば、dkjsonはそれを使ってデコードを高速化できます。"
+"dkjsonは何の依存関係もなくLuaで書かれているが、LPegが利用できるようになれば、"
+"dkjsonはそれを使ってデコードを高速化できます。"
 
 #. tumbleweed/lua51-ldbus/summary
 #. tumbleweed/lua53-ldbus/summary
@@ -10501,8 +10506,8 @@ msgid ""
 "LuaLDAP is a simple interface from Lua to an LDAP client, in fact it is a "
 "bind to OpenLDAP client or ADSI"
 msgstr ""
-"LuaLDAP は Lua から LDAP クライアントへの単純なインターフェースであり、実際には OpenLDAP クライアントまたはADSI "
-"へのバインドです。"
+"LuaLDAP は Lua から LDAP クライアントへの単純なインターフェースであり、実際に"
+"は OpenLDAP クライアントまたはADSI へのバインドです。"
 
 #. tumbleweed/lua51-luasocket/lua51-luasocket-devel/summary
 msgid "Header files for lua51-luasocket"
@@ -10620,21 +10625,29 @@ msgid ""
 "now provided. This module does not work lua -i because that runs its own "
 "readline, and the two conflict with each other."
 msgstr ""
-"このLuaモジュールは、GNU readline/History "
-"Libraryへの単純な呼び出しインターフェースを提供します。readline()関数はラッパーであり、GNU readline を呼び出して履歴リストの"
-"最後に行を追加し、その行を返します。通常は、プログラムが終了する前にsave_history()を呼び出して、履歴リストがhistfileに保存されるよう"
-"にします。set_options{}関数を使用して、さまざまなオプションを変更できます。ユーザは個々の~/.inputrcファイルで GNU "
-"readline(例えばviやemacsのキーストローク?)を設定することができます。man readlineのINITIALIZATION "
-"FILEセクションを参照してください。デフォルトでは、GNU readline ライブラリは標準入力から読み込み、標準出力に書き込むことでユーザと対話しま"
-"す。これは、標準入力と標準出力をデータの入出力に使用したいアプリケーションには非常に適していません。したがって、このLuaモジュールはctermid()か"
-"ら返されるプロセスの制御端末(通常は/dev/tty)上のユーザと対話します。readline の代替インターフェースのほとんど、すなわちhandler_"
-"install、read_char、handler_removeが含まれるようになりました。アプリケーションによっては、ファイルを伴うキーボードI/"
-"O、デバイス、またはウィンドウシステム I/O とインターリーブする必要があります。通常は、メインループを使用してさまざまなファイル記述子で "
-"select() を実行します。このニーズに対応するために、readlineはイベントループから「コールバック」関数として呼び出すこともでき、代替インタフ"
-"ェースはこれを行う関数を提供します。Alternate Interfaceはタブ補完機能を提供しますが、履歴ファイルには追加されないので、RL."
-"add_history(s)を明示的に呼び出す必要があるでしょう。handler_install()を参照。readline "
-"のカスタム補完へのアクセスが提供されるようになりました。このモジュールはlua-iでは動作しません。なぜなら、lua-"
-"iは独自のreadlineを実行しており、この2つが競合するからです。"
+"このLuaモジュールは、GNU readline/History Libraryへの単純な呼び出しインター"
+"フェースを提供します。readline()関数はラッパーであり、GNU readline を呼び出し"
+"て履歴リストの最後に行を追加し、その行を返します。通常は、プログラムが終了す"
+"る前にsave_history()を呼び出して、履歴リストがhistfileに保存されるようにしま"
+"す。set_options{}関数を使用して、さまざまなオプションを変更できます。ユーザは"
+"個々の~/.inputrcファイルで GNU readline(例えばviやemacsのキーストローク?)を設"
+"定することができます。man readlineのINITIALIZATION FILEセクションを参照してく"
+"ださい。デフォルトでは、GNU readline ライブラリは標準入力から読み込み、標準出"
+"力に書き込むことでユーザと対話します。これは、標準入力と標準出力をデータの入"
+"出力に使用したいアプリケーションには非常に適していません。したがって、このLua"
+"モジュールはctermid()から返されるプロセスの制御端末(通常は/dev/tty)上のユーザ"
+"と対話します。readline の代替インターフェースのほとんど、すなわち"
+"handler_install、read_char、handler_removeが含まれるようになりました。アプリ"
+"ケーションによっては、ファイルを伴うキーボードI/O、デバイス、またはウィンドウ"
+"システム I/O とインターリーブする必要があります。通常は、メインループを使用し"
+"てさまざまなファイル記述子で select() を実行します。このニーズに対応するため"
+"に、readlineはイベントループから「コールバック」関数として呼び出すこともで"
+"き、代替インタフェースはこれを行う関数を提供します。Alternate Interfaceはタブ"
+"補完機能を提供しますが、履歴ファイルには追加されないので、RL.add_history(s)を"
+"明示的に呼び出す必要があるでしょう。handler_install()を参照。readline のカス"
+"タム補完へのアクセスが提供されるようになりました。このモジュールはlua-iでは動"
+"作しません。なぜなら、lua-iは独自のreadlineを実行しており、この2つが競合する"
+"からです。"
 
 #. tumbleweed/lua51-slaxml/summary
 #. tumbleweed/lua53-slaxml/summary
@@ -10748,10 +10761,14 @@ msgid ""
 "variable, etc. The options can be used on the command line, put into a "
 "config or directly into checked files as Lua comments."
 msgstr ""
-"Luacheckは静的なアナライザで、Lua にとって重要な存在です。Luacheckは、未定義のグローバル変数の使用、未使用の変数と値、初期化されていな"
-"い変数へのアクセス、到達不能なコードなど、さまざまな問題を検出します。ほとんどのチェック項目は設定可能です。プロジェクト関連のカスタムグローバルを定義した"
-"り、標準グローバルのセット(Lua標準ライブラリのバージョン)を選択したり、関連する変数のタイプと名前による警告のフィルタリングなどのオプションがあります"
-"。これらのオプションは、コマンドラインで使用したり、configに入れたり、Luaコメントとして直接チェックファイルに入れたりすることができます。"
+"Luacheckは静的なアナライザで、Lua にとって重要な存在です。Luacheckは、未定義"
+"のグローバル変数の使用、未使用の変数と値、初期化されていない変数へのアクセ"
+"ス、到達不能なコードなど、さまざまな問題を検出します。ほとんどのチェック項目"
+"は設定可能です。プロジェクト関連のカスタムグローバルを定義したり、標準グロー"
+"バルのセット(Lua標準ライブラリのバージョン)を選択したり、関連する変数のタイプ"
+"と名前による警告のフィルタリングなどのオプションがあります。これらのオプショ"
+"ンは、コマンドラインで使用したり、configに入れたり、Luaコメントとして直接"
+"チェックファイルに入れたりすることができます。"
 
 #. tumbleweed/lua54-luaposix/luaposix-doc/description
 msgid "This package contains the documentation for lua54-luaposix."
@@ -11026,6 +11043,84 @@ msgid ""
 msgstr ""
 "このパッケージには、lunar-calendar ライブラリのイントロスペクション・バイン"
 "ディングが含まれています。"
+
+#~ msgid "Task manager"
+#~ msgstr "タスクマネージャ"
+
+#~ msgid ""
+#~ "Latte is a dock based on plasma frameworks that animating its contents by "
+#~ "using parabolic zoom effect."
+#~ msgstr ""
+#~ "Latteは放物線ズーム効果を利用してコンテンツをアニメートするプラズマフレー"
+#~ "ムワークに基づいた dock です。"
+
+#~ msgid "MySQL authentication in lighttpd"
+#~ msgstr "lighttpdでのMySQL認証"
+
+#~ msgid "A module to provide MySQL authentication in lighttpd."
+#~ msgstr "lighttpdでMySQL認証を提供するモジュール。"
+
+#~ msgid "CML (Cache Meta Language) module for Lighttpd"
+#~ msgstr "Lighttpd 向け CML (キャッシュメタ言語) モジュール"
+
+#~ msgid ""
+#~ "CML is a Meta language to describe the dependencies of a page at one side "
+#~ "and building a page from its fragments on the oth er side using LUA.\n"
+#~ "\n"
+#~ "CML (Cache Meta Language) wants to solves several problems: \n"
+#~ "* dynamic content needs caching to perform \n"
+#~ "* checking if the content is dirty inside of the application is    "
+#~ "usually more expensive than sending out the cached data \n"
+#~ "* a dynamic page is usually fragmented and the fragments have    "
+#~ "different livetimes \n"
+#~ "* the different fragements can be cached independently"
+#~ msgstr ""
+#~ "CMLは,ページの一方の辺の依存関係を記述し、他方の辺のフラグメントからLUAを"
+#~ "用いてページを構築するメタ言語です。\n"
+#~ "\n"
+#~ "CML(Cache Meta Language)はいくつかの問題を解決しようとしています:\n"
+#~ "* 動的コンテンツを実行するにはキャッシュが必要\n"
+#~ "* コンテンツがアプリケーション内部で汚れているかどうかをチェックすること"
+#~ "は、通常、キャッシュされたデータを送信するよりもコストがかかります。\n"
+#~ "* 動的ページは通常フラグメント化されており、フラグメントの生存時間は異なり"
+#~ "ます。\n"
+#~ "* 異なるフラグメントは個別にキャッシュできます。"
+
+#~ msgid "MySQL based virtual hosts (vhosts) module for Lighttpd"
+#~ msgstr "lighttpd 向け MySQL ベースの仮想ホスト (vhosts) モジュール"
+
+#~ msgid ""
+#~ "With MySQL based vhosting you can put the information where to look for a "
+#~ "document-root of a given host into a MySQL database."
+#~ msgstr ""
+#~ "MySQLベースのvhostingでは、特定のホストのドキュメントルートを検索する場所"
+#~ "の情報をMySQLデータベースに入れることができます。"
+
+#~ msgid "Another anti hot-linking module for Lighttpd"
+#~ msgstr "もう 1 つの lighttpd 向けホットリンク阻止モジュール"
+
+#~ msgid ""
+#~ "Anti Hotlinking: \n"
+#~ "* if user requests download-url directly the request is denied and    he "
+#~ "is redirected to ''deny-url' \n"
+#~ "* if user visits trigger-url before requesting download-url access    is "
+#~ "granted \n"
+#~ "* if user visits download-url again after trigger-timeout has run    down "
+#~ "to the request is denied and he is redirected  to deny-url\n"
+#~ "\n"
+#~ "The storage for the trigger information is either stored locally in a "
+#~ "gdbm file or remotly in memcached."
+#~ msgstr ""
+#~ "アンチホットリンク:\n"
+#~ "* ユーザがdownload-urlを直接要求した場合、その要求は拒否され、ユーザは"
+#~ "「deny-url」にリダイレクトされます。\n"
+#~ "* ダウンロードURLアクセスが許可される前に、ユーザがtrigger-urlにアクセスし"
+#~ "た場合\n"
+#~ "* トリガータイムアウトが発生して要求が拒否された後、ユーザが再度download-"
+#~ "urlにアクセスした場合、ユーザはdeny-urlにリダイレクトされます。\n"
+#~ "\n"
+#~ "トリガー情報のストレージは、ローカルでgdbmファイルに格納されるか、remotly"
+#~ "でmemcachedに格納されます。"
 
 #~ msgid ""
 #~ "This package contains scan-build and scan-view, command line static code "

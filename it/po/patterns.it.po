@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2021-05-18 10:59+0000\n"
 "Last-Translator: Davide Aiello <davide.aiello@novilingulists.com>\n"
 "Language-Team: Italian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -31,6 +31,7 @@ msgstr ""
 #. SLE/patterns-base/patterns-base-apparmor/category
 #. SLE/patterns-base/patterns-base-base/category
 #. SLE/patterns-base/patterns-base-basesystem/category
+#. SLE/patterns-base/patterns-base-bootloader/category
 #. SLE/patterns-base/patterns-base-enhanced_base/category
 #. SLE/patterns-base/patterns-base-minimal_base/category
 #. SLE/patterns-base/patterns-base-sw_management/category
@@ -105,6 +106,14 @@ msgstr "Questo modello installa un desktop piuttosto semplice (icewm)"
 msgid "Graphical Environments"
 msgstr "Ambienti grafici"
 
+#. SLE/patterns-base/patterns-base-bootloader/summary
+msgid "Bootloader"
+msgstr "Bootloader"
+
+#. SLE/patterns-base/patterns-base-bootloader/description
+msgid "This pattern holds files required for booting the system"
+msgstr "Questo modello contiene i file richiesti per l'avvio del sistema"
+
 #. SLE/patterns-base/patterns-base-documentation/summary
 #. SLE/patterns-base/patterns-base-documentation/description
 msgid "Help and Support Documentation"
@@ -130,6 +139,37 @@ msgstr ""
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr "Modello a 32 bit complementare a enhanced_base."
 
+#. SLE/patterns-base/patterns-base-fips/summary
+msgid "FIPS 140-2 specific packages"
+msgstr "Pacchetti specifici per FIPS 140-2"
+
+#. SLE/patterns-base/patterns-base-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+"Questo modello consente di installare pacchetti specifici per FIPS 140-2 che "
+"completano vari moduli crittografici in uso. È richiesto per eseguire il "
+"computer con \"fips=1\".\n"
+"\n"
+"Nota: questo modello abilita solo l'operazione compatibile con FIPS 140-2, "
+"non esegue la certificazione né la convalida diretta FIPS 140-2 del "
+"sistema.\n"
+"\n"
+"Per conoscere lo stato della certificazione FIPS 140-2, fare riferimento "
+"alle dichiarazioni ufficiali SUSE."
+
+#. SLE/patterns-base/patterns-base-fips/category
+msgid "Primary Functions"
+msgstr "Funzioni principali"
+
 #. SLE/patterns-base/patterns-base-minimal_base/summary
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
 msgid "Minimal Appliance Base"
@@ -137,13 +177,11 @@ msgstr "Base appliance minimo"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
-"This is the minimal SLE runtime system. It is really a minimal system, you "
-"can login and a shell will be started, that's all. It is intended as base "
-"for Appliances."
+"This is the minimal runtime system. It is really a minimal system. It is "
+"intended as base for Appliances."
 msgstr ""
-"Questo è il sistema di runtime minimo. È veramente un sistema minimo, è "
-"possibile eseguire il login e sarà avviata una shell, ma nient'altro. È "
-"destinato a fungere da base per le applicazioni."
+"Questo è il sistema di esecuzione minimale. È veramente un sistema minimale, "
+"inteso come base per i dispositivi."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -305,12 +343,6 @@ msgstr ""
 "Fornisce gli strumenti e le patch per la correzione del kernel in fase di "
 "runtime."
 
-#. SLE/patterns-rt/patterns-rt-rt_sles/category
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
-#. SLE/patterns-wbem/patterns-wbem-WBEM/category
-msgid "Primary Functions"
-msgstr "Funzioni principali"
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 msgid "Oracle Server Base"
 msgstr "Database server Oracle"
@@ -327,6 +359,31 @@ msgstr "Gestione aziendale basata sul Web"
 msgid "Web-based enterprise management."
 msgstr "Gestione aziendale basata sul Web."
 
+#. SLE/patterns-wsl/patterns-wsl-base/summary
+msgid "Base WSL packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/description
+msgid ""
+"This package contains the wsl_base pattern: recommended tools,libraries for "
+"using WSL."
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/category
+#. SLE/patterns-wsl/patterns-wsl-gui/category
+msgid "Development"
+msgstr "Sviluppo"
+
+#. SLE/patterns-wsl/patterns-wsl-gui/summary
+msgid "WSL GUI packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-gui/description
+msgid ""
+"This package contains the wsl_gui pattern: recommended tools,libraries for "
+"using WSLg."
+msgstr ""
+
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
 msgstr "Modelli per applicazioni SLES per SAP"
@@ -341,12 +398,6 @@ msgid "Minimal set of tools for compiling and linking applications."
 msgstr ""
 "Insieme di strumenti di base per la compilazione e il collegamento delle "
 "applicazioni."
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "Sviluppo"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -783,34 +834,6 @@ msgstr ""
 msgid "The 32bit pattern complementing directory_server."
 msgstr "Modello a 32 bit complementare a directory_server."
 
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
-msgid "FIPS 140-2 specific packages"
-msgstr "Pacchetti specifici per FIPS 140-2"
-
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
-msgid ""
-"This pattern installs the FIPS 140-2 specific packages that complete the "
-"various cryptographic modules in use. It is required if you want to run the "
-"machine with \"fips=1\".\n"
-"\n"
-"Please note that this pattern only enables FIPS 140-2 compliant operation, "
-"it does not directly make the system FIPS 140-2 certified nor validated.\n"
-"\n"
-"Please refer to SUSE official statements on the state of FIPS 140-2 "
-"certification."
-msgstr ""
-"Questo modello consente di installare pacchetti specifici per FIPS 140-2 che "
-"completano vari moduli crittografici in uso. È richiesto per eseguire il "
-"computer con \"fips=1\".\n"
-"\n"
-"Nota: questo modello abilita solo l'operazione compatibile con FIPS 140-2, "
-"non esegue la certificazione né la convalida diretta FIPS 140-2 del "
-"sistema.\n"
-"\n"
-"Per conoscere lo stato della certificazione FIPS 140-2, fare riferimento "
-"alle dichiarazioni ufficiali SUSE."
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
 msgstr "Modello a 32 bit complementare a fips."
@@ -1173,14 +1196,6 @@ msgstr ""
 msgid "Base System (alias pattern for base)"
 msgstr "Sistema di base (modello alias per base)"
 
-#. leap/patterns-base/patterns-base-bootloader/summary
-msgid "Bootloader"
-msgstr "Bootloader"
-
-#. leap/patterns-base/patterns-base-bootloader/description
-msgid "This pattern holds files required for booting the system"
-msgstr "Questo modello contiene i file richiesti per l'avvio del sistema"
-
 #. leap/patterns-base/patterns-base-console/summary
 msgid "Console Tools"
 msgstr "Strumenti della console"
@@ -1193,14 +1208,6 @@ msgstr ""
 "Applicazioni utili per quelli che usano la console anziché l'ambiente "
 "grafico desktop."
 
-#. leap/patterns-base/patterns-base-minimal_base/description
-msgid ""
-"This is the minimal runtime system. It is really a minimal system. It is "
-"intended as base for Appliances."
-msgstr ""
-"Questo è il sistema di esecuzione minimale. È veramente un sistema minimale, "
-"inteso come base per i dispositivi."
-
 #. leap/patterns-base/patterns-base-update_test/summary
 msgid "Tests for the Update Stack"
 msgstr "Verifiche per il sistema d'aggiornamento"
@@ -1212,6 +1219,31 @@ msgid ""
 msgstr ""
 "Pacchetti usati per verificare il funzionamento del sistema d'aggiornamento. "
 "Questi piccoli pacchetti non hanno altre funzionalità."
+
+#. leap/patterns-budgie/patterns-budgie-budgie/summary
+#, fuzzy
+#| msgid "Deepin Desktop Environment"
+msgid "Budgie Desktop Environment"
+msgstr "Ambiente desktop Deepin"
+
+#. leap/patterns-budgie/patterns-budgie-budgie/description
+msgid ""
+"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
+"the way of the user."
+msgstr ""
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/summary
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/description
+#, fuzzy
+#| msgid "Base packages for the XFCE Desktop Environment"
+msgid "Applets for Budgie Desktop Environment"
+msgstr "Pacchetti di base per l'ambiente desktop XFCE"
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/category
+#, fuzzy
+#| msgid "Remote Desktop"
+msgid "Budgie Desktop"
+msgstr "Desktop remoto"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
@@ -1423,6 +1455,18 @@ msgstr "Sviluppo in Qt 5"
 
 #. leap/patterns-kde/patterns-kde-devel_qt5/description
 msgid "Tools and libraries for software development using Qt 5."
+msgstr "Strumenti e librerie per sviluppo di programmi che fanno uso di Qt 5."
+
+#. leap/patterns-kde/patterns-kde-devel_qt6/summary
+#, fuzzy
+#| msgid "Qt 5 Development"
+msgid "Qt 6 Development"
+msgstr "Sviluppo in Qt 5"
+
+#. leap/patterns-kde/patterns-kde-devel_qt6/description
+#, fuzzy
+#| msgid "Tools and libraries for software development using Qt 5."
+msgid "Tools and libraries for software development using Qt 6."
 msgstr "Strumenti e librerie per sviluppo di programmi che fanno uso di Qt 5."
 
 #. leap/patterns-kde/patterns-kde-kde/summary
@@ -1779,31 +1823,6 @@ msgstr ""
 "ottimizza la quantità di software coinvolta nell'applicazione delle policy "
 "di sicurezza."
 
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/summary
-#, fuzzy
-#| msgid "Deepin Desktop Environment"
-msgid "Budgie Desktop Environment"
-msgstr "Ambiente desktop Deepin"
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/description
-msgid ""
-"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
-"the way of the user."
-msgstr ""
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/summary
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/description
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
-msgid "Applets for Budgie Desktop Environment"
-msgstr "Pacchetti di base per l'ambiente desktop XFCE"
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/category
-#, fuzzy
-#| msgid "Remote Desktop"
-msgid "Budgie Desktop"
-msgstr "Desktop remoto"
-
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
 msgstr "Runtime del container per sistemi non in cluster"
@@ -1939,18 +1958,6 @@ msgstr "Deepin per l'ufficio"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
 msgid "Deepin Utilities"
 msgstr "Utilità Deepin"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/summary
-#, fuzzy
-#| msgid "Qt 5 Development"
-msgid "Qt 6 Development"
-msgstr "Sviluppo in Qt 5"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/description
-#, fuzzy
-#| msgid "Tools and libraries for software development using Qt 5."
-msgid "Tools and libraries for software development using Qt 6."
-msgstr "Strumenti e librerie per sviluppo di programmi che fanno uso di Qt 5."
 
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
@@ -2192,25 +2199,14 @@ msgstr "Sway Tiling Wayland Compositor e strumenti correlati"
 msgid "Sway Tiling Wayland Compositor and related tools."
 msgstr "Sway Tiling Wayland Compositor e strumenti correlati."
 
-#. tumbleweed/patterns-wsl/patterns-wsl-base/summary
-msgid "Base WSL packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-base/description
-msgid ""
-"This package contains the wsl_base pattern: recommended tools,libraries for "
-"using WSL."
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/summary
-msgid "WSL GUI packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/description
-msgid ""
-"This package contains the wsl_gui pattern: recommended tools,libraries for "
-"using WSLg."
-msgstr ""
+#~ msgid ""
+#~ "This is the minimal SLE runtime system. It is really a minimal system, "
+#~ "you can login and a shell will be started, that's all. It is intended as "
+#~ "base for Appliances."
+#~ msgstr ""
+#~ "Questo è il sistema di runtime minimo. È veramente un sistema minimo, è "
+#~ "possibile eseguire il login e sarà avviata una shell, ma nient'altro. È "
+#~ "destinato a fungere da base per le applicazioni."
 
 #~ msgid ""
 #~ "This is the minimal openSUSE runtime system. It is really a minimal "

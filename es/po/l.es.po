@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2016-02-02 01:17:11\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -124,6 +124,7 @@ msgstr ""
 
 #. leap/llvm/clang/summary
 #. leap/llvm11/clang11/summary
+#. leap/llvm13/clang13/summary
 #. leap/llvm5/clang5/summary
 #. leap/llvm7/clang7/summary
 #. leap/llvm9/clang9/summary
@@ -142,6 +143,8 @@ msgstr ""
 #. leap/llvm/clang-devel/summary
 #. leap/llvm11/clang11-devel/summary
 #. leap/llvm11/clang11-devel-32bit/summary
+#. leap/llvm13/clang13-devel/summary
+#. leap/llvm13/clang13-devel-32bit/summary
 #. leap/llvm5/clang5-devel-32bit/summary
 #. leap/llvm5/clang5-devel/summary
 #. leap/llvm7/clang7-devel-32bit/summary
@@ -157,6 +160,23 @@ msgid ""
 "files)\n"
 "\n"
 "This package is a dummy package that depends on the version of clang-devel "
+"that openSUSE currently supports.  Packages that don't require a specific "
+"Clang version should depend on this."
+msgstr ""
+
+#. leap/llvm/clang-doc/summary
+#. leap/llvm11/clang11-doc/summary
+#. leap/llvm13/clang13-doc/summary
+#. leap/llvm9/clang9-doc/summary
+#, fuzzy
+msgid "Documentation for Clang"
+msgstr "Documentación de libexo"
+
+#. leap/llvm/clang-doc/description
+msgid ""
+"This package contains documentation for the Clang compiler.\n"
+"\n"
+"This package is a dummy package that depends on the version of clang-doc "
 "that openSUSE currently supports.  Packages that don't require a specific "
 "Clang version should depend on this."
 msgstr ""
@@ -180,6 +200,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/clang11/description
+#. leap/llvm13/clang13/description
 #. leap/llvm5/clang5/description
 #. leap/llvm7/clang7/description
 #. leap/llvm9/clang9/description
@@ -189,6 +210,8 @@ msgstr "Este paquete contiene las bibliotecas compartidas para el sistema LASH"
 
 #. leap/llvm11/clang11-devel/description
 #. leap/llvm11/clang11-devel-32bit/description
+#. leap/llvm13/clang13-devel/description
+#. leap/llvm13/clang13-devel-32bit/description
 #. leap/llvm5/clang5-devel-32bit/description
 #. leap/llvm5/clang5-devel/description
 #. leap/llvm7/clang7-devel-32bit/description
@@ -203,13 +226,8 @@ msgstr ""
 "Este paquete contiene los archivos de biblioteca CAPI 2.0 necesarias para "
 "desarrollo."
 
-#. leap/llvm11/clang11-doc/summary
-#. leap/llvm9/clang9-doc/summary
-#, fuzzy
-msgid "Documentation for Clang"
-msgstr "Documentación de libexo"
-
 #. leap/llvm11/clang11-doc/description
+#. leap/llvm13/clang13-doc/description
 #. leap/llvm9/clang9-doc/description
 #, fuzzy
 msgid "This package contains documentation for the Clang compiler."
@@ -1096,13 +1114,14 @@ msgid ""
 msgstr ""
 
 #. leap/latte-dock/summary
-msgid "Task manager"
+msgid "Replacement Dock for Plasma Desktops"
 msgstr ""
 
 #. leap/latte-dock/description
 msgid ""
-"Latte is a dock based on plasma frameworks that animating its contents by "
-"using parabolic zoom effect."
+"Latte is an alternative application launcher and dock for Plasma. It "
+"animates its contents by using a parabolic zoom effect and tries to be there "
+"only when it is needed."
 msgstr ""
 
 #. leap/latte-dock/latte-dock-lang/summary
@@ -1114,6 +1133,19 @@ msgstr "YaST2 - Traducción al punjabi"
 #, fuzzy
 msgid "Provides translations for the \"latte-dock\" package."
 msgstr "Provee de traducciones al paquete kdebase4-SLED"
+
+#. leap/layer-shell-qt/layer-shell-qt5/summary
+msgid "wlr-layer-shell integration for Qt 5"
+msgstr ""
+
+#. leap/layer-shell-qt/layer-shell-qt5/description
+#. leap/layer-shell-qt/layer-shell-qt5-devel/description
+msgid "This allows integration of Qt applications with wlr-layer-shell."
+msgstr ""
+
+#. leap/layer-shell-qt/layer-shell-qt5-devel/summary
+msgid "wlr-layer-shell integration for Qt 5 - development files"
+msgstr ""
 
 #. leap/lazarus/summary
 msgid "FreePascal RAD IDE and Component Library"
@@ -1734,6 +1766,8 @@ msgstr ""
 
 #. leap/llvm11/libLLVM11/summary
 #. leap/llvm11/libLLVM11-32bit/summary
+#. leap/llvm13/libLLVM13/summary
+#. leap/llvm13/libLLVM13-32bit/summary
 #. leap/llvm5/libLLVM5-32bit/summary
 #. leap/llvm5/libLLVM5/summary
 #. leap/llvm7/libLLVM7-32bit/summary
@@ -1746,6 +1780,8 @@ msgstr "Bibliotecas para ATM"
 
 #. leap/llvm11/libLLVM11/description
 #. leap/llvm11/libLLVM11-32bit/description
+#. leap/llvm13/libLLVM13/description
+#. leap/llvm13/libLLVM13-32bit/description
 #. leap/llvm5/libLLVM5-32bit/description
 #. leap/llvm5/libLLVM5/description
 #. leap/llvm7/libLLVM7-32bit/description
@@ -1758,6 +1794,8 @@ msgstr "Este paquete contiene las bibliotecas compartidas para el sistema LASH"
 
 #. leap/llvm11/libLTO11/summary
 #. leap/llvm11/libLTO11-32bit/summary
+#. leap/llvm13/libLTO13/summary
+#. leap/llvm13/libLTO13-32bit/summary
 #. leap/llvm5/libLTO5-32bit/summary
 #. leap/llvm5/libLTO5/summary
 #. leap/llvm7/libLTO7-32bit/summary
@@ -1769,6 +1807,8 @@ msgstr ""
 
 #. leap/llvm11/libLTO11/description
 #. leap/llvm11/libLTO11-32bit/description
+#. leap/llvm13/libLTO13/description
+#. leap/llvm13/libLTO13-32bit/description
 #. leap/llvm5/libLTO5-32bit/description
 #. leap/llvm5/libLTO5/description
 #. leap/llvm7/libLTO7-32bit/description
@@ -1829,11 +1869,11 @@ msgid ""
 "algebra.  BLAS provides a number of basic algorithms for linear algebra."
 msgstr ""
 
-#. leap/llvm11/libc++-devel/summary
+#. leap/llvm13/libc++-devel/summary
 msgid "C++ standard library implementation (devel package)"
 msgstr ""
 
-#. leap/llvm11/libc++-devel/description
+#. leap/llvm13/libc++-devel/description
 #, fuzzy
 msgid ""
 "This package contains libc++, a new implementation of the C++ standard "
@@ -1842,12 +1882,12 @@ msgstr ""
 "Este paquete contiene los archivos de biblioteca CAPI 2.0 necesarias para "
 "desarrollo."
 
-#. leap/llvm11/libc++1/summary
+#. leap/llvm13/libc++1/summary
 #, fuzzy
 msgid "C++ standard library implementation"
 msgstr "Implementación \"managed D-Bus\" de D-Bus en C#"
 
-#. leap/llvm11/libc++1/description
+#. leap/llvm13/libc++1/description
 #, fuzzy
 #| msgid ""
 #| "This package contains an implementation of the ATK interfaces for GNOME "
@@ -1859,26 +1899,26 @@ msgstr ""
 "Este paquete contiene una implementación de las interfaces ATK para objetos "
 "widget de GNOME."
 
-#. leap/llvm11/libc++abi-devel/summary
+#. leap/llvm13/libc++abi-devel/summary
 #, fuzzy
 #| msgid "VBI decoding library - devel package"
 msgid "C++ standard library ABI (devel package)"
 msgstr "Biblioteca de decodificación para VBI - paquete de desarrollo"
 
-#. leap/llvm11/libc++abi-devel/description
+#. leap/llvm13/libc++abi-devel/description
 #, fuzzy
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
 "standard library, targeting C++11. (development files)"
 msgstr "Este paquete contiene la documentación de AdaptX"
 
-#. leap/llvm11/libc++abi1/summary
+#. leap/llvm13/libc++abi1/summary
 #, fuzzy
 #| msgid "Tcl Standard Library"
 msgid "C++ standard library ABI"
 msgstr "Biblioteca estándar Tcl"
 
-#. leap/llvm11/libc++abi1/description
+#. leap/llvm13/libc++abi1/description
 #, fuzzy
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
@@ -1887,6 +1927,8 @@ msgstr "Este paquete contiene la documentación de AdaptX"
 
 #. leap/llvm11/libclang11/summary
 #. leap/llvm11/libclang11-32bit/summary
+#. leap/llvm13/libclang13/summary
+#. leap/llvm13/libclang13-32bit/summary
 #. leap/llvm5/libclang5-32bit/summary
 #. leap/llvm5/libclang5/summary
 #. leap/llvm7/libclang7-32bit/summary
@@ -1899,6 +1941,8 @@ msgstr "Bibliotecas y archivos de cabecera para los desarrolldores de ChaSen."
 
 #. leap/llvm11/libclang11/description
 #. leap/llvm11/libclang11-32bit/description
+#. leap/llvm13/libclang13/description
+#. leap/llvm13/libclang13-32bit/description
 #. leap/llvm5/libclang5-32bit/description
 #. leap/llvm5/libclang5/description
 #. leap/llvm7/libclang7-32bit/description
@@ -2502,6 +2546,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/liblldb11/summary
+#. leap/llvm13/liblldb13/summary
 #. leap/llvm5/liblldb5/summary
 #. leap/llvm7/liblldb7/summary
 #. leap/llvm9/liblldb9/summary
@@ -2510,6 +2555,7 @@ msgid "LLDB software debugger runtime library"
 msgstr "Bibliotecas de tiempo de ejecución de Boost::Regex"
 
 #. leap/llvm11/liblldb11/description
+#. leap/llvm13/liblldb13/description
 #. leap/llvm5/liblldb5/description
 #. leap/llvm7/liblldb7/description
 #. leap/llvm9/liblldb9/description
@@ -2675,7 +2721,6 @@ msgstr ""
 
 #. leap/loudmouth/libloudmouth-1-0/summary
 #. leap/loudmouth/loudmouth-devel/summary
-#. leap/loudmouth/loudmouth-doc/summary
 msgid "Jabber Client Library Written in C"
 msgstr "Biblioteca del cliente Jabber escrita en C"
 
@@ -2890,20 +2935,20 @@ msgstr "Bibliotecas de desarrollo para lxc"
 msgid "Library for interpolability and access to the lxpanel API by plugins."
 msgstr ""
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui0/summary
+#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui1/summary
 msgid "UI lxqt-globalkeys libraries"
 msgstr ""
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui0/description
+#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui1/description
 msgid "UI system libraries for lxqt-globalkeys"
 msgstr ""
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys0/summary
+#. leap/lxqt-globalkeys/liblxqt-globalkeys1/summary
 #, fuzzy
 msgid "Lxqt-globalkeys libraries"
 msgstr "Bibliotecas JPEG"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys0/description
+#. leap/lxqt-globalkeys/liblxqt-globalkeys1/description
 msgid "lxqt-globalkeys main system library"
 msgstr ""
 
@@ -2991,6 +3036,7 @@ msgid "The LAME MP3 encoder library"
 msgstr "Biblioteca estándar Tcl"
 
 #. leap/llvm11/libomp11-devel/summary
+#. leap/llvm13/libomp13-devel/summary
 #. leap/llvm5/libomp5-devel/summary
 #. leap/llvm7/libomp7-devel/summary
 #. leap/llvm9/libomp9-devel/summary
@@ -2999,6 +3045,7 @@ msgid "MPI plugin for LLVM"
 msgstr "Plug-ins para noatun"
 
 #. leap/llvm11/libomp11-devel/description
+#. leap/llvm13/libomp13-devel/description
 #. leap/llvm5/libomp5-devel/description
 #. leap/llvm7/libomp7-devel/description
 #. leap/llvm9/libomp9-devel/description
@@ -3338,14 +3385,6 @@ msgstr ""
 msgid "A module to provide LDAP authentication in lighttpd."
 msgstr ""
 
-#. leap/lighttpd/lighttpd-mod_authn_mysql/summary
-msgid "MySQL authentication in lighttpd"
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_authn_mysql/description
-msgid "A module to provide MySQL authentication in lighttpd."
-msgstr ""
-
 #. leap/lighttpd/lighttpd-mod_authn_pam/summary
 msgid "PAM authentication in lighttpd"
 msgstr ""
@@ -3360,24 +3399,6 @@ msgstr ""
 
 #. leap/lighttpd/lighttpd-mod_authn_sasl/description
 msgid "A module to provide SASL authentication in lighttpd."
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_cml/summary
-msgid "CML (Cache Meta Language) module for Lighttpd"
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_cml/description
-msgid ""
-"CML is a Meta language to describe the dependencies of a page at one side "
-"and building a page from its fragments on the oth er side using LUA.\n"
-"\n"
-"CML (Cache Meta Language) wants to solves several problems: \n"
-"* dynamic content needs caching to perform \n"
-"* checking if the content is dirty inside of the application is    usually "
-"more expensive than sending out the cached data \n"
-"* a dynamic page is usually fragmented and the fragments have    different "
-"livetimes \n"
-"* the different fragements can be cached independently"
 msgstr ""
 
 #. leap/lighttpd/lighttpd-mod_magnet/summary
@@ -3400,16 +3421,6 @@ msgid ""
 "This module supports fast ip/location lookups using MaxMind GeoIP2 databases."
 msgstr ""
 
-#. leap/lighttpd/lighttpd-mod_mysql_vhost/summary
-msgid "MySQL based virtual hosts (vhosts) module for Lighttpd"
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_mysql_vhost/description
-msgid ""
-"With MySQL based vhosting you can put the information where to look for a "
-"document-root of a given host into a MySQL database."
-msgstr ""
-
 #. leap/lighttpd/lighttpd-mod_rrdtool/summary
 msgid "Lighttpd module to feed rrdtool databases"
 msgstr ""
@@ -3420,24 +3431,6 @@ msgid ""
 "bandwidth, machine-room temperature, server load average).\n"
 "\n"
 "This module feeds an rrdtool database with the traffic stats from lighttpd."
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_trigger_b4_dl/summary
-msgid "Another anti hot-linking module for Lighttpd"
-msgstr ""
-
-#. leap/lighttpd/lighttpd-mod_trigger_b4_dl/description
-msgid ""
-"Anti Hotlinking: \n"
-"* if user requests download-url directly the request is denied and    he is "
-"redirected to ''deny-url' \n"
-"* if user visits trigger-url before requesting download-url access    is "
-"granted \n"
-"* if user visits download-url again after trigger-timeout has run    down to "
-"the request is denied and he is redirected  to deny-url\n"
-"\n"
-"The storage for the trigger information is either stored locally in a gdbm "
-"file or remotly in memcached."
 msgstr ""
 
 #. leap/lighttpd/lighttpd-mod_vhostdb_dbi/summary
@@ -4181,6 +4174,7 @@ msgstr ""
 
 #. leap/llvm/lld/summary
 #. leap/llvm11/lld11/summary
+#. leap/llvm13/lld13/summary
 #. leap/llvm5/lld5/summary
 #. leap/llvm7/lld7/summary
 #. leap/llvm9/lld9/summary
@@ -4190,6 +4184,7 @@ msgstr "Bibliotecas para ATM"
 
 #. leap/llvm/lld/description
 #. leap/llvm11/lld11/description
+#. leap/llvm13/lld13/description
 #. leap/llvm5/lld5/description
 #. leap/llvm7/lld7/description
 #. leap/llvm9/lld9/description
@@ -4201,6 +4196,7 @@ msgstr ""
 
 #. leap/llvm/lldb/summary
 #. leap/llvm11/lldb11/summary
+#. leap/llvm13/lldb13/summary
 #. leap/llvm5/lldb5/summary
 #. leap/llvm7/lldb7/summary
 #. leap/llvm9/lldb9/summary
@@ -4221,6 +4217,7 @@ msgstr ""
 
 #. leap/llvm/lldb-devel/summary
 #. leap/llvm11/lldb11-devel/summary
+#. leap/llvm13/lldb13-devel/summary
 #. leap/llvm5/lldb5-devel/summary
 #. leap/llvm7/lldb7-devel/summary
 #. leap/llvm9/lldb9-devel/summary
@@ -4238,6 +4235,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/lldb11/description
+#. leap/llvm13/lldb13/description
 #. leap/llvm5/lldb5/description
 #. leap/llvm7/lldb7/description
 #. leap/llvm9/lldb9/description
@@ -4249,6 +4247,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/lldb11-devel/description
+#. leap/llvm13/lldb13-devel/description
 #. leap/llvm5/lldb5-devel/description
 #. leap/llvm7/lldb7-devel/description
 #. leap/llvm9/lldb9-devel/description
@@ -4309,6 +4308,7 @@ msgstr ""
 
 #. leap/llvm/summary
 #. leap/llvm11/summary
+#. leap/llvm13/summary
 #. leap/llvm5/summary
 #. leap/llvm7/summary
 #. leap/llvm9/summary
@@ -4333,6 +4333,8 @@ msgstr ""
 #. leap/llvm/llvm-LTO-devel/summary
 #. leap/llvm11/llvm11-LTO-devel/summary
 #. leap/llvm11/llvm11-LTO-devel-32bit/summary
+#. leap/llvm13/llvm13-LTO-devel/summary
+#. leap/llvm13/llvm13-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel/summary
 #. leap/llvm7/llvm7-LTO-devel-32bit/summary
@@ -4354,6 +4356,8 @@ msgstr ""
 #. leap/llvm/llvm-devel/summary
 #. leap/llvm11/llvm11-devel/summary
 #. leap/llvm11/llvm11-devel-32bit/summary
+#. leap/llvm13/llvm13-devel/summary
+#. leap/llvm13/llvm13-devel-32bit/summary
 #. leap/llvm5/llvm5-devel-32bit/summary
 #. leap/llvm5/llvm5-devel/summary
 #. leap/llvm7/llvm7-devel-32bit/summary
@@ -4374,8 +4378,26 @@ msgid ""
 "LLVM version should depend on this."
 msgstr ""
 
+#. leap/llvm/llvm-doc/summary
+#. leap/llvm11/llvm11-doc/summary
+#. leap/llvm13/llvm13-doc/summary
+#. leap/llvm9/llvm9-doc/summary
+#, fuzzy
+msgid "Documentation for LLVM"
+msgstr "Documentación de libexo"
+
+#. leap/llvm/llvm-doc/description
+msgid ""
+"This package contains documentation for the LLVM infrastructure.\n"
+"\n"
+"This package is a dummy package that depends on the version of llvm-doc that "
+"openSUSE currently supports.  Packages that don't require a specific LLVM "
+"version should depend on this."
+msgstr ""
+
 #. leap/llvm/llvm-gold/summary
 #. leap/llvm11/llvm11-gold/summary
+#. leap/llvm13/llvm13-gold/summary
 #. leap/llvm5/llvm5-gold/summary
 #. leap/llvm7/llvm7-gold/summary
 #. leap/llvm9/llvm9-gold/summary
@@ -4394,6 +4416,7 @@ msgstr ""
 
 #. leap/llvm/llvm-opt-viewer/summary
 #. leap/llvm11/llvm11-opt-viewer/summary
+#. leap/llvm13/llvm13-opt-viewer/summary
 #. leap/llvm5/llvm5-opt-viewer/summary
 #. leap/llvm7/llvm7-opt-viewer/summary
 #. leap/llvm9/llvm9-opt-viewer/summary
@@ -4412,6 +4435,7 @@ msgstr ""
 
 #. leap/llvm/llvm-polly/summary
 #. leap/llvm11/llvm11-polly/summary
+#. leap/llvm13/llvm13-polly/summary
 #. leap/llvm9/llvm9-polly/summary
 msgid "LLVM Framework for High-Level Loop and Data-Locality Optimizations"
 msgstr ""
@@ -4432,6 +4456,7 @@ msgstr ""
 
 #. leap/llvm/llvm-polly-devel/summary
 #. leap/llvm11/llvm11-polly-devel/summary
+#. leap/llvm13/llvm13-polly-devel/summary
 #. leap/llvm7/llvm7-polly-devel/summary
 #. leap/llvm9/llvm9-polly-devel/summary
 #, fuzzy
@@ -4450,6 +4475,7 @@ msgstr ""
 
 #. leap/llvm/llvm-vim-plugins/summary
 #. leap/llvm11/llvm11-vim-plugins/summary
+#. leap/llvm13/llvm13-vim-plugins/summary
 #. leap/llvm5/llvm5-vim-plugins/summary
 #. leap/llvm7/llvm7-vim-plugins/summary
 #. leap/llvm9/llvm9-vim-plugins/summary
@@ -4466,6 +4492,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/description
+#. leap/llvm13/description
 #. leap/llvm5/description
 #. leap/llvm7/description
 #. leap/llvm9/description
@@ -4480,6 +4507,8 @@ msgstr ""
 
 #. leap/llvm11/llvm11-LTO-devel/description
 #. leap/llvm11/llvm11-LTO-devel-32bit/description
+#. leap/llvm13/llvm13-LTO-devel/description
+#. leap/llvm13/llvm13-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel/description
 #. leap/llvm7/llvm7-LTO-devel-32bit/description
@@ -4495,6 +4524,8 @@ msgstr ""
 
 #. leap/llvm11/llvm11-devel/description
 #. leap/llvm11/llvm11-devel-32bit/description
+#. leap/llvm13/llvm13-devel/description
+#. leap/llvm13/llvm13-devel-32bit/description
 #. leap/llvm5/llvm5-devel-32bit/description
 #. leap/llvm5/llvm5-devel/description
 #. leap/llvm7/llvm7-devel-32bit/description
@@ -4509,13 +4540,8 @@ msgstr ""
 "Este paquete contiene los archivos necesarios para compilar programas que "
 "usan la librería FLAC."
 
-#. leap/llvm11/llvm11-doc/summary
-#. leap/llvm9/llvm9-doc/summary
-#, fuzzy
-msgid "Documentation for LLVM"
-msgstr "Documentación de libexo"
-
 #. leap/llvm11/llvm11-doc/description
+#. leap/llvm13/llvm13-doc/description
 #. leap/llvm9/llvm9-doc/description
 #, fuzzy
 #| msgid "This package contains additional documentation of the GNet library."
@@ -4523,6 +4549,7 @@ msgid "This package contains documentation for the LLVM infrastructure."
 msgstr "Este paquete contiene documentación adicional para la biblioteca GNet"
 
 #. leap/llvm11/llvm11-gold/description
+#. leap/llvm13/llvm13-gold/description
 #. leap/llvm5/llvm5-gold/description
 #. leap/llvm7/llvm7-gold/description
 #. leap/llvm9/llvm9-gold/description
@@ -4531,6 +4558,7 @@ msgid "This package contains the Gold linker plugin for LLVM."
 msgstr "Este paquete contiene las bibliotecas compartidas para el sistema LASH"
 
 #. leap/llvm11/llvm11-opt-viewer/description
+#. leap/llvm13/llvm13-opt-viewer/description
 #. leap/llvm5/llvm5-opt-viewer/description
 #. leap/llvm7/llvm7-opt-viewer/description
 #. leap/llvm9/llvm9-opt-viewer/description
@@ -4540,6 +4568,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/llvm11-polly/description
+#. leap/llvm13/llvm13-polly/description
 #. leap/llvm9/llvm9-polly/description
 msgid ""
 "Polly is a high-level loop and data-locality optimizer and optimization "
@@ -4551,6 +4580,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/llvm11-polly-devel/description
+#. leap/llvm13/llvm13-polly-devel/description
 #. leap/llvm7/llvm7-polly-devel/description
 #. leap/llvm9/llvm9-polly-devel/description
 #, fuzzy
@@ -4560,6 +4590,7 @@ msgstr ""
 "xclass."
 
 #. leap/llvm11/llvm11-vim-plugins/description
+#. leap/llvm13/llvm13-vim-plugins/description
 #. leap/llvm5/llvm5-vim-plugins/description
 #. leap/llvm7/llvm7-vim-plugins/description
 #. leap/llvm9/llvm9-vim-plugins/description
@@ -4902,6 +4933,14 @@ msgid ""
 "etc/logdigest/config for some general settings.\n"
 "\n"
 "The results are mailed to the sysadmin daily."
+msgstr ""
+
+#. leap/log4j12/logfactor5/summary
+msgid "Log Viewer GUI"
+msgstr ""
+
+#. leap/log4j12/logfactor5/description
+msgid "LogFactor5 is a Swing based GUI to view log4j logs."
 msgstr ""
 
 #. leap/logrotate/summary
@@ -5278,7 +5317,6 @@ msgid ""
 msgstr ""
 
 #. leap/loudmouth/loudmouth-devel/description
-#. leap/loudmouth/loudmouth-doc/description
 msgid ""
 "Loudmouth is a lightweight and easy-to-use C library for programming with "
 "the Jabber protocol. It's designed to be easy to get started with and yet "
@@ -5622,13 +5660,11 @@ msgstr ""
 
 #. leap/lttng-modules/summary
 #. leap/lttng-modules/lttng-modules-kmp-default/summary
-#. leap/lttng-modules/lttng-modules-kmp-preempt/summary
 msgid "Licensing information for package lttng-modules"
 msgstr ""
 
 #. leap/lttng-modules/description
 #. leap/lttng-modules/lttng-modules-kmp-default/description
-#. leap/lttng-modules/lttng-modules-kmp-preempt/description
 #, fuzzy
 msgid ""
 "This package provides licensing documentation for the lttng kmp packages."
@@ -7561,12 +7597,12 @@ msgid ""
 "possibilities."
 msgstr ""
 
-#. leap/llvm11/python3-clang/summary
+#. leap/llvm13/python3-clang/summary
 #, fuzzy
 msgid "Python bindings for libclang"
 msgstr "Enlaces Python para ORBit"
 
-#. leap/llvm11/python3-clang/description
+#. leap/llvm13/python3-clang/description
 #. leap/llvm5/python3-lldb5/description
 #. leap/llvm7/python3-lldb7/description
 #, fuzzy
@@ -7675,6 +7711,7 @@ msgstr ""
 
 #. leap/llvm/python3-lldb/summary
 #. leap/llvm11/python3-lldb11/summary
+#. leap/llvm13/python3-lldb13/summary
 #. leap/llvm5/python3-lldb5/summary
 #. leap/llvm7/python3-lldb7/summary
 #. leap/llvm9/python3-lldb9/summary
@@ -7693,6 +7730,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/python3-lldb11/description
+#. leap/llvm13/python3-lldb13/description
 #. leap/llvm9/python3-lldb9/description
 #, fuzzy
 msgid ""
@@ -7785,15 +7823,6 @@ msgstr ""
 #, fuzzy
 msgid "CBLAS - static libraries"
 msgstr "Paquete de Álgebra Lineal"
-
-#. tumbleweed/llvm/clang-doc/description
-msgid ""
-"This package contains documentation for the Clang compiler.\n"
-"\n"
-"This package is a dummy package that depends on the version of clang-doc "
-"that openSUSE currently supports.  Packages that don't require a specific "
-"Clang version should depend on this."
-msgstr ""
 
 #. tumbleweed/lagrange/summary
 msgid "Desktop GUI client for browsing Geminispace"
@@ -8114,30 +8143,6 @@ msgid ""
 "* In the PUA (Private Use Area) for which no agreement exists\n"
 "* Unassigned (reserved for future assignment)\n"
 "* A noncharacter"
-msgstr ""
-
-#. tumbleweed/latte-dock/summary
-msgid "Replacement Dock for Plasma Desktops"
-msgstr ""
-
-#. tumbleweed/latte-dock/description
-msgid ""
-"Latte is an alternative application launcher and dock for Plasma. It "
-"animates its contents by using a parabolic zoom effect and tries to be there "
-"only when it is needed."
-msgstr ""
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5/summary
-msgid "wlr-layer-shell integration for Qt 5"
-msgstr ""
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5/description
-#. tumbleweed/layer-shell-qt/layer-shell-qt5-devel/description
-msgid "This allows integration of Qt applications with wlr-layer-shell."
-msgstr ""
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5-devel/summary
-msgid "wlr-layer-shell integration for Qt 5 - development files"
 msgstr ""
 
 #. tumbleweed/lcdf-typetools/summary
@@ -8693,15 +8698,6 @@ msgstr ""
 "la shell actual ni a los programas por encima de ella en la jerarquía de "
 "procesos."
 
-#. tumbleweed/llvm/llvm-doc/description
-msgid ""
-"This package contains documentation for the LLVM infrastructure.\n"
-"\n"
-"This package is a dummy package that depends on the version of llvm-doc that "
-"openSUSE currently supports.  Packages that don't require a specific LLVM "
-"version should depend on this."
-msgstr ""
-
 #. tumbleweed/loadlin/summary
 msgid "Linux Loader with Command Line from DOS"
 msgstr "Cargador de Linux con línea de comandos desde DOS"
@@ -8743,14 +8739,6 @@ msgid ""
 "aggregation system inspired by Prometheus.\n"
 "\n"
 "This package contains the LogCLI command-line tool."
-msgstr ""
-
-#. tumbleweed/log4j12/logfactor5/summary
-msgid "Log Viewer GUI"
-msgstr ""
-
-#. tumbleweed/log4j12/logfactor5/description
-msgid "LogFactor5 is a Swing based GUI to view log4j logs."
 msgstr ""
 
 #. tumbleweed/logwatch/summary

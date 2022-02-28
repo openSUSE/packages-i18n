@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2016-12-13 23:38+0100\n"
 "Last-Translator: Antoine Belvire <antoine.belvire@laposte.net>\n"
 "Language-Team: français <opensuse-fr@opensuse.org>\n"
@@ -2915,6 +2915,17 @@ msgid ""
 "The module's main purpose is to report repeated text fragments (typically "
 "Perl code) that could be considered for isolation and/or abstraction in "
 "order to reduce multiple copies of the same code (aka cut and paste code)."
+msgstr ""
+
+#. leap/perl-Code-TidyAll/summary
+msgid "Engine for tidyall, your all-in-one code tidier and validator"
+msgstr ""
+
+#. leap/perl-Code-TidyAll/description
+msgid ""
+"This is the engine used by tidyall - read that first to get an overview.\n"
+"\n"
+"You can call this API from your own program instead of executing 'tidyall'."
 msgstr ""
 
 #. leap/perl-CommonMark/summary
@@ -12231,6 +12242,11 @@ msgid ""
 "keys."
 msgstr ""
 
+#. leap/perl-List-Compare/summary
+#. leap/perl-List-Compare/description
+msgid "Compare elements of two or more lists"
+msgstr ""
+
 #. leap/perl-List-MoreUtils/summary
 #. leap/perl-List-SomeUtils/summary
 msgid "Provide the stuff missing in List::Util"
@@ -18745,6 +18761,17 @@ msgid ""
 "with this module."
 msgstr ""
 
+#. leap/perl-Specio-Library-Path-Tiny/summary
+msgid "Path::Tiny types and coercions for Specio"
+msgstr ""
+
+#. leap/perl-Specio-Library-Path-Tiny/description
+msgid ""
+"This library provides a set of Path::Tiny types and coercions for Specio. "
+"These types can be used with Moose, Moo, Params::ValidationCompiler, and "
+"other modules."
+msgstr ""
+
 #. leap/perl-Spiffy/summary
 msgid "Spiffy Perl Interface Framework For You"
 msgstr ""
@@ -25230,6 +25257,34 @@ msgstr "Perl5 - Client LDAP"
 msgid "A Client interface for LDAP servers."
 msgstr "Un interface client pour le serveur LDAP"
 
+#. leap/perl-lib-relative/summary
+msgid "Add paths relative to the current file to @INC"
+msgstr ""
+
+#. leap/perl-lib-relative/description
+msgid ""
+"Adding a path to @INC to load modules from a local directory may seem "
+"simple, but has a few common pitfalls to be aware of. Directly adding a "
+"relative path to '@INC' means that any later code that changes the current "
+"working directory will change where modules are loaded from. This applies to "
+"the '.' path that used to be in '@INC' by default until perl 5.26.0, or a "
+"relative path added in code like 'use lib 'path/to/lib'', and may be a "
+"vulnerability if such a location is not supposed to be writable. "
+"Additionally, the commonly used FindBin module relies on interpreter state "
+"and the path to the original script invoked by the perl interpreter, "
+"sometimes requiring workarounds in uncommon cases like generated or embedded "
+"code. This module proposes a more straightforward method: take a path "
+"relative to the current file, absolutize it, and add it to '@INC'.\n"
+"\n"
+"If this module is already available to be loaded, it can be used as with lib."
+"pm, passing relative paths, which will be absolutized relative to the "
+"current file then passed on to lib. Multiple arguments will be separately "
+"absolutized, and absolute paths will be passed on unchanged.\n"
+"\n"
+"For cases where this module cannot be loaded beforehand, the last section of "
+"the \"SYNOPSIS\" can be copy-pasted into a file to perform the same task."
+msgstr ""
+
 #. leap/perl-libconfigfile/summary
 #, fuzzy
 msgid "Parses simple configuration files"
@@ -25893,17 +25948,6 @@ msgid ""
 "method named 'clone_self', it is called and the result returned without "
 "further processing. Alternately, if an object provides a method named "
 "'clone_init', it is called on the copied object before it is returned."
-msgstr ""
-
-#. tumbleweed/perl-Code-TidyAll/summary
-msgid "Engine for tidyall, your all-in-one code tidier and validator"
-msgstr ""
-
-#. tumbleweed/perl-Code-TidyAll/description
-msgid ""
-"This is the engine used by tidyall - read that first to get an overview.\n"
-"\n"
-"You can call this API from your own program instead of executing 'tidyall'."
 msgstr ""
 
 #. tumbleweed/perl-Config-AutoConf/summary
@@ -27922,11 +27966,6 @@ msgid ""
 "install it. See CONFIGURATION for details."
 msgstr ""
 
-#. tumbleweed/perl-List-Compare/summary
-#. tumbleweed/perl-List-Compare/description
-msgid "Compare elements of two or more lists"
-msgstr ""
-
 #. tumbleweed/perl-List-UtilsBy/description
 msgid ""
 "This module provides a number of list utility functions, all of which take "
@@ -29466,17 +29505,6 @@ msgstr ""
 msgid "Packages that provide templated software licenses"
 msgstr ""
 
-#. tumbleweed/perl-Specio-Library-Path-Tiny/summary
-msgid "Path::Tiny types and coercions for Specio"
-msgstr ""
-
-#. tumbleweed/perl-Specio-Library-Path-Tiny/description
-msgid ""
-"This library provides a set of Path::Tiny types and coercions for Specio. "
-"These types can be used with Moose, Moo, Params::ValidationCompiler, and "
-"other modules."
-msgstr ""
-
 #. tumbleweed/perl-Spreadsheet-ParseXLSX/summary
 msgid "Parse Xlsx Files"
 msgstr ""
@@ -30821,34 +30849,6 @@ msgstr "Module Perl ChaSen"
 #, fuzzy
 msgid "perl::ldap Perl module"
 msgstr "Module Perl ChaSen"
-
-#. tumbleweed/perl-lib-relative/summary
-msgid "Add paths relative to the current file to @INC"
-msgstr ""
-
-#. tumbleweed/perl-lib-relative/description
-msgid ""
-"Adding a path to @INC to load modules from a local directory may seem "
-"simple, but has a few common pitfalls to be aware of. Directly adding a "
-"relative path to '@INC' means that any later code that changes the current "
-"working directory will change where modules are loaded from. This applies to "
-"the '.' path that used to be in '@INC' by default until perl 5.26.0, or a "
-"relative path added in code like 'use lib 'path/to/lib'', and may be a "
-"vulnerability if such a location is not supposed to be writable. "
-"Additionally, the commonly used FindBin module relies on interpreter state "
-"and the path to the original script invoked by the perl interpreter, "
-"sometimes requiring workarounds in uncommon cases like generated or embedded "
-"code. This module proposes a more straightforward method: take a path "
-"relative to the current file, absolutize it, and add it to '@INC'.\n"
-"\n"
-"If this module is already available to be loaded, it can be used as with lib."
-"pm, passing relative paths, which will be absolutized relative to the "
-"current file then passed on to lib. Multiple arguments will be separately "
-"absolutized, and absolute paths will be passed on unchanged.\n"
-"\n"
-"For cases where this module cannot be loaded beforehand, the last section of "
-"the \"SYNOPSIS\" can be copy-pasted into a file to perform the same task."
-msgstr ""
 
 #. tumbleweed/perl-local-lib/summary
 msgid "Create and use a local lib/ for perl modules with PERL5LIB"

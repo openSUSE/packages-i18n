@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: patterns.pa\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2008-11-11 08:34+0530\n"
 "Last-Translator: KDB <brar.kd@gmail.com>\n"
 "Language-Team: Panjabi <punjabi-l10n@list.sf.net>\n"
@@ -32,6 +32,7 @@ msgstr ""
 #. SLE/patterns-base/patterns-base-apparmor/category
 #. SLE/patterns-base/patterns-base-base/category
 #. SLE/patterns-base/patterns-base-basesystem/category
+#. SLE/patterns-base/patterns-base-bootloader/category
 #. SLE/patterns-base/patterns-base-enhanced_base/category
 #. SLE/patterns-base/patterns-base-minimal_base/category
 #. SLE/patterns-base/patterns-base-sw_management/category
@@ -100,6 +101,14 @@ msgstr ""
 msgid "Graphical Environments"
 msgstr "ਗਰਾਫਿਕਲ ਇੰਵਾਇਰਨਮੈਂਟ"
 
+#. SLE/patterns-base/patterns-base-bootloader/summary
+msgid "Bootloader"
+msgstr ""
+
+#. SLE/patterns-base/patterns-base-bootloader/description
+msgid "This pattern holds files required for booting the system"
+msgstr ""
+
 #. SLE/patterns-base/patterns-base-documentation/summary
 #. SLE/patterns-base/patterns-base-documentation/description
 msgid "Help and Support Documentation"
@@ -123,6 +132,27 @@ msgstr "ਇਹ ਕੋਈ ਢੁੱਕਵੇਂ ਪੈਕੇਜਾਂ ਨਾਲ �
 msgid "The 32bit pattern complementing enhanced_base."
 msgstr ""
 
+#. SLE/patterns-base/patterns-base-fips/summary
+msgid "FIPS 140-2 specific packages"
+msgstr ""
+
+#. SLE/patterns-base/patterns-base-fips/description
+msgid ""
+"This pattern installs the FIPS 140-2 specific packages that complete the "
+"various cryptographic modules in use. It is required if you want to run the "
+"machine with \"fips=1\".\n"
+"\n"
+"Please note that this pattern only enables FIPS 140-2 compliant operation, "
+"it does not directly make the system FIPS 140-2 certified nor validated.\n"
+"\n"
+"Please refer to SUSE official statements on the state of FIPS 140-2 "
+"certification."
+msgstr ""
+
+#. SLE/patterns-base/patterns-base-fips/category
+msgid "Primary Functions"
+msgstr "ਪ੍ਰਾਇਮਰੀ ਫੰਕਸ਼ਨ"
+
 #. SLE/patterns-base/patterns-base-minimal_base/summary
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
 msgid "Minimal Appliance Base"
@@ -130,9 +160,8 @@ msgstr ""
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
-"This is the minimal SLE runtime system. It is really a minimal system, you "
-"can login and a shell will be started, that's all. It is intended as base "
-"for Appliances."
+"This is the minimal runtime system. It is really a minimal system. It is "
+"intended as base for Appliances."
 msgstr ""
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
@@ -291,12 +320,6 @@ msgstr ""
 msgid "Provide tools and patches to fix kernel at runtime."
 msgstr ""
 
-#. SLE/patterns-rt/patterns-rt-rt_sles/category
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/category
-#. SLE/patterns-wbem/patterns-wbem-WBEM/category
-msgid "Primary Functions"
-msgstr "ਪ੍ਰਾਇਮਰੀ ਫੰਕਸ਼ਨ"
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 msgid "Oracle Server Base"
 msgstr "ਓਰੇਕਲ ਸਰਵਰ ਬੇਸ"
@@ -313,6 +336,31 @@ msgstr "ਵੈੱਬ-ਅਧਾਰਿਤ ਇੰਟਰਪਰਾਈਜ ਪਰਬੰ
 msgid "Web-based enterprise management."
 msgstr "ਵੈੱਬ-ਅਧਾਰਿਤ ਇੰਟਰਪਰਾਈਜ ਪਰਬੰਧ ਹੈ।"
 
+#. SLE/patterns-wsl/patterns-wsl-base/summary
+msgid "Base WSL packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/description
+msgid ""
+"This package contains the wsl_base pattern: recommended tools,libraries for "
+"using WSL."
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-base/category
+#. SLE/patterns-wsl/patterns-wsl-gui/category
+msgid "Development"
+msgstr "ਡਿਵੈਲਪਮਿੰਟ"
+
+#. SLE/patterns-wsl/patterns-wsl-gui/summary
+msgid "WSL GUI packages"
+msgstr ""
+
+#. SLE/patterns-wsl/patterns-wsl-gui/description
+msgid ""
+"This package contains the wsl_gui pattern: recommended tools,libraries for "
+"using WSLg."
+msgstr ""
+
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
 msgstr ""
@@ -325,12 +373,6 @@ msgstr "ਬੇਸ ਡਿਵੈਲਪਮੈਂਟ"
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis/description
 msgid "Minimal set of tools for compiling and linking applications."
 msgstr "ਕੰਪਾਇਲਿੰਗ ਅਤੇ ਲਿੰਕਿੰਗ ਕਾਰਜਾਂ ਲਈ ਘੱਟੋ-ਘੱਟ ਟੂਲਾਂ ਦਾ ਸੈੱਟ ਹੈ।"
-
-#. SLE/patterns-devel-base/patterns-devel-base-devel_basis/category
-#. SLE/patterns-devel-base/patterns-devel-base-devel_kernel/category
-#. SLE/patterns-yast/patterns-yast-devel_yast/category
-msgid "Development"
-msgstr "ਡਿਵੈਲਪਮਿੰਟ"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/description
 msgid "The 32bit pattern complementing devel_basis."
@@ -683,24 +725,6 @@ msgstr ""
 msgid "The 32bit pattern complementing directory_server."
 msgstr ""
 
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/summary
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/summary
-msgid "FIPS 140-2 specific packages"
-msgstr ""
-
-#. SLE/patterns-server-enterprise/patterns-server-enterprise-fips/description
-msgid ""
-"This pattern installs the FIPS 140-2 specific packages that complete the "
-"various cryptographic modules in use. It is required if you want to run the "
-"machine with \"fips=1\".\n"
-"\n"
-"Please note that this pattern only enables FIPS 140-2 compliant operation, "
-"it does not directly make the system FIPS 140-2 certified nor validated.\n"
-"\n"
-"Please refer to SUSE official statements on the state of FIPS 140-2 "
-"certification."
-msgstr ""
-
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-fips-32bit/description
 msgid "The 32bit pattern complementing fips."
 msgstr ""
@@ -1036,14 +1060,6 @@ msgstr ""
 msgid "Base System (alias pattern for base)"
 msgstr ""
 
-#. leap/patterns-base/patterns-base-bootloader/summary
-msgid "Bootloader"
-msgstr ""
-
-#. leap/patterns-base/patterns-base-bootloader/description
-msgid "This pattern holds files required for booting the system"
-msgstr ""
-
 #. leap/patterns-base/patterns-base-console/summary
 msgid "Console Tools"
 msgstr "ਕਨਸੋਂਲ ਟੂਲ"
@@ -1056,12 +1072,6 @@ msgstr ""
 "ਐਪਲੀਕੇਸ਼ਨ ਉਨ੍ਹਾਂ ਲਈ ਫਾਇਦੇਮੰਦ ਹਨ, ਜੋ ਕਿ ਕਨਸੋਂਲ ਵਰਤਦੇ ਹਨ, ਪਰ ਕੋਈ ਗਰਾਫਿਕਲ ਡੈਸਕਟਾਪ ਇੰਵਾਇਰਨਮੈਂਟ "
 "ਨਹੀਂ।"
 
-#. leap/patterns-base/patterns-base-minimal_base/description
-msgid ""
-"This is the minimal runtime system. It is really a minimal system. It is "
-"intended as base for Appliances."
-msgstr ""
-
 #. leap/patterns-base/patterns-base-update_test/summary
 msgid "Tests for the Update Stack"
 msgstr "ਅੱਪਡੇਟ ਸਟਾਲ ਲਈ ਟੈਸਟ"
@@ -1073,6 +1083,29 @@ msgid ""
 msgstr ""
 "ਪੈਕੇਜ, ਜੋ ਕਿ ਇਹ ਟੈਸਟ ਕਰਨ ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਹਨ, ਕਿ ਅੱਪਡੇਟ ਸਟੈਕ ਕੰਮ ਕਰਦਾ ਹੈ।  ਇਹ ਛੋਟੇ ਪੈਕੇਜਾਂ ਦਾ ਆਪ "
 "ਕੋਈ ਫੰਕਸ਼ਨ ਨਹੀਂ ਹੈ।"
+
+#. leap/patterns-budgie/patterns-budgie-budgie/summary
+#, fuzzy
+msgid "Budgie Desktop Environment"
+msgstr "XFCE ਡੈਸਕਟਾਪ ਇੰਵਾਇਰਨਮੈਂਟ"
+
+#. leap/patterns-budgie/patterns-budgie-budgie/description
+msgid ""
+"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
+"the way of the user."
+msgstr ""
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/summary
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/description
+#, fuzzy
+msgid "Applets for Budgie Desktop Environment"
+msgstr "ਗਨੋਮ ਡੈਸਕਟਾਪ ਇੰਵਾਇਰਨਮੈਂਟ ਲਈ ਬੇਸ ਪੈਕੇਜ ਹਨ।"
+
+#. leap/patterns-budgie/patterns-budgie-budgie_applets/category
+#, fuzzy
+#| msgid "KDE Desktop"
+msgid "Budgie Desktop"
+msgstr "KDE ਡੈਸਕਟਾਪ"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
@@ -1284,6 +1317,16 @@ msgstr "ਡਿਵੈਲਪਮਿੰਟ"
 #. leap/patterns-kde/patterns-kde-devel_qt5/description
 #, fuzzy
 msgid "Tools and libraries for software development using Qt 5."
+msgstr "ਮੋਨੋ ਦੀ ਵਰਤੋਂ ਕਰਕੇ .NET ਡਿਵੈਲਪਮੈਂਟ ਕਰਨ ਲਈ ਟੂਲ ਅਤੇ ਲਾਇਬਰੇਰੀਆਂ।"
+
+#. leap/patterns-kde/patterns-kde-devel_qt6/summary
+#, fuzzy
+msgid "Qt 6 Development"
+msgstr "ਡਿਵੈਲਪਮਿੰਟ"
+
+#. leap/patterns-kde/patterns-kde-devel_qt6/description
+#, fuzzy
+msgid "Tools and libraries for software development using Qt 6."
 msgstr "ਮੋਨੋ ਦੀ ਵਰਤੋਂ ਕਰਕੇ .NET ਡਿਵੈਲਪਮੈਂਟ ਕਰਨ ਲਈ ਟੂਲ ਅਤੇ ਲਾਇਬਰੇਰੀਆਂ।"
 
 #. leap/patterns-kde/patterns-kde-kde/summary
@@ -1657,29 +1700,6 @@ msgid ""
 "security policy enforcement."
 msgstr ""
 
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/summary
-#, fuzzy
-msgid "Budgie Desktop Environment"
-msgstr "XFCE ਡੈਸਕਟਾਪ ਇੰਵਾਇਰਨਮੈਂਟ"
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie/description
-msgid ""
-"The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
-"the way of the user."
-msgstr ""
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/summary
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/description
-#, fuzzy
-msgid "Applets for Budgie Desktop Environment"
-msgstr "ਗਨੋਮ ਡੈਸਕਟਾਪ ਇੰਵਾਇਰਨਮੈਂਟ ਲਈ ਬੇਸ ਪੈਕੇਜ ਹਨ।"
-
-#. tumbleweed/patterns-budgie/patterns-budgie-budgie_applets/category
-#, fuzzy
-#| msgid "KDE Desktop"
-msgid "Budgie Desktop"
-msgstr "KDE ਡੈਸਕਟਾਪ"
-
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
 msgstr ""
@@ -1811,16 +1831,6 @@ msgstr "KDE ਦਫ਼ਤਰ"
 #| msgid "KDE Utilities"
 msgid "Deepin Utilities"
 msgstr "KDE ਸਹੂਲਤਾਂ"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/summary
-#, fuzzy
-msgid "Qt 6 Development"
-msgstr "ਡਿਵੈਲਪਮਿੰਟ"
-
-#. tumbleweed/patterns-kde/patterns-kde-devel_qt6/description
-#, fuzzy
-msgid "Tools and libraries for software development using Qt 6."
-msgstr "ਮੋਨੋ ਦੀ ਵਰਤੋਂ ਕਰਕੇ .NET ਡਿਵੈਲਪਮੈਂਟ ਕਰਨ ਲਈ ਟੂਲ ਅਤੇ ਲਾਇਬਰੇਰੀਆਂ।"
 
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
@@ -2043,26 +2053,6 @@ msgstr ""
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-base/summary
-msgid "Base WSL packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-base/description
-msgid ""
-"This package contains the wsl_base pattern: recommended tools,libraries for "
-"using WSL."
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/summary
-msgid "WSL GUI packages"
-msgstr ""
-
-#. tumbleweed/patterns-wsl/patterns-wsl-gui/description
-msgid ""
-"This package contains the wsl_gui pattern: recommended tools,libraries for "
-"using WSLg."
 msgstr ""
 
 #~ msgid "YaST System Administration"

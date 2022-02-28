@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2017-07-26 00:23:10\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -339,6 +339,16 @@ msgstr ""
 msgid ""
 "Numix is a modern flat theme with a combination of light and dark elements. "
 "This package contains the Cinnamon theme."
+msgstr ""
+
+#. leap/nodejs16/corepack16/summary
+msgid "Helper bridge between NodeJS projects and their dependencies"
+msgstr ""
+
+#. leap/nodejs16/corepack16/description
+msgid ""
+"Zero-runtime-dependency package acting as bridge between Node projects and "
+"their package managers."
 msgstr ""
 
 #. leap/nautilus-dropbox/dropbox-cli/summary
@@ -2290,72 +2300,75 @@ msgid ""
 "libraries: glibc, gnutls.  Other filters for nbdkit with more complex "
 "dependencies are packaged separately.\n"
 "\n"
-"nbdkit-blocksize-filter    Adjusts block size of requests sent to plugins.\n"
+"nbdkit-blocksize-filter     Adjusts block size of requests sent to plugins.\n"
 "\n"
-"nbdkit-cache-filter        Server-side cache.\n"
+"nbdkit-cache-filter         Server-side cache.\n"
 "\n"
-"nbdkit-cacheextents-filter Caches extents.\n"
+"nbdkit-cacheextents-filter  Caches extents.\n"
 "\n"
-"nbdkit-checkwrite-filter   Checks writes match contents of plugin.\n"
+"nbdkit-checkwrite-filter    Checks writes match contents of plugin.\n"
 "\n"
-"nbdkit-cow-filter          Copy-on-write overlay for read-only plugins.\n"
+"nbdkit-cow-filter           Copy-on-write overlay for read-only plugins.\n"
 "\n"
-"nbdkit-ddrescue-filter     Filter for serving from ddrescue dump.\n"
+"nbdkit-ddrescue-filter      Filter for serving from ddrescue dump.\n"
 "\n"
-"nbdkit-delay-filter        Injects read and write delays.\n"
+"nbdkit-delay-filter         Injects read and write delays.\n"
 "\n"
-"nbdkit-error-filter        Injects errors.\n"
+"nbdkit-error-filter         Injects errors.\n"
 "\n"
-"nbdkit-exitlast-filter     Exits on last client connection.\n"
+"nbdkit-exitlast-filter      Exits on last client connection.\n"
 "\n"
-"nbdkit-exitwhen-filter     Exits gracefully when an event occurs.\n"
+"nbdkit-exitwhen-filter      Exits gracefully when an event occurs.\n"
 "\n"
-"nbdkit-exportname-filter   Adjusts export names between client and plugin.\n"
+"nbdkit-exportname-filter    Adjusts export names between client and plugin.\n"
 "\n"
-"nbdkit-extentlist-filter   Places extent list over a plugin.\n"
+"nbdkit-extentlist-filter    Places extent list over a plugin.\n"
 "\n"
-"nbdkit-fua-filter          Modifies flush behaviour in plugins.\n"
+"nbdkit-fua-filter           Modifies flush behaviour in plugins.\n"
 "\n"
-"nbdkit-ip-filter           Filters clients by IP address.\n"
+"nbdkit-ip-filter            Filters clients by IP address.\n"
 "\n"
-"nbdkit-limit-filter        Limits the number of clients that can connect "
+"nbdkit-limit-filter         Limits the number of clients that can connect "
 "concurrently.\n"
 "\n"
-"nbdkit-log-filter          Logs all transactions to a file.\n"
+"nbdkit-log-filter           Logs all transactions to a file.\n"
 "\n"
-"nbdkit-multi-conn-filter   Modifies the way multiple clients can connect to "
+"nbdkit-multi-conn-filter    Modifies the way multiple clients can connect to "
 "the same export simultaneously.\n"
 "\n"
-"nbdkit-nocache-filter      Disables cache requests in the underlying "
+"nbdkit-nocache-filter       Disables cache requests in the underlying "
 "plugin.\n"
 "\n"
-"nbdkit-noextents-filter    Disables extents in the underlying plugin.\n"
+"nbdkit-noextents-filter     Disables extents in the underlying plugin.\n"
 "\n"
-"nbdkit-nofilter-filter     Passthrough filter.\n"
+"nbdkit-nofilter-filter      Passthrough filter.\n"
 "\n"
-"nbdkit-noparallel-filter   Serializes requests to the underlying plugin.\n"
+"nbdkit-noparallel-filter    Serializes requests to the underlying plugin.\n"
 "\n"
-"nbdkit-nozero-filter       Adjusts handling of zero requests by plugins.\n"
+"nbdkit-nozero-filter        Adjusts handling of zero requests by plugins.\n"
 "\n"
-"nbdkit-offset-filter       Serves an offset and range.\n"
+"nbdkit-offset-filter        Serves an offset and range.\n"
 "\n"
-"nbdkit-partition-filter    Serves a single partition.\n"
+"nbdkit-partition-filter     Serves a single partition.\n"
 "\n"
-"nbdkit-pause-filter        Pauses NBD requests.\n"
+"nbdkit-pause-filter         Pauses NBD requests.\n"
 "\n"
-"nbdkit-rate-filter         Limits bandwidth by connection or server.\n"
+"nbdkit-rate-filter          Limits bandwidth by connection or server.\n"
 "\n"
-"nbdkit-readahead-filter    Prefetches data when reading sequentially.\n"
+"nbdkit-readahead-filter     Prefetches data when reading sequentially.\n"
 "\n"
-"nbdkit-retry-filter        Reopens connection on error.\n"
+"nbdkit-retry-filter         Reopens connection on error.\n"
 "\n"
-"nbdkit-stats-filter        Displays statistics about operations.\n"
+"nbdkit-retry-request-filter Retries single requests if they fail.\n"
 "\n"
-"nbdkit-swab-filter         Filter for swapping byte order.\n"
+"nbdkit-stats-filter         Displays statistics about operations.\n"
 "\n"
-"nbdkit-tls-fallback-filter TLS protection filter.\n"
+"nbdkit-swab-filter          Filter for swapping byte order.\n"
 "\n"
-"nbdkit-truncate-filter     Truncates, expands, rounds up or rounds down size."
+"nbdkit-tls-fallback-filter  TLS protection filter.\n"
+"\n"
+"nbdkit-truncate-filter      Truncates, expands, rounds up or rounds down "
+"size."
 msgstr ""
 
 #. leap/nbdkit/nbdkit-basic-plugins/summary
@@ -2399,8 +2412,6 @@ msgid ""
 "nbdkit-sparse-random-plugin Makes sparse random disks.\n"
 "\n"
 "nbdkit-split-plugin         Concatenates one or more files.\n"
-"\n"
-"nbdkit-streaming-plugin     A streaming file serving plugin.\n"
 "\n"
 "nbdkit-zero-plugin          Zero-length plugin for testing."
 msgstr ""
@@ -2504,25 +2515,14 @@ msgid "This package is the xz filter for nbdkit."
 msgstr ""
 
 #. leap/nmap/ncat/summary
-msgid "Network Tool to concatenate and redirect Sockets"
+msgid "Network tool to concatenate and redirect sockets"
 msgstr ""
 
 #. leap/nmap/ncat/description
 msgid ""
-"Ncat is a feature-packed networking utility which will read and write data "
-"across a network from the command line. Ncat was written for the Nmap "
-"Project and is the culmination of the currently splintered family of Netcat "
-"incarnations. It uses both TCP and UDP for communication and is designed to "
-"be a reliable back-end tool to instantly provide network connectivity to "
-"other applications and users. Ncat will not only work with IPv4 and IPv6 but "
-"provides the user with a virtually limitless number of potential uses.\n"
-"\n"
-"Among Ncat´s vast number of features there is the ability to chain Ncats "
-"together, redirect both TCP and UDP ports to other sites, SSL support, and "
-"proxy connections via SOCKS4 or HTTP (CONNECT method) proxies (with optional "
-"proxy authentication as well). Some general principles apply to most "
-"applications and thus give you the capability of instantly adding networking "
-"support to software that would normally never support it."
+"Ncat is a networking utility which will read and write data across a network "
+"from the command line. It uses both TCP and UDP for communication and "
+"provides network connectivity to other applications and users."
 msgstr ""
 
 #. leap/ncdu/summary
@@ -2672,18 +2672,6 @@ msgstr ""
 #. leap/ndesk-dbus-glib/description
 #. leap/ndesk-dbus-glib/ndesk-dbus-glib-devel/description
 msgid "Ndesk-dbus-glibl provides glib integration for NDesk.DBus"
-msgstr ""
-
-#. leap/nmap/ndiff/summary
-#. leap/nmap/nping/summary
-msgid "Compare Results of Nmap Scans"
-msgstr ""
-
-#. leap/nmap/ndiff/description
-msgid ""
-"Ndiff is a tool to aid in the comparison of Nmap scans. It takes two Nmap "
-"XML output files and prints the differences between them: hosts coming up "
-"and down, ports becoming open or closed, etc."
 msgstr ""
 
 #. leap/ndpi/ndpi-tools/summary
@@ -3039,6 +3027,24 @@ msgid ""
 "Nemo Terminal is an embedded terminal for Nemo, the Cinnamon file manager. "
 "It embeds a terminal pane into Nemo that is accessible by hotkey (default "
 "F4) and automatically follows the currently active directory in Nemo."
+msgstr ""
+
+#. leap/neochat/summary
+msgid "A chat client for Matrix, the decentralized communication protocol"
+msgstr ""
+
+#. leap/neochat/description
+msgid ""
+"Neochat is a client for Matrix, the decentralized communication protocol for "
+"instant messaging."
+msgstr ""
+
+#. leap/neochat/neochat-lang/summary
+msgid "Translations for package neochat"
+msgstr ""
+
+#. leap/neochat/neochat-lang/description
+msgid "Provides translations for the \"neochat\" package."
 msgstr ""
 
 #. leap/neofetch/summary
@@ -5409,7 +5415,7 @@ msgstr ""
 #. leap/nlopt/nlopt-devel/description
 msgid ""
 "The nlopt-devel package contains libraries and header files for developing "
-"applications that use nlopt."
+"applications that use NLopt."
 msgstr ""
 
 #. leap/nm-tray/summary
@@ -5431,17 +5437,20 @@ msgid "Provides translations for the \"nm-tray\" package."
 msgstr ""
 
 #. leap/nmap/summary
-msgid "Portscanner"
+msgid "Network exploration tool and security scanner"
 msgstr ""
 
 #. leap/nmap/description
 msgid ""
-"Nmap is designed to allow system administrators and curious individuals to "
-"scan large networks to determine which hosts are up and what services they "
-"are offering. XNmap is a graphical front-end that shows nmap's output "
-"clearly.\n"
-"\n"
-"Find documentation in /usr/share/doc/packages/nmap"
+"Nmap (\"Network Mapper\") is a utility for network exploration or security "
+"auditing. It may as well be used for tasks such as network inventory, "
+"managing service upgrade schedules, and monitoring host or service uptime. "
+"Nmap uses raw IP packets to determine what hosts are available on the "
+"network, what services (application name and version) those hosts are "
+"offering, what operating systems (and OS versions) they are running, what "
+"type of packet filters/firewalls are in use, and dozens of other "
+"characteristics. It scans large networks, and works fine against single "
+"hosts."
 msgstr ""
 
 #. leap/nmap-parse-output/summary
@@ -5461,7 +5470,6 @@ msgid "Bash completion script for nmap-parse-output."
 msgstr ""
 
 #. leap/nmapsi4/summary
-#. leap/nmap/zenmap/summary
 msgid "A Graphical Front-End for Nmap"
 msgstr ""
 
@@ -5694,6 +5702,7 @@ msgstr ""
 #. leap/nodejs10/summary
 #. leap/nodejs12/summary
 #. leap/nodejs14/summary
+#. leap/nodejs16/summary
 #. leap/nodejs8/summary
 msgid "Evented I/O for V8 JavaScript"
 msgstr ""
@@ -5701,6 +5710,7 @@ msgstr ""
 #. leap/nodejs10/description
 #. leap/nodejs12/description
 #. leap/nodejs14/description
+#. leap/nodejs16/description
 #. leap/nodejs8/description
 msgid ""
 "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node."
@@ -5715,6 +5725,7 @@ msgstr ""
 #. leap/nodejs10/nodejs10-devel/description
 #. leap/nodejs12/nodejs12-devel/description
 #. leap/nodejs14/nodejs14-devel/description
+#. leap/nodejs16/nodejs16-devel/description
 #. leap/nodejs8/nodejs8-devel/description
 msgid ""
 "This package provides development headers for Node.js needed for creation of "
@@ -5724,6 +5735,7 @@ msgstr ""
 #. leap/nodejs10/nodejs10-docs/summary
 #. leap/nodejs12/nodejs12-docs/summary
 #. leap/nodejs14/nodejs14-docs/summary
+#. leap/nodejs16/nodejs16-docs/summary
 #. leap/nodejs8/nodejs8-docs/summary
 msgid "Node.js API documentation"
 msgstr ""
@@ -5731,6 +5743,7 @@ msgstr ""
 #. leap/nodejs10/nodejs10-docs/description
 #. leap/nodejs12/nodejs12-docs/description
 #. leap/nodejs14/nodejs14-docs/description
+#. leap/nodejs16/nodejs16-docs/description
 #. leap/nodejs8/nodejs8-docs/description
 msgid "The API documentation for the Node.js JavaScript runtime."
 msgstr ""
@@ -5741,6 +5754,10 @@ msgstr ""
 
 #. leap/nodejs14/nodejs14-devel/summary
 msgid "Development headers for NodeJS 14.x"
+msgstr ""
+
+#. leap/nodejs16/nodejs16-devel/summary
+msgid "Development headers for NodeJS 16.x"
 msgstr ""
 
 #. leap/nodejs8/nodejs8-devel/summary
@@ -6089,8 +6106,19 @@ msgstr ""
 msgid "Provides translations for the \"novprog\" package."
 msgstr ""
 
+#. leap/nmap/nping/summary
+msgid "Packet generator"
+msgstr ""
+
 #. leap/nmap/nping/description
-msgid "Network packet generation tool / ping utility"
+msgid ""
+"Nping is a tool for network packet generation, response analysis and "
+"response time measurement. Nping allows to generate network packets of a "
+"wide range of protocols, letting users to tune virtually any field of the "
+"protocol headers. While Nping can be used as a simple ping utility to detect "
+"active hosts, it can also be used as a raw packet generator for network "
+"stack stress tests, ARP poisoning, Denial of Service attacks, route tracing, "
+"etc."
 msgstr ""
 
 #. leap/nodejs-packaging/npkg/summary
@@ -6115,6 +6143,7 @@ msgstr ""
 #. leap/nodejs10/npm10/summary
 #. leap/nodejs12/npm12/summary
 #. leap/nodejs14/npm14/summary
+#. leap/nodejs16/npm16/summary
 #. leap/nodejs8/npm8/summary
 msgid "Package manager for Node.js"
 msgstr ""
@@ -6122,6 +6151,7 @@ msgstr ""
 #. leap/nodejs10/npm10/description
 #. leap/nodejs12/npm12/description
 #. leap/nodejs14/npm14/description
+#. leap/nodejs16/npm16/description
 #. leap/nodejs8/npm8/description
 msgid ""
 "A package manager for Node.js that allows developers to install and publish "
@@ -6721,6 +6751,15 @@ msgid ""
 "package contains core management tools with minimal dependencies."
 msgstr ""
 
+#. leap/nvme-cli/nvme-cli-bash-completion/summary
+msgid "NVM Express user space tools bash completion"
+msgstr ""
+
+#. leap/nvme-cli/nvme-cli-bash-completion/description
+msgid ""
+"Optional dependency offering bash completion for NVM Express user space tools"
+msgstr ""
+
 #. leap/nvme-cli/nvme-cli-regress-script/summary
 msgid "A small script to test the nvme binary for regressions"
 msgstr ""
@@ -6729,6 +6768,15 @@ msgstr ""
 msgid ""
 "A small shell script to test the nvme binary for regressions. It requires an "
 "NVMe device for testing purposes. Do NOT use in a production environment."
+msgstr ""
+
+#. leap/nvme-cli/nvme-cli-zsh-completion/summary
+msgid "NVM Express user space tools zsh completion"
+msgstr ""
+
+#. leap/nvme-cli/nvme-cli-zsh-completion/description
+msgid ""
+"Optional dependency offering zsh completion for NVM Express user space tools"
 msgstr ""
 
 #. leap/nvmetcli/summary
@@ -6778,18 +6826,18 @@ msgid ""
 "* In Turkey: TRT-1 (coverage: 17 networks)"
 msgstr ""
 
-#. leap/nlopt/octave-nlopt_optimize/summary
+#. leap/nlopt-bindings/octave-nlopt_optimize/summary
 msgid "Octave interface to nonlinear optimization libray"
 msgstr ""
 
-#. leap/nlopt/octave-nlopt_optimize/description
+#. leap/nlopt-bindings/octave-nlopt_optimize/description
 msgid ""
 "NLopt is a free/open-source library for nonlinear optimization, providing a "
 "common interface for a number of different free optimization routines "
 "available online as well as original implementations of various other "
 "algorithms.\n"
 "\n"
-"This package contains Octave interface to NLopt library."
+"This package contains the Octave interface for NLopt."
 msgstr ""
 
 #. leap/nkf/perl-NKF/summary
@@ -6815,58 +6863,6 @@ msgstr ""
 msgid "The Perl5 'SNMP' Extension Module v3.1.0 for the UCD SNMPv3 library."
 msgstr ""
 
-#. leap/nlopt/python-nlopt/summary
-msgid "Python interface to nonlinear optimization libray"
-msgstr ""
-
-#. leap/nlopt/python-nlopt/description
-msgid ""
-"NLopt is a free/open-source library for nonlinear optimization, providing a "
-"common interface for a number of different free optimization routines "
-"available online as well as original implementations of various other "
-"algorithms.\n"
-"\n"
-"This package contains Python3 interface to NLopt library."
-msgstr ""
-
-#. leap/notmuch/python-notmuch/summary
-msgid "Python bindings for notmuch"
-msgstr ""
-
-#. leap/notmuch/python-notmuch/description
-msgid "Python interface (bindings) for notmuch"
-msgstr ""
-
-#. leap/notmuch/python-notmuch-doc/summary
-msgid "Documentation of Python bindings for notmuch"
-msgstr ""
-
-#. leap/notmuch/python-notmuch-doc/description
-msgid "Documentation of Python interface (bindings) for notmuch"
-msgstr ""
-
-#. leap/net-snmp/python2-net-snmp/summary
-msgid "The Python 'netsnmp' module for the Net-SNMP"
-msgstr ""
-
-#. leap/net-snmp/python2-net-snmp/description
-#. leap/net-snmp/python3-net-snmp/description
-msgid ""
-"The 'netsnmp' module provides a full featured, tri-lingual SNMP (SNMPv3, "
-"SNMPv2c, SNMPv1) client API. The 'netsnmp' module internals rely on the Net-"
-"SNMP toolkit library."
-msgstr ""
-
-#. leap/newt/python2-newt/summary
-msgid "Python bindings for newt"
-msgstr ""
-
-#. leap/newt/python2-newt/description
-msgid ""
-"The python-newt package contains the Python bindings for the newt library "
-"providing a python API for creating text mode interfaces."
-msgstr ""
-
 #. leap/nemo-extensions/python3-nemo/summary
 msgid "Python bindings for the Nemo File manager"
 msgstr ""
@@ -6882,6 +6878,13 @@ msgstr ""
 
 #. leap/net-snmp/python3-net-snmp/summary
 msgid "The Python 3 'netsnmp' module for the Net-SNMP"
+msgstr ""
+
+#. leap/net-snmp/python3-net-snmp/description
+msgid ""
+"The 'netsnmp' module provides a full featured, tri-lingual SNMP (SNMPv3, "
+"SNMPv2c, SNMPv1) client API. The 'netsnmp' module internals rely on the Net-"
+"SNMP toolkit library."
 msgstr ""
 
 #. leap/netgen/python3-netgen/summary
@@ -6917,6 +6920,20 @@ msgstr ""
 #. leap/nghttp2-python/python3-nghttp2/description
 msgid ""
 "Python bindings for implementation of Hypertext Transfer Protocol version 2."
+msgstr ""
+
+#. leap/nlopt-bindings/python3-nlopt/summary
+msgid "Python interface to nonlinear optimization libray"
+msgstr ""
+
+#. leap/nlopt-bindings/python3-nlopt/description
+msgid ""
+"NLopt is a free/open-source library for nonlinear optimization, providing a "
+"common interface for a number of different free optimization routines "
+"available online as well as original implementations of various other "
+"algorithms.\n"
+"\n"
+"This package contains the Python3 interface for NLopt."
 msgstr ""
 
 #. leap/notmuch/python3-notmuch/summary
@@ -7043,23 +7060,6 @@ msgid ""
 "This package provides the GObject Introspection bindings for Nemo."
 msgstr ""
 
-#. leap/nginx/vim-plugin-nginx/summary
-msgid "VIM support for nginx config files"
-msgstr ""
-
-#. leap/nginx/vim-plugin-nginx/description
-msgid ""
-"nginx [engine x] is a HTTP server and IMAP/POP3 proxy server written by Igor "
-"Sysoev. It has been running on many heavily loaded Russian sites for more "
-"than two years.\n"
-"\n"
-"This package holds the VIM support for nginx config files."
-msgstr ""
-
-#. leap/nmap/zenmap/description
-msgid "zenmap is a graphical front-end for the nmap network scanner"
-msgstr ""
-
 #. tumbleweed/NetworkManager/NetworkManager-pppoe/summary
 msgid "NetworkManager plugin for ADSL connections"
 msgstr ""
@@ -7069,18 +7069,6 @@ msgid ""
 "NetworkManager plugin for ADSL connections.\n"
 "\n"
 "This package is needed to configure PPPoE interfaces"
-msgstr ""
-
-#. tumbleweed/nodejs16/corepack16/summary
-#. tumbleweed/nodejs17/corepack17/summary
-msgid "Helper bridge between NodeJS projects and their dependencies"
-msgstr ""
-
-#. tumbleweed/nodejs16/corepack16/description
-#. tumbleweed/nodejs17/corepack17/description
-msgid ""
-"Zero-runtime-dependency package acting as bridge between Node projects and "
-"their package managers."
 msgstr ""
 
 #. tumbleweed/noise-suppression-for-voice/ladspa-rnnoise/summary
@@ -7195,88 +7183,88 @@ msgid ""
 "gnu-openmpi4-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/libnetcdf-gnu-hpc/summary
-msgid "Dependency package for libnetcdf_4_8_0-gnu-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/libnetcdf-gnu-hpc/summary
+msgid "Dependency package for libnetcdf_4_8_1-gnu-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/libnetcdf-gnu-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/libnetcdf-gnu-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package libnetcdf-gnu-hpc provides the dependency to get binary package "
-"libnetcdf_4_8_0-gnu-hpc. When this package gets updated it installs the "
-"latest version of netcdf_4_8_0-gnu-hpc."
+"libnetcdf_4_8_1-gnu-hpc. When this package gets updated it installs the "
+"latest version of netcdf_4_8_1-gnu-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/libnetcdf-gnu-mpich-hpc/summary
-msgid "Dependency package for libnetcdf_4_8_0-gnu-mpich-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/libnetcdf-gnu-mpich-hpc/summary
+msgid "Dependency package for libnetcdf_4_8_1-gnu-mpich-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/libnetcdf-gnu-mpich-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/libnetcdf-gnu-mpich-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package libnetcdf-gnu-mpich-hpc provides the dependency to get binary "
-"package libnetcdf_4_8_0-gnu-mpich-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-mpich-hpc."
+"package libnetcdf_4_8_1-gnu-mpich-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-mpich-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/libnetcdf-gnu-mvapich2-hpc/summary
-msgid "Dependency package for libnetcdf_4_8_0-gnu-mvapich2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/libnetcdf-gnu-mvapich2-hpc/summary
+msgid "Dependency package for libnetcdf_4_8_1-gnu-mvapich2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/libnetcdf-gnu-mvapich2-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/libnetcdf-gnu-mvapich2-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package libnetcdf-gnu-mvapich2-hpc provides the dependency to get binary "
-"package libnetcdf_4_8_0-gnu-mvapich2-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-mvapich2-hpc."
+"package libnetcdf_4_8_1-gnu-mvapich2-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-mvapich2-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/libnetcdf-gnu-openmpi1-hpc/summary
-msgid "Dependency package for libnetcdf_4_8_0-gnu-openmpi1-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/libnetcdf-gnu-openmpi1-hpc/summary
+msgid "Dependency package for libnetcdf_4_8_1-gnu-openmpi1-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/libnetcdf-gnu-openmpi1-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/libnetcdf-gnu-openmpi1-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package libnetcdf-gnu-openmpi1-hpc provides the dependency to get binary "
-"package libnetcdf_4_8_0-gnu-openmpi1-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi1-hpc."
+"package libnetcdf_4_8_1-gnu-openmpi1-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi1-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/libnetcdf-gnu-openmpi2-hpc/summary
-msgid "Dependency package for libnetcdf_4_8_0-gnu-openmpi2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/libnetcdf-gnu-openmpi2-hpc/summary
+msgid "Dependency package for libnetcdf_4_8_1-gnu-openmpi2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/libnetcdf-gnu-openmpi2-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/libnetcdf-gnu-openmpi2-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package libnetcdf-gnu-openmpi2-hpc provides the dependency to get binary "
-"package libnetcdf_4_8_0-gnu-openmpi2-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi2-hpc."
+"package libnetcdf_4_8_1-gnu-openmpi2-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi2-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/libnetcdf-gnu-openmpi3-hpc/summary
-msgid "Dependency package for libnetcdf_4_8_0-gnu-openmpi3-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/libnetcdf-gnu-openmpi3-hpc/summary
+msgid "Dependency package for libnetcdf_4_8_1-gnu-openmpi3-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/libnetcdf-gnu-openmpi3-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/libnetcdf-gnu-openmpi3-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package libnetcdf-gnu-openmpi3-hpc provides the dependency to get binary "
-"package libnetcdf_4_8_0-gnu-openmpi3-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi3-hpc."
+"package libnetcdf_4_8_1-gnu-openmpi3-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi3-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/libnetcdf-gnu-openmpi4-hpc/summary
-msgid "Dependency package for libnetcdf_4_8_0-gnu-openmpi4-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/libnetcdf-gnu-openmpi4-hpc/summary
+msgid "Dependency package for libnetcdf_4_8_1-gnu-openmpi4-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/libnetcdf-gnu-openmpi4-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/libnetcdf-gnu-openmpi4-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package libnetcdf-gnu-openmpi4-hpc provides the dependency to get binary "
-"package libnetcdf_4_8_0-gnu-openmpi4-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi4-hpc."
+"package libnetcdf_4_8_1-gnu-openmpi4-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi4-hpc."
 msgstr ""
 
 #. tumbleweed/netcdf-openmpi1/libnetcdf19-openmpi1-32bit/description
@@ -7308,7 +7296,7 @@ msgid ""
 "This package contains the openmpi1 version of the NetCDF runtime libraries."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/libnetcdf_4_8_0-gnu-openmpi1-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/libnetcdf_4_8_1-gnu-openmpi1-hpc/description
 msgid ""
 "NetCDF is a set of software libraries and self-describing, machine-"
 "independent data formats that support the creation, access, and sharing of "
@@ -7450,135 +7438,6 @@ msgid ""
 "shared."
 msgstr ""
 
-#. tumbleweed/nbdkit/nbdkit-basic-filters/description
-msgid ""
-"This package contains filters for nbdkit which only depend on simple C "
-"libraries: glibc, gnutls.  Other filters for nbdkit with more complex "
-"dependencies are packaged separately.\n"
-"\n"
-"nbdkit-blocksize-filter     Adjusts block size of requests sent to plugins.\n"
-"\n"
-"nbdkit-cache-filter         Server-side cache.\n"
-"\n"
-"nbdkit-cacheextents-filter  Caches extents.\n"
-"\n"
-"nbdkit-checkwrite-filter    Checks writes match contents of plugin.\n"
-"\n"
-"nbdkit-cow-filter           Copy-on-write overlay for read-only plugins.\n"
-"\n"
-"nbdkit-ddrescue-filter      Filter for serving from ddrescue dump.\n"
-"\n"
-"nbdkit-delay-filter         Injects read and write delays.\n"
-"\n"
-"nbdkit-error-filter         Injects errors.\n"
-"\n"
-"nbdkit-exitlast-filter      Exits on last client connection.\n"
-"\n"
-"nbdkit-exitwhen-filter      Exits gracefully when an event occurs.\n"
-"\n"
-"nbdkit-exportname-filter    Adjusts export names between client and plugin.\n"
-"\n"
-"nbdkit-extentlist-filter    Places extent list over a plugin.\n"
-"\n"
-"nbdkit-fua-filter           Modifies flush behaviour in plugins.\n"
-"\n"
-"nbdkit-ip-filter            Filters clients by IP address.\n"
-"\n"
-"nbdkit-limit-filter         Limits the number of clients that can connect "
-"concurrently.\n"
-"\n"
-"nbdkit-log-filter           Logs all transactions to a file.\n"
-"\n"
-"nbdkit-multi-conn-filter    Modifies the way multiple clients can connect to "
-"the same export simultaneously.\n"
-"\n"
-"nbdkit-nocache-filter       Disables cache requests in the underlying "
-"plugin.\n"
-"\n"
-"nbdkit-noextents-filter     Disables extents in the underlying plugin.\n"
-"\n"
-"nbdkit-nofilter-filter      Passthrough filter.\n"
-"\n"
-"nbdkit-noparallel-filter    Serializes requests to the underlying plugin.\n"
-"\n"
-"nbdkit-nozero-filter        Adjusts handling of zero requests by plugins.\n"
-"\n"
-"nbdkit-offset-filter        Serves an offset and range.\n"
-"\n"
-"nbdkit-partition-filter     Serves a single partition.\n"
-"\n"
-"nbdkit-pause-filter         Pauses NBD requests.\n"
-"\n"
-"nbdkit-rate-filter          Limits bandwidth by connection or server.\n"
-"\n"
-"nbdkit-readahead-filter     Prefetches data when reading sequentially.\n"
-"\n"
-"nbdkit-retry-filter         Reopens connection on error.\n"
-"\n"
-"nbdkit-retry-request-filter Retries single requests if they fail.\n"
-"\n"
-"nbdkit-stats-filter         Displays statistics about operations.\n"
-"\n"
-"nbdkit-swab-filter          Filter for swapping byte order.\n"
-"\n"
-"nbdkit-tls-fallback-filter  TLS protection filter.\n"
-"\n"
-"nbdkit-truncate-filter      Truncates, expands, rounds up or rounds down "
-"size."
-msgstr ""
-
-#. tumbleweed/nbdkit/nbdkit-basic-plugins/description
-msgid ""
-"This package contains plugins for nbdkit which depend on a handful of C "
-"libraries: glibc, gnutls, libzstd.  Other plugins for nbdkit with more "
-"complex dependencies are packaged separately.\n"
-"\n"
-"nbdkit-data-plugin          Serves small amounts of data from the command "
-"line.\n"
-"\n"
-"nbdkit-eval-plugin          Writes a shell script plugin on the command "
-"line.\n"
-"\n"
-"nbdkit-file-plugin          The normal file plugin for serving files.\n"
-"\n"
-"nbdkit-floppy-plugin        Creates a virtual floppy disk from a directory.\n"
-"\n"
-"nbdkit-full-plugin          A virtual disk that returns ENOSPC errors.\n"
-"\n"
-"nbdkit-info-plugin          Serves client and server information.\n"
-"\n"
-"nbdkit-memory-plugin        A virtual memory plugin.\n"
-"\n"
-"nbdkit-null-plugin          A null (bitbucket) plugin.\n"
-"\n"
-"nbdkit-ondemand-plugin      Creates filesystems on demand.\n"
-"\n"
-"nbdkit-pattern-plugin       Fixed test pattern.\n"
-"\n"
-"nbdkit-partitioning-plugin  Creates virtual disks from partitions.\n"
-"\n"
-"nbdkit-random-plugin        Random content plugin for testing.\n"
-"\n"
-"nbdkit-sh-plugin            Writes plugins as shell scripts or executables.\n"
-"\n"
-"nbdkit-sparse-random-plugin Makes sparse random disks.\n"
-"\n"
-"nbdkit-split-plugin         Concatenates one or more files.\n"
-"\n"
-"nbdkit-zero-plugin          Zero-length plugin for testing."
-msgstr ""
-
-#. tumbleweed/nmap/ncat/summary
-msgid "Network tool to concatenate and redirect sockets"
-msgstr ""
-
-#. tumbleweed/nmap/ncat/description
-msgid ""
-"Ncat is a networking utility which will read and write data across a network "
-"from the command line. It uses both TCP and UDP for communication and "
-"provides network connectivity to other applications and users."
-msgstr ""
-
 #. tumbleweed/ncurses/ncurses-devel-static/summary
 msgid "Static libraries for the ncurses6 terminal control library"
 msgstr ""
@@ -7632,24 +7491,6 @@ msgstr ""
 
 #. tumbleweed/neix/description
 msgid "neix is a RSS/Atom news feed reader."
-msgstr ""
-
-#. tumbleweed/neochat/summary
-msgid "A chat client for Matrix, the decentralized communication protocol"
-msgstr ""
-
-#. tumbleweed/neochat/description
-msgid ""
-"Neochat is a client for Matrix, the decentralized communication protocol for "
-"instant messaging."
-msgstr ""
-
-#. tumbleweed/neochat/neochat-lang/summary
-msgid "Translations for package neochat"
-msgstr ""
-
-#. tumbleweed/neochat/neochat-lang/description
-msgid "Provides translations for the \"neochat\" package."
 msgstr ""
 
 #. tumbleweed/neovim-gtk/summary
@@ -7892,172 +7733,172 @@ msgstr ""
 msgid "Development files for netcdf-fortran_4_5_3-gnu-openmpi1-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/netcdf-gnu-hpc/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/netcdf-gnu-hpc/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/netcdf-gnu-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/netcdf-gnu-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-hpc provides the dependency to get binary package "
-"netcdf_4_8_0-gnu-hpc. When this package gets updated it installs the latest "
-"version of netcdf_4_8_0-gnu-hpc."
+"netcdf_4_8_1-gnu-hpc. When this package gets updated it installs the latest "
+"version of netcdf_4_8_1-gnu-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/netcdf-gnu-hpc-devel/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-hpc-devel"
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/netcdf-gnu-hpc-devel/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-hpc-devel"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/netcdf-gnu-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/netcdf-gnu-hpc-devel/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-hpc-devel provides the dependency to get binary package "
-"netcdf_4_8_0-gnu-hpc-devel. When this package gets updated it installs the "
-"latest version of netcdf_4_8_0-gnu-hpc."
+"netcdf_4_8_1-gnu-hpc-devel. When this package gets updated it installs the "
+"latest version of netcdf_4_8_1-gnu-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/netcdf-gnu-mpich-hpc/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-mpich-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/netcdf-gnu-mpich-hpc/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-mpich-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/netcdf-gnu-mpich-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/netcdf-gnu-mpich-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-mpich-hpc provides the dependency to get binary package "
-"netcdf_4_8_0-gnu-mpich-hpc. When this package gets updated it installs the "
-"latest version of netcdf_4_8_0-gnu-mpich-hpc."
+"netcdf_4_8_1-gnu-mpich-hpc. When this package gets updated it installs the "
+"latest version of netcdf_4_8_1-gnu-mpich-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/netcdf-gnu-mpich-hpc-devel/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-mpich-hpc-devel"
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/netcdf-gnu-mpich-hpc-devel/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-mpich-hpc-devel"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/netcdf-gnu-mpich-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/netcdf-gnu-mpich-hpc-devel/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-mpich-hpc-devel provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-mpich-hpc-devel. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-mpich-hpc."
+"package netcdf_4_8_1-gnu-mpich-hpc-devel. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-mpich-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-mvapich2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-mvapich2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-mvapich2-hpc provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-mvapich2-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-mvapich2-hpc."
+"package netcdf_4_8_1-gnu-mvapich2-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-mvapich2-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc-devel/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-mvapich2-hpc-devel"
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc-devel/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-mvapich2-hpc-devel"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/netcdf-gnu-mvapich2-hpc-devel/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-mvapich2-hpc-devel provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-mvapich2-hpc-devel. When this package gets updated "
-"it installs the latest version of netcdf_4_8_0-gnu-mvapich2-hpc."
+"package netcdf_4_8_1-gnu-mvapich2-hpc-devel. When this package gets updated "
+"it installs the latest version of netcdf_4_8_1-gnu-mvapich2-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi1-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi1-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi1-hpc provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi1-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi1-hpc."
+"package netcdf_4_8_1-gnu-openmpi1-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi1-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc-devel/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi1-hpc-devel"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc-devel/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi1-hpc-devel"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf-gnu-openmpi1-hpc-devel/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi1-hpc-devel provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi1-hpc-devel. When this package gets updated "
-"it installs the latest version of netcdf_4_8_0-gnu-openmpi1-hpc."
+"package netcdf_4_8_1-gnu-openmpi1-hpc-devel. When this package gets updated "
+"it installs the latest version of netcdf_4_8_1-gnu-openmpi1-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi2-hpc provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi2-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi2-hpc."
+"package netcdf_4_8_1-gnu-openmpi2-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi2-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc-devel/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi2-hpc-devel"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc-devel/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi2-hpc-devel"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/netcdf-gnu-openmpi2-hpc-devel/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi2-hpc-devel provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi2-hpc-devel. When this package gets updated "
-"it installs the latest version of netcdf_4_8_0-gnu-openmpi2-hpc."
+"package netcdf_4_8_1-gnu-openmpi2-hpc-devel. When this package gets updated "
+"it installs the latest version of netcdf_4_8_1-gnu-openmpi2-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi3-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi3-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi3-hpc provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi3-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi3-hpc."
+"package netcdf_4_8_1-gnu-openmpi3-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi3-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc-devel/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi3-hpc-devel"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc-devel/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi3-hpc-devel"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/netcdf-gnu-openmpi3-hpc-devel/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi3-hpc-devel provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi3-hpc-devel. When this package gets updated "
-"it installs the latest version of netcdf_4_8_0-gnu-openmpi3-hpc."
+"package netcdf_4_8_1-gnu-openmpi3-hpc-devel. When this package gets updated "
+"it installs the latest version of netcdf_4_8_1-gnu-openmpi3-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi4-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi4-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi4-hpc provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi4-hpc. When this package gets updated it "
-"installs the latest version of netcdf_4_8_0-gnu-openmpi4-hpc."
+"package netcdf_4_8_1-gnu-openmpi4-hpc. When this package gets updated it "
+"installs the latest version of netcdf_4_8_1-gnu-openmpi4-hpc."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc-devel/summary
-msgid "Dependency package for netcdf_4_8_0-gnu-openmpi4-hpc-devel"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc-devel/summary
+msgid "Dependency package for netcdf_4_8_1-gnu-openmpi4-hpc-devel"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/netcdf-gnu-openmpi4-hpc-devel/description
 msgid ""
 "netcdf: Command-line programs for the NetCDF scientific data format The "
 "package netcdf-gnu-openmpi4-hpc-devel provides the dependency to get binary "
-"package netcdf_4_8_0-gnu-openmpi4-hpc-devel. When this package gets updated "
-"it installs the latest version of netcdf_4_8_0-gnu-openmpi4-hpc."
+"package netcdf_4_8_1-gnu-openmpi4-hpc-devel. When this package gets updated "
+"it installs the latest version of netcdf_4_8_1-gnu-openmpi4-hpc."
 msgstr ""
 
 #. tumbleweed/netcdf-openmpi1/description
@@ -8098,31 +7939,31 @@ msgid ""
 "NetCDF."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/netcdf_4_8_0-gnu-hpc-devel/summary
-msgid "Development files for netcdf_4_8_0-gnu-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/netcdf_4_8_1-gnu-hpc-devel/summary
+msgid "Development files for netcdf_4_8_1-gnu-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-hpc/netcdf_4_8_0-gnu-hpc-devel-static/summary
-msgid "Static development files for netcdf_4_8_0-gnu-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-hpc/netcdf_4_8_1-gnu-hpc-devel-static/summary
+msgid "Static development files for netcdf_4_8_1-gnu-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/netcdf_4_8_0-gnu-mpich-hpc-devel/summary
-msgid "Development files for netcdf_4_8_0-gnu-mpich-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/netcdf_4_8_1-gnu-mpich-hpc-devel/summary
+msgid "Development files for netcdf_4_8_1-gnu-mpich-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mpich-hpc/netcdf_4_8_0-gnu-mpich-hpc-devel-static/summary
-msgid "Static development files for netcdf_4_8_0-gnu-mpich-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mpich-hpc/netcdf_4_8_1-gnu-mpich-hpc-devel-static/summary
+msgid "Static development files for netcdf_4_8_1-gnu-mpich-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/netcdf_4_8_0-gnu-mvapich2-hpc-devel/summary
-msgid "Development files for netcdf_4_8_0-gnu-mvapich2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/netcdf_4_8_1-gnu-mvapich2-hpc-devel/summary
+msgid "Development files for netcdf_4_8_1-gnu-mvapich2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-mvapich2-hpc/netcdf_4_8_0-gnu-mvapich2-hpc-devel-static/summary
-msgid "Static development files for netcdf_4_8_0-gnu-mvapich2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-mvapich2-hpc/netcdf_4_8_1-gnu-mvapich2-hpc-devel-static/summary
+msgid "Static development files for netcdf_4_8_1-gnu-mvapich2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/description
 msgid ""
 "NetCDF is a set of software libraries and self-describing, machine-"
 "independent data formats that support the creation, access, and sharing of "
@@ -8132,11 +7973,11 @@ msgid ""
 "with NetCDF files built for the gnu compiler."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf_4_8_0-gnu-openmpi1-hpc-devel/summary
-msgid "Development files for netcdf_4_8_0-gnu-openmpi1-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf_4_8_1-gnu-openmpi1-hpc-devel/summary
+msgid "Development files for netcdf_4_8_1-gnu-openmpi1-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf_4_8_0-gnu-openmpi1-hpc-devel/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf_4_8_1-gnu-openmpi1-hpc-devel/description
 msgid ""
 "NetCDF is a set of software libraries and self-describing, machine-"
 "independent data formats that support the creation, access, and sharing of "
@@ -8146,11 +7987,11 @@ msgid ""
 "projects that use NetCDF built for the gnu compiler."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf_4_8_0-gnu-openmpi1-hpc-devel-static/summary
-msgid "Static development files for netcdf_4_8_0-gnu-openmpi1-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf_4_8_1-gnu-openmpi1-hpc-devel-static/summary
+msgid "Static development files for netcdf_4_8_1-gnu-openmpi1-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi1-hpc/netcdf_4_8_0-gnu-openmpi1-hpc-devel-static/description
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi1-hpc/netcdf_4_8_1-gnu-openmpi1-hpc-devel-static/description
 msgid ""
 "NetCDF is a set of software libraries and self-describing, machine-"
 "independent data formats that support the creation, access, and sharing of "
@@ -8160,28 +8001,28 @@ msgid ""
 "NetCDF built for the gnu compiler."
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/netcdf_4_8_0-gnu-openmpi2-hpc-devel/summary
-msgid "Development files for netcdf_4_8_0-gnu-openmpi2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/netcdf_4_8_1-gnu-openmpi2-hpc-devel/summary
+msgid "Development files for netcdf_4_8_1-gnu-openmpi2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi2-hpc/netcdf_4_8_0-gnu-openmpi2-hpc-devel-static/summary
-msgid "Static development files for netcdf_4_8_0-gnu-openmpi2-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi2-hpc/netcdf_4_8_1-gnu-openmpi2-hpc-devel-static/summary
+msgid "Static development files for netcdf_4_8_1-gnu-openmpi2-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/netcdf_4_8_0-gnu-openmpi3-hpc-devel/summary
-msgid "Development files for netcdf_4_8_0-gnu-openmpi3-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/netcdf_4_8_1-gnu-openmpi3-hpc-devel/summary
+msgid "Development files for netcdf_4_8_1-gnu-openmpi3-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi3-hpc/netcdf_4_8_0-gnu-openmpi3-hpc-devel-static/summary
-msgid "Static development files for netcdf_4_8_0-gnu-openmpi3-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi3-hpc/netcdf_4_8_1-gnu-openmpi3-hpc-devel-static/summary
+msgid "Static development files for netcdf_4_8_1-gnu-openmpi3-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/netcdf_4_8_0-gnu-openmpi4-hpc-devel/summary
-msgid "Development files for netcdf_4_8_0-gnu-openmpi4-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/netcdf_4_8_1-gnu-openmpi4-hpc-devel/summary
+msgid "Development files for netcdf_4_8_1-gnu-openmpi4-hpc"
 msgstr ""
 
-#. tumbleweed/netcdf_4_8_0-gnu-openmpi4-hpc/netcdf_4_8_0-gnu-openmpi4-hpc-devel-static/summary
-msgid "Static development files for netcdf_4_8_0-gnu-openmpi4-hpc"
+#. tumbleweed/netcdf_4_8_1-gnu-openmpi4-hpc/netcdf_4_8_1-gnu-openmpi4-hpc-devel-static/summary
+msgid "Static development files for netcdf_4_8_1-gnu-openmpi4-hpc"
 msgstr ""
 
 #. tumbleweed/netconsole-tools/description
@@ -8310,29 +8151,6 @@ msgid ""
 "through a JSON API."
 msgstr ""
 
-#. tumbleweed/nlopt/nlopt-devel/description
-msgid ""
-"The nlopt-devel package contains libraries and header files for developing "
-"applications that use NLopt."
-msgstr ""
-
-#. tumbleweed/nmap/summary
-msgid "Network exploration tool and security scanner"
-msgstr ""
-
-#. tumbleweed/nmap/description
-msgid ""
-"Nmap (\"Network Mapper\") is a utility for network exploration or security "
-"auditing. It may as well be used for tasks such as network inventory, "
-"managing service upgrade schedules, and monitoring host or service uptime. "
-"Nmap uses raw IP packets to determine what hosts are available on the "
-"network, what services (application name and version) those hosts are "
-"offering, what operating systems (and OS versions) they are running, what "
-"type of packet filters/firewalls are in use, and dozens of other "
-"characteristics. It scans large networks, and works fine against single "
-"hosts."
-msgstr ""
-
 #. tumbleweed/nmtree/summary
 msgid "Utility for mapping directory hierarchies"
 msgstr ""
@@ -8372,10 +8190,6 @@ msgstr ""
 
 #. tumbleweed/nodejs-electron/nodejs-electron-devel/description
 msgid "Development headers for Electron projects."
-msgstr ""
-
-#. tumbleweed/nodejs16/nodejs16-devel/summary
-msgid "Development headers for NodeJS 16.x"
 msgstr ""
 
 #. tumbleweed/nodejs17/nodejs17-devel/summary
@@ -8475,21 +8289,6 @@ msgid ""
 "against all known Helm repositories. If it finds an updated version of the "
 "chart you're using, or notices your current version is deprecated, it will "
 "let you know."
-msgstr ""
-
-#. tumbleweed/nmap/nping/summary
-msgid "Packet generator"
-msgstr ""
-
-#. tumbleweed/nmap/nping/description
-msgid ""
-"Nping is a tool for network packet generation, response analysis and "
-"response time measurement. Nping allows to generate network packets of a "
-"wide range of protocols, letting users to tune virtually any field of the "
-"protocol headers. While Nping can be used as a simple ping utility to detect "
-"active hosts, it can also be used as a raw packet generator for network "
-"stack stress tests, ARP poisoning, Denial of Service attacks, route tracing, "
-"etc."
 msgstr ""
 
 #. tumbleweed/npth/npth-devel/description
@@ -8600,24 +8399,6 @@ msgstr ""
 msgid "Provides translations for the \"nuntius\" package."
 msgstr ""
 
-#. tumbleweed/nvme-cli/nvme-cli-bash-completion/summary
-msgid "NVM Express user space tools bash completion"
-msgstr ""
-
-#. tumbleweed/nvme-cli/nvme-cli-bash-completion/description
-msgid ""
-"Optional dependency offering bash completion for NVM Express user space tools"
-msgstr ""
-
-#. tumbleweed/nvme-cli/nvme-cli-zsh-completion/summary
-msgid "NVM Express user space tools zsh completion"
-msgstr ""
-
-#. tumbleweed/nvme-cli/nvme-cli-zsh-completion/description
-msgid ""
-"Optional dependency offering zsh completion for NVM Express user space tools"
-msgstr ""
-
 #. tumbleweed/nwg-launchers/summary
 msgid "GTK launchers and menu for sway and i3"
 msgstr ""
@@ -8638,24 +8419,12 @@ msgid ""
 "of the classic Nyan Cat animation. It includes a telnet server."
 msgstr ""
 
-#. tumbleweed/nlopt-bindings/octave-nlopt_optimize/description
-msgid ""
-"NLopt is a free/open-source library for nonlinear optimization, providing a "
-"common interface for a number of different free optimization routines "
-"available online as well as original implementations of various other "
-"algorithms.\n"
-"\n"
-"This package contains the Octave interface for NLopt."
+#. tumbleweed/notmuch/python-notmuch-doc/summary
+msgid "Documentation of Python bindings for notmuch"
 msgstr ""
 
-#. tumbleweed/nlopt-bindings/python3-nlopt/description
-msgid ""
-"NLopt is a free/open-source library for nonlinear optimization, providing a "
-"common interface for a number of different free optimization routines "
-"available online as well as original implementations of various other "
-"algorithms.\n"
-"\n"
-"This package contains the Python3 interface for NLopt."
+#. tumbleweed/notmuch/python-notmuch-doc/description
+msgid "Documentation of Python interface (bindings) for notmuch"
 msgstr ""
 
 #. tumbleweed/notcurses/python3-notcurses/summary

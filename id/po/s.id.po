@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2020-10-07 03:14+0000\n"
 "Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -124,6 +124,7 @@ msgid ""
 msgstr ""
 
 #. leap/SUSEConnect/summary
+#. leap/suseconnect-ng/summary
 #, fuzzy
 msgid "Utility to register a system with the SUSE Customer Center"
 msgstr "Utilitas untuk mendaftarkan sistem di Pusat Pelanggan SUSE"
@@ -150,6 +151,18 @@ msgid ""
 msgstr ""
 "SampleICC adalah pustaka C++ untuk membaca, menulis, memanipulasi, dan "
 "menerapkan profil ICC bersama dengan aplikasi yang memanfaatkan pustaka ini."
+
+#. leap/ServiceReport/summary
+msgid ""
+"A tool to validate and repair First Failure Data Capture (FFDC) configuration"
+msgstr ""
+
+#. leap/ServiceReport/description
+msgid ""
+"ServiceReport is a python based tool that investigates the incorrect First "
+"Failure Data Capture (FFDC) configuration and optionally repairs the "
+"incorrect configuration"
+msgstr ""
 
 #. leap/ShellCheck/summary
 #, fuzzy
@@ -1512,89 +1525,6 @@ msgstr ""
 "\n"
 "CXSparse adalah bagian dari suite matriks jarang SuiteSparse."
 
-#. leap/samba/libdcerpc-binding0-32bit/summary
-#. leap/samba/libdcerpc-binding0/summary
-#, fuzzy
-msgid "Some samba library"
-msgstr "Beberapa perpustakaan samba"
-
-#. leap/samba/libdcerpc-binding0-32bit/description
-#. leap/samba/libdcerpc-binding0/description
-#, fuzzy
-msgid ""
-"This subpackage contains utility functions to handle DCE/RPC binding strings."
-msgstr ""
-"Subpackage ini berisi fungsi utilitas untuk menangani string pengikatan DCE/"
-"RPC."
-
-#. leap/samba/libdcerpc-devel/summary
-#, fuzzy
-msgid "Development files for the DCE/RPC library"
-msgstr "File pengembangan untuk pustaka DCE/RPC"
-
-#. leap/samba/libdcerpc-devel/description
-msgid ""
-"DCE/RPC, short for \"Distributed Computing Environment / Remote Procedure "
-"Calls\", is the remote procedure call system developed for the Distributed "
-"Computing Environment (DCE). This system allows programmers to write "
-"distributed software as if it were all working on the same computer, without "
-"having to worry about the underlying network code.\n"
-"\n"
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libdcerpc."
-msgstr ""
-
-#. leap/samba/libdcerpc-samr-devel/summary
-#, fuzzy
-msgid "Development files for the SAMR protocol library"
-msgstr "File pengembangan untuk pustaka protokol SAMR"
-
-#. leap/samba/libdcerpc-samr-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libdcerpc-samr."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libdcerpc-samr."
-
-#. leap/samba/libdcerpc-samr0-32bit/summary
-#. leap/samba/libdcerpc-samr0/summary
-#, fuzzy
-msgid "Security Account Manager (SAM) Remote Protocol library"
-msgstr "Pustaka Protokol Jarak Jauh Manajer Akun Keamanan (SAM)"
-
-#. leap/samba/libdcerpc-samr0-32bit/description
-#. leap/samba/libdcerpc-samr0/description
-#, fuzzy
-msgid "This subpackage contains NDR marshallers for the SAMR protocol."
-msgstr "Subpackage ini berisi marshaller NDR untuk protokol SAMR."
-
-#. leap/samba/libdcerpc0-32bit/summary
-#. leap/samba/libdcerpc0/summary
-#, fuzzy
-msgid "Distributed Computing Environment Remote Procedure Calls library"
-msgstr ""
-"Pustaka Prosedur Jarak Jauh Lingkungan Komputasi Terdistribusi Memanggil "
-"pustaka"
-
-#. leap/samba/libdcerpc0-32bit/description
-#. leap/samba/libdcerpc0/description
-#, fuzzy
-msgid ""
-"DCE/RPC, short for \"Distributed Computing Environment / Remote Procedure "
-"Calls\", is the remote procedure call system developed for the Distributed "
-"Computing Environment (DCE). This system allows programmers to write "
-"distributed software as if it were all working on the same computer, without "
-"having to worry about the underlying network code."
-msgstr ""
-"DCE/RPC, kependekan dari \"Distributed Computing Environment / Remote "
-"Procedure Calls\", adalah sistem panggilan prosedur jarak jauh yang "
-"dikembangkan untuk Lingkungan Komputasi Terdistribusi (DCE). Sistem ini "
-"memungkinkan programmer untuk menulis perangkat lunak terdistribusi seolah-"
-"olah semuanya bekerja pada komputer yang sama, tanpa harus khawatir tentang "
-"kode jaringan yang mendasarinya."
-
 #. leap/svxlink/libecholib1_3/summary
 #, fuzzy
 msgid "EchoLink library"
@@ -1629,7 +1559,7 @@ msgid ""
 "IBM Z servers."
 msgstr ""
 
-#. leap/syslog-ng/libevtlog-3_30-0/description
+#. leap/syslog-ng/libevtlog-3_35-0/description
 #, fuzzy
 msgid ""
 "The EventLog library provides an alternative to the simple syslog() API "
@@ -1727,6 +1657,33 @@ msgstr ""
 "\n"
 "KLU adalah bagian dari suite matriks jarang SuiteSparse."
 
+#. leap/s390-tools/libkmipclient1/summary
+msgid "IBM Key Management Interoperability Protocol (KMIP) client library"
+msgstr ""
+
+#. leap/s390-tools/libkmipclient1/description
+msgid ""
+"Key Management Interoperability Protocol (KMIP) is a client/server "
+"communication protocol for the storage and maintenance of key, certificate, "
+"and secret objects. This client library enables secure creation and storage "
+"of cryptographic objects on the IBM Security Key Lifecycle Manager server. "
+"You must configure client devices to connect to the server for key "
+"management operations."
+msgstr ""
+
+#. leap/s390-tools/libkmipclient1-devel/summary
+#, fuzzy
+msgid "Header files for the IBM Z KMIP client library"
+msgstr "File header untuk pustaka slop."
+
+#. leap/s390-tools/libkmipclient1-devel/description
+#, fuzzy
+msgid ""
+"This package provides the header files and symbolic link to the shared "
+"library for the IBM Z KMIP client library."
+msgstr ""
+"Paket ini menyediakan perpustakaan bersama utama dari mesin game Solarus."
+
 #. leap/suitesparse/libldl2/summary
 #, fuzzy
 msgid "A Simple LDL^T Factorization"
@@ -1764,157 +1721,6 @@ msgid ""
 "\n"
 "\"sendmail\" is a trademark of Sendmail, Inc."
 msgstr ""
-
-#. leap/samba/libndr-devel/summary
-#, fuzzy
-msgid "Development files for the Network Data Representation library"
-msgstr "File pengembangan untuk pustaka Representasi Data Jaringan"
-
-#. leap/samba/libndr-devel/description
-#, fuzzy
-msgid ""
-"Network Data Representation (NDR) is an implementation of the presentation "
-"layer in the OSI model.\n"
-"\n"
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libndr."
-msgstr ""
-"Network Data Representation (NDR) adalah implementasi dari lapisan "
-"presentasi dalam model OSI.\n"
-"\n"
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libndr."
-
-#. leap/samba/libndr-krb5pac-devel/summary
-#, fuzzy
-msgid "Development files for the ndr-krb5pac library"
-msgstr "File pengembangan untuk pustaka ndr-krb5pac"
-
-#. leap/samba/libndr-krb5pac-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libndr-krb5pac."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libndr-krb5pac."
-
-#. leap/samba/libndr-krb5pac0-32bit/summary
-#. leap/samba/libndr-krb5pac0/summary
-#, fuzzy
-msgid "NDR marshallers for the KRB5 PAC formats"
-msgstr "Marshaller NDR untuk format PAC KRB5"
-
-#. leap/samba/libndr-krb5pac0-32bit/description
-#. leap/samba/libndr-krb5pac0/description
-#, fuzzy
-msgid ""
-"This subpackage contains NDR marshallers for the Kerberos Privilege "
-"Attribute Certificate Data Structure (PAC)."
-msgstr ""
-"Subpackage ini berisi marshaller NDR untuk Struktur Data Sertifikat Atribut "
-"Hak Istimewa Kerberos (PAC)."
-
-#. leap/samba/libndr-nbt-devel/summary
-#, fuzzy
-msgid "Development files for the ndr-nbt library"
-msgstr "File pengembangan untuk pustaka ndr-nbt"
-
-#. leap/samba/libndr-nbt-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libndr-nbt."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libndr-nbt."
-
-#. leap/samba/libndr-nbt0-32bit/summary
-#. leap/samba/libndr-nbt0/summary
-#, fuzzy
-msgid "NDR marshallers for NBT formats"
-msgstr "Marshaller NDR untuk format NBT"
-
-#. leap/samba/libndr-nbt0-32bit/description
-#. leap/samba/libndr-nbt0/description
-#, fuzzy
-msgid "This subpackage contains NDR marshallers for the NetBIOS protocol."
-msgstr "Subpackage ini berisi marshaller NDR untuk protokol NetBIOS."
-
-#. leap/samba/libndr-standard-devel/summary
-#, fuzzy
-msgid "Development files for the libndr-standard library"
-msgstr "File pengembangan untuk pustaka standar libndr"
-
-#. leap/samba/libndr-standard-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libndr-standard."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan standar libndr."
-
-#. leap/samba/libndr-standard0-32bit/summary
-#. leap/samba/libndr-standard0/summary
-#, fuzzy
-msgid "NDR marshallers for the standard set of DCE/RPC interfaces"
-msgstr "Marshaller NDR untuk set standar antarmuka DCE/RPC"
-
-#. leap/samba/libndr-standard0-32bit/description
-#. leap/samba/libndr-standard0/description
-#, fuzzy
-msgid ""
-"This subpackage contains NDR encoders/decoders for the set of standard DCE/"
-"RPC interfaces found on Windows and Samba servers."
-msgstr ""
-"Subpackage ini berisi encoder/decoder NDR untuk set antarmuka DCE/RPC "
-"standar yang ditemukan di server Windows dan Samba."
-
-#. leap/samba/libndr2-32bit/summary
-#. leap/samba/libndr2/summary
-#, fuzzy
-msgid "Network Data Representation library"
-msgstr "Pustaka Representasi Data Jaringan"
-
-#. leap/samba/libndr2-32bit/description
-#. leap/samba/libndr2/description
-#, fuzzy
-msgid ""
-"Network Data Representation (NDR) is an implementation of the presentation "
-"layer in the OSI model."
-msgstr ""
-"Network Data Representation (NDR) adalah implementasi dari lapisan "
-"presentasi dalam model OSI."
-
-#. leap/samba/libnetapi-devel-32bit/summary
-#. leap/samba/libnetapi-devel/summary
-#, fuzzy
-msgid "Libraries and Header Files to Develop Programs with netapi Support"
-msgstr ""
-"Pustaka dan Berkas Header untuk Mengembangkan Program dengan Dukungan netapi"
-
-#. leap/samba/libnetapi-devel-32bit/description
-#. leap/samba/libnetapi-devel/description
-#, fuzzy
-msgid ""
-"This package contains the static libraries and header files needed to "
-"develop programs which make use of the netapi programming interface."
-msgstr ""
-"Paket ini berisi pustaka statis dan berkas header yang diperlukan untuk "
-"mengembangkan program yang memanfaatkan antarmuka pemrograman netapi."
-
-#. leap/samba/libnetapi0-32bit/summary
-#. leap/samba/libnetapi0/summary
-#, fuzzy
-msgid "Samba netapi Library"
-msgstr "Perpustakaan Samba netapi"
-
-#. leap/samba/libnetapi0-32bit/description
-#. leap/samba/libnetapi0/description
-#, fuzzy
-msgid "This package includes the netapi library."
-msgstr "Paket ini mencakup pustaka netapi."
 
 #. leap/sssd/libnfsidmap-sss/summary
 #, fuzzy
@@ -2034,117 +1840,6 @@ msgstr ""
 "\n"
 "RBio adalah bagian dari suite matriks jarang SuiteSparse."
 
-#. leap/samba/libsamba-credentials-devel/summary
-#, fuzzy
-msgid "Development files for the Samba credential management library"
-msgstr "File pengembangan untuk pustaka manajemen kredensial Samba"
-
-#. leap/samba/libsamba-credentials-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsamba-credentials."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan kredensial libsamba."
-
-#. leap/samba/libsamba-credentials1-32bit/summary
-#. leap/samba/libsamba-credentials1/summary
-#, fuzzy
-msgid "Samba credential management library"
-msgstr "Pustaka manajemen kredensial Samba"
-
-#. leap/samba/libsamba-credentials1-32bit/description
-#. leap/samba/libsamba-credentials1/description
-#, fuzzy
-msgid "This subpackage contains libraries for credentials management."
-msgstr "Subpackage ini berisi pustaka untuk manajemen kredensial."
-
-#. leap/samba/libsamba-errors-devel/summary
-#, fuzzy
-msgid "Development files for the Samba errors handling library"
-msgstr "File pengembangan untuk pustaka penanganan kesalahan Samba"
-
-#. leap/samba/libsamba-errors-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsamba-errors."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan kesalahan libsamba."
-
-#. leap/samba/libsamba-errors0-32bit/summary
-#. leap/samba/libsamba-errors0/summary
-#, fuzzy
-msgid "Samba errors handling library"
-msgstr "Samba kesalahan menangani perpustakaan"
-
-#. leap/samba/libsamba-errors0-32bit/description
-#. leap/samba/libsamba-errors0/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries to handle and translate NT error codes."
-msgstr ""
-"Subpackage ini berisi library untuk menangani dan menerjemahkan kode galat "
-"NT."
-
-#. leap/samba/libsamba-hostconfig-devel/summary
-#, fuzzy
-msgid "Development files for the host-wide Samba configuration library"
-msgstr "File pengembangan untuk pustaka konfigurasi Samba di seluruh host"
-
-#. leap/samba/libsamba-hostconfig-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsamba-hostconfig."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libsamba-hostconfig."
-
-#. leap/samba/libsamba-hostconfig0-32bit/summary
-#. leap/samba/libsamba-hostconfig0/summary
-#, fuzzy
-msgid "Host-wide Samba configuration library"
-msgstr "Pustaka konfigurasi Samba di seluruh host"
-
-#. leap/samba/libsamba-hostconfig0-32bit/description
-#. leap/samba/libsamba-hostconfig0/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries for accessing the samba host-specific "
-"configuration files."
-msgstr ""
-"Subpackage ini berisi library untuk mengakses file konfigurasi spesifik host "
-"samba."
-
-#. leap/samba/libsamba-passdb-devel/summary
-#, fuzzy
-msgid "Development files for the Samba3 password database library"
-msgstr "File pengembangan untuk pustaka database kata sandi Samba3"
-
-#. leap/samba/libsamba-passdb-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsamba-passdb."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libsamba-passdb."
-
-#. leap/samba/libsamba-passdb0-32bit/summary
-#. leap/samba/libsamba-passdb0/summary
-#, fuzzy
-msgid "Samba3 password database library"
-msgstr "Pustaka database kata sandi Samba3"
-
-#. leap/samba/libsamba-passdb0-32bit/description
-#. leap/samba/libsamba-passdb0/description
-#, fuzzy
-msgid "This subpackage contains libraries to interface the password database."
-msgstr "Subpackage ini berisi pustaka untuk mem-interface database kata sandi."
-
 #. leap/samba/libsamba-policy-devel/summary
 #. leap/samba/libsamba-policy-python3-devel/summary
 #, fuzzy
@@ -2172,62 +1867,6 @@ msgstr "Pustaka Kebijakan Grup Direktori Aktif"
 #, fuzzy
 msgid "This subpackage contains the python3 library for policy management."
 msgstr "Subpackage ini berisi library python3 untuk manajemen kebijakan."
-
-#. leap/samba/libsamba-util-devel/summary
-#, fuzzy
-msgid "Development files for the Samba utility function library"
-msgstr "File pengembangan untuk pustaka fungsi utilitas Samba"
-
-#. leap/samba/libsamba-util-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsamba-util."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libsamba-util."
-
-#. leap/samba/libsamba-util0-32bit/summary
-#. leap/samba/libsamba-util0/summary
-#, fuzzy
-msgid "Samba utility function library"
-msgstr "Perpustakaan fungsi utilitas Samba"
-
-#. leap/samba/libsamba-util0-32bit/description
-#. leap/samba/libsamba-util0/description
-#, fuzzy
-msgid ""
-"This subpackage contains generic data structures and functions used within "
-"Samba."
-msgstr ""
-"Subpackage ini berisi struktur data generik dan fungsi yang digunakan dalam "
-"Samba."
-
-#. leap/samba/libsamdb-devel/summary
-#, fuzzy
-msgid "Development files for Samba's SAM database library"
-msgstr "File pengembangan untuk pustaka database SAM Samba"
-
-#. leap/samba/libsamdb-devel/description
-#, fuzzy
-msgid ""
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsamdb."
-msgstr ""
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libsamdb."
-
-#. leap/samba/libsamdb0-32bit/summary
-#. leap/samba/libsamdb0/summary
-#, fuzzy
-msgid "Samba's SAM database library"
-msgstr "Perpustakaan database SAM Samba"
-
-#. leap/samba/libsamdb0-32bit/description
-#. leap/samba/libsamdb0/description
-#, fuzzy
-msgid "This subpackage contains libraries for accessing the SAM database."
-msgstr "Subpackage ini berisi pustaka untuk mengakses database SAM."
 
 #. leap/sanlock/libsanlock1/summary
 #, fuzzy
@@ -2975,12 +2614,12 @@ msgstr ""
 "breakpoint dan garis saat ini. Ini dapat menggunakan font proporsional, "
 "beberapa font dan warna yang berbeda pada saat yang sama."
 
-#. leap/sdbus-cpp/libsdbus-c++0/summary
+#. leap/sdbus-cpp/libsdbus-c++1/summary
 #, fuzzy
 msgid "Shared library for sdbus-cpp"
 msgstr "Perpustakaan bersama untuk pedang"
 
-#. leap/sdbus-cpp/libsdbus-c++0/description
+#. leap/sdbus-cpp/libsdbus-c++1/description
 #, fuzzy
 msgid "Shared library files for sdbus-cpp."
 msgstr "Perpustakaan bersama untuk pedang"
@@ -3323,105 +2962,6 @@ msgstr ""
 #, fuzzy
 msgid "Libraries for SLURM"
 msgstr "Perpustakaan untuk SLURM"
-
-#. leap/samba/libsmbclient-devel/summary
-#, fuzzy
-msgid "Libraries and Header Files to Develop Programs with smbclient Support"
-msgstr ""
-"Pustaka dan File Header untuk Mengembangkan Program dengan Dukungan smbclient"
-
-#. leap/samba/libsmbclient-devel/description
-#, fuzzy
-msgid ""
-"This package contains the static libraries and header files needed to "
-"develop programs which make use of the smbclient programming interface."
-msgstr ""
-"Paket ini berisi pustaka statis dan file header yang diperlukan untuk "
-"mengembangkan program yang memanfaatkan antarmuka pemrograman smbclient."
-
-#. leap/samba/libsmbclient0-32bit/summary
-#. leap/samba/libsmbclient0/summary
-#, fuzzy
-msgid "Samba Client Library"
-msgstr "Perpustakaan Klien Samba"
-
-#. leap/samba/libsmbclient0-32bit/description
-#. leap/samba/libsmbclient0/description
-#, fuzzy
-msgid ""
-"This package includes the libsmbclient library.\n"
-"\n"
-"libsmbclient is provided by the libsmbclient0 package."
-msgstr ""
-"Paket ini termasuk perpustakaan libsmbclient.\n"
-"\n"
-"libsmbclient disediakan oleh paket libsmbclient0."
-
-#. leap/samba/libsmbconf-devel/summary
-#, fuzzy
-msgid "Development files for the Samba3 configuration library"
-msgstr "File pengembangan untuk pustaka konfigurasi Samba3"
-
-#. leap/samba/libsmbconf-devel/description
-#, fuzzy
-msgid ""
-"libsmbconf is a library to read or, based on the backend, modify the Samba "
-"configuration.\n"
-"\n"
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsmbconf."
-msgstr ""
-"libsmbconf adalah library untuk dibaca atau, berdasarkan backend, "
-"memodifikasi konfigurasi Samba.\n"
-"\n"
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libsmbconf."
-
-#. leap/samba/libsmbconf0-32bit/summary
-#. leap/samba/libsmbconf0/summary
-#, fuzzy
-msgid "Samba3 configuration library"
-msgstr "Pustaka konfigurasi Samba3"
-
-#. leap/samba/libsmbconf0-32bit/description
-#. leap/samba/libsmbconf0/description
-#, fuzzy
-msgid ""
-"libsmbconf is a library to read or, based on the backend, modify the Samba "
-"configuration."
-msgstr ""
-"libsmbconf adalah library untuk dibaca atau, berdasarkan backend, "
-"memodifikasi konfigurasi Samba."
-
-#. leap/samba/libsmbldap-devel/summary
-#, fuzzy
-msgid "Development files for the smbldap library"
-msgstr "File pengembangan untuk pustaka smbldap"
-
-#. leap/samba/libsmbldap-devel/description
-#, fuzzy
-msgid ""
-"libsmbldap contains LDAP protocol helper functions for Samba.\n"
-"\n"
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libsmbldap."
-msgstr ""
-"libsmbldap berisi fungsi pembantu protokol LDAP untuk Samba.\n"
-"\n"
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libsmbldap."
-
-#. leap/samba/libsmbldap2-32bit/summary
-#. leap/samba/libsmbldap2/summary
-#, fuzzy
-msgid "Samba LDAP protocol helper function library"
-msgstr "Pustaka fungsi pembantu protokol Samba LDAP"
-
-#. leap/samba/libsmbldap2-32bit/description
-#. leap/samba/libsmbldap2/description
-#, fuzzy
-msgid "libsmbldap contains LDAP protocol helper functions for Samba."
-msgstr "libsmbldap berisi fungsi pembantu protokol LDAP untuk Samba."
 
 #. leap/smp_utils/libsmputils-devel/summary
 #, fuzzy
@@ -4673,6 +4213,19 @@ msgstr ""
 "SuperLU adalah algoritma yang menggunakan teori grup untuk mengoptimalkan "
 "dekomposisi LU dari matriks jarang."
 
+#. leap/suseconnect-ng/libsuseconnect/summary
+msgid "C interface to suseconnect-ng."
+msgstr ""
+
+#. leap/suseconnect-ng/libsuseconnect/description
+#, fuzzy
+msgid ""
+"This package contains library which provides C interface to selected "
+"suseconnect-ng functions."
+msgstr ""
+"Paket ini berisi libudev library dinamis, yang menyediakan akses ke "
+"informasi perangkat udev"
+
 #. leap/subversion/libsvn_auth_gnome_keyring-1-0/summary
 #, fuzzy
 msgid "GNOME keyring sypport for Subversion"
@@ -4767,42 +4320,6 @@ msgid ""
 "status information on the local system."
 msgstr ""
 
-#. leap/samba/libtevent-util-devel/summary
-#, fuzzy
-msgid "Development files for the Samba tevent utility library"
-msgstr "File pengembangan untuk perpustakaan utilitas tevent Samba"
-
-#. leap/samba/libtevent-util-devel/description
-#, fuzzy
-msgid ""
-"The libtevent-util library contains functions to convert tevent error codes "
-"to platform-specific (errno, NTSTATUS, WERROR) ones.\n"
-"\n"
-"This subpackage contains libraries and header files for developing "
-"applications that want to make use of libtevent-util."
-msgstr ""
-"Pustaka libtevent-util berisi fungsi untuk mengonversi kode kesalahan tevent "
-"ke yang spesifik platform (errno, NTSTATUS, WERROR).\n"
-"\n"
-"Subpackage ini berisi pustaka dan file header untuk mengembangkan aplikasi "
-"yang ingin menggunakan libtevent-util."
-
-#. leap/samba/libtevent-util0-32bit/summary
-#. leap/samba/libtevent-util0/summary
-#, fuzzy
-msgid "Samba tevent <-> system status code conversion utility library"
-msgstr "Perpustakaan utilitas konversi kode status sistem samba tevent <->"
-
-#. leap/samba/libtevent-util0-32bit/description
-#. leap/samba/libtevent-util0/description
-#, fuzzy
-msgid ""
-"The libtevent-util library contains functions to convert tevent error codes "
-"to platform-specific (errno, NTSTATUS, WERROR) ones."
-msgstr ""
-"Pustaka libtevent-util berisi fungsi untuk mengonversi kode kesalahan tevent "
-"ke yang spesifik platform (errno, NTSTATUS, WERROR)."
-
 #. leap/sleuthkit/libtsk19/summary
 #, fuzzy
 msgid "Library for file system and volume forensic analysis"
@@ -4845,24 +4362,6 @@ msgstr ""
 "Penonton, alat systray untuk menampilkan berbagai informasi tentang router "
 "Turris dari CZ.nic"
 
-#. leap/systemd/libudev-devel/summary
-#. leap/systemd/libudev-devel-32bit/summary
-#. leap/systemd-mini/libudev-mini-devel/summary
-#, fuzzy
-msgid "Development files for libudev"
-msgstr "File pengembangan untuk libudev"
-
-#. leap/systemd/libudev-devel/description
-#. leap/systemd/libudev-devel-32bit/description
-#. leap/systemd-mini/libudev-mini-devel/description
-#, fuzzy
-msgid ""
-"This package contains the development files for the library libudev, a "
-"dynamic library, which provides access to udev device information."
-msgstr ""
-"Paket ini berisi file pengembangan untuk libudev library, library dinamis, "
-"yang menyediakan akses ke informasi perangkat udev."
-
 #. leap/systemd-mini/libudev-mini1/summary
 #. leap/systemd/libudev1/summary
 #. leap/systemd/libudev1-32bit/summary
@@ -4898,33 +4397,6 @@ msgid ""
 "\n"
 "UMFPACK is part of the SuiteSparse sparse matrix suite."
 msgstr ""
-
-#. leap/samba/libwbclient-devel/summary
-#, fuzzy
-msgid "Libraries and Header Files to Develop Programs with wbclient Support"
-msgstr ""
-"Pustaka dan File Header untuk Mengembangkan Program dengan Dukungan wbclient"
-
-#. leap/samba/libwbclient-devel/description
-#, fuzzy
-msgid ""
-"This package contains the static libraries and header files needed to "
-"develop programs which make use of the wbclient programming interface."
-msgstr ""
-"Paket ini berisi pustaka statis dan berkas header yang diperlukan untuk "
-"mengembangkan program yang memanfaatkan antarmuka pemrograman wbclient."
-
-#. leap/samba/libwbclient0-32bit/summary
-#. leap/samba/libwbclient0/summary
-#, fuzzy
-msgid "Samba libwbclient Library"
-msgstr "Perpustakaan libwbclient Samba"
-
-#. leap/samba/libwbclient0-32bit/description
-#. leap/samba/libwbclient0/description
-#, fuzzy
-msgid "This package includes the wbclient library."
-msgstr "Paket ini termasuk perpustakaan wbclient."
 
 #. leap/slick-greeter/lightdm-slick-greeter/summary
 #, fuzzy
@@ -5028,40 +4500,10 @@ msgid ""
 "conf, see nss-hostname(8) manpage for more details."
 msgstr ""
 
-#. leap/systemd/nss-mymachines/summary
-#. leap/systemd/nss-mymachines-32bit/summary
 #. leap/systemd/nss-systemd/summary
 #, fuzzy
 msgid "Plugin for local virtual host name resolution"
 msgstr "Plugin untuk resolusi nama host virtual lokal"
-
-#. leap/systemd/nss-mymachines/description
-#. leap/systemd/nss-mymachines-32bit/description
-msgid ""
-"This package contains a plugin for the Name Service Switch (NSS), providing "
-"host name resolution for all local containers and virtual machines "
-"registered with systemd-machined to their respective IP addresses. It also "
-"maps UID/GIDs ranges used by containers to useful names.\n"
-"\n"
-"To activate this NSS module, you will need to include it in /etc/nsswitch."
-"conf, see nss-mymachines(8) manpage for more details."
-msgstr ""
-
-#. leap/systemd/nss-resolve/summary
-#, fuzzy
-msgid "Plugin for local hostname resolution via systemd-resolved"
-msgstr "Plugin untuk resolusi hostname lokal melalui systemd-resolved"
-
-#. leap/systemd/nss-resolve/description
-msgid ""
-"This package contains a plug-in module for the Name Service Switch (NSS), "
-"which enables host name resolutions via the systemd-resolved(8) local "
-"network name resolution service. It replaces the nss-dns plug-in module that "
-"traditionally resolves hostnames via DNS.\n"
-"\n"
-"To activate this NSS module, you will need to include it in /etc/nsswitch."
-"conf, see nss-resolve(8) manpage for more details."
-msgstr ""
 
 #. leap/systemd/nss-systemd/description
 #, fuzzy
@@ -5210,59 +4652,6 @@ msgstr ""
 "Ini adalah Plugin SkypeWeb untuk Pidgin. Ini memungkinkan Anda melihat dan "
 "mengobrol dengan semua teman Skype Anda dari dalam Pidgin."
 
-#. leap/salt/python2-salt/summary
-#, fuzzy
-msgid "python2 library for salt"
-msgstr "perpustakaan python2 untuk garam"
-
-#. leap/salt/python2-salt/description
-#, fuzzy
-msgid "Python2 specific files for salt"
-msgstr "File khusus Python2 untuk garam"
-
-#. leap/sanlock/python2-sanlock/summary
-#. leap/sanlock/python3-sanlock/summary
-#, fuzzy
-msgid "Python bindings for the sanlock library"
-msgstr "Pengikatan Python untuk perpustakaan sanlock"
-
-#. leap/sanlock/python2-sanlock/description
-#. leap/sanlock/python3-sanlock/description
-#, fuzzy
-msgid ""
-"A module that permits applications written in the Python programming "
-"language to use the interface supplied by the sanlock library."
-msgstr ""
-"Modul yang memungkinkan aplikasi yang ditulis dalam bahasa pemrograman "
-"Python untuk menggunakan antarmuka yang disediakan oleh perpustakaan sanlock."
-
-#. leap/setools/python2-setools/summary
-#. leap/setools/python3-setools/summary
-#, fuzzy
-msgid "Python bindings for SELinux policy analysis"
-msgstr "Pengikatan Python untuk analisis kebijakan SELinux"
-
-#. leap/setools/python2-setools/description
-#. leap/setools/python3-setools/description
-#, fuzzy
-msgid ""
-"SETools is a collection of graphical tools, command-line tools, and "
-"libraries designed to facilitate SELinux policy analysis."
-msgstr ""
-"SETools adalah kumpulan alat grafis, alat baris perintah, dan pustaka yang "
-"dirancang untuk memfasilitasi analisis kebijakan SELinux."
-
-#. leap/suseRegisterInfo/python2-suseRegisterInfo/summary
-#, fuzzy
-msgid "Python 2 specific files for suseRegisterInfo"
-msgstr "File khusus Python2 untuk garam"
-
-#. leap/suseRegisterInfo/python2-suseRegisterInfo/description
-#. leap/suseRegisterInfo/python3-suseRegisterInfo/description
-#, fuzzy
-msgid "Python 2 specific files for suseRegisterInfo."
-msgstr "File khusus Python2 untuk garam"
-
 #. leap/SHERPA-MC/python3-SHERPA-MC/summary
 #, fuzzy
 msgid "Python extensions for SHERPA-MC"
@@ -5331,6 +4720,34 @@ msgstr "perpustakaan python3 untuk garam"
 #, fuzzy
 msgid "Python3 specific files for salt"
 msgstr "File khusus Python3 untuk garam"
+
+#. leap/sanlock/python3-sanlock/summary
+#, fuzzy
+msgid "Python bindings for the sanlock library"
+msgstr "Pengikatan Python untuk perpustakaan sanlock"
+
+#. leap/sanlock/python3-sanlock/description
+#, fuzzy
+msgid ""
+"A module that permits applications written in the Python programming "
+"language to use the interface supplied by the sanlock library."
+msgstr ""
+"Modul yang memungkinkan aplikasi yang ditulis dalam bahasa pemrograman "
+"Python untuk menggunakan antarmuka yang disediakan oleh perpustakaan sanlock."
+
+#. leap/setools/python3-setools/summary
+#, fuzzy
+msgid "Python bindings for SELinux policy analysis"
+msgstr "Pengikatan Python untuk analisis kebijakan SELinux"
+
+#. leap/setools/python3-setools/description
+#, fuzzy
+msgid ""
+"SETools is a collection of graphical tools, command-line tools, and "
+"libraries designed to facilitate SELinux policy analysis."
+msgstr ""
+"SETools adalah kumpulan alat grafis, alat baris perintah, dan pustaka yang "
+"dirancang untuk memfasilitasi analisis kebijakan SELinux."
 
 #. leap/speech-dispatcher/python3-speechd/summary
 #, fuzzy
@@ -5456,6 +4873,11 @@ msgstr "Pengikatan Python untuk pustaka stp."
 msgid "Python 3 specific files for suseRegisterInfo"
 msgstr "File khusus Python3 untuk garam"
 
+#. leap/suseRegisterInfo/python3-suseRegisterInfo/description
+#, fuzzy
+msgid "Python 2 specific files for suseRegisterInfo."
+msgstr "File khusus Python2 untuk garam"
+
 #. leap/synergy/qsynergy/summary
 #, fuzzy
 msgid "Qt GUI for easily configuring Synergy2"
@@ -5529,6 +4951,18 @@ msgid ""
 "example: dasdfmt  - low-level format tool for ECKD DASD fdasd\t - partitions "
 "ECKD DASDs with z/OS compatible disk layout zipl     - boot loader and dump "
 "DASD initializer zgetdump - tool to get linux system dumps from DASD"
+msgstr ""
+
+#. leap/s390-tools/s390-tools-chreipl-fcp-mpath/summary
+msgid "Use multipath information for re-IPL path failover"
+msgstr ""
+
+#. leap/s390-tools/s390-tools-chreipl-fcp-mpath/description
+msgid ""
+"The chreipl-fcp-mpath toolset monitors udev events about paths to the re-IPL "
+"volume. If the currently configured FCP re-IPL path becomes unavailable, the "
+"toolset checks for operational paths to the same volume. If available, it "
+"reconfigures the FCP re-IPL settings to use an operational path."
 msgstr ""
 
 #. leap/s390-tools/s390-tools-hmcdrvfs/summary
@@ -5916,6 +5350,21 @@ msgid "This package contains the Active Directory-compatible Domain Controller"
 msgstr ""
 "Paket ini berisi Pengontrol Domain yang kompatibel dengan Direktori Aktif"
 
+#. leap/samba/samba-ad-dc-libs-32bit/summary
+#. leap/samba/samba-ad-dc-libs/summary
+#, fuzzy
+msgid "Samba Active Directory Domain Controller libraries"
+msgstr "Pengontrol Domain yang kompatibel dengan Direktori Aktif Samba"
+
+#. leap/samba/samba-ad-dc-libs-32bit/description
+#. leap/samba/samba-ad-dc-libs/description
+#, fuzzy
+msgid ""
+"This package contains the Active Directory-compatible Domain Controller "
+"libraries."
+msgstr ""
+"Paket ini berisi Pengontrol Domain yang kompatibel dengan Direktori Aktif"
+
 #. leap/samba/samba-ceph/summary
 #, fuzzy
 msgid "Ceph specific add-ons for Samba"
@@ -5956,12 +5405,30 @@ msgid ""
 "packages of the most current Samba version, and a bug reporting how to."
 msgstr ""
 
-#. leap/samba/samba-core-devel/summary
+#. leap/samba/samba-client-libs-32bit/summary
+#. leap/samba/samba-client-libs/summary
+#, fuzzy
+msgid "Samba client libraries"
+msgstr "Pustaka Samba"
+
+#. leap/samba/samba-client-libs-32bit/description
+#. leap/samba/samba-client-libs/description
+#, fuzzy
+msgid ""
+"The samba-libs package contains the libraries needed by samba client "
+"programs."
+msgstr ""
+"Paket samba-libs berisi perpustakaan yang dibutuhkan oleh program yang "
+"terhubung dengan SMB, RPC dan protokol lain yang disediakan oleh suite Samba."
+
+#. leap/samba/samba-devel-32bit/summary
+#. leap/samba/samba-devel/summary
 #, fuzzy
 msgid "Development files shared by Samba subpackages"
 msgstr "File pengembangan yang dibagikan oleh subpackages Samba"
 
-#. leap/samba/samba-core-devel/description
+#. leap/samba/samba-devel-32bit/description
+#. leap/samba/samba-devel/description
 #, fuzzy
 msgid ""
 "This package contains the libraries and header files needed to develop "
@@ -6097,6 +5564,20 @@ msgstr "Winbind Daemon dan Alat"
 #, fuzzy
 msgid "This is the winbind-daemon and the wbinfo-tool."
 msgstr "Ini adalah winbind-daemon dan wbinfo-tool."
+
+#. leap/samba/samba-winbind-libs-32bit/summary
+#. leap/samba/samba-winbind-libs/summary
+#, fuzzy
+msgid "Winbind Daemon libraries"
+msgstr "Winbind Daemon dan Alat"
+
+#. leap/samba/samba-winbind-libs-32bit/description
+#. leap/samba/samba-winbind-libs/description
+#, fuzzy
+msgid "This package contains the libraries required by the Winbind daemon."
+msgstr ""
+"Paket ini memuat pustaka terbagi-pakai yang diperlukan untuk menjalankan "
+"colokan."
 
 #. leap/samplicator/summary
 #, fuzzy
@@ -12826,6 +12307,23 @@ msgstr ""
 "berbasis Qt. Ini mendukung beberapa plugin yang berbeda, termasuk HSpell, "
 "Enchant, ASpell dan HUNSPELL. Berkas pengembangan."
 
+#. leap/sonnet/sonnet-imports/summary
+#, fuzzy
+msgid "KDE spell checking library: QML files"
+msgstr "Pustaka pemeriksaan ejaan KDE"
+
+#. leap/sonnet/sonnet-imports/description
+#, fuzzy
+msgid ""
+" Sonnet is a plugin-based spell checking library for Qt-based applications. "
+"It supports several different plugins, including HSpell, Enchant, ASpell and "
+"HUNSPELL. This package contains files that allow use of sonnet with QtQuick "
+"based applications."
+msgstr ""
+"Sonnet adalah pustaka pemeriksaan ejaan berbasis plugin untuk aplikasi "
+"berbasis Qt. Ini mendukung beberapa plugin yang berbeda, termasuk HSpell, "
+"Enchant, ASpell dan HUNSPELL. Berkas pengembangan."
+
 #. leap/sonnet/sonnet-voikko/summary
 #, fuzzy
 msgid "KDE spell checking library: Support for Voikko"
@@ -15695,7 +15193,7 @@ msgstr "Dokumentasi untuk GNU Stow"
 
 #. leap/stow/stow-doc/description
 #, fuzzy
-msgid "Documentation for GNU Stow 2.2.2 in HTML and PDF format."
+msgid "Documentation for GNU Stow 2.3.1 in HTML and PDF format."
 msgstr "Dokumentasi untuk GNU Stow 2.2.2 dalam format HTML dan PDF."
 
 #. leap/stp/stp-devel/summary
@@ -16878,19 +16376,24 @@ msgstr ""
 
 #. leap/suse-prime/summary
 #, fuzzy
-msgid "GPU (nvidia/intel) selection for NVIDIA optimus laptops"
-msgstr "Pemilihan GPU (nvidia/intel) untuk laptop optimus NVIDIA"
+msgid ""
+"GPU (nvidia/intel) selection for NVIDIA optimus laptops with bbswitch support"
+msgstr ""
+"Pemilihan GPU (nvidia/intel) untuk laptop optimus NVIDIA dengan dukungan "
+"bbswitch"
 
 #. leap/suse-prime/description
 #, fuzzy
 msgid ""
 "A collection of shell scripts that makes it possible to use the NVIDIA GPU "
 "on a Optimus Laptop. The switching is similar to the feature provided by the "
-"nvidia-prime package in Ubuntu."
+"nvidia-prime package in Ubuntu. Uses bbswitch to switch on/of power of "
+"NVIDIA GPU."
 msgstr ""
 "Kumpulan skrip shell yang memungkinkan untuk menggunakan GPU NVIDIA pada "
 "Laptop Optimus. Switching-nya mirip dengan fitur yang disediakan oleh paket "
-"nvidia-prime di Ubuntu."
+"nvidia-prime di Ubuntu. Menggunakan bbswitch untuk mengaktifkan/daya GPU "
+"NVIDIA."
 
 #. leap/suse-xsl-stylesheets/summary
 #, fuzzy
@@ -16915,6 +16418,32 @@ msgstr ""
 #. leap/suseRegisterInfo/description
 msgid "This tool read data from the local system required for a registration"
 msgstr ""
+
+#. leap/suseconnect-ng/description
+#, fuzzy
+msgid ""
+"This package provides a command line tool for connecting a client system to "
+"the SUSE Customer Center. It will connect the system to your product "
+"subscriptions and enable the product repositories/services locally. "
+"suseconnect-ng reduces the size of its runtime dependencies compared to the "
+"replaced SUSEConnect."
+msgstr ""
+"Paket ini menyediakan alat baris perintah dan pustaka rubygem untuk "
+"menghubungkan sistem klien ke Pusat Pelanggan SUSE. Ini akan menghubungkan "
+"sistem ke langganan produk Anda dan mengaktifkan repositori / layanan produk "
+"secara lokal."
+
+#. leap/suseconnect-ng/suseconnect-ruby-bindings/summary
+#, fuzzy
+msgid "Ruby bindings for libsuseconnect library."
+msgstr "Pengikatan Python untuk pustaka stp."
+
+#. leap/suseconnect-ng/suseconnect-ruby-bindings/description
+#, fuzzy
+msgid ""
+"This package provides bindings needed to use libsuseconnect from Ruby "
+"scripts."
+msgstr "Paket ini menyediakan beberapa grup sistem yang sudah usang."
 
 #. leap/susefirewall2-to-firewalld/summary
 #, fuzzy
@@ -17041,7 +16570,7 @@ msgstr "Komponen penampil SVG"
 
 #. leap/svgpart/description
 #, fuzzy
-msgid "An SVG viewer component for KDE (KPart)."
+msgid "An SVG viewer component (KPart)."
 msgstr "Komponen penampil SVG untuk KDE (KPart)."
 
 #. leap/svgpart/svgpart-lang/summary
@@ -17603,6 +17132,16 @@ msgstr ""
 "menyediakan kemampuan untuk mengatur dan memeriksa profil perangkat, serta "
 "mengubah pengaturan warna di seluruh sistem."
 
+#. leap/syntax-highlighting/syntax-highlighting-imports/summary
+#, fuzzy
+msgid "QML components for syntax-highlighting"
+msgstr "Terjemahan untuk penyorotan sintaks paket"
+
+#. leap/syntax-highlighting/syntax-highlighting-imports/description
+#, fuzzy
+msgid "This package contains QML imports for syntax-highlighting."
+msgstr "Paket ini berisi javadoc untuk spec-version-maven-plugin."
+
 #. leap/sysbench/summary
 #, fuzzy
 msgid "A MySQL benchmarking tool"
@@ -17798,6 +17337,16 @@ msgstr "Dukungan tujuan Java untuk syslog-ng"
 #, fuzzy
 msgid "This package provides Java destination support for syslog-ng."
 msgstr "Paket ini memberikan dukungan destinasi Jawa untuk syslog-ng."
+
+#. leap/syslog-ng/syslog-ng-mqtt/summary
+#, fuzzy
+msgid "MQTT support for syslog-ng"
+msgstr "Dukungan output SMTP untuk syslog-ng"
+
+#. leap/syslog-ng/syslog-ng-mqtt/description
+#, fuzzy
+msgid "This package provides MQTT support for syslog-ng"
+msgstr "Paket ini memberikan dukungan tujuan Python untuk syslog-ng."
 
 #. leap/syslog-ng/syslog-ng-python/summary
 #, fuzzy
@@ -18526,13 +18075,20 @@ msgstr "Alat systemd untuk manajemen kontainer"
 msgid ""
 "Systemd tools to spawn and manage containers and virtual machines.\n"
 "\n"
-"This package contains systemd-nspawn, machinectl, systemd-machined, and "
-"systemd-importd."
-msgstr ""
-"Alat systemd untuk menelurkan dan mengelola kontainer dan mesin virtual.\n"
+"In addition, it also contains a plugin for the Name Service Switch (NSS), "
+"providing host name resolution for all local containers and virtual machines "
+"using network namespacing and registered with systemd-machined. It also maps "
+"UID/GIDs ranges used by containers to useful names.\n"
 "\n"
-"Paket ini berisi systemd-nspawn, machinectl, systemd-machined, dan systemd-"
-"importd."
+"To activate this NSS module, you will need to include it in /etc/nsswitch."
+"conf, see nss-mymachines(8) manpage for more details."
+msgstr ""
+"Paket ini berisi plugin untuk Name Service Switch (NSS), yang memungkinkan "
+"resolusi semua pengguna layanan yang dialokasikan secara dinamis. (Lihat "
+"pengaturan DynamicUser= dalam file unit.)\n"
+"\n"
+"Untuk mengaktifkan modul NSS ini, Anda harus memasukkannya ke dalam /etc/"
+"nsswitch.conf, lihat halaman nss-systemd(8) untuk detail lebih lanjut."
 
 #. leap/systemd/systemd-coredump/summary
 #, fuzzy
@@ -18610,25 +18166,26 @@ msgstr ""
 #. leap/systemd/systemd-devel/summary
 #. leap/systemd-mini/systemd-mini-devel/summary
 #, fuzzy
-msgid "Development headers for systemd"
-msgstr "Header pengembangan untuk systemd"
+msgid "Development files for libsystemd and libudev"
+msgstr "File pengembangan untuk libudev"
 
 #. leap/systemd/systemd-devel/description
 #. leap/systemd-mini/systemd-mini-devel/description
 #, fuzzy
 msgid ""
-"Development headers and auxiliary files for developing applications for "
-"systemd."
+"Development headers and files for libsystemd and libudev libraries for "
+"developing and building applications linking to these libraries."
 msgstr ""
-"Header pengembangan dan file tambahan untuk mengembangkan aplikasi untuk "
-"systemd."
+"Header dan pustaka pengembangan untuk membangun aplikasi melawan SimGear."
 
 #. leap/systemd/systemd-doc/summary
+#. leap/systemd-mini/systemd-mini-doc/summary
 #, fuzzy
 msgid "HTML documentation for systemd"
 msgstr "Dokumentasi HTML dan pdf untuk siproxd"
 
 #. leap/systemd/systemd-doc/description
+#. leap/systemd-mini/systemd-mini-doc/description
 #, fuzzy
 msgid "The HTML documentation for systemd."
 msgstr "Dokumentasi HTML dan pdf untuk siproxd"
@@ -18693,17 +18250,31 @@ msgid "Drop-in replacement of System V init tools."
 msgstr "Penggantian drop-in alat init Sistem V."
 
 #. leap/systemd/systemd-network/summary
-msgid "Systemd tools for networkd and resolved"
+msgid "systemd network and Network Name Resolution managers"
 msgstr ""
 
 #. leap/systemd/systemd-network/description
-#, fuzzy
 msgid ""
-"Systemd tools to manage network settings using networkd and resolver tools "
-"for resolved"
+"systemd-networkd is a system service that manages networks. It detects and "
+"configures network devices as they appear, as well as manages network "
+"addresses and routes for any link for which it finds a .network file, see "
+"systemd.network(5). It can also create virtual network devices based on "
+"their description given by systemd.netdev(5) files. It may be controlle by "
+"networkctl(1).\n"
+"\n"
+"systemd-resolved is a system service that provides network name resolution "
+"to local applications. It implements a caching and validating DNS/DNSSEC "
+"stub resolver, as well as an LLMNR and MulticastDNS resolver and responder. "
+"It may be controlled by resolvectl(1).\n"
+"\n"
+"Addtionally, this package also contains a plug-in module for the Name "
+"Service Switch (NSS), which enables hostname resolutions by contacting "
+"systemd-resolved(8). It replaces the nss-dns plug-in module that "
+"traditionally resolves hostnames via DNS.\n"
+"\n"
+"To activate this NSS module, you will need to include it in /etc/nsswitch."
+"conf, see nss-resolve(8) manpage for more details."
 msgstr ""
-"Alat sistem untuk mengelola setelan jaringan menggunakan alat jaringan dan "
-"pemecah masalah untuk diselesaikan"
 
 #. leap/systemd/systemd-portable/summary
 #, fuzzy
@@ -19126,18 +18697,6 @@ msgid ""
 "This project is maintained by Daniel Miessler, Jason Haddix, and g0tmi1k."
 msgstr ""
 
-#. tumbleweed/ServiceReport/summary
-msgid ""
-"A tool to validate and repair First Failure Data Capture (FFDC) configuration"
-msgstr ""
-
-#. tumbleweed/ServiceReport/description
-msgid ""
-"ServiceReport is a python based tool that investigates the incorrect First "
-"Failure Data Capture (FFDC) configuration and optionally repairs the "
-"incorrect configuration"
-msgstr ""
-
 #. tumbleweed/schily/bosh/summary
 #, fuzzy
 msgid "Multibyte-capable POSIX-conforming Bourne shell"
@@ -19173,6 +18732,31 @@ msgstr ""
 "cdrecord adalah program untuk merekam (slang: \"burn\") data atau audio "
 "Compact Discs pada perekam CD Buku Oranye, untuk menulis media DVD pada "
 "perekam DVD atau menulis media BluRay pada perekam BluRay."
+
+#. tumbleweed/sfcgal/libSFCGAL1/summary
+msgid "Libraries SFCGAL applications"
+msgstr ""
+
+#. tumbleweed/sfcgal/libSFCGAL1/description
+msgid ""
+"This library  support ISO 19107:2013, OGC Simple Features Access 1.2 for 3D "
+"operations. It provides standard compliant geometry types and operations, "
+"that can be accessed from its C or C++ APIs. PostGIS uses the C API, to "
+"expose some SFCGAL's functions in spatial databases (cf. PostGIS manual).\n"
+"\n"
+"Geometry coordinates have an exact rational number representation and can be "
+"either 2D or 3D. Among supported geometry types are :\n"
+"\n"
+" Points  LineStrings  Polygons  TriangulatedSurfaces  PolyhedralSurfaces  "
+"GeometryCollections  Solids\n"
+"\n"
+"Supported operations include :\n"
+"\n"
+" WKT reading and writing with exact rational number representation for "
+"coordinates  Intersection operations and predicates  Convex hull "
+"computation  Tessellation  Extrusion  Area and distance computation  "
+"Minkovski sums  Contour offsets  Straight skeleton generations"
+msgstr ""
 
 #. tumbleweed/SILLY/libSILLY-devel/summary
 msgid "Simple Image Loading LibrarY development package"
@@ -19892,19 +19476,6 @@ msgid ""
 "surgescript."
 msgstr "Paket ini berisi library bersama untuk aplikasi menggunakan pedang."
 
-#. tumbleweed/suseconnect-ng/libsuseconnect/summary
-msgid "C interface to suseconnect-ng."
-msgstr ""
-
-#. tumbleweed/suseconnect-ng/libsuseconnect/description
-#, fuzzy
-msgid ""
-"This package contains library which provides C interface to selected "
-"suseconnect-ng functions."
-msgstr ""
-"Paket ini berisi libudev library dinamis, yang menyediakan akses ke "
-"informasi perangkat udev"
-
 #. tumbleweed/symmetrica/libsymmetrica2/summary
 #, fuzzy
 msgid "C library for group theory"
@@ -20110,37 +19681,6 @@ msgstr "Terjemahan untuk penyapu paket"
 msgid "Provides translations for the \"safeeyes\" package."
 msgstr "Menyediakan terjemahan untuk paket \"penyapu\"."
 
-#. tumbleweed/samba/samba-ad-dc-libs-32bit/summary
-#. tumbleweed/samba/samba-ad-dc-libs/summary
-#, fuzzy
-msgid "Samba Active Directory Domain Controller libraries"
-msgstr "Pengontrol Domain yang kompatibel dengan Direktori Aktif Samba"
-
-#. tumbleweed/samba/samba-ad-dc-libs-32bit/description
-#. tumbleweed/samba/samba-ad-dc-libs/description
-#, fuzzy
-msgid ""
-"This package contains the Active Directory-compatible Domain Controller "
-"libraries."
-msgstr ""
-"Paket ini berisi Pengontrol Domain yang kompatibel dengan Direktori Aktif"
-
-#. tumbleweed/samba/samba-client-libs-32bit/summary
-#. tumbleweed/samba/samba-client-libs/summary
-#, fuzzy
-msgid "Samba client libraries"
-msgstr "Pustaka Samba"
-
-#. tumbleweed/samba/samba-client-libs-32bit/description
-#. tumbleweed/samba/samba-client-libs/description
-#, fuzzy
-msgid ""
-"The samba-libs package contains the libraries needed by samba client "
-"programs."
-msgstr ""
-"Paket samba-libs berisi perpustakaan yang dibutuhkan oleh program yang "
-"terhubung dengan SMB, RPC dan protokol lain yang disediakan oleh suite Samba."
-
 #. tumbleweed/samba-krb-printing/summary
 #, fuzzy
 msgid "Wrapper binary for kerberized printing"
@@ -20150,20 +19690,6 @@ msgstr "Biner pembungkus untuk pencetakan kerberisasian"
 #, fuzzy
 msgid "A wrapper binary to run smbspool with the original calling UID."
 msgstr "Biner pembungkus untuk menjalankan smbspool dengan UID panggilan asli."
-
-#. tumbleweed/samba/samba-winbind-libs-32bit/summary
-#. tumbleweed/samba/samba-winbind-libs/summary
-#, fuzzy
-msgid "Winbind Daemon libraries"
-msgstr "Winbind Daemon dan Alat"
-
-#. tumbleweed/samba/samba-winbind-libs-32bit/description
-#. tumbleweed/samba/samba-winbind-libs/description
-#, fuzzy
-msgid "This package contains the libraries required by the Winbind daemon."
-msgstr ""
-"Paket ini memuat pustaka terbagi-pakai yang diperlukan untuk menjalankan "
-"colokan."
 
 #. tumbleweed/sampler/summary
 msgid "A tool for shell commands execution, visualization and alerting"
@@ -21239,6 +20765,24 @@ msgid ""
 "preference. The same tools can be run on existing log files."
 msgstr ""
 
+#. tumbleweed/sfcgal/summary
+msgid "C++ wrapper library around CGAL"
+msgstr ""
+
+#. tumbleweed/sfcgal/description
+#, fuzzy
+msgid "This package contains tools & sample data to test libSFCGAL1."
+msgstr "Paket ini berisi dokumentasi untuk API libspandsp."
+
+#. tumbleweed/sfcgal/sfcgal-devel/summary
+#, fuzzy
+msgid "Development files and tools for SFCGAL applications"
+msgstr "File pengembangan untuk Scala"
+
+#. tumbleweed/sfcgal/sfcgal-devel/description
+msgid "Content headers & files to envelopment files for libSFCGAL1"
+msgstr ""
+
 #. tumbleweed/sgmltool/sgmltool-latex/summary
 msgid "SGML-Tools - LaTeX generator"
 msgstr ""
@@ -21613,23 +21157,6 @@ msgstr ""
 "Paket ini menyediakan plugin Sonatype parent POM yang digunakan oleh paket "
 "Sonatype lainnya."
 
-#. tumbleweed/sonnet/sonnet-imports/summary
-#, fuzzy
-msgid "KDE spell checking library: QML files"
-msgstr "Pustaka pemeriksaan ejaan KDE"
-
-#. tumbleweed/sonnet/sonnet-imports/description
-#, fuzzy
-msgid ""
-" Sonnet is a plugin-based spell checking library for Qt-based applications. "
-"It supports several different plugins, including HSpell, Enchant, ASpell and "
-"HUNSPELL. This package contains files that allow use of sonnet with QtQuick "
-"based applications."
-msgstr ""
-"Sonnet adalah pustaka pemeriksaan ejaan berbasis plugin untuk aplikasi "
-"berbasis Qt. Ini mendukung beberapa plugin yang berbeda, termasuk HSpell, "
-"Enchant, ASpell dan HUNSPELL. Berkas pengembangan."
-
 #. tumbleweed/sops/summary
 #. tumbleweed/sops/description
 msgid "Simple and flexible tool for managing secrets"
@@ -21709,6 +21236,38 @@ msgstr "Pertukaran Arsip Portabel"
 msgid ""
 "pax is an archiving utility specified by POSIX.1-2001. The format is "
 "basically tar, but with additional extended attributes."
+msgstr ""
+
+#. tumbleweed/spdx-sbom-generator/summary
+msgid "SPDX Software Bill of Materials (SBOM) Generator"
+msgstr ""
+
+#. tumbleweed/spdx-sbom-generator/description
+msgid ""
+"The spdx-sbom-generator tool helps those in the community that want to "
+"generate SPDX Software Bill of Materials (SBOMs) with current package "
+"managers.\n"
+"\n"
+"It has a command line Interface (CLI) that lets you generate SBOM "
+"information, including components, licenses, copyrights, and security "
+"references of your software using SPDX v2.2 specification and aligning with "
+"the current known minimum elements from NTIA. It automatically determines "
+"which package managers or build systems are actually being used by the "
+"software.\n"
+"\n"
+"spdx-sbom-generator is supporting the following (bundling) package "
+"managers: \n"
+"* GoMod (go)\n"
+"* Cargo (Rust)\n"
+"* Composer (PHP)\n"
+"* DotNet (.NET)\n"
+"* Maven (Java)\n"
+"* NPM (Node.js)\n"
+"* Yarn (Node.js)\n"
+"* PIP (Python)\n"
+"* Pipenv (Python)\n"
+"* Gems (Ruby)\n"
+"* Swift Package Manager (Swift)"
 msgstr ""
 
 #. tumbleweed/spek/summary
@@ -21988,11 +21547,6 @@ msgstr "Paket ini berisi javadoc untuk spec-version-maven-plugin."
 #, fuzzy
 msgid "Development files for stlink package"
 msgstr "File pengembangan untuk paket stlink"
-
-#. tumbleweed/stow/stow-doc/description
-#, fuzzy
-msgid "Documentation for GNU Stow 2.3.1 in HTML and PDF format."
-msgstr "Dokumentasi untuk GNU Stow 2.2.2 dalam format HTML dan PDF."
 
 #. tumbleweed/streamlink/description
 msgid ""
@@ -22357,53 +21911,6 @@ msgstr "Lingkungan SUSE HPC"
 msgid "Provide rpm macros for building and installing SUSE HPC packages."
 msgstr "Menyediakan makro RPM untuk membangun dan memasang paket SUSE HPC."
 
-#. tumbleweed/suse-prime/summary
-#, fuzzy
-msgid ""
-"GPU (nvidia/intel) selection for NVIDIA optimus laptops with bbswitch support"
-msgstr ""
-"Pemilihan GPU (nvidia/intel) untuk laptop optimus NVIDIA dengan dukungan "
-"bbswitch"
-
-#. tumbleweed/suse-prime/description
-#, fuzzy
-msgid ""
-"A collection of shell scripts that makes it possible to use the NVIDIA GPU "
-"on a Optimus Laptop. The switching is similar to the feature provided by the "
-"nvidia-prime package in Ubuntu. Uses bbswitch to switch on/of power of "
-"NVIDIA GPU."
-msgstr ""
-"Kumpulan skrip shell yang memungkinkan untuk menggunakan GPU NVIDIA pada "
-"Laptop Optimus. Switching-nya mirip dengan fitur yang disediakan oleh paket "
-"nvidia-prime di Ubuntu. Menggunakan bbswitch untuk mengaktifkan/daya GPU "
-"NVIDIA."
-
-#. tumbleweed/suseconnect-ng/description
-#, fuzzy
-msgid ""
-"This package provides a command line tool for connecting a client system to "
-"the SUSE Customer Center. It will connect the system to your product "
-"subscriptions and enable the product repositories/services locally. "
-"suseconnect-ng reduces the size of its runtime dependencies compared to the "
-"replaced SUSEConnect."
-msgstr ""
-"Paket ini menyediakan alat baris perintah dan pustaka rubygem untuk "
-"menghubungkan sistem klien ke Pusat Pelanggan SUSE. Ini akan menghubungkan "
-"sistem ke langganan produk Anda dan mengaktifkan repositori / layanan produk "
-"secara lokal."
-
-#. tumbleweed/suseconnect-ng/suseconnect-ruby-bindings/summary
-#, fuzzy
-msgid "Ruby bindings for libsuseconnect library."
-msgstr "Pengikatan Python untuk pustaka stp."
-
-#. tumbleweed/suseconnect-ng/suseconnect-ruby-bindings/description
-#, fuzzy
-msgid ""
-"This package provides bindings needed to use libsuseconnect from Ruby "
-"scripts."
-msgstr "Paket ini menyediakan beberapa grup sistem yang sudah usang."
-
 #. tumbleweed/svg-schema/summary
 msgid "SVG DTD and RELAX NG Schema"
 msgstr ""
@@ -22415,11 +21922,6 @@ msgstr ""
 #. tumbleweed/svg-schema/svg-schema-doc/description
 msgid "SVG DTD and RELAX NG Schema Documentation in HTML"
 msgstr ""
-
-#. tumbleweed/svgpart/description
-#, fuzzy
-msgid "An SVG viewer component (KPart)."
-msgstr "Komponen penampil SVG untuk KDE (KPart)."
 
 #. tumbleweed/swappy/summary
 msgid "Wayland compositor screenshot editor"
@@ -22651,16 +22153,6 @@ msgid ""
 "connect to and watch videos together in synchronization."
 msgstr ""
 
-#. tumbleweed/syntax-highlighting/syntax-highlighting-imports/summary
-#, fuzzy
-msgid "QML components for syntax-highlighting"
-msgstr "Terjemahan untuk penyorotan sintaks paket"
-
-#. tumbleweed/syntax-highlighting/syntax-highlighting-imports/description
-#, fuzzy
-msgid "This package contains QML imports for syntax-highlighting."
-msgstr "Paket ini berisi javadoc untuk spec-version-maven-plugin."
-
 #. tumbleweed/sysdig/summary
 #. tumbleweed/sysdig/sysdig-kmp-default/summary
 #. tumbleweed/sysdig/sysdig-kmp-pae/summary
@@ -22701,16 +22193,6 @@ msgstr ""
 "\n"
 "Paket ini berisi berkas pengembangan untuk libsysfs."
 
-#. tumbleweed/syslog-ng/syslog-ng-mqtt/summary
-#, fuzzy
-msgid "MQTT support for syslog-ng"
-msgstr "Dukungan output SMTP untuk syslog-ng"
-
-#. tumbleweed/syslog-ng/syslog-ng-mqtt/description
-#, fuzzy
-msgid "This package provides MQTT support for syslog-ng"
-msgstr "Paket ini memberikan dukungan tujuan Python untuk syslog-ng."
-
 #. tumbleweed/system-user-mktex/summary
 #, fuzzy
 msgid "System user and group 'mktex'"
@@ -22741,65 +22223,15 @@ msgstr "Pengguna sistem upsd"
 msgid "This package provides the system user 'vscan'."
 msgstr "Paket ini menyediakan 'upsd' akun sistem."
 
-#. tumbleweed/systemd/systemd-container/description
-#. tumbleweed/systemd-mini/systemd-mini-container/description
-#, fuzzy
-msgid ""
-"Systemd tools to spawn and manage containers and virtual machines.\n"
-"\n"
-"In addition, it also contains a plugin for the Name Service Switch (NSS), "
-"providing host name resolution for all local containers and virtual machines "
-"using network namespacing and registered with systemd-machined. It also maps "
-"UID/GIDs ranges used by containers to useful names.\n"
-"\n"
-"To activate this NSS module, you will need to include it in /etc/nsswitch."
-"conf, see nss-mymachines(8) manpage for more details."
-msgstr ""
-"Paket ini berisi plugin untuk Name Service Switch (NSS), yang memungkinkan "
-"resolusi semua pengguna layanan yang dialokasikan secara dinamis. (Lihat "
-"pengaturan DynamicUser= dalam file unit.)\n"
-"\n"
-"Untuk mengaktifkan modul NSS ini, Anda harus memasukkannya ke dalam /etc/"
-"nsswitch.conf, lihat halaman nss-systemd(8) untuk detail lebih lanjut."
-
-#. tumbleweed/systemd/systemd-devel/summary
-#, fuzzy
-msgid "Development files for libsystemd and libudev"
-msgstr "File pengembangan untuk libudev"
-
-#. tumbleweed/systemd/systemd-devel/description
-#, fuzzy
-msgid ""
-"Development headers and files for libsystemd and libudev libraries for "
-"developing and building applications linking to these libraries."
-msgstr ""
-"Header dan pustaka pengembangan untuk membangun aplikasi melawan SimGear."
-
-#. tumbleweed/systemd/systemd-network/summary
-msgid "systemd network and Network Name Resolution managers"
+#. tumbleweed/systemd-inputmethod-generator/summary
+msgid "Expose INPUT_METHOD environment variable"
 msgstr ""
 
-#. tumbleweed/systemd/systemd-network/description
+#. tumbleweed/systemd-inputmethod-generator/description
 msgid ""
-"systemd-networkd is a system service that manages networks. It detects and "
-"configures network devices as they appear, as well as manages network "
-"addresses and routes for any link for which it finds a .network file, see "
-"systemd.network(5). It can also create virtual network devices based on "
-"their description given by systemd.netdev(5) files. It may be controlle by "
-"networkctl(1).\n"
-"\n"
-"systemd-resolved is a system service that provides network name resolution "
-"to local applications. It implements a caching and validating DNS/DNSSEC "
-"stub resolver, as well as an LLMNR and MulticastDNS resolver and responder. "
-"It may be controlled by resolvectl(1).\n"
-"\n"
-"Addtionally, this package also contains a plug-in module for the Name "
-"Service Switch (NSS), which enables hostname resolutions by contacting "
-"systemd-resolved(8). It replaces the nss-dns plug-in module that "
-"traditionally resolves hostnames via DNS.\n"
-"\n"
-"To activate this NSS module, you will need to include it in /etc/nsswitch."
-"conf, see nss-resolve(8) manpage for more details."
+"Expose INPUT_METHOD environment variable to user sessions according to the "
+"priority settings in /etc/X11/xim.d, so wayland sessions and systemd fcitx/"
+"ibus user services can work."
 msgstr ""
 
 #. tumbleweed/systemd/systemd-sysvcompat/summary
@@ -22834,6 +22266,533 @@ msgid ""
 "interface somewhere between vi and emacs. It has almost no limitations on "
 "file size and supports to edit large files (files >2 GB)."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Some samba library"
+#~ msgstr "Beberapa perpustakaan samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains utility functions to handle DCE/RPC binding "
+#~ "strings."
+#~ msgstr ""
+#~ "Subpackage ini berisi fungsi utilitas untuk menangani string pengikatan "
+#~ "DCE/RPC."
+
+#, fuzzy
+#~ msgid "Development files for the DCE/RPC library"
+#~ msgstr "File pengembangan untuk pustaka DCE/RPC"
+
+#, fuzzy
+#~ msgid "Development files for the SAMR protocol library"
+#~ msgstr "File pengembangan untuk pustaka protokol SAMR"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libdcerpc-samr."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libdcerpc-samr."
+
+#, fuzzy
+#~ msgid "Security Account Manager (SAM) Remote Protocol library"
+#~ msgstr "Pustaka Protokol Jarak Jauh Manajer Akun Keamanan (SAM)"
+
+#, fuzzy
+#~ msgid "This subpackage contains NDR marshallers for the SAMR protocol."
+#~ msgstr "Subpackage ini berisi marshaller NDR untuk protokol SAMR."
+
+#, fuzzy
+#~ msgid "Distributed Computing Environment Remote Procedure Calls library"
+#~ msgstr ""
+#~ "Pustaka Prosedur Jarak Jauh Lingkungan Komputasi Terdistribusi Memanggil "
+#~ "pustaka"
+
+#, fuzzy
+#~ msgid ""
+#~ "DCE/RPC, short for \"Distributed Computing Environment / Remote Procedure "
+#~ "Calls\", is the remote procedure call system developed for the "
+#~ "Distributed Computing Environment (DCE). This system allows programmers "
+#~ "to write distributed software as if it were all working on the same "
+#~ "computer, without having to worry about the underlying network code."
+#~ msgstr ""
+#~ "DCE/RPC, kependekan dari \"Distributed Computing Environment / Remote "
+#~ "Procedure Calls\", adalah sistem panggilan prosedur jarak jauh yang "
+#~ "dikembangkan untuk Lingkungan Komputasi Terdistribusi (DCE). Sistem ini "
+#~ "memungkinkan programmer untuk menulis perangkat lunak terdistribusi "
+#~ "seolah-olah semuanya bekerja pada komputer yang sama, tanpa harus "
+#~ "khawatir tentang kode jaringan yang mendasarinya."
+
+#, fuzzy
+#~ msgid "Development files for the Network Data Representation library"
+#~ msgstr "File pengembangan untuk pustaka Representasi Data Jaringan"
+
+#, fuzzy
+#~ msgid ""
+#~ "Network Data Representation (NDR) is an implementation of the "
+#~ "presentation layer in the OSI model.\n"
+#~ "\n"
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libndr."
+#~ msgstr ""
+#~ "Network Data Representation (NDR) adalah implementasi dari lapisan "
+#~ "presentasi dalam model OSI.\n"
+#~ "\n"
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libndr."
+
+#, fuzzy
+#~ msgid "Development files for the ndr-krb5pac library"
+#~ msgstr "File pengembangan untuk pustaka ndr-krb5pac"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libndr-krb5pac."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libndr-krb5pac."
+
+#, fuzzy
+#~ msgid "NDR marshallers for the KRB5 PAC formats"
+#~ msgstr "Marshaller NDR untuk format PAC KRB5"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains NDR marshallers for the Kerberos Privilege "
+#~ "Attribute Certificate Data Structure (PAC)."
+#~ msgstr ""
+#~ "Subpackage ini berisi marshaller NDR untuk Struktur Data Sertifikat "
+#~ "Atribut Hak Istimewa Kerberos (PAC)."
+
+#, fuzzy
+#~ msgid "Development files for the ndr-nbt library"
+#~ msgstr "File pengembangan untuk pustaka ndr-nbt"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libndr-nbt."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libndr-nbt."
+
+#, fuzzy
+#~ msgid "NDR marshallers for NBT formats"
+#~ msgstr "Marshaller NDR untuk format NBT"
+
+#, fuzzy
+#~ msgid "This subpackage contains NDR marshallers for the NetBIOS protocol."
+#~ msgstr "Subpackage ini berisi marshaller NDR untuk protokol NetBIOS."
+
+#, fuzzy
+#~ msgid "Development files for the libndr-standard library"
+#~ msgstr "File pengembangan untuk pustaka standar libndr"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libndr-standard."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan standar libndr."
+
+#, fuzzy
+#~ msgid "NDR marshallers for the standard set of DCE/RPC interfaces"
+#~ msgstr "Marshaller NDR untuk set standar antarmuka DCE/RPC"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains NDR encoders/decoders for the set of standard "
+#~ "DCE/RPC interfaces found on Windows and Samba servers."
+#~ msgstr ""
+#~ "Subpackage ini berisi encoder/decoder NDR untuk set antarmuka DCE/RPC "
+#~ "standar yang ditemukan di server Windows dan Samba."
+
+#, fuzzy
+#~ msgid "Network Data Representation library"
+#~ msgstr "Pustaka Representasi Data Jaringan"
+
+#, fuzzy
+#~ msgid ""
+#~ "Network Data Representation (NDR) is an implementation of the "
+#~ "presentation layer in the OSI model."
+#~ msgstr ""
+#~ "Network Data Representation (NDR) adalah implementasi dari lapisan "
+#~ "presentasi dalam model OSI."
+
+#, fuzzy
+#~ msgid "Libraries and Header Files to Develop Programs with netapi Support"
+#~ msgstr ""
+#~ "Pustaka dan Berkas Header untuk Mengembangkan Program dengan Dukungan "
+#~ "netapi"
+
+#, fuzzy
+#~ msgid ""
+#~ "This package contains the static libraries and header files needed to "
+#~ "develop programs which make use of the netapi programming interface."
+#~ msgstr ""
+#~ "Paket ini berisi pustaka statis dan berkas header yang diperlukan untuk "
+#~ "mengembangkan program yang memanfaatkan antarmuka pemrograman netapi."
+
+#, fuzzy
+#~ msgid "Samba netapi Library"
+#~ msgstr "Perpustakaan Samba netapi"
+
+#, fuzzy
+#~ msgid "This package includes the netapi library."
+#~ msgstr "Paket ini mencakup pustaka netapi."
+
+#, fuzzy
+#~ msgid "Development files for the Samba credential management library"
+#~ msgstr "File pengembangan untuk pustaka manajemen kredensial Samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsamba-credentials."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan kredensial libsamba."
+
+#, fuzzy
+#~ msgid "Samba credential management library"
+#~ msgstr "Pustaka manajemen kredensial Samba"
+
+#, fuzzy
+#~ msgid "This subpackage contains libraries for credentials management."
+#~ msgstr "Subpackage ini berisi pustaka untuk manajemen kredensial."
+
+#, fuzzy
+#~ msgid "Development files for the Samba errors handling library"
+#~ msgstr "File pengembangan untuk pustaka penanganan kesalahan Samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsamba-errors."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan kesalahan libsamba."
+
+#, fuzzy
+#~ msgid "Samba errors handling library"
+#~ msgstr "Samba kesalahan menangani perpustakaan"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries to handle and translate NT error codes."
+#~ msgstr ""
+#~ "Subpackage ini berisi library untuk menangani dan menerjemahkan kode "
+#~ "galat NT."
+
+#, fuzzy
+#~ msgid "Development files for the host-wide Samba configuration library"
+#~ msgstr "File pengembangan untuk pustaka konfigurasi Samba di seluruh host"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsamba-hostconfig."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libsamba-hostconfig."
+
+#, fuzzy
+#~ msgid "Host-wide Samba configuration library"
+#~ msgstr "Pustaka konfigurasi Samba di seluruh host"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries for accessing the samba host-specific "
+#~ "configuration files."
+#~ msgstr ""
+#~ "Subpackage ini berisi library untuk mengakses file konfigurasi spesifik "
+#~ "host samba."
+
+#, fuzzy
+#~ msgid "Development files for the Samba3 password database library"
+#~ msgstr "File pengembangan untuk pustaka database kata sandi Samba3"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsamba-passdb."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libsamba-passdb."
+
+#, fuzzy
+#~ msgid "Samba3 password database library"
+#~ msgstr "Pustaka database kata sandi Samba3"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries to interface the password database."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka untuk mem-interface database kata sandi."
+
+#, fuzzy
+#~ msgid "Development files for the Samba utility function library"
+#~ msgstr "File pengembangan untuk pustaka fungsi utilitas Samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsamba-util."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libsamba-util."
+
+#, fuzzy
+#~ msgid "Samba utility function library"
+#~ msgstr "Perpustakaan fungsi utilitas Samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains generic data structures and functions used "
+#~ "within Samba."
+#~ msgstr ""
+#~ "Subpackage ini berisi struktur data generik dan fungsi yang digunakan "
+#~ "dalam Samba."
+
+#, fuzzy
+#~ msgid "Development files for Samba's SAM database library"
+#~ msgstr "File pengembangan untuk pustaka database SAM Samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsamdb."
+#~ msgstr ""
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libsamdb."
+
+#, fuzzy
+#~ msgid "Samba's SAM database library"
+#~ msgstr "Perpustakaan database SAM Samba"
+
+#, fuzzy
+#~ msgid "This subpackage contains libraries for accessing the SAM database."
+#~ msgstr "Subpackage ini berisi pustaka untuk mengakses database SAM."
+
+#, fuzzy
+#~ msgid ""
+#~ "Libraries and Header Files to Develop Programs with smbclient Support"
+#~ msgstr ""
+#~ "Pustaka dan File Header untuk Mengembangkan Program dengan Dukungan "
+#~ "smbclient"
+
+#, fuzzy
+#~ msgid ""
+#~ "This package contains the static libraries and header files needed to "
+#~ "develop programs which make use of the smbclient programming interface."
+#~ msgstr ""
+#~ "Paket ini berisi pustaka statis dan file header yang diperlukan untuk "
+#~ "mengembangkan program yang memanfaatkan antarmuka pemrograman smbclient."
+
+#, fuzzy
+#~ msgid "Samba Client Library"
+#~ msgstr "Perpustakaan Klien Samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "This package includes the libsmbclient library.\n"
+#~ "\n"
+#~ "libsmbclient is provided by the libsmbclient0 package."
+#~ msgstr ""
+#~ "Paket ini termasuk perpustakaan libsmbclient.\n"
+#~ "\n"
+#~ "libsmbclient disediakan oleh paket libsmbclient0."
+
+#, fuzzy
+#~ msgid "Development files for the Samba3 configuration library"
+#~ msgstr "File pengembangan untuk pustaka konfigurasi Samba3"
+
+#, fuzzy
+#~ msgid ""
+#~ "libsmbconf is a library to read or, based on the backend, modify the "
+#~ "Samba configuration.\n"
+#~ "\n"
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsmbconf."
+#~ msgstr ""
+#~ "libsmbconf adalah library untuk dibaca atau, berdasarkan backend, "
+#~ "memodifikasi konfigurasi Samba.\n"
+#~ "\n"
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libsmbconf."
+
+#, fuzzy
+#~ msgid "Samba3 configuration library"
+#~ msgstr "Pustaka konfigurasi Samba3"
+
+#, fuzzy
+#~ msgid ""
+#~ "libsmbconf is a library to read or, based on the backend, modify the "
+#~ "Samba configuration."
+#~ msgstr ""
+#~ "libsmbconf adalah library untuk dibaca atau, berdasarkan backend, "
+#~ "memodifikasi konfigurasi Samba."
+
+#, fuzzy
+#~ msgid "Development files for the smbldap library"
+#~ msgstr "File pengembangan untuk pustaka smbldap"
+
+#, fuzzy
+#~ msgid ""
+#~ "libsmbldap contains LDAP protocol helper functions for Samba.\n"
+#~ "\n"
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libsmbldap."
+#~ msgstr ""
+#~ "libsmbldap berisi fungsi pembantu protokol LDAP untuk Samba.\n"
+#~ "\n"
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libsmbldap."
+
+#, fuzzy
+#~ msgid "Samba LDAP protocol helper function library"
+#~ msgstr "Pustaka fungsi pembantu protokol Samba LDAP"
+
+#, fuzzy
+#~ msgid "libsmbldap contains LDAP protocol helper functions for Samba."
+#~ msgstr "libsmbldap berisi fungsi pembantu protokol LDAP untuk Samba."
+
+#, fuzzy
+#~ msgid "Development files for the Samba tevent utility library"
+#~ msgstr "File pengembangan untuk perpustakaan utilitas tevent Samba"
+
+#, fuzzy
+#~ msgid ""
+#~ "The libtevent-util library contains functions to convert tevent error "
+#~ "codes to platform-specific (errno, NTSTATUS, WERROR) ones.\n"
+#~ "\n"
+#~ "This subpackage contains libraries and header files for developing "
+#~ "applications that want to make use of libtevent-util."
+#~ msgstr ""
+#~ "Pustaka libtevent-util berisi fungsi untuk mengonversi kode kesalahan "
+#~ "tevent ke yang spesifik platform (errno, NTSTATUS, WERROR).\n"
+#~ "\n"
+#~ "Subpackage ini berisi pustaka dan file header untuk mengembangkan "
+#~ "aplikasi yang ingin menggunakan libtevent-util."
+
+#, fuzzy
+#~ msgid "Samba tevent <-> system status code conversion utility library"
+#~ msgstr "Perpustakaan utilitas konversi kode status sistem samba tevent <->"
+
+#, fuzzy
+#~ msgid ""
+#~ "The libtevent-util library contains functions to convert tevent error "
+#~ "codes to platform-specific (errno, NTSTATUS, WERROR) ones."
+#~ msgstr ""
+#~ "Pustaka libtevent-util berisi fungsi untuk mengonversi kode kesalahan "
+#~ "tevent ke yang spesifik platform (errno, NTSTATUS, WERROR)."
+
+#, fuzzy
+#~ msgid "Development files for libudev"
+#~ msgstr "File pengembangan untuk libudev"
+
+#, fuzzy
+#~ msgid ""
+#~ "This package contains the development files for the library libudev, a "
+#~ "dynamic library, which provides access to udev device information."
+#~ msgstr ""
+#~ "Paket ini berisi file pengembangan untuk libudev library, library "
+#~ "dinamis, yang menyediakan akses ke informasi perangkat udev."
+
+#, fuzzy
+#~ msgid "Libraries and Header Files to Develop Programs with wbclient Support"
+#~ msgstr ""
+#~ "Pustaka dan File Header untuk Mengembangkan Program dengan Dukungan "
+#~ "wbclient"
+
+#, fuzzy
+#~ msgid ""
+#~ "This package contains the static libraries and header files needed to "
+#~ "develop programs which make use of the wbclient programming interface."
+#~ msgstr ""
+#~ "Paket ini berisi pustaka statis dan berkas header yang diperlukan untuk "
+#~ "mengembangkan program yang memanfaatkan antarmuka pemrograman wbclient."
+
+#, fuzzy
+#~ msgid "Samba libwbclient Library"
+#~ msgstr "Perpustakaan libwbclient Samba"
+
+#, fuzzy
+#~ msgid "This package includes the wbclient library."
+#~ msgstr "Paket ini termasuk perpustakaan wbclient."
+
+#, fuzzy
+#~ msgid "Plugin for local hostname resolution via systemd-resolved"
+#~ msgstr "Plugin untuk resolusi hostname lokal melalui systemd-resolved"
+
+#, fuzzy
+#~ msgid "python2 library for salt"
+#~ msgstr "perpustakaan python2 untuk garam"
+
+#, fuzzy
+#~ msgid "Python2 specific files for salt"
+#~ msgstr "File khusus Python2 untuk garam"
+
+#, fuzzy
+#~ msgid "Python 2 specific files for suseRegisterInfo"
+#~ msgstr "File khusus Python2 untuk garam"
+
+#, fuzzy
+#~ msgid "Documentation for GNU Stow 2.2.2 in HTML and PDF format."
+#~ msgstr "Dokumentasi untuk GNU Stow 2.2.2 dalam format HTML dan PDF."
+
+#, fuzzy
+#~ msgid "GPU (nvidia/intel) selection for NVIDIA optimus laptops"
+#~ msgstr "Pemilihan GPU (nvidia/intel) untuk laptop optimus NVIDIA"
+
+#, fuzzy
+#~ msgid ""
+#~ "A collection of shell scripts that makes it possible to use the NVIDIA "
+#~ "GPU on a Optimus Laptop. The switching is similar to the feature provided "
+#~ "by the nvidia-prime package in Ubuntu."
+#~ msgstr ""
+#~ "Kumpulan skrip shell yang memungkinkan untuk menggunakan GPU NVIDIA pada "
+#~ "Laptop Optimus. Switching-nya mirip dengan fitur yang disediakan oleh "
+#~ "paket nvidia-prime di Ubuntu."
+
+#, fuzzy
+#~ msgid "An SVG viewer component for KDE (KPart)."
+#~ msgstr "Komponen penampil SVG untuk KDE (KPart)."
+
+#, fuzzy
+#~ msgid ""
+#~ "Systemd tools to spawn and manage containers and virtual machines.\n"
+#~ "\n"
+#~ "This package contains systemd-nspawn, machinectl, systemd-machined, and "
+#~ "systemd-importd."
+#~ msgstr ""
+#~ "Alat systemd untuk menelurkan dan mengelola kontainer dan mesin virtual.\n"
+#~ "\n"
+#~ "Paket ini berisi systemd-nspawn, machinectl, systemd-machined, dan "
+#~ "systemd-importd."
+
+#, fuzzy
+#~ msgid "Development headers for systemd"
+#~ msgstr "Header pengembangan untuk systemd"
+
+#, fuzzy
+#~ msgid ""
+#~ "Development headers and auxiliary files for developing applications for "
+#~ "systemd."
+#~ msgstr ""
+#~ "Header pengembangan dan file tambahan untuk mengembangkan aplikasi untuk "
+#~ "systemd."
+
+#, fuzzy
+#~ msgid ""
+#~ "Systemd tools to manage network settings using networkd and resolver "
+#~ "tools for resolved"
+#~ msgstr ""
+#~ "Alat sistem untuk mengelola setelan jaringan menggunakan alat jaringan "
+#~ "dan pemecah masalah untuk diselesaikan"
 
 #, fuzzy
 #~ msgid ""

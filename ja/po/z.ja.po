@@ -2,11 +2,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2022-02-24 01:12+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
-"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
-"z-master/ja/>\n"
+"Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/z-"
+"master/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,10 +60,12 @@ msgstr ""
 "plugin ZamGEQ31X2-Stereo31band graphic equalizer plugin"
 
 #. leap/zxing-cpp/libZXing1/summary
+#. leap/zxing-cpp/libZXing1-32bit/summary
 msgid "Library for processing 1D and 2D barcodes"
 msgstr "1D と2D バーコードを処理するライブラリ"
 
 #. leap/zxing-cpp/libZXing1/description
+#. leap/zxing-cpp/libZXing1-32bit/description
 msgid ""
 "ZXing (\"zebra crossing\") is an multi-format 1D/2D barcode image processing "
 "library. This package provides a C++ implementation."
@@ -449,29 +451,6 @@ msgstr ""
 "ZZipLib は、フリーの zlib アルゴリズムを利用した、 ZIP および ZIP に類似した"
 "アーカイブを操作するためのライブラリです。"
 
-#. leap/zinnia/python-zinnia/summary
-msgid "Python bindings for zinnia"
-msgstr "zinnia 向け Python バインディング"
-
-#. leap/zinnia/python-zinnia/description
-msgid "This package contains python bindings for zinnia."
-msgstr ""
-"このパッケージには、 zinnia 向け python バインディングが含まれています。"
-
-#. leap/zypp-plugin/python2-zypp-plugin/summary
-#. leap/zypp-plugin/python3-zypp-plugin/summary
-msgid "Helper that makes writing ZYpp plugins easier"
-msgstr "ZYpp プラグインを簡単に開発できるようにするヘルパー"
-
-#. leap/zypp-plugin/python2-zypp-plugin/description
-#. leap/zypp-plugin/python3-zypp-plugin/description
-msgid ""
-"This API allows writing ZYpp plugins by just subclassing from a python class "
-"and implementing the commands you want to respond to as python methods."
-msgstr ""
-"この API は、 Python のクラスをサブクラス化することで ZYpp プラグインを作成で"
-"きるようにするもので、 Python のメソッドとして応答を作成することができます。"
-
 #. leap/z3/python3-z3/summary
 msgid "Python bindings for Z3"
 msgstr "Z3 向け Python バインディング"
@@ -479,6 +458,18 @@ msgstr "Z3 向け Python バインディング"
 #. leap/z3/python3-z3/description
 msgid "Python bindings for the Z3 library."
 msgstr "Z3 ライブラリ向けの Python バインディングです。"
+
+#. leap/zypp-plugin/python3-zypp-plugin/summary
+msgid "Helper that makes writing ZYpp plugins easier"
+msgstr "ZYpp プラグインを簡単に開発できるようにするヘルパー"
+
+#. leap/zypp-plugin/python3-zypp-plugin/description
+msgid ""
+"This API allows writing ZYpp plugins by just subclassing from a python class "
+"and implementing the commands you want to respond to as python methods."
+msgstr ""
+"この API は、 Python のクラスをサブクラス化することで ZYpp プラグインを作成で"
+"きるようにするもので、 Python のメソッドとして応答を作成することができます。"
 
 #. leap/z/summary
 msgid "Frontend for compressing and uncompressing"
@@ -525,14 +516,6 @@ msgid ""
 "server."
 msgstr ""
 "Zabbixエージェントはローカルリソースを監視し、サーバに情報をリレーします。"
-
-#. leap/zabbix/zabbix-bash-completion/summary
-msgid "Zabbix bash completion"
-msgstr "Zabbix bash 補完"
-
-#. leap/zabbix/zabbix-bash-completion/description
-msgid "Bash completion for Zabbix daemons and utilities"
-msgstr "Zabbixデーモンとユーティリティのための bash 補完"
 
 #. leap/zabbix/zabbix-java-gateway/summary
 msgid "Zabbix Java gateway"
@@ -620,14 +603,6 @@ msgstr "PostgreSQLをサポートするZabbixサーバ"
 #. leap/zabbix/zabbix-server-postgresql/description
 msgid "The Zabbix server compiled with PostgreSQL support."
 msgstr "PostgreSQLサポートを使用してコンパイルされたZabbixサーバ。"
-
-#. leap/zabbix/zabbix-server-sqlite/summary
-msgid "Zabbix server with SQLite support"
-msgstr "SQLiteをサポートするZabbixサーバ"
-
-#. leap/zabbix/zabbix-server-sqlite/description
-msgid "The Zabbix server compiled with SQLite support."
-msgstr "SQLiteサポートを使用してコンパイルされたZabbixサーバ。"
 
 #. leap/zanshin/summary
 msgid "TODO Application"
@@ -1447,6 +1422,30 @@ msgstr ""
 "作成には数時間かかります。「重複除外」とは、時間とスペースを節約するために、"
 "同一のファイルまたはフラグメントが1回だけ保存されることを意味します。"
 
+#. leap/zram-generator/summary
+msgid "Systemd unit generator for zram swap devices"
+msgstr "zram スワップデバイス用の systemd ユニット生成器"
+
+#. leap/zram-generator/description
+msgid ""
+"This is a systemd unit generator that enables swap on zram. (With zram, "
+"there is no physical swap device. Part of the avaialable RAM is used to "
+"store compressed pages, essentially trading CPU cycles for memory.)\n"
+"\n"
+"To configure and activate swap and zram devices with file-systems,  create a "
+"configuration file in /etc/systemd/zram.generator.conf. You can consult  /"
+"usr/share/doc/zram-generator/zram-generator.conf.example for an example and "
+"a list of available settings."
+msgstr ""
+"これはzram上でのスワップを可能にするsystemdユニットジェネレータです(zram では"
+"物理的なスワップデバイスはありません。利用可能な RAM の一部は圧縮されたページ"
+"を保存するために使われ、基本的にCPUサイクルをメモリと交換します)。\n"
+"\n"
+"ファイルシステムを使用してswap デバイスと zram デバイスを構成およびアクティブ"
+"化するには、/etc/systemd/zram.generator.conf に構成ファイルを作成します。使用"
+"可能な設定の例とリストについては、/usr/share/doc/zram-generator/zram-"
+"generator.conf.example を参照してください。"
+
 #. leap/zramcfg/summary
 msgid "ZRAM configuration"
 msgstr "ZRAM 設定"
@@ -1843,7 +1842,8 @@ msgid ""
 "zlib-ng is a zlib replacement with support for CPU intrinsics (SSSE3, AVX2, "
 "NEON, VSX) when available."
 msgstr ""
-"zlib-ng は zlib を置き換えたもので、CPU 組み込み関数(SSSE3、AVX2、NEON、VSX)が利用可能な場合にはサポートします。"
+"zlib-ng は zlib を置き換えたもので、CPU 組み込み関数(SSSE3、AVX2、NEON、VSX)"
+"が利用可能な場合にはサポートします。"
 
 #. tumbleweed/zfp/libzfp0/summary
 msgid "Read and write numerical arrays"
@@ -1944,8 +1944,8 @@ msgid ""
 "The zlib-ng-compat-devel package contains header files for developing "
 "application that use zlib-ng-compat."
 msgstr ""
-"zlib-ng-compat パッケージには、 zlib-ng-compat "
-"を使用するアプリケーションを開発するのに必要な、ヘッダファイルが含まれています。"
+"zlib-ng-compat パッケージには、 zlib-ng-compat を使用するアプリケーションを開"
+"発するのに必要な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/zlib-ng/zlib-ng-devel/summary
 msgid "Development files for zlib-ng"
@@ -1955,7 +1955,9 @@ msgstr "zlib-ng 向け開発用ファイル"
 msgid ""
 "The zlib-ng-devel package contains header files for developing application "
 "that use zlib-ng."
-msgstr "zlib-ng パッケージには、 zlib-ng を使用するアプリケーションを開発するのに必要な、ヘッダファイルが含まれています。"
+msgstr ""
+"zlib-ng パッケージには、 zlib-ng を使用するアプリケーションを開発するのに必要"
+"な、ヘッダファイルが含まれています。"
 
 #. tumbleweed/zlib/zlib-testsuite/summary
 msgid "Provide the test examples to reproduce test suite"
@@ -1981,28 +1983,6 @@ msgid ""
 msgstr ""
 "Linuxでzonefsファイルシステムを作成し、維持するために必要なユーティリティ。"
 
-#. tumbleweed/zram-generator/summary
-msgid "Systemd unit generator for zram swap devices"
-msgstr "zram スワップデバイス用の systemd ユニット生成器"
-
-#. tumbleweed/zram-generator/description
-msgid ""
-"This is a systemd unit generator that enables swap on zram. (With zram, "
-"there is no physical swap device. Part of the avaialable RAM is used to "
-"store compressed pages, essentially trading CPU cycles for memory.)\n"
-"\n"
-"To configure and activate swap and zram devices with file-systems,  create a "
-"configuration file in /etc/systemd/zram.generator.conf. You can consult  /"
-"usr/share/doc/zram-generator/zram-generator.conf.example for an example and "
-"a list of available settings."
-msgstr ""
-"これはzram上でのスワップを可能にするsystemdユニットジェネレータです(zram では物理的なスワップデバイスはありません。利用可能な RAM "
-"の一部は圧縮されたページを保存するために使われ、基本的にCPUサイクルをメモリと交換します)。\n"
-"\n"
-"ファイルシステムを使用してswap デバイスと zram デバイスを構成およびアクティブ化するには、/etc/systemd/"
-"zram.generator.conf に構成ファイルを作成します。使用可能な設定の例とリストについては、/usr/share/doc/"
-"zram-generator/zram-generator.conf.example を参照してください。"
-
 #. tumbleweed/zstd/zstd-gzip/summary
 msgid "zstd and zlib based gzip drop-in"
 msgstr "zstd と zlib ベースの gzip ドロップイン"
@@ -2015,9 +1995,11 @@ msgid ""
 "This subpackage provides a compatible alternative to gzip(1) using an "
 "optimized deflate/zlib handling."
 msgstr ""
-"Zstd は Zstandard の略で、可逆圧縮アルゴリズムです。同等の比率で zlib よりも高速な圧縮を目的としています。\n"
+"Zstd は Zstandard の略で、可逆圧縮アルゴリズムです。同等の比率で zlib よりも"
+"高速な圧縮を目的としています。\n"
 "\n"
-"このサブパッケージは、最適化された deflate/zlib 処理を使用して gzip(1) と互換性のある代替手段を提供します。"
+"このサブパッケージは、最適化された deflate/zlib 処理を使用して gzip(1) と互換"
+"性のある代替手段を提供します。"
 
 #. tumbleweed/zutils/summary
 msgid "Collection of utilities for dealing with compressed files"
@@ -2044,15 +2026,17 @@ msgstr ""
 msgid ""
 "Update the system, search, install and remove the package, configure the "
 "repos."
-msgstr "システムの更新、パッケージの検索、インストールと削除、リポジトリの設定を行います。"
+msgstr ""
+"システムの更新、パッケージの検索、インストールと削除、リポジトリの設定を行い"
+"ます。"
 
 #. tumbleweed/zypp-gui/description
 msgid ""
 "Application can update the system, search, install and remove the package, "
 "configure the repos. It achieves some functions of command zypper."
 msgstr ""
-"アプリケーションは、システムの更新、検索、パッケージのインストールと削除、リポジトリの設定を行うことができ、zypper "
-"コマンドのいくつかの機能を実現します。"
+"アプリケーションは、システムの更新、検索、パッケージのインストールと削除、リ"
+"ポジトリの設定を行うことができ、zypper コマンドのいくつかの機能を実現します。"
 
 #. tumbleweed/zypper-changelog-plugin/summary
 msgid "Changelog listing tool"
@@ -2061,6 +2045,25 @@ msgstr "Changelog リスト・ツール"
 #. tumbleweed/zypper-changelog-plugin/description
 msgid "This tool is to show the changelog of packages in the repository"
 msgstr "このツールは、リポジトリ内のパッケージの変更ログを表示します。"
+
+#~ msgid "Python bindings for zinnia"
+#~ msgstr "zinnia 向け Python バインディング"
+
+#~ msgid "This package contains python bindings for zinnia."
+#~ msgstr ""
+#~ "このパッケージには、 zinnia 向け python バインディングが含まれています。"
+
+#~ msgid "Zabbix bash completion"
+#~ msgstr "Zabbix bash 補完"
+
+#~ msgid "Bash completion for Zabbix daemons and utilities"
+#~ msgstr "Zabbixデーモンとユーティリティのための bash 補完"
+
+#~ msgid "Zabbix server with SQLite support"
+#~ msgstr "SQLiteをサポートするZabbixサーバ"
+
+#~ msgid "The Zabbix server compiled with SQLite support."
+#~ msgstr "SQLiteサポートを使用してコンパイルされたZabbixサーバ。"
 
 #~ msgid ""
 #~ "Libzeitgeist is a client library for interacting with the Zeitgeist "

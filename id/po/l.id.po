@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
-"POT-Creation-Date: 2022-02-23 08:40+0000\n"
+"POT-Creation-Date: 2022-02-28 18:22+0000\n"
 "PO-Revision-Date: 2020-09-21 04:04+0000\n"
 "Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.opensuse.org/projects/packages-i18n/"
@@ -137,6 +137,7 @@ msgstr ""
 
 #. leap/llvm/clang/summary
 #. leap/llvm11/clang11/summary
+#. leap/llvm13/clang13/summary
 #. leap/llvm5/clang5/summary
 #. leap/llvm7/clang7/summary
 #. leap/llvm9/clang9/summary
@@ -162,6 +163,8 @@ msgstr ""
 #. leap/llvm/clang-devel/summary
 #. leap/llvm11/clang11-devel/summary
 #. leap/llvm11/clang11-devel-32bit/summary
+#. leap/llvm13/clang13-devel/summary
+#. leap/llvm13/clang13-devel-32bit/summary
 #. leap/llvm5/clang5-devel-32bit/summary
 #. leap/llvm5/clang5-devel/summary
 #. leap/llvm7/clang7-devel-32bit/summary
@@ -188,6 +191,29 @@ msgstr ""
 "saat ini mendukung openSUSE.  Paket yang tidak memerlukan versi Clang "
 "tertentu harus bergantung pada ini."
 
+#. leap/llvm/clang-doc/summary
+#. leap/llvm11/clang11-doc/summary
+#. leap/llvm13/clang13-doc/summary
+#. leap/llvm9/clang9-doc/summary
+#, fuzzy
+msgid "Documentation for Clang"
+msgstr "Dokumentasi untuk Clang"
+
+#. leap/llvm/clang-doc/description
+#, fuzzy
+msgid ""
+"This package contains documentation for the Clang compiler.\n"
+"\n"
+"This package is a dummy package that depends on the version of clang-doc "
+"that openSUSE currently supports.  Packages that don't require a specific "
+"Clang version should depend on this."
+msgstr ""
+"Paket ini berisi frontend clang (bahasa C) untuk LLVM.\n"
+"\n"
+"Paket ini adalah paket dummy yang tergantung pada versi clang yang saat ini "
+"mendukung openSUSE.  Paket yang tidak memerlukan versi Clang tertentu harus "
+"bergantung pada ini."
+
 #. leap/llvm11/clang-tools/summary
 #, fuzzy
 msgid "Tools for Clang"
@@ -207,6 +233,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/clang11/description
+#. leap/llvm13/clang13/description
 #. leap/llvm5/clang5/description
 #. leap/llvm7/clang7/description
 #. leap/llvm9/clang9/description
@@ -216,6 +243,8 @@ msgstr "Paket ini berisi frontend clang (bahasa C) untuk LLVM."
 
 #. leap/llvm11/clang11-devel/description
 #. leap/llvm11/clang11-devel-32bit/description
+#. leap/llvm13/clang13-devel/description
+#. leap/llvm13/clang13-devel-32bit/description
 #. leap/llvm5/clang5-devel-32bit/description
 #. leap/llvm5/clang5-devel/description
 #. leap/llvm7/clang7-devel-32bit/description
@@ -229,13 +258,8 @@ msgid ""
 msgstr ""
 "Paket ini berisi frontend clang (bahasa C) untuk LLVM. (file pengembangan)"
 
-#. leap/llvm11/clang11-doc/summary
-#. leap/llvm9/clang9-doc/summary
-#, fuzzy
-msgid "Documentation for Clang"
-msgstr "Dokumentasi untuk Clang"
-
 #. leap/llvm11/clang11-doc/description
+#. leap/llvm13/clang13-doc/description
 #. leap/llvm9/clang9-doc/description
 #, fuzzy
 msgid "This package contains documentation for the Clang compiler."
@@ -1288,18 +1312,15 @@ msgstr ""
 "cara yang mirip dengan utilitas strace."
 
 #. leap/latte-dock/summary
-#, fuzzy
-msgid "Task manager"
-msgstr "Pengelola Tugas"
+msgid "Replacement Dock for Plasma Desktops"
+msgstr ""
 
 #. leap/latte-dock/description
-#, fuzzy
 msgid ""
-"Latte is a dock based on plasma frameworks that animating its contents by "
-"using parabolic zoom effect."
+"Latte is an alternative application launcher and dock for Plasma. It "
+"animates its contents by using a parabolic zoom effect and tries to be there "
+"only when it is needed."
 msgstr ""
-"Latte adalah dermaga berdasarkan kerangka plasma yang menganimasikan isinya "
-"dengan menggunakan efek zoom parabola."
 
 #. leap/latte-dock/latte-dock-lang/summary
 #, fuzzy
@@ -1310,6 +1331,20 @@ msgstr "Terjemahan untuk paket latte-dock"
 #, fuzzy
 msgid "Provides translations for the \"latte-dock\" package."
 msgstr "Menyediakan terjemahan untuk paket \"latte-dock\"."
+
+#. leap/layer-shell-qt/layer-shell-qt5/summary
+#, fuzzy
+msgid "wlr-layer-shell integration for Qt 5"
+msgstr "Plugin integrasi platform LXQt untuk Qt 5"
+
+#. leap/layer-shell-qt/layer-shell-qt5/description
+#. leap/layer-shell-qt/layer-shell-qt5-devel/description
+msgid "This allows integration of Qt applications with wlr-layer-shell."
+msgstr ""
+
+#. leap/layer-shell-qt/layer-shell-qt5-devel/summary
+msgid "wlr-layer-shell integration for Qt 5 - development files"
+msgstr ""
 
 #. leap/lazarus/summary
 #, fuzzy
@@ -2043,6 +2078,8 @@ msgstr ""
 
 #. leap/llvm11/libLLVM11/summary
 #. leap/llvm11/libLLVM11-32bit/summary
+#. leap/llvm13/libLLVM13/summary
+#. leap/llvm13/libLLVM13-32bit/summary
 #. leap/llvm5/libLLVM5-32bit/summary
 #. leap/llvm5/libLLVM5/summary
 #. leap/llvm7/libLLVM7-32bit/summary
@@ -2055,6 +2092,8 @@ msgstr "Perpustakaan untuk LLVM"
 
 #. leap/llvm11/libLLVM11/description
 #. leap/llvm11/libLLVM11-32bit/description
+#. leap/llvm13/libLLVM13/description
+#. leap/llvm13/libLLVM13-32bit/description
 #. leap/llvm5/libLLVM5-32bit/description
 #. leap/llvm5/libLLVM5/description
 #. leap/llvm7/libLLVM7-32bit/description
@@ -2067,6 +2106,8 @@ msgstr "Paket ini berisi pustaka bersama yang diperlukan untuk LLVM."
 
 #. leap/llvm11/libLTO11/summary
 #. leap/llvm11/libLTO11-32bit/summary
+#. leap/llvm13/libLTO13/summary
+#. leap/llvm13/libLTO13-32bit/summary
 #. leap/llvm5/libLTO5-32bit/summary
 #. leap/llvm5/libLTO5/summary
 #. leap/llvm7/libLTO7-32bit/summary
@@ -2079,6 +2120,8 @@ msgstr "Pengoptimal waktu tautan untuk LLVM"
 
 #. leap/llvm11/libLTO11/description
 #. leap/llvm11/libLTO11-32bit/description
+#. leap/llvm13/libLTO13/description
+#. leap/llvm13/libLTO13-32bit/description
 #. leap/llvm5/libLTO5-32bit/description
 #. leap/llvm5/libLTO5/description
 #. leap/llvm7/libLTO7-32bit/description
@@ -2152,12 +2195,12 @@ msgstr ""
 "BLAS (Basic Linear Algebra Subprograms) adalah pustaka standar untuk aljabar "
 "numerik.  BLAS menyediakan sejumlah algoritma dasar untuk aljabar linier."
 
-#. leap/llvm11/libc++-devel/summary
+#. leap/llvm13/libc++-devel/summary
 #, fuzzy
 msgid "C++ standard library implementation (devel package)"
 msgstr "Implementasi pustaka standar C++ (paket devel)"
 
-#. leap/llvm11/libc++-devel/description
+#. leap/llvm13/libc++-devel/description
 #, fuzzy
 msgid ""
 "This package contains libc++, a new implementation of the C++ standard "
@@ -2166,12 +2209,12 @@ msgstr ""
 "Paket ini berisi libc ++, implementasi baru dari perpustakaan standar C++, "
 "menargetkan C++11. (file pengembangan)"
 
-#. leap/llvm11/libc++1/summary
+#. leap/llvm13/libc++1/summary
 #, fuzzy
 msgid "C++ standard library implementation"
 msgstr "Implementasi pustaka standar C++"
 
-#. leap/llvm11/libc++1/description
+#. leap/llvm13/libc++1/description
 #, fuzzy
 msgid ""
 "This package contains libc++, a new implementation of the C++ standard "
@@ -2180,12 +2223,12 @@ msgstr ""
 "Paket ini berisi libc ++, implementasi baru dari perpustakaan standar C++, "
 "menargetkan C++11."
 
-#. leap/llvm11/libc++abi-devel/summary
+#. leap/llvm13/libc++abi-devel/summary
 #, fuzzy
 msgid "C++ standard library ABI (devel package)"
 msgstr "Abi pustaka standar C++ (paket devel)"
 
-#. leap/llvm11/libc++abi-devel/description
+#. leap/llvm13/libc++abi-devel/description
 #, fuzzy
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
@@ -2194,12 +2237,12 @@ msgstr ""
 "Paket ini berisi ABI untuk libc ++, implementasi baru pustaka standar C++, "
 "menargetkan C++11. (file pengembangan)"
 
-#. leap/llvm11/libc++abi1/summary
+#. leap/llvm13/libc++abi1/summary
 #, fuzzy
 msgid "C++ standard library ABI"
 msgstr "Abi pustaka standar C++"
 
-#. leap/llvm11/libc++abi1/description
+#. leap/llvm13/libc++abi1/description
 #, fuzzy
 msgid ""
 "This package contains the ABI for libc++, a new implementation of the C++ "
@@ -2210,6 +2253,8 @@ msgstr ""
 
 #. leap/llvm11/libclang11/summary
 #. leap/llvm11/libclang11-32bit/summary
+#. leap/llvm13/libclang13/summary
+#. leap/llvm13/libclang13-32bit/summary
 #. leap/llvm5/libclang5-32bit/summary
 #. leap/llvm5/libclang5/summary
 #. leap/llvm7/libclang7-32bit/summary
@@ -2222,6 +2267,8 @@ msgstr "File pustaka yang diperlukan untuk clang"
 
 #. leap/llvm11/libclang11/description
 #. leap/llvm11/libclang11-32bit/description
+#. leap/llvm13/libclang13/description
+#. leap/llvm13/libclang13-32bit/description
 #. leap/llvm5/libclang5-32bit/description
 #. leap/llvm5/libclang5/description
 #. leap/llvm7/libclang7-32bit/description
@@ -2937,6 +2984,7 @@ msgstr ""
 "Paket ini berisi pustaka bersama untuk littleb."
 
 #. leap/llvm11/liblldb11/summary
+#. leap/llvm13/liblldb13/summary
 #. leap/llvm5/liblldb5/summary
 #. leap/llvm7/liblldb7/summary
 #. leap/llvm9/liblldb9/summary
@@ -2945,6 +2993,7 @@ msgid "LLDB software debugger runtime library"
 msgstr "Perpustakaan runtime debugger perangkat lunak LLDB"
 
 #. leap/llvm11/liblldb11/description
+#. leap/llvm13/liblldb13/description
 #. leap/llvm5/liblldb5/description
 #. leap/llvm7/liblldb7/description
 #. leap/llvm9/liblldb9/description
@@ -3130,7 +3179,6 @@ msgstr ""
 
 #. leap/loudmouth/libloudmouth-1-0/summary
 #. leap/loudmouth/loudmouth-devel/summary
-#. leap/loudmouth/loudmouth-doc/summary
 #, fuzzy
 msgid "Jabber Client Library Written in C"
 msgstr "Perpustakaan Klien Jabber Ditulis dalam C"
@@ -3351,22 +3399,22 @@ msgid "Library for interpolability and access to the lxpanel API by plugins."
 msgstr ""
 "Perpustakaan untuk interpolability dan akses ke lxpanel API oleh plugin."
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui0/summary
+#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui1/summary
 #, fuzzy
 msgid "UI lxqt-globalkeys libraries"
 msgstr "Ui lxqt-globalkeys perpustakaan"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui0/description
+#. leap/lxqt-globalkeys/liblxqt-globalkeys-ui1/description
 #, fuzzy
 msgid "UI system libraries for lxqt-globalkeys"
 msgstr "Perpustakaan sistem UI untuk lxqt-globalkeys"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys0/summary
+#. leap/lxqt-globalkeys/liblxqt-globalkeys1/summary
 #, fuzzy
 msgid "Lxqt-globalkeys libraries"
 msgstr "Perpustakaan Lxqt-globalkeys"
 
-#. leap/lxqt-globalkeys/liblxqt-globalkeys0/description
+#. leap/lxqt-globalkeys/liblxqt-globalkeys1/description
 #, fuzzy
 msgid "lxqt-globalkeys main system library"
 msgstr "lxqt-globalkeys perpustakaan sistem utama"
@@ -3471,6 +3519,7 @@ msgid "The LAME MP3 encoder library"
 msgstr "Pustaka encoder MP3 LUMPUH"
 
 #. leap/llvm11/libomp11-devel/summary
+#. leap/llvm13/libomp13-devel/summary
 #. leap/llvm5/libomp5-devel/summary
 #. leap/llvm7/libomp7-devel/summary
 #. leap/llvm9/libomp9-devel/summary
@@ -3479,6 +3528,7 @@ msgid "MPI plugin for LLVM"
 msgstr "Plugin MPI untuk LLVM"
 
 #. leap/llvm11/libomp11-devel/description
+#. leap/llvm13/libomp13-devel/description
 #. leap/llvm5/libomp5-devel/description
 #. leap/llvm7/libomp7-devel/description
 #. leap/llvm9/libomp9-devel/description
@@ -3880,16 +3930,6 @@ msgstr "Otentikasi LDAP di lighttpd"
 msgid "A module to provide LDAP authentication in lighttpd."
 msgstr "Modul untuk menyediakan otentikasi LDAP di lighttpd."
 
-#. leap/lighttpd/lighttpd-mod_authn_mysql/summary
-#, fuzzy
-msgid "MySQL authentication in lighttpd"
-msgstr "Otentikasi MySQL di lighttpd"
-
-#. leap/lighttpd/lighttpd-mod_authn_mysql/description
-#, fuzzy
-msgid "A module to provide MySQL authentication in lighttpd."
-msgstr "Modul untuk menyediakan otentikasi MySQL di lighttpd."
-
 #. leap/lighttpd/lighttpd-mod_authn_pam/summary
 #, fuzzy
 msgid "PAM authentication in lighttpd"
@@ -3909,25 +3949,6 @@ msgstr "Otentikasi SASL di lighttpd"
 #, fuzzy
 msgid "A module to provide SASL authentication in lighttpd."
 msgstr "Modul untuk menyediakan otentikasi SASL di lighttpd."
-
-#. leap/lighttpd/lighttpd-mod_cml/summary
-#, fuzzy
-msgid "CML (Cache Meta Language) module for Lighttpd"
-msgstr "Modul CML (Cache Meta Language) untuk Lighttpd"
-
-#. leap/lighttpd/lighttpd-mod_cml/description
-msgid ""
-"CML is a Meta language to describe the dependencies of a page at one side "
-"and building a page from its fragments on the oth er side using LUA.\n"
-"\n"
-"CML (Cache Meta Language) wants to solves several problems: \n"
-"* dynamic content needs caching to perform \n"
-"* checking if the content is dirty inside of the application is    usually "
-"more expensive than sending out the cached data \n"
-"* a dynamic page is usually fragmented and the fragments have    different "
-"livetimes \n"
-"* the different fragements can be cached independently"
-msgstr ""
 
 #. leap/lighttpd/lighttpd-mod_magnet/summary
 #, fuzzy
@@ -3958,20 +3979,6 @@ msgstr ""
 "Modul ini mendukung pencarian ip / lokasi cepat menggunakan database MaxMind "
 "GeoIP2."
 
-#. leap/lighttpd/lighttpd-mod_mysql_vhost/summary
-#, fuzzy
-msgid "MySQL based virtual hosts (vhosts) module for Lighttpd"
-msgstr "Modul host virtual (vhosts) berbasis MySQL untuk Lighttpd"
-
-#. leap/lighttpd/lighttpd-mod_mysql_vhost/description
-#, fuzzy
-msgid ""
-"With MySQL based vhosting you can put the information where to look for a "
-"document-root of a given host into a MySQL database."
-msgstr ""
-"Dengan vhosting berbasis MySQL Anda dapat menempatkan informasi di mana "
-"untuk mencari root dokumen dari host tertentu ke dalam database MySQL."
-
 #. leap/lighttpd/lighttpd-mod_rrdtool/summary
 #, fuzzy
 msgid "Lighttpd module to feed rrdtool databases"
@@ -3989,25 +3996,6 @@ msgstr ""
 "(yaitu bandwidth jaringan, suhu ruang mesin, rata-rata beban server).\n"
 "\n"
 "Modul ini feed database rrdtool dengan statistik lalu lintas dari lighttpd."
-
-#. leap/lighttpd/lighttpd-mod_trigger_b4_dl/summary
-#, fuzzy
-msgid "Another anti hot-linking module for Lighttpd"
-msgstr "Modul anti hot-linking lain untuk Lighttpd"
-
-#. leap/lighttpd/lighttpd-mod_trigger_b4_dl/description
-msgid ""
-"Anti Hotlinking: \n"
-"* if user requests download-url directly the request is denied and    he is "
-"redirected to ''deny-url' \n"
-"* if user visits trigger-url before requesting download-url access    is "
-"granted \n"
-"* if user visits download-url again after trigger-timeout has run    down to "
-"the request is denied and he is redirected  to deny-url\n"
-"\n"
-"The storage for the trigger information is either stored locally in a gdbm "
-"file or remotly in memcached."
-msgstr ""
 
 #. leap/lighttpd/lighttpd-mod_vhostdb_dbi/summary
 #, fuzzy
@@ -4966,6 +4954,7 @@ msgstr ""
 
 #. leap/llvm/lld/summary
 #. leap/llvm11/lld11/summary
+#. leap/llvm13/lld13/summary
 #. leap/llvm5/lld5/summary
 #. leap/llvm7/lld7/summary
 #. leap/llvm9/lld9/summary
@@ -4975,6 +4964,7 @@ msgstr "Linker untuk Clang/LLVM"
 
 #. leap/llvm/lld/description
 #. leap/llvm11/lld11/description
+#. leap/llvm13/lld13/description
 #. leap/llvm5/lld5/description
 #. leap/llvm7/lld7/description
 #. leap/llvm9/lld9/description
@@ -4990,6 +4980,7 @@ msgstr ""
 
 #. leap/llvm/lldb/summary
 #. leap/llvm11/lldb11/summary
+#. leap/llvm13/lldb13/summary
 #. leap/llvm5/lldb5/summary
 #. leap/llvm7/lldb7/summary
 #. leap/llvm9/lldb9/summary
@@ -5011,6 +5002,7 @@ msgstr ""
 
 #. leap/llvm/lldb-devel/summary
 #. leap/llvm11/lldb11-devel/summary
+#. leap/llvm13/lldb13-devel/summary
 #. leap/llvm5/lldb5-devel/summary
 #. leap/llvm7/lldb7-devel/summary
 #. leap/llvm9/lldb9-devel/summary
@@ -5034,6 +5026,7 @@ msgstr ""
 "harus bergantung pada ini."
 
 #. leap/llvm11/lldb11/description
+#. leap/llvm13/lldb13/description
 #. leap/llvm5/lldb5/description
 #. leap/llvm7/lldb7/description
 #. leap/llvm9/lldb9/description
@@ -5050,6 +5043,7 @@ msgstr ""
 "parser ekspresi Clang dan disassembler LLVM."
 
 #. leap/llvm11/lldb11-devel/description
+#. leap/llvm13/lldb13-devel/description
 #. leap/llvm5/lldb5-devel/description
 #. leap/llvm7/lldb7-devel/description
 #. leap/llvm9/lldb9-devel/description
@@ -5126,6 +5120,7 @@ msgstr ""
 
 #. leap/llvm/summary
 #. leap/llvm11/summary
+#. leap/llvm13/summary
 #. leap/llvm5/summary
 #. leap/llvm7/summary
 #. leap/llvm9/summary
@@ -5150,6 +5145,8 @@ msgstr ""
 #. leap/llvm/llvm-LTO-devel/summary
 #. leap/llvm11/llvm11-LTO-devel/summary
 #. leap/llvm11/llvm11-LTO-devel-32bit/summary
+#. leap/llvm13/llvm13-LTO-devel/summary
+#. leap/llvm13/llvm13-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel-32bit/summary
 #. leap/llvm5/llvm5-LTO-devel/summary
 #. leap/llvm7/llvm7-LTO-devel-32bit/summary
@@ -5178,6 +5175,8 @@ msgstr ""
 #. leap/llvm/llvm-devel/summary
 #. leap/llvm11/llvm11-devel/summary
 #. leap/llvm11/llvm11-devel-32bit/summary
+#. leap/llvm13/llvm13-devel/summary
+#. leap/llvm13/llvm13-devel-32bit/summary
 #. leap/llvm5/llvm5-devel-32bit/summary
 #. leap/llvm5/llvm5-devel/summary
 #. leap/llvm7/llvm7-devel-32bit/summary
@@ -5205,8 +5204,32 @@ msgstr ""
 "ini mendukung openSUSE.  Paket yang tidak memerlukan versi LLVM tertentu "
 "harus bergantung pada ini."
 
+#. leap/llvm/llvm-doc/summary
+#. leap/llvm11/llvm11-doc/summary
+#. leap/llvm13/llvm13-doc/summary
+#. leap/llvm9/llvm9-doc/summary
+#, fuzzy
+msgid "Documentation for LLVM"
+msgstr "Dokumentasi untuk LLVM"
+
+#. leap/llvm/llvm-doc/description
+#, fuzzy
+msgid ""
+"This package contains documentation for the LLVM infrastructure.\n"
+"\n"
+"This package is a dummy package that depends on the version of llvm-doc that "
+"openSUSE currently supports.  Packages that don't require a specific LLVM "
+"version should depend on this."
+msgstr ""
+"Paket ini berisi plugin linker Emas untuk LLVM.\n"
+"\n"
+"Paket ini adalah paket dummy yang tergantung pada versi llvm-gold yang saat "
+"ini didukung openSUSE.  Paket yang tidak memerlukan versi LLVM tertentu "
+"harus bergantung pada ini."
+
 #. leap/llvm/llvm-gold/summary
 #. leap/llvm11/llvm11-gold/summary
+#. leap/llvm13/llvm13-gold/summary
 #. leap/llvm5/llvm5-gold/summary
 #. leap/llvm7/llvm7-gold/summary
 #. leap/llvm9/llvm9-gold/summary
@@ -5231,6 +5254,7 @@ msgstr ""
 
 #. leap/llvm/llvm-opt-viewer/summary
 #. leap/llvm11/llvm11-opt-viewer/summary
+#. leap/llvm13/llvm13-opt-viewer/summary
 #. leap/llvm5/llvm5-opt-viewer/summary
 #. leap/llvm7/llvm7-opt-viewer/summary
 #. leap/llvm9/llvm9-opt-viewer/summary
@@ -5256,6 +5280,7 @@ msgstr ""
 
 #. leap/llvm/llvm-polly/summary
 #. leap/llvm11/llvm11-polly/summary
+#. leap/llvm13/llvm13-polly/summary
 #. leap/llvm9/llvm9-polly/summary
 #, fuzzy
 msgid "LLVM Framework for High-Level Loop and Data-Locality Optimizations"
@@ -5279,6 +5304,7 @@ msgstr ""
 
 #. leap/llvm/llvm-polly-devel/summary
 #. leap/llvm11/llvm11-polly-devel/summary
+#. leap/llvm13/llvm13-polly-devel/summary
 #. leap/llvm7/llvm7-polly-devel/summary
 #. leap/llvm9/llvm9-polly-devel/summary
 #, fuzzy
@@ -5302,6 +5328,7 @@ msgstr ""
 
 #. leap/llvm/llvm-vim-plugins/summary
 #. leap/llvm11/llvm11-vim-plugins/summary
+#. leap/llvm13/llvm13-vim-plugins/summary
 #. leap/llvm5/llvm5-vim-plugins/summary
 #. leap/llvm7/llvm7-vim-plugins/summary
 #. leap/llvm9/llvm9-vim-plugins/summary
@@ -5325,6 +5352,7 @@ msgstr ""
 "harus bergantung pada ini."
 
 #. leap/llvm11/description
+#. leap/llvm13/description
 #. leap/llvm5/description
 #. leap/llvm7/description
 #. leap/llvm9/description
@@ -5346,6 +5374,8 @@ msgstr ""
 
 #. leap/llvm11/llvm11-LTO-devel/description
 #. leap/llvm11/llvm11-LTO-devel-32bit/description
+#. leap/llvm13/llvm13-LTO-devel/description
+#. leap/llvm13/llvm13-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel-32bit/description
 #. leap/llvm5/llvm5-LTO-devel/description
 #. leap/llvm7/llvm7-LTO-devel-32bit/description
@@ -5359,6 +5389,8 @@ msgstr "Paket ini berisi pengoptimal link-time untuk LLVM. (file pengembangan)"
 
 #. leap/llvm11/llvm11-devel/description
 #. leap/llvm11/llvm11-devel-32bit/description
+#. leap/llvm13/llvm13-devel/description
+#. leap/llvm13/llvm13-devel-32bit/description
 #. leap/llvm5/llvm5-devel-32bit/description
 #. leap/llvm5/llvm5-devel/description
 #. leap/llvm7/llvm7-devel-32bit/description
@@ -5373,19 +5405,15 @@ msgstr ""
 "Paket ini berisi perpustakaan dan header file yang diperlukan untuk "
 "mengembangkan program asli baru yang menggunakan infrastruktur LLVM."
 
-#. leap/llvm11/llvm11-doc/summary
-#. leap/llvm9/llvm9-doc/summary
-#, fuzzy
-msgid "Documentation for LLVM"
-msgstr "Dokumentasi untuk LLVM"
-
 #. leap/llvm11/llvm11-doc/description
+#. leap/llvm13/llvm13-doc/description
 #. leap/llvm9/llvm9-doc/description
 #, fuzzy
 msgid "This package contains documentation for the LLVM infrastructure."
 msgstr "Paket ini berisi dokumentasi untuk infrastruktur LLVM."
 
 #. leap/llvm11/llvm11-gold/description
+#. leap/llvm13/llvm13-gold/description
 #. leap/llvm5/llvm5-gold/description
 #. leap/llvm7/llvm7-gold/description
 #. leap/llvm9/llvm9-gold/description
@@ -5394,6 +5422,7 @@ msgid "This package contains the Gold linker plugin for LLVM."
 msgstr "Paket ini berisi plugin linker Emas untuk LLVM."
 
 #. leap/llvm11/llvm11-opt-viewer/description
+#. leap/llvm13/llvm13-opt-viewer/description
 #. leap/llvm5/llvm5-opt-viewer/description
 #. leap/llvm7/llvm7-opt-viewer/description
 #. leap/llvm9/llvm9-opt-viewer/description
@@ -5407,6 +5436,7 @@ msgstr ""
 "kinerja dengan bantuan kompilator."
 
 #. leap/llvm11/llvm11-polly/description
+#. leap/llvm13/llvm13-polly/description
 #. leap/llvm9/llvm9-polly/description
 msgid ""
 "Polly is a high-level loop and data-locality optimizer and optimization "
@@ -5418,6 +5448,7 @@ msgid ""
 msgstr ""
 
 #. leap/llvm11/llvm11-polly-devel/description
+#. leap/llvm13/llvm13-polly-devel/description
 #. leap/llvm7/llvm7-polly-devel/description
 #. leap/llvm9/llvm9-polly-devel/description
 #, fuzzy
@@ -5425,6 +5456,7 @@ msgid "This package contains the development files for Polly."
 msgstr "Paket ini berisi file pengembangan untuk Polly."
 
 #. leap/llvm11/llvm11-vim-plugins/description
+#. leap/llvm13/llvm13-vim-plugins/description
 #. leap/llvm5/llvm5-vim-plugins/description
 #. leap/llvm7/llvm7-vim-plugins/description
 #. leap/llvm9/llvm9-vim-plugins/description
@@ -5826,6 +5858,14 @@ msgstr ""
 "ignore.local. Lihat /etc/logdigest/config untuk beberapa pengaturan umum.\n"
 "\n"
 "Hasilnya dikirim ke sysadmin setiap hari."
+
+#. leap/log4j12/logfactor5/summary
+msgid "Log Viewer GUI"
+msgstr ""
+
+#. leap/log4j12/logfactor5/description
+msgid "LogFactor5 is a Swing based GUI to view log4j logs."
+msgstr ""
 
 #. leap/logrotate/summary
 #, fuzzy
@@ -6272,7 +6312,6 @@ msgid ""
 msgstr ""
 
 #. leap/loudmouth/loudmouth-devel/description
-#. leap/loudmouth/loudmouth-doc/description
 #, fuzzy
 msgid ""
 "Loudmouth is a lightweight and easy-to-use C library for programming with "
@@ -6650,14 +6689,12 @@ msgstr ""
 
 #. leap/lttng-modules/summary
 #. leap/lttng-modules/lttng-modules-kmp-default/summary
-#. leap/lttng-modules/lttng-modules-kmp-preempt/summary
 #, fuzzy
 msgid "Licensing information for package lttng-modules"
 msgstr "Informasi lisensi untuk paket lttng-modul"
 
 #. leap/lttng-modules/description
 #. leap/lttng-modules/lttng-modules-kmp-default/description
-#. leap/lttng-modules/lttng-modules-kmp-preempt/description
 #, fuzzy
 msgid ""
 "This package provides licensing documentation for the lttng kmp packages."
@@ -8966,12 +9003,12 @@ msgid ""
 "possibilities."
 msgstr ""
 
-#. leap/llvm11/python3-clang/summary
+#. leap/llvm13/python3-clang/summary
 #, fuzzy
 msgid "Python bindings for libclang"
 msgstr "Pengikatan Python untuk libclang"
 
-#. leap/llvm11/python3-clang/description
+#. leap/llvm13/python3-clang/description
 #. leap/llvm5/python3-lldb5/description
 #. leap/llvm7/python3-lldb7/description
 #, fuzzy
@@ -9101,6 +9138,7 @@ msgstr ""
 
 #. leap/llvm/python3-lldb/summary
 #. leap/llvm11/python3-lldb11/summary
+#. leap/llvm13/python3-lldb13/summary
 #. leap/llvm5/python3-lldb5/summary
 #. leap/llvm7/python3-lldb7/summary
 #. leap/llvm9/python3-lldb9/summary
@@ -9125,6 +9163,7 @@ msgstr ""
 "tertentu harus bergantung pada ini."
 
 #. leap/llvm11/python3-lldb11/description
+#. leap/llvm13/python3-lldb13/description
 #. leap/llvm9/python3-lldb9/description
 #, fuzzy
 msgid ""
@@ -9259,21 +9298,6 @@ msgstr ""
 #, fuzzy
 msgid "CBLAS - static libraries"
 msgstr "Paket Aljabar Linear - pustaka statis"
-
-#. tumbleweed/llvm/clang-doc/description
-#, fuzzy
-msgid ""
-"This package contains documentation for the Clang compiler.\n"
-"\n"
-"This package is a dummy package that depends on the version of clang-doc "
-"that openSUSE currently supports.  Packages that don't require a specific "
-"Clang version should depend on this."
-msgstr ""
-"Paket ini berisi frontend clang (bahasa C) untuk LLVM.\n"
-"\n"
-"Paket ini adalah paket dummy yang tergantung pada versi clang yang saat ini "
-"mendukung openSUSE.  Paket yang tidak memerlukan versi Clang tertentu harus "
-"bergantung pada ini."
 
 #. tumbleweed/lagrange/summary
 msgid "Desktop GUI client for browsing Geminispace"
@@ -9589,31 +9613,6 @@ msgid ""
 "* In the PUA (Private Use Area) for which no agreement exists\n"
 "* Unassigned (reserved for future assignment)\n"
 "* A noncharacter"
-msgstr ""
-
-#. tumbleweed/latte-dock/summary
-msgid "Replacement Dock for Plasma Desktops"
-msgstr ""
-
-#. tumbleweed/latte-dock/description
-msgid ""
-"Latte is an alternative application launcher and dock for Plasma. It "
-"animates its contents by using a parabolic zoom effect and tries to be there "
-"only when it is needed."
-msgstr ""
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5/summary
-#, fuzzy
-msgid "wlr-layer-shell integration for Qt 5"
-msgstr "Plugin integrasi platform LXQt untuk Qt 5"
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5/description
-#. tumbleweed/layer-shell-qt/layer-shell-qt5-devel/description
-msgid "This allows integration of Qt applications with wlr-layer-shell."
-msgstr ""
-
-#. tumbleweed/layer-shell-qt/layer-shell-qt5-devel/summary
-msgid "wlr-layer-shell integration for Qt 5 - development files"
 msgstr ""
 
 #. tumbleweed/lcdf-typetools/summary
@@ -10178,21 +10177,6 @@ msgstr ""
 "tetapi tidak mempengaruhi shell saat ini atau proses di atasnya dalam "
 "hirarki proses."
 
-#. tumbleweed/llvm/llvm-doc/description
-#, fuzzy
-msgid ""
-"This package contains documentation for the LLVM infrastructure.\n"
-"\n"
-"This package is a dummy package that depends on the version of llvm-doc that "
-"openSUSE currently supports.  Packages that don't require a specific LLVM "
-"version should depend on this."
-msgstr ""
-"Paket ini berisi plugin linker Emas untuk LLVM.\n"
-"\n"
-"Paket ini adalah paket dummy yang tergantung pada versi llvm-gold yang saat "
-"ini didukung openSUSE.  Paket yang tidak memerlukan versi LLVM tertentu "
-"harus bergantung pada ini."
-
 #. tumbleweed/loadlin/summary
 #, fuzzy
 msgid "Linux Loader with Command Line from DOS"
@@ -10229,14 +10213,6 @@ msgid ""
 "aggregation system inspired by Prometheus.\n"
 "\n"
 "This package contains the LogCLI command-line tool."
-msgstr ""
-
-#. tumbleweed/log4j12/logfactor5/summary
-msgid "Log Viewer GUI"
-msgstr ""
-
-#. tumbleweed/log4j12/logfactor5/description
-msgid "LogFactor5 is a Swing based GUI to view log4j logs."
 msgstr ""
 
 #. tumbleweed/logwatch/summary
@@ -11179,6 +11155,46 @@ msgid ""
 "library."
 msgstr ""
 "Paket ini berisi binding introspeksi untuk perpustakaan kalender lunar."
+
+#, fuzzy
+#~ msgid "Task manager"
+#~ msgstr "Pengelola Tugas"
+
+#, fuzzy
+#~ msgid ""
+#~ "Latte is a dock based on plasma frameworks that animating its contents by "
+#~ "using parabolic zoom effect."
+#~ msgstr ""
+#~ "Latte adalah dermaga berdasarkan kerangka plasma yang menganimasikan "
+#~ "isinya dengan menggunakan efek zoom parabola."
+
+#, fuzzy
+#~ msgid "MySQL authentication in lighttpd"
+#~ msgstr "Otentikasi MySQL di lighttpd"
+
+#, fuzzy
+#~ msgid "A module to provide MySQL authentication in lighttpd."
+#~ msgstr "Modul untuk menyediakan otentikasi MySQL di lighttpd."
+
+#, fuzzy
+#~ msgid "CML (Cache Meta Language) module for Lighttpd"
+#~ msgstr "Modul CML (Cache Meta Language) untuk Lighttpd"
+
+#, fuzzy
+#~ msgid "MySQL based virtual hosts (vhosts) module for Lighttpd"
+#~ msgstr "Modul host virtual (vhosts) berbasis MySQL untuk Lighttpd"
+
+#, fuzzy
+#~ msgid ""
+#~ "With MySQL based vhosting you can put the information where to look for a "
+#~ "document-root of a given host into a MySQL database."
+#~ msgstr ""
+#~ "Dengan vhosting berbasis MySQL Anda dapat menempatkan informasi di mana "
+#~ "untuk mencari root dokumen dari host tertentu ke dalam database MySQL."
+
+#, fuzzy
+#~ msgid "Another anti hot-linking module for Lighttpd"
+#~ msgstr "Modul anti hot-linking lain untuk Lighttpd"
 
 #, fuzzy
 #~ msgid ""
