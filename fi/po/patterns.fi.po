@@ -25,8 +25,8 @@ msgstr ""
 "Project-Id-Version: patterns.fi\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2022-01-31 00:12+0000\n"
-"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
+"PO-Revision-Date: 2022-03-04 21:12+0000\n"
+"Last-Translator: Tommi Nieminen <software@legisign.org>\n"
 "Language-Team: Finnish <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/fi/>\n"
 "Language: fi\n"
@@ -128,11 +128,11 @@ msgstr "Graafinen ympäristö"
 
 #. SLE/patterns-base/patterns-base-bootloader/summary
 msgid "Bootloader"
-msgstr ""
+msgstr "Käynnistyslatain"
 
 #. SLE/patterns-base/patterns-base-bootloader/description
 msgid "This pattern holds files required for booting the system"
-msgstr ""
+msgstr "Tämä kuvio sisältää järjestelmän käynnistykseen tarvittavat tiedostot"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
 #. SLE/patterns-base/patterns-base-documentation/description
@@ -161,7 +161,7 @@ msgstr "enhanced_base-kuviota täydentävä 32-bittinen kuvio."
 
 #. SLE/patterns-base/patterns-base-fips/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "FIPS 140-2 -kohtaiset paketit"
 
 #. SLE/patterns-base/patterns-base-fips/description
 msgid ""
@@ -175,6 +175,16 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"Tämä kuvio asentaa FIPS 140-2 -kohtaiset paketit, jotka täydentävät käytössä "
+"olevia salausmoduuleja. Tämä vaatii, että konetta käytetään asetuksella "
+"”fips=1”.\n"
+"\n"
+"Huomaa, että tämä kuvio ottaa käyttöön vain FIPS 140-2 -yhteensopivan "
+"toimintatilan eikä suoraan tee järjestelmästä FIPS 140-2 -varmennettua tai "
+"todennettua.\n"
+"\n"
+"FIPS 140-2 -varmennuksen tilasta löytyy lisätietoa SUSEn virallisesta "
+"lausunnosta."
 
 #. SLE/patterns-base/patterns-base-fips/category
 msgid "Primary Functions"
@@ -186,18 +196,12 @@ msgid "Minimal Appliance Base"
 msgstr "Minimaalinen laiteasennus"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
 msgstr ""
-"Tämä on minimaalinen openSUSE-ajonaikaisjärjestelmä. Se on todella "
-"minimaalinen: sisään voi kirjautua ja komentotulkin käynnistää, siinä "
-"kaikki. Se on tarkoitettu laiteasennusten perustaksi."
+"Tämä on minimaalinen ajonaikaisjärjestelmä. Se on todella minimaalinen ja "
+"tarkoitettu säilöasennusperustaksi."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -268,38 +272,28 @@ msgstr ""
 "YaST-ohjelman graafinen käyttöliittymä minimaaliselle X-työpöytäympäristölle."
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Base Utilities"
-msgstr "MATE-apuohjelmat"
+msgstr "YaST – Perustyökalut"
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/description
 msgid "YaST tools for basic system administration."
 msgstr "YaST-työkalut perusjärjestelmänhallintaan."
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
-#, fuzzy
-#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
-msgstr "KDE-apuohjelmat"
+msgstr "YaST – Työpöytätyökalut"
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
-msgstr "YaST-työkalut perusjärjestelmänhallintaan."
+msgstr "YaST-työkalut työpöydän järjestelmänhallintaan."
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Server Utilities"
-msgstr "MATE-apuohjelmat"
+msgstr "YaST – Palvelintyökalut"
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
-msgstr "YaST-työkalut perusjärjestelmänhallintaan."
+msgstr "YaST-työkalut palvelimen järjestelmänhallintaan."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
@@ -333,7 +327,7 @@ msgstr "Kannettavia tietokoneita varten suunnitellut työkalut."
 
 #. SLE/patterns-ha/summary
 msgid "Patterns for SLE HA"
-msgstr ""
+msgstr "Kuviot SLE HA:lle"
 
 #. SLE/patterns-ha/description
 #. SLE/patterns-ha-geo/description
@@ -344,26 +338,28 @@ msgid ""
 "the installation source setup.  Installation of this package does not make "
 "sense."
 msgstr ""
+"Tämä on sisäinen paketti, jota käytetään luomaan asennuksen lähdeasetuksen "
+"kuvioiden luomiseksi. Paketin asentamisessa ei ole mieltä."
 
 #. SLE/patterns-ha-geo/summary
 msgid "Patterns for SLE HA GEO"
-msgstr ""
+msgstr "Kuviot SLE HA GEO:lle"
 
 #. SLE/patterns-lp/summary
 msgid "Patterns for SLE Live Patching"
-msgstr ""
+msgstr "Kuviot SLE:n ajonaikaispaikkaukselle"
 
 #. SLE/patterns-rt/summary
 msgid "Patterns for SLE Real Time Module"
-msgstr ""
+msgstr "Kuviot SLE:n tosiaikamoduulille"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/summary
 msgid "SLE Real Time Module"
-msgstr ""
+msgstr "SLE:n tosiaikamoduuli"
 
 #. SLE/patterns-rt/patterns-rt-rt_sles/description
 msgid "Provide tools and patches to fix kernel at runtime."
-msgstr ""
+msgstr "Tarjoaa työkalut ja paikkaukset ytimen ajonaikaiseen paikkaamiseen."
 
 #. SLE/patterns-server-enterprise/patterns-server-enterprise-oracle_server/summary
 msgid "Oracle Server Base"
@@ -383,13 +379,15 @@ msgstr "Verkkopohjainen yrityshallinta."
 
 #. SLE/patterns-wsl/patterns-wsl-base/summary
 msgid "Base WSL packages"
-msgstr ""
+msgstr "WSL-peruspaketit"
 
 #. SLE/patterns-wsl/patterns-wsl-base/description
 msgid ""
 "This package contains the wsl_base pattern: recommended tools,libraries for "
 "using WSL."
 msgstr ""
+"Tämä paketti sisältää wsl_base-kuvion: suositellut työkalut ja kirjastot WSL:"
+"n käyttämiseksi."
 
 #. SLE/patterns-wsl/patterns-wsl-base/category
 #. SLE/patterns-wsl/patterns-wsl-gui/category
@@ -398,17 +396,19 @@ msgstr "Kehitys"
 
 #. SLE/patterns-wsl/patterns-wsl-gui/summary
 msgid "WSL GUI packages"
-msgstr ""
+msgstr "WSL:n graafiset paketit"
 
 #. SLE/patterns-wsl/patterns-wsl-gui/description
 msgid ""
 "This package contains the wsl_gui pattern: recommended tools,libraries for "
 "using WSLg."
 msgstr ""
+"Tämä paketti sisältää wsl_gui-kuvion: suositellut työkalut ja kirjastot WSLg:"
+"n käyttämiseksi."
 
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
-msgstr ""
+msgstr "SLES:n kuviot SAP-sovelluksille"
 
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis/summary
 #. SLE/patterns-devel-base/patterns-devel-base-devel_basis-32bit/summary
