@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2022-12-15 12:13+0000\n"
+"PO-Revision-Date: 2023-12-05 07:02+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "x-master/ja/>\n"
@@ -173,6 +173,10 @@ msgid ""
 "libhandle1 is always needed by xfsprogs. If you want to use this library for "
 "your own new xfs tools install xfsprogs-devel."
 msgstr ""
+"libhandle1には、xfsprogsがxfsprogsプログラムを実行するために必要な共有ライブラリが含まれています。\n"
+"\n"
+"libhandle1は常にxfsprogsに必要とされます。このライブラリを新しいxfsツールに使用したい場合は、xfsprogs-"
+"develをインストールしてください。"
 
 #. leap/xiterm/libiterm-devel/summary
 #. leap/xiterm/libiterm-devel/description
@@ -1025,6 +1029,10 @@ msgid ""
 "\n"
 "This package contains just the shared library."
 msgstr ""
+"XMLTooling・ライブラリには、Xerces-C DOMに基づく汎用XML構文解析クラスと処理クラスが含まれています。これにより、要素固有および型固"
+"有のAPIを宣言するためのより強力な機能と、DOMに値を追加するための実装クラスが追加され、署名と暗号化のサポートも追加されます。\n"
+"\n"
+"このパッケージには、共有ライブラリだけが含まれています。"
 
 #. leap/xosd/libxosd2/summary
 msgid "Library for X On-Screen Display"
@@ -1082,7 +1090,7 @@ msgstr "myriadrf/LMS7002M-driver からの XTRX のフォーク。"
 
 #. leap/xxhash/libxxhash0/summary
 msgid "Shared library for xxHash - a non-cryptographic hash algorithm"
-msgstr ""
+msgstr "xxHash用共用ライブラリー-非暗号ハッシュ・アルゴリズム"
 
 #. leap/xxhash/libxxhash0/description
 msgid ""
@@ -1090,6 +1098,8 @@ msgid ""
 "suite which evaluates collision, dispersion and randomness qualities of hash "
 "functions. Hashes are identical on all platforms."
 msgstr ""
+"xxHashの共用ライブラリー-ハッシュ・アルゴリズム。これにより、ハッシュ関数の衝突、分散、ランダム性の品質を評価するSMHasherテストスイートが完"
+"成します。ハッシュは、すべてのプラットフォームで同一です。"
 
 #. leap/xylib/libxy3/summary
 msgid "Library for reading x-y data from several file formats"
@@ -1102,6 +1112,9 @@ msgid ""
 "VAMAS, pdCIF, Bruker UXD and RAW, Philips UDF and RD, Rigaku DAT, Sietronics "
 "CPI, DBWS/DMPLOT, Koalariet XDD and others."
 msgstr ""
+"粉末回析、分光または他の実験方法からのx-yデータを含むファイルを読み取るためのC++ライブラリ。サポートされている形式には、VAMAS、pdCIF、"
+"Bruker UXDおよびRAW、Philips UDFおよびRD、Rigaku DAT、Sietronics CPI、DBWS/DMPLOT、"
+"Koalariet XDDなどがあります。"
 
 #. leap/xawtv/motv/summary
 msgid "Video4Linux TV application (Motif)"
@@ -1174,6 +1187,9 @@ msgid ""
 "\n"
 "This package provides the python 3 bindings for XRootD."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージは、XRootD用のpython 3バインディングを提供します。"
 
 #. leap/xapian-bindings/ruby-xapian/summary
 msgid "Files needed for developing Ruby scripts which use Xapian"
@@ -1225,7 +1241,7 @@ msgstr "XApp ライブラリ -- イントロスペクションバインディン
 
 #. leap/xfconf/typelib-1_0-Xfconf-0/description
 msgid "GObject introspection bindings for Xfconf"
-msgstr ""
+msgstr "XfconfのGObjectイントロスペクションバインディング"
 
 #. leap/xplayer-plparser/typelib-1_0-XplayerPlParser-1_0/summary
 msgid ""
@@ -1371,6 +1387,15 @@ msgid ""
 "maintained the viewing-end can crash, be rebooted, or relocated and the "
 "applications and desktop continue running. Not so with X11."
 msgstr ""
+"x11vncを使用すると、任意のVNCビューアを使用して、実際のXディスプレイ(つまり、物理モニタ、キーボード、およびマウスに対応するディスプレイ)をリモ"
+"ートで表示し、対話することができます。このようにして、WinVNCがWindows用に果たす役割をUnix/X11用に果たします。\n"
+"\n"
+"Unixの場合、VNC実装には仮想X11サーバーXvnc(通常はvncserverコマンドで起動される)が含まれています。このXvncは実際のディスプレイ"
+"には関連付けられていませんが、X11クライアント(xterm、mozillaなど)が接続できる「偽の」Xvncを提供します。次に、リモートユーザーは、ネッ"
+"トワーク上の任意の場所からVNCクライアントvncviewerを介してXvncに接続し、仮想X11デスクトップ全体を表示して対話します。\n"
+"\n"
+"VNCプロトコルは、ほとんどの場合、X11プロトコルよりも低帯域幅で高遅延のリモート接続に適しています。また、状態が維持されていないと、表示側がクラッシュ"
+"したり、再起動されたり、再配置されたりして、アプリケーションとデスクトップが実行され続ける可能性があります。X11ではそうではありません。"
 
 #. leap/x11vnc/x11vnc-frontend/summary
 msgid "Simple GUI Frontend to x11vnc"
@@ -1385,6 +1410,10 @@ msgid ""
 "\n"
 "This package adds a simple GUI frontend to run x11vnc."
 msgstr ""
+"x11vncを使用すると、任意のVNCビューアを使用して、実際のXディスプレイ(つまり、物理モニタ、キーボード、およびマウスに対応するディスプレイ)をリモ"
+"ートで表示し、対話することができます。このようにして、WinVNCがWindows用に果たす役割をUnix/X11用に果たします。\n"
+"\n"
+"このパッケージは、x11vncを実行するための簡単なGUIフロントエンドを追加します。"
 
 #. leap/x2x/summary
 msgid "X Window System Display Remote Control"
@@ -1395,6 +1424,8 @@ msgid ""
 "x2x allows the keyboard and mouse on one (\"from\") X Window System display "
 "to be used to control another (\"to\") X Window System display."
 msgstr ""
+"x2xを使用すると、1つの(「from」)X Window Systemディスプレイ上のキーボードとマウスを使用して、別の(「to」)X Window "
+"Systemディスプレイを制御できます。"
 
 #. leap/x3270/summary
 msgid "A Family of IBM 3270 Terminal Emulators"
@@ -1435,6 +1466,29 @@ msgid ""
 "\n"
 "x026 is a fun toy which emulates an x026 puncher."
 msgstr ""
+"このパッケージには、IBM 3270メインフレームターミナルエミュレータのファミリが含まれています。\n"
+"*対話的に使用するための端末エミュレータx3270 X Window System c3270 cursesベース\n"
+"*スクリプト形式で使用する端末エミュレータs3270 x3270-scriptのマニュアルページを参照tcl3270 Tclベース\n"
+"*プリンタエミュレータpr3287\n"
+"*パンチカードパンチャーエミュレーターx026をお見逃しなく\n"
+"\n"
+"x3270は、X Window System用のIBM "
+"3270ターミナル・エミュレーターです。x3270はTelnet接続(TN3270Eの有無にかかわらず)で動作し、IBM 3279(カラー)または3278"
+"(モノクロ)のいずれかをエミュレートします。APL2文字、IND$FILEファイル転送、NVTモード、3270固有のキー用のポップアップキーパッド、代替キ"
+"ーマップ、3287プリンタセッション、およびスクロールバーをサポートし、広範なデバッグおよびスクリプト機能を備えています。\n"
+"\n"
+"c3270は、x3270のcursesベースのバージョンです。任意のダム端末(例えばxtermやコンソール)上で動作し、x3270の(ほぼ)全ての機能をサ"
+"ポートします。c3270スクリプトはx3270スクリプトと互換性があり、コマンド行オプションとリソース定義のサブセットも互換性があります。\n"
+"\n"
+"s3270は、x3270のスクリプト専用バージョンです。このプログラムは、メインフレームからデータベース情報を取得するCGIバックエンドスクリプトなど、「"
+"スクリーンスクレイピング」アプリケーションを記述することを主な目的としています。\n"
+"\n"
+"tcl3270 is a Tcl-based 3270 scripting engine.  "
+"3270セッションを操作するTclスクリプトを書くことができ、s3270よりもセットアップと使用が非常に簡単です。\n"
+"\n"
+"pr3287は上記のツールのプリンタコンパニオンであり、3270セッションからのプリンタ出力をUnixプリンタキューに送ることができます。\n"
+"\n"
+"x026は、x026パンチを模倣した楽しいおもちゃです。"
 
 #. leap/x86info/summary
 msgid "Show x86 CPU Information"
@@ -1446,6 +1500,8 @@ msgid ""
 "the CPU registers to find out more information. It can discover the contents "
 "of model-specific registers, discover CPU silicon revisions, and more."
 msgstr ""
+"/proc/cpuinfoを解析するだけの他の'cpuinfo'ツールとは異なり、x86infoはCPUレジスタを調査してより多くの情報を見つけます。モデ"
+"ル固有のレジスタの内容を検出したり、CPUのシリコン・リビジョンを検出したりすることができます。"
 
 #. leap/xalan-j2/summary
 msgid "Java XSLT processor"
@@ -1518,6 +1574,8 @@ msgid ""
 "The XSLT Compiler is a Java-based tool for compiling XSLT stylesheets into "
 "lightweight and portable Java byte codes called translets."
 msgstr ""
+"XSLTコンパイラーは、XSLTスタイルシートをtransletsと呼ばれる軽量で移植可能なJavaバイト・コードにコンパイルするためのJavaベースのツ"
+"ールです。"
 
 #. leap/xano-mincho-fonts/summary
 #. leap/xano-mincho-fonts/description
@@ -1536,6 +1594,9 @@ msgid ""
 "points inside and outside the selected set. In addition, switching between "
 "Julia and Mandelbrot fractal types and displaying planes is provided."
 msgstr ""
+"XaoSは、高速でポータブルなリアルタイムインタラクティブフラクタルズーマーです。マンデルブロ集合(その他のエスケープタイムフラクタル)が表示され、フラク"
+"タルをスムーズに拡大できます。選択したセットの内側と外側の両方の点に、さまざまな色付けモードが用意されています。さらに、ジュリアフラクタルとマンデルブロフ"
+"ラクタルのタイプを切り替えたり、プレーンを表示したりすることもできます。"
 
 #. leap/xapian-core/summary
 msgid "The Xapian Probabilistic Information Retrieval Library"
@@ -1581,6 +1642,9 @@ msgid ""
 "This package includes files that are shared between several XApp "
 "applications (i18n files and configuration schemas)."
 msgstr ""
+"このプロジェクトでは、複数のデスクトップ環境に共通し、cross-DEソリューションの実装に必要なコンポーネントを収集します。\n"
+"\n"
+"このパッケージには、複数のXAppアプリケーション間で共有されるファイル(i18nファイルと構成スキーマ)が含まれています。"
 
 #. leap/xapps/xapps-common-lang/summary
 msgid "Translations for package xapps"
@@ -1613,7 +1677,7 @@ msgstr ""
 
 #. leap/xautolock/summary
 msgid "An automatic X screen-locker/screen-saver"
-msgstr ""
+msgstr "自動Xスクリーンロッカー/スクリーンセーバー"
 
 #. leap/xautolock/description
 msgid ""
@@ -1622,6 +1686,8 @@ msgid ""
 "period of time. You can use this to automatically start up a screen locker "
 "in case you tend to forget to do so manually before having a coffee break."
 msgstr ""
+"XautolockはXウィンドウ・システムの下でコンソール・アクティビティーをモニターし、ユーザーが構成可能な期間中に何も起こらなかった場合には、選択した"
+"プログラムを起動します。これを使えば、コーヒーブレイクの前に手動で起動するのを忘れがちな場合に、スクリーンロッカーを自動的に起動することができます。"
 
 #. leap/xautomation/summary
 msgid "Control X from the command line for scripts"
@@ -1637,6 +1703,10 @@ msgid ""
 "coordinates, allowing programs to find buttons, etc, on the screen to click "
 "on."
 msgstr ""
+"スクリプトのコマンドラインからXを制御し、画面上のものを見つけるために「ビジュアルスクレイピング」を行います。コントロールインターフェースでは、マウスの移"
+"動、クリック、ボタンの上下移動、キーの上下移動などが可能で、XTest拡張機能を使用しているので、アプリが送信されたイベントを無視したときにxseが抱える"
+"厄介な問題はありません。visgrepのプログラムは、画像内の画像を見つけて座標を報告し、プログラムが画面上のボタンなどを見つけてクリックできるようにしま"
+"す。"
 
 #. leap/xawtv/summary
 msgid "Video4Linux TV application (Athena)"
@@ -1684,6 +1754,13 @@ msgid ""
 "The name comes from ratpoison's \"banish\" command that sends the cursor to "
 "the corner of the screen."
 msgstr ""
+"xbanishでは、入力を開始するとマウスカーソルが非表示になり、マウスカーソルを移動するかマウスボタンを押すと再び表示されます。これはxtermのpoi"
+"nterMode設定と似ていますが、xbanishはX11セッションでグローバルに動作します。\n"
+"\n"
+"unclutterの-keystrokeモードはこれを行うはずですが、壊れています[0]。私はそれを修正することを検討しましたが、乱雑でないソースコードは"
+"ひどいので、私は数時間でxbanishに書きました。\n"
+"\n"
+"この名前は、画面の隅にカーソルを送るratpoisonの「banish」コマンドに由来しています。"
 
 #. leap/xbase/description
 msgid ""
@@ -1694,6 +1771,11 @@ msgid ""
 "reindex (rebuild an index), undelall (undeletes all deleted records in a "
 "file), xbase-zap (remove all records from a DBF file)."
 msgstr ""
+"このパッケージには、X-Baseファイルを操作するためのさまざまなユーティリティが含まれています。checkndx(NDXファイルをチェックする)、cop"
+"ydbf(DBFファイル構造をコピーする)、deletall(すべてのレコードを削除対象としてマークする)、dumphdr(X-Baseファイルヘッダーを"
+"印刷する)、dumprecs(X-Baseファイルのレコードをダンプする)、packdbf(データベースファイルをパックする)、再インデックス(インデック"
+"スを再構築する)、undelall(ファイル内の削除されたすべてのレコードを復元する)、xbase-"
+"zap(DBFファイルからすべてのレコードを削除する)などです。"
 
 #. leap/xbase/xbase-devel/summary
 msgid "Developmnet files for XBase Compatible C++ Class Library"
@@ -1723,6 +1805,9 @@ msgid ""
 "This package contains header files, a library, some command line tools, and "
 "developer documentation."
 msgstr ""
+"XBase(dBaseやFoxProなど)と互換性のあるC++クラスライブラリの開発者向けドキュメント。\n"
+"\n"
+"このパッケージには、ヘッダーファイル、ライブラリ、いくつかのコマンドラインツール、および開発者用ドキュメントが含まれています。"
 
 #. leap/xbean/summary
 msgid "Java plugin based web server"
@@ -1736,6 +1821,9 @@ msgid ""
 "running with no IoC system, JMX without JMX code, lifecycle and class loader "
 "management, and a Spring integration is included."
 msgstr ""
+"XBeanは、プラグイン・ベースのIDEであるEclipseに似た、プラグイン・ベースのサーバーです。XBeanは、インターネット・ベースのリポジトリーか"
+"らサーバー・プラグインを検出し、ダウンロードし、インストールすることができます。複数のIoCシステムのサポート、IoCシステムを使用しない実行のサポート、"
+"JMXコードを使用しないJMX、ライフサイクルとクラスローダーの管理、およびSpring統合が含まれています。"
 
 #. leap/xbean/xbean-javadoc/summary
 msgid "API documentation for xbean"
@@ -1781,6 +1869,11 @@ msgid ""
 " guile support is disabled in this package. To enable guile support, rebuild "
 "the src.rpm and pass --with guile to rpmbuild."
 msgstr ""
+"xbindkeysは、キーやマウスボタンをXのシェルコマンドに関連付けるプログラムです。少し設定すれば、キーボード(例えば、control+alt+xはx"
+"termを起動します)やマウスボタンで多くのコマンドを起動できます。\n"
+"\n"
+" このパッケージでは、Guileサポートは無効になっています。Guileサポートを有効にするには、src.rpmを再構築し、--with "
+"guileをrpmbuildに渡します。"
 
 #. leap/xbitmaps/summary
 msgid "Base X bitmaps"
@@ -1809,6 +1902,8 @@ msgid ""
 "played with the traditional square tiling, and also offers hexagonal and "
 "triangle tiling."
 msgstr ""
+"xbombは、X11 Athenaウィジェットセットを使用したマインスイーパーゲームです。それは伝統的な正方形のタイリングで遊ぶことができ、六角形と三角形"
+"のタイリングも提供します。"
 
 #. leap/xboxdrv/summary
 msgid "Xbox/Xbox360 USB Gamepad Driver for Userspace"
@@ -1822,6 +1917,11 @@ msgid ""
 "guitar and some Xbox1 dancemats might work too. The Xbox 360 racing wheel is "
 "not supported, but shouldn't be to hard to add if somebody is interested."
 msgstr ""
+"Xboxdrvは、ユーザ空間で動作するXbox/"
+"Xbox360用のゲームパッドドライバです。これはxpadカーネルドライバに代わるもので、Xbox1ゲームパッド、Xbox360 "
+"USBゲームパッド、Xbox360ワイヤレスゲームパッドをサポートしています。Xbox360のギターと一部のXbox1 "
+"dancematsも動作するかもしれません。Xbox "
+"360のレーシングホイールはサポートされていないが、誰かが興味を持った場合に追加するのはそれほど難しくないはずです。"
 
 #. leap/xbrz/xbrz-devel/summary
 msgid "Development files for the xBRZ library"
@@ -1832,6 +1932,7 @@ msgid ""
 "xBRZ is a bitmap upscaler employing pattern recognition and substituion "
 "rules. (\"xBRZ\" = Scale By Rules, Zenju enhanced variant.)"
 msgstr ""
+"xBRZは、パターン認識と置換規則を用いたビットマップアップスケーラです。(\"xBRZ\" = Scale By Rules、Zenju拡張バリアント)"
 
 #. leap/xbsql/summary
 msgid "SQL Wrapper for the XBase Library"
@@ -1843,6 +1944,8 @@ msgid ""
 "and indexes (.dbf and related files, for example). It provides record level "
 "access to these files."
 msgstr ""
+"XBaseDBMSは、XBaseタイプのデータファイルとインデックス(."
+"dbfおよび関連するファイルなど)へのアクセスをサポートするC++ライブラリです。これらのファイルへのレコードレベルのアクセスを提供します。"
 
 #. leap/xbsql/xbsql-devel/summary
 msgid "Files for developing with xbsql"
@@ -1856,10 +1959,14 @@ msgid ""
 "\n"
 "This package contains development files"
 msgstr ""
+"XBaseDBMSは、XBaseタイプのデータファイルとインデックス(."
+"dbfおよび関連するファイルなど)へのアクセスをサポートするC++ライブラリです。これらのファイルへのレコードレベルのアクセスを提供します。\n"
+"\n"
+"このパッケージには開発ファイルが含まれています。"
 
 #. leap/xca/summary
 msgid "An RSA key and certificate management tool"
-msgstr ""
+msgstr "RSA鍵および証明書管理ツール"
 
 #. leap/xca/description
 msgid ""
@@ -1870,6 +1977,9 @@ msgid ""
 "signing and revoking of PEM/DER/PKCS12, and the selection of X509v3 "
 "extensions. A tree view of certificates is presented."
 msgstr ""
+"グラフィカルな証明機関は、RSAキーと証明書、およびPKCS#10要求の作成と署名を管理するためのインターフェイスです。キーと認証情報の保存には、"
+"OpenSSLライブラリとBerkeley DBを使用します。キーとPEM/DER/PKCS8証明書のインポートとエクスポート、PEM/DER/"
+"PKCS12の署名と取り消し、およびX509v3拡張の選択をサポートします。証明書のツリービューが表示されます。"
 
 #. leap/xcalc/summary
 msgid "Scientific calculator for X"
@@ -1896,6 +2006,10 @@ msgid ""
 "Versions 0.5 and higher are also usable with Microsoft Windows. They can be "
 "used as a free alternative to other calibration loaders."
 msgstr ""
+"コマンドラインツールは、ICCプロファイルの\"vcgt\" タグを、MS-"
+"WindowsやMacOSのようなXサーバに適用して、ディスプレイを調整された状態に設定することができます。\n"
+"\n"
+"バージョン0.5以降は、Microsoft Windowsでも使用できます。これらは、他のキャリブレーションローダーの無料の代替として使用できます。"
 
 #. leap/xcalib/xcalib-profiles/summary
 msgid "ICC profiles for testing with xcalib"
@@ -1907,7 +2021,7 @@ msgstr "xcalib でテストするための 特別な ICC プロファイル。"
 
 #. leap/xcape/summary
 msgid "Use a modifier key as another key"
-msgstr ""
+msgstr "修飾キーを別のキーとして使用します"
 
 #. leap/xcape/description
 msgid ""
@@ -1915,6 +2029,8 @@ msgid ""
 "released on its own. The default behaviour is to generate the Escape key "
 "when Left Control is pressed and released on its own."
 msgstr ""
+"xcapeでは、単独で押したり放したりしたときに、修飾キーを別のキーとして使用できます。デフォルトの動作では、Left "
+"Controlキーが押され、単独で離したときにEscapeキーが生成されます。"
 
 #. leap/xcb/summary
 msgid "X11 cut&paste utility"
@@ -1929,6 +2045,9 @@ msgid ""
 "pieces of data can be saved and recalled later. The program is designed "
 "primarily for use with textual data."
 msgstr ""
+"Xcbは、すべてのXサーバーに組み込まれているカット・バッファーへのアクセスを提供します。これにより、コマンドラインを使用するか、ポイントアンドクリック方"
+"式でマウスを使用してバッファを操作できます。バッファは、任意のデータフラグメントを格納および取得するための保持ペンとして使用できるため、任意の数の異なるデ"
+"ータを保存し、後で呼び出すことができます。このプログラムは、主にテキストデータで使用するように設計されています。"
 
 #. leap/xcb-proto/xcb-proto-devel/summary
 msgid "The X11 Protocol: X Protocol C Bindings"
@@ -1957,6 +2076,9 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libxcb-cursor0."
 msgstr ""
+"XCB utilモジュールは、libxcb、コアXプロトコルライブラリ、およびいくつかの拡張ライブラリの上に位置する多数のライブラリを提供します。\n"
+"\n"
+"このパッケージには、libxcb-cursor0にあるライブラリの開発ヘッダーが含まれています。"
 
 #. leap/xcb-util/xcb-util-devel/summary
 #. leap/xcb-util/xcb-util-devel-32bit/summary
@@ -2018,6 +2140,9 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libxcb-image0."
 msgstr ""
+"XCB utilモジュールは、libxcb、コアXプロトコルライブラリ、およびいくつかの拡張ライブラリの上に位置する多数のライブラリを提供します。\n"
+"\n"
+"このパッケージには、libxcb-image0にあるライブラリの開発ヘッダーが含まれています。"
 
 #. leap/xcb-util-keysyms/xcb-util-keysyms-devel/summary
 #. leap/xcb-util-keysyms/xcb-util-keysyms-devel-32bit/summary
@@ -2033,6 +2158,9 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libxcb-keysyms1."
 msgstr ""
+"XCB utilモジュールは、libxcb、コアXプロトコルライブラリ、およびいくつかの拡張ライブラリの上に位置する多数のライブラリを提供します。\n"
+"\n"
+"このパッケージには、libxcb-keysyms1にあるライブラリの開発ヘッダーが含まれています。"
 
 #. leap/xcb-util-renderutil/xcb-util-renderutil-devel/summary
 #. leap/xcb-util-renderutil/xcb-util-renderutil-devel-32bit/summary
@@ -2048,6 +2176,9 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libxcb-render-util0."
 msgstr ""
+"XCB utilモジュールは、libxcb、コアXプロトコルライブラリ、およびいくつかの拡張ライブラリの上に位置する多数のライブラリを提供します。\n"
+"\n"
+"このパッケージには、libxcb-render-util0にあるライブラリの開発ヘッダーが含まれています。"
 
 #. leap/xcb-util-wm/xcb-util-wm-devel/summary
 #. leap/xcb-util-wm/xcb-util-wm-devel-32bit/summary
@@ -2063,6 +2194,9 @@ msgid ""
 "This package contains the development headers for the library found in "
 "libxcb-ewmh2, libxcb-icccm4."
 msgstr ""
+"XCB utilモジュールは、libxcb、コアXプロトコルライブラリ、およびいくつかの拡張ライブラリの上に位置する多数のライブラリを提供します。\n"
+"\n"
+"このパッケージには、libxcb-ewmh2およびlibxcb-icccm4にあるライブラリの開発ヘッダーが含まれています。"
 
 #. leap/xcb-util-xrm/xcb-util-xrm-devel/summary
 msgid "Development files for the XCB X Resource Manager utility module"
@@ -2101,6 +2235,8 @@ msgid ""
 "for copying files, as an alternative to sftp/scp, thus avoiding password "
 "prompts when X11 forwarding has already been setup."
 msgstr ""
+"xclipは、X11クリップボードへのコマンドラインインタフェースです。また、sftp/scpの代わりにファイルをコピーするために使用することもできます。"
+"これにより、X11転送がすでに設定されている場合にパスワードプロンプトが表示されなくなります。"
 
 #. leap/xclipboard/summary
 msgid "X clipboard client"
@@ -2140,7 +2276,7 @@ msgstr "X 向けカラーマネージメントツール"
 msgid ""
 "The Xcm tools are colour management helpers for Xorg. A EDID parser and a "
 "colour management events observer are included."
-msgstr ""
+msgstr "Xcmツールは、Xorgの色管理ヘルパーです。EDIDパーサと色管理イベントオブザーバが含まれています。"
 
 #. leap/xcmiscproto/xcmiscproto-devel/summary
 msgid "The X11 Protocol: XC-MISC extension"
@@ -2182,6 +2318,7 @@ msgid ""
 "Xcolorsel displays colors defined in rgb.txt. You can create an RGB file by "
 "redirecting the output of showrgb to a file."
 msgstr ""
+"Xcolorselは、rgb.txtで定義された色を表示します。RGBファイルを作成するには、showrgbの出力をファイルにリダイレクトします。"
 
 #. leap/xcompmgr/summary
 msgid "Compositing manager for X servers"
@@ -2224,10 +2361,16 @@ msgid ""
 "Further information about Xcoral and SMAC is available in the detailed "
 "online help system (also available Postscript format)."
 msgstr ""
+"Xcoralは、C、C++、Java、Perl、Ada、およびFortranプログラムの操作と、LaTeXおよびHTMLドキュメントの作成をサポートしてい"
+"ます。組み込みの「SMall Ansi C "
+"Interpreter」(SMAC)の助けを借りて、xcoralはほとんど任意の方法で設定し、拡張することができます。例は/usr/lib/"
+"xcoralディレクトリにあります。C/C++/Javaブラウザが内蔵されています\n"
+"\n"
+"XcoralとSMACの詳細については、詳細なオンライン・ヘルプ・システムを参照してください(Postscript形式も利用可能)。"
 
 #. leap/xcowsay/summary
 msgid "Tool that displays a cow and message on the X11 desktop"
-msgstr ""
+msgstr "X11デスクトップに牛とメッセージを表示するツール"
 
 #. leap/xcowsay/description
 msgid ""
@@ -2248,6 +2391,21 @@ msgid ""
 "- Automatic word wrapping\n"
 "- Use alternative non-cow images if you like"
 msgstr ""
+"xcowsayは、X11デスクトップに牛とメッセージを表示します。オリジナルの cowsay からインスピレーションを受けています。\n"
+"\n"
+"xcowsayには、次のような驚くべき機能があります。\n"
+"-完全に設定可能\n"
+"-テキストの量から表示時間を計算\n"
+"-夢モード-バブル内の画像を表示\n"
+"-思考と言葉の泡を描画\n"
+"-デーモンモード牛のメッセージをDBusで送信。\n"
+"-提供された3頭の異なるサイズの牛\n"
+"-fortune(6)ラッパープログラム-(一時的に使用できません)\n"
+"-xmessage(1)のnaffnessを交換\n"
+"-任意のウィンドウマネージャで動作することが必要\n"
+"-UTF-8文字を正しくサポート\n"
+"-自動ワードラップ\n"
+"-必要に応じて、牛以外の別のイメージを使用"
 
 #. leap/xcursor-themes/summary
 msgid "Default set of cursor themes for X"
@@ -2295,6 +2453,9 @@ msgid ""
 "between files.  The \"delta files\" that Xdelta3 manages are stored in "
 "RFC3284 (VCDIFF) format."
 msgstr ""
+"Xdelta3は、バイナリファイル間の変更を計算するために設計された一連のツールです。これらの変更(差分ファイル)は、ファイル間の変更のみを保存して送信す"
+"るために使用できるという点で、「diff」プログラムの出力と似ています。Xdelta3が管理する「deltaファイル」は、RFC3284(VCDIFF)形"
+"式で保存されます。"
 
 #. leap/xdg-dbus-proxy/summary
 msgid "Filtering proxy for D-Bus connections"
@@ -2306,6 +2467,8 @@ msgid ""
 "part of the flatpak project, but it has been broken out as a standalone "
 "module to facilitate using it in other contexts."
 msgstr ""
+"xdg-dbus-proxyは、D-Bus接続用のフィルタリングプロキシです。これはもともとflatpakプロジェクトの一部でしたが、他のコンテキストでの"
+"使用を容易にするためにスタンドアロンモジュールとして分割されました。"
 
 #. leap/xdg-desktop-portal/summary
 msgid "A portal frontend service for Flatpak"
@@ -2323,6 +2486,12 @@ msgid ""
 "The portal interfaces include APIs for file access, opening URIs, printing "
 "and others."
 msgstr ""
+"Flatpakと、おそらく他のデスクトップ封じ込めフレームワークのためのポータルフロントエンドサービス。\n"
+"\n"
+"xdg-desktop-portalは、ポータルと呼ばれる一連のD-Busインタフェースを、既知の名前(org.freedesktop.portal."
+"Desktop)とオブジェクトパス(/org/freedesktop/portal/desktop)で公開することによって機能します。\n"
+"\n"
+"ポータル・インターフェースには、ファイル・アクセス、URIのオープン、印刷などのためのAPIが含まれます。"
 
 #. leap/xdg-desktop-portal/xdg-desktop-portal-devel/summary
 msgid "A portal frontend service for Flatpak -- Development files"
@@ -2339,6 +2508,12 @@ msgid ""
 "\n"
 "This package contains convenience files for developers."
 msgstr ""
+"Flatpakと、おそらく他のデスクトップ封じ込めフレームワークのためのポータルフロントエンドサービス。\n"
+"\n"
+"xdg-desktop-portalは、ポータルと呼ばれる一連のD-Busインタフェースを、既知の名前(org.freedesktop.portal."
+"Desktop)とオブジェクトパス(/org/freedesktop/portal/desktop)で公開することによって機能します。\n"
+"\n"
+"このパッケージには、開発者向けの便利なファイルが含まれています。"
 
 #. leap/xdg-desktop-portal-gnome/summary
 msgid "A backend implementation for xdg-desktop-portal"
@@ -2368,6 +2543,8 @@ msgid ""
 "various pieces of GNOME infrastructure, such as the org.gnome.Shell."
 "Screenshot or org.gnome.SessionManager D-Bus interfaces."
 msgstr ""
+"GTK+と、org.gnome.Shell.Screenshotやorg.gnome.SessionManager D"
+"-BusインタフェースなどのさまざまなGNOMEインフラストラクチャを使用するxdg-desktop-portalのバックエンド実装。"
 
 #. leap/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk-lang/summary
 msgid "Translations for package xdg-desktop-portal-gtk"
@@ -2492,7 +2669,7 @@ msgstr ""
 
 #. leap/xdiskusage/summary
 msgid "Graphically displays the amount of disk space used by each subdirectory"
-msgstr ""
+msgstr "各サブディレクトリで使用されているディスク容量をグラフィカルに表示"
 
 #. leap/xdiskusage/description
 msgid ""
@@ -2501,6 +2678,9 @@ msgid ""
 "Changes have been made so it runs \"du\" for you, and can display the free "
 "space left on the disk, and produce a PostScript version of the display."
 msgstr ""
+"xdiskusageは、ディスク容量を消費しているものを表示するための使いやすいプログラムです。これは、Phillip C. Dykstraによって書かれ"
+"たxduのデザインに基づいています。「du」を実行し、ディスク上に残っている空き領域を表示し、PostScriptバージョンの表示を生成できるように変更さ"
+"れました。"
 
 #. leap/xditview/summary
 msgid "Utility to display ditroff output"
@@ -2524,7 +2704,7 @@ msgstr ""
 
 #. leap/xdm/xdm-xsession/summary
 msgid "User/System Xsession Desktop File"
-msgstr ""
+msgstr "ユーザ/システムXsessionデスクトップファイル"
 
 #. leap/xdm/xdm-xsession/description
 msgid ""
@@ -2532,6 +2712,8 @@ msgid ""
 "of a user provided $HOME/.xsession script or pick the system wide DM default "
 "set in /etc/sysconfig/displaymanager."
 msgstr ""
+"このパッケージには、ユーザーが提供する$HOME/.xsessionスクリプトを実行するか、/etc/sysconfig/"
+"displaymanagerに設定されているシステム全体のDMデフォルトを選択するシステムデスクトップファイルが含まれています。"
 
 #. leap/xdmbgrd/summary
 msgid "SUSE Linux background"
@@ -2553,6 +2735,11 @@ msgid ""
 "\n"
 "/usr/share/doc/packages/xdmsc/"
 msgstr ""
+"SUSE LinuxをX端末として使うための便利なスクリプト。\n"
+"\n"
+"ドキュメントは次のディレクトリにあります。\n"
+"\n"
+"/usr/share/doc/packages/xdmsc/"
 
 #. leap/xdotool/summary
 msgid "Fake keyboard/mouse input"
@@ -2580,6 +2767,10 @@ msgid ""
 "\n"
 "Library and Header files for xdotool"
 msgstr ""
+"このツールを使用すると、キーボード入力やマウスの動作をプログラム的に(または手動で)シミュレートしたり、ウィンドウの移動やサイズ変更などを行うことができま"
+"す。これは、X11のXTEST拡張と他のXlib関数を使用して行われます。\n"
+"\n"
+"xdotoolのライブラリとヘッダーファイル"
 
 #. leap/xdpyinfo/summary
 msgid "Utility to display information about an X server"
@@ -2608,7 +2799,7 @@ msgstr "DRI ドライバの問い合わせ設定情報"
 msgid ""
 "Driinfo can be used to query configuration information of direct rendering "
 "drivers (DRI)."
-msgstr ""
+msgstr "Driinfoは、ダイレクトレンダリングドライバ(DRI)の設定情報を照会するために使用できます。"
 
 #. leap/xed/summary
 msgid "A text editor with highlighting"
@@ -2626,6 +2817,11 @@ msgid ""
 "for spell checking, comparing files, viewing VCS ChangeLogs, and adjusting "
 "indentation levels."
 msgstr ""
+"xedは、Cinnamonデスクトップ用に設計されたテキストエディタです。最も標準的なテキストエディタ機能を備えており、Unicodeの国際テキストをサポ"
+"ートしています。高度な機能には、構文の強調表示とソースコードの自動インデント、1つのウィンドウでの複数のドキュメントの印刷と編集などがあります。\n"
+"\n"
+"xedはプラグインシステムを通じて拡張可能であり、現在、スペルチェック、ファイルの比較、VCS "
+"ChangeLogsの表示、インデントレベルの調整をサポートしています。"
 
 #. leap/xed/xed-devel/summary
 msgid "Development files for Xed, a text editor"
@@ -2681,6 +2877,9 @@ msgid ""
 "runtime. The true XEmacs addict will install them nevertheless because it is "
 "often useful and enlightening to have a look at the Lisp sources."
 msgstr ""
+"ほとんどのEmacs-Lispソースファイルは、XEmacsの実行には必要ありません。それらのほとんどは、バイトコンパイルされた形式でも利用可能であるため"
+"、実行時には必要ありません。それにもかかわらず、XEmacsの真の中毒者はそれらをインストールするでしょう。なぜなら、Lispのソースを見ることはしばしば"
+"便利で啓発的だからです。"
 
 #. leap/xemacs/xemacs-info/summary
 msgid "Info Files for XEmacs"
@@ -2738,6 +2937,15 @@ msgid ""
 "--------     Chuck Thompson   <cthomp@cs.uiuc.edu>     Ben Wing <wing@666."
 "com>     and many other contributors"
 msgstr ""
+"ほとんどのEmacs-Lispソースファイルは、XEmacsの実行には必要ありません。それらのほとんどは、バイトコンパイルされた形式でも利用可能であるため"
+"、実行時には必要ありません。それにもかかわらず、XEmacsの真の中毒者はそれらをインストールするでしょう。なぜなら、Lispのソースを見ることはしばしば"
+"便利で啓発的だからです。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Chuck Thompson   <cthomp@cs.uiuc.edu>     Ben Wing <wing@"
+"666.com>     と多くのコントリビューター"
 
 #. leap/xemacs-packages/xemacs-packages-info/summary
 msgid "Info Files for the XEmacs Packages"
@@ -2941,7 +3149,7 @@ msgstr ""
 
 #. leap/xen/xen-tools-xendomains-wait-disk/summary
 msgid "Adds a new xendomains-wait-disks.service"
-msgstr ""
+msgstr "新しいxendomains-wait-disks.serviceを追加"
 
 #. leap/xen/xen-tools-xendomains-wait-disk/description
 msgid ""
@@ -2957,6 +3165,16 @@ msgid ""
 "\n"
 "https://github.com/luizluca/xen-tools-xendomains-wait-disk"
 msgstr ""
+"このパッケージは、xendomains-wait-disks.serviceという名前の新しいサービスを追加します。このサービスは"
+"、単にxendomains-wait-disksを呼び出します。xendomains-wait-disksスクリプトは、xendomains.servic"
+"eが起動しようとするdomUによって使用されるすべてのディスクが存在するかどうかをチェックします。スクリプトは、すべてのディスクが使用可能になったとき"
+"、またはxendomains-wait-disks.serviceが期限切れになったときに戻ります。\n"
+"\n"
+"xendomains-wait-disks.serviceにはxendomains."
+"serviceと同じ依存関係がありますが、xendomainsのWantedサービスとして追加されます。xendomains-wait-disks."
+"serviceが失敗しても、xendomains.serviceは起動されます。\n"
+"\n"
+"https://github.com/luizluca/xen-tools-xendomains-wait-disk"
 
 #. leap/xengine/summary
 msgid "Reciprocating engine for X"
@@ -3032,6 +3250,14 @@ msgid ""
 "Recommendation, and serializes XML 1.1 documents if the DOM level 3 load/"
 "save APIs are in use."
 msgstr ""
+"Xerces2は、Apache XercesファミリーのXMLパーサーです。このバージョンは、パーサー・コンポーネントと構成を構築するためのモジュラー・"
+"フレームワークであるXerces Native Interface(XNI)のリファレンス実装です。\n"
+"\n"
+"Xerces2は、Document Object Model Level 3 CoreとLoad/Save W3C Recommendations、"
+"XML Inclusion(XInclude)W3C Recommendationを実装し、OASIS XML Catalogs v1."
+"1をサポートしています。XML 1.1勧告に準拠する文書を解析することができますが、本仕様のセクション2."
+"13に記述されているように、正規化チェックを有効にするオプションをまだ提供していません。XML Namespaces 1.1 "
+"Recommendationに従って名前空間を処理し、DOMレベル3のロード/保存APIが使用されている場合はXML 1.1文書をシリアライズします。"
 
 #. leap/xerces-j2/xerces-j2-demo/summary
 msgid "Demonstrations and samples for xerces-j2"
@@ -3146,6 +3372,8 @@ msgid ""
 "is quite limited, most of the work is done by libinput, the driver itself "
 "passes on the events (and wrangles them a bit where needed)."
 msgstr ""
+"xf86-input-libinputは、libinputベースのX.Orgドライバです。実際のドライバビットは非常に制限されており、ほとんどの作業はli"
+"binputによって行われ、ドライバ自体がイベントを渡します(そして必要に応じてイベントを少し調べます)。"
 
 #. leap/xf86-input-libinput/xf86-input-libinput-devel/summary
 msgid "Libinput driver for the Xorg X server -- Development Files"
@@ -3341,7 +3569,7 @@ msgstr ""
 #. leap/xf86-video-fbturbo/summary
 #. leap/xf86-video-fbturbo-live/summary
 msgid "Xorg DDX driver for ARM devices (Allwinner, RPi and others)"
-msgstr ""
+msgstr "ARMデバイス(Allwinner、RPiなど)用のXorg DDXドライバ"
 
 #. leap/xf86-video-fbturbo/description
 #. leap/xf86-video-fbturbo-live/description
@@ -3359,6 +3587,14 @@ msgid ""
 "ShadowFB layer, ARM NEON/VFP code for dealing with uncached framebuffer "
 "reads, automatic backing store management for faster window moves)."
 msgstr ""
+"主にAllwinner SoC(A10、A13、A20)を搭載したデバイス用に最適化されたビデオドライバ。2D/"
+"3Dハードウェアアクセラレーション機能の一部を使用できます。\n"
+"\n"
+"また、このドライバはxf86-video-fbdevをベースにしているので(元の機能は一切削除されていません)、実際にはxf86-video-"
+"fbdevと同じハードウェアをすべてサポートしています。基本的に、xf86-video-fbturboはドロップインの置き換えとして使用することができ、"
+"実質的にどのLinux システムでも実行できます。x86では実質的な違いはありませんが、いくつかの追加の最適化(ShadowFBレイヤの削除、"
+"キャッシュされていないフレームバッファの読み取りを処理するためのARM NEON/"
+"VFPコード、より高速なウィンドウ移動のための自動バッキングストア管理)のおかげで、どのARMベースのシステムでもパフォーマンスが向上するはずです。"
 
 #. leap/xf86-video-glint/summary
 msgid "GLINT/Permedia video driver for the Xorg X server"
@@ -3529,6 +3765,8 @@ msgid ""
 "acceleration of VIA chipsets featuring the VIA UniChrome, UniChrome Pro and "
 "Chrome9 integrated graphics processors."
 msgstr ""
+"OpenChromeプロジェクトは、VIA UniChrome、UniChrome Pro、およびChrome9統合グラフィックスプロセッサを搭載したVI"
+"Aチップセットのハードウェアアクセラレータを最大限に活用する、完全に無料のオープンソースドライバを提供およびサポートすることに取り組んでいます。"
 
 #. leap/xf86-video-qxl/summary
 msgid "QXL virtual GPU video driver for the Xorg X server"
@@ -3666,6 +3904,10 @@ msgid ""
 "to the module list within the module section of your configuration file if "
 "you want to use it. There are no config options."
 msgstr ""
+"v4lは、video4linuxビデオカード用のXorgドライバです。\n"
+"\n"
+"ビデオオーバーレイ用のXvideo拡張ポートを提供します。使用したい場合は、設定ファイルのモジュールセクション内のモジュールリストにドライバを追加するだけ"
+"です。設定オプションはありません。"
 
 #. leap/xf86-video-vesa/summary
 msgid "Generic VESA video driver for the Xorg X server"
@@ -3777,6 +4019,8 @@ msgid ""
 "provides development headers describing the wire protocol for the "
 "XF86BIGFONT extension, used to make larger font requests possible."
 msgstr ""
+"X11開発用のXFree86 Big Fontsプロトコル・ヘッダー。このパッケージは、より大きなフォント要求を可能にするために使用されるXF86BIGF"
+"ONT拡張のためのワイヤプロトコルを記述する開発ヘッダーを提供します。"
 
 #. leap/xf86dga/summary
 msgid "Test program for the XFree86-DGA extension"
@@ -3847,6 +4091,9 @@ msgid ""
 "The Rush extension is used to allow Glide programs to run with the 3dfx "
 "Voodoo Rush cards, and to permit 2D X11."
 msgstr ""
+"X11開発用のXFree86 Rushプロトコル・ヘッダー。\n"
+"\n"
+"Rush拡張は、Glideプログラムを3 dfx Voodoo Rushカードで実行できるようにし、2D X11を許可するために使用されます。"
 
 #. leap/xf86vidmodeproto/xf86vidmodeproto-devel/summary
 msgid "The X11 Protocol: XFree86 Video Mode extension"
@@ -3874,6 +4121,8 @@ msgid ""
 "libraries. It can blank CD-RWs, burn and create iso images, as well as burn "
 "personal compositions of data to either CD or DVD."
 msgstr ""
+"Xfburnは、libburniaのライブラリーをベースにした単純なCD-R/DVD-R書き込みアプリケーションです。CD-"
+"RWを空にしたり、ISOイメージを作成したり、データの個人的な構成をCDまたはDVDに書き込むことができます。"
 
 #. leap/xfburn/xfburn-lang/summary
 msgid "Translations for package xfburn"
@@ -3919,7 +4168,7 @@ msgstr ""
 
 #. leap/xfdashboard/summary
 msgid "GNOME shell like dashboard for Xfce"
-msgstr ""
+msgstr "XfceのダッシュボードのようなGNOMEシェル"
 
 #. leap/xfdashboard/description
 msgid ""
@@ -3930,6 +4179,9 @@ msgid ""
 "Xfce's app finder which makes it convenient to search for and start "
 "applications."
 msgstr ""
+"Xfdashboardは、Xfceデスクトップで使用するためのGNOMEシェル・ダッシュボードのようなインターフェースを提供しています。任意のキーボードシ"
+"ョートカットを実行するように設定できます。実行すると、現在開いているアプリケーションの概要が表示され、ユーザはさまざまなアプリケーションを切り替えることが"
+"できます。検索機能は、Xfceのアプリファインダーのように動作し、アプリケーションを検索して起動するのに便利です。"
 
 #. leap/xfdashboard/xfdashboard-devel/summary
 msgid "Xfdashboard Development Files"
@@ -3993,7 +4245,7 @@ msgstr "xfdesktop パッケージ向けの翻訳データです。"
 #. leap/xfig/summary
 msgid ""
 "Facility for Interactive Generation of Figures under the X Window System"
-msgstr ""
+msgstr "Xウィンドウシステムの下での図形の対話的生成のための機能"
 
 #. leap/xfig/description
 msgid ""
@@ -4002,6 +4254,9 @@ msgid ""
 "can be saved, printed on PostScript printers, or converted to a variety of "
 "other formats (to allow inclusion in LaTeX documents, for example)."
 msgstr ""
+"Xfigは、ユーザがX Window Systemウィンドウでオブジェクトをインタラクティブに描画および操作できるようにするメニュー駆動型ツールです。作成"
+"された画像は、保存したり、PostScriptプリンタで印刷したり、他のさまざまな形式に変換したりすることができます(たとえば、LaTeXドキュメントに含"
+"めることができます)。"
 
 #. leap/xfindproxy/summary
 msgid "Utility to locate proxy services"
@@ -4172,16 +4427,20 @@ msgid ""
 "specific programs.  If you install xfsprogs-devel, you will also want to "
 "install xfsprogs."
 msgstr ""
+"xfsprogs-develには、XFSファイルシステム固有のプログラムを開発するために必要なライブラリとヘッダーファイルが含まれています。\n"
+"\n"
+"XFSファイルシステム固有のプログラムを開発したい場合は、xfsprogs-develをインストールする必要があります。xfsprogs-"
+"develをインストールすると、xfsprogsもインストールしたくなります。"
 
 #. leap/xfsprogs/xfsprogs-scrub/summary
 msgid "XFS scrubbing scripts and service files"
-msgstr ""
+msgstr "XFSスクラビングスクリプトとサービスファイル"
 
 #. leap/xfsprogs/xfsprogs-scrub/description
 msgid ""
 "Scripts and systemd service files for background scrubbing of metadata on "
 "xfs filesystems."
-msgstr ""
+msgstr "xfsファイルシステム上のメタデータをバックグラウンドでスクラビングするためのスクリプトとsystemdサービスファイル。"
 
 #. leap/xfwm4/summary
 msgid "Default Window Manager for the Xfce Desktop Environment"
@@ -4256,7 +4515,7 @@ msgstr ""
 
 #. leap/xgalaga++/summary
 msgid "Classic single screen vertical shoot em up"
-msgstr ""
+msgstr "従来の単一画面縦シュートem up"
 
 #. leap/xgalaga++/description
 msgid ""
@@ -4264,16 +4523,20 @@ msgid ""
 "Window extension and its window is freely resizable. It is inspired by "
 "XGalaga, but rewritten from scratch, except for the graphics."
 msgstr ""
+"XGalaga++は古典的な垂直スクロールのシューティングゲームです。Xウィンドウ拡張は必要なく、ウィンドウは自由にサイズ変更できます。それはXGalag"
+"aからインスピレーションを受けているが、グラフィックを除いてゼロから書き直されています。"
 
 #. leap/xgalaga-sdl/summary
 msgid "Classic single screen vertical shoot em up SDL"
-msgstr ""
+msgstr "従来の単一画面縦シュートSDL"
 
 #. leap/xgalaga-sdl/description
 msgid ""
 "XGalaga-SDL is a port of the popular X11 game XGalaga, a clone of Galaga, "
 "using the SDL library. XGalaga was originally written by Joe Rumsey."
 msgstr ""
+"XGalaga-SDLは、SDLライブラリを使用したGalagaのクローンである人気のX11ゲームXGalagaの移植版です。XGalagaはもともと "
+"Joe Rumsey によって書かれました。"
 
 #. leap/xgamma/summary
 msgid "Utility to alter a monitor's gamma correction through the X server"
@@ -4318,6 +4581,15 @@ msgid ""
 "Documentation may be obtained by typing man xgrab and man xgrabsc. The "
 "author's original comments can be found in /usr/share/doc/packages/xgrabsc."
 msgstr ""
+"スクリーンショットが必要ですか?\n"
+"\n"
+"xgrabとxgrabscは、スクリーンショットをファイル(ps、xpmなど)に保存したり、印刷したりするための強力なツールです。xgrabscはシェルか"
+"ら呼び出され、画面に取り込んだ矩形を標準の出力に送ります。xgrabは、xgrabscのメニュー主導型フロントエンドです。\n"
+"\n"
+"このプログラムは、PPM、XPM、およびカラー以外のPostScript形式で、8ビット/ピクセルを超える深さの表示に対してのみ機能します。\n"
+"\n"
+"マニュアルを入手するには、「man xgrab」および「man xgrabsc」と入力します。著者のオリジナルのコメントは/usr/share/doc/"
+"packages/xgrabscにあります。"
 
 #. leap/xhost/summary
 msgid "Utility to control X server access"
@@ -4363,10 +4635,20 @@ msgid ""
 "environments other than GNOME and KDE that do not support native colour "
 "management yet, such as MATE, Xfce, LXDE, to name a few."
 msgstr ""
+"xiccdはcolordとXサーバの間のブリッジです。タスクは次のとおりです。\n"
+"\n"
+" * ディスプレイを列挙し、colordに登録する  * EDIDデータに基づいてデフォルトのICCプロファイルを作成する  * "
+"colordによって提供されるICCプロファイルを適用する  * ユーザーのプライベートICC保存ディレクトリを維持する。\n"
+"\n"
+"基本的にはgnome-settings-daemonカラープラグインやcolord-"
+"kdeと同じで、特定のデスクトップやGTK+ライブラリには依存しません。\n"
+"\n"
+"xiccdの主な目標は、MATE、Xfce、LXDEなど、ネイティブの色管理をまだサポートしていないGNOMEやKDE以外のデスクトップ環境にカラープロフ"
+"ァイルサポートを提供することです。"
 
 #. leap/xindy/summary
 msgid "Index generator for structured documents like LaTeX or SGML"
-msgstr ""
+msgstr "LaTeXやSGMLのような構造化された文書のためのインデックスジェネレータ"
 
 #. leap/xindy/description
 msgid ""
@@ -4381,6 +4663,12 @@ msgid ""
 "that make it an ideal framework for describing and generating complex "
 "indices, addressing especially international indexing."
 msgstr ""
+"xindyは、任意の文書作成システム用の本のようなインデックスを生成するために使用できるインデックスプロセッサです。これには、TeXやLaTeXのようなシ"
+"ステム、roffファミリー、ある種のテキストを処理してインデックス情報を生成するSGML/XMLベースのシステム(例えばHTML)が含まれます。カーネルシ"
+"ステムは、特定のシステムに固定されているわけではありませんが、そのようなシステムと連携するように構成することができます。\n"
+"\n"
+"他のインデックスプロセッサと比較して、xindyには、複雑なインデックスを記述し生成するための理想的なフレームワークとなるいくつかの強力な機能があり、特に"
+"国際的なインデックス作成に対応しています。"
 
 #. leap/xindy/xindy-doc/summary
 msgid "Documentation for Xindy"
@@ -4401,6 +4689,9 @@ msgid ""
 "\n"
 "This package contains the rule files (the knowledge base) of xindy."
 msgstr ""
+"xindyは、任意の文書作成システム用の本のようなインデックスを生成するために使用できるインデックスプロセッサです。\n"
+"\n"
+"このパッケージには、xindyのルール・ファイル(ナレッジ・ベース)が含まれています。"
 
 #. leap/xine-ui/summary
 msgid "Video player with plugins"
@@ -4504,6 +4795,10 @@ msgid ""
 "package if you want to browse the Bible translations and reference works "
 "distributed by Crosswire Bible Society through the SWORD Project."
 msgstr ""
+"Linuxコミュニティ向けのBible Study Software。聖書のテキストと注釈を検索します。Xiphosは、SWORDプロジェクトのモジュール"
+"とライブラリを使用しています。インターリニアウィンドウに複数の移動を表示します。単語、語句、または正規表現を使用して、翻訳の一節を検索します。"
+"Crosswire聖書協会がSWORD "
+"Projectを通じて配布している聖書の翻訳や参考文献を閲覧したい場合は、このパッケージをインストールしてください。"
 
 #. leap/xiphos/xiphos-lang/summary
 msgid "Translations for package xiphos"
@@ -4520,7 +4815,7 @@ msgstr "X11 向け国際化対応端末エミュレータ"
 
 #. leap/xjadeo/summary
 msgid "Video player that gets sync from Jack"
-msgstr ""
+msgstr "ジャックから同期を取るビデオプレーヤー"
 
 #. leap/xjadeo/description
 msgid ""
@@ -4530,6 +4825,9 @@ msgid ""
 "can be visually synchronized with a certain frame in the movie, which may be "
 "useful for creating a soundtrack for a video clip."
 msgstr ""
+"Xjadeoは、JACKと同期するビデオプレーヤーです。MuseやRosegardenなどのシーケンサがタイムベースマスターとして動作する場合、xjade"
+"oはシーケンサトランスポートと同期してビデオフレームを表示します。これは、オーディオイベントをムービー内の特定のフレームと視覚的に同期させることができるこ"
+"とを意味します。これは、ビデオクリップのサウンドトラックを作成する場合に便利です。"
 
 #. leap/xkbcomp/summary
 msgid "Utility to compile XKB keyboard description"
@@ -4640,6 +4938,15 @@ msgid ""
 "Authors:\n"
 "--------     Jamie Zawinski <jwz@jzw.org>"
 msgstr ""
+"「xkeycaps」は「xmodmap」のグラフィカルなフロントエンドです。キーボードのようなウィンドウが開きます。キーの上にマウスを移動すると、そのキー"
+"が生成するkeysymとmodifierビットが表示されます。キーをクリックすると、選択したウィンドウでKeyPress/KeyReleaseイベントがシ"
+"ミュレートされます。キーによって生成されたキーシンボルとモディファイヤは、マウスベースのインタフェースで変更できます。このプログラムは、xmodmapの入"
+"力ファイルを書き込んで、今後のセッションで変更内容を再作成することもできます。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Jamie Zawinski <jwz@jzw.org>"
 
 #. leap/xkill/summary
 msgid "Utility to kill a client by its X resource"
@@ -4685,6 +4992,25 @@ msgid ""
 "Xl2tpd is based on the 0.69 L2TP by Jeff McAdams <jeffm@iglou.com> It was de-"
 "facto maintained by Jacco de Leeuw <jacco2@dds.nl> in 2002 and 2003."
 msgstr ""
+"xl2tpdは、レイヤ2トンネリングプロトコル(RFC 2661)の実装です。L2TPを使用すると、PPP over "
+"UDPをトンネリングできます。一部のISPは、L2TPを使用して、ダイアルインサーバー(モデムバンク、ADSL DSLAM)からバックエンドPPPサーバー"
+"にユーザーセッションをトンネリングします。もう1つの重要なアプリケーションは、IPsecプロトコルがL2TP接続を保護するために使用される仮想プライベート"
+"ネットワークです(L2TP/IPsec、RFC 3193)。L2TP/IPsecプロトコルは、主にWindowsクライアントとMac OS Xクライアント"
+"で使用されます。Linuxでは、xl2tpdをOpenswanなどのIPsec実装と組み合わせて使用できます。このようなセットアップのための構成ファイルの"
+"例は、このRPMに含まれています。\n"
+"\n"
+"xl2tpdは、pppdと通信するための擬似ttyを開くことで動作します。完全にユーザ空間で動作しますが、カーネルモードL2TPをサポートしています。\n"
+"\n"
+"xl2tpdは、IPsec "
+"SAリファレンストラッキングをサポートしており、同じNATルータの背後にある複数のクライアントだけでなく、異なるクライアント(たとえば、"
+"linksys内部IP 192.168.1.101から接続しているすべてのクライアント)によるinternak "
+"NATされたIPのオーバーラップを可能にします。\n"
+"\n"
+"xl2tpdは、2.6.23以降ではpppol2tpカーネルモード操作をサポートし、2.4.xカーネルではcontribのパッチを介してサポートします。"
+"\n"
+"\n"
+"Xl2tpdは、Jeff McAdams <jeffm@iglou.com>による0.69年のL2TPに基づいています。"
+"2002年と2003年にJacco de Leeuw<jacco2@dds.nl>によって事実上維持されていました。"
 
 #. leap/xless/summary
 msgid "Text browser"
@@ -4739,7 +5065,7 @@ msgstr ""
 
 #. leap/xlogin/summary
 msgid "xlogin, xtelnet"
-msgstr ""
+msgstr "xlogin と xtelnet"
 
 #. leap/xlogin/description
 msgid ""
@@ -4759,6 +5085,18 @@ msgid ""
 "Authors:\n"
 "--------     Werner Fink <werner@suse.de>"
 msgstr ""
+"このパッケージには2つのスクリプトが含まれています。これらのスクリプトはリモートホストの名前で呼び出され、リモートセッションまたはログインシェルを使用して"
+"ローカルXディスプレイ上にxtermウィンドウを開きます。\n"
+"\n"
+"スクリプトxloginは、リモート・ホスト上のxtermをrshコール(リモートシェル)することによって起動します。必要に応じて、ディスプレイのマジックキ"
+"ー(クッキー)をリモートホストに送信することでアクセスが許可されます。\n"
+"\n"
+"スクリプトxtelnetは、リモート・ホスト上のtelnetセッションでローカルxtermを開始します。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Werner Fink <werner@suse.de>"
 
 #. leap/xlogo/summary
 msgid "X Window System logo"
@@ -4770,7 +5108,7 @@ msgstr "xlogo プログラムは、単純に X Window System のロゴを表示�
 
 #. leap/xls2csv/summary
 msgid "A script that recodes a spreadsheet's charset and saves as CSV"
-msgstr ""
+msgstr "スプレッドシートの文字セットを再コード化し、CSVとして保存するスクリプト"
 
 #. leap/xls2csv/description
 msgid ""
@@ -4779,6 +5117,8 @@ msgid ""
 "headaches from dealing with Excel spreadsheets from clients that were being "
 "received in various character sets."
 msgstr ""
+"このスクリプトは、スプレッドシートを別の文字セットに再コード化し、再コード化されたデータをcsvファイルとして出力します。このスクリプトは、さまざまな文字"
+"セットで受信されるクライアントからのExcelスプレッドシートを処理することによる多くの頭痛の後に作成されました。"
 
 #. leap/xlsatoms/summary
 msgid "Utility to list interned atoms defined on an X11 server"
@@ -4835,6 +5175,10 @@ msgid ""
 "since there are like 300 shareware versions available for Windows. This is "
 "for X11 and it's free."
 msgstr ""
+"リアル麻雀は、何千年も前に中国で生まれたソーシャルゲームです。4人のプレーヤーは、4つの風にちなんで名付けられ、壁から順番にタイルを取ります。最高のタイル"
+"は象牙と木でできていて、あなたがそれらを一緒にたたくと、それらは心地よくカチッと音をたてます。Computer Solitaire Mah Jongg(x"
+"mahjonggはもっとばかげた例の1つです)はそんなものではないのですが、楽しいし、そうに違いないです。なぜなら、Windows用のシェアウェアのバージ"
+"ョンは300もあるからです。これはX11用で、無料です。"
 
 #. leap/xman/summary
 msgid "Manual page display program for the X Window System"
@@ -4891,6 +5235,10 @@ msgid ""
 "\n"
 "For examples, see /usr/lib/xmgrace/examples."
 msgstr ""
+"Graceは、X Window SystemおよびM*tif用のWYSIWYG 2Dプロットツールです。GraceはACE/"
+"grの子孫で、Xmgrとも呼ばれます。それは多くの異なるグラフタイプを認識し、多くの出力フォーマットをサポートします。\n"
+"\n"
+"例については、/usr/lib/xmgrace/examplesを参照してください。"
 
 #. leap/xmgrace/xmgrace-devel/summary
 msgid "Grace library"
@@ -4905,6 +5253,11 @@ msgid ""
 "\n"
 "For further information consult the main package."
 msgstr ""
+"Graceは、X Window SystemおよびM*tif用のWYSIWYG 2Dプロットツールです。GraceはACE/grの子孫で、Xmgrとも呼ば"
+"れます。それは多くの異なるグラフタイプを認識し、多くの出力フォーマットをサポートします。このdevelパッケージには、他のアプリケーションからgraceを"
+"使用して作業するためのライブラリが含まれています。\n"
+"\n"
+"詳細については、メインパッケージを参照してください。"
 
 #. leap/xmh/summary
 msgid "Graphical user interface to send and read mail with MH"
@@ -4918,6 +5271,8 @@ msgid ""
 "Handling System. To actually do things with your mail, it makes calls to the "
 "MH package."
 msgstr ""
+"xmhプログラムは、MHメッセージ通信処理システムへのグラフィカル・ユーザー・インターフェースを提供します。メールを実際に処理するには、MHパッケージを呼"
+"び出します。"
 
 #. leap/xml-commons/summary
 msgid "Common code for XML projects"
@@ -4964,6 +5319,8 @@ msgid ""
 "This is xml-apis from the java-bootrapping-tools package. DO NOT INSTALL ... "
 "THIS IS JUST FOR PACKAGING & BOOTSTRAPPING JAVA PURPOSES!!"
 msgstr ""
+"これは、java-bootrapping-toolsパッケージのxml-apisです。インストールしてはなりません... "
+"これはJavaのパッケージングとブートストラップのためだけのものです!"
 
 #. leap/xml-commons-apis/xml-commons-apis-javadoc/summary
 msgid "Javadoc for xml-commons-apis"
@@ -5089,6 +5446,8 @@ msgid ""
 "This is xml-resolver from the java-bootrapping-tools package. DO NOT "
 "INSTALL ... THIS IS JUST FOR PACKAGING & BOOTSTRAPPING JAVA PURPOSES!!"
 msgstr ""
+"これは、java-bootrapping-toolsパッケージのxml-resolverです。インストールしてはなりません... "
+"これはJavaのパッケージングとブートストラップのためだけのものです!"
 
 #. leap/xml-commons-resolver/xml-commons-resolver-javadoc/summary
 msgid "Javadoc for xml-commons-resolver"
@@ -5131,6 +5490,8 @@ msgid ""
 "This is xml-which from the java-bootrapping-tools package. DO NOT "
 "INSTALL ... THIS IS JUST FOR PACKAGING & BOOTSTRAPPING JAVA PURPOSES!!"
 msgstr ""
+"これは、java-bootrapping-toolsパッケージに含まれるxmlです。インストールしてはなりません... "
+"これはJavaのパッケージングとブートストラップのためだけのものです!"
 
 #. leap/xml-commons/xml-commons-which10/summary
 msgid "XmlWhich 1.0 utility from xml-commons"
@@ -5138,7 +5499,7 @@ msgstr "xml-commons 提供の XmlResolver 1.0 ユーティリティ"
 
 #. leap/xml-commons/xml-commons-which10/description
 msgid " xml-commons."
-msgstr ""
+msgstr " xml-commons."
 
 #. leap/xml-commons/xml-commons-which11/summary
 msgid "XmlWhich 1.1 from xml-commons"
@@ -5151,7 +5512,7 @@ msgstr " xml-commons 提供の XmlWhich 1.1。"
 #. leap/xml-im-exporter/summary
 #. leap/xml-im-exporter/xml-im-exporter-javadoc/summary
 msgid "XML Im-/Exporter"
-msgstr ""
+msgstr "XML Im-/Exporter"
 
 #. leap/xml-im-exporter/description
 #. leap/xml-im-exporter/xml-im-exporter-javadoc/description
@@ -5160,6 +5521,8 @@ msgid ""
 "forward process of importing and exporting XML from and to your Java "
 "classes. All of this is designed having performance and simplicity in mind."
 msgstr ""
+"XML Im-/Exporterは低レベルのライブラリであり、Javaクラスとの間でXMLをインポートおよびエクスポートする単純なプロセスを支援します。こ"
+"れらはすべて、パフォーマンスとシンプルさを念頭に置いて設計されています。"
 
 #. leap/xml-maven-plugin/summary
 msgid "Maven XML Plugin"
@@ -5168,7 +5531,7 @@ msgstr "Maven XML プラグイン"
 #. leap/xml-maven-plugin/description
 msgid ""
 "A plugin for various XML related tasks like validation and transformation."
-msgstr ""
+msgstr "検証や変換など、さまざまなXML関連タスクのためのプラグイン。"
 
 #. leap/xml-maven-plugin/xml-maven-plugin-javadoc/summary
 msgid "Javadocs for xml-maven-plugin"
@@ -5233,6 +5596,10 @@ msgid ""
 "\n"
 "This package contains additional scripts."
 msgstr ""
+"XMLBeansはXMLとJavaのバインディング・ツールであり、Javaの一般的な方法でXMLにアクセスすることができます。XMLとXML "
+"Schemaの機能は、対応するJava言語と型定義にマップされます。\n"
+"\n"
+"このパッケージには、追加のスクリプトが含まれています。"
 
 #. leap/xmlbird/xmlbird-devel/summary
 msgid "Development files for xmlbird"
@@ -5245,6 +5612,9 @@ msgid ""
 "This package contains the pkgconfig, header files and libraries needed to "
 "develop application that use xmlbird."
 msgstr ""
+"ValaイテレーターをサポートするXMLパーサー。\n"
+"\n"
+"このパッケージには、xmlbirdを使用するアプリケーションの開発に必要なpkgconfig、ヘッダーファイル、およびライブラリが含まれています。"
 
 #. leap/xmlcharent/summary
 msgid "XML Character Entities"
@@ -5272,6 +5642,8 @@ msgid ""
 "Along with the interfaces, a concrete DriverManager implementation is also "
 "provided."
 msgstr ""
+"APIインターフェイスは、ドライバ開発者が新しいドライバを作成するときに実装する必要があるものであり、アプリケーションの開発対象となるインターフェイスです"
+"。インターフェースとともに、具体的なDriverManagerの実装も提供されている。"
 
 #. leap/xmldb-api/xmldb-api-javadoc/summary
 msgid "Documentation for XML:DB API for Java"
@@ -5300,6 +5672,15 @@ msgid ""
 "developed. The test cases are still in development but there are enough "
 "tests currently to be useful."
 msgstr ""
+"リファレンス実装は、XML:DB APIの非常に単純なファイル・システム・ベースの実装を提供します。これは基本的に、ディレクトリーを使用してコレクションを"
+"表現し、XMLをファイルに保管するだけのネイティブXMLデータベースです。\n"
+"\n"
+"ドライバ開発キットには、XML:DB APIドライバの開発を簡略化および高速化するために拡張できる基本クラスのセットが用意されています。これらのクラスは、"
+"リファレンス実装の基礎を提供するために使用され、したがって、ドライバを実装する方法の簡単な例を提供します。SDKクラスを使用すると、新しいドライバを作成す"
+"るために記述する必要があるコードの量が大幅に削減されます。\n"
+"\n"
+"SDK基本クラスとともに、SDKには、開発中のドライバの検証に役立つjUnitテストケースのセットも含まれています。テストケースはまだ開発中ですが、現在役"
+"に立つテストは十分にあります。"
 
 #. leap/xmlformat/summary
 msgid "XML document formatter"
@@ -5345,7 +5726,7 @@ msgstr "Batik CSS エンジン"
 #. leap/xmlgraphics-batik/xmlgraphics-batik-css/description
 msgid ""
 "CSS component of the Apache Batik SVG manipulation and rendering library."
-msgstr ""
+msgstr "Apache Batik SVG操作およびレンダリングライブラリのCSSコンポーネント。"
 
 #. leap/xmlgraphics-batik/xmlgraphics-batik-demo/summary
 msgid "Demo for xmlgraphics-batik"
@@ -5375,6 +5756,9 @@ msgid ""
 "JPEG, PNG, and TIFF, however the design allows new formats to be added "
 "easily."
 msgstr ""
+"SVGラスタライザは、SVGファイルをラスター形式に変換できるユーティリティです。このツールは、個々のファイルまたはファイルのセットを変換できるため、SV"
+"Gファイルのディレクトリ全体を簡単に変換できます。サポートされている形式はJPEG、PNG、およびTIFFですが、新しい形式を簡単に追加できるように設計さ"
+"れています。"
 
 #. leap/xmlgraphics-batik/xmlgraphics-batik-slideshow/summary
 msgid "Batik SVG slideshow"
@@ -5393,6 +5777,8 @@ msgid ""
 "The Squiggle SVG Browser lets you view SVG file, zoom, pan and rotate in the "
 "content and select text items in the image and much more."
 msgstr ""
+"Squiggle SVG "
+"Browserを使用すると、SVGファイルの表示、コンテンツ内でのズーム、パン、回転、画像内のテキストアイテムの選択などを行うことができます。"
 
 #. leap/xmlgraphics-batik/xmlgraphics-batik-svgpp/summary
 msgid "Batik SVG pretty printer"
@@ -5404,6 +5790,8 @@ msgid ""
 "their tabulations and other cosmetic parameters in order. It can also be "
 "used to modify the DOCTYPE declaration on SVG files."
 msgstr ""
+"SVG Pretty Printerを使用すると、開発者はSVGファイルを「調整」して、表やその他の装飾パラメータを順番に取得できます。また、SVGファイ"
+"ルのDOCTYPE宣言を変更するためにも使用できます。"
 
 #. leap/xmlgraphics-batik/xmlgraphics-batik-ttf2svg/summary
 msgid "Batik SVG font converter"
@@ -5416,6 +5804,8 @@ msgid ""
 "allows SVG document to be fully self-contained be rendered exactly the same "
 "on all systems."
 msgstr ""
+"SVGフォントコンバータを使用すると、開発者は文字範囲をTrue Typeフォント形式からSVGフォント形式に変換して、SVGドキュメントに埋め込むことが"
+"できます。これにより、SVGドキュメントを完全に自己完結させ、すべてのシステムでまったく同じようにレンダリングすることができます。"
 
 #. leap/xmlgraphics-commons/summary
 msgid "XML Graphics Commons"
@@ -5473,6 +5863,10 @@ msgid ""
 "This subpackage contains libraries and header files for developing "
 "applications that want to make use of xmlrpc-c."
 msgstr ""
+"XML-RPCは、XMLとHTTPをベースにした軽量のRPCプロトコルです。このパッケージは、CおよびC++で記述されたXML-"
+"RPCクライアントおよびサーバーで使用されます。\n"
+"\n"
+"このサブパッケージには、xmlrpc-cを使用するアプリケーションを開発するためのライブラリーとヘッダー・ファイルが含まれています。"
 
 #. leap/xmlsec1/xmlsec1-devel/summary
 msgid "Libraries, includes for XML Signatures/Encryption"
@@ -5483,6 +5877,8 @@ msgid ""
 "Libraries, includes, etc. you can use to develop applications with XML "
 "Digital Signatures and XML Encryption support."
 msgstr ""
+"XML Digital SignaturesおよびXML "
+"Encryptionをサポートするアプリケーションの開発に使用できるライブラリ、インクルードなど。"
 
 #. leap/xmlsec1/xmlsec1-gcrypt-devel/description
 msgid ""
@@ -5553,7 +5949,7 @@ msgstr "xml をマニュアルページか html に変換するためのスク�
 msgid ""
 "xmltoman and xmlmantohtml are two very simple scripts for converting xml to "
 "groff or html."
-msgstr ""
+msgstr "xmltomanとxmlmantohtmlは、xmlをgroffまたはhtmlに変換するための非常に単純なスクリプトです。"
 
 #. leap/xmltooling/xmltooling-schemas/summary
 msgid "XMLTooling schemas and catalog"
@@ -5568,10 +5964,14 @@ msgid ""
 "\n"
 "This package includes XML schemas and related files."
 msgstr ""
+"XMLTooling・ライブラリには、Xerces-C DOMに基づく汎用XML構文解析クラスと処理クラスが含まれています。これにより、要素固有および型固"
+"有のAPIを宣言するためのより強力な機能と、DOMに値を追加するための実装クラスが追加され、署名と暗号化のサポートも追加されます。\n"
+"\n"
+"このパッケージには、XMLスキーマと関連ファイルが含まれています。"
 
 #. leap/xmlunit/summary
 msgid "Provides classes to do asserts on XML"
-msgstr ""
+msgstr "XMLでアサートを実行するクラスを提供します"
 
 #. leap/xmlunit/description
 msgid ""
@@ -5580,6 +5980,8 @@ msgid ""
 "documents against a DTD, and (from v0.5) compares the results of XPath "
 "expressions."
 msgstr ""
+"XMLUnitはJUnitを拡張してXMLのユニット・テストを単純化します。コントロールXML文書をテスト文書または変換の結果と比較し、DTDに対して文書"
+"を検証し、(v0.5から)XPath式の結果を比較します。"
 
 #. leap/xmlunit/xmlunit-javadoc/summary
 msgid "Javadoc for xmlunit"
@@ -5591,7 +5993,7 @@ msgstr "xmlunit 向け javadoc。ユーザガイドも含みます。"
 
 #. leap/xmobar/summary
 msgid "A Minimalistic Text Based Status Bar"
-msgstr ""
+msgstr "最小限のテキストベースのステータスバー"
 
 #. leap/xmobar/description
 msgid ""
@@ -5600,6 +6002,9 @@ msgid ""
 "Inspired by the Ion3 status bar, it supports similar features, like dynamic "
 "color management, output templates, and extensibility through plugins."
 msgstr ""
+"Xmobarは、最小限のテキストベースのステータスバーです。\n"
+"\n"
+"Ion3ステータスバーからヒントを得て、動的カラー管理、出力テンプレート、プラグインによる拡張性など、同様の機能をサポートしています。"
 
 #. leap/xmodmap/summary
 msgid "Utility to modify keymaps and pointer button mappings in X"
@@ -5632,10 +6037,14 @@ msgid ""
 "used on each workspace. Xinerama is fully supported, allowing windows to be "
 "tiled on several screens."
 msgstr ""
+"XmonadはX用のタイリングウィンドウマネージャです。ウィンドウは自動的に配置され、ギャップやオーバーラップなしに画面をタイリングし、画面の使用を最大化"
+"します。ウィンドウマネージャのすべての機能はキーボードからアクセスできます。マウスは完全にオプションです。xmonadはHaskellで書かれており、拡張"
+"可能です。カスタムレイアウトアルゴリズムやその他の拡張は、ユーザが設定ファイルに記述することができます。レイアウトは動的に適用され、ワークスペースごとに異"
+"なるレイアウトを使用できます。Xineramaは完全にサポートされており、ウィンドウを複数の画面に並べて表示することができます。"
 
 #. leap/xmoontool/summary
 msgid "The Moon in focus"
-msgstr ""
+msgstr "ピントの合った月"
 
 #. leap/xmoontool/description
 msgid ""
@@ -5644,6 +6053,9 @@ msgid ""
 "\n"
 "Hint: The option -c makes it also work with color ;-)"
 msgstr ""
+"既存の最も重要なプログラムの1つ:-)このプログラムを使用すると、月に関するすべての重要な情報を常に表示できます。さらに.\n"
+"\n"
+"ヒント:オプション-cを指定すると、カラーでも動作します。"
 
 #. leap/xmore/summary
 msgid "Plain text display utility for X"
@@ -5655,7 +6067,7 @@ msgstr "xmore はテキストファイルのブラウザです。"
 
 #. leap/xmorph/summary
 msgid "A morphing program"
-msgstr ""
+msgstr "モーフィングプログラム"
 
 #. leap/xmorph/description
 msgid ""
@@ -5666,6 +6078,9 @@ msgid ""
 "connected checkpoints. The source grid is then transformed into the "
 "destination grid during the morphing process."
 msgstr ""
+"このモーフィングプログラムは、Targa形式で2つの画像を読み込み、一方の画像から他方の画像への遷移を計算します(任意に多くのステップ)。単純なフェード効"
+"果を避けるために、プログラムは2つのイメージに含まれる形状に関する情報を必要とします。これは、接続されたチェックポイントで構成されるグリッドを使用して行わ"
+"れます。次に、モーフィングプロセス中にソースグリッドがデスティネーショングリッドに変換されます。"
 
 #. leap/xmorph/xmorph-devel/summary
 msgid "Development Files For Xmorph"
@@ -5683,6 +6098,8 @@ msgid ""
 "challenges.  First you'll try just to complete the levels, while later "
 "you'll compete with yourself and others, racing against the clock."
 msgstr ""
+"X-Motoは、ゲームプレイの中で物理学が重要な役目を果たす、挑戦的な2Dモトクロスプラットフォーム・ゲームです。より難しい挑戦を終わらせるチャンスを得た"
+"いなら、自転車を限界までコントロールする必要があります。最初はレベルを完成させようとするだけですが、後で自分や他の人と競争して、時間と競争します。"
 
 #. leap/xmoto/xmoto-data/summary
 msgid "Xmoto architecture independent data"
@@ -5690,11 +6107,11 @@ msgstr "Xmoto アーキテクチャ非依存データ"
 
 #. leap/xmoto/xmoto-data/description
 msgid "Xmoto translations and some other architecture independent data."
-msgstr ""
+msgstr "Xmotoの翻訳やその他のアーキテクチャに依存しないデータ。"
 
 #. leap/xmp/summary
 msgid "Extended Module Player for MOD/S3M/XM/IT/etc."
-msgstr ""
+msgstr "MOD/S3M/XM/IT/etc用拡張モジュールプレーヤー。"
 
 #. leap/xmp/description
 msgid ""
@@ -5703,6 +6120,10 @@ msgid ""
 "Atari, Acorn, Apple IIgs, C64, and PC, including Protracker (MOD), Scream "
 "Tracker 3 (S3M), Fast Tracker II (XM), and Impulse Tracker (IT) files."
 msgstr ""
+"Extended Module Playerは、Amiga、Atari、Acorn、Apple "
+"IIgs、C64、およびPCの90以上の主流および無名のモジュールフォーマット(Protracker(MOD)、Scream Tracker "
+"3(S3M)、Fast Tracker II(XM)、およびImpulse "
+"Tracker(IT)ファイルを含む)を再生するUnixライクなシステム用のコマンドラインmodプレーヤーです。"
 
 #. leap/xmvn/summary
 msgid "Local Extensions for Apache Maven"
@@ -5715,6 +6136,8 @@ msgid ""
 "mode, as well as Maven plugins to help with creating RPM packages containing "
 "Maven artifacts."
 msgstr ""
+"このパッケージは、システムアーティファクトリポジトリを管理し、オフラインモードでMavenアーティファクトを解決するために使用できるApache "
+"Mavenの拡張機能と、Mavenアーティファクトを含むRPMパッケージの作成を支援するMavenプラグインを提供します。"
 
 #. leap/xmvn-tools/xmvn-api/summary
 msgid "XMvn API"
@@ -5724,7 +6147,7 @@ msgstr "XMvnの API"
 msgid ""
 "This package provides XMvn API module which contains public interface for "
 "functionality implemented by XMvn Core."
-msgstr ""
+msgstr "このパッケージは、XMvn Coreによって実装される機能のパブリックインターフェイスを含むXMvn APIモジュールを提供します。"
 
 #. leap/xmvn-tools/xmvn-bisect/summary
 msgid "XMvn Bisect"
@@ -5734,7 +6157,7 @@ msgstr "XMvn　Bisect"
 msgid ""
 "This package provides XMvn Bisect, which is a debugging tool that can "
 "diagnose build failures by using bisection method."
-msgstr ""
+msgstr "このパッケージは、バイセクションメソッドを使用してビルドの失敗を診断できるデバッグツールであるXMvn Bisectを提供します。"
 
 #. leap/xmvn-connector-aether/summary
 msgid "XMvn Connector for Maven Resolver"
@@ -5746,6 +6169,8 @@ msgid ""
 "integration of Maven Resolver with XMvn.  It provides an adapter which "
 "allows XMvn resolver to be used as Maven workspace reader."
 msgstr ""
+"このパッケージは、Maven ResolverとXMvnの統合を提供するMaven "
+"Resolver用のXMvnコネクタを提供します。これは、XMvnリゾルバをMavenワークスペースリーダとして使用できるようにするアダプタを提供します。"
 
 #. leap/xmvn-connector-aether/xmvn-connector-aether-javadoc/summary
 msgid "API documentation for xmvn-connector-aether"
@@ -5767,6 +6192,8 @@ msgid ""
 "of Gradle with XMvn.  It provides an adapter which allows XMvn resolver to "
 "be used as Gradle resolver."
 msgstr ""
+"このパッケージは、GradleとXMvnの統合を提供するXMvn Connector for "
+"Gradleを提供します。これは、XMvnリゾルバをGradleリゾルバとして使用できるようにするアダプタを提供します。"
 
 #. leap/xmvn-connector-gradle/xmvn-connector-gradle-javadoc/summary
 msgid "API documentation for xmvn-connector-gradle"
@@ -5790,6 +6217,8 @@ msgid ""
 "default Maven lifecycle when building packages, others can be called "
 "directly from Maven command line."
 msgstr ""
+"このパッケージは、複数のMOJOで構成されるMavenプラグインであるXMvn MOJOを提供します。これらのMOJOのいくつかのゴールは、パッケージを構"
+"築するときにデフォルトのMavenライフサイクルにアタッチされることを意図しており、他のゴールはMavenコマンドラインから直接呼び出すことができます。"
 
 #. leap/xmvn-connector-ivy/xmvn-connector-ivy-javadoc/summary
 msgid "API documentation for xmvn-connector-ivy"
@@ -5809,7 +6238,7 @@ msgstr "XMvn の Core"
 msgid ""
 "This package provides XMvn Core module, which implements the essential "
 "functionality of XMvn such as resolution of artifacts from system repository."
-msgstr ""
+msgstr "このパッケージは、システムリポジトリからのアーティファクトの解決など、XMvnの基本的な機能を実装するXMvnコアモジュールを提供します。"
 
 #. leap/xmvn-tools/xmvn-install/summary
 msgid "XMvn Install"
@@ -5821,6 +6250,8 @@ msgid ""
 "XMvn installer.  The installer reads reactor metadata and performs artifact "
 "installation according to specified configuration."
 msgstr ""
+"このパッケージは、XMvnインストーラへのコマンドラインインターフェイスであるXMvn "
+"Installを提供します。インストーラはリアクタメタデータを読み込み、指定された設定に従ってアーティファクトのインストールを実行します。"
 
 #. leap/xmvn/xmvn-minimal/summary
 msgid "Dependency-reduced version of XMvn"
@@ -5830,7 +6261,7 @@ msgstr "依存性を低減したバージョンの XMvn"
 msgid ""
 "This package provides minimal version of XMvn, incapable of using remote "
 "repositories."
-msgstr ""
+msgstr "このパッケージは、リモートリポジトリを使用できないXMvnの最小バージョンを提供します。"
 
 #. leap/xmvn-mojo/summary
 msgid "XMvn MOJO"
@@ -5864,6 +6295,9 @@ msgid ""
 "Core.  The primary intended use case of XMvn Resolver is debugging local "
 "artifact repositories."
 msgstr ""
+"このパッケージは、システムリポジトリからMavenアーティファクトを解決するための非常に簡単なコマンドラインツールであるXMvn "
+"Resolverを提供します。基本的には、XMvn Coreによって実装されたアーティファクト解決メカニズムへのインターフェースにすぎません。XMvn "
+"Resolverの主な使用例は、ローカルアーティファクトリポジトリのデバッグです。"
 
 #. leap/xmvn-tools/xmvn-subst/summary
 msgid "XMvn Subst"
@@ -5875,6 +6309,9 @@ msgid ""
 "artifact files with symbolic links to corresponding files in artifact "
 "repository."
 msgstr ""
+"このパッケージは、"
+"Mavenアーティファクトファイルをアーティファクトリポジトリ内の対応するファイルへのシンボリックリンクで置き換えることができるツールであるXMvn "
+"Substを提供します。"
 
 #. leap/xmvn-tools/xmvn-tools-javadoc/summary
 msgid "API documentation for xmvn-tools"
@@ -5891,7 +6328,7 @@ msgstr "X Window System 向けの オーバレイボリューム (又はその�
 
 #. leap/xonotic/summary
 msgid "Fast-paced first person shooter"
-msgstr ""
+msgstr "テンポの速いファーストパーソン・シューティングゲーム"
 
 #. leap/xonotic/description
 msgid ""
@@ -5901,10 +6338,13 @@ msgid ""
 "of the Nexuiz project with years of development between them, and it aims to "
 "become the best possible open-source FPS (first-person-shooter) of its kind."
 msgstr ""
+"Windows、OS X、Linuxで動作する、テンポの速い一人称シューティングゲーム。このプロジェクトは、中毒性のあるアリーナシューティングゲームを提供"
+"することを目的としており、すべてはコミュニティ自体によって生み出され、推進されます。長年の開発を経てNexuizプロジェクトの直接の後継者となり、この種の"
+"オープンソースFPS(一人称シューティングゲーム)の中で最高のものになることを目指しています。"
 
 #. leap/xonotic/xonotic-data/summary
 msgid "Data for the xonotic first person shooter"
-msgstr ""
+msgstr "xonoticファーストパーソン・シューティングゲームのデータ"
 
 #. leap/xonotic/xonotic-data/description
 msgid ""
@@ -5917,10 +6357,15 @@ msgid ""
 "\n"
 "Data (textures, maps, sounds and models) required to play xonotic."
 msgstr ""
+"Xonoticは、Windows、OSX、Linux で動作する、無料(GPL)の速いペースの一人称シューティングゲームです。このプロジェクトは、中毒性の"
+"あるアリーナシューティングゲームを提供することを目的としており、すべてはコミュニティ自体によって生み出され、推進されます。Xonoticは、長年の開発を経"
+"てNexuizプロジェクトの直接の後継者であり、この種の最高のオープンソースFPS(一人称視点シューティングゲーム)になることを目指しています。\n"
+"\n"
+"xonoticを再生するために必要なデータ(テクスチャ、マップ、サウンド、モデル)。"
 
 #. leap/xonotic/xonotic-server/summary
 msgid "Dedicated xonotic server first person shooter"
-msgstr ""
+msgstr "xonotic専用サーバー一人称シューティング"
 
 #. leap/xonotic/xonotic-server/description
 msgid ""
@@ -5934,10 +6379,16 @@ msgid ""
 "Server with dedicated xonotic running as services unter the specific user. "
 "service is handle via systemd or init - depends on your version."
 msgstr ""
+"Xonoticは、Windows、OSX、Linux で動作する、無料(GPL)の速いペースの一人称シューティングゲームです。このプロジェクトは、中毒性の"
+"あるアリーナシューティングゲームを提供することを目的としており、すべてはコミュニティ自体によって生み出され、推進されます。Xonoticは、長年の開発を経"
+"てNexuizプロジェクトの直接の後継者であり、この種の最高のオープンソースFPS(一人称視点シューティングゲーム)になることを目指しています。\n"
+"\n"
+"サービスとして実行されている専用のxonoticを持つサーバーは、特定のユーザーを検出します。serviceは、バージョンに応じてsystemdまたはin"
+"itを介して処理されます。"
 
 #. leap/xonsh/summary
 msgid "A general purpose, Python-ish shell"
-msgstr ""
+msgstr "汎用のPython風シェル"
 
 #. leap/xonsh/description
 msgid ""
@@ -5946,6 +6397,8 @@ msgid ""
 "xonsh (pronounced conch) is meant for the daily use of experts and novices "
 "alike."
 msgstr ""
+"xonshはPython風でBASHwardsのように見えるシェル言語であり、コマンド・プロンプトです。この言語は、Python 3."
+"4+にシェルプリミティブを追加したスーパーセットです。xonsh(発音はconch)は、熟練者と初心者の両方が日常的に使用することを目的としています。"
 
 #. leap/xonsh/xonsh-doc/summary
 msgid "Documentation files for xonsh"
@@ -5953,7 +6406,7 @@ msgstr "xonsh 向けドキュメンテーションファイル"
 
 #. leap/xonsh/xonsh-doc/description
 msgid "HTML documentation on the API and examples for xonsh."
-msgstr ""
+msgstr "xonshのアプリケーション・プログラミング・インタフェースとサンプル。"
 
 #. leap/xorg-cf-files/summary
 msgid "Data files for the imake utility"
@@ -6105,6 +6558,10 @@ msgid ""
 "to TrueType format, so they can be used by applications that don't support "
 "Type1 fonts."
 msgstr ""
+"このパッケージには、X.Orgで管理および提供されているフォントが含まれています。\n"
+"\n"
+" このパッケージには、TrueType形式に変換されたxorg-x11-fontsのType1(."
+"pfb)フォントが含まれているため、Type1フォントをサポートしていないアプリケーションでも使用できます。"
 
 #. leap/xorg-x11-fonts/xorg-x11-fonts-core/summary
 #. leap/xorg-x11-fonts/xorg-x11-fonts-legacy/summary
@@ -6124,6 +6581,8 @@ msgid ""
 "This package contains the original Type1 and bitmap fonts that are converted "
 "to truetype format in the xorg-x11-fonts-converted package"
 msgstr ""
+"このパッケージには、xorg-x11-fonts-"
+"convertedパッケージでTrueType形式に変換されたオリジナルのType1フォントとビットマップフォントが含まれています。"
 
 #. leap/xorg-x11-libX11-ccache/summary
 #. leap/xorg-x11-server/summary
@@ -6217,6 +6676,8 @@ msgid ""
 "A tool to do some xor analysis:  * Guess the key length (based on count of "
 "equal chars).  * Guess the key (base on knowledge of most frequent char)."
 msgstr ""
+"ある種のxor分析を行うためのツール:*(同じ文字の数に基づいて)キーの長さを推測します。*キーを推測します(最も頻繁に使用される文字の知識に基づきます)"
+"。"
 
 #. leap/xosd/summary
 msgid "X On-Screen Display library"
@@ -6276,7 +6737,7 @@ msgstr "タブレット用にデザインされたメモ取りソフトウェア
 msgid ""
 "Xournal++ is a hand note taking software. It supports pen input, e.g. Wacom "
 "tablets."
-msgstr ""
+msgstr "Xournal++は手書きメモを取るソフトウェアです。Wacomタブレットなどのペン入力に対応しています。"
 
 #. leap/xournalpp/xournalpp-lang/summary
 msgid "Translations for package xournalpp"
@@ -6298,6 +6759,8 @@ msgid ""
 "sometimes even levitate with their genetically-modified go-go-gadget 'copter "
 "ability."
 msgstr ""
+"このプログラムは、ルートウィンドウ上のペンギンの友好的な家族をアニメーション化します。彼らは画面の上からやってきて、窓の上を歩き、窓の横を歩き、画面の横を"
+"歩き、時には遺伝子組み換えのゴーゴーガジェットのヘリコプター能力で空中浮遊することさえあります。"
 
 #. leap/xpinguin/summary
 msgid "The 'Logo' of Linux 2.0"
@@ -6305,7 +6768,7 @@ msgstr "Linux 2.0 のロゴ"
 
 #. leap/xpinguin/description
 msgid "Based on xteddy -- really cute ;-)"
-msgstr ""
+msgstr "xteddyをベースにしています--本当にかわいいですね;-)"
 
 #. leap/xplanet/summary
 msgid "Planets as Background Pictures or Interactive Animations"
@@ -6327,7 +6790,7 @@ msgstr ""
 
 #. leap/xplatproviders/summary
 msgid "Operations Manager Cross Platform Providers"
-msgstr ""
+msgstr "Operations Managerのクロスプラットフォームプロバイダー"
 
 #. leap/xplatproviders/description
 msgid ""
@@ -6336,6 +6799,9 @@ msgid ""
 "infrastructures. Current solutions include support for UNIX and Linux "
 "management through Operations Manager 2007 R2."
 msgstr ""
+"System Center Cross Platform Solutionsは、"
+"異種混在のエンタープライズインフラストラクチャの管理を可能にするSystem Center製品用のオープンソースアドオンです。現在のソリューションには、"
+"Operations Manager 2007 R2によるUNIXおよびLinux管理のサポートが含まれています。"
 
 #. leap/xplayer/summary
 msgid "Generic media player"
@@ -6445,6 +6911,9 @@ msgid ""
 "XPP2 is no longer developed and is on maintenance mode. All active "
 "development concentrates on its successor XPP3/MXP1"
 msgstr ""
+"XML Pull Parser "
+"2(XPP2)は、単純で高速な増分XMLパーサーです。メモ:XPP2は現在は開発されておらず、メンテナンスモードです。すべてのアクティブな開発は、後継の"
+"XPP3/MXP1に集中しています。"
 
 #. leap/xpp3/description
 #. leap/xpp3/xpp3-javadoc/description
@@ -6455,6 +6924,9 @@ msgid ""
 "rewritten to take best advantage of latest JIT JVMs such as Hotspot in JDK "
 "1.4."
 msgstr ""
+"XmlPull Parser 3rd "
+"Edition(XPP3)MXP1は、XPP、特にXPP2のアイデアに基づいた新しいXmlPull解析エンジンですが、JDK "
+"1.4のHotspotなどの最新のJIT JVMを最大限に活用するために完全に改訂および書き直されています。"
 
 #. leap/xpr/summary
 msgid "Utility to print an X window dump"
@@ -6506,6 +6978,8 @@ msgid ""
 "This package adds websockify support to allow xpra to listen for http "
 "connections, and also the xpra html5 client."
 msgstr ""
+"このパッケージは、websockifyサポートを追加して、xpraがhttp接続をリッスンできるようにします。また、xpra "
+"html5クライアントもサポートします。"
 
 #. leap/xprehashprinterlist/summary
 msgid "Utility to recompute list of available printers"
@@ -6530,7 +7004,7 @@ msgstr "X で、ユーザのアイドル時間を表示するユーティリテ�
 msgid ""
 "An utility that queries the X server for the user's idle time and prints it "
 "to stdout (in milliseconds)."
-msgstr ""
+msgstr "ユーザーのアイドル時間をXサーバーに照会し、それを標準出力(ミリ秒単位)に出力するユーティリティー。"
 
 #. leap/xprompt/summary
 msgid "Small tool for prompting users"
@@ -6546,6 +7020,12 @@ msgid ""
 "Authors:\n"
 "--------     Barry Brachman <brachman@cs.ubc.ca>"
 msgstr ""
+"ユーザに1つまたは複数の応答を求めるための小さなツール(例えば、バッチファイルから)。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Barry Brachman <brachman@cs.ubc.ca>"
 
 #. leap/xprop/summary
 msgid "Property displayer for X"
@@ -6588,6 +7068,8 @@ msgid ""
 "Management Protocol is an ICE based protocol that provides a way for "
 "application servers to easily locate proxy services available to them."
 msgstr ""
+"X11開発用のX Proxy Managerプロトコルヘッダー。プロキシ管理プロトコルは、アプリケーションサーバが使用可能なプロキシサービスを簡単に見つけ"
+"る方法を提供するICEベースのプロトコルです。"
 
 #. leap/xquarto/summary
 msgid "Xquarto is a board game designed for the X windows environment"
@@ -6606,6 +7088,12 @@ msgid ""
 "human player starts the game against the computer. This can be changed by "
 "clicking on the \"Actions\" menu (see below for more details)."
 msgstr ""
+"ゲームは2人ゲームです。プレイヤー1は、16の駒の中から1つを選びます。次に、プレーヤー2は、このピースをボードの16の正方形の1つに置き、残りの15のピ"
+"ースの中から1つのピースを選択し、プレーヤー1に与えます。プレーヤー1は、このピースをボードの残りの15の正方形の1つに置き、以下同様に行います。\n"
+"\n"
+"Xquartoは、人間対コンピュータ、コンピュータ対人間、人間対人間(後者の場合はおそらくローカルネットワークを通じて)の3つの異なるプレーヤーの組み合わ"
+"せをサポートしています。デフォルトの組み合わせは、人間対コンピュータであり、すなわち、人間のプレーヤがコンピュータに対してゲームを開始する。これは、「アク"
+"ション」メニューをクリックすることで変更できます(詳細については以下を参照)。"
 
 #. leap/xrandr/summary
 msgid "Primitive command line interface to RandR extension"
@@ -6642,6 +7130,7 @@ msgid ""
 "A terminal server, capable of accepting connection from rdesktop and "
 "Microsoft's own terminal server / remote desktop clients."
 msgstr ""
+"rdesktopおよびMicrosoft独自のターミナルサーバ/リモートデスクトップクライアントからの接続を受け入れることができるターミナルサーバ。"
 
 #. leap/xrdp/xrdp-devel/summary
 msgid "Development files for xrdp"
@@ -6653,7 +7142,7 @@ msgstr "このパッケージには xrdp 用の開発用ヘッダが含まれて
 
 #. leap/xreader/summary
 msgid "Document viewer for documents like PDF/PostScript"
-msgstr ""
+msgstr "PDF/PostScriptなどのドキュメント用のドキュメントビューア"
 
 #. leap/xreader/xreader-devel/summary
 msgid "X-Apps Document Reader development files"
@@ -6673,7 +7162,7 @@ msgstr "Xreader 向け マンガドキュメントサポート"
 
 #. leap/xreader/xreader-plugin-comicsdocument/description
 msgid "A plugin for Xreader to read Comics documents."
-msgstr ""
+msgstr "XreaderがComicsドキュメントを読むためのプラグイン。"
 
 #. leap/xreader/xreader-plugin-djvudocument/summary
 msgid "DjVu document support for Xreader"
@@ -6681,7 +7170,7 @@ msgstr "Xreader 向け DjVu ドキュメンテーションサポート"
 
 #. leap/xreader/xreader-plugin-djvudocument/description
 msgid "A plugin for Xreader to read DjVu documents."
-msgstr ""
+msgstr "XreaderがDjVu文書を読むためのプラグイン。"
 
 #. leap/xreader/xreader-plugin-dvidocument/summary
 msgid "DVI document support for Xreader"
@@ -6689,7 +7178,7 @@ msgstr "Xreader 向け DVI ドキュメンテーションサポート"
 
 #. leap/xreader/xreader-plugin-dvidocument/description
 msgid "A plugin for Xreader to read DVI documents."
-msgstr ""
+msgstr "XreaderがDVIドキュメントを読み込むためのプラグイン。"
 
 #. leap/xreader/xreader-plugin-epubdocument/summary
 msgid "EPUB document support for Xreader"
@@ -6713,7 +7202,7 @@ msgstr "Xreader 向け Pixbuf ドキュメンテーションサポート"
 
 #. leap/xreader/xreader-plugin-pixbufdocument/description
 msgid "A plugin for Xreader to read Pixbuf documents."
-msgstr ""
+msgstr "XreaderがPixbufドキュメントを読み込むためのプラグイン。"
 
 #. leap/xreader/xreader-plugin-psdocument/summary
 msgid "PostScript document support for Xreader"
@@ -6773,10 +7262,12 @@ msgid ""
 "crawlies scamper around until they find a window to hide under. Whenever you "
 "move or iconify a window, the exposed orthopteras again scamper for cover."
 msgstr ""
+"Xroachでは、不快なゴキブリがルートウィンドウに表示されます。この不気味なハイハイは、隠れるための窓を見つけるまで走り回る。窓を移動したりアイコン化し"
+"たりするたびに、露出したorthopterasが再び隠れ場所を探します。"
 
 #. leap/xrootd/xrootd-client/summary
 msgid "XRootD command line client tools"
-msgstr ""
+msgstr "XRootDコマンドラインクライアントツール"
 
 #. leap/xrootd/xrootd-client/description
 msgid ""
@@ -6786,6 +7277,9 @@ msgid ""
 "This package contains the command line tools used to communicate with XRootD "
 "servers."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootDサーバーとの通信に使用するコマンドラインツールが含まれています。"
 
 #. leap/xrootd/xrootd-client-devel/summary
 msgid "Development files for XRootD clients"
@@ -6799,10 +7293,13 @@ msgid ""
 "This package contains header files and development libraries for XRootD "
 "client development"
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootDクライアント開発用のヘッダファイルと開発ライブラリが含まれています。"
 
 #. leap/xrootd/xrootd-client-libs/summary
 msgid "Libraries used by XRootD clients"
-msgstr ""
+msgstr "XRootDクライアントが使用するライブラリ"
 
 #. leap/xrootd/xrootd-client-libs/description
 msgid ""
@@ -6811,6 +7308,9 @@ msgid ""
 "\n"
 "This package contains libraries used by XRootD clients."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootDクライアントが使用するライブラリが含まれています。"
 
 #. leap/xrootd/xrootd-doc/summary
 msgid "Developer documentation for the XRootD libraries"
@@ -6823,6 +7323,9 @@ msgid ""
 "\n"
 "This package contains the API documentation of the XRootD libraries."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootDライブラリのAPIドキュメントが含まれています。"
 
 #. leap/xrootd/xrootd-fuse/summary
 msgid "FUSE-based XRootD filesystem mount"
@@ -6835,6 +7338,9 @@ msgid ""
 "\n"
 "This package contains the FUSE (file system in user space) XRootD mount tool."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、FUSE(file system in user space)XRootDマウントツールが含まれています。"
 
 #. leap/xrootd/xrootd-libs/summary
 msgid "XRootD core libraries"
@@ -6847,6 +7353,9 @@ msgid ""
 "\n"
 "This package contains libraries used by the XRootD servers and clients."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootDサーバとクライアントが使用するライブラリが含まれています。"
 
 #. leap/xrootd/xrootd-libs-devel/summary
 msgid "Development files for XRootD core libraries"
@@ -6860,6 +7369,9 @@ msgid ""
 "This package contains header files and development libraries for XRootD "
 "development."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootD開発用のヘッダーファイルと開発ライブラリが含まれています。"
 
 #. leap/xrootd/xrootd-private-devel/summary
 msgid "Private XRootD development files"
@@ -6874,10 +7386,14 @@ msgid ""
 "The use of these fikles is strongly discouraged. Backwards compatibility "
 "between versions is not guaranteed for them."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、いくつかのプライベートXRootDヘッダーと開発ライブラリが含まれています。これらのfiklesの使用は強く推奨されません。バージョン"
+"間の下位互換性は保証されていません。"
 
 #. leap/xrootd/xrootd-server/summary
 msgid "XRootD (eXtended Root Daemon) server"
-msgstr ""
+msgstr "XRootD(eXtended Root Daemon)サーバ"
 
 #. leap/xrootd/xrootd-server/description
 msgid ""
@@ -6886,6 +7402,9 @@ msgid ""
 "\n"
 "The XRootD (eXtended Root Daemon) server binaries."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"XRootD(eXtended Root Daemon)サーバのバイナリ。"
 
 #. leap/xrootd/xrootd-server-devel/summary
 msgid "Development files for XRootD servers"
@@ -6899,10 +7418,13 @@ msgid ""
 "This package contains header files and development libraries for XRootD "
 "server development."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootDサーバ開発用のヘッダファイルと開発ライブラリが含まれています。"
 
 #. leap/xrootd/xrootd-server-libs/summary
 msgid "Libraries used by XRootD servers"
-msgstr ""
+msgstr "XRootDサーバが使用するライブラリ"
 
 #. leap/xrootd/xrootd-server-libs/description
 msgid ""
@@ -6911,6 +7433,9 @@ msgid ""
 "\n"
 "This package contains libraries used by XRootD servers."
 msgstr ""
+"XROOTDプロジェクトは、データリポジトリへのアクセスを提供します。一般的な使用方法は、ファイルベースのファイルへのアクセスを許可することです。\n"
+"\n"
+"このパッケージには、XRootDサーバで使用されるライブラリが含まれています。"
 
 #. leap/xrx/summary
 msgid "X Remote eXecution"
@@ -7087,7 +7612,7 @@ msgstr "\"xscreensaver\" パッケージ向けの翻訳データです。"
 
 #. leap/xsd/summary
 msgid "W3C XML schema to C++ data binding compiler"
-msgstr ""
+msgstr "W3C XMLスキーマからC++データ・バインディング・コンパイラー"
 
 #. leap/xsd/description
 msgid ""
@@ -7099,6 +7624,10 @@ msgid ""
 "application domain rather than dealing with intricacies of reading and "
 "writing XML."
 msgstr ""
+"CodeSynthesis XSDは、オープン・ソースのクロス・プラットフォームW3C XML Schema to "
+"C++データ・バインディング・コンパイラーです。XMLインスタンス仕様(XML Schema)が提供されており、特定のボキャブラリーを表すC++クラスを生"
+"成するとともに、コードの構文解析とシリアライゼーションを行います。そうすれば、複雑なXMLの読み書きに煩わされることなく、アプリケーション・ドメインに意味"
+"的に対応する型と関数を使用して、XMLに保管されたデータにアクセスすることができます。"
 
 #. leap/xsd/xsd-doc/summary
 msgid "API documentation files for xsd"
@@ -7111,7 +7640,7 @@ msgstr "パッケージには xsd 用の API ドキュメンが含まれてい�
 #. leap/xsel/summary
 msgid ""
 "Command-line Program for Getting and Setting the Contents of the X Selection"
-msgstr ""
+msgstr "X選択の内容を取得および設定するためのコマンドラインプログラム"
 
 #. leap/xsel/description
 msgid ""
@@ -7119,10 +7648,12 @@ msgid ""
 "selection. Normally this is only accessible by manually highlighting "
 "information and pasting it with the middle mouse button."
 msgstr ""
+"XSelは、X選択の内容を取得および設定するためのコマンドラインプログラムです。通常、これにアクセスするには、情報を手動でハイライト表示し、マウスの中ボタ"
+"ンで貼り付ける必要があります。"
 
 #. leap/xselection/summary
 msgid "Manipulate the XSelection"
-msgstr ""
+msgstr "XSelection を操作"
 
 #. leap/xselection/description
 msgid ""
@@ -7133,6 +7664,11 @@ msgid ""
 "\n"
 "man xselection"
 msgstr ""
+"この小さなツールを使用して、Xの下で現在選択されているテキストをファイルにパイプするか、またはその逆を行います。\n"
+"\n"
+"ヘルプは、次のマニュアルページを参照してください。\n"
+"\n"
+"xselection"
 
 #. leap/xsession/summary
 msgid "A session manager"
@@ -7155,6 +7691,17 @@ msgid ""
 "--------     Alain Nissen <nissen@montefiore.ulg.ac.be>     Raphael Quinet "
 "<quinet@stud.montefiore.ulg.ac.be>"
 msgstr ""
+"xsessionプログラムは、セッションマネージャです。通常は~/.xinitrc(または~/.xsession)スクリプトによって実行され、X Wind"
+"owセッションを制御します。xsessionは開始されるとすぐに、ウィンドウマネージャと選択したアプリケーションを起動します。セッション中はいつでも、別の"
+"ウィンドウマネージャに切り替えたり、xsessionメニューから他のアプリケーションを実行したりできます。\n"
+"\n"
+"サンプルは/usr/share/doc/packages/xsession/examplesにあります。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Alain Nissen <nissen@montefiore.ulg.ac.be>     Raphael Quinet "
+"<quinet@stud.montefiore.ulg.ac.be>"
 
 #. leap/xset/summary
 msgid "User preference utility for X"
@@ -7207,6 +7754,9 @@ msgid ""
 "want to configure things such as themes, font antialiasing/hinting, and UI "
 "sound effects."
 msgstr ""
+"xsettingsdは、XSETTINGS指定を実装するデーモンです。これは、小さく、高速で、他のライブラリへの依存を最小限に抑えることを目的としています"
+"。これは、MATEデスクトップ環境を使用していないけれど、GTK+アプリケーションを実行しており、テーマ、フォントのアンチエイリアス/ヒント、UIサウンド"
+"エフェクトなどを設定したいユーザーにとって、mate-settings-daemonの代替として機能します。"
 
 #. leap/xslide/summary
 msgid "XSL Integrated Development Environment"
@@ -7286,6 +7836,14 @@ msgid ""
 "Authors:\n"
 "--------     fabian.linux@januszewski.de     demailly@fourier.ujf-grenoble.fr"
 msgstr ""
+"ステレオグラフは、ステレオグラム生成器です。具体的には、単一画像ステレオグラム(SIS)生成器です。これは、3次元のように見える2次元画像を生成するプログ"
+"ラムです(「マジック・アイ」の有名な作品をご存知でしょうが、ステレオグラフも同じ出力を生成します)。それらを見るために色のついた眼鏡は必要ありません。誰で"
+"もそれを学ぶことができます。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     fabian.linux@januszewski.de     demailly@fourier.ujf-grenoble.fr"
 
 #. leap/xstream/summary
 msgid "Java XML serialization library"
@@ -7310,6 +7868,14 @@ msgid ""
 "malformed XML, detailed diagnostics are provided to help isolate and fix the "
 "problem."
 msgstr ""
+"XStreamは、オブジェクトをXMLにシリアライズしたり、その逆を行ったりするための単純なライブラリです。一般的なユース・ケースを単純化する高レベルのフ"
+"ァサードが提供されています。カスタムオブジェクトは、マッピングを指定しなくても直列化できます。速度と低メモリフットプリントは設計の重要な部分であり、大きな"
+"オブジェクトグラフや高いメッセージスループットを持つシステムに適しています。反射によって得られる情報は複製されません。その結果、XMLは人間にとって読みや"
+"すくなり、ネイティブのJavaシリアライズよりもコンパクトになります。XStreamは、privateとfinalを含む内部フィールドをシリアライズします"
+"。非パブリッククラスと内部クラスをサポートします。クラスがデフォルトのコンストラクタを持つ必要はありません。オブジェクトモデル内で検出された重複参照は保持"
+"されます。循環参照をサポートします。インターフェースを実装することによって、XStreamは(XMLだけでなく)任意のツリー構造との間で直接シリアライズす"
+"ることができます。ストラテジーを登録して、特定のタイプをXMLとして表現する方法をカスタマイズすることができます。不正な形式のXMLが原因で例外が発生した"
+"場合は、問題の特定と修正に役立つ詳細な診断が提供されます。"
 
 #. leap/xstream/xstream-benchmark/summary
 msgid "The benchmark module for xstream"
@@ -7330,11 +7896,11 @@ msgstr "xstream API ドキュメンテーション。"
 
 #. leap/xstream/xstream-parent/summary
 msgid "Parent POM for xstream"
-msgstr ""
+msgstr "xstreamの親POM"
 
 #. leap/xstream/xstream-parent/description
 msgid "Parent POM for xstream."
-msgstr ""
+msgstr "xstreamの親POM。"
 
 #. leap/xstroke/summary
 msgid "Fullscreen gesture recognition for X"
@@ -7366,6 +7932,13 @@ msgid ""
 "Author:\n"
 "--------     Sean Bolton <sean@smbolton.com>"
 msgstr ""
+"Xsynth-DSSIパッケージには、Xsynth-DSSIプラグインが含まれています。これは、エディターGUIを備えたクラシック・アナログ(VCO-"
+"VCF-VCA)スタイルのソフトウェア・シンセサイザーです。Xsynth-DSSIはSean Boltonによって書かれ、Steve BrookeのXsy"
+"nthコードをベースにしていますが、それ以来、ポリフォニック操作、帯域制限発振器、より優れたフィルター・モード、そして速度に敏感なエンベロープを獲得してき"
+"ました。\n"
+"\n"
+"著者:\n"
+"--------     Sean Bolton <sean@smbolton.com>"
 
 #. leap/xtables-addons/summary
 #. leap/xtables-addons/xtables-addons-kmp-64kb/summary
@@ -7403,6 +7976,11 @@ msgid ""
 "https://db-ip.com/db/lite.php . Please do not contact them for errors with "
 "this package."
 msgstr ""
+"このパッケージには、Xtables-"
+"addonsのxt_GeoIPモジュールに必要なGeoIP定義ファイル(どのIPアドレスがどの国に属しているか)が含まれています。\n"
+"\n"
+"この製品には、DBIPが作成したCountry Liteデータが含まれています。このデータは、https://db-ip.com/db/lite."
+"phpから入手できます。このパッケージのエラーについては、彼らに連絡しないでください。"
 
 #. leap/xteddy/summary
 msgid "A cuddly teddy bear for your X Window desktop"
@@ -7427,6 +8005,18 @@ msgid ""
 "Authors:\n"
 "--------     Stefan Gustavson <stefang@isy.liu.se>"
 msgstr ""
+"普段、xteddyは何もしないで座っているだけです。結局のところ、テディベアはそのためのものなのです。彼を見て、彼に話しかけ、彼の上に重い窓を置き、彼がめ"
+"まいを起こすまで彼の周りを叩き、あなたの好きなようにしてください。彼はいつもあなたの本当の(仮想ではあるが)友人です。\n"
+"\n"
+"xteddyは、マウスでポイントしてドラッグすることで移動できます。クリックすると、他のすべてのウィンドウの上にポップアップ表示されます。彼に「q」とタイ"
+"プすると、彼は死んでしまいます(あるいは、私が考えたいのは、次に彼が必要になるまでファイルシステムに閉じ込められることです)。\n"
+"\n"
+"それだけです。でも可愛いです。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Stefan Gustavson <stefang@isy.liu.se>"
 
 #. leap/xterm/summary
 #. leap/xterm/xterm-bin/summary
@@ -7447,7 +8037,7 @@ msgstr ""
 
 #. leap/xterm-console/summary
 msgid "A Linux vt console look-alike xterm wrapper"
-msgstr ""
+msgstr "Linuxのvtコンソールに似たxtermラッパー"
 
 #. leap/xterm-console/description
 msgid "This package contains the basic X.Org terminal program."
@@ -7469,7 +8059,7 @@ msgstr ""
 
 #. leap/xtexit/summary
 msgid "Prompt on exiting X"
-msgstr ""
+msgstr "Xの終了時にプロンプトを表示"
 
 #. leap/xtexit/description
 msgid ""
@@ -7486,10 +8076,19 @@ msgid ""
 "If this package is installed, it will be automatically integrated into the "
 "sample user fvwm menu."
 msgstr ""
+"`xtexit`はすべてのクライアントにシャットダウン要求を送信します。アプリケーションが依然としてユーザインタラクションを必要とする場合(例えば、ファイ"
+"ルが保存されるべきである場合)、これは可能です。\n"
+"\n"
+"はい、と答えると、すべてのアプリケーションが終了します。この方法は完全に防水ではありませんが、干渉することなくすべてのクライアントを殺すよりは優れています"
+"。\n"
+"\n"
+"いずれにせよ、xtermアプリケーションは即座に終了します。\n"
+"\n"
+"このパッケージがインストールされると、サンプルユーザfvwmメニューに自動的に統合されます。"
 
 #. leap/xtrabackup/summary
 msgid "Online backup for MySQL / InnoDB"
-msgstr ""
+msgstr "MySQL/InnoDBのオンラインバックアップ"
 
 #. leap/xtrabackup/description
 msgid ""
@@ -7497,10 +8096,12 @@ msgid ""
 "engines. It features uninterrupted transaction processing during backups for "
 "InnoDB, but can also backup MyISAM tables."
 msgstr ""
+"Percona XtraBackupは、InnoDBエンジン用のオンライン(ノンブロッキング)バックアップソリューションです。これは、InnoDBのバック"
+"アップ中に中断されないトランザクション処理を特徴としますが、MyISAMテーブルもバックアップできます。"
 
 #. leap/xtrabackup/xtrabackup-test/summary
 msgid "Test suite for Percona XtraBackup"
-msgstr ""
+msgstr "Percona XtraBackup用のテストスイート"
 
 #. leap/xtrabackup/xtrabackup-test/description
 msgid "This package contains the test suite for Percona XtraBackup 2.4.10"
@@ -7538,7 +8139,7 @@ msgstr ""
 
 #. leap/xtrx_lms7002m/xtrx_lms7002m-devel/summary
 msgid "XTRX's fork from myriadrf/LMS7002M-driver - devel"
-msgstr ""
+msgstr "myriadrf/LMS7002M-driver-develからのXTRXのフォーク"
 
 #. leap/xtrx_lms7002m/xtrx_lms7002m-devel/description
 msgid ""
@@ -7562,6 +8163,8 @@ msgid ""
 "command with that server available, and kills the X server when done. The "
 "return value of the command becomes the return value of this script."
 msgstr ""
+"このスクリプトは、「偽の」XサーバであるXvfbのインスタンスを起動し、そのサーバが使用可能な状態でコマンドを実行し、完了するとXサーバを強制終了します。"
+"コマンドの戻り値は、このスクリプトの戻り値になります。"
 
 #. leap/xvidtune/summary
 msgid "Video mode tuner for the X server"
@@ -7587,6 +8190,8 @@ msgid ""
 "and scroll with constant memory usage. Its goals are simplicity and "
 "standards compliance."
 msgstr ""
+"xviewerは、gdk-pixbufライブラリを使用するCinnamonデスクトップなどのためのシンプルなグラフィックビューアです。大きな画像を扱うこと"
+"ができ、一定のメモリ使用量でズームとスクロールができます。その目標はシンプルさと標準への準拠です。"
 
 #. leap/xviewer/xviewer-devel/summary
 msgid "Fast and functional graphics viewer development files"
@@ -7610,11 +8215,11 @@ msgstr "xviewer exif 表示プラグイン"
 
 #. leap/xviewer-plugins/xviewer-plugin-export-to-folder/summary
 msgid "Xviewer export to directory plugin"
-msgstr ""
+msgstr "ディレクトリプラグインへのXviewer エクスポート"
 
 #. leap/xviewer-plugins/xviewer-plugin-export-to-folder/description
 msgid "xviewer export to directory plugin"
-msgstr ""
+msgstr "ディレクトリプラグインへのXviewer エクスポート"
 
 #. leap/xviewer-plugins/xviewer-plugin-fit-to-width/summary
 msgid "Xviewer fit to width plugin"
@@ -7781,6 +8386,16 @@ msgid ""
 "on   the window manager and windows (for example identifying specific "
 "windows,   rename a window, move it around and so on)."
 msgstr ""
+"これはxwmfs(Xウィンドウマネージャファイルシステム)で、ファイルを介してEWMH準拠のX11ウィンドウマネージャとの対話を可能にするfuseに基づく"
+"ユーザ空間ファイルシステムです。\n"
+"\n"
+"次のような機能があります。\n"
+"- Xサーバで新しく現れたり消えたりするウィンドウが認識され、ファイルシステムがイベントベースの方法で更新される\n"
+"- ウィンドウマネージャとウィンドウのプロパティの新しい値は、イベントベースの方法でファイルシステムに反映されます。\n"
+"- ウィンドウおよびウィンドウマネージャのプロパティは、ファイルシステム内のファイルに書き込むことによって変更できます。\n"
+"- 一部のX操作は、ファイルシステム内の制御ファイルを介してアクセスできます。\n"
+"- このファイルシステムは、ウィンドウマネージャとウィンドウを操作するスクリプトを簡単に実装するために使用できます(たとえば、特定のウィンドウを識別したり"
+"、ウィンドウの名前を変更したり、ウィンドウを移動したりするなど)。"
 
 #. leap/xwud/summary
 msgid "Image displayer for X"
@@ -7804,6 +8419,8 @@ msgid ""
 "evaluates collision, dispersion and randomness qualities of hash functions. "
 "Hashes are identical on all platforms."
 msgstr ""
+"xxHashはハッシュアルゴリズムです。これにより、ハッシュ関数の衝突、分散、ランダム性の品質を評価するSMHasherテストスイートが完成します。ハッシ"
+"ュは、すべてのプラットフォームで同一です。"
 
 #. leap/xxhash/xxhash-devel/summary
 msgid "Development files for xxHash - a non-cryptographic hash algorithm"
@@ -7815,6 +8432,8 @@ msgid ""
 "test suite which evaluates collision, dispersion and randomness qualities of "
 "hash functions. Hashes are identical on all platforms."
 msgstr ""
+"xxHashの開発ファイル-ハッシュアルゴリズム。これにより、ハッシュ関数の衝突、分散、ランダム性の品質を評価するSMHasherテストスイートが完成しま"
+"す。ハッシュは、すべてのプラットフォームで同一です。"
 
 #. leap/xxkb/summary
 msgid "A keyboard layout indicator and switcher"
@@ -7828,6 +8447,9 @@ msgid ""
 "accepts events from XKB. That means that it will work with the existing "
 "setup of your X Server without any modifications."
 msgstr ""
+"xxkbプログラムは、キーボードレイアウトの切り替えとインジケータです。キーボードマップを再読み込みし、独自のホットキーを使用するプログラムとは異なり、x"
+"xkbはXKB(X KeyBoard拡張)用の単純なGUIであり、XKBにコマンドを送信し、XKBからイベントを受け入れるだけです。つまり、Xサーバの既存"
+"の設定を変更することなく動作するということです。"
 
 #. leap/xylib/xyconv/summary
 msgid "Command-line converter of files in formats supported by xylib"
@@ -7938,13 +8560,13 @@ msgstr ""
 
 #. leap/xyscan/summary
 msgid "Data extractor for data points from graphical plots"
-msgstr ""
+msgstr "グラフプロットからのデータ点のデータ抽出器"
 
 #. leap/xyscan/description
 msgid ""
 "xyscan is a tool for scientists in need of extracting data points, i.e. "
 "numeric values, from a plot."
-msgstr ""
+msgstr "xyscanは、プロットからデータ点、すなわち数値を抽出する必要がある科学者のためのツールです。"
 
 #. leap/xyscan/xyscan-doc/summary
 msgid "Documentation for xyscan"
@@ -8013,7 +8635,7 @@ msgid ""
 "This is an implementation of XZ data compression in pure Java. Single-"
 "threaded streamed compression and decompression and random access "
 "decompression have been implemented."
-msgstr ""
+msgstr "これは、純粋なJavaでのXZデータ圧縮の実装です。シングル・スレッドのストリーム圧縮と解凍、およびランダム・アクセス解凍が実装されています。"
 
 #. leap/xz-java/xz-java-javadoc/summary
 msgid "API documentation of Java XZ compression library"
@@ -8033,7 +8655,7 @@ msgstr "xz パッケージ向けの翻訳データです。"
 
 #. leap/xz/xz-static-devel/summary
 msgid "Static version of LZMA library"
-msgstr ""
+msgstr "静的版LZMAライブラリ"
 
 #. leap/xz/xz-static-devel/description
 msgid "Static library for the LZMA library"
@@ -8052,10 +8674,14 @@ msgid ""
 "on how xzgv works and how to use it, do `info xzgv' or `man xzgv' once it is "
 "installed."
 msgstr ""
+"XzgvはX Window System用の画像ビューアーで、サムネイル・ベースのファイル・セレクターを備えています。GTK+とImlibを使っています。"
+"ほとんどのファイル形式がサポートされており、使用されているサムネールはxv、zgv、およびGimpと互換性があります。また、`xzgv "
+"file(s)'と一緒に使用して、ファイルセレクタをバイパスすることもできます。xzgvの動作と使い方の詳細については、インストール後に`info "
+"xzgv'または`man xzgv'を実行してください。"
 
 #. tumbleweed/XSStrike/summary
 msgid "Most advanced XSS scanner"
-msgstr ""
+msgstr "最先端のXSSスキャナー"
 
 #. tumbleweed/XSStrike/description
 msgid ""
@@ -8068,10 +8694,15 @@ msgid ""
 "payloads that are guaranteed to work by context analysis integrated with a "
 "fuzzing engine."
 msgstr ""
+" XSStrikeは、4つの手書きパーサー、インテリジェントなペイロードジェネレータ、強力なファジングエンジン、信じられないほど高速なクローラーを備えたク"
+"ロスサイトスクリプティング検知スイートです。\n"
+"\n"
+"ペイロードを注入して他のすべてのツールと同じように動作をチェックする代わりに、XSStrikeは複数のパーサーで応答を分析し、ファジングエンジンと統合され"
+"たコンテキスト分析によって動作することが保証されたペイロードを作成します。"
 
 #. tumbleweed/xcb-imdkit/libxcb-imdkit1/summary
 msgid "An implementation of xim protocol in xcb"
-msgstr ""
+msgstr "xcbにおけるximプロトコルの実装"
 
 #. tumbleweed/xcb-imdkit/libxcb-imdkit1/description
 msgid ""
@@ -8079,16 +8710,18 @@ msgid ""
 "implementation of IMDkit with Xlib, and xim inside Xlib, it has less memory "
 "foot print, better performance, and safer on malformed client."
 msgstr ""
+"xcb-IMDkitはxcbにおけるximプロトコルの実装であり、xlibを用いたIMDkitの実装と比較して、xlib内のximはメモリフットプリントが"
+"少なく、パフォーマンスが良く、不正なクライアントに対しても安全です。"
 
 #. tumbleweed/xcfun/libxcfun2/summary
 msgid "Exchange-correlation functionals with arbitrary-order derivatives"
-msgstr ""
+msgstr "任意次導関数をもつ交換相関汎関数"
 
 #. tumbleweed/xcfun/libxcfun2/description
 msgid ""
 "XCFun is a library of exchange-correlation (XC) functionals to be used in "
 "density-functional theory (DFT) codes."
-msgstr ""
+msgstr "XCFunは、密度汎関数理論(DFT)符号で使用される交換相関(XC)汎関数のライブラリです。"
 
 #. tumbleweed/x11-tools/description
 msgid "Some useful tools for the X Window System."
@@ -8137,6 +8770,35 @@ msgid ""
 "\n"
 "x026 is a fun toy which emulates an x026 puncher."
 msgstr ""
+"このパッケージには、IBM 3270メインフレームターミナルエミュレータのファミリが含まれています。\n"
+"*対話的に使用するための端末エミュレータx3270 X Window System c3270 cursesベース\n"
+"*スクリプト形式で使用する端末エミュレータs3270 x3270-scriptのマニュアルページを参照tcl3270 Tclベース\n"
+"*プリンタエミュレータpr3287\n"
+"*パンチカードパンチャーエミュレーターx026をお見逃しなく\n"
+"\n"
+"x3270は、X Window System用のIBM "
+"3270ターミナル・エミュレーターです。x3270はTelnet接続(TN3270Eの有無にかかわらず)で動作し、IBM 3279(カラー)または3278"
+"(モノクロ)のいずれかをエミュレートします。APL2文字、IND$FILEファイル転送、NVTモード、3270固有のキー用のポップアップキーパッド、代替キ"
+"ーマップ、3287プリンタセッション、およびスクロールバーをサポートし、広範なデバッグおよびスクリプト機能を備えています。\n"
+"\n"
+"x3270aは、高解像度ディスプレイ用の正しいフォントサイズを計算し、x3270を実行するスクリプトです。(x3270はビジュアル要素のスケーリングを自動"
+"的に処理しますが、フォントサイズをそれ自体で調整することはできません。)\n"
+"\n"
+"b3270は3270エミュレータ用の汎用バックエンドです。3270プロトコルとホスト入出力を実装し、単純なXMLベースのプロトコルを使用してフロントエンド"
+"・アプリケーションと通信します。\n"
+"\n"
+"c3270は、x3270のcursesベースのバージョンです。任意のダム端末(例えばxtermやコンソール)上で動作し、x3270の(ほぼ)全ての機能をサ"
+"ポートします。c3270スクリプトはx3270スクリプトと互換性があり、コマンド行オプションとリソース定義のサブセットも互換性があります。\n"
+"\n"
+"s3270は、x3270のスクリプト専用バージョンです。このプログラムは、メインフレームからデータベース情報を取得するCGIバックエンドスクリプトなど、「"
+"スクリーンスクレイピング」アプリケーションを記述することを主な目的としています。\n"
+"\n"
+"tcl3270 is a Tcl-based 3270 scripting engine.  "
+"3270セッションを操作するTclスクリプトを書くことができ、s3270よりもセットアップと使用が非常に簡単です。\n"
+"\n"
+"pr3287は上記のツールのプリンタコンパニオンであり、3270セッションからのプリンタ出力をUnixプリンタキューに送ることができます。\n"
+"\n"
+"x026は、x026パンチを模倣した楽しいおもちゃです。"
 
 #. tumbleweed/x86info/summary
 msgid "Tool to show x86 CPU Information"
@@ -8182,6 +8844,8 @@ msgid ""
 "work with bookmarks, change fonts and fast search through all the pages of "
 "the loaded .chm document."
 msgstr ""
+"xCHMはwxGTKで書かれたCHMLIBのためのGUIフロントエンドです。トピックツリーの表示、表示されたページ履歴の操作、現在のページの印刷、ブックマ"
+"ークの操作、フォントの変更、およびロードされた.chmドキュメントのすべてのページの高速検索が可能です。"
 
 #. tumbleweed/xchm/xchm-lang/summary
 msgid "Translations for package xchm"
@@ -8193,17 +8857,17 @@ msgstr "\"xchm\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/xcwd/summary
 msgid "X current working directory"
-msgstr ""
+msgstr "Xカレントワーキングディレクトリ"
 
 #. tumbleweed/xcwd/description
 msgid ""
 "xcwd is a simple tool which print the current working directory of the "
 "currently focused window."
-msgstr ""
+msgstr "xcwdは、現在フォーカスされているウィンドウのカレントワーキングディレクトリを出力するシンプルなツールです。"
 
 #. tumbleweed/xdg-desktop-portal-wlr/summary
 msgid "An xdg-desktop-portal backend for wlroots"
-msgstr ""
+msgstr "wlroots用のxdg-desktop-portalバックエンド"
 
 #. tumbleweed/xdg-desktop-portal-wlr/description
 msgid ""
@@ -8212,16 +8876,22 @@ msgid ""
 "Make sure the `XDG_CURRENT_DESKTOP` env var is set in the D-Bus user session "
 "to one of the UseIn values in wlr.portal"
 msgstr ""
+"xdg-desktop-portal wlrootsのバックエンド。\n"
+"\n"
+"D-Busユーザーセッションの`XDG_CURRENT_DESKTOP`環境変数がwlr."
+"portalのUseIn値のいずれかに設定されていることを確認します。"
 
 #. tumbleweed/xdo/summary
 msgid "A tool to perform actions on windows"
-msgstr ""
+msgstr "ウィンドウでアクションを実行するためのツール"
 
 #. tumbleweed/xdo/description
 msgid ""
 "The tool lets you perform actions such as inspect, raise, lower, inject "
 "input on X11 windows. Xdo is compatible with both Xorg and Xwayland."
 msgstr ""
+"このツールを使用すると、X11ウィンドウで検査、上昇、下降、入力の注入などのアクションを実行できます。XdoはXorgとXwaylandの両方と互換性があ"
+"ります。"
 
 #. tumbleweed/xf86-input-wacom/xf86-input-wacom-devel/summary
 msgid "Development files for the Xorg X server Wacom input driver"
@@ -8229,17 +8899,18 @@ msgstr "Xorg X server Wacom 入力ドライバ向け開発用ファイル"
 
 #. tumbleweed/xfstests/summary
 msgid "Filesystem regression test suite"
-msgstr ""
+msgstr "ファイル・システムの回帰テスト・スイート"
 
 #. tumbleweed/xfstests/description
 msgid ""
 "The filesystem regression test suite. Contains around 1500+ specific tests "
 "for userspace and kernelspace for several linux filesystems."
 msgstr ""
+"ファイルシステム回帰テストスイート。いくつかのLinuxファイルシステム用のユーザ空間とカーネル空間に関する約1500以上のテストが含まれています。"
 
 #. tumbleweed/xgboost/summary
 msgid "Gradient Boosting (GBDT, GBRT or GBM) Library"
-msgstr ""
+msgstr "勾配ブースティング(GBDT、GBRTまたはGBM)ライブラリ"
 
 #. tumbleweed/xgboost/description
 msgid ""
@@ -8247,6 +8918,8 @@ msgid ""
 "Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, "
 "Hadoop, Spark, Flink and DataFlow"
 msgstr ""
+"スケーラブル、ポータブル、分散勾配ブースティング(GBDT、GBRT、またはGBM)ライブラリ、Python、R、Java、Scala、C++など用。"
+"Hadoop, Spark, Flink,DataFlowの単一マシン上で動作"
 
 #. tumbleweed/xgboost/xgboost-javadoc/summary
 #. tumbleweed/xgboost/xgboost-javadoc/description
@@ -8256,12 +8929,12 @@ msgstr "xgboost 向け javadoc"
 #. tumbleweed/xgboost-predictor/summary
 msgid ""
 "Pure Java implementation of Xgboost predictor for online prediction tasks"
-msgstr ""
+msgstr "オンライン予測タスク用のXgboost予測子のピュアJava実装"
 
 #. tumbleweed/xgboost-predictor/description
 msgid ""
 "Pure Java implementation of XGBoost predictor for online prediction tasks."
-msgstr ""
+msgstr "オンライン予測タスク用のXGBoost予測子のピュアJava実装。"
 
 #. tumbleweed/xgboost-predictor/xgboost-predictor-javadoc/summary
 #. tumbleweed/xgboost-predictor/xgboost-predictor-javadoc/description
@@ -8270,13 +8943,13 @@ msgstr "xgboost-predictor 向け javadoc"
 
 #. tumbleweed/xkb-switch/summary
 msgid "Switch X keyboard layouts from the command line"
-msgstr ""
+msgstr "コマンドラインからXキーボードレイアウトを切り替え"
 
 #. tumbleweed/xkb-switch/description
 msgid ""
 "xkb-switch is a C++ program that allows to query and change the XKB layout "
 "state."
-msgstr ""
+msgstr "xkb-switchは、XKBレイアウト状態の照会と変更を可能にするC++プログラムです。"
 
 #. tumbleweed/xml-security/summary
 msgid "Apache XML Security for Java"
@@ -8289,6 +8962,10 @@ msgid ""
 "Processing, W3C Recommendation 10 December 2002. As of version 1.4, the "
 "library supports the standard Java API JSR-105: XML Digital Signature APIs."
 msgstr ""
+"Apache XML Security for Javaは、XML-Signature Syntax and Processing, W3C "
+"Recommendation 12 February 2002とXML Encryption Syntax and Processing, W3C "
+"Recommendation 10 December 2002をサポートしています。バージョン1.4の時点で、ライブラリは標準のJSR-105:XML "
+"Digital Signature APIsをサポートしています。"
 
 #. tumbleweed/xml-security/xml-security-javadoc/summary
 msgid "Javadoc for xml-security"
@@ -8300,7 +8977,7 @@ msgstr "このパッケージには xml-security 向けの javadoc が含まれ�
 
 #. tumbleweed/xmlstreambuffer/summary
 msgid "XML Stream Buffer"
-msgstr ""
+msgstr "XMLストリームバッファ"
 
 #. tumbleweed/xmlstreambuffer/description
 msgid ""
@@ -8320,6 +8997,15 @@ msgid ""
 "* targeted access to certain parts of an XML info-set are required  and need "
 "to be efficiently processed using stream-based APIs like  SAX or StAX."
 msgstr ""
+"ストリーム・バッファーは、XML情報セットをJavaでストリーム・ベースで表現したものです。ストリーム・バッファーは、XML情報セットの非常に効率的なスト"
+"リーム・ベースのメモリー表現を提供し、任意のJavaベースのXML APIを使用して作成および処理できるように設計されています。概念的には、ストリーム・バ"
+"ッファーはXercesの遅延DOM実装で使用されている表現に似ていますが、重要な違いは、ストリーム・バッファーが親情報や兄弟情報などの階層情報を格納しない"
+"ことです。遅延DOM実装を使用すると、大きなXML文書が解析されても、その文書のサブセットのみを処理する必要がある場合に、メモリー使用量を削減できます。("
+"遅延DOMを使用すると、すべてのドキュメントがトラバースされる場合、メモリと処理の点で非遅延DOMよりもコストが高くなることに注意してください。)ストリー"
+"ムバッファは、次の場合にDOMの効率的な代替として使用できます。\n"
+"*XML情報セットのほとんどまたはすべてが最終的にトラバースされます。\n"
+"*XML情報セットの特定の部分へのターゲット・アクセスが必要であり、SAXやStAXなどのストリーム・ベースのAPIを使用して効率的に処理する必要がありま"
+"す。"
 
 #. tumbleweed/xmlstreambuffer/xmlstreambuffer-javadoc/summary
 msgid "Javadoc for xmlstreambuffer"
@@ -8335,19 +9021,19 @@ msgstr "XMPP 用の コマンドラインインターフェイスツール"
 
 #. tumbleweed/xmppc/description
 msgid "xmppc is a XMPP command line interface client."
-msgstr ""
+msgstr "xmppcは、XMPPコマンドラインインターフェイスクライアントです。"
 
 #. tumbleweed/xmrig/summary
 msgid "XMR mining application"
-msgstr ""
+msgstr "XMRマイニングアプリケーション"
 
 #. tumbleweed/xmrig/description
 msgid "Open source CPU/GPU XMR cryptocurrency miner."
-msgstr ""
+msgstr "オープンソースのCPU/GPU XMR暗号通貨マイナー。"
 
 #. tumbleweed/xonsh/summary
 msgid "A general purpose, Python-powered shell"
-msgstr ""
+msgstr "Pythonを利用した汎用シェル"
 
 #. tumbleweed/xonsh/description
 msgid ""
@@ -8356,6 +9042,8 @@ msgid ""
 "xonsh (pronounced conch) is meant for the daily use of experts and novices "
 "alike."
 msgstr ""
+"xonshは、Pythonを利用したUnix指向のシェル言語であり、コマンド・プロンプトです。この言語は、Python 3."
+"5+にシェルプリミティブを追加したスーパーセットです。xonsh(発音はconch)は、熟練者と初心者の両方が日常的に使用することを目的としています。"
 
 #. tumbleweed/xorg-x11-server/xorg-x11-server-Xvfb/summary
 msgid "Virtual Xserver Xvfb"
@@ -8375,7 +9063,7 @@ msgstr "このパッケージには、追加の X サーバ (Xephyr, Xnest) が�
 
 #. tumbleweed/xorg-x11-server/xorg-x11-server-wrapper/summary
 msgid "Xserver SUID Wrapper"
-msgstr ""
+msgstr "Xserver SUIDラッパー"
 
 #. tumbleweed/xorg-x11-server/xorg-x11-server-wrapper/description
 msgid "This package contains an SUID wrapper for the Xserver."
@@ -8396,10 +9084,16 @@ msgid ""
 "xf86dgaproto, xf86driproto, xf86miscproto, xf86vidmodeproto, xineramaproto, "
 "xproto and xproxymngproto."
 msgstr ""
+"X11開発用の完全なX11プロトコルヘッダ。このパッケージには、以前に分割されたすべてのプロトコルパッケージが含まれています:applewmproto、b"
+"igreqsproto、compositeproto、damageproto、dmxproto、dri2proto、dri3proto、fixesprot"
+"o、fontsproto、glproto、inputproto、kbproto、presentproto、randrproto、recordproto、r"
+"enderproto、resourceproto、scrnsaverproto、trapproto、videoproto、windowswmproto、x"
+"cmiscproto、xextproto、xf86bigfontproto、xf86dgaproto、xf86driproto、xf86miscproto"
+"、xf86vidmodeproto、xineramaproto、xproto、xproxymngproto。"
 
 #. tumbleweed/xsnow/summary
 msgid "A Christmas Animation"
-msgstr ""
+msgstr "クリスマス・アニメーション"
 
 #. tumbleweed/xsnow/description
 msgid ""
@@ -8410,10 +9104,15 @@ msgid ""
 "\n"
 "Xsnow is derived from Rick Jansen's xsnow-1.42."
 msgstr ""
+"Xsnowは、雪やサンタなどの風景をデスクトップ上でアニメーション化するアプリケーションです。これは一種のスクリーンセーバーではありません。雪が降っていて"
+"、あなたがシステムを使っている間、サンタがトナカイとそりに乗っています。Xsnowはほとんどの種類のLinuxで動作し、おそらく他のUnixシステムでも動"
+"作します。\n"
+"\n"
+"XsnowはRick Jansenのxsnow-1.42から派生しました。"
 
 #. tumbleweed/xsom/summary
 msgid "XML Schema Object Model (XSOM)"
-msgstr ""
+msgstr "XMLスキーマオブジェクトモデル(XSOM)"
 
 #. tumbleweed/xsom/description
 msgid ""
@@ -8424,6 +9123,10 @@ msgid ""
 "as defined in the XML Schema spec part 1.  Refer to this specification of "
 "how this object model works."
 msgstr ""
+"XSOM(XML Schema Object Model)は、アプリケーションがXML Schema文書を簡単に構文解析し、その中の情報を検査できるように"
+"するためのライブラリです。これは、XMLスキーマを入力として使用する必要があるアプリケーションに役立つことが期待されています。ライブラリは、XML Sch"
+"ema仕様パート1で定義されている「スキーマ・コンポーネント」の単純な実装です。このオブジェクトモデルがどのように機能するかについては、この仕様を参照して"
+"ください。"
 
 #. tumbleweed/xsom/xsom-javadoc/summary
 msgid "Javadoc for xsom"
@@ -8435,13 +9138,13 @@ msgstr "パッケージには xsom 用の javadoc が含まれています。"
 
 #. tumbleweed/xsv/summary
 msgid "A fast CSV toolkit written in Rust"
-msgstr ""
+msgstr "Rustで書かれた高速なCSVツールキット"
 
 #. tumbleweed/xsv/description
 msgid ""
 "xsv is a command line program for indexing, slicing, analyzing, splitting "
 "and joining CSV files."
-msgstr ""
+msgstr "xsvは、CSVファイルのインデックス作成、スライス、分析、分割、結合を行うためのコマンドラインプログラムです。"
 
 #. tumbleweed/xsv/xsv-bash-completion/summary
 msgid "Bash Completion for xsv"
@@ -8453,13 +9156,13 @@ msgstr "xsv 向け bash 補完スクリプト。"
 
 #. tumbleweed/xterm/xterm-resize/summary
 msgid "Set environment and terminal settings to current window size"
-msgstr ""
+msgstr "環境と端末の設定を現在のウィンドウサイズに設定"
 
 #. tumbleweed/xterm/xterm-resize/description
 msgid ""
 "Prints a shell command for setting the appropriate environment variables to "
 "indicate the current size of the window from which the command is run."
-msgstr ""
+msgstr "コマンドが実行されるウィンドウの現在のサイズを示す適切な環境変数を設定するためのシェルコマンドを出力します。"
 
 #. tumbleweed/xtl/xtl-devel/summary
 msgid "The x template library"
@@ -8467,7 +9170,7 @@ msgstr "X テンプレートライブラリ"
 
 #. tumbleweed/xtl/xtl-devel/description
 msgid "Basic tools (containers, algorithms) used by other quantstack packages."
-msgstr ""
+msgstr "他の quantstack パッケージで使用される基本的なツール(コンテナ、アルゴリズム)。"
 
 #~ msgid ""
 #~ "This package contains all necessary include files, libraries and "
