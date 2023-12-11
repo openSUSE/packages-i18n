@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2022-03-03 01:12+0000\n"
+"PO-Revision-Date: 2023-12-12 02:02+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "i-master/ja/>\n"
@@ -109,6 +109,9 @@ msgid ""
 "subject of change by future version and maintenance updates and system "
 "changes will not be preserved."
 msgstr ""
+"SUSEが提供するImageMagickの設定これはconfig-upstreamよりもセキュリティを意識しています。これは、ユーザが不注意にそれらを使用"
+"することを防ぐために設計上安全でないいくつかのコーダを無効にします。構成は、将来のバージョンおよびメンテナンスの更新によって変更される可能性があり、システ"
+"ムの変更は保持されません。"
 
 #. leap/ImageMagick/ImageMagick-config-7-upstream/description
 msgid ""
@@ -118,6 +121,9 @@ msgid ""
 "environment. Version or maintenance updates will not overwrite user changes "
 "in system configuration."
 msgstr ""
+"upstreamが提供するImageMagickの設定。セキュリティ制限はありません。ImageMagickは、例えばImageTragickやPS/PD"
+"Fコーダの問題によって脆弱になります。信頼できる環境で使用する必要があります。バージョンまたはメンテナンスの更新によって、システム設定のユーザによる変更が"
+"上書きされることはありません。"
 
 #. leap/ImageMagick/ImageMagick-devel-32bit/summary
 #. leap/ImageMagick/ImageMagick-devel/summary
@@ -172,6 +178,8 @@ msgid ""
 "signatures, which are used by Linux kernel integrity subsystem (IMA/EVM). It "
 "can be also used to import keys into the kernel keyring."
 msgstr ""
+"evmctlユーティリティは、リナックスカーネル整合性サブシステム(IMA/"
+"EVM)で使用されるデジタル署名の作成と検証に使用できます。また、カーネルキーリングにキーをインポートするためにも使用できます。"
 
 #. leap/i18nspector/summary
 msgid "Tool for Checking gettext POT/PO/MO Files"
@@ -205,6 +213,8 @@ msgid ""
 "probing tool, a chip dumper, register-level access helpers, EEPROM decoding "
 "scripts, and more."
 msgstr ""
+"このパッケージには、バス・プローブ・ツール、チップ・ダンパー、レジスター・レベル・アクセス・ヘルパー、EEPROMデコード・スクリプトなど、Linux用の"
+"異種I2Cツールのセットが含まれています。"
 
 #. leap/i2pd/summary
 msgid "C++ implementation of an I2P client"
@@ -218,6 +228,10 @@ msgid ""
 "\n"
 "This package contains a C++ implementation of an I2P router."
 msgstr ""
+"Invisible Internet Protocol(I2P)は、汎用の匿名ネットワーク層です。I2Pを介したすべての通信は匿名でエンドツーエンドで暗号"
+"化されており、参加者は実際のIPアドレスを明らかにしません。\n"
+"\n"
+"このパッケージには、I2PルーターのC++実装が含まれています。"
 
 #. leap/i3/summary
 #. leap/i3-gaps/summary
@@ -231,6 +245,8 @@ msgid ""
 "plain text file and extending i3 is possible using its Unix domain socket "
 "and JSON based IPC interface."
 msgstr ""
+"i3はX11用のタイリング・ウィンドウ・マネージャーです。タイリング、スタック、タブのレイアウトをサポートし、動的に処理します。設定はプレーンテキストファ"
+"イルを介して行われ、i3の拡張はUNIXドメインソケットとJSONベースのIPCインターフェースを使用して可能です。"
 
 #. leap/i3/i3-devel/summary
 msgid "Development headers for i3"
@@ -243,7 +259,7 @@ msgstr "i3 ウィンドウマネージャ向け開発用ヘッダです。"
 #. leap/i3-gaps/description
 msgid ""
 "i3-gaps is a fork of i3, which adds features such as gaps between tiles."
-msgstr ""
+msgstr "i3-gapsはi3のフォークで、タイル間のギャップなどの機能を追加します。"
 
 #. leap/i3-gaps/i3-gaps-devel/summary
 msgid "Development headers for i3-gaps"
@@ -270,6 +286,12 @@ msgid ""
 "It follows the i3bar protocol, providing customization such as text "
 "alignment, urgency and color."
 msgstr ""
+"i3blocksは、i3ウィンドウマネージャ用の柔軟なステータス行です。クリック、シグナル、言語に依存しないユーザースクリプトを処理します。\n"
+"\n"
+"各ブロックの内容(例えば、時間、バッテリ状態、ネットワーク状態など)は、ユーザによって提供されるコマンドの出力です。ブロックは、クリック時、指定された時間"
+"間隔、または指定されたシグナル時に更新され、これもユーザーが指定します。\n"
+"\n"
+"i3barプロトコルに従い、テキストの配置、緊急度、色などのカスタマイズを提供します。"
 
 #. leap/i3lock/summary
 msgid "Screen Locker for the i3 Window Manager"
@@ -281,6 +303,8 @@ msgid ""
 "a white screen (you can configure the color/an image). You can return to "
 "your screen by entering your password."
 msgstr ""
+"i3lockはslockのようなシンプルなスクリーンロッカーです。起動すると、白い画面が表示されます(色や画像を設定できます)。パスワードを入力すると、画"
+"面に戻ることができます。"
 
 #. leap/i3lock/i3lock-xlock-compat/summary
 msgid "Xlock-compatibility script which calls i3lock"
@@ -292,6 +316,8 @@ msgid ""
 "your screen. This is handy for hard-coded screen-saver invocations e.g. in "
 "XFCE4, so you can use i3lock instead of xlock with them."
 msgstr ""
+"このパッケージは、i3lockを呼び出して画面をロックするスクリプト/usr/bin/xlockを提供します。これは、例えばXFCE4のようなハードコード"
+"されたスクリーンセーバー呼び出しでは便利なので、xlockの代わりにi3lockを使うことができます。"
 
 #. leap/i3status/summary
 msgid "I3 Status Bar"
@@ -305,6 +331,9 @@ msgid ""
 "updated even under load. It saves a bit of energy by being more efficient "
 "than shell commands."
 msgstr ""
+"i3statusは、i3bar、dzen2、xmobarなどのプログラムのステータスバーを生成するためのプログラムです。一般的には、このようなステータス行"
+"を毎秒更新して、負荷がかかっていてもバーが更新されるようにしたいので、少数のシステムコールを発行します。シェルコマンドよりも効率的であるため、エネルギーを"
+"少し節約できます。"
 
 #. leap/iagno/summary
 msgid "Reversi Game for GNOME"
@@ -348,6 +377,14 @@ msgid ""
 "Authors:\n"
 "--------     IBM"
 msgstr ""
+"主にSLERT上にデプロイされたRT WebSphereアプリケーション用のリアルタイム環境を作成するためにIBMが提供するユーティリティーの集合。また"
+"、ibm-prtmと呼ばれるユーティリティも含まれています。このユーティリティは、SMI割り込みが原因でIBMハードウェア上でSLERTを実行するときに発"
+"生する遅延を除去します。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     IBM"
 
 #. leap/ibmswtpm2/summary
 msgid "IBM's Software TPM 2.0"
@@ -365,6 +402,13 @@ msgid ""
 "It is probably not of much use other than testing the IBM TSS implementation "
 "because of this specific interface."
 msgstr ""
+"TCG TPM 2.0仕様の実装。これは、Microsoftから提供されたTPM仕様Part "
+"3および4のソースコードと、実装を完了するための追加ファイルに基づいています。\n"
+"\n"
+"このTPMエミュレータは、TCPポート(デフォルトは2321および2322)をリッスンし、現在のディレクトリ内のファイル「NVChip」に状態を保存します"
+"。\n"
+"\n"
+"この特定のインターフェースのため、IBM TSS実装をテストする以外には、おそらくあまり役に立たないでしょう。"
 
 #. leap/ibmtss/summary
 msgid "IBM's TPM 2.0 TSS"
@@ -379,6 +423,10 @@ msgid ""
 "It comes with over 100 \"TPM tools\" that can be used for scripted apps, "
 "rapid prototyping, education, and debugging."
 msgstr ""
+"これは、TPM 2.0用のユーザースペースTCGソフトウェアスタック(TSS)です。これは、TCG "
+"TSSワーキンググループが計画しているESAPI、SAPI、およびTCTI APIと同等の機能を実装しています。\n"
+"\n"
+"スクリプト化されたアプリケーション、ラピッドプロトタイピング、教育、デバッグに使用できる100以上の「TPMツール」が付属しています。"
 
 #. leap/ibmtss/ibmtss-base/summary
 msgid "IBM's TPM 2.0 TSS shared files"
@@ -404,7 +452,7 @@ msgstr "管理用の InfiniBand fabric シミュレータ"
 msgid ""
 "ibsim provides simulation of infiniband fabric for using with OFA OpenSM, "
 "diagnostic and management tools."
-msgstr ""
+msgstr "ibsimは、OFA OpenSM、診断および管理ツールで使用するためのinfinibandファブリックのシミュレーションを提供します。"
 
 #. leap/ibus/summary
 msgid "The \"Intelligent Input Bus\" input method"
@@ -455,6 +503,8 @@ msgid ""
 "Chinese, as they are (by far) the majority of Cangjie and Quick users. "
 "However, it should work for others as well (e.g to input Simplified Chinese)."
 msgstr ""
+"蒼頡およびクイック入力メソッドのユーザー用のIBUエンジン。これは主に繁体字中国語を入力したい香港の人々を対象としており、彼らは(群を抜いて)Cangji"
+"eとQuickのユーザーの大多数を占めています。ただし、他の言語でも動作するはずです(簡体字中国語の入力など)。"
 
 #. leap/ibus-chewing/summary
 msgid "The Chewing engine for IBus input platform"
@@ -480,7 +530,7 @@ msgstr ""
 
 #. leap/ibus/ibus-dict-emoji/summary
 msgid "Emoji dictionary for IBus"
-msgstr ""
+msgstr "IBU用絵文字辞書"
 
 #. leap/ibus/ibus-dict-emoji/description
 msgid ""
@@ -595,7 +645,7 @@ msgstr ""
 
 #. leap/ibus-rime/summary
 msgid "Rime for Linux/IBus"
-msgstr ""
+msgstr "Linux/IBU用Rime"
 
 #. leap/ibus-rime/description
 msgid "Rime Input Method Engine for Linux/IBus"
@@ -826,6 +876,8 @@ msgid ""
 "provide Chinese extra phrases for ibus-table based IME, such as ibus-table-"
 "zhengma, ibus-table-wubi, ibus-table-cangjie5, ibus-table-erbi and etc."
 msgstr ""
+"これは、ibus-table-zhengma、ibus-table-wubi、ibus-table-cangjie5、ibus-table-erbiなど"
+"、ibus-tableベースのIMEに中国語の追加フレーズを提供しています。"
 
 #. leap/ibus-table-extraphrase/ibus-table-extraphrase-devel/summary
 msgid "Development package for ibus-table-extraphrase"
@@ -901,6 +953,9 @@ msgid ""
 "Viqr, Yawerty. This package contains only COPYING and Documents, Please "
 "select the table you want to use."
 msgstr ""
+"このパッケージには、CNS11643、Compose、Emoji、Ipx-x-sampa、Latex、Rustrad、Thai、Translit-ua、T"
+"ranslit、Viqr、Yawertyなど、中国語以外のすべてのibus用テーブルが含まれています。このパッケージには、著作権表示とドキュメントのみが含"
+"まれています。使用するテーブルを選択してください。"
 
 #. leap/ibus-table-others/ibus-table-rusle/summary
 msgid "Rusle table for ibus-table"
@@ -1028,7 +1083,7 @@ msgstr "入力補完ユーティリティ"
 msgid ""
 "Ibus-typing-booster is a context sensitive completion input method to "
 "speedup typing."
-msgstr ""
+msgstr "Ibus-typing-boosterは、タイピングを高速化するための文脈依存型補完入力法です。"
 
 #. leap/ibus-unikey/summary
 msgid "Vietnamese engine for IBus input platform"
@@ -1063,6 +1118,18 @@ msgid ""
 "various fabric quality and health checks on                           the "
 "given links and nodes in a specific path."
 msgstr ""
+" ibutilsパッケージは、InfiniBandファブリックの状態をチェックする一連の診断ツールを提供します。\n"
+"\n"
+"パッケージコンポーネント: ibis:  IBインターフェイス - IBファブリック上でさまざまなMADを送信するためのインターフェイスを提供するTCLシ"
+"ェル。これは、実際にIBハードウェアにアクセスするコンポーネントです。\n"
+"\n"
+"ibdm: IB Data Model(IBデータモデル) - IBファブリック分析を提供するライブラリ。\n"
+"\n"
+"ibmgtsim: IBファブリック・シミュレータ。IBツールの開発に役立ちます。\n"
+"\n"
+"ibdiag: このパッケージには、上記の機能を有効にするためのユーザーインタフェースを提供する2つのツールが用意されています。 - ibdiagnet:"
+" IBファブリックに対してさまざまな品質および状態チェックを実行します。- ibdiagpath: "
+"特定のパス内の指定されたリンクおよびノードに対して、さまざまなファブリック品質およびヘルス・チェックを実行します。"
 
 #. leap/ibutils/ibutils-devel/summary
 msgid "SDK for OpenIB Mellanox InfiniBand Diagnostic Tools"
@@ -1102,6 +1169,30 @@ msgid ""
 "functionality:             - ibdiagui:   A GUI wrapper for ibdiagnet and "
 "ibdiagpath."
 msgstr ""
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"ibutils-uiパッケージは、InfiniBandファブリックの状態をチェックする一連のグラフィカルUIツールを提供します。\n"
+"\n"
+"パッケージ・コンポーネント: ibdiag:このパッケージは、上記の機能を有効にするためのユーザー・インターフェースを提供する1つのツールを提供します。 "
+"- ibdiagui:　ibdiagnetおよびibdiagpath用のGUIラッパー。"
 
 #. leap/icc-examin/summary
 msgid "ICC profile viewer and colour visualisation"
@@ -1114,6 +1205,8 @@ msgid ""
 "samples (named colour profiles), gamut visualisations (vrml), video card "
 "gamma tables (Xorg/XFree86/osX)."
 msgstr ""
+"ICC Examineは、ICCプロファイル、測定データ(CGATS)、カラーサンプル(カラープロファイルと呼ばれる)、色域可視化(vrml)、ビデオカー"
+"ドガンマテーブル(Xorg/XFree86/osX)の内部を監視することを目的とした小さなユーティリティ(unix名:iccexamin)です。"
 
 #. leap/icc-examin/icc-examin-lang/summary
 msgid "Translations for package icc-examin"
@@ -1254,6 +1347,8 @@ msgid ""
 "characterisation data for coated, webcoated, uncoated, uncoatedyellowish and "
 "SC paper."
 msgstr ""
+"ISO 12647-2に従った特性データの印刷。これらは、コート紙、webcoated紙、非コート紙、uncoatedyellowish紙およびSC紙のC"
+"MYK特性データです。"
 
 #. leap/icc-profiles-openicc/icc-targets-npes/summary
 msgid "NPES Printing Characterisation Data"
@@ -1282,6 +1377,13 @@ msgid ""
 "Authors:\n"
 "--------     Erica Andrews PhrozenSmoke@yahoo.com"
 msgstr ""
+"IceWM Control Panel(IceWMCP)は、フル機能のGtkベースのIceWM用コントロールパネルです。IceWMで実行することを意図して"
+"いますが、汎用コントロールパネルとして任意のウィンドウマネージャで使用できます。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Erica Andrews PhrozenSmoke@yahoo.com"
 
 #. leap/iceauth/summary
 msgid "Utility to edit and display the ICE authorization information"
@@ -1321,6 +1423,9 @@ msgid ""
 "This package contains the upstream HTML documentation and the sample "
 "configuration files from upstream."
 msgstr ""
+"IcecastはMP3とOGGのストリーミングサーバーで、MP3とOGGオーディオで多くのクライアントにサービスを提供することができます。\n"
+"\n"
+"このパッケージには、アップストリームHTMLドキュメントと、アップストリームのサンプル設定ファイルが含まれています。"
 
 #. leap/icecream/summary
 #. leap/icecream/libicecream-devel/summary
@@ -1337,7 +1442,7 @@ msgstr "Clang 用の分散コンパイルラッパ"
 
 #. leap/icecream/icecream-clang-wrappers/description
 msgid "Wrapper symlinks for clang/clang++ for icecream distributed building."
-msgstr ""
+msgstr "clang/clang++のシンボリックリンクをアイスクリームの分散ビルド用にラッパーします。"
 
 #. leap/icecream-monitor/summary
 msgid "Monitor Program for the icecream Compile Farm"
@@ -1395,6 +1500,8 @@ msgid ""
 "listeners can access the stream.  With this layout, this source client can "
 "be situated remotely from the icecast server."
 msgstr ""
+"ICEは、ストリーミングサーバのソースクライアントです。このクライアントの目的は、1人以上のリスナーがストリームにアクセスできるように、ストリーミング・サ"
+"ーバーにオーディオ・ストリームを提供することです。このレイアウトでは、このソース・クライアントをアイスキャスト・サーバーから離れた場所に配置できます。"
 
 #. leap/icewm/summary
 msgid "Window Manager with a Taskbar"
@@ -1431,6 +1538,11 @@ msgid ""
 "\n"
 "Configuration files from upstream provider without suse branding"
 msgstr ""
+"Windows 95、OS/2 Warp 3、OS/2 Warp 4、Motifの外観をエミュレートし、"
+"これらのシステムから最高の機能を取り入れようとするX Window System用のウィンドウマネージャ。IceWMは、複数のワークスペース、不透明な移動"
+"とサイズ変更、タスクバー、ウィンドウリスト、メールボックスステータス、デジタル時計を特徴としています。速くて小さいです。\n"
+"\n"
+"suseブランド化されていないアップストリームプロバイダーからの設定ファイル"
 
 #. leap/icewm/icewm-default/summary
 msgid "Window Manager with a Taskbar -- Default Version"
@@ -1470,6 +1582,8 @@ msgid ""
 "manager. Most of them have been taken from the original 0.9.42 themes "
 "package. Others have been taken from http://icewm.themes.org."
 msgstr ""
+"このパッケージには、一般的なIceWMウィンドウマネージャ用のテーマのコレクションが含まれています。それらのほとんどは、オリジナルの0.9."
+"42テーマパッケージから取られています。その他はhttp://icewm.themes.orgから取られました。"
 
 #. leap/icinga2/summary
 msgid "Network monitoring application"
@@ -1499,7 +1613,7 @@ msgstr "共通 Icinga 2 設定"
 msgid ""
 "This subpackage provides common directories, and the UID and GUID "
 "definitions among Icinga 2 related packages."
-msgstr ""
+msgstr "このサブパッケージは、共通ディレクトリと、Icinga 2関連パッケージ間のUIDおよびGUID定義を提供します。"
 
 #. leap/icinga2/icinga2-doc/summary
 msgid "Documentation for Icinga 2"
@@ -1552,6 +1666,9 @@ msgid ""
 "It comes with a completely new design and many user-friendly enhancements to "
 "find the relevant information even faster."
 msgstr ""
+"Icinging a Web 2は、a 2を検出するための監視Webインターフェースです。\n"
+"\n"
+"これには、まったく新しいデザインと、関連する情報をさらに迅速に見つけるための多くのユーザーフレンドリーな拡張機能が付属しています。"
 
 #. leap/icingaweb2/icingaweb2-common/summary
 msgid "Common files for Icinga Web 2 and the Icinga CLI"
@@ -1589,6 +1706,8 @@ msgid ""
 "on application level. Business processes are displayed in a tree or list "
 "overview."
 msgstr ""
+"アプリケーションのトップレベル・ビューをグラフィカル・エディターで作成します。ルールは、既存のホストとサービス間の依存関係を表現し、アプリケーションレベル"
+"で警告できるようにします。ビジネスプロセスは、ツリーまたはリストの概要に表示されます。"
 
 #. leap/icingaweb2-module-reactbundle/summary
 msgid "ReactPHP-based 3rd party libraries"
@@ -1654,6 +1773,8 @@ msgid ""
 "operators as well as a set of support functions that have proven to be "
 "useful in program maintenance."
 msgstr ""
+"Icmakeは、プログラマがプログラム言語(よく知られたC言語に非常によく似ている)を使用して、(複雑な)プログラム保守に含まれるアクションを定義すること"
+"を可能にします。このために、icmakeは、プログラム保守に有用であることが証明されている一連のサポート機能とともに、様々な特殊演算子を提供しています。"
 
 #. leap/icmpinfo/summary
 msgid "A Tool for Looking at ICMP Messages"
@@ -1661,7 +1782,7 @@ msgstr "ICMP メッセージを見るためのツール"
 
 #. leap/icmpinfo/description
 msgid "A tool for looking at the ICMP messages received on the running host."
-msgstr ""
+msgstr "実行中のホストで受信したICMPメッセージを調べるためのツール。"
 
 #. leap/icmptunnel/summary
 msgid "A tunnel for wrapping IP traffic in ICMP"
@@ -1699,7 +1820,7 @@ msgstr "Icon 名指定マッピングスクリプト"
 msgid ""
 "A script for creating a symlink mapping for deprecated icon names to the new "
 "icon naming specification names for desktop icon themes."
-msgstr ""
+msgstr "デスクトップ・アイコン・テーマの新しいアイコン・ネーミング仕様名への非推奨アイコン名のsymlinkマッピングを作成するスクリプト。"
 
 #. leap/icoutils/summary
 msgid "Extracting and Converting Microsoft Icon and Cursor Files"
@@ -1741,6 +1862,11 @@ msgid ""
 "\n"
 "This subpackage contains the runtime programs for interacting with ICU."
 msgstr ""
+"ICUは、カレンダ、多数の文字セットの変換、言語に依存した照合、日付と時刻のフォーマット、多数のロケールのサポート、メッセージ・カタログとリソース、メッセ"
+"ージのフォーマット、正規化、数値と通貨のフォーマット、タイム・ゾーンのサポート、翻字、および単語、行、文の分割など、広範なUnicodeとロケールのサポー"
+"トを提供するCおよびC++ライブラリのセットです。\n"
+"\n"
+"このサブパッケージには、ICUと対話するためのランタイムプログラムが含まれています。"
 
 #. leap/icu.691/icu.691-devel/summary
 #. leap/icu/libicu-devel-32bit/summary
@@ -1792,6 +1918,13 @@ msgid ""
 "remaining as compatible as possible with the original Java text and "
 "internationalization API design."
 msgstr ""
+"International Components for Unicode(ICU)ライブラリは、さまざまなプラットフォームで堅牢でフル機能のユニコードサー"
+"ビスを提供します。ICUは、ユニコード標準の最新バージョンをサポートし、補助文字(GB 18030レパートリのサポートに必要)をサポートします。\n"
+"\n"
+"Javaはグローバルプログラムのための非常に強力な基盤を提供し、IBMとICUチームはSunのJavaにグローバリゼーション技術を提供する上で重要な役割を"
+"果たしました。しかし、リリーススケジュールが長いため、Javaは進化する標準に常に最新の状態を保つことができません。ICUチームは、JavaのUnicod"
+"eと国際化のサポートを引き続き拡張し、パフォーマンスの向上、Unicode標準への準拠、より豊富なAPIの提供に重点を置きながら、元のJavaテキストと国"
+"際化API設計との可能な限りの互換性を維持しています。"
 
 #. leap/icu4j/icu4j-charset/summary
 msgid "Charset converter library of icu4j"
@@ -1840,6 +1973,8 @@ msgid ""
 "This package contains simple example applications that make use of id3lib, a "
 "software library for ID3v1 and ID3v2 tag manipulation."
 msgstr ""
+"このパッケージには、ID3v1およびID3v2タグ操作のためのソフトウェアライブラリであるid3libを利用する簡単なサンプルアプリケーションが含まれてい"
+"ます。"
 
 #. leap/id3v2/summary
 msgid "A Command Line Editor for ID3 V2 tags"
@@ -1870,6 +2005,11 @@ msgid ""
 "- Detects cyclic dependencies in your include files \n"
 "- Detects inclusions that could be pruned"
 msgstr ""
+"Idepは、C++インクルードファイルの依存関係をチェックするために使用できます。次の機能があります。\n"
+"- インクルードファイルの階層を出力する\n"
+"- 各ヘッダーファイルにあるクラス定義を一覧表示します。\n"
+"- インクルードファイル内の循環依存関係を検出します。\n"
+"- プルーニング可能なインクルージョンを検出します。"
 
 #. leap/ido/ido-devel/summary
 msgid "Development files for Indicator Display Objects"
@@ -1898,6 +2038,9 @@ msgid ""
 "ordinary words.  Database queries can be issued from the command line or "
 "from within Emacs, serving as an augmented tags facility."
 msgstr ""
+"Mkidは、シンプルで高速、大容量、言語に依存しない識別子データベースツールです。実際には、識別子という用語はあまりにも限定的です。mkidは、あらゆる形"
+"式のプログラム識別子、リテラル番号、または通常の単語などのトークンを格納します。データベースクエリは、コマンドラインから、またはEmacs内から発行するこ"
+"とができ、拡張タグ機能として機能します。"
 
 #. leap/idutils/idutils-lang/summary
 msgid "Translations for package idutils"
@@ -1919,6 +2062,8 @@ msgid ""
 "front-end. You can use any compatible, commercial, or freeware Z39.50 client "
 "to access data stored in Zebra."
 msgstr ""
+"Zebraは、Z39.50フロントエンドを備えたフィールドフリーテキストインデックスおよび検索エンジンです。互換性のある市販またはフリーウェアのZ39."
+"50クライアントを使用して、Zebraに保存されているデータにアクセスできます。"
 
 #. leap/idzebra/idzebra-doc/summary
 msgid "Documentation for the idzebra Package"
@@ -1929,6 +2074,8 @@ msgid ""
 "This package contains the documentation for Zebra.  Zebra is a fielded free "
 "text indexing and retrieval engine with a Z39.50 front-end."
 msgstr ""
+"このパッケージには、Zebraのドキュメントが含まれています。Zebraは、Z39."
+"50フロントエンドを備えたフィールドフリーテキストインデックスおよび検索エンジンです。"
 
 #. leap/iec16022/summary
 msgid "DataMatrix 2D barcode generator"
@@ -1939,6 +2086,8 @@ msgid ""
 "With iec16022 you can produce 2D barcodes. Also known as Data Matrix. These "
 "barcodes are defined in ISO/IEC 16022."
 msgstr ""
+"iec16022を使用すると、2Dバーコードを作成できます。データマトリックスとも呼ばれます。これらのバーコードは、ISO/IEC "
+"16022で定義されています。"
 
 #. leap/ifplugd/summary
 msgid "Daemon Activating Network Interfaces on Cable Plug"
@@ -1985,14 +2134,17 @@ msgid ""
 "\"AFC\" protocol, over the normal USB cable in order to access the iPhone's, "
 "iPod Touch's or iPad's media files under Linux."
 msgstr ""
+"iUseは`libimobiledevice`を使ってデバイスに接続するFUSEファイルシステムドライバで、ジェイルブレイクの必要はありません。Linux"
+"でiPhone、iPod "
+"Touch、iPadのメディアファイルにアクセスするために、通常のUSBケーブルでネイティブのApple「AFC」プロトコルを使用しています。"
 
 #. leap/intel-graphics-compiler/iga/summary
 msgid "Intel Graphics Assembler"
-msgstr ""
+msgstr "インテル(R)グラフィックス・アセンブラ"
 
 #. leap/intel-graphics-compiler/iga/description
 msgid "Assembler and disassembler for OpenCL kernels."
-msgstr ""
+msgstr "OpenCLカーネル用のアセンブラおよび逆アセンブラ。"
 
 #. leap/igerman98/igerman98-doc/summary
 msgid "Documentation for German dictionaries"
@@ -2019,6 +2171,9 @@ msgid ""
 "URL, network metadata service, hypervisor bridge, etc.) and applies the "
 "configuration."
 msgstr ""
+"Ignitionは、initramfsの実行中にディスクと構成ファイルを操作するためのユーティリティーです。これには、ディスクのパーティション分割、パーテ"
+"ィションのフォーマット、ファイル(通常のファイル、systemdユニットなど)の書き込み、およびユーザーの作成が含まれます。最初の起動時に、Ignitio"
+"nは真実のソース(リモートURL、ネットワークメタデータサービス、ハイパーバイザーブリッジなど)から設定を読み取り、設定を適用します。"
 
 #. leap/ignition-config-transpiler/summary
 msgid "Tool to convert a yaml config file into a Ignition configuration"
@@ -2031,10 +2186,13 @@ msgid ""
 "file for ignition. This resulting file can be provided to a machine with "
 "Ignition installed when it first boots to provision the machine."
 msgstr ""
+"Ignition Config Transpiler(略して「fcct」)は、人に優しいyaml設定ファイルを、ignition用のJSONファイルに変換"
+"するユーティリティです。この結果のファイルは、Ignitionがインストールされたマシンが最初に起動してマシンをプロビジョニングするときに、マシンに提供で"
+"きます。"
 
 #. leap/ignition/ignition-dracut-grub2/summary
 msgid "Files to trigger ignition firstboot with grub2"
-msgstr ""
+msgstr "grub2で最初の起動をトリガするファイル"
 
 #. leap/ignition/ignition-dracut-grub2/description
 msgid ""
@@ -2042,6 +2200,8 @@ msgid ""
 "firstboot_happened and ignition.firstboot and a matching service which "
 "creates firstboot_happened after the first boot."
 msgstr ""
+"/boot/writable/firstboot_happenedとignition.firstbootに基づいてignition."
+"firstbootを設定するGRUB2設定と、最初のブート後にfirstboot_happenedを作成する一致サービス。"
 
 #. leap/ignuit/summary
 msgid "Flashcard learning system"
@@ -2054,6 +2214,9 @@ msgid ""
 "It can be used for both long-term learning and cramming. Ignuit can import "
 "and export several file formats, including CSV."
 msgstr ""
+"Ignuitは、ライトナーのフラッシュカードシステムをベースにした暗記装置です。GNOMEのルック・アンド・フィール、豊富なクイズ・オプション、そしてUT"
+"F-8をサポートしています。長期学習にも、詰め込みにも使えます。Ignuitでは、CSVを含むいくつかのファイル形式をインポートおよびエクスポートできます"
+"。"
 
 #. leap/iio-sensor-proxy/summary
 msgid "Proxy for IIO and input subsystems"
@@ -2132,7 +2295,7 @@ msgstr ""
 
 #. leap/ima-inspect/summary
 msgid "Output IMA/EVM extended attributes in a human readable format"
-msgstr ""
+msgstr "人間が読める形式でのIMA/EVM拡張属性の出力"
 
 #. leap/ima-inspect/description
 msgid ""
@@ -2140,14 +2303,16 @@ msgid ""
 "the security.ima and security.evm extended attributes in human readable "
 "format."
 msgstr ""
+"これは、ima-evm-utilsを補完する小さなユーティリティで、人間が読める形式でsecurity.imaおよびsecurity."
+"evm拡張属性を検査する方法があります。"
 
 #. leap/imageburner/summary
 msgid "Image burner"
-msgstr ""
+msgstr "イメージバーナー"
 
 #. leap/imageburner/description
 msgid "An image burner, written especially for Elementary OS."
-msgstr ""
+msgstr "Elementary OS用に特別に書かれたイメージバーナー。"
 
 #. leap/imageburner/imageburner-lang/summary
 msgid "Translations for package imageburner"
@@ -2159,7 +2324,7 @@ msgstr "\"imageburner\" パッケージ向けの翻訳データです。"
 
 #. leap/imagej/summary
 msgid "A Java image processing program"
-msgstr ""
+msgstr "Java画像処理プログラム"
 
 #. leap/imagej/description
 msgid ""
@@ -2181,15 +2346,26 @@ msgid ""
 "ImageJ can be extended via Java plugins, and has a built-in editor and "
 "compiler."
 msgstr ""
+"ImageJは、NIH Image for the "
+"Macintoshにヒントを得たマルチスレッド画像処理プログラムで、アプレットまたはスタンドアロンプログラムとして実行されます。\n"
+"\n"
+"TIFF、GIF、JPEG、BMP、DICOM、FITS、「raw」などの多くの画像フォーマットを読み込むことができ、8/16/32ビット画像の表示、編集"
+"、anazlye、処理、印刷が可能です。これは、単一のウィンドウを共有する一連の画像である「スタック」をサポートします。これは、ユーザ定義の選択の面積およ"
+"び画素値の統計を計算し、距離および角度を測定し、密度ヒストグラムおよび線プロファイルプロットを作成し、コントラスト操作、鮮鋭化、平滑化、エッジ検出およびメ"
+"ディアンフィルタリングなどの標準的な画像処理機能をサポートすることができます。スケーリング、回転、フリップなどのジオメトリ変換を行います。最大32:1/1"
+":32まで拡大/縮小します。空間キャリブレーションを使用すると、ミリメートルなどの単位で実際の寸法を測定することができます。濃度またはグレースケールのキャ"
+"リブレーションも利用できます。\n"
+"\n"
+"ImageJは、Javaプラグインを介して拡張することができ、組み込みのエディタとコンパイラを備えています。"
 
 #. leap/imagewriter/summary
 msgid "Utility for writing disk images to USB keys"
-msgstr ""
+msgstr "ディスクイメージをUSBキーに書き込むユーティリティ"
 
 #. leap/imagewriter/description
 msgid ""
 "A graphical utility for writing raw disk images & hybrid ISOs to USB keys."
-msgstr ""
+msgstr "rawディスクイメージとハイブリッドISOをUSBキーに書き込むためのグラフィカルユーティリティ。"
 
 #. leap/imake/summary
 msgid "C preprocessor interface to the make utility"
@@ -2226,6 +2402,9 @@ msgid ""
 "\n"
 "After installation, activate the servers in the file /etc/inetd.conf."
 msgstr ""
+"このパッケージには、IMAP4、POP2、およびPOP3メールサーバーが含まれています。\n"
+"\n"
+"インストール後、ファイル/etc/inetd.confでサーバーをアクティブにします。"
 
 #. leap/imap/imap-devel/summary
 #. leap/imap/libc-client2007e_suse/summary
@@ -2256,6 +2435,11 @@ msgid ""
 "IMAPFilter uses the Lua programming language as a configuration and "
 "extension language."
 msgstr ""
+"IMAPFilterは、メールフィルタリングユーティリティです。Internet Message Access Protocol(IMAP)を使用してリモ"
+"ートメールサーバに接続し、検索クエリをサーバに送信し、その結果に基づいてメールボックスを処理します。これは、同じまたは異なるメールサーバのメールボックスに"
+"あるメッセージの削除、コピー、移動、フラグ付けなどに使用できます。IMAPプロトコルの4rev1および4バージョンがサポートされています。\n"
+"\n"
+"IMAPFilterでは、構成および拡張言語としてLuaプログラム言語を使用しています。"
 
 #. leap/imb_2021_2-gnu-mpich-hpc/imb-gnu-mpich-hpc/summary
 msgid "Dependency package for imb_2021_2-gnu-mpich-hpc"
@@ -2359,6 +2543,8 @@ msgid ""
 "for point-to-point and global communication operations for a range of "
 "message sizes."
 msgstr ""
+"インテルMPIベンチマーク(IMB)は、さまざまなメッセージサイズに対して、ポイントツーポイントおよびグローバル通信操作の一連のMPIパフォーマンス測定を"
+"実行します。"
 
 #. leap/imgen/summary
 msgid "Mellanox Firmware Generator"
@@ -2367,7 +2553,7 @@ msgstr "Mellanox ファームウェア生成"
 #. leap/imgen/description
 msgid ""
 "FW Image Generator from FW release for all Mellanox devices (except Anafa)"
-msgstr ""
+msgstr "すべてのMellanoxデバイス(Anafaを除く)用のFWリリースのFW Image Generator"
 
 #. leap/imgp/summary
 msgid "Image resizer and rotator"
@@ -2417,10 +2603,13 @@ msgid ""
 "No specific build process is required. You can add the .cpp files to your "
 "project or #include them from an existing file."
 msgstr ""
+"ImGuiは、アプリケーション/エンジンに簡単にコピーしてコンパイルできるいくつかのファイル内に自己完結しています。\n"
+"\n"
+"特定のビルドプロセスは必要ありません。cppファイルをプロジェクトに追加することも、#既存のファイルから含めることもできます。"
 
 #. leap/imgvtopgm/summary
 msgid "Palm Pilot Image Viewer to PGM Converter"
-msgstr ""
+msgstr "Palm Pilot Image Viewer-PGMコンバータ"
 
 #. leap/imgvtopgm/description
 msgid ""
@@ -2431,6 +2620,11 @@ msgid ""
 "If you are looking for a cool (and free) image viewer for your Pilot, you "
 "should look at TinyViewer (http://www.righto.com/pilot/tv.html)."
 msgstr ""
+"Pilot Image ViewerのpdbファイルをポータブルGraymapsおよびポータブルビットマップとの間で変換するためのツール。これらのツールは"
+"、グレースケール画像とモノクロ画像をサポートしており、圧縮の有無、メモの有無にかかわらず使用できます。\n"
+"\n"
+"Pilot 用のクールな(そして無料の)画像ビューアを探している人は、TinyViewer(http://www.righto.com/pilot/tv."
+"html) を見てください。"
 
 #. leap/imhangul/summary
 msgid "GTK+-3.0 Hangul Input Modules"
@@ -2454,6 +2648,10 @@ msgid ""
 "This subpackage contains the include files and library links for developing "
 "against the IML library."
 msgstr ""
+"IMLパッケージは、線形方程式の非特異系を解き、線形方程式の任意の形状系を解き、mod p行列演算を実行するルーチンを提供します。たとえば、row-"
+"echelon形式、行列式、ランクプロファイル、mod p行列の逆行列を計算します。\n"
+"\n"
+"このサブパッケージには、IMLライブラリに対して開発するためのインクルードファイルとライブラリリンクが含まれています。"
 
 #. leap/imlib2/summary
 #. leap/imlib2/libImlib2-1/summary
@@ -2488,7 +2686,7 @@ msgstr "Imlib 2 - プラグイン フィルタ"
 
 #. leap/imlib2/imlib2-filters/description
 msgid "This package has the basic set of plugin filters that come with Imlib2."
-msgstr ""
+msgstr "このパッケージには、Imlib2に付属するプラグイン・フィルターの基本セットが含まれています。"
 
 #. leap/imlib2/imlib2-loaders/summary
 msgid "Imlib 2 - image loaders"
@@ -2499,6 +2697,7 @@ msgid ""
 "This package contains the imlib2 image loaders for: argb, bmp, gif, jpeg, "
 "png, pnm, tga, tiff, xpm"
 msgstr ""
+"このパッケージには、argb、bmp、gif、jpeg、png、pnm、tga、tiff、xpm用のimlib2イメージローダーが含まれています。"
 
 #. leap/imv/summary
 msgid "Image viewer for X11/Wayland"
@@ -2523,6 +2722,8 @@ msgid ""
 "allows input from it's own (included) gpm, or from jamd, or from XFree86 "
 "ZAxis mouse wheel conversion."
 msgstr ""
+"X11用のデーモン。マウスホイールの動きを監視し、キープレスとして出力します。ウィンドウごとに個別に設定できます。また、独自の(付属の)gpm、jamd、"
+"またはXFree86 ZAxisマウスホイール変換からの入力も可能です。"
 
 #. leap/imx-usb-loader/summary
 msgid "Vybrid/i.MX recovery utility"
@@ -2537,6 +2738,11 @@ msgid ""
 "\n"
 "The utility support USB and UART as serial link."
 msgstr ""
+"このユーティリティを使用すると、Serial Download Protocol(SDP)を介してFreescale i.MX5/"
+"i.MX6およびVybrid SoC上のコードをダウンロードして実行できます。ボードによっては、通常、SoCをシリアルダウンロードブートモードにするための"
+"何らかのリカバリボタンがあります。ハードウェアのドキュメントを確認してください。\n"
+"\n"
+"このユーティリティは、シリアルリンクとしてUSBとUARTをサポートしています。"
 
 #. leap/incidenceeditor/summary
 msgid "Incidenceeditor library"
@@ -2579,16 +2785,22 @@ msgid ""
 "this file (for both .cc and .h files), and replacing includes with forward "
 "declarations when possible."
 msgstr ""
+"「使用するものを含める」とは、foo.cc(またはfoo.cpp)で使用するすべてのシンボル(型、関数、変数、またはマクロ)に対して、foo."
+"ccまたはfoo.hのいずれかに、そのシンボルの宣言をエクスポートする.hファイルを含める必要があることを意味します。include-what-you-"
+"useプログラムは、ソースファイルのインクルードを分析してinclude-what-you-use違反を見つけ、それらの修正を提案するツールです。\n"
+"\n"
+"include-what-you-useの主な目的は、余分なincludeを削除することです。これは、(.ccファイルと.hファイルの両方に対して)このフ"
+"ァイルに実際に必要とされないインクルードを見つけることと、可能であればインクルードを前方宣言に置き換えることの両方によって行われます。"
 
 #. leap/include-what-you-use/include-what-you-use-tools/summary
 msgid "Additional tools to use include-what-you-use effectively"
-msgstr ""
+msgstr "使用する追加ツールには、効果的に使用するものが含まれます。"
 
 #. leap/include-what-you-use/include-what-you-use-tools/description
 msgid ""
 "This package contains additional scripts for using include-what-you-use as "
 "automated refactoring tool."
-msgstr ""
+msgstr "このパッケージには、include-what-you-useを自動リファクタリング・ツールとして使用するための追加スクリプトが含まれています。"
 
 #. leap/indent/summary
 msgid "Indent Formats C Source Code"
@@ -2628,6 +2840,8 @@ msgid ""
 "in its analysis. (For example, assignments to struct fields are never marked "
 "as ineffectual.) It should, however, never give any false positives."
 msgstr ""
+"このツールは、分析でタイプ情報を考慮しないため、いくつかのケースを見逃しています。(たとえば、構造体フィールドへの代入が無効としてマークされることはありま"
+"せん)。ただし、誤検出が発生することはありません。"
 
 #. leap/infinipath-psm/infinipath-psm-devel/summary
 #. leap/infinipath-psm/libinfinipath4/summary
@@ -2650,7 +2864,7 @@ msgid ""
 "InfluxDB is an distributed time series database with no external "
 "dependencies. It's useful for recording metrics, events, and performing "
 "analytics."
-msgstr ""
+msgstr "InfluxDBは、外部依存関係のない分散時系列データベースです。これは、メトリック、イベントを記録し、分析を実行するのに便利です。"
 
 #. leap/influxdb/influxdb-devel/summary
 msgid "InfluxDB development files"
@@ -2692,7 +2906,7 @@ msgstr "kiwi job からの virt-builder インデックスファイル部分を�
 msgid ""
 "OBS kiwi_post_run hook to create virt-builder site index part out of a kiwi "
 "job."
-msgstr ""
+msgstr "OBS kiwi_post_runフックは、kiwiジョブからvirt-builderサイト索引部分を作成します。"
 
 #. leap/ini4j/summary
 #. leap/ini4j/ini4j-javadoc/summary
@@ -2706,6 +2920,8 @@ msgid ""
 "Windows .ini format. Additionally, the library includes Java Preferences API "
 "implementation based on the .ini file."
 msgstr ""
+"[ini4j]は、Windows.ini形式の設定ファイルを処理するための単純なJava APIです。さらに、ライブラリには、."
+"iniファイルに基づくJavaPreferencesAPI実装が含まれています。"
 
 #. leap/initviocons/summary
 msgid "Terminal Initialization, e.g. for the iSeries Virtual Console"
@@ -2750,6 +2966,10 @@ msgid ""
 "\n"
 "Files mandatory for development."
 msgstr ""
+"injeqtは、MOC(メタオブジェクトコンパイラ)に基づくQtのリフレクション上に、強力で信頼性の高い依存性注入フレームワークを構築しようとする試みです"
+"。\n"
+"\n"
+"開発に必須なファイル。"
 
 #. leap/inkscape/summary
 msgid "Vector Illustration Program"
@@ -2807,7 +3027,7 @@ msgstr ""
 
 #. leap/inkscape/inkscape-extensions-scribus/summary
 msgid "Scribus extensions for Inkscape"
-msgstr ""
+msgstr "Inkscape用のScribus拡張機能"
 
 #. leap/inkscape/inkscape-extensions-scribus/description
 msgid ""
@@ -2846,6 +3066,9 @@ msgid ""
 "\n"
 "This package contains the files needed to develop software depending on inn."
 msgstr ""
+"Rich Salz氏のInterNetNewsニューストランスポートシステム。\n"
+"\n"
+"このパッケージには、innに依存するソフトウェアを開発するために必要なファイルが含まれています。"
 
 #. leap/innoextract/summary
 msgid "A tool to extract Inno Setup installers under non-windows systems"
@@ -2860,6 +3083,9 @@ msgid ""
 "windows systems without running the actual installer using wine. Inno "
 "Extract currently supports installers created by Inno Setup 1.2.10 to 5.4.3."
 msgstr ""
+"Inno Setupは、Microsoft Windowsアプリケーション用のインストーラーを作成するためのツールです。Inno Extractsを使用す"
+"ると、ワインを使用して実際のインストーラーを実行することなく、Windows以外のシステムでこのようなインストーラーを抽出することができます。Inno "
+"Extractは現在、Inno Setup 1.2.10から5.4.3で作成されたインストーラーをサポートしています。"
 
 #. leap/innotop/summary
 msgid "A MySQL and InnoDB monitor program"
@@ -2873,6 +3099,9 @@ msgid ""
 "VARIABLES, SHOW GLOBAL STATUS, SHOW FULL PROCESSLIST, and SHOW ENGINE INNODB "
 "STATUS, among other things."
 msgstr ""
+"Innotopは、MySQLの強力な「top」クローンです。MySQLデータベースサーバーに接続し、そこから情報を取得し、UNIXのtopプログラムと同様"
+"の方法で表示します。Innotopは、SHOW VARIABLES、SHOW GLOBAL STATUS、SHOW FULL PROCESSLIST、"
+"SHOW ENGINE INNODB STATUSなどのデータを使用します。"
 
 #. leap/inotify-tools/summary
 msgid "Tools for inotify"
@@ -2883,7 +3112,7 @@ msgstr "inotify 向けツール"
 msgid ""
 "inotify is a kernel facility to watch file system changes. This package "
 "provides some tools for it."
-msgstr ""
+msgstr "inotifyは、ファイルシステムの変更を監視するカーネル機能です。このパッケージには、そのためのツールがいくつか用意されています。"
 
 #. leap/inotify-tools/inotify-tools-devel/summary
 msgid "Development files for inotify-tools"
@@ -2911,12 +3140,12 @@ msgstr ""
 
 #. leap/input-pad/summary
 msgid "On-screen Input Pad to Send Characters with Mouse"
-msgstr ""
+msgstr "マウスで文字を送信するための画面上の入力パッド"
 
 #. leap/input-pad/description
 msgid ""
 "The input pad is a tool to send a character on button to text applications."
-msgstr ""
+msgstr "入力パッドは、ボタン上の文字をテキストアプリケーションに送信するためのツールです。"
 
 #. leap/input-pad/input-pad-devel/summary
 msgid "Development tools for input-pad"
@@ -2975,7 +3204,7 @@ msgstr "SDR からキャプチャされた信号を解析するツール"
 msgid ""
 "A tool for analysing captured signals, primarily from software-defined radio "
 "receivers"
-msgstr ""
+msgstr "主にソフトウェアで定義された無線受信機からキャプチャされた信号を分析するためのツール"
 
 #. leap/insserv-compat/summary
 msgid "Simple insserv replacement for systemd only systems"
@@ -3019,14 +3248,18 @@ msgid ""
 "\n"
 "This package as meta package contains the instlux CD content."
 msgstr ""
+"Windows上でインストーラーを実行するという最も簡単な方法で、WindowsをLinuxシステムにアップグレードして、Linuxの世界で自分の居場所を"
+"見つけてください。\n"
+"\n"
+"このパッケージは、instluxのCD-Rコンテンツを含むメタパッケージです。"
 
 #. leap/instsource-susedata/summary
 msgid "Utility to add susedata to repomd metadata"
-msgstr ""
+msgstr "susedataをrepomdのメタデータに追加するユーティリティ"
 
 #. leap/instsource-susedata/description
 msgid "This utility scans repodata and adds susedata and EULAs where needed."
-msgstr ""
+msgstr "このユーティリティは、レポートデータをスキャンし、必要に応じてsusedataとEU LAを追加します。"
 
 #. leap/intel-SINIT/summary
 msgid "Intel SINIT AC (Secure Inititalization Authenticated Code) modules"
@@ -3043,10 +3276,16 @@ msgid ""
 "A specific SINIT file tailored to your INTEL processor needs to be used. "
 "This package contains them all for your convenience."
 msgstr ""
+"intel-SINITには、Intelインテルトラステッド・エグゼキューション・テクノロジー(Intel TXT)を利用してオペレーティングシステムカーネ"
+"ル/VMMの起動を測定および検証するために必要なバイナリモジュールが含まれています。SINITモジュールは、トラステッドブート中の最初のステップで、INT"
+"ELとperforsによってデジタル署名されます。これらの初期ステップの中には、BIOS/"
+"ファームウェアおよびACPIテーブルのようなシステム設定の測定があります。\n"
+"\n"
+"インテル・プロセッサー用に調整された特定のSINITファイルを使用する必要があります。このパッケージには、お客様の便宜のためにすべてが含まれています。"
 
 #. leap/intel-cmt-cat/summary
 msgid "Provides command line interface to CMT, MBM, CAT and CDP technologies"
-msgstr ""
+msgstr "CMT、MBM、CAT、CDPテクノロジーへのコマンド・ライン・インタフェースを提供"
 
 #. leap/intel-cmt-cat/description
 msgid ""
@@ -3062,6 +3301,13 @@ msgid ""
 "interface to read and write the MSR registers but it requires root "
 "privileges."
 msgstr ""
+"このソフトウェアパッケージは、Cache Monitoring Technology(CMT)、Memory Bandwidth "
+"Monitoring(MBM)、Cache Allocation Technology(CAT)、およびCode Data "
+"Prioratization(CDP)の基本的なサポートを提供します。\n"
+"\n"
+"CMT、MBM、およびCATは、モデル固有レジスタ(MSR)を使用して構成され、最終レベルのキャッシュ占有率を測定し、サービスクラスマスクを設定し、サービ"
+"スクラスへのコア/論理スレッドの関連付けを管理します。ソフトウェアはユーザー空間で実行され、MSRへのアクセスは標準のLinux*インターフェイスを介して"
+"取得されます。仮想ファイルシステムは、MSRレジスタを読み書きするためのインタフェースを提供しますが、root権限が必要です。"
 
 #. leap/intel-gpu-tools/summary
 msgid "Collection of tools for development and testing of the Intel DRM driver"
@@ -3083,7 +3329,7 @@ msgstr "Intel G45 & HD グラフィクスファミリ用の VA ドライバ"
 msgid ""
 "This is the VA-API implementation for Intel G45 chipsets and Intel HD "
 "Graphics for Intel Core processor family."
-msgstr ""
+msgstr "これは、インテルG45チップセットおよびインテルCoreプロセッサー・ファミリー用のインテルHDグラフィックス用のVA-API実装です。"
 
 #. leap/intel-media-driver/summary
 #. leap/intel-media-driver/intel-media-driver-32bit/summary
@@ -3097,6 +3343,8 @@ msgid ""
 "user mode driver supporting hardware accelerated decoding, encoding, and "
 "video post processing for GEN based graphics hardware."
 msgstr ""
+"VAAPI対応インテル・メディア・ドライバーは、新しいVA-API(Video Acceleration API)ユーザー・モード・ドライバーで、GENベ"
+"ース・グラフィックス・ハードウェアのハードウェア・アクセラレーションによるデコード、エンコード、ビデオ・ポスト・プロセッシングをサポートします。"
 
 #. leap/intel-opencl/summary
 msgid "Intel(R) Graphics Compute Runtime for OpenCL(TM)"
@@ -3152,16 +3400,27 @@ msgid ""
 "“hex2dump.py” converts data from HEX to a hexdump which is useful for "
 "inspecting data, and “hexmerge.py” merges multiple HEX files into one."
 msgstr ""
+"Intel HEXファイル形式のPython実装では、HEXファイルの読み取り、修正、書き込み、およびバイナリ形式への変換が可能です。\n"
+"\n"
+"マイクロプロセッサーおよびマイクロコントローラー分野で広く使用されているインテルHEXファイル・フォーマットで、マイクロエレクトロニクス・デバイスをプログ"
+"ラミングするためのコード表現の事実上の標準となっています。\n"
+"\n"
+"本研究では、HEX(Intel HEXとも呼ばれる)ファイルフォーマットからのデータの読み取り、書き込み、ゼロからの作成、操作を行うための**intelh"
+"ex**Pythonライブラリを実装します。これらの操作は、「IntelHex」クラスによって提供されます。\n"
+"\n"
+"配布パッケージには、このライブラリを利用する基本的なタスクを実行するための便利なPythonスクリプトもいくつか含まれています。「bin2hex."
+"py」スクリプトはバイナリデータをHEXに変換し、「hex2bin.py」は逆方向に動作します。「hex2dump."
+"py」はデータをHEXからデータ検査に便利なhexdumpに変換し、「hexmerge.py」は複数のHEXファイルを1つにマージします。"
 
 #. leap/inter-fonts/summary
 msgid "The Inter font family"
-msgstr ""
+msgstr "Interフォントファミリ"
 
 #. leap/inter-fonts/description
 msgid ""
 "Inter is a typeface specially designed for user interfaces with focus on "
 "high legibility of small-to-medium sized text on computer screens."
-msgstr ""
+msgstr "インターは、コンピュータ画面上の小から中サイズのテキストの高い読みやすさに焦点を当てたユーザインタフェース用に特別に設計された書体です。"
 
 #. leap/interbench/summary
 msgid "Tool to benchmark interactivity in Linux"
@@ -3177,6 +3436,11 @@ msgid ""
 "changes and options. With careful benchmarking, different hardware can be "
 "compared."
 msgstr ""
+"このベンチマーク・アプリケーションは、Linuxでの対話性をベンチマークするように設計されています。簡単な定義については、付属のreadme."
+"interactivityファイルを参照してください。\n"
+"\n"
+"これは、CPU、I/Oスケジューラ、ファイルシステムの変更やオプションなど、Linuxカーネル設計やシステム構成の変更による影響を測定するように設計されて"
+"います。注意深くベンチマークを行うことで、異なるハードウェアを比較することができます。"
 
 #. leap/intlfonts/summary
 msgid "Documentation for the International Fonts"
@@ -3371,7 +3635,7 @@ msgstr "WeeChat の FIFO パイプを囲むラッパ"
 msgid ""
 "Conveniently send text and commands from file or standard input to WeeChat "
 "with this wrapper around WeeChat's FIFO pipe"
-msgstr ""
+msgstr "WeeChatのFIFOパイプの周りにこのラッパーを使用して、ファイルまたは標準入力からWeeChatにテキストとコマンドを簡単に送信します。"
 
 #. leap/inxi/summary
 msgid "A system information script"
@@ -3383,6 +3647,8 @@ msgid ""
 "The primary purpose of inxi is for support, and sys admin use. inxi is used "
 "widely for forum and IRC support."
 msgstr ""
+"inxiは、コマンドラインのシステム情報ツールです。infobashから分岐しました。inxiの主な目的は、サポートとsys "
+"adminの使用です。inxiはフォーラムやIRCのサポートに広く利用されています。"
 
 #. leap/iodbc/summary
 msgid "ODBC compliant driver manager"
@@ -3420,7 +3686,7 @@ msgstr ""
 
 #. leap/iodine/summary
 msgid "IPv4-through-DNS tunnel server and client"
-msgstr ""
+msgstr "DNSトンネル経由のIPv 4サーバおよびクライアント"
 
 #. leap/iodine/description
 msgid ""
@@ -3428,6 +3694,8 @@ msgid ""
 "usable in different situations where internet access is firewalled, but DNS "
 "queries are allowed."
 msgstr ""
+"このソフトウェアを使用すると、DNSサーバを介してIPv4データをトンネリングできます。これは、インターネットアクセスがファイアウォールで保護されているが"
+"、DNSクエリが許可されているさまざまな状況で使用できます。"
 
 #. leap/iometer/summary
 msgid "I/O subsystem measurement and characterization tool"
@@ -3449,7 +3717,7 @@ msgstr "リアルタイムで I/O レイテンシをモニタする ツール"
 msgid ""
 "A tool to monitor I/O latency in real time. It shows disk latency in the "
 "same way as ping shows network latency."
-msgstr ""
+msgstr "I/O遅延をリアルタイムで監視するツール。pingがネットワーク遅延を表示するのと同じ方法で、ディスク遅延を表示します。"
 
 #. leap/iops/summary
 msgid "Disk I/O Benchmark"
@@ -3469,11 +3737,13 @@ msgid ""
 "Quake III first person shooter. This package only includes the binary files, "
 "you still need the data files from the original Quake III CD or the Demo."
 msgstr ""
+"Quake IIIファーストパーソン・シューティングゲームこのパッケージにはバイナリファイルのみが含まれていますが、オリジナルのQuake III "
+"CDまたはデモのデータファイルも必要です。"
 
 #. leap/ioquake3/ioquake3-devel/description
 msgid ""
 "Quake III development tools for creating mods: q3lcc, q3rcc, q3cpp, q3asm"
-msgstr ""
+msgstr "MO Dを作成するためのQuake III開発ツール:q3lcc、q3rcc、q3cpp、q3asm"
 
 #. leap/ior/summary
 #. leap/ior/description
@@ -3492,6 +3762,9 @@ msgid ""
 "Iotop is a Python program with a UI similar to top to show on behalf of "
 "which process is the I/O going on."
 msgstr ""
+"Linuxは常にI/Oの量を表示することができます(vmstat 1コマンドのbi列とbo列)。\n"
+"\n"
+"Iotopはtopに似たUIを持つPythonプログラムで、どのプロセスでI/Oが実行されているかを表示します。"
 
 #. leap/iouyap/summary
 msgid "Bridge IOU to TAP, UDP and Ethernet"
@@ -3504,6 +3777,9 @@ msgid ""
 "In order to use iouyap as non-root user, the user needs to be member of the "
 "iouyap group!"
 msgstr ""
+"IOUからTAP、UDP、イーサネットへのブリッジ(主にgns 3サーバで使用)\n"
+"\n"
+"iouyapを非rootユーザーとして使用するには、ユーザーがiouyapグループのメンバーである必要があります!"
 
 #. leap/ipa-ex-fonts/ipa-ex-gothic-fonts/summary
 msgid "Scalable \"Gothic\" Japanese TrueType Font Made by IPA"
@@ -3669,7 +3945,7 @@ msgstr "ChaSen のための IPA品詞体系に基づく日本語辞書。"
 
 #. leap/ipcalc/summary
 msgid "IPv4/IPv6 tool assisting in network calculations on the command line"
-msgstr ""
+msgstr "コマンドラインでのネットワーク計算を支援するIPv4/IPv6ツール"
 
 #. leap/ipcalc/description
 msgid ""
@@ -3681,6 +3957,10 @@ msgid ""
 "transparent IPv6 support, and in addition it will use libGeoIP if available "
 "to provide geographic information."
 msgstr ""
+"ipcalcは、IPv4およびIPv6のネットワークアドレス計算を支援する最新のツールです。これは、ネットワークやアドレスに関する人間が読める情報を出力す"
+"るツールとしても、スクリプトやその他のプログラムで使用するのに適したツールとしても機能します。これは、提供されたネットワークアドレスに関する要約の印刷、印"
+"刷される情報ごとの複数のコマンドラインオプション、透過的なIPv6サポートをサポートし、さらに、地理的情報を提供するために利用可能な場合はlibGeoIP"
+"を使用します。"
 
 #. leap/iperf/summary
 #. leap/iperf/iperf-devel/summary
@@ -3704,6 +3984,15 @@ msgid ""
 "\n"
 "Note that iperf3 is NOT backwards compatible with the original iperf."
 msgstr ""
+"Iperfは、IPネットワーク上で達成可能な最大帯域幅をアクティブに測定するためのツールです。タイミング、プロトコル、およびバッファに関連するさまざまなパ"
+"ラメータのチューニングをサポートします。各テストについて、帯域幅、損失、およびその他のパラメータが報告されます。\n"
+"\n"
+"このバージョンは、iperf3と呼ばれることもありますが、NLANR/DASTで開発されたオリジナルバージョンの再設計です。iperf3は、ゼロからの新し"
+"い実装であり、より小さく、より単純なコードベースと、他のプログラムで使用できる機能のライブラリバージョンを目標としています。iperf3には、nuttcp"
+"やnetperfなどの他のツールに見られる多くの機能もあるが、オリジナルのiperfにはありませんでした。これらには、例えば、ゼロコピーモードとオプション"
+"のJSON出力が含まれます。\n"
+"\n"
+"iperf3は、元のiperfと下位互換性がないことに注意してください。"
 
 #. leap/iperf/iperf-devel/description
 msgid ""
@@ -3714,10 +4003,14 @@ msgid ""
 "\n"
 "This package contains development files."
 msgstr ""
+"Iperfは、IPネットワーク上で達成可能な最大帯域幅をアクティブに測定するためのツールです。タイミング、プロトコル、およびバッファに関連するさまざまなパ"
+"ラメータのチューニングをサポートします。各テストについて、帯域幅、損失、およびその他のパラメータが報告されます。\n"
+"\n"
+"このパッケージには、開発ファイルが含まれています。"
 
 #. leap/ipmctl/summary
 msgid "Utility for managing Intel Optane persistent memory modules"
-msgstr ""
+msgstr "Intel Optane永続メモリモジュールを管理するためのユーティリティ"
 
 #. leap/ipmctl/description
 msgid ""
@@ -3731,6 +4024,14 @@ msgid ""
 "- Track performance of PMem modules.\n"
 "- Debug and troubleshoot PMem modules."
 msgstr ""
+"Intel Optane永続メモリモジュール(PMemモジュール)を管理するためのユーティリティ。次の機能をサポートします。\n"
+"- プラットフォーム上のPMemモジュールを検出します。\n"
+"- プラットフォームのメモリ構成をプロビジョニングします。\n"
+"- PMemモジュールのファームウェアを表示および更新します。\n"
+"- PMemモジュールに保存データのセキュリティを設定します。\n"
+"- PMemモジュールのヘルスをモニタします。\n"
+"- PMemモジュールのパフォーマンスを追跡します。\n"
+"- PMemモジュールのデバッグとトラブルシューティングを行います。"
 
 #. leap/ipmctl/ipmctl-devel/summary
 msgid "Development packages for ipmctl"
@@ -3739,11 +4040,11 @@ msgstr "ipmctl 向け開発パッケージ"
 #. leap/ipmctl/ipmctl-devel/description
 msgid ""
 "API for development of Intel Optane persistent memory management utilities."
-msgstr ""
+msgstr "Intel Optane永続メモリ管理ユーティリティを開発するためのAPI。"
 
 #. leap/ipmitool/summary
 msgid "Utility for IPMI Control"
-msgstr ""
+msgstr "IPMI制御用ユーティリティ"
 
 #. leap/ipmitool/description
 msgid ""
@@ -3761,6 +4062,16 @@ msgid ""
 "(SEL), printing Field Replaceable Unit (FRU) information, reading and "
 "setting LAN configuration, and chassis power control."
 msgstr ""
+"このパッケージには、Intelligent Platform Management Interface仕様をサポートするデバイスとインターフェイスするため"
+"のユーティリティが含まれています。IPMIは、マシンヘルス、インベントリ、およびリモート電源制御のためのオープンスタンダードです。\n"
+"\n"
+"このユーティリティは、OpenIPMIなどのカーネルドライバーまたはIPMI仕様で定義されているRMCP "
+"LANプロトコルを介して、IPMI対応デバイスと通信できます。IPMIv2は、暗号化されたLAN通信とリモートSerial-over-"
+"LAN機能のサポートを追加します。\n"
+"\n"
+"Sensor Data Repository(SDR;センサーデータリポジトリ)の読み取りとセンサー値の表示、System Event "
+"Log(SEL;システムイベントログ)の内容の表示、Field Replaceable "
+"Unit(FRU;現場交換可能ユニット)情報の印刷、LAN設定の読み取りと設定、およびシャーシ電源制御のためのコマンドを提供します。"
 
 #. leap/ipmitool/ipmitool-bmc-snmp-proxy/summary
 msgid "SNMP configuration to include the BMC's SNMP agent"
@@ -3770,7 +4081,7 @@ msgstr "BMC の SNMP エージェントをインクルードするためのSNMP 
 msgid ""
 "Given a host with BMC, this package would extend system configuration of net-"
 "snmp to include redirections to BMC based SNMP."
-msgstr ""
+msgstr "BMCを使用するホストの場合、このパッケージはnet-snmpのシステム構成を拡張して、BMCベースのSNMPへのリダイレクトを含めます。"
 
 #. leap/ipmiutil/summary
 msgid "Easy-to-use IPMI server management utilities"
@@ -3788,6 +4099,13 @@ msgid ""
 "(/dev/imb), etc.  If used locally and no driver is detected, ipmiutil will "
 "use user-space direct I/Os instead."
 msgstr ""
+"ipmiutilパッケージには、SELの表示、IPMIシャーシのリセットの実行、SNMPアラートを許可するためのIPMI LANおよびPlatform "
+"Event Filterエントリーのセットアップ、Serial-Over-"
+"LANコンソール、イベントデーモン、およびその他のIPMIタスクを行うための使いやすいユーティリティが用意されています。これらは、metacommand "
+"ipmiutilを使用して呼び出すことも、サブコマンドショートカットを使用して呼び出すこともできます。IPMIUTILは、センサーしきい値、FRU資産タグ"
+"を書き込むこともでき、完全なIPMI設定の保存/復元機能を備えています。IPMIドライバーは、OpenIPMIドライバー(/dev/ipmi0)"
+"またはIntel IPMIドライバー(/dev/"
+"imb)などによって提供されます。ローカルで使用され、ドライバーが検出されない場合、ipmiutilは代わりにユーザー空間の直接入出力を使用します。"
 
 #. leap/ipmiutil/ipmiutil-devel/summary
 msgid "Includes libraries and headers for the ipmiutil package"
@@ -3839,7 +4157,7 @@ msgstr ""
 
 #. leap/iproute2/iproute2-arpd/summary
 msgid "Userspace ARP daemon"
-msgstr ""
+msgstr "ユーザ空間ARPデーモン"
 
 #. leap/iproute2/iproute2-arpd/description
 msgid ""
@@ -3848,6 +4166,9 @@ msgid ""
 "to limited standard size (512..1024 entries, depending on type) of the "
 "kernel ARP cache."
 msgstr ""
+"arpdデーモンはGratuitous "
+"ARP情報を収集してローカルディスクに保存し、必要に応じてカーネルに送ります。これは、カーネルARPキャッシュの標準サイズ(タイプによって512."
+"1024エントリ)が制限されているために冗長なブロードキャストが行われないようにするためです。"
 
 #. leap/iproute2/iproute2-bash-completion/summary
 msgid "Bash completion for iproute"
@@ -3859,13 +4180,13 @@ msgstr "iproute 向け bash コマンドライン補完サポート。"
 
 #. leap/iprutils/summary
 msgid "Utilities for the IBM Power Linux RAID Adapters"
-msgstr ""
+msgstr "IBM Power Linux RAIDアダプター用ユーティリティー"
 
 #. leap/iprutils/description
 msgid ""
 "Provides a suite of utilities to manage and configure SCSI devices supported "
 "by the ipr SCSI storage device driver."
-msgstr ""
+msgstr "ipr SCSIストレージデバイスドライバによってサポートされるSCSIデバイスを管理および設定するための一連のユーティリティを提供します。"
 
 #. leap/ipsec-tools/summary
 msgid "IPsec Utilities"
@@ -3961,6 +4282,8 @@ msgid ""
 "alternatives) that makes the iptables, ip6tables, arptables and ebtables "
 "commands point to a program variant that uses the nftables kernel interface."
 msgstr ""
+"このパッケージをインストールすると、より優先度の高い選択肢が追加されます(参照これにより、iptables、ip6tables、arptables、ebt"
+"ablesの各コマンドは、nftablesカーネルインタフェースを使用するプログラムバリアントを指すようになります。"
 
 #. leap/iptraf-ng/summary
 msgid "TCP/IP Network Monitor"
@@ -3999,10 +4322,11 @@ msgid ""
 "ipv6gen features: generates prefix list of certain length from given prefix "
 "via one of the 3 methods described in RFC 3531"
 msgstr ""
+"ipv6gen機能:RFC 3531に記載されている3つの方法のいずれかを使用して、指定されたプレフィクスから特定の長さのプレフィクスリストを生成します。"
 
 #. leap/ipv6toolkit/summary
 msgid "Security assessment and troubleshooting tool for the IPv6 protocols"
-msgstr ""
+msgstr "IPv6プロトコルのためのセキュリティ評価とトラブルシューティングツール"
 
 #. leap/ipv6toolkit/description
 msgid ""
@@ -4025,6 +4349,19 @@ msgid ""
 "tool to send arbitrary TCP segments and perform a variety    of TCP-based "
 "attacks."
 msgstr ""
+"SI6 "
+"NetworksのIPv6ツールキットは、任意のIPv6ベースのパケットを送信できるIPv6セキュリティおよびトラブルシューティングツールのセットです。"
+"\n"
+"\n"
+"ツールのリスト:  * addr6:IPv6アドレス分析および操作ツール。* flow6: "
+"IPv6フローラベルのセキュリティasseessmentを行うためのツール。* frag6: "
+"IPv6フラグメンテーションベースの攻撃を実行し、フラグメンテーションに関連する多くの側面のセキュリティ評価を実行するためのツール。* icmp6: "
+"ICMPv6エラーメッセージに基づいて攻撃を実行するツール。* jumbo6: IPv6ジャンボグラムの処理における潜在的な欠陥を評価するためのツール。*"
+" na6: 任意の近隣広告メッセージを送るツール。* ni6: "
+"任意のICMPv6ノード情報メッセージを送信し、そのようなパケットの処理で起こりうる欠陥を評価するツール。* ns6: "
+"任意の近隣要請メッセージを送るためのツール。* ra6: 任意のルーター通知メッセージを送信するためのツール。* rd6: "
+"任意のICMPv6リダイレクトメッセージを送信するツール。* rs6: 任意のRouter Solicitationメッセージを送信するツール。* "
+"scan6: IPv6アドレススキャンツール。* tcp6: 任意のTCPセグメントを送信し、さまざまなTCPベースの攻撃を実行するツール。"
 
 #. leap/ipvsadm/summary
 msgid "A Utility for Administering the Linux Virtual Server"
@@ -4035,6 +4372,8 @@ msgid ""
 "ipvsadm is a utility for administering the IP virtual server services "
 "offered by the Linux kernel with Linux Virtual Server support."
 msgstr ""
+"ipvsadmは、Linux Virtual "
+"ServerをサポートするLinuxカーネルが提供するIP仮想サーバサービスを管理するためのユーティリティです。"
 
 #. leap/ipw-firmware/summary
 msgid "Firmware for Intel PRO/Wireless WLAN Cards"
@@ -4065,6 +4404,9 @@ msgid ""
 "This package contains the iPXE boot images in USB, CD, floppy, and PXE UNDI "
 "formats. EFI is supported, too."
 msgstr ""
+"iPXEはネットワークブートローダです。これは、DNS、HTTP、iSCSIなどの多くの追加機能を備えた独自のPXE ROMの直接の代替を提供します。\n"
+"\n"
+"このパッケージには、USB、CD、フロッピー、およびPXE UNDI形式のiPXEブートイメージが含まれています。EFIもサポートされています。"
 
 #. leap/ipxrip/summary
 msgid "IPX Routing Daemon"
@@ -4074,7 +4416,7 @@ msgstr "IPX ルーティングデーモン"
 msgid ""
 "This is an RIP/SAP daemon for Linux. With this daemon, you can turn your "
 "Linux machine into an IPX router."
-msgstr ""
+msgstr "これはLinux用のRIP/SAPデーモンです。このデーモンを使えば、LinuxマシンをIPXルーターに変えることができます。"
 
 #. leap/irda/summary
 msgid "Necessary Tools for Using the Infrared Port"
@@ -4133,11 +4475,11 @@ msgstr ""
 
 #. leap/irqbalance/irqbalance-ui/summary
 msgid "UI for IRQ balance Daemon"
-msgstr ""
+msgstr "IRQバランスデーモンのUI"
 
 #. leap/irqbalance/irqbalance-ui/description
 msgid "Text UI for the IRQ balance daemon."
-msgstr ""
+msgstr "IRQバランスデーモンのテキストUIです。"
 
 #. leap/irqd/summary
 msgid "Multiqueue and RPS-aware IRQ affinity balancer"
@@ -4151,6 +4493,10 @@ msgid ""
 "It currently relies on the Receive Packet Steering (RPS) implementation of "
 "newer Linux kernels, it is of less use currently if RPS is not available."
 msgstr ""
+"irqdは、リナックス・カーネル用の代替IRQバランサーです。IRQのバランスは、システム内のCPU間でほぼ均等に保たれます。\n"
+"\n"
+"現時点では、新しいLinuxカーネルのReceive Packet "
+"Steering(RPS)実装に依存しており、RPSが利用できない場合にはあまり役に立ちません。"
 
 #. leap/irrlicht/irrlicht-data/summary
 msgid "Assorted data for irrlicht"
@@ -4165,6 +4511,10 @@ msgid ""
 "software renderer, and has features which can be found in commercial 3D "
 "engines."
 msgstr ""
+"irrlichtアプリケーションのデータファイル\n"
+"\n"
+"Irrlichtエンジンはリアルタイムの3Dエンジンで、C++で書かれており、.NET言語でも利用できます。Direct3D、OpenGL、および独自のソ"
+"フトウェアレンダラを使用しており、市販の3Dエンジンに見られる機能を備えています。"
 
 #. leap/irrlicht/irrlicht-devel/summary
 msgid "Development headers and libraries for irrlicht"
@@ -4179,10 +4529,14 @@ msgid ""
 "software renderer, and has features which can be found in commercial 3D "
 "engines."
 msgstr ""
+"irrlicht用の開発ヘッダーとライブラリ。\n"
+"\n"
+"Irrlichtエンジンはリアルタイムの3Dエンジンで、C++で書かれており、.NET言語でも利用できます。Direct3D、OpenGL、および独自のソ"
+"フトウェアレンダラを使用しており、市販の3Dエンジンに見られる機能を備えています。"
 
 #. leap/irssi/summary
 msgid "Modular IRC Client"
-msgstr ""
+msgstr "モジュール式IRCクライアント"
 
 #. leap/irssi/description
 msgid ""
@@ -4262,10 +4616,13 @@ msgid ""
 "sets up the tunnel parameters, the Potential Router List, sends periodic "
 "router solicitations and tries to detect link changes."
 msgstr ""
+"このデーモンは、Linux 2.6."
+"25で最初に導入されたカーネル内ISATAPサポートを使用します。トンネルを操作したり、IPv6トラフィックを処理したりすることはありません。"
+"トンネルパラメータであるPotential Router Listを設定し、定期的にルータ要請を送信し、リンク変更の検出を試みるだけです。"
 
 #. leap/iscsi-formula/summary
 msgid "Configure iSCSI targets and initiator on GNU/Linux and FreeBSD"
-msgstr ""
+msgstr "GNU/LinuxおよびFreeBSDでのiSCSIターゲットとイニシエータの構成"
 
 #. leap/iscsi-formula/description
 msgid ""
@@ -4277,6 +4634,11 @@ msgid ""
 "added running the `SUSEConnect -p sle-module-adv-systems-management/12/"
 "{{ arch }}`"
 msgstr ""
+"GNU/LinuxおよびFreeBSDでのiSCSIターゲットとイニシエータの構成\n"
+"\n"
+"式を用いるためには、saltが系の中に存在しなければなりません。パッケージはSLE15で自動的に提供されます。SLE12で使用するために、salt "
+"(およびそのサブコンポーネント)はアドバンストシステム管理モジュールに由来しており、`SUSEConnect -p "
+"sle-module-adv-systems-management/12/{{arch}}`を実行して追加することができます。"
 
 #. leap/isight-firmware-tools/summary
 msgid "Tools to manipulate firmware for Built-in iSight"
@@ -4287,6 +4649,8 @@ msgid ""
 "This project provide tools to manipulate firmware for Built-in iSight found "
 "on Apple machine since iMac G5 iSight"
 msgstr ""
+"このプロジェクトは、iMac G5 "
+"iSight以降のAppleマシンに搭載されているビルトインiSightのファームウェアを操作するためのツールを提供します。"
 
 #. leap/isl/isl-devel/summary
 #. leap/isl/isl-devel-32bit/summary
@@ -4342,7 +4706,7 @@ msgstr "PNG 中の ISO 国フラグ"
 msgid ""
 "A collection of country flags in PNG. They correspond to the fancy 4x3 set "
 "in 320x200 resolution."
-msgstr ""
+msgstr "PNGの国旗のコレクションです。これらは、320x200の解像度で設定されたファンシーな4x3に対応しています。"
 
 #. leap/iso_ent/summary
 msgid "Character Entity Sets for ISO 8879:1986"
@@ -4354,7 +4718,7 @@ msgstr "ISO 8879:1986 向け文字エンティティセットです。"
 
 #. leap/isorelax/summary
 msgid "Public interfaces useful for applications to support RELAX Core"
-msgstr ""
+msgstr "アプリケーションがRELAX Coreをサポートするために有用な公開インターフェース"
 
 #. leap/isorelax/description
 msgid ""
@@ -4362,6 +4726,8 @@ msgid ""
 "applications to support RELAX Core. But nowadays some of the stuff we have "
 "is schema language neutral."
 msgstr ""
+"ISO RELAXプロジェクトは、RELAX Coreをサポートするアプリケーションに役立つパブリックインターフェイスをホストするために開始されました。し"
+"かし最近では、スキーマ言語に中立なものもあります。"
 
 #. leap/ispell/description
 msgid ""
@@ -4527,7 +4893,7 @@ msgstr "issue-generator  は、動的に issue ファイルを生成するツー
 
 #. leap/istgt/summary
 msgid "Userspace iSCSI Target"
-msgstr ""
+msgstr "ユーザースペースiSCSIターゲット"
 
 #. leap/istgt/description
 msgid ""
@@ -4546,10 +4912,23 @@ msgid ""
 "* Multiple LUNs and ACLs for portals\n"
 "* IPv6/IPv4 dual support"
 msgstr ""
+"このソフトウェア(istgt)は、FreeBSD用に開発されたiSCSIターゲット(iSCSIについてはRFC3720を参照してください)の実装です。これ"
+"には、iSCSIプロトコル・プロセッサとSPC-3(SCSI Primary Commands-3)ベースの論理ユニット・エミュレーションが含まれます。"
+"\n"
+"\n"
+"主な機能:\n"
+"* フェイルオーバー用のMCS/MPIO(最大255の同時セッション)\n"
+"* マルチパスI/O(Microsoft MPIO/VMware ESXiのみをサポート)\n"
+"* クラスタノード用のSPC-3永続的予約\n"
+"* 2 TBを超える場合は64ビットLBA\n"
+"* CRC32Cによるヘッダー/データダイジェスト\n"
+"* 相互認証機能付きCHAP\n"
+"* ポータル用の複数のLUNとACL\n"
+"* IPv6/IPv4のデュアルサポート"
 
 #. leap/isync/summary
 msgid "Utility to synchronize IMAP mailboxes with local maildir folders"
-msgstr ""
+msgstr "IMAPメールボックスをローカルのmaildirフォルダと同期するユーティリティ"
 
 #. leap/isync/description
 msgid ""
@@ -4563,14 +4942,19 @@ msgid ""
 "synchronizers). Synchronization state is kept in one local text file per "
 "mailbox pair; multiple replicas of a mailbox can be maintained."
 msgstr ""
+"isyncはメールボックスを同期するコマンドラインアプリケーションです。現在はMaildirとIMAP4のメールボックスがサポートされています。新しいメッ"
+"セージ、メッセージの削除、およびフラグの変更は、両方の方法で伝播できます。isyncは、IMAP非接続モードでの使用に適しています。\n"
+"\n"
+"同期は一意のメッセージID(UID)に基づいているため、他のメール・シンクロナイザとは異なり、IDの競合は発生しません。同期状態は、メールボックス・ペアご"
+"とに1つのローカル・テキスト・ファイルに保存されます。メールボックスの複数のレプリカを保持できます。"
 
 #. leap/itinerary/summary
 msgid "Itinerary and boarding pass management application"
-msgstr ""
+msgstr "旅程・搭乗券管理アプリ"
 
 #. leap/itinerary/description
 msgid "Itinerary and boarding pass management application."
-msgstr ""
+msgstr "旅程・搭乗券管理アプリ。"
 
 #. leap/itinerary/itinerary-lang/summary
 msgid "Translations for package itinerary"
@@ -4614,7 +4998,7 @@ msgstr ""
 
 #. leap/itpp/itpp-devel/summary
 msgid "Header files for itpp"
-msgstr ""
+msgstr "itppのヘッダー・ファイル"
 
 #. leap/itpp/itpp-devel/description
 msgid ""
@@ -4628,6 +5012,11 @@ msgid ""
 "set of accompanying routines. Such a kernel makes IT++ similar to MATLAB or "
 "GNU Octave."
 msgstr ""
+"isパッケージには、itpp%{sonum}に含まれるIT++ライブラリのヘッダーファイルが含まれています。\n"
+"\n"
+"IT++は、数学、シグナル処理、通信のクラスと関数のC++ライブラリです。その主な用途は、通信システムのシミュレーションや通信分野の研究です。ライブラリの"
+"カーネルは、一般的なベクトルクラスと行列クラス、および一連の付随するルーチンで構成されています。このようなカーネルにより、IT++はMATLABやGNU "
+"Octaveに似たものになります。"
 
 #. leap/itpp/itpp-doc/summary
 msgid "Documentation for itpp"
@@ -4644,6 +5033,11 @@ msgid ""
 "set of accompanying routines. Such a kernel makes IT++ similar to MATLAB or "
 "GNU Octave."
 msgstr ""
+"このパッケージには、IT++のドキュメントがhtmlおよびmanページとして含まれています。\n"
+"\n"
+"IT++は、数学、シグナル処理、通信のクラスと関数のC++ライブラリです。その主な用途は、通信システムのシミュレーションや通信分野の研究です。ライブラリの"
+"カーネルは、一般的なベクトルクラスと行列クラス、および一連の付随するルーチンで構成されています。このようなカーネルにより、IT++はMATLABやGNU "
+"Octaveに似たものになります。"
 
 #. leap/itstool/summary
 msgid "Tool to translate XML documents using PO files"
@@ -4663,7 +5057,7 @@ msgstr ""
 
 #. leap/iucode-tool/summary
 msgid "A program to manipulate Intel microcode update collections"
-msgstr ""
+msgstr "インテル・マイクロコード・アップデート・コレクションを操作するプログラム"
 
 #. leap/iucode-tool/description
 msgid ""
@@ -4671,10 +5065,12 @@ msgid ""
 "Intel® i686 and X86-64 system processors, and prepare them for use by the "
 "Linux kernel."
 msgstr ""
+"iucode_toolは、Intel®i686およびX86-64システム・プロセッサー用のマイクロコード・アップデート・コレクションを操作し、リナックス・"
+"カーネルで使用できるように準備するプログラムです。"
 
 #. leap/iverilog/summary
 msgid "Simulation and synthesis tool for IEEE-1364"
-msgstr ""
+msgstr "IEEE-1364用シミュレーション・合成ツール"
 
 #. leap/iverilog/description
 msgid ""
@@ -4682,6 +5078,8 @@ msgid ""
 "formats, including simulation. It strives to be true to the IEEE-1364 "
 "standard."
 msgstr ""
+"Icarus Verilogは、シミュレーションを含むさまざまなエンジニアリング・フォーマットを生成するVerilogコンパイラーです。IEEE-1364"
+"標準に忠実であることを目指しています。"
 
 #. leap/iverilog/iverilog-devel/summary
 msgid "Icarus Verilog development files"
@@ -4725,6 +5123,10 @@ msgid ""
 "\n"
 "This package contains the header files and development symlinks."
 msgstr ""
+"libivykisは、入出力準備通知機能(poll(2)、kqueue(2)など)のさまざまなOS実装の薄いラッパーであり、主にポータブルで高性能なネット"
+"ワークサーバを作成することを目的としています。\n"
+"\n"
+"このパッケージには、ヘッダファイルと開発用シンボリックリンクが含まれています。"
 
 #. leap/iw/summary
 msgid "Configuration utility for nl80211 based wireless drivers"
@@ -4762,6 +5164,20 @@ msgid ""
 "- syslog \n"
 "- print time stamp"
 msgstr ""
+"iWatchは、ファイルシステムの整合性をリアルタイムで監視し、監視対象のファイルシステムに変更があった場合には即座にシステム管理者にアラームを送信します"
+"。iWatchはPerlで書かれており、inotifyというファイル変更通知システムをベースにしている。inotifyは、アプリケーションがイベントのリス"
+"トに対して一連のファイルの監視を要求できるようにするカーネル機能です。\n"
+"\n"
+"現時点では、次のことが可能です。\n"
+"- コマンドラインモードとデーモンモードで実行する\n"
+"- 簡単なxml設定ファイルを使用\n"
+"- ディレクトリを再帰的に監視し、新しく作成されたディレクトリを監視できる\n"
+"- 例外のリストを持つことができます\n"
+"- regexを使用してファイル/ディレクトリ名を比較できる\n"
+"- イベントが発生した場合にコマンドを実行できる\n"
+"- 電子メールの送信\n"
+"- syslog(syslog)\n"
+"- タイムスタンプを印刷する"
 
 #. leap/iwidgets/summary
 msgid "Widget Extension for Tcl/Tk"
@@ -4809,6 +5225,14 @@ msgid ""
 "- Adjustable scanning speed\n"
 "- Can open and save netdetect (.ndd) and netstumbler (.ns1) file formats"
 msgstr ""
+"iwScannerはpython/gladeワイヤレス・スキャン・ユーティリティーです。\n"
+"\n"
+"機能:\n"
+"- 検出されたワイヤレスネットワークに関する情報(AP、MAC、チャネル、暗号化など)\n"
+"- 各ワイヤレスネットワークの信号強度を示す表\n"
+"- iwScannerのGUIは、よく知られたアプリケーションであるNetStumblerによく似ている\n"
+"- スキャン速度を調整可能\n"
+"- netdetect(.ndd)およびnetstumbler(.ns1)ファイル形式を開いて保存"
 
 #. leap/ixpdimm_sw/ixpdimm-cli/summary
 #. leap/ixpdimm_sw/libixpdimm-cli01/summary
@@ -4822,6 +5246,8 @@ msgid ""
 "ixpdimm_sw, including commands for basic inventory, capacity provisioning, "
 "health monitoring, and troubleshooting."
 msgstr ""
+"ixpdimm_swを設定および管理するためのコマンドラインインターフェイス(CLI)アプリケーション。基本的なインベントリ、容量プロビジョニング、ヘルス"
+"モニタリング、およびトラブルシューティングのためのコマンドが含まれます。"
 
 #. leap/ixpdimm_sw/ixpdimm-data/summary
 msgid "Data files for ixpdimm"
@@ -4834,6 +5260,8 @@ msgid ""
 "ixpdimm_sw, including basic inventory, capacity provisioning, health "
 "monitoring, and troubleshooting."
 msgstr ""
+"基本的なインベントリ、容量プロビジョニング、ヘルスモニタリング、トラブルシューティングなど、ixpdimm_swを設定および管理するためのアプリケーション"
+"プログラムインターフェイス(API)。"
 
 #. leap/ixpdimm_sw/ixpdimm-monitor/summary
 msgid "Daemon for monitoring the status of ixpdimm_sw"
@@ -4890,6 +5318,8 @@ msgid ""
 "extension provides inherited classes for the classes in IccProfLib that "
 "provide additional I/O routines to read and write the classes as XML files"
 msgstr ""
+"IccLibXMLライブラリは、SampleICCのIccProfLibの拡張として機能します。この拡張は、クラスをXMLファイルとして読み書きするための"
+"追加の入出力ルーチンを提供するIccProfLibのクラスに継承されたクラスを提供します。"
 
 #. leap/ilmbase/libIex-2_2-23/summary
 #. leap/ilmbase/libIex-2_2-23-32bit/summary
@@ -4942,6 +5372,8 @@ msgid ""
 "software renderer, and has features which can be found in commercial 3D "
 "engines."
 msgstr ""
+"Irrlichtエンジンはリアルタイムの3Dエンジンで、C++で書かれており、.NET言語でも利用できます。Direct3D、OpenGL、および独自のソ"
+"フトウェアレンダラを使用しており、市販の3Dエンジンに見られる機能を備えています。"
 
 #. leap/incidenceeditor/libKF5IncidenceEditor5/summary
 msgid "Incidenceeditor Library"
@@ -5025,7 +5457,7 @@ msgstr "I2C/SMBus バスアクセスライブラリ"
 msgid ""
 "libi2c offers a way for applications to interact with the devices connected "
 "to the I2C or SMBus buses of the system."
-msgstr ""
+msgstr "libi2cは、アプリケーションがシステムのI2CまたはSMBusバスに接続されたデバイスと対話する方法を提供します。"
 
 #. leap/ibutils/libibdm1/summary
 msgid "Infiniband Data Model library"
@@ -5038,7 +5470,7 @@ msgstr ""
 
 #. leap/ibmtss/libibmtss1/summary
 msgid "Shared library for IBM's TPM 2.0 TSS"
-msgstr ""
+msgstr "IBMのTPM 2.0 TSS用の共有ライブラリ"
 
 #. leap/ibmtss/libibmtss1/description
 msgid "Shared library for IBM's TPM 2.0 TSS tools"
@@ -5182,6 +5614,8 @@ msgid ""
 "With libiec16022 you can produce 2D barcodes. Also known as Data Matrix. "
 "These barcodes are defined in ISO/IEC 16022."
 msgstr ""
+"libiec16022を使用すると、2Dバーコードを作成できます。データマトリックスとも呼ばれます。これらのバーコードは、ISO/IEC "
+"16022で定義されています。"
 
 #. leap/iec16022/libiec16022-devel/summary
 msgid "Development tools for DataMatrix 2D barcode generation"
@@ -5196,10 +5630,15 @@ msgid ""
 "With iec16022 you can produce 2D barcodes. Also known as Data Matrix. These "
 "barcodes are defined in ISO/IEC 16022."
 msgstr ""
+"libiec16022-develパッケージには、libiec16022でプログラムをコンパイルおよびリンクするために必要なヘッダーファイル、ライブラリ、"
+"設定ファイル、および開発ツールが含まれています。\n"
+"\n"
+"iec16022を使用すると、2Dバーコードを作成できます。データマトリックスとも呼ばれます。これらのバーコードは、ISO/IEC "
+"16022で定義されています。"
 
 #. leap/intel-graphics-compiler/libiga-devel/summary
 msgid "Headers for the Intel Graphics Assembler library"
-msgstr ""
+msgstr "Intel Graphics Assemblerライブラリのヘッダー"
 
 #. leap/intel-graphics-compiler/libiga-devel/description
 msgid "This package contains development files for libiga"
@@ -5229,7 +5668,7 @@ msgstr "インテル(R)グラフィックス・コンパイラー用ライブラ
 msgid ""
 "An LLVM based compiler for OpenCL targeting Intel Gen graphics hardware "
 "architecture."
-msgstr ""
+msgstr "Intel GenグラフィックスハードウェアアーキテクチャをターゲットとしたOpenCL用のLLVMベースのコンパイラ。"
 
 #. leap/intel-graphics-compiler/libigdfcl-devel/summary
 msgid "Headers for the Intel Graphics Frontend Compiler library"
@@ -5245,7 +5684,7 @@ msgstr "インテル(R)グラフィックス・フロントエンド・コンパ
 
 #. leap/intel-graphics-compiler/libigdfcl1/description
 msgid "Library files for the Intel Graphics Frontend Compiler."
-msgstr ""
+msgstr "ライブラリファイルは、Intel Graphics Frontend Compiler用です。"
 
 #. leap/intel-media-driver/libigfxcmrt-devel/summary
 msgid "Development files for Intel Graphics C for Media Runtime Library"
@@ -5303,6 +5742,8 @@ msgid ""
 "This package provides the shared library for IMA/EVM (Integrity Measurement "
 "Architecture/Extended Verification Module)."
 msgstr ""
+"このパッケージは、IMA/EVM(Integrity Measurement Architecture/Extended Verification "
+"Module)用の共有ライブラリを提供します。"
 
 #. leap/iml/libiml0/summary
 msgid "An Integer Matrix Library"
@@ -5315,6 +5756,8 @@ msgid ""
 "matrix operations, such as computing row-echelon form, determinant, rank "
 "profile, inverse of a mod p matrix."
 msgstr ""
+"IMLパッケージは、線形方程式の非特異系を解き、線形方程式の任意の形状系を解き、mod p行列演算を実行するルーチンを提供します。たとえば、row-"
+"echelon形式、行列式、ランクプロファイル、mod p行列の逆行列を計算します。"
 
 #. leap/infinipath-psm/libinfinipath4/description
 #. leap/infinipath-psm/libinfinipath4-32bit/description
@@ -5326,6 +5769,8 @@ msgid ""
 "enabled with mechanisms necessary to implement higher level communications "
 "interfaces in parallel environments."
 msgstr ""
+"PSM Messaging API(PSM API)は、Truescale製品ファミリ用のQLogicの低レベル・ユーザー・レベル通信インターフェースです"
+"。PSMユーザーは、並列環境でより高いレベルの通信インターフェースを実装するために必要なメカニズムを使用できます。"
 
 #. leap/inih/libinih-devel/summary
 msgid "Development files for INIH"
@@ -5339,10 +5784,13 @@ msgid ""
 "This package provides the development headers for INIH including the C++ "
 "bindings."
 msgstr ""
+"INI Not Invented Cで書かれ、PythonのConfigParserとほぼ互換性のある.INIファイル用の簡単なパーサです。\n"
+"\n"
+"このパッケージは、C++バインディングを含むINIH用の開発ヘッダーを提供します。"
 
 #. leap/inih/libinih0/summary
 msgid "INIH dynamic libary files"
-msgstr ""
+msgstr "INIH動的ライブラリー・ファイル"
 
 #. leap/inih/libinih0/description
 msgid ""
@@ -5352,6 +5800,9 @@ msgid ""
 "This package provides the library for use at runtime by applications using "
 "INIH."
 msgstr ""
+"INI Not Invented Cで書かれ、PythonのConfigParserとほぼ互換性のある.INIファイル用の簡単なパーサです。\n"
+"\n"
+"このパッケージは、INIHを使用するアプリケーションが実行時に使用するライブラリを提供します。"
 
 #. leap/iniparser/libiniparser-devel/summary
 msgid ""
@@ -5371,6 +5822,14 @@ msgid ""
 "\n"
 "Libraries and Header Files to Develop Programs with iniparser Support."
 msgstr ""
+"このパッケージには、libiniparserプログラミングインタフェースを利用するプログラムの開発に必要な静的ライブラリとヘッダファイルが含まれています。"
+"\n"
+"\n"
+"libiniparserは、Cレベルからのiniファイルの解析を提供します。\tHTML による完全なドキュメントは、/usr/share/doc/"
+"packages/libiniparser-develディレクトリーからhtml/index.htmlファイルを、任意のHTML "
+"表示可能なブラウザでオープンします。\n"
+"\n"
+"iniparserのサポートを得てプログラムを開発するためのライブラリとヘッダーファイル。"
 
 #. leap/iniparser/libiniparser1/summary
 msgid "Library to parse ini files"
@@ -5391,6 +5850,8 @@ msgid ""
 "injeqt is an attempt to build a powerful and reliable dependency injection "
 "framework on Qt's reflection based on MOC (meta-object compiler)."
 msgstr ""
+"injeqtは、MOC(メタオブジェクトコンパイラ)に基づくQtのリフレクション上に、強力で信頼性の高い依存性注入フレームワークを構築しようとする試みです"
+"。"
 
 #. leap/inotify-tools/libinotifytools0/summary
 msgid "Library files for inotify-tools"
@@ -5469,6 +5930,8 @@ msgid ""
 "subset of Internationalization (I18n) functionality. This is a required "
 "library for using libinvm-cli library."
 msgstr ""
+"libinvm-i18nは、国際化のためのフレームワークライブラリであり、国際化(I18n)機能のサブセットをサポートします。これは、libinvm-"
+"cliライブラリを使用するために必要なライブラリです。"
 
 #. leap/iodbc/libiodbc3/summary
 msgid "Libraries needed to run iODBC"
@@ -5533,6 +5996,8 @@ msgid ""
 "testing tool. You can build it directly into your own program, instead of "
 "having to run it as a shell command."
 msgstr ""
+"libiperfでは、iperf3ネットワーク・テスト・ツールのすべての機能にアクセスできます。シェルコマンドとして実行する代わりに、独自のプログラムに直"
+"接組み込むことができます。"
 
 #. leap/iptables/libipq-devel/summary
 msgid "Development files for the ip_queue kernel mechanism"
@@ -5549,6 +6014,11 @@ msgid ""
 "\n"
 "ip_queue/libipq is obsoleted by nf_queue/libnetfilter_queue!"
 msgstr ""
+"Netfilterプロジェクトが提供するメカニズム(ip_queue)は、スタックからパケットを渡してユーザー空間にキューイングし、そのパケットを受け取っ"
+"てカーネルに戻し、そのパケットに対して何をすべきか(ACCEPTやDROPなど)を判断するものです。これらのパケットは、カーネルに再注入される前にユーザ空"
+"間で修正されることもあります。\n"
+"\n"
+"ip_queue/libipqはnf_queue/libnetfilter_queueによって廃止されました!"
 
 #. leap/iptables/libipq0/summary
 msgid "Library to interface with the (old) ip_queue kernel mechanism"
@@ -5594,6 +6064,9 @@ msgid ""
 "set of accompanying routines. Such a kernel makes IT++ similar to MATLAB or "
 "GNU Octave."
 msgstr ""
+"IT++は、数学、シグナル処理、通信のクラスと関数のC++ライブラリです。その主な用途は、通信システムのシミュレーションや通信分野の研究です。ライブラリの"
+"カーネルは、一般的なベクトルクラスと行列クラス、および一連の付随するルーチンで構成されています。このようなカーネルにより、IT++はMATLABやGNU "
+"Octaveに似たものになります。"
 
 #. leap/ivykis/libivykis0/summary
 msgid "An event dispatching library"
@@ -5605,6 +6078,8 @@ msgid ""
 "readiness notification facilities (such as poll(2), kqueue(2)) and is mainly "
 "intended for writing portable high-performance network servers."
 msgstr ""
+"libivykisは、入出力準備通知機能(poll(2)、kqueue(2)など)のさまざまなOS実装の薄いラッパーであり、主にポータブルで高性能なネット"
+"ワークサーバを作成することを目的としています。"
 
 #. leap/ixpdimm_sw/libixpdimm-cim/summary
 msgid "CIM provider for ixpdimm_sw"
@@ -5616,6 +6091,9 @@ msgid ""
 "ixpdimm_sw as standard CIM objects in order to plug-in to various common "
 "information model object managers (CIMOMS)."
 msgstr ""
+"libixpdimm-cimは、さまざまなCommon Information Model Object "
+"Manager(CIMOMS)にプラグインするために、ixpdimm_swを標準CIMオブジェクトとして公開するCommon Information "
+"Model(CIM)プロバイダーです。"
 
 #. leap/ixpdimm_sw/libixpdimm-core01/summary
 msgid "Core library for ixpdimm_sw"
@@ -5641,14 +6119,16 @@ msgid ""
 "libnetlink provides a higher-level interface to rtnetlink(7). New programs "
 "should use libmnl-devel instead."
 msgstr ""
+"libnetlinkはrtnetlink(7)へのより高いレベルのインタフェースを提供します。新しいプログラムでは、代わりにlibmnl-"
+"develを使用する必要があります。"
 
 #. leap/intel-graphics-compiler/libopencl-clang11/summary
 msgid "A wrapper library around clang"
-msgstr ""
+msgstr "clangの周りのライブラリ"
 
 #. leap/intel-graphics-compiler/libopencl-clang11/description
 msgid "A wrapper library around clang."
-msgstr ""
+msgstr "clangの周りのライブラリのラッパー。"
 
 #. leap/intel-cmt-cat/libpqos-devel/summary
 msgid "Development package for libpqos2"
@@ -5663,6 +6143,11 @@ msgid ""
 "This package contains all that is needed to develop/compile applications "
 "that use PQoS."
 msgstr ""
+"PQoSライブラリは、Cache Monitoring Technology(CMT)、Memory Bandwidth Monitoring(MBM)、"
+"Cache Allocation Technology(CAT)、Code and Data Prioritization(CDP)Technologyな"
+"どのIntel(R)RDTを検出および設定するためのアプリケーションプログラミングインターフェイスを提供します。\n"
+"\n"
+"このパッケージには、PQoSを使用するアプリケーションの開発/コンパイルに必要なものがすべて含まれています。"
 
 #. leap/intel-cmt-cat/libpqos2/summary
 msgid "Runtime qpos library"
@@ -5674,6 +6159,9 @@ msgid ""
 "Cache Monitoring Technology (CMT), Memory Bandwidth Monitoring (MBM), Cache "
 "Allocation Technology (CAT), Code and Data Prioritization (CDP) Technology."
 msgstr ""
+"PQoSライブラリは、Cache Monitoring Technology(CMT)、Memory Bandwidth Monitoring(MBM)、"
+"Cache Allocation Technology(CAT)、Code and Data Prioritization(CDP)Technologyな"
+"どのIntel(R)RDTを検出および設定するためのアプリケーションプログラミングインターフェイスを提供します。"
 
 #. leap/iptables/libxtables-devel/summary
 msgid "Headers and manpages for iptables"
@@ -5751,6 +6239,9 @@ msgid ""
 "\n"
 "Python binding part."
 msgstr ""
+"libi2cは、アプリケーションがシステムのI2CまたはSMBusバスに接続されたデバイスと対話する方法を提供します。\n"
+"\n"
+"Pythonのバインド部分。"
 
 #. leap/iputils/rarpd/summary
 msgid "Reverse Address Resolution Protocol Daemon"
@@ -5762,6 +6253,8 @@ msgid ""
 "address resolution.  These packets are sent by hosts at boot time to find "
 "out their IP addresses."
 msgstr ""
+"Rarpdは、逆アドレス解決を要求するブロードキャストパケットをイーサネット上でリッスンします。これらのパケットは、IPアドレスを見つけるために起動時にホ"
+"ストによって送信されます。"
 
 #. leap/ibus/typelib-1_0-IBus-1_0/summary
 msgid "Introspection bindings for IBus"
@@ -5820,7 +6313,7 @@ msgstr "このパッケージには Ipopt 向けの開発とヘッダファイ�
 
 #. tumbleweed/Ipopt/Ipopt-java/summary
 msgid "Java bindings for Ipopt"
-msgstr ""
+msgstr "IpoptのJavaバインディング"
 
 #. tumbleweed/Ipopt/Ipopt-java/description
 msgid "This package provides the java bindings for Ipopt in a jar file."
@@ -5829,7 +6322,7 @@ msgstr ""
 
 #. tumbleweed/iasimage/summary
 msgid "Utility for creating Intel Automotive Service (IAS) images"
-msgstr ""
+msgstr "インテル(R)オートモーティブ・サービス(IAS)イメージを作成するユーティリティ"
 
 #. tumbleweed/iasimage/description
 msgid ""
@@ -5837,6 +6330,8 @@ msgid ""
 "images, a binary file format understood by bootloaders to load and "
 "initialize Operating Systems or Hypervisors."
 msgstr ""
+"iasimageは、Intel Automotive Service(IAS)イメージを作成するためのユーティリティプログラムです。IASイメージは、オペ"
+"レーティングシステムまたはハイパーバイザをロードおよび初期化するためにブートローダーによって認識されるバイナリファイル形式です。"
 
 #. tumbleweed/ibus_gtk4/ibus-gtk4/summary
 msgid "IBus input method support for gtk4 applications"
@@ -5848,7 +6343,7 @@ msgstr "このパッケージには、gtk4用のibus imモジュールが含ま�
 
 #. tumbleweed/icebreaker/summary
 msgid "An action-puzzle game involving bouncing penguins"
-msgstr ""
+msgstr "ペンギンが跳ねるアクションパズルゲーム"
 
 #. tumbleweed/icebreaker/description
 msgid ""
@@ -5858,6 +6353,9 @@ msgid ""
 "1992 game Jezzball by Dima Pavlovsky, itself having similarities to the 1981 "
 "game of Qix."
 msgstr ""
+"IceBreakerはアクションパズルゲームであり、プレイヤーは、できれば最小限の時間と最小限のミスで、水平空間を区分しなければなりません。IceBrea"
+"kerは、Dima Pavlovskyによる1992年のゲーム「Jezzball」に触発された(しかし、正確なクローンとは程遠い)ものであり、それ自体が1"
+"981年のゲーム「Qix」と類似しています。"
 
 #. tumbleweed/icecream/summary
 msgid "Distributed Compilation in the Network"
@@ -5869,7 +6367,7 @@ msgstr "Icinga Web 2 用の Icinga PHP Common"
 
 #. tumbleweed/icinga-php-common/description
 msgid "This package manages the directory /usr/share/icinga-php."
-msgstr ""
+msgstr "このパッケージは、/usr/share/icinginga-phpディレクトリーを管理します。"
 
 #. tumbleweed/icinga-php-library/summary
 msgid "Icinga PHP Library for Icinga Web 2"
@@ -5880,6 +6378,8 @@ msgid ""
 "This project bundles all Icinga PHP libraries into one piece and can be "
 "integrated as library into Icinga Web 2."
 msgstr ""
+"このプロジェクトは、すべてのIcingingライブラリーを1つにまとめたものであり、ライブラリとしてIcinging a Web "
+"2に統合することができます。"
 
 #. tumbleweed/icinga-php-thirdparty/summary
 msgid "Icinga PHP Thirdparty for Icinga Web 2"
@@ -5890,6 +6390,8 @@ msgid ""
 "This package bundles all 3rd party PHP libraries used by Icinga Web products "
 "into one piece, which can be integrated as library into Icinga Web 2."
 msgstr ""
+"このパッケージは、Icinga Web製品で使用されているすべてのサード・パーティー・ライブラリーを1つにまとめたもので、ライブラリとしてIcinga "
+"Web 2に統合することができます。"
 
 #. tumbleweed/icu4j/icu4j-javadoc/description
 msgid "API documentation for icu4j."
@@ -5907,6 +6409,8 @@ msgid ""
 "including support for blogging and podcasting, as well as a large array of "
 "plugins."
 msgstr ""
+"Ikiwikiはwikiのコンパイラです。Wikiページを、Webサイトでの公開に適したHTMLページに変換します。Ikiwikiは、Subversion"
+"やGitなどのリビジョン管理システムにページと履歴を保存します。その他にも、ブログやポッドキャストのサポート、多数のプラグインなど、多くの機能があります。"
 
 #. tumbleweed/ikiwiki/ikiwiki-w3m/summary
 msgid "Ikiwiki w3m cgi meta-wrapper"
@@ -5918,6 +6422,8 @@ msgid ""
 "web browser without using a web server. w3m supports local CGI scripts, and "
 "ikiwiki can be set up to run that way."
 msgstr ""
+"ウェブサーバを使用せずに、w3mウェブブラウザでikiwikiのすべてのウェブ機能(ページ編集など)を使用できるようにします。w3mはローカルCGIスクリ"
+"プトをサポートしており、ikiwikiはその方法で実行するように設定できます。"
 
 #. tumbleweed/imb_2021_2-gnu-openmpi1-hpc/imb-gnu-openmpi1-hpc/summary
 msgid "Dependency package for imb_2021_2-gnu-openmpi1-hpc"
@@ -5936,7 +6442,7 @@ msgstr ""
 
 #. tumbleweed/istack-commons/import-properties-plugin/summary
 msgid "Istack-commons import properties plugin"
-msgstr ""
+msgstr "Istack-commonsインポートプロパティプラグインComment"
 
 #. tumbleweed/istack-commons/import-properties-plugin/description
 msgid "This package contains the istack-commons import properties Maven Mojo."
@@ -5953,10 +6459,12 @@ msgid ""
 "A DRI accelerated PDF document viewer with 3D effects. Currently, it only "
 "supports keyboard commands (not mouse) and a single 3D cube effect."
 msgstr ""
+"3D効果を備えたDRIで加速するPDFドキュメントビューア。現在は、キーボードコマンド(マウスではない)と単一の3Dキューブエフェクトのみがサポートされて"
+"います。"
 
 #. tumbleweed/in-toto/summary
 msgid "in-toto is a framework to protect supply chain integrity."
-msgstr ""
+msgstr "in-totoは、サプライチェーンの整合性を保護するためのフレームワークです。"
 
 #. tumbleweed/in-toto/description
 msgid ""
@@ -5965,14 +6473,16 @@ msgid ""
 "planned, by authorized personnel only, and that the product is not tampered "
 "with in transit."
 msgstr ""
+"in-totoは、ソフトウェアサプライチェーンの整合性を保護するためのフレームワークを提供します。これは、チェーン内の各タスクが計画どおりに、許可された担"
+"当者のみによって実行され、製品が輸送中に改ざんされていないことを確認することによって行われます。"
 
 #. tumbleweed/inarpd/summary
 msgid "Inverse ARP daemon for Linux"
-msgstr ""
+msgstr "インバースARPデーモン"
 
 #. tumbleweed/inarpd/description
 msgid "Inverse ARP (InARP) daemon for Linux."
-msgstr ""
+msgstr "インバースARP(InARP)デーモン。"
 
 #. tumbleweed/indent/summary
 msgid "Indentation of Source Code in various styles"
@@ -5988,17 +6498,17 @@ msgstr "\"indent\" パッケージ向けの翻訳データです。"
 
 #. tumbleweed/indriya/summary
 msgid "Next Generation Units of Measurement Implementation"
-msgstr ""
+msgstr "次世代の測定単位の実装"
 
 #. tumbleweed/indriya/description
 msgid "Units of Measurement Libraries - JSR 385 Reference Implementation"
-msgstr ""
+msgstr "測定ライブラリの単位-JSR 385リファレンス実装"
 
 #. tumbleweed/indriya/indriya-javadoc/summary
 #. tumbleweed/indriya/indriya-javadoc/description
 #. tumbleweed/uom-lib/uom-lib-javadoc/summary
 msgid "Javadoc for the Units of Measurement Libraries"
-msgstr ""
+msgstr "計測単位ライブラリのJavadoc"
 
 #. tumbleweed/insighttoolkit/insighttoolkit-devel/description
 msgid ""
@@ -6007,6 +6517,9 @@ msgid ""
 "\n"
 "This package provides development files for the ITK library."
 msgstr ""
+"インサイトツールキット(ITK)は、N次元の科学的画像処理、セグメンテーション、およびレジストレーションのためのツールキットです。\n"
+"\n"
+"このパッケージは、ITKライブラリ用の開発ファイルを提供します。"
 
 #. tumbleweed/installation-images-Kubic/install-initrd-Kubic/summary
 msgid "Create initrd for Kubic installation"
@@ -6069,7 +6582,7 @@ msgstr "MicroOS インストールイメージ用 Debuginfo 依存"
 msgid ""
 "Package that holds debuginfo dependencies for image files in installation-"
 "image."
-msgstr ""
+msgstr "installation-image内のイメージファイルのdebuginfo依存関係を保持するパッケージ。"
 
 #. tumbleweed/installation-images-openSUSE/installation-images-debuginfodeps-openSUSE/summary
 msgid "Debuginfo dependencies for openSUSE installation-images"
@@ -6091,16 +6604,22 @@ msgid ""
 "recreate the same visuals of that, a stretch factor must be applied. For "
 "details, see ratio.txt inside the package. ]"
 msgstr ""
+"このfontpackには、テキストモード時代のPCからのさまざまな文字スタイルのリメイクが、最新のユニコード互換のTrueType形式(およびストレートビ"
+"ットマップバージョン)で含まれています。主な注目点は、ハードウェア文字セットにあります。これは、ROMに格納され、テキスト(またはグラフィックス)モードで"
+"作業するときにデフォルトで表示される種類のものです。\n"
+"\n"
+"[クラシックハードウェアテキストモードでは、フォントが画面に合わせて拡張されます!同じビジュアルを再現するには、ストレッチ係数を適用する必要があります。詳"
+"細については、パッケージ内のratio.txtを参照してください。]"
 
 #. tumbleweed/int10h-oldschoolpc-fonts/int10h-oldschoolpc-fonts-stretched/summary
 msgid "Pre-stretched versions of int10h-oldschoolpc-fonts"
-msgstr ""
+msgstr "int10h-oldschoolpc-fontsの拡張版"
 
 #. tumbleweed/int10h-oldschoolpc-fonts/int10h-oldschoolpc-fonts-stretched/description
 msgid ""
 "This package contains aspect-corrected and non-corrected-but-stretched "
 "variants of the main font files."
-msgstr ""
+msgstr "このパッケージには、メインフォントファイルのアスペクト修正されたものと、修正されていないが拡張されたものが含まれています。"
 
 #. tumbleweed/intel-cmt-cat/summary
 msgid "Command line interface to CMT, MBM, CAT and CDP technologies"
@@ -6116,7 +6635,7 @@ msgstr "intel-gpu-tools用の開発ファイルとライブラリヘッダ"
 
 #. tumbleweed/interceptty/summary
 msgid "Serial port sniffer"
-msgstr ""
+msgstr "シリアルポートスニファ"
 
 #. tumbleweed/interceptty/description
 msgid ""
@@ -6126,10 +6645,13 @@ msgid ""
 "provide an emulated serial port connected to a program, and for various "
 "other tasks."
 msgstr ""
+"IntercepTTYは、本物(または偽物)のシリアルポートとアプリケーションの間に置かれ、アプリケーションとデバイス間の通信を記録するプログラムです。ま"
+"た、ネットワークシリアルサーバまたはクライアントとして使用したり、プログラムに接続されたエミュレートされたシリアルポートを提供したり、その他のさまざまなタ"
+"スクに使用したりすることもできます。"
 
 #. tumbleweed/iosevka-fonts/iosevka-aile-fonts/summary
 msgid "Iosevka in quasi-proportional sans-serif style"
-msgstr ""
+msgstr "準比例サンセリフ体のIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-aile-fonts/description
 msgid ""
@@ -6140,10 +6662,14 @@ msgid ""
 "This package contains the Iosevka Aile typeface (quasi-proportional, sans-"
 "serif)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka Aile書体(準比例、サンセリフ体)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-curly-fonts/summary
 msgid "Iosevka in monospace curly style"
-msgstr ""
+msgstr "monospace curly スタイルの Iosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-curly-fonts/description
 msgid ""
@@ -6153,10 +6679,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka Curly typeface (curly style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka Curly書体(curly スタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-curly-slab-fonts/summary
 msgid "Iosevka in monospace slab-serif curly style"
-msgstr ""
+msgstr "monospace slab-serif curly スタイルのIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-curly-slab-fonts/description
 msgid ""
@@ -6167,10 +6697,14 @@ msgid ""
 "This package contains the Iosevka Curly Slab typeface (curly style, slab-"
 "serif)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka Curly Slab 書体(curly スタイル、slab-serif)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-etoile-fonts/summary
 msgid "Iosevka in quasi-proportional slab-serif style"
-msgstr ""
+msgstr "準比例 slab-serif 形式のIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-etoile-fonts/description
 msgid ""
@@ -6181,10 +6715,14 @@ msgid ""
 "This package contains the Iosevka Etoile typeface (quasi-proportional, slab-"
 "serif)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka Etoile の書体(準比例、slab-serif)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/summary
 msgid "Slender typeface for source code"
-msgstr ""
+msgstr "ソースコード用の細い書体"
 
 #. tumbleweed/iosevka-fonts/description
 msgid ""
@@ -6194,10 +6732,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka typeface (monospace, default)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevkaフォント(モノスペース、デフォルト)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-slab-fonts/summary
 msgid "Iosevka in monospace slab-serif style"
-msgstr ""
+msgstr "monospace slab-serif スタイルのIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-slab-fonts/description
 msgid ""
@@ -6207,10 +6749,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka Slab typeface (monospace, slab-serif)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevkaスラブ書体(monospace、slab-serif)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss01-fonts/summary
 msgid "Iosevka in monospace, Andale Mono style"
-msgstr ""
+msgstr "Andale MonoスタイルのモノスペースIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss01-fonts/description
 msgid ""
@@ -6221,10 +6767,14 @@ msgid ""
 "This package contains the Iosevka SS01 typeface (monospace, Andale Mono "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS01書体(モノスペース、Andale Monoスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss02-fonts/summary
 msgid "Iosevka in monospace, Anonymous Pro style"
-msgstr ""
+msgstr "Anonymous Pro形式のモノスペースIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss02-fonts/description
 msgid ""
@@ -6235,10 +6785,14 @@ msgid ""
 "This package contains the Iosevka SS02 typeface (monospace, Anonymous Pro "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS02書体(モノスペース、Anonymous Proスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss03-fonts/summary
 msgid "Iosevka in monospace, Consolas style"
-msgstr ""
+msgstr "ConsolasスタイルのモノスペースIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss03-fonts/description
 msgid ""
@@ -6248,10 +6802,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka SS03 typeface (monospace, Consolas style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS03書体(モノスペース、Consolasスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss04-fonts/summary
 msgid "Iosevka in monospace, Menlo style"
-msgstr ""
+msgstr "MenloスタイルのモノスペースIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss04-fonts/description
 msgid ""
@@ -6261,10 +6819,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka SS04 typeface (monospace, Menlo style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS04書体(モノスペース、メンロースタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss05-fonts/summary
 msgid "Iosevka in monospace, Fira Mono style"
-msgstr ""
+msgstr "Fira MonoスタイルのモノスペースのIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss05-fonts/description
 msgid ""
@@ -6274,10 +6836,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka SS05 typeface (monospace, Fira Mono style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS05書体(モノスペース、Fira Monoスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss06-fonts/summary
 msgid "Iosevka in monospace, Liberation Mono style"
-msgstr ""
+msgstr "モノスペースのIosevka、Liberation Monoスタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss06-fonts/description
 msgid ""
@@ -6288,10 +6854,14 @@ msgid ""
 "This package contains the Iosevka SS06 typeface (monospace, Liberation Mono "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS06書体(モノスペース、Liberation Monoスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss07-fonts/summary
 msgid "Iosevka in monospace, Monaco style"
-msgstr ""
+msgstr "MonacoスタイルのモノスペースIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss07-fonts/description
 msgid ""
@@ -6301,10 +6871,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka SS07 typeface (monospace, Monaco style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Monaco SS07書体(モノスペース、Iosevkaスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss08-fonts/summary
 msgid "Iosevka in monospace, Pragmata Pro style"
-msgstr ""
+msgstr "モノスペースのIosevka、Pragmataプロスタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss08-fonts/description
 msgid ""
@@ -6315,6 +6889,10 @@ msgid ""
 "This package contains the Iosevka SS08 typeface (monospace, Pragmata Pro "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS08書体(モノスペース、Pragmataプロスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss09-fonts/summary
 msgid "Iosevka in monospace, Source Code Pro style"
@@ -6329,10 +6907,14 @@ msgid ""
 "This package contains the Iosevka SS09 typeface (monospace, Source Code Pro "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS09書体(モノスペース、Source Code Proスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss10-fonts/summary
 msgid "Iosevka in monospace, Envy Code R style"
-msgstr ""
+msgstr "Envy Code RスタイルのモノスペースIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss10-fonts/description
 msgid ""
@@ -6343,10 +6925,14 @@ msgid ""
 "This package contains the Iosevka SS10 typeface (monospace, Envy Code R "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS10書体(モノスペース、Envy Code Rスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss11-fonts/summary
 msgid "Iosevka in monospace, X Windows Fixed style"
-msgstr ""
+msgstr "モノスペースのIosevka、Xウィンドウ固定スタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss11-fonts/description
 msgid ""
@@ -6357,10 +6943,14 @@ msgid ""
 "This package contains the Iosevka SS11 typeface (monospace, X Windows Fixed "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS11書体(モノスペース、X Windows固定スタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss12-fonts/summary
 msgid "Iosevka in monospace, Ubuntu Mono style"
-msgstr ""
+msgstr "モノスペースのIosevka、Ubuntu Monoスタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss12-fonts/description
 msgid ""
@@ -6371,10 +6961,14 @@ msgid ""
 "This package contains the Iosevka SS12 typeface (monospace, Ubuntu Mono "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS12フォント(monospace、Ubuntu Monoスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss13-fonts/summary
 msgid "Iosevka in monospace, Lucida style"
-msgstr ""
+msgstr "LucidaスタイルのモノスペースのIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss13-fonts/description
 msgid ""
@@ -6384,10 +6978,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka SS13 typeface (monospace, Lucida style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS13書体(モノスペース、Lucidaスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss14-fonts/summary
 msgid "Iosevka in monospace, JetBrains Mono style"
-msgstr ""
+msgstr "モノスペースのIosevka、JetBrains Monoスタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss14-fonts/description
 msgid ""
@@ -6398,10 +6996,14 @@ msgid ""
 "This package contains the Iosevka SS14 typeface (monospace, JetBrains Mono "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS14フォント(monospace、JetBrains Monoスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss15-fonts/summary
 msgid "Iosevka in monospace, IBM Plex Mono style"
-msgstr ""
+msgstr "モノスペースのIosevka、IBM Plex Monoスタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss15-fonts/description
 msgid ""
@@ -6412,10 +7014,14 @@ msgid ""
 "This package contains the Iosevka SS15 typeface (monospace, IBM Plex Mono "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS15書体(monospace、IBM Plex Monoスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss16-fonts/summary
 msgid "Iosevka in monospace, PT Mono style"
-msgstr ""
+msgstr "モノスペース、PT Mono スタイルのIosevka"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss16-fonts/description
 msgid ""
@@ -6425,10 +7031,14 @@ msgid ""
 "\n"
 "This package contains the Iosevka SS16 typeface (monospace, PT Mono style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS16書体(モノスペース、PTMonoスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss17-fonts/summary
 msgid "Iosevka in monospace, Recursive Mono style"
-msgstr ""
+msgstr "モノスペースのIosevka、再帰的モノスタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss17-fonts/description
 msgid ""
@@ -6439,10 +7049,14 @@ msgid ""
 "This package contains the Iosevka SS17 typeface (monospace, Recursive Mono "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS17書体(モノスペース、再帰的モノスタイル)が含まれています。"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss18-fonts/summary
 msgid "Iosevka in monospace, Input Mono style"
-msgstr ""
+msgstr "モノスペースのIosevka、Input Monoスタイル"
 
 #. tumbleweed/iosevka-fonts/iosevka-ss18-fonts/description
 msgid ""
@@ -6453,10 +7067,14 @@ msgid ""
 "This package contains the Iosevka SS18 typeface (monospace, Input Mono "
 "style)."
 msgstr ""
+"Iosevkaは、sans-serif+slab-serif、monospace+quasi proportional "
+"typefaceファミリーで、コードを書いたり、端末で使ったり、技術文書を作成したりするために設計されています。\n"
+"\n"
+"このパッケージには、Iosevka SS18書体(モノスペース、Input Monoスタイル)が含まれています。"
 
 #. tumbleweed/iotop-c/summary
 msgid "Simple top-like I/O monitor (implemented in C)"
-msgstr ""
+msgstr "シンプルなトップ型I/Oモニタ(Cで実装)"
 
 #. tumbleweed/iotop-c/description
 msgid ""
@@ -6473,10 +7091,19 @@ msgid ""
 "performance. Normally a monitoring tool intended to be used on a system "
 "under heavy stress should use the least additional resources as possible."
 msgstr ""
+"iotop-cは、top(1)がCPU使用量に対して行うのと同じことをI/O使用量に対して行います。Linuxカーネルが出力するI/"
+"O使用状況情報を監視し、システム上のプロセスによる現在のI/"
+"O使用状況のテーブルを表示します。これは、「なぜディスクがそんなに回転しているのか?」という質問に答えるのに便利です。\n"
+"\n"
+"iotop-cを使用するには、CONFIG_TASKSTATS、CONFIG_TASK_DELAY_ACCT、CONFIG_TASK_IO_ACCOUNT"
+"ING、およびCONFIG_VM_EVENT_COUNTERS設定オプションをオンにして構築されたLinuxカーネルが必要です。\n"
+"\n"
+"iotop-cは、パフォーマンスのために最適化された、Cでのiotopの代替再実装です。通常、高ストレス下のシステムで使用されることを意図した監視ツールは"
+"、可能な限り最小限の追加リソースを使用すべきです。"
 
 #. tumbleweed/ip2unix/summary
 msgid "Turn IP sockets into Unix domain sockets"
-msgstr ""
+msgstr "IPソケットをUnixドメインソケットに変換"
 
 #. tumbleweed/ip2unix/description
 msgid ""
@@ -6487,6 +7114,9 @@ msgid ""
 "For example if a socketPath is specified, the Unix domain socket will bind "
 "or listen to the given path."
 msgstr ""
+"プログラムを実行し、短いコマンドラインオプションまたはルールのリストを含むファイルによって与えられたルールのリストに基づいて、実行時にIPをUnixドメイ"
+"ンソケットに変換します。最初に一致したルールによって、ip2unixは与えられたオプションに基づいて現在のソケットをUNIXドメインソケットに置き換えます"
+"。たとえば、socketPathが指定されている場合、UNIXドメインソケットは指定されたパスをバインドまたはリッスンします。"
 
 #. tumbleweed/ipset/description
 msgid ""
@@ -6536,7 +7166,7 @@ msgstr ""
 
 #. tumbleweed/iredis/summary
 msgid "Terminal client for Redis with auto-completion and syntax highlighting"
-msgstr ""
+msgstr "自動補完と構文強調表示を備えたRedisのターミナルクライアント"
 
 #. tumbleweed/iredis/description
 msgid ""
@@ -6547,38 +7177,42 @@ msgid ""
 "exactly the same as redis-cli. IRedis will prevent accidentally running "
 "dangerous commands."
 msgstr ""
+"自動補完と構文強調表示を備えたRedisのターミナルクライアント。IRedisコマンドを入力すると、結果が表示されます。\n"
+"\n"
+"redisはIRedis-cliの代替です。ほとんどの場合、redisはIRedis-"
+"cliとまったく同じように動作します。IRedisは、危険なコマンドを誤って実行することを防ぎます。"
 
 #. tumbleweed/irqstat/summary
 msgid "Script to better monitor interrupts in large systems"
-msgstr ""
+msgstr "大規模システムの割り込み監視を改善するスクリプト"
 
 #. tumbleweed/irqstat/description
 msgid ""
 "A better way to watch /proc/interrupts, designed for NUMA systems with many "
 "processors."
-msgstr ""
+msgstr "多くのプロセッサを持つNUMAシステム用に設計された、/proc/interruptsを監視するためのより良い方法。"
 
 #. tumbleweed/ispc/summary
 msgid "C-based SPMD programming language compiler"
-msgstr ""
+msgstr "CベースのSPMDプログラミング言語コンパイラ"
 
 #. tumbleweed/ispc/description
 msgid ""
 "A compiler for a variant of the C programming language, with extensions for "
 "\"single program, multiple data\" (SPMD) programming."
-msgstr ""
+msgstr "「単一プログラム、複数データ」(SPMD)プログラミング用の拡張機能を備えた、Cプログラミング言語のバリアント用のコンパイラ。"
 
 #. tumbleweed/istack-commons/summary
 msgid "Common code for some Glassfish projects"
-msgstr ""
+msgstr "一部のGlassfishプロジェクトの共通コード"
 
 #. tumbleweed/istack-commons/description
 msgid "Code shared between JAXP, JAXB, SAAJ, and JAX-WS projects."
-msgstr ""
+msgstr "JAXP、JAXB、SAAJ、およびJAX-WSプロジェクト間で共有されるコード。"
 
 #. tumbleweed/istack-commons/istack-commons-buildtools/summary
 msgid "Istack-commons buildtools"
-msgstr ""
+msgstr "Istack-commonsビルドツール"
 
 #. tumbleweed/istack-commons/istack-commons-buildtools/description
 msgid "This package contains istack-commons buildtools."
@@ -6586,7 +7220,7 @@ msgstr "このパッケージには  istack-commons ビルドツールが含ま�
 
 #. tumbleweed/istack-commons/istack-commons-maven-plugin/summary
 msgid "Istack-commons Maven Mojo"
-msgstr ""
+msgstr "Istack-commons Maven Mojo"
 
 #. tumbleweed/istack-commons/istack-commons-maven-plugin/description
 msgid "This package contains the istack-commons Maven Mojo."
@@ -6594,7 +7228,7 @@ msgstr "このパッケージには、 istack-commons Maven Mojo が含まれて
 
 #. tumbleweed/istack-commons/istack-commons-runtime/summary
 msgid "Istack-commons runtime"
-msgstr ""
+msgstr "Istack-commons ランタイム"
 
 #. tumbleweed/istack-commons/istack-commons-runtime/description
 msgid "This package contains istack-commons runtime."
@@ -6602,7 +7236,7 @@ msgstr "このパッケージには、 istack-commons runtime が含まれてい
 
 #. tumbleweed/istack-commons/istack-commons-soimp/summary
 msgid "Istack-commons soimp"
-msgstr ""
+msgstr "Istack-commons soimp"
 
 #. tumbleweed/istack-commons/istack-commons-soimp/description
 msgid "This package contains istack-commons soimp."
@@ -6610,7 +7244,7 @@ msgstr "このパッケージには istack-commons soimp が含まれていま�
 
 #. tumbleweed/istack-commons/istack-commons-test/summary
 msgid "Istack-commons test"
-msgstr ""
+msgstr "Istack-commons テスト"
 
 #. tumbleweed/istack-commons/istack-commons-test/description
 msgid "This package contains istack-commons test."
@@ -6618,7 +7252,7 @@ msgstr "このパッケージには、 gistack-commons テストが含まれて�
 
 #. tumbleweed/istack-commons/istack-commons-tools/summary
 msgid "Istack-commons tools"
-msgstr ""
+msgstr "Istack-commons ツール"
 
 #. tumbleweed/istack-commons/istack-commons-tools/description
 msgid "This package contains istack-commons tools."
@@ -6626,15 +7260,15 @@ msgstr "このパッケージには istack-commons スタックが含まれて�
 
 #. tumbleweed/itext-parent/summary
 msgid "iText Parent POM"
-msgstr ""
+msgstr "iText親POM"
 
 #. tumbleweed/itext-parent/description
 msgid "The Parent POM for iText Projects."
-msgstr ""
+msgstr "iTextプロジェクトの親POM。"
 
 #. tumbleweed/itextpdf/summary
 msgid "A Free Java-PDF library"
-msgstr ""
+msgstr "無料のJava-PDFライブラリ"
 
 #. tumbleweed/itextpdf/description
 msgid ""
@@ -6645,6 +7279,10 @@ msgid ""
 "based Servlets: The look and feel of HTML is browser dependent; with iText "
 "and PDF you can control exactly how your servlet's output will look."
 msgstr ""
+"iTextは、その場でPDFファイルを生成できるライブラリです。iTextクラスは、テキスト、リスト、テーブル、およびイメージを含む読み取り専用のプラット"
+"フォームに依存しないドキュメントを生成する必要がある場合に非常に便利です。ライブラリは、JavaTM(TM)テクノロジー・ベースのサーブレットと組み合わせ"
+"ると特に便利です。HTMLのルック・アンド・フィールはブラウザーに依存しますが、iTextとPDFを使用すると、サーブレットの出力がどのように表示されるか"
+"を正確に制御できます。"
 
 #. tumbleweed/itextpdf/itextpdf-javadoc/summary
 msgid "API documentation for itextpdf"
@@ -6667,6 +7305,8 @@ msgid ""
 "memory and link-time costs. It utilises the features provided by the Linux "
 "kernel."
 msgstr ""
+"iNet Wireless Daemon(iwd)プロジェクトは、ワイヤレス接続ソリューションを提供します。ストレージ、実行時メモリ、およびリンク時間コス"
+"トのリソース使用率を最適化しようとします。Linuxカーネルが提供する機能を利用します。"
 
 #. tumbleweed/i2c-tools/libi2c0-devel/summary
 msgid "Development files for the I2C/SMBus bus access library"
@@ -6674,7 +7314,7 @@ msgstr "I2C/SMBus バスアクセスライブラリ向け開発ファイル"
 
 #. tumbleweed/insighttoolkit/libinsighttoolkit5/summary
 msgid "Toolkit for scientific image processing, segmentation, and registration"
-msgstr ""
+msgstr "科学的画像処理、セグメンテーション、および位置合わせのためのツールキット"
 
 #. tumbleweed/insighttoolkit/libinsighttoolkit5/description
 msgid ""
@@ -6683,16 +7323,21 @@ msgid ""
 "\n"
 "This package provides shared libraries for ITK."
 msgstr ""
+"インサイトツールキット(ITK)は、N次元の科学的画像処理、セグメンテーション、およびレジストレーションのためのツールキットです。\n"
+"\n"
+"このパッケージは、ITK用の共有ライブラリを提供します。"
 
 #. tumbleweed/Ipopt/libipopt3/summary
 msgid "A software package for large-scale nonlinear optimization methods"
-msgstr ""
+msgstr "大規模非線形最適化法のためのソフトウェアパッケージ"
 
 #. tumbleweed/Ipopt/libipopt3/description
 msgid ""
 "Ipopt (Interior Point OPTimizer, pronounced eye-pea-Opt) is a software "
 "package for large-scale nonlinear optimization."
 msgstr ""
+"Ipopt(Interior Point OPTimizer、eye-pea-"
+"Optと発音する)は、大規模な非線形最適化のためのソフトウェアパッケージです。"
 
 #. tumbleweed/isl/libisl23/description
 #. tumbleweed/isl/libisl23-32bit/description
@@ -6702,6 +7347,9 @@ msgid ""
 "ISL is a library for manipulating sets and relations of integer points "
 "bounded by linear constraints."
 msgstr ""
+"ISLの共用ライブラリー。\n"
+"\n"
+"ISLは、線形制約によって制限された整数点の集合と関係を操作するためのライブラリです。"
 
 #. tumbleweed/intel-cmt-cat/libpqos-devel/summary
 msgid "Development package for libpqos4"
@@ -6722,6 +7370,9 @@ msgid ""
 "\n"
 "This package provides the modules for ITK's python bindings."
 msgstr ""
+"インサイトツールキット(ITK)は、N次元の科学的画像処理、セグメンテーション、およびレジストレーションのためのツールキットです。\n"
+"\n"
+"このパッケージは、ITKのPythonバインディング用のモジュールを提供します。"
 
 #. tumbleweed/installation-images-Kubic/skelcd-installer-Kubic/summary
 #. tumbleweed/installation-images-MicroOS/skelcd-installer-MicroOS/summary
