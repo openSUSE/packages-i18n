@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: create_utf8 for Selections\n"
 "Report-Msgid-Bugs-To: http://bugzilla.novell.com\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2024-05-27 18:46+0000\n"
+"PO-Revision-Date: 2024-06-04 03:46+0000\n"
 "Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
 "Language-Team: Slovenian <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/sl/>\n"
@@ -28,6 +28,8 @@ msgid ""
 "This will install the 32-bit variant of all selected patterns. This allows "
 "to execute 32-bit software."
 msgstr ""
+"To bo namestilo 32-bitne variante vseh izbranih vzorcev, kar omogoča "
+"izvajanje 32-bitnih programov."
 
 #. SLE/patterns-base/patterns-base-32bit/category
 #. SLE/patterns-base/patterns-base-apparmor/category
@@ -42,12 +44,12 @@ msgstr ""
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/category
 #. SLE/patterns-yast/patterns-yast-yast2_server/category
 msgid "Base Technologies"
-msgstr ""
+msgstr "Osnovne tehnologije"
 
 #. SLE/patterns-base/patterns-base-apparmor/summary
 #. SLE/patterns-base/patterns-base-apparmor-32bit/summary
 msgid "AppArmor"
-msgstr ""
+msgstr "AppArmor"
 
 #. SLE/patterns-base/patterns-base-apparmor/description
 msgid ""
@@ -57,15 +59,19 @@ msgid ""
 "development of per-program application security without requiring additional "
 "knowledge."
 msgstr ""
+"AppArmor je programsko varnostno ogrodje, ki ponuja obvezen nadzor dostopa "
+"za programe. Varuje pred izkoriščanjem napak v programih in ogroženih "
+"sistemov. Ponuja napreden nabor orodij, ki avtomatizirajo razvoj varnosti "
+"vezane na program, brez potrebnega dodatnega znanja."
 
 #. SLE/patterns-base/patterns-base-apparmor-32bit/description
 msgid "The 32bit pattern complementing apparmor."
-msgstr ""
+msgstr "32-bitni vzorec, ki dopolnjuje apparmor."
 
 #. SLE/patterns-base/patterns-base-base/summary
 #. SLE/patterns-base/patterns-base-base-32bit/summary
 msgid "Minimal Base System"
-msgstr ""
+msgstr "Minimalni osnovni sistem"
 
 #. SLE/patterns-base/patterns-base-base/description
 #. SLE/patterns-base/patterns-base-basesystem/description
@@ -74,37 +80,40 @@ msgid ""
 "booting system. For running on real hardware, you need to add additional "
 "packages and pattern to make this pattern useful on its own."
 msgstr ""
+"To je osnovni izvajalni sistem. Vsebuje le osnovni več-uporabniški sistem. "
+"Za poganjanje na pravi strojni opremi, morate dodati druge pakete in vzorce, "
+"da bo ta vzorec uporaben."
 
 #. SLE/patterns-base/patterns-base-base-32bit/description
 msgid "The 32bit pattern complementing base."
-msgstr ""
+msgstr "32-bitni vzorec, ki dopolnjuje base."
 
 #. SLE/patterns-base/patterns-base-basesystem/summary
 msgid "Minimal Base System (alias pattern for base)"
-msgstr ""
+msgstr "Minimalni osnovni sistem (drugo ime za base)"
 
 #. SLE/patterns-base/patterns-base-basic_desktop/summary
 msgid "A very basic desktop (previously part of x11 pattern)"
-msgstr ""
+msgstr "Zelo osnovno namizje (prej dela vzorca X11)"
 
 #. SLE/patterns-base/patterns-base-basic_desktop/description
 msgid "This pattern installs a rather basic desktop (icewm)"
-msgstr ""
+msgstr "Ta vzorec namesti zelo osnovno namizno okolje (IceWM)"
 
 #. SLE/patterns-base/patterns-base-basic_desktop/category
 #. SLE/patterns-base/patterns-base-x11/category
 #. SLE/patterns-base/patterns-base-x11_enhanced/category
 #. SLE/patterns-fonts/patterns-fonts-fonts/category
 msgid "Graphical Environments"
-msgstr ""
+msgstr "Grafična okolja"
 
 #. SLE/patterns-base/patterns-base-bootloader/summary
 msgid "Bootloader"
-msgstr ""
+msgstr "Zagonski nalagalnik"
 
 #. SLE/patterns-base/patterns-base-bootloader/description
 msgid "This pattern holds files required for booting the system"
-msgstr ""
+msgstr "Ta vzorec vsebuje datoteke, ki so potrebne za zagon sistema"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
 #. SLE/patterns-base/patterns-base-documentation/description
@@ -112,27 +121,26 @@ msgid "Help and Support Documentation"
 msgstr "Dokumentacija za pomoč in podporo"
 
 #. SLE/patterns-base/patterns-base-documentation/category
-#, fuzzy
 msgid "Documentation"
-msgstr "Dokumentacija za pomoč in podporo"
+msgstr "Dokumentacija"
 
 #. SLE/patterns-base/patterns-base-enhanced_base/summary
 #. SLE/patterns-base/patterns-base-enhanced_base-32bit/summary
 msgid "Enhanced Base System"
-msgstr ""
+msgstr "Izboljšan osnovni sitem"
 
 #. SLE/patterns-base/patterns-base-enhanced_base/description
 msgid ""
 "This is the enhanced base runtime system with lots of convenience packages."
-msgstr ""
+msgstr "To je izboljšan osnovni izvajalni sistem z veliko priročnimi paketi."
 
 #. SLE/patterns-base/patterns-base-enhanced_base-32bit/description
 msgid "The 32bit pattern complementing enhanced_base."
-msgstr ""
+msgstr "32-bitni vzorec, ki dopolnjuje enhanced_base."
 
 #. SLE/patterns-base/patterns-base-fips/summary
 msgid "FIPS 140-2 specific packages"
-msgstr ""
+msgstr "Paketi posebej za FIPS 140-2"
 
 #. SLE/patterns-base/patterns-base-fips/description
 msgid ""
@@ -146,47 +154,59 @@ msgid ""
 "Please refer to SUSE official statements on the state of FIPS 140-2 "
 "certification."
 msgstr ""
+"Ta vzorec namesti pakete posebej za FIPS 140-2, ki dopolnijo razne "
+"kriptografske module, ki so v uporabi. Zahtevan je, če želite računalnik "
+"poganjati z »fips=1«.\n"
+"\n"
+"Vedite, da ta paket samo omogoči delovanje, ki je skladno s FIPS 140-2, in "
+"neposredno ne napravi sistema certificiranega ali potrjenega za FIPS 140-2.\n"
+"\n"
+"Oglejte si uradne izjave podjetja SUSE o stanju certificiranja FIPS 140-2."
 
 #. SLE/patterns-base/patterns-base-fips/category
 msgid "Primary Functions"
-msgstr ""
+msgstr "Glavne funkcije"
 
 #. SLE/patterns-base/patterns-base-minimal_base/summary
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/summary
 msgid "Minimal Appliance Base"
-msgstr ""
+msgstr "Minimalna osnova za namenske distribucije"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
 msgstr ""
+"To je res minimalni izvajalni sistem. Mišljen je kot osnova za namenske "
+"distribucije."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
-msgstr ""
+msgstr "32-bitni vzorec, ki dopolnjuje minimal_base."
 
 #. SLE/patterns-base/patterns-base-sw_management/summary
 #. SLE/patterns-base/patterns-base-sw_management-32bit/summary
 msgid "Software Management"
-msgstr ""
+msgstr "Upravljanje programov"
 
 #. SLE/patterns-base/patterns-base-sw_management/description
 msgid ""
 "This pattern provides a graphical application and a command line tool for "
 "keeping your system up to date."
 msgstr ""
+"Ta vzorec ponuja grafični program in orodje za ukazno vrstico za "
+"posodabljanje sistema."
 
 #. SLE/patterns-base/patterns-base-sw_management-32bit/description
 msgid "The 32bit pattern complementing sw_management."
-msgstr ""
+msgstr "32-bitni vzorec, ki dopolnjuje sw_management."
 
 #. SLE/patterns-base/patterns-base-x11/summary
 #. SLE/patterns-base/patterns-base-x11-32bit/summary
 #. SLE/patterns-base/patterns-base-x11_enhanced/summary
 #. SLE/patterns-base/patterns-base-x11_enhanced-32bit/summary
 msgid "X Window System"
-msgstr ""
+msgstr "Grafični sistem X Window"
 
 #. SLE/patterns-base/patterns-base-x11/description
 #. SLE/patterns-base/patterns-base-x11_enhanced/description
@@ -196,14 +216,18 @@ msgid ""
 "today's enterprise: from network servers to desktops, thin clients, laptops, "
 "and handhelds, independent of operating system and hardware."
 msgstr ""
+"Grafični sistem X Window System ponuja standardni omrežni grafični sistem, "
+"ki je na voljo za več različnih okolij: od omrežnih strežnikov do namizij, "
+"lahkih odjemalcev, prenosnikov in ročnih naprav. Neodvisen je od "
+"operacijskega sistema in strojne opreme."
 
 #. SLE/patterns-base/patterns-base-x11-32bit/description
 msgid "The 32bit pattern complementing x11."
-msgstr ""
+msgstr "32-bitni vzorec, ki dopolnjuje x11."
 
 #. SLE/patterns-base/patterns-base-x11_enhanced-32bit/description
 msgid "The 32bit pattern complementing x11_enhanced."
-msgstr ""
+msgstr "32-bitni vzorec, ki dopolnjuje x11_enhanced."
 
 #. SLE/patterns-fonts/patterns-fonts-fonts/summary
 msgid "Fonts"
@@ -211,43 +235,43 @@ msgstr "Pisave"
 
 #. SLE/patterns-fonts/patterns-fonts-fonts/description
 msgid "Base fonts and font configuration."
-msgstr ""
+msgstr "Osnovne pisave in nastavitve pisav."
 
 #. SLE/patterns-yast/patterns-yast-x11_yast/summary
 msgid "YaST User Interfaces"
-msgstr ""
+msgstr "Uporabniški vmesniki YaST"
 
 #. SLE/patterns-yast/patterns-yast-x11_yast/description
 msgid "Graphical YaST user interfaces for minimal X desktop."
-msgstr ""
+msgstr "Grafični uporabniški vmesniki YaST za minimalno namizje na X."
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
 msgid "YaST Base Utilities"
-msgstr ""
+msgstr "Osnovna orodja YaST"
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/description
 msgid "YaST tools for basic system administration."
-msgstr ""
+msgstr "Orodja YaST za osnovno upravljanje sistema."
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
 msgid "YaST Desktop Utilities"
-msgstr ""
+msgstr "Namizna orodja YaST"
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
 msgid "YaST tools for desktop system administration."
-msgstr ""
+msgstr "Orodja YaST za upravljanje sistema z namiznim okoljem."
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/summary
 msgid "YaST Server Utilities"
-msgstr ""
+msgstr "Strežniška orodja YaST"
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
 msgid "YaST tools for server system administration."
-msgstr ""
+msgstr "Orodja YaST za upravljanje strežniškega sistema."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
-msgstr ""
+msgstr "Namizno okolje GNOME (osnovno)"
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_basic/description
 msgid ""
