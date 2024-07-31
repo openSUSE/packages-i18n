@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2024-07-30 09:47+0000\n"
+"PO-Revision-Date: 2024-07-31 11:47+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
 "a-master/cs/>\n"
@@ -327,7 +327,7 @@ msgstr ""
 
 #. leap/96BoardsGPIO/96BoardsGPIO-common/summary
 msgid "Common files for 96BoardsGPIO"
-msgstr ""
+msgstr "Společné soubory pro 96BoardsGPIO"
 
 #. leap/96BoardsGPIO/96BoardsGPIO-common/description
 msgid ""
@@ -342,11 +342,20 @@ msgid ""
 "\n"
 "This package contains common config files for 96BoardsGPIO."
 msgstr ""
+"Knihovna 96BoardGPIO ovládá hardware prostřednictvím GPIO na deskách rodiny "
+"96Boards, které splňují specifikaci CE. Tyto desky mají stejný "
+"nízkorychlostní rozšiřující konektor, ale různé SOC mají různé piny GPIO, "
+"pro které je třeba použít jiný kód pro povolení pinů 23-34 na konektoru.\n"
+"\n"
+"Knihovna 96BoardGPIO k těmto informacím nepřihlíží, takže lze zjistit, o "
+"jakou desku se jedná a jaké piny mají být použity, a knihovna se postará o "
+"zbytek.\n"
+"\n"
+"Tento balíček obsahuje společné konfigurační soubory pro 96BoardsGPIO."
 
 #. leap/96BoardsGPIO/96BoardsGPIO-devel/summary
-#, fuzzy
 msgid "Development files for 96BoardsGPIO"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro 96BoardsGPIO"
 
 #. leap/96BoardsGPIO/96BoardsGPIO-devel/description
 msgid ""
@@ -361,40 +370,48 @@ msgid ""
 "\n"
 "This package contains development files for 96BoardsGPIO."
 msgstr ""
+"Knihovna 96BoardGPIO ovládá hardware prostřednictvím GPIO na deskách rodiny "
+"96Boards, které splňují specifikaci CE. Tyto desky mají stejný "
+"nízkorychlostní rozšiřující konektor, ale různé SOC mají různé piny GPIO, "
+"pro které je třeba použít jiný kód pro povolení pinů 23-34 na konektoru.\n"
+"\n"
+"Knihovna 96BoardGPIO tyto informace zpřístupní, takže lze zjistit, o jakou "
+"desku se jedná a jaké piny mají být použity, a knihovna se postará o zbytek."
+"\n"
+"\n"
+"Tento balíček obsahuje vývojové soubory pro 96BoardsGPIO."
 
 #. leap/389-ds/lib389/summary
 msgid "389 Directory Server administration tools and library"
-msgstr ""
+msgstr "Nástroje a knihovna pro správu adresářového serveru 389 (port LDAP)"
 
 #. leap/389-ds/lib389/description
 msgid ""
 "Python library for interacting with and administering 389 Directory Server "
 "instances locally or remotely."
 msgstr ""
+"Knihovna jazyka Python pro interakci s instancemi adresářového serveru a "
+"jejich místní nebo vzdálenou správu."
 
 #. leap/4store/lib4store-devel/summary
-#, fuzzy
 msgid "4store RDF Storage Development Files"
-msgstr "XML parser - vývojové soubory"
+msgstr "Vývojové soubory pro 4store RDF Storage"
 
 #. leap/4store/lib4store-devel/description
-#, fuzzy
 msgid "This package provides 4store RDF storage development files."
-msgstr "XML parser - vývojové soubory"
+msgstr "Tento balíček poskytuje vývojové soubory úložiště 4store RDF."
 
 #. leap/4store/lib4store0/summary
-#, fuzzy
 msgid "4store RDF Storage Library"
-msgstr "Knihovna readline"
+msgstr "Knihovna 4store RDF Storage"
 
 #. leap/4store/lib4store0/description
-#, fuzzy
 msgid "This package provides 4store RDF storage shared library."
-msgstr "tento balíček obsahuje sdílené knihovny pro LADCCA systém."
+msgstr "Tento balíček poskytuje sdílenou knihovnu úložiště 4store RDF."
 
 #. leap/4ti2/lib4ti2-0/summary
 msgid "Library for computation of Gröbner bases with 4ti2"
-msgstr ""
+msgstr "Knihovna pro výpočet Gröbnerových bází s 4ti2"
 
 #. leap/4ti2/lib4ti2-0/description
 msgid ""
@@ -404,10 +421,15 @@ msgid ""
 "- 64-bit precision integers\n"
 "- arbitrary precision integer support through use of GNU MP"
 msgstr ""
+"Tento balíček obsahuje programovou knihovnu 4ti2, která je k dispozici ve "
+"třech variantách:\n"
+"- celá čísla s 32bitovou přesností\n"
+"- celá čísla s 64bitovou přesností\n"
+"- podpora celých čísel s libovolnou přesností pomocí GNU MP"
 
 #. leap/96BoardsGPIO/lib96BoardsGPIO0/summary
 msgid "A library to make GPIO use across 96Boards uniform"
-msgstr ""
+msgstr "Knihovna pro jednotné používání GPIO na 96Boards"
 
 #. leap/96BoardsGPIO/lib96BoardsGPIO0/description
 msgid ""
@@ -425,23 +447,35 @@ msgid ""
 "\n"
 "This package contains shared library for 96BoardsGPIO."
 msgstr ""
+"Knihovna 96BoardGPIO ovládá hardware prostřednictvím GPIO na deskách rodiny "
+"96Boards, které splňují specifikaci CE.\n"
+"\n"
+"Všechny takové desky používají stejné piny pro nízkorychlostní rozšiřující "
+"konektor, takže jakoukoli rozšiřující desku lze připojit k libovolné desce "
+"96Board a ta se elektricky propojí. Různé SoC však mají různé piny GPIO. I "
+"když jsou elektricky piny na stejném místě, k povolení a použití GPIO na "
+"pinech 23-34 je potřeba jiný kód.\n"
+"\n"
+"Knihovna 96BoardGPIO tyto informace přečte, takže lze zjistit, o jakou desku "
+"se jedná a jaké piny mají být použity, a knihovna se postará o zbytek.\n"
+"\n"
+"Tento balíček obsahuje sdílenou knihovnu pro 96BoardsGPIO."
 
 #. leap/4ti2/libzsolve0/summary
-#, fuzzy
 msgid "Library for solving linear systems over integers for 4ti2"
-msgstr "Knihovna pro rozpoznání souborového systému"
+msgstr "Knihovna pro řešení lineárních systémů nad celými čísly pro 4ti2"
 
 #. leap/4ti2/libzsolve0/description
-#, fuzzy
 msgid ""
 "This package contains the 4ti2 library for solving systems linear systems "
 "over integers (\\mathbb{Z})."
-msgstr "tento balíček obsahuje sdílené knihovny pro LADCCA systém."
+msgstr ""
+"Tento balíček obsahuje knihovnu 4ti2 pro řešení soustav lineárních systémů "
+"nad celými čísly (\\mathbb{Z})."
 
 #. leap/96BoardsGPIO/python3-96BoardsGPIO/summary
-#, fuzzy
 msgid "Python bindings for 96BoardsGPIO"
-msgstr "Python vazby pro D-Bus"
+msgstr "Vazby jazyka Python pro 96BoardsGPIO"
 
 #. leap/96BoardsGPIO/python3-96BoardsGPIO/description
 msgid ""
@@ -456,23 +490,31 @@ msgid ""
 "\n"
 "This package contains python bindings for 96BoardsGPIO."
 msgstr ""
+"Knihovna 96BoardGPIO ovládá hardware prostřednictvím GPIO na deskách rodiny "
+"96Boards, které splňují specifikaci CE. Tyto desky mají stejný "
+"nízkorychlostní rozšiřující konektor, ale různé SOC mají různé piny GPIO, "
+"pro které je třeba použít jiný kód pro povolení pinů 23-34 na konektoru.\n"
+"\n"
+"Knihovna 96BoardGPIO tyto informace čte, takže lze zjistit, o jakou desku se "
+"jedná a jaké piny mají být použity, a knihovna se postará o zbytek.\n"
+"\n"
+"Tento balíček obsahuje vazby na jazyk python pro 96BoardsGPIO."
 
 #. tumbleweed/7zip/summary
 msgid "File Archivier"
-msgstr ""
+msgstr "Archivátor souborů"
 
 #. tumbleweed/7zip/description
-#, fuzzy
 msgid ""
 "This package contains the 7z command line utility for archiving and "
 "extracting various formats."
 msgstr ""
-"Balíček audit-devel obsahuje statické knihovny a hlavičkové soubory potřebné "
-"pro vývoj aplikací, které používají knihovny auditového rámce."
+"Tento balíček obsahuje nástroj příkazového řádku 7z pro archivaci a extrakci "
+"různých formátů."
 
 #. leap-nonoss/AdobeICCProfiles/summary
 msgid "Adobe ICC Profiles"
-msgstr ""
+msgstr "Profily ICC společnosti Adobe"
 
 #. leap-nonoss/AdobeICCProfiles/description
 msgid ""
@@ -504,45 +546,73 @@ msgid ""
 "System requirements Any system-level or application-level color management "
 "system that uses ICC color profiles."
 msgstr ""
+"Vytvářejte kvalitní barevné pracovní postupy pomocí profilů ICC společnosti "
+"Adobe.\n"
+"\n"
+"Společnost Adobe chce umožnit konzistentní a vysoce kvalitní barevné "
+"pracovní postupy. Aby byly barevné pracovní postupy úspěšné, musí informace "
+"o barvách sdílet mnoho lidí, od původního tvůrce až po konečného vydavatele."
+"\n"
+"\n"
+"V našem komprimovaném archivu jsou přiloženy:\n"
+"\n"
+"4 profily RGB\n"
+"\n"
+"Adobe RGB (1998), Apple RGB, ColorMatch RGB, sRGB IEC61966-2.1\n"
+"\n"
+"10 profilů CMYK\n"
+"\n"
+"US Web Coated (SWOP) v2, US Web Uncoated v2, US Sheetfed Coated v2, US "
+"Sheetfed Uncoated v2, Europe ISO Coated, FOGRA27 Euroscale Uncoated v2, "
+"Japan Web Coated (Ad), Japan Color 2001 Coated, Japan Color 2001 Uncoated, "
+"Japan Color 2002 Newspaper\n"
+"\n"
+"Další informace o profilech ICC naleznete na webových stránkách "
+"Mezinárodního konsorcia pro barvy (http://www.color.org/).\n"
+"\n"
+"Další informace o správě barev ICC naleznete v technických příručkách na "
+"webových stránkách společnosti Adobe.\n"
+"\n"
+"Systémové požadavky Jakýkoli systém správy barev na úrovni systému nebo "
+"aplikace, který používá profily barev ICC."
 
 #. leap/AppCSXCAD/summary
 msgid "Minimal GUI Application using the QCSXCAD library"
-msgstr ""
+msgstr "Minimální GUI aplikace využívající knihovnu QCSXCAD"
 
 #. leap/AppCSXCAD/description
 msgid "Minimal GUI Application using the QCSXCAD library."
-msgstr ""
+msgstr "Minimální aplikace GUI využívající knihovnu QCSXCAD."
 
 #. leap/AppStream/summary
 msgid "Tools and libraries to work with AppStream metadata"
-msgstr ""
+msgstr "Nástroje a knihovny pro práci s metadaty AppStream"
 
 #. leap/AppStream/description
 msgid ""
 "AppStream-Core makes it easy to access application information from the "
 "AppStream database over a nice GObject-based interface."
 msgstr ""
+"AppStream-Core umožňuje snadný přístup k informacím o aplikaci z databáze "
+"AppStream prostřednictvím příjemného rozhraní založeného na GObject."
 
 #. leap/AppStream/AppStream-devel/summary
-#, fuzzy
-#| msgid "Header files and static library for libaudit"
 msgid "Header files for AppStream development"
-msgstr "Hlavičkové soubory a statické knihovny pro libaudit"
+msgstr "Hlavičkové soubory pro AppStream-vývoj"
 
 #. leap/AppStream/AppStream-devel/description
-#, fuzzy
 msgid ""
 "This package contains all necessary include files, libraries, configuration "
 "files and development tools (with manual pages) needed to compile and link "
 "applications using AppStream."
 msgstr ""
-"Tento balíček obsahuje všechny potřebné hlavičkové soubory a knihovny "
-"potřebné pro vývoj aplikací, které vyžadují aspell."
+"Tento balíček obsahuje všechny potřebné include soubory, knihovny, "
+"konfigurační soubory a vývojové nástroje (s manuálovými stránkami) ke "
+"kompilaci a linkování aplikací využívajících AppStream."
 
 #. leap/AppStream/AppStream-doc/summary
-#, fuzzy
 msgid "Documentation for AppStream"
-msgstr "Dokumentace pro gawk"
+msgstr "Dokumentace pro AppStream"
 
 #. leap/AppStream/AppStream-doc/description
 msgid ""
@@ -551,6 +621,10 @@ msgid ""
 "\n"
 "This package contains the documentation files for AppStream."
 msgstr ""
+"AppStream-Core umožňuje snadný přístup k informacím o aplikaci z databáze "
+"AppStream prostřednictvím příjemného rozhraní založeného na GObject.\n"
+"\n"
+"Tento balíček obsahuje dokumentační soubory pro AppStream."
 
 #. leap/AppStream/AppStream-lang/summary
 #, fuzzy
