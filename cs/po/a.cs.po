@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2024-08-01 00:47+0000\n"
+"PO-Revision-Date: 2024-08-01 12:47+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
 "a-master/cs/>\n"
@@ -743,16 +743,22 @@ msgid ""
 "to catch potential heap corruptions. It's not installed by default as it may "
 "degrade performance."
 msgstr ""
+"Tento balíček nastavuje proměnné prostředí umožňující přísnější kontroly "
+"malloc, aby se zachytila potenciální poškození haldy. Ve výchozím nastavení "
+"není instalován, neboť může snižovat výkon."
 
 #. leap/aaa_base/aaa_base-wsl/summary
 msgid "SUSE Linux Base Package (Windows Subsystem for Linux)"
-msgstr ""
+msgstr "Základní balíček SUSE Linux (Subsystém Windows pro Linux)"
 
 #. leap/aaa_base/aaa_base-wsl/description
 msgid ""
 "This package includes some special settings needed on Windows Subsystem for "
 "Linux. It should only be installed on WSL and not on regular Linux systems."
 msgstr ""
+"Tento balíček obsahuje některá speciální nastavení potřebná v subsystému "
+"Windows pro Linux. Měl by být nainstalován pouze na WSL, nikoli na běžných "
+"systémech Linux."
 
 #. leap/aalib/summary
 #. leap/aalib/libaa1/summary
@@ -784,27 +790,21 @@ msgstr "Soubory potřebné pro vývoj programů používajících knihovnu AAlib
 
 #. leap/abcde/summary
 msgid "Front-end program to a number of utilities for encoding a CD to files"
-msgstr ""
+msgstr "Front-end program pro řadu nástrojů pro kódování CD do souborů"
 
 #. leap/abcde/description
-#, fuzzy
-#| msgid ""
-#| "A front-end program to cdparanoia, wget, cd-discid, id3, and your "
-#| "favorite Ogg or MP3 encoder (defaults to oggenc). Grabs an entire CD and "
-#| "converts each track to Ogg or MP3 then comments or ID3 tags each file "
-#| "with one command."
 msgid ""
 "A front-end program to cdparanoia, wget, cd-discid, id3, and a custom Ogg or "
 "MP3 encoder, defaulting to oggenc. It grabs an entire CD and converts each "
 "track to Ogg or MP3, and then comments or adds ID3 tags to each file."
 msgstr ""
-"Rozhraní pro cdparanoia, wget, cd-discid, id3 a oblíbený Ogg nebo MP3 "
-"enkóder (výchozí je oggenc). Převádí audio CD do formátu Ogg nebo MP3 a "
-"jedním příkazem okomentuje každý soubor ID3 tagy."
+"Front-end program pro cdparanoia, wget, cd-discid, id3 a vlastní kódovač Ogg "
+"nebo MP3, výchozí je oggenc. Vezme celé CD a převede každou stopu do formátu "
+"Ogg nebo MP3 a pak ke každému souboru přidá komentář nebo ID3 tagy."
 
 #. leap/abcm2ps/summary
 msgid "A program to typeset abc tunes into Postscript"
-msgstr ""
+msgstr "Program pro sazbu melodií ABC do Postscriptu"
 
 #. leap/abcm2ps/description
 msgid ""
@@ -814,10 +814,15 @@ msgid ""
 "keyboards and a pedal board. abcm2ps introduces many extensions to the ABC "
 "language that make it suitable for classical music."
 msgstr ""
+"abcm2ps je balík, který převádí notové záznamy z formátu ABC do PostScriptu. "
+"Vychází z abc2ps verze 1.2.5 a byl vyvinut především pro tisk barokních "
+"varhanních partitur, které mají nezávislé hlasy hrané na jedné nebo více "
+"klaviaturách a pedálové desce. abcm2ps zavádí mnoho rozšíření jazyka ABC, "
+"díky kterým je vhodný pro klasickou hudbu."
 
 #. leap/abi-compliance-checker/summary
 msgid "A Compliance Checker For library ABIs"
-msgstr ""
+msgstr "Kontrola shody pro knihovnu ABIs"
 
 #. leap/abi-compliance-checker/description
 msgid ""
@@ -833,30 +838,45 @@ msgid ""
 "old applications to run with newer library versions without the need to "
 "recompile."
 msgstr ""
+"ABI Compliance Checker (ACC) je snadno použitelný nástroj pro kontrolu "
+"zpětné binární kompatibility (BC) sdílené knihovny C/C++. Kontroluje "
+"hlavičkové soubory spolu se sdílenými knihovnami starých a nových verzí a "
+"analyzuje změny v aplikačním binárním rozhraní (ABI), které mohou způsobit "
+"problémy s kompatibilitou: změny ve volacím zásobníku, změny v tabulce, "
+"odstraněné symboly atd. Porušení binární kompatibility může mít za následek "
+"pád nebo nesprávné chování aplikací sestavených se starou verzí knihovny, "
+"pokud běží na nové verzi. Nástroj je určen vývojářům knihoven a správcům "
+"operačních systémů, kteří mají zájem zajistit binární kompatibilitu, tj. "
+"umožnit starým aplikacím běh s novějšími verzemi knihoven bez nutnosti "
+"překompilování."
 
 #. leap/abi-dumper/summary
 msgid "Tool to dump ABI of an ELF object containing DWARF debug info"
-msgstr ""
+msgstr "Nástroj pro výpis ABI objektu ELF obsahujícího informace o ladění DWARF"
 
 #. leap/abi-dumper/description
 msgid ""
 "The tool is intended to be used with ABI Compliance Checker tool for "
 "tracking ABI changes of a C/C++ library or kernel module."
 msgstr ""
+"Nástroj je určen k použití s nástrojem ABI Compliance Checker pro sledování "
+"změn ABI knihovny C/C++ nebo modulu jádra."
 
 #. leap/abi-monitor/summary
 msgid "A tool to monitor and build new versions of a software library"
-msgstr ""
+msgstr "Nástroj pro sledování a vytváření nových verzí softwarové knihovny"
 
 #. leap/abi-monitor/description
 msgid ""
 "Monitor new versions of a software library, try to build them and create "
 "profiles for abi-tracker"
 msgstr ""
+"Sleduje nové verze softwarové knihovny, pokouší se je sestavit a vytvořit "
+"profily pro abi-tracker"
 
 #. leap/abi-tracker/summary
 msgid "Visualize ABI changes timeline of a C/C++ software library"
-msgstr ""
+msgstr "Vizualizace časové osy změn ABI softwarové knihovny C/C++"
 
 #. leap/abi-tracker/description
 msgid ""
@@ -865,6 +885,10 @@ msgid ""
 "It requires input profile of the library in JSON format. It can be created "
 "manually or automatically generated by the ABI Monitor."
 msgstr ""
+"Tento nástroj vizualizuje časovou osu změn ABI softwarové knihovny C/C++.\n"
+"\n"
+"Vyžaduje vstupní profil knihovny ve formátu JSON. Může být vytvořen ručně "
+"nebo automaticky nástrojem ABI Monitor."
 
 #. leap/abiword/summary
 msgid "A Multiplatform Word Processor"
@@ -897,13 +921,13 @@ msgstr ""
 
 #. leap/abook/summary
 msgid "Text-based addressbook program"
-msgstr ""
+msgstr "Textový program pro adresáře"
 
 #. leap/abook/description
 msgid ""
 "Abook is a text-based addressbook program designed to use with mutt mail "
 "client."
-msgstr ""
+msgstr "Abook je textový adresář určený pro použití s poštovním klientem mutt."
 
 #. leap/abook/abook-lang/summary
 msgid "Translations for package abook"
@@ -940,37 +964,39 @@ msgstr ""
 
 #. leap/acarsdec/summary
 msgid "ACARS SDR decoder"
-msgstr ""
+msgstr "Dekodér ACARS SDR"
 
 #. leap/acarsdec/description
 msgid ""
 "A multi-channels acars decoder with built-in rtl_sdr front end. It comes "
 "with a database backend : acarsserv to store receved acars messages."
 msgstr ""
+"Vícekanálový dekodér acars s vestavěným front endem rtl_sdr. Dodává se s "
+"databázovým backendem : acarsserv pro ukládání přijatých zpráv acars."
 
 #. leap/accel-config/summary
 msgid "Configure accelerator subsystem devices"
-msgstr ""
+msgstr "Konfigurace zařízení podsystému akcelerátoru"
 
 #. leap/accel-config/description
 msgid ""
 "Utility library and command-line tool for configuring the Intel Data "
 "Streaming Accelerator (DSA) and Intel Analytics Accelerator (IAX)."
 msgstr ""
+"Utilitární knihovna a nástroj příkazového řádku pro konfiguraci Intel Data "
+"Streaming Accelerator (DSA) a Intel Analytics Accelerator (IAX)."
 
 #. leap/accel-config/accel-config-devel/summary
-#, fuzzy
 msgid "Development files for libaccfg"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro libaccfg"
 
 #. leap/accel-config/accel-config-devel/description
-#, fuzzy
 msgid ""
 "The accel-config-devel package contains libraries and header files for "
 "developing applications that use accel-config."
 msgstr ""
-"Balíček audit-devel obsahuje statické knihovny a hlavičkové soubory potřebné "
-"pro vývoj aplikací, které používají knihovny auditového rámce."
+"Balíček accel-config-devel obsahuje knihovny a hlavičkové soubory pro vývoj "
+"aplikací využívajících accel-config."
 
 #. leap/accerciser/summary
 msgid "Accessibility debugging tool"
@@ -997,20 +1023,16 @@ msgstr ""
 "V podstatě je Accerciser další generace nástroje at-poke."
 
 #. leap/accerciser/accerciser-lang/summary
-#, fuzzy
-#| msgid "Languages for package accerciser"
 msgid "Translations for package accerciser"
-msgstr "Jazykový balíček pro accerciser"
+msgstr "Překlady pro balíček accerciser"
 
 #. leap/accerciser/accerciser-lang/description
-#, fuzzy
 msgid "Provides translations for the \"accerciser\" package."
-msgstr "Poskytuje překlady k balíčku dia"
+msgstr "Poskytuje překlady pro balíček \"accerciser\"."
 
 #. leap/accerciser/accerciser-plugin-IPython/summary
-#, fuzzy
 msgid "Accessibility debugging tool - IPython console widget"
-msgstr "Nástroj pro ladění přístupnosti"
+msgstr "Nástroj pro ladění přístupnosti - widget konzoly IPython"
 
 #. leap/accerciser/accerciser-plugin-IPython/description
 msgid ""
@@ -1019,6 +1041,10 @@ msgid ""
 "\n"
 "This package provides the IPython console widget"
 msgstr ""
+"Accerciser je interaktivní průzkumník přístupnosti v jazyce Python pro "
+"prostředí GNOME.\n"
+"\n"
+"Tento balíček poskytuje widget konzoly IPython"
 
 #. leap/accounts-qml-module/summary
 msgid "QML bindings for libaccounts-qt + libsignon-qt"
