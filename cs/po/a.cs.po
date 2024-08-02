@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2024-08-01 17:46+0000\n"
+"PO-Revision-Date: 2024-08-02 09:47+0000\n"
 "Last-Translator: Aleš Kastner <alkas@volny.cz>\n"
 "Language-Team: Czech <https://l10n.opensuse.org/projects/packages-i18n/"
 "a-master/cs/>\n"
@@ -1056,23 +1056,22 @@ msgid ""
 "their authentication data. It's a tiny wrapper around the Qt-based APIs of "
 "libaccounts-qt and libsignon-qt."
 msgstr ""
+"Tento modul QML poskytuje rozhraní API pro správu online účtů uživatelů a "
+"získávání jejich ověřovacích údajů. Je to malý obal kolem rozhraní API "
+"založených na Qt libaccounts-qt a libsignon-qt."
 
 #. leap/accounts-qml-module/accounts-qml-module-doc/summary
-#, fuzzy
-#| msgid "Documentation for adaptx"
 msgid "Documentation for accounts-qml-module"
-msgstr "Dokumentace pro adaptx"
+msgstr "Dokumentace pro modul accounts-qml-module"
 
 #. leap/accounts-qml-module/accounts-qml-module-doc/description
-#, fuzzy
 msgid ""
 "This package contains the developer documentation for accounts-qml-module."
-msgstr "Tento balík obsahuje dokumentaci pro AdaptX."
+msgstr "Tento balíček obsahuje vývojovou dokumentaci pro accounts-qml-module."
 
 #. leap/accountsservice/summary
-#, fuzzy
 msgid "D-Bus Service to Manipulate User Account Information"
-msgstr "Zobrazuje informace o uživateli (server)"
+msgstr "Služba D-Bus pro manipulaci s informacemi o uživatelském účtu"
 
 #. leap/accountsservice/description
 msgid ""
@@ -1081,27 +1080,30 @@ msgid ""
 "\n"
 "The implementation is based on the useradd, usermod and userdel commands."
 msgstr ""
+"Server accountsservice poskytuje sadu rozhraní D-Bus pro dotazování a "
+"manipulaci s informacemi o uživatelských účtech.\n"
+"\n"
+"Implementace je založena na příkazech useradd, usermod a userdel."
 
 #. leap/accountsservice/accountsservice-devel/summary
 msgid "Header files for the user account information manipulation service"
-msgstr ""
+msgstr "Soubory záhlaví pro službu manipulace s informacemi o uživatelském účtu"
 
 #. leap/accountsservice/accountsservice-devel/description
 msgid ""
 "The accountsservice server provides a set of D-Bus interfaces for querying "
 "and manipulating user account information."
 msgstr ""
+"Server accountsservice poskytuje sadu rozhraní D-Bus pro dotazování a "
+"manipulaci s informacemi o uživatelských účtech."
 
 #. leap/accountsservice/accountsservice-lang/summary
-#, fuzzy
-#| msgid "Languages for package accountsservice"
 msgid "Translations for package accountsservice"
-msgstr "Jazykový balíček pro accountsservice"
+msgstr "Překlady pro balíček accountsservice"
 
 #. leap/accountsservice/accountsservice-lang/description
-#, fuzzy
 msgid "Provides translations for the \"accountsservice\" package."
-msgstr "Poskytuje překlady k balíčku dia"
+msgstr "Poskytuje překlady k balíčku \"accountsservice\"."
 
 #. leap/acct/summary
 msgid "User-Specific Process Accounting"
@@ -1117,12 +1119,14 @@ msgstr ""
 
 #. leap/ack/summary
 msgid "Grep-Like Text Finder"
-msgstr ""
+msgstr "Vyhledávač textu podobný Grepu"
 
 #. leap/ack/description
 msgid ""
 "ack is a grep-like tool tailored to working with large trees of source code."
 msgstr ""
+"ack je nástroj podobný grepu, který je uzpůsoben pro práci s velkými stromy "
+"zdrojového kódu."
 
 #. leap/acl/summary
 msgid "Commands for Manipulating POSIX Access Control Lists"
@@ -1137,7 +1141,7 @@ msgstr ""
 
 #. leap/acpi/summary
 msgid "Command-line ACPI client"
-msgstr ""
+msgstr "Klient ACPI pro příkazový řádek"
 
 #. leap/acpi/description
 msgid ""
@@ -1145,10 +1149,13 @@ msgid ""
 "the functionality of the 'old' apm command on ACPI systems. It includes "
 "battery and thermal information."
 msgstr ""
+"Linuxový klient ACPI je malý program pro příkazový řádek, který se snaží "
+"replikovat funkce starého příkazu apm v systémech ACPI. Zahrnuje informace o "
+"baterii a teplotě."
 
 #. leap/acpica/summary
 msgid "This is a set of tools to display and debug your BIOS ACPI tables"
-msgstr ""
+msgstr "Sada nástrojů pro zobrazení a ladění tabulek ACPI systému BIOS"
 
 #. leap/acpica/description
 msgid ""
@@ -1165,13 +1172,23 @@ msgid ""
 "This AML is suitable for inclusion as a DSDT in system firmware. It also can "
 "disassemble AML, for debugging purposes."
 msgstr ""
+"Přiložené nástroje sdílejí stejný kód, jaký je použit v implementaci jádra "
+"ACPI. Kód projektu acpica je přesně stejný jako kód parseru a interpretu "
+"ACPI v jádře a kód je pravidelně synchronizován z projektu acpica do jádra. "
+"Např. pokud identifikujete chyby v implementaci ACPI v jádře, může být "
+"snazší je odladit v uživatelském prostoru, pokud je to možné. Pokud je chyba "
+"součástí kódu acpica, musí být odeslána do projektu acpica, aby byla "
+"začleněna do hlavních zdrojových kódů jádra.\n"
+"\n"
+"iasl kompiluje ASL (ACPI Source Language) do AML (ACPI Machine Language). "
+"Tento jazyk AML je vhodný pro začlenění jako DSDT do systémového firmwaru. "
+"Dokáže také AML rozebrat pro účely ladění."
 
 #. leap/acpid/summary
 msgid "Executes Actions at ACPI Events"
 msgstr "Spouští činnosti na základě ACPI událostí"
 
 #. leap/acpid/description
-#, fuzzy
 msgid ""
 "ACPID is a completely flexible, totally extensible daemon for delivering "
 "ACPI events. It listens to a file (/proc/acpi/event) and, when an event "
@@ -1179,14 +1196,12 @@ msgid ""
 "needed modules."
 msgstr ""
 "ACPID je flexibilní a rozšiřitelný démon pro doručování ACPI událostí. Čte "
-"ze souboru (/proc/acpi/event) a když nastane událost, spustí přednastavený "
-"program pro zpracování. Spouštěcí skript zavede všechny potřebné moduly.\n"
-"\n"
-"Nastavuje se v /etc/sysconfig/powermanagement."
+"ze souboru (/proc/acpi/event) a když nastane událost, spustí programy pro "
+"její zpracování. Spouštěcí skript zavede všechny potřebné moduly."
 
 #. leap/actkbd/summary
 msgid "A keyboard shortcut daemon"
-msgstr ""
+msgstr "Démon klávesových zkratek"
 
 #. leap/actkbd/description
 msgid ""
@@ -1194,15 +1209,19 @@ msgid ""
 "commands. It can be used to utilize multimedia keys on simple setups, or "
 "assigned custom actions to rarely used keys."
 msgstr ""
+"actkbd je démon, který reaguje na uživatelem definované klávesy a spouští "
+"konkrétní příkazy. Lze jej použít k využití multimediálních kláves v "
+"jednoduchých nastaveních nebo k přiřazení vlastních akcí zřídka používaným "
+"klávesám."
 
 #. leap/adaptec-firmware/summary
 msgid "Firmware files for Adaptec SAS Cards (AIC94xx Series)"
-msgstr ""
+msgstr "Soubory firmwaru pro karty Adaptec SAS (řada AIC94xx)"
 
 #. leap/adaptec-firmware/description
 msgid ""
 "Firmware files for the Adaptec AIC94xx (Razor) Series of SAS HBA Adapters."
-msgstr ""
+msgstr "Soubory firmwaru pro adaptéry SAS HBA řady Adaptec AIC94xx (Razor)."
 
 #. leap/adaptx/summary
 msgid "XSLT Processor Written in Java"
@@ -1230,7 +1249,7 @@ msgstr "Tento balík obsahuje javadoc dokumentaci pro AdaptX."
 
 #. leap/adcli/summary
 msgid "Tool for performing actions on an Active Directory domain"
-msgstr ""
+msgstr "Nástroj pro provádění akcí v doméně služby Active Directory"
 
 #. leap/adcli/description
 msgid ""
@@ -1238,12 +1257,13 @@ msgid ""
 "samba) and managing machine accounts there. Will probably expand to cover "
 "other AD related tasks as well."
 msgstr ""
+"Knihovna postupů pro připojení počítače k Active Directory (bez samby) a "
+"správu účtů počítače v této službě. Pravděpodobně se rozšíří i na další "
+"úlohy související s AD."
 
 #. leap/adcli/adcli-doc/summary
-#, fuzzy
-#| msgid "Documentation for adaptx"
 msgid "Documentation for adcli"
-msgstr "Dokumentace pro adaptx"
+msgstr "Dokumentace pro adcli"
 
 #. leap/adcli/adcli-doc/description
 msgid ""
@@ -1253,10 +1273,15 @@ msgid ""
 "\n"
 "This package contains the documentation for adcli."
 msgstr ""
+"Knihovna postupů pro připojení počítače k Active Directory (bez samby) a "
+"správu účtů počítače v této službě. Pravděpodobně se rozšíří i na další "
+"úlohy související s AD.\n"
+"\n"
+"Tento balíček obsahuje dokumentaci k adcli."
 
 #. leap/addrwatch/summary
 msgid "A tool for IPv4/IPv6 and Ethernet address pairing monitoring"
-msgstr ""
+msgstr "Nástroj pro monitorování párování adres IPv4/IPv6 a Ethernetu"
 
 #. leap/addrwatch/description
 msgid ""
@@ -1275,29 +1300,43 @@ msgid ""
 "persistent network pairings' state, but instead logs all the events that "
 "allow pairing discovery."
 msgstr ""
+"Nástroj podobný nástroji arpwatch. Jeho hlavním účelem je monitorovat síť a "
+"zaznamenávat objevené páry adres Ethernetu a IPv4/IPv6. Podporuje sledování "
+"více síťových rozhraní, sledování paketů s označením VLAN (802.1Q) a může "
+"vystupovat na stdout, do textového souboru, syslogu, sqlite3 a MySQL. "
+"Addrwatch sleduje adresy IPv6 hostitelů pomocí rozšíření soukromí IPv6 "
+"(RFC4941).\n"
+"\n"
+"Hlavní rozdíl mezi arpwatch a addrwatch je ve formátu výstupních souborů.\n"
+"\n"
+"Zatímco arpwatch ukládá pouze aktuální stav párování a umožňuje zasílat e-"
+"mailová oznámení, když dojde ke změně párování, addrwatch neuchovává trvalý "
+"stav síťového párování, ale místo toho zaznamenává všechny události, které "
+"umožňují zjistit párování."
 
 #. leap/ade/ade-devel/summary
-#, fuzzy
 msgid "Development files for using ade"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro použití ade"
 
 #. leap/ade/ade-devel/description
 msgid ""
 "A graph construction, manipulation, and processing framework. It is suitable "
 "for organizing data flow processing and execution."
 msgstr ""
+"Rámec pro konstrukci, manipulaci a zpracování grafů. Je vhodný pro "
+"organizaci zpracování a běh datových toků."
 
 #. leap/adinatha-fonts/summary
 msgid "Tamil-Brahmi font"
-msgstr ""
+msgstr "Řez písma Tamil-Brahmi"
 
 #. leap/adinatha-fonts/description
 msgid "Adinatha is a  working Unicode Tamil Brahmi font."
-msgstr ""
+msgstr "Adinatha je  funkční řez písma Unicode Tamil Brahmi."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-mpich-hpc"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-mpich-hpc"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc/description
 msgid ""
@@ -1306,10 +1345,13 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-mpich-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-mpich-hpc poskytuje závislost pro získání binárního "
+"balíčku adios_1_13_1-gnu-mpich-hpc. Při aktualizaci tohoto balíčku se "
+"nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-mpich-hpc."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-mpich-hpc-devel"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-mpich-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel/description
 msgid ""
@@ -1318,10 +1360,13 @@ msgid ""
 "devel. When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-mpich-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-mpich-hpc-devel poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-mpich-hpc-devel. Při aktualizaci tohoto "
+"balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-mpich-hpc."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-mpich-hpc-devel-static"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-mpich-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios-gnu-mpich-hpc-devel-static/description
 msgid ""
@@ -1330,10 +1375,14 @@ msgid ""
 "hpc-devel-static. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-mpich-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-mpich-hpc-devel-static poskytuje závislost pro "
+"získání binárního balíčku adios_1_13_1-gnu-mpich-hpc-devel-static. Při "
+"aktualizaci tohoto balíčku se nainstaluje nejnovější verze balíčku "
+"adios_1_13_1-gnu-mpich-hpc."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-mvapich2-hpc"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-mvapich2-hpc"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc/description
 msgid ""
@@ -1342,10 +1391,14 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-mvapich2-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-mvapich2-hpc poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-mvapich2-hpc. Při aktualizaci tohoto "
+"balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"mvapich2-hpc."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-mvapich2-hpc-devel"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-mvapich2-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel/description
 msgid ""
@@ -1354,10 +1407,14 @@ msgid ""
 "mvapich2-hpc-devel. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-mvapich2-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-mvapich2-hpc-devel poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-mvapich2-hpc-devel. Při aktualizaci "
+"tohoto balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"mvapich2-hpc."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-mvapich2-hpc-devel-static"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-mvapich2-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios-gnu-mvapich2-hpc-devel-static/description
 msgid ""
@@ -1366,10 +1423,14 @@ msgid ""
 "mvapich2-hpc-devel-static. When this package gets updated it installs the "
 "latest version of adios_1_13_1-gnu-mvapich2-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-mvapich2-hpc-devel-static poskytuje závislost pro "
+"získání binárního balíčku adios_1_13_1-gnu-mvapich2-hpc-devel-static. Při "
+"aktualizaci tohoto balíčku se nainstaluje nejnovější verze balíčku "
+"adios_1_13_1-gnu-mvapich2-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi2-hpc"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi2-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc/description
 msgid ""
@@ -1378,10 +1439,14 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-openmpi2-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi2-hpc poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-openmpi2-hpc. Při aktualizaci tohoto "
+"balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"openmpi2-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi2-hpc-devel"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi2-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel/description
 msgid ""
@@ -1390,10 +1455,14 @@ msgid ""
 "openmpi2-hpc-devel. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-openmpi2-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi2-hpc-devel poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-openmpi2-hpc-devel. Při aktualizaci "
+"tohoto balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"openmpi2-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi2-hpc-devel-static"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi2-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios-gnu-openmpi2-hpc-devel-static/description
 msgid ""
@@ -1402,10 +1471,14 @@ msgid ""
 "openmpi2-hpc-devel-static. When this package gets updated it installs the "
 "latest version of adios_1_13_1-gnu-openmpi2-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi2-hpc-devel-static poskytuje závislost pro "
+"získání binárního balíčku adios_1_13_1-gnu-openmpi2-hpc-devel-static. Při "
+"aktualizaci tohoto balíčku se nainstaluje nejnovější verze balíčku "
+"adios_1_13_1-gnu-openmpi2-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi3-hpc"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi3-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc/description
 msgid ""
@@ -1414,10 +1487,14 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-openmpi3-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi3-hpc poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-openmpi3-hpc. Při aktualizaci tohoto "
+"balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"openmpi3-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi3-hpc-devel"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi3-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel/description
 msgid ""
@@ -1426,10 +1503,14 @@ msgid ""
 "openmpi3-hpc-devel. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-openmpi3-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi3-hpc-devel poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-openmpi3-hpc-devel. Při aktualizaci "
+"tohoto balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"openmpi3-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel-static/summary
 msgid "Dependency package for adios_1_13_1-gnu-openmpi3-hpc-devel-static"
-msgstr ""
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi3-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios-gnu-openmpi3-hpc-devel-static/description
 msgid ""
@@ -1438,11 +1519,14 @@ msgid ""
 "openmpi3-hpc-devel-static. When this package gets updated it installs the "
 "latest version of adios_1_13_1-gnu-openmpi3-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi3-hpc-devel-static poskytuje závislost pro "
+"získání binárního balíčku adios_1_13_1-gnu-openmpi3-hpc-devel-static. Při "
+"aktualizaci tohoto balíčku se nainstaluje nejnovější verze balíčku "
+"adios_1_13_1-gnu-openmpi3-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi4-hpc/adios-gnu-openmpi4-hpc/summary
-#, fuzzy
 msgid "Dependency package for adios_1_13_1-gnu-openmpi4-hpc"
-msgstr "Vývojové soubory pro Gammu"
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi4-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi4-hpc/adios-gnu-openmpi4-hpc/description
 msgid ""
@@ -1451,11 +1535,14 @@ msgid ""
 "When this package gets updated it installs the latest version of "
 "adios_1_13_1-gnu-openmpi4-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi4-hpc poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-openmpi4-hpc. Při aktualizaci tohoto "
+"balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"openmpi4-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi4-hpc/adios-gnu-openmpi4-hpc-devel/summary
-#, fuzzy
 msgid "Dependency package for adios_1_13_1-gnu-openmpi4-hpc-devel"
-msgstr "Vývojové soubory pro Gammu"
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi4-hpc-devel"
 
 #. leap/adios_1_13_1-gnu-openmpi4-hpc/adios-gnu-openmpi4-hpc-devel/description
 msgid ""
@@ -1464,11 +1551,14 @@ msgid ""
 "openmpi4-hpc-devel. When this package gets updated it installs the latest "
 "version of adios_1_13_1-gnu-openmpi4-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi4-hpc-devel poskytuje závislost pro získání "
+"binárního balíčku adios_1_13_1-gnu-openmpi4-hpc-devel. Při aktualizaci "
+"tohoto balíčku se nainstaluje nejnovější verze balíčku adios_1_13_1-gnu-"
+"openmpi4-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi4-hpc/adios-gnu-openmpi4-hpc-devel-static/summary
-#, fuzzy
 msgid "Dependency package for adios_1_13_1-gnu-openmpi4-hpc-devel-static"
-msgstr "Vývojové soubory pro Gammu"
+msgstr "Balíček závislostí pro adios_1_13_1-gnu-openmpi4-hpc-devel-static"
 
 #. leap/adios_1_13_1-gnu-openmpi4-hpc/adios-gnu-openmpi4-hpc-devel-static/description
 msgid ""
@@ -1477,6 +1567,10 @@ msgid ""
 "openmpi4-hpc-devel-static. When this package gets updated it installs the "
 "latest version of adios_1_13_1-gnu-openmpi4-hpc."
 msgstr ""
+"adios: Balíček adios-gnu-openmpi4-hpc-devel-static poskytuje závislost pro "
+"získání binárního balíčku adios_1_13_1-gnu-openmpi4-hpc-devel-static. Při "
+"aktualizaci tohoto balíčku se nainstaluje nejnovější verze balíčku "
+"adios_1_13_1-gnu-openmpi4-hpc."
 
 #. leap/adios-openmpi2/summary
 #. leap/adios-openmpi3/summary
@@ -1487,7 +1581,7 @@ msgstr ""
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/summary
 #. leap/adios_1_13_1-gnu-openmpi4-hpc/summary
 msgid "The Adaptable IO System (ADIOS)"
-msgstr ""
+msgstr "Adaptabilní systém IO (ADIOS)"
 
 #. leap/adios-openmpi2/description
 #. leap/adios-openmpi3/description
@@ -1505,11 +1599,16 @@ msgid ""
 "process them for a particular run, the routines in the host code (either "
 "FORTRAN or C) can transparently change how they process the data."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci. Poskytnutím externího souboru XML kódu, který popisuje "
+"různé prvky, jejich typy a způsob, jakým je chceme zpracovat pro konkrétní "
+"běh, mohou rutiny v hostitelském kódu (buď FORTRAN, nebo C) transparentně "
+"změnit způsob zpracování dat."
 
 #. leap/adios-openmpi2/adios-openmpi2-devel/summary
-#, fuzzy
 msgid "Development files for adios-openmpi2"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro adios-openmpi2"
 
 #. leap/adios-openmpi2/adios-openmpi2-devel/description
 msgid ""
@@ -1520,11 +1619,16 @@ msgid ""
 "This package contains all files needed to create projects that use the "
 "openmpi2 version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny soubory potřebné k vytvoření projektů, které "
+"používají verzi ADIOS openmpi2."
 
 #. leap/adios-openmpi2/adios-openmpi2-devel-static/summary
-#, fuzzy
 msgid "Static libraries for adios-openmpi2"
-msgstr "Hlavičkové soubory a knihovny pro vývoj PAM"
+msgstr "Statické knihovny pro adios-openmpi2"
 
 #. leap/adios-openmpi2/adios-openmpi2-devel-static/description
 msgid ""
@@ -1535,11 +1639,16 @@ msgid ""
 "This package contains all the static libraries needed to create projects "
 "that use the openmpi2 version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny statické knihovny potřebné k vytvoření "
+"projektů, které používají verzi ADIOS openmpi2."
 
 #. leap/adios-openmpi3/adios-openmpi3-devel/summary
-#, fuzzy
 msgid "Development files for adios-openmpi3"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro adios-openmpi3"
 
 #. leap/adios-openmpi3/adios-openmpi3-devel/description
 msgid ""
@@ -1550,11 +1659,16 @@ msgid ""
 "This package contains all files needed to create projects that use the "
 "openmpi3 version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny soubory potřebné k vytvoření projektů, které "
+"používají verzi ADIOS openmpi3."
 
 #. leap/adios-openmpi3/adios-openmpi3-devel-static/summary
-#, fuzzy
 msgid "Static libraries for adios-openmpi3"
-msgstr "Hlavičkové soubory a knihovny pro vývoj PAM"
+msgstr "Statické knihovny pro adios-openmpi3"
 
 #. leap/adios-openmpi3/adios-openmpi3-devel-static/description
 msgid ""
@@ -1565,11 +1679,16 @@ msgid ""
 "This package contains all the static libraries needed to create projects "
 "that use the openmpi3 version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny statické knihovny potřebné k vytvoření "
+"projektů, které používají verzi ADIOS openmpi3."
 
 #. leap/adios-openmpi4/adios-openmpi4-devel/summary
-#, fuzzy
 msgid "Development files for adios-openmpi4"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro adios-openmpi4"
 
 #. leap/adios-openmpi4/adios-openmpi4-devel/description
 msgid ""
@@ -1580,11 +1699,16 @@ msgid ""
 "This package contains all files needed to create projects that use the "
 "openmpi4 version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny soubory potřebné k vytvoření projektů, které "
+"používají verzi ADIOS openmpi4."
 
 #. leap/adios-openmpi4/adios-openmpi4-devel-static/summary
-#, fuzzy
 msgid "Static libraries for adios-openmpi4"
-msgstr "Hlavičkové soubory a knihovny pro vývoj PAM"
+msgstr "Statické knihovny pro adios-openmpi4"
 
 #. leap/adios-openmpi4/adios-openmpi4-devel-static/description
 msgid ""
@@ -1595,11 +1719,16 @@ msgid ""
 "This package contains all the static libraries needed to create projects "
 "that use the openmpi4 version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny statické knihovny potřebné k vytvoření "
+"projektů, které používají verzi ADIOS openmpi4."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios_1_13_1-gnu-mpich-hpc-devel/summary
-#, fuzzy
 msgid "Development files for adios_1_13_1-gnu-mpich-hpc"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro adios_1_13_1-gnu-mpich-hpc"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios_1_13_1-gnu-mpich-hpc-devel/description
 msgid ""
@@ -1610,10 +1739,16 @@ msgid ""
 "This package contains all files needed to create projects that use the gnu-"
 "mpich-hpc version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny soubory potřebné k vytvoření projektů, které "
+"používají verzi ADIOSu gnu-mpich-hpc."
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios_1_13_1-gnu-mpich-hpc-devel-static/summary
 msgid "Static libraries for adios_1_13_1-gnu-mpich-hpc"
-msgstr ""
+msgstr "Statické knihovny pro adios_1_13_1-gnu-mpich-hpc"
 
 #. leap/adios_1_13_1-gnu-mpich-hpc/adios_1_13_1-gnu-mpich-hpc-devel-static/description
 msgid ""
@@ -1624,11 +1759,16 @@ msgid ""
 "This package contains all the static libraries needed to create projects "
 "that use the gnu-mpich-hpc version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny statické knihovny potřebné k vytvoření "
+"projektů, které používají verzi ADIOSu gnu-mpich-hpc."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios_1_13_1-gnu-mvapich2-hpc-devel/summary
-#, fuzzy
 msgid "Development files for adios_1_13_1-gnu-mvapich2-hpc"
-msgstr "Vývojové soubory pro Gammu"
+msgstr "Vývojové soubory pro adios_1_13_1-gnu-mvapich2-hpc"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios_1_13_1-gnu-mvapich2-hpc-devel/description
 msgid ""
@@ -1639,10 +1779,16 @@ msgid ""
 "This package contains all files needed to create projects that use the gnu-"
 "mvapich2-hpc version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny soubory potřebné k vytvoření projektů, které "
+"používají verzi ADIOSu gnu-mvapich2-hpc."
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios_1_13_1-gnu-mvapich2-hpc-devel-static/summary
 msgid "Static libraries for adios_1_13_1-gnu-mvapich2-hpc"
-msgstr ""
+msgstr "Statické knihovny pro adios_1_13_1-gnu-mvapich2-hpc"
 
 #. leap/adios_1_13_1-gnu-mvapich2-hpc/adios_1_13_1-gnu-mvapich2-hpc-devel-static/description
 msgid ""
@@ -1653,11 +1799,16 @@ msgid ""
 "This package contains all the static libraries needed to create projects "
 "that use the gnu-mvapich2-hpc version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny statické knihovny potřebné k vytvoření "
+"projektů, které používají verzi ADIOSu gnu-mvapich2-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios_1_13_1-gnu-openmpi2-hpc-devel/summary
-#, fuzzy
 msgid "Development files for adios_1_13_1-gnu-openmpi2-hpc"
-msgstr "Vývojové soubory pro Gammu"
+msgstr "Vývojové soubory pro adios_1_13_1-gnu-openmpi2-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios_1_13_1-gnu-openmpi2-hpc-devel/description
 msgid ""
@@ -1668,11 +1819,16 @@ msgid ""
 "This package contains all files needed to create projects that use the gnu-"
 "openmpi2-hpc version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny soubory potřebné k vytvoření projektů, které "
+"používají verzi ADIOSu gnu-openmpi2-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios_1_13_1-gnu-openmpi2-hpc-devel-static/summary
-#, fuzzy
 msgid "Static libraries for adios_1_13_1-gnu-openmpi2-hpc"
-msgstr "Hlavičkové soubory a knihovny pro vývoj PAM"
+msgstr "Statické knihovny pro adios_1_13_1-gnu-openmpi2-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi2-hpc/adios_1_13_1-gnu-openmpi2-hpc-devel-static/description
 msgid ""
@@ -1683,11 +1839,16 @@ msgid ""
 "This package contains all the static libraries needed to create projects "
 "that use the gnu-openmpi2-hpc version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny statické knihovny potřebné k vytvoření "
+"projektů, které používají verzi ADIOSu gnu-openmpi2-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios_1_13_1-gnu-openmpi3-hpc-devel/summary
-#, fuzzy
 msgid "Development files for adios_1_13_1-gnu-openmpi3-hpc"
-msgstr "Vývojové soubory pro lua"
+msgstr "Vývojové soubory pro adios_1_13_1-gnu-openmpi3-hpc"
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios_1_13_1-gnu-openmpi3-hpc-devel/description
 msgid ""
@@ -1698,6 +1859,12 @@ msgid ""
 "This package contains all files needed to create projects that use the gnu-"
 "openmpi3-hpc version of ADIOS."
 msgstr ""
+"Adaptable IO System (ADIOS) poskytuje vědcům způsob, jak popsat data v "
+"jejich kódu, která může být potřeba zapsat, přečíst nebo zpracovat mimo "
+"běžící simulaci.\n"
+"\n"
+"Tento balíček obsahuje všechny soubory potřebné k vytvoření projektů, které "
+"používají verzi ADIOSu gnu-openmpi3-hpc."
 
 #. leap/adios_1_13_1-gnu-openmpi3-hpc/adios_1_13_1-gnu-openmpi3-hpc-devel-static/summary
 #, fuzzy
