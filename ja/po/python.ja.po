@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opensuse-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2024-06-09 11:46+0000\n"
+"PO-Revision-Date: 2024-08-02 16:47+0000\n"
 "Last-Translator: oota toshiya <ribbon@users.sourceforge.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/packages-i18n/"
 "python-master/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. leap/python-scgi/apache2-mod_scgi/summary
 msgid ""
@@ -446,15 +446,16 @@ msgid "The Jupyter Notebook format"
 msgstr ""
 
 #. leap/python-nbformat/jupyter-nbformat/description
-#, fuzzy
 msgid ""
 "This package contains the base implementation of the Jupyter Notebook "
 "format, and Python APIs for working with notebooks.\n"
 "\n"
 "This package provides the jupyter components."
 msgstr ""
-"このパッケージには、 GNOME ウイジェット向けの ATK インターフェイスの実装が含"
-"まれています。"
+"このパッケージには、Jupyter Notebook フォーマットの基本実装と、"
+"ノートブックを操作するためのPython API が含まれています。\n"
+"\n"
+"このパッケージは jupyter コンポーネントを提供します。"
 
 #. leap/python-nbformat/jupyter-nbformat-doc/summary
 #, fuzzy
@@ -500,13 +501,14 @@ msgid "Translations for the Jupyter Notebook"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. leap/python-notebook/jupyter-notebook-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"python-caja\" package."
 msgid ""
 "Provides translations for the Jupyter notebook.\n"
 "\n"
 "This package provides the jupyter component translations."
-msgstr "python-caja パッケージ向けの翻訳データです。"
+msgstr ""
+"Jupyter ノートブックの翻訳を提供します。\n"
+"\n"
+"このパッケージは jupiter コンポーネントの翻訳を提供します。"
 
 #. leap/python-notebook/jupyter-notebook-latex/summary
 msgid "LaTeX support for the Jupyter Notebook"
@@ -985,12 +987,6 @@ msgid "Python FastCGI Module"
 msgstr "Python FastCGI モジュール"
 
 #. leap/python-fcgi/description
-#, fuzzy
-#| msgid ""
-#| "The fcgi.py Python module handles communication with the FastCGI module "
-#| "from the Apache or Stronghold web server without using the FastCGI "
-#| "developers kit. It will also work in a non-FastCGI environment, (straight "
-#| "CGI)."
 msgid ""
 "The fcgi.py Python module handles communication with the FastCGI module from "
 "the Apache or Stronghold web server without using the FastCGI developers "
@@ -1001,9 +997,14 @@ msgid ""
 "Authors:\n"
 "--------     Robin Dunn <robin@alldunn.com>     and others"
 msgstr ""
-"fcgi.py Python モジュールは、 Apache や Stronghold の Web サーバが提供する "
-"FastCGI モジュールに対して、 FastCGI 開発キットを利用せずにやりとりを行なうた"
-"めの モジュールです。 FastCGI でない環境下 (通常の CGI) でも動作します。"
+"fcgi.py Python モジュールは、FastCGI 開発者キットを使用せずに、Apache または "
+"Stronghold Web サーバから FastCGI モジュールとの通信を処理します。FastCGI "
+"以外の環境(普通のCGI)でも動作します。\n"
+"\n"
+"\n"
+"\n"
+"著者:\n"
+"--------     Robin Dunn <robin@alldunn.com>     and others"
 
 #. leap/python-fedmsg/python-fedmsg-base/summary
 msgid "Base files system layout for packages using fedmsg"
@@ -1546,12 +1547,14 @@ msgid "A collection of tools for internationalizing Python applications."
 msgstr "Python アプリケーションの国際化用ツール集です。"
 
 #. leap/python-Babel-doc/python3-Babel-doc/description
-#, fuzzy
 msgid ""
 "A collection of tools for internationalizing Python applications.\n"
 "\n"
 "This package contains the documentation for Babel"
-msgstr "Python アプリケーションの国際化用ツール集"
+msgstr ""
+"Python アプリケーションを国際化するためのツールのコレクションです。\n"
+"\n"
+"このパッケージには Babel のドキュメントが含まれています。"
 
 #. leap/python-Beaker/python3-Beaker/summary
 #. leap/python-random2/python3-random2/summary
@@ -1559,38 +1562,6 @@ msgid "A Session and Caching library with WSGI Middleware"
 msgstr "WSGI ミドルウエア付きのセッションとキャッシュライブラリ"
 
 #. leap/python-Beaker/python3-Beaker/description
-#, fuzzy
-#| msgid ""
-#| "Beaker is a web session and general caching library that includes WSGI "
-#| "middleware for use in web applications.\n"
-#| "\n"
-#| "As a general caching library, Beaker can handle storing for various times "
-#| "any Python object that can be pickled with optional back-ends on a fine-"
-#| "grained basis.\n"
-#| "\n"
-#| "Beaker was built largely on the code from MyghtyUtils, then refactored "
-#| "and extended with database support.\n"
-#| "\n"
-#| "Beaker includes Cache and Session WSGI middleware to ease integration "
-#| "with WSGI capable frameworks, and is automatically used by Pylons.\n"
-#| "\n"
-#| "Features:\n"
-#| "\n"
-#| "* Fast, robust performance\n"
-#| "* Multiple reader/single writer lock system to avoid duplicate "
-#| "simultaneous   cache creation\n"
-#| "* Cache back-ends include dbm, file, memory, memcached, and database "
-#| "(Using   SQLAlchemy for multiple-db vendor support)\n"
-#| "* Signed cookie's to prevent session hijacking/spoofing\n"
-#| "* Cookie-only sessions to remove the need for a db or file backend "
-#| "(ideal   for clustered systems)\n"
-#| "* Extensible Container object to support new back-ends\n"
-#| "* Cache's can be divided into namespaces (to represent templates, "
-#| "objects,   etc.) then keyed for different copies\n"
-#| "* Create functions for automatic call-backs to create new cache copies "
-#| "after   expiration\n"
-#| "* Fine-grained toggling of back-ends, keys, and expiration per Cache "
-#| "object"
 msgid ""
 "Beaker is a web session and general caching library that includes WSGI "
 "middleware for use in web applications.\n"
@@ -1621,35 +1592,35 @@ msgid ""
 "after   expiration\n"
 "* Fine-grained toggling of back-ends, keys, and expiration per Cache object"
 msgstr ""
-"Beaker は Web セッションと汎用的なキャッシュ機能を持つライブラリで、Web アプ"
-"リケーション内で利用できる WSGI ミドルウエアが同梱されています。\n"
+"Beaker は、ウェブアプリケーションで使用するための WSGI "
+"ミドルウェアを含むウェブセッションおよび一般的なキャッシュライブラリです。\n"
 "\n"
-"一般的なキャッシュライブラリとしては、 Beaker は任意の Python オブジェクトを"
-"自由に保存できる仕組みで、さらに細かく設定するためにオプションのバックエンド"
-"で調整を行なうこともできます。\n"
+"一般的なキャッシュライブラリとして、Beaker は、オプションのバックエンドでピク"
+"ルできるパイソンオブジェクトを、細かい粒度でさまざまな回数保存することができ"
+"ます。\n"
 "\n"
-"Beaker の大部分は MyghtyUtils から提供されているコードによるもので、データ"
-"ベースサポートを追加して再構成／拡張されています。\n"
+"Beaker は主に MyghtyUtils のコードに基づいて構築され、その後リファクタリング"
+"され、データベースサポートで拡張されました。\n"
 "\n"
-"Beaker にはキャッシュとセッションの機能を持つ WSGI ミドルウエアが含まれてい"
-"て、WSGI に対応したフレームワークとの統合を簡単に行なうことができます。ま"
-"た、 Pylons では自動的に使用されます。\n"
+"Beaker には、WSGI 対応フレームワークとの統合を容易にするために、"
+"キャッシュとセッションの WSGI ミドルウェアが含まれており、Pylons "
+"によって自動的に使用されます。\n"
 "\n"
-"機能:\n"
-"\n"
-"* 高速・高性能\n"
-"* 重複したキャッシュ作成を避けるための、書き込み側ロック (施錠) システム\n"
-"* キャッシュのバックエンドとして、 dbm, file, memory, memcached, databaseの各"
-"システムに対応 (複数のデータベース製造元に対応するため、 SQLAlchemy を使用)\n"
-"* 署名済み Cookie により、セッションの乗っ取りや盗聴の防止\n"
-"* Cookie のみで構成されたセッションにより、データベースやファイルのバックエン"
-"ドの不要化 (クラスタ化されたシステムでよくある要件です)\n"
-"* 新しいバックエンドに対応するための拡張可能なコンテナオブジェクト\n"
-"* キャッシュに対するネームスペース設定 (テンプレートやオブジェクトなどを表わ"
-"すもの) により、異なるコピーを保持可能\n"
-"* 期限切れ後に新しいキャッシュコピーを作成するための、自動的なコールバック関"
-"数の作成\n"
-"* バックエンドやキー、キャッシュオブジェクト単位の期限切れに関する細かい設定"
+"次のような機能があります:\n"
+"* 高速で堅牢なパフォーマンス\n"
+"* 複数の読み取り/単一の書き込みロック・システムにより、"
+"重複した同時キャッシュの作成を回避\n"
+"* キャッシュバックエンドには、dbm、file、memory、memcached、およびdatabase "
+"が含まれます(複数の db ベンダーをサポートするために SQLAlchemy を使用)。\n"
+"* セッションハイジャック/なりすましを防止するための署名付き Cookie\n"
+"* Cookie のみのセッションにより、データベースまたはファイル・バックエンドの必"
+"要性を排除(クラスタ・システムに最適)\n"
+"* 新しいバックエンドをサポートする拡張可能なコンテナオブジェクト\n"
+"* キャッシュをネームスペース(テンプレート、オブジェクトなどを表す)に分割し、"
+"異なるコピーに対してキー設定することが可能\n"
+"* 満了後に新しいキャッシュ・"
+"コピーを作成するための自動コールバック機能を作成\n"
+"* Cache オブジェクトごとのバックエンド、キー、有効期限のきめ細かい切り替え"
 
 #. leap/python-BitVector/python3-BitVector/summary
 msgid "A memory-efficient packed representation for bit arrays in pure Python"
@@ -2472,16 +2443,16 @@ msgid "Compiler for Genshi syntax outputting Python bytecode"
 msgstr ""
 
 #. leap/python-Kajiki/python3-Kajiki/description
-#, fuzzy
 msgid ""
 "Kajiki compiles Genshi-like syntax to Python bytecode.\n"
 "\n"
 "(Genshi is a Python library parsing, generating, and processing HTML, XML or "
 "other textual content for output generation on the web.)"
 msgstr ""
-"Genshi は HTML や XML 、もしくはその他のテキスト型コンテンツについて、それら"
-"をWeb 上の出力情報として処理／生成することができる Python ライブラリです。主"
-"な機能はテンプレート言語で、これは Kid の機能を参考にして作られています。"
+"Kajiki は Genshi に似た構文を Python バイトコードにコンパイルします。\n"
+"\n"
+"(Genshi は、Web 上で出力を生成するために、HTML、XML、またはその他のテキストコ"
+"ンテンツを解析、生成、処理する Python のライブラリです。)"
 
 #. leap/python-Keras-Applications/python3-Keras-Applications/summary
 #, fuzzy
@@ -2522,16 +2493,17 @@ msgid "Development files for python3-Kivy"
 msgstr "python-Kivy 向け開発用ファイル"
 
 #. leap/python-Kivy/python3-Kivy-devel/description
-#, fuzzy
 msgid ""
 "Kivy is a library for development of applications that make use of user "
 "interfaces, such as multi-touch apps.\n"
 "\n"
 "This package contains the headers and source files for extending kivy"
 msgstr ""
-"Clutter は高速で見た目のきれいなアニメーション付き GUI を作成することのでき"
-"る、オープンソースのソフトウエアライブラリです。このパッケージには、開発に必"
-"要な各種のファイルが含まれています。"
+"Kivy は、マルチタッチアプリなど、ユーザーインターフェースを利用したアプリケー"
+"ションを開発するためのライブラリです。\n"
+"\n"
+"このパッケージには、kivy "
+"を拡張するためのヘッダとソースファイルが含まれています。"
 
 #. leap/python-LTTL/python3-LTTL/summary
 #, fuzzy
@@ -3258,22 +3230,6 @@ msgid "PDF toolkit"
 msgstr "PDF ツールキット"
 
 #. leap/python-PyPDF2/python3-PyPDF2/description
-#, fuzzy
-#| msgid ""
-#| "A Pure-Python library built as a PDF toolkit.  It is capable of:\n"
-#| "\n"
-#| "- extracting document information (title, author, ...),\n"
-#| "- splitting documents page by page,\n"
-#| "- merging documents page by page,\n"
-#| "- cropping pages,\n"
-#| "- merging multiple pages into a single page,\n"
-#| "- encrypting and decrypting PDF files.\n"
-#| "\n"
-#| "By being Pure-Python, it should run on any Python platform without any "
-#| "dependencies on external libraries.  It can also work entirely on "
-#| "StringIO objects rather than file streams, allowing for PDF manipulation "
-#| "in memory. It is therefore a useful tool for websites that manage or "
-#| "manipulate PDFs."
 msgid ""
 "A Pure-Python library built as a PDF toolkit.  It is capable of: \n"
 "- extracting document information (title, author, ...),\n"
@@ -3288,21 +3244,19 @@ msgid ""
 "objects rather than file streams, allowing for PDF manipulation in memory. "
 "It is therefore a useful tool for websites that manage or manipulate PDFs."
 msgstr ""
-"PDF ツールキットとして作成された、純粋 Python ライブラリです。下記の機能があ"
-"ります:\n"
+"PDF ツールキットとして構築された Pure-Python ライブラリ。次の機能があります:"
 "\n"
-"- 文書内の情報抽出 (タイトル、著者など)\n"
-"- 文書をページごとに分割\n"
-"- ページごとの文書を合成\n"
-"- ページを切り取る\n"
-"- 複数のページを 1 つのページにまとめる\n"
-"- PDF ファイルの暗号化と暗号化解除\n"
+"- ドキュメント情報(タイトル、作成者など)の抽出\n"
+"- ドキュメントをページごとに分割\n"
+"- ドキュメントをページごとにマージ\n"
+"- ページのトリミング\n"
+"- 複数のページを1つのページに結合\n"
+"- PDFファイルの暗号化と復号化。\n"
 "\n"
-"純粋な Python のみによるライブラリであるため、外部のライブラリなどは必要とな"
-"ることはなく、任意の Python プラットフォーム上で動作します。また、ファイルス"
-"トリームだけでなく StringIO 上でも動作するため、 PDF の操作をメモリ内で実施す"
-"ることもできます。そのため、 PDF ファイルを管理したり操作したりするWeb サイト"
-"には、便利なツールであるといえます。"
+"Pure-Python であるため、外部ライブラリに依存することなく、任意の Python "
+"プラットフォームで実行できます。また、ファイルストリームではなく StringIO オ"
+"ブジェクトに対して完全に動作するため、メモリ内でのPDF操作が可能になります。し"
+"たがって、PDF を管理または操作する Web サイトにとって便利なツールです。"
 
 #. leap/python-PyPrind/python3-PyPrind/summary
 msgid "Python progress bar and percent indicator utility"
@@ -3759,20 +3713,6 @@ msgid "A syntax highlighting package written in Python"
 msgstr "Python で書かれた文法ハイライト表示パッケージ"
 
 #. leap/python-Pygments/python3-Pygments/description
-#, fuzzy
-#| msgid ""
-#| "Pygments is a syntax highlighting package written in Python.\n"
-#| "\n"
-#| "It is a generic syntax highlighter for general use in all kinds of "
-#| "software such as forum systems, wikis or other applications that need to "
-#| "prettify source code. Highlights are:\n"
-#| "\n"
-#| " * a wide range of common languages and markup formats is supported  * "
-#| "special attention is paid to details, increasing quality by a fair "
-#| "amount  * support for new languages and formats are added easily  * a "
-#| "number of output formats, presently HTML, LaTeX, RTF, SVG, all image    "
-#| "formats that PIL supports and ANSI sequences  * it is usable as a command-"
-#| "line tool and as a library  * ... and it highlights even Brainfuck!"
 msgid ""
 "Pygments is a generic syntax highlighter for general use in all kinds of "
 "software such as forum systems, wikis or other applications that need to "
@@ -3784,17 +3724,16 @@ msgid ""
 "supports and ANSI sequences  * it is usable as a command-line tool and as a "
 "library  * highlights Brainfuck"
 msgstr ""
-"Pygments は、Python で書かれた文法ハイライト表示パッケージです。\n"
+"Pygments は、フォーラムシステム、ウィキ、またはソースコードを補完する必要があ"
+"るその他のアプリケーションなど、あらゆる種類のソフトウェアで一般的に使用され"
+"る汎用構文強調表示です。主な機能は次のとおりです:\n"
 "\n"
-"フォーラムシステムや Wiki 、もしくはソースコードを見やすく表示する様々なソフ"
-"トウエアなど、すべての種類のソフトエアに対して、汎用的な文法ハイライト機能を"
-"提供します。主な機能は下記のとおりです:\n"
-"\n"
-"* 幅広い汎用言語とマークアップ書式に対応 * 細部に特に注力していて、高品質 * "
-"新しい言語や書式への対応が容易 * HTML, LaTeX, RTF, SVG のほか、 PIL で対応す"
-"るすべての形式と ANSI シーケンスへの出力に対応 * コマンドラインとしての使用の"
-"ほか、ライブラリとしての使用にも対応 * Brainfuck のような言語のハイライト表示"
-"にも対応"
+" * 幅広い共通言語とマークアップフォーマットがサポートされています * "
+"新しい言語とフォーマットのサポートを追加できます * "
+"多くの出力フォーマット、現在はHTML、LaTeX、RTF、SVG、PIL "
+"がサポートするすべての画像フォーマットとANSI シーケンス * "
+"コマンドラインツールとして、またライブラリとして使用できます * Brainfuck "
+"を強調表示します"
 
 #. leap/python-Pykka/python3-Pykka/summary
 #, fuzzy
@@ -7514,13 +7453,14 @@ msgid "Friendly state machines for python"
 msgstr ""
 
 #. leap/python-automaton/python3-automaton/description
-#, fuzzy
-#| msgid "Provides translations for the \"python-caja\" package."
 msgid ""
 "Friendly state machines for python.\n"
 "\n"
 "This package contains the Python 3.x module."
-msgstr "python-caja パッケージ向けの翻訳データです。"
+msgstr ""
+"python 用のフレンドリな状態マシン。\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. leap/python-autopep8/python3-autopep8/summary
 msgid "Automatic generated to pep8 checked code"
@@ -7888,14 +7828,17 @@ msgid ""
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-ai-anomalydetector/python3-azure-ai-anomalydetector/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Cognitive Services Anomaly Detector Client "
 "Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Cognitive Services Anomaly Detector Client "
+"ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-ai-metricsadvisor/python3-azure-ai-metricsadvisor/summary
 #, fuzzy
@@ -8287,14 +8230,17 @@ msgid "Microsoft Azure Cognitive Services Content Moderator Client Library"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-cognitiveservices-vision-contentmoderator/python3-azure-cognitiveservices-vision-contentmoderator/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Cognitive Services Content Moderator Client "
 "Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.4, 3.5, 3.6 and 3.7."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Cognitive Services Content Moderator Client "
+"ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.4、3.5、3.6、および 3.7 "
+"でテストされています。"
 
 #. leap/python-azure-cognitiveservices-vision-customvision/python3-azure-cognitiveservices-vision-customvision/summary
 #, fuzzy
@@ -8854,13 +8800,15 @@ msgid "Microsoft Azure Auto Manage Management Client Library for Python"
 msgstr "OpenOffice.Orgクイックスターター"
 
 #. leap/python-azure-mgmt-automanage/python3-azure-mgmt-automanage/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Auto Manage Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Auto Manage Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-automation/python3-azure-mgmt-automation/summary
 #, fuzzy
@@ -8885,8 +8833,6 @@ msgid "Microsoft Azure AzureStack Management Client Library"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-mgmt-azurestack/python3-azure-mgmt-azurestack/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure AzureStack Management Client Library.\n"
 "\n"
@@ -8894,7 +8840,14 @@ msgid ""
 "replace the old Azure Service Management (ASM).\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure AzureStack Management Client ライブラリです。\n"
+"\n"
+"Azure Resource Manager(ARM) は、古い Azure Service Management(ASM) "
+"に代わる次世代の管理 API です。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-azurestackhci/python3-azure-mgmt-azurestackhci/summary
 #. leap/python-azure-mgmt-baremetalinfrastructure/python3-azure-mgmt-baremetalinfrastructure/summary
@@ -8907,13 +8860,15 @@ msgstr "Samba クライアントライブラリ"
 #. leap/python-azure-mgmt-azurestackhci/python3-azure-mgmt-azurestackhci/description
 #. leap/python-azure-mgmt-baremetalinfrastructure/python3-azure-mgmt-baremetalinfrastructure/description
 #. leap/python-azure-mgmt-regionmove/python3-azure-mgmt-regionmove/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure MyService Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure MyService Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-batch/python3-azure-mgmt-batch/summary
 #, fuzzy
@@ -9030,13 +8985,15 @@ msgid "Microsoft Azure Communication Management Client Library for Python"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-mgmt-communication/python3-azure-mgmt-communication/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Communication Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Communication Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-compute/python3-azure-mgmt-compute/summary
 msgid "Microsoft Azure Compute Management Client Library"
@@ -9161,8 +9118,6 @@ msgid ""
 msgstr ""
 
 #. leap/python-azure-mgmt-databoxedge/python3-azure-mgmt-databoxedge/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure MyService Management Client Library.\n"
 "\n"
@@ -9170,7 +9125,14 @@ msgid ""
 "replace the old Azure Service Management (ASM).\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure MyService Management Client ライブラリです。\n"
+"\n"
+"Azure Resource Manager(ARM) は、古い Azure Service Management(ASM) "
+"に代わる次世代の管理 API です。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-databricks/python3-azure-mgmt-databricks/summary
 #, fuzzy
@@ -9434,8 +9396,6 @@ msgid "Microsoft Azure Hybrid Compute Management Client Library"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-mgmt-hybridcompute/python3-azure-mgmt-hybridcompute/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Hybrid Compute Management Client Library.\n"
 "\n"
@@ -9443,7 +9403,13 @@ msgid ""
 "replace the old Azure Service Management (ASM).\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6 and 3.7."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Hybrid Compute Management Client ライブラリです。\n"
+"\n"
+"Azure Resource Manager(ARM) は、古い Azure Service Management(ASM) "
+"に代わる次世代の管理 API です。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、および 3.7 でテストされています。"
 
 #. leap/python-azure-mgmt-imagebuilder/python3-azure-mgmt-imagebuilder/summary
 #, fuzzy
@@ -9528,14 +9494,17 @@ msgid "Microsoft Azure Kubernetes Configuration Management Client Library"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-mgmt-kubernetesconfiguration/python3-azure-mgmt-kubernetesconfiguration/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Kubernetes Configuration Management Client "
 "Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Kubernetes Configuration Management Client "
+"ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-kusto/python3-azure-mgmt-kusto/summary
 #, fuzzy
@@ -9944,13 +9913,16 @@ msgid "Microsoft Azure Red Hat Openshift Management Client Library"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-mgmt-redhatopenshift/python3-azure-mgmt-redhatopenshift/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Red Hat Openshift Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Red Hat Openshift Management Client ライブラリです。"
+"\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-redis/python3-azure-mgmt-redis/summary
 #, fuzzy
@@ -10036,13 +10008,15 @@ msgid "Microsoft Azure Resource Mover Management Client Library for Python"
 msgstr "OpenOffice.Orgクイックスターター"
 
 #. leap/python-azure-mgmt-resourcemover/python3-azure-mgmt-resourcemover/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Resource Mover Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Resource Mover Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-scheduler/python3-azure-mgmt-scheduler/summary
 msgid "Microsoft Azure Scheduler Management Client Library"
@@ -10212,13 +10186,16 @@ msgid "Microsoft Azure StorageImportExport Management Client Library"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-mgmt-storageimportexport/python3-azure-mgmt-storageimportexport/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure StorageImportExport Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure StorageImportExport Management Client "
+"ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-storagesync/python3-azure-mgmt-storagesync/summary
 #, fuzzy
@@ -10241,13 +10218,15 @@ msgid "Microsoft Azure Stream Analytics Management Client Library for Python"
 msgstr "OpenOffice.Orgクイックスターター"
 
 #. leap/python-azure-mgmt-streamanalytics/python3-azure-mgmt-streamanalytics/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Stream Analytics Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure Stream Analytics Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-subscription/python3-azure-mgmt-subscription/summary
 msgid "Microsoft Azure Subscription Management Client Library"
@@ -10270,13 +10249,15 @@ msgid "Microsoft Azure Synapse Management Client Library"
 msgstr "Samba クライアントライブラリ"
 
 #. leap/python-azure-mgmt-synapse/python3-azure-mgmt-synapse/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Synapse Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure Synapse Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-mgmt-trafficmanager/python3-azure-mgmt-trafficmanager/summary
 msgid "Microsoft Azure Traffic Manager Client Library"
@@ -10541,13 +10522,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 
 #. leap/python-azure-synapse-accesscontrol/python3-azure-synapse-accesscontrol/description
 #. leap/python-azure-synapse-spark/python3-azure-synapse-spark/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Synapse AccessControl Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Synapse AccessControl Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-synapse-artifacts/python3-azure-synapse-artifacts/summary
 #, fuzzy
@@ -10555,13 +10538,15 @@ msgid "Microsoft Azure Synapse Artifacts Client Library for Python"
 msgstr "OpenOffice.Orgクイックスターター"
 
 #. leap/python-azure-synapse-artifacts/python3-azure-synapse-artifacts/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Synapse Artifacts Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure Synapse Artifacts Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. leap/python-azure-synapse-nspkg/python3-azure-synapse-nspkg/summary
 #, fuzzy
@@ -10828,35 +10813,6 @@ msgstr ""
 "画面の切り抜きのように素早く反応するアプリケーション向け HTML/XML パーサー"
 
 #. leap/python-beautifulsoup4/python3-beautifulsoup4/description
-#, fuzzy
-#| msgid ""
-#| "Beautiful Soup is a Python HTML/XML parser designed for quick turnaround "
-#| "projects like screen-scraping. Three features make it powerful:\n"
-#| "\n"
-#| "* Beautiful Soup won't choke if you give it bad markup. It yields a parse "
-#| "tree   that makes approximately as much sense as your original document. "
-#| "This is   usually good enough to collect the data you need and run away\n"
-#| "\n"
-#| "* Beautiful Soup provides a few simple methods and Pythonic idioms for   "
-#| "navigating, searching, and modifying a parse tree: a toolkit for "
-#| "dissecting a   document and extracting what you need. You don't have to "
-#| "create a custom   parser for each application\n"
-#| "\n"
-#| "* Beautiful Soup automatically converts incoming documents to Unicode "
-#| "and   outgoing documents to UTF-8. You don't have to think about "
-#| "encodings, unless   the document doesn't specify an encoding and "
-#| "Beautiful Soup can't autodetect   one. Then you just have to specify the "
-#| "original encoding\n"
-#| "\n"
-#| "Beautiful Soup parses anything you give it, and does the tree traversal "
-#| "stuff for you. You can tell it \"Find all the links\", or \"Find all the "
-#| "links of class externalLink\", or \"Find all the links whose urls match "
-#| "\"foo.com\", or \"Find the table heading that's got bold text, then give "
-#| "me that text.\"\n"
-#| "\n"
-#| "Valuable data that was once locked up in poorly-designed websites is now "
-#| "within your reach. Projects that would have taken hours take only minutes "
-#| "with Beautiful Soup."
 msgid ""
 "Beautiful Soup is a Python HTML/XML parser designed for quick turnaround "
 "projects like screen-scraping. Three features make it powerful: \n"
@@ -10882,35 +10838,29 @@ msgid ""
 "within your reach. Projects that would have taken hours take only minutes "
 "with Beautiful Soup."
 msgstr ""
-"Beautiful Soup は Python で書かれた HTML/XML パーサーで、画面の切り抜きのよう"
-"に素早く反応するように設計されています。下記の 3 つの機能により、パワフルさを"
-"もたらしています:\n"
+"Beautiful Soup は、スクリーン・スクレイピングのような迅速なターンアラウンド・"
+"プロジェクトのために設計された Python HTML/XML "
+"パーサーです。強力な機能は次の3つです:\n"
+"* Beautiful Soup は、マークアップを悪くしてもむせません。これにより、元の文書"
+"とほぼ同じ意味を持つ解析ツリーが生成されます。これは通常、必要なデータを収集"
+"して逃げるのに十分です。\n"
+"* Beautiful Soup には、構文解析ツリーをナビゲート、検索、"
+"変更するための簡単なメソッドと Python のイディオムがいくつか用意されています"
+"。アプリケーションごとにカスタムパーサーを作成する必要はありません。\n"
+"* Beautiful Soup は、受信ドキュメントを Unicode に、送信ドキュメントを UTF-8 "
+"に自動的に変換します。文書にエンコーディングが指定されておらず、Beautiful "
+"Soup がエンコーディングを自動検出できない場合を除いて、エンコーディングについ"
+"て考える必要はありません。次に、元のエンコーディングを指定します。\n"
 "\n"
-"* Beautiful Soup は誤ったマークアップを見つけても止まったりすることがありませ"
-"ん。処理のツリー構造を中断することで、元々の文書をできるだけ意味の通るように"
-"解釈します。これは必要なデータを収集するだけのような場合に都合のよい方法で"
-"す。\n"
+"Beautiful Soup "
+"は、ユーザーが指定したものを解析し、ツリーのトラバースを行います。「Find all "
+"the links」、「Find all the links of class externalLink」、「Find all the "
+"links whose urls match\"foo.com\"」、「Find the table heading that got bold "
+"text, then give me that text」のいずれかを指定できます。\n"
 "\n"
-"* Beautiful Soup はいくつかのシンプルなメソッドと Python 形式の慣用法を提供"
-"し、処理のツリー構造のナビゲーションや検索、修正を行ないます:文書を切り抜いて"
-"必要なものだけを取り出すツールキットとすることができます。それぞれのアプリ"
-"ケーションに対してカスタムなパーサーを用意する必要がありません。\n"
-"\n"
-"* Beautiful Soup は入力された文書を自動的に Unicode に変換するほか、出力する"
-"文書を UTF-8 に変換します。エンコーディングについては、文書が何も指定していな"
-"い場合で Beautiful Soup が自動検出できない場合を除いて、わざわざ気にする必要"
-"がありません。自動検出できない場合も、単純にエンコード方法を指定するだけで処"
-"理できるようになります\n"
-"\n"
-"Beautiful Soup は入力された任意のものを処理することができるほか、それらをツ"
-"リー構造として参照することができます。また、 \"全てのリンクを探す\" ことや "
-"\"外部リンクに該当する全てのリンクを探す\" ことができるほか、 \"\"foo.com\" "
-"を含む URL への全てのリンクを探す\" ことや、\"太字で書かれた表の見出しを探す"
-"\" ようなこともできます。\n"
-"\n"
-"これにより、きれいに設計されていない Web サイトからの有益な情報を取得すること"
-"ができるようになります。また、 Beautiful Soup を使用するには、ほんの数時間か"
-"ら数分程度の時間しか必要としません。"
+"かつては貧弱なデザインのウェブサイトに閉じ込められていた貴重なデータが、今で"
+"は手の届くところにあります。Beautiful Soup "
+"を使えば、数時間かかっていたプロジェクトも数分で完了します。"
 
 #. leap/python-behave/python3-behave/summary
 msgid "Behaviour-driven development, Python style"
@@ -11823,17 +11773,14 @@ msgid "Generic Key Manager interface for OpenStack"
 msgstr ""
 
 #. leap/python-castellan/python3-castellan/description
-#, fuzzy
-#| msgid ""
-#| "JLex is a Lexical Analyzer Generator for Java. This package contains the "
-#| "javadoc documentation for JLex."
 msgid ""
 "Generic Key Manager interface for OpenStack.\n"
 "\n"
 "This package includes the Python 3.x module."
 msgstr ""
-"JLex は Java 向けの語彙解析生成プログラムです。このパッケージには JLex 向け"
-"の javadoc ドキュメントが含まれています。"
+"OpenStack の Generic Key Manager インターフェイス。\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. leap/python-casttube/python3-casttube/summary
 msgid "YouTube chromecast api"
@@ -14076,12 +14023,14 @@ msgid "OpenStack DNS as a Service - Client"
 msgstr "このパッケージは、 Samba Python モジュールを提供しています。"
 
 #. leap/python-designateclient/python3-designateclient/description
-#, fuzzy
 msgid ""
 "OpenStack DNS as a Service - Client\n"
 "\n"
 "This package contains the Python 3.x module."
-msgstr "このパッケージは、 Samba Python モジュールを提供しています。"
+msgstr ""
+"OpenStack DNS as a Service - クライアント\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. leap/python3-core/python3-devel/summary
 #. leap/python39-core/python39-devel/summary
@@ -15070,7 +15019,6 @@ msgid "A DNS toolkit for Python"
 msgstr "Python 向け DNS ツールキット"
 
 #. leap/python-dnspython/python3-dnspython/description
-#, fuzzy
 msgid ""
 "dnspython is a DNS toolkit for Python. It supports almost all record types. "
 "It can be used for queries, zone transfers, and dynamic updates. It supports "
@@ -15085,15 +15033,18 @@ msgid ""
 "testing of DNS software. Nominum has generously allowed it to be opened "
 "under a BSD-style licence."
 msgstr ""
-"dnspython は Python 向けの DNS ツールキットです。ほぼ全てのレコードタイプに対"
-"応しているほか、問い合わせやゾーンの転送、動的な更新それぞれに対応していま"
-"す。また、 TSIG 認証メッセージや EDNS0 などにも対応しています。\n"
+"dnspython は Python 用の DNS ツールキットです。ほとんどすべてのレコードタイプ"
+"をサポートしています。クエリ、ゾーン転送、および動的更新に使用できます。TSIG "
+"認証メッセージと EDNS0 をサポートします。\n"
 "\n"
-"dnspython は DNS に対して、高レベルなアクセスと低レベルなアクセスの両方を行な"
-"うことができます。高レベルなインターフェイスでは、指定した名前やタイプ、クラ"
-"スに対して問い合わせを送信し、応答結果を受け取ることができます。低レベルなア"
-"クセスでは、 DNS ゾーンやメッセージ、名前やレコードなどに対して、直接的な制御"
-"を行なうことができます。"
+"dnspython は、DNS への高レベルと低レベルの両方のアクセスを提供します。高レベ"
+"ルクラスは、指定された名前、タイプ、およびクラスのデータに対してクエリーを実"
+"行し、回答セットを返します。下位レベルのクラスでは、DNS "
+"ゾーン、メッセージ、名前、およびレコードを直接操作できます。\n"
+"\n"
+"dnspython は、DNS ソフトウェアのテストを容易にするために開発されたNominum "
+"で生まれました。Nominum "
+"は寛大にも、BSDスタイルのライセンスの下でそれを開くことを許可しました。"
 
 #. leap/python3-documentation/python3-doc/summary
 #. leap/python39-documentation/python39-doc/summary
@@ -17013,13 +16964,14 @@ msgid "Useful additions to futures, from the future."
 msgstr ""
 
 #. leap/python-futurist/python3-futurist/description
-#, fuzzy
-#| msgid "Provides translations for the \"python-caja\" package."
 msgid ""
 "Useful additions to futures, from the future.\n"
 "\n"
 "This package contains the Python 3.x module."
-msgstr "python-caja パッケージ向けの翻訳データです。"
+msgstr ""
+"未来から未来への有用な追加。\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. leap/python-fuzzywuzzy/python3-fuzzywuzzy/summary
 #. leap/python-fuzzywuzzy/python3-fuzzywuzzy/description
@@ -18869,12 +18821,14 @@ msgid ""
 msgstr ""
 
 #. leap/python-ipykernel/python3-ipykernel/description
-#, fuzzy
 msgid ""
 "This package provides the IPython kernel for Jupyter.\n"
 "\n"
 "This package provides the python interface."
-msgstr "このパッケージは、 Samba Python モジュールを提供しています。"
+msgstr ""
+"このパッケージは、Jupyter 用の IPython カーネルを提供します。\n"
+"\n"
+"このパッケージは Python インタフェースを提供します。"
 
 #. leap/python-ipyparallel/python3-ipyparallel/description
 msgid ""
@@ -20603,19 +20557,17 @@ msgid ""
 msgstr ""
 
 #. leap/python-libvirt-python/python3-libvirt-python/description
-#, fuzzy
 msgid ""
 "The python-libvirt-python package contains a module that permits "
 "applications written in the Python programming language to use the interface "
 "supplied by the libvirt library to use the virtualization capabilities of "
 "recent versions of Linux (v2.6.20+)."
 msgstr ""
-"rpm-python パッケージは、 Python プログラミング言語で書かれたアプリケーション"
-"から、 RPM パッケージマネージャライブラリで提供されているインターフェイスを使"
-"用するためのモジュールです。\n"
-"\n"
-"このパッケージは、 Python プログラミング言語から RPM パッケージや RPM データ"
-"ベースを操作するプログラムを作成したい場合にインストールすべきものです。"
+"python-libvirt-python パッケージには、Pytho "
+"nプログラム言語で作成されたアプリケーションが libvir "
+"tライブラリによって提供されるインターフェースを使用して、最新バージョンの "
+"Linux(v2.6.20+) "
+"の仮想化機能を使用できるようにするモジュールが含まれています。"
 
 #. leap/python-libxml2-python/python3-libxml2-python/summary
 msgid "Python Bindings for libxml2"
@@ -20881,7 +20833,6 @@ msgid "Python lowlevel functionality shared by logilab projects"
 msgstr "logilab プロジェクトで共有されている Python 低レベル機能"
 
 #. leap/python-logilab-common/python3-logilab-common/description
-#, fuzzy
 msgid ""
 "The package logilab.common contains several modules providing low level "
 "functionalities shared among some python projects developed by logilab.\n"
@@ -20892,23 +20843,15 @@ msgid ""
 "instance, logilab.common.db will require a db-api 2.0 compliant database "
 "driver."
 msgstr ""
-"この logilab.common パッケージには、 logilab が開発しているいくつかの Python "
-"プロジェクトにおいて共有されている、いくつかの低レベル機能が含まれていま"
-"す。\n"
+"パッケージ logilab.common には、logilab によって開発されたいくつかの python "
+"プロジェクト間で共有される低レベルの機能を提供するいくつかのモジュールが含ま"
+"れています。\n"
 "\n"
-"このパッケージは高機能な Python スタイルと文法チェッカーである pylint でも使"
-"用されています。\n"
+"このパッケージは、高度な Python スタイルおよび構文チェッカーである pylint "
+"によって使用されます。\n"
 "\n"
-"なお、このモジュールのうちのいくつかは追加の依存関係が存在しています。たとえ"
-"ば logilab.common.db の場合、 db-api 2.0 互換のデータベースドライバが必要で"
-"す。また、 Python2.1 または 2.2 をお使いの場合、コマンドライン処理モジュール"
-"は optik のインストールが必要です。\n"
-"\n"
-"コメントや修正、質問などは python-projects メーリングリストにお送りください。"
-"質問を行なう場合は、以前にそのような質問に対する回答が行なわれていたかどう"
-"か、アーカイブで確認してから行なってください。 google をお使いの場合は、キー"
-"ワードに \"site:lists.logilab.org\" を追加すると見つけやすくなります。独自の"
-"サーチエンジンについても早急に提供する予定です。"
+"一部のモジュールには追加の依存関係があることに注意してください。たとえば、"
+"logilab.common.db には、db-api 2.0 準拠のデータベースドライバが必要です。"
 
 #. leap/python-logreduce/python3-logreduce/summary
 msgid "Log file anomaly extractor"
@@ -21020,7 +20963,6 @@ msgid "Development files for python-lxml"
 msgstr "python-pyzmq 向け開発用ファイル"
 
 #. leap/python-lxml/python3-lxml-devel/description
-#, fuzzy
 msgid ""
 "lxml is a Pythonic binding for the libxml2 and libxslt libraries. It "
 "provides convenient access to these libraries using the ElementTree API. It "
@@ -21029,10 +20971,13 @@ msgid ""
 "\n"
 "This package contains header files needed to use lxml's C API."
 msgstr ""
-"lxml は、 libxml2 と libxslt ライブラリに対する Python スタイルのバインディン"
-"グです。 ネイティブな libxml2 のツリー内に存在している要素ツリー API をできる"
-"だけ多く実装しています。 この API を拡張することで、XPath, Relax NG, XML ス"
-"キーマ, XSLT, c14n など、 libxml2 と libxslt 固有の 機能も提供しています。"
+"lxml は、libxml2 および libxslt ライブラリーの Python バインディングです。"
+"ElementTree API を使用して、これらのライブラリに簡単にアクセスできます。"
+"ElementTree API を大幅に拡張して、XPath、RelaxNG、XML "
+"Schema、XSLT、C14Nをサポートします。\n"
+"\n"
+"このパッケージには、lxml のC API "
+"を使用するために必要なヘッダーファイルが含まれています。"
 
 #. leap/python-lz4/python3-lz4/summary
 #, fuzzy
@@ -22214,15 +22159,16 @@ msgid ""
 msgstr ""
 
 #. leap/python-nbformat/python3-nbformat/description
-#, fuzzy
 msgid ""
 "This package contains the base implementation of the Jupyter Notebook "
 "format, and Python APIs for working with notebooks.\n"
 "\n"
 "This package provides the python interface."
 msgstr ""
-"このパッケージには、 GNOME ウイジェット向けの ATK インターフェイスの実装が含"
-"まれています。"
+"このパッケージには、Jupyter Notebook フォーマットの基本実装と、"
+"ノートブックを操作するためのPython API が含まれています。\n"
+"\n"
+"このパッケージは Python インタフェースを提供します。"
 
 #. leap/python-nbindex-jupyter/python3-nbindex-jupyter/summary
 msgid "Jupyter Notebook additions"
@@ -22419,14 +22365,16 @@ msgid "Python API and CLI for OpenStack Neutron"
 msgstr ""
 
 #. leap/python-neutronclient/python3-neutronclient/description
-#, fuzzy
-#| msgid "Client library for interacting with the Zeitgeist daemon"
 msgid ""
 "Client library and command line utility for interacting with OpenStack "
 "Neutron's API.\n"
 "\n"
 "This package contains the Python 3.x module."
-msgstr "Zeitgeist デーモンと対話するためのクライアントライブラリ"
+msgstr ""
+"OpenStack Neutron の API "
+"を操作するためのクライアントライブラリとコマンドラインユーティリティ。\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. leap/python-nibabel/python3-nibabel/summary
 msgid "Tool to access multiple neuroimaging data formats"
@@ -22640,13 +22588,14 @@ msgid ""
 msgstr ""
 
 #. leap/python-notebook/python3-notebook-lang/description
-#, fuzzy
-#| msgid "Provides translations for the \"python-caja\" package."
 msgid ""
 "Provides translations for the Jupyter notebook.\n"
 "\n"
 "This package provides the Python module translations."
-msgstr "python-caja パッケージ向けの翻訳データです。"
+msgstr ""
+"Jupyter ノートブックの翻訳を提供します。\n"
+"\n"
+"このパッケージは、Python モジュールの翻訳を提供します。"
 
 #. leap/python-notify2/python3-notify2/summary
 #, fuzzy
@@ -23046,34 +22995,6 @@ msgid "Python API and tools to manipulate OpenDocument files"
 msgstr "OpenDocument ファイルを操作するための Python API とツール"
 
 #. leap/python-odfpy/python3-odfpy/description
-#, fuzzy
-#| msgid ""
-#| "Odfpy is a library to read and write OpenDocument v. 1.1 files. The main "
-#| "focus has been to prevent the programmer from creating invalid documents. "
-#| "It has checks that raise an exception if the programmer adds an invalid "
-#| "element, adds an attribute unknown to the grammar, forgets to add a "
-#| "required attribute or adds text to an element that doesn't allow it.\n"
-#| "\n"
-#| "These checks and the API itself were generated from the RelaxNG schema, "
-#| "and then hand-edited. Therefore the API is complete and can handle all "
-#| "ODF constructions.\n"
-#| "\n"
-#| "In addition to the API, there are a few scripts:\n"
-#| "\n"
-#| "- csv2odf - Create OpenDocument spreadsheet from comma separated values\n"
-#| "- mailodf - Email ODF file as HTML archive\n"
-#| "- odf2xhtml - Convert ODF to (X)HTML\n"
-#| "- odf2mht - Convert ODF to HTML archive\n"
-#| "- odf2xml - Create OpenDocument XML file from OD? package\n"
-#| "- odfimgimport - Import external images\n"
-#| "- odflint - Check ODF file for problems\n"
-#| "- odfmeta - List or change the metadata of an ODF file\n"
-#| "- odfoutline - Show outline of OpenDocument\n"
-#| "- odfuserfield - List or change the user-field declarations in an ODF "
-#| "file\n"
-#| "- xml2odf - Create OD? package from OpenDocument in XML form\n"
-#| "\n"
-#| "Visit http://odfpy.forge.osor.eu/ for documentation and examples."
 msgid ""
 "Odfpy is a library to read and write OpenDocument v. 1.1 files. The main "
 "focus has been to prevent the programmer from creating invalid documents. It "
@@ -23100,32 +23021,30 @@ msgid ""
 "\n"
 "Visit https://github.com/eea/odfpy for documentation and examples."
 msgstr ""
-"Odfpy は OpenDocument v. 1.1 ファイルを読み書きするためのライブラリです。主に"
-"プログラマに対して、不正な文書を作成しないようにする目的があります。たとえば"
-"プログラマが不正な要素を追加したりした場合は、例外を発生させてチェックを促す"
-"ことができるほか、必要な属性が足りていなかったり、許可されない要素に対してテ"
-"キストを追加したりしたような場合にも、同様のことを行なうことができます。\n"
+"Odfpy は、OpenDocument v. 1.1ファイルを読み書きするためのライブラリです。主な"
+"焦点は、プログラマーが無効な文書を作成しないようにすることでした。プログラマ"
+"ーが無効な要素を追加したり、文法に未知の属性を追加したり、必要な属性の追加を"
+"忘れたり、許可されていない要素にテキストを追加したりした場合に、例外を発生さ"
+"せるチェックがあります。\n"
 "\n"
-"これらのチェックと API 自身のチェックは、 Relax NG スキーマによって生成された"
-"もので、これらを後から手作業で修正して使用しています。そのため、 API には完全"
-"性があり、すべての ODF 構造を制御することができます。\n"
+"これらのチェックとAPI 自体は、RelaxNG "
+"スキーマから生成され、手作業で編集されました。したがって、API は完全であり、"
+"すべてのODF 構成を処理できます。\n"
 "\n"
-"API に加えて、下記のスクリプトも提供されています:\n"
-"\n"
-"- csv2odf - カンマ区切りのファイルから OpenDocument 表計算ファイルを作成\n"
+"APIに加えて、いくつかのスクリプトがあります:\n"
+"- csv2odf - カンマ区切りの値から OpenDocument スプレッドシートを作成\n"
 "- mailodf - ODF ファイルを HTML アーカイブとして電子メールで送信\n"
 "- odf2xhtml - ODF を (X)HTML に変換\n"
-"- odf2mht - ODF を HTML アーカイブ形式に変換\n"
-"- odf2xml - OD? パッケージから OpenDocument XML ファイルを作成\n"
+"- odf2mht - ODF を HTML アーカイブに変換\n"
+"- odf2xml - ODから OpenDocument XML ファイルを作成?パッケージ\n"
 "- odfimgimport - 外部イメージのインポート\n"
-"- odflint - ODF ファイルに問題がないかどうかの確認\n"
-"- odfmeta - ODF ファイル内のメタデータの一覧表示と変更\n"
-"- odfoutline - OpenDocument のアウトライン表示\n"
-"- odfuserfield - ODF ファイル内のユーザフィールドの一覧表示と変更\n"
-"- xml2odf - XML 形式の OpenDocument から OD? パッケージの作成\n"
+"- odflint - ODF ファイルに問題がないかチェック\n"
+"- odfmeta - ODF ファイルのメタデータを一覧表示または変更\n"
+"- odfoutline - OpenDocument のアウトラインを表示\n"
+"- odfuserfield - ODFファイル内のユーザーフィールド宣言を一覧表示または変更\n"
+"- xml2odf - ODを作成?XML 形式の OpenDocument からのパッケージ\n"
 "\n"
-"ドキュメンテーションや例については、 http://odfpy.forge.osor.eu/ をお読みくだ"
-"さい。"
+"ドキュメントと例については、https://github.com/eea/odfpy を参照してください。"
 
 #. leap/python-odorik/python3-odorik/summary
 #, fuzzy
@@ -23704,13 +23623,16 @@ msgid "OpenStack Oslo Policy library"
 msgstr "Qt Zeitgeist ライブラリ"
 
 #. leap/python-oslo.policy/python3-oslo.policy/description
-#, fuzzy
 msgid ""
 "The OpenStack Oslo Policy library. RBAC policy enforcement library for "
 "OpenStack.\n"
 "\n"
 "This package contains the Python 3.x module."
-msgstr "GroupWise POA にアクセスするライブラリ"
+msgstr ""
+"OpenStack Oslo Policy ライブラリ。OpenStack の RBAC ポリシー適用ライブラリ。"
+"\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. leap/python-oslo.privsep/python3-oslo.privsep/summary
 #. leap/python-oslo.privsep/python3-oslo.privsep/description
@@ -24943,7 +24865,6 @@ msgid "Python Lex & Yacc"
 msgstr ""
 
 #. leap/python-ply/python3-ply/description
-#, fuzzy
 msgid ""
 "PLY is yet another implementation of lex and yacc for Python. Some notable "
 "features include the fact that its implemented entirely in Python and it "
@@ -24957,12 +24878,15 @@ msgid ""
 "PLY is extremely easy to use and provides very extensive error checking. It "
 "is compatible with both Python 2 and Python 3."
 msgstr ""
-"PLY は、 Python 向けのもう一つの lex, yacc 実装です。 Python には他の処理ツー"
-"ルがいくつかありますが、 PLY を使ってみるだけの理由がいくつかあります:\n"
-"- それなりに効率的で大規模な文法に便利な LR 処理法を利用していること\n"
-"- PLY では多くの標準 lex/yacc 機能を提供していること。たとえば 何も生成しない"
-"文法や優先ルール、エラー回復や 不明瞭な文法などがあります。\n"
-"- PLY はとても使いやすく、とても広範囲のエラーチェック機能を提供していること"
+"PLY も Python 用の lex と yacc の実装です。いくつかの注目すべき特徴には、"
+"完全に Python で実装されていることと、効率的でより大きな文法に適した LALR(1) "
+"解析を使用していることが含まれます。\n"
+"\n"
+"PLY は、空のプロダクションのサポート、優先順位規則、エラー回復、あいまいな文"
+"法のサポートなど、標準的な lex/yacc 機能のほとんどを提供します。\n"
+"\n"
+"PLY は非常に使いやすく、非常に広範なエラーチェックを提供します。Python 2と "
+"Python 3 の両方と互換性があります。"
 
 #. leap/python-pmw/python3-pmw/summary
 msgid "High-level compound widgets in Python using the Tkinter module"
@@ -25576,16 +25500,6 @@ msgid "Library with cross-python path, ini-parsing, io, code, log facilities"
 msgstr "cross-python path, ini-parsing, io, code, ログ機能ライブラリ"
 
 #. leap/python-py/python3-py/description
-#, fuzzy
-#| msgid ""
-#| "The py lib is a Python development support library featuring the "
-#| "following tools and modules:\n"
-#| "\n"
-#| "* py.path:  uniform local and svn path objects\n"
-#| "* py.apipkg:  explicit API control and lazy-importing\n"
-#| "* py.iniconfig:  easy parsing of .ini files\n"
-#| "* py.code: dynamic code generation and introspection\n"
-#| "* py.path:  uniform local and svn path objects"
 msgid ""
 "The py lib is a Python development support library featuring the following "
 "tools and modules: \n"
@@ -25595,9 +25509,8 @@ msgid ""
 "* py.code: dynamic code generation and introspection\n"
 "* py.path:  uniform local and svn path objects"
 msgstr ""
-"py lib は下記のようなツールやモジュールが提供されている、 Python 開発サポート"
-"ライブラリです:\n"
-"\n"
+"py lib は下記のようなツールやモジュールが提供されている、 Python "
+"開発サポートライブラリです:\n"
 "* py.path:  ローカルと SVN のパスを統合するオブジェクト\n"
 "* py.apipkg:   明示的な API 制御と緩やかなインポート\n"
 "* py.iniconfig:  .ini ファイルの簡易的な処理\n"
@@ -26075,8 +25988,6 @@ msgid "Development files for the Cairo Python bindings"
 msgstr "python-kde4 向け開発用ファイル"
 
 #. leap/python-pycairo/python3-pycairo-devel/description
-#, fuzzy
-#| msgid "This module provides bindings for the cURL library."
 msgid ""
 "Pycairo is a Python module providing bindings for the cairo graphics "
 "library.\n"
@@ -26084,7 +25995,11 @@ msgid ""
 "This package provides the development files needed to build packages that "
 "depend on Pycairo."
 msgstr ""
-"このパッケージには、 cURL ライブラリ向けのバインディングが含まれています。"
+"Pycairo は、cairo グラフィックス・ライブラリのバインディングを提供するパイソ"
+"ン・モジュールです。\n"
+"\n"
+"このパッケージは、Pycairo "
+"に依存するパッケージを構築するために必要な開発ファイルを提供します。"
 
 #. leap/python-pycares/python3-pycares/summary
 #, fuzzy
@@ -26103,7 +26018,6 @@ msgid "Python Bindings for the CDIO Library"
 msgstr "gtk-vnc ライブラリ向け Python バインディング"
 
 #. leap/python-pycdio/python3-pycdio/description
-#, fuzzy
 msgid ""
 "pycdio is a Python interface to the CD Input and Control library (libcdio).\n"
 "\n"
@@ -26111,9 +26025,13 @@ msgid ""
 "Python programs wishing to be oblivious of the OS- and device-dependent "
 "properties of a CD-ROM can use this library."
 msgstr ""
-"このライブラリは、 CD-ROM の読み込みと制御をカプセル化します。 OS そのものの"
-"仕様や CD-ROM のデバイス依存設定を抽象化したい場合は、このライブラリをお使い"
-"ください。"
+"pycdio は、CD Input and Control ライブラリ (libcdio) への Python "
+"インターフェースです。\n"
+"\n"
+"pycdio (およびlibcdio) ライブラリーは、CD-ROM "
+"の読み取りと制御をカプセル化します。Python プログラムでは、CD-ROM ドライブの"
+"オペレーティング・システムやデバイスに依存する特性を意識しないようにするため"
+"に、このライブラリを使用することができます。"
 
 #. leap/python-pycha/python3-pycha/summary
 #, fuzzy
@@ -27034,7 +26952,6 @@ msgid "Syntax and style checker for Python code"
 msgstr "Python コードの文法とスタイルをチェックするツール"
 
 #. leap/python-pylint/python3-pylint/description
-#, fuzzy
 msgid ""
 "Pylint analyzes Python source code looking for bugs and signs of poor "
 "quality.\n"
@@ -27051,25 +26968,18 @@ msgid ""
 "customizable, and you can easily write a small plugin to add a personal "
 "feature."
 msgstr ""
-"Pylint は Python のソースコードを分析し、バグの検索や品質の低い箇所を発見しま"
-"す。\n"
+"Pylint は Python のソースコードを分析して、バグや品質低下の兆候を探します。\n"
 "\n"
-"Pylint は、そのモジュールがコード規約を満たしているかどうかを確認する Python "
-"ツールです。 Pylint は Pychecker で実現可能なほぼ全てのテストを行なうことがで"
-"きるため、もう一つの Pychecker と見なすこともできます。ただし Pylint ではコー"
-"ド行の長さを確認したり、変数名が希望のコード規約に合っているかどうかを確認し"
-"たり、定義されたインターフェイスが本当に実装されているかを確認したりなどの、"
-"追加機能を提供しています (詳しくは完全なチェックリストをご覧ください) 。\n"
+"Pylint は、モジュールがコーディング標準を満たしているかどうかをチェックする "
+"Python ツールです。PyChecker で実行できるほとんどすべてのテストは Pylint "
+"でも実行できるため、Pylint は別の PyChecker と見なすことができます。しかし、"
+"Pylint は、行コードの長さのチェック、変数名がコーディング標準に従って整形式で"
+"あるかどうかのチェック、宣言されたインターフェースが本当に実装されているかど"
+"うかのチェックなど、さらに多くの機能を提供しています(完全なチェックリストを参"
+"照)。\n"
 "\n"
-" Pylint の大きな特長は、とても柔軟な設定とカスタマイズができるということにあ"
-"ります。また、個別の機能を追加する目的で、小さなプラグインを作成することもで"
-"きます。\n"
-"\n"
-"コメントや修正、質問などは python-projects メーリングリストにお送りください。"
-"質問を行なう場合は、以前にそのような質問に対する回答が行なわれていたかどう"
-"か、アーカイブで確認してから行なってください。 google をお使いの場合は、キー"
-"ワードに \"site:lists.logilab.org\" を追加すると見つけやすくなります。独自の"
-"サーチエンジンについても早急に提供する予定です。"
+"Pylint の大きな利点は、高度な設定とカスタマイズが可能であり、個人的な機能を追"
+"加するための小さなプラグインを簡単に作成できることです。"
 
 #. leap/python-pylons-sphinx-themes/python3-pylons-sphinx-themes/summary
 #, fuzzy
@@ -29108,34 +29018,6 @@ msgid "A Python Datetime Library"
 msgstr "Python 日時ライブラリ"
 
 #. leap/python-python-dateutil/python3-python-dateutil/description
-#, fuzzy
-#| msgid ""
-#| "The python dateutil module provides powerful extensions to the standard "
-#| "datetime module.\n"
-#| "\n"
-#| "* Computing of relative deltas (next month, next year, next monday,    "
-#| "last week of month, etc.)\n"
-#| "\n"
-#| "* Computing of relative deltas between two given dates and/or    datetime "
-#| "objects\n"
-#| "\n"
-#| "* Computing of dates based on very flexible recurrence rules, using    a "
-#| "superset of the iCalendar specification. Parsing of RFC strings    is "
-#| "supported as well.\n"
-#| "\n"
-#| "* Generic parsing of dates in almost any string format.\n"
-#| "\n"
-#| "* Timezone (tzinfo) implementations for tzfile(5) format files    (/etc/"
-#| "localtime, /usr/share/zoneinfo, etc.), TZ environment    string (in all "
-#| "known formats), iCalendar format files, given    ranges (with help from "
-#| "relative deltas), local machine timezone,    fixed offset timezone, UTC "
-#| "timezone, and Windows registry-based    time zones.\n"
-#| "\n"
-#| "* Internal up-to-date world timezone information based on Olson's    "
-#| "database.\n"
-#| "\n"
-#| "* Computing of Easter Sunday dates for any given year, using Western, "
-#| "Orthodox or Julian algorithms."
 msgid ""
 "The python dateutil module provides powerful extensions to the standard "
 "datetime module. \n"
@@ -29157,28 +29039,21 @@ msgid ""
 "* Computing of Easter Sunday dates for any given year, using Western, "
 "Orthodox or Julian algorithms."
 msgstr ""
-"Python dateutil モジュールは、標準の datetime モジュールに対するパワフルな拡"
-"張を提供します。\n"
-"\n"
-"* 相対的な日時の計算 (翌月、翌年、翌月曜日、月の最終週など)\n"
-"\n"
-"* 指定した日時と datetime オブジェクトとの間の差の計算\n"
-"\n"
-"* iCalendar 仕様のスーパーセットを利用した、とても柔軟な繰り返しルールを基礎"
-"にする日付計算。 RFC 文字列の処理についても対応しています。\n"
-"\n"
-"* ほぼすべての文字列書式に対応した日付処理\n"
-"\n"
-"* tzfile(5) 形式のファイル (/etc/localtime, /usr/share/zoneinfo など) や TZ "
-"環境変数 (すべての既知の形式に対応) 、 iCalendar 形式のファイルや範囲指定 (相"
-"対日時機能を使用) 、ローカルマシンのタイムゾーンや固定のタイムゾーン差分、 "
-"UTC タイムゾーンや Windows のレジストリベースのタイムゾーンに対応した、タイム"
-"ゾーン (tzinfo) 実装\n"
-"\n"
-"* Olson データベースを基礎にした、内蔵型の最新のタイムゾーン情報\n"
-"\n"
-"* 指定した年の復活祭の日曜日を計算する機能。西暦、正教会暦、ユリウス暦のいず"
-"れかを使用することができます。"
+"python dateutil モジュールは、標準 datetime "
+"モジュールに強力な拡張機能を提供します。\n"
+"* 相対デルタの計算(来月、来年、来週の月曜日、月の最終週など)\n"
+"* 指定された 二つの日付および/または日時オブジェクト間の相対デルタの計算\n"
+"* iCalendar 仕様のスーパーセットを使用して、非常に柔軟な繰り返し規則に基づい"
+"て日付を計算します。RFC 文字列の解析もサポートされています。\n"
+"* ほとんどすべての文字列形式での日付の一般的な解析。\n"
+"* tzfile(5) 形式ファイル (/etc/localtime、/usr/share/zoneinfoなど)、TZ "
+"環境文字列(すべての既知の形式)、iCalendar 形式ファイル、指定された範囲(相対デ"
+"ルタの助けを借りて)、ローカルマシンタイムゾーン、固定オフセットタイムゾーン、"
+"UTC タイムゾーン、および Windows "
+"レジストリベースのタイムゾーンに対するタイムゾーン (tzinfo) の実装。\n"
+"* Olson のデータベースに基づいた内部の最新の世界タイムゾーン情報。\n"
+"* 西洋、正教、またはユリウスのアルゴリズムを使用して、任意の年のイースターの"
+"日曜日の日付を計算します。"
 
 #. leap/python-python-dbusmock/python3-python-dbusmock/summary
 #, fuzzy
@@ -30347,13 +30222,14 @@ msgid "RAR Archive Reader for Python (Documentation)"
 msgstr "ヘルプとサポートマニュアル"
 
 #. leap/python-rarfile/python3-rarfile-doc/description
-#, fuzzy
 msgid ""
 "Python module for RAR archive reading.\n"
 "\n"
 "This package contains technical documentation."
 msgstr ""
-"このパッケージには、 cURL ライブラリ向けのバインディングが含まれています。"
+"RAR アーカイブ読み込み用の Python モジュール。\n"
+"\n"
+"このパッケージには技術文書が含まれています。"
 
 #. leap/python-ravello-sdk/python3-ravello-sdk/summary
 #, fuzzy
@@ -30673,23 +30549,6 @@ msgid "Python HTTP Library"
 msgstr "Python 日時ライブラリ"
 
 #. leap/python-requests/python3-requests/description
-#, fuzzy
-#| msgid ""
-#| "Requests is an ISC Licensed HTTP library, written in Python, for human "
-#| "beings.\n"
-#| "\n"
-#| "Most existing Python modules for sending HTTP requests are extremely "
-#| "verbose and cumbersome. Python's builtin urllib2 module provides most of "
-#| "the HTTP capabilities you should need, but the api is thoroughly broken. "
-#| "It requires an enormous amount of work (even method overrides) to perform "
-#| "the simplest of tasks.\n"
-#| "\n"
-#| "Features:  - Extremely simple GET, HEAD, POST, PUT, DELETE Requests:    + "
-#| "Simple HTTP Header Request Attachment.    + Simple Data/Params Request "
-#| "Attachment.    + Simple Multipart File Uploads.    + CookieJar "
-#| "Support.    + Redirection History.    + Redirection Recursion Urllib "
-#| "Fix.    + Auto Decompression of GZipped Content.    + Unicode URL "
-#| "Support.  - Simple Authentication:    + Simple URL + HTTP Auth Registry."
 msgid ""
 "Requests is an HTTP library, written in Python, as an alternative to "
 "Python's builtin urllib2 which requires work (even method overrides) to "
@@ -30702,21 +30561,17 @@ msgid ""
 "Content.    + Unicode URL Support.  - Authentication:    + URL + HTTP Auth "
 "Registry."
 msgstr ""
-"Requests は Python で書かれた ISC ライセンスの HTTP ライブラリで、主に人間用"
-"に作られています。\n"
+"Requests "
+"は、基本的なタスクを実行するために作業(メソッドのオーバーライドも含む)"
+"を必要とする Python の組み込み urllib2 の代替として、Python で作成された "
+"HTTP ライブラリです。\n"
 "\n"
-"HTTP リクエストを送信することのできる既存の Python モジュールの多くは、非常に"
-"冗長で面倒なものです。 Python に内蔵されている urllib2 モジュールは HTTP で必"
-"要な機能のうちの多くを提供しますが、 API は完全に壊れてしまっています。非常に"
-"シンプルな作業を行なう場合であっても、メソッドのオーバーライドなど膨大な作業"
-"を必要としてしまいます。\n"
-"\n"
-"機能:     - 非常にシンプルな GET, HEAD, POST, PUT, DELETE リクエスト:   + シ"
-"ンプルな HTTP ヘッダリクエストの追加    + リクエストに対するシンプルなデータ"
-"／パラメータの添付 + マルチパート型ファイルアップロード + CookieJar サポート "
-"+ リダイレクト履歴 + リダイレクト再帰における urllib の修正 + gzip 圧縮された"
-"コンテンツの自動展開     + Unicode URL サポート  - シンプルな認証:           "
-"+ シンプルな URL + HTTP 認証レジストリ"
+"要求の機能: - GET、HEAD、POST、PUT、DELETE要求: + "
+"HTTPヘッダー要求の添付ファイル。+ データ/パラメータ アタッチ要求。+ "
+"マルチパートファイルのアップロード。+ CookieJar サポート。+ "
+"リダイレクト履歴。+リダイレクト再帰 rllib の修正+ GZip "
+"されたコンテンツの自動解凍。+Unicode URL サポート。-認証: + URL + HTTP "
+"認証レジストリ。"
 
 #. leap/python-requests-aws/python3-requests-aws/summary
 #, fuzzy
@@ -31411,12 +31266,14 @@ msgid "Client library for OpenStack Sahara API"
 msgstr "xmms2 向けクライアントライブラリ"
 
 #. leap/python-saharaclient/python3-saharaclient/description
-#, fuzzy
 msgid ""
 "Python client library for interacting with OpenStack Sahara API.\n"
 "\n"
 "This package contains the Python 3.x module."
-msgstr "Zeitgeist デーモンと対話するためのクライアントライブラリ"
+msgstr ""
+"OpenStack Sahara API と対話するための Pythonクライアントライブラリ。\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. leap/python-samplerate/python3-samplerate/summary
 #, fuzzy
@@ -32306,12 +32163,6 @@ msgid "SIP tool to use python sip bindings - legacy version 4"
 msgstr "Python SIP バインディングを使用するための SIP ツール"
 
 #. leap/python-sip4/python3-sip4/description
-#, fuzzy
-#| msgid ""
-#| "SIP is a tool that makes it very easy to create Python bindings for C and "
-#| "C++ libraries. It was originally developed to create PyQt, the Python "
-#| "bindings for the Qt toolkit, but can be used to create bindings for any C "
-#| "or C++ library."
 msgid ""
 "SIP is a tool that makes it very easy to create Python bindings for C and C+"
 "+ libraries. It was originally developed to create PyQt, the Python bindings "
@@ -32320,10 +32171,13 @@ msgid ""
 "\n"
 "This package provides the legacy version 4 of the SIP tool"
 msgstr ""
-"SIP は C, C++ 言語のライブラリに対する Python バインディングをとても簡単に作"
-"成するためのツールです。元々は Qt ツールキットに対する Python バインディング"
-"である PyQt を作成するために開発されましたが、任意の C, C++ 言語ライブラリに"
-"対するバインディングを作成することができます。"
+"SIP は、C および C++ ライブラリー用の Python "
+"バインディングを非常に簡単に作成できるようにするツールです。もともとは、Qt "
+"ツールキットの Python バインディングである PyQt "
+"を作成するために開発されましたが、任意の C/C++ "
+"ライブラリのバインディングを作成するために使用することができます。\n"
+"\n"
+"このパッケージは、SIP ツールのレガシーバージョン 4 を提供します。"
 
 #. leap/python-sip4/python3-sip4-devel/summary
 msgid "SIP tool to create python bindings"
@@ -35221,22 +35075,6 @@ msgstr ""
 "HTTP ライブラリ"
 
 #. leap/python-urllib3/python3-urllib3/description
-#, fuzzy
-#| msgid ""
-#| "Highlights\n"
-#| "\n"
-#| "- Re-use the same socket connection for multiple requests   "
-#| "(HTTPConnectionPool and HTTPSConnectionPool)   (with optional client-side "
-#| "certificate verification).\n"
-#| "- File posting (encode_multipart_formdata).\n"
-#| "- Built-in redirection and retries (optional).\n"
-#| "- Supports gzip and deflate decoding.\n"
-#| "- Thread-safe and sanity-safe.\n"
-#| "- Works with AppEngine, gevent, and eventlib.\n"
-#| "- Tested on Python 2.6+ and Python 3.3+, 100% unit test coverage.\n"
-#| "- Small and easy to understand codebase perfect for extending and "
-#| "building upon.   For a more comprehensive solution, have a look at   "
-#| "Requests which is also powered by urllib3."
 msgid ""
 "Highlights \n"
 "- Re-use the same socket connection for multiple requests   "
@@ -35253,17 +35091,16 @@ msgid ""
 "is also powered by urllib3."
 msgstr ""
 "ハイライト\n"
-"\n"
-"- 複数のリクエストに対するソケット接続の再利用 (HTTPConnectionPool および "
-"HTTPSConnectionPool) (必要であればクライアント側での証明書検証も実施可能)\n"
-"- ファイルの POST (encode_multipart_formdata).\n"
-"- 内蔵のリダイレクトおよび再試行機能 (オプション).\n"
-"- gzip, deflate デコードへの対応\n"
-"- スレッドセーフで sanity セーフであること\n"
-"- AppEngine, gevent, eventlib との協調動作\n"
-"- Python 2.6+ および Python 3.3+ でテスト済み、 100% の単体テストカバレッジ\n"
-"- 小さくて簡単なコードベースによる、拡張性への対応。より広範囲なソリューショ"
-"ンをご希望の場合は、 urllib3 を利用している Requests をご覧ください。"
+"- 複数の要求 (HTTPConnectionPool および HTTPSConnectionPool)に対して同じソケ"
+"ット接続を再利用します(オプションでクライアント側の証明書を検証します)。\n"
+"- ファイルのポスト(encode_multipart_formdata)。\n"
+": 組み込みのリダイレクションおよびリトライ(オプション)。\n"
+"- gzip および deflate デコードをサポートします。\n"
+"- スレッドセーフとサニティセーフ。\n"
+"- AppEngine、gevent、およびeventlib で動作します。\n"
+"- Python 2.6+ および Python 3.3+ でテスト、100%のユニットテストカバレッジ。\n"
+"- 拡張と構築に最適な、小さくて理解しやすいコードベース。より包括的なソリュー"
+"ションについては、urllib3 を使用した Requests を参照してください。"
 
 #. leap/python-urwid/python3-urwid/summary
 msgid "A full-featured console (xterm et al.) user interface library"
@@ -37306,12 +37143,14 @@ msgid "The webroot for GNU Mailman"
 msgstr ""
 
 #. tumbleweed/python-HyperKitty/HyperKitty-web/description
-#, fuzzy
 msgid ""
 "A web user interface for GNU Mailman.\n"
 "\n"
 "This package holds the web interface."
-msgstr "PostgreSQL 向け Python クライアントライブラリ"
+msgstr ""
+"GNU Mailman 用の Web ユーザインタフェース。\n"
+"\n"
+"このパッケージは Web インタフェースを保持します。"
 
 #. tumbleweed/python-HyperKitty/HyperKitty-web-uwsgi/summary
 msgid "HyperKitty - uwsgi configuration"
@@ -37386,14 +37225,16 @@ msgid "Interactive plotting package for Jupyterlab"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-bqplot/jupyter-bqplot-jupyterlab/description
-#, fuzzy
-#| msgid "Provides translations for the \"python-caja\" package."
 msgid ""
 "Plotting system for the Jupyter notebook based on the interactive Jupyter "
 "widgets.\n"
 "\n"
 "This package provides the jupyterlab extension."
-msgstr "python-caja パッケージ向けの翻訳データです。"
+msgstr ""
+"インタラクティブな Jupyter ウィジェットをベースにした Jupyter "
+"ノートブックのプロットシステム。\n"
+"\n"
+"このパッケージは jupyterlab 拡張を提供します。"
 
 #. tumbleweed/python-bqplot/jupyter-bqplot-notebook/summary
 #, fuzzy
@@ -37441,14 +37282,16 @@ msgid "A Jupyter widget for dynamic Leaflet maps - Jupyter files"
 msgstr "PostgreSQL 向け Python クライアントライブラリ"
 
 #. tumbleweed/python-ipyleaflet/jupyter-ipyleaflet/description
-#, fuzzy
-#| msgid "Provides translations for the \"python-caja\" package."
 msgid ""
 "A Jupyter / Leaflet bridge enabling interactive maps in the Jupyter "
 "notebook.\n"
 "\n"
 "This package provides the extensions for jupyter notebook and jupyterlab."
-msgstr "python-caja パッケージ向けの翻訳データです。"
+msgstr ""
+"Jupyter ノートブックでインタラクティブなマップを可能にする Jupyter/Leaflet "
+"ブリッジ。\n"
+"\n"
+"このパッケージは、jupyter notebook と jupyterlab の拡張を提供します。"
 
 #. tumbleweed/python-ipyscales/jupyter-ipyscales/summary
 #, fuzzy
@@ -37456,12 +37299,14 @@ msgid "A Jupyter widget library for scales"
 msgstr "PostgreSQL 向け Python クライアントライブラリ"
 
 #. tumbleweed/python-ipyscales/jupyter-ipyscales/description
-#, fuzzy
 msgid ""
 "A Jupyter/IPython widget library for scales.\n"
 "\n"
 "This package provides the jupyter notebook extension."
-msgstr "PostgreSQL 向け Python クライアントライブラリ"
+msgstr ""
+"scale 用の Jupyter/IPython ウィジェットライブラリ。\n"
+"\n"
+"このパッケージは jupyter notebook 拡張を提供します。"
 
 #. tumbleweed/python-ipyvolume/jupyter-ipyvolume/summary
 #. tumbleweed/python-ipyvolume/python310-ipyvolume/summary
@@ -37488,13 +37333,14 @@ msgid "WebRTC for Jupyter notebook/lab"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-ipywebrtc/jupyter-ipywebrtc/description
-#, fuzzy
-#| msgid "Provides translations for the \"python-caja\" package."
 msgid ""
 "WebRTC and MediaStream API exposed in the Jupyter notebook.\n"
 "\n"
 "This package provides the jupyter notebook and jupyterlab extensions."
-msgstr "python-caja パッケージ向けの翻訳データです。"
+msgstr ""
+"Jupyter ノートブックで公開された WebRTC と MediaStream API。\n"
+"\n"
+"このパッケージは、jupyter notebook と jupyterlab 拡張を提供します。"
 
 #. tumbleweed/python-jupyter_nbextensions_configurator/jupyter-jupyter_nbextensions_configurator/summary
 #. tumbleweed/python-jupyter_nbextensions_configurator/python310-jupyter_nbextensions_configurator/summary
@@ -37577,12 +37423,14 @@ msgid "Matplotlib JupyterLab Extension"
 msgstr ""
 
 #. tumbleweed/python-ipympl/jupyter-matplotlib-jupyterlab/description
-#, fuzzy
 msgid ""
 "Jupyter extension to display matplotlib plots in a widget.\n"
 "\n"
 "This package provides the JupyterLab extension."
-msgstr "PostgreSQL 向け Python クライアントライブラリ"
+msgstr ""
+"matplotlib プロットをウィジェットに表示するための Jupyter 拡張機能。\n"
+"\n"
+"このパッケージは JupyterLab 拡張を提供します。"
 
 #. tumbleweed/python-nbclassic/jupyter-nbclassic/summary
 #. tumbleweed/python-nbclassic/python310-nbclassic/summary
@@ -37885,7 +37733,6 @@ msgid "A toolkit for generation of output for the web - Documentation"
 msgstr "Web 向けの出力を生成するツールキット"
 
 #. tumbleweed/python-Genshi/python-Genshi-doc/description
-#, fuzzy
 msgid ""
 "Genshi is a Python library that provides an integrated set of components for "
 "parsing, generating, and processing HTML, XML or other textual content for "
@@ -37894,9 +37741,12 @@ msgid ""
 "\n"
 "This package contains documentation and examples."
 msgstr ""
-"Genshi は HTML や XML 、もしくはその他のテキスト型コンテンツについて、それら"
-"をWeb 上の出力情報として処理／生成することができる Python ライブラリです。主"
-"な機能はテンプレート言語で、これは Kid の機能を参考にして作られています。"
+"Genshi は Python のライブラリであり、web 上での出力生成のために、HTML、XML、"
+"その他のテキストコンテンツを解析、生成、処理するための統合されたコンポーネン"
+"トセットを提供します。主な機能はテンプレート言語であり、これは Kid "
+"に大きく影響されています。\n"
+"\n"
+"このパッケージには、ドキュメントとサンプルが含まれています。"
 
 #. tumbleweed/python-Kivy/python-Kivy-doc/summary
 #, fuzzy
@@ -37977,16 +37827,16 @@ msgid "An asynchronous networking framework written in Python - Documentation"
 msgstr "Python で書かれた非同期ネットワーク処理フレームワーク"
 
 #. tumbleweed/python-Twisted/python-Twisted-doc/description
-#, fuzzy
 msgid ""
 "An extensible framework for Python programming, with special focus on event-"
 "based network programming and multiprotocol integration.\n"
 "\n"
 "This package contains the documentation for python-Twisted"
 msgstr ""
-"Python プログラミング言語向けの拡張可能なフレームワークです。特にイベントベー"
-"スのネットワークプログラミングや、複数のプロトコルに対する統合機能が強化され"
-"ています。"
+"イベントベースのネットワークプログラミングとマルチプロトコル統合に特に重点を"
+"置いた、Python プログラミングのための拡張可能なフレームワーク。\n"
+"\n"
+"このパッケージには python-Twisted のドキュメントが含まれています。"
 
 #. tumbleweed/python-WTForms/python-WTForms-doc/summary
 msgid "Documentation for WTForms"
@@ -38189,13 +38039,6 @@ msgid "Documentation for python-bottle"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-bottle/python-bottle-doc/description
-#, fuzzy
-#| msgid ""
-#| "Bottle is a fast and simple micro-framework for small web-applications. "
-#| "It offers request dispatching (Routes) with url parameter support, "
-#| "Templates, a built-in HTTP Server and adapters for many third party WSGI/"
-#| "HTTP-server and template engines. All in a single file and with no "
-#| "dependencies other than the Python Standard Library."
 msgid ""
 "Bottle is a micro-framework for small web applications. It offers request "
 "dispatching (routes) with URL parameter support, templates, a built-in HTTP "
@@ -38205,12 +38048,14 @@ msgid ""
 "\n"
 "This subpackage contains the PDF documentation for python-bottle."
 msgstr ""
-"Bottle は小規模な Web アプリケーション向けの高速かつシンプルなマイクロフレー"
-"ムワークです。リクエストの発信 (ルーティング) のほか、 URL パラメータのサポー"
-"トやテンプレート、内蔵の HTTP サーバや多数のサードパーティ製の WSGI/HTTP サー"
-"バおよびテンプレートエンジン向けのアダプタが用意されています。また、このモ"
-"ジュールは Python 標準ライブラリ以外に全く依存関係をもっておらず、単一のファ"
-"イルで賄われることが特長です。"
+"Bottle は小さな Web アプリケーションのためのマイクロフレームワークです。URL "
+"パラメーター・サポート、テンプレート、組み込み HTTP "
+"サーバー、そして多くのサード・パーティーの WSGI/HTTP サーバーとテンプレート・"
+"エンジン用のアダプターを備えた要求ディスパッチ(ルート)を提供します。これはす"
+"べて1つのファイル内にあり、Python Standard "
+"ライブラリ以外の依存関係はありません。\n"
+"\n"
+"このサブパッケージには python-bottle の PDF ドキュメントが含まれています。"
 
 #. tumbleweed/python-bpython/python-bpython-doc/summary
 #, fuzzy
@@ -38521,17 +38366,14 @@ msgid "Documentation for python-happybase"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-happybase/python-happybase-doc/description
-#, fuzzy
-#| msgid ""
-#| "JLex is a Lexical Analyzer Generator for Java. This package contains the "
-#| "javadoc documentation for JLex."
 msgid ""
 "HappyBase is a Python library to interact with Apache HBase.\n"
 "\n"
 "This package contains the documentation."
 msgstr ""
-"JLex は Java 向けの語彙解析生成プログラムです。このパッケージには JLex 向け"
-"の javadoc ドキュメントが含まれています。"
+"HappyBase は、Apache HBase と対話するための Python ライブラリです。\n"
+"\n"
+"このパッケージには、ドキュメントが含まれています。"
 
 #. tumbleweed/python-heatclient/python-heatclient-doc/summary
 #, fuzzy
@@ -38638,7 +38480,6 @@ msgid "Documentation for python-lxml, an XML processing library"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-lxml/python-lxml-doc/description
-#, fuzzy
 msgid ""
 "lxml is a Pythonic binding for the libxml2 and libxslt libraries. It "
 "provides convenient access to these libraries using the ElementTree API. It "
@@ -38647,10 +38488,12 @@ msgid ""
 "\n"
 "This package contains documentation for lxml (HTML and PDF)."
 msgstr ""
-"lxml は、 libxml2 と libxslt ライブラリに対する Python スタイルのバインディン"
-"グです。 ネイティブな libxml2 のツリー内に存在している要素ツリー API をできる"
-"だけ多く実装しています。 この API を拡張することで、XPath, Relax NG, XML ス"
-"キーマ, XSLT, c14n など、 libxml2 と libxslt 固有の 機能も提供しています。"
+"lxml は、libxml2 および libxslt ライブラリーの Python バインディングです。"
+"ElementTree API を使用して、これらのライブラリに簡単にアクセスできます。"
+"ElementTree API を大幅に拡張して、XPath、RelaxNG、XML "
+"Schema、XSLT、C14Nをサポートします。\n"
+"\n"
+"このパッケージには、lxml (HTML および PDF) のドキュメントが含まれています。"
 
 #. tumbleweed/python-magnumclient/python-magnumclient-doc/summary
 #, fuzzy
@@ -39020,12 +38863,6 @@ msgid "Documentation for python-paramiko"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-paramiko/python-paramiko-doc/description
-#, fuzzy
-#| msgid ""
-#| "This is a library for making SSH2 connections (client or server). "
-#| "Emphasis is on using SSH2 as an alternative to SSL for making secure "
-#| "connections between python scripts.  All major ciphers and hash methods "
-#| "are supported.  SFTP client and server mode are both supported too."
 msgid ""
 "This is a library for making SSH2 connections (client or server). Emphasis "
 "is on using SSH2 as an alternative to SSL for making secure connections "
@@ -39034,10 +38871,13 @@ msgid ""
 "\n"
 "This package contains the documentation."
 msgstr ""
-"これは SSH2 接続 (クライアントまたはサーバ) を作成するためのライブラリです。"
-"特に 2 つの Python スクリプト間で、 SSH2 を SSL の代替として利用する際に使用"
-"することができます。すべての主な暗号化とハッシュ方式に対応しています。 SFTP "
-"のクライアントとサーバのモードにも対応しています。"
+"これはSSH2 接続(クライアントまたはサーバー)を行うためのライブラリです。"
+"Python スクリプト間の安全な接続を行うために、SSL の代わりにSSH2 を使用するこ"
+"とに重点が置かれています。すべての主要な暗号およびハッシュ方式がサポートされ"
+"ています。SFTP クライアントモードとサーバモードの両方もサポートされています。"
+"\n"
+"\n"
+"このパッケージには、ドキュメントが含まれています。"
 
 #. tumbleweed/python-peppercorn/python-peppercorn-doc/summary
 #, fuzzy
@@ -39064,7 +38904,6 @@ msgstr "systemtap 向けドキュメントとサンプル"
 #. tumbleweed/python-ply/python310-ply/description
 #. tumbleweed/python-ply/python38-ply/description
 #. tumbleweed/python-ply/python39-ply/description
-#, fuzzy
 msgid ""
 "PLY is yet another implementation of lex and yacc for Python. Some notable "
 "features include the fact that its implemented entirely in Python and it "
@@ -39078,12 +38917,15 @@ msgid ""
 "PLY provides extensive error checking. It is compatible with both Python 2 "
 "and Python 3."
 msgstr ""
-"PLY は、 Python 向けのもう一つの lex, yacc 実装です。 Python には他の処理ツー"
-"ルがいくつかありますが、 PLY を使ってみるだけの理由がいくつかあります:\n"
-"- それなりに効率的で大規模な文法に便利な LR 処理法を利用していること\n"
-"- PLY では多くの標準 lex/yacc 機能を提供していること。たとえば 何も生成しない"
-"文法や優先ルール、エラー回復や 不明瞭な文法などがあります。\n"
-"- PLY はとても使いやすく、とても広範囲のエラーチェック機能を提供していること"
+"PLY も Python 用の lex と yacc の実装です。いくつかの注目すべき特徴には、"
+"完全に Python で実装されていることと、効率的でより大きな文法に適した LALR(1) "
+"解析を使用していることが含まれます。\n"
+"\n"
+"PLY は、空のプロダクションのサポート、優先順位規則、エラー回復、あいまいな文"
+"法のサポートなど、標準的な lex/yacc 機能のほとんどを提供します。\n"
+"\n"
+"PLY には広範なエラーチェック機能があります。Python 2と Python 3 "
+"の両方と互換性があります。"
 
 #. tumbleweed/python-polib/python-polib-doc/summary
 #, fuzzy
@@ -39130,13 +38972,14 @@ msgid "Documentation for python-curl"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-pycurl/python-pycurl-doc/description
-#, fuzzy
 msgid ""
 "This module provides bindings for the cURL library.\n"
 "\n"
 "This package contains documentation and examples."
 msgstr ""
-"このパッケージには、 cURL ライブラリ向けのバインディングが含まれています。"
+"このモジュールは、cURL ライブラリのバインディングを提供します。\n"
+"\n"
+"このパッケージには、ドキュメントとサンプルが含まれています。"
 
 #. tumbleweed/python-pygame/python-pygame-doc/summary
 msgid "Pygame documentation and example programs"
@@ -39421,12 +39264,6 @@ msgid "Documentation files for python-six-test"
 msgstr "python-twised 向けドキュメンテーション"
 
 #. tumbleweed/python-six-test/python-six-doc/description
-#, fuzzy
-#| msgid ""
-#| "Six is a Python 2 and 3 compatibility library. It provides utility "
-#| "functions for smoothing over the differences between the Python versions "
-#| "with the goal of writing Python code that is compatible on both Python "
-#| "versions. See the documentation for more information on what is provided."
 msgid ""
 "Six is a Python 2 and 3 compatibility library. It provides utility functions "
 "for smoothing over the differences between the Python versions with the goal "
@@ -39434,10 +39271,11 @@ msgid ""
 "\n"
 "This package provides documentation for python-six-test."
 msgstr ""
-"Six は Python 2/3 の互換性ライブラリです。 Python バージョン間の違いをスムー"
-"ズに吸収するユーティリティ関数を提供しているため、どのバージョンの Python で"
-"も互換性のあるコードを記述できるように目指しています。提供物について、詳しく"
-"はドキュメンテーションをお読みください。"
+"SixはPython 2 および 3 互換のライブラリです。これは、両方の Python "
+"バージョンで互換性のある Python コードを記述することを目的として、Python "
+"バージョン間の違いを平滑化するためのユーティリティ関数を提供します。\n"
+"\n"
+"このパッケージは python-six-test のドキュメントを提供します。"
 
 #. tumbleweed/python-sqlalchemy-migrate/python-sqlalchemy-migrate-doc/summary
 #, fuzzy
@@ -39771,17 +39609,14 @@ msgid "OpenStack Docs Tools"
 msgstr "1.2 新しいXgl設定オプション"
 
 #. tumbleweed/python-openstack-doc-tools/python3-openstack-doc-tools/description
-#, fuzzy
-#| msgid ""
-#| "Qt 5 tool used by Qt Developers to generate documentation for software "
-#| "projects."
 msgid ""
 "Tools used by the OpenStack Documentation Project.\n"
 "\n"
 "This package contains the Python 3.x module."
 msgstr ""
-"Qt の開発者が、ソフトウエアプロジェクトに対するドキュメンテーションを作成する"
-"際に使用する Qt 5 ツールです。"
+"OpenStack Documentation Project で使用されているツール\n"
+"\n"
+"このパッケージには、Python 3.x モジュールが含まれています。"
 
 #. tumbleweed/python-openstackclient/python3-openstackclient/description
 msgid ""
@@ -41667,13 +41502,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-agfood/python310-azure-mgmt-agfood/description
 #. tumbleweed/python-azure-mgmt-agfood/python38-azure-mgmt-agfood/description
 #. tumbleweed/python-azure-mgmt-agfood/python39-azure-mgmt-agfood/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Agfood Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure Agfood Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-agrifood/python310-azure-mgmt-agrifood/summary
 #. tumbleweed/python-azure-mgmt-agrifood/python38-azure-mgmt-agrifood/summary
@@ -41685,13 +41522,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-agrifood/python310-azure-mgmt-agrifood/description
 #. tumbleweed/python-azure-mgmt-agrifood/python38-azure-mgmt-agrifood/description
 #. tumbleweed/python-azure-mgmt-agrifood/python39-azure-mgmt-agrifood/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Agrifood Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure Agrifood Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-avs/python310-azure-mgmt-avs/summary
 #. tumbleweed/python-azure-mgmt-avs/python38-azure-mgmt-avs/summary
@@ -41704,13 +41543,15 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-avs/python310-azure-mgmt-avs/description
 #. tumbleweed/python-azure-mgmt-avs/python38-azure-mgmt-avs/description
 #. tumbleweed/python-azure-mgmt-avs/python39-azure-mgmt-avs/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure VMware Solution Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure VMware Solution Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-azureadb2c/python310-azure-mgmt-azureadb2c/summary
 #. tumbleweed/python-azure-mgmt-azureadb2c/python38-azure-mgmt-azureadb2c/summary
@@ -41722,13 +41563,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-azureadb2c/python310-azure-mgmt-azureadb2c/description
 #. tumbleweed/python-azure-mgmt-azureadb2c/python38-azure-mgmt-azureadb2c/description
 #. tumbleweed/python-azure-mgmt-azureadb2c/python39-azure-mgmt-azureadb2c/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Azureadb2c Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Azureadb2c Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-chaos/python310-azure-mgmt-chaos/summary
 #. tumbleweed/python-azure-mgmt-chaos/python38-azure-mgmt-chaos/summary
@@ -41740,13 +41583,14 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-chaos/python310-azure-mgmt-chaos/description
 #. tumbleweed/python-azure-mgmt-chaos/python38-azure-mgmt-chaos/description
 #. tumbleweed/python-azure-mgmt-chaos/python39-azure-mgmt-chaos/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Chaos Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Chaos Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-confluent/python310-azure-mgmt-confluent/summary
 #. tumbleweed/python-azure-mgmt-confluent/python38-azure-mgmt-confluent/summary
@@ -41759,13 +41603,15 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-confluent/python310-azure-mgmt-confluent/description
 #. tumbleweed/python-azure-mgmt-confluent/python38-azure-mgmt-confluent/description
 #. tumbleweed/python-azure-mgmt-confluent/python39-azure-mgmt-confluent/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Confluent Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Confluent Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-connectedvmware/python310-azure-mgmt-connectedvmware/summary
 #. tumbleweed/python-azure-mgmt-connectedvmware/python38-azure-mgmt-connectedvmware/summary
@@ -41778,13 +41624,14 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-connectedvmware/python310-azure-mgmt-connectedvmware/description
 #. tumbleweed/python-azure-mgmt-connectedvmware/python38-azure-mgmt-connectedvmware/description
 #. tumbleweed/python-azure-mgmt-connectedvmware/python39-azure-mgmt-connectedvmware/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Connectedvmware Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Connectedvmware Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-customproviders/python310-azure-mgmt-customproviders/summary
 #. tumbleweed/python-azure-mgmt-customproviders/python38-azure-mgmt-customproviders/summary
@@ -41796,13 +41643,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-customproviders/python310-azure-mgmt-customproviders/description
 #. tumbleweed/python-azure-mgmt-customproviders/python38-azure-mgmt-customproviders/description
 #. tumbleweed/python-azure-mgmt-customproviders/python39-azure-mgmt-customproviders/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure CustomProviders Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure CustomProviders Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-databox/python310-azure-mgmt-databox/summary
 #. tumbleweed/python-azure-mgmt-databox/python38-azure-mgmt-databox/summary
@@ -41814,13 +41663,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-databox/python310-azure-mgmt-databox/description
 #. tumbleweed/python-azure-mgmt-databox/python38-azure-mgmt-databox/description
 #. tumbleweed/python-azure-mgmt-databox/python39-azure-mgmt-databox/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure DataBox Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure DataBox Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-datadog/python310-azure-mgmt-datadog/summary
 #. tumbleweed/python-azure-mgmt-datadog/python38-azure-mgmt-datadog/summary
@@ -41832,13 +41683,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-datadog/python310-azure-mgmt-datadog/description
 #. tumbleweed/python-azure-mgmt-datadog/python38-azure-mgmt-datadog/description
 #. tumbleweed/python-azure-mgmt-datadog/python39-azure-mgmt-datadog/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Datadog Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Datadog Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-dataprotection/python310-azure-mgmt-dataprotection/summary
 #. tumbleweed/python-azure-mgmt-dataprotection/python38-azure-mgmt-dataprotection/summary
@@ -41850,13 +41703,14 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-dataprotection/python310-azure-mgmt-dataprotection/description
 #. tumbleweed/python-azure-mgmt-dataprotection/python38-azure-mgmt-dataprotection/description
 #. tumbleweed/python-azure-mgmt-dataprotection/python39-azure-mgmt-dataprotection/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Dataprotection Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Dataprotection Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-deviceupdate/python310-azure-mgmt-deviceupdate/summary
 #. tumbleweed/python-azure-mgmt-deviceupdate/python38-azure-mgmt-deviceupdate/summary
@@ -41869,13 +41723,15 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-deviceupdate/python310-azure-mgmt-deviceupdate/description
 #. tumbleweed/python-azure-mgmt-deviceupdate/python38-azure-mgmt-deviceupdate/description
 #. tumbleweed/python-azure-mgmt-deviceupdate/python39-azure-mgmt-deviceupdate/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Deviceupdate Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Deviceupdate Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-digitaltwins/python310-azure-mgmt-digitaltwins/summary
 #. tumbleweed/python-azure-mgmt-digitaltwins/python38-azure-mgmt-digitaltwins/summary
@@ -41887,13 +41743,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-digitaltwins/python310-azure-mgmt-digitaltwins/description
 #. tumbleweed/python-azure-mgmt-digitaltwins/python38-azure-mgmt-digitaltwins/description
 #. tumbleweed/python-azure-mgmt-digitaltwins/python39-azure-mgmt-digitaltwins/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Digitaltwins Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Digitaltwins Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-edgeorder/python310-azure-mgmt-edgeorder/summary
 #. tumbleweed/python-azure-mgmt-edgeorder/python38-azure-mgmt-edgeorder/summary
@@ -41905,13 +41763,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-edgeorder/python310-azure-mgmt-edgeorder/description
 #. tumbleweed/python-azure-mgmt-edgeorder/python38-azure-mgmt-edgeorder/description
 #. tumbleweed/python-azure-mgmt-edgeorder/python39-azure-mgmt-edgeorder/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Edgeorder Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Edgeorder Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-elastic/python310-azure-mgmt-elastic/summary
 #. tumbleweed/python-azure-mgmt-elastic/python38-azure-mgmt-elastic/summary
@@ -41923,13 +41783,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-elastic/python310-azure-mgmt-elastic/description
 #. tumbleweed/python-azure-mgmt-elastic/python38-azure-mgmt-elastic/description
 #. tumbleweed/python-azure-mgmt-elastic/python39-azure-mgmt-elastic/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Elastic Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Elastic Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-extendedlocation/python310-azure-mgmt-extendedlocation/summary
 #. tumbleweed/python-azure-mgmt-extendedlocation/python38-azure-mgmt-extendedlocation/summary
@@ -41942,13 +41804,15 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-extendedlocation/python310-azure-mgmt-extendedlocation/description
 #. tumbleweed/python-azure-mgmt-extendedlocation/python38-azure-mgmt-extendedlocation/description
 #. tumbleweed/python-azure-mgmt-extendedlocation/python39-azure-mgmt-extendedlocation/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Extendedlocation Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Extendedlocation Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-fluidrelay/python310-azure-mgmt-fluidrelay/summary
 #. tumbleweed/python-azure-mgmt-fluidrelay/python38-azure-mgmt-fluidrelay/summary
@@ -41960,13 +41824,14 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-fluidrelay/python310-azure-mgmt-fluidrelay/description
 #. tumbleweed/python-azure-mgmt-fluidrelay/python38-azure-mgmt-fluidrelay/description
 #. tumbleweed/python-azure-mgmt-fluidrelay/python39-azure-mgmt-fluidrelay/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Fluidrelay Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Fluidrelay Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-guestconfig/python310-azure-mgmt-guestconfig/summary
 #. tumbleweed/python-azure-mgmt-guestconfig/python38-azure-mgmt-guestconfig/summary
@@ -41978,13 +41843,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-guestconfig/python310-azure-mgmt-guestconfig/description
 #. tumbleweed/python-azure-mgmt-guestconfig/python38-azure-mgmt-guestconfig/description
 #. tumbleweed/python-azure-mgmt-guestconfig/python39-azure-mgmt-guestconfig/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Guestconfig Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Guestconfig Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-hybridkubernetes/python310-azure-mgmt-hybridkubernetes/summary
 #. tumbleweed/python-azure-mgmt-hybridkubernetes/python38-azure-mgmt-hybridkubernetes/summary
@@ -41997,13 +41864,14 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-hybridkubernetes/python310-azure-mgmt-hybridkubernetes/description
 #. tumbleweed/python-azure-mgmt-hybridkubernetes/python38-azure-mgmt-hybridkubernetes/description
 #. tumbleweed/python-azure-mgmt-hybridkubernetes/python39-azure-mgmt-hybridkubernetes/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure HybridKubernetes Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8"
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure HybridKubernetes Management Client ライブラリです。\n"
+"\n"
+"This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8"
 
 #. tumbleweed/python-azure-mgmt-hybridnetwork/python310-azure-mgmt-hybridnetwork/summary
 #. tumbleweed/python-azure-mgmt-hybridnetwork/python38-azure-mgmt-hybridnetwork/summary
@@ -42016,13 +41884,15 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-hybridnetwork/python310-azure-mgmt-hybridnetwork/description
 #. tumbleweed/python-azure-mgmt-hybridnetwork/python38-azure-mgmt-hybridnetwork/description
 #. tumbleweed/python-azure-mgmt-hybridnetwork/python39-azure-mgmt-hybridnetwork/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Hybridnetwork Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Hybridnetwork Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-loadtestservice/python310-azure-mgmt-loadtestservice/summary
 #. tumbleweed/python-azure-mgmt-loadtestservice/python38-azure-mgmt-loadtestservice/summary
@@ -42035,13 +41905,14 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-loadtestservice/python310-azure-mgmt-loadtestservice/description
 #. tumbleweed/python-azure-mgmt-loadtestservice/python38-azure-mgmt-loadtestservice/description
 #. tumbleweed/python-azure-mgmt-loadtestservice/python39-azure-mgmt-loadtestservice/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Loadtestservice Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Loadtestservice Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-logz/python310-azure-mgmt-logz/summary
 #. tumbleweed/python-azure-mgmt-logz/python38-azure-mgmt-logz/summary
@@ -42053,13 +41924,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-logz/python310-azure-mgmt-logz/description
 #. tumbleweed/python-azure-mgmt-logz/python38-azure-mgmt-logz/description
 #. tumbleweed/python-azure-mgmt-logz/python39-azure-mgmt-logz/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Logz Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure Logz Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-oep/python310-azure-mgmt-oep/summary
 #. tumbleweed/python-azure-mgmt-oep/python38-azure-mgmt-oep/summary
@@ -42071,13 +41944,14 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-oep/python310-azure-mgmt-oep/description
 #. tumbleweed/python-azure-mgmt-oep/python38-azure-mgmt-oep/description
 #. tumbleweed/python-azure-mgmt-oep/python39-azure-mgmt-oep/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Oep Management Client Library.\n"
 "\n"
 "This package has been tested with Python 3.7+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これはMicrosoft Azure Oep Management Client ライブラリです。\n"
+"\n"
+"このパッケージは Python 3.7+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-orbital/python310-azure-mgmt-orbital/summary
 #. tumbleweed/python-azure-mgmt-orbital/python38-azure-mgmt-orbital/summary
@@ -42089,13 +41963,14 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-orbital/python310-azure-mgmt-orbital/description
 #. tumbleweed/python-azure-mgmt-orbital/python38-azure-mgmt-orbital/description
 #. tumbleweed/python-azure-mgmt-orbital/python39-azure-mgmt-orbital/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Orbital Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Orbital Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-portal/python310-azure-mgmt-portal/summary
 #. tumbleweed/python-azure-mgmt-portal/python38-azure-mgmt-portal/summary
@@ -42107,13 +41982,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-portal/python310-azure-mgmt-portal/description
 #. tumbleweed/python-azure-mgmt-portal/python38-azure-mgmt-portal/description
 #. tumbleweed/python-azure-mgmt-portal/python39-azure-mgmt-portal/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Portal Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Portal Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-powerbidedicated/python310-azure-mgmt-powerbidedicated/summary
 #. tumbleweed/python-azure-mgmt-powerbidedicated/python38-azure-mgmt-powerbidedicated/summary
@@ -42125,8 +42002,6 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-powerbidedicated/python310-azure-mgmt-powerbidedicated/description
 #. tumbleweed/python-azure-mgmt-powerbidedicated/python38-azure-mgmt-powerbidedicated/description
 #. tumbleweed/python-azure-mgmt-powerbidedicated/python39-azure-mgmt-powerbidedicated/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure PowerBIDedicated Management Client Library.\n"
 "\n"
@@ -42134,7 +42009,14 @@ msgid ""
 "replace the old Azure Service Management (ASM).\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure PowerBIDedicated Management Client ライブラリです。\n"
+"\n"
+"Azure Resource Manager(ARM) は、古い Azure Service Management(ASM) "
+"に代わる次世代の管理 API です。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-purview/python310-azure-mgmt-purview/summary
 #. tumbleweed/python-azure-mgmt-purview/python38-azure-mgmt-purview/summary
@@ -42147,13 +42029,15 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-purview/python310-azure-mgmt-purview/description
 #. tumbleweed/python-azure-mgmt-purview/python38-azure-mgmt-purview/description
 #. tumbleweed/python-azure-mgmt-purview/python39-azure-mgmt-purview/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Purview Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Purview Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-quantum/python310-azure-mgmt-quantum/summary
 #. tumbleweed/python-azure-mgmt-quantum/python38-azure-mgmt-quantum/summary
@@ -42166,13 +42050,15 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-quantum/python310-azure-mgmt-quantum/description
 #. tumbleweed/python-azure-mgmt-quantum/python38-azure-mgmt-quantum/description
 #. tumbleweed/python-azure-mgmt-quantum/python39-azure-mgmt-quantum/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Quantum Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Quantum Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-quota/python310-azure-mgmt-quota/summary
 #. tumbleweed/python-azure-mgmt-quota/python38-azure-mgmt-quota/summary
@@ -42184,13 +42070,14 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-quota/python310-azure-mgmt-quota/description
 #. tumbleweed/python-azure-mgmt-quota/python38-azure-mgmt-quota/description
 #. tumbleweed/python-azure-mgmt-quota/python39-azure-mgmt-quota/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Quota Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Quota Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-recoveryservicessiterecovery/python310-azure-mgmt-recoveryservicessiterecovery/summary
 #. tumbleweed/python-azure-mgmt-recoveryservicessiterecovery/python38-azure-mgmt-recoveryservicessiterecovery/summary
@@ -42204,14 +42091,17 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-recoveryservicessiterecovery/python310-azure-mgmt-recoveryservicessiterecovery/description
 #. tumbleweed/python-azure-mgmt-recoveryservicessiterecovery/python38-azure-mgmt-recoveryservicessiterecovery/description
 #. tumbleweed/python-azure-mgmt-recoveryservicessiterecovery/python39-azure-mgmt-recoveryservicessiterecovery/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Recoveryservicessiterecovery Management Client "
 "Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Recoveryservicessiterecovery Management Client "
+"ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-resourceconnector/python310-azure-mgmt-resourceconnector/summary
 #. tumbleweed/python-azure-mgmt-resourceconnector/python38-azure-mgmt-resourceconnector/summary
@@ -42223,13 +42113,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-resourceconnector/python310-azure-mgmt-resourceconnector/description
 #. tumbleweed/python-azure-mgmt-resourceconnector/python38-azure-mgmt-resourceconnector/description
 #. tumbleweed/python-azure-mgmt-resourceconnector/python39-azure-mgmt-resourceconnector/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Resourceconnector Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Resourceconnector Management Client ライブラリです。"
+"\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-resourcehealth/python310-azure-mgmt-resourcehealth/summary
 #. tumbleweed/python-azure-mgmt-resourcehealth/python38-azure-mgmt-resourcehealth/summary
@@ -42241,13 +42133,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-resourcehealth/python310-azure-mgmt-resourcehealth/description
 #. tumbleweed/python-azure-mgmt-resourcehealth/python38-azure-mgmt-resourcehealth/description
 #. tumbleweed/python-azure-mgmt-resourcehealth/python39-azure-mgmt-resourcehealth/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure ResourceHealth Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure ResourceHealth Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-servicefabricmanagedclusters/python310-azure-mgmt-servicefabricmanagedclusters/summary
 #. tumbleweed/python-azure-mgmt-servicefabricmanagedclusters/python38-azure-mgmt-servicefabricmanagedclusters/summary
@@ -42261,14 +42155,17 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-servicefabricmanagedclusters/python310-azure-mgmt-servicefabricmanagedclusters/description
 #. tumbleweed/python-azure-mgmt-servicefabricmanagedclusters/python38-azure-mgmt-servicefabricmanagedclusters/description
 #. tumbleweed/python-azure-mgmt-servicefabricmanagedclusters/python39-azure-mgmt-servicefabricmanagedclusters/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Servicefabricmanagedclusters Management Client "
 "Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Servicefabricmanagedclusters Management Client "
+"ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-servicelinker/python310-azure-mgmt-servicelinker/summary
 #. tumbleweed/python-azure-mgmt-servicelinker/python38-azure-mgmt-servicelinker/summary
@@ -42281,13 +42178,14 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-servicelinker/python310-azure-mgmt-servicelinker/description
 #. tumbleweed/python-azure-mgmt-servicelinker/python38-azure-mgmt-servicelinker/description
 #. tumbleweed/python-azure-mgmt-servicelinker/python39-azure-mgmt-servicelinker/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Servicelinker Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.6+."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Servicelinker Management Client ライブラリです。\n"
+"\n"
+"このパッケージはPython 2.7、3.6+ でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-storagecache/python310-azure-mgmt-storagecache/summary
 #. tumbleweed/python-azure-mgmt-storagecache/python38-azure-mgmt-storagecache/summary
@@ -42300,8 +42198,6 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-storagecache/python310-azure-mgmt-storagecache/description
 #. tumbleweed/python-azure-mgmt-storagecache/python38-azure-mgmt-storagecache/description
 #. tumbleweed/python-azure-mgmt-storagecache/python39-azure-mgmt-storagecache/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Storagecache Management Client Library.\n"
 "\n"
@@ -42309,7 +42205,13 @@ msgid ""
 "replace the old Azure Service Management (ASM).\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6 and 3.7."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Storagecache Management Client ライブラリです。\n"
+"\n"
+"Azure Resource Manager(ARM) は、古い Azure Service Management(ASM) "
+"に代わる次世代の管理 API です。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、および 3.7 でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-storagepool/python310-azure-mgmt-storagepool/summary
 #. tumbleweed/python-azure-mgmt-storagepool/python38-azure-mgmt-storagepool/summary
@@ -42321,13 +42223,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-storagepool/python310-azure-mgmt-storagepool/description
 #. tumbleweed/python-azure-mgmt-storagepool/python38-azure-mgmt-storagepool/description
 #. tumbleweed/python-azure-mgmt-storagepool/python39-azure-mgmt-storagepool/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Storagepool Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Storagepool Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-support/python310-azure-mgmt-support/summary
 #. tumbleweed/python-azure-mgmt-support/python38-azure-mgmt-support/summary
@@ -42339,13 +42243,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-support/python310-azure-mgmt-support/description
 #. tumbleweed/python-azure-mgmt-support/python38-azure-mgmt-support/description
 #. tumbleweed/python-azure-mgmt-support/python39-azure-mgmt-support/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Support Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Support Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-testbase/python310-azure-mgmt-testbase/summary
 #. tumbleweed/python-azure-mgmt-testbase/python38-azure-mgmt-testbase/summary
@@ -42357,13 +42263,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-testbase/python310-azure-mgmt-testbase/description
 #. tumbleweed/python-azure-mgmt-testbase/python38-azure-mgmt-testbase/description
 #. tumbleweed/python-azure-mgmt-testbase/python39-azure-mgmt-testbase/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Testbase Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Testbase Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-timeseriesinsights/python310-azure-mgmt-timeseriesinsights/summary
 #. tumbleweed/python-azure-mgmt-timeseriesinsights/python38-azure-mgmt-timeseriesinsights/summary
@@ -42376,8 +42284,6 @@ msgstr "Samba クライアントライブラリ"
 #. tumbleweed/python-azure-mgmt-timeseriesinsights/python310-azure-mgmt-timeseriesinsights/description
 #. tumbleweed/python-azure-mgmt-timeseriesinsights/python38-azure-mgmt-timeseriesinsights/description
 #. tumbleweed/python-azure-mgmt-timeseriesinsights/python39-azure-mgmt-timeseriesinsights/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure TimeSeriesInsights Management Client Library.\n"
 "\n"
@@ -42385,7 +42291,15 @@ msgid ""
 "replace the old Azure Service Management (ASM).\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure TimeSeriesInsights Management Client ライブラリです。"
+"\n"
+"\n"
+"Azure Resource Manager(ARM) は、古い Azure Service Management(ASM) "
+"に代わる次世代の管理 API です。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-videoanalyzer/python310-azure-mgmt-videoanalyzer/summary
 #. tumbleweed/python-azure-mgmt-videoanalyzer/python38-azure-mgmt-videoanalyzer/summary
@@ -42397,13 +42311,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-videoanalyzer/python310-azure-mgmt-videoanalyzer/description
 #. tumbleweed/python-azure-mgmt-videoanalyzer/python38-azure-mgmt-videoanalyzer/description
 #. tumbleweed/python-azure-mgmt-videoanalyzer/python39-azure-mgmt-videoanalyzer/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Video Analyzer Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Video Analyzer Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mgmt-webpubsub/python310-azure-mgmt-webpubsub/summary
 #. tumbleweed/python-azure-mgmt-webpubsub/python38-azure-mgmt-webpubsub/summary
@@ -42415,13 +42331,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-mgmt-webpubsub/python310-azure-mgmt-webpubsub/description
 #. tumbleweed/python-azure-mgmt-webpubsub/python38-azure-mgmt-webpubsub/description
 #. tumbleweed/python-azure-mgmt-webpubsub/python39-azure-mgmt-webpubsub/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Webpubsub Management Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Webpubsub Management Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-mixedreality-authentication/python310-azure-mixedreality-authentication/summary
 #. tumbleweed/python-azure-mixedreality-authentication/python38-azure-mixedreality-authentication/summary
@@ -42697,14 +42615,17 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-synapse-managedprivateendpoints/python310-azure-synapse-managedprivateendpoints/description
 #. tumbleweed/python-azure-synapse-managedprivateendpoints/python38-azure-synapse-managedprivateendpoints/description
 #. tumbleweed/python-azure-synapse-managedprivateendpoints/python39-azure-synapse-managedprivateendpoints/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Synapse Managed Private Endpoints Client "
 "Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは、Microsoft Azure Synapse Managed Private Endpoints Client "
+"ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-synapse-monitoring/python310-azure-synapse-monitoring/summary
 #. tumbleweed/python-azure-synapse-monitoring/python38-azure-synapse-monitoring/summary
@@ -42716,13 +42637,15 @@ msgstr "OpenOffice.Orgクイックスターター"
 #. tumbleweed/python-azure-synapse-monitoring/python310-azure-synapse-monitoring/description
 #. tumbleweed/python-azure-synapse-monitoring/python38-azure-synapse-monitoring/description
 #. tumbleweed/python-azure-synapse-monitoring/python39-azure-synapse-monitoring/description
-#, fuzzy
-#| msgid "Samba Client Library"
 msgid ""
 "This is the Microsoft Azure Synapse Monitoring Client Library.\n"
 "\n"
 "This package has been tested with Python 2.7, 3.5, 3.6, 3.7 and 3.8."
-msgstr "Samba クライアントライブラリ"
+msgstr ""
+"これは Microsoft Azure Synapse Monitoring Client ライブラリです。\n"
+"\n"
+"このパッケージは、Python 2.7、3.5、3.6、3.7、および 3.8 "
+"でテストされています。"
 
 #. tumbleweed/python-azure-template/python310-azure-template/summary
 #. tumbleweed/python-azure-template/python38-azure-template/summary
@@ -44623,7 +44546,6 @@ msgstr ""
 #. tumbleweed/python-dnspython/python310-dnspython/description
 #. tumbleweed/python-dnspython/python38-dnspython/description
 #. tumbleweed/python-dnspython/python39-dnspython/description
-#, fuzzy
 msgid ""
 "dnspython is a DNS toolkit for Python. It supports almost all record types. "
 "It can be used for queries, zone transfers, and dynamic updates. It supports "
@@ -44642,15 +44564,22 @@ msgid ""
 "- curio This optional feature is not available due to missing dependencies:\n"
 "- wmi"
 msgstr ""
-"dnspython は Python 向けの DNS ツールキットです。ほぼ全てのレコードタイプに対"
-"応しているほか、問い合わせやゾーンの転送、動的な更新それぞれに対応していま"
-"す。また、 TSIG 認証メッセージや EDNS0 などにも対応しています。\n"
+"dnspython は Python 用の DNS ツールキットです。ほとんどすべてのレコードタイプ"
+"をサポートしています。クエリ、ゾーン転送、および動的更新に使用できます。TSIG "
+"認証メッセージと EDNS0 をサポートします。\n"
 "\n"
-"dnspython は DNS に対して、高レベルなアクセスと低レベルなアクセスの両方を行な"
-"うことができます。高レベルなインターフェイスでは、指定した名前やタイプ、クラ"
-"スに対して問い合わせを送信し、応答結果を受け取ることができます。低レベルなア"
-"クセスでは、 DNS ゾーンやメッセージ、名前やレコードなどに対して、直接的な制御"
-"を行なうことができます。"
+"dnspython は、DNS への高レベルと低レベルの両方のアクセスを提供します。高レベ"
+"ルクラスは、指定された名前、タイプ、およびクラスのデータに対してクエリーを実"
+"行し、回答セットを返します。下位レベルのクラスでは、DNS "
+"ゾーン、メッセージ、名前、およびレコードを直接操作できます。\n"
+"\n"
+"このパッケージには、次のオプション機能に必要な依存関係が必要です:\n"
+"- DNS over HTTPS(doh)\n"
+"- IDNA\n"
+"- DNSSECと、これらのオプション機能に必要な依存関係の提案:\n"
+"- trio\n"
+"- curio 依存関係が欠落しているため、このオプション機能は使用できません:\n"
+"- wmi"
 
 #. tumbleweed/python-docopt/python310-docopt/summary
 #. tumbleweed/python-docopt/python38-docopt/summary
@@ -46139,12 +46068,14 @@ msgstr "xmms2 向けクライアントライブラリ"
 #. tumbleweed/python-ipyscales/python310-ipyscales/description
 #. tumbleweed/python-ipyscales/python38-ipyscales/description
 #. tumbleweed/python-ipyscales/python39-ipyscales/description
-#, fuzzy
 msgid ""
 "A Jupyter/IPython widget library for scales.\n"
 "\n"
 "This package provides the python interface."
-msgstr "PostgreSQL 向け Python クライアントライブラリ"
+msgstr ""
+"scale 用の Jupyter/IPython ウィジェットライブラリ。\n"
+"\n"
+"このパッケージは Python インタフェースを提供します。"
 
 #. tumbleweed/python-ipysheet/python310-ipysheet/summary
 #. tumbleweed/python-ipysheet/python38-ipysheet/summary
@@ -52997,26 +52928,6 @@ msgstr ""
 #. tumbleweed/python-wheel/python310-wheel/description
 #. tumbleweed/python-wheel/python38-wheel/description
 #. tumbleweed/python-wheel/python39-wheel/description
-#, fuzzy
-#| msgid ""
-#| "A built-package format for Python.\n"
-#| "\n"
-#| "A wheel is a ZIP-format archive with a specially formatted filename and "
-#| "the .whl extension. It is designed to contain all the files for a PEP 376 "
-#| "compatible install in a way that is very close to the on-disk format. "
-#| "Many packages will be properly installed with only the \"Unpack\" step "
-#| "(simply extracting the file onto sys.path), and the unpacked archive "
-#| "preserves enough information to \"Spread\" (copy data and scripts to "
-#| "their final locations) at any later time.\n"
-#| "\n"
-#| "The wheel project provides a bdist_wheel command for setuptools (requires "
-#| "distribute >= 0.6.34). Wheel files can be installed with a newer pip from "
-#| "https://github.com/pypa/pip or with wheel's own command line utility.\n"
-#| "\n"
-#| "The wheel documentation is at http://wheel.rtfd.org/. The file format is "
-#| "documented in PEP 427 (http://www.python.org/dev/peps/pep-0427/).\n"
-#| "\n"
-#| "The reference implementation is at http://bitbucket.org/dholth/wheel/"
 msgid ""
 "A built-package format for Python.\n"
 "\n"
@@ -53028,26 +52939,14 @@ msgid ""
 "enough information to \"Spread\" (copy data and scripts to their final "
 "locations) at any later time."
 msgstr ""
-"Python 向けの構築済みパッケージフォーマットです。\n"
+"Python 用の組み込みパッケージ形式です。\n"
 "\n"
-"wheel は ZIP 形式のアーカイブで、ファイル名が特別な形式になっている拡張子 ."
-"whl のファイルです。このファイルは PE 376 互換のインストールに必要なすべての"
-"ファイルを含むためのもので、ディスク上の形式とほほ同じになるようになっていま"
-"す。多くのパッケージは \"展開\" ステップだけ (単純に sys.path 内にファイルを"
-"展開するだけ) で適切にインストールすることができますし、展開されたアーカイブ"
-"は \"公開\" する (データやスクリプトを最終的な場所にコピーする) ために十分な"
-"情報を保持しています。\n"
-"\n"
-"wheel プロジェクトは setuptools 向けに bdist_wheel コマンドも提供しています "
-"(distribute >= 0.6.36 が必要) 。 wheel ファイルは https://github.com/pypa/"
-"pip で提供されている新しい pip を利用するか、 wheel 自身のコマンドラインユー"
-"ティリティでインストールすることができます。\n"
-"\n"
-"wheel のドキュメンテーションは http://wheel.rtfd.org/ にあります。ファイル形"
-"式は PEP 427 (http://www.python.org/dev/peps/pep-0427/) として公開されていま"
-"す。\n"
-"\n"
-"また、参照実装は http://bitbucket.org/dholth/wheel/ にあります。"
+"wheel は、特別にフォーマットされたファイル名と.whl 拡張子を持つ ZIP "
+"フォーマットのアーカイブです。これは、PEP 376 互換インストールのすべてのファ"
+"イルを、ディスク上のフォーマットに非常に近い形で格納するように設計されていま"
+"す。多くのパッケージは、「Unpack」ステップ(単にファイルを sys.path に抽出する"
+")だけで適切にインストールされ、アンパックされたアーカイブは、後で「Spread」("
+"データとスクリプトを最終的な場所にコピーする)するのに十分な情報を保持します。"
 
 #. tumbleweed/python-wheezy.template/python310-wheezy.template/summary
 #. tumbleweed/python-wheezy.template/python38-wheezy.template/summary
