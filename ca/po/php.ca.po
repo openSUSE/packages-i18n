@@ -3,18 +3,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2017-07-26 00:23:10\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-12-13 13:48+0000\n"
+"Last-Translator: David Medina <medipas@gmail.com>\n"
+"Language-Team: Catalan <https://l10n.opensuse.org/projects/packages-i18n/"
+"php-master/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #. leap/php-composer/summary
 #. leap/php-composer2/summary
 msgid "Dependency Management for PHP"
-msgstr ""
+msgstr "Gestió de dependències per a PHP"
 
 #. leap/php-composer/description
 #. leap/php-composer2/description
@@ -22,10 +25,12 @@ msgid ""
 "Composer is a dependency manager tracking local dependencies of your "
 "projects and libraries."
 msgstr ""
+"Composer és un gestor de dependències que fa el seguiment de les "
+"dependències locals dels vostres projectes i biblioteques."
 
 #. leap/php-cs-fixer/summary
 msgid "PHP Coding Standards Fixer"
-msgstr ""
+msgstr "Fixador de normes de codificació PHP"
 
 #. leap/php-cs-fixer/description
 msgid ""
@@ -37,20 +42,30 @@ msgid ""
 "It can modernise code (like converting the pow function to the ** operator "
 "on PHP 5.6) and (micro) optimize it."
 msgstr ""
+"L'eina PHP Coding Standards Fixer (PHP CS Fixer) corregeix el codi per "
+"seguir els estàndards; aquests poden ser els estàndards de codificació PHP "
+"tal com es defineixen en el PSR-1, PSR-2, etc., o altres impulsats per la "
+"comunitat com el Symfony. Els estils personalitzats també es poden definir a "
+"través de la configuració.\n"
+"\n"
+"Pot modernitzar el codi (com convertir la funció pow a l'operador ** en PHP 5"
+".6) i (micro) optimitzar-lo."
 
 #. leap/php-pear-Auth_SASL/summary
 msgid "Abstraction of various SASL mechanism responses"
-msgstr ""
+msgstr "Abstracció de diverses respostes del mecanisme SASL"
 
 #. leap/php-pear-Auth_SASL/description
 msgid ""
 "Provides code to generate responses to common SASL mechanisms, including:   "
 "- Digest-MD5   - CramMD5   - Plain   - Anonymous   - Login (Pseudo mechanism)"
 msgstr ""
+"Proporciona codi per generar respostes a mecanismes SASL comuns, incloent: - "
+"Digest-MD5 - CramMD5 - Pla - Anònim - Login (mecanisme Pseudo)"
 
 #. leap/php-pear-MDB2/summary
 msgid "Database abstraction layer"
-msgstr ""
+msgstr "Capa d'abstracció de la base de dades"
 
 #. leap/php-pear-MDB2/description
 msgid ""
@@ -86,18 +101,54 @@ msgid ""
 "* Full integration into the PEAR Framework\n"
 "* PHPDoc API documentation"
 msgstr ""
+"PEAR MDB2 és una fusió de les capes d'abstracció de la base de dades PEAR DB "
+"i Metabase php.\n"
+"\n"
+"Proporciona una API comuna per a tots els RDBMS compatibles. La principal "
+"diferència per a la majoria dels altres paquets d'abstracció de DB és que "
+"MDB2 va molt més enllà per garantir la portabilitat. MDB2 proporciona la "
+"majoria de les seves moltes característiques opcionalment que es poden "
+"utilitzar per construir sentències SQL portàtils:\n"
+"* API orientada a objectes\n"
+"* Un format DSN (nom de la font de dades) o matriu per a especificar "
+"servidors de base de dades\n"
+"* abstracció de tipus de dades i conversió de tipus de dades sota demanda\n"
+"* Diversos modes opcionals de recuperació per corregir problemes de "
+"portabilitat\n"
+"* Codis d'error portables\n"
+"* Recuperació seqüencial i no seqüencial de files, així com la captura "
+"massiva\n"
+"* Capacitat per a fer consultes a la memòria intermèdia i no a la memòria "
+"intermèdia\n"
+"* Matriu ordenada i matriu associativa per a les files recuperades\n"
+"* Prepara/executa l'emulació del marcador de posició amb nom i sense nom\n"
+"* Emulació de seqüència/increment automàtic\n"
+"* Substitueix l'emulació\n"
+"* Emulació limitada de subselecciona\n"
+"* Emulació del límit de fila\n"
+"* Implementació d'assentaments/punts de desament\n"
+"* Implementació d'objectes grans\n"
+"* Implementació de l'índex/clau única/clau primària\n"
+"* Abstracció que coincideix amb el patró\n"
+"* Framework de mòduls per carregar funcionalitats avançades sota demanda\n"
+"* Capacitat per a llegir l'esquema d'informació\n"
+"* Mètodes de gestió RDBMS (crear, deixar anar, alterar)\n"
+"* Règims d'enginyeria inversa d'una base de dades existent\n"
+"* funció SQL crida abstracció\n"
+"* Integració completa en el Marc PEAR\n"
+"* Documentació de l'API PHPDoc"
 
 #. leap/php-pear-MDB2_Driver_mysqli/summary
 msgid "MySQLi MDB2 driver"
-msgstr ""
+msgstr "Controlador MDB2 de MySQLi"
 
 #. leap/php-pear-MDB2_Driver_mysqli/description
 msgid "This is the MySQLi MDB2 driver."
-msgstr ""
+msgstr "Aquest és el controlador MySQLi MDB2."
 
 #. leap/php-pear-Mail_Mime/summary
 msgid "PHP classes to create MIME messages"
-msgstr ""
+msgstr "Classes PHP per crear missatges MIME"
 
 #. leap/php-pear-Mail_Mime/description
 msgid ""
@@ -107,10 +158,15 @@ msgid ""
 "messages. It supports non-ASCII characters in filenames, subjects, "
 "recipients, etc."
 msgstr ""
+"MailMime proporciona classes per tractar amb la creació i manipulació de "
+"missatges MIME. Permet crear missatges de correu electrònic que consisteixen "
+"en parts de text, parts HTML, imatges HTML en línia, adjunts i missatges "
+"adjunts (incrustats). Admet caràcters no ASCII en noms de fitxer, temes, "
+"destinataris, etc."
 
 #. leap/php-pear-Net_IDNA2/summary
 msgid "PHP library for Punycode encoding and decoding"
-msgstr ""
+msgstr "Biblioteca PHP per a la codificació i descodificació de Punycode"
 
 #. leap/php-pear-Net_IDNA2/description
 msgid ""
@@ -120,10 +176,15 @@ msgid ""
 "form and their encoded form as it will be used in the DNS (Domain Name "
 "System)."
 msgstr ""
+"El paquet proporciona una classe que permet convertir des de i a noms de "
+"domini internacionalitzats (RFC 3490). Es poden utilitzar amb diversos "
+"registres a tot el món per traduir entre la seva forma original (localitzada)"
+" i la seva forma codificada, ja que s'utilitzarà en el DNS (Domain Name "
+"System)."
 
 #. leap/php-pear-Net_LDAP2/summary
 msgid "Object oriented interface for searching and manipulating LDAP-entries"
-msgstr ""
+msgstr "Interfície orientada a objectes per cercar i manipular entrades LDAP"
 
 #. leap/php-pear-Net_LDAP2/description
 msgid ""
@@ -136,20 +197,31 @@ msgid ""
 "\n"
 "Net_LDAP2 layers itself on top of PHP's existing ldap extensions."
 msgstr ""
+"NetLDAP2 és el successor de NetLDAP, que és un clon de la interfície de "
+"Perls Net::LDAPobject als servidors de directori. Conté la majoria de les "
+"funcions de Net::LDAP, però també té algunes pròpies. Amb NetLDAP2 tens: * "
+"Una interfície senzilla orientada a objectes a connexions, cerca entrades i "
+"filtres.  * Suport per a tls i ldap v3.  * Simplement modificació, "
+"eliminació i creació d'entrades ldap.  * Suport per a la manipulació de "
+"l'esquema.\n"
+"\n"
+"NetLDAP2 es col·loca a sobre de les extensions ldap existents de PHP."
 
 #. leap/php-pear-Net_SMTP/summary
 msgid "An implementation of the SMTP protocol"
-msgstr ""
+msgstr "Una implementació del protocol SMTP"
 
 #. leap/php-pear-Net_SMTP/description
 msgid ""
 "Provides an implementation of the SMTP protocol using PEAR's Net_Socket "
 "class."
 msgstr ""
+"Proporciona una implementació del protocol SMTP utilitzant la classe "
+"NetSocket de PEAR."
 
 #. leap/php-pear-Net_Sieve/summary
 msgid "PHP module for talking to a sieve server"
-msgstr ""
+msgstr "Mòdul PHP per parlar amb un servidor de «sieve»"
 
 #. leap/php-pear-Net_Sieve/description
 msgid ""
@@ -157,10 +229,13 @@ msgid ""
 "protocol. It can be used to install and remove sieve scripts, mark them "
 "active etc."
 msgstr ""
+"Aquest paquet proporciona una API per parlar amb els servidors que "
+"implementen el protocol de gestió. Es pot utilitzar per instal·lar i "
+"eliminar scripts de «sieve», marcar-los actius, etc."
 
 #. leap/php-pear-Net_Socket/summary
 msgid "Network Socket Interface"
-msgstr ""
+msgstr "Interfície de sòcol de xarxa"
 
 #. leap/php-pear-Net_Socket/description
 msgid ""
@@ -169,10 +244,14 @@ msgid ""
 "block-wise, line-wise and special formats like network byte-order ip "
 "addresses)."
 msgstr ""
+"NetSocket és una interfície de classe per a sòcols TCP. Proporciona "
+"operacions de bloqueig i no bloqueig, amb diferents modes de lectura i "
+"escriptura (byte-wise, block-wise, line-wise i formats especials com adreces "
+"ip d'ordre de bytes de xarxa)."
 
 #. leap/php-pear-XML_Parser/summary
 msgid "XML parsing class based on PHP's bundled expat"
-msgstr ""
+msgstr "Classe d'anàlisi XML basada en l'expatriat empaquetat de PHP"
 
 #. leap/php-pear-XML_Parser/description
 msgid ""
@@ -189,12 +268,25 @@ msgid ""
 "object, so you do not have to extend XML_Parser anymore in order to parse a "
 "document with it."
 msgstr ""
+"Aquest és un analitzador XML basat en l'extensió xml integrada en PHP.\n"
+"\n"
+"Suporta dos modes bàsics de funcionament: \"func\" i \"event\". En el mode "
+"\"func\", buscarà una funció anomenada després de cada element ("
+"xmltagELEMENT per a les etiquetes d'inici i xmltagELEMENT per a les "
+"etiquetes finals), i en el mode \"event\" utilitza un conjunt de crides de "
+"retorn genèriques.\n"
+"\n"
+"Des de la versió 1.2.0 hi ha una nova classe XMLParserSimple que facilita "
+"l'anàlisi de la majoria de documents XML, proporcionant automàticament una "
+"pila per als elements. A més, ara és possible dividir l'analitzador de "
+"l'objecte del gestor, de manera que ja no heu d'estendre XMLParser per tal "
+"d'analitzar un document amb ell."
 
 #. leap/php7/summary
 #. leap/php7/php7-cli/summary
 #. leap/php7-test/summary
 msgid "Interpreter for the PHP scripting language version 7"
-msgstr ""
+msgstr "Intèrpret per al llenguatge PHP scripting versió 7"
 
 #. leap/php7/description
 #. leap/php8/description
@@ -206,10 +298,17 @@ msgid ""
 "installed in order to use PHP. Additionally, extension modules and server "
 "modules (e.g. for Apache) may be installed."
 msgstr ""
+"PHP és un llenguatge de script incrustat HTML del costat del servidor "
+"dissenyat principalment per al desenvolupament web, però també utilitzat com "
+"a llenguatge de programació de propòsit general.\n"
+"\n"
+"Aquest paquet conté els fitxers base per a tots els subpaquets i s'ha "
+"d'instal·lar per utilitzar PHP. A més, es poden instal·lar mòduls d'extensió "
+"i mòduls de servidor (p. ex. per a Apache)."
 
 #. leap/php7-APCu/summary
 msgid "APCu - APC User Cache"
-msgstr ""
+msgstr "APCu - Memòria cau d'usuari APC"
 
 #. leap/php7-APCu/description
 msgid ""
@@ -217,11 +316,14 @@ msgid ""
 "the deployment of Zend Optimizer+ as the primary solution to opcode caching "
 "in future versions of PHP."
 msgstr ""
+"APCu és userland caching: APC desposseït de memòria cau opcode en preparació "
+"per al desplegament de Zend Optimizer+ com la solució principal per a la "
+"memòria cau opcode en futures versions de PHP."
 
 #. leap/php7/php7-bcmath/summary
 #. leap/php8/php8-bcmath/summary
 msgid "\"Binary Calculator\" extension for PHP"
-msgstr ""
+msgstr "Extensió «Calculadora binària» per a PHP"
 
 #. leap/php7/php7-bcmath/description
 #. leap/php8/php8-bcmath/description
@@ -229,27 +331,29 @@ msgid ""
 "Binary Calculator which supports numbers of any size and precision, "
 "represented as strings."
 msgstr ""
+"Calculadora binària que admet nombres de qualsevol mida i precisió, "
+"representada com a cadenes."
 
 #. leap/php7/php7-bz2/summary
 #. leap/php8/php8-bz2/summary
 msgid "bzip2 codec support for PHP"
-msgstr ""
+msgstr "Implementació del còdec bzip2 per a PHP"
 
 #. leap/php7/php7-bz2/description
 #. leap/php8/php8-bz2/description
 msgid "PHP functions to read and write bzip2 (.bz2) compressed files."
-msgstr ""
+msgstr "PHP funciona per llegir i escriure fitxers comprimits bzip2 (.bz2)."
 
 #. leap/php7/php7-calendar/summary
 #. leap/php7-phalcon/summary
 #. leap/php7/php7-xsl/summary
 msgid "PHP7 Extension Module"
-msgstr ""
+msgstr "Mòdul d'extensió PHP7"
 
 #. leap/php7/php7-calendar/description
 #. leap/php8/php8-calendar/description
 msgid "PHP functions for converting between different calendar formats."
-msgstr ""
+msgstr "Funcions PHP per a la conversió entre diferents formats de calendari."
 
 #. leap/php7/php7-cli/description
 #. leap/php8/php8-cli/description
@@ -263,11 +367,20 @@ msgid ""
 "\n"
 "Additional documentation is available in package php-doc."
 msgstr ""
+"PHP és un llenguatge de script incrustat HTML del costat del servidor "
+"dissenyat principalment per al desenvolupament web, però també utilitzat com "
+"a llenguatge de programació de propòsit general.\n"
+"\n"
+"Aquest paquet conté la implementació estàndard de PHP, concretament Zend "
+"PHP. S'inclouen el binari de línia d'ordres PHP i el fitxer de configuració "
+"(php.ini).\n"
+"\n"
+"La documentació addicional està disponible al paquet php-doc."
 
 #. leap/php7/php7-ctype/summary
 #. leap/php8/php8-ctype/summary
 msgid "Character class extension for PHP"
-msgstr ""
+msgstr "Extensió de classe de caràcters per a PHP"
 
 #. leap/php7/php7-ctype/description
 #. leap/php8/php8-ctype/description
@@ -275,11 +388,13 @@ msgid ""
 "PHP functions for checking whether a character or string falls into a "
 "certain character class according to the current locale."
 msgstr ""
+"Funcions PHP per comprovar si un caràcter o una cadena cauen en una classe "
+"de caràcters determinada segons la configuració regional actual."
 
 #. leap/php7/php7-curl/summary
 #. leap/php8/php8-curl/summary
 msgid "libcurl integration for PHP"
-msgstr ""
+msgstr "Integració de la libcurl per al PHP"
 
 #. leap/php7/php7-curl/description
 #. leap/php8/php8-curl/description
@@ -287,11 +402,14 @@ msgid ""
 "PHP interface to libcurl that allows you to connect to and communicate with "
 "servers of many different types, using protocols of many different types."
 msgstr ""
+"Interfície PHP a libcurl que permet connectar-se i comunicar-se amb "
+"servidors de molts tipus diferents, utilitzant protocols de molts tipus "
+"diferents."
 
 #. leap/php7/php7-dba/summary
 #. leap/php8/php8-dba/summary
 msgid "Database abstraction layer for PHP"
-msgstr ""
+msgstr "Capa d'abstracció de base de dades per a PHP"
 
 #. leap/php7/php7-dba/description
 #. leap/php8/php8-dba/description
@@ -302,10 +420,15 @@ msgid ""
 "confused with IBM's DB2 software, which is supported through the ODBC "
 "functions.)"
 msgstr ""
+"Aquesta és una capa d'abstracció general per a diverses bases de dades "
+"basades en fitxers. Com a tal, la funcionalitat es limita a un subconjunt "
+"comú de característiques suportades per bases de dades modernes com la DB2 "
+"de Sleepycat Software. (Això no s'ha de confondre amb el programari DB2 "
+"d'IBM, que és compatible amb les funcions ODBC.)"
 
 #. leap/php7/php7-devel/summary
 msgid "PHP7 development files for C/C++ extensions"
-msgstr ""
+msgstr "Fitxers de desenvolupament PHP7 per a extensions C/C++"
 
 #. leap/php7/php7-devel/description
 #. leap/php8/php8-devel/description
@@ -315,21 +438,27 @@ msgid ""
 "\n"
 "This package contains the C headers to build PHP extensions."
 msgstr ""
+"PHP és un llenguatge de script incrustat HTML del costat del servidor "
+"dissenyat principalment per al desenvolupament web, però també utilitzat com "
+"a llenguatge de programació de propòsit general.\n"
+"\n"
+"Aquest paquet conté les capçaleres C per a construir extensions PHP."
 
 #. leap/php7/php7-dom/summary
 #. leap/php8/php8-dom/summary
 msgid "Document Object Model extension for PHP"
-msgstr ""
+msgstr "Extensió del model d'objecte de document per a PHP"
 
 #. leap/php7/php7-dom/description
 #. leap/php8/php8-dom/description
 msgid "This module adds Document Object Model (DOM) support."
 msgstr ""
+"Aquest mòdul afegeix la implementació del Model d'Objecte de Document (DOM)."
 
 #. leap/php7-embed/summary
 #. leap/php8-embed/summary
 msgid "Embedded SAPI Library"
-msgstr ""
+msgstr "Biblioteca SAPI incrustada"
 
 #. leap/php7-embed/description
 #. leap/php7-fastcgi/description
@@ -344,11 +473,16 @@ msgid ""
 "look at the example archive sites and some of the other resources available "
 "in the links section."
 msgstr ""
+"PHP és un llenguatge de script incrustat en HTML multiplataforma i amb "
+"servidor. Si ets completament nou en PHP i vols fer-te una idea de com "
+"funciona, fes una ullada al tutorial d'introducció. Un cop superats, podeu "
+"consultar els llocs d'arxiu d'exemple i alguns dels altres recursos "
+"disponibles a l'apartat d'enllaços."
 
 #. leap/php7/php7-enchant/summary
 #. leap/php8/php8-enchant/summary
 msgid "Spell checking extension for PHP"
-msgstr ""
+msgstr "Extensió de verificació ortogràfica per a PHP"
 
 #. leap/php7/php7-enchant/description
 #. leap/php8/php8-enchant/description
@@ -359,11 +493,16 @@ msgid ""
 "library. Everything should \"just work\" for any and every definition of "
 "\"just working.\""
 msgstr ""
+"Enchant és la vinculació PHP per a la biblioteca Enchant. Enchant s'intervé "
+"per proporcionar uniformitat i conformitat a sobre de totes les biblioteques "
+"ortogràfiques, i implementa certes característiques que poden mancar en "
+"qualsevol biblioteca proveïdor individual. Tot hauria de \"treballar\" per a "
+"qualsevol definició de \"treballar\"."
 
 #. leap/php7/php7-exif/summary
 #. leap/php8/php8-exif/summary
 msgid "EXIF metadata extensions for PHP"
-msgstr ""
+msgstr "Extensions de metadades EXIF per a PHP"
 
 #. leap/php7/php7-exif/description
 #. leap/php8/php8-exif/description
@@ -371,15 +510,18 @@ msgid ""
 "PHP functions for extracting EXIF (Exchangable Image File Format; metadata "
 "from images) information stored in headers of JPEG and TIFF images."
 msgstr ""
+"Funcions PHP per a extreure informació EXIF (Format de fitxer d'imatge "
+"extraïble; metadades de les imatges) emmagatzemades a les capçaleres de les "
+"imatges JPEG i TIFF."
 
 #. leap/php7-fastcgi/summary
 msgid "FastCGI PHP7 Module"
-msgstr ""
+msgstr "Mòdul PHP7 FastCGI"
 
 #. leap/php7/php7-fileinfo/summary
 #. leap/php8/php8-fileinfo/summary
 msgid "File identification extension for PHP"
-msgstr ""
+msgstr "Extensió d'identificació de fitxers per a PHP"
 
 #. leap/php7/php7-fileinfo/description
 #. leap/php8/php8-fileinfo/description
@@ -389,15 +531,19 @@ msgid ""
 "within the file. It uses (a bundled version of) libmagic to heuristically "
 "determine this."
 msgstr ""
+"Les funcions d'aquest mòdul intenten endevinar el tipus de contingut i la "
+"codificació d'un fitxer buscant certes seqüències de bytes màgics en "
+"posicions específiques dins del fitxer. Utilitza (una versió empaquetada de) "
+"libmagic per determinar-ho heurísticament."
 
 #. leap/php7-fpm/summary
 msgid "FastCGI Process Manager PHP7 Module"
-msgstr ""
+msgstr "Mòdul del gestor de processos FastCGI PHP7"
 
 #. leap/php7/php7-ftp/summary
 #. leap/php8/php8-ftp/summary
 msgid "FTP protocol support for PHP"
-msgstr ""
+msgstr "Implementació de protocol FTP per a PHP"
 
 #. leap/php7/php7-ftp/description
 #. leap/php8/php8-ftp/description
@@ -405,11 +551,13 @@ msgid ""
 "PHP functions for access to file servers speaking the File Transfer Protocol "
 "(FTP) as defined in RFC 959."
 msgstr ""
+"PHP funciona per accedir als servidors de fitxers que parlen del Protocol de "
+"transferència de fitxers (FTP) tal com es defineix a RFC 959."
 
 #. leap/php7/php7-gd/summary
 #. leap/php8/php8-gd/summary
 msgid "GD Graphics Library extension for PHP"
-msgstr ""
+msgstr "Extensió de la biblioteca GD Graphics per a PHP"
 
 #. leap/php7/php7-gd/description
 #. leap/php8/php8-gd/description
@@ -418,11 +566,14 @@ msgid ""
 "image formats, including GIF, PNG, JPEG, WBMP, and XPM. Even more "
 "convenient: PHP can output image streams directly to a browser."
 msgstr ""
+"PHP funciona per crear i manipular fitxers d'imatge en una varietat de "
+"formats d'imatge diferents, incloent GIF, PNG, JPEG, WBMP i XPM. Encara més "
+"convenient: PHP pot generar fluxos d'imatges directament a un navegador."
 
 #. leap/php7/php7-gettext/summary
 #. leap/php8/php8-gettext/summary
 msgid "Native language support for PHP"
-msgstr ""
+msgstr "Implementació de la llengua nativa per a PHP"
 
 #. leap/php7/php7-gettext/description
 #. leap/php8/php8-gettext/description
@@ -430,21 +581,25 @@ msgid ""
 "PHP functions that implement a Native Language Support (NLS) API which can "
 "be used to internationalize your PHP applications."
 msgstr ""
+"Funcions PHP que implementen una API de Suport a la Llengua Nativa (NLS) que "
+"es pot utilitzar per internacionalitzar les vostres aplicacions PHP."
 
 #. leap/php7-gmagick/summary
 msgid "Wrapper to the GraphicsMagick library"
-msgstr ""
+msgstr "Captura a la biblioteca GraphicsMagick"
 
 #. leap/php7-gmagick/description
 msgid ""
 "PHP extension to create, modify and obtain meta information of images using "
 "the GraphicsMagick API"
 msgstr ""
+"Extensió PHP per crear, modificar i obtenir metainformació d'imatges "
+"utilitzant l'API GraphicsMagick"
 
 #. leap/php7/php7-gmp/summary
 #. leap/php8/php8-gmp/summary
 msgid "Bignum extension for PHP"
-msgstr ""
+msgstr "Extensió Bignum per a PHP"
 
 #. leap/php7/php7-gmp/description
 #. leap/php8/php8-gmp/description
@@ -452,21 +607,25 @@ msgid ""
 "PHP functions for work with arbitrary-length integers using the GNU MP "
 "library."
 msgstr ""
+"PHP funciona per treballar amb enters de longitud arbitrària utilitzant la "
+"biblioteca GNU MP."
 
 #. leap/php7-ice/summary
 msgid "PHP framework delivered as C extension"
-msgstr ""
+msgstr "Marc PHP lliurat com a extensió C"
 
 #. leap/php7-ice/description
 msgid ""
 "ICE is a PHP framework delivered as C extension. You don't need learn or use "
 "the C language, since the functionality is exposed as PHP classes."
 msgstr ""
+"L'ICE és un marc PHP lliurat com a extensió C. No cal aprendre ni utilitzar "
+"el llenguatge C, ja que la funcionalitat s'exposa com a classes PHP."
 
 #. leap/php7/php7-iconv/summary
 #. leap/php8/php8-iconv/summary
 msgid "Character set conversion functions for PHP"
-msgstr ""
+msgstr "Funcions de conversió de conjunts de caràcters per a PHP"
 
 #. leap/php7/php7-iconv/description
 #. leap/php8/php8-iconv/description
@@ -477,21 +636,28 @@ msgid ""
 "set. Supported character sets depend on the iconv implementation of your "
 "system."
 msgstr ""
+"Aquest mòdul conté una interfície a la instal·lació de conversió de conjunts "
+"de caràcters iconv. Amb aquest mòdul, una cadena representada per un joc de "
+"caràcters local es pot convertir en un altre joc de caràcters, que pot ser "
+"el joc de caràcters Unicode. Els jocs de caràcters admesos depenen de la "
+"implementació iconv del vostre sistema."
 
 #. leap/php7-imagick/summary
 msgid "Wrapper to the ImageMagick library"
-msgstr ""
+msgstr "Captura a la biblioteca ImageMagick"
 
 #. leap/php7-imagick/description
 msgid ""
 "PHP extension to create, modify and obtain meta information of images using "
 "the ImageMagick API"
 msgstr ""
+"Extensió PHP per crear, modificar i obtenir metainformació d'imatges "
+"utilitzant l'API ImageMagick"
 
 #. leap/php7/php7-intl/summary
 #. leap/php8/php8-intl/summary
 msgid "ICU integration for PHP"
-msgstr ""
+msgstr "Integració ICU per a PHP"
 
 #. leap/php7/php7-intl/description
 #. leap/php8/php8-intl/description
@@ -501,30 +667,36 @@ msgid ""
 "conformant collation as well as date, time, number and currency formatting "
 "in their scripts."
 msgstr ""
+"L'extensió d'internacionalització (intl) és un embolcall per a la biblioteca "
+"de l'UCI, que permet als programadors de PHP realitzar la col·lació conforme "
+"amb UCA (algorisme de col·lecció d'Unicode), així com la data, l'hora, el "
+"nombre i el format de moneda en els seus scripts."
 
 #. leap/php7/php7-json/summary
 msgid "JSON (de)serializer functions for PHP"
-msgstr ""
+msgstr "Funcions JSON (de)serialitzadores per a PHP"
 
 #. leap/php7/php7-json/description
 msgid ""
 "This extension implements the JavaScript Object Notation (JSON) data-"
 "interchange format."
 msgstr ""
+"Aquesta extensió implementa el format d'intercanvi de dades JavaScript "
+"Object Notation (JSON)."
 
 #. leap/php7/php7-ldap/summary
 #. leap/php8/php8-ldap/summary
 msgid "LDAP protocol support for PHP"
-msgstr ""
+msgstr "Implementació de protocol LDAP per a PHP"
 
 #. leap/php7/php7-ldap/description
 #. leap/php8/php8-ldap/description
 msgid "PHP interface to the Lightweight Directory Access Protocol (LDAP)."
-msgstr ""
+msgstr "Interfície PHP al Lightweight Directory Access Protocol (LDAP)."
 
 #. leap/php7-libphutil/summary
 msgid "Phabrcator PHP utility classes"
-msgstr ""
+msgstr "Classes d'utilitat PHP del Phabrcator"
 
 #. leap/php7-libphutil/description
 msgid ""
@@ -545,29 +717,49 @@ msgid ""
 "* Library System: an introspectable, inventoried system for organizing PHP "
 "code   and managing dependencies, supported by static analysis."
 msgstr ""
+"libphutil és una col·lecció de classes d'utilitat i funcions per a PHP. És "
+"utilitzat per Phabricator i Arcanist.\n"
+"\n"
+"Alguns dels components principals de la libphutil són:\n"
+"* Utilitats bàsiques: una col·lecció de funcions útils com ipull() que "
+"simplifiquen la manipulació de dades comunes;\n"
+"* Sistema de fitxers: classes com Sistema de fitxers que proporcionen una "
+"API estricta per a l'accés al sistema de fitxers i llancen excepcions en cas "
+"de fallada, facilitant l'escriptura de codi robust que interactua amb els "
+"fitxers;\n"
+"* Execució d'ordres: libphutil proporciona una potent primitiva d'ordres del "
+"sistema a ExecFuture que fa molt més fàcil escriure scripts de línia "
+"d'ordres que executen ordres del sistema (vegeu Execució d'ordres);\n"
+"* xsprintf(): permet definir funcions d'estil sprintf() que utilitzen "
+"conversions personalitzades; i\n"
+"* Library System: un sistema introspectable i inventariat per a "
+"l'organització del codi PHP i la gestió de les dependències, suportat per "
+"l'anàlisi estàtica."
 
 #. leap/php7-lzf/summary
 msgid "LZF compression"
-msgstr ""
+msgstr "Compressió LZF"
 
 #. leap/php7-lzf/description
 msgid "This package handles LZF de/compression."
-msgstr ""
+msgstr "Aquest paquet gestiona la descompressió LZF."
 
 #. leap/php7-maxminddb/summary
 msgid "PHP extension providing access to maxminddb databases"
-msgstr ""
+msgstr "Extensió PHP que proporciona accés a bases de dades maxminddb"
 
 #. leap/php7-maxminddb/description
 msgid ""
 "This extension provides access to maxminddb databases and is a drop-in "
 "replacement for MaxMind\\Db\\Reader."
 msgstr ""
+"Aquesta extensió proporciona accés a les bases de dades maxminddb i és un "
+"reemplaçament per a MaxMind\\Db\\Reader."
 
 #. leap/php7/php7-mbstring/summary
 #. leap/php8/php8-mbstring/summary
 msgid "Multibyte string functions for PHP"
-msgstr ""
+msgstr "Funcions de cadena multibyte per a PHP"
 
 #. leap/php7/php7-mbstring/description
 #. leap/php8/php8-mbstring/description
@@ -578,41 +770,48 @@ msgid ""
 "encodings such as UTF-8 and UCS-2 and many single-byte encodings for "
 "convenience."
 msgstr ""
+"mbstring proporciona funcions de cadena específiques multibyte que ajuden a "
+"tractar amb codificacions multibyte en PHP. El «mbstring» gestiona la "
+"conversió de codificació de caràcters entre els parells de codificació "
+"possibles. mbstring maneja codificacions basades en Unicode com UTF-8 i UCS-"
+"2 i moltes codificacions d'un sol byte per conveniència."
 
 #. leap/php7-memcached/summary
 msgid "PHP MemcacheD client Extension"
-msgstr ""
+msgstr "Extensió del client PHP MemcacheD"
 
 #. leap/php7-memcached/description
 msgid ""
 "This extension uses libmemcached library to provide API for communicating "
 "with memcached servers."
 msgstr ""
+"Aquesta extensió utilitza la biblioteca libmemcached per proporcionar API "
+"per comunicar-se amb servidors memcached."
 
 #. leap/php7/php7-mysql/summary
 #. leap/php8/php8-mysql/summary
 msgid "MySQL database client for PHP"
-msgstr ""
+msgstr "Client de base de dades MySQL per a PHP"
 
 #. leap/php7/php7-mysql/description
 #. leap/php8/php8-mysql/description
 msgid "PHP functions for access to MySQL database servers."
-msgstr ""
+msgstr "Funcions PHP per a l'accés a servidors de bases de dades MySQL."
 
 #. leap/php7/php7-odbc/summary
 #. leap/php8/php8-odbc/summary
 msgid "ODBC extension for PHP"
-msgstr ""
+msgstr "Extensió ODBC per a PHP"
 
 #. leap/php7/php7-odbc/description
 #. leap/php8/php8-odbc/description
 msgid "This module adds Open Database Connectivity (ODBC) support."
-msgstr ""
+msgstr "Aquest mòdul afegeix el suport Open Database Connectivity (ODBC)."
 
 #. leap/php7/php7-opcache/summary
 #. leap/php8/php8-opcache/summary
 msgid "Opcode cache extension for PHP"
-msgstr ""
+msgstr "Extensió de la memòria cau d'opcode per a PHP"
 
 #. leap/php7/php7-opcache/description
 #. leap/php8/php8-opcache/description
@@ -621,11 +820,14 @@ msgid ""
 "shared memory, thereby removing the need for PHP to load and parse scripts "
 "on each request."
 msgstr ""
+"OPcache millora el rendiment de PHP mitjançant l'emmagatzematge de bytecode "
+"de script precompilat en memòria compartida, eliminant així la necessitat de "
+"PHP per carregar i analitzar scripts en cada sol·licitud."
 
 #. leap/php7/php7-openssl/summary
 #. leap/php8/php8-openssl/summary
 msgid "OpenSSL integration for PHP"
-msgstr ""
+msgstr "Integració OpenSSL per a PHP"
 
 #. leap/php7/php7-openssl/description
 #. leap/php8/php8-openssl/description
@@ -634,11 +836,15 @@ msgid ""
 "asymmetric encryption and decryption, PBKDF2, PKCS#7, PKCS#12, X.509 and "
 "other crypto operations. It also provides an implementation of TLS streams."
 msgstr ""
+"Aquesta extensió enllaça funcions de la biblioteca OpenSSL per a xifrar i "
+"desxifrar simètrics i asimètrics, PBKDF2, PKCS77, PKCS,12, X.509 i altres "
+"operacions de criptografia. També proporciona una implementació de fluxos "
+"TLS."
 
 #. leap/php7/php7-pcntl/summary
 #. leap/php8/php8-pcntl/summary
 msgid "Process Control extension for PHP"
-msgstr ""
+msgstr "Extensió de control de processos per a PHP"
 
 #. leap/php7/php7-pcntl/description
 #. leap/php8/php8-pcntl/description
@@ -647,11 +853,14 @@ msgid ""
 "creation, program execution, signal handling and process termination (fork, "
 "waitpid, signal, WIF flags, etc.)"
 msgstr ""
+"El suport de Process Control en PHP implementa l'estil Unix de creació de "
+"processos, execució de programes, manipulació de senyals i terminació de "
+"processos (forca, waitpid, senyal, banderes WIF, etc.)"
 
 #. leap/php7/php7-pdo/summary
 #. leap/php8/php8-pdo/summary
 msgid "PHP Data Objects extension for PHP"
-msgstr ""
+msgstr "Extensió PHP Data Objects per a PHP"
 
 #. leap/php7/php7-pdo/description
 #. leap/php8/php8-pdo/description
@@ -666,10 +875,22 @@ msgid ""
 "data. PDO does not provide a database abstraction; it does not rewrite SQL "
 "or emulate missing features."
 msgstr ""
+"L'extensió PHP Data Objects (PDO) defineix una interfície per accedir a "
+"bases de dades en PHP. Cada controlador de base de dades que implementa la "
+"interfície PDO pot exposar les característiques específiques de la base de "
+"dades com a funcions d'extensió regular. Tingueu en compte que utilitzeu un "
+"controlador PDO específic de base de dades per accedir a un servidor de base "
+"de dades.\n"
+"\n"
+"PDO proporciona una capa d'abstracció d'accés a dades, el que significa que, "
+"independentment de la base de dades utilitzada, utilitzeu les mateixes "
+"funcions per emetre consultes i obtenir dades. PDO no proporciona una "
+"abstracció de base de dades; no reescriu SQL ni emula característiques que "
+"manquen."
 
 #. leap/php7-pear/summary
 msgid "PHP Extension and Application Repository"
-msgstr ""
+msgstr "Extensió PHP i repositori d'aplicacions"
 
 #. leap/php7-pear/description
 msgid ""
@@ -679,10 +900,15 @@ msgid ""
 "\n"
 "See https://pear.php.net/manual for more details."
 msgstr ""
+"PEAR és un repositori de codi per a extensions PHP i codi de biblioteca PHP "
+"similar al CTAN de TeX i CPAN de Perl. Aquest paquet proporciona un accés al "
+"repositori.\n"
+"\n"
+"Consulteu https://pear.php.net/manual per a més detalls."
 
 #. leap/php7-pear/php7-pecl/summary
 msgid "PHP Extension Community Library"
-msgstr ""
+msgstr "Biblioteca comunitària d'extensió PHP"
 
 #. leap/php7-pear/php7-pecl/description
 msgid ""
@@ -692,11 +918,16 @@ msgid ""
 "\n"
 "See https://pecl.php.net for more details."
 msgstr ""
+"PECL és un repositori d'extensions PHP, que proporciona un directori de "
+"totes les extensions conegudes i instal·lacions d'allotjament per a la "
+"descàrrega i el desenvolupament d'extensions PHP.\n"
+"\n"
+"Consulteu https://pecl.php.net per a més detalls."
 
 #. leap/php7/php7-pgsql/summary
 #. leap/php8/php8-pgsql/summary
 msgid "PostgreSQL database client for PHP"
-msgstr ""
+msgstr "Client de base de dades PostgreSQL per a PHP"
 
 #. leap/php7/php7-pgsql/description
 #. leap/php8/php8-pgsql/description
@@ -704,6 +935,8 @@ msgid ""
 "PHP functions for access to PostgreSQL database servers. It includes both "
 "traditional pgsql and pdo_pgsql drivers."
 msgstr ""
+"Funcions PHP per a l'accés a servidors de bases de dades PostgreSQL. Inclou "
+"tant pgsql com pdopgsql tradicionals."
 
 #. leap/php7-phalcon/description
 msgid ""
@@ -714,11 +947,17 @@ msgid ""
 "dynamic and static typed and it supports just the features we need to create "
 "and maintain a project like Phalcon."
 msgstr ""
+"Phalcon és un framework de codi obert i de pila completa per a PHP 5 escrit "
+"com una extensió C, optimitzat per a un alt rendiment. No cal aprendre ni "
+"utilitzar el llenguatge C, ja que la funcionalitat s'exposa com a classes "
+"PHP llestes perquè puguis utilitzar. Zephir és un llenguatge d'alt nivell, "
+"alguna cosa entre C i PHP. És dinàmic i estàtic i suporta només les "
+"característiques que necessitem per crear i mantenir un projecte com Phalcon."
 
 #. leap/php7/php7-phar/summary
 #. leap/php8/php8-phar/summary
 msgid "PHP Archive extension for PHP"
-msgstr ""
+msgstr "Extensió PHP Archive per a PHP"
 
 #. leap/php7/php7-phar/description
 #. leap/php8/php8-phar/description
@@ -732,21 +971,32 @@ msgid ""
 "class, much as PDO provides a unified interface for accessing different "
 "databases. Phar also can convert between tar, zip and phar file formats."
 msgstr ""
+"L'extensió phar proporciona una manera de posar aplicacions PHP senceres en "
+"un sol fitxer anomenat \"phar\" (PHP Archive) per a la distribució i la "
+"instal·lació.\n"
+"\n"
+"A més, l'extensió phar també proporciona un mètode d'abstracció de format de "
+"fitxer per crear i manipular fitxers tar i zip a través de la classe "
+"PharData, de la mateixa manera que PDO proporciona una interfície unificada "
+"per accedir a diferents bases de dades. Phar també pot convertir entre "
+"formats de fitxer tar, zip i phar."
 
 #. leap/php7-phpunit8/summary
 msgid "Testing framework for PHP"
-msgstr ""
+msgstr "Marc de proves per a PHP"
 
 #. leap/php7-phpunit8/description
 msgid ""
 "PHPUnit is a programmer-oriented testing framework for PHP. It is an "
 "instance of the xUnit architecture for unit testing frameworks."
 msgstr ""
+"PHPUnit és un marc de proves orientat al programador per a PHP. És una "
+"instància de l'arquitectura xUnit per als marcs de proves d'unitats."
 
 #. leap/php7/php7-posix/summary
 #. leap/php8/php8-posix/summary
 msgid "POSIX functions for PHP"
-msgstr ""
+msgstr "Funcions POSIX per a PHP"
 
 #. leap/php7/php7-posix/description
 #. leap/php8/php8-posix/description
@@ -755,10 +1005,13 @@ msgid ""
 "1003.1 (POSIX.1) standards document which are not accessible through other "
 "means."
 msgstr ""
+"Aquest mòdul conté una interfície d'aquestes funcions definides en el "
+"document d'estàndards IEEE 1003.1 (POSIX.1) que no són accessibles a través "
+"d'altres mitjans."
 
 #. leap/php7/php7-readline/summary
 msgid "PHP7 readline extension"
-msgstr ""
+msgstr "Extensió de línia de lectura PHP7"
 
 #. leap/php7/php7-readline/description
 #. leap/php8/php8-readline/description
@@ -766,39 +1019,47 @@ msgid ""
 "PHP interface to libedit, which provides editable command line as well as "
 "PHP interactive mode (php -a)."
 msgstr ""
+"Interfície PHP a libedit, que proporciona una línia d'ordres editable, així "
+"com el mode interactiu PHP (php -a)."
 
 #. leap/php7-redis/summary
 msgid "API for communicating with Redis servers"
-msgstr ""
+msgstr "API per comunicar-se amb servidors Redis"
 
 #. leap/php7-redis/description
 msgid "This extension provides an API for communicating with Redis servers"
 msgstr ""
+"Aquesta extensió proporciona una API per comunicar-se amb els servidors de "
+"Redis"
 
 #. leap/php7/php7-shmop/summary
 #. leap/php8/php8-shmop/summary
 msgid "Alternate, low-level shared memory implementation for PHP"
 msgstr ""
+"Implementació de memòria compartida alternativa i de baix nivell per a PHP"
 
 #. leap/php7/php7-shmop/description
 #. leap/php8/php8-shmop/description
 msgid "An extension created as an alternative to the sysvmsg module."
-msgstr ""
+msgstr "Una extensió creada com a alternativa al mòdul sysvmsg."
 
 #. leap/php7-smbclient/summary
 msgid "A PHP wrapper for libsmbclient"
-msgstr ""
+msgstr "Un embolcall PHP per a libsmbclient"
 
 #. leap/php7-smbclient/description
 msgid ""
 "smbclient is a PHP extension that uses Samba's libsmbclient library to "
 "provide Samba related functions and 'smb' streams to PHP programs."
 msgstr ""
+"smbclient és una extensió PHP que utilitza la biblioteca libsmbclient de "
+"Samba per proporcionar funcions relacionades amb Samba i fluxos 'smb' als "
+"programes PHP."
 
 #. leap/php7/php7-snmp/summary
 #. leap/php8/php8-snmp/summary
 msgid "SNMP extension for PHP"
-msgstr ""
+msgstr "Extensió SNMP per a PHP"
 
 #. leap/php7/php7-snmp/description
 #. leap/php8/php8-snmp/description
@@ -810,11 +1071,18 @@ msgid ""
 "concepts are the same and the PHP functions change their behavior depending "
 "on the Net-SNMP configuration files and environment variables."
 msgstr ""
+"L'extensió SNMP proporciona un conjunt d'eines per gestionar dispositius "
+"remots a través del protocol de gestió de xarxes simple.\n"
+"\n"
+"Com que és un embolcall al voltant de la biblioteca subjacent Net-SNMP, tots "
+"els conceptes bàsics són els mateixos i les funcions PHP canvien el seu "
+"comportament depenent dels fitxers de configuració Net-SNMP i les variables "
+"d'entorn."
 
 #. leap/php7/php7-soap/summary
 #. leap/php8/php8-soap/summary
 msgid "SOAP/WSDL extension module for PHP"
-msgstr ""
+msgstr "Mòdul d'extensió SOAP/WSDL per a PHP"
 
 #. leap/php7/php7-soap/description
 #. leap/php8/php8-soap/description
@@ -824,11 +1092,16 @@ msgid ""
 "SOAP extension can be used to write SOAP Servers and Clients. It supports "
 "subsets of SOAP 1.1, SOAP 1.2 and WSDL 1.1 specifications."
 msgstr ""
+"Aquest mòdul proporciona suport SOAP.\n"
+"\n"
+"L'extensió SOAP es pot utilitzar per escriure servidors i clients SOAP. És "
+"compatible amb subconjunts de les especificacions SOAP 1.1, SOAP 1.2 i WSDL 1"
+".1."
 
 #. leap/php7/php7-sockets/summary
 #. leap/php8/php8-sockets/summary
 msgid "Berkeley sockets API for PHP"
-msgstr ""
+msgstr "API de sòcols de Berkeley per a PHP"
 
 #. leap/php7/php7-sockets/description
 #. leap/php8/php8-sockets/description
@@ -837,11 +1110,15 @@ msgid ""
 "communication functions based on the BSD sockets API, providing the "
 "possibility to act as a socket server as well as a client."
 msgstr ""
+"L'extensió del sòcol implementa una interfície de baix nivell per a les "
+"funcions de comunicació del sòcol basades en l'API de sòcols BSD, "
+"proporcionant la possibilitat d'actuar com a servidor de sòcol i com a "
+"client."
 
 #. leap/php7/php7-sodium/summary
 #. leap/php8/php8-sodium/summary
 msgid "Cryptographic Extension Based on Libsodium"
-msgstr ""
+msgstr "Extensió criptogràfica basada en el libsodi"
 
 #. leap/php7/php7-sodium/description
 #. leap/php8/php8-sodium/description
@@ -849,11 +1126,13 @@ msgid ""
 "PHP binding to libsodium software library for encryption, decryption, "
 "signatures, password hashing and more."
 msgstr ""
+"Vinculació de PHP a la biblioteca de programari libsodium per al xifratge, "
+"desxifratge, signatures, hashing de contrasenya i molt més."
 
 #. leap/php7/php7-sqlite/summary
 #. leap/php8/php8-sqlite/summary
 msgid "SQLite database client for PHP"
-msgstr ""
+msgstr "Client de base de dades SQLite per a PHP"
 
 #. leap/php7/php7-sqlite/description
 #. leap/php8/php8-sqlite/description
@@ -872,45 +1151,59 @@ msgid ""
 "This package includes sqlite and pdo_sqlite modules for sqlite version 2 and "
 "3 respectively."
 msgstr ""
+"Aquesta és una extensió per al motor de base de dades SQL incrustable SQL. "
+"https://www.sqlite.org\n"
+"\n"
+"SQLite és una biblioteca C que implementa un motor de base de dades SQL "
+"incrustable. Els programes que enllacen amb la biblioteca SQLite poden tenir "
+"accés a la base de dades SQL sense executar un procés RDBMS separat.\n"
+"\n"
+"SQLite no és una biblioteca de client utilitzada per connectar-se a un "
+"servidor de base de dades gran. SQLite és el servidor. La biblioteca SQLite "
+"llegeix i escriu directament des dels fitxers de la base de dades en el disc."
+"\n"
+"\n"
+"Aquest paquet inclou mòduls sqlite i pdosqlite per a la versió 2 i 3 de "
+"sqlite, respectivament."
 
 #. leap/php7/php7-sysvmsg/summary
 #. leap/php8/php8-sysvmsg/summary
 msgid "SysV Message Queue support for PHP"
-msgstr ""
+msgstr "Implementació de la cua de missatges SysV per a PHP"
 
 #. leap/php7/php7-sysvmsg/description
 #. leap/php8/php8-sysvmsg/description
 msgid "This module provides System V Message Queue support."
-msgstr ""
+msgstr "Aquest mòdul proporciona suport per a la cua de missatges System V."
 
 #. leap/php7/php7-sysvsem/summary
 #. leap/php8/php8-sysvsem/summary
 msgid "SysV Semaphore support for PHP"
-msgstr ""
+msgstr "Suport SysV Semaphore per a PHP"
 
 #. leap/php7/php7-sysvsem/description
 #. leap/php8/php8-sysvsem/description
 msgid "PHP interface for System V semaphores."
-msgstr ""
+msgstr "Interfície PHP per a semàfors System V."
 
 #. leap/php7/php7-sysvshm/summary
 #. leap/php8/php8-sysvshm/summary
 msgid "SysV Shared Memory support for PHP"
-msgstr ""
+msgstr "Suport de memòria compartida SysV per a PHP"
 
 #. leap/php7/php7-sysvshm/description
 #. leap/php8/php8-sysvshm/description
 msgid "PHP interface for System V shared memory."
-msgstr ""
+msgstr "Interfície PHP per a la memòria compartida del System V."
 
 #. leap/php7-test/description
 #. leap/php8-test/description
 msgid "Run php upstream testsuite."
-msgstr ""
+msgstr "Executa el testuite de php upstream."
 
 #. leap/php7/php7-tidy/summary
 msgid "PHP7 binding for the Tidy HTML cleaner"
-msgstr ""
+msgstr "Vinculació PHP7 per al netejador d'HTML Tidy"
 
 #. leap/php7/php7-tidy/description
 #. leap/php8/php8-tidy/description
@@ -920,11 +1213,15 @@ msgid ""
 "documents -- including ones with embedded scripting languages such as PHP or "
 "ASP within them using OO constructs."
 msgstr ""
+"Tidy és una extensió basada en Libtidy (http://tidy.sourceforge.net) i "
+"permet a un desenvolupador PHP netejar, reparar i travessar documents HTML, "
+"XHTML i XML, incloent-hi aquells amb llenguatges de script incrustats com "
+"PHP o ASP utilitzant construccions OO."
 
 #. leap/php7/php7-tokenizer/summary
 #. leap/php8/php8-tokenizer/summary
 msgid "Extension module to access Zend Engine's PHP tokenizer"
-msgstr ""
+msgstr "Mòdul d'extensió per accedir al tokenitzador PHP de Zend Engine"
 
 #. leap/php7/php7-tokenizer/description
 #. leap/php8/php8-tokenizer/description
@@ -934,20 +1231,26 @@ msgid ""
 "analyzing or modification tools without having to deal with the language "
 "specification at the lexical level."
 msgstr ""
+"Les funcions de tokenizer proporcionen una interfície al tokenizer PHP "
+"incrustat al motor Zend. Utilitzant aquestes funcions podeu escriure la "
+"vostra pròpia font de PHP analitzant o modificant eines sense haver de "
+"tractar amb l'especificació del llenguatge a nivell lèxic."
 
 #. leap/php7-uuid/summary
 msgid "PHP UUID support functions"
-msgstr ""
+msgstr "Funcions de suport UUID de PHP"
 
 #. leap/php7-uuid/description
 msgid ""
 " This extension provides functions to generate and analyse universally "
 "unique identifiers (UUIDs)."
 msgstr ""
+" Aquesta extensió proporciona funcions per generar i analitzar "
+"identificadors universalment únics (UUIDs)."
 
 #. leap/php7-xdebug/summary
 msgid "Extended PHP debugger"
-msgstr ""
+msgstr "Depurador PHP ampliat"
 
 #. leap/php7-xdebug/description
 msgid ""
@@ -964,11 +1267,24 @@ msgid ""
 "  * profiling information for PHP scripts   * code coverage analysis   * "
 "capabilities to debug your scripts interactively with a debug client"
 msgstr ""
+"L'extensió Xdebug ajuda a depurar scripts proporcionant informació de "
+"depuració com:\n"
+"\n"
+"  * traces de pila i funció en missatges d'error amb: o visualització de "
+"paràmetres complets per a funcions definides per l'usuari o nom de funció, "
+"nom de fitxer i indicacions de línia o suport per a funcions de membre * "
+"assignació de memòria * protecció per a recursions infinites\n"
+"\n"
+"Xdebug també proporciona:\n"
+"\n"
+"  * informació de perfil per a scripts PHP * anàlisi de cobertura de codi * "
+"capacitats per a depurar els vostres scripts interactivament amb un client "
+"de depuració"
 
 #. leap/php7/php7-xmlreader/summary
 #. leap/php8/php8-xmlreader/summary
 msgid "Streaming XML reader extension for PHP"
-msgstr ""
+msgstr "Extensió lectora XML Streaming per a PHP"
 
 #. leap/php7/php7-xmlreader/description
 #. leap/php8/php8-xmlreader/description
@@ -976,19 +1292,22 @@ msgid ""
 "The XMLReader extension is an XML Pull parser. The reader acts as a cursor "
 "going forward on the document stream and stopping at each node on the way."
 msgstr ""
+"L'extensió XMLReader és un analitzador XML Pull. El lector actua com un "
+"cursor que avança sobre el flux del document i s'atura a cada node en el "
+"camí."
 
 #. leap/php7/php7-xmlrpc/summary
 msgid "XML RPC support for PHP"
-msgstr ""
+msgstr "Implementació XML RPC per a PHP"
 
 #. leap/php7/php7-xmlrpc/description
 msgid "This module adds XMLRPC-EPI support."
-msgstr ""
+msgstr "Aquest mòdul afegeix el suport XMLRPC-EPI."
 
 #. leap/php7/php7-xmlwriter/summary
 #. leap/php8/php8-xmlwriter/summary
 msgid "Streaming-based XML writer extension for PHP"
-msgstr ""
+msgstr "Extensió d'escriptura XML basada en Streaming per a PHP"
 
 #. leap/php7/php7-xmlwriter/description
 #. leap/php8/php8-xmlwriter/description
@@ -997,6 +1316,9 @@ msgid ""
 "a non-cached, forward-only means of generating streams or files containing "
 "XML data."
 msgstr ""
+"XMLWriter embolcalla l'API xmlWriter de libxml. Representa un escriptor que "
+"proporciona un mitjà de generació de fluxos o fitxers que contenen dades XML "
+"que no estan encastats i només cap endavant."
 
 #. leap/php7/php7-xsl/description
 #. leap/php8/php8-xsl/description
@@ -1004,11 +1326,13 @@ msgid ""
 "PHP's XSL extension implements the XSL (Extensible Stylesheet Language) "
 "standard, performing XSLT transformations using the libxslt library"
 msgstr ""
+"L'extensió XSL de PHP implementa l'estàndard XSL (Extensible Stylesheet "
+"Language), realitzant transformacions XSLT utilitzant la biblioteca libxslt"
 
 #. leap/php7/php7-zip/summary
 #. leap/php8/php8-zip/summary
 msgid "ZIP archive support for PHP"
-msgstr ""
+msgstr "Suport d'arxiu ZIP per a PHP"
 
 #. leap/php7/php7-zip/description
 #. leap/php8/php8-zip/description
@@ -1016,11 +1340,13 @@ msgid ""
 "This extension allows to transparently read or write ZIP compressed archives "
 "and the files inside them."
 msgstr ""
+"Aquesta extensió permet llegir o escriure arxius comprimits ZIP de manera "
+"transparent i els fitxers que hi ha dins."
 
 #. leap/php7/php7-zlib/summary
 #. leap/php8/php8-zlib/summary
 msgid "Zlib compression support for PHP"
-msgstr ""
+msgstr "Implementació de compressió Zlib per a PHP"
 
 #. leap/php7/php7-zlib/description
 #. leap/php8/php8-zlib/description
@@ -1029,41 +1355,45 @@ msgid ""
 "files, through versions of most of the filesystem functions which work with "
 "gzip-compressed files (and uncompressed files, too, but not with sockets)."
 msgstr ""
+"Aquest mòdul permet llegir i escriure fitxers comprimits gzip (.gz) de "
+"manera transparent, a través de versions de la majoria de les funcions del "
+"sistema de fitxers que funcionen amb fitxers comprimits gzip (i fitxers "
+"sense comprimir, també, però no amb sòcols)."
 
 #. leap/php8/summary
 #. leap/php8/php8-cli/summary
 #. leap/php8-test/summary
 msgid "Interpreter for the PHP scripting language version 8"
-msgstr ""
+msgstr "Intèrpret per al llenguatge PHP scripting versió 8"
 
 #. leap/php8/php8-calendar/summary
 #. leap/php8/php8-xsl/summary
 msgid "PHP8 Extension Module"
-msgstr ""
+msgstr "Mòdul d'extensió PHP8"
 
 #. leap/php8/php8-devel/summary
 msgid "PHP8 development files for C/C++ extensions"
-msgstr ""
+msgstr "Fitxers de desenvolupament PHP8 per a extensions C/C++"
 
 #. leap/php8-fastcgi/summary
 msgid "FastCGI PHP8 Module"
-msgstr ""
+msgstr "Mòdul PHP8 FastCGI"
 
 #. leap/php8-fpm/summary
 msgid "FastCGI Process Manager PHP8 Module"
-msgstr ""
+msgstr "Mòdul PHP8 del gestor de processos FastCGI"
 
 #. leap/php8/php8-readline/summary
 msgid "PHP8 readline extension"
-msgstr ""
+msgstr "Extensió de línia de lectura PHP8"
 
 #. leap/php8/php8-tidy/summary
 msgid "PHP8 binding for the Tidy HTML cleaner"
-msgstr ""
+msgstr "Vinculació PHP8 per al netejador d'HTML Tidy"
 
 #. leap/phpMyAdmin/summary
 msgid "Administration of MySQL over the web"
-msgstr ""
+msgstr "Administració de MySQL a través de la web"
 
 #. leap/phpMyAdmin/description
 msgid ""
@@ -1094,22 +1424,43 @@ msgid ""
 "1.17)   * communicate in 57 different languages   * synchronize two "
 "databases residing on the same as well as remote servers     (see FAQ 9.1)"
 msgstr ""
+"phpMyAdmin pot gestionar un servidor MySQL complet (necessita un superusuari)"
+" així com una única base de dades. Per aconseguir aquest últim, necessitareu "
+"un usuari MySQL que pugui llegir/escriure correctament només la base de "
+"dades desitjada. Depèn de tu buscar la part adequada en el manual de MySQL.\n"
+"\n"
+"Actualment phpMyAdmin pot:\n"
+"\n"
+"  * navegar i deixar anar bases de dades, taules, vistes, camps i índexs * "
+"crear, copiar, canviar de nom i alterar bases de dades, taules, camps i "
+"índexs * manteniment servidor, bases de dades i taules, amb propostes a la "
+"configuració del servidor * executar, editar i marcar fitxers de text en "
+"taules * exportar dades en formats CSV, XML, PDF i L1AT[E]X * importar dades "
+"i estructures de MySQL de fulls de càlcul de Microsoft Excel i OpenDocument, "
+"així com fitxers XML, CSV i SQL * gestionar múltiples servidors * consultar "
+"automàticament les taules requerides * crear gràfics complexos de la "
+"disposició de la base de dades * cercar globalment en una base de dades o un "
+"subconjunt d'elles * transformar les dades emmagatzemades en qualsevol "
+"format utilitzant un conjunt de funcions predefinides, * donar suport a "
+"taules InnoDB i claus estrangeres (veure FAQ 1.17) * comunicar en 57 idiomes "
+"diferents * sincronitzar dues bases de dades que resideixen en el mateix ("
+"veure FAQ 9)."
 
 #. leap/phpMyAdmin/phpMyAdmin-apache/summary
 msgid "Apache configuration for phpMyAdmin"
-msgstr ""
+msgstr "Configuració d'Apache per al phpMyAdmin"
 
 #. leap/phpMyAdmin/phpMyAdmin-lang/summary
 msgid "Translations for package phpMyAdmin"
-msgstr ""
+msgstr "Traduccions per al paquet phpMyAdmin"
 
 #. leap/phpMyAdmin/phpMyAdmin-lang/description
 msgid "Provides translations for the \"phpMyAdmin\" package."
-msgstr ""
+msgstr "Proporciona traduccions per al paquet «phpMyAdmin»."
 
 #. leap/phpPgAdmin/summary
 msgid "Administration of PostgreSQL over the web"
-msgstr ""
+msgstr "Administració de PostgreSQL a través de la web"
 
 #. leap/phpPgAdmin/description
 msgid ""
@@ -1132,10 +1483,29 @@ msgid ""
 "conflicts. Edit Russian data using a Japanese interface!\n"
 "* Easy to install and configure"
 msgstr ""
+"El phpPgAdmin és una eina d'administració basada en web per a PostgreSQL. És "
+"perfecte per a serveis de PostgreSQL DBAs, newbies i hosting.\n"
+"\n"
+"Característiques \n"
+"* Administra diversos servidors\n"
+"* Suport per PostgreSQL 9.x.x, 10.x, 11.x, 12.x\n"
+"* Gestiona tots els aspectes de: o Grups d'usuaris o Bases de dades o "
+"Esquemes o Taules, índexs, restriccions, desencadenants, privilegis de "
+"regles o Vistes, funcions de seqüències o Objectes avançats o Informes\n"
+"* Fàcil manipulació de dades: o Navegar per taules, veure informes o "
+"Executar SQL arbitrari o Seleccionar, inserir, actualitzar i eliminar\n"
+"* Bolca les dades de la taula en diversos formats: SQL, COPY, XML, XHTML, "
+"CSV, Tabbed, pgdump\n"
+"* Importa scripts SQL, COPIA dades, XML, CSV i Tabbed\n"
+"* Permet el motor de replicació Slony master-slave\n"
+"* Excel·lent suport lingüístic: o Disponible en 27 idiomes o Sense "
+"conflictes de codificació. Edita les dades en rus utilitzant una interfície "
+"japonesa!\n"
+"* Fàcil d'instal·lar i configurar"
 
 #. leap/phpPgAdmin/phpPgAdmin-apache/summary
 msgid "Apache configuration for phpPgAdmin"
-msgstr ""
+msgstr "Configuració d'Apache per al phpPgAdmin"
 
 #. tumbleweed/php7-imagick/description
 #. tumbleweed/php8-imagick/description
@@ -1143,11 +1513,13 @@ msgid ""
 "PHP extension to create, modify and obtain meta information of images using "
 "the ImageMagick API."
 msgstr ""
+"Extensió PHP per crear, modificar i obtenir metainformació d'imatges "
+"utilitzant l'API ImageMagick."
 
 #. tumbleweed/php7-memcache/summary
 #. tumbleweed/php8-memcache/summary
 msgid "PHP Memcache client Extension"
-msgstr ""
+msgstr "Extensió del client PHP Memcache"
 
 #. tumbleweed/php7-memcache/description
 #. tumbleweed/php8-memcache/description
@@ -1158,6 +1530,11 @@ msgid ""
 "interfaces. The extension allows use to store sessions in memcached via "
 "memcache."
 msgstr ""
+"Memcached és un dimoni de memòria cau dissenyat especialment per a "
+"aplicacions web dinàmiques per disminuir la càrrega de la base de dades "
+"emmagatzemant objectes en memòria. Aquesta extensió permet treballar amb "
+"memcached a través d'interfícies d'OO i procediment. L'extensió permet l'ús "
+"per emmagatzemar sessions en memcached via memcache."
 
 #. tumbleweed/php7-phalcon/description
 msgid ""
@@ -1166,11 +1543,15 @@ msgid ""
 "typed and it supports the features we need to create and maintain a project "
 "like Phalcon."
 msgstr ""
+"Phalcon és un framework per PHP7 escrit com una extensió C. Zephir és un "
+"llenguatge d'alt nivell, alguna cosa entre C i PHP. És dinàmic i estàtic i "
+"suporta les característiques que necessitem per crear i mantenir un projecte "
+"com Phalcon."
 
 #. tumbleweed/php7-psr/summary
 #. tumbleweed/php8-psr/summary
 msgid "PSR Extension Module"
-msgstr ""
+msgstr "Mòdul d'extensió PSR"
 
 #. tumbleweed/php7-psr/description
 #. tumbleweed/php8-psr/description
@@ -1178,6 +1559,8 @@ msgid ""
 "This extension provides the accepted PSR interfaces, so they can be used in "
 "an extension."
 msgstr ""
+"Aquesta extensió proporciona les interfícies PSR acceptades, de manera que "
+"es poden utilitzar en una extensió."
 
 #. tumbleweed/php7-uuid/description
 #. tumbleweed/php8-uuid/description
@@ -1185,31 +1568,33 @@ msgid ""
 "This extension provides functions to generate and analyse universally unique "
 "identifiers (UUIDs)."
 msgstr ""
+"Aquesta extensió proporciona funcions per generar i analitzar identificadors "
+"universalment únics (UUIDs)."
 
 #. tumbleweed/php8/php8-bz2/summary
 msgid "PHP bzip2 codec support"
-msgstr ""
+msgstr "Implementació del còdec PHP bzip2"
 
 #. tumbleweed/php8/php8-calendar/summary
 #. tumbleweed/php8/php8-xsl/summary
 msgid "PHP Extension Module"
-msgstr ""
+msgstr "Mòdul d'extensió PHP"
 
 #. tumbleweed/php8/php8-curl/summary
 msgid "PHP libcurl integration"
-msgstr ""
+msgstr "Integració de PHP libcurl"
 
 #. tumbleweed/php8/php8-devel/summary
 msgid "PHP development files for C/C++ extensions"
-msgstr ""
+msgstr "Fitxers de desenvolupament PHP per a extensions C/C++"
 
 #. tumbleweed/php8-fastcgi/summary
 msgid "FastCGI PHP Module"
-msgstr ""
+msgstr "Mòdul PHP FastCGI"
 
 #. tumbleweed/php8/php8-ffi/summary
 msgid "Main interface to C code and data"
-msgstr ""
+msgstr "Interfície principal al codi C i a les dades"
 
 #. tumbleweed/php8/php8-ffi/description
 msgid ""
@@ -1218,25 +1603,31 @@ msgid ""
 "having to have deep knowledge of the Zend extension API, and without having "
 "to learn a third \"intermediate\" language."
 msgstr ""
+"Aquesta extensió permet la càrrega de biblioteques compartides (.DLL o .so), "
+"la crida de funcions C i l'accés d'estructures de dades C en PHP pur, sense "
+"haver de tenir un coneixement profund de l'API d'extensió Zend, i sense "
+"haver d'aprendre un tercer llenguatge \"intermedi\"."
 
 #. tumbleweed/php8-fpm/summary
 msgid "FastCGI Process Manager PHP Module"
-msgstr ""
+msgstr "Mòdul PHP del gestor de processos FastCGI"
 
 #. tumbleweed/php8-fpm/php8-fpm-apache/summary
 msgid "Apache configuration for PHP-FPM"
-msgstr ""
+msgstr "Configuració Apache per a PHP-FPM"
 
 #. tumbleweed/php8-fpm/php8-fpm-apache/description
 msgid ""
 "Configuration for Apache to pass all requests for PHP scripts to the PHP-FPM "
 "server using reverse proxy."
 msgstr ""
+"Configuració perquè l'Apache passi totes les sol·licituds de scripts PHP al "
+"servidor PHP-FPM utilitzant proxy invers."
 
 #. tumbleweed/php8/php8-readline/summary
 msgid "PHP readline extension"
-msgstr ""
+msgstr "Extensió de lectura PHP"
 
 #. tumbleweed/php8/php8-tidy/summary
 msgid "PHP binding for the Tidy HTML cleaner"
-msgstr ""
+msgstr "Vinculació PHP per al netejador d'HTML Tidy"
