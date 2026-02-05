@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: packages-i 18n\n"
 "POT-Creation-Date: 2022-02-28 18:22+0000\n"
-"PO-Revision-Date: 2025-07-22 15:00+0000\n"
-"Last-Translator: Julia Faltenbacher <julia.faltenbacher@suse.com>\n"
+"PO-Revision-Date: 2026-02-05 11:04+0000\n"
+"Last-Translator: Peter Andreasen <noesgaard@gmail.com>\n"
 "Language-Team: Danish <https://l10n.opensuse.org/projects/packages-i18n/"
 "patterns-master/da/>\n"
 "Language: da\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. SLE/patterns-base/patterns-base-32bit/summary
 msgid "32-Bit Runtime Environment"
@@ -105,11 +105,11 @@ msgstr "Grafiske miljøer"
 
 #. SLE/patterns-base/patterns-base-bootloader/summary
 msgid "Bootloader"
-msgstr ""
+msgstr "Bootloader"
 
 #. SLE/patterns-base/patterns-base-bootloader/description
 msgid "This pattern holds files required for booting the system"
-msgstr ""
+msgstr "Dette mønster indeholder filer som er nødvendige for at starte systemet"
 
 #. SLE/patterns-base/patterns-base-documentation/summary
 #. SLE/patterns-base/patterns-base-documentation/description
@@ -172,18 +172,12 @@ msgid "Minimal Appliance Base"
 msgstr "Minimal basis til appliance"
 
 #. SLE/patterns-base/patterns-base-minimal_base/description
-#, fuzzy
-#| msgid ""
-#| "This is the minimal openSUSE runtime system. It is really a minimal "
-#| "system, you can login and a shell will be started, that's all. It is "
-#| "intended as base for Appliances."
 msgid ""
 "This is the minimal runtime system. It is really a minimal system. It is "
 "intended as base for Appliances."
 msgstr ""
 "Dette er det minimale openSUSE runtime-system. Det er virkelig et minimalt "
-"system. Du kan logge ind og en skal vil blive startet, det er alt. Det er "
-"tiltænkt som et grundlag til apparater."
+"system. Det er tiltænkt som et grundlag for apparater."
 
 #. SLE/patterns-base/patterns-base-minimal_base-32bit/description
 msgid "The 32bit pattern complementing minimal_base."
@@ -251,38 +245,28 @@ msgid "Graphical YaST user interfaces for minimal X desktop."
 msgstr "Grafiske YaST-brugergrænseflader til minimalt X-skrivebord."
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Base Utilities"
-msgstr "MATE-redskaber"
+msgstr "YaST grundlæggende værktøjer"
 
 #. SLE/patterns-yast/patterns-yast-yast2_basis/description
 msgid "YaST tools for basic system administration."
 msgstr "YaST-værktøjer til grundlæggende systemadministration."
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/summary
-#, fuzzy
-#| msgid "KDE Utilities"
 msgid "YaST Desktop Utilities"
-msgstr "KDE-redskaber"
+msgstr "YaST værktøjer til skrivebordet"
 
 #. SLE/patterns-yast/patterns-yast-yast2_desktop/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for desktop system administration."
-msgstr "YaST-værktøjer til grundlæggende systemadministration."
+msgstr "YaST-værktøjer til skrivebords-systemadministration."
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/summary
-#, fuzzy
-#| msgid "MATE Utilities"
 msgid "YaST Server Utilities"
-msgstr "MATE-redskaber"
+msgstr "YaST server værktøjer"
 
 #. SLE/patterns-yast/patterns-yast-yast2_server/description
-#, fuzzy
-#| msgid "YaST tools for basic system administration."
 msgid "YaST tools for server system administration."
-msgstr "YaST-værktøjer til grundlæggende systemadministration."
+msgstr "YaST-værktøjer til server-systemadministration."
 
 #. SLE/patterns-gnome/patterns-gnome-gnome_basic/summary
 msgid "GNOME Desktop Environment (Basic)"
@@ -369,13 +353,15 @@ msgstr "Webbaseret virksomhedsstyring."
 
 #. SLE/patterns-wsl/patterns-wsl-base/summary
 msgid "Base WSL packages"
-msgstr ""
+msgstr "Grundlæggende WSL pakker"
 
 #. SLE/patterns-wsl/patterns-wsl-base/description
 msgid ""
 "This package contains the wsl_base pattern: recommended tools,libraries for "
 "using WSL."
 msgstr ""
+"Denne pakke indeholder mønsteret wsl_base: anbefalede værktøjer og "
+"biblioteker til at bruge WSL."
 
 #. SLE/patterns-wsl/patterns-wsl-base/category
 #. SLE/patterns-wsl/patterns-wsl-gui/category
@@ -384,13 +370,15 @@ msgstr "Udvikling"
 
 #. SLE/patterns-wsl/patterns-wsl-gui/summary
 msgid "WSL GUI packages"
-msgstr ""
+msgstr "WSL GUI pakker"
 
 #. SLE/patterns-wsl/patterns-wsl-gui/description
 msgid ""
 "This package contains the wsl_gui pattern: recommended tools,libraries for "
 "using WSLg."
 msgstr ""
+"Denne pakke indeholder mønsteret wsl_gui: anbefalede værktøjer, biblioteker "
+"til at bruge WSLg."
 
 #. SLE/patterns-sap/summary
 msgid "Patterns for SLES for SAP Applications"
@@ -439,12 +427,6 @@ msgid "HPC Basic Compute Node"
 msgstr "HPC grundlæggende computer-node"
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/description
-#, fuzzy
-#| msgid ""
-#| "A compute node comprises of a minimal software image and mainly runs "
-#| "simulation programs. Services on this node should be reduced to a bare "
-#| "minimum and the node *must* be installed in a automatic manner. The "
-#| "pattern 'HPC modularized libraries' should also be installed."
 msgid ""
 "A compute node comprises of a minimal software image and mainly runs "
 "simulation programs. Services on this node should be reduced to a bare "
@@ -453,8 +435,8 @@ msgid ""
 msgstr ""
 "En computer-node består af et minimalt softwareaftryk og kører hovedsageligt "
 "simuleringsprogrammer. Tjenester på noden bør reduceres til et absolut "
-"minimum og noden *skal* installeres på en automatisk måde. Mønsteret 'HPC-"
-"modulariserede biblioteker' bør også installeres."
+"minimum og noden *skal* installeres på en automatisk måde. Mønsteret 'HPC "
+"Modulariserede biblioteker' bør også installeres."
 
 #. SLE/patterns-hpc/patterns-hpc-compute_node/category
 #. SLE/patterns-hpc/patterns-hpc-libraries/category
@@ -467,26 +449,18 @@ msgid "HPC Development Packages"
 msgstr "HPC-udviklingspakker"
 
 #. SLE/patterns-hpc/patterns-hpc-development_node/description
-#, fuzzy
-#| msgid ""
-#| "This package provides all the relevant packages for developing HPC "
-#| "applications. It depends on the pattern 'HPC modularized libraries'. In "
-#| "addition it includes the GNU compilers and the relevant management "
-#| "packages."
 msgid ""
 "This package provides all the relevant packages for developing HPC "
 "applications. It depends on the pattern 'HPC Modularized Libraries'. In "
 "addition it includes the GNU compilers and the relevant management packages."
 msgstr ""
 "Pakken leverer alle relevante pakker til udvikling af HPC-programmer. Den "
-"afhænger af mønsteret de 'HPC-modulariserede biblioteker'. Derudover "
-"inkluderer den GNU-kompilere og de relevante håndteringspakker."
+"afhænger af mønsteret de 'HPC Modulariserede biblioteker'. Derudover "
+"inkluderer den GNU-kompilere og de relevante pakker til administration."
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/summary
-#, fuzzy
-#| msgid "HPC modularized Libraries"
 msgid "HPC Modularized Libraries"
-msgstr "HPC modulariserede biblioteker"
+msgstr "HPC Modulariserede biblioteker"
 
 #. SLE/patterns-hpc/patterns-hpc-libraries/description
 #, fuzzy
@@ -773,7 +747,7 @@ msgstr "Opsæt serveren til installation af SAP NetWeaver-systemer."
 
 #. SLE/patterns-certification/patterns-certification-common-criteria/summary
 msgid "Tools and scripts for Common Criteria"
-msgstr ""
+msgstr "Værktøjer og scripts til Common Criteria"
 
 #. SLE/patterns-ofed/patterns-ofed-ofed/summary
 #. SLE/patterns-ofed/patterns-ofed-ofed-32bit/summary
@@ -1093,7 +1067,7 @@ msgstr "Skrivebordsfunktioner"
 
 #. SLE/patterns-desktop/patterns-desktop-mobile/summary
 msgid "Mobile"
-msgstr ""
+msgstr "Mobil"
 
 #. SLE/patterns-desktop/patterns-desktop-multimedia/summary
 #. SLE/patterns-desktop/patterns-desktop-multimedia_opt/summary
@@ -1200,12 +1174,12 @@ msgid ""
 "features and a traditional user experience. It's easy to use, powerful and "
 "flexible."
 msgstr ""
+"Cinnamon er en moderne Linux desktop med avancerede nyskabende egenskaber og "
+"en traditionel brugerflade. Den er let at bruge, kraftig og fleksibel."
 
 #. leap/patterns-base/patterns-base-basesystem/summary
-#, fuzzy
-#| msgid "Minimal Base System (alias pattern for base)"
 msgid "Base System (alias pattern for base)"
-msgstr "Minimalt basissystem (alias-mønster for basis)"
+msgstr "Basissystem (alias-mønster for basis)"
 
 #. leap/patterns-base/patterns-base-console/summary
 msgid "Console Tools"
@@ -1232,63 +1206,51 @@ msgstr ""
 "pakker har ikke nogen funktionalitet i sig selv."
 
 #. leap/patterns-budgie/patterns-budgie-budgie/summary
-#, fuzzy
-#| msgid "LXDE Desktop Environment"
 msgid "Budgie Desktop Environment"
-msgstr "LXDE-skrivebordsmiljø"
+msgstr "Budgie skrivebordsmiljø"
 
 #. leap/patterns-budgie/patterns-budgie-budgie/description
 msgid ""
 "The Budgie Desktop is a feature-rich, modern desktop designed to keep out "
 "the way of the user."
 msgstr ""
+"Budgie Desktop er et funktionelt og moderne skrivebordsmiljø, som er "
+"designet til ikke at forstyrre brugeren."
 
 #. leap/patterns-budgie/patterns-budgie-budgie_applets/summary
 #. leap/patterns-budgie/patterns-budgie-budgie_applets/description
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Applets for Budgie Desktop Environment"
-msgstr "Grundlæggende pakker til Xfce-skrivebordsmiljøet"
+msgstr "Småprogrammer til Budgie Desktop"
 
 #. leap/patterns-budgie/patterns-budgie-budgie_applets/category
-#, fuzzy
-#| msgid "Remote Desktop"
 msgid "Budgie Desktop"
-msgstr "Fjernskrivebord"
+msgstr "Budgie Desktop"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/summary
 msgid "Ceph base"
 msgstr "Ceph base"
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/description
-#, fuzzy
-#| msgid "This provides base for the Ceph, Rook, Ceph CSI driver packages."
 msgid ""
 "This provides the base for the Ceph, Rook, Ceph CSI driver packages and "
 "containers."
-msgstr "Leverer base for Ceph-, Rook-, Ceph CSI-driverpakkerne."
+msgstr "Leverer basis for Ceph-, Rook-, Ceph CSI-driverpakker og containere."
 
 #. leap/patterns-ceph-containers/patterns-ceph-containers-ceph_base/category
 msgid "Containers"
 msgstr "Containere"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon/summary
-#, fuzzy
-#| msgid "XFCE Desktop Environment"
 msgid "Cinnamon Desktop Environment"
-msgstr "Xfce-skrivebordsmiljø"
+msgstr "Cinnamon skrivebordsmiljø"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/summary
-#, fuzzy
-#| msgid "Minimal Base System"
 msgid "Cinnamon Base System"
-msgstr "Minimalt basissystem"
+msgstr "Cinnamon basissystem"
 
 #. leap/patterns-cinnamon/patterns-cinnamon-cinnamon_basis/description
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Base packages for the cinnamon Desktop Environment"
-msgstr "Grundlæggende pakker til Xfce-skrivebordsmiljøet"
+msgstr "Grundlæggende pakker til Cinnamon-skrivebordsmiljøet"
 
 #. leap/patterns-devel-C-C++/patterns-devel-C-C++-devel_C_C++/summary
 msgid "C/C++ Development"
@@ -1475,16 +1437,12 @@ msgid "Tools and libraries for software development using Qt 5."
 msgstr "Værktøjer og biblioteker til softwareudvikling ved brug af Qt 5."
 
 #. leap/patterns-kde/patterns-kde-devel_qt6/summary
-#, fuzzy
-#| msgid "Qt 5 Development"
 msgid "Qt 6 Development"
-msgstr "Qt 5-udvikling"
+msgstr "Qt 6-udvikling"
 
 #. leap/patterns-kde/patterns-kde-devel_qt6/description
-#, fuzzy
-#| msgid "Tools and libraries for software development using Qt 5."
 msgid "Tools and libraries for software development using Qt 6."
-msgstr "Værktøjer og biblioteker til softwareudvikling ved brug af Qt 5."
+msgstr "Værktøjer og biblioteker til softwareudvikling ved brug af Qt 6."
 
 #. leap/patterns-kde/patterns-kde-kde/summary
 msgid "KDE Applications and Plasma 5 Desktop"
@@ -1791,39 +1749,28 @@ msgstr "openSUSE MicroOS"
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/category
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/category
-#, fuzzy
-#| msgid "KDE Desktop"
 msgid "Deepin Desktop"
-msgstr "KDE-skrivebord"
+msgstr "Deepin-skrivebord"
 
 #. tumbleweed/patterns-base/patterns-base-base/summary
 #. tumbleweed/patterns-base/patterns-base-base-32bit/summary
-#, fuzzy
-#| msgid "MATE Base System"
 msgid "Base System"
-msgstr "MATE grundlæggende system"
+msgstr "Grundlæggende system"
 
 #. tumbleweed/patterns-base/patterns-base-base/description
 #. tumbleweed/patterns-base/patterns-base-basesystem/description
-#, fuzzy
-#| msgid ""
-#| "This is the base runtime system.  It contains only a minimal multiuser "
-#| "booting system. For running on real hardware, you need to add additional "
-#| "packages and pattern to make this pattern useful on its own."
 msgid ""
 "This is the base runtime system.  It contains only a basic multiuser booting "
 "system. For running on real hardware, you need to add additional packages "
 "and pattern to make this pattern useful on its own."
 msgstr ""
-"Dette er det grundlæggende runtime-system. Det indeholder kun et minimalt "
+"Dette er det grundlæggende runtime-system.  Det indeholder kun et basalt "
 "flerbruger-bootsystem. For at køre på rigtigt hardware skal du bruge "
-"yderligere pakker og mønstre til at gøre dette mønster nyttigt for sig selv."
+"yderligere pakker og mønstre til at gøre dette mønster nyttigt alene."
 
 #. tumbleweed/patterns-base/patterns-base-selinux/summary
-#, fuzzy
-#| msgid "SELinux Support"
 msgid "SELinux"
-msgstr "SELinux-understøttelse"
+msgstr "SELinux"
 
 #. tumbleweed/patterns-base/patterns-base-selinux/description
 msgid ""
@@ -1833,6 +1780,11 @@ msgid ""
 "security policy, and streamlines the amount of software involved with "
 "security policy enforcement."
 msgstr ""
+"Security-Enhanced Linux (SELinux) tilbyder en mekanisme til at understøtte "
+"sikkerhedspolitikker for adgangskontrol, herunder tvungen adgangskontrol "
+"(MAC). Dens arkitektur stræber efter at adskille håndhævelsen af "
+"sikkerhedsbeslutninger fra selve sikkerhedspolitikken og strømliner mængden "
+"af software, der er involveret i håndhævelsen af sikkerhedspolitikken."
 
 #. tumbleweed/patterns-containers/patterns-containers-container_runtime/summary
 msgid "Container Runtime for non-clustered systems"
@@ -1859,10 +1811,8 @@ msgstr ""
 "kubernetes-systemer i cluster."
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/summary
-#, fuzzy
-#| msgid "kubeadm Stack"
 msgid "Kubernetes kubeadm Stack"
-msgstr "kubeadm-stak"
+msgstr "Kubernetes kubeadm-stak"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubeadm/description
 msgid ""
@@ -1886,14 +1836,10 @@ msgid "Kubic Admin Node"
 msgstr "Kubic Admin-node"
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_admin/description
-#, fuzzy
-#| msgid ""
-#| "This pattern installs the the software required for an openSUSE Kubic "
-#| "Admin Node."
 msgid ""
 "This pattern installs the software required for an openSUSE Kubic Admin Node."
 msgstr ""
-"Mønsteret installerer den software som kræves af en openSUSE Kubic Admin-"
+"Mønsteret installerer den software, som kræves af en openSUSE Kubic Admin-"
 "node."
 
 #. tumbleweed/patterns-containers/patterns-containers-kubic_loadbalancer/summary
@@ -1921,78 +1867,56 @@ msgstr ""
 "node."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/summary
-#, fuzzy
-#| msgid "LXDE Desktop Environment"
 msgid "Deepin Desktop Environment"
-msgstr "LXDE-skrivebordsmiljø"
+msgstr "Deepin-skrivebordsmiljø"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin/description
-#, fuzzy
-#| msgid ""
-#| "The MATE desktop environment is a desktop environment using traditional "
-#| "metaphors."
 msgid ""
 "The Deepin desktop environment is a desktop environment using fashion "
 "metaphors."
 msgstr ""
-"MATE-skrivebordsmiljøet er et skrivebordsmiljø som bruger traditionelle "
+"Deepin-skrivebordsmiljøet er et skrivebordsmiljø som bruger moderne "
 "metaforer."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_admin/summary
-#, fuzzy
-#| msgid "MATE Administration Tools"
 msgid "Deepin Administration Tools"
-msgstr "MATE-administrationsværktøjer"
+msgstr "Deepin-administrationsværktøjer"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/summary
-#, fuzzy
-#| msgid "Base System"
 msgid "Deepin Base System"
-msgstr "Grundlæggende system"
+msgstr "Deepin grundlæggende system"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_basis/description
-#, fuzzy
-#| msgid "Base packages for the MATE desktop environment."
 msgid "Base packages for the Deepin desktop environment."
-msgstr "Grundlæggende pakker til MATE-skrivebordsmiljøet."
+msgstr "Grundlæggende pakker til Deepin-skrivebordsmiljøet."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/summary
-#, fuzzy
-#| msgid "KDE Internet"
 msgid "Deepin Internet"
-msgstr "KDE-internet"
+msgstr "Deepin-internet"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_internet/description
-#, fuzzy
-#| msgid "KDE Internet Applications"
 msgid "Deepin Internet Applications."
-msgstr "KDE-internetprogrammer"
+msgstr "Deepin-internetprogrammer."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/summary
-#, fuzzy
-#| msgid "KDE Multimedia"
 msgid "Deepin Multimedia"
-msgstr "KDE-multimedie"
+msgstr "Deepin-multimedie"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_multimedia/description
 msgid "Deepin multimedia applications."
-msgstr ""
+msgstr "Deepin-multimedieprogrammer."
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office/description
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_office_opt/description
-#, fuzzy
-#| msgid "KDE Office"
 msgid "Deepin Office"
-msgstr "KDE-kontor"
+msgstr "Deepin-kontor"
 
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/summary
 #. tumbleweed/patterns-deepin/patterns-deepin-deepin_utilities/description
-#, fuzzy
-#| msgid "KDE Utilities"
 msgid "Deepin Utilities"
-msgstr "KDE-redskaber"
+msgstr "Deepin-værktøjer"
 
 #. tumbleweed/patterns-media/patterns-media-rest_cd_core/summary
 #. tumbleweed/patterns-media/patterns-media-rest_cd_gnome/summary
@@ -2060,58 +1984,40 @@ msgstr ""
 "flerbruger-bootsystem."
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using Micro DNF"
-msgstr "openSUSE MicroOS standard"
+msgstr "openSUSE MicroOS med Micro DNF"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-microdnf/description
-#, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Micro DNF package "
 "manager. It contains only a minimal multiuser booting system."
 msgstr ""
-"Dette er openSUSE MicroOS runtime-systemet. Det indeholder kun et minimalt "
-"flerbruger-bootsystem."
+"Dette er openSUSE MicroOS runtime-systemet med Micro DNF pakkehåndtering. "
+"Det indeholder kun et minimalt flerbruger-bootsystem."
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS defaults"
 msgid "openSUSE MicroOS using PackageKit"
-msgstr "openSUSE MicroOS standard"
+msgstr "openSUSE MicroOS med PackageKit"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-packagekit/description
-#, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the PackageKit service. It "
 "contains only a minimal multiuser booting system."
 msgstr ""
-"Dette er openSUSE MicroOS runtime-systemet. Det indeholder kun et minimalt "
-"flerbruger-bootsystem."
+"Dette er openSUSE MicroOS runtime-systemet med PackageKit servicen. Det "
+"indeholder kun et minimalt flerbruger-bootsystem."
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/summary
-#, fuzzy
-#| msgid "openSUSE MicroOS"
 msgid "openSUSE MicroOS using Zypper"
-msgstr "openSUSE MicroOS"
+msgstr "openSUSE MicroOS med Zypper"
 
 #. tumbleweed/patterns-microos/patterns-microos-base-zypper/description
-#, fuzzy
-#| msgid ""
-#| "This is the openSUSE MicroOS runtime system. It contains only a minimal "
-#| "multiuser booting system."
 msgid ""
 "This is the openSUSE MicroOS runtime system using the Zypper package "
 "manager. It contains only a minimal multiuser booting system."
 msgstr ""
-"Dette er openSUSE MicroOS runtime-systemet. Det indeholder kun et minimalt "
-"flerbruger-bootsystem."
+"Dette er openSUSE MicroOS runtime-systemet med Zypper pakkehåndtering. Det "
+"indeholder kun et minimalt flerbruger-bootsystem."
 
 #. tumbleweed/patterns-microos/patterns-microos-basesystem/summary
 msgid "openSUSE MicroOS Base System (alias pattern for microos_base)"
@@ -2127,13 +2033,15 @@ msgstr "Pakker som kræves for at aktivere openSUSE MicroOS i skyen."
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/summary
 msgid "Web based remote system managemet"
-msgstr ""
+msgstr "Web-baseret fjernadministration"
 
 #. tumbleweed/patterns-microos/patterns-microos-cockpit/description
 msgid ""
 "Packages required to run the Cockpit system management service. For the web "
 "service the cockpit-ws container is required."
 msgstr ""
+"Nødvendige pakker til at køre Cockpit systemadministration. Til denne "
+"webservice kræves cockpit-ws containeren."
 
 #. tumbleweed/patterns-microos/patterns-microos-defaults/summary
 msgid "openSUSE MicroOS defaults"
@@ -2148,40 +2056,28 @@ msgstr ""
 "erstattes med alternativer."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/summary
-#, fuzzy
-#| msgid "Base packages for the XFCE Desktop Environment"
 msgid "Common packages for Desktops on MicroOS"
-msgstr "Grundlæggende pakker til Xfce-skrivebordsmiljøet"
+msgstr "Fælles pakker til skrivebordsmiljøer på MicroOS"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-common/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for openSUSE MicroOS Desktops."
-msgstr "Pakker som kræves for at aktivere openSUSE MicroOS i skyen."
+msgstr "Pakker som kræves af openSUSE MicroOS skriveborde."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/summary
-#, fuzzy
-#| msgid "GNOME Desktop"
 msgid "MicroOS GNOME Desktop"
-msgstr "GNOME-skrivebord"
+msgstr "MicroOS GNOME-skrivebord"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-gnome/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS Desktop with GNOME."
-msgstr "Pakker som kræves for at aktivere openSUSE MicroOS i skyen."
+msgstr "Pakker som kræves af openSUSE MicroOS skrivebord med GNOME."
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/summary
-#, fuzzy
-#| msgid "KDE Plasma 5 Desktop"
 msgid "MicroOS KDE Plasma Desktop"
-msgstr "KDE Plasma 5-skrivebord"
+msgstr "MicroOS KDE Plasma skrivebord"
 
 #. tumbleweed/patterns-microos/patterns-microos-desktop-kde/description
-#, fuzzy
-#| msgid "Packages required to enable openSUSE MicroOS in the Cloud."
 msgid "Packages required for the openSUSE MicroOS with KDE Plasma"
-msgstr "Pakker som kræves for at aktivere openSUSE MicroOS i skyen."
+msgstr "Pakker som kræves af openSUSE MicroOS med KDE Plasma"
 
 #. tumbleweed/patterns-microos/patterns-microos-hardware/summary
 msgid "Hardware Support"
@@ -2210,27 +2106,27 @@ msgstr "Yderligere pakker på en openSUSE MicroOS-dvd."
 
 #. tumbleweed/patterns-microos/patterns-microos-ra_agent/summary
 msgid "Remote Attestation (Agent) Support"
-msgstr ""
+msgstr "Support af Remote Attestation (Agent)"
 
 #. tumbleweed/patterns-microos/patterns-microos-ra_agent/description
-#, fuzzy
-#| msgid "Packages required to enable Apparmor on openSUSE MicroOS."
 msgid ""
 "Packages required to enable remote attestation via Keylime agent on openSUSE "
 "MicroOS."
-msgstr "Pakker som behøves for at aktivere Apparmor på openSUSE MicroOS."
+msgstr ""
+"Pakker som behøves for at aktivere remote attestation via Keylime på "
+"openSUSE MicroOS."
 
 #. tumbleweed/patterns-microos/patterns-microos-ra_verifier/summary
 msgid "Remote Attestation (Verifier) Support"
-msgstr ""
+msgstr "Understøttelse af Remote Attestation (Verifier)"
 
 #. tumbleweed/patterns-microos/patterns-microos-ra_verifier/description
-#, fuzzy
-#| msgid "Packages required to enable Apparmor on openSUSE MicroOS."
 msgid ""
 "Packages required to enable remote attestation via Keylime verifier on "
 "openSUSE MicroOS."
-msgstr "Pakker som behøves for at aktivere Apparmor på openSUSE MicroOS."
+msgstr ""
+"Pakker som behøves for at aktivere remote attestation via Keylime "
+"godkendelse på openSUSE MicroOS."
 
 #. tumbleweed/patterns-microos/patterns-microos-selinux/summary
 msgid "SELinux Support"
@@ -2255,11 +2151,11 @@ msgstr ""
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/summary
 msgid "Sway Tiling Wayland Compositor and related tools"
-msgstr ""
+msgstr "Sway Tiling Wayland Compositor og tilhørende værktøjer"
 
 #. tumbleweed/patterns-sway/patterns-sway-sway/description
 msgid "Sway Tiling Wayland Compositor and related tools."
-msgstr ""
+msgstr "Sway Tiling Wayland Compositor og tilhørende værktøjer."
 
 #~ msgid ""
 #~ "This is the minimal SLE runtime system. It is really a minimal system, "
